@@ -25,9 +25,15 @@
     "clinical_cases": [
       {
         "case": "25 yaşında bir hasta, 2 haftadır devam eden ateş, kabızlık ve gövdesinde pembe lekelerle başvuruyor. Nabzı 60/dakika saptanıyor (Ateş 39C).",
-        "options": ["Tifo", "Bruselloz", "Sıtma", "Pnömoni"],
+        "options": [
+          "Tifo",
+          "Bruselloz",
+          "Sıtma",
+          "Pnömoni"
+        ],
         "correct_answer": "Tifo",
-        "explanation": "Uzamış ateş, rölatif bradikardi ve taş roze lekeleri Tifo kliniğidir."
+        "explanation": "Uzamış ateş, rölatif bradikardi ve taş roze lekeleri Tifo kliniğidir.",
+        "id": "cc-micro-enter-001-001"
       }
     ]
   },

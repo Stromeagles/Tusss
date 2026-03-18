@@ -12,21 +12,30 @@
         "question": "Eritrositlerin P antijenine bağlanarak çoğalan, orak hücreli anemide aplastik kriz yapan virüs?",
         "answer": "Parvovirüs B19.",
         "difficulty": "medium",
-        "tags": ["Parvovirüs", "Aplastik Kriz"]
+        "tags": [
+          "Parvovirüs",
+          "Aplastik Kriz"
+        ]
       },
       {
         "id": "fc-viro-2101",
         "question": "Hangi virüs kapsidinde Fiber (çıkıntı) barındıran tek virüstür?",
         "answer": "Adenovirüs.",
         "difficulty": "medium",
-        "tags": ["Adenovirüs", "Fiber"]
+        "tags": [
+          "Adenovirüs",
+          "Fiber"
+        ]
       },
       {
         "id": "fc-viro-2102",
         "question": "Adenovirüslerin tip 8, 19 ve 37 suşları hangi klinik tabloya neden olur?",
         "answer": "Epidemik Keratokonjonktivit.",
         "difficulty": "hard",
-        "tags": ["Adenovirüs", "Göz"]
+        "tags": [
+          "Adenovirüs",
+          "Göz"
+        ]
       }
     ],
     "tus_spots": [
@@ -48,21 +57,29 @@
         "question": "İnfluenza virüsünde pandemilerden sorumlu olan, segment değişimi ile karakterize majör değişiklik?",
         "answer": "Antijenik Shift.",
         "difficulty": "medium",
-        "tags": ["İnfluenza", "Shift"]
+        "tags": [
+          "İnfluenza",
+          "Shift"
+        ]
       },
       {
         "id": "fc-viro-2201",
         "question": "İnfantlarda bronşiolit ve pnömoninin en sık nedeni olan, F proteini ile sinsitya yapan virüs?",
         "answer": "RSV (Respiratuvar Sinsityal Virüs).",
         "difficulty": "easy",
-        "tags": ["RSV"]
+        "tags": [
+          "RSV"
+        ]
       },
       {
         "id": "fc-viro-2202",
         "question": "Kızamık (Measles) hastalığında diagnostik olan, ağız mukozasındaki beyaz lezyonlar?",
         "answer": "Koplik Lekeleri.",
         "difficulty": "easy",
-        "tags": ["Kızamık", "Koplik"]
+        "tags": [
+          "Kızamık",
+          "Koplik"
+        ]
       }
     ],
     "tus_spots": [
@@ -85,21 +102,30 @@
         "question": "HBV'nin enfeksiyöz tam partikülüne ne ad verilir?",
         "answer": "Dane Partikülü.",
         "difficulty": "medium",
-        "tags": ["HBV", "Dane"]
+        "tags": [
+          "HBV",
+          "Dane"
+        ]
       },
       {
         "id": "fc-viro-2301",
         "question": "HBV replikasyonunda çekirdekte oluşan ve kalıp görevi gören DNA formu?",
         "answer": "cccDNA (Closed circular DNA).",
         "difficulty": "hard",
-        "tags": ["HBV", "cccDNA"]
+        "tags": [
+          "HBV",
+          "cccDNA"
+        ]
       },
       {
         "id": "fc-viro-2302",
         "question": "HCV tanısında ilk bakılan ve sadece virüsle karşılaşıldığını gösteren test?",
         "answer": "Anti-HCV (ELISA). Aktif enfeksiyon için HCV-RNA (PCR) bakılmalıdır.",
         "difficulty": "medium",
-        "tags": ["HCV", "Anti-HCV"]
+        "tags": [
+          "HCV",
+          "Anti-HCV"
+        ]
       }
     ],
     "tus_spots": [

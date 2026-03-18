@@ -12,21 +12,31 @@
         "question": "Pirinç suyu şeklinde dışkılama ile karakterize, Gs üzerinden cAMP artırarak diyare yapan bakteri?",
         "answer": "Vibrio cholerae.",
         "difficulty": "easy",
-        "tags": ["Vibrio", "Kolera", "cAMP"]
+        "tags": [
+          "Vibrio",
+          "Kolera",
+          "cAMP"
+        ]
       },
       {
         "id": "fc-micro-751",
         "question": "Gelişmiş ülkelerde bakteriyel gastroenteritin en sık nedeni olan, 42°C'de üreyen ve Guillain-Barré ile ilişkili bakteri?",
         "answer": "Campylobacter jejuni.",
         "difficulty": "medium",
-        "tags": ["Campylobacter", "GBS"]
+        "tags": [
+          "Campylobacter",
+          "GBS"
+        ]
       },
       {
         "id": "fc-micro-752",
         "question": "H. pylori patogenezinde pH'ı artırarak hayatta kalmasını sağlayan temel enzim nedir?",
         "answer": "Üreaz. (Üreyi amonyağa yıkarak pH'ı artırır).",
         "difficulty": "easy",
-        "tags": ["H. pylori", "Üreaz"]
+        "tags": [
+          "H. pylori",
+          "Üreaz"
+        ]
       }
     ],
     "tus_spots": [
@@ -49,21 +59,30 @@
         "question": "H. influenzae'nın üremesi için gerekli olan X ve V faktörleri nelerdir?",
         "answer": "X faktörü: Hemin, V faktörü: NAD.",
         "difficulty": "medium",
-        "tags": ["Haemophilus", "Faktörler"]
+        "tags": [
+          "Haemophilus",
+          "Faktörler"
+        ]
       },
       {
         "id": "fc-micro-801",
         "question": "Cinsel yolla bulaşan, ağrılı 'Şankroid' (yumuşak şankır) etkeni bakteri?",
         "answer": "Haemophilus ducreyi. (Do cry - ağrılı).",
         "difficulty": "medium",
-        "tags": ["H. ducreyi", "Şankroid"]
+        "tags": [
+          "H. ducreyi",
+          "Şankroid"
+        ]
       },
       {
         "id": "fc-micro-802",
         "question": "Legionella pneumophila tanısında kullanılan, BCYE agarda bulunan temel madde nedir?",
         "answer": "Kömür (Charcoal). (Detoksifikasyon için).",
         "difficulty": "hard",
-        "tags": ["Legionella", "BCYE"]
+        "tags": [
+          "Legionella",
+          "BCYE"
+        ]
       }
     ],
     "tus_spots": [

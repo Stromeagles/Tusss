@@ -12,21 +12,33 @@
         "question": "Turist diyaresine (sulu ishal) neden olan, LT (cAMP) ve ST (cGMP) toksinleri üreten E. coli ?",
         "answer": "ETEC (Enterotoksijenik E. coli).",
         "difficulty": "easy",
-        "tags": ["E. coli", "ETEC", "Turist Diyaresi"]
+        "tags": [
+          "E. coli",
+          "ETEC",
+          "Turist Diyaresi"
+        ]
       },
       {
         "id": "fc-micro-601",
         "question": "Hangi E. coli suşu Shiga-like toksin (Verotoksin) üreterek HÜS ve hemorajik kolit yapar?",
         "answer": "EHEC / STEC (Özellikle O157:H7).",
         "difficulty": "medium",
-        "tags": ["EHEC", "STEC", "HÜS"]
+        "tags": [
+          "EHEC",
+          "STEC",
+          "HÜS"
+        ]
       },
       {
         "id": "fc-micro-602",
         "question": "Yenidoğan menenjitine neden olan E. coli'lerin %80'inde bulunan majör antijen?",
         "answer": "K1 kapsül antijeni.",
         "difficulty": "medium",
-        "tags": ["E. coli", "Menenjit", "K1"]
+        "tags": [
+          "E. coli",
+          "Menenjit",
+          "K1"
+        ]
       }
     ],
     "tus_spots": [
@@ -48,21 +60,30 @@
         "question": "Tifo (Enterik Ateş) tanısında altın standart yöntem ve kullanılan serolojik test?",
         "answer": "Altın standart: Kemik iliği kültürü. Serolojik test: Gruber-Widal testi.",
         "difficulty": "medium",
-        "tags": ["Tifo", "Salmonella", "Widal"]
+        "tags": [
+          "Tifo",
+          "Salmonella",
+          "Widal"
+        ]
       },
       {
         "id": "fc-micro-651",
         "question": "Shigella'nın patogenezindeki temel mekanizma nedir?",
         "answer": "Mukozal invazyon (M hücreleri üzerinden).",
         "difficulty": "medium",
-        "tags": ["Shigella", "İnvazyon"]
+        "tags": [
+          "Shigella",
+          "İnvazyon"
+        ]
       },
       {
         "id": "fc-micro-652",
         "question": "En sık görülen Shigella türü hangisidir?",
         "answer": "Shigella sonnei (Grup D).",
         "difficulty": "easy",
-        "tags": ["Shigella sonnei"]
+        "tags": [
+          "Shigella sonnei"
+        ]
       }
     ],
     "tus_spots": [
@@ -85,14 +106,21 @@
         "question": "Pseudomonas aeruginosa'nın protein sentezini engelleyen majör toksini?",
         "answer": "Ekzotoksin A (EF-2 inaktivasyonu).",
         "difficulty": "medium",
-        "tags": ["Pseudomonas", "Ekzotoksin A"]
+        "tags": [
+          "Pseudomonas",
+          "Ekzotoksin A"
+        ]
       },
       {
         "id": "fc-micro-701",
         "question": "Kistik Fibrozis hastalarında Pseudomonas'ın dirençli enfeksiyon yapmasını sağlayan yapı?",
         "answer": "Aljinat (Biyofilm).",
         "difficulty": "medium",
-        "tags": ["Pseudomonas", "Kistik Fibrozis", "Aljinat"]
+        "tags": [
+          "Pseudomonas",
+          "Kistik Fibrozis",
+          "Aljinat"
+        ]
       }
     ],
     "tus_spots": [

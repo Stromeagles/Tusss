@@ -12,21 +12,31 @@
         "question": "Meta-laktam antibiyotiklerin temel etki mekanizması nedir?",
         "answer": "PBP'ye (Penisilin Bağlayan Protein) bağlanarak hücre duvarındaki transpeptidasyon (çapraz bağ) basamağını inhibe ederler.",
         "difficulty": "medium",
-        "tags": ["Beta Laktam", "PBP"]
+        "tags": [
+          "Beta Laktam",
+          "PBP"
+        ]
       },
       {
         "id": "fc-micro-101",
         "question": "Metisilin dirençli S. aureus (MRSA) suşlarında direncin genetik ve biyokimyasal temeli nedir?",
         "answer": "mecA (veya mecC) geni aracılığıyla PBP'nin yapı değiştirerek PBP2a'ya dönüşmesidir.",
         "difficulty": "hard",
-        "tags": ["MRSA", "mecA", "PBP2a"]
+        "tags": [
+          "MRSA",
+          "mecA",
+          "PBP2a"
+        ]
       },
       {
         "id": "fc-micro-102",
         "question": "Vankomisin'in etki mekanizması nedir ve gram negatiflere neden etkisizdir?",
         "answer": "Hücre duvarı öncüllerindeki D-alanin D-alanin ucuna bağlanır. Büyük molekül yapısı nedeniyle gram negatiflerin dış membranından geçemez.",
         "difficulty": "medium",
-        "tags": ["Vankomisin", "D-ala-D-ala"]
+        "tags": [
+          "Vankomisin",
+          "D-ala-D-ala"
+        ]
       }
     ],
     "tus_spots": [
@@ -49,21 +59,30 @@
         "question": "Aminoglikozidlerin (örn: Gentamisin) etki mekanizması nedir ve neden anaeroblara etkisizdirler?",
         "answer": "30S alt üniteye irreversible bağlanıp inisiasyon kompleksini bozarlar. Hücre içine girişleri (uptake) için oksijen gerektiğinden anaeroblara etkisizdirler.",
         "difficulty": "hard",
-        "tags": ["Aminoglikozid", "30S", "Anaerob"]
+        "tags": [
+          "Aminoglikozid",
+          "30S",
+          "Anaerob"
+        ]
       },
       {
         "id": "fc-micro-111",
         "question": "Aplastik anemi ve 'Gri Bebek Sendromu' yan etkileri hangi antibiyotiğe aittir?",
         "answer": "Kloramfenikol.",
         "difficulty": "medium",
-        "tags": ["Kloramfenikol", "Gri Bebek"]
+        "tags": [
+          "Kloramfenikol",
+          "Gri Bebek"
+        ]
       },
       {
         "id": "fc-micro-112",
         "question": "Kemik ve diş gelişimini bozduğu için gebelerde ve çocuklarda kontrendike olan antibiyotik grubu hangisidir?",
         "answer": "Tetrasiklinler.",
         "difficulty": "easy",
-        "tags": ["Tetrasiklin"]
+        "tags": [
+          "Tetrasiklin"
+        ]
       }
     ],
     "tus_spots": [
@@ -86,14 +105,20 @@
         "question": "Genetik bilginin ortamdaki 'çıplak' DNA aracılığıyla aktarılmasına ne denir ve DNaz eklenince neden durur?",
         "answer": "Transformasyon. Ortamdaki serbest DNA, DNaz tarafından parçalandığı için aktarım durur.",
         "difficulty": "medium",
-        "tags": ["Transformasyon", "DNaz"]
+        "tags": [
+          "Transformasyon",
+          "DNaz"
+        ]
       },
       {
         "id": "fc-micro-151",
         "question": "F+ hücreden F- hücreye seks pilusu aracılığıyla plazmid aktarılmasına ne ad verilir?",
         "answer": "Konjugasyon.",
         "difficulty": "easy",
-        "tags": ["Konjugasyon", "F-pilus"]
+        "tags": [
+          "Konjugasyon",
+          "F-pilus"
+        ]
       }
     ],
     "tus_spots": [

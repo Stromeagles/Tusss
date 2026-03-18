@@ -12,21 +12,31 @@
         "question": "Gram pozitif bir kokun Stafilokok mu yoksa Streptokok mu olduğunu ayıran temel test nedir?",
         "answer": "Katalaz testi. (Stafilokoklar +, Streptokoklar -).",
         "difficulty": "easy",
-        "tags": ["Katalaz", "Stafilokok", "Streptokok"]
+        "tags": [
+          "Katalaz",
+          "Stafilokok",
+          "Streptokok"
+        ]
       },
       {
         "id": "fc-micro-201",
         "question": "Novobiyosin direnci ile diğer koagülaz negatif stafilokoklardan (KNS) ayrılan, özellikle genç kadınlarda İYE yapan bakteri?",
         "answer": "Staphylococcus saprophyticus.",
         "difficulty": "medium",
-        "tags": ["S. saprophyticus", "Novobiyosin"]
+        "tags": [
+          "S. saprophyticus",
+          "Novobiyosin"
+        ]
       },
       {
         "id": "fc-micro-202",
         "question": "Staphylococcus aureus'un immun sistemden kaçışını sağlayan, IgG'nin Fc kısmına bağlanan yüzey proteini hangisidir?",
         "answer": "Protein A.",
         "difficulty": "medium",
-        "tags": ["S. aureus", "Protein A"]
+        "tags": [
+          "S. aureus",
+          "Protein A"
+        ]
       }
     ],
     "tus_spots": [
@@ -49,21 +59,33 @@
         "question": "Alfa hemolitik (yeşil), optokine duyarlı ve kapsüllü olan, toplum kökenli pnömoninin en sık nedeni?",
         "answer": "Streptococcus pneumoniae (Pnömokok).",
         "difficulty": "easy",
-        "tags": ["Pnömokok", "Alfa Hemoliz", "Optokin"]
+        "tags": [
+          "Pnömokok",
+          "Alfa Hemoliz",
+          "Optokin"
+        ]
       },
       {
         "id": "fc-micro-251",
         "question": "A grubu beta hemolitik streptokokların (S. pyogenes) ayırıcı tanısında kullanılan spesifik duyarlılık testi?",
         "answer": "Basitrasin duyarlılığı. (A grubu duyarlıdır).",
         "difficulty": "medium",
-        "tags": ["S. pyogenes", "A Grubu", "Basitrasin"]
+        "tags": [
+          "S. pyogenes",
+          "A Grubu",
+          "Basitrasin"
+        ]
       },
       {
         "id": "fc-micro-252",
         "question": "%6.5 NaCl'de üreyebilen ve PYR testi pozitif olan gram pozitif kok grubu?",
         "answer": "Enterokoklar.",
         "difficulty": "medium",
-        "tags": ["Enterokok", "NaCl", "PYR"]
+        "tags": [
+          "Enterokok",
+          "NaCl",
+          "PYR"
+        ]
       }
     ],
     "tus_spots": [
@@ -75,9 +97,15 @@
     "clinical_cases": [
       {
         "case": "Boğaz ağrısı sonrası Basitrasin duyarlı, beta hemolitik koloniler saptanan bir çocukta 3 hafta sonra idrarda renk değişikliği ve ödem gelişmiştir. En olası tanı nedir?",
-        "options": ["Akut Romatizmal Ateş", "Poststreptokokal Glomerülonefrit", "Kızıl", "Toksik Şok Sendromu"],
+        "options": [
+          "Akut Romatizmal Ateş",
+          "Poststreptokokal Glomerülonefrit",
+          "Kızıl",
+          "Toksik Şok Sendromu"
+        ],
         "correct_answer": "Poststreptokokal Glomerülonefrit",
-        "explanation": "A grubu beta hemolitik streptokok (S. pyogenes) enfeksiyonu sonrası gelişen nefritik tablo tipiktir. ARA için eklem ağrısı veya kalp bulguları beklenirdi."
+        "explanation": "A grubu beta hemolitik streptokok (S. pyogenes) enfeksiyonu sonrası gelişen nefritik tablo tipiktir. ARA için eklem ağrısı veya kalp bulguları beklenirdi.",
+        "id": "cc-micro-bact-cocci-002-001"
       }
     ]
   }

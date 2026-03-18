@@ -25,12 +25,14 @@ class Flashcard {
 }
 
 class ClinicalCase {
+  final String id;
   final String caseText;
   final List<String> options;
   final String correctAnswer;
   final String explanation;
 
   const ClinicalCase({
+    required this.id,
     required this.caseText,
     required this.options,
     required this.correctAnswer,
@@ -39,6 +41,7 @@ class ClinicalCase {
 
   factory ClinicalCase.fromJson(Map<String, dynamic> json) {
     return ClinicalCase(
+      id: json['id'] as String? ?? '',
       caseText: json['case'] ?? '',
       options: List<String>.from(json['options'] ?? []),
       correctAnswer: json['correct_answer'] ?? '',

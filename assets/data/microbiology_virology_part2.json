@@ -12,21 +12,30 @@
         "question": "HIV'in CD4 reseptörüne bağlanan majör yüzey glikoproteini hangisidir?",
         "answer": "gp120.",
         "difficulty": "easy",
-        "tags": ["HIV", "gp120"]
+        "tags": [
+          "HIV",
+          "gp120"
+        ]
       },
       {
         "id": "fc-viro-2401",
         "question": "HIV tanısında kullanılan, virüsün nükleokapsidini oluşturan ve en erken yükselen antijen?",
         "answer": "p24 antijeni.",
         "difficulty": "medium",
-        "tags": ["HIV", "p24"]
+        "tags": [
+          "HIV",
+          "p24"
+        ]
       },
       {
         "id": "fc-viro-2402",
         "question": "Anneden bebeğe HIV geçişini azaltmada kullanılan temel nükleozid revers transkriptaz inhibitörü?",
         "answer": "Zidovudin (AZT).",
         "difficulty": "medium",
-        "tags": ["HIV", "Zidovudin"]
+        "tags": [
+          "HIV",
+          "Zidovudin"
+        ]
       }
     ],
     "tus_spots": [
@@ -49,21 +58,28 @@
         "question": "Çift iplikli, 11 segmentli RNA'sı olan ve çocuklarda ağır ishale neden olan virüs?",
         "answer": "Rotavirüs.",
         "difficulty": "easy",
-        "tags": ["Rotavirüs"]
+        "tags": [
+          "Rotavirüs"
+        ]
       },
       {
         "id": "fc-viro-2501",
         "question": "Gebelikte geçirildiğinde %20 mortalite ile fulminan hepatit yapan virüs?",
         "answer": "Hepatit E Virüsü (HEV).",
         "difficulty": "medium",
-        "tags": ["HEV", "Gebelik"]
+        "tags": [
+          "HEV",
+          "Gebelik"
+        ]
       },
       {
         "id": "fc-viro-2502",
         "question": "Aedes sivrisineği ile bulaşan, mikrosefali ve Guillain-Barré ile ilişkili virüs?",
         "answer": "Zika Virüsü.",
         "difficulty": "medium",
-        "tags": ["Zika"]
+        "tags": [
+          "Zika"
+        ]
       }
     ],
     "tus_spots": [

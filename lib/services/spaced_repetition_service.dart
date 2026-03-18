@@ -98,4 +98,42 @@ class SpacedRepetitionService {
   void clearCache() {
     _cache = null;
   }
+
+  /// New/Due/Pocket sayılarını döner — home screen için
+  Future<SrsSummary> getSummary(List<String> allIds) async {
+    final all = await _loadAll();
+    int newCount = 0;
+    int dueCount = 0;
+    int pocketCount = 0;
+
+    for (final id in allIds) {
+      final data = all[id];
+      if (data == null) {
+        newCount++; // hiç görülmemiş
+      } else if (data.isInPocket) {
+        pocketCount++;
+      } else if (data.isDue) {
+        dueCount++;
+      }
+    }
+    return SrsSummary(
+      newCount: newCount,
+      dueCount: dueCount,
+      pocketCount: pocketCount,
+    );
+  }
+}
+
+class SrsSummary {
+  final int newCount;
+  final int dueCount;
+  final int pocketCount;
+
+  const SrsSummary({
+    required this.newCount,
+    required this.dueCount,
+    required this.pocketCount,
+  });
+
+  int get total => newCount + dueCount;
 }

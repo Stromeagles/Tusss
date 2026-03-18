@@ -25,9 +25,15 @@
     "clinical_cases": [
       {
         "case": "20 yaşında üniversite öğrencisi, ani başlayan ateş, baş ağrısı ve vücutta peteşiyal döküntülerle acile başvuruyor. Ense sertliği saptanıyor.",
-        "options": ["Meningokokal Menenjit", "Pnömokokal Menenjit", "Viral Menenjit", "Listeriyoz"],
+        "options": [
+          "Meningokokal Menenjit",
+          "Pnömokokal Menenjit",
+          "Viral Menenjit",
+          "Listeriyoz"
+        ],
         "correct_answer": "Meningokokal Menenjit",
-        "explanation": "Peteşiyal döküntü ve hızlı seyir Neisseria meningitidis için tipiktir."
+        "explanation": "Peteşiyal döküntü ve hızlı seyir Neisseria meningitidis için tipiktir.",
+        "id": "cc-micro-gneg-basic-001-001"
       }
     ]
   },
@@ -57,9 +63,15 @@
     "clinical_cases": [
       {
         "case": "7 yaşında bir çocuk, kanlı ishal sonrası halsizlik ve idrar miktarında azalma ile getiriliyor. Laboratuvarda anemi ve trombositopeni saptanıyor.",
-        "options": ["HÜS (EHEC ilişkili)", "TTP", "DİC", "İTP"],
+        "options": [
+          "HÜS (EHEC ilişkili)",
+          "TTP",
+          "DİC",
+          "İTP"
+        ],
         "correct_answer": "HÜS (EHEC ilişkili)",
-        "explanation": "Kanlı ishal sonrası gelişen anemi ve trombositopeni HÜS'ü düşündürür."
+        "explanation": "Kanlı ishal sonrası gelişen anemi ve trombositopeni HÜS'ü düşündürür.",
+        "id": "cc-micro-gneg-basic-002-001"
       }
     ]
   }

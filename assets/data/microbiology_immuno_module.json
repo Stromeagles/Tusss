@@ -12,14 +12,20 @@
         "question": "Hapten nedir ve nasıl immünojenik hale gelir?",
         "answer": "Antijenik olup tek başına immünojenik olmayan küçük moleküllerdir. Taşıyıcı bir proteine (adjuvan) bağlanarak immünojenik hale gelirler.",
         "difficulty": "medium",
-        "tags": ["Hapten", "İmmünojenite"]
+        "tags": [
+          "Hapten",
+          "İmmünojenite"
+        ]
       },
       {
         "id": "fc-imm-002",
         "question": "Antikorun epitopa bağlanan kısmına ne ad verilir?",
         "answer": "Paratop.",
         "difficulty": "easy",
-        "tags": ["Epitop", "Paratop"]
+        "tags": [
+          "Epitop",
+          "Paratop"
+        ]
       }
     ]
   },
@@ -36,21 +42,31 @@
         "question": "Enfeksiyon bölgesine ilk göç eden ve temel işlevi fagositoz olan hücre grubudur?",
         "answer": "Nötrofiller (Polimorf nüveli lökositler).",
         "difficulty": "easy",
-        "tags": ["Nötrofil", "Fagositoz"]
+        "tags": [
+          "Nötrofil",
+          "Fagositoz"
+        ]
       },
       {
         "id": "fc-imm-011",
         "question": "Doğal katil (NK) hücrelerin yüzey markerları nelerdir ve nasıl öldürürler?",
         "answer": "CD16 ve CD56. Perforin ve granzim aracılığıyla apoptozu tetikleyerek öldürürler.",
         "difficulty": "medium",
-        "tags": ["NK Hücre", "Perforin", "Granzim"]
+        "tags": [
+          "NK Hücre",
+          "Perforin",
+          "Granzim"
+        ]
       },
       {
         "id": "fc-imm-012",
         "question": "MHC-II sunumu yapan temel antijen sunan hücreler (APC) hangileridir?",
         "answer": "Dendritik hücreler, Makrofajlar ve B lenfositler.",
         "difficulty": "medium",
-        "tags": ["APC", "MHC-II"]
+        "tags": [
+          "APC",
+          "MHC-II"
+        ]
       }
     ],
     "tus_spots": [
@@ -73,14 +89,20 @@
         "question": "Herediter anjioödem hangi kompleman düzenleyicisinin eksikliğinde görülür?",
         "answer": "C1 inhibitör (C1-INH) eksikliği.",
         "difficulty": "medium",
-        "tags": ["C1-INH", "Anjioödem"]
+        "tags": [
+          "C1-INH",
+          "Anjioödem"
+        ]
       },
       {
         "id": "fc-imm-051",
         "question": "Neisseria enfeksiyonlarına (menenjit/gonore) duyarlılık artışı hangi kompleman eksikliklerinde görülür?",
         "answer": "MAC (C5b-9) veya Properdin eksikliği.",
         "difficulty": "hard",
-        "tags": ["MAC", "Neisseria"]
+        "tags": [
+          "MAC",
+          "Neisseria"
+        ]
       }
     ],
     "tus_spots": [

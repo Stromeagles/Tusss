@@ -12,21 +12,32 @@
         "question": "Oda ısısında (22-28°C) 'trapezci' (tumbling) hareket yapan, 4°C'de üreyebilen gram pozitif basil?",
         "answer": "Listeria monocytogenes.",
         "difficulty": "medium",
-        "tags": ["Listeria", "Hareket"]
+        "tags": [
+          "Listeria",
+          "Hareket"
+        ]
       },
       {
         "id": "fc-micro-401",
         "question": "Listeria'nın hücreden hücreye yayılmasını sağlayan mekanizma nedir?",
         "answer": "ActA proteini aracılığıyla konak aktinini polimerize ederek 'aktin roketleri' oluşturur.",
         "difficulty": "hard",
-        "tags": ["Listeria", "ActA", "Aktin Roketi"]
+        "tags": [
+          "Listeria",
+          "ActA",
+          "Aktin Roketi"
+        ]
       },
       {
         "id": "fc-micro-402",
         "question": "Difteri toksininin etki mekanizması nedir?",
         "answer": "EF-2'yi (Elongation Factor 2) ADP-ribozilasyonu ile inaktive ederek protein sentezini durdurur. (Pseudomonas toksini ile aynı mekanizma).",
         "difficulty": "hard",
-        "tags": ["Difteri", "EF-2", "Toksin"]
+        "tags": [
+          "Difteri",
+          "EF-2",
+          "Toksin"
+        ]
       }
     ],
     "tus_spots": [
@@ -49,14 +60,20 @@
         "question": "C. difficile toksinlerinin (A ve B) ortak biyokimyasal etkisi nedir?",
         "answer": "Glukozil Transferaz aktivitesi ile Rho proteinlerini inaktive ederler.",
         "difficulty": "hard",
-        "tags": ["C. difficile", "Glukozil Transferaz"]
+        "tags": [
+          "C. difficile",
+          "Glukozil Transferaz"
+        ]
       },
       {
         "id": "fc-micro-451",
         "question": "C. difficile tanısında kullanılan altın standart yöntem nedir?",
         "answer": "Dışkıda toksinin (PCR veya hücre kültürü ile) gösterilmesi. (Kültür tek başına yeterli değildir çünkü taşıyıcılık olabilir).",
         "difficulty": "medium",
-        "tags": ["C. difficile", "Tanı"]
+        "tags": [
+          "C. difficile",
+          "Tanı"
+        ]
       }
     ],
     "tus_spots": [
@@ -78,21 +95,30 @@
         "question": "Mikobakterilerin aside dirençli boyanmasından (ARB) sorumlu olan hücre duvarı bileşeni hangisidir?",
         "answer": "Mikolik asitler.",
         "difficulty": "easy",
-        "tags": ["Mikolik asit", "ARB"]
+        "tags": [
+          "Mikolik asit",
+          "ARB"
+        ]
       },
       {
         "id": "fc-myco-501",
         "question": "TBC tanısında kullanılan yumurtalı besiyeri hangisidir ve neden Maleşit Yeşili içerir?",
         "answer": "Löwenstein-Jensen (LJ) besiyeri. Maleşit yeşili diğer floranın üremesini inhibe etmek için eklenir.",
         "difficulty": "medium",
-        "tags": ["LJ Besiyeri", "TBC"]
+        "tags": [
+          "LJ Besiyeri",
+          "TBC"
+        ]
       },
       {
         "id": "fc-myco-502",
         "question": "Niasin testi pozitif olan tek atipik olmayan mikobakteri türü?",
         "answer": "Mycobacterium tuberculosis.",
         "difficulty": "hard",
-        "tags": ["Niasin", "TBC"]
+        "tags": [
+          "Niasin",
+          "TBC"
+        ]
       }
     ],
     "tus_spots": [

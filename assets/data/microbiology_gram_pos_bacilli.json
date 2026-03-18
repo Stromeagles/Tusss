@@ -12,14 +12,18 @@
         "question": "B. anthracis'in metilen mavisi ile boyandığında pembe kapsüllü görülmesi?",
         "answer": "M'Fadyean reaksiyonu.",
         "difficulty": "hard",
-        "tags": ["Boyama"]
+        "tags": [
+          "Boyama"
+        ]
       },
       {
         "id": "fc-gpb-2001",
         "question": "Hayvan yünü ile uğraşanlarda görülen, hemorajik mediastinal lenfadenit yapan şarbon formu?",
         "answer": "Akciğer Şarbonu (Yün eğirici hastalığı).",
         "difficulty": "medium",
-        "tags": ["Enfeksiyon"]
+        "tags": [
+          "Enfeksiyon"
+        ]
       }
     ],
     "tus_spots": [
@@ -31,9 +35,15 @@
     "clinical_cases": [
       {
         "case": "Hayvancılıkla uğraşan bir hastada el sırtında ortası siyah krutlu, ağrısız, periferi ödemli bir lezyon gelişiyor. Çevreden yapılan gram incelemede gram pozitif hareketsiz basiller görülüyor. Etken nedir?",
-        "options": ["B. cereus", "S. aureus", "B. anthracis", "L. monocytogenes"],
+        "options": [
+          "B. cereus",
+          "S. aureus",
+          "B. anthracis",
+          "L. monocytogenes"
+        ],
         "correct_answer": "B. anthracis",
-        "explanation": "Hayvan teması öyküsü, ağrısız siyah eskar (püstül malin) ve gram pozitif hareketsiz basiller şarbonun deri formudur."
+        "explanation": "Hayvan teması öyküsü, ağrısız siyah eskar (püstül malin) ve gram pozitif hareketsiz basiller şarbonun deri formudur.",
+        "id": "cc-micro-gpos-bac-001-001"
       }
     ]
   },
@@ -50,14 +60,18 @@
         "question": "Tetanozda ilk tutulan kas ve görülen ilk bulgu?",
         "answer": "Masseter kası tutulumu ve Çene kilitlenmesi (Trismus).",
         "difficulty": "easy",
-        "tags": ["Tetanoz"]
+        "tags": [
+          "Tetanoz"
+        ]
       },
       {
         "id": "fc-gpb-2101",
         "question": "Botulizmde görülen '4D' bulguları nelerdir?",
         "answer": "Diplopi, Dizartri, Disfaji ve Dispne.",
         "difficulty": "medium",
-        "tags": ["Botulizm"]
+        "tags": [
+          "Botulizm"
+        ]
       }
     ],
     "tus_spots": [
@@ -70,9 +84,15 @@
     "clinical_cases": [
       {
         "case": "Paslı çivi batması sonrası 10 gün sonra çenesini açamama, ense sertliği ve sırtında yay şeklinde kasılma olan hastada en olası etken?",
-        "options": ["C. botulinum", "C. tetani", "S. pyogenes", "C. difficile"],
+        "options": [
+          "C. botulinum",
+          "C. tetani",
+          "S. pyogenes",
+          "C. difficile"
+        ],
         "correct_answer": "C. tetani",
-        "explanation": "Yara öyküsü, trismus (çene kilidi) ve opistotonus tetanozun klasik triadıdır."
+        "explanation": "Yara öyküsü, trismus (çene kilidi) ve opistotonus tetanozun klasik triadıdır.",
+        "id": "cc-micro-gpos-bac-002-001"
       }
     ]
   },
@@ -89,14 +109,18 @@
         "question": "Listeria'nın oda ısısında (22-28°C) yaptığı karakteristik hareket?",
         "answer": "Taklacı (Tumbling) hareket.",
         "difficulty": "medium",
-        "tags": ["Listeria"]
+        "tags": [
+          "Listeria"
+        ]
       },
       {
         "id": "fc-gpb-2201",
         "question": "Corynebacterium diphtheriae tanısında kullanılan, siyah koloni yapan besiyeri?",
         "answer": "Tellüritli besiyeri (Tinsdale).",
         "difficulty": "medium",
-        "tags": ["Difteri"]
+        "tags": [
+          "Difteri"
+        ]
       }
     ],
     "tus_spots": [
@@ -109,9 +133,15 @@
     "clinical_cases": [
       {
         "case": "Boğazda gri-beyaz, kaldırılınca kanayan psödomembranları olan çocukta boyun lenf bezlerinde şişlik (boğa boynu) izleniyor. En olası tanı?",
-        "options": ["Enfeksiyöz Mononükleoz", "Difteri", "Farenjit", "Kaba kulak"],
+        "options": [
+          "Enfeksiyöz Mononükleoz",
+          "Difteri",
+          "Farenjit",
+          "Kaba kulak"
+        ],
         "correct_answer": "Difteri",
-        "explanation": "Kaldırılınca kanayan psödomembran ve boğa boynu görünümü C. diphtheriae (Difteri) için tipiktir."
+        "explanation": "Kaldırılınca kanayan psödomembran ve boğa boynu görünümü C. diphtheriae (Difteri) için tipiktir.",
+        "id": "cc-micro-gpos-bac-003-001"
       }
     ]
   }

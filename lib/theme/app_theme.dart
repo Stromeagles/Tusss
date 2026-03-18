@@ -2,32 +2,32 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
-  // ── Ortak Renkler ─────────────────────────────────────────────────────────
-  static const Color cyan       = Color(0xFF00D4FF);
-  static const Color cyanDark   = Color(0xFF0099BB);
-  static const Color cyanGlow   = Color(0x2200D4FF);
-  static const Color neonPink   = Color(0xFFFF00E5);
-  static const Color neonPurple = Color(0xFF7C3AED);
-  static const Color neonGold   = Color(0xFFFFD700);
-  static const Color neonPinkGlow = Color(0x22FF00E5);
+  // ── Ortak Renkler — Deep Space Palette ───────────────────────────────────
+  static const Color cyan       = Color(0xFFF78166); // Coral / ana aksan
+  static const Color cyanDark   = Color(0xFFCF5C47); // Koyu coral
+  static const Color cyanGlow   = Color(0x22F78166); // Coral glow
+  static const Color neonPink   = Color(0xFFD2A8FF); // Soft purple
+  static const Color neonPurple = Color(0xFFA371F7); // Violet
+  static const Color neonGold   = Color(0xFFE3B341); // Amber
+  static const Color neonPinkGlow = Color(0x22D2A8FF);
 
-  static const Color success    = Color(0xFF38A169);
-  static const Color error      = Color(0xFFE53E3E);
-  static const Color warning    = Color(0xFFD69E2E);
-  static const Color hardColor  = Color(0xFFFC8181);
-  static const Color mediumColor= Color(0xFFF6AD55);
-  static const Color easyColor  = Color(0xFF68D391);
+  static const Color success    = Color(0xFF3FB950); // GitHub green
+  static const Color error      = Color(0xFFF85149); // GitHub red
+  static const Color warning    = Color(0xFFE3B341); // Amber
+  static const Color hardColor  = Color(0xFFF85149);
+  static const Color mediumColor= Color(0xFFE3B341);
+  static const Color easyColor  = Color(0xFF3FB950);
 
-  // ── Dark Renkler ──────────────────────────────────────────────────────────
-  static const Color background     = Color(0xFF05080F);
-  static const Color surface        = Color(0xFF0C1018);
-  static const Color surfaceVariant = Color(0xFF111827);
-  static const Color cardBackground = Color(0xFF0F1623);
-  static const Color textPrimary    = Color(0xFFEDF2F7);
-  static const Color textSecondary  = Color(0xFF7A8699);
-  static const Color textMuted      = Color(0xFF3D4A5C);
-  static const Color divider        = Color(0xFF1A2232);
-  static const Color border         = Color(0xFF1E2D42);
+  // ── Dark Renkler — GitHub Dark ────────────────────────────────────────────
+  static const Color background     = Color(0xFF0D1117);
+  static const Color surface        = Color(0xFF161B22);
+  static const Color surfaceVariant = Color(0xFF1C2333);
+  static const Color cardBackground = Color(0xFF161B22);
+  static const Color textPrimary    = Color(0xFFE6EDF3);
+  static const Color textSecondary  = Color(0xFF8B949E);
+  static const Color textMuted      = Color(0xFF484F58);
+  static const Color divider        = Color(0xFF21262D);
+  static const Color border         = Color(0xFF30363D);
 
   // ── Light Renkler ─────────────────────────────────────────────────────────
   static const Color lightBackground    = Color(0xFFEFF4FF);
@@ -37,19 +37,19 @@ class AppTheme {
   static const Color lightTextSecondary = Color(0xFF5A6478);
   static const Color lightDivider       = Color(0xFFE2E8F0);
 
-  // ── Gradyanlar ────────────────────────────────────────────────────────────
+  // ── Gradyanlar — Deep Space ───────────────────────────────────────────────
   static const LinearGradient cyanGradient = LinearGradient(
-    colors: [Color(0xFF00D4FF), Color(0xFF0055BB)],
+    colors: [Color(0xFFF78166), Color(0xFFA371F7)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
   static const LinearGradient neonPinkGradient = LinearGradient(
-    colors: [Color(0xFFFF00E5), Color(0xFF7C3AED)],
+    colors: [Color(0xFFD2A8FF), Color(0xFF79C0FF)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
   static const LinearGradient goldCyanGradient = LinearGradient(
-    colors: [Color(0xFFFFD700), Color(0xFF00D4FF)],
+    colors: [Color(0xFFE3B341), Color(0xFFF78166)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
@@ -144,9 +144,9 @@ class AppTheme {
       brightness: Brightness.dark,
       scaffoldBackgroundColor: background,
       colorScheme: const ColorScheme.dark(
-        primary: cyan, secondary: neonPink,
+        primary: cyan, secondary: neonPurple,
         surface: surface, error: error,
-        onPrimary: background, onSecondary: background, onSurface: textPrimary,
+        onPrimary: Colors.white, onSecondary: Colors.white, onSurface: textPrimary,
       ),
       textTheme: GoogleFonts.interTextTheme(base).copyWith(
         displayLarge:  GoogleFonts.inter(color: textPrimary,   fontWeight: FontWeight.w800, fontSize: 32),

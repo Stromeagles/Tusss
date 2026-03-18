@@ -33,7 +33,7 @@ class SubjectRegistry {
       name: 'Mikrobiyoloji',
       shortLabel: 'Mikro',
       icon: Icons.biotech_rounded,
-      color: Color(0xFF00D4FF),
+      color: Color(0xFF79C0FF),
       assetPaths: [
         'assets/data/microbiology_ch1.json',
         'assets/data/microbiology_ch2_toxins.json',
@@ -61,7 +61,7 @@ class SubjectRegistry {
       name: 'Patoloji',
       shortLabel: 'Patolo',
       icon: Icons.science_rounded,
-      color: Color(0xFF9B2C2C),
+      color: Color(0xFFF78166),
       assetPaths: [
         'assets/data/pathology_module.json',
         'assets/data/pathology_hemo_immuno.json',

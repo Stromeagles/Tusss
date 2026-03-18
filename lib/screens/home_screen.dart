@@ -95,7 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: isDark
-                ? const [Color(0xFF04071A), Color(0xFF08102B), Color(0xFF050A18)]
+                ? const [Color(0xFF0D1117), Color(0xFF0D1117), Color(0xFF161B22)]
                 : const [Color(0xFFEDF3FF), Color(0xFFE8F0FF), Color(0xFFF0F5FF)],
             begin: Alignment.topLeft,
             end:   Alignment.bottomRight,
@@ -362,7 +362,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           _StatItem(icon: Icons.bolt_rounded,
                             label: 'Başarı Oranı',
                             value: '${(_progress.accuracy * 100).toInt()}%',
-                            color: const Color(0xFF34D399), isDark: isDark),
+                            color: const Color(0xFF3FB950), isDark: isDark),
                         ],
                       ),
                     ),
@@ -404,14 +404,14 @@ class _HomeScreenState extends State<HomeScreen> {
           Expanded(child: _QuickActionCard(
             title: 'Bilgi Maratonu', subtitle: 'Flashcardlar',
             icon: Icons.auto_awesome_motion_rounded,
-            color: const Color(0xFF6366F1),
+            color: const Color(0xFFF78166),
             isDark: isDark, onTap: _navigateToFlashcards,
           )),
           const SizedBox(width: 14),
           Expanded(child: _QuickActionCard(
             title: 'Klinik Vaka', subtitle: 'Random Çözüm',
             icon: Icons.biotech_rounded,
-            color: const Color(0xFF10B981),
+            color: const Color(0xFF79C0FF),
             isDark: isDark, onTap: _navigateToCases,
           )),
         ],
@@ -567,7 +567,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       _GoalMetric(icon: Icons.menu_book_rounded,
                         label: 'Okuma',
                         value: '${(_progress.totalFlashcardsStudied / 10).toInt()}',
-                        color: const Color(0xFF34D399), isDark: isDark),
+                        color: const Color(0xFF3FB950), isDark: isDark),
                     ]),
                   ],
                 ),

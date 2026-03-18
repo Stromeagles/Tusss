@@ -617,14 +617,13 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Üst etiket — soru yüzüyle aynı yükseklikte
           Container(
-            padding:
-                const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
             decoration: BoxDecoration(
               color: AppTheme.success.withValues(alpha: 0.12),
               borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                  color: AppTheme.success.withValues(alpha: 0.40)),
+              border: Border.all(color: AppTheme.success.withValues(alpha: 0.40)),
             ),
             child: const Text('CEVAP',
                 style: TextStyle(
@@ -633,14 +632,18 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
                     fontWeight: FontWeight.w700,
                     letterSpacing: 2)),
           ),
-          const SizedBox(height: 20),
+          const Spacer(),
           Text(widget.card.answer,
               style: const TextStyle(
                   color: AppTheme.textPrimary,
-                  fontSize: 24,
-                  fontWeight: FontWeight.w700,
-                  height: 1.5)),
+                  fontSize: 17,
+                  fontWeight: FontWeight.w600,
+                  height: 1.55)),
           const Spacer(),
+          const Center(
+            child: Text('Swipe yukarı: Bildim  ·  Aşağı: Bilmedim',
+                style: TextStyle(color: AppTheme.textMuted, fontSize: 11)),
+          ),
         ],
       ),
     );
@@ -703,11 +706,11 @@ class _HintChip extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Icon(icon, color: color, size: 14),
+        Icon(icon, color: color.withValues(alpha: 0.45), size: 14), // Made more faint
         const SizedBox(height: 2),
         Text(label,
             style: TextStyle(
-                color: color,
+                color: color.withValues(alpha: 0.45), // Made more faint
                 fontSize: 9,
                 fontWeight: FontWeight.w600,
                 letterSpacing: 0.3)),

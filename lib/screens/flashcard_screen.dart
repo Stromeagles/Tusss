@@ -63,6 +63,32 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     await _applyMode(cards);
   }
 
+  void _showPocketToast() {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: const Row(
+          children: [
+            Text('📦', style: TextStyle(fontSize: 18)),
+            SizedBox(width: 10),
+            Text(
+              'Cepte! 10 gün sonra tekrar sorulacak',
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
+                fontSize: 14,
+              ),
+            ),
+          ],
+        ),
+        backgroundColor: AppTheme.success,
+        behavior: SnackBarBehavior.floating,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        duration: const Duration(seconds: 2),
+        margin: const EdgeInsets.all(16),
+      ),
+    );
+  }
+
   Future<void> _applyMode(List<Flashcard> source) async {
     List<Flashcard> result;
     if (_mode == FlashcardMode.dueOnly) {
@@ -216,13 +242,17 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           // ↑ YUKARI: Bildim (quality 4) | ↓ AŞAĞI: Bilmedim (quality 1)
           final card = _cards[prev];
           final quality = effectiveDir == CardSwiperDirection.top ? 4 : 1;
-          await _srService.recordAnswer(card.id, quality);
+          final updated = await _srService.recordAnswer(card.id, quality);
 
           if (mounted) {
             setState(() {
               _swipeHistory.add(effectiveDir);
               if (effectiveDir == CardSwiperDirection.top) {
                 _knownCount++;
+                // Cepte! toast — 1+ tekrar sonrası bilindi
+                if (updated.isInPocket) {
+                  _showPocketToast();
+                }
               } else {
                 _unknownCount++;
               }

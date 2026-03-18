@@ -1,7 +1,11 @@
-/// SM-2 Spaced Repetition algoritması için kart verisi.
+/// Spaced Repetition kart verisi — "Cepte Sistemi"
 ///
-/// Algoritma: SuperMemo 2 (SM-2)
-/// Kaynak: https://www.supermemo.com/en/archives1990-2015/english/ol/sm2
+/// Mantık:
+///   Bildim (quality ≥ 3):
+///     - 0 tekrar → 1 gün sonra
+///     - 1+ tekrar → "Cepte!" → 10 gün sonra
+///   Bilmedim (quality < 3):
+///     - sıfırla → bugün hemen tekrar
 class SM2CardData {
   final String cardId;
 
@@ -32,11 +36,12 @@ class SM2CardData {
     return !due.isAfter(DateTime(today.year, today.month, today.day));
   }
 
-  /// SM-2: quality 0-5 (0=hiç hatırlamadım, 5=mükemmel)
-  /// Uygulamamızda: sağ kaydır = 4, sol kaydır = 1
+  /// "Cepte Sistemi": quality 0-5
+  /// Uygulamamızda: yukarı swipe = 4 (Bildim), aşağı swipe = 1 (Bilmedim)
   SM2CardData computeNext(int quality) {
     assert(quality >= 0 && quality <= 5);
 
+    // EF korunuyor (ileride FSRS geçişi için)
     double newEF =
         easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
     if (newEF < 1.3) newEF = 1.3;
@@ -45,17 +50,17 @@ class SM2CardData {
     int newInterval;
 
     if (quality < 3) {
-      // Yanlış yanıt → sıfırla
+      // Bilmedim → sıfırla, bugün hemen tekrar
       newRepetitions = 0;
-      newInterval = 1;
+      newInterval = 0;
     } else {
       newRepetitions = repetitions + 1;
       if (repetitions == 0) {
+        // İlk kez bilindi → yarın tekrar
         newInterval = 1;
-      } else if (repetitions == 1) {
-        newInterval = 6;
       } else {
-        newInterval = (interval * newEF).round();
+        // 1+ kez bilindi → Cepte! 10 gün sonra
+        newInterval = 10;
       }
     }
 
@@ -70,6 +75,9 @@ class SM2CardData {
           DateTime(nextDate.year, nextDate.month, nextDate.day),
     );
   }
+
+  /// Kart "cepte" mi? (1+ tekrar sonrası bilindi, 10 günlük aralıkta)
+  bool get isInPocket => repetitions >= 2 && interval == 10;
 
   Map<String, dynamic> toJson() => {
         'cardId': cardId,

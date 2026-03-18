@@ -206,7 +206,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           CardSwiperDirection effectiveDir = dir;
           if ((dir == CardSwiperDirection.right ||
                   dir == CardSwiperDirection.left) &&
-              _dragPctY.abs() > 25) {
+              _dragPctY.abs() > 40) {
             effectiveDir = _dragPctY < 0
                 ? CardSwiperDirection.top
                 : CardSwiperDirection.bottom;
@@ -367,19 +367,19 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           _HintChip(
               icon: Icons.arrow_back_rounded,
               label: 'Geri Al',
-              color: AppTheme.textMuted),
+              color: AppTheme.textMuted.withValues(alpha: 0.40)),
           _HintChip(
               icon: Icons.arrow_downward_rounded,
               label: 'Bilmedim',
-              color: AppTheme.error.withValues(alpha: 0.55)),
+              color: AppTheme.error.withValues(alpha: 0.30)),
           _HintChip(
               icon: Icons.arrow_upward_rounded,
               label: 'Bildim',
-              color: AppTheme.success.withValues(alpha: 0.55)),
+              color: AppTheme.success.withValues(alpha: 0.30)),
           _HintChip(
               icon: Icons.arrow_forward_rounded,
               label: 'Menü',
-              color: AppTheme.textMuted),
+              color: AppTheme.textMuted.withValues(alpha: 0.40)),
         ],
       ),
     );
@@ -626,28 +626,6 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
                   fontWeight: FontWeight.w600,
                   height: 1.5)),
           const Spacer(),
-          // Jest ipuçları — cevap yüzünde yönlendirme
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              _HintChip(
-                  icon: Icons.arrow_back_rounded,
-                  label: 'Geri Al',
-                  color: AppTheme.textMuted),
-              _HintChip(
-                  icon: Icons.arrow_downward_rounded,
-                  label: 'Bilmedim',
-                  color: AppTheme.error.withValues(alpha: 0.75)),
-              _HintChip(
-                  icon: Icons.arrow_upward_rounded,
-                  label: 'Bildim',
-                  color: AppTheme.success.withValues(alpha: 0.75)),
-              _HintChip(
-                  icon: Icons.arrow_forward_rounded,
-                  label: 'Menü',
-                  color: AppTheme.textMuted),
-            ],
-          ),
         ],
       ),
     );

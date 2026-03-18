@@ -570,7 +570,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(24),
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+          filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
           child: Container(
             padding: const EdgeInsets.all(22),
             decoration: BoxDecoration(
@@ -684,7 +684,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(28),
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+          filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
             decoration: BoxDecoration(
@@ -972,15 +972,14 @@ class _ArcPainter extends CustomPainter {
     );
     final shader = gradient.createShader(rect);
 
-    // Glow layer
+    // Glow layer (lightweight - outer halo with translucent first color)
     canvas.drawArc(rect, -pi / 2, 2 * pi * progress, false,
       Paint()
         ..style       = PaintingStyle.stroke
-        ..strokeWidth = strokeWidth + 8
+        ..strokeWidth = strokeWidth + 6
         ..strokeCap   = StrokeCap.round
         ..isAntiAlias = true
-        ..maskFilter  = const MaskFilter.blur(BlurStyle.normal, 10)
-        ..shader      = shader,
+        ..color       = gradColors.first.withValues(alpha: 0.28),
     );
 
     // Main arc
@@ -1064,19 +1063,14 @@ class _SubjectCarouselCard extends StatelessWidget {
         width: 158, margin: const EdgeInsets.only(right: 14),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(22),
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
-            child: Container(
+          child: Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: isActive
-                      ? [AppTheme.cyan.withValues(alpha: 0.16), AppTheme.cyan.withValues(alpha: 0.04)]
-                      : (isDark
-                          ? [Colors.white.withValues(alpha: 0.06), Colors.white.withValues(alpha: 0.02)]
-                          : [Colors.white.withValues(alpha: 0.82), Colors.white.withValues(alpha: 0.60)]),
-                  begin: Alignment.topLeft, end: Alignment.bottomRight,
-                ),
+                color: isActive
+                    ? AppTheme.cyan.withValues(alpha: isDark ? 0.14 : 0.10)
+                    : (isDark
+                        ? Colors.white.withValues(alpha: 0.06)
+                        : Colors.white.withValues(alpha: 0.90)),
                 borderRadius: BorderRadius.circular(22),
                 border: Border.all(
                   color: isActive
@@ -1134,7 +1128,6 @@ class _SubjectCarouselCard extends StatelessWidget {
             ),
           ),
         ),
-      ),
     );
   }
 }
@@ -1161,7 +1154,7 @@ class _QuickActionCard extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(22),
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+          filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
           child: Container(
             padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(

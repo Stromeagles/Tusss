@@ -7,13 +7,19 @@ import '../services/spaced_repetition_service.dart';
 import '../widgets/difficulty_badge_widget.dart';
 import '../models/subject_registry.dart';
 
-enum FlashcardMode { all, dueOnly }
+enum FlashcardMode { all, dueOnly, pocketOnly }
 
 class FlashcardScreen extends StatefulWidget {
   final Topic? topicFilter;
   final String? subjectId;
+  final FlashcardMode initialMode;
 
-  const FlashcardScreen({super.key, this.topicFilter, this.subjectId});
+  const FlashcardScreen({
+    super.key,
+    this.topicFilter,
+    this.subjectId,
+    this.initialMode = FlashcardMode.dueOnly,
+  });
 
   @override
   State<FlashcardScreen> createState() => _FlashcardScreenState();
@@ -30,7 +36,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   int _currentIndex = 0;
   int _knownCount = 0;
   int _unknownCount = 0;
-  FlashcardMode _mode = FlashcardMode.dueOnly;
+  late FlashcardMode _mode;
 
   // Swipe geçmişi — Geri Al için
   final List<CardSwiperDirection> _swipeHistory = [];
@@ -41,6 +47,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   @override
   void initState() {
     super.initState();
+    _mode = widget.initialMode;
     _loadCards();
   }
 
@@ -95,6 +102,13 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           await _srService.filterDueCards(source.map((c) => c.id).toList());
       result = source.where((c) => dueIds.contains(c.id)).toList();
       if (result.isEmpty) result = source;
+    } else if (_mode == FlashcardMode.pocketOnly) {
+      final allData = await Future.wait(
+          source.map((c) => _srService.getCardData(c.id)));
+      result = <Flashcard>[];
+      for (var i = 0; i < source.length; i++) {
+        if (allData[i].isInPocket) result.add(source[i]);
+      }
     } else {
       result = source;
     }
@@ -111,6 +125,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   }
 
   String get _title {
+    if (_mode == FlashcardMode.pocketOnly) return '📦 Cep Kartları';
     if (widget.topicFilter != null) return widget.topicFilter!.subTopic;
     if (widget.subjectId != null) {
       final mod = SubjectRegistry.findById(widget.subjectId!);
@@ -618,12 +633,12 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
                     fontWeight: FontWeight.w700,
                     letterSpacing: 2)),
           ),
-          const Spacer(),
+          const SizedBox(height: 20),
           Text(widget.card.answer,
               style: const TextStyle(
                   color: AppTheme.textPrimary,
-                  fontSize: 19,
-                  fontWeight: FontWeight.w600,
+                  fontSize: 24,
+                  fontWeight: FontWeight.w700,
                   height: 1.5)),
           const Spacer(),
         ],
@@ -745,34 +760,34 @@ class _ModeToggle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDue = mode == FlashcardMode.dueOnly;
+    final (label, icon, color) = switch (mode) {
+      FlashcardMode.dueOnly   => ('Bugün',  Icons.filter_alt_rounded,    AppTheme.cyan),
+      FlashcardMode.pocketOnly => ('Cep',    Icons.inventory_2_rounded,   AppTheme.success),
+      FlashcardMode.all       => ('Tümü',   Icons.all_inclusive_rounded,  AppTheme.textMuted),
+    };
     return GestureDetector(
-      onTap: () =>
-          onChanged(isDue ? FlashcardMode.all : FlashcardMode.dueOnly),
+      onTap: () {
+        final next = switch (mode) {
+          FlashcardMode.dueOnly    => FlashcardMode.all,
+          FlashcardMode.all        => FlashcardMode.pocketOnly,
+          FlashcardMode.pocketOnly => FlashcardMode.dueOnly,
+        };
+        onChanged(next);
+      },
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
         decoration: BoxDecoration(
-          color: isDue
-              ? AppTheme.cyan.withValues(alpha: 0.15)
-              : AppTheme.surfaceVariant,
+          color: color.withValues(alpha: 0.15),
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(
-              color: isDue
-                  ? AppTheme.cyan.withValues(alpha: 0.4)
-                  : AppTheme.divider),
+          border: Border.all(color: color.withValues(alpha: 0.4)),
         ),
         child: Row(
           children: [
-            Icon(
-                isDue
-                    ? Icons.filter_alt_rounded
-                    : Icons.all_inclusive_rounded,
-                color: isDue ? AppTheme.cyan : AppTheme.textMuted,
-                size: 14),
+            Icon(icon, color: color, size: 14),
             const SizedBox(width: 5),
-            Text(isDue ? 'Bugün' : 'Tümü',
+            Text(label,
                 style: TextStyle(
-                    color: isDue ? AppTheme.cyan : AppTheme.textMuted,
+                    color: color,
                     fontSize: 12,
                     fontWeight: FontWeight.w600)),
           ],

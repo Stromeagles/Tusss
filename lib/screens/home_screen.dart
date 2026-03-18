@@ -13,6 +13,7 @@ import '../models/progress_model.dart';
 import '../models/topic_model.dart';
 import '../models/subject_registry.dart';
 import 'flashcard_subject_screen.dart';
+import 'flashcard_screen.dart';
 import 'case_study_screen.dart';
 import 'topic_list_screen.dart';
 import 'hierarchy_screens.dart';
@@ -405,7 +406,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     Container(width: 1, height: 32, color: AppTheme.border),
                     _AnkiStat(label: 'Bugün', count: _srsSummary.dueCount, color: AppTheme.cyan),
                     Container(width: 1, height: 32, color: AppTheme.border),
-                    _AnkiStat(label: 'Cepte', count: _srsSummary.pocketCount, color: AppTheme.success),
+                    GestureDetector(
+                      onTap: _srsSummary.pocketCount > 0
+                          ? () => Navigator.push(context, MaterialPageRoute(
+                              builder: (_) => const FlashcardScreen(
+                                  initialMode: FlashcardMode.pocketOnly)))
+                          : null,
+                      child: _AnkiStat(label: 'Cepte', count: _srsSummary.pocketCount, color: AppTheme.success),
+                    ),
                   ],
                 ),
               ],

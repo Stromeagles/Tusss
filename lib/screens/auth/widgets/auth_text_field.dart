@@ -104,7 +104,7 @@ class _AuthTextFieldState extends State<AuthTextField>
                     AppTheme.cyan,
                     _borderAnim.value,
                   )!;
-            final glowOpacity = hasError ? 0.0 : _borderAnim.value * 0.15;
+            final glowOpacity = hasError ? 0.0 : _borderAnim.value * 0.30;
 
             return ClipRRect(
               borderRadius: BorderRadius.circular(12),
@@ -119,12 +119,20 @@ class _AuthTextFieldState extends State<AuthTextField>
                       width: _isFocused && !hasError ? 1.5 : 1.0,
                     ),
                     boxShadow: [
-                      if (glowOpacity > 0)
+                      if (glowOpacity > 0) ...[
+                        // İç glow — yoğun
                         BoxShadow(
                           color: AppTheme.cyan.withValues(alpha: glowOpacity),
-                          blurRadius: 12,
-                          spreadRadius: 0,
+                          blurRadius: 14,
+                          spreadRadius: 1,
                         ),
+                        // Dış glow — yumuşak hale
+                        BoxShadow(
+                          color: AppTheme.cyan.withValues(alpha: glowOpacity * 0.4),
+                          blurRadius: 28,
+                          spreadRadius: 2,
+                        ),
+                      ],
                     ],
                   ),
                   child: child,

@@ -150,9 +150,28 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
           ),
+          // Tıbbi ikon deseni — çok hafif, dekoratif
+          ..._medicalIcons(),
         ],
       ),
     );
+  }
+
+  /// Arka planda scatter edilmiş tıbbi ikonlar
+  List<Widget> _medicalIcons() {
+    Widget medIcon(IconData data, double size) => Opacity(
+          opacity: 0.045,
+          child: Icon(data, size: size, color: Colors.white),
+        );
+    return [
+      Positioned(top:  80, left:  30, child: medIcon(Icons.favorite_border_rounded,    22)),
+      Positioned(top: 160, right: 20, child: medIcon(Icons.add_circle_outline_rounded, 16)),
+      Positioned(top: 280, left:  15, child: medIcon(Icons.biotech_outlined,           20)),
+      Positioned(top: 420, right: 35, child: medIcon(Icons.medication_outlined,        18)),
+      Positioned(top: 550, left:  40, child: medIcon(Icons.science_outlined,           14)),
+      Positioned(top: 650, right: 25, child: medIcon(Icons.psychology_outlined,        24)),
+      Positioned(top: 750, left:  25, child: medIcon(Icons.monitor_heart_outlined,     18)),
+    ];
   }
 
   // ── Logo area ─────────────────────────────────────────────────────────────
@@ -625,8 +644,9 @@ class _GradientButtonState extends State<_GradientButton> {
             },
       onTapCancel: () => setState(() => _pressed = false),
       child: AnimatedScale(
-        scale: _pressed ? 0.97 : 1.0,
-        duration: const Duration(milliseconds: 100),
+        scale: _pressed ? 0.93 : 1.0,
+        duration: const Duration(milliseconds: 80),
+        curve: Curves.easeInOut,
         child: Container(
           height: 52,
           decoration: BoxDecoration(

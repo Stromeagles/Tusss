@@ -4,6 +4,7 @@ import '../models/topic_model.dart';
 import '../services/data_service.dart';
 import '../services/progress_service.dart';
 import '../services/ai_service.dart';
+import '../services/spaced_repetition_service.dart';
 import '../models/subject_registry.dart';
 
 class CaseStudyScreen extends StatefulWidget {
@@ -23,6 +24,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
   final _dataService = DataService();
   final _progressService = ProgressService();
   final _aiService = AIService();
+  final _srService = SpacedRepetitionService();
 
   List<ClinicalCase> _cases = [];
   bool _loading = true;
@@ -64,7 +66,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
   bool get _isCorrect => _selectedAnswer == _currentCase.correctAnswer;
   bool get _isLast => _currentIndex == _cases.length - 1;
 
-  void _selectAnswer(String answer) {
+  Future<void> _selectAnswer(String answer) async {
     if (_answered) return;
     setState(() {
       _selectedAnswer = answer;
@@ -74,6 +76,13 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
     });
     _progressService.recordCaseAnswer(
         correct: answer == _currentCase.correctAnswer);
+
+    // SRS entegrasyonu: doğru → quality 4, yanlış → quality 1
+    final caseId = _currentCase.id;
+    if (caseId.isNotEmpty) {
+      final quality = answer == _currentCase.correctAnswer ? 4 : 1;
+      await _srService.recordAnswer(caseId, quality);
+    }
   }
 
   Future<void> _fetchAIExplanation() async {

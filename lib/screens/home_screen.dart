@@ -8,10 +8,10 @@ import '../services/theme_service.dart';
 import '../utils/transitions.dart';
 import '../services/data_service.dart';
 import '../services/progress_service.dart';
+import '../services/spaced_repetition_service.dart';
 import '../models/progress_model.dart';
 import '../models/topic_model.dart';
 import '../models/subject_registry.dart';
-import 'flashcard_screen.dart';
 import 'flashcard_subject_screen.dart';
 import 'case_study_screen.dart';
 import 'topic_list_screen.dart';
@@ -37,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Topic>   _topics   = [];
   bool          _loading  = true;
   int           _navIndex = 0;
+  SrsSummary    _srsSummary = const SrsSummary(newCount: 0, dueCount: 0, pocketCount: 0);
 
   @override
   void initState() {
@@ -51,10 +52,22 @@ class _HomeScreenState extends State<HomeScreen> {
       _progressService.loadProgress(),
     ]);
     if (mounted) {
+      final topics = results[0] as List<Topic>;
+      final progress = results[1] as StudyProgress;
+
+      // Tüm flashcard ve case ID'lerini topla
+      final allIds = <String>[];
+      for (final t in topics) {
+        allIds.addAll(t.flashcards.map((fc) => fc.id));
+        allIds.addAll(t.clinicalCases.map((cc) => cc.id).where((id) => id.isNotEmpty));
+      }
+      final srsSummary = await SpacedRepetitionService().getSummary(allIds);
+
       setState(() {
-        _topics   = results[0] as List<Topic>;
-        _progress = results[1] as StudyProgress;
-        _loading  = false;
+        _topics     = topics;
+        _progress   = progress;
+        _srsSummary = srsSummary;
+        _loading    = false;
       });
     }
   }
@@ -299,8 +312,6 @@ class _HomeScreenState extends State<HomeScreen> {
     final cardBg     = AppTheme.glassBg(isDark, darkAlpha: 0.08, lightAlpha: 0.82);
     final cardBorder = AppTheme.glassBorder(isDark);
     final shadow     = AppTheme.shadowColor(isDark);
-    final textColor  = isDark ? Colors.white : AppTheme.lightTextPrimary;
-
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: ClipRRect(
@@ -384,6 +395,42 @@ class _HomeScreenState extends State<HomeScreen> {
 
                 // ── Weekly bar chart ─────────────────────────────────────────
                 _WeeklyBarChart(accent: AppTheme.cyan, isDark: isDark),
+
+                // Anki-style sayaçlar
+                const SizedBox(height: 16),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    _AnkiStat(label: 'Yeni', count: _srsSummary.newCount, color: const Color(0xFF58A6FF)),
+                    Container(width: 1, height: 32, color: AppTheme.border),
+                    _AnkiStat(label: 'Bugün', count: _srsSummary.dueCount, color: AppTheme.cyan),
+                    Container(width: 1, height: 32, color: AppTheme.border),
+                    _AnkiStat(label: 'Cepte', count: _srsSummary.pocketCount, color: AppTheme.success),
+                  ],
+                ),
+                const SizedBox(height: 16),
+                // Hemen Başla butonu
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton.icon(
+                    onPressed: _srsSummary.total > 0
+                        ? () => Navigator.push(context,
+                            MaterialPageRoute(builder: (_) => FlashcardSubjectScreen()))
+                        : null,
+                    icon: const Icon(Icons.play_arrow_rounded, size: 18),
+                    label: Text(
+                      _srsSummary.total > 0
+                          ? 'Hemen Başla  (${_srsSummary.total} kart)'
+                          : 'Tümü Tamamlandı 🎉',
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppTheme.cyan,
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
@@ -1249,6 +1296,29 @@ class _AmbientBlob extends StatelessWidget {
           color.withValues(alpha: 0.0),
         ]),
       ),
+    );
+  }
+}
+
+// ── Anki Stat ──────────────────────────────────────────────────────────────
+class _AnkiStat extends StatelessWidget {
+  const _AnkiStat({required this.label, required this.count, required this.color});
+  final String label;
+  final int count;
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text('$count',
+          style: GoogleFonts.outfit(
+            fontSize: 24, fontWeight: FontWeight.w800, color: color)),
+        const SizedBox(height: 2),
+        Text(label,
+          style: GoogleFonts.inter(
+            fontSize: 11, color: AppTheme.textSecondary, fontWeight: FontWeight.w500)),
+      ],
     );
   }
 }

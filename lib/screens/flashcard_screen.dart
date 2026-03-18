@@ -36,7 +36,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   final List<CardSwiperDirection> _swipeHistory = [];
 
   // Drag sırasında anlık % değerleri — dikey yön önceliği için
-  int _dragPctX = 0;
   int _dragPctY = 0;
 
   @override
@@ -268,7 +267,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
         cardBuilder: (context, index, percentThresholdX, percentThresholdY) {
           // Aktif kartın sürükleme yönünü takip et (onSwipe'da kullanılır)
           if (index == _currentIndex) {
-            _dragPctX = percentThresholdX;
             _dragPctY = percentThresholdY;
           }
 

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
+import 'auth/auth_view_model.dart';
 import 'theme/app_theme.dart';
-import 'screens/home_screen.dart';
+import 'screens/auth/login_screen.dart';
 import 'services/theme_service.dart';
 
 void main() {
@@ -10,7 +12,12 @@ void main() {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
-  runApp(const TusAsistaniApp());
+  runApp(
+    ChangeNotifierProvider<AuthViewModel>(
+      create: (_) => AuthViewModel(),
+      child: const TusAsistaniApp(),
+    ),
+  );
 }
 
 class TusAsistaniApp extends StatelessWidget {
@@ -40,7 +47,7 @@ class TusAsistaniApp extends StatelessWidget {
           themeMode: themeMode,
           theme:     AppTheme.lightTheme,
           darkTheme: AppTheme.darkTheme,
-          home: const HomeScreen(),
+          home: const LoginScreen(),
         );
       },
     );

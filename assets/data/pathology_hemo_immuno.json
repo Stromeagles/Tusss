@@ -1,0 +1,117 @@
+[
+  {
+    "id": "patho-hemo-001",
+    "subject": "Patoloji",
+    "chapter": "Hemodinamik Bozukluklar",
+    "topic": "Ödem ve Konjesyon",
+    "sub_topic": "Transuda ve Eksuda Ayrımı",
+    "content_summary": "Ödem, interstisyel alanda aşırı sıvı birikimidir. Transuda; protein miktarı düşük (<3g/dL), dansitesi düşük (<1.012), inflamasyonsuz sıvıdır (KY, Siroz). Eksuda; protein miktarı yüksek (>3g/dL), dansitesi yüksek (>1.020) inflamatuar sıvıdır.",
+    "flashcards": [
+      {
+        "id": "fc-patho-hemo-100",
+        "question": "Nefrotik sendromda ödemin temel mekanizması nedir?",
+        "answer": "Plazma onkotik basıncının azalması (albumin kaybına bağlı)."
+      },
+      {
+        "id": "fc-patho-hemo-101",
+        "question": "Sol kalp yetmezliğinde akciğerlerde görülen karakteristik makrofajlara ne denir?",
+        "answer": "Kalp hatası hücreleri (hemosiderin yüklü makrofajlar)."
+      }
+    ],
+    "tus_spots": [
+      "Transuda = Non-inflamatuar; Eksuda = İnflamatuar.",
+      "Karaciğer konjesyonunda makroskopik görünüm: Muskat cevizi manzarası."
+    ]
+  },
+  {
+    "id": "patho-hemo-002",
+    "subject": "Patoloji",
+    "chapter": "Hemodinamik Bozukluklar",
+    "topic": "Tromboz ve Embolizm",
+    "sub_topic": "Virchow Triadı ve Emboli Tipleri",
+    "content_summary": "Tromboz oluşumunda Virchow Triadı: 1. Endotel hasarı (en önemli), 2. Staz/Türbülan akım, 3. Hiperkoagülabilite. Emboli, kopan bir kitlenin (trombus, yağ, hava) kanla uzak bir yere taşınmasıdır.",
+    "flashcards": [
+      {
+        "id": "fc-patho-hemo-110",
+        "question": "Trombusun intravital (sağ iken) oluştuğunu gösteren mikroskopik bulgu nedir?",
+        "answer": "Zahn çizgileri (Laminasyon gösteren fibrin ve platelet tabakaları)."
+      },
+      {
+        "id": "fc-patho-hemo-111",
+        "question": "Kemik kırıkları sonrası görülen, solunum yetmezliği ve peteşilerle karakterize emboli tipi?",
+        "answer": "Yağ embolisi."
+      }
+    ],
+    "tus_spots": [
+      "Paradoksal emboli: Venöz dolaşımdan gelip bir septum defektinden (ASD/VSD) arterial sisteme geçmesi.",
+      "Hava embolisi için en az 100cc hava gereklidir."
+    ]
+  },
+  {
+    "id": "patho-immuno-001",
+    "subject": "Patoloji",
+    "chapter": "İmmünopatoloji",
+    "topic": "Hipersensitivite Reaksiyonları",
+    "sub_topic": "Tip I, II, III ve IV",
+    "content_summary": "Tip I: IgE aracılı, mast hücre degranülasyonu (Anafilaksi). Tip II: Antikor aracılı (Goodpasture, Myasthenia Gravis). Tip III: İmmün kompleks (SLE, PAN, Arthus). Tip IV: Hücre aracılı/Gecikmiş (TBC testi, Kontakt dermatit).",
+    "flashcards": [
+      {
+        "id": "fc-patho-imm-120",
+        "question": "Arthus reaksiyonu hangi tip hipersensitivitedir?",
+        "answer": "Tip III (Lokalize immün kompleks vasküliti)."
+      },
+      {
+        "id": "fc-patho-imm-121",
+        "question": "Granülom oluşumu hangi tip hipersensitiviteye dayanır?",
+        "answer": "Tip IV (Gecikmiş tip)."
+      }
+    ],
+    "tus_spots": [
+      "Tip II hipersensitivitede antikor direkt doku antijenine bağlıdır.",
+      "Serum hastalığı sistemik Tip III örneğidir."
+    ]
+  },
+  {
+    "id": "patho-immuno-002",
+    "subject": "Patoloji",
+    "chapter": "İmmünopatoloji",
+    "topic": "Sistemik Lupus Eritematozus (SLE)",
+    "sub_topic": "Morfoloji ve Tanı",
+    "content_summary": "SLE, çoklu organ tutulumu yapan otoimmün bir hastalıktır. Böbrekte Diffüz Proliferatif GN (Tip IV) en sık ve ağır formdur. Kalpte Libman-Sacks endokarditi (steril vejetasyonlar) görülür.",
+    "flashcards": [
+      {
+        "id": "fc-patho-imm-130",
+        "question": "SLE için en duyarlı (tarama) antikor hangisidir?",
+        "answer": "ANA (Antinükleer antikor)."
+      },
+      {
+        "id": "fc-patho-imm-131",
+        "question": "SLE için en spesifik (tanı koydurucu) antikor hangisidir?",
+        "answer": "Anti-dsDNA ve Anti-Smith."
+      }
+    ],
+    "tus_spots": [
+      "SLE'de dalakta arterioller çevresinde konsantrik fibrozis: Soğan zarı (onion skin) görünümü.",
+      "Libman-Sacks vejetasyonları kapakların her iki yüzünde de olabilir."
+    ]
+  },
+  {
+    "id": "patho-immuno-003",
+    "subject": "Patoloji",
+    "chapter": "İmmünopatoloji",
+    "topic": "Amiloidoz",
+    "sub_topic": "Sınıflandırma ve Boyanma Özellikleri",
+    "content_summary": "Amiloidoz, yanlış katlanmış proteinlerin dokuda birikmesidir. AL (İmmünglobulin hafif zincir) multiple miyelomda görülür. AA (Serum Amiloid A) kronik inflamatuar hastalıklarda (FMF, TBC) görülür.",
+    "flashcards": [
+      {
+        "id": "fc-patho-imm-140",
+        "question": "Amiloidin en spesifik boyası ve polarize mikroskopta verdiği röfle nedir?",
+        "answer": "Kongored (Congo red) boyası; polarize ışıkta elma yeşili röfle verir."
+      }
+    ],
+    "tus_spots": [
+      "AL amiloidoz = Primer amiloidoz; AA amiloidoz = Sekonder amiloidoz.",
+      "Amiloid EM'de 7.5-10 nm çapında dallanmayan fibriller şeklinde görülür."
+    ]
+  }
+]

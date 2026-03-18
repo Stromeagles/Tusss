@@ -1,0 +1,118 @@
+[
+  {
+    "id": "micro-gpb-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Pozitif Basiller",
+    "sub_topic": "Bacillus anthracis (Şarbon)",
+    "content_summary": "Zorunlu aerob, hareketsiz, sporlu basil. Kapsülü polipeptid (poli-D-glutamik asit) yapıdadır. PA (Protektif), EF (Ödem), LF (Lethal) toksinleri vardır.",
+    "flashcards": [
+      {
+        "id": "fc-gpb-2000",
+        "question": "B. anthracis'in metilen mavisi ile boyandığında pembe kapsüllü görülmesi?",
+        "answer": "M'Fadyean reaksiyonu.",
+        "difficulty": "hard",
+        "tags": ["Boyama"]
+      },
+      {
+        "id": "fc-gpb-2001",
+        "question": "Hayvan yünü ile uğraşanlarda görülen, hemorajik mediastinal lenfadenit yapan şarbon formu?",
+        "answer": "Akciğer Şarbonu (Yün eğirici hastalığı).",
+        "difficulty": "medium",
+        "tags": ["Enfeksiyon"]
+      }
+    ],
+    "tus_spots": [
+      "B. anthracis: Medusa başı kolonileri ve ters çam ağacı görüntüsü tipiktir.",
+      "Toksin bileşenleri: PA + EF = Ödem, PA + LF = Ölüm.",
+      "Deri şarbonu: Siyah eskar dokusu (püstül malin) ağrısızdır ve etrafı ödemlidir.",
+      "Profilaksi: Şarbon şüphesinde 60 gün Siprofloksasin veya Doksisiklin kullanılır."
+    ],
+    "clinical_cases": [
+      {
+        "case": "Hayvancılıkla uğraşan bir hastada el sırtında ortası siyah krutlu, ağrısız, periferi ödemli bir lezyon gelişiyor. Çevreden yapılan gram incelemede gram pozitif hareketsiz basiller görülüyor. Etken nedir?",
+        "options": ["B. cereus", "S. aureus", "B. anthracis", "L. monocytogenes"],
+        "correct_answer": "B. anthracis",
+        "explanation": "Hayvan teması öyküsü, ağrısız siyah eskar (püstül malin) ve gram pozitif hareketsiz basiller şarbonun deri formudur."
+      }
+    ]
+  },
+  {
+    "id": "micro-gpb-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Pozitif Basiller",
+    "sub_topic": "Clostridium tetani ve botulinum",
+    "content_summary": "İkisi de anaerob sporlu basildir. Tetanospazmin (spastik paralizi), Botulinum toksini (gevşek/flask paralizi) yapar.",
+    "flashcards": [
+      {
+        "id": "fc-gpb-2100",
+        "question": "Tetanozda ilk tutulan kas ve görülen ilk bulgu?",
+        "answer": "Masseter kası tutulumu ve Çene kilitlenmesi (Trismus).",
+        "difficulty": "easy",
+        "tags": ["Tetanoz"]
+      },
+      {
+        "id": "fc-gpb-2101",
+        "question": "Botulizmde görülen '4D' bulguları nelerdir?",
+        "answer": "Diplopi, Dizartri, Disfaji ve Dispne.",
+        "difficulty": "medium",
+        "tags": ["Botulizm"]
+      }
+    ],
+    "tus_spots": [
+      "C. tetani: Davul tokmağı (toplu iğne) görünümlü terminal sporu vardır.",
+      "Botulinum Toksini: Asetilkolin salınımını geri dönüşümsüz olarak inhibe eder.",
+      "İnfant Botulizmi: Bal tüketimi sonrası görülen 'Gevşek Bebek' sendromudur.",
+      "Risus sardonicus: Tetanozda yüz kaslarının spazmına bağlı alaycı gülümseme.",
+      "Opistotonus: Tetanozda sırt kaslarının spazmına bağlı yay gibi bükülme."
+    ],
+    "clinical_cases": [
+      {
+        "case": "Paslı çivi batması sonrası 10 gün sonra çenesini açamama, ense sertliği ve sırtında yay şeklinde kasılma olan hastada en olası etken?",
+        "options": ["C. botulinum", "C. tetani", "S. pyogenes", "C. difficile"],
+        "correct_answer": "C. tetani",
+        "explanation": "Yara öyküsü, trismus (çene kilidi) ve opistotonus tetanozun klasik triadıdır."
+      }
+    ]
+  },
+  {
+    "id": "micro-gpb-003",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Pozitif Basiller",
+    "sub_topic": "Listeria ve Corynebacterium",
+    "content_summary": "Listeria: Soğuğu seven, hareketli, intraselüler basil. C. diphtheriae: EF-2 inhibisyonu yapan toksin üretir.",
+    "flashcards": [
+      {
+        "id": "fc-gpb-2200",
+        "question": "Listeria'nın oda ısısında (22-28°C) yaptığı karakteristik hareket?",
+        "answer": "Taklacı (Tumbling) hareket.",
+        "difficulty": "medium",
+        "tags": ["Listeria"]
+      },
+      {
+        "id": "fc-gpb-2201",
+        "question": "Corynebacterium diphtheriae tanısında kullanılan, siyah koloni yapan besiyeri?",
+        "answer": "Tellüritli besiyeri (Tinsdale).",
+        "difficulty": "medium",
+        "tags": ["Difteri"]
+      }
+    ],
+    "tus_spots": [
+      "L. monocytogenes: Gebelerde sepsis ve menenjit etkenidir (Buzdolabı derecesinde ürer).",
+      "ActA: Listeria'nın hücreden hücreye aktin roketleri ile yayılmasını sağlar.",
+      "Difteri Toksini: ADP-ribozilasyonu ile Elongation Factor-2 (EF-2)'yi inaktive eder.",
+      "Elek testi: C. diphtheriae'nin toksin üretip üretmediğini saptar.",
+      "Babest-Ernst cisimcikleri: Difterinin metakromatik cisimcikleridir."
+    ],
+    "clinical_cases": [
+      {
+        "case": "Boğazda gri-beyaz, kaldırılınca kanayan psödomembranları olan çocukta boyun lenf bezlerinde şişlik (boğa boynu) izleniyor. En olası tanı?",
+        "options": ["Enfeksiyöz Mononükleoz", "Difteri", "Farenjit", "Kaba kulak"],
+        "correct_answer": "Difteri",
+        "explanation": "Kaldırılınca kanayan psödomembran ve boğa boynu görünümü C. diphtheriae (Difteri) için tipiktir."
+      }
+    ]
+  }
+]

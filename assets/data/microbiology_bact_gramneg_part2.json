@@ -1,0 +1,76 @@
+[
+  {
+    "id": "micro-bact-010",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Negatif Kıvrık Basiller",
+    "sub_topic": "Vibrio, Campylobacter ve Helicobacter",
+    "content_summary": "Vibrio (alkali sever), Campylobacter (42°C sever) ve Helicobacter (üreaz+) kıvrık basillerdir.",
+    "flashcards": [
+      {
+        "id": "fc-micro-750",
+        "question": "Pirinç suyu şeklinde dışkılama ile karakterize, Gs üzerinden cAMP artırarak diyare yapan bakteri?",
+        "answer": "Vibrio cholerae.",
+        "difficulty": "easy",
+        "tags": ["Vibrio", "Kolera", "cAMP"]
+      },
+      {
+        "id": "fc-micro-751",
+        "question": "Gelişmiş ülkelerde bakteriyel gastroenteritin en sık nedeni olan, 42°C'de üreyen ve Guillain-Barré ile ilişkili bakteri?",
+        "answer": "Campylobacter jejuni.",
+        "difficulty": "medium",
+        "tags": ["Campylobacter", "GBS"]
+      },
+      {
+        "id": "fc-micro-752",
+        "question": "H. pylori patogenezinde pH'ı artırarak hayatta kalmasını sağlayan temel enzim nedir?",
+        "answer": "Üreaz. (Üreyi amonyağa yıkarak pH'ı artırır).",
+        "difficulty": "easy",
+        "tags": ["H. pylori", "Üreaz"]
+      }
+    ],
+    "tus_spots": [
+      "V. cholerae: TCBS agarda sarı koloni yapar (sükroz+).",
+      "V. vulnificus: Deniz ürünleri/istridye sonrası yara enfeksiyonu ve sepsis yapar.",
+      "C. jejuni: Kümes hayvanları ile temas sonrası kanlı diyare yapar.",
+      "H. pylori: MALT Lenfoma ve Gastrik Adenokarsinom riskini artırır."
+    ]
+  },
+  {
+    "id": "micro-bact-011",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Negatif Kokobasiller",
+    "sub_topic": "Haemophilus ve Zoonotikler",
+    "content_summary": "Haemophilus (X ve V faktör gereksinimi), Francisella (Tularemi) ve Legionella (Klima pnömonisi) önemli kokobasillerdir.",
+    "flashcards": [
+      {
+        "id": "fc-micro-800",
+        "question": "H. influenzae'nın üremesi için gerekli olan X ve V faktörleri nelerdir?",
+        "answer": "X faktörü: Hemin, V faktörü: NAD.",
+        "difficulty": "medium",
+        "tags": ["Haemophilus", "Faktörler"]
+      },
+      {
+        "id": "fc-micro-801",
+        "question": "Cinsel yolla bulaşan, ağrılı 'Şankroid' (yumuşak şankır) etkeni bakteri?",
+        "answer": "Haemophilus ducreyi. (Do cry - ağrılı).",
+        "difficulty": "medium",
+        "tags": ["H. ducreyi", "Şankroid"]
+      },
+      {
+        "id": "fc-micro-802",
+        "question": "Legionella pneumophila tanısında kullanılan, BCYE agarda bulunan temel madde nedir?",
+        "answer": "Kömür (Charcoal). (Detoksifikasyon için).",
+        "difficulty": "hard",
+        "tags": ["Legionella", "BCYE"]
+      }
+    ],
+    "tus_spots": [
+      "Hib: Epiglottit (kiraz kırmızısı epiglott, parmak işareti) ve 5 yaş altı menenjit etkenidir.",
+      "Francisella tularensis: Çok düşük dozda (10-50 bakteri) hastalık yapar (Biyoterör ajanı).",
+      "Legionella: Hiponatremi ile seyreden atipik pnömoni yapar. İdrarda antijen testi (Serogrup 1) tanısaldır.",
+      "Bartonella henselae: Kedi tırmığı hastalığı ve immunsupresifte 'Basiller Anjiomatozis' yapar."
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "micro-vrna-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Viroloji",
+    "topic": "RNA Virüsleri",
+    "sub_topic": "İnfluenza Virüsü",
+    "content_summary": "Segmenter RNA virüsüdür. Antijenik shift ve drift yapar.",
+    "flashcards": [
+      {
+        "id": "fc-vrna-100",
+        "question": "İnfluenza virüsünün pandemilere yol açan büyük değişimine ne denir?",
+        "answer": "Antijenik Shift."
+      }
+    ],
+    "tus_spots": [
+      "İnfluenza, RNA virüsü olmasına rağmen çekirdekte replike olur."
+    ]
+  },
+  {
+    "id": "micro-vrna-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Viroloji",
+    "topic": "RNA Virüsleri",
+    "sub_topic": "HIV",
+    "content_summary": "Retroviridae ailesindendir. CD4+ T hücrelerini enfekte eder.",
+    "flashcards": [
+      {
+        "id": "fc-vrna-110",
+        "question": "HIV hangi hücre reseptörüne bağlanır?",
+        "answer": "CD4 (ve CCR5/CXCR4)."
+      }
+    ],
+    "tus_spots": [
+      "HIV genomu diploittir.",
+      "Tanıda ELISA (tarama) ve Western Blot (doğrulama - eski) kullanılır."
+    ]
+  }
+]

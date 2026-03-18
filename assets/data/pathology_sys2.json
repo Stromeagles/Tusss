@@ -1,0 +1,50 @@
+[
+  {
+    "id": "patho-sys2-001",
+    "subject": "Patoloji",
+    "chapter": "Gastrointestinal Sistem",
+    "topic": "Özofagus ve Mide",
+    "sub_topic": "Barret ve Gastrit",
+    "content_summary": "Barret Özofagus: Kronik reflü sonucu skuamöz epitelin intestinal metaplaziye (goblet hücreli kolumnar epitel) dönmesi. Adenokarsinom riski artar. H. pylori gastritinde antrum tutulumu ve lenfoit folikül oluşumu sıktır.",
+    "flashcards": [
+      {
+        "id": "fc-patho-sys2-300",
+        "question": "Mide karsinomunda sol supraklaviküler lenf nodu metastazına ne denir?",
+        "answer": "Virchow nodu."
+      },
+      {
+        "id": "fc-patho-sys2-301",
+        "question": "Taşlı yüzük hücreli mide karsinomunun over metastazına ne denir?",
+        "answer": "Krukenberg tümörü."
+      }
+    ],
+    "tus_spots": [
+      "Crohn: Transmural tutulum, Skip lezyonlar, Non-kazeifiye granülomlar.",
+      "Ülseratif Kolit: Mukozal tutulum, Rektumdan başlar, Kript abseleri karakteristiktir."
+    ]
+  },
+  {
+    "id": "patho-sys2-002",
+    "subject": "Patoloji",
+    "chapter": "Karaciğer ve Pankreas",
+    "topic": "Siroz ve Hepatitler",
+    "sub_topic": "Morfolojik Bulgular",
+    "content_summary": "Sirozun temel özellikleri: Diffüz nodüler rejenerasyon ve fibrozis. HBV'de 'Buzlu cam (ground glass)' hepatositler, HCV'de lenfoid agregatlar ve yağlanma sık görülür. Alkolik karaciğerde 'Mallory cisimcikleri' izlenir.",
+    "flashcards": [
+      {
+        "id": "fc-patho-sys2-310",
+        "question": "Primer Bilier Siroz'da (PBS) hangi otoantikor pozitiftir?",
+        "answer": "AMA (Antimitokondriyal antikor)."
+      },
+      {
+        "id": "fc-patho-sys2-311",
+        "question": "Wilson hastalığında gözde görülen karakteristik halkanın adı nedir?",
+        "answer": "Kayser-Fleischer halkası."
+      }
+    ],
+    "tus_spots": [
+      "Karaciğerin en sık görülen benign tümörü: Kavernöz Hemanjiyom.",
+      "Alfa-fetoprotein (AFP): Hepatosellüler karsinom (HCC) takibinde kullanılır."
+    ]
+  }
+]

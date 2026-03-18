@@ -1,0 +1,123 @@
+[
+  {
+    "id": "micro-gpc-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Pozitif Koklar",
+    "sub_topic": "Staphylococcus aureus",
+    "content_summary": "Katalaz ve Koagülaz pozitiftir. Protein A (Fc bağlar), TSST-1 (Toksik Şok), Eksfolyatif toksin (Haşlanmış deri) ve Enterotoksin (Besin zehirlenmesi) önemli virülans faktörleridir.",
+    "flashcards": [
+      {
+        "id": "fc-gpc-1000",
+        "question": "S. aureus'un IgG'nin Fc kısmına bağlanarak opsonizasyon ve kompleman aktivasyonunu engelleyen proteini?",
+        "answer": "Protein A.",
+        "difficulty": "medium",
+        "tags": ["Protein A", "S. aureus"]
+      },
+      {
+        "id": "fc-gpc-1001",
+        "question": "Hiperadsorban tampon kullanımı sonrası ateş, hipotansiyon ve yaygın döküntü yapan toksin?",
+        "answer": "TSST-1 (Toksik Şok Sendromu Toksini-1).",
+        "difficulty": "medium",
+        "tags": ["TSST-1"]
+      },
+      {
+        "id": "fc-gpc-1002",
+        "question": "Besin zehirlenmesi yapan S. aureus enterotoksini hangi gıdalarla ilişkilidir?",
+        "answer": "Dondurma, mayonez, sütlü tatlılar ve tuzlu etler.",
+        "difficulty": "easy",
+        "tags": ["Besin Zehirlenmesi"]
+      }
+    ],
+    "tus_spots": [
+      "S. aureus: En sık besin zehirlenmesi etkenidir (Enkübasyon 1-6 saat).",
+      "Protein A: IgG1, 2 ve 4'ün Fc kısmına bağlanır.",
+      "Teikoik asit: Fibronektine bağlanarak endokardit gelişimine katkıda bulunur.",
+      "Panton-Valentine Lökosidini (PVL): Nekrotizan pnömoni ve deri lezyonları ile ilişkilidir (Toplum kökenli MRSA)."
+    ],
+    "clinical_cases": [
+      {
+        "case": "Burun ameliyatı sonrası tamponları uzun süre kalan hastada aniden gelişen yüksek ateş, hipotansiyon ve el ayası dahil tüm vücutta kızarıklık gözleniyor. En olası tanı?",
+        "options": ["Kızıl", "Toksik Şok Sendromu", "Menenjit", "Kawasaki Hastalığı"],
+        "correct_answer": "Toksik Şok Sendromu",
+        "explanation": "Tampon kullanımı ve çoklu sistem tutulumu TSST-1'e bağlı stafilokokal toksik şok sendromunu düşündürür."
+      }
+    ]
+  },
+  {
+    "id": "micro-gpc-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Pozitif Koklar",
+    "sub_topic": "Streptococcus pneumoniae (Pnömokok)",
+    "content_summary": "Lanset şeklinde diplokok, Alfa hemolitik, Optokine duyarlı ve Safrada eriyen bakteridir. En önemli virülans faktörü kapsülüdür.",
+    "flashcards": [
+      {
+        "id": "fc-gpc-1100",
+        "question": "Pnömokoklarda beklemekle ortası çökük (nargile tepsisi) koloni yapmasından sorumlu enzim?",
+        "answer": "Otolizin (LytA).",
+        "difficulty": "medium",
+        "tags": ["Otolizin"]
+      },
+      {
+        "id": "fc-gpc-1101",
+        "question": "Pnömokoklar menenjit, sinüzit, otitis media ve hangi pnömoni tipinin en sık etkenidir?",
+        "answer": "Lober Pnömoni (Toplumda gelişen).",
+        "difficulty": "easy",
+        "tags": ["Hastalıklar"]
+      }
+    ],
+    "tus_spots": [
+      "Quellung reaksiyonu (Kapsül şişme): Pnömokok tanısında kullanılır.",
+      "IgA proteaz: Mukozalara tutunmayı kolaylaştırır.",
+      "Splenektomili hastalarda pnömokok sepsisi riski çok yüksektir.",
+      "C-polisakkaridi: Serumdaki CRP ile çökelme reaksiyonu verir (bu yüzden CRP adı verilmiştir)."
+    ],
+    "clinical_cases": [
+      {
+        "case": "65 yaşında KOAH hastasında üşüme titreme ile başlayan ateş, yan ağrısı ve pas rengi balgam şikayeti var. Akciğer grafisinde sağ alt lobda konsolidasyon izleniyor. Balgam gram incelemesinde gram pozitif diplokoklar görülüyor. Etken nedir?",
+        "options": ["K. pneumoniae", "S. aureus", "S. pneumoniae", "M. catarrhalis"],
+        "correct_answer": "S. pneumoniae",
+        "explanation": "Lober tutulum, pas rengi balgam ve gram pozitif diplokoklar tipik pnömokok bulgularıdır."
+      }
+    ]
+  },
+  {
+    "id": "micro-gpc-003",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Pozitif Koklar",
+    "sub_topic": "Streptococcus pyogenes (Grup A Streptokok)",
+    "content_summary": "Basitrasine duyarlı, Beta hemolitik. M proteini (fagositozu engeller), Streptolizin O (ASO uyarır) ve Eritrojenik toksin (Kızıl) önemli faktörleridir.",
+    "flashcards": [
+      {
+        "id": "fc-gpc-1200",
+        "question": "S. pyogenes deri enfeksiyonlarının (impetigo) ardından ASO yükselmemesinin nedeni nedir?",
+        "answer": "Derideki kolesterolün Streptolizin O'yu inaktive etmesi.",
+        "difficulty": "hard",
+        "tags": ["ASO", "Deri"]
+      },
+      {
+        "id": "fc-gpc-1201",
+        "question": "Kızıl hastalığında görülen, deri kıvrımlarında çizgilenme şeklinde döküntülerin adı?",
+        "answer": "Pastia çizgileri.",
+        "difficulty": "medium",
+        "tags": ["Kızıl"]
+      }
+    ],
+    "tus_spots": [
+      "ARA (Akut Romatizmal Ateş): Sadece FARANJİT sonrası görülür.",
+      "AGN (Akut Glomerülonefrit): Hem FARANJİT hem DERİ enfeksiyonu sonrası görülebilir.",
+      "M proteini: Moleküler benzerlik (Molecular mimicry) nedeniyle ARA patogenezinden sorumludur.",
+      "Dick testi: Kızıl hastalığına duyarlılığı ölçer."
+    ],
+    "clinical_cases": [
+      {
+        "case": "Boğaz ağrısı ve ateş şikayeti ile gelen 7 yaşındaki çocukta boğazda eksuda, dilde 'çilek dili' görünümü ve gövdede basmakla solan yaygın mikropapüler döküntü var. Tanı nedir?",
+        "options": ["Suçiçeği", "Kızıl", "Kızamıkçık", "El-Ayak-Ağız Hastalığı"],
+        "correct_answer": "Kızıl",
+        "explanation": "Eksudatif farenjit, çilek dili ve yaygın döküntü S. pyogenes'in pirojenik ekzotoksinine bağlı Kızıl (Scarlet fever) tablosudur."
+      }
+    ]
+  }
+]

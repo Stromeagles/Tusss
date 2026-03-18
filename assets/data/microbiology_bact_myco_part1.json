@@ -1,0 +1,105 @@
+[
+  {
+    "id": "micro-bact-005",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Pozitif Sporsuz Basiller",
+    "sub_topic": "Listeria ve Corynebacterium",
+    "content_summary": "Listeria (menenjit, soğukta ürer) ve Corynebacterium (Difteri) en önemli sporsuz basillerdir.",
+    "flashcards": [
+      {
+        "id": "fc-micro-400",
+        "question": "Oda ısısında (22-28°C) 'trapezci' (tumbling) hareket yapan, 4°C'de üreyebilen gram pozitif basil?",
+        "answer": "Listeria monocytogenes.",
+        "difficulty": "medium",
+        "tags": ["Listeria", "Hareket"]
+      },
+      {
+        "id": "fc-micro-401",
+        "question": "Listeria'nın hücreden hücreye yayılmasını sağlayan mekanizma nedir?",
+        "answer": "ActA proteini aracılığıyla konak aktinini polimerize ederek 'aktin roketleri' oluşturur.",
+        "difficulty": "hard",
+        "tags": ["Listeria", "ActA", "Aktin Roketi"]
+      },
+      {
+        "id": "fc-micro-402",
+        "question": "Difteri toksininin etki mekanizması nedir?",
+        "answer": "EF-2'yi (Elongation Factor 2) ADP-ribozilasyonu ile inaktive ederek protein sentezini durdurur. (Pseudomonas toksini ile aynı mekanizma).",
+        "difficulty": "hard",
+        "tags": ["Difteri", "EF-2", "Toksin"]
+      }
+    ],
+    "tus_spots": [
+      "Listeria: Yenidoğanda 'Granulomatosis infantiseptica' (erken dönem) ve menenjite (geç dönem) neden olur.",
+      "Listeria: Sefalosporinlere doğal dirençlidir (Tedavi: Ampisilin).",
+      "Corynebacterium diphtheriae: Löffler veya Tellüritli (siyah koloni) besiyerinde üretilir.",
+      "ELEK testi: Difteri basilinin toksin üretip üretmediğini gösteren in-vitro testtir."
+    ]
+  },
+  {
+    "id": "micro-bact-006",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Clostridium difficile",
+    "sub_topic": "Psödomembranöz Enterokolit",
+    "content_summary": "Antibiyotik kullanımı sonrası gelişen ishal ve kolitin en önemli etkenidir. Toksin A (Enterotoksin) ve Toksin B (Sitotoksin) üretir.",
+    "flashcards": [
+      {
+        "id": "fc-micro-450",
+        "question": "C. difficile toksinlerinin (A ve B) ortak biyokimyasal etkisi nedir?",
+        "answer": "Glukozil Transferaz aktivitesi ile Rho proteinlerini inaktive ederler.",
+        "difficulty": "hard",
+        "tags": ["C. difficile", "Glukozil Transferaz"]
+      },
+      {
+        "id": "fc-micro-451",
+        "question": "C. difficile tanısında kullanılan altın standart yöntem nedir?",
+        "answer": "Dışkıda toksinin (PCR veya hücre kültürü ile) gösterilmesi. (Kültür tek başına yeterli değildir çünkü taşıyıcılık olabilir).",
+        "difficulty": "medium",
+        "tags": ["C. difficile", "Tanı"]
+      }
+    ],
+    "tus_spots": [
+      "C. difficile: 'Çiftlik avlusu' (barnyard) kokusu verir.",
+      "Toksin B: Toksin A'dan daha virülandır ve sitoskeleti (aktin) bozar.",
+      "Tedavi: Metronidazol, oral Vankomisin veya Fidaksomisin."
+    ]
+  },
+  {
+    "id": "micro-myco-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Mikobakteriyoloji",
+    "topic": "Mycobacterium tuberculosis",
+    "sub_topic": "Genel Özellikler ve Tanı",
+    "content_summary": "Zorunlu aerob, aside dirençli (mikolik asit), yavaş üreyen basillerdir. TBC patogenezinde hücresel immünite (Th1, IFN-gama) esastır.",
+    "flashcards": [
+      {
+        "id": "fc-myco-500",
+        "question": "Mikobakterilerin aside dirençli boyanmasından (ARB) sorumlu olan hücre duvarı bileşeni hangisidir?",
+        "answer": "Mikolik asitler.",
+        "difficulty": "easy",
+        "tags": ["Mikolik asit", "ARB"]
+      },
+      {
+        "id": "fc-myco-501",
+        "question": "TBC tanısında kullanılan yumurtalı besiyeri hangisidir ve neden Maleşit Yeşili içerir?",
+        "answer": "Löwenstein-Jensen (LJ) besiyeri. Maleşit yeşili diğer floranın üremesini inhibe etmek için eklenir.",
+        "difficulty": "medium",
+        "tags": ["LJ Besiyeri", "TBC"]
+      },
+      {
+        "id": "fc-myco-502",
+        "question": "Niasin testi pozitif olan tek atipik olmayan mikobakteri türü?",
+        "answer": "Mycobacterium tuberculosis.",
+        "difficulty": "hard",
+        "tags": ["Niasin", "TBC"]
+      }
+    ],
+    "tus_spots": [
+      "Kord Faktörü: Basillerin yılanımsı (serpentine) yapıda dizilmesini sağlar ve virülansla ilişkilidir.",
+      "Ghon Kompleksi: Akciğerdeki odak + hiler lenfadenopati (primer TBC).",
+      "Pott Hastalığı: TBC'nin vertebra tutulumudur (soğuk abse yapabilir).",
+      "Lant farenjiti (Lady Windermere): Yaşlı kadınlarda öksürük baskılanmasına bağlı gelişen MAC enfeksiyonudur."
+    ]
+  }
+]

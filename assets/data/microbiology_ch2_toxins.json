@@ -1,0 +1,91 @@
+[
+  {
+    "id": "micro-ch2-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Genel Mikrobiyoloji",
+    "topic": "Bakteriyel Toksinler",
+    "sub_topic": "A-B Yapıdaki Toksinler",
+    "content_summary": "Ekzotoksinlerin çoğu A (Aktivite) ve B (Bağlanma) ünitelerinden oluşur. A ünitesi genellikle ADP-ribozilasyonu yaparak protein sentezini durdurur veya cAMP'yi artırır.",
+    "flashcards": [
+      {
+        "id": "fc-micro-020",
+        "question": "EF-2 inaktivasyonu yaparak protein sentezini durduran ve hücre ölümüne yol açan iki temel toksin nedir?",
+        "answer": "Difteri toksini ve Pseudomonas Ekzotoksin A.",
+        "difficulty": "hard",
+        "tags": ["Toksin", "Protein Sentezi", "EF-2"]
+      },
+      {
+        "id": "fc-micro-021",
+        "question": "Kolera toksini hangi reseptöre bağlanır ve hangi hücresel mekanizmayı aktive eder?",
+        "answer": "GM1 gangliyozid reseptörüne bağlanır ve cAMP artışına (sekretuar diyare) yol açar.",
+        "difficulty": "medium",
+        "tags": ["Kolera", "cAMP", "Diyare"]
+      },
+      {
+        "id": "fc-micro-022",
+        "question": "Tetanoz toksini (Tetanospazmin) hangi nörotransmitterlerin salınımını bloke ederek spastik felç yapar?",
+        "answer": "İnhibitör nöronlardan GABA ve Glisin salınımını bloke eder.",
+        "difficulty": "hard",
+        "tags": ["Tetanoz", "GABA", "Glisin"]
+      },
+      {
+        "id": "fc-micro-023",
+        "question": "Şarbon (Anthrax) toksininin üç alt birimi nelerdir?",
+        "answer": "PA (Protektif Antijen), EF (Ödem Faktörü - cAMP artırır), LF (Letal Faktör - Hücre ölümü).",
+        "difficulty": "hard",
+        "tags": ["Şarbon", "Toksin"]
+      }
+    ],
+    "tus_spots": [
+      "Endotoksin (Lipid A) makrofajlardan TNF-alfa ve IL-1 salınımını uyararak septik şoka neden olur.",
+      "Botulinum toksini ACh salınımını engelleyerek flask felç yapar.",
+      "Shiga toksin 60S ribozomun 28S alt ünitesine zarar vererek protein sentezini durdurur.",
+      "Pertussis toksini Gi proteinini inhibe ederek cAMP artışına neden olur."
+    ],
+    "clinical_cases": [
+      {
+        "case": "Konserve gıda tüketimi sonrası simetrik desendan flask felç, diplopi ve disfaji şikayetleri olan bir hastada sorumlu toksinin etki mekanizması nedir?",
+        "options": ["cAMP artışı", "GABA inhibisyonu", "ACh salınımının engellenmesi", "EF-2 inaktivasyonu"],
+        "correct_answer": "ACh salınımının engellenmesi",
+        "explanation": "Botulinum toksini periferik presinaptik uçlardan Asetilkolin (ACh) salınımını engelleyerek gevşek (flask) felç yapar."
+      }
+    ]
+  },
+  {
+    "id": "micro-ch2-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Genel Mikrobiyoloji",
+    "topic": "Bakteriyel Çoğalma ve Metabolizma",
+    "sub_topic": "Çoğalma Fazları ve Oksijen Kullanımı",
+    "content_summary": "Bakteriler Lag, Log (en duyarlı), Stasyoner (sporulasyon) ve Ölüm fazlarından geçer. Oksijen kullanımına göre aerob, anaerob, fakültatif ve mikroaerofil olarak ayrılırlar.",
+    "flashcards": [
+      {
+        "id": "fc-micro-030",
+        "question": "Bakterilerin antibiyotiklere en duyarlı oldukları ve boyutlarının en küçük olduğu çoğalmayı evresi hangisidir?",
+        "answer": "Log (Eksponansiyel) faz.",
+        "difficulty": "medium",
+        "tags": ["Bakteriyoloji", "Log Fazı"]
+      },
+      {
+        "id": "fc-micro-031",
+        "question": "Mikroaerofilik (belirli oranda O2 isteyen) bakterilere en tipik iki örnek nedir?",
+        "answer": "Helicobacter ve Campylobacter.",
+        "difficulty": "medium",
+        "tags": ["Oksijen", "Helicobacter", "Campylobacter"]
+      },
+      {
+        "id": "fc-micro-032",
+        "question": "Bakterilerin spor oluşturmaya başladıkları çoğalma fazı hangisidir?",
+        "answer": "Stasyoner (Duraklama) fazı.",
+        "difficulty": "medium",
+        "tags": ["Spor", "Çoğalma"]
+      }
+    ],
+    "tus_spots": [
+      "Zorunlu aeroblar: M. tuberculosis, Nocardia, Bacillus, Pseudomonas.",
+      "Zorunlu anaeroblar: Actinomyces, Bacteroides, Clostridium (Katalaz negatif).",
+      "Pasteur etkisi: Fakültatif anaeroblarda oksijen varlığında glikolizin azalmasıdır.",
+      "Kapnofiller (%5-10 CO2): Brucella abortus, Neisseria gonorrhoeae."
+    ]
+  }
+]

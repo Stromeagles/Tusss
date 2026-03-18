@@ -1,0 +1,76 @@
+[
+  {
+    "id": "micro-viro-005",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Viroloji",
+    "topic": "Retrovirüsler",
+    "sub_topic": "HIV ve HTLV",
+    "content_summary": "Zarflı, diploid RNA'lı, revers transkriptazlı virüslerdir. HIV CD4+ T hücrelerini yıkarak AIDS yapar.",
+    "flashcards": [
+      {
+        "id": "fc-viro-2400",
+        "question": "HIV'in CD4 reseptörüne bağlanan majör yüzey glikoproteini hangisidir?",
+        "answer": "gp120.",
+        "difficulty": "easy",
+        "tags": ["HIV", "gp120"]
+      },
+      {
+        "id": "fc-viro-2401",
+        "question": "HIV tanısında kullanılan, virüsün nükleokapsidini oluşturan ve en erken yükselen antijen?",
+        "answer": "p24 antijeni.",
+        "difficulty": "medium",
+        "tags": ["HIV", "p24"]
+      },
+      {
+        "id": "fc-viro-2402",
+        "question": "Anneden bebeğe HIV geçişini azaltmada kullanılan temel nükleozid revers transkriptaz inhibitörü?",
+        "answer": "Zidovudin (AZT).",
+        "difficulty": "medium",
+        "tags": ["HIV", "Zidovudin"]
+      }
+    ],
+    "tus_spots": [
+      "HIV: Revers transkriptaz, integraz ve proteaz enzimleri içerir.",
+      "gp41: Virüsün konak hücreye füzyonundan (giriş) sorumludur.",
+      "nef geni: Konak hücredeki CD4 ve MHC-I moleküllerini azaltarak virüsün kaçmasını sağlar.",
+      "Elite Controllers: HIV pozitif olmasına rağmen tedavi almadan viral yükü saptanamayan özel grup."
+    ]
+  },
+  {
+    "id": "micro-viro-006",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Viroloji",
+    "topic": "Gastroenterit ve Zoonotik Virüsler",
+    "sub_topic": "Rotavirüs, Norovirüs ve Diğerleri",
+    "content_summary": "Rotavirüs (segmenter RNA) çocukta, Norovirüs (zarfsız RNA) erişkinde en sık gastroenterit nedenidir.",
+    "flashcards": [
+      {
+        "id": "fc-viro-2500",
+        "question": "Çift iplikli, 11 segmentli RNA'sı olan ve çocuklarda ağır ishale neden olan virüs?",
+        "answer": "Rotavirüs.",
+        "difficulty": "easy",
+        "tags": ["Rotavirüs"]
+      },
+      {
+        "id": "fc-viro-2501",
+        "question": "Gebelikte geçirildiğinde %20 mortalite ile fulminan hepatit yapan virüs?",
+        "answer": "Hepatit E Virüsü (HEV).",
+        "difficulty": "medium",
+        "tags": ["HEV", "Gebelik"]
+      },
+      {
+        "id": "fc-viro-2502",
+        "question": "Aedes sivrisineği ile bulaşan, mikrosefali ve Guillain-Barré ile ilişkili virüs?",
+        "answer": "Zika Virüsü.",
+        "difficulty": "medium",
+        "tags": ["Zika"]
+      }
+    ],
+    "tus_spots": [
+      "Norovirüs: Kruvaziyer gemileri, okullar ve kışlalarda mide-bağırsak salgınları yapar.",
+      "NSP4 (Rotavirüs): Viral bir enterotoksindir, sulu ishale neden olur.",
+      "Kırım-Kongo Hemorajik Ateşi: Hyalomma cinsi kenelerle bulaşır.",
+      "Ebola/Marburg: Filovirüs ailesidir, BSL-4 laboratuvar koşulları gerektirir."
+    ]
+  }
+]

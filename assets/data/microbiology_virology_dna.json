@@ -1,0 +1,45 @@
+[
+  {
+    "id": "micro-vdna-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Viroloji",
+    "topic": "DNA Virüsleri",
+    "sub_topic": "Herpesviridae",
+    "content_summary": "Zarflı DNA virüsleridir. Latent enfeksiyon yaparlar.",
+    "flashcards": [
+      {
+        "id": "fc-vdna-100",
+        "question": "Öpücük hastalığı (İnfeksiyöz Mononükleoz) etkeni nedir?",
+        "answer": "EBV (HHV-4)."
+      },
+      {
+        "id": "fc-vdna-101",
+        "question": "Temporal lob tutulumlu ensefalit yapan virüs hangisidir?",
+        "answer": "HSV-1."
+      }
+    ],
+    "tus_spots": [
+      "CMV tanısında 'baykuş gözü' inklüzyonları görülür.",
+      "HHV-8, Kaposi Sarkomu etkenidir."
+    ]
+  },
+  {
+    "id": "micro-vdna-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Viroloji",
+    "topic": "DNA Virüsleri",
+    "sub_topic": "Hepatit B Virüsü (HBV)",
+    "content_summary": "Kısmen çift iplikli dairesel DNA içerir. Revers transkriptaz kullanır.",
+    "flashcards": [
+      {
+        "id": "fc-vdna-110",
+        "question": "HBV replikasyonunda kullanılan özel enzim nedir?",
+        "answer": "Revers Transkriptaz."
+      }
+    ],
+    "tus_spots": [
+      "Anti-HBc IgM akut enfeksiyon göstergesidir.",
+      "HBsAg 6 aydan uzun süre pozitif kalırsa kronikleşmiş demektir."
+    ]
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "micro-bact-007",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Negatif Enterik Basiller",
+    "sub_topic": "Escherichia coli Türleri",
+    "content_summary": "E. coli en sık İYE etkenidir. İntestinal patojenleri (ETEC, EPEC, EHEC, EIEC, EAEC) farklı mekanizmalarla diyare yapar.",
+    "flashcards": [
+      {
+        "id": "fc-micro-600",
+        "question": "Turist diyaresine (sulu ishal) neden olan, LT (cAMP) ve ST (cGMP) toksinleri üreten E. coli ?",
+        "answer": "ETEC (Enterotoksijenik E. coli).",
+        "difficulty": "easy",
+        "tags": ["E. coli", "ETEC", "Turist Diyaresi"]
+      },
+      {
+        "id": "fc-micro-601",
+        "question": "Hangi E. coli suşu Shiga-like toksin (Verotoksin) üreterek HÜS ve hemorajik kolit yapar?",
+        "answer": "EHEC / STEC (Özellikle O157:H7).",
+        "difficulty": "medium",
+        "tags": ["EHEC", "STEC", "HÜS"]
+      },
+      {
+        "id": "fc-micro-602",
+        "question": "Yenidoğan menenjitine neden olan E. coli'lerin %80'inde bulunan majör antijen?",
+        "answer": "K1 kapsül antijeni.",
+        "difficulty": "medium",
+        "tags": ["E. coli", "Menenjit", "K1"]
+      }
+    ],
+    "tus_spots": [
+      "E. coli O157:H7: Sorbitolü fermente etmez (Sorbitollü MacConkey agar kullanılır).",
+      "EIEC: Listeria gibi aktin roketleri ile hücreden hücreye yayılır (invaziv).",
+      "EAEC: Kronik sulu ishal ve 'tuğla yığını' (stacked-brick) dizilimi yapar."
+    ]
+  },
+  {
+    "id": "micro-bact-008",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Negatif Enterik Basiller",
+    "sub_topic": "Salmonella ve Shigella",
+    "content_summary": "Salmonella (H2S+, hareketli) ve Shigella (H2S-, hareketsiz) önemli enterik patojenlerdir.",
+    "flashcards": [
+      {
+        "id": "fc-micro-650",
+        "question": "Tifo (Enterik Ateş) tanısında altın standart yöntem ve kullanılan serolojik test?",
+        "answer": "Altın standart: Kemik iliği kültürü. Serolojik test: Gruber-Widal testi.",
+        "difficulty": "medium",
+        "tags": ["Tifo", "Salmonella", "Widal"]
+      },
+      {
+        "id": "fc-micro-651",
+        "question": "Shigella'nın patogenezindeki temel mekanizma nedir?",
+        "answer": "Mukozal invazyon (M hücreleri üzerinden).",
+        "difficulty": "medium",
+        "tags": ["Shigella", "İnvazyon"]
+      },
+      {
+        "id": "fc-micro-652",
+        "question": "En sık görülen Shigella türü hangisidir?",
+        "answer": "Shigella sonnei (Grup D).",
+        "difficulty": "easy",
+        "tags": ["Shigella sonnei"]
+      }
+    ],
+    "tus_spots": [
+      "Salmonella Typhi: Sadece insanda bulunur, Vi antijeni (kapsül) içerir.",
+      "Tifo: Rölatif bradikardi (ateşle nabız uyumsuzluğu) ve 'roseol' döküntüleri tipiktir.",
+      "Shigella: Çok düşük dozda (1-100 bakteri) hastalık yapabilir (mide asidine dirençli).",
+      "Proteus: Üreaz enzimi ile idrarı alkalize eder ve 'Strüvid' (boynuz taşı) taşlarına neden olur."
+    ]
+  },
+  {
+    "id": "micro-bact-009",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Non-Fermenter Gram Negatif Basiller",
+    "sub_topic": "Pseudomonas aeruginosa",
+    "content_summary": "Oksidaz (+), 42°C'de üreyen, pyosiyanin (mavi) üreten fırsatçı bir patojendir.",
+    "flashcards": [
+      {
+        "id": "fc-micro-700",
+        "question": "Pseudomonas aeruginosa'nın protein sentezini engelleyen majör toksini?",
+        "answer": "Ekzotoksin A (EF-2 inaktivasyonu).",
+        "difficulty": "medium",
+        "tags": ["Pseudomonas", "Ekzotoksin A"]
+      },
+      {
+        "id": "fc-micro-701",
+        "question": "Kistik Fibrozis hastalarında Pseudomonas'ın dirençli enfeksiyon yapmasını sağlayan yapı?",
+        "answer": "Aljinat (Biyofilm).",
+        "difficulty": "medium",
+        "tags": ["Pseudomonas", "Kistik Fibrozis", "Aljinat"]
+      }
+    ],
+    "tus_spots": [
+      "Ektima Gangrenozum: Nötropenik hastada Pseudomonas sepsisi sonucu gelişen hemorajik nekrotik deri lezyonudur.",
+      "Mavi-yeşil cerahat (Pyosiyanin) Pseudomonas için karakteristiktir.",
+      "Sadece P. aeruginosa pyosiyanin üretir (diğer Pseudomonaslar üretmez)."
+    ]
+  }
+]

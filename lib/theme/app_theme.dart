@@ -199,7 +199,7 @@ class AppTheme {
       useMaterial3: true,
       brightness: Brightness.light,
       scaffoldBackgroundColor: lightBackground,
-      colorScheme: ColorScheme.light(
+      colorScheme: const ColorScheme.light(
         primary: cyan, secondary: neonPink,
         surface: lightSurface, error: error,
         onPrimary: Colors.white, onSecondary: Colors.white,
@@ -245,7 +245,7 @@ class AppTheme {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
       ),
-      tabBarTheme: TabBarThemeData(
+      tabBarTheme: const TabBarThemeData(
         indicatorColor: cyan, labelColor: cyan,
         unselectedLabelColor: lightTextSecondary,
         indicatorSize: TabBarIndicatorSize.label, dividerColor: Colors.transparent,

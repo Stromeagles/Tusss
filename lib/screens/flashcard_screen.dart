@@ -36,7 +36,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   final List<CardSwiperDirection> _swipeHistory = [];
 
   // Drag sırasında anlık % değerleri — dikey yön önceliği için
-  int _dragPctX = 0;
   int _dragPctY = 0;
 
   @override
@@ -238,7 +237,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
         cardBuilder: (context, index, percentThresholdX, percentThresholdY) {
           // Aktif kartın sürükleme yönünü takip et (onSwipe'da kullanılır)
           if (index == _currentIndex) {
-            _dragPctX = percentThresholdX;
             _dragPctY = percentThresholdY;
           }
 
@@ -336,7 +334,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          _HintChip(
+          const _HintChip(
               icon: Icons.arrow_back_rounded,
               label: 'Geri Al',
               color: AppTheme.textMuted),
@@ -348,7 +346,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
               icon: Icons.arrow_upward_rounded,
               label: 'Bildim',
               color: AppTheme.success.withValues(alpha: 0.55)),
-          _HintChip(
+          const _HintChip(
               icon: Icons.arrow_forward_rounded,
               label: 'Menü',
               color: AppTheme.textMuted),
@@ -602,7 +600,7 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              _HintChip(
+              const _HintChip(
                   icon: Icons.arrow_back_rounded,
                   label: 'Geri Al',
                   color: AppTheme.textMuted),
@@ -614,7 +612,7 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
                   icon: Icons.arrow_upward_rounded,
                   label: 'Bildim',
                   color: AppTheme.success.withValues(alpha: 0.75)),
-              _HintChip(
+              const _HintChip(
                   icon: Icons.arrow_forward_rounded,
                   label: 'Menü',
                   color: AppTheme.textMuted),

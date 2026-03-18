@@ -11,7 +11,6 @@ import '../services/progress_service.dart';
 import '../models/progress_model.dart';
 import '../models/topic_model.dart';
 import '../models/subject_registry.dart';
-import 'flashcard_screen.dart';
 import 'flashcard_subject_screen.dart';
 import 'case_study_screen.dart';
 import 'topic_list_screen.dart';
@@ -299,7 +298,6 @@ class _HomeScreenState extends State<HomeScreen> {
     final cardBg     = AppTheme.glassBg(isDark, darkAlpha: 0.08, lightAlpha: 0.82);
     final cardBorder = AppTheme.glassBorder(isDark);
     final shadow     = AppTheme.shadowColor(isDark);
-    final textColor  = isDark ? Colors.white : AppTheme.lightTextPrimary;
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -421,7 +419,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // ── Subject Carousel ───────────────────────────────────────────────────────
   Widget _buildSubjectCarousel(bool isDark) {
-    final modules  = SubjectRegistry.modules;
+    const modules  = SubjectRegistry.modules;
     final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
 
     return Column(
@@ -712,7 +710,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildLoadingState() {
-    return Center(child: CircularProgressIndicator(color: AppTheme.cyan, strokeWidth: 2.5));
+    return const Center(child: CircularProgressIndicator(color: AppTheme.cyan, strokeWidth: 2.5));
   }
 }
 
@@ -878,7 +876,7 @@ class _ArcPainter extends CustomPainter {
       startAngle: -pi / 2,
       endAngle:    3 * pi / 2,
       colors: [...gradColors, gradColors.first],
-      stops:  [0.0, 0.65, 1.0],
+      stops:  const [0.0, 0.65, 1.0],
     );
     final shader = gradient.createShader(rect);
 

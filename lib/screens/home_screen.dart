@@ -16,6 +16,7 @@ import 'flashcard_subject_screen.dart';
 import 'case_study_screen.dart';
 import 'topic_list_screen.dart';
 import 'hierarchy_screens.dart';
+import 'goal_settings_screen.dart';
 
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║  HomeScreen                                                              ║
@@ -85,8 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
   double get _hoursStudied =>
       (_progress.totalFlashcardsStudied + _progress.totalCasesAttempted) * 2.5 / 60;
 
-  int get _daysToExam =>
-      DateTime(2026, 6, 28).difference(DateTime.now()).inDays.clamp(0, 9999);
+  int get _daysToExam => _progress.daysToExam;
 
   /// İlerlemeye göre dinamik renk paleti
   List<Color> get _progressColors {
@@ -408,29 +408,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     _AnkiStat(label: 'Cepte', count: _srsSummary.pocketCount, color: AppTheme.success),
                   ],
                 ),
-                const SizedBox(height: 16),
-                // Hemen Başla butonu
-                SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton.icon(
-                    onPressed: _srsSummary.total > 0
-                        ? () => Navigator.push(context,
-                            MaterialPageRoute(builder: (_) => FlashcardSubjectScreen()))
-                        : null,
-                    icon: const Icon(Icons.play_arrow_rounded, size: 18),
-                    label: Text(
-                      _srsSummary.total > 0
-                          ? 'Hemen Başla  (${_srsSummary.total} kart)'
-                          : 'Tümü Tamamlandı 🎉',
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppTheme.cyan,
-                      foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(vertical: 12),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                    ),
-                  ),
-                ),
               ],
             ),
           ),
@@ -536,7 +513,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // ── Daily Goal ─────────────────────────────────────────────────────────────
   Widget _buildDailyGoal(bool isDark) {
-    const dailyGoal = 8.0;
+    final dailyGoal = _progress.todayGoalHours;
     final studied   = _hoursStudied;
     final goalProg  = (studied / dailyGoal).clamp(0.0, 1.0);
     final cardBg    = AppTheme.glassBg(isDark, darkAlpha: 0.07, lightAlpha: 0.80);
@@ -569,16 +546,38 @@ class _HomeScreenState extends State<HomeScreen> {
                     Text('Günlük Hedef',
                       style: GoogleFonts.inter(color: textColor, fontSize: 16,
                           fontWeight: FontWeight.w900, letterSpacing: -0.3)),
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                      decoration: BoxDecoration(
-                        color:  AppTheme.neonPink.withValues(alpha: 0.12),
-                        borderRadius: BorderRadius.circular(20),
-                        border: Border.all(color: AppTheme.neonPink.withValues(alpha: 0.25), width: 1),
+                    Row(children: [
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                        decoration: BoxDecoration(
+                          color:  AppTheme.neonPink.withValues(alpha: 0.12),
+                          borderRadius: BorderRadius.circular(20),
+                          border: Border.all(color: AppTheme.neonPink.withValues(alpha: 0.25), width: 1),
+                        ),
+                        child: Text('Bugün',
+                          style: GoogleFonts.inter(color: AppTheme.neonPink, fontSize: 11, fontWeight: FontWeight.w800)),
                       ),
-                      child: Text('Bugün',
-                        style: GoogleFonts.inter(color: AppTheme.neonPink, fontSize: 11, fontWeight: FontWeight.w800)),
-                    ),
+                      const SizedBox(width: 8),
+                      GestureDetector(
+                        onTap: () async {
+                          final saved = await Navigator.push<bool>(
+                            context,
+                            MaterialPageRoute(builder: (_) =>
+                                GoalSettingsScreen(progress: _progress)),
+                          );
+                          if (saved == true) _loadData();
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.all(6),
+                          decoration: BoxDecoration(
+                            color: AppTheme.cyan.withValues(alpha: 0.12),
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.25), width: 1),
+                          ),
+                          child: const Icon(Icons.tune_rounded, color: AppTheme.cyan, size: 14),
+                        ),
+                      ),
+                    ]),
                   ],
                 ),
                 const SizedBox(height: 20),
@@ -1192,8 +1191,6 @@ class _QuickActionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
-
     return GestureDetector(
       onTap: onTap,
       child: ClipRRect(
@@ -1226,10 +1223,6 @@ class _QuickActionCard extends StatelessWidget {
                 child: Icon(icon, color: color, size: 20),
               ),
               const SizedBox(height: 14),
-              Text(title,
-                style: GoogleFonts.inter(color: textColor, fontWeight: FontWeight.w900,
-                    fontSize: 14, letterSpacing: -0.4)),
-              const SizedBox(height: 3),
               Text(subtitle,
                 style: GoogleFonts.inter(color: color.withValues(alpha: 0.75),
                     fontWeight: FontWeight.w700, fontSize: 11)),

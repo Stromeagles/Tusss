@@ -12,6 +12,11 @@ class StudyProgress {
   final String lastStudyDate; // Son çalışma tarihi (YYYY-MM-DD)
   final Map<String, int> weeklyStats; // Haftalık istatistikler (tarih -> kart sayısı)
 
+  // Hedef ayarları
+  final double weekdayGoalHours;  // Hafta içi günlük saat hedefi
+  final double weekendGoalHours;  // Hafta sonu günlük saat hedefi
+  final String targetTusDate;     // Hedef TUS sınav tarihi (YYYY-MM-DD)
+
   const StudyProgress({
     this.totalFlashcardsStudied = 0,
     this.totalCasesAttempted = 0,
@@ -23,6 +28,9 @@ class StudyProgress {
     this.longestStreak = 0,
     this.lastStudyDate = '',
     this.weeklyStats = const {},
+    this.weekdayGoalHours = 2.0,
+    this.weekendGoalHours = 4.0,
+    this.targetTusDate = '2026-06-28',
   });
 
   double get accuracy => totalCasesAttempted == 0
@@ -35,6 +43,22 @@ class StudyProgress {
 
   bool get dailyGoalCompleted => todayStudied >= dailyGoal;
 
+  /// Bugün hafta içi mi hafta sonu mu — buna göre saat hedefini döner
+  double get todayGoalHours {
+    final wd = DateTime.now().weekday; // 1=Pzt ... 5=Cum, 6=Cmt, 7=Paz
+    return (wd >= 6) ? weekendGoalHours : weekdayGoalHours;
+  }
+
+  /// Hedef TUS tarihine kalan gün
+  int get daysToExam {
+    try {
+      final target = DateTime.parse(targetTusDate);
+      return target.difference(DateTime.now()).inDays.clamp(0, 9999);
+    } catch (_) {
+      return 0;
+    }
+  }
+
   StudyProgress copyWith({
     int? totalFlashcardsStudied,
     int? totalCasesAttempted,
@@ -46,6 +70,9 @@ class StudyProgress {
     int? longestStreak,
     String? lastStudyDate,
     Map<String, int>? weeklyStats,
+    double? weekdayGoalHours,
+    double? weekendGoalHours,
+    String? targetTusDate,
   }) {
     return StudyProgress(
       totalFlashcardsStudied:
@@ -59,6 +86,9 @@ class StudyProgress {
       longestStreak: longestStreak ?? this.longestStreak,
       lastStudyDate: lastStudyDate ?? this.lastStudyDate,
       weeklyStats: weeklyStats ?? this.weeklyStats,
+      weekdayGoalHours: weekdayGoalHours ?? this.weekdayGoalHours,
+      weekendGoalHours: weekendGoalHours ?? this.weekendGoalHours,
+      targetTusDate: targetTusDate ?? this.targetTusDate,
     );
   }
 }

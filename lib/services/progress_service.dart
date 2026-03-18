@@ -13,6 +13,9 @@ class ProgressService {
   static const String _keyLongestStreak = 'longest_streak';
   static const String _keyLastStudyDate = 'last_study_date';
   static const String _keyWeeklyStats = 'weekly_stats';
+  static const String _keyWeekdayGoalHours = 'weekday_goal_hours';
+  static const String _keyWeekendGoalHours = 'weekend_goal_hours';
+  static const String _keyTargetTusDate = 'target_tus_date';
 
   String _todayStr() {
     final now = DateTime.now();
@@ -55,6 +58,9 @@ class ProgressService {
       longestStreak: prefs.getInt(_keyLongestStreak) ?? 0,
       lastStudyDate: lastDate,
       weeklyStats: weekly,
+      weekdayGoalHours: prefs.getDouble(_keyWeekdayGoalHours) ?? 2.0,
+      weekendGoalHours: prefs.getDouble(_keyWeekendGoalHours) ?? 4.0,
+      targetTusDate: prefs.getString(_keyTargetTusDate) ?? '2026-06-28',
     );
   }
 
@@ -128,6 +134,17 @@ class ProgressService {
     await prefs.setInt(_keyDailyGoal, goal);
   }
 
+  Future<void> saveGoalSettings({
+    required double weekdayGoalHours,
+    required double weekendGoalHours,
+    required String targetTusDate,
+  }) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setDouble(_keyWeekdayGoalHours, weekdayGoalHours);
+    await prefs.setDouble(_keyWeekendGoalHours, weekendGoalHours);
+    await prefs.setString(_keyTargetTusDate, targetTusDate);
+  }
+
   Future<void> recordCaseAnswer({required bool correct}) async {
     final prefs = await SharedPreferences.getInstance();
     final attempted = (prefs.getInt(_keyCasesAttempted) ?? 0) + 1;
@@ -150,5 +167,8 @@ class ProgressService {
     await prefs.remove(_keyLongestStreak);
     await prefs.remove(_keyLastStudyDate);
     await prefs.remove(_keyWeeklyStats);
+    await prefs.remove(_keyWeekdayGoalHours);
+    await prefs.remove(_keyWeekendGoalHours);
+    await prefs.remove(_keyTargetTusDate);
   }
 }

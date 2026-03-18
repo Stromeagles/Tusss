@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Topic>   _topics   = [];
   bool          _loading  = true;
   int           _navIndex = 0;
-  SrsSummary    _srsSummary = const SrsSummary(newCount: 0, dueCount: 0, pocketCount: 0);
+  SrsSummary    _srsSummary = const SrsSummary(newCount: 0, learningCount: 0, pocketCount: 0);
 
   @override
   void initState() {
@@ -296,9 +296,9 @@ class _HomeScreenState extends State<HomeScreen> {
     final cardBg    = isDark ? AppTheme.surfaceVariant : Colors.white;
     final cardBorder = isDark ? Colors.white.withValues(alpha: 0.12) : AppTheme.lightDivider;
     
-    final newCount = _srsSummary.newCount;
-    final dueCount = _srsSummary.dueCount;
-    final pocketCount = _srsSummary.pocketCount;
+    final newCount      = _srsSummary.newCount;
+    final learningCount = _srsSummary.learningCount;
+    final pocketCount   = _srsSummary.pocketCount;
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -339,8 +339,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 _buildAnkiCounter('Yeni', newCount, AppTheme.cyan, isDark, 
                   newCount > 0 ? () => Navigator.push(context, MaterialPageRoute(
                       builder: (_) => const FlashcardScreen(initialMode: FlashcardMode.newOnly))) : null),
-                _buildAnkiCounter('Bildiklerim', dueCount, AppTheme.error, isDark,
-                  dueCount > 0 ? () => Navigator.push(context, MaterialPageRoute(
+                _buildAnkiCounter('Bildiklerim', learningCount, AppTheme.error, isDark,
+                  learningCount > 0 ? () => Navigator.push(context, MaterialPageRoute(
                       builder: (_) => const FlashcardScreen(initialMode: FlashcardMode.learnedOnly))) : null),
                 _buildAnkiCounter('Cepte', pocketCount, AppTheme.success, isDark,
                   pocketCount > 0 ? () => Navigator.push(context, MaterialPageRoute(
@@ -371,7 +371,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
-            if (dueCount > 0 || newCount > 0) ...[
+            if (learningCount > 0 || newCount > 0) ...[
               const SizedBox(height: 20),
               SizedBox(
                 width: double.infinity,
@@ -379,10 +379,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: ElevatedButton.icon(
                   onPressed: _navigateToFlashcards,
                   icon: const Icon(Icons.play_circle_fill_rounded, size: 24),
-                  label: Text(dueCount > 0 ? '$dueCount Bildiğim Kartı Tekrar Et' : 'Yeni Kartlara Başla', 
+                  label: Text(learningCount > 0 ? '$learningCount Bildiğim Kartı Tekrar Et' : 'Yeni Kartlara Başla',
                     style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 16)),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: dueCount > 0 ? AppTheme.error : AppTheme.cyan,
+                    backgroundColor: learningCount > 0 ? AppTheme.error : AppTheme.cyan,
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                     elevation: 4,

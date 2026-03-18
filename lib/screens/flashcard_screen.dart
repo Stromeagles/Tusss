@@ -101,12 +101,10 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
         source.map((c) => _srService.getCardData(c.id)));
 
     if (_mode == FlashcardMode.learnedOnly) {
-      // Bildiklerim: En az 1 kez çalışılmış, tekrarı gelmiş ve henüz cepte değil
+      // Bildiklerim: tam 1 kez doğru cevaplandı, cepte değil
+      // isDue şartı YOK — kart yarın planlı olsa da klasörde görünür
       for (var i = 0; i < source.length; i++) {
-        final data = allData[i];
-        if (data.repetitions >= 1 && data.isDue && !data.isInPocket) {
-          result.add(source[i]);
-        }
+        if (allData[i].repetitions == 1) result.add(source[i]);
       }
     } else if (_mode == FlashcardMode.dueOnly) {
       // Eski 'Tekrar' mantığı (hepsi dahil edilebilir veya fallback olarak kalsın)

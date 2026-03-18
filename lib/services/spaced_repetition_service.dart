@@ -103,7 +103,7 @@ class SpacedRepetitionService {
   Future<SrsSummary> getSummary(List<String> allIds) async {
     final all = await _loadAll();
     int newCount = 0;
-    int dueCount = 0;
+    int learningCount = 0; // repetitions == 1 (1 kez doğru, henüz cepte değil)
     int pocketCount = 0;
 
     for (final id in allIds) {
@@ -112,13 +112,13 @@ class SpacedRepetitionService {
         newCount++; // hiç görülmemiş
       } else if (data.isInPocket) {
         pocketCount++;
-      } else if (data.isDue) {
-        dueCount++;
+      } else if (data.repetitions == 1) {
+        learningCount++; // 1 kez bildim → bildiklerim klasörü
       }
     }
     return SrsSummary(
       newCount: newCount,
-      dueCount: dueCount,
+      learningCount: learningCount,
       pocketCount: pocketCount,
     );
   }
@@ -126,14 +126,14 @@ class SpacedRepetitionService {
 
 class SrsSummary {
   final int newCount;
-  final int dueCount;
+  final int learningCount; // "Bildiklerim" — 1 kez doğru, cepte değil
   final int pocketCount;
 
   const SrsSummary({
     required this.newCount,
-    required this.dueCount,
+    required this.learningCount,
     required this.pocketCount,
   });
 
-  int get total => newCount + dueCount;
+  int get total => newCount + learningCount;
 }

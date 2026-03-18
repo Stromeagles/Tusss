@@ -7,7 +7,7 @@ import '../services/spaced_repetition_service.dart';
 import '../widgets/difficulty_badge_widget.dart';
 import '../models/subject_registry.dart';
 
-enum FlashcardMode { all, dueOnly, pocketOnly }
+enum FlashcardMode { all, dueOnly, pocketOnly, newOnly, learnedOnly }
 
 class FlashcardScreen extends StatefulWidget {
   final Topic? topicFilter;
@@ -77,7 +77,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             Text('📦', style: TextStyle(fontSize: 18)),
             SizedBox(width: 10),
             Text(
-              'Cepte! 10 gün sonra tekrar sorulacak',
+              'Cepte! 3 gün sonra tekrar sorulacak',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
@@ -96,16 +96,29 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   }
 
   Future<void> _applyMode(List<Flashcard> source) async {
-    List<Flashcard> result;
-    if (_mode == FlashcardMode.dueOnly) {
-      final dueIds =
-          await _srService.filterDueCards(source.map((c) => c.id).toList());
-      result = source.where((c) => dueIds.contains(c.id)).toList();
+    List<Flashcard> result = [];
+    final allData = await Future.wait(
+        source.map((c) => _srService.getCardData(c.id)));
+
+    if (_mode == FlashcardMode.learnedOnly) {
+      // Bildiklerim: En az 1 kez çalışılmış, tekrarı gelmiş ve henüz cepte değil
+      for (var i = 0; i < source.length; i++) {
+        final data = allData[i];
+        if (data.repetitions >= 1 && data.isDue && !data.isInPocket) {
+          result.add(source[i]);
+        }
+      }
+    } else if (_mode == FlashcardMode.dueOnly) {
+      // Eski 'Tekrar' mantığı (hepsi dahil edilebilir veya fallback olarak kalsın)
+      for (var i = 0; i < source.length; i++) {
+        if (allData[i].isDue && !allData[i].isInPocket) result.add(source[i]);
+      }
       if (result.isEmpty) result = source;
+    } else if (_mode == FlashcardMode.newOnly) {
+      for (var i = 0; i < source.length; i++) {
+        if (allData[i].repetitions == 0) result.add(source[i]);
+      }
     } else if (_mode == FlashcardMode.pocketOnly) {
-      final allData = await Future.wait(
-          source.map((c) => _srService.getCardData(c.id)));
-      result = <Flashcard>[];
       for (var i = 0; i < source.length; i++) {
         if (allData[i].isInPocket) result.add(source[i]);
       }
@@ -126,6 +139,8 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
 
   String get _title {
     if (_mode == FlashcardMode.pocketOnly) return '📦 Cep Kartları';
+    if (_mode == FlashcardMode.newOnly) return '🆕 Yeni Kartlar';
+    if (_mode == FlashcardMode.learnedOnly) return '🧠 Bildiklerim';
     if (widget.topicFilter != null) return widget.topicFilter!.subTopic;
     if (widget.subjectId != null) {
       final mod = SubjectRegistry.findById(widget.subjectId!);
@@ -767,13 +782,17 @@ class _ModeToggle extends StatelessWidget {
       FlashcardMode.dueOnly   => ('Bugün',  Icons.filter_alt_rounded,    AppTheme.cyan),
       FlashcardMode.pocketOnly => ('Cep',    Icons.inventory_2_rounded,   AppTheme.success),
       FlashcardMode.all       => ('Tümü',   Icons.all_inclusive_rounded,  AppTheme.textMuted),
+      FlashcardMode.newOnly   => ('Yeni',   Icons.auto_awesome_rounded,  AppTheme.neonPurple),
+      FlashcardMode.learnedOnly => ('Öğrenilen', Icons.school_rounded, AppTheme.neonGold),
     };
     return GestureDetector(
       onTap: () {
         final next = switch (mode) {
           FlashcardMode.dueOnly    => FlashcardMode.all,
           FlashcardMode.all        => FlashcardMode.pocketOnly,
-          FlashcardMode.pocketOnly => FlashcardMode.dueOnly,
+          FlashcardMode.pocketOnly => FlashcardMode.newOnly,
+          FlashcardMode.newOnly    => FlashcardMode.learnedOnly,
+          FlashcardMode.learnedOnly => FlashcardMode.dueOnly,
         };
         onChanged(next);
       },

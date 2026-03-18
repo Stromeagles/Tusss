@@ -336,10 +336,12 @@ class _HomeScreenState extends State<HomeScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                _buildAnkiCounter('Yeni', newCount, AppTheme.cyan, isDark, null),
-                _buildAnkiCounter('Tekrar', dueCount, AppTheme.error, isDark,
+                _buildAnkiCounter('Yeni', newCount, AppTheme.cyan, isDark, 
+                  newCount > 0 ? () => Navigator.push(context, MaterialPageRoute(
+                      builder: (_) => const FlashcardScreen(initialMode: FlashcardMode.newOnly))) : null),
+                _buildAnkiCounter('Bildiklerim', dueCount, AppTheme.error, isDark,
                   dueCount > 0 ? () => Navigator.push(context, MaterialPageRoute(
-                      builder: (_) => const FlashcardScreen(initialMode: FlashcardMode.dueOnly))) : null),
+                      builder: (_) => const FlashcardScreen(initialMode: FlashcardMode.learnedOnly))) : null),
                 _buildAnkiCounter('Cepte', pocketCount, AppTheme.success, isDark,
                   pocketCount > 0 ? () => Navigator.push(context, MaterialPageRoute(
                       builder: (_) => const FlashcardScreen(initialMode: FlashcardMode.pocketOnly))) : null),
@@ -377,7 +379,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: ElevatedButton.icon(
                   onPressed: _navigateToFlashcards,
                   icon: const Icon(Icons.play_circle_fill_rounded, size: 24),
-                  label: Text(dueCount > 0 ? '$dueCount Kartı Tekrar Et' : 'Yeni Kartlara Başla', 
+                  label: Text(dueCount > 0 ? '$dueCount Bildiğim Kartı Tekrar Et' : 'Yeni Kartlara Başla', 
                     style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 16)),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: dueCount > 0 ? AppTheme.error : AppTheme.cyan,

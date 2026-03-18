@@ -79,7 +79,7 @@ class SpacedRepetitionService {
   Future<String> getNextReviewLabel(String cardId) async {
     final data = await getCardData(cardId);
     if (data.repetitions == 0) return 'Yeni kart';
-    if (data.isInPocket) return '📦 Cepte! (10 gün sonra)';
+    if (data.isInPocket) return '📦 Cepte! (3 gün sonra)';
     final diff = data.nextReviewDate
         .difference(DateTime.now())
         .inDays;

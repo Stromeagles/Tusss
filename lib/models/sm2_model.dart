@@ -56,11 +56,11 @@ class SM2CardData {
     } else {
       newRepetitions = repetitions + 1;
       if (repetitions == 0) {
-        // İlk kez bilindi → yarın tekrar
+        // İlk kez bilindi (Yeni -> Bildiklerim) → yarın tekrar
         newInterval = 1;
       } else {
-        // 1+ kez bilindi → Cepte! 10 gün sonra
-        newInterval = 10;
+        // 1+ kez bilindi (Bildiklerim -> Cepte) → 3 gün sonra
+        newInterval = 3;
       }
     }
 
@@ -76,8 +76,8 @@ class SM2CardData {
     );
   }
 
-  /// Kart "cepte" mi? (1+ tekrar sonrası bilindi, 10 günlük aralıkta)
-  bool get isInPocket => repetitions >= 2 && interval == 10;
+  /// Kart "cepte" mi? (1+ tekrar sonrası bilindi, 3 günlük aralıkta)
+  bool get isInPocket => repetitions >= 2 && interval == 3;
 
   Map<String, dynamic> toJson() => {
         'cardId': cardId,

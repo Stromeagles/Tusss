@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import '../models/topic_model.dart';
 import '../models/subject_registry.dart';
+import '../utils/app_logger.dart';
 
 class DataService {
   static final DataService _instance = DataService._internal();
@@ -20,16 +21,24 @@ class DataService {
     if (module == null) return [];
 
     // Modüle ait tüm JSON dosyalarını paralel yükle ve birleştir
+    AppLogger.info('DataService', 'loadBySubject başlatılıyor: $subjectId (${module.assetPaths.length} dosya)');
     final futures = module.assetPaths.map((path) async {
-      final jsonString = await rootBundle.loadString(path);
-      final list = json.decode(jsonString) as List<dynamic>;
-      return list
-          .map((e) => Topic.fromJson(e as Map<String, dynamic>))
-          .toList();
+      try {
+        final jsonString = await rootBundle.loadString(path);
+        final list = json.decode(jsonString) as List<dynamic>;
+        return list
+            .map((e) => Topic.fromJson(e as Map<String, dynamic>))
+            .toList();
+      } on Exception catch (e, st) {
+        AppLogger.warning('DataService', 'JSON parse hatası — dosya: $path, hata: $e');
+        AppLogger.error('DataService', 'JSON yükleme başarısız', e, st);
+        return <Topic>[];
+      }
     });
 
     final results = await Future.wait(futures);
     final topics = results.expand((list) => list).toList();
+    AppLogger.info('DataService', 'loadBySubject tamamlandı: $subjectId — ${topics.length} topic yüklendi.');
 
     _cache[subjectId] = topics;
     return topics;

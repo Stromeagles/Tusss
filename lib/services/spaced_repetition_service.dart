@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/sm2_model.dart';
+import '../utils/app_logger.dart';
 
 class SpacedRepetitionService {
   static final SpacedRepetitionService _instance =
@@ -16,24 +17,37 @@ class SpacedRepetitionService {
 
   Future<Map<String, SM2CardData>> _loadAll() async {
     if (_cache != null) return _cache!;
-    final prefs = await SharedPreferences.getInstance();
-    final raw = prefs.getString(_prefsKey);
-    if (raw == null) {
-      _cache = {};
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final raw = prefs.getString(_prefsKey);
+      if (raw == null) {
+        _cache = {};
+        return _cache!;
+      }
+      final decoded = json.decode(raw) as Map<String, dynamic>;
+      _cache = decoded.map(
+        (k, v) => MapEntry(k, SM2CardData.fromJson(v as Map<String, dynamic>)),
+      );
+      AppLogger.info('SpacedRepetitionService', 'SM2 verileri yüklendi: ${_cache!.length} kart.');
       return _cache!;
+    } on Exception catch (e, st) {
+      AppLogger.error('SpacedRepetitionService', 'SharedPreferences okuma hatası — cache temizleniyor.', e, st);
+      _cache = null;
+      return {};
     }
-    final decoded = json.decode(raw) as Map<String, dynamic>;
-    _cache = decoded.map(
-      (k, v) => MapEntry(k, SM2CardData.fromJson(v as Map<String, dynamic>)),
-    );
-    return _cache!;
   }
 
   Future<void> _saveAll(Map<String, SM2CardData> data) async {
-    final prefs = await SharedPreferences.getInstance();
-    final encoded = json.encode(data.map((k, v) => MapEntry(k, v.toJson())));
-    await prefs.setString(_prefsKey, encoded);
-    _cache = data;
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final encoded = json.encode(data.map((k, v) => MapEntry(k, v.toJson())));
+      await prefs.setString(_prefsKey, encoded);
+      _cache = data;
+      AppLogger.info('SpacedRepetitionService', 'SM2 verileri kaydedildi: ${data.length} kart.');
+    } on Exception catch (e, st) {
+      AppLogger.error('SpacedRepetitionService', 'SharedPreferences yazma hatası — cache temizleniyor.', e, st);
+      _cache = null;
+    }
   }
 
   // ── Public API ────────────────────────────────────────────────────────────

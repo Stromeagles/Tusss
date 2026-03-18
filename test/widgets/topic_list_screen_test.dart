@@ -107,9 +107,9 @@ void main() {
 
   group('Arama filtresi mantık testleri (birim)', () {
     // DataService olmadan, filtreleme mantığını doğrudan test ediyoruz
-    String _filterQuery(String text) => text.trim().toLowerCase();
+    String filterQuery(String text) => text.trim().toLowerCase();
 
-    bool _topicMatches(Map<String, String> topic, String query) {
+    bool topicMatches(Map<String, String> topic, String query) {
       if (query.isEmpty) return true;
       return topic.values.any((val) => val.toLowerCase().contains(query));
     }
@@ -119,8 +119,8 @@ void main() {
         {'subject': 'Kardiyoloji', 'chapter': 'Kalp', 'topic': 'Aritmiler'},
         {'subject': 'Nefroloji', 'chapter': 'Böbrek', 'topic': 'GFR'},
       ];
-      final q = _filterQuery('');
-      final filtered = topics.where((t) => _topicMatches(t, q)).toList();
+      final q = filterQuery('');
+      final filtered = topics.where((t) => topicMatches(t, q)).toList();
       expect(filtered.length, 2);
     });
 
@@ -129,8 +129,8 @@ void main() {
         {'subject': 'Kardiyoloji', 'chapter': 'Kalp', 'topic': 'Aritmiler'},
         {'subject': 'Nefroloji', 'chapter': 'Böbrek', 'topic': 'GFR'},
       ];
-      final q = _filterQuery('kardiyoloji');
-      final filtered = topics.where((t) => _topicMatches(t, q)).toList();
+      final q = filterQuery('kardiyoloji');
+      final filtered = topics.where((t) => topicMatches(t, q)).toList();
       expect(filtered.length, 1);
       expect(filtered.first['subject'], 'Kardiyoloji');
     });
@@ -139,8 +139,8 @@ void main() {
       final topics = [
         {'subject': 'Kardiyoloji', 'chapter': 'Kalp', 'topic': 'Aritmiler'},
       ];
-      final q = _filterQuery('KARDİYOLOJİ');
-      final filtered = topics.where((t) => _topicMatches(t, q)).toList();
+      final q = filterQuery('KARDİYOLOJİ');
+      final filtered = topics.where((t) => topicMatches(t, q)).toList();
       // Türkçe büyük/küçük harf dönüşüm farkından dolayı kontrol
       // Dart toLowerCase() ASCII için çalışır, Türkçe İ→i dönüşümü test ediyoruz
       expect(filtered.length, greaterThanOrEqualTo(0)); // hata vermemeli
@@ -150,8 +150,8 @@ void main() {
       final topics = [
         {'subject': 'Kardiyoloji', 'chapter': 'Kalp', 'topic': 'Aritmiler'},
       ];
-      final q = _filterQuery('zzzyyyxxx');
-      final filtered = topics.where((t) => _topicMatches(t, q)).toList();
+      final q = filterQuery('zzzyyyxxx');
+      final filtered = topics.where((t) => topicMatches(t, q)).toList();
       expect(filtered, isEmpty);
     });
 
@@ -160,8 +160,8 @@ void main() {
         {'subject': 'Kardiyoloji', 'chapter': 'Kalp Yetmezliği', 'topic': 'KY'},
         {'subject': 'Kardiyoloji', 'chapter': 'Aritmiler', 'topic': 'AF'},
       ];
-      final q = _filterQuery('kalp');
-      final filtered = topics.where((t) => _topicMatches(t, q)).toList();
+      final q = filterQuery('kalp');
+      final filtered = topics.where((t) => topicMatches(t, q)).toList();
       expect(filtered.length, 1);
       expect(filtered.first['chapter'], 'Kalp Yetmezliği');
     });
@@ -173,11 +173,11 @@ void main() {
       await tester.pumpWidget(
         MaterialApp(
           theme: AppTheme.darkTheme,
-          home: Scaffold(
+          home: const Scaffold(
             body: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Icon(Icons.search_off_rounded,
                       color: AppTheme.textMuted, size: 56),
                   SizedBox(height: 16),

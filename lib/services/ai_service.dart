@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../config/api_config.dart';
 import '../models/topic_model.dart';
+import '../utils/app_logger.dart';
 
 class AIService {
   static final AIService _instance = AIService._internal();
@@ -16,6 +17,7 @@ class AIService {
 
     final prompt = _buildPrompt(clinicalCase);
 
+    AppLogger.info('AIService', 'getExplanation başlatılıyor: ${clinicalCase.caseText.substring(0, clinicalCase.caseText.length.clamp(0, 60))}...');
     try {
       final response = await http
           .post(
@@ -33,23 +35,29 @@ class AIService {
               ],
             }),
           )
-          .timeout(const Duration(seconds: 30));
+          .timeout(const Duration(seconds: 10));
 
       if (response.statusCode == 200) {
         final decoded =
             json.decode(utf8.decode(response.bodyBytes)) as Map<String, dynamic>;
         final content = decoded['content'] as List<dynamic>;
         if (content.isNotEmpty) {
+          AppLogger.info('AIService', 'Açıklama başarıyla alındı.');
           return (content.first as Map<String, dynamic>)['text'] as String;
         }
+        AppLogger.warning('AIService', 'API yanıtı boş content döndürdü.');
+        return '⚠️ Açıklama alınamadı. Lütfen tekrar deneyin.';
       }
 
       // API hatası → kullanıcıya anlamlı mesaj döndür
       if (response.statusCode == 401) {
+        AppLogger.error('AIService', 'API anahtarı geçersiz (HTTP 401).');
         return '⚠️ API anahtarı geçersiz. `lib/config/api_config.dart` dosyasındaki anahtarı kontrol edin.';
       }
+      AppLogger.error('AIService', 'HTTP hata kodu: ${response.statusCode}');
       return '⚠️ Açıklama alınamadı (HTTP ${response.statusCode}). Lütfen tekrar deneyin.';
-    } on Exception catch (e) {
+    } on Exception catch (e, st) {
+      AppLogger.error('AIService', 'Bağlantı hatası', e, st);
       return '⚠️ Bağlantı hatası: $e\n\nİnternet bağlantınızı kontrol edin.';
     }
   }

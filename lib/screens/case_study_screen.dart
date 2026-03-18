@@ -241,7 +241,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
         color: AppTheme.cardBackground,
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-            color: AppTheme.cyan.withOpacity(0.2), width: 1),
+            color: AppTheme.cyan.withValues(alpha: 0.2), width: 1),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -295,12 +295,12 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
           if (option == _currentCase.correctAnswer) {
             borderColor = AppTheme.success;
             textColor = AppTheme.success;
-            bgColor = AppTheme.success.withOpacity(0.08);
+            bgColor = AppTheme.success.withValues(alpha: 0.08);
             trailingIcon = Icons.check_circle_rounded;
           } else if (option == _selectedAnswer) {
             borderColor = AppTheme.error;
             textColor = AppTheme.error;
-            bgColor = AppTheme.error.withOpacity(0.08);
+            bgColor = AppTheme.error.withValues(alpha: 0.08);
             trailingIcon = Icons.cancel_rounded;
           }
         } else if (option == _selectedAnswer) {
@@ -345,13 +345,13 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: BoxDecoration(
         color: _isCorrect
-            ? AppTheme.success.withOpacity(0.12)
-            : AppTheme.error.withOpacity(0.12),
+            ? AppTheme.success.withValues(alpha: 0.12)
+            : AppTheme.error.withValues(alpha: 0.12),
         borderRadius: BorderRadius.circular(14),
         border: Border.all(
           color: _isCorrect
-              ? AppTheme.success.withOpacity(0.4)
-              : AppTheme.error.withOpacity(0.4),
+              ? AppTheme.success.withValues(alpha: 0.4)
+              : AppTheme.error.withValues(alpha: 0.4),
         ),
       ),
       child: Row(
@@ -472,22 +472,22 @@ class _AIRequestButton extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              const Color(0xFF7928CA).withOpacity(0.15),
-              const Color(0xFF00D4FF).withOpacity(0.15),
+              const Color(0xFF7928CA).withValues(alpha: 0.15),
+              const Color(0xFF00D4FF).withValues(alpha: 0.15),
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
           borderRadius: BorderRadius.circular(14),
           border: Border.all(
-              color: const Color(0xFF7928CA).withOpacity(0.35)),
+              color: const Color(0xFF7928CA).withValues(alpha: 0.35)),
         ),
         child: Row(
           children: [
             Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: const Color(0xFF7928CA).withOpacity(0.15),
+                color: const Color(0xFF7928CA).withValues(alpha: 0.15),
                 borderRadius: BorderRadius.circular(10),
               ),
               child: isLoading
@@ -549,15 +549,15 @@ class _AIExplanationCard extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            const Color(0xFF7928CA).withOpacity(0.10),
-            const Color(0xFF00D4FF).withOpacity(0.05),
+            const Color(0xFF7928CA).withValues(alpha: 0.10),
+            const Color(0xFF00D4FF).withValues(alpha: 0.05),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-            color: const Color(0xFF7928CA).withOpacity(0.3)),
+            color: const Color(0xFF7928CA).withValues(alpha: 0.3)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -578,7 +578,7 @@ class _AIExplanationCard extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(
                     horizontal: 8, vertical: 3),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF7928CA).withOpacity(0.15),
+                  color: const Color(0xFF7928CA).withValues(alpha: 0.15),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: const Text('Claude',

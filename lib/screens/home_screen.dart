@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_theme.dart';
@@ -124,7 +125,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             color: AppTheme.cyan,
                             backgroundColor: isDark ? AppTheme.surface : Colors.white,
                             child: SingleChildScrollView(
-                              physics: const AlwaysScrollableScrollPhysics(),
+                              physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
                               padding: EdgeInsets.only(
                                 bottom: MediaQuery.of(context).padding.bottom + 110,
                               ),
@@ -132,13 +133,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   const SizedBox(height: 6),
-                                  _buildHeroCard(isDark),
+                                  _buildStreakBanner(isDark),
+                                  RepaintBoundary(child: _buildHeroCard(isDark)),
                                   const SizedBox(height: 20),
                                   _buildQuickActions(isDark),
                                   const SizedBox(height: 26),
-                                  _buildSubjectCarousel(isDark),
+                                  RepaintBoundary(child: _buildSubjectCarousel(isDark)),
                                   const SizedBox(height: 26),
-                                  _buildDailyGoal(isDark),
+                                  RepaintBoundary(child: _buildDailyGoal(isDark)),
                                   const SizedBox(height: 10),
                                 ],
                               ),
@@ -290,6 +292,174 @@ class _HomeScreenState extends State<HomeScreen> {
     ).animate().fadeIn(duration: 600.ms).slideY(begin: -0.08, end: 0);
   }
 
+  // ── Weekly Activity Chart ─────────────────────────────────────────────────
+  Widget _buildWeeklyActivity(bool isDark) {
+    final today = DateTime.now();
+    final days = List.generate(7, (i) => today.subtract(Duration(days: 6 - i)));
+    const dayNames = ['Pt', 'Sa', 'Ça', 'Pe', 'Cu', 'Ct', 'Pz'];
+
+    int maxVal = 1;
+    for (final d in days) {
+      final key =
+          '${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
+      final val = _progress.weeklyStats[key] ?? 0;
+      if (val > maxVal) maxVal = val;
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Son 7 Gün',
+          style: GoogleFonts.inter(
+            color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
+            fontSize: 11,
+            fontWeight: FontWeight.w700,
+            letterSpacing: 0.5,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: List.generate(7, (i) {
+            final d = days[i];
+            final key =
+                '${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
+            final count = _progress.weeklyStats[key] ?? 0;
+            final ratio = count / maxVal;
+            final isToday = d.day == today.day &&
+                d.month == today.month &&
+                d.year == today.year;
+            final color = isToday ? AppTheme.cyan : AppTheme.neonPurple;
+
+            return Column(
+              children: [
+                Container(
+                  width: 28,
+                  height: 48,
+                  decoration: BoxDecoration(
+                    color: isDark
+                        ? Colors.white.withValues(alpha: 0.05)
+                        : Colors.black.withValues(alpha: 0.04),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  alignment: Alignment.bottomCenter,
+                  child: AnimatedContainer(
+                    duration: const Duration(milliseconds: 600),
+                    curve: Curves.easeOutCubic,
+                    width: 28,
+                    height: count == 0 ? 4 : (ratio * 48).clamp(4.0, 48.0),
+                    decoration: BoxDecoration(
+                      color: count == 0
+                          ? color.withValues(alpha: 0.12)
+                          : color.withValues(alpha: isDark ? 0.80 : 0.70),
+                      borderRadius: BorderRadius.circular(8),
+                      boxShadow: count > 0
+                          ? [
+                              BoxShadow(
+                                  color: color.withValues(alpha: 0.35),
+                                  blurRadius: 8)
+                            ]
+                          : null,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 5),
+                Text(
+                  dayNames[d.weekday - 1],
+                  style: GoogleFonts.inter(
+                    color: isToday
+                        ? AppTheme.cyan
+                        : (isDark
+                            ? AppTheme.textMuted
+                            : AppTheme.lightTextSecondary),
+                    fontSize: 9,
+                    fontWeight:
+                        isToday ? FontWeight.w800 : FontWeight.w500,
+                  ),
+                ),
+              ],
+            );
+          }),
+        ),
+      ],
+    );
+  }
+
+  // ── Streak Banner ─────────────────────────────────────────────────────────
+  Widget _buildStreakBanner(bool isDark) {
+    final streak = _progress.currentStreak;
+    if (streak == 0) return const SizedBox.shrink();
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(20, 0, 20, 14),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              const Color(0xFFFF6B00).withValues(alpha: isDark ? 0.20 : 0.12),
+              const Color(0xFFFF3B30).withValues(alpha: isDark ? 0.10 : 0.06),
+            ],
+            begin: Alignment.centerLeft,
+            end: Alignment.centerRight,
+          ),
+          borderRadius: BorderRadius.circular(18),
+          border: Border.all(
+            color: const Color(0xFFFF6B00).withValues(alpha: 0.35),
+            width: 1.2,
+          ),
+        ),
+        child: Row(
+          children: [
+            Text('🔥', style: const TextStyle(fontSize: 22))
+                .animate(onPlay: (c) => c.repeat())
+                .shimmer(duration: 2000.ms, color: const Color(0xFFFFCC00)),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    '$streak Gündür Aralıksız!',
+                    style: GoogleFonts.inter(
+                      color: isDark ? Colors.white : AppTheme.lightTextPrimary,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  Text(
+                    'Serini korumaya devam et 💪',
+                    style: GoogleFonts.inter(
+                      color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
+                      fontSize: 11,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              decoration: BoxDecoration(
+                color: const Color(0xFFFF6B00).withValues(alpha: 0.18),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: const Color(0xFFFF6B00).withValues(alpha: 0.4)),
+              ),
+              child: Text(
+                '🔥 $streak',
+                style: GoogleFonts.inter(
+                  color: const Color(0xFFFF6B00),
+                  fontSize: 16,
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ).animate().fadeIn(duration: 600.ms, delay: 150.ms).slideX(begin: -0.05, end: 0);
+  }
+
   // ── Hero Card ──────────────────────────────────────────────────────────────
   Widget _buildHeroCard(bool isDark) {
     final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
@@ -336,15 +506,15 @@ class _HomeScreenState extends State<HomeScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                _buildAnkiCounter('Yeni', newCount, AppTheme.cyan, isDark, 
-                  newCount > 0 ? () => Navigator.push(context, MaterialPageRoute(
-                      builder: (_) => const FlashcardScreen(initialMode: FlashcardMode.newOnly))) : null),
+                _buildAnkiCounter('Yeni', newCount, AppTheme.cyan, isDark,
+                  newCount > 0 ? () => Navigator.push(context, AppRoute.slideUp(
+                      const FlashcardScreen(initialMode: FlashcardMode.newOnly))) : null),
                 _buildAnkiCounter('Bildiklerim', learningCount, AppTheme.error, isDark,
-                  learningCount > 0 ? () => Navigator.push(context, MaterialPageRoute(
-                      builder: (_) => const FlashcardScreen(initialMode: FlashcardMode.learnedOnly))) : null),
-                _buildAnkiCounter('Cepte', pocketCount, AppTheme.success, isDark,
-                  pocketCount > 0 ? () => Navigator.push(context, MaterialPageRoute(
-                      builder: (_) => const FlashcardScreen(initialMode: FlashcardMode.pocketOnly))) : null),
+                  learningCount > 0 ? () => Navigator.push(context, AppRoute.slideUp(
+                      const FlashcardScreen(initialMode: FlashcardMode.learnedOnly))) : null),
+                _buildAnkiCounter('Hafıza', pocketCount, AppTheme.success, isDark,
+                  pocketCount > 0 ? () => Navigator.push(context, AppRoute.slideUp(
+                      const FlashcardScreen(initialMode: FlashcardMode.pocketOnly))) : null),
               ],
             ),
             const SizedBox(height: 24),
@@ -371,6 +541,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
+            const SizedBox(height: 20),
+            _buildWeeklyActivity(isDark),
             if (learningCount > 0 || newCount > 0) ...[
               const SizedBox(height: 20),
               SizedBox(
@@ -528,6 +700,7 @@ class _HomeScreenState extends State<HomeScreen> {
           height: 172,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
+            physics: const BouncingScrollPhysics(),
             padding: const EdgeInsets.only(left: 20, right: 8),
             itemCount: modules.length,
             itemBuilder: (context, index) {
@@ -556,10 +729,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // ── Daily Goal ─────────────────────────────────────────────────────────────
   Widget _buildDailyGoal(bool isDark) {
-    final dailyGoal = _progress.todayGoalHours;
-    // Bugün çalışılan öğe sayısını (kart/vaka) saate çeviriyoruz (yaklaşık 4 dk/öğe)
-    final studied   = (_progress.todayStudied * 4) / 60; 
-    final goalProg  = (studied / dailyGoal).clamp(0.0, 1.0);
+    final dailyGoal = _progress.dailyGoal;
+    final studied   = _progress.todayStudied;
+    final goalProg  = _progress.dailyProgress;
     final cardBg    = AppTheme.glassBg(isDark, darkAlpha: 0.07, lightAlpha: 0.80);
     final cardBorder= AppTheme.glassBorder(isDark);
     final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
@@ -606,8 +778,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         onTap: () async {
                           final saved = await Navigator.push<bool>(
                             context,
-                            MaterialPageRoute(builder: (_) =>
-                                const GoalSettingsScreen()),
+                            AppRoute.slideUp(const GoalSettingsScreen()),
                           );
                           if (saved == true) _loadData();
                         },
@@ -629,10 +800,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                      Text('${studied.toStringAsFixed(1)} / ${dailyGoal.toInt()}',
+                      Text('$studied / $dailyGoal',
                         style: GoogleFonts.inter(color: textColor, fontSize: 26,
                             fontWeight: FontWeight.w900, letterSpacing: -1.2)),
-                      Text('Saat', style: GoogleFonts.inter(color: subColor, fontSize: 12, fontWeight: FontWeight.w600)),
+                      Text('Kart', style: GoogleFonts.inter(color: subColor, fontSize: 12, fontWeight: FontWeight.w600)),
                     ]),
                     const Spacer(),
                     _GradientCircularProgress(
@@ -661,12 +832,45 @@ class _HomeScreenState extends State<HomeScreen> {
                     ]),
                   ],
                 ),
+                const SizedBox(height: 20),
+                SizedBox(
+                  width: double.infinity,
+                  height: 48,
+                  child: ElevatedButton.icon(
+                    onPressed: _startDailyGoalSession,
+                    icon: const Icon(Icons.rocket_launch_rounded, size: 20),
+                    label: Text(
+                      _progress.selectedSubjectIds.isEmpty
+                          ? 'Günlük Seansı Başlat'
+                          : 'Seçili Branşlarda Başlat (${_progress.selectedSubjectIds.length})',
+                      style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 14),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppTheme.neonPink,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                      elevation: 4,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
         ),
       ),
     ).animate().fadeIn(duration: 700.ms, delay: 550.ms).slideY(begin: 0.10, end: 0);
+  }
+
+  Future<void> _startDailyGoalSession() async {
+    final selected = _progress.selectedSubjectIds;
+    await Navigator.push(
+      context,
+      AppRoute.slideUp(FlashcardScreen(
+        subjectIds: selected.isEmpty ? null : selected,
+        initialMode: FlashcardMode.dueOnly,
+      )),
+    );
+    _loadData();
   }
 
   // ── Bottom Nav ─────────────────────────────────────────────────────────────
@@ -802,7 +1006,37 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildLoadingState() {
-    return Center(child: CircularProgressIndicator(color: AppTheme.cyan, strokeWidth: 2.5));
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    return SingleChildScrollView(
+      physics: const NeverScrollableScrollPhysics(),
+      padding: const EdgeInsets.fromLTRB(20, 6, 20, 80),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Hero Card skeleton
+          _ShimmerBox(height: 220, borderRadius: 30, isDark: isDark),
+          const SizedBox(height: 20),
+          // Quick Actions skeleton
+          Row(children: [
+            Expanded(child: _ShimmerBox(height: 90, borderRadius: 22, isDark: isDark)),
+            const SizedBox(width: 14),
+            Expanded(child: _ShimmerBox(height: 90, borderRadius: 22, isDark: isDark)),
+          ]),
+          const SizedBox(height: 26),
+          // Subject carousel skeleton
+          _ShimmerBox(height: 20, width: 140, borderRadius: 8, isDark: isDark),
+          const SizedBox(height: 16),
+          Row(children: [
+            _ShimmerBox(height: 172, width: 158, borderRadius: 22, isDark: isDark),
+            const SizedBox(width: 14),
+            _ShimmerBox(height: 172, width: 158, borderRadius: 22, isDark: isDark),
+          ]),
+          const SizedBox(height: 26),
+          // Daily Goal skeleton
+          _ShimmerBox(height: 160, borderRadius: 24, isDark: isDark),
+        ],
+      ),
+    );
   }
 }
 
@@ -1057,7 +1291,7 @@ class _SubjectCarouselCard extends StatelessWidget {
     final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
     final subColor  = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
 
-    return GestureDetector(
+    return _PressableCard(
       onTap: onTap,
       child: Container(
         width: 158, margin: const EdgeInsets.only(right: 14),
@@ -1149,7 +1383,7 @@ class _QuickActionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return _PressableCard(
       onTap: onTap,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(22),
@@ -1248,6 +1482,98 @@ class _AmbientBlob extends StatelessWidget {
         ]),
       ),
     );
+  }
+}
+
+// ── Pressable Card (scale + haptic) ───────────────────────────────────────
+/// Scale 1.0→0.97 press animasyonu + HapticFeedback
+class _PressableCard extends StatefulWidget {
+  final Widget child;
+  final VoidCallback? onTap;
+
+  const _PressableCard({required this.child, this.onTap});
+
+  @override
+  State<_PressableCard> createState() => _PressableCardState();
+}
+
+class _PressableCardState extends State<_PressableCard>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _ctrl;
+  late final Animation<double> _scale;
+
+  @override
+  void initState() {
+    super.initState();
+    _ctrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 100),
+      reverseDuration: const Duration(milliseconds: 200),
+    );
+    _scale = Tween<double>(begin: 1.0, end: 0.97).animate(
+      CurvedAnimation(parent: _ctrl, curve: Curves.easeInOut),
+    );
+  }
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    super.dispose();
+  }
+
+  void _onTapDown(TapDownDetails _) {
+    HapticFeedback.lightImpact();
+    _ctrl.forward();
+  }
+
+  void _onTapUp(TapUpDetails _) => _ctrl.reverse();
+  void _onTapCancel() => _ctrl.reverse();
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: widget.onTap,
+      onTapDown: _onTapDown,
+      onTapUp: _onTapUp,
+      onTapCancel: _onTapCancel,
+      child: ScaleTransition(scale: _scale, child: widget.child),
+    );
+  }
+}
+
+// ── Shimmer Box (loading skeleton) ────────────────────────────────────────
+class _ShimmerBox extends StatelessWidget {
+  final double height;
+  final double? width;
+  final double borderRadius;
+  final bool isDark;
+
+  const _ShimmerBox({
+    required this.height,
+    required this.borderRadius,
+    required this.isDark,
+    this.width,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: width,
+      height: height,
+      decoration: BoxDecoration(
+        color: isDark
+            ? Colors.white.withValues(alpha: 0.06)
+            : Colors.black.withValues(alpha: 0.05),
+        borderRadius: BorderRadius.circular(borderRadius),
+      ),
+    )
+        .animate(onPlay: (c) => c.repeat())
+        .shimmer(
+          duration: 1200.ms,
+          color: isDark
+              ? Colors.white.withValues(alpha: 0.10)
+              : Colors.black.withValues(alpha: 0.06),
+        );
   }
 }
 

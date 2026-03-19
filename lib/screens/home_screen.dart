@@ -70,7 +70,10 @@ class _HomeScreenState extends State<HomeScreen> {
         allIds.addAll(t.clinicalCases.map((cc) => cc.id).where((id) => id.isNotEmpty));
       }
       // getSummary → getAllData önbellekten döner, ekstra I/O yok
-      final srsSummary = await SpacedRepetitionService().getSummary(allIds);
+      final srsSummary = await SpacedRepetitionService().getSummary(
+        allIds,
+        dailyGoal: progress.dailyGoal,
+      );
       final coachInsight = AiCoachService().analyze(topics, sm2Data);
 
       setState(() {
@@ -518,7 +521,10 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 _buildAnkiCounter('Yeni', newCount, AppTheme.cyan, isDark,
                   newCount > 0 ? () => Navigator.push(context, AppRoute.slideUp(
-                      const FlashcardScreen(initialMode: FlashcardMode.newOnly))) : null),
+                      FlashcardScreen(
+                        initialMode: FlashcardMode.newOnly,
+                        dailyGoal: _progress.dailyGoal,
+                      ))) : null),
                 _buildAnkiCounter('Bilemedim', failedCount, AppTheme.error, isDark,
                   failedCount > 0 ? () => Navigator.push(context, AppRoute.slideUp(
                       const FlashcardScreen(initialMode: FlashcardMode.failedOnly))) : null),

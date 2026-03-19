@@ -132,16 +132,15 @@ class _HomeScreenState extends State<HomeScreen> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  const SizedBox(height: 6),
+                                  const SizedBox(height: 10),
+                                  RepaintBoundary(child: _buildDailyGoal(isDark)),
+                                  const SizedBox(height: 16),
                                   _buildStreakBanner(isDark),
                                   RepaintBoundary(child: _buildHeroCard(isDark)),
                                   const SizedBox(height: 20),
                                   _buildQuickActions(isDark),
                                   const SizedBox(height: 26),
                                   RepaintBoundary(child: _buildSubjectCarousel(isDark)),
-                                  const SizedBox(height: 26),
-                                  RepaintBoundary(child: _buildDailyGoal(isDark)),
-                                  const SizedBox(height: 10),
                                 ],
                               ),
                             ),
@@ -1013,6 +1012,9 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Daily Goal skeleton
+          _ShimmerBox(height: 160, borderRadius: 24, isDark: isDark),
+          const SizedBox(height: 16),
           // Hero Card skeleton
           _ShimmerBox(height: 220, borderRadius: 30, isDark: isDark),
           const SizedBox(height: 20),
@@ -1031,9 +1033,6 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(width: 14),
             _ShimmerBox(height: 172, width: 158, borderRadius: 22, isDark: isDark),
           ]),
-          const SizedBox(height: 26),
-          // Daily Goal skeleton
-          _ShimmerBox(height: 160, borderRadius: 24, isDark: isDark),
         ],
       ),
     );

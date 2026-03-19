@@ -19,6 +19,8 @@ import 'case_study_screen.dart';
 import 'topic_list_screen.dart';
 import 'hierarchy_screens.dart';
 import 'goal_settings_screen.dart';
+import '../services/ai_coach_service.dart';
+import '../models/sm2_model.dart';
 
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║  HomeScreen                                                              ║
@@ -41,6 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
   bool          _loading  = true;
   int           _navIndex = 0;
   SrsSummary    _srsSummary = const SrsSummary(newCount: 0, learningCount: 0, pocketCount: 0);
+  CoachInsight? _coachInsight;
 
   @override
   void initState() {
@@ -53,10 +56,12 @@ class _HomeScreenState extends State<HomeScreen> {
     final results = await Future.wait([
       _dataService.loadTopics(subjectId: _selectedSubjectId),
       _progressService.loadProgress(),
+      SpacedRepetitionService().getAllData(), // SM-2 verisini önbellekle
     ]);
     if (mounted) {
-      final topics = results[0] as List<Topic>;
+      final topics   = results[0] as List<Topic>;
       final progress = results[1] as StudyProgress;
+      final sm2Data  = results[2] as Map<String, SM2CardData>;
 
       // Tüm flashcard ve case ID'lerini topla
       final allIds = <String>[];
@@ -64,13 +69,16 @@ class _HomeScreenState extends State<HomeScreen> {
         allIds.addAll(t.flashcards.map((fc) => fc.id));
         allIds.addAll(t.clinicalCases.map((cc) => cc.id).where((id) => id.isNotEmpty));
       }
+      // getSummary → getAllData önbellekten döner, ekstra I/O yok
       final srsSummary = await SpacedRepetitionService().getSummary(allIds);
+      final coachInsight = AiCoachService().analyze(topics, sm2Data);
 
       setState(() {
-        _topics     = topics;
-        _progress   = progress;
-        _srsSummary = srsSummary;
-        _loading    = false;
+        _topics        = topics;
+        _progress      = progress;
+        _srsSummary    = srsSummary;
+        _coachInsight  = coachInsight;
+        _loading       = false;
       });
     }
   }
@@ -134,7 +142,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   const SizedBox(height: 10),
                                   RepaintBoundary(child: _buildDailyGoal(isDark)),
-                                  const SizedBox(height: 16),
+                                  const SizedBox(height: 12),
+                                  _buildAiCoachNote(isDark),
+                                  const SizedBox(height: 12),
                                   _buildStreakBanner(isDark),
                                   RepaintBoundary(child: _buildHeroCard(isDark)),
                                   const SizedBox(height: 20),
@@ -542,6 +552,8 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 20),
             _buildWeeklyActivity(isDark),
+            const SizedBox(height: 12),
+            _buildRankingBadge(isDark),
             if (learningCount > 0 || newCount > 0) ...[
               const SizedBox(height: 20),
               SizedBox(
@@ -1002,6 +1014,128 @@ class _HomeScreenState extends State<HomeScreen> {
 
   void _navigateToTopicList() {
     Navigator.push(context, AppRoute.slideRight(TopicListScreen(subjectId: _selectedSubjectId)));
+  }
+
+  Widget _buildAiCoachNote(bool isDark) {
+    final insight = _coachInsight;
+    if (insight == null) return const SizedBox.shrink();
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(20),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                AppTheme.neonPurple.withValues(alpha: isDark ? 0.15 : 0.08),
+                AppTheme.neonGold.withValues(alpha: isDark ? 0.06 : 0.03),
+              ],
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+            ),
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(
+              color: AppTheme.neonPurple.withValues(alpha: 0.30),
+              width: 1.0,
+            ),
+          ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: AppTheme.neonPurple.withValues(alpha: 0.15),
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                      color: AppTheme.neonPurple.withValues(alpha: 0.35)),
+                ),
+                child: const Text('🤖', style: TextStyle(fontSize: 16)),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'ASISTAN NOTU',
+                      style: GoogleFonts.inter(
+                        color: AppTheme.neonPurple,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w700,
+                        letterSpacing: 1.0,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      insight.message,
+                      style: GoogleFonts.inter(
+                        color: isDark
+                            ? AppTheme.textSecondary
+                            : AppTheme.lightTextSecondary,
+                        fontSize: 12,
+                        height: 1.5,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ).animate().fadeIn(duration: 500.ms, delay: 200.ms).slideY(begin: 0.05, end: 0);
+  }
+
+  Widget _buildRankingBadge(bool isDark) {
+    final pct = _progress.dailyProgress;
+    String label;
+    Color color;
+    String emoji;
+
+    if (pct >= 0.80) {
+      label = 'Bugün en başarılı %10\'luk dilimdesin!';
+      color = AppTheme.neonGold;
+      emoji = '🏆';
+    } else if (pct >= 0.50) {
+      label = 'Bugün en iyi %25\'lik dilimdesin!';
+      color = AppTheme.neonPurple;
+      emoji = '🎯';
+    } else if (pct >= 0.20) {
+      label = 'Devam et — en iyi %50\'ye girebilirsin!';
+      color = AppTheme.cyan;
+      emoji = '💪';
+    } else {
+      return const SizedBox.shrink();
+    }
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: isDark ? 0.12 : 0.08),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: color.withValues(alpha: 0.25)),
+      ),
+      child: Row(
+        children: [
+          Text(emoji, style: const TextStyle(fontSize: 14)),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              label,
+              style: GoogleFonts.inter(
+                color: color,
+                fontSize: 11,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   Widget _buildLoadingState() {

@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Topic>   _topics   = [];
   bool          _loading  = true;
   int           _navIndex = 0;
-  SrsSummary    _srsSummary = const SrsSummary(newCount: 0, learningCount: 0, pocketCount: 0);
+  SrsSummary    _srsSummary = const SrsSummary(newCount: 0, failedCount: 0, learningCount: 0, pocketCount: 0);
   CoachInsight? _coachInsight;
 
   @override
@@ -476,6 +476,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final cardBorder = isDark ? Colors.white.withValues(alpha: 0.12) : AppTheme.lightDivider;
     
     final newCount      = _srsSummary.newCount;
+    final failedCount   = _srsSummary.failedCount;
     final learningCount = _srsSummary.learningCount;
     final pocketCount   = _srsSummary.pocketCount;
 
@@ -518,7 +519,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 _buildAnkiCounter('Yeni', newCount, AppTheme.cyan, isDark,
                   newCount > 0 ? () => Navigator.push(context, AppRoute.slideUp(
                       const FlashcardScreen(initialMode: FlashcardMode.newOnly))) : null),
-                _buildAnkiCounter('Bildiklerim', learningCount, AppTheme.error, isDark,
+                _buildAnkiCounter('Bilemedim', failedCount, AppTheme.error, isDark,
+                  failedCount > 0 ? () => Navigator.push(context, AppRoute.slideUp(
+                      const FlashcardScreen(initialMode: FlashcardMode.failedOnly))) : null),
+                _buildAnkiCounter('Bildim', learningCount, AppTheme.neonGold, isDark,
                   learningCount > 0 ? () => Navigator.push(context, AppRoute.slideUp(
                       const FlashcardScreen(initialMode: FlashcardMode.learnedOnly))) : null),
                 _buildAnkiCounter('Hafıza', pocketCount, AppTheme.success, isDark,
@@ -527,34 +531,18 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
             const SizedBox(height: 24),
-            Row(
-              children: [
-                Expanded(
-                  child: _StatItem(
-                    icon: Icons.timer_outlined,
-                    label: 'Sınava Kalan',
-                    value: '$_daysToExam Gün',
-                    color: AppTheme.neonPink,
-                    isDark: isDark,
-                  ),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: _StatItem(
-                    icon: Icons.insights_rounded,
-                    label: 'Doğruluk',
-                    value: '%${_progress.accuracy.toInt()}',
-                    color: AppTheme.cyan,
-                    isDark: isDark,
-                  ),
-                ),
-              ],
+            _StatItem(
+              icon: Icons.timer_outlined,
+              label: 'Sınava Kalan',
+              value: '$_daysToExam Gün',
+              color: AppTheme.neonPink,
+              isDark: isDark,
             ),
             const SizedBox(height: 20),
             _buildWeeklyActivity(isDark),
             const SizedBox(height: 12),
             _buildRankingBadge(isDark),
-            if (learningCount > 0 || newCount > 0) ...[
+            if (learningCount > 0 || failedCount > 0 || newCount > 0) ...[
               const SizedBox(height: 20),
               SizedBox(
                 width: double.infinity,
@@ -562,7 +550,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: ElevatedButton.icon(
                   onPressed: _navigateToFlashcards,
                   icon: const Icon(Icons.play_circle_fill_rounded, size: 24),
-                  label: Text(learningCount > 0 ? '$learningCount Bildiğim Kartı Tekrar Et' : 'Yeni Kartlara Başla',
+                  label: Text(learningCount > 0 || failedCount > 0 ? 'Kritik Kartları Tekrar Et' : 'Günlük Seansı Başlat',
                     style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 16)),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: learningCount > 0 ? AppTheme.error : AppTheme.cyan,
@@ -585,7 +573,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Column(
         children: [
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             decoration: BoxDecoration(
               color: color.withValues(alpha: onTap != null ? 0.15 : 0.08),
               borderRadius: BorderRadius.circular(20),
@@ -663,6 +651,7 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: Icons.biotech_rounded,
             color: const Color(0xFF79C0FF),
             isDark: isDark, onTap: _navigateToCases,
+            badge: '🎯 %${_progress.accuracy.toInt()}',
           )),
         ],
       ),
@@ -864,12 +853,41 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
+                const SizedBox(height: 12),
+                _buildDailyScoreLine(isDark),
               ],
             ),
           ),
         ),
       ),
     ).animate().fadeIn(duration: 700.ms, delay: 550.ms).slideY(begin: 0.10, end: 0);
+  }
+
+  Widget _buildDailyScoreLine(bool isDark) {
+    final avgHours = _progress.todayGoalHours;
+    final totalPotentialHours = avgHours * _daysToExam;
+    final estimatedPoints = (totalPotentialHours / 60).clamp(1.0, 15.0);
+    final rangeMin = (estimatedPoints * 0.8).floor();
+    final rangeMax = (estimatedPoints * 1.2).ceil();
+    final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          'TUS Tahmini Puan Artışı  ',
+          style: GoogleFonts.inter(color: subColor, fontSize: 11, fontWeight: FontWeight.w600),
+        ),
+        Text(
+          '+$rangeMin – +$rangeMax',
+          style: GoogleFonts.inter(
+            color: AppTheme.neonGold,
+            fontSize: 13,
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+      ],
+    );
   }
 
   Future<void> _startDailyGoalSession() async {
@@ -1507,11 +1525,13 @@ class _QuickActionCard extends StatelessWidget {
   final Color        color;
   final bool         isDark;
   final VoidCallback onTap;
+  final String?      badge;
 
   const _QuickActionCard({
     required this.title,    required this.subtitle,
     required this.icon,     required this.color,
     required this.isDark,   required this.onTap,
+    this.badge,
   });
 
   @override
@@ -1538,20 +1558,39 @@ class _QuickActionCard extends StatelessWidget {
                     blurRadius: 20, offset: const Offset(0, 8)),
               ],
             ),
-            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Container(
-                padding: const EdgeInsets.all(9),
-                decoration: BoxDecoration(
-                  color: color.withValues(alpha: 0.22), shape: BoxShape.circle,
-                  boxShadow: [BoxShadow(color: color.withValues(alpha: 0.30), blurRadius: 10, spreadRadius: 1)],
-                ),
-                child: Icon(icon, color: color, size: 20),
-              ),
-              const SizedBox(height: 14),
-              Text(subtitle,
-                style: GoogleFonts.inter(color: color.withValues(alpha: 0.75),
-                    fontWeight: FontWeight.w700, fontSize: 11)),
-            ]),
+            child: Stack(
+              children: [
+                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Container(
+                    padding: const EdgeInsets.all(9),
+                    decoration: BoxDecoration(
+                      color: color.withValues(alpha: 0.22), shape: BoxShape.circle,
+                      boxShadow: [BoxShadow(color: color.withValues(alpha: 0.30), blurRadius: 10, spreadRadius: 1)],
+                    ),
+                    child: Icon(icon, color: color, size: 20),
+                  ),
+                  const SizedBox(height: 14),
+                  Text(subtitle,
+                    style: GoogleFonts.inter(color: color.withValues(alpha: 0.75),
+                        fontWeight: FontWeight.w700, fontSize: 11)),
+                ]),
+                if (badge != null)
+                  Positioned(
+                    top: 0, right: 0,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
+                      decoration: BoxDecoration(
+                        color: color.withValues(alpha: 0.18),
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: color.withValues(alpha: 0.40)),
+                      ),
+                      child: Text(badge!,
+                        style: GoogleFonts.inter(
+                          color: color, fontSize: 10, fontWeight: FontWeight.w800)),
+                    ),
+                  ),
+              ],
+            ),
           ),
         ),
       ),

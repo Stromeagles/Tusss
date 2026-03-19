@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_card_swiper/flutter_card_swiper.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import '../theme/app_theme.dart';
 import '../models/topic_model.dart';
 import '../services/data_service.dart';
 import '../services/spaced_repetition_service.dart';
+import '../services/ai_service.dart';
+import '../models/sm2_model.dart';
 import '../widgets/difficulty_badge_widget.dart';
 import '../models/subject_registry.dart';
 
@@ -12,12 +15,14 @@ enum FlashcardMode { all, dueOnly, pocketOnly, newOnly, learnedOnly }
 class FlashcardScreen extends StatefulWidget {
   final Topic? topicFilter;
   final String? subjectId;
+  final List<String>? subjectIds; // Çoklu branş filtresi (Günlük Hedef için)
   final FlashcardMode initialMode;
 
   const FlashcardScreen({
     super.key,
     this.topicFilter,
     this.subjectId,
+    this.subjectIds,
     this.initialMode = FlashcardMode.dueOnly,
   });
 
@@ -43,6 +48,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
 
   // Drag sırasında anlık % değerleri — dikey yön önceliği için
   int _dragPctY = 0;
+  int? _pendingQuality;
 
   @override
   void initState() {
@@ -62,6 +68,12 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     List<Flashcard> cards;
     if (widget.topicFilter != null) {
       cards = widget.topicFilter!.flashcards;
+    } else if (widget.subjectIds != null && widget.subjectIds!.isNotEmpty) {
+      // Çoklu branş: her branşın kartlarını birleştir
+      final futures = widget.subjectIds!
+          .map((id) => _dataService.loadFlashcards(subjectId: id));
+      final results = await Future.wait(futures);
+      cards = results.expand((c) => c).toList();
     } else {
       cards = await _dataService.loadFlashcards(subjectId: widget.subjectId);
     }
@@ -69,16 +81,22 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     await _applyMode(cards);
   }
 
-  void _showPocketToast() {
+  void _showAnswerToast(SM2CardData updated) {
+    final isNowPocket = updated.isInPocket;
+    final emoji = isNowPocket ? '🧠' : '📚';
+    final message = isNowPocket
+        ? 'Hafıza! 3 gün sonra tekrar sorulacak'
+        : 'Bildiklerime alındı! Tekrar edilirse hafızaya geçecek';
+
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: const Row(
+        content: Row(
           children: [
-            Text('📦', style: TextStyle(fontSize: 18)),
-            SizedBox(width: 10),
+            Text(emoji, style: const TextStyle(fontSize: 18)),
+            const SizedBox(width: 10),
             Text(
-              'Cepte! 3 gün sonra tekrar sorulacak',
-              style: TextStyle(
+              message,
+              style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
                 fontSize: 14,
@@ -100,21 +118,25 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     final allData = await Future.wait(
         source.map((c) => _srService.getCardData(c.id)));
 
+    final allMap = await _srService.getAllData();
+
     if (_mode == FlashcardMode.learnedOnly) {
-      // Bildiklerim: tam 1 kez doğru cevaplandı, cepte değil
-      // isDue şartı YOK — kart yarın planlı olsa da klasörde görünür
+      // Bildiklerim: En az 1 kez çalışılmış (veya tekrar öğreniliyor), cepte değil
       for (var i = 0; i < source.length; i++) {
-        if (allData[i].repetitions == 1) result.add(source[i]);
+        if (allMap.containsKey(source[i].id) && allData[i].repetitions <= 1) {
+          result.add(source[i]);
+        }
       }
     } else if (_mode == FlashcardMode.dueOnly) {
-      // Eski 'Tekrar' mantığı (hepsi dahil edilebilir veya fallback olarak kalsın)
+      // Eski 'Tekrar' mantığı
       for (var i = 0; i < source.length; i++) {
         if (allData[i].isDue && !allData[i].isInPocket) result.add(source[i]);
       }
       if (result.isEmpty) result = source;
     } else if (_mode == FlashcardMode.newOnly) {
+      // Yeni: Hiç görülmemiş kartlar
       for (var i = 0; i < source.length; i++) {
-        if (allData[i].repetitions == 0) result.add(source[i]);
+        if (!allMap.containsKey(source[i].id)) result.add(source[i]);
       }
     } else if (_mode == FlashcardMode.pocketOnly) {
       for (var i = 0; i < source.length; i++) {
@@ -133,6 +155,13 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
         _loading = false;
       });
     }
+  }
+
+  Future<void> _rateAndSwipe(int quality) async {
+    _pendingQuality = quality;
+    _swiperController.swipe(
+      quality >= 3 ? CardSwiperDirection.top : CardSwiperDirection.bottom,
+    );
   }
 
   String get _title {
@@ -242,6 +271,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
 
           // ← SOL: Geri Al — kartı geri çek, önceki cevabı sil
           if (effectiveDir == CardSwiperDirection.left) {
+            _pendingQuality = null;
             if (_swipeHistory.isNotEmpty) {
               WidgetsBinding.instance.addPostFrameCallback((_) {
                 if (!mounted) return;
@@ -268,17 +298,23 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
 
           // ↑ YUKARI: Bildim (quality 4) | ↓ AŞAĞI: Bilmedim (quality 1)
           final card = _cards[prev];
-          final quality = effectiveDir == CardSwiperDirection.top ? 4 : 1;
-          final updated = await _srService.recordAnswer(card.id, quality);
+          final quality = _pendingQuality ?? (effectiveDir == CardSwiperDirection.top ? 3 : 1);
+          _pendingQuality = null;
+          final SM2CardData updated;
+          try {
+            updated = await _srService.recordAnswer(card.id, quality);
+          } catch (_) {
+            return true;
+          }
 
           if (mounted) {
             setState(() {
               _swipeHistory.add(effectiveDir);
               if (effectiveDir == CardSwiperDirection.top) {
                 _knownCount++;
-                // Cepte! toast — 1+ tekrar sonrası bilindi
-                if (updated.isInPocket) {
-                  _showPocketToast();
+                // Toast: bildiklerime alındı veya cepte geçti
+                if (updated.repetitions == 1 || updated.isInPocket) {
+                  _showAnswerToast(updated);
                 }
               } else {
                 _unknownCount++;
@@ -316,6 +352,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                 key: ValueKey(_cards[index].id),
                 card: _cards[index],
                 srService: _srService,
+                onRate: index == _currentIndex ? _rateAndSwipe : null,
               ),
               // Glow overlay
               if (glowColor != null && intensity > 0.04)
@@ -398,11 +435,11 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
               color: AppTheme.textMuted.withValues(alpha: 0.40)),
           _HintChip(
               icon: Icons.arrow_downward_rounded,
-              label: 'Bilmedim',
+              label: 'Tekrar',
               color: AppTheme.error.withValues(alpha: 0.30)),
           _HintChip(
               icon: Icons.arrow_upward_rounded,
-              label: 'Bildim',
+              label: 'İyi',
               color: AppTheme.success.withValues(alpha: 0.30)),
           _HintChip(
               icon: Icons.arrow_forward_rounded,
@@ -463,8 +500,9 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
 class _FlashCard extends StatefulWidget {
   final Flashcard card;
   final SpacedRepetitionService srService;
+  final void Function(int quality)? onRate;
 
-  const _FlashCard({super.key, required this.card, required this.srService});
+  const _FlashCard({super.key, required this.card, required this.srService, this.onRate});
 
   @override
   State<_FlashCard> createState() => _FlashCardState();
@@ -480,6 +518,10 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
 
   bool _showAnswer = false;
   String _nextReviewLabel = '';
+
+  final _aiService = AIService();
+  String? _mnemonic;
+  bool _mnemonicLoading = false;
 
   @override
   void initState() {
@@ -516,6 +558,21 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
     _flipCtrl.dispose();
     _enterCtrl.dispose();
     super.dispose();
+  }
+
+  Future<void> _generateMnemonic() async {
+    if (_mnemonicLoading) return;
+    setState(() => _mnemonicLoading = true);
+    final result = await _aiService.getMnemonic(
+      widget.card.question,
+      widget.card.answer,
+    );
+    if (mounted) {
+      setState(() {
+        _mnemonic = result;
+        _mnemonicLoading = false;
+      });
+    }
   }
 
   Future<void> _loadNextReview() async {
@@ -653,8 +710,28 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
                   fontWeight: FontWeight.w600,
                   height: 1.55)),
           const Spacer(),
+          // AI Mnemonic bölümü
+          if (_mnemonicLoading)
+            const _ThinkingIndicator()
+          else if (_mnemonic != null)
+            _MnemonicBox(text: _mnemonic!)
+          else
+            _MnemonicButton(onTap: _generateMnemonic),
+          const SizedBox(height: 12),
+          if (widget.onRate != null) ...[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                _RatingButton(label: '❌ Tekrar', color: const Color(0xFFFF453A), onTap: () => widget.onRate!(1)),
+                _RatingButton(label: '😓 Zor',    color: const Color(0xFFFF9F0A), onTap: () => widget.onRate!(2)),
+                _RatingButton(label: '✓ İyi',    color: const Color(0xFF30D158), onTap: () => widget.onRate!(3)),
+                _RatingButton(label: '⭐ Kolay',  color: const Color(0xFF0A84FF), onTap: () => widget.onRate!(4)),
+              ],
+            ),
+            const SizedBox(height: 8),
+          ],
           const Center(
-            child: Text('Swipe yukarı: Bildim  ·  Aşağı: Bilmedim',
+            child: Text('↑ İyi  ·  ↓ Tekrar  ·  ← Geri Al',
                 style: TextStyle(color: AppTheme.textMuted, fontSize: 11)),
           ),
         ],
@@ -814,5 +891,175 @@ class _ModeToggle extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class _RatingButton extends StatelessWidget {
+  final String label;
+  final Color color;
+  final VoidCallback onTap;
+
+  const _RatingButton({required this.label, required this.color, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+        decoration: BoxDecoration(
+          color: color.withValues(alpha: 0.15),
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: color.withValues(alpha: 0.50), width: 1.5),
+          boxShadow: [
+            BoxShadow(color: color.withValues(alpha: 0.25), blurRadius: 10, spreadRadius: 1),
+          ],
+        ),
+        child: Text(
+          label,
+          style: TextStyle(
+            color: color,
+            fontSize: 13,
+            fontWeight: FontWeight.w800,
+            letterSpacing: 0.3,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ── AI Mnemonic Sub-widgets ────────────────────────────────────────────────
+
+class _MnemonicButton extends StatelessWidget {
+  final VoidCallback onTap;
+  const _MnemonicButton({required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              AppTheme.neonPurple.withValues(alpha: 0.15),
+              AppTheme.neonPurple.withValues(alpha: 0.05),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(
+              color: AppTheme.neonPurple.withValues(alpha: 0.40), width: 1.2),
+        ),
+        child: const Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('🧠', style: TextStyle(fontSize: 16)),
+            SizedBox(width: 8),
+            Text(
+              'AI Kodlama Üret',
+              style: TextStyle(
+                color: AppTheme.neonPurple,
+                fontSize: 13,
+                fontWeight: FontWeight.w700,
+                letterSpacing: 0.3,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ThinkingIndicator extends StatelessWidget {
+  const _ThinkingIndicator();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(vertical: 10),
+      decoration: BoxDecoration(
+        color: AppTheme.neonPurple.withValues(alpha: 0.08),
+        borderRadius: BorderRadius.circular(14),
+        border:
+            Border.all(color: AppTheme.neonPurple.withValues(alpha: 0.25)),
+      ),
+      child: const Text(
+        '🧠 düşünüyor...',
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          color: AppTheme.neonPurple,
+          fontSize: 13,
+          fontStyle: FontStyle.italic,
+        ),
+      ),
+    ).animate(onPlay: (c) => c.repeat()).shimmer(
+          duration: 1500.ms,
+          color: AppTheme.neonPurple.withValues(alpha: 0.20),
+        );
+  }
+}
+
+class _MnemonicBox extends StatelessWidget {
+  final String text;
+  const _MnemonicBox({required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            AppTheme.neonPurple.withValues(alpha: 0.12),
+            AppTheme.neonPurple.withValues(alpha: 0.05),
+          ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(
+            color: AppTheme.neonPurple.withValues(alpha: 0.35), width: 1.2),
+        boxShadow: [
+          BoxShadow(
+              color: AppTheme.neonPurple.withValues(alpha: 0.12),
+              blurRadius: 12),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(children: [
+            const Text('🧠', style: TextStyle(fontSize: 12)),
+            const SizedBox(width: 6),
+            Text(
+              'AI İPUCU',
+              style: TextStyle(
+                color: AppTheme.neonPurple.withValues(alpha: 0.80),
+                fontSize: 10,
+                fontWeight: FontWeight.w700,
+                letterSpacing: 1.0,
+              ),
+            ),
+          ]),
+          const SizedBox(height: 6),
+          Text(
+            text,
+            style: const TextStyle(
+              color: AppTheme.textPrimary,
+              fontSize: 13,
+              height: 1.5,
+            ),
+          ),
+        ],
+      ),
+    ).animate().fadeIn(duration: 400.ms).slideY(begin: 0.1, end: 0);
   }
 }

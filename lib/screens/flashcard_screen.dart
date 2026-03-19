@@ -10,7 +10,7 @@ import '../models/sm2_model.dart';
 import '../widgets/difficulty_badge_widget.dart';
 import '../models/subject_registry.dart';
 
-enum FlashcardMode { all, dueOnly, pocketOnly, newOnly, learnedOnly }
+enum FlashcardMode { all, dueOnly, pocketOnly, newOnly, learnedOnly, failedOnly }
 
 class FlashcardScreen extends StatefulWidget {
   final Topic? topicFilter;
@@ -142,6 +142,22 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       for (var i = 0; i < source.length; i++) {
         if (allData[i].isInPocket) result.add(source[i]);
       }
+    } else if (_mode == FlashcardMode.failedOnly) {
+      final all = await _srService.getAllData();
+      _cards = _allCards.where((fc) {
+        final data = all[fc.id];
+        return data != null && !data.isInPocket && data.repetitions == 0;
+      }).toList();
+      if (mounted) {
+        setState(() {
+          _currentIndex = 0;
+          _knownCount = 0;
+          _unknownCount = 0;
+          _swipeHistory.clear();
+          _loading = false;
+        });
+      }
+      return;
     } else {
       result = source;
     }
@@ -854,20 +870,22 @@ class _ModeToggle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final (label, icon, color) = switch (mode) {
-      FlashcardMode.dueOnly   => ('Bugün',  Icons.filter_alt_rounded,    AppTheme.cyan),
-      FlashcardMode.pocketOnly => ('Cep',    Icons.inventory_2_rounded,   AppTheme.success),
-      FlashcardMode.all       => ('Tümü',   Icons.all_inclusive_rounded,  AppTheme.textMuted),
-      FlashcardMode.newOnly   => ('Yeni',   Icons.auto_awesome_rounded,  AppTheme.neonPurple),
-      FlashcardMode.learnedOnly => ('Öğrenilen', Icons.school_rounded, AppTheme.neonGold),
+      FlashcardMode.dueOnly     => ('Bugün',    Icons.filter_alt_rounded,    AppTheme.cyan),
+      FlashcardMode.pocketOnly  => ('Cep',      Icons.inventory_2_rounded,   AppTheme.success),
+      FlashcardMode.all         => ('Tümü',     Icons.all_inclusive_rounded,  AppTheme.textMuted),
+      FlashcardMode.newOnly     => ('Yeni',     Icons.auto_awesome_rounded,  AppTheme.neonPurple),
+      FlashcardMode.learnedOnly => ('Öğrenilen', Icons.school_rounded,       AppTheme.neonGold),
+      FlashcardMode.failedOnly  => ('Başarısız', Icons.replay_rounded,       AppTheme.error),
     };
     return GestureDetector(
       onTap: () {
         final next = switch (mode) {
-          FlashcardMode.dueOnly    => FlashcardMode.all,
-          FlashcardMode.all        => FlashcardMode.pocketOnly,
-          FlashcardMode.pocketOnly => FlashcardMode.newOnly,
-          FlashcardMode.newOnly    => FlashcardMode.learnedOnly,
-          FlashcardMode.learnedOnly => FlashcardMode.dueOnly,
+          FlashcardMode.dueOnly     => FlashcardMode.all,
+          FlashcardMode.all         => FlashcardMode.pocketOnly,
+          FlashcardMode.pocketOnly  => FlashcardMode.newOnly,
+          FlashcardMode.newOnly     => FlashcardMode.learnedOnly,
+          FlashcardMode.learnedOnly => FlashcardMode.failedOnly,
+          FlashcardMode.failedOnly  => FlashcardMode.dueOnly,
         };
         onChanged(next);
       },

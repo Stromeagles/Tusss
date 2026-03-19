@@ -89,4 +89,55 @@ ${clinicalCase.options.where((o) => o != clinicalCase.correctAnswer).map((o) => 
 ---
 *ℹ️ AI açıklamaları için `api_config.dart` dosyasına Claude API anahtarınızı ekleyin.*''';
   }
+
+  /// Flashcard için Türkçe mnemonik (ezber kodlama) üretir.
+  Future<String> getMnemonic(String question, String answer) async {
+    if (!ApiConfig.isConfigured) {
+      return _mockMnemonic(question, answer);
+    }
+
+    final prompt = '''Sen TUS hafıza koçusun. Aşağıdaki flashcard için akılda kalıcı, kısa ve eğlenceli bir Türkçe tekerleme veya kodlama (mnemonic) üret.
+
+Soru: $question
+Cevap: $answer
+
+Sadece tekerlemeyi/kodlamayı yaz. Maksimum 2 cümle, Türkçe olsun.''';
+
+    try {
+      final response = await http
+          .post(
+            Uri.parse(ApiConfig.anthropicBaseUrl),
+            headers: {
+              'Content-Type': 'application/json',
+              'x-api-key': ApiConfig.anthropicApiKey,
+              'anthropic-version': ApiConfig.anthropicVersion,
+            },
+            body: json.encode({
+              'model': ApiConfig.claudeModel,
+              'max_tokens': 150,
+              'messages': [
+                {'role': 'user', 'content': prompt},
+              ],
+            }),
+          )
+          .timeout(const Duration(seconds: 20));
+
+      if (response.statusCode == 200) {
+        final decoded =
+            json.decode(utf8.decode(response.bodyBytes)) as Map<String, dynamic>;
+        final content = decoded['content'] as List<dynamic>;
+        if (content.isNotEmpty) {
+          return (content.first as Map<String, dynamic>)['text'] as String;
+        }
+      }
+      return '⚠️ Kodlama üretilemedi (HTTP ${response.statusCode}).';
+    } on Exception catch (e) {
+      return '⚠️ Bağlantı hatası: $e';
+    }
+  }
+
+  String _mockMnemonic(String question, String answer) {
+    return '💡 "$answer" — Bunu hatırlamak için baş harflerini bir cümleyle '
+        'ilişkilendir. API anahtarı eklendiğinde gerçek AI kodlaması üretilecek.';
+  }
 }

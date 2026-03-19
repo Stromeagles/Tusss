@@ -104,7 +104,7 @@ class SpacedRepetitionService {
     final all = await getAllData();
     int newCount      = 0;
     int failedCount   = 0; // görülmüş, repetitions == 0 (Tekrar'a düşmüş)
-    int learningCount = 0; // tam olarak 1 kez doğru, cepte değil
+    int learningCount = 0; // repetitions >= 1, cepte değil
     int pocketCount   = 0;
 
     for (final id in allIds) {
@@ -115,8 +115,8 @@ class SpacedRepetitionService {
         pocketCount++;                        // Hafıza'da
       } else if (data.repetitions == 0) {
         failedCount++;                        // görülmüş ama sıfırlanmış
-      } else if (data.repetitions == 1) {
-        learningCount++;                      // 1 kez doğru
+      } else {
+        learningCount++;                      // repetitions >= 1 (öğrenme / pekiştirme)
       }
     }
     return SrsSummary(
@@ -131,7 +131,7 @@ class SpacedRepetitionService {
 class SrsSummary {
   final int newCount;
   final int failedCount;    // Görülmüş ama repetitions == 0 (Tekrar'a düşmüş)
-  final int learningCount;  // "Bildiklerim" — tam olarak 1 kez doğru, cepte değil
+  final int learningCount;  // "Öğreniyor" — repetitions >= 1, cepte değil
   final int pocketCount;
 
   const SrsSummary({
@@ -141,5 +141,9 @@ class SrsSummary {
     required this.pocketCount,
   });
 
-  int get total => newCount + failedCount + learningCount;
+  /// Cards still needing active work (not yet mastered/in pocket).
+  int get activeCount => newCount + failedCount + learningCount;
+
+  /// Total cards across all categories.
+  int get cardCount => newCount + failedCount + learningCount + pocketCount;
 }

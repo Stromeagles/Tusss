@@ -14,7 +14,7 @@ class SpacedRepetitionService {
 
   // ── Veri yükleme ──────────────────────────────────────────────────────────
 
-  Future<Map<String, SM2CardData>> _loadAll() async {
+  Future<Map<String, SM2CardData>> getAllData() async {
     if (_cache != null) return _cache!;
     final prefs = await SharedPreferences.getInstance();
     final raw = prefs.getString(_prefsKey);
@@ -40,14 +40,14 @@ class SpacedRepetitionService {
 
   /// Bir kartın SM-2 verisini getirir; yoksa yeni kart olarak başlatır.
   Future<SM2CardData> getCardData(String cardId) async {
-    final all = await _loadAll();
+    final all = await getAllData();
     return all[cardId] ?? SM2CardData.initial(cardId);
   }
 
   /// Kullanıcı yanıtını işle ve kartı güncelle.
   /// quality: 0-5 (sağ kaydır = 4 "Bildim", sol kaydır = 1 "Bilmedim")
   Future<SM2CardData> recordAnswer(String cardId, int quality) async {
-    final all = await _loadAll();
+    final all = await getAllData();
     final current = all[cardId] ?? SM2CardData.initial(cardId);
     final updated = current.computeNext(quality);
     all[cardId] = updated;
@@ -57,7 +57,7 @@ class SpacedRepetitionService {
 
   /// Bugün tekrar edilmesi gereken kart ID'lerini döner.
   Future<List<String>> getDueCardIds() async {
-    final all = await _loadAll();
+    final all = await getAllData();
     return all.entries
         .where((e) => e.value.isDue)
         .map((e) => e.key)
@@ -67,7 +67,7 @@ class SpacedRepetitionService {
   /// Verilen kart listesinden sadece bugün zamanı gelenleri filtreler.
   /// Hiç görülmemiş kartlar da "due" sayılır.
   Future<List<String>> filterDueCards(List<String> cardIds) async {
-    final all = await _loadAll();
+    final all = await getAllData();
     return cardIds.where((id) {
       final data = all[id];
       if (data == null) return true; // yeni kart → hemen göster
@@ -79,7 +79,7 @@ class SpacedRepetitionService {
   Future<String> getNextReviewLabel(String cardId) async {
     final data = await getCardData(cardId);
     if (data.repetitions == 0) return 'Yeni kart';
-    if (data.isInPocket) return '📦 Cepte! (3 gün sonra)';
+    if (data.isInPocket) return '🧠 Hafıza! (3 gün sonra)';
     final diff = data.nextReviewDate
         .difference(DateTime.now())
         .inDays;
@@ -101,39 +101,45 @@ class SpacedRepetitionService {
 
   /// New/Due/Pocket sayılarını döner — home screen için
   Future<SrsSummary> getSummary(List<String> allIds) async {
-    final all = await _loadAll();
-    int newCount = 0;
-    int learningCount = 0; // repetitions == 1 (1 kez doğru, henüz cepte değil)
-    int pocketCount = 0;
+    final all = await getAllData();
+    int newCount      = 0;
+    int failedCount   = 0; // görülmüş, repetitions == 0 (Tekrar'a düşmüş)
+    int learningCount = 0; // tam olarak 1 kez doğru, cepte değil
+    int pocketCount   = 0;
 
     for (final id in allIds) {
       final data = all[id];
       if (data == null) {
-        newCount++; // hiç görülmemiş
+        newCount++;                           // hiç görülmemiş
       } else if (data.isInPocket) {
-        pocketCount++;
+        pocketCount++;                        // Hafıza'da
+      } else if (data.repetitions == 0) {
+        failedCount++;                        // görülmüş ama sıfırlanmış
       } else if (data.repetitions == 1) {
-        learningCount++; // 1 kez bildim → bildiklerim klasörü
+        learningCount++;                      // 1 kez doğru
       }
     }
     return SrsSummary(
-      newCount: newCount,
+      newCount:      newCount,
+      failedCount:   failedCount,
       learningCount: learningCount,
-      pocketCount: pocketCount,
+      pocketCount:   pocketCount,
     );
   }
 }
 
 class SrsSummary {
   final int newCount;
-  final int learningCount; // "Bildiklerim" — 1 kez doğru, cepte değil
+  final int failedCount;    // Görülmüş ama repetitions == 0 (Tekrar'a düşmüş)
+  final int learningCount;  // "Bildiklerim" — tam olarak 1 kez doğru, cepte değil
   final int pocketCount;
 
   const SrsSummary({
     required this.newCount,
+    required this.failedCount,
     required this.learningCount,
     required this.pocketCount,
   });
 
-  int get total => newCount + learningCount;
+  int get total => newCount + failedCount + learningCount;
 }

@@ -17,6 +17,7 @@ class FlashcardScreen extends StatefulWidget {
   final String? subjectId;
   final List<String>? subjectIds; // Çoklu branş filtresi (Günlük Hedef için)
   final FlashcardMode initialMode;
+  final int? dailyGoal;
 
   const FlashcardScreen({
     super.key,
@@ -24,6 +25,7 @@ class FlashcardScreen extends StatefulWidget {
     this.subjectId,
     this.subjectIds,
     this.initialMode = FlashcardMode.dueOnly,
+    this.dailyGoal,
   });
 
   @override
@@ -137,6 +139,10 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       // Yeni: Hiç görülmemiş kartlar
       for (var i = 0; i < source.length; i++) {
         if (!allMap.containsKey(source[i].id)) result.add(source[i]);
+      }
+      result.shuffle(); // Her seans farklı sıra
+      if (widget.dailyGoal != null && widget.dailyGoal! > 0 && result.length > widget.dailyGoal!) {
+        result = result.take(widget.dailyGoal!).toList();
       }
     } else if (_mode == FlashcardMode.pocketOnly) {
       for (var i = 0; i < source.length; i++) {

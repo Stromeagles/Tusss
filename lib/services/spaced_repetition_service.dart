@@ -100,7 +100,7 @@ class SpacedRepetitionService {
   }
 
   /// New/Due/Pocket sayılarını döner — home screen için
-  Future<SrsSummary> getSummary(List<String> allIds) async {
+  Future<SrsSummary> getSummary(List<String> allIds, {int? dailyGoal}) async {
     final all = await getAllData();
     int newCount      = 0;
     int failedCount   = 0; // görülmüş, repetitions == 0 (Tekrar'a düşmüş)
@@ -119,6 +119,7 @@ class SpacedRepetitionService {
         learningCount++;                      // repetitions >= 1 (öğrenme / pekiştirme)
       }
     }
+    if (dailyGoal != null && dailyGoal > 0 && newCount > dailyGoal) newCount = dailyGoal;
     return SrsSummary(
       newCount:      newCount,
       failedCount:   failedCount,

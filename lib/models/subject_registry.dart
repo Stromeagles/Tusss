@@ -103,6 +103,7 @@ class SubjectRegistry {
         'assets/data/pathology_batch5B.json', // Solunum + Hepatobilier + Üriner + İmmün 50 kart
         'assets/data/pathology_batch5C.json', // Meme + Deri + Kadın Genital Ek Kartlar 50 kart
         'assets/data/pathology_batch5D.json', // Hemodinamik + KV + İnflamasyon + Hemopoetik 50 kart
+        'assets/data/pathology_batch5E.json', // Karma Yüksek Verimli - 500. Tamamlayıcı 50 kart
       ],
     ),
   ];

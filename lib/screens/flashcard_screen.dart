@@ -1,4 +1,6 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_card_swiper/flutter_card_swiper.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../theme/app_theme.dart';
@@ -554,10 +556,19 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
   bool _showAnswer = false;
   String _nextReviewLabel = '';
   bool _isBookmarked = false;
+  int? _lastQuality; // 1 = Bilemedim, 2 = Bildim (öğrenildi)
 
   final _aiService = AIService();
   String? _mnemonic;
   bool _mnemonicLoading = false;
+
+  // Hangi cloze (buzlu) alanların açıldığı bilgisini tutar
+  final Set<int> _revealedClozes = {};
+
+  // Blur: sadece [[]] içeren VE daha önce "Bildim" işaretlenmiş kartlarda aktif
+  bool get _shouldBlur =>
+      _lastQuality == 2 &&
+      (widget.card.question.contains('[[') || widget.card.answer.contains('[['));
 
   @override
   void initState() {
@@ -619,7 +630,10 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
 
   Future<void> _loadBookmarkState() async {
     final data = await widget.srService.getCardData(widget.card.id);
-    if (mounted) setState(() => _isBookmarked = data.isBookmarked);
+    if (mounted) setState(() {
+      _isBookmarked = data.isBookmarked;
+      _lastQuality = data.lastQuality;
+    });
   }
 
   Future<void> _toggleBookmark() async {
@@ -714,12 +728,17 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
                   fontWeight: FontWeight.w700,
                   letterSpacing: 2)),
           const SizedBox(height: 10),
-          Text(widget.card.question,
-              style: const TextStyle(
-                  color: AppTheme.textPrimary,
-                  fontSize: 17,
-                  fontWeight: FontWeight.w600,
-                  height: 1.55)),
+          _ClozeText(
+            text: widget.card.question,
+            shouldBlur: false, // Soruda genelde buzlama istemeyiz ama altyapı hazır
+            revealedIndices: _revealedClozes,
+            onReveal: (idx) => setState(() => _revealedClozes.add(idx)),
+            style: const TextStyle(
+                color: AppTheme.textPrimary,
+                fontSize: 17,
+                fontWeight: FontWeight.w600,
+                height: 1.55),
+          ),
           const Spacer(),
           const Center(
             child: Text('Cevabı görmek için dokun',
@@ -782,12 +801,17 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
             ],
           ),
           const Spacer(),
-          Text(widget.card.answer,
-              style: const TextStyle(
-                  color: AppTheme.textPrimary,
-                  fontSize: 17,
-                  fontWeight: FontWeight.w600,
-                  height: 1.55)),
+          _ClozeText(
+            text: widget.card.answer,
+            shouldBlur: _shouldBlur,
+            revealedIndices: _revealedClozes,
+            onReveal: (idx) => setState(() => _revealedClozes.add(idx)),
+            style: const TextStyle(
+                color: AppTheme.textPrimary,
+                fontSize: 17,
+                fontWeight: FontWeight.w600,
+                height: 1.55),
+          ),
           const Spacer(),
           // AI Mnemonic bölümü
           if (_mnemonicLoading)
@@ -803,13 +827,19 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
                 Expanded(child: _RatingButton(
                   label: '❌  Bilemedim',
                   color: const Color(0xFFFF453A),
-                  onTap: () => widget.onRate!(1),
+                  onTap: () {
+                    setState(() => _lastQuality = 1);
+                    widget.onRate!(1);
+                  },
                 )),
                 const SizedBox(width: 12),
                 Expanded(child: _RatingButton(
                   label: '✅  Bildim',
                   color: const Color(0xFF30D158),
-                  onTap: () => widget.onRate!(2),
+                  onTap: () {
+                    setState(() => _lastQuality = 2);
+                    widget.onRate!(2);
+                  },
                 )),
               ],
             ),
@@ -1146,5 +1176,99 @@ class _MnemonicBox extends StatelessWidget {
         ],
       ),
     ).animate().fadeIn(duration: 400.ms).slideY(begin: 0.1, end: 0);
+  }
+}
+
+// ── Cloze Text (Buzlanmış Metin) ──────────────────────────────────────────
+
+class _ClozeText extends StatelessWidget {
+  final String text;
+  final bool shouldBlur;
+  final Set<int> revealedIndices;
+  final Function(int) onReveal;
+  final TextStyle style;
+
+  const _ClozeText({
+    required this.text,
+    required this.shouldBlur,
+    required this.revealedIndices,
+    required this.onReveal,
+    required this.style,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    if (!text.contains('[[')) {
+      return Text(text, style: style);
+    }
+
+    final List<InlineSpan> spans = [];
+    final regExp = RegExp(r'\[\[(.*?)\]\]');
+    int start = 0;
+    int index = 0;
+
+    for (final match in regExp.allMatches(text)) {
+      if (match.start > start) {
+        spans.add(TextSpan(text: text.substring(start, match.start)));
+      }
+
+      final content = match.group(1) ?? '';
+      final currentIdx = index;
+      final isRevealed = revealedIndices.contains(currentIdx);
+
+      spans.add(WidgetSpan(
+        alignment: PlaceholderAlignment.middle,
+        child: GestureDetector(
+          onTap: () {
+            if (shouldBlur && !isRevealed) {
+              onReveal(currentIdx);
+              HapticFeedback.lightImpact();
+            }
+          },
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 300),
+            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+            decoration: BoxDecoration(
+              color: shouldBlur && !isRevealed
+                  ? AppTheme.textMuted.withOpacity(0.15)
+                  : Colors.transparent,
+              borderRadius: BorderRadius.circular(6),
+              border: Border.all(
+                color: shouldBlur && !isRevealed
+                    ? AppTheme.textMuted.withOpacity(0.30)
+                    : Colors.transparent,
+                width: 0.5,
+              ),
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(4),
+              child: Stack(
+                children: [
+                   Text(content, style: style),
+                  if (shouldBlur && !isRevealed)
+                    Positioned.fill(
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+                        child: Container(color: Colors.transparent),
+                      ),
+                    ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ));
+
+      start = match.end;
+      index++;
+    }
+
+    if (start < text.length) {
+      spans.add(TextSpan(text: text.substring(start)));
+    }
+
+    return RichText(
+      text: TextSpan(style: style, children: spans),
+    );
   }
 }

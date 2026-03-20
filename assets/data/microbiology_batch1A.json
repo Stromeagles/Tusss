@@ -5,7 +5,7 @@
     {
       "id": "micro_b1_001",
       "question": "S. aureus'un protein A'sı, IgG'nin hangi kısmına bağlanarak fagositozu engeller?",
-      "answer": "Fc kısmına bağlanır.",
+      "answer": "[[Fc kısmına]] bağlanır.",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "S. aureus"],
       "ai_coding": "🤖 Kodlama: Prote-A-İN. Fc'ye bağlanır, fagositozu 'A'skıya alır!"
@@ -13,7 +13,7 @@
     {
       "id": "micro_b1_002",
       "question": "S. aureus'un eksfoliatif toksini hangi klinik tabloya yol açar?",
-      "answer": "Haşlanmış Deri Sendromu (Ritter Hastalığı)",
+      "answer": "[[Haşlanmış Deri Sendromu]] ([[Ritter Hastalığı]])",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "S. aureus"],
       "ai_coding": "🤖 Kodlama: Eks-fol-iatif = Fol-ye gibi deriyi soyar!"
@@ -21,7 +21,7 @@
     {
       "id": "micro_b1_003",
       "question": "Toksik Şok Sendromu Toksini-1 (TSST-1) hangi mekanizmayla şoka yol açar?",
-      "answer": "Süperantijen olarak MHC-II ve TCR (V-beta) arasına bağlanır; sitokin fırtınası yapar.",
+      "answer": "[[Süperantijen]] olarak [[MHC-II]] ve TCR (V-beta) arasına bağlanır; [[sitokin fırtınası]] yapar.",
       "difficulty": "Zor",
       "tags": ["Bakteriyoloji", "Toksinler"],
       "ai_coding": "🤖 Kodlama: TSS-T. T-hücrelerini 'Süper' (kontrolsüz) uyarır."
@@ -29,7 +29,7 @@
     {
       "id": "micro_b1_004",
       "question": "S. aureus'un Panton-Valentine Lökosidini (PVL) hangi durumlarda daha sıktır?",
-      "answer": "Toplum kökenli MRSA (CA-MRSA) enfeksiyonlarında.",
+      "answer": "Toplum kökenli [[MRSA]] ([[CA-MRSA]]) enfeksiyonlarında.",
       "difficulty": "Zor",
       "tags": ["Bakteriyoloji", "MRSA"],
       "ai_coding": "🤖 Kodlama: PVL = P-nömö-V-askü-L (Ağır Nekrotizan Pnömoni ile ilişkili)."
@@ -37,7 +37,7 @@
     {
       "id": "micro_b1_005",
       "question": "Koagülaz negatif stafilokoklar (KNS) arasında 'Novobiyosin'e dirençli olan hangisidir?",
-      "answer": "S. saprophyticus",
+      "answer": "[[S. saprophyticus]]",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "KNS"],
       "ai_coding": "🤖 Kodlama: SA-prophyticus = SA-kın dirençli. (Genç kadınlarda sistit yapar)."
@@ -45,7 +45,7 @@
     {
       "id": "micro_b1_006",
       "question": "S. pyogenes'in (A grubu) hangi proteini fagositozu engeller ve moleküler taklit yoluyla ARA'ya yol açar?",
-      "answer": "M Proteini",
+      "answer": "[[M Proteini]]",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "S. pyogenes"],
       "ai_coding": "🤖 Kodlama: M-Proteini = M-iyokard (Kalp) ve M-oleküler taklit."
@@ -53,7 +53,7 @@
     {
       "id": "micro_b1_007",
       "question": "S. pyogenes enfeksiyonu sonrası gelişen Post-streptokokal Glomerulonefrit (PSGN) hem deri hem boğaz enfeksiyonu sonrası görülebilir mi?",
-      "answer": "Evet, görülebilir. (ARA sadece boğaz sonrası görülür!)",
+      "answer": "Evet, görülebilir. ([[ARA]] sadece boğaz sonrası görülür!)",
       "difficulty": "Zor",
       "tags": ["Bakteriyoloji", "PSGN"],
       "ai_coding": "🤖 Kodlama: PSGN = P-as-pas (Hem boğazı hem deriyi süpürür)."
@@ -61,7 +61,7 @@
     {
       "id": "micro_b1_008",
       "question": "S. agalactiae (B grubu) tanısında kullanılan ve S. aureus ile birlikte yapıldığında hemolizi artıran test?",
-      "answer": "CAMP Testi",
+      "answer": "[[CAMP Testi]]",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "S. agalactiae"],
       "ai_coding": "🤖 Kodlama: B grubu = B-ebek (CAMP kurmaya gider)."
@@ -69,7 +69,7 @@
     {
       "id": "micro_b1_009",
       "question": "S. pneumoniae'nin ana virülans faktörü nedir?",
-      "answer": "Kapsül (Polisakkarit yapıdadır)",
+      "answer": "[[Kapsül]] (Polisakkarit yapıdadır)",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Pnömokok"],
       "ai_coding": "🤖 Kodlama: P-nömokok = P-olisakkarit Kapsül."
@@ -77,7 +77,7 @@
     {
       "id": "micro_b1_010",
       "question": "Optochin direncine ve Safra'da erimeme özelliğine sahip Alfa-hemolitik streptokoklar?",
-      "answer": "Viridans Streptokoklar",
+      "answer": "[[Viridans Streptokoklar]]",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Viridans"],
       "ai_coding": "🤖 Kodlama: Viri-D-ans = Dirençli (Optokine)."
@@ -85,7 +85,7 @@
     {
       "id": "micro_b1_011",
       "question": "Enterokoklarda yüksek düzey aminoglikozid direnci (HLAR) hangi mekanizmayla gelişir?",
-      "answer": "Aminoglikozid modifiye edici enzimler aracılığıyla.",
+      "answer": "[[Aminoglikozid modifiye edici enzimler]] aracılığıyla.",
       "difficulty": "Zor",
       "tags": ["Bakteriyoloji", "Enterokok"],
       "ai_coding": "🤖 Kodlama: Enterokok = En-tero (Zor ölen, inatçı)."
@@ -93,7 +93,7 @@
     {
       "id": "micro_b1_012",
       "question": "C. diphtheriae'nin Loeffler besiyerinde yaptığı boyanma özelliği?",
-      "answer": "Metakromatik cisimcikler (Ernst-Babes granülleri)",
+      "answer": "[[Metakromatik cisimcikler]] ([[Ernst-Babes granülleri]])",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "Difteri"],
       "ai_coding": "🤖 Kodlama: Difteri = D-izideki (Ernst-Babes) boncuklar."
@@ -101,7 +101,7 @@
     {
       "id": "micro_b1_013",
       "question": "B. anthracis'in (Şarbon) kapsül yapısı nasıldır?",
-      "answer": "Polipeptit (D-glutamik asit) yapıdadır. (İstisna!)",
+      "answer": "[[Polipeptit]] ([[D-glutamik asit]]) yapıdadır. (İstisna!)",
       "difficulty": "Zor",
       "tags": ["Bakteriyoloji", "Şarbon"],
       "ai_coding": "🤖 Kodlama: Şar-B-on = B-aşka-yapıda (Protein kapsül)."
@@ -109,7 +109,7 @@
     {
       "id": "micro_b1_014",
       "question": "Bacillus cereus'un ısıya dirençli toksini hangi tabloyu yapar?",
-      "answer": "Emetik (Kusma) tablo. (Pirinç tüketimi sonrası)",
+      "answer": "[[Emetik (Kusma) tablo]]. (Pirinç tüketimi sonrası)",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "B. cereus"],
       "ai_coding": "🤖 Kodlama: C-ereus = C-in pirinci. Kusma ile başlar."
@@ -117,7 +117,7 @@
     {
       "id": "micro_b1_015",
       "question": "Listeria monocytogenes monositoz yapma özelliğini hangi faktörle sağlar?",
-      "answer": "Lipid A benzeri madde (Listeria yüzeyinde bulunur).",
+      "answer": "[[Lipid A benzeri madde]] (Listeria yüzeyinde bulunur).",
       "difficulty": "Zor",
       "tags": ["Bakteriyoloji", "Listeria"],
       "ai_coding": "🤖 Kodlama: L-is-teria = L-ipit içeren Gram +."
@@ -125,7 +125,7 @@
     {
       "id": "micro_b1_016",
       "question": "Erysipelothrix rhusiopathiae (Erizipeloid) etkeninin karakteristik özelliği?",
-      "answer": "H2S (Hidrojen Sülfür) üretimi. (TSI besiyerinde siyahlaşma)",
+      "answer": "[[H2S (Hidrojen Sülfür)]] üretimi. (TSI besiyerinde siyahlaşma)",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "Erizipeloid"],
       "ai_coding": "🤖 Kodlama: E-rys-i-pelo-th-S-ix = S-ülfür (Siyah)."
@@ -133,7 +133,7 @@
     {
       "id": "micro_b1_017",
       "question": "Nocardia'nın Actinomyces'ten farkı nedir?",
-      "answer": "Aerop olması ve zayıf aside dirençli (Modifiye ARB +) boyanması.",
+      "answer": "[[Aerop]] olması ve [[zayıf aside dirençli]] (Modifiye ARB +) boyanması.",
       "difficulty": "Zor",
       "tags": ["Bakteriyoloji", "Nocardia"],
       "ai_coding": "🤖 Kodlama: NO-cardia = NO-oksijensiz (Yani Aerop)."
@@ -141,7 +141,7 @@
     {
       "id": "micro_b1_018",
       "question": "C. tetani toksini (Tetanospazmin) hangi nörotransmiterlerin salınımını engeller?",
-      "answer": "GABA ve Glisin (İnhibitör nörotransmiterler)",
+      "answer": "[[GABA]] ve [[Glisin]] (İnhibitör nörotransmiterler)",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "Tetanos"],
       "ai_coding": "🤖 Kodlama: G-G. Gülüp Geç (Rizus sardonikus) ama gevşeyeme!"
@@ -149,7 +149,7 @@
     {
       "id": "micro_b1_019",
       "question": "C. botulinum toksini hangi mekanizmayla paralizi yapar?",
-      "answer": "Asetilkolin (Ach) salınımını engeller.",
+      "answer": "[[Asetilkolin (Ach)]] salınımını engeller.",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Botulismus"],
       "ai_coding": "🤖 Kodlama: B-otulinum = B-oşaltamaz (Asetilkolini)."
@@ -157,7 +157,7 @@
     {
       "id": "micro_b1_020",
       "question": "C. perfringens'in gazlı kangrene yol açan ana toksini hangisidir?",
-      "answer": "Alfa-toksin (Lesitinaz)",
+      "answer": "[[Alfa-toksin]] ([[Lesitinaz]])",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "C. perfringens"],
       "ai_coding": "🤖 Kodlama: P-erfringens = P-arçalar (Hücre zarı lesitinini)."
@@ -165,7 +165,7 @@
     {
       "id": "micro_b1_021",
       "question": "Moraxella catarrhalis'in en önemli özelliği nedir?",
-      "answer": "Beta-laktamaz üretimi (Dirençli olduğu için penisilin verilmez).",
+      "answer": "[[Beta-laktamaz üretimi]] (Dirençli olduğu için [[penisilin]] verilmez).",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "Moraxella"],
       "ai_coding": "🤖 Kodlama: M-oraxella = M-utlaka-dirençli."
@@ -173,7 +173,7 @@
     {
       "id": "micro_b1_022",
       "question": "N. meningitidis'in hangi serogrubuna karşı kapsül aşısı (polisakkarit) yoktur?",
-      "answer": "SEROGRUP B (Siyalik asit yapısındadır, immunitet zayıftır).",
+      "answer": "[[SEROGRUP B]] (Siyalik asit yapısındadır, immunitet zayıftır).",
       "difficulty": "Zor",
       "tags": ["Bakteriyoloji", "Meningokok"],
       "ai_coding": "🤖 Kodlama: B = B-ilinmeyen / B-ulunmayan (Aşı)."
@@ -181,7 +181,7 @@
     {
       "id": "micro_b1_023",
       "question": "Gonokok enfeksiyonunda 'Opa' proteini ne işe yarar?",
-      "answer": "Opak görünüm verir ve bakterinin hücreye yapışmasını sağlar.",
+      "answer": "Opak görünüm verir ve bakterinin [[hücreye yapışmasını]] sağlar.",
       "difficulty": "Zor",
       "tags": ["Bakteriyoloji", "Neisseria"],
       "ai_coding": "🤖 Kodlama: Opa = O-par (Yapışır)."
@@ -189,7 +189,7 @@
     {
       "id": "micro_b1_024",
       "question": "H. influenzae'nın en sık menenjit yapan ve aşısı bulunan serotipi?",
-      "answer": "Tip b (Hib).",
+      "answer": "[[Tip b (Hib)]].",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Hae. influenzae"],
       "ai_coding": "🤖 Kodlama: b = b-ebek / b-as-b-ayağı tehlikeli."
@@ -197,7 +197,7 @@
     {
       "id": "micro_b1_025",
       "question": "Bordetella pertussis (Boğmaca) toksini hangi enzim üzerinden etki eder?",
-      "answer": "Adenilat Siklaz (cAMP artışına neden olur).",
+      "answer": "[[Adenilat Siklaz]] ([[cAMP]] artışına neden olur).",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "Boğmaca"],
       "ai_coding": "🤖 Kodlama: B-oğmaca = B-ol cAMP!"
@@ -205,7 +205,7 @@
     {
       "id": "micro_b1_026",
       "question": "Legionella pneumophila tanısında kullanılan hızlı antijen testi nereden bakılır?",
-      "answer": "İDRAR (Üriner Antijen Testi).",
+      "answer": "[[İDRAR (Üriner Antijen Testi)]].",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Legionella"],
       "ai_coding": "🤖 Kodlama: Le-G-ionella = Ge-çen (İdrardan)."
@@ -213,7 +213,7 @@
     {
       "id": "micro_b1_027",
       "question": "Francisella tularensis'in lab ortamında üremesi için ne gereklidir?",
-      "answer": "SİSTEİN (Sisteinli besiyeri - BCYE).",
+      "answer": "[[SİSTEİN]] (Sisteinli besiyeri - [[BCYE]]).",
       "difficulty": "Zor",
       "tags": ["Bakteriyoloji", "Tularemi"],
       "ai_coding": "🤖 Kodlama: T-u-L-a-r-e-mi = L-Cysteine (Sistein)."
@@ -221,7 +221,7 @@
     {
       "id": "micro_b1_028",
       "question": "Brucella melitensis (En virülan tip) en çok hangi hayvandan bulaşır?",
-      "answer": "Koyun ve Keçi.",
+      "answer": "[[Koyun]] ve [[Keçi]].",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Zoonoz"],
       "ai_coding": "🤖 Kodlama: M-elitensis = M-e-e-e (Keçi sesi)."
@@ -229,7 +229,7 @@
     {
       "id": "micro_b1_029",
       "question": "Yersinia pestis (Veba) bulaşında rol oynayan ara konak?",
-      "answer": "Pire (Xenopsylla cheopis).",
+      "answer": "[[Pire]] ([[Xenopsylla cheopis]]).",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Veba"],
       "ai_coding": "🤖 Kodlama: P-estis = P-ire."
@@ -237,7 +237,7 @@
     {
       "id": "micro_b1_030",
       "question": "Pasteurella multocida enfeksiyonu genellikle nasıl bulaşır?",
-      "answer": "Kedi ve Köpek ısırması/tırmalaması.",
+      "answer": "[[Kedi ve Köpek]] ısırması/tırmalaması.",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Pasteurella"],
       "ai_coding": "🤖 Kodlama: P-as-te-u-re-ll-a = P-et (Evcil hayvan)."
@@ -245,7 +245,7 @@
     {
       "id": "micro_b1_031",
       "question": "E. coli'nin hangi tipi Shiga Toksini üreterek HUS'a (Hemolitik Üremik Sendrom) yol açar?",
-      "answer": "EHEC (Enterohemorajik E. coli - O157:H7).",
+      "answer": "[[EHEC]] (Enterohemorajik E. coli - [[O157:H7]]).",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "E. coli"],
       "ai_coding": "🤖 Kodlama: E-H-EC = H-emorajik ve H-US."
@@ -253,7 +253,7 @@
     {
       "id": "micro_b1_032",
       "question": "E. coli'nin 'Turist Diyaresi'ne yol açan ve cAMP/cGMP üzerinden etki eden tipi?",
-      "answer": "ETEC (Enterotoksijenik E. coli).",
+      "answer": "[[ETEC]] (Enterotoksijenik E. coli).",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "E. coli"],
       "ai_coding": "🤖 Kodlama: E-T-EC = T-urist."
@@ -261,7 +261,7 @@
     {
       "id": "micro_b1_033",
       "question": "Salmonella typhi'de taşıyıcılığın (Portörlüğün) olduğu ana organ hangisidir?",
-      "answer": "Safra Kesesi.",
+      "answer": "[[Safra Kesesi]].",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "Salmonella"],
       "ai_coding": "🤖 Kodlama: S-almonella = S-afra Kesesi."
@@ -269,7 +269,7 @@
     {
       "id": "micro_b1_034",
       "question": "Shigella türleri arasında en az virülan ve en sık görülen (Türkiye) hangisidir?",
-      "answer": "S. sonnei.",
+      "answer": "[[S. sonnei]].",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "Shigella"],
       "ai_coding": "🤖 Kodlama: S-onnei = S-on (En son/en zayıf) ama en sessiz/yaygın."
@@ -277,7 +277,7 @@
     {
       "id": "micro_b1_035",
       "question": "Klebsiella pneumoniae'nin karakteristik balgam görüntüsü?",
-      "answer": "Kuş üzümü (Vişne çürüğü) jölesi.",
+      "answer": "[[Kuş üzümü (Vişne çürüğü) jölesi]].",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Klebsiella"],
       "ai_coding": "🤖 Kodlama: K-lebsiella = K-uş üzümü."
@@ -285,7 +285,7 @@
     {
       "id": "micro_b1_036",
       "question": "Vibrio cholerae'nin TCBS besiyerindeki üreme rengi nedir?",
-      "answer": "Sarı (Sükrozu fermente ettiği için).",
+      "answer": "[[Sarı]] (Sükrozu fermente ettiği için).",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "Vibrio"],
       "ai_coding": "🤖 Kodlama: C-holera = C-itrus (Limon/Sarı) rengi."
@@ -293,7 +293,7 @@
     {
       "id": "micro_b1_037",
       "question": "Campylobacter jejuni'nin karakteristik mikroskobik görüntüsü?",
-      "answer": "Martı kanadı (veya S ya da virgül şeklinde).",
+      "answer": "[[Martı kanadı]] (veya S ya da virgül şeklinde).",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Campylobacter"],
       "ai_coding": "🤖 Kodlama: C-ampy = C-amp (Kampta martılar uçar)."
@@ -301,7 +301,7 @@
     {
       "id": "micro_b1_038",
       "question": "Helicobacter pylori tanısında kullanılan ve üreaz aktivitesine dayalı non-invaziv test?",
-      "answer": "Üre-Nefes Testi.",
+      "answer": "[[Üre-Nefes Testi]].",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "H. pylori"],
       "ai_coding": "🤖 Kodlama: H-pylori = Üreaz şampiyonu!"
@@ -309,7 +309,7 @@
     {
       "id": "micro_b1_039",
       "question": "Bacteroides fragilis'in özelliği nedir?",
-      "answer": "En sık görülen anaerop, Kapsüllüdür ve abse yapar.",
+      "answer": "En sık görülen [[anaerop]], [[Kapsüllüdür]] ve abse yapar.",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "Anaeroplar"],
       "ai_coding": "🤖 Kodlama: B-. fragilis = B-izim anaerop (Florada en çok)."
@@ -317,7 +317,7 @@
     {
       "id": "micro_b1_040",
       "question": "Actinomyces israelii'nin karakteristik lezyonlarında görülen yapılar?",
-      "answer": "Sülfür granülleri (Drusen).",
+      "answer": "[[Sülfür granülleri]] ([[Drusen]]).",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Actinomyces"],
       "ai_coding": "🤖 Kodlama: İ-sraelii = Sülfür 'S-arı'sı."
@@ -325,7 +325,7 @@
     {
       "id": "micro_b1_041",
       "question": "Mycobacterium tuberculosis tanısında ARB (Acid-Fast) boyamada hangi madde boyayı tutar?",
-      "answer": "Mikolik Asit (Hücre duvarı lipidi).",
+      "answer": "[[Mikolik Asit]] (Hücre duvarı lipidi).",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Tüberküloz"],
       "ai_coding": "🤖 Kodlama: M-yco = M-ikolik Asit."
@@ -333,7 +333,7 @@
     {
       "id": "micro_b1_042",
       "question": "M. leprae'nin lab ortamında üretilememe istisnası nedir?",
-      "answer": "Armadillo veya Fare ayak tabanında üretilebilir.",
+      "answer": "[[Armadillo]] veya [[Fare ayak tabanında]] üretilebilir.",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "Lepra"],
       "ai_coding": "🤖 Kodlama: L-epra = L-abda-yok (Canlıda var)."
@@ -341,7 +341,7 @@
     {
       "id": "micro_b1_043",
       "question": "Treponema pallidum (Sifiliz) karanlık saha mikroskopisinde nasıl görülür?",
-      "answer": "Tirbuşon şeklinde hareketli.",
+      "answer": "[[Tirbuşon şeklinde]] hareketli.",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Spiroketler"],
       "ai_coding": "🤖 Kodlama: T-reponema = T-irbuşon."
@@ -349,7 +349,7 @@
     {
       "id": "micro_b1_044",
       "question": "Leptospira enfeksiyonunun (Weil Hastalığı) klasik triadı?",
-      "answer": "Ateş, Sarılık, Böbrek yetmezliği.",
+      "answer": "[[Ateş]], [[Sarılık]], [[Böbrek yetmezliği]].",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "Leptospira"],
       "ai_coding": "🤖 Kodlama: L-epto = L-imoni (Sarı/Sarılık) hastalık."
@@ -357,7 +357,7 @@
     {
       "id": "micro_b1_045",
       "question": "Mycoplasma pneumoniae'nin en önemli ayırıcı özelliği?",
-      "answer": "Hücre Duvarı YOKTUR. (Penisilinler etkisizdir).",
+      "answer": "[[Hücre Duvarı YOKTUR]]. ([[Penisilinler]] etkisizdir).",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Mycoplasma"],
       "ai_coding": "🤖 Kodlama: My-CO-plasma = NO-hücre duvarı."
@@ -365,7 +365,7 @@
     {
       "id": "micro_b1_046",
       "question": "Chlamydia trachomatis'in enfeksiyöz (dış ortamda stabil) formu nedir?",
-      "answer": "Elementer Cisim (EB).",
+      "answer": "[[Elementer Cisim (EB)]].",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "Chlamydia"],
       "ai_coding": "🤖 Kodlama: E-B = E-njektör (Enfekte eden)."
@@ -373,7 +373,7 @@
     {
       "id": "micro_b1_047",
       "question": "Rickettsia rickettsii'nin (Kayalık Dağlar Benekli Ateşi) bulaş yolu?",
-      "answer": "Kene (Isırması ile).",
+      "answer": "[[Kene]] (Isırması ile).",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Rickettsia"],
       "ai_coding": "🤖 Kodlama: R-ickettsia = K-ene (K- harfi benziyor)."
@@ -381,7 +381,7 @@
     {
       "id": "micro_b1_048",
       "question": "Coxiella burnetii'nin (Q Ateşi) diğer Rickettsia'lardan farkı?",
-      "answer": "Döküntü YAPMAZ ve Dış ortama çok dayanıklıdır (Aerosol bulaş).",
+      "answer": "[[Döküntü YAPMAZ]] ve Dış ortama çok dayanıklıdır ([[Aerosol bulaş]]).",
       "difficulty": "Zor",
       "tags": ["Bakteriyoloji", "Q Ateşi"],
       "ai_coding": "🤖 Kodlama: Q = Q-u-i-e-t (Sessiz/Döküntüsüz)."
@@ -389,7 +389,7 @@
     {
       "id": "micro_b1_049",
       "question": "Gardnerella vaginalis'in karakteristik vajinal yayma bulgusu?",
-      "answer": "Clue Cells (İpucu Hücreleri).",
+      "answer": "[[Clue Cells (İpucu Hücreleri)]].",
       "difficulty": "Kolay",
       "tags": ["Bakteriyoloji", "Gardnerella"],
       "ai_coding": "🤖 Kodlama: G-ardnerella = İ-pu-C-u."
@@ -397,7 +397,7 @@
     {
       "id": "micro_b1_050",
       "question": "Tropheryma whipplei hangi sistemik hastalığa yol açar?",
-      "answer": "Whipple Hastalığı (Malabsorpsiyon / PAS + makrofajlar).",
+      "answer": "[[Whipple Hastalığı]] (Malabsorpsiyon / [[PAS + makrofajlar]]).",
       "difficulty": "Orta",
       "tags": ["Bakteriyoloji", "Whipple"],
       "ai_coding": "🤖 Kodlama: W-hipple = P-A-S pozitifliği."

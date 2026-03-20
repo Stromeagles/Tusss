@@ -5,7 +5,7 @@
     {
       "id": "micro_b3b_401",
       "question": "Mantar 'Dermatomisetom' (Miçetom) tablosunda en sık görülen klinik bulgu?",
-      "answer": "Deri altında ağrısız şişlik, sinüs yolları ve 'Tanecik' (Grain) drenajı.",
+      "answer": "Deri altında ağrısız şişlik, [[sinüs yolları]] ve [[Tanecik (Grain) drenajı]].",
       "difficulty": "Orta",
       "tags": ["Mikoloji", "Deri Altı Mantar"],
       "ai_coding": "🤖 Kodlama: M-içetom = T-anecik."
@@ -13,7 +13,7 @@
     {
       "id": "micro_b3b_402",
       "question": "Hangi mantar enfeksiyonu 'Ağız çevresinde' ve 'Burunda' granulomatöz lezyonlarla (Paracoccidioidomycosis) karakterizedir?",
-      "answer": "P. brasiliensis (Lutz-Splendore-Almeida hastalığı).",
+      "answer": "[[P. brasiliensis]] ([[Lutz-Splendore-Almeida hastalığı]]).",
       "difficulty": "Orta",
       "tags": ["Mikoloji", "Sistemik Mantar"],
       "ai_coding": "🤖 Kodlama: B-rasiliensis = A-ğız."
@@ -21,7 +21,7 @@
     {
       "id": "micro_b3b_403",
       "question": "Sporothrix tanısında kullanılan 'Asteroid cisimcik' nedir?",
-      "answer": "Maya hücresinin etrafında biriken eosinofilik antijen-antikor kompleksleri.",
+      "answer": "Maya hücresinin etrafında biriken [[eosinofilik antijen-antikor kompleksleri]].",
       "difficulty": "Zor",
       "tags": ["Mikoloji", "Tanı"],
       "ai_coding": "🤖 Kodlama: A-steroid = S-porothrix."
@@ -29,7 +29,7 @@
     {
       "id": "micro_b3b_404",
       "question": "Tinea Unguium (Tırnak mantarı) tedavisinde en etkili oral ajanlar?",
-      "answer": "Terbinafin ve Itrakonazol. (Uzun süreli tedavi gerekir).",
+      "answer": "[[Terbinafin]] ve [[Itrakonazol]]. (Uzun süreli tedavi gerekir).",
       "difficulty": "Kolay",
       "tags": ["Mikoloji", "Tedavi"],
       "ai_coding": "🤖 Kodlama: T-ırnak = T-erbinafin."
@@ -37,7 +37,7 @@
     {
       "id": "micro_b3b_405",
       "question": "Mantar 'Kütanöz Kandidiyazis' tanısında KOH bakısında ne görülür?",
-      "answer": "Maya hücreleri ve psödohifler.",
+      "answer": "[[Maya hücreleri]] ve [[psödohifler]].",
       "difficulty": "Kolay",
       "tags": ["Mikoloji", "Candida"],
       "ai_coding": "🤖 Kodlama: K-OH = C-andida."
@@ -45,7 +45,7 @@
     {
       "id": "micro_b3b_406",
       "question": "Hangi mantar ailesi 'Geniş' (10-15 mikron), septasız (aseptat) hifler yapar?",
-      "answer": "Zygomycetes (Mucor, Rhizopus).",
+      "answer": "[[Zygomycetes]] ([[Mucor]], [[Rhizopus]]).",
       "difficulty": "Orta",
       "tags": ["Mikoloji", "Mucor"],
       "ai_coding": "🤖 Kodlama: Z-ygomycetes = B-olmesiz."
@@ -53,7 +53,7 @@
     {
       "id": "micro_b3b_407",
       "question": "Mantar enfeksiyonlarında 'Eozinofili' görülür mü?",
-      "answer": "Normalde görülmez. (Eozinofili parazitlere hastır, istisna: ABPA).",
+      "answer": "Normalde görülmez. (Eozinofili parazitlere hastır, istisna: [[ABPA]]).",
       "difficulty": "Zor",
       "tags": ["Mikoloji", "Alerji"],
       "ai_coding": "🤖 Kodlama: E-ozinofili = P-arazit."
@@ -61,7 +61,7 @@
     {
       "id": "micro_b3b_408",
       "question": "Aspergillus için %10 KOH testinde 'Septalı hif' görmek tanı koydurur mu?",
-      "answer": "Hayır, Septalı hif yapan başka mantarlar da (örn: Penicillium) vardır, kültür gerekir.",
+      "answer": "Hayır, [[Septalı hif]] yapan başka mantarlar da (örn: [[Penicillium]]) vardır, kültür gerekir.",
       "difficulty": "Zor",
       "tags": ["Mikoloji", "Tanı"],
       "ai_coding": "🤖 Kodlama: K-ültür = K-esintan."
@@ -69,7 +69,7 @@
     {
       "id": "micro_b3b_409",
       "question": "Mikoz: Siyah Pedra ve Beyaz Pedra ayırımı?",
-      "answer": "Siyah: Saç gövdesinde sert nodül. Beyaz: Saçta yumuşak, kolay kopan nodül.",
+      "answer": "[[Siyah Pedra]]: Saç gövdesinde sert nodül. [[Beyaz Pedra]]: Saçta yumuşak, kolay kopan nodül.",
       "difficulty": "Orta",
       "tags": ["Mikoloji", "Yüzeyel Mantar"],
       "ai_coding": "🤖 Kodlama: S-iyah = S-ert."
@@ -77,7 +77,7 @@
     {
       "id": "micro_b3b_410",
       "question": "Madurella mycetomatis hangi hastalığın sık etkenidir?",
-      "answer": "Eumiçetom (Gerçek mantar miçetomu).",
+      "answer": "[[Eumiçetom]] (Gerçek mantar miçetomu).",
       "difficulty": "Zor",
       "tags": ["Mikoloji", "Deri Altı Mantar"],
       "ai_coding": "🤖 Kodlama: M-adurella = M-içetom."
@@ -85,7 +85,7 @@
     {
       "id": "micro_b3b_411",
       "question": "Piedraia hortae tanısında saç teli nasıl incelenir?",
-      "answer": "KOH ile ezerek; askus ve askosporları görmek mümkündür.",
+      "answer": "KOH ile ezerek; [[askus]] ve [[askosporları]] görmek mümkündür.",
       "difficulty": "Zor",
       "tags": ["Mikoloji", "Yüzeyel Mantar"],
       "ai_coding": "🤖 Kodlama: P-iedraia = S-aç."
@@ -93,7 +93,7 @@
     {
       "id": "micro_b3b_412",
       "question": "Mantarların 'Anamorf' ve 'Teleomorf' evreleri ne demektir?",
-      "answer": "Anamorf: Aseksüel (eşeysiz) üreme evresi. Teleomorf: Seksüel (eşeyli) üreme evresi.",
+      "answer": "[[Anamorf]]: Aseksüel (eşeysiz) üreme evresi. [[Teleomorf]]: Seksüel (eşeyli) üreme evresi.",
       "difficulty": "Zor",
       "tags": ["Mikoloji", "Genetik"],
       "ai_coding": "🤖 Kodlama: A-namorf = A-seksüel."
@@ -101,7 +101,7 @@
     {
       "id": "micro_b3b_413",
       "question": "Parasitology: Entamoeba histolytica'nın enfektif formu nedir?",
-      "answer": "4 nükleuslu olgun kist.",
+      "answer": "[[4 nükleuslu olgun kist]].",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: E. histolytica = 4 Nükleus Kisti."
@@ -109,7 +109,7 @@
     {
       "id": "micro_b3b_414",
       "question": "E. histolytica ile E. coli'yi kist aşamasında nasıl ayırırsınız?",
-      "answer": "Histolytica 4 nükleuslu, Coli 8 nükleusludur.",
+      "answer": "[[Histolytica 4 nükleuslu]], [[Coli 8 nükleusludur]].",
       "difficulty": "Orta",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: H-istolytica = H-edef (4)."
@@ -117,7 +117,7 @@
     {
       "id": "micro_b3b_415",
       "question": "Amipli Karaciğer Absesi'nde aspire edilen sıvının karakteristik görüntüsü?",
-      "answer": "Hamsi ezmesi (Anchovy sauce) şeklinde, kokusuz sıvı.",
+      "answer": "[[Hamsi ezmesi (Anchovy sauce)]] şeklinde, kokusuz sıvı.",
       "difficulty": "Orta",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: A-mipsizi = H-amsi."
@@ -125,7 +125,7 @@
     {
       "id": "micro_b3b_416",
       "question": "Serbest yaşayan amiplerden hangisi taze su (havuz vb.) kaynaklı Primer Amibik Meningoensefalit (PAM) yapar?",
-      "answer": "Naegleria fowleri.",
+      "answer": "[[Naegleria fowleri]].",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: N-aegleria = B-urun (PAM)."
@@ -133,7 +133,7 @@
     {
       "id": "micro_b3b_417",
       "question": "Acanthamoeba'nın en sık yol açtığı ve kontakt lens kullananlarda görülen tablo?",
-      "answer": "Keratit (Korneal ülser).",
+      "answer": "[[Keratit]] (Korneal ülser).",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: A-canthamoeba = A-ynen-Göz (Keratit)."
@@ -141,7 +141,7 @@
     {
       "id": "micro_b3b_418",
       "question": "Giardia lamblia enfeksiyonunda 'Steatore' (Yağlı ishal) neden görülür?",
-      "answer": "Parazitlerin bağırsak yüzeyini (villi) 'Vantuz' gibi kapatarak yağ emilimini bozmasıyla.",
+      "answer": "Parazitlerin bağırsak yüzeyini (villi) 'Vantuz' gibi kapatarak [[yağ emilimini bozmasıyla]].",
       "difficulty": "Orta",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: G-iardia = G-ıda (Yağ) hırsızı."
@@ -149,7 +149,7 @@
     {
       "id": "micro_b3b_419",
       "question": "Giardia tanısında kullanılan ve gastrointestinal örneklerin incelendiği özel yöntem?",
-      "answer": "Entero-test (İp testi).",
+      "answer": "[[Entero-test (İp testi)]].",
       "difficulty": "Orta",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: G-iardia = İ-p testi."
@@ -157,7 +157,7 @@
     {
       "id": "micro_b3b_420",
       "question": "Trichomonas vaginalis'in karakteristik vajinal akıntısı?",
-      "answer": "Köpüklü, kötü kokulu (çürük balık), yeşilimsi akıntı.",
+      "answer": "[[Köpüklü]], kötü kokulu (çürük balık), [[yeşilimsi akıntı]].",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: T-richomonas = T-ehlikeli Ye-şil akıntı."
@@ -165,7 +165,7 @@
     {
       "id": "micro_b3b_421",
       "question": "Trichomonas tanısında 'Kolposkopi'de görülen tipik bulgu?",
-      "answer": "Çilek görünümü (Strawberry cervix).",
+      "answer": "[[Çilek görünümü (Strawberry cervix)]].",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: T-richomonas = Ç-ilek."
@@ -173,7 +173,7 @@
     {
       "id": "micro_b3b_422",
       "question": "Leishmania donovani'nin neden olduğu sistemik tabloya ne denir?",
-      "answer": "Kala-azar (Viseral leishmaniasis).",
+      "answer": "[[Kala-azar]] ([[Viseral leishmaniasis]]).",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: D-onovani = D-ahiliye (Viseral)."
@@ -181,7 +181,7 @@
     {
       "id": "micro_b3b_423",
       "question": "Leishmania tropica'nın (Şark Çıbanı) bulaştırıcısı (vektör) nedir?",
-      "answer": "Phlebotomus (Tatarcık sineği).",
+      "answer": "[[Phlebotomus]] (Tatarcık sineği).",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: T-ropica = T-atarcık."
@@ -189,7 +189,7 @@
     {
       "id": "micro_b3b_424",
       "question": "Leishmania tanısında kullanılan deri testi?",
-      "answer": "Montenegro testi (Pozitifleşmesi iyileşmeyi gösterir).",
+      "answer": "[[Montenegro testi]] (Pozitifleşmesi iyileşmeyi gösterir).",
       "difficulty": "Orta",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: M-ontenegro = L-eishmania."
@@ -197,7 +197,7 @@
     {
       "id": "micro_b3b_425",
       "question": "Trypanosoma brucei (Uyku Hastalığı) vektörü?",
-      "answer": "Çeçe sineği.",
+      "answer": "[[Çeçe sineği]].",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: T-rypanosoma = Ç-eçe (Uyku)."
@@ -205,7 +205,7 @@
     {
       "id": "micro_b3b_426",
       "question": "Trypanosoma cruzi'nin (Chagas hastalığı) karakteristik deri bulgusu?",
-      "answer": "Romana belirtisi (Periorbital ödem).",
+      "answer": "[[Romana belirtisi]] (Periorbital ödem).",
       "difficulty": "Orta",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: C-ruzi = C-ilt (Gözde şişlik)."
@@ -213,7 +213,7 @@
     {
       "id": "micro_b3b_427",
       "question": "Plasmodium falciparum'un neden olduğu malarya (Sıtma) tipi?",
-      "answer": "Tersiyana malarya (En ağır ve mortal form).",
+      "answer": "[[Tersiyana malarya]] (En ağır ve mortal form).",
       "difficulty": "Orta",
       "tags": ["Parazitoloji", "Sıtma"],
       "ai_coding": "🤖 Kodlama: F-alciparum = F-atal (Ölümcül)."
@@ -221,7 +221,7 @@
     {
       "id": "micro_b3b_428",
       "question": "Sıtmada 'Schüffner noktaları' hangi türlerde görülür?",
-      "answer": "P. vivax ve P. ovale.",
+      "answer": "[[P. vivax]] ve [[P. ovale]].",
       "difficulty": "Zor",
       "tags": ["Parazitoloji", "Sıtma"],
       "ai_coding": "🤖 Kodlama: V-O-S (Vivax-Ovale-Schüffner)."
@@ -229,7 +229,7 @@
     {
       "id": "micro_b3b_429",
       "question": "P. falciparum mikroskopisinde görülen tipik gametosit görüntüsü?",
-      "answer": "Muz veya Yarım Ay şeklinde.",
+      "answer": "[[Muz]] veya [[Yarım Ay]] şeklinde.",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Sıtma"],
       "ai_coding": "🤖 Kodlama: F-alciparum = M-uz."
@@ -237,7 +237,7 @@
     {
       "id": "micro_b3b_430",
       "question": "Babesia microti tanısında eritrosit içinde görülen yapı?",
-      "answer": "Maltız Haçı (Maltese cross) görüntüsü.",
+      "answer": "[[Maltız Haçı (Maltese cross)]] görüntüsü.",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: B-abesia = B-ileşik (Maltız) haç."
@@ -245,7 +245,7 @@
     {
       "id": "micro_b3b_431",
       "question": "Toxoplasma gondii tanısında konjenital enfeksiyon riski için neye bakılır?",
-      "answer": "IgM, IgG ve IgG Avidite testi.",
+      "answer": "[[IgM]], [[IgG]] ve [[IgG Avidite testi]].",
       "difficulty": "Orta",
       "tags": ["Parazitoloji", "Toxoplasma"],
       "ai_coding": "🤖 Kodlama: T-oxoplasma = A-vidite."
@@ -253,7 +253,7 @@
     {
       "id": "micro_b3b_432",
       "question": "Cryptosporidium parvum ishallerinde asit-rezistan boyama ile ne görülür?",
-      "answer": "Kırmızı boyanan 'Ookistler'.",
+      "answer": "Kırmızı boyanan [[Ookistler]].",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: C-ryp-to = K-ırmızı ookist."
@@ -261,7 +261,7 @@
     {
       "id": "micro_b3b_433",
       "question": "Balantidium coli'nin diğer protozoonlardan farkı?",
-      "answer": "İnsan için patojen olan tek Siliyat'tır (Kirpikli).",
+      "answer": "İnsan için patojen olan tek [[Siliyat]]'tır (Kirpikli).",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Ciliata"],
       "ai_coding": "🤖 Kodlama: B-alantidium = S-iliyat (Kirpikli)."
@@ -269,7 +269,7 @@
     {
       "id": "micro_b3b_434",
       "question": "Eozinofili ve IgE yüksekliği ile giden parazit enfeksiyonları grubu?",
-      "answer": "Helmintler (Solucanlar).",
+      "answer": "[[Helmintler]] (Solucanlar).",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Helmint"],
       "ai_coding": "🤖 Kodlama: H-elmint = E-ozinofili."
@@ -277,7 +277,7 @@
     {
       "id": "micro_b3b_435",
       "question": "Hangi parazit demir eksikliği anemisine yol açar?",
-      "answer": "Ancylostoma duodenale ve Necator americanus (Çengelli solucanlar).",
+      "answer": "[[Ancylostoma duodenale]] ve [[Necator americanus]] (Çengelli solucanlar).",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Helmint"],
       "ai_coding": "🤖 Kodlama: Ç-engelli = D-emir hırsızı."
@@ -285,7 +285,7 @@
     {
       "id": "micro_b3b_436",
       "question": "Strongyloides stercoralis'in karakteristik tanısı?",
-      "answer": "Dışkıda 'Rhabditiform larva' görülmesi (Kist/Yumurta görülmez!).",
+      "answer": "Dışkıda [[Rhabditiform larva]] görülmesi (Kist/Yumurta görülmez!).",
       "difficulty": "Zor",
       "tags": ["Parazitoloji", "Helmint"],
       "ai_coding": "🤖 Kodlama: S-trongyloides = L-arva (Kistsiz)."
@@ -293,7 +293,7 @@
     {
       "id": "micro_b3b_437",
       "question": "Trichinella spiralis nasıl bulaşır?",
-      "answer": "Larva içeren az pişmiş domuz eti tüketimiyle.",
+      "answer": "Larva içeren [[az pişmiş domuz eti]] tüketimiyle.",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Helmint"],
       "ai_coding": "🤖 Kodlama: T-richinella = Domuz eti."
@@ -301,7 +301,7 @@
     {
       "id": "micro_b3b_438",
       "question": "Toxocara canis enfeksiyonu insanda hangi tabloya yol açar?",
-      "answer": "VLM (Viseral Larva Migrans).",
+      "answer": "[[VLM (Viseral Larva Migrans)]].",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Helmint"],
       "ai_coding": "🤖 Kodlama: T-oxocara = V-L-M."
@@ -309,7 +309,7 @@
     {
       "id": "micro_b3b_439",
       "question": "Isospora (Cystoisospora) belli tanısında ne görülür?",
-      "answer": "Modifiye ARB (Ehrlich-Ziehl-Neelsen) ile boyanan elips şeklinde ookistler.",
+      "answer": "[[Modifiye ARB (Ehrlich-Ziehl-Neelsen)]] ile boyanan [[elips şeklinde ookistler]].",
       "difficulty": "Zor",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: İ-sospora = E-lips."
@@ -317,7 +317,7 @@
     {
       "id": "micro_b3b_440",
       "question": "Sarcocystis hominis insana nasıl bulaşır?",
-      "answer": "İyi pişmemiş sığır eti tüketimiyle.",
+      "answer": "İyi pişmemiş [[sığır eti]] tüketimiyle.",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: S-arcocystis = S-ığır eti."
@@ -325,7 +325,7 @@
     {
       "id": "micro_b3b_441",
       "question": "Himalaya çileği ya da ahududuya benzetilen oosistleri olan parazit?",
-      "answer": "Cyclospora cayetanensis.",
+      "answer": "[[Cyclospora cayetanensis]].",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: C-yclospora = Ç-ilek (Meyve)."
@@ -333,7 +333,7 @@
     {
       "id": "micro_b3b_442",
       "question": "Leishmania amastigotları vücutta nerede bulunur?",
-      "answer": "Makrofajlar ve RES hücreleri içinde.",
+      "answer": "[[Makrofajlar]] ve [[RES hücreleri]] içinde.",
       "difficulty": "Orta",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: L-eishmania = M-akrofaj içi."
@@ -341,7 +341,7 @@
     {
       "id": "micro_b3b_443",
       "question": "Kala-azar'da görülen 'Pansitopeni'nin nedeni nedir?",
-      "answer": "Masif splenomegali ve kemik iliği tutulumu (Hipersplenizm).",
+      "answer": "[[Masif splenomegali]] ve [[kemik iliği tutulumu]] (Hipersplenizm).",
       "difficulty": "Zor",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: K-alaazar = K-an düşüklüğü."
@@ -349,7 +349,7 @@
     {
       "id": "micro_b3b_444",
       "question": "Toxoplasma gondii'nin ana konağı (seksüel üreme yeri) hangisidir?",
-      "answer": "Kedi (Bağırsak epiteli).",
+      "answer": "[[Kedi]] (Bağırsak epiteli).",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: T-oxoplasma = K-edi."
@@ -357,7 +357,7 @@
     {
       "id": "micro_b3b_445",
       "question": "Babesiyoz'un (Babesia) en ağır seyrettiği hasta grubu?",
-      "answer": "Splenektomize (Dalağı alınmış) bireyler.",
+      "answer": "[[Splenektomize]] (Dalağı alınmış) bireyler.",
       "difficulty": "Orta",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: B-abesia = D-alaksız."
@@ -365,7 +365,7 @@
     {
       "id": "micro_b3b_446",
       "question": "Malarya profilaksisinde (Sıtmada) kloroquin direnci varsa ne tercih edilir?",
-      "answer": "Mefloquin, Atovakuon-Proguanil veya Doksisiklin.",
+      "answer": "[[Mefloquin]], [[Atovakuon-Proguanil]] veya [[Doksisiklin]].",
       "difficulty": "Orta",
       "tags": ["Antibiyotikler", "Sıtma"],
       "ai_coding": "🤖 Kodlama: D-irenç = M-efloquin."
@@ -373,7 +373,7 @@
     {
       "id": "micro_b3b_447",
       "question": "Hangi Plasmodium türü 'Hipnozoit' (Karaciğerde uyku) formu yaparak yıllar sonra nüks eder?",
-      "answer": "P. vivax ve P. ovale.",
+      "answer": "[[P. vivax]] ve [[P. ovale]].",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Sıtma"],
       "ai_coding": "🤖 Kodlama: V-O-H (Vivax-Ovale-Hipnozoit)."
@@ -381,7 +381,7 @@
     {
       "id": "micro_b3b_448",
       "question": "Amipli dizanteride gaita karakteri nasıldır?",
-      "answer": "Az miktarda, bol mukuslu ve kanlı (Sık sık ve ağrılı defekasyon).",
+      "answer": "Az miktarda, [[bol mukuslu ve kanlı]] (Sık sık ve ağrılı defekasyon).",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Dizanteri"],
       "ai_coding": "🤖 Kodlama: A-mipli = M-ukuslu."
@@ -389,7 +389,7 @@
     {
       "id": "micro_b3b_449",
       "question": "Trichomonas vaginalis erkeğe nasıl bulaşır?",
-      "answer": "Cinsel temas (Seksüel yolla).",
+      "answer": "[[Cinsel temas]] (Seksüel yolla).",
       "difficulty": "Kolay",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: T-richomonas = S-eksüel bulaş."
@@ -397,11 +397,10 @@
     {
       "id": "micro_b3b_450",
       "question": "Blastocystis hominis'in mikroskobik görüntüsü?",
-      "answer": "İçinde büyük bir merkezi vakuol (Boşluk) bulunan hücre.",
+      "answer": "İçinde büyük bir [[merkezi vakuol]] (Boşluk) bulunan hücre.",
       "difficulty": "Zor",
       "tags": ["Parazitoloji", "Protozoon"],
       "ai_coding": "🤖 Kodlama: B-lastocystis = B-üyük vakuol."
     }
   ]
 }
-

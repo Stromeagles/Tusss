@@ -5,7 +5,7 @@
     {
       "id": "micro_b2c_301",
       "question": "Hepatit A (HAV) virüsünün ana bulaş yolu nedir?",
-      "answer": "Fekal-oral yol (Kontamine su ve gıda).",
+      "answer": "[[Fekal-oral yol]] (Kontamine su ve gıda).",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Hepatit"],
       "ai_coding": "🤖 Kodlama: H-A-V = A-ğızdan."
@@ -13,7 +13,7 @@
     {
       "id": "micro_b2c_302",
       "question": "Pikornavirüs ailesinden olan HAV'ın genom yapısı nedir?",
-      "answer": "Pozitif iplikli RNA (Zarfsız).",
+      "answer": "[[Pozitif iplikli RNA]] (Zarfsız).",
       "difficulty": "Orta",
       "tags": ["Viroloji", "Hepatit"],
       "ai_coding": "🤖 Kodlama: P-ikorna = P-ozitif."
@@ -21,7 +21,7 @@
     {
       "id": "micro_b2c_303",
       "question": "Hepatit C (HCV) tanısında 'Tarama' amaçlı ilk bakılan nedir?",
-      "answer": "Anti-HCV (EIA).",
+      "answer": "[[Anti-HCV]] (EIA).",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Hepatit"],
       "ai_coding": "🤖 Kodlama: H-C-V = A-nti-HCV."
@@ -29,7 +29,7 @@
     {
       "id": "micro_b2c_304",
       "question": "HCV enfeksiyonunda 'Kür' (Tedavi yanıtı) neyle saptanır?",
-      "answer": "HCV-RNA'nın (PCR ile) saptanamaz hale gelmesi (SVR).",
+      "answer": "[[HCV-RNA]]'nın ([[PCR]] ile) saptanamaz hale gelmesi ([[SVR]]).",
       "difficulty": "Orta",
       "tags": ["Viroloji", "Hepatit"],
       "ai_coding": "🤖 Kodlama: H-C-V = R-NA."
@@ -37,7 +37,7 @@
     {
       "id": "micro_b2c_305",
       "question": "Hepatit D (HDV) enfeksiyonu için ne gereklidir?",
-      "answer": "HBsAg (HBV yardımı gereklidir, HDV defektif bir virüstür).",
+      "answer": "[[HBsAg]] (HBV yardımı gereklidir, [[HDV]] defektif bir virüstür).",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Hepatit"],
       "ai_coding": "🤖 Kodlama: H-D-V = D-efektif (HBsAg'ye muhtaç)."
@@ -45,7 +45,7 @@
     {
       "id": "micro_b2c_306",
       "question": "Gebelikte (özellikle 3. trimester) yüksek mortaliteye (%20) yol açan hepatit virüsü?",
-      "answer": "Hepatit E (HEV).",
+      "answer": "[[Hepatit E (HEV)]].",
       "difficulty": "Orta",
       "tags": ["Viroloji", "Hepatit"],
       "ai_coding": "🤖 Kodlama: H-E-V = E-be (Anne ölümü)."
@@ -53,7 +53,7 @@
     {
       "id": "micro_b2c_307",
       "question": "Influenza virüslerinde 'Antijenik Drift' (Küçük değişim) neye yol açar?",
-      "answer": "Yıllık küçük salgınlara (Epidemi).",
+      "answer": "Yıllık küçük salgınlara ([[Epidemi]]).",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Influenza"],
       "ai_coding": "🤖 Kodlama: D-rift = D-eğişim (Küçük)."
@@ -61,7 +61,7 @@
     {
       "id": "micro_b2c_308",
       "question": "Influenza virüslerinde 'Antijenik Shift' (Büyük değişim - Reassortment) neye yol açar?",
-      "answer": "Büyük dünya genelindeki salgınlara (Pandemi).",
+      "answer": "Büyük dünya genelindeki salgınlara ([[Pandemi]]).",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Influenza"],
       "ai_coding": "🤖 Kodlama: S-hift = Ş-ok (Pandemi)."
@@ -69,7 +69,7 @@
     {
       "id": "micro_b2c_309",
       "question": "Influenza virüsünün hücreye tutunmasını sağlayan protein?",
-      "answer": "Hemaglütinin (HA).",
+      "answer": "[[Hemaglütinin (HA)]].",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Influenza"],
       "ai_coding": "🤖 Kodlama: H-emaglütinin = H-ücreye tutunma."
@@ -77,7 +77,7 @@
     {
       "id": "micro_b2c_310",
       "question": "Influenza virüsünün hücreden çıkışını (salınımını) sağlayan enzim (Oseltamivir'in hedefi)?",
-      "answer": "Nöraminidaz (NA).",
+      "answer": "[[Nöraminidaz (NA)]].",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Influenza"],
       "ai_coding": "🤖 Kodlama: N-öraminidaz = N-ereye gitsin (Çıkış)."
@@ -85,7 +85,7 @@
     {
       "id": "micro_b2c_311",
       "question": "Paramiksovirüs ailesinden olan Kabakulak (Mumps) virüsünün en sık komplikasyonu?",
-      "answer": "Orşit (Özellikle puberte sonrası erkeklerde).",
+      "answer": "[[Orşit]] (Özellikle puberte sonrası erkeklerde).",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Paramiksovirus"],
       "ai_coding": "🤖 Kodlama: K-abakulak = O-rşit."
@@ -93,7 +93,7 @@
     {
       "id": "micro_b2c_312",
       "question": "Kızamık (Measles) sonrası yıllar sonra görülebilen ağır nörolojik komplikasyon?",
-      "answer": "SSPE (Subakut Sklerozan Panensefalit).",
+      "answer": "[[SSPE]] (Subakut Sklerozan Panensefalit).",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Kızamık"],
       "ai_coding": "🤖 Kodlama: S-S-P-E = S-onradan gelen Kızamık."
@@ -101,7 +101,7 @@
     {
       "id": "micro_b2c_313",
       "question": "RSV (Respiratuar Sinsityal Virüs) infantlarda neye yol açar?",
-      "answer": "Bronşiolit ve Pnömoni.",
+      "answer": "[[Bronşiolit]] ve [[Pnömoni]].",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "RSV"],
       "ai_coding": "🤖 Kodlama: R-S-V = B-ronşiolit."
@@ -109,7 +109,7 @@
     {
       "id": "micro_b2c_314",
       "question": "RSV tanısında en hızlı ve pratik yöntem?",
-      "answer": "Nazofarengeal sürüntüde antijen saptanması (EIA).",
+      "answer": "Nazofarengeal sürüntüde [[antijen saptanması]] (EIA).",
       "difficulty": "Orta",
       "tags": ["Viroloji", "Tanı"],
       "ai_coding": "🤖 Kodlama: R-S-V = A-ntijen."
@@ -117,7 +117,7 @@
     {
       "id": "micro_b2c_315",
       "question": "HIV (Retrovirus) virüsünün hücreye girişte bağlandığı ana reseptör?",
-      "answer": "CD4 reseptörü (T-helper hücrelerinde).",
+      "answer": "[[CD4 reseptörü]] (T-helper hücrelerinde).",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "HIV"],
       "ai_coding": "🤖 Kodlama: H-I-V = CD-4."
@@ -125,7 +125,7 @@
     {
       "id": "micro_b2c_316",
       "question": "HIV'in yardımcı reseptörleri (koreseptör) nelerdir?",
-      "answer": "CCR5 (Erken dönem) ve CXCR4 (Geç dönem).",
+      "answer": "[[CCR5]] (Erken dönem) ve [[CXCR4]] (Geç dönem).",
       "difficulty": "Zor",
       "tags": ["Viroloji", "HIV"],
       "ai_coding": "🤖 Kodlama: C-C-R-5 = R-eseptör."
@@ -133,7 +133,7 @@
     {
       "id": "micro_b2c_317",
       "question": "HIV genomundaki 'Gag' geni neyi kodlar?",
-      "answer": "Kapsid (p24) ve matris proteinlerini.",
+      "answer": "[[Kapsid (p24)]] ve matris proteinlerini.",
       "difficulty": "Zor",
       "tags": ["Viroloji", "HIV"],
       "ai_coding": "🤖 Kodlama: G-a-g = G-örevli proteinler."
@@ -141,7 +141,7 @@
     {
       "id": "micro_b2c_318",
       "question": "HIV evrelemesinde (AIDS tanısı için) kritik CD4 sayısı kaçtır?",
-      "answer": "200/mm3 altı.",
+      "answer": "[[200/mm3]] altı.",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "AIDS"],
       "ai_coding": "🤖 Kodlama: 2-0-0 = A-IDS."
@@ -149,7 +149,7 @@
     {
       "id": "micro_b2c_319",
       "question": "Rotavirus çocuklarda en sık neye yol açar?",
-      "answer": "Ağır ishal (Gastroenterit).",
+      "answer": "Ağır [[ishal]] ([[Gastroenterit]]).",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Rotavirus"],
       "ai_coding": "🤖 Kodlama: R-otavirus = R-ektum (İshal)."
@@ -157,7 +157,7 @@
     {
       "id": "micro_b2c_320",
       "question": "Reovirüs ailesinden olan Rotavirus'un genomu nasıldır (İstisna)?",
-      "answer": "Segmentli, Çift İplikli RNA (dsRNA).",
+      "answer": "Segmentli, [[Çift İplikli RNA (dsRNA)]].",
       "difficulty": "Zor",
       "tags": ["Viroloji", "Yapı"],
       "ai_coding": "🤖 Kodlama: R-eo = R-e-ds-RNA."
@@ -165,7 +165,7 @@
     {
       "id": "micro_b2c_321",
       "question": "Kızamıkçık (Rubella) virüsü hangi aileye aittir?",
-      "answer": "Togaviridae.",
+      "answer": "[[Togaviridae]].",
       "difficulty": "Orta",
       "tags": ["Viroloji", "Rubella"],
       "ai_coding": "🤖 Kodlama: R-ubella = T-ogavirus."
@@ -173,7 +173,7 @@
     {
       "id": "micro_b2c_322",
       "question": "Konjenital Rubella Sendromu triadı nedir?",
-      "answer": "Katarakt, Sağırlık ve Kalp anomalileri (PDA).",
+      "answer": "[[Katarakt]], [[Sağırlık]] ve Kalp anomalileri ([[PDA]]).",
       "difficulty": "Orta",
       "tags": ["Viroloji", "Rubella"],
       "ai_coding": "🤖 Kodlama: R-ubella = K-S-K (Katarakt-Sağırlık-Kalp)."
@@ -181,7 +181,7 @@
     {
       "id": "micro_b2c_323",
       "question": "Norovirus (Norwalk virüsü) hangi tablodan sorumludur?",
-      "answer": "Erişkinlerde ve toplu yaşanılan yerlerde (Gemi vb.) ishal salgınları.",
+      "answer": "Erişkinlerde ve toplu yaşanılan yerlerde (Gemi vb.) [[ishal salgınları]].",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Norovirus"],
       "ai_coding": "🤖 Kodlama: N-orovirus = N-o-pazartesi (Hızlı ishal)."
@@ -189,7 +189,7 @@
     {
       "id": "micro_b2c_324",
       "question": "Poliyovirüsün (Çocuk felci) hedef aldığı sinir sistemi bölgesi?",
-      "answer": "Anterior (Ön) boynuz motor nöronları.",
+      "answer": "[[Anterior (Ön) boynuz motor nöronları]].",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Poliomyelit"],
       "ai_coding": "🤖 Kodlama: P-olio = Ön boynuz."
@@ -197,7 +197,7 @@
     {
       "id": "micro_b2c_325",
       "question": "Pikornavirüslerden olan 'Coxsackie A' virüsü hangi tabloyu yapar?",
-      "answer": "El-Ayak-Ağız hastalığı ve Herpanjina.",
+      "answer": "[[El-Ayak-Ağız hastalığı]] ve [[Herpanjina]].",
       "difficulty": "Orta",
       "tags": ["Viroloji", "Coxsackie"],
       "ai_coding": "🤖 Kodlama: C-ox-A = A-ğız."
@@ -205,7 +205,7 @@
     {
       "id": "micro_b2c_326",
       "question": "Coxsackie B virüsü hangi ciddi hayati tabloyla ilişkilidir?",
-      "answer": "Miyokardit ve Perikardit.",
+      "answer": "[[Miyokardit]] ve [[Perikardit]].",
       "difficulty": "Orta",
       "tags": ["Viroloji", "Coxsackie"],
       "ai_coding": "🤖 Kodlama: C-ox-B = B-ekle (Kalp durabilir)."
@@ -213,7 +213,7 @@
     {
       "id": "micro_b2c_327",
       "question": "Kuduz (Rabies) virüsü hangi aileden gelmektedir?",
-      "answer": "Rhabdoviridae.",
+      "answer": "[[Rhabdoviridae]].",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Kuduz"],
       "ai_coding": "🤖 Kodlama: R-habdo = R-abies."
@@ -221,7 +221,7 @@
     {
       "id": "micro_b2c_328",
       "question": "Rabies virüsünün karakteristik mermi şekline ne ad verilir?",
-      "answer": "Bullet-shaped.",
+      "answer": "[[Bullet-shaped]].",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Kuduz"],
       "ai_coding": "🤖 Kodlama: R-habdo = M-ermi."
@@ -229,7 +229,7 @@
     {
       "id": "micro_b2c_329",
       "question": "Arenavirüsler arasında bulunan ve kemirgen idrarıyla bulaşan virüs?",
-      "answer": "Lassa ateşi virüsü.",
+      "answer": "[[Lassa ateşi virüsü]].",
       "difficulty": "Zor",
       "tags": ["Viroloji", "Arenavirus"],
       "ai_coding": "🤖 Kodlama: L-assa = K-emirgen."
@@ -237,7 +237,7 @@
     {
       "id": "micro_b2c_330",
       "question": "Hantavirus (Bunya virüsü) hangi organı en çok etkiler?",
-      "answer": "Böbrek (HFRS - Kanamalı ateşle seyreden böbrek yetmezliği) veya Akciğer.",
+      "answer": "[[Böbrek]] ([[HFRS]] - Kanamalı ateşle seyreden böbrek yetmezliği) veya [[Akciğer]].",
       "difficulty": "Orta",
       "tags": ["Viroloji", "Hantavirus"],
       "ai_coding": "🤖 Kodlama: H-antavirus = B-öbrek."
@@ -245,7 +245,7 @@
     {
       "id": "micro_b2c_331",
       "question": "Sarı Humma (Yellow Fever) virüsünün bulaş yolu?",
-      "answer": "Aedes aegypti sivrisineği.",
+      "answer": "[[Aedes aegypti]] sivrisineği.",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Arbovirus"],
       "ai_coding": "🤖 Kodlama: S-arı = A-edes."
@@ -253,7 +253,7 @@
     {
       "id": "micro_b2c_332",
       "question": "Deng Humması (Dengue Fever) döküntü karakteri?",
-      "answer": "Kemik kırığı gibi ağrı eşlik eden döküntü (Breakbone fever).",
+      "answer": "Kemik kırığı gibi ağrı eşlik eden döküntü ([[Breakbone fever]]).",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Arbovirus"],
       "ai_coding": "🤖 Kodlama: D-eng = Kemik ağrısı."
@@ -261,7 +261,7 @@
     {
       "id": "micro_b2c_333",
       "question": "Prion hastalıklarından insanda en sık görülen sporadik form?",
-      "answer": "Creutzfeldt-Jakob Hastalığı (CJD).",
+      "answer": "[[Creutzfeldt-Jakob Hastalığı (CJD)]].",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Prion"],
       "ai_coding": "🤖 Kodlama: C-J-D = P-rion."
@@ -269,7 +269,7 @@
     {
       "id": "micro_b2c_334",
       "question": "Virüslerin enfekte ettiği hücrelerin birbirine yapışıp dev hücre oluşturmasına ne denir?",
-      "answer": "Sinsityum oluşumu.",
+      "answer": "[[Sinsityum oluşumu]].",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Yapı"],
       "ai_coding": "🤖 Kodlama: S-insityum = S-arkık (Dev) hücre."
@@ -277,7 +277,7 @@
     {
       "id": "micro_b2c_335",
       "question": "Antiviral: Asiklovir hangi virüslere karşı en etkilidir?",
-      "answer": "HSV-1 ve HSV-2.",
+      "answer": "[[HSV-1]] ve [[HSV-2]].",
       "difficulty": "Kolay",
       "tags": ["Antibiyotikler", "Viroloji"],
       "ai_coding": "🤖 Kodlama: A-siklovir = H-S-V."
@@ -285,7 +285,7 @@
     {
       "id": "micro_b2c_336",
       "question": "Gansiklovir hangi virüsün tedavisinde ilk seçenektir?",
-      "answer": "CMV (Cytomegalovirus).",
+      "answer": "[[CMV]] (Cytomegalovirus).",
       "difficulty": "Orta",
       "tags": ["Antibiyotikler", "Viroloji"],
       "ai_coding": "🤖 Kodlama: G-ansiklovir = C-M-V."
@@ -293,7 +293,7 @@
     {
       "id": "micro_b2c_337",
       "question": "HIV ilacı olan 'Zidovudin' (AZT) hangi mekanizmayla etki eder?",
-      "answer": "Nükleozid Revers Transkriptaz İnhibitörü (NRTI).",
+      "answer": "[[Nükleozid Revers Transkriptaz İnhibitörü (NRTI)]].",
       "difficulty": "Orta",
       "tags": ["Antibiyotikler", "HIV"],
       "ai_coding": "🤖 Kodlama: A-Z-T = R-T inhibitörü."
@@ -301,7 +301,7 @@
     {
       "id": "micro_b2c_338",
       "question": "HIV ilacı olan 'Ritonavir' hangi gruptadır?",
-      "answer": "Proteaz İnhibitörü.",
+      "answer": "[[Proteaz İnhibitörü]].",
       "difficulty": "Zor",
       "tags": ["Antibiyotikler", "HIV"],
       "ai_coding": "🤖 Kodlama: R-itonavir = P-roteaz."
@@ -309,7 +309,7 @@
     {
       "id": "micro_b2c_339",
       "question": "Corona virüslerinin (örn: SARS, MERS) genom yapısı nedir?",
-      "answer": "Pozitif iplikli, zarflı, büyük RNA virüsleri.",
+      "answer": "[[Pozitif iplikli]], zarflı, büyük [[RNA virüsleri]].",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Corona"],
       "ai_coding": "🤖 Kodlama: C-orona = T-aç (Zarflı)."
@@ -317,7 +317,7 @@
     {
       "id": "micro_b2c_340",
       "question": "Zika virüsü gebelikte neye yol açar?",
-      "answer": "Mikrosefali.",
+      "answer": "[[Mikrosefali]].",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Arbovirus"],
       "ai_coding": "🤖 Kodlama: Z-ika = Küçük kafa."
@@ -325,7 +325,7 @@
     {
       "id": "micro_b2c_341",
       "question": "Delta virüsü (HDV) hangi proteine sahip olmaz?",
-      "answer": "Zarf proteini (HBsAg'den çalar).",
+      "answer": "[[Zarf proteini]] ([[HBsAg]]'den çalar).",
       "difficulty": "Zor",
       "tags": ["Viroloji", "Hepatit"],
       "ai_coding": "🤖 Kodlama: D-elta = D-ışsız."
@@ -333,7 +333,7 @@
     {
       "id": "micro_b2c_342",
       "question": "Rhinovirus (Nezle) virüsünün neden 100den fazla serotipi vardır?",
-      "answer": "Yüzey antijenlerinin (kapsid) çok değişken olması nedeniyle aşı yapılamaz.",
+      "answer": "Yüzey antijenlerinin ([[kapsid]]) çok değişken olması nedeniyle [[aşı yapılamaz]].",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Pikornavirus"],
       "ai_coding": "🤖 Kodlama: R-hino = R-ekor (Serotip)."
@@ -341,7 +341,7 @@
     {
       "id": "micro_b2c_343",
       "question": "Virüslerin 'Fenotipik Karışma' (Phenotypic mixing) olayında genom değişir mi?",
-      "answer": "HAYIR, sadece kılıflar değişir (Kalıtsal değildir).",
+      "answer": "HAYIR, sadece [[kılıflar değişir]] (Kalıtsal değildir).",
       "difficulty": "Zor",
       "tags": ["Viroloji", "Genetik"],
       "ai_coding": "🤖 Kodlama: F-enotip = F-orm (Sadece dış görünüş)."
@@ -349,7 +349,7 @@
     {
       "id": "micro_b2c_344",
       "question": "Interferon-Alfa hangi hücreler tarafından üretilir ve viral replikasyonu nasıl durdurur?",
-      "answer": "Lökositler üretir; RNaz L ve protein kinaz uyarımıyla mRNA parçalanmasını ve translasyonun durmasını sağlar.",
+      "answer": "Lökositler üretir; [[RNaz L]] ve [[protein kinaz]] uyarımıyla mRNA parçalanmasını ve translasyonun durmasını sağlar.",
       "difficulty": "Zor",
       "tags": ["İmünoloji", "Viroloji"],
       "ai_coding": "🤖 Kodlama: I-N-F = I-nhibisyon."
@@ -357,7 +357,7 @@
     {
       "id": "micro_b2c_345",
       "question": "Kırım-Kongo Kanamalı Ateşi (KKKA) tanısında PCR ne zaman pozitiftir?",
-      "answer": "İlk günlerde (Viremik fazda).",
+      "answer": "İlk günlerde ([[Viremik fazda]]).",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Tanı"],
       "ai_coding": "🤖 Kodlama: K-K-K-A = P-CR."
@@ -365,7 +365,7 @@
     {
       "id": "micro_b2c_346",
       "question": "HIV Western Blot doğrulamasında bakılan ana bantlar hangileridir?",
-      "answer": "gp120, gp41, p24.",
+      "answer": "[[gp120]], [[gp41]], [[p24]].",
       "difficulty": "Zor",
       "tags": ["Viroloji", "HIV"],
       "ai_coding": "🤖 Kodlama: 120-41-24. G-p ve P."
@@ -373,7 +373,7 @@
     {
       "id": "micro_b2c_347",
       "question": "West Nile Virus (Batı Nil Virüsü) ana bulaş yolu?",
-      "answer": "Culex sineği.",
+      "answer": "[[Culex sineği]].",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Arbovirus"],
       "ai_coding": "🤖 Kodlama: B-atı N-il = C-ulex."
@@ -381,7 +381,7 @@
     {
       "id": "micro_b2c_348",
       "question": "Hangi RNA virüsü 'Revers Transkriptaz' içerir?",
-      "answer": "HIV (HTLV de dahil).",
+      "answer": "[[HIV]] ([[HTLV]] de dahil).",
       "difficulty": "Kolay",
       "tags": ["Viroloji", "Retrovirus"],
       "ai_coding": "🤖 Kodlama: R-etro = R-T."
@@ -389,7 +389,7 @@
     {
       "id": "micro_b2c_349",
       "question": "Hangi RNA virüsü 'Çekirdek'te replike olur (İstisna)?",
-      "answer": "Influenza ve Retrovirüsler.",
+      "answer": "[[Influenza]] ve [[Retrovirüsler]].",
       "difficulty": "Zor",
       "tags": ["Viroloji", "RNA Virüsleri"],
       "ai_coding": "🤖 Kodlama: I-nfluenza = İ-çeride (Çekirdekte)."
@@ -397,11 +397,10 @@
     {
       "id": "micro_b2c_350",
       "question": "Poliovirüs aşısı: Sabin'in (Canlı) Salk'tan (Ölü) en büyük üstünlüğü nedir?",
-      "answer": "Lokal (IgA) bağışıklık sağlaması ve dışkıyla yayılıp toplum bağışıklığını artırması.",
+      "answer": "Lokal ([[IgA]]) bağışıklık sağlaması ve dışkıyla yayılıp [[toplum bağışıklığını]] artırması.",
       "difficulty": "Zor",
       "tags": ["Viroloji", "Aşı"],
       "ai_coding": "🤖 Kodlama: S-abin = S-algı (IgA)."
     }
   ]
 }
-

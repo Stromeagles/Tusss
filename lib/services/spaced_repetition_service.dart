@@ -45,7 +45,7 @@ class SpacedRepetitionService {
   }
 
   /// Kullanıcı yanıtını işle ve kartı güncelle.
-  /// quality: 0-5 (sağ kaydır = 4 "Bildim", sol kaydır = 1 "Bilmedim")
+  /// quality: 1 = Bilemedim (1 gün), 2 = Bildim (3 gün)
   Future<SM2CardData> recordAnswer(String cardId, int quality) async {
     final all = await getAllData();
     final current = all[cardId] ?? SM2CardData.initial(cardId);
@@ -65,7 +65,6 @@ class SpacedRepetitionService {
   }
 
   /// Verilen kart listesinden sadece bugün zamanı gelenleri filtreler.
-  /// Hiç görülmemiş kartlar da "due" sayılır.
   Future<List<String>> filterDueCards(List<String> cardIds) async {
     final all = await getAllData();
     return cardIds.where((id) {
@@ -79,13 +78,20 @@ class SpacedRepetitionService {
   Future<String> getNextReviewLabel(String cardId) async {
     final data = await getCardData(cardId);
     if (data.repetitions == 0) return 'Yeni kart';
-    if (data.isInPocket) return '🧠 Hafıza! (3 gün sonra)';
-    final diff = data.nextReviewDate
-        .difference(DateTime.now())
-        .inDays;
+    final diff = data.nextReviewDate.difference(DateTime.now()).inDays;
     if (diff <= 0) return 'Bugün tekrar';
     if (diff == 1) return 'Yarın tekrar';
     return '$diff gün sonra';
+  }
+
+  /// Bookmark toggle — isBookmarked alanını değiştirir.
+  Future<SM2CardData> toggleBookmark(String cardId) async {
+    final all = await getAllData();
+    final current = all[cardId] ?? SM2CardData.initial(cardId);
+    final updated = current.copyWithBookmark(!current.isBookmarked);
+    all[cardId] = updated;
+    await _saveAll(all);
+    return updated;
   }
 
   /// Tüm verileri sıfırla.
@@ -99,52 +105,54 @@ class SpacedRepetitionService {
     _cache = null;
   }
 
-  /// New/Due/Pocket sayılarını döner — home screen için
+  /// Bilemediklerim / Bildiklerim / Ezberim / Yeni sayılarını döner — home screen için
   Future<SrsSummary> getSummary(List<String> allIds, {int? dailyGoal}) async {
     final all = await getAllData();
     int newCount      = 0;
-    int failedCount   = 0; // görülmüş, repetitions == 0 (Tekrar'a düşmüş)
-    int learningCount = 0; // repetitions >= 1, cepte değil
-    int pocketCount   = 0;
+    int toReviewCount = 0; // lastQuality == 1 (Bilemediklerim)
+    int learnedCount  = 0; // lastQuality == 2 (Bildiklerim)
+    int bookmarkCount = 0; // isBookmarked (Ezberim)
 
     for (final id in allIds) {
       final data = all[id];
       if (data == null) {
-        newCount++;                           // hiç görülmemiş
-      } else if (data.isInPocket) {
-        pocketCount++;                        // Hafıza'da
-      } else if (data.repetitions == 0) {
-        failedCount++;                        // görülmüş ama sıfırlanmış
+        newCount++;
       } else {
-        learningCount++;                      // repetitions >= 1 (öğrenme / pekiştirme)
+        if (data.isBookmarked) bookmarkCount++;
+        if (data.lastQuality == 1) {
+          toReviewCount++;
+        } else if (data.lastQuality == 2) {
+          learnedCount++;
+        } else if (data.repetitions == 0) {
+          newCount++;
+        }
       }
     }
-    if (dailyGoal != null && dailyGoal > 0 && newCount > dailyGoal) newCount = dailyGoal;
+    if (dailyGoal != null && dailyGoal > 0 && newCount > dailyGoal) {
+      newCount = dailyGoal;
+    }
     return SrsSummary(
       newCount:      newCount,
-      failedCount:   failedCount,
-      learningCount: learningCount,
-      pocketCount:   pocketCount,
+      toReviewCount: toReviewCount,
+      learnedCount:  learnedCount,
+      bookmarkCount: bookmarkCount,
     );
   }
 }
 
 class SrsSummary {
   final int newCount;
-  final int failedCount;    // Görülmüş ama repetitions == 0 (Tekrar'a düşmüş)
-  final int learningCount;  // "Öğreniyor" — repetitions >= 1, cepte değil
-  final int pocketCount;
+  final int toReviewCount; // Bilemediklerim (lastQuality == 1)
+  final int learnedCount;  // Bildiklerim (lastQuality == 2)
+  final int bookmarkCount; // Ezberim (isBookmarked)
 
   const SrsSummary({
     required this.newCount,
-    required this.failedCount,
-    required this.learningCount,
-    required this.pocketCount,
+    required this.toReviewCount,
+    required this.learnedCount,
+    required this.bookmarkCount,
   });
 
-  /// Cards still needing active work (not yet mastered/in pocket).
-  int get activeCount => newCount + failedCount + learningCount;
-
-  /// Total cards across all categories.
-  int get cardCount => newCount + failedCount + learningCount + pocketCount;
+  int get activeCount => newCount + toReviewCount + learnedCount;
+  int get cardCount => newCount + toReviewCount + learnedCount + bookmarkCount;
 }

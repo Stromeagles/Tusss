@@ -120,7 +120,7 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
   Future<void> _openFlashcards(String? subjectId) async {
     await Navigator.push(
       context,
-      AppRoute.slideUp(FlashcardScreen(subjectId: subjectId)),
+      AppRoute.slideUp(FlashcardScreen(subjectId: subjectId, isPreview: true)),
     );
   }
 }

@@ -1,0 +1,406 @@
+{
+  "subject": "Mikrobiyoloji",
+  "chapter": "Bakteriyoloji (Final) & Temel Mikrobiyoloji (Giriş) - Batch 1D",
+  "flashcards": [
+    {
+      "id": "micro_b1d_151",
+      "question": "Vibrio türleri arasında 'Halofilik' (tuz seven) olmayan tek tür hangisidir?",
+      "answer": "Vibrio cholerae.",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Vibrio"],
+      "ai_coding": "🤖 Kodlama: K-olera = K-lasik (Tuzsuz da ürer)."
+    },
+    {
+      "id": "micro_b1d_152",
+      "question": "Campylobacter fetus hangi hastalığa yol açar (C. jejuni'den farkı)?",
+      "answer": "Sistemik enfeksiyonlar, bakteriyemi ve menenjit. (İmmun yetmezliklilerde)",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Campylobacter"],
+      "ai_coding": "🤖 Kodlama: F-etus = F-ena (Sistemik) yayılır."
+    },
+    {
+      "id": "micro_b1d_153",
+      "question": "Bacteroides fragilis'in tedavisinde ilk seçenek nedir?",
+      "answer": "Metronidazol.",
+      "difficulty": "Kolay",
+      "tags": ["Antibiyotikler", "Bacteroides"],
+      "ai_coding": "🤖 Kodlama: B-ragilis = M-etronidazol."
+    },
+    {
+      "id": "micro_b1d_154",
+      "question": "Actinomyces'in en sık görülen klinik formu hangisidir?",
+      "answer": "Servikofasiyal (Çene) aktinomikozu.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Actinomyces"],
+      "ai_coding": "🤖 Kodlama: A-ctinomyces = A-ğız-çene."
+    },
+    {
+      "id": "micro_b1d_155",
+      "question": "Erizipeloid (Erysipelothrix) lezyonlarının karakteristiği nedir?",
+      "answer": "Ödemli, morumsu-kırmızı, kaşıntılı ve yanmalı döküntü. (Ayırıcı: Pürulan değildir).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Zoonoz"],
+      "ai_coding": "🤖 Kodlama: E-rizipeloid = M-orumsu cilt."
+    },
+    {
+      "id": "micro_b1d_156",
+      "question": "Nocardia tanısında kullanılan boyama yöntemi?",
+      "answer": "Modifiye Erlich-Ziel-Neelsen (EZN) / Zayıf aside dirençli boyanma.",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Nocardia"],
+      "ai_coding": "🤖 Kodlama: N-ocardia = N-eredeyse (Zayıf) aside dirençli."
+    },
+    {
+      "id": "micro_b1d_157",
+      "question": "Corynebacterium jeikeium hangi tabloyla ilişkilidir?",
+      "answer": "Hastane içi enfeksiyonlar ve protez kapak endokarditi (Çok dirençlidir).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Corynebacterium"],
+      "ai_coding": "🤖 Kodlama: J-eikeium = J-iret gibi dirençli."
+    },
+    {
+      "id": "micro_b1d_158",
+      "question": "Bacillus anthracis'in (Şarbon) öldürücü (Lethal) toksini hangi bileşenlerden oluşur?",
+      "answer": "Lethal Faktör (LF) + Protektif Antijen (PA).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Şarbon"],
+      "ai_coding": "🤖 Kodlama: L + P = Öldürücü."
+    },
+    {
+      "id": "micro_b1d_159",
+      "question": "Listeria monocytogenes hücreden hücreye yayılımı nasıl sağlar?",
+      "answer": "Aktin kuyrukları oluşturarak (Hücre iskeletini kullanır).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Listeria"],
+      "ai_coding": "🤖 Kodlama: L-isteria = L-okomotif (Aktin kuyruğu)."
+    },
+    {
+      "id": "micro_b1d_160",
+      "question": "Tüberküloz ilacı Etambutol'ün ana yan etkisi?",
+      "answer": "Optik Nörit (Renk körlüğü).",
+      "difficulty": "Kolay",
+      "tags": ["Antibiyotikler", "Tüberküloz"],
+      "ai_coding": "🤖 Kodlama: E-tambutol = E-ye (Göz)."
+    },
+    {
+      "id": "micro_b1d_161",
+      "question": "Yersinia pestis'in (Veba) virülansı için gerekli olan 'F1' antijeni nerede bulunur?",
+      "answer": "Kapsül yapısında.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Veba"],
+      "ai_coding": "🤖 Kodlama: F1 = F-ormula-1 (Hızlı kaçan kapsül)."
+    },
+    {
+      "id": "micro_b1d_162",
+      "question": "Brucella tanısında 'Rose-Bengal' testi neyi saptar?",
+      "answer": "Tarama amaçlı hızlı aglütinasyon (Pozitiflikte SAT testi gerekir).",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Brucella"],
+      "ai_coding": "🤖 Kodlama: R-ose = R-apid (Hızlı)."
+    },
+    {
+      "id": "micro_b1d_163",
+      "question": "Borrelia burgdorferi tanısında 'Altın Standart' olmasa da ilk basamak test hangisidir?",
+      "answer": "ELISA (Lyme antikorları).",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Lyme"],
+      "ai_coding": "🤖 Kodlama: L-yme = E-LISA."
+    },
+    {
+      "id": "micro_b1d_164",
+      "question": "Leptospira'nın üretildiği özel sıvı besiyeri?",
+      "answer": "EMJH veya Fletcher besiyeri.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Leptospira"],
+      "ai_coding": "🤖 Kodlama: F-letcher = L-eptospira."
+    },
+    {
+      "id": "micro_b1d_165",
+      "question": "Treponema pallidum'un adezyonundan sorumlu ana protein?",
+      "answer": "Trompondin benzeri protein.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Sifiliz"],
+      "ai_coding": "🤖 Kodlama: T-reponema = T-rompondin."
+    },
+    {
+      "id": "micro_b1d_166",
+      "question": "C. trachomatis'in hangi serotipi 'Trahom'a (Gözde körlük) yol açar?",
+      "answer": "Serotip A, B, Ba ve C.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Chlamydia"],
+      "ai_coding": "🤖 Kodlama: A-B-C = A-ma (Kör)."
+    },
+    {
+      "id": "micro_b1d_167",
+      "question": "Chlamydia'nın kültüründe kullanılan hücre hattı?",
+      "answer": "McCoy hücreleri.",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Chlamydia"],
+      "ai_coding": "🤖 Kodlama: Mc-Coy = Ch-lamydia."
+    },
+    {
+      "id": "micro_b1d_168",
+      "question": "Rickettsia'ların çoğu Weil-Felix (+) boyanırken hangisi karakteristiktir?",
+      "answer": "R. rickettsii (OX-19 ve OX-2 pozitif).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Rickettsia"],
+      "ai_coding": "🤖 Kodlama: R-ickettsia = O-X."
+    },
+    {
+      "id": "micro_b1d_169",
+      "question": "Q ateşi (Coxiella) tanısında kullanılan serolojik fark?",
+      "answer": "Faz I ve Faz II antijenleri (Kronikte Faz I yüksektir).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Q Ateşi"],
+      "ai_coding": "🤖 Kodlama: Faz I = I-natçı (Kronik)."
+    },
+    {
+      "id": "micro_b1d_170",
+      "question": "Mycoplasma'nın hücre zarında bakterilerde nadir görülen hangi yapı bulunur?",
+      "answer": "Sterol (Konakçıdan alır).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Mycoplasma"],
+      "ai_coding": "🤖 Kodlama: M-yco-S-terol."
+    },
+    {
+      "id": "micro_b1d_171",
+      "question": "Bakterilerin kamçı yapısını (flagella) oluşturan protein?",
+      "answer": "Flagellin.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Morfoloji"],
+      "ai_coding": "🤖 Kodlama: F-lagella = F-lagellin."
+    },
+    {
+      "id": "micro_b1d_172",
+      "question": "Bakterilerde kapsülün ana görevi nedir?",
+      "answer": "Antifagositik özellik kazandırmak (Fagositozu engellemek).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Morfoloji"],
+      "ai_coding": "🤖 Kodlama: K-apsül = K-oruma."
+    },
+    {
+      "id": "micro_b1d_173",
+      "question": "Bakteriyel 'Pili' (Fimbria) ne işe yarar?",
+      "answer": "Yüzeylere ve diğer hücrelere yapışmayı (adezyon) sağlar.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Morfoloji"],
+      "ai_coding": "🤖 Kodlama: P-ili = P-ataş (Yapıştırıcı)."
+    },
+    {
+      "id": "micro_b1d_174",
+      "question": "Bakterilerin zorlu koşullarda hayatta kalmasını sağlayan 'Endospor' yapısı hangi cinslere özgüdür?",
+      "answer": "Bacillus ve Clostridium (Gram pozitif basiller).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Spor"],
+      "ai_coding": "🤖 Kodlama: B-C = B-asya-C-az (Sporla dayanıklılık)."
+    },
+    {
+      "id": "micro_b1d_175",
+      "question": "Endosporun ısıya dayanıklılığını sağlayan ana madde hangisidir?",
+      "answer": "Kalsiyum-dipikolinat.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Spor"],
+      "ai_coding": "🤖 Kodlama: D-ipikolinat = D-ayanıklılık."
+    },
+    {
+      "id": "micro_b1d_176",
+      "question": "Bakterilerin üreme fazları: Hangi fazda antibiyotiklere en duyarlıdırlar?",
+      "answer": "Log (Logaritmik / Eksponansiyel) faz.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Üreme"],
+      "ai_coding": "🤖 Kodlama: L-og = L-okalize-antibiyotik-etkisi."
+    },
+    {
+      "id": "micro_b1d_177",
+      "question": "Bakterilerde DNA'nın bir bakteriden diğerine 'Bakteriyofajlar' aracılığıyla aktarılmasına ne denir?",
+      "answer": "Transdüksiyon.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Genetik"],
+      "ai_coding": "🤖 Kodlama: Trans-D-üksiyon = D-o-faj-aracı."
+    },
+    {
+      "id": "micro_b1d_178",
+      "question": "Bakterilerde DNA'nın ortamdan (serbest halde) alınmasına ne denir?",
+      "answer": "Transformasyon.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Genetik"],
+      "ai_coding": "🤖 Kodlama: Trans-F-ormasyon = F-ree (Serbest) DNA."
+    },
+    {
+      "id": "micro_b1d_179",
+      "question": "Konjugasyon (Gen aktarımı) için gerekli olan yapı hangisidir?",
+      "answer": "Seks pilusu (F plazmidi gerektirir).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Genetik"],
+      "ai_coding": "🤖 Kodlama: K-onjugasyon = K-öpru (Pilus)."
+    },
+    {
+      "id": "micro_b1d_180",
+      "question": "Bakterilerde 'Transpozon'ların (Sıçrayan Genler) en önemli özelliği nedir?",
+      "answer": "Genoma veya plazmidlere rastgele entegre olabilmeleri (Direnç aktarımında rol oynarlar).",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Genetik"],
+      "ai_coding": "🤖 Kodlama: T-ranspozon = T-ranstrafik (Gezgin)."
+    },
+    {
+      "id": "micro_b1d_181",
+      "question": "Gram boyama: Hangi madde 'Primer Boya'dır?",
+      "answer": "Kristal Viyole.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Boyama"],
+      "ai_coding": "🤖 Kodlama: K-ristal = K-ral (İlk) boya."
+    },
+    {
+      "id": "micro_b1d_182",
+      "question": "Gram boyama: Lugol (İyot) ne işe yarar?",
+      "answer": "Mordan (Tespit edici) görevi görür; boyayı hücre içine sabitler.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Boyama"],
+      "ai_coding": "🤖 Kodlama: L-ugol = L-ock (Kilitleme)."
+    },
+    {
+      "id": "micro_b1d_183",
+      "question": "Ziehl-Neelsen boyasında kullanılan primer boya nedir?",
+      "answer": "Karbolfuksin.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Boyama"],
+      "ai_coding": "🤖 Kodlama: K-arbolfuksin = K-ırmızı (Asit dirençli)."
+    },
+    {
+      "id": "micro_b1d_184",
+      "question": "Erlich-Ziel-Neelsen boyamasında dekolorizasyon (renksizleştirme) için ne kullanılır?",
+      "answer": "Asit-Alkol.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Boyama"],
+      "ai_coding": "🤖 Kodlama: A-sitte dirençli (Boyanma)."
+    },
+    {
+      "id": "micro_b1d_185",
+      "question": "Mikroskopi: Canlı (boyanmamış) bakterilerin incelenmesi için en iyisi hangisidir?",
+      "answer": "Faz-kontrast veya Karanlık saha mikroskopisi.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Mikroskopi"],
+      "ai_coding": "🤖 Kodlama: F-az = F-arklılık (Canlıda)."
+    },
+    {
+      "id": "micro_b1d_186",
+      "question": "Sıvı besiyerinde üreme olup olmadığını gösteren genel terim?",
+      "answer": "Bulanıklık (Türbidite).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Kültür"],
+      "ai_coding": "🤖 Kodlama: B-ulanıklık = B-akteri var."
+    },
+    {
+      "id": "micro_b1d_187",
+      "question": "Seçici (Selektif) besiyeri örneği?",
+      "answer": "MacConkey Agar (Sadece Gram negatifleri üretir).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Besiyeri"],
+      "ai_coding": "🤖 Kodlama: M-acConkey = M-inimum (Sadece negatifler)."
+    },
+    {
+      "id": "micro_b1d_188",
+      "question": "Zenginleştirilmiş besiyeri örneği?",
+      "answer": "Çikolata Agar (Isıtılmış kanlı agar).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Besiyeri"],
+      "ai_coding": "🤖 Kodlama: Ç-ikolata = Ç-ok zengin."
+    },
+    {
+      "id": "micro_b1d_189",
+      "question": "Hücre içi (Obligat) parazit bakteriler için ne gereklidir?",
+      "answer": "Hücre kültürü (Embriyolu yumurta veya canlı hücre).",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Kültür"],
+      "ai_coding": "🤖 Kodlama: O-bligat = O-nsuz (Hücresiz) olmaz."
+    },
+    {
+      "id": "micro_b1d_190",
+      "question": "Bakteriyel 'Mesafe Duyarlılığı' (Quorum Sensing) nedir?",
+      "answer": "Bakterilerin yoğunluğa bağlı olarak gen ekspresyonlarını (örn: toksin salınımı) koordine etmeleri.",
+      "difficulty": "Zor",
+      "tags": ["Temel", "Fizyoloji"],
+      "ai_coding": "🤖 Kodlama: Q-uorum = K-oro (Birlikte hareket)."
+    },
+    {
+      "id": "micro_b1d_191",
+      "question": "Bakteriyel genetik: Plazmidler neden önemlidir?",
+      "answer": "Antibiyotik direnci ve virülans genlerini taşıyabildikleri için.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Genetik"],
+      "ai_coding": "🤖 Kodlama: P-lazmid = P-aket gen."
+    },
+    {
+      "id": "micro_b1d_192",
+      "question": "Sterilizasyon: Kuru ısı (Etüv) parametreleri?",
+      "answer": "160°C'de 2 saat veya 170°C'de 1 saat.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Sterilizasyon"],
+      "ai_coding": "🤖 Kodlama: E-tüv = E-kstra sıcak (Kuru)."
+    },
+    {
+      "id": "micro_b1d_193",
+      "question": "Filtrasyon (Süzme) yöntemi ne için kullanılır?",
+      "answer": "Isıya dayanıksız (termolabil) sıvıların sterilizasyonu için.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Sterilizasyon"],
+      "ai_coding": "🤖 Kodlama: F-iltre = F-onksiyonel (Sıvılar)."
+    },
+    {
+      "id": "micro_b1d_194",
+      "question": "Etilen Oksit (Gaz) sterilizasyonu hangi durumlar için tercih edilir?",
+      "answer": "Isıya hassas plastik ve tıbbi malzemeler (Kateter vb.).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Sterilizasyon"],
+      "ai_coding": "🤖 Kodlama: E-tilen = E-kipman (Plastik)."
+    },
+    {
+      "id": "micro_b1d_195",
+      "question": "Dezenfektanların gücünü ölçen katsayı?",
+      "answer": "Fenol Katsayısı.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Dezenfeksiyon"],
+      "ai_coding": "🤖 Kodlama: F-enol = F-ark katsayısı."
+    },
+    {
+      "id": "micro_b1d_196",
+      "question": "Alkollerin dezenfektan olarak en etkili olduğu (%) oran?",
+      "answer": "%70lik solüsyonlar. (Su varlığı protein denatürasyonunu artırır).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Dezenfeksiyon"],
+      "ai_coding": "🤖 Kodlama: %-7-0. En septik."
+    },
+    {
+      "id": "micro_b1d_197",
+      "question": "Glikopeptit (Vankomisin) antibiyotiklerin etki mekanizması?",
+      "answer": "Hücre duvarı sentezinde D-Ala-D-Ala kısmına bağlanarak transpeptidasyonu engellemek.",
+      "difficulty": "Orta",
+      "tags": ["Antibiyotikler", "Temel"],
+      "ai_coding": "🤖 Kodlama: V-ankomisin = A-la-A-la."
+    },
+    {
+      "id": "micro_b1d_198",
+      "question": "Beta-laktam antibiyotiklerin ana hedefi nedir?",
+      "answer": "PBP (Penisilin Bağlayan Proteinler) / Transpeptidazlar.",
+      "difficulty": "Kolay",
+      "tags": ["Antibiyotikler", "Temel"],
+      "ai_coding": "🤖 Kodlama: B-eta = P-BP."
+    },
+    {
+      "id": "micro_b1d_199",
+      "question": "Direnç mekanizması: 'Efluks Pompa' ne işe yarar?",
+      "answer": "Hücre içine giren antibiyotiği dışarı atar. (Özellikle Tetrasiklin direnci).",
+      "difficulty": "Orta",
+      "tags": ["Direnç", "Temel"],
+      "ai_coding": "🤖 Kodlama: E-fluks = E-ksit (Dışarı)."
+    },
+    {
+      "id": "micro_b1d_200",
+      "question": "Bakteriyostatik antibiyotik ne demektir?",
+      "answer": "Bakterinin büyümesini durdurur ancak doğrudan öldürmez (Immun sistem yardımı gerekir).",
+      "difficulty": "Kolay",
+      "tags": ["Tedavi", "Temel"],
+      "ai_coding": "🤖 Kodlama: S-tatik = S-abit (Durur)."
+    }
+  ]
+}

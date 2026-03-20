@@ -1,0 +1,406 @@
+{
+  "subject": "Mikrobiyoloji",
+  "chapter": "Temel Mikrobiyoloji (Batch 2A) - Genetik & Fizyoloji",
+  "flashcards": [
+    {
+      "id": "micro_b2a_201",
+      "question": "Bakterilerde 'Hfr' (High frequency of recombination) suşu ne demektir?",
+      "answer": "F plazmidinin bakteriyel genoma (kromozoma) entegre olduğu suş.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Genetik"],
+      "ai_coding": "🤖 Kodlama: HfR = H-ızlı R-ekombinasyon (Kromozom aktardığı için)."
+    },
+    {
+      "id": "micro_b2a_202",
+      "question": "F' (F-prime) plazmidi nedir?",
+      "answer": "Kromozoma entegre olan F plazmidinin tekrar ayrılırken yanına bir miktar konakçı genini de aldığı plazmid.",
+      "difficulty": "Zor",
+      "tags": ["Temel", "Genetik"],
+      "ai_coding": "🤖 Kodlama: F' = F-plus (Artı gen)."
+    },
+    {
+      "id": "micro_b2a_203",
+      "question": "Gen aktarım yöntemleri arasında 'En dirençli' olan hangisidir (Dış ortama en dayanıklı)?",
+      "answer": "Transdüksiyon (Faj kılıfı DNAyı korur).",
+      "difficulty": "Zor",
+      "tags": ["Temel", "Genetik"],
+      "ai_coding": "🤖 Kodlama: T-ransdüksiyon = T-ank gibi dayanıklı (Zırhlı faj)."
+    },
+    {
+      "id": "micro_b2a_204",
+      "question": "Bakteriyel genomda 'İnserksiyon Dizileri' (IS) ne demektir?",
+      "answer": "Sadece transpozisyon için gerekli genleri taşıyan en basit transpozonlar.",
+      "difficulty": "Zor",
+      "tags": ["Temel", "Genetik"],
+      "ai_coding": "🤖 Kodlama: IS = I-nsert (Sadece yerleştirir)."
+    },
+    {
+      "id": "micro_b2a_205",
+      "question": "Bakteriyel 'Operon' yapısı nedir?",
+      "answer": "Aynı yolakta çalışan birden fazla genin tek bir promotor tarafından kontrol edilmesi.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Genetik"],
+      "ai_coding": "🤖 Kodlama: Operon = O-perasyon merkezi (Tek komuta)."
+    },
+    {
+      "id": "micro_b2a_206",
+      "question": "Bakterilerde protein sentezi sırasında 30S ve 50S ribozomun birleşmesini ne sağlar?",
+      "answer": "Başlangıç faktörleri ve GTP.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Fizyoloji"],
+      "ai_coding": "🤖 Kodlama: 30 + 50 = 80 (Ökaryot gibi değil, 70S oluşur!)."
+    },
+    {
+      "id": "micro_b2a_207",
+      "question": "Aminoglikozidlerin etki ettiği ribozom alt ünitesi?",
+      "answer": "30S ribozom.",
+      "difficulty": "Kolay",
+      "tags": ["Antibiyotikler", "Temel"],
+      "ai_coding": "🤖 Kodlama: A-30. Aminoglikozid-30S."
+    },
+    {
+      "id": "micro_b2a_208",
+      "question": "Makrolid ve Klindamisin'in etki ettiği ribozom alt ünitesi?",
+      "answer": "50S ribozom.",
+      "difficulty": "Kolay",
+      "tags": ["Antibiyotikler", "Temel"],
+      "ai_coding": "🤖 Kodlama: M-50. Makrolid-50S."
+    },
+    {
+      "id": "micro_b2a_209",
+      "question": "Hücre duvarı sentezinde son basamak olan 'Çapraz Bağlanmayı' (Transpeptidasyon) hangi enzim yapar?",
+      "answer": "Transpeptidaz (PBP).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Hücre Duvarı"],
+      "ai_coding": "🤖 Kodlama: T-ranspeptidaz = T-eşkilatçı (Bağlayan)."
+    },
+    {
+      "id": "micro_b2a_210",
+      "question": "Penisilinlerin (Beta-laktamlar) 'Litik' etkisi neye bağlıdır?",
+      "answer": "Transpeptidasyonu bozmanın yanı sıra 'Otolizin' enzimlerini aktive etmelerine.",
+      "difficulty": "Zor",
+      "tags": ["Antibiyotikler", "Temel"],
+      "ai_coding": "🤖 Kodlama: Pen-i-S-ilin = O-to-L-izin."
+    },
+    {
+      "id": "micro_b2a_211",
+      "question": "Gram negatiflerde endotoksin (LPS) hangi tabakada bulunur?",
+      "answer": "Dış Membran (Outer Membrane).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Hücre Duvarı"],
+      "ai_coding": "🤖 Kodlama: D-ış = E-ndotoksin."
+    },
+    {
+      "id": "micro_b2a_212",
+      "question": "Gram negatiflerde 'Porin' kanalları nerede bulunur ve ne işe yarar?",
+      "answer": "Dış membranda; hidrofilik maddelerin (antibiyotik dahil) geçişini sağlar.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Hücre Duvarı"],
+      "ai_coding": "🤖 Kodlama: P-orin = P-encere."
+    },
+    {
+      "id": "micro_b2a_213",
+      "question": "Bakterilerde enerji üretiminden (ATP) sorumlu yapı hangisidir?",
+      "answer": "Sitoplazmik Membran (Mezozomlar üzerinde).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Fizyoloji"],
+      "ai_coding": "🤖 Kodlama: M-ezozom = M-itokondri benzeri."
+    },
+    {
+      "id": "micro_b2a_214",
+      "question": "Süperoksit dismutaz ve Katalaz enzimleri hangi bakterilerde YOKTUR?",
+      "answer": "Obligat Anaeroplar (Oksijene dayanamazlar).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Fizyoloji"],
+      "ai_coding": "🤖 Kodlama: A-naerop = A-nzimsiz (Anti-oksidansız)."
+    },
+    {
+      "id": "micro_b2a_215",
+      "question": "Hangi madde sporu öldürmek için (Sterilizasyon) gereklidir?",
+      "answer": "Yüksek Isı (Otoklav) / İyonize Radyasyon / Glutaraldehit.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Sterilizasyon"],
+      "ai_coding": "🤖 Kodlama: S-por = S-terilizasyon."
+    },
+    {
+      "id": "micro_b2a_216",
+      "question": "Pastörizasyon yöntemi neyi hedefler?",
+      "answer": "Sıvı gıdalardaki (süt vb.) patojenleri yok etmeyi, sporu öldürmeyi hedeflemez.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Sterilizasyon"],
+      "ai_coding": "🤖 Kodlama: P-astörizasyon = P-atojen temizliği."
+    },
+    {
+      "id": "micro_b2a_217",
+      "question": "Tyndallizasyon nedir?",
+      "answer": "Isıya duyarlı maddelerin 3 gün üst üste 100°C'ye ısıtılarak sporların öldürülmesi yöntemi.",
+      "difficulty": "Zor",
+      "tags": ["Temel", "Sterilizasyon"],
+      "ai_coding": "🤖 Kodlama: T-yndallizasyon = T-ertipli ısıtma."
+    },
+    {
+      "id": "micro_b2a_218",
+      "question": "Fiziksel dezenfeksiyon yöntemi olan 'Filtrasyon'da en sık kullanılan gözenek çapı?",
+      "answer": "0.22 mikron (Bakterileri tutar ama virüsleri/mikoplazmaları kaçırabilir).",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Dezenfeksiyon"],
+      "ai_coding": "🤖 Kodlama: 0.22. İki ileri bir geri (Bakteri yok)."
+    },
+    {
+      "id": "micro_b2a_219",
+      "question": "Klorlu bileşikler (Çamaşır suyu) dezenfeksiyonu nasıl sağlar?",
+      "answer": "Oksidasyon yaparak enzimlerin SH gruplarını bozar.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Dezenfeksiyon"],
+      "ai_coding": "🤖 Kodlama: K-lor = O-ksidasyon."
+    },
+    {
+      "id": "micro_b2a_220",
+      "question": "Bakteriyel 'Siderofor'lar ne işe yarar?",
+      "answer": "Ortamdaki Demir (Fe) iyonlarını bağlayıp hücre içine taşımayı sağlar.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Fizyoloji"],
+      "ai_coding": "🤖 Kodlama: S-iderofor = D-emir 'S'evici."
+    },
+    {
+      "id": "micro_b2a_221",
+      "question": "Gram boyamada Gram pozitiflerin 'Mor' görünmesinin nedeni?",
+      "answer": "Peptidoglikan tabakasının kalınlığı ve alkolle dekolorize olmaması (Boya-iyot kompleksini tutması).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Boyama"],
+      "ai_coding": "🤖 Kodlama: G (+) = G-üçlü mor."
+    },
+    {
+      "id": "micro_b2a_222",
+      "question": "Negatif boyama (Çini mürekkebi) en çok neyi görmek için kullanılır?",
+      "answer": "Kapsülü (Kapsül boya almaz, fon karanlıktır).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Mikroskopi"],
+      "ai_coding": "🤖 Kodlama: Ç-ini = K-apsül."
+    },
+    {
+      "id": "micro_b2a_223",
+      "question": "Elektron mikroskobunda virüslerin yüzeyini incelemek için kullanılan yöntem?",
+      "answer": "Negatif boyama.",
+      "difficulty": "Zor",
+      "tags": ["Temel", "Viroloji"],
+      "ai_coding": "🤖 Kodlama: E-M = N-egatif."
+    },
+    {
+      "id": "micro_b2a_224",
+      "question": "Moleküler yöntemlerden 'PCR' (Polimeraz Zincir Reaksiyonu) hangi enzime dayanır?",
+      "answer": "Taq Polimeraz (Isıya dayanıklı).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Laboratuvar"],
+      "ai_coding": "🤖 Kodlama: T-aq = T-eşhis."
+    },
+    {
+      "id": "micro_b2a_225",
+      "question": "Doku kültürü yapılamayan veya antijen aranmayan durumlarda virüs tanısında neye bakılır?",
+      "answer": "Spesifik Antikor Titresi (Seroloji).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Tanı"],
+      "ai_coding": "🤖 Kodlama: A-ntikor = A-na-yol."
+    },
+    {
+      "id": "micro_b2a_226",
+      "question": "Hücre duvarında 'Teikoik Asit' bulunan bakteriler hangileridir?",
+      "answer": "Sadece Gram Pozitifler.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Hücre Duvarı"],
+      "ai_coding": "🤖 Kodlama: T-eikoik = P-ozitif."
+    },
+    {
+      "id": "micro_b2a_227",
+      "question": "Bakteriyel genetik: Plazmidler kendi kendine replike olabilir mi?",
+      "answer": "Evet, otonom replikasyon yetenekleri vardır.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Genetik"],
+      "ai_coding": "🤖 Kodlama: P-lazmid = P-rofesyonel (Bağımsız)."
+    },
+    {
+      "id": "micro_b2a_228",
+      "question": "Transkripsiyon (RNA sentezi) sırasında RNA polimerazın promotora bağlanmasını ne sağlar?",
+      "answer": "Sigma faktörü.",
+      "difficulty": "Zor",
+      "tags": ["Temel", "Fizyoloji"],
+      "ai_coding": "🤖 Kodlama: R-NA = S-igma."
+    },
+    {
+      "id": "micro_b2a_229",
+      "question": "Bakterilerde 'Şaperon' (Chaperone) proteinlerin görevi?",
+      "answer": "Yeni sentezlenen proteinlerin düzgün katlanmasını (folding) sağlamak.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Fizyoloji"],
+      "ai_coding": "🤖 Kodlama: Ş-aperon = Ş-ekillendirici."
+    },
+    {
+      "id": "micro_b2a_230",
+      "question": "Bakteriyel metabolizma: 'Fermantasyon' sonucunda son elektron alıcısı nedir?",
+      "answer": "Organik bir molekül (Pruvat vb.).",
+      "difficulty": "Zor",
+      "tags": ["Temel", "Fizyoloji"],
+      "ai_coding": "🤖 Kodlama: F-ermantasyon = O-rganik."
+    },
+    {
+      "id": "micro_b2a_231",
+      "question": "Katalaz testi hangi ayırımı yapmak için klasiktir?",
+      "answer": "Stafilokok (+) ve Streptokok (-) ayırımı.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Laboratuvar"],
+      "ai_coding": "🤖 Kodlama: K-atalaz = K-öksüz (Streptokok değil)."
+    },
+    {
+      "id": "micro_b2a_232",
+      "question": "Koagülaz testi neyi saptar?",
+      "answer": "S. aureus (+) ile diğer KNS (-)leri ayırır.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Laboratuvar"],
+      "ai_coding": "🤖 Kodlama: K-oagülaz = A-ureus."
+    },
+    {
+      "id": "micro_b2a_233",
+      "question": "TSI (Triple Sugar Iron) besiyerinde 'Gaz üretimi' neyi gösterir?",
+      "answer": "Hücre içinde fermantasyon sırasında H2 ve CO2 çıktığını.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Laboratuvar"],
+      "ai_coding": "🤖 Kodlama: T-S-I = G-az."
+    },
+    {
+      "id": "micro_b2a_234",
+      "question": "IMViC testleri (Indol, Metil kırmızısı, Voges-Proskauer, Sitrat) ne için kullanılır?",
+      "answer": "Enterobacteriaceae (Gram negatif bağırsak bakterileri) tür ayırımı için.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Laboratuvar"],
+      "ai_coding": "🤖 Kodlama: İ-M-V-İ-C = E-nterikler."
+    },
+    {
+      "id": "micro_b2a_235",
+      "question": "E. coli için IMViC profili nasıldır?",
+      "answer": "++-- (Indol +, Metil Kırmızı +, VP -, Sitrat -).",
+      "difficulty": "Zor",
+      "tags": ["Temel", "Laboratuvar"],
+      "ai_coding": "🤖 Kodlama: E. coli = İki artı, iki eksi."
+    },
+    {
+      "id": "micro_b2a_236",
+      "question": "Bakterilerde 'Kemotaksi' ne demektir?",
+      "answer": "Kimyasal uyaranlara karşı kamçı yardımıyla hareket etme.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Fizyoloji"],
+      "ai_coding": "🤖 Kodlama: K-emotaksi = K-imyasal taksi."
+    },
+    {
+      "id": "micro_b2a_237",
+      "question": "Hücre iskeleti olmayan canlılar olan bakterilerde hücre şeklini ne belirler?",
+      "answer": "Hücre Duvarı (Peptidoglikan yapısı).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Morfoloji"],
+      "ai_coding": "🤖 Kodlama: D-uvar = Ş-ekil."
+    },
+    {
+      "id": "micro_b2a_238",
+      "question": "Bakterilerde 'Murein Hidrolaz'lar (Otolizinler) ne işe yarar?",
+      "answer": "Yeni hücre duvarı sentezi sırasında eski peptidoglikanı parçalamaya yarar.",
+      "difficulty": "Zor",
+      "tags": ["Temel", "Hücre Duvarı"],
+      "ai_coding": "🤖 Kodlama: O-tolizin = O-to-parçalama."
+    },
+    {
+      "id": "micro_b2a_239",
+      "question": "Plazmoidsiz bakteriye plazmid aktarımı (Konjugasyon) sonrası yeni bakteri ne olur?",
+      "answer": "F+ (Plazmid taşıyıcısı olur).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Genetik"],
+      "ai_coding": "🤖 Kodlama: F (+) = P-ozitif aktarım."
+    },
+    {
+      "id": "micro_b2a_240",
+      "question": "Transdüksiyonda 'Jeneralleşmiş' (Yaygın) ve 'Özelleşmiş' (Specialized) farkı?",
+      "answer": "Litik döngüde rastgele parça (Jeneral), Lizojenik döngüde yanındaki spesifik parça (Özel).",
+      "difficulty": "Zor",
+      "tags": ["Temel", "Genetik"],
+      "ai_coding": "🤖 Kodlama: Ö-zel = L-izojenik."
+    },
+    {
+      "id": "micro_b2a_241",
+      "question": "Bakteriyel direnç: PBP modifikasyonu en çok hangi dirençte görülür?",
+      "answer": "MRSA (S. aureus'taki mecA geni ile PBP2a oluşumu).",
+      "difficulty": "Orta",
+      "tags": ["Direnç", "Bakteriyoloji"],
+      "ai_coding": "🤖 Kodlama: P-BP = M-RSA (Modifiye)."
+    },
+    {
+      "id": "micro_b2a_242",
+      "question": "Direnç: DNA giraz (Topoizomeraz) mutasyonu hangi ilaçlara direnç yapar?",
+      "answer": "Kinolonlar (Siprofloksasin vb.).",
+      "difficulty": "Kolay",
+      "tags": ["Direnç", "Antibiyotikler"],
+      "ai_coding": "🤖 Kodlama: K-inolon = G-iraz."
+    },
+    {
+      "id": "micro_b2a_243",
+      "question": "Virüslerin 'Zarfsız' olması dış ortama dayanıklılığını nasıl etkiler?",
+      "answer": "Zarfsız virüsler deterjan ve asitlere daha dayanıklıdır; dış ortamda uzun süre kalırlar.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Viroloji"],
+      "ai_coding": "🤖 Kodlama: Z-arfsız = Z-ırhlı."
+    },
+    {
+      "id": "micro_b2a_244",
+      "question": "Virüslerin 'Zarflı' olması nasıl bulaş gerektirir?",
+      "answer": "Genellikle yakın temas veya damlacık yoluyla (Çabuk inaktive olurlar).",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Viroloji"],
+      "ai_coding": "🤖 Kodlama: Z-arflı = Z-ayıf."
+    },
+    {
+      "id": "micro_b2a_245",
+      "question": "Virüs replikasyonunda 'Eklips' (Tutulma) dönemi nedir?",
+      "answer": "Virüs hücreye girdikten sonra yeni parçalar sentezlenene kadar geçen, enfeksiyöz virüsün görülmediği süre.",
+      "difficulty": "Orta",
+      "tags": ["Temel", "Viroloji"],
+      "ai_coding": "🤖 Kodlama: E-klips = E-k-sis (Görünmezlik)."
+    },
+    {
+      "id": "micro_b2a_246",
+      "question": "Mantar hücre duvarında bulunan ve antifungal ilaçların hedefi olan yapı?",
+      "answer": "Ergosterol (Hücre zarı) ve Glukan/Kitin (Hücre duvarı).",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Mikoloji"],
+      "ai_coding": "🤖 Kodlama: E-rgosterol = M-antar."
+    },
+    {
+      "id": "micro_b2a_247",
+      "question": "Amfoterisin B'nin etki mekanizması?",
+      "answer": "Ergosterole bağlanarak hücre zarında delikler açmak.",
+      "difficulty": "Kolay",
+      "tags": ["Antibiyotikler", "Mikoloji"],
+      "ai_coding": "🤖 Kodlama: A-mfoterisin = A-çık kapsı (Delik)."
+    },
+    {
+      "id": "micro_b2a_248",
+      "question": "Parazitlerde 'Kist' formu ne işe yarar?",
+      "answer": "Dış ortamda hayatta kalmayı ve enfeksiyonun bulaşmasını sağlar.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Parazitoloji"],
+      "ai_coding": "🤖 Kodlama: K-ist = K-oruma."
+    },
+    {
+      "id": "micro_b2a_249",
+      "question": "Parazitlerde 'Trofozoit' formu nedir?",
+      "answer": "Aktif olarak beslenen, çoğalan ve patojenik olan form.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Parazitoloji"],
+      "ai_coding": "🤖 Kodlama: T-rofozoit = T-ehlikeli (Aktif)."
+    },
+    {
+      "id": "micro_b2a_250",
+      "question": "Protozoonlarda 'Kamçı' ne işe yarar?",
+      "answer": "Hareket ve bazen gıda yakalama.",
+      "difficulty": "Kolay",
+      "tags": ["Temel", "Parazitoloji"],
+      "ai_coding": "🤖 Kodlama: K-amçı = K-oşma."
+    }
+  ]
+}

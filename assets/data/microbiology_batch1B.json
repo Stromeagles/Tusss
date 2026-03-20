@@ -1,0 +1,406 @@
+{
+  "subject": "Mikrobiyoloji",
+  "chapter": "Bakteriyoloji (Batch 1B) - Gram Negatifler & Zoonozlar",
+  "flashcards": [
+    {
+      "id": "micro_b1b_051",
+      "question": "H. influenzae'nın üremesi için besiyerine eklenmesi gereken X ve V faktörleri nelerdir?",
+      "answer": "X faktörü: Hemin, V faktörü: NAD.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Haemophilus"],
+      "ai_coding": "🤖 Kodlama: X = He-mi-n (10), V = NAD (5). Toplam 15 gün (faktör) tatil!"
+    },
+    {
+      "id": "micro_b1b_052",
+      "question": "Haemophilus ducreyi'nin neden olduğu ağrılı genital ülser tablosu nedir?",
+      "answer": "Yumuşak Şankr (Şankroid).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Haemophilus"],
+      "ai_coding": "🤖 Kodlama: Du-creyi = 'Do cry' (Ağlatır/Ağrılı)."
+    },
+    {
+      "id": "micro_b1b_053",
+      "question": "Bordetella pertussis'in (Boğmaca) lenfositoza yol açan toksini hangisidir?",
+      "answer": "Boğmaca Toksini (PT) - Adenilat siklazı uyararak cAMP artırır.",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Boğmaca"],
+      "ai_coding": "🤖 Kodlama: Boğmaca = B-ol cAMP!"
+    },
+    {
+      "id": "micro_b1b_054",
+      "question": "Legionella pneumophila enfeksiyonu (Lejyoner Hastalığı) tipik olarak hangi yolla bulaşır?",
+      "answer": "Aerosol yoluyla (Klima, su sistemleri, soğutma kuleleri).",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Legionella"],
+      "ai_coding": "🤖 Kodlama: L-egionella = L-ava-b-o / Klima suyu."
+    },
+    {
+      "id": "micro_b1b_055",
+      "question": "Brucella türleri arasında insanda en ağır ve en sık kronikleşen enfeksiyonu hangisi yapar?",
+      "answer": "B. melitensis.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Brucella"],
+      "ai_coding": "🤖 Kodlama: M-elitensis = M-e-e (Keçi) ve M-ortal (Ağır)."
+    },
+    {
+      "id": "micro_b1b_056",
+      "question": "Francisella tularensis'in 'Glandüler' formunda ana klinik bulgu nedir?",
+      "answer": "Ağrılı lenfadenopati (Genellikle koltuk altı veya boyun).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Tularemi"],
+      "ai_coding": "🤖 Kodlama: Tu-L-a-remi = L-enfadenopati."
+    },
+    {
+      "id": "micro_b1b_057",
+      "question": "Yersinia pestis'in (Veba) boyanmasında görülen karakteristik görüntü?",
+      "answer": "Bipolar boyanma (Çengelli iğne görüntüsü).",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Veba"],
+      "ai_coding": "🤖 Kodlama: P-estis = P-in (İğne)."
+    },
+    {
+      "id": "micro_b1b_058",
+      "question": "Pasteurella multocida hangi besiyerinde üremez, hangisinde ürer?",
+      "answer": "MacConkey'de üremez, Kanlı agarda 'küçük, mukoid koloniler' yapar.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Pasteurella"],
+      "ai_coding": "🤖 Kodlama: P-asteurella = P-et (Evcil hayvan) ve P-embe (MacConkey) sevmez."
+    },
+    {
+      "id": "micro_b1b_059",
+      "question": "E. coli'nin (ETEC) sıcağa duyarlı (LT) ve sıcağa dayanıklı (ST) toksinleri hangi ikincil haberciyi artırır?",
+      "answer": "LT: cAMP, ST: cGMP.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "E. coli"],
+      "ai_coding": "🤖 Kodlama: L-A (LT-cAMP) / S-G (ST-cGMP). 'LA - SG' (Uzaklaş/İshal)."
+    },
+    {
+      "id": "micro_b1b_060",
+      "question": "Klebsiella'nın tipik özellikleri nelerdir?",
+      "answer": "Hareketsizdir, kapsüllüdür ve Laktoz pozitiftir.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Klebsiella"],
+      "ai_coding": "🤖 Kodlama: K-lebsiella = K-apsüllü, K-olay üreyen (Laktoz +), K-ıpırdamaz (Hareketsiz)."
+    },
+    {
+      "id": "micro_b1b_061",
+      "question": "Proteus mirabilis'in idrar yolu enfeksiyonlarında en tipik bulgusu nedir?",
+      "answer": "İdrar pH'sını yükselterek (Üreaz +) Staghorn (Geyik boynuzu) taşı yapar.",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Proteus"],
+      "ai_coding": "🤖 Kodlama: P-roteus = P-H artırır."
+    },
+    {
+      "id": "micro_b1b_062",
+      "question": "Serratia marcescens'in kültürdeki karakteristik rengi nedir?",
+      "answer": "Kırmızı (Prodigiosin pigmenti).",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Serratia"],
+      "ai_coding": "🤖 Kodlama: S-erratia = S-alça (Kırmızı)."
+    },
+    {
+      "id": "micro_b1b_063",
+      "question": "Shigella türlerinde Shiga Toksini (Stx) hangi mekanizmayla protein sentezini durdurur?",
+      "answer": "60S ribozomun 28S rRNA kısmını parçalayarak.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Shigella"],
+      "ai_coding": "🤖 Kodlama: S-higa = S-eksen (60S üzerine etki, 28 parça)."
+    },
+    {
+      "id": "micro_b1b_064",
+      "question": "Salmonella typhi'nin Widal testinde bakılan O ve H antijenleri neyi ifade eder?",
+      "answer": "O: Somatik (Hücre duvarı), H: Kirpik (Flagella).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Salmonella"],
+      "ai_coding": "🤖 Kodlama: H = H-areket (Kirpik)."
+    },
+    {
+      "id": "micro_b1b_065",
+      "question": "Campylobacter jejuni'nin üremesi için gerekli sıcaklık ve atmosfer koşulu?",
+      "answer": "42°C (Mikroaerofilik ortam).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Campylobacter"],
+      "ai_coding": "🤖 Kodlama: C-ampy = C-ehennem (42 derece) sıcaklığı."
+    },
+    {
+      "id": "micro_b1b_066",
+      "question": "Helicobacter pylori tedavisinde kullanılan ana ajan kombinasyonu (Üçlü Tedavi)?",
+      "answer": "PPI + Klaritromisin + Amoksisilin (veya Metronidazol).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "H. pylori"],
+      "ai_coding": "🤖 Kodlama: H-P-A. H-elico P-PI A-moksisilin."
+    },
+    {
+      "id": "micro_b1b_067",
+      "question": "Vibrio parahaemolyticus tipik olarak nasıl bulaşır?",
+      "answer": "Deniz ürünleri (Özellikle çiğ istiridye, karides) tüketimiyle.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Vibrio"],
+      "ai_coding": "🤖 Kodlama: P-arahaemolyticus = P-alamut/Balık."
+    },
+    {
+      "id": "micro_b1b_068",
+      "question": "Pseudomonas'ın kistik fibrozisli hastalarda yaptığı kronik kolonizasyonun nedeni nedir?",
+      "answer": "Aljinat (Mücoid ekzopolisakkarit) üretimi ve biyofilm oluşumu.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Pseudomonas"],
+      "ai_coding": "🤖 Kodlama: Al-J-inat = İ-natçı koloni."
+    },
+    {
+      "id": "micro_b1b_069",
+      "question": "Burkholderia cepacia kompleksinin en önemli özelliği?",
+      "answer": "Kistik fibrozisli hastalarda 'CEP' (Cepacia Syndrome) denilen ağır tabloya yol açması.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Burkholderia"],
+      "ai_coding": "🤖 Kodlama: B-urkholderia = B-etiketi (İyi bilinmeli)."
+    },
+    {
+      "id": "micro_b1b_070",
+      "question": "Stenotrophomonas maltophilia tedavisinde ilk seçenek?",
+      "answer": "Trimetoprim-Sülfametoksazol (TMP-SMX).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Stenotrophomonas"],
+      "ai_coding": "🤖 Kodlama: S-tenotrophomonas = S-eptrin (TMP-SMX)."
+    },
+    {
+      "id": "micro_b1b_071",
+      "question": "Acinetobacter baumannii'nin en kritik direnç mekanizması nedir?",
+      "answer": "Karbapenemaz üretimi (OXA-23 vb.).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Acinetobacter"],
+      "ai_coding": "🤖 Kodlama: A-cinetobacter = A-ğır dirençli (Yoğun bakım)."
+    },
+    {
+      "id": "micro_b1b_072",
+      "question": "Bacteroides fragilis'in kapsül yapısı neye yol açar?",
+      "answer": "Abse oluşumunu doğrudan tetikler (Immunojeniktir).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Bacteroides"],
+      "ai_coding": "🤖 Kodlama: B-ragilis = B-üyük abse."
+    },
+    {
+      "id": "micro_b1b_073",
+      "question": "Fusobacterium nucleatum'un mikroskobik görüntüsü?",
+      "answer": "İğ şeklinde (Mekik), ince ve uzun uçlu.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Anaeroplar"],
+      "ai_coding": "🤖 Kodlama: F-usobacterium = F-ilit (İnce)."
+    },
+    {
+      "id": "micro_b1b_074",
+      "question": "Prevotella melaninogenica'nın karakteristik kültürel bulgusu?",
+      "answer": "Koyu kahverengi-siyah pigment (Melanin benzeri).",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Anaeroplar"],
+      "ai_coding": "🤖 Kodlama: M-elaninogenica = M-elanin (Siyah)."
+    },
+    {
+      "id": "micro_b1b_075",
+      "question": "Gardnerella vaginalis testi için kullanılan 'Whiff Testi' (Koku Testi) nasıl yapılır?",
+      "answer": "Vajinal akıntıya %10 KOH eklendiğinde 'bayat balık kokusu' çıkması.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Gardnerella"],
+      "ai_coding": "🤖 Kodlama: W-hiff = W-albalık kokusu!"
+    },
+    {
+      "id": "micro_b1b_076",
+      "question": "C. trachomatis'in L1, L2, L3 serotipleri hangi hastalığı yapar?",
+      "answer": "Lenfogranuloma venereum (LGV).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Chlamydia"],
+      "ai_coding": "🤖 Kodlama: L = L-enf düğümü büyümesi."
+    },
+    {
+      "id": "micro_b1b_077",
+      "question": "Chlamydia psittaci insana nasıl bulaşır?",
+      "answer": "Kuş (Papağan vb.) dışkılarının inhalasyonuyla.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Chlamydia"],
+      "ai_coding": "🤖 Kodlama: P-sittaci = P-apağan."
+    },
+    {
+      "id": "micro_b1b_078",
+      "question": "Mycoplasma pneumoniae enfeksiyonunda görülen 'Soğuk Aglütininler' hangi antijene karşıdır?",
+      "answer": "Eritrosit 'I' antijenine karşı (IgM yapısında).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Mycoplasma"],
+      "ai_coding": "🤖 Kodlama: M-ycoplasma = I-antijeni."
+    },
+    {
+      "id": "micro_b1b_079",
+      "question": "Ureaplasma urealyticum genital sistemde neye yol açar?",
+      "answer": "Non-gonokoksik üretrit (NGÜ) ve taş oluşumu (Üreaz +).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Ureaplasma"],
+      "ai_coding": "🤖 Kodlama: U-re-a-p-l-a-s-m-a = U-reatit ve Taş."
+    },
+    {
+      "id": "micro_b1b_080",
+      "question": "Treponema pallidum tanısında 'Karanlık Saha Mikroskopisi' yapılamıyorsa ne kullanılır?",
+      "answer": "Direkt Floresan Antikor (DFA-TP) testi.",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Spiroketler"],
+      "ai_coding": "🤖 Kodlama: T-reponema = T-eşhis floresanla."
+    },
+    {
+      "id": "micro_b1b_081",
+      "question": "Sifilizde 'Jarisch-Herxheimer' reaksiyonu nedir?",
+      "answer": "Tedavi (Penisilin) sonrası bakterilerin hızlı ölümüyle açığa çıkan toksinlere bağlı ateş ve şok tablosu.",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Sifiliz"],
+      "ai_coding": "🤖 Kodlama: J-H reaksiyonu = J-andarma baskını (Ani şok)."
+    },
+    {
+      "id": "micro_b1b_082",
+      "question": "Borrelia burgdorferi hangi hastalığa yol açar ve bulaştırıcısı nedir?",
+      "answer": "Lyme Hastalığı; Ixodes kenesi.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Borrelia"],
+      "ai_coding": "🤖 Kodlama: L-Y-M-E = L-yme (Kenenin hediyesi)."
+    },
+    {
+      "id": "micro_b1b_083",
+      "question": "Bartonella henselae hangi tabloya yol açar?",
+      "answer": "Kedi Tırmalaması Hastalığı (ve HIV+'lerde Basiller Anjiyomatoz).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Bartonella"],
+      "ai_coding": "🤖 Kodlama: H-enselae = H-ayvan tırmalaması."
+    },
+    {
+      "id": "micro_b1b_084",
+      "question": "Cary-Blair besiyeri ne için kullanılır?",
+      "answer": "Gaita örneklerinin (Vibrio, Salmonella vb.) transportu için.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Transport"],
+      "ai_coding": "🤖 Kodlama: C-ary-B-lair = G-aita-T-ransport."
+    },
+    {
+      "id": "micro_b1b_085",
+      "question": "Löwenstein-Jensen besiyeri hangi etken için karakteristiktir?",
+      "answer": "Mycobacterium tuberculosis (Tüberküloz).",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Tüberküloz"],
+      "ai_coding": "🤖 Kodlama: L-öwenstein = T-bc."
+    },
+    {
+      "id": "micro_b1b_086",
+      "question": "Bacteroides bile-esculin agar (BBE) hangi tür için seçicidir?",
+      "answer": "Bacteroides fragilis grubu.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Anaeroplar"],
+      "ai_coding": "🤖 Kodlama: B-B-E = B-acteroides."
+    },
+    {
+      "id": "micro_b1b_087",
+      "question": "Thayer-Martin besiyeri hangi etkenleri izole etmek için kullanılır?",
+      "answer": "Patojen Neisseria (Gonokok ve Meningokok).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Neisseria"],
+      "ai_coding": "🤖 Kodlama: T-M = N-eisseria."
+    },
+    {
+      "id": "micro_b1b_088",
+      "question": "Tellüritli besiyeri (Tinsdale) hangisi için tercih edilir?",
+      "answer": "Corynebacterium diphtheriae.",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Difteri"],
+      "ai_coding": "🤖 Kodlama: T-ellürit = D-ifteri."
+    },
+    {
+      "id": "micro_b1b_089",
+      "question": "Eaton Agarı hangi etkenin üretilmesi için spesifiktir?",
+      "answer": "Mycoplasma pneumoniae.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Mycoplasma"],
+      "ai_coding": "🤖 Kodlama: E-aton = M-ycoplasma."
+    },
+    {
+      "id": "micro_b1b_090",
+      "question": "Tellüridli kanlı agar (Tellurite agar) üzerinde 'potasyum tellüridi' indirgeyerek siyah koloni yapan?",
+      "answer": "C. diphtheriae.",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Difteri"],
+      "ai_coding": "🤖 Kodlama: T-ellürid = Siyah koloni."
+    },
+    {
+      "id": "micro_b1b_091",
+      "question": "Streptococcus pneumoniae'de 'Quellung Reaksiyonu' (Kapsül Şişme) neyi gösterir?",
+      "answer": "Kapsül varlığını ve serotipini.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Pnömokok"],
+      "ai_coding": "🤖 Kodlama: Q-uellung = Q-apsül."
+    },
+    {
+      "id": "micro_b1b_092",
+      "question": "Staphylococcus epidermidis'in IV kateter vb. cihazlara yapışmasını sağlayan ana faktör?",
+      "answer": "Slaym (Biyofilm) tabakası.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "KNS"],
+      "ai_coding": "🤖 Kodlama: E-pidermidis = S-laym tabakası."
+    },
+    {
+      "id": "micro_b1b_093",
+      "question": "A grubu beta hemolitik streptokokların (S. pyogenes) en önemli 'yayıcı' enzimi?",
+      "answer": "Hiyaluronidaz.",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Streptokok"],
+      "ai_coding": "🤖 Kodlama: H-iyaluronidaz = H-er yere yayan."
+    },
+    {
+      "id": "micro_b1b_094",
+      "question": "Bakteriyel menenjit (Yenidoğan sonrası) tanısında BOS'ta ne görülür?",
+      "answer": "Düşük Glikoz, Yüksek Protein, Lökositoz (PNL hakimiyeti).",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Menenjit"],
+      "ai_coding": "🤖 Kodlama: B-akteri = G-likoz yiyen (Düşük)."
+    },
+    {
+      "id": "micro_b1b_095",
+      "question": "Weil-Felix reaksiyonu hangi hastalık grubunun tanısında kullanılır (Proteus OX antijenleri kullanılır)?",
+      "answer": "Rickettsia (Riketsiyozlar).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Rickettsia"],
+      "ai_coding": "🤖 Kodlama: W-E-İ-L = R-İ-K-E-T-S-İ-Y-A."
+    },
+    {
+      "id": "micro_b1b_096",
+      "question": "Ureaplasma'yı Mycoplasma'dan ayıran en önemli biyokimyasal özellik?",
+      "answer": "Üreaz aktivitesi pozitifliği.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Ureaplasma"],
+      "ai_coding": "🤖 Kodlama: U-re-a = Ü-re."
+    },
+    {
+      "id": "micro_b1b_097",
+      "question": "BOS'ta Gram negatif diplokok görülürse ilk akla gelen etken?",
+      "answer": "N. meningitidis (Meningokok).",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Neisseria"],
+      "ai_coding": "🤖 Kodlama: D-iplokok = M-eningokok."
+    },
+    {
+      "id": "micro_b1b_098",
+      "question": "C. perfringens'in 'Nagler Reaksiyonu' neyi saptar?",
+      "answer": "Alfa-toksin (Lesitinaz) aktivitesini.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "C. perfringens"],
+      "ai_coding": "🤖 Kodlama: N-agler = L-esitinaz."
+    },
+    {
+      "id": "micro_b1b_099",
+      "question": "Burkholderia pseudomallei'nin neden olduğu hastalık?",
+      "answer": "Melioidoz.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Burkholderia"],
+      "ai_coding": "🤖 Kodlama: P-seudomallei = M-elioidoz."
+    },
+    {
+      "id": "micro_b1b_100",
+      "question": "Streptococcus bovis (S. gallolyticus) bakteriyemisi saptanırsa ne araştırılmalıdır?",
+      "answer": "Kolon Kanseri (Gastrointestinal maligniteler).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "S. bovis"],
+      "ai_coding": "🤖 Kodlama: B-ovis = B-ağırsak (Malignite)."
+    }
+  ]
+}

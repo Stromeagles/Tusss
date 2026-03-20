@@ -53,7 +53,28 @@ class SubjectRegistry {
         'assets/data/microbiology_virology_dna.json',
         'assets/data/microbiology_virology_rna.json',
         'assets/data/microbiology_mycology.json',
+        'assets/data/microbiology_mycology_final.json',
         'assets/data/microbiology_parasitology.json',
+        'assets/data/microbiology_bact_cocci.json',
+        'assets/data/microbiology_bact_gramneg_part1.json',
+        'assets/data/microbiology_bact_gramneg_part2.json',
+        'assets/data/microbiology_bact_myco_part1.json',
+        'assets/data/microbiology_bact_others.json',
+        'assets/data/microbiology_bact_spores.json',
+        'assets/data/microbiology_virology_myco_intro.json',
+        'assets/data/microbiology_virology_part1.json',
+        'assets/data/microbiology_virology_part2.json',
+        // ── 500 Yeni Kart (TUS 2023-2025) ──────────────────────────────
+        'assets/data/microbiology_batch1A.json',
+        'assets/data/microbiology_batch1B.json',
+        'assets/data/microbiology_batch1C.json',
+        'assets/data/microbiology_batch1D.json',
+        'assets/data/microbiology_batch2A.json',
+        'assets/data/microbiology_batch2B.json',
+        'assets/data/microbiology_batch2C.json',
+        'assets/data/microbiology_batch3A.json',
+        'assets/data/microbiology_batch3B.json',
+        'assets/data/microbiology_batch4A.json',
       ],
     ),
     SubjectModule(
@@ -69,6 +90,19 @@ class SubjectRegistry {
         'assets/data/pathology_sys2.json',
         'assets/data/pathology_sys3.json',
         'assets/data/pathology_sys4.json',
+        // ── 500 High-Yield TUS Patoloji Kartları ────────────────────────
+        'assets/data/pathology_batch1A.json', // GİS 50 kart
+        'assets/data/pathology_batch1B.json', // GİS son + Hücre Hasarı 50 kart
+        'assets/data/pathology_batch2A.json', // Neoplazi 46 kart
+        'assets/data/pathology_batch2B.json', // Solunum + Üriner 33 kart
+        'assets/data/pathology_batch3A.json', // Kas İskelet + İmmün 33 kart
+        'assets/data/pathology_batch3B.json', // Kadın Genital + Meme + Deri 28 kart
+        'assets/data/pathology_batch4A.json', // Hepatobilier + İnflamasyon + Hemodinamik 19 kart
+        'assets/data/pathology_batch4B.json', // Kardiyovasküler + Hemopoetik + Erkek Genital 20 kart
+        'assets/data/pathology_batch5A.json', // Onarım + Endokrin + Sinir Sistemi 22 kart
+        'assets/data/pathology_batch5B.json', // Solunum + Hepatobilier + Üriner + İmmün 50 kart
+        'assets/data/pathology_batch5C.json', // Meme + Deri + Kadın Genital Ek Kartlar 50 kart
+        'assets/data/pathology_batch5D.json', // Hemodinamik + KV + İnflamasyon + Hemopoetik 50 kart
       ],
     ),
   ];

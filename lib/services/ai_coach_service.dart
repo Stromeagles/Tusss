@@ -31,9 +31,9 @@ class AiCoachService {
       }
     }
 
-    // Her branşın görülmüş kartlarının ortalama easeFactor'ünü hesapla
+    // Her branşın görülmüş kartlarında "Bilemedim" oranını hesapla (yüksek = zayıf)
     String? weakestSubject;
-    double lowestEF = double.infinity;
+    double highestFailRatio = 0.0;
 
     for (final entry in subjectCards.entries) {
       final seen = entry.value
@@ -43,33 +43,33 @@ class AiCoachService {
 
       if (seen.isEmpty) continue; // henüz çalışılmamış branş — atla
 
-      final avgEF =
-          seen.fold(0.0, (sum, c) => sum + c.easeFactor) / seen.length;
+      final failCount = seen.where((c) => c.lastQuality == 1).length;
+      final failRatio = failCount / seen.length;
 
-      if (avgEF < lowestEF) {
-        lowestEF = avgEF;
+      if (failRatio > highestFailRatio) {
+        highestFailRatio = failRatio;
         weakestSubject = entry.key;
       }
     }
 
     if (weakestSubject == null) return null;
 
-    // Ortalama EF 2.3'ün altındaysa zorlandığını gösterir
-    if (lowestEF >= 2.3) return null;
+    // Bilemedim oranı %30'un üzerindeyse zorlandığını gösterir
+    if (highestFailRatio < 0.30) return null;
 
     return CoachInsight(
       subjectName: weakestSubject,
-      message: _buildMessage(weakestSubject, lowestEF),
+      message: _buildMessage(weakestSubject, highestFailRatio),
     );
   }
 
-  String _buildMessage(String subject, double avgEF) {
-    if (avgEF < 1.7) {
+  String _buildMessage(String subject, double failRatio) {
+    if (failRatio > 0.60) {
       return 'Dostum, $subject konusundaki bazı kartlar sana direnç gösteriyor. '
           'Bugün o kartlara 10–15 dakika odaklansan çok fark yaratır. '
           'Az ama sık tekrar, uzun vadede çok işe yarıyor! 💪';
     }
-    return '$subject\'da biraz titiz davranıyorsun — bu iyi bir işaret! '
+    return '$subject\'da biraz zorlandığın kartlar var — bu normale! '
         'Bugün o branşı bir kez daha gözden geçirsen yeterli olur. '
         'Başarıyorsun! 🎯';
   }

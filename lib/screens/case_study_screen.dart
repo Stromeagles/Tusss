@@ -14,7 +14,10 @@ class CaseStudyScreen extends StatefulWidget {
   /// Branş düzeyinde filtre.
   final String? subjectId;
 
-  const CaseStudyScreen({super.key, this.topicFilter, this.subjectId});
+  /// Önizleme modu — true ise ilerleme ve SRS kaydedilmez.
+  final bool isPreview;
+
+  const CaseStudyScreen({super.key, this.topicFilter, this.subjectId, this.isPreview = false});
 
   @override
   State<CaseStudyScreen> createState() => _CaseStudyScreenState();
@@ -56,7 +59,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
     }
     if (mounted) {
       setState(() {
-        _cases = cases;
+        _cases = cases..shuffle();
         _loading = false;
       });
     }
@@ -74,14 +77,17 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
       _aiExplanation = null;
       if (answer == _currentCase.correctAnswer) _correctCount++;
     });
-    _progressService.recordCaseAnswer(
-        correct: answer == _currentCase.correctAnswer);
+    if (!widget.isPreview) {
+      _progressService.recordCaseAnswer(
+          caseId: _currentCase.id,
+          correct: answer == _currentCase.correctAnswer);
 
-    // SRS entegrasyonu: doğru → quality 4, yanlış → quality 1
-    final caseId = _currentCase.id;
-    if (caseId.isNotEmpty) {
-      final quality = answer == _currentCase.correctAnswer ? 4 : 1;
-      await _srService.recordAnswer(caseId, quality);
+      // SRS entegrasyonu: doğru → quality 4, yanlış → quality 1
+      final caseId = _currentCase.id;
+      if (caseId.isNotEmpty) {
+        final quality = answer == _currentCase.correctAnswer ? 4 : 1;
+        await _srService.recordAnswer(caseId, quality);
+      }
     }
   }
 

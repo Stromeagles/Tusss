@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -18,7 +17,6 @@ import 'flashcard_screen.dart';
 import 'case_study_screen.dart';
 import 'topic_list_screen.dart';
 import 'hierarchy_screens.dart';
-import 'goal_settings_screen.dart';
 import '../services/ai_coach_service.dart';
 import '../models/sm2_model.dart';
 
@@ -42,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Topic>   _topics   = [];
   bool          _loading  = true;
   int           _navIndex = 0;
-  SrsSummary    _srsSummary = const SrsSummary(newCount: 0, failedCount: 0, learningCount: 0, pocketCount: 0);
+  SrsSummary    _srsSummary = const SrsSummary(newCount: 0, toReviewCount: 0, learnedCount: 0, bookmarkCount: 0);
   CoachInsight? _coachInsight;
 
   @override
@@ -52,44 +50,52 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> _loadData() async {
-    setState(() => _loading = true);
-    final results = await Future.wait([
-      _dataService.loadTopics(subjectId: _selectedSubjectId),
-      _progressService.loadProgress(),
-      SpacedRepetitionService().getAllData(), // SM-2 verisini önbellekle
-    ]);
-    if (mounted) {
-      final topics   = results[0] as List<Topic>;
-      final progress = results[1] as StudyProgress;
-      final sm2Data  = results[2] as Map<String, SM2CardData>;
+    try {
+      setState(() => _loading = true);
+      final results = await Future.wait([
+        _dataService.loadTopics(subjectId: _selectedSubjectId),
+        _progressService.loadProgress(),
+        SpacedRepetitionService().getAllData(), // SM-2 verisini önbellekle
+      ]);
+      if (mounted) {
+        final topics   = results[0] as List<Topic>;
+        final progress = results[1] as StudyProgress;
+        final sm2Data  = results[2] as Map<String, SM2CardData>;
 
-      // Tüm flashcard ve case ID'lerini topla
-      final allIds = <String>[];
-      for (final t in topics) {
-        allIds.addAll(t.flashcards.map((fc) => fc.id));
-        allIds.addAll(t.clinicalCases.map((cc) => cc.id).where((id) => id.isNotEmpty));
+        // Tüm flashcard ve case ID'lerini topla
+        final allIds = <String>[];
+        for (final t in topics) {
+          allIds.addAll(t.flashcards.map((fc) => fc.id));
+          allIds.addAll(t.clinicalCases.map((cc) => cc.id).where((id) => id.isNotEmpty));
+        }
+        // getSummary → getAllData önbellekten döner, ekstra I/O yok
+        final srsSummary = await SpacedRepetitionService().getSummary(
+          allIds,
+          dailyGoal: progress.dailyGoal,
+        );
+        final coachInsight = AiCoachService().analyze(topics, sm2Data);
+
+        setState(() {
+          _topics        = topics;
+          _progress      = progress;
+          _srsSummary    = srsSummary;
+          _coachInsight  = coachInsight;
+          _loading       = false;
+        });
       }
-      // getSummary → getAllData önbellekten döner, ekstra I/O yok
-      final srsSummary = await SpacedRepetitionService().getSummary(
-        allIds,
-        dailyGoal: progress.dailyGoal,
-      );
-      final coachInsight = AiCoachService().analyze(topics, sm2Data);
-
-      setState(() {
-        _topics        = topics;
-        _progress      = progress;
-        _srsSummary    = srsSummary;
-        _coachInsight  = coachInsight;
-        _loading       = false;
-      });
+    } catch (e) {
+      debugPrint('🚨 KRİTİK HATA: Veri yükleme başarısız oldu: $e');
+      if (mounted) {
+        setState(() => _loading = false);
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Veriler yüklenirken bir sorun oluştu. Bazı konular eksik olabilir.')),
+        );
+      }
     }
   }
 
   // ── Computed ──────────────────────────────────────────────────────────────
   int    get _totalFlashcards => _topics.fold(0, (s, t) => s + t.totalFlashcards);
-
-  int get _daysToExam => _progress.daysToExam;
 
   // ── Build ──────────────────────────────────────────────────────────────────
   @override
@@ -144,12 +150,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   const SizedBox(height: 10),
-                                  RepaintBoundary(child: _buildDailyGoal(isDark)),
-                                  const SizedBox(height: 12),
                                   _buildAiCoachNote(isDark),
+                                  if (_coachInsight != null) const SizedBox(height: 12),
+                                  RepaintBoundary(child: _buildKomutaMerkezi(isDark)),
                                   const SizedBox(height: 12),
                                   _buildStreakBanner(isDark),
-                                  RepaintBoundary(child: _buildHeroCard(isDark)),
                                   const SizedBox(height: 20),
                                   _buildQuickActions(isDark),
                                   const SizedBox(height: 26),
@@ -219,41 +224,114 @@ class _HomeScreenState extends State<HomeScreen> {
               final dark = mode == ThemeMode.dark;
               return GestureDetector(
                 onTap: ThemeService.toggle,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(14),
-                  child: BackdropFilter(
-                    filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-                    child: AnimatedContainer(
-                      duration: const Duration(milliseconds: 300),
-                      width: 44, height: 44,
-                      decoration: BoxDecoration(
-                        color: dark
-                            ? AppTheme.cyan.withValues(alpha: 0.12)
-                            : AppTheme.neonPink.withValues(alpha: 0.10),
-                        borderRadius: BorderRadius.circular(14),
-                        border: Border.all(
-                          color: dark
-                              ? AppTheme.cyan.withValues(alpha: 0.30)
-                              : AppTheme.neonPink.withValues(alpha: 0.25),
-                          width: 1,
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                            color: (dark ? AppTheme.cyan : AppTheme.neonPink).withValues(alpha: 0.20),
-                            blurRadius: 10,
-                          ),
-                        ],
-                      ),
-                      child: Icon(
-                        dark ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
-                        color: dark ? AppTheme.cyan : AppTheme.neonPink,
-                        size: 19,
-                      ),
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 400),
+                  curve: Curves.easeInOut,
+                  width: 80, height: 38,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: dark
+                          ? [const Color(0xFF1A1A2E), const Color(0xFF16213E), const Color(0xFF0F3460)]
+                          : [const Color(0xFFFFB347), const Color(0xFFFF6B6B), const Color(0xFFFF8E53)],
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
                     ),
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(
+                      color: dark
+                          ? const Color(0xFF4A90D9).withValues(alpha: 0.5)
+                          : const Color(0xFFFFD93D).withValues(alpha: 0.8),
+                      width: 1.5,
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: dark
+                            ? const Color(0xFF4A90D9).withValues(alpha: 0.35)
+                            : const Color(0xFFFF6B6B).withValues(alpha: 0.40),
+                        blurRadius: 14,
+                        spreadRadius: 0,
+                      ),
+                    ],
+                  ),
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      // Arka plan dekoratif noktalar (yıldız / güneş ışınları)
+                      if (dark) ...[
+                        Positioned(left: 10, top: 8,
+                          child: Container(width: 3, height: 3,
+                            decoration: const BoxDecoration(color: Colors.white70, shape: BoxShape.circle))),
+                        Positioned(left: 18, top: 18,
+                          child: Container(width: 2, height: 2,
+                            decoration: const BoxDecoration(color: Colors.white54, shape: BoxShape.circle))),
+                        Positioned(left: 12, bottom: 8,
+                          child: Container(width: 2, height: 2,
+                            decoration: const BoxDecoration(color: Colors.white38, shape: BoxShape.circle))),
+                      ],
+                      // Kaydırıcı top
+                      AnimatedAlign(
+                        duration: const Duration(milliseconds: 400),
+                        curve: Curves.easeInOut,
+                        alignment: dark ? Alignment.centerRight : Alignment.centerLeft,
+                        child: Container(
+                          margin: const EdgeInsets.all(4),
+                          width: 30, height: 30,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            shape: BoxShape.circle,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withValues(alpha: 0.20),
+                                blurRadius: 6,
+                                offset: const Offset(0, 2),
+                              ),
+                            ],
+                          ),
+                          child: AnimatedSwitcher(
+                            duration: const Duration(milliseconds: 350),
+                            child: Icon(
+                              dark ? Icons.dark_mode_rounded : Icons.light_mode_rounded,
+                              key: ValueKey(dark),
+                              size: 16,
+                              color: dark ? const Color(0xFF1A1A2E) : const Color(0xFFFF8E53),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               );
             },
+          ),
+          const SizedBox(width: 10),
+
+          // Info Button
+          GestureDetector(
+            onTap: () => _showInfoSheet(context, isDark),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(14),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                child: Container(
+                  width: 44, height: 44,
+                  decoration: BoxDecoration(
+                    color: isDark
+                        ? Colors.white.withValues(alpha: 0.06)
+                        : Colors.black.withValues(alpha: 0.04),
+                    borderRadius: BorderRadius.circular(14),
+                    border: Border.all(
+                      color: isDark
+                          ? Colors.white.withValues(alpha: 0.10)
+                          : Colors.black.withValues(alpha: 0.07),
+                      width: 1,
+                    ),
+                  ),
+                  child: Icon(Icons.info_outline_rounded,
+                      color: isDark ? Colors.white : AppTheme.lightTextPrimary, size: 20),
+                ),
+              ),
+            ),
           ),
           const SizedBox(width: 10),
 
@@ -304,97 +382,13 @@ class _HomeScreenState extends State<HomeScreen> {
     ).animate().fadeIn(duration: 600.ms).slideY(begin: -0.08, end: 0);
   }
 
-  // ── Weekly Activity Chart ─────────────────────────────────────────────────
-  Widget _buildWeeklyActivity(bool isDark) {
-    final today = DateTime.now();
-    final days = List.generate(7, (i) => today.subtract(Duration(days: 6 - i)));
-    const dayNames = ['Pt', 'Sa', 'Ça', 'Pe', 'Cu', 'Ct', 'Pz'];
-
-    int maxVal = 1;
-    for (final d in days) {
-      final key =
-          '${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
-      final val = _progress.weeklyStats[key] ?? 0;
-      if (val > maxVal) maxVal = val;
-    }
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'Son 7 Gün',
-          style: GoogleFonts.inter(
-            color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
-            fontSize: 11,
-            fontWeight: FontWeight.w700,
-            letterSpacing: 0.5,
-          ),
-        ),
-        const SizedBox(height: 8),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: List.generate(7, (i) {
-            final d = days[i];
-            final key =
-                '${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
-            final count = _progress.weeklyStats[key] ?? 0;
-            final ratio = count / maxVal;
-            final isToday = d.day == today.day &&
-                d.month == today.month &&
-                d.year == today.year;
-            final color = isToday ? AppTheme.cyan : AppTheme.neonPurple;
-
-            return Column(
-              children: [
-                Container(
-                  width: 28,
-                  height: 48,
-                  decoration: BoxDecoration(
-                    color: isDark
-                        ? Colors.white.withValues(alpha: 0.05)
-                        : Colors.black.withValues(alpha: 0.04),
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  alignment: Alignment.bottomCenter,
-                  child: AnimatedContainer(
-                    duration: const Duration(milliseconds: 600),
-                    curve: Curves.easeOutCubic,
-                    width: 28,
-                    height: count == 0 ? 4 : (ratio * 48).clamp(4.0, 48.0),
-                    decoration: BoxDecoration(
-                      color: count == 0
-                          ? color.withValues(alpha: 0.12)
-                          : color.withValues(alpha: isDark ? 0.80 : 0.70),
-                      borderRadius: BorderRadius.circular(8),
-                      boxShadow: count > 0
-                          ? [
-                              BoxShadow(
-                                  color: color.withValues(alpha: 0.35),
-                                  blurRadius: 8)
-                            ]
-                          : null,
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 5),
-                Text(
-                  dayNames[d.weekday - 1],
-                  style: GoogleFonts.inter(
-                    color: isToday
-                        ? AppTheme.cyan
-                        : (isDark
-                            ? AppTheme.textMuted
-                            : AppTheme.lightTextSecondary),
-                    fontSize: 9,
-                    fontWeight:
-                        isToday ? FontWeight.w800 : FontWeight.w500,
-                  ),
-                ),
-              ],
-            );
-          }),
-        ),
-      ],
+  // ── Info Sheet ────────────────────────────────────────────────────────────
+  void _showInfoSheet(BuildContext context, bool isDark) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (_) => _InfoSheet(isDark: isDark),
     );
   }
 
@@ -472,171 +466,151 @@ class _HomeScreenState extends State<HomeScreen> {
     ).animate().fadeIn(duration: 600.ms, delay: 150.ms).slideX(begin: -0.05, end: 0);
   }
 
-  // ── Hero Card ──────────────────────────────────────────────────────────────
-  Widget _buildHeroCard(bool isDark) {
-    final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
-    final cardBg    = isDark ? AppTheme.surfaceVariant : Colors.white;
-    final cardBorder = isDark ? Colors.white.withValues(alpha: 0.12) : AppTheme.lightDivider;
-    
+  // ── Klasör Bazlı Ana Alan ─────────────────────────────────────────────────
+  Widget _buildKomutaMerkezi(bool isDark) {
+    final toReviewCount = _srsSummary.toReviewCount;
+    final learnedCount  = _srsSummary.learnedCount;
+    final bookmarkCount = _srsSummary.bookmarkCount;
     final newCount      = _srsSummary.newCount;
-    final failedCount   = _srsSummary.failedCount;
-    final learningCount = _srsSummary.learningCount;
-    final pocketCount   = _srsSummary.pocketCount;
+    final hasWork       = toReviewCount + learnedCount + newCount > 0;
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: Container(
-        padding: const EdgeInsets.all(24),
-        decoration: BoxDecoration(
-          color: cardBg,
-          borderRadius: BorderRadius.circular(30),
-          border: Border.all(color: cardBorder, width: 1.5),
-          boxShadow: [
-            BoxShadow(color: AppTheme.shadowColor(isDark), blurRadius: 40, offset: const Offset(0, 15)),
-          ],
-        ),
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+      child: Column(
+        children: [
+          // ── 3 Klasör Kartı ──────────────────────────────────────────────
+          Row(
+            children: [
+              Expanded(child: _FolderCard(
+                label: 'Bilemediklerim',
+                icon: Icons.cancel_rounded,
+                count: toReviewCount,
+                color: AppTheme.error,
+                isDark: isDark,
+                onTap: toReviewCount > 0 ? () async {
+                  await Navigator.push(context, AppRoute.slideUp(
+                    const FlashcardScreen(initialMode: FlashcardMode.failedOnly)));
+                  _loadData();
+                } : null,
+              ).animate().fadeIn(duration: 600.ms, delay: 100.ms).slideY(begin: 0.12, end: 0, curve: Curves.easeOutExpo)),
+              const SizedBox(width: 12),
+              Expanded(child: _FolderCard(
+                label: 'Bildiklerim',
+                icon: Icons.check_circle_rounded,
+                count: learnedCount,
+                color: AppTheme.success,
+                isDark: isDark,
+                onTap: learnedCount > 0 ? () async {
+                  await Navigator.push(context, AppRoute.slideUp(
+                    const FlashcardScreen(initialMode: FlashcardMode.learnedOnly)));
+                  _loadData();
+                } : null,
+              ).animate().fadeIn(duration: 600.ms, delay: 180.ms).slideY(begin: 0.12, end: 0, curve: Curves.easeOutExpo)),
+              const SizedBox(width: 12),
+              Expanded(child: _FolderCard(
+                label: 'Ezberim',
+                icon: Icons.star_rounded,
+                count: bookmarkCount,
+                color: AppTheme.neonGold,
+                isDark: isDark,
+                onTap: bookmarkCount > 0 ? () async {
+                  await Navigator.push(context, AppRoute.slideUp(
+                    const FlashcardScreen(initialMode: FlashcardMode.pocketOnly)));
+                  _loadData();
+                } : null,
+              ).animate().fadeIn(duration: 600.ms, delay: 260.ms).slideY(begin: 0.12, end: 0, curve: Curves.easeOutExpo)),
+            ],
+          ),
+
+          const SizedBox(height: 24),
+
+          // ── HAZIRSAN BAŞLA butonu ────────────────────────────────────────
+          GestureDetector(
+            onTap: hasWork ? () {
+              HapticFeedback.mediumImpact();
+              _startDailyGoalSession();
+            } : null,
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 300),
+              width: double.infinity,
+              height: 64,
+              decoration: BoxDecoration(
+                gradient: hasWork
+                    ? const LinearGradient(
+                        colors: [Color(0xFF0099CC), Color(0xFF4A35CC), Color(0xFF9B2FBF)],
+                        begin: Alignment.centerLeft,
+                        end: Alignment.centerRight,
+                      )
+                    : LinearGradient(
+                        colors: [
+                          AppTheme.cyan.withValues(alpha: 0.20),
+                          AppTheme.neonPurple.withValues(alpha: 0.15),
+                        ],
+                        begin: Alignment.centerLeft,
+                        end: Alignment.centerRight,
+                      ),
+                borderRadius: BorderRadius.circular(32),
+                boxShadow: hasWork
+                    ? [
+                        BoxShadow(
+                          color: const Color(0xFF4A35CC).withValues(alpha: 0.65),
+                          blurRadius: 36,
+                          spreadRadius: 0,
+                          offset: const Offset(0, 12),
+                        ),
+                        BoxShadow(
+                          color: const Color(0xFF0099CC).withValues(alpha: 0.30),
+                          blurRadius: 16,
+                          spreadRadius: 0,
+                          offset: const Offset(0, 4),
+                        ),
+                      ]
+                    : [],
+              ),
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('GÜNLÜK ÖĞRENME DOSYASI',
-                        style: GoogleFonts.inter(color: AppTheme.textSecondary, fontSize: 10, fontWeight: FontWeight.w800, letterSpacing: 1.5)),
-                      const SizedBox(height: 4),
-                      Text('Bugünkü Hedeflerin',
-                        style: GoogleFonts.inter(color: textColor, fontSize: 20, fontWeight: FontWeight.w900, letterSpacing: -0.5)),
+                      Icon(
+                        Icons.rocket_launch_rounded,
+                        color: hasWork ? Colors.white : Colors.white38,
+                        size: 22,
+                      ),
+                      const SizedBox(width: 12),
+                      Text(
+                        'HAZIRSAN BAŞLA',
+                        style: GoogleFonts.inter(
+                          color: hasWork ? Colors.white : Colors.white38,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w900,
+                          letterSpacing: 0.8,
+                        ),
+                      ),
                     ],
                   ),
-                ),
-                _buildScorePrediction(isDark),
-              ],
-            ),
-            const SizedBox(height: 24),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                _buildAnkiCounter('Yeni', newCount, AppTheme.cyan, isDark,
-                  newCount > 0 ? () => Navigator.push(context, AppRoute.slideUp(
-                      FlashcardScreen(
-                        initialMode: FlashcardMode.newOnly,
-                        dailyGoal: _progress.dailyGoal,
-                      ))) : null),
-                _buildAnkiCounter('Bilemedim', failedCount, AppTheme.error, isDark,
-                  failedCount > 0 ? () => Navigator.push(context, AppRoute.slideUp(
-                      const FlashcardScreen(initialMode: FlashcardMode.failedOnly))) : null),
-                _buildAnkiCounter('Bildim', learningCount, AppTheme.neonGold, isDark,
-                  learningCount > 0 ? () => Navigator.push(context, AppRoute.slideUp(
-                      const FlashcardScreen(initialMode: FlashcardMode.learnedOnly))) : null),
-                _buildAnkiCounter('Hafıza', pocketCount, AppTheme.success, isDark,
-                  pocketCount > 0 ? () => Navigator.push(context, AppRoute.slideUp(
-                      const FlashcardScreen(initialMode: FlashcardMode.pocketOnly))) : null),
-              ],
-            ),
-            const SizedBox(height: 24),
-            _StatItem(
-              icon: Icons.timer_outlined,
-              label: 'Sınava Kalan',
-              value: '$_daysToExam Gün',
-              color: AppTheme.neonPink,
-              isDark: isDark,
-            ),
-            const SizedBox(height: 20),
-            _buildWeeklyActivity(isDark),
-            const SizedBox(height: 12),
-            _buildRankingBadge(isDark),
-            if (learningCount > 0 || failedCount > 0 || newCount > 0) ...[
-              const SizedBox(height: 20),
-              SizedBox(
-                width: double.infinity,
-                height: 52,
-                child: ElevatedButton.icon(
-                  onPressed: _navigateToFlashcards,
-                  icon: const Icon(Icons.play_circle_fill_rounded, size: 24),
-                  label: Text(learningCount > 0 || failedCount > 0 ? 'Kritik Kartları Tekrar Et' : 'Günlük Seansı Başlat',
-                    style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 16)),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: learningCount > 0 ? AppTheme.error : AppTheme.cyan,
-                    foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                    elevation: 4,
-                  ),
-                ),
+                ],
               ),
-            ],
-          ],
-        ),
-      ),
-    ).animate().fadeIn(duration: 800.ms).scale(begin: const Offset(0.95, 0.95));
-  }
-
-  Widget _buildAnkiCounter(String label, int count, Color color, bool isDark, VoidCallback? onTap) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Column(
-        children: [
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-            decoration: BoxDecoration(
-              color: color.withValues(alpha: onTap != null ? 0.15 : 0.08),
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: color.withValues(alpha: onTap != null ? 0.40 : 0.20),
-                width: 1.5,
-              ),
+            )
+            .animate(onPlay: (c) => c.repeat(reverse: true))
+            .scale(
+              begin: const Offset(1.0, 1.0),
+              end: const Offset(1.02, 1.02),
+              duration: 2000.ms,
+              curve: Curves.easeInOut,
+            )
+            .then()
+            .shimmer(
+              duration: 2200.ms,
+              delay: 1800.ms,
+              color: Colors.white.withValues(alpha: hasWork ? 0.30 : 0.0),
+              angle: 0.4,
             ),
-            child: Text('$count',
-              style: GoogleFonts.inter(color: color, fontSize: 24, fontWeight: FontWeight.w900)),
-          ),
-          const SizedBox(height: 8),
-          Row(mainAxisSize: MainAxisSize.min, children: [
-            Text(label, style: TextStyle(
-              color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
-              fontSize: 12, fontWeight: FontWeight.w700)),
-            if (onTap != null) ...[
-              const SizedBox(width: 3),
-              Icon(Icons.arrow_forward_ios_rounded, size: 9,
-                color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary),
-            ],
-          ]),
+          ).animate().fadeIn(duration: 700.ms, delay: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutExpo),
         ],
       ),
-    );
-  }
-
-  Widget _buildScorePrediction(bool isDark) {
-    // Tahmini Puan Artışı: (Günlük Saat * Kalan Gün) / 50 
-    final avgHours = _progress.todayGoalHours;
-    final totalPotentialHours = avgHours * _daysToExam;
-    final estimatedPoints = (totalPotentialHours / 60).clamp(1.0, 15.0);
-    final rangeMin = (estimatedPoints * 0.8).floor();
-    final rangeMax = (estimatedPoints * 1.2).ceil();
-
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [AppTheme.neonGold, AppTheme.neonGold.withValues(alpha: 0.8)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-        borderRadius: BorderRadius.circular(20),
-        boxShadow: [
-          BoxShadow(color: AppTheme.neonGold.withValues(alpha: 0.3), blurRadius: 15, offset: const Offset(0, 4)),
-        ],
-      ),
-      child: Column(
-        children: [
-          const Text('Tahmini Puan', style: TextStyle(color: Colors.white, fontSize: 9, fontWeight: FontWeight.w900, letterSpacing: 0.5)),
-          const SizedBox(height: 2),
-          Text('+$rangeMin - $rangeMax',
-            style: GoogleFonts.outfit(color: Colors.white, fontSize: 17, fontWeight: FontWeight.w900)),
-        ],
-      ),
-    );
+    ).animate().fadeIn(duration: 800.ms).scale(begin: const Offset(0.96, 0.96));
   }
 
   // ── Quick Actions ──────────────────────────────────────────────────────────
@@ -653,7 +627,7 @@ class _HomeScreenState extends State<HomeScreen> {
           )),
           const SizedBox(width: 14),
           Expanded(child: _QuickActionCard(
-            title: 'Klinik Vaka', subtitle: 'Random Çözüm',
+            title: 'Klinik Vaka', subtitle: 'Random Sorular',
             icon: Icons.biotech_rounded,
             color: const Color(0xFF79C0FF),
             isDark: isDark, onTap: _navigateToCases,
@@ -733,168 +707,7 @@ class _HomeScreenState extends State<HomeScreen> {
     ).animate().fadeIn(duration: 700.ms, delay: 400.ms);
   }
 
-  // ── Daily Goal ─────────────────────────────────────────────────────────────
-  Widget _buildDailyGoal(bool isDark) {
-    final dailyGoal = _progress.dailyGoal;
-    final studied   = _progress.todayStudied;
-    final goalProg  = _progress.dailyProgress;
-    final cardBg    = AppTheme.glassBg(isDark, darkAlpha: 0.07, lightAlpha: 0.80);
-    final cardBorder= AppTheme.glassBorder(isDark);
-    final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
-    final subColor  = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
 
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(24),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-          child: Container(
-            padding: const EdgeInsets.all(22),
-            decoration: BoxDecoration(
-              color: cardBg,
-              borderRadius: BorderRadius.circular(24),
-              border: Border.all(color: cardBorder, width: 1.0),
-              boxShadow: [
-                BoxShadow(color: AppTheme.shadowColor(isDark), blurRadius: 30, offset: const Offset(0, 14)),
-              ],
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('Günlük Hedef',
-                      style: GoogleFonts.inter(color: textColor, fontSize: 16,
-                          fontWeight: FontWeight.w900, letterSpacing: -0.3)),
-                    Row(children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                        decoration: BoxDecoration(
-                          color:  AppTheme.neonPink.withValues(alpha: 0.12),
-                          borderRadius: BorderRadius.circular(20),
-                          border: Border.all(color: AppTheme.neonPink.withValues(alpha: 0.25), width: 1),
-                        ),
-                        child: Text('Bugün',
-                          style: GoogleFonts.inter(color: AppTheme.neonPink, fontSize: 11, fontWeight: FontWeight.w800)),
-                      ),
-                      const SizedBox(width: 8),
-                      GestureDetector(
-                        onTap: () async {
-                          final saved = await Navigator.push<bool>(
-                            context,
-                            AppRoute.slideUp(const GoalSettingsScreen()),
-                          );
-                          if (saved == true) _loadData();
-                        },
-                        child: Container(
-                          padding: const EdgeInsets.all(6),
-                          decoration: BoxDecoration(
-                            color: AppTheme.cyan.withValues(alpha: 0.12),
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.25), width: 1),
-                          ),
-                          child: const Icon(Icons.tune_rounded, color: AppTheme.cyan, size: 14),
-                        ),
-                      ),
-                    ]),
-                  ],
-                ),
-                const SizedBox(height: 20),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                      Text('$studied / $dailyGoal',
-                        style: GoogleFonts.inter(color: textColor, fontSize: 26,
-                            fontWeight: FontWeight.w900, letterSpacing: -1.2)),
-                      Text('Kart', style: GoogleFonts.inter(color: subColor, fontSize: 12, fontWeight: FontWeight.w600)),
-                    ]),
-                    const Spacer(),
-                    _GradientCircularProgress(
-                      value: goalProg, size: 74,
-                      colors: const [AppTheme.neonPink, AppTheme.cyan],
-                      strokeWidth: 7, isDark: isDark, showLabel: false,
-                      centerWidget: Text('${(goalProg * 100).toInt()}%',
-                        style: GoogleFonts.inter(
-                          color: isDark ? Colors.white : AppTheme.lightTextPrimary,
-                          fontSize: 13, fontWeight: FontWeight.w900)),
-                    ),
-                    const Spacer(),
-                    Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                      _GoalMetric(icon: Icons.assignment_rounded,
-                        label: 'QBank', value: '${_progress.totalCasesAttempted}',
-                        color: AppTheme.neonPink, isDark: isDark),
-                      const SizedBox(height: 12),
-                      _GoalMetric(icon: Icons.style_rounded,
-                        label: 'Flashcard', value: '${_progress.totalFlashcardsStudied}',
-                        color: AppTheme.cyan, isDark: isDark),
-                      const SizedBox(height: 12),
-                      _GoalMetric(icon: Icons.menu_book_rounded,
-                        label: 'Okuma',
-                        value: '${(_progress.totalFlashcardsStudied / 10).toInt()}',
-                        color: const Color(0xFF3FB950), isDark: isDark),
-                    ]),
-                  ],
-                ),
-                const SizedBox(height: 20),
-                SizedBox(
-                  width: double.infinity,
-                  height: 48,
-                  child: ElevatedButton.icon(
-                    onPressed: _startDailyGoalSession,
-                    icon: const Icon(Icons.rocket_launch_rounded, size: 20),
-                    label: Text(
-                      _progress.selectedSubjectIds.isEmpty
-                          ? 'Günlük Seansı Başlat'
-                          : 'Seçili Branşlarda Başlat (${_progress.selectedSubjectIds.length})',
-                      style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 14),
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppTheme.neonPink,
-                      foregroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-                      elevation: 4,
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 12),
-                _buildDailyScoreLine(isDark),
-              ],
-            ),
-          ),
-        ),
-      ),
-    ).animate().fadeIn(duration: 700.ms, delay: 550.ms).slideY(begin: 0.10, end: 0);
-  }
-
-  Widget _buildDailyScoreLine(bool isDark) {
-    final avgHours = _progress.todayGoalHours;
-    final totalPotentialHours = avgHours * _daysToExam;
-    final estimatedPoints = (totalPotentialHours / 60).clamp(1.0, 15.0);
-    final rangeMin = (estimatedPoints * 0.8).floor();
-    final rangeMax = (estimatedPoints * 1.2).ceil();
-    final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
-
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text(
-          'TUS Tahmini Puan Artışı  ',
-          style: GoogleFonts.inter(color: subColor, fontSize: 11, fontWeight: FontWeight.w600),
-        ),
-        Text(
-          '+$rangeMin – +$rangeMax',
-          style: GoogleFonts.inter(
-            color: AppTheme.neonGold,
-            fontSize: 13,
-            fontWeight: FontWeight.w900,
-          ),
-        ),
-      ],
-    );
-  }
 
   Future<void> _startDailyGoalSession() async {
     final selected = _progress.selectedSubjectIds;
@@ -903,6 +716,7 @@ class _HomeScreenState extends State<HomeScreen> {
       AppRoute.slideUp(FlashcardScreen(
         subjectIds: selected.isEmpty ? null : selected,
         initialMode: FlashcardMode.dueOnly,
+        dailyGoal: _progress.dailyGoal,
       )),
     );
     _loadData();
@@ -1113,55 +927,6 @@ class _HomeScreenState extends State<HomeScreen> {
     ).animate().fadeIn(duration: 500.ms, delay: 200.ms).slideY(begin: 0.05, end: 0);
   }
 
-  Widget _buildRankingBadge(bool isDark) {
-    final pct = _progress.dailyProgress;
-    String label;
-    Color color;
-    String emoji;
-
-    if (pct >= 0.80) {
-      label = 'Bugün en başarılı %10\'luk dilimdesin!';
-      color = AppTheme.neonGold;
-      emoji = '🏆';
-    } else if (pct >= 0.50) {
-      label = 'Bugün en iyi %25\'lik dilimdesin!';
-      color = AppTheme.neonPurple;
-      emoji = '🎯';
-    } else if (pct >= 0.20) {
-      label = 'Devam et — en iyi %50\'ye girebilirsin!';
-      color = AppTheme.cyan;
-      emoji = '💪';
-    } else {
-      return const SizedBox.shrink();
-    }
-
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-      decoration: BoxDecoration(
-        color: color.withValues(alpha: isDark ? 0.12 : 0.08),
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: color.withValues(alpha: 0.25)),
-      ),
-      child: Row(
-        children: [
-          Text(emoji, style: const TextStyle(fontSize: 14)),
-          const SizedBox(width: 8),
-          Expanded(
-            child: Text(
-              label,
-              style: GoogleFonts.inter(
-                color: color,
-                fontSize: 11,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
   Widget _buildLoadingState() {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     return SingleChildScrollView(
@@ -1201,233 +966,6 @@ class _HomeScreenState extends State<HomeScreen> {
 // ║  Sub-Widgets                                                             ║
 // ╚══════════════════════════════════════════════════════════════════════════╝
 
-// ── DEV NEON Gradient Circular Progress ───────────────────────────────────
-/// 3 katmanlı glow bloom + gradient arc + fütüristik Outfit fontu
-class _GradientCircularProgress extends StatelessWidget {
-  final double      value;
-  final double      size;
-  final List<Color> colors;
-  final double      strokeWidth;
-  final bool        isDark;
-  final bool        showLabel;
-  final Widget?     centerWidget;
-
-  const _GradientCircularProgress({
-    required this.value,
-    required this.size,
-    required this.colors,
-    required this.strokeWidth,
-    required this.isDark,
-    this.showLabel    = true,
-    this.centerWidget,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final primary   = colors.first;
-    final secondary = colors.length > 1 ? colors.last : colors.first;
-
-    // İlerlemeye göre glow yoğunluğunu artır
-    final glowStrength = (0.18 + value * 0.18).clamp(0.18, 0.36);
-    final darkMult     = isDark ? 1.0 : 0.5;
-
-    return SizedBox(
-      width: size, height: size,
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          // ── Katman 1: Dış diffuse bloom ──────────────────────────────────
-          Container(
-            width: size, height: size,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              boxShadow: [
-                BoxShadow(
-                  color: primary.withValues(alpha: glowStrength * darkMult),
-                  blurRadius: 50, spreadRadius: 12,
-                ),
-                BoxShadow(
-                  color: secondary.withValues(alpha: (glowStrength * 0.6) * darkMult),
-                  blurRadius: 80, spreadRadius: 20,
-                ),
-              ],
-            ),
-          ),
-
-          // ── Katman 2: Orta halka yansıması (cam yüzeye glow) ─────────────
-          Container(
-            width: size * 0.72, height: size * 0.72,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              boxShadow: [
-                BoxShadow(
-                  color: primary.withValues(alpha: (glowStrength * 1.2).clamp(0, 0.5) * darkMult),
-                  blurRadius: 28, spreadRadius: 4,
-                ),
-              ],
-            ),
-          ),
-
-          // ── Katman 3: Sıkı iç parlama (blur refleksiyon) ─────────────────
-          Container(
-            width: size * 0.50, height: size * 0.50,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              boxShadow: [
-                BoxShadow(
-                  color: secondary.withValues(alpha: (glowStrength * 0.8) * darkMult),
-                  blurRadius: 16, spreadRadius: 2,
-                ),
-              ],
-            ),
-          ),
-
-          // ── Gradient Arc (CustomPainter) ──────────────────────────────────
-          CustomPaint(
-            size: Size(size, size),
-            painter: _ArcPainter(
-              progress:    value,
-              gradColors:  colors,
-              strokeWidth: strokeWidth,
-              trackColor:  isDark
-                  ? Colors.white.withValues(alpha: 0.08)
-                  : Colors.black.withValues(alpha: 0.08),
-            ),
-          ),
-
-          // ── Merkez Etiket ─────────────────────────────────────────────────
-          if (centerWidget != null)
-            centerWidget!
-          else if (showLabel)
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  '${(value * 100).toInt()}%',
-                  style: GoogleFonts.outfit(
-                    color: isDark ? Colors.white : AppTheme.lightTextPrimary,
-                    fontSize: size * 0.185,
-                    fontWeight: FontWeight.w900,
-                    letterSpacing: -2,
-                  ),
-                ),
-                Text(
-                  'tamamlandı',
-                  style: GoogleFonts.inter(
-                    color: colors.first.withValues(alpha: 0.80),
-                    fontSize: size * 0.075,
-                    fontWeight: FontWeight.w700,
-                    letterSpacing: 0.3,
-                  ),
-                ),
-              ],
-            ),
-        ],
-      ),
-    );
-  }
-}
-
-// ── Arc Painter ────────────────────────────────────────────────────────────
-class _ArcPainter extends CustomPainter {
-  final double      progress;
-  final List<Color> gradColors;
-  final double      strokeWidth;
-  final Color       trackColor;
-
-  const _ArcPainter({
-    required this.progress,
-    required this.gradColors,
-    required this.strokeWidth,
-    required this.trackColor,
-  });
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final center = Offset(size.width / 2, size.height / 2);
-    final radius = (size.width - strokeWidth) / 2;
-    final rect   = Rect.fromCircle(center: center, radius: radius);
-
-    // Track
-    canvas.drawCircle(center, radius,
-      Paint()..style = PaintingStyle.stroke..strokeWidth = strokeWidth..isAntiAlias = true..color = trackColor,
-    );
-
-    if (progress <= 0) return;
-
-    final gradient = SweepGradient(
-      startAngle: -pi / 2,
-      endAngle:    3 * pi / 2,
-      colors: [...gradColors, gradColors.first],
-      stops:  [0.0, 0.65, 1.0],
-    );
-    final shader = gradient.createShader(rect);
-
-    // Glow layer (lightweight - outer halo with translucent first color)
-    canvas.drawArc(rect, -pi / 2, 2 * pi * progress, false,
-      Paint()
-        ..style       = PaintingStyle.stroke
-        ..strokeWidth = strokeWidth + 6
-        ..strokeCap   = StrokeCap.round
-        ..isAntiAlias = true
-        ..color       = gradColors.first.withValues(alpha: 0.28),
-    );
-
-    // Main arc
-    canvas.drawArc(rect, -pi / 2, 2 * pi * progress, false,
-      Paint()
-        ..style       = PaintingStyle.stroke
-        ..strokeWidth = strokeWidth
-        ..strokeCap   = StrokeCap.round
-        ..isAntiAlias = true
-        ..shader      = shader,
-    );
-  }
-
-  @override
-  bool shouldRepaint(_ArcPainter old) => old.progress != progress;
-}
-
-// ── Stat Item ──────────────────────────────────────────────────────────────
-class _StatItem extends StatelessWidget {
-  final IconData icon;
-  final String   label;
-  final String   value;
-  final Color    color;
-  final bool     isDark;
-
-  const _StatItem({
-    required this.icon,  required this.label,
-    required this.value, required this.color, required this.isDark,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
-    final subColor  = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
-
-    return Row(children: [
-      Container(
-        padding: const EdgeInsets.all(7),
-        decoration: BoxDecoration(
-          color: color.withValues(alpha: 0.14),
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(color: color.withValues(alpha: 0.20), width: 1),
-        ),
-        child: Icon(icon, color: color, size: 14),
-      ),
-      const SizedBox(width: 10),
-      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Text(value,
-          style: GoogleFonts.inter(color: textColor, fontSize: 16,
-              fontWeight: FontWeight.w900, letterSpacing: -0.5)),
-        Text(label,
-          style: GoogleFonts.inter(color: subColor, fontSize: 10, fontWeight: FontWeight.w600)),
-      ]),
-    ]);
-  }
-}
-
 // ── Subject Carousel Card ──────────────────────────────────────────────────
 class _SubjectCarouselCard extends StatelessWidget {
   final SubjectModule module;
@@ -1448,36 +986,51 @@ class _SubjectCarouselCard extends StatelessWidget {
     final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
     final subColor  = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
 
+    final accentColor = isActive ? AppTheme.cyan : module.color;
+
     return _PressableCard(
       onTap: onTap,
       child: Container(
         width: 158, margin: const EdgeInsets.only(right: 14),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(22),
+          boxShadow: isActive
+              ? [
+                  BoxShadow(color: AppTheme.cyan.withValues(alpha: 0.42), blurRadius: 28, spreadRadius: 2),
+                  BoxShadow(color: AppTheme.cyan.withValues(alpha: 0.18), blurRadius: 50, spreadRadius: 6),
+                ]
+              : [
+                  BoxShadow(color: Colors.black.withValues(alpha: isDark ? 0.28 : 0.06),
+                      blurRadius: 14, offset: const Offset(0, 6)),
+                ],
+        ),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(22),
-          child: Container(
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
+            child: Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: isActive
-                    ? AppTheme.cyan.withValues(alpha: isDark ? 0.14 : 0.10)
-                    : (isDark
-                        ? Colors.white.withValues(alpha: 0.06)
-                        : Colors.white.withValues(alpha: 0.90)),
+                gradient: LinearGradient(
+                  colors: isActive
+                      ? [
+                          AppTheme.cyan.withValues(alpha: isDark ? 0.18 : 0.12),
+                          AppTheme.neonPurple.withValues(alpha: isDark ? 0.08 : 0.05),
+                        ]
+                      : [
+                          Colors.white.withValues(alpha: isDark ? 0.07 : 0.72),
+                          Colors.white.withValues(alpha: isDark ? 0.03 : 0.50),
+                        ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
                 borderRadius: BorderRadius.circular(22),
                 border: Border.all(
                   color: isActive
-                      ? AppTheme.cyan.withValues(alpha: 0.65)
-                      : AppTheme.glassBorder(isDark),
-                  width: isActive ? 1.5 : 0.8,
+                      ? AppTheme.cyan.withValues(alpha: isDark ? 0.65 : 0.45)
+                      : Colors.white.withValues(alpha: isDark ? 0.10 : 0.55),
+                  width: isActive ? 0.8 : 0.6,
                 ),
-                boxShadow: isActive
-                    ? [
-                        BoxShadow(color: AppTheme.cyan.withValues(alpha: 0.42), blurRadius: 24, spreadRadius: 2),
-                        BoxShadow(color: AppTheme.cyan.withValues(alpha: 0.15), blurRadius: 50, spreadRadius: 6),
-                      ]
-                    : [
-                        BoxShadow(color: (isDark ? Colors.black : Colors.black).withValues(alpha: isDark ? 0.30 : 0.06),
-                            blurRadius: 14, offset: const Offset(0, 6)),
-                      ],
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -1488,6 +1041,9 @@ class _SubjectCarouselCard extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: module.color.withValues(alpha: isActive ? 0.30 : 0.15),
                       borderRadius: BorderRadius.circular(12),
+                      boxShadow: isActive
+                          ? [BoxShadow(color: module.color.withValues(alpha: 0.35), blurRadius: 12, spreadRadius: 1)]
+                          : [],
                     ),
                     child: Icon(module.icon, color: module.color, size: 20),
                   ),
@@ -1501,16 +1057,34 @@ class _SubjectCarouselCard extends StatelessWidget {
                     const SizedBox(height: 10),
                     Text('${(progress * 100).toInt()}%',
                       style: GoogleFonts.inter(
-                        color: isActive ? AppTheme.cyan : subColor,
+                        color: accentColor,
                         fontSize: 10, fontWeight: FontWeight.w800)),
                     const SizedBox(height: 5),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(4),
-                      child: LinearProgressIndicator(
-                        value: progress, minHeight: 4,
-                        backgroundColor: (isDark ? Colors.white : Colors.black).withValues(alpha: 0.08),
-                        valueColor: AlwaysStoppedAnimation<Color>(
-                            isActive ? AppTheme.cyan : module.color),
+                    // Neon Line progress bar
+                    Container(
+                      height: 3,
+                      decoration: BoxDecoration(
+                        color: (isDark ? Colors.white : Colors.black).withValues(alpha: 0.07),
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                      child: FractionallySizedBox(
+                        alignment: Alignment.centerLeft,
+                        widthFactor: progress.clamp(0.0, 1.0),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              colors: [accentColor, accentColor.withValues(alpha: 0.6)],
+                            ),
+                            borderRadius: BorderRadius.circular(2),
+                            boxShadow: [
+                              BoxShadow(
+                                color: accentColor.withValues(alpha: 0.65),
+                                blurRadius: 6,
+                                spreadRadius: 1,
+                              ),
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                   ]),
@@ -1519,6 +1093,7 @@ class _SubjectCarouselCard extends StatelessWidget {
             ),
           ),
         ),
+      ),
     );
   }
 }
@@ -1601,42 +1176,6 @@ class _QuickActionCard extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-// ── Goal Metric ────────────────────────────────────────────────────────────
-class _GoalMetric extends StatelessWidget {
-  final IconData icon;
-  final String   label;
-  final String   value;
-  final Color    color;
-  final bool     isDark;
-
-  const _GoalMetric({
-    required this.icon,  required this.label,
-    required this.value, required this.color, required this.isDark,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
-    final subColor  = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
-
-    return Row(mainAxisSize: MainAxisSize.min, children: [
-      Container(
-        padding: const EdgeInsets.all(6),
-        decoration: BoxDecoration(color: color.withValues(alpha: 0.15), borderRadius: BorderRadius.circular(8)),
-        child: Icon(icon, color: color, size: 13),
-      ),
-      const SizedBox(width: 8),
-      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Text(value,
-          style: GoogleFonts.inter(color: textColor, fontSize: 15,
-              fontWeight: FontWeight.w900, letterSpacing: -0.5)),
-        Text(label,
-          style: GoogleFonts.inter(color: subColor, fontSize: 9, fontWeight: FontWeight.w600)),
-      ]),
-    ]);
   }
 }
 
@@ -1773,6 +1312,342 @@ class GlowIconBox extends StatelessWidget {
         boxShadow: [BoxShadow(color: color.withValues(alpha: 0.18), blurRadius: 16, offset: const Offset(0, 4))],
       ),
       child: Icon(icon, color: color, size: 24),
+    );
+  }
+}
+
+// ── Folder Card ────────────────────────────────────────────────────────────
+class _FolderCard extends StatelessWidget {
+  final String       label;
+  final IconData     icon;
+  final int          count;
+  final Color        color;
+  final bool         isDark;
+  final VoidCallback? onTap;
+
+  const _FolderCard({
+    required this.label,
+    required this.icon,
+    required this.count,
+    required this.color,
+    required this.isDark,
+    this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final active = onTap != null;
+    return GestureDetector(
+      onTap: () {
+        if (active) {
+          HapticFeedback.mediumImpact();
+          onTap!();
+        }
+      },
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 250),
+        curve: Curves.easeOutCubic,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(22),
+          boxShadow: active
+              ? [
+                  BoxShadow(
+                    color: color.withValues(alpha: isDark ? 0.35 : 0.20),
+                    blurRadius: 32,
+                    spreadRadius: 0,
+                    offset: const Offset(0, 8),
+                  ),
+                ]
+              : [],
+        ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(22),
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 18),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: active
+                      ? [
+                          color.withValues(alpha: isDark ? 0.22 : 0.14),
+                          color.withValues(alpha: isDark ? 0.08 : 0.05),
+                        ]
+                      : [
+                          Colors.white.withValues(alpha: isDark ? 0.05 : 0.60),
+                          Colors.white.withValues(alpha: isDark ? 0.02 : 0.40),
+                        ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(22),
+                border: Border.all(
+                  color: active
+                      ? color.withValues(alpha: isDark ? 0.60 : 0.40)
+                      : Colors.white.withValues(alpha: isDark ? 0.10 : 0.50),
+                  width: 0.7,
+                ),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  // İkon
+                  AnimatedContainer(
+                    duration: const Duration(milliseconds: 250),
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: active
+                          ? color.withValues(alpha: isDark ? 0.25 : 0.18)
+                          : Colors.white.withValues(alpha: isDark ? 0.07 : 0.60),
+                      shape: BoxShape.circle,
+                      boxShadow: active
+                          ? [BoxShadow(color: color.withValues(alpha: 0.30), blurRadius: 14, spreadRadius: 1)]
+                          : [],
+                    ),
+                    child: Icon(icon,
+                      color: active ? color : (isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary),
+                      size: 22),
+                  ),
+                  const SizedBox(height: 10),
+                  // Sayaç badge
+                  if (count > 0)
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 3),
+                      decoration: BoxDecoration(
+                        color: color.withValues(alpha: isDark ? 0.22 : 0.15),
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(color: color.withValues(alpha: 0.35), width: 0.6),
+                      ),
+                      child: Text(
+                        '$count',
+                        style: GoogleFonts.inter(
+                          color: color,
+                          fontSize: 13,
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                    )
+                  else
+                    const SizedBox(height: 20),
+                  const SizedBox(height: 7),
+                  Text(
+                    label,
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.inter(
+                      color: active
+                          ? (isDark ? Colors.white : AppTheme.lightTextPrimary)
+                          : (isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary),
+                      fontSize: 10,
+                      fontWeight: FontWeight.w700,
+                      letterSpacing: 0.2,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ── Info Sheet ─────────────────────────────────────────────────────────────
+class _InfoSheet extends StatelessWidget {
+  final bool isDark;
+  const _InfoSheet({required this.isDark});
+
+  @override
+  Widget build(BuildContext context) {
+    final bg = isDark ? const Color(0xFF1C1C1E) : Colors.white;
+    final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
+    final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+
+    return DraggableScrollableSheet(
+      initialChildSize: 0.88,
+      minChildSize: 0.5,
+      maxChildSize: 0.95,
+      builder: (_, controller) => Container(
+        decoration: BoxDecoration(
+          color: bg,
+          borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+        ),
+        child: Column(
+          children: [
+            const SizedBox(height: 12),
+            Container(
+              width: 40, height: 4,
+              decoration: BoxDecoration(
+                color: subColor.withValues(alpha: 0.3),
+                borderRadius: BorderRadius.circular(2),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: Row(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: AppTheme.cyan.withValues(alpha: 0.12),
+                      borderRadius: BorderRadius.circular(14),
+                      border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.3)),
+                    ),
+                    child: const Icon(Icons.school_rounded, color: AppTheme.cyan, size: 22),
+                  ),
+                  const SizedBox(width: 14),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Nasıl Çalışır?',
+                          style: GoogleFonts.inter(
+                              color: textColor, fontSize: 20, fontWeight: FontWeight.w800)),
+                      Text('TUS Asistanı Öğrenme Sistemi',
+                          style: GoogleFonts.inter(
+                              color: subColor, fontSize: 12, fontWeight: FontWeight.w500)),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+            Expanded(
+              child: ListView(
+                controller: controller,
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                children: [
+                  _InfoSection(
+                    isDark: isDark,
+                    icon: Icons.repeat_rounded,
+                    color: AppTheme.cyan,
+                    title: 'Aralıklı Tekrar (SM-2)',
+                    body:
+                        'Uygulama, SM-2 algoritmasını kullanır. Her kart için doğru cevap verdiğinde tekrar aralığı uzar; yanlış cevap verdiğinde kart sıfırlanarak yakında tekrar karşına çıkar. Bu sayede beynin uzun süreli belleğe aktarma sürecine uyum sağlanır.',
+                  ),
+                  _InfoSection(
+                    isDark: isDark,
+                    icon: Icons.flag_rounded,
+                    color: AppTheme.warning,
+                    title: 'Günlük Hedef',
+                    body:
+                        'Ana sayfadaki daire, bugünkü çalışma hedefinle ne kadar ilerlediğini gösterir. Yalnızca "BAŞLA" butonuyla başlattığın seanslar bu hedefe sayılır. Branş veya konu ekranlarından yapılan çalışmalar önizleme modunda çalışır ve hedefi etkilemez.',
+                  ),
+                  _InfoSection(
+                    isDark: isDark,
+                    icon: Icons.warning_amber_rounded,
+                    color: const Color(0xFFFF453A),
+                    title: 'Kritik Kartlar',
+                    body:
+                        '"⚠️ Kritik" butonuna bastığın kartlar Kritik havuzuna düşer. Bu kartlar en öncelikli tekrar grubundur. Ana sayfadaki kırmızı "Kritik Kartlar" butonu bu havuzu açar.',
+                  ),
+                  _InfoSection(
+                    isDark: isDark,
+                    icon: Icons.sentiment_dissatisfied_rounded,
+                    color: const Color(0xFFFF9F0A),
+                    title: 'Geçici Hafıza',
+                    body:
+                        '"⟳ Tekrar" butonuna bastığın kartlar Geçici Hafıza havuzuna düşer. Tekrar sıfırlanır ve kartı en kısa sürede tekrar görürsün.',
+                  ),
+                  _InfoSection(
+                    isDark: isDark,
+                    icon: Icons.check_circle_rounded,
+                    color: AppTheme.success,
+                    title: 'Orta Hafıza & Uzun Hafıza',
+                    body:
+                        '"🎯 Orta Hafıza" seçeneği kartı normal SRS akışına alır. "🏆 Uzun Hafıza" seçeneği ise kartın çok iyi bilindiğini işaret eder ve tekrar aralığını uzatır. Yüksek aralıklı kartlar cebindedir ve sık çıkmaz.',
+                  ),
+                  _InfoSection(
+                    isDark: isDark,
+                    icon: Icons.visibility_off_rounded,
+                    color: AppTheme.neonPurple,
+                    title: 'Önizleme Modu',
+                    body:
+                        'Branş seçimi veya konu detay sayfasından başlatılan seanslar önizleme modunda çalışır. Bu modda yaptığın cevaplar veritabanına kaydedilmez; SRS, günlük hedef ve seri etkilenmez. Özgürce incelemek için kullanabilirsin.',
+                  ),
+                  _InfoSection(
+                    isDark: isDark,
+                    icon: Icons.local_fire_department_rounded,
+                    color: const Color(0xFFFF9F0A),
+                    title: 'Seri (Streak)',
+                    body:
+                        'Her gün en az 1 kart çalışırsan serin devam eder. Bir gün atlarsın serini sıfırlanır. Tutarlılık, TUS\'ta başarının temelidir.',
+                  ),
+                  const SizedBox(height: 32),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _InfoSection extends StatelessWidget {
+  final bool isDark;
+  final IconData icon;
+  final Color color;
+  final String title;
+  final String body;
+
+  const _InfoSection({
+    required this.isDark,
+    required this.icon,
+    required this.color,
+    required this.title,
+    required this.body,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
+    final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+    final cardBg = isDark
+        ? color.withValues(alpha: 0.06)
+        : color.withValues(alpha: 0.05);
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 14),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: cardBg,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: color.withValues(alpha: 0.2), width: 1),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: color.withValues(alpha: 0.15),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Icon(icon, color: color, size: 16),
+          ),
+          const SizedBox(width: 14),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(title,
+                    style: GoogleFonts.inter(
+                        color: textColor,
+                        fontSize: 13,
+                        fontWeight: FontWeight.w700)),
+                const SizedBox(height: 5),
+                Text(body,
+                    style: GoogleFonts.inter(
+                        color: subColor,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w400,
+                        height: 1.6)),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

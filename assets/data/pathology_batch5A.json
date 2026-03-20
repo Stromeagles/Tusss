@@ -1,0 +1,182 @@
+{
+  "subject": "Patoloji",
+  "chapter": "Onarım + Endokrin + Sinir Sistemi (Batch 5A)",
+  "flashcards": [
+    {
+      "id": "path_b5A_001",
+      "question": "Yara iyileşmesinde primer ve sekonder iyileşmenin farkı nedir?",
+      "answer": "Primer (1. intention): Temiz, düzgün kenar, yakınlaştırılmış (sütür) → Az granülasyon, az skar. Sekonder (2. intention): Kirli/açık yara, uzak kenarlar → Çok granülasyon dokusu → Kontraksion → Büyük skar.",
+      "difficulty": "Kolay",
+      "tags": ["Onarım", "Yara İyileşme"],
+      "ai_coding": "🤖 Kodlama: Primer = 'Dikişle kapandı = Az skar'. Sekonder = 'Açık kaldı = Granülasyon = Büyük skar'."
+    },
+    {
+      "id": "path_b5A_002",
+      "question": "Granülasyon dokusu hangi bileşenlerden oluşur ve ne zaman görülür?",
+      "answer": "Granülasyon doku: Yeni kapillerler (anjiyogenez, VEGF) + Fibroblastlar + Gevşek bağ dokusu + Makrofajlar. 3-5. günden itibaren. Pembemsi, granüler, kanamalı görünüm. Yararsız birikim = Kibrit başı granülasyon.",
+      "difficulty": "Kolay",
+      "tags": ["Granülasyon Doku", "Onarım"],
+      "ai_coding": "🤖 Kodlama: Granülasyon = 'VEGF+Fibroblast+Yeni damar'. 3-5. günde başlar."
+    },
+    {
+      "id": "path_b5A_003",
+      "question": "TGF-β'nın yara iyileşmesindeki rolü nedir?",
+      "answer": "TGF-β: Fibroblast aktivasyonu + Kollajen sentezi stimülasyonu + Anjiogenez. Aşırısı → Fibrosis. Keloid ve hipertrofik skar oluşumunda anahtar. Anti-inflamatuar da: Makrofaj inhibisyonu.",
+      "difficulty": "Orta",
+      "tags": ["TGF-β", "Fibrozis", "Onarım"],
+      "ai_coding": "🤖 Kodlama: TGF-β = 'Fibroz ustası'. Fazlası = Keloid. Yeterisi = Normal iyileşme."
+    },
+    {
+      "id": "path_b5A_004",
+      "question": "Keloid ile hipertrofik skar arasındaki fark nedir?",
+      "answer": "Hipertrofik skar: Yara sınırı içinde, zaman içinde geriler. Keloid: Yara sınırını aşar, ilerleyici, geri gelmez. Risk: Siyah ırk, genç, göğüs/kulak. Histoloji: Keloid — kalın hyalinize kollajen bantları (I tip).",
+      "difficulty": "Orta",
+      "tags": ["Keloid", "Hipertrofik Skar"],
+      "ai_coding": "🤖 Kodlama: Keloid = 'Sınırı aştı'. Hipertrofik = 'Sınırda kaldı, geri çekildi'."
+    },
+    {
+      "id": "path_b5A_005",
+      "question": "Yara iyileşmesini bozan faktörler nelerdir?",
+      "answer": "Sistemik: Malnütrisyon (özellikle C vitamini eksikliği = Kollajen sentezi bozulur), DM, kortikosteroid, kemoterapötik, immünosüpresyon. Lokal: Enfeksiyon, yabancı cisim, iskemi, nekrotik doku.",
+      "difficulty": "Orta",
+      "tags": ["Onarım", "Yara İyileşme", "Engeller"],
+      "ai_coding": "🤖 Kodlama: Vit C = Kollajen için. Eksikliği = Yara açık kalır. DM+steroid de bozar."
+    },
+    {
+      "id": "path_b5A_006",
+      "question": "Kollajen sentezinde C vitamini (askorbik asit) hangi basamakta kritiktir?",
+      "answer": "Prolil ve lisil hidroksilaz enzimleri prolini 4-hidroksiprolile çevirir (gerekli kollajen triple helix için). C vitamini bu enzimlerin kofaktörüdür. Eksikliği → Skorbüt → Kapiller kırılganlık + Yara açılması.",
+      "difficulty": "Orta",
+      "tags": ["Kollajen", "C Vitamini", "Skorbüt"],
+      "ai_coding": "🤖 Kodlama: C vitamini = 'Prolil hidroksilaz'. Skorbüt = Kollajen bozuk = Diş eti kanaması."
+    },
+    {
+      "id": "path_b5A_007",
+      "question": "Labile, stable ve kalıcı (permanent) hücre tiplerinin proliferasyon kapasitesi nedir?",
+      "answer": "Labile (sürekli bölünür): GİS epiteli, kemik iliği, deri. Hasara iyi yanıt. Stable (G0, uyarıyla bölünür): Karaciğer, böbrek tübülü, fibroblast. Permanent (bölünemez): Kardiyomiyosit, Nöron, İskelet kası. Hasar = Geri dönüşsüz.",
+      "difficulty": "Kolay",
+      "tags": ["Hücre Proliferasyonu", "Onarım"],
+      "ai_coding": "🤖 Kodlama: Labile=GİS/Kemik iliği (her zaman). Stable=KC (tetikle). Permanent=Kalp/Nöron (bölünemez)."
+    },
+    {
+      "id": "path_b5A_008",
+      "question": "Karaciğer rejenerasyonunda hangi büyüme faktörleri rol oynar?",
+      "answer": "HGF (hepatosit büyüme faktörü, en önemli) + EGF + TGF-α. Hepatositleri G0'dan S fazına girer. 70% hepatektomi sonrası 6-8 haftada tam rejenerasyon. Sirozda ise rejenerasyon bozulur.",
+      "difficulty": "Orta",
+      "tags": ["Karaciğer", "Rejenerasyon", "HGF"],
+      "ai_coding": "🤖 Kodlama: KC rejenerasyonu = HGF lider. Siroz = 'Rejenerasyon bozuk, fibrozis var'."
+    },
+    {
+      "id": "path_b5A_009",
+      "question": "Tiroid papiller karsinomunda (PTC) hangi histolojik nükleer özellikler ve genetik değişiklikler görülür?",
+      "answer": "Nükleer özellikler: 'Optik cam' nükleuslar + Nükleer yarıklar + Psödoinclüzyonlar. Psammoma cisimleri. Genetik: BRAF V600E (%60, agresif) + RET/PTC rearanjmanı + RAS mutasyonu. Metastaz: Bölgesel lenf nodu.",
+      "difficulty": "Orta",
+      "tags": ["Tiroid", "Papiller Karsinom", "BRAF"],
+      "ai_coding": "🤖 Kodlama: PTC = 'Cam nükleus + Nükleer yarık + Psödomikroinclüzyon + Psammoma'."
+    },
+    {
+      "id": "path_b5A_010",
+      "question": "Tiroid foliküler karsinomu ile tiroid adenomunun ayırt edilmesi nasıl yapılır?",
+      "answer": "Foliküler adenom: Kapsül intakt (invazyons yok). Foliküler karsinom: Kapsül invazyonu VEYA vasküler invazyon. İİAB (ince iğne aspirasyon biyopsisi) ile ayırt EDİLEMEZ — operatif spesimende bakılır.",
+      "difficulty": "Zor",
+      "tags": ["Tiroid", "Foliküler Karsinom"],
+      "ai_coding": "🤖 Kodlama: Foliküler Ca = 'Kapsülü deldi veya damarına girdi'. İİAB ayırt edemez!"
+    },
+    {
+      "id": "path_b5A_011",
+      "question": "Medüller tiroid karsinomunda hangi hormon ve hangi genetik mutasyon önemlidir?",
+      "answer": "Kalsitonin üreten C hücre tümörü. RET proto-onkogen mutasyonu (MEN 2A ve 2B, familyal). Kalsitonin + CEA tümör belirteçleri. Histoloji: Amiloid stroma (kalsitonin fibrilleri). MEN 2B: Mukozal nörinom+Marfanoid.",
+      "difficulty": "Zor",
+      "tags": ["Medüller Tiroid", "RET", "MEN2"],
+      "ai_coding": "🤖 Kodlama: MTC = 'C hücre + Kalsitonin + RET + Amiloid stroma'. MEN2 ile."
+    },
+    {
+      "id": "path_b5A_012",
+      "question": "Feokromositomanın '10 kuralı' nedir?",
+      "answer": "%10 malign, %10 bilateral, %10 ekstraadrenalerden (paraganglioma), %10 çocuk, %10 familyal (MEN 2, NF1, VHL, SDH mutasyonu). Katekolamin krizi → HT+Hiperglisemi+Terleme+Palp.",
+      "difficulty": "Orta",
+      "tags": ["Feokromositoma", "10 Kural"],
+      "ai_coding": "🤖 Kodlama: Feokromositoma = '10-10-10-10-10'. Katekolamin krizi = 5P."
+    },
+    {
+      "id": "path_b5A_013",
+      "question": "MEN-1 (Wermer sendromu) ile MEN-2A (Sipple sendromu) bileşenleri nelerdir?",
+      "answer": "MEN-1 (MEN1 mutasyonu): Paratiroid (en sık) + Pankreas NETs (gastrinoma, insulinoma) + Hipofiz (prolaktinoma). MEN-2A (RET mutasyonu): Medüller tiroid karsinom (ilk+en yaygın) + Feokromositoma + Paratiroid.",
+      "difficulty": "Orta",
+      "tags": ["MEN", "Endokrin"],
+      "ai_coding": "🤖 Kodlama: MEN-1 = '3P: Paratiroid+Pankreas+Pitüiter'. MEN-2A = 'MTC+Feokromo+Para'."
+    },
+    {
+      "id": "path_b5A_014",
+      "question": "Adrenal korteks tümörlerinde Cushing sendromu nasıl değerlendirilir?",
+      "answer": "ACTH bağımlı: Hipofiz adenom (Cushing hastalığı) + Ektopik ACTH (küçük hücreli akciğer). ACTH bağımsız: Adrenal adenom/karsinom. Yüksek doz deksametazon baskılanması → Hipofiz: baskılanır, ektopik/adrenal: baskılanmaz.",
+      "difficulty": "Zor",
+      "tags": ["Cushing", "ACTH", "Adrenal"],
+      "ai_coding": "🤖 Kodlama: Cushing Hastalığı = Hipofiz (ACTH bağımlı). Cushing Sendromu = Herhangi biri."
+    },
+    {
+      "id": "path_b5A_015",
+      "question": "Alzheimer hastalığında β-amiloid ve tau patolojisinin lokalizasyonu nedir?",
+      "answer": "β-amiloid plaklar: Nöronal dışı (ekstraselüler), senil plak = Aβ çekirdeği + Nörit. İlk: Hipokampus+Neokorteks. Nörofibriler yumak (NFT): İntraselüler, hiperfosforile Tau. Medial temporal → İlerleme kortikal.",
+      "difficulty": "Orta",
+      "tags": ["Alzheimer", "Tau", "β-amiloid"],
+      "ai_coding": "🤖 Kodlama: Alzheimer = 'Dışarıda amiloid plak, içeride tau yumağı'."
+    },
+    {
+      "id": "path_b5A_016",
+      "question": "Parkinson hastalığının patognomik histolojik bulgusu nedir?",
+      "answer": "Lewy cismi: Substantia nigra (pars compacta) nöronlarında, α-sinüklein birikimi → Eozinofilik intrasitoplazmatik inclüzyon + Soluk halo. Dopaminerjik nöron kaybı → Striatal dopamin↓ → Ekstrapiramidal semptomlar.",
+      "difficulty": "Orta",
+      "tags": ["Parkinson", "Lewy Cismi", "α-sinüklein"],
+      "ai_coding": "🤖 Kodlama: Parkinson = 'Lewy cismi = α-sinüklein'. Substantia nigra = 'Kararır (pigmenti azalır)'."
+    },
+    {
+      "id": "path_b5A_017",
+      "question": "Beyin tümörlerinde WHO derecelendirmesinde Grade I-IV ne anlama gelir?",
+      "answer": "Grade I: Benign, tam rezeksiyon kurabilir (pilor astrosit). Grade II: Yavaş büyür, ilerleme eğilimi (diffüz astrositom). Grade III: Anaplastik. Grade IV: Glioblastom multiforme (en kötü, psödopalisading nekroz).",
+      "difficulty": "Orta",
+      "tags": ["Beyin Tümörü", "WHO Grade"],
+      "ai_coding": "🤖 Kodlama: Beyin WHO = I (iyi) → IV (GBM, en kötü). Psödopalisading nekroz = GBM."
+    },
+    {
+      "id": "path_b5A_018",
+      "question": "Glioblastom multiforme'nin (GBM) IDH mutasyonu durumu ve prognostik önemi nedir?",
+      "answer": "GBM: IDH-wildtype (%90, primer, yaşlı, kötü prognoz) vs. IDH-mutant (%10, sekonder, genç, daha iyi prognoz). IDH mutasyonu = 2-hidroksiglutar üretimi → Epigenetik değişiklik (CpG hypermethylation = CIMP). MGMT metilasyonu = Temozolomide yanıt.",
+      "difficulty": "Zor",
+      "tags": ["GBM", "IDH", "MGMT"],
+      "ai_coding": "🤖 Kodlama: GBM IDH-wild = Kötü. IDH-mutant = Görece iyi. MGMT metile = Kemo yanıtı."
+    },
+    {
+      "id": "path_b5A_019",
+      "question": "Medulloblastom kimlerde görülür ve hangi serebellar bölgeden kaynaklanır?",
+      "answer": "Çocuklar (<15 yaş), posterior fossa, serebellar vermis (dördüncü ventrikül tıkar). Küçük yuvarlak mavi hücreler, nöroektoderm köken. Homer-Wright rozet. WNT aktive = İyi prognoz. MYC amplifikasyon = Kötü.",
+      "difficulty": "Orta",
+      "tags": ["Medulloblastom", "Çocuk", "Beyin"],
+      "ai_coding": "🤖 Kodlama: Medulloblastom = 'Çocuk + Serebellar vermis + Homer-Wright'. WNT=iyi, MYC=kötü."
+    },
+    {
+      "id": "path_b5A_020",
+      "question": "Nörofibromatozis tip 1 ve tip 2'nin ayırt edici özellikleri nelerdir?",
+      "answer": "NF1 (von Recklinghausen, 17q): Café-au-lait lekeleri (>6, >1.5cm) + Lisch nodülleri + Nörofibromlar + Optik gliom + Optic lezyon. NF2 (22q): Bilateral akustik schwannom (VIII. Sinir) = Bilateral sağırlık. Schwannomlar+Meningiyomlar.",
+      "difficulty": "Orta",
+      "tags": ["Nörofibromatoz", "NF1", "NF2"],
+      "ai_coding": "🤖 Kodlama: NF1=17q=Café-lait+Lisch+Nörofibrom. NF2=22q=Bilateral akustik schwannom."
+    },
+    {
+      "id": "path_b5A_021",
+      "question": "İnme (stroke) patolojisinde iskemik ile hemorajik infarktın farkı nedir?",
+      "answer": "İskemik: Liquefikatif nekroz → Sıvı dolu kavite. Makrofaj infiltrasyonu (3-7. gün). Hemorajik dönüşüm: İskemik alanda sekonder kanama. Hemorajik (intraserebral kanama): Hipertansiyon + Amiloid anjiyopati → Putamen/Bazal ganglia en sık.",
+      "difficulty": "Orta",
+      "tags": ["İnme", "İskemik", "Hemorajik"],
+      "ai_coding": "🤖 Kodlama: İskemik = Liquefikatif nekroz. Hemorajik = HT+Putamen. İskemik geç dönüşüm = Hemorajik."
+    },
+    {
+      "id": "path_b5A_022",
+      "question": "ALS (Amyotrofik lateral skleroz) patolojisi ve SOD1 mutasyonunun önemi nedir?",
+      "answer": "Üst motor nöron (kortikospinal) + Alt motor nöron (anterior horn) dejenerasyonu → Hem spastisite hem flask paralizi. TDP-43 inclüzyonlar (en sık). SOD1 familyal ALS (%20). FUS, C9orf72 (en sık familyal).",
+      "difficulty": "Zor",
+      "tags": ["ALS", "Motor Nöron", "SOD1"],
+      "ai_coding": "🤖 Kodlama: ALS = 'Hem üst hem alt motor nöron'. TDP-43 = ALS patolojik marker."
+    }
+  ]
+}

@@ -91,7 +91,7 @@ class _TopicDetailScreenState extends State<TopicDetailScreen>
     return FloatingActionButton.extended(
       onPressed: () => Navigator.push(
         context,
-        AppRoute.slideUp(FlashcardScreen(topicFilter: widget.topic)),
+        AppRoute.slideUp(FlashcardScreen(topicFilter: widget.topic, isPreview: true)),
       ),
       backgroundColor: AppTheme.cyan,
       foregroundColor: AppTheme.background,
@@ -455,7 +455,7 @@ class _CasesTab extends StatelessWidget {
               ElevatedButton.icon(
                 onPressed: () => Navigator.push(
                   context,
-                  AppRoute.slideUp(CaseStudyScreen(topicFilter: topic)),
+                  AppRoute.slideUp(CaseStudyScreen(topicFilter: topic, isPreview: true)),
                 ),
                 icon: const Icon(Icons.play_arrow_rounded, size: 16),
                 label: const Text('Bu Vakayı Çöz'),

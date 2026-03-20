@@ -1,0 +1,407 @@
+{
+  "subject": "Mikrobiyoloji",
+  "chapter": "Mikoloji (Batch 3A) - Mantarlar",
+  "flashcards": [
+    {
+      "id": "micro_b3a_351",
+      "question": "Mantar hücre zarında bulunan ve Poliyen grubu (Amfoterisin B) ilaçların hedefi olan yapı?",
+      "answer": "Ergosterol.",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Yapı"],
+      "ai_coding": "🤖 Kodlama: E-rgosterol = M-antar."
+    },
+    {
+      "id": "micro_b3a_352",
+      "question": "Mantar hücre duvarında bulunan ve Ekinokandin (Kaspofungin) grubu ilaçların hedefi olan yapı?",
+      "answer": "1,3-beta-glukan.",
+      "difficulty": "Orta",
+      "tags": ["Mikoloji", "Yapı"],
+      "ai_coding": "🤖 Kodlama: E-kinokandin = G-lukan."
+    },
+    {
+      "id": "micro_b3a_353",
+      "question": "Candida albicans'ın 'Pseudo-hif' ve 'Gerçek hif' (Germ tüp) farkı nedir?",
+      "answer": "Germ tüp (gerçek hif) oluşurken nükleusa en yakın yerde boğum oluşmaz.",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Candida"],
+      "ai_coding": "🤖 Kodlama: G-erm = G-erçek (Boğumsuz)."
+    },
+    {
+      "id": "micro_b3a_354",
+      "question": "Pamukçuk (Oral Kandidiyazis) en sık hangi durumlarda görülür?",
+      "answer": "Yenidoğan, İnhale steroid kullanımı, AIDS, Antibiyotik kullanımı.",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Candida"],
+      "ai_coding": "🤖 Kodlama: C-andida = B-eyaz örtü."
+    },
+    {
+      "id": "micro_b3a_355",
+      "question": "Cryptococcus neoformans tanısında 'Kapsül'ü gösteren en tipik boyama?",
+      "answer": "Çini Mürekkebi (India Ink) boyaması.",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Cryptococcus"],
+      "ai_coding": "🤖 Kodlama: C-ryptococcus = Ç-ini Mürekkebi."
+    },
+    {
+      "id": "micro_b3a_356",
+      "question": "Cryptococcus'un en sık yaptığı ağır tablo (özellikle HIV hastalarında)?",
+      "answer": "Menenjit (Fırsatçı menenjit).",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Cryptococcus"],
+      "ai_coding": "🤖 Kodlama: C-ryptococcus = B-eyin (Menenjit)."
+    },
+    {
+      "id": "micro_b3a_357",
+      "question": "Aspergillus fumigatus'un akciğerde yaptığı 'Mantar Topu'na ne ad verilir?",
+      "answer": "Asperjilloma (Genellikle tüberküloz kavitesi içine yerleşir).",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Aspergillus"],
+      "ai_coding": "🤖 Kodlama: A-sperjilloma = M-antar topu."
+    },
+    {
+      "id": "micro_b3a_358",
+      "question": "Aspergillus'un hif yapısı nasıldır?",
+      "answer": "Bölmeli (Septalı) ve Dar açılı (45 derece) dallanan hifler.",
+      "difficulty": "Orta",
+      "tags": ["Mikoloji", "Aspergillus"],
+      "ai_coding": "🤖 Kodlama: A-spergillus = A-çı (45 derece)."
+    },
+    {
+      "id": "micro_b3a_359",
+      "question": "Mucor ve Rhizopus'un (Zygomycetes) hif yapısı nasıldır?",
+      "answer": "Bölmesiz (Aseptat) ve Geniş açılı (90 derece) dallanan hifler.",
+      "difficulty": "Orta",
+      "tags": ["Mikoloji", "Mucor"],
+      "ai_coding": "🤖 Kodlama: M-ucor = M-uhteşem (90 derece) açı."
+    },
+    {
+      "id": "micro_b3a_360",
+      "question": "Rinoserebral Mukormikoz en sık hangi hastada görülür?",
+      "answer": "Kontrolsüz Diyabet (Diyabetik Ketoasidoz).",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Mucor"],
+      "ai_coding": "🤖 Kodlama: M-ucor = Ş-ekerci mantarı."
+    },
+    {
+      "id": "micro_b3a_361",
+      "question": "Dermatofitler arasında 'Ektotriks' (saç dışı) ve 'Endotriks' (saç içi) yerleşim ne için önemlidir?",
+      "answer": "Tinea Capitis (Saçlı deri mantarı) tanısı ve Wood ışığı muayenesi için.",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Dermatofit"],
+      "ai_coding": "🤖 Kodlama: E-ktotriks = D-ışarıda."
+    },
+    {
+      "id": "micro_b3a_362",
+      "question": "Wood ışığı (Ultraviyole) altında 'Florışın' (Parlama) veren dermatofit?",
+      "answer": "Microsporum türleri.",
+      "difficulty": "Orta",
+      "tags": ["Mikoloji", "Dermatofit"],
+      "ai_coding": "🤖 Kodlama: M-icrosporum = M-um gibi parlar (Wood)."
+    },
+    {
+      "id": "micro_b3a_363",
+      "question": "Trichophyton türlerinin makrokonidiyum yapısı nasıldır?",
+      "answer": "İnce, kalem şeklinde (ve sayıca az).",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Dermatofit"],
+      "ai_coding": "🤖 Kodlama: T-richophyton = T-ükenmez kalem (İnce)."
+    },
+    {
+      "id": "micro_b3a_364",
+      "question": "Microsporum türlerinin makrokonidiyum yapısı nasıldır?",
+      "answer": "İğ şeklinde, kalın duvarlı (ve sayıca çok).",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Dermatofit"],
+      "ai_coding": "🤖 Kodlama: M-icrosporum = M-ekik (İğ) şeklinde."
+    },
+    {
+      "id": "micro_b3a_365",
+      "question": "Piedraia hortae neye yol açar?",
+      "answer": "Siyah Piedra (Saç gövdesinde sert siyah nodüller).",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Yüzeyel Mantar"],
+      "ai_coding": "🤖 Kodlama: S-iyah = P-iedra."
+    },
+    {
+      "id": "micro_b3a_366",
+      "question": "Tinea Versicolor (Pityriasis versicolor) etkeni nedir ve mikroskopide neye benzetilir?",
+      "answer": "Malassezia furfur; 'Köfte-makarna' (Spaghetti and meatballs) görüntüsü.",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Yüzeyel Mantar"],
+      "ai_coding": "🤖 Kodlama: M-alassezia = M-akarna."
+    },
+    {
+      "id": "micro_b3a_367",
+      "question": "Sporothrix schenckii (Gülcü Hastalığı) nasıl bulaşır?",
+      "answer": "Bitki dikenleri (gül dikeni vb.) ile deri bütünlüğünün bozulması sonucu.",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Deri Altı Mantar"],
+      "ai_coding": "🤖 Kodlama: S-chenckii = G-ül."
+    },
+    {
+      "id": "micro_b3a_368",
+      "question": "S. schenckii'nin karakteristik lezyon yayılımı nedir?",
+      "answer": "Lenfanjitik yayılım (Lezyonlar lenf kanalları boyunca sıralanır).",
+      "difficulty": "Orta",
+      "tags": ["Mikoloji", "Deri Altı Mantar"],
+      "ai_coding": "🤖 Kodlama: S-chenckii = L-enfanjiit."
+    },
+    {
+      "id": "micro_b3a_369",
+      "question": "Dimorfik mantarlar (Isıya bağlı yapı değiştirenler) vücut ısısında ve oda ısısında hangi formdadır?",
+      "answer": "Vücut ısısında (37°C): Maya, Oda ısısında (25°C): Küf.",
+      "difficulty": "Orta",
+      "tags": ["Mikoloji", "Dimofizm"],
+      "ai_coding": "🤖 Kodlama: Sıcakta Maya, Soğukta Küf!"
+    },
+    {
+      "id": "micro_b3a_370",
+      "question": "Histoplasma capsulatum en çok hangi ortamda bulunur?",
+      "answer": "Yarasa ve Kuş dışkısıyla kontamine toprak.",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Sistemik Mantar"],
+      "ai_coding": "🤖 Kodlama: H-istoplasma = Y-arasa."
+    },
+    {
+      "id": "micro_b3a_371",
+      "question": "Paracoccidioides brasiliensis'in mayasındaki karakteristik görüntü?",
+      "answer": "Gemi dümeni (Pilot wheel) veya Mickey Mouse kulağı.",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Sistemik Mantar"],
+      "ai_coding": "🤖 Kodlama: B-rasiliensis = D-ümen."
+    },
+    {
+      "id": "micro_b3a_372",
+      "question": "Coccidioides immitis'in doku formundaki özelliği?",
+      "answer": "Hücre içinde endospor içeren sferüller (Spherules).",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Sistemik Mantar"],
+      "ai_coding": "🤖 Kodlama: C-occidioides = S-ferül."
+    },
+    {
+      "id": "micro_b3a_373",
+      "question": "Pneumocystis jirovecii (PJP) tanısında en hassas boyama?",
+      "answer": "Gomori Metenamin Gümüş (GMS) boyaması.",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Tanı"],
+      "ai_coding": "🤖 Kodlama: P-J-P = G-ümüş."
+    },
+    {
+      "id": "micro_b3a_374",
+      "question": "P. jirovecii tedavisinde tercih edilen ilaç (Antifungal değil!)?",
+      "answer": "Trimetoprim-Sülfametoksazol (TMP-SMX).",
+      "difficulty": "Kolay",
+      "tags": ["Antibiyotikler", "Mikoloji"],
+      "ai_coding": "🤖 Kodlama: P-J-P = S-eptrin."
+    },
+    {
+      "id": "micro_b3a_375",
+      "question": "Antifungal: Flusitozin (5-FC) hangi mekanizmayla etki eder?",
+      "answer": "DNA ve protein sentezi inhibisyonu (5-fluorourasil'e dönüşerek).",
+      "difficulty": "Zor",
+      "tags": ["Antibiyotikler", "Mikoloji"],
+      "ai_coding": "🤖 Kodlama: 5-FC = F-luorourasil."
+    },
+    {
+      "id": "micro_b3a_376",
+      "question": "Azol grubu antifungallerin (Flukonazol, İtrakonazol vb.) hedef enzimi?",
+      "answer": "Lanolsterol 14-alfa-demetilaz (Ergosterol sentezini bozar).",
+      "difficulty": "Zor",
+      "tags": ["Antibiyotikler", "Mikoloji"],
+      "ai_coding": "🤖 Kodlama: A-zol = 1-4 D-emetilaz."
+    },
+    {
+      "id": "micro_b3a_377",
+      "question": "Ketokonazol'ün en önemli endokrin yan etkisi?",
+      "answer": "Jinekomasti (Androjen sentezini baskılar).",
+      "difficulty": "Kolay",
+      "tags": ["Antibiyotikler", "Mikoloji"],
+      "ai_coding": "🤖 Kodlama: K-etokonazol = K-adınsılaşma."
+    },
+    {
+      "id": "micro_b3a_378",
+      "question": "Griseofulvin'in etki mekanizması?",
+      "answer": "Mikrotübüllere bağlanarak mitozu durdurmak.",
+      "difficulty": "Orta",
+      "tags": ["Antibiyotikler", "Mikoloji"],
+      "ai_coding": "🤖 Kodlama: G-riseofulvin = M-ikrotübül."
+    },
+    {
+      "id": "micro_b3a_379",
+      "question": "Terbinafin (Alilamin) mekanizması?",
+      "answer": "Skualen epoksidaz inhibisyonu (Ergosterol sentezinin ilk basamağı).",
+      "difficulty": "Orta",
+      "tags": ["Antibiyotikler", "Mikoloji"],
+      "ai_coding": "🤖 Kodlama: T-erbinafin = S-kualen epoksidaz."
+    },
+    {
+      "id": "micro_b3a_380",
+      "question": "Besiyerinde 'Gümüş' koloniler yapan mantar?",
+      "answer": "Aspergillus nidulans.",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Besiyeri"],
+      "ai_coding": "🤖 Kodlama: N-idulans = G-ümüş."
+    },
+    {
+      "id": "micro_b3a_381",
+      "question": "Candida glabrata'nın en önemli özelliği?",
+      "answer": "Flukonazol'e doğal dirençli veya az duyarlı olması.",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Candida"],
+      "ai_coding": "🤖 Kodlama: G-labrata = G-erçekten dirençli."
+    },
+    {
+      "id": "micro_b3a_382",
+      "question": "Candida krusei'nin özelliği?",
+      "answer": "Flukonazol'e intrinsik (doğal) dirençlidir.",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Candida"],
+      "ai_coding": "🤖 Kodlama: K-rusei = K-atı (Dirençli)."
+    },
+    {
+      "id": "micro_b3a_383",
+      "question": "Kriptokok tanısında bakılan 'Antijen' testi (LFA/EIA) ne saptar?",
+      "answer": "Kapsüler polisakkarit antijenini.",
+      "difficulty": "Orta",
+      "tags": ["Mikoloji", "Cryptococcus"],
+      "ai_coding": "🤖 Kodlama: C-ryptococcus = K-apsül."
+    },
+    {
+      "id": "micro_b3a_384",
+      "question": "Aspergillus neden olduğu 'Alerjik Bronkopulmoner Asperjilloz' (ABPA) hangi hastada sık görülür?",
+      "answer": "Astım ve Kistik Fibrozis.",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Aspergillus"],
+      "ai_coding": "🤖 Kodlama: A-B-P-A = A-stım."
+    },
+    {
+      "id": "micro_b3a_385",
+      "question": "Mantar 'Kültürü' için en klasik besiyeri?",
+      "answer": "Sabouraud Dextrose Agar (SDA).",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Besiyeri"],
+      "ai_coding": "🤖 Kodlama: S-D-A = M-antar."
+    },
+    {
+      "id": "micro_b3a_386",
+      "question": "SDA besiyerine bakterilerin üremesini önlemek için ne eklenir?",
+      "answer": "Antibiyotikler (Kloramfenikol vb.) ve asit (pH 5.6).",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Besiyeri"],
+      "ai_coding": "🤖 Kodlama: S-D-A = A-sitli."
+    },
+    {
+      "id": "micro_b3a_387",
+      "question": "Rhizopus türleri nasıl ürer?",
+      "answer": "Aseptat hifler ve 'Rizoid' denilen kök benzeri yapılarla.",
+      "difficulty": "Orta",
+      "tags": ["Mikoloji", "Mucor"],
+      "ai_coding": "🤖 Kodlama: R-hizopus = R-izoid (Kök)."
+    },
+    {
+      "id": "micro_b3a_388",
+      "question": "Fusarium cinsi mantarların karakteristiği?",
+      "answer": "Kavisli, kayık şeklinde (Banana-shaped) makrokonidiyumlar.",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Fırsatçı"],
+      "ai_coding": "🤖 Kodlama: F-usarium = F-ilika (Kayık)."
+    },
+    {
+      "id": "micro_b3a_389",
+      "question": "Mantarların ürettiği ve karaciğer kanseriyle ilişkili olan toksin?",
+      "answer": "Aflatoksin (Aspergillus flavus tarafından üretilir).",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Toksin"],
+      "ai_coding": "🤖 Kodlama: A-flatoksin = A-perjillus."
+    },
+    {
+      "id": "micro_b3a_390",
+      "question": "Sporothrix schenckii için kullanılan 'Saturasyon' tedavisi (Eskiden çok yaygındı)?",
+      "answer": "Potasyum İyodür (SSKI) damlaları.",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Tedavi"],
+      "ai_coding": "🤖 Kodlama: S-chenckii = S-atüre iyot."
+    },
+    {
+      "id": "micro_b3a_391",
+      "question": "Mantar enfeksiyonlarında 'Balanit' (Penis başı iltihabı) etkeni?",
+      "answer": "Candida albicans.",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Candida"],
+      "ai_coding": "🤖 Kodlama: B-alanit = C-andida."
+    },
+    {
+      "id": "micro_b3a_392",
+      "question": "Geotrichum candidum neye yol açar?",
+      "answer": "Oral, pulmoner veya intestinal fırsatçı enfeksiyonlar.",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Fırsatçı"],
+      "ai_coding": "🤖 Kodlama: G-eotrichum = G-ıda (Bağırsak)."
+    },
+    {
+      "id": "micro_b3a_393",
+      "question": "Mantar 'Pfeiffer' fenomeni nedir?",
+      "answer": "Kromoblastomikozda görülen pigmentli, sklerotik 'Medlar' cisimcikleri.",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Deri Altı Mantar"],
+      "ai_coding": "🤖 Kodlama: M-edlar = K-romoblastomikoz."
+    },
+    {
+      "id": "micro_b3a_394",
+      "question": "Microsporum canis bulaş yolu?",
+      "answer": "Köpek ve Kedi teması.",
+      "difficulty": "Kolay",
+      "tags": ["Mikoloji", "Dermatofit"],
+      "ai_coding": "🤖 Kodlama: C-anis = C-an (Köpek)."
+    },
+    {
+      "id": "micro_b3a_395",
+      "question": "Pseudallescheria boydii (Scedosporium apiospermum) en çok nerede bulunur?",
+      "answer": "Kanalizasyon suyu ve toprak (Menenjit ve Miçetom yapar).",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Fırsatçı"],
+      "ai_coding": "🤖 Kodlama: S-cedosporium = S-u."
+    },
+    {
+      "id": "micro_b3a_396",
+      "question": "Fonsecaea pedrosoi hangi hastalığın en sık etkenidir?",
+      "answer": "Kromoblastomikoz (Karnabahar görünümlü lezyonlar).",
+      "difficulty": "Orta",
+      "tags": ["Mikoloji", "Deri Altı Mantar"],
+      "ai_coding": "🤖 Kodlama: F-onsecaea = K-arnabahar."
+    },
+    {
+      "id": "micro_b3a_397",
+      "question": "Exophiala jeanselmei hangi tabloyla ilişkilidir?",
+      "answer": "Miçetom ve feohifomikozlar.",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Deri Altı Mantar"],
+      "ai_coding": "🤖 Kodlama: E-xophiala = Miçetom."
+    },
+    {
+      "id": "micro_b3a_398",
+      "question": "Aureobasidium pullulans nerede bulunur?",
+      "answer": "Nemli banyolar, duş perdeleri (Hipersensitivite pnömonisi yapar).",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Alerji"],
+      "ai_coding": "🤖 Kodlama: A-ureobasidium = B-anyo."
+    },
+    {
+      "id": "micro_b3a_399",
+      "question": "Mantar hücresinin metabolik aktivitesini gösteren boyama?",
+      "answer": "Fluorescein diacetate (FDA).",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Boyama"],
+      "ai_coding": "🤖 Kodlama: F-D-A = F-onksiyonel."
+    },
+    {
+      "id": "micro_b3a_400",
+      "question": "Mantarlarda 'Heterokaryoz' nedir?",
+      "answer": "Aynı hücre içinde genetik olarak farklı nükleusların bulunması (Mantar genetiği).",
+      "difficulty": "Zor",
+      "tags": ["Mikoloji", "Genetik"],
+      "ai_coding": "🤖 Kodlama: H-etero = F-arklı çekirdekler."
+    }
+  ]
+}
+

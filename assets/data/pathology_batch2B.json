@@ -1,0 +1,270 @@
+{
+  "subject": "Patoloji",
+  "chapter": "Solunum Sistemi + Üriner Sistem (Batch 2B)",
+  "flashcards": [
+    {
+      "id": "path_b2B_001",
+      "question": "KOAH'ta amfizem ile kronik bronşitin histolojik farkı nedir?",
+      "answer": "Amfizem: Hava boşluklarının kalıcı genişlemesi (asiner düzeyde, elastik doku yıkımı) + İnflamasyon yok. Kronik Bronşit: Klinik tanım (Yılda >3 ay, 2 yıl üst üste produktif öksürük) + Mukus bezi hipertrofisi (Reid indeksi >0.5).",
+      "difficulty": "Orta",
+      "tags": ["Solunum", "KOAH", "Amfizem", "Kronik Bronşit"],
+      "ai_coding": "🤖 Kodlama: Amfizem = 'Hava hapsoldu' (elastin gitti). Kronik Bronşit = 'Mukus bezi şişti' (Reid)."
+    },
+    {
+      "id": "path_b2B_002",
+      "question": "Sentriasiner ile panasiner amfizemin farkı ve bağlantılı risk faktörleri nedir?",
+      "answer": "Sentriasiner (sentrilobüler): Respiratüvar bronşiol merkezi → Sigara (üst lob baskın). Panasiner: Tüm asiner → α1-antitripsin eksikliği (alt lob baskın). Paraseptal: Periferik (pnömotoraks riski).",
+      "difficulty": "Orta",
+      "tags": ["Amfizem", "Sentriasiner", "Panasiner", "AAT"],
+      "ai_coding": "🤖 Kodlama: Sentriasiner = Sigara = Üst lob. Panasiner = α1AT eksik = Alt lob."
+    },
+    {
+      "id": "path_b2B_003",
+      "question": "Bronşiyal astımda eozinofilik inflamasyon mekanizması nedir?",
+      "answer": "Tip 2 immün yanıt: Th2 → IL-4, IL-5, IL-13 → IgE artışı + Eozinofil aktivasyonu. Mast hücre degranülasyonu → Histamin + Lökotrienler (LTC4/D4/E4) → Bronkospazm. Geç faz: Eozinofil + Kronik inflamasyon.",
+      "difficulty": "Zor",
+      "tags": ["Astım", "Eozinofilik", "Th2"],
+      "ai_coding": "🤖 Kodlama: Astım = 'Th2 ateşledi, Eozinofil + IgE + Lökotrien = Bronkospazm'."
+    },
+    {
+      "id": "path_b2B_004",
+      "question": "Akciğer adenokarsinomunda EGFR mutasyonunun önemi ve tedavisi nedir?",
+      "answer": "EGFR mutasyonu: Akciğer adenokarsinomu (%10-15 Batı, %30-40 Asya), genç, sigara içmeyen, kadın. Ekzon 19 delesyon veya L858R (Ekzon 21). Tedavi: Erlotinib, Gefitinib, Osimertinib (T790M direncinde).",
+      "difficulty": "Zor",
+      "tags": ["Akciğer", "EGFR", "Adeno"],
+      "ai_coding": "🤖 Kodlama: EGFR = 'Genç-Kadın-Asya-Sigara içmeyen'. Erlotinib/Gefitinib = EGFR inhibitörü."
+    },
+    {
+      "id": "path_b2B_005",
+      "question": "Akciğer küçük hücreli karsinom (SCLC) ile büyük hücreli nöroendokrin karsinom arasındaki fark nedir?",
+      "answer": "SCLC: Yulaf tanesi şeklinde küçük hücreler, N/C oranı yüksek, nöroendokrin marker (+) (sinaptofizin, kromogranin, CD56), sigara ilişkili. LCNEC: Büyük hücreler, belirgin nükleol, nöroendokrin marker (+). Her ikisi de agresif.",
+      "difficulty": "Zor",
+      "tags": ["Akciğer", "SCLC", "LCNEC"],
+      "ai_coding": "🤖 Kodlama: SCLC = 'Küçük yulaf hücre' + Nöroendokrin. Paket çizer sigara."
+    },
+    {
+      "id": "path_b2B_006",
+      "question": "SCLC'de en sık paraneoplastik sendromlar nelerdir?",
+      "answer": "SIADH (ADH benzeri peptid) + Cushing (ACTH) + Lambert-Eaton myastenik sendromu (VGCC antikorları) + Sensoriyal nöropati. Nörolojik paraneoplastik: Anti-Hu antikorları.",
+      "difficulty": "Orta",
+      "tags": ["SCLC", "Paraneoplastik"],
+      "ai_coding": "🤖 Kodlama: SCLC = 'ADH+ACTH+Lambert-Eaton'. 'Küçük hücre büyük sorun çıkarır'."
+    },
+    {
+      "id": "path_b2B_007",
+      "question": "Akciğer skuamöz hücreli karsinomunda PTHrP neden görülür ve ne yapar?",
+      "answer": "Skuamöz hücreli karsinom PTHrP (paratiroid hormon ilişkili protein) üretebilir → Humoral hiperkalsemi → Kemik yıkımı + Renal Ca reabsorpsiyonu. 'Endokrin' paraneoplastik.",
+      "difficulty": "Orta",
+      "tags": ["Akciğer", "Skuamöz", "Paraneoplastik", "Hiperkalsemi"],
+      "ai_coding": "🤖 Kodlama: Skuamöz akciğer = PTHrP = Hiperkalsemi. 'Skuamöz = Kalsiyum yükseltir'."
+    },
+    {
+      "id": "path_b2B_008",
+      "question": "Mezotelyoma ile akciğer adenokarsinomunun ayırımında hangi İHK belirteçleri kullanılır?",
+      "answer": "Mezotelyoma (+): Calretinin, WT1, CK5/6, D2-40 (podoplanin). Mezotelyoma (-): CEA, B72.3, MOC-31, BerEP4. Adeno (+): CEA, TTF-1, MOC-31. Mezotelyoma: Asbest maruziyeti!",
+      "difficulty": "Zor",
+      "tags": ["Mezotelyoma", "Akciğer", "İHK"],
+      "ai_coding": "🤖 Kodlama: Mezotelyoma = 'Calretinin+WT1+D2-40'. Adeno = 'TTF-1+CEA'."
+    },
+    {
+      "id": "path_b2B_009",
+      "question": "Sarkoidozda akciğer tutulumunda hangi histolojik bulgu karakteristiktir?",
+      "answer": "Non-kazeifiye (kuru) granülomlar — Epiteloid histiyositler + Langerhans dev hücreleri. Granülomda: Schaumann cisimleri (kalsiyum tuzları) + Asteroid cisimleri. Bilateral hiler lenfadenopati.",
+      "difficulty": "Orta",
+      "tags": ["Sarkoidoz", "Granülom", "Akciğer"],
+      "ai_coding": "🤖 Kodlama: Sarkoidoz = 'Kuru granülom' (kazeifiye değil). TBC = Yaş granülom."
+    },
+    {
+      "id": "path_b2B_010",
+      "question": "Hipersensitivite pnömonisi ile astımın immünolojik mekanizması nasıl farklılaşır?",
+      "answer": "Astım: Tip I (IgE) + Tip IV geç faz. Hipersensitivite pnömonisi: Tip III (İmmün kompleks) + Tip IV (Granülomatöz). Alveol düzeyinde = Restriktif. Tedavi: Antijenden uzaklaşma.",
+      "difficulty": "Zor",
+      "tags": ["Hipersensitivite Pnömonisi", "Astım", "İmmün"],
+      "ai_coding": "🤖 Kodlama: HP = Tip 3+4 (Çiftçi akciğeri, Güvercin akciğeri). Astım = Tip 1+4."
+    },
+    {
+      "id": "path_b2B_011",
+      "question": "Pnömosistis jirovecii pnömonisinde tipik histolojik görünüm nedir?",
+      "answer": "Alveoler köpüklü (eozinofilik 'bal peteği' benzeri) eksüda içinde trofozoit ve kist. Gümüş boyası (Gomori-methenamine silver = GMS) ile kist boyası. Özellikle CD4 < 200/mm3 HIV hastalarında.",
+      "difficulty": "Orta",
+      "tags": ["PCP", "HIV", "Akciğer"],
+      "ai_coding": "🤖 Kodlama: PCP = 'Köpüklü alveoler eksüda' + GMS boyası. HIV = CD4 <200."
+    },
+    {
+      "id": "path_b2B_012",
+      "question": "Akciğer karsinoidinde tipik histoloji ve klinik özellikler nelerdir?",
+      "answer": "Tipik karsinoid: Düzenli organoid patern, düşük mitoz (<2/10HPF), ki-67 <2%. Atipik: Mitoz 2-10 veya nekroz. Nöroendokrin marker (+). Merkezi → Obstrüktif pnömoni. Karisinoid krizi: Bronkospazm+Flush.",
+      "difficulty": "Orta",
+      "tags": ["Akciğer", "Karsinoid", "NET"],
+      "ai_coding": "🤖 Kodlama: Akciğer karsinoid = 'Düzenli, az mitoz'. Atipik = 2-10 mitoz."
+    },
+    {
+      "id": "path_b2B_013",
+      "question": "Tüberkülozda primer kompleks (Ghon kompleksi) nedir?",
+      "answer": "Primer odak (Ghon odağı, genellikle alt lob üst kısım/orta lob) + İpsilateral hiler lenfadenopati = Ghon kompleksi. Sekonder TBC: Apeks reakstivasyonu. İmmün yetmezlikte: Milier TBC.",
+      "difficulty": "Kolay",
+      "tags": ["TBC", "Ghon", "Primer"],
+      "ai_coding": "🤖 Kodlama: Ghon = 'Odak + Hiler LN'. Sekonder TBC = Apikal reaksiyon."
+    },
+    {
+      "id": "path_b2B_014",
+      "question": "Akut respiratuar distres sendromu (ARDS) patogenezi ve histoloji nedir?",
+      "answer": "Difüz alveoler hasar (DAD): Pnömosit nekrozu + Kapiler permeabilite artışı → Protein içeren sıvı + Hiyalin membran (Tip II pnömosit hiperplazisi eşlik eder). Fibrozis aşaması → Kronik.",
+      "difficulty": "Zor",
+      "tags": ["ARDS", "DAD", "Hiyalin Membran"],
+      "ai_coding": "🤖 Kodlama: ARDS = 'Difüz Alveoler Hasar + Hiyalin Membran' = Akciğer yangını."
+    },
+    {
+      "id": "path_b2B_015",
+      "question": "Pulmoner hipertansiyonun primer formunda hangi gen mutasyonu görülür?",
+      "answer": "BMPR2 (Bone Morphogenetic Protein Receptor 2) mutasyonu — Otozomal dominant. Pulmoner arteriollerde media hipertrofisi + İntima proliferasyonu + Pleksiform lezyonlar (ilerleyen hastalık).",
+      "difficulty": "Zor",
+      "tags": ["Pulmoner HT", "BMPR2"],
+      "ai_coding": "🤖 Kodlama: Primer Pulmoner HT = BMPR2 mutasyonu. Pleksiform lezyon = İleri evre."
+    },
+    {
+      "id": "path_b2B_016",
+      "question": "Neonatal respiratuar distres sendromunun patogenezi nedir?",
+      "answer": "Sürfaktan eksikliği (özellikle <34 hafta) → Yüzey gerilimi artar → Atelektazi → Hiyalin membran oluşumu (Tip II pnömosit hasarı). Tedavi: Antenatal kortikosteroid + Postpartum surfaktan.",
+      "difficulty": "Orta",
+      "tags": ["RDS", "Neonatal", "Surfaktan"],
+      "ai_coding": "🤖 Kodlama: Neonatal RDS = 'Surfaktan yok' → Atelektazi → Hiyalin membran."
+    },
+    {
+      "id": "path_b2B_017",
+      "question": "Böbrek hücreli karsinomun (RCC) en sık histolojik alt tipi ve genetik bozukluğu nedir?",
+      "answer": "Berrak hücreli RCC (şeffaf hücreli, %75): VHL mutasyonu (3p25) → HIF artışı → VEGF artışı → Anjiyogenez. Papiller RCC (%15): MET mutasyonu (herediter). Kromofob RCC (%5): İyi prognoz.",
+      "difficulty": "Orta",
+      "tags": ["RCC", "VHL", "Böbrek"],
+      "ai_coding": "🤖 Kodlama: Berrak hücreli RCC = VHL = '3p' gitti. HIF-VEGF artışı."
+    },
+    {
+      "id": "path_b2B_018",
+      "question": "Von Hippel-Lindau sendromu hangi tümörlerle ilişkilidir?",
+      "answer": "VHL (3p25 tümör süpresör) mutasyonu → Berrak hücreli RCC (bilateral, erken) + Hemanjioblastom (serebellar) + Feokromositoma + Pankreas nöroendokrin tümör + Retinal anjiom.",
+      "difficulty": "Orta",
+      "tags": ["VHL", "RCC", "Sendrom"],
+      "ai_coding": "🤖 Kodlama: VHL = 'Böbrek+Serebellar+Feokromositoma+Pankreas NET'."
+    },
+    {
+      "id": "path_b2B_019",
+      "question": "Nefrotik sendromun en sık nedeni yetişkinlerde ve çocuklarda nedir?",
+      "answer": "Yetişkin: Membranöz nefropati (en sık primer) veya Diyabetik nefropati (en sık sekonder). Çocuk (<5 yaş): Minimal değişiklik hastalığı (lipoid nefroz) — Steroid yanıtlı, iyi prognoz.",
+      "difficulty": "Orta",
+      "tags": ["Nefrotik Sendrom", "Böbrek"],
+      "ai_coding": "🤖 Kodlama: Yetişkin Nefrotik = Membranöz. Çocuk Nefrotik = Minimal değişiklik."
+    },
+    {
+      "id": "path_b2B_020",
+      "question": "Minimal değişiklik hastalığının (MCD) elektron mikroskopi bulgusu nedir?",
+      "answer": "Işık mikroskopisi: Normal glomerül. İmmünfloresan: Negatif (deposit yok). Elektron mikroskopi: Pedisel (foot process) silinmesi/füzyonu. Steroid yanıtlı, relapslıdır.",
+      "difficulty": "Orta",
+      "tags": ["MCD", "Minimal Değişiklik", "EM"],
+      "ai_coding": "🤖 Kodlama: MCD = 'Işık mikroskopide normal, EM'de pedisel silindi'. Çocuğun iyi nefrotiği."
+    },
+    {
+      "id": "path_b2B_021",
+      "question": "Fokal segmental glomerüloskleroz (FSGS) ile MCD'nin farkı nedir?",
+      "answer": "FSGS: Bazı glomerüllerin bazı segmentlerinde skleroz (fokal=<50% glomerül, segmental=glomerülün bir kısmı). Steroid dirençli. HIV ile ilişkili FSGS = Kollapsan varyant. Obezitenin nefropik nedeni.",
+      "difficulty": "Orta",
+      "tags": ["FSGS", "Glomerülopati"],
+      "ai_coding": "🤖 Kodlama: FSGS = 'Fokal-Segmental'. HIV → Kollapsan FSGS. MCD'den daha dirençli."
+    },
+    {
+      "id": "path_b2B_022",
+      "question": "Membranöz nefropatide hangi otoantikor ve hangi antijen role sahiptir?",
+      "answer": "Anti-PLA2R (Phospholipase A2 receptor) antikorları → İn situ immün kompleks (subepitelyal) → 'Çivi' görünümü (spike) — Silver boyama. %75 primer olguda PLA2R pozitif.",
+      "difficulty": "Zor",
+      "tags": ["Membranöz Nefropati", "PLA2R", "Spike"],
+      "ai_coding": "🤖 Kodlama: Membranöz = 'PLA2R antikoru + Subepitelyal spike'. 'Çivi çaktı'."
+    },
+    {
+      "id": "path_b2B_023",
+      "question": "IgA nefropatisi (Berger hastalığı) nasıl tanınır ve prognoz faktörleri nelerdir?",
+      "answer": "İmmünfloresan: Mezangiumda IgA depoziti. En sık görülen primer glomerülonefrit. Makroskopik hematüri (üst solunum yolu enfeksiyonu sonrası). UPCR, HT, histolojik MEST-C skoru prognoz.",
+      "difficulty": "Orta",
+      "tags": ["IgA Nefropati", "Berger"],
+      "ai_coding": "🤖 Kodlama: IgA nefropati = 'Boğaz enfeksiyonu → Hematüri' + 'IF'de mezangial IgA'."
+    },
+    {
+      "id": "path_b2B_024",
+      "question": "Post-streptokokal glomerülonefrit (PSGN) histolojik görünümü ve IF bulgusu nedir?",
+      "answer": "Histoloji: Hiperselüler glomerül (nötrofil+monosit infiltrasyonu) — Proliferatif. IF: Granüler IgG+C3 depozit (subepitelyal 'hörgüç/hump' = EM). C3 düşük. Oligüri+Hematüri+HT = Nefritik sendrom.",
+      "difficulty": "Orta",
+      "tags": ["PSGN", "Nefritik", "Glomerülonefrit"],
+      "ai_coding": "🤖 Kodlama: PSGN = 'Boğaz/deri → 2-3 hafta → Nefritik'. Subepitelyal hörgüç (hump)."
+    },
+    {
+      "id": "path_b2B_025",
+      "question": "Lupus nefritinin (Diffüz proliferatif = Sınıf IV) histoloji ve IF bulguları nelerdir?",
+      "answer": "Histoloji: Difüz proliferatif GN + 'Tel bant (wire loop)' görünümü. IF: 'Full house' (IgG, IgA, IgM, C3, C1q) — subendotelyal + mezangial + subepitelyal. C3 ve C4 düşük.",
+      "difficulty": "Zor",
+      "tags": ["Lupus Nefriti", "SLE", "Wire Loop"],
+      "ai_coding": "🤖 Kodlama: SLE nefriti = 'Full house IF + Tel bant'. Tip IV = En kötü."
+    },
+    {
+      "id": "path_b2B_026",
+      "question": "Goodpasture sendromunda böbrek histolojisi ve IF görünümü nedir?",
+      "answer": "Hızlı ilerleyen GN (RPGN) — Ay hilali (crescent) oluşumu (Bowman kapsülüne fibroblast+monosit proliferasyonu). IF: Lineer IgG — Anti-GBM antikoru (tip IV kollajen NC1). Pulmoner hemoraji eşlik eder.",
+      "difficulty": "Zor",
+      "tags": ["Goodpasture", "Anti-GBM", "RPGN"],
+      "ai_coding": "🤖 Kodlama: Goodpasture = 'Lineer IgG + Ay hilali'. Anti-GBM → Böbrek+Akciğer."
+    },
+    {
+      "id": "path_b2B_027",
+      "question": "ANCA ilişkili vaskülit hangi tiplerde ve hangi hastalıkta görülür?",
+      "answer": "c-ANCA (PR3): Granülomatoz polianjiit (Wegener). p-ANCA (MPO): Mikroskopik polianjiit + Eozinofilik granülomatoz polianjiit (Churg-Strauss). Böbrekte: Pauci-immün RPGN (IF'de deposit yok).",
+      "difficulty": "Zor",
+      "tags": ["ANCA", "Vaskülit", "Böbrek"],
+      "ai_coding": "🤖 Kodlama: c-ANCA = Wegener. p-ANCA = Mikroskopik Polianjiit. Pauci-immün = Deposit yok."
+    },
+    {
+      "id": "path_b2B_028",
+      "question": "Diyabetik nefropatide en erken ve en spesifik histolojik bulgu nedir?",
+      "answer": "Kimmelstiel-Wilson nodülü: Mezangiumda lamellated nodüler sclerosis (kesin tanısal). Daha erken: GBM kalınlaşması + Mezangium genişlemesi. Evre 1-2 (reversible) → Evre 3 → Evre 4 (proteinüri) → Evre 5.",
+      "difficulty": "Orta",
+      "tags": ["Diyabetik Nefropati", "Kimmelstiel-Wilson"],
+      "ai_coding": "🤖 Kodlama: KW nodülü = 'Diyabetin böbrek imzası'. Nodüler skleroz = Spesifik."
+    },
+    {
+      "id": "path_b2B_029",
+      "question": "Mesane ürotelyal karsinomunda hangi kanserojenler suçlanır?",
+      "answer": "Sigara (en önemli, 4-7x risk) + Aromatik aminler (boyacılar, lastik işçileri: β-naphthylamine, anilin) + Siklofosfamid + Kronik sistit (S. haematobium = Skuamöz tip). Çıkmaz soğukta bölgede: N. Afrika'da SCC tipik.",
+      "difficulty": "Orta",
+      "tags": ["Mesane Kanseri", "Kanserojen"],
+      "ai_coding": "🤖 Kodlama: Mesane = 'Sigara+Boya+Skisto'. S. haematobium → Skuamöz karsinom."
+    },
+    {
+      "id": "path_b2B_030",
+      "question": "Renal papiller nekroz en sık hangi durumlarda görülür?",
+      "answer": "NSAID kullanımı (en sık) + Diyabet + Orak hücreli anemi + Papilloedema + Kronik pyelonefrit + Anestezi. 'DASA-N' = Diyabet, Analjezik, Sickle cell, Alkol, NSAİD.",
+      "difficulty": "Orta",
+      "tags": ["Böbrek", "Papiller Nekroz"],
+      "ai_coding": "🤖 Kodlama: Papiller nekroz = 'NSAİD + Diyabet + Orak hücre'. 'Papil ACÜ-N'."
+    },
+    {
+      "id": "path_b2B_031",
+      "question": "Akut tübüler nekroz (ATN) neden görülür ve nasıl ayrılır?",
+      "answer": "İskemik ATN: Şok, hipoperfüzyon → Düz (proksimal) tübül hücre nekrozu + Tübüler bazal membran intakt. Toksik ATN: Aminoglikozid, Kontrast, Mioglobin → Proksimal tübül → Vakuolizasyon.",
+      "difficulty": "Orta",
+      "tags": ["ATN", "Böbrek", "AKİ"],
+      "ai_coding": "🤖 Kodlama: ATN = 'Proksimal tübül ölüyor'. İskemik vs Toksik. Oligo-nonoligo."
+    },
+    {
+      "id": "path_b2B_032",
+      "question": "Hemolitik üremik sendrom (HÜS) böbrek patolojisi nasıldır?",
+      "answer": "Trombotik mikroanjiopati (TMA): Glomerüler kapillerde ve afferent arteriyollerde fibrin + Platelet trombüsü → Glomerüler iskemi → Böbrek yetmezliği. EHEC (O157:H7) → Shiga toksin → Endotel hasarı.",
+      "difficulty": "Zor",
+      "tags": ["HÜS", "TMA", "Böbrek"],
+      "ai_coding": "🤖 Kodlama: HÜS = 'Shiga Toksin + TMA' = Trombüs böbrekte = Böbrek yetmezliği."
+    },
+    {
+      "id": "path_b2B_033",
+      "question": "Nefrokalsinoz ile nefrolitiyazis nedir ve en sık taş türü hangisidir?",
+      "answer": "Nefrokalsinoz: Parankimde kalsiyum birikimi (hiperkalsemi, distal RTA). Nefrolitiyazis: Taş. En sık taş: Kalsiyum oksalat (%80, radyoopak). Strüvit: İnfeksiyon (proteus, geyik boynuzu). Ürik asit: Gut.",
+      "difficulty": "Orta",
+      "tags": ["Nefrolitiyazis", "Böbrek Taşı"],
+      "ai_coding": "🤖 Kodlama: Taş sıklık = Kalsiyum oksalat (en sık) > Strüvit > Ürik asit > Sistin."
+    }
+  ]
+}

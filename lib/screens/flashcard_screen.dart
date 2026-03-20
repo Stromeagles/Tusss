@@ -10,7 +10,7 @@ import '../models/sm2_model.dart';
 import '../widgets/difficulty_badge_widget.dart';
 import '../models/subject_registry.dart';
 
-enum FlashcardMode { all, dueOnly, pocketOnly, newOnly, learnedOnly, failedOnly }
+enum FlashcardMode { all, dueOnly, pocketOnly, newOnly, learnedOnly, failedOnly, criticalOnly }
 
 class FlashcardScreen extends StatefulWidget {
   final Topic? topicFilter;
@@ -18,6 +18,7 @@ class FlashcardScreen extends StatefulWidget {
   final List<String>? subjectIds; // Çoklu branş filtresi (Günlük Hedef için)
   final FlashcardMode initialMode;
   final int? dailyGoal;
+  final bool isPreview;
 
   const FlashcardScreen({
     super.key,
@@ -26,6 +27,7 @@ class FlashcardScreen extends StatefulWidget {
     this.subjectIds,
     this.initialMode = FlashcardMode.dueOnly,
     this.dailyGoal,
+    this.isPreview = false,
   });
 
   @override
@@ -84,11 +86,11 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   }
 
   void _showAnswerToast(SM2CardData updated) {
-    final isNowPocket = updated.isInPocket;
-    final emoji = isNowPocket ? '🧠' : '📚';
-    final message = isNowPocket
-        ? 'Hafıza! 3 gün sonra tekrar sorulacak'
-        : 'Bildiklerime alındı! Tekrar edilirse hafızaya geçecek';
+    final isBildim = updated.lastQuality == 2;
+    final emoji = isBildim ? '✅' : '❌';
+    final message = isBildim
+        ? 'Bildim! 3 gün sonra tekrar sorulacak'
+        : 'Bilemedim! 1 gün sonra tekrar sorulacak';
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
@@ -106,7 +108,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             ),
           ],
         ),
-        backgroundColor: AppTheme.success,
+        backgroundColor: isBildim ? AppTheme.success : AppTheme.error,
         behavior: SnackBarBehavior.floating,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         duration: const Duration(seconds: 2),
@@ -117,53 +119,61 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
 
   Future<void> _applyMode(List<Flashcard> source) async {
     List<Flashcard> result = [];
-    final allData = await Future.wait(
-        source.map((c) => _srService.getCardData(c.id)));
-
     final allMap = await _srService.getAllData();
 
     if (_mode == FlashcardMode.learnedOnly) {
-      // Bildiklerim: En az 1 kez çalışılmış (veya tekrar öğreniliyor), cepte değil
-      for (var i = 0; i < source.length; i++) {
-        if (allMap.containsKey(source[i].id) && allData[i].repetitions <= 1) {
-          result.add(source[i]);
+      // Bildiklerim: lastQuality == 2
+      result = source.where((fc) {
+        final data = allMap[fc.id];
+        return data != null && data.lastQuality == 2;
+      }).toList();
+    } else if (_mode == FlashcardMode.dueOnly) {
+      // HAZIRSAN BAŞLA önceliği: Bilemediklerim (due) → Yeni → Bildiklerim (due)
+      final dueBilemediklerim = <Flashcard>[];
+      final yeniKartlar       = <Flashcard>[];
+      final dueBildiklerim    = <Flashcard>[];
+
+      for (final fc in source) {
+        final data = allMap[fc.id];
+        if (data == null) {
+          yeniKartlar.add(fc);
+        } else if (data.lastQuality == 1 && data.isDue) {
+          dueBilemediklerim.add(fc);
+        } else if (data.lastQuality == 2 && data.isDue) {
+          dueBildiklerim.add(fc);
         }
       }
-    } else if (_mode == FlashcardMode.dueOnly) {
-      // Eski 'Tekrar' mantığı
-      for (var i = 0; i < source.length; i++) {
-        if (allData[i].isDue && !allData[i].isInPocket) result.add(source[i]);
+      yeniKartlar.shuffle();
+      if (widget.dailyGoal != null && widget.dailyGoal! > 0 && yeniKartlar.length > widget.dailyGoal!) {
+        yeniKartlar.removeRange(widget.dailyGoal!, yeniKartlar.length);
       }
+      result = [...dueBilemediklerim, ...yeniKartlar, ...dueBildiklerim];
       if (result.isEmpty) result = source;
     } else if (_mode == FlashcardMode.newOnly) {
       // Yeni: Hiç görülmemiş kartlar
-      for (var i = 0; i < source.length; i++) {
-        if (!allMap.containsKey(source[i].id)) result.add(source[i]);
-      }
-      result.shuffle(); // Her seans farklı sıra
+      result = source.where((fc) => !allMap.containsKey(fc.id)).toList();
+      result.shuffle();
       if (widget.dailyGoal != null && widget.dailyGoal! > 0 && result.length > widget.dailyGoal!) {
         result = result.take(widget.dailyGoal!).toList();
       }
     } else if (_mode == FlashcardMode.pocketOnly) {
-      for (var i = 0; i < source.length; i++) {
-        if (allData[i].isInPocket) result.add(source[i]);
-      }
-    } else if (_mode == FlashcardMode.failedOnly) {
-      final all = await _srService.getAllData();
-      _cards = _allCards.where((fc) {
-        final data = all[fc.id];
-        return data != null && !data.isInPocket && data.repetitions == 0;
+      // Ezberim: isBookmarked == true
+      result = source.where((fc) {
+        final data = allMap[fc.id];
+        return data != null && data.isBookmarked;
       }).toList();
-      if (mounted) {
-        setState(() {
-          _currentIndex = 0;
-          _knownCount = 0;
-          _unknownCount = 0;
-          _swipeHistory.clear();
-          _loading = false;
-        });
-      }
-      return;
+    } else if (_mode == FlashcardMode.failedOnly) {
+      // Bilemediklerim: lastQuality == 1
+      result = source.where((fc) {
+        final data = allMap[fc.id];
+        return data != null && data.lastQuality == 1;
+      }).toList();
+    } else if (_mode == FlashcardMode.criticalOnly) {
+      // Kritik: aynı zamanda Bilemediklerim ile aynı (geriye dönük uyumluluk)
+      result = source.where((fc) {
+        final data = allMap[fc.id];
+        return data != null && data.lastQuality == 1;
+      }).toList();
     } else {
       result = source;
     }
@@ -182,14 +192,16 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   Future<void> _rateAndSwipe(int quality) async {
     _pendingQuality = quality;
     _swiperController.swipe(
-      quality >= 3 ? CardSwiperDirection.top : CardSwiperDirection.bottom,
+      quality == 2 ? CardSwiperDirection.top : CardSwiperDirection.bottom,
     );
   }
 
   String get _title {
-    if (_mode == FlashcardMode.pocketOnly) return '📦 Cep Kartları';
+    if (_mode == FlashcardMode.pocketOnly) return '⭐ Ezberim';
     if (_mode == FlashcardMode.newOnly) return '🆕 Yeni Kartlar';
-    if (_mode == FlashcardMode.learnedOnly) return '🧠 Bildiklerim';
+    if (_mode == FlashcardMode.learnedOnly) return '✅ Bildiklerim';
+    if (_mode == FlashcardMode.criticalOnly) return '❌ Bilemediklerim';
+    if (_mode == FlashcardMode.failedOnly) return '❌ Bilemediklerim';
     if (widget.topicFilter != null) return widget.topicFilter!.subTopic;
     if (widget.subjectId != null) {
       final mod = SubjectRegistry.findById(widget.subjectId!);
@@ -238,7 +250,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       child: Row(
         children: [
           _ScoreChip(
-              count: _knownCount, label: 'Bildim', color: AppTheme.success),
+              count: _knownCount, label: 'Öğrenildi', color: AppTheme.success),
           const Spacer(),
           Text(
             '${_currentIndex < _cards.length ? _currentIndex + 1 : _cards.length}/${_cards.length}',
@@ -250,7 +262,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           const Spacer(),
           _ScoreChip(
               count: _unknownCount,
-              label: 'Bilmedim',
+              label: 'Geçici Hafıza',
               color: AppTheme.error),
         ],
       ),
@@ -318,15 +330,17 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             return true;
           }
 
-          // ↑ YUKARI: Bildim (quality 4) | ↓ AŞAĞI: Bilmedim (quality 1)
+          // ↑ YUKARI: Bildim (quality 2) | ↓ AŞAĞI: Bilemedim (quality 1)
           final card = _cards[prev];
-          final quality = _pendingQuality ?? (effectiveDir == CardSwiperDirection.top ? 3 : 1);
+          final quality = _pendingQuality ?? (effectiveDir == CardSwiperDirection.top ? 2 : 1);
           _pendingQuality = null;
-          final SM2CardData updated;
-          try {
-            updated = await _srService.recordAnswer(card.id, quality);
-          } catch (_) {
-            return true;
+          SM2CardData? updated;
+          if (!widget.isPreview) {
+            try {
+              updated = await _srService.recordAnswer(card.id, quality);
+            } catch (_) {
+              return true;
+            }
           }
 
           if (mounted) {
@@ -334,12 +348,13 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
               _swipeHistory.add(effectiveDir);
               if (effectiveDir == CardSwiperDirection.top) {
                 _knownCount++;
-                // Toast: bildiklerime alındı veya cepte geçti
-                if (updated.repetitions == 1 || updated.isInPocket) {
-                  _showAnswerToast(updated);
-                }
+                if (updated != null) _showAnswerToast(updated);
               } else {
                 _unknownCount++;
+                // Bilemedim: Kartı sona ekle
+                if (quality == 1) {
+                  _cards.add(card);
+                }
               }
               _currentIndex = curr ?? _currentIndex;
             });
@@ -375,6 +390,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                 card: _cards[index],
                 srService: _srService,
                 onRate: index == _currentIndex ? _rateAndSwipe : null,
+                isPreview: widget.isPreview,
               ),
               // Glow overlay
               if (glowColor != null && intensity > 0.04)
@@ -384,16 +400,13 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(24),
                         border: Border.all(
-                          color: glowColor.withValues(
-                              alpha: (intensity * 0.9).clamp(0.0, 1.0)),
+                          color: glowColor.withOpacity((intensity * 0.9).clamp(0.0, 1.0)),
                           width: 2.5,
                         ),
-                        color: glowColor.withValues(
-                            alpha: (intensity * 0.13).clamp(0.0, 1.0)),
+                        color: glowColor.withOpacity((intensity * 0.13).clamp(0.0, 1.0)),
                         boxShadow: [
                           BoxShadow(
-                            color: glowColor.withValues(
-                                alpha: (intensity * 0.40).clamp(0.0, 1.0)),
+                            color: glowColor.withOpacity((intensity * 0.40).clamp(0.0, 1.0)),
                             blurRadius: 32,
                             spreadRadius: 5,
                           ),
@@ -414,19 +427,18 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 22, vertical: 9),
                       decoration: BoxDecoration(
-                        color: glowColor.withValues(
-                            alpha: (intensity * 0.92).clamp(0.0, 1.0)),
+                        color: glowColor.withOpacity((intensity * 0.92).clamp(0.0, 1.0)),
                         borderRadius: BorderRadius.circular(30),
                         boxShadow: [
                           BoxShadow(
-                            color: glowColor.withValues(alpha: 0.35),
+                            color: glowColor.withOpacity(0.35),
                             blurRadius: 16,
                             spreadRadius: 2,
                           ),
                         ],
                       ),
                       child: Text(
-                        percentThresholdY < 0 ? '✓  Bildim' : '✗  Bilmedim',
+                        percentThresholdY < 0 ? '✅  Bildim' : '❌  Bilemedim',
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 15,
@@ -454,19 +466,19 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           _HintChip(
               icon: Icons.arrow_back_rounded,
               label: 'Geri Al',
-              color: AppTheme.textMuted.withValues(alpha: 0.40)),
+              color: AppTheme.textMuted.withOpacity(0.40)),
           _HintChip(
               icon: Icons.arrow_downward_rounded,
-              label: 'Tekrar',
-              color: AppTheme.error.withValues(alpha: 0.30)),
+              label: 'Geçici',
+              color: AppTheme.error.withOpacity(0.30)),
           _HintChip(
               icon: Icons.arrow_upward_rounded,
-              label: 'İyi',
-              color: AppTheme.success.withValues(alpha: 0.30)),
+              label: 'Orta',
+              color: AppTheme.success.withOpacity(0.30)),
           _HintChip(
               icon: Icons.arrow_forward_rounded,
               label: 'Menü',
-              color: AppTheme.textMuted.withValues(alpha: 0.40)),
+              color: AppTheme.textMuted.withOpacity(0.40)),
         ],
       ),
     );
@@ -523,8 +535,9 @@ class _FlashCard extends StatefulWidget {
   final Flashcard card;
   final SpacedRepetitionService srService;
   final void Function(int quality)? onRate;
+  final bool isPreview;
 
-  const _FlashCard({super.key, required this.card, required this.srService, this.onRate});
+  const _FlashCard({super.key, required this.card, required this.srService, this.onRate, this.isPreview = false});
 
   @override
   State<_FlashCard> createState() => _FlashCardState();
@@ -540,6 +553,7 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
 
   bool _showAnswer = false;
   String _nextReviewLabel = '';
+  bool _isBookmarked = false;
 
   final _aiService = AIService();
   String? _mnemonic;
@@ -573,6 +587,7 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
     _enterCtrl.forward();
 
     _loadNextReview();
+    _loadBookmarkState();
   }
 
   @override
@@ -600,6 +615,17 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
   Future<void> _loadNextReview() async {
     final label = await widget.srService.getNextReviewLabel(widget.card.id);
     if (mounted) setState(() => _nextReviewLabel = label);
+  }
+
+  Future<void> _loadBookmarkState() async {
+    final data = await widget.srService.getCardData(widget.card.id);
+    if (mounted) setState(() => _isBookmarked = data.isBookmarked);
+  }
+
+  Future<void> _toggleBookmark() async {
+    if (widget.isPreview) return;
+    final updated = await widget.srService.toggleBookmark(widget.card.id);
+    if (mounted) setState(() => _isBookmarked = updated.isBookmarked);
   }
 
   void _flip() {
@@ -645,10 +671,10 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
         color: AppTheme.cardBackground,
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
-            color: AppTheme.cyan.withValues(alpha: 0.30), width: 1.5),
+            color: AppTheme.cyan.withOpacity(0.30), width: 1.5),
         boxShadow: [
           BoxShadow(
-              color: AppTheme.cyan.withValues(alpha: 0.08),
+              color: AppTheme.cyan.withOpacity(0.08),
               blurRadius: 24,
               offset: const Offset(0, 8)),
         ],
@@ -657,13 +683,27 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Zorluk + SR etiketi
+          // Zorluk + Bookmark + SR etiketi
           Row(
             children: [
               DifficultyBadge(difficulty: widget.card.difficulty),
               const Spacer(),
-              if (_nextReviewLabel.isNotEmpty)
+              GestureDetector(
+                onTap: _toggleBookmark,
+                child: AnimatedSwitcher(
+                  duration: const Duration(milliseconds: 200),
+                  child: Icon(
+                    _isBookmarked ? Icons.star_rounded : Icons.star_border_rounded,
+                    key: ValueKey(_isBookmarked),
+                    color: _isBookmarked ? AppTheme.neonGold : AppTheme.textMuted,
+                    size: 22,
+                  ),
+                ),
+              ),
+              if (_nextReviewLabel.isNotEmpty) ...[
+                const SizedBox(width: 8),
                 _SRLabel(label: _nextReviewLabel),
+              ],
             ],
           ),
           const Spacer(),
@@ -697,10 +737,10 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
         color: AppTheme.surfaceVariant,
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
-            color: AppTheme.success.withValues(alpha: 0.35), width: 1.5),
+            color: AppTheme.success.withOpacity(0.35), width: 1.5),
         boxShadow: [
           BoxShadow(
-              color: AppTheme.success.withValues(alpha: 0.08),
+              color: AppTheme.success.withOpacity(0.08),
               blurRadius: 24,
               offset: const Offset(0, 8)),
         ],
@@ -709,20 +749,37 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Üst etiket — soru yüzüyle aynı yükseklikte
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
-            decoration: BoxDecoration(
-              color: AppTheme.success.withValues(alpha: 0.12),
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: AppTheme.success.withValues(alpha: 0.40)),
-            ),
-            child: const Text('CEVAP',
-                style: TextStyle(
-                    color: AppTheme.success,
-                    fontSize: 10,
-                    fontWeight: FontWeight.w700,
-                    letterSpacing: 2)),
+          // Üst satır: CEVAP etiketi + Bookmark
+          Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+                decoration: BoxDecoration(
+                  color: AppTheme.success.withOpacity(0.12),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: AppTheme.success.withOpacity(0.40)),
+                ),
+                child: const Text('CEVAP',
+                    style: TextStyle(
+                        color: AppTheme.success,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w700,
+                        letterSpacing: 2)),
+              ),
+              const Spacer(),
+              GestureDetector(
+                onTap: _toggleBookmark,
+                child: AnimatedSwitcher(
+                  duration: const Duration(milliseconds: 200),
+                  child: Icon(
+                    _isBookmarked ? Icons.star_rounded : Icons.star_border_rounded,
+                    key: ValueKey(_isBookmarked),
+                    color: _isBookmarked ? AppTheme.neonGold : AppTheme.textMuted,
+                    size: 22,
+                  ),
+                ),
+              ),
+            ],
           ),
           const Spacer(),
           Text(widget.card.answer,
@@ -742,20 +799,22 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
           const SizedBox(height: 12),
           if (widget.onRate != null) ...[
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                _RatingButton(label: '❌ Tekrar', color: const Color(0xFFFF453A), onTap: () => widget.onRate!(1)),
-                _RatingButton(label: '😓 Zor',    color: const Color(0xFFFF9F0A), onTap: () => widget.onRate!(2)),
-                _RatingButton(label: '✓ İyi',    color: const Color(0xFF30D158), onTap: () => widget.onRate!(3)),
-                _RatingButton(label: '⭐ Kolay',  color: const Color(0xFF0A84FF), onTap: () => widget.onRate!(4)),
+                Expanded(child: _RatingButton(
+                  label: '❌  Bilemedim',
+                  color: const Color(0xFFFF453A),
+                  onTap: () => widget.onRate!(1),
+                )),
+                const SizedBox(width: 12),
+                Expanded(child: _RatingButton(
+                  label: '✅  Bildim',
+                  color: const Color(0xFF30D158),
+                  onTap: () => widget.onRate!(2),
+                )),
               ],
             ),
             const SizedBox(height: 8),
           ],
-          const Center(
-            child: Text('↑ İyi  ·  ↓ Tekrar  ·  ← Geri Al',
-                style: TextStyle(color: AppTheme.textMuted, fontSize: 11)),
-          ),
         ],
       ),
     );
@@ -876,22 +935,24 @@ class _ModeToggle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final (label, icon, color) = switch (mode) {
-      FlashcardMode.dueOnly     => ('Bugün',    Icons.filter_alt_rounded,    AppTheme.cyan),
-      FlashcardMode.pocketOnly  => ('Cep',      Icons.inventory_2_rounded,   AppTheme.success),
-      FlashcardMode.all         => ('Tümü',     Icons.all_inclusive_rounded,  AppTheme.textMuted),
-      FlashcardMode.newOnly     => ('Yeni',     Icons.auto_awesome_rounded,  AppTheme.neonPurple),
-      FlashcardMode.learnedOnly => ('Öğrenilen', Icons.school_rounded,       AppTheme.neonGold),
-      FlashcardMode.failedOnly  => ('Başarısız', Icons.replay_rounded,       AppTheme.error),
+      FlashcardMode.dueOnly      => ('Öncelikli',     Icons.rocket_launch_rounded,  AppTheme.cyan),
+      FlashcardMode.pocketOnly   => ('Ezberim',        Icons.star_rounded,           AppTheme.neonGold),
+      FlashcardMode.all          => ('Tümü',           Icons.all_inclusive_rounded,  AppTheme.textMuted),
+      FlashcardMode.newOnly      => ('Yeni',           Icons.auto_awesome_rounded,   AppTheme.neonPurple),
+      FlashcardMode.learnedOnly  => ('Bildiklerim',    Icons.check_circle_rounded,   AppTheme.success),
+      FlashcardMode.failedOnly   => ('Bilemediklerim', Icons.cancel_rounded,         AppTheme.error),
+      FlashcardMode.criticalOnly => ('Bilemediklerim', Icons.cancel_rounded,         AppTheme.error),
     };
     return GestureDetector(
       onTap: () {
         final next = switch (mode) {
-          FlashcardMode.dueOnly     => FlashcardMode.all,
-          FlashcardMode.all         => FlashcardMode.pocketOnly,
-          FlashcardMode.pocketOnly  => FlashcardMode.newOnly,
-          FlashcardMode.newOnly     => FlashcardMode.learnedOnly,
-          FlashcardMode.learnedOnly => FlashcardMode.failedOnly,
-          FlashcardMode.failedOnly  => FlashcardMode.dueOnly,
+          FlashcardMode.dueOnly      => FlashcardMode.all,
+          FlashcardMode.all          => FlashcardMode.pocketOnly,
+          FlashcardMode.pocketOnly   => FlashcardMode.newOnly,
+          FlashcardMode.newOnly      => FlashcardMode.learnedOnly,
+          FlashcardMode.learnedOnly  => FlashcardMode.failedOnly,
+          FlashcardMode.failedOnly   => FlashcardMode.criticalOnly,
+          FlashcardMode.criticalOnly => FlashcardMode.dueOnly,
         };
         onChanged(next);
       },

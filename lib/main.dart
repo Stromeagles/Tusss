@@ -5,6 +5,7 @@ import 'auth/auth_view_model.dart';
 import 'theme/app_theme.dart';
 import 'screens/auth/login_screen.dart';
 import 'services/theme_service.dart';
+import 'widgets/responsive_wrapper.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -48,6 +49,7 @@ class TusAsistaniApp extends StatelessWidget {
           theme:     AppTheme.lightTheme,
           darkTheme: AppTheme.darkTheme,
           home: const LoginScreen(),
+          builder: (context, child) => ResponsiveWrapper(child: child!),
         );
       },
     );

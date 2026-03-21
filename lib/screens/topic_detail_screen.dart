@@ -284,7 +284,7 @@ class _FlashcardPreviewTileState extends State<_FlashcardPreviewTile> {
           borderRadius: BorderRadius.circular(14),
           border: Border.all(
             color: widget.isDue
-                ? AppTheme.cyan.withOpacity(0.4)
+                ? AppTheme.cyan.withValues(alpha: 0.4)
                 : AppTheme.divider,
             width: widget.isDue ? 1.5 : 1,
           ),
@@ -365,10 +365,10 @@ class _SRBadge extends StatelessWidget {
         padding:
             const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
         decoration: BoxDecoration(
-          color: AppTheme.cyan.withOpacity(0.15),
+          color: AppTheme.cyan.withValues(alpha: 0.15),
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
-              color: AppTheme.cyan.withOpacity(0.4), width: 1),
+              color: AppTheme.cyan.withValues(alpha: 0.4), width: 1),
         ),
         child: const Row(
           mainAxisSize: MainAxisSize.min,
@@ -427,7 +427,7 @@ class _CasesTab extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 10, vertical: 4),
                     decoration: BoxDecoration(
-                      color: AppTheme.success.withOpacity(0.1),
+                      color: AppTheme.success.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: const Text('VAKA ${1}',
@@ -494,7 +494,7 @@ class _SectionCard extends StatelessWidget {
         color: AppTheme.surfaceVariant,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-            color: color.withOpacity(0.25), width: 1),
+            color: color.withValues(alpha: 0.25), width: 1),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

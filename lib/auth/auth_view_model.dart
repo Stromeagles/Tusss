@@ -1,10 +1,15 @@
 import 'package:flutter/foundation.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 enum AuthMode { login, signup }
 
 enum PasswordStrength { weak, medium, strong }
 
 class AuthViewModel extends ChangeNotifier {
+  static const _keyLoggedIn = 'auth_logged_in';
+  static const _keyEmail = 'auth_email';
+  static const _keyName = 'auth_name';
+
   // ── Form fields ───────────────────────────────────────────────────────────
   String name            = '';
   String email           = '';
@@ -17,6 +22,7 @@ class AuthViewModel extends ChangeNotifier {
   bool obscureConfirm     = true;
   bool acceptTerms        = false;
   bool isLoggedIn         = false;
+  bool isInitialized      = false;
   AuthMode mode           = AuthMode.login;
 
   // ── Validation errors ─────────────────────────────────────────────────────
@@ -167,6 +173,27 @@ class AuthViewModel extends ChangeNotifier {
     return PasswordStrength.strong;
   }
 
+  // ── Auto-login: Önceki oturumu kontrol et ────────────────────────────────
+  Future<bool> tryAutoLogin() async {
+    final prefs = await SharedPreferences.getInstance();
+    final loggedIn = prefs.getBool(_keyLoggedIn) ?? false;
+    if (loggedIn) {
+      email = prefs.getString(_keyEmail) ?? '';
+      name = prefs.getString(_keyName) ?? '';
+      isLoggedIn = true;
+    }
+    isInitialized = true;
+    notifyListeners();
+    return loggedIn;
+  }
+
+  Future<void> _persistSession() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_keyLoggedIn, true);
+    await prefs.setString(_keyEmail, email);
+    await prefs.setString(_keyName, name);
+  }
+
   // ── Submit ────────────────────────────────────────────────────────────────
   Future<void> submit() async {
     resetErrors();
@@ -186,11 +213,12 @@ class AuthViewModel extends ChangeNotifier {
     isLoading = true;
     notifyListeners();
 
-    // Mock network delay
+    // TODO: Gerçek backend entegrasyonu (Firebase/Supabase)
     await Future<void>.delayed(const Duration(milliseconds: 1500));
 
     isLoading  = false;
     isLoggedIn = true;
+    await _persistSession();
     notifyListeners();
   }
 
@@ -201,8 +229,25 @@ class AuthViewModel extends ChangeNotifier {
 
     await Future<void>.delayed(const Duration(milliseconds: 800));
 
+    name  = 'Misafir';
+    email = 'guest@tusasistani.app';
     isLoading  = false;
     isLoggedIn = true;
+    await _persistSession();
+    notifyListeners();
+  }
+
+  // ── Logout ────────────────────────────────────────────────────────────────
+  Future<void> logout() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_keyLoggedIn);
+    await prefs.remove(_keyEmail);
+    await prefs.remove(_keyName);
+    isLoggedIn = false;
+    isInitialized = true;
+    email = '';
+    name = '';
+    password = '';
     notifyListeners();
   }
 

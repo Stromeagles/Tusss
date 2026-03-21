@@ -5,7 +5,7 @@
     {
       "id": "path_b5E_001",
       "question": "Akciğer adenokarsinomunda EGFR mutasyonu ve ALK translokasyonunun önemi nedir?",
-      "answer": "EGFR mutasyonu (exon 19 del, exon 21 L858R): Asya, kadın, sigara içmeyen, adenokarsinom. Erlotinib/Gefitinib/Osimertinib. ALK translokasyonu t(2;5) EML4-ALK: Genç, sigara içmeyen. Krizotinib/Alektinib. Her ikisi KRAS(-) tümörlerde anlamlı.",
+      "answer": "[[EGFR mutasyonu]]: Sigara içmeyen, kadın, Asyalı, adenokarsinom. Tedavi: [[Erlotinib]]. [[ALK translokasyonu]]: [[Krizotinib]] ile tedavi edilir.",
       "difficulty": "Orta",
       "tags": ["Akciğer", "EGFR", "ALK"],
       "ai_coding": "🤖 Kodlama: EGFR = Erlotinib. ALK = Krizotinib. Her ikisi = Sigara içmeyen+Adeno."
@@ -13,7 +13,7 @@
     {
       "id": "path_b5E_002",
       "question": "Küçük hücreli akciğer kanserinin (SCLC) nöroendokrin özellikleri ve paraneoplastik sendromları nelerdir?",
-      "answer": "SCLC: Nöroendokrin belirteçler: Kromogranin A, Sinaptofizin, CD56. Paraneoplastik: ACTH (Cushing), ADH (SIADH), Lambert-Eaton (anti-VGCC), anti-Hu (ensefalit). RB1 ve TP53 mutasyonu. Sigara ile güçlü ilişki. Mediastinal kitle.",
+      "answer": "Markerlar: [[Kromogranin A]], [[Sinaptofizin]]. Paraneoplastik: [[ACTH (Cushing)]], [[ADH (SIADH)]], [[Lambert-Eaton]] (anti-VGCC).",
       "difficulty": "Zor",
       "tags": ["SCLC", "Paraneoplastik", "Nöroendokrin"],
       "ai_coding": "🤖 Kodlama: SCLC = Kromogranin+Sinaptofizin. Paraneoplastik: ACTH+SIADH+Lambert-Eaton."
@@ -21,23 +21,15 @@
     {
       "id": "path_b5E_003",
       "question": "Bronşiyal karsinoid tümörün tipik ve atipik formlarının farkı nedir?",
-      "answer": "Tipik karsinoid: <2 mitoz/2mm², nekroz yok, iyi prognoz, genç hasta, santral bronş. Atipik karsinoid: 2-10 mitoz/2mm² veya nekroz, daha agresif. Her ikisi: Nöroendokrin (kromogranin+), sigara ile ilişkisiz, 5-HT üretebilir (karsinoid sendrom).",
+      "answer": "Tipik: [[<2 mitoz]], nekroz yok. Atipik: [[2-10 mitoz]] veya nekroz var. Her ikisi [[nöroendokrin]] karakterdedir.",
       "difficulty": "Orta",
       "tags": ["Karsinoid", "Akciğer", "Nöroendokrin"],
       "ai_coding": "🤖 Kodlama: Tipik karsinoid = <2 mitoz + Nekroz yok = İyi prognoz. Atipik = Daha fazla mitoz."
     },
     {
-      "id": "path_b5E_004",
-      "question": "Hipersensitivite pnömonitisinin (ekstrinsik alerjik alveolitis) patogenezi nedir?",
-      "answer": "Tip III (İmmün kompleks) + Tip IV (DTH) hipersensitivite. Organik toz (kuş tüyü, mantar sporu, bakteri). Çiftçi akciğeri: Termofilik aktinomisete. Akut: Ateş+öksürük. Kronik: İnterstisyel fibrozis. BAL: Lenfositoz. Granülom.",
-      "difficulty": "Zor",
-      "tags": ["Akciğer", "Hipersensitivite Pnömonitis", "İmmün"],
-      "ai_coding": "🤖 Kodlama: Hipersensitivite pnömonit = Tip III+IV + Organik toz + Granülom."
-    },
-    {
       "id": "path_b5E_005",
       "question": "Pulmoner langerhans hücreli histiyositoz (LCH) ile lenfangioleiomiyomatoz (LAM) farkı nedir?",
-      "answer": "LCH: Sigara içen genç yetişkin, Langerhans hücre granülom, BRAF V600E, birbiriyle bağlantılı nodül+kist. LAM: Doğurganlık çağı kadın, TSC2/mTOR mutasyonu, düzgün duvarlı kist, pnömotoraks riski, TGF-β blokajı.",
+      "answer": "[[LCH]]: Sigara içen genç erişkin, [[CD1a (+)]]. [[LAM]]: Doğurganlık çağındaki kadın, [[TSC2 mutasyonu]], düzgün kistik yapılar.",
       "difficulty": "Zor",
       "tags": ["LCH", "LAM", "Akciğer Kistik"],
       "ai_coding": "🤖 Kodlama: LCH = Sigara+BRAF. LAM = Kadın+TSC2+Düzgün kist+Pnömotoraks."
@@ -45,7 +37,7 @@
     {
       "id": "path_b5E_006",
       "question": "IgA nefropatisi (Berger hastalığı) ile Henoch-Schönlein purpurasının böbrek tutulumu farkı nedir?",
-      "answer": "IgA nefropati: Mezanjiyal IgA birikimi, makroskopik hematüri (üst solunum yolu enfeksiyonu sonrası), en sık primer glomerülonefrit. HSP: Sistemik IgA vaskülit: Deri purpurası + Artrit + GIS + Böbrek (IgA nefropati ile aynı histoloji). Çocuklarda sık.",
+      "answer": "[[IgA nefropatisi]]: Mezanjiyal IgA birikimi, [[ÜSYE sonrası]] hematüri. [[HSP]]: Sistemik IgA vasküliti ([[purpura + artrit + GIS + böbrek]]).",
       "difficulty": "Orta",
       "tags": ["IgA Nefropati", "Berger", "HSP"],
       "ai_coding": "🤖 Kodlama: IgA nefropati = Mezanjiyal IgA + ÜSYE sonrası hematüri. HSP = Sistemik IgA vaskülit."
@@ -53,7 +45,7 @@
     {
       "id": "path_b5E_007",
       "question": "Membranöz nefropati ile minimal change hastalığının immünofloresan ve klinik farkı nedir?",
-      "answer": "Membranöz nefropati: PLA2R Ab, subepitelyal birikimi (spike patern), nefrotik sendrom, yetişkin, idiyopatik veya HBV/malignite. Minimal change: Normal ışık mikroskobu, EM'de podosit fusyonu, çocuk, NSAID/lenfoma, steroid yanıtı mükemmel.",
+      "answer": "[[Membranöz]]: [[PLA2R antikoru]], gümüş boyada [[spike]] patern. [[Minimal Change]]: EM'de [[podosit füzyonu]], çocuklarda en sık.",
       "difficulty": "Orta",
       "tags": ["Membranöz", "Minimal Change", "Nefrotik"],
       "ai_coding": "🤖 Kodlama: MN = PLA2R + Spike + Yetişkin. MCN = EM'de podosit füzyonu + Çocuk + Steroid."
@@ -61,23 +53,15 @@
     {
       "id": "path_b5E_008",
       "question": "Fokal segmental glomerüloskleroz (FSGS) risk faktörleri ve HIV ilişkisi nedir?",
-      "answer": "FSGS: Podosit hasarı → Fokal+Segmental skleroz. HIV nefropati (HIVAN): Kollapsif FSGS, tubüler mikrokist. Siyah ırk APOL1 riski. Diğerleri: Obezite, reflü nefropati, analjezik. Steroid direnci. Sekonder FSGS'de altta yatan tedavi.",
+      "answer": "[[FSGS]]: Fokal ve segmental skleroz. [[HIV nefropatisi]]: [[Kollapsif FSGS]] alt tipi görülür.",
       "difficulty": "Orta",
       "tags": ["FSGS", "HIV", "Podosit"],
       "ai_coding": "🤖 Kodlama: FSGS = Podosit hasarı. HIV = Kollapsif FSGS. APOL1 = Siyah ırk riski."
     },
     {
-      "id": "path_b5E_009",
-      "question": "Akut tübüler nekroz (ATN) iskemik ile nefrotoksik formunun histolojik farkı nedir?",
-      "answer": "İskemik ATN: Tübüler epitel kaybı fokal, bazal membran korunmuş, iskemik bölge patchwork. Nefrotoksik ATN: Daha homojen tutulum, aminoglikozid (proksimal tübül), kontrast madde. Her ikisi: Tübüler epitel dökülmesi + İdrarda granüler silendirler.",
-      "difficulty": "Orta",
-      "tags": ["ATN", "Böbrek", "Akut Böbrek Hasarı"],
-      "ai_coding": "🤖 Kodlama: ATN iskemik = Fokal patchwork. Nefrotoksik = Homojen (Aminoglikozid/Kontrast)."
-    },
-    {
       "id": "path_b5E_010",
       "question": "Alport sendromunda hangi kollajen tipi etkilenir ve klinik triadı nedir?",
-      "answer": "Alport sendromu: COL4A3/4/5 mutasyonu → Tip IV kollajen eksikliği → GBM incelme+kalınlaşma+lamellasyon (EM). X-linked en sık (COL4A5). Triad: Hematüri + Sensorinöral işitme kaybı + Oküler bulgu (ön lentikonus).",
+      "answer": "[[Tip IV kollajen]] defekti. Triad: [[Hematüri]] + [[İşitme kaybı]] + [[Oküler (lentikonus)]] bulgular.",
       "difficulty": "Orta",
       "tags": ["Alport", "Kollajen IV", "GBM"],
       "ai_coding": "🤖 Kodlama: Alport = Kollajen IV + Hematüri+İşitme kaybı+Göz. EM=GBM lamellasyon."
@@ -85,7 +69,7 @@
     {
       "id": "path_b5E_011",
       "question": "Osteoartritte (OA) ve romatoid artritte (RA) eklem hasarı mekanizmasının farkı nedir?",
-      "answer": "OA: Mekanik+yaşlanma → Kondrosit disfonksiyonu → Kartilaj kaybı → Subkondral skleroz + Ostofit. Ağrı yük ile artar. RA: Otoimmün (RF+, anti-CCP+) → Pannus (FLS proliferasyonu) → Sinovyal hipertrofi → Kartilaj+kemik erozyonu. Sabah tutukluğu >1 saat.",
+      "answer": "[[OA]]: Mekanik aşınma, [[ostofitler]]. [[RA]]: [[Pannus]] formasyonu, [[Anti-CCP (+)]], eozinofilik sinovit.",
       "difficulty": "Orta",
       "tags": ["Osteoartrit", "RA", "Eklem"],
       "ai_coding": "🤖 Kodlama: OA = Mekanik+Ostofit. RA = Pannus+Otoimmün+Anti-CCP. Sabah tutukluğu RA."
@@ -93,7 +77,7 @@
     {
       "id": "path_b5E_012",
       "question": "Osteogenezis imperfekta hangi protein defektinden kaynaklanır ve tipleri nedir?",
-      "answer": "Osteogenezis imperfekta: COL1A1/COL1A2 mutasyonu → Tip I kollajen defekti → Kırılgan kemik. Tip I (en hafif): Mavi sklera + İşitme kaybı + Kırık. Tip II (en ağır): Letal perinatal. Otozomal dominant (çoğunlukla). Bisfenat tedavisi.",
+      "answer": "[[Tip I kollajen]] defekti. Klinik: [[Mavi sklera]] ve multipl kemik kırıkları.",
       "difficulty": "Orta",
       "tags": ["Osteogenezis İmperfekta", "Kollajen I", "Kemik"],
       "ai_coding": "🤖 Kodlama: OI = Kollajen I + Mavi sklera + Kırık. Tip II = Letal."
@@ -101,7 +85,7 @@
     {
       "id": "path_b5E_013",
       "question": "Paget hastalığı (kemik) nedir ve hangi komplikasyonlar gelişebilir?",
-      "answer": "Kemik Paget: Artmış osteoklast aktivitesi (paramiksovirüs ilişkili?) → Mozaik patern (çimento hatları). ALP yüksek, kalsiyum normal. Komplikasyon: Kırık + Sinir baskısı + Yüksek debili kalp yetmezliği + Osteoarkom (nadir ama en ciddi).",
+      "answer": "[[Mozaik patern]] (çimento hatları). [[ALP yüksektir]]. En ciddi komplikasyon [[osteosarkom]] gelişimidir.",
       "difficulty": "Orta",
       "tags": ["Kemik Paget", "ALP", "Osteosarkom"],
       "ai_coding": "🤖 Kodlama: Paget = ALP yüksek + Mozaik patern + Osteosarkom komplikasyon (nadir)."
@@ -109,7 +93,7 @@
     {
       "id": "path_b5E_014",
       "question": "Dev hücreli arterit (temporal arterit) ile poliarteritis nodosanın damar çapı tutulumu nedir?",
-      "answer": "Dev hücreli arterit: Büyük+orta arterlerde granülomatöz vaskülit. Temporal arter. Görme kaybı riski (oftalmik arter). JAW claudication. ESR yüksek, steroid acil. Poliarteritis nodosa: Orta arterlerde nekrotizan (böbrek+karaciğer+sinir), glomerül tutmaz.",
+      "answer": "[[Dev hücreli (Temporal)]]: Büyük damar, [[granülomatöz]], görme kaybı riski. [[PAN]]: Orta damar, [[nekrotizan]].",
       "difficulty": "Orta",
       "tags": ["Vaskülit", "Dev Hücreli Arterit", "PAN"],
       "ai_coding": "🤖 Kodlama: Temporal arterit = Büyük damar + Görme kaybı riski + Granülom. PAN = Orta damar."
@@ -117,7 +101,7 @@
     {
       "id": "path_b5E_015",
       "question": "Wegener granülomatozu (GPA) ile mikroskobik polianjiitis'in c-ANCA ve p-ANCA ilişkisi nedir?",
-      "answer": "GPA (Wegener): c-ANCA (PR3) → Üst+Alt solunum yolu granülom + Böbrek (kresentik GN). p-ANCA (MPO): Mikroskobik polianjiitis → Pulmoner kapillarit + Böbrek. EGPA (Churg-Strauss): p-ANCA + Eozinofili + Astım.",
+      "answer": "[[GPA (Wegener)]]: [[c-ANCA (PR3)]] (+), granülomatöz inflamasyon. [[MPA]]: [[p-ANCA (MPO)]] (+), granülom yoktur.",
       "difficulty": "Zor",
       "tags": ["ANCA Vaskülit", "GPA", "MPA"],
       "ai_coding": "🤖 Kodlama: GPA=c-ANCA(PR3)+Granülom. MPA=p-ANCA(MPO). EGPA=p-ANCA+Eozinofil+Astım."
@@ -125,7 +109,7 @@
     {
       "id": "path_b5E_016",
       "question": "Sistemik lupus eritematosus (SLE) böbrek tutulumunda Tip III ve Tip IV lupus nefriti farkı nedir?",
-      "answer": "WHO/ISN sınıfı: Tip III = Fokal proliferatif (<50% glomerül). Tip IV = Diffüz proliferatif (>50% glomerül) = En ağır, wire loop lezyonları (subendotelyal birikimi). Her ikisi: Kompleman tüketimi (C3↓,C4↓), anti-dsDNA yüksek. Tedavi: MMF+Steroid.",
+      "answer": "[[Tip IV (Diffüz proliferatif)]]: En ağır tip, [[wire loop (tel lup)]] lezyonları, [[C3 ve C4 düşer]].",
       "difficulty": "Zor",
       "tags": ["SLE", "Lupus Nefriti", "Wire Loop"],
       "ai_coding": "🤖 Kodlama: Lupus nefriti Tip IV = >50% glomerül + Wire loop = En ağır. C3+C4 düşer."
@@ -133,7 +117,7 @@
     {
       "id": "path_b5E_017",
       "question": "Sjögren sendromunun patolojik bulgusu ve ekstraglandüler tutulumu nedir?",
-      "answer": "Sjögren: Tükürük+Lakrimal bez lenfosit infiltrasyonu (CD4+ T) → Xerostomia + Keratokonjunktivitis sicca. Anti-Ro(SS-A), Anti-La(SS-B). Fokus skoru (minor tükürük biyopsi) ≥1. Komplikasyon: MALT lenfoma riski. Primer veya sekonder (RA/SLE).",
+      "answer": "[[Anti-Ro (SS-A)]] ve [[Anti-La (SS-B)]] pozitiftir. [[MALT lenfoma]] riski artmıştır.",
       "difficulty": "Orta",
       "tags": ["Sjögren", "SS-A", "MALT Lenfoma"],
       "ai_coding": "🤖 Kodlama: Sjögren = Anti-Ro/La + Kuru göz+ağız + MALT lenfoma riski."
@@ -141,7 +125,7 @@
     {
       "id": "path_b5E_018",
       "question": "Sistemik skleroz (sklerodermide) CREST sendromu ve anti-sentromer antikoru ilişkisi nedir?",
-      "answer": "CREST: Kalsinozis + Raynaud + Özofagus dismotilite + Sklerodaktili + Telanjiektazi. Anti-sentromer Ab: Sınırlı SSc (CREST) ile ilişkili. Anti-topoisomeraz I (Scl-70): Diffüz SSc + Pulmoner fibrozis. Renal kriz: Anti-RNA polimeraz III.",
+      "answer": "[[CREST]]: [[Anti-sentromer antikoru]]. Diffüz form: [[Anti-Scl-70]] (topoisomeraz I) + [[Pulmoner fibrozis]].",
       "difficulty": "Orta",
       "tags": ["Sklerodermide", "CREST", "Anti-Sentromer"],
       "ai_coding": "🤖 Kodlama: CREST = Anti-sentromer. Diffüz SSc = Scl-70 + Akciğer fibroz. Renal kriz = Anti-RNAP III."
@@ -149,7 +133,7 @@
     {
       "id": "path_b5E_019",
       "question": "Miyastenia gravis ile Lambert-Eaton sendromunun nöromüsküler kavşak mekanizması farkı nedir?",
-      "answer": "Miyastenia gravis: Anti-AChR Ab → Postsinaptik ACh reseptör blokajı/yıkımı → Yorgunlukla kötüleşen zafiyet. Timoma ile ilişkili. Lambert-Eaton: Anti-VGCC Ab (presinaptik) → ACh salınımı azalır → Egzersizle düzelir. SCLC paraneoplastik.",
+      "answer": "[[Miyastenia]]: Postsinaptik [[ACh reseptörü]] blokajı ([[yorgunlukla artar]]). [[Lambert-Eaton]]: Presinaptik [[kalsiyum kanalı]] (VGCC) Ab ([[egzersizle düzelir]]).",
       "difficulty": "Zor",
       "tags": ["Miyastenia Gravis", "Lambert-Eaton", "NMJ"],
       "ai_coding": "🤖 Kodlama: MG = Postsinaptik AChR → Yorgunlukla kötü. LE = Presinaptik VGCC → Egzersizle iyi."
@@ -157,250 +141,66 @@
     {
       "id": "path_b5E_020",
       "question": "İdyopatik inflamatuvar miyopatilerde dermatomiyozit ile polimiyozitin farkı nedir?",
-      "answer": "Dermatomiyozit: Perifasiküler atrofi + Perimizyum C5b-9 birikimi, deri bulguları (Gottron papülleri, heliotrope döküntü), Anti-Mi-2, Anti-Jo-1. Polimiyozit: Endomiyum infiltrat (CD8+ T), deri yok. CK yükselir her ikisinde.",
+      "answer": "[[Dermatomiyozit]]: [[Perifasiküler atrofi]] + [[Gottron papülleri]] + Helitrop döküntü. [[Polimiyozit]]: [[Endomiziyal]] infiltrasyon.",
       "difficulty": "Orta",
       "tags": ["Dermatomiyozit", "Polimiyozit", "Miyopati"],
       "ai_coding": "🤖 Kodlama: DM = Perifasiküler atrofi + Deri + Anti-Mi-2. PM = Endomiyum infiltrat + Deri yok."
     },
     {
-      "id": "path_b5E_021",
-      "question": "Cushing sendromunda yağ dağılımı ve kortizolün metabolik etkileri nelerdir?",
-      "answer": "Kortizol fazlası: Buffalo hump (servikal yağ) + Ay yüzü + Santral obezite + İnce kol-bacak. Hipertansiyon + Hiperglisemi + Osteoporoz + Kolay morarma + Striya. ACTH bağımlı: Cushing hastalığı (hipofiz), Ektopik ACTH (SCLC). ACTH bağımsız: Adrenal adenom.",
-      "difficulty": "Orta",
-      "tags": ["Cushing", "Kortizol", "ACTH"],
-      "ai_coding": "🤖 Kodlama: Cushing = Buffalo hump+Ay yüzü+Santral obezite. ACTH bağımlı vs bağımsız."
-    },
-    {
       "id": "path_b5E_022",
       "question": "Addison hastalığında primer ve sekonder adrenal yetmezliğin farkı nedir?",
-      "answer": "Primer (Addison): Adrenal korteks harabiyeti (otoimmün %80, TBC). ACTH yüksek → Hiperpigmentasyon. Tüm kortikosteroidler azalır (kortizol+aldosteron+androjen). Sekonder: Hipofiz ACTH eksikliği → Kortizol azalır ama aldosteron korunur → Hiperpigmentasyon yok.",
+      "answer": "[[Primer (Addison)]]: [[ACTH yüksektir]] → [[Hiperpigmentasyon]]. Sekonder: ACTH düşüktür, pigmentasyon yoktur.",
       "difficulty": "Orta",
       "tags": ["Addison", "Adrenal Yetmezlik"],
       "ai_coding": "🤖 Kodlama: Primer Addison = ACTH yüksek + Hiperpigmentasyon. Sekonder = ACTH düşük + Pig. yok."
     },
     {
-      "id": "path_b5E_023",
-      "question": "Feokromositomada 'rule of 10'lar nelerdir?",
-      "answer": "%10 malign, %10 bilateral, %10 ekstraadrenal (paragangliom), %10 çocuk, %10 kalıtsal (MEN2, NF1, VHL, SDH mutasyonları). Katekolamin kriz: Hipertansiyon + Başağrısı + Terleme + Çarpıntı. Tanı: Plazma/idrar metanefrin. Cerrahi öncesi alfa-blokaj.",
-      "difficulty": "Orta",
-      "tags": ["Feokromositoma", "Rule of 10", "Katekolamin"],
-      "ai_coding": "🤖 Kodlama: Feokro = %10'lar (malign/bilateral/ekstraadrenal/çocuk/kalıtsal). Metanefrin tanı."
-    },
-    {
-      "id": "path_b5E_024",
-      "question": "Tiroid kanseri tiplerinde prognoz sıralaması nedir?",
-      "answer": "En iyi → En kötü: Papiller (%80, BRAF V600E, en iyi prognoz, lenfatik metastaz) → Foliküler (RAS/PAX8-PPARγ, hematojen metastaz, kapsül invazyonu) → Medüller (kalsitonin, MEN2, RET) → Anaplastik (TP53, en kötü, <1 yıl sağkalım).",
-      "difficulty": "Orta",
-      "tags": ["Tiroid Kanseri", "Prognoz"],
-      "ai_coding": "🤖 Kodlama: Tiroid prognoz: Papiller>Foliküler>Medüller>Anaplastik (en kötü)."
-    },
-    {
       "id": "path_b5E_025",
       "question": "Hashimoto tiroiditinde otoantikor tipleri ve histolojik özelliği nedir?",
-      "answer": "Hashimoto: Anti-TPO (tiroid peroksidaz, en duyarlı) + Anti-tiroglobulin. Histoloji: Lenfositik infiltrasyon + Germinal merkez + Hürthle (onkositik) hücre metaplazisi. Hipotiroidizm. HLA-DR5 ilişkisi. Tiroid lenfoma (MALT) riski.",
+      "answer": "[[Anti-TPO]] pozitiftir. Histoloji: [[Germinal merkezler]] + [[Hürthle hücre]] metaplazisi.",
       "difficulty": "Orta",
       "tags": ["Hashimoto", "Anti-TPO", "Tiroidit"],
       "ai_coding": "🤖 Kodlama: Hashimoto = Anti-TPO + Lenfosit+Germinal merkez+Hürthle hücre."
     },
     {
-      "id": "path_b5E_026",
-      "question": "Sinir sisteminde primer beyin tümörlerinde astrositom gradeleme sisteminin özeti nedir?",
-      "answer": "WHO 2021: IDH mutasyonu temel alınır. Astrositom IDH-mutant: Derece 2-4. Oligodendrogliom: IDH mut + 1p/19q kodeleyon. GBM: IDH-wildtype (Derece 4), EGFR amplifikasyonu, TERT promoter, +7/-10. IDH-mutant tümörler daha iyi prognoz.",
-      "difficulty": "Zor",
-      "tags": ["Beyin Tümörü", "IDH", "Astrositom"],
-      "ai_coding": "🤖 Kodlama: Beyin tümörü WHO2021: IDH-mut=İyi prognoz. GBM=IDH-wt+EGFR+TERT."
-    },
-    {
-      "id": "path_b5E_027",
-      "question": "Meningiomun WHO derecelendirmesi ve hangi popülasyonlarda sık görüldüğü nedir?",
-      "answer": "Meninjiyom: Araknoid hücreden köken, dura mater. WHO Derece 1 (%90): İyi huylu, NF2 mutasyonu. Derece 2 (Atipik): 4-19 mitoz/10 HPF. Derece 3 (Anaplastik). Kadınlarda 2× fazla (progesteron reseptörü +). Radyasyon maruziyeti risk.",
-      "difficulty": "Orta",
-      "tags": ["Menenjiom", "WHO", "NF2"],
-      "ai_coding": "🤖 Kodlama: Meninjiom = Araknoid+NF2+Kadın. WHO1=İyi huylu. Progesteron reseptörü(+)."
-    },
-    {
       "id": "path_b5E_028",
       "question": "Schwannoma ile nörofibromun histolojik farkı nedir?",
-      "answer": "Schwannoma: S100(+), kapsüllü, Antoni A (palizatlı Verocay cisimleri) + Antoni B (mikzoid), NF2 ile ilişkili, akustik schwannoma (CN VIII). Nörofibrom: S100(+/-), kapsülsüz, siniri içeren, NF1 ile ilişkili, malign transformasyon riski.",
+      "answer": "[[Schwannoma]]: [[Antoni A/B]] ve [[Verocay cisimleri]]. [[Nörofibrom]]: Kapsülsüzdür ve [[NF1]] ile ilişkilidir.",
       "difficulty": "Orta",
       "tags": ["Schwannoma", "Nörofibrom", "NF"],
       "ai_coding": "🤖 Kodlama: Schwannoma = Kapsüllü+Verocay+NF2. Nörofibrom = Kapsülsüz+NF1+Malign riski."
     },
     {
-      "id": "path_b5E_029",
-      "question": "Omurilik hasarında ön boynuz (anterior horn) kaybının klinik sonuçları nedir?",
-      "answer": "Anterior horn (alt motor nöron): Aynı taraf alt MN bulguları: Atonik paralizi + Arefleksi + Fasikülasyon + Atrofi. ALS (Lou Gehrig): Hem üst hem alt MN tutulumu. Polio: Sadece alt MN (anterior horn). Werdnig-Hoffmann: SMA tip 1, SMN1 eksikliği.",
-      "difficulty": "Orta",
-      "tags": ["Omurilik", "Alt Motor Nöron", "ALS"],
-      "ai_coding": "🤖 Kodlama: Anterior horn = Alt MN = Atonik+Arefleksi+Fasikülasyon. ALS = Her ikisi."
-    },
-    {
-      "id": "path_b5E_030",
-      "question": "Hipoksik-iskemik ensefalopatin nöronlarda hangi bölgeler en duyarlıdır?",
-      "answer": "En duyarlı bölgeler: Hippokampus CA1 (Sommer sektörü) + Purkinje hücreleri (serebellar korteks) + Beyin sapı nöronları + Korteks katman 3,5,6. Sürekli hipokside: Kistik lökomalazi (premature) veya diffüz kortikal nekroz. Eozinofilik nöron = Erken hasar.",
-      "difficulty": "Zor",
-      "tags": ["Beyin", "İskemi", "Hipoksi"],
-      "ai_coding": "🤖 Kodlama: Hipoksiye en duyarlı: CA1 hippokampus + Purkinje + Katman 3,5,6 korteks."
-    },
-    {
       "id": "path_b5E_031",
       "question": "Prion hastalıklarında spongioform ensefalopatinin patolojik bulguları nelerdir?",
-      "answer": "Prion hastalıkları (CJD, vCJD, Kuru, GSS, FFI): PrPSc (yanlış katlanmış prion proteini) → Nöron kaybı + Spongioform değişiklik (vakuoller) + Astroglioz + Amiloid plak (florid, vCJD). İnflamasyon yok. Tanı: RT-QuIC, 14-3-3 protein BOS.",
+      "answer": "[[PrPSc]] birikimi. [[Spongioform (süngerimsi)]] değişiklikler, nöron kaybı. İnflamasyon [[yoktur]].",
       "difficulty": "Zor",
       "tags": ["Prion", "CJD", "Spongioform"],
       "ai_coding": "🤖 Kodlama: Prion = PrPSc + Spongioform + Astroglioz + İnflamasyon YOK. RT-QuIC tanı."
     },
     {
-      "id": "path_b5E_032",
-      "question": "Karaciğerde hemokromatozda organ tutulumu ve HFE gen mutasyonunun rolü nedir?",
-      "answer": "Herediter hemokromatoz: HFE C282Y/H63D mutasyonu → Hepsidin azalır → Fe emilimi ↑ → Demir birikimi. Tutulum: KC (siroz+HCC) + Pankreas (diabet) + Kalp (kardiyomiyopati) + Hipofiz (hipogonadizm) + Eklem (artropati) + Deri (bronzlaşma). Prusyan mavisi boyası.",
-      "difficulty": "Orta",
-      "tags": ["Hemokromatoz", "HFE", "Demir"],
-      "ai_coding": "🤖 Kodlama: Hemokromatoz = HFE+Hepsidin↓+Fe↑. KC+Pankreas+Kalp+Deri. Prusyan mavisi."
-    },
-    {
-      "id": "path_b5E_033",
-      "question": "Karaciğer patolojisinde periportal, midzonal ve sentrilobüler nekroz hangi hastalıklarla ilişkilidir?",
-      "answer": "Periportal nekroz (Zon 1): Eklampsi, fosfor zehirlenmesi. Midzonal nekroz (Zon 2): Sarı humma, malaria. Sentrilobüler nekroz (Zon 3): Konjestif kalp yetmezliği (en az O2), Parasetamol/CCl4 toksisitesi, Budd-Chiari sendromu.",
-      "difficulty": "Zor",
-      "tags": ["Karaciğer", "Nekroz Zonları", "Zon"],
-      "ai_coding": "🤖 Kodlama: Zon1=Eklamsi. Zon2=Sarı humma. Zon3=Kalp yetmezliği+Parasetamol."
-    },
-    {
-      "id": "path_b5E_034",
-      "question": "Pankreas tümörlerinde seröz kistadenoma ile müsinöz kistik neoplazinin malignite potansiyeli nedir?",
-      "answer": "Seröz kistadenoma: Bal peteği görünümü (çok küçük kist), VHL mutasyonu, kadın, baş bölgesi, iyi huylu. Müsinöz kistik neoplazi: Büyük uniloküler kist, ovaryum stroması, kadın, kuyruk bölgesi, malign potansiyel (→ müsinöz adenokarsinom).",
-      "difficulty": "Orta",
-      "tags": ["Pankreas", "Kistik Tümör", "Seröz/Müsinöz"],
-      "ai_coding": "🤖 Kodlama: Seröz = Bal peteği+VHL+İyi huylu. Müsinöz = Büyük kist+Over stroma+Malign olabilir."
-    },
-    {
-      "id": "path_b5E_035",
-      "question": "IPMN (intraduktyal papiller müsinöz neoplazi) ile solid psödopapiller neoplazinin farkı nedir?",
-      "answer": "IPMN: Ana dal veya yan dal duktusundan köken, müsin üreten, KRAS mutasyonu, malign potansiyel var, yaşlı erkek. Solid psödopapiller neoplazi: Genç kadın, β-katenin mutasyonu, büyük kapsüllü kitle, düşük malign potansiyel, cerrahi ile kür.",
-      "difficulty": "Zor",
-      "tags": ["Pankreas", "IPMN", "Solid Psödopapiller"],
-      "ai_coding": "🤖 Kodlama: IPMN = Kanal+KRAS+Yaşlı erkek. Solid psödopapiller = β-katenin+Genç kadın."
-    },
-    {
-      "id": "path_b5E_036",
-      "question": "Hücre yaşlanmasında (cellular senescence) telomer kısalmasının önemi nedir?",
-      "answer": "Telomer kısalması → p53+p21 aktivasyonu + p16-Rb yolağı → Hücre döngüsü durur (G1 arresti) → Hayflick limiti. Telomeraz: Germ hücreleri+kök hücreler+tümör hücrelerinde aktif. Kanserde telomeraz reaktivasyonu → Ölümsüzlük. Kritik kısalma → Karyotipik instabilite.",
-      "difficulty": "Orta",
-      "tags": ["Telomer", "Hücre Yaşlanması", "Telomeraz"],
-      "ai_coding": "🤖 Kodlama: Telomer kısalır → p53+p16 → Duraklama. Kanser = Telomeraz reaktivasyonu."
-    },
-    {
       "id": "path_b5E_037",
       "question": "Otofaji ile apoptozun hücre ölümü mekanizması olarak farkı nedir?",
-      "answer": "Otofaji: Lizozom aracılı hücre içi organellerin yıkımı. Homeostaz: Stres altında kendi kendini kurtarma. Aşırı otofaji → Tip II hücre ölümü. Apoptoz: Kaspaz aracılı, plazma membranı korunur, fagositoz için 'eat me' sinyali. İnflamasyon yok.",
+      "answer": "[[Apoptoz]]: [[Kaspazlar]] aracılığıyla olur, inflamasyon yapmaz. [[Otofaji]]: [[Lizozomal]] yıkım mekanizmasıdır.",
       "difficulty": "Orta",
       "tags": ["Otofaji", "Apoptoz", "Hücre Ölümü"],
       "ai_coding": "🤖 Kodlama: Otofaji = Lizozom+Organell yıkımı+Kurtarma. Apoptoz = Kaspaz+İnflamasyon yok."
     },
     {
-      "id": "path_b5E_038",
-      "question": "Neoplazide tümör mikro çevresindeki M1 ve M2 makrofajların rolü nedir?",
-      "answer": "M1 makrofaj: IFN-γ ile aktive, tümörisidal (TNF, ROS, NO), anti-tümör. M2 makrofaj: IL-4/IL-13 ile aktive, pro-tümör (VEGF, MMP, IL-10), immün baskılama, anjiyogenez. Tümör infiltran makrofajlar genellikle M2 yönünde → Kötü prognoz.",
-      "difficulty": "Zor",
-      "tags": ["Tümör Mikro Çevre", "Makrofaj", "M1 M2"],
-      "ai_coding": "🤖 Kodlama: M1 = Anti-tümör (IFN-γ). M2 = Pro-tümör (IL-4, VEGF). Tümörde M2 baskın."
-    },
-    {
-      "id": "path_b5E_039",
-      "question": "Kanser kök hücresi (CSC) hipotezi ne anlama gelir ve klonal evrim modelinden farkı nedir?",
-      "answer": "CSC hipotezi: Tümörde hiyerarşi var; sadece az sayıda kök hücre benzeri hücreler tümörü yeniden oluşturabilir (CD44+/CD24- meme Ca). Klonal evrim: Tüm tümör hücreleri eşit potansiyel, rastgele mutasyon seçimi. CSC = Kemoterapi direnci kaynağı.",
-      "difficulty": "Zor",
-      "tags": ["Kanser Kök Hücre", "CSC", "Tümör"],
-      "ai_coding": "🤖 Kodlama: CSC = Tümörde hiyerarşi, az hücre tümörü yeniden kurar. CD44+/CD24- meme."
-    },
-    {
-      "id": "path_b5E_040",
-      "question": "Yara iyileşmesinde birincil ve ikincil iyileşmenin karşılaştırılması nedir?",
-      "answer": "Birincil (primer): Kenarlar birbirine yakın (cerrahi insizyon), az granülasyon dokusu, ince skar. İkincil (sekonder): Geniş yara defekti, enfeksiyon/yanık, çok granülasyon dokusu, kontraksiyon (miyofibroblas), kalın skar. İkincil: Geç iyileşme, kontraktür riski.",
-      "difficulty": "Kolay",
-      "tags": ["Yara İyileşme", "Primer", "Sekonder"],
-      "ai_coding": "🤖 Kodlama: Primer = Yakın kenar+Az granülasyon+İnce skar. Sekunder = Büyük defekt+Kontraksiyon."
-    },
-    {
-      "id": "path_b5E_041",
-      "question": "Granülasyon dokusunda hangi hücreler ve büyüme faktörleri baskındır?",
-      "answer": "Granülasyon dokusu: Fibroblast + Miyofibroblast + Kapiller (anjiyogenez) + Makrofaj. Büyüme faktörleri: TGF-β (fibrozis/kollajen) + PDGF (fibroblast kemotaksi) + FGF-2 (anjiyogenez) + VEGF (kapiller oluşumu). Kollajen III önce, sonra I ile replase.",
-      "difficulty": "Orta",
-      "tags": ["Granülasyon Dokusu", "Onarım", "Büyüme Faktörü"],
-      "ai_coding": "🤖 Kodlama: Granülasyon = Fibroblast+Kapiller+Makrofaj. TGF-β+PDGF+VEGF. Kollajen III→I."
-    },
-    {
-      "id": "path_b5E_042",
-      "question": "Kollajen sentezinde C vitamini (askorbik asit) eksikliğinin yol açtığı patoloji nedir?",
-      "answer": "C vitamini: Prolil/lisil hidroksilaz kofaktörü → Hidroksiprolin/hidroksilizin oluşumu → Kollajen çapraz bağlanması. Eksiklikte (Skorbüt): Kollajen sentezi bozulur → Zayıf kapiller (peteşi/purpura) + Diş eti kanaması + Yara iyileşmesi bozulur + Ekimoz.",
-      "difficulty": "Orta",
-      "tags": ["Skorbüt", "C Vitamini", "Kollajen"],
-      "ai_coding": "🤖 Kodlama: C vit eksikliği = Hidroksilaz bozukluğu = Kollajen çapraz bağ yok = Skorbüt."
-    },
-    {
-      "id": "path_b5E_043",
-      "question": "Nekroz tiplerinde gangrenöz nekrozun kuru ve ıslak formlarının farkı nedir?",
-      "answer": "Kuru gangren: İskemik koagülatif nekroz, enfeksiyon yok, mumyalaşma (desiccation), sınır belirgin. Islak gangren: Koagülatif + Likefaktif nekroz, süperenfeksiyon (Clostridium), hızlı yayılma, sınır belirsiz, gaz gangren mümkün. Diyabetik ayak riski.",
-      "difficulty": "Orta",
-      "tags": ["Gangren", "Nekroz", "Diyabet"],
-      "ai_coding": "🤖 Kodlama: Kuru gangren = Koagülatif+Mumyalaşma. Islak = Enfeksiyon+Likefaktif+Hızlı."
-    },
-    {
-      "id": "path_b5E_044",
-      "question": "p53 yolağında MDM2'nin rolü ve Li-Fraumeni sendromundaki önemi nedir?",
-      "answer": "MDM2: p53'ü ubikuitin aracılı proteazomda yıkar (negatif regülatör). DNA hasarı → ATM/ATR → MDM2 fosforilasyonu/inaktivasyonu → p53 birikir → p21 (G1 arrest) + BAX (apoptoz). Li-Fraumeni: Germline TP53 mut → Multiple kanser (sarkom, meme, beyin). MDM2 amplifikasyonu = TP53 wt tümörlerde.",
-      "difficulty": "Zor",
-      "tags": ["p53", "MDM2", "Li-Fraumeni"],
-      "ai_coding": "🤖 Kodlama: MDM2 = p53 yıkıcı. DNA hasar → ATM → MDM2 inhibe → p53 aktif. LFS = TP53 mutasyonu."
-    },
-    {
-      "id": "path_b5E_045",
-      "question": "Epigenetik değişiklikler arasında DNA metilasyonu ve histon asetilasyonunun kanser ile ilişkisi nedir?",
-      "answer": "DNA metilasyonu: CpG adacıkları metillenir → Tümör baskılayıcı gen susturulması (CDKN2A/p16, MLH1). Histon deasetilasyon (HDAC): Kromatin kompaklaşır → Gen ekspresyonu azalır. Her ikisi kalıtılabilir. DNMT inhibitörleri (azasitidin) + HDAC inhibitörleri (vorinostat) kanserde kullanım.",
-      "difficulty": "Zor",
-      "tags": ["Epigenetik", "DNA Metilasyon", "Kanser"],
-      "ai_coding": "🤖 Kodlama: CpG metilasyon = TSG susar. HDAC = Kromatin sıkışır. Her ikisi kanserde reversibl."
-    },
-    {
       "id": "path_b5E_046",
       "question": "Reaktif oksijen türlerinin (ROS) hücre hasarı mekanizması nedir ve hangi enzimler temizler?",
-      "answer": "ROS: O2- (süperoksit), H2O2, OH (hidroksil, en toksik, Fenton reaksiyonu). Hasar: Lipid peroksidasyonu + DNA tek iplik kırığı + Protein oksidasyonu. Temizleyiciler: SOD (O2-→H2O2) + Katalaz (H2O2→H2O) + GPx (glutatyon) + Vit E/C. İskemi-reperfüzyon = ROS patlaması.",
+      "answer": "Temizleyici enzimler: [[SOD]], [[Katalaz]] ve [[Glutatyon peroksidaz]]. [[Hidroksil (OH)]] en toksik olanıdır.",
       "difficulty": "Orta",
       "tags": ["ROS", "Oksidatif Stres", "Hücre Hasarı"],
       "ai_coding": "🤖 Kodlama: ROS temizleme: SOD→Katalaz→GPx. Fenton = OH en toksik. İskemi-rep = ROS patlaması."
     },
     {
-      "id": "path_b5E_047",
-      "question": "Kalsiyumun hücre hasarındaki rolü nedir?",
-      "answer": "Hücre hasarında Ca2+ artışı: ATPaz inhibisyonu → Daha fazla Ca girişi. Aktive olan enzimler: Fosfolipaz A2 (membran hasarı) + Endonükleaz (DNA hasarı) + Proteaz (sitoiskelet yıkımı) + ATPaz (enerji tükenmesi). Kalsiyum birikimi mitokondride PT porunu açar → Sitokrom C → Apoptoz.",
-      "difficulty": "Zor",
-      "tags": ["Kalsiyum", "Hücre Hasarı", "Apoptoz"],
-      "ai_coding": "🤖 Kodlama: Ca2+ ↑ → Fosfolipaz+Endonükleaz+Proteaz aktive = Hücre hasarı döngüsü."
-    },
-    {
-      "id": "path_b5E_048",
-      "question": "Hiperbilirübinemi tiplerinde direkt (konjuge) ile indirekt (konjuge olmayan) bilirubin yükselişinin nedenleri nelerdir?",
-      "answer": "İndirekt (konjuge olmayan): Hemoliz + Gilbert sendromu (UGT1A1 polimorfizm, iyi huylu) + Crigler-Najjar (UGT1A1 eksikliği, ağır). Direkt (konjuge): Intrahepatik (hepatit, siroz, ilaç) + Ekstrahepatik kolestaz (taş, tümör). Urine bilirubini pozitif = Direkt.",
-      "difficulty": "Orta",
-      "tags": ["Bilirubin", "Sarılık", "Kolestaz"],
-      "ai_coding": "🤖 Kodlama: İndirekt↑ = Hemoliz/Gilbert/Crigler. Direkt↑ = Kolestaz. İdrarda bilirubin = Direkt."
-    },
-    {
       "id": "path_b5E_049",
       "question": "Gastrointestinal stromal tümör (GIST) patolojisi ve imatinib hedefi nedir?",
-      "answer": "GIST: İntersitisyel Cajal hücresinden köken. c-KIT (CD117) mutasyonu (%80) veya PDGFRA mutasyonu. IHK: CD117(+), CD34(+), DOG1(+). Mide en sık (%60). İmatinib = KIT inhibitörü = Birinci seçenek metastatik. Mitozis sayısı prognostik.",
+      "answer": "[[c-KIT (CD117)]] mutasyonu pozitiftir. Tedavide [[İmatinib]] kullanılır. [[Cajal hücrelerinden]] köken alır.",
       "difficulty": "Orta",
       "tags": ["GIST", "c-KIT", "İmatinib"],
       "ai_coding": "🤖 Kodlama: GIST = c-KIT/CD117 + İmatinib hedefi. DOG1+CD34+. Mide en sık."
-    },
-    {
-      "id": "path_b5E_050",
-      "question": "Ülseratif kolitle ilişkili displazi ve kolorektal karsinom riskini belirleyen faktörler nelerdir?",
-      "answer": "ÜK'da kolorektal Ca riski: Hastalık süresi (>10 yıl) + Tutulum yaygınlığı (pankolit>sol taraf) + PSC birlikteliği + Birinci derece akrabada Ca. Kolonoskopi izlemi: 8-10 yıldan sonra başla, 2 yılda bir biyopsi. Displazi = Kolektomi endikasyonu.",
-      "difficulty": "Orta",
-      "tags": ["Ülseratif Kolit", "Kolorektal Ca", "Displazi"],
-      "ai_coding": "🤖 Kodlama: ÜK Ca riski: Süre+Yaygınlık+PSC+Aile hx. 10 yıl sonra kolonoskopi izlemi."
     }
   ]
 }

@@ -5,7 +5,7 @@
     {
       "id": "path_b5D_001",
       "question": "Trombüs ile postmortem pıhtı (kan pıhtısı) arasındaki makroskopik fark nedir?",
-      "answer": "Trombüs: Damar duvarına yapışık, kuru, granüler, Lines of Zahn (lökosit+eritrosit tabakaları). Postmortem pıhtı: Yapışık değil, pürüzsüz, gelatinöz, 'chicken fat clot' (lökosit üstte sarı) + 'currant jelly' (eritrosit altta kırmızı).",
+      "answer": "[[Trombüs]]: Damar duvarına yapışık ve [[Lines of Zahn]] içerir. [[Postmortem pıhtı]]: Yapışık değildir, [[chicken fat]] (sarı) ve [[currant jelly]] (kırmızı) kısımları vardır.",
       "difficulty": "Orta",
       "tags": ["Hemodinamik", "Trombüs", "Pıhtı"],
       "ai_coding": "🤖 Kodlama: Trombüs=Yapışık+Lines of Zahn. Postmortem=Chicken fat+Currant jelly."
@@ -13,7 +13,7 @@
     {
       "id": "path_b5D_002",
       "question": "Venöz tromboembolizmde (VTE) faktör V Leiden mutasyonunun mekanizması nedir?",
-      "answer": "Faktör V Leiden: F5 R506Q mutasyonu → Aktive Protein C (APC) faktör Va'yı yıkamaz → Protrombotik. En sık herediter trombofili (%5 beyaz popülasyon). Heterozigot: 4-8× risk. Homozigot: 80× risk. HRT/OCP + FVL = Çok yüksek risk.",
+      "answer": "[[Faktör V Leiden]]: [[Aktive Protein C (APC)]] direnci gelişir. En sık [[herediter trombofili]] nedenidir.",
       "difficulty": "Orta",
       "tags": ["Hemodinamik", "Faktör V Leiden", "Trombofili"],
       "ai_coding": "🤖 Kodlama: FV Leiden = APC direnci = En sık kalıtsal trombofili. OCP+FVL=Çok riskli."
@@ -21,7 +21,7 @@
     {
       "id": "path_b5D_003",
       "question": "Antifosfolipid sendromunda (APS) hangi antikor tipleri vardır ve klinik tablosu nedir?",
-      "answer": "APS: Lupus antikoagülanı + Anti-kardiyolipin Ab + Anti-β2-glikoprotein I Ab. Paradoks: Antikoagülan aPTT uzatır ama klinik tromboz. Arteriyel+Venöz tromboz + Tekrarlayan düşük. Sekonder APS = SLE ile. VDRL yanlış pozitif.",
+      "answer": "[[APS]]: Lupus antikoagülanı, [[anti-kardiyolipin]] ve anti-β2-glikoprotein I Ab. Klinik: [[Arteriyel/venöz tromboz]] + [[tekrarlayan düşükler]].",
       "difficulty": "Zor",
       "tags": ["APS", "Tromboz", "Antifosfolipid"],
       "ai_coding": "🤖 Kodlama: APS = 'aPTT uzar ama tromboz' paradoksu. Düşük + Tromboz + SLE."
@@ -29,39 +29,23 @@
     {
       "id": "path_b5D_004",
       "question": "Dissemine intravasküler koagülopati (DİK) patogenik mekanizması nedir?",
-      "answer": "DİK tetikleyiciler: Sepsis, obstetrik komplikasyon (ablasyo), tümör (AML M3-PML/RARα), travma, yılan zehiri. Doku faktörü → Yaygın tromboz → Pıhtılaşma faktörü tüketimi → Kanama. PT/aPTT uzar, fibrinojen düşer, D-dimer yüksek.",
+      "answer": "[[DİK]]: Yaygın tromboz sonrası [[pıhtılaşma faktörü tüketimi]] ile kanama başlar. [[D-dimer]] yüksektir. [[AML M3]] klasik tetikleyicidir.",
       "difficulty": "Zor",
       "tags": ["DİK", "Koagulopati", "Tromboz+Kanama"],
       "ai_coding": "🤖 Kodlama: DİK = 'Önce tromboz, sonra kanama'. AML M3 klasik tetikleyici. D-dimer ↑."
     },
     {
-      "id": "path_b5D_005",
-      "question": "Şok türlerinin hemodinamik parametreleri karşılaştırması nedir?",
-      "answer": "Hipovolemik: CO↓, SVR↑, PCWP↓. Kardiyojenik: CO↓, SVR↑, PCWP↑. Septik (erken): CO↑, SVR↓, PCWP normal/↓. Anafilaktik: CO↑/↓, SVR↓ (histamin). Nörojenik: CO↓, SVR↓ (sempatik kayıp).",
-      "difficulty": "Zor",
-      "tags": ["Şok", "Hemodinamik"],
-      "ai_coding": "🤖 Kodlama: Şok: Hipovolemik=CO↓SVR↑. Septik erken=CO↑SVR↓. Kardiyojenik=CO↓PCWP↑."
-    },
-    {
       "id": "path_b5D_006",
       "question": "Aterosklerotik plak rüptürünün belirleyicileri nelerdir?",
-      "answer": "İnstabil plak: İnce fibröz başlık (<65 μm) + Büyük lipid çekirdeği + Makrofaj yoğunluğu + Az düz kas. MMP'ler (makrofajdan) → Kollajen yıkımı → Rüptür → Trombüs → AKS. CRP ve IL-6 plak instabilitesini öngörür.",
+      "answer": "[[İnstabil plak]]: İnce fibröz başlık + [[Büyük lipid çekirdeği]]. Makrofajdan salınan [[MMP]]'ler kollajeni yıkarak rüptüre neden olur.",
       "difficulty": "Orta",
       "tags": ["Ateroskleroz", "Plak Rüptürü", "AKS"],
       "ai_coding": "🤖 Kodlama: İnstabil plak = İnce başlık + Büyük lipid + Makrofaj. MMP → Rüptür → AKS."
     },
     {
-      "id": "path_b5D_007",
-      "question": "Aort anevrizmasında gerçek anevrizma ile yalancı anevrizma farkı nedir?",
-      "answer": "Gerçek anevrizma: Üç katman (intima+media+adventisya) anevrizma duvarında. Ateroskleroz ile abdominal aorta. Yalancı anevrizma (pseudoanevrizma): Damar duvarında delik → Periaortik hematom. Serbest rüptür riski daha fazla.",
-      "difficulty": "Orta",
-      "tags": ["Anevrizma", "Aort", "Kardiyovasküler"],
-      "ai_coding": "🤖 Kodlama: Gerçek anevrizma=3 katman. Yalancı=Delikten hematom. Yalancı daha riskli."
-    },
-    {
       "id": "path_b5D_008",
       "question": "Aort diseksiyonunda tip A ile tip B'nin tanımı ve aciliyeti nedir?",
-      "answer": "Stanford A: Asendan aort tutulumu (±desendan). Acil cerrahi. Stanford B: Sadece desendan aort. Medikal tedavi yeterli olabilir (β-bloker). İntima yırtığı → İntramural hematom → Yanlış lümen. Marfan, Hipertansiyon, Bicuspit aort kapak risk.",
+      "answer": "[[Stanford A]]: [[Asendan aort]] tutulumu (acil cerrahi). [[Stanford B]]: Sadece [[desendan aort]] (medikal tedavi).",
       "difficulty": "Orta",
       "tags": ["Aort Diseksiyonu", "Stanford"],
       "ai_coding": "🤖 Kodlama: Diseksiyon A=Asendan=Cerrahi acil. B=Desendan=Medikal. Marfan risk."
@@ -69,7 +53,7 @@
     {
       "id": "path_b5D_009",
       "question": "Hodgkin lenfomada Reed-Sternberg hücresinin özellikleri ve alt tipleri nedir?",
-      "answer": "Klasik RS hücresi: Büyük, bazofilik, iri nükleol (göz gibi = 'baykuş gözü'), binükleer/multinükleer, CD15(+), CD30(+), CD45(-), EBV ilişkili (karma sellüler ve lenfosit azalmış). Nodüler skleroz HL: En sık, genç kadın.",
+      "answer": "[[Reed-Sternberg (RS)]] hücresi: [[Baykuş gözü]] nükleol + [[CD15 (+)]] + [[CD30 (+)]]. En sık tip [[Nodüler skleroz]] Hodgkin lenfomadır.",
       "difficulty": "Orta",
       "tags": ["HL", "Reed-Sternberg", "Hodgkin"],
       "ai_coding": "🤖 Kodlama: RS hücresi = Baykuş gözü + CD15+CD30+CD45(-). En sık=Nodüler Skleroz."
@@ -77,7 +61,7 @@
     {
       "id": "path_b5D_010",
       "question": "Kronik lenfositik lösemi (KLL) ile küçük lenfositik lenfoma (KLL/SLL) ilişkisi nedir?",
-      "answer": "KLL = Periferik kan tutulumu, SLL = Lenf nodu baskın. Aynı hastalık. CD5(+), CD23(+), CD20(dim), FMC7(-), sIg(dim). Prognostik faktör: 17p del (kötü), ZAP-70, del 13q14 (iyi). Smudge cells periferik yaymada.",
+      "answer": "[[KLL]]: CD5 (+), CD23 (+). Periferik yaymada [[Smudge hücreleri]] (ezilmiş hücreler) görülür. [[17p delesyonu]] kötü prognozdur.",
       "difficulty": "Orta",
       "tags": ["KLL", "SLL", "Lösemi"],
       "ai_coding": "🤖 Kodlama: KLL = CD5+CD23+Smudge cell. 17p del = Kötü prognoz. KLL=KAN, SLL=LENF NODU."
@@ -85,7 +69,7 @@
     {
       "id": "path_b5D_011",
       "question": "Multipl myelomda CRAB kriterleri ve plazma hücre markerleri nelerdir?",
-      "answer": "CRAB: C=Kalsiyum yüksek, R=Renal yetmezlik, A=Anemi, B=Bone (lezyon). Plazma hücre belirteçleri: CD138(+), CD38(+), monoklon Ig (spike). Bence-Jones proteini idrarda. Amiloidoz riski. Rouleaux formasyonu.",
+      "answer": "[[CRAB]]: [[Kalsiyum ↑]], [[Renal yetmezlik]], [[Anemi]], [[Kemik lezyonları]]. Marker: [[CD138 (+)]]. İdrarda [[Bence-Jones proteini]].",
       "difficulty": "Orta",
       "tags": ["Myelom", "CRAB", "Plazma Hücre"],
       "ai_coding": "🤖 Kodlama: Myelom CRAB = Ca+Renal+Anemi+Kemik. CD138+ + Rouleaux + Bence-Jones."
@@ -93,7 +77,7 @@
     {
       "id": "path_b5D_012",
       "question": "Waldenstrom makroglobulinemisi ile multipl myelomun farkı nedir?",
-      "answer": "Waldenström: Lenfoplazmasitik lenfoma, IgM monoklonal paraprotein → Hiperviskozite (bulanık görme, nöroloji). MYD88 L265P mutasyonu. Osteolitik lezyon yok. Myelom: IgG/IgA, osteolitik lezyon, CRAB.",
+      "answer": "[[Waldenström]]: [[IgM]] monoklonal artışı → [[Hiperviskozite]]. [[MYD88 L265P]] mutasyonu görülür. [[Kemik lezyonu yoktur]].",
       "difficulty": "Zor",
       "tags": ["Waldenström", "Myelom", "IgM"],
       "ai_coding": "🤖 Kodlama: Waldenström = IgM + Hiperviskozite + MYD88 mut. Kemik lezyonu YOK."
@@ -101,23 +85,15 @@
     {
       "id": "path_b5D_013",
       "question": "Diffüz büyük B hücreli lenfoma (DLBCL) ile foliküler lenfoma ilişkisi nedir?",
-      "answer": "Foliküler lenfoma: t(14;18) → BCL-2 aşırı ekspresyonu → Apoptoz baskılanır. İndolent ama iyileşmez. Richter transformasyonu: FL → DLBCL (agresif). DLBCL: t(14;18) veya de novo. CD10/BCL-6 GCB tipi (iyi prognoz).",
+      "answer": "[[Foliküler lenfoma]]: [[t(14;18)]] → [[BCL-2]] aşırı ekspresyonu. Agresifleşirse ([[Richter transformasyonu]]) [[DLBCL]]'ye döner.",
       "difficulty": "Zor",
       "tags": ["DLBCL", "Foliküler Lenfoma", "BCL-2"],
       "ai_coding": "🤖 Kodlama: FL = t(14;18)+BCL-2+İndolent. FL→DLBCL=Richter. DLBCL GCB=İyi prognoz."
     },
     {
-      "id": "path_b5D_014",
-      "question": "Aplastik anemi ile myelofitizis'in kemik iliği bulgularının farkı nedir?",
-      "answer": "Aplastik anemi: Kemik iliği yağ ile dolu, hematopoetik hücre azalmış (T hücre baskılı). Pansitopeni. İdyopatik veya kloramfenikol, benzen, hepatit. Myelofitizis: İliği fibrozis/tümör/granülom işgal eder → Lökoeritroblastik reaksiyon.",
-      "difficulty": "Orta",
-      "tags": ["Aplastik Anemi", "Myelofitizis", "Kemik İliği"],
-      "ai_coding": "🤖 Kodlama: Aplastik=Yağ dolu ilik, T baskı. Myelofitizis=İlik doldu, lökoeritroblastik."
-    },
-    {
       "id": "path_b5D_015",
       "question": "Kronik granülomatöz hastalığın (KGH) patolojisi ve nedensel defekti nedir?",
-      "answer": "KGH: NADPH oksidaz defekti → ROS üretilemiyor → Katalaz (+) bakteriler (S.aureus, Klebsiella, Aspergillus) öldürülemiyor → Granülom. DHR testi veya nitroblue tetrazolium (NBT) testi tanı. X-linked ve otozomal.",
+      "answer": "[[NADPH oksidaz]] defekti → [[ROS]] üretilemez → [[Katalaz (+)]] bakteriler (S. aureus vb.) öldürülemez.",
       "difficulty": "Orta",
       "tags": ["KGH", "NADPH Oksidaz", "İmmün Yetmezlik"],
       "ai_coding": "🤖 Kodlama: KGH = NADPH oksidaz eksik = ROS yok = Katalaz(+) bakteri öldürülmez."
@@ -125,39 +101,23 @@
     {
       "id": "path_b5D_016",
       "question": "Nötrofil fonksiyon bozukluğu olarak Chédiak-Higashi sendromunun özellikleri nelerdir?",
-      "answer": "Chédiak-Higashi: LYST gen mutasyonu → Dev lizozom granülleri → Nötrofil degranülasyonu bozuk. Kısmi albinizm + Nöropsikiyatrik bulgular + Tekrarlayan piyojenik enfeksiyon. Periferik yayma: Dev granüller. Jigantik lizozomlar.",
+      "answer": "[[LYST]] mutasyonu → [[Dev lizozom granülleri]]. [[Kısmi albinizm]] ve tekrarlayan enfeksiyonlar görülür.",
       "difficulty": "Zor",
       "tags": ["Chédiak-Higashi", "Nötrofil", "Lizozom"],
       "ai_coding": "🤖 Kodlama: Chédiak-Higashi = LYST + Dev lizozom granülü + Albinizm + Enfeksiyon."
     },
     {
-      "id": "path_b5D_017",
-      "question": "Sepsis kaynaklı DİK'de trombositopeni ve uzamış PT/aPTT nasıl açıklanır?",
-      "answer": "Gram(-) LPS → Doku faktörü yolu aktivasyonu → Yaygın trombosit+fibrin pıhtı → Tüketim koagulopatisi → Trombosit↓ + Pıhtılaşma faktörü↓ → PT ve aPTT uzar. Fibrinojen düşer, D-dimer ve FDP yükselir.",
-      "difficulty": "Orta",
-      "tags": ["DİK", "Sepsis", "Koagülasyon"],
-      "ai_coding": "🤖 Kodlama: Sepsis DİK = Tüketim → Trombosit↓+PT↑+PTT↑+Fibrinojen↓+D-dimer↑."
-    },
-    {
       "id": "path_b5D_018",
       "question": "Hemofili A ve B'nin pıhtılaşma kademesindeki yeri ve aPTT üzerine etkisi nedir?",
-      "answer": "Hemofili A: Faktör VIII eksikliği. Hemofili B: Faktör IX eksikliği. Her ikisi intrinsik yolak → aPTT uzar, PT normal. X-linked resesif, erkeklerde. Hemartrozu klasik. Tedavi: VIII veya IX replasmanı. vWD: vWF eksikliği, VIII kısmen azalır.",
+      "answer": "[[aPTT uzar]], [[PT normaldir]]. Hemofili A: [[Faktör VIII]], Hemofili B: [[Faktör IX]] eksikliğidir.",
       "difficulty": "Orta",
       "tags": ["Hemofili", "aPTT", "Koagülasyon"],
       "ai_coding": "🤖 Kodlama: Hemofili = aPTT uzar, PT normal. A=FVIII, B=FIX. X-linked. Hemartrozu."
     },
     {
-      "id": "path_b5D_019",
-      "question": "Von Willebrand hastalığında tip 1, 2 ve 3 arasındaki fark nedir?",
-      "answer": "Tip 1 (en sık, %75): Parsiyel vWF azalması, hafif-orta kanama. Tip 2: Nitel defekt (işlev bozuk, multimerler anormal). 2B: PLT-bağlanma fazla. Tip 3: Tam eksiklik, ağır, VIII de düşük. Risto > şablonu uzar. dDAVP Tip 1'de işe yarar.",
-      "difficulty": "Zor",
-      "tags": ["vWD", "Von Willebrand", "Kanama Diyatezi"],
-      "ai_coding": "🤖 Kodlama: vWD Tip1=Parsiyel azalma, Tip2=Kalitatif, Tip3=Tam eksiklik. Risto>şablon."
-    },
-    {
       "id": "path_b5D_020",
       "question": "Thrombotik trombositopenik purpura (TTP) ile hemolitik üremik sendrom (HÜS) farkı nedir?",
-      "answer": "TTP: ADAMTS13 eksikliği/Ab → Büyük vWF multimerleri → Trombosit tüketimi. Pentad: MAHA+Trombositopeni+Nöro+Ateş+Böbrek. Tedavi: Plazmaferez. HÜS: VTEC/O157:H7 → Shiga toksin → Böbrek baskın. Triad: MAHA+Trombositopeni+ABY.",
+      "answer": "[[TTP]]: [[ADAMTS13]] eksikliği + [[Nöroloji]] baskın. [[HÜS]]: [[Shiga toksin]] (E. coli O157) + [[Böbrek yetmezliği]] baskın.",
       "difficulty": "Zor",
       "tags": ["TTP", "HÜS", "MAHA"],
       "ai_coding": "🤖 Kodlama: TTP=ADAMTS13 eksik+Nöro baskın. HÜS=E.coli O157+Böbrek baskın."
@@ -165,7 +125,7 @@
     {
       "id": "path_b5D_021",
       "question": "İmmün trombositopenik purpurada (İTP) trombosit yıkımı mekanizması nedir?",
-      "answer": "İTP: Anti-GPIIb/IIIa veya anti-GPIb/IX IgG otoantikorları → Trombosit + Fc-reseptör → Dalakta makrofaj fagositozu. Dalak: Hem IgG üretir hem yıkar. Tedavi: Steroid → İVİG → Splenektomi. Akut (çocuk, viral sonrası) vs kronik (yetişkin, kadın).",
+      "answer": "[[Anti-GPIIb/IIIa]] IgG otoantikorları → [[Dalakta]] makrofaj fagositozu. Tedavide [[splenektomi]] etkilidir.",
       "difficulty": "Orta",
       "tags": ["İTP", "Trombositopeni", "Dalak"],
       "ai_coding": "🤖 Kodlama: İTP = Anti-GPIIb/IIIa IgG → Dalakta yıkım. Splenektomi hem kaynağı hem yıkımı keser."
@@ -173,23 +133,15 @@
     {
       "id": "path_b5D_022",
       "question": "Heparin kaynaklı trombositopeni (HIT) tip 1 ve tip 2'nin farkı nedir?",
-      "answer": "HIT Tip 1: Trombositopeni hafif, ilk 2 günde, immün olmayan, heparin etkisi, kendiliğinden düzelir. HIT Tip 2: İmmün (IgG anti-PF4/heparin kompleksi), 5-10 gün, paradoksal tromboz riski. Heparin kesilir, argatroban/fondaparinux başlanır.",
+      "answer": "[[HIT Tip 2]]: İmmün ([[IgG anti-PF4]]) mekanizmalı. [[Paradoksal tromboz]] riski taşır, heparin kesilmelidir.",
       "difficulty": "Zor",
       "tags": ["HIT", "Heparin", "Trombositopeni"],
       "ai_coding": "🤖 Kodlama: HIT Tip2 = İmmün + Paradoksal tromboz. Heparin kes, argatroban başla."
     },
     {
-      "id": "path_b5D_023",
-      "question": "Epstein-Barr virüsün lenfoma gelişiminde rolü nedir?",
-      "answer": "EBV: B lenfosit immortalizasyonu → LMP1 (BCL-2 gibi davranır) + EBNA2 (MYC-like). İlişkili lenfomalar: Burkitt lenfoma (Afrika endemik), DLBCL, NK/T hücreli lenfoma (nazal), hodgkin lenfoma (karma sellüler). Nasofengeal karsinom da.",
-      "difficulty": "Orta",
-      "tags": ["EBV", "Lenfoma", "Onkogenez"],
-      "ai_coding": "🤖 Kodlama: EBV → LMP1+EBNA2 → B hücre immortal. Burkitt+HL+DLBCL ilişkili."
-    },
-    {
       "id": "path_b5D_024",
       "question": "Kardiyak tamponad ile konstriktiif perikarditin ayrımı nedir?",
-      "answer": "Tamponad: Akut perikard sıvısı → Diastolik baskı → Paradoksal nabız (+), Kussmaul (-), X inen var Y yok. Konstriktif Perikardit: Fibröz kalınlaşma → Diastolik kısıtlama → Kussmaul (+), X ve Y her ikisi var. Kronik TBC, radyasyon.",
+      "answer": "Tamponad: [[Paradoksal nabız (+)]]. Konstriktif Perikardit: [[Kussmaul belirtisi (+)]].",
       "difficulty": "Zor",
       "tags": ["Perikardit", "Tamponad", "Konstriktif"],
       "ai_coding": "🤖 Kodlama: Tamponad=Paradoksal nabız+X var Y yok. Konstriktif=Kussmaul+XY her ikisi."
@@ -197,47 +149,15 @@
     {
       "id": "path_b5D_025",
       "question": "Sol kalp yetmezliğinde akciğer bulguları ve sağ kalp yetmezliğinde periferik bulgular nelerdir?",
-      "answer": "Sol YY: Akciğer konjesyonu → Kardiyojenik pulmoner ödem → Hemosiderin yüklü makrofaj (kalp yetmezliği hücreleri) → Ortopne. Sağ YY: Sistemik venöz konjesyon → JVD + Periferik ödem + Hepatomegali + Asit + Nutmeg KC.",
+      "answer": "Sol YY: [[Hemosiderin yüklü makrofajlar]] (kalp yetmezliği hücreleri). Sağ YY: [[Nutmeg KC]] + Periferik ödem.",
       "difficulty": "Orta",
       "tags": ["Kalp Yetmezliği", "Sol", "Sağ"],
       "ai_coding": "🤖 Kodlama: Sol YY=Akciğer ödem+Hemosiderin makrofaj. Sağ YY=JVD+Ödem+Nutmeg KC."
     },
     {
-      "id": "path_b5D_026",
-      "question": "Valvüler hastalıklarda mitral stenoz ile aort stenozu'nun basınç yüklenmesi ve dilatasyon paternleri nedir?",
-      "answer": "Mitral stenoz: Sol atriyum basınç yükü → Sol atriyum dilatasyonu → Pulmoner hipertansiyon → Sağ kalp hipertrofisi. Aort stenozu: Sol ventrikül basınç yükü → Konsantrik LV hipertrofisi (duvar kalınlaşır, kavite küçülür).",
-      "difficulty": "Orta",
-      "tags": ["Kapak Hastalığı", "Mitral", "Aort"],
-      "ai_coding": "🤖 Kodlama: MS → Sol atriyum dilate. AS → LV konsantrik hipertrofi (küçük kavite)."
-    },
-    {
-      "id": "path_b5D_027",
-      "question": "Ekzüdatif ile transsüdatif plevra sıvısının Light kriterleri nelerdir?",
-      "answer": "Light kriterleri (herhangi biri = eksüda): 1) Plevra/Serum protein >0.5. 2) Plevra/Serum LDH >0.6. 3) Plevra LDH > serum üst sınırının 2/3'ü. Transüda: KKY, siroz, nefrotik. Eksüda: Pnömoni, malignite, TBC, PE.",
-      "difficulty": "Orta",
-      "tags": ["Plevra", "Light Kriterleri", "Transüda"],
-      "ai_coding": "🤖 Kodlama: Eksüda=Light kriterleri 1+ pozitif. Transüda=Hidrstatik/Onkotik."
-    },
-    {
-      "id": "path_b5D_028",
-      "question": "Erkek genital kanalında sperm yolunun patolojik tıkanmasına neden olan hastalıklar nelerdir?",
-      "answer": "Kistik fibrozis: CFTR mutasyonu → Konjenital bilateral vas deferens aplazisi (CBAVD) → Azoospermi + Normal testis. Young sendromu: Epididim tıkanması + Sinopulmoner hastalık. Gonore: Epididimit → Skatrisyel tıkanma.",
-      "difficulty": "Orta",
-      "tags": ["Erkek Genital", "Azoospermi", "Kistik Fibrozis"],
-      "ai_coding": "🤖 Kodlama: KF = CFTR mut = CBAVD. Young = Epididim tıkanma. Gonore = Skatriz."
-    },
-    {
-      "id": "path_b5D_029",
-      "question": "Epidididimo-orşit'in en sık etkeni yaş gruplarına göre nedir?",
-      "answer": "<35 yaş: Chlamydia trachomatis > Neisseria gonorrhoeae. >35 yaş: E.coli > Klebsiella (enterik), prostat patojenleri. Tüberküloz: Epididimde granülom, özellikle immünsüprese. Ultrason + Akım: Orşit = Hiperekoik + Artmış akım.",
-      "difficulty": "Orta",
-      "tags": ["Erkek Genital", "Epididimit", "Orşit"],
-      "ai_coding": "🤖 Kodlama: <35 epididimit = Klamidya/Gonore. >35 = E.coli. TBC = Granülom."
-    },
-    {
       "id": "path_b5D_030",
       "question": "Varikosel ile hidroselin tanımı ve infertilite ilişkisi nedir?",
-      "answer": "Varikosel: Pampiniform pleksusun dilate venleri. Sol taraf %90 (renal ven→gonadal ven dik açı). Spermatik ısı artışı → Sperm fonksiyon bozukluğu → İnfertilite. Hidrosele: Tunika vaginalis içinde sıvı birikimi, transillümine (+).",
+      "answer": "[[Varikosel]]: Isı artışı nedeniyle [[infertilite]] yapar ([[sol taraf]] sık). [[Hidrosel]]: [[Transillüminasyon (+)]].",
       "difficulty": "Kolay",
       "tags": ["Erkek Genital", "Varikosel", "Hidrosel"],
       "ai_coding": "🤖 Kodlama: Varikosel = Sol taraf %90 + Isı artışı + İnfertilite. Hidrosel = Transillümine(+)."
@@ -245,162 +165,34 @@
     {
       "id": "path_b5D_031",
       "question": "İntravasküler hemolizde (mikroanjiopatik hemolitik anemi) laboratuvar bulguları nelerdir?",
-      "answer": "MAHA belirteci: Hemoglobin↓, LDH↑ (hücreden salınır), Haptoglobin↓ (Hb bağlar), Serbest Hb idrarda (hemoglobinüri) + Hemosiderinüri. Periferik yayma: Schistocyte (Helmet hücresi). TTP, HÜS, DİK, protez kapak.",
+      "answer": "[[Schistocyte (Helmet hücresi)]] görülür. [[Haptoglobin düşer]], [[LDH artar]].",
       "difficulty": "Orta",
       "tags": ["MAHA", "Hemoliz", "Schistocyte"],
       "ai_coding": "🤖 Kodlama: MAHA lab: LDH↑+Haptoglobin↓+Schistocyte. Hemoglobinüri intravasküler."
     },
     {
-      "id": "path_b5D_032",
-      "question": "Konjenital kalp anomalilerinde siyanozu olan ile olmayan (sağ-sol şant vs sol-sağ şant) ayrımı nedir?",
-      "answer": "Sol→Sağ şant (siyanoz yok): VSD, ASD, PDA — pulmoner hipertansiyon gelişirse Eisenmenger → Siyanozu olur. Sağ→Sol şant (siyanoz mevcut): ToF (4lü), TGA, Truncus arteriosus, Total pulmoner venöz dönüş anomalisi.",
-      "difficulty": "Orta",
-      "tags": ["Konjenital Kalp", "Şant", "Siyanoz"],
-      "ai_coding": "🤖 Kodlama: L→R (VSD/ASD/PDA) = Siyanoz yok başta. R→L (ToF/TGA) = Siyanoz var."
-    },
-    {
       "id": "path_b5D_033",
       "question": "Fallot tetralojisinin 4 bileşeni ve siyanozu doğumdan sonra ne zaman ortaya çıkar?",
-      "answer": "4 bileşen: 1) VSD, 2) Sağ ventrikül çıkım yolu obstrüksiyonu (pulmoner stenoz), 3) Aort sağa pozisyonlanma (override), 4) Sağ ventrikül hipertrofisi. Siyanoz doğumda yoktur, sağ ventrikül gelişince artar. Tetracyanotic spell (tet spell).",
+      "answer": "[[VSD]], [[Pulmoner stenoz]], [[Aort override]] ve [[Sağ ventrikül hipertrofisi]].",
       "difficulty": "Orta",
       "tags": ["Fallot Tetralojisi", "Konjenital Kalp"],
       "ai_coding": "🤖 Kodlama: ToF = VSD+PS+Aort override+RVH. Siyanoz doğumda yok, giderek artar."
     },
     {
-      "id": "path_b5D_034",
-      "question": "Miyokardit tiplerinde viral ajan (Coksaki B) ile histolojik bulgunun ilişkisi nedir?",
-      "answer": "Viral miyokardit: Coksaki B en sık. Aktif miyokardit: Lenfositik infiltrasyon + Miyosit nekrozu (Dallas kriterleri). Dilate KMP'ye ilerleyebilir. Dev hücreli miyokardit: Ağır, hızlı yetmezlik, kalp transplantasyonu gerekebilir. Sarkoitik miyokardit: Granülomlar.",
-      "difficulty": "Orta",
-      "tags": ["Miyokardit", "Coksaki B", "Dallas"],
-      "ai_coding": "🤖 Kodlama: Viral miyokardit=Coksaki B+Lenfosit+nekroz. Dev hücreli=Ağır form."
-    },
-    {
-      "id": "path_b5D_035",
-      "question": "Amiloidozda AL ve AA tip amiloidin kaynakları ve tutulum organları nelerdir?",
-      "answer": "AL amiloid: İmmünoglobulin hafif zincir (plazma hücre diskrazisi, myelom). Kalp, böbrek, periferik sinir, dil tutulumu. AA amiloid: Serum amiloid A (kronik inflamasyon: RA, IBD, tbc, osteomyelit). Böbrek baskın. SAP sintigrafisi tanı.",
-      "difficulty": "Orta",
-      "tags": ["Amiloidoz", "AL", "AA"],
-      "ai_coding": "🤖 Kodlama: AL=Myelom+Kalp/Böbrek. AA=Kronik inflamasyon+Böbrek baskın."
-    },
-    {
-      "id": "path_b5D_036",
-      "question": "Eritrosit sedimentasyon hızı (ESR) neden yüksek prognostik değere sahip değildir?",
-      "answer": "ESR: Fibrinojen (akut faz) → Eritrosit yığılması (Rouleaux). Spesifik değil, birçok durumda yükselir (yaş, cinsiyet, anemi, gebelik, inflamasyon, malignite). CRP akut inflamasyonda çok daha hızlı yükselir/iner. ESR kronik hastalık izleminde daha kullanışlı.",
-      "difficulty": "Kolay",
-      "tags": ["İnflamasyon", "ESR", "CRP"],
-      "ai_coding": "🤖 Kodlama: ESR = Fibrinojen = Rouleaux. Spesifik değil. CRP daha hızlı ve spesifik."
-    },
-    {
-      "id": "path_b5D_037",
-      "question": "Akciğer ödemi ile plevra efüzyonunun Starling kuvvetleri açısından açıklaması nedir?",
-      "answer": "Akciğer ödemi: Sol kalp YY → Kapiller hidrosatik basınç ↑ → İnterstisyuma sıvı sızması. Plevra efüzyon: Sağ kalp YY veya siroz → Sistemik kapiller hidrostatik ↑ veya onkotik ↓. PCWP >18 mmHg = Kardiyojenik pulmoner ödem.",
-      "difficulty": "Orta",
-      "tags": ["Ödem", "Plevra", "Starling"],
-      "ai_coding": "🤖 Kodlama: Akciğer ödemi = Sol YY, PCWP>18. Plevra efüzyon = Sağ YY/Siroz."
-    },
-    {
-      "id": "path_b5D_038",
-      "question": "Embolizm tiplerinde yağ embolisi ile amniyon sıvısı embolisinin klinik farklılıkları nedir?",
-      "answer": "Yağ embolisi: Uzun kemik kırığı → 24-72 saat sonra → Peteşi + Nörolojik bulgular + ARDS. Periferik yaymada yağ globülleri. Amniyon sıvısı embolisi: Doğum sırasında/sonrası → ARDS + DİK + Kardiyak arrest. Yüksek mortalite.",
-      "difficulty": "Orta",
-      "tags": ["Emboli", "Yağ Embolisi", "Amniyon"],
-      "ai_coding": "🤖 Kodlama: Yağ emboli = Kırık→24-72h→Peteşi+ARDS. Amniyon = Doğum+DİK+Yüksek mortalite."
-    },
-    {
-      "id": "path_b5D_039",
-      "question": "Perikardial efüzyonun en sık nedenleri nelerdir?",
-      "answer": "En sık: İdyopatik viral perikardit. Diğerleri: Üremik perikardit (SDBY), malignite (akciğer, meme, lenfoma), TBC (ressüktif perikardit riski), radyasyon, hipotiroidi (transsüda tarzı). Kolesterol kristalli = Şilüs perikardit.",
-      "difficulty": "Kolay",
-      "tags": ["Perikard", "Efüzyon", "Perikardit"],
-      "ai_coding": "🤖 Kodlama: Perikard efüzyon: Viral>Üremi>Malignite>TBC>Hipotiroidi."
-    },
-    {
-      "id": "path_b5D_040",
-      "question": "Kaposi sarkomu HHV-8 ile nasıl ilişkilidir ve kaç tipi vardır?",
-      "answer": "HHV-8 (KSHV): Kaposi sarkomu, primer efüzyon lenfoması, multisentrik Castleman. KS tipleri: 1) Klasik (Akdeniz yaşlı erkek), 2) Endemik Afrika, 3) Epidemik (AIDS, CD4<200), 4) İyatrojenik (İmmünsüprese). HIV/AIDS hastasında CD4<200 ile ortaya çıkar.",
-      "difficulty": "Orta",
-      "tags": ["Kaposi Sarkomu", "HHV-8", "AIDS"],
-      "ai_coding": "🤖 Kodlama: KS = HHV-8. AIDS ile Epidemik KS = CD4<200. Deri + Viseral."
-    },
-    {
       "id": "path_b5D_041",
       "question": "İnflamatuvar bağırsak hastalığında granülom varlığının önemi nedir?",
-      "answer": "Crohn hastalığı: Transmural inflamasyon + Non-kazeifiye granülom (%60). Ülseratif kolit: Granülom yok, mukoza sınırlı, pseudopolip. Granülom varlığı Crohn'u destekler ama tanı için gerekli değil. Transmural = Bölgesel ileitis, skip lezyonu.",
+      "answer": "[[Crohn]]: [[Non-kazeifiye granülom]] (transmural). [[Ülseratif kolit]]: Granülom yoktur.",
       "difficulty": "Orta",
       "tags": ["İnflamasyon", "Crohn", "Granülom"],
       "ai_coding": "🤖 Kodlama: Crohn = Transmural + Granülom (non-kazeifiye). ÜK = Granülom YOK + Mukozal."
     },
     {
-      "id": "path_b5D_042",
-      "question": "IL-1β ve TNF-α'nın sistemik inflamasyon üzerindeki ortak etkileri nelerdir?",
-      "answer": "IL-1β ve TNF-α (üst yönetici sitokinler): Ateş (hipotalamus PGE2), akut faz protein sentezi (KC→CRP+fibrinojen), lökositoz, kilo kaybı (kaheksi), endotel aktivasyonu (VCAM-1, E-selektin). IL-6 ile birlikte üçlü sitokin.",
-      "difficulty": "Orta",
-      "tags": ["Sitokinler", "IL-1", "TNF-α", "İnflamasyon"],
-      "ai_coding": "🤖 Kodlama: IL-1+TNF = Ateş+Akut faz+Lökositoz+Kaheksi. İL-6 ile üçlü sitokin."
-    },
-    {
-      "id": "path_b5D_043",
-      "question": "Granülomatöz inflamasyonun epiteloid hücre ve dev hücre formasyonu mekanizması nedir?",
-      "answer": "Makrofaj → Th1 (IFN-γ) → Epiteloid hücre (fagositik = azalmış, sekretuar = artmış). Epiteloid hücreler birleşir → Langhans dev hücresi (nükleus çeperde at nalı) veya Yabancı cisim dev hücresi (nükleus dağınık).",
-      "difficulty": "Orta",
-      "tags": ["Granülom", "Epiteloid Hücre", "Dev Hücre"],
-      "ai_coding": "🤖 Kodlama: Granülom = Makrofaj→IFN-γ→Epiteloid→Dev hücre. Langhans=Nükleus çeperde."
-    },
-    {
-      "id": "path_b5D_044",
-      "question": "Fibrinöz perikardit ile seröz perikarditin makroskopik görünümü nedir?",
-      "answer": "Fibrinöz perikardit: 'Bread and butter' (ekmek+tereyağı) görünümü. MI sonrası (epistenokardiyal), üremi, romatizmal ateş. Organize olursa konstriktif perikardit. Seröz: Berrak sıvı, viral/otoimmün. Hemorajik: TBC, malignite.",
-      "difficulty": "Orta",
-      "tags": ["Perikardit", "Fibrinöz", "Makroskopi"],
-      "ai_coding": "🤖 Kodlama: Fibrinöz perikardit = 'Bread & butter' = MI+Üremi. Seröz=Viral."
-    },
-    {
-      "id": "path_b5D_045",
-      "question": "Hemostaz basamaklarında birincil ve ikincil hemostazın farkı nedir?",
-      "answer": "Birincil hemostaz: Trombosit adezyonu (vWF-GPIb) + Aktivasyon (ADP, TXA2) + Agregasyon (GPIIb/IIIa-fibrinojen) → Trombosit tıkacı. İkincil hemostaz: Pıhtılaşma kaskadı → Fibrin ağı. Trombosit bozukluğu → Peteşi/purpura. Koagülopati → Ekimoz/Hematom.",
-      "difficulty": "Orta",
-      "tags": ["Hemostaz", "Trombosit", "Koagülasyon"],
-      "ai_coding": "🤖 Kodlama: Primer=Trombosit tıkacı (peteşi bozukluğu). Sekonder=Fibrin (ekimoz/hematom)."
-    },
-    {
-      "id": "path_b5D_046",
-      "question": "Myeloproliferatif hastalıklarda esansiyel trombositoz, polisitemia vera, KML ve PMF nasıl ayrılır?",
-      "answer": "Tüm MPN: JAK2/CALR/MPL mutasyonu olabilir. PV: JAK2 V617F (%97) + Eritrositoz + Kaşıntı (banyo sonrası). ET: JAK2/CALR + Trombositoz >450K + Tromboz riski. PMF: JAK2/CALR/MPL + Fibrozis + Tear drop eritrosit + Splenomegali. KML: BCR-ABL.",
-      "difficulty": "Zor",
-      "tags": ["MPN", "JAK2", "CALR"],
-      "ai_coding": "🤖 Kodlama: MPN: PV=JAK2+Eritro. ET=Trombosit. PMF=Fibrozis+Tear drop. KML=BCR-ABL."
-    },
-    {
       "id": "path_b5D_047",
       "question": "Burkitt lenfomada MYC translokasyonu ve starry-sky görünümü nedir?",
-      "answer": "Burkitt lenfoma: t(8;14) → MYC onkogen aktivasyonu. Histoloji: 'Starry sky' görünümü = Karanlık zemin (tümör hücre) üzerinde açık makrofajlar (apoptotik debris). Endemik: EBV(+), çenede kitle. Sporadik: Karın. Ki-67 >99%.",
+      "answer": "[[t(8;14)]] → [[MYC]] aktivasyonu. Histolojide [[starry sky (yıldızlı gökyüzü)]] görünümü tipiktir.",
       "difficulty": "Orta",
       "tags": ["Burkitt", "MYC", "Starry Sky"],
       "ai_coding": "🤖 Kodlama: Burkitt = t(8;14)+MYC + Starry sky + Ki-67>99%. EBV ile endemik."
-    },
-    {
-      "id": "path_b5D_048",
-      "question": "Anjiyojen tümörler içinde hemanjiyom ile hemanjiyosarkomun farkı nedir?",
-      "answer": "Hemanjiyom: İyi huylu, çocukluk dönemi (kapiller/kavernöz), kendiliğinden gerileme, KC en sık erişkin iyi huylu tümörü. Hemanjiyosarkom: KC, deri. Vinil klorid+Arsenik+Torotrast risk. Dalak hemanjiyomları spontan rüptür riski.",
-      "difficulty": "Orta",
-      "tags": ["Damar Tümörü", "Hemanjiyom", "Hemanjiyosarkom"],
-      "ai_coding": "🤖 Kodlama: Hemanjiyom = İyi huylu. Hemanjiyosarkom = Vinil klorid/Arsenik/Torotrast."
-    },
-    {
-      "id": "path_b5D_049",
-      "question": "Atherosclerosis ile arteriosclerosis ve arteriolosclerosis arasındaki fark nedir?",
-      "answer": "Arterioloskeroz: Küçük arterlerde hipertansiyon → Hyalinize (hyalin arterioloskeroz) veya hiperplastik (kötü huylu HT). Arterioskleroz: Orta/büyük arterlerde elastin kaybı, yaşlanma. Ateroskleroz: Lipid plakı, intima düzeyinde, ince+orta çaplı arterlerde.",
-      "difficulty": "Orta",
-      "tags": ["Damar", "Ateroskleroz", "Arterioskleroz"],
-      "ai_coding": "🤖 Kodlama: Arteriolo = HT + Hyalin. Arterio = Yaşlanma. Ateroskleroz = Plak+İntima."
-    },
-    {
-      "id": "path_b5D_050",
-      "question": "Lenfoma ile löseminin tanımsal farkı nedir?",
-      "answer": "Lenfoma: Primer olarak lenf nodu veya ekstranodal doku tutulumu (kitlesi var). Lösemi: Primer olarak kemik iliği ve periferik kan tutulumu. Ancak her ikisi de birbiriyle örtüşebilir: Lenfoma lösemiye dönüşebilir (KLL/SLL gibi), lösemi nodal tutulum yapabilir.",
-      "difficulty": "Kolay",
-      "tags": ["Lenfoma", "Lösemi", "Fark"],
-      "ai_coding": "🤖 Kodlama: Lenfoma = Lenf nodu/doku kitlesi. Lösemi = Kemik iliği+Kan. Örtüşebilirler."
     }
   ]
 }

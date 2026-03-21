@@ -5,18 +5,18 @@ import '../theme/app_theme.dart';
 import '../models/subject_registry.dart';
 import '../services/data_service.dart';
 import '../utils/transitions.dart';
-import 'flashcard_screen.dart';
+import 'case_study_screen.dart';
 
-class FlashcardSubjectScreen extends StatefulWidget {
-  const FlashcardSubjectScreen({super.key});
+class CaseSubjectScreen extends StatefulWidget {
+  const CaseSubjectScreen({super.key});
 
   @override
-  State<FlashcardSubjectScreen> createState() => _FlashcardSubjectScreenState();
+  State<CaseSubjectScreen> createState() => _CaseSubjectScreenState();
 }
 
-class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
+class _CaseSubjectScreenState extends State<CaseSubjectScreen> {
   final _dataService = DataService();
-  final Map<String, int> _cardCounts = {};
+  final Map<String, int> _caseCounts = {};
   bool _loading = true;
 
   @override
@@ -28,12 +28,19 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
   Future<void> _loadCounts() async {
     int total = 0;
     for (final module in SubjectRegistry.modules) {
-      final cards = await _dataService.loadFlashcards(subjectId: module.id);
-      _cardCounts[module.id] = cards.length;
-      total += cards.length;
+      final cases = await _dataService.loadCases(subjectId: module.id);
+      _caseCounts[module.id] = cases.length;
+      total += cases.length;
     }
-    _cardCounts['__all__'] = total;
+    _caseCounts['__all__'] = total;
     if (mounted) setState(() => _loading = false);
+  }
+
+  Future<void> _openCases(String? subjectId) async {
+    await Navigator.push(
+      context,
+      AppRoute.slideUp(CaseStudyScreen(subjectId: subjectId)),
+    );
   }
 
   @override
@@ -53,7 +60,7 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
           onPressed: () => Navigator.pop(context),
         ),
         title: Text(
-          'Flashcard Çalışması',
+          'Vaka Soruları',
           style: GoogleFonts.inter(
             color: textColor,
             fontSize: 18,
@@ -77,15 +84,15 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
                 ),
                 const SizedBox(height: 12),
 
-                // Tüm Kartlar
-                _SubjectCard(
-                  label: 'Tüm Kartlar',
-                  subtitle: 'Bütün branşları birlikte çalış',
-                  icon: Icons.auto_awesome_motion_rounded,
-                  color: AppTheme.cyan,
-                  cardCount: _cardCounts['__all__'] ?? 0,
+                // Tüm Sorular
+                _CaseCard(
+                  label: 'Tüm Sorular',
+                  subtitle: 'Bütün branşları birlikte çöz',
+                  icon: Icons.quiz_rounded,
+                  color: const Color(0xFF79C0FF),
+                  caseCount: _caseCounts['__all__'] ?? 0,
                   isDark: isDark,
-                  onTap: () => _openFlashcards(null),
+                  onTap: () => _openCases(null),
                 ),
                 const SizedBox(height: 12),
 
@@ -102,44 +109,37 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
 
                 ...SubjectRegistry.modules.map((module) => Padding(
                       padding: const EdgeInsets.only(bottom: 12),
-                      child: _SubjectCard(
+                      child: _CaseCard(
                         label: module.name,
                         subtitle: module.shortLabel,
                         icon: module.icon,
                         color: module.color,
-                        cardCount: _cardCounts[module.id] ?? 0,
+                        caseCount: _caseCounts[module.id] ?? 0,
                         isDark: isDark,
-                        onTap: () => _openFlashcards(module.id),
+                        onTap: () => _openCases(module.id),
                       ),
                     )),
               ],
             ),
     );
   }
-
-  Future<void> _openFlashcards(String? subjectId) async {
-    await Navigator.push(
-      context,
-      AppRoute.slideUp(FlashcardScreen(subjectId: subjectId, isPreview: true)),
-    );
-  }
 }
 
-class _SubjectCard extends StatelessWidget {
+class _CaseCard extends StatelessWidget {
   final String label;
   final String subtitle;
   final IconData icon;
   final Color color;
-  final int cardCount;
+  final int caseCount;
   final bool isDark;
   final VoidCallback onTap;
 
-  const _SubjectCard({
+  const _CaseCard({
     required this.label,
     required this.subtitle,
     required this.icon,
     required this.color,
-    required this.cardCount,
+    required this.caseCount,
     required this.isDark,
     required this.onTap,
   });
@@ -217,7 +217,7 @@ class _SubjectCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Text(
-                      '$cardCount',
+                      '$caseCount',
                       style: GoogleFonts.inter(
                         color: color,
                         fontSize: 22,
@@ -225,7 +225,7 @@ class _SubjectCard extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'kart',
+                      'soru',
                       style: GoogleFonts.inter(
                         color: subColor,
                         fontSize: 11,

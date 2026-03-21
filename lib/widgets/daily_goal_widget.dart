@@ -25,20 +25,20 @@ class DailyGoalWidget extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            accentColor.withOpacity(0.12),
-            accentColor.withOpacity(0.05),
+            accentColor.withValues(alpha: 0.12),
+            accentColor.withValues(alpha: 0.05),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: accentColor.withOpacity(0.3),
+          color: accentColor.withValues(alpha: 0.3),
           width: 1.5,
         ),
         boxShadow: [
           BoxShadow(
-            color: accentColor.withOpacity(0.1),
+            color: accentColor.withValues(alpha: 0.1),
             blurRadius: 16,
             offset: const Offset(0, 4),
           ),
@@ -170,7 +170,7 @@ class DailyGoalWidget extends StatelessWidget {
                               gradient: LinearGradient(
                                 colors: [
                                   accentColor,
-                                  accentColor.withOpacity(0.7),
+                                  accentColor.withValues(alpha: 0.7),
                                 ],
                               ),
                             ),
@@ -184,7 +184,7 @@ class DailyGoalWidget extends StatelessWidget {
                 Text(
                   '%${(progress * 100).toStringAsFixed(0)} tamamlandı',
                   style: TextStyle(
-                    color: accentColor.withOpacity(0.8),
+                    color: accentColor.withValues(alpha: 0.8),
                     fontSize: 11,
                     fontWeight: FontWeight.w600,
                   ),
@@ -230,7 +230,7 @@ class _CircularProgressPainter extends CustomPainter {
     // Progress çemberi
     final progressPaint = Paint()
       ..shader = LinearGradient(
-        colors: [color, color.withOpacity(0.6)],
+        colors: [color, color.withValues(alpha: 0.6)],
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
       ).createShader(Rect.fromCircle(center: center, radius: radius))

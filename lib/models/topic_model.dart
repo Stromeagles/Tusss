@@ -39,6 +39,21 @@ class ClinicalCase {
     required this.explanation,
   });
 
+  /// Soru metninden konu bilgisini cikarir.
+  /// "Soru:(Genel Mikrobiyoloji) Bakteri..." -> "Genel Mikrobiyoloji"
+  String get topic {
+    final match = RegExp(r'Soru:\(([^)]+)\)').firstMatch(caseText);
+    return match?.group(1) ?? '';
+  }
+
+  /// Konu prefix'i cikarilmis saf soru metni.
+  /// "Soru:(Genel Mikrobiyoloji) Bakteri..." -> "Bakteri..."
+  String get cleanText {
+    return caseText
+        .replaceFirst(RegExp(r'Soru:\([^)]+\)\s*'), '')
+        .trim();
+  }
+
   factory ClinicalCase.fromJson(Map<String, dynamic> json) {
     return ClinicalCase(
       id: json['id'] as String? ?? '',

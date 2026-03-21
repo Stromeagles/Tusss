@@ -9,7 +9,7 @@
     "flashcards": [
       {
         "id": "fc-micro-100",
-        "question": "Meta-laktam antibiyotiklerin temel etki mekanizması nedir?",
+        "question": "Beta-laktam antibiyotiklerin temel etki mekanizması nedir?",
         "answer": "PBP'ye (Penisilin Bağlayan Protein) bağlanarak hücre duvarındaki transpeptidasyon (çapraz bağ) basamağını inhibe ederler.",
         "difficulty": "medium",
         "tags": [

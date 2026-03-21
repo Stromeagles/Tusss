@@ -1,24 +1,35 @@
+import 'dart:io';
 import 'dart:ui';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_theme.dart';
-import '../services/theme_service.dart';
-import '../utils/transitions.dart';
-import '../services/data_service.dart';
-import '../services/progress_service.dart';
-import '../services/spaced_repetition_service.dart';
+import '../models/user_model.dart';
 import '../models/progress_model.dart';
 import '../models/topic_model.dart';
+import '../widgets/ai_insight_sheet.dart';
+import '../widgets/notifications_sheet.dart';
 import '../models/subject_registry.dart';
-import 'flashcard_subject_screen.dart';
+import '../models/sm2_model.dart';
+import '../services/data_service.dart';
+import '../services/progress_service.dart';
+import '../services/user_service.dart';
+import '../services/spaced_repetition_service.dart';
+import '../services/ai_coach_service.dart';
+import '../services/theme_service.dart';
+import '../utils/transitions.dart';
 import 'flashcard_screen.dart';
 import 'case_study_screen.dart';
-import 'topic_list_screen.dart';
-import 'hierarchy_screens.dart';
-import '../services/ai_coach_service.dart';
-import '../models/sm2_model.dart';
+import 'flashcard_subject_screen.dart';
+import 'profile_screen.dart';
+import 'analytics_screen.dart';
+import 'subject_browser_screen.dart';
+import 'case_subject_screen.dart';
+import 'focus_screen.dart';
+import '../services/focus_service.dart';
 
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║  HomeScreen                                                              ║
@@ -34,13 +45,17 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final _dataService     = DataService();
   final _progressService = ProgressService();
+  final _userService     = UserService();
 
   String?       _selectedSubjectId;
   StudyProgress _progress = const StudyProgress();
+  UserProfile   _user     = const UserProfile();
   List<Topic>   _topics   = [];
   bool          _loading  = true;
   int           _navIndex = 0;
-  SrsSummary    _srsSummary = const SrsSummary(newCount: 0, toReviewCount: 0, learnedCount: 0, bookmarkCount: 0);
+  SrsSummary    _flashcardSummary = const SrsSummary(newCount: 0, toReviewCount: 0, learnedCount: 0, bookmarkCount: 0);
+  SrsSummary    _caseSummary      = const SrsSummary(newCount: 0, toReviewCount: 0, learnedCount: 0, bookmarkCount: 0);
+  Map<String, SM2CardData> _sm2Data = {};
   CoachInsight? _coachInsight;
 
   @override
@@ -56,31 +71,38 @@ class _HomeScreenState extends State<HomeScreen> {
         _dataService.loadTopics(subjectId: _selectedSubjectId),
         _progressService.loadProgress(),
         SpacedRepetitionService().getAllData(), // SM-2 verisini önbellekle
+        _userService.loadUser(),
       ]);
       if (mounted) {
         final topics   = results[0] as List<Topic>;
         final progress = results[1] as StudyProgress;
         final sm2Data  = results[2] as Map<String, SM2CardData>;
+        final user     = results[3] as UserProfile;
 
         // Tüm flashcard ve case ID'lerini topla
-        final allIds = <String>[];
+        final fcIds = <String>[];
+        final ccIds = <String>[];
         for (final t in topics) {
-          allIds.addAll(t.flashcards.map((fc) => fc.id));
-          allIds.addAll(t.clinicalCases.map((cc) => cc.id).where((id) => id.isNotEmpty));
+          fcIds.addAll(t.flashcards.map((fc) => fc.id));
+          ccIds.addAll(t.clinicalCases.map((cc) => cc.id).where((id) => id.isNotEmpty));
         }
-        // getSummary → getAllData önbellekten döner, ekstra I/O yok
-        final srsSummary = await SpacedRepetitionService().getSummary(
-          allIds,
-          dailyGoal: progress.dailyGoal,
-        );
+
+        final summaries = await Future.wait([
+          SpacedRepetitionService().getSummary(fcIds, dailyGoal: progress.dailyGoal),
+          SpacedRepetitionService().getSummary(ccIds, dailyGoal: progress.dailyGoal),
+        ]);
+
         final coachInsight = AiCoachService().analyze(topics, sm2Data);
 
         setState(() {
-          _topics        = topics;
-          _progress      = progress;
-          _srsSummary    = srsSummary;
-          _coachInsight  = coachInsight;
-          _loading       = false;
+          _topics           = topics;
+          _progress         = progress;
+          _user             = user;
+          _flashcardSummary = summaries[0];
+          _caseSummary      = summaries[1];
+          _sm2Data          = sm2Data;
+          _coachInsight     = coachInsight;
+          _loading          = false;
         });
       }
     } catch (e) {
@@ -93,9 +115,6 @@ class _HomeScreenState extends State<HomeScreen> {
       }
     }
   }
-
-  // ── Computed ──────────────────────────────────────────────────────────────
-  int    get _totalFlashcards => _topics.fold(0, (s, t) => s + t.totalFlashcards);
 
   // ── Build ──────────────────────────────────────────────────────────────────
   @override
@@ -152,13 +171,20 @@ class _HomeScreenState extends State<HomeScreen> {
                                   const SizedBox(height: 10),
                                   _buildAiCoachNote(isDark),
                                   if (_coachInsight != null) const SizedBox(height: 12),
-                                  RepaintBoundary(child: _buildKomutaMerkezi(isDark)),
-                                  const SizedBox(height: 12),
+                                  
+                                  // ── Flashcard Hub ──────────────────────────────────────
+                                  RepaintBoundary(child: _buildFlashcardHub(isDark)),
+
+                                  const SizedBox(height: 32),
+
+                                  // ── Questions Hub (Sorular) ─────────────────────────────
+                                  RepaintBoundary(child: _buildCaseHub(isDark)),
+
+                                  const SizedBox(height: 32),
                                   _buildStreakBanner(isDark),
-                                  const SizedBox(height: 20),
+                                  const SizedBox(height: 12),
                                   _buildQuickActions(isDark),
-                                  const SizedBox(height: 26),
-                                  RepaintBoundary(child: _buildSubjectCarousel(isDark)),
+                                  const SizedBox(height: 20),
                                 ],
                               ),
                             ),
@@ -175,47 +201,111 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   // ── Header ─────────────────────────────────────────────────────────────────
+  Widget _buildAnimatedAvatar(bool isDark) {
+    final hasImage = _user.profileImagePath != null &&
+        _user.profileImagePath!.isNotEmpty &&
+        !kIsWeb;
+
+    return GestureDetector(
+      onTap: () async {
+        await Navigator.push(context, AppRoute.slideUp(const ProfileScreen()));
+        _loadData();
+      },
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click,
+        child: TweenAnimationBuilder<double>(
+          tween: Tween(begin: 1.0, end: 1.0),
+          duration: const Duration(milliseconds: 200),
+          builder: (context, value, child) => Transform.scale(scale: value, child: child),
+          child: Container(
+            width: 46, height: 46,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              gradient: hasImage
+                  ? null
+                  : const LinearGradient(
+                      colors: [AppTheme.cyan, AppTheme.neonPink],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+              image: hasImage
+                  ? DecorationImage(
+                      image: FileImage(File(_user.profileImagePath!)),
+                      fit: BoxFit.cover,
+                    )
+                  : null,
+              boxShadow: [
+                BoxShadow(
+                    color: AppTheme.cyan.withValues(alpha: 0.40),
+                    blurRadius: 14,
+                    spreadRadius: 2),
+              ],
+            ),
+            child: hasImage
+                ? null
+                : Center(
+                    child: Text(_user.profileEmoji,
+                        style: GoogleFonts.inter(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w900)),
+                  ),
+          ),
+        ),
+      ),
+    )
+        .animate()
+        .fadeIn(duration: 400.ms)
+        .scale(
+            begin: const Offset(0.85, 0.85),
+            end: const Offset(1, 1),
+            duration: 500.ms,
+            curve: Curves.easeOutBack)
+        .then()
+        .shimmer(
+            delay: 1500.ms,
+            duration: 1200.ms,
+            color: AppTheme.cyan.withValues(alpha: 0.25))
+        .then()
+        .shake(
+            delay: 8000.ms,
+            duration: 600.ms,
+            hz: 3,
+            offset: const Offset(1.5, 0));
+  }
+
   Widget _buildHeader(bool isDark) {
     final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
-    final subColor  = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 18, 20, 10),
       child: Row(
         children: [
-          // Gradient Avatar
-          Container(
-            width: 46, height: 46,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: const LinearGradient(
-                colors: [AppTheme.cyan, AppTheme.neonPink],
-                begin: Alignment.topLeft,
-                end:   Alignment.bottomRight,
+          // Gradient Avatar → Profil ekranına git
+          _buildAnimatedAvatar(isDark),
+          const SizedBox(width: 12),
+
+          Expanded(
+            child: Text('${_user.name}! 👋',
+              maxLines: 1, overflow: TextOverflow.ellipsis,
+              style: GoogleFonts.inter(color: textColor, fontSize: 18, fontWeight: FontWeight.w900, letterSpacing: -0.5)),
+          ),
+          const SizedBox(width: 8),
+
+          // 🤖 AI BELL (CYAN) - BİREBİR ESKİ YERİ
+          GestureDetector(
+            onTap: _showAiInsightSheet,
+            child: Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: AppTheme.cyan.withValues(alpha: 0.1),
+                shape: BoxShape.circle,
+                border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.2)),
               ),
-              boxShadow: [
-                BoxShadow(color: AppTheme.cyan.withValues(alpha: 0.40), blurRadius: 14, spreadRadius: 2),
-              ],
-            ),
-            child: Center(
-              child: Text('T',
-                style: GoogleFonts.inter(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w900)),
+              child: const Icon(Icons.psychology_rounded, color: AppTheme.cyan, size: 20),
             ),
           ),
           const SizedBox(width: 12),
-
-          // Welcome
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text('Welcome back,',
-                  style: GoogleFonts.inter(color: subColor, fontSize: 12, fontWeight: FontWeight.w500)),
-                Text('Doktor Adayı! 👋',
-                  style: GoogleFonts.inter(color: textColor, fontSize: 17, fontWeight: FontWeight.w900, letterSpacing: -0.5)),
-              ],
-            ),
-          ),
 
           // ── Tema Toggle Butonu ─────────────────────────────────────
           ValueListenableBuilder<ThemeMode>(
@@ -312,7 +402,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(14),
               child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
                 child: Container(
                   width: 44, height: 44,
                   decoration: BoxDecoration(
@@ -335,47 +425,50 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           const SizedBox(width: 10),
 
-          // Notification Bell
-          Stack(
-            clipBehavior: Clip.none,
-            children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(14),
-                child: BackdropFilter(
-                  filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-                  child: Container(
-                    width: 44, height: 44,
-                    decoration: BoxDecoration(
-                      color: isDark
-                          ? Colors.white.withValues(alpha: 0.06)
-                          : Colors.black.withValues(alpha: 0.04),
-                      borderRadius: BorderRadius.circular(14),
-                      border: Border.all(
+          // 🔔 BİLDİRİM ZİLİ (GLASSY) - AKTİF EDİLDİ
+          GestureDetector(
+            onTap: _showAppNotifications,
+            child: Stack(
+              clipBehavior: Clip.none,
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(14),
+                  child: BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+                    child: Container(
+                      width: 44, height: 44,
+                      decoration: BoxDecoration(
                         color: isDark
-                            ? Colors.white.withValues(alpha: 0.10)
-                            : Colors.black.withValues(alpha: 0.07),
-                        width: 1,
+                            ? Colors.white.withValues(alpha: 0.06)
+                            : Colors.black.withValues(alpha: 0.04),
+                        borderRadius: BorderRadius.circular(14),
+                        border: Border.all(
+                          color: isDark
+                              ? Colors.white.withValues(alpha: 0.10)
+                              : Colors.black.withValues(alpha: 0.07),
+                          width: 1,
+                        ),
+                      ),
+                      child: Icon(
+                        Icons.notifications_active_rounded,
+                        color: isDark ? Colors.white : AppTheme.lightTextPrimary,
+                        size: 20,
                       ),
                     ),
-                    child: Icon(Icons.notifications_outlined,
-                        color: isDark ? Colors.white : AppTheme.lightTextPrimary, size: 20),
                   ),
                 ),
-              ),
-              Positioned(
-                top: 9, right: 9,
-                child: Container(
-                  width: 8, height: 8,
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFFF3B30),
-                    shape: BoxShape.circle,
-                    boxShadow: [
-                      BoxShadow(color: const Color(0xFFFF3B30).withValues(alpha: 0.7), blurRadius: 6, spreadRadius: 1),
-                    ],
+                Positioned(
+                  top: 9, right: 9,
+                  child: Container(
+                    width: 8, height: 8,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFFF3B30),
+                      shape: BoxShape.circle,
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),
@@ -466,151 +559,156 @@ class _HomeScreenState extends State<HomeScreen> {
     ).animate().fadeIn(duration: 600.ms, delay: 150.ms).slideX(begin: -0.05, end: 0);
   }
 
-  // ── Klasör Bazlı Ana Alan ─────────────────────────────────────────────────
-  Widget _buildKomutaMerkezi(bool isDark) {
-    final toReviewCount = _srsSummary.toReviewCount;
-    final learnedCount  = _srsSummary.learnedCount;
-    final bookmarkCount = _srsSummary.bookmarkCount;
-    final newCount      = _srsSummary.newCount;
-    final hasWork       = toReviewCount + learnedCount + newCount > 0;
+  // ── Flashcard Hub ──────────────────────────────────────────────────────────
+  Widget _buildFlashcardHub(bool isDark) {
+    return _buildHubSection(
+      isDark: isDark,
+      title: 'Bilgi Maratonu',
+      buttonLabel: 'KARTLARA BAŞLA',
+      summary: _flashcardSummary,
+      baseColor: AppTheme.cyan,
+      folders: [
+        (label: 'Bilemediklerim', icon: Icons.cancel_rounded, color: AppTheme.error, mode: FlashcardMode.failedOnly),
+        (label: 'Bildiklerim', icon: Icons.check_circle_rounded, color: AppTheme.success, mode: FlashcardMode.learnedOnly),
+        (label: 'Ezberim', icon: Icons.star_rounded, color: AppTheme.neonGold, mode: FlashcardMode.pocketOnly),
+      ],
+      onButtonTap: () => _showSubjectSelectionSheet(isCards: true, isDark: isDark),
+      onFolderTap: (mode) async {
+        await Navigator.push(context, AppRoute.slideUp(FlashcardScreen(initialMode: mode as FlashcardMode)));
+        _loadData();
+      },
+    );
+  }
+
+  // ── Sorular Hub (Eski Case Hub) ─────────────────────────────────────────────
+  Widget _buildCaseHub(bool isDark) {
+    return _buildHubSection(
+      isDark: isDark,
+      title: 'Sorular',
+      buttonLabel: 'TÜM SORULAR',
+      summary: _caseSummary,
+      baseColor: const Color(0xFF6366F1), // Indigo
+      folders: [
+        (label: 'Yanlışlarım', icon: Icons.error_outline_rounded, color: const Color(0xFFF43F5E), mode: CaseStudyMode.failedOnly),
+        (label: 'Doğrularım', icon: Icons.verified_rounded, color: const Color(0xFF10B981), mode: CaseStudyMode.learnedOnly),
+        (label: 'Favorilerim', icon: Icons.favorite_rounded, color: const Color(0xFF8B5CF6), mode: CaseStudyMode.pocketOnly),
+      ],
+      onButtonTap: () => _showSubjectSelectionSheet(isCards: false, isDark: isDark),
+      onFolderTap: (mode) async {
+        await Navigator.push(context, AppRoute.slideUp(CaseStudyScreen(initialMode: mode as CaseStudyMode)));
+        _loadData();
+      },
+    );
+  }
+
+  // ── Reusable Hub Helper ────────────────────────────────────────────────────
+  Widget _buildHubSection({
+    required bool isDark,
+    required String title,
+    required String buttonLabel,
+    required SrsSummary summary,
+    required Color baseColor,
+    required List<({String label, IconData icon, Color color, dynamic mode})> folders,
+    required VoidCallback onButtonTap,
+    required Function(dynamic) onFolderTap,
+  }) {
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // ── 3 Klasör Kartı ──────────────────────────────────────────────
+          Padding(
+            padding: const EdgeInsets.only(left: 4, bottom: 12),
+            child: Text(
+              title.toUpperCase(),
+              style: GoogleFonts.inter(
+                color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
+                fontSize: 11, fontWeight: FontWeight.w800, letterSpacing: 1.2,
+              ),
+            ),
+          ),
+          // ── 3 Folder Cards ──────────────────────────────────────────────
           Row(
-            children: [
-              Expanded(child: _FolderCard(
-                label: 'Bilemediklerim',
-                icon: Icons.cancel_rounded,
-                count: toReviewCount,
-                color: AppTheme.error,
-                isDark: isDark,
-                onTap: toReviewCount > 0 ? () async {
-                  await Navigator.push(context, AppRoute.slideUp(
-                    const FlashcardScreen(initialMode: FlashcardMode.failedOnly)));
-                  _loadData();
-                } : null,
-              ).animate().fadeIn(duration: 600.ms, delay: 100.ms).slideY(begin: 0.12, end: 0, curve: Curves.easeOutExpo)),
-              const SizedBox(width: 12),
-              Expanded(child: _FolderCard(
-                label: 'Bildiklerim',
-                icon: Icons.check_circle_rounded,
-                count: learnedCount,
-                color: AppTheme.success,
-                isDark: isDark,
-                onTap: learnedCount > 0 ? () async {
-                  await Navigator.push(context, AppRoute.slideUp(
-                    const FlashcardScreen(initialMode: FlashcardMode.learnedOnly)));
-                  _loadData();
-                } : null,
-              ).animate().fadeIn(duration: 600.ms, delay: 180.ms).slideY(begin: 0.12, end: 0, curve: Curves.easeOutExpo)),
-              const SizedBox(width: 12),
-              Expanded(child: _FolderCard(
-                label: 'Ezberim',
-                icon: Icons.star_rounded,
-                count: bookmarkCount,
-                color: AppTheme.neonGold,
-                isDark: isDark,
-                onTap: bookmarkCount > 0 ? () async {
-                  await Navigator.push(context, AppRoute.slideUp(
-                    const FlashcardScreen(initialMode: FlashcardMode.pocketOnly)));
-                  _loadData();
-                } : null,
-              ).animate().fadeIn(duration: 600.ms, delay: 260.ms).slideY(begin: 0.12, end: 0, curve: Curves.easeOutExpo)),
-            ],
+            children: folders.asMap().entries.map((entry) {
+              final i = entry.key;
+              final f = entry.value;
+              final count = i == 0 ? summary.toReviewCount : (i == 1 ? summary.learnedCount : summary.bookmarkCount);
+              
+              return Expanded(
+                child: Padding(
+                  padding: EdgeInsets.only(right: i < 2 ? 12 : 0),
+                  child: _FolderCard(
+                    label: f.label,
+                    icon: f.icon,
+                    count: count,
+                    color: f.color,
+                    isDark: isDark,
+                    onTap: count > 0 ? () => onFolderTap(f.mode) : null,
+                  ).animate().fadeIn(duration: 600.ms, delay: (100 + i * 80).ms).slideY(begin: 0.12, end: 0, curve: Curves.easeOutExpo),
+                ),
+              );
+            }).toList(),
           ),
 
-          const SizedBox(height: 24),
+          const SizedBox(height: 16),
 
-          // ── HAZIRSAN BAŞLA butonu ────────────────────────────────────────
+          // ── Action Button ────────────────────────────────────────
           GestureDetector(
-            onTap: hasWork ? () {
+            onTap: () {
               HapticFeedback.mediumImpact();
-              _startDailyGoalSession();
-            } : null,
+              onButtonTap();
+            },
             child: AnimatedContainer(
               duration: const Duration(milliseconds: 300),
               width: double.infinity,
-              height: 64,
+              height: 60,
               decoration: BoxDecoration(
-                gradient: hasWork
-                    ? const LinearGradient(
-                        colors: [Color(0xFF0099CC), Color(0xFF4A35CC), Color(0xFF9B2FBF)],
-                        begin: Alignment.centerLeft,
-                        end: Alignment.centerRight,
-                      )
-                    : LinearGradient(
-                        colors: [
-                          AppTheme.cyan.withValues(alpha: 0.20),
-                          AppTheme.neonPurple.withValues(alpha: 0.15),
-                        ],
-                        begin: Alignment.centerLeft,
-                        end: Alignment.centerRight,
-                      ),
-                borderRadius: BorderRadius.circular(32),
-                boxShadow: hasWork
-                    ? [
-                        BoxShadow(
-                          color: const Color(0xFF4A35CC).withValues(alpha: 0.65),
-                          blurRadius: 36,
-                          spreadRadius: 0,
-                          offset: const Offset(0, 12),
-                        ),
-                        BoxShadow(
-                          color: const Color(0xFF0099CC).withValues(alpha: 0.30),
-                          blurRadius: 16,
-                          spreadRadius: 0,
-                          offset: const Offset(0, 4),
-                        ),
-                      ]
-                    : [],
-              ),
-              child: Stack(
-                alignment: Alignment.center,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.rocket_launch_rounded,
-                        color: hasWork ? Colors.white : Colors.white38,
-                        size: 22,
-                      ),
-                      const SizedBox(width: 12),
-                      Text(
-                        'HAZIRSAN BAŞLA',
-                        style: GoogleFonts.inter(
-                          color: hasWork ? Colors.white : Colors.white38,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w900,
-                          letterSpacing: 0.8,
-                        ),
-                      ),
-                    ],
+                gradient: LinearGradient(
+                  colors: [
+                    baseColor,
+                    baseColor.withValues(alpha: 0.8),
+                    baseColor.withValues(alpha: 0.6),
+                  ],
+                  begin: Alignment.centerLeft,
+                  end: Alignment.centerRight,
+                ),
+                borderRadius: BorderRadius.circular(24),
+                boxShadow: [
+                  BoxShadow(
+                    color: baseColor.withValues(alpha: 0.35),
+                    blurRadius: 24,
+                    offset: const Offset(0, 8),
                   ),
                 ],
               ),
-            )
-            .animate(onPlay: (c) => c.repeat(reverse: true))
-            .scale(
-              begin: const Offset(1.0, 1.0),
-              end: const Offset(1.02, 1.02),
-              duration: 2000.ms,
-              curve: Curves.easeInOut,
-            )
-            .then()
-            .shimmer(
-              duration: 2200.ms,
-              delay: 1800.ms,
-              color: Colors.white.withValues(alpha: hasWork ? 0.30 : 0.0),
-              angle: 0.4,
-            ),
-          ).animate().fadeIn(duration: 700.ms, delay: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutExpo),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    title.contains('Vaka') ? Icons.medical_services_rounded : Icons.rocket_launch_rounded,
+                    color: Colors.white,
+                    size: 20,
+                  ),
+                  const SizedBox(width: 12),
+                  Text(
+                    buttonLabel,
+                    style: GoogleFonts.inter(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w900,
+                      letterSpacing: 0.5,
+                    ),
+                  ),
+                ],
+              ),
+            ).animate(onPlay: (c) => c.repeat(reverse: true))
+             .scale(begin: const Offset(1, 1), end: const Offset(1.015, 1.015), duration: 2500.ms, curve: Curves.easeInOut)
+             .shimmer(duration: 2500.ms, color: Colors.white.withValues(alpha: 0.2)),
+          ).animate().fadeIn(duration: 700.ms, delay: 300.ms),
         ],
       ),
-    ).animate().fadeIn(duration: 800.ms).scale(begin: const Offset(0.96, 0.96));
+    );
   }
 
   // ── Quick Actions ──────────────────────────────────────────────────────────
@@ -627,10 +725,10 @@ class _HomeScreenState extends State<HomeScreen> {
           )),
           const SizedBox(width: 14),
           Expanded(child: _QuickActionCard(
-            title: 'Klinik Vaka', subtitle: 'Random Sorular',
+            title: 'Klinik Vaka', subtitle: 'Sorular',
             icon: Icons.biotech_rounded,
             color: const Color(0xFF79C0FF),
-            isDark: isDark, onTap: _navigateToCases,
+            isDark: isDark, onTap: _navigateToCaseSubjects,
             badge: '🎯 %${_progress.accuracy.toInt()}',
           )),
         ],
@@ -639,45 +737,43 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   // ── Subject Carousel ───────────────────────────────────────────────────────
-  Widget _buildSubjectCarousel(bool isDark) {
+  Widget _buildSubjectCarousel(bool isDark, {required bool isCards}) {
     final modules  = SubjectRegistry.modules;
-    final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
+    final title = isCards ? 'KART BRANŞLARI' : 'SORU BRANŞLARI';
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Row(children: [
-                Text('Çalışma Branşları',
-                  style: GoogleFonts.inter(color: textColor, fontSize: 19,
-                      fontWeight: FontWeight.w900, letterSpacing: -0.5)),
+              Flexible(child: Row(children: [
+                Flexible(child: Text(title,
+                  maxLines: 1, overflow: TextOverflow.ellipsis,
+                  style: GoogleFonts.inter(
+                    color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
+                    fontSize: 11, fontWeight: FontWeight.w800, letterSpacing: 1.2,
+                  ))),
                 const SizedBox(width: 8),
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                   decoration: BoxDecoration(
-                    color:   AppTheme.cyan.withValues(alpha: 0.15),
+                    color:   (isCards ? AppTheme.cyan : AppTheme.neonPink).withValues(alpha: 0.15),
                     borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.3), width: 1),
+                    border: Border.all(color: (isCards ? AppTheme.cyan : AppTheme.neonPink).withValues(alpha: 0.3), width: 1),
                   ),
                   child: Text('${modules.length}',
-                    style: GoogleFonts.inter(color: AppTheme.cyan, fontSize: 11, fontWeight: FontWeight.w800)),
+                    style: GoogleFonts.inter(color: isCards ? AppTheme.cyan : AppTheme.neonPink, fontSize: 10, fontWeight: FontWeight.w800)),
                 ),
-              ]),
-              GestureDetector(
-                onTap: _navigateToTopicList,
-                child: Text('Tümünü Gör →',
-                  style: GoogleFonts.inter(color: AppTheme.cyan, fontWeight: FontWeight.w800, fontSize: 12)),
-              ),
+              ])),
             ],
           ),
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 12),
         SizedBox(
-          height: 172,
+          height: 160,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             physics: const BouncingScrollPhysics(),
@@ -687,48 +783,379 @@ class _HomeScreenState extends State<HomeScreen> {
               final module = modules[index];
               final isActive  = _selectedSubjectId == module.id;
               final moduleTopics = _topics.where((t) => t.subject == module.name).toList();
-              final cardCount    = moduleTopics.fold(0, (s, t) => s + t.totalFlashcards);
-              final share = _totalFlashcards > 0
-                  ? (cardCount / _totalFlashcards).clamp(0.0, 1.0)
-                  : 0.0;
+              
+              int totalItems = 0;
+              int masteredCount = 0;
+              for (final t in moduleTopics) {
+                if (isCards) {
+                  for (final fc in t.flashcards) {
+                    totalItems++;
+                    final d = _sm2Data[fc.id];
+                    if (d != null && d.repetitions >= 2) masteredCount++;
+                  }
+                } else {
+                  for (final cc in t.clinicalCases) {
+                    if (cc.id.isEmpty) continue;
+                    totalItems++;
+                    final d = _sm2Data[cc.id];
+                    if (d != null && d.repetitions >= 2) masteredCount++;
+                  }
+                }
+              }
+              
+              final mastery = totalItems > 0 ? (masteredCount / totalItems).clamp(0.0, 1.0) : 0.0;
 
               return _SubjectCarouselCard(
-                module: module, cardCount: cardCount,
-                progress: share, isActive: isActive, isDark: isDark,
+                module: module, cardCount: totalItems,
+                progress: mastery, isActive: isActive, isDark: isDark,
                 onTap: () {
                   setState(() => _selectedSubjectId = isActive ? null : module.id);
-                  _navigateToModule(module, moduleTopics);
+                  _onModuleTap(module, moduleTopics, isCards: isCards);
                 },
               );
             },
           ),
         ),
       ],
-    ).animate().fadeIn(duration: 700.ms, delay: 400.ms);
+    ).animate().fadeIn(duration: 700.ms, delay: 200.ms);
+  }
+
+  void _onModuleTap(SubjectModule module, List<Topic> topics, {required bool isCards}) async {
+    // Branş seçildiğinde doğrudan o branşın ilgili moduna git
+    _launchStudy(
+      isCards: isCards, 
+      mode: CaseStudyMode.all, 
+      subjectId: module.id
+    );
   }
 
 
 
-  Future<void> _startDailyGoalSession() async {
-    final selected = _progress.selectedSubjectIds;
-    await Navigator.push(
-      context,
-      AppRoute.slideUp(FlashcardScreen(
-        subjectIds: selected.isEmpty ? null : selected,
-        initialMode: FlashcardMode.dueOnly,
-        dailyGoal: _progress.dailyGoal,
-      )),
+  void _showAppNotifications() {
+    final isDark = ThemeService.isDark;
+    
+    // 🔍 Dinamik Veri Analizi
+    final streak = _progress.currentStreak;
+    final streakGoal = 10;
+    
+    // En kötü branşı bul
+    Map<String, int> mistakeCounts = {};
+    for (final t in _topics) {
+      for (final fc in t.flashcards) {
+        final d = _sm2Data[fc.id];
+        if (d != null && d.lastQuality == 1) {
+          mistakeCounts[t.subject] = (mistakeCounts[t.subject] ?? 0) + 1;
+        }
+      }
+    }
+    final sortedMistakes = mistakeCounts.entries.toList()
+      ..sort((a, b) => b.value.compareTo(a.value));
+    final topMistakeSubject = sortedMistakes.isEmpty ? "Derslerin" : sortedMistakes.first.key;
+    final topSubjectMistakeCount = mistakeCounts[topMistakeSubject] ?? 0;
+
+    final List<AppNotificationItem> notifications = [
+      // 1. Seri Hatırlatıcısı
+      AppNotificationItem(
+        title: 'SERİ HATIRLATICISI',
+        message: streak > 0 
+          ? 'Kritik eşik! $streak günlük serini bozmamak için bugün en az $streakGoal kart bakmalısın. 🔥'
+          : 'Bugün yeni bir seri başlatmak için harika bir gün! İlk 10 kartını çöz ve seriye başla. ⚡',
+        icon: Icons.local_fire_department_rounded,
+        color: const Color(0xFFFF6B00),
+        timeLabel: 'Şimdi',
+      ),
+      
+      // 2. SRS Uyarısı
+      AppNotificationItem(
+        title: 'TEKRAR UYARISI (SRS)',
+        message: topSubjectMistakeCount > 0
+          ? 'Dün \'Bilemedim\' dediğin $topSubjectMistakeCount $topMistakeSubject kartı seni bekliyor, hafızanı tazelemek istiyor. ⏳'
+          : 'Tüm kartlarını başarıyla hafızana aldın! Yeni kartlarla devam edebilirsin. ✨',
+        icon: Icons.history_edu_rounded,
+        color: AppTheme.cyan,
+        timeLabel: '2s önce',
+      ),
+      
+      // 3. Haftalık Başarı
+      AppNotificationItem(
+        title: 'HAFTALIK BAŞARI RAPORU',
+        message: 'Bu hafta yüksek doğruluk oranıyla bir \'$topMistakeSubject Canavarı\' oldun! Gelişimin harika gidiyor. 🏆',
+        icon: Icons.emoji_events_rounded,
+        color: AppTheme.neonGold,
+        timeLabel: 'Dün',
+      ),
+      
+      // 4. Sınav Sayacı
+      AppNotificationItem(
+        title: 'SINAV SAYACI',
+        message: 'Geri sayım başladı: Hedef puanına ulaşmak için kalan ${_progress.daysToExam} günde her gün +${_progress.recommendedDailyGoal} soru çözmelisin. 📍',
+        icon: Icons.timer_rounded,
+        color: AppTheme.neonPink,
+        timeLabel: 'Bugün',
+      ),
+    ];
+
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (context) => AppNotificationsSheet(
+        isDark: isDark,
+        notifications: notifications,
+      ),
     );
+  }
+
+  void _showAiInsightSheet() {
+    final isDark = ThemeService.isDark;
+
+    // Analiz için veri hazırlığı
+    Map<String, int> mistakeCounts = {};
+    Map<String, int> topicMistakes = {};
+
+    // ID -> Subject/Topic map'i oluştur (topics'ten çek)
+    for (final t in _topics) {
+      for (final fc in t.flashcards) {
+        final d = _sm2Data[fc.id];
+        if (d != null && d.lastQuality == 1) {
+          mistakeCounts[t.subject] = (mistakeCounts[t.subject] ?? 0) + 1;
+          topicMistakes[t.topic] = (topicMistakes[t.topic] ?? 0) + 1;
+        }
+      }
+      for (final cc in t.clinicalCases) {
+        if (cc.id.isEmpty) continue;
+        final d = _sm2Data[cc.id];
+        if (d != null && d.lastQuality == 1) {
+          mistakeCounts[t.subject] = (mistakeCounts[t.subject] ?? 0) + 1;
+          topicMistakes[t.topic] = (topicMistakes[t.topic] ?? 0) + 1;
+        }
+      }
+    }
+
+    final topTopics = topicMistakes.entries.toList()
+      ..sort((a, b) => b.value.compareTo(a.value));
+    final top3Topics = topTopics.take(3).map((e) => e.key).toList();
+
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (_) => AiInsightSheet(
+        progress: _progress,
+        isDark: isDark,
+        mistakeCounts: mistakeCounts,
+        topMistakeTopics: top3Topics,
+      ),
+    );
+  }
+
+
+  void _showSubjectSelectionSheet({required bool isCards, required bool isDark}) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (_) => Container(
+        height: MediaQuery.of(context).size.height * 0.65,
+        decoration: BoxDecoration(
+          color: isDark ? AppTheme.background : Colors.white,
+          borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
+          border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.15), width: 1.5),
+        ),
+        child: ClipRRect(
+          borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
+              child: Column(
+                children: [
+                  Container(
+                    width: 36, height: 4,
+                    decoration: BoxDecoration(
+                      color: AppTheme.textMuted.withValues(alpha: 0.3),
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                  ),
+                  const SizedBox(height: 24),
+                  Row(
+                    children: [
+                      Text(
+                        isCards ? 'Flash Kart Branşı Seç' : 'Vaka Sorusu Branşı Seç',
+                        style: GoogleFonts.inter(
+                          color: isDark ? Colors.white : AppTheme.textPrimary,
+                          fontSize: 20, fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                      const Spacer(),
+                      // Kalan Hedef Göstergesi
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                        decoration: BoxDecoration(
+                          color: AppTheme.cyan.withValues(alpha: 0.1),
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.2)),
+                        ),
+                        child: Text(
+                          'Kalan: ${(_progress.dailyGoal - _progress.todayStudied).clamp(0, 9999)}',
+                          style: GoogleFonts.inter(
+                            color: AppTheme.cyan,
+                            fontSize: 12, fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      IconButton(
+                        icon: const Icon(Icons.close_rounded),
+                        onPressed: () => Navigator.pop(context),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 16),
+                  Expanded(
+                    child: ListView(
+                      physics: const BouncingScrollPhysics(),
+                      children: [
+                        // TÜM DERSLER OPSİYONU
+                        _buildSubjectItem(
+                          title: 'Tüm Dersler',
+                          subtitle: 'Karışık ve yüksek verimli çalışma',
+                          icon: isCards ? Icons.auto_awesome_rounded : Icons.medical_services_rounded,
+                          color: isCards ? AppTheme.cyan : const Color(0xFF6366F1),
+                          isDark: isDark,
+                          onTap: () {
+                            Navigator.pop(context);
+                            _launchStudy(isCards: isCards, mode: CaseStudyMode.dueOnly, subjectId: null);
+                          },
+                        ),
+                        const SizedBox(height: 12),
+                        const Divider(height: 32),
+                        // BRANŞLAR
+                        ...SubjectRegistry.modules.map((m) => Padding(
+                          padding: const EdgeInsets.only(bottom: 12),
+                          child: _buildSubjectItem(
+                            title: m.name,
+                            subtitle: 'Hemen Başla', // Ünite sayısı kaldırıldı
+                            icon: m.icon,
+                            color: m.color,
+                            isDark: isDark,
+                            onTap: () {
+                              Navigator.pop(context);
+                              _launchStudy(isCards: isCards, mode: CaseStudyMode.dueOnly, subjectId: m.id);
+                            },
+                          ),
+                        )),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSubjectItem({
+    required String title,
+    required String subtitle,
+    required IconData icon,
+    required Color color,
+    required bool isDark,
+    required VoidCallback onTap,
+  }) {
+    return _PressableCard(
+      onTap: () {
+        HapticFeedback.mediumImpact();
+        onTap();
+      },
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: isDark ? Colors.white.withValues(alpha: 0.04) : Colors.black.withValues(alpha: 0.02),
+          borderRadius: BorderRadius.circular(22),
+          border: Border.all(color: color.withValues(alpha: 0.2), width: 1),
+        ),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: color.withValues(alpha: 0.12),
+                shape: BoxShape.circle,
+              ),
+              child: Icon(icon, color: color, size: 22),
+            ),
+            const SizedBox(width: 16),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title,
+                    style: GoogleFonts.inter(
+                      color: isDark ? Colors.white : AppTheme.textPrimary,
+                      fontSize: 16, fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  Text(subtitle,
+                    style: GoogleFonts.inter(
+                      color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
+                      fontSize: 12,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded, color: color.withValues(alpha: 0.4)),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _launchStudy({required bool isCards, required CaseStudyMode mode, String? subjectId}) async {
+    final List<String>? selected = subjectId != null ? [subjectId] : (_progress.selectedSubjectIds.isEmpty ? null : _progress.selectedSubjectIds);
+    
+    final remaining = (_progress.dailyGoal - _progress.todayStudied).clamp(0, 9999);
+    
+    if (isCards) {
+      FlashcardMode fMode = FlashcardMode.all;
+      if (mode == CaseStudyMode.dueOnly) fMode = FlashcardMode.dueOnly;
+      else if (mode == CaseStudyMode.failedOnly) fMode = FlashcardMode.failedOnly;
+      else if (mode == CaseStudyMode.learnedOnly) fMode = FlashcardMode.learnedOnly;
+      else if (mode == CaseStudyMode.pocketOnly) fMode = FlashcardMode.pocketOnly;
+
+      await Navigator.push(context, AppRoute.slideUp(FlashcardScreen(
+        subjectIds: selected,
+        initialMode: fMode,
+        dailyGoal: remaining,
+      )));
+    } else {
+      await Navigator.push(context, AppRoute.slideUp(CaseStudyScreen(
+        subjectIds: selected,
+        initialMode: mode,
+        dailyGoal: remaining,
+      )));
+    }
     _loadData();
   }
 
   // ── Bottom Nav ─────────────────────────────────────────────────────────────
   Widget _buildBottomNav(bool isDark) {
-    const items = [
+    final focusService = Provider.of<FocusService>(context);
+    final isFocusActive = focusService.isRunning || focusService.isAudioPlaying;
+
+    final items = [
       (Icons.home_rounded,           Icons.home_outlined,           'Home'),
+      (Icons.menu_book_rounded,      Icons.menu_book_outlined,      'Konular'),
       (Icons.school_rounded,         Icons.school_outlined,         'Study'),
-      (Icons.bar_chart_rounded,      Icons.bar_chart_outlined,      'Progress'),
-      (Icons.calendar_month_rounded, Icons.calendar_month_outlined, 'Program'),
+      (Icons.bar_chart_rounded,      Icons.bar_chart_outlined,      'Analiz'),
+      (
+        isFocusActive ? Icons.timer_rounded : Icons.timer_outlined,
+        isFocusActive ? Icons.timer_rounded : Icons.timer_outlined,
+        'Odak'
+      ),
       (Icons.person_rounded,         Icons.person_outline_rounded,  'Profil'),
     ];
 
@@ -737,7 +1164,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(28),
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
+          filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
             decoration: BoxDecoration(
@@ -783,19 +1210,50 @@ class _HomeScreenState extends State<HomeScreen> {
                             ],
                           )
                         : null,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
+                    child: Stack(
+                      clipBehavior: Clip.none,
                       children: [
-                        Icon(isActive ? activeIcon : inactiveIcon,
-                          color: isActive
-                              ? AppTheme.cyan
-                              : (isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary),
-                          size: 22,
+                        Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(isActive ? activeIcon : inactiveIcon,
+                              color: isActive
+                                  ? AppTheme.cyan
+                                  : (isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary),
+                              size: 22,
+                            ),
+                            if (isActive) ...[
+                              const SizedBox(height: 3),
+                              Text(label,
+                                style: GoogleFonts.inter(color: AppTheme.cyan, fontSize: 10, fontWeight: FontWeight.w700)),
+                            ],
+                          ],
                         ),
-                        if (isActive) ...[
-                          const SizedBox(height: 3),
-                          Text(label,
-                            style: GoogleFonts.inter(color: AppTheme.cyan, fontSize: 10, fontWeight: FontWeight.w700)),
+                        // ── Focus Indicators (Next to Profile) ──
+                        if (i == 5) ...[
+                          if (focusService.isRunning)
+                            Positioned(
+                              left: -18, top: 0,
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: AppTheme.cyan.withValues(alpha: 0.9),
+                                  borderRadius: BorderRadius.circular(6),
+                                ),
+                                child: Text(
+                                  focusService.timerString,
+                                  style: const TextStyle(color: Colors.white, fontSize: 8, fontWeight: FontWeight.bold),
+                                ),
+                              ).animate(onPlay: (c) => c.repeat()).shimmer(duration: 2000.ms),
+                            ),
+                          if (focusService.isAudioPlaying)
+                            Positioned(
+                              right: -12, top: -2,
+                              child: const Icon(Icons.music_note_rounded, color: AppTheme.neonPink, size: 12)
+                                  .animate(onPlay: (c) => c.repeat())
+                                  .scale(begin: const Offset(0.8, 0.8), end: const Offset(1.2, 1.2), duration: 600.ms)
+                                  .then().fadeOut(duration: 400.ms),
+                            ),
                         ],
                       ],
                     ),
@@ -814,8 +1272,23 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() => _navIndex = index);
     switch (index) {
       case 0: break;
-      case 1: await _navigateToFlashcards(); break;
-      case 2: _navigateToTopicList(); break;
+      case 1:
+        await Navigator.push(context, AppRoute.slideUp(const SubjectBrowserScreen()));
+        _loadData();
+        break;
+      case 2: await _navigateToFlashcards(); break;
+      case 3:
+        await Navigator.push(context, AppRoute.slideUp(ProgressAnalyticsScreen(user: _user, progress: _progress)));
+        _loadData();
+        break;
+      case 4:
+        await Navigator.push(context, AppRoute.slideUp(const FocusScreen()));
+        _loadData(); // Gerekirse verileri yenile
+        break;
+      case 5:
+        await Navigator.push(context, AppRoute.slideUp(const ProfileScreen()));
+        _loadData();
+        break;
       default:
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
@@ -831,14 +1304,7 @@ class _HomeScreenState extends State<HomeScreen> {
     if (mounted) setState(() => _navIndex = 0);
   }
 
-  Future<void> _navigateToModule(SubjectModule module, List<Topic> topics) async {
-    final chapters = <String, List<Topic>>{};
-    for (final t in topics) { chapters.putIfAbsent(t.chapter, () => []).add(t); }
-    await Navigator.push(context, AppRoute.slideRight(
-      ChapterListScreen(subjectName: module.name, chapters: chapters, accentColor: module.color),
-    ));
-    _loadData();
-  }
+
 
   Future<void> _navigateToFlashcards() async {
     await Navigator.push(context, AppRoute.slideUp(const FlashcardSubjectScreen()));
@@ -850,9 +1316,11 @@ class _HomeScreenState extends State<HomeScreen> {
     _loadData();
   }
 
-  void _navigateToTopicList() {
-    Navigator.push(context, AppRoute.slideRight(TopicListScreen(subjectId: _selectedSubjectId)));
+  Future<void> _navigateToCaseSubjects() async {
+    await Navigator.push(context, AppRoute.slideUp(const CaseSubjectScreen()));
+    _loadData();
   }
+
 
   Widget _buildAiCoachNote(bool isDark) {
     final insight = _coachInsight;
@@ -1007,7 +1475,7 @@ class _SubjectCarouselCard extends StatelessWidget {
         child: ClipRRect(
           borderRadius: BorderRadius.circular(22),
           child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
+            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
             child: Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
@@ -1049,10 +1517,12 @@ class _SubjectCarouselCard extends StatelessWidget {
                   ),
                   Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                     Text(module.shortLabel.toUpperCase(),
+                      maxLines: 1, overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.inter(color: textColor, fontSize: 13,
                           fontWeight: FontWeight.w900, letterSpacing: 0.5)),
                     const SizedBox(height: 2),
                     Text('$cardCount kart',
+                      maxLines: 1, overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.inter(color: subColor, fontSize: 10, fontWeight: FontWeight.w600)),
                     const SizedBox(height: 10),
                     Text('${(progress * 100).toInt()}%',
@@ -1122,7 +1592,7 @@ class _QuickActionCard extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(22),
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
+          filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
           child: Container(
             padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(
@@ -1337,6 +1807,8 @@ class _FolderCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final active = onTap != null;
+    const iconSize = 22.0;
+
     return GestureDetector(
       onTap: () {
         if (active) {
@@ -1363,7 +1835,7 @@ class _FolderCard extends StatelessWidget {
         child: ClipRRect(
           borderRadius: BorderRadius.circular(22),
           child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
+            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 18),
               decoration: BoxDecoration(
@@ -1406,7 +1878,7 @@ class _FolderCard extends StatelessWidget {
                     ),
                     child: Icon(icon,
                       color: active ? color : (isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary),
-                      size: 22),
+                      size: iconSize),
                   ),
                   const SizedBox(height: 10),
                   // Sayaç badge
@@ -1527,6 +1999,18 @@ class _InfoSheet extends StatelessWidget {
                   ),
                   _InfoSection(
                     isDark: isDark,
+                    icon: Icons.speed_rounded,
+                    color: AppTheme.neonPurple,
+                    title: 'Ease Factor (Zorluk Çarpanı)',
+                    body:
+                        'Her kart için bir Ease Factor (varsayılan 2.5) tutulur. '
+                        '"Bildim" dediğinde yeni aralık = eski aralık × EF olur ve EF +0.1 artar. '
+                        '"Bilemedim" dediğinde aralık 1 güne düşer ve EF −0.2 azalır (min 1.3). '
+                        'Böylece zorlandığın kartlar daha sık, kolay kartlar daha seyrek gelir — '
+                        'TUS gibi geniş kapsamlı sınavlarda ezber verimliliğini katlayan bir sistemdir.',
+                  ),
+                  _InfoSection(
+                    isDark: isDark,
                     icon: Icons.flag_rounded,
                     color: AppTheme.warning,
                     title: 'Günlük Hedef',
@@ -1540,22 +2024,6 @@ class _InfoSheet extends StatelessWidget {
                     title: 'Kritik Kartlar',
                     body:
                         '"⚠️ Kritik" butonuna bastığın kartlar Kritik havuzuna düşer. Bu kartlar en öncelikli tekrar grubundur. Ana sayfadaki kırmızı "Kritik Kartlar" butonu bu havuzu açar.',
-                  ),
-                  _InfoSection(
-                    isDark: isDark,
-                    icon: Icons.sentiment_dissatisfied_rounded,
-                    color: const Color(0xFFFF9F0A),
-                    title: 'Geçici Hafıza',
-                    body:
-                        '"⟳ Tekrar" butonuna bastığın kartlar Geçici Hafıza havuzuna düşer. Tekrar sıfırlanır ve kartı en kısa sürede tekrar görürsün.',
-                  ),
-                  _InfoSection(
-                    isDark: isDark,
-                    icon: Icons.check_circle_rounded,
-                    color: AppTheme.success,
-                    title: 'Orta Hafıza & Uzun Hafıza',
-                    body:
-                        '"🎯 Orta Hafıza" seçeneği kartı normal SRS akışına alır. "🏆 Uzun Hafıza" seçeneği ise kartın çok iyi bilindiğini işaret eder ve tekrar aralığını uzatır. Yüksek aralıklı kartlar cebindedir ve sık çıkmaz.',
                   ),
                   _InfoSection(
                     isDark: isDark,

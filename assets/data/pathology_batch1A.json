@@ -5,7 +5,7 @@
     {
       "id": "path_b1A_001",
       "question": "Barrett özofagusu için en önemli risk faktörü nedir ve malign transformasyon hangi tümöre yol açar?",
-      "answer": "Kronik GÖRH (gastroözofageal reflü hastalığı). Transformasyon → Özofagus adenokarsinomu (alt 1/3).",
+      "answer": "Kronik [[GÖRH]] (gastroözofageal reflü hastalığı). Transformasyon → [[Özofagus adenokarsinomu]] (alt 1/3).",
       "difficulty": "Orta",
       "tags": ["GİS", "Özofagus", "Barrett"],
       "ai_coding": "🤖 Kodlama: GÖRH → Barrett (metaplazi) → Displazi → ADENOkarsinom. 'Aşağı yön' = alt özofagus = adeno."
@@ -13,7 +13,7 @@
     {
       "id": "path_b1A_002",
       "question": "Özofagus skuamöz hücreli karsinomunda en sık görülen iki lokalizasyon nedir?",
-      "answer": "Orta 1/3 ve alt 1/3 özofagus (en sık orta 1/3).",
+      "answer": "[[Orta 1/3]] ve alt 1/3 özofagus (en sık [[orta 1/3]]).",
       "difficulty": "Orta",
       "tags": ["GİS", "Özofagus", "Karsinom"],
       "ai_coding": "🤖 Kodlama: Skuamöz = ORTA. Adeno = ALT. 'S-O, A-A' = Skuamöz-Orta, Adeno-Alt."
@@ -21,7 +21,7 @@
     {
       "id": "path_b1A_003",
       "question": "Akalazya'da özofagusta hangi nöronlar kaybedilir ve bu hangi semptoma yol açar?",
-      "answer": "Myenterik (Auerbach) pleksusundaki inhibitör nöronlar (NO salgılayan) kaybedilir → Alt özofageal sfinkter relaksasyon yapamaz → Disfaji.",
+      "answer": "[[Myenterik (Auerbach) pleksus]]undaki inhibitör nöronlar ([[NO]] salgılayan) kaybedilir → [[Alt özofageal sfinkter]] relaksasyon yapamaz → [[Disfaji]].",
       "difficulty": "Zor",
       "tags": ["GİS", "Özofagus", "Akalazya"],
       "ai_coding": "🤖 Kodlama: Akalazya = 'Açılamaz kapı' (sfinkter). Myenterik pleksus bozuluyor."
@@ -29,7 +29,7 @@
     {
       "id": "path_b1A_004",
       "question": "Mallory-Weiss sendromunda yırtık nerede lokalizedir ve en sık nedeni nedir?",
-      "answer": "Gastroözofageal bileşkede mukozal yırtık. En sık neden: Şiddetli/tekrarlayan kusma (alkol sonrası).",
+      "answer": "[[Gastroözofageal bileşke]]de mukozal yırtık. En sık neden: Şiddetli/tekrarlayan [[kusma]] (alkol sonrası).",
       "difficulty": "Kolay",
       "tags": ["GİS", "Özofagus", "Kanama"],
       "ai_coding": "🤖 Kodlama: Mallory-Weiss = 'Mide-Weis(e)' = Mide-özofagus bileşkesi yırtılır."
@@ -37,7 +37,7 @@
     {
       "id": "path_b1A_005",
       "question": "Özofagus varislerinin en sık komplikasyonu ve patolojik temeli nedir?",
-      "answer": "Masif hematemezis. Patolojik temel: Portal hipertansiyon → Portosistemik kollateraller → Özofagus alt bölümünde submukozal ven genişlemesi.",
+      "answer": "Masif [[hematemezis]]. Patolojik temel: [[Portal hipertansiyon]] → Portosistemik kollateraller → Özofagus alt bölümünde [[submukozal ven]] genişlemesi.",
       "difficulty": "Kolay",
       "tags": ["GİS", "Özofagus", "Portal HT"],
       "ai_coding": "🤖 Kodlama: Varis = 'Varise giden yol' = Portal HT → Özofagusa giden kollateral."
@@ -45,7 +45,7 @@
     {
       "id": "path_b1A_006",
       "question": "H. pylori'nin hangi virulans faktörü gastrik epitelde inflamasyonu başlatır?",
-      "answer": "CagA (cytotoxin-associated gene A) proteini — NF-κB aktivasyonu → IL-8 salınımı → Nötrofil infiltrasyonu.",
+      "answer": "[[CagA]] (cytotoxin-associated gene A) proteini — [[NF-κB]] aktivasyonu → [[IL-8]] salınımı → Nötrofil infiltrasyonu.",
       "difficulty": "Zor",
       "tags": ["GİS", "Mide", "H. pylori"],
       "ai_coding": "🤖 Kodlama: CagA = 'Cag-Ateş' = İnflamasyon ateşini yakar."
@@ -53,7 +53,7 @@
     {
       "id": "path_b1A_007",
       "question": "H. pylori gastritinde görülen özel histolojik bulgu nedir?",
-      "answer": "Lamina propriada lenfoid foliküller (lenfoid agregatlar) + nötrofil infiltrasyonu ('aktif kronik gastrit' paterni).",
+      "answer": "Lamina propriada [[lenfoid foliküller]] (lenfoid agregatlar) + [[nötrofil]] infiltrasyonu ('aktif kronik gastrit' paterni).",
       "difficulty": "Orta",
       "tags": ["GİS", "Mide", "H. pylori", "Histoloji"],
       "ai_coding": "🤖 Kodlama: H. pylori = Lenfoid folikül yaptırır, MALT zemindir."
@@ -61,7 +61,7 @@
     {
       "id": "path_b1A_008",
       "question": "Mide MALT lenfomasının tedavisinde ilk basamak nedir ve neden etkilidir?",
-      "answer": "H. pylori eradikasyonu (antibiyotik tedavisi). Tümör antijene bağımlı B hücre proliferasyonuyla geliştiği için antijen kalkınca tümör gerileyebilir.",
+      "answer": "[[H. pylori eradikasyonu]] (antibiyotik tedavisi). Tümör antijene bağımlı [[B hücre]] proliferasyonuyla geliştiği için antijen kalkınca tümör gerileyebilir.",
       "difficulty": "Orta",
       "tags": ["GİS", "Mide", "MALT", "Lenfoma"],
       "ai_coding": "🤖 Kodlama: MALT = 'MALTtan antibiyotik çıkar'. H. pylori öldür → Tümör küçülür."
@@ -69,7 +69,7 @@
     {
       "id": "path_b1A_009",
       "question": "Pernisiyöz anemi hangi gastrit tipinde görülür ve patolojik mekanizması nedir?",
-      "answer": "Tip A (otoimmun) gastrit. Parietal hücre antikorları → İntrinsik faktör eksikliği → B12 malabsorpsiyonu → Megaloblastik anemi.",
+      "answer": "[[Tip A (otoimmun)]] gastrit. [[Parietal hücre]] antikorları → [[İntrinsik faktör]] eksikliği → [[B12]] malabsorpsiyonu → [[Megaloblastik anemi]].",
       "difficulty": "Orta",
       "tags": ["GİS", "Mide", "Pernisiyöz Anemi"],
       "ai_coding": "🤖 Kodlama: Tip A = Antrum dışı (corpus/fundus) + Otoimmun + Aklorhidri + Atrofik."
@@ -77,7 +77,7 @@
     {
       "id": "path_b1A_010",
       "question": "Menetrier hastalığında midede hangi histolojik değişiklik ve hangi protein kaybı görülür?",
-      "answer": "Masif gastrik foveolar hiperplazi (dev rugalar) + Parietal/baş hücre atrofisi → Protein kaybettiren gastropati (hipoalbüminemi).",
+      "answer": "Masif gastrik [[foveolar hiperplazi]] (dev rugalar) + Parietal/baş hücre [[atrofisi]] → [[Protein kaybettiren]] gastropati ([[hipoalbüminemi]]).",
       "difficulty": "Zor",
       "tags": ["GİS", "Mide", "Menetrier"],
       "ai_coding": "🤖 Kodlama: Menetrier = 'MegaRuga' + Protein KAYBI. TGF-α fazlalığından."
@@ -85,7 +85,7 @@
     {
       "id": "path_b1A_011",
       "question": "Mide adenokarsinomunda 'linitis plastica' terimi neyi ifade eder ve hangi histolojik tip ile ilişkilidir?",
-      "answer": "Tüm mide duvarına infiltrasyon → Mide 'deri çantası' görünümü. Diffüz tip (taşlı yüzük hücreli) adeno ile ilişkili.",
+      "answer": "Tüm mide duvarına infiltrasyon → Mide '[[deri çantası]]' görünümü. [[Diffüz tip (taşlı yüzük hücreli)]] adeno ile ilişkilidir.",
       "difficulty": "Orta",
       "tags": ["GİS", "Mide", "Adeno", "Linitis Plastica"],
       "ai_coding": "🤖 Kodlama: Linitis Plastica = 'Deri çanta mide' = Diffüz tip, taşlı yüzük hücreli."
@@ -93,7 +93,7 @@
     {
       "id": "path_b1A_012",
       "question": "Krukenberg tümörü nedir ve en sık primer kaynağı neresidir?",
-      "answer": "Overe metastaz yapan müsinöz adenokarsinom. En sık primer kaynak: Mide (taşlı yüzük hücreli). Bilateral overlerdir.",
+      "answer": "[[Overe]] metastaz yapan [[müsinöz adenokarsinom]]. En sık primer kaynak: [[Mide]] (taşlı yüzük hücreli).",
       "difficulty": "Orta",
       "tags": ["GİS", "Mide", "Metastaz", "Over"],
       "ai_coding": "🤖 Kodlama: Krukenberg = 'Kru-BİLATERAL-Ov-MIDE'. Mide → Over ikisi birden."
@@ -101,7 +101,7 @@
     {
       "id": "path_b1A_013",
       "question": "Duodenal ülser ile mide ülserini ayıran en önemli özellik nedir?",
-      "answer": "Duodenal ülser: Yemekten 2-3 saat sonra ağrı, yemekle azalır; HCl fazlalığı baskın. Mide ülseri: Yemekle artan ağrı; mukoza defansı baskın. Duodenal ülser ASLA malinleşmez; mide ülseri malinleşebilir.",
+      "answer": "Duodenal ülser: Yemekle [[azalır]]; HCl fazlalığı baskın. Mide ülseri: Yemekle [[artan]] ağrı. Duodenal ülser [[ASLA malinleşmez]].",
       "difficulty": "Orta",
       "tags": ["GİS", "Peptik Ülser"],
       "ai_coding": "🤖 Kodlama: Duodenal = Dolu Mide ağrıyı Dindirdi. Mide = Mide yemekle Mutsuz."
@@ -109,7 +109,7 @@
     {
       "id": "path_b1A_014",
       "question": "Çölyak hastalığında ince bağırsakta hangi histolojik değişiklikler görülür?",
-      "answer": "Villöz atrofi + Kript hiperplazisi + İntraepitelyal lenfosit artışı (>25/100 enterosit) + Lamina propriada plazma hücre infiltrasyonu.",
+      "answer": "[[Villöz atrofi]] + [[Kript hiperplazisi]] + [[İntraepitelyal lenfosit]] artışı (>25/100 enterosit).",
       "difficulty": "Orta",
       "tags": ["GİS", "İnce Bağırsak", "Çölyak"],
       "ai_coding": "🤖 Kodlama: Çölyak = 'Villi silinir, Kript uzar'. IEL artışı kritik."
@@ -117,7 +117,7 @@
     {
       "id": "path_b1A_015",
       "question": "Çölyak hastalığında hangi antikor hem tanı hem de tedavi takibi için kullanılır?",
-      "answer": "Anti-doku transglutaminaz (anti-tTG) IgA — en sensitif ve spesifik. Glutensiz diyet ile titre düşer.",
+      "answer": "[[Anti-doku transglutaminaz (anti-tTG) IgA]] — en sensitif ve spesifik. Glutensiz diyet ile titre düşer.",
       "difficulty": "Kolay",
       "tags": ["GİS", "Çölyak", "Seroloji"],
       "ai_coding": "🤖 Kodlama: tTG = 'Takip-Tanı-Gluten' — Glutensiz diyet alınca düşer."
@@ -125,7 +125,7 @@
     {
       "id": "path_b1A_016",
       "question": "Crohn hastalığı ile ülseratif koliti ayıran histolojik bulgular nelerdir?",
-      "answer": "Crohn: Transmural inflamasyon + Non-kazeifiye granülom + 'Skip lesion' + Fistül/fissür + Tüm GİS tutulumu. ÜK: Mukoza-submukoza sınırlı + Kript absesi + Sadece kolon (rektum her zaman).",
+      "answer": "Crohn: [[Transmural inflamasyon]] + [[Non-kazeifiye granülom]] + '[[Skip lesion]]'. ÜK: [[Mukoza-submukoza]] sınırlı + [[Kript absesi]].",
       "difficulty": "Zor",
       "tags": ["GİS", "IBD", "Crohn", "ÜK"],
       "ai_coding": "🤖 Kodlama: Crohn = 'Tam deli geçer' (transmural+tüm GİS). ÜK = 'Sadece yüzey' (mukoza)."
@@ -133,7 +133,7 @@
     {
       "id": "path_b1A_017",
       "question": "Crohn hastalığının en sık tuttuğu GİS bölgesi neresidir?",
-      "answer": "Terminal ileum (%85-90 olguda tutulur) — 'İleitis terminalis'.",
+      "answer": "[[Terminal ileum]] (%85-90 olguda tutulur) — 'İleitis terminalis'.",
       "difficulty": "Kolay",
       "tags": ["GİS", "Crohn"],
       "ai_coding": "🤖 Kodlama: Crohn = 'Köşeye sıkışmış' (terminal ileum, bağırsak köşesi)."
@@ -141,7 +141,7 @@
     {
       "id": "path_b1A_018",
       "question": "Ülseratif kolitte displazi ve kanser gelişimi için en önemli risk faktörleri nelerdir?",
-      "answer": "Hastalık süresi (>10 yıl) + Pankolit (total tutulum) + PSC (primer sklerozan kolanjit) varlığı + Aile öyküsü.",
+      "answer": "[[Hastalık süresi]] (>10 yıl) + [[Pankolit]] (total tutulum) + [[PSC]] varlığı.",
       "difficulty": "Zor",
       "tags": ["GİS", "ÜK", "Kanser Risk"],
       "ai_coding": "🤖 Kodlama: ÜK Kanser = '10 yıl + Pan + PSC = Tehlike'."
@@ -149,7 +149,7 @@
     {
       "id": "path_b1A_019",
       "question": "Akut apandisitte histolojik tanı kriteri nedir?",
-      "answer": "Apandiks muskularis propriasında nötrofil infiltrasyonu (transmural nötrofil gerekli değil, muskularis tutulumu yeterli).",
+      "answer": "Apandiks [[muskularis propriasında nötrofil]] infiltrasyonu (transmural nötrofil gerekli değil).",
       "difficulty": "Orta",
       "tags": ["GİS", "Apandisit", "Histoloji"],
       "ai_coding": "🤖 Kodlama: Apandisit tanı = 'Kas tabakasına nötrofil girdi'."
@@ -157,7 +157,7 @@
     {
       "id": "path_b1A_020",
       "question": "Hirschsprung hastalığının patolojik temeli ve en sık tuttuğu segment nedir?",
-      "answer": "Myenterik (Auerbach) ve Meissner pleksusunda ganglion hücresi yokluğu (aganglionozis) → Kolon segmenti spastik → Proksimalde dilatasyon. En sık: Rektosigmoid segment.",
+      "answer": "Meissner/Auerbach pleksusunda [[ganglion hücresi yokluğu]] (aganglionozis). En sık: [[Rektosigmoid]] segment.",
       "difficulty": "Orta",
       "tags": ["GİS", "Hirschsprung", "Kolon"],
       "ai_coding": "🤖 Kodlama: Hirschsprung = 'Ganglion HİÇ yok' → 'Hirsch' = HAYIR ganglion."
@@ -165,7 +165,7 @@
     {
       "id": "path_b1A_021",
       "question": "FAP (Familyal Adenomatöz Polipozis) hangi gen mutasyonundan kaynaklanır ve kanser riski nedir?",
-      "answer": "APC geni (5q21) — Otozomal dominant. 100'den fazla adenomatöz polip. Tedavi edilmezse %100 kanser riski (ortalama 40 yaşında).",
+      "answer": "[[APC geni (5q21)]]. Tedavi edilmezse [[%100]] kanser riski (ortalama 40 yaşında).",
       "difficulty": "Orta",
       "tags": ["GİS", "Kolon", "FAP", "APC"],
       "ai_coding": "🤖 Kodlama: APC = 'A-yak-ta-Par-Ça' = 5q'da → Adenomatöz Polipozis Coli."
@@ -173,7 +173,7 @@
     {
       "id": "path_b1A_022",
       "question": "Lynch sendromu (HNPCC) hangi mekanizmadan kaynaklanır ve hangi ekstrakolonik tümörler eşlik edebilir?",
-      "answer": "MMR (mismatch repair) genleri mutasyonu (MLH1, MSH2, MSH6, PMS2) → Mikrosatellit instabilite (MSI). Ekstrakolonik: Endometrium kanseri (en sık), over, mide, ürotelyum.",
+      "answer": "[[MMR (mismatch repair)]] mutasyonu → [[Mikrosatellit instabilite (MSI)]]. Ekstrakolonik: [[Endometrium kanseri]] (en sık).",
       "difficulty": "Zor",
       "tags": ["GİS", "Kolon", "Lynch", "MMR"],
       "ai_coding": "🤖 Kodlama: Lynch = 'Lince benzer' (akıllı, MSI ile) → MLH-MSH-PMS geni."
@@ -181,7 +181,7 @@
     {
       "id": "path_b1A_023",
       "question": "Serrated (dişli) polip ile konvansiyonel adenomun kanser yolu farkı nedir?",
-      "answer": "Konvansiyonel adenom: APC/β-katenin yolu (CIN). Serrated polip: BRAF mutasyonu + MLH1 metilasyonu → MSI-H yolu (serrated pathway). Her iki yol da kolorektal kansere ulaşır.",
+      "answer": "Konvansiyonel adenom: [[APC/β-katenin]] yolu (CIN). Serrated polip: [[BRAF mutasyonu]] + [[MLH1 metilasyonu]] → [[MSI-H]] yolu.",
       "difficulty": "Zor",
       "tags": ["GİS", "Kolon", "Polip", "Serrated"],
       "ai_coding": "🤖 Kodlama: Serrated = 'BRAF'e dişli bıçak gibi girer' → MLH1 kapanır."
@@ -189,7 +189,7 @@
     {
       "id": "path_b1A_024",
       "question": "Kolorektal kanserde en sık görülen histolojik tip ve soldaki ile sağdaki kolon kanserlerinin klinik farklılıkları nelerdir?",
-      "answer": "Histoloji: Adenokarsinom (%90). Sol kolon: Stenotik/anüler 'elma çekirdeği' lezyon → Tıkanma. Sağ kolon: Ekzofitik/polipoid → Demir eksikliği anemisi (gizli kanama).",
+      "answer": "Histoloji: [[Adenokarsinom]]. Sol kolon: Stenotik '[[elma çekirdeği]]' lezyon → [[Tıkanma]]. Sağ kolon: Ekzofitik → [[Anemi]].",
       "difficulty": "Orta",
       "tags": ["GİS", "Kolorektal Kanser"],
       "ai_coding": "🤖 Kodlama: Sol = Sıkıştırır (tıkanma). Sağ = Sızar (kanama, anemi)."
@@ -197,7 +197,7 @@
     {
       "id": "path_b1A_025",
       "question": "Meckel divertikülü için '2 kuralı' nedir?",
-      "answer": "Nüfusun %2'si. Yaşam boyu %2 semptom. İleosekgal valvin 2 feet (60 cm) proksimalinde. 2 inç uzunlukta. İlk 2 yaşta semptomatik.",
+      "answer": "Nüfusun %2'si. İleosekgal valvin [[2 feet (60 cm)]] proksimalinde. İlk 2 yaşta semptomatik.",
       "difficulty": "Kolay",
       "tags": ["GİS", "İnce Bağırsak", "Meckel"],
       "ai_coding": "🤖 Kodlama: Meckel = '2-2-2-2-2'. Beş tane 2!"
@@ -205,7 +205,7 @@
     {
       "id": "path_b1A_026",
       "question": "Meckel divertikülündeki heterotopik mukoza en sık hangi tiptir ve hangi komplikasyona yol açar?",
-      "answer": "Gastrik heterotopi (en sık) → Ülserasyon ve kanama. Pankreas heterotopisi de görülebilir.",
+      "answer": "[[Gastrik heterotopi]] (en sık) → Ülserasyon ve [[kanama]].",
       "difficulty": "Orta",
       "tags": ["GİS", "Meckel", "Heterotopi"],
       "ai_coding": "🤖 Kodlama: Meckel'de Mide dokusu = Mideden asit çıkar, bağırsak yanar."
@@ -213,7 +213,7 @@
     {
       "id": "path_b1A_027",
       "question": "İskemik kolitte en sık tutulan bölge neresidir ve neden?",
-      "answer": "Splenik fleksur (Griffiths noktası) ve rektosigmoid bileşke (Sudek noktası) — 'Watershed' (su bölümü) bölgeler, kollateral dolaşım en az olan yerler.",
+      "answer": "[[Splenik fleksur]] (Griffiths noktası) ve rektosigmoid bileşke (Sudek noktası) — '[[Watershed]]' bölgeleri.",
       "difficulty": "Zor",
       "tags": ["GİS", "İskemik Kolit", "Vasküler"],
       "ai_coding": "🤖 Kodlama: İskemik Kolit = 'Suya en uzak' noktalar (watershed) = Splenik fleksur."
@@ -221,7 +221,7 @@
     {
       "id": "path_b1A_028",
       "question": "Psödomembranöz kolit (C. difficile) tanısında altın standart yöntem ve histolojik görünümü nedir?",
-      "answer": "Tanı: Dışkıda C. difficile toksin A ve B (ELISA). Histoloji: Kript hasarı üzerinde 'vulkan patlaması' görünümünde fibrin+nötrofil+mukus psödomembranları.",
+      "answer": "Tanı: Dışkıda [[C. difficile toksin A ve B]] (ELISA). Histoloji: '[[vulkan patlaması]]' görünümünde psödomembranlar.",
       "difficulty": "Orta",
       "tags": ["GİS", "Psödomembranöz Kolit", "C. difficile"],
       "ai_coding": "🤖 Kodlama: PMK = 'Patlayan kript' görünümü (volkan efekti)."
@@ -229,7 +229,7 @@
     {
       "id": "path_b1A_029",
       "question": "Kolorektal kanserde Dukes evreleme sistemine göre evreler nelerdir?",
-      "answer": "A: Mukoza/submukoza sınırlı. B: Muskularis propria dışına geçmiş, lenf nodu (-). C: Lenf nodu (+). D: Uzak metastaz. (Güncel: TNM sistemi kullanılır).",
+      "answer": "[[A]]: Mukoza sınırlı. [[B]]: Muskularis propriayı geçmiş. [[C]]: [[Lenf nodu (+)]]. [[D]]: [[Uzak metastaz]].",
       "difficulty": "Orta",
       "tags": ["GİS", "Kolorektal Kanser", "Evreleme"],
       "ai_coding": "🤖 Kodlama: Dukes A-B-C-D = 'Adım adım dışarı çıkıyor'."
@@ -237,7 +237,7 @@
     {
       "id": "path_b1A_030",
       "question": "Gastrointestinal stromal tümörlerin (GIST) kaynağı ve en önemli moleküler belirteci nedir?",
-      "answer": "Cajal hücrelerinden (GİS'in pacemaker hücreleri) köken alır. Moleküler: KIT (CD117) mutasyonu (%85) veya PDGFRA mutasyonu. İmmunohistokimya: CD117 (+).",
+      "answer": "[[Cajal hücrelerinden]] (pacemaker) köken alır. Moleküler: [[KIT (CD117)]] mutasyonu. İHK: [[CD117 (+)]].",
       "difficulty": "Orta",
       "tags": ["GİS", "GIST", "KIT"],
       "ai_coding": "🤖 Kodlama: GIST = 'KIT + Cajal'. CD117 pozitif → İmatinib hedefi."
@@ -245,7 +245,7 @@
     {
       "id": "path_b1A_031",
       "question": "GIST'in malignite kriterleri nelerdir?",
-      "answer": "Mitoz sayısı (>5/50 HPF) ve tümör boyutu (>5 cm) kombinasyonu. Lokalizasyon da etkilidir (ince bağırsak > mide için risk).",
+      "answer": "[[Mitoz sayısı]] (>5/50 HPF) ve [[tümör boyutu]] (>5 cm) kombinasyonu.",
       "difficulty": "Zor",
       "tags": ["GİS", "GIST", "Malignite"],
       "ai_coding": "🤖 Kodlama: GIST malignite = 'Mitoz + Boyut = Risk'. İkisi büyükse kötü."
@@ -253,7 +253,7 @@
     {
       "id": "path_b1A_032",
       "question": "Karsinoid tümör (nöroendokrin tümör) en sık GİS'in hangi bölümünde görülür?",
-      "answer": "İnce bağırsak (ileum) ve appendiks. Appendiks karsinoidleri genellikle benign; ileum karsinoidleri metastaz yapabilir.",
+      "answer": "[[İnce bağırsak (ileum)]] ve [[appendiks]]. Appendiks karsinoidleri genellikle [[benign]].",
       "difficulty": "Orta",
       "tags": ["GİS", "Karsinoid", "NET"],
       "ai_coding": "🤖 Kodlama: Appendiks karsinoid = Benign. İleum karsinoid = Metastaz edebilir."
@@ -261,7 +261,7 @@
     {
       "id": "path_b1A_033",
       "question": "Karsinoid sendromu hangi durumlarda ortaya çıkar ve klasik triadı nedir?",
-      "answer": "Karaciğer metastazı olduğunda (serotonin direk sistemik dolaşıma). Triad: Flushing + Diyare + Bronkospazm. Kardiyak tutulum: Sağ kalp kapak hastalığı (triküspid/pulmoner).",
+      "answer": "[[Karaciğer metastazı]] olduğunda. Triad: [[Flushing]] + [[Diyare]] + [[Bronkospazm]].",
       "difficulty": "Orta",
       "tags": ["GİS", "Karsinoid Sendromu"],
       "ai_coding": "🤖 Kodlama: Karsinoid Sendromu = 'Flush-Diyare-Wheeze' + Sağ kalp."
@@ -269,7 +269,7 @@
     {
       "id": "path_b1A_034",
       "question": "Zollinger-Ellison sendromunda tümör nerede ve hangi sendromla birlikteliği önemlidir?",
-      "answer": "Gastrinoma: Duodenum (%70) veya pankreas (%25). MEN-1 ile birliktelik önemli (%25 olguda MEN-1). Recürren peptik ülser + Diyare.",
+      "answer": "[[Gastrinoma]]: Duodenum veya pankreas. [[MEN-1]] ile birliktelik önemli. Recürren [[peptik ülser]].",
       "difficulty": "Orta",
       "tags": ["GİS", "Zollinger-Ellison", "MEN1"],
       "ai_coding": "🤖 Kodlama: ZE = 'Gastrin fazla' → Ülser her yerde. MEN-1 ile düşün."
@@ -277,7 +277,7 @@
     {
       "id": "path_b1A_035",
       "question": "Whipple hastalığının patolojik temeli ve ilgili organizma nedir?",
-      "answer": "Tropheryma whipplei bakterisi → İnce bağırsak lamina propriasında PAS(+) makrofaj birikimi → Villöz distorsiyon + Malabsorpsiyon. Triad: Diyare + Artrit + Nörolojik.",
+      "answer": "[[Tropheryma whipplei]] bakterisi → Lamina propriada [[PAS(+) makrofaj]] birikimi.",
       "difficulty": "Zor",
       "tags": ["GİS", "Whipple", "İnce Bağırsak"],
       "ai_coding": "🤖 Kodlama: Whipple = 'PAS'lı makrofaj dolu bağırsak'. Tropheryma = Trofi (beslenme) engelleyen."
@@ -285,7 +285,7 @@
     {
       "id": "path_b1A_036",
       "question": "Özofagus skuamöz hücreli karsinomunda en önemli risk faktörleri nelerdir?",
-      "answer": "Alkol + Sigara (en önemli kombinasyon). Diğer: Akalazya, striktur, Barrett (adeno için), Plummer-Vinson, sıcak içecek, nitrozamin.",
+      "answer": "[[Alkol + Sigara]] (en önemli kombinasyon).",
       "difficulty": "Orta",
       "tags": ["GİS", "Özofagus", "Risk"],
       "ai_coding": "🤖 Kodlama: Skuamöz risk = 'Alkol+Sigara = AS' (en önemlisi)."
@@ -293,7 +293,7 @@
     {
       "id": "path_b1A_037",
       "question": "Plummer-Vinson sendromu nedir ve hangi kansere predispozisyon yaratır?",
-      "answer": "Demir eksikliği anemisi + Disfaji + Özofagustat/post-krikoid web. Atrofik glossit + Koilonişi. Predispozisyon: Özofagus ve farinks skuamöz hücreli karsinomu.",
+      "answer": "[[Demir eksikliği anemisi]] + [[Disfaji]] + [[Özofageal web]]. Predispozisyon: [[Skuamöz hücreli karsinom]].",
       "difficulty": "Orta",
       "tags": ["GİS", "Plummer-Vinson", "Özofagus"],
       "ai_coding": "🤖 Kodlama: Plummer-Vinson = 'Plak-Web+Anemi'. Kadınlarda → Özofagus kanseri."
@@ -301,7 +301,7 @@
     {
       "id": "path_b1A_038",
       "question": "İskemik enterit/kolitte 'parmak izleri' (thumbprinting) görünümü neden oluşur?",
-      "answer": "Submukozal ödem ve kanama → Baryumlu grafi/BT'de düzensiz, yuvarlak kabarıklıklar → Parmak izi benzeri görünüm.",
+      "answer": "[[Submukozal ödem]] ve [[kanama]] → Baryumlu grafide düzensiz kabarıklıklar.",
       "difficulty": "Orta",
       "tags": ["GİS", "İskemik Kolit", "Radyoloji"],
       "ai_coding": "🤖 Kodlama: Thumbprinting = Submukoza şişmesi = 'Parmakla bastırılmış' görünüm."
@@ -309,7 +309,7 @@
     {
       "id": "path_b1A_039",
       "question": "Anjiodisplazi (arteriovenöz malformasyon) en sık GİS'in hangi bölümünde görülür ve kime karakteristiktir?",
-      "answer": "Sağ kolon (cecum ve ascendan kolon) — Yaşlı bireyler (>60 yaş). Tekrarlayan gizli/açık alt GİS kanamasının en sık nedenidir yaşlılarda.",
+      "answer": "[[Sağ kolon]] (cecum/ascendan) — [[Yaşlı]] bireyler (>60 yaş).",
       "difficulty": "Orta",
       "tags": ["GİS", "Anjiodisplazi", "Kanama"],
       "ai_coding": "🤖 Kodlama: Anjiodisplazi = 'Yaşlı + Sağ kolon + Tekrarlayan kanama'."
@@ -317,7 +317,7 @@
     {
       "id": "path_b1A_040",
       "question": "Divertikülozis en sık GİS'in hangi segmentinde görülür ve hangi hastalıkla karışabilir?",
-      "answer": "Sigmoid kolon (en sık). Divertikülit: Sol alt kadran ağrısı + Ateş + Lökositoz → Sol taraf apandisit gibi klinik. Gerçek (konjenital) vs. Yanlış (akkiz/psödodivertikül): Kolon divertikülleri yanlış (sadece mukoza+submukoza herniasyonu).",
+      "answer": "[[Sigmoid kolon]]. Divertikülit: Sol alt kadran ağrısı → [[Sol taraf apandisit]].",
       "difficulty": "Orta",
       "tags": ["GİS", "Divertikül", "Kolon"],
       "ai_coding": "🤖 Kodlama: Divertikülozis = 'Sol alt karın' (sigmoid). Divertikülit = 'Sol apandisit'."
@@ -325,7 +325,7 @@
     {
       "id": "path_b1A_041",
       "question": "İnvajinasyon (intussusception) çocuklarda en sık hangi yaş grubunda ve hangi segment tutulumunda görülür?",
-      "answer": "6-18 aylık süt çocukları. En sık: İleokolik (terminal ileum kolonun içine girer). Currant jelly (Jöle görünümlü) dışkı tipiktir.",
+      "answer": "[[6-18 aylık]] süt çocukları. En sık: [[İleokolik]]. [[Currant jelly]] dışkı tipiktir.",
       "difficulty": "Orta",
       "tags": ["GİS", "İnvajinasyon", "Çocuk"],
       "ai_coding": "🤖 Kodlama: İnvajinasyon = 'İleum kolona girdi' + 'Kırmızı jöle dışkı'."
@@ -333,7 +333,7 @@
     {
       "id": "path_b1A_042",
       "question": "Volvolüs en sık hangi kolon segmentinde görülür ve hangi hastalarda predispozisyon vardır?",
-      "answer": "Sigmoid kolon (en sık yetişkin), cecum (2. sık). Predispozisyon: Uzun mezenter, Hirschsprung, yaşlılar, konstipasyon.",
+      "answer": "[[Sigmoid kolon]] (en sık yetişkin). Predispozisyon: Hirschsprung, yaşlılar.",
       "difficulty": "Orta",
       "tags": ["GİS", "Volvulus", "Kolon"],
       "ai_coding": "🤖 Kodlama: Volvulus = 'Volandı (döndü) sigmoid'."
@@ -341,7 +341,7 @@
     {
       "id": "path_b1A_043",
       "question": "Kolorektal kanserde serum belirteci olarak kullanılan, ancak taramada değil nüks takibinde kullanılan belirteç nedir?",
-      "answer": "CEA (Karsinoembriyonik antijen) — Sensitivite ve spesifitesi düşük, taramada kullanılmaz. Postoperatif nüks takibi ve prognoz için değerlidir.",
+      "answer": "[[CEA (Karsinoembriyonik antijen)]] — Nüks takibi için kullanılır; taramada [[kullanılmaz]].",
       "difficulty": "Kolay",
       "tags": ["GİS", "Kolorektal Kanser", "CEA"],
       "ai_coding": "🤖 Kodlama: CEA = 'Cerrahi-Sonrası-Takip'. Tarama için KULLANILMAZ."
@@ -349,7 +349,7 @@
     {
       "id": "path_b1A_044",
       "question": "Tubüler adenom ve villöz adenomun malignite potansiyeli nasıl karşılaştırılır?",
-      "answer": "Tubüler adenom: Düşük malignite potansiyeli (%5). Villöz adenom: Yüksek malignite potansiyeli (%40). Tubulovillöz: Orta. 'Villainy = Villöz kötü'.",
+      "answer": "Tubüler adenom: Düşük risk. Villöz adenom: [[Yüksek risk (%40)]]. 'Villainy = Villöz kötü'.",
       "difficulty": "Kolay",
       "tags": ["GİS", "Kolon", "Adenom"],
       "ai_coding": "🤖 Kodlama: Villöz = Villain (kötü adam) = Daha fazla kanser riski."
@@ -357,7 +357,7 @@
     {
       "id": "path_b1A_045",
       "question": "Peutz-Jeghers sendromunun patolojik özellikleri ve kanser riski nedir?",
-      "answer": "Otozomal dominant — STK11/LKB1 mutasyonu. Hamartomatöz polipler (GİS boyunca) + Perioral melanotik makülalar. Kanser riski: GİS kanserleri (özellikle kolon) + Meme, over, testis, pankreas.",
+      "answer": "[[Otozomal dominant]]. [[Hamartomatöz polipler]] + [[Perioral melanotik makülalar]].",
       "difficulty": "Zor",
       "tags": ["GİS", "Peutz-Jeghers", "Polip"],
       "ai_coding": "🤖 Kodlama: Peutz-Jeghers = 'Dudakta leke + Bağırsakta hamartom + STK11'."
@@ -365,7 +365,7 @@
     {
       "id": "path_b1A_046",
       "question": "Cowden sendromu hangi mutasyon ve hangi tümörlerle ilişkilidir?",
-      "answer": "PTEN mutasyonu (tümör supresör). GİS'te hamartomatöz polipler + Trikilemloma (deri) + Makrosefali. Kanser: Meme, tiroid, endometrium.",
+      "answer": "[[PTEN mutasyonu]]. GİS'te hamartomatöz polipler + [[Trikilemloma]] + Makrosefali.",
       "difficulty": "Zor",
       "tags": ["GİS", "Cowden", "PTEN"],
       "ai_coding": "🤖 Kodlama: Cowden = 'PTEN = PTENeş meme-tiroid-endometrium'."
@@ -373,7 +373,7 @@
     {
       "id": "path_b1A_047",
       "question": "Nektrizan enterokolit (NEC) hangi hasta grubunda görülür ve patolojik temeli nedir?",
-      "answer": "Prematüre yenidoğanlar (en önemli risk). İskemi + Bakteri invazyonu → Transmural koagülatif nekroz. En sık: Terminal ileum ve sağ kolon.",
+      "answer": "[[Prematüre yenidoğanlar]]. İskemi + Bakteri invazyonu → [[Transmural koagülatif nekroz]].",
       "difficulty": "Orta",
       "tags": ["GİS", "NEC", "Yenidoğan"],
       "ai_coding": "🤖 Kodlama: NEC = 'Prematüre + İskemi + Bakteri' → Nekroz."
@@ -381,7 +381,7 @@
     {
       "id": "path_b1A_048",
       "question": "Midede 'intestinal metaplazi' neden önemlidir?",
-      "answer": "Intestinal metaplazi → Atrofik gastrit → Dysplazi → Mide intestinal tip adenokarsinomu. H. pylori ve otoimmün gastrit zemininde gelişir. Kanser prekürsörü olarak kabul edilir.",
+      "answer": "Atrofik gastrit → Dysplazi → [[Mide intestinal tip adenokarsinomu]].",
       "difficulty": "Orta",
       "tags": ["GİS", "Mide", "İntestinal Metaplazi"],
       "ai_coding": "🤖 Kodlama: İntestinal Metaplazi = 'Mide bağırsak oldu' → İleri giderse kanser."
@@ -389,7 +389,7 @@
     {
       "id": "path_b1A_049",
       "question": "Tropikal sprue ile çölyak hastalığının ayırımı nasıl yapılır?",
-      "answer": "Tropikal sprue: Tropikal bölgede yaşama/seyahat + Antibiyotik tedavisine yanıt verir (Tetrasikline). Çölyak: Glutene duyarlı + Antitransglutaminaz antikor (+) + Antibiyotiğe yanıt vermez.",
+      "answer": "Tropikal sprue: Tropikal bölge hx + [[Antibiyotiğe yanıt]] verir. Çölyak: [[Glutene duyarlı]] + tTG (+).",
       "difficulty": "Orta",
       "tags": ["GİS", "Sprue", "Malabsorpsiyon"],
       "ai_coding": "🤖 Kodlama: Tropikal Sprue = 'Tropikal ülkeden geldi + Antibiyotiğe döndü'."
@@ -397,7 +397,7 @@
     {
       "id": "path_b1A_050",
       "question": "İnce bağırsak MALT lenfomasında en önemli etken nedir?",
-      "answer": "Campylobacter jejuni (immünoproliferatif ince bağırsak hastalığı/IPSID). Mide MALT'ta H. pylori, ince bağırsak MALT'ta Campylobacter.",
+      "answer": "[[Campylobacter jejuni]] (IPSID).",
       "difficulty": "Zor",
       "tags": ["GİS", "İnce Bağırsak", "MALT", "Lenfoma"],
       "ai_coding": "🤖 Kodlama: İnce bağırsak MALT = Campylobacter (Mide MALT'ın H. pylori'si gibi)."

@@ -11,6 +11,9 @@ import '../services/ai_service.dart';
 import '../models/sm2_model.dart';
 import '../widgets/difficulty_badge_widget.dart';
 import '../models/subject_registry.dart';
+import '../widgets/study_focus_timer.dart';
+import '../utils/error_handler.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 enum FlashcardMode { all, dueOnly, pocketOnly, newOnly, learnedOnly, failedOnly, criticalOnly }
 
@@ -44,6 +47,8 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   List<Flashcard> _allCards = [];
   List<Flashcard> _cards = [];
   bool _loading = true;
+  bool _loadError = false;
+  bool _isFinished = false;
   int _currentIndex = 0;
   int _knownCount = 0;
   int _unknownCount = 0;
@@ -70,29 +75,50 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   }
 
   Future<void> _loadCards() async {
-    setState(() => _loading = true);
-    List<Flashcard> cards;
-    if (widget.topicFilter != null) {
-      cards = widget.topicFilter!.flashcards;
-    } else if (widget.subjectIds != null && widget.subjectIds!.isNotEmpty) {
-      // Çoklu branş: her branşın kartlarını birleştir
-      final futures = widget.subjectIds!
-          .map((id) => _dataService.loadFlashcards(subjectId: id));
-      final results = await Future.wait(futures);
-      cards = results.expand((c) => c).toList();
-    } else {
-      cards = await _dataService.loadFlashcards(subjectId: widget.subjectId);
+    setState(() {
+      _loading = true;
+      _loadError = false;
+    });
+    try {
+      List<Flashcard> cards;
+      if (widget.topicFilter != null) {
+        cards = widget.topicFilter!.flashcards;
+      } else if (widget.subjectIds != null && widget.subjectIds!.isNotEmpty) {
+        final futures = widget.subjectIds!
+            .map((id) => _dataService.loadFlashcards(subjectId: id));
+        final results = await Future.wait(futures);
+        cards = results.expand((c) => c).toList();
+      } else {
+        cards = await _dataService.loadFlashcards(subjectId: widget.subjectId);
+      }
+      _allCards = cards;
+      await _applyMode(cards);
+
+      if (_dataService.lastError != null && mounted) {
+        ErrorHandler.showSnackbar(
+          context,
+          message: 'Bazi kart dosyalari yuklenemedi. Mevcut kartlarla devam ediliyor.',
+          isError: false,
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _loading = false;
+          _loadError = true;
+        });
+      }
     }
-    _allCards = cards;
-    await _applyMode(cards);
   }
 
   void _showAnswerToast(SM2CardData updated) {
     final isBildim = updated.lastQuality == 2;
+    final days = updated.interval;
     final emoji = isBildim ? '✅' : '❌';
+    final dayLabel = days == 1 ? 'Yarın' : '$days gün sonra';
     final message = isBildim
-        ? 'Bildim! 3 gün sonra tekrar sorulacak'
-        : 'Bilemedim! 1 gün sonra tekrar sorulacak';
+        ? 'Bildim! $dayLabel tekrar sorulacak'
+        : 'Bilemedim! $dayLabel tekrar sorulacak';
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
@@ -185,6 +211,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
         _currentIndex = 0;
         _knownCount = 0;
         _unknownCount = 0;
+        _isFinished = false;
         _swipeHistory.clear();
         _loading = false;
       });
@@ -219,6 +246,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       appBar: AppBar(
         title: Text(_title, style: const TextStyle(fontSize: 16)),
         actions: [
+          const StudyFocusTimer(),
           _ModeToggle(
             mode: _mode,
             onChanged: (m) async {
@@ -232,17 +260,26 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       body: _loading
           ? const Center(
               child: CircularProgressIndicator(color: AppTheme.cyan))
-          : _cards.isEmpty
-              ? _buildEmptyState()
-              : Column(
-                  children: [
-                    _buildScoreboard(),
-                    _buildProgressBar(),
-                    Expanded(child: _buildSwiper()),
-                    _buildGestureHints(),
-                    const SizedBox(height: 24),
-                  ],
-                ),
+          : _loadError
+              ? ErrorHandler.buildFallbackScreen(
+                  isDark: true,
+                  title: 'Kartlar Yuklenemedi',
+                  message: 'Flashcard verileri okunurken hata olustu.',
+                  onRetry: _loadCards,
+                )
+              : _isFinished
+                  ? _buildCompletionSummary()
+                  : _cards.isEmpty
+                      ? _buildEmptyState()
+                      : Column(
+                      children: [
+                        _buildScoreboard(),
+                        _buildProgressBar(),
+                        Expanded(child: _buildSwiper()),
+                        _buildGestureHints(),
+                        const SizedBox(height: 24),
+                      ],
+                    ),
     );
   }
 
@@ -292,6 +329,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       child: CardSwiper(
         controller: _swiperController,
         cardsCount: _cards.length,
+        isLoop: false,
         onSwipe: (prev, curr, dir) async {
           // Dikey yön önceliği: sürükleme sırasında Y bileşeni anlamlıysa
           // kütüphanenin "sağ/sol" tespitini yukarı/aşağı olarak düzelt.
@@ -363,7 +401,9 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           }
           return true;
         },
-        onEnd: () => setState(() {}),
+        onEnd: () {
+          if (mounted) setState(() => _isFinished = true);
+        },
         numberOfCardsDisplayed: _cards.length >= 3 ? 3 : _cards.length,
         backCardOffset: const Offset(0, 22),
         padding: const EdgeInsets.symmetric(vertical: 12),
@@ -402,13 +442,13 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(24),
                         border: Border.all(
-                          color: glowColor.withOpacity((intensity * 0.9).clamp(0.0, 1.0)),
+                          color: glowColor.withValues(alpha: (intensity * 0.9).clamp(0.0, 1.0)),
                           width: 2.5,
                         ),
-                        color: glowColor.withOpacity((intensity * 0.13).clamp(0.0, 1.0)),
+                        color: glowColor.withValues(alpha: (intensity * 0.13).clamp(0.0, 1.0)),
                         boxShadow: [
                           BoxShadow(
-                            color: glowColor.withOpacity((intensity * 0.40).clamp(0.0, 1.0)),
+                            color: glowColor.withValues(alpha: (intensity * 0.40).clamp(0.0, 1.0)),
                             blurRadius: 32,
                             spreadRadius: 5,
                           ),
@@ -429,11 +469,11 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 22, vertical: 9),
                       decoration: BoxDecoration(
-                        color: glowColor.withOpacity((intensity * 0.92).clamp(0.0, 1.0)),
+                        color: glowColor.withValues(alpha: (intensity * 0.92).clamp(0.0, 1.0)),
                         borderRadius: BorderRadius.circular(30),
                         boxShadow: [
                           BoxShadow(
-                            color: glowColor.withOpacity(0.35),
+                            color: glowColor.withValues(alpha: 0.35),
                             blurRadius: 16,
                             spreadRadius: 2,
                           ),
@@ -458,6 +498,107 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     );
   }
 
+  Widget _buildCompletionSummary() {
+    final successRate = _cards.isEmpty ? 0 : (_knownCount / _cards.length * 100).toInt();
+    
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(Icons.stars_rounded, color: AppTheme.neonGold, size: 80)
+                .animate()
+                .scale(duration: 600.ms, curve: Curves.elasticOut),
+            const SizedBox(height: 24),
+            Text(
+              'Oturum Tamamlandı!',
+              style: GoogleFonts.inter(
+                color: Colors.white,
+                fontSize: 24,
+                fontWeight: FontWeight.w800,
+              ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Bugünlük bu kadar yeterli. Harika gidiyorsun!',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.inter(
+                color: AppTheme.textSecondary,
+                fontSize: 14,
+              ),
+            ),
+            const SizedBox(height: 40),
+            
+            // Stats Row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                _buildStatItem('Bildiğim', _knownCount.toString(), AppTheme.success),
+                const SizedBox(width: 40),
+                _buildStatItem('Başarı', '%$successRate', AppTheme.cyan),
+              ],
+            ),
+            
+            const SizedBox(height: 60),
+            
+            // Action Buttons
+            SizedBox(
+              width: double.infinity,
+              height: 56,
+              child: ElevatedButton(
+                onPressed: () => Navigator.of(context).pop(),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppTheme.cyan,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                  elevation: 8,
+                  shadowColor: AppTheme.cyan.withValues(alpha: 0.4),
+                ),
+                child: const Text('ANA SAYFAYA DÖN', style: TextStyle(fontWeight: FontWeight.w800, letterSpacing: 0.5)),
+              ),
+            ),
+            
+            if (_unknownCount > 0) ...[
+              const SizedBox(height: 16),
+              TextButton(
+                onPressed: () => _applyMode(_allCards),
+                child: Text(
+                  'Bilemediklerimi Tekrarla ($_unknownCount)',
+                  style: const TextStyle(color: AppTheme.error, fontWeight: FontWeight.w700),
+                ),
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildStatItem(String label, String value, Color color) {
+    return Column(
+      children: [
+        Text(
+          value,
+          style: GoogleFonts.inter(
+            color: color,
+            fontSize: 32,
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+        Text(
+          label.toUpperCase(),
+          style: GoogleFonts.inter(
+            color: AppTheme.textSecondary,
+            fontSize: 10,
+            fontWeight: FontWeight.w800,
+            letterSpacing: 1,
+          ),
+        ),
+      ],
+    );
+  }
+
   /// Buton yok — sadece silik jest ipuçları
   Widget _buildGestureHints() {
     return Padding(
@@ -468,19 +609,19 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           _HintChip(
               icon: Icons.arrow_back_rounded,
               label: 'Geri Al',
-              color: AppTheme.textMuted.withOpacity(0.40)),
+              color: AppTheme.textMuted.withValues(alpha: 0.40)),
           _HintChip(
               icon: Icons.arrow_downward_rounded,
               label: 'Geçici',
-              color: AppTheme.error.withOpacity(0.30)),
+              color: AppTheme.error.withValues(alpha: 0.30)),
           _HintChip(
               icon: Icons.arrow_upward_rounded,
               label: 'Orta',
-              color: AppTheme.success.withOpacity(0.30)),
+              color: AppTheme.success.withValues(alpha: 0.30)),
           _HintChip(
               icon: Icons.arrow_forward_rounded,
               label: 'Menü',
-              color: AppTheme.textMuted.withOpacity(0.40)),
+              color: AppTheme.textMuted.withValues(alpha: 0.40)),
         ],
       ),
     );
@@ -630,10 +771,12 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
 
   Future<void> _loadBookmarkState() async {
     final data = await widget.srService.getCardData(widget.card.id);
-    if (mounted) setState(() {
-      _isBookmarked = data.isBookmarked;
-      _lastQuality = data.lastQuality;
-    });
+    if (mounted) {
+      setState(() {
+        _isBookmarked = data.isBookmarked;
+        _lastQuality = data.lastQuality;
+      });
+    }
   }
 
   Future<void> _toggleBookmark() async {
@@ -685,10 +828,10 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
         color: AppTheme.cardBackground,
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
-            color: AppTheme.cyan.withOpacity(0.30), width: 1.5),
+            color: AppTheme.cyan.withValues(alpha: 0.30), width: 1.5),
         boxShadow: [
           BoxShadow(
-              color: AppTheme.cyan.withOpacity(0.08),
+              color: AppTheme.cyan.withValues(alpha: 0.08),
               blurRadius: 24,
               offset: const Offset(0, 8)),
         ],
@@ -721,15 +864,31 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
             ],
           ),
           const Spacer(),
-          const Text('SORU',
-              style: TextStyle(
-                  color: AppTheme.cyan,
-                  fontSize: 10,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 2)),
+          Builder(builder: (_) {
+            // Soru metninden konu parse et: "Soru:(Konu) ..."
+            final topicMatch = RegExp(r'Soru:\(([^)]+)\)').firstMatch(widget.card.question);
+            final topic = topicMatch?.group(1) ?? '';
+            return Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+              decoration: BoxDecoration(
+                color: AppTheme.cyanGlow,
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: Text(
+                topic.isNotEmpty
+                    ? 'SORU : ( ${topic.toUpperCase()} )'
+                    : 'SORU',
+                style: const TextStyle(
+                    color: AppTheme.cyan,
+                    fontSize: 10,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 0.8),
+              ),
+            );
+          }),
           const SizedBox(height: 10),
           _ClozeText(
-            text: widget.card.question,
+            text: widget.card.question.replaceFirst(RegExp(r'Soru:\([^)]+\)\s*'), ''),
             shouldBlur: false, // Soruda genelde buzlama istemeyiz ama altyapı hazır
             revealedIndices: _revealedClozes,
             onReveal: (idx) => setState(() => _revealedClozes.add(idx)),
@@ -756,10 +915,10 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
         color: AppTheme.surfaceVariant,
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
-            color: AppTheme.success.withOpacity(0.35), width: 1.5),
+            color: AppTheme.success.withValues(alpha: 0.35), width: 1.5),
         boxShadow: [
           BoxShadow(
-              color: AppTheme.success.withOpacity(0.08),
+              color: AppTheme.success.withValues(alpha: 0.08),
               blurRadius: 24,
               offset: const Offset(0, 8)),
         ],
@@ -774,9 +933,9 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
                 decoration: BoxDecoration(
-                  color: AppTheme.success.withOpacity(0.12),
+                  color: AppTheme.success.withValues(alpha: 0.12),
                   borderRadius: BorderRadius.circular(20),
-                  border: Border.all(color: AppTheme.success.withOpacity(0.40)),
+                  border: Border.all(color: AppTheme.success.withValues(alpha: 0.40)),
                 ),
                 child: const Text('CEVAP',
                     style: TextStyle(
@@ -1230,12 +1389,12 @@ class _ClozeText extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
             decoration: BoxDecoration(
               color: shouldBlur && !isRevealed
-                  ? AppTheme.textMuted.withOpacity(0.15)
+                  ? AppTheme.textMuted.withValues(alpha: 0.15)
                   : Colors.transparent,
               borderRadius: BorderRadius.circular(6),
               border: Border.all(
                 color: shouldBlur && !isRevealed
-                    ? AppTheme.textMuted.withOpacity(0.30)
+                    ? AppTheme.textMuted.withValues(alpha: 0.30)
                     : Colors.transparent,
                 width: 0.5,
               ),
@@ -1248,7 +1407,7 @@ class _ClozeText extends StatelessWidget {
                   if (shouldBlur && !isRevealed)
                     Positioned.fill(
                       child: BackdropFilter(
-                        filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+                        filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
                         child: Container(color: Colors.transparent),
                       ),
                     ),

@@ -11,11 +11,16 @@ class StudyProgress {
   final int longestStreak; // En uzun streak
   final String lastStudyDate; // Son çalışma tarihi (YYYY-MM-DD)
   final Map<String, int> weeklyStats; // Haftalık istatistikler (tarih -> kart sayısı)
+  final List<String> selectedSubjectIds; // Seçili branş ID'leri
 
   // Hedef ayarları
   final double weekdayGoalHours;  // Hafta içi günlük saat hedefi
   final double weekendGoalHours;  // Hafta sonu günlük saat hedefi
   final String targetTusDate;     // Hedef TUS sınav tarihi (YYYY-MM-DD)
+  
+  // Puan bazlı hedefleme
+  final double baseScore;
+  final double targetScore;
 
   const StudyProgress({
     this.totalFlashcardsStudied = 0,
@@ -31,6 +36,9 @@ class StudyProgress {
     this.weekdayGoalHours = 2.0,
     this.weekendGoalHours = 4.0,
     this.targetTusDate = '2026-06-28',
+    this.selectedSubjectIds = const [],
+    this.baseScore = 45.0,
+    this.targetScore = 65.0,
   });
 
   double get accuracy => totalCasesAttempted == 0
@@ -53,10 +61,37 @@ class StudyProgress {
   int get daysToExam {
     try {
       final target = DateTime.parse(targetTusDate);
-      return target.difference(DateTime.now()).inDays.clamp(0, 9999);
+      final diff = target.difference(DateTime.now()).inDays;
+      return diff.clamp(1, 9999); // En az 1 gün kalsın ki bölme hatası olmasın
     } catch (_) {
-      return 0;
+      return 1;
     }
+  }
+
+  /// Puan hedefine göre önerilen günlük soru sayısı
+  /// Puan arttıkça bir puan almanın zorluğu (çalışma yükü) logaritmik/üstel artar.
+  int get recommendedDailyGoal {
+    final pointsToGain = (targetScore - baseScore).clamp(0.0, 100.0);
+    final days = daysToExam;
+    if (days <= 0) return 100;
+    
+    // Ortalama puan (hedeflenen seviye)
+    final avgScore = (baseScore + targetScore) / 2;
+    
+    // Zorluk katsayısı: 40 puanda 1.0x, 70 puanda ~2.0x, 80 puanda ~3.0x maliyet
+    // Puan arttıkça her bir puanı kazanmak için gereken soru sayısı artar.
+    final difficultyMultiplier = 1.0 + ((avgScore - 40).clamp(0, 50) * (avgScore - 40).clamp(0, 50) / 800);
+    
+    final totalItemsNeeded = pointsToGain * 1000 * difficultyMultiplier;
+    return (totalItemsNeeded / days).ceil().clamp(20, 500);
+  }
+
+  /// Puan hedefine göre "hırs" seviyesi
+  String get scoreIntensity {
+    if (targetScore >= 75) return 'Efsane'; // Derece hedefi
+    if (targetScore >= 65) return 'Uzman';  // İyi bir branş hedefi
+    if (targetScore >= 55) return 'Gelişmiş'; // Baraj üstü sağlam hedef
+    return 'Standart';
   }
 
   StudyProgress copyWith({
@@ -73,6 +108,9 @@ class StudyProgress {
     double? weekdayGoalHours,
     double? weekendGoalHours,
     String? targetTusDate,
+    List<String>? selectedSubjectIds,
+    double? baseScore,
+    double? targetScore,
   }) {
     return StudyProgress(
       totalFlashcardsStudied:
@@ -89,6 +127,9 @@ class StudyProgress {
       weekdayGoalHours: weekdayGoalHours ?? this.weekdayGoalHours,
       weekendGoalHours: weekendGoalHours ?? this.weekendGoalHours,
       targetTusDate: targetTusDate ?? this.targetTusDate,
+      selectedSubjectIds: selectedSubjectIds ?? this.selectedSubjectIds,
+      baseScore: baseScore ?? this.baseScore,
+      targetScore: targetScore ?? this.targetScore,
     );
   }
 }

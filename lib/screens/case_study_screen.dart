@@ -5,7 +5,12 @@ import '../services/data_service.dart';
 import '../services/progress_service.dart';
 import '../services/ai_service.dart';
 import '../services/spaced_repetition_service.dart';
+import '../models/sm2_model.dart';
 import '../models/subject_registry.dart';
+import '../widgets/study_focus_timer.dart';
+import '../utils/error_handler.dart';
+
+enum CaseStudyMode { all, dueOnly, pocketOnly, newOnly, learnedOnly, failedOnly }
 
 class CaseStudyScreen extends StatefulWidget {
   /// Topic düzeyinde filtre.
@@ -14,10 +19,27 @@ class CaseStudyScreen extends StatefulWidget {
   /// Branş düzeyinde filtre.
   final String? subjectId;
 
+  /// Çoklu branş filtresi (Günlük Hedef/Karma için)
+  final List<String>? subjectIds;
+
+  /// Başlangıç modu
+  final CaseStudyMode initialMode;
+
+  /// Günlük hedef (yeni sorular için sınır)
+  final int? dailyGoal;
+
   /// Önizleme modu — true ise ilerleme ve SRS kaydedilmez.
   final bool isPreview;
 
-  const CaseStudyScreen({super.key, this.topicFilter, this.subjectId, this.isPreview = false});
+  const CaseStudyScreen({
+    super.key,
+    this.topicFilter,
+    this.subjectId,
+    this.subjectIds,
+    this.initialMode = CaseStudyMode.all,
+    this.dailyGoal,
+    this.isPreview = false,
+  });
 
   @override
   State<CaseStudyScreen> createState() => _CaseStudyScreenState();
@@ -29,12 +51,16 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
   final _aiService = AIService();
   final _srService = SpacedRepetitionService();
 
+  List<ClinicalCase> _allCases = [];
   List<ClinicalCase> _cases = [];
   bool _loading = true;
+  bool _loadError = false;
   int _currentIndex = 0;
   String? _selectedAnswer;
   bool _answered = false;
   int _correctCount = 0;
+  bool _isBookmarked = false;
+  late CaseStudyMode _mode;
 
   // AI durumu
   bool _aiLoading = false;
@@ -43,6 +69,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
   @override
   void initState() {
     super.initState();
+    _mode = widget.initialMode;
     _loadCases();
   }
 
@@ -50,19 +77,121 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
       SubjectRegistry.findById(id)?.name ?? id;
 
   Future<void> _loadCases() async {
-    List<ClinicalCase> cases;
-    if (widget.topicFilter != null) {
-      cases = widget.topicFilter!.clinicalCases;
-    } else {
-      cases = await _dataService.loadCases(
-          subjectId: widget.subjectId);
+    setState(() {
+      _loading = true;
+      _loadError = false;
+    });
+    try {
+      List<ClinicalCase> cases;
+      if (widget.topicFilter != null) {
+        cases = widget.topicFilter!.clinicalCases;
+      } else if (widget.subjectIds != null && widget.subjectIds!.isNotEmpty) {
+        final futures = widget.subjectIds!
+            .map((id) => _dataService.loadCases(subjectId: id));
+        final results = await Future.wait(futures);
+        cases = results.expand((c) => c).toList();
+      } else {
+        cases = await _dataService.loadCases(subjectId: widget.subjectId);
+      }
+      _allCases = cases;
+      await _applyMode(cases);
+
+      // DataService'de hata varsa kullanıcıya bildir (kısmi yükleme)
+      if (_dataService.lastError != null && mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Bazi veriler yuklenemedi. Mevcut verilerle devam ediliyor.'),
+            backgroundColor: Colors.orange,
+            behavior: SnackBarBehavior.floating,
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            margin: const EdgeInsets.all(16),
+          ),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _loading = false;
+          _loadError = true;
+        });
+      }
     }
+  }
+
+  Future<void> _applyMode(List<ClinicalCase> source) async {
+    List<ClinicalCase> result = [];
+    final allMap = await _srService.getAllData();
+
+    if (_mode == CaseStudyMode.learnedOnly) {
+      result = source.where((cc) {
+        final data = allMap[cc.id];
+        return data != null && data.lastQuality == 2;
+      }).toList();
+    } else if (_mode == CaseStudyMode.failedOnly) {
+      result = source.where((cc) {
+        final data = allMap[cc.id];
+        return data != null && data.lastQuality == 1;
+      }).toList();
+    } else if (_mode == CaseStudyMode.pocketOnly) {
+      result = source.where((cc) {
+        final data = allMap[cc.id];
+        return data != null && data.isBookmarked;
+      }).toList();
+    } else if (_mode == CaseStudyMode.newOnly) {
+      result = source.where((cc) => !allMap.containsKey(cc.id)).toList();
+      result.shuffle();
+      if (widget.dailyGoal != null && widget.dailyGoal! > 0 && result.length > widget.dailyGoal!) {
+        result = result.take(widget.dailyGoal!).toList();
+      }
+    } else if (_mode == CaseStudyMode.dueOnly) {
+      final dueFailed  = <ClinicalCase>[];
+      final newCases   = <ClinicalCase>[];
+      final dueLearned = <ClinicalCase>[];
+
+      for (final cc in source) {
+        final data = allMap[cc.id];
+        if (data == null) {
+          newCases.add(cc);
+        } else if (data.lastQuality == 1 && data.isDue) {
+          dueFailed.add(cc);
+        } else if (data.lastQuality == 2 && data.isDue) {
+          dueLearned.add(cc);
+        }
+      }
+      newCases.shuffle();
+      if (widget.dailyGoal != null && widget.dailyGoal! > 0 && newCases.length > widget.dailyGoal!) {
+        newCases.removeRange(widget.dailyGoal!, newCases.length);
+      }
+      result = [...dueFailed, ...newCases, ...dueLearned];
+      if (result.isEmpty) result = source..shuffle();
+    } else {
+      result = source..shuffle();
+    }
+
     if (mounted) {
       setState(() {
-        _cases = cases..shuffle();
+        _cases = result;
+        _currentIndex = 0;
         _loading = false;
       });
+      _loadBookmarkState();
     }
+  }
+
+  Future<void> _loadBookmarkState() async {
+    if (_cases.isEmpty) return;
+    final data = await _srService.getCardData(_currentCase.id);
+    if (mounted) setState(() => _isBookmarked = data.isBookmarked);
+  }
+
+  Future<void> _toggleBookmark() async {
+    if (widget.isPreview) {
+      // Preview modda sadece UI'da göster, veritabanına kaydetme
+      setState(() => _isBookmarked = !_isBookmarked);
+      return;
+    }
+    final updated = await _srService.toggleBookmark(_currentCase.id);
+    if (mounted) setState(() => _isBookmarked = updated.isBookmarked);
   }
 
   ClinicalCase get _currentCase => _cases[_currentIndex];
@@ -82,11 +211,14 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
           caseId: _currentCase.id,
           correct: answer == _currentCase.correctAnswer);
 
-      // SRS entegrasyonu: doğru → quality 4, yanlış → quality 1
+      // SRS entegrasyonu: doğru → quality 2 (Bildim), yanlış → quality 1 (Bilemedim)
       final caseId = _currentCase.id;
       if (caseId.isNotEmpty) {
-        final quality = answer == _currentCase.correctAnswer ? 4 : 1;
-        await _srService.recordAnswer(caseId, quality);
+        final quality = answer == _currentCase.correctAnswer ? 2 : 1;
+        final updated = await _srService.recordAnswer(caseId, quality);
+        if (mounted) {
+          _showReviewFeedback(updated);
+        }
       }
     }
   }
@@ -118,6 +250,43 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
       _aiExplanation = null;
       _aiLoading = false;
     });
+    _loadBookmarkState();
+  }
+
+  void _showReviewFeedback(SM2CardData updated) {
+    final days = updated.interval;
+    final label = days == 1 ? 'Yarın tekrar' : '$days gün sonra tekrar';
+    final isCorrect = updated.lastQuality == 2;
+    ScaffoldMessenger.of(context).clearSnackBars();
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Row(
+          children: [
+            Icon(
+              isCorrect ? Icons.schedule_rounded : Icons.replay_rounded,
+              color: Colors.white,
+              size: 18,
+            ),
+            const SizedBox(width: 10),
+            Text(
+              label,
+              style: const TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
+                fontSize: 14,
+              ),
+            ),
+          ],
+        ),
+        backgroundColor: isCorrect
+            ? AppTheme.success.withValues(alpha: 0.85)
+            : AppTheme.warning.withValues(alpha: 0.85),
+        behavior: SnackBarBehavior.floating,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        duration: const Duration(seconds: 2),
+        margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      ),
+    );
   }
 
   void _showCompletionDialog() {
@@ -174,21 +343,49 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
     );
   }
 
+  String get _title {
+    if (_mode == CaseStudyMode.pocketOnly) return '⭐ Ezberim';
+    if (_mode == CaseStudyMode.failedOnly) return '❌ Bilemediklerim';
+    if (_mode == CaseStudyMode.learnedOnly) return '✅ Bildiklerim';
+    if (_mode == CaseStudyMode.dueOnly) return '🚀 Hazırsan Başla';
+    
+    if (widget.topicFilter != null) return widget.topicFilter!.subTopic;
+    if (widget.subjectId != null) return '${_subjectName(widget.subjectId!)} Vakaları';
+    return 'Klinik Vakalar';
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppTheme.background,
       appBar: AppBar(
-        title: Text(
-          widget.topicFilter != null
-              ? widget.topicFilter!.subTopic
-              : widget.subjectId != null
-                  ? '${_subjectName(widget.subjectId!)} Vakaları'
-                  : 'Klinik Vakalar',
-          style: const TextStyle(fontSize: 16),
-        ),
+        title: Text(_title, style: const TextStyle(fontSize: 16)),
         actions: [
-          if (!_loading && _cases.isNotEmpty)
+          const StudyFocusTimer(),
+          if (!_loading && _cases.isNotEmpty) ...[
+            _CaseModeToggle(
+              mode: _mode,
+              onChanged: (m) async {
+                setState(() => _mode = m);
+                await _applyMode(_allCases);
+              },
+            ),
+            IconButton(
+              onPressed: _toggleBookmark,
+              icon: AnimatedSwitcher(
+                duration: const Duration(milliseconds: 250),
+                transitionBuilder: (child, animation) => ScaleTransition(
+                  scale: animation,
+                  child: child,
+                ),
+                child: Icon(
+                  _isBookmarked ? Icons.bookmark_added_rounded : Icons.bookmark_add_outlined,
+                  key: ValueKey(_isBookmarked),
+                  color: _isBookmarked ? AppTheme.cyan : AppTheme.textSecondary,
+                ),
+              ),
+              tooltip: _isBookmarked ? 'Favorilerden Çıkar' : 'Favorilere Ekle',
+            ),
             Center(
               child: Padding(
                 padding: const EdgeInsets.only(right: 16),
@@ -201,14 +398,22 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
                 ),
               ),
             ),
+          ],
         ],
       ),
       body: _loading
           ? const Center(
               child: CircularProgressIndicator(color: AppTheme.cyan))
-          : _cases.isEmpty
-              ? _buildEmptyState()
-              : _buildCaseContent(),
+          : _loadError
+              ? ErrorHandler.buildFallbackScreen(
+                  isDark: true,
+                  title: 'Sorular Yuklenemedi',
+                  message: 'Veri dosyalari okunurken hata olustu. Lutfen uygulamayi yeniden baslatmayi deneyin.',
+                  onRetry: _loadCases,
+                )
+              : _cases.isEmpty
+                  ? _buildEmptyState()
+                  : _buildCaseContent(),
     );
   }
 
@@ -256,7 +461,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
         color: AppTheme.cardBackground,
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-            color: AppTheme.cyan.withOpacity(0.2), width: 1),
+            color: AppTheme.cyan.withValues(alpha: 0.2), width: 1),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -268,24 +473,30 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
               color: AppTheme.cyanGlow,
               borderRadius: BorderRadius.circular(20),
             ),
-            child: const Row(
+            child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(Icons.person_rounded,
+                const Icon(Icons.school_rounded,
                     color: AppTheme.cyan, size: 13),
-                SizedBox(width: 6),
-                Text('HASTA VAKASI',
-                    style: TextStyle(
-                        color: AppTheme.cyan,
-                        fontSize: 10,
-                        fontWeight: FontWeight.w700,
-                        letterSpacing: 1)),
+                const SizedBox(width: 6),
+                Text(
+                  _currentCase.topic.isNotEmpty
+                      ? 'SORU : ( ${_currentCase.topic.toUpperCase()} )'
+                      : 'SORU',
+                  style: const TextStyle(
+                      color: AppTheme.cyan,
+                      fontSize: 10,
+                      fontWeight: FontWeight.w700,
+                      letterSpacing: 0.8),
+                ),
               ],
             ),
           ),
           const SizedBox(height: 16),
           Text(
-            _currentCase.caseText,
+            _currentCase.cleanText.isNotEmpty
+                ? _currentCase.cleanText
+                : _currentCase.caseText,
             style: const TextStyle(
               color: AppTheme.textPrimary,
               fontSize: 15,
@@ -310,12 +521,12 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
           if (option == _currentCase.correctAnswer) {
             borderColor = AppTheme.success;
             textColor = AppTheme.success;
-            bgColor = AppTheme.success.withOpacity(0.08);
+            bgColor = AppTheme.success.withValues(alpha: 0.08);
             trailingIcon = Icons.check_circle_rounded;
           } else if (option == _selectedAnswer) {
             borderColor = AppTheme.error;
             textColor = AppTheme.error;
-            bgColor = AppTheme.error.withOpacity(0.08);
+            bgColor = AppTheme.error.withValues(alpha: 0.08);
             trailingIcon = Icons.cancel_rounded;
           }
         } else if (option == _selectedAnswer) {
@@ -360,13 +571,13 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: BoxDecoration(
         color: _isCorrect
-            ? AppTheme.success.withOpacity(0.12)
-            : AppTheme.error.withOpacity(0.12),
+            ? AppTheme.success.withValues(alpha: 0.12)
+            : AppTheme.error.withValues(alpha: 0.12),
         borderRadius: BorderRadius.circular(14),
         border: Border.all(
           color: _isCorrect
-              ? AppTheme.success.withOpacity(0.4)
-              : AppTheme.error.withOpacity(0.4),
+              ? AppTheme.success.withValues(alpha: 0.4)
+              : AppTheme.error.withValues(alpha: 0.4),
         ),
       ),
       child: Row(
@@ -390,6 +601,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
             Expanded(
               child: Text(
                 'Doğru: ${_currentCase.correctAnswer}',
+                maxLines: 1,
                 style: const TextStyle(
                     color: AppTheme.success,
                     fontWeight: FontWeight.w600,
@@ -454,22 +666,99 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
   }
 
   Widget _buildEmptyState() {
+    final isDue = _mode == CaseStudyMode.dueOnly;
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Icon(Icons.assignment_outlined,
-              color: AppTheme.textMuted, size: 64),
+          const Icon(Icons.check_circle_outline_rounded,
+              color: AppTheme.success, size: 64),
           const SizedBox(height: 16),
-          Text('Henüz vaka bulunmuyor',
+          Text(isDue ? 'Bugünlük hepsi tamam!' : 'Henüz vaka bulunmuyor',
               style: Theme.of(context).textTheme.titleLarge),
+          if (isDue) ...[
+            const SizedBox(height: 8),
+            const Text('Tüm vakaları tekrar gözden geçirebilirsin.',
+                style: TextStyle(color: AppTheme.textSecondary)),
+            const SizedBox(height: 20),
+            OutlinedButton(
+              onPressed: () {
+                setState(() => _mode = CaseStudyMode.all);
+                _applyMode(_allCases);
+              },
+              child: const Text('Tümünü Göster'),
+            ),
+          ]
         ],
       ),
     );
   }
 }
 
-// ── AI Açıklama bileşenleri ───────────────────────────────────────────────────
+// ── CaseModeToggle ──────────────────────────────────────────────────────────
+
+class _CaseModeToggle extends StatelessWidget {
+  final CaseStudyMode mode;
+  final ValueChanged<CaseStudyMode> onChanged;
+
+  const _CaseModeToggle({required this.mode, required this.onChanged});
+
+  @override
+  Widget build(BuildContext context) {
+    return PopupMenuButton<CaseStudyMode>(
+      initialValue: mode,
+      icon: Icon(
+        _getIcon(mode),
+        color: _getColor(mode),
+        size: 20,
+      ),
+      onSelected: onChanged,
+      color: AppTheme.surfaceVariant,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      itemBuilder: (context) => [
+        _buildItem(CaseStudyMode.dueOnly, '🚀 Hazırsan Başla', AppTheme.cyan),
+        _buildItem(CaseStudyMode.failedOnly, '❌ Bilemediklerim', AppTheme.error),
+        _buildItem(CaseStudyMode.learnedOnly, '✅ Bildiklerim', AppTheme.success),
+        _buildItem(CaseStudyMode.pocketOnly, '⭐ Ezberim', AppTheme.neonGold),
+        _buildItem(CaseStudyMode.all, '📚 Tüm Vakalar', AppTheme.textSecondary),
+      ],
+    );
+  }
+
+  PopupMenuItem<CaseStudyMode> _buildItem(CaseStudyMode value, String label, Color color) {
+    return PopupMenuItem(
+      value: value,
+      child: Row(
+        children: [
+          Icon(_getIcon(value), color: color, size: 18),
+          const SizedBox(width: 12),
+          Text(label, style: const TextStyle(color: AppTheme.textPrimary, fontSize: 13, fontWeight: FontWeight.w600)),
+        ],
+      ),
+    );
+  }
+
+  IconData _getIcon(CaseStudyMode m) {
+    switch (m) {
+      case CaseStudyMode.dueOnly: return Icons.rocket_launch_rounded;
+      case CaseStudyMode.failedOnly: return Icons.cancel_rounded;
+      case CaseStudyMode.learnedOnly: return Icons.check_circle_rounded;
+      case CaseStudyMode.pocketOnly: return Icons.star_rounded;
+      case CaseStudyMode.all: return Icons.grid_view_rounded;
+      case CaseStudyMode.newOnly: return Icons.new_releases_rounded;
+    }
+  }
+
+  Color _getColor(CaseStudyMode m) {
+    switch (m) {
+      case CaseStudyMode.dueOnly: return AppTheme.cyan;
+      case CaseStudyMode.failedOnly: return AppTheme.error;
+      case CaseStudyMode.learnedOnly: return AppTheme.success;
+      case CaseStudyMode.pocketOnly: return AppTheme.neonGold;
+      default: return AppTheme.textSecondary;
+    }
+  }
+}
 
 class _AIRequestButton extends StatelessWidget {
   final bool isLoading;
@@ -487,22 +776,22 @@ class _AIRequestButton extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              const Color(0xFF7928CA).withOpacity(0.15),
-              const Color(0xFF00D4FF).withOpacity(0.15),
+              const Color(0xFF7928CA).withValues(alpha: 0.15),
+              const Color(0xFF00D4FF).withValues(alpha: 0.15),
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
           borderRadius: BorderRadius.circular(14),
           border: Border.all(
-              color: const Color(0xFF7928CA).withOpacity(0.35)),
+              color: const Color(0xFF7928CA).withValues(alpha: 0.35)),
         ),
         child: Row(
           children: [
             Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: const Color(0xFF7928CA).withOpacity(0.15),
+                color: const Color(0xFF7928CA).withValues(alpha: 0.15),
                 borderRadius: BorderRadius.circular(10),
               ),
               child: isLoading
@@ -564,15 +853,15 @@ class _AIExplanationCard extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            const Color(0xFF7928CA).withOpacity(0.10),
-            const Color(0xFF00D4FF).withOpacity(0.05),
+            const Color(0xFF7928CA).withValues(alpha: 0.10),
+            const Color(0xFF00D4FF).withValues(alpha: 0.05),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-            color: const Color(0xFF7928CA).withOpacity(0.3)),
+            color: const Color(0xFF7928CA).withValues(alpha: 0.3)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -593,7 +882,7 @@ class _AIExplanationCard extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(
                     horizontal: 8, vertical: 3),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF7928CA).withOpacity(0.15),
+                  color: const Color(0xFF7928CA).withValues(alpha: 0.15),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: const Text('Claude',

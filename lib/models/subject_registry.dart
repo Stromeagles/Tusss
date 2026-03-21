@@ -75,6 +75,9 @@ class SubjectRegistry {
         'assets/data/microbiology_batch3A.json',
         'assets/data/microbiology_batch3B.json',
         'assets/data/microbiology_batch4A.json',
+        'assets/data/microbiology_prof_200.json',
+        // ── 200 Mikrobiyoloji Sorusu (Soru Bankası) ────────────────────
+        'assets/data/mikrobiyoloji_200_soru.json',
       ],
     ),
     SubjectModule(
@@ -104,6 +107,17 @@ class SubjectRegistry {
         'assets/data/pathology_batch5C.json', // Meme + Deri + Kadın Genital Ek Kartlar 50 kart
         'assets/data/pathology_batch5D.json', // Hemodinamik + KV + İnflamasyon + Hemopoetik 50 kart
         'assets/data/pathology_batch5E.json', // Karma Yüksek Verimli - 500. Tamamlayıcı 50 kart
+        'assets/data/pathology_vaka_100.json', // 100 Vaka Kampı
+      ],
+    ),
+    SubjectModule(
+      id: 'anatomi',
+      name: 'Anatomi',
+      shortLabel: 'Anatom',
+      icon: Icons.accessibility_new_rounded,
+      color: Color(0xFFFF9E7D),
+      assetPaths: [
+        'assets/data/anatomi_200_soru.json',
       ],
     ),
   ];

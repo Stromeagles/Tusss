@@ -111,7 +111,7 @@ class _GoalSettingsScreenState extends State<GoalSettingsScreen> {
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                   elevation: 8,
-                  shadowColor: AppTheme.cyan.withOpacity(0.4),
+                  shadowColor: AppTheme.cyan.withValues(alpha: 0.4),
                 ),
                 child: const Text('KAYDET VE BAŞLA', 
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800, letterSpacing: 1.2)),
@@ -136,7 +136,7 @@ class _GoalSettingsScreenState extends State<GoalSettingsScreen> {
         decoration: BoxDecoration(
           color: AppTheme.surfaceVariant,
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: AppTheme.cyan.withOpacity(0.3)),
+          border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.3)),
         ),
         child: Row(
           children: [
@@ -170,7 +170,7 @@ class _GoalSettingsScreenState extends State<GoalSettingsScreen> {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
               decoration: BoxDecoration(
-                color: AppTheme.cyan.withOpacity(0.1),
+                color: AppTheme.cyan.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text('${value.toInt()} Saat', style: const TextStyle(color: AppTheme.cyan, fontWeight: FontWeight.bold)),

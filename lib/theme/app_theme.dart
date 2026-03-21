@@ -85,16 +85,18 @@ class AppTheme {
       borderRadius: BorderRadius.circular(radius),
       border: Border.all(
         color: isActive && glowColor != null
-            ? glowColor.withValues(alpha: 0.65)
-            : Colors.white.withValues(alpha: 0.08),
-        width: isActive ? 1.5 : 0.8,
+            ? glowColor.withValues(alpha: 0.55)
+            : Colors.white.withValues(alpha: 0.12),
+        width: isActive ? 1.2 : 0.8,
       ),
       boxShadow: [
+        // Layered shadow: yumuşak dış gölge + keskin iç derinlik
         if (isActive && glowColor != null) ...[
-          BoxShadow(color: glowColor.withValues(alpha: 0.35), blurRadius: 24, spreadRadius: 2),
-          BoxShadow(color: glowColor.withValues(alpha: 0.12), blurRadius: 48, spreadRadius: 6),
+          BoxShadow(color: glowColor.withValues(alpha: 0.25), blurRadius: 28, spreadRadius: 0),
+          BoxShadow(color: glowColor.withValues(alpha: 0.08), blurRadius: 56, spreadRadius: 4),
         ],
-        BoxShadow(color: Colors.black.withValues(alpha: 0.5), blurRadius: 30, offset: const Offset(0, 14)),
+        BoxShadow(color: Colors.black.withValues(alpha: 0.30), blurRadius: 24, offset: const Offset(0, 10)),
+        BoxShadow(color: Colors.black.withValues(alpha: 0.08), blurRadius: 48, offset: const Offset(0, 20)),
       ],
     );
   }
@@ -106,13 +108,20 @@ class AppTheme {
     Color? glowColor,
   }) {
     return BoxDecoration(
-      color: cardBackground.withValues(alpha: 0.85),
+      color: cardBackground.withValues(alpha: 0.88),
       borderRadius: BorderRadius.circular(radius),
-      border: Border.all(color: borderColor, width: borderWidth),
+      border: Border.all(
+        color: glowColor != null
+            ? glowColor.withValues(alpha: 0.18)
+            : borderColor,
+        width: borderWidth,
+      ),
       boxShadow: [
-        BoxShadow(color: Colors.black.withValues(alpha: 0.35), blurRadius: 20, offset: const Offset(0, 6)),
+        // Layered: yumuşak ana gölge + hafif ambient
+        BoxShadow(color: Colors.black.withValues(alpha: 0.25), blurRadius: 20, offset: const Offset(0, 6)),
+        BoxShadow(color: Colors.black.withValues(alpha: 0.06), blurRadius: 40, offset: const Offset(0, 16)),
         if (glowColor != null)
-          BoxShadow(color: glowColor.withValues(alpha: 0.12), blurRadius: 28, offset: const Offset(0, 4)),
+          BoxShadow(color: glowColor.withValues(alpha: 0.10), blurRadius: 32, spreadRadius: -2, offset: const Offset(0, 4)),
       ],
     );
   }

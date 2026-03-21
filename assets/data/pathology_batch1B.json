@@ -5,7 +5,7 @@
     {
       "id": "path_b1B_001",
       "question": "Mide karsinoidlerinde (nöroendokrin tümörlerde) hangi zemin hastalıkları predispozisyon oluşturur?",
-      "answer": "Tip A otoimmün atrofik gastrit (hipergastrinemi → ECL hücre hiperplazisi) ve Zollinger-Ellison sendromu (hipergastrinemi). Gastrin ECL hücrelerini stimüle eder.",
+      "answer": "[[Tip A otoimmün atrofik gastrit]] (hipergastrinemi → [[ECL hücre hiperplazisi]]) ve [[Zollinger-Ellison sendromu]] (hipergastrinemi).",
       "difficulty": "Zor",
       "tags": ["GİS", "Mide", "Karsinoid", "NET"],
       "ai_coding": "🤖 Kodlama: Karsinoid Mide = Gastrin fazlaysa ECL hücresi prolifere olur."
@@ -13,7 +13,7 @@
     {
       "id": "path_b1B_002",
       "question": "Hücre hasarında 'reversible' (geri dönüşümlü) hasar bulguları nelerdir?",
-      "answer": "Hücre şişmesi (hidropik/vakuolar değişiklik) + ER şişmesi + Mitokondri şişmesi + Ribozom dağılması + Yağ değişikliği (steatoz). Nükleus henüz korunmuştur.",
+      "answer": "[[Hücre şişmesi]] (hidropik/vakuolar değişiklik) + ER şişmesi + Mitokondri şişmesi + [[Yağ değişikliği]] (steatoz).",
       "difficulty": "Orta",
       "tags": ["Hücre Hasarı", "Reversible"],
       "ai_coding": "🤖 Kodlama: Reversible = 'Su girdi, şişti ama ölmedi'. Nükleus sağlam."
@@ -21,7 +21,7 @@
     {
       "id": "path_b1B_003",
       "question": "Hücre ölümünün (irreversible hasar) en güvenilir morfolojik kriteri nedir?",
-      "answer": "Nükleer değişiklikler: Piknoz (nükleer yoğunlaşma) + Karyoreksis (nükleer parçalanma) + Karyoliz (nükleer erime/solma).",
+      "answer": "Nükleer değişiklikler: [[Piknoz]] (yoğunlaşma) + [[Karyoreksis]] (parçalanma) + [[Karyoliz]] (erime/solma).",
       "difficulty": "Kolay",
       "tags": ["Hücre Hasarı", "İrreversible", "Nekroz"],
       "ai_coding": "🤖 Kodlama: 3K = Piknoz-Karyoreksis-Karyoliz = Hücre öldü demek."
@@ -29,7 +29,7 @@
     {
       "id": "path_b1B_004",
       "question": "İskemi/hipokside hücrede ilk bozulan organel nedir ve ilk işlevsel değişiklik nedir?",
-      "answer": "İlk bozulan: Mitokondri (oksidatif fosforilasyon durur → ATP↓). İlk işlevsel değişiklik: Na/K-ATPaz bozulur → Na ve su hücreye girer → Hücre şişer.",
+      "answer": "İlk bozulan: [[Mitokondri]] (ATP↓). İlk işlevsel değişiklik: [[Na/K-ATPaz]] bozulur → Na ve su hücreye girer → [[Hücre şişer]].",
       "difficulty": "Orta",
       "tags": ["Hücre Hasarı", "İskemi", "Mitokondri"],
       "ai_coding": "🤖 Kodlama: ATP düşünce → NaKATP duruyor → Na giriyor → Su giriyor → Şişiyor."
@@ -37,7 +37,7 @@
     {
       "id": "path_b1B_005",
       "question": "Reperfüzyon hasarının mekanizması nedir?",
-      "answer": "Reaktif oksijen türleri (ROS) patlaması + Kalsiyum overload + İnflamatuar hücre aktivasyonu + Kompleman aktivasyonu → Paradoksal hücre ölümü (iskemiden kurtarılan hücreler ölür).",
+      "answer": "[[ROS]] patlaması + [[Kalsiyum overload]] + İnflamatuar hücre aktivasyonu + Kompleman aktivasyonu.",
       "difficulty": "Zor",
       "tags": ["Hücre Hasarı", "Reperfüzyon"],
       "ai_coding": "🤖 Kodlama: Reperfüzyon = 'Kurtarılırken öldürülmek'. ROS bombası patlar."
@@ -45,7 +45,7 @@
     {
       "id": "path_b1B_006",
       "question": "Koagülatif nekroz ile liquefiksiyonlu nekrozun farkı ve her birinin örneği nedir?",
-      "answer": "Koagülatif: Hücre şekli korunur, nükleus kaybolur (ısı denatürasyonu baskın). Örnek: Miyokard enfarktüsü, böbrek enfarktüsü. Liquefikatif: Hücre şekli kaybolur (enzim proteolizi baskın). Örnek: Beyin enfarktüsü, apse.",
+      "answer": "[[Koagülatif]]: Hücre şekli korunur. Örnek: [[Miyokard enfarktüsü]]. [[Liquefikatif]]: Hücre şekli kaybolur. Örnek: [[Beyin enfarktüsü]], apse.",
       "difficulty": "Orta",
       "tags": ["Nekroz", "Koagülatif", "Liquefikatif"],
       "ai_coding": "🤖 Kodlama: Koagülatif = Katılaşır (şekil korunur). Liquefikatif = Erir (beyin/apse)."
@@ -53,7 +53,7 @@
     {
       "id": "path_b1B_007",
       "question": "Kazeifiye nekroz hangi hastalıkta görülür ve adını nereden alır?",
-      "answer": "Tüberküloz (ve diğer granülomatöz hastalıklar). 'Peynir benzeri' beyaz-sarı görünüm. Histoloji: Amorf eozinofilik granüler materyal — ne koagülatif ne liquefikatif, ikisinin arası.",
+      "answer": "[[Tüberküloz]] (ve diğer granülomatöz hastalıklar). '[[Peynir benzeri]]' beyaz-sarı görünüm.",
       "difficulty": "Kolay",
       "tags": ["Nekroz", "Kazeifiye", "TBC"],
       "ai_coding": "🤖 Kodlama: Kazeifiye = 'Kazein (peynir) = TBC'nin imzası'."
@@ -61,7 +61,7 @@
     {
       "id": "path_b1B_008",
       "question": "Gangrenöz nekroz nedir ve 'ıslak' ile 'kuru' formlarının farkı nedir?",
-      "answer": "Kuru gangren: Koagülatif nekroz (vasküler, örn: Diyabetik ekstremite) + Mumyalaşma. Islak gangren: Koagülatif + Liquefikatif (bakteriyel süperpozisyon) + Pütrefaksiyon. Gaz gangreni: Clostridium.",
+      "answer": "[[Kuru gangren]]: Koagülatif nekroz + [[Mumyalaşma]]. [[Islak gangren]]: Koagülatif + [[Liquefikatif]] (bakteriyel süperpozisyon).",
       "difficulty": "Orta",
       "tags": ["Nekroz", "Gangren"],
       "ai_coding": "🤖 Kodlama: Kuru = Yalnız koagülatif. Islak = Koagülatif + Bakteri = Çok kötü."
@@ -69,7 +69,7 @@
     {
       "id": "path_b1B_009",
       "question": "Fibrinoid nekroz nerede görülür ve mekanizması nedir?",
-      "answer": "Damar duvarlarında (arterit, malignant HT, otoimmün). Plazma proteinleri (fibrin dahil) damar duvarına sızar → Amorf pembe fibrinoid materyal birikir.",
+      "answer": "[[Damar duvarlarında]] (arterit, malignant HT). Plazma proteinleri (fibrin dahil) damar duvarına sızar → [[Fibrinoid]] materyal birikir.",
       "difficulty": "Orta",
       "tags": ["Nekroz", "Fibrinoid"],
       "ai_coding": "🤖 Kodlama: Fibrinoid = 'Fibrin gibi görünüyor' — damar duvarı patolojisi."
@@ -77,7 +77,7 @@
     {
       "id": "path_b1B_010",
       "question": "Apoptoz ile nekrozun karşılaştırılması: Hangi özellikler apoptozu nekrozdan ayırır?",
-      "answer": "Apoptoz: Bireysel hücreler, hücre büzülmesi, kromazin yoğunlaşması, apoptotik cisimcikler, inflamasyon YOK, enerji gerektiren (ATP). Nekroz: Grup hücreler, şişme, lizis, inflamasyon VAR, pasif.",
+      "answer": "Apoptoz: [[Hücre büzülmesi]], apoptotik cisimcikler, inflamasyon [[YOK]], enerji [[gerektiren]]. Nekroz: [[Hücre şişmesi]], lizis, inflamasyon [[VAR]].",
       "difficulty": "Orta",
       "tags": ["Hücre Ölümü", "Apoptoz", "Nekroz"],
       "ai_coding": "🤖 Kodlama: Apoptoz = 'Temiz ölüm, sessiz, bireysel'. Nekroz = 'Gürültülü, kalabalık ölüm'."
@@ -85,7 +85,7 @@
     {
       "id": "path_b1B_011",
       "question": "İntrinsik apoptoz yolunda (mitokondriyal yol) hangi proteinler pro- ve anti-apoptotik rolde olup, nasıl dengelenir?",
-      "answer": "Pro-apoptotik: BAX, BAK, BID, BAD (BH3-only proteinler). Anti-apoptotik: BCL-2, BCL-XL, MCL-1. Denge: BAX/BAK > BCL-2 → Mitokondri dış membranı geçirgen → Sitokrom C → Kaspaz-9 aktivasyonu.",
+      "answer": "Pro-apoptotik: [[BAX, BAK]], BID, BAD. Anti-apoptotik: [[BCL-2]], BCL-XL, MCL-1. Denge: BAX/BAK > BCL-2 → [[Sitokrom C]] salınımı → [[Kaspaz-9]] aktivasyonu.",
       "difficulty": "Zor",
       "tags": ["Apoptoz", "BCL-2", "Mitokondri"],
       "ai_coding": "🤖 Kodlama: BCL-2 = 'Bekle, Canlı Kal'. BAX = 'BAX ettir ölümü' (pro-apoptotik)."
@@ -93,7 +93,7 @@
     {
       "id": "path_b1B_012",
       "question": "BCL-2 proto-onkogeni hangi tümörde aşırı eksprese olur ve hangi kromozom translokasyonu sonucu?",
-      "answer": "Folliküler lenfoma — t(14;18) translokasyonu → BCL-2 geni IgH promotörünün kontrolüne geçer → BCL-2 aşırı ekspresyonu → Apoptoz rezistansı.",
+      "answer": "[[Folliküler lenfoma]] — [[t(14;18)]] translokasyonu → [[BCL-2]] aşırı ekspresyonu → [[Apoptoz rezistansı]].",
       "difficulty": "Orta",
       "tags": ["Apoptoz", "BCL-2", "Folliküler Lenfoma"],
       "ai_coding": "🤖 Kodlama: t(14;18) = Folliküler Lenfoma = BCL-2. '14 ile 18 = BCL-Folliküler'."
@@ -101,7 +101,7 @@
     {
       "id": "path_b1B_013",
       "question": "Ekstrinsik apoptoz yolunda (ölüm reseptörü yolu) hangi reseptörler ve hangi ligandlar rol alır?",
-      "answer": "FAS (CD95) + FAS-L → FADD → Prokaspaz-8 → Kaspaz-8 → Efektör kaspazlar. TNF-R1 + TNF → TRADD → Benzer yol. Sitotoksik T lenfositler Perforin/Granzim yolu.",
+      "answer": "[[FAS (CD95)]] + [[FAS-L]] → [[Kaspaz-8]] aktivasyonu. Sitotoksik T lenfositler [[Perforin/Granzim]] yolu.",
       "difficulty": "Zor",
       "tags": ["Apoptoz", "FAS", "Ekstrinsik"],
       "ai_coding": "🤖 Kodlama: FAS = 'FASt ölüm' (hızlı). FAS-L bağlanınca kaspaz-8 devreye girer."
@@ -109,7 +109,7 @@
     {
       "id": "path_b1B_014",
       "question": "Otofaji nedir ve hangi durumlarda devreye girer?",
-      "answer": "Hücrenin kendi organellerini ve sitoplazmik içeriklerini lizozomlarda yıkması. Devreye girer: Besin açlığı, organell hasarı, stres. Hem koruyucu (hücre survival) hem de ölüme yol açabilir (aşırıya kaçarsa).",
+      "answer": "Hücrenin kendi tarafından organel yıkımı. Devreye girer: [[Besin açlığı]], organel hasarı, stres. [[Lizozomlarda]] gerçekleşir.",
       "difficulty": "Orta",
       "tags": ["Hücre Ölümü", "Otofaji"],
       "ai_coding": "🤖 Kodlama: Otofaji = 'Kendini yer' (self-eating). Açlıkta kendi organelini yiyor."
@@ -117,7 +117,7 @@
     {
       "id": "path_b1B_015",
       "question": "Hücresel adaptasyonlar sırasını tanımlayın: Atrofi, hipertrofi, hiperplazi, metaplazi.",
-      "answer": "Atrofi: Hücre küçülür. Hipertrofi: Hücre büyür (DNA artmaz). Hiperplazi: Hücre sayısı artar (mitoz). Metaplazi: Bir diferansiye hücre tipi diğerine dönüşür (tersinir). Displazi: Premalign değişiklik.",
+      "answer": "Atrofi: [[Hücre küçülür]]. Hipertrofi: [[Hücre büyür]] (DNA artmaz). Hiperplazi: [[Sayı artar]] (mitoz). Metaplazi: [[Hücre tipi dönüşür]] (tersinir).",
       "difficulty": "Kolay",
       "tags": ["Hücre Adaptasyonu"],
       "ai_coding": "🤖 Kodlama: 'At-Hi-Hi-Me-Dis' = Adaptasyon basamakları."
@@ -125,7 +125,7 @@
     {
       "id": "path_b1B_016",
       "question": "Fizyolojik hipertrofi örneği nedir? Patolojik hipertrofiye örnek verin.",
-      "answer": "Fizyolojik: Hamilelikte uterus (hem hipertrofi hem hiperplazi), egzersizde iskelet kası. Patolojik: Hipertansiyonda sol ventrikül hipertrofisi (kardiyomiyositler bölünemez → sadece hipertrofi).",
+      "answer": "Fizyolojik: Hamilelikte [[uterus]], iskelet kası. Patolojik: Hipertansiyonda [[sol ventrikül hipertrofisi]] (kardiyomiyositler bölünemez).",
       "difficulty": "Kolay",
       "tags": ["Hipertrofi", "Adaptasyon"],
       "ai_coding": "🤖 Kodlama: Kalp hücresi bölünemez → Sadece büyür (hipertrofi). Uterus bölünür (hiperplazi de)."
@@ -133,7 +133,7 @@
     {
       "id": "path_b1B_017",
       "question": "Metaplazinin önemi nedir? Barrett özofagusunu örnek verin.",
-      "answer": "Metaplazi: Tersinir adaptasyon, altta yatan stres kalkarsa düzelebilir. Kalıcı stres → Displazi → Neoplazi. Barrett: Skuamöz epitel → İntestinal kolumnar epitele (goblet hücreli). GÖRH stimülü kalkarsa bazen geriler.",
+      "answer": "Metaplazi: Tersinir adaptasyon. Kalıcı stres → [[Displazi]] → Neoplazi. Barrett: [[Skuamöz]] epitel → [[İntestinal kolumnar]] epitele (goblet hücreli).",
       "difficulty": "Orta",
       "tags": ["Metaplazi", "Barrett"],
       "ai_coding": "🤖 Kodlama: Metaplazi → Stres devam ederse → Displazi → Kanser. Tersinirlik önemli."
@@ -141,7 +141,7 @@
     {
       "id": "path_b1B_018",
       "question": "Serbest radikal hasarında hangi dört mekanizma rol oynar?",
-      "answer": "1) Lipid peroksidasyonu (membran hasarı). 2) Protein oksidasyonu (enzim inaktivasyonu). 3) DNA hasarı (tek/çift zincir kırıkları). 4) Karbonhidrat hasarı (zar glikoproteinleri). Glutatyon ve SOD koruyucu.",
+      "answer": "1) [[Lipid peroksidasyonu]] (membran hasarı). 2) [[Protein oksidasyonu]]. 3) [[DNA hasarı]]. 4) Karbonhidrat hasarı. [[Glutatyon]] ve [[SOD]] koruyucu.",
       "difficulty": "Zor",
       "tags": ["Hücre Hasarı", "Serbest Radikal", "ROS"],
       "ai_coding": "🤖 Kodlama: ROS = 'Radikal Olan Şeyler' → Lipid-Protein-DNA-Karbonhidrat hasarı."
@@ -149,7 +149,7 @@
     {
       "id": "path_b1B_019",
       "question": "Karbon tetraklorür (CCl4) karaciğer hasarında hangi mekanizma rol oynar?",
-      "answer": "Sitokrom P450 → CCl4 → CCl3• (triklorometil radikali) → Membran lipid peroksidasyonu → ER hasarı → Protein sentezi bozulur → Yağ birikimi → Hücre ölümü.",
+      "answer": "Sitokrom [[P450]] → CCl3• radikali → [[Lipid peroksidasyonu]] → ER hasarı → [[Protein sentezi bozulur]] → [[Yağ birikimi]].",
       "difficulty": "Zor",
       "tags": ["Hücre Hasarı", "CCl4", "Karaciğer"],
       "ai_coding": "🤖 Kodlama: CCl4 → P450 → Radikal → Lipid peroksidasyonu → Karaciğer yağlanır."
@@ -157,7 +157,7 @@
     {
       "id": "path_b1B_020",
       "question": "Kalsiyumun hücre ölümündeki rolü nedir?",
-      "answer": "Iskemi → ATP↓ → Ca pompası bozulur → Sitozol Ca↑ → Fosfolipaz A2 aktivasyonu (membran hasarı) + Proteaz aktivasyonu (yapısal protein hasarı) + Endonükleaz aktivasyonu (DNA hasarı) + ATPaz aktivasyonu.",
+      "answer": "Sitozol [[Ca↑]] → [[Fosfolipaz A2]] (membran hasarı) + [[Proteaz]] (yapısal protein hasarı) + [[Endonükleaz]] (DNA hasarı) + ATPaz aktive olur.",
       "difficulty": "Zor",
       "tags": ["Hücre Hasarı", "Kalsiyum"],
       "ai_coding": "🤖 Kodlama: Kalsiyum = 'İçeri doluşunca Fosfolipaz+Proteaz+Endonükleaz = Üçlü hasar'."
@@ -165,7 +165,7 @@
     {
       "id": "path_b1B_021",
       "question": "Hücre içi birikimler: Yağ (steatoz), kolesterol, glikojen, pigmentler — hangisi hangi organda tipiktir?",
-      "answer": "Steatoz: Karaciğer (alkol, DM, obezite). Kolesterol: Aterosklerotik plak, xantomlar. Glikojen: Karaciğer (DM, glikojen depo hastalıkları). Hemosiderin: Hemosideroz/hemokromatoz.",
+      "answer": "[[Steatoz]]: [[Karaciğer]]. [[Kolesterol]]: [[Aterosklerotik plak]], xantomlar. [[Hemosiderin]]: [[Hemokromatoz]].",
       "difficulty": "Kolay",
       "tags": ["Hücre Birikimi", "Steatoz"],
       "ai_coding": "🤖 Kodlama: Steatoz = Yağ = Karaciğer. Kolesterol = Damar duvarı. Glikojen = Karaciğer."
@@ -173,7 +173,7 @@
     {
       "id": "path_b1B_022",
       "question": "Lipofusin nedir ve hangi hücrelerde birikir?",
-      "answer": "'Eskime pigmenti'. Lizozomal lipid+protein oksidasyonu sonucu oluşan sarı-kahverengi granüller. Kardiyomiyositlerde ve karaciğer hücrelerinde yaşlılıkla birikir. 'Wear and tear pigment'.",
+      "answer": "[[Lipofusin]]: 'Eskime pigmenti'. [[Kardiyomiyositlerde]] ve karaciğer hücrelerinde yaşlılıkla birikir. 'Wear and tear pigment'.",
       "difficulty": "Orta",
       "tags": ["Hücre Birikimi", "Lipofusin", "Yaşlanma"],
       "ai_coding": "🤖 Kodlama: Lipofusin = 'Yaşlılık lekesi' = Kalpte/Karaciğerde birikir."
@@ -181,7 +181,7 @@
     {
       "id": "path_b1B_023",
       "question": "Hemosideroz ile hemokromatozun farkı nedir?",
-      "answer": "Hemosideroz: Lokal/sistemik demir birikimi, organ hasarı yok. Hemokromatoz: Demir birikimi + Organ hasarı (siroz, DM, kardiyomiyopati, artrit, hipogonadizm). Primer: HFE mutasyonu (otozomal resesif).",
+      "answer": "Hemosideroz: Demir birikimi, organ hasarı [[yok]]. [[Hemokromatoz]]: Demir birikimi + [[Organ hasarı]] (siroz, DM). [[HFE mutasyonu]].",
       "difficulty": "Orta",
       "tags": ["Demir Birikimi", "Hemokromatoz"],
       "ai_coding": "🤖 Kodlama: Hemokromatoz = 'Demir + Hasar'. '5D': Diabetes-Dermatit-Döngüsel hasar-Defans(gonit)."
@@ -189,7 +189,7 @@
     {
       "id": "path_b1B_024",
       "question": "Patolojik kalsifikasyon türleri nelerdir?",
-      "answer": "Distrofik kalsifikasyon: Hasarlı/nekrotik dokuda, serum Ca normal (Ateroskleroz, tbc kazeifiye nekroz). Metastatik kalsifikasyon: Normal dokuda, hiperkalsemi var (hiperparatiroidi, D vitamini intoksikasyonu).",
+      "answer": "[[Distrofik kalsifikasyon]]: Hasarlı dokuda, serum Ca [[normal]]. [[Metastatik kalsifikasyon]]: Normal dokuda, [[hiperkalsemi]] var.",
       "difficulty": "Orta",
       "tags": ["Kalsifikasyon", "Distrofik", "Metastatik"],
       "ai_coding": "🤖 Kodlama: Distrofik = 'Hasta doku + Normal Ca'. Metastatik = 'Normal doku + Yüksek Ca'."
@@ -197,7 +197,7 @@
     {
       "id": "path_b1B_025",
       "question": "Amiloid nedir ve hangi protein yapısına sahiptir?",
-      "answer": "Beta-tabaka konfigürasyonunda yanlış katlanmış protein agregatları. Congo red boyası → Apple-green birefringence (polarize ışık). Tipik: Ekstraselüler birikirim.",
+      "answer": "[[Amiloid]]: [[Beta-tabaka]] konfigürasyonunda yanlış katlanmış protein. [[Congo red]] boyası → [[Apple-green birefringence]].",
       "difficulty": "Orta",
       "tags": ["Amiloid", "Protein Birikimi"],
       "ai_coding": "🤖 Kodlama: Amiloid = 'Congo Red + Yeşil parlama' = Beta-tabaka yapısı."
@@ -205,7 +205,7 @@
     {
       "id": "path_b1B_026",
       "question": "AL ve AA amiloidozun farkı nedir?",
-      "answer": "AL (Primer): İmmünoglobulin hafif zincirleri (λ veya κ) → Plazma hücreli diskraziler (multipl miyelom). AA (Sekonder/Reaktif): SAA proteini → Kronik inflamatuar hastalıklar (RA, TBC, Crohn). Organlar: Böbrek (en sık), karaciğer, dalak.",
+      "answer": "[[AL (Primer)]]: [[Hafif zincirler]] (λ/κ) → [[Multipl miyelom]]. [[AA (Sekonder)]]: [[SAA proteini]] → Kronik inflamasyon ([[RA, TBC]]).",
       "difficulty": "Orta",
       "tags": ["Amiloid", "AL", "AA"],
       "ai_coding": "🤖 Kodlama: AL = 'Aşırı Light chain' (miyelom). AA = 'Ateşli hastalıklar' (kronik inflamasyon)."
@@ -213,7 +213,7 @@
     {
       "id": "path_b1B_027",
       "question": "Sago dalak (Sagosplein) nedir?",
-      "answer": "AA amiloidozda dalakta folliküler (beyaz pulpa) amiloid birikimi → Makroskopik: Yarı saydam granüller (pirinç/sagoya benzer). Balmumu dalak (waxy spleen): Tüm dalağa yayılmış amiloid.",
+      "answer": "Amiloidozda dalakta [[folliküler (beyaz pulpa)]] birikim → '[[Pirinç tanesi]]' görünümü. [[Balmumu dalak]] (waxy spleen) tüm yayılımı ifade eder.",
       "difficulty": "Zor",
       "tags": ["Amiloid", "Dalak"],
       "ai_coding": "🤖 Kodlama: Sago Dalak = 'Pirinç tanesi görünümü' = Folliküler amiloid."
@@ -221,7 +221,7 @@
     {
       "id": "path_b1B_028",
       "question": "β2-mikroglobulin amiloidozu hangi hasta grubunda ve neyi etkiler?",
-      "answer": "Uzun süreli hemodiyaliz hastaları. β2-mikroglobulin diyalizatörd filtrelenemiyor → Eklem çevresinde birikir → Karpal tünel sendromu, artropatiler.",
+      "answer": "Uzun süreli [[hemodiyaliz]] hastaları. [[β2-mikroglobulin]] eklemde birikir → [[Karpal tünel sendromu]].",
       "difficulty": "Zor",
       "tags": ["Amiloid", "Diyaliz", "β2m"],
       "ai_coding": "🤖 Kodlama: β2m = 'Diyalizde filtrelenemez' → Eklemde birikir → Karpal tünel."
@@ -229,7 +229,7 @@
     {
       "id": "path_b1B_029",
       "question": "Alzheimer hastalığında hangi amiloid birikir ve hangi genden kaynaklanır?",
-      "answer": "Aβ peptidi (β-amiloid) — APP (amiloid prekürsör protein) geninin anormal proteolizi. Ayrıca Tau proteini (nörofibriler yumaklar). Senil plaklar = Aβ çekirdeği + Nörit.",
+      "answer": "[[Aβ peptidi (β-amiloid)]] — [[APP]] geninden. Ayrıca [[Tau proteini]] (yumaklar).",
       "difficulty": "Orta",
       "tags": ["Amiloid", "Alzheimer", "APP"],
       "ai_coding": "🤖 Kodlama: Alzheimer = 'A-Beta + Tau' ikili. APP'den geliyor."
@@ -237,7 +237,7 @@
     {
       "id": "path_b1B_030",
       "question": "ATTR amiloidozu (transthyretin) hangi iki formda görülür?",
-      "answer": "Familyal ATTR: TTR gen mutasyonu → Kardiyomiyopati + Nöropati. Yaşlılık (senile) ATTR: Wild-type TTR → Kalp tutulumu baskın (>80 yaş).",
+      "answer": "[[Familyal ATTR]]: TTR mutasyonu → Nöropati. [[Yaşlılık ATTR]]: Wild-type TTR → [[Kalp tutulumu]] baskın.",
       "difficulty": "Zor",
       "tags": ["Amiloid", "ATTR", "TTR"],
       "ai_coding": "🤖 Kodlama: ATTR = 'TRansThyretin'. Mutant = Familyal. Wild-type = Yaşlılık kalp."
@@ -245,7 +245,7 @@
     {
       "id": "path_b1B_031",
       "question": "Hücre yaşlanmasında (senescence) temel mekanizmalar nelerdir?",
-      "answer": "1) Telomer kısalması (her bölünmede ~50-200 bp azalır). 2) Oksidatif stres birikimi. 3) DNA hasar yanıtı aktivasyonu. 4) p21 ve p16 cyclin bağımlı kinaz inhibitörleri artar → Hücre döngüsü durur.",
+      "answer": "1) [[Telomer kısalması]]. 2) [[p21 ve p16]] (CDK inhibitörleri) artar → [[G1 arrest]].",
       "difficulty": "Zor",
       "tags": ["Hücre Yaşlanması", "Telomer", "Senescence"],
       "ai_coding": "🤖 Kodlama: Yaşlanma = Telomer kısalır → p21/p16 artar → Döngü durur."
@@ -253,7 +253,7 @@
     {
       "id": "path_b1B_032",
       "question": "Telomeraz enziminin kanserdeki önemi nedir?",
-      "answer": "Normal hücre: Telomeraz kapalı → Her bölünmede telomer kısalır → Senescence. Kanser hücresi: Telomeraz yeniden aktive → Telomer uzunluğu korunur → Sınırsız bölünme (immortalizasyon).",
+      "answer": "Kanser hücresi [[telomerazı aktive eder]] → Telomer uzunluğu korunur → [[Sınırsız bölünme]] (immortalizasyon).",
       "difficulty": "Orta",
       "tags": ["Telomer", "Telomeraz", "Kanser"],
       "ai_coding": "🤖 Kodlama: Telomeraz = Kanser hücresi 'açık bırakır' → Ölümsüzleşir."
@@ -261,7 +261,7 @@
     {
       "id": "path_b1B_033",
       "question": "P53 'genoma bekçisi' işlevi nedir?",
-      "answer": "DNA hasarı → ATM/ATR kinazlar → p53 stabilizasyonu → p21 (CDK inhibitörü) artışı → G1/S durağı → Onarım yapılır. Onarım başarısız → BAX artışı → Apoptoz.",
+      "answer": "DNA hasarı → [[p53]] stabilizasyonu → [[p21]] artışı → G1/S durağı. Onarılamazsa → [[BAX]] artışı → [[Apoptoz]].",
       "difficulty": "Orta",
       "tags": ["p53", "DNA Onarımı", "Apoptoz"],
       "ai_coding": "🤖 Kodlama: p53 = 'Polis-53'. Hasar görür → Dur der → Onarılmazsa öldürür."
@@ -269,7 +269,7 @@
     {
       "id": "path_b1B_034",
       "question": "Nekroptozis (programlı nekroz) nedir ve hangi durumlarda aktive olur?",
-      "answer": "RIPK3 ve MLKL yoluyla gerçekleşen programlı hücre ölümü. Kaspaz aktivasyonu olmaksızın. TNF, FasL bağlandığında kaspaz bloke olduğunda aktive. İnflamasyon yapar (nekroz gibi).",
+      "answer": "[[RIPK3 ve MLKL]] yoluyla programlı hücre ölümü. [[Kaspazdan bağımsız]]. İnflamasyon yapar.",
       "difficulty": "Zor",
       "tags": ["Hücre Ölümü", "Nekroptozis", "RIPK3"],
       "ai_coding": "🤖 Kodlama: Nekroptozis = 'Programlı ama inflamatuar ölüm'. Kaspaz bloke → RIPK3 devreye."
@@ -277,7 +277,7 @@
     {
       "id": "path_b1B_035",
       "question": "Piroptoz nedir ve hangi hücrelerde önemlidir?",
-      "answer": "İnflamazom aktivasyonu → Kaspaz-1 → IL-1β ve IL-18 salınımı + Gasdermin D'nin membranı delmesi → İnflamatuar hücre ölümü. Makrofajlarda önemli, infeksiyona karşı savunmada rol alır.",
+      "answer": "[[İnflamazom]] → [[Kaspaz-1]] → IL-1β/IL-18 salınımı + [[Gasdermin D]] ile membran delinmesi. [[Makrofajlarda]] önemlidir.",
       "difficulty": "Zor",
       "tags": ["Hücre Ölümü", "Piroptoz", "İnflamazom"],
       "ai_coding": "🤖 Kodlama: Piroptoz = 'Piro' (ateş) = İnflamatuar ölüm = İnflamazom → Kaspaz-1."
@@ -285,7 +285,7 @@
     {
       "id": "path_b1B_036",
       "question": "Ferroptoz nedir?",
-      "answer": "Demir bağımlı, reaktif oksijen türleri ile tetiklenen hücre ölümü. GPX4 (glutatyon peroksidaz 4) inaktivasyonu → Lipid peroksidasyonu → Membran hasarı. Bazı kanserlerde ve iskemi-reperfüzyon hasarında rol alır.",
+      "answer": "[[Demir bağımlı]], reaktif oksijenle tetiklenen ölüm. [[GPX4]] (glutatyon peroksidaz 4) inaktivasyonu → [[Lipid peroksidasyonu]].",
       "difficulty": "Zor",
       "tags": ["Hücre Ölümü", "Ferroptoz"],
       "ai_coding": "🤖 Kodlama: Ferroptoz = 'Ferro (demir) + lipid peroksidasyonu'. GPX4 kalkınca oluşur."
@@ -293,7 +293,7 @@
     {
       "id": "path_b1B_037",
       "question": "Hücrede 'unfolded protein response (UPR)' nedir ve ne zaman aktive olur?",
-      "answer": "ER stresine yanıt: Yanlış katlanmış/birikmiş proteinler arttığında → PERK, IRE1, ATF6 yoluyla: Genel protein sentezi azalır + Şaperon üretimi artar + ERAD (ER-associated degradation) devreye girer. Aşırıya kaçarsa → Apoptoz.",
+      "answer": "[[ER stresi]] (yanlış katlanmış proteinler) olduğunda aktive olan alarm yolu. Aşırıya kaçarsa → [[Apoptoz]].",
       "difficulty": "Zor",
       "tags": ["ER Stresi", "UPR", "Protein Katlanma"],
       "ai_coding": "🤖 Kodlama: UPR = 'ER Yangın Tatbikatı'. Proteinler yanlış katlanınca alarm çalar."
@@ -301,7 +301,7 @@
     {
       "id": "path_b1B_038",
       "question": "Nekroz sonrası gerçekleşen gölge hücre nedir?",
-      "answer": "Koagülatif nekroz alanında hücre konturu korunmuş ama nükleus kaybolmuş (karyoliz) hücreler. 'Ghost cell' (hayalet hücre) denir. Miyokard enfarktüsünde tipik.",
+      "answer": "[[Gölge hücre]] (ghost cell): Kontur korunmuş, nükleus yok. [[Koagülatif nekroz]] alanlarında (örn: miyokard MI) görülür.",
       "difficulty": "Orta",
       "tags": ["Nekroz", "Ghost Cell", "Histoloji"],
       "ai_coding": "🤖 Kodlama: Ghost Cell = Konturu var, nükleusu yok = Koagülatif nekroz izlemi."
@@ -309,7 +309,7 @@
     {
       "id": "path_b1B_039",
       "question": "Hücre hasarında mitokondri dış membran geçirgenliği (MOMP) ne anlama gelir?",
-      "answer": "BAX/BAK porları → Sitokrom C salınımı → Apoptozom (Apaf-1+Cyt C+prokaspaz-9) → Kaspaz-9 → Kaspaz-3 (efektör) → Apoptoz. MOMP = İntrinsik yolun kapısı.",
+      "answer": "[[BAX/BAK porları]] → [[Sitokrom C]] salınımı → [[Kaspaz-9]] → [[Apoptoz]]. İntrinsik yolun kritik basamağıdır.",
       "difficulty": "Zor",
       "tags": ["Apoptoz", "Mitokondri", "MOMP"],
       "ai_coding": "🤖 Kodlama: MOMP = 'Mitokondri açıldı' → Sitokrom C fırlıyor → Apoptozom."
@@ -317,31 +317,15 @@
     {
       "id": "path_b1B_040",
       "question": "Yüksek ısı (ateş) veya hipertermi hücre hasarını nasıl yapar?",
-      "answer": "Protein denatürasyonu → Enzim inaktivasyonu. 42-43°C: Hücre hasarı başlar. Hipertermide: ısı şok proteinleri (HSP70, HSP90) koruyucu olarak artar.",
+      "answer": "[[Protein denatürasyonu]] → Enzim inaktivasyonu. [[Isı şok proteinleri (HSP)]] koruyucudur.",
       "difficulty": "Orta",
       "tags": ["Fiziksel Hasar", "Hipertermi", "HSP"],
       "ai_coding": "🤖 Kodlama: Isı = Protein denatürasyonu. HSP = 'Hücrenin ısı kalkanı'."
     },
     {
-      "id": "path_b1B_041",
-      "question": "İyonize radyasyon hücre hasarında hangi mekanizma baskındır?",
-      "answer": "Doğrudan DNA çift zincir kırığı (DSB) + Radyoliz ile oluşan ROS (dolaylı yol). Hücre döngüsünün S ve G2/M fazları en hassas (DNA replikasyonu sırasında). G0/G1'de rölatif direnç.",
-      "difficulty": "Orta",
-      "tags": ["Radyasyon Hasarı", "DNA Kırıkları"],
-      "ai_coding": "🤖 Kodlama: Radyasyon = 'DNA'ya çift yumruk' (DSB). S fazında en hassas."
-    },
-    {
-      "id": "path_b1B_042",
-      "question": "Hipoksi ile iskeminin hücre hasarı açısından farkı nedir?",
-      "answer": "Hipoksi: Sadece O2 azlığı, kan akımı var (metabolit temizlenir). İskemi: Hem O2 hem besin azlığı + Metabolit birikimi (laktat, H+). İskemi daha hızlı ve ağır hasar yapar.",
-      "difficulty": "Kolay",
-      "tags": ["Hipoksi", "İskemi", "Fark"],
-      "ai_coding": "🤖 Kodlama: İskemi > Hipoksi. Çünkü kan akımı yok = Hem O2 yok, hem atık birikti."
-    },
-    {
       "id": "path_b1B_043",
       "question": "Displazi ile neoplazi arasındaki fark nedir?",
-      "answer": "Displazi: Hücre mimarisi+sitoloji bozulmuş ama bazal membran intakt (premalign). Neoplazi: Otonom klonal proliferasyon (malign → bazal membran invazyonu var). Displazi malinleşebilir ama tersinir de olabilir.",
+      "answer": "[[Displazi]]: Bozuk hücreler ama [[bazal membran intakt]]. [[Neoplazi]]: Otonom büyüme + [[Bazal membran invazyonu]] mümkün.",
       "difficulty": "Orta",
       "tags": ["Displazi", "Neoplazi", "Premalign"],
       "ai_coding": "🤖 Kodlama: Displazi = Bozuk ama sınırda. Neoplazi = Sınır aşıldı."
@@ -349,7 +333,7 @@
     {
       "id": "path_b1B_044",
       "question": "Hidropis fetalis'in non-immün formunda en sık neden nedir?",
-      "answer": "Kardiyak anomaliler (en sık) — Ciddi fetal anemi (α-talasemi homozigot, Parvovirus B19), Kistik higroma (Turner), Fetal aritmiler.",
+      "answer": "[[Kardiyak anomaliler]] (en sık). Diğer: [[Parvovirus B19]], Turner.",
       "difficulty": "Zor",
       "tags": ["Hidropis Fetalis", "Yenidoğan"],
       "ai_coding": "🤖 Kodlama: Non-immün Hidrops = Kalp anomalisi en sık. Hemolitik anemiden de olur."
@@ -357,7 +341,7 @@
     {
       "id": "path_b1B_045",
       "question": "Hiperplazi ile neoplazinin klonal büyüme açısından farkı nedir?",
-      "answer": "Hiperplazi: Poliklonal büyüme, kontrollü, uyaran kalktığında durur. Neoplazi: Monoklonal büyüme, otonom, uyaran kalksa bile durmuyor. Monoklonalik = neoplazinin imzası.",
+      "answer": "Hiperplazi: [[Poliklonal]]. Neoplazi: [[Monoklonal]] (neoplazinin imzası).",
       "difficulty": "Orta",
       "tags": ["Hiperplazi", "Neoplazi", "Klonalite"],
       "ai_coding": "🤖 Kodlama: Hiperplazi = Çok aileli parti. Neoplazi = Tek kişi iktidar aldı."
@@ -365,7 +349,7 @@
     {
       "id": "path_b1B_046",
       "question": "Wnt/β-katenin sinyal yolu hangi tümörlerde önemlidir ve nasıl aktive olur?",
-      "answer": "Kolorektal kanser (APC mutasyonu → β-katenin yıkılamaz → Nükleusa girer → MYC, Cyclin D1). Hepatoselüler karsinom, medulloblastom, melanom. APC bozulursa β-katenin birikir.",
+      "answer": "[[Kolorektal kanser]] — [[APC mutasyonu]] → [[β-katenin]] birikir → Nükleusa girer → [[MYC]].",
       "difficulty": "Zor",
       "tags": ["Wnt", "APC", "β-katenin", "Kolorektal"],
       "ai_coding": "🤖 Kodlama: APC bozuk = β-katenin kaçamaz = Nükleusa girer = Kanser sinyali."
@@ -373,7 +357,7 @@
     {
       "id": "path_b1B_047",
       "question": "Reaktif oksijen türleri (ROS) üretiminde endojen kaynaklar nelerdir?",
-      "answer": "Mitokondri (elektron transportu sızıntısı) + NADPH oksidaz (fagositik hücreler) + XO (ksantin oksidaz, reperfüzyon) + P450 (ilaç metabolizması) + Mieloperoksidaz (MPO).",
+      "answer": "[[Mitokondri]], [[NADPH oksidaz]] (fagosit), P450, Myeloperoksidaz.",
       "difficulty": "Zor",
       "tags": ["ROS", "Serbest Radikal"],
       "ai_coding": "🤖 Kodlama: ROS kaynakları = 'MiNaKXMP' (Mitokondri-NADPH-Ksantin-Xeno-Myeloperoks.)."
@@ -381,7 +365,7 @@
     {
       "id": "path_b1B_048",
       "question": "Antioxidan savunma mekanizmaları nelerdir?",
-      "answer": "Enzimatik: SOD (O2•- → H2O2), Katalaz (H2O2 → H2O), Glutatyon peroksidaz (H2O2 → H2O). Non-enzimatik: Vitamin E (lipofilik, membran ROS süpürücü), Vitamin C (hidrofilik), β-karoten.",
+      "answer": "[[SOD]], [[Katalaz]], [[Glutatyon peroksidaz]]. [[Vitamin E]] (membran), Vitamin C.",
       "difficulty": "Orta",
       "tags": ["ROS", "Antioksidan"],
       "ai_coding": "🤖 Kodlama: SOD-Katalaz-GPx = 'Üçlü savunma'. Vit E membran, Vit C sitozol."
@@ -389,7 +373,7 @@
     {
       "id": "path_b1B_049",
       "question": "Nitrik oksit (NO) ve reaktif nitrojen türleri hücre hasarında nasıl rol oynar?",
-      "answer": "iNOS (inflamatuar) → Fazla NO → Peroksinitrit (ONOO-) → Protein nitrozilasyonu + DNA hasarı + Lipid peroksidasyonu. eNOS: Vasodilatatör (koruyucu). nNOS: Nörotransmiter.",
+      "answer": "[[iNOS]] → Fazla NO → [[Peroksinitrit (ONOO-)]] → DNA ve membran hasarı.",
       "difficulty": "Zor",
       "tags": ["NO", "İNOS", "Peroksinitrit"],
       "ai_coding": "🤖 Kodlama: iNOS = 'İnflamatuar-NO' = Çok fazla NO = Peroksinitrit = Hasar."
@@ -397,7 +381,7 @@
     {
       "id": "path_b1B_050",
       "question": "Hücre hasarında laktat dehidrojenaz (LDH) ve kreatin kinaz (CK) enzimlerinin önemi nedir?",
-      "answer": "LDH: Geniş spektrumlu hücre hasarı göstergesi (miyokard, karaciğer, hemoliz). CK-MB: Miyokard hasarına özgü. CK-MM: İskelet kası. CK-BB: Beyin. İzoenzim ayrımı önemli.",
+      "answer": "LDH: Genel hasar markerı. [[CK-MB]]: [[Miyokard]]. CK-MM: Kas. CK-BB: Beyin.",
       "difficulty": "Kolay",
       "tags": ["Hücre Hasarı", "Enzim", "LDH", "CK"],
       "ai_coding": "🤖 Kodlama: CK-MB = Miyokard. CK-MM = Kas. CK-BB = Beyin. 'M=Miyokard, M=Muscle, B=Brain'."

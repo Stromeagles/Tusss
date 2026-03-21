@@ -16,6 +16,10 @@ class ProgressService {
   static const String _keyWeekdayGoalHours = 'weekday_goal_hours';
   static const String _keyWeekendGoalHours = 'weekend_goal_hours';
   static const String _keyTargetTusDate = 'target_tus_date';
+  static const String _keySelectedSubjects = 'selected_subjects';
+  static const String _keyBaseScore = 'base_score';
+  static const String _keyTargetScore = 'target_score';
+  static const String _keyFocusMinutes = 'focus_minutes';
 
   String _todayStr() {
     final now = DateTime.now();
@@ -61,7 +65,60 @@ class ProgressService {
       weekdayGoalHours: prefs.getDouble(_keyWeekdayGoalHours) ?? 2.0,
       weekendGoalHours: prefs.getDouble(_keyWeekendGoalHours) ?? 4.0,
       targetTusDate: prefs.getString(_keyTargetTusDate) ?? '2026-06-28',
+      selectedSubjectIds: prefs.getStringList(_keySelectedSubjects) ?? [],
+      baseScore: prefs.getDouble(_keyBaseScore) ?? 45.0,
+      targetScore: prefs.getDouble(_keyTargetScore) ?? 65.0,
     );
+  }
+
+  /// Streak ve günlük çalışma sayacını günceller.
+  /// Hem flashcard hem case çalışmasından çağrılır.
+  Future<void> _updateDailyActivity(SharedPreferences prefs) async {
+    final today = _todayStr();
+    final lastDate = prefs.getString(_keyLastStudyDate) ?? '';
+    int todayStudied = prefs.getInt(_keyTodayStudied) ?? 0;
+
+    if (lastDate != today) {
+      todayStudied = 0;
+    }
+    todayStudied++;
+    await prefs.setInt(_keyTodayStudied, todayStudied);
+
+    // Streak hesapla
+    int streak = prefs.getInt(_keyCurrentStreak) ?? 0;
+    int longest = prefs.getInt(_keyLongestStreak) ?? 0;
+
+    if (lastDate.isEmpty) {
+      streak = 1;
+    } else if (lastDate == today) {
+      // Zaten bugün çalışıldı, streak değişmez
+    } else {
+      final last = DateTime.parse(lastDate);
+      final diff = DateTime.now().difference(last).inDays;
+      if (diff == 1) {
+        streak++;
+      } else {
+        streak = 1;
+      }
+    }
+
+    if (streak > longest) longest = streak;
+    await prefs.setInt(_keyCurrentStreak, streak);
+    await prefs.setInt(_keyLongestStreak, longest);
+    await prefs.setString(_keyLastStudyDate, today);
+
+    // Haftalık istatistik
+    final today2 = today;
+    final weeklyJson = prefs.getString(_keyWeeklyStats);
+    Map<String, int> weekly = {};
+    if (weeklyJson != null) {
+      final decoded = json.decode(weeklyJson) as Map<String, dynamic>;
+      weekly = decoded.map((k, v) => MapEntry(k, v as int));
+    }
+    weekly[today2] = (weekly[today2] ?? 0) + 1;
+    final cutoff = DateTime.now().subtract(const Duration(days: 14));
+    weekly.removeWhere((k, _) => DateTime.parse(k).isBefore(cutoff));
+    await prefs.setString(_keyWeeklyStats, json.encode(weekly));
   }
 
   Future<void> markFlashcardSeen(String id) async {
@@ -79,53 +136,7 @@ class ProgressService {
       await prefs.setString(_keyCompletedCards, json.encode(completed));
       final current = prefs.getInt(_keyFlashcardsStudied) ?? 0;
       await prefs.setInt(_keyFlashcardsStudied, current + 1);
-
-      // Bugünkü çalışma sayısını güncelle
-      final today = _todayStr();
-      final lastDate = prefs.getString(_keyLastStudyDate) ?? '';
-      int todayStudied = prefs.getInt(_keyTodayStudied) ?? 0;
-
-      if (lastDate != today) {
-        todayStudied = 0; // Yeni gün, sıfırla
-      }
-      todayStudied++;
-      await prefs.setInt(_keyTodayStudied, todayStudied);
-
-      // Streak hesapla
-      int streak = prefs.getInt(_keyCurrentStreak) ?? 0;
-      int longest = prefs.getInt(_keyLongestStreak) ?? 0;
-
-      if (lastDate.isEmpty) {
-        streak = 1;
-      } else if (lastDate == today) {
-        // Zaten bugün çalışıldı, streak değişmez
-      } else {
-        final last = DateTime.parse(lastDate);
-        final diff = DateTime.now().difference(last).inDays;
-        if (diff == 1) {
-          streak++;
-        } else {
-          streak = 1;
-        }
-      }
-
-      if (streak > longest) longest = streak;
-      await prefs.setInt(_keyCurrentStreak, streak);
-      await prefs.setInt(_keyLongestStreak, longest);
-      await prefs.setString(_keyLastStudyDate, today);
-
-      // Haftalık istatistik
-      final weeklyJson = prefs.getString(_keyWeeklyStats);
-      Map<String, int> weekly = {};
-      if (weeklyJson != null) {
-        final decoded = json.decode(weeklyJson) as Map<String, dynamic>;
-        weekly = decoded.map((k, v) => MapEntry(k, v as int));
-      }
-      weekly[today] = (weekly[today] ?? 0) + 1;
-      // 14 günden eski verileri temizle
-      final cutoff = DateTime.now().subtract(const Duration(days: 14));
-      weekly.removeWhere((k, _) => DateTime.parse(k).isBefore(cutoff));
-      await prefs.setString(_keyWeeklyStats, json.encode(weekly));
+      await _updateDailyActivity(prefs);
     }
   }
 
@@ -145,14 +156,31 @@ class ProgressService {
     await prefs.setString(_keyTargetTusDate, targetTusDate);
   }
 
-  Future<void> recordCaseAnswer({required bool correct}) async {
+  Future<void> saveScoreGoal({required double base, required double target}) async {
     final prefs = await SharedPreferences.getInstance();
+    await prefs.setDouble(_keyBaseScore, base);
+    await prefs.setDouble(_keyTargetScore, target);
+  }
+
+  Future<void> recordCaseAnswer({String? caseId, required bool correct}) async {
+    final prefs = await SharedPreferences.getInstance();
+
     final attempted = (prefs.getInt(_keyCasesAttempted) ?? 0) + 1;
     await prefs.setInt(_keyCasesAttempted, attempted);
+
     if (correct) {
       final correctCount = (prefs.getInt(_keyCorrectAnswers) ?? 0) + 1;
       await prefs.setInt(_keyCorrectAnswers, correctCount);
     }
+
+    // Streak dahil tüm günlük aktiviteyi güncelle
+    await _updateDailyActivity(prefs);
+  }
+  
+  Future<void> recordFocusMinutes(int minutes) async {
+    final prefs = await SharedPreferences.getInstance();
+    final current = prefs.getInt(_keyFocusMinutes) ?? 0;
+    await prefs.setInt(_keyFocusMinutes, current + minutes);
   }
 
   Future<void> resetProgress() async {
@@ -170,5 +198,7 @@ class ProgressService {
     await prefs.remove(_keyWeekdayGoalHours);
     await prefs.remove(_keyWeekendGoalHours);
     await prefs.remove(_keyTargetTusDate);
+    await prefs.remove(_keyBaseScore);
+    await prefs.remove(_keyTargetScore);
   }
 }

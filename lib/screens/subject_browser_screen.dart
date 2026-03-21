@@ -3,19 +3,21 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_theme.dart';
 import '../models/subject_registry.dart';
+import '../models/topic_model.dart';
 import '../services/data_service.dart';
 import '../utils/transitions.dart';
-import 'flashcard_screen.dart';
+import 'hierarchy_screens.dart';
 
-class FlashcardSubjectScreen extends StatefulWidget {
-  const FlashcardSubjectScreen({super.key});
+class SubjectBrowserScreen extends StatefulWidget {
+  const SubjectBrowserScreen({super.key});
 
   @override
-  State<FlashcardSubjectScreen> createState() => _FlashcardSubjectScreenState();
+  State<SubjectBrowserScreen> createState() => _SubjectBrowserScreenState();
 }
 
-class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
+class _SubjectBrowserScreenState extends State<SubjectBrowserScreen> {
   final _dataService = DataService();
+  final Map<String, int> _topicCounts = {};
   final Map<String, int> _cardCounts = {};
   bool _loading = true;
 
@@ -26,14 +28,33 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
   }
 
   Future<void> _loadCounts() async {
-    int total = 0;
     for (final module in SubjectRegistry.modules) {
-      final cards = await _dataService.loadFlashcards(subjectId: module.id);
-      _cardCounts[module.id] = cards.length;
-      total += cards.length;
+      final topics = await _dataService.loadTopics(subjectId: module.id);
+      _topicCounts[module.id] = topics.length;
+      _cardCounts[module.id] = topics.fold(0, (s, t) => s + t.totalFlashcards + t.totalCases);
     }
-    _cardCounts['__all__'] = total;
     if (mounted) setState(() => _loading = false);
+  }
+
+  Future<void> _openSubject(SubjectModule module) async {
+    final topics = await _dataService.loadTopics(subjectId: module.id);
+    if (!mounted) return;
+
+    final chapters = <String, List<Topic>>{};
+    for (final t in topics) {
+      chapters.putIfAbsent(t.chapter, () => []).add(t);
+    }
+
+    Navigator.push(
+      context,
+      AppRoute.slideRight(
+        ChapterListScreen(
+          subjectName: module.name,
+          chapters: chapters,
+          accentColor: module.color,
+        ),
+      ),
+    );
   }
 
   @override
@@ -53,7 +74,7 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
           onPressed: () => Navigator.pop(context),
         ),
         title: Text(
-          'Flashcard Çalışması',
+          'Konu Tarayıcı',
           style: GoogleFonts.inter(
             color: textColor,
             fontSize: 18,
@@ -76,69 +97,32 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
                   ),
                 ),
                 const SizedBox(height: 12),
-
-                // Tüm Kartlar
-                _SubjectCard(
-                  label: 'Tüm Kartlar',
-                  subtitle: 'Bütün branşları birlikte çalış',
-                  icon: Icons.auto_awesome_motion_rounded,
-                  color: AppTheme.cyan,
-                  cardCount: _cardCounts['__all__'] ?? 0,
-                  isDark: isDark,
-                  onTap: () => _openFlashcards(null),
-                ),
-                const SizedBox(height: 12),
-
-                Text(
-                  'Branşa Göre',
-                  style: GoogleFonts.inter(
-                    color: subColor,
-                    fontSize: 13,
-                    fontWeight: FontWeight.w600,
-                    letterSpacing: 0.5,
-                  ),
-                ),
-                const SizedBox(height: 12),
-
                 ...SubjectRegistry.modules.map((module) => Padding(
                       padding: const EdgeInsets.only(bottom: 12),
-                      child: _SubjectCard(
-                        label: module.name,
-                        subtitle: module.shortLabel,
-                        icon: module.icon,
-                        color: module.color,
+                      child: _SubjectTile(
+                        module: module,
+                        topicCount: _topicCounts[module.id] ?? 0,
                         cardCount: _cardCounts[module.id] ?? 0,
                         isDark: isDark,
-                        onTap: () => _openFlashcards(module.id),
+                        onTap: () => _openSubject(module),
                       ),
                     )),
               ],
             ),
     );
   }
-
-  Future<void> _openFlashcards(String? subjectId) async {
-    await Navigator.push(
-      context,
-      AppRoute.slideUp(FlashcardScreen(subjectId: subjectId, isPreview: true)),
-    );
-  }
 }
 
-class _SubjectCard extends StatelessWidget {
-  final String label;
-  final String subtitle;
-  final IconData icon;
-  final Color color;
+class _SubjectTile extends StatelessWidget {
+  final SubjectModule module;
+  final int topicCount;
   final int cardCount;
   final bool isDark;
   final VoidCallback onTap;
 
-  const _SubjectCard({
-    required this.label,
-    required this.subtitle,
-    required this.icon,
-    required this.color,
+  const _SubjectTile({
+    required this.module,
+    required this.topicCount,
     required this.cardCount,
     required this.isDark,
     required this.onTap,
@@ -147,11 +131,11 @@ class _SubjectCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final glassBg = isDark
-        ? color.withValues(alpha: 0.07)
-        : color.withValues(alpha: 0.08);
+        ? module.color.withValues(alpha: 0.07)
+        : module.color.withValues(alpha: 0.08);
     final glassBorder = isDark
-        ? color.withValues(alpha: 0.25)
-        : color.withValues(alpha: 0.30);
+        ? module.color.withValues(alpha: 0.25)
+        : module.color.withValues(alpha: 0.30);
     final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
     final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
 
@@ -169,7 +153,7 @@ class _SubjectCard extends StatelessWidget {
               border: Border.all(color: glassBorder, width: 1.5),
               boxShadow: [
                 BoxShadow(
-                  color: color.withValues(alpha: 0.10),
+                  color: module.color.withValues(alpha: 0.10),
                   blurRadius: 20,
                   spreadRadius: 0,
                 ),
@@ -178,15 +162,20 @@ class _SubjectCard extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                  width: 52,
-                  height: 52,
+                  width: 48,
+                  height: 48,
                   decoration: BoxDecoration(
-                    color: color.withValues(alpha: 0.15),
-                    borderRadius: BorderRadius.circular(16),
-                    border: Border.all(
-                        color: color.withValues(alpha: 0.35), width: 1.2),
+                    gradient: LinearGradient(
+                      colors: [
+                        module.color.withValues(alpha: 0.25),
+                        module.color.withValues(alpha: 0.10),
+                      ],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    borderRadius: BorderRadius.circular(14),
                   ),
-                  child: Icon(icon, color: color, size: 24),
+                  child: Icon(module.icon, color: module.color, size: 24),
                 ),
                 const SizedBox(width: 16),
                 Expanded(
@@ -194,16 +183,18 @@ class _SubjectCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        label,
+                        module.name,
                         style: GoogleFonts.inter(
                           color: textColor,
                           fontSize: 16,
-                          fontWeight: FontWeight.w800,
+                          fontWeight: FontWeight.w700,
                         ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
                       ),
-                      const SizedBox(height: 3),
+                      const SizedBox(height: 4),
                       Text(
-                        subtitle,
+                        '$topicCount konu  ·  $cardCount içerik',
                         style: GoogleFonts.inter(
                           color: subColor,
                           fontSize: 12,
@@ -213,30 +204,7 @@ class _SubjectCard extends StatelessWidget {
                     ],
                   ),
                 ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    Text(
-                      '$cardCount',
-                      style: GoogleFonts.inter(
-                        color: color,
-                        fontSize: 22,
-                        fontWeight: FontWeight.w900,
-                      ),
-                    ),
-                    Text(
-                      'kart',
-                      style: GoogleFonts.inter(
-                        color: subColor,
-                        fontSize: 11,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(width: 4),
-                Icon(Icons.chevron_right_rounded,
-                    color: color.withValues(alpha: 0.6), size: 22),
+                Icon(Icons.chevron_right_rounded, color: subColor, size: 22),
               ],
             ),
           ),

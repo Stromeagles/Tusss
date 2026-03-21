@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter/foundation.dart' show defaultTargetPlatform, TargetPlatform;
 import '../../auth/auth_view_model.dart';
+import '../../services/auth_service.dart';
 import '../../theme/app_theme.dart';
 import '../home_screen.dart';
 import 'widgets/auth_text_field.dart';
@@ -52,6 +54,42 @@ class _LoginScreenState extends State<LoginScreen> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute<void>(builder: (_) => const HomeScreen()),
+      );
+    }
+  }
+
+  // ── Firebase Social Sign-In ──────────────────────────────────────────────
+  Future<void> _signInWithGoogle(BuildContext ctx) async {
+    try {
+      await AuthService.instance.signInWithGoogle();
+      // AuthWrapper stream'i otomatik olarak HomeScreen'e yonlendirecek
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(ctx).showSnackBar(
+        SnackBar(
+          content: Text('Google girisi basarisiz: $e'),
+          backgroundColor: AppTheme.error,
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          margin: const EdgeInsets.all(16),
+        ),
+      );
+    }
+  }
+
+  Future<void> _signInWithApple(BuildContext ctx) async {
+    try {
+      await AuthService.instance.signInWithApple();
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(ctx).showSnackBar(
+        SnackBar(
+          content: Text('Apple girisi basarisiz: $e'),
+          backgroundColor: AppTheme.error,
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          margin: const EdgeInsets.all(16),
+        ),
       );
     }
   }
@@ -246,7 +284,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return ClipRRect(
       borderRadius: BorderRadius.circular(24),
       child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+        filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
         child: Container(
           decoration: BoxDecoration(
             color: Colors.white.withValues(alpha: 0.05),
@@ -284,6 +322,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     pwCtrl: _pwCtrl,
                     onSubmit: () => _onSubmit(vm),
                     onGuest: () => _onGuest(vm),
+                    onGoogleSignIn: () => _signInWithGoogle(context),
+                    onAppleSignIn: () => _signInWithApple(context),
                   )
                 : _SignupForm(
                     key: const ValueKey('signup'),
@@ -347,6 +387,8 @@ class _LoginForm extends StatelessWidget {
     required this.pwCtrl,
     required this.onSubmit,
     required this.onGuest,
+    required this.onGoogleSignIn,
+    required this.onAppleSignIn,
   });
 
   final AuthViewModel         vm;
@@ -354,6 +396,8 @@ class _LoginForm extends StatelessWidget {
   final TextEditingController pwCtrl;
   final VoidCallback          onSubmit;
   final VoidCallback          onGuest;
+  final Future<void> Function() onGoogleSignIn;
+  final Future<void> Function() onAppleSignIn;
 
   @override
   Widget build(BuildContext context) {
@@ -448,16 +492,25 @@ class _LoginForm extends StatelessWidget {
         const SizedBox(height: 20),
 
         // Social buttons
-        const SocialButton(
+        SocialButton(
           label: 'Google ile Devam Et',
           icon: Icons.g_mobiledata_rounded,
+          onTap: onGoogleSignIn,
         ),
         const SizedBox(height: 10),
-        const SocialButton(
-          label: 'Apple ile Devam Et',
-          icon: Icons.apple_rounded,
-        ),
-        const SizedBox(height: 14),
+        // Apple butonu sadece iOS/macOS'ta gosterilir
+        if (defaultTargetPlatform == TargetPlatform.iOS ||
+            defaultTargetPlatform == TargetPlatform.macOS)
+          SocialButton(
+            label: 'Apple ile Devam Et',
+            icon: Icons.apple_rounded,
+            backgroundColor: Colors.white.withValues(alpha: 0.08),
+            onTap: onAppleSignIn,
+          ),
+        if (defaultTargetPlatform == TargetPlatform.iOS ||
+            defaultTargetPlatform == TargetPlatform.macOS)
+          const SizedBox(height: 10),
+        const SizedBox(height: 4),
 
         // Guest button
         OutlinedButton(

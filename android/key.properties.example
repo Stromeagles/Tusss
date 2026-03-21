@@ -1,0 +1,11 @@
+# ── Release Signing Config ─────────────────────────────────────────────────────
+# Bu dosyayi "key.properties" olarak kopyalayin ve kendi degerlerinizi girin.
+# UYARI: key.properties dosyasini ASLA git'e commitLEMEYIN!
+#
+# Keystore olusturmak icin:
+# keytool -genkey -v -keystore ~/tus-asistani-release.jks -keyalg RSA -keysize 2048 -validity 10000 -alias tus-asistani
+#
+storePassword=BURAYA_STORE_SIFRESI
+keyPassword=BURAYA_KEY_SIFRESI
+keyAlias=tus-asistani
+storeFile=BURAYA_KEYSTORE_DOSYA_YOLU

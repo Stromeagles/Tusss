@@ -29,7 +29,9 @@ import 'analytics_screen.dart';
 import 'subject_browser_screen.dart';
 import 'case_subject_screen.dart';
 import 'focus_screen.dart';
+import 'pomodoro_screen.dart';
 import '../services/focus_service.dart';
+import '../services/pomodoro_service.dart';
 
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║  HomeScreen                                                              ║
@@ -563,8 +565,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildFlashcardHub(bool isDark) {
     return _buildHubSection(
       isDark: isDark,
-      title: 'Bilgi Maratonu',
-      buttonLabel: 'KARTLARA BAŞLA',
+      title: 'FlashKartlar',
+      buttonLabel: 'FLASHKARTLAR',
       summary: _flashcardSummary,
       baseColor: AppTheme.cyan,
       folders: [
@@ -585,7 +587,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return _buildHubSection(
       isDark: isDark,
       title: 'Sorular',
-      buttonLabel: 'TÜM SORULAR',
+      buttonLabel: 'SORULAR',
       summary: _caseSummary,
       baseColor: const Color(0xFF6366F1), // Indigo
       folders: [
@@ -713,24 +715,41 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // ── Quick Actions ──────────────────────────────────────────────────────────
   Widget _buildQuickActions(bool isDark) {
+    final pomodoroService = Provider.of<PomodoroService>(context);
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: Row(
+      child: Column(
         children: [
-          Expanded(child: _QuickActionCard(
-            title: 'Bilgi Maratonu', subtitle: 'Flashcardlar',
-            icon: Icons.auto_awesome_motion_rounded,
-            color: const Color(0xFFF78166),
-            isDark: isDark, onTap: _navigateToFlashcards,
-          )),
-          const SizedBox(width: 14),
-          Expanded(child: _QuickActionCard(
-            title: 'Klinik Vaka', subtitle: 'Sorular',
-            icon: Icons.biotech_rounded,
-            color: const Color(0xFF79C0FF),
-            isDark: isDark, onTap: _navigateToCaseSubjects,
-            badge: '🎯 %${_progress.accuracy.toInt()}',
-          )),
+          Row(
+            children: [
+              Expanded(child: _QuickActionCard(
+                title: 'FlashKartlar', subtitle: 'Kartlarla Çalış',
+                icon: Icons.auto_awesome_motion_rounded,
+                color: const Color(0xFFF78166),
+                isDark: isDark, onTap: _navigateToFlashcards,
+              )),
+              const SizedBox(width: 14),
+              Expanded(child: _QuickActionCard(
+                title: 'Klinik Vaka', subtitle: 'Sorular',
+                icon: Icons.biotech_rounded,
+                color: const Color(0xFF79C0FF),
+                isDark: isDark, onTap: _navigateToCaseSubjects,
+                badge: '🎯 %${_progress.accuracy.toInt()}',
+              )),
+            ],
+          ),
+          const SizedBox(height: 14),
+          _QuickActionCard(
+            title: 'Pomodoro', subtitle: pomodoroService.isRunning ? pomodoroService.timerString : 'Zamanlayıcı',
+            icon: Icons.timer_rounded,
+            color: const Color(0xFF3FB950),
+            isDark: isDark,
+            onTap: () async {
+              await Navigator.push(context, AppRoute.slideUp(const PomodoroScreen()));
+              _loadData();
+            },
+            badge: pomodoroService.isRunning ? '▶' : null,
+          ),
         ],
       ),
     ).animate().fadeIn(duration: 600.ms, delay: 250.ms).slideY(begin: 0.12, end: 0);

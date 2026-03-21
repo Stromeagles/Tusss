@@ -156,7 +156,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
         return data != null && data.lastQuality == 2;
       }).toList();
     } else if (_mode == FlashcardMode.dueOnly) {
-      // HAZIRSAN BAŞLA önceliği: Bilemediklerim (due) → Yeni → Bildiklerim (due)
+      // Öncelikli kartlar: Bilemediklerim (due) → Yeni → Bildiklerim (due)
       final dueBilemediklerim = <Flashcard>[];
       final yeniKartlar       = <Flashcard>[];
       final dueBildiklerim    = <Flashcard>[];

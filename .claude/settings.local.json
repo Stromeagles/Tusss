@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter analyze:*)",
+      "Bash(find C:UsersceylaDesktoptustus_app_projecttus_asistaniios -type f -not -path */.symlinks/*)",
+      "Bash(ls:*)",
+      "Bash(find C:/Users/ceyla/Desktop/tus/tus_app_project/tus_asistani/android -maxdepth 4 -type f -name *.gradle* -o -name *.xml -o -name *.properties)",
+      "Bash(find C:/Users/ceyla/Desktop/tus/tus_app_project/tus_asistani/ios -maxdepth 3 -type f -name *.plist -o -name Podfile* -o -name *.pbxproj)",
+      "Bash(flutter --version)",
+      "Bash(flutter create:*)",
+      "Bash(flutter pub:*)",
+      "Bash(flutter build:*)",
+      "Bash(flutter doctor:*)",
+      "Bash(flutter devices:*)",
+      "Bash(mkdir -p \"C:/Users/ceyla/Desktop/tus/tus_app_project/tus_asistani/assets/icon\")",
+      "Bash(cp \"c:/Users/ceyla/.gemini/antigravity/brain/94498f59-14b1-4bb0-bf80-573cae1e670a/tus_asistani_icon_option_6_1774129612342.png\" \"C:/Users/ceyla/Desktop/tus/tus_app_project/tus_asistani/assets/icon/app_icon.png\")",
+      "Bash(dart run:*)"
+    ]
+  }
+}

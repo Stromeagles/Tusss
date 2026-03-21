@@ -10,6 +10,7 @@ import 'screens/home_screen.dart';
 import 'services/ai_service.dart';
 import 'services/auth_service.dart';
 import 'services/focus_service.dart';
+import 'services/pomodoro_service.dart';
 import 'services/notification_service.dart';
 import 'services/theme_service.dart';
 import 'widgets/responsive_wrapper.dart';
@@ -33,6 +34,7 @@ void main() async {
       providers: [
         ChangeNotifierProvider<AuthViewModel>(create: (_) => AuthViewModel()),
         ChangeNotifierProvider<FocusService>(create: (_) => FocusService()),
+        ChangeNotifierProvider<PomodoroService>(create: (_) => PomodoroService()),
       ],
       child: const TusAsistaniApp(),
     ),

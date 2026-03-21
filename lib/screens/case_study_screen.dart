@@ -347,7 +347,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
     if (_mode == CaseStudyMode.pocketOnly) return '⭐ Ezberim';
     if (_mode == CaseStudyMode.failedOnly) return '❌ Bilemediklerim';
     if (_mode == CaseStudyMode.learnedOnly) return '✅ Bildiklerim';
-    if (_mode == CaseStudyMode.dueOnly) return '🚀 Hazırsan Başla';
+    if (_mode == CaseStudyMode.dueOnly) return '🚀 Öncelikli Sorular';
     
     if (widget.topicFilter != null) return widget.topicFilter!.subTopic;
     if (widget.subjectId != null) return '${_subjectName(widget.subjectId!)} Vakaları';
@@ -716,7 +716,7 @@ class _CaseModeToggle extends StatelessWidget {
       color: AppTheme.surfaceVariant,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       itemBuilder: (context) => [
-        _buildItem(CaseStudyMode.dueOnly, '🚀 Hazırsan Başla', AppTheme.cyan),
+        _buildItem(CaseStudyMode.dueOnly, '🚀 Öncelikli Sorular', AppTheme.cyan),
         _buildItem(CaseStudyMode.failedOnly, '❌ Bilemediklerim', AppTheme.error),
         _buildItem(CaseStudyMode.learnedOnly, '✅ Bildiklerim', AppTheme.success),
         _buildItem(CaseStudyMode.pocketOnly, '⭐ Ezberim', AppTheme.neonGold),

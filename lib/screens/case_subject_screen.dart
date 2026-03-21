@@ -84,9 +84,9 @@ class _CaseSubjectScreenState extends State<CaseSubjectScreen> {
                 ),
                 const SizedBox(height: 12),
 
-                // Tüm Sorular
+                // Sorular
                 _CaseCard(
-                  label: 'Tüm Sorular',
+                  label: 'Sorular',
                   subtitle: 'Bütün branşları birlikte çöz',
                   icon: Icons.quiz_rounded,
                   color: const Color(0xFF79C0FF),

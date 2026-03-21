@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "876041819479",
+    "project_id": "tusai-2fb30",
+    "storage_bucket": "tusai-2fb30.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876041819479:android:825febdc34cbe8d4ef1a12",
+        "android_client_info": {
+          "package_name": "com.stromeagles.tusasistani"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-cH6EL52vJzaSX2pxxBSf894WkkYag38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

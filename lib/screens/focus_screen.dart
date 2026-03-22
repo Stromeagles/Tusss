@@ -1,18 +1,30 @@
+import 'dart:math';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_theme.dart';
 import '../services/focus_service.dart';
 
-class FocusScreen extends StatelessWidget {
+class FocusScreen extends StatefulWidget {
   const FocusScreen({super.key});
 
   @override
+  State<FocusScreen> createState() => _FocusScreenState();
+}
+
+class _FocusScreenState extends State<FocusScreen> {
+  // Pomodoro süreleri (dakika)
+  int _focusMinutes = 25;
+  int _breakMinutes = 5;
+  bool _isPomodoro = true; // true = Pomodoro geri sayım, false = Stopwatch
+
+  @override
   Widget build(BuildContext context) {
-    final focusService = Provider.of<FocusService>(context);
+    final service = Provider.of<FocusService>(context);
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return Scaffold(
@@ -21,36 +33,47 @@ class FocusScreen extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: isDark
-                ? const [Color(0xFF0D1117), Color(0xFF161B22)]
+                ? const [Color(0xFF080C12), Color(0xFF0D1117), Color(0xFF101820)]
                 : const [Color(0xFFF0F5FF), Color(0xFFE8F0FF)],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
           ),
         ),
         child: Stack(
           children: [
-            // Ambient Glows
-            Positioned(top: -100, right: -50,
-                child: _AmbientBlob(color: AppTheme.cyan, size: 300, opacity: isDark ? 0.12 : 0.05)),
-            Positioned(bottom: -50, left: -50,
-                child: _AmbientBlob(color: AppTheme.neonPurple, size: 250, opacity: isDark ? 0.10 : 0.04)),
+            // Ambient glow
+            Positioned(
+              top: -120, left: -80,
+              child: _BreathingBlob(
+                color: AppTheme.cyan, size: 350,
+                opacity: isDark ? 0.10 : 0.04,
+                isActive: service.isRunning,
+              ),
+            ),
+            Positioned(
+              bottom: -100, right: -60,
+              child: _BreathingBlob(
+                color: AppTheme.neonPurple, size: 280,
+                opacity: isDark ? 0.08 : 0.03,
+                isActive: service.isRunning,
+              ),
+            ),
 
             SafeArea(
               child: Column(
                 children: [
                   _buildHeader(context, isDark),
-                  Expanded(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        _buildTimerCircle(focusService, isDark),
-                        const SizedBox(height: 40),
-                        _buildControls(focusService, isDark),
-                      ],
-                    ),
-                  ),
-                  _buildSoundPicker(focusService, isDark),
-                  const SizedBox(height: 30),
+                  const Spacer(flex: 1),
+                  _buildTimerCircle(service, isDark),
+                  const SizedBox(height: 12),
+                  _buildStatusText(service, isDark),
+                  const Spacer(flex: 1),
+                  _buildControls(context, service, isDark),
+                  const SizedBox(height: 24),
+                  _buildSoundPicker(service, isDark),
+                  const SizedBox(height: 12),
+                  _buildStats(service, isDark),
+                  const SizedBox(height: 20),
                 ],
               ),
             ),
@@ -64,134 +87,403 @@ class FocusScreen extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconButton(
-            icon: Icon(Icons.arrow_back_ios_new_rounded, 
-                color: isDark ? Colors.white : AppTheme.lightTextPrimary, size: 20),
+            icon: Icon(Icons.arrow_back_ios_new_rounded,
+                color: isDark ? Colors.white60 : AppTheme.lightTextPrimary, size: 20),
             onPressed: () => Navigator.pop(context),
           ),
+          const Spacer(),
           Text(
             'FOCUS LAB',
             style: GoogleFonts.inter(
-              color: isDark ? Colors.white : AppTheme.lightTextPrimary,
-              fontSize: 14,
-              fontWeight: FontWeight.w900,
-              letterSpacing: 2.0,
+              color: isDark ? Colors.white54 : AppTheme.lightTextPrimary,
+              fontSize: 12, fontWeight: FontWeight.w800, letterSpacing: 3.0,
             ),
           ),
-          const SizedBox(width: 48), // Spacer
+          const Spacer(),
+          // Mod toggle
+          GestureDetector(
+            onTap: () {
+              final service = Provider.of<FocusService>(context, listen: false);
+              if (!service.isRunning) {
+                setState(() => _isPomodoro = !_isPomodoro);
+                HapticFeedback.selectionClick();
+              }
+            },
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              decoration: BoxDecoration(
+                color: (_isPomodoro ? AppTheme.cyan : AppTheme.neonPurple).withValues(alpha: 0.12),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(
+                  color: (_isPomodoro ? AppTheme.cyan : AppTheme.neonPurple).withValues(alpha: 0.3),
+                ),
+              ),
+              child: Text(
+                _isPomodoro ? 'Pomodoro' : 'Serbest',
+                style: GoogleFonts.inter(
+                  color: _isPomodoro ? AppTheme.cyan : AppTheme.neonPurple,
+                  fontSize: 11, fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
   }
 
   Widget _buildTimerCircle(FocusService service, bool isDark) {
-    final progress = 1.0 - (service.secondsRemaining / (25 * 60)); // Hardcoded 25 for now
-    
-    return Stack(
-      alignment: Alignment.center,
-      children: [
-        // Outer Glow
-        Container(
-          width: 260, height: 260,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            boxShadow: [
-              BoxShadow(
-                color: AppTheme.cyan.withValues(alpha: 0.15),
-                blurRadius: 40,
-                spreadRadius: 5,
-              ),
-            ],
-          ),
-        ),
-        // Progress Ring
-        SizedBox(
-          width: 240, height: 240,
-          child: CircularProgressIndicator(
-            value: progress,
-            strokeWidth: 8,
-            backgroundColor: isDark ? Colors.white.withValues(alpha: 0.05) : Colors.black.withValues(alpha: 0.05),
-            color: AppTheme.cyan,
-            strokeCap: StrokeCap.round,
-          ),
-        ),
-        // Timer Text
-        Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              service.timerString,
-              style: GoogleFonts.outfit(
-                color: isDark ? Colors.white : AppTheme.lightTextPrimary,
-                fontSize: 64,
-                fontWeight: FontWeight.w700,
-                letterSpacing: -2,
+    return GestureDetector(
+      onLongPress: service.isRunning ? null : () => _showDurationPicker(isDark),
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          // Dış glow
+          if (service.isRunning)
+            Container(
+              width: 280, height: 280,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: AppTheme.cyan.withValues(alpha: 0.12),
+                    blurRadius: 60, spreadRadius: 10,
+                  ),
+                ],
               ),
             ),
-            Text(
-              service.isRunning ? 'ODAKLANIYORSUN' : 'HAZIR',
-              style: GoogleFonts.inter(
-                color: AppTheme.cyan.withValues(alpha: 0.7),
-                fontSize: 10,
-                fontWeight: FontWeight.w800,
-                letterSpacing: 1.5,
+
+          // Ring
+          SizedBox(
+            width: 260, height: 260,
+            child: CustomPaint(
+              painter: _FlowRingPainter(
+                progress: _isPomodoro ? service.pomodoroProgress(_focusMinutes) : service.stopwatchProgress,
+                isActive: service.isRunning,
+                color: service.isBreak ? AppTheme.success : AppTheme.cyan,
+                trackColor: isDark
+                    ? Colors.white.withValues(alpha: 0.05)
+                    : Colors.black.withValues(alpha: 0.05),
               ),
             ),
-          ],
-        ),
-      ],
-    ).animate(target: service.isRunning ? 1 : 0)
-     .shimmer(duration: 2000.ms, color: AppTheme.cyan.withValues(alpha: 0.2));
+          ),
+
+          // Glass center
+          ClipOval(
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+              child: Container(
+                width: 210, height: 210,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: isDark
+                      ? Colors.white.withValues(alpha: 0.03)
+                      : Colors.white.withValues(alpha: 0.5),
+                  border: Border.all(
+                    color: isDark ? Colors.white.withValues(alpha: 0.06) : Colors.black.withValues(alpha: 0.04),
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+          // Timer text — tıklanabilir
+          GestureDetector(
+            onTap: service.isRunning ? null : () => _showDurationPicker(isDark),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                if (service.isBreak)
+                  Text(
+                    'MOLA',
+                    style: GoogleFonts.inter(
+                      color: AppTheme.success.withValues(alpha: 0.8),
+                      fontSize: 11, fontWeight: FontWeight.w800, letterSpacing: 2,
+                    ),
+                  ),
+                Text(
+                  _isPomodoro ? service.pomodoroString(_focusMinutes) : service.timerString,
+                  style: GoogleFonts.outfit(
+                    color: isDark ? Colors.white : AppTheme.lightTextPrimary,
+                    fontSize: 52, fontWeight: FontWeight.w600, letterSpacing: -1,
+                  ),
+                ),
+                if (!service.isRunning && !service.isBreak)
+                  Text(
+                    'Ayarlamak için dokun',
+                    style: GoogleFonts.inter(
+                      color: isDark ? Colors.white.withValues(alpha: 0.2) : Colors.black.withValues(alpha: 0.2),
+                      fontSize: 10, fontWeight: FontWeight.w600,
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
-  Widget _buildControls(FocusService service, bool isDark) {
+  Widget _buildStatusText(FocusService service, bool isDark) {
+    String text;
+    if (service.isBreak) {
+      text = 'Mola vaktinde rahatla...';
+    } else if (service.isRunning) {
+      text = 'Akışta kalıyorsun...';
+    } else if (service.elapsedSeconds > 0) {
+      text = 'Duraklatıldı';
+    } else {
+      text = _isPomodoro ? '$_focusMinutes dk odak / $_breakMinutes dk mola' : 'Serbest mod — sınırsız odak';
+    }
+
+    return Text(
+      text,
+      style: GoogleFonts.inter(
+        color: service.isRunning
+            ? (service.isBreak ? AppTheme.success : AppTheme.cyan).withValues(alpha: 0.7)
+            : (isDark ? Colors.white30 : Colors.black26),
+        fontSize: 13, fontWeight: FontWeight.w600, letterSpacing: 0.5,
+      ),
+    );
+  }
+
+  Widget _buildControls(BuildContext context, FocusService service, bool isDark) {
+    final hasElapsed = service.elapsedSeconds > 0;
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        if (hasElapsed) ...[
+          _ControlButton(
+            icon: Icons.stop_rounded, label: 'Bitir',
+            onTap: () {
+              HapticFeedback.mediumImpact();
+              _showSessionSummary(context, service);
+            },
+            primary: false, isDark: isDark,
+          ),
+          const SizedBox(width: 28),
+        ],
         _ControlButton(
           icon: service.isRunning ? Icons.pause_rounded : Icons.play_arrow_rounded,
+          label: service.isRunning ? 'Duraklat' : 'Başla',
           onTap: () {
             HapticFeedback.mediumImpact();
             if (service.isRunning) {
               service.pauseTimer();
             } else {
-              service.startTimer();
+              if (_isPomodoro) {
+                service.startPomodoro(_focusMinutes, _breakMinutes, onPhaseEnd: () => _showPhaseNotification(service));
+              } else {
+                service.startTimer();
+              }
             }
           },
-          primary: true,
-          isDark: isDark,
-        ),
-        const SizedBox(width: 20),
-        _ControlButton(
-          icon: Icons.refresh_rounded,
-          onTap: () {
-            HapticFeedback.lightImpact();
-            service.stopTimer();
-          },
-          primary: false,
-          isDark: isDark,
+          primary: true, isDark: isDark,
         ),
       ],
+    );
+  }
+
+  void _showPhaseNotification(FocusService service) {
+    if (!mounted) return;
+    HapticFeedback.mediumImpact();
+    final isBreak = service.isBreak;
+    final message = isBreak ? 'Harika! Şimdi Mola Zamanı.' : 'Mola Bitti, Yeni Odak!';
+    final color = isBreak ? AppTheme.success : AppTheme.cyan;
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Row(
+          children: [
+            Icon(isBreak ? Icons.coffee_rounded : Icons.local_fire_department_rounded,
+                color: Colors.white, size: 18),
+            const SizedBox(width: 10),
+            Text(message, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
+          ],
+        ),
+        backgroundColor: color.withValues(alpha: 0.9),
+        behavior: SnackBarBehavior.floating,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+        margin: const EdgeInsets.fromLTRB(20, 0, 20, 10),
+        duration: const Duration(seconds: 3),
+      ),
+    );
+  }
+
+  void _showSessionSummary(BuildContext context, FocusService service) {
+    final elapsed = service.endSession();
+    service.stopSound();
+    final minutes = elapsed ~/ 60;
+    final seconds = elapsed % 60;
+
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (ctx) => Container(
+        padding: const EdgeInsets.all(32),
+        decoration: const BoxDecoration(
+          color: Color(0xFF12161E),
+          borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(width: 40, height: 4,
+              decoration: BoxDecoration(color: Colors.white12, borderRadius: BorderRadius.circular(2))),
+            const SizedBox(height: 28),
+            Container(
+              width: 72, height: 72,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: LinearGradient(colors: [AppTheme.cyan, AppTheme.neonPurple]),
+              ),
+              child: const Icon(Icons.check_rounded, color: Colors.white, size: 36),
+            ),
+            const SizedBox(height: 20),
+            Text('Harika Odaklanma!',
+                style: GoogleFonts.outfit(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w700)),
+            const SizedBox(height: 8),
+            Text(
+              minutes > 0 ? '$minutes dk $seconds sn kesintisiz odaklandın.' : '$seconds sn odaklandın.',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.inter(color: AppTheme.textSecondary, fontSize: 14),
+            ),
+            const SizedBox(height: 28),
+            SizedBox(
+              width: double.infinity, height: 52,
+              child: ElevatedButton(
+                onPressed: () => Navigator.pop(ctx),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppTheme.cyan, foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                ),
+                child: Text('Tamam', style: GoogleFonts.inter(fontWeight: FontWeight.w700)),
+              ),
+            ),
+            const SizedBox(height: 12),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _showDurationPicker(bool isDark) {
+    int tempFocus = _focusMinutes;
+    int tempBreak = _breakMinutes;
+    final presets = [10, 15, 25, 45, 50];
+
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (ctx) => StatefulBuilder(
+        builder: (ctx, setSheetState) => Container(
+          padding: const EdgeInsets.all(24),
+          decoration: const BoxDecoration(
+            color: Color(0xFF12161E),
+            borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(width: 40, height: 4,
+                decoration: BoxDecoration(color: Colors.white12, borderRadius: BorderRadius.circular(2))),
+              const SizedBox(height: 20),
+              Text('Süre Ayarla', style: GoogleFonts.outfit(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w700)),
+              const SizedBox(height: 20),
+
+              // Preset chips
+              Text('ODAK SÜRESİ', style: GoogleFonts.inter(color: AppTheme.textSecondary, fontSize: 10, fontWeight: FontWeight.w800, letterSpacing: 1.5)),
+              const SizedBox(height: 10),
+              Wrap(
+                spacing: 10, runSpacing: 8,
+                children: presets.map((m) {
+                  final selected = tempFocus == m;
+                  return GestureDetector(
+                    onTap: () => setSheetState(() => tempFocus = m),
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
+                      decoration: BoxDecoration(
+                        color: selected ? AppTheme.cyan.withValues(alpha: 0.15) : Colors.white.withValues(alpha: 0.05),
+                        borderRadius: BorderRadius.circular(14),
+                        border: Border.all(color: selected ? AppTheme.cyan : Colors.transparent, width: 1.5),
+                      ),
+                      child: Text('$m dk',
+                        style: GoogleFonts.inter(
+                          color: selected ? AppTheme.cyan : Colors.white54,
+                          fontSize: 14, fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ),
+                  );
+                }).toList(),
+              ),
+              const SizedBox(height: 20),
+
+              // Mola süresi
+              Text('MOLA SÜRESİ', style: GoogleFonts.inter(color: AppTheme.textSecondary, fontSize: 10, fontWeight: FontWeight.w800, letterSpacing: 1.5)),
+              const SizedBox(height: 10),
+              Wrap(
+                spacing: 10,
+                children: [5, 10, 15].map((m) {
+                  final selected = tempBreak == m;
+                  return GestureDetector(
+                    onTap: () => setSheetState(() => tempBreak = m),
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
+                      decoration: BoxDecoration(
+                        color: selected ? AppTheme.success.withValues(alpha: 0.15) : Colors.white.withValues(alpha: 0.05),
+                        borderRadius: BorderRadius.circular(14),
+                        border: Border.all(color: selected ? AppTheme.success : Colors.transparent, width: 1.5),
+                      ),
+                      child: Text('$m dk',
+                        style: GoogleFonts.inter(
+                          color: selected ? AppTheme.success : Colors.white54,
+                          fontSize: 14, fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ),
+                  );
+                }).toList(),
+              ),
+              const SizedBox(height: 24),
+
+              SizedBox(
+                width: double.infinity, height: 50,
+                child: ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      _focusMinutes = tempFocus;
+                      _breakMinutes = tempBreak;
+                    });
+                    Navigator.pop(ctx);
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppTheme.cyan, foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                  ),
+                  child: Text('Kaydet', style: GoogleFonts.inter(fontWeight: FontWeight.w700)),
+                ),
+              ),
+              const SizedBox(height: 12),
+            ],
+          ),
+        ),
+      ),
     );
   }
 
   Widget _buildSoundPicker(FocusService service, bool isDark) {
     return Column(
       children: [
-        Text(
-          'ODAKLANMA SESİ',
-          style: GoogleFonts.inter(
-            color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
-            fontSize: 10,
-            fontWeight: FontWeight.w800,
-            letterSpacing: 1.0,
-          ),
-        ),
-        const SizedBox(height: 16),
+        Text('ORTAM SESİ',
+          style: GoogleFonts.inter(color: isDark ? Colors.white24 : AppTheme.lightTextSecondary,
+              fontSize: 9, fontWeight: FontWeight.w800, letterSpacing: 2.0)),
+        const SizedBox(height: 14),
         SizedBox(
-          height: 100,
+          height: 80,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -199,7 +491,6 @@ class FocusScreen extends StatelessWidget {
             itemBuilder: (context, index) {
               final sound = FocusSound.values[index];
               final isSelected = service.currentSound == sound;
-              
               return GestureDetector(
                 onTap: () {
                   HapticFeedback.selectionClick();
@@ -207,34 +498,23 @@ class FocusScreen extends StatelessWidget {
                 },
                 child: AnimatedContainer(
                   duration: const Duration(milliseconds: 300),
-                  width: 80,
-                  margin: const EdgeInsets.only(right: 12),
+                  width: 72, margin: const EdgeInsets.only(right: 10),
                   decoration: BoxDecoration(
-                    color: isSelected 
-                        ? AppTheme.cyan.withValues(alpha: 0.15)
-                        : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.black.withValues(alpha: 0.03)),
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(
-                      color: isSelected ? AppTheme.cyan : Colors.transparent,
-                      width: 1.5,
-                    ),
+                    color: isSelected
+                        ? AppTheme.cyan.withValues(alpha: 0.12)
+                        : (isDark ? Colors.white.withValues(alpha: 0.04) : Colors.black.withValues(alpha: 0.03)),
+                    borderRadius: BorderRadius.circular(18),
+                    border: Border.all(color: isSelected ? AppTheme.cyan.withValues(alpha: 0.5) : Colors.transparent, width: 1.5),
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(
-                        _getSoundIcon(sound),
-                        color: isSelected ? AppTheme.cyan : (isDark ? Colors.white54 : Colors.black54),
-                        size: 24,
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        sound.label,
-                        textAlign: TextAlign.center,
+                      Text(_getSoundEmoji(sound), style: const TextStyle(fontSize: 22)),
+                      const SizedBox(height: 6),
+                      Text(sound.label, textAlign: TextAlign.center,
                         style: GoogleFonts.inter(
-                          color: isSelected ? AppTheme.cyan : (isDark ? Colors.white38 : Colors.black38),
-                          fontSize: 9,
-                          fontWeight: FontWeight.w700,
+                          color: isSelected ? AppTheme.cyan : (isDark ? Colors.white30 : Colors.black38),
+                          fontSize: 9, fontWeight: FontWeight.w700,
                         ),
                       ),
                     ],
@@ -248,66 +528,102 @@ class FocusScreen extends StatelessWidget {
     );
   }
 
-  IconData _getSoundIcon(FocusSound sound) {
+  String _getSoundEmoji(FocusSound sound) {
     switch (sound) {
-      case FocusSound.none: return Icons.volume_off_rounded;
-      case FocusSound.lofi: return Icons.headphones_rounded;
-      case FocusSound.whiteNoise: return Icons.waves_rounded;
-      case FocusSound.rain: return Icons.water_drop_rounded;
-      case FocusSound.hospital: return Icons.local_hospital_rounded;
+      case FocusSound.none: return '🔇';
+      case FocusSound.rain: return '🌧️';
+      case FocusSound.library: return '📚';
+      case FocusSound.cafe: return '☕';
+      case FocusSound.whiteNoise: return '📻';
     }
   }
-}
 
-class _ControlButton extends StatelessWidget {
-  final IconData icon;
-  final VoidCallback onTap;
-  final bool primary;
-  final bool isDark;
-
-  const _ControlButton({
-    required this.icon,
-    required this.onTap,
-    required this.primary,
-    required this.isDark,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
+  Widget _buildStats(FocusService service, bool isDark) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 32),
       child: Container(
-        width: primary ? 80 : 60,
-        height: primary ? 80 : 60,
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
         decoration: BoxDecoration(
-          color: primary 
-              ? AppTheme.cyan 
-              : (isDark ? Colors.white.withValues(alpha: 0.1) : Colors.black.withValues(alpha: 0.05)),
-          shape: BoxShape.circle,
-          boxShadow: primary ? [
-            BoxShadow(
-              color: AppTheme.cyan.withValues(alpha: 0.4),
-              blurRadius: 20,
-              offset: const Offset(0, 8),
-            )
-          ] : [],
+          color: isDark ? Colors.white.withValues(alpha: 0.04) : Colors.white.withValues(alpha: 0.6),
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: isDark ? Colors.white.withValues(alpha: 0.06) : Colors.black.withValues(alpha: 0.05)),
         ),
-        child: Icon(
-          icon,
-          color: primary ? Colors.white : (isDark ? Colors.white : Colors.black),
-          size: primary ? 40 : 24,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            _StatChip(icon: Icons.schedule_rounded, label: 'Bugün', value: service.todayFocusFormatted, isDark: isDark),
+            Container(width: 1, height: 30, color: isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.1)),
+            _StatChip(icon: Icons.coffee_rounded, label: 'Mola', value: service.todayBreakFormatted, isDark: isDark),
+          ],
         ),
       ),
     );
   }
 }
 
-class _AmbientBlob extends StatelessWidget {
+// ═══════════════════════════════════════════════════════════════════════════════
+
+class _ControlButton extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final VoidCallback onTap;
+  final bool primary;
+  final bool isDark;
+
+  const _ControlButton({required this.icon, required this.label, required this.onTap, required this.primary, required this.isDark});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          AnimatedContainer(
+            duration: const Duration(milliseconds: 250),
+            width: primary ? 76 : 56, height: primary ? 76 : 56,
+            decoration: BoxDecoration(
+              color: primary ? AppTheme.cyan : (isDark ? Colors.white.withValues(alpha: 0.08) : Colors.black.withValues(alpha: 0.05)),
+              shape: BoxShape.circle,
+              border: primary ? null : Border.all(color: isDark ? Colors.white.withValues(alpha: 0.10) : Colors.black.withValues(alpha: 0.08)),
+              boxShadow: primary ? [BoxShadow(color: AppTheme.cyan.withValues(alpha: 0.35), blurRadius: 24, offset: const Offset(0, 8))] : [],
+            ),
+            child: Icon(icon, color: primary ? Colors.white : (isDark ? Colors.white60 : Colors.black45), size: primary ? 36 : 24),
+          ),
+          const SizedBox(height: 8),
+          Text(label, style: GoogleFonts.inter(color: isDark ? Colors.white30 : Colors.black38, fontSize: 10, fontWeight: FontWeight.w700)),
+        ],
+      ),
+    );
+  }
+}
+
+class _StatChip extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final String value;
+  final bool isDark;
+  const _StatChip({required this.icon, required this.label, required this.value, required this.isDark});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Icon(icon, color: isDark ? Colors.white24 : Colors.black26, size: 16),
+        const SizedBox(height: 4),
+        Text(value, style: GoogleFonts.inter(color: isDark ? Colors.white54 : Colors.black54, fontSize: 13, fontWeight: FontWeight.w700)),
+        Text(label, style: GoogleFonts.inter(color: isDark ? Colors.white.withValues(alpha: 0.2) : Colors.black26, fontSize: 9, fontWeight: FontWeight.w600)),
+      ],
+    );
+  }
+}
+
+class _BreathingBlob extends StatelessWidget {
   final Color color;
   final double size;
   final double opacity;
-
-  const _AmbientBlob({required this.color, required this.size, this.opacity = 0.10});
+  final bool isActive;
+  const _BreathingBlob({required this.color, required this.size, this.opacity = 0.10, this.isActive = false});
 
   @override
   Widget build(BuildContext context) {
@@ -315,11 +631,51 @@ class _AmbientBlob extends StatelessWidget {
       width: size, height: size,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        gradient: RadialGradient(colors: [
-          color.withValues(alpha: opacity),
-          color.withValues(alpha: 0.0),
-        ]),
+        gradient: RadialGradient(colors: [color.withValues(alpha: opacity), color.withValues(alpha: 0.0)]),
       ),
-    );
+    ).animate(
+      onPlay: (c) => isActive ? c.repeat(reverse: true) : null,
+      target: isActive ? 1 : 0,
+    ).scale(begin: const Offset(1.0, 1.0), end: const Offset(1.15, 1.15), duration: 4000.ms, curve: Curves.easeInOut)
+     .fadeIn(duration: 1000.ms);
   }
+}
+
+class _FlowRingPainter extends CustomPainter {
+  final double progress;
+  final bool isActive;
+  final Color color;
+  final Color trackColor;
+  _FlowRingPainter({required this.progress, required this.isActive, required this.color, required this.trackColor});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final center = Offset(size.width / 2, size.height / 2);
+    final radius = (size.width - 12) / 2;
+    const strokeWidth = 6.0;
+
+    canvas.drawCircle(center, radius, Paint()..color = trackColor..style = PaintingStyle.stroke..strokeWidth = strokeWidth..strokeCap = StrokeCap.round);
+
+    if (progress <= 0.001) return;
+
+    final sweepAngle = 2 * pi * progress.clamp(0.0, 1.0);
+    final progressPaint = Paint()
+      ..shader = SweepGradient(
+        startAngle: -pi / 2, endAngle: -pi / 2 + sweepAngle,
+        colors: [color.withValues(alpha: 0.4), color],
+        stops: const [0.0, 1.0],
+        transform: const GradientRotation(-pi / 2),
+      ).createShader(Rect.fromCircle(center: center, radius: radius))
+      ..style = PaintingStyle.stroke..strokeWidth = strokeWidth..strokeCap = StrokeCap.round;
+
+    canvas.drawArc(Rect.fromCircle(center: center, radius: radius), -pi / 2, sweepAngle, false, progressPaint);
+
+    final dotAngle = -pi / 2 + sweepAngle;
+    final dotCenter = Offset(center.dx + radius * cos(dotAngle), center.dy + radius * sin(dotAngle));
+    canvas.drawCircle(dotCenter, 6, Paint()..color = color.withValues(alpha: 0.25)..maskFilter = const MaskFilter.blur(BlurStyle.normal, 6));
+    canvas.drawCircle(dotCenter, 4, Paint()..color = color);
+  }
+
+  @override
+  bool shouldRepaint(_FlowRingPainter old) => old.progress != progress || old.isActive != isActive || old.color != color;
 }

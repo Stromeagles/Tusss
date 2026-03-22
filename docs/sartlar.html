@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanim Kosullari - TUS Asistani</title>
+    <meta name="description" content="TUS Asistani Kullanim Kosullari - Uygulamanin kullanimina iliskin sartlar ve kosullar.">
+    <link rel="icon" type="image/png" href="app_icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0A0E14; --surface: #12161E; --surface-2: #1A1F2B;
+            --border: #1E2533; --cyan: #00D4FF; --purple: #A855F7;
+            --text-primary: #F0F6FC; --text-secondary: #7B8BA3;
+        }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text-primary); line-height: 1.8; }
+        .bg-glow { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+        .bg-glow::before { content: ''; position: absolute; top: -200px; left: 50%; transform: translateX(-50%); width: 800px; height: 600px; background: radial-gradient(ellipse, rgba(0,212,255,0.07) 0%, transparent 70%); }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+        nav { padding: 20px 0; display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo img { width: 42px; height: 42px; border-radius: 10px; }
+        .logo span { font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700; color: var(--text-primary); }
+        .nav-links { display: flex; gap: 32px; }
+        .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--cyan); }
+        .content { padding: 60px 0 100px; }
+        .content h1 { font-family: 'Outfit', sans-serif; font-size: 36px; font-weight: 800; margin-bottom: 8px; }
+        .content .subtitle { color: var(--text-secondary); font-size: 14px; margin-bottom: 48px; }
+        .content h2 { font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700; margin-top: 40px; margin-bottom: 16px; color: var(--cyan); }
+        .content p { color: var(--text-secondary); font-size: 15px; margin-bottom: 16px; }
+        .content ul { color: var(--text-secondary); font-size: 15px; margin-bottom: 16px; padding-left: 24px; }
+        .content li { margin-bottom: 8px; }
+        .content strong { color: var(--text-primary); }
+        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px; margin: 24px 0; }
+        .warning { background: rgba(168,85,247,0.08); border-color: rgba(168,85,247,0.25); }
+        footer { border-top: 1px solid var(--border); padding: 32px 0; text-align: center; color: var(--text-secondary); font-size: 13px; }
+        footer a { color: var(--cyan); text-decoration: none; }
+        .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 12px; }
+        @media (max-width: 640px) {
+            .nav-links { display: none; }
+            .content h1 { font-size: 28px; }
+            .footer-links { flex-direction: column; gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <nav>
+        <a href="/" class="logo">
+            <img src="app_icon.png" alt="TUS Asistani">
+            <span>TUS Asistani</span>
+        </a>
+        <div class="nav-links">
+            <a href="/">Ana Sayfa</a>
+            <a href="/gizlilik.html">Gizlilik Politikasi</a>
+            <a href="/hesap-silme.html">Hesap Silme</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>Kullanim Kosullari</h1>
+            <p class="subtitle">Son guncelleme: 22 Mart 2026</p>
+
+            <p>TUS Asistani uygulamasini ("Uygulama") kullanarak asagidaki kosullari kabul etmis sayilirsiniz. Lutfen bu kosullari dikkatlice okuyunuz.</p>
+
+            <h2>1. Hizmet Tanimi</h2>
+            <p>TUS Asistani, Tipta Uzmanlik Sinavina (TUS) hazirlanan ogrenciler icin gelistirilmis bir <strong>egitim destek uygulamasidir</strong>. Uygulama flashcard'lar, vaka analizleri, yapay zeka destekli aciklamalar ve calisma araclari sunmaktadir.</p>
+
+            <div class="card warning">
+                <p><strong>Onemli Uyari:</strong> TUS Asistani bir egitim aracidir ve <strong>tibbi tavsiye vermez</strong>. Uygulamadaki icerikler, profesyonel tibbi gorus veya tedavi yerine gecmez. Saglik sorunlariniz icin her zaman bir saglik profesyoneline danismanizi oneririz.</p>
+            </div>
+
+            <h2>2. Hesap Olusturma</h2>
+            <p>Uygulamayi kullanmak icin Google, Apple veya e-posta ile bir hesap olusturmaniz gerekmektedir. Hesap bilgilerinizin dogrulugu ve guvenliginden siz sorumlusunuz.</p>
+
+            <h2>3. Kullanim Kurallari</h2>
+            <p>Uygulamayi kullanirken asagidaki kurallara uymaniz gerekmektedir:</p>
+            <ul>
+                <li>Uygulamayi yalnizca kisisel egitim amacli kullanmak</li>
+                <li>Icerik ve kartlari izinsiz cogaltmamak veya dagitmamak</li>
+                <li>Uygulamanin guvenligini tehdit edecek eylemlerde bulunmamak</li>
+                <li>Diger kullanicilarin deneyimini olumsuz etkilememek</li>
+            </ul>
+
+            <h2>4. Fikri Mulkiyet</h2>
+            <p>Uygulamadaki tum icerikler (flashcard'lar, vaka analizleri, gorseller, yazilim kodu) TUS Asistani'na aittir ve telif haklari ile korunmaktadir. Izinsiz kopyalama, dagitma veya ticari amacla kullanma yasaktir.</p>
+
+            <h2>5. Abonelik ve Odemeler</h2>
+            <p>Uygulama ucretsiz ve ucretli icerikler sunabilir. Ucretli icerikler icin:</p>
+            <ul>
+                <li>Odemeler Google Play veya Apple App Store uzerinden gerceklestirilir</li>
+                <li>Abonelikler otomatik olarak yenilenir; iptal islemini ilgili magaza uzerinden yapabilirsiniz</li>
+                <li>Iade talepleri Google Play veya Apple'in iade politikalarina tabidir</li>
+                <li>Ucretsiz deneme suresi sunulan aboneliklerde, sure sonunda otomatik ucretlendirme baslar</li>
+            </ul>
+
+            <h2>6. Yapay Zeka Kullanimi</h2>
+            <p>Uygulama, aciklama ve mnemonik uretimi icin yapay zeka teknolojisi (Anthropic Claude) kullanmaktadir. Yapay zeka tarafindan uretilen icerikler bilgilendirme amaclidir ve dogrulugu garanti edilmez.</p>
+
+            <h2>7. Hizmet Degisiklikleri</h2>
+            <p>TUS Asistani, uygulamanin ozelliklerini, icerigini veya fiyatlandirmasini onceden bildirimde bulunarak degistirme hakkini sakli tutar.</p>
+
+            <h2>8. Sorumluluk Sinirlamasi</h2>
+            <p>TUS Asistani, uygulamanin kullanimindan kaynaklanabilecek dogrudan veya dolayli zararlardan sorumlu tutulamaz. Uygulama "oldugu gibi" sunulmaktadir.</p>
+
+            <h2>9. Hesap Silme</h2>
+            <p>Hesabinizi ve iliskili tum verilerinizi istediginiz zaman silebilirsiniz. Detayli bilgi icin <a href="/hesap-silme.html">Hesap Silme Talebi</a> sayfamizi ziyaret edin.</p>
+
+            <h2>10. Iletisim</h2>
+            <p>Kullanim kosullari hakkinda sorulariniz icin:</p>
+            <div class="card">
+                <p><strong>E-posta:</strong> <a href="mailto:destek@klinoi.com">destek@klinoi.com</a></p>
+                <p><strong>Web:</strong> <a href="https://www.klinoi.com">www.klinoi.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/">Ana Sayfa</a>
+                <a href="/gizlilik.html">Gizlilik Politikasi</a>
+                <a href="/sartlar.html">Kullanim Kosullari</a>
+                <a href="/hesap-silme.html">Hesap Silme Talebi</a>
+                <a href="mailto:destek@klinoi.com">Iletisim</a>
+            </div>
+            <p>&copy; 2026 TUS Asistani. Tum haklari saklidir.</p>
+        </div>
+    </footer>
+</body>
+</html>

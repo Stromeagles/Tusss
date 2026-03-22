@@ -1,0 +1,699 @@
+{
+  "subject": "Anatomi",
+  "chapter": "Anatomi - Genel (Batch 3)",
+  "flashcards": [
+    {
+      "id": "anat_201",
+      "question": "Gebelikte desidua (gebeliğe hazırlanmış endometrium) gelişimini destekleyen ana hormon hangisidir?",
+      "answer": "[[Progesteron]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_202",
+      "question": "Prostat bezinin salgısı meninin yaklaşık yüzde kaçını oluşturur?",
+      "answer": "[[%30]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_203",
+      "question": "Testis torbası (Scrotum) içerisindeki ısının vücut ısısından düşük olmasını sağlayan termoregülasyon venöz ağı nedir?",
+      "answer": "[[Plexus pampiniformis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_204",
+      "question": "Vücutta kıkırdak dokusunda bulunmayan özellik nedir?",
+      "answer": "[[Kan damarı, lenf damarı ve sinir içermez]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_205",
+      "question": "Kulak zarının (Membrana tympani) gerginliğini ayarlayan M. tensor tympani kasının siniri hangisidir?",
+      "answer": "[[Nervus mandibularis]] ([[CN V3 dalı N. pterygoideus medialis]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_206",
+      "question": "Malleus, incus, stapes zincirindeki en küçük kemikçik hangisidir?",
+      "answer": "[[Stapes]] ([[Üzengi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_207",
+      "question": "Cranial sinir III (N. oculomotorius) gözdeki hangi parasempatik ganglion'da sinaps yapar?",
+      "answer": "[[Ganglion ciliare]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_208",
+      "question": "Cranial sinir VII (N. facialis) gözyaşı bezi (Glandula lacrimalis) için hangi ganglion'da sinaps yapar?",
+      "answer": "[[Ganglion pterygopalatinum]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_209",
+      "question": "Cranial sinir IX (N. glossopharyngeus) parotis bezi için hangi ganglion'da sinaps yapar?",
+      "answer": "[[Ganglion oticum]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_210",
+      "question": "Cranial sinir X (N. vagus) kalpte parasempatik etki için nerede sinaps yapar?",
+      "answer": "[[Hedef organın yakınındaki veya içindeki mikroskobik ganglionlarda]] ([[Terminal ganglion]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_211",
+      "question": "Memenin Montgomery tüberkülleri nerede yer alır?",
+      "answer": "[[Areola mammae]] ([[Meme başı çevresi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_212",
+      "question": "Beyincik tonsillerinin (Tonsilla cerebelli) foramen magnum'dan aşağı fıtıklaşmasına ne ad verilir?",
+      "answer": "[[Arnold-Chiari malformasyonu]] ([[veya serebellar fıtıklaşma]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_213",
+      "question": "Arteria meningea media, kafatasına hangi delikten (foramen) girer?",
+      "answer": "[[Foramen spinosum]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_214",
+      "question": "Büyük beyin veni (Vena cerebri magna - Galen veni) nereye dökülür?",
+      "answer": "[[Sinus rectus]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_215",
+      "question": "Kranial boşlukta dura mater'in iki beyni ortadan ayıran uzantısı neresidir?",
+      "answer": "[[Falx cerebri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_216",
+      "question": "Eksüda yapısındaki beyin-omurilik sıvısının aşırı birikimi (Hidrosefali) tedavisinde klasik olarak sıvının nereye şantlanması sağlanır?",
+      "answer": "[[Ventriculo-peritoneal]] ([[VP şant]]) boşluğa",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_217",
+      "question": "Otonomik ganglionlarda (hem sempatik hem parasempatik) asetilkolin salınan reseptör tipi nedir?",
+      "answer": "[[Nikotinik reseptörler]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_218",
+      "question": "Ön kolun ana fleksör kaslarına inervasyon sağlayan kas-sinir (dallarını da içeren) hangileridir?",
+      "answer": "[[Nervus medianus]] ([[çoğunluk]]) ve [[Nervus ulnaris]] ([[1.5 kas]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_219",
+      "question": "Trigonum femorale (Scarpa üçgeni) içinden geçen yapılarda en medialde olan yapı hangisidir?",
+      "answer": "[[Vena femoralis]] ([[Önemliyse VAN kuralı: İçe doğru Ven-Arter-Nerv]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_220",
+      "question": "Ayak bileğinin iç (medial) bağının (Ligamentum deltoideum) yırtılması hangi hareketle olur?",
+      "answer": "[[Aşırı eversiyon]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_221",
+      "question": "Ayak baş parmağının dışa dönük deformitesine ne ad verilir?",
+      "answer": "[[Hallux valgus]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_222",
+      "question": "Göz küresinin konjonktival hiperemi ve sulanması (Epifora) genellikle hangi kanaldaki tıkanıklıktan olur?",
+      "answer": "[[Ductus nasolacrimalis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_223",
+      "question": "Göz kapağının sarkması (Ptosis) hangi kasın veya sinirin etkisidir?",
+      "answer": "[[M. levator palpebrae superioris kasının]] ([[N. oculomotorius veya sempatik sinir levator hasarı]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_224",
+      "question": "Böbrek taşının üriner sistemden düşüşünde ağrının kasıklara vurmasının sebebi nedir?",
+      "answer": "[[Testis]] ve [[over ile böbreklerin aynı spinal yollarla]] ([[L1]]) duyusal bağlantısı",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_225",
+      "question": "Pelvis kemiklerinden leğen kemiği (Os coxae) hangi üç kemiğin birleşimidir?",
+      "answer": "[[Os ilium]], [[Os ischii]], [[Os pubis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_226",
+      "question": "Ligamentum inguinale (Poupart bağı), hangi yapılar arasındadır?",
+      "answer": "[[Spina iliaca anterior superior]] ([[SIAS]]) ile Tuberculum pubicum arası",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_227",
+      "question": "Lumbosakral pleksusun en kalın dalı hangisidir?",
+      "answer": "[[Nervus ischiadicus]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_228",
+      "question": "Nervus ischiadicus (Siyatik sinir) gluteal bölgeye hangi delikten çıkar?",
+      "answer": "[[Foramen ischiadicum majus]] ([[infrapiriform]]) 'dan",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_229",
+      "question": "Servikal vertebralardaki ayırt edici özellik processus transversus'taki hangi yapıdır?",
+      "answer": "[[Foramen transversarium]] ([[A. vertebralis geçer, C7 hariç genellikle C1-C6 arası]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_230",
+      "question": "Birinci boyun omuru (Atlas) ile ikinci boyun omuru (Axis) arasındaki dönme hareketini sağlayan diş şeklindeki yapıya ne ad verilir?",
+      "answer": "[[Dens axis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_231",
+      "question": "Oksipital kondiller ile atlas artikülasyonu omurgada hangi hareketi yaptırır?",
+      "answer": "[[Fleksiyon]] ve [[ekstansiyon]] ([[\"Evet\" hareketi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_232",
+      "question": "Atlas ile axis arasındaki atlantoaksiyal eklem hangi hareketi yaptırır?",
+      "answer": "[[Rotasyon]] ([[\"Hayır\" hareketi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_233",
+      "question": "Beyinde görme korteksi beslenmesi esas olarak hangi damardan sağlanır?",
+      "answer": "[[Arteria cerebri posterior]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_234",
+      "question": "Duysal korteks (Primer somatosensör korteks) beynin neresindedir?",
+      "answer": "[[Lobus parietalis (Gyrus postcentralis]], [[Alan 3]], [[1]], [[2)]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_235",
+      "question": "Lomber disklere (özellikle L4-L5 herniasyonlarında) bağlı kök basısında en sık hangi kök etkilenir?",
+      "answer": "[[Alt kök]] ([[Örn: L4-L5 diskinde L5 kökü etkilenir]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_236",
+      "question": "Sindirim kanalının miyenterik pleksusu kime aittir ve görevi nedir?",
+      "answer": "[[Auerbach pleksusu]] ([[Parasempatik-motor, peristaltizm sağlar]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_237",
+      "question": "Sindirim kanalının submukozal pleksusu kime aittir ve görevi nedir?",
+      "answer": "[[Meissner pleksusu (Salgı]] ve [[kan akımı ayarı)]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_238",
+      "question": "Waldeyer'in lenfatik halkasını (Tonsillar halka) oluşturan ana tonsillalar hangileridir?",
+      "answer": "[[Tonsilla pharyngealis, palatina, lingualis]] ve [[tubaria]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_239",
+      "question": "Özofagus kanserlerinin (yassı hücreli CA) lenfatik yolla yayılımı en sık nereye olur?",
+      "answer": "[[Mediastinal]] ve [[boyun lenf nodlarına]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_240",
+      "question": "Vena azygos nereye dökülür?",
+      "answer": "[[Vena cava superior]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_241",
+      "question": "Kalbin iletim sisteminde Atrioventriküler (AV) nod nerededir?",
+      "answer": "[[Septum interatriale'nin alt bölümünde]] ([[Koch üçgeninde]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_242",
+      "question": "Bronkopulmoner segment sayısı her iki akciğerde toplam kaçtır?",
+      "answer": "[[Genelde sağda 10, solda 8-10 arası]] ([[Toplam 20 kabul edilir]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_243",
+      "question": "Akciğerin hilum'unda hava yollarından (ana bronşlar) sonra en önde bulunan yapı hangisidir?",
+      "answer": "[[Vena pulmonalis superior]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_244",
+      "question": "Yutak (Pharynx) kaslarının çoğunu innerve eden sinir ağı hangisidir?",
+      "answer": "[[Plexus pharyngeus]] ([[CN IX, X ağırlıklı]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_245",
+      "question": "Larenks kaslarından sadece birini M. cricothyroideus'u N. laryngeus superior innerve eder. Diğerlerini kim innerve eder?",
+      "answer": "[[Nervus laryngeus recurrens]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_246",
+      "question": "Sol Nervus laryngeus recurrens (N. laryngeus inferior) arkus aorta seviyesinde altından dönerek yukarı çıkar. Sağ taraf nereden döner?",
+      "answer": "[[Arteria subclavia dextra altından döner.]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_247",
+      "question": "Dalak travmalarında komşu olan hangi organın yaralanma/yırtılma riski olabilir (sol fleksiyon hizası)?",
+      "answer": "[[Pankreas kuyruğu]] ([[cauda pancreatis]]) veya Diyafragma",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_248",
+      "question": "Pankreas başı kanserinde en erken çıkan klinik bulgu nedir?",
+      "answer": "[[Sarılık]] ([[Ductus choledochus tıkanır]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_249",
+      "question": "Göz kapağı tarsus bezi tıkanıklığına (kalaziom - meibomian cyst) ne ad verilir?",
+      "answer": "[[Chalazion]] ([[Glandula tarsalis tıkanıklığı]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_250",
+      "question": "Dudak köşesini aşağı çeken depresör mimik kası hangisidir?",
+      "answer": "[[M. depressor anguli oris]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_251",
+      "question": "Sternumun en alt parçasına ne ad verilir?",
+      "answer": "[[Processus xiphoideus]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_252",
+      "question": "Kotların (Costae) gerçek, yalancı ve yüzen sınıflandırması nasıldır?",
+      "answer": "[[İlk 7 çift gerçek (sternuma tutunur), 8-10 yalancı (kıkırdağa tutunur), 11-12 yüzen (costa fluctuantes)]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_253",
+      "question": "Ekskresyon / idrar üretimi nefronda başlar. İdrar toplama kanallarının (Ductus collectivus) en sonunda böbrek kalikslerine döküldüğü yerin adı nedir?",
+      "answer": "[[Papilla renalis]] ([[Porus urinarius]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_254",
+      "question": "Karında en büyük lenfatik yapı lenf damarlarının karnı çaprazladığı ağ olan yapıya?",
+      "answer": "[[Ductus thoracicus başlangıcı Cisterna chyli.]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_255",
+      "question": "Malleolus lateralis kas ve tendon komşulukları nedir?",
+      "answer": "[[M. fibularis]] ([[peroneus]]) longus ve [[brevis tendonları]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_256",
+      "question": "Alt ekstremite derin venlerinden vena poplitea diz arkası bölgede arterle komşuluğundan dolayı travmada ne tür şant / anevrizmaya neden olur?",
+      "answer": "[[Arteriovenöz fistül (Sıklıkla V. poplitea]] ve [[A. poplitea yaralanmaları nedeniyle)]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_257",
+      "question": "Fasciculus longitudinalis medialis (FLM) beyin sapında hangi sinir çekirdeklerini bağlar ve koordinasyon sağlar?",
+      "answer": "[[CN III, IV]] ve VI (Görme-bakış koordinasyonu için N. abducens ve [[N. oculomotorius çekirdeklerini)]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_258",
+      "question": "Beyincik hücrelerinden yalnızca hangi tip hücre serebellum korteksinden dışarı sinyal gönderir?",
+      "answer": "[[Purkinje hücreleri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_259",
+      "question": "Koku yollarında, duyusal sinapsın talamusa uğramadan direkt kortekse giden tek sistem olduğu doğru mudur?",
+      "answer": "Evet, koku yolları ([[N. olfactorius]]) talamusa uğramadan paleokortekse gider.",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_260",
+      "question": "Lokal anestezi kliniğinde, dilde ve alt çenede uyuşturulan ve pterygomandibular raphe'ye enjeksiyon yapılan blok hangisidir?",
+      "answer": "[[Nervus alveolaris inferior]] ([[N. mandibularis V3 dalı]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_261",
+      "question": "Ağzı kapattıran en güçlü kas (M. masseter) arcus zygomaticus'tan başlayıp nereye tutunur?",
+      "answer": "[[Ramus mandibulae]] ve [[angulus mandibulae dış yüzüne]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_262",
+      "question": "Glisson kapsülü (Capsula fibrosa perivascularis) hangi organı sarar?",
+      "answer": "[[Karaciğer]] ([[Hepar]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_263",
+      "question": "Portal ven, hepatik arter ve koledok kanalını içeren karaciğer triad'ı (Portal triad) hangi bağ içinde yer alır?",
+      "answer": "[[Ligamentum hepatoduodenale]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_264",
+      "question": "Kortikospinal traktus lezyonlarında Babinski işareti ne anlama gelir?",
+      "answer": "[[Üst motor nöron hasarı]] ([[Ayak tabanında dış yanı çizildiğinde parmakların dorsal fleksiyona / ekstansiyona gitmesi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_265",
+      "question": "Ön boyun üçgenlerinin (Trigonum cervicale anterius) ortak sınır kası hangisidir?",
+      "answer": "[[M. sternocleidomastoideus'un ön kenarı]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_266",
+      "question": "Karotid cisim (Glomus caroticum) fonksiyonu nedir?",
+      "answer": "[[Oksijen basıncına duyarlı bir kemoreseptördür.]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_267",
+      "question": "Karotid sinüs (Sinus caroticus) fonksiyonu nedir?",
+      "answer": "[[Kan basıncına duyarlı bir baroreseptördür.]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_268",
+      "question": "Aort arkusündeki baroreseptörlerin afferent sinyallerini taşıyan sinir hangisidir?",
+      "answer": "[[Nervus vagus]] ([[CN X]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_269",
+      "question": "Karotis sinüsünden afferent sinyalleri taşıyan sinir hangisidir?",
+      "answer": "[[Hering siniri / Nervus glossopharyngeus]] ([[CN IX]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_270",
+      "question": "Göğüs kafesi (Thorax) bölgesinde, 2. kosta (Costal cartilage) sternuma hangi çıkıntıda tutunur?",
+      "answer": "[[Angulus sterni]] ([[Louis açısı]]) hizasına.",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_271",
+      "question": "Beyin ventriküllerinin iç yüzeyini döşeyen hücre tabakasının adı nedir?",
+      "answer": "[[Ependim hücreleri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_272",
+      "question": "Medulla spinalis kesitinde hem motor hem de duyu lifleri içeren kısım hangisidir?",
+      "answer": "[[Spinal sinir]] ([[Nervus spinalis kökleri birleştikten sonraki ana gövde]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_273",
+      "question": "Plexus pampiniformis varikosel durumunda hangi sebeple genişler?",
+      "answer": "[[Özellikle sol testis veninin sol böbrek venine]] ([[V. renalis sinistra]]) dik açıyla bağlanmasından dolayı sol tarafta direncin yüksek olması",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_274",
+      "question": "Sağ testisin kanını toplayan vena testicularis dextra nereye dökülür?",
+      "answer": "[[Vena cava inferior]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_275",
+      "question": "Özofagusu saran kas tabakalarının türleri nasıldır?",
+      "answer": "[[Üst 1/3 çizgili kas, orta 1/3 çizgili ve düz kas karışık, alt 1/3 tamamen düz kas]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_276",
+      "question": "Karaciğerin fonksiyonel ünitesi (Lobulus hepatis) merkezinde ne yer alır?",
+      "answer": "[[Vena centralis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_277",
+      "question": "Timpanik membranın çizildiği, kulak ağrısının referans alanlarında yutak ve orta kulak iletimini taşıyan ana sinir?",
+      "answer": "[[Nervus glossopharyngeus]] ([[CN IX]]) ve N. vagus'un r. auricularis (Arnold siniri) dalı.",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    }
+  ]
+}

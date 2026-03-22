@@ -1,0 +1,43 @@
+[
+  {
+    "id": "micro-para-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Parazitoloji",
+    "topic": "Protozoonlar",
+    "sub_topic": "Bağırsak Protozoonları",
+    "content_summary": "Giardia ve Entamoeba gibi parazitleri içerir.",
+    "flashcards": [
+      {
+        "id": "fc-para-100",
+        "question": "Yağlı ishal (steatore) ve armut şeklinde trofozoitleri olan parazit?",
+        "answer": "Giardia lamblia."
+      },
+      {
+        "id": "fc-para-101",
+        "question": "Amipli dizanteri etkeni nedir?",
+        "answer": "Entamoeba histolytica."
+      }
+    ],
+    "tus_spots": [
+      "E. histolytica trofozoitlerinde eritrosit fagositosu patognomoniktir."
+    ]
+  },
+  {
+    "id": "micro-para-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Parazitoloji",
+    "topic": "Helmintler",
+    "sub_topic": "Nematodlar",
+    "content_summary": "Enterobius ve Ascaris gibi solucanları içerir.",
+    "flashcards": [
+      {
+        "id": "fc-para-110",
+        "question": "Çocuklarda perianal kaşıntı ve selobant testiyle tanı konan nedir?",
+        "answer": "Enterobius vermicularis (Kıl kurdu)."
+      }
+    ],
+    "tus_spots": [
+      "Loeffler sendromu Ascaris geçişi sırasında akciğerlerde görülebilir."
+    ]
+  }
+]

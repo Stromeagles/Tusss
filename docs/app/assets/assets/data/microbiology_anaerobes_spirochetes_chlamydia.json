@@ -1,0 +1,39 @@
+[
+  {
+    "id": "micro-asc-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Spiroketler",
+    "sub_topic": "Treponema pallidum (Sifiliz)",
+    "content_summary": "Sifiliz etkenidir. Primer dönemde ağrısız şankr görülür.",
+    "flashcards": [
+      {
+        "id": "fc-asc-100",
+        "question": "Sifiliz (Frengi) etkeni nedir?",
+        "answer": "Treponema pallidum."
+      }
+    ],
+    "tus_spots": [
+      "Primer sifilizde ağrısız şankr görülür.",
+      "Jarisch-Herxheimer reaksiyonu tedavi başında görülebilir."
+    ]
+  },
+  {
+    "id": "micro-asc-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Atipik Bakteriler",
+    "sub_topic": "Chlamydia trachomatis",
+    "content_summary": "Zorunlu hücre içi bakteridir. Trahom ve LGV nedenidir.",
+    "flashcards": [
+      {
+        "id": "fc-asc-110",
+        "question": "Chlamydia' nın enfeksiyöz formu hangisidir?",
+        "answer": "Elementer Cisim (EC)."
+      }
+    ],
+    "tus_spots": [
+      "Chlamydia ATP üretemez, 'enerji paraziti' dir."
+    ]
+  }
+]

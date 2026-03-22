@@ -216,26 +216,29 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget _buildLogoArea(AuthViewModel vm) {
     return Column(
       children: [
-        // Icon container
+        // App icon
         Container(
-          width: 80,
-          height: 80,
+          width: 90,
+          height: 90,
           decoration: BoxDecoration(
-            gradient: AppTheme.cyanGradient,
             borderRadius: BorderRadius.circular(22),
             boxShadow: [
               BoxShadow(
-                color: AppTheme.cyan.withValues(alpha: 0.35),
-                blurRadius: 24,
+                color: const Color(0xFF00D4FF).withValues(alpha: 0.30),
+                blurRadius: 28,
                 spreadRadius: 2,
                 offset: const Offset(0, 6),
               ),
             ],
           ),
-          child: const Icon(
-            Icons.psychology_rounded,
-            color: Colors.white,
-            size: 42,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(22),
+            child: Image.asset(
+              'assets/icon/app_icon.png',
+              width: 90,
+              height: 90,
+              fit: BoxFit.cover,
+            ),
           ),
         )
             .animate()
@@ -246,7 +249,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
         // App name
         Text(
-          'TUS Asistanı',
+          'AsisTus',
           style: GoogleFonts.outfit(
             fontSize: 28,
             fontWeight: FontWeight.w700,

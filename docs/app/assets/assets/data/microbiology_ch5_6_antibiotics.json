@@ -1,0 +1,130 @@
+[
+  {
+    "id": "micro-ch5-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Genel Mikrobiyoloji",
+    "topic": "Antimikrobiyaller",
+    "sub_topic": "Hücre Duvarı Sentez İnhibitörleri",
+    "content_summary": "Beta-laktamlar (Penisilin, Sefalosporin, Karbapenem) PBP'ye bağlanarak transpeptidasyonu inhibe eder. Glikopeptidler (Vankomisin) D-ala D-ala'ya bağlanır.",
+    "flashcards": [
+      {
+        "id": "fc-micro-100",
+        "question": "Beta-laktam antibiyotiklerin temel etki mekanizması nedir?",
+        "answer": "PBP'ye (Penisilin Bağlayan Protein) bağlanarak hücre duvarındaki transpeptidasyon (çapraz bağ) basamağını inhibe ederler.",
+        "difficulty": "medium",
+        "tags": [
+          "Beta Laktam",
+          "PBP"
+        ]
+      },
+      {
+        "id": "fc-micro-101",
+        "question": "Metisilin dirençli S. aureus (MRSA) suşlarında direncin genetik ve biyokimyasal temeli nedir?",
+        "answer": "mecA (veya mecC) geni aracılığıyla PBP'nin yapı değiştirerek PBP2a'ya dönüşmesidir.",
+        "difficulty": "hard",
+        "tags": [
+          "MRSA",
+          "mecA",
+          "PBP2a"
+        ]
+      },
+      {
+        "id": "fc-micro-102",
+        "question": "Vankomisin'in etki mekanizması nedir ve gram negatiflere neden etkisizdir?",
+        "answer": "Hücre duvarı öncüllerindeki D-alanin D-alanin ucuna bağlanır. Büyük molekül yapısı nedeniyle gram negatiflerin dış membranından geçemez.",
+        "difficulty": "medium",
+        "tags": [
+          "Vankomisin",
+          "D-ala-D-ala"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Aztreonam sadece gram negatif aerob basillere etkilidir (en dar spektrumlu beta-laktam).",
+      "Karbapenemler en geniş spektrumlu beta-laktamlardır; Ertapenem'in Pseudomonas etkinliği yoktur.",
+      "Vankomisin yan etkisi: Histamin salınımına bağlı 'Kırmızı Adam Sendromu'.",
+      "Sefazolin cerrahi profilakside ilk tercihtir."
+    ]
+  },
+  {
+    "id": "micro-ch5-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Genel Mikrobiyoloji",
+    "topic": "Antimikrobiyaller",
+    "sub_topic": "Protein Sentez İnhibitörleri",
+    "content_summary": "30S (Aminoglikozid, Tetrasiklin) ve 50S (Kloramfenikol, Makrolid, Klindamisin, Linezolid) alt ünitelerine bağlanarak etki ederler.",
+    "flashcards": [
+      {
+        "id": "fc-micro-110",
+        "question": "Aminoglikozidlerin (örn: Gentamisin) etki mekanizması nedir ve neden anaeroblara etkisizdirler?",
+        "answer": "30S alt üniteye irreversible bağlanıp inisiasyon kompleksini bozarlar. Hücre içine girişleri (uptake) için oksijen gerektiğinden anaeroblara etkisizdirler.",
+        "difficulty": "hard",
+        "tags": [
+          "Aminoglikozid",
+          "30S",
+          "Anaerob"
+        ]
+      },
+      {
+        "id": "fc-micro-111",
+        "question": "Aplastik anemi ve 'Gri Bebek Sendromu' yan etkileri hangi antibiyotiğe aittir?",
+        "answer": "Kloramfenikol.",
+        "difficulty": "medium",
+        "tags": [
+          "Kloramfenikol",
+          "Gri Bebek"
+        ]
+      },
+      {
+        "id": "fc-micro-112",
+        "question": "Kemik ve diş gelişimini bozduğu için gebelerde ve çocuklarda kontrendike olan antibiyotik grubu hangisidir?",
+        "answer": "Tetrasiklinler.",
+        "difficulty": "easy",
+        "tags": [
+          "Tetrasiklin"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Linezolid 50S'e bağlanarak inisiasyon kompleksini engeller; VRE ve MRSA pnömonisinde çok etkilidir.",
+      "Klindamisin psödomembranöz enterokolit (C. difficile) riskini en çok artıran ilaçlardandır.",
+      "Makrolitler (Eritromisin) motilin reseptörlerini uyararak ishale neden olabilir (diabetik gastroparezide kullanılır).",
+      "Kinolonlar (Siprofloksasin) DNA giraz (Topoizomeraz II) ve Topoizomeraz IV'ü inhibe eder."
+    ]
+  },
+  {
+    "id": "micro-ch6-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Genel Mikrobiyoloji",
+    "topic": "Bakteri Genetiği",
+    "sub_topic": "Gen Aktarım Mekanizmaları",
+    "content_summary": "Bakteriler arasında gen aktarımı Transformasyon (serbest DNA), Konjugasyon (pilus) ve Transdüksiyon (bakteriyofaj) ile olur.",
+    "flashcards": [
+      {
+        "id": "fc-micro-150",
+        "question": "Genetik bilginin ortamdaki 'çıplak' DNA aracılığıyla aktarılmasına ne denir ve DNaz eklenince neden durur?",
+        "answer": "Transformasyon. Ortamdaki serbest DNA, DNaz tarafından parçalandığı için aktarım durur.",
+        "difficulty": "medium",
+        "tags": [
+          "Transformasyon",
+          "DNaz"
+        ]
+      },
+      {
+        "id": "fc-micro-151",
+        "question": "F+ hücreden F- hücreye seks pilusu aracılığıyla plazmid aktarılmasına ne ad verilir?",
+        "answer": "Konjugasyon.",
+        "difficulty": "easy",
+        "tags": [
+          "Konjugasyon",
+          "F-pilus"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Transdüksiyon: Bir bakteriyofajın (virüs) bir bakteriden diğerine genetik bilgi taşımasıdır.",
+      "Transpozonlar (Sıçrayan Genler): Genom içinde veya plazmidler arasında yer değiştirebilen genetik elemanlardır.",
+      "Hfr hücre: F plazmidinin bakteri kromozomuna entegre olduğu hücredir."
+    ]
+  }
+]

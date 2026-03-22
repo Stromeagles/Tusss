@@ -1,0 +1,74 @@
+[
+  {
+    "id": "patho-neo-002",
+    "subject": "Patoloji",
+    "chapter": "Neoplazi",
+    "topic": "Tümör Tanısı ve Mezuniyet",
+    "sub_topic": "Grading ve Staging (TNM)",
+    "content_summary": "Diferansiyasyon (Gradying): Hücrelerin orijin dokuya benzerliği (I-IV). Evreleme (Staging): Tümörün vücuttaki yaygınlığı (TNM sistemi). Evreleme, prognoz için derecelemeden daha değerlidir.",
+    "flashcards": [
+      {
+        "id": "fc-patho-neo-200",
+        "question": "Karsinomların vücutta en sık yayılım yolu hangisidir?",
+        "answer": "Lenfatik yol (İstisna: Böbrek ve Karaciğer karsinomları hematojen yayılabilir)."
+      },
+      {
+        "id": "fc-patho-neo-201",
+        "question": "Sarkomların vücutta en sık yayılım yolu hangisidir?",
+        "answer": "Hematojen yol."
+      }
+    ],
+    "tus_spots": [
+      "Evreleme (Staging) klinik olarak prognozu belirlemede derecelemeden (grading) daha önemlidir.",
+      "TNM: T (Tümör çapı/derinliği), N (Lenf nodu tutulumu), M (Uzak metastaz)."
+    ]
+  },
+  {
+    "id": "patho-sys1-001",
+    "subject": "Patoloji",
+    "chapter": "Kardiyovasküler Sistem",
+    "topic": "Miyokard Enfarktüsü (MI)",
+    "sub_topic": "Morfolojik Zaman Çizelgesi",
+    "content_summary": "MI sonrası 0-12 saat: Işık mikroskobunda pek bulgu yok (dalgalı lifler). 12-24 saat: Koagülasyon nekrozu başlar. 1-3 gün: Yoğun nötrofil infiltrasyonu. 7-10 gün: Granülasyon dokusu (hasarın en yumuşak olduğu ve rüptür riskinin en yüksek olduğu dönem).",
+    "flashcards": [
+      {
+        "id": "fc-patho-sys1-210",
+        "question": "MI sonrası 1-3. günlerde gelişen perikardite ne ad verilir?",
+        "answer": "Fibrinöz perikardit."
+      },
+      {
+        "id": "fc-patho-sys1-211",
+        "question": "Akut romatizmal ateşte miyokardda görülen patognomonik granülom yapısına ne denir?",
+        "answer": "Aschoff cisimciği."
+      }
+    ],
+    "tus_spots": [
+      "Aschoff cisimciğinde 'Anitschkow' (tırtıl hücreleri) karakteristiktir.",
+      "MI sonrası ilk enzim artışı: Miyoglobin ve Troponin."
+    ]
+  },
+  {
+    "id": "patho-sys1-002",
+    "subject": "Patoloji",
+    "chapter": "Solunum Sistemi",
+    "topic": "KOAH ve Akciğer Tümörleri",
+    "sub_topic": "Amfizem ve Akciğer Kanserleri",
+    "content_summary": "Amfizem: Terminal bronşiyollerin distalindeki hava boşluklarının kalıcı genişlemesidir. Sigara içenlerde sentriasiner, alfa-1 antitiripsin eksikliğinde panasiner tip görülür.",
+    "flashcards": [
+      {
+        "id": "fc-patho-sys1-220",
+        "question": "Akciğerin en sık görülen primer malign tümörü hangisidir?",
+        "answer": "Adenokarsinom (Özellikle kadınlarda ve sigara içmeyenlerde de en sık)."
+      },
+      {
+        "id": "fc-patho-sys1-221",
+        "question": "Hangi akciğer tümörü santral yerleşimli olup kemoterapiye en iyi yanıtı verir?",
+        "answer": "Küçük hücreli karsinom (Small Cell Carcinoma)."
+      }
+    ],
+    "tus_spots": [
+      "Skuamöz hücreli karsinom ve Küçük hücreli karsinom santral yerleşimli ve sigara ile en ilişkilidir.",
+      "Bronşektazi için karakteristik olan: Gümüş boyası ile görülen 'Curshmann spiralleri' astımdadır (karıştırma)."
+    ]
+  }
+]

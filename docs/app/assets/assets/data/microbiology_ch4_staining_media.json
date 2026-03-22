@@ -1,0 +1,109 @@
+[
+  {
+    "id": "micro-ch4-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Genel Mikrobiyoloji",
+    "topic": "Boyama ve Mikroskopi",
+    "sub_topic": "Bakteriyel Boyalar",
+    "content_summary": "Gram boyama en sık kullanılandır; Gram(+) mor, Gram(-) pembe boyanır. Aside dirençli boyama (ARB) mikolikasit içerenler içindir.",
+    "flashcards": [
+      {
+        "id": "fc-micro-060",
+        "question": "Gram boyamada 'kritik basamak' hangisidir ve Gram negatiflerin boyayı bırakmasının nedeni nedir?",
+        "answer": "Alkol basamağıdır. Gram negatiflerin dış membranındaki lipidler çözünür, kristal viyole-iyot kompleksi dışarı sızar.",
+        "difficulty": "medium",
+        "tags": [
+          "Gram Boyama",
+          "Lipid"
+        ]
+      },
+      {
+        "id": "fc-micro-061",
+        "question": "Gram boyama ile boyanamayan 'L-formu' ve 'Hücre duvarı olmayan' bakterilere en iyi örnek nedir?",
+        "answer": "Mycoplasma ve Ureaplasma (Hücre duvarları olmadığı için boyanamazlar).",
+        "difficulty": "medium",
+        "tags": [
+          "Mycoplasma",
+          "Gram Boyama"
+        ]
+      },
+      {
+        "id": "fc-micro-062",
+        "question": "Karanlık saha mikroskobunda gösterilebilen, ışık mikroskobunda çok ince oldukları için görülemeyen bakteriler hangileridir?",
+        "answer": "Spiroketler (Treponema ve Leptospira).",
+        "difficulty": "medium",
+        "tags": [
+          "Spiroket",
+          "Mikroskopi"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Aside dirençli (ARB) boyananlar: Mycobacterium, Nocardia (kısmen), Cryptosporidium (parazit).",
+      "Ziehl-Neelsen boyamada örnek ısıtılır; Kinyoun yönteminde (soğuk) ısıtılmaz.",
+      "Kalkoflor beyazı: Mantar hücre duvarındaki kitine bağlanan floresan boyadır.",
+      "Pneumocystis saptanmasında Toluidin mavisi O ve Gümüşleme kullanılır."
+    ]
+  },
+  {
+    "id": "micro-ch4-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Genel Mikrobiyoloji",
+    "topic": "Kültür Besiyerleri",
+    "sub_topic": "Seçici ve Ayırt Edici Besiyerleri",
+    "content_summary": "Farklı mikroorganizmaları izole etmek için Kanlı agar (genel), Çikolata agar (H. influenzae), Thayer-Martin (Neisseria) gibi özel besiyerleri kullanılır.",
+    "flashcards": [
+      {
+        "id": "fc-micro-070",
+        "question": "Haemophilus influenzae ve Neisseria üretmek için kullanılan, eritrositlerin içindeki faktörlerin serbest kaldığı besiyeri hangisidir?",
+        "answer": "Çikolata Agar.",
+        "difficulty": "easy",
+        "tags": [
+          "Besiyeri",
+          "Haemophilus"
+        ]
+      },
+      {
+        "id": "fc-micro-071",
+        "question": "Mikobakteriler (Tüberküloz) için altın standart seçici besiyeri hangisidir?",
+        "answer": "Lowenstein-Jensen (LJ) besiyeri. (Katılaştırıcı olarak yumurta kullanılır).",
+        "difficulty": "medium",
+        "tags": [
+          "TBC",
+          "Besiyeri"
+        ]
+      },
+      {
+        "id": "fc-micro-072",
+        "question": "Vibrio cholerae izolasyonunda kullanılan ve V. cholerae'nın sükrozu fermente ederek sarı koloni yaptığı besiyeri hangisidir?",
+        "answer": "TCBS Agar.",
+        "difficulty": "hard",
+        "tags": [
+          "Vibrio",
+          "Sükroz",
+          "TCBS"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Legionella ve Francisella izolasyonu için BCYE (Sistein içeren) agar kullanılır.",
+      "Bordatella pertussis için Bordet-Gengau veya Regan-Lowe agar kullanılır.",
+      "C. difficile için CCFA agar, Yersinia için CIN agar (öküz gözü koloni) kullanılır.",
+      "Mannitol Salt Agar: S. aureus için ayırt edicidir (mannitolü fermente eder, sarı koloni)."
+    ],
+    "clinical_cases": [
+      {
+        "case": "Boğmaca şüphesiyle alınan nazofaringeal sürüntü örneği hangi özel besiyerine ekilmelidir?",
+        "options": [
+          "Lowenstein-Jensen",
+          "Thayer-Martin",
+          "Bordet-Gengau",
+          "TCBS"
+        ],
+        "correct_answer": "Bordet-Gengau",
+        "explanation": "Bordatella pertussis (Boğmaca) üretmek için Bordet-Gengau veya Regan-Lowe besiyerleri kullanılır.",
+        "id": "cc-micro-ch4-002-001"
+      }
+    ]
+  }
+]

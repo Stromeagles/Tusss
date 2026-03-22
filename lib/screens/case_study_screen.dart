@@ -9,6 +9,8 @@ import '../models/sm2_model.dart';
 import '../models/subject_registry.dart';
 import '../widgets/study_focus_timer.dart';
 import '../utils/error_handler.dart';
+import '../services/premium_service.dart';
+import '../widgets/paywall_widget.dart';
 
 enum CaseStudyMode { all, dueOnly, pocketOnly, newOnly, learnedOnly, failedOnly }
 
@@ -66,10 +68,26 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
   bool _aiLoading = false;
   String? _aiExplanation;
 
+  // Premium / Limit
+  final _premiumService = PremiumService();
+  bool _limitReached = false;
+
   @override
   void initState() {
     super.initState();
     _mode = widget.initialMode;
+    _checkLimitAndLoad();
+  }
+
+  Future<void> _checkLimitAndLoad() async {
+    final limitReached = await _premiumService.isCaseLimitReached();
+    if (limitReached && mounted) {
+      setState(() {
+        _limitReached = true;
+        _loading = false;
+      });
+      return;
+    }
     _loadCases();
   }
 
@@ -139,7 +157,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
       }).toList();
     } else if (_mode == CaseStudyMode.newOnly) {
       result = source.where((cc) => !allMap.containsKey(cc.id)).toList();
-      result.shuffle();
+      // Sıralı gösterim — shuffle yok
       if (widget.dailyGoal != null && widget.dailyGoal! > 0 && result.length > widget.dailyGoal!) {
         result = result.take(widget.dailyGoal!).toList();
       }
@@ -158,14 +176,14 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
           dueLearned.add(cc);
         }
       }
-      newCases.shuffle();
+      // Sıralı gösterim — shuffle yok
       if (widget.dailyGoal != null && widget.dailyGoal! > 0 && newCases.length > widget.dailyGoal!) {
         newCases.removeRange(widget.dailyGoal!, newCases.length);
       }
       result = [...dueFailed, ...newCases, ...dueLearned];
-      if (result.isEmpty) result = source..shuffle();
+      if (result.isEmpty) result = List.from(source);
     } else {
-      result = source..shuffle();
+      result = List.from(source);
     }
 
     if (mounted) {
@@ -206,6 +224,8 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
       _aiExplanation = null;
       if (answer == _currentCase.correctAnswer) _correctCount++;
     });
+    // Günlük sayacı artır
+    await _premiumService.incrementCase();
     if (!widget.isPreview) {
       _progressService.recordCaseAnswer(
           caseId: _currentCase.id,
@@ -238,9 +258,15 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
     }
   }
 
-  void _nextCase() {
+  Future<void> _nextCase() async {
     if (_isLast) {
       _showCompletionDialog();
+      return;
+    }
+    // Limit kontrolü
+    final limitReached = await _premiumService.isCaseLimitReached();
+    if (limitReached && mounted) {
+      setState(() => _limitReached = true);
       return;
     }
     setState(() {
@@ -344,13 +370,14 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
   }
 
   String get _title {
-    if (_mode == CaseStudyMode.pocketOnly) return '⭐ Ezberim';
-    if (_mode == CaseStudyMode.failedOnly) return '❌ Bilemediklerim';
-    if (_mode == CaseStudyMode.learnedOnly) return '✅ Bildiklerim';
-    if (_mode == CaseStudyMode.dueOnly) return '🚀 Öncelikli Sorular';
-    
+    if (_mode == CaseStudyMode.pocketOnly) return 'Favoriler';
+    if (_mode == CaseStudyMode.failedOnly) return 'Yanlışlar';
+    if (_mode == CaseStudyMode.learnedOnly) return 'Doğrular';
+    if (_mode == CaseStudyMode.newOnly) return 'Yeni Sorular';
+
     if (widget.topicFilter != null) return widget.topicFilter!.subTopic;
-    if (widget.subjectId != null) return '${_subjectName(widget.subjectId!)} Vakaları';
+    if (widget.subjectId != null) return _subjectName(widget.subjectId!);
+    if (_mode == CaseStudyMode.dueOnly) return 'Günün Tekrarları';
     return 'Klinik Vakalar';
   }
 
@@ -389,19 +416,35 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
             Center(
               child: Padding(
                 padding: const EdgeInsets.only(right: 16),
-                child: Text(
-                  '${_currentIndex + 1}/${_cases.length}',
-                  style: const TextStyle(
-                      color: AppTheme.cyan,
-                      fontWeight: FontWeight.w700,
-                      fontSize: 16),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      '${_currentIndex + 1} / ${_cases.length}',
+                      style: const TextStyle(
+                          color: AppTheme.cyan,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 15),
+                    ),
+                    if (widget.dailyGoal != null && widget.dailyGoal! > 0)
+                      Text(
+                        'Hedef: ${widget.dailyGoal}',
+                        style: TextStyle(
+                          color: AppTheme.neonGold.withValues(alpha: 0.8),
+                          fontWeight: FontWeight.w600,
+                          fontSize: 9,
+                        ),
+                      ),
+                  ],
                 ),
               ),
             ),
           ],
         ],
       ),
-      body: _loading
+      body: _limitReached
+          ? const PaywallWidget(type: 'soru', dailyLimit: PremiumService.dailyFreeCaseLimit)
+          : _loading
           ? const Center(
               child: CircularProgressIndicator(color: AppTheme.cyan))
           : _loadError
@@ -413,7 +456,16 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
                 )
               : _cases.isEmpty
                   ? _buildEmptyState()
-                  : _buildCaseContent(),
+                  : Column(
+                      children: [
+                        Expanded(child: _buildCaseContent()),
+                        if (_answered)
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
+                            child: _buildNextButton(),
+                          ),
+                      ],
+                    ),
     );
   }
 
@@ -435,8 +487,6 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
             _buildExplanationCard(),
             const SizedBox(height: 16),
             _buildAISection(),
-            const SizedBox(height: 20),
-            _buildNextButton(),
           ],
           const SizedBox(height: 32),
         ],
@@ -655,13 +705,32 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
   }
 
   Widget _buildNextButton() {
-    return ElevatedButton.icon(
-      onPressed: _nextCase,
-      icon: Icon(_isLast
-          ? Icons.done_all_rounded
-          : Icons.arrow_forward_rounded),
-      label:
-          Text(_isLast ? 'Oturumu Tamamla' : 'Sonraki Vaka'),
+    final isLast = _isLast;
+    return SizedBox(
+      width: double.infinity,
+      height: 54,
+      child: ElevatedButton.icon(
+        onPressed: _nextCase,
+        icon: Icon(
+          isLast ? Icons.done_all_rounded : Icons.arrow_forward_rounded,
+          size: 22,
+        ),
+        label: Text(
+          isLast ? 'Sonuçları Göster' : 'Sonraki Soru',
+          style: const TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.w700,
+            letterSpacing: 0.3,
+          ),
+        ),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: isLast ? AppTheme.neonGold : AppTheme.cyan,
+          foregroundColor: Colors.white,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          elevation: 6,
+          shadowColor: (isLast ? AppTheme.neonGold : AppTheme.cyan).withValues(alpha: 0.35),
+        ),
+      ),
     );
   }
 
@@ -716,11 +785,11 @@ class _CaseModeToggle extends StatelessWidget {
       color: AppTheme.surfaceVariant,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       itemBuilder: (context) => [
-        _buildItem(CaseStudyMode.dueOnly, '🚀 Öncelikli Sorular', AppTheme.cyan),
-        _buildItem(CaseStudyMode.failedOnly, '❌ Bilemediklerim', AppTheme.error),
-        _buildItem(CaseStudyMode.learnedOnly, '✅ Bildiklerim', AppTheme.success),
-        _buildItem(CaseStudyMode.pocketOnly, '⭐ Ezberim', AppTheme.neonGold),
-        _buildItem(CaseStudyMode.all, '📚 Tüm Vakalar', AppTheme.textSecondary),
+        _buildItem(CaseStudyMode.dueOnly, 'Günün Tekrarları', AppTheme.cyan),
+        _buildItem(CaseStudyMode.learnedOnly, 'Doğrular', AppTheme.success),
+        _buildItem(CaseStudyMode.failedOnly, 'Yanlışlar', AppTheme.error),
+        _buildItem(CaseStudyMode.pocketOnly, 'Favoriler', AppTheme.neonGold),
+        _buildItem(CaseStudyMode.all, 'Tüm Vakalar', AppTheme.textSecondary),
       ],
     );
   }
@@ -740,7 +809,7 @@ class _CaseModeToggle extends StatelessWidget {
 
   IconData _getIcon(CaseStudyMode m) {
     switch (m) {
-      case CaseStudyMode.dueOnly: return Icons.rocket_launch_rounded;
+      case CaseStudyMode.dueOnly: return Icons.replay_rounded;
       case CaseStudyMode.failedOnly: return Icons.cancel_rounded;
       case CaseStudyMode.learnedOnly: return Icons.check_circle_rounded;
       case CaseStudyMode.pocketOnly: return Icons.star_rounded;

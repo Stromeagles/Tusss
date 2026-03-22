@@ -13,6 +13,8 @@ import '../widgets/difficulty_badge_widget.dart';
 import '../models/subject_registry.dart';
 import '../widgets/study_focus_timer.dart';
 import '../utils/error_handler.dart';
+import '../services/premium_service.dart';
+import '../widgets/paywall_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 enum FlashcardMode { all, dueOnly, pocketOnly, newOnly, learnedOnly, failedOnly, criticalOnly }
@@ -61,10 +63,26 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   int _dragPctY = 0;
   int? _pendingQuality;
 
+  // Premium / Limit
+  final _premiumService = PremiumService();
+  bool _limitReached = false;
+
   @override
   void initState() {
     super.initState();
     _mode = widget.initialMode;
+    _checkLimitAndLoad();
+  }
+
+  Future<void> _checkLimitAndLoad() async {
+    final limitReached = await _premiumService.isFlashcardLimitReached();
+    if (limitReached && mounted) {
+      setState(() {
+        _limitReached = true;
+        _loading = false;
+      });
+      return;
+    }
     _loadCards();
   }
 
@@ -117,8 +135,8 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     final emoji = isBildim ? '✅' : '❌';
     final dayLabel = days == 1 ? 'Yarın' : '$days gün sonra';
     final message = isBildim
-        ? 'Bildim! $dayLabel tekrar sorulacak'
-        : 'Bilemedim! $dayLabel tekrar sorulacak';
+        ? 'Doğru! $dayLabel tekrar sorulacak'
+        : 'Yanlış! $dayLabel tekrar sorulacak';
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
@@ -171,7 +189,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           dueBildiklerim.add(fc);
         }
       }
-      yeniKartlar.shuffle();
+      // Sıralı gösterim — shuffle yok (Freemium: ücretsiz kullanıcı tüm havuzu tarayamasın)
       if (widget.dailyGoal != null && widget.dailyGoal! > 0 && yeniKartlar.length > widget.dailyGoal!) {
         yeniKartlar.removeRange(widget.dailyGoal!, yeniKartlar.length);
       }
@@ -180,7 +198,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     } else if (_mode == FlashcardMode.newOnly) {
       // Yeni: Hiç görülmemiş kartlar
       result = source.where((fc) => !allMap.containsKey(fc.id)).toList();
-      result.shuffle();
+      // Sıralı gösterim — shuffle yok
       if (widget.dailyGoal != null && widget.dailyGoal! > 0 && result.length > widget.dailyGoal!) {
         result = result.take(widget.dailyGoal!).toList();
       }
@@ -226,15 +244,15 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   }
 
   String get _title {
-    if (_mode == FlashcardMode.pocketOnly) return '⭐ Ezberim';
-    if (_mode == FlashcardMode.newOnly) return '🆕 Yeni Kartlar';
-    if (_mode == FlashcardMode.learnedOnly) return '✅ Bildiklerim';
-    if (_mode == FlashcardMode.criticalOnly) return '❌ Bilemediklerim';
-    if (_mode == FlashcardMode.failedOnly) return '❌ Bilemediklerim';
+    if (_mode == FlashcardMode.pocketOnly) return 'Favoriler';
+    if (_mode == FlashcardMode.newOnly) return 'Yeni Kartlar';
+    if (_mode == FlashcardMode.learnedOnly) return 'Doğrular';
+    if (_mode == FlashcardMode.criticalOnly) return 'Yanlışlar';
+    if (_mode == FlashcardMode.failedOnly) return 'Yanlışlar';
     if (widget.topicFilter != null) return widget.topicFilter!.subTopic;
     if (widget.subjectId != null) {
       final mod = SubjectRegistry.findById(widget.subjectId!);
-      return mod != null ? '${mod.name} Kartları' : 'Flash Kartlar';
+      return mod != null ? mod.name : 'Flash Kartlar';
     }
     return 'Flash Kartlar';
   }
@@ -247,6 +265,26 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
         title: Text(_title, style: const TextStyle(fontSize: 16)),
         actions: [
           const StudyFocusTimer(),
+          if (widget.dailyGoal != null && widget.dailyGoal! > 0 && !_loading && _cards.isNotEmpty)
+            Center(
+              child: Container(
+                margin: const EdgeInsets.only(right: 4),
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                decoration: BoxDecoration(
+                  color: AppTheme.neonGold.withValues(alpha: 0.12),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: AppTheme.neonGold.withValues(alpha: 0.3)),
+                ),
+                child: Text(
+                  '${_knownCount + _unknownCount}/${widget.dailyGoal} Hedef',
+                  style: TextStyle(
+                    color: AppTheme.neonGold.withValues(alpha: 0.9),
+                    fontSize: 11,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+            ),
           _ModeToggle(
             mode: _mode,
             onChanged: (m) async {
@@ -257,7 +295,9 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           const SizedBox(width: 8),
         ],
       ),
-      body: _loading
+      body: _limitReached
+          ? const PaywallWidget(type: 'flashcard', dailyLimit: PremiumService.dailyFreeFlashcardLimit)
+          : _loading
           ? const Center(
               child: CircularProgressIndicator(color: AppTheme.cyan))
           : _loadError
@@ -289,7 +329,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       child: Row(
         children: [
           _ScoreChip(
-              count: _knownCount, label: 'Öğrenildi', color: AppTheme.success),
+              count: _knownCount, label: 'Doğru', color: AppTheme.success),
           const Spacer(),
           Text(
             '${_currentIndex < _cards.length ? _currentIndex + 1 : _cards.length}/${_cards.length}',
@@ -301,7 +341,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           const Spacer(),
           _ScoreChip(
               count: _unknownCount,
-              label: 'Geçici Hafıza',
+              label: 'Yanlış',
               color: AppTheme.error),
         ],
       ),
@@ -364,10 +404,9 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             return false; // Sola swipe iptal → kart geri döner
           }
 
-          // → SAĞ: Ana Menü
+          // → SAĞ veya ↑ YUKARI: Bildim — her ikisi de aynı aksiyonu tetikler
           if (effectiveDir == CardSwiperDirection.right) {
-            if (mounted) Navigator.of(context).pop();
-            return true;
+            effectiveDir = CardSwiperDirection.top; // Sağ = Bildim
           }
 
           // ↑ YUKARI: Bildim (quality 2) | ↓ AŞAĞI: Bilemedim (quality 1)
@@ -383,7 +422,13 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             }
           }
 
+          // Günlük sayacı artır
+          _premiumService.incrementFlashcard();
+
           if (mounted) {
+            // Limit kontrolü
+            final limitReached = await _premiumService.isFlashcardLimitReached();
+
             setState(() {
               _swipeHistory.add(effectiveDir);
               if (effectiveDir == CardSwiperDirection.top) {
@@ -397,7 +442,10 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                 }
               }
               _currentIndex = curr ?? _currentIndex;
+              if (limitReached) _limitReached = true;
             });
+
+            if (limitReached) return false;
           }
           return true;
         },
@@ -413,7 +461,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             _dragPctY = percentThresholdY;
           }
 
-          // Feedback glow: yukarı → yeşil, aşağı → kırmızı
+          // Feedback glow: yukarı/sağ → yeşil (Doğru), aşağı → kırmızı (Yanlış)
           Color? glowColor;
           double intensity = 0.0;
 
@@ -423,6 +471,10 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           } else if (percentThresholdY > 0) {
             glowColor = AppTheme.error;
             intensity = (percentThresholdY / 100.0).clamp(0.0, 1.0);
+          } else if (percentThresholdX > 0) {
+            // Sağa kaydırma da "Bildim" — yeşil glow
+            glowColor = AppTheme.success;
+            intensity = (percentThresholdX / 100.0).clamp(0.0, 1.0);
           }
 
           return Stack(
@@ -480,7 +532,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                         ],
                       ),
                       child: Text(
-                        percentThresholdY < 0 ? '✅  Bildim' : '❌  Bilemedim',
+                        percentThresholdY < 0 ? '✅  Doğru' : '❌  Yanlış',
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 15,
@@ -564,7 +616,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
               TextButton(
                 onPressed: () => _applyMode(_allCards),
                 child: Text(
-                  'Bilemediklerimi Tekrarla ($_unknownCount)',
+                  'Yanlışları Tekrarla ($_unknownCount)',
                   style: const TextStyle(color: AppTheme.error, fontWeight: FontWeight.w700),
                 ),
               ),
@@ -612,7 +664,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
               color: AppTheme.textMuted.withValues(alpha: 0.40)),
           _HintChip(
               icon: Icons.arrow_downward_rounded,
-              label: 'Geçici',
+              label: 'Yanlış',
               color: AppTheme.error.withValues(alpha: 0.30)),
           _HintChip(
               icon: Icons.arrow_upward_rounded,
@@ -620,8 +672,8 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
               color: AppTheme.success.withValues(alpha: 0.30)),
           _HintChip(
               icon: Icons.arrow_forward_rounded,
-              label: 'Menü',
-              color: AppTheme.textMuted.withValues(alpha: 0.40)),
+              label: 'Doğru',
+              color: AppTheme.success.withValues(alpha: 0.30)),
         ],
       ),
     );
@@ -984,7 +1036,7 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
             Row(
               children: [
                 Expanded(child: _RatingButton(
-                  label: '❌  Bilemedim',
+                  label: '❌  Yanlış',
                   color: const Color(0xFFFF453A),
                   onTap: () {
                     setState(() => _lastQuality = 1);
@@ -993,7 +1045,7 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
                 )),
                 const SizedBox(width: 12),
                 Expanded(child: _RatingButton(
-                  label: '✅  Bildim',
+                  label: '✅  Doğru',
                   color: const Color(0xFF30D158),
                   onTap: () {
                     setState(() => _lastQuality = 2);
@@ -1124,13 +1176,13 @@ class _ModeToggle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final (label, icon, color) = switch (mode) {
-      FlashcardMode.dueOnly      => ('Öncelikli',     Icons.rocket_launch_rounded,  AppTheme.cyan),
-      FlashcardMode.pocketOnly   => ('Ezberim',        Icons.star_rounded,           AppTheme.neonGold),
+      FlashcardMode.dueOnly      => ('Günün Tekrarları', Icons.replay_rounded,  AppTheme.cyan),
+      FlashcardMode.pocketOnly   => ('Favoriler',       Icons.star_rounded,           AppTheme.neonGold),
       FlashcardMode.all          => ('Tümü',           Icons.all_inclusive_rounded,  AppTheme.textMuted),
       FlashcardMode.newOnly      => ('Yeni',           Icons.auto_awesome_rounded,   AppTheme.neonPurple),
-      FlashcardMode.learnedOnly  => ('Bildiklerim',    Icons.check_circle_rounded,   AppTheme.success),
-      FlashcardMode.failedOnly   => ('Bilemediklerim', Icons.cancel_rounded,         AppTheme.error),
-      FlashcardMode.criticalOnly => ('Bilemediklerim', Icons.cancel_rounded,         AppTheme.error),
+      FlashcardMode.learnedOnly  => ('Doğrular',       Icons.check_circle_rounded,   AppTheme.success),
+      FlashcardMode.failedOnly   => ('Yanlışlar',     Icons.cancel_rounded,         AppTheme.error),
+      FlashcardMode.criticalOnly => ('Yanlışlar',     Icons.cancel_rounded,         AppTheme.error),
     };
     return GestureDetector(
       onTap: () {

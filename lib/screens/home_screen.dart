@@ -23,15 +23,10 @@ import '../services/theme_service.dart';
 import '../utils/transitions.dart';
 import 'flashcard_screen.dart';
 import 'case_study_screen.dart';
-import 'flashcard_subject_screen.dart';
 import 'profile_screen.dart';
 import 'analytics_screen.dart';
-import 'subject_browser_screen.dart';
-import 'case_subject_screen.dart';
 import 'focus_screen.dart';
-import 'pomodoro_screen.dart';
 import '../services/focus_service.dart';
-import '../services/pomodoro_service.dart';
 
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║  HomeScreen                                                              ║
@@ -182,10 +177,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                   // ── Questions Hub (Sorular) ─────────────────────────────
                                   RepaintBoundary(child: _buildCaseHub(isDark)),
 
-                                  const SizedBox(height: 32),
-                                  _buildStreakBanner(isDark),
-                                  const SizedBox(height: 12),
-                                  _buildQuickActions(isDark),
                                   const SizedBox(height: 20),
                                 ],
                               ),
@@ -487,80 +478,6 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  // ── Streak Banner ─────────────────────────────────────────────────────────
-  Widget _buildStreakBanner(bool isDark) {
-    final streak = _progress.currentStreak;
-    if (streak == 0) return const SizedBox.shrink();
-
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 0, 20, 14),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              const Color(0xFFFF6B00).withValues(alpha: isDark ? 0.20 : 0.12),
-              const Color(0xFFFF3B30).withValues(alpha: isDark ? 0.10 : 0.06),
-            ],
-            begin: Alignment.centerLeft,
-            end: Alignment.centerRight,
-          ),
-          borderRadius: BorderRadius.circular(18),
-          border: Border.all(
-            color: const Color(0xFFFF6B00).withValues(alpha: 0.35),
-            width: 1.2,
-          ),
-        ),
-        child: Row(
-          children: [
-            Text('🔥', style: const TextStyle(fontSize: 22))
-                .animate(onPlay: (c) => c.repeat())
-                .shimmer(duration: 2000.ms, color: const Color(0xFFFFCC00)),
-            const SizedBox(width: 10),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    '$streak Gündür Aralıksız!',
-                    style: GoogleFonts.inter(
-                      color: isDark ? Colors.white : AppTheme.lightTextPrimary,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w900,
-                    ),
-                  ),
-                  Text(
-                    'Serini korumaya devam et 💪',
-                    style: GoogleFonts.inter(
-                      color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
-                      fontSize: 11,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-              decoration: BoxDecoration(
-                color: const Color(0xFFFF6B00).withValues(alpha: 0.18),
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: const Color(0xFFFF6B00).withValues(alpha: 0.4)),
-              ),
-              child: Text(
-                '🔥 $streak',
-                style: GoogleFonts.inter(
-                  color: const Color(0xFFFF6B00),
-                  fontSize: 16,
-                  fontWeight: FontWeight.w900,
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    ).animate().fadeIn(duration: 600.ms, delay: 150.ms).slideX(begin: -0.05, end: 0);
-  }
-
   // ── Flashcard Hub ──────────────────────────────────────────────────────────
   Widget _buildFlashcardHub(bool isDark) {
     return _buildHubSection(
@@ -688,7 +605,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    title.contains('Vaka') ? Icons.medical_services_rounded : Icons.rocket_launch_rounded,
+                    title.contains('Vaka') ? Icons.medical_services_rounded : Icons.replay_rounded,
                     color: Colors.white,
                     size: 20,
                   ),
@@ -713,140 +630,6 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  // ── Quick Actions ──────────────────────────────────────────────────────────
-  Widget _buildQuickActions(bool isDark) {
-    final pomodoroService = Provider.of<PomodoroService>(context);
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: Column(
-        children: [
-          Row(
-            children: [
-              Expanded(child: _QuickActionCard(
-                title: 'FlashKartlar', subtitle: 'Kartlarla Çalış',
-                icon: Icons.auto_awesome_motion_rounded,
-                color: const Color(0xFFF78166),
-                isDark: isDark, onTap: _navigateToFlashcards,
-              )),
-              const SizedBox(width: 14),
-              Expanded(child: _QuickActionCard(
-                title: 'Klinik Vaka', subtitle: 'Sorular',
-                icon: Icons.biotech_rounded,
-                color: const Color(0xFF79C0FF),
-                isDark: isDark, onTap: _navigateToCaseSubjects,
-                badge: '🎯 %${_progress.accuracy.toInt()}',
-              )),
-            ],
-          ),
-          const SizedBox(height: 14),
-          _QuickActionCard(
-            title: 'Pomodoro', subtitle: pomodoroService.isRunning ? pomodoroService.timerString : 'Zamanlayıcı',
-            icon: Icons.timer_rounded,
-            color: const Color(0xFF3FB950),
-            isDark: isDark,
-            onTap: () async {
-              await Navigator.push(context, AppRoute.slideUp(const PomodoroScreen()));
-              _loadData();
-            },
-            badge: pomodoroService.isRunning ? '▶' : null,
-          ),
-        ],
-      ),
-    ).animate().fadeIn(duration: 600.ms, delay: 250.ms).slideY(begin: 0.12, end: 0);
-  }
-
-  // ── Subject Carousel ───────────────────────────────────────────────────────
-  Widget _buildSubjectCarousel(bool isDark, {required bool isCards}) {
-    final modules  = SubjectRegistry.modules;
-    final title = isCards ? 'KART BRANŞLARI' : 'SORU BRANŞLARI';
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Flexible(child: Row(children: [
-                Flexible(child: Text(title,
-                  maxLines: 1, overflow: TextOverflow.ellipsis,
-                  style: GoogleFonts.inter(
-                    color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
-                    fontSize: 11, fontWeight: FontWeight.w800, letterSpacing: 1.2,
-                  ))),
-                const SizedBox(width: 8),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                  decoration: BoxDecoration(
-                    color:   (isCards ? AppTheme.cyan : AppTheme.neonPink).withValues(alpha: 0.15),
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: (isCards ? AppTheme.cyan : AppTheme.neonPink).withValues(alpha: 0.3), width: 1),
-                  ),
-                  child: Text('${modules.length}',
-                    style: GoogleFonts.inter(color: isCards ? AppTheme.cyan : AppTheme.neonPink, fontSize: 10, fontWeight: FontWeight.w800)),
-                ),
-              ])),
-            ],
-          ),
-        ),
-        const SizedBox(height: 12),
-        SizedBox(
-          height: 160,
-          child: ListView.builder(
-            scrollDirection: Axis.horizontal,
-            physics: const BouncingScrollPhysics(),
-            padding: const EdgeInsets.only(left: 20, right: 8),
-            itemCount: modules.length,
-            itemBuilder: (context, index) {
-              final module = modules[index];
-              final isActive  = _selectedSubjectId == module.id;
-              final moduleTopics = _topics.where((t) => t.subject == module.name).toList();
-              
-              int totalItems = 0;
-              int masteredCount = 0;
-              for (final t in moduleTopics) {
-                if (isCards) {
-                  for (final fc in t.flashcards) {
-                    totalItems++;
-                    final d = _sm2Data[fc.id];
-                    if (d != null && d.repetitions >= 2) masteredCount++;
-                  }
-                } else {
-                  for (final cc in t.clinicalCases) {
-                    if (cc.id.isEmpty) continue;
-                    totalItems++;
-                    final d = _sm2Data[cc.id];
-                    if (d != null && d.repetitions >= 2) masteredCount++;
-                  }
-                }
-              }
-              
-              final mastery = totalItems > 0 ? (masteredCount / totalItems).clamp(0.0, 1.0) : 0.0;
-
-              return _SubjectCarouselCard(
-                module: module, cardCount: totalItems,
-                progress: mastery, isActive: isActive, isDark: isDark,
-                onTap: () {
-                  setState(() => _selectedSubjectId = isActive ? null : module.id);
-                  _onModuleTap(module, moduleTopics, isCards: isCards);
-                },
-              );
-            },
-          ),
-        ),
-      ],
-    ).animate().fadeIn(duration: 700.ms, delay: 200.ms);
-  }
-
-  void _onModuleTap(SubjectModule module, List<Topic> topics, {required bool isCards}) async {
-    // Branş seçildiğinde doğrudan o branşın ilgili moduna git
-    _launchStudy(
-      isCards: isCards, 
-      mode: CaseStudyMode.all, 
-      subjectId: module.id
-    );
-  }
 
 
 
@@ -1035,21 +818,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: ListView(
                       physics: const BouncingScrollPhysics(),
                       children: [
-                        // TÜM DERSLER OPSİYONU
-                        _buildSubjectItem(
-                          title: 'Tüm Dersler',
-                          subtitle: 'Karışık ve yüksek verimli çalışma',
-                          icon: isCards ? Icons.auto_awesome_rounded : Icons.medical_services_rounded,
-                          color: isCards ? AppTheme.cyan : const Color(0xFF6366F1),
-                          isDark: isDark,
-                          onTap: () {
-                            Navigator.pop(context);
-                            _launchStudy(isCards: isCards, mode: CaseStudyMode.dueOnly, subjectId: null);
-                          },
-                        ),
-                        const SizedBox(height: 12),
-                        const Divider(height: 32),
-                        // BRANŞLAR
+                        // BRANŞLAR — kullanıcı spesifik branş seçmek zorunda
                         ...SubjectRegistry.modules.map((m) => Padding(
                           padding: const EdgeInsets.only(bottom: 12),
                           child: _buildSubjectItem(
@@ -1167,8 +936,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
     final items = [
       (Icons.home_rounded,           Icons.home_outlined,           'Home'),
-      (Icons.menu_book_rounded,      Icons.menu_book_outlined,      'Konular'),
-      (Icons.school_rounded,         Icons.school_outlined,         'Study'),
       (Icons.bar_chart_rounded,      Icons.bar_chart_outlined,      'Analiz'),
       (
         isFocusActive ? Icons.timer_rounded : Icons.timer_outlined,
@@ -1290,55 +1057,25 @@ class _HomeScreenState extends State<HomeScreen> {
   void _onNavTap(int index) async {
     setState(() => _navIndex = index);
     switch (index) {
-      case 0: break;
-      case 1:
-        await Navigator.push(context, AppRoute.slideUp(const SubjectBrowserScreen()));
-        _loadData();
-        break;
-      case 2: await _navigateToFlashcards(); break;
-      case 3:
+      case 0: break; // Home
+      case 1: // Analiz
         await Navigator.push(context, AppRoute.slideUp(ProgressAnalyticsScreen(user: _user, progress: _progress)));
         _loadData();
         break;
-      case 4:
+      case 2: // Odak
         await Navigator.push(context, AppRoute.slideUp(const FocusScreen()));
-        _loadData(); // Gerekirse verileri yenile
+        _loadData();
         break;
-      case 5:
+      case 3: // Profil
         await Navigator.push(context, AppRoute.slideUp(const ProfileScreen()));
         _loadData();
         break;
-      default:
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            content: Text('Yakında geliyor! 🚀',
-              style: GoogleFonts.inter(color: Colors.white, fontWeight: FontWeight.w700)),
-            backgroundColor: AppTheme.surfaceVariant,
-            behavior: SnackBarBehavior.floating,
-            margin: const EdgeInsets.fromLTRB(20, 0, 20, 10),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-          ));
-        }
     }
     if (mounted) setState(() => _navIndex = 0);
   }
 
 
 
-  Future<void> _navigateToFlashcards() async {
-    await Navigator.push(context, AppRoute.slideUp(const FlashcardSubjectScreen()));
-    _loadData();
-  }
-
-  Future<void> _navigateToCases() async {
-    await Navigator.push(context, AppRoute.slideUp(CaseStudyScreen(subjectId: _selectedSubjectId)));
-    _loadData();
-  }
-
-  Future<void> _navigateToCaseSubjects() async {
-    await Navigator.push(context, AppRoute.slideUp(const CaseSubjectScreen()));
-    _loadData();
-  }
 
 
   Widget _buildAiCoachNote(bool isDark) {
@@ -1452,221 +1189,6 @@ class _HomeScreenState extends State<HomeScreen> {
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║  Sub-Widgets                                                             ║
 // ╚══════════════════════════════════════════════════════════════════════════╝
-
-// ── Subject Carousel Card ──────────────────────────────────────────────────
-class _SubjectCarouselCard extends StatelessWidget {
-  final SubjectModule module;
-  final int           cardCount;
-  final double        progress;
-  final bool          isActive;
-  final bool          isDark;
-  final VoidCallback  onTap;
-
-  const _SubjectCarouselCard({
-    required this.module,   required this.cardCount,
-    required this.progress, required this.isActive,
-    required this.isDark,   required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final textColor = isDark ? Colors.white : AppTheme.lightTextPrimary;
-    final subColor  = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
-
-    final accentColor = isActive ? AppTheme.cyan : module.color;
-
-    return _PressableCard(
-      onTap: onTap,
-      child: Container(
-        width: 158, margin: const EdgeInsets.only(right: 14),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(22),
-          boxShadow: isActive
-              ? [
-                  BoxShadow(color: AppTheme.cyan.withValues(alpha: 0.42), blurRadius: 28, spreadRadius: 2),
-                  BoxShadow(color: AppTheme.cyan.withValues(alpha: 0.18), blurRadius: 50, spreadRadius: 6),
-                ]
-              : [
-                  BoxShadow(color: Colors.black.withValues(alpha: isDark ? 0.28 : 0.06),
-                      blurRadius: 14, offset: const Offset(0, 6)),
-                ],
-        ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(22),
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-            child: Container(
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: isActive
-                      ? [
-                          AppTheme.cyan.withValues(alpha: isDark ? 0.18 : 0.12),
-                          AppTheme.neonPurple.withValues(alpha: isDark ? 0.08 : 0.05),
-                        ]
-                      : [
-                          Colors.white.withValues(alpha: isDark ? 0.07 : 0.72),
-                          Colors.white.withValues(alpha: isDark ? 0.03 : 0.50),
-                        ],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
-                borderRadius: BorderRadius.circular(22),
-                border: Border.all(
-                  color: isActive
-                      ? AppTheme.cyan.withValues(alpha: isDark ? 0.65 : 0.45)
-                      : Colors.white.withValues(alpha: isDark ? 0.10 : 0.55),
-                  width: isActive ? 0.8 : 0.6,
-                ),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment:  MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(9),
-                    decoration: BoxDecoration(
-                      color: module.color.withValues(alpha: isActive ? 0.30 : 0.15),
-                      borderRadius: BorderRadius.circular(12),
-                      boxShadow: isActive
-                          ? [BoxShadow(color: module.color.withValues(alpha: 0.35), blurRadius: 12, spreadRadius: 1)]
-                          : [],
-                    ),
-                    child: Icon(module.icon, color: module.color, size: 20),
-                  ),
-                  Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    Text(module.shortLabel.toUpperCase(),
-                      maxLines: 1, overflow: TextOverflow.ellipsis,
-                      style: GoogleFonts.inter(color: textColor, fontSize: 13,
-                          fontWeight: FontWeight.w900, letterSpacing: 0.5)),
-                    const SizedBox(height: 2),
-                    Text('$cardCount kart',
-                      maxLines: 1, overflow: TextOverflow.ellipsis,
-                      style: GoogleFonts.inter(color: subColor, fontSize: 10, fontWeight: FontWeight.w600)),
-                    const SizedBox(height: 10),
-                    Text('${(progress * 100).toInt()}%',
-                      style: GoogleFonts.inter(
-                        color: accentColor,
-                        fontSize: 10, fontWeight: FontWeight.w800)),
-                    const SizedBox(height: 5),
-                    // Neon Line progress bar
-                    Container(
-                      height: 3,
-                      decoration: BoxDecoration(
-                        color: (isDark ? Colors.white : Colors.black).withValues(alpha: 0.07),
-                        borderRadius: BorderRadius.circular(2),
-                      ),
-                      child: FractionallySizedBox(
-                        alignment: Alignment.centerLeft,
-                        widthFactor: progress.clamp(0.0, 1.0),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              colors: [accentColor, accentColor.withValues(alpha: 0.6)],
-                            ),
-                            borderRadius: BorderRadius.circular(2),
-                            boxShadow: [
-                              BoxShadow(
-                                color: accentColor.withValues(alpha: 0.65),
-                                blurRadius: 6,
-                                spreadRadius: 1,
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ]),
-                ],
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-// ── Quick Action Card ──────────────────────────────────────────────────────
-class _QuickActionCard extends StatelessWidget {
-  final String       title;
-  final String       subtitle;
-  final IconData     icon;
-  final Color        color;
-  final bool         isDark;
-  final VoidCallback onTap;
-  final String?      badge;
-
-  const _QuickActionCard({
-    required this.title,    required this.subtitle,
-    required this.icon,     required this.color,
-    required this.isDark,   required this.onTap,
-    this.badge,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return _PressableCard(
-      onTap: onTap,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(22),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-          child: Container(
-            padding: const EdgeInsets.all(18),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: isDark
-                    ? [color.withValues(alpha: 0.14), color.withValues(alpha: 0.04)]
-                    : [color.withValues(alpha: 0.10), Colors.white.withValues(alpha: 0.70)],
-                begin: Alignment.topLeft, end: Alignment.bottomRight,
-              ),
-              borderRadius: BorderRadius.circular(22),
-              border: Border.all(color: color.withValues(alpha: isDark ? 0.28 : 0.20), width: 1.0),
-              boxShadow: [
-                BoxShadow(color: color.withValues(alpha: isDark ? 0.18 : 0.10),
-                    blurRadius: 20, offset: const Offset(0, 8)),
-              ],
-            ),
-            child: Stack(
-              children: [
-                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Container(
-                    padding: const EdgeInsets.all(9),
-                    decoration: BoxDecoration(
-                      color: color.withValues(alpha: 0.22), shape: BoxShape.circle,
-                      boxShadow: [BoxShadow(color: color.withValues(alpha: 0.30), blurRadius: 10, spreadRadius: 1)],
-                    ),
-                    child: Icon(icon, color: color, size: 20),
-                  ),
-                  const SizedBox(height: 14),
-                  Text(subtitle,
-                    style: GoogleFonts.inter(color: color.withValues(alpha: 0.75),
-                        fontWeight: FontWeight.w700, fontSize: 11)),
-                ]),
-                if (badge != null)
-                  Positioned(
-                    top: 0, right: 0,
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
-                      decoration: BoxDecoration(
-                        color: color.withValues(alpha: 0.18),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(color: color.withValues(alpha: 0.40)),
-                      ),
-                      child: Text(badge!,
-                        style: GoogleFonts.inter(
-                          color: color, fontSize: 10, fontWeight: FontWeight.w800)),
-                    ),
-                  ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
 
 // ── Ambient Blob ───────────────────────────────────────────────────────────
 class _AmbientBlob extends StatelessWidget {
@@ -1994,7 +1516,7 @@ class _InfoSheet extends StatelessWidget {
                       Text('Nasıl Çalışır?',
                           style: GoogleFonts.inter(
                               color: textColor, fontSize: 20, fontWeight: FontWeight.w800)),
-                      Text('TUS Asistanı Öğrenme Sistemi',
+                      Text('AsisTus Öğrenme Sistemi',
                           style: GoogleFonts.inter(
                               color: subColor, fontSize: 12, fontWeight: FontWeight.w500)),
                     ],
@@ -2010,55 +1532,43 @@ class _InfoSheet extends StatelessWidget {
                 children: [
                   _InfoSection(
                     isDark: isDark,
+                    icon: Icons.timer_rounded,
+                    color: AppTheme.neonGold,
+                    title: 'Günlük Limitler',
+                    body:
+                        'Her gün sana özel ücretsiz bir soru ve kart çözme kotası ayrılır. '
+                        'Günlük limitini doldurduktan sonra yeni sorulara erişmek için ertesi günü bekleyebilir '
+                        'veya sınırsız erişim için Premium\'a geçebilirsin.',
+                  ),
+                  _InfoSection(
+                    isDark: isDark,
                     icon: Icons.repeat_rounded,
                     color: AppTheme.cyan,
-                    title: 'Aralıklı Tekrar (SM-2)',
+                    title: 'Akıllı Tekrar Algoritması',
                     body:
-                        'Uygulama, SM-2 algoritmasını kullanır. Her kart için doğru cevap verdiğinde tekrar aralığı uzar; yanlış cevap verdiğinde kart sıfırlanarak yakında tekrar karşına çıkar. Bu sayede beynin uzun süreli belleğe aktarma sürecine uyum sağlanır.',
+                        'Sistem sadece rastgele soru getirmez. Aralıklı tekrar (Spaced Repetition) algoritması '
+                        'ile "Bilemediklerini" ve tam unutmak üzereyken "Tekrar Vakti Gelen Bildiklerini" '
+                        'otomatik olarak önüne getirir. Zorlandığın kartlar daha sık, kolay kartlar daha seyrek gelir.',
                   ),
                   _InfoSection(
                     isDark: isDark,
-                    icon: Icons.speed_rounded,
+                    icon: Icons.bar_chart_rounded,
                     color: AppTheme.neonPurple,
-                    title: 'Ease Factor (Zorluk Çarpanı)',
+                    title: 'Ustalık (Gidişat Analizi)',
                     body:
-                        'Her kart için bir Ease Factor (varsayılan 2.5) tutulur. '
-                        '"Bildim" dediğinde yeni aralık = eski aralık × EF olur ve EF +0.1 artar. '
-                        '"Bilemedim" dediğinde aralık 1 güne düşer ve EF −0.2 azalır (min 1.3). '
-                        'Böylece zorlandığın kartlar daha sık, kolay kartlar daha seyrek gelir — '
-                        'TUS gibi geniş kapsamlı sınavlarda ezber verimliliğini katlayan bir sistemdir.',
+                        'İstatistiklerdeki branş hakimiyet barlarının dolması için bir soruyu sadece 1 kez değil, '
+                        'en az 3 kez üst üste "Bildim" olarak yanıtlaman gerekir. '
+                        'Böylece gerçekten öğrendiğin konular yüzdeliğe yansır.',
                   ),
                   _InfoSection(
                     isDark: isDark,
-                    icon: Icons.flag_rounded,
-                    color: AppTheme.warning,
-                    title: 'Günlük Hedef',
-                    body:
-                        'Ana sayfadaki daire, bugünkü çalışma hedefinle ne kadar ilerlediğini gösterir. Yalnızca "BAŞLA" butonuyla başlattığın seanslar bu hedefe sayılır. Branş veya konu ekranlarından yapılan çalışmalar önizleme modunda çalışır ve hedefi etkilemez.',
-                  ),
-                  _InfoSection(
-                    isDark: isDark,
-                    icon: Icons.warning_amber_rounded,
-                    color: const Color(0xFFFF453A),
-                    title: 'Kritik Kartlar',
-                    body:
-                        '"⚠️ Kritik" butonuna bastığın kartlar Kritik havuzuna düşer. Bu kartlar en öncelikli tekrar grubundur. Ana sayfadaki kırmızı "Kritik Kartlar" butonu bu havuzu açar.',
-                  ),
-                  _InfoSection(
-                    isDark: isDark,
-                    icon: Icons.visibility_off_rounded,
-                    color: AppTheme.neonPurple,
-                    title: 'Önizleme Modu',
-                    body:
-                        'Branş seçimi veya konu detay sayfasından başlatılan seanslar önizleme modunda çalışır. Bu modda yaptığın cevaplar veritabanına kaydedilmez; SRS, günlük hedef ve seri etkilenmez. Özgürce incelemek için kullanabilirsin.',
-                  ),
-                  _InfoSection(
-                    isDark: isDark,
-                    icon: Icons.local_fire_department_rounded,
+                    icon: Icons.psychology_rounded,
                     color: const Color(0xFFFF9F0A),
-                    title: 'Seri (Streak)',
+                    title: 'Zayıf Konular (Eksik Kapatma)',
                     body:
-                        'Her gün en az 1 kart çalışırsan serin devam eder. Bir gün atlarsın serini sıfırlanır. Tutarlılık, TUS\'ta başarının temelidir.',
+                        'AI Asistan sekmesi tamamen senin kişisel eksiklerini kapatmak için tasarlandı. '
+                        'İstatistiklerini yorumlayarak en çok zorlandığın konuları tespit eder ve '
+                        '"Bilemediklerini" eritmeye odaklı kişiselleştirilmiş bir çalışma planı sunar.',
                   ),
                   const SizedBox(height: 32),
                 ],

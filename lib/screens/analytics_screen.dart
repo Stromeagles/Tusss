@@ -5,6 +5,7 @@ import '../models/user_model.dart';
 import '../models/progress_model.dart';
 import '../models/subject_registry.dart';
 import '../services/data_service.dart';
+import '../services/spaced_repetition_service.dart';
 
 class ProgressAnalyticsScreen extends StatefulWidget {
   final UserProfile user;
@@ -31,25 +32,41 @@ class _ProgressAnalyticsScreenState extends State<ProgressAnalyticsScreen> {
 
   Future<List<_SubjectMasteryData>> _loadMasteryData() async {
     final dataService = DataService();
-    final completed = widget.progress.completedFlashcards;
+    final srService = SpacedRepetitionService();
+    final allSrsData = await srService.getAllData();
     final results = <_SubjectMasteryData>[];
 
     for (final module in SubjectRegistry.modules) {
       final topics = await dataService.loadTopics(subjectId: module.id);
-      int totalCards = 0;
-      int doneCards = 0;
+      int totalFlashcards = 0;
+      int masteredFlashcards = 0;
+      int totalCases = 0;
+      int masteredCases = 0;
+
       for (final topic in topics) {
-        totalCards += topic.flashcards.length;
+        // Flashcard'lar
+        totalFlashcards += topic.flashcards.length;
         for (final fc in topic.flashcards) {
-          if (completed.containsKey(fc.id)) doneCards++;
+          final srs = allSrsData[fc.id];
+          if (srs != null && srs.isMastered) masteredFlashcards++;
+        }
+        // Klinik Vakalar (Sorular)
+        totalCases += topic.clinicalCases.length;
+        for (final cc in topic.clinicalCases) {
+          final srs = allSrsData[cc.id];
+          if (srs != null && srs.isMastered) masteredCases++;
         }
       }
-      if (totalCards > 0) {
+
+      final totalAll = totalFlashcards + totalCases;
+      final masteredAll = masteredFlashcards + masteredCases;
+
+      if (totalAll > 0) {
         results.add(_SubjectMasteryData(
           name: module.name,
           color: module.color,
-          total: totalCards,
-          done: doneCards,
+          total: totalAll,
+          done: masteredAll,
         ));
       }
     }

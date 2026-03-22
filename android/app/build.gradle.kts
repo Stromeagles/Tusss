@@ -50,15 +50,16 @@ android {
         }
     }
 
-    // ABI bazli split — APK boyutunu dramatik azaltir
-    splits {
-        abi {
-            isEnable = true
-            reset()
-            include("armeabi-v7a", "arm64-v8a", "x86_64")
-            isUniversalApk = true
-        }
-    }
+    // ABI split — AAB (App Bundle) kullanildiginda Google Play otomatik yapar
+    // Bu nedenle AAB build icin devre disi birakildi
+    // splits {
+    //     abi {
+    //         isEnable = true
+    //         reset()
+    //         include("armeabi-v7a", "arm64-v8a", "x86_64")
+    //         isUniversalApk = true
+    //     }
+    // }
 }
 
 dependencies {

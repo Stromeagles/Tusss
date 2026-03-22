@@ -1,0 +1,996 @@
+{
+  "subject": "Patoloji",
+  "chapter": "Patoloji - Konsolide (Batch 1)",
+  "flashcards": [
+    {
+      "id": "patk_001",
+      "question": "Hücre zedelenmesinin geri dönüşümsüz (irreversibl) aşamaya geçtiğini gösteren membran bulgusu nedir?",
+      "answer": "Plazma membranında yaygın hasar (AMOF - Amorf matrikssiz opasiteler) ve mitokondri hasarı",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_002",
+      "question": "Hücre içinde mitokondri membranında permeabilite artışına yol açan sitokrom C salınımı hangi yolağı tetikler?",
+      "answer": "[[Apoptoz]] ([[İntrinsik yolak]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_003",
+      "question": "Apoptozun ekstrinsik (ölüm reseptörü) yolunu başlatan temel reseptörler hangileridir?",
+      "answer": "[[FAS]] ([[CD95]]) ve [[TNF reseptörleri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_004",
+      "question": "Apoptozda intraselüler proteolitik kaskadı başlatan anazim (enzim) ailesi nedir?",
+      "answer": "[[Kaspazlar]] (Özellikle inici kaspaz 8 ve 9, uygulayıcı kaspaz 3)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_005",
+      "question": "Kazeifikasyon nekrozu en klasik hangi hastalıkta görülür?",
+      "answer": "[[Tüberküloz]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_006",
+      "question": "Sıvılaşma (Likuifaksiyon) nekrozu vücutta en sık nerede görülür?",
+      "answer": "[[Merkezi Sinir Sistemi]] izkemileri (Beyin [[enfarktüs]]ü) ve bakteriyel/mantar [[enfeksiyon]]ları",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_007",
+      "question": "Yağ nekrozu (Enzimatik yağ nekrozu) tipik olarak hangi organda / hastalıkta görülür?",
+      "answer": "[[Akut Pankreatit]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_008",
+      "question": "Fibrinoid nekroz hangi durumlarda görülür?",
+      "answer": "[[İmmün kompleks]] vaskülitleri ve malign [[hipertansiyon]]da kan damarı duvarında",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_009",
+      "question": "Kalpte iskemi sonrası gelişen en patognomonik nekroz tipi hangisidir?",
+      "answer": "[[Koagülasyon nekrozu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_010",
+      "question": "Hücresel atrofinin nedenlerinden biri olan ubikitin-proteazom yolağını aktive eden durum nedir?",
+      "answer": "Beslenme yetersizliği, inaktivite (Kas atrofisi)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_011",
+      "question": "Stratifiye yassı epitelin metaplazi ile kolumnar (silindirik) epitele dönüştüğü klasik hastalık örneği nedir?",
+      "answer": "[[Barrett Özofagusu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_012",
+      "question": "Kanser dışı epitelde displazi nedir?",
+      "answer": "Hücrelerin şekil ve boyutlarında düzensizlik, polarite kaybı (genellikle metaplastik veya hiperplastik epitelde pre-kanseröz durum)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_013",
+      "question": "Kurşun zehirlenmesinde ve CMV enfeksiyonlarında hücrede mikroskopla görülen intranükleer bulgu nedir?",
+      "answer": "[[İnklüzyon cisimcikleri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_014",
+      "question": "Russel cisimcikleri ve Dutcher cisimcikleri hangi hücrede biriken immünoglobulinleri temsil eder?",
+      "answer": "[[Plazma hücreleri]] ([[Multipl Myelom]] vb.)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_015",
+      "question": "Alkolik karaciğer hastalığında hepatositler içinde biriken eozinofilik inklüzyonlara ne ad verilir?",
+      "answer": "[[Mallory cisimcikleri]] ([[Mallory denkleri]] - [[intermedier filamentler]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_016",
+      "question": "Hücre zedelenmesinde biriken ve 'Yaşlanma pigmenti' olarak bilinen lipid-protein kompleksi nedir?",
+      "answer": "[[Lipofuskin]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_017",
+      "question": "Gümüş lekeleriyle boyanan, genelde diyabet ve hipertansiyonda görülen küçük damar duvarı kalınlaşması nedir?",
+      "answer": "[[Hyalin arteriyoloskleroz]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_018",
+      "question": "Ölü dokulardaki (nekrotik) kalsifikasyon tipine ne ad verilir?",
+      "answer": "[[Distrofik kalsifikasyon]] ([[Serum kalsiyum]] düzeyi normaldir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_019",
+      "question": "Metastatik kalsifikasyon hangi durumda görülür?",
+      "answer": "[[Hiperkalsemi]] durumlarında (Böbrek yetmezliği, hiperparatiroidi) normal dokulara çökmesi",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_020",
+      "question": "Hücre yaşlanmasından sorumlu en önemli telomer kısalması mekanizmasını hangi enzim engeller (kök hücre ve kanser hücrelerinde)?",
+      "answer": "[[Telomeraz]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_021",
+      "question": "Akut inflamasyonun baş roldeki (ilk 24 saat) iltihap hücresi hangisidir?",
+      "answer": "Polimorfonüveli Lökosit ([[PMNL]] / [[Nötrofil]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_022",
+      "question": "Kronik inflamasyonun baş roldeki hücreleri hangileridir?",
+      "answer": "[[Makrofajlar]] ve [[Lenfositler]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_023",
+      "question": "Akut inflamasyonda vazodilatasyonu başlatan temel vazoaktif amin nedir?",
+      "answer": "[[Histamin]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_024",
+      "question": "Lökositlerin adezyonunu (endotele yapışmasını) sağlayan ana moleküller hangileridir?",
+      "answer": "[[İntegrinler]] ve [[Selektinler]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_025",
+      "question": "Diapedez (Endotel hücreleri arasına lökosit geçişi) sürecinde hangi adezyon molekülü önemlidir?",
+      "answer": "[[PECAM-1]] ([[CD31]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_026",
+      "question": "En güçlü lökosit kemotaktik faktörleri (Kemotaksis yaptıranlar) nelerdir?",
+      "answer": "[[C5a]], [[LTB4]] ([[Lökotrien B4]]), [[IL-8]], Bakteriyel ürünler",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_027",
+      "question": "Fagositoz sonrası mikropları öldüren oksijene bağımlı en önemli enzim mekanizması nedir?",
+      "answer": "[[NADPH oksidaz]] sistemi (Solunum patlaması - Respiratory burst)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_028",
+      "question": "Kronik granülomatöz inflamasyonun en spesifik epiteloit hücre öncülü nedir?",
+      "answer": "[[Aktive makrofajlar]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_029",
+      "question": "Tüberküloz granülomunun tipik dev hücresi ve özelliği nedir?",
+      "answer": "[[Langhans dev hücresi]] (Nükleusları periferde at nalı şeklinde dizilmiş)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_030",
+      "question": "Yabancı cisim granülomlarındaki dev hücrelerin özelliği nedir?",
+      "answer": "[[Yabancı cisim dev hücresi]] (Nükleusları sitoplazmaya dağınık yerleşmiş)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_031",
+      "question": "Sarkoidoz granülomlarında görülebilen inklüzyonlar nelerdir?",
+      "answer": "[[Asteroid cisimcikleri]] ve [[Schaumann cisimcikleri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_032",
+      "question": "Araşidonik asit metabolizmasından sentezlenen ve ağrı/ateş oluşumundan sorumlu mediatör nedir?",
+      "answer": "[[Prostaglandinler]] (Örn: [[PGE2]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_033",
+      "question": "Makrofajları aktive eden temel sitokin (T lenfositlerden salınır) hangisidir?",
+      "answer": "[[IFN-gama]] ([[İnterferon gama]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_034",
+      "question": "Yara iyileşmesinde proliferatif fazın başroldeki hücresi hangisidir?",
+      "answer": "[[Fibroblastlar]] (ve [[anjiyogenez]] için endotel hücreleri)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_035",
+      "question": "Keloid ile hipertrofik skar arasındaki temel fark nedir?",
+      "answer": "[[Keloid]] yara sınırlarını taşar ve gerilemez ([[Tip I]]/III [[kollajen]] dengesi bozuk) , hipertrofik skar yara sınırları içindedir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_036",
+      "question": "Granülasyon dokusu ile granülom arasındaki fark nedir?",
+      "answer": "[[Granülasyon dokusu]] onarım (yara iyileşmesi) dokusudur ([[anjiyogenez]]+fibroblast). [[Granülom]] ise spesifik bir kronik inflamasyon tipidir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_037",
+      "question": "Anjiyogenezi uyaran en potent faktör hangisidir?",
+      "answer": "[[VEGF]] ([[Vascular Endothelial Growth Factor]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_038",
+      "question": "Yara kontraksiyonundan (yaranın küçülmesi/büzülmesinden) sorumlu hücreler hangileridir?",
+      "answer": "[[Miyofibroblastlar]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_039",
+      "question": "İnflamasyonda akut faz reaktanlarının yapımını uyaran ana sitokin hangisidir?",
+      "answer": "[[IL-6]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_040",
+      "question": "Chediak-Higashi sendromunda lökositlerde beklenen hücresel bozukluk nedir?",
+      "answer": "[[Fagozom ve lizozom füzyon defekti]] (Dev granüller görülür)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_041",
+      "question": "Kronik Granülomatöz Hastalıkta eksik olan enzim nedir?",
+      "answer": "[[NADPH oksidaz]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_042",
+      "question": "Lökosit Adezyon Defekti (LAD) Tip 1'de hangi molekülde eksiklik vardır?",
+      "answer": "İntegrin eksikliği ([[CD18]] beta zinciri eksik)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_043",
+      "question": "Ödem sıvısının, protein içeriği düşük ve pürüzsüz hücresiz (berrak) formuna ne ad verilir?",
+      "answer": "[[Transüda]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_044",
+      "question": "Protein içeriği yüksek (>3g/dL), inflamasyona sekonder gelişen ödeme ne denir?",
+      "answer": "[[Eksüda]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_045",
+      "question": "Kalp yetmezliğine bağlı gelişen ilk histolojik pulmoner değişiklik nedir?",
+      "answer": "Kalp yetmezliği hücreleri (Eritrosit fagosite etmiş [[hemosiderin]] yüklü alveolar [[makrofajlar]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_046",
+      "question": "Kronik sağ kalp yetmezliğinde karaciğerde görülen klasik makroskopik bulgu nedir?",
+      "answer": "Hindistan cevizi (Nutmeg) karaciğeri ([[Kronik pasif konjesyon]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_047",
+      "question": "Arteriyel tıkanıklık (ör: miyokard, böbrek, dalak) en çok hangi tip enfarktüse neden olur?",
+      "answer": "Soluk (Beyaz) [[Enfarktüs]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_048",
+      "question": "Venöz oklüzyon, çift kan kaynaklı organlar (akciğer) ve reperfüzyon sonrası görülen enfarktüs tipi nedir?",
+      "answer": "Kırmızı ([[Hemorajik]]) [[Enfarktüs]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_049",
+      "question": "Bir trombüsün endotele (duvara) yapışık olduğu ve içinde açık renkli kan akım izlerini içeren yapıya ne denir?",
+      "answer": "[[Zahn çizgileri]] (Canlıda oluştuğunu gösterir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_050",
+      "question": "Derin Ven Trombozu (DVT) en sık nereye emboli yapar?",
+      "answer": "Akciğer ([[Pulmoner emboli]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_051",
+      "question": "Paradoksal emboli nedir?",
+      "answer": "Venöz sistemden gelen embolinin, kalpteki bir sağ-sol şanttan (ör: Patent Foramen Ovale, [[VSD]]) geçerek sistemik arteriyel sisteme gitmesidir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_052",
+      "question": "Kemik kırıklarından sonra en tipik beklenen emboli türü nedir?",
+      "answer": "[[Yağ embolisi]] (Bulgular: Dispne, Peteşi, Nörolojik bozukluk)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_053",
+      "question": "Dalgıçlarda vurgun (Decompression Sickness / Caisson hastalığı) hangi gazın embolisi ile oluşur?",
+      "answer": "[[Azot]] ([[Nitrojen]]) gazı embolisi",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_054",
+      "question": "Lökositik (beyaz) trombüs tipik olarak nerede oluşur?",
+      "answer": "Arteriyel sistemde ([[Trombosit]] ve [[fibrin]] baskın)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_055",
+      "question": "Virchow triadını (Trombüs risk faktörleri) oluşturan 3 ana unsur nedir?",
+      "answer": "1- [[Endotel hasarı]], 2- Kan akımında staz/türbülans, 3- [[Hiperkoagülabilite]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_056",
+      "question": "Tip 1 Aşırı Duyarlılık Reaksiyonunun mediatörü (ana antikoru) nedir?",
+      "answer": "[[IgE]] ([[Mast hücre]] degranülasyonunu tetikler)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_057",
+      "question": "Tip 1 Aşırı Duyarlılık Reaksiyonlarına örnekler nelerdir?",
+      "answer": "[[Anafilaksi]], [[Allerjik rinit]] (saman nezlesi), [[Astım]], [[Ürtiker]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_058",
+      "question": "Tip 2 Aşırı Duyarlılık Reaksiyonunun patogenezi nedir?",
+      "answer": "Hücre yüzey antijenlerine karşı antikor gelişmesi ve [[opsonizasyon]]/[[kompleman]] aktivasyonu",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_059",
+      "question": "Sarkoidoz, kontakt dermatit (zehirli sarmaşık) ve PPD tüberkülin testi hangi hipersensitivite tipidir?",
+      "answer": "[[Tip 4]] (Gecikmiş, T-hücre aracılı hipersensitivite)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_060",
+      "question": "Graves hastalığı ve Myastenia Gravis hastalıklarında gözlenen reseptör uyarıcı/bloke edici antikor reaksiyonu hangi tipe örnektir?",
+      "answer": "[[Tip 2]] Aşırı Duyarlılık",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_061",
+      "question": "Goodpasture sendromu ve Otoimmün Hemolitik Anemi hangi hipersensitivite tipidir?",
+      "answer": "[[Tip 2]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_062",
+      "question": "Tip 3 Aşırı Duyarlılık Reaksiyonunun mekanizması nedir?",
+      "answer": "[[İmmün kompleks]]lerin ([[Antijen-Antikor]]) dokulara (damar, böbrek, eklem) çökmesi",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_063",
+      "question": "Sistemik Lupus Eritematozus (SLE), Post-streptokoksik glomerulonefrit ve Serum Hastalığı hangi hipersensitivite tipidir?",
+      "answer": "[[Tip 3]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_064",
+      "question": "SLE (Lupus)'de en spesifik otoantikor hangisidir?",
+      "answer": "[[Anti-Sm]] ([[Anti-Sm]]ith) ve [[Anti-dsDNA]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_065",
+      "question": "İlaca bağlı lupusta (Drug-induced lupus) pozitifleşen en spesifik antikor nedir?",
+      "answer": "[[Anti-Histon]] antikoru",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_066",
+      "question": "Romatoid Artrit (RA) hastalarında hastalığa özgül ve tanı değeri yüksek olan otoantikor hangisidir?",
+      "answer": "[[Anti-CCP]] ([[Anti-Siklik Sirtuline Peptid]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_067",
+      "question": "Sjögren sendromunda görülen temel lezyonlar nelerdir ve karakteristik antikorları hangileridir?",
+      "answer": "Kuru göz (Keratoconjunctivitis sicca), kuru ağız (Xerostomia) / [[Anti-Ro]] ([[SSA]]) ve [[Anti-La]] ([[SSB]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_068",
+      "question": "Ciltte gerginleşme ve iç organlarda fibrozis ile giden Sistemik Skleroz'da (Skleroderma) en spesifik antikor hangisidir?",
+      "answer": "[[Anti-Scl-70]] ([[Anti-DNA topoizomeraz-1]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_069",
+      "question": "CREST sendromunun harflerinin açılımı ve spesifik antikoru nedir?",
+      "answer": "Calcinosis, Raynaud, Esophageal dysmotility, Sclerodactyly, Telangiectasia / [[Anti-Sentromer antikoru]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_070",
+      "question": "Dermatomiyozite özgü otoantikor (interstisyel akciğer hastalığı ile de ilişkili) hangisidir?",
+      "answer": "[[Anti-Jo-1]] antikoru",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_071",
+      "question": "Primer Biliyer Kolanjit (Siroz) için patognomonik olan antikor hangisidir?",
+      "answer": "[[AMA]] ([[Anti-Mitokondrial Antikor]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_072",
+      "question": "X'e bağlı Agamaglobulinemi (Bruton Hastalığı)'nda defekt olan gen nedir ve klinik sonucu nasıldır?",
+      "answer": "[[BTK]] ([[Bruton Tirozin Kinaz]]) gen mutasyonu, [[B hücre]]leri olgunlaşamaz, tüm immünoglobulinler düşüktür.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_073",
+      "question": "DiGeorge Sendromunun klasik triad bulguları ve eksik yapısı nedir?",
+      "answer": "Timus aplazisi ([[T hücre]] defekti), Hipokalsemi (Paratiroid aplazisi), Konjenital kalp defektleri. (3. ve 4. faringeal poş gelişmez)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_074",
+      "question": "Şiddetli Kombine İmmün Yetmezlikte (SCID) en sık görülen eksiklik nedir?",
+      "answer": "Ortak gama zinciri mutasyonu (X'e bağlı), enzimatik olarak Adenozin Deaminaz ([[ADA]]) eksikliği",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_075",
+      "question": "Wiskott-Aldrich sendromunun klinik üçlemesi (triadı) nedir?",
+      "answer": "[[Trombositopeni]], [[Egzama]], Tekrarlayan [[enfeksiyon]]lar (X'e bağlı resesif, [[WAS]] geni mutasyonu)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_076",
+      "question": "AL tipi (Primer) Amiloidoz hangi durumda görülür ve yapısındaki fibriller nedir?",
+      "answer": "[[Multipl Miyelom]] veya Plasma hücre diskrazilerinde. Hafif zincir (Light chain) birikimi.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_077",
+      "question": "AA tipi (Sekonder / Reaktif) Amiloidoz hangi hastalıklara ikincil gelişir ve öncül proteini nedir?",
+      "answer": "[[Romatoid Artrit]], FMF (Ailevi Akdeniz Ateşi), [[Tüberküloz]] gibi kronik yangılı hastalıklar / [[SAA]] ([[Serum Amiloid A]]).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_078",
+      "question": "Amiloidisin tanısında kullanılan ve mikroskop altında elma yeşili (apple-green) refre vermesine neden olan boya nedir?",
+      "answer": "[[Kongo kırmızısı]] ([[Congo Red]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_079",
+      "question": "Alzheimer hastalığında beyinde biriken amiloid tipi hangisidir?",
+      "answer": "A-beta amiloid ([[APP]]'den derive edilir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_080",
+      "question": "Hemodiyalize giren hastalarda kemik/eklemlerde biriken amiloid tipi hangisidir?",
+      "answer": "[[A-beta-2 mikroglobulin]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_081",
+      "question": "Meduiller tiroid karsinomunda biriken amiloidin kaynağı hangi hormondur?",
+      "answer": "[[Kalsitonin]] (Pro[[kalsitonin]] derived)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_082",
+      "question": "Marfan sendromunda hangi gende/proteinde mutasyon vardır?",
+      "answer": "[[Fibrillin-1]] ([[FBN1]] geni)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_083",
+      "question": "Marfan sendromlu hastaların en korkulan kardiyovasküler komplikasyonu nedir?",
+      "answer": "[[Aort anevrizması]] ve disseksiyonu ([[Kistik medial nekroz]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_084",
+      "question": "Kafa tası şekil bozuklukları (Örn: Kraniyosinostoz) ve sindaktili ile giden akondroplazi dışı iskelet displazilerine ne gen mutasyonu sebep olur?",
+      "answer": "[[FGFR]] gen mutasyonları (örn: [[FGFR]]2 -> Apert veya Crouzon, [[FGFR]]3 -> [[Akondroplazi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_085",
+      "question": "Klasik Ehler-Danlos sendromu (Tip I/II) hangi kollajen tipinin mutasyonundan kaynaklanır?",
+      "answer": "[[Tip I]] veya [[Tip V]] [[kollajen]] defekti (Hiperelastik deri, eklem hipermobilitesi)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_086",
+      "question": "Vasküler tip Ehler Danlos Sendromu (Tip IV)'nda hangi kollajen sentezinde hata vardır ve riski nedir?",
+      "answer": "[[Tip III]] [[kollajen]]. Aort/barsak rüptürü riski yüksektir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_087",
+      "question": "Ailesel Hiperkolesterolemi (Tip IIa Hiperlipoproteinemi) hangi genin mutasyonuna bağlıdır?",
+      "answer": "[[LDL reseptör geni]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_088",
+      "question": "Kistik Fibrozis (CFTR geni) hangi yolla kalıtılır ve en sık görülen mutasyonu hangisidir?",
+      "answer": "[[Otozomal resesif]], [[Delta-F508]] delesyonu",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_089",
+      "question": "Fenilketonüri'de eksik olan enzim nedir ve biriken madde zeka geriliğine yol açar?",
+      "answer": "[[Fenilalanin hidroksilaz]] ([[PAH]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_090",
+      "question": "Tay-Sachs hastalığında hangi enzim eksiktir ve beyinde ne birikir?",
+      "answer": "[[Heksozaminidaz A]] eksik. [[GM2 gangliozid]] birikir. (Tipik bulgu: Göz dibinde Japon bayrağı - [[Cherry red spot]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_091",
+      "question": "Niemann-Pick hastalığında hangi enzim eksiktir ve biriken madde nedir? (A ve B tiplerinde)",
+      "answer": "[[Sfingomiyelinaz]] eksik. [[Sfingomiyelin]] birikir. ([[Makrofajlar]] köpüksü - foam cells - görülür, [[hepatosplenomegali]] vardır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_092",
+      "question": "Gaucher hastalığında hangi enzim eksiktir?",
+      "answer": "[[Glukoserebrozidaz]]. [[Glikoserebrozid]] birikir. (Buruşuk kağıt görünümlü [[Gaucher hücreleri]] klasiktir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_093",
+      "question": "Mukopolisakkaridozlar (Hurler, Hunter vs.) vücutta ne birikimiyle karakterizedir?",
+      "answer": "Dermatan sülfat, heparan sülfat ([[Glikozaminoglikanlar]] birikir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_094",
+      "question": "Hurler sendromuna kıyasla, Hunter sendromunun farklı olan özelliği ve kalıtım şekli nedir?",
+      "answer": "Korneal bulanıklık (clouding) yoktur. Kalıtım şekli X'e bağlı resesiftir (Diğerleri [[otozomal resesif]]tir).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_095",
+      "question": "Frajil X (Fragile X) Sendromunun genetik mekanizması nedir?",
+      "answer": "[[FMR1]] geninde CGG üçlü tekrar artışı ([[Trinükleotid tekrar]] hastalığı)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_096",
+      "question": "Down Sendromunun (Trizomi 21) en yaygın patogenezi (nedeni) nedir?",
+      "answer": "Anne yaşına bağlı anne mayozu sırasındaki [[non-disjunction]] (Ayrılmama)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_097",
+      "question": "Down Sendromlu hastalarda 40 yaşından sonra erken görülmesi beklenen nörolojik hastalık hangisidir?",
+      "answer": "Alzheimer hastalığı ([[APP]] geni 21. kromozomda olduğu için A-beta birikimi hızlanır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_098",
+      "question": "Klinefelter Sendromu'nun kromozomal formülü ve klasik görünümü nedir?",
+      "answer": "47, XXY. Uzuu boy, [[jinekomasti]], atrofik testisler, [[infertilite]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_099",
+      "question": "Klinik olarak 'Yele boyun (webbed neck), geniş göğüs kafesi (shield chest), bisküspid aort kapağı ve koarktasyon' u olan ve yumurtalıkları 'streak ovary' (çizgi şeklinde) olan hastada olası tanı nedir?",
+      "answer": "[[Turner Sendromu]] (45, X0)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_100",
+      "question": "Bir genin sadece anneden kalıtılanının susturulmasına bağlı (genomik imprinting ihlali) meydana gelen kalıtımsal sendromlara örnekler nelerdir?",
+      "answer": "[[Prader-Willi Sendromu]] (Baba delesyonu/Anne disomisi) ve [[Angelman Sendromu]] (Anne delesyonu/Baba disomisi)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_101",
+      "question": "Onkogenlerin (kanser yapıcı genler) hücredeki normal formuna ne ad verilir?",
+      "answer": "[[Proto-onkogen]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_102",
+      "question": "İnsan kanserlerinde en sık mutasyona uğrayan (nokta mutasyonu) ve RAS ailesinin bir üyesi olan gen hangisidir?",
+      "answer": "[[KRAS]] ([[Pankreas]] ve kolon kanserlerinde çok yaygın)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_103",
+      "question": "C-myc onkogeninin translokasyonu t(8;14) sonucunda oluşan lenfoma hangisidir?",
+      "answer": "[[Burkitt Lenfoma]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_104",
+      "question": "Philadelphia kromozomu t(9;22) hangi genlerin füzyonuna ve hangi hastalığa yol açar?",
+      "answer": "[[BCR-ABL]] füzyonu, KML ([[Kronik Myeloid Lösemi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_105",
+      "question": "Meme ve over karsinomlarında hedeflenebilir bir tirozin kinaz reseptörü olan ERBB2 antijeninin diğer adı nedir?",
+      "answer": "[[HER2]] / neu",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_106",
+      "question": "Rb (Retinoblastom) gürzübaskılayıcı (Tumor suppressor) geni hücre siklusunda hangi fazı kontrol eder?",
+      "answer": "G1 -> S evresine geçişi ([[E2F]] transkripsiyon faktörüne bağlanarak inhibe eder)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_107",
+      "question": "P53 geni 'Genomun Gardiyanı'dır. İnsan kanserlerinde mutasyonu en sık olan gendir. P53 eksikliğinde artan Li-Fraumeni sendromu riskleri nelerdir?",
+      "answer": "Erken yaşta [[sarkom]]lar, meme kanseri, [[lösemi]]ler ve beyin tümörleri",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_108",
+      "question": "Apoptozu inhibe eden (anti-apoptotik) ana gen/protein ailesi hangisidir?",
+      "answer": "[[BCL-2]] (Foliküler lenfomada t(14;18) ile aşırı ifadelenir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_109",
+      "question": "Kolon kanserinin gelişiminde ilk mutasyona uğrayan (adenomatöz polipten kanser gidişatının kapıcısı) tümör süpresör gen hangisidir?",
+      "answer": "[[APC]] geni ([[Adenomatous polyposis coli]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_110",
+      "question": "Onkogenlerin aşırı ifadesinde genellikle tek allel (kopya) mutasyonu yeterlidir (dominant). Tümör süpresör genlerin inaktivasyonu için kaç allelin mutasyonu gereklidir?",
+      "answer": "İki allelin de hasarı gerekir ([[Knudson]]'un İki Vuruş - Two Hit hipotezi)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    }
+  ]
+}

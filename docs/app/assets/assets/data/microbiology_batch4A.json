@@ -1,0 +1,406 @@
+{
+  "subject": "Mikrobiyoloji",
+  "chapter": "Parazitoloji (Final), İmmunoloji & Genel Tekrar - Batch 4A",
+  "flashcards": [
+    {
+      "id": "micro_b4a_451",
+      "question": "Ascaris lumbricoides'in 'Loeffler Sendromu' (Akciğer fazı) sırasında balgamda ne görülür?",
+      "answer": "[[Eozinofiller]] ve [[Charcot-Leyden kristalleri]].",
+      "difficulty": "Orta",
+      "tags": ["Parazitoloji", "Helmint"],
+      "ai_coding": "🤖 Kodlama: L-oeffler = L-ung (Akciğer) ve Kristal."
+    },
+    {
+      "id": "micro_b4a_452",
+      "question": "Enterobius vermicularis (Kıl kurdu) tanısında neden dışkı bakısı (parazitolojik inceleme) yetersizdir?",
+      "answer": "Çünkü yumurtalar dışkıya değil, [[perianal bölgeye]] bırakılır.",
+      "difficulty": "Kolay",
+      "tags": ["Parazitoloji", "Helmint"],
+      "ai_coding": "🤖 Kodlama: K-ıl = B-ant (Anal bölge)."
+    },
+    {
+      "id": "micro_b4a_453",
+      "question": "Hangi parazit enfeksiyonu 'Rektal Prolapsus'a (bağırsağın sarkması) yol açabilir?",
+      "answer": "[[Trichuris trichiura]] (Kamçılı solucan).",
+      "difficulty": "Zor",
+      "tags": ["Parazitoloji", "Helmint"],
+      "ai_coding": "🤖 Kodlama: T-richuris = T-ersten (Rektal) sarkma."
+    },
+    {
+      "id": "micro_b4a_454",
+      "question": "Ancylostoma duodenale'nin Necator americanus'tan farkı nedir?",
+      "answer": "[[Duodenale]]'de 'dişli' yapı, [[americanus]]'ta 'kesici levhalar' vardır.",
+      "difficulty": "Zor",
+      "tags": ["Parazitoloji", "Helmint"],
+      "ai_coding": "🤖 Kodlama: D-uodenale = D-işli."
+    },
+    {
+      "id": "micro_b4a_455",
+      "question": "Hangi parazit insanda 'Otoenfeksiyon' (kendi kendine tekrar bulaşma) yapabilir?",
+      "answer": "[[Strongyloides stercoralis]] ve [[Hymenolepis nana]].",
+      "difficulty": "Zor",
+      "tags": ["Parazitoloji", "Helmint"],
+      "ai_coding": "🤖 Kodlama: O-to = S-trongyloides."
+    },
+    {
+      "id": "micro_b4a_456",
+      "question": "Wuchereria bancrofti'nin mikrofilariaları kanda en çok ne zaman görülür?",
+      "answer": "[[Geceleri]] (Gece periyodisitesi).",
+      "difficulty": "Kolay",
+      "tags": ["Parazitoloji", "Filaryaz"],
+      "ai_coding": "🤖 Kodlama: F-il = G-ece gezer."
+    },
+    {
+      "id": "micro_b4a_457",
+      "question": "Onchocerca volvulus (Nehir Körlüğü) vektörü nedir?",
+      "answer": "[[Simulium]] (Kara sinek).",
+      "difficulty": "Zor",
+      "tags": ["Parazitoloji", "Filaryaz"],
+      "ai_coding": "🤖 Kodlama: O-nchocerca = K-ara sinek."
+    },
+    {
+      "id": "micro_b4a_458",
+      "question": "Sestodlardan (Tenya) hangisinin yumurtası doğrudan enfektiftir?",
+      "answer": "[[Hymenolepis nana]] (Cüce tenya).",
+      "difficulty": "Orta",
+      "tags": ["Parazitoloji", "Sestod"],
+      "ai_coding": "🤖 Kodlama: H-nana = H-emen (Doğrudan) bulaş."
+    },
+    {
+      "id": "micro_b4a_459",
+      "question": "Taenia saginata (Sığır tenyası) ara konağı?",
+      "answer": "[[Sığır]] (İnsan sadece son konaktır).",
+      "difficulty": "Kolay",
+      "tags": ["Parazitoloji", "Sestod"],
+      "ai_coding": "🤖 Kodlama: S-aginata = S-ığır."
+    },
+    {
+      "id": "micro_b4a_460",
+      "question": "Echinococcus multilocularis hangi organda 'Alveoler Kist' yapar (Malignite gibi yayılır)?",
+      "answer": "[[Karaciğer]].",
+      "difficulty": "Orta",
+      "tags": ["Parazitoloji", "Kist Hidatik"],
+      "ai_coding": "🤖 Kodlama: M-ultilocularis = M-etastaz gibi."
+    },
+    {
+      "id": "micro_b4a_461",
+      "question": "Schistosoma mansoni yumurtasının ayırıcı özelliği?",
+      "answer": "[[Lateral (Yanda) büyük dikenli]] olması.",
+      "difficulty": "Orta",
+      "tags": ["Parazitoloji", "Trematod"],
+      "ai_coding": "🤖 Kodlama: M-ansoni = M-esafe (Yanda diken)."
+    },
+    {
+      "id": "micro_b4a_462",
+      "question": "Paragonimus westermani'nin ana yerleşim yeri?",
+      "answer": "[[Akciğer]] (Pas rengi balgam ve kavitasyon).",
+      "difficulty": "Kolay",
+      "tags": ["Parazitoloji", "Trematod"],
+      "ai_coding": "🤖 Kodlama: P-aragonimus = P-ulmoner."
+    },
+    {
+      "id": "micro_b4a_463",
+      "question": "İnsan için patojen olan tek 'Siliyat' parazit?",
+      "answer": "[[Balantidium coli]].",
+      "difficulty": "Kolay",
+      "tags": ["Parazitoloji", "Protozoon"],
+      "ai_coding": "🤖 Kodlama: B-coli = S-il (Kirpikli)."
+    },
+    {
+      "id": "micro_b4a_464",
+      "question": "İmmunoloji: Doğal bağışıklıkta (Innate immunity) bulunan ana hücreler?",
+      "answer": "[[Makrofajlar]], [[Nötrofiller]], [[NK hücreleri]] ve Dendritik hücreler.",
+      "difficulty": "Kolay",
+      "tags": ["İmmunoloji", "Temel"],
+      "ai_coding": "🤖 Kodlama: D-oğal = D-aima hazır."
+    },
+    {
+      "id": "micro_b4a_465",
+      "question": "NK (Natural Killer) hücreleri hangi MHC molekülünün azaldığı/yok olduğu hücrelere saldırır?",
+      "answer": "[[MHC Sınıf I]].",
+      "difficulty": "Zor",
+      "tags": ["İmmunoloji", "NK"],
+      "ai_coding": "🤖 Kodlama: NK = N-erde MHC-I?"
+    },
+    {
+      "id": "micro_b4a_466",
+      "question": "MHC Sınıf II molekülleri hangi hücrelerde bulunur?",
+      "answer": "[[Antijen Sunan Hücreler (APC)]]: Makrofajlar, Dendritik hücreler, B lenfositler.",
+      "difficulty": "Kolay",
+      "tags": ["İmmunoloji", "MHC"],
+      "ai_coding": "🤖 Kodlama: M-H-C-II = A-P-C."
+    },
+    {
+      "id": "micro_b4a_467",
+      "question": "Tip 1 Aşırı Duyarlılık reaksiyonunda ana mediyatör olan Histamin'in etkisi?",
+      "answer": "[[Vazodilatasyon]], [[Bronkokonstriksiyon]] ve Damar geçirgenliği artışı.",
+      "difficulty": "Kolay",
+      "tags": ["İmmunoloji", "Alerji"],
+      "ai_coding": "🤖 Kodlama: H-istamin = H-ızlı ödem."
+    },
+    {
+      "id": "micro_b4a_468",
+      "question": "Tip 2 Aşırı Duyarlılık (Sitotoksik) reaksiyonu örneği?",
+      "answer": "[[Kan uyuşmazlığı (Eritroblastozis fetalis)]] ve [[Goodpasture sendromu]].",
+      "difficulty": "Orta",
+      "tags": ["İmmunoloji", "Aşırı Duyarlılık"],
+      "ai_coding": "🤖 Kodlama: Tip-2 = A-ntikor bağımlı."
+    },
+    {
+      "id": "micro_b4a_469",
+      "question": "Tip 3 Aşırı Duyarlılık (İmmun Kompleks) reaksiyonu örneği?",
+      "answer": "[[SLE]], [[Romatoid Artrit]], [[Serum Hastalığı]].",
+      "difficulty": "Orta",
+      "tags": ["İmmunoloji", "Aşırı Duyarlılık"],
+      "ai_coding": "🤖 Kodlama: Tip-3 = Ç-ök-e-n (Kompleks)."
+    },
+    {
+      "id": "micro_b4a_470",
+      "question": "Tip 4 Aşırı Duyarlılık (Geç/Hücresel) reaksiyonu örneği?",
+      "answer": "[[PPD testi pozitifliği]], [[Kontakt dermatit]], [[Graft reddi]].",
+      "difficulty": "Kolay",
+      "tags": ["İmmunoloji", "Aşırı Duyarlılık"],
+      "ai_coding": "🤖 Kodlama: Tip-4 = T-hücresi (Geç)."
+    },
+    {
+      "id": "micro_b4a_471",
+      "question": "Sitokinlerden IL-1'in en önemli görevi?",
+      "answer": "[[Ateş]] (Hipotalamusu etkiler) ve [[Enflamasyonun başlatılması]].",
+      "difficulty": "Kolay",
+      "tags": ["İmmunoloji", "Sitokin"],
+      "ai_coding": "🤖 Kodlama: IL-1 = 1-numara (Ateş)."
+    },
+    {
+      "id": "micro_b4a_472",
+      "question": "Hangi sitokin Th1 yanıtını uyarır (Hücresel immünite için kritik)?",
+      "answer": "[[IL-12]] ve [[IFN-gama]].",
+      "difficulty": "Zor",
+      "tags": ["İmmunoloji", "Sitokin"],
+      "ai_coding": "🤖 Kodlama: IL-1-2 = Th-1."
+    },
+    {
+      "id": "micro_b4a_473",
+      "question": "Antikorlar arasında 'Sekresyon'larda bulunan ve dimer yapıdaki hangisidir?",
+      "answer": "[[Sekretuvar IgA]].",
+      "difficulty": "Kolay",
+      "tags": ["İmmunoloji", "Antikor"],
+      "ai_coding": "🤖 Kodlama: Ig-A = A-yak (Lokal bağışıklık)."
+    },
+    {
+      "id": "micro_b4a_474",
+      "question": "Plasentadan geçen tek antikor hangisidir?",
+      "answer": "[[IgG]].",
+      "difficulty": "Kolay",
+      "tags": ["İmmunoloji", "Antikor"],
+      "ai_coding": "🤖 Kodlama: Ig-G = G-eçer (Plasentadan)."
+    },
+    {
+      "id": "micro_b4a_475",
+      "question": "Primer immun yanıtın (ilk temas) ana antikoru?",
+      "answer": "[[IgM]] (Pentamer yapıdadır).",
+      "difficulty": "Kolay",
+      "tags": ["İmmunoloji", "Antikor"],
+      "ai_coding": "🤖 Kodlama: Ig-M = M-uharip (İlk hücum)."
+    },
+    {
+      "id": "micro_b4a_476",
+      "question": "Kompleman sistemini 'Klasik Yol'dan hangi antikorlar aktive eder?",
+      "answer": "[[IgM]] ve [[IgG]] (Özellikle IgG3).",
+      "difficulty": "Orta",
+      "tags": ["İmmunoloji", "Kompleman"],
+      "ai_coding": "🤖 Kodlama: K-lasik = G-M."
+    },
+    {
+      "id": "micro_b4a_477",
+      "question": "MAC (Membran Atak Kompleksi) hangi bileşenlerden oluşur?",
+      "answer": "[[C5b]], [[C6]], [[C7]], [[C8]], [[C9]].",
+      "difficulty": "Orta",
+      "tags": ["İmmunoloji", "Kompleman"],
+      "ai_coding": "🤖 Kodlama: M-A-C = 5'ten 9'a."
+    },
+    {
+      "id": "micro_b4a_478",
+      "question": "Hangi kompleman bileşeni 'Anafilatoksin' (Histamin salıcı) ve 'Kemotaktik'tir?",
+      "answer": "[[C5a]] (En güçlüdür) ve [[C3a]].",
+      "difficulty": "Zor",
+      "tags": ["İmmunoloji", "Kompleman"],
+      "ai_coding": "🤖 Kodlama: C-5-a = A-na-f-ila-toksin."
+    },
+    {
+      "id": "micro_b4a_479",
+      "question": "B lenfositlerin yüzeyinde en çok bulunan 'Reseptör' antikorlar?",
+      "answer": "[[IgM]] ve [[IgD]].",
+      "difficulty": "Orta",
+      "tags": ["İmmunoloji", "B hücresi"],
+      "ai_coding": "🤖 Kodlama: B hücre = M-D."
+    },
+    {
+      "id": "micro_b4a_480",
+      "question": "Kısmi (Eksik) antijenlere ne ad verilir?",
+      "answer": "[[Hapten]] (Ancak bir proteine bağlandığında antikor üretirler).",
+      "difficulty": "Orta",
+      "tags": ["İmmunoloji", "Antijen"],
+      "ai_coding": "🤖 Kodlama: H-apten = H-apsolmuş antijen."
+    },
+    {
+      "id": "micro_b4a_481",
+      "question": "RECAP: TUS'un en sevdiği 'Listeria'nın soğukta üreme sıcaklığı?",
+      "answer": "[[+4°C]].",
+      "difficulty": "Kolay",
+      "tags": ["Hizli_Tekrar"],
+      "ai_coding": "🤖 Kodlama: L-isteria = L-imuzin değil, Buzdolabı."
+    },
+    {
+      "id": "micro_b4a_482",
+      "question": "RECAP: S. aureus toksik şokta neye bağlanır?",
+      "answer": "[[MHC-II]] ve [[V-beta TCR]].",
+      "difficulty": "Orta",
+      "tags": ["Hizli_Tekrar"],
+      "ai_coding": "🤖 Kodlama: V-beta-TCR."
+    },
+    {
+      "id": "micro_b4a_483",
+      "question": "RECAP: 'Nagler' testi hangi etken içindir?",
+      "answer": "[[C. perfringens]] ([[Alfa toksin]]/Lesitinaz).",
+      "difficulty": "Zor",
+      "tags": ["Hizli_Tekrar"],
+      "ai_coding": "🤖 Kodlama: N-agler = P-erfringens."
+    },
+    {
+      "id": "micro_b4a_484",
+      "question": "RECAP: Mantar 'Gemi dümeni' görüntüsü?",
+      "answer": "[[P. brasiliensis]].",
+      "difficulty": "Kolay",
+      "tags": ["Hizli_Tekrar"],
+      "ai_coding": "🤖 Kodlama: D-ümen = B-razilya (Gemi yolculuğu)."
+    },
+    {
+      "id": "micro_b4a_485",
+      "question": "RECAP: 'Koplik lekeleri' hangi virüse özgüdür?",
+      "answer": "[[Kızamık (Measles)]].",
+      "difficulty": "Kolay",
+      "tags": ["Hizli_Tekrar"],
+      "ai_coding": "🤖 Kodlama: K-oplik = K-ızamık."
+    },
+    {
+      "id": "micro_b4a_486",
+      "question": "RECAP: Sıtma 'Muz' şeklinde gametosit?",
+      "answer": "[[P. falciparum]].",
+      "difficulty": "Kolay",
+      "tags": ["Hizli_Tekrar"],
+      "ai_coding": "🤖 Kodlama: F-alciparum = M-uz."
+    },
+    {
+      "id": "micro_b4a_487",
+      "question": "RECAP: HIV'in Western blot'taki tanı değeri yüksek bandı?",
+      "answer": "[[p24]].",
+      "difficulty": "Kolay",
+      "tags": ["Hizli_Tekrar"],
+      "ai_coding": "🤖 Kodlama: P-2-4."
+    },
+    {
+      "id": "micro_b4a_488",
+      "question": "RECAP: Lepra'nın en ağır formu (Multibasiler)?",
+      "answer": "[[Lepromatöz Lepra]].",
+      "difficulty": "Orta",
+      "tags": ["Hizli_Tekrar"],
+      "ai_coding": "🤖 Kodlama: L-epromatöz = L-imit yok."
+    },
+    {
+      "id": "micro_b4a_489",
+      "question": "RECAP: Chlamydia'nın enfektif dış ortam formu?",
+      "answer": "[[Elementer Cisim (EB)]].",
+      "difficulty": "Kolay",
+      "tags": ["Hizli_Tekrar"],
+      "ai_coding": "🤖 Kodlama: E-B = E-ktedir (Dışarıda)."
+    },
+    {
+      "id": "micro_b4a_490",
+      "question": "RECAP: Parazit 'Siyah su humması' (Blackwater fever) etkeni?",
+      "answer": "[[P. falciparum]] malaryası.",
+      "difficulty": "Zor",
+      "tags": ["Hizli_Tekrar"],
+      "ai_coding": "🤖 Kodlama: S-iyah su = F-alciparum."
+    },
+    {
+      "id": "micro_b4a_491",
+      "question": "FINAL: Bakteri DNA aktarımı 'Fajlar' aracılığıyla yapılıyorsa?",
+      "answer": "[[Transdüksiyon]].",
+      "difficulty": "Kolay",
+      "tags": ["Final_Recap"],
+      "ai_coding": "🤖 Kodlama: F-aj = T-ransdüksiyon."
+    },
+    {
+      "id": "micro_b4a_492",
+      "question": "FINAL: S. aureus Novobiyosin'e duyarlı mıdır?",
+      "answer": "Evet ([[S. saprophyticus]] dirençlidir - Ayırıcı).",
+      "difficulty": "Orta",
+      "tags": ["Final_Recap"],
+      "ai_coding": "🤖 Kodlama: S-aprophyticus = D-irençli."
+    },
+    {
+      "id": "micro_b4a_493",
+      "question": "FINAL: Kompleman MAC bileşenleri?",
+      "answer": "[[C5b]], [[C6]], [[C7]], [[C8]], [[C9]].",
+      "difficulty": "Kolay",
+      "tags": ["Final_Recap"],
+      "ai_coding": "🤖 Kodlama: 5-9."
+    },
+    {
+      "id": "micro_b4a_494",
+      "question": "FINAL: Candida 'Germ tüp' (+) midir?",
+      "answer": "[[C. albicans]] ve [[C. dubliniensis]] (+)dir.",
+      "difficulty": "Kolay",
+      "tags": ["Final_Recap"],
+      "ai_coding": "🤖 Kodlama: G-erm = C-andida albicans."
+    },
+    {
+      "id": "micro_b4a_495",
+      "question": "FINAL: Kuduz 'Negri cisimcikleri' nerede görülür?",
+      "answer": "[[Sitoplazmada]].",
+      "difficulty": "Orta",
+      "tags": ["Final_Recap"],
+      "ai_coding": "🤖 Kodlama: N-egri = S-itoplazma."
+    },
+    {
+      "id": "micro_b4a_496",
+      "question": "FINAL: Sifilize en özgü test (Spesifik treponemal)?",
+      "answer": "[[FTA-ABS]] veya [[TPHA]].",
+      "difficulty": "Kolay",
+      "tags": ["Final_Recap"],
+      "ai_coding": "🤖 Kodlama: F-T-A = K-alıcı/Spesifik."
+    },
+    {
+      "id": "micro_b4a_497",
+      "question": "FINAL: 'Çilek serviks' görülürse?",
+      "answer": "[[Trichomonas vaginalis]].",
+      "difficulty": "Kolay",
+      "tags": ["Final_Recap"],
+      "ai_coding": "🤖 Kodlama: Ç-ilek = T-richomonas."
+    },
+    {
+      "id": "micro_b4a_498",
+      "question": "FINAL: 'Gül dikeni' batması öyküsü varsa?",
+      "answer": "[[Sporothrix schenckii]].",
+      "difficulty": "Kolay",
+      "tags": ["Final_Recap"],
+      "ai_coding": "🤖 Kodlama: G-ül = S-porothrix."
+    },
+    {
+      "id": "micro_b4a_499",
+      "question": "FINAL: 'Pirinç suyu' şeklinde ishal varsa?",
+      "answer": "[[Vibrio cholerae]].",
+      "difficulty": "Kolay",
+      "tags": ["Final_Recap"],
+      "ai_coding": "🤖 Kodlama: K-olera = P-irinç."
+    },
+    {
+      "id": "micro_b4a_500",
+      "question": "FINAL: TUS'ta Mikrobiyoloji'den kaç soru çıkmaktadır?",
+      "answer": "[[18 Soru]].",
+      "difficulty": "Kolay",
+      "tags": ["Final_Recap"],
+      "ai_coding": "🤖 Kodlama: Hedef 18'de 18! Yolun açık olsun."
+    }
+  ]
+}

@@ -108,6 +108,10 @@ class SubjectRegistry {
         'assets/data/pathology_batch5D.json', // Hemodinamik + KV + İnflamasyon + Hemopoetik 50 kart
         'assets/data/pathology_batch5E.json', // Karma Yüksek Verimli - 500. Tamamlayıcı 50 kart
         'assets/data/pathology_vaka_100.json', // 100 Vaka Kampı
+        // ── 331 Konsolide Patoloji Kartları ────────────────────────
+        'assets/data/patoloji_kons_batch1.json', // Konsolide 110 kart
+        'assets/data/patoloji_kons_batch2.json', // Konsolide 110 kart
+        'assets/data/patoloji_kons_batch3.json', // Konsolide 111 kart
       ],
     ),
     SubjectModule(
@@ -118,6 +122,9 @@ class SubjectRegistry {
       color: Color(0xFFFF9E7D),
       assetPaths: [
         'assets/data/anatomi_200_soru.json',
+        'assets/data/anatomi_batch1.json',
+        'assets/data/anatomi_batch2.json',
+        'assets/data/anatomi_batch3.json',
       ],
     ),
   ];

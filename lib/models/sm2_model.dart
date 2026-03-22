@@ -9,6 +9,7 @@ class SM2CardData {
   final DateTime nextReviewDate;
   final int? lastQuality; // 1 = Bilemedim, 2 = Bildim
   final bool isBookmarked;
+  final int successCount; // Ardışık doğru sayısı — 3+ = Mastered
 
   const SM2CardData({
     required this.cardId,
@@ -18,7 +19,11 @@ class SM2CardData {
     required this.nextReviewDate,
     this.lastQuality,
     this.isBookmarked = false,
+    this.successCount = 0,
   });
+
+  /// 3+ kez doğru bilindi mi?
+  bool get isMastered => successCount >= 3;
 
   bool get isDue {
     final today = DateTime.now();
@@ -36,15 +41,19 @@ class SM2CardData {
     int newReps;
     double newEase;
 
+    int newSuccessCount;
+
     if (quality == 1) {
       // Bilemedim: sıfırla, ease azalt
       newInterval = 1;
       newReps = 0;
       newEase = (easeFactor - 0.2).clamp(1.3, 5.0);
+      newSuccessCount = 0; // Ardışık sayaç sıfırlanır
     } else {
       // Bildim: geometrik artış
       newReps = repetitions + 1;
       newEase = (easeFactor + 0.1).clamp(1.3, 5.0);
+      newSuccessCount = successCount + 1;
       if (repetitions == 0) {
         newInterval = 1;
       } else if (repetitions == 1) {
@@ -63,6 +72,7 @@ class SM2CardData {
       nextReviewDate: DateTime(nextDate.year, nextDate.month, nextDate.day),
       lastQuality:    quality,
       isBookmarked:   isBookmarked,
+      successCount:   newSuccessCount,
     );
   }
 
@@ -74,6 +84,7 @@ class SM2CardData {
     nextReviewDate: nextReviewDate,
     lastQuality:    lastQuality,
     isBookmarked:   value,
+    successCount:   successCount,
   );
 
   Map<String, dynamic> toJson() => {
@@ -84,6 +95,7 @@ class SM2CardData {
     'nextReviewDate': nextReviewDate.toIso8601String(),
     'lastQuality':    lastQuality,
     'isBookmarked':   isBookmarked,
+    'successCount':   successCount,
   };
 
   factory SM2CardData.fromJson(Map<String, dynamic> json) => SM2CardData(
@@ -94,10 +106,12 @@ class SM2CardData {
     nextReviewDate: DateTime.parse(json['nextReviewDate'] as String),
     lastQuality:    json['lastQuality'] as int?,
     isBookmarked:   (json['isBookmarked'] as bool?) ?? false,
+    successCount:   (json['successCount'] as int?) ?? 0,
   );
 
   factory SM2CardData.initial(String cardId) => SM2CardData(
     cardId:         cardId,
     nextReviewDate: DateTime.now(),
+    successCount:   0,
   );
 }

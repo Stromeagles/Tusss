@@ -1,0 +1,906 @@
+{
+  "subject": "Anatomi",
+  "chapter": "Anatomi - Genel (Batch 2)",
+  "flashcards": [
+    {
+      "id": "anat_101",
+      "question": "Ovaryumun lenf drenajı nereye olur?",
+      "answer": "[[Nodi lymphatici lumbales]] ([[Para-aortik lenf nodları]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_102",
+      "question": "Skrotumun lenf drenajı nereye olur?",
+      "answer": "[[Nodi lymphatici inguinales superficiales]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_103",
+      "question": "Testisin lenf drenajı nereye olur?",
+      "answer": "[[Nodi lymphatici lumbales]] ([[Para-aortik lenf nodları]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_104",
+      "question": "Beyincik (Cerebellum) hasarında genellikle hangi tarafta bulgular ortaya çıkar?",
+      "answer": "[[İpsilateral]] ([[Aynı taraf]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_105",
+      "question": "Bazal ganglionlar hangileridir?",
+      "answer": "[[Ncl. caudatus]], [[Putamen]], [[Globus pallidus]], [[Substantia nigra]], [[Ncl. subthalamicus]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_106",
+      "question": "Eritrositlerin kanda oksijen taşımasını sağlayan molekül nedir?",
+      "answer": "[[Hemoglobin]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_107",
+      "question": "Kalbin en kalın kas tabakasına sahip odası hangisidir?",
+      "answer": "[[Sol ventrikül]] ([[Ventriculus sinister]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_108",
+      "question": "Kalbin endokrin bir organ gibi çalışıp ANP (Atriyal Natriüretik Peptid) salgılayan yeri neresidir?",
+      "answer": "[[Atrium]] ([[Özellikle sağ atriyum aurikulası]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_109",
+      "question": "Kan ile beyin dokusu arasındaki bariyeri oluşturan glial hücreler hangileridir?",
+      "answer": "[[Astrositler]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_110",
+      "question": "Nöronların fagositozunu yapan sistem (makrofajları) MSS'de hangi hücrelerdir?",
+      "answer": "[[Mikroglia]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_111",
+      "question": "Trigeminal nevraljide (Tic Douloureux) yüze vuran ağrı atakları en sık hangi sinir dalarında görülür?",
+      "answer": "[[N. maxillaris]] ([[V2]]) ve [[N. mandibularis]] ([[V3]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_112",
+      "question": "Horner sendromunda klasik triad nedir?",
+      "answer": "[[Mitozis, ptozis]] ve [[anhidroz]] ([[Servikal sempatik zincir lezyonu]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_113",
+      "question": "Solunum sisteminde kıkırdak halkaların (anuli tracheales) bulunmadığı yerler nelerdir?",
+      "answer": "[[Bronchiolus'lar]] ve [[sonrasındaki yapı]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_114",
+      "question": "En büyük lenf kanalı olan Ductus thoracicus nereden başlar?",
+      "answer": "[[Cisterna chyli]] ([[L1-L2 seviyesi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_115",
+      "question": "Kas iğciği hangi liflerden oluşur ve fonksiyonu nedir?",
+      "answer": "[[İntrafuzal kas lifleridir, kasın gerilim/uzunluk değişikliklerini algılar]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_116",
+      "question": "Golgi tendon organının fonksiyonu nedir?",
+      "answer": "[[Kastaki aşırı gerilimi algılayarak kasılmayı inhibe eder]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_117",
+      "question": "Menisküs yırtıkları en sık hangi diz bölgesinde ve durumunda meydana gelir?",
+      "answer": "[[Genellikle bükülü]] ([[fleksiyon]]) dizde ani rotasyonla, en sık medial menisküste",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_118",
+      "question": "Diz ekleminin açılmasını (ekstansiyon) sağlayan en güçlü kas hangisidir?",
+      "answer": "[[M. quadriceps femoris]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_119",
+      "question": "Bacakta posterior (arka) kompartman kaslarını innerve eden sinir hangisidir?",
+      "answer": "[[Nervus tibialis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_120",
+      "question": "Bacakta anterior (ön) kompartman kaslarını innerve eden sinir hangisidir?",
+      "answer": "[[Nervus fibularis]] ([[peroneus]]) profundus",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_121",
+      "question": "Bacakta lateral kompartman kaslarını innerve eden sinir hangisidir?",
+      "answer": "[[Nervus fibularis]] ([[peroneus]]) superficialis",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_122",
+      "question": "İntramüsküler enjeksiyon (kalça) için en güvenli bölge neresidir?",
+      "answer": "[[Gluteal bölgenin üst dış kadranı]] ([[N. ischiadicus'tan kaçınmak için]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_123",
+      "question": "Foramen epiploicum (Winslow deliği) pankreatit gibi iltihapların hangi yapıdan nereye geçiş noktasıdır?",
+      "answer": "[[Bursa omentalis'den büyük periton boşluğuna]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_124",
+      "question": "Mide ülserlerinin kanamasında en çok sorumlu tutulan büyük damar hangisidir?",
+      "answer": "[[A. gastrica sinistra veya]] duodenum arka yüz ülserlerinde [[A. gastroduodenalis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_125",
+      "question": "Göbek etrafındaki (Periumbilikal) venlerin genişlemesine bağlı Caput Medusae görülen hastalık nedir?",
+      "answer": "[[Portal hipertansiyon]] ([[Siroz]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_126",
+      "question": "En kolay palpe edilen inguinal lenf nodu (Büyümesi genital enfeksiyon düşündüren)?",
+      "answer": "[[Nodi lymphatici inguinales superficiales]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_127",
+      "question": "Femoral üçgenin (Trigonum femorale / Scarpa üçgeni) sınırları nelerdir?",
+      "answer": "[[Lig. inguinale]] ([[üst]]), [[M. sartorius]] ([[dış]]), [[M. adductor longus]] ([[iç]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_128",
+      "question": "Hangi kas nefes almaya (inspirasyon) ana katkıyı sağlar?",
+      "answer": "[[Diaphragma]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_129",
+      "question": "Erkek üreme sisteminde fruktoz zengini sıvı üreterek sperm enerjisini sağlayan bez hangisidir?",
+      "answer": "[[Vesicula seminalis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_130",
+      "question": "Ductus ejaculatorius nereden geçerek üretraya açılır?",
+      "answer": "[[Prostatın içinden geçerek pars prostatica urethrae'ya]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_131",
+      "question": "Spermlerin olgunlaştığı ve hareket kabiliyeti kazandığı yer neresidir?",
+      "answer": "[[Epididymis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_132",
+      "question": "Pineal bez (Glandula pinealis / Epifiz bezi) hangi hormonu salgılar?",
+      "answer": "[[Melatonin]] ([[Uyku-uyanıklık ritmi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_133",
+      "question": "Hipofiz arka lobundan (Nörohipofiz) kana salınan hormonlar hangileridir?",
+      "answer": "[[Oksitosin]] ve [[ADH]] ([[Antidiüretik Hormon / Vazopressin]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_134",
+      "question": "Memeden süt salgılanmasını uyaran (üreten) hormon nedir?",
+      "answer": "[[Prolaktin]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_135",
+      "question": "Memeden sütün ejeksiyonunu (fışkırmasını) sağlayan hormon nedir?",
+      "answer": "[[Oksitosin]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_136",
+      "question": "Böbrekte idrarın kan içindeki maddelerden mekanik olarak filtre edildiği yapı hangisidir?",
+      "answer": "[[Glomerulus]] ([[Bowman kapsülü ile birlikte corpusculum renale'yi oluşturur]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_137",
+      "question": "Mesanenin iç yüzünde üreterlerin ve üretranın açıldığı üçgensel düz alana ne ad verilir?",
+      "answer": "[[Trigonum vesicae]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_138",
+      "question": "Tiroid kıkırdağı (Adem elması - Prominentia laryngea) ergenlikte hangi hormonun etkisiyle daha belirginleşir?",
+      "answer": "[[Testosteron]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_139",
+      "question": "Ağızda yutkunmayı (deglutisyon) başlatan en önemli kas hangisidir?",
+      "answer": "[[M. palatoglossus]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_140",
+      "question": "Temporomandibular ekleme (çene eklemi) ağız açıklığını yaptıran ana kas hangisidir?",
+      "answer": "[[M. pterygoideus lateralis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_141",
+      "question": "En büyük çiğneme kası hangisidir?",
+      "answer": "[[M. masseter]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_142",
+      "question": "M. sternocleidomastoideus kasının tek taraflı kasıldığında yaptığı hareket nedir?",
+      "answer": "[[Başı karşı tarafa döndürür]] ([[kontralateral rotasyon]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_143",
+      "question": "Aort kapak dinleme odağı neresidir?",
+      "answer": "[[Sağ 2. interkostal aralığın sternumla birleştiği yer]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_144",
+      "question": "Pulmoner kapak dinleme odağı neresidir?",
+      "answer": "[[Sol 2. interkostal aralığın sternumla birleştiği yer]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_145",
+      "question": "Mitral kapağın en iyi duyulduğu odak (Kalp tepe atımı) neresidir?",
+      "answer": "[[Sol 5. interkostal aralığın midklavikular hatla kesiştiği yer]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_146",
+      "question": "Eritrosit yıkımı sonucu oluşan bilirubin hangi organda konjuge edilerek suya çözünür hale gelir?",
+      "answer": "[[Karaciğer]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_147",
+      "question": "Beyinde 3. ve 4. ventriküller arasındaki tıkanıklıklarda (Aqueductus cerebri sylvii stenozu) ne gelişir?",
+      "answer": "[[Non-komünike hidrosefali]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_148",
+      "question": "Epidural anestezi spinal korda yapılacağı zaman iğne hangi vertebral aralıktan içeri girer?",
+      "answer": "[[Ligamentum flavum'u geçerek spatium epidurale'ye]] ([[Epidural boşluk]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_149",
+      "question": "Lomber ponksiyon (BOS alımı) güvenli olarak hangi omurlar seviyesinden yapılır?",
+      "answer": "[[L3-L4 veya L4-L5 aralığından]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_150",
+      "question": "Gözdeki en büyük kırıcı ortama ne ad verilir?",
+      "answer": "[[Kornea]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_151",
+      "question": "İç kulağa giden denge ve işitme siniri (N. vestibulocochlearis) nerede yer alır?",
+      "answer": "[[Meatus acusticus internus]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_152",
+      "question": "Burnun koku alma bölgesi neresidir?",
+      "answer": "[[Concha nasalis superior]] ve [[septumun üst kısmı]] ([[Regio olfactoria]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_153",
+      "question": "Ductus nasolacrimalis (Gözyaşı kanalı) burun boşluğunda nereye açılır?",
+      "answer": "[[Meatus nasi inferior]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_154",
+      "question": "Sinus maxillaris burun boşluğunda nereye açılır?",
+      "answer": "[[Meatus nasi medius]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_155",
+      "question": "Frontal sinüs, etmoid bül ve maksiler sinüslerin açıldığı ortak havuzun (meatus nasi medius'taki) adı nedir?",
+      "answer": "[[Hiatus semilunaris]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_156",
+      "question": "Adrenalin salgılayan nöroendokrin tümöre (Pheochromocytoma) en çok hangi bölgede rastlanır?",
+      "answer": "[[Medulla suprarenalis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_157",
+      "question": "Sindirim sisteminde karbonhidrat sindirimi ilk nerede başlar?",
+      "answer": "[[Ağızda]] ([[amilaz / pityalin enzimi ile]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_158",
+      "question": "İnsana özgü olan ve ayakta durmayı destekleyen en büyük kalça kası hangisidir?",
+      "answer": "[[M. gluteus maximus]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_159",
+      "question": "Trendelenburg belirtisi hangi kas ve sinir felcinde görülür?",
+      "answer": "N. gluteus superior felci (M. gluteus medius ve [[minimus felci)]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_160",
+      "question": "Safra taşı ile tıkanan ductus cysticus arkasında oluşan duruma ne ad verilir?",
+      "answer": "[[Akut Kolesistit]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_161",
+      "question": "Apandiks vermiformis'in (appendiks) bulunduğu karın kadranı neresidir?",
+      "answer": "[[Sağ alt kadran]] ([[Fossa iliaca dextra]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_162",
+      "question": "McBurney noktası neresidir?",
+      "answer": "[[Spina iliaca anterior superior ile umbilikus'u birleştiren hattın alt 1/3 ile orta 1/3 birleşme noktası]] ([[Apandisitin izdüşümü]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_163",
+      "question": "M. levator palpabraz superior kasının siniri hangisidir? (Kapak kalkması)",
+      "answer": "[[Nervus oculomotorius]] ([[CN III]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_164",
+      "question": "Göz kaslarından M. obliquus superior'un inervasyonu kimindir?",
+      "answer": "[[Nervus trochlearis]] ([[CN IV]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_165",
+      "question": "Göz kaslarından M. rectus lateralis'in inervasyonu kimindir ve görevi nedir?",
+      "answer": "[[Nervus abducens]] ([[CN VI]]), göze dışa bakış yaptırır.",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_166",
+      "question": "Timus bezi lenfositlerin (T hücrelerinin) olgunlaştığı yerdir; yaşla birlikte ne olur?",
+      "answer": "[[İnvolüsyona uğrayarak yağ dokusuna dönüşür.]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_167",
+      "question": "Erişkin omuriliğinin (Medulla spinalis) sonlandığı seviye ortalama neresidir?",
+      "answer": "[[L1-L2 arası intervertebral disk seviyesi]] ([[Conus medullaris]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_168",
+      "question": "Foramen obturatum'dan geçen sinir hangisidir?",
+      "answer": "[[Nervus obturatorius]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_169",
+      "question": "Medyan sinir sıkışmasını tespitte kullanılan klasik klinik test hangisidir?",
+      "answer": "[[Phalen testi / Tinel bulgusu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_170",
+      "question": "Cranial sinir I'in (Koku siniri) adı nedir?",
+      "answer": "[[Nervus olfactorius]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_171",
+      "question": "Cranial sinir II'nin (Görme siniri) adı nedir?",
+      "answer": "[[Nervus opticus]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_172",
+      "question": "Diencephalon hangi temel bölümlerden oluşur?",
+      "answer": "[[Thalamus]], [[Hypothalamus]], [[Epithalamus]], [[Subthalamus]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_173",
+      "question": "Serebrospinal sıvının (BOS) toplam hacmi yetişkinlerde yaklaşık ne kadardır?",
+      "answer": "[[130-150 ml]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_174",
+      "question": "Diş minesi vücudun en sert maddesidir. Hangi hücreler tarafından üretilir?",
+      "answer": "[[Ameloblastlar]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_175",
+      "question": "Odyovestibüler organlarda reseptör olarak işlev gören hücre tipi nedir?",
+      "answer": "[[Tüy hücreleri]] ([[Hair cells]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_176",
+      "question": "Arteria carotis externa'nın terminal dalları hangileridir?",
+      "answer": "[[A. maxillaris]] ve [[A. temporalis superficialis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_177",
+      "question": "Fasiyal sinir hangi kasların inervasyonunu yapar?",
+      "answer": "[[Mimik kasları, m. stapedius, m. stylohyoideus, m. digastricus'un arka karnı]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_178",
+      "question": "Ligamentum patellae nereye insersiyo yapar?",
+      "answer": "[[Tuberositas tibiae]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_179",
+      "question": "Medulla spinalis'te ağrı (pain) iletimini modüle eden substantia gelatinosa of Rolando hangi kornudadır?",
+      "answer": "[[Cornu posterius]] ([[Arka boynuz]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_180",
+      "question": "Vena porta hepatis basıncı arttığında (Portal Hipertansiyon) umbilikus çevresindeki venlerin belirginleşmesine ne ad verilir?",
+      "answer": "[[Caput medusae]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_181",
+      "question": "Bronşiyal astımda bronkokonstriksiyona neden olan otonom sinir sistemi hangisidir?",
+      "answer": "[[Parasempatik sistem]] ([[Nervus vagus]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_182",
+      "question": "Hangi kas çiğneme kası olmasına rağmen ağzı açan (depresyon) tek kastır?",
+      "answer": "[[M. pterygoideus lateralis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_183",
+      "question": "Sinüs transversus ile sinüs sigmoideus'un birleşme noktasına ne ad verilir?",
+      "answer": "[[Confluens sinuum]] ([[Torcular Herophili]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_184",
+      "question": "Ligamentum teres hepatis, fetüs dönemindeki hangi damarın artığıdır?",
+      "answer": "[[Vena umbilicalis sinistra]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_185",
+      "question": "Ligamentum venosum, fetüs dönemindeki hangi yapının artığıdır?",
+      "answer": "[[Ductus venosus]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_186",
+      "question": "Fossa ovalis (kalpte), fetüs dönemindeki hangi yapının artığıdır?",
+      "answer": "[[Foramen ovale]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_187",
+      "question": "Ductus arteriosus kapanınca yetişkinde hangi yapıya dönüşür?",
+      "answer": "[[Ligamentum arteriosum]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_188",
+      "question": "Plexus brachialis'in hangi fasikülü N. radialis ve N. axillaris'i verir?",
+      "answer": "[[Fasciculus posterior]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_189",
+      "question": "Biceps brachii kasının motor inervasyonunu sağlayan sinir hangisidir?",
+      "answer": "[[Nervus musculocutaneus]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_190",
+      "question": "Triceps brachii kasının motor inervasyonunu sağlayan sinir hangisidir?",
+      "answer": "[[Nervus radialis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_191",
+      "question": "Kanın pıhtılaşmasını (koagülasyonunu) sağlayan hücre fragmanlarına ne ad verilir?",
+      "answer": "[[Trombositler]] ([[Platelets]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_192",
+      "question": "Kalbin venöz kanını toplayıp sağ atriyuma dökülen büyük venöz yapı hangisidir?",
+      "answer": "[[Sinus coronarius]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_193",
+      "question": "Kalbin en büyük arteri olan Aorta, hangi ventrikülden çıkar?",
+      "answer": "[[Sol ventrikül]] ([[Ventriculus sinister]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_194",
+      "question": "Troid bezinin (Glandula thyroidea) lenf drenajında paratrakeal lenf nodlarına giden bölüm hangisidir?",
+      "answer": "[[İsthmus bölgesi]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_195",
+      "question": "Paratiroid hormon (PTH) vücutta hangi iyonun kan seviyesini yükseltir?",
+      "answer": "[[Kalsiyum]] ([[Ca2+]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_196",
+      "question": "Böbrek üstü bezinin (Glandula suprarenalis) korteksinden salgılanan glukokortikoid hormon hangisidir?",
+      "answer": "[[Kortizol]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_197",
+      "question": "Mesanenin idrarla dolduğunu algılayan reseptörlerden afferent bilgiyi taşıyan sinirler hangileridir?",
+      "answer": "[[Nervi splanchnici pelvici]] ([[Pelvik splanknik sinirler, S2-S4]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_198",
+      "question": "Erkekte üretranın en çok travmaya maruz kalan en geniş kısmı neresidir?",
+      "answer": "[[Pars prostatica urethrae]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_199",
+      "question": "Uterusun (rahim) en kalın kas tabakası hangisidir?",
+      "answer": "[[Myometrium]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    },
+    {
+      "id": "anat_200",
+      "question": "Menstruasyon döngüsünü kontrol eden hormonlar nerede üretilir?",
+      "answer": "[[Adenohipofiz]] ([[FSH, LH]]) ve [[Ovaryum]] ([[Östrojen, Progesteron]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Anatomi"
+      ]
+    }
+  ]
+}

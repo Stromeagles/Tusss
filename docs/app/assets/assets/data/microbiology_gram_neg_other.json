@@ -1,0 +1,39 @@
+[
+  {
+    "id": "micro-gno-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Negatif Kıvrık Bakteriler",
+    "sub_topic": "Vibrio cholerae",
+    "content_summary": "Vibrio cholerae gram negatif, virgül şeklinde basildir. Pirinç suyu şeklinde diyare yapar.",
+    "flashcards": [
+      {
+        "id": "fc-gno-100",
+        "question": "Vibrio cholerae' nın tanısında kullanılan özel besiyeri nedir?",
+        "answer": "TCBS agar."
+      }
+    ],
+    "tus_spots": [
+      "Kolera toksini, Gs proteinini ADP-ribozilleyerek cAMP artışına neden olur."
+    ]
+  },
+  {
+    "id": "micro-gno-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Negatif Non-Fermenterler",
+    "sub_topic": "Pseudomonas aeruginosa",
+    "content_summary": "P. aeruginosa gram negatif, non-fermenter bir basildir. Piyosiyanin (mavi-yeşil) pigmenti üretir.",
+    "flashcards": [
+      {
+        "id": "fc-gno-110",
+        "question": "Pseudomonas enfeksiyonu kliniğinde görülen nekrotik deri lezyonuna ne ad verilir?",
+        "answer": "Ektima gangrenozum."
+      }
+    ],
+    "tus_spots": [
+      "Pseudomonas, 42C' de üreme özelliği ile karakterizedir.",
+      "Kistik fibrozis hastalarında biyofilm (alginat) oluşturur."
+    ]
+  }
+]

@@ -1,0 +1,262 @@
+{
+  "subject": "Patoloji",
+  "chapter": "Solunum (devam) + Üriner (devam) + Hepatobilier (Batch 5B)",
+  "flashcards": [
+    {
+      "id": "path_b5B_001",
+      "question": "Akciğer kanseri taramasında düşük doz BT'nin endikasyonları nelerdir?",
+      "answer": "[[50-80 yaş]] + [[≥20 paket-yıl]] sigara + Halen içiyor veya son 15 yıl içinde bırakmış. [[Yıllık düşük doz BT]] taraması önerilir.",
+      "difficulty": "Orta",
+      "tags": ["Akciğer", "Tarama", "LDCT"],
+      "ai_coding": "🤖 Kodlama: Akciğer tarama = '50-80 yaş + 20 paket-yıl + LDCT yıllık'."
+    },
+    {
+      "id": "path_b5B_002",
+      "question": "Pancoast tümörü hangi semptomları yapar ve lokalizasyonu nedir?",
+      "answer": "[[Akciğer apeksi]] tümörü → [[Horner sendromu]] (ptoz, miyoz, anhidroz) + [[Brakiyal pleksus]] tutulumu (kol ağrısı).",
+      "difficulty": "Orta",
+      "tags": ["Akciğer", "Pancoast", "Horner"],
+      "ai_coding": "🤖 Kodlama: Pancoast = 'Apex tümörü → Horner+Brakiyal pleksus'. Skuamöz sık."
+    },
+    {
+      "id": "path_b5B_003",
+      "question": "Pnömoni histolojik tipleri (lobüler, interstisyel) arasındaki fark nedir?",
+      "answer": "[[Lobüler (alveolar)]]: [[Nötrofil + fibrin]] (konsolidasyon). [[İnterstisyel]]: [[Alveol duvarı]] inflamasyonu (atipik pnömoni).",
+      "difficulty": "Orta",
+      "tags": ["Pnömoni", "Histoloji", "Lobüler"],
+      "ai_coding": "🤖 Kodlama: Lobüler = 'Alveolü doldurdu' (tipik). İnterstisyel = 'Duvarı tuttu' (atipik)."
+    },
+    {
+      "id": "path_b5B_004",
+      "question": "Pulmoner fibroziste UIP (Usual Interstitial Pneumonia) ve NSIP paterni nasıl farklılaşır?",
+      "answer": "[[UIP]]: [[Honeycombing]] (bal peteği) + alt lob subplevral tutulum. [[NSIP]]: [[Uniform]] görünüm, daha iyi prognoz.",
+      "difficulty": "Zor",
+      "tags": ["Pulmoner Fibrozis", "UIP", "NSIP"],
+      "ai_coding": "🤖 Kodlama: UIP = 'Honeycombing + Alt subplevral + Heterogen' = İPF. NSIP = Uniform, daha iyi."
+    },
+    {
+      "id": "path_b5B_005",
+      "question": "Pulmoner langerhans hücreli histiyositoz hangi sigara alışkanlığı ile ilişkilidir?",
+      "answer": "[[Sigara içen]] genç yetişkinler. [[CD1a (+)]], [[S100 (+)]] ve EM'de [[Birbeck granülü]].",
+      "difficulty": "Zor",
+      "tags": ["Langerhans Histiyositoz", "Akciğer"],
+      "ai_coding": "🤖 Kodlama: Pulmoner LCH = Sigara = CD1a+S100+ = Birbeck granülü."
+    },
+    {
+      "id": "path_b5B_006",
+      "question": "Asbestosis ile silikozis'in histolojik farkı nedir?",
+      "answer": "[[Asbestosis]]: [[Ferrüjinöz cisimler]] (drumstick). [[Silikozis]]: [[Üst lobda]] konsantrik [[silikotik nodül]] + [[yumurta kabuğu (egg-shell)]] kalsifikasyon.",
+      "difficulty": "Orta",
+      "tags": ["Asbest", "Silikoz", "Pnömokonyoz"],
+      "ai_coding": "🤖 Kodlama: Asbestosis = Alt lob + Ferrüjinöz cisim. Silikoz = Üst lob + Egge kabuğu kalsifikasyon."
+    },
+    {
+      "id": "path_b5B_007",
+      "question": "Berilyum maruziyetinde pulmoner patoloji nedir?",
+      "answer": "[[Non-kazeifiye granülomlar]] (sarkoidoz benzeri). [[BeLPT]] testi tanısal yardımcıdır.",
+      "difficulty": "Zor",
+      "tags": ["Berilyum", "Granülom", "Akciğer"],
+      "ai_coding": "🤖 Kodlama: Berilyum = 'Sarkoidoz benzeri ama mesleki'. BeLPT tanısal."
+    },
+    {
+      "id": "path_b5B_008",
+      "question": "Özofageal varislerde acil tedavi seçeneklerinde neden propranolol kullanılır?",
+      "answer": "[[Propranolol]]: Portal basıncı düşürür (profilaksi). Akut kanamada [[Oktreotid]] ve [[Endoskopik band ligasyonu]] kullanılır.",
+      "difficulty": "Orta",
+      "tags": ["Portal HT", "Varises", "Propranolol"],
+      "ai_coding": "🤖 Kodlama: Propranolol = Portal basıncı düşürür. Akut kanama = Oktreotid + Band."
+    },
+    {
+      "id": "path_b5B_009",
+      "question": "Nefrotik sendromun sekonder nedenlerinden amilioidoz böbrek tutulumu nasıldır?",
+      "answer": "[[Congo red (+)]] ve polarize ışıkta [[elma yeşili çift kırınım]]. [[Mezangium]] ve kapiller duvarda birikim → [[Nefrotik sendrom]].",
+      "difficulty": "Orta",
+      "tags": ["Amiloid", "Böbrek", "Nefrotik"],
+      "ai_coding": "🤖 Kodlama: Amiloid böbrek = Congo red + Glomerüler birikme = Nefrotik."
+    },
+    {
+      "id": "path_b5B_011",
+      "question": "Reflü nefropatisi (kronik pyelonefrit) nasıl gelişir ve histolojik bulguları nelerdir?",
+      "answer": "[[Vezikoüreteral reflü]] → [[Skarlaşma]] + [[Kaliks küntleşmesi]]. Tübüler atrofi ve interstisyel fibrozis.",
+      "difficulty": "Orta",
+      "tags": ["Pyelonefrit", "Reflü", "Böbrek"],
+      "ai_coding": "🤖 Kodlama: Reflü nefropati = 'Reflü → Bakteri → Skar + Kaliks küntleşme'."
+    },
+    {
+      "id": "path_b5B_014",
+      "question": "Alport sendromu nedir ve böbrek histolojisi nasıldır?",
+      "answer": "[[Tip IV kollajen]] eksikliği ([[COL4A]] mutasyonu). [[GBM laminasyonu]] (splitting) + İşitme kaybı + Oküler lezyonlar.",
+      "difficulty": "Zor",
+      "tags": ["Alport", "COL4A", "GBM"],
+      "ai_coding": "🤖 Kodlama: Alport = 'GBM ince + İşitme kaybı + Oküler'. COL4A5 X'e bağlı."
+    },
+    {
+      "id": "path_b5B_015",
+      "question": "Otosomal dominant polikistik böbrek hastalığı (ADPKD) hangi genlerde mutasyon görülür?",
+      "answer": "[[PKD1 (16p)]] veya [[PKD2 (4q)]]. Komplikasyon: [[İntraserebral anevrizma]] (Berry) ve karaciğer kistleri.",
+      "difficulty": "Orta",
+      "tags": ["ADPKD", "PKD1", "Polikistik Böbrek"],
+      "ai_coding": "🤖 Kodlama: ADPKD = PKD1(16p) veya PKD2(4q). İntraserebral anevrizma = Önemli komplikasyon."
+    },
+    {
+      "id": "path_b5B_017",
+      "question": "Hepatik ensefalopati gelişim mekanizması nedir?",
+      "answer": "[[Amonyak]] birikimi → [[Glutamin]] artışı → [[GABA]] inhibisyonu sonucu ensefalopati gelişir.",
+      "difficulty": "Orta",
+      "tags": ["Hepatik Ensefalopati", "Amonyak"],
+      "ai_coding": "🤖 Kodlama: Hepatik ensefalopati = 'KC amonyak yıkamadı → Beyne gitti'."
+    },
+    {
+      "id": "path_b5B_018",
+      "question": "Hepatoselüler karsinom tanısında güvenilir non-invaziv kriter nedir?",
+      "answer": "[[Sirotik zemin]] + [[Arteriyel tutulum]] + [[Wash-out]] görünümü (BT/MR) = Biyopsisiz tanı.",
+      "difficulty": "Orta",
+      "tags": ["HCC", "Tanı", "LI-RADS"],
+      "ai_coding": "🤖 Kodlama: HCC tanı = 'Siroz + Arteriyel tutulum + Wash-out = Biyopsi gerekmiyor'."
+    },
+    {
+      "id": "path_b5B_019",
+      "question": "Akut viral hepatit'te histolojide hangi değişiklikler görülür?",
+      "answer": "[[Balon dejenerasyonu]] + [[Councilman cismi]] (apoptotik hepatosit) + [[Lobüler inflamasyon]].",
+      "difficulty": "Orta",
+      "tags": ["Viral Hepatit", "Karaciğer Histoloji"],
+      "ai_coding": "🤖 Kodlama: Viral hepatit = 'Balon dejenerasyon + Councilman cismi + Lobüler inflamasyon'."
+    },
+    {
+      "id": "path_b5B_021",
+      "question": "Karaciğer metastazı ile primer HCC'nin makroskopik/klinik farkı nedir?",
+      "answer": "Metastaz: [[Umblike (göbekli)]] multifokal lezyonlar. [[HCC]]: [[AFP]] yüksekliği + [[HepPar1 (+)]].",
+      "difficulty": "Orta",
+      "tags": ["Karaciğer", "Metastaz", "HCC"],
+      "ai_coding": "🤖 Kodlama: Metastaz = 'Umblike multifokal'. HCC = 'Sirotik zeminde AFP yüksek'. HepPar1 = HCC."
+    },
+    {
+      "id": "path_b5B_022",
+      "question": "Kolanjit gelişiminde Charcot triadı ve Reynold pentadı nedir?",
+      "answer": "[[Charcot triadı]]: [[Ağrı + Sarılık + Ateş]]. [[Reynold pentadı]]: Charcot + [[Hipotansiyon + Konfüzyon]].",
+      "difficulty": "Orta",
+      "tags": ["Kolanjit", "Charcot", "Reynold"],
+      "ai_coding": "🤖 Kodlama: Charcot = 3 (Ağrı+Sarılık+Ateş). Reynold = 5 (Charcot+HT+Konfüzyon)."
+    },
+    {
+      "id": "path_b5B_023",
+      "question": "Safra kesesi kanseri için en önemli risk faktörleri nelerdir?",
+      "answer": "[[Safra taşı]], [[Porselen safra kesesi]] ve [[Salmonella typhi]] taşıyıcılığı.",
+      "difficulty": "Orta",
+      "tags": ["Safra Kesesi", "Kanser", "Risk"],
+      "ai_coding": "🤖 Kodlama: Safra kesesi Ca = 'Taş + Porselen + Anomali'. Kadın risk yüksek."
+    },
+    {
+      "id": "path_b5B_024",
+      "question": "Pankreas adenokarsinomunda en sık lokalizasyon ve klinik belirti nedir?",
+      "answer": "Pankreas başı: [[Ağrısız sarılık]] + [[Courvoisier işareti]] (palpe edilebilir safra kesesi).",
+      "difficulty": "Orta",
+      "tags": ["Pankreas", "Adenokarsinom", "Courvoisier"],
+      "ai_coding": "🤖 Kodlama: Pankreas başı = 'Ağrısız sarılık + Courvoisier'. Kuyruk = Ağrı+Geç."
+    },
+    {
+      "id": "path_b5B_025",
+      "question": "Pankreas kistik neoplazileri hangileridir ve hangisi ne tehlikelidir?",
+      "answer": "[[Seröz]]: Benign. [[MCN]]: Potansiyel malign. [[IPMN]]: Yüksek malign potansiyel (over stroma benzeri).",
+      "difficulty": "Zor",
+      "tags": ["Pankreas", "Kistik Neoplazm", "IPMN"],
+      "ai_coding": "🤖 Kodlama: Seröz = Benign. MCN = Orta risk. IPMN = Yüksek risk. 'Seröz'den korkma."
+    },
+    {
+      "id": "path_b5B_026",
+      "question": "Kronik pankreatit histolojisinde hangi değişiklikler görülür?",
+      "answer": "[[Fibrozis]], asiner atrofi ve [[kalsifikasyon]] (alkolik). [[Malabsorpsiyon (steatorre)]] ve diyabet gelişir.",
+      "difficulty": "Orta",
+      "tags": ["Kronik Pankreatit", "Fibrozis"],
+      "ai_coding": "🤖 Kodlama: Kronik pankreatit = 'Fibrozis+Atrofi+Kalsifikasyon'. Alkol en sık."
+    },
+    {
+      "id": "path_b5B_027",
+      "question": "Akut pankreatitte Cullen ve Grey Turner işaretleri ne ifade eder?",
+      "answer": "[[Cullen]]: Periumbilikal ekimoz. [[Grey Turner]]: Flank (yan) bölge ekimoz. [[Hemorajik pankreatit]] göstergesidir.",
+      "difficulty": "Orta",
+      "tags": ["Akut Pankreatit", "Cullen", "Grey Turner"],
+      "ai_coding": "🤖 Kodlama: Cullen = Göbek çevresi. Grey Turner = Yan. İkisi = Hemorajik pankreatit."
+    },
+    {
+      "id": "path_b5B_028",
+      "question": "Pankreatitte yağ nekrozunun (steatonekroz) mekanizması nedir?",
+      "answer": "Lipaz → Yağ asitleri + Ca → [[Saponifikasyon]] → [[Beyaz mum (chalky white)]] lekeleri.",
+      "difficulty": "Orta",
+      "tags": ["Pankreatit", "Yağ Nekrozu"],
+      "ai_coding": "🤖 Kodlama: Yağ nekrozu = 'Lipaz yağı eritir + Ca tuzlanır = Beyaz mum'."
+    },
+    {
+      "id": "path_b5B_029",
+      "question": "Hepatit B'nin HBeAg ve HBsAg pozitifliğinin klinik anlamı nedir?",
+      "answer": "[[HBsAg]]: Enfeksiyon varlığı. [[HBeAg]]: [[Aktif replikasyon]] ve yüksek bulaşıcılık.",
+      "difficulty": "Orta",
+      "tags": ["Hepatit B", "Seroloji"],
+      "ai_coding": "🤖 Kodlama: HBsAg = 'Var demek'. HBeAg = 'Çok bulaşıcı'. Anti-HBs = 'Korunma'. IgM = Akut."
+    },
+    {
+      "id": "path_b5B_031",
+      "question": "Karaciğerde vasküler hastalıklar: Budd-Chiari sendromunu açıklayın.",
+      "answer": "[[Hepatik ven trombozu]] → [[Sentrilobüler nekroz]]. [[Polisitemia vera]] ve OKS kullanımı ile ilişkilidir.",
+      "difficulty": "Zor",
+      "tags": ["Budd-Chiari", "Karaciğer", "Venöz Tromboz"],
+      "ai_coding": "🤖 Kodlama: Budd-Chiari = 'Hepatik ven trombozu → Kentrilobüler nekroz → Siroz'. PV + OKS."
+    },
+    {
+      "id": "path_b5B_033",
+      "question": "Glomerülonefrit sınıflamasında 'pauci-immün' ile 'immün kompleks' tipler nasıl ayrılır?",
+      "answer": "[[Pauci-immün]]: [[IF negatif]] (ANCA vaskülit). [[İmmün kompleks]]: [[Granüler IF]] birikimi ([[Lupus]], PSGN).",
+      "difficulty": "Zor",
+      "tags": ["GN", "Pauci-immün", "IF"],
+      "ai_coding": "🤖 Kodlama: Pauci = 'IF negatif' = ANCA. Granüler = İmmün kompleks. Linear = Goodpasture."
+    },
+    {
+      "id": "path_b5B_034",
+      "question": "Kortikal nekroz (akut) ile tübüler nekroz (ATN) böbrek patolojisinde farkı nedir?",
+      "answer": "[[ATN]]: Reversible (tübül). [[Akut kortikal nekroz]]: [[İrreversible]] (korteks tamamı).",
+      "difficulty": "Zor",
+      "tags": ["Böbrek", "Kortikal Nekroz", "ATN"],
+      "ai_coding": "🤖 Kodlama: ATN = 'Tübül' = Geri döner. Kortikal nekroz = 'Korteks tamamı' = Geri dönmez."
+    },
+    {
+      "id": "path_b5B_036",
+      "question": "Bronşiektazinin histolojisi ve kalıcı doku değişiklikleri nedir?",
+      "answer": "Bronşların [[kalıcı genişlemesi]]. [[Düz kas ve kıkırdak yıkımı]] görülür. [[Kistik fibrozis]] en sık nedendir.",
+      "difficulty": "Orta",
+      "tags": ["Bronşiektazi", "Kistik Fibrozis"],
+      "ai_coding": "🤖 Kodlama: Bronşiektazi = 'Bronş kalıcı genişledi'. KF en sık neden. Kıkırdak yıkıldı."
+    },
+    {
+      "id": "path_b5B_037",
+      "question": "Kistik fibrozis mutasyonunun böbrek ve karaciğer dışındaki organ tutulumları nelerdir?",
+      "answer": "[[CFTR]] (klor kanalı) mutasyonu. [[Pankreas yetmezliği]] + [[Biliyer siroz]] + Erkekte [[infertilite]]. [[Ter testi]] (+).",
+      "difficulty": "Orta",
+      "tags": ["Kistik Fibrozis", "CFTR"],
+      "ai_coding": "🤖 Kodlama: KF = 'CFTR = Akciğer+Pankreas+KC+İnfertilite'. Ter testi tanısal."
+    },
+    {
+      "id": "path_b5B_040",
+      "question": "Lupus nefriti hangi kompleman yolakları baskılar ve neden?",
+      "answer": "[[C3 ve C4]] her ikisi de düşüktür ([[Klasik yol]]). PSGN'de ise sadece [[C3 düşüktür]].",
+      "difficulty": "Zor",
+      "tags": ["Lupus", "Kompleman", "C3", "C4"],
+      "ai_coding": "🤖 Kodlama: SLE = C3+C4 her ikisi düşük. PSGN = Sadece C3 düşük (alternatif yol)."
+    },
+    {
+      "id": "path_b5B_044",
+      "question": "İmmünoblastik lenfadenopati ile reaktif lenfadenopatin histolojik farkları nelerdir?",
+      "answer": "[[Asherman sendromu]]: İntrauterin [[adezyonlar]] (sineki) → Amenore ve [[infertilite]]. D&C sonrası gelişir.",
+      "difficulty": "Orta",
+      "tags": ["Asherman", "Uterus", "Adezyon"],
+      "ai_coding": "🤖 Kodlama: Asherman = 'İntrauterin skar = Menstrüasyon yok = İnfertilite'."
+    },
+    {
+      "id": "path_b5B_047",
+      "question": "Paroksismal nokturnal hemoglobinüri (PNH) patogenezi nedir?",
+      "answer": "[[PIG-A]] mutasyonu → [[CD55 ve CD59]] eksikliği → Kompleman aracılı larting. [[Budd-Chiari]] riski vardır.",
+      "difficulty": "Zor",
+      "tags": ["PNH", "CD55", "CD59"],
+      "ai_coding": "🤖 Kodlama: PNH = 'CD55/59 yok → Kompleman hücreyi yiyor'. PIG-A mutasyonu."
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "subject": "Patoloji",
+  "chapter": "Meme + Deri + Kadın Genital Ek Kartlar (Batch 5C)",
+  "flashcards": [
+    {
+      "id": "path_b5C_001",
+      "question": "DCIS (Duktal Karsinoma İn Situ) ile LCIS (Lobüler Karsinoma İn Situ) farkı nedir?",
+      "answer": "[[DCIS]]: [[E-kaderin (+)]], kalsifikasyon sık, invaziv karsinom prekürsörü. [[LCIS]]: [[E-kaderin (-)]], bilateral risk göstergesi.",
+      "difficulty": "Orta",
+      "tags": ["Meme", "DCIS", "LCIS"],
+      "ai_coding": "🤖 Kodlama: DCIS=E-kad(+), tedavi gerekir. LCIS=E-kad(-), risk göstergesi bilateral."
+    },
+    {
+      "id": "path_b5C_002",
+      "question": "İnvaziv duktal karsinoma (IDC) ile invaziv lobüler karsinoma (ILC) histolojik farkı nedir?",
+      "answer": "[[IDC]]: En sık tip, glandül formasyonu. [[ILC]]: [[E-kaderin kaybı]] ([[CDH1]]), [[tek sıra (Indian file)]] dizilim.",
+      "difficulty": "Orta",
+      "tags": ["Meme", "IDC", "ILC"],
+      "ai_coding": "🤖 Kodlama: ILC = 'Indian file' + E-kaderin(-) + Bilateral. IDC = En sık meme kanseri."
+    },
+    {
+      "id": "path_b5C_003",
+      "question": "HER2-pozitif meme kanserinin özellikleri ve tedavi hedefi nedir?",
+      "answer": "[[HER2 (ERBB2)]] amplifikasyonu vardır. Tedavi hedefi monoklonal antikor olan [[Trastuzumab]] (Herceptin)'dir.",
+      "difficulty": "Orta",
+      "tags": ["Meme", "HER2", "Trastuzumab"],
+      "ai_coding": "🤖 Kodlama: HER2+ = Trastuzumab hedefi. ERBB2 amplifikasyonu = Agresif."
+    },
+    {
+      "id": "path_b5C_004",
+      "question": "Triple negatif meme kanserinin (TNBC) özellikleri nelerdir?",
+      "answer": "[[ER, PR ve HER2 negatiftir]]. En agresif alt tiptir. [[BRCA1 mutasyonu]] ile güçlü ilişkisi vardır.",
+      "difficulty": "Orta",
+      "tags": ["Meme", "TNBC", "BRCA1"],
+      "ai_coding": "🤖 Kodlama: TNBC = ER-PR-HER2 hepsi negatif. BRCA1 + Agresif. Sadece kemo."
+    },
+    {
+      "id": "path_b5C_005",
+      "question": "Fibroadenom ile fillodes tümörün farkı nedir?",
+      "answer": "[[Fibroadenom]]: En sık benign tümör, genç kadın. [[Fillodes tümör]]: [[Stromal aşırı büyüme]], malign potansiyel taşır.",
+      "difficulty": "Orta",
+      "tags": ["Meme", "Fibroadenom", "Fillodes"],
+      "ai_coding": "🤖 Kodlama: Fibroadenom = Genç+İyi huylu. Fillodes = Büyük+Stromal büyüme+Malign olabilir."
+    },
+    {
+      "id": "path_b5C_006",
+      "question": "Paget hastalığı (meme) nedir ve neyi gösterir?",
+      "answer": "Meme başında [[egzema benzeri]] lezyon. Epidermiste [[HER2 (+)]] Paget hücreleri görülür. Altında [[DCIS veya invaziv karsinom]] olduğunu gösterir.",
+      "difficulty": "Zor",
+      "tags": ["Meme", "Paget", "Meme Başı"],
+      "ai_coding": "🤖 Kodlama: Paget = Meme başı egzema = Altında karsinom var. HER2+ hücreler."
+    },
+    {
+      "id": "path_b5C_007",
+      "question": "Meme kanserinde sentinel lenf nodu biyopsisinin önemi nedir?",
+      "answer": "Drende olan [[ilk lenf nodudur]]. [[Mavi boya]] veya [[Tc-99m]] ile belirlenir. Negatifse aksiller diseksiyona gerek kalmaz.",
+      "difficulty": "Kolay",
+      "tags": ["Meme", "Sentinel Lenf Nodu"],
+      "ai_coding": "🤖 Kodlama: Sentinel LN = İlk lenf nodu. Pozitif = Aksilla diseksiyonu. Mavi boya+Tc99m."
+    },
+    {
+      "id": "path_b5C_008",
+      "question": "Fibrokistik meme hastalığında hangi bileşen kansere dönüşüm riski taşır?",
+      "answer": "Yalnızca [[Atipik duktal hiperplazi (ADH)]] belirgin risk artışı (4-5 kat) sağlar.",
+      "difficulty": "Orta",
+      "tags": ["Meme", "Fibrokistik", "ADH"],
+      "ai_coding": "🤖 Kodlama: Fibrokistik'te risk = Atipik hiperplazi (ADH). Basit kist/fibrozis = Risk yok."
+    },
+    {
+      "id": "path_b5C_009",
+      "question": "Melanomun Clark seviyesi ile Breslow kalınlığının prognostik önemi nedir?",
+      "answer": "[[Breslow kalınlığı (mm)]] en önemli prognostik faktördür. [[Clark seviyesi]] ise anatomik tabaka tutulumunu (I-V) gösterir.",
+      "difficulty": "Orta",
+      "tags": ["Melanom", "Breslow", "Clark"],
+      "ai_coding": "🤖 Kodlama: Melanom prognoz = Breslow kalınlığı (mm). <1mm=iyi, >4mm=kötü."
+    },
+    {
+      "id": "path_b5C_010",
+      "question": "BRAF V600E mutasyonunun melanomda önemi ve tedavisi nedir?",
+      "answer": "Melanomların %50-60'ında bulunur. Tedavide [[Vemurafenib]] (BRAF inhibitörü) ve [[Trametinib]] (MEK inhibitörü) kullanılır.",
+      "difficulty": "Orta",
+      "tags": ["Melanom", "BRAF", "Hedefe Yönelik"],
+      "ai_coding": "🤖 Kodlama: Melanom BRAF V600E → Vemurafenib. BRAF+MEK inhibitörü birlikte."
+    },
+    {
+      "id": "path_b5C_011",
+      "question": "Bazal hücreli karsinom ile skuamöz hücreli karsinom'un metastaz riski karşılaştırması nedir?",
+      "answer": "[[Bazal hücreli (BHK)]]: En sık, lokal invazif, metastaz [[yok denenecek kadar az]]. [[Skuamöz hücreli (SHK)]]: Metastaz riski vardır.",
+      "difficulty": "Orta",
+      "tags": ["Deri", "BHK", "SHK"],
+      "ai_coding": "🤖 Kodlama: BHK = Lokal invazif, metastaz nadir. SHK = Metastaz yapar, aktinik keratoz."
+    },
+    {
+      "id": "path_b5C_012",
+      "question": "Keratokantom ile skuamöz hücreli karsinom arasındaki klinik fark nedir?",
+      "answer": "[[Keratoakantom]]: Hızlı büyür, [[keratin krater]] içerir ve haftalar/aylar içinde [[kendiliğinden gerileyebilir]].",
+      "difficulty": "Orta",
+      "tags": ["Deri", "Keratoakantom", "SHK"],
+      "ai_coding": "🤖 Kodlama: Keratoakantom = Hızlı büyür + Keratin krater + Kendiliğinden geriler."
+    },
+    {
+      "id": "path_b5C_013",
+      "question": "Dermatofibrosarkoma protuberans (DFSP) histolojik özelliği ve genetiği nedir?",
+      "answer": "[[Storiform (çark)]] patern görülür. [[t(17;22)]] → [[COL1A1-PDGFB]] füzyonu vardır. [[İmatinib]] tedavide etkilidir.",
+      "difficulty": "Zor",
+      "tags": ["Deri", "DFSP", "PDGFR"],
+      "ai_coding": "🤖 Kodlama: DFSP = Storiform + COL1A1-PDGFB = İmatinib hedefi."
+    },
+    {
+      "id": "path_b5C_014",
+      "question": "Psoriasiform deri hastalıklarında Auspitz işareti ve Koebner fenomeni nedir?",
+      "answer": "[[Auspitz işareti]]: Plak kalkınca nokta kanama. [[Koebner fenomeni]]: Travma yerinde yeni lezyon. [[Münro mikro apseleri]] (nötrofil) tipiktir.",
+      "difficulty": "Orta",
+      "tags": ["Deri", "Psoriasis", "Histoloji"],
+      "ai_coding": "🤖 Kodlama: Psoriasis = Auspitz (+) + Koebner (+) + Münro apses histoloji."
+    },
+    {
+      "id": "path_b5C_015",
+      "question": "Pemfigus vulgaris ile büllöz pemfigoidin blister seviyesi ve antikoru nedir?",
+      "answer": "[[Pemfigus vulgaris]]: [[İntraepidermal]] ayırışma, [[Nikolsky (+)]]. [[Büllöz pemfigoid]]: [[Subepidermal]] ayırışma, [[Nikolsky (-)]].",
+      "difficulty": "Zor",
+      "tags": ["Deri", "Pemfigus", "Büllöz Pemfigoid"],
+      "ai_coding": "🤖 Kodlama: Pemfigus=İntraepidermal+Nikoslky(+). Büllöz=Subepidermal+Nikoslky(-)."
+    },
+    {
+      "id": "path_b5C_016",
+      "question": "Mycosis fungoides'in klinik evreleri ve Sézary sendromu ile ilişkisi nedir?",
+      "answer": "[[CD4+ T hücreli]] deri lenfoması. [[Pautrier mikro apseleri]] (epidermotropizm) görülür. Kan tutulumu varsa [[Sézary sendromu]] denir.",
+      "difficulty": "Zor",
+      "tags": ["Deri", "Mycosis Fungoides", "Sézary"],
+      "ai_coding": "🤖 Kodlama: MF = CD4+ T lenfoma. Patch→Plak→Tümör. Pautrier apses. Sézary = Kan tutulumu."
+    },
+    {
+      "id": "path_b5C_017",
+      "question": "Aktinik keratoz (solar keratoz) neden premalign sayılır?",
+      "answer": "[[UV maruziyeti]] sonucu gelişir. [[SHK (Skuamöz hücreli karsinom)]] prekürsörüdür.",
+      "difficulty": "Kolay",
+      "tags": ["Deri", "Aktinik Keratoz", "SHK"],
+      "ai_coding": "🤖 Kodlama: Aktinik keratoz = UV + Displazi = SHK prekürsörü (%5-20)."
+    },
+    {
+      "id": "path_b5C_018",
+      "question": "Servikal karsinom gelişiminde HPV'nin rolü ve hangi tipler en yüksek risklidir?",
+      "answer": "[[HPV 16 ve 18]] en risklidir. [[E6 p53'ü]], [[E7 Rb'yi]] inhibe ederek kanser yapar.",
+      "difficulty": "Orta",
+      "tags": ["Serviks", "HPV", "Karsinom"],
+      "ai_coding": "🤖 Kodlama: HPV16+18=%70 servikal Ca. E6=p53 yıkır, E7=Rb yıkır."
+    },
+    {
+      "id": "path_b5C_019",
+      "question": "Endometrial hiperplazinin sınıflandırması ve endometrial karsinoma dönüşüm riski nedir?",
+      "answer": "[[EIN (Endometrial İntraepitelyal Neoplazi)]]: Atipili hiperplazi demektir, [[%25-30]] karsinom riski taşır.",
+      "difficulty": "Orta",
+      "tags": ["Endometrium", "Hiperplazi", "Karsinom"],
+      "ai_coding": "🤖 Kodlama: EIN (atipili hiperplazi) = %25-30 karsinom riski. Östrojen→Tip I."
+    },
+    {
+      "id": "path_b5C_020",
+      "question": "Endometriozis ile adenomiyozis patolojik farkı nedir?",
+      "answer": "[[Endometriozis]]: Uterus dışı doku ([[over]]/çikolata kisti). [[Adenomiyozis]]: [[Myometrium]] içinde endometrial bez bulunması.",
+      "difficulty": "Orta",
+      "tags": ["Kadın Genital", "Endometriozis", "Adenomiyozis"],
+      "ai_coding": "🤖 Kodlama: Endometriozis=Uterus dışı. Adenomiyozis=Myometriumda bez. Her ikisi östrojen."
+    },
+    {
+      "id": "path_b5C_021",
+      "question": "Over seromusinöz (seröz) tümörünün iyi huylu, borderline ve malign formları nasıl ayrılır?",
+      "answer": "Malign tip: [[Yüksek dereceli seröz karsinom]] (en sık). [[TP53]] ve [[BRCA]] mutasyonları ile ilişkilidir.",
+      "difficulty": "Zor",
+      "tags": ["Over", "Seröz Tümör", "Karsinom"],
+      "ai_coding": "🤖 Kodlama: Seröz over: İyi→Borderline→LGSC(KRAS)→HGSC(TP53/BRCA)."
+    },
+    {
+      "id": "path_b5C_023",
+      "question": "Granüloza hücreli tümörün (over) klinik ve histolojik özellikleri nelerdir?",
+      "answer": "[[Östrojen]] üretir. Histolojide [[Call-Exner cisimleri]] görülür. Serumda [[İnhibin]] tanısal belirteçtir.",
+      "difficulty": "Zor",
+      "tags": ["Over", "Granüloza Hücreli", "Call-Exner"],
+      "ai_coding": "🤖 Kodlama: Granüloza tümör = Östrojen + Call-Exner + İnhibin (+). Endometrium hiperplazisi."
+    },
+    {
+      "id": "path_b5C_024",
+      "question": "Yolk sac tümörünün (endodermal sinüs tümörü) markeri ve histolojik bulgusu nedir?",
+      "answer": "[[AFP]] yüksekliği + [[Schiller-Duval cisimleri]]. Genç kadınlarda ve çocuklarda görülen germ hücreli tümördür.",
+      "difficulty": "Zor",
+      "tags": ["Over", "Yolk Sac", "AFP"],
+      "ai_coding": "🤖 Kodlama: Yolk sac = AFP + Schiller-Duval cismi. Genç kadın, BEP kemoterapisi."
+    },
+    {
+      "id": "path_b5C_025",
+      "question": "Miyom (leiomyom) ile leiomyosarkomun ayırımında hangi kriterler kullanılır?",
+      "answer": "[[Leiomyosarkom]]: [[>10 mitoz]], sitolojik atipi ve [[tümör hücre nekrozu]]. Miyomdan gelişmez, [[de novo]] (baştan) çıkar.",
+      "difficulty": "Orta",
+      "tags": ["Uterus", "Leiomyom", "Leiomyosarkom"],
+      "ai_coding": "🤖 Kodlama: Leiomyosarkom = >10 mitoz + Atipi + Nekroz. Leiomiyomdan gelişmez."
+    },
+    {
+      "id": "path_b5C_026",
+      "question": "Molar gebelikte tam mol ile kısmi molün karşılaştırması nedir?",
+      "answer": "[[Tam mol]]: [[46,XX]], fetus yok, hCG çok yüksek, malignite riski yüksektir. [[Kısmi mol]]: [[69,XXX]], fetal doku vardır.",
+      "difficulty": "Orta",
+      "tags": ["Gestasyonel", "Mol", "hCG"],
+      "ai_coding": "🤖 Kodlama: Tam mol = 46XX + Fetus yok + hCG çok yüksek + %20 malignite. Kısmi = 69XXX."
+    },
+    {
+      "id": "path_b5C_027",
+      "question": "Koryokarsinomun özellikleri ve hCG'nin tümör belirteci olarak kullanımı nedir?",
+      "answer": "[[hCG çok yüksektir]]. [[Metotreksat]] ile kür sağlanabilir. Erken dönemde [[akciğere]] metastaz yapar.",
+      "difficulty": "Orta",
+      "tags": ["Koryokarsinom", "hCG", "Gestasyonel"],
+      "ai_coding": "🤖 Kodlama: Koryokarsinom = hCG çok yüksek + Metotreksat ile kür. Akciğer metastazı."
+    },
+    {
+      "id": "path_b5C_029",
+      "question": "Meme kanseri BRCA1 ile BRCA2 mutasyonlarının özellikleri nedir?",
+      "answer": "[[BRCA1]]: Triple negatif meme + Over Ca. [[BRCA2]]: [[Erkek meme]], pankreas ve over kanseri riski.",
+      "difficulty": "Orta",
+      "tags": ["Meme", "BRCA1", "BRCA2"],
+      "ai_coding": "🤖 Kodlama: BRCA1=Triple negatif+Over. BRCA2=Erkek meme+Pankreas. PARP inhibitörü."
+    },
+    {
+      "id": "path_b5C_032",
+      "question": "Skuamöz hücreli karsinom için 'Aktinik Keratoz → SHK' yolağındaki tetikleyiciler nelerdir?",
+      "answer": "[[UV-B]] maruziyeti → [[p53]] mutasyonu. [[Aktinik keratoz]] SHK'nın premalign formudur.",
+      "difficulty": "Orta",
+      "tags": ["Deri", "SHK", "UV", "p53"],
+      "ai_coding": "🤖 Kodlama: UV→p53 mut.→Aktinik keratoz→SHK. XP=NER defekti=En yüksek risk."
+    },
+    {
+      "id": "path_b5C_038",
+      "question": "Ektopik gebeliğin en sık yeri ve risk faktörleri nelerdir?",
+      "answer": "En sık: [[Fallopian tüpü]] ([[ampulla]]). En önemli risk faktörü [[PID]] (pelvik inflamatuvar hastalık) hikayesidir.",
+      "difficulty": "Kolay",
+      "tags": ["Ektopik Gebelik", "Fallopian Tüp"],
+      "ai_coding": "🤖 Kodlama: Ektopik=%95 tüp (ampulla). PID=Risk faktörü. Rüptür=Hemoperitoneum."
+    },
+    {
+      "id": "path_b5C_039",
+      "question": "Dermatitis herpetiformis'te hangi biyomolekül hedeflenir ve hangi hastalıkla ilişkilidir?",
+      "answer": "[[Çölyak hastalığı]] ile ilişkilidir. Dermal papilla tepelerinde [[granüler IgA]] birikimi (DIF) görülür.",
+      "difficulty": "Zor",
+      "tags": ["Deri", "Dermatitis Herpetiformis", "Çölyak"],
+      "ai_coding": "🤖 Kodlama: DH = IgA-tTG + Çölyak hastalığı. DIF=Granüler IgA papilla tepesi."
+    },
+    {
+      "id": "path_b5C_042",
+      "question": "Xeroderma pigmentosum patolojik mekanizması ve deri kanseri riski nedir?",
+      "answer": "[[NER (Nükleotid eksizyon onarımı)]] defekti. UV ile oluşan [[timin dimerleri]] onarılamaz. Kanser riski çok yüksektir.",
+      "difficulty": "Orta",
+      "tags": ["Deri", "XP", "NER", "UV"],
+      "ai_coding": "🤖 Kodlama: XP = NER defekti + UV timin dimer birikir = 10000× kanser riski."
+    },
+    {
+      "id": "path_b5C_048",
+      "question": "İnflamatuar meme karsinomunun klinik ve histolojik özellikleri nedir?",
+      "answer": "Klinik: [[Peau d'orange]] (portakal kabuğu) görünümü. Histoloji: [[Dermal lenfatik embolisi]] (T4d).",
+      "difficulty": "Orta",
+      "tags": ["Meme", "İnflamatuar", "Peau d'orange"],
+      "ai_coding": "🤖 Kodlama: İnflamatuar meme Ca = Peau d'orange + Dermal lenfatik emboli = T4d."
+    }
+  ]
+}

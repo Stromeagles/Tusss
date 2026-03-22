@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../services/focus_service.dart';
+import '../screens/focus_screen.dart';
 import '../theme/app_theme.dart';
+import '../utils/transitions.dart';
 import 'dart:ui';
 
 class StudyFocusTimer extends StatelessWidget {
@@ -17,10 +19,7 @@ class StudyFocusTimer extends StatelessWidget {
 
         return GestureDetector(
           onTap: () {
-            // FocusScreen artık ana navigasyon içinde olduğu için burası pop/push şeklinde ayarlanabilir
-            // Ancak en basiti FocusScreen'i modal olarak veya bir route ile açmak
-            Navigator.pushReplacementNamed(context, '/home'); // Basitlik için home'a atıp oradan yönlendirme yapılabilir
-            // Veya direkt Navigator.of(context).popUntil((route) => route.isFirst);
+            Navigator.push(context, AppRoute.slideUp(const FocusScreen()));
           },
           child: Container(
             margin: const EdgeInsets.only(right: 8),

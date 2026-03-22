@@ -1,16 +1,18 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'auth/auth_view_model.dart';
 import 'theme/app_theme.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'screens/auth/login_screen.dart';
 import 'screens/home_screen.dart';
+import 'screens/onboarding_screen.dart';
 import 'services/ai_service.dart';
 import 'services/auth_service.dart';
 import 'services/focus_service.dart';
-import 'services/pomodoro_service.dart';
 import 'services/notification_service.dart';
 import 'services/theme_service.dart';
 import 'widgets/responsive_wrapper.dart';
@@ -19,7 +21,9 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // Firebase baslatma
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
@@ -34,7 +38,6 @@ void main() async {
       providers: [
         ChangeNotifierProvider<AuthViewModel>(create: (_) => AuthViewModel()),
         ChangeNotifierProvider<FocusService>(create: (_) => FocusService()),
-        ChangeNotifierProvider<PomodoroService>(create: (_) => PomodoroService()),
       ],
       child: const TusAsistaniApp(),
     ),
@@ -62,7 +65,7 @@ class TusAsistaniApp extends StatelessWidget {
         ));
 
         return MaterialApp(
-          title: 'TUS Asistani',
+          title: 'AsisTus',
           debugShowCheckedModeBanner: false,
           themeMode: themeMode,
           theme: AppTheme.lightTheme,
@@ -76,10 +79,36 @@ class TusAsistaniApp extends StatelessWidget {
 }
 
 /// Firebase Auth stream'ini dinler.
-/// Giris yapilmissa -> HomeScreen, yapilmamissa -> LoginScreen.
+/// Giris yapilmissa -> Onboarding (ilk seferde) veya HomeScreen.
 /// Giriş yapmadan uygulamanin HICBIR yerine erisilemez.
-class AuthWrapper extends StatelessWidget {
+class AuthWrapper extends StatefulWidget {
   const AuthWrapper({super.key});
+
+  @override
+  State<AuthWrapper> createState() => _AuthWrapperState();
+}
+
+class _AuthWrapperState extends State<AuthWrapper> {
+  bool? _onboardingDone;
+
+  @override
+  void initState() {
+    super.initState();
+    _checkOnboarding();
+  }
+
+  Future<void> _checkOnboarding() async {
+    final prefs = await SharedPreferences.getInstance();
+    if (mounted) {
+      setState(() => _onboardingDone = prefs.getBool('onboarding_done') ?? false);
+    }
+  }
+
+  Future<void> _completeOnboarding() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('onboarding_done', true);
+    if (mounted) setState(() => _onboardingDone = true);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -87,7 +116,7 @@ class AuthWrapper extends StatelessWidget {
       stream: AuthService.instance.authStateChanges,
       builder: (context, snapshot) {
         // Baglanti bekleniyor — splash
-        if (snapshot.connectionState == ConnectionState.waiting) {
+        if (snapshot.connectionState == ConnectionState.waiting || _onboardingDone == null) {
           return const Scaffold(
             backgroundColor: AppTheme.background,
             body: Center(
@@ -99,6 +128,10 @@ class AuthWrapper extends StatelessWidget {
 
         // Kullanici giris yapmis
         if (snapshot.hasData && snapshot.data != null) {
+          // İlk açılış → Onboarding
+          if (!_onboardingDone!) {
+            return OnboardingScreen(onComplete: _completeOnboarding);
+          }
           return const HomeScreen();
         }
 

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "micro-gn-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Negatif Koklar",
+    "sub_topic": "Neisseria Türleri",
+    "content_summary": "Neisseria türleri gram negatif, kahve çekirdeği şeklinde diplokoklardır. Oksidaz ve katalaz pozitiftirler.",
+    "flashcards": [
+      {
+        "id": "fc-gn-100",
+        "question": "Neisseria türlerinin temel morfolojik özelliği nedir?",
+        "answer": "Gram negatif, kahve çekirdeği şeklinde diplokoklardır."
+      },
+      {
+        "id": "fc-gn-101",
+        "question": "Neisseria meningitidis (Meningokok) hangi şekeri fermente eder?",
+        "answer": "Glikoz ve Maltoz (M-altoz = M-eningokok)."
+      }
+    ],
+    "tus_spots": [
+      "Thayer-Martin besiyeri Neisseria türleri için selektiftir.",
+      "Gonokoklarda kapsül yoktur, Meningokoklarda vardır."
+    ],
+    "clinical_cases": [
+      {
+        "case": "20 yaşında üniversite öğrencisi, ani başlayan ateş, baş ağrısı ve vücutta peteşiyal döküntülerle acile başvuruyor. Ense sertliği saptanıyor.",
+        "options": [
+          "Meningokokal Menenjit",
+          "Pnömokokal Menenjit",
+          "Viral Menenjit",
+          "Listeriyoz"
+        ],
+        "correct_answer": "Meningokokal Menenjit",
+        "explanation": "Peteşiyal döküntü ve hızlı seyir Neisseria meningitidis için tipiktir.",
+        "id": "cc-micro-gneg-basic-001-001"
+      }
+    ]
+  },
+  {
+    "id": "micro-gn-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Enterobacteriaceae",
+    "sub_topic": "Escherichia coli",
+    "content_summary": "E. coli, gram negatif, fakültatif anaerob bir basildir. İdrar yolu enfeksiyonlarının en sık nedenidir.",
+    "flashcards": [
+      {
+        "id": "fc-gn-110",
+        "question": "E. coli' nın en önemli idrar yolu enfeksiyonu virülans faktörü nedir?",
+        "answer": "P pili (Pyelonefrit ile ilişkili)."
+      },
+      {
+        "id": "fc-gn-111",
+        "question": "Hangi E. coli türü Shiga-like toksin (Verotoksin) üretir?",
+        "answer": "EHEC (STEC), özellikle O157:H7 suşu."
+      }
+    ],
+    "tus_spots": [
+      "E. coli, İdrar Yolu Enfeksiyonu (İYE) etkenleri arasında 1. sıradadır.",
+      "ETEC, 'Turist Diyaresi' nin en sık nedenidir."
+    ],
+    "clinical_cases": [
+      {
+        "case": "7 yaşında bir çocuk, kanlı ishal sonrası halsizlik ve idrar miktarında azalma ile getiriliyor. Laboratuvarda anemi ve trombositopeni saptanıyor.",
+        "options": [
+          "HÜS (EHEC ilişkili)",
+          "TTP",
+          "DİC",
+          "İTP"
+        ],
+        "correct_answer": "HÜS (EHEC ilişkili)",
+        "explanation": "Kanlı ishal sonrası gelişen anemi ve trombositopeni HÜS'ü düşündürür.",
+        "id": "cc-micro-gneg-basic-002-001"
+      }
+    ]
+  }
+]

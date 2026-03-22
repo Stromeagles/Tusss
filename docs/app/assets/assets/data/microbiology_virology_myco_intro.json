@@ -1,0 +1,94 @@
+[
+  {
+    "id": "micro-viro-007",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Viroloji",
+    "topic": "Diğer Önemli RNA Virüsleri",
+    "sub_topic": "Kuduz ve Kızamıkçık",
+    "content_summary": "Kuduz (Rhabdovirus, mermi şeklinde) ve Kızamıkçık (Rubella, Togavirus) önemli RNA virüsleridir.",
+    "flashcards": [
+      {
+        "id": "fc-viro-2600",
+        "question": "Kuduz virüsünün hücre yüzeyinde bağlandığı reseptör hangisidir?",
+        "answer": "Asetilkolin (ACh) reseptörü.",
+        "difficulty": "medium",
+        "tags": [
+          "Kuduz",
+          "ACh"
+        ]
+      },
+      {
+        "id": "fc-viro-2601",
+        "question": "Kuduz tanısında beyin dokusunda (hipokampus) görülen patognomonik eozinofilik inklüzyon cisimciği?",
+        "answer": "Negri Cisimciği.",
+        "difficulty": "easy",
+        "tags": [
+          "Kuduz",
+          "Negri"
+        ]
+      },
+      {
+        "id": "fc-viro-2602",
+        "question": "Konjenital Rubella Sendromu'nun klasik triadı nedir?",
+        "answer": "Katarakt, Sağırlık ve PDA (Patent Duktus Arteriozus).",
+        "difficulty": "medium",
+        "tags": [
+          "Rubella",
+          "Konjenital"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Kuduz: Retrograd aksonal transport (dynein aracılı) ile MSS'ye taşınır. Viremi yapmaz.",
+      "Rubella: Posterior auriküler ve suboksipital lenfadenopati tipiktir.",
+      "Kuduz Profilaksisi: Isırılan bölgenin beyne uzaklığı enkübasyon süresini belirler. Sabunlu suyla yıkama en kritik ilk adımdır.",
+      "Aşılar: Kızamık, Kızamıkçık, Kabakulak (KKK) canlı atenüe aşılardır."
+    ]
+  },
+  {
+    "id": "micro-myco-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Mikoloji",
+    "topic": "Genel Mikoloji ve Antifungaller",
+    "sub_topic": "Mantar Yapısı ve İlaçlar",
+    "content_summary": "Mantarlar ökaryotur; hücre duvarında kitin/glukan, membranında ergosterol bulunur.",
+    "flashcards": [
+      {
+        "id": "fc-myco-3000",
+        "question": "Mantarların hücre membranında kolesterol yerine bulunan temel sterol?",
+        "answer": "Ergosterol.",
+        "difficulty": "easy",
+        "tags": [
+          "Mantar",
+          "Ergosterol"
+        ]
+      },
+      {
+        "id": "fc-myco-3001",
+        "question": "Skualen epoksidaz enzimini inhibe ederek ergosterol sentezini bozan antifungal?",
+        "answer": "Terbinafin.",
+        "difficulty": "medium",
+        "tags": [
+          "Antifungal",
+          "Terbinafin"
+        ]
+      },
+      {
+        "id": "fc-myco-3002",
+        "question": "Beta-glukan sentezini inhibe ederek hücre duvarını bozan antifungal grubu?",
+        "answer": "Ekinokandinler (Kaspofungin, Mikafungin).",
+        "difficulty": "hard",
+        "tags": [
+          "Antifungal",
+          "Ekinokandin"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Termal Dimorfizm: 25°C'de küf, 37°C'de maya formunda olan mantarlardır (Histoplasma, Blastomyces vb.).",
+      "Kalkoflor Beyazı: Mantar duvarındaki kitine bağlanarak floresan ışık verir.",
+      "Amfoterisin B: Ergosterole doğrudan bağlanarak porlar açar. En geniş spektrumlu ama nefrotoksiktir.",
+      "Flusitozin: BOS'a en iyi geçen antifungaldir; genelde Kriptokok menenjitinde Amfoterisin B ile kombine edilir."
+    ]
+  }
+]

@@ -15,7 +15,6 @@ import '../services/theme_service.dart';
 import '../services/progress_service.dart';
 import '../models/progress_model.dart';
 import '../services/spaced_repetition_service.dart';
-import '../services/backup_service.dart';
 import '../services/auth_service.dart';
 import '../auth/auth_view_model.dart';
 import 'package:provider/provider.dart';
@@ -452,14 +451,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ),
         ),
 
-        // Veri Yedekle
-        _SettingsTile(
-          icon: Icons.cloud_download_rounded,
-          label: 'Veriyi Yedekle (JSON)',
-          isDark: isDark,
-          onTap: () => _exportBackup(isDark),
-        ),
-
         // Verileri Sıfırla
         _SettingsTile(
           icon: Icons.delete_outline_rounded,
@@ -469,21 +460,21 @@ class _ProfileScreenState extends State<ProfileScreen> {
           onTap: () => _showResetDialog(isDark),
         ),
 
-        // Çıkış Yap
-        _SettingsTile(
-          icon: Icons.logout_rounded,
-          label: 'Oturumu Kapat',
-          isDark: isDark,
-          color: AppTheme.error,
-          onTap: () => _logout(isDark),
-        ),
-
         // Hakkında
         _SettingsTile(
           icon: Icons.info_outline_rounded,
           label: 'Hakkında & Destek',
           isDark: isDark,
           onTap: () => _showAboutSheet(context, isDark),
+        ),
+
+        // Oturumu Kapat
+        _SettingsTile(
+          icon: Icons.logout_rounded,
+          label: 'Oturumu Kapat',
+          isDark: isDark,
+          color: AppTheme.error,
+          onTap: () => _logout(isDark),
         ),
       ],
     )
@@ -920,48 +911,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-  // ── Veri Yedekleme ───────────────────────────────────────────────────────
-
-  Future<void> _exportBackup(bool isDark) async {
-    try {
-      final jsonStr = await BackupService.exportToJson();
-      if (!kIsWeb) {
-        final dir = await getApplicationDocumentsDirectory();
-        final file = File(
-            '${dir.path}/tus_backup_${DateTime.now().millisecondsSinceEpoch}.json');
-        await file.writeAsString(jsonStr);
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text('Yedek kaydedildi: ${file.path}'),
-              backgroundColor: AppTheme.success,
-            ),
-          );
-        }
-      } else {
-        // Web'de panoya kopyala
-        await Clipboard.setData(ClipboardData(text: jsonStr));
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Yedek verisi panoya kopyalandı'),
-              backgroundColor: AppTheme.success,
-            ),
-          );
-        }
-      }
-    } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Yedekleme hatası: $e'),
-            backgroundColor: AppTheme.error,
-          ),
-        );
-      }
-    }
-  }
-
   // ── Çıkış Yap ──────────────────────────────────────────────────────────────
 
   Future<void> _logout(bool isDark) async {
@@ -1088,7 +1037,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
             ),
             const SizedBox(height: 20),
-            Text('TUS Asistanı',
+            Text('AsisTus',
                 style: GoogleFonts.inter(
                     color: isDark
                         ? AppTheme.textPrimary

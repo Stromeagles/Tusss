@@ -1,0 +1,996 @@
+{
+  "subject": "Patoloji",
+  "chapter": "Patoloji - Konsolide (Batch 2)",
+  "flashcards": [
+    {
+      "id": "patk_111",
+      "question": "Kimyasal karsinogenlerden aflatoksin B1 (Aspergillus'tan üretilen) hangi kansere neden olur?",
+      "answer": "Hepatocellular carcinoma ([[HCC]]) - [[P53]] geninde spesifik mutasyon yaparak.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_112",
+      "question": "HTLV-1 (Human T-cell Leukemia Virus type 1) hangi kansere yol açar?",
+      "answer": "[[Erişkin T Hücreli Lösemi]] / Lenfoma (ATLL)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_113",
+      "question": "HPV (İnsan Papilloma Virüsü) tip 16 ve 18 in kanser yapıcı mekanizması nasıldır?",
+      "answer": "Viral kökenli [[E6]] proteini [[P53]]'ü inhibe eder, [[E7]] proteini ise [[Rb]] proteinini inhibe eder.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_114",
+      "question": "EBV (Epstein-Barr Virüs) hangi kanserlerle ilişkilidir?",
+      "answer": "[[Burkitt lenfoma]], Nazofaringeal karsinom, [[Hodgkin lenfoma]], İmmünyetmezlikte [[B hücre]] lenfoması",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_115",
+      "question": "Helicobacter pylori kronik enfeksiyonu midede hangi iki kanser türüne sebep olabilir?",
+      "answer": "[[Gastrik adenokarsinom]] ve [[MALT lenfoma]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_116",
+      "question": "Kanserde yayılma tiplerinden karsinomlar (epitelyal maligniteler) en sık hangi yolla yayılır?",
+      "answer": "[[Lenfatik yol]] ile",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_117",
+      "question": "Sarkomlar (mezenkimal tümörler) en sık hangi yolla yayılır?",
+      "answer": "[[Hematojen]] (kan) yolla",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_118",
+      "question": "Damarları istila etmeyi (hematojen yayılmayı) seven 4 önemli karsinom hangileridir?",
+      "answer": "[[Folliküler tiroid karsinomu]], Koryokarsinom, [[Renal Hücreli Karsinom]] (RCC), [[Hepatosellüler Karsinom]] ([[HCC]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_119",
+      "question": "Yenidoğanda hidrops fetalisin immun (antikor aracılı) sebebi nedir?",
+      "answer": "Rh uyuşmazlığına bağlı [[Eritroblastosis Fetalis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_120",
+      "question": "Pediatrik dönem (ilk 10 yaş) görülen en sık benign tümör nedir?",
+      "answer": "[[Hemanjiyom]] (Çilek [[hemanjiyom]]u - Strawberry hemangioma)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_121",
+      "question": "Nöroblastom hangi yapı kaynaklıdır ve kan tablosunda ne artar?",
+      "answer": "Adrenal medulla veya sempatik ganglion (Nöral kres[[t hücre]]si) / [[VMA]] ve [[HVA]] idrarda artar.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_122",
+      "question": "Çocukluk çağının en sık böbrek tümörü nedir?",
+      "answer": "[[Wilms tümörü]] ([[Nefroblastom]]) - WT1/WT2 gen mutasyonu.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_123",
+      "question": "Çocuklarda kemiğin en sık primer malign tümörü nedir?",
+      "answer": "[[Osteosarkom]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_124",
+      "question": "Kalbin sol tarafının konjenital yetmezlik sendromlarından, doğum sonrası ductus arteriosus kapanırsa yaşamla bağdaşmayan hangisidir?",
+      "answer": "[[Hipoplastik sol kalp sendromu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_125",
+      "question": "Gümüş lekeleriyle boyanan, genelde diyabet ve hipertansiyonda görülen küçük damar duvarı kalınlaşması nedir?",
+      "answer": "[[Hyalin arteriyoloskleroz]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_126",
+      "question": "Tümör dokusunda hücre tiplerinin köken aldığı orijinal dokuya yapısal benzerlik derecesine ne ad verilir?",
+      "answer": "[[Diferansiyasyon]] (Farklılaşma)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_127",
+      "question": "Diferansiyasyon kaybı (hücrelerin tamamen farklılaşmamış olması) haline ne ad verilir?",
+      "answer": "[[Anaplazi]] (Malignitenin en güvenilir morfolojik bulgularından biridir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_128",
+      "question": "Fibrom benign bir tümör iken, fibroz dokunun malign karşılığı nedir?",
+      "answer": "[[Fibrosarkom]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_129",
+      "question": "Kıkırdak dokunun benign ve malign tümörlerinin isimleri nelerdir?",
+      "answer": "[[Kondrom]] (Benign) ve [[Kondrosarkom]] (Malign)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_130",
+      "question": "Çizgili kas dokusunun malign tümörü nedir?",
+      "answer": "[[Rhabdomyosarkom]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_131",
+      "question": "Yassı epitelden köken alan malign tümörlere genel ad olarak ne denir?",
+      "answer": "[[Skuamöz hücreli karsinom]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_132",
+      "question": "Glandüler (bez epitelinden) köken alan malign tümörlere ne ad verilir?",
+      "answer": "[[Adenokarsinom]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_133",
+      "question": "Birden fazla germ yaprağına (Endoderm, Ektoderm, Mezoderm) ait doku içeren tümörlere ne ad verilir?",
+      "answer": "[[Teratom]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_134",
+      "question": "Koristom nedir?",
+      "answer": "Normal mikroskobik yapıda ancak anormal yerleşimli (ektopik) doku kitlesi (Ör: Mide mukozasında [[pankreas]] dokusu)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_135",
+      "question": "Hamartom nedir?",
+      "answer": "Kendi yerleşim yerinde (lokal) bulunan, ancak düzensiz organize olmuş doku kitlesi (Ör: Akciğerde kıkırdak ağırlıklı [[hamartom]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_136",
+      "question": "Tümör hücrelerinde nükleus/sitoplazma (N/C) oranının artması neyi ifade eder?",
+      "answer": "Malign hücrelerde nükleer büyüme ve [[pleomorfizm]]i (Normal oran 1:4 iken 1:1'e yaklaşır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_137",
+      "question": "Karsinom in situ (CIS) nedir?",
+      "answer": "Displastik hücrelerin epitelin tüm kalınlığını kaplaması ancak [[bazal membran]]ı henüz aşmaması durumu",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_138",
+      "question": "Malign tümörlerde stroma gelişiminin bağ dokudan çok zengin ve sert olmasına ne ad verilir?",
+      "answer": "[[Desmoplazi]] ([[Desmoplastik reaksiyon]] - Skiröz tümör)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_139",
+      "question": "Pankreas adenokarsinomu ve meme kanserlerinde kanser hücresi için karakteristik, lokal yoğun stromayı anlatan terim nedir?",
+      "answer": "[[Desmoplazi]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_140",
+      "question": "Bir tümörün primer olarak bölgesel lenf nodlarına yayılma eğilimi, epitelial malignitenin (Karsinom) ana özelliğidir. İstisnai olarak hematojen yayılan karsinomlar hangileridir?",
+      "answer": "Hepatoselüler karsinom, böbrek hücreli karsinom, koryokarsinom, tiroid [[folliküler karsinom]]u",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_141",
+      "question": "Kanser kaşeksisi sendromunda iştahsızlık, kas yıkımı ve kilo kaybına yol açan temel tümör faktörü/sitokin hangisidir?",
+      "answer": "[[TNF-alfa]] (Tümör Nekrozis Faktör alfa, diğer adıyla [[Kaşektin]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_142",
+      "question": "Bronkojenik karsinomlardan olan Küçük Hücreli Akciğer Kanserinin (SCLC) neden olduğu en yaygın paraneoplastik sendromlar hangileridir?",
+      "answer": "[[Cushing sendromu]] ([[ACTH]] salgısı) ve Uygunsuz [[ADH]] Sendromu ([[SIADH]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_143",
+      "question": "Skuamöz hücreli akciğer karsinomunda sıklıkla görülen ve hiperkalsemiye neden olan paraneoplastik peptit nedir?",
+      "answer": "[[PTH-rp]] ([[Parathormon related peptide]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_144",
+      "question": "Trousseau bulgusu (Gezici Tromboflebit - Migratory thrombophlebitis) olarak bilinen paraneoplastik bulgu en sık hangi kanserlerle ilişkilidir?",
+      "answer": "[[Pankreas]] karsinomu ve mide [[adenokarsinom]]u (Müsin salgılayan kanserler)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_145",
+      "question": "Kanda yüksek Alfa-fetoprotein (AFP) düzeyi tipik olarak hangi kanserleri düşündürür?",
+      "answer": "Hepatoselüler karsinom ([[HCC]]) ve [[Yolk sak tümörü]] ([[Endodermal sinüs tümörü]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_146",
+      "question": "Kanda yüksek Karsinoembriyonik antijen (CEA) özellikle hangi kanserde takip amaçlı kullanılır?",
+      "answer": "[[Kolorektal]] kanserler",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_147",
+      "question": "Epitelyal ovariyan tümörlerde (özellikle seröz kistadenokarsinom) yüksek olan tümör markeri nedir?",
+      "answer": "[[CA 125]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_148",
+      "question": "CA 19-9 tümör markeri en sık hangi kanser şüphesinde istenir?",
+      "answer": "[[Pankreas]] ve safra yolu kanserleri",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_149",
+      "question": "PSA (Prokstat Spesifik Antijen) yüksekliği tek başına prostat kanseri tanısı koydurur mu?",
+      "answer": "Hayır, [[BPH]] (Benign Prostat [[Hiperplazi]]si) ve prostatitte de yükselebilir, tarama ve takipte kullanılır.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_150",
+      "question": "Eritrosit sedimentasyon hızı ve CRP ne zaman artar?",
+      "answer": "[[Akut faz]] reaksiyonlarında (İltihap, [[enfeksiyon]], malignite vb.)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_151",
+      "question": "Kalp yetmezliği sol atrium basıncını artırır. Akciğer kılcal damarlarından alveollere geçen sıvının oluşturduğu tablo nedir?",
+      "answer": "[[Pulmoner ödem]] ve [[konjesyon]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_152",
+      "question": "Sağ kalp yetmezliğinde klasik klinik bulgular nelerdir?",
+      "answer": "Boyun venlerinde dolgunluk, hepatomegali (nutmeg/hindistan cevizi karaciğer) ve alt ekstremite (periferik) pretibial [[ödem]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_153",
+      "question": "Kardiyak hipertrofide (Hücre büyümesi), hacim yüklenmesine bağlı olarak (Kapak yetmezliklerinde) miyokard yapısı nasıl değişir?",
+      "answer": "[[Eksantrik hipertrofi]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_154",
+      "question": "Kardiyak hipertrofide basınç yüklenmesine bağlı olarak (Aort stenozu veya hipertansiyon) miyokard yapısı nasıl değişir?",
+      "answer": "[[Konsantrik hipertrofi]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_155",
+      "question": "Aterosklerozda plak gelişiminde ilk oluşan (makroskopik ve histolojik) lezyon nedir?",
+      "answer": "Yağlı çizgilenmeler ([[Fatty streaks]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_156",
+      "question": "Aterosklerotik plağın yırtılmasında (rüptür - MI veya inme başlatan süreç) en zayıf noktası neresidir?",
+      "answer": "Plağın omuz bölgesi ([[fibroz kapsül]]ün en ince ve inflamasyonun en çok olduğu yer)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_157",
+      "question": "Prinzmetal (Varyant) angina pektorisin etyopatogenezinde yatan temel mekanizma nedir?",
+      "answer": "[[Koroner arter spazmı]] (Aterosklerotik [[plak]] olması şart değildir, istirahatte gelir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_158",
+      "question": "Akut Miyokard Enfarktüsü (MI) sonrası histolojik olarak koagülasyon nekrozu en erken ne kadar sürede görülür?",
+      "answer": "Yaklaşık 4-12 saat sonra",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_159",
+      "question": "MI sonrası inflamasyon sahasına ilk ulaşan (1-3 gün) yangı hücreleri hangileridir?",
+      "answer": "[[Nötrofiller]] ([[PMNL]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_160",
+      "question": "MI sonrası makrofajların en yoğun görev yaptığı dönem hangi günlerdir ve en tehlikeli, yırtılmanın en sık görüldüğü dönemdir?",
+      "answer": "3-7. günler",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_161",
+      "question": "Miyokard enfarktüsü sonrası kanda en erken yükselen biyomerker hangisidir?",
+      "answer": "[[Miyoglobin]] (Özgül değildir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_162",
+      "question": "Miyokard enfarktüsü tanısında kanda en spesifik olan ve 3-4 saatte yükselmeye başlayıp günlerce yüksek kalan enzim markeri hangisidir?",
+      "answer": "[[Kardiyak Troponinler]] ([[TnI]] ve [[TnT]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_163",
+      "question": "Dressler Sendromu nedir?",
+      "answer": "[[Enfarktüs]]ten haftalar sonra ortaya çıkan, miyokard antijenlerine karşı oluşan otoimmün [[fibrin]]öz peri[[kardit]]tir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_164",
+      "question": "Akut romatizmal ateşin (ARA) majör Jones kriterleri nelerdir?",
+      "answer": "J (Joint/[[Poliartrit]]), O (Kalp/[[Kardit]]), N (Nodüller/Subkutan), E ([[Eritema marginatum]]), S ([[Sydenham koresi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_165",
+      "question": "Romatizmal kalp hastalığının patognomonik lezyonları miyokardda hangi isimle anılır ve içerdikleri dev makrofajların adı nedir?",
+      "answer": "[[Aschoff Cisimcikleri]] ve içlerindeki tırtıl çekirdekli [[Anitschkow hücreleri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_166",
+      "question": "Kronik romatizmal kalp hastalığının en çok etkilediği ve fibrozis/kalsifikasyonla en sık darlığına neden olduğu kapak hangisidir?",
+      "answer": "[[Mitral Kapak]] (Balık ağzı veya ilik görünümü deformitesi)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_167",
+      "question": "İnfektif endokarditlerde (IE) kapakçıklarda oluşan pıhtı+mikroorganizma içeren yapılara ne ad verilir?",
+      "answer": "[[Vejetasyon]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_168",
+      "question": "Akut İnfektif endokarditin en sık etkeni olan bakteri ve tuttuğu kapakların durumu nedir?",
+      "answer": "[[Staphylococcus aureus]] - Önceden normal (sağlıklı) kapakları da tutabilir ve yüksek dektriktiftir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_169",
+      "question": "Subakut infektif endokarditin en sık etkeni olan bakteri türü hangisidir?",
+      "answer": "[[Viridans grup Streptokoklar]] (Zaten hasarlı veya protez kapakları tutma eğilimindedir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_170",
+      "question": "IE'de parmak uçlarında ağrılı ve kırmızı nodüllerle seyreden klinik bulguya ne ad verilir?",
+      "answer": "[[Osler nodülleri]] ([[İmmün kompleks]] birikimine bağlıdır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_171",
+      "question": "IE'de avuç içi ve ayak tabanında ağrısız, kırmızı-mor maküler lezyonlara ne ad verilir?",
+      "answer": "[[Janeway lezyonları]] (Septik mikroembolilere bağlıdır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_172",
+      "question": "Kalbin en sık görülen primer benign tümörü hangisidir?",
+      "answer": "[[Miksoma]] (En sık sol atriyumda görülür)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_173",
+      "question": "Küçük çocuklarda kalpte en sık izlenen primer benign tümör ve ilişkili hastalık hangisidir?",
+      "answer": "[[Rhabdomyom]], Tüberöz Skleroz ile ilişkilidir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_174",
+      "question": "Büyük damar vaskülitlerinden (Tüm aortayı ve dallarını tutan) granülomatöz inflamasyon gösteren arteritlerin iki ana formu nedir?",
+      "answer": "Dev hücreli ([[Temporal]]) arterit ve [[Takayasu arteriti]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_175",
+      "question": "50 yaş üstü kadınlarda baş ağrısı, çiğnerken yorulma (çene klaudikasyonu) ve görme kaybı riski olan vaskülit nedir?",
+      "answer": "[[Temporal]] (Dev hücreli) arterit.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_176",
+      "question": "Özellikle 40 yaş altı kadınlarda sık görülen, nabızsızlık hastalığı (Pulseless disease) olarak bilinen aortik ark arteriti nedir?",
+      "answer": "[[Takayasu arteriti]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_177",
+      "question": "Küçük çocuklarda koroner arter anevrizmaları yapma riski yüksek, mukokutanöz lenf nodu sendromu olan hastalık nedir?",
+      "answer": "[[Kawasaki Hastalığı]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_178",
+      "question": "Genç erkeklerde sigara kullanımıyla sıkı ilişkili olan, ayak parmaklarında iskemik ülser/gangren yapan vaskülit hangisidir?",
+      "answer": "[[Buerger Hastalığı]] ([[Tromboanjitis Obliterans]]).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_179",
+      "question": "Orta boy damalarlı tutan, MPO-ANCA ve PR3-ANCA negatif olan ama sıklıkla Hepatit B infeksiyonu ile seyreden fibrinoit nekrozlu vaskülit nedir?",
+      "answer": "[[Poliarteritis Nodosa]] ([[PAN]]). (Not: Glomerülonefrit yapabilir [[ama]] patogenez farklıdır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_180",
+      "question": "Küçük damar (pauci-immun) vaskülitlerinden PR3-ANCA (C-ANCA) pozitifliğiyle klasikleşen ve solunum yollarında kaviteli granülom yapan hastalık nedir?",
+      "answer": "[[Wegener granülomatozu]] ([[Granülom]]atöz Polianjiitis).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_181",
+      "question": "Hipertansiyon patojenezinde böbrek damarlarında görülen klassik duvar kalınlaşmaları nelerdir?",
+      "answer": "Benign HT'de [[Hyalin arteriyoloskleroz]], Malign HT'de Hiperplastik ([[Soğan zarı]] görünümü) arteriyoloskleroz.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_182",
+      "question": "Abdominal aort anevrizmasının (AAA) en büyük etyolojik sebebi nedir?",
+      "answer": "[[Ateroskleroz]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_183",
+      "question": "Torasik aort anevrizması ve aort kökü dilatasyonunun klasik nedeni nedir?",
+      "answer": "[[Hipertansiyon]], Bikuspid aort kapağı ve [[Marfan sendromu]] (Sifiliz de eskiden sıktı).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_184",
+      "question": "Arter duvarında rüptür olmadan, adventisya boyuta ilerleyen ama aslında yalancı lümen (damar katmanları arası) kan dolmasına ne ad verilir?",
+      "answer": "[[Aort disseksiyonu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_185",
+      "question": "Çilek hemanjiyomu (kapiller hemanjiyom) yaşlandıkça nasıl bir seyir izler?",
+      "answer": "Genellikle bebeklik döneminde büyür, çocuklukta spontan geriler.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_186",
+      "question": "Kaposi Sarkomu, özellikle AIDS hastalarında ciltte mor-koyu lekeler yapar. Hangi virüs ile ilişkilidir?",
+      "answer": "[[HHV-8]] (Human Herpesvirus 8 / [[KSHV]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_187",
+      "question": "Karaciğerin spesifik vasküler malignitesidir. Arsenik ve polivinil klorür (PVC) maruziyeti riski artıran tümör nedir?",
+      "answer": "[[Karaciğer anjiyosarkomu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_188",
+      "question": "Akciğer alveol hacminin artıp duvarlarının destrüksiyonu (yıkımı) ile karakterize non-inflamatuar geri dönüşsüz hastalık nedir?",
+      "answer": "[[Amfizem]] ([[KOAH]] bileşenidir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_189",
+      "question": "Sentriasinar (Sentrilobüler) amfizem en çok hangi grup hastada ve akciğer bölgelerinde görülür?",
+      "answer": "Sigara içenlerde ve akciğerin üst loblarında (apekslerde)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_190",
+      "question": "Panasinar (Panlobüler) amfizem en çok kime bağlıdır ve nerede yoğunlaşır?",
+      "answer": "[[Alfa-1 antitripsin]] eksikliği olanlarda ve akciğerin alt loblarında",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_191",
+      "question": "Kronik bronşitin klinik tanımı nedir?",
+      "answer": "Peş peşe en az iki yıl boyunca, her yıl en az 3 ay süren kronik prodüktif (balgamlı) öksürük ([[Reid indeksi]] artar).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_192",
+      "question": "Reid İndeksi nedir?",
+      "answer": "Kronik bronşitte, submukozal bez tabakası kalınlığının bronş duvar kalınlığına oranıdır (>0.4 olması tanısaldır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_193",
+      "question": "Amfizemli hastalardaki klasik fenotipe (nefes darlığı, zayıf, pembemsi ten rengi) ne ad verilir?",
+      "answer": "[[Pink puffer]] (Pembe oflayan)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_194",
+      "question": "Kronik bronşitli hastalardaki klasik fenotipe (kilolu, siyanotik, balgamlı) ne ad verilir?",
+      "answer": "[[Blue bloater]] (Mor şişkin)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_195",
+      "question": "Astımda balgamda mikroskopla tespit edilebilen, eozinofil kaynaklı protein kristallerine ne ad verilir?",
+      "answer": "[[Charcot-Leyden kristalleri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_196",
+      "question": "Astımda görülen dökülen epitel hücresi sarmallarına ne ad verilir?",
+      "answer": "[[Curschmann sarmalları]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_197",
+      "question": "Bronşların veya bronşiyollerin kalıcı ve anormal dilatasyonuyla (genişlemesi) karakterize enfeksiyon ağırlıklı tablo nedir?",
+      "answer": "[[Bronşiektazi]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_198",
+      "question": "Bronşiektazi ile giden, siliyaların disfonksiyonuna (Dynein kolu yokluğu) bağlı olan durum nedir?",
+      "answer": "[[Kartagener sendromu]] ([[Primer siliyer diskinezi]], [[situs inversus]], [[bronşiektazi]] ve [[sinüzit]] triadı)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_199",
+      "question": "İdiopatik pulmoner fibrozisin (IPF) akciğer CT bulgularında fibrozise bağlı oluşturduğu klasik mikroskobik/radyolojik görünüme ne ad verilir?",
+      "answer": "[[Balpeteği]] ([[Honeycomb]]) akciğer",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_200",
+      "question": "Pnömokonyoz ne anlama gelir?",
+      "answer": "Toz, mineral veya partikül inhilasyonuna bağlı gelişen mesleki/çevresel non-neoplastik akciğer fibrozisleri",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_201",
+      "question": "Kömür işçisi pnömokonyozunda lezyonlar genelde hangi loblarda başlar?",
+      "answer": "Üst loblar",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_202",
+      "question": "Silikozis en çok kime görülür, hangi lobu tutar ve hangi enfeksiyonun riskini ciddi şekilde arttırır?",
+      "answer": "Kum/cam/maden işçilerinde, üst loablarda görülür; [[Tüberküloz]] riskini çok artırır.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_203",
+      "question": "Tersane işçiliği veya asbestoz maruziyeti sonrasında plevranın malign mezotelyoması haricinde asbestoza en çok bağlı olan kanser hangisidir?",
+      "answer": "[[Bronkojenik Karsinom]] (Asbest, karsinom riskini mezotelyomadan daha fazla artırır - özellikle sigarayla birlikte)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_204",
+      "question": "Granülomatöz hastalıklardan Sarkoidoz, akciğerde ağırlıklı olarak hangi hilar lenf nodu görünümüyle karakterizedir?",
+      "answer": "[[Bilateral hiler lenfadenopati]] ([[BHL]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_205",
+      "question": "Tükrük bezinin en sık görülen benign tümörü hangisidir?",
+      "answer": "[[Pleomorfik Adenom]] (Mikst tümör)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_206",
+      "question": "Tükrük bezinde sigara içenlerde daha sık görülen, çift katlı onkositik epitelden ve lenfoid stromadan oluşan benign tümör nedir?",
+      "answer": "[[Warthin tümörü]] (Papiller kistadenoma lenfomatozum)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_207",
+      "question": "Tükrük bezinin en sık görülen malign tümörü hangisidir?",
+      "answer": "[[Mukoepidermoid karsinom]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_208",
+      "question": "Özofagusta en sık görülen divertikül hangisidir?",
+      "answer": "[[Zenker divertikülü]] (Faringoözofageal divertikül, krikofaringeal kas zayıflığı, sahte divertikül)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_209",
+      "question": "Özofagusta alt sfinkterin (AÖS) gevşeyememesi ve miyenterik pleksus gangliyonlarının yokluğu ile seyreden hastalık nedir?",
+      "answer": "[[Akalazya]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_210",
+      "question": "Özofagus varislerinin en yaygın etyolojik sebebi nedir?",
+      "answer": "[[Siroz]]a bağlı [[portal hipertansiyon]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_211",
+      "question": "Kronik reflü sonucu (GÖRH), özofagus alt ucu stratifiye yassı epitelinin intestinal tip kolumnar epitele dönüşmesine ne ad verilir?",
+      "answer": "[[Barrett özofagusu]] ([[Adenokarsinom]] riskidir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_212",
+      "question": "Özofagusta 1/3 üst-orta kısmında en sık görülen karsinom tipi nedir?",
+      "answer": "[[Yassı hücreli]] (Skuamöz hücreli) karsinom (Risk: Alkol, sigara, sıcak içecekler)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_213",
+      "question": "Midenin Helicobacter Pylori ile ilişkili olan, diffüz eozinofil ve nötrofil infiltrasyonu yapan tablosuna ne ad verilir?",
+      "answer": "[[Kronik aktif gastrit]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_214",
+      "question": "Otoimmün gastritte patogenez kime karşı antikor gelişmesidir ve kliniği nasıl sonuçlanır?",
+      "answer": "[[Parietal hücre]]lere ve [[intrinsik faktör]]e karşı antikorlar. [[Pernisiyöz anemi]] gelişebilir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_215",
+      "question": "Peptik ülserin en yaygın iki nedeni nedir?",
+      "answer": "[[H. pylori]] infeksiyonu ve NSAİİ (steroid olmayan antiinflamatuar ilaç) kullanımı",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_216",
+      "question": "Mide adenokarsinomlarında hücrelerin müsin dolu olup nükleusu kenara ittiği (Taşlı yüzük hücresi) histolojik tipi hangisidir?",
+      "answer": "Diffüz ([[Taşlı Yüzük Hücreli]]) karsinom - Lauren klasifikasyonuna göre",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_217",
+      "question": "Mide kanserinin sol supraklavikular lenf noduna metastaz yapmış haline ne ad verilir?",
+      "answer": "[[Virchow nodülü]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_218",
+      "question": "Mide karsinomunun bilateral over metastazlarına ne ad verilir?",
+      "answer": "[[Krukenberg tümörü]] (Bol taşlı yüzük hücresi içerir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_219",
+      "question": "Glüten proteinlerinden olan gliadin sekonderi immünolojik bir eteropati olan klinik tablo nedir?",
+      "answer": "[[Çölyak hastalığı]] ([[Gluten sensitif enteropati]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    },
+    {
+      "id": "patk_220",
+      "question": "Çölyak hastalarında en çok artan malignite riski nedir?",
+      "answer": "Enteropati ile ilişkili T-hücreli lenfoma ([[EATL]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ]
+    }
+  ]
+}

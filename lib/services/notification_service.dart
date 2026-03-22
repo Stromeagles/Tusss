@@ -40,7 +40,7 @@ class NotificationService {
   Future<void> scheduleDailyReminder({
     required int hour,
     required int minute,
-    String title = 'TUS Asistani',
+    String title = 'AsisTus',
     String body = 'Bugunluk calisma hedefini tamamlamayi unutma!',
   }) async {
     if (kIsWeb || !_initialized) return;

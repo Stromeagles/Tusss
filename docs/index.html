@@ -17,13 +17,15 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --bg: #0D1117;
-            --surface: #161B22;
-            --border: #21262D;
-            --cyan: #00D1FF;
+            --bg: #0A0E14;
+            --surface: #12161E;
+            --surface-2: #1A1F2B;
+            --border: #1E2533;
+            --cyan: #00D4FF;
+            --cyan-dim: rgba(0, 212, 255, 0.08);
             --purple: #A855F7;
             --text-primary: #F0F6FC;
-            --text-secondary: #8B949E;
+            --text-secondary: #7B8BA3;
         }
 
         body {
@@ -34,24 +36,24 @@
             line-height: 1.6;
         }
 
-        /* Background */
+        /* Background effects */
         .bg-glow {
             position: fixed; inset: 0; z-index: 0; pointer-events: none;
         }
         .bg-glow::before {
             content: '';
             position: absolute;
-            top: -120px; left: -100px;
-            width: 500px; height: 500px;
-            background: radial-gradient(circle, rgba(0,209,255,0.12), transparent 70%);
-            border-radius: 50%;
+            top: -200px; left: 50%;
+            transform: translateX(-50%);
+            width: 800px; height: 600px;
+            background: radial-gradient(ellipse, rgba(0,212,255,0.07) 0%, transparent 70%);
         }
         .bg-glow::after {
             content: '';
             position: absolute;
-            bottom: -100px; right: -120px;
-            width: 450px; height: 450px;
-            background: radial-gradient(circle, rgba(168,85,247,0.10), transparent 70%);
+            bottom: -150px; right: -100px;
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(168,85,247,0.05), transparent 70%);
             border-radius: 50%;
         }
 
@@ -79,12 +81,40 @@
         /* Hero */
         .hero {
             text-align: center;
-            padding: 100px 0 80px;
+            padding: 80px 0 60px;
         }
+
+        /* App icon in hero with glow effect matching icon's cyan */
+        .hero-icon-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 36px;
+        }
+        .hero-icon-wrapper::before {
+            content: '';
+            position: absolute;
+            inset: -20px;
+            background: radial-gradient(circle, rgba(0,212,255,0.25), transparent 70%);
+            border-radius: 50%;
+            z-index: -1;
+            animation: iconPulse 3s ease-in-out infinite;
+        }
+        @keyframes iconPulse {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+        .hero-icon {
+            width: 140px; height: 140px; border-radius: 32px;
+            box-shadow:
+                0 0 40px rgba(0,212,255,0.2),
+                0 20px 60px rgba(0,0,0,0.5);
+            border: 1px solid rgba(0,212,255,0.15);
+        }
+
         .hero-badge {
             display: inline-block;
-            background: rgba(0,209,255,0.08);
-            border: 1px solid rgba(0,209,255,0.2);
+            background: var(--cyan-dim);
+            border: 1px solid rgba(0,212,255,0.2);
             border-radius: 100px;
             padding: 6px 18px;
             font-size: 13px; font-weight: 600;
@@ -115,62 +145,91 @@
             color: #fff; border: none; padding: 14px 36px;
             border-radius: 14px; font-size: 15px; font-weight: 700;
             cursor: pointer; text-decoration: none;
-            box-shadow: 0 8px 24px rgba(0,209,255,0.25);
+            box-shadow: 0 8px 24px rgba(0,212,255,0.25);
             transition: transform 0.15s, box-shadow 0.15s;
         }
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,209,255,0.35); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,212,255,0.35); }
         .btn-secondary {
-            background: rgba(255,255,255,0.05);
+            background: rgba(255,255,255,0.04);
             border: 1px solid var(--border);
             color: var(--text-primary); padding: 14px 36px;
             border-radius: 14px; font-size: 15px; font-weight: 600;
             cursor: pointer; text-decoration: none;
-            transition: background 0.2s;
+            transition: background 0.2s, border-color 0.2s;
         }
-        .btn-secondary:hover { background: rgba(255,255,255,0.08); }
-
-        /* App icon hero */
-        .hero-icon {
-            width: 120px; height: 120px; border-radius: 28px;
-            margin: 0 auto 36px;
-            box-shadow: 0 20px 60px rgba(0,209,255,0.2);
+        .btn-secondary:hover { background: rgba(255,255,255,0.07); border-color: rgba(0,212,255,0.2); }
+        .btn-web {
+            background: linear-gradient(135deg, rgba(0,212,255,0.12), rgba(168,85,247,0.10));
+            border: 1px solid rgba(0,212,255,0.35);
+            color: var(--cyan); padding: 14px 36px;
+            border-radius: 14px; font-size: 15px; font-weight: 700;
+            cursor: pointer; text-decoration: none;
+            transition: background 0.2s, border-color 0.2s, transform 0.15s, box-shadow 0.15s;
+            display: inline-flex; align-items: center; gap: 8px;
         }
+        .btn-web:hover {
+            background: linear-gradient(135deg, rgba(0,212,255,0.20), rgba(168,85,247,0.15));
+            border-color: rgba(0,212,255,0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,212,255,0.15);
+        }
+        .btn-web svg { width: 18px; height: 18px; fill: currentColor; }
 
         /* Features */
         .features { padding: 60px 0 80px; }
-        .features h2 {
+        .section-title {
             font-family: 'Outfit', sans-serif;
             font-size: 32px; font-weight: 700;
-            text-align: center; margin-bottom: 48px;
+            text-align: center; margin-bottom: 12px;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 16px;
+            margin-bottom: 48px;
         }
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
         .feature-card {
-            background: rgba(255,255,255,0.03);
+            background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 16px;
             padding: 28px;
-            transition: border-color 0.2s, transform 0.15s;
+            transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
         }
-        .feature-card:hover { border-color: rgba(0,209,255,0.3); transform: translateY(-4px); }
+        .feature-card:hover {
+            border-color: rgba(0,212,255,0.25);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+        }
         .feature-icon {
             width: 48px; height: 48px; border-radius: 12px;
             display: flex; align-items: center; justify-content: center;
             font-size: 22px; margin-bottom: 16px;
-            background: linear-gradient(135deg, rgba(0,209,255,0.12), rgba(168,85,247,0.08));
+            background: linear-gradient(135deg, rgba(0,212,255,0.12), rgba(168,85,247,0.08));
         }
         .feature-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
-        .feature-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+        .feature-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.7; }
 
         /* Stats */
+        .stats-section { padding: 20px 0 80px; }
         .stats {
-            display: flex; justify-content: center; gap: 60px;
-            padding: 40px 0 80px; flex-wrap: wrap;
+            display: flex; justify-content: center; gap: 16px;
+            flex-wrap: wrap;
         }
-        .stat { text-align: center; }
+        .stat {
+            text-align: center;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px 48px;
+            min-width: 200px;
+            transition: border-color 0.2s;
+        }
+        .stat:hover { border-color: rgba(0,212,255,0.2); }
         .stat-num {
             font-family: 'Outfit', sans-serif;
             font-size: 42px; font-weight: 800;
@@ -178,6 +237,18 @@
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         }
         .stat-label { font-size: 14px; color: var(--text-secondary); margin-top: 4px; }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 40px 0 100px;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, rgba(0,212,255,0.06), rgba(168,85,247,0.04));
+            border: 1px solid rgba(0,212,255,0.12);
+            border-radius: 24px;
+            padding: 60px 40px;
+        }
 
         /* Footer */
         footer {
@@ -188,13 +259,19 @@
             font-size: 13px;
         }
         footer a { color: var(--cyan); text-decoration: none; }
+        .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 12px; }
+        .footer-links a { color: var(--text-secondary); transition: color 0.2s; }
+        .footer-links a:hover { color: var(--cyan); }
 
         /* Mobile */
         @media (max-width: 640px) {
             .nav-links { display: none; }
             .hero { padding: 60px 0 50px; }
-            .stats { gap: 32px; }
+            .hero-icon { width: 110px; height: 110px; border-radius: 26px; }
+            .stats { gap: 12px; }
+            .stat { padding: 24px 32px; min-width: 160px; }
             .hero-buttons { flex-direction: column; align-items: center; }
+            .cta-box { padding: 40px 24px; }
         }
     </style>
 </head>
@@ -217,19 +294,23 @@
 
         <!-- Hero -->
         <section class="hero">
-            <img src="app_icon.png" alt="TUS Asistani" class="hero-icon">
+            <div class="hero-icon-wrapper">
+                <img src="app_icon.png" alt="TUS Asistani" class="hero-icon">
+            </div>
             <div class="hero-badge">Yapay Zeka Destekli</div>
             <h1>TUS Hazirliginda<br><span class="gradient">Akilli Asistanin</span></h1>
             <p>Flashcard'lar, vaka analizleri, yapay zeka destekli aciklamalar ve pomodoro zamanlayici ile TUS'a en etkili sekilde hazirlanin.</p>
             <div class="hero-buttons">
                 <a href="#indir" class="btn-primary">Uygulamayi Indir</a>
+                <a href="/app" class="btn-web"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>Web'den Devam Et</a>
                 <a href="#ozellikler" class="btn-secondary">Ozellikleri Gor</a>
             </div>
         </section>
 
         <!-- Features -->
         <section class="features" id="ozellikler">
-            <h2>Neden TUS Asistani?</h2>
+            <h2 class="section-title">Neden TUS Asistani?</h2>
+            <p class="section-subtitle">Tipta uzmanlik sinavina hazirlanmanin en akilli yolu</p>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">&#x1F4DA;</div>
@@ -237,9 +318,9 @@
                     <p>Binlerce TUS karti ile Tinder-tarzi swipe mekanizmasi. Cloze formati ile aktif ogrenme.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#x1F9E0;</div>
-                    <h3>Yapay Zeka Aciklamalari</h3>
-                    <p>Claude AI destekli detayli konu aciklamalari. Anlamadiginiz her konuda yapay zeka yardimci.</p>
+                    <div class="feature-icon">&#x1F504;</div>
+                    <h3>Akilli Tekrar (Spaced Repetition)</h3>
+                    <p>Tinder tarzi kaydirma mekanizmamiz arka planda dev bir aralikli tekrar algoritmasiyla calisir. "Bildigim" ve "Bilemedim" kartlar analiz edilir ve tam unutmak uzereyken tekrar karsiniza cikarilir.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">&#x1F3AF;</div>
@@ -247,53 +328,64 @@
                     <p>Gercekci klinik vakalarla pratik yapin. TUS'ta cikan vaka stilinde sorular.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#x23F1;</div>
-                    <h3>Pomodoro Zamanlayici</h3>
-                    <p>Odakli calisma seanslarini yonetin. Verimli calisma aliskanliklari edinin.</p>
+                    <div class="feature-icon">&#x1F3A7;</div>
+                    <h3>Focus Lab - Odak Sesleri</h3>
+                    <p>Dikkat dagitici unsurlardan uzaklasin. Ders calisirken size en uygun odak ortamini yaratan yatistirici ses frekanslariyla konsantrasyonunuzu zirveye tasiyin.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#x1F4CA;</div>
-                    <h3>Ilerleme Takibi</h3>
-                    <p>Hangi konularda guclu, hangi konularda zayifsiniz gorun. Kisisellestirilmis calisma plani.</p>
+                    <div class="feature-icon">&#x1F9E0;</div>
+                    <h3>AI Destekli Eksik Kapatma</h3>
+                    <p>Sadece soru cozmeyin, eksiklerinizi de gorun! Istatistiklerinizi yorumlayan AI asistanimizla "Bilemedikleriniz" odakli kisisellestirilmis zayif konu kapanisi.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#x1F512;</div>
-                    <h3>Guvenli Giris</h3>
-                    <p>Google ve Apple ile hizli giris. Verileriniz Firebase ile guvende.</p>
+                    <div class="feature-icon">&#x1F3C6;</div>
+                    <h3>Gunluk Hedefler ve Freemium</h3>
+                    <p>Her gune ozel ucretsiz gunluk soru ve kart kotalari ile disiplin kazanin. Sinirlari asmak icin Premium uyeligin sinirsiz dunyasina gecis yapin.</p>
                 </div>
             </div>
         </section>
 
         <!-- Stats -->
-        <section class="stats" id="istatistikler">
-            <div class="stat">
-                <div class="stat-num">2000+</div>
-                <div class="stat-label">Flashcard</div>
-            </div>
-            <div class="stat">
-                <div class="stat-num">15+</div>
-                <div class="stat-label">Tibbi Brans</div>
-            </div>
-            <div class="stat">
-                <div class="stat-num">AI</div>
-                <div class="stat-label">Destekli Aciklamalar</div>
+        <section class="stats-section" id="istatistikler">
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-num">2000+</div>
+                    <div class="stat-label">Flashcard</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">15+</div>
+                    <div class="stat-label">Tibbi Brans</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">AI</div>
+                    <div class="stat-label">Destekli Aciklamalar</div>
+                </div>
             </div>
         </section>
 
-        <!-- Download -->
-        <section class="hero" id="indir" style="padding: 40px 0 100px;">
-            <h2 style="font-family: 'Outfit', sans-serif; font-size: 28px; margin-bottom: 16px;">Hemen Baslayin</h2>
-            <p style="color: var(--text-secondary); margin-bottom: 32px;">TUS Asistani yakin zamanda Google Play ve App Store'da!</p>
-            <div class="hero-buttons">
-                <a href="#" class="btn-primary">Google Play (Yakinda)</a>
-                <a href="#" class="btn-secondary">App Store (Yakinda)</a>
+        <!-- Download CTA -->
+        <section class="cta-section" id="indir">
+            <div class="cta-box">
+                <h2 style="font-family: 'Outfit', sans-serif; font-size: 28px; margin-bottom: 16px;">Hemen Baslayin</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 32px;">TUS Asistani yakin zamanda Google Play ve App Store'da!</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-primary">Google Play (Yakinda)</a>
+                    <a href="#" class="btn-secondary">App Store (Yakinda)</a>
+                    <a href="/app" class="btn-web"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>Web'den Devam Et</a>
+                </div>
             </div>
         </section>
     </div>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 TUS Asistani. Tum haklari saklidir. | <a href="mailto:info@tusasistani.app">iletisim</a></p>
+            <div class="footer-links">
+                <a href="/gizlilik.html">Gizlilik Politikasi</a>
+                <a href="/sartlar.html">Kullanim Kosullari</a>
+                <a href="/hesap-silme.html">Hesap Silme Talebi</a>
+                <a href="mailto:destek@klinoi.com">Iletisim</a>
+            </div>
+            <p>&copy; 2026 TUS Asistani. Tum haklari saklidir.</p>
         </div>
     </footer>
 </body>

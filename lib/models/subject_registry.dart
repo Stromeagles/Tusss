@@ -57,7 +57,9 @@ class SubjectRegistry {
       icon: Icons.monitor_heart_rounded,
       color: Color(0xFF7CE38B),
       category: SubjectCategory.temel,
-      assetPaths: [],
+      assetPaths: [
+        'assets/data/fizyoloji_batch1.json',
+      ],
     ),
     SubjectModule(
       id: 'biyokimya',
@@ -163,7 +165,9 @@ class SubjectRegistry {
       icon: Icons.medication_rounded,
       color: Color(0xFFFFD166),
       category: SubjectCategory.temel,
-      assetPaths: [],
+      assetPaths: [
+        'assets/data/farmakoloji_batch1.json',
+      ],
     ),
 
     // ══════════════════════════════════════════════════════════════════════════

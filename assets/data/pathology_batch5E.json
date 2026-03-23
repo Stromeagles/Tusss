@@ -7,7 +7,12 @@
       "question": "Akciğer adenokarsinomunda EGFR mutasyonu ve ALK translokasyonunun önemi nedir?",
       "answer": "[[EGFR mutasyonu]]: Sigara içmeyen, kadın, Asyalı, adenokarsinom. Tedavi: [[Erlotinib]]. [[ALK translokasyonu]]: [[Krizotinib]] ile tedavi edilir.",
       "difficulty": "Orta",
-      "tags": ["Akciğer", "EGFR", "ALK"],
+      "tags": [
+        "Akciğer",
+        "EGFR",
+        "ALK"
+      ],
+      "story_hint": "💡 HİKAYE: EGFR mutasyonu sigara içmeyen Asyalı kadınlarda sık görülen adenokarsinomun \"motoru\"dur: Erlotinib bu motoru kapatır. ALK translokasyonu ise genç sigara içmeyenlerin tümöründe bulunur: Krizotinib bu alternatif motoru durdurur. İkisi de hedefe yönelik tedavi devrimidir.",
       "ai_coding": "🤖 Kodlama: EGFR = Erlotinib. ALK = Krizotinib. Her ikisi = Sigara içmeyen+Adeno."
     },
     {
@@ -15,7 +20,12 @@
       "question": "Küçük hücreli akciğer kanserinin (SCLC) nöroendokrin özellikleri ve paraneoplastik sendromları nelerdir?",
       "answer": "Markerlar: [[Kromogranin A]], [[Sinaptofizin]]. Paraneoplastik: [[ACTH (Cushing)]], [[ADH (SIADH)]], [[Lambert-Eaton]] (anti-VGCC).",
       "difficulty": "Zor",
-      "tags": ["SCLC", "Paraneoplastik", "Nöroendokrin"],
+      "tags": [
+        "SCLC",
+        "Paraneoplastik",
+        "Nöroendokrin"
+      ],
+      "story_hint": "💡 HİKAYE: SCLC nöroendokrin bir canavardır: kromogranin A ve sinaptofizin rozetleri taşır. Paraneoplastik sendromlar üretir: ACTH salgılayarak Cushing yapar, ADH salgılayarak SIADH yapar, anti-VGCC antikorlarıyla Lambert-Eaton sendromu oluşturur. Sigara ile ilişkilidir ve hızla metastaz yapar.",
       "ai_coding": "🤖 Kodlama: SCLC = Kromogranin+Sinaptofizin. Paraneoplastik: ACTH+SIADH+Lambert-Eaton."
     },
     {
@@ -23,7 +33,12 @@
       "question": "Bronşiyal karsinoid tümörün tipik ve atipik formlarının farkı nedir?",
       "answer": "Tipik: [[<2 mitoz]], nekroz yok. Atipik: [[2-10 mitoz]] veya nekroz var. Her ikisi [[nöroendokrin]] karakterdedir.",
       "difficulty": "Orta",
-      "tags": ["Karsinoid", "Akciğer", "Nöroendokrin"],
+      "tags": [
+        "Karsinoid",
+        "Akciğer",
+        "Nöroendokrin"
+      ],
+      "story_hint": "💡 HİKAYE: Bronşiyal karsinoid tümörler nöroendokrin ailenin sakin üyeleridir. Tipik karsinoid uslu bir çocuk gibidir: <2 mitoz, nekroz yok ve iyi prognozlu. Atipik karsinoid biraz yaramaz: 2-10 mitoz veya nekroz vardır. İkisi de SCLC'den çok daha iyi prognozludur.",
       "ai_coding": "🤖 Kodlama: Tipik karsinoid = <2 mitoz + Nekroz yok = İyi prognoz. Atipik = Daha fazla mitoz."
     },
     {
@@ -31,7 +46,12 @@
       "question": "Pulmoner langerhans hücreli histiyositoz (LCH) ile lenfangioleiomiyomatoz (LAM) farkı nedir?",
       "answer": "[[LCH]]: Sigara içen genç erişkin, [[CD1a (+)]]. [[LAM]]: Doğurganlık çağındaki kadın, [[TSC2 mutasyonu]], düzgün kistik yapılar.",
       "difficulty": "Zor",
-      "tags": ["LCH", "LAM", "Akciğer Kistik"],
+      "tags": [
+        "LCH",
+        "LAM",
+        "Akciğer Kistik"
+      ],
+      "story_hint": "💡 HİKAYE: LCH ve LAM akciğerde kistik hastalık yapan iki farklı düşmandır. LCH sigara içen genç erişkinin hastalığıdır: CD1a pozitif Langerhans hücreleri ve Birbeck granülleri. LAM ise doğurganlık çağındaki kadınların hastalığıdır: TSC2 mutasyonu düzgün kistler yapar ve pnömotoraks riski taşır.",
       "ai_coding": "🤖 Kodlama: LCH = Sigara+BRAF. LAM = Kadın+TSC2+Düzgün kist+Pnömotoraks."
     },
     {
@@ -39,7 +59,12 @@
       "question": "IgA nefropatisi (Berger hastalığı) ile Henoch-Schönlein purpurasının böbrek tutulumu farkı nedir?",
       "answer": "[[IgA nefropatisi]]: Mezanjiyal IgA birikimi, [[ÜSYE sonrası]] hematüri. [[HSP]]: Sistemik IgA vasküliti ([[purpura + artrit + GIS + böbrek]]).",
       "difficulty": "Orta",
-      "tags": ["IgA Nefropati", "Berger", "HSP"],
+      "tags": [
+        "IgA Nefropati",
+        "Berger",
+        "HSP"
+      ],
+      "story_hint": "💡 HİKAYE: IgA nefropatisi ve HSP aynı IgA hastalığının iki yüzüdür. IgA nefropatisi sadece böbrekte kalır: ÜSYE sonrası mezanjiyal IgA birikimi ve hematüri. HSP ise IgA vaskülitinin sistemik halidir: purpura (bacaklarda), artrit, GIS kanaması ve böbrek tutulumu bir arada.",
       "ai_coding": "🤖 Kodlama: IgA nefropati = Mezanjiyal IgA + ÜSYE sonrası hematüri. HSP = Sistemik IgA vaskülit."
     },
     {
@@ -47,7 +72,12 @@
       "question": "Membranöz nefropati ile minimal change hastalığının immünofloresan ve klinik farkı nedir?",
       "answer": "[[Membranöz]]: [[PLA2R antikoru]], gümüş boyada [[spike]] patern. [[Minimal Change]]: EM'de [[podosit füzyonu]], çocuklarda en sık.",
       "difficulty": "Orta",
-      "tags": ["Membranöz", "Minimal Change", "Nefrotik"],
+      "tags": [
+        "Membranöz",
+        "Minimal Change",
+        "Nefrotik"
+      ],
+      "story_hint": "💡 HİKAYE: Membranöz nefropati yetişkinlerde nefrotik sendromun en sık nedenidir: PLA2R antikoru GBM'de birikerek spike paterni oluşturur (gümüş boyada dikenler). Minimal change hastalığı ise çocuklarda en sık nefrotik sendromdur: ışık mikroskobunda her şey normal görünür, EM'de podosit füzyonu ortaya çıkar. Steroide mükemmel yanıt verir.",
       "ai_coding": "🤖 Kodlama: MN = PLA2R + Spike + Yetişkin. MCN = EM'de podosit füzyonu + Çocuk + Steroid."
     },
     {
@@ -55,7 +85,12 @@
       "question": "Fokal segmental glomerüloskleroz (FSGS) risk faktörleri ve HIV ilişkisi nedir?",
       "answer": "[[FSGS]]: Fokal ve segmental skleroz. [[HIV nefropatisi]]: [[Kollapsif FSGS]] alt tipi görülür.",
       "difficulty": "Orta",
-      "tags": ["FSGS", "HIV", "Podosit"],
+      "tags": [
+        "FSGS",
+        "HIV",
+        "Podosit"
+      ],
+      "story_hint": "💡 HİKAYE: FSGS podositlerin hasarıyla başlar: bazı glomerüllerin bazı segmentleri skleroza uğrar (fokal ve segmental). HIV nefropatisi FSGS'nin en agresif formu olan kollapsif tipi yapar: glomerüller çöker ve hızla böbrek yetmezliğine ilerler. Siyah ırkta APOL1 geni riski artırır.",
       "ai_coding": "🤖 Kodlama: FSGS = Podosit hasarı. HIV = Kollapsif FSGS. APOL1 = Siyah ırk riski."
     },
     {
@@ -63,7 +98,12 @@
       "question": "Alport sendromunda hangi kollajen tipi etkilenir ve klinik triadı nedir?",
       "answer": "[[Tip IV kollajen]] defekti. Triad: [[Hematüri]] + [[İşitme kaybı]] + [[Oküler (lentikonus)]] bulgular.",
       "difficulty": "Orta",
-      "tags": ["Alport", "Kollajen IV", "GBM"],
+      "tags": [
+        "Alport",
+        "Kollajen IV",
+        "GBM"
+      ],
+      "story_hint": "💡 HİKAYE: Alport sendromu Tip IV kollajenin üç organdaki etkisini gösteren bir triadla tanınır: böbrekte hematüri (GBM laminasyonu), kulakta sensorinöral işitme kaybı ve gözde lentikonus (anterior lens). X'e bağlı COL4A5 en sık formdur.",
       "ai_coding": "🤖 Kodlama: Alport = Kollajen IV + Hematüri+İşitme kaybı+Göz. EM=GBM lamellasyon."
     },
     {
@@ -71,7 +111,12 @@
       "question": "Osteoartritte (OA) ve romatoid artritte (RA) eklem hasarı mekanizmasının farkı nedir?",
       "answer": "[[OA]]: Mekanik aşınma, [[ostofitler]]. [[RA]]: [[Pannus]] formasyonu, [[Anti-CCP (+)]], eozinofilik sinovit.",
       "difficulty": "Orta",
-      "tags": ["Osteoartrit", "RA", "Eklem"],
+      "tags": [
+        "Osteoartrit",
+        "RA",
+        "Eklem"
+      ],
+      "story_hint": "💡 HİKAYE: OA yaşlı bir makinenin dişlilerinin aşınması gibidir: kıkırdak mekanik olarak yıpranır ve kemik çıkıntıları (ostofitler) oluşur. RA ise bağışıklık sisteminin ekleme saldırmasıdır: pannus oluşur, anti-CCP pozitif olur ve sabah tutukluğu 1 saatten uzun sürer.",
       "ai_coding": "🤖 Kodlama: OA = Mekanik+Ostofit. RA = Pannus+Otoimmün+Anti-CCP. Sabah tutukluğu RA."
     },
     {
@@ -79,7 +124,12 @@
       "question": "Osteogenezis imperfekta hangi protein defektinden kaynaklanır ve tipleri nedir?",
       "answer": "[[Tip I kollajen]] defekti. Klinik: [[Mavi sklera]] ve multipl kemik kırıkları.",
       "difficulty": "Orta",
-      "tags": ["Osteogenezis İmperfekta", "Kollajen I", "Kemik"],
+      "tags": [
+        "Osteogenezis İmperfekta",
+        "Kollajen I",
+        "Kemik"
+      ],
+      "story_hint": "💡 HİKAYE: Osteogenezis imperfekta \"cam kemik hastalığı\"dır: Tip I kollajen defekti kemikleri kırılgan yapar. Mavi sklera sklera inceldikçe alttaki koroid damarların mavimsi görünmesinden kaynaklanır. Tip II en ağır formudur ve perinatal ölümcüldür.",
       "ai_coding": "🤖 Kodlama: OI = Kollajen I + Mavi sklera + Kırık. Tip II = Letal."
     },
     {
@@ -87,7 +137,12 @@
       "question": "Paget hastalığı (kemik) nedir ve hangi komplikasyonlar gelişebilir?",
       "answer": "[[Mozaik patern]] (çimento hatları). [[ALP yüksektir]]. En ciddi komplikasyon [[osteosarkom]] gelişimidir.",
       "difficulty": "Orta",
-      "tags": ["Kemik Paget", "ALP", "Osteosarkom"],
+      "tags": [
+        "Kemik Paget",
+        "ALP",
+        "Osteosarkom"
+      ],
+      "story_hint": "💡 HİKAYE: Paget hastalığında kemik aşırı yıkılıp yeniden yapılır ve mozaik patern (çimento hatları) oluşur: sanki farklı taşlarla yamanmış bir kaldırım. ALP yüksekliği bu sürekli yapım-yıkımı yansıtır. En korkulan komplikasyon osteosarkom gelişimidir ama nadir görülür.",
       "ai_coding": "🤖 Kodlama: Paget = ALP yüksek + Mozaik patern + Osteosarkom komplikasyon (nadir)."
     },
     {
@@ -95,7 +150,12 @@
       "question": "Dev hücreli arterit (temporal arterit) ile poliarteritis nodosanın damar çapı tutulumu nedir?",
       "answer": "[[Dev hücreli (Temporal)]]: Büyük damar, [[granülomatöz]], görme kaybı riski. [[PAN]]: Orta damar, [[nekrotizan]].",
       "difficulty": "Orta",
-      "tags": ["Vaskülit", "Dev Hücreli Arterit", "PAN"],
+      "tags": [
+        "Vaskülit",
+        "Dev Hücreli Arterit",
+        "PAN"
+      ],
+      "story_hint": "💡 HİKAYE: Dev hücreli arterit büyük damarların granülomatöz yangınıdır: temporal arterde dev hücreler görülür ve tedavi edilmezse oftalmik arter tutulumu ile kalıcı görme kaybı olabilir. PAN ise orta damarların nekrotizan yangınıdır: HBV ilişkili olabilir ve mikroanevrizmalar oluşturur.",
       "ai_coding": "🤖 Kodlama: Temporal arterit = Büyük damar + Görme kaybı riski + Granülom. PAN = Orta damar."
     },
     {
@@ -103,7 +163,12 @@
       "question": "Wegener granülomatozu (GPA) ile mikroskobik polianjiitis'in c-ANCA ve p-ANCA ilişkisi nedir?",
       "answer": "[[GPA (Wegener)]]: [[c-ANCA (PR3)]] (+), granülomatöz inflamasyon. [[MPA]]: [[p-ANCA (MPO)]] (+), granülom yoktur.",
       "difficulty": "Zor",
-      "tags": ["ANCA Vaskülit", "GPA", "MPA"],
+      "tags": [
+        "ANCA Vaskülit",
+        "GPA",
+        "MPA"
+      ],
+      "story_hint": "💡 HİKAYE: GPA (Wegener) c-ANCA (PR3) bayrağını taşıyan granülomatöz bir vasküilittir: üst solunum yolları (burun), akciğer ve böbrek tutulur. MPA ise p-ANCA (MPO) bayrağını taşır ama granülom yapmaz. EGPA (Churg-Strauss) ise p-ANCA + eozinofili + astım üçlüsüdür.",
       "ai_coding": "🤖 Kodlama: GPA=c-ANCA(PR3)+Granülom. MPA=p-ANCA(MPO). EGPA=p-ANCA+Eozinofil+Astım."
     },
     {
@@ -111,7 +176,12 @@
       "question": "Sistemik lupus eritematosus (SLE) böbrek tutulumunda Tip III ve Tip IV lupus nefriti farkı nedir?",
       "answer": "[[Tip IV (Diffüz proliferatif)]]: En ağır tip, [[wire loop (tel lup)]] lezyonları, [[C3 ve C4 düşer]].",
       "difficulty": "Zor",
-      "tags": ["SLE", "Lupus Nefriti", "Wire Loop"],
+      "tags": [
+        "SLE",
+        "Lupus Nefriti",
+        "Wire Loop"
+      ],
+      "story_hint": "💡 HİKAYE: Lupus nefriti Tip IV (diffüz proliferatif) en ağır formudur: glomerüllerin >%50'si tutulur ve wire loop (tel halka) lezyonları subendotelyal immün kompleks birikimini gösterir. C3 ve C4 her ikisi de düşer (klasik yol tüketimi). Tedavi edilmezse böbrek yetmezliğine ilerler.",
       "ai_coding": "🤖 Kodlama: Lupus nefriti Tip IV = >50% glomerül + Wire loop = En ağır. C3+C4 düşer."
     },
     {
@@ -119,7 +189,12 @@
       "question": "Sjögren sendromunun patolojik bulgusu ve ekstraglandüler tutulumu nedir?",
       "answer": "[[Anti-Ro (SS-A)]] ve [[Anti-La (SS-B)]] pozitiftir. [[MALT lenfoma]] riski artmıştır.",
       "difficulty": "Orta",
-      "tags": ["Sjögren", "SS-A", "MALT Lenfoma"],
+      "tags": [
+        "Sjögren",
+        "SS-A",
+        "MALT Lenfoma"
+      ],
+      "story_hint": "💡 HİKAYE: Sjögren sendromu tükürük ve gözyaşı bezlerini kuşatan lenfosit ordusudur: Anti-Ro (SS-A) ve Anti-La (SS-B) bayraklarını taşır. Uzun süreli kuşatma MALT lenfoma riskini artırır. Neonatal lupus riski taşıyan gebelerde Anti-Ro pozitifliği önemlidir.",
       "ai_coding": "🤖 Kodlama: Sjögren = Anti-Ro/La + Kuru göz+ağız + MALT lenfoma riski."
     },
     {
@@ -127,7 +202,12 @@
       "question": "Sistemik skleroz (sklerodermide) CREST sendromu ve anti-sentromer antikoru ilişkisi nedir?",
       "answer": "[[CREST]]: [[Anti-sentromer antikoru]]. Diffüz form: [[Anti-Scl-70]] (topoisomeraz I) + [[Pulmoner fibrozis]].",
       "difficulty": "Orta",
-      "tags": ["Sklerodermide", "CREST", "Anti-Sentromer"],
+      "tags": [
+        "Sklerodermide",
+        "CREST",
+        "Anti-Sentromer"
+      ],
+      "story_hint": "💡 HİKAYE: CREST sendromu skleroderma'nın sınırlı formudur ve anti-sentromer antikoru taşır: Calcinosis, Raynaud, Esophageal dismotilite, Sklerodaktili, Telanjiektazi. Diffüz form ise anti-Scl-70 ile daha agresiftir: pulmoner fibrozis ve renal kriz riski taşır.",
       "ai_coding": "🤖 Kodlama: CREST = Anti-sentromer. Diffüz SSc = Scl-70 + Akciğer fibroz. Renal kriz = Anti-RNAP III."
     },
     {
@@ -135,7 +215,12 @@
       "question": "Miyastenia gravis ile Lambert-Eaton sendromunun nöromüsküler kavşak mekanizması farkı nedir?",
       "answer": "[[Miyastenia]]: Postsinaptik [[ACh reseptörü]] blokajı ([[yorgunlukla artar]]). [[Lambert-Eaton]]: Presinaptik [[kalsiyum kanalı]] (VGCC) Ab ([[egzersizle düzelir]]).",
       "difficulty": "Zor",
-      "tags": ["Miyastenia Gravis", "Lambert-Eaton", "NMJ"],
+      "tags": [
+        "Miyastenia Gravis",
+        "Lambert-Eaton",
+        "NMJ"
+      ],
+      "story_hint": "💡 HİKAYE: MG ve LE nöromüsküler kavşağın iki farklı noktasını hedefler. MG'de antikorlar postsinaptik ACh reseptörüne saldırır: tekrarlayan kullanımla güçsüzlük artar (yorgunlukla kötüleşir). LE'de antikorlar presinaptik kalsiyum kanalını (VGCC) bloke eder: egzersizle kalsiyum birikir ve güçsüzlük düzelir.",
       "ai_coding": "🤖 Kodlama: MG = Postsinaptik AChR → Yorgunlukla kötü. LE = Presinaptik VGCC → Egzersizle iyi."
     },
     {
@@ -143,7 +228,12 @@
       "question": "İdyopatik inflamatuvar miyopatilerde dermatomiyozit ile polimiyozitin farkı nedir?",
       "answer": "[[Dermatomiyozit]]: [[Perifasiküler atrofi]] + [[Gottron papülleri]] + Helitrop döküntü. [[Polimiyozit]]: [[Endomiziyal]] infiltrasyon.",
       "difficulty": "Orta",
-      "tags": ["Dermatomiyozit", "Polimiyozit", "Miyopati"],
+      "tags": [
+        "Dermatomiyozit",
+        "Polimiyozit",
+        "Miyopati"
+      ],
+      "story_hint": "💡 HİKAYE: Dermatomiyozit deri ve kas tutulumunu birleştirir: Gottron papülleri (parmak eklemlerinde mor plaklar) ve heliotrop döküntü (göz kapağında mor-lila renk) deri bulgularıdır, perifasiküler atrofi histolojik imzadır. Polimiyozit ise sadece kası tutar: CD8+ T hücreleri endomisyumda infiltre olur. DM'de kanser riski daha yüksektir.",
       "ai_coding": "🤖 Kodlama: DM = Perifasiküler atrofi + Deri + Anti-Mi-2. PM = Endomiyum infiltrat + Deri yok."
     },
     {
@@ -151,7 +241,11 @@
       "question": "Addison hastalığında primer ve sekonder adrenal yetmezliğin farkı nedir?",
       "answer": "[[Primer (Addison)]]: [[ACTH yüksektir]] → [[Hiperpigmentasyon]]. Sekonder: ACTH düşüktür, pigmentasyon yoktur.",
       "difficulty": "Orta",
-      "tags": ["Addison", "Adrenal Yetmezlik"],
+      "tags": [
+        "Addison",
+        "Adrenal Yetmezlik"
+      ],
+      "story_hint": "💡 HİKAYE: Primer Addison'da adrenal bez yıkılmıştır: hipofiz \"daha fazla üret!\" diye ACTH'yı yükseltir ve ACTH'nın MSH benzeri etkisiyle deri bronzlaşır (hiperpigmentasyon). Sekonder yetmezlikte hipofiz sorunludur: ACTH düşüktür ve pigmentasyon olmaz.",
       "ai_coding": "🤖 Kodlama: Primer Addison = ACTH yüksek + Hiperpigmentasyon. Sekonder = ACTH düşük + Pig. yok."
     },
     {
@@ -159,7 +253,12 @@
       "question": "Hashimoto tiroiditinde otoantikor tipleri ve histolojik özelliği nedir?",
       "answer": "[[Anti-TPO]] pozitiftir. Histoloji: [[Germinal merkezler]] + [[Hürthle hücre]] metaplazisi.",
       "difficulty": "Orta",
-      "tags": ["Hashimoto", "Anti-TPO", "Tiroidit"],
+      "tags": [
+        "Hashimoto",
+        "Anti-TPO",
+        "Tiroidit"
+      ],
+      "story_hint": "💡 HİKAYE: Hashimoto tiroiditi bağışıklık sisteminin tiroid bezine kronik saldırısıdır: Anti-TPO antikorları bezin TPO enzimini hedef alır. Histolojide germinal merkezler (lenfosit fabrikaları) oluşur ve Hurthle hücreleri (pembe granüler sitoplazmalı onkositler) ortaya çıkar. En sık hipotiroidi nedenidir.",
       "ai_coding": "🤖 Kodlama: Hashimoto = Anti-TPO + Lenfosit+Germinal merkez+Hürthle hücre."
     },
     {
@@ -167,7 +266,12 @@
       "question": "Schwannoma ile nörofibromun histolojik farkı nedir?",
       "answer": "[[Schwannoma]]: [[Antoni A/B]] ve [[Verocay cisimleri]]. [[Nörofibrom]]: Kapsülsüzdür ve [[NF1]] ile ilişkilidir.",
       "difficulty": "Orta",
-      "tags": ["Schwannoma", "Nörofibrom", "NF"],
+      "tags": [
+        "Schwannoma",
+        "Nörofibrom",
+        "NF"
+      ],
+      "story_hint": "💡 HİKAYE: Schwannoma kapsüllü ve iyi huylu bir sinir kılıfı tümörüdür: Antoni A (hücre yoğun, Verocay cisimleri) ve Antoni B (gevşek mikst) alanları vardır. NF2 ile ilişkilidir. Nörofibrom ise kapsülsüzdür, sinir lifleri içinden geçer ve NF1 ile ilişkilidir. Malign dönüşüm nörofibromda daha sıktır.",
       "ai_coding": "🤖 Kodlama: Schwannoma = Kapsüllü+Verocay+NF2. Nörofibrom = Kapsülsüz+NF1+Malign riski."
     },
     {
@@ -175,7 +279,12 @@
       "question": "Prion hastalıklarında spongioform ensefalopatinin patolojik bulguları nelerdir?",
       "answer": "[[PrPSc]] birikimi. [[Spongioform (süngerimsi)]] değişiklikler, nöron kaybı. İnflamasyon [[yoktur]].",
       "difficulty": "Zor",
-      "tags": ["Prion", "CJD", "Spongioform"],
+      "tags": [
+        "Prion",
+        "CJD",
+        "Spongioform"
+      ],
+      "story_hint": "💡 HİKAYE: Prion hastalıkları PrPSc proteininin beyinde birikmesiyle oluşur: normal PrPc proteini yanlış katlanmış PrPSc'ye dönüşür ve beyin dokusunu sünger gibi delikli yapar (spongioform). En önemli fark: inflamasyon yoktur! Ne lökosit ne antikor gelir. CJD en sık prion hastalığıdır.",
       "ai_coding": "🤖 Kodlama: Prion = PrPSc + Spongioform + Astroglioz + İnflamasyon YOK. RT-QuIC tanı."
     },
     {
@@ -183,7 +292,12 @@
       "question": "Otofaji ile apoptozun hücre ölümü mekanizması olarak farkı nedir?",
       "answer": "[[Apoptoz]]: [[Kaspazlar]] aracılığıyla olur, inflamasyon yapmaz. [[Otofaji]]: [[Lizozomal]] yıkım mekanizmasıdır.",
       "difficulty": "Orta",
-      "tags": ["Otofaji", "Apoptoz", "Hücre Ölümü"],
+      "tags": [
+        "Otofaji",
+        "Apoptoz",
+        "Hücre Ölümü"
+      ],
+      "story_hint": "💡 HİKAYE: Apoptoz hücrenin \"programlı intiharı\"dır: kaspaz enzimler hücreyi düzenli parçalar ve inflamasyon yapmaz (sessiz ölüm). Otofaji ise hücrenin \"kendi kendini yeme\" mekanizmasıdır: lizozomlar hasarlı organelleri geri dönüştürür. Otofaji aslında bir kurtarma mekanizmasıdır ama aşırı olursa hücre ölümüne yol açar.",
       "ai_coding": "🤖 Kodlama: Otofaji = Lizozom+Organell yıkımı+Kurtarma. Apoptoz = Kaspaz+İnflamasyon yok."
     },
     {
@@ -191,7 +305,12 @@
       "question": "Reaktif oksijen türlerinin (ROS) hücre hasarı mekanizması nedir ve hangi enzimler temizler?",
       "answer": "Temizleyici enzimler: [[SOD]], [[Katalaz]] ve [[Glutatyon peroksidaz]]. [[Hidroksil (OH)]] en toksik olanıdır.",
       "difficulty": "Orta",
-      "tags": ["ROS", "Oksidatif Stres", "Hücre Hasarı"],
+      "tags": [
+        "ROS",
+        "Oksidatif Stres",
+        "Hücre Hasarı"
+      ],
+      "story_hint": "💡 HİKAYE: ROS hücrenin \"yangın\" tehdididir: hidroksil radikali (OH) en toksik olanıdır ve her şeyi yakar. Vücut üç itfaiyeciyle savunur: SOD süperoksidi H2O2'ye çevirir, Katalaz H2O2'yi suya parçalar, Glutatyon peroksidaz da H2O2'yi temizler. Fenton reaksiyonu demir varlığında OH üretir.",
       "ai_coding": "🤖 Kodlama: ROS temizleme: SOD→Katalaz→GPx. Fenton = OH en toksik. İskemi-rep = ROS patlaması."
     },
     {
@@ -199,8 +318,18 @@
       "question": "Gastrointestinal stromal tümör (GIST) patolojisi ve imatinib hedefi nedir?",
       "answer": "[[c-KIT (CD117)]] mutasyonu pozitiftir. Tedavide [[İmatinib]] kullanılır. [[Cajal hücrelerinden]] köken alır.",
       "difficulty": "Orta",
-      "tags": ["GIST", "c-KIT", "İmatinib"],
+      "tags": [
+        "GIST",
+        "c-KIT",
+        "İmatinib"
+      ],
+      "story_hint": "💡 HİKAYE: GIST Cajal hücrelerinden (GIS'in ritim üreticileri) doğan bir tümördür: c-KIT (CD117) mutasyonu tümörü aktifleştirir. İmatinib c-KIT'in anahtarını çevirerek tümörü durdurur. En sık midede görülür ve DOG1 pozitifliği tanıyı destekler.",
       "ai_coding": "🤖 Kodlama: GIST = c-KIT/CD117 + İmatinib hedefi. DOG1+CD34+. Mide en sık."
     }
-  ]
+  ],
+  "id": "pathology_batch5E-topic-0",
+  "topic": "Karma Yüksek Verimli TUS Kartları - 500. Tamamlayıcı Batch (5E)",
+  "sub_topic": "Karma Yüksek Verimli TUS Kartları - 500. Tamamlayıcı Batch (5E)",
+  "content_summary": "",
+  "tus_spots": []
 }

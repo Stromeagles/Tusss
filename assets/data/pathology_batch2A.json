@@ -7,7 +7,12 @@
       "question": "Benign ve malign tümörü ayıran en önemli özellikler nelerdir?",
       "answer": "Malignite kriterleri: [[İnvazyon]] (bazal membran geçişi) + [[Metastaz]] (kesin malignite kanıtı) + [[Sitolojik atipi]] + Patolojik mitoz + Nekroz.",
       "difficulty": "Kolay",
-      "tags": ["Neoplazi", "Benign", "Malign"],
+      "tags": [
+        "Neoplazi",
+        "Benign",
+        "Malign"
+      ],
+      "story_hint": "💡 HİKAYE: Bir tümörün malign olup olmadığını anlamak için iki kritik soru sorulur: Bazal membranı geçti mi (invazyon)? Uzak organa gitti mi (metastaz)? Metastaz kesin malignite kanıtıdır — benign tümör asla metastaz yapmaz.",
       "ai_coding": "🤖 Kodlama: MALign = 'Metastaz+Atipik+Lif (invazyon) → Ölüm'."
     },
     {
@@ -15,7 +20,11 @@
       "question": "Karsinogenezin 3 temel basamağı nedir?",
       "answer": "1) [[İnisyasyon]]: İrreversible DNA mutasyonu. 2) [[Promosyon]]: Reversible hücre proliferasyonu. 3) [[Progresyon]]: İnvazyon, metastaz.",
       "difficulty": "Orta",
-      "tags": ["Neoplazi", "Karsinojenez"],
+      "tags": [
+        "Neoplazi",
+        "Karsinojenez"
+      ],
+      "story_hint": "💡 HİKAYE: Karsinogenez üç basamaklı bir merdivendir: İnisyasyon (DNA'ya kalıcı hasar), promosyon (hasarlı hücrenin çoğalması, tersinir), progresyon (invazyon ve metastaz). 'İPP yolu' — her basamakta tehlike artar.",
       "ai_coding": "🤖 Kodlama: İ-P-P = İnisyasyon-Promosyon-Progresyon. 'İPP yolu'."
     },
     {
@@ -23,7 +32,12 @@
       "question": "Proto-onkogen ile tümör süpresör geni arasındaki fark nedir?",
       "answer": "[[Proto-onkogen]]: Gain-of-function mutasyon → [[Dominant]]. [[Tümör süpresör]]: Loss-of-function → [[Resesif]] ([[Knudson 2-hit]] hipotezi).",
       "difficulty": "Orta",
-      "tags": ["Neoplazi", "Onkogen", "Tümör Süpresör"],
+      "tags": [
+        "Neoplazi",
+        "Onkogen",
+        "Tümör Süpresör"
+      ],
+      "story_hint": "💡 HİKAYE: Proto-onkogen arabanın gaz pedalıdır — tek bir mutasyon yeterli (dominant). Tümör süpresör ise frendir — her iki frenin de bozulması gerekir (resesif, Knudson 2-hit). Kanser = gaz pedalı takılı + fren bozuk.",
       "ai_coding": "🤖 Kodlama: Onkogen = 'Gaz pedalı bozuk' (tek kötü yeterli). Tümör süpresör = 'Fren bozuk' (ikisi de bozulmalı)."
     },
     {
@@ -31,7 +45,12 @@
       "question": "RAS onkogeninin aktivasyon mekanizması ve hangi tümörlerde rol oynar?",
       "answer": "GTPaz aktivitesi bozulur → [[RAS GTP-bound]] formda (aktif) kalır. En sık mutasyon: [[KRAS]]. [[Pankreas]] (%95), kolon (%50).",
       "difficulty": "Zor",
-      "tags": ["Neoplazi", "RAS", "Onkogen"],
+      "tags": [
+        "Neoplazi",
+        "RAS",
+        "Onkogen"
+      ],
+      "story_hint": "💡 HİKAYE: RAS proteini normalde GTP'yi hızla GDP'ye çevirir (kapatır). Mutasyonda GTPaz aktivitesi bozulur ve RAS sürekli açık kalır — gaz pedalı takılmış araba gibi. Pankreas kanserinin %95'inde KRAS mutasyonu vardır.",
       "ai_coding": "🤖 Kodlama: RAS = 'Duramayan GTPaz' → Gaz bırakmadan çalışıyor → Tümör."
     },
     {
@@ -39,7 +58,12 @@
       "question": "MYC onkogeninin işlevi ve hangi tümörlerde amplifikasyon/translokasyon görülür?",
       "answer": "Transkripsiyon faktörü. [[c-MYC]]: [[Burkitt lenfoma]] ([[t(8;14)]]). [[N-MYC]]: [[Nöroblastom]] amplifikasyonu. [[L-MYC]]: Akciğer küçük hücreli.",
       "difficulty": "Zor",
-      "tags": ["Neoplazi", "MYC", "Amplifikasyon"],
+      "tags": [
+        "Neoplazi",
+        "MYC",
+        "Amplifikasyon"
+      ],
+      "story_hint": "💡 HİKAYE: MYC ailesi transkripsiyon faktörleridir. c-MYC Burkitt lenfomada t(8;14) ile aktive olur, N-MYC nöroblastomda amplifikasyon ile kötü prognoz gösterir, L-MYC küçük hücreli akciğer kanserinde bulunur. Her MYC'in bir hedefi var.",
       "ai_coding": "🤖 Kodlama: MYC = Büyük patron. t(8;14) = Burkitt. NMYC = Nöroblastom kötü prognoz."
     },
     {
@@ -47,7 +71,12 @@
       "question": "HER2 (ERBB2) amplifikasyonunun önemi ve tedavisi nedir?",
       "answer": "[[HER2]] amplifikasyonu: [[Meme kanseri]] (%20-25). Tedavi: [[Trastuzumab]] (Herceptin) — monoklonal antikor.",
       "difficulty": "Orta",
-      "tags": ["Neoplazi", "HER2", "Meme"],
+      "tags": [
+        "Neoplazi",
+        "HER2",
+        "Meme"
+      ],
+      "story_hint": "💡 HİKAYE: HER2 meme kanserinin %20-25'inde amplifikasyonla aşırı eksprese olur. Trastuzumab (Herceptin) bu reseptörü hedef alan monoklonal antikordur. 'HER-ki (2) = HERCEPTIN ile tedavi' diye hatırla.",
       "ai_coding": "🤖 Kodlama: HER2 = 'HER-ki (2) = HERCEPTIN'. Meme kanserinde çok önemli."
     },
     {
@@ -55,7 +84,12 @@
       "question": "Retinoblastom geninin (RB1) tümör süpresör işlevi nedir?",
       "answer": "Rb proteini: [[E2F]] transkripsiyon faktörünü tutarak hücreyi [[G1]]'de durdurur. Mutasyonda [[S fazına]] kontrolsüz geçiş olur.",
       "difficulty": "Zor",
-      "tags": ["Neoplazi", "RB1", "Tümör Süpresör"],
+      "tags": [
+        "Neoplazi",
+        "RB1",
+        "Tümör Süpresör"
+      ],
+      "story_hint": "💡 HİKAYE: Rb proteini hücre döngüsünün G1 kapısında bekleyen güvenlik görevlisidir. E2F transkripsiyon faktörünü tutarak S fazına geçişi engeller. Rb mutasyona uğrayınca kapı açık kalır ve hücre kontrolsüz S fazına girer.",
       "ai_coding": "🤖 Kodlama: Rb = 'Kapıcı' (E2F'yi tutar). Rb bozulursa kapı her zaman açık."
     },
     {
@@ -63,7 +97,12 @@
       "question": "Retinoblastomun herediter ve sporadik formlarını Knudson 2-hit hipotezine göre açıklayın.",
       "answer": "[[Herediter]]: Germ hatlı 1 mutasyon + 1 somatik. [[Sporadik]]: 2 somatik mutasyon. Herediterde [[osteosarkom]] riski artmıştır.",
       "difficulty": "Orta",
-      "tags": ["Retinoblastom", "Knudson", "2-Hit"],
+      "tags": [
+        "Retinoblastom",
+        "Knudson",
+        "2-Hit"
+      ],
+      "story_hint": "💡 HİKAYE: Herediter retinoblastomda çocuk bir aleli mutant olarak doğar (1. hit). Tek bir somatik mutasyon daha yeter (2. hit). Sporadikte ise iki hit de sonradan olmalıdır — bu yüzden herediter form daha erken ve bilateral ortaya çıkar.",
       "ai_coding": "🤖 Kodlama: Herediter = '1 hit kalıtsal + 1 hit sonradan'. Sporadik = '2 hit hepsi sonradan'."
     },
     {
@@ -71,7 +110,12 @@
       "question": "P53 mutasyonunu açıklayan Li-Fraumeni sendromu nedir?",
       "answer": "[[TP53 germ hatlı]] mutasyonu → [[Li-Fraumeni]] sendromu. Tümörler: [[Sarkom]], [[meme]], beyin, adrenal.",
       "difficulty": "Zor",
-      "tags": ["p53", "Li-Fraumeni", "TP53"],
+      "tags": [
+        "p53",
+        "Li-Fraumeni",
+        "TP53"
+      ],
+      "story_hint": "💡 HİKAYE: Li-Fraumeni ailesi TP53 germ hatlı mutasyonu taşır. P53 genomun polisi olduğu için bu mutasyon vücudu korumasız bırakır — sarkom, meme, beyin ve adrenal tümörleri genç yaşta gelişir. Polisin yokluğunda suçlular cirit atar.",
       "ai_coding": "🤖 Kodlama: Li-Fraumeni = 'p53 germ hatlı' → Sarkom+Meme+Beyin+Kan = 4lü tehlike."
     },
     {
@@ -79,7 +123,12 @@
       "question": "Epitelyal tümörlerde metastaz sırası ve 'E-kaderin' kaybının önemi nedir?",
       "answer": "[[E-kaderin]]: Hücre-hücre adezyon molekülü. Kaybı → [[EMT]] (epitel-mezenkimal geçiş) → [[İnvazyon]]. [[Mide diffüz tip]] (taşlı yüzük) tipiktir.",
       "difficulty": "Zor",
-      "tags": ["Metastaz", "E-kaderin", "EMT"],
+      "tags": [
+        "Metastaz",
+        "E-kaderin",
+        "EMT"
+      ],
+      "story_hint": "💡 HİKAYE: E-kaderin epitel hücrelerinin yapıştırıcısıdır. Bu yapıştırıcı kaybolduğunda hücreler serbest kalır (EMT) ve invazyon başlar. Mide diffüz tip (taşlı yüzük hücreli) karsinomda E-kaderin kaybı tipiktir.",
       "ai_coding": "🤖 Kodlama: E-kaderin = 'Epitel tutkalı'. Kaybolunca = EMT = İnvazyon başlar."
     },
     {
@@ -87,7 +136,12 @@
       "question": "Tümör anjiyogenezisinde VEGF'nin rolü ve anti-VEGF tedavisi nedir?",
       "answer": "Hipoksi → [[VEGF]] artışı → [[Anjiyogenez]]. Anti-VEGF: [[Bevacizumab]] (Avastin).",
       "difficulty": "Orta",
-      "tags": ["Neoplazi", "Anjiyogenez", "VEGF"],
+      "tags": [
+        "Neoplazi",
+        "Anjiyogenez",
+        "VEGF"
+      ],
+      "story_hint": "💡 HİKAYE: Tümör büyüdükçe oksijensiz kalır (hipoksi). Hipoksi VEGF salgılatır ve yeni damarlar oluşur (anjiyogenez). Bevacizumab (Avastin) bu VEGF'yi bloke ederek tümörün kan kaynağını keser — aç bırakma stratejisi.",
       "ai_coding": "🤖 Kodlama: VEGF = 'Damar Büyüme Faktörü'. Bevacizumab = 'Avastin = Anti-VEGF'."
     },
     {
@@ -95,7 +149,12 @@
       "question": "Tümör mikroçevresi (TME) nedir ve immün kaçışta nasıl rol oynar?",
       "answer": "[[PD-L1]] ekspresyonu → T hücre inaktivasyonu → [[İmmün kaçış]]. Çözüm: [[PD-1/PD-L1 blokajı]].",
       "difficulty": "Zor",
-      "tags": ["Tümör Mikroçevresi", "İmmün Kaçış", "PD-L1"],
+      "tags": [
+        "Tümör Mikroçevresi",
+        "İmmün Kaçış",
+        "PD-L1"
+      ],
+      "story_hint": "💡 HİKAYE: Tümör PD-L1 kalkanını kuşanarak T hücrelerini uyutur (immün kaçış). PD-1/PD-L1 blokajı bu kalkanı kırar ve T hücreleri uyanıp tümöre saldırır — immünoterapinin temel mantığı budur.",
       "ai_coding": "🤖 Kodlama: TME = 'Tümörün koruması'. PD-L1 = 'Tümörün kalkanı'. Anti-PD1 = Kalkanı kır."
     },
     {
@@ -103,7 +162,11 @@
       "question": "Tümör belirteçleri (marker) hangi klinik amaçlarla kullanılır?",
       "answer": "1) Tanı yardımcısı. 2) [[Tedavi yanıt takibi]]. 3) [[Nüks takibi]]. Kesin tanı için [[yetersizdir]].",
       "difficulty": "Kolay",
-      "tags": ["Neoplazi", "Tümör Belirteçleri"],
+      "tags": [
+        "Neoplazi",
+        "Tümör Belirteçleri"
+      ],
+      "story_hint": "💡 HİKAYE: Tümör belirteçleri kesin tanı koyamaz ama tedavi yanıtını ve nüksü takip etmekte altın değerindedir. Tek başına yükselmiş bir belirteç 'kanser var' demez — klinikle birlikte değerlendirilmelidir.",
       "ai_coding": "🤖 Kodlama: Belirteç = 'Tanı yardımcısı, takip için'. Tek başına tanı KOYAMAZ."
     },
     {
@@ -111,7 +174,12 @@
       "question": "AFP (α-fetoprotein) hangi tümörlerde yükselir?",
       "answer": "[[Hepatoselüler karsinom (HCC)]] + [[Yolk sac tümörü]].",
       "difficulty": "Kolay",
-      "tags": ["Tümör Belirteci", "AFP", "HCC"],
+      "tags": [
+        "Tümör Belirteci",
+        "AFP",
+        "HCC"
+      ],
+      "story_hint": "💡 HİKAYE: AFP (alfa-fetoprotein) fetüs döneminde yüksek olan bir proteindir. Hepatoselüler karsinomda ve yolk sac tümöründe yeniden yükselir — sanki hücre embriyonik döneme geri dönmüş gibi. 'Fetüs proteini geri döndü' = Kanser.",
       "ai_coding": "🤖 Kodlama: AFP = 'A-Fetüs-Protein' = Bebek proteini → HCC'de bebek dönemi geri döner."
     },
     {
@@ -119,7 +187,12 @@
       "question": "PSA'nın meme kanseri taramasındaki benzer belirteci nedir?",
       "answer": "Meme kanseri takibi: [[CA 15-3]] veya CA 27-29. Over takibi: [[CA-125]].",
       "difficulty": "Kolay",
-      "tags": ["Tümör Belirteci", "CA15-3", "Meme"],
+      "tags": [
+        "Tümör Belirteci",
+        "CA15-3",
+        "Meme"
+      ],
+      "story_hint": "💡 HİKAYE: Her organın tümör belirteci farklıdır: CA 15-3 memenin, CA-125 overin, PSA prostatın takipçisidir. CEA ise kolonu izler. 'Her organın bir dedektifi var' diye düşün.",
       "ai_coding": "🤖 Kodlama: CA 15-3 = Meme takibi. CA-125 = Over takibi. CEA = Kolon takibi."
     },
     {
@@ -127,7 +200,12 @@
       "question": "Tümörlerde büyüme fraksiyonu (growth fraction) nedir ve kemoterapi ile ilişkisi nedir?",
       "answer": "[[Yüksek GF]] → Kemoterapiye [[duyarlı]] (örn: akut lösemi). [[Düşük GF]] → [[Dirençli]].",
       "difficulty": "Orta",
-      "tags": ["Neoplazi", "Büyüme Fraksiyonu", "Kemoterapi"],
+      "tags": [
+        "Neoplazi",
+        "Büyüme Fraksiyonu",
+        "Kemoterapi"
+      ],
+      "story_hint": "💡 HİKAYE: Yüksek büyüme fraksiyonlu tümörler hızla bölünür — bu yüzden kemoterapiye duyarlıdır (DNA replikasyonunda yakalanırlar). Düşük büyüme fraksiyonlu tümörler yavaş bölünür ve kemoya dirençlidir. Hız = Hassasiyet.",
       "ai_coding": "🤖 Kodlama: Hızlı büyüyen = Kemoya duyarlı (çünkü DNA replikasyonunda hasar alır)."
     },
     {
@@ -135,7 +213,12 @@
       "question": "Warburg etkisi (aerobik glikoliz) nedir ve neden kanser hücrelerinde görülür?",
       "answer": "O2 varlığında bile [[glikolizi]] tercih etmek → [[Laktat]] üretimi. Amaç: Hızlı biyokütle sentezi.",
       "difficulty": "Zor",
-      "tags": ["Neoplazi", "Warburg", "Metabolizma"],
+      "tags": [
+        "Neoplazi",
+        "Warburg",
+        "Metabolizma"
+      ],
+      "story_hint": "💡 HİKAYE: Kanser hücresi oksijen olsa bile glikolizi tercih eder (Warburg etkisi). Verimsiz gibi görünse de hızlı biyokütle sentezi için gerekli yapı taşlarını sağlar. 'Şeker bağımlısı hücre' — PET/CT bu şeker açlığını görüntüler.",
       "ai_coding": "🤖 Kodlama: Warburg = 'Şeker kullan, nefes alsan da'. Kanser hücresi glikoza bağımlı."
     },
     {
@@ -143,7 +226,12 @@
       "question": "Karsinoma in situ (CIS) nedir ve hangi özelliği taşır?",
       "answer": "Atipi epitel içindedir; [[bazal membran intakttır]]. [[İnvazyon yoktur]].",
       "difficulty": "Orta",
-      "tags": ["Neoplazi", "CIS", "Premalign"],
+      "tags": [
+        "Neoplazi",
+        "CIS",
+        "Premalign"
+      ],
+      "story_hint": "💡 HİKAYE: Karsinoma in situ'da atipik hücreler epitelin tüm kalınlığını kaplar ama bazal membran sağlamdır. 'Kötü adam çitin içinde' — invazyon henüz yok. Erken teşhis edilirse tam kür mümkündür.",
       "ai_coding": "🤖 Kodlama: CIS = 'Kötü ama çit içinde'. Bazal membran sağlam = İnvazyon yok."
     },
     {
@@ -151,7 +239,12 @@
       "question": "Desmoplazi nedir ve hangi tümörlerde belirgindir?",
       "answer": "Tümör stromasındaki yoğun [[fibroz]]. En belirgin: [[Pankreas adenokarsinomu]].",
       "difficulty": "Orta",
-      "tags": ["Neoplazi", "Desmoplazi", "Stroma"],
+      "tags": [
+        "Neoplazi",
+        "Desmoplazi",
+        "Stroma"
+      ],
+      "story_hint": "💡 HİKAYE: Desmoplazi tümörün etrafında oluşan yoğun fibroz reaksiyondur — tümörün çelik kafesi gibi. Pankreas adenokarsinomunda en belirgindir, tümörü sert ve taş gibi yapar. Bu fibroz ilaçların tümöre ulaşmasını da zorlaştırır.",
       "ai_coding": "🤖 Kodlama: Desmoplazi = 'Tümürün çelik kafesi'. Pankreas tümörü = En çok desmoplazi."
     },
     {
@@ -159,7 +252,12 @@
       "question": "Lenfoma sınıflandırmasında Hodgkin ve Non-Hodgkin lenfomaların temel farkı nedir?",
       "answer": "Hodgkin: [[Reed-Sternberg (RS)]] hücresi ([[CD15+, CD30+]]). Non-Hodgkin: RS hücresi [[YOK]].",
       "difficulty": "Orta",
-      "tags": ["Lenfoma", "Hodgkin", "NHL"],
+      "tags": [
+        "Lenfoma",
+        "Hodgkin",
+        "NHL"
+      ],
+      "story_hint": "💡 HİKAYE: Hodgkin lenfomanın imzası Reed-Sternberg hücresidir — baykuş gözlü dev hücre (çift nükleus). CD15 ve CD30 pozitiftir. Non-Hodgkin lenfomada RS hücresi yoktur — bu ikisini ayıran en önemli histolojik bulgudur.",
       "ai_coding": "🤖 Kodlama: Hodgkin = Reed-Sternberg = 'Baykuş gözlü dev hücre'. CD15+CD30+."
     },
     {
@@ -167,7 +265,12 @@
       "question": "Burkitt lenfoma: t(8;14) translokasyonunun hedefi nedir ve hangi formlarda EBV görülür?",
       "answer": "[[t(8;14)]] → [[MYC]] onkogen aktivasyonu. Histoloji: '[[Yıldızlı gökyüzü]]' (starry sky). [[EBV]] ilişkisi (endemik form %100).",
       "difficulty": "Zor",
-      "tags": ["Burkitt", "MYC", "t(8;14)"],
+      "tags": [
+        "Burkitt",
+        "MYC",
+        "t(8;14)"
+      ],
+      "story_hint": "💡 HİKAYE: Burkitt lenfomada t(8;14) MYC'i aktive eder. Histolojide makrofajların arasında lenfoma hücreleri 'yıldızlı gökyüzü' görünümü verir. Endemik (Afrika) formunda EBV %100 pozitiftir — çocuklarda çene kitlesi tipiktir.",
       "ai_coding": "🤖 Kodlama: Burkitt = t(8;14) = MYC. 'Yıldızlı gökyüzü'. Çocuk Afrika lenfoma."
     },
     {
@@ -175,7 +278,11 @@
       "question": "Multipl myelom'un tanı kriterleri ve plazmositomanın farkı nedir?",
       "answer": "[[Multipl Myelom]]: >10% plazma hücresi + [[M-protein]] + [[CRAB]] (Hiperkalsemi, Renal, Anemi, Bone).",
       "difficulty": "Zor",
-      "tags": ["Myelom", "Plazma Hücresi"],
+      "tags": [
+        "Myelom",
+        "Plazma Hücresi"
+      ],
+      "story_hint": "💡 HİKAYE: Multipl myelom tanısı için CRAB kriterlerini hatırla: Calcium (hiperkalsemi), Renal yetmezlik, Anemia, Bone (kemik lytik lezyonları). Kemik iliğinde >%10 plazma hücresi + M-protein = Myelom tanısı.",
       "ai_coding": "🤖 Kodlama: CRAB = 'Kalsiyum+Renal+Anemi+Bone'. Myelom = 'CRAB + M protein'."
     },
     {
@@ -183,7 +290,12 @@
       "question": "Myelom'un kemik lezyonu ve Bence Jones proteinürisinin mekanizması nedir?",
       "answer": "Kemik: [[Lytik lezyonlar]] (patlak). İdrar: [[Bence Jones]] (serbest [[hafif zincir]] κ/λ).",
       "difficulty": "Orta",
-      "tags": ["Myelom", "Bence Jones", "Kemik"],
+      "tags": [
+        "Myelom",
+        "Bence Jones",
+        "Kemik"
+      ],
+      "story_hint": "💡 HİKAYE: Myelomda plazma hücreleri kemikleri eritir (lytik lezyonlar) — röntgende delikli peynir gibi görünür. Böbrekten hafif zincirler (Bence Jones) sızar ve tübülleri tıkar. 'Kemik deler, böbrek tıkar' — myelomun iki yüzü.",
       "ai_coding": "🤖 Kodlama: Myelom = 'Kemikleri deler, böbrekte tıkar'. Bence Jones = hafif zincir."
     },
     {
@@ -191,7 +303,12 @@
       "question": "Waldenström makroglobulinemisinin myelomdan farkı nedir?",
       "answer": "[[Waldenström]]: [[IgM]] tipi M-protein → [[Hiperviskozite]] sendromu. Myelomda IgG/IgA baskın.",
       "difficulty": "Zor",
-      "tags": ["Waldenström", "IgM", "Lenfoma"],
+      "tags": [
+        "Waldenström",
+        "IgM",
+        "Lenfoma"
+      ],
+      "story_hint": "💡 HİKAYE: Waldenström makroglobulinemisinde IgM tipi M-protein üretilir. IgM büyük bir molekül olduğu için kanı koyulaştırır (hiperviskozite). Myelomda ise IgG veya IgA baskındır ve kemik lezyonları ön plandadır.",
       "ai_coding": "🤖 Kodlama: Waldenström = 'IgM büyük = Kan koyulaşır' = Hiperviskozite."
     },
     {
@@ -199,7 +316,12 @@
       "question": "MALT lenfomanın (ekstranodal marjinal zon lenfoma) biyolojik davranışı nedir?",
       "answer": "[[İndolent]] (yavaş). [[H. pylori]] eradikasyonu ile remisyon olabilir.",
       "difficulty": "Orta",
-      "tags": ["MALT", "Marjinal Zon", "Lenfoma"],
+      "tags": [
+        "MALT",
+        "Marjinal Zon",
+        "Lenfoma"
+      ],
+      "story_hint": "💡 HİKAYE: MALT lenfoma H. pylori antijenine bağımlı büyür — antijen giderse tümör gerileyebilir. Bu yüzden erken evre mide MALT lenfomasında ilk tedavi antibiyotiktir. 'Antijene bağımlı tümör' kavramının en güzel örneği.",
       "ai_coding": "🤖 Kodlama: MALT = 'Antijene bağımlı'. Antijen giderse = Tümör gidebilir."
     },
     {
@@ -207,7 +329,12 @@
       "question": "Mantle hücre lenfomasının karakteristik translokasyonu ve klinik özellikleri nedir?",
       "answer": "[[t(11;14)]] → [[Cyclin D1]] aktivasyonu. Agresif, orta yaş erkek.",
       "difficulty": "Zor",
-      "tags": ["Mantle Hücre Lenfoma", "t(11;14)", "Cyclin D1"],
+      "tags": [
+        "Mantle Hücre Lenfoma",
+        "t(11;14)",
+        "Cyclin D1"
+      ],
+      "story_hint": "💡 HİKAYE: Mantle hücre lenfomada t(11;14) translokasyonu Cyclin D1'i aktive eder. Cyclin D1 hücre döngüsünü G1'den S'ye iter. Agresif seyirlidir ve orta yaş erkekleri tercih eder. '11+14=25' diye hatırla.",
       "ai_coding": "🤖 Kodlama: Mantle = t(11;14) = 'Cyclin D1'. 11+14=25, '14 = Ig' (IgH)."
     },
     {
@@ -215,7 +342,12 @@
       "question": "Tümörlerde DNA mismatch repair (MMR) eksikliğinin sonuçları nelerdir?",
       "answer": "[[MMR eksikliği]] → [[MSI-H]] (mikrosatellit instabilite). [[İmmünoterapiye]] (PD-1 blokajı) iyi yanıt.",
       "difficulty": "Zor",
-      "tags": ["MMR", "MSI", "Immünoterapi"],
+      "tags": [
+        "MMR",
+        "MSI",
+        "Immünoterapi"
+      ],
+      "story_hint": "💡 HİKAYE: MMR genleri DNA'daki yazım hatalarını düzeltir. Bu sistem bozulduğunda mikrosatellit instabilite (MSI-H) oluşur. MSI-H tümörler neoantijenler ürettiği için immünoterapiye (pembrolizumab) çok iyi yanıt verir — bozukluk tedaviye kapı açar.",
       "ai_coding": "🤖 Kodlama: MMR bozuk = MSI = İmmünoterapi habercisi. 'MSI = Pembro hedefi'."
     },
     {
@@ -223,7 +355,13 @@
       "question": "BRCA1/BRCA2 mutasyonu olan hastalarda kanser riski nasıl artar?",
       "answer": "[[BRCA1/2]]: [[Homolog rekombinasyon]] bozuk → Meme ve over Ca. [[PARP inhibitörleri]] etkili.",
       "difficulty": "Orta",
-      "tags": ["BRCA", "Meme", "Over", "DNA Onarım"],
+      "tags": [
+        "BRCA",
+        "Meme",
+        "Over",
+        "DNA Onarım"
+      ],
+      "story_hint": "💡 HİKAYE: BRCA1/2 DNA çift zincir kırıklarını homolog rekombinasyonla onarır. Mutasyonda onarım yapılamaz ve meme/over kanseri riski artar. PARP inhibitörleri bu onarım eksikliğini istismar ederek kanser hücrelerini öldürür — sentetik letalite.",
       "ai_coding": "🤖 Kodlama: BRCA = 'Büyük Risk Ca Alır'. PARP inhibitörü = 'Kırık onarım üzerine basarım'."
     },
     {
@@ -231,7 +369,12 @@
       "question": "ALK (Anaplastik Lenfoma Kinaz) füzyon geni hangi tümörlerde görülür?",
       "answer": "[[Akciğer adenokarsinomu]] ([[EML4-ALK]]) ve ALCL lenfoma. Tedavi: [[Krizotinib]].",
       "difficulty": "Zor",
-      "tags": ["ALK", "Akciğer", "ALCL"],
+      "tags": [
+        "ALK",
+        "Akciğer",
+        "ALCL"
+      ],
+      "story_hint": "💡 HİKAYE: ALK füzyon geni genç, sigara içmeyen akciğer adenokarsinomu hastalarında bulunur. EML4-ALK füzyonu krizotinib ile hedef alınır. ALCL lenfomada da ALK pozitifliği görülür — ALK iki farklı kanserin ortak hedefi.",
       "ai_coding": "🤖 Kodlama: ALK = 'Genç+Sigara içmeyen+Akciğer = ALKa uç'. Krizotinib = ALK inhibitörü."
     },
     {
@@ -239,7 +382,12 @@
       "question": "Tümörlerde immünohistokimya (İHK) nasıl kullanılır? Pan-sitokeratin neyi gösterir?",
       "answer": "[[Pan-sitokeratin]]: [[Epitelyal]] köken (karsinom). [[LCA]]: [[Lenfoma]]. S100: [[Melanom]].",
       "difficulty": "Orta",
-      "tags": ["İHK", "Sitokeratin", "Tümör Tanı"],
+      "tags": [
+        "İHK",
+        "Sitokeratin",
+        "Tümör Tanı"
+      ],
+      "story_hint": "💡 HİKAYE: İHK tümörün kökenini bulmak için kullanılan moleküler dedektiftir. Pan-sitokeratin 'Karsinom mu?' sorusunu, LCA 'Lenfoma mı?' sorusunu, S100 ise 'Melanom mu?' sorusunu yanıtlar. Her antikor farklı bir suçluyu işaret eder.",
       "ai_coding": "🤖 Kodlama: Pan-CK = 'Karsinom var mı?' sorusu. LCA = 'Lenfoma mı?'"
     },
     {
@@ -247,7 +395,11 @@
       "question": "Çocuklarda en sık görülen malign tümörler sıralanırken ilk 3 ne olur?",
       "answer": "1) [[Lösemi]]. 2) [[Beyin tümörleri]]. 3) [[Lenfomalar]].",
       "difficulty": "Orta",
-      "tags": ["Neoplazi", "Çocuk Tümörleri"],
+      "tags": [
+        "Neoplazi",
+        "Çocuk Tümörleri"
+      ],
+      "story_hint": "💡 HİKAYE: Çocuklarda malign tümör sıralaması: 1) Lösemi (en sık), 2) Beyin tümörleri, 3) Lenfomalar. 'L-B-L' kısaltmasıyla hatırla. Yetişkinlerden farklı olarak çocuklarda lösemi açık ara birincidır.",
       "ai_coding": "🤖 Kodlama: Çocuk tümör = '1-Lösemi, 2-Beyin, 3-Lenfoma' (L-B-L)."
     },
     {
@@ -255,7 +407,12 @@
       "question": "Wilms tümürünün (nefroblastom) en sık genetik değişikliği ve eşlik eden sendromlar nelerdir?",
       "answer": "[[WT1 gen mutasyonu]] (11p13). Sendrom: [[WAGR]] (Wilms+Aniridia+GU+Retardasyon).",
       "difficulty": "Zor",
-      "tags": ["Wilms", "WT1", "Çocuk"],
+      "tags": [
+        "Wilms",
+        "WT1",
+        "Çocuk"
+      ],
+      "story_hint": "💡 HİKAYE: Wilms tümörü (nefroblastom) WT1 genindeki (11p13) mutasyonla ilişkilidir. WAGR sendromunda dört bulgu bir arada gelir: Wilms tümörü + Aniridia (iris yokluğu) + Genitoüriner anomali + Retardasyon. 'WAGR' kısaltması tanıyı verir.",
       "ai_coding": "🤖 Kodlama: WAGR = 'Wilms+Aniri+GU+Retardasyon'. WT1 gen."
     },
     {
@@ -263,8 +420,18 @@
       "question": "Nöroblastom hangi yaş grubunda, hangi sempatik zincir bölgelerinde görülür ve prognozu ne belirler?",
       "answer": "[[Adrenal medulla]]. [[N-MYC amplifikasyonu]] = [[Kötü prognoz]].",
       "difficulty": "Zor",
-      "tags": ["Nöroblastom", "NMYC", "Çocuk"],
+      "tags": [
+        "Nöroblastom",
+        "NMYC",
+        "Çocuk"
+      ],
+      "story_hint": "💡 HİKAYE: Nöroblastom adrenal medulladan köken alır ve çocukluk çağının en sık ekstrakraniyal solid tümörüdür. N-MYC amplifikasyonu kötü prognoz göstergesidir. Ancak 1 yaş altı 4S evresinde spontan regresyon görülebilir — nöroblastomun şaşırtıcı yüzü.",
       "ai_coding": "🤖 Kodlama: Nöroblastom = 'NMYC = kötü'. <1 yaş 4S = İyi prognoz (gerileme)."
     }
-  ]
+  ],
+  "id": "pathology_batch2A-topic-0",
+  "topic": "Neoplazi (Batch 2A)",
+  "sub_topic": "Neoplazi (Batch 2A)",
+  "content_summary": "",
+  "tus_spots": []
 }

@@ -100,3 +100,5 @@ flutter:
     - assets/data/
     - assets/icon/
     - assets/sounds/
+    - assets/hero_login.jpg
+    - assets/hero_splash.jpg

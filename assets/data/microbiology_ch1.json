@@ -15,7 +15,8 @@
         "tags": [
           "Peptidoglikan",
           "TLR-2"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Peptidoglikan adlı bir kale bekçisi, TLR-2 kapısını çalarak TNF-alfa ve IL-1 adlı iki savaşçıyı uyandırır. Kalın duvarlı Gram pozitif şatodan gelen bu alarm, tüm vücudu ayağa kaldırır."
       },
       {
         "id": "fc-micro-002",
@@ -25,7 +26,8 @@
         "tags": [
           "Enzim",
           "Hücre Duvarı"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Lizozim adlı bir marangoz, duvarın Beta 1-4 tuğlalarını tek tek söker. Duvar çöker ve bakteri evsiz kalır — tıpkı yumurta kabuğu kırılınca içindekinin savunmasız kalması gibi."
       },
       {
         "id": "fc-micro-003",
@@ -35,7 +37,8 @@
         "tags": [
           "L-Form",
           "Tüberküloz"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Tüberküloz hastası Much Amca, duvarını kaybedince 'L-Form' takma adıyla gizlenir. Artık gram boyası onu tanıyamaz — tıpkı kılık değiştirmiş bir casus gibi laboratuvardan kaçar."
       }
     ],
     "tus_spots": [
@@ -52,7 +55,7 @@
           "Sferoplast",
           "L-Form",
           "Much granülü",
-          "E) Hiçbiri"
+          "E) Integronlar"
         ],
         "correct_answer": "L-Form",
         "explanation": "Hücre duvarını kaybetmiş ama çoğalabilen forma L-Form denir.",
@@ -76,7 +79,8 @@
         "tags": [
           "Kapsül",
           "Şarbon"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Şarbon (Anthrax) askeri, diğer bakterilerin polisakkarit kalkanı yerine protein zırhı (poli-D-glutamik asit) giyer. Bu benzersiz zırh onu bağışıklık ordusunun gözünden saklar."
       },
       {
         "id": "fc-micro-011",
@@ -86,7 +90,8 @@
         "tags": [
           "Teşhis",
           "Kapsül"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Quellung dedektifi, şüpheli bakterinin kapsülüne özel antiserum sıkar. Kapsül şişip balonlaşınca suçlu yakalanır — 'Seni şişirdim, artık kaçamazsın!' der dedektif."
       }
     ],
     "tus_spots": [

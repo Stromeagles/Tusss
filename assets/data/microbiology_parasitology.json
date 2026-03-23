@@ -10,12 +10,14 @@
       {
         "id": "fc-para-100",
         "question": "Yağlı ishal (steatore) ve armut şeklinde trofozoitleri olan parazit?",
-        "answer": "Giardia lamblia."
+        "answer": "Giardia lamblia.",
+        "story_hint": "💡 HİKAYE: Giardia lamblia, armut şeklinde bir trofozoittir — iki çekirdeğiyle sana gülümser gibi bakar. Yağlı ishal (steatore) yapar; duodenuma yapışıp besinlerin emilimini bozar."
       },
       {
         "id": "fc-para-101",
         "question": "Amipli dizanteri etkeni nedir?",
-        "answer": "Entamoeba histolytica."
+        "answer": "Entamoeba histolytica.",
+        "story_hint": "💡 HİKAYE: Entamoeba histolytica, bağırsak duvarını 'doku yiyen' (histolytic) bir canavar gibi kemirerek amipli dizanteri yapar. Karaciğere de sıçrayıp 'çikolata renkli' apse oluşturur."
       }
     ],
     "tus_spots": [
@@ -33,7 +35,8 @@
       {
         "id": "fc-para-110",
         "question": "Çocuklarda perianal kaşıntı ve selobant testiyle tanı konan nedir?",
-        "answer": "Enterobius vermicularis (Kıl kurdu)."
+        "answer": "Enterobius vermicularis (Kıl kurdu).",
+        "story_hint": "💡 HİKAYE: Enterobius (kıl kurdu), gece perianal bölgeye yumurta bırakır ve kaşıntı yapar. Selobant testi sabah yapılır — bant yapıştırılıp mikroskopta yumurtalar aranır, tıpkı parmak izi almak gibi."
       }
     ],
     "tus_spots": [

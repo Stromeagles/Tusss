@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter/foundation.dart' show defaultTargetPlatform, TargetPlatform;
+import 'package:flutter/foundation.dart' show defaultTargetPlatform, TargetPlatform, kIsWeb;
 import '../../auth/auth_view_model.dart';
 import '../../services/auth_service.dart';
 import '../../theme/app_theme.dart';
 import '../home_screen.dart';
+import 'forgot_password_screen.dart';
 import 'widgets/auth_text_field.dart';
 import 'widgets/social_button.dart';
 
@@ -37,18 +38,6 @@ class _LoginScreenState extends State<LoginScreen> {
   // ── Submit handler ────────────────────────────────────────────────────────
   Future<void> _onSubmit(AuthViewModel vm) async {
     await vm.submit();
-    if (!mounted) return;
-    if (vm.isLoggedIn) {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute<void>(builder: (_) => const HomeScreen()),
-      );
-    }
-  }
-
-  // ── Guest handler ─────────────────────────────────────────────────────────
-  Future<void> _onGuest(AuthViewModel vm) async {
-    await vm.loginAsGuest();
     if (!mounted) return;
     if (vm.isLoggedIn) {
       Navigator.pushReplacement(
@@ -107,22 +96,30 @@ class _LoginScreenState extends State<LoginScreen> {
               _buildBackground(),
               // Content
               SafeArea(
-                child: SingleChildScrollView(
-                  padding: const EdgeInsets.symmetric(horizontal: 24),
-                  physics: const BouncingScrollPhysics(),
-                  child: Column(
-                    children: [
-                      const SizedBox(height: 48),
-                      // Logo area
-                      _buildLogoArea(vm),
-                      const SizedBox(height: 32),
-                      // Glass card
-                      _buildGlassCard(vm),
-                      const SizedBox(height: 28),
-                      // Bottom toggle
-                      _buildBottomToggle(vm),
-                      const SizedBox(height: 40),
-                    ],
+                child: Center(
+                  child: Container(
+                    constraints: const BoxConstraints(maxWidth: 500),
+                    child: SingleChildScrollView(
+                      padding: const EdgeInsets.symmetric(horizontal: 24),
+                      physics: const BouncingScrollPhysics(),
+                      child: Column(
+                        children: [
+                          // Logo area
+                          _buildLogoArea(vm),
+                          const SizedBox(height: 24),
+                          // Glass card
+                          _buildGlassCard(vm),
+                          const SizedBox(height: 28),
+                          // Bottom toggle
+                          _buildBottomToggle(vm),
+                          if (kIsWeb) ...[
+                            const SizedBox(height: 48),
+                            _buildStoreButtons(),
+                          ],
+                          const SizedBox(height: 40),
+                        ],
+                      ),
+                    ),
                   ),
                 ),
               ),
@@ -212,11 +209,11 @@ class _LoginScreenState extends State<LoginScreen> {
     ];
   }
 
-  // ── Logo area ─────────────────────────────────────────────────────────────
+  // ── Logo area (Restored to App Icon style) ────────────────────────────────
   Widget _buildLogoArea(AuthViewModel vm) {
     return Column(
       children: [
-        // App icon
+        // App icon with glow
         Container(
           width: 90,
           height: 90,
@@ -224,7 +221,7 @@ class _LoginScreenState extends State<LoginScreen> {
             borderRadius: BorderRadius.circular(22),
             boxShadow: [
               BoxShadow(
-                color: const Color(0xFF00D4FF).withValues(alpha: 0.30),
+                color: AppTheme.cyan.withValues(alpha: 0.30),
                 blurRadius: 28,
                 spreadRadius: 2,
                 offset: const Offset(0, 6),
@@ -253,7 +250,7 @@ class _LoginScreenState extends State<LoginScreen> {
           style: GoogleFonts.outfit(
             fontSize: 28,
             fontWeight: FontWeight.w700,
-            color: AppTheme.textPrimary,
+            color: Colors.white,
             letterSpacing: -0.5,
           ),
         )
@@ -261,18 +258,22 @@ class _LoginScreenState extends State<LoginScreen> {
             .fadeIn(delay: 100.ms, duration: 400.ms)
             .slideY(begin: 0.2, end: 0, delay: 100.ms, duration: 400.ms),
 
-        const SizedBox(height: 6),
+        const SizedBox(height: 12),
 
-        // Subtitle
-        AnimatedSwitcher(
-          duration: const Duration(milliseconds: 300),
+        // Subtitle/Toggle info
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+          decoration: BoxDecoration(
+            color: AppTheme.cyan.withValues(alpha: 0.1),
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.2)),
+          ),
           child: Text(
-            vm.mode == AuthMode.login ? 'Hoş geldiniz' : 'Hesap oluştur',
-            key: ValueKey<AuthMode>(vm.mode),
+            vm.mode == AuthMode.login ? 'Tekrar Hoş Geldin' : 'Yeni Yolculuğa Başla',
             style: GoogleFonts.inter(
-              fontSize: 15,
-              color: AppTheme.textSecondary,
-              fontWeight: FontWeight.w400,
+              fontSize: 12,
+              color: AppTheme.cyan,
+              fontWeight: FontWeight.w700,
             ),
           ),
         )
@@ -284,66 +285,69 @@ class _LoginScreenState extends State<LoginScreen> {
 
   // ── Glass card ────────────────────────────────────────────────────────────
   Widget _buildGlassCard(AuthViewModel vm) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(24),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-        child: Container(
-          decoration: BoxDecoration(
-            color: Colors.white.withValues(alpha: 0.05),
-            borderRadius: BorderRadius.circular(24),
-            border: Border.all(
-              color: Colors.white.withValues(alpha: 0.10),
-              width: 1,
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withValues(alpha: 0.5),
-                blurRadius: 40,
-                offset: const Offset(0, 16),
-              ),
-            ],
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.04), // Ultra subtle for high premium feel
+        borderRadius: BorderRadius.circular(28),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: 0.08),
+          width: 1.2,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.4),
+            blurRadius: 32,
+            offset: const Offset(0, 12),
           ),
-          padding: const EdgeInsets.all(24),
-          child: AnimatedSwitcher(
-            duration: const Duration(milliseconds: 320),
-            transitionBuilder: (child, animation) {
-              final slide = Tween<Offset>(
-                begin: const Offset(0.05, 0),
-                end: Offset.zero,
-              ).animate(CurvedAnimation(parent: animation, curve: Curves.easeOut));
-              return FadeTransition(
-                opacity: animation,
-                child: SlideTransition(position: slide, child: child),
-              );
-            },
-            child: vm.mode == AuthMode.login
-                ? _LoginForm(
-                    key: const ValueKey('login'),
-                    vm: vm,
-                    emailCtrl: _emailCtrl,
-                    pwCtrl: _pwCtrl,
-                    onSubmit: () => _onSubmit(vm),
-                    onGuest: () => _onGuest(vm),
-                    onGoogleSignIn: () => _signInWithGoogle(context),
-                    onAppleSignIn: () => _signInWithApple(context),
-                  )
-                : _SignupForm(
-                    key: const ValueKey('signup'),
-                    vm: vm,
-                    nameCtrl: _nameCtrl,
-                    emailCtrl: _emailCtrl,
-                    pwCtrl: _pwCtrl,
-                    confirmCtrl: _confirmCtrl,
-                    onSubmit: () => _onSubmit(vm),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(28),
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
+          child: Padding(
+            padding: const EdgeInsets.all(28),
+            child: AnimatedSwitcher(
+              duration: const Duration(milliseconds: 350),
+              transitionBuilder: (child, animation) {
+                return FadeTransition(
+                  opacity: animation,
+                  child: SlideTransition(
+                    position: Tween<Offset>(
+                      begin: const Offset(0.04, 0),
+                      end: Offset.zero,
+                    ).animate(CurvedAnimation(parent: animation, curve: Curves.easeOutCubic)),
+                    child: child,
                   ),
+                );
+              },
+              child: vm.mode == AuthMode.login
+                  ? _LoginForm(
+                      key: const ValueKey('login'),
+                      vm: vm,
+                      emailCtrl: _emailCtrl,
+                      pwCtrl: _pwCtrl,
+                      onSubmit: () => _onSubmit(vm),
+                      onGoogleSignIn: () => _signInWithGoogle(context),
+                      onAppleSignIn: () => _signInWithApple(context),
+                    )
+                  : _SignupForm(
+                      key: const ValueKey('signup'),
+                      vm: vm,
+                      nameCtrl: _nameCtrl,
+                      emailCtrl: _emailCtrl,
+                      pwCtrl: _pwCtrl,
+                      confirmCtrl: _confirmCtrl,
+                      onSubmit: () => _onSubmit(vm),
+                    ),
+            ),
           ),
         ),
       ),
     )
         .animate()
-        .fadeIn(delay: 250.ms, duration: 500.ms)
-        .slideY(begin: 0.15, end: 0, delay: 250.ms, duration: 500.ms, curve: Curves.easeOut);
+        .fadeIn(delay: 300.ms, duration: 600.ms)
+        .slideY(begin: 0.2, end: 0, delay: 300.ms, duration: 600.ms, curve: Curves.easeOutQuart);
   }
 
   // ── Bottom toggle ─────────────────────────────────────────────────────────
@@ -376,6 +380,92 @@ class _LoginScreenState extends State<LoginScreen> {
         .animate()
         .fadeIn(delay: 350.ms, duration: 400.ms);
   }
+
+  // ── Store buttons (Web only) ──────────────────────────────────────────────
+  Widget _buildStoreButtons() {
+    return Column(
+      children: [
+        Text(
+          'Uygulamayı İndirin',
+          style: GoogleFonts.inter(
+            color: AppTheme.textSecondary,
+            fontSize: 13,
+            fontWeight: FontWeight.w600,
+            letterSpacing: 0.5,
+          ),
+        ),
+        const SizedBox(height: 16),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            _StoreButton(
+              icon: Icons.apple_rounded,
+              label: 'App Store',
+              onTap: () {
+                // TODO: App Store linki eklenecek
+              },
+            ),
+            const SizedBox(width: 16),
+            _StoreButton(
+              icon: Icons.shop_rounded,
+              label: 'Google Play',
+              onTap: () {
+                // TODO: Google Play linki eklenecek
+              },
+            ),
+          ],
+        ),
+      ],
+    )
+        .animate()
+        .fadeIn(delay: 500.ms, duration: 500.ms)
+        .slideY(begin: 0.1, end: 0, curve: Curves.easeOut);
+  }
+}
+
+class _StoreButton extends StatelessWidget {
+  const _StoreButton({
+    required this.icon,
+    required this.label,
+    required this.onTap,
+  });
+
+  final IconData icon;
+  final String label;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        decoration: BoxDecoration(
+          color: Colors.white.withValues(alpha: 0.05),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: Colors.white.withValues(alpha: 0.1),
+            width: 1,
+          ),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, color: Colors.white, size: 20),
+            const SizedBox(width: 8),
+            Text(
+              label,
+              style: GoogleFonts.inter(
+                color: Colors.white,
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -389,7 +479,6 @@ class _LoginForm extends StatelessWidget {
     required this.emailCtrl,
     required this.pwCtrl,
     required this.onSubmit,
-    required this.onGuest,
     required this.onGoogleSignIn,
     required this.onAppleSignIn,
   });
@@ -398,7 +487,6 @@ class _LoginForm extends StatelessWidget {
   final TextEditingController emailCtrl;
   final TextEditingController pwCtrl;
   final VoidCallback          onSubmit;
-  final VoidCallback          onGuest;
   final Future<void> Function() onGoogleSignIn;
   final Future<void> Function() onAppleSignIn;
 
@@ -448,19 +536,10 @@ class _LoginForm extends StatelessWidget {
           alignment: Alignment.centerRight,
           child: GestureDetector(
             onTap: () {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(
-                    'Yakında!',
-                    style: GoogleFonts.inter(color: Colors.white),
-                  ),
-                  backgroundColor: AppTheme.surfaceVariant,
-                  behavior: SnackBarBehavior.floating,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    side: const BorderSide(color: AppTheme.border),
-                  ),
-                  duration: const Duration(seconds: 2),
+              Navigator.push(
+                context,
+                MaterialPageRoute<void>(
+                  builder: (_) => const ForgotPasswordScreen(),
                 ),
               );
             },
@@ -514,27 +593,6 @@ class _LoginForm extends StatelessWidget {
             defaultTargetPlatform == TargetPlatform.macOS)
           const SizedBox(height: 10),
         const SizedBox(height: 4),
-
-        // Guest button
-        OutlinedButton(
-          onPressed: vm.isLoading ? null : onGuest,
-          style: OutlinedButton.styleFrom(
-            foregroundColor: AppTheme.textSecondary,
-            side: const BorderSide(color: AppTheme.border, width: 1),
-            padding: const EdgeInsets.symmetric(vertical: 14),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(14),
-            ),
-          ),
-          child: Text(
-            'Misafir Olarak Giriş Yap',
-            style: GoogleFonts.inter(
-              fontSize: 14,
-              fontWeight: FontWeight.w500,
-              color: AppTheme.textSecondary,
-            ),
-          ),
-        ),
       ],
     );
   }

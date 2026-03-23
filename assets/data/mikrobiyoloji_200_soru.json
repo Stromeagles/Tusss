@@ -19,7 +19,8 @@
         "E) Beta 1-6 glikozid bağı"
       ],
       "correct_answer": "C) Beta 1-4 glikozid bağı",
-      "explanation": "PROFESÖR NOTU: Peptidoglikan tabakası, bakterilerin ozmotik basınca dayanıklılığını sağlayan temel yapıdır. Bu tabaka N-asetil glukozamin (NAG) ve N-asetil muramik asit (NAM) şekerlerinin Beta 1-4 glikozid bağlarıyla birbirine bağlanmasıyla oluşur. Lizozim enzimi (gözyaşında bulunur) tam olarak bu bağı kırarak bakteriyi parçalar."
+      "explanation": "PROFESÖR NOTU: Peptidoglikan tabakası, bakterilerin ozmotik basınca dayanıklılığını sağlayan temel yapıdır. Bu tabaka N-asetil glukozamin (NAG) ve N-asetil muramik asit (NAM) şekerlerinin Beta 1-4 glikozid bağlarıyla birbirine bağlanmasıyla oluşur. Lizozim enzimi (gözyaşında bulunur) tam olarak bu bağı kırarak bakteriyi parçalar.",
+      "story_hint": "💡 HİKAYE: Peptidoglikan duvarındaki şekerler (NAM-NAG), sanki bir tuğla duvarında tuğlaları birbirine bağlayan çimento gibi Beta 1-4 glikozid bağlarıyla tutturulur. Gözyaşındaki lizozim bu çimentoyu eritip duvarı yıkan bir kazma gibidir. Beta 1-4 bağını hatırla: 'B'akteri duvarı = B'eta bağı!"
     },
     {
       "id": "mp-002",
@@ -32,7 +33,8 @@
         "E) Koagülaz"
       ],
       "correct_answer": "D) Beta-laktamazlar",
-      "explanation": "HOCANIN ÖZETİ: Periplazmik aralık sadece Gram negatif bakterilerde bulunur. Bakteriler, penisilin ve sefalosporin gibi beta-laktam antibiyotikleri etkisiz hale getirmek için bu enzimlerini periplazmaya salgılar. Gram pozitiflerde ise periplazmik aralık olmadığı için beta-laktamazlar doğrudan dış ortama salgılanır."
+      "explanation": "HOCANIN ÖZETİ: Periplazmik aralık sadece Gram negatif bakterilerde bulunur. Bakteriler, penisilin ve sefalosporin gibi beta-laktam antibiyotikleri etkisiz hale getirmek için bu enzimlerini periplazmaya salgılar. Gram pozitiflerde ise periplazmik aralık olmadığı için beta-laktamazlar doğrudan dış ortama salgılanır.",
+      "story_hint": "💡 HİKAYE: Gram negatif bakterilerin periplazmik aralığını bir kalenin iç avlusu olarak düşün. Beta-laktamazlar bu avluda bekleyen muhafızlardır — içeri giren penisilin askerlerini yakalayıp etkisiz hale getirirler. Bu 'avlu' sadece Gram negatiflerde vardır; Gram pozitiflerde muhafızlar kapı dışında savaşır."
     },
     {
       "id": "mp-003",
@@ -45,7 +47,8 @@
         "E) Legionella"
       ],
       "correct_answer": "A) Mycoplasma",
-      "explanation": "KRİTİK BİLGİ: Mycoplasma hücre duvarı olmayan tek bakteri cinsidir. Membranında kolesterol bulunur (sterol); bu özellik onu diğer bakterilerden ayırır. Hücre duvarı olmadığı için penisilin, sefalosporin ve diğer hücre duvarı sentezini hedef alan antibiyotikler etkisizdir. Gram boyası ile boyanamaz. Tedavide makrolidler, tetrasiklin ve florokinolonlar tercih edilir."
+      "explanation": "KRİTİK BİLGİ: Mycoplasma hücre duvarı olmayan tek bakteri cinsidir. Membranında kolesterol bulunur (sterol); bu özellik onu diğer bakterilerden ayırır. Hücre duvarı olmadığı için penisilin, sefalosporin ve diğer hücre duvarı sentezini hedef alan antibiyotikler etkisizdir. Gram boyası ile boyanamaz. Tedavide makrolidler, tetrasiklin ve florokinolonlar tercih edilir.",
+      "story_hint": "💡 HİKAYE: Mycoplasma'yı duvarı olmayan çıplak bir ev olarak hayal et. Penisilin gibi 'duvar yıkıcı' silahlar bu eve etki edemez — çünkü yıkacak duvar yok! Membranında kolesterol bulunur, sanki çıplak eve bir battaniye örtülmüş gibi. 'My-co-plasma' = 'My-kolesterol-plasma'."
     },
     {
       "id": "mp-004",
@@ -58,7 +61,8 @@
         "E) Pili"
       ],
       "correct_answer": "B) Kapsül",
-      "explanation": "ZIRH GİBİ KAPSÜL: Bakterinin dış yüzeyini saran polisakkarit yapılı kapsül, en önemli antifagositik yapıdır. Kapsül, makrofajların bakteriyi tanımasını ve tutunmasını engeller. Kapsüllü bakteriler (Pnömokok, Menenjokok, H. influenzae) bu özellikleri sayesinde kanda ve BOS'ta rahatça yayılabilirler."
+      "explanation": "ZIRH GİBİ KAPSÜL: Bakterinin dış yüzeyini saran polisakkarit yapılı kapsül, en önemli antifagositik yapıdır. Kapsül, makrofajların bakteriyi tanımasını ve tutunmasını engeller. Kapsüllü bakteriler (Pnömokok, Menenjokok, H. influenzae) bu özellikleri sayesinde kanda ve BOS'ta rahatça yayılabilirler.",
+      "story_hint": "💡 HİKAYE: Kapsül, bakterinin üzerine giydiği görünmez bir pelerin gibidir. Makrofaj polisleri bu pelerinli suçluyu yakalayamaz, çünkü tutunacak yer bulamaz. Pnömokok, Menengokok ve H. influenzae bu pelerini en iyi kullanan üç 'kaçak'tır."
     },
     {
       "id": "mp-005",
@@ -71,7 +75,8 @@
         "E) Bacillus anthracis (Şarbon)"
       ],
       "correct_answer": "E) Bacillus anthracis (Şarbon)",
-      "explanation": "PROFESÖR NOTU: Bakterilerin büyük çoğunluğunda kapsül polisakkarit yapıdadır. Ancak B. anthracis (Şarbon basili) burada istisnai bir yere sahiptir; kapsülü poli-D-glutamik asit yani protein yapıdadır. Bu protein yapılı kapsül hem antifagositik etki gösterir hem de şarbon aşısının geliştirilmesinde hedef alınan yapılardan biridir. Mnemonic: Anthracis = Amino asit (protein) kapsül."
+      "explanation": "PROFESÖR NOTU: Bakterilerin büyük çoğunluğunda kapsül polisakkarit yapıdadır. Ancak B. anthracis (Şarbon basili) burada istisnai bir yere sahiptir; kapsülü poli-D-glutamik asit yani protein yapıdadır. Bu protein yapılı kapsül hem antifagositik etki gösterir hem de şarbon aşısının geliştirilmesinde hedef alınan yapılardan biridir. Mnemonic: Anthracis = Amino asit (protein) kapsül.",
+      "story_hint": "💡 HİKAYE: Tüm bakteriler polisakkarit kapsül giyerken, Bacillus anthracis (Şarbon) farklı olmak istedi ve PROTEİN bir kapsül dikti. Şarbon 'A'mino asit kapsülü sever — A'nthracis = A'mino asit. Diğer bakteriler şeker kapsül giyerken o protein tercih eden 'moda isyancısı'dır."
     },
     {
       "id": "mp-006",
@@ -84,7 +89,8 @@
         "E) Lipopolisakkarit"
       ],
       "correct_answer": "D) Kalsiyum dipikolinat",
-      "explanation": "KRİTİK BİLGİ: Bakteri sporları, vejetatif hücrelere kıyasla aşırı ısı dayanıklılığı gösterir. Bu dayanıklılığın sırrı spor korteksinde bulunan kalsiyum dipikolinattır. Bu madde sporun su içeriğini azaltarak dehidrasyona yol açar ve enzimleri korur. Spor oluşturan başlıca patojenler: Clostridium (anaerop) ve Bacillus (aerop) cinsleridir. Otoklav (121 derece, 15 dk) sporları öldürür."
+      "explanation": "KRİTİK BİLGİ: Bakteri sporları, vejetatif hücrelere kıyasla aşırı ısı dayanıklılığı gösterir. Bu dayanıklılığın sırrı spor korteksinde bulunan kalsiyum dipikolinattır. Bu madde sporun su içeriğini azaltarak dehidrasyona yol açar ve enzimleri korur. Spor oluşturan başlıca patojenler: Clostridium (anaerop) ve Bacillus (aerop) cinsleridir. Otoklav (121 derece, 15 dk) sporları öldürür.",
+      "story_hint": "💡 HİKAYE: Bakteri sporu bir savaş zırhıdır ve bu zırhın sırrı kalsiyum dipikolinattır. Sporun içindeki suyu emmek gibi bir sünger işlevi görür — su yok, ısı yok! Clostridium ve Bacillus bu zırhı kuşanan iki savaşçı aileydi. Otoklav (121°C) bu zırhı eriten tek silah."
     },
     {
       "id": "mp-007",
@@ -97,7 +103,8 @@
         "E) Sadece hücre içinde yaşayabilmeleri"
       ],
       "correct_answer": "C) Hücre duvarları olmamasına rağmen çoğalabilen formlar olmaları",
-      "explanation": "HOCANIN ÖZETİ: L-formu bakteriler, Lister Enstitüsü'nde keşfedildiği için bu adı almıştır. Normal bakteriler hücre duvarını kaybettiğinde genellikle ozmotik lizisle ölürler. Ancak L-formları izotonik ortamda hücre duvarı olmadan yaşamaya ve çoğalmaya devam edebilir. Bu durum antibiyotik tedavisi sırasında oluşabilir ve tedavi kesilince bakteri tekrar duvar sentezleyerek nüks edebilir."
+      "explanation": "HOCANIN ÖZETİ: L-formu bakteriler, Lister Enstitüsü'nde keşfedildiği için bu adı almıştır. Normal bakteriler hücre duvarını kaybettiğinde genellikle ozmotik lizisle ölürler. Ancak L-formları izotonik ortamda hücre duvarı olmadan yaşamaya ve çoğalmaya devam edebilir. Bu durum antibiyotik tedavisi sırasında oluşabilir ve tedavi kesilince bakteri tekrar duvar sentezleyerek nüks edebilir.",
+      "story_hint": "💡 HİKAYE: L-formu bakteriler, Lister Enstitüsü'nde keşfedilen 'hayalet' bakterilerdir. Duvarlarını kaybetmişler ama izotonik ortamda yaşamaya devam ediyorlar — sanki evsiz ama hayatta kalan bir serseri. Antibiyotik tedavisi durduğunda tekrar duvar örerek 'dirilen zombiler' gibi geri dönerler."
     },
     {
       "id": "mp-008",
@@ -110,7 +117,8 @@
         "E) Mezozom"
       ],
       "correct_answer": "A) Seks pilusu (F-pilusu)",
-      "explanation": "KRİTİK BİLGİ: Konjugasyon, iki bakteri arasında doğrudan temas gerektiren genetik bilgi aktarımıdır. Bu teması F-pilusu (seks pilusu) sağlar. F-plazmidi taşıyan (F+) bakteri, F-pilusunu F- bakteriye uzatarak DNA köprüsü oluşturur. Konjugasyon ile plazmid DNA aktarılır; bu yolla antibiyotik direnç genleri bakteriler arasında hızla yayılabilir. Mnemonic: F = Fertilite = Üreme pilusu."
+      "explanation": "KRİTİK BİLGİ: Konjugasyon, iki bakteri arasında doğrudan temas gerektiren genetik bilgi aktarımıdır. Bu teması F-pilusu (seks pilusu) sağlar. F-plazmidi taşıyan (F+) bakteri, F-pilusunu F- bakteriye uzatarak DNA köprüsü oluşturur. Konjugasyon ile plazmid DNA aktarılır; bu yolla antibiyotik direnç genleri bakteriler arasında hızla yayılabilir. Mnemonic: F = Fertilite = Üreme pilusu.",
+      "story_hint": "💡 HİKAYE: F-pilusu bakterilerin 'aşk köprüsü'dür. F+ bakteri (erkek), F- bakteriye (dişi) bu köprüyü uzatarak DNA'sını aktarır. F = Fertilite = Flört pilusu! Antibiyotik direnç genleri bu aşk köprüsünden geçerek tüm bakteri topluluğuna yayılır."
     },
     {
       "id": "mp-009",
@@ -123,7 +131,8 @@
         "E) Transformasyon"
       ],
       "correct_answer": "E) Transformasyon",
-      "explanation": "PROFESÖR NOTU: Transformasyon, ortamdaki serbest (çıplak) DNA parçalarının kompetan bakteri tarafından alınmasıdır. Griffith deneyi (1928) ile keşfedilmiştir; ölü virülan pnömokokların DNA'sı, canlı avirülan pnömokokları virülana dönüştürmüştür. Doğal olarak kompetan bakteriler: S. pneumoniae, H. influenzae, Neisseria ve Bacillus türleridir. Mnemonic: SHiNe = S. pneumoniae, H. influenzae, Neisseria."
+      "explanation": "PROFESÖR NOTU: Transformasyon, ortamdaki serbest (çıplak) DNA parçalarının kompetan bakteri tarafından alınmasıdır. Griffith deneyi (1928) ile keşfedilmiştir; ölü virülan pnömokokların DNA'sı, canlı avirülan pnömokokları virülana dönüştürmüştür. Doğal olarak kompetan bakteriler: S. pneumoniae, H. influenzae, Neisseria ve Bacillus türleridir. Mnemonic: SHiNe = S. pneumoniae, H. influenzae, Neisseria.",
+      "story_hint": "💡 HİKAYE: Transformasyon, ortamdaki çıplak DNA'yı 'hediye' gibi alan bakteridir. Griffith'in deneyi: Ölü virülan pnömokokların DNA'sı, canlı avirülan olanlara 'miras' bıraktı. SHiNe = S. pneumoniae, H. influenzae, Neisseria — doğal olarak bu hediyeyi kabul eden üç kompetan bakteri."
     },
     {
       "id": "mp-010",
@@ -136,7 +145,8 @@
         "E) Rekombinasyon"
       ],
       "correct_answer": "B) Transdüksiyon",
-      "explanation": "HOCANIN ÖZETİ: Transdüksiyon, bir bakteriyofajın (bakteri virüsü) bir bakteriden diğerine DNA taşıması ile gerçekleşir. İki tipi vardır: Jeneralize transdüksiyonda herhangi bir bakteriyel gen aktarılabilir (litik döngü sırasında), spesifik (özelleşmiş) transdüksiyonda ise sadece profaj komşuluğundaki genler aktarılır (lizojenik döngü). Botulinum, kolera, difteri ve eritrojenik toksin genleri faj ile aktarılır."
+      "explanation": "HOCANIN ÖZETİ: Transdüksiyon, bir bakteriyofajın (bakteri virüsü) bir bakteriden diğerine DNA taşıması ile gerçekleşir. İki tipi vardır: Jeneralize transdüksiyonda herhangi bir bakteriyel gen aktarılabilir (litik döngü sırasında), spesifik (özelleşmiş) transdüksiyonda ise sadece profaj komşuluğundaki genler aktarılır (lizojenik döngü). Botulinum, kolera, difteri ve eritrojenik toksin genleri faj ile aktarılır.",
+      "story_hint": "💡 HİKAYE: Transdüksiyon, bakteriyofajın postacı rolü üstlendiği bir gen transferidir. Faj postacı bir bakteriden DNA mektubunu alır, diğerine teslim eder. Botulinum, kolera, difteri ve eritrojenik toksin genleri hep bu 'faj postacıları' ile taşınır — kötü haberler hep mektupla gelir!"
     },
     {
       "id": "mp-011",
@@ -149,7 +159,8 @@
         "E) Koagülaz"
       ],
       "correct_answer": "E) Koagülaz",
-      "explanation": "KOAGÜLAZ TESTİ: Stafilokoklar arasında S. aureus'u (patojen olanı) diğerlerinden (KNS-Koagülaz Negatif Stafilokoklar) ayıran altın standart test koagülazdır. Koagülaz, plazmadaki fibrinojeni fibrine çevirerek bakterinin etrafında bir pıhtı kalkanı oluşturur."
+      "explanation": "KOAGÜLAZ TESTİ: Stafilokoklar arasında S. aureus'u (patojen olanı) diğerlerinden (KNS-Koagülaz Negatif Stafilokoklar) ayıran altın standart test koagülazdır. Koagülaz, plazmadaki fibrinojeni fibrine çevirerek bakterinin etrafında bir pıhtı kalkanı oluşturur.",
+      "story_hint": "💡 HİKAYE: S. aureus koagülaz testinde 'kan pıhtısı' yapar — sanki etrafına bir pıhtı kalkanı örer. Diğer stafilokoklar (KNS) bunu yapamaz. Koagülaz = S. aureus'un 'altın mührü'. Altın renkli kolonileri var, altın standart testi koagülaz — her şey 'aureus' (altın)!"
     },
     {
       "id": "mp-012",
@@ -162,7 +173,8 @@
         "E) Hemolizin"
       ],
       "correct_answer": "D) Protein A",
-      "explanation": "KRİTİK BİLGİ: Protein A, S. aureus'un yüzeyinde bulunan ve IgG antikorunun Fc bölgesine bağlanan bir virülans faktörüdür. Normalde IgG'nin Fc kısmı fagositlerin Fc reseptörüne bağlanarak opsonizasyonu sağlar. Protein A bu bağlanmayı engelleyerek fagositozdan kaçışı mümkün kılar. Ayrıca kompleman aktivasyonunu da bozar. Mnemonic: Protein A = Anti-fagositik."
+      "explanation": "KRİTİK BİLGİ: Protein A, S. aureus'un yüzeyinde bulunan ve IgG antikorunun Fc bölgesine bağlanan bir virülans faktörüdür. Normalde IgG'nin Fc kısmı fagositlerin Fc reseptörüne bağlanarak opsonizasyonu sağlar. Protein A bu bağlanmayı engelleyerek fagositozdan kaçışı mümkün kılar. Ayrıca kompleman aktivasyonunu da bozar. Mnemonic: Protein A = Anti-fagositik.",
+      "story_hint": "💡 HİKAYE: Protein A, IgG antikorunun Fc ucuna yapışan sinsi bir ajan. Normalde Fc ucu fagositlere 'beni ye' sinyali verir. Protein A bu sinyali keser — sanki IgG'nin ağzını kapatır. Protein A = Anti-fagositik Ajan. S. aureus'un 'gizli silahı'dır."
     },
     {
       "id": "mp-013",
@@ -175,7 +187,8 @@
         "E) tetM"
       ],
       "correct_answer": "A) mecA",
-      "explanation": "PROFESÖR NOTU: MRSA (Metisiline Dirençli S. aureus) direnci mecA geni tarafından kodlanır. Bu gen, değiştirilmiş bir penisilin bağlayan protein olan PBP-2a sentezler. PBP-2a, beta-laktam antibiyotiklere düşük afinite gösterir, bu yüzden metisilin ve diğer beta-laktamlar etkisiz kalır. MRSA tedavisinde vankomisin, daptomisin veya linezolid kullanılır. Mnemonic: mecA = Metisilin Etkisizleştiren Ciddi Avantaj."
+      "explanation": "PROFESÖR NOTU: MRSA (Metisiline Dirençli S. aureus) direnci mecA geni tarafından kodlanır. Bu gen, değiştirilmiş bir penisilin bağlayan protein olan PBP-2a sentezler. PBP-2a, beta-laktam antibiyotiklere düşük afinite gösterir, bu yüzden metisilin ve diğer beta-laktamlar etkisiz kalır. MRSA tedavisinde vankomisin, daptomisin veya linezolid kullanılır. Mnemonic: mecA = Metisilin Etkisizleştiren Ciddi Avantaj.",
+      "story_hint": "💡 HİKAYE: MRSA süper kahramanı mecA genidir. Bu gen, PBP-2a adında değiştirilmiş bir kilit üretir. Beta-laktam antibiyotikler eski anahtardır ama yeni kilide uymaz! mecA = Metisilin Etkisizleştiren Ciddi Avantaj. Tedavide vankomisin 'usta çilingir' olarak devreye girer."
     },
     {
       "id": "mp-014",
@@ -188,7 +201,8 @@
         "E) Nörotransmitter salınımını engelleyerek"
       ],
       "correct_answer": "C) Süperantijen olarak (MHC-II ve TCR'ye doğrudan bağlanarak)",
-      "explanation": "KRİTİK BİLGİ: TSST-1, klasik bir süperantijendir. Normal antijen sunumunda T hücrelerin yalnızca %0.01'i aktive olurken, süperantijenler MHC-II ve TCR'nin V-beta bölgesine doğrudan bağlanarak T hücrelerin %20'sine kadar aktive eder. Bu masif aktivasyon sitokin fırtınasına (IL-1, IL-2, TNF-alfa) yol açar ve şok tablosu gelişir. Tampon kullanımı ile ilişkili kadınlarda daha sıktır."
+      "explanation": "KRİTİK BİLGİ: TSST-1, klasik bir süperantijendir. Normal antijen sunumunda T hücrelerin yalnızca %0.01'i aktive olurken, süperantijenler MHC-II ve TCR'nin V-beta bölgesine doğrudan bağlanarak T hücrelerin %20'sine kadar aktive eder. Bu masif aktivasyon sitokin fırtınasına (IL-1, IL-2, TNF-alfa) yol açar ve şok tablosu gelişir. Tampon kullanımı ile ilişkili kadınlarda daha sıktır.",
+      "story_hint": "💡 HİKAYE: TSST-1, bağışıklık sistemini çıldırtan bir 'süperantijen provokatörü'dür. Normal antijenler T hücrelerin %0.01'ini uyarırken, TSST-1 %20'sini birden ateşler — sitokin fırtınası kopar! Tampon kullanımıyla ilişkili olduğu için 'tampon toksini' olarak hatırla."
     },
     {
       "id": "mp-015",
@@ -201,7 +215,8 @@
         "E) Alfa-hemolizin"
       ],
       "correct_answer": "B) Eksfolyatif toksin (Epidermolitik toksin)",
-      "explanation": "HOCANIN ÖZETİ: Eksfolyatif (epidermolitik) toksin, epidermisin granüloz tabakasındaki desmoglein-1 molekülünü parçalayan bir serin proteazdır. Bu durum ciltte yaygın bül oluşumu ve deri soyulmasına neden olur; klinik tablo 'haşlanmış deri' gibi görünür (Ritter hastalığı). Özellikle yenidoğan ve küçük çocuklarda görülür. Nikolsky belirtisi pozitiftir."
+      "explanation": "HOCANIN ÖZETİ: Eksfolyatif (epidermolitik) toksin, epidermisin granüloz tabakasındaki desmoglein-1 molekülünü parçalayan bir serin proteazdır. Bu durum ciltte yaygın bül oluşumu ve deri soyulmasına neden olur; klinik tablo 'haşlanmış deri' gibi görünür (Ritter hastalığı). Özellikle yenidoğan ve küçük çocuklarda görülür. Nikolsky belirtisi pozitiftir.",
+      "story_hint": "💡 HİKAYE: Eksfolyatif toksin, cildi bir soğan gibi soyan bir serin proteazdır. Desmoglein-1'i kırarak epidermisi ayırır — bebek sanki haşlanmış gibi görünür (Ritter hastalığı). Nikolsky belirtisi pozitif: Cildi bastırınca soyulur. 'Eksfo' = 'Exfoliate' = Soy!"
     },
     {
       "id": "mp-016",
@@ -214,7 +229,8 @@
         "E) S. hominis"
       ],
       "correct_answer": "C) S. epidermidis (KSH/Shunt enfeksiyonu)",
-      "explanation": "PROFESÖR NOTU: S. epidermidis, koagülaz negatif stafilokoklar arasında en sık patojen olanıdır. Biyofilm oluşturma kapasitesi sayesinde protez, kateter ve ventriküloperitoneal (VP) şant gibi yabancı cisimlere yapışır. Yenidoğanlarda VP şant enfeksiyonu ve buna bağlı menenjit en tipik klinik tablodur. Ayrıca protez kapak endokarditi ve kateter enfeksiyonlarında da birincil etkendir."
+      "explanation": "PROFESÖR NOTU: S. epidermidis, koagülaz negatif stafilokoklar arasında en sık patojen olanıdır. Biyofilm oluşturma kapasitesi sayesinde protez, kateter ve ventriküloperitoneal (VP) şant gibi yabancı cisimlere yapışır. Yenidoğanlarda VP şant enfeksiyonu ve buna bağlı menenjit en tipik klinik tablodur. Ayrıca protez kapak endokarditi ve kateter enfeksiyonlarında da birincil etkendir.",
+      "story_hint": "💡 HİKAYE: S. epidermidis, hastane malzemelerine yapışan 'yapışkan' bir bakteri. VP şantlara, kateterlere, protezlere biyofilm yaparak tutunur — sanki yabancı cisimlere aşık olmuş. Epi-dermidis = Epi (üzerine yapışan) + cihaz. Yenidoğanlarda şant enfeksiyonunun bir numaralı suçlusu."
     },
     {
       "id": "mp-017",
@@ -227,7 +243,8 @@
         "E) S. lugdunensis"
       ],
       "correct_answer": "D) S. saprophyticus",
-      "explanation": "KRİTİK BİLGİ: S. saprophyticus, genç cinsel aktif kadınlarda komplike olmayan üriner sistem enfeksiyonlarının (özellikle sistit) ikinci en sık etkenidir (E. coli'den sonra). 'Balayı sistiti' olarak da bilinir. Novobiyosine dirençlidir; bu özellik onu diğer KNS'lerden ayırır. Mnemonic: Sapro = Sap gibi genç kadınları hedef alır + Novobiyosin direnci aklında kalsın."
+      "explanation": "KRİTİK BİLGİ: S. saprophyticus, genç cinsel aktif kadınlarda komplike olmayan üriner sistem enfeksiyonlarının (özellikle sistit) ikinci en sık etkenidir (E. coli'den sonra). 'Balayı sistiti' olarak da bilinir. Novobiyosine dirençlidir; bu özellik onu diğer KNS'lerden ayırır. Mnemonic: Sapro = Sap gibi genç kadınları hedef alır + Novobiyosin direnci aklında kalsın.",
+      "story_hint": "💡 HİKAYE: S. saprophyticus, genç kadınların 'balayı düşmanı'dır. Cinsel aktivite sonrası idrar yolunu istila eder — E. coli'den sonra en sık ÜYE etkeni. Novobiyosine dirençli tek KNS! Sapro = 'Sap gibi genç' kadınları hedef alır + 'Novo'biyosine 'No' der."
     },
     {
       "id": "mp-018",
@@ -240,7 +257,8 @@
         "E) S. lugdunensis"
       ],
       "correct_answer": "C) S. saprophyticus",
-      "explanation": "HOCANIN ÖZETİ: Stafilokokların tanımlanmasında antibiyotik duyarlılık testleri önemli yer tutar. S. aureus koagülaz pozitiftir. KNS'ler arasında ayrım yapmak için novobiyosin kullanılır: S. saprophyticus novobiyosine dirençli tek KNS'dir. Diğer KNS'ler (S. epidermidis dahil) novobiyosine duyarlıdır. Bu basit test laboratuvarda hızlı ayırıcı tanı sağlar."
+      "explanation": "HOCANIN ÖZETİ: Stafilokokların tanımlanmasında antibiyotik duyarlılık testleri önemli yer tutar. S. aureus koagülaz pozitiftir. KNS'ler arasında ayrım yapmak için novobiyosin kullanılır: S. saprophyticus novobiyosine dirençli tek KNS'dir. Diğer KNS'ler (S. epidermidis dahil) novobiyosine duyarlıdır. Bu basit test laboratuvarda hızlı ayırıcı tanı sağlar.",
+      "story_hint": "💡 HİKAYE: KNS'ler arasında novobiyosine tek direnen S. saprophyticus'tur. Diğer KNS'ler novobiyosine boyun eğerken, saprophyticus 'hayır!' der. Lab'da hızlı ayrım: Koagülaz pozitif = aureus, koagülaz negatif + novobiyosin dirençli = saprophyticus. Üç test, üç cevap!"
     },
     {
       "id": "mp-019",
@@ -253,7 +271,8 @@
         "E) Sadece anaerop ortamda duyarlıdır"
       ],
       "correct_answer": "A) Duyarlıdır (Basitrasin S)",
-      "explanation": "PROFESÖR NOTU: Streptokokların gruplandırılmasında basitrasin ve optochin testleri kilit rol oynar. S. pyogenes (Grup A) basitrasine DUYARLI, S. agalactiae (Grup B) basitrasine DİRENÇLİ. Alfa hemolitik streptokoklarda ise S. pneumoniae optochine DUYARLI, viridans streptokoklar optochine DİRENÇLİ. Mnemonic: A = Aşikar duyarlı (Basitrasin S), B = Basitrasin dirençli."
+      "explanation": "PROFESÖR NOTU: Streptokokların gruplandırılmasında basitrasin ve optochin testleri kilit rol oynar. S. pyogenes (Grup A) basitrasine DUYARLI, S. agalactiae (Grup B) basitrasine DİRENÇLİ. Alfa hemolitik streptokoklarda ise S. pneumoniae optochine DUYARLI, viridans streptokoklar optochine DİRENÇLİ. Mnemonic: A = Aşikar duyarlı (Basitrasin S), B = Basitrasin dirençli.",
+      "story_hint": "💡 HİKAYE: Grup A (S. pyogenes) basitrasine 'evet efendim' der (duyarlı), Grup B (S. agalactiae) ise 'hayır' der (dirençli). A = Açık (duyarlı), B = Blok (dirençli). Alfa hemolitiklerde ise optochin testi devreye girer: Pnömokok duyarlı, viridans dirençli."
     },
     {
       "id": "mp-020",
@@ -266,7 +285,8 @@
         "E) M proteini"
       ],
       "correct_answer": "E) M proteini",
-      "explanation": "KRİTİK BİLGİ: M proteini, S. pyogenes'in en önemli virülans faktörüdür. Hücre yüzeyindeki bu protein, kompleman regülatör proteinleri (Faktör H) bağlayarak C3b opsonizasyonunu engeller ve fagositozdan kaçışı sağlar. Ayrıca M proteini insan miyosin ve tropomiyozinine moleküler benzerlik (taklit) gösterir; bu nedenle Akut Romatizmal Ateş'in (ARA) otoimmün patogenezinde ana rolü oynar."
+      "explanation": "KRİTİK BİLGİ: M proteini, S. pyogenes'in en önemli virülans faktörüdür. Hücre yüzeyindeki bu protein, kompleman regülatör proteinleri (Faktör H) bağlayarak C3b opsonizasyonunu engeller ve fagositozdan kaçışı sağlar. Ayrıca M proteini insan miyosin ve tropomiyozinine moleküler benzerlik (taklit) gösterir; bu nedenle Akut Romatizmal Ateş'in (ARA) otoimmün patogenezinde ana rolü oynar.",
+      "story_hint": "💡 HİKAYE: M proteini, S. pyogenes'in 'süper kahramanı' ve aynı zamanda 'kötü ikizi'dir. Kompleman sistemini kandırarak fagositozdan kaçar. Ama insan miyozinine benzemesi yüzünden kalp kasına saldıran otoantikorlar üretilir — ARA (Akut Romatizmal Ateş) böyle başlar. M = Miyozin taklitçisi!"
     },
     {
       "id": "mp-021",
@@ -279,7 +299,8 @@
         "E) Hiyalüronidaz"
       ],
       "correct_answer": "B) Eritrojenik toksin (Pirojenik ekzotoksin)",
-      "explanation": "HOCANIN ÖZETİ: Kızıl (Scarlet fever), S. pyogenes'in eritrojenik toksin (Streptokokal pirojenik ekzotoksin - SpeA, SpeB, SpeC) üreten suşlarının neden olduğu bir hastalıktır. Bu toksin süperantijen özelliği taşır. Klinik: farenjit + yaygın eritematöz döküntü + çilek dili + perioral solukluk. Toksin geni bakteriyofaj ile aktarılır (lizojenik konversiyon)."
+      "explanation": "HOCANIN ÖZETİ: Kızıl (Scarlet fever), S. pyogenes'in eritrojenik toksin (Streptokokal pirojenik ekzotoksin - SpeA, SpeB, SpeC) üreten suşlarının neden olduğu bir hastalıktır. Bu toksin süperantijen özelliği taşır. Klinik: farenjit + yaygın eritematöz döküntü + çilek dili + perioral solukluk. Toksin geni bakteriyofaj ile aktarılır (lizojenik konversiyon).",
+      "story_hint": "💡 HİKAYE: Eritrojenik toksin, S. pyogenes'in 'boyacı' toksinidir — cildi kızıla boyar! Bir süperantijen olarak T hücrelerini çılgına çevirir. Çilek dili + kızıl döküntü + perioral solukluk = kızıl hastalığı tablosu. Toksin geni fajla gelir: Bakteri virüsten 'boya tarifi' almış!"
     },
     {
       "id": "mp-022",
@@ -292,7 +313,8 @@
         "E) Streptokokal menenjit"
       ],
       "correct_answer": "D) Streptokokal farenjit (Deri enfeksiyonunda yükselmez)",
-      "explanation": "KRİTİK BİLGİ: ASO titresi, S. pyogenes farenjiti sonrası yükselir ve ARA (Akut Romatizmal Ateş) tanısını destekler. Ancak deri enfeksiyonlarında (impetigo, erizipel) ASO titresi yükselmez; bunun nedeni deri lipidlerinin Streptolizin O'yu inhibe etmesidir. Deri enfeksiyonu sonrası gelişen APSGN (Post-streptokokal glomerülonefrit) tanısında ise Anti-DNaz B testi kullanılır."
+      "explanation": "KRİTİK BİLGİ: ASO titresi, S. pyogenes farenjiti sonrası yükselir ve ARA (Akut Romatizmal Ateş) tanısını destekler. Ancak deri enfeksiyonlarında (impetigo, erizipel) ASO titresi yükselmez; bunun nedeni deri lipidlerinin Streptolizin O'yu inhibe etmesidir. Deri enfeksiyonu sonrası gelişen APSGN (Post-streptokokal glomerülonefrit) tanısında ise Anti-DNaz B testi kullanılır.",
+      "story_hint": "💡 HİKAYE: ASO titresi sadece farenjit sonrası yükselir — deri enfeksiyonlarında yükselmez! Deri lipidleri Streptolizin O'yu nötralize eder, sanki deri 'kalkanı' ASO'yu engeller. Deri enfeksiyonu sonrası APSGN şüphesinde Anti-DNaz B testini kullan. Farenjit = ASO, Deri = Anti-DNaz B!"
     },
     {
       "id": "mp-023",
@@ -305,7 +327,8 @@
         "E) S. agalactiae"
       ],
       "correct_answer": "E) S. agalactiae",
-      "explanation": "PROFESÖR NOTU: S. agalactiae (Grup B Streptokok - GBS), yenidoğan döneminde en önemli sepsis ve menenjit etkenidir. Annelerin yaklaşık %25'inin vajinal florasında bulunur. Doğum sırasında bebeğe bulaşır. Önlem: 35-37. gebelik haftasında GBS taraması yapılır; pozitif annelere doğum sırasında intrapartum penisilin profilaksisi uygulanır."
+      "explanation": "PROFESÖR NOTU: S. agalactiae (Grup B Streptokok - GBS), yenidoğan döneminde en önemli sepsis ve menenjit etkenidir. Annelerin yaklaşık %25'inin vajinal florasında bulunur. Doğum sırasında bebeğe bulaşır. Önlem: 35-37. gebelik haftasında GBS taraması yapılır; pozitif annelere doğum sırasında intrapartum penisilin profilaksisi uygulanır.",
+      "story_hint": "💡 HİKAYE: S. agalactiae (Grup B Streptokok), annelerin %25'inin vajinasında gizlenen sessiz bir tehlike. Doğum sırasında bebeğe atlayarak neonatal sepsis ve menenjit yapar. 35-37. haftada GBS taraması yapılmazsa bebek risk altında! A-galactiae = A-ğlayan bebeklerin düşmanı."
     },
     {
       "id": "mp-024",
@@ -318,7 +341,8 @@
         "E) Enterococcus faecium"
       ],
       "correct_answer": "A) S. agalactiae",
-      "explanation": "HOCANIN ÖZETİ: CAMP testi, S. agalactiae (Grup B) tanısında kullanılır. Bu testte S. agalactiae'nin CAMP faktörü, S. aureus'un beta-hemolizini ile sinerjistik etki göstererek koyun kanlı agarda 'ok başı' şeklinde genişlemiş hemoliz zonu oluşturur. S. agalactiae: CAMP pozitif, hipürat hidrolizi pozitif, basitrasine dirençli. Mnemonic: B grubu = B-aşka test = CAMP."
+      "explanation": "HOCANIN ÖZETİ: CAMP testi, S. agalactiae (Grup B) tanısında kullanılır. Bu testte S. agalactiae'nin CAMP faktörü, S. aureus'un beta-hemolizini ile sinerjistik etki göstererek koyun kanlı agarda 'ok başı' şeklinde genişlemiş hemoliz zonu oluşturur. S. agalactiae: CAMP pozitif, hipürat hidrolizi pozitif, basitrasine dirençli. Mnemonic: B grubu = B-aşka test = CAMP.",
+      "story_hint": "💡 HİKAYE: CAMP testi, S. agalactiae'nin imza testidir. S. aureus'un beta-hemolizini ile birleşince 'ok başı' şeklinde hemoliz oluşur — iki bakteri birlikte dans eder! CAMP = C grubu değil, ama B grubu Streptokokun testi. B grubu = CAMP pozitif + hipürat pozitif + basitrasine dirençli."
     },
     {
       "id": "mp-025",
@@ -331,7 +355,8 @@
         "E) Sadece kanlı agarda duyarlıdır"
       ],
       "correct_answer": "C) Duyarlıdır",
-      "explanation": "KRİTİK BİLGİ: S. pneumoniae (Pnömokok) alfa hemolitik bir streptokoktur. Viridans streptokoklardan ayrımında iki test kullanılır: (1) Optochin duyarlılığı - Pnömokok DUYARLI, Viridans DİRENÇLİ. (2) Safra çözünürlüğü - Pnömokok safrada ERİR, Viridans ERİMEZ. Mnemonic: Pnömokok OPtochine 'OPen' (açık/duyarlı). Viridans ise optochine 'kapalı' (dirençli)."
+      "explanation": "KRİTİK BİLGİ: S. pneumoniae (Pnömokok) alfa hemolitik bir streptokoktur. Viridans streptokoklardan ayrımında iki test kullanılır: (1) Optochin duyarlılığı - Pnömokok DUYARLI, Viridans DİRENÇLİ. (2) Safra çözünürlüğü - Pnömokok safrada ERİR, Viridans ERİMEZ. Mnemonic: Pnömokok OPtochine 'OPen' (açık/duyarlı). Viridans ise optochine 'kapalı' (dirençli).",
+      "story_hint": "💡 HİKAYE: Pnömokok optochine 'OPen' (açık/duyarlı) der, viridans ise 'kapalı' (dirençli). Safra çözünürlüğü de aynı mantık: Pnömokok safrada erir, viridans erimez. İki test, bir ayrım: Optochin + Safra = Pnömokok mu, Viridans mı?"
     },
     {
       "id": "mp-026",
@@ -344,7 +369,8 @@
         "E) Kapsül varlığını"
       ],
       "correct_answer": "E) Kapsül varlığını",
-      "explanation": "PROFESÖR NOTU: Quellung reaksiyonu, kapsüllü bakterilerin (özellikle pnömokok) tanımlanmasında kullanılan bir yöntemdir. Spesifik antikapsüler antiserum eklenen bakterilerde kapsül şişmiş (genişlemiş) gibi görünür. Bu görüntü aslında antikor-kapsül birleşiminin ışığı farklı kırmasından kaynaklanır. Quellung Almanca'da 'şişme' demektir. Pnömokokların serotiplendirilmesinde de bu yöntem kullanılır (90'dan fazla serotip)."
+      "explanation": "PROFESÖR NOTU: Quellung reaksiyonu, kapsüllü bakterilerin (özellikle pnömokok) tanımlanmasında kullanılan bir yöntemdir. Spesifik antikapsüler antiserum eklenen bakterilerde kapsül şişmiş (genişlemiş) gibi görünür. Bu görüntü aslında antikor-kapsül birleşiminin ışığı farklı kırmasından kaynaklanır. Quellung Almanca'da 'şişme' demektir. Pnömokokların serotiplendirilmesinde de bu yöntem kullanılır (90'dan fazla serotip).",
+      "story_hint": "💡 HİKAYE: Quellung reaksiyonu, kapsüle antiserum eklendiğinde kapsülün 'şişmiş' gibi görünmesidir. Almanca 'quellung' = şişme. Sanki pnömokokun kapsülü bir balon gibi şişiyor! 90'dan fazla serotip var — her balonun farklı rengi gibi düşün."
     },
     {
       "id": "mp-027",
@@ -357,7 +383,8 @@
         "E) S. anginosus ve S. constellatus"
       ],
       "correct_answer": "B) S. mutans ve S. sanguis",
-      "explanation": "HOCANIN ÖZETİ: Viridans streptokoklar oral floranın önemli üyeleridir. S. mutans diş çürüklerinin (dental karies) en sık etkenidir; diş yüzeyinde biyofilm ve glukan oluşturur. S. sanguis (sanguinis) ve diğer viridans türleri ise subakut bakteriyel endokarditin (SBE) en sık etkenidir. Diş çekimi sonrası kan dolaşımına girerek hasarlı kapak üzerinde vejetasyon oluştururlar. Not: S. bovis = kolon kanseri ilişkisi."
+      "explanation": "HOCANIN ÖZETİ: Viridans streptokoklar oral floranın önemli üyeleridir. S. mutans diş çürüklerinin (dental karies) en sık etkenidir; diş yüzeyinde biyofilm ve glukan oluşturur. S. sanguis (sanguinis) ve diğer viridans türleri ise subakut bakteriyel endokarditin (SBE) en sık etkenidir. Diş çekimi sonrası kan dolaşımına girerek hasarlı kapak üzerinde vejetasyon oluştururlar. Not: S. bovis = kolon kanseri ilişkisi.",
+      "story_hint": "💡 HİKAYE: S. mutans diş çürüklerinin baş suçlusu — diş yüzeyinde yapışkan glukan biyofilmi oluşturur. S. sanguis ise kana karışarak hasarlı kalp kapaklarına yerleşir ve subakut endokardit yapar. Mutans = Mutfakta (ağızda) çürüten, Sanguis = Kan (sanguine) yoluyla kalbe giden."
     },
     {
       "id": "mp-028",
@@ -370,7 +397,8 @@
         "E) S. mutans"
       ],
       "correct_answer": "D) Enterococcus (E. faecalis/faecium)",
-      "explanation": "KRİTİK BİLGİ: Enterokoklar, streptokoklardan ayrılan son derece dayanıklı bakterilerdir. Tanıda kullanılan üç temel özellik: (1) %6.5 NaCl'de üreme, (2) %40 safrada üreme ve eskülin hidrolizi (safralı eskülin testi pozitif), (3) PYR testi pozitif. E. faecalis en sık tür olup nozokomiyal enfeksiyonlarda önemlidir. VRE (Vankomisine dirençli enterokok) sorunu giderek artmaktadır."
+      "explanation": "KRİTİK BİLGİ: Enterokoklar, streptokoklardan ayrılan son derece dayanıklı bakterilerdir. Tanıda kullanılan üç temel özellik: (1) %6.5 NaCl'de üreme, (2) %40 safrada üreme ve eskülin hidrolizi (safralı eskülin testi pozitif), (3) PYR testi pozitif. E. faecalis en sık tür olup nozokomiyal enfeksiyonlarda önemlidir. VRE (Vankomisine dirençli enterokok) sorunu giderek artmaktadır.",
+      "story_hint": "💡 HİKAYE: Enterokoklar mikrobiyolojinin 'hayatta kalma uzmanları'dır. %6.5 tuz, %40 safra, yüksek ısı — hiçbir şey onları durduramaz! PYR testi pozitif, safralı eskülin pozitif. VRE (Vankomisine dirençli) formları ise antibiyotik dünyasının kabusu. Entero-kok = Bağırsaktan gelen dayanıklı kok."
     },
     {
       "id": "mp-029",
@@ -383,7 +411,8 @@
         "E) Kriyoprezervasyon"
       ],
       "correct_answer": "A) Soğukta zenginleştirme (Cold enrichment)",
-      "explanation": "PROFESÖR NOTU: Listeria monocytogenes, +4 derecede (buzdolabı ısısı) üreme kapasitesine sahip nadir patojenlerden biridir. Bu özellik 'soğukta zenginleştirme' (cold enrichment) olarak bilinir ve hem tanıda hem de epidemiyolojide önemlidir. Buzdolabında saklanan süt, peynir ve hazır yiyeceklerden bulaşır. Gebelerde, yenidoğanlarda ve immünsüprese hastalarda menenjit ve sepsis yapar."
+      "explanation": "PROFESÖR NOTU: Listeria monocytogenes, +4 derecede (buzdolabı ısısı) üreme kapasitesine sahip nadir patojenlerden biridir. Bu özellik 'soğukta zenginleştirme' (cold enrichment) olarak bilinir ve hem tanıda hem de epidemiyolojide önemlidir. Buzdolabında saklanan süt, peynir ve hazır yiyeceklerden bulaşır. Gebelerde, yenidoğanlarda ve immünsüprese hastalarda menenjit ve sepsis yapar.",
+      "story_hint": "💡 HİKAYE: Listeria buzdolabında bile ürer — soğukta zenginleştirme (cold enrichment) yapan nadir patojen! Buzdolabındaki peynir ve sütten bulaşır. Gebelerde ve yenidoğanlarda menenjit yapar. Listeria = List-e dikkat: Buzdolabı seni korumaz!"
     },
     {
       "id": "mp-030",
@@ -396,7 +425,8 @@
         "E) Hemolysin"
       ],
       "correct_answer": "C) ActA proteini",
-      "explanation": "KRİTİK BİLGİ: Listeria monocytogenes, fakültatif hücre içi bir patojendir. Hücreye Internalin A/B ile girer, fagozomdan Listeriolizin O ile kaçar. Sitoplazmada ActA proteini aracılığıyla konak hücrenin aktin filamentlerini polimerize ederek 'aktin roketi' oluşturur. Bu roket bakteriyi komşu hücreye iter ve böylece hücre dışına çıkmadan yayılır. Aynı mekanizmayı Shigella (IcsA proteini ile) de kullanır."
+      "explanation": "KRİTİK BİLGİ: Listeria monocytogenes, fakültatif hücre içi bir patojendir. Hücreye Internalin A/B ile girer, fagozomdan Listeriolizin O ile kaçar. Sitoplazmada ActA proteini aracılığıyla konak hücrenin aktin filamentlerini polimerize ederek 'aktin roketi' oluşturur. Bu roket bakteriyi komşu hücreye iter ve böylece hücre dışına çıkmadan yayılır. Aynı mekanizmayı Shigella (IcsA proteini ile) de kullanır.",
+      "story_hint": "💡 HİKAYE: ActA proteini, Listeria'nın 'roket motoru'dur. Konak hücrenin aktinlerini kullanarak bir kuyruk oluşturur ve komşu hücreye fırlatılır — hücre dışına çıkmadan yayılır! Shigella'nın IcsA'sı da aynı numarayı yapar. ActA = Actin-Activated roketi."
     },
     {
       "id": "mp-031",
@@ -409,7 +439,8 @@
         "E) Sabouraud dekstroz agari"
       ],
       "correct_answer": "C) Löffler veya Telliüritli besiyeri",
-      "explanation": "HOCANIN ÖZETİ: C. diphtheriae tanısında iki özel besiyeri kullanılır: (1) Löffler koagüle serum besiyeri - bakteri burada hızla ürer ve metakromatik granüller (volutin/Babes-Ernst granülleri) belirgin hale gelir. (2) Potasyum tellüritli agar - difteri basili tellüriti indirger ve siyah-gri koloniler oluşturur. Telüritli agarda biyotip ayrımı da yapılabilir: Gravis, mitis, intermedius."
+      "explanation": "HOCANIN ÖZETİ: C. diphtheriae tanısında iki özel besiyeri kullanılır: (1) Löffler koagüle serum besiyeri - bakteri burada hızla ürer ve metakromatik granüller (volutin/Babes-Ernst granülleri) belirgin hale gelir. (2) Potasyum tellüritli agar - difteri basili tellüriti indirger ve siyah-gri koloniler oluşturur. Telüritli agarda biyotip ayrımı da yapılabilir: Gravis, mitis, intermedius.",
+      "story_hint": "💡 HİKAYE: C. diphtheriae için iki özel besiyeri vardır: Löffler (hızlı üreme + volutin granülleri) ve Tellüritli agar (siyah-gri koloniler). Tellüritli agarda biyotipler ayrılır: Gravis, mitis, intermedius. Löffler = Lüks otel (hızlı büyüme), Tellürit = Kara tahta (siyah koloniler)."
     },
     {
       "id": "mp-032",

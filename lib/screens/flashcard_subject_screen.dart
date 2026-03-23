@@ -42,7 +42,7 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
   }
 
   List<SubjectModule> get _filteredModules =>
-      SubjectRegistry.byCategory(_category);
+      SubjectRegistry.byCategory(_category).where((m) => m.assetPaths.isNotEmpty).toList();
 
   int get _categoryTotal => _filteredModules.fold(
       0, (sum, m) => sum + (_cardCounts[m.id] ?? 0));

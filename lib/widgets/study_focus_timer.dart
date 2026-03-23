@@ -4,7 +4,6 @@ import '../services/focus_service.dart';
 import '../screens/focus_screen.dart';
 import '../theme/app_theme.dart';
 import '../utils/transitions.dart';
-import 'dart:ui';
 
 class StudyFocusTimer extends StatelessWidget {
   const StudyFocusTimer({super.key});
@@ -27,7 +26,8 @@ class StudyFocusTimer extends StatelessWidget {
             decoration: BoxDecoration(
               color: AppTheme.cyan.withValues(alpha: 0.15),
               borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.3), width: 1),
+              border: Border.all(
+                  color: AppTheme.cyan.withValues(alpha: 0.3), width: 1),
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,
@@ -44,8 +44,7 @@ class StudyFocusTimer extends StatelessWidget {
                   ),
                   const SizedBox(width: 6),
                 ],
-                if (focus.isAudioPlaying)
-                  const _PulseNoteIcon(),
+                if (focus.isAudioPlaying) const _PulseNoteIcon(),
               ],
             ),
           ),
@@ -62,7 +61,8 @@ class _PulseNoteIcon extends StatefulWidget {
   State<_PulseNoteIcon> createState() => _PulseNoteIconState();
 }
 
-class _PulseNoteIconState extends State<_PulseNoteIcon> with SingleTickerProviderStateMixin {
+class _PulseNoteIconState extends State<_PulseNoteIcon>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
 
   @override
@@ -89,7 +89,8 @@ class _PulseNoteIconState extends State<_PulseNoteIcon> with SingleTickerProvide
           scale: 0.8 + (_controller.value * 0.3),
           child: Opacity(
             opacity: 0.6 + (_controller.value * 0.4),
-            child: const Icon(Icons.music_note_rounded, color: AppTheme.cyan, size: 14),
+            child: const Icon(Icons.music_note_rounded,
+                color: AppTheme.cyan, size: 14),
           ),
         );
       },

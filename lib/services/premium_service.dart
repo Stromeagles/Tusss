@@ -1,7 +1,8 @@
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 /// Freemium iş modeli servisi.
-/// Ücretsiz kullanıcılar günlük 50 flashcard + 50 soru limiti ile sınırlıdır.
+/// Ücretsiz kullanıcılar günlük 20 flashcard + 10 soru limiti ile sınırlıdır.
 /// Premium kullanıcılar için tüm limitler kaldırılır.
 class PremiumService {
   // Singleton
@@ -9,8 +10,14 @@ class PremiumService {
   factory PremiumService() => _instance;
   PremiumService._internal();
 
-  static const int dailyFreeFlashcardLimit = 50;
-  static const int dailyFreeCaseLimit = 50;
+  static const int dailyFreeFlashcardLimit = 20;
+  static const int dailyFreeCaseLimit = 20;
+
+  /// Google Play inceleme, admin ve test hesaplari — her zaman premium
+  static const Set<String> _reviewerEmails = {
+    'reviewer@tusasistani.app',
+    'ceylannurettin@outlook.com',
+  };
 
   static const String _keyIsPremium = 'is_premium';
   static const String _keyTodayFlashcardCount = 'today_flashcard_count';
@@ -25,6 +32,10 @@ class PremiumService {
   // ── Premium Durum ─────────────────────────────────────────────────────────
 
   Future<bool> isPremium() async {
+    // Reviewer hesaplari her zaman premium
+    final email = FirebaseAuth.instance.currentUser?.email?.toLowerCase();
+    if (email != null && _reviewerEmails.contains(email)) return true;
+
     final prefs = await SharedPreferences.getInstance();
     return prefs.getBool(_keyIsPremium) ?? false;
   }

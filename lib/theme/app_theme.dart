@@ -3,10 +3,10 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   // ── Ortak Renkler — Deep Space Palette ───────────────────────────────────
-  static const Color cyan       = Color(0xFFF78166); // Coral / ana aksan
-  static const Color cyanDark   = Color(0xFFCF5C47); // Koyu coral
-  static const Color cyanGlow   = Color(0x22F78166); // Coral glow
-  static const Color neonPink   = Color(0xFFD2A8FF); // Soft purple
+  static const Color cyan       = Color(0xFF00E5FF); // Vibrant Cyan / ana aksan
+  static const Color cyanDark   = Color(0xFF00B8D4); // Koyu cyan
+  static const Color cyanGlow   = Color(0x2200E5FF); // Cyan glow
+  static const Color neonPink   = Color(0xFFE0B0FF); // Soft lavender
   static const Color neonPurple = Color(0xFFA371F7); // Violet
   static const Color neonGold   = Color(0xFFE3B341); // Amber
   static const Color neonPinkGlow = Color(0x22D2A8FF);
@@ -49,7 +49,7 @@ class AppTheme {
 
   // ── Gradyanlar — Deep Space ───────────────────────────────────────────────
   static const LinearGradient cyanGradient = LinearGradient(
-    colors: [Color(0xFFF78166), Color(0xFFA371F7)],
+    colors: [Color(0xFF00E5FF), Color(0xFFA371F7)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
@@ -95,9 +95,9 @@ class AppTheme {
       borderRadius: BorderRadius.circular(radius),
       border: Border.all(
         color: isActive && glowColor != null
-            ? glowColor.withValues(alpha: 0.55)
-            : Colors.white.withValues(alpha: 0.12),
-        width: isActive ? 1.2 : 0.8,
+            ? glowColor.withValues(alpha: 0.6)
+            : Colors.white.withValues(alpha: 0.1),
+        width: isActive ? 1.5 : 1.0,
       ),
       boxShadow: [
         // Layered shadow: yumuşak dış gölge + keskin iç derinlik

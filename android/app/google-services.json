@@ -12,7 +12,12 @@
           "package_name": "com.stromeagles.tusasistani"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "876041819479-1p9quhjbkv7edrgqfrqbp0tgiah5c3a2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyD-cH6EL52vJzaSX2pxxBSf894WkkYag38"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876041819479-1p9quhjbkv7edrgqfrqbp0tgiah5c3a2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "876041819479-bsgok87hm8amot5sitjjho7vmtehdjlk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.stromeagles.tusasistani"
+              }
+            }
+          ]
         }
       }
     }

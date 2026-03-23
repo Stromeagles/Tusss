@@ -17,6 +17,7 @@ import '../services/premium_service.dart';
 import '../widgets/paywall_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../widgets/ai_chat_sheet.dart';
+import '../widgets/add_to_collection_sheet.dart';
 
 enum FlashcardMode { all, dueOnly, pocketOnly, newOnly, learnedOnly, failedOnly, criticalOnly }
 
@@ -285,6 +286,22 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                   ),
                 ),
               ),
+            ),
+          // Klasöre Ekle butonu
+          if (!_loading && _cards.isNotEmpty && _currentIndex < _cards.length)
+            IconButton(
+              icon: const Icon(Icons.folder_outlined, color: AppTheme.neonPurple, size: 22),
+              tooltip: 'Klasöre Ekle',
+              onPressed: () {
+                final card = _cards[_currentIndex];
+                AddToCollectionSheet.show(
+                  context,
+                  cardId: card.id,
+                  cardTitle: card.question.length > 50
+                      ? '${card.question.substring(0, 50)}...'
+                      : card.question,
+                );
+              },
             ),
           // AI'ya Sor butonu
           if (!_loading && _cards.isNotEmpty && _currentIndex < _cards.length)
@@ -1041,8 +1058,10 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
                 height: 1.55),
           ),
           const Spacer(),
-          // AI Mnemonic bölümü
-          if (_mnemonicLoading)
+          // Hikaye / Mnemonic bölümü
+          if (widget.card.storyHint != null && widget.card.storyHint!.isNotEmpty)
+            _MnemonicBox(text: widget.card.storyHint!, isPremium: true)
+          else if (_mnemonicLoading)
             const _ThinkingIndicator()
           else if (_mnemonic != null)
             _MnemonicBox(text: _mnemonic!)
@@ -1351,41 +1370,33 @@ class _ThinkingIndicator extends StatelessWidget {
 
 class _MnemonicBox extends StatelessWidget {
   final String text;
-  const _MnemonicBox({required this.text});
+  final bool isPremium;
+  const _MnemonicBox({required this.text, this.isPremium = false});
 
   @override
   Widget build(BuildContext context) {
+    final color = isPremium ? AppTheme.neonGold : AppTheme.neonPurple;
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            AppTheme.neonPurple.withValues(alpha: 0.12),
-            AppTheme.neonPurple.withValues(alpha: 0.05),
-          ],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
+        color: color.withValues(alpha: 0.12),
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(
-            color: AppTheme.neonPurple.withValues(alpha: 0.35), width: 1.2),
+        border: Border.all(color: color.withValues(alpha: 0.35), width: 1.2),
         boxShadow: [
-          BoxShadow(
-              color: AppTheme.neonPurple.withValues(alpha: 0.12),
-              blurRadius: 12),
+          BoxShadow(color: color.withValues(alpha: 0.12), blurRadius: 12),
         ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(children: [
-            const Text('🧠', style: TextStyle(fontSize: 12)),
+            Text(isPremium ? '🎨' : '🧠', style: const TextStyle(fontSize: 12)),
             const SizedBox(width: 6),
             Text(
-              'AI İPUCU',
+              isPremium ? 'ÖZEL HİKAYE' : 'AI İPUCU',
               style: TextStyle(
-                color: AppTheme.neonPurple.withValues(alpha: 0.80),
+                color: color.withValues(alpha: 0.80),
                 fontSize: 10,
                 fontWeight: FontWeight.w700,
                 letterSpacing: 1.0,

@@ -10,7 +10,8 @@
       {
         "id": "fc-gnz-100",
         "question": "Brusellozda görülen tipik ateş karakteri nedir?",
-        "answer": "Undulan (dalgalı) ateş."
+        "answer": "Undulan (dalgalı) ateş.",
+        "story_hint": "💡 HİKAYE: Brucella, dalgalanan bir deniz gibi ateş yapar — undulan ateş. Hasta bir gün iyileşir, ertesi gün yanar. Pastörize süt içmeyen peynirci, bu dalganın içine düşer."
       }
     ],
     "tus_spots": [
@@ -29,7 +30,8 @@
       {
         "id": "fc-gnz-110",
         "question": "Legioner hastalığında hangi tipik elektrolit bozukluğu görülür?",
-        "answer": "Hiponatremi."
+        "answer": "Hiponatremi.",
+        "story_hint": "💡 HİKAYE: Legionella, klima ve soğutma kulelerinin gizli sakinidir. Hiponatremi yapması onu diğer pnömonilerden ayırır — tıpkı otelin klimasından gelen gizli bir zehir gibi sodyumu düşürür."
       }
     ],
     "tus_spots": [

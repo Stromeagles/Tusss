@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -74,7 +73,7 @@ class _SpotsScreenState extends State<SpotsScreen> {
       }
     }
 
-    spots.shuffle(Random());
+    // spots.shuffle(Random()); // Rastgelelik kaldirildi — hile onleme icin sabit sira
 
     if (mounted) {
       setState(() {
@@ -103,6 +102,7 @@ class _SpotsScreenState extends State<SpotsScreen> {
     }
   }
 
+  /* // Karistir butonu kaldirildi
   void _shuffle() {
     setState(() {
       _spots.shuffle(Random());
@@ -112,6 +112,7 @@ class _SpotsScreenState extends State<SpotsScreen> {
       _pageController.jumpToPage(0);
     }
   }
+  */
 
   @override
   Widget build(BuildContext context) {
@@ -142,11 +143,13 @@ class _SpotsScreenState extends State<SpotsScreen> {
                 ),
               ),
             ),
+          /*
           IconButton(
             icon: Icon(Icons.shuffle_rounded, color: AppTheme.cyan, size: 22),
             tooltip: 'Karıştır',
             onPressed: _shuffle,
           ),
+          */
         ],
       ),
       body: _loading

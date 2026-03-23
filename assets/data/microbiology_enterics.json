@@ -10,12 +10,14 @@
       {
         "id": "fc-ent-100",
         "question": "Salmonella Typhi taşıyıcılığında bakteri nerede kolonize olur?",
-        "answer": "Safra kesesi."
+        "answer": "Safra kesesi.",
+        "story_hint": "💡 HİKAYE: Salmonella Typhi, safra kesesini kalıcı evi olarak seçer. Taşıyıcı kişi farkında olmadan her yemek pişirdiğinde bakteriyi yayar — safra kesesi onun gizli sığınağıdır."
       },
       {
         "id": "fc-ent-101",
         "question": "Orak hücreli anemili hastalarda en sık osteomiyelit etkeni nedir?",
-        "answer": "Salmonella."
+        "answer": "Salmonella.",
+        "story_hint": "💡 HİKAYE: Orak hücreli anemi hastasının kemikleri, Salmonella'nın favori mekanıdır. Tıpkı orak şeklindeki kırmızı hücreler gibi Salmonella da kemiğe 'orakla biçer gibi' yerleşir ve osteomiyelit yapar."
       }
     ],
     "tus_spots": [
@@ -30,7 +32,7 @@
           "Bruselloz",
           "Sıtma",
           "Pnömoni",
-          "E) Hiçbiri"
+          "E) Integronlar"
         ],
         "correct_answer": "Tifo",
         "explanation": "Uzamış ateş, rölatif bradikardi ve taş roze lekeleri Tifo kliniğidir.",
@@ -49,7 +51,8 @@
       {
         "id": "fc-ent-110",
         "question": "Shigella türlerinin enfeksiyon dozu nasıldır?",
-        "answer": "Çok düşüktür (10-100 bakteri yeterlidir)."
+        "answer": "Çok düşüktür (10-100 bakteri yeterlidir).",
+        "story_hint": "💡 HİKAYE: Shigella, mikroplar dünyasının 'ninja'sıdır — sadece 10-100 bakteri yeterli! Bu kadar az dozla hastalık yapan başka enterik bakteri yoktur. Bir avuç ninja, koca bir kaleyi düşürür."
       }
     ],
     "tus_spots": [

@@ -15,7 +15,8 @@
         "tags": [
           "Beta Laktam",
           "PBP"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Beta-laktam antibiyotikler, PBP kapısının anahtarını çalar ve içeri girer. Transpeptidasyonu (çapraz bağ) durdurur — duvar tuğlaları birbirine yapışamaz ve bakteri evi çöker."
       },
       {
         "id": "fc-micro-101",
@@ -26,7 +27,8 @@
           "MRSA",
           "mecA",
           "PBP2a"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: MRSA, mecA geni sayesinde PBP kapısının kilidini PBP2a'ya değiştirir. Beta-laktamların anahtarı artık uymaz — tıpkı eve yeni kilit taktıran hırsız gibi polisten kaçar."
       },
       {
         "id": "fc-micro-102",
@@ -36,7 +38,8 @@
         "tags": [
           "Vankomisin",
           "D-ala-D-ala"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Vankomisin, D-ala-D-ala zincirine yapışan dev bir ağır top mermisidir. Ama gram negatiflerin dış membranı kalın bir kale suruna benzer — dev mermi bu surdan geçemez."
       }
     ],
     "tus_spots": [
@@ -63,7 +66,8 @@
           "Aminoglikozid",
           "30S",
           "Anaerob"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Aminoglikozidler 30S ribozomuna geri dönüşümsüz yapışır ve inisiasyonu bozar. Ama hücre içine girmek için oksijene ihtiyaçları var — anaerob karanlık mağaraya giremezler."
       },
       {
         "id": "fc-micro-111",
@@ -73,7 +77,8 @@
         "tags": [
           "Kloramfenikol",
           "Gri Bebek"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Kloramfenikol, kemik iliğini 'aplastik anemi' ile çökerttikten sonra, yenidoğanın karaciğerini de işleyemez hale getirir. Bebek griyleşir — adı 'Gri Bebek Sendromu'dur."
       },
       {
         "id": "fc-micro-112",
@@ -82,7 +87,8 @@
         "difficulty": "easy",
         "tags": [
           "Tetrasiklin"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Tetrasiklin, gelişmekte olan kemik ve dişlere yapışıp sarı-kahverengi leke bırakır. Gebe ve çocuklarda kullanılmaz — tıpkı taze betona ayak basan birinin iz bırakması gibi kalıcıdır."
       }
     ],
     "tus_spots": [
@@ -108,7 +114,8 @@
         "tags": [
           "Transformasyon",
           "DNaz"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Transformasyonda bakteri, yerdeki çıplak DNA'yı alışveriş torbasından yiyecek toplar gibi alır. DNaz enzimi gelince torbadaki her şeyi parçalar — artık toplayacak bir şey kalmaz."
       },
       {
         "id": "fc-micro-151",
@@ -118,7 +125,8 @@
         "tags": [
           "Konjugasyon",
           "F-pilus"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Konjugasyonda F+ bakteri, F- bakteriye seks pilusu adlı bir köprü uzatır ve plazmidini hediye eder. Tıpkı iki evin arasına kurulmuş bir asma köprüden paket taşımak gibi."
       }
     ],
     "tus_spots": [

@@ -15,7 +15,8 @@
         "tags": [
           "Mycoplasma",
           "Sterol"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Mycoplasma, zırhını (hücre duvarını) çıkarmış cesur bir savaşçıdır; korunmak için vücudundan çaldığı kolesterol mantosunu giyer. Bu yüzden beta-laktam mermileri ona işlemez — hedef duvar zaten yoktur!"
       },
       {
         "id": "fc-micro-851",
@@ -25,7 +26,8 @@
         "tags": [
           "M. pneumoniae",
           "Soğuk Aglütinin"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: M. pneumoniae kış ortasında akciğere yerleşen sinsi bir misafirdir. Soğuk havada kırmızı kan hücreleri birbirine sarılıp kümelenir — bu 'soğuk aglütinin' ipucunu veren dondurucu bir el sıkışmadır."
       },
       {
         "id": "fc-micro-852",
@@ -35,7 +37,8 @@
         "tags": [
           "Ureaplasma",
           "Üreaz"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Ureaplasma adını aşkından almıştır: üre olmadan yaşayamaz! Üreaz bıçağıyla üreyi parçalayıp enerji kazanır ve genitoüriner sistemde sessizce kolonize olur — ismi zaten yol haritasıdır: Ure-a-plasma."
       }
     ],
     "tus_spots": [
@@ -60,7 +63,8 @@
         "tags": [
           "B. fragilis",
           "Anaerob"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Bacteroides fragilis karın boşluğunun yeraltı kralıdır — oksijenden nefret eder ama safranın acı deryasında rahatça yüzer. Diğer anaeroblar safradan kaçarken o direnir ve intraabdominal apselerin baş mimarı olur."
       },
       {
         "id": "fc-micro-901",
@@ -70,7 +74,8 @@
         "tags": [
           "Lemierre",
           "Fusobacterium"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Mono'nun öpücüğü boğazı harap ettikten sonra Fusobacterium fırsatçı bir korsan gibi jugular vene sızar. Damar içinde pıhtı oluşturup septik emboliler fırlatır — Lemierre Sendromu adlı bu korsan hikayesi, boğaz ağrısından sonra ateş ve boyun şişliği ile kendini ele verir."
       }
     ],
     "tus_spots": [
@@ -96,7 +101,8 @@
           "Lyme",
           "Borrelia",
           "Eritem"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Kene ısırığından sonra Borrelia, deride bir hedef tahtası çizer — ortası soluk, çevresi kırmızı yüzükler halinde genişleyen bu 'öküz gözü' deseni, Lyme hastalığının imza kartıdır. Sanki kene, 'Beni buraya ısırdılar!' diye harita bırakır."
       },
       {
         "id": "fc-micro-951",
@@ -106,7 +112,8 @@
         "tags": [
           "Leptospira",
           "Weil"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Leptospira, fare idrarıyla kirlenmiş sulardan vücuda giren ince bir sarmal casusdur. Ağır formunda üç organa saldırır: karaciğer sararır, damarlar kanar, böbrekler çöker — bu üçlü yıkıma Weil Hastalığı denir, adeta vücudun sel felaketidir."
       }
     ],
     "tus_spots": [

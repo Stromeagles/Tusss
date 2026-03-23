@@ -10,12 +10,14 @@
       {
         "id": "fc-vdna-100",
         "question": "Öpücük hastalığı (İnfeksiyöz Mononükleoz) etkeni nedir?",
-        "answer": "EBV (HHV-4)."
+        "answer": "EBV (HHV-4).",
+        "story_hint": "💡 HİKAYE: EBV (HHV-4), öpücükle bulaşan romantik bir virüstür. B lenfositlerinin CD21 kapısından girer ve Mononükleoz yapar — gençlerin 'öpücük hastalığı' olarak bilinir."
       },
       {
         "id": "fc-vdna-101",
         "question": "Temporal lob tutulumlu ensefalit yapan virüs hangisidir?",
-        "answer": "HSV-1."
+        "answer": "HSV-1.",
+        "story_hint": "💡 HİKAYE: HSV-1, temporal lobun yeminli düşmanıdır. Trigeminal ganglionda gizlenir, reaktive olunca beyne saldırır — MR'da temporal lobda hemoraji, ensefalitte ilk akla gelen virüs."
       }
     ],
     "tus_spots": [
@@ -34,7 +36,8 @@
       {
         "id": "fc-vdna-110",
         "question": "HBV replikasyonunda kullanılan özel enzim nedir?",
-        "answer": "Revers Transkriptaz."
+        "answer": "Revers Transkriptaz.",
+        "story_hint": "💡 HİKAYE: HBV, DNA virüsü olmasına rağmen 'casus' gibi revers transkriptaz kullanır. RNA ara ürününden DNA yapan bu enzim, onu retrovirüslere akraba yapar — ikiyüzlü bir ajan gibidir."
       }
     ],
     "tus_spots": [

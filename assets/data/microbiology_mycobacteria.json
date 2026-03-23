@@ -14,7 +14,8 @@
         "difficulty": "medium",
         "tags": [
           "Hücre Duvarı"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Mikolik asit, mikobakterinin mumlu zırhıdır. Bu zırh aside bile dayanır — boyama sırasında diğerleri soluklarken o kırmızı kalır. 'Aside dirençli basil' unvanını bu mumdan alır."
       },
       {
         "id": "fc-myco-3001",
@@ -23,7 +24,8 @@
         "difficulty": "hard",
         "tags": [
           "Kord Faktörü"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Kord Faktörü, TBC basillerini yılan gibi kıvrılan kordonlar halinde dizer. Lökositlerin yolunu keser — tıpkı yolun ortasına çekilen ip bariyeri gibi askerlerin geçişini engeller."
       },
       {
         "id": "fc-myco-3002",
@@ -32,7 +34,8 @@
         "difficulty": "easy",
         "tags": [
           "Besi yeri"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Löwenstein-Jensen, tüberkülozun 8 haftalık 'yumurtalı sabır sofrası'dır. Basil o kadar yavaş büyür ki, haftalarca beklersin — ama sonunda kahverengi karnabahar gibi koloni belirir."
       }
     ],
     "tus_spots": [
@@ -50,7 +53,7 @@
           "Sekonder Tüberküloz",
           "Sarkoidoz",
           "Akciğer Kanseri",
-          "E) Hiçbiri"
+          "E) Integronlar"
         ],
         "correct_answer": "Sekonder Tüberküloz",
         "explanation": "Apeks tutulumu, kavite, konstitüsyonel semptomlar ve ARB pozitifliği (aside dirençli basil) reaktivasyon (sekonder) tüberkülozunu gösterir.",
@@ -74,7 +77,8 @@
         "tags": [
           "İlaçlar",
           "INH"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: İzoniazid, B6 vitaminini çalarak sinirler boyunca hırsızlık yapar — eller ve ayaklar uyuşur (periferik nöropati). Tedaviye B6 eklemek, hırsıza karşı kilit takmak gibidir."
       },
       {
         "id": "fc-myco-3101",
@@ -83,7 +87,8 @@
         "difficulty": "easy",
         "tags": [
           "Yan Etki"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Rifampin, vücudun her sıvısını turuncu boyar — idrar, ter, gözyaşı hep turuncu! Tıpkı elbiselerine turuncu boya dökmüş bir ressam gibi her yere iz bırakır."
       },
       {
         "id": "fc-myco-3102",
@@ -92,7 +97,8 @@
         "difficulty": "medium",
         "tags": [
           "Yan Etki"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Etambutol, gözün optik sinirine saldırır ve kırmızı-yeşil renkleri karıştırır. Hasta trafik ışıklarını ayırt edemez hale gelir — 'E(ye)tambutol = Eye (göz)' diye hatırla."
       }
     ],
     "tus_spots": [
@@ -117,7 +123,8 @@
         "difficulty": "medium",
         "tags": [
           "Lepra"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Lepramatöz leprada bağışıklık teslim bayrağı çeker — lepromin testi negatiftir. Basiller yüzü istila eder ve 'aslan yüzü' (leontin facies) oluşur, tıpkı bir aslan maskesi gibi."
       },
       {
         "id": "fc-myco-3201",
@@ -126,7 +133,8 @@
         "difficulty": "hard",
         "tags": [
           "Atipik"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Fotokromojen mikobakteriler güneş ışığında pigment üretir — M. kansasii ve M. marinum fotoğraf çektirmeyi seven ikizler gibidir. Işık gelince renklenirler."
       }
     ],
     "tus_spots": [

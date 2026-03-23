@@ -3,6 +3,7 @@ class Flashcard {
   final String question;
   final String answer;
   final String difficulty;
+  final String? storyHint;
   final List<String> tags;
 
   const Flashcard({
@@ -10,16 +11,18 @@ class Flashcard {
     required this.question,
     required this.answer,
     required this.difficulty,
+    this.storyHint,
     required this.tags,
   });
 
   factory Flashcard.fromJson(Map<String, dynamic> json) {
     return Flashcard(
-      id: json['id'] ?? '',
-      question: json['question'] ?? '',
-      answer: json['answer'] ?? '',
-      difficulty: json['difficulty'] ?? 'medium',
-      tags: List<String>.from(json['tags'] ?? []),
+      id: json['id']?.toString() ?? '',
+      question: json['question']?.toString() ?? '',
+      answer: json['answer']?.toString() ?? '',
+      difficulty: json['difficulty']?.toString() ?? 'medium',
+      storyHint: json['story_hint']?.toString(),
+      tags: json['tags'] is List ? List<String>.from(json['tags']) : [],
     );
   }
 }
@@ -56,11 +59,11 @@ class ClinicalCase {
 
   factory ClinicalCase.fromJson(Map<String, dynamic> json) {
     return ClinicalCase(
-      id: json['id'] as String? ?? '',
-      caseText: json['case'] ?? '',
-      options: List<String>.from(json['options'] ?? []),
-      correctAnswer: json['correct_answer'] ?? '',
-      explanation: json['explanation'] ?? '',
+      id: json['id']?.toString() ?? '',
+      caseText: (json['case'] ?? json['question'] ?? '').toString(),
+      options: json['options'] is List ? List<String>.from(json['options']) : [],
+      correctAnswer: json['correct_answer']?.toString() ?? '',
+      explanation: json['explanation']?.toString() ?? '',
     );
   }
 }
@@ -90,19 +93,23 @@ class Topic {
 
   factory Topic.fromJson(Map<String, dynamic> json) {
     return Topic(
-      id: json['id'] ?? '',
-      subject: json['subject'] ?? '',
-      chapter: json['chapter'] ?? '',
-      topic: json['topic'] ?? '',
-      subTopic: json['sub_topic'] ?? '',
-      contentSummary: json['content_summary'] ?? '',
-      flashcards: (json['flashcards'] as List<dynamic>? ?? [])
-          .map((fc) => Flashcard.fromJson(fc as Map<String, dynamic>))
-          .toList(),
-      tusSpots: List<String>.from(json['tus_spots'] ?? []),
-      clinicalCases: (json['clinical_cases'] as List<dynamic>? ?? [])
-          .map((cc) => ClinicalCase.fromJson(cc as Map<String, dynamic>))
-          .toList(),
+      id: json['id']?.toString() ?? '',
+      subject: json['subject']?.toString() ?? '',
+      chapter: json['chapter']?.toString() ?? '',
+      topic: json['topic']?.toString() ?? '',
+      subTopic: json['sub_topic']?.toString() ?? '',
+      contentSummary: json['content_summary']?.toString() ?? '',
+      flashcards: json['flashcards'] is List
+          ? (json['flashcards'] as List)
+              .map((fc) => Flashcard.fromJson(fc as Map<String, dynamic>))
+              .toList()
+          : [],
+      tusSpots: json['tus_spots'] is List ? List<String>.from(json['tus_spots']) : [],
+      clinicalCases: json['clinical_cases'] is List
+          ? (json['clinical_cases'] as List)
+              .map((cc) => ClinicalCase.fromJson(cc as Map<String, dynamic>))
+              .toList()
+          : [],
     );
   }
 

@@ -1,8 +1,11 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'auth/auth_view_model.dart';
 import 'theme/app_theme.dart';
@@ -13,35 +16,27 @@ import 'screens/onboarding_screen.dart';
 import 'services/ai_service.dart';
 import 'services/auth_service.dart';
 import 'services/focus_service.dart';
+import 'services/mock_exam_service.dart';
+import 'services/collection_service.dart';
 import 'services/notification_service.dart';
 import 'services/theme_service.dart';
 import 'widgets/responsive_wrapper.dart';
 
 void main() async {
+  // İlk frame'in hızlıca renderlanması için kritik başlangıç
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Firebase baslatma
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  // Web'de sistem yönlendirmesini kısıtlamaya gerek yok veya kIsWeb ile korunuyor
+  if (!kIsWeb) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
+  }
 
-  SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-    DeviceOrientation.portraitDown,
-  ]);
-
-  AIService().warmUpCache();
-  NotificationService().init();
-
-  runApp(
-    MultiProvider(
-      providers: [
-        ChangeNotifierProvider<AuthViewModel>(create: (_) => AuthViewModel()),
-        ChangeNotifierProvider<FocusService>(create: (_) => FocusService()),
-      ],
-      child: const TusAsistaniApp(),
-    ),
-  );
+  // Firebase ve diğer servislerin başlatılması arka planda yapılabilir
+  // Ancak runApp öncesi yapılarak AuthWrapper'ın snapshot beklemesi sağlanıyor
+  runApp(const TusAsistaniApp());
 }
 
 class TusAsistaniApp extends StatelessWidget {
@@ -49,42 +44,46 @@ class TusAsistaniApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ValueListenableBuilder<AppThemeMode>(
-      valueListenable: ThemeService.mode,
-      builder: (_, appMode, __) {
-        final isDark = appMode == AppThemeMode.dark;
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider<AuthViewModel>(create: (_) => AuthViewModel()),
+        ChangeNotifierProvider<FocusService>(create: (_) => FocusService()),
+        ChangeNotifierProvider<MockExamService>(create: (_) => MockExamService()),
+        ChangeNotifierProvider<CollectionService>(create: (_) => CollectionService()),
+      ],
+      child: ValueListenableBuilder<AppThemeMode>(
+        valueListenable: ThemeService.mode,
+        builder: (_, appMode, __) {
+          final isDark = appMode == AppThemeMode.dark;
 
-        SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-          statusBarColor: Colors.transparent,
-          statusBarIconBrightness:
-              isDark ? Brightness.light : Brightness.dark,
-          systemNavigationBarColor: isDark
-              ? AppTheme.background
-              : appMode == AppThemeMode.soft
-                  ? AppTheme.softBackground
-                  : AppTheme.lightBackground,
-          systemNavigationBarIconBrightness:
-              isDark ? Brightness.light : Brightness.dark,
-        ));
+          SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+            statusBarColor: Colors.transparent,
+            statusBarIconBrightness: isDark ? Brightness.light : Brightness.dark,
+            systemNavigationBarColor: isDark
+                ? AppTheme.background
+                : appMode == AppThemeMode.soft
+                    ? AppTheme.softBackground
+                    : AppTheme.lightBackground,
+            systemNavigationBarIconBrightness: isDark ? Brightness.light : Brightness.dark,
+          ));
 
-        // Soft tema → kendi ThemeData'sını kullanır (light base)
-        final ThemeData effectiveTheme = switch (appMode) {
-          AppThemeMode.dark  => AppTheme.darkTheme,
-          AppThemeMode.light => AppTheme.lightTheme,
-          AppThemeMode.soft  => AppTheme.softTheme,
-        };
+          final ThemeData effectiveTheme = switch (appMode) {
+            AppThemeMode.dark => AppTheme.darkTheme,
+            AppThemeMode.light => AppTheme.lightTheme,
+            AppThemeMode.soft => AppTheme.softTheme,
+          };
 
-        return MaterialApp(
-          title: 'AsisTus',
-          debugShowCheckedModeBanner: false,
-          // Soft ve light aynı brightness olduğu için theme ile yönetiyoruz
-          themeMode: ThemeMode.light,
-          theme: effectiveTheme,
-          darkTheme: AppTheme.darkTheme,
-          home: const AuthWrapper(),
-          builder: (context, child) => ResponsiveWrapper(child: child!),
-        );
-      },
+          return MaterialApp(
+            title: 'AsisTus',
+            debugShowCheckedModeBanner: false,
+            themeMode: ThemeMode.light,
+            theme: effectiveTheme,
+            darkTheme: AppTheme.darkTheme,
+            home: const AuthWrapper(),
+            builder: (context, child) => ResponsiveWrapper(child: child!),
+          );
+        },
+      ),
     );
   }
 }
@@ -101,17 +100,36 @@ class AuthWrapper extends StatefulWidget {
 
 class _AuthWrapperState extends State<AuthWrapper> {
   bool? _onboardingDone;
+  bool _initialized = false;
 
   @override
   void initState() {
     super.initState();
-    _checkOnboarding();
+    _initializeApp();
   }
 
-  Future<void> _checkOnboarding() async {
-    final prefs = await SharedPreferences.getInstance();
+  Future<void> _initializeApp() async {
+    // 1) Firebase baslatma — web'de timeout ile korunuyor
+    try {
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      ).timeout(const Duration(seconds: 8));
+    } catch (_) {}
+
+    // 2) Onboarding kontrol
+    try {
+      final prefs = await SharedPreferences.getInstance().timeout(const Duration(seconds: 4));
+      _onboardingDone = prefs.getBool('onboarding_done') ?? false;
+    } catch (_) {
+      _onboardingDone = false;
+    }
+
+    // 3) Cache ısınma (arka planda)
+    AIService().warmUpCache();
+    if (!kIsWeb) NotificationService().init();
+
     if (mounted) {
-      setState(() => _onboardingDone = prefs.getBool('onboarding_done') ?? false);
+      setState(() => _initialized = true);
     }
   }
 
@@ -123,32 +141,66 @@ class _AuthWrapperState extends State<AuthWrapper> {
 
   @override
   Widget build(BuildContext context) {
+    if (!_initialized) {
+      return _buildSplashScreen();
+    }
+
     return StreamBuilder<User?>(
       stream: AuthService.instance.authStateChanges,
       builder: (context, snapshot) {
-        // Baglanti bekleniyor — splash
-        if (snapshot.connectionState == ConnectionState.waiting || _onboardingDone == null) {
-          return const Scaffold(
-            backgroundColor: AppTheme.background,
-            body: Center(
-              child: CircularProgressIndicator(
-                  color: AppTheme.cyan, strokeWidth: 2.5),
-            ),
-          );
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return _buildSplashScreen();
         }
 
-        // Kullanici giris yapmis
         if (snapshot.hasData && snapshot.data != null) {
-          // İlk açılış → Onboarding
-          if (!_onboardingDone!) {
+          if (!(_onboardingDone ?? false)) {
             return OnboardingScreen(onComplete: _completeOnboarding);
           }
           return const HomeScreen();
         }
 
-        // Giris yapilmamis — login ekranina yonlendir
         return const LoginScreen();
       },
+    );
+  }
+
+  Widget _buildSplashScreen() {
+    return Scaffold(
+      backgroundColor: AppTheme.background,
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(24),
+              child: Image.asset(
+                'assets/hero_splash.jpg',
+                width: 250,
+                fit: BoxFit.cover,
+              ),
+            ).animate().fadeIn(duration: 600.ms).scale(begin: const Offset(0.9, 0.9)),
+            const SizedBox(height: 32),
+            Text(
+              'AsisTus',
+              style: GoogleFonts.outfit(
+                fontSize: 32,
+                fontWeight: FontWeight.w700,
+                color: AppTheme.textPrimary,
+                letterSpacing: -0.5,
+              ),
+            ).animate().fadeIn(delay: 200.ms),
+            const SizedBox(height: 12),
+            const SizedBox(
+              width: 120,
+              child: LinearProgressIndicator(
+                color: AppTheme.cyan,
+                backgroundColor: AppTheme.surfaceVariant,
+                minHeight: 2,
+              ),
+            ).animate().fadeIn(delay: 400.ms),
+          ],
+        ),
+      ),
     );
   }
 }

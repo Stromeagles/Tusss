@@ -10,12 +10,14 @@
       {
         "id": "fc-patho-sys2-300",
         "question": "Mide karsinomunda sol supraklaviküler lenf nodu metastazına ne denir?",
-        "answer": "Virchow nodu."
+        "answer": "Virchow nodu.",
+        "story_hint": "💡 HİKAYE: Mide kanseri sol supraklaviküler fossaya metastaz yaptı — Virchow nodu! Toraks kanalı (ductus thoracicus) sol venöz açıya döküldüğü için karın kanserleri buraya ulaşır. Sol boyunda şişlik + mide kanseri = Virchow!"
       },
       {
         "id": "fc-patho-sys2-301",
         "question": "Taşlı yüzük hücreli mide karsinomunun over metastazına ne denir?",
-        "answer": "Krukenberg tümörü."
+        "answer": "Krukenberg tümörü.",
+        "story_hint": "💡 HİKAYE: Taşlı yüzük hücreli mide karsinomu overe gitti — Krukenberg tümörü! Tümör hücreleri transperitoneal veya hematojen yolla overlere yayılır. Bilateral, solid over kitlesi + mide öyküsü = Krukenberg."
       }
     ],
     "tus_spots": [
@@ -34,12 +36,14 @@
       {
         "id": "fc-patho-sys2-310",
         "question": "Primer Bilier Siroz'da (PBS) hangi otoantikor pozitiftir?",
-        "answer": "AMA (Antimitokondriyal antikor)."
+        "answer": "AMA (Antimitokondriyal antikor).",
+        "story_hint": "💡 HİKAYE: PBS'de bağışıklık sistemi safra kanallarının mitokondrilerine saldırır — AMA (antimitokondriyal antikor) pozitif! Orta yaşlı kadın, kaşıntı ve sarılık. Safra kanalları yavaşça yıkılır → biliyer siroz. AMA = PBS'nin imzası."
       },
       {
         "id": "fc-patho-sys2-311",
         "question": "Wilson hastalığında gözde görülen karakteristik halkanın adı nedir?",
-        "answer": "Kayser-Fleischer halkası."
+        "answer": "Kayser-Fleischer halkası.",
+        "story_hint": "💡 HİKAYE: Wilson hastalığında bakır gözün Descemet membranında birikir — altın-yeşil Kayser-Fleischer halkası oluşur. Yarık lamba muayenesiyle görülür. Bu halka Wilson'un 'yüzük'üdür — tanıda çok değerli!"
       }
     ],
     "tus_spots": [

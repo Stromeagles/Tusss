@@ -14,7 +14,8 @@
         "difficulty": "medium",
         "tags": [
           "Histoplasma"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Histoplasma, kuş ve yarasa dışkılı mağaralarda yaşar. Solunan sporlar makrofajların içine saklanır — tıpkı mağarada gizlenen küçük hırsızların evlere sızması gibi. Ohio ve Mississippi vadisini sever."
       },
       {
         "id": "fc-myco-3101",
@@ -23,7 +24,8 @@
         "difficulty": "medium",
         "tags": [
           "Coccidioides"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Coccidioides, çöl tozu fırtınasıyla uçar ve akciğere iner. Vücutta sferül (spor dolu balon) oluşturur — tıpkı çölde şişen bir kum balonunun patlaması gibi sporları yayar."
       },
       {
         "id": "fc-myco-3102",
@@ -32,7 +34,8 @@
         "difficulty": "medium",
         "tags": [
           "Paracoccidioides"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Paracoccidioides, gemi dümeni (pilot wheel) şeklinde çoklu tomurcuklanır. Güney Amerika ormanlarından gelen bu kaptan, her yöne tomurcuk uzatarak ilerler — dümeni çevirdikçe yayılır."
       }
     ],
     "tus_spots": [
@@ -57,7 +60,8 @@
         "difficulty": "easy",
         "tags": [
           "Candida"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Candida albicans, 37°C serumda Germ Tüp çıkararak 'ben buradayım!' diye bağırır. Bu tüp, mayadan hife dönüşün ilk adımıdır — diğer Candidalar bu numarayı yapamaz."
       },
       {
         "id": "fc-myco-3201",
@@ -66,7 +70,8 @@
         "difficulty": "medium",
         "tags": [
           "Cryptococcus"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Cryptococcus, HIV hastasının beynine sızan kapsüllü bir hırsızdır. Çini mürekkebiyle yakalanır — siyah arkaplanda parlayan hale gibi kapsülü görünür olur."
       },
       {
         "id": "fc-myco-3202",
@@ -75,7 +80,8 @@
         "difficulty": "medium",
         "tags": [
           "Aspergillus"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Aspergillus fumigatus, 45 derece açıyla dallanan septalı hiflerle nötropenik hastanın damarlarına dalış yapar. Anjioinvaziv seyir — tıpkı ağaç dallarının damara doğru büyümesi gibi."
       }
     ],
     "tus_spots": [

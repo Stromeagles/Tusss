@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../services/auth_service.dart';
 
 enum AuthMode { login, signup }
 
@@ -213,29 +214,29 @@ class AuthViewModel extends ChangeNotifier {
     isLoading = true;
     notifyListeners();
 
-    // TODO: Gerçek backend entegrasyonu (Firebase/Supabase)
-    await Future<void>.delayed(const Duration(milliseconds: 1500));
-
-    isLoading  = false;
-    isLoggedIn = true;
-    await _persistSession();
-    notifyListeners();
+    try {
+      final auth = AuthService.instance;
+      if (mode == AuthMode.login) {
+        await auth.signInWithEmail(email, password);
+      } else {
+        await auth.signUpWithEmail(
+          email: email,
+          password: password,
+          displayName: name.trim(),
+        );
+      }
+      isLoggedIn = true;
+      await _persistSession();
+    } on FirebaseAuthException catch (e) {
+      generalError = e.message;
+    } catch (e) {
+      generalError = 'Bir hata oluştu. Lütfen tekrar deneyin.';
+    } finally {
+      isLoading = false;
+      notifyListeners();
+    }
   }
 
-  // ── Guest login ───────────────────────────────────────────────────────────
-  Future<void> loginAsGuest() async {
-    isLoading = true;
-    notifyListeners();
-
-    await Future<void>.delayed(const Duration(milliseconds: 800));
-
-    name  = 'Misafir';
-    email = 'guest@tusasistani.app';
-    isLoading  = false;
-    isLoggedIn = true;
-    await _persistSession();
-    notifyListeners();
-  }
 
   // ── Logout ────────────────────────────────────────────────────────────────
   Future<void> logout() async {

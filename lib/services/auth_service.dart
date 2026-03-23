@@ -33,7 +33,7 @@ class AuthService {
     try {
       final googleUser = await GoogleSignIn(scopes: ['email']).signIn();
       if (googleUser == null) {
-        throw FirebaseAuthException(
+        throw const FirebaseAuthException(
           code: 'sign-in-cancelled',
           message: 'Google girisi iptal edildi.',
         );
@@ -106,6 +106,96 @@ class AuthService {
         message: 'Apple girisi basarisiz: $e',
       );
     }
+  }
+
+  // ── Email/Password Sign-In ─────────────────────────────────────────────
+
+  Future<UserCredential> signInWithEmail(String email, String password) async {
+    try {
+      final userCredential = await _auth.signInWithEmailAndPassword(
+        email: email.trim(),
+        password: password,
+      );
+      await _createUserInDbIfNotExists(userCredential.user);
+      return userCredential;
+    } on FirebaseAuthException {
+      rethrow;
+    } catch (e) {
+      throw _mapFirebaseError(e);
+    }
+  }
+
+  // ── Email/Password Sign-Up ─────────────────────────────────────────────
+
+  Future<UserCredential> signUpWithEmail({
+    required String email,
+    required String password,
+    required String displayName,
+  }) async {
+    try {
+      final userCredential = await _auth.createUserWithEmailAndPassword(
+        email: email.trim(),
+        password: password,
+      );
+
+      final user = userCredential.user;
+      if (user != null && displayName.isNotEmpty) {
+        await user.updateDisplayName(displayName);
+        await user.reload();
+      }
+
+      await _createUserInDbIfNotExists(userCredential.user);
+      return userCredential;
+    } on FirebaseAuthException {
+      rethrow;
+    } catch (e) {
+      throw _mapFirebaseError(e);
+    }
+  }
+
+  // ── Password Reset ─────────────────────────────────────────────────────
+
+  Future<void> sendPasswordResetEmail(String email) async {
+    try {
+      await _auth.sendPasswordResetEmail(email: email.trim());
+    } catch (e) {
+      throw _mapFirebaseError(e);
+    }
+  }
+
+  // ── Firebase hata mesajlarini Turkceye cevir ──────────────────────────
+
+  FirebaseAuthException _mapFirebaseError(dynamic e) {
+    if (e is FirebaseAuthException) return e;
+
+    String code = 'unknown';
+    String message = 'Bilinmeyen bir hata olustu.';
+
+    final errorStr = e.toString();
+    if (errorStr.contains('user-not-found')) {
+      code = 'user-not-found';
+      message = 'Bu e-posta adresiyle kayitli bir hesap bulunamadi.';
+    } else if (errorStr.contains('wrong-password') || errorStr.contains('invalid-credential')) {
+      code = 'wrong-password';
+      message = 'E-posta veya sifre hatali.';
+    } else if (errorStr.contains('email-already-in-use')) {
+      code = 'email-already-in-use';
+      message = 'Bu e-posta adresi zaten kullanimda.';
+    } else if (errorStr.contains('weak-password')) {
+      code = 'weak-password';
+      message = 'Sifre cok zayif. En az 6 karakter olmali.';
+    } else if (errorStr.contains('invalid-email')) {
+      code = 'invalid-email';
+      message = 'Gecersiz e-posta adresi.';
+    } else if (errorStr.contains('too-many-requests')) {
+      code = 'too-many-requests';
+      message = 'Cok fazla deneme yapildi. Lutfen biraz bekleyin.';
+    } else if (errorStr.contains('network-request-failed')) {
+      code = 'network-error';
+      message = 'Internet baglantinizi kontrol edin.';
+    }
+
+    return FirebaseAuthException(code: code, message: message);
   }
 
   // ── Sign Out ────────────────────────────────────────────────────────────

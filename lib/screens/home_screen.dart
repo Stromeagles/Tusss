@@ -29,6 +29,8 @@ import 'profile_screen.dart';
 import 'analytics_screen.dart';
 import 'focus_screen.dart';
 import 'spots_screen.dart';
+import 'collections_screen.dart';
+import 'mock_exam_setup_screen.dart';
 import '../services/focus_service.dart';
 
 // ╔══════════════════════════════════════════════════════════════════════════╗
@@ -182,8 +184,18 @@ class _HomeScreenState extends State<HomeScreen> {
 
                                   const SizedBox(height: 20),
 
+                                  // ── Deneme Sınavı ─────────────────────────────────────
+                                  _buildDenemeButton(isDark),
+
+                                  const SizedBox(height: 12),
+
                                   // ── Spot Bilgiler Hızlı Erişim ────────────────────────
                                   _buildSpotBilgilerButton(isDark),
+
+                                  const SizedBox(height: 12),
+
+                                  // ── Klasörlerim Hızlı Erişim ──────────────────────────
+                                  _buildKlasorlerimButton(isDark),
 
                                   const SizedBox(height: 20),
                                 ],
@@ -571,6 +583,153 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+  // ── Deneme Sınavı Hızlı Erişim ──────────────────────────────────────────────
+
+  Widget _buildDenemeButton(bool isDark) {
+    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
+    final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: GestureDetector(
+        onTap: () => Navigator.push(context,
+            AppRoute.slideUp(const MockExamSetupScreen())),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: isDark
+                  ? [const Color(0xFF1A0A10), const Color(0xFF1A1230)]
+                  : [const Color(0xFFFFEEEE), const Color(0xFFFFEBF5)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            borderRadius: BorderRadius.circular(18),
+            border: Border.all(
+              color: AppTheme.cyan.withValues(alpha: isDark ? 0.30 : 0.20)),
+            boxShadow: [
+              BoxShadow(
+                color: AppTheme.cyan.withValues(alpha: isDark ? 0.10 : 0.05),
+                blurRadius: 16,
+              ),
+            ],
+          ),
+          child: Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      AppTheme.cyan.withValues(alpha: 0.20),
+                      AppTheme.neonPink.withValues(alpha: 0.10),
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.30)),
+                ),
+                child: const Icon(Icons.assignment_rounded,
+                    color: AppTheme.cyan, size: 22),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Text('Deneme Sınavı',
+                          style: GoogleFonts.inter(
+                            color: textColor, fontSize: 15, fontWeight: FontWeight.w800)),
+                        const SizedBox(width: 8),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: AppTheme.cyan.withValues(alpha: 0.15),
+                            borderRadius: BorderRadius.circular(6),
+                          ),
+                          child: Text('YENİ',
+                            style: GoogleFonts.inter(
+                              color: AppTheme.cyan, fontSize: 9, fontWeight: FontWeight.w900)),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 2),
+                    Text('TUS formatında zamanlı sınav',
+                      style: GoogleFonts.inter(
+                        color: subColor, fontSize: 12, fontWeight: FontWeight.w500)),
+                  ],
+                ),
+              ),
+              Icon(Icons.chevron_right_rounded,
+                  color: AppTheme.cyan.withValues(alpha: 0.6), size: 22),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  // ── Klasörlerim Hızlı Erişim ──────────────────────────────────────────────
+
+  Widget _buildKlasorlerimButton(bool isDark) {
+    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
+    final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: GestureDetector(
+        onTap: () => Navigator.push(context,
+            AppRoute.slideUp(const CollectionsScreen())),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: isDark
+                  ? [const Color(0xFF0F1A2E), const Color(0xFF1A1A30)]
+                  : [const Color(0xFFE6F0FF), const Color(0xFFEEE6FF)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            borderRadius: BorderRadius.circular(18),
+            border: Border.all(
+              color: AppTheme.cyan.withValues(alpha: isDark ? 0.20 : 0.15)),
+          ),
+          child: Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: AppTheme.cyan.withValues(alpha: 0.12),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: const Icon(Icons.folder_rounded,
+                    color: AppTheme.cyan, size: 22),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Klasörlerim',
+                      style: GoogleFonts.inter(
+                        color: textColor, fontSize: 15, fontWeight: FontWeight.w800)),
+                    const SizedBox(height: 2),
+                    Text('Kaydettiğin kartları organize et',
+                      style: GoogleFonts.inter(
+                        color: subColor, fontSize: 12, fontWeight: FontWeight.w500)),
+                  ],
+                ),
+              ),
+              Icon(Icons.chevron_right_rounded,
+                  color: AppTheme.cyan.withValues(alpha: 0.6), size: 22),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
   // ── Sorular Hub (Eski Case Hub) ─────────────────────────────────────────────
   Widget _buildCaseHub(bool isDark) {
     return _buildHubSection(
@@ -891,7 +1050,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       physics: const BouncingScrollPhysics(),
                       children: [
                         // BRANŞLAR — kullanıcı spesifik branş seçmek zorunda
-                        ...SubjectRegistry.modules.map((m) => Padding(
+                        ...SubjectRegistry.activeModules.map((m) => Padding(
                           padding: const EdgeInsets.only(bottom: 12),
                           child: _buildSubjectItem(
                             title: m.name,

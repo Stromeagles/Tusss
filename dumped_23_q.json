@@ -1,0 +1,301 @@
+[
+  {
+    "file": "assets/data\\microbiology_bact_cocci.json",
+    "id": "cc-micro-bact-cocci-002-001",
+    "case": "Boğaz ağrısı sonrası Basitrasin duyarlı, beta hemolitik koloniler saptanan bir çocukta 3 hafta sonra idrarda renk değişikliği ve ödem gelişmiştir. En olası tanı nedir?",
+    "options": [
+      "Akut Romatizmal Ateş",
+      "Poststreptokokal Glomerülonefrit",
+      "Kızıl",
+      "Toksik Şok Sendromu"
+    ],
+    "correct": "Poststreptokokal Glomerülonefrit",
+    "exp": "A grubu beta hemolitik streptokok (S. pyogenes) enfeksiyonu sonrası gelişen nefritik tablo tipiktir. ARA için eklem ağrısı veya kalp bulguları beklenirdi."
+  },
+  {
+    "file": "assets/data\\microbiology_bact_spores.json",
+    "id": "cc-micro-spores-002-001",
+    "case": "Ev yapımı konserve yedikten 18 saat sonra çift görme, yutma güçlüğü ve konuşma bozukluğu şikayetiyle başvuran, ateşi olmayan hastada dilate pupiller saptanıyor. En olası tanı nedir?",
+    "options": [
+      "Miyastenia Gravis",
+      "Botulizm",
+      "Tetanoz",
+      "Kene Paralizisi"
+    ],
+    "correct": "Botulizm",
+    "exp": "Konserve öyküsü ve '4D' (Diplopi, Dizartri, Disfaji, Dispne) bulguları Botulizm için karakteristiktir. Mg'de pupiller etkilenmez."
+  },
+  {
+    "file": "assets/data\\microbiology_ch1.json",
+    "id": "cc-micro-ch1-001-001",
+    "case": "Beta-laktam antibiyotik kullanımı sonrası bakterinin hücre duvarını kaybetmesine rağmen hayatta kalabildiği çoğalabilen forma ne ad verilir?",
+    "options": [
+      "Protoplast",
+      "Sferoplast",
+      "L-Form",
+      "Much granülü"
+    ],
+    "correct": "L-Form",
+    "exp": "Hücre duvarını kaybetmiş ama çoğalabilen forma L-Form denir."
+  },
+  {
+    "file": "assets/data\\microbiology_ch2_toxins.json",
+    "id": "cc-micro-ch2-001-001",
+    "case": "Konserve gıda tüketimi sonrası simetrik desendan flask felç, diplopi ve disfaji şikayetleri olan bir hastada sorumlu toksinin etki mekanizması nedir?",
+    "options": [
+      "cAMP artışı",
+      "GABA inhibisyonu",
+      "ACh salınımının engellenmesi",
+      "EF-2 inaktivasyonu"
+    ],
+    "correct": "ACh salınımının engellenmesi",
+    "exp": "Botulinum toksini periferik presinaptik uçlardan Asetilkolin (ACh) salınımını engelleyerek gevşek (flask) felç yapar."
+  },
+  {
+    "file": "assets/data\\microbiology_ch3_sterilization_vaccines.json",
+    "id": "cc-micro-ch3-002-001",
+    "case": "Daha önce hiç aşılanmamış bir çocukta 'Göbek Bağının Geç Düşmesi' ve tekrarlayan enfeksiyonlar görülüyorsa, hangi immün defekt düşünülmelidir?",
+    "options": [
+      "NADPH Oksidaz eksikliği",
+      "Lökosit Adezyon Defekti (LAD)",
+      "Chediak-Higashi",
+      "Kompleman eksikliği"
+    ],
+    "correct": "Lökosit Adezyon Defekti (LAD)",
+    "exp": "LAD'da integrin beta (CD11/18) eksikliği vardır, nötrofiller dokuya göç edemez. Klasik bulgu göbek bağının geç düşmesidir."
+  },
+  {
+    "file": "assets/data\\microbiology_ch4_staining_media.json",
+    "id": "cc-micro-ch4-002-001",
+    "case": "Boğmaca şüphesiyle alınan nazofaringeal sürüntü örneği hangi özel besiyerine ekilmelidir?",
+    "options": [
+      "Lowenstein-Jensen",
+      "Thayer-Martin",
+      "Bordet-Gengau",
+      "TCBS"
+    ],
+    "correct": "Bordet-Gengau",
+    "exp": "Bordatella pertussis (Boğmaca) üretmek için Bordet-Gengau veya Regan-Lowe besiyerleri kullanılır."
+  },
+  {
+    "file": "assets/data\\microbiology_enterics.json",
+    "id": "cc-micro-enter-001-001",
+    "case": "25 yaşında bir hasta, 2 haftadır devam eden ateş, kabızlık ve gövdesinde pembe lekelerle başvuruyor. Nabzı 60/dakika saptanıyor (Ateş 39C).",
+    "options": [
+      "Tifo",
+      "Bruselloz",
+      "Sıtma",
+      "Pnömoni"
+    ],
+    "correct": "Tifo",
+    "exp": "Uzamış ateş, rölatif bradikardi ve taş roze lekeleri Tifo kliniğidir."
+  },
+  {
+    "file": "assets/data\\microbiology_gram_neg_basics.json",
+    "id": "cc-micro-gneg-basic-001-001",
+    "case": "20 yaşında üniversite öğrencisi, ani başlayan ateş, baş ağrısı ve vücutta peteşiyal döküntülerle acile başvuruyor. Ense sertliği saptanıyor.",
+    "options": [
+      "Meningokokal Menenjit",
+      "Pnömokokal Menenjit",
+      "Viral Menenjit",
+      "Listeriyoz"
+    ],
+    "correct": "Meningokokal Menenjit",
+    "exp": "Peteşiyal döküntü ve hızlı seyir Neisseria meningitidis için tipiktir."
+  },
+  {
+    "file": "assets/data\\microbiology_gram_neg_basics.json",
+    "id": "cc-micro-gneg-basic-002-001",
+    "case": "7 yaşında bir çocuk, kanlı ishal sonrası halsizlik ve idrar miktarında azalma ile getiriliyor. Laboratuvarda anemi ve trombositopeni saptanıyor.",
+    "options": [
+      "HÜS (EHEC ilişkili)",
+      "TTP",
+      "DİC",
+      "İTP"
+    ],
+    "correct": "HÜS (EHEC ilişkili)",
+    "exp": "Kanlı ishal sonrası gelişen anemi ve trombositopeni HÜS'ü düşündürür."
+  },
+  {
+    "file": "assets/data\\microbiology_gram_pos_bacilli.json",
+    "id": "cc-micro-gpos-bac-001-001",
+    "case": "Hayvancılıkla uğraşan bir hastada el sırtında ortası siyah krutlu, ağrısız, periferi ödemli bir lezyon gelişiyor. Çevreden yapılan gram incelemede gram pozitif hareketsiz basiller görülüyor. Etken nedir?",
+    "options": [
+      "B. cereus",
+      "S. aureus",
+      "B. anthracis",
+      "L. monocytogenes"
+    ],
+    "correct": "B. anthracis",
+    "exp": "Hayvan teması öyküsü, ağrısız siyah eskar (püstül malin) ve gram pozitif hareketsiz basiller şarbonun deri formudur."
+  },
+  {
+    "file": "assets/data\\microbiology_gram_pos_bacilli.json",
+    "id": "cc-micro-gpos-bac-002-001",
+    "case": "Paslı çivi batması sonrası 10 gün sonra çenesini açamama, ense sertliği ve sırtında yay şeklinde kasılma olan hastada en olası etken?",
+    "options": [
+      "C. botulinum",
+      "C. tetani",
+      "S. pyogenes",
+      "C. difficile"
+    ],
+    "correct": "C. tetani",
+    "exp": "Yara öyküsü, trismus (çene kilidi) ve opistotonus tetanozun klasik triadıdır."
+  },
+  {
+    "file": "assets/data\\microbiology_gram_pos_bacilli.json",
+    "id": "cc-micro-gpos-bac-003-001",
+    "case": "Boğazda gri-beyaz, kaldırılınca kanayan psödomembranları olan çocukta boyun lenf bezlerinde şişlik (boğa boynu) izleniyor. En olası tanı?",
+    "options": [
+      "Enfeksiyöz Mononükleoz",
+      "Difteri",
+      "Farenjit",
+      "Kaba kulak"
+    ],
+    "correct": "Difteri",
+    "exp": "Kaldırılınca kanayan psödomembran ve boğa boynu görünümü C. diphtheriae (Difteri) için tipiktir."
+  },
+  {
+    "file": "assets/data\\microbiology_gram_pos_cocci.json",
+    "id": "cc-micro-gpos-coc-001-001",
+    "case": "Burun ameliyatı sonrası tamponları uzun süre kalan hastada aniden gelişen yüksek ateş, hipotansiyon ve el ayası dahil tüm vücutta kızarıklık gözleniyor. En olası tanı?",
+    "options": [
+      "Kızıl",
+      "Toksik Şok Sendromu",
+      "Menenjit",
+      "Kawasaki Hastalığı"
+    ],
+    "correct": "Toksik Şok Sendromu",
+    "exp": "Tampon kullanımı ve çoklu sistem tutulumu TSST-1'e bağlı stafilokokal toksik şok sendromunu düşündürür."
+  },
+  {
+    "file": "assets/data\\microbiology_gram_pos_cocci.json",
+    "id": "cc-micro-gpos-coc-002-001",
+    "case": "65 yaşında KOAH hastasında üşüme titreme ile başlayan ateş, yan ağrısı ve pas rengi balgam şikayeti var. Akciğer grafisinde sağ alt lobda konsolidasyon izleniyor. Balgam gram incelemesinde gram pozitif diplokoklar görülüyor. Etken nedir?",
+    "options": [
+      "K. pneumoniae",
+      "S. aureus",
+      "S. pneumoniae",
+      "M. catarrhalis"
+    ],
+    "correct": "S. pneumoniae",
+    "exp": "Lober tutulum, pas rengi balgam ve gram pozitif diplokoklar tipik pnömokok bulgularıdır."
+  },
+  {
+    "file": "assets/data\\microbiology_gram_pos_cocci.json",
+    "id": "cc-micro-gpos-coc-003-001",
+    "case": "Boğaz ağrısı ve ateş şikayeti ile gelen 7 yaşındaki çocukta boğazda eksuda, dilde 'çilek dili' görünümü ve gövdede basmakla solan yaygın mikropapüler döküntü var. Tanı nedir?",
+    "options": [
+      "Suçiçeği",
+      "Kızıl",
+      "Kızamıkçık",
+      "El-Ayak-Ağız Hastalığı"
+    ],
+    "correct": "Kızıl",
+    "exp": "Eksudatif farenjit, çilek dili ve yaygın döküntü S. pyogenes'in pirojenik ekzotoksinine bağlı Kızıl (Scarlet fever) tablosudur."
+  },
+  {
+    "file": "assets/data\\microbiology_mycobacteria.json",
+    "id": "cc-micro-mycobac-001-001",
+    "case": "Gece terlemesi, kilo kaybı ve kanlı öksürükle gelen 30 yaşında bir hastanın akciğer grafisinde sağ apeksde kavite izleniyor. Balgam gram boyamasında aside dirençli basiller görülüyor. En olası tanı?",
+    "options": [
+      "Pnömoni",
+      "Sekonder Tüberküloz",
+      "Sarkoidoz",
+      "Akciğer Kanseri"
+    ],
+    "correct": "Sekonder Tüberküloz",
+    "exp": "Apeks tutulumu, kavite, konstitüsyonel semptomlar ve ARB pozitifliği (aside dirençli basil) reaktivasyon (sekonder) tüberkülozunu gösterir."
+  },
+  {
+    "file": "assets/data\\microbiology_prof_200.json",
+    "id": "cc-micro-prof-001",
+    "case": "Klebsiella'da hızla yayılan çoklu ilaç direncinin en olası nedeni?",
+    "options": [
+      "Transformasyon",
+      "Transdüksiyon",
+      "Konjugatif Plazmidler",
+      "Mutasyon"
+    ],
+    "correct": "Konjugatif Plazmidler",
+    "exp": "Hızlı yayılım konjugasyon ile olur."
+  },
+  {
+    "file": "assets/data\\pathology_module.json",
+    "id": "cc-path-mod-001-001",
+    "case": "Miyokard enfarktüsü geçiren bir hastada 24 saat sonra etkilenen alanda hangi nükleer değişiklik beklenir?",
+    "options": [
+      "Piknoz",
+      "Karyoreksis",
+      "Karyolizis",
+      "Hepsi görülebilir"
+    ],
+    "correct": "Karyolizis",
+    "exp": "24 saatlik enfarktüste koagülatif nekroz görülür; nükleer değişiklikler piknoz → karyoreksis → karyolizis şeklinde sıralı gelişir; 24. saatte karyolizis hakimdir."
+  },
+  {
+    "file": "assets/data\\pathology_module.json",
+    "id": "cc-path-mod-002-001",
+    "case": "Akut pankreatit tanısı konan hastanın batın BT'sinde pankreas çevresinde beyaz kireçlenme alanları izleniyor. Bu bulgunun açıklaması nedir?",
+    "options": [
+      "Koagülatif nekroz",
+      "Yağ nekrozu ile saponifikasyon",
+      "Kazeöz nekroz",
+      "Likefikasyon nekrozu"
+    ],
+    "correct": "Yağ nekrozu ile saponifikasyon",
+    "exp": "Pankreatik lipazlar peripankreatik yağı parçalar; serbest yağ asitleri kalsiyumla sabunlaşır (saponifikasyon). Bu kalsiyum tuzları görüntülemede radyoopak görünür."
+  },
+  {
+    "file": "assets/data\\pathology_module.json",
+    "id": "cc-path-mod-003-001",
+    "case": "Patoloji preparatında bir tümör dokusunda küçük, yoğun, bazofilik hücre kalıntıları (apoptotik cisimcikler) izleniyor, çevresinde inflamasyon yok. Bu bulgunun mekanizması nedir?",
+    "options": [
+      "Koagülatif nekroz",
+      "Apoptoz — kaspaz aracılı programlı ölüm",
+      "Likefikasyon nekrozu",
+      "Otofaji"
+    ],
+    "correct": "Apoptoz — kaspaz aracılı programlı ölüm",
+    "exp": "Apoptotik cisimcikler, membranı bütün kalmış, organel içeren hücre fragmanlarıdır. Fagositler tarafından temizlenirler. İnflamasyon oluşmaması apoptozun temel özelliğidir; nekrozdan bu şekilde ayrılır."
+  },
+  {
+    "file": "assets/data\\pathology_module.json",
+    "id": "cc-path-mod-004-001",
+    "case": "Tekrarlayan ciddi bakteriyel enfeksiyonları olan, gecikmiş göbek düşmesi öyküsü bulunan bir bebekte periferik kanda nötrofili saptanıyor ancak enfeksiyon bölgesinde nötrofil göçü yok. Tanı nedir?",
+    "options": [
+      "Kronik granülomatöz hastalık",
+      "Lökosit adhezyon defisiti (LAD)",
+      "Chédiak-Higashi sendromu",
+      "Miyeloperoksidaz eksikliği"
+    ],
+    "correct": "Lökosit adhezyon defisiti (LAD)",
+    "exp": "LAD'da CD18 (β2-integrin) eksikliği nedeniyle nötrofiller endotele yapışamaz ve hasara göç edemez. Kanda nötrofili vardır (göç edemeyen nötrofiller kanda birikir). Gecikmiş göbek düşmesi LAD'ın klasik klinik bulgusudur."
+  },
+  {
+    "file": "assets/data\\pathology_module.json",
+    "id": "cc-path-mod-005-001",
+    "case": "Genç bir kadın hastada bilateral hiler lenfadenopati, eritema nodozum ve üveit saptanıyor. Bronkoskopik biyopside non-kazeifiye granülomlar görülüyor. Serum ACE düzeyi yüksek. En olası tanı nedir?",
+    "options": [
+      "Tüberküloz",
+      "Sarkoidoz",
+      "Lenfoma",
+      "Wegener granülomatozu"
+    ],
+    "correct": "Sarkoidoz",
+    "exp": "Sarkoidozun klasik triadı: bilateral hiler lenfadenopati + eritema nodozum + üveit (Löfgren sendromu). Non-kazeifiye granülom ve yüksek ACE tanıyı destekler. Tüberkülozda kazeifiye granülom beklenir."
+  },
+  {
+    "file": "assets/data\\pathology_module.json",
+    "id": "cc-path-mod-006-001",
+    "case": "5 yaşında bir çocukta bilateral retinoblastom saptanıyor. Ailesinde de retinoblastom öyküsü var. Bu durumun genetik açıklaması nedir?",
+    "options": [
+      "Tek somatik RB mutasyonu yeterlidir",
+      "Germline RB mutasyonu + ikinci somatik mutasyon (Knudson iki vuruş hipotezi)",
+      "RAS onkogeninin aktivasyonu",
+      "p53 kaybı"
+    ],
+    "correct": "Germline RB mutasyonu + ikinci somatik mutasyon (Knudson iki vuruş hipotezi)",
+    "exp": "Herediter retinoblastomada hasta zaten bir mutant RB aleli ile doğar (germline). Retina hücrelerinden birinde ikinci RB alelinin somatik mutasyonu olunca tümör gelişir. Bu nedenle bilateral, erken yaşta olur. Sporadik vakada her iki vuruş da somatiktir; unilateral ve geç yaşta görülür."
+  }
+]

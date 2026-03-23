@@ -260,26 +260,26 @@
     "clinical_cases": [
       {
         "case": "28 yaşında kadın hasta, geceleri ellerinde uyuşma ve ağrı şikayetiyle başvuruyor. Özellikle ilk üç parmağında parestezi tarif ediyor. El bileğinin volar yüzüne perküsyon ile şikayetleri artıyor. Bu hastada en olası tanı nedir?",
-        "options": {
-          "A": "Guyon kanalı sendromu",
-          "B": "Karpal tünel sendromu",
-          "C": "Kübital tünel sendromu",
-          "D": "Thoracic outlet sendromu",
-          "E": "Servikal disk hernisi"
-        },
-        "correct_answer": "B",
+        "options": [
+          "A) Guyon kanalı sendromu",
+          "B) Karpal tünel sendromu",
+          "C) Kübital tünel sendromu",
+          "D) Thoracic outlet sendromu",
+          "E) Servikal disk hernisi"
+        ],
+        "correct_answer": "B) Karpal tünel sendromu",
         "explanation": "Gece artan parestezi, ilk 3 parmakta uyuşma ve pozitif Tinel bulgusu (el bileği volar yüze perküsyon) karpal tünel sendromunu düşündürür. N. medianus retinaculum flexorum altında sıkışır. Guyon kanalı sendromunda 4-5. parmaklar etkilenir; kübital tünel dirsek seviyesindedir."
       },
       {
         "case": "35 yaşında erkek hasta, motosiklet kazası sonrası sağ kolunu hareket ettiremiyor. Muayenede omuz abduksiyonu, dirsek fleksiyonu ve ön kol supinasyonu yapamıyor. Kol iç rotasyonda adduksiyonda asılı duruyor. Bu hastada en olası lezyon yeri neresidir?",
-        "options": {
-          "A": "Brakial pleksus alt trunkusu (C8-T1)",
-          "B": "N. axillaris",
-          "C": "Brakial pleksus üst trunkusu (C5-C6)",
-          "D": "N. musculocutaneus",
-          "E": "N. radialis"
-        },
-        "correct_answer": "C",
+        "options": [
+          "A) Brakial pleksus alt trunkusu (C8-T1)",
+          "B) N. axillaris",
+          "C) Brakial pleksus üst trunkusu (C5-C6)",
+          "D) N. musculocutaneus",
+          "E) N. radialis"
+        ],
+        "correct_answer": "C) Brakial pleksus üst trunkusu (C5-C6)",
         "explanation": "Omuz abduksiyonu ve dış rotasyonu, dirsek fleksiyonu ve ön kol supinasyonunun kaybı Erb-Duchenne felcini (C5-C6 / üst trunkus lezyonu) gösterir. Kolun bahşiş pozisyonunda (waiter's tip) kalması patognomoniktir. Alt trunkus (C8-T1) lezyonu Klumpke felcidir ve el intrinsik kaslarını etkiler."
       }
     ]
@@ -437,26 +437,26 @@
     "clinical_cases": [
       {
         "case": "70 yaşında kadın hasta düşme sonrası sol kalça ağrısı ile acile başvuruyor. Sol alt ekstremite kısalmış ve dış rotasyonda. Direkt grafide femur boynu kırığı saptanıyor. Bu hastada en çok endişelenilmesi gereken komplikasyon nedir?",
-        "options": {
-          "A": "N. ischiadicus lezyonu",
-          "B": "Femur başı avasküler nekrozu",
-          "C": "Kompartman sendromu",
-          "D": "Yağ embolisi",
-          "E": "Derin ven trombozu"
-        },
-        "correct_answer": "B",
+        "options": [
+          "A) N. ischiadicus lezyonu",
+          "B) Femur başı avasküler nekrozu",
+          "C) Kompartman sendromu",
+          "D) Yağ embolisi",
+          "E) Derin ven trombozu"
+        ],
+        "correct_answer": "B) Femur başı avasküler nekrozu",
         "explanation": "Femur boynu intrakapsüler kırıklarında A. circumflexa femoris medialis'in retinaküler dalları zedelenerek femur başına kan akımı bozulur. Bu durum avasküler nekroz (AVN) riskini ciddi oranda artırır. Yaşlı hastalarda bu nedenle genellikle protez tercih edilirken, genç hastalarda acil internal fiksasyon yapılır."
       },
       {
         "case": "22 yaşında futbolcu, maç sırasında pivot hareketi yaparken dizinde 'pop' sesi duyuyor ve şiddetli ağrı başlıyor. Diz şiş ve ön çekmece testi pozitif. Bu hastada en olası tanı nedir?",
-        "options": {
-          "A": "Medial menisküs yırtığı",
-          "B": "Arka çapraz bağ (PCL) yırtığı",
-          "C": "Lateral kollateral bağ yırtığı",
-          "D": "Ön çapraz bağ (ACL) yırtığı",
-          "E": "Patella çıkığı"
-        },
-        "correct_answer": "D",
+        "options": [
+          "A) Medial menisküs yırtığı",
+          "B) Arka çapraz bağ (PCL) yırtığı",
+          "C) Lateral kollateral bağ yırtığı",
+          "D) Ön çapraz bağ (ACL) yırtığı",
+          "E) Patella çıkığı"
+        ],
+        "correct_answer": "D) Ön çapraz bağ (ACL) yırtığı",
         "explanation": "Pivot hareketi sırasında duyulan 'pop' sesi, akut diz efüzyonu ve pozitif ön çekmece testi ACL (ön çapraz bağ) yırtığının klasik triadıdır. ACL spor yaralanmalarında en sık zedelenen çapraz bağdır. Lachman testi en sensitif testtir. MR ile tanı doğrulanır."
       }
     ]
@@ -566,14 +566,14 @@
     "clinical_cases": [
       {
         "case": "55 yaşında erkek hasta göğüs ağrısı ile acile başvuruyor. EKG'de DII, DIII ve aVF derivasyonlarında ST elevasyonu saptanıyor. Hastada bradikardi ve 2. derece AV blok gelişiyor. Tıkanan koroner arter hangisidir?",
-        "options": {
-          "A": "Sol ön inen arter (LAD)",
-          "B": "Sol sirkümfleks arter (Cx)",
-          "C": "Sağ koroner arter (RCA)",
-          "D": "Sol ana koroner arter (Left main)",
-          "E": "Posterior inen arter (PDA)"
-        },
-        "correct_answer": "C",
+        "options": [
+          "A) Sol ön inen arter (LAD)",
+          "B) Sol sirkümfleks arter (Cx)",
+          "C) Sağ koroner arter (RCA)",
+          "D) Sol ana koroner arter (Left main)",
+          "E) Posterior inen arter (PDA)"
+        ],
+        "correct_answer": "C) Sağ koroner arter (RCA)",
         "explanation": "DII, DIII, aVF derivasyonlarında ST elevasyonu inferior MI'yı gösterir. İnferior duvarı besleyen sağ koroner arter (RCA) tıkanmıştır. RCA ayrıca AV düğümü %85 olguda besler, bu nedenle inferior MI'da AV blok gelişmesi tipiktir. LAD tıkanıklığı anterior MI'ya, Cx tıkanıklığı ise lateral MI'ya neden olur."
       }
     ]
@@ -672,26 +672,26 @@
     "clinical_cases": [
       {
         "case": "45 yaşında kadın hasta tiroid ameliyatı sonrası ses kısıklığı gelişiyor. Laringoskopide sol ses telinin paramedian pozisyonda hareketsiz olduğu görülüyor. Zedelenen sinir hangisidir?",
-        "options": {
-          "A": "N. laryngeus superior",
-          "B": "N. laryngeus recurrens sinister",
-          "C": "N. phrenicus",
-          "D": "N. glossopharyngeus",
-          "E": "N. hypoglossus"
-        },
-        "correct_answer": "B",
+        "options": [
+          "A) N. laryngeus superior",
+          "B) N. laryngeus recurrens sinister",
+          "C) N. phrenicus",
+          "D) N. glossopharyngeus",
+          "E) N. hypoglossus"
+        ],
+        "correct_answer": "B) N. laryngeus recurrens sinister",
         "explanation": "Tiroid cerrahisi sırasında en sık zedelenen sinir N. laryngeus recurrens'tir. Sol N. laryngeus recurrens arkus aortayı dolanarak yukarı çıktığı için daha uzun seyirlidir ve zedelenme riski daha yüksektir. Unilateral lezyon ses kısıklığına, bilateral lezyon ise ses telleri median pozisyonda kalarak solunum yolu obstrüksiyonuna neden olur."
       },
       {
         "case": "3 yaşında çocuk aniden öksürük, wheezing ve solunum sıkıntısı ile acile getiriliyor. Öyküde fıstık yerken semptomların başladığı öğreniliyor. Yabancı cisim en olası hangi lokalizasyondadır?",
-        "options": {
-          "A": "Sol ana bronş",
-          "B": "Trakea",
-          "C": "Sağ ana bronş",
-          "D": "Sol üst lob bronşu",
-          "E": "Özofagus"
-        },
-        "correct_answer": "C",
+        "options": [
+          "A) Sol ana bronş",
+          "B) Trakea",
+          "C) Sağ ana bronş",
+          "D) Sol üst lob bronşu",
+          "E) Özofagus"
+        ],
+        "correct_answer": "C) Sağ ana bronş",
         "explanation": "Sağ ana bronş sol ana bronşa göre daha dik, kısa ve geniş olduğu için aspire edilen yabancı cisimler en sık sağ ana bronşa düşer. Acil bronkoskopi yapılmalıdır. Ekspiratuvar grafide tuzak hava (air trapping) bulgusu tanıda yardımcıdır."
       }
     ]
@@ -898,26 +898,26 @@
     "clinical_cases": [
       {
         "case": "58 yaşında siroz tanılı erkek hasta hematemez ile acile başvuruyor. Fizik muayenede asit, splenomegali ve göbek çevresinde dilate venler (caput medusae) saptanıyor. Bu klinik tablonun altında yatan temel patofizyolojik mekanizma nedir?",
-        "options": {
-          "A": "Hepatik arter trombozu",
-          "B": "Portal hipertansiyon",
-          "C": "V. cava superior sendromu",
-          "D": "Budd-Chiari sendromu",
-          "E": "Splenik arter anevrizması"
-        },
-        "correct_answer": "B",
+        "options": [
+          "A) Hepatik arter trombozu",
+          "B) Portal hipertansiyon",
+          "C) V. cava superior sendromu",
+          "D) Budd-Chiari sendromu",
+          "E) Splenik arter anevrizması"
+        ],
+        "correct_answer": "B) Portal hipertansiyon",
         "explanation": "Siroz → Portal hipertansiyon → Portokaval anastomozlarda genişleme. Özofagus varisleri (hematemez), splenomegali, asit ve caput medusae (göbek çevresinde dilate venler) portal hipertansiyonun klasik bulgularıdır. Portokaval anastomozlardan kan kaval sisteme yönlenmeye çalışır."
       },
       {
         "case": "2 yaşında çocuk ağrısız, parlak kırmızı rektal kanama ile getiriliyor. Fizik muayenede karın ağrısı yok. Hemoglobin düşük. Tc-99m perteknetat sintigrafisi pozitif. En olası tanı nedir?",
-        "options": {
-          "A": "İntussusepsiyon",
-          "B": "Juvenil polip",
-          "C": "Meckel divertikülü",
-          "D": "İnflamatuvar barsak hastalığı",
-          "E": "Anal fissür"
-        },
-        "correct_answer": "C",
+        "options": [
+          "A) İntussusepsiyon",
+          "B) Juvenil polip",
+          "C) Meckel divertikülü",
+          "D) İnflamatuvar barsak hastalığı",
+          "E) Anal fissür"
+        ],
+        "correct_answer": "C) Meckel divertikülü",
         "explanation": "2 yaşında çocukta ağrısız rektal kanama ve pozitif Tc-99m perteknetat sintigrafisi (Meckel scan) Meckel divertikülünü düşündürür. Ektopik gastrik mukoza Tc-99m perteknetat tutulumu gösterir. Ektopik gastrik mukozanın asit salgılaması ileal ülserasyona ve kanamaya neden olur."
       }
     ]
@@ -1100,26 +1100,26 @@
     "clinical_cases": [
       {
         "case": "32 yaşında kadın hasta ani başlayan sol kasık ağrısı ve vaginal kanama ile acile başvuruyor. Beta-hCG pozitif. Transvaginal USG'de uterus içinde gestasyonel kese görülemiyor, sol adneksial bölgede kitle saptanıyor. Douglas çıkmazında serbest sıvı var. En olası tanı nedir?",
-        "options": {
-          "A": "Over kist rüptürü",
-          "B": "Ektopik gebelik",
-          "C": "Düşük tehdidi",
-          "D": "Over torsiyonu",
-          "E": "Appendisit"
-        },
-        "correct_answer": "B",
+        "options": [
+          "A) Over kist rüptürü",
+          "B) Ektopik gebelik",
+          "C) Düşük tehdidi",
+          "D) Over torsiyonu",
+          "E) Appendisit"
+        ],
+        "correct_answer": "B) Ektopik gebelik",
         "explanation": "Pozitif beta-hCG, uterusta gestasyonel kese yokluğu, adneksial kitle ve Douglas çıkmazında serbest sıvı (muhtemelen kan) ektopik gebeliği güçlü şekilde düşündürür. Ektopik gebelik en sık tuba uterina'nın ampulla bölümünde yerleşir (%70). Rüptür durumunda hemoperitoneum gelişir ve acil cerrahi gerekir."
       },
       {
         "case": "48 yaşında kadın hastaya histerektomi planlanıyor. Cerrah üreter yaralanmasını önlemek istiyor. A. uterina ile üreter arasındaki anatomik ilişki nedir?",
-        "options": {
-          "A": "Üreter A. uterina'nın üzerinden geçer",
-          "B": "A. uterina üreterin üzerinden geçer",
-          "C": "İkisi paralel seyreder",
-          "D": "Çaprazlaşma yoktur",
-          "E": "Üreter A. uterina'nın lateralinde kalır"
-        },
-        "correct_answer": "B",
+        "options": [
+          "A) Üreter A. uterina'nın üzerinden geçer",
+          "B) A. uterina üreterin üzerinden geçer",
+          "C) İkisi paralel seyreder",
+          "D) Çaprazlaşma yoktur",
+          "E) Üreter A. uterina'nın lateralinde kalır"
+        ],
+        "correct_answer": "B) A. uterina üreterin üzerinden geçer",
         "explanation": "A. uterina pelviste üreterin üzerinden çaprazlar. 'Water under the bridge' kuralı: üreter (water/su) arterin (bridge/köprü) altından geçer. Histerektomide uterin arter bağlanırken üreter yaklaşık 2 cm mesafededir ve iatrojenik yaralanma riski yüksektir."
       }
     ]
@@ -1275,26 +1275,26 @@
     "clinical_cases": [
       {
         "case": "30 yaşında erkek hasta sabah uyandığında sağ yüz yarısını hareket ettiremediğini fark ediyor. Sağ göz kapağını kapatamıyor, sağ alında kırışıklık yapamıyor ve sağ nazolabial oluk silinmiş. Bu hastada en olası tanı nedir?",
-        "options": {
-          "A": "Sağ hemisfer inme (santral fasiyal paralizi)",
-          "B": "Trigeminal nevralji",
-          "C": "Bell paralizisi (periferik fasiyal paralizi)",
-          "D": "Akustik nöroma",
-          "E": "Ramsay Hunt sendromu"
-        },
-        "correct_answer": "C",
+        "options": [
+          "A) Sağ hemisfer inme (santral fasiyal paralizi)",
+          "B) Trigeminal nevralji",
+          "C) Bell paralizisi (periferik fasiyal paralizi)",
+          "D) Akustik nöroma",
+          "E) Ramsay Hunt sendromu"
+        ],
+        "correct_answer": "C) Bell paralizisi (periferik fasiyal paralizi)",
         "explanation": "Sağ yüzün tamamının (alın dahil) etkilenmesi periferik CN VII lezyonunu gösterir. Bell paralizisi periferik fasiyal paralizinin en sık nedenidir (idiopatik, HSV-1 ile ilişkili). Santral lezyonda alın korunur (bilateral kortikal innervasyon). Ramsay Hunt sendromunda kulak çevresinde veziküller ve ağrı olması beklenir (VZV reaktivasyonu)."
       },
       {
         "case": "55 yaşında erkek hasta yutma güçlüğü, ses kısıklığı ve sağ omuzda düşüklük ile başvuruyor. Muayenede sağ yumuşak damak düşük, uvula sola deviasyon gösteriyor, sağ SCM ve trapezius güçsüz. Bu bulgular hangi anatomik yapının lezyonunu düşündürür?",
-        "options": {
-          "A": "Kavernöz sinüs",
-          "B": "Foramen jugulare",
-          "C": "Beyin sapı lateral bölgesi",
-          "D": "Serebellopontin köşe",
-          "E": "Foramen magnum"
-        },
-        "correct_answer": "B",
+        "options": [
+          "A) Kavernöz sinüs",
+          "B) Foramen jugulare",
+          "C) Beyin sapı lateral bölgesi",
+          "D) Serebellopontin köşe",
+          "E) Foramen magnum"
+        ],
+        "correct_answer": "B) Foramen jugulare",
         "explanation": "CN IX (yutma güçlüğü), CN X (ses kısıklığı, yumuşak damak felci, uvula sağlam tarafa deviyasyonu) ve CN XI (SCM ve trapezius güçsüzlüğü) birlikte tutulumu foramen jugulare sendromunu (Vernet sendromu) düşündürür. Bu üç sinir birlikte foramen jugulare'den geçer. Glomus jugulare tümörü veya kafa tabanı metastazı düşünülmelidir."
       }
     ]
@@ -1404,14 +1404,14 @@
     "clinical_cases": [
       {
         "case": "8 yaşında çocuk bisikletten düşerek kafasının sol tarafını vuruyor. Başlangıçta bilinci açık (lusid interval), ancak birkaç saat sonra bilinç bulanıklığı ve sağ hemiparezi gelişiyor. BT'de sol temporal bölgede bikonveks (lens şeklinde) hiperdens alan saptanıyor. Bu tabloya neden olan anatomik yapı hangisidir?",
-        "options": {
-          "A": "Köprü venleri",
-          "B": "A. meningea media",
-          "C": "A. cerebri media",
-          "D": "Sinus sagittalis superior",
-          "E": "A. carotis interna"
-        },
-        "correct_answer": "B",
+        "options": [
+          "A) Köprü venleri",
+          "B) A. meningea media",
+          "C) A. cerebri media",
+          "D) Sinus sagittalis superior",
+          "E) A. carotis interna"
+        ],
+        "correct_answer": "B) A. meningea media",
         "explanation": "Lusid interval (geçici iyilik dönemi) ve ardından hızlı kötüleşme epidural hematomun klasik prezentasyonudur. Temporal bölge (pterion) travmasında A. meningea media'nın ön dalı yırtılır. BT'de bikonveks (lens şeklinde) hiperdens alan tipiktir. Subdural hematom ise köprü venlerinin yırtılmasıyla oluşur ve hilal şeklinde görülür."
       }
     ]
@@ -1675,26 +1675,26 @@
     "clinical_cases": [
       {
         "case": "65 yaşında hipertansif erkek hasta ani başlayan sağ taraf güçsüzlüğü ile acile getiriliyor. BT'de sol bazal ganglion bölgesinde (capsula interna düzeyinde) intraserebral kanama saptanıyor. Bu kanama en sık hangi arterin dalından kaynaklanır?",
-        "options": {
-          "A": "A. cerebri anterior",
-          "B": "A. communicans posterior",
-          "C": "A. cerebri media (lentikulostriat dallar)",
-          "D": "A. cerebri posterior",
-          "E": "A. choroidea anterior"
-        },
-        "correct_answer": "C",
+        "options": [
+          "A) A. cerebri anterior",
+          "B) A. communicans posterior",
+          "C) A. cerebri media (lentikulostriat dallar)",
+          "D) A. cerebri posterior",
+          "E) A. choroidea anterior"
+        ],
+        "correct_answer": "C) A. cerebri media (lentikulostriat dallar)",
         "explanation": "Hipertansif intraserebral kanama en sık bazal ganglion/capsula interna bölgesinde görülür. Bu bölgenin kanlanması A. cerebri media'nın lentikulostriat dalları (perforan arterler) tarafından sağlanır. Bu arterler 'hemorajik inme arterleri' olarak da bilinir. Capsula interna lezyonu kontralateral hemipleji yapar."
       },
       {
         "case": "50 yaşında kadın hasta ani başlayan şiddetli baş ağrısı ('hayatımın en kötü baş ağrısı'), kusma ve ense sertliği ile acile başvuruyor. BT'de bazal sisternalarda yaygın kanama saptanıyor. Bu klinik tabloda en sık neden nedir?",
-        "options": {
-          "A": "Hipertansif intraserebral kanama",
-          "B": "AVM rüptürü",
-          "C": "Berry (sakküler) anevrizma rüptürü",
-          "D": "Kavernöz malformasyon kanaması",
-          "E": "Dural AV fistül"
-        },
-        "correct_answer": "C",
+        "options": [
+          "A) Hipertansif intraserebral kanama",
+          "B) AVM rüptürü",
+          "C) Berry (sakküler) anevrizma rüptürü",
+          "D) Kavernöz malformasyon kanaması",
+          "E) Dural AV fistül"
+        ],
+        "correct_answer": "C) Berry (sakküler) anevrizma rüptürü",
         "explanation": "Ani şiddetli baş ağrısı (thunderclap headache), ense sertliği ve bazal sisternal kanama subaraknoid kanamayı (SAK) gösterir. SAK'ın en sık nedeni berry (sakküler) anevrizma rüptürüdür (%85). En sık anevrizma yeri A. communicans anterior'dur. Tanıda BT (%95 sensitif ilk 24 saatte) ve LP (ksantokromi) kullanılır."
       }
     ]
@@ -1791,26 +1791,26 @@
     "clinical_cases": [
       {
         "case": "60 yaşında kadın hasta her iki kulakta ilerleyici işitme kaybı ile başvuruyor. Weber testinde ses ortada lateralize olmuyor, Rinne testinde hava yolu iletimi kemik yolundan kısa. Timpanogram tip As (düşük kompliyanslı). Bu hastada en olası tanı nedir?",
-        "options": {
-          "A": "Prezbiakuzi",
-          "B": "Meniere hastalığı",
-          "C": "Otoskleroz",
-          "D": "Akustik nöroma",
-          "E": "Otitis media seröz"
-        },
-        "correct_answer": "C",
+        "options": [
+          "A) Prezbiakuzi",
+          "B) Meniere hastalığı",
+          "C) Otoskleroz",
+          "D) Akustik nöroma",
+          "E) Otitis media seröz"
+        ],
+        "correct_answer": "C) Otoskleroz",
         "explanation": "İlerleyici bilateral iletim tipi işitme kaybı (Rinne negatif: kemik > hava) ve tip As timpanogram otosklerozu düşündürür. Otosklerozda stapes tabanı oval pencereye fikse olur ve ses iletimi bozulur. Stapes cerrahisi (stapedotomi/stapedektomi) tedavide kullanılır. Carhart çentiği (2000 Hz'de kemik yolunda düşme) odyometride karakteristik bulgudur."
       },
       {
         "case": "45 yaşında erkek hasta kafa travması sonrası çift görme (diplopi) şikayetiyle başvuruyor. Diplopi özellikle merdiven inerken artıyor. Muayenede sol göz aşağı bakışta güçsüz ve hasta başını sağa eğme eğiliminde. En olası lezyon hangisidir?",
-        "options": {
-          "A": "Sol CN III felci",
-          "B": "Sol CN IV felci",
-          "C": "Sol CN VI felci",
-          "D": "Sağ CN IV felci",
-          "E": "Sol orbita taban kırığı"
-        },
-        "correct_answer": "B",
+        "options": [
+          "A) Sol CN III felci",
+          "B) Sol CN IV felci",
+          "C) Sol CN VI felci",
+          "D) Sağ CN IV felci",
+          "E) Sol orbita taban kırığı"
+        ],
+        "correct_answer": "B) Sol CN IV felci",
         "explanation": "Merdiven inerken artan diplopi (aşağı bakış güçsüzlüğü), sol göz depresyon kısıtlılığı ve başı karşı tarafa (sağa) eğme CN IV (trochlear sinir) felcini gösterir. CN IV, M. obliquus superior'u innerve eder. CN IV en uzun intrakranial seyirli ve kafa travmasına en duyarlı kranial sinirdir."
       }
     ]
@@ -1932,26 +1932,26 @@
     "clinical_cases": [
       {
         "case": "35 yaşında kadın hasta paroksismal hipertansiyon atakları, çarpıntı, baş ağrısı ve terleme ile başvuruyor. 24 saatlik idrarda VMA (vanilmandelik asit) yüksek bulunuyor. BT'de sol böbreküstü bezinde 4 cm kitle saptanıyor. En olası tanı nedir?",
-        "options": {
-          "A": "Cushing sendromu (adrenal adenom)",
-          "B": "Conn sendromu (aldosteronoma)",
-          "C": "Feokromositoma",
-          "D": "Adrenokortikal karsinom",
-          "E": "Nöroblastom"
-        },
-        "correct_answer": "C",
+        "options": [
+          "A) Cushing sendromu (adrenal adenom)",
+          "B) Conn sendromu (aldosteronoma)",
+          "C) Feokromositoma",
+          "D) Adrenokortikal karsinom",
+          "E) Nöroblastom"
+        ],
+        "correct_answer": "C) Feokromositoma",
         "explanation": "Paroksismal hipertansiyon, çarpıntı, baş ağrısı ve terleme triadı, yüksek idrar VMA ve adrenal kitle feokromositomayı gösterir. Feokromositoma adrenal medullanın kromaffin hücrelerinden kaynaklanan katekolamin salgılayan tümördür. %10 bilateral, %10 malign, %10 ekstraadrenal (paraganglioma). MEN 2A ve 2B, VHL sendromu ile ilişkilidir."
       },
       {
         "case": "62 yaşında erkek hasta halsizlik, makrositik anemi ve periferik yaymada hipersegmente nötrofiller saptanıyor. Serum vitamin B12 düzeyi çok düşük. Bu hastada intrinsik faktör eksikliğinin en olası nedeni nedir?",
-        "options": {
-          "A": "Terminal ileum rezeksiyonu",
-          "B": "Otoimmün atrofik gastrit (pernisiyöz anemi)",
-          "C": "Pankreas yetmezliği",
-          "D": "Çölyak hastalığı",
-          "E": "Helicobacter pylori enfeksiyonu"
-        },
-        "correct_answer": "B",
+        "options": [
+          "A) Terminal ileum rezeksiyonu",
+          "B) Otoimmün atrofik gastrit (pernisiyöz anemi)",
+          "C) Pankreas yetmezliği",
+          "D) Çölyak hastalığı",
+          "E) Helicobacter pylori enfeksiyonu"
+        ],
+        "correct_answer": "B) Otoimmün atrofik gastrit (pernisiyöz anemi)",
         "explanation": "B12 eksikliği, makrositik anemi ve hipersegmente nötrofiller megaloblastik anemiyi gösterir. İntrinsik faktör (IF) eksikliğinin en sık nedeni otoimmün atrofik gastrit (pernisiyöz anemi)dir. Parietal hücrelere karşı anti-parietal hücre antikorları ve anti-IF antikorları üretilir. IF olmadan terminal ileumda B12 emilimi olmaz."
       }
     ]
@@ -2060,26 +2060,26 @@
     "clinical_cases": [
       {
         "case": "55 yaşında erkek hasta sol supraklaviküler fossada sert, ağrısız, hareketsiz lenf nodu şişliği ile başvuruyor. Kilo kaybı ve iştahsızlık mevcut. Endoskopide mide antrumunda ülserovejetan kitle saptanıyor. Sol supraklaviküler lenfadenopatinin anatomik açıklaması nedir?",
-        "options": {
-          "A": "Direkt lenfatik drenaj yoluyla",
-          "B": "Hematojen metastaz",
-          "C": "Ductus thoracicus yoluyla sol angulus venosus bölgesine metastaz",
-          "D": "Transselomik yayılım",
-          "E": "Perinöral invazyon"
-        },
-        "correct_answer": "C",
+        "options": [
+          "A) Direkt lenfatik drenaj yoluyla",
+          "B) Hematojen metastaz",
+          "C) Ductus thoracicus yoluyla sol angulus venosus bölgesine metastaz",
+          "D) Transselomik yayılım",
+          "E) Perinöral invazyon"
+        ],
+        "correct_answer": "C) Ductus thoracicus yoluyla sol angulus venosus bölgesine metastaz",
         "explanation": "Mide kanserinin sol supraklaviküler lenf noduna metastazı (Virchow nodülü / Troisier bulgusu) ductus thoracicus yoluyla gerçekleşir. Abdominal organlardan lenfatik drenaj ductus thoracicus ile yukarı taşınarak sol angulus venosus'a (sol V. jugularis interna + sol V. subclavia birleşimi) ulaşır. Bu bölgedeki lenf nodlarına retrograd metastaz yapılır."
       },
       {
         "case": "40 yaşında erkek hasta sağ kasık bölgesinde şişlik ile başvuruyor. Muayenede şişlik öksürükle belirginleşiyor. Palpasyonda şişlik A. epigastrica inferior'un medialinden çıkıyor ve doğrudan inguinal kanal arka duvarından geçiyor. Bu hastadaki fıtık tipi nedir?",
-        "options": {
-          "A": "İndirekt inguinal fıtık",
-          "B": "Direkt inguinal fıtık",
-          "C": "Femoral fıtık",
-          "D": "Spigelian fıtık",
-          "E": "Obturator fıtık"
-        },
-        "correct_answer": "B",
+        "options": [
+          "A) İndirekt inguinal fıtık",
+          "B) Direkt inguinal fıtık",
+          "C) Femoral fıtık",
+          "D) Spigelian fıtık",
+          "E) Obturator fıtık"
+        ],
+        "correct_answer": "B) Direkt inguinal fıtık",
         "explanation": "A. epigastrica inferior'un medialinden çıkan ve inguinal kanalın arka duvarından (Hesselbach üçgeni) geçen fıtık direkt inguinal fıtıktır. Direkt fıtık iç inguinal halkadan geçmez, inguinal kanalın arka duvarının zayıflığından kaynaklanır. İndirekt fıtık ise A. epigastrica inferior'un lateralinden (iç inguinal halkadan) çıkarak spermatik kord boyunca ilerler."
       }
     ]

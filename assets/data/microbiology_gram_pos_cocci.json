@@ -15,7 +15,8 @@
         "tags": [
           "Protein A",
           "S. aureus"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Protein A, IgG'nin Fc kısmını 'ters' tutar — opsonizasyonu engeller. S. aureus bu proteini bir kalkan gibi kullanır; tıpkı askerin dürbünü ters çevirip düşmanı küçük göstermesi gibi."
       },
       {
         "id": "fc-gpc-1001",
@@ -24,7 +25,8 @@
         "difficulty": "medium",
         "tags": [
           "TSST-1"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: TSST-1 toksini, tampon kullanan kadında süper antijen olarak T hücrelerini kitlesel uyarır. Sitokin fırtınası başlar — ateş, şok ve döküntü her yeri sarar."
       },
       {
         "id": "fc-gpc-1002",
@@ -33,7 +35,8 @@
         "difficulty": "easy",
         "tags": [
           "Besin Zehirlenmesi"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: S. aureus enterotoksini, dondurma ve mayonezde hazır bekler. 1-6 saat içinde kusma başlar — toksin ısıya dayanıklıdır, yemeği ısıtmak bile onu öldürmez."
       }
     ],
     "tus_spots": [
@@ -50,7 +53,7 @@
           "Toksik Şok Sendromu",
           "Menenjit",
           "Kawasaki Hastalığı",
-          "E) Hiçbiri"
+          "E) Integronlar"
         ],
         "correct_answer": "Toksik Şok Sendromu",
         "explanation": "Tampon kullanımı ve çoklu sistem tutulumu TSST-1'e bağlı stafilokokal toksik şok sendromunu düşündürür.",
@@ -73,7 +76,8 @@
         "difficulty": "medium",
         "tags": [
           "Otolizin"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Otolizin (LytA), pnömokokun kendi kendini yiyen enzimi — bekleyen koloniler ortadan çöker ve nargile tepsisi gibi çukurlaşır. Kendi yıkımıyla tanınır."
       },
       {
         "id": "fc-gpc-1101",
@@ -82,7 +86,8 @@
         "difficulty": "easy",
         "tags": [
           "Hastalıklar"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Pnömokok, lober pnömoninin kralıdır — pas rengi balgamı ve lanset şeklinde diplokokları onun imzasıdır. Toplumda gelişen pnömonide ilk akla gelen isimdir."
       }
     ],
     "tus_spots": [
@@ -99,7 +104,7 @@
           "S. aureus",
           "S. pneumoniae",
           "M. catarrhalis",
-          "E) Hiçbiri"
+          "E) Integronlar"
         ],
         "correct_answer": "S. pneumoniae",
         "explanation": "Lober tutulum, pas rengi balgam ve gram pozitif diplokoklar tipik pnömokok bulgularıdır.",
@@ -123,7 +128,8 @@
         "tags": [
           "ASO",
           "Deri"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Derideki kolesterol, Streptolizin O'nun düşmanıdır — onu inaktive eder. Bu yüzden deri enfeksiyonunda ASO yükselmez; tıpkı suyun ateşi söndürmesi gibi kolesterol toksini söndürür."
       },
       {
         "id": "fc-gpc-1201",
@@ -132,7 +138,8 @@
         "difficulty": "medium",
         "tags": [
           "Kızıl"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Kızıl hastalığında eritrojenik toksin deriyi kızartır, kıvrımlarda Pastia çizgileri belirir. Çilek dili, kızarık deri ve çizgiler — tıpkı kırmızı boyayla çizilmiş bir tablo gibi."
       }
     ],
     "tus_spots": [
@@ -149,7 +156,7 @@
           "Kızıl",
           "Kızamıkçık",
           "El-Ayak-Ağız Hastalığı",
-          "E) Hiçbiri"
+          "E) Integronlar"
         ],
         "correct_answer": "Kızıl",
         "explanation": "Eksudatif farenjit, çilek dili ve yaygın döküntü S. pyogenes'in pirojenik ekzotoksinine bağlı Kızıl (Scarlet fever) tablosudur.",

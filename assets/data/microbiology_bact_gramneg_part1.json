@@ -16,7 +16,8 @@
           "E. coli",
           "ETEC",
           "Turist Diyaresi"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Tatilci bir turist (ETEC) egzotik bir ülkeye gider. Orada iki hırsız ikizi (LT ve ST) cebindeki cAMP ve cGMP anahtarlarını çalarak bağırsak kapılarını sonuna kadar açar — su sel gibi akar ve tatil kabusa döner."
       },
       {
         "id": "fc-micro-601",
@@ -27,7 +28,8 @@
           "EHEC",
           "STEC",
           "HÜS"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Kanlı bir kasap (EHEC O157:H7) Shiga adlı bir kılıçla bağırsak duvarlarını keser, kan fışkırır (hemorajik kolit). Kan damlacıkları böbreklere sıçrayıp böbrek filtresini tıkar — HÜS başlar ve trombositler savaş meydanında eriyip gider."
       },
       {
         "id": "fc-micro-602",
@@ -38,7 +40,8 @@
           "E. coli",
           "Menenjit",
           "K1"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Yenidoğan bebeğin beyin kalesine saldıran E. coli askerleri, K1 marka görünmezlik kapsülü takarak bağışıklık nöbetçilerinin gözünden kaçar. Bu kapsül o kadar etkilidir ki askerlerin %80'i meninks surlarını aşmayı başarır."
       }
     ],
     "tus_spots": [
@@ -64,7 +67,8 @@
           "Tifo",
           "Salmonella",
           "Widal"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Dedektif Gruber ve yardımcısı Widal, Tifo suçlusunu arıyor. Kanıtı bulmak için kemik iliği madenlerin derinliklerine inerler — çünkü altın standart oradadır. Maden girişinde serolojik kimlik kontrolü yaparak suçluyu yakalarlar."
       },
       {
         "id": "fc-micro-651",
@@ -74,7 +78,8 @@
         "tags": [
           "Shigella",
           "İnvazyon"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Shigella adlı bir ninja, bağırsak kalesinin gizli M kapısını (M hücreleri) keşfeder. Bu özel kapıdan süzülerek mukoza duvarının içine sızar ve içeriden isyan başlatır — kanlı dizanteri savaşı patlak verir."
       },
       {
         "id": "fc-micro-652",
@@ -83,7 +88,8 @@
         "difficulty": "easy",
         "tags": [
           "Shigella sonnei"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Shigella ailesinin dört kardeşinden en sosyal olanı Sonnei'dir — 'Son ne?' diye sürekli soru sorar ve her yerde boy gösterir. Grup D takımının kaptanı olarak en sık sahaya çıkan ve en çok vaka yapan Shigella oyuncusudur."
       }
     ],
     "tus_spots": [
@@ -109,7 +115,8 @@
         "tags": [
           "Pseudomonas",
           "Ekzotoksin A"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Pseudomonas fabrikasının baş sabotajcısı Ekzotoksin A, protein üretim bandındaki EF-2 mühendisini ADP-riboz kelepçesiyle bağlar. Mühendis çalışamayınca fabrika durur — hücre artık tek bir protein bile üretemez."
       },
       {
         "id": "fc-micro-701",
@@ -120,7 +127,8 @@
           "Pseudomonas",
           "Kistik Fibrozis",
           "Aljinat"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: KF hastasının akciğerlerine yerleşen Pseudomonas, aljinat adlı yapışkan bir jöle kalkanı (biyofilm) örer. Bu jöle zırh o kadar kalındır ki ne antibiyotik mermileri ne de bağışıklık askerleri içeri girebilir — bakteri orada yıllarca rahatça yaşar."
       }
     ],
     "tus_spots": [

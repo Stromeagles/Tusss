@@ -7,7 +7,11 @@
       "question": "Ateroskleroz patogenezinin 'yanıt-yaralanmaya' (response-to-injury) hipotezi nedir?",
       "answer": "[[Endotel hasarı]] → [[LDL oksidasyonu]] → [[Köpük hücre]] oluşumu (lipid dolu makrofaj) → [[Düz kas göçü]] → Plak. [[Stabil plak]] kalın fibröz başlığa sahiptir.",
       "difficulty": "Orta",
-      "tags": ["Ateroskleroz", "Kardiyovasküler"],
+      "tags": [
+        "Ateroskleroz",
+        "Kardiyovasküler"
+      ],
+      "story_hint": "💡 HİKAYE: Ateroskleroz bir boru tıkanması gibidir: endotel çizilir, LDL boruya sızar ve okside olur, makrofajlar LDL'yi yutar ve köpük hücresine dönüşür. Düz kas hücreleri de gelip plağı büyütür. Stabil plak kalın başlıklıdır.",
       "ai_coding": "🤖 Kodlama: Ateroskleroz = 'Endotel yaralandı → LDL gömüldü → Köpük hücre → Plak'."
     },
     {
@@ -15,7 +19,12 @@
       "question": "Miyokard enfarktüsünde histolojik değişikliklerin zamansal seyri nedir?",
       "answer": "4-12 saat: [[Wavy fiber]] (dalgalı lif). 12-24 saat: [[Koagülatif nekroz]] + [[Nötrofil]]. 3-7 gün: [[Makrofaj]] (granülasyon dokusu). 3 hafta: [[Fibrozis]] (skar).",
       "difficulty": "Zor",
-      "tags": ["MI", "Histoloji", "Zamansal"],
+      "tags": [
+        "MI",
+        "Histoloji",
+        "Zamansal"
+      ],
+      "story_hint": "💡 HİKAYE: MI'da kalp bir yangın sonrası bina gibidir: ilk saatlerde duvarlar dalgalanır (wavy fiber), sonra nötrofil itfaiyeciler gelir, 3-7 günde makrofaj temizlik ekibi enkaz kaldırır (granülasyon), 3 haftada skar onarımı tamamlanır.",
       "ai_coding": "🤖 Kodlama: 0-4h=normal, 4-12h=dalgalı lif, 12-24h=nötrofil, 3-7gün=makrofaj, 3hafta=skar."
     },
     {
@@ -23,7 +32,11 @@
       "question": "Miyokard enfarktüsünün komplikasyonları ve zamanlaması nedir?",
       "answer": "İlk 24 saat: [[Aritmiler]] (VF). 3-7 gün: [[Rüptür]] (papiller kas, serbest duvar, IVS). 4-6 hafta: [[Dressler sendromu]].",
       "difficulty": "Zor",
-      "tags": ["MI", "Komplikasyon"],
+      "tags": [
+        "MI",
+        "Komplikasyon"
+      ],
+      "story_hint": "💡 HİKAYE: MI komplikasyonları bir zaman çizelgesidir: ilk gün elektrik kaçağı (aritmiler/VF), 3-7. günde duvar zayıflayıp çökebilir (rüptür - en tehlikeli dönem), 4-6. haftada Dressler otoimmün perikardit yaparak \"ben hala buradayım\" der.",
       "ai_coding": "🤖 Kodlama: MI komplikasyon = '24h=VF, 3-7gün=rüptür, Haftalarca=Dressler'."
     },
     {
@@ -31,7 +44,12 @@
       "question": "Dilate kardiyomiyopati ile hipertrofik kardiyomiyopatinin karşılaştırılması nedir?",
       "answer": "[[Dilate KMP]]: [[Sistolik disfonksiyon]]. [[Hipertrofik KMP]]: [[Asimetrik septal hipertrofi]] + [[Diastolik disfonksiyon]]. [[Sarkomer]] gen mutasyonları ([[MYH7]] gibi) görülür.",
       "difficulty": "Orta",
-      "tags": ["Kardiyomiyopati", "Dilate", "HCM"],
+      "tags": [
+        "Kardiyomiyopati",
+        "Dilate",
+        "HCM"
+      ],
+      "story_hint": "💡 HİKAYE: Dilate KMP kalbin balona dönmesidir: şişer ama sıkamaz (sistolik bozukluk). HCM ise kalp duvarının aşırı kalınlaşmasıdır: kasılır ama gevşeyemez (diastolik bozukluk). HCM'de septum özellikle şişer ve genç sporcularda ani ölüm yapar.",
       "ai_coding": "🤖 Kodlama: Dilate = 'Kalp balona döner' (sistolik bozuk). HCM = 'Duvar şişer' (diastolik bozuk)."
     },
     {
@@ -39,7 +57,12 @@
       "question": "Akut romatizmal ateşin kardiyak tutulumunda hangi patolojik bulgu patognomiktir?",
       "answer": "[[Aschoff nodülü]]. İçinde [[Anitschkow hücreleri]] ('caterpillar'/tırtık nükleuslu) bulunur. Kapak tutulumunda [[MacCallum plağı]] görülebilir.",
       "difficulty": "Zor",
-      "tags": ["Romatizmal Ateş", "Aschoff", "Kardiyak"],
+      "tags": [
+        "Romatizmal Ateş",
+        "Aschoff",
+        "Kardiyak"
+      ],
+      "story_hint": "💡 HİKAYE: Akut romatizmal ateş kalbe Aschoff nodülü mührünü basar. İçinde Anitschkow hücreleri tırtıl gibi kıvrılmış nükleusleriyle görülür. MacCallum plağı ise kapakta bırakılan kalıcı iz gibidir.",
       "ai_coding": "🤖 Kodlama: ARA = Aschoff nodülü = 'Tırtıklı nükleus' = Kardiyak patoloji imzası."
     },
     {
@@ -47,7 +70,11 @@
       "question": "İnfektif endokarditte vejetasyon özellikleri ve en sık nedenler nelerdir?",
       "answer": "Akut: [[S. aureus]] (normal kapak). Subakut: [[S. viridans]] (anormal kapak). IV ilaç: [[Triküspid]] tutulumu. Prostetik kapak: [[S. epidermidis]].",
       "difficulty": "Orta",
-      "tags": ["İnfektif Endokardit", "Vejetasyon"],
+      "tags": [
+        "İnfektif Endokardit",
+        "Vejetasyon"
+      ],
+      "story_hint": "💡 HİKAYE: İnfektif endokardit bir kapak işgalidir: S. aureus agresif bir fatih gibi normal kapağı bile ele geçirir (akut). S. viridans ise fırsatçıdır: sadece zaten hasarlı kapağa yerleşir (subakut). IV madde kullananlar sağ kalp kapağını açık bırakır (triküspid).",
       "ai_coding": "🤖 Kodlama: Akut=S.aureus, Subakut=Viridans. IV ilaç=Sağ kalp=Triküspid."
     },
     {
@@ -55,7 +82,11 @@
       "question": "Kardiyak tamponadın temel patolojisi ve Beck triadı nedir?",
       "answer": "[[Diastolik dolum]] bozukluğu. [[Beck triadı]]: [[Hipotansiyon]] + [[JVP yükselmesi]] + [[Muffled (derinden gelen) kalp sesleri]]. [[Paradoksal nabız]].",
       "difficulty": "Orta",
-      "tags": ["Kardiyak Tamponad", "Perikardit"],
+      "tags": [
+        "Kardiyak Tamponad",
+        "Perikardit"
+      ],
+      "story_hint": "💡 HİKAYE: Kardiyak tamponad kalbin sıkıştırılmış bir balonun içine konması gibidir: kalp genişleyemez, diastolik dolum bozulur. Beck triadı üç alarm verir: tansiyon düşer, boyun venleri şişer, kalp sesleri boğuklaşır. Paradoksal nabız da nefes alırken zayıflar.",
       "ai_coding": "🤖 Kodlama: Tamponad = 'Beck triadı + Paradoks nabız'. Perikard baskı altında."
     },
     {
@@ -63,7 +94,12 @@
       "question": "Akut lösemilerde ALL ve AML'nin tipik yaş, hücre markeri ve prognoz farklılıkları nelerdir?",
       "answer": "[[ALL]]: Çocuk, [[TdT (+)]], [[CD10 (+)]]. [[AML]]: Erişkin, [[Auer rod (+)]], [[MPO (+)]].",
       "difficulty": "Orta",
-      "tags": ["ALL", "AML", "Akut Lösemi"],
+      "tags": [
+        "ALL",
+        "AML",
+        "Akut Lösemi"
+      ],
+      "story_hint": "💡 HİKAYE: ALL çocukların hastalığıdır: TdT ve CD10 rozetleri taşır, tedaviye iyi yanıt verir. AML ise yetişkinlerin hastalığıdır: Auer rod kılıcı ve MPO zırhı ile donanmıştır. ALL = Lenfoid, AML = Miyeloid.",
       "ai_coding": "🤖 Kodlama: ALL = TdT(+), Çocuk, İyi prognoz. AML = Auer rod, Yetişkin. Down = AML."
     },
     {
@@ -71,7 +107,12 @@
       "question": "Kronik miyeloid lösemi (KML) Philadelphia kromozomunun moleküler hedefi nedir?",
       "answer": "[[t(9;22)]] → [[Philadelphia kromozomu]] → [[BCR-ABL1]] füzyon geni. Tedavi: [[İmatinib]] (tirozin kinaz inhibitörü).",
       "difficulty": "Orta",
-      "tags": ["KML", "Philadelphia", "BCR-ABL"],
+      "tags": [
+        "KML",
+        "Philadelphia",
+        "BCR-ABL"
+      ],
+      "story_hint": "💡 HİKAYE: Philadelphia kromozomu 9 ve 22 numaralı kromozomların el sıkışmasıdır: BCR-ABL füzyon geni doğar ve hücrelere \"durmadan bölün\" emri verir. İmatinib bu füzyon geninin kilidini kapatır ve KML'yi kontrol altına alır.",
       "ai_coding": "🤖 Kodlama: Philadelphia = t(9;22) = BCR-ABL. İmatinib = 'BCR-ABL kilidi'. KML tedavisi."
     },
     {
@@ -79,7 +120,11 @@
       "question": "Polisitemia vera (PV) ile sekonder polisiteminin farkı nedir?",
       "answer": "[[PV]]: [[JAK2 V617F mutasyonu]], [[EPO düşüktür]]. Sekonder: Hipoksi veya tümör kaynaklı, [[EPO yüksektir]].",
       "difficulty": "Orta",
-      "tags": ["Polisitemia Vera", "JAK2"],
+      "tags": [
+        "Polisitemia Vera",
+        "JAK2"
+      ],
+      "story_hint": "💡 HİKAYE: PV'de kemik iliği JAK2 V617F mutasyonuyla \"kendi başına\" aşırı üretim yapar, EPO'ya ihtiyaç duymaz (EPO düşük). Sekonder polisitemide ise vücut oksijen açlığından EPO çığlığı atar (EPO yüksek) ve iliği uyarır.",
       "ai_coding": "🤖 Kodlama: PV = JAK2 + EPO düşük. Sekonder = Epo yüksek (hipoksi/tümör)."
     },
     {
@@ -87,7 +132,11 @@
       "question": "Otoimmün hemolitik anemi (AIHA): Sıcak tip ile soğuk tip antikoru nedir?",
       "answer": "[[Sıcak AIHA]]: [[IgG]] → [[Dalakta]] hemoliz. [[Soğuk AIHA]]: [[IgM]] → [[Kompleman]] aracılı hemoliz (Mycoplasma/EBV sonrası).",
       "difficulty": "Zor",
-      "tags": ["AIHA", "Hemolitik Anemi"],
+      "tags": [
+        "AIHA",
+        "Hemolitik Anemi"
+      ],
+      "story_hint": "💡 HİKAYE: Sıcak AIHA'da IgG antikorları eritrositlere yapışır ve dalak onları yutar (ekstravasküler hemoliz). Soğuk AIHA'da IgM antikorları soğukta aktifleşir, kompleman çağırır ve eritrositler damar içinde patlar. Mycoplasma ve EBV soğuk tipi tetikler.",
       "ai_coding": "🤖 Kodlama: Sıcak = IgG = Dalak. Soğuk = IgM = Kompleman. Sıcak-SLE, Soğuk-Mycoplasma."
     },
     {
@@ -95,7 +144,11 @@
       "question": "Talasemi alfa ve beta tiplerinin patogenik mekanizması ve klinik şiddeti nedir?",
       "answer": "[[β-Talasemi]]: [[β-zincir]] sentezi azlığı → [[α zincir agregasyonu]] → Eritrosit hasarı. [[α-Talasemi]]: Gen [[delesyonuna]] bağlıdır.",
       "difficulty": "Orta",
-      "tags": ["Talasemi", "Hemoglobinopatiler"],
+      "tags": [
+        "Talasemi",
+        "Hemoglobinopatiler"
+      ],
+      "story_hint": "💡 HİKAYE: Beta-talasemide beta zincir fabrikası yavaşlar, alfa zincirleri eşsiz kalır ve birbirine yapışarak eritrositi zehirler. Alfa-talasemide gen sayısı azalır (4'ten 0'a): 1 gen silinmesi sessiz, 4 gen silinmesi ölümcüldür (hidrops fetalis).",
       "ai_coding": "🤖 Kodlama: β-Tal = 'β azaldı, α fazla birikti'. 4 lokus α: 1 del=taşıyıcı, 4 del=hidrops."
     },
     {
@@ -103,7 +156,11 @@
       "question": "Orak hücreli anemide patofizyoloji ve organların tutulumu nedir?",
       "answer": "[[HbS]]: β6 [[Glu→Val]] mutasyonu. [[Oto-splenektomi]] (dalak infarktı) → Kapsüllü bakteri enfeksiyonu riski.",
       "difficulty": "Orta",
-      "tags": ["Orak Hücreli Anemi", "HbS"],
+      "tags": [
+        "Orak Hücreli Anemi",
+        "HbS"
+      ],
+      "story_hint": "💡 HİKAYE: Orak hücreli anemide bir amino asit değişimi (Glu yerine Val) eritrositi orak şekline sokar. Orak eritrositler dalağı tıkar ve dalak kendi kendini yok eder (oto-splenektomi). Dalaksız kalan hasta kapsüllü bakterilere savunmasız kalır.",
       "ai_coding": "🤖 Kodlama: HbS = Glu→Val β6. Oto-splenektomi = Kapsüllü bakteri savunması biter."
     },
     {
@@ -111,7 +168,11 @@
       "question": "Demir eksikliği anemisinde laboratuvar bulguları sırası nedir?",
       "answer": "İlk: [[Ferritin düşer]]. Sonra: [[TIBC artar]] → [[Mikrositik hipokromik anemi]] gelişir.",
       "difficulty": "Orta",
-      "tags": ["Demir Eksikliği", "Anemi"],
+      "tags": [
+        "Demir Eksikliği",
+        "Anemi"
+      ],
+      "story_hint": "💡 HİKAYE: Demir eksikliği bir depodaki stok azalması gibidir: önce depo boşalır (ferritin düşer), sonra kamyonlar boş döner (TIBC artar çünkü transferrin demir arıyor), en sonunda ürünler küçülür ve soluklaşır (mikrositik hipokromik anemi).",
       "ai_coding": "🤖 Kodlama: DEA sırası: Ferritin↓→TIBC↑→Fe↓→Sat%↓→Mikrositik."
     },
     {
@@ -119,7 +180,12 @@
       "question": "Prostat adenokarsinomunda Gleason skorlama sistemi nedir?",
       "answer": "[[Gleason skoru]]: En sık iki paternin toplamı (örn: [[3+4=7]]). [[Periferik zon]] kaynaklıdır.",
       "difficulty": "Orta",
-      "tags": ["Prostat", "Gleason", "Karsinom"],
+      "tags": [
+        "Prostat",
+        "Gleason",
+        "Karsinom"
+      ],
+      "story_hint": "💡 HİKAYE: Gleason skoru prostat kanserinin \"karne notu\"dur: iki en yaygın paternin puanı toplanır. 3+4=7 ile 4+3=7 farklıdır: baskın patern 4 olan daha kötüdür. Karsinom periferik zondan çıkar, BPH ise transizyonel zondan.",
       "ai_coding": "🤖 Kodlama: Gleason = 'İki bölgenin puanı toplanır'. 7=4+3 > 7=3+4 kötülük."
     },
     {
@@ -127,7 +193,12 @@
       "question": "Prostat spesifik antijen (PSA)'nın tarama limitasyonları nelerdir?",
       "answer": "PSA [[kanser spesifik değildir]]. [[BPH]] ve [[prostatit]] de yükseltir.",
       "difficulty": "Kolay",
-      "tags": ["PSA", "Prostat", "Tarama"],
+      "tags": [
+        "PSA",
+        "Prostat",
+        "Tarama"
+      ],
+      "story_hint": "💡 HİKAYE: PSA prostatın kimlik kartıdır, kanserin değil. BPH (iyi huylu büyüme), prostatit (iltihap) ve hatta bisiklete binmek bile PSA'yı yükseltebilir. Yüksek PSA = kesinlikle kanser diye düşünme, prostata özgü ama kansere özgü değil!",
       "ai_coding": "🤖 Kodlama: PSA = 'Prostat'a özgün, kansere özgün değil'. BPH de yükseltir."
     },
     {
@@ -135,7 +206,12 @@
       "question": "Testis tümörlerinde seminom ile non-seminom arasındaki fark nedir?",
       "answer": "[[Seminom]]: [[Radyosensitif]], [[AFP normal]]. [[Yolk sac]]: [[AFP yüksek]]. [[Koryokarsinom]]: [[β-hCG çok yüksek]].",
       "difficulty": "Orta",
-      "tags": ["Testis", "Seminom", "Non-seminom"],
+      "tags": [
+        "Testis",
+        "Seminom",
+        "Non-seminom"
+      ],
+      "story_hint": "💡 HİKAYE: Seminom iyi huylu bir öğrenci gibidir: radyoterapiye çok iyi yanıt verir ve AFP'si normaldir. Yolk sac AFP rozetini takar, koryokarsinom ise hCG bayrağını dalgalandırır. Tümör markerleri ile kimlikleri belirlenir.",
       "ai_coding": "🤖 Kodlama: Seminom = Radyosensitif. Yolk sac = AFP. Koryokarsinom = hCG."
     },
     {
@@ -143,7 +219,12 @@
       "question": "Benign prostat hiperplazisi (BPH) ve adenokarsinomun başladığı zona nedir?",
       "answer": "[[BPH]]: [[Transizyonel zon]]. [[Adenokarsinom]]: [[Periferik zon]].",
       "difficulty": "Orta",
-      "tags": ["Prostat", "BPH", "Zon"],
+      "tags": [
+        "Prostat",
+        "BPH",
+        "Zon"
+      ],
+      "story_hint": "💡 HİKAYE: Prostat bir halka gibidir: BPH transizyonel zonda (iç halka) büyür ve üretrayı sıkıştırır. Adenokarsinom ise periferik zonda (dış halka) sessizce büyür ve geç fark edilir. Parmak muayenesinde dış halkadaki sertlik hissedilir.",
       "ai_coding": "🤖 Kodlama: BPH = Transizyonel zon. Karsinom = Periferik zon."
     },
     {
@@ -151,7 +232,12 @@
       "question": "Kriptorşidizm ile testis kanseri arasındaki ilişki nedir?",
       "answer": "[[Kriptorşidizm]]: Testis kanseri riskini artırır. [[Orkiopeksi]] (testisi indirme) riski tamamen ortadan kaldırmaz.",
       "difficulty": "Orta",
-      "tags": ["Kriptorşidizm", "Testis", "Kanser"],
+      "tags": [
+        "Kriptorşidizm",
+        "Testis",
+        "Kanser"
+      ],
+      "story_hint": "💡 HİKAYE: Kriptorşidizmde testis karın içinde sıcak kalır ve kanser riski artar. Orkiopeksi ile testis skrotuma indirilse bile risk tamamen sıfırlanmaz: sanki testis o sıcak ortamda gördüğü hasarı hatırlar ve kanser potansiyeli taşımaya devam eder.",
       "ai_coding": "🤖 Kodlama: Kriptorşidizm = 'İnmemiş testis = Kanser riski'. Orkiopeksi erken."
     },
     {
@@ -159,8 +245,18 @@
       "question": "Myelodisplastik sendromun (MDS) AML'den farkı ve blast sınırı nedir?",
       "answer": "[[MDS]]: [[<%20 blast]]. [[AML]]: [[≥%20 blast]]. MDS'de [[ring sideroblastlar]] ([[SF3B1]]) görülebilir.",
       "difficulty": "Zor",
-      "tags": ["MDS", "AML", "Blast"],
+      "tags": [
+        "MDS",
+        "AML",
+        "Blast"
+      ],
+      "story_hint": "💡 HİKAYE: MDS AML'nin \"bekleme odası\"dır: blastlar %20'nin altındadır ve hücreler displastiktir. %20 sınırını geçince AML kapısı açılır. Ring sideroblastlar SF3B1 mutasyonunun parmak izidir: demir mitokondride halka şeklinde birikir.",
       "ai_coding": "🤖 Kodlama: MDS = '<20% blast' = Prelösemi. ≥20% = AML. Ring sideroblast = SF3B1."
     }
-  ]
+  ],
+  "id": "pathology_batch4B-topic-0",
+  "topic": "Kardiyovasküler + Hemopoetik + Erkek Genital (Batch 4B)",
+  "sub_topic": "Kardiyovasküler + Hemopoetik + Erkek Genital (Batch 4B)",
+  "content_summary": "",
+  "tus_spots": []
 }

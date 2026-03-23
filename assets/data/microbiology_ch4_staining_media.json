@@ -15,7 +15,8 @@
         "tags": [
           "Gram Boyama",
           "Lipid"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Alkol, gram boyamanın 'sınav anı'dır. Gram negatiflerin ince duvarındaki lipidler erir, mor boya dışarı sızar — tıpkı ince bir çantadan su sızması gibi. Pozitifler kalın duvarlı kasada boyayı tutar."
       },
       {
         "id": "fc-micro-061",
@@ -25,7 +26,8 @@
         "tags": [
           "Mycoplasma",
           "Gram Boyama"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Mycoplasma ve Ureaplasma, doğuştan 'çıplak' bakterilerdir — duvarları hiç yoktur. Gram boyası onları göremez, tıpkı görünmezlik pelerini giyen bir sihirbaz gibi."
       },
       {
         "id": "fc-micro-062",
@@ -35,7 +37,8 @@
         "tags": [
           "Spiroket",
           "Mikroskopi"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Spiroketler o kadar incedir ki ışık mikroskobu onları göremez. Karanlık saha mikroskobu, karanlık bir oda gibi ışığı yandan vurur ve parlayan hayaletler (Treponema, Leptospira) ortaya çıkar."
       }
     ],
     "tus_spots": [
@@ -61,7 +64,8 @@
         "tags": [
           "Besiyeri",
           "Haemophilus"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Çikolata Agar, eritrositleri ısıyla 'çikolata rengine' kavurur. İçindeki X ve V faktörleri serbest kalır — Haemophilus ve Neisseria bu çikolatalı sofrada şölene başlar."
       },
       {
         "id": "fc-micro-071",
@@ -71,7 +75,8 @@
         "tags": [
           "TBC",
           "Besiyeri"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Löwenstein-Jensen, tüberküloz basilinin 'yumurtalı kahvaltı sofrası'dır. Ama 8 hafta beklemek gerekir — bu basil dünyanın en yavaş yemek yiyen misafiridir."
       },
       {
         "id": "fc-micro-072",
@@ -82,7 +87,8 @@
           "Vibrio",
           "Sükroz",
           "TCBS"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: TCBS agarında Vibrio cholerae, sükrozu fermente edip sarı koloni yapar. Tıpkı bir limonata standında limondan sarı suyu sıkan bir satıcı gibi — sarı renk onu ele verir."
       }
     ],
     "tus_spots": [
@@ -99,7 +105,7 @@
           "Thayer-Martin",
           "Bordet-Gengau",
           "TCBS",
-          "E) Hiçbiri"
+          "E) Integronlar"
         ],
         "correct_answer": "Bordet-Gengau",
         "explanation": "Bordatella pertussis (Boğmaca) üretmek için Bordet-Gengau veya Regan-Lowe besiyerleri kullanılır.",

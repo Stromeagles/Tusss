@@ -1,3 +1,6 @@
+import java.util.Properties
+import java.io.FileInputStream
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -5,6 +8,12 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
     // Firebase
     id("com.google.gms.google-services")
+}
+
+val keystorePropertiesFile = rootProject.file("key.properties")
+val keystoreProperties = Properties()
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 }
 
 android {
@@ -34,6 +43,15 @@ android {
         multiDexEnabled = true
     }
 
+    signingConfigs {
+        create("release") {
+            keyAlias = keystoreProperties["keyAlias"] as String?
+            keyPassword = keystoreProperties["keyPassword"] as String?
+            storeFile = keystoreProperties["storeFile"]?.let { file(it as String) }
+            storePassword = keystoreProperties["storePassword"] as String?
+        }
+    }
+
     buildTypes {
         release {
             // R8/ProGuard — kod kucultme ve obfuscation
@@ -44,9 +62,8 @@ android {
                 "proguard-rules.pro"
             )
 
-            // TODO: Production icin kendi signing config'ini ekle
-            // signingConfig = signingConfigs.getByName("release")
-            signingConfig = signingConfigs.getByName("debug")
+            // Production icin signing config eklendi
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 
@@ -64,6 +81,7 @@ android {
 
 dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
+    implementation("com.google.android.gms:play-services-location:21.3.0")
 }
 
 flutter {

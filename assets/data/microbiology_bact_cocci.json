@@ -16,7 +16,8 @@
           "Katalaz",
           "Stafilokok",
           "Streptokok"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Katalaz testi, gram pozitif kokların 'kimlik kontrolü'dür. Stafilokok H2O2'yi köpürterek parçalar (katalaz +), Streptokok köpürtemez (katalaz -). Köpük varsa Stafilokok, yoksa Streptokok."
       },
       {
         "id": "fc-micro-201",
@@ -26,7 +27,8 @@
         "tags": [
           "S. saprophyticus",
           "Novobiyosin"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: S. saprophyticus, novobiyosine direnen asi bir koagülaz negatif stafilokoktur. Genç kadınlarda İYE yapar — 'Safir kız novobiyosine direnir' diye hatırla, balayı sistitinin sebebi budur."
       },
       {
         "id": "fc-micro-202",
@@ -36,7 +38,8 @@
         "tags": [
           "S. aureus",
           "Protein A"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Protein A, IgG'nin Fc kısmını ters tutar — antikor bağlanır ama opsonizasyon çalışmaz. S. aureus bu proteini bir kalkan gibi kullanır, bağışıklık sisteminin silahını etkisiz bırakır."
       }
     ],
     "tus_spots": [
@@ -63,7 +66,8 @@
           "Pnömokok",
           "Alfa Hemoliz",
           "Optokin"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Pnömokok, alfa hemolitik yeşil bir daire içinde oturan, optokine duyarlı lanset diplokoktur. Toplum kökenli pnömoninin kralıdır — pas rengi balgam onun mührüdür."
       },
       {
         "id": "fc-micro-251",
@@ -74,7 +78,8 @@
           "S. pyogenes",
           "A Grubu",
           "Basitrasin"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: A grubu streptokok (S. pyogenes), basitrasin diskinin etrafında büyüyemez — tıpkı yangın hattının içine giremeyen alevler gibi. B grubu (S. agalactiae) ise basitrasine direnir."
       },
       {
         "id": "fc-micro-252",
@@ -85,7 +90,8 @@
           "Enterokok",
           "NaCl",
           "PYR"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Enterokoklar, %6.5 tuzlu su ve safrada bile yaşayan dayanıklı askerlerdir. PYR testi pozitiftir — tuz gölünde yüzen bu bakteriler, hastane enfeksiyonlarının korkulu düşmanıdır."
       }
     ],
     "tus_spots": [
@@ -102,7 +108,7 @@
           "Poststreptokokal Glomerülonefrit",
           "Kızıl",
           "Toksik Şok Sendromu",
-          "E) Hiçbiri"
+          "E) Integronlar"
         ],
         "correct_answer": "Poststreptokokal Glomerülonefrit",
         "explanation": "A grubu beta hemolitik streptokok (S. pyogenes) enfeksiyonu sonrası gelişen nefritik tablo tipiktir. ARA için eklem ağrısı veya kalp bulguları beklenirdi.",

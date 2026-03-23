@@ -16,7 +16,8 @@
           "Sterilizasyon",
           "Otoklav",
           "Biyolojik İndikatör"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Otoklav sınavının müfettişi Bacillus stearothermophilus'tur — eğer o bile öldüyse sterilizasyon başarılıdır. 'Altın standart' denir çünkü en dayanıklı sınav sorusudur."
       },
       {
         "id": "fc-micro-041",
@@ -27,7 +28,8 @@
           "Etilen Oksit",
           "Alkilizasyon",
           "Bacillus subtilis"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Etilen Oksit gazı, bakterinin DNA'sına alkil grupları yapıştırarak onu boğar. Sınavı geçip geçmediğini kontrol eden Bacillus subtilis'tir — incelemeyi o yapar."
       },
       {
         "id": "fc-micro-042",
@@ -37,7 +39,8 @@
         "tags": [
           "Dezenfeksiyon",
           "Spaulding Sınıflaması"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Endoskop gibi mukozaya dokunan aletler 'yarı-kritik' misafirlerdir. Tam steril olmasa da yüksek düzey dezenfeksiyon şarttır — tıpkı VIP davetlilere özel güvenlik kontrolü gibi."
       }
     ],
     "tus_spots": [
@@ -63,7 +66,8 @@
         "tags": [
           "Aşı",
           "Adjuvan"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Adjuvan, aşının 'megafon'udur — antijeni tek başına fısıldayan biriyken, alüminyum tuzları megafonu eline verir ve bağışıklık sistemi onu net duyar."
       },
       {
         "id": "fc-micro-051",
@@ -74,7 +78,8 @@
           "Aşı",
           "Kontrendikasyon",
           "Gebelik"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Canlı aşılar, 'evcilleştirilmiş' virüslerdir ama yine de canlıdır. Gebeler ve bağışıklığı zayıf olanlar bu 'evcil aslanla' aynı odaya giremez — istisnası sarı humma."
       },
       {
         "id": "fc-micro-052",
@@ -84,7 +89,8 @@
         "tags": [
           "HBV",
           "Rekombinan Aşı"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Hepatit B aşısı, maya hücrelerini 'fabrika' olarak kullanır. HBsAg geni mayaya sokulur, maya bunu üretir — tıpkı bir ekmek fırınında özel sipariş pasta yapmak gibi."
       }
     ],
     "tus_spots": [
@@ -101,7 +107,7 @@
           "Lökosit Adezyon Defekti (LAD)",
           "Chediak-Higashi",
           "Kompleman eksikliği",
-          "E) Hiçbiri"
+          "E) Integronlar"
         ],
         "correct_answer": "Lökosit Adezyon Defekti (LAD)",
         "explanation": "LAD'da integrin beta (CD11/18) eksikliği vardır, nötrofiller dokuya göç edemez. Klasik bulgu göbek bağının geç düşmesidir.",

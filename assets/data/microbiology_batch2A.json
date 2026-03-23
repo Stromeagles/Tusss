@@ -7,7 +7,11 @@
       "question": "Bakterilerde 'Hfr' (High frequency of recombination) suşu ne demektir?",
       "answer": "[[F plazmidinin]] bakteriyel genoma ([[kromozoma]]) entegre olduğu suş.",
       "difficulty": "Orta",
-      "tags": ["Temel", "Genetik"],
+      "tags": [
+        "Temel",
+        "Genetik"
+      ],
+      "story_hint": "💡 HİKAYE: Düşün ki F plazmidi bir kiracı, kromozom ise ev sahibi. Hfr suşunda kiracı eve tamamen yerleşip mobilyalarını duvara çivilemiş — artık ayrılmıyor! Bu yüzden konjugasyonda kromozomal genleri de sürükleyerek çok sık rekombinasyon yapıyor.",
       "ai_coding": "🤖 Kodlama: HfR = H-ızlı R-ekombinasyon (Kromozom aktardığı için)."
     },
     {
@@ -15,7 +19,11 @@
       "question": "F' (F-prime) plazmidi nedir?",
       "answer": "Kromozoma entegre olan [[F plazmidinin]] tekrar ayrılırken yanına bir miktar [[konakçı genini]] de aldığı plazmid.",
       "difficulty": "Zor",
-      "tags": ["Temel", "Genetik"],
+      "tags": [
+        "Temel",
+        "Genetik"
+      ],
+      "story_hint": "💡 HİKAYE: F plazmidi evden taşınırken acele ediyor ve ev sahibinin birkaç eşyasını da bavuluna atıyor. Bu 'çalıntı' genlerle birlikte yeni eve gidiyor — işte F-prime, hırsız plazmid!",
       "ai_coding": "🤖 Kodlama: F' = F-plus (Artı gen)."
     },
     {
@@ -23,7 +31,11 @@
       "question": "Gen aktarım yöntemleri arasında 'En dirençli' olan hangisidir (Dış ortama en dayanıklı)?",
       "answer": "[[Transdüksiyon]] ([[Faj kılıfı]] DNAyı korur).",
       "difficulty": "Zor",
-      "tags": ["Temel", "Genetik"],
+      "tags": [
+        "Temel",
+        "Genetik"
+      ],
+      "story_hint": "💡 HİKAYE: DNA bir mektup gibi düşün. Transformasyonda mektup açıkta yollanır (ıslanır, yırtılır). Ama transdüksiyonda mektup faj kılıfı denen zırhlı bir kapsüle konulur — tank gibi koruma! Bu yüzden en dayanıklısı odur.",
       "ai_coding": "🤖 Kodlama: T-ransdüksiyon = T-ank gibi dayanıklı (Zırhlı faj)."
     },
     {
@@ -31,7 +43,11 @@
       "question": "Bakteriyel genomda 'İnserksiyon Dizileri' (IS) ne demektir?",
       "answer": "Sadece [[transpozisyon]] için gerekli genleri taşıyan en basit [[transpozonlar]].",
       "difficulty": "Zor",
-      "tags": ["Temel", "Genetik"],
+      "tags": [
+        "Temel",
+        "Genetik"
+      ],
+      "story_hint": "💡 HİKAYE: IS elemanlarını bavulsuz gezginler olarak düşün — yanlarında sadece bilet (transpozaz geni) var, başka bagaj yok. Genoma atlayıp inerler ama yanlarında ekstra gen taşımazlar. En minimalist transpozon!",
       "ai_coding": "🤖 Kodlama: IS = I-nsert (Sadece yerleştirir)."
     },
     {
@@ -39,7 +55,11 @@
       "question": "Bakteriyel 'Operon' yapısı nedir?",
       "answer": "Aynı yolakta çalışan birden fazla genin tek bir [[promotor]] tarafından kontrol edilmesi.",
       "difficulty": "Orta",
-      "tags": ["Temel", "Genetik"],
+      "tags": [
+        "Temel",
+        "Genetik"
+      ],
+      "story_hint": "💡 HİKAYE: Operon bir orkestra gibi — birden fazla müzisyen (gen) var ama hepsini tek bir şef (promotor) yönetiyor. Şef baton kaldırınca hepsi birlikte çalmaya başlıyor, indirince hepsi susuyor.",
       "ai_coding": "🤖 Kodlama: Operon = O-perasyon merkezi (Tek komuta)."
     },
     {
@@ -47,7 +67,11 @@
       "question": "Bakterilerde protein sentezi sırasında 30S ve 50S ribozomun birleşmesini ne sağlar?",
       "answer": "[[Başlangıç faktörleri]] ve [[GTP]].",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Fizyoloji"],
+      "tags": [
+        "Temel",
+        "Fizyoloji"
+      ],
+      "story_hint": "💡 HİKAYE: 30S ve 50S iki yarım kalp kolye gibi. Birleşmeleri için çöpçatan (başlangıç faktörleri) ve enerji (GTP yakıtı) lazım. Çöpçatan tanıştırıyor, GTP de düğün masraflarını karşılıyor — sonuç: 70S ribozom evliliği!",
       "ai_coding": "🤖 Kodlama: 30 + 50 = 80 (Ökaryot gibi değil, 70S oluşur!)."
     },
     {
@@ -55,7 +79,11 @@
       "question": "Aminoglikozidlerin etki ettiği ribozom alt ünitesi?",
       "answer": "[[30S ribozom]].",
       "difficulty": "Kolay",
-      "tags": ["Antibiyotikler", "Temel"],
+      "tags": [
+        "Antibiyotikler",
+        "Temel"
+      ],
+      "story_hint": "💡 HİKAYE: 'Amino' kelimesindeki 'A' harfini düşün, A=Aşağıdaki=küçük alt ünite=30S. Aminoglikozidler küçük 30S'e oturarak protein sentezinde yanlış okumaya neden olur — yanlış sipariş veren garson gibi!",
       "ai_coding": "🤖 Kodlama: A-30. Aminoglikozid-30S."
     },
     {
@@ -63,7 +91,11 @@
       "question": "Makrolid ve Klindamisin'in etki ettiği ribozom alt ünitesi?",
       "answer": "[[50S ribozom]].",
       "difficulty": "Kolay",
-      "tags": ["Antibiyotikler", "Temel"],
+      "tags": [
+        "Antibiyotikler",
+        "Temel"
+      ],
+      "story_hint": "💡 HİKAYE: Makrolid = Maksi = Büyük. Büyük olan 50S alt ünitesine bağlanır. Klindamisin de onun yol arkadaşı — ikisi birlikte 50S koltuğuna oturup translokasyonu engelliyor.",
       "ai_coding": "🤖 Kodlama: M-50. Makrolid-50S."
     },
     {
@@ -71,7 +103,11 @@
       "question": "Hücre duvarı sentezinde son basamak olan 'Çapraz Bağlanmayı' (Transpeptidasyon) hangi enzim yapar?",
       "answer": "[[Transpeptidaz]] ([[PBP]]).",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Hücre Duvarı"],
+      "tags": [
+        "Temel",
+        "Hücre Duvarı"
+      ],
+      "story_hint": "💡 HİKAYE: Hücre duvarı bir tuğla duvar, peptidoglikan zincirleri tuğla sıraları. Transpeptidaz (PBP) ise çimento sıkan usta — son adımda tuğlaları çapraz bağlayarak duvarı sağlamlaştırıyor. Penisilin bu ustanın elini bağlıyor!",
       "ai_coding": "🤖 Kodlama: T-ranspeptidaz = T-eşkilatçı (Bağlayan)."
     },
     {
@@ -79,7 +115,11 @@
       "question": "Penisilinlerin (Beta-laktamlar) 'Litik' etkisi neye bağlıdır?",
       "answer": "[[Transpeptidasyonu]] bozmanın yanı sıra '[[Otolizin]]' enzimlerini aktive etmelerine.",
       "difficulty": "Zor",
-      "tags": ["Antibiyotikler", "Temel"],
+      "tags": [
+        "Antibiyotikler",
+        "Temel"
+      ],
+      "story_hint": "💡 HİKAYE: Penisilin sadece duvar ustasını (PBP) durdurmakla kalmıyor, bir de yıkım ekibini (otolizinleri) çağırıyor. Duvar hem yapılmıyor hem yıkılıyor — bakteri iki ateş arasında kalıp patlıyor!",
       "ai_coding": "🤖 Kodlama: Pen-i-S-ilin = O-to-L-izin."
     },
     {
@@ -87,7 +127,11 @@
       "question": "Gram negatiflerde endotoksin (LPS) hangi tabakada bulunur?",
       "answer": "[[Dış Membran]] (Outer Membrane).",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Hücre Duvarı"],
+      "tags": [
+        "Temel",
+        "Hücre Duvarı"
+      ],
+      "story_hint": "💡 HİKAYE: Gram negatif bakteriyi iki katlı bir bina gibi düşün. Endotoksin (LPS) çatıda yani en dış tabakada, dış membranda oturuyor. Bakteri ölünce çatı çöker ve toksin etrafa saçılır — şok tablosu başlar!",
       "ai_coding": "🤖 Kodlama: D-ış = E-ndotoksin."
     },
     {
@@ -95,7 +139,11 @@
       "question": "Gram negatiflerde 'Porin' kanalları nerede bulunur ve ne işe yarar?",
       "answer": "[[Dış membranda]]; [[hidrofilik maddelerin]] (antibiyotik dahil) geçişini sağlar.",
       "difficulty": "Orta",
-      "tags": ["Temel", "Hücre Duvarı"],
+      "tags": [
+        "Temel",
+        "Hücre Duvarı"
+      ],
+      "story_hint": "💡 HİKAYE: Porin kanalları dış membrandaki kapılar gibi — suyun ve küçük moleküllerin geçtiği döner kapılar. Bakteri porin sayısını azaltınca kapıları kilitliyor, antibiyotikler içeri giremiyor — direnç gelişiyor!",
       "ai_coding": "🤖 Kodlama: P-orin = P-encere."
     },
     {
@@ -103,7 +151,11 @@
       "question": "Bakterilerde enerji üretiminden (ATP) sorumlu yapı hangisidir?",
       "answer": "[[Sitoplazmik Membran]] ([[Mezozomlar]] üzerinde).",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Fizyoloji"],
+      "tags": [
+        "Temel",
+        "Fizyoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Bakteride mitokondri yok ama mezosom var — sitoplazmik membranın içeri doğru kıvrılmasıyla oluşan mini enerji santralı. Ökaryotlardaki mitokondrinin ilkel versiyonu gibi düşün!",
       "ai_coding": "🤖 Kodlama: M-ezozom = M-itokondri benzeri."
     },
     {
@@ -111,7 +163,11 @@
       "question": "Süperoksit dismutaz ve Katalaz enzimleri hangi bakterilerde YOKTUR?",
       "answer": "[[Obligat Anaeroplar]] (Oksijene dayanamazlar).",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Fizyoloji"],
+      "tags": [
+        "Temel",
+        "Fizyoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Oksijen toksik radikaller üretiyor — normal bakteriler kalkan olarak katalaz ve SOD taşıyor. Obligat anaeroplar ise kalkansız savaşçılar; oksijen gelince savunmasız kalıp ölüyorlar. Oksijen onlar için zehirli güneş!",
       "ai_coding": "🤖 Kodlama: A-naerop = A-nzimsiz (Anti-oksidansız)."
     },
     {
@@ -119,7 +175,11 @@
       "question": "Hangi madde sporu öldürmek için (Sterilizasyon) gereklidir?",
       "answer": "[[Yüksek Isı (Otoklav)]] / [[İyonize Radyasyon]] / [[Glutaraldehit]].",
       "difficulty": "Orta",
-      "tags": ["Temel", "Sterilizasyon"],
+      "tags": [
+        "Temel",
+        "Sterilizasyon"
+      ],
+      "story_hint": "💡 HİKAYE: Sporlar süper kahramanlar gibi — normal silahlar işe yaramaz. Onları yenmek için üç süper silah lazım: Otoklav (ateş ejderhası), iyonize radyasyon (lazer) ve glutaraldehit (kimyasal asit yağmuru).",
       "ai_coding": "🤖 Kodlama: S-por = S-terilizasyon."
     },
     {
@@ -127,7 +187,11 @@
       "question": "Pastörizasyon yöntemi neyi hedefler?",
       "answer": "Sıvı gıdalardaki (süt vb.) [[patojenleri]] yok etmeyi, [[sporu]] öldürmeyi hedeflemez.",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Sterilizasyon"],
+      "tags": [
+        "Temel",
+        "Sterilizasyon"
+      ],
+      "story_hint": "💡 HİKAYE: Pastörizasyon bir ılık duş gibi — patojenleri temizler ama sporları ıslatamaz bile. Sütü güvenli yapar ama steril yapmaz. Louis Pasteur'ün mottosu: 'Hastalık yapanı öldür, gerisine karışma!'",
       "ai_coding": "🤖 Kodlama: P-astörizasyon = P-atojen temizliği."
     },
     {
@@ -135,7 +199,11 @@
       "question": "Tyndallizasyon nedir?",
       "answer": "Isıya duyarlı maddelerin [[3 gün üst üste 100°C'ye]] ısıtılarak [[sporların]] öldürülmesi yöntemi.",
       "difficulty": "Zor",
-      "tags": ["Temel", "Sterilizasyon"],
+      "tags": [
+        "Temel",
+        "Sterilizasyon"
+      ],
+      "story_hint": "💡 HİKAYE: Tyndallizasyon sabırlı bir avcı gibi — sporlar ilk kaynatmada açılıp vejetatif hale geçer, ikinci gün tekrar kaynatılır, üçüncü gün son darbe! 3 gün üst üste 100°C ile sporları tuzağa düşürüyor.",
       "ai_coding": "🤖 Kodlama: T-yndallizasyon = T-ertipli ısıtma."
     },
     {
@@ -143,7 +211,11 @@
       "question": "Fiziksel dezenfeksiyon yöntemi olan 'Filtrasyon'da en sık kullanılan gözenek çapı?",
       "answer": "[[0.22 mikron]] (Bakterileri tutar ama virüsleri/mikoplazmaları kaçırabilir).",
       "difficulty": "Orta",
-      "tags": ["Temel", "Dezenfeksiyon"],
+      "tags": [
+        "Temel",
+        "Dezenfeksiyon"
+      ],
+      "story_hint": "💡 HİKAYE: 0.22 mikron filtre bir güvenlik kapısı — bakteriler şişman olduğu için geçemiyor ama virüsler ve mikoplazmalar zayıf olduğu için süzülüp kaçabiliyor. İki virgül iki = iki kez düşün, bakteri duradursun!",
       "ai_coding": "🤖 Kodlama: 0.22. İki ileri bir geri (Bakteri yok)."
     },
     {
@@ -151,7 +223,11 @@
       "question": "Klorlu bileşikler (Çamaşır suyu) dezenfeksiyonu nasıl sağlar?",
       "answer": "[[Oksidasyon]] yaparak enzimlerin [[SH gruplarını]] bozar.",
       "difficulty": "Orta",
-      "tags": ["Temel", "Dezenfeksiyon"],
+      "tags": [
+        "Temel",
+        "Dezenfeksiyon"
+      ],
+      "story_hint": "💡 HİKAYE: Klor bir yangın gibi — enzimlerin SH (sülfhidril) gruplarını yakarak okside ediyor. Enzimler işlevini kaybediyor, bakteri çalışamaz hale geliyor. Çamaşır suyu = kimyasal yangın söndürücüsü değil, başlatıcısı!",
       "ai_coding": "🤖 Kodlama: K-lor = O-ksidasyon."
     },
     {
@@ -159,7 +235,11 @@
       "question": "Bakteriyel 'Siderofor'lar ne işe yarar?",
       "answer": "Ortamdaki [[Demir (Fe) iyonlarını]] bağlayıp hücre içine taşımayı sağlar.",
       "difficulty": "Orta",
-      "tags": ["Temel", "Fizyoloji"],
+      "tags": [
+        "Temel",
+        "Fizyoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Siderofor kelimesi Yunanca 'demir taşıyıcı' demek. Bakterinin mıknatıslı kancaları gibi — ortamdan demir iyonlarını kapıp hücreye getiriyor. Demir olmadan bakteri aç kalır, siderofor onun yemek kurye servisi!",
       "ai_coding": "🤖 Kodlama: S-iderofor = D-emir 'S'evici."
     },
     {
@@ -167,7 +247,11 @@
       "question": "Gram boyamada Gram pozitiflerin 'Mor' görünmesinin nedeni?",
       "answer": "[[Peptidoglikan]] tabakasının kalınlığı ve alkolle [[dekolorize olmaması]] (Boya-iyot kompleksini tutması).",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Boyama"],
+      "tags": [
+        "Temel",
+        "Boyama"
+      ],
+      "story_hint": "💡 HİKAYE: Gram pozitif bakteriyi kalın montlu biri gibi düşün — kristal viyole boyası montu iyice emiliyor. Alkol yıkaması gelince mont o kadar kalın ki boya çıkmıyor, mor renk kalıyor. İnce montlu gram negatif ise boyayı kaybediyor!",
       "ai_coding": "🤖 Kodlama: G (+) = G-üçlü mor."
     },
     {
@@ -175,7 +259,11 @@
       "question": "Negatif boyama (Çini mürekkebi) en çok neyi görmek için kullanılır?",
       "answer": "[[Kapsülü]] (Kapsül boya almaz, fon karanlıktır).",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Mikroskopi"],
+      "tags": [
+        "Temel",
+        "Mikroskopi"
+      ],
+      "story_hint": "💡 HİKAYE: Çini mürekkebi ile fon siyaha boyanıyor ama kapsül şeffaf kalıyor — karanlık gecede beyaz şemsiyeyle yürüyen biri gibi! Özellikle Cryptococcus'un kapsülünü bu teknikle 'hale' şeklinde görürüz.",
       "ai_coding": "🤖 Kodlama: Ç-ini = K-apsül."
     },
     {
@@ -183,7 +271,11 @@
       "question": "Elektron mikroskobunda virüslerin yüzeyini incelemek için kullanılan yöntem?",
       "answer": "[[Negatif boyama]].",
       "difficulty": "Zor",
-      "tags": ["Temel", "Viroloji"],
+      "tags": [
+        "Temel",
+        "Viroloji"
+      ],
+      "story_hint": "💡 HİKAYE: Virüsler çok küçük, ışık mikroskobuyla görünmez. Elektron mikroskobunda negatif boyama yapılınca ağır metal çevre boyanır, virüs beyaz kalır — karanlık arka planda parlayan bir elmas gibi yüzey detayları ortaya çıkar!",
       "ai_coding": "🤖 Kodlama: E-M = N-egatif."
     },
     {
@@ -191,7 +283,11 @@
       "question": "Moleküler yöntemlerden 'PCR' (Polimeraz Zincir Reaksiyonu) hangi enzime dayanır?",
       "answer": "[[Taq Polimeraz]] (Isıya dayanıklı).",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Laboratuvar"],
+      "tags": [
+        "Temel",
+        "Laboratuvar"
+      ],
+      "story_hint": "💡 HİKAYE: Taq polimeraz Thermus aquaticus bakterisinden geliyor — kaplıcalarda yaşayan bir bakteri! Bu enzim 95°C'de bile denatüre olmaz. PCR'da DNA denatürasyonu sırasında herkes ölürken Taq ayakta kalan son savaşçı!",
       "ai_coding": "🤖 Kodlama: T-aq = T-eşhis."
     },
     {
@@ -199,7 +295,11 @@
       "question": "Doku kültürü yapılamayan veya antijen aranmayan durumlarda virüs tanısında neye bakılır?",
       "answer": "[[Spesifik Antikor Titresi]] (Seroloji).",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Tanı"],
+      "tags": [
+        "Temel",
+        "Tanı"
+      ],
+      "story_hint": "💡 HİKAYE: Hırsızı (virüsü) yakalayamıyorsan, parmak izine (antikora) bak! Seroloji tam bunu yapar — virüsü doğrudan bulamadığında, bağışıklık sisteminin bıraktığı antikor izlerini takip eder.",
       "ai_coding": "🤖 Kodlama: A-ntikor = A-na-yol."
     },
     {
@@ -207,7 +307,11 @@
       "question": "Hücre duvarında 'Teikoik Asit' bulunan bakteriler hangileridir?",
       "answer": "Sadece [[Gram Pozitifler]].",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Hücre Duvarı"],
+      "tags": [
+        "Temel",
+        "Hücre Duvarı"
+      ],
+      "story_hint": "💡 HİKAYE: Teikoik asit Gram pozitiflerin kimlik kartı gibi — sadece onlarda var! 'Teikoik' kelimesindeki 'T' harfini 'Tek taraf = Pozitif' diye kodla. Gram negatifler bu kartı taşımaz.",
       "ai_coding": "🤖 Kodlama: T-eikoik = P-ozitif."
     },
     {
@@ -215,7 +319,11 @@
       "question": "Bakteriyel genetik: Plazmidler kendi kendine replike olabilir mi?",
       "answer": "Evet, [[otonom replikasyon]] yetenekleri vardır.",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Genetik"],
+      "tags": [
+        "Temel",
+        "Genetik"
+      ],
+      "story_hint": "💡 HİKAYE: Plazmid bağımsız bir freelancer gibi — şirketin (kromozomun) dışında çalışıyor ve kendi işini kendi yönetiyor. Kendi ori (replikasyon başlangıcı) noktası var, patrona ihtiyaç duymadan çoğalıyor!",
       "ai_coding": "🤖 Kodlama: P-lazmid = P-rofesyonel (Bağımsız)."
     },
     {
@@ -223,7 +331,11 @@
       "question": "Transkripsiyon (RNA sentezi) sırasında RNA polimerazın promotora bağlanmasını ne sağlar?",
       "answer": "[[Sigma faktörü]].",
       "difficulty": "Zor",
-      "tags": ["Temel", "Fizyoloji"],
+      "tags": [
+        "Temel",
+        "Fizyoloji"
+      ],
+      "story_hint": "💡 HİKAYE: RNA polimeraz koca bir kamyon, promotor ise park yeri. Sigma faktörü GPS navigasyonu gibi — kamyonu doğru park yerine yönlendiriyor. GPS olmadan kamyon nereye gideceğini bilemez, transkripsiyon başlayamaz!",
       "ai_coding": "🤖 Kodlama: R-NA = S-igma."
     },
     {
@@ -231,7 +343,11 @@
       "question": "Bakterilerde 'Şaperon' (Chaperone) proteinlerin görevi?",
       "answer": "Yeni sentezlenen proteinlerin düzgün [[katlanmasını (folding)]] sağlamak.",
       "difficulty": "Orta",
-      "tags": ["Temel", "Fizyoloji"],
+      "tags": [
+        "Temel",
+        "Fizyoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Şaperon kelimesi Fransızca 'refakatçi' demek. Yeni doğan protein bir origami kağıdı gibi — şaperon ustası onu doğru şekilde katlıyor. Yanlış katlanan protein çöp olur, şaperon kalite kontrol müdürü!",
       "ai_coding": "🤖 Kodlama: Ş-aperon = Ş-ekillendirici."
     },
     {
@@ -239,7 +355,11 @@
       "question": "Bakteriyel metabolizma: 'Fermantasyon' sonucunda son elektron alıcısı nedir?",
       "answer": "[[Organik bir molekül]] ([[Pruvat]] vb.).",
       "difficulty": "Zor",
-      "tags": ["Temel", "Fizyoloji"],
+      "tags": [
+        "Temel",
+        "Fizyoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Aerob solunumda oksijen son durak — otobüs terminali. Fermantasyonda ise oksijen yok, bu yüzden organik bir molekül (piruvat) son durak oluyor. Enerji az, ama oksijensiz ortamda tek seçenek bu!",
       "ai_coding": "🤖 Kodlama: F-ermantasyon = O-rganik."
     },
     {
@@ -247,7 +367,11 @@
       "question": "Katalaz testi hangi ayırımı yapmak için klasiktir?",
       "answer": "[[Stafilokok]] (+) ve [[Streptokok]] (-) ayırımı.",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Laboratuvar"],
+      "tags": [
+        "Temel",
+        "Laboratuvar"
+      ],
+      "story_hint": "💡 HİKAYE: Koloni üzerine H2O2 (oksijenli su) damlat. Stafilokok köpürtür (katalaz +) çünkü güçlü bir savaşçıdır, oksijeni parçalar. Streptokok sessiz kalır (katalaz -) — oksijene karşı savunmasız!",
       "ai_coding": "🤖 Kodlama: K-atalaz = K-öksüz (Streptokok değil)."
     },
     {
@@ -255,7 +379,11 @@
       "question": "Koagülaz testi neyi saptar?",
       "answer": "[[S. aureus]] (+) ile diğer [[KNS]] (-)leri ayırır.",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Laboratuvar"],
+      "tags": [
+        "Temel",
+        "Laboratuvar"
+      ],
+      "story_hint": "💡 HİKAYE: Koagülaz testi bir kraliyet testi — S. aureus (altın stafilokok) plazmayı pıhtılaştırarak tahtını kanıtlıyor. Diğer KNS'ler sıradan vatandaş, pıhtı yapamıyorlar. Pıhtı varsa kral aureus'tur!",
       "ai_coding": "🤖 Kodlama: K-oagülaz = A-ureus."
     },
     {
@@ -263,7 +391,11 @@
       "question": "TSI (Triple Sugar Iron) besiyerinde 'Gaz üretimi' neyi gösterir?",
       "answer": "Hücre içinde [[fermantasyon]] sırasında [[H2 ve CO2]] çıktığını.",
       "difficulty": "Orta",
-      "tags": ["Temel", "Laboratuvar"],
+      "tags": [
+        "Temel",
+        "Laboratuvar"
+      ],
+      "story_hint": "💡 HİKAYE: TSI tüpü bir gazlı içecek şişesi gibi — bakteri şekerleri fermente ederken H2 ve CO2 gazı üretir. Tüpte kabarcıklar veya çatlaklar görürsen bakteri 'geğirmiş' demek!",
       "ai_coding": "🤖 Kodlama: T-S-I = G-az."
     },
     {
@@ -271,7 +403,11 @@
       "question": "IMViC testleri (Indol, Metil kırmızısı, Voges-Proskauer, Sitrat) ne için kullanılır?",
       "answer": "[[Enterobacteriaceae]] (Gram negatif bağırsak bakterileri) [[tür ayırımı]] için.",
       "difficulty": "Orta",
-      "tags": ["Temel", "Laboratuvar"],
+      "tags": [
+        "Temel",
+        "Laboratuvar"
+      ],
+      "story_hint": "💡 HİKAYE: IMViC testleri enterik bakterilerin parmak izi gibi — her türün kendine özgü bir IMViC profili var. 'İstanbul'un Meşhur Vişne İçeceği Candır' diye kodla: İndol, Metil kırmızı, VP, Sitrat (Citrate).",
       "ai_coding": "🤖 Kodlama: İ-M-V-İ-C = E-nterikler."
     },
     {
@@ -279,7 +415,11 @@
       "question": "E. coli için IMViC profili nasıldır?",
       "answer": "[[++--]] ([[Indol +]], [[Metil Kırmızı +]], VP -, Sitrat -).",
       "difficulty": "Zor",
-      "tags": ["Temel", "Laboratuvar"],
+      "tags": [
+        "Temel",
+        "Laboratuvar"
+      ],
+      "story_hint": "💡 HİKAYE: E. coli profili ++-- yani 'İlk ikisi artı, son ikisi eksi'. Bunu hatırlamak için: 'E. coli önce EVET EVET der, sonra HAYIR HAYIR der' — kararsız bir arkadaş gibi! İndol ve MR pozitif, VP ve Sitrat negatif.",
       "ai_coding": "🤖 Kodlama: E. coli = İki artı, iki eksi."
     },
     {
@@ -287,7 +427,11 @@
       "question": "Bakterilerde 'Kemotaksi' ne demektir?",
       "answer": "[[Kimyasal uyaranlara]] karşı [[kamçı]] yardımıyla hareket etme.",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Fizyoloji"],
+      "tags": [
+        "Temel",
+        "Fizyoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kemotaksi = Kimyasal Taksi! Bakteri bir taksi şoförü gibi — besin kokusuna doğru kamçısıyla yüzüyor (pozitif kemotaksi), zehirden kaçıyor (negatif kemotaksi). Burun yerine reseptörleri var!",
       "ai_coding": "🤖 Kodlama: K-emotaksi = K-imyasal taksi."
     },
     {
@@ -295,7 +439,11 @@
       "question": "Hücre iskeleti olmayan canlılar olan bakterilerde hücre şeklini ne belirler?",
       "answer": "[[Hücre Duvarı]] ([[Peptidoglikan]] yapısı).",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Morfoloji"],
+      "tags": [
+        "Temel",
+        "Morfoloji"
+      ],
+      "story_hint": "💡 HİKAYE: İnsan kemikle ayakta durur ama bakterinin kemiği yok. Onun yerine peptidoglikan duvarı hem kalıp hem iskelet görevi yapıyor — bir balon gibi düşün, hava basıncı (turgor) ve duvar birlikte şekli belirlıyor.",
       "ai_coding": "🤖 Kodlama: D-uvar = Ş-ekil."
     },
     {
@@ -303,7 +451,11 @@
       "question": "Bakterilerde 'Murein Hidrolaz'lar (Otolizinler) ne işe yarar?",
       "answer": "Yeni hücre duvarı sentezi sırasında eski [[peptidoglikanı]] parçalamaya yarar.",
       "difficulty": "Zor",
-      "tags": ["Temel", "Hücre Duvarı"],
+      "tags": [
+        "Temel",
+        "Hücre Duvarı"
+      ],
+      "story_hint": "💡 HİKAYE: Otolizinler kendi duvarını yıkan işçiler — bakteri bölünürken eski duvarı söküp yeni duvar için yer açıyorlar. Bu 'kontrollü yıkım' düzgün çalışmazsa (mesela penisilin varken) bakteri kendi kendini patlatır!",
       "ai_coding": "🤖 Kodlama: O-tolizin = O-to-parçalama."
     },
     {
@@ -311,7 +463,11 @@
       "question": "Plazmoidsiz bakteriye plazmid aktarımı (Konjugasyon) sonrası yeni bakteri ne olur?",
       "answer": "[[F+]] (Plazmid taşıyıcısı olur).",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Genetik"],
+      "tags": [
+        "Temel",
+        "Genetik"
+      ],
+      "story_hint": "💡 HİKAYE: F- bakteri plazmidsiz yani 'cep telefonsuz' biri. Konjugasyonla F+ bakteriden plazmid alınca artık o da 'telefonlu' oluyor — F+ oluyor ve başkalarına da mesaj (gen) gönderebilir hale geliyor!",
       "ai_coding": "🤖 Kodlama: F (+) = P-ozitif aktarım."
     },
     {
@@ -319,7 +475,11 @@
       "question": "Transdüksiyonda 'Jeneralleşmiş' (Yaygın) ve 'Özelleşmiş' (Specialized) farkı?",
       "answer": "[[Litik döngüde]] rastgele parça (Jeneral), [[Lizojenik döngüde]] yanındaki spesifik parça (Özel).",
       "difficulty": "Zor",
-      "tags": ["Temel", "Genetik"],
+      "tags": [
+        "Temel",
+        "Genetik"
+      ],
+      "story_hint": "💡 HİKAYE: Jeneralize transdüksiyon bir rastgele çekiliş — faj litik döngüde rastgele kromozom parçası paketler. Özelleşmiş ise komşu kapma — faj lizojenik döngüden çıkarken sadece yanındaki genleri alır. Loto mu, komşu mu?",
       "ai_coding": "🤖 Kodlama: Ö-zel = L-izojenik."
     },
     {
@@ -327,7 +487,11 @@
       "question": "Bakteriyel direnç: PBP modifikasyonu en çok hangi dirençte görülür?",
       "answer": "[[MRSA]] (S. aureus'taki [[mecA geni]] ile [[PBP2a]] oluşumu).",
       "difficulty": "Orta",
-      "tags": ["Direnç", "Bakteriyoloji"],
+      "tags": [
+        "Direnç",
+        "Bakteriyoloji"
+      ],
+      "story_hint": "💡 HİKAYE: MRSA'nın mecA geni bir çilingir — normal PBP kilidini değiştirip PBP2a adında yeni bir kilit takıyor. Metisilin anahtarı artık bu kilide uymuyor. S. aureus'un zırh yükseltmesi!",
       "ai_coding": "🤖 Kodlama: P-BP = M-RSA (Modifiye)."
     },
     {
@@ -335,7 +499,11 @@
       "question": "Direnç: DNA giraz (Topoizomeraz) mutasyonu hangi ilaçlara direnç yapar?",
       "answer": "[[Kinolonlar]] ([[Siprofloksasin]] vb.).",
       "difficulty": "Kolay",
-      "tags": ["Direnç", "Antibiyotikler"],
+      "tags": [
+        "Direnç",
+        "Antibiyotikler"
+      ],
+      "story_hint": "💡 HİKAYE: Kinolonlar DNA girazı hedef alır — giraz DNA'yı süper sarım yapan usta. Mutasyonla girazın şekli değişince kinolonlar artık tutamaz. 'Kino' filminde 'Giraz' adlı villain mutasyonla kaçıyor!",
       "ai_coding": "🤖 Kodlama: K-inolon = G-iraz."
     },
     {
@@ -343,7 +511,11 @@
       "question": "Virüslerin 'Zarfsız' olması dış ortama dayanıklılığını nasıl etkiler?",
       "answer": "[[Zarfsız virüsler]] [[deterjan ve asitlere]] daha dayanıklıdır; dış ortamda uzun süre kalırlar.",
       "difficulty": "Orta",
-      "tags": ["Temel", "Viroloji"],
+      "tags": [
+        "Temel",
+        "Viroloji"
+      ],
+      "story_hint": "💡 HİKAYE: Zarfsız virüsler çıplak ama güçlü — çıplak kapsid protein zırh gibi koruyor. Zarflı olanlar ise mont giymiş gibi ama mont deterjanla yıkanınca erir. Çıplak savaşçı aslında daha dayanıklı!",
       "ai_coding": "🤖 Kodlama: Z-arfsız = Z-ırhlı."
     },
     {
@@ -351,7 +523,11 @@
       "question": "Virüslerin 'Zarflı' olması nasıl bulaş gerektirir?",
       "answer": "Genellikle [[yakın temas]] veya [[damlacık]] yoluyla (Çabuk inaktive olurlar).",
       "difficulty": "Orta",
-      "tags": ["Temel", "Viroloji"],
+      "tags": [
+        "Temel",
+        "Viroloji"
+      ],
+      "story_hint": "💡 HİKAYE: Zarflı virüs narin bir kar tanesi gibi — sıcak ele değince erir! Dış ortamda çabuk ölür, bu yüzden bulaşmak için yakın temas şart. Öpücük, kan, cinsel temas — kısa mesafe zorunlu!",
       "ai_coding": "🤖 Kodlama: Z-arflı = Z-ayıf."
     },
     {
@@ -359,7 +535,11 @@
       "question": "Virüs replikasyonunda 'Eklips' (Tutulma) dönemi nedir?",
       "answer": "Virüs hücreye girdikten sonra yeni parçalar sentezlenene kadar geçen, [[enfeksiyöz virüsün görülmediği]] süre.",
       "difficulty": "Orta",
-      "tags": ["Temel", "Viroloji"],
+      "tags": [
+        "Temel",
+        "Viroloji"
+      ],
+      "story_hint": "💡 HİKAYE: Eklips = Güneş tutulması! Virüs hücreye girince kaybolur — ne dışarıda ne tam içeride, sanki yok olmuş gibi. Aslında parçalarına ayrılıp yeni kopyalar hazırlıyor. Karanlık dönemden sonra yeni virüsler patlayarak çıkar!",
       "ai_coding": "🤖 Kodlama: E-klips = E-k-sis (Görünmezlik)."
     },
     {
@@ -367,7 +547,11 @@
       "question": "Mantar hücre duvarında bulunan ve antifungal ilaçların hedefi olan yapı?",
       "answer": "[[Ergosterol]] (Hücre zarı) ve [[Glukan]]/[[Kitin]] (Hücre duvarı).",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Mikoloji"],
+      "tags": [
+        "Temel",
+        "Mikoloji"
+      ],
+      "story_hint": "💡 HİKAYE: İnsan zarında kolesterol var, mantarda ergosterol! Bu fark antifungallerin silahı — ergosterole saldırırken insana dokunmuyorlar. Glukan ve kitin ise duvar tuğlaları, ekinokandinler bunları hedefliyor.",
       "ai_coding": "🤖 Kodlama: E-rgosterol = M-antar."
     },
     {
@@ -375,7 +559,11 @@
       "question": "Amfoterisin B'nin etki mekanizması?",
       "answer": "[[Ergosterole]] bağlanarak hücre zarında [[delikler açmak]].",
       "difficulty": "Kolay",
-      "tags": ["Antibiyotikler", "Mikoloji"],
+      "tags": [
+        "Antibiyotikler",
+        "Mikoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Amfoterisin B mantar zarındaki ergosterole yapışıp delik açan bir torpido gibi! Zarda delikler oluşunca hücre içeriği dışarı akar — mantar batıyor. Ama dikkat, yüksek dozda insan hücrelerine de zarar verebilir (nefrotoksisite)!",
       "ai_coding": "🤖 Kodlama: A-mfoterisin = A-çık kapsı (Delik)."
     },
     {
@@ -383,7 +571,11 @@
       "question": "Parazitlerde 'Kist' formu ne işe yarar?",
       "answer": "Dış ortamda [[hayatta kalmayı]] ve [[enfeksiyonun bulaşmasını]] sağlar.",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Parazitoloji"],
+      "tags": [
+        "Temel",
+        "Parazitoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kist parazit dünyasının uzay kapsülü — dış ortamın zorlu koşullarında hayatta kalmak için koruyucu kabuk gibi. Suda, toprakta dayanır ve yeni bir konağa ulaşınca kapağı açılıp trofozoite dönüşür!",
       "ai_coding": "🤖 Kodlama: K-ist = K-oruma."
     },
     {
@@ -391,7 +583,11 @@
       "question": "Parazitlerde 'Trofozoit' formu nedir?",
       "answer": "Aktif olarak beslenen, çoğalan ve [[patojenik]] olan form.",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Parazitoloji"],
+      "tags": [
+        "Temel",
+        "Parazitoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Trofozoit = 'Trofi' (beslenme) + 'zoit'. Bu formu yemek yiyen aktif canavar olarak düşün — dokuda dolaşıp besleniyor, çoğalıyor ve hastalık yapıyor. Kist uyuyan güzel ise trofozoit uyanmış canavar!",
       "ai_coding": "🤖 Kodlama: T-rofozoit = T-ehlikeli (Aktif)."
     },
     {
@@ -399,8 +595,17 @@
       "question": "Protozoonlarda 'Kamçı' ne işe yarar?",
       "answer": "[[Hareket]] ve bazen [[gıda yakalama]].",
       "difficulty": "Kolay",
-      "tags": ["Temel", "Parazitoloji"],
+      "tags": [
+        "Temel",
+        "Parazitoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kamçı protozoonun hem motoru hem olta kamışı! Motor olarak sıvıda yüzmesini sağlıyor, olta olarak da besin partikülerini yakalıyor. Giardia'nın 4 çift kamçısı var — 8 motorlu süper tekne gibi!",
       "ai_coding": "🤖 Kodlama: K-amçı = K-oşma."
     }
-  ]
+  ],
+  "id": "microbiology_batch2A-topic-0",
+  "topic": "Temel Mikrobiyoloji (Batch 2A) - Genetik & Fizyoloji",
+  "sub_topic": "Temel Mikrobiyoloji (Batch 2A) - Genetik & Fizyoloji",
+  "content_summary": "",
+  "tus_spots": []
 }

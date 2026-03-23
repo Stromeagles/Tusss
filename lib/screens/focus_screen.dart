@@ -8,6 +8,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_theme.dart';
 import '../services/focus_service.dart';
+import '../services/premium_service.dart';
 
 class FocusScreen extends StatefulWidget {
   const FocusScreen({super.key});
@@ -21,6 +22,18 @@ class _FocusScreenState extends State<FocusScreen> {
   int _focusMinutes = 25;
   int _breakMinutes = 5;
   bool _isPomodoro = true; // true = Pomodoro geri sayım, false = Stopwatch
+  bool _isPremium = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _checkPremium();
+  }
+
+  Future<void> _checkPremium() async {
+    final premium = await PremiumService().isPremium();
+    if (mounted) setState(() => _isPremium = premium);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -107,6 +120,27 @@ class _FocusScreenState extends State<FocusScreen> {
             onTap: () {
               final service = Provider.of<FocusService>(context, listen: false);
               if (!service.isRunning) {
+                if (_isPomodoro && !_isPremium) {
+                  // Free kullanıcılar serbest mod kullanamaz
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Row(
+                        children: [
+                          const Icon(Icons.workspace_premium_rounded, color: Colors.white, size: 16),
+                          const SizedBox(width: 8),
+                          Text('Serbest mod — Premium özellik',
+                            style: GoogleFonts.inter(color: Colors.white, fontWeight: FontWeight.w600)),
+                        ],
+                      ),
+                      backgroundColor: AppTheme.neonPurple.withValues(alpha: 0.9),
+                      behavior: SnackBarBehavior.floating,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      margin: const EdgeInsets.fromLTRB(20, 0, 20, 10),
+                      duration: const Duration(seconds: 2),
+                    ),
+                  );
+                  return;
+                }
                 setState(() => _isPomodoro = !_isPomodoro);
                 HapticFeedback.selectionClick();
               }
@@ -373,7 +407,14 @@ class _FocusScreenState extends State<FocusScreen> {
   void _showDurationPicker(bool isDark) {
     int tempFocus = _focusMinutes;
     int tempBreak = _breakMinutes;
-    final presets = [10, 15, 25, 45, 50];
+    // Free: sadece 10, 15, 25 dk | Premium: tüm seçenekler
+    final freePresets = [10, 15, 25];
+    final premiumPresets = [10, 15, 25, 45, 50, 60, 90, 120];
+    final presets = _isPremium ? premiumPresets : freePresets;
+
+    final freeBreaks = [5];
+    final premiumBreaks = [5, 10, 15, 20];
+    final breaks = _isPremium ? premiumBreaks : freeBreaks;
 
     showModalBottomSheet(
       context: context,
@@ -391,7 +432,23 @@ class _FocusScreenState extends State<FocusScreen> {
               Container(width: 40, height: 4,
                 decoration: BoxDecoration(color: Colors.white12, borderRadius: BorderRadius.circular(2))),
               const SizedBox(height: 20),
-              Text('Süre Ayarla', style: GoogleFonts.outfit(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w700)),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Süre Ayarla', style: GoogleFonts.outfit(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w700)),
+                  if (_isPremium) ...[
+                    const SizedBox(width: 8),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(colors: [AppTheme.cyan, AppTheme.neonPurple]),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text('PRO', style: GoogleFonts.inter(color: Colors.white, fontSize: 9, fontWeight: FontWeight.w800, letterSpacing: 1)),
+                    ),
+                  ],
+                ],
+              ),
               const SizedBox(height: 20),
 
               // Preset chips
@@ -401,6 +458,7 @@ class _FocusScreenState extends State<FocusScreen> {
                 spacing: 10, runSpacing: 8,
                 children: presets.map((m) {
                   final selected = tempFocus == m;
+                  final label = m >= 60 ? '${m ~/ 60}s ${m % 60 > 0 ? "${m % 60}dk" : ""}' : '$m dk';
                   return GestureDetector(
                     onTap: () => setSheetState(() => tempFocus = m),
                     child: Container(
@@ -410,7 +468,7 @@ class _FocusScreenState extends State<FocusScreen> {
                         borderRadius: BorderRadius.circular(14),
                         border: Border.all(color: selected ? AppTheme.cyan : Colors.transparent, width: 1.5),
                       ),
-                      child: Text('$m dk',
+                      child: Text(label.trim(),
                         style: GoogleFonts.inter(
                           color: selected ? AppTheme.cyan : Colors.white54,
                           fontSize: 14, fontWeight: FontWeight.w700,
@@ -427,7 +485,7 @@ class _FocusScreenState extends State<FocusScreen> {
               const SizedBox(height: 10),
               Wrap(
                 spacing: 10,
-                children: [5, 10, 15].map((m) {
+                children: breaks.map((m) {
                   final selected = tempBreak == m;
                   return GestureDetector(
                     onTap: () => setSheetState(() => tempBreak = m),
@@ -448,6 +506,33 @@ class _FocusScreenState extends State<FocusScreen> {
                   );
                 }).toList(),
               ),
+
+              // Free kullanıcılar için premium teşvik
+              if (!_isPremium) ...[
+                const SizedBox(height: 16),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [AppTheme.cyan.withValues(alpha: 0.08), AppTheme.neonPurple.withValues(alpha: 0.08)],
+                    ),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.2)),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.workspace_premium_rounded, color: AppTheme.cyan, size: 18),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          'Premium ile 2 saate kadar odak, özel mola süreleri ve tüm ortam sesleri!',
+                          style: GoogleFonts.inter(color: AppTheme.textSecondary, fontSize: 11, fontWeight: FontWeight.w500),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
               const SizedBox(height: 24),
 
               SizedBox(
@@ -476,6 +561,9 @@ class _FocusScreenState extends State<FocusScreen> {
   }
 
   Widget _buildSoundPicker(FocusService service, bool isDark) {
+    // Free: Sessiz + Yağmur | Premium: tümü
+    final freeSounds = {FocusSound.none, FocusSound.yagmur};
+
     return Column(
       children: [
         Text('ORTAM SESİ',
@@ -491,8 +579,30 @@ class _FocusScreenState extends State<FocusScreen> {
             itemBuilder: (context, index) {
               final sound = FocusSound.values[index];
               final isSelected = service.currentSound == sound;
+              final isLocked = !_isPremium && !freeSounds.contains(sound);
+
               return GestureDetector(
                 onTap: () {
+                  if (isLocked) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Row(
+                          children: [
+                            const Icon(Icons.workspace_premium_rounded, color: Colors.white, size: 16),
+                            const SizedBox(width: 8),
+                            Text('${sound.label} — Premium özellik',
+                              style: GoogleFonts.inter(color: Colors.white, fontWeight: FontWeight.w600)),
+                          ],
+                        ),
+                        backgroundColor: AppTheme.neonPurple.withValues(alpha: 0.9),
+                        behavior: SnackBarBehavior.floating,
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                        margin: const EdgeInsets.fromLTRB(20, 0, 20, 10),
+                        duration: const Duration(seconds: 2),
+                      ),
+                    );
+                    return;
+                  }
                   HapticFeedback.selectionClick();
                   service.setSound(sound);
                 },
@@ -504,19 +614,41 @@ class _FocusScreenState extends State<FocusScreen> {
                         ? AppTheme.cyan.withValues(alpha: 0.12)
                         : (isDark ? Colors.white.withValues(alpha: 0.04) : Colors.black.withValues(alpha: 0.03)),
                     borderRadius: BorderRadius.circular(18),
-                    border: Border.all(color: isSelected ? AppTheme.cyan.withValues(alpha: 0.5) : Colors.transparent, width: 1.5),
+                    border: Border.all(
+                      color: isSelected
+                          ? AppTheme.cyan.withValues(alpha: 0.5)
+                          : isLocked
+                              ? AppTheme.neonPurple.withValues(alpha: 0.15)
+                              : Colors.transparent,
+                      width: 1.5,
+                    ),
                   ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                  child: Stack(
+                    alignment: Alignment.center,
                     children: [
-                      Text(_getSoundEmoji(sound), style: const TextStyle(fontSize: 22)),
-                      const SizedBox(height: 6),
-                      Text(sound.label, textAlign: TextAlign.center,
-                        style: GoogleFonts.inter(
-                          color: isSelected ? AppTheme.cyan : (isDark ? Colors.white30 : Colors.black38),
-                          fontSize: 9, fontWeight: FontWeight.w700,
-                        ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(_getSoundEmoji(sound),
+                            style: TextStyle(fontSize: 22, color: isLocked ? Colors.white.withValues(alpha: 0.3) : null)),
+                          const SizedBox(height: 6),
+                          Text(sound.label, textAlign: TextAlign.center,
+                            style: GoogleFonts.inter(
+                              color: isLocked
+                                  ? (isDark ? Colors.white.withValues(alpha: 0.15) : Colors.black.withValues(alpha: 0.20))
+                                  : isSelected ? AppTheme.cyan : (isDark ? Colors.white30 : Colors.black38),
+                              fontSize: 9, fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ],
                       ),
+                      if (isLocked)
+                        Positioned(
+                          top: 4, right: 4,
+                          child: Icon(Icons.lock_rounded,
+                            size: 12,
+                            color: AppTheme.neonPurple.withValues(alpha: 0.5)),
+                        ),
                     ],
                   ),
                 ),
@@ -531,10 +663,11 @@ class _FocusScreenState extends State<FocusScreen> {
   String _getSoundEmoji(FocusSound sound) {
     switch (sound) {
       case FocusSound.none: return '🔇';
-      case FocusSound.rain: return '🌧️';
-      case FocusSound.library: return '📚';
-      case FocusSound.cafe: return '☕';
-      case FocusSound.whiteNoise: return '📻';
+      case FocusSound.yagmur: return '🌧️';
+      case FocusSound.deepSng: return '🎵';
+      case FocusSound.kabalikCafe: return '☕';
+      case FocusSound.ruzgar: return '🍃';
+      case FocusSound.tikTak: return '⏰';
     }
   }
 

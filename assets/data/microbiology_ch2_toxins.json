@@ -16,7 +16,8 @@
           "Toksin",
           "Protein Sentezi",
           "EF-2"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Difteri ve Pseudomonas, fabrikadaki EF-2 ustasını kaçırıp ADP-ribozu ile bağlar. Protein üretim bandı durur, fabrika (hücre) kapanır — iki sabotajcı aynı yöntemi kullanır."
       },
       {
         "id": "fc-micro-021",
@@ -27,7 +28,8 @@
           "Kolera",
           "cAMP",
           "Diyare"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Kolera toksininin B kolu, GM1 limanına demir atar. A kolu içeri girip cAMP musluğunu sonuna kadar açar — bağırsaktan sel gibi su akar, pirinç suyu ishal başlar."
       },
       {
         "id": "fc-micro-022",
@@ -38,7 +40,8 @@
           "Tetanoz",
           "GABA",
           "Glisin"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Tetanoz canavarı, Renshaw hücrelerinin GABA ve Glisin frenlerini keser. Fren patlamış araba gibi kaslar sürekli kasılır — çene kilitlenir, vücut yay gibi gerilir."
       },
       {
         "id": "fc-micro-023",
@@ -48,7 +51,8 @@
         "tags": [
           "Şarbon",
           "Toksin"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Şarbon üçlü çete kurar: PA kapıyı açar (Protektif Antijen), EF içeri girip cAMP ile ödem yapar, LF ise hücreyi öldürür. PA olmadan diğer ikisi eve giremez."
       }
     ],
     "tus_spots": [
@@ -65,7 +69,7 @@
           "GABA inhibisyonu",
           "ACh salınımının engellenmesi",
           "EF-2 inaktivasyonu",
-          "E) Hiçbiri"
+          "E) Integronlar"
         ],
         "correct_answer": "ACh salınımının engellenmesi",
         "explanation": "Botulinum toksini periferik presinaptik uçlardan Asetilkolin (ACh) salınımını engelleyerek gevşek (flask) felç yapar.",
@@ -89,7 +93,8 @@
         "tags": [
           "Bakteriyoloji",
           "Log Fazı"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Log fazındaki bakteriler, hızla bölünen gençler gibidir — en küçük ve en savunmasızdırlar. Antibiyotik polisi tam bu partide baskın yaparsa en çok tutuklamayı yapar."
       },
       {
         "id": "fc-micro-031",
@@ -100,7 +105,8 @@
           "Oksijen",
           "Helicobacter",
           "Campylobacter"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Helicobacter ve Campylobacter, oksijen barında 'az içeriz' diyen iki arkadaştır. Ne tam aerob ne tam anaerob — mikroaerofil kulüpte takılırlar, %5 oksijen yeterlidir."
       },
       {
         "id": "fc-micro-032",
@@ -110,7 +116,8 @@
         "tags": [
           "Spor",
           "Çoğalma"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Stasyoner fazda yiyecek biter, bakteri 'kış uykusuna yatayım' deyip spor oluşturur. Tıpkı kıtlıkta tohum saklayan bir çiftçi gibi, zor günler için dayanıklı form hazırlar."
       }
     ],
     "tus_spots": [

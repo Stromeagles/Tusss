@@ -15,7 +15,8 @@
         "tags": [
           "Parvovirüs",
           "Aplastik Kriz"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Küçük vampir Parvo (B19), sadece P harfli kan bankasından (P antijeni) beslenir. Orak şeklindeki kılıçlarla savaşan askerlerin (orak hücreli anemi) fabrikasını (kemik iliği) tamamen kapatarak aplastik krize yol açar."
       },
       {
         "id": "fc-viro-2101",
@@ -25,7 +26,8 @@
         "tags": [
           "Adenovirüs",
           "Fiber"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Adenovirüs, virüsler dünyasının dikenlı kirpisi gibidir — kapsidinden uzanan fiber çıkıntılarıyla hücrelere tutunur. Başka hiçbir virüs bu 'anten'lere sahip değildir."
       },
       {
         "id": "fc-viro-2102",
@@ -35,7 +37,8 @@
         "tags": [
           "Adenovirüs",
           "Göz"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Adeno'nun üç kötü kardeşi (8, 19, 37) göz avcılarıdır — nereye gitseler epidemik keratokonjonktivit salgını çıkarırlar. '8-19-37 = göze bak!' diye hatırla."
       }
     ],
     "tus_spots": [
@@ -60,7 +63,8 @@
         "tags": [
           "İnfluenza",
           "Shift"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: İnfluenza iki farklı suş aynı hücrede buluştuğunda genomlarını tamamen değiş-tokuş eder — sanki iki farklı ülkenin askerleri üniformalarını takas etmiş gibi. Bu büyük 'shift' (kayma) pandemi başlatır çünkü bağışıklık sistemi yeni düşmanı tanıyamaz."
       },
       {
         "id": "fc-viro-2201",
@@ -69,7 +73,8 @@
         "difficulty": "easy",
         "tags": [
           "RSV"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: RSV, bebeklerin ciğerlerinde hücreleri F (Füzyon) proteiniyle birbirine yapıştırarak dev sinsityal hücreler oluşturur — sanki baloncukları birleştiren bir sihirbaz gibi. Bebeklerde bronşiolidin bir numaralı suçlusudur."
       },
       {
         "id": "fc-viro-2202",
@@ -79,7 +84,8 @@
         "tags": [
           "Kızamık",
           "Koplik"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Kızamık virüsü döküntülerden önce ağız içine gizli bir mesaj bırakır: yanak mukozasında tuz taneciklerine benzeyen beyaz Koplik lekeleri. Bu lekeleri gören doktor, döküntü başlamadan suçluyu yakalar."
       }
     ],
     "tus_spots": [
@@ -105,7 +111,8 @@
         "tags": [
           "HBV",
           "Dane"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: HBV'nin savaş filosunda birçok sahte gemi (boş HBsAg partikülleri) vardır, ama gerçek savaş gemisi sadece Dane Partikülü'dür — tam donanımlı, içinde DNA ve enzimlerini taşıyan tek enfeksiyöz gemi."
       },
       {
         "id": "fc-viro-2301",
@@ -115,7 +122,8 @@
         "tags": [
           "HBV",
           "cccDNA"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: HBV hücre çekirdeğine sızıp kapalı daire şeklinde bir 'ana kalıp' (cccDNA) kurar — bu kalıp bir matbaa gibi sürekli yeni viral kopyalar basar. İlaçlar virüsü baskılasa bile bu gizli kalıp çekirdekte sağ kalır."
       },
       {
         "id": "fc-viro-2302",
@@ -125,7 +133,8 @@
         "tags": [
           "HCV",
           "Anti-HCV"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Anti-HCV testi kapıda duran güvenlik gibidir — hırsızın (virüsün) gelip gelmediğini söyler ama hâlâ içeride mi bilmez. Gerçek suçluyu yakalamak için PCR dedektifi (HCV-RNA) çağrılmalıdır."
       }
     ],
     "tus_spots": [

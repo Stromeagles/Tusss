@@ -6,10 +6,11 @@ import 'progress_service.dart';
 
 enum FocusSound {
   none('Sessiz', null),
-  rain('Yağmur', 'assets/sounds/rain.mp3'),
-  library('Kütüphane', 'assets/sounds/library.mp3'),
-  cafe('Kafe', 'assets/sounds/cafe.mp3'),
-  whiteNoise('Beyaz Gürültü', 'assets/sounds/white_noise.mp3');
+  yagmur('Yağmur', 'assets/sounds/Yağmur.mp3'),
+  deepSng('Deep Sng', 'assets/sounds/DeepSng.mp3'),
+  kabalikCafe('Kalabalık Kafe', 'assets/sounds/KabalıkCafe.mp3'),
+  ruzgar('Rüzgar', 'assets/sounds/Rüzgar.mp3'),
+  tikTak('Tik Tak', 'assets/sounds/TikTak.mp3');
 
   final String label;
   final String? assetPath;
@@ -183,9 +184,16 @@ class FocusService extends ChangeNotifier {
     if (sound == FocusSound.none) {
       await _audioPlayer.stop();
     } else if (sound.assetPath != null) {
-      await _audioPlayer.stop();
-      await _audioPlayer.setReleaseMode(ReleaseMode.loop);
-      await _audioPlayer.play(AssetSource(sound.assetPath!.replaceFirst('assets/', '')));
+      try {
+        await _audioPlayer.stop();
+        await _audioPlayer.setReleaseMode(ReleaseMode.loop);
+        await _audioPlayer.play(AssetSource(sound.assetPath!.replaceFirst('assets/', '')));
+      } catch (e) {
+        // Ses dosyası bulunamazsa sessizce none'a dön
+        debugPrint('Ses dosyasi yuklenemedi: ${sound.assetPath} — $e');
+        _currentSound = FocusSound.none;
+        await _audioPlayer.stop();
+      }
     }
     notifyListeners();
   }

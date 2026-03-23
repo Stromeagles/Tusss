@@ -14,7 +14,8 @@
         "difficulty": "hard",
         "tags": [
           "Boyama"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: M'Fadyean, Şarbon basilini metilen mavisiyle boyar ama kapsül pembe kalır — mavi fonda pembe bir çerçeve gibi parlak görünür. Bu 'pembe çerçeve' reaksiyonu tanıyı doğrular."
       },
       {
         "id": "fc-gpb-2001",
@@ -23,7 +24,8 @@
         "difficulty": "medium",
         "tags": [
           "Enfeksiyon"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Yün eğiren işçi, havadaki şarbon sporlarını solur. Mediastendeki lenf bezleri hemorajik yangına döner — 'Yün Eğirici Hastalığı' adı bu meslek hazinesinden gelir."
       }
     ],
     "tus_spots": [
@@ -40,7 +42,7 @@
           "S. aureus",
           "B. anthracis",
           "L. monocytogenes",
-          "E) Hiçbiri"
+          "E) Integronlar"
         ],
         "correct_answer": "B. anthracis",
         "explanation": "Hayvan teması öyküsü, ağrısız siyah eskar (püstül malin) ve gram pozitif hareketsiz basiller şarbonun deri formudur.",
@@ -63,7 +65,8 @@
         "difficulty": "easy",
         "tags": [
           "Tetanoz"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Tetanoz toksininin ilk hedefi çene kasıdır (masseter). Ağız kilitlenir, hasta konuşamaz — tıpkı paslanmış bir menteşe gibi çene açılmaz. Trismus, tetanozun ilk çığlığıdır."
       },
       {
         "id": "fc-gpb-2101",
@@ -72,7 +75,8 @@
         "difficulty": "medium",
         "tags": [
           "Botulizm"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Botulizm '4D' ordusuyla saldırır: Diplopi (çift görme), Dizartri (konuşma bozukluğu), Disfaji (yutma güçlüğü) ve Dispne (nefes darlığı). Dört D birden gelirse konserveyi hatırla."
       }
     ],
     "tus_spots": [
@@ -90,7 +94,7 @@
           "C. tetani",
           "S. pyogenes",
           "C. difficile",
-          "E) Hiçbiri"
+          "E) Integronlar"
         ],
         "correct_answer": "C. tetani",
         "explanation": "Yara öyküsü, trismus (çene kilidi) ve opistotonus tetanozun klasik triadıdır.",
@@ -113,7 +117,8 @@
         "difficulty": "medium",
         "tags": [
           "Listeria"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Listeria, oda sıcaklığında taklacı gibi döner (tumbling hareket). Buzdolabının soğuğunda bile çoğalır — soğukkanlı bir akrobat gibi 4°C'de gösteri yapar."
       },
       {
         "id": "fc-gpb-2201",
@@ -122,7 +127,8 @@
         "difficulty": "medium",
         "tags": [
           "Difteri"
-        ]
+        ],
+        "story_hint": "💡 HİKAYE: Difteri basili, tellüritli besiyerinde siyah koloni yapar — tıpkı karanlık bir sahneye çıkan bir villana gibi. Tinsdale besiyerindeki bu siyah iz, difterinin parmak izidir."
       }
     ],
     "tus_spots": [
@@ -140,7 +146,7 @@
           "Difteri",
           "Farenjit",
           "Kaba kulak",
-          "E) Hiçbiri"
+          "E) Integronlar"
         ],
         "correct_answer": "Difteri",
         "explanation": "Kaldırılınca kanayan psödomembran ve boğa boynu görünümü C. diphtheriae (Difteri) için tipiktir.",

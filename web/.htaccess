@@ -1,0 +1,36 @@
+# AsisTus - Flutter Web - Plesk/Apache Deployment
+# URL yeniden yönlendirme: tüm route'lar index.html'e yönlendirilir
+
+Options -MultiViews
+RewriteEngine On
+
+# HTTPS yönlendirme
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Flutter web SPA routing — mevcut dosya/dizin değilse index.html'e yönlendir
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [L]
+
+# Cache kontrolü — Flutter'ın hash'li dosyaları için uzun cache
+<FilesMatch "\.(js|css|png|jpg|jpeg|gif|ico|woff|woff2|ttf|eot|svg)$">
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+
+# index.html ve manifest hiç cache'lenmesin
+<FilesMatch "(index\.html|manifest\.json|flutter_service_worker\.js)$">
+  Header set Cache-Control "no-cache, no-store, must-revalidate"
+  Header set Pragma "no-cache"
+  Header set Expires "0"
+</FilesMatch>
+
+# CORS — Firebase Auth için
+Header always set Access-Control-Allow-Origin "*"
+Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+Header always set Access-Control-Allow-Headers "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization"
+
+# Sıkıştırma
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json
+</IfModule>

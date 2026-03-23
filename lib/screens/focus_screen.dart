@@ -33,7 +33,7 @@ class _FocusScreenState extends State<FocusScreen> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: isDark
-                ? const [Color(0xFF080C12), Color(0xFF0D1117), Color(0xFF101820)]
+                ? const [Color(0xFF0B1120), Color(0xFF0F172A), Color(0xFF152035)]
                 : const [Color(0xFFF0F5FF), Color(0xFFE8F0FF)],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,

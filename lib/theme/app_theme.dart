@@ -18,16 +18,16 @@ class AppTheme {
   static const Color mediumColor= Color(0xFFE3B341);
   static const Color easyColor  = Color(0xFF3FB950);
 
-  // ── Dark Renkler — GitHub Dark ────────────────────────────────────────────
-  static const Color background     = Color(0xFF0D1117);
-  static const Color surface        = Color(0xFF161B22);
-  static const Color surfaceVariant = Color(0xFF1C2333);
-  static const Color cardBackground = Color(0xFF161B22);
-  static const Color textPrimary    = Color(0xFFE6EDF3);
-  static const Color textSecondary  = Color(0xFF8B949E);
-  static const Color textMuted      = Color(0xFF484F58);
-  static const Color divider        = Color(0xFF21262D);
-  static const Color border         = Color(0xFF30363D);
+  // ── Dark Renkler — Slate Dark (Eye-Care Premium) ─────────────────────────
+  static const Color background     = Color(0xFF0F172A);
+  static const Color surface        = Color(0xFF1E293B);
+  static const Color surfaceVariant = Color(0xFF253349);
+  static const Color cardBackground = Color(0xFF1E293B);
+  static const Color textPrimary    = Color(0xFFF8FAFC);
+  static const Color textSecondary  = Color(0xFF94A3B8);
+  static const Color textMuted      = Color(0xFF64748B);
+  static const Color divider        = Color(0xFF2D3A4F);
+  static const Color border         = Color(0xFF334155);
 
   // ── Light Renkler ─────────────────────────────────────────────────────────
   static const Color lightBackground    = Color(0xFFEFF4FF);

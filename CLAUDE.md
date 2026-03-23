@@ -11,7 +11,7 @@ Senior Flutter Developer & UI/UX Expert. Bu projede baş geliştirici olarak gö
 
 ## Tasarım Prensipleri
 - UI her zaman premium hissettirmeli
-- Koyu tema: `#0D1117` (background), `#161B22` (surface), `#F78166` (coral accent), `#A371F7` (violet)
+- Koyu tema: `#0F172A` (background), `#161B22` (surface), `#F78166` (coral accent), `#A371F7` (violet)
 - Cyan accent: `#00D4FF` (web ve logo)
 - Glassmorphism: yarı-şeffaf kartlar, yumuşak gölgeler
 - Font: Inter (Google Fonts)

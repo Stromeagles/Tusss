@@ -1,699 +1,997 @@
-{
-  "subject": "Anatomi",
-  "chapter": "Anatomi - Genel (Batch 3)",
-  "flashcards": [
-    {
-      "id": "anat_201",
-      "question": "Gebelikte desidua (gebeliğe hazırlanmış endometrium) gelişimini destekleyen ana hormon hangisidir?",
-      "answer": "[[Progesteron]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_202",
-      "question": "Prostat bezinin salgısı meninin yaklaşık yüzde kaçını oluşturur?",
-      "answer": "[[%30]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_203",
-      "question": "Testis torbası (Scrotum) içerisindeki ısının vücut ısısından düşük olmasını sağlayan termoregülasyon venöz ağı nedir?",
-      "answer": "[[Plexus pampiniformis]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_204",
-      "question": "Vücutta kıkırdak dokusunda bulunmayan özellik nedir?",
-      "answer": "[[Kan damarı, lenf damarı ve sinir içermez]].",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_205",
-      "question": "Kulak zarının (Membrana tympani) gerginliğini ayarlayan M. tensor tympani kasının siniri hangisidir?",
-      "answer": "[[Nervus mandibularis]] ([[CN V3 dalı N. pterygoideus medialis]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_206",
-      "question": "Malleus, incus, stapes zincirindeki en küçük kemikçik hangisidir?",
-      "answer": "[[Stapes]] ([[Üzengi]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_207",
-      "question": "Cranial sinir III (N. oculomotorius) gözdeki hangi parasempatik ganglion'da sinaps yapar?",
-      "answer": "[[Ganglion ciliare]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_208",
-      "question": "Cranial sinir VII (N. facialis) gözyaşı bezi (Glandula lacrimalis) için hangi ganglion'da sinaps yapar?",
-      "answer": "[[Ganglion pterygopalatinum]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_209",
-      "question": "Cranial sinir IX (N. glossopharyngeus) parotis bezi için hangi ganglion'da sinaps yapar?",
-      "answer": "[[Ganglion oticum]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_210",
-      "question": "Cranial sinir X (N. vagus) kalpte parasempatik etki için nerede sinaps yapar?",
-      "answer": "[[Hedef organın yakınındaki veya içindeki mikroskobik ganglionlarda]] ([[Terminal ganglion]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_211",
-      "question": "Memenin Montgomery tüberkülleri nerede yer alır?",
-      "answer": "[[Areola mammae]] ([[Meme başı çevresi]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_212",
-      "question": "Beyincik tonsillerinin (Tonsilla cerebelli) foramen magnum'dan aşağı fıtıklaşmasına ne ad verilir?",
-      "answer": "[[Arnold-Chiari malformasyonu]] ([[veya serebellar fıtıklaşma]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_213",
-      "question": "Arteria meningea media, kafatasına hangi delikten (foramen) girer?",
-      "answer": "[[Foramen spinosum]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_214",
-      "question": "Büyük beyin veni (Vena cerebri magna - Galen veni) nereye dökülür?",
-      "answer": "[[Sinus rectus]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_215",
-      "question": "Kranial boşlukta dura mater'in iki beyni ortadan ayıran uzantısı neresidir?",
-      "answer": "[[Falx cerebri]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_216",
-      "question": "Eksüda yapısındaki beyin-omurilik sıvısının aşırı birikimi (Hidrosefali) tedavisinde klasik olarak sıvının nereye şantlanması sağlanır?",
-      "answer": "[[Ventriculo-peritoneal]] ([[VP şant]]) boşluğa",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_217",
-      "question": "Otonomik ganglionlarda (hem sempatik hem parasempatik) asetilkolin salınan reseptör tipi nedir?",
-      "answer": "[[Nikotinik reseptörler]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_218",
-      "question": "Ön kolun ana fleksör kaslarına inervasyon sağlayan kas-sinir (dallarını da içeren) hangileridir?",
-      "answer": "[[Nervus medianus]] ([[çoğunluk]]) ve [[Nervus ulnaris]] ([[1.5 kas]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_219",
-      "question": "Trigonum femorale (Scarpa üçgeni) içinden geçen yapılarda en medialde olan yapı hangisidir?",
-      "answer": "[[Vena femoralis]] ([[Önemliyse VAN kuralı: İçe doğru Ven-Arter-Nerv]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_220",
-      "question": "Ayak bileğinin iç (medial) bağının (Ligamentum deltoideum) yırtılması hangi hareketle olur?",
-      "answer": "[[Aşırı eversiyon]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_221",
-      "question": "Ayak baş parmağının dışa dönük deformitesine ne ad verilir?",
-      "answer": "[[Hallux valgus]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_222",
-      "question": "Göz küresinin konjonktival hiperemi ve sulanması (Epifora) genellikle hangi kanaldaki tıkanıklıktan olur?",
-      "answer": "[[Ductus nasolacrimalis]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_223",
-      "question": "Göz kapağının sarkması (Ptosis) hangi kasın veya sinirin etkisidir?",
-      "answer": "[[M. levator palpebrae superioris kasının]] ([[N. oculomotorius veya sempatik sinir levator hasarı]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_224",
-      "question": "Böbrek taşının üriner sistemden düşüşünde ağrının kasıklara vurmasının sebebi nedir?",
-      "answer": "[[Testis]] ve [[over ile böbreklerin aynı spinal yollarla]] ([[L1]]) duyusal bağlantısı",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_225",
-      "question": "Pelvis kemiklerinden leğen kemiği (Os coxae) hangi üç kemiğin birleşimidir?",
-      "answer": "[[Os ilium]], [[Os ischii]], [[Os pubis]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_226",
-      "question": "Ligamentum inguinale (Poupart bağı), hangi yapılar arasındadır?",
-      "answer": "[[Spina iliaca anterior superior]] ([[SIAS]]) ile Tuberculum pubicum arası",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_227",
-      "question": "Lumbosakral pleksusun en kalın dalı hangisidir?",
-      "answer": "[[Nervus ischiadicus]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_228",
-      "question": "Nervus ischiadicus (Siyatik sinir) gluteal bölgeye hangi delikten çıkar?",
-      "answer": "[[Foramen ischiadicum majus]] ([[infrapiriform]]) 'dan",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_229",
-      "question": "Servikal vertebralardaki ayırt edici özellik processus transversus'taki hangi yapıdır?",
-      "answer": "[[Foramen transversarium]] ([[A. vertebralis geçer, C7 hariç genellikle C1-C6 arası]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_230",
-      "question": "Birinci boyun omuru (Atlas) ile ikinci boyun omuru (Axis) arasındaki dönme hareketini sağlayan diş şeklindeki yapıya ne ad verilir?",
-      "answer": "[[Dens axis]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_231",
-      "question": "Oksipital kondiller ile atlas artikülasyonu omurgada hangi hareketi yaptırır?",
-      "answer": "[[Fleksiyon]] ve [[ekstansiyon]] ([[\"Evet\" hareketi]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_232",
-      "question": "Atlas ile axis arasındaki atlantoaksiyal eklem hangi hareketi yaptırır?",
-      "answer": "[[Rotasyon]] ([[\"Hayır\" hareketi]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_233",
-      "question": "Beyinde görme korteksi beslenmesi esas olarak hangi damardan sağlanır?",
-      "answer": "[[Arteria cerebri posterior]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_234",
-      "question": "Duysal korteks (Primer somatosensör korteks) beynin neresindedir?",
-      "answer": "[[Lobus parietalis (Gyrus postcentralis]], [[Alan 3]], [[1]], [[2)]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_235",
-      "question": "Lomber disklere (özellikle L4-L5 herniasyonlarında) bağlı kök basısında en sık hangi kök etkilenir?",
-      "answer": "[[Alt kök]] ([[Örn: L4-L5 diskinde L5 kökü etkilenir]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_236",
-      "question": "Sindirim kanalının miyenterik pleksusu kime aittir ve görevi nedir?",
-      "answer": "[[Auerbach pleksusu]] ([[Parasempatik-motor, peristaltizm sağlar]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_237",
-      "question": "Sindirim kanalının submukozal pleksusu kime aittir ve görevi nedir?",
-      "answer": "[[Meissner pleksusu (Salgı]] ve [[kan akımı ayarı)]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_238",
-      "question": "Waldeyer'in lenfatik halkasını (Tonsillar halka) oluşturan ana tonsillalar hangileridir?",
-      "answer": "[[Tonsilla pharyngealis, palatina, lingualis]] ve [[tubaria]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_239",
-      "question": "Özofagus kanserlerinin (yassı hücreli CA) lenfatik yolla yayılımı en sık nereye olur?",
-      "answer": "[[Mediastinal]] ve [[boyun lenf nodlarına]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_240",
-      "question": "Vena azygos nereye dökülür?",
-      "answer": "[[Vena cava superior]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_241",
-      "question": "Kalbin iletim sisteminde Atrioventriküler (AV) nod nerededir?",
-      "answer": "[[Septum interatriale'nin alt bölümünde]] ([[Koch üçgeninde]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_242",
-      "question": "Bronkopulmoner segment sayısı her iki akciğerde toplam kaçtır?",
-      "answer": "[[Genelde sağda 10, solda 8-10 arası]] ([[Toplam 20 kabul edilir]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_243",
-      "question": "Akciğerin hilum'unda hava yollarından (ana bronşlar) sonra en önde bulunan yapı hangisidir?",
-      "answer": "[[Vena pulmonalis superior]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_244",
-      "question": "Yutak (Pharynx) kaslarının çoğunu innerve eden sinir ağı hangisidir?",
-      "answer": "[[Plexus pharyngeus]] ([[CN IX, X ağırlıklı]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_245",
-      "question": "Larenks kaslarından sadece birini M. cricothyroideus'u N. laryngeus superior innerve eder. Diğerlerini kim innerve eder?",
-      "answer": "[[Nervus laryngeus recurrens]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_246",
-      "question": "Sol Nervus laryngeus recurrens (N. laryngeus inferior) arkus aorta seviyesinde altından dönerek yukarı çıkar. Sağ taraf nereden döner?",
-      "answer": "[[Arteria subclavia dextra altından döner.]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_247",
-      "question": "Dalak travmalarında komşu olan hangi organın yaralanma/yırtılma riski olabilir (sol fleksiyon hizası)?",
-      "answer": "[[Pankreas kuyruğu]] ([[cauda pancreatis]]) veya Diyafragma",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_248",
-      "question": "Pankreas başı kanserinde en erken çıkan klinik bulgu nedir?",
-      "answer": "[[Sarılık]] ([[Ductus choledochus tıkanır]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_249",
-      "question": "Göz kapağı tarsus bezi tıkanıklığına (kalaziom - meibomian cyst) ne ad verilir?",
-      "answer": "[[Chalazion]] ([[Glandula tarsalis tıkanıklığı]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_250",
-      "question": "Dudak köşesini aşağı çeken depresör mimik kası hangisidir?",
-      "answer": "[[M. depressor anguli oris]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_251",
-      "question": "Sternumun en alt parçasına ne ad verilir?",
-      "answer": "[[Processus xiphoideus]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_252",
-      "question": "Kotların (Costae) gerçek, yalancı ve yüzen sınıflandırması nasıldır?",
-      "answer": "[[İlk 7 çift gerçek (sternuma tutunur), 8-10 yalancı (kıkırdağa tutunur), 11-12 yüzen (costa fluctuantes)]].",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_253",
-      "question": "Ekskresyon / idrar üretimi nefronda başlar. İdrar toplama kanallarının (Ductus collectivus) en sonunda böbrek kalikslerine döküldüğü yerin adı nedir?",
-      "answer": "[[Papilla renalis]] ([[Porus urinarius]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_254",
-      "question": "Karında en büyük lenfatik yapı lenf damarlarının karnı çaprazladığı ağ olan yapıya?",
-      "answer": "[[Ductus thoracicus başlangıcı Cisterna chyli.]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_255",
-      "question": "Malleolus lateralis kas ve tendon komşulukları nedir?",
-      "answer": "[[M. fibularis]] ([[peroneus]]) longus ve [[brevis tendonları]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_256",
-      "question": "Alt ekstremite derin venlerinden vena poplitea diz arkası bölgede arterle komşuluğundan dolayı travmada ne tür şant / anevrizmaya neden olur?",
-      "answer": "[[Arteriovenöz fistül (Sıklıkla V. poplitea]] ve [[A. poplitea yaralanmaları nedeniyle)]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_257",
-      "question": "Fasciculus longitudinalis medialis (FLM) beyin sapında hangi sinir çekirdeklerini bağlar ve koordinasyon sağlar?",
-      "answer": "[[CN III, IV]] ve VI (Görme-bakış koordinasyonu için N. abducens ve [[N. oculomotorius çekirdeklerini)]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_258",
-      "question": "Beyincik hücrelerinden yalnızca hangi tip hücre serebellum korteksinden dışarı sinyal gönderir?",
-      "answer": "[[Purkinje hücreleri]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_259",
-      "question": "Koku yollarında, duyusal sinapsın talamusa uğramadan direkt kortekse giden tek sistem olduğu doğru mudur?",
-      "answer": "Evet, koku yolları ([[N. olfactorius]]) talamusa uğramadan paleokortekse gider.",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_260",
-      "question": "Lokal anestezi kliniğinde, dilde ve alt çenede uyuşturulan ve pterygomandibular raphe'ye enjeksiyon yapılan blok hangisidir?",
-      "answer": "[[Nervus alveolaris inferior]] ([[N. mandibularis V3 dalı]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_261",
-      "question": "Ağzı kapattıran en güçlü kas (M. masseter) arcus zygomaticus'tan başlayıp nereye tutunur?",
-      "answer": "[[Ramus mandibulae]] ve [[angulus mandibulae dış yüzüne]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_262",
-      "question": "Glisson kapsülü (Capsula fibrosa perivascularis) hangi organı sarar?",
-      "answer": "[[Karaciğer]] ([[Hepar]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_263",
-      "question": "Portal ven, hepatik arter ve koledok kanalını içeren karaciğer triad'ı (Portal triad) hangi bağ içinde yer alır?",
-      "answer": "[[Ligamentum hepatoduodenale]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_264",
-      "question": "Kortikospinal traktus lezyonlarında Babinski işareti ne anlama gelir?",
-      "answer": "[[Üst motor nöron hasarı]] ([[Ayak tabanında dış yanı çizildiğinde parmakların dorsal fleksiyona / ekstansiyona gitmesi]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_265",
-      "question": "Ön boyun üçgenlerinin (Trigonum cervicale anterius) ortak sınır kası hangisidir?",
-      "answer": "[[M. sternocleidomastoideus'un ön kenarı]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_266",
-      "question": "Karotid cisim (Glomus caroticum) fonksiyonu nedir?",
-      "answer": "[[Oksijen basıncına duyarlı bir kemoreseptördür.]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_267",
-      "question": "Karotid sinüs (Sinus caroticus) fonksiyonu nedir?",
-      "answer": "[[Kan basıncına duyarlı bir baroreseptördür.]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_268",
-      "question": "Aort arkusündeki baroreseptörlerin afferent sinyallerini taşıyan sinir hangisidir?",
-      "answer": "[[Nervus vagus]] ([[CN X]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_269",
-      "question": "Karotis sinüsünden afferent sinyalleri taşıyan sinir hangisidir?",
-      "answer": "[[Hering siniri / Nervus glossopharyngeus]] ([[CN IX]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_270",
-      "question": "Göğüs kafesi (Thorax) bölgesinde, 2. kosta (Costal cartilage) sternuma hangi çıkıntıda tutunur?",
-      "answer": "[[Angulus sterni]] ([[Louis açısı]]) hizasına.",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_271",
-      "question": "Beyin ventriküllerinin iç yüzeyini döşeyen hücre tabakasının adı nedir?",
-      "answer": "[[Ependim hücreleri]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_272",
-      "question": "Medulla spinalis kesitinde hem motor hem de duyu lifleri içeren kısım hangisidir?",
-      "answer": "[[Spinal sinir]] ([[Nervus spinalis kökleri birleştikten sonraki ana gövde]])",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_273",
-      "question": "Plexus pampiniformis varikosel durumunda hangi sebeple genişler?",
-      "answer": "[[Özellikle sol testis veninin sol böbrek venine]] ([[V. renalis sinistra]]) dik açıyla bağlanmasından dolayı sol tarafta direncin yüksek olması",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_274",
-      "question": "Sağ testisin kanını toplayan vena testicularis dextra nereye dökülür?",
-      "answer": "[[Vena cava inferior]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_275",
-      "question": "Özofagusu saran kas tabakalarının türleri nasıldır?",
-      "answer": "[[Üst 1/3 çizgili kas, orta 1/3 çizgili ve düz kas karışık, alt 1/3 tamamen düz kas]].",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_276",
-      "question": "Karaciğerin fonksiyonel ünitesi (Lobulus hepatis) merkezinde ne yer alır?",
-      "answer": "[[Vena centralis]]",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    },
-    {
-      "id": "anat_277",
-      "question": "Timpanik membranın çizildiği, kulak ağrısının referans alanlarında yutak ve orta kulak iletimini taşıyan ana sinir?",
-      "answer": "[[Nervus glossopharyngeus]] ([[CN IX]]) ve N. vagus'un r. auricularis (Arnold siniri) dalı.",
-      "difficulty": "Orta",
-      "tags": [
-        "Anatomi"
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "anat-batch3-001",
+    "subject": "Anatomi",
+    "chapter": "Ürogenital Sistem",
+    "topic": "Üreme Organları ve Üriner Sistem",
+    "sub_topic": "Prostat, Testis, Uterus, Böbrek ve Lenfatik Drenaj",
+    "content_summary": "Erkek ve kadın üreme organlarının anatomisi, böbrek yapısı, varikosel mekanizması ve klinik önemi. TUS'ta sık sorulan prostat, testis venöz drenajı ve böbrek taşı yansıyan ağrısı konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_201",
+        "question": "Gebelikte desidua (gebeliğe hazırlanmış endometrium) gelişimini destekleyen ana hormon hangisidir?",
+        "answer": "[[Progesteron]]",
+        "explanation": "Progesteron, ovulasyon sonrası corpus luteum'dan salgılanır ve endometriumun sekretuar faza geçerek desidua haline dönüşmesini sağlar. Gebelikte plasentadan da salgılanarak implantasyonu ve gebeliğin devamını destekler. TUS'ta progesteron-endometrium ilişkisi sık sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Ürogenital Sistem"]
+      },
+      {
+        "id": "anat_202",
+        "question": "Prostat bezinin salgısı meninin yaklaşık yüzde kaçını oluşturur?",
+        "answer": "[[%30]]",
+        "explanation": "Meninin en büyük kısmını (%60-70) vesicula seminalis salgısı oluşturur. Prostat salgısı yaklaşık %30 oranında katkıda bulunur ve asit fosfataz, sitrik asit, çinko içerir. Bu bilgi TUS'ta meni kompozisyonu soruları için önemlidir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Ürogenital Sistem"]
+      },
+      {
+        "id": "anat_203",
+        "question": "Testis torbası (Scrotum) içerisindeki ısının vücut ısısından düşük olmasını sağlayan termoregülasyon venöz ağı nedir?",
+        "answer": "[[Plexus pampiniformis]]",
+        "explanation": "Plexus pampiniformis, funiculus spermaticus içinde yer alan venöz ağdır. Arteryel kanı soğutarak testislerin vücut ısısının 2-3°C altında kalmasını sağlar (karşı akım ısı değişimi). Bu mekanizma spermatogenez için kritiktir. Varikosel bu pleksusun genişlemesidir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Ürogenital Sistem"]
+      },
+      {
+        "id": "anat_224",
+        "question": "Böbrek taşının üriner sistemden düşüşünde ağrının kasıklara vurmasının sebebi nedir?",
+        "answer": "[[Testis]] ve [[over ile böbreklerin aynı spinal yollarla]] ([[L1]]) duyusal bağlantısı",
+        "explanation": "Böbrek ve gonadlar (testis/over) embriyolojik olarak aynı bölgeden (mezonefros) gelişir ve T10-L1 segmentlerinden duyu alır. Bu nedenle üreter koliğinde ağrı kasık ve genital bölgeye yansır (referred pain). TUS'ta yansıyan ağrı mekanizması klasik soru konusudur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Ürogenital Sistem"]
+      },
+      {
+        "id": "anat_253",
+        "question": "Ekskresyon / idrar üretimi nefronda başlar. İdrar toplama kanallarının (Ductus collectivus) en sonunda böbrek kalikslerine döküldüğü yerin adı nedir?",
+        "answer": "[[Papilla renalis]] ([[Porus urinarius]])",
+        "explanation": "Ductus collectivus'lar birleşerek ductus papillares (Bellini kanalları) oluşturur ve papilla renalis'in ucundaki area cribrosa'dan kaliks minör'lere açılır. Papilla renalis'in nekrozu (papilla nekrozu) diyabet, analjezik nefropatisi ve orak hücreli anemide görülür.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Ürogenital Sistem"]
+      },
+      {
+        "id": "anat_273",
+        "question": "Plexus pampiniformis varikosel durumunda hangi sebeple genişler?",
+        "answer": "[[Özellikle sol testis veninin sol böbrek venine]] ([[V. renalis sinistra]]) dik açıyla bağlanmasından dolayı sol tarafta direncin yüksek olması",
+        "explanation": "Sol vena testicularis, vena renalis sinistra'ya dik açıyla (90°) drene olurken, sağ tarafta vena cava inferior'a oblik açıyla açılır. Bu anatomik fark sol tarafta venöz dönüş direncini artırır ve varikoselin %90 sol tarafta görülmesini açıklar. Ani gelişen sol varikosel renal hücreli karsinomun ilk bulgusu olabilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Ürogenital Sistem"]
+      },
+      {
+        "id": "anat_274",
+        "question": "Sağ testisin kanını toplayan vena testicularis dextra nereye dökülür?",
+        "answer": "[[Vena cava inferior]]",
+        "explanation": "Sağ vena testicularis doğrudan vena cava inferior'a drene olurken, sol vena testicularis sol vena renalis'e açılır. Bu asimetri TUS'ta sık sorulan bir konudur. Sağ tarafta oblik açılı drenaj varikosel riskini azaltır.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Ürogenital Sistem"]
+      }
+    ],
+    "tus_spots": [
+      "Sol vena testicularis → V. renalis sinistra (dik açı), sağ vena testicularis → V. cava inferior (oblik açı)",
+      "Varikosel %90 sol tarafta görülür; ani gelişen sol varikosel → renal hücreli karsinom düşündürür",
+      "Plexus pampiniformis: karşı akım ısı değişimi ile testis ısı regülasyonu sağlar",
+      "Böbrek taşı ağrısı kasığa yansır: böbrek ve gonadlar aynı spinal segment (T10-L1) duyusu paylaşır",
+      "Meni kompozisyonu: Vesicula seminalis %60-70, Prostat %30, diğerleri (Cowper vb.) az"
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-anat-b3-001",
+        "case": "22 yaşında erkek hasta, sol skrotumda dolgunluk ve ağrı şikayetiyle başvuruyor. Fizik muayenede sol skrotumda 'böcek torbası' görünümünde venöz genişleme palpe ediliyor. Valsalva manevrası ile artış gözleniyor. Bu durumun sol tarafta daha sık görülmesinin anatomik sebebi nedir?",
+        "options": [
+          "A) Sol vena testicularis'in V. renalis sinistra'ya dik açıyla açılması",
+          "B) Sol testis arterinin daha uzun olması",
+          "C) Sol böbreğin daha aşağıda olması",
+          "D) Sol inguinal kanalın daha geniş olması",
+          "E) Sol m. cremaster'in daha zayıf olması"
+        ],
+        "correct_answer": "A) Sol vena testicularis'in V. renalis sinistra'ya dik açıyla açılması",
+        "explanation": "Sol vena testicularis, V. renalis sinistra'ya yaklaşık 90 derecelik dik açıyla drene olur. Bu durum venöz dönüşü zorlaştırarak plexus pampiniformis'te staza neden olur. Sağ tarafta ise V. testicularis dextra doğrudan V. cava inferior'a oblik açıyla açılır, bu nedenle drenaj daha kolaydır."
+      },
+      {
+        "id": "cc-anat-b3-002",
+        "case": "35 yaşında kadın hasta, şiddetli sol lomber ağrı ve sol kasığa yayılan kolik tarzında ağrı ile acil servise başvuruyor. Üriner USG'de sol üreterde 6 mm taş saptanıyor. Ağrının kasığa yansımasının anatomik açıklaması nedir?",
+        "options": [
+          "A) Üreter ve uterusun aynı lenfatik drenaja sahip olması",
+          "B) Böbrek ve gonadların aynı spinal segmentlerden (T10-L1) duyu alması",
+          "C) N. ilioinguinalis'in direkt üreter duyusu taşıması",
+          "D) Üreter ağrısının peritoneal iritasyona bağlı olması",
+          "E) Böbrek kapsülünün frenik sinir tarafından innerve edilmesi"
+        ],
+        "correct_answer": "B) Böbrek ve gonadların aynı spinal segmentlerden (T10-L1) duyu alması",
+        "explanation": "Böbrek, üreter ve gonadlar embriyolojik olarak mezonefros'tan gelişir ve ortak spinal segmentlerden (T10-L1) duyusal innervasyona sahiptir. Bu nedenle üreter koliğinde ağrı, referred pain (yansıyan ağrı) mekanizmasıyla genital bölge ve kasığa yayılır."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch3-002",
+    "subject": "Anatomi",
+    "chapter": "Baş-Boyun Anatomisi",
+    "topic": "Kranial Sinirler ve Parasempatik Ganglionlar",
+    "sub_topic": "CN III, VII, IX, X Ganglionları, Larenks ve Farinks İnnervasyonu",
+    "content_summary": "Kranial sinirlerin parasempatik ganglionları, larenks ve farinks innervasyonu, N. laryngeus recurrens seyri. TUS'ta çok sık sorulan ganglion-sinir eşleşmeleri ve rekürren sinir anatomisi konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_207",
+        "question": "Cranial sinir III (N. oculomotorius) gözdeki hangi parasempatik ganglion'da sinaps yapar?",
+        "answer": "[[Ganglion ciliare]]",
+        "explanation": "N. oculomotorius'un parasempatik lifleri (Edinger-Westphal çekirdeğinden) ganglion ciliare'de sinaps yaparak m. sphincter pupillae (miyozis) ve m. ciliaris'i (akomodasyon) innerve eder. Bu bilgi TUS'ta kranial sinir-ganglion eşleşmesi sorularında klasiktir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Kranial Sinirler"]
+      },
+      {
+        "id": "anat_208",
+        "question": "Cranial sinir VII (N. facialis) gözyaşı bezi (Glandula lacrimalis) için hangi ganglion'da sinaps yapar?",
+        "answer": "[[Ganglion pterygopalatinum]]",
+        "explanation": "N. facialis'in parasempatik lifleri (nucleus salivatorius superior'dan) N. petrosus major aracılığıyla ganglion pterygopalatinum'da sinaps yapar. Postganglionik lifler glandula lacrimalis ve nazal mukoza bezlerine ulaşır. N. facialis ayrıca ganglion submandibulare üzerinden submandibular ve sublingual bezleri de innerve eder.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Kranial Sinirler"]
+      },
+      {
+        "id": "anat_209",
+        "question": "Cranial sinir IX (N. glossopharyngeus) parotis bezi için hangi ganglion'da sinaps yapar?",
+        "answer": "[[Ganglion oticum]]",
+        "explanation": "N. glossopharyngeus'un parasempatik lifleri (nucleus salivatorius inferior'dan) N. tympanicus → N. petrosus minor yoluyla ganglion oticum'da sinaps yapar. Postganglionik lifler N. auriculotemporalis aracılığıyla glandula parotidea'ya ulaşır. TUS'ta bu parasempatik yol detaylı sorulabilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Kranial Sinirler"]
+      },
+      {
+        "id": "anat_210",
+        "question": "Cranial sinir X (N. vagus) kalpte parasempatik etki için nerede sinaps yapar?",
+        "answer": "[[Hedef organın yakınındaki veya içindeki mikroskobik ganglionlarda]] ([[Terminal ganglion]])",
+        "explanation": "N. vagus'un parasempatik preganglionik lifleri hedef organ duvarında (kalp, akciğer, GİS) bulunan terminal (intramural) ganglionlarda sinaps yapar. Kalpte SA ve AV nod yakınındaki ganglionlar kalp hızını yavaşlatır. Diğer kranial sinirlerden farklı olarak vagus'un ayrı isimli bir ganglion'u yoktur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Kranial Sinirler"]
+      },
+      {
+        "id": "anat_244",
+        "question": "Yutak (Pharynx) kaslarının çoğunu innerve eden sinir ağı hangisidir?",
+        "answer": "[[Plexus pharyngeus]] ([[CN IX, X ağırlıklı]])",
+        "explanation": "Plexus pharyngeus, CN IX (duyusal), CN X (motor) ve servikal sempatik trunkus liflerinin birleşimiyle oluşur. Farinks kaslarının motor innervasyonu ağırlıklı olarak CN X (N. vagus) tarafından sağlanır. Tek istisna M. stylopharyngeus'tur; bu kas CN IX tarafından innerve edilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Baş-Boyun"]
+      },
+      {
+        "id": "anat_245",
+        "question": "Larenks kaslarından sadece birini M. cricothyroideus'u N. laryngeus superior innerve eder. Diğerlerini kim innerve eder?",
+        "answer": "[[Nervus laryngeus recurrens]]",
+        "explanation": "N. laryngeus superior'un dış dalı (r. externus) yalnızca M. cricothyroideus'u innerve eder. Larenks'in diğer tüm intrinsik kasları N. laryngeus recurrens (inferior) tarafından innerve edilir. Rekürren sinir hasarında ses kısıklığı (disfoni) ortaya çıkar. TUS'ta larenks innervasyonu çok sık sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Baş-Boyun"]
+      },
+      {
+        "id": "anat_246",
+        "question": "Sol Nervus laryngeus recurrens (N. laryngeus inferior) arkus aorta seviyesinde altından dönerek yukarı çıkar. Sağ taraf nereden döner?",
+        "answer": "[[Arteria subclavia dextra altından döner.]]",
+        "explanation": "Sol rekürren sinir arkus aorta altından, sağ rekürren sinir A. subclavia dextra altından dönerek larenkse yükselir. Sol sinir daha uzun seyir gösterdiği için tiroid cerrahisi ve mediastinal tümörlerde sol taraf lezyonları daha sıktır. Pancoast tümörü ve aort anevrizması sol rekürren siniri etkileyebilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Baş-Boyun"]
+      },
+      {
+        "id": "anat_260",
+        "question": "Lokal anestezi kliniğinde, dilde ve alt çenede uyuşturulan ve pterygomandibular raphe'ye enjeksiyon yapılan blok hangisidir?",
+        "answer": "[[Nervus alveolaris inferior]] ([[N. mandibularis V3 dalı]])",
+        "explanation": "N. alveolaris inferior, N. mandibularis'in (V3) dalıdır ve foramen mandibulae'den canalis mandibulae'ye girerek alt diş ve çene duyusunu taşır. İnferior alveoler sinir bloğu diş hekimliğinde en sık uygulanan anestezi tekniğidir. TUS'ta mandibular sinir dalları ve anestezi soruları çıkabilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Baş-Boyun"]
+      },
+      {
+        "id": "anat_261",
+        "question": "Ağzı kapattıran en güçlü kas (M. masseter) arcus zygomaticus'tan başlayıp nereye tutunur?",
+        "answer": "[[Ramus mandibulae]] ve [[angulus mandibulae dış yüzüne]]",
+        "explanation": "M. masseter, yüzeyel ve derin olmak üzere iki katmandan oluşur. Arcus zygomaticus'tan başlayıp ramus ve angulus mandibulae'nin dış yüzüne tutunur. Çiğneme kasları içinde en güçlü olanıdır ve N. massetericus (V3 dalı) tarafından innerve edilir. Tüm çiğneme kasları N. mandibularis (V3) tarafından innerve edilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Baş-Boyun"]
+      },
+      {
+        "id": "anat_277",
+        "question": "Timpanik membranın çizildiği, kulak ağrısının referans alanlarında yutak ve orta kulak iletimini taşıyan ana sinir?",
+        "answer": "[[Nervus glossopharyngeus]] ([[CN IX]]) ve N. vagus'un r. auricularis (Arnold siniri) dalı.",
+        "explanation": "Orta kulak mukozası ve timpanik membranın iç yüzü CN IX'un N. tympanicus dalı ile innerve edilir. Dış kulak yolunun bir kısmı ise CN X'un r. auricularis (Arnold siniri) dalı ile innerve edilir. Bu nedenle kulak ağrısı (otalji) farinks patolojilerinden yansıyabilir. Arnold siniri stimülasyonuyla öksürük refleksi tetiklenebilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Baş-Boyun"]
+      }
+    ],
+    "tus_spots": [
+      "Parasempatik ganglion eşleşmeleri: CN III → G. ciliare, CN VII → G. pterygopalatinum + G. submandibulare, CN IX → G. oticum, CN X → Terminal ganglion",
+      "N. laryngeus recurrens tüm intrinsik larenks kaslarını innerve eder (istisna: M. cricothyroideus → N. laryngeus superior r. externus)",
+      "Sol rekürren sinir arkus aorta altından, sağ rekürren sinir A. subclavia dextra altından döner",
+      "M. stylopharyngeus: farinks kasları içinde tek CN IX ile innerve edilen kas",
+      "Çiğneme kaslarının tamamı N. mandibularis (V3) tarafından innerve edilir"
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-anat-b3-003",
+        "case": "55 yaşında kadın hastaya tiroid cerrahisi sonrası ses kısıklığı gelişiyor. Laringoskopide sol vokal kordun paramedian pozisyonda fikse olduğu görülüyor. Hangi sinirin cerrahi sırasında hasarlandığı düşünülür?",
+        "options": [
+          "A) N. laryngeus superior",
+          "B) Sol N. laryngeus recurrens",
+          "C) N. hypoglossus",
+          "D) N. glossopharyngeus",
+          "E) N. accessorius"
+        ],
+        "correct_answer": "B) Sol N. laryngeus recurrens",
+        "explanation": "N. laryngeus recurrens, M. cricothyroideus hariç tüm intrinsik larenks kaslarını innerve eder. Tiroid cerrahisinde bu sinirin hasarı vokal kord paralizisine ve ses kısıklığına yol açar. Sol rekürren sinir daha uzun seyir gösterdiğinden cerrahi sırasında yaralanma riski daha yüksektir."
+      },
+      {
+        "id": "cc-anat-b3-004",
+        "case": "30 yaşında erkek hasta, sağ kulak ağrısı şikayetiyle başvuruyor. Otoskopik muayenede dış kulak yoluna pamuklu çubukla girildiğinde şiddetli öksürük refleksi tetikleniyor. Bu refleksi tetikleyen sinir hangisidir?",
+        "options": [
+          "A) N. trigeminus (V3)",
+          "B) N. facialis (VII)",
+          "C) N. glossopharyngeus (IX)",
+          "D) N. vagus (X) — r. auricularis (Arnold siniri)",
+          "E) N. vestibulocochlearis (VIII)"
+        ],
+        "correct_answer": "D) N. vagus (X) — r. auricularis (Arnold siniri)",
+        "explanation": "N. vagus'un r. auricularis dalı (Arnold siniri) dış kulak yolu ve timpanik membranın dış yüzeyini innerve eder. Bu dalın stimülasyonu vagal refleks yoluyla öksürük refleksini (Arnold refleksi) tetikleyebilir. Bu klinik bulgu TUS'ta kranial sinir soruları içinde sorulabilir."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch3-003",
+    "subject": "Anatomi",
+    "chapter": "Baş-Boyun Anatomisi",
+    "topic": "Boyun Bölgesi ve Kulak Anatomisi",
+    "sub_topic": "Boyun Üçgenleri, Karotid Cisim-Sinüs, Kulak Kemikçikleri, Göz",
+    "content_summary": "Boyun üçgenleri, karotid cisim ve sinüs baroreseptör/kemoreseptör sistemi, orta kulak kemikçikleri ve göz anatomisi. TUS'ta sık sorulan baroreseptör-kemoreseptör farkı ve boyun anatomisi konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_205",
+        "question": "Kulak zarının (Membrana tympani) gerginliğini ayarlayan M. tensor tympani kasının siniri hangisidir?",
+        "answer": "[[Nervus mandibularis]] ([[CN V3 dalı N. pterygoideus medialis]])",
+        "explanation": "M. tensor tympani, orta kulaktaki iki kastan biridir ve malleus'a tutunarak timpanik membranı gerer. N. mandibularis (V3) dalı tarafından innerve edilir. Diğer orta kulak kası olan M. stapedius ise N. facialis (VII) tarafından innerve edilir. TUS'ta bu iki kasın innervasyonu karşılaştırmalı olarak sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Baş-Boyun"]
+      },
+      {
+        "id": "anat_206",
+        "question": "Malleus, incus, stapes zincirindeki en küçük kemikçik hangisidir?",
+        "answer": "[[Stapes]] ([[Üzengi]])",
+        "explanation": "Stapes (üzengi kemiği) vücudun en küçük kemiğidir. Basis stapedis'i fenestra vestibuli'ye (oval pencere) oturarak sesin iç kulağa iletilmesini sağlar. Otoskleroz hastalığında stapes tabanı oval pencereye fikse olur ve iletim tipi işitme kaybı gelişir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Baş-Boyun"]
+      },
+      {
+        "id": "anat_222",
+        "question": "Göz küresinin konjonktival hiperemi ve sulanması (Epifora) genellikle hangi kanaldaki tıkanıklıktan olur?",
+        "answer": "[[Ductus nasolacrimalis]]",
+        "explanation": "Gözyaşı glandula lacrimalis'ten salgılanır, göz yüzeyini yıkadıktan sonra puncta lacrimalia → canaliculi lacrimales → saccus lacrimalis → ductus nasolacrimalis yoluyla meatus nasi inferior'a drene olur. Ductus nasolacrimalis tıkanıklığında gözyaşı akamaz ve epifora (sürekli gözyaşı akması) gelişir. Yenidoğanlarda sık görülür.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Göz"]
+      },
+      {
+        "id": "anat_223",
+        "question": "Göz kapağının sarkması (Ptosis) hangi kasın veya sinirin etkisidir?",
+        "answer": "[[M. levator palpebrae superioris kasının]] ([[N. oculomotorius veya sempatik sinir levator hasarı]])",
+        "explanation": "Ptosis iki mekanizmayla oluşabilir: (1) CN III (N. oculomotorius) lezyonunda M. levator palpebrae superioris felç olur → tam ptosis, midriazis ve göz hareketlerinde kısıtlılık eşlik eder; (2) Sempatik sinir lezyonunda (Horner sendromu) M. tarsalis superior (Müller kası) felç olur → parsiyel ptosis, miyozis ve anhidroz eşlik eder.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Göz"]
+      },
+      {
+        "id": "anat_249",
+        "question": "Göz kapağı tarsus bezi tıkanıklığına (kalaziom - meibomian cyst) ne ad verilir?",
+        "answer": "[[Chalazion]] ([[Glandula tarsalis tıkanıklığı]])",
+        "explanation": "Chalazion, glandula tarsalis'in (Meibomian bezleri) kronik granülomatöz inflamasyonudur. Arpacıktan (hordeolum) farklı olarak ağrısızdır ve genellikle kendiliğinden geriler. Tekrarlayan chalazion'larda sebasöz bez karsinomu ekarte edilmelidir. TUS'ta hordeolum-chalazion ayrımı sorulabilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Göz"]
+      },
+      {
+        "id": "anat_250",
+        "question": "Dudak köşesini aşağı çeken depresör mimik kası hangisidir?",
+        "answer": "[[M. depressor anguli oris]]",
+        "explanation": "M. depressor anguli oris, mandibula gövdesinin ön yüzünden başlayıp angulus oris'e (ağız köşesi) tutunur. Ağız köşesini aşağı çekerek üzgün yüz ifadesi oluşturur. Tüm mimik kasları N. facialis (CN VII) tarafından innerve edilir. Fasiyal paralizi durumunda bu kasın fonksiyonu da kaybolur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Baş-Boyun"]
+      },
+      {
+        "id": "anat_265",
+        "question": "Ön boyun üçgenlerinin (Trigonum cervicale anterius) ortak sınır kası hangisidir?",
+        "answer": "[[M. sternocleidomastoideus'un ön kenarı]]",
+        "explanation": "M. sternocleidomastoideus (SCM), boynu ön ve arka üçgenlere ayıran ana landmarktır. Ön kenarı trigonum cervicale anterius'u, arka kenarı trigonum cervicale posterius'u sınırlar. SCM ayrıca N. accessorius (CN XI) tarafından innerve edilir. TUS'ta boyun üçgenleri ve sınırları sık sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Baş-Boyun"]
+      },
+      {
+        "id": "anat_266",
+        "question": "Karotid cisim (Glomus caroticum) fonksiyonu nedir?",
+        "answer": "[[Oksijen basıncına duyarlı bir kemoreseptördür.]]",
+        "explanation": "Glomus caroticum, a. carotis communis bifurkasyonunda yer alan periferik kemoreseptördür. Kan O2 basıncındaki düşmeye (hipoksi), CO2 artışına ve pH düşüşüne duyarlıdır. Afferent sinyalleri CN IX (N. glossopharyngeus) taşır. TUS'ta karotid cisim (kemoreseptör) ve karotid sinüs (baroreseptör) karıştırılmamalıdır.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Baş-Boyun"]
+      },
+      {
+        "id": "anat_267",
+        "question": "Karotid sinüs (Sinus caroticus) fonksiyonu nedir?",
+        "answer": "[[Kan basıncına duyarlı bir baroreseptördür.]]",
+        "explanation": "Sinus caroticus, a. carotis interna'nın başlangıcındaki genişlemiş bölgedir ve arteriyel kan basıncındaki değişimlere duyarlı baroreseptörler içerir. Afferent lifler CN IX (Hering siniri) ile beyin sapına ulaşır. Karotid sinüs masajı refleks bradikardi ve hipotansiyon yaparak supraventriküler taşikardi tedavisinde kullanılır.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Baş-Boyun"]
+      },
+      {
+        "id": "anat_268",
+        "question": "Aort arkusündeki baroreseptörlerin afferent sinyallerini taşıyan sinir hangisidir?",
+        "answer": "[[Nervus vagus]] ([[CN X]])",
+        "explanation": "Arkus aorta'daki baroreseptörlerin afferent sinyalleri N. vagus (CN X) tarafından taşınır. Karotid sinüs baroreseptörlerinin afferenti ise CN IX'dur. Her iki sinirin afferent sinyalleri nucleus tractus solitarius'a ulaşarak kardiyovasküler refleksleri düzenler.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Baş-Boyun"]
+      },
+      {
+        "id": "anat_269",
+        "question": "Karotis sinüsünden afferent sinyalleri taşıyan sinir hangisidir?",
+        "answer": "[[Hering siniri / Nervus glossopharyngeus]] ([[CN IX]])",
+        "explanation": "Karotid sinüs baroreseptörlerinden afferent sinyaller, CN IX'un özel dalı olan Hering siniri (ramus sinus carotici) aracılığıyla nucleus tractus solitarius'a taşınır. Karotid cisim kemoreseptörlerinin afferenti de CN IX'dur. TUS'ta baroreseptör ve kemoreseptör afferentleri ayrı ayrı sorulabilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Baş-Boyun"]
+      }
+    ],
+    "tus_spots": [
+      "Karotid cisim = kemoreseptör (O2, CO2, pH), Karotid sinüs = baroreseptör (kan basıncı) — ikisinin afferenti CN IX",
+      "Aort arkusu baroreseptör afferenti → CN X (vagus), Karotid sinüs baroreseptör afferenti → CN IX (Hering siniri)",
+      "Orta kulak kasları: M. tensor tympani → V3 (mandibularis), M. stapedius → VII (facialis)",
+      "Ptosis ayırıcı tanı: Tam ptosis + midriazis → CN III lezyonu; Parsiyel ptosis + miyozis → Horner sendromu",
+      "Stapes vücudun en küçük kemiğidir; otosklerozda stapes fiksasyonu → iletim tipi işitme kaybı"
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-anat-b3-005",
+        "case": "60 yaşında hipertansif erkek hastada supraventriküler taşikardi atağı gelişiyor. Acil serviste karotid sinüs masajı uygulanarak kalp hızı düşürülüyor. Bu manevranın etki mekanizmasında afferent sinyalleri taşıyan sinir hangisidir?",
+        "options": [
+          "A) N. vagus (CN X)",
+          "B) N. glossopharyngeus (CN IX) — Hering siniri",
+          "C) N. phrenicus",
+          "D) N. accessorius (CN XI)",
+          "E) N. hypoglossus (CN XII)"
+        ],
+        "correct_answer": "B) N. glossopharyngeus (CN IX) — Hering siniri",
+        "explanation": "Karotid sinüs baroreseptörlerinden afferent sinyaller CN IX'un dalı olan Hering siniri ile nucleus tractus solitarius'a taşınır. Buradan efferent vagal tonus artışı sağlanarak kalp hızı düşürülür. Afferent yol CN IX, efferent yol CN X üzerinden çalışır."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch3-004",
+    "subject": "Anatomi",
+    "chapter": "Nöroanatomi",
+    "topic": "Beyin, Meninksler ve Ventrikül Sistemi",
+    "sub_topic": "Beyin Damarları, Dura Mater, Hidrosefali, BOS ve Korteks Alanları",
+    "content_summary": "Beyin damarlanması, meningeal yapılar, ventrikül sistemi, hidrosefali tedavisi ve beyin korteks alanları. TUS'ta klasik olan A. meningea media, falx cerebri, VP şant ve görme korteksi konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_212",
+        "question": "Beyincik tonsillerinin (Tonsilla cerebelli) foramen magnum'dan aşağı fıtıklaşmasına ne ad verilir?",
+        "answer": "[[Arnold-Chiari malformasyonu]] ([[veya serebellar fıtıklaşma]])",
+        "explanation": "Arnold-Chiari malformasyonu, serebellar tonsillerin foramen magnum'dan spinal kanala herniasyonudur. Tip I en sık görülen formudur ve siringomiyeli ile birliktelik gösterebilir. Tip II'de ek olarak myelomeningosel eşlik eder. TUS'ta fıtıklaşma tipleri ve eşlik eden bulgular sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Nöroanatomi"]
+      },
+      {
+        "id": "anat_213",
+        "question": "Arteria meningea media, kafatasına hangi delikten (foramen) girer?",
+        "answer": "[[Foramen spinosum]]",
+        "explanation": "A. meningea media, A. maxillaris'in dalıdır ve foramen spinosum'dan fossa cranii media'ya girer. Temporal bölge travmalarında bu arter yaralanabilir ve epidural hematom oluşur. Epidural hematom BT'de bikonveks (lens şekilli) görünüm verir. TUS'ta foramen spinosum-A. meningea media ilişkisi klasik sorudur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Nöroanatomi"]
+      },
+      {
+        "id": "anat_214",
+        "question": "Büyük beyin veni (Vena cerebri magna - Galen veni) nereye dökülür?",
+        "answer": "[[Sinus rectus]]",
+        "explanation": "Vena cerebri magna (Galen veni), beynin derin venöz drenajını toplar ve sinus rectus'a açılır. Sinus rectus ise confluens sinuum'a (torcular Herophili) drene olur. Galen veni anevrizması yenidoğanlarda kalp yetmezliği ve hidrosefali yapabilir. TUS'ta derin venöz drenaj yolu sorulabilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Nöroanatomi"]
+      },
+      {
+        "id": "anat_215",
+        "question": "Kranial boşlukta dura mater'in iki beyni ortadan ayıran uzantısı neresidir?",
+        "answer": "[[Falx cerebri]]",
+        "explanation": "Falx cerebri, dura mater'in iki serebral hemisferi ayıran sagittal düzlemdeki uzantısıdır. Üst kenarında sinus sagittalis superior, alt kenarında sinus sagittalis inferior bulunur. Subfalsin herniasyon durumunda gyrus cinguli falx cerebri altından karşı tarafa hernie olur ve A. cerebri anterior basısına neden olabilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Nöroanatomi"]
+      },
+      {
+        "id": "anat_216",
+        "question": "Eksüda yapısındaki beyin-omurilik sıvısının aşırı birikimi (Hidrosefali) tedavisinde klasik olarak sıvının nereye şantlanması sağlanır?",
+        "answer": "[[Ventriculo-peritoneal]] ([[VP şant]]) boşluğa",
+        "explanation": "VP şant, lateral ventrikülden periton boşluğuna subkutan tünel ile BOS drenajı sağlar. En sık kullanılan şant tipidir. Alternatifleri ventriculoatrial (VA) ve lumboperitoneal (LP) şantlardır. VP şant enfeksiyonu (S. epidermidis en sık etken) ve tıkanıklık önemli komplikasyonlardır.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Nöroanatomi"]
+      },
+      {
+        "id": "anat_233",
+        "question": "Beyinde görme korteksi beslenmesi esas olarak hangi damardan sağlanır?",
+        "answer": "[[Arteria cerebri posterior]]",
+        "explanation": "Primer görme korteksi (V1, Brodmann alan 17) oksipital lobun calcarine sulcus çevresinde yer alır ve A. cerebri posterior tarafından beslenir. A. cerebri posterior tıkanıklığında kontralateral homonim hemianopsi gelişir. Bu damar vertebrobaziler sistemin dalıdır. TUS'ta beyin damar-fonksiyon eşleşmeleri çok sık sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Nöroanatomi"]
+      },
+      {
+        "id": "anat_234",
+        "question": "Duysal korteks (Primer somatosensör korteks) beynin neresindedir?",
+        "answer": "[[Lobus parietalis (Gyrus postcentralis]], [[Alan 3]], [[1]], [[2)]]",
+        "explanation": "Primer somatosensör korteks, parietal lobun gyrus postcentralis'inde (Brodmann alan 3, 1, 2) yer alır. Vücudun karşı tarafından gelen dokunma, basınç, ağrı ve propriosepsiyon duyularını işler. Motor korteks ise gyrus precentralis'tedir (frontal lob). TUS'ta motor ve duyusal korteks lokalizasyonu temel sorudur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Nöroanatomi"]
+      },
+      {
+        "id": "anat_271",
+        "question": "Beyin ventriküllerinin iç yüzeyini döşeyen hücre tabakasının adı nedir?",
+        "answer": "[[Ependim hücreleri]]",
+        "explanation": "Ependim hücreleri, ventriküllerin ve canalis centralis'in iç yüzeyini döşeyen tek katlı silli epitel hücrelerdir. Siliyer hareketleriyle BOS akışına katkıda bulunur. Ependim hücrelerinin tümörü ependimom'dur ve çocuklarda 4. ventrikülde sık görülür. Koroid pleksus da modifiye ependim hücrelerinden oluşur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Nöroanatomi"]
+      }
+    ],
+    "tus_spots": [
+      "A. meningea media → foramen spinosum'dan girer; temporal travmada epidural hematom (bikonveks şekil)",
+      "Falx cerebri: iki hemisferi ayırır; subfalsin herniasyonda A. cerebri anterior basısı olur",
+      "Görme korteksi (V1) → A. cerebri posterior besler; tıkanırsa kontralateral homonim hemianopsi",
+      "VP şant: hidrosefalide en sık kullanılan şant; enfeksiyon etkeni genellikle S. epidermidis",
+      "Arnold-Chiari Tip I: serebellar tonsil herniasyonu + siringomiyeli; Tip II: + myelomeningosel"
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-anat-b3-006",
+        "case": "28 yaşında erkek hasta, motosiklet kazası sonrası acil servise getiriliyor. BT'de temporal bölgede bikonveks (lens şekilli) ekstra-aksiyel kanama saptanıyor. Lucid interval (aydınlık aralık) öyküsü mevcut. Bu kanamanın en olası kaynağı hangi damardır?",
+        "options": [
+          "A) A. cerebri media",
+          "B) A. meningea media",
+          "C) Köprü venleri (bridging veins)",
+          "D) A. cerebri anterior",
+          "E) A. cerebri posterior"
+        ],
+        "correct_answer": "B) A. meningea media",
+        "explanation": "Temporal bölge travmasında A. meningea media yırtılarak epidural hematom oluşturur. BT'de bikonveks (lens) şeklinde hiperdens görünüm tipiktir. Lucid interval (kısa süreli bilinç düzelme periyodu) epidural hematom için karakteristiktir. A. meningea media foramen spinosum'dan kafatasına girer."
+      },
+      {
+        "id": "cc-anat-b3-007",
+        "case": "65 yaşında kadın hastada ani gelişen sol homonim hemianopsi saptanıyor. Beyin MR'da sağ oksipital lobda iskemik enfarkt görülüyor. Bu enfarkttan sorumlu olan arter hangisidir?",
+        "options": [
+          "A) A. cerebri anterior",
+          "B) A. cerebri media",
+          "C) A. cerebri posterior",
+          "D) A. communicans posterior",
+          "E) A. choroidea anterior"
+        ],
+        "correct_answer": "C) A. cerebri posterior",
+        "explanation": "Primer görme korteksi (V1) oksipital lobda calcarine sulcus çevresinde yer alır ve A. cerebri posterior tarafından beslenir. Sağ A. cerebri posterior tıkanıklığında sol homonim hemianopsi gelişir. Bu damar vertebrobaziler sistemin terminal dalıdır."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch3-005",
+    "subject": "Anatomi",
+    "chapter": "Nöroanatomi",
+    "topic": "Spinal Kord, Otonom Sinir Sistemi ve Periferik Sinirler",
+    "sub_topic": "Medulla Spinalis, Pleksuslar, Otonom Ganglionlar, Enterik Sinir Sistemi",
+    "content_summary": "Spinal kord yapısı, otonom sinir sistemi reseptörleri, siyatik sinir, üst ekstremite sinirleri ve enterik sinir sistemi pleksusları. TUS'ta çok sık sorulan disk hernisi, Auerbach-Meissner pleksusları ve nikotinik reseptör konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_217",
+        "question": "Otonomik ganglionlarda (hem sempatik hem parasempatik) asetilkolin salınan reseptör tipi nedir?",
+        "answer": "[[Nikotinik reseptörler]]",
+        "explanation": "Otonom sinir sisteminde tüm preganglionik nöronlar (hem sempatik hem parasempatik) ganglionlarda asetilkolin salgılar ve nikotinik reseptörleri uyarır. Postganglionik parasempatik lifler hedef organda muskarinik reseptörleri uyarırken, postganglionik sempatik lifler genellikle norepinefrin salgılayarak adrenerjik reseptörleri uyarır.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Otonom Sinir Sistemi"]
+      },
+      {
+        "id": "anat_218",
+        "question": "Ön kolun ana fleksör kaslarına inervasyon sağlayan kas-sinir (dallarını da içeren) hangileridir?",
+        "answer": "[[Nervus medianus]] ([[çoğunluk]]) ve [[Nervus ulnaris]] ([[1.5 kas]])",
+        "explanation": "Ön kol fleksör kaslarının büyük çoğunluğu N. medianus tarafından innerve edilir. N. ulnaris yalnızca M. flexor carpi ulnaris ve M. flexor digitorum profundus'un ulnar yarısını (4-5. parmak, yani 1.5 kas) innerve eder. Bu ayrım TUS'ta ön kol innervasyonu sorularında kritiktir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Üst Ekstremite"]
+      },
+      {
+        "id": "anat_227",
+        "question": "Lumbosakral pleksusun en kalın dalı hangisidir?",
+        "answer": "[[Nervus ischiadicus]]",
+        "explanation": "N. ischiadicus (siyatik sinir), L4-S3 köklerinden oluşur ve vücudun en kalın ve en uzun siniridir. Gluteal bölgeden uyluğun arkasına iner ve genellikle fossa poplitea'da N. tibialis ve N. fibularis communis olarak ikiye ayrılır. Disk hernilerinde ve kalça enjeksiyonlarında hasar riski vardır.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Alt Ekstremite"]
+      },
+      {
+        "id": "anat_228",
+        "question": "Nervus ischiadicus (Siyatik sinir) gluteal bölgeye hangi delikten çıkar?",
+        "answer": "[[Foramen ischiadicum majus]] ([[infrapiriform]]) 'dan",
+        "explanation": "N. ischiadicus, pelvis'ten foramen ischiadicum majus'un infrapiriform kısmından (M. piriformis'in altından) çıkarak gluteal bölgeye geçer. Piriformis sendromunda bu kas siyatik siniri sıkıştırabilir. İntragluteal enjeksiyonlarda üst-dış kadran tercih edilerek sinir hasarından kaçınılır.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Alt Ekstremite"]
+      },
+      {
+        "id": "anat_235",
+        "question": "Lomber disklere (özellikle L4-L5 herniasyonlarında) bağlı kök basısında en sık hangi kök etkilenir?",
+        "answer": "[[Alt kök]] ([[Örn: L4-L5 diskinde L5 kökü etkilenir]])",
+        "explanation": "Posterolateral disk herniasyonunda, herniye disk posterolaterale fıtıklaşır ve bir alt segmentin sinir kökünü sıkıştırır. Örneğin L4-L5 disk hernisinde L5 kökü, L5-S1 disk hernisinde S1 kökü etkilenir. Bu kural TUS'ta disk hernisi sorularının temelidir. Santral herniasyonda ise cauda equina sendromu gelişebilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Nöroanatomi"]
+      },
+      {
+        "id": "anat_236",
+        "question": "Sindirim kanalının miyenterik pleksusu kime aittir ve görevi nedir?",
+        "answer": "[[Auerbach pleksusu]] ([[Parasempatik-motor, peristaltizm sağlar]])",
+        "explanation": "Auerbach (miyenterik) pleksusu, GİS duvarının sirküler ve longitudinal kas tabakaları arasında yer alır. Esas görevi peristaltik hareketleri koordine etmektir. Hirschsprung hastalığında bu pleksustaki ganglion hücrelerinin konjenital yokluğu aganglionik segmentte fonksiyonel obstrüksiyona neden olur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "GIS"]
+      },
+      {
+        "id": "anat_237",
+        "question": "Sindirim kanalının submukozal pleksusu kime aittir ve görevi nedir?",
+        "answer": "[[Meissner pleksusu (Salgı]] ve [[kan akımı ayarı)]]",
+        "explanation": "Meissner (submukozal) pleksusu, submukoza tabakasında yer alır ve esas olarak mukozal bez salgılarını ve lokal kan akımını düzenler. Auerbach pleksusu motor fonksiyon (peristaltizm), Meissner pleksusu ise sekretuar fonksiyon ile ilişkilidir. TUS'ta bu iki pleksusun karşılaştırılması sık sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "GIS"]
+      },
+      {
+        "id": "anat_257",
+        "question": "Fasciculus longitudinalis medialis (FLM) beyin sapında hangi sinir çekirdeklerini bağlar ve koordinasyon sağlar?",
+        "answer": "[[CN III, IV]] ve VI (Görme-bakış koordinasyonu için N. abducens ve [[N. oculomotorius çekirdeklerini)]]",
+        "explanation": "FLM, beyin sapında CN III, IV ve VI çekirdeklerini bağlayarak konjuge göz hareketlerini koordine eder. FLM lezyonunda internükleer oftalmopleji (INO) gelişir: adduksiyon kısıtlılığı ve karşı gözde abduksiyon nistagmusu görülür. INO'nun en sık sebebi genç hastalarda multipl skleroz, yaşlılarda ise inme'dir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Nöroanatomi"]
+      },
+      {
+        "id": "anat_258",
+        "question": "Beyincik hücrelerinden yalnızca hangi tip hücre serebellum korteksinden dışarı sinyal gönderir?",
+        "answer": "[[Purkinje hücreleri]]",
+        "explanation": "Purkinje hücreleri, serebellum korteksinin tek çıkış (output) nöronlarıdır ve inhibitör (GABAerjik) sinyal gönderirler. Derin serebellar çekirdeklere projekte olarak motor koordinasyonu düzenlerler. Alkol toksisitesi ve paraneoplastik sendromlarda Purkinje hücre dejenerasyonu serebellar ataksi yapar.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Nöroanatomi"]
+      },
+      {
+        "id": "anat_259",
+        "question": "Koku yollarında, duyusal sinapsın talamusa uğramadan direkt kortekse giden tek sistem olduğu doğru mudur?",
+        "answer": "Evet, koku yolları ([[N. olfactorius]]) talamusa uğramadan paleokortekse gider.",
+        "explanation": "Koku (olfaktör) sistemi, tüm duyusal yollar arasında talamusa uğramadan doğrudan kortekse (piriform korteks/paleokorteks) ulaşan tek sistemdir. Diğer tüm duyusal modaliteler (görme, işitme, dokunma vb.) talamusta sinaps yapar. Bu özellik TUS'ta 'talamusa uğramayan duyu' sorusu olarak klasiktir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Nöroanatomi"]
+      },
+      {
+        "id": "anat_264",
+        "question": "Kortikospinal traktus lezyonlarında Babinski işareti ne anlama gelir?",
+        "answer": "[[Üst motor nöron hasarı]] ([[Ayak tabanında dış yanı çizildiğinde parmakların dorsal fleksiyona / ekstansiyona gitmesi]])",
+        "explanation": "Babinski işareti, ayak tabanının lateral kenarının çizilmesiyle başparmağın dorsifleksiyona gitmesi ve diğer parmakların yelpaze gibi açılmasıdır. Üst motor nöron (piramidal sistem) hasarının patolojik refleksidir. 2 yaşına kadar fizyolojik olarak pozitif olabilir. TUS'ta üst-alt motor nöron ayrımında temel bulgudur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Nöroanatomi"]
+      },
+      {
+        "id": "anat_272",
+        "question": "Medulla spinalis kesitinde hem motor hem de duyu lifleri içeren kısım hangisidir?",
+        "answer": "[[Spinal sinir]] ([[Nervus spinalis kökleri birleştikten sonraki ana gövde]])",
+        "explanation": "Spinal sinir, ön kök (radix anterior - motor) ve arka kök (radix posterior - duyusal) birleştikten sonra oluşan mikst (karışık) sinirdir. Foramen intervertebrale'den çıkar ve hemen ramus anterior ve ramus posterior olarak ikiye ayrılır. Ön kök lezyonunda sadece motor kayıp, arka kök lezyonunda sadece duyu kaybı olur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Nöroanatomi"]
+      }
+    ],
+    "tus_spots": [
+      "Tüm otonom ganglionlarda preganglionik nörotransmitter: Asetilkolin → Nikotinik reseptör",
+      "L4-L5 disk hernisi → L5 kökü basısı; L5-S1 disk hernisi → S1 kökü basısı (posterolateral herniasyonda alt kök etkilenir)",
+      "Auerbach (miyenterik) pleksusu = peristaltizm; Meissner (submukozal) pleksusu = salgı ve kan akımı",
+      "FLM lezyonu → internükleer oftalmopleji (INO); gençlerde en sık MS, yaşlılarda inme",
+      "Koku (olfaktör) sistemi: talamusa uğramadan doğrudan kortekse giden tek duyusal yol"
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-anat-b3-008",
+        "case": "45 yaşında erkek hasta, sağ bacak arkasında ve ayağa yayılan ağrı ile başvuruyor. Düz bacak kaldırma testi pozitif. MR'da L4-L5 seviyesinde posterolateral disk herniasyonu saptanıyor. Bu herniasyondan en çok etkilenecek sinir kökü hangisidir?",
+        "options": [
+          "A) L3 kökü",
+          "B) L4 kökü",
+          "C) L5 kökü",
+          "D) S1 kökü",
+          "E) S2 kökü"
+        ],
+        "correct_answer": "C) L5 kökü",
+        "explanation": "Posterolateral disk herniasyonunda, herniye disk bir alt seviyenin sinir kökünü sıkıştırır. L4-L5 diskinde posterolaterale fıtıklaşan materyal L5 sinir kökünü basıya uğratır. L5 kök lezyonunda ayak dorsifleksiyonu zayıflar (düşük ayak) ve ayak sırtında duyu kaybı olur."
+      },
+      {
+        "id": "cc-anat-b3-009",
+        "case": "Yenidoğan bebekte karın distansiyonu, gecikmiş mekonyum pasajı ve kusmalar gözleniyor. Baryumlu kolon grafisinde rektosigmoid bölgede dar segment ve proksimalinde dilatasyon saptanıyor. Rektal biyopside ganglion hücrelerinin yokluğu tespit ediliyor. Hangi sinir pleksusundaki ganglion hücreleri eksiktir?",
+        "options": [
+          "A) Meissner pleksusu ve Auerbach pleksusu",
+          "B) Yalnızca Meissner pleksusu",
+          "C) Yalnızca Auerbach pleksusu",
+          "D) Henle pleksusu",
+          "E) Pelvik splanknik pleksus"
+        ],
+        "correct_answer": "A) Meissner pleksusu ve Auerbach pleksusu",
+        "explanation": "Hirschsprung hastalığında, nöral krest hücrelerinin migrasyonunun durması nedeniyle etkilenen segmentte hem Auerbach (miyenterik) hem de Meissner (submukozal) pleksuslarındaki ganglion hücreleri bulunmaz. Bu durum aganglionik segmentte tonik kontraksiyona ve fonksiyonel obstrüksiyona neden olur."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch3-006",
+    "subject": "Anatomi",
+    "chapter": "Ekstremite Anatomisi",
+    "topic": "Alt Ekstremite ve Pelvis",
+    "sub_topic": "Femoral Üçgen, Ayak Bileği, Pelvis Kemikleri, İnguinal Bağ",
+    "content_summary": "Alt ekstremitenin temel anatomik yapıları: femoral üçgen, ayak bileği bağları, pelvis kemikleri ve inguinal bölge. TUS'ta sık sorulan Scarpa üçgeni VAN kuralı, hallux valgus ve ligamentum inguinale konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_219",
+        "question": "Trigonum femorale (Scarpa üçgeni) içinden geçen yapılarda en medialde olan yapı hangisidir?",
+        "answer": "[[Vena femoralis]] ([[Önemliyse VAN kuralı: İçe doğru Ven-Arter-Nerv]])",
+        "explanation": "Scarpa üçgeninde medialden laterale doğru yapılar VAN kuralıyla sıralanır: Vena femoralis (en medial) → Arteria femoralis → Nervus femoralis (en lateral). Femoral herni, lacuna vasorum'dan vena femoralis'in medialine olan femoral kanal aracılığıyla çıkar. TUS'ta VAN sıralaması klasik sorudur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Alt Ekstremite"]
+      },
+      {
+        "id": "anat_220",
+        "question": "Ayak bileğinin iç (medial) bağının (Ligamentum deltoideum) yırtılması hangi hareketle olur?",
+        "answer": "[[Aşırı eversiyon]]",
+        "explanation": "Ligamentum deltoideum, ayak bileğinin medialinde bulunan güçlü bir bağ kompleksidir ve aşırı eversiyon (ayak dışa dönme) hareketi ile yaralanır. Daha sık görülen lateral bağ yaralanması ise inversiyon (ayak içe dönme) ile olur. TUS'ta bağ yaralanma mekanizmaları ve yönleri sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Alt Ekstremite"]
+      },
+      {
+        "id": "anat_221",
+        "question": "Ayak baş parmağının dışa dönük deformitesine ne ad verilir?",
+        "answer": "[[Hallux valgus]]",
+        "explanation": "Hallux valgus, birinci metatarsofalangeal eklemde başparmağın laterale (diğer parmaklara doğru) deviasyonudur. Dar ve sivri burunlu ayakkabı giyimi, düztabanlık ve genetik yatkınlık risk faktörleridir. İleri vakalarda bunion (medial çıkıntı) oluşur. Tedavide konservatif yöntemler veya osteotomi uygulanır.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Alt Ekstremite"]
+      },
+      {
+        "id": "anat_225",
+        "question": "Pelvis kemiklerinden leğen kemiği (Os coxae) hangi üç kemiğin birleşimidir?",
+        "answer": "[[Os ilium]], [[Os ischii]], [[Os pubis]]",
+        "explanation": "Os coxae (leğen kemiği) üç ayrı kemiğin acetabulum'da birleşmesinden oluşur: os ilium (üstte), os ischii (arkada-altta) ve os pubis (önde-altta). Bu üç kemik ergenlikte tamamen kaynaşır. Acetabulum, caput femoris ile art. coxae'yi (kalça eklemi) oluşturur. TUS'ta pelvis anatomisi soruları sık çıkar.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Alt Ekstremite"]
+      },
+      {
+        "id": "anat_226",
+        "question": "Ligamentum inguinale (Poupart bağı), hangi yapılar arasındadır?",
+        "answer": "[[Spina iliaca anterior superior]] ([[SIAS]]) ile Tuberculum pubicum arası",
+        "explanation": "Ligamentum inguinale, M. obliquus externus abdominis'in aponeurozunun alt kenarının kıvrılmasıyla oluşur ve SIAS'tan tuberculum pubicum'a uzanır. Altından femoral damarlar ve sinirler geçer. İnguinal ve femoral herniler bu bağ ile ilişkili olarak sınıflandırılır. TUS'ta inguinal kanal anatomisi detaylı sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Alt Ekstremite"]
+      },
+      {
+        "id": "anat_255",
+        "question": "Malleolus lateralis kas ve tendon komşulukları nedir?",
+        "answer": "[[M. fibularis]] ([[peroneus]]) longus ve [[brevis tendonları]]",
+        "explanation": "Malleolus lateralis'in (fibula alt ucu) arkasından M. fibularis (peroneus) longus ve brevis tendonları geçer. Bu tendonlar ayağın eversiyonunu sağlar ve N. fibularis superficialis tarafından innerve edilir. Lateral malleol kırıklarında bu tendonlar zedelenebilir. Weber sınıflaması lateral malleol kırıkları için kullanılır.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Alt Ekstremite"]
+      },
+      {
+        "id": "anat_256",
+        "question": "Alt ekstremite derin venlerinden vena poplitea diz arkası bölgede arterle komşuluğundan dolayı travmada ne tür şant / anevrizmaya neden olur?",
+        "answer": "[[Arteriovenöz fistül (Sıklıkla V. poplitea]] ve [[A. poplitea yaralanmaları nedeniyle)]]",
+        "explanation": "Fossa poplitea'da A. poplitea ve V. poplitea yakın komşulukta seyreder. Penetran travmalarda her ikisinin birlikte yaralanması arteriovenöz fistül oluşumuna yol açabilir. AV fistülde etkilenen bölgede thrill (titreşim) palpe edilir ve makine sesi tarzında üfürüm duyulur. A. poplitea yaralanması bacak iskemisi açısından acildir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Alt Ekstremite"]
+      }
+    ],
+    "tus_spots": [
+      "Scarpa üçgeni VAN kuralı (medialden laterale): Ven → Arter → Nerv",
+      "Ligamentum deltoideum → eversiyon yaralanması (medial); Lateral bağ kompleksi → inversiyon yaralanması",
+      "Os coxae = Os ilium + Os ischii + Os pubis (acetabulum'da birleşir)",
+      "Ligamentum inguinale: SIAS → Tuberculum pubicum (M. obliquus externus aponeurozunun alt kenarı)",
+      "N. ischiadicus: Foramen ischiadicum majus infrapiriform'dan çıkar; vücudun en kalın siniri"
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-anat-b3-010",
+        "case": "40 yaşında kadın hasta, sağ kasıkta ele gelen ağrılı şişlik ile başvuruyor. Şişlik ligamentum inguinale'nin altında ve vena femoralis'in medialinde palpe ediliyor. Öksürük impulsu pozitif. En olası tanı nedir?",
+        "options": [
+          "A) İndirekt inguinal herni",
+          "B) Direkt inguinal herni",
+          "C) Femoral herni",
+          "D) Obturator herni",
+          "E) Spigelian herni"
+        ],
+        "correct_answer": "C) Femoral herni",
+        "explanation": "Femoral herni, lacuna vasorum'dan (ligamentum inguinale altından) femoral kanal aracılığıyla çıkar ve V. femoralis'in medialinde yer alır. Kadınlarda daha sık görülür ve inkarserasyon riski yüksektir. İnguinal herniden farkı ligamentum inguinale'nin altında olmasıdır."
+      },
+      {
+        "id": "cc-anat-b3-011",
+        "case": "25 yaşında erkek hasta, diz arkasına bıçak yaralanması sonrası acil servise getiriliyor. Muayenede fossa poplitea'da pulsatil şişlik, thrill ve makine sesi tarzında üfürüm saptanıyor. En olası tanı nedir?",
+        "options": [
+          "A) Baker kisti rüptürü",
+          "B) Derin ven trombozu",
+          "C) A. poplitea anevrizması",
+          "D) Arteriovenöz fistül",
+          "E) Popliteal lenfadenopati"
+        ],
+        "correct_answer": "D) Arteriovenöz fistül",
+        "explanation": "Fossa poplitea'da A. poplitea ve V. poplitea yakın komşulukta seyreder. Penetran travmada her iki damarın yaralanması arteriovenöz fistül oluşturur. Karakteristik bulguları thrill (titreşim palpe edilmesi) ve continuous (makine sesi) tarzında üfürümdür."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch3-007",
+    "subject": "Anatomi",
+    "chapter": "Vertebral Kolon ve İskelet Sistemi",
+    "topic": "Servikal Vertebralar ve Genel İskelet",
+    "sub_topic": "Atlas-Axis, Foramen Transversarium, Kıkırdak Doku, Sternum ve Kostalar",
+    "content_summary": "Servikal vertebra özellikleri, atlas-axis eklemi, genel kıkırdak doku yapısı ve göğüs iskeleti. TUS'ta sık sorulan foramen transversarium, dens axis, kıkırdak doku özellikleri ve kosta sınıflaması konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_204",
+        "question": "Vücutta kıkırdak dokusunda bulunmayan özellik nedir?",
+        "answer": "[[Kan damarı, lenf damarı ve sinir içermez]].",
+        "explanation": "Kıkırdak doku avasküler (kan damarı içermeyen), alenfatik ve asinirsel bir bağ dokusudur. Beslenmesini perikondrium'dan difüzyon yoluyla alır. Bu nedenle kıkırdak hasarları yavaş iyileşir veya hiç iyileşmez. Eklem kıkırdağı (hyalin kıkırdak) perikondrium içermez ve sinovyal sıvıdan beslenir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Genel"]
+      },
+      {
+        "id": "anat_229",
+        "question": "Servikal vertebralardaki ayırt edici özellik processus transversus'taki hangi yapıdır?",
+        "answer": "[[Foramen transversarium]] ([[A. vertebralis geçer, C7 hariç genellikle C1-C6 arası]])",
+        "explanation": "Foramen transversarium, servikal vertebraların processus transversus'larında bulunan karakteristik deliktir. A. vertebralis genellikle C6'dan C1'e kadar bu deliklerden geçer (C7'den geçmez). A. vertebralis baziler sisteme katılarak beyin sapı ve serebellumu besler. TUS'ta servikal vertebra ayırt edici özellikleri klasik sorudur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "İskelet"]
+      },
+      {
+        "id": "anat_230",
+        "question": "Birinci boyun omuru (Atlas) ile ikinci boyun omuru (Axis) arasındaki dönme hareketini sağlayan diş şeklindeki yapıya ne ad verilir?",
+        "answer": "[[Dens axis]]",
+        "explanation": "Dens axis (odontoid çıkıntı), C2 (axis) vertebranın corpus'undan yukarı doğru uzanan diş benzeri yapıdır. Atlas'ın (C1) arcus anterior'u ile eklem yaparak baş rotasyonunu sağlar. Dens kırıkları servikal travmalarda sık görülür ve tip II kırıklar (dens tabanı) en instabil olanıdır. Romatoid artritte dens erozyonu atlantoaksiyal instabiliteye neden olabilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "İskelet"]
+      },
+      {
+        "id": "anat_231",
+        "question": "Oksipital kondiller ile atlas artikülasyonu omurgada hangi hareketi yaptırır?",
+        "answer": "[[Fleksiyon]] ve [[ekstansiyon]] ([[\"Evet\" hareketi]])",
+        "explanation": "Atlantooksipital eklem (C0-C1), oksipital kondiller ile atlas'ın massa lateralis'leri arasındadır. Elipsoid tip eklem olup esas olarak fleksiyon-ekstansiyon (baş öne-arkaya sallanma, 'evet' hareketi) yaptırır. Sınırlı lateral fleksiyon da mümkündür. TUS'ta eklem tipi ve hareket soruları için temel bilgidir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "İskelet"]
+      },
+      {
+        "id": "anat_232",
+        "question": "Atlas ile axis arasındaki atlantoaksiyal eklem hangi hareketi yaptırır?",
+        "answer": "[[Rotasyon]] ([[\"Hayır\" hareketi]])",
+        "explanation": "Atlantoaksiyal eklem (C1-C2), atlas'ın dens axis etrafında dönmesiyle baş rotasyonunun (sağa-sola çevirme, 'hayır' hareketi) yaklaşık %50'sini sağlar. Pivot (trokoid) tip eklemdir. Lig. transversum atlantis, dens'i anterior arkusa sabitleyerek stabilite sağlar. Bu bağın hasarında atlantoaksiyal subluksasyon ve spinal kord basısı riski vardır.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "İskelet"]
+      },
+      {
+        "id": "anat_251",
+        "question": "Sternumun en alt parçasına ne ad verilir?",
+        "answer": "[[Processus xiphoideus]]",
+        "explanation": "Sternum üç parçadan oluşur: manubrium (üst), corpus sterni (orta) ve processus xiphoideus (alt). Processus xiphoideus en küçük parçadır ve başlangıçta kıkırdaktır; yaşla birlikte kemikleşir. Diafragmanın sternal parçası buraya tutunur. Marfan sendromunda pectus excavatum (kunduracı göğsü) görülebilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "İskelet"]
+      },
+      {
+        "id": "anat_252",
+        "question": "Kotların (Costae) gerçek, yalancı ve yüzen sınıflandırması nasıldır?",
+        "answer": "[[İlk 7 çift gerçek (sternuma tutunur), 8-10 yalancı (kıkırdağa tutunur), 11-12 yüzen (costa fluctuantes)]].",
+        "explanation": "Costae verae (gerçek kotlar, 1-7): doğrudan kendi kıkırdağıyla sternuma eklemlenir. Costae spuriae (yalancı kotlar, 8-10): üstteki kotun kıkırdağına tutunarak dolaylı olarak sternuma bağlanır. Costae fluctuantes (yüzen kotlar, 11-12): sternuma hiçbir bağlantısı yoktur. TUS'ta kosta sınıflandırması temel bilgidir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "İskelet"]
+      },
+      {
+        "id": "anat_270",
+        "question": "Göğüs kafesi (Thorax) bölgesinde, 2. kosta (Costal cartilage) sternuma hangi çıkıntıda tutunur?",
+        "answer": "[[Angulus sterni]] ([[Louis açısı]]) hizasına.",
+        "explanation": "Angulus sterni (Louis açısı), manubrium ile corpus sterni arasındaki eklem çıkıntısıdır. 2. kostanın sternuma tutunma noktası bu seviyededir ve kosta sayma için önemli bir landmarktır. Bu seviye ayrıca T4-T5 vertebra hizası, trakea bifurkasyonu ve arkus aorta başlangıç/bitiş seviyesine karşılık gelir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "İskelet"]
+      }
+    ],
+    "tus_spots": [
+      "Servikal vertebra ayırt edici özelliği: Foramen transversarium (A. vertebralis C6-C1 arası geçer, C7 hariç)",
+      "Atlantooksipital eklem (C0-C1): fleksiyon-ekstansiyon ('evet'); Atlantoaksiyal eklem (C1-C2): rotasyon ('hayır')",
+      "Dens axis Tip II kırığı en instabil dens kırığıdır; romatoid artritte dens erozyonu → atlantoaksiyal instabilite",
+      "Angulus sterni (Louis açısı): 2. kosta seviyesi, T4-T5, trakea bifurkasyonu, arkus aorta hizası",
+      "Kıkırdak doku: avasküler, alenfatik, asinirsel; perikondrium'dan difüzyonla beslenir"
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-anat-b3-012",
+        "case": "70 yaşında kadın hasta, uzun süredir romatoid artrit tanısıyla takip ediliyor. Son aylarda el ve ayaklarda uyuşukluk, yürüme güçlüğü ve idrar kaçırma şikayetleri başlamış. Servikal MR'da atlantoaksiyal subluksasyon ve spinal kord basısı saptanıyor. Bu instabilitenin en olası sebebi nedir?",
+        "options": [
+          "A) Dens axis kırığı",
+          "B) Ligamentum transversum atlantis erozyonu",
+          "C) Ligamentum flavum hipertrofisi",
+          "D) Disk herniasyonu C1-C2",
+          "E) Posterior longitudinal ligament ossifikasyonu"
+        ],
+        "correct_answer": "B) Ligamentum transversum atlantis erozyonu",
+        "explanation": "Romatoid artritte pannus dokusu atlantoaksiyal eklem ve çevresindeki bağları erozyona uğratır. Lig. transversum atlantis, dens axis'i anterior arkusa sabitleyen en önemli stabilizatördür. Bu bağın zayıflaması atlantoaksiyal subluksasyona ve spinal kord basısına yol açar. RA hastalarında üst servikal instabilite mutlaka değerlendirilmelidir."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch3-008",
+    "subject": "Anatomi",
+    "chapter": "Toraks Anatomisi",
+    "topic": "Kalp, Akciğer ve Mediastinum",
+    "sub_topic": "Kardiyak İletim, Bronkopulmoner Segmentler, Vena Azygos, Özofagus",
+    "content_summary": "Kalbin iletim sistemi, akciğer segmentleri, mediastinal damarlar ve özofagus kas yapısı. TUS'ta sık sorulan AV nod lokalizasyonu, akciğer hilum anatomisi ve vena azygos drenajı konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_240",
+        "question": "Vena azygos nereye dökülür?",
+        "answer": "[[Vena cava superior]]",
+        "explanation": "Vena azygos, sağ posterior mediastende yükselerek T4 seviyesinde arkus venae azygos yapıp vena cava superior'a açılır. Vena cava inferior tıkanıklığında önemli bir kollateral yol olarak görev yapar. Sol taraftaki muadili vena hemiazygos ve v. hemiazygos accessoria'dır. TUS'ta venöz drenaj yolları sık sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Toraks"]
+      },
+      {
+        "id": "anat_241",
+        "question": "Kalbin iletim sisteminde Atrioventriküler (AV) nod nerededir?",
+        "answer": "[[Septum interatriale'nin alt bölümünde]] ([[Koch üçgeninde]])",
+        "explanation": "AV nod, sağ atriyumda Koch üçgeni içinde yer alır. Koch üçgeninin sınırları: Todaro tendonu (üst), koroner sinüs ostiyumu (alt) ve triküspit kapağın septal yaprakçığı (anterior). AV nod, atriyumlardan ventriküllere iletinin tek geçiş noktasıdır. AV nod'un kanlanması %80 sağ koroner arterden sağlanır.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Toraks"]
+      },
+      {
+        "id": "anat_242",
+        "question": "Bronkopulmoner segment sayısı her iki akciğerde toplam kaçtır?",
+        "answer": "[[Genelde sağda 10, solda 8-10 arası]] ([[Toplam 20 kabul edilir]])",
+        "explanation": "Her bronkopulmoner segment kendi segmental bronşu ve arterine sahip bağımsız bir fonksiyonel birimdir. Sağ akciğerde 10, sol akciğerde genellikle 8-10 segment vardır (bazı segmentler kaynaşmış olabilir). Segmentektomi (anatomik rezeksiyon) akciğer cerrahisinde önemlidir. TUS'ta segment sayıları ve loblar sorulabilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Toraks"]
+      },
+      {
+        "id": "anat_243",
+        "question": "Akciğerin hilum'unda hava yollarından (ana bronşlar) sonra en önde bulunan yapı hangisidir?",
+        "answer": "[[Vena pulmonalis superior]]",
+        "explanation": "Akciğer hilumunda yapıların önden arkaya sıralaması: V. pulmonalis superior (en önde) → A. pulmonalis → Bronşlar (en arkada). V. pulmonalis inferior ise en altta yer alır. Bu sıralama her iki tarafta benzerdir. Hilum anatomisi toraks cerrahisi ve radyoloji için kritiktir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Toraks"]
+      },
+      {
+        "id": "anat_275",
+        "question": "Özofagusu saran kas tabakalarının türleri nasıldır?",
+        "answer": "[[Üst 1/3 çizgili kas, orta 1/3 çizgili ve düz kas karışık, alt 1/3 tamamen düz kas]].",
+        "explanation": "Özofagusun kas yapısı üç bölümde değişir: üst 1/3 çizgili (istemli) kas, orta 1/3 çizgili ve düz kas karışımı, alt 1/3 düz (istemsiz) kas. Bu geçiş klinikte önemlidir: çizgili kas bölümünün innervasyonu N. laryngeus recurrens, düz kas bölümünün innervasyonu ise vagal pleksus ve Auerbach pleksusudur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Toraks"]
+      }
+    ],
+    "tus_spots": [
+      "AV nod lokalizasyonu: Koch üçgeni (sağ atriyum); kanlanması %80 sağ koroner arter",
+      "V. azygos → V. cava superior'a dökülür; VCI tıkanıklığında önemli kollateral yol",
+      "Akciğer hilum sıralaması (önden arkaya): V. pulmonalis superior → A. pulmonalis → Bronş",
+      "Bronkopulmoner segment: sağda 10, solda 8-10; her segment bağımsız cerrahi birim",
+      "Özofagus kas yapısı: üst 1/3 çizgili, orta 1/3 karışık, alt 1/3 düz kas"
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-anat-b3-013",
+        "case": "58 yaşında erkek hasta, vena cava superior sendromu tanısı alıyor. Yüz ve üst ekstremitelerde ödem, boyun venlerinde dolgunluk saptanıyor. Bu durumda venöz dönüşü sağlayacak en önemli kollateral yol hangisidir?",
+        "options": [
+          "A) Vena azygos sistemi",
+          "B) Vena portae sistemi",
+          "C) Vena jugularis externa",
+          "D) Vena subclavia",
+          "E) Vena cava inferior doğrudan"
+        ],
+        "correct_answer": "A) Vena azygos sistemi",
+        "explanation": "Vena cava superior obstrüksiyonunda, V. azygos sistemi en önemli kollateral drenaj yoludur. V. azygos ve hemiazygos venleri, üst vücut venöz kanını interkostal venler aracılığıyla toplayarak VCI'ya veya VCS'nin patent kısmına yönlendirebilir. Bu nedenle SVC sendromunda azygos sistemi hayati öneme sahiptir."
+      },
+      {
+        "id": "cc-anat-b3-014",
+        "case": "45 yaşında kadın hastada EKG'de birinci derece AV blok saptanıyor. AV nod'un kanlanmasını sağlayan arter en sık hangi koroner arterden kaynaklanır?",
+        "options": [
+          "A) Sol ön inen arter (LAD)",
+          "B) Sol sirkumfleks arter (LCx)",
+          "C) Sağ koroner arter (RCA)",
+          "D) Sol ana koroner arter (LMCA)",
+          "E) Posterior inen arter (PDA) — sol dominant"
+        ],
+        "correct_answer": "C) Sağ koroner arter (RCA)",
+        "explanation": "AV nod'un kanlanması %80 oranında sağ koroner arterden (RCA) sağlanır (sağ dominant dolaşım). Sağ koroner arter tıkanıklığında AV blok gelişme riski yüksektir. %20 oranında sol sirkumfleks arter (LCx) AV nod'u besler (sol dominant dolaşım)."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch3-009",
+    "subject": "Anatomi",
+    "chapter": "Karın ve Gastrointestinal Sistem",
+    "topic": "Karaciğer, Dalak, Pankreas ve Lenfatik Sistem",
+    "sub_topic": "Portal Triad, Glisson Kapsülü, Waldeyer Halkası, Dalak Komşulukları",
+    "content_summary": "Karın organlarının anatomisi: karaciğer lobüler yapısı, portal triad, dalak komşulukları, pankreas kanseri bulguları ve lenfatik sistem. TUS'ta sık sorulan Glisson kapsülü, portal triad ve Waldeyer halkası konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_211",
+        "question": "Memenin Montgomery tüberkülleri nerede yer alır?",
+        "answer": "[[Areola mammae]] ([[Meme başı çevresi]])",
+        "explanation": "Montgomery tüberkülleri (glandulae areolares), areola mammae üzerinde bulunan büyük sebasöz bezlerdir. Gebelikte belirginleşir ve meme başını yağlı salgıyla nemlendirerek emzirme sırasında korur. Bu bezlerin tıkanması Montgomery absesine yol açabilir. TUS'ta meme anatomisi soruları çıkabilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Genel"]
+      },
+      {
+        "id": "anat_238",
+        "question": "Waldeyer'in lenfatik halkasını (Tonsillar halka) oluşturan ana tonsillalar hangileridir?",
+        "answer": "[[Tonsilla pharyngealis, palatina, lingualis]] ve [[tubaria]]",
+        "explanation": "Waldeyer halkası, orofarinks ve nazofarinksi çevreleyen lenfoid doku halkasıdır. Bileşenleri: tonsilla pharyngealis (adenoid, nazofarinks tavanı), tonsilla palatina (yutak kenarları), tonsilla lingualis (dil kökü) ve tonsilla tubaria (östaki tüpü çevresi). Çocuklarda tonsilla pharyngealis hipertrofisi (adenoid vejetasyon) nazal obstrüksiyon yapabilir.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "GIS"]
+      },
+      {
+        "id": "anat_239",
+        "question": "Özofagus kanserlerinin (yassı hücreli CA) lenfatik yolla yayılımı en sık nereye olur?",
+        "answer": "[[Mediastinal]] ve [[boyun lenf nodlarına]]",
+        "explanation": "Özofagus kanserinin lenfatik yayılımı erken ve yaygın olur çünkü özofagusta submukozal lenfatik ağ zengindir ve seroza tabakası yoktur. Üst 1/3 tümörleri servikal ve üst mediastinal, orta 1/3 tümörleri mediastinal, alt 1/3 tümörleri abdominal ve çölyak lenf nodlarına metastaz yapar. Skip metastazlar sıktır.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "GIS"]
+      },
+      {
+        "id": "anat_247",
+        "question": "Dalak travmalarında komşu olan hangi organın yaralanma/yırtılma riski olabilir (sol fleksiyon hizası)?",
+        "answer": "[[Pankreas kuyruğu]] ([[cauda pancreatis]]) veya Diyafragma",
+        "explanation": "Dalak, sol hipokondriyak bölgede 9-11. kostalar hizasında yer alır. Komşulukları: üstte diyafragma, medialde sol böbrek ve pankreas kuyruğu, önde mide, aşağıda flexura coli sinistra (sol kolon fleksürası). Dalak travmasında pankreas kuyruğu yaralanması sık görülür. Splenektomi sonrası kapsüllü bakteri enfeksiyonu riski artar.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "GIS"]
+      },
+      {
+        "id": "anat_248",
+        "question": "Pankreas başı kanserinde en erken çıkan klinik bulgu nedir?",
+        "answer": "[[Sarılık]] ([[Ductus choledochus tıkanır]])",
+        "explanation": "Pankreas başı, ductus choledochus'un pankreas içi kısmını çevreler. Pankreas başı tümörü büyüdükçe bu kanalı tıkayarak obstrüktif (tıkanma) sarılığa neden olur. Courvoisier belirtisi (ağrısız, palpabl safra kesesi + sarılık) pankreas başı kanseri için karakteristiktir. TUS'ta bu klinik senaryo çok sık sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "GIS"]
+      },
+      {
+        "id": "anat_254",
+        "question": "Karında en büyük lenfatik yapı lenf damarlarının karnı çaprazladığı ağ olan yapıya?",
+        "answer": "[[Ductus thoracicus başlangıcı Cisterna chyli.]]",
+        "explanation": "Cisterna chyli (Pecquet sarnıcı), ductus thoracicus'un L1-L2 vertebra hizasında aorta'nın sağında yer alan başlangıç genişlemesidir. Alt ekstremite, pelvis ve karın organlarından gelen lenf sıvısını toplar. Ductus thoracicus buradan başlayıp diyafragmayı geçerek sol venöz açıya (angulus venosus sinister) dökülür.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "Lenfatik"]
+      },
+      {
+        "id": "anat_262",
+        "question": "Glisson kapsülü (Capsula fibrosa perivascularis) hangi organı sarar?",
+        "answer": "[[Karaciğer]] ([[Hepar]])",
+        "explanation": "Glisson kapsülü, karaciğeri saran ince fibröz kapsüldür. Porta hepatis'ten karaciğer içine uzanarak portal triad (V. portae, A. hepatica propria, ductus hepaticus) etrafında kılıf oluşturur. Kapsülün gerilmesi karaciğer ağrısını oluşturur (hepatit, konjestif karaciğer). Karaciğer parankimi ağrı duyusu taşımaz.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "GIS"]
+      },
+      {
+        "id": "anat_263",
+        "question": "Portal ven, hepatik arter ve koledok kanalını içeren karaciğer triad'ı (Portal triad) hangi bağ içinde yer alır?",
+        "answer": "[[Ligamentum hepatoduodenale]]",
+        "explanation": "Portal triad (Glisson triadı): V. portae, A. hepatica propria ve ductus choledochus'u içerir ve ligamentum hepatoduodenale içinde seyreder. Bu bağ, omentum minus'un serbest kenarını oluşturur ve foramen epiploicum'un (Winslow deliği) ön sınırıdır. Pringle manevrası bu bağın sıkıştırılmasıyla karaciğer kanamasının kontrolünü sağlar.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "GIS"]
+      },
+      {
+        "id": "anat_276",
+        "question": "Karaciğerin fonksiyonel ünitesi (Lobulus hepatis) merkezinde ne yer alır?",
+        "answer": "[[Vena centralis]]",
+        "explanation": "Klasik karaciğer lobülünün merkezinde vena centralis bulunur. Hepatositler radyal olarak vena centralis etrafında dizilir. Sinüzoidlerdeki kan periferden (portal triad) merkeze (vena centralis) doğru akar. Venae centrales birleşerek venae hepaticae'yı oluşturur ve vena cava inferior'a dökülür. Sentrilobüler nekroz hipoksi ve venöz konjesyonda görülür.",
+        "difficulty": "Orta",
+        "tags": ["Anatomi", "GIS"]
+      }
+    ],
+    "tus_spots": [
+      "Portal triad: V. portae + A. hepatica propria + Ductus choledochus → Ligamentum hepatoduodenale içinde",
+      "Pringle manevrası: Lig. hepatoduodenale sıkıştırılarak karaciğer kanaması kontrolü",
+      "Pankreas başı kanseri → ductus choledochus tıkanması → obstrüktif sarılık + Courvoisier belirtisi",
+      "Dalak komşulukları: diyafragma, sol böbrek, pankreas kuyruğu, mide, sol kolon fleksürası",
+      "Cisterna chyli → ductus thoracicus başlangıcı (L1-L2); ductus thoracicus sol venöz açıya dökülür"
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-anat-b3-015",
+        "case": "68 yaşında erkek hasta, ağrısız sarılık ve kilo kaybı ile başvuruyor. Fizik muayenede Courvoisier belirtisi (palpabl, gergin safra kesesi) saptanıyor. Abdominal BT'de pankreas başında kitle izleniyor. Sarılığın sebebi olan tıkanan anatomik yapı hangisidir?",
+        "options": [
+          "A) Ductus cysticus",
+          "B) Ductus hepaticus communis",
+          "C) Ductus choledochus (ductus biliaris communis)",
+          "D) Ductus pancreaticus (Wirsung kanalı)",
+          "E) Ductus hepaticus dexter"
+        ],
+        "correct_answer": "C) Ductus choledochus (ductus biliaris communis)",
+        "explanation": "Pankreas başı tümörü, intrapankreatik ductus choledochus'u sıkıştırarak obstrüktif sarılığa neden olur. Safra kesesi taşı olmadığı için safra akışının önlenmesiyle safra kesesi gergin ve palpabl hale gelir (Courvoisier belirtisi). Bu tablo pankreas başı kanseri için patognomoniktir."
+      },
+      {
+        "id": "cc-anat-b3-016",
+        "case": "42 yaşında kadın hasta, karaciğer travması sonrası kontrol edilemeyen kanama nedeniyle ameliyata alınıyor. Cerrah, omentum minus'un serbest kenarını sıkıştırarak geçici olarak kanamayı kontrol altına alıyor. Bu manevranın adı ve sıkıştırılan bağ hangisidir?",
+        "options": [
+          "A) Kocher manevrası — Ligamentum gastrocolicum",
+          "B) Pringle manevrası — Ligamentum hepatoduodenale",
+          "C) Cattell-Braasch manevrası — Ligamentum hepatogastricum",
+          "D) Mattox manevrası — Ligamentum falciforme",
+          "E) Pringle manevrası — Ligamentum teres hepatis"
+        ],
+        "correct_answer": "B) Pringle manevrası — Ligamentum hepatoduodenale",
+        "explanation": "Pringle manevrası, ligamentum hepatoduodenale'nin (omentum minus'un serbest kenarı) sıkıştırılmasıyla portal triad içindeki V. portae ve A. hepatica propria'nın geçici olarak oklüze edilmesidir. Bu manevra karaciğer kanamasının kontrolünde ilk basamak olarak kullanılır. Kanama devam ederse hepatik ven yaralanması düşünülmelidir."
+      }
+    ]
+  }
+]

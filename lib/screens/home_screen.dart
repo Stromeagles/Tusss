@@ -28,6 +28,7 @@ import 'case_study_screen.dart';
 import 'profile_screen.dart';
 import 'analytics_screen.dart';
 import 'focus_screen.dart';
+import 'spots_screen.dart';
 import '../services/focus_service.dart';
 
 // ╔══════════════════════════════════════════════════════════════════════════╗
@@ -178,6 +179,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
                                   // ── Questions Hub (Sorular) ─────────────────────────────
                                   RepaintBoundary(child: _buildCaseHub(isDark)),
+
+                                  const SizedBox(height: 20),
+
+                                  // ── Spot Bilgiler Hızlı Erişim ────────────────────────
+                                  _buildSpotBilgilerButton(isDark),
 
                                   const SizedBox(height: 20),
                                 ],
@@ -502,6 +508,66 @@ class _HomeScreenState extends State<HomeScreen> {
         await Navigator.push(context, AppRoute.slideUp(FlashcardScreen(initialMode: mode as FlashcardMode)));
         _loadData();
       },
+    );
+  }
+
+  // ── Spot Bilgiler Hızlı Erişim ──────────────────────────────────────────────
+
+  Widget _buildSpotBilgilerButton(bool isDark) {
+    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
+    final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: GestureDetector(
+        onTap: () => Navigator.push(context,
+            AppRoute.slideUp(const SpotsScreen())),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: isDark
+                  ? [const Color(0xFF1A1230), const Color(0xFF0F1A2E)]
+                  : [const Color(0xFFF0E6FF), const Color(0xFFE6F0FF)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            borderRadius: BorderRadius.circular(18),
+            border: Border.all(
+              color: AppTheme.neonPurple.withValues(alpha: isDark ? 0.25 : 0.15)),
+          ),
+          child: Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: AppTheme.neonPurple.withValues(alpha: 0.15),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: const Icon(Icons.local_fire_department_rounded,
+                    color: AppTheme.neonPurple, size: 22),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Spot Bilgiler',
+                      style: GoogleFonts.inter(
+                        color: textColor, fontSize: 15, fontWeight: FontWeight.w800)),
+                    const SizedBox(height: 2),
+                    Text('TUS\'ta en çok çıkan hap bilgiler',
+                      style: GoogleFonts.inter(
+                        color: subColor, fontSize: 12, fontWeight: FontWeight.w500)),
+                  ],
+                ),
+              ),
+              Icon(Icons.chevron_right_rounded,
+                  color: AppTheme.neonPurple.withValues(alpha: 0.6), size: 22),
+            ],
+          ),
+        ),
+      ),
     );
   }
 

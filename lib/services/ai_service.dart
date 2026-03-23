@@ -194,6 +194,67 @@ TUS icin hatirla:
         'iliskilendir. API anahtari eklendiginde gercek AI kodlamasi uretilecek.';
   }
 
+  // ── Kontekstüel AI Soru-Cevap ──────────────────────────────────────────
+
+  /// Kullanıcı bir flashcard/case üzerindeyken serbest soru sorabilir.
+  /// [cardContext]: Mevcut soru + cevap özeti
+  /// [userQuestion]: Kullanıcının sorusu
+  /// [chatHistory]: Önceki mesajlar (multi-turn conversation)
+  Future<String> askContextualQuestion({
+    required String cardContext,
+    required String userQuestion,
+    List<Map<String, String>> chatHistory = const [],
+  }) async {
+    if (!ApiConfig.isConfigured) {
+      return 'Bu özellik için Claude API anahtarı gereklidir. '
+          'api_config.dart dosyasına anahtarınızı ekleyin.';
+    }
+
+    final systemPrompt =
+        'Sen TUS (Tıpta Uzmanlık Sınavı) hazırlık uygulamasının tıbbi danışmanısın. '
+        'Kullanıcı şu anda aşağıdaki soruyu/kartı çalışıyor:\n\n'
+        '--- KART İÇERİĞİ ---\n$cardContext\n--- KART SONU ---\n\n'
+        'Kullanıcının bu kartla ilgili sorularını Türkçe, kısa ve TUS odaklı yanıtla. '
+        'Maksimum 200 kelime kullan. Klinik korelasyon ve ayırıcı tanı bilgisi ekle.';
+
+    // Build messages array (system + history + new question)
+    final messages = <Map<String, String>>[
+      ...chatHistory,
+      {'role': 'user', 'content': userQuestion},
+    ];
+
+    try {
+      final response = await http
+          .post(
+            Uri.parse(ApiConfig.anthropicBaseUrl),
+            headers: {
+              'Content-Type': 'application/json',
+              'x-api-key': ApiConfig.anthropicApiKey,
+              'anthropic-version': ApiConfig.anthropicVersion,
+            },
+            body: json.encode({
+              'model': ApiConfig.claudeModel,
+              'max_tokens': 400,
+              'system': systemPrompt,
+              'messages': messages,
+            }),
+          )
+          .timeout(const Duration(seconds: 25));
+
+      if (response.statusCode == 200) {
+        final decoded =
+            json.decode(utf8.decode(response.bodyBytes)) as Map<String, dynamic>;
+        final content = decoded['content'] as List<dynamic>;
+        if (content.isNotEmpty) {
+          return (content.first as Map<String, dynamic>)['text'] as String;
+        }
+      }
+      return 'Yanıt alınamadı (HTTP ${response.statusCode}).';
+    } on Exception catch (e) {
+      return 'Bağlantı hatası: $e';
+    }
+  }
+
   /// Cache istatistikleri (debug icin)
   int get cachedExplanations => _explanationCache.length;
   int get cachedMnemonics => _mnemonicCache.length;

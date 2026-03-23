@@ -11,6 +11,7 @@ import '../widgets/study_focus_timer.dart';
 import '../utils/error_handler.dart';
 import '../services/premium_service.dart';
 import '../widgets/paywall_widget.dart';
+import '../widgets/ai_chat_sheet.dart';
 
 enum CaseStudyMode { all, dueOnly, pocketOnly, newOnly, learnedOnly, failedOnly }
 
@@ -390,6 +391,24 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
         actions: [
           const StudyFocusTimer(),
           if (!_loading && _cases.isNotEmpty) ...[
+            // AI'ya Sor butonu
+            if (_currentIndex < _cases.length)
+              IconButton(
+                icon: const Icon(Icons.psychology_rounded, color: AppTheme.cyan, size: 22),
+                tooltip: "AI'ya Sor",
+                onPressed: () {
+                  final caseItem = _cases[_currentIndex];
+                  AiChatSheet.show(
+                    context,
+                    cardContext: 'Soru: ${caseItem.caseText}\n'
+                        'Seçenekler: ${caseItem.options.join(", ")}\n'
+                        'Doğru Cevap: ${caseItem.correctAnswer}',
+                    cardTitle: caseItem.caseText.length > 50
+                        ? '${caseItem.caseText.substring(0, 50)}...'
+                        : caseItem.caseText,
+                  );
+                },
+              ),
             _CaseModeToggle(
               mode: _mode,
               onChanged: (m) async {

@@ -16,6 +16,7 @@ import '../utils/error_handler.dart';
 import '../services/premium_service.dart';
 import '../widgets/paywall_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../widgets/ai_chat_sheet.dart';
 
 enum FlashcardMode { all, dueOnly, pocketOnly, newOnly, learnedOnly, failedOnly, criticalOnly }
 
@@ -284,6 +285,22 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                   ),
                 ),
               ),
+            ),
+          // AI'ya Sor butonu
+          if (!_loading && _cards.isNotEmpty && _currentIndex < _cards.length)
+            IconButton(
+              icon: const Icon(Icons.psychology_rounded, color: AppTheme.cyan, size: 22),
+              tooltip: "AI'ya Sor",
+              onPressed: () {
+                final card = _cards[_currentIndex];
+                AiChatSheet.show(
+                  context,
+                  cardContext: 'Soru: ${card.question}\nCevap: ${card.answer}',
+                  cardTitle: card.question.length > 50
+                      ? '${card.question.substring(0, 50)}...'
+                      : card.question,
+                );
+              },
             ),
           _ModeToggle(
             mode: _mode,

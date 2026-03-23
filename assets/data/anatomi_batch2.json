@@ -13,7 +13,8 @@
         "answer": "[[Nodi lymphatici lumbales]] ([[Para-aortik lenf nodları]])",
         "explanation": "Ovaryum embriyolojik olarak retroperitoneal bir organdır ve lenf drenajı gonadal damarlar boyunca para-aortik (lumbal) lenf nodlarına olur. TUS'ta testis ve ovaryumun aynı lenf drenaj yolunu paylaştığı sıklıkla sorulur. Bu durum, embriyolojik gelişim sırasında gonadların lumbar bölgeden aşağı inmesiyle açıklanır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Lenfatik Sistem", "Pelvis"]
+        "tags": ["Anatomi", "Lenfatik Sistem", "Pelvis"],
+        "story_hint": "💡 HİKAYE: Ovaryum bir dağcı kadın — doğduğu köy lumbal bölgedeydi. Ne kadar aşağı inse de, mektuplarını (lenfini) hep eski köyüne, para-aortik postaneye gönderir. Testis de aynı köyden göç etmiş erkek kardeşi."
       },
       {
         "id": "anat_102",
@@ -21,7 +22,8 @@
         "answer": "[[Nodi lymphatici inguinales superficiales]]",
         "explanation": "Skrotum bir cilt yapısı olduğu için lenf drenajı yüzeyel inguinal lenf nodlarına olur. TUS'ta testis ile skrotumun farklı lenf drenajı olduğu sık sorulan bir konudur. Testis para-aortik lenf nodlarına drene olurken, skrotum inguinal lenf nodlarına drene olur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Lenfatik Sistem", "Perine"]
+        "tags": ["Anatomi", "Lenfatik Sistem", "Perine"],
+        "story_hint": "💡 HİKAYE: Skrotum bir cilt çantası, kasaba pazarına (inguinal bölgeye) gider alışveriş yapar. Ama testis içindeki kıymetli taşlar uzak şehre (para-aortik) gönderilir. Çanta yüzeyel, taş derin — iki farklı kargo şirketi!"
       },
       {
         "id": "anat_103",
@@ -29,7 +31,8 @@
         "answer": "[[Nodi lymphatici lumbales]] ([[Para-aortik lenf nodları]])",
         "explanation": "Testis embriyolojik olarak retroperitoneal bölgeden iner ve lenf drenajı gonadal damarlar boyunca para-aortik lenf nodlarına olur. Testis tümörlerinde metastaz ilk olarak para-aortik lenf nodlarında görülür. Bu bilgi TUS'ta cerrahi ve üroloji sorularında da karşımıza çıkar.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Lenfatik Sistem", "Ürogenital"]
+        "tags": ["Anatomi", "Lenfatik Sistem", "Ürogenital"],
+        "story_hint": "💡 HİKAYE: Testis küçükken lumbal dağlarda yaşıyordu, sonra skrotum vadisine indi. Ama nostaljik adam — tüm haberlerini (lenfini) hâlâ eski memleketi para-aortik dağlara yollar. Tümör olunca da ilk haber oraya ulaşır."
       },
       {
         "id": "anat_114",
@@ -37,7 +40,8 @@
         "answer": "[[Cisterna chyli]] ([[L1-L2 seviyesi]])",
         "explanation": "Ductus thoracicus, cisterna chyli'den başlayarak aortik hiatustan geçer ve sol venöz açıya (angulus venosus sinister) açılır. Vücudun sol yarısı ve alt tarafının tüm lenfini toplar. TUS'ta ductus thoracicus'un başlangıç yeri ve açıldığı yer sık sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Lenfatik Sistem", "Toraks"]
+        "tags": ["Anatomi", "Lenfatik Sistem", "Toraks"],
+        "story_hint": "💡 HİKAYE: Ductus thoracicus bir nehir. Kaynağı Cisterna Chyli isimli göl (L1-L2'de). Bu nehir göğüs boşluğundan geçip sol venöz açı denizine dökülür. Vücudun en uzun su yolu — nehir kaptanı hep sola dümen kırar."
       },
       {
         "id": "anat_126",
@@ -45,7 +49,8 @@
         "answer": "[[Nodi lymphatici inguinales superficiales]]",
         "explanation": "Yüzeyel inguinal lenf nodları alt ekstremite, perine, gluteal bölge ve karın duvarı alt kısmının lenfini toplar. Genital enfeksiyonlarda (özellikle dış genitalya) bu nodlarda büyüme görülür. TUS'ta lenfadenopati ayırıcı tanısında önemli bir klinik bulgudur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Lenfatik Sistem", "Klinik"]
+        "tags": ["Anatomi", "Lenfatik Sistem", "Klinik"],
+        "story_hint": "💡 HİKAYE: Kasık bölgesindeki lenf nodları kapıda bekleyen güvenlik görevlileri gibi. Alt kat (bacak) ve arka bahçe (perine) kapısından gelen herkesi kontrol ederler. Genital enfeksiyon olunca, ilk şişen güvenlikçilerin boynu olur."
       },
       {
         "id": "anat_166",
@@ -53,7 +58,8 @@
         "answer": "[[İnvolüsyona uğrayarak yağ dokusuna dönüşür.]]",
         "explanation": "Timus bezi puberte sonrasında yavaşça involüsyona uğrar ve yağ dokusu ile yer değiştirir. Ancak T hücre üretimi tamamen durmaz, azalarak devam eder. TUS'ta DiGeorge sendromu (timus aplazisi) ile ilişkili olarak T hücre eksikliği sıkça sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Lenfatik Sistem", "İmmünoloji"]
+        "tags": ["Anatomi", "Lenfatik Sistem", "İmmünoloji"],
+        "story_hint": "💡 HİKAYE: Timus genç bir öğretmen — pubertede emekli olur ve yağ biriktirir, koltuğunda uyuklar. Ama T hücre öğrencileri yetiştiği için, DiGeorge okulunda yoksa, bağışıklık sınıfı boş kalır."
       },
       {
         "id": "anat_194",
@@ -61,7 +67,8 @@
         "answer": "[[İsthmus bölgesi]]",
         "explanation": "Tiroid bezinin isthmus bölgesinin lenf drenajı prelaringeal ve pretrakeal lenf nodları üzerinden paratrakeal lenf nodlarına olur. Tiroid cerrahisinde lenf nodu disseksiyonu planlanırken bu bilgi kritiktir. TUS'ta tiroid kanseri evrelemesinde lenf drenaj yolları sorulabilir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Lenfatik Sistem", "Boyun"]
+        "tags": ["Anatomi", "Lenfatik Sistem", "Boyun"],
+        "story_hint": "💡 HİKAYE: Tiroid bezinin ortasındaki isthmus bir köprü. Bu köprüden geçen trafik (lenf) paratrakeal otoparkına yönlendirilir. Kanser hücreleri de bu köprüyü kullanarak trakeanın yanındaki lenf nodlarına sızar."
       }
     ],
     "tus_spots": [
@@ -114,7 +121,8 @@
         "answer": "[[İpsilateral]] ([[Aynı taraf]])",
         "explanation": "Beyincik lezyonları ipsilateral (aynı taraf) bulgulara neden olur çünkü beyincik yolları çift çaprazlanma yapar. Serebellum hasarında ataksi, dismetri, intansiyonel tremor ve disdiadokinezi ipsilateral olarak görülür. TUS'ta lateralizasyon soruları sıkça çıkar.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Nöroanatomi", "Beyincik"]
+        "tags": ["Anatomi", "Nöroanatomi", "Beyincik"],
+        "story_hint": "💡 HİKAYE: Beyincik bir ayna salonu — her şeyi iki kez çaprazlar, o yüzden sonuçta aynı tarafa döner. Sağ beyincik bozulunca sağ el titrer, sanki ayna kendi yansımasını sallar. İpsilateral = 'aynı taraf aynası'."
       },
       {
         "id": "anat_105",
@@ -122,7 +130,8 @@
         "answer": "[[Ncl. caudatus]], [[Putamen]], [[Globus pallidus]], [[Substantia nigra]], [[Ncl. subthalamicus]]",
         "explanation": "Bazal ganglionlar ekstrapiramidal motor sistemin temel yapılarıdır. Ncl. caudatus ve putamen birlikte striatum'u oluşturur. Putamen ve globus pallidus birlikte ncl. lentiformis'i oluşturur. Parkinson hastalığında substantia nigra'da dopaminerjik nöron kaybı görülür.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Nöroanatomi", "Bazal Ganglionlar"]
+        "tags": ["Anatomi", "Nöroanatomi", "Bazal Ganglionlar"],
+        "story_hint": "💡 HİKAYE: Beynin derinlerinde gizli bir çete var: Kuyruklı (Caudatus) reis, onun yanında Putamen lakaplı kasacı, Solgun Top (Globus pallidus), Kara Madde (Substantia nigra) patronu ve Altbeyin (Subthalamicus) tetikçisi. Parkinson'da patron vurulur."
       },
       {
         "id": "anat_109",
@@ -130,7 +139,8 @@
         "answer": "[[Astrositler]]",
         "explanation": "Astrositler kan-beyin bariyerinin (BBB) oluşumunda kritik rol oynar; kapiller endotel hücrelerini ayak uzantılarıyla sarar ve tight junction oluşumunu destekler. Ayrıca nöronlara besin sağlar, iyon dengesini korur ve sinaptik iletide düzenleyici rol üstlenir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Nöroanatomi", "Histoloji"]
+        "tags": ["Anatomi", "Nöroanatomi", "Histoloji"],
+        "story_hint": "💡 HİKAYE: Astrositler beyin kapısının yıldız şeklindeki güvenlik görevlileri. Ayak uzantılarıyla damarları sarar, kötü maddelerin geçmesini engeller. 'ASTRO' = yıldız, 'BARİYER' = geçit vermez. Yıldız bekçi kan-beyin sınırında nöbet tutar."
       },
       {
         "id": "anat_110",
@@ -138,7 +148,8 @@
         "answer": "[[Mikroglia]]",
         "explanation": "Mikroglia hücreleri MSS'nin yerleşik makrofajlarıdır ve mezodermal kökenlidir (diğer glia hücreleri nöroektodermal kökenli). Enfeksiyon, travma veya nörodejeneratif hastalıklarda aktive olarak fagositoz yaparlar. TUS'ta glial hücre tipleri ve kökenlerinin sorulması sıktır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Nöroanatomi", "Histoloji"]
+        "tags": ["Anatomi", "Nöroanatomi", "Histoloji"],
+        "story_hint": "💡 HİKAYE: Mikroglia beynin gizli temizlik ordusu — mezodermal ülkeden gelen göçmen işçiler. Diğer glia hücreleri nöroektodermal yerli, ama mikroglia yabancı. Enfeksiyon olunca Pac-Man gibi her şeyi yutar. Küçük ama azimli makrofajlar!"
       },
       {
         "id": "anat_147",
@@ -146,7 +157,8 @@
         "answer": "[[Non-komünike hidrosefali]]",
         "explanation": "Aqueductus cerebri (Sylvius kanalı) tıkanıklığı en sık non-komünike (obstrüktif) hidrosefali nedenidir. BOS lateral ve 3. ventrikülde birikir, 4. ventrikül normal boyuttadır. TUS'ta hidrosefali tipleri ve nedenleri sıkça sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Nöroanatomi", "BOS"]
+        "tags": ["Anatomi", "Nöroanatomi", "BOS"],
+        "story_hint": "💡 HİKAYE: 3. ventrikülden 4. ventrikle giden dar bir tünel var — Sylvius'un su kanalı. Tıkanınca üst katlarda su birikir (lateral + 3. ventrikül şişer), ama alt kat (4. ventrikül) kuru kalır. Non-komünike = 'konuşamayan' ventrikül demek."
       },
       {
         "id": "anat_148",
@@ -154,7 +166,8 @@
         "answer": "[[Ligamentum flavum'u geçerek spatium epidurale'ye]] ([[Epidural boşluk]])",
         "explanation": "Epidural anestezide iğne cilt, cilt altı, supraspinöz ligament, interspinöz ligament ve ligamentum flavum'u geçerek epidural boşluğa ulaşır. Dura mater delinmez. Lomber bölgede L3-L4 veya L4-L5 aralığından uygulanır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Nöroanatomi", "Klinik"]
+        "tags": ["Anatomi", "Nöroanatomi", "Klinik"],
+        "story_hint": "💡 HİKAYE: Epidural anestezi iğnesi bir arkeolog — katman katman kazar: cilt, ciltaltı, supraspinöz, interspinöz ve en son SARI ligamana (flavum = sarı) ulaşır. Dura'yı delmez, sadece dışındaki boşlukta durur. Sarı kapının önünde bekler."
       },
       {
         "id": "anat_149",
@@ -162,7 +175,8 @@
         "answer": "[[L3-L4 veya L4-L5 aralığından]]",
         "explanation": "Medulla spinalis erişkinlerde L1-L2 seviyesinde sonlandığı için (conus medullaris), lomber ponksiyon L3-L4 veya L4-L5 aralığından güvenle yapılır. Bu seviyede sadece cauda equina lifleri bulunur ve iğnenin medulla spinalis'e zarar verme riski yoktur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Nöroanatomi", "Klinik"]
+        "tags": ["Anatomi", "Nöroanatomi", "Klinik"],
+        "story_hint": "💡 HİKAYE: Omurilik L1-L2'de biter, ama doktor L3-L4'ten iğne sokar. Neden? Çünkü at kuyruğu (cauda equina) lifleri iğneden kaçar, omurilik ise çoktan yukarıda biter. Güvenli bölge = omuriliğin altı, atın kuyruğunun arasıdır."
       },
       {
         "id": "anat_167",
@@ -170,7 +184,8 @@
         "answer": "[[L1-L2 arası intervertebral disk seviyesi]] ([[Conus medullaris]])",
         "explanation": "Medulla spinalis erişkinlerde L1-L2 intervertebral disk seviyesinde conus medullaris olarak sonlanır. Yenidoğanlarda ise L3 seviyesine kadar uzanır. Bu bilgi lomber ponksiyon ve spinal anestezi uygulamalarında kritik öneme sahiptir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Nöroanatomi", "Spinal"]
+        "tags": ["Anatomi", "Nöroanatomi", "Spinal"],
+        "story_hint": "💡 HİKAYE: Omurilik bir kuyruklu yıldız — başı beyinde, kuyruğu (conus) L1-L2'de biter. Yenidoğanda kuyruk L3'e kadar uzar ama büyüdükçe yukarı çekilir. Conus medullaris = yıldızın sivri ucu."
       },
       {
         "id": "anat_172",
@@ -178,7 +193,8 @@
         "answer": "[[Thalamus]], [[Hypothalamus]], [[Epithalamus]], [[Subthalamus]]",
         "explanation": "Diensefalon 3. ventrikülün etrafında yer alır. Thalamus duyusal bilgilerin kortekse aktarılmasında röle istasyonudur. Hipotalamus otonom ve endokrin fonksiyonları düzenler. Epithalamus pineal bezi içerir. Subthalamus motor kontrol ile ilişkilidir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Nöroanatomi", "Beyin"]
+        "tags": ["Anatomi", "Nöroanatomi", "Beyin"],
+        "story_hint": "💡 HİKAYE: Diensefalon bir daire — dört mahallesi var: Talamus (telefoncu — tüm duyuları aktarır), Hipotalamus (belediye başkanı — her şeyi yönetir), Epithalamus (gece bekçisi — pineal bezi tutar), Subthalamus (trafik polisi — motor kontrolü)."
       },
       {
         "id": "anat_173",
@@ -186,7 +202,8 @@
         "answer": "[[130-150 ml]]",
         "explanation": "BOS toplam hacmi erişkinlerde yaklaşık 130-150 ml'dir ve günde yaklaşık 500 ml üretilir. Plexus choroideus tarafından üretilir ve araknoid granülasyonlar (villi) yoluyla venöz sinüslere emilir. BOS basıncında artış intrakraniyal basınç artışı bulgularına yol açar.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Nöroanatomi", "BOS"]
+        "tags": ["Anatomi", "Nöroanatomi", "BOS"],
+        "story_hint": "💡 HİKAYE: BOS bir havuz — 130-150 ml su alır ama günde 500 ml taze su üretilir. Plexus choroideus musluğu açar, araknoid granülasyonlar gideri sağlar. Havuz 3-4 kez devir yapar günde. Tıkanırsa havuz taşar — kafa içi basınç artar!"
       },
       {
         "id": "anat_179",
@@ -194,7 +211,8 @@
         "answer": "[[Cornu posterius]] ([[Arka boynuz]])",
         "explanation": "Substantia gelatinosa (Rolando) medulla spinalis'in arka boynuzunda (cornu posterius) Rexed lamina II'de bulunur. Ağrı ve sıcaklık duyusunun modülasyonunda görev alır. Gate control teorisinde önemli bir yapıdır. TUS'ta spinal kord anatomisi sorularında sıkça çıkar.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Nöroanatomi", "Spinal"]
+        "tags": ["Anatomi", "Nöroanatomi", "Spinal"],
+        "story_hint": "💡 HİKAYE: Rolando adında bir kapıcı arka boynuzda (cornu posterius) oturur, lamina II'deki dairesinde. Görevi ağrı sinyallerini kapıda karşılamak ve ayarlamak. Gate control teorisinin anahtar adamı — bazı ağrıları içeri alır, bazılarını geri çevirir."
       },
       {
         "id": "anat_183",
@@ -202,7 +220,8 @@
         "answer": "[[Confluens sinuum]] ([[Torcular Herophili]])",
         "explanation": "Confluens sinuum (Torcular Herophili), sinüs sagittalis superior, sinüs rectus ve sinüs occipitalis'in birleşerek sinüs transversus'a dönüştüğü noktadır. Protuberantia occipitalis interna seviyesindedir. Travma veya trombozda ciddi venöz drenaj bozukluğuna neden olabilir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Nöroanatomi", "Venöz Sinüsler"]
+        "tags": ["Anatomi", "Nöroanatomi", "Venöz Sinüsler"],
+        "story_hint": "💡 HİKAYE: Confluens sinuum beyindeki kavşak noktası — tüm venöz otoyollar burada birleşir. Herophilus adında eski bir Yunan mühendis tasarlamış. Sagittal, rectus ve occipitalis sinüsleri burada buluşup transversus'a döner. Beyin trafiğinin göbek noktası."
       }
     ],
     "tus_spots": [
@@ -255,7 +274,8 @@
         "answer": "[[Hemoglobin]]",
         "explanation": "Hemoglobin, eritrositlerin içinde bulunan ve oksijen taşıyan demir içerikli proteindir. Her hemoglobin molekülü 4 hem grubu içerir ve her biri bir oksijen molekülü bağlayabilir. Hemoglobin aynı zamanda CO2 taşınmasında da (karbaminohemoglobin) rol oynar.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kan", "Histoloji"]
+        "tags": ["Anatomi", "Kan", "Histoloji"],
+        "story_hint": "💡 HİKAYE: Hemoglobin bir taksi şoförü — her arabasında 4 koltuk var (4 hem grubu), her koltuğa bir oksijen yolcusu biner. Demir plakası olmadan çalışamaz. Dönüşte CO2 yolcularını da taşır — çift yönlü taksi hizmeti!"
       },
       {
         "id": "anat_107",
@@ -263,7 +283,8 @@
         "answer": "[[Sol ventrikül]] ([[Ventriculus sinister]])",
         "explanation": "Sol ventrikül sistemik dolaşıma kan pompaladığı için en yüksek basıncı üretir ve duvar kalınlığı en fazladır (yaklaşık 1.5 cm). Sağ ventrikül duvarı ise yaklaşık 0.5 cm'dir. TUS'ta kalp odacıklarının karşılaştırmalı anatomisi sıkça sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kardiyovasküler", "Kalp"]
+        "tags": ["Anatomi", "Kardiyovasküler", "Kalp"],
+        "story_hint": "💡 HİKAYE: Sol ventrikül kalbin halterci odası — 1.5 cm kalınlığında kas duvarıyla vücudun en güçlü pompası. Sağ ventrikül sadece 0.5 cm ile akciğere pompalıyor, ama sol tüm vücuda pompalamak zorunda. Bodybuilder vs. zayıf kardeş."
       },
       {
         "id": "anat_108",
@@ -271,7 +292,8 @@
         "answer": "[[Atrium]] ([[Özellikle sağ atriyum aurikulası]])",
         "explanation": "ANP, atriyumların gerilmesiyle (volüm artışı) salgılanır ve böbreklerde Na+ ve su atılımını artırarak kan hacmini ve basıncını düşürür. BNP ise ventriküllerden salgılanır. TUS'ta kalp yetmezliği tanısında BNP/NT-proBNP kullanımı sık sorulan bir konudur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kardiyovasküler", "Endokrin"]
+        "tags": ["Anatomi", "Kardiyovasküler", "Endokrin"],
+        "story_hint": "💡 HİKAYE: Sağ atriyumun kulakçığı (aurikula) gizli bir endokrin fabrika. Atriyum gerilince 'ANP bombası' atar — böbreklere 'suyu ve tuzu atın!' emri verir. Kalp şişince, kalp kendini kurtarmak için hormon silahını kullanır."
       },
       {
         "id": "anat_143",
@@ -279,7 +301,8 @@
         "answer": "[[Sağ 2. interkostal aralığın sternumla birleştiği yer]]",
         "explanation": "Kalp kapak dinleme odakları anatomik kapak yerinden farklıdır; kan akımı yönünde en iyi duyulduğu yerlerdir. Aort kapağı sağ 2. interkostal aralıkta sternum kenarında dinlenir. TUS'ta kapak dinleme odakları ve üfürüm yayılım yönleri sık sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kardiyovasküler", "Klinik"]
+        "tags": ["Anatomi", "Kardiyovasküler", "Klinik"],
+        "story_hint": "💡 HİKAYE: Aort kapağı sağcı — sağ 2. interkostal aralıkta dinlenir, sternumun yanında kahve içer. Doktor stetoskopu oraya koyunca aort kapağının sesi en net duyulur. Sağ taraf, 2. kat, sternum cafe!"
       },
       {
         "id": "anat_144",
@@ -287,7 +310,8 @@
         "answer": "[[Sol 2. interkostal aralığın sternumla birleştiği yer]]",
         "explanation": "Pulmoner kapak sol 2. interkostal aralıkta sternum kenarında dinlenir. Pulmoner stenoz üfürümü burada en iyi duyulur. Kapak dinleme odaklarını hatırlamak için 'APT-M' (Aort-Pulmoner-Triküspid-Mitral) sıralaması kullanılabilir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kardiyovasküler", "Klinik"]
+        "tags": ["Anatomi", "Kardiyovasküler", "Klinik"],
+        "story_hint": "💡 HİKAYE: Pulmoner kapak solcu — sol 2. interkostal aralıkta oturur. Aort sağda, pulmoner solda, ikisi de 2. katta komşu. 'APT-M' sıralamasıyla hatırla: Aort-Pulmoner yukarıda, Triküspid-Mitral aşağıda."
       },
       {
         "id": "anat_145",
@@ -295,7 +319,8 @@
         "answer": "[[Sol 5. interkostal aralığın midklavikular hatla kesiştiği yer]]",
         "explanation": "Mitral kapak sol 5. interkostal aralıkta midklavikular hatta (kalp apeksi) dinlenir. Mitral yetersizliğinde burada pansistolik üfürüm duyulur ve aksillaya yayılır. TUS'ta en sık sorulan kapak dinleme odağıdır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kardiyovasküler", "Klinik"]
+        "tags": ["Anatomi", "Kardiyovasküler", "Klinik"],
+        "story_hint": "💡 HİKAYE: Mitral kapak kalbin dibinde, sol 5. interkostal aralıkta, midklavikular hatta — tam kalp tepesinde oturur. Kalp her vurduğunda göğse en yakın vuran yer burası. Mitral yetmezliği olunca aksillaya fısıldar, pansistolik bir üfürüm!"
       },
       {
         "id": "anat_176",
@@ -303,7 +328,8 @@
         "answer": "[[A. maxillaris]] ve [[A. temporalis superficialis]]",
         "explanation": "A. carotis externa'nın terminal dalları a. maxillaris (derin yüz yapılarını besler) ve a. temporalis superficialis'tir (temporal bölgeyi besler). A. temporalis superficialis yüzeyel seyrettiği için temporal arterit tanısında biyopsi yapılan damardır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kardiyovasküler", "Baş-Boyun"]
+        "tags": ["Anatomi", "Kardiyovasküler", "Baş-Boyun"],
+        "story_hint": "💡 HİKAYE: Karotis eksterna'nın son iki çocuğu: Maxillaris derin yüze gizlenir, Temporalis superficialis şakakta yüzeyel dolaşır. Temporal arterit olunca biyopsi şakaktaki yüzeyel çocuktan alınır — kolay ulaşılır çünkü."
       },
       {
         "id": "anat_180",
@@ -311,7 +337,8 @@
         "answer": "[[Caput medusae]]",
         "explanation": "Portal hipertansiyonda paraumbilikal venler genişleyerek caput medusae görünümü oluşturur. Bu, porto-kaval anastomozlardan biridir. Diğer anastomozlar özofagus varisleri ve hemoroidlerdir. TUS'ta portal hipertansiyon bulguları sıklıkla sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kardiyovasküler", "Portal Sistem"]
+        "tags": ["Anatomi", "Kardiyovasküler", "Portal Sistem"],
+        "story_hint": "💡 HİKAYE: Portal hipertansiyonda göbek çevresindeki venler Medusa'nın yılan saçları gibi kabarır. Siroz canavarı karaciğeri taşa çevirince, kan göbeğe kaçar. Mitolojideki Medusa'nın kafası karında belirir — caput medusae!"
       },
       {
         "id": "anat_184",
@@ -319,7 +346,8 @@
         "answer": "[[Vena umbilicalis sinistra]]",
         "explanation": "Fetal dönemde vena umbilicalis sinistra, plasentadan oksijene kanı fetüse taşır. Doğumdan sonra oblitere olarak ligamentum teres hepatis'e dönüşür. Falciform ligament içinde seyreder. TUS'ta fetal dolaşım artıkları sıkça sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kardiyovasküler", "Fetal Dolaşım"]
+        "tags": ["Anatomi", "Kardiyovasküler", "Fetal Dolaşım"],
+        "story_hint": "💡 HİKAYE: Fetal dönemdeki sol umbilikal ven anneden bebeğe oksijen taşıyan VIP kordon. Doğumda emekli olur ve karaciğerde ligamentum teres hepatis adlı ip halatına dönüşür. Falciform ligamentin içinde asılı kalır — eski göbek bağının hatırası."
       },
       {
         "id": "anat_185",
@@ -327,7 +355,8 @@
         "answer": "[[Ductus venosus]]",
         "explanation": "Ductus venosus fetal dönemde umbilikal venden gelen kanın bir kısmını karaciğeri bypass ederek doğrudan vena cava inferior'a taşır. Doğumdan sonra ligamentum venosum'a dönüşür. Karaciğerin sol lob ile kaudat lob arasında yer alır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kardiyovasküler", "Fetal Dolaşım"]
+        "tags": ["Anatomi", "Kardiyovasküler", "Fetal Dolaşım"],
+        "story_hint": "💡 HİKAYE: Ductus venosus fetüste karaciğeri bypass eden gizli bir tünel — kan karaciğere uğramadan direkt VCI otoyoluna çıkar. Doğunca tünel kapanır ve ligamentum venosum adlı çıkmaz sokağa dönüşür. Sol lob ile kaudat lob arasında gizli bir geçit kalıntısı."
       },
       {
         "id": "anat_186",
@@ -335,7 +364,8 @@
         "answer": "[[Foramen ovale]]",
         "explanation": "Foramen ovale fetal dönemde sağ atriyumdan sol atriyuma kan geçişini sağlar, böylece akciğer bypass edilir. Doğumdan sonra kapanarak fossa ovalis'i oluşturur. Kapanmaması durumunda patent foramen ovale (PFO) gelişir ve paradoks emboli riski artar.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kardiyovasküler", "Fetal Dolaşım"]
+        "tags": ["Anatomi", "Kardiyovasküler", "Fetal Dolaşım"],
+        "story_hint": "💡 HİKAYE: Foramen ovale fetüste sağ atriyumdan sol atriyuma açılan gizli kapı — akciğer bypass edilir. Doğumda kapı kapanır ve fossa ovalis adlı duvar süsüne dönüşür. Kapanmazsa patent foramen ovale = kilitlenmeyen kapı, emboli hırsız gibi geçer!"
       },
       {
         "id": "anat_187",
@@ -343,7 +373,8 @@
         "answer": "[[Ligamentum arteriosum]]",
         "explanation": "Ductus arteriosus fetal dönemde pulmoner arter ile aorta arasında bağlantı sağlar. Doğumdan sonra kapanarak ligamentum arteriosum'a dönüşür. Kapanmaması patent ductus arteriosus (PDA) olarak adlandırılır ve prematürelerde sık görülür. İndometazin ile kapatılabilir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kardiyovasküler", "Fetal Dolaşım"]
+        "tags": ["Anatomi", "Kardiyovasküler", "Fetal Dolaşım"],
+        "story_hint": "💡 HİKAYE: Ductus arteriosus fetüste pulmoner arter ile aort arasında kısa yol — akciğeri atlar. Doğumda kapanıp ligamentum arteriosum ipine dönüşür. Prematürelerde kapanmaz, indometazin anahtarı ile kilitlenir. Patent = açık kalmış kapı!"
       },
       {
         "id": "anat_191",
@@ -351,7 +382,8 @@
         "answer": "[[Trombositler]] ([[Platelets]])",
         "explanation": "Trombositler kemik iliğindeki megakaryositlerden kopan sitoplazmik fragmanlardır. Primer hemostazda endotel hasarı bölgesinde trombosit tıkacı oluşturur. Normal sayısı 150.000-400.000/μL'dir. Trombositopeni kanamaya eğilim oluşturur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kan", "Hematoloji"]
+        "tags": ["Anatomi", "Kan", "Hematoloji"],
+        "story_hint": "💡 HİKAYE: Trombositler megakaryositlerin kopardığı minik parçacıklar — bir dev hücrenin binlerce çocuğu. Damar yaralanınca olay yerine koşup insan zinciri kurarlar (trombosit tıkacı). 150-400 bin kişilik ordu, azalınca kanama durdurulamaz."
       },
       {
         "id": "anat_192",
@@ -359,7 +391,8 @@
         "answer": "[[Sinus coronarius]]",
         "explanation": "Sinus coronarius, kalbin venöz kanının büyük kısmını toplayarak sağ atriyuma döker. V. cardiaca magna, v. cardiaca media ve v. cardiaca parva sinus coronarius'a açılır. Sağ atriyumda sinus coronarius ostiumunun kenarında Thebesian kapak bulunur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kardiyovasküler", "Koroner"]
+        "tags": ["Anatomi", "Kardiyovasküler", "Koroner"],
+        "story_hint": "💡 HİKAYE: Sinus coronarius kalbin çöp toplayıcısı — tüm kirli kanı toplar, sağ atriyuma döker. Magna, media ve parva isimli üç yardımcı ven onun kollarıdır. Kapısında Thebesian adında bir kapıcı bekler. Kalbin kendi kanalizasyon sistemi!"
       },
       {
         "id": "anat_193",
@@ -367,7 +400,8 @@
         "answer": "[[Sol ventrikül]] ([[Ventriculus sinister]])",
         "explanation": "Aorta sol ventrikülden çıkar ve sistemik dolaşıma kan pompalar. Aort kapağı (valva aortae) üç semiluner yaprakçıktan oluşur. Koroner arterler aortanın sinüs valsalva'larından çıkar. TUS'ta aort koarktasyonu ve aort anevrizması soruları sıktır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kardiyovasküler", "Kalp"]
+        "tags": ["Anatomi", "Kardiyovasküler", "Kalp"],
+        "story_hint": "💡 HİKAYE: Aorta sol ventrikülden fırlayan vücudun ana otoyolu. Çıkışında üç yarım ay kapısı (semiluner) var. Hemen çıkışta koroner arter yol ayrımları (sinüs valsalva'dan) — kalp önce kendini besler, sonra vücudu. Egoist ama hayati!"
       }
     ],
     "tus_spots": [
@@ -420,7 +454,8 @@
         "answer": "[[N. maxillaris]] ([[V2]]) ve [[N. mandibularis]] ([[V3]])",
         "explanation": "Trigeminal nevralji en sık V2 (n. maxillaris) ve V3 (n. mandibularis) dallarını tutar. V1 (n. ophthalmicus) tutulumu nadirdir. Ağrı atakları ani başlangıçlı, elektrik çarpması tarzında ve genellikle tek taraflıdır. TUS'ta trigeminal sinir dalları ve geçtiği foramenler sık sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kranial Sinirler", "Nöroloji"]
+        "tags": ["Anatomi", "Kranial Sinirler", "Nöroloji"],
+        "story_hint": "💡 HİKAYE: Trigeminal nevralji yüze elektrik çarpması gibi vurur. Ama V1 dalı neredeyse hiç tutulmaz — V2 (yanak) ve V3 (çene) en çok acı çeker. Sanki yüzün alt katları deprem bölgesi, üst kat güvende. 'Tic' = tik atma, 'Douloureux' = acılı."
       },
       {
         "id": "anat_112",
@@ -428,7 +463,8 @@
         "answer": "[[Mitozis, ptozis]] ve [[anhidroz]] ([[Servikal sempatik zincir lezyonu]])",
         "explanation": "Horner sendromu servikal sempatik zincir hasarında görülür. Miozis (pupil daralması), parsiyel pitozis (üst kapak düşmesi) ve anhidroz (aynı tarafta terleme kaybı) klasik triaddır. Pancoast tümörü, karotid arter diseksiyonu ve lateral meduller sendrom nedenleri arasındadır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Otonom Sinir Sistemi", "Klinik"]
+        "tags": ["Anatomi", "Otonom Sinir Sistemi", "Klinik"],
+        "story_hint": "💡 HİKAYE: Horner'ın üç atlısı: MPA — Miyozis (küçük pupil), Pitozis (düşük kapak), Anhidroz (kuru yüz). Servikal sempatik zincir kopunca bu üçlü ortaya çıkar. Pancoast tümörü akciğer tepesinden zinciri koparır. MPA = Mutsuz Pupil Ağlayamaz."
       },
       {
         "id": "anat_138",
@@ -436,7 +472,8 @@
         "answer": "[[Testosteron]]",
         "explanation": "Testosteron etkisiyle erkeklerde laringeal kıkırdaklar büyür, ses telleri uzar ve kalınlaşır. Bu nedenle erkeklerde ses kalınlaşır ve prominentia laryngea (Adem elması) belirginleşir. TUS'ta sekonder seks karakteristiklerinin hormonal kontrolü sorulabilir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Baş-Boyun", "Endokrin"]
+        "tags": ["Anatomi", "Baş-Boyun", "Endokrin"],
+        "story_hint": "💡 HİKAYE: Testosteron ergenlikte tiroid kıkırdağa gider ve 'büyü!' der. Kıkırdak büyür, ses telleri kalınlaşır, Adem elması çıkar. Erkeklerin boynundaki bu çıkıntı testosteronun imzası — hormon heykeltıraş gibi boynu şekillendirir."
       },
       {
         "id": "anat_139",
@@ -444,7 +481,8 @@
         "answer": "[[M. palatoglossus]]",
         "explanation": "M. palatoglossus yumuşak damağı dil köküne yaklaştırarak yutkunmanın orofaringeal fazını başlatır. N. vagus (CN X) tarafından innerve edilir. Yutma fizyolojisi oral, faringeal ve özofageal fazlardan oluşur. TUS'ta yutma bozuklukları ve ilgili sinirler sorulabilir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Baş-Boyun", "Farenks"]
+        "tags": ["Anatomi", "Baş-Boyun", "Farenks"],
+        "story_hint": "💡 HİKAYE: Palatoglossus yutkunmanın başlangıç düğmesi — yumuşak damağı dil köküne yaklaştırarak 'yutma başlasın!' sinyali verir. Vagus siniri bu kasın patronu. İsmi bile anlatıyor: palato (damak) + glossus (dil) = damak-dil birleşimi."
       },
       {
         "id": "anat_140",
@@ -452,7 +490,8 @@
         "answer": "[[M. pterygoideus lateralis]]",
         "explanation": "M. pterygoideus lateralis TME diskini ve mandibula condylus'unu öne çeker, böylece ağız açılması (depresyon) ve protrüzyon gerçekleşir. N. mandibularis (V3) tarafından innerve edilir. TME disfonksiyonu klinik pratikte sık karşılaşılan bir tablodur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Baş-Boyun", "Çiğneme Kasları"]
+        "tags": ["Anatomi", "Baş-Boyun", "Çiğneme Kasları"],
+        "story_hint": "💡 HİKAYE: Pterygoideus lateralis çene ekleminin kapı açıcısı — mandibulayı öne çeker ve ağız açılır. Diğer çiğneme kasları ağzı kapatır ama bu asi kas tek başına açar. Lateral = yana çeken, ağzı açan tek kahraman. V3 ona emir verir."
       },
       {
         "id": "anat_141",
@@ -460,7 +499,8 @@
         "answer": "[[M. masseter]]",
         "explanation": "M. masseter en büyük ve en güçlü çiğneme kasıdır. Arcus zygomaticus'tan başlayıp mandibula ramus'una ve angulus'una yapışır. Ağız kapatma (elevasyon) hareketini yapar. Tüm çiğneme kasları n. mandibularis (V3) tarafından innerve edilir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Baş-Boyun", "Çiğneme Kasları"]
+        "tags": ["Anatomi", "Baş-Boyun", "Çiğneme Kasları"],
+        "story_hint": "💡 HİKAYE: Masseter yüzün bodybuilder'ı — elmacık kemiğinden çene köşesine uzanır ve çeneni kapatır. En büyük ve en güçlü çiğneme kası. Adı bile 'çiğneyici' demek. Isırırken masseter kabarır, gücünü hissedersin!"
       },
       {
         "id": "anat_142",
@@ -468,7 +508,8 @@
         "answer": "[[Başı karşı tarafa döndürür]] ([[kontralateral rotasyon]])",
         "explanation": "M. sternocleidomastoideus (SCM) tek taraflı kasıldığında başı karşı tarafa çevirir ve aynı tarafa lateral fleksiyon yaptırır. Bilateral kasıldığında boyun fleksiyonu yapar. N. accessorius (CN XI) tarafından innerve edilir. Tortikolis bu kasın spazmıyla ilişkilidir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Baş-Boyun", "Boyun Kasları"]
+        "tags": ["Anatomi", "Baş-Boyun", "Boyun Kasları"],
+        "story_hint": "💡 HİKAYE: SCM kası asi bir savaşçı — sağ taraf kasılınca başı sola çevirir, karşı tarafa bakar. 'Bana bak!' diye sola döner. Tortikolis olunca bu kas spazma girer ve baş bir tarafa kilitlenir. CN XI (aksesuar) bu kasın komutanı."
       },
       {
         "id": "anat_150",
@@ -476,7 +517,8 @@
         "answer": "[[Kornea]]",
         "explanation": "Kornea gözün en büyük kırıcı gücüne sahip yapısıdır (yaklaşık 43 diyoptri). Lens ise akomodasyon yaparak kırıcılığını değiştirebilir. Kornea avasküler bir yapıdır ve besinini aköz hümör ve gözyaşından alır. LASIK ameliyatında kornea şekli değiştirilir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Göz", "Optik"]
+        "tags": ["Anatomi", "Göz", "Optik"],
+        "story_hint": "💡 HİKAYE: Kornea gözün cephesindeki en güçlü mercek — 43 diyoptri kırıcı güçle şampiyon. Lens ise zoom yapabilen yardımcı. Kornea avasküler bir cam — kansız yaşar, gözyaşı ve aköz hümorle beslenir. LASIK ameliyatı bu camı yeniden şekillendirir."
       },
       {
         "id": "anat_151",
@@ -484,7 +526,8 @@
         "answer": "[[Meatus acusticus internus]]",
         "explanation": "N. vestibulocochlearis (CN VIII) meatus acusticus internus'tan geçerek iç kulağa ulaşır. Aynı kanaldan n. facialis (CN VII) ve a. labyrinthi de geçer. Akustik nörinom (vestibüler schwannom) bu kanalda gelişerek işitme kaybı ve vertigo yapar.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kulak", "Kranial Sinirler"]
+        "tags": ["Anatomi", "Kulak", "Kranial Sinirler"],
+        "story_hint": "💡 HİKAYE: İç kulağa giden yol meatus acusticus internus tüneli. Bu tünelden CN VIII (denge-işitme), CN VII (yüz) ve a. labyrinthi birlikte geçer. Akustik nörinom bu tünelde büyüyen dev bir tümör — tüneli tıkar, işitme ve denge bozulur."
       },
       {
         "id": "anat_152",
@@ -492,7 +535,8 @@
         "answer": "[[Concha nasalis superior]] ve [[septumun üst kısmı]] ([[Regio olfactoria]])",
         "explanation": "Regio olfactoria superior konka ve karşılık gelen septum bölgesinde yer alır. Koku reseptör nöronlarının aksonları lamina cribrosa'dan geçerek bulbus olfactorius'a ulaşır. Olfaktör nöronlar rejenerasyon yeteneğine sahip nadir nöron tiplerindendir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Burun", "Duyu Organları"]
+        "tags": ["Anatomi", "Burun", "Duyu Organları"],
+        "story_hint": "💡 HİKAYE: Burnun en tepesinde, superior konkanın üstünde gizli bir bahçe var — Regio olfactoria. Koku reseptörleri burada çiçek gibi açar. Aksonları lamina cribrosa'daki deliklerden geçip bulbus olfactorius'a tırmanır. Nadir yetenek: rejenerasyon!"
       },
       {
         "id": "anat_153",
@@ -500,7 +544,8 @@
         "answer": "[[Meatus nasi inferior]]",
         "explanation": "Ductus nasolacrimalis meatus nasi inferior'a açılır. Bu kanal gözyaşını lakrimal keseden burun boşluğuna drene eder. Yenidoğanlarda kanalın distal ucundaki Hasner valvülünün açılmaması dakriyosistit nedeni olabilir. TUS'ta nazal meatus açıklıkları sık sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Burun", "Göz"]
+        "tags": ["Anatomi", "Burun", "Göz"],
+        "story_hint": "💡 HİKAYE: Gözyaşı kanalı burnun en alt katına (meatus nasi inferior) açılır. Ağlayınca burnun akması bundandır — gözyaşı buruna süzülür. Yenidoğanda Hasner valvülü açılmazsa gözyaşı birikir, dakriyosistit başlar. Alt kat = gözyaşı katı!"
       },
       {
         "id": "anat_154",
@@ -508,7 +553,8 @@
         "answer": "[[Meatus nasi medius]]",
         "explanation": "Sinus maxillaris hiatus semilunaris aracılığıyla meatus nasi medius'a açılır. Sinüs ostiumunun yüksekte olması drenajını zorlaştırır ve sinüzit gelişimini kolaylaştırır. Sinus maxillaris en sık enfekte olan paranazal sinüstür.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Burun", "Paranazal Sinüsler"]
+        "tags": ["Anatomi", "Burun", "Paranazal Sinüsler"],
+        "story_hint": "💡 HİKAYE: Maksiller sinüs burnun orta katına (meatus nasi medius) açılır ama kapısı yüksekte. Sinüs dolu olsa bile yerçekimi aleyhine boşalamaz — drenaj zor, sinüzit kolay! En sık enfekte olan sinüs, çünkü kapısı çatıda."
       },
       {
         "id": "anat_155",
@@ -516,7 +562,8 @@
         "answer": "[[Hiatus semilunaris]]",
         "explanation": "Hiatus semilunaris meatus nasi medius'ta bulunan yarımay şeklinde bir açıklıktır. Frontal sinüs, anterior etmoid hücreler ve maksiler sinüs buraya açılır. Fonksiyonel endoskopik sinüs cerrahisinde (FESS) bu bölge önemli bir cerrahi landmark'tır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Burun", "Paranazal Sinüsler"]
+        "tags": ["Anatomi", "Burun", "Paranazal Sinüsler"],
+        "story_hint": "💡 HİKAYE: Hiatus semilunaris meatus nasi medius'taki yarım ay şeklinde bir havuz. Frontal, anterior etmoid ve maksiller sinüsler buraya dökülür — üç nehir bir göle akar. FESS cerrahisinde bu havuz cerrahi sahnenin yıldızı!"
       },
       {
         "id": "anat_163",
@@ -524,7 +571,8 @@
         "answer": "[[Nervus oculomotorius]] ([[CN III]])",
         "explanation": "M. levator palpebrae superioris üst göz kapağını kaldıran kastır ve n. oculomotorius (CN III) tarafından innerve edilir. CN III felcinde pitozis (kapak düşüklüğü), dışa-aşağı bakış (m. rectus lateralis ve m. obliquus superior dominant) ve midriyazis görülür.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Göz", "Kranial Sinirler"]
+        "tags": ["Anatomi", "Göz", "Kranial Sinirler"],
+        "story_hint": "💡 HİKAYE: Levator palpebrae göz kapağını kaldıran asansör kası — CN III düğmeye basar, kapak kalkar. CN III felcinde asansör bozulur, kapak düşer (pitozis). Göz dışa-aşağı kayar, pupil genişler — üç semptom bir arada: asansör arızası!"
       },
       {
         "id": "anat_164",
@@ -532,7 +580,8 @@
         "answer": "[[Nervus trochlearis]] ([[CN IV]])",
         "explanation": "N. trochlearis (CN IV) sadece m. obliquus superior'u innerve eder. En ince kranial sinirdir ve beyin sapını dorsalden terk eden tek kranial sinirdir. CN IV felcinde hasta baş eğme (head tilt) yaparak çift görmeyi kompanse etmeye çalışır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Göz", "Kranial Sinirler"]
+        "tags": ["Anatomi", "Göz", "Kranial Sinirler"],
+        "story_hint": "💡 HİKAYE: Trochlearis (CN IV) gözün en ince ve en özel siniri — sadece obliquus superior'a hizmet eder. Beyin sapını arkadan terk eden tek sinir, sanki arka kapıdan kaçan bir ajan. Felcinde hasta kafasını eğerek çift görmeyi düzeltmeye çalışır."
       },
       {
         "id": "anat_165",
@@ -540,7 +589,8 @@
         "answer": "[[Nervus abducens]] ([[CN VI]]), göze dışa bakış yaptırır.",
         "explanation": "N. abducens (CN VI) sadece m. rectus lateralis'i innerve eder ve göze abduksiyon (dışa bakış) yaptırır. CN VI felcinde etkilenen göz içe kayar (ezotropya) ve hasta dışa bakamaz. İntrakraniyal basınç artışında en sık etkilenen kranial sinirdir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Göz", "Kranial Sinirler"]
+        "tags": ["Anatomi", "Göz", "Kranial Sinirler"],
+        "story_hint": "💡 HİKAYE: Abducens (CN VI) göze 'dışarı bak!' diyen tek sinir — rectus lateralis'i çalıştırır. Felcinde göz içe kayar (ezotropya), dışa bakamaz. İntrakraniyal basınç artınca ilk o etkilenir — en uzun kafa içi yolculuğu yapan hassas sinir."
       },
       {
         "id": "anat_170",
@@ -548,7 +598,8 @@
         "answer": "[[Nervus olfactorius]]",
         "explanation": "N. olfactorius (CN I) koku duyusunu taşıyan özel duyusal sinirdir. Bipolar nöronların aksonları lamina cribrosa'dan geçerek bulbus olfactorius'a ulaşır. Anterior kafa tabanı kırıklarında CN I hasarı sonucu anosmi gelişebilir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kranial Sinirler"]
+        "tags": ["Anatomi", "Kranial Sinirler"],
+        "story_hint": "💡 HİKAYE: CN I = Olfactorius = koku avcısı. Bipolar nöronları lamina cribrosa'daki deliklerden süzülerek bulbus olfactorius'a ulaşır. Kafa tabanı kırığında bu delikler hasar görür ve koku kaybolur — anosmi! Tek tesellisi: rejenerasyon yapabilir."
       },
       {
         "id": "anat_171",
@@ -556,7 +607,8 @@
         "answer": "[[Nervus opticus]]",
         "explanation": "N. opticus (CN II) görme duyusunu taşıyan özel duyusal sinirdir. Retinal ganglion hücrelerinin aksonlarından oluşur. Optik sinir MSS'nin bir uzantısı olarak kabul edilir ve meninks kılıflarıyla çevrilidir. Papilödem intrakraniyal basınç artışının önemli bir bulgusudur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kranial Sinirler", "Göz"]
+        "tags": ["Anatomi", "Kranial Sinirler", "Göz"],
+        "story_hint": "💡 HİKAYE: CN II = Opticus = gözün fiber optik kablosu. Retinadan beyine görüntü taşır. Aslında MSS'nin bir uzantısı — meninks kılıflarıyla korunur. Kafa içi basınç artınca optik disk şişer (papilödem) — kablonun ucunda sıvı birikir."
       },
       {
         "id": "anat_174",
@@ -564,7 +616,8 @@
         "answer": "[[Ameloblastlar]]",
         "explanation": "Ameloblastlar ektoderm kökenli hücrelerdir ve diş minesini (enamel) üretir. Mine %96 inorganik madde (hidroksiapatit) içerir. Ameloblastlar diş sürdükten sonra kaybolur, bu nedenle mine rejenerasyonu olmaz. Ameloblastoma bu hücrelerden kaynaklanan odontojenik tümördür.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Baş-Boyun", "Histoloji"]
+        "tags": ["Anatomi", "Baş-Boyun", "Histoloji"],
+        "story_hint": "💡 HİKAYE: Ameloblastlar diş minesinin mimarları — ektoderm kökenli ustalar. %96 mineralli, vücudun en sert maddesini üretirler. Ama diş sürdükten sonra emekli olurlar, mine tamir edilemez! Ameloblastoma ise emekli ustaların isyanı — tümör yaparlar."
       },
       {
         "id": "anat_175",
@@ -572,7 +625,8 @@
         "answer": "[[Tüy hücreleri]] ([[Hair cells]])",
         "explanation": "Tüy hücreleri (hair cells) iç kulaktaki Corti organında ve vestibüler organlarda (semisirküler kanallar, utrikul, sakkul) mekanoreseptör olarak görev yapar. Ses dalgaları ve baş hareketlerini sinir sinyaline çevirir. Hasar gördüğünde rejenerasyon kapasitesi çok sınırlıdır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kulak", "Duyu Organları"]
+        "tags": ["Anatomi", "Kulak", "Duyu Organları"],
+        "story_hint": "💡 HİKAYE: Tüy hücreleri iç kulağın piyanistleri — ses dalgaları ve baş hareketlerini müziğe (sinir sinyaline) çevirirler. Corti organında ve vestibüler organlarda çalışırlar. Maalesef hasar görünce yerine yenisi gelmez — konser sona erer."
       },
       {
         "id": "anat_177",
@@ -580,7 +634,8 @@
         "answer": "[[Mimik kasları, m. stapedius, m. stylohyoideus, m. digastricus'un arka karnı]].",
         "explanation": "N. facialis (CN VII) mimik kaslarını, m. stapedius'u (hiperakuzi koruması), m. stylohyoideus'u ve m. digastricus'un arka karnını innerve eder. Ayrıca dilin ön 2/3 tat duyusu, lakrimal bez ve submandibular/sublingual bez sekresyonlarını da taşır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Kranial Sinirler", "Baş-Boyun"]
+        "tags": ["Anatomi", "Kranial Sinirler", "Baş-Boyun"],
+        "story_hint": "💡 HİKAYE: Fasiyal sinir (CN VII) yüzün orkestra şefi — mimik kasları, stapedius'u, stylohyoideus'u ve digastrik'in arka karnını yönetir. Bonus olarak dilin ön 2/3 tat duyusu ve gözyaşı-tükürük bezlerini de kontrol eder. Çok yetenekli bir şef!"
       },
       {
         "id": "anat_182",
@@ -588,7 +643,8 @@
         "answer": "[[M. pterygoideus lateralis]]",
         "explanation": "M. pterygoideus lateralis çiğneme kasları arasında ağız açma hareketi yapan tek kastır. Diğer çiğneme kasları (m. masseter, m. temporalis, m. pterygoideus medialis) ağız kapama (elevasyon) hareketi yapar. Tümü n. mandibularis (V3) tarafından innerve edilir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Baş-Boyun", "Çiğneme Kasları"]
+        "tags": ["Anatomi", "Baş-Boyun", "Çiğneme Kasları"],
+        "story_hint": "💡 HİKAYE: Pterygoideus lateralis çiğneme kasları arasında tek muhalefet üyesi — herkes ağzı kapatırken o açar! Masseter, temporalis ve medial pterygoid 'kapat!' der, lateralis 'aç!' der. Ağız açmanın kahramanı, V3'ün emrinde çalışan asi kas."
       }
     ],
     "tus_spots": [
@@ -641,7 +697,8 @@
         "answer": "[[İntrafuzal kas lifleridir, kasın gerilim/uzunluk değişikliklerini algılar]].",
         "explanation": "Kas iğcikleri intrafuzal kas liflerinden oluşan propriyoseptörlerdir. Kasın uzunluk değişikliklerini algılayarak monosinaptik gerilme refleksini başlatır (Ia afferent lifler). Gamma motor nöronlar iğciğin hassasiyetini ayarlar. TUS'ta refleks arkı ve propriyosepsiyon soruları sıktır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Nöromusküler", "Refleks"]
+        "tags": ["Anatomi", "Nöromusküler", "Refleks"],
+        "story_hint": "💡 HİKAYE: Kas iğcikleri kasın içindeki casus sensörler — intrafuzal liflerden yapılmış. Kas uzayınca 'uzanıyoruz!' diye Ia afferent hattından merkeze rapor verir. Gamma motor nöron hassasiyet ayarını yapar — alarm eşiğini belirleyen gizli teknisyen."
       },
       {
         "id": "anat_116",
@@ -649,7 +706,8 @@
         "answer": "[[Kastaki aşırı gerilimi algılayarak kasılmayı inhibe eder]].",
         "explanation": "Golgi tendon organı kas-tendon bileşkesinde bulunur ve Ib afferent lifler aracılığıyla kastaki gerilimi algılar. Aşırı gerilimde agonist kasın kasılmasını inhibe ederek (ters miyotatik refleks) kas ve tendonu yaralanmadan korur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Nöromusküler", "Refleks"]
+        "tags": ["Anatomi", "Nöromusküler", "Refleks"],
+        "story_hint": "💡 HİKAYE: Golgi tendon organı kas-tendon sınırındaki güvenlik freni. Kas aşırı gerilince 'DUR!' sinyali gönderir (Ib afferent) ve kasılmayı durdurur. Ters miyotatik refleks = acil fren sistemi. Golgi bekçisi olmasa kas ve tendon yırtılır!"
       },
       {
         "id": "anat_117",
@@ -657,7 +715,8 @@
         "answer": "[[Genellikle bükülü]] ([[fleksiyon]]) dizde ani rotasyonla, en sık medial menisküste",
         "explanation": "Medial menisküs lateral menisküse göre daha sık yırtılır çünkü medial kollateral ligamente yapışık olduğundan daha az hareket serbestliğine sahiptir. Fleksiyondaki dizde ani rotasyon en tipik mekanizmadır. 'Mutsuz triad' (medial menisküs, MCL ve ACL yırtığı) TUS'ta sık sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Alt Ekstremite", "Diz"]
+        "tags": ["Anatomi", "Alt Ekstremite", "Diz"],
+        "story_hint": "💡 HİKAYE: Medial menisküs MCL'ye yapışmış bir esir — hareket özgürlüğü yok. Diz bükükken ani rotasyon yapılınca en çok o zarar görür. 'Mutsuz triad' üçlüsünde medial menisküs, MCL ve ACL birlikte yırtılır — futbolcuların kabusu!"
       },
       {
         "id": "anat_118",
@@ -665,7 +724,8 @@
         "answer": "[[M. quadriceps femoris]]",
         "explanation": "M. quadriceps femoris diz ekstansiyonunu sağlayan en güçlü kastır ve n. femoralis tarafından innerve edilir. Dört başı vardır: m. rectus femoris, m. vastus lateralis, m. vastus medialis ve m. vastus intermedius. Patellar refleksi (L3-L4) bu kas ile sınanır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Alt Ekstremite", "Uyluk"]
+        "tags": ["Anatomi", "Alt Ekstremite", "Uyluk"],
+        "story_hint": "💡 HİKAYE: Quadriceps femoris diz kapağının güç santrali — dört başlı devasa bir kas. N. femoralis 'tekme at!' emri verir, patellar tendon üzerinden diz açılır. Patellar refleks testi L3-L4'ü kontrol eder. Dört başlı ejderha dizi açar!"
       },
       {
         "id": "anat_119",
@@ -673,7 +733,8 @@
         "answer": "[[Nervus tibialis]]",
         "explanation": "N. tibialis bacağın arka kompartman kaslarını (m. gastrocnemius, m. soleus, m. plantaris vb.) innerve eder. Plantar fleksiyon ve parmak fleksiyonu yaptırır. N. tibialis hasarında ayak plantar fleksiyonu yapılamaz ve ayak dorsuma kalkar (kalkaneus yürüyüşü).",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Alt Ekstremite", "Bacak"]
+        "tags": ["Anatomi", "Alt Ekstremite", "Bacak"],
+        "story_hint": "💡 HİKAYE: N. tibialis bacağın arka sokaklarının hakimi — gastrocnemius ve soleus ordusunu yönetir. Plantar fleksiyon yaptırır (parmak ucuna kalkma). Hasar görürse ayak dorsifleksiyonda kalır, topuk üstünde yürürsün — kalkaneus yürüyüşü!"
       },
       {
         "id": "anat_120",
@@ -681,7 +742,8 @@
         "answer": "[[Nervus fibularis]] ([[peroneus]]) profundus",
         "explanation": "N. fibularis profundus bacağın ön kompartman kaslarını innerve eder ve dorsifleksiyon ile parmak ekstansiyonu yaptırır. Hasarında düşük ayak (foot drop) gelişir ve hasta stepaj yürüyüşü yapar. N. fibularis communis fibula başı etrafında yüzeyel seyrettiği için travmaya açıktır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Alt Ekstremite", "Bacak"]
+        "tags": ["Anatomi", "Alt Ekstremite", "Bacak"],
+        "story_hint": "💡 HİKAYE: N. fibularis profundus bacağın ön cephesinin komutanı — dorsifleksiyon ordusunu yönetir. Hasar görünce ayak düşer (foot drop), hasta stepaj yürüyüşü yapar — her adımda bacağını yüksek kaldırır. Fibula başında yüzeyel geçer, darbe alması kolay!"
       },
       {
         "id": "anat_121",
@@ -689,7 +751,8 @@
         "answer": "[[Nervus fibularis]] ([[peroneus]]) superficialis",
         "explanation": "N. fibularis superficialis bacağın lateral kompartmanındaki m. fibularis longus ve m. fibularis brevis'i innerve eder. Bu kaslar ayak eversiyonu yapar. N. fibularis superficialis ayrıca ayak sırtının büyük kısmının duyusunu da taşır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Alt Ekstremite", "Bacak"]
+        "tags": ["Anatomi", "Alt Ekstremite", "Bacak"],
+        "story_hint": "💡 HİKAYE: N. fibularis superficialis bacağın yan cephesinin sorumlusu — fibularis longus ve brevis ikilisini yönetir. Bunlar ayağı dışa çevirir (eversiyon). Ayrıca ayak sırtının duyusunu taşır. Yüzeyel olan sinirlerin kaderi: hem duyu hem hareket!"
       },
       {
         "id": "anat_122",
@@ -697,7 +760,8 @@
         "answer": "[[Gluteal bölgenin üst dış kadranı]] ([[N. ischiadicus'tan kaçınmak için]])",
         "explanation": "Gluteal bölgede IM enjeksiyon üst dış kadrana yapılır çünkü n. ischiadicus alt iç kadrandan geçer. Yanlış enjeksiyon siyatik sinir hasarına neden olabilir. Alternatif olarak ventrogluteal bölge (Hochstetter yöntemi) de güvenli bir enjeksiyon bölgesidir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Alt Ekstremite", "Klinik"]
+        "tags": ["Anatomi", "Alt Ekstremite", "Klinik"],
+        "story_hint": "💡 HİKAYE: Kalçaya iğne yapılacaksa hedef ÜST DIŞ kadran — çünkü siyatik sinir ALT İÇ kadrandan geçer. Yanlış kadrana iğne = sinire foul! Ventrogluteal bölge de güvenli alternatif. 'Üst dışarı' = güvenli, 'Alt içeri' = tehlikeli!"
       },
       {
         "id": "anat_127",
@@ -705,7 +769,8 @@
         "answer": "[[Lig. inguinale]] ([[üst]]), [[M. sartorius]] ([[dış]]), [[M. adductor longus]] ([[iç]])",
         "explanation": "Femoral üçgen (Scarpa üçgeni) klinik açıdan önemli bir bölgedir. İçinden n. femoralis, a. femoralis ve v. femoralis geçer (lateral-medial sırada NAV). Femoral herni, femoral arter kateterizasyonu ve lenf nodu palpasyonu bu bölgede yapılır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Alt Ekstremite", "Topografik"]
+        "tags": ["Anatomi", "Alt Ekstremite", "Topografik"],
+        "story_hint": "💡 HİKAYE: Scarpa üçgeni üç sınırla çizilir: üstte inguinal ligament (çit), dışta sartorius (terzi kası), içte adductor longus. İçinden NAV geçer — lateral'den medial'e Nerve-Artery-Vein. Cerrah bu üçgende femoral arteri bulur, kateter takar."
       },
       {
         "id": "anat_158",
@@ -713,7 +778,8 @@
         "answer": "[[M. gluteus maximus]]",
         "explanation": "M. gluteus maximus vücudun en büyük ve en güçlü kasıdır. Kalça ekstansiyonu ve dış rotasyonu yapar. N. gluteus inferior tarafından innerve edilir. Merdiven çıkma, oturur pozisyondan kalkma ve koşma gibi hareketlerde aktif rol oynar.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Alt Ekstremite", "Gluteal"]
+        "tags": ["Anatomi", "Alt Ekstremite", "Gluteal"],
+        "story_hint": "💡 HİKAYE: Gluteus maximus vücudun en büyük kası — insanı dik tutan dev. Kalça ekstansiyonu ve dış rotasyonu yapar. N. gluteus inferior patronudur. Merdiven çıkarken, sandalyeden kalkarken bu dev aktive olur. İnsan olmanın kası!"
       },
       {
         "id": "anat_159",
@@ -721,7 +787,8 @@
         "answer": "N. gluteus superior felci (M. gluteus medius ve [[minimus felci)]]",
         "explanation": "Trendelenburg belirtisi n. gluteus superior felcinde görülür. M. gluteus medius ve minimus kalça abduksiyonu yaparak tek ayak üzerinde dururken pelvisi stabilize eder. Felçte hasta etkilenen tarafa basınca karşı taraf pelvis düşer. TUS'ta sık sorulan klinik bulgulardan biridir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Alt Ekstremite", "Gluteal"]
+        "tags": ["Anatomi", "Alt Ekstremite", "Gluteal"],
+        "story_hint": "💡 HİKAYE: Trendelenburg testi: hasta tek ayağa basınca karşı taraf pelvis düşer — sanki pelvis çöküyor. Suçlu? N. gluteus superior felci. Gluteus medius ve minimus çalışmayınca pelvis stabilize edilemez. Ördek yürüyüşü — sağa sola sallanma!"
       },
       {
         "id": "anat_168",
@@ -729,7 +796,8 @@
         "answer": "[[Nervus obturatorius]]",
         "explanation": "N. obturatorius lumbal pleksustan (L2-L4) çıkar ve foramen obturatum'dan geçerek uyluğun medial (adduktor) kompartmanına ulaşır. Adduktor kasları innerve eder ve uyluğun medial yüzünün duyusunu taşır. Obturatör herni bu siniri sıkıştırabilir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Alt Ekstremite", "Pelvis"]
+        "tags": ["Anatomi", "Alt Ekstremite", "Pelvis"],
+        "story_hint": "💡 HİKAYE: N. obturatorius foramen obturatum'un tek yolcusu — L2-L4'ten çıkıp bu delikten geçerek uyluğun iç kompartmanına ulaşır. Adduktor kasların efendisi. Obturatör herni bu siniri sıkıştırırsa uyluğun içi ağrır ve uyuşur."
       },
       {
         "id": "anat_169",
@@ -737,7 +805,8 @@
         "answer": "[[Phalen testi / Tinel bulgusu]]",
         "explanation": "Karpal tünel sendromunda n. medianus el bileğinde sıkışır. Phalen testi (bileklerin 60 saniye fleksiyonda tutulması) ve Tinel bulgusu (karpal tünel üzerine vurma ile parestezi) tanıda kullanılan provokatif testlerdir. TUS'ta periferik sinir tuzak nöropatileri sık sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Periferik Sinir", "Klinik"]
+        "tags": ["Anatomi", "Periferik Sinir", "Klinik"],
+        "story_hint": "💡 HİKAYE: Karpal tünelde median sinir sıkışınca Phalen ve Tinel ikilisi devreye girer. Phalen: bilekleri 60 saniye bükersen karıncalanma başlar. Tinel: karpal tünele vurunca elektrik çarpar. İki dedektif, bir suçlu (sıkışan sinir)!"
       },
       {
         "id": "anat_178",
@@ -745,7 +814,8 @@
         "answer": "[[Tuberositas tibiae]]",
         "explanation": "Ligamentum patellae (patellar tendon) patella'nın alt ucundan tuberositas tibiae'ye uzanır. Quadriceps femoris kasının gücünü tibia'ya ileten yapıdır. Osgood-Schlatter hastalığında tuberositas tibiae'de apofizitin oluşması genç sporcularda sık görülür.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Alt Ekstremite", "Diz"]
+        "tags": ["Anatomi", "Alt Ekstremite", "Diz"],
+        "story_hint": "💡 HİKAYE: Ligamentum patellae dizkapağından tibia tümsekçiğüne (tuberositas tibiae) inen halat. Quadriceps'in gücünü tibia'ya iletir. Osgood-Schlatter hastalığında genç sporcuların tümsekçiği şişer — halat çekiyor ama bağlantı noktası dayanamıyor!"
       }
     ],
     "tus_spots": [
@@ -798,7 +868,8 @@
         "answer": "[[Bronchiolus'lar]] ve [[sonrasındaki yapı]]",
         "explanation": "Kıkırdak yapı trakea ve bronşlarda bulunur ancak bronşiollerde ve daha distal yapılarda (terminal ve respiratuar bronşioller, alveolar duktuslar, alveoller) kıkırdak yoktur. Bronşiollerde hava yolu açıklığını düz kas tonusu sağlar. Bu nedenle astımda bronşiol düzeyinde bronkospazm gelişir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Solunum", "Histoloji"]
+        "tags": ["Anatomi", "Solunum", "Histoloji"],
+        "story_hint": "💡 HİKAYE: Kıkırdak halkalar trakea ve bronşlarda iskelet gibi — hava yolunu açık tutar. Ama bronşiollere inince kıkırdak kaybolur, yerine düz kas alır. Astımda bronşiol düz kası spazma girer — kıkırdak koruyucu zırh olmayınca hava yolu daralır!"
       },
       {
         "id": "anat_128",
@@ -806,7 +877,8 @@
         "answer": "[[Diaphragma]]",
         "explanation": "Diyafragma en önemli inspirasyon kasıdır ve sakin solunumun yaklaşık %75'inden sorumludur. N. phrenicus (C3-C4-C5) tarafından innerve edilir. Diyafragma felcinde paradoks solunum hareketi görülür. TUS'ta 'C3-4-5 keeps the diaphragm alive' kuralı sık hatırlatılır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Solunum", "Diyafragma"]
+        "tags": ["Anatomi", "Solunum", "Diyafragma"],
+        "story_hint": "💡 HİKAYE: Diyafragma solunumun ana motoru — sakin solunumun %75'ini tek başına yapar. N. phrenicus (C3-C4-C5) onun elektrik kablosu. 'C3-4-5 keeps the diaphragm alive!' — bu kablo kesilirse motor durur, hasta nefes alamaz!"
       },
       {
         "id": "anat_181",
@@ -814,7 +886,8 @@
         "answer": "[[Parasempatik sistem]] ([[Nervus vagus]])",
         "explanation": "Parasempatik sistem (n. vagus) bronşiyal düz kaslarda konstriksiyona ve mukus sekresyonunda artışa neden olur. Sempatik sistem ise bronkodilatasyon yapar (β2 reseptörler). Astım tedavisinde β2 agonistler ve antikolinerjikler bu fizyolojiye dayanarak kullanılır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Solunum", "Otonom Sinir Sistemi"]
+        "tags": ["Anatomi", "Solunum", "Otonom Sinir Sistemi"],
+        "story_hint": "💡 HİKAYE: Vagus (parasempatik) bronşlara 'daral!' emri verir — bronkokonstrüksiyon + mukus artışı. Sempatik ise 'genişle!' der (beta-2 reseptörler). Astım tedavisi bu savaşı kullanır: beta-2 agonist = sempatik yardım, antikolinerjik = vagus susturma!"
       }
     ],
     "tus_spots": [
@@ -853,7 +926,8 @@
         "answer": "[[Bursa omentalis'den büyük periton boşluğuna]]",
         "explanation": "Foramen epiploicum (Winslow deliği) bursa omentalis (küçük kese) ile büyük periton boşluğu arasındaki tek bağlantıdır. Sınırları: önde lig. hepatoduodenale, arkada VCI, üstte karaciğer, altta duodenum. Pringle manevrası bu bölgede uygulanır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "GIS", "Periton"]
+        "tags": ["Anatomi", "GIS", "Periton"],
+        "story_hint": "💡 HİKAYE: Winslow deliği bursa omentalis'in tek kapısı — büyük periton odasına açılan dar geçit. Önde lig. hepatoduodenale (kapı perdesi), arkada VCI (duvar). Pringle manevrası: cerrah bu kapıyı sıkıştırarak karaciğer kanamasını durdurur!"
       },
       {
         "id": "anat_124",
@@ -861,7 +935,8 @@
         "answer": "[[A. gastrica sinistra veya]] duodenum arka yüz ülserlerinde [[A. gastroduodenalis]]",
         "explanation": "Mide küçük kurvatur ülserlerinde a. gastrica sinistra, duodenum arka yüz ülserlerinde ise a. gastroduodenalis erozyona uğrayarak masif kanamaya neden olabilir. A. gastroduodenalis pankreasın arkasından geçtiği için posterior duodenal ülserler bu arteri aşındırır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "GIS", "Vasküler"]
+        "tags": ["Anatomi", "GIS", "Vasküler"],
+        "story_hint": "💡 HİKAYE: Mide küçük kurvaturda ülser varsa A. gastrica sinistra kanar. Duodenum arka yüzde ülser varsa A. gastroduodenalis patlar — çünkü pankreas arkasından geçer, ülser onu aşındırır. 'Arka duvar ülseri = arkadaki arter tehlikede!'"
       },
       {
         "id": "anat_125",
@@ -869,7 +944,8 @@
         "answer": "[[Portal hipertansiyon]] ([[Siroz]])",
         "explanation": "Portal hipertansiyonda portal ven basıncı artar ve porto-kaval anastomozlar genişler. Paraumbilikal venler genişleyerek caput medusae oluşturur. Diğer porto-kaval anastomozlar: özofagus alt uç (varisler), rektum (hemoroidler) ve retroperitoneal (Retzius venleri).",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "GIS", "Portal Sistem"]
+        "tags": ["Anatomi", "GIS", "Portal Sistem"],
+        "story_hint": "💡 HİKAYE: Siroz karaciğeri taşa çevirince portal kan geçemez, alternatif yollar açılır. Göbekte venler şişer — Medusa'nın yılan saçları gibi (caput medusae). Özofagusta varisler, rektumda hemoroidler — üç kaçış yolu, hepsi tehlikeli!"
       },
       {
         "id": "anat_146",
@@ -877,7 +953,8 @@
         "answer": "[[Karaciğer]]",
         "explanation": "İndirekt (konjuge olmamış) bilirubin karaciğerde UDP-glukuronil transferaz enzimi ile glukuronik asit ile konjuge edilerek direkt (konjuge) bilirubine dönüşür. Direkt bilirubin suda çözünür ve safra ile bağırsağa atılır. Gilbert sendromunda bu enzimin aktivitesi azalmıştır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "GIS", "Karaciğer"]
+        "tags": ["Anatomi", "GIS", "Karaciğer"],
+        "story_hint": "💡 HİKAYE: İndirekt bilirubin yağda çözünen vahşi bir molekül — beyne bile geçebilir (kernikterus). Karaciğer onu yakalayıp glukuronik asitle evlendirir (konjugasyon), direkt bilirubin olarak uslu hale getirir. Gilbert sendromunda nikah memuru (enzim) yavaş çalışır."
       },
       {
         "id": "anat_157",
@@ -885,7 +962,8 @@
         "answer": "[[Ağızda]] ([[amilaz / pityalin enzimi ile]])",
         "explanation": "Karbonhidrat sindirimi ağızda tükürük amilazı (pityalin) ile başlar. Bu enzim nişastayı maltoz ve dekstrinlere parçalar. Asidik mide ortamında inaktive olur. Sindirim pankreatik amilaz ile duodenumda devam eder. TUS'ta sindirim enzimleri ve çalışma yerleri sık sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "GIS", "Sindirim"]
+        "tags": ["Anatomi", "GIS", "Sindirim"],
+        "story_hint": "💡 HİKAYE: Karbonhidrat sindirimi ağızda başlar — tükürük amilazı (pityalin) nişastayı parçalamaya ağızda başlar. Ama mide asidi onu susturur. Duodenumda pankreatik amilaz devreye girer — ikinci tur ayrıştırma başlar. İlk adım ağızda atılır!"
       },
       {
         "id": "anat_160",
@@ -893,7 +971,8 @@
         "answer": "[[Akut Kolesistit]]",
         "explanation": "Ductus cysticus'un safra taşı ile tıkanması safra kesesi içinde safra birikimi ve duvar inflamasyonuna (akut kolesistit) neden olur. Murphy bulgusu (sağ üst kadran palpasyonunda inspirasyonla ağrı) klasik klinik bulgudur. Tedavide kolesistektomi yapılır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "GIS", "Safra Yolları"]
+        "tags": ["Anatomi", "GIS", "Safra Yolları"],
+        "story_hint": "💡 HİKAYE: Safra taşı ductus cysticus'u tıkayınca safra kesesi şişer ve kızar — akut kolesistit! Murphy testi: doktor sağ üst kadrana basar, hasta nefes alınca ağrıdan durur. Taş kapıyı tıkadı, safra içeride mahsur, duvarlar kızgın!"
       },
       {
         "id": "anat_161",
@@ -901,7 +980,8 @@
         "answer": "[[Sağ alt kadran]] ([[Fossa iliaca dextra]])",
         "explanation": "Apandiks çekumun posteromedial yüzünde, teniae coli'nin birleşim noktasında yer alır ve sağ alt kadranda bulunur. Apandisit acil cerrahinin en sık nedenidir. Atipik yerleşimli apandiks (retrocecal, pelvik) tanıyı zorlaştırabilir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "GIS", "Cerrahi"]
+        "tags": ["Anatomi", "GIS", "Cerrahi"],
+        "story_hint": "💡 HİKAYE: Apandiks sağ alt kadranda (fossa iliaca dextra) çekumun üzerinde asılı küçük bir solucana benzer. Tenia coli'lerin buluşma noktasında bulunur. Acil cerrahinin en sık sebebi — küçük ama tehlikeli bir organ! Atipik yerlerde de olabilir."
       },
       {
         "id": "anat_162",
@@ -909,7 +989,8 @@
         "answer": "[[Spina iliaca anterior superior ile umbilikus'u birleştiren hattın alt 1/3 ile orta 1/3 birleşme noktası]] ([[Apandisitin izdüşümü]])",
         "explanation": "McBurney noktası apandiksin yüzeyel izdüşümüdür ve apandisit tanısında palpasyonla hassasiyet değerlendirilir. Spina iliaca anterior superior ile umbilikus arasındaki hattın lateral 1/3'ü ile medial 2/3'ünün birleşim noktasıdır. TUS'ta cerrahi landmark'lar sık sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "GIS", "Cerrahi"]
+        "tags": ["Anatomi", "GIS", "Cerrahi"],
+        "story_hint": "💡 HİKAYE: McBurney noktası SIAS ile göbek arasındaki hattın dış 1/3'ü ile iç 2/3'ünün buluştuğu yer. Apandisin yüzeye izdüşümü — doktor buraya basınca hasta acıyla sıçrar. Cerrahın GPS koordinatı: 'göbek-SIAS hattında 1/3 dış nokta!'"
       }
     ],
     "tus_spots": [
@@ -962,7 +1043,8 @@
         "answer": "[[Melatonin]] ([[Uyku-uyanıklık ritmi]])",
         "explanation": "Pineal bez melatonin salgılayarak sirkadiyen ritmi düzenler. Melatonin karanlıkta artar, ışıkta azalır. Pineal bez kalsifikasyonu (beyin kumu) radyolojide orta hat landmark'ı olarak kullanılır. Pinealoma erken puberte nedeni olabilir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Endokrin", "Beyin"]
+        "tags": ["Anatomi", "Endokrin", "Beyin"],
+        "story_hint": "💡 HİKAYE: Pineal bez beynin gece lambası — karanlıkta melatonin salar, ışıkta kapatır. Uyku-uyanıklık ritminin maestrosu. Yaşlandıkça kireçlenir (beyin kumu), röntgende orta hat belirteci olur. Pinealoma erken puberte yapabilir — lamba bozulunca hormonlar çıldırır!"
       },
       {
         "id": "anat_133",
@@ -970,7 +1052,8 @@
         "answer": "[[Oksitosin]] ve [[ADH]] ([[Antidiüretik Hormon / Vazopressin]])",
         "explanation": "Nörohipofiz hipotalamustan sentezlenen hormonları depolar ve salgılar. ADH böbrekte su geri emilimini artırır (toplayıcı kanallarda aquaporin-2 ekspresyonu). Oksitosin uterus kontraksiyonu ve süt ejeksiyonu sağlar. ADH eksikliğinde diabetes insipidus gelişir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Endokrin", "Hipofiz"]
+        "tags": ["Anatomi", "Endokrin", "Hipofiz"],
+        "story_hint": "💡 HİKAYE: Nörohipofiz bir depo — hipotalamustan gelen ADH ve oksitosini saklar, gerekince kana bırakır. ADH böbrekte su kapısını açar (aquaporin-2), oksitosin rahmi sıkar ve sütü fışkırtır. Depo boşalırsa diabetes insipidus — litrelerce idrar!"
       },
       {
         "id": "anat_134",
@@ -978,7 +1061,8 @@
         "answer": "[[Prolaktin]]",
         "explanation": "Prolaktin adenohipofiz (ön lob) laktotrop hücrelerinden salgılanır ve meme bezinde süt üretimini (laktasyon) uyarır. Dopamin prolaktin salgılanmasını inhibe eden ana faktördür. Prolaktinoma en sık hipofiz adenomudur ve amenore-galaktore sendromuna neden olur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Endokrin", "Hipofiz"]
+        "tags": ["Anatomi", "Endokrin", "Hipofiz"],
+        "story_hint": "💡 HİKAYE: Prolaktin adenohipofizin süt fabrikası müdürü — meme bezine 'üret!' emri verir. Dopamin ise freni — prolaktini baskılar. Prolaktinoma olunca fren bozulur, süt durmadan akar (galaktore) ve adet kesilir (amenore). Kabergolin freni tamir eder."
       },
       {
         "id": "anat_135",
@@ -986,7 +1070,8 @@
         "answer": "[[Oksitosin]]",
         "explanation": "Oksitosin nörohipofizden salgılanarak meme bezlerindeki miyoepitelyal hücrelerin kasılmasını sağlar ve süt ejeksiyonunu gerçekleştirir. Ayrıca doğumda uterus kasılmalarını artırır. TUS'ta prolaktin (süt üretimi) ve oksitosin (süt ejeksiyonu) ayrımı sık sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Endokrin", "Hipofiz"]
+        "tags": ["Anatomi", "Endokrin", "Hipofiz"],
+        "story_hint": "💡 HİKAYE: Oksitosin sütün fışkırma düğmesi — miyoepitelyal hücreleri sıkar, süt dışarı çıkar. Prolaktin sütü üretir ama oksitosin olmasa süt memede kalır. Ayrıca doğumda rahmi de sıkar. İki hormon = üretim + dağıtım ortaklığı!"
       },
       {
         "id": "anat_156",
@@ -994,7 +1079,8 @@
         "answer": "[[Medulla suprarenalis]]",
         "explanation": "Feokromositoma adrenal medulladan kaynaklanan katekolamin salgılayan tümördür. '10 kuralı' ile hatırlanır: %10 bilateral, %10 malign, %10 ekstra-adrenal, %10 çocukluk çağında, %10 ailesel. Paroksismal hipertansiyon, baş ağrısı, terleme ve çarpıntı klasik bulgulardır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Endokrin", "Adrenal"]
+        "tags": ["Anatomi", "Endokrin", "Adrenal"],
+        "story_hint": "💡 HİKAYE: Feokromositoma adrenal medullada gizlenen adrenalin fabrikası tümörü. '10 kuralı' ile hatırla: her şeyin %10'u — bilateral, malign, ekstra-adrenal, çocuk, ailesel. Paroksismal hipertansiyon krizleri, terleme, baş ağrısı ve çarpıntı — vücut sürekli kaç-ya-savaş modunda!"
       },
       {
         "id": "anat_195",
@@ -1002,7 +1088,8 @@
         "answer": "[[Kalsiyum]] ([[Ca2+]])",
         "explanation": "PTH kanda kalsiyum düzeyini yükseltir: kemikten kalsiyum rezorpsiyonu artırır, böbrekte kalsiyum geri emilimini artırır ve böbrekte 1,25-dihidroksi vitamin D sentezini uyararak bağırsaktan kalsiyum emilimini dolaylı olarak artırır. PTH fosfat düzeyini ise düşürür.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Endokrin", "Paratiroid"]
+        "tags": ["Anatomi", "Endokrin", "Paratiroid"],
+        "story_hint": "💡 HİKAYE: PTH kalsiyumun avukatı — kemikten kalsiyum çıkarır, böbrekte geri emdirir, vitamin D'yi aktive ederek bağırsaktan da aldırır. Fosfatı ise kovalar — düşürür. Kalsitonin tam tersi: kalsiyumu düşüren savcı. PTH = yükselt, kalsitonin = düşür!"
       },
       {
         "id": "anat_196",
@@ -1010,7 +1097,8 @@
         "answer": "[[Kortizol]]",
         "explanation": "Kortizol adrenal korteksin zona fasikülata tabakasından salgılanan ana glukokortikoiddir. Stres yanıtı, glukoneogenez, antiinflamatuvar etki ve immünosupresyon görevleri vardır. Cushing sendromunda kortizol fazlalığı, Addison hastalığında ise yetersizliği görülür.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Endokrin", "Adrenal"]
+        "tags": ["Anatomi", "Endokrin", "Adrenal"],
+        "story_hint": "💡 HİKAYE: Kortizol adrenal korteksin zona fasikülata katmanından gelen stres hormonu. Glukoneogenez yapar, iltihabı bastırır, bağışıklığı baskılar. Fazlası Cushing — yuvarlak yüz, bizon hörgücü. Azlığı Addison — bronz ten, bitkinlik. Orta yol sağlık!"
       }
     ],
     "tus_spots": [
@@ -1063,7 +1151,8 @@
         "answer": "[[Vesicula seminalis]]",
         "explanation": "Vesicula seminalis (seminal vezikül) semen hacminin yaklaşık %70'ini oluşturan fruktoz zengini alkalin bir sıvı salgılar. Fruktoz spermlerin enerji kaynağıdır. TUS'ta semende fruktoz yokluğu seminal vezikül agenezisi veya ductus ejaculatorius tıkanıklığını düşündürür.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Ürogenital", "Erkek Üreme"]
+        "tags": ["Anatomi", "Ürogenital", "Erkek Üreme"],
+        "story_hint": "💡 HİKAYE: Vesicula seminalis semenin enerji içeceği fabrikası — fruktoz zengini sıvı üretir, semen hacminin %70'ini sağlar. Spermler bu fruktoz sayesinde yüzer. Semende fruktoz yoksa fabrika ya kapanmış (agenezi) ya da yol tıkanmış (ductus tıkanıklığı)!"
       },
       {
         "id": "anat_130",
@@ -1071,7 +1160,8 @@
         "answer": "[[Prostatın içinden geçerek pars prostatica urethrae'ya]]",
         "explanation": "Ductus ejaculatorius, ductus deferens ile seminal vezikülün birleşmesiyle oluşur ve prostat içinden geçerek pars prostatica urethrae'da colliculus seminalis (veru montanum) üzerine açılır. Prostat cerrahisinde bu yapının korunması fertilite için önemlidir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Ürogenital", "Erkek Üreme"]
+        "tags": ["Anatomi", "Ürogenital", "Erkek Üreme"],
+        "story_hint": "💡 HİKAYE: Ductus ejaculatorius prostatın içinden geçen gizli tünel — ductus deferens ile seminal vezikülün birleşmesiyle oluşur. Colliculus seminalis (veru montanum) tepesinde üretraya açılır. Prostat cerrahisinde bu tünele dokunma — fertilite tehlikede!"
       },
       {
         "id": "anat_131",
@@ -1079,7 +1169,8 @@
         "answer": "[[Epididymis]]",
         "explanation": "Epididimis testisten çıkan spermlerin olgunlaştığı, hareket yeteneği kazandığı ve depolandığı yapıdır. Caput, corpus ve cauda olmak üzere üç bölümden oluşur. Spermler burada 2-3 hafta depolanabilir. Epididimit genç erkeklerde akut skrotum nedenlerinden biridir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Ürogenital", "Erkek Üreme"]
+        "tags": ["Anatomi", "Ürogenital", "Erkek Üreme"],
+        "story_hint": "💡 HİKAYE: Epididimis spermlerin okulu — testisten ham olarak gelirler, burada olgunlaşır, yüzme öğrenir ve mezun olana kadar depolanırlar. Caput (giriş), corpus (eğitim), cauda (mezuniyet ve depo). 2-3 hafta kalabilirler. Epididimit = okul yangını!"
       },
       {
         "id": "anat_136",
@@ -1087,7 +1178,8 @@
         "answer": "[[Glomerulus]] ([[Bowman kapsülü ile birlikte corpusculum renale'yi oluşturur]])",
         "explanation": "Glomerulus kapiller yumağı ve Bowman kapsülü birlikte renal korpüskülü oluşturur. Glomerüler filtrasyon basıncı ile plazma ultrafiltratı oluşur. Filtrasyon bariyeri endotel, bazal membran ve podosit ayak çıkıntılarından oluşur. GFR normalde yaklaşık 125 mL/dk'dır.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Ürogenital", "Böbrek"]
+        "tags": ["Anatomi", "Ürogenital", "Böbrek"],
+        "story_hint": "💡 HİKAYE: Glomerulus kanı süzen filtre — Bowman kapsülü içindeki kapiller yumak. Endotel, bazal membran ve podosit ayakları üç katlı süzgeç oluşturur. GFR 125 mL/dk — günde 180 litre süzülür ama 1.5 litresi idrar olur. Geri kalanı geri emilir!"
       },
       {
         "id": "anat_137",
@@ -1095,7 +1187,8 @@
         "answer": "[[Trigonum vesicae]]",
         "explanation": "Trigonum vesicae mesane tabanında üç köşeli düz bir alandır. Üst iki köşesinde üreter ostiumları, alt köşesinde ostium urethrae internum bulunur. Bu bölge transisyonel epitelle kaplıdır ve mesane karsinomlarının en sık ortaya çıktığı bölgedir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Ürogenital", "Mesane"]
+        "tags": ["Anatomi", "Ürogenital", "Mesane"],
+        "story_hint": "💡 HİKAYE: Trigonum vesicae mesanenin tabanındaki üçgen alan — üstte iki üreter kapısı, altta üretra çıkışı. Mesane kanserinin en sevdiği yer burası! Transisyonel epitelle kaplı — düz ve gergin bir üçgen, tümör burayı sever."
       },
       {
         "id": "anat_197",
@@ -1103,7 +1196,8 @@
         "answer": "[[Nervi splanchnici pelvici]] ([[Pelvik splanknik sinirler, S2-S4]])",
         "explanation": "Pelvik splanknik sinirler (S2-S4) mesanedeki gerilme reseptörlerinden afferent bilgiyi taşır. Aynı sinirler parasempatik efferent lifler de içerir ve detrusor kasını kasar, internal sfinkteri gevşetir. Miksiyon refleksi bu sinirler üzerinden gerçekleşir.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Ürogenital", "Otonom"]
+        "tags": ["Anatomi", "Ürogenital", "Otonom"],
+        "story_hint": "💡 HİKAYE: Mesane dolunca gerilme reseptörleri 'doldum!' diye bağırır. Bu haberi pelvik splanknik sinirler (S2-S4) taşır. Aynı sinirler detrusoru kasar, sfinkteri gevşetir — işeme refleksi başlar. S2-S4 = mesanenin telefon hattı ve kumanda merkezi!"
       },
       {
         "id": "anat_198",
@@ -1111,7 +1205,8 @@
         "answer": "[[Pars prostatica urethrae]]",
         "explanation": "Pars prostatica urethrae erkek üretrasının en geniş ve en genişleyebilir bölümüdür. Ancak travmaya en açık kısım pars membranacea'dır (ürogenital diyafragmadan geçtiği yer). TUS'ta üretra bölümleri ve travma tipleri sıkça sorulur. Pelvis kırıklarında posterior üretra yaralanması görülür.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Ürogenital", "Erkek"]
+        "tags": ["Anatomi", "Ürogenital", "Erkek"],
+        "story_hint": "💡 HİKAYE: Pars prostatica en geniş üretra bölümü — ama travmaya en açık olan pars membranacea. Ürogenital diyafragmadan geçtiği için pelvis kırığında ezilir. 'Prostatik = geniş ama güvende, membranöz = dar ve tehlikede!' Pelvis kırığı = posterior üretra riski!"
       },
       {
         "id": "anat_199",
@@ -1119,7 +1214,8 @@
         "answer": "[[Myometrium]]",
         "explanation": "Myometrium uterusun en kalın tabakasıdır ve düz kas liflerinden oluşur. Doğum sırasında oksitosin etkisiyle güçlü kontraksiyonlar yapar. Uterus duvarı dıştan içe: perimetrium (seroza), myometrium (kas) ve endometrium (mukoza) tabakalarından oluşur. Leiomyom myometriumdan kaynaklanan en sık benign tümördür.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Ürogenital", "Kadın Üreme"]
+        "tags": ["Anatomi", "Ürogenital", "Kadın Üreme"],
+        "story_hint": "💡 HİKAYE: Myometrium rahmin kas kalkanı — en kalın tabaka. Doğumda oksitosin emriyle kasılır, bebeği dışarı iter. Perimetrium dış giysi, endometrium iç döşeme, myometrium güç motoru. Leiomyom bu motordan çıkan en sık iyi huylu tümör — miyom!"
       },
       {
         "id": "anat_200",
@@ -1127,7 +1223,8 @@
         "answer": "[[Adenohipofiz]] ([[FSH, LH]]) ve [[Ovaryum]] ([[Östrojen, Progesteron]])",
         "explanation": "Menstrüel siklus hipotalamus-hipofiz-over aksı tarafından kontrol edilir. GnRH (hipotalamus) → FSH ve LH (adenohipofiz) → Östrojen ve progesteron (ovaryum). Foliküler fazda FSH dominant, ovülasyonda LH surge, luteal fazda progesteron dominant rol oynar.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Ürogenital", "Kadın Üreme"]
+        "tags": ["Anatomi", "Ürogenital", "Kadın Üreme"],
+        "story_hint": "💡 HİKAYE: Menstrüel döngü üç katlı komuta zinciri: Hipotalamus GnRH fermanı yazar, Adenohipofiz FSH ve LH askerlerini gönderir, Ovaryum östrojen ve progesteron cevabını verir. Foliküler fazda FSH öncü, ovülasyonda LH patlaması, luteal fazda progesteron hakimi!"
       }
     ],
     "tus_spots": [
@@ -1180,7 +1277,8 @@
         "answer": "[[Fasciculus posterior]]",
         "explanation": "Fasciculus posterior, plexus brachialis'in en büyük fasikülüdür ve posterior kord olarak da bilinir. N. radialis (en büyük dalı), n. axillaris, n. thoracodorsalis, n. subscapularis superior ve inferior dallarını verir. TUS'ta pleksus fasikülleri ve dalları sık sorulur.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Üst Ekstremite", "Plexus Brachialis"]
+        "tags": ["Anatomi", "Üst Ekstremite", "Plexus Brachialis"],
+        "story_hint": "💡 HİKAYE: Fasciculus posterior plexus brachialis'in arkadaki büyük ağabey — n. radialis (en büyük oğlu) ve n. axillaris (küçük oğlu) verir. Posterior = arka, radialis = kol arkasının hakimi, axillaris = omuzun koruyucusu. Arka fasikül, arka kasların patronu!"
       },
       {
         "id": "anat_189",
@@ -1188,7 +1286,8 @@
         "answer": "[[Nervus musculocutaneus]]",
         "explanation": "N. musculocutaneus fasciculus lateralis'ten çıkar ve kolun ön kompartman kaslarını (m. biceps brachii, m. brachialis, m. coracobrachialis) innerve eder. Duyusal dalı n. cutaneus antebrachii lateralis olarak önkolun lateral duyusunu taşır. Biseps refleksi C5-C6 düzeyini test eder.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Üst Ekstremite", "Plexus Brachialis"]
+        "tags": ["Anatomi", "Üst Ekstremite", "Plexus Brachialis"],
+        "story_hint": "💡 HİKAYE: Musculocutaneus fasciculus lateralis'ten çıkan çok yönlü sinir — biceps, brachialis ve coracobrachialis üçlüsünü innerve eder. Duyusal dalıyla önkolun dışını hisseder. Biseps refleksi (C5-C6) ile test edilir. İsmi anlatıyor: kas + deri siniri!"
       },
       {
         "id": "anat_190",
@@ -1196,7 +1295,8 @@
         "answer": "[[Nervus radialis]]",
         "explanation": "N. radialis fasciculus posterior'dan çıkar ve kolun arka kompartman kaslarını (m. triceps brachii, m. anconeus) ve önkolun arka kompartman kaslarını (el bilek ve parmak ekstansörleri) innerve eder. Radial sinir hasarında düşük el (wrist drop) görülür. Triseps refleksi C7-C8 düzeyini test eder.",
         "difficulty": "Orta",
-        "tags": ["Anatomi", "Üst Ekstremite", "Plexus Brachialis"]
+        "tags": ["Anatomi", "Üst Ekstremite", "Plexus Brachialis"],
+        "story_hint": "💡 HİKAYE: N. radialis humerus cisim kırığında en çok tehlikede — spiral olukta humerusa yapışık gezer. Hasar görünce düşük el (wrist drop) olur, bilek ve parmak ekstansiyonu kaybolur. Triseps refleksi (C7-C8) de gider. Spiral oluktaki tehlikeli yolcu!"
       }
     ],
     "tus_spots": [

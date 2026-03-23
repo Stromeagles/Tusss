@@ -6,16 +6,49 @@
     "topic": "Bakteri Genetiği ve Direnç",
     "sub_topic": "Plazmidler ve Transpozonlar",
     "flashcards": [
-      { "id": "fc-micro-prof-001", "question": "Bakterilerde 'zıplayan genler' olarak bilinen genetik elemanlar?", "answer": "Transpozonlar.", "difficulty": "easy", "tags": ["Genetik"] },
-      { "id": "fc-micro-prof-002", "question": "Kromozomal DNA'ya entegre olabilen plazmidlere ne ad verilir?", "answer": "Epizom.", "difficulty": "medium", "tags": ["Genetik"] },
-      { "id": "fc-micro-prof-003", "question": "F pilusu aracılığıyla gerçekleşen gen transferi?", "answer": "Konjugasyon.", "difficulty": "easy", "tags": ["Genetik"] }
+      {
+        "id": "fc-micro-prof-001",
+        "question": "Bakterilerde 'zıplayan genler' olarak bilinen genetik elemanlar?",
+        "answer": "Transpozonlar.",
+        "difficulty": "easy",
+        "tags": [
+          "Genetik"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-002",
+        "question": "Kromozomal DNA'ya entegre olabilen plazmidlere ne ad verilir?",
+        "answer": "Epizom.",
+        "difficulty": "medium",
+        "tags": [
+          "Genetik"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-003",
+        "question": "F pilusu aracılığıyla gerçekleşen gen transferi?",
+        "answer": "Konjugasyon.",
+        "difficulty": "easy",
+        "tags": [
+          "Genetik"
+        ]
+      }
     ],
-    "tus_spots": ["Konjugasyon en sık direnç yayılım yoludur.", "Transdüksiyon için faj gereklidir."],
+    "tus_spots": [
+      "Konjugasyon en sık direnç yayılım yoludur.",
+      "Transdüksiyon için faj gereklidir."
+    ],
     "clinical_cases": [
       {
         "id": "cc-micro-prof-001",
         "case": "Klebsiella'da hızla yayılan çoklu ilaç direncinin en olası nedeni?",
-        "options": ["Transformasyon", "Transdüksiyon", "Konjugatif Plazmidler", "Mutasyon"],
+        "options": [
+          "Transformasyon",
+          "Transdüksiyon",
+          "Konjugatif Plazmidler",
+          "Mutasyon",
+          "E) Hiçbiri"
+        ],
         "correct_answer": "Konjugatif Plazmidler",
         "explanation": "Hızlı yayılım konjugasyon ile olur.",
         "difficulty": "medium"
@@ -29,9 +62,33 @@
     "topic": "Gram Pozitif Koklar",
     "sub_topic": "Staphylococcus aureus",
     "flashcards": [
-      { "id": "fc-micro-prof-010", "question": "S. aureus'ta IgG Fc'sine bağlanan protein?", "answer": "Protein A.", "difficulty": "medium", "tags": ["S. aureus"] },
-      { "id": "fc-micro-prof-011", "question": "MRSA direncinden sorumlu gen?", "answer": "mecA geni.", "difficulty": "hard", "tags": ["MRSA"] },
-      { "id": "fc-micro-prof-012", "question": "S. aureus gıda zehirlenmesi neden bu kadar hızlı başlar?", "answer": "Pre-formed enterotoksin alımı nedeniyle.", "difficulty": "medium", "tags": ["Toksin"] }
+      {
+        "id": "fc-micro-prof-010",
+        "question": "S. aureus'ta IgG Fc'sine bağlanan protein?",
+        "answer": "Protein A.",
+        "difficulty": "medium",
+        "tags": [
+          "S. aureus"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-011",
+        "question": "MRSA direncinden sorumlu gen?",
+        "answer": "mecA geni.",
+        "difficulty": "hard",
+        "tags": [
+          "MRSA"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-012",
+        "question": "S. aureus gıda zehirlenmesi neden bu kadar hızlı başlar?",
+        "answer": "Pre-formed enterotoksin alımı nedeniyle.",
+        "difficulty": "medium",
+        "tags": [
+          "Toksin"
+        ]
+      }
     ]
   },
   {
@@ -41,8 +98,24 @@
     "topic": "Gram Negatif Koklar",
     "sub_topic": "Neisseria meningitidis",
     "flashcards": [
-      { "id": "fc-micro-prof-040", "question": "N. meningitidis'te nazofarenks kolonizasyonunu sağlayan faktör?", "answer": "Pili.", "difficulty": "medium", "tags": ["Neisseria"] },
-      { "id": "fc-micro-prof-041", "question": "Meningokokseminin ağır tablosundan sorumlu endotoksin?", "answer": "Lipooligosakkarid (LOS).", "difficulty": "medium", "tags": ["Neisseria"] }
+      {
+        "id": "fc-micro-prof-040",
+        "question": "N. meningitidis'te nazofarenks kolonizasyonunu sağlayan faktör?",
+        "answer": "Pili.",
+        "difficulty": "medium",
+        "tags": [
+          "Neisseria"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-041",
+        "question": "Meningokokseminin ağır tablosundan sorumlu endotoksin?",
+        "answer": "Lipooligosakkarid (LOS).",
+        "difficulty": "medium",
+        "tags": [
+          "Neisseria"
+        ]
+      }
     ]
   },
   {
@@ -52,8 +125,24 @@
     "topic": "Mikobakteriler",
     "sub_topic": "Mycobacterium tuberculosis",
     "flashcards": [
-      { "id": "fc-micro-prof-050", "question": "Fagozom-lizozom birleşmesini engelleyen TBC faktörü?", "answer": "Sulfatidler.", "difficulty": "hard", "tags": ["TBC"] },
-      { "id": "fc-micro-prof-051", "question": "TBC tanısında altın standart besiyeri?", "answer": "Löwenstein-Jensen.", "difficulty": "easy", "tags": ["TBC"] }
+      {
+        "id": "fc-micro-prof-050",
+        "question": "Fagozom-lizozom birleşmesini engelleyen TBC faktörü?",
+        "answer": "Sulfatidler.",
+        "difficulty": "hard",
+        "tags": [
+          "TBC"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-051",
+        "question": "TBC tanısında altın standart besiyeri?",
+        "answer": "Löwenstein-Jensen.",
+        "difficulty": "easy",
+        "tags": [
+          "TBC"
+        ]
+      }
     ]
   },
   {
@@ -63,8 +152,24 @@
     "topic": "Protozoonlar",
     "sub_topic": "Plasmodium türleri",
     "flashcards": [
-      { "id": "fc-micro-prof-060", "question": "Sadece retikülositleri enfekte eden sıtma etkenleri?", "answer": "P. vivax ve P. ovale.", "difficulty": "medium", "tags": ["Sıtma"] },
-      { "id": "fc-micro-prof-061", "question": "Serebral sıtmanın temel nedeni?", "answer": "Sekestrasyon.", "difficulty": "hard", "tags": ["Sıtma"] }
+      {
+        "id": "fc-micro-prof-060",
+        "question": "Sadece retikülositleri enfekte eden sıtma etkenleri?",
+        "answer": "P. vivax ve P. ovale.",
+        "difficulty": "medium",
+        "tags": [
+          "Sıtma"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-061",
+        "question": "Serebral sıtmanın temel nedeni?",
+        "answer": "Sekestrasyon.",
+        "difficulty": "hard",
+        "tags": [
+          "Sıtma"
+        ]
+      }
     ]
   },
   {
@@ -74,10 +179,43 @@
     "topic": "Enterobacteriaceae",
     "sub_topic": "Salmonella ve Shigella",
     "flashcards": [
-      { "id": "fc-micro-prof-070", "question": "Salmonella Typhi'de fagositozu engelleyen ve taşıyıcılığı belirleyen antijen?", "answer": "Vi antijeni (Kapsül).", "difficulty": "medium", "tags": ["Salmonella"] },
-      { "id": "fc-micro-prof-071", "question": "Shigella'nın hücre içine girişini sağlayan proteinler?", "answer": "Ipa proteinleri (İnvazyon plazmidi antijenleri).", "difficulty": "hard", "tags": ["Shigella"] },
-      { "id": "fc-micro-prof-072", "question": "Hemolitik Üremik Sendrom (HÜS) ile en sık ilişkili Shigella tipi?", "answer": "Shigella dysenteriae tip 1 (Shiga toksin nedeniyle).", "difficulty": "medium", "tags": ["Shigella", "HÜS"] },
-      { "id": "fc-micro-prof-073", "question": "Widal testi hangi hastalığın tanısında kullanılır?", "answer": "Tifo (Enterik ateş).", "difficulty": "easy", "tags": ["Tifo"] }
+      {
+        "id": "fc-micro-prof-070",
+        "question": "Salmonella Typhi'de fagositozu engelleyen ve taşıyıcılığı belirleyen antijen?",
+        "answer": "Vi antijeni (Kapsül).",
+        "difficulty": "medium",
+        "tags": [
+          "Salmonella"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-071",
+        "question": "Shigella'nın hücre içine girişini sağlayan proteinler?",
+        "answer": "Ipa proteinleri (İnvazyon plazmidi antijenleri).",
+        "difficulty": "hard",
+        "tags": [
+          "Shigella"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-072",
+        "question": "Hemolitik Üremik Sendrom (HÜS) ile en sık ilişkili Shigella tipi?",
+        "answer": "Shigella dysenteriae tip 1 (Shiga toksin nedeniyle).",
+        "difficulty": "medium",
+        "tags": [
+          "Shigella",
+          "HÜS"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-073",
+        "question": "Widal testi hangi hastalığın tanısında kullanılır?",
+        "answer": "Tifo (Enterik ateş).",
+        "difficulty": "easy",
+        "tags": [
+          "Tifo"
+        ]
+      }
     ],
     "tus_spots": [
       "Salmonella H2S üretir (Shigella üretmez).",
@@ -93,10 +231,42 @@
     "topic": "RNA Virüsleri",
     "sub_topic": "Hepatit Virüsleri",
     "flashcards": [
-      { "id": "fc-micro-prof-080", "question": "Hepatit B enfeksiyonunda iyileşmeyi ve bağışıklığı gösteren temel gösterge?", "answer": "Anti-HBs pozitifliği.", "difficulty": "easy", "tags": ["HBV"] },
-      { "id": "fc-micro-prof-081", "question": "Pencere döneminde (window period) pozitif bulunan tek gösterge?", "answer": "Anti-HBc IgM.", "difficulty": "medium", "tags": ["HBV"] },
-      { "id": "fc-micro-prof-082", "question": "Gebelikte mortalite riski (%20) en yüksek olan hepatit virüsü?", "answer": "Hepatit E virüsü (HEV).", "difficulty": "medium", "tags": ["HEV"] },
-      { "id": "fc-micro-prof-083", "question": "Kronikleşme riski (%80) en yüksek olan hepatit virüsü?", "answer": "Hepatit C virüsü (HCV).", "difficulty": "easy", "tags": ["HCV"] }
+      {
+        "id": "fc-micro-prof-080",
+        "question": "Hepatit B enfeksiyonunda iyileşmeyi ve bağışıklığı gösteren temel gösterge?",
+        "answer": "Anti-HBs pozitifliği.",
+        "difficulty": "easy",
+        "tags": [
+          "HBV"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-081",
+        "question": "Pencere döneminde (window period) pozitif bulunan tek gösterge?",
+        "answer": "Anti-HBc IgM.",
+        "difficulty": "medium",
+        "tags": [
+          "HBV"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-082",
+        "question": "Gebelikte mortalite riski (%20) en yüksek olan hepatit virüsü?",
+        "answer": "Hepatit E virüsü (HEV).",
+        "difficulty": "medium",
+        "tags": [
+          "HEV"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-083",
+        "question": "Kronikleşme riski (%80) en yüksek olan hepatit virüsü?",
+        "answer": "Hepatit C virüsü (HCV).",
+        "difficulty": "easy",
+        "tags": [
+          "HCV"
+        ]
+      }
     ],
     "tus_spots": [
       "HBsAg: Enfeksiyon varlığını gösterir.",
@@ -112,9 +282,33 @@
     "topic": "Sistemik Mantarlar",
     "sub_topic": "Candida ve Aspergillus",
     "flashcards": [
-      { "id": "fc-micro-prof-090", "question": "Serumda 'Germ tüp' testi pozitifliği hangi mantar için tanısaldır?", "answer": "Candida albicans.", "difficulty": "easy", "tags": ["Candida"] },
-      { "id": "fc-micro-prof-091", "question": "Bağışıklığı baskılanmış hastalarda dar açılı dallanma yapan ve galaktomannan testi ile tanınan mantar?", "answer": "Aspergillus fumigatus.", "difficulty": "medium", "tags": ["Aspergillus"] },
-      { "id": "fc-micro-prof-092", "question": "Geniş açılı (90 derece) dallanan ve diyabetiklerde rinoserebral enfeksiyon yapan mantar?", "answer": "Rhyzopus veya Mucor (Zygomycetes).", "difficulty": "medium", "tags": ["Mucor"] }
+      {
+        "id": "fc-micro-prof-090",
+        "question": "Serumda 'Germ tüp' testi pozitifliği hangi mantar için tanısaldır?",
+        "answer": "Candida albicans.",
+        "difficulty": "easy",
+        "tags": [
+          "Candida"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-091",
+        "question": "Bağışıklığı baskılanmış hastalarda dar açılı dallanma yapan ve galaktomannan testi ile tanınan mantar?",
+        "answer": "Aspergillus fumigatus.",
+        "difficulty": "medium",
+        "tags": [
+          "Aspergillus"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-092",
+        "question": "Geniş açılı (90 derece) dallanan ve diyabetiklerde rinoserebral enfeksiyon yapan mantar?",
+        "answer": "Rhyzopus veya Mucor (Zygomycetes).",
+        "difficulty": "medium",
+        "tags": [
+          "Mucor"
+        ]
+      }
     ],
     "tus_spots": [
       "C. albicans mısır unlu Tween 80 besiyerinde klamidospor yapar.",
@@ -130,10 +324,42 @@
     "topic": "Helmintler",
     "sub_topic": "Nematodlar ve Sestodlar",
     "flashcards": [
-      { "id": "fc-micro-prof-100", "question": "Dünya genelinde en sık görülen bağırsak helminti?", "answer": "Ascaris lumbricoides.", "difficulty": "easy", "tags": ["Ascaris"] },
-      { "id": "fc-micro-prof-101", "question": "Perianal bölgede kaşıntı yapan ve seloteyp (selofan bant) yöntemiyle tanısı konan parazit?", "answer": "Enterobius vermicularis (Kıl kurdu).", "difficulty": "easy", "tags": ["Kılkurdu"] },
-      { "id": "fc-micro-prof-102", "question": "Karaciğer kistik hidatiğine en sık neden olan parazit?", "answer": "Echinococcus granulosus.", "difficulty": "easy", "tags": ["Hidatik Kist"] },
-      { "id": "fc-micro-prof-103", "question": "Çiğ balık tüketimi ile bulaşan ve B12 vitamini eksikliğine neden olan parazit?", "answer": "Diphyllobothrium latum.", "difficulty": "medium", "tags": ["D. latum"] }
+      {
+        "id": "fc-micro-prof-100",
+        "question": "Dünya genelinde en sık görülen bağırsak helminti?",
+        "answer": "Ascaris lumbricoides.",
+        "difficulty": "easy",
+        "tags": [
+          "Ascaris"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-101",
+        "question": "Perianal bölgede kaşıntı yapan ve seloteyp (selofan bant) yöntemiyle tanısı konan parazit?",
+        "answer": "Enterobius vermicularis (Kıl kurdu).",
+        "difficulty": "easy",
+        "tags": [
+          "Kılkurdu"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-102",
+        "question": "Karaciğer kistik hidatiğine en sık neden olan parazit?",
+        "answer": "Echinococcus granulosus.",
+        "difficulty": "easy",
+        "tags": [
+          "Hidatik Kist"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-103",
+        "question": "Çiğ balık tüketimi ile bulaşan ve B12 vitamini eksikliğine neden olan parazit?",
+        "answer": "Diphyllobothrium latum.",
+        "difficulty": "medium",
+        "tags": [
+          "D. latum"
+        ]
+      }
     ],
     "tus_spots": [
       "Ascaris ve Strongyloides akciğer geçişi (Loeffler sendromu) yapar.",
@@ -142,16 +368,102 @@
       "Şistozomlar deri yoluyla (serkerler) bulaşır."
     ]
   },
-  { "id": "micro-prof-mixed-1", "subject": "Mikrobiyoloji", "chapter": "Karma", "topic": "Klinik Önemli Sorular", "flashcards": [
-    { "id": "fc-micro-prof-110", "question": "Vajinal akıntıda 'Clue cell' (İpucu hücresi) görülmesi?", "answer": "Gardnerella vaginalis (Bakteriyel Vajinozis).", "difficulty": "medium", "tags": ["Vajinozis"] },
-    { "id": "fc-micro-prof-111", "question": "Boğmaca tanısında kullanılan özel besiyeri?", "answer": "Bordet-Gengou veya Regan-Lowe.", "difficulty": "medium", "tags": ["Boğmaca"] },
-    { "id": "fc-micro-prof-112", "question": "Fare ısırığı sonrası gelişen hastalık etkeni?", "answer": "Spirillum minus veya Streptobacillus moniliformis.", "difficulty": "hard", "tags": ["Fare Isırığı"] },
-    { "id": "fc-micro-prof-113", "question": "Lyme hastalığı etkeni ve bulaştıran kene?", "answer": "Borrelia burgdorferi - Ixodes cinsi kene.", "difficulty": "medium", "tags": ["Lyme"] },
-    { "id": "fc-micro-prof-114", "question": "Q ateşi etkeni ve en önemli özelliği?", "answer": "Coxiella burnetii - Pastörizasyona dirençli olması.", "difficulty": "hard", "tags": ["Q Ateşi"] },
-    { "id": "fc-micro-prof-115", "question": "Atipik pnömoni etkeni olup hücre duvarı içermeyen bakteri?", "answer": "Mycoplasma pneumoniae.", "difficulty": "easy", "tags": ["M. pneumoniae"] },
-    { "id": "fc-micro-prof-116", "question": "Donovanoz (Granuloma inguinale) etkeni?", "answer": "Klebsiella granulomatis.", "difficulty": "hard", "tags": ["Donovanoz"] },
-    { "id": "fc-micro-prof-117", "question": "Kedi tırmığı hastalığı etkeni?", "answer": "Bartonella henselae.", "difficulty": "easy", "tags": ["Kedi Tırmığı"] },
-    { "id": "fc-micro-prof-118", "question": "Epiglottit ve menenjitin çocukluk çağındaki (modern aşı öncesi) en sık etkeni?", "answer": "Haemophilus influenzae tip b (Hib).", "difficulty": "medium", "tags": ["Hib"] },
-    { "id": "fc-micro-prof-119", "question": "Bulaşıcı süngerimsi ensefalopatilerin (Prion) temel özelliği?", "answer": "Nükleik asit içermeyen, yanlış katlanmış proteinler olmaları.", "difficulty": "medium", "tags": ["Prion"] }
-  ]}
+  {
+    "id": "micro-prof-mixed-1",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Karma",
+    "topic": "Klinik Önemli Sorular",
+    "flashcards": [
+      {
+        "id": "fc-micro-prof-110",
+        "question": "Vajinal akıntıda 'Clue cell' (İpucu hücresi) görülmesi?",
+        "answer": "Gardnerella vaginalis (Bakteriyel Vajinozis).",
+        "difficulty": "medium",
+        "tags": [
+          "Vajinozis"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-111",
+        "question": "Boğmaca tanısında kullanılan özel besiyeri?",
+        "answer": "Bordet-Gengou veya Regan-Lowe.",
+        "difficulty": "medium",
+        "tags": [
+          "Boğmaca"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-112",
+        "question": "Fare ısırığı sonrası gelişen hastalık etkeni?",
+        "answer": "Spirillum minus veya Streptobacillus moniliformis.",
+        "difficulty": "hard",
+        "tags": [
+          "Fare Isırığı"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-113",
+        "question": "Lyme hastalığı etkeni ve bulaştıran kene?",
+        "answer": "Borrelia burgdorferi - Ixodes cinsi kene.",
+        "difficulty": "medium",
+        "tags": [
+          "Lyme"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-114",
+        "question": "Q ateşi etkeni ve en önemli özelliği?",
+        "answer": "Coxiella burnetii - Pastörizasyona dirençli olması.",
+        "difficulty": "hard",
+        "tags": [
+          "Q Ateşi"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-115",
+        "question": "Atipik pnömoni etkeni olup hücre duvarı içermeyen bakteri?",
+        "answer": "Mycoplasma pneumoniae.",
+        "difficulty": "easy",
+        "tags": [
+          "M. pneumoniae"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-116",
+        "question": "Donovanoz (Granuloma inguinale) etkeni?",
+        "answer": "Klebsiella granulomatis.",
+        "difficulty": "hard",
+        "tags": [
+          "Donovanoz"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-117",
+        "question": "Kedi tırmığı hastalığı etkeni?",
+        "answer": "Bartonella henselae.",
+        "difficulty": "easy",
+        "tags": [
+          "Kedi Tırmığı"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-118",
+        "question": "Epiglottit ve menenjitin çocukluk çağındaki (modern aşı öncesi) en sık etkeni?",
+        "answer": "Haemophilus influenzae tip b (Hib).",
+        "difficulty": "medium",
+        "tags": [
+          "Hib"
+        ]
+      },
+      {
+        "id": "fc-micro-prof-119",
+        "question": "Bulaşıcı süngerimsi ensefalopatilerin (Prion) temel özelliği?",
+        "answer": "Nükleik asit içermeyen, yanlış katlanmış proteinler olmaları.",
+        "difficulty": "medium",
+        "tags": [
+          "Prion"
+        ]
+      }
+    ]
+  }
 ]

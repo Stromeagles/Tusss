@@ -65,7 +65,8 @@
           "Piknoz",
           "Karyoreksis",
           "Karyolizis",
-          "Hepsi görülebilir"
+          "Hepsi görülebilir",
+          "E) Hiçbiri"
         ],
         "correct_answer": "Karyolizis",
         "explanation": "24 saatlik enfarktüste koagülatif nekroz görülür; nükleer değişiklikler piknoz → karyoreksis → karyolizis şeklinde sıralı gelişir; 24. saatte karyolizis hakimdir.",
@@ -139,7 +140,8 @@
           "Koagülatif nekroz",
           "Yağ nekrozu ile saponifikasyon",
           "Kazeöz nekroz",
-          "Likefikasyon nekrozu"
+          "Likefikasyon nekrozu",
+          "E) Hiçbiri"
         ],
         "correct_answer": "Yağ nekrozu ile saponifikasyon",
         "explanation": "Pankreatik lipazlar peripankreatik yağı parçalar; serbest yağ asitleri kalsiyumla sabunlaşır (saponifikasyon). Bu kalsiyum tuzları görüntülemede radyoopak görünür.",
@@ -202,7 +204,8 @@
           "Koagülatif nekroz",
           "Apoptoz — kaspaz aracılı programlı ölüm",
           "Likefikasyon nekrozu",
-          "Otofaji"
+          "Otofaji",
+          "E) Hiçbiri"
         ],
         "correct_answer": "Apoptoz — kaspaz aracılı programlı ölüm",
         "explanation": "Apoptotik cisimcikler, membranı bütün kalmış, organel içeren hücre fragmanlarıdır. Fagositler tarafından temizlenirler. İnflamasyon oluşmaması apoptozun temel özelliğidir; nekrozdan bu şekilde ayrılır.",
@@ -266,7 +269,8 @@
           "Kronik granülomatöz hastalık",
           "Lökosit adhezyon defisiti (LAD)",
           "Chédiak-Higashi sendromu",
-          "Miyeloperoksidaz eksikliği"
+          "Miyeloperoksidaz eksikliği",
+          "E) Hiçbiri"
         ],
         "correct_answer": "Lökosit adhezyon defisiti (LAD)",
         "explanation": "LAD'da CD18 (β2-integrin) eksikliği nedeniyle nötrofiller endotele yapışamaz ve hasara göç edemez. Kanda nötrofili vardır (göç edemeyen nötrofiller kanda birikir). Gecikmiş göbek düşmesi LAD'ın klasik klinik bulgusudur.",
@@ -330,7 +334,8 @@
           "Tüberküloz",
           "Sarkoidoz",
           "Lenfoma",
-          "Wegener granülomatozu"
+          "Wegener granülomatozu",
+          "E) Hiçbiri"
         ],
         "correct_answer": "Sarkoidoz",
         "explanation": "Sarkoidozun klasik triadı: bilateral hiler lenfadenopati + eritema nodozum + üveit (Löfgren sendromu). Non-kazeifiye granülom ve yüksek ACE tanıyı destekler. Tüberkülozda kazeifiye granülom beklenir.",
@@ -394,7 +399,8 @@
           "Tek somatik RB mutasyonu yeterlidir",
           "Germline RB mutasyonu + ikinci somatik mutasyon (Knudson iki vuruş hipotezi)",
           "RAS onkogeninin aktivasyonu",
-          "p53 kaybı"
+          "p53 kaybı",
+          "E) Hiçbiri"
         ],
         "correct_answer": "Germline RB mutasyonu + ikinci somatik mutasyon (Knudson iki vuruş hipotezi)",
         "explanation": "Herediter retinoblastomada hasta zaten bir mutant RB aleli ile doğar (germline). Retina hücrelerinden birinde ikinci RB alelinin somatik mutasyonu olunca tümör gelişir. Bu nedenle bilateral, erken yaşta olur. Sporadik vakada her iki vuruş da somatiktir; unilateral ve geç yaşta görülür.",

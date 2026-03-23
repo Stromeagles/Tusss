@@ -18,6 +18,7 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
   final _dataService = DataService();
   final Map<String, int> _cardCounts = {};
   bool _loading = true;
+  SubjectCategory _category = SubjectCategory.temel;
 
   @override
   void initState() {
@@ -28,6 +29,10 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
   Future<void> _loadCounts() async {
     int total = 0;
     for (final module in SubjectRegistry.modules) {
+      if (module.assetPaths.isEmpty) {
+        _cardCounts[module.id] = 0;
+        continue;
+      }
       final cards = await _dataService.loadFlashcards(subjectId: module.id);
       _cardCounts[module.id] = cards.length;
       total += cards.length;
@@ -35,6 +40,12 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
     _cardCounts['__all__'] = total;
     if (mounted) setState(() => _loading = false);
   }
+
+  List<SubjectModule> get _filteredModules =>
+      SubjectRegistry.byCategory(_category);
+
+  int get _categoryTotal => _filteredModules.fold(
+      0, (sum, m) => sum + (_cardCounts[m.id] ?? 0));
 
   @override
   Widget build(BuildContext context) {
@@ -66,6 +77,14 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
           : ListView(
               padding: const EdgeInsets.fromLTRB(20, 8, 20, 32),
               children: [
+                // ── Temel / Klinik Segmented Control ──
+                _CategorySegment(
+                  selected: _category,
+                  isDark: isDark,
+                  onChanged: (c) => setState(() => _category = c),
+                ),
+                const SizedBox(height: 20),
+
                 Text(
                   'Ders Seç',
                   style: GoogleFonts.inter(
@@ -77,15 +96,26 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
                 ),
                 const SizedBox(height: 12),
 
-                // Tüm Kartlar
+                // Kategorideki Tüm Kartlar
                 _SubjectCard(
-                  label: 'Tüm Kartlar',
-                  subtitle: 'Bütün branşları birlikte çalış',
+                  label: _category == SubjectCategory.temel
+                      ? 'Tüm Temel Kartlar'
+                      : 'Tüm Klinik Kartlar',
+                  subtitle: _category == SubjectCategory.temel
+                      ? 'Temel bilimleri birlikte çalış'
+                      : 'Klinik bilimleri birlikte çalış',
                   icon: Icons.auto_awesome_motion_rounded,
                   color: AppTheme.cyan,
-                  cardCount: _cardCounts['__all__'] ?? 0,
+                  cardCount: _categoryTotal,
                   isDark: isDark,
-                  onTap: () => _openFlashcards(null),
+                  onTap: () {
+                    final ids = _filteredModules
+                        .where((m) => m.assetPaths.isNotEmpty)
+                        .map((m) => m.id)
+                        .toList();
+                    if (ids.isEmpty) return;
+                    _openFlashcards(null, subjectIds: ids);
+                  },
                 ),
                 const SizedBox(height: 12),
 
@@ -100,27 +130,122 @@ class _FlashcardSubjectScreenState extends State<FlashcardSubjectScreen> {
                 ),
                 const SizedBox(height: 12),
 
-                ...SubjectRegistry.modules.map((module) => Padding(
-                      padding: const EdgeInsets.only(bottom: 12),
+                ..._filteredModules.map((module) {
+                  final count = _cardCounts[module.id] ?? 0;
+                  final hasContent = module.assetPaths.isNotEmpty;
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 12),
+                    child: Opacity(
+                      opacity: hasContent ? 1.0 : 0.45,
                       child: _SubjectCard(
                         label: module.name,
-                        subtitle: module.shortLabel,
+                        subtitle: hasContent ? module.shortLabel : 'Yakında',
                         icon: module.icon,
                         color: module.color,
-                        cardCount: _cardCounts[module.id] ?? 0,
+                        cardCount: count,
                         isDark: isDark,
-                        onTap: () => _openFlashcards(module.id),
+                        onTap: hasContent ? () => _openFlashcards(module.id) : () {},
                       ),
-                    )),
+                    ),
+                  );
+                }),
               ],
             ),
     );
   }
 
-  Future<void> _openFlashcards(String? subjectId) async {
+  Future<void> _openFlashcards(String? subjectId, {List<String>? subjectIds}) async {
     await Navigator.push(
       context,
-      AppRoute.slideUp(FlashcardScreen(subjectId: subjectId, isPreview: true)),
+      AppRoute.slideUp(FlashcardScreen(
+        subjectId: subjectId,
+        subjectIds: subjectIds,
+        isPreview: true,
+      )),
+    );
+  }
+}
+
+/// Temel / Klinik segmented control — reusable widget
+class _CategorySegment extends StatelessWidget {
+  final SubjectCategory selected;
+  final bool isDark;
+  final ValueChanged<SubjectCategory> onChanged;
+
+  const _CategorySegment({
+    required this.selected,
+    required this.isDark,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(4),
+      decoration: BoxDecoration(
+        color: isDark
+            ? Colors.white.withValues(alpha: 0.05)
+            : Colors.black.withValues(alpha: 0.04),
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(
+          color: isDark
+              ? Colors.white.withValues(alpha: 0.08)
+              : Colors.black.withValues(alpha: 0.06),
+        ),
+      ),
+      child: Row(
+        children: SubjectCategory.values.map((cat) {
+          final isSelected = cat == selected;
+          return Expanded(
+            child: GestureDetector(
+              onTap: () => onChanged(cat),
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 250),
+                curve: Curves.easeInOut,
+                padding: const EdgeInsets.symmetric(vertical: 12),
+                decoration: BoxDecoration(
+                  color: isSelected
+                      ? AppTheme.cyan.withValues(alpha: 0.15)
+                      : Colors.transparent,
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(
+                    color: isSelected
+                        ? AppTheme.cyan.withValues(alpha: 0.3)
+                        : Colors.transparent,
+                  ),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      cat == SubjectCategory.temel
+                          ? Icons.science_outlined
+                          : Icons.local_hospital_outlined,
+                      size: 18,
+                      color: isSelected
+                          ? AppTheme.cyan
+                          : (isDark ? Colors.white38 : Colors.black38),
+                    ),
+                    const SizedBox(width: 8),
+                    Text(
+                      cat == SubjectCategory.temel
+                          ? 'Temel Bilimler'
+                          : 'Klinik Bilimler',
+                      style: GoogleFonts.inter(
+                        fontSize: 13,
+                        fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
+                        color: isSelected
+                            ? AppTheme.cyan
+                            : (isDark ? Colors.white54 : Colors.black45),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          );
+        }).toList(),
+      ),
     );
   }
 }

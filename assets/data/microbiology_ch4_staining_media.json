@@ -98,7 +98,8 @@
           "Lowenstein-Jensen",
           "Thayer-Martin",
           "Bordet-Gengau",
-          "TCBS"
+          "TCBS",
+          "E) Hiçbiri"
         ],
         "correct_answer": "Bordet-Gengau",
         "explanation": "Bordatella pertussis (Boğmaca) üretmek için Bordet-Gengau veya Regan-Lowe besiyerleri kullanılır.",

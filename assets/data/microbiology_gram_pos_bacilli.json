@@ -39,7 +39,8 @@
           "B. cereus",
           "S. aureus",
           "B. anthracis",
-          "L. monocytogenes"
+          "L. monocytogenes",
+          "E) Hiçbiri"
         ],
         "correct_answer": "B. anthracis",
         "explanation": "Hayvan teması öyküsü, ağrısız siyah eskar (püstül malin) ve gram pozitif hareketsiz basiller şarbonun deri formudur.",
@@ -88,7 +89,8 @@
           "C. botulinum",
           "C. tetani",
           "S. pyogenes",
-          "C. difficile"
+          "C. difficile",
+          "E) Hiçbiri"
         ],
         "correct_answer": "C. tetani",
         "explanation": "Yara öyküsü, trismus (çene kilidi) ve opistotonus tetanozun klasik triadıdır.",
@@ -137,7 +139,8 @@
           "Enfeksiyöz Mononükleoz",
           "Difteri",
           "Farenjit",
-          "Kaba kulak"
+          "Kaba kulak",
+          "E) Hiçbiri"
         ],
         "correct_answer": "Difteri",
         "explanation": "Kaldırılınca kanayan psödomembran ve boğa boynu görünümü C. diphtheriae (Difteri) için tipiktir.",

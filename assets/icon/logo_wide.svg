@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Cyan glow gradient for shield -->
+    <radialGradient id="shieldGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#00D4FF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Shield body gradient -->
+    <linearGradient id="shieldBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E2A3A"/>
+      <stop offset="50%" stop-color="#151D2B"/>
+      <stop offset="100%" stop-color="#0D1420"/>
+    </linearGradient>
+
+    <!-- Shield border gradient -->
+    <linearGradient id="shieldBorder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="50%" stop-color="#00B8D4"/>
+      <stop offset="100%" stop-color="#0088A3"/>
+    </linearGradient>
+
+    <!-- Book glow -->
+    <radialGradient id="bookGlow" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#00D4FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Light rays filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Strong glow for book -->
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Text glow -->
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle text shadow -->
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Outer ambient glow -->
+    <radialGradient id="ambientGlow" cx="30%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- AI accent gradient -->
+    <linearGradient id="aiAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+
+    <!-- Separator line gradient -->
+    <linearGradient id="separatorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00D4FF" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#A855F7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background (transparent - koyu temada kullanilacak) -->
+  <!-- Ambient glow behind shield -->
+  <ellipse cx="240" cy="315" rx="260" ry="260" fill="url(#ambientGlow)"/>
+
+  <!-- ==================== SHIELD ICON (Left Side) ==================== -->
+  <g transform="translate(240, 315)">
+    <!-- Outer glow ring -->
+    <ellipse cx="0" cy="0" rx="150" ry="150" fill="url(#shieldGlow)"/>
+
+    <!-- Shield shape - outer (border) -->
+    <path d="M0,-130 C55,-130 100,-110 120,-95 L120,-10 C120,55 70,105 0,135 C-70,105 -120,55 -120,-10 L-120,-95 C-100,-110 -55,-130 0,-130 Z"
+          fill="url(#shieldBorder)" opacity="0.9"/>
+
+    <!-- Shield shape - inner (body) -->
+    <path d="M0,-122 C52,-122 94,-104 113,-90 L113,-10 C113,50 66,98 0,127 C-66,98 -113,50 -113,-10 L-113,-90 C-94,-104 -52,-122 0,-122 Z"
+          fill="url(#shieldBody)"/>
+
+    <!-- Inner shield subtle border -->
+    <path d="M0,-122 C52,-122 94,-104 113,-90 L113,-10 C113,50 66,98 0,127 C-66,98 -113,50 -113,-10 L-113,-90 C-94,-104 -52,-122 0,-122 Z"
+          fill="none" stroke="#00D4FF" stroke-width="1" opacity="0.15"/>
+
+    <!-- Light rays from book -->
+    <g opacity="0.25" filter="url(#glow)">
+      <line x1="0" y1="-10" x2="-80" y2="-80" stroke="#00D4FF" stroke-width="1.5" opacity="0.4"/>
+      <line x1="0" y1="-10" x2="80" y2="-80" stroke="#00D4FF" stroke-width="1.5" opacity="0.4"/>
+      <line x1="0" y1="-10" x2="-95" y2="-30" stroke="#00D4FF" stroke-width="1" opacity="0.3"/>
+      <line x1="0" y1="-10" x2="95" y2="-30" stroke="#00D4FF" stroke-width="1" opacity="0.3"/>
+      <line x1="0" y1="-10" x2="-70" y2="50" stroke="#00D4FF" stroke-width="1" opacity="0.2"/>
+      <line x1="0" y1="-10" x2="70" y2="50" stroke="#00D4FF" stroke-width="1" opacity="0.2"/>
+      <line x1="0" y1="-10" x2="0" y2="-90" stroke="#00D4FF" stroke-width="1.5" opacity="0.35"/>
+    </g>
+
+    <!-- Book glow aura -->
+    <ellipse cx="0" cy="-5" rx="65" ry="55" fill="url(#bookGlow)" opacity="0.6"/>
+
+    <!-- Open Book -->
+    <g filter="url(#strongGlow)" transform="translate(0, -5)">
+      <!-- Left page -->
+      <path d="M-5,-35 L-5,30 Q-25,25 -48,30 L-48,-25 Q-25,-30 -5,-35 Z"
+            fill="#00E5FF" opacity="0.85"/>
+      <!-- Right page -->
+      <path d="M5,-35 L5,30 Q25,25 48,30 L48,-25 Q25,-30 5,-35 Z"
+            fill="#00F0FF" opacity="0.9"/>
+      <!-- Spine -->
+      <line x1="0" y1="-38" x2="0" y2="32" stroke="#00D4FF" stroke-width="2.5" opacity="0.9"/>
+      <!-- Page lines left -->
+      <line x1="-15" y1="-15" x2="-38" y2="-12" stroke="#0D1117" stroke-width="1.2" opacity="0.3"/>
+      <line x1="-15" y1="-3" x2="-38" y2="0" stroke="#0D1117" stroke-width="1.2" opacity="0.3"/>
+      <line x1="-15" y1="9" x2="-38" y2="12" stroke="#0D1117" stroke-width="1.2" opacity="0.3"/>
+      <!-- Page lines right -->
+      <line x1="15" y1="-15" x2="38" y2="-12" stroke="#0D1117" stroke-width="1.2" opacity="0.3"/>
+      <line x1="15" y1="-3" x2="38" y2="0" stroke="#0D1117" stroke-width="1.2" opacity="0.3"/>
+      <line x1="15" y1="9" x2="38" y2="12" stroke="#0D1117" stroke-width="1.2" opacity="0.3"/>
+      <!-- Book base/cover hints -->
+      <path d="M-50,-27 L-50,32 Q-25,27 -5,32" fill="none" stroke="#00B8D4" stroke-width="2" opacity="0.5"/>
+      <path d="M50,-27 L50,32 Q25,27 5,32" fill="none" stroke="#00B8D4" stroke-width="2" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- ==================== SEPARATOR ==================== -->
+  <line x1="430" y1="200" x2="430" y2="430" stroke="url(#separatorGrad)" stroke-width="1.5"/>
+
+  <!-- ==================== TEXT (Right Side) ==================== -->
+  <g transform="translate(480, 280)">
+    <!-- Main title: AsisTus -->
+    <text font-family="'Inter', 'Segoe UI', -apple-system, sans-serif" font-weight="700" font-size="96" fill="#F0F6FC" letter-spacing="-2" filter="url(#textShadow)">
+      <tspan>Asis</tspan><tspan fill="#00D4FF">Tus</tspan>
+    </text>
+
+    <!-- AI accent underline -->
+    <rect x="2" y="80" width="340" height="3" rx="1.5" fill="url(#aiAccent)" opacity="0.6"/>
+
+    <!-- Subtitle -->
+    <text y="125" font-family="'Inter', 'Segoe UI', -apple-system, sans-serif" font-weight="400" font-size="26" fill="#7B8BA3" letter-spacing="4">
+      TUS HAZIRLIK ASISTANI
+    </text>
+
+    <!-- AI badge -->
+    <g transform="translate(0, 155)">
+      <rect x="0" y="0" width="180" height="32" rx="16" fill="none" stroke="url(#aiAccent)" stroke-width="1" opacity="0.5"/>
+      <text x="90" y="21" font-family="'Inter', 'Segoe UI', -apple-system, sans-serif" font-weight="500" font-size="13" fill="#00D4FF" text-anchor="middle" letter-spacing="2" opacity="0.8">
+        AI POWERED
+      </text>
+      <!-- Small sparkle icon -->
+      <g transform="translate(25, 10)" opacity="0.7">
+        <path d="M0,-5 L1.5,0 L0,5 L-1.5,0 Z" fill="#00D4FF" transform="scale(0.8)"/>
+        <path d="M-5,0 L0,1.5 L5,0 L0,-1.5 Z" fill="#00D4FF" transform="scale(0.8)"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== DECORATIVE ELEMENTS ==================== -->
+  <!-- Subtle grid dots pattern (tech feel) -->
+  <g opacity="0.04">
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1" fill="#00D4FF"/>
+    </pattern>
+    <rect x="450" y="160" width="700" height="310" fill="url(#dots)"/>
+  </g>
+
+  <!-- Corner accent lines -->
+  <g opacity="0.12">
+    <line x1="1150" y1="180" x2="1150" y2="220" stroke="#00D4FF" stroke-width="1"/>
+    <line x1="1110" y1="180" x2="1150" y2="180" stroke="#00D4FF" stroke-width="1"/>
+    <line x1="480" y1="450" x2="480" y2="420" stroke="#A855F7" stroke-width="1"/>
+    <line x1="480" y1="450" x2="520" y2="450" stroke="#A855F7" stroke-width="1"/>
+  </g>
+</svg>

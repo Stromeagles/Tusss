@@ -49,7 +49,8 @@
           "Pnömoni",
           "Sekonder Tüberküloz",
           "Sarkoidoz",
-          "Akciğer Kanseri"
+          "Akciğer Kanseri",
+          "E) Hiçbiri"
         ],
         "correct_answer": "Sekonder Tüberküloz",
         "explanation": "Apeks tutulumu, kavite, konstitüsyonel semptomlar ve ARB pozitifliği (aside dirençli basil) reaktivasyon (sekonder) tüberkülozunu gösterir.",

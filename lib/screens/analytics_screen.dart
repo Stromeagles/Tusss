@@ -67,6 +67,7 @@ class _ProgressAnalyticsScreenState extends State<ProgressAnalyticsScreen> {
           color: module.color,
           total: totalAll,
           done: masteredAll,
+          category: module.category,
         ));
       }
     }
@@ -303,6 +304,9 @@ class _ProgressAnalyticsScreenState extends State<ProgressAnalyticsScreen> {
   }
 
   Widget _buildSubjectMastery(bool isDark) {
+    final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
+
     return FutureBuilder<List<_SubjectMasteryData>>(
       future: _masteryFuture,
       builder: (context, snapshot) {
@@ -321,76 +325,116 @@ class _ProgressAnalyticsScreenState extends State<ProgressAnalyticsScreen> {
             padding: const EdgeInsets.symmetric(vertical: 24),
             child: Text(
               'Henüz veri yok — kartlarla çalışmaya başla!',
-              style: GoogleFonts.inter(
-                color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
-                fontSize: 14,
-              ),
+              style: GoogleFonts.inter(color: subColor, fontSize: 14),
             ),
           );
         }
 
+        final temelList = subjects.where((s) => s.category == SubjectCategory.temel).toList();
+        final klinikList = subjects.where((s) => s.category == SubjectCategory.klinik).toList();
+
         return Column(
-          children: subjects.map((s) {
-            return Padding(
-              padding: const EdgeInsets.only(bottom: 16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        s.name,
-                        style: GoogleFonts.inter(
-                          color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      Text(
-                        '${s.done}/${s.total}  %${(s.percent * 100).toInt()}',
-                        style: GoogleFonts.inter(
-                          color: s.color,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w800,
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 8),
-                  Stack(
-                    children: [
-                      Container(
-                        height: 8,
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          color: s.color.withValues(alpha: 0.1),
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                      ),
-                      FractionallySizedBox(
-                        widthFactor: s.percent.clamp(0.0, 1.0),
-                        child: Container(
-                          height: 8,
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              colors: [s.color, s.color.withValues(alpha: 0.6)],
-                            ),
-                            borderRadius: BorderRadius.circular(4),
-                            boxShadow: [
-                              BoxShadow(color: s.color.withValues(alpha: 0.3), blurRadius: 8)
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            );
-          }).toList(),
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // ── Temel Bilimler Performansı ──
+            _buildCategoryHeader(
+              'Temel Bilimler Performansı',
+              Icons.science_outlined,
+              isDark,
+              textColor,
+            ),
+            const SizedBox(height: 12),
+            if (temelList.isEmpty)
+              _buildEmptyCategory('Temel bilimler verisi henüz yok', subColor)
+            else
+              ...temelList.map((s) => _buildMasteryBar(s, isDark)),
+
+            const SizedBox(height: 28),
+
+            // ── Klinik Bilimler Performansı ──
+            _buildCategoryHeader(
+              'Klinik Bilimler Performansı',
+              Icons.local_hospital_outlined,
+              isDark,
+              textColor,
+            ),
+            const SizedBox(height: 12),
+            if (klinikList.isEmpty)
+              _buildEmptyCategory('Klinik bilimler içeriği yakında eklenecek', subColor)
+            else
+              ...klinikList.map((s) => _buildMasteryBar(s, isDark)),
+          ],
         );
       },
+    );
+  }
+
+  Widget _buildCategoryHeader(String title, IconData icon, bool isDark, Color textColor) {
+    return Row(
+      children: [
+        Icon(icon, size: 18, color: AppTheme.cyan.withValues(alpha: 0.8)),
+        const SizedBox(width: 8),
+        Text(title,
+          style: GoogleFonts.inter(
+            color: textColor,
+            fontSize: 15,
+            fontWeight: FontWeight.w800,
+            letterSpacing: -0.2,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildEmptyCategory(String message, Color subColor) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8, left: 4),
+      child: Text(message,
+        style: GoogleFonts.inter(color: subColor.withValues(alpha: 0.6), fontSize: 13, fontStyle: FontStyle.italic)),
+    );
+  }
+
+  Widget _buildMasteryBar(_SubjectMasteryData s, bool isDark) {
+    final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(s.name,
+                style: GoogleFonts.inter(color: subColor, fontSize: 14, fontWeight: FontWeight.w600)),
+              Text('${s.done}/${s.total}  %${(s.percent * 100).toInt()}',
+                style: GoogleFonts.inter(color: s.color, fontSize: 14, fontWeight: FontWeight.w800)),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Stack(
+            children: [
+              Container(
+                height: 8, width: double.infinity,
+                decoration: BoxDecoration(
+                  color: s.color.withValues(alpha: 0.1),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+              ),
+              FractionallySizedBox(
+                widthFactor: s.percent.clamp(0.0, 1.0),
+                child: Container(
+                  height: 8,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(colors: [s.color, s.color.withValues(alpha: 0.6)]),
+                    borderRadius: BorderRadius.circular(4),
+                    boxShadow: [BoxShadow(color: s.color.withValues(alpha: 0.3), blurRadius: 8)],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
@@ -400,12 +444,14 @@ class _SubjectMasteryData {
   final Color color;
   final int total;
   final int done;
+  final SubjectCategory category;
 
   const _SubjectMasteryData({
     required this.name,
     required this.color,
     required this.total,
     required this.done,
+    required this.category,
   });
 
   double get percent => total > 0 ? done / total : 0.0;

@@ -100,7 +100,8 @@
           "NADPH Oksidaz eksikliği",
           "Lökosit Adezyon Defekti (LAD)",
           "Chediak-Higashi",
-          "Kompleman eksikliği"
+          "Kompleman eksikliği",
+          "E) Hiçbiri"
         ],
         "correct_answer": "Lökosit Adezyon Defekti (LAD)",
         "explanation": "LAD'da integrin beta (CD11/18) eksikliği vardır, nötrofiller dokuya göç edemez. Klasik bulgu göbek bağının geç düşmesidir.",

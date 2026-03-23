@@ -18,6 +18,7 @@ class _CaseSubjectScreenState extends State<CaseSubjectScreen> {
   final _dataService = DataService();
   final Map<String, int> _caseCounts = {};
   bool _loading = true;
+  SubjectCategory _category = SubjectCategory.temel;
 
   @override
   void initState() {
@@ -28,6 +29,10 @@ class _CaseSubjectScreenState extends State<CaseSubjectScreen> {
   Future<void> _loadCounts() async {
     int total = 0;
     for (final module in SubjectRegistry.modules) {
+      if (module.assetPaths.isEmpty) {
+        _caseCounts[module.id] = 0;
+        continue;
+      }
       final cases = await _dataService.loadCases(subjectId: module.id);
       _caseCounts[module.id] = cases.length;
       total += cases.length;
@@ -36,10 +41,19 @@ class _CaseSubjectScreenState extends State<CaseSubjectScreen> {
     if (mounted) setState(() => _loading = false);
   }
 
-  Future<void> _openCases(String? subjectId) async {
+  List<SubjectModule> get _filteredModules =>
+      SubjectRegistry.byCategory(_category);
+
+  int get _categoryTotal => _filteredModules.fold(
+      0, (sum, m) => sum + (_caseCounts[m.id] ?? 0));
+
+  Future<void> _openCases(String? subjectId, {List<String>? subjectIds}) async {
     await Navigator.push(
       context,
-      AppRoute.slideUp(CaseStudyScreen(subjectId: subjectId)),
+      AppRoute.slideUp(CaseStudyScreen(
+        subjectId: subjectId,
+        subjectIds: subjectIds,
+      )),
     );
   }
 
@@ -73,6 +87,15 @@ class _CaseSubjectScreenState extends State<CaseSubjectScreen> {
           : ListView(
               padding: const EdgeInsets.fromLTRB(20, 8, 20, 32),
               children: [
+                // ── Temel / Klinik Segmented Control ──
+                // Reuse from flashcard_subject_screen via import
+                _CaseCategorySegment(
+                  selected: _category,
+                  isDark: isDark,
+                  onChanged: (c) => setState(() => _category = c),
+                ),
+                const SizedBox(height: 20),
+
                 Text(
                   'Ders Seç',
                   style: GoogleFonts.inter(
@@ -84,15 +107,26 @@ class _CaseSubjectScreenState extends State<CaseSubjectScreen> {
                 ),
                 const SizedBox(height: 12),
 
-                // Sorular
+                // Kategorideki Tüm Sorular
                 _CaseCard(
-                  label: 'Sorular',
-                  subtitle: 'Bütün branşları birlikte çöz',
+                  label: _category == SubjectCategory.temel
+                      ? 'Tüm Temel Sorular'
+                      : 'Tüm Klinik Sorular',
+                  subtitle: _category == SubjectCategory.temel
+                      ? 'Temel bilimleri birlikte çöz'
+                      : 'Klinik bilimleri birlikte çöz',
                   icon: Icons.quiz_rounded,
                   color: const Color(0xFF79C0FF),
-                  caseCount: _caseCounts['__all__'] ?? 0,
+                  caseCount: _categoryTotal,
                   isDark: isDark,
-                  onTap: () => _openCases(null),
+                  onTap: () {
+                    final ids = _filteredModules
+                        .where((m) => m.assetPaths.isNotEmpty)
+                        .map((m) => m.id)
+                        .toList();
+                    if (ids.isEmpty) return;
+                    _openCases(null, subjectIds: ids);
+                  },
                 ),
                 const SizedBox(height: 12),
 
@@ -107,20 +141,111 @@ class _CaseSubjectScreenState extends State<CaseSubjectScreen> {
                 ),
                 const SizedBox(height: 12),
 
-                ...SubjectRegistry.modules.map((module) => Padding(
-                      padding: const EdgeInsets.only(bottom: 12),
+                ..._filteredModules.map((module) {
+                  final count = _caseCounts[module.id] ?? 0;
+                  final hasContent = module.assetPaths.isNotEmpty;
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 12),
+                    child: Opacity(
+                      opacity: hasContent ? 1.0 : 0.45,
                       child: _CaseCard(
                         label: module.name,
-                        subtitle: module.shortLabel,
+                        subtitle: hasContent ? module.shortLabel : 'Yakında',
                         icon: module.icon,
                         color: module.color,
-                        caseCount: _caseCounts[module.id] ?? 0,
+                        caseCount: count,
                         isDark: isDark,
-                        onTap: () => _openCases(module.id),
+                        onTap: hasContent ? () => _openCases(module.id) : () {},
                       ),
-                    )),
+                    ),
+                  );
+                }),
               ],
             ),
+    );
+  }
+}
+
+/// Temel / Klinik segmented control for cases
+class _CaseCategorySegment extends StatelessWidget {
+  final SubjectCategory selected;
+  final bool isDark;
+  final ValueChanged<SubjectCategory> onChanged;
+
+  const _CaseCategorySegment({
+    required this.selected,
+    required this.isDark,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(4),
+      decoration: BoxDecoration(
+        color: isDark
+            ? Colors.white.withValues(alpha: 0.05)
+            : Colors.black.withValues(alpha: 0.04),
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(
+          color: isDark
+              ? Colors.white.withValues(alpha: 0.08)
+              : Colors.black.withValues(alpha: 0.06),
+        ),
+      ),
+      child: Row(
+        children: SubjectCategory.values.map((cat) {
+          final isSelected = cat == selected;
+          return Expanded(
+            child: GestureDetector(
+              onTap: () => onChanged(cat),
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 250),
+                curve: Curves.easeInOut,
+                padding: const EdgeInsets.symmetric(vertical: 12),
+                decoration: BoxDecoration(
+                  color: isSelected
+                      ? AppTheme.cyan.withValues(alpha: 0.15)
+                      : Colors.transparent,
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(
+                    color: isSelected
+                        ? AppTheme.cyan.withValues(alpha: 0.3)
+                        : Colors.transparent,
+                  ),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      cat == SubjectCategory.temel
+                          ? Icons.science_outlined
+                          : Icons.local_hospital_outlined,
+                      size: 18,
+                      color: isSelected
+                          ? AppTheme.cyan
+                          : (isDark ? Colors.white38 : Colors.black38),
+                    ),
+                    const SizedBox(width: 8),
+                    Text(
+                      cat == SubjectCategory.temel
+                          ? 'Temel Bilimler'
+                          : 'Klinik Bilimler',
+                      style: GoogleFonts.inter(
+                        fontSize: 13,
+                        fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
+                        color: isSelected
+                            ? AppTheme.cyan
+                            : (isDark ? Colors.white54 : Colors.black45),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          );
+        }).toList(),
+      ),
     );
   }
 }

@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../widgets/fullscreen_button.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -285,6 +287,10 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           const SizedBox(width: 8),
 
+          // 🖥️ Fullscreen toggle (only visible on web + desktop)
+          const FullscreenButton(),
+          const SizedBox(width: 4),
+
           // 🤖 AI BELL (CYAN) - BİREBİR ESKİ YERİ
           GestureDetector(
             onTap: _showAiInsightSheet,
@@ -301,10 +307,10 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(width: 12),
 
           // ── Tema Toggle Butonu ─────────────────────────────────────
-          ValueListenableBuilder<ThemeMode>(
+          ValueListenableBuilder<AppThemeMode>(
             valueListenable: ThemeService.mode,
             builder: (_, mode, __) {
-              final dark = mode == ThemeMode.dark;
+              final dark = mode == AppThemeMode.dark;
               return GestureDetector(
                 onTap: ThemeService.toggle,
                 child: AnimatedContainer(

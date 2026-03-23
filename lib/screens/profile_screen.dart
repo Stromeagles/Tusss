@@ -396,6 +396,38 @@ class _ProfileScreenState extends State<ProfileScreen> {
         .slideY(begin: 0.1, end: 0, duration: 400.ms);
   }
 
+  // ── Tema Chip ──────────────────────────────────────────────────────────────
+
+  Widget _themeChip(IconData icon, String label, bool selected, AppThemeMode target, bool isDark) {
+    return GestureDetector(
+      onTap: () => ThemeService.setMode(target),
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 250),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+        decoration: BoxDecoration(
+          color: selected
+              ? AppTheme.cyan.withValues(alpha: 0.15)
+              : Colors.transparent,
+          borderRadius: BorderRadius.circular(8),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, size: 14,
+              color: selected ? AppTheme.cyan : (isDark ? Colors.white54 : Colors.black38)),
+            const SizedBox(width: 4),
+            Text(label,
+              style: GoogleFonts.inter(
+                fontSize: 11, fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
+                color: selected ? AppTheme.cyan : (isDark ? Colors.white54 : Colors.black38),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   // ── Ayarlar ────────────────────────────────────────────────────────────────
 
   Widget _buildSettingsSection(
@@ -420,17 +452,36 @@ class _ProfileScreenState extends State<ProfileScreen> {
           onTap: () => _showGoalSetupSheet(isDark),
         ),
 
-        // Tema
+        // Tema — 3'lü Segmented Control
         _SettingsTile(
-          icon: Icons.dark_mode_rounded,
-          label: 'Koyu Tema',
+          icon: Icons.palette_rounded,
+          label: 'Tema',
           isDark: isDark,
-          trailing: ValueListenableBuilder<ThemeMode>(
+          trailing: ValueListenableBuilder<AppThemeMode>(
             valueListenable: ThemeService.mode,
-            builder: (_, mode, __) => Switch.adaptive(
-              value: mode == ThemeMode.dark,
-              onChanged: (_) => ThemeService.toggle(),
-              activeTrackColor: AppTheme.cyan,
+            builder: (_, mode, __) => Container(
+              decoration: BoxDecoration(
+                color: isDark
+                    ? Colors.white.withValues(alpha: 0.06)
+                    : Colors.black.withValues(alpha: 0.04),
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                  color: isDark
+                      ? Colors.white.withValues(alpha: 0.1)
+                      : Colors.black.withValues(alpha: 0.08),
+                ),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  _themeChip(Icons.dark_mode_rounded, 'Koyu',
+                      mode == AppThemeMode.dark, AppThemeMode.dark, isDark),
+                  _themeChip(Icons.light_mode_rounded, 'Açık',
+                      mode == AppThemeMode.light, AppThemeMode.light, isDark),
+                  _themeChip(Icons.visibility_rounded, 'Soft',
+                      mode == AppThemeMode.soft, AppThemeMode.soft, isDark),
+                ],
+              ),
             ),
           ),
         ),
@@ -485,6 +536,140 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   // ── Düzenleme Bottom Sheet ─────────────────────────────────────────────────
 
+  // ── Premium Input Decoration ──────────────────────────────────────────────
+  InputDecoration _premiumInput({
+    required String hint,
+    required IconData icon,
+    required bool isDark,
+  }) {
+    return InputDecoration(
+      hintText: hint,
+      hintStyle: GoogleFonts.inter(
+        color: isDark ? AppTheme.textMuted : AppTheme.lightTextSecondary.withValues(alpha: 0.5),
+        fontSize: 14,
+      ),
+      prefixIcon: Icon(icon, size: 20,
+        color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary),
+      filled: true,
+      fillColor: isDark
+          ? Colors.white.withValues(alpha: 0.05)
+          : Colors.black.withValues(alpha: 0.03),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(14),
+        borderSide: BorderSide(
+          color: isDark ? Colors.white.withValues(alpha: 0.08) : Colors.black.withValues(alpha: 0.06),
+        ),
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(14),
+        borderSide: BorderSide(
+          color: isDark ? Colors.white.withValues(alpha: 0.08) : Colors.black.withValues(alpha: 0.06),
+        ),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(14),
+        borderSide: const BorderSide(color: AppTheme.cyan, width: 1.5),
+      ),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 15),
+    );
+  }
+
+  // ── Branş Seçim Bottom Sheet ────────────────────────────────────────────
+  void _showBranchPicker(BuildContext ctx, bool isDark, String current, void Function(String) onSelect) {
+    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
+    final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+    final searchCtrl = TextEditingController();
+
+    showModalBottomSheet(
+      context: ctx,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (sheetCtx) => StatefulBuilder(
+        builder: (sheetCtx, setBS) {
+          final query = searchCtrl.text.toLowerCase();
+          final filtered = UserProfile.branches
+              .where((b) => b.toLowerCase().contains(query))
+              .toList();
+
+          return ClipRRect(
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+              child: Container(
+                height: MediaQuery.of(sheetCtx).size.height * 0.65,
+                decoration: BoxDecoration(
+                  color: isDark
+                      ? AppTheme.surface.withValues(alpha: 0.97)
+                      : Colors.white.withValues(alpha: 0.97),
+                  borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+                ),
+                child: Column(
+                  children: [
+                    const SizedBox(height: 12),
+                    Container(width: 40, height: 4,
+                      decoration: BoxDecoration(
+                        color: subColor.withValues(alpha: 0.3),
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 16, 20, 12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Uzmanlık Dalı Seçin',
+                            style: GoogleFonts.inter(color: textColor, fontSize: 18, fontWeight: FontWeight.w800)),
+                          const SizedBox(height: 12),
+                          TextField(
+                            controller: searchCtrl,
+                            style: GoogleFonts.inter(color: textColor, fontSize: 14),
+                            decoration: _premiumInput(hint: 'Ara...', icon: Icons.search_rounded, isDark: isDark),
+                            onChanged: (_) => setBS(() {}),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Expanded(
+                      child: ListView.builder(
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        itemCount: filtered.length,
+                        itemBuilder: (_, i) {
+                          final branch = filtered[i];
+                          final selected = branch == current;
+                          return ListTile(
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                            tileColor: selected ? AppTheme.cyan.withValues(alpha: 0.1) : null,
+                            leading: Icon(
+                              selected ? Icons.check_circle_rounded : Icons.circle_outlined,
+                              color: selected ? AppTheme.cyan : subColor,
+                              size: 20,
+                            ),
+                            title: Text(branch,
+                              style: GoogleFonts.inter(
+                                color: selected ? AppTheme.cyan : textColor,
+                                fontSize: 14,
+                                fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
+                              ),
+                            ),
+                            onTap: () {
+                              onSelect(branch);
+                              Navigator.pop(sheetCtx);
+                            },
+                          );
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+
+  // ── Premium Profil Düzenleme Sheet ──────────────────────────────────────
   void _showEditSheet(BuildContext context, bool isDark) {
     final nameCtrl = TextEditingController(text: _user.name);
     var tempUser = _user;
@@ -506,8 +691,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
             child: BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
               child: Container(
-                padding: EdgeInsets.fromLTRB(
-                    20, 20, 20, MediaQuery.of(ctx).viewInsets.bottom + 24),
                 decoration: BoxDecoration(
                   color: isDark
                       ? AppTheme.surface.withValues(alpha: 0.95)
@@ -515,178 +698,174 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   borderRadius:
                       const BorderRadius.vertical(top: Radius.circular(28)),
                 ),
-                child: SingleChildScrollView(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Handle bar
-                      Center(
-                        child: Container(
-                          width: 40,
-                          height: 4,
-                          decoration: BoxDecoration(
-                            color: subColor.withValues(alpha: 0.3),
-                            borderRadius: BorderRadius.circular(2),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 20),
-
-                      Text('Profili Düzenle',
-                          style: GoogleFonts.inter(
-                              color: textColor,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w900)),
-                      const SizedBox(height: 20),
-
-                      // Emoji Seçimi
-                      Text('Avatar',
-                          style: GoogleFonts.inter(
-                              color: subColor,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600)),
-                      const SizedBox(height: 8),
-                      Wrap(
-                        spacing: 10,
-                        runSpacing: 10,
-                        children: ['T', 'D', 'A', 'M', 'S', 'K', 'E', 'H']
-                            .map((e) => GestureDetector(
-                                  onTap: () => setSheetState(
-                                      () => tempUser = tempUser.copyWith(profileEmoji: e)),
-                                  child: AnimatedContainer(
-                                    duration: const Duration(milliseconds: 200),
-                                    width: 44,
-                                    height: 44,
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      gradient: tempUser.profileEmoji == e
-                                          ? const LinearGradient(
-                                              colors: [
-                                                AppTheme.cyan,
-                                                AppTheme.neonPink
-                                              ],
-                                            )
-                                          : null,
-                                      color: tempUser.profileEmoji == e
-                                          ? null
-                                          : (isDark
-                                              ? Colors.white
-                                                  .withValues(alpha: 0.08)
-                                              : Colors.black
-                                                  .withValues(alpha: 0.05)),
-                                      border: Border.all(
-                                        color: tempUser.profileEmoji == e
-                                            ? AppTheme.cyan
-                                                .withValues(alpha: 0.5)
-                                            : Colors.transparent,
-                                        width: 2,
-                                      ),
-                                    ),
-                                    child: Center(
-                                      child: Text(e,
-                                          style: GoogleFonts.inter(
-                                            color: tempUser.profileEmoji == e
-                                                ? Colors.white
-                                                : textColor,
-                                            fontSize: 18,
-                                            fontWeight: FontWeight.w800,
-                                          )),
-                                    ),
-                                  ),
-                                ))
-                            .toList(),
-                      ),
-                      const SizedBox(height: 20),
-
-                      // İsim
-                      Text('İsim',
-                          style: GoogleFonts.inter(
-                              color: subColor,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600)),
-                      const SizedBox(height: 8),
-                      TextField(
-                        controller: nameCtrl,
-                        style: GoogleFonts.inter(
-                            color: textColor, fontWeight: FontWeight.w600),
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: isDark
-                              ? Colors.white.withValues(alpha: 0.06)
-                              : Colors.black.withValues(alpha: 0.04),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(14),
-                            borderSide: BorderSide.none,
-                          ),
-                          contentPadding: const EdgeInsets.symmetric(
-                              horizontal: 16, vertical: 14),
-                        ),
-                        onChanged: (v) =>
-                            setSheetState(() => tempUser = tempUser.copyWith(name: v)),
-                      ),
-                      const SizedBox(height: 20),
-
-                      // Branş Seçimi
-                      Text('Hedef Uzmanlık Dalı',
-                          style: GoogleFonts.inter(
-                              color: subColor,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600)),
-                      const SizedBox(height: 8),
-                      Wrap(
-                        spacing: 8,
-                        runSpacing: 8,
-                        children: UserProfile.branches.map((b) {
-                          final selected = tempUser.targetBranch == b;
-                          return GestureDetector(
-                            onTap: () => setSheetState(
-                                () => tempUser = tempUser.copyWith(targetBranch: b)),
-                            child: AnimatedContainer(
-                              duration: const Duration(milliseconds: 200),
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 12, vertical: 7),
-                              decoration: BoxDecoration(
-                                color: selected
-                                    ? AppTheme.cyan.withValues(alpha: 0.15)
-                                    : (isDark
-                                        ? Colors.white
-                                            .withValues(alpha: 0.06)
-                                        : Colors.black
-                                            .withValues(alpha: 0.04)),
-                                borderRadius: BorderRadius.circular(20),
-                                border: Border.all(
-                                  color: selected
-                                      ? AppTheme.cyan
-                                          .withValues(alpha: 0.50)
-                                      : (isDark
-                                          ? Colors.white
-                                              .withValues(alpha: 0.10)
-                                          : Colors.black
-                                              .withValues(alpha: 0.07)),
-                                  width: 1,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    // ── Scrollable Content ──
+                    Flexible(
+                      child: SingleChildScrollView(
+                        padding: EdgeInsets.fromLTRB(
+                            24, 20, 24, MediaQuery.of(ctx).viewInsets.bottom + 12),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            // Handle bar
+                            Center(
+                              child: Container(
+                                width: 40, height: 4,
+                                decoration: BoxDecoration(
+                                  color: subColor.withValues(alpha: 0.3),
+                                  borderRadius: BorderRadius.circular(2),
                                 ),
                               ),
-                              child: Text(b,
-                                  style: GoogleFonts.inter(
-                                    color: selected ? AppTheme.cyan : subColor,
-                                    fontSize: 12,
-                                    fontWeight:
-                                        selected ? FontWeight.w700 : FontWeight.w500,
-                                  )),
                             ),
-                          );
-                        }).toList(),
-                      ),
-                      const SizedBox(height: 20),
+                            const SizedBox(height: 20),
 
-                      // Kaydet Butonu
-                      SizedBox(
+                            Text('Profili Düzenle',
+                                style: GoogleFonts.inter(
+                                    color: textColor, fontSize: 22, fontWeight: FontWeight.w900)),
+                            const SizedBox(height: 6),
+                            Text('Bilgilerini güncelleyerek TUS yolculuğunu kişiselleştir',
+                                style: GoogleFonts.inter(
+                                    color: subColor, fontSize: 13, fontWeight: FontWeight.w400)),
+                            const SizedBox(height: 28),
+
+                            // ── Avatar Seçimi ──
+                            Text('AVATAR', style: GoogleFonts.inter(
+                                color: subColor, fontSize: 11, fontWeight: FontWeight.w700, letterSpacing: 1.2)),
+                            const SizedBox(height: 10),
+                            Wrap(
+                              spacing: 10, runSpacing: 10,
+                              children: ['T', 'D', 'A', 'M', 'S', 'K', 'E', 'H']
+                                  .map((e) => GestureDetector(
+                                        onTap: () => setSheetState(
+                                            () => tempUser = tempUser.copyWith(profileEmoji: e)),
+                                        child: AnimatedContainer(
+                                          duration: const Duration(milliseconds: 200),
+                                          width: 46, height: 46,
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                            gradient: tempUser.profileEmoji == e
+                                                ? const LinearGradient(colors: [AppTheme.cyan, AppTheme.neonPink])
+                                                : null,
+                                            color: tempUser.profileEmoji == e
+                                                ? null
+                                                : (isDark ? Colors.white.withValues(alpha: 0.06) : Colors.black.withValues(alpha: 0.04)),
+                                            border: Border.all(
+                                              color: tempUser.profileEmoji == e
+                                                  ? AppTheme.cyan.withValues(alpha: 0.5)
+                                                  : Colors.transparent,
+                                              width: 2,
+                                            ),
+                                          ),
+                                          child: Center(
+                                            child: Text(e,
+                                              style: GoogleFonts.inter(
+                                                color: tempUser.profileEmoji == e ? Colors.white : textColor,
+                                                fontSize: 18, fontWeight: FontWeight.w800,
+                                              )),
+                                          ),
+                                        ),
+                                      ))
+                                  .toList(),
+                            ),
+                            const SizedBox(height: 24),
+
+                            // ── İsim Input ──
+                            Text('AD SOYAD', style: GoogleFonts.inter(
+                                color: subColor, fontSize: 11, fontWeight: FontWeight.w700, letterSpacing: 1.2)),
+                            const SizedBox(height: 8),
+                            TextField(
+                              controller: nameCtrl,
+                              style: GoogleFonts.inter(color: textColor, fontWeight: FontWeight.w600, fontSize: 15),
+                              decoration: _premiumInput(hint: 'İsminizi girin', icon: Icons.person_outline_rounded, isDark: isDark),
+                              onChanged: (v) => setSheetState(() => tempUser = tempUser.copyWith(name: v)),
+                            ),
+                            const SizedBox(height: 24),
+
+                            // ── Branş Seçimi (BottomSheet ile) ──
+                            Text('HEDEF UZMANLIK DALI', style: GoogleFonts.inter(
+                                color: subColor, fontSize: 11, fontWeight: FontWeight.w700, letterSpacing: 1.2)),
+                            const SizedBox(height: 8),
+                            GestureDetector(
+                              onTap: () => _showBranchPicker(ctx, isDark, tempUser.targetBranch, (b) {
+                                setSheetState(() => tempUser = tempUser.copyWith(targetBranch: b));
+                              }),
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 15),
+                                decoration: BoxDecoration(
+                                  color: isDark
+                                      ? Colors.white.withValues(alpha: 0.05)
+                                      : Colors.black.withValues(alpha: 0.03),
+                                  borderRadius: BorderRadius.circular(14),
+                                  border: Border.all(
+                                    color: isDark ? Colors.white.withValues(alpha: 0.08) : Colors.black.withValues(alpha: 0.06),
+                                  ),
+                                ),
+                                child: Row(
+                                  children: [
+                                    Icon(Icons.school_outlined, size: 20,
+                                      color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary),
+                                    const SizedBox(width: 12),
+                                    Expanded(
+                                      child: Text(
+                                        tempUser.targetBranch.isEmpty ? 'Uzmanlık dalı seçin' : tempUser.targetBranch,
+                                        style: GoogleFonts.inter(
+                                          color: tempUser.targetBranch.isEmpty ? subColor.withValues(alpha: 0.5) : textColor,
+                                          fontSize: 14, fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                    ),
+                                    Icon(Icons.keyboard_arrow_down_rounded, size: 22, color: subColor),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 24),
+
+                            // ── Günlük Hedef Input ──
+                            Text('GÜNLÜK KART HEDEFİ', style: GoogleFonts.inter(
+                                color: subColor, fontSize: 11, fontWeight: FontWeight.w700, letterSpacing: 1.2)),
+                            const SizedBox(height: 8),
+                            TextField(
+                              keyboardType: TextInputType.number,
+                              inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+                              controller: TextEditingController(text: tempUser.dailyGoal.toString()),
+                              style: GoogleFonts.inter(color: textColor, fontWeight: FontWeight.w600, fontSize: 15),
+                              decoration: _premiumInput(hint: 'Günlük kart sayısı', icon: Icons.flag_outlined, isDark: isDark),
+                              onChanged: (v) {
+                                final val = int.tryParse(v) ?? 20;
+                                setSheetState(() => tempUser = tempUser.copyWith(dailyGoal: val.clamp(5, 500)));
+                              },
+                            ),
+                            const SizedBox(height: 16),
+                          ],
+                        ),
+                      ),
+                    ),
+
+                    // ── Sticky Kaydet Butonu ──
+                    Container(
+                      padding: EdgeInsets.fromLTRB(24, 12, 24, MediaQuery.of(ctx).padding.bottom + 16),
+                      decoration: BoxDecoration(
+                        color: isDark
+                            ? AppTheme.surface.withValues(alpha: 0.98)
+                            : Colors.white.withValues(alpha: 0.98),
+                        border: Border(
+                          top: BorderSide(
+                            color: isDark ? AppTheme.divider : AppTheme.lightDivider,
+                          ),
+                        ),
+                      ),
+                      child: SizedBox(
                         width: double.infinity,
                         child: ElevatedButton(
                           onPressed: () async {
                             final nav = Navigator.of(ctx);
-                            final updated = tempUser.copyWith(name: nameCtrl.text.trim().isEmpty ? 'KlinDoktor' : nameCtrl.text.trim());
+                            final updated = tempUser.copyWith(
+                              name: nameCtrl.text.trim().isEmpty ? 'KlinDoktor' : nameCtrl.text.trim(),
+                            );
                             await _userService.saveUser(updated);
                             if (mounted) {
                               setState(() => _user = updated);
@@ -696,17 +875,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           style: ElevatedButton.styleFrom(
                             backgroundColor: AppTheme.cyan,
                             foregroundColor: Colors.white,
-                            padding: const EdgeInsets.symmetric(vertical: 15),
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(14)),
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                            elevation: 0,
                           ),
                           child: Text('Kaydet',
-                              style: GoogleFonts.inter(
-                                  fontWeight: FontWeight.w800, fontSize: 15)),
+                              style: GoogleFonts.inter(fontWeight: FontWeight.w800, fontSize: 15)),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),

@@ -64,7 +64,8 @@
           "cAMP artışı",
           "GABA inhibisyonu",
           "ACh salınımının engellenmesi",
-          "EF-2 inaktivasyonu"
+          "EF-2 inaktivasyonu",
+          "E) Hiçbiri"
         ],
         "correct_answer": "ACh salınımının engellenmesi",
         "explanation": "Botulinum toksini periferik presinaptik uçlardan Asetilkolin (ACh) salınımını engelleyerek gevşek (flask) felç yapar.",

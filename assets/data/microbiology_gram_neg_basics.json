@@ -29,7 +29,8 @@
           "Meningokokal Menenjit",
           "Pnömokokal Menenjit",
           "Viral Menenjit",
-          "Listeriyoz"
+          "Listeriyoz",
+          "E) Hiçbiri"
         ],
         "correct_answer": "Meningokokal Menenjit",
         "explanation": "Peteşiyal döküntü ve hızlı seyir Neisseria meningitidis için tipiktir.",
@@ -67,7 +68,8 @@
           "HÜS (EHEC ilişkili)",
           "TTP",
           "DİC",
-          "İTP"
+          "İTP",
+          "E) Hiçbiri"
         ],
         "correct_answer": "HÜS (EHEC ilişkili)",
         "explanation": "Kanlı ishal sonrası gelişen anemi ve trombositopeni HÜS'ü düşündürür.",

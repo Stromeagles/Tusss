@@ -49,26 +49,37 @@ class TusAsistaniApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ValueListenableBuilder<ThemeMode>(
+    return ValueListenableBuilder<AppThemeMode>(
       valueListenable: ThemeService.mode,
-      builder: (_, themeMode, __) {
-        final isDark = themeMode == ThemeMode.dark;
+      builder: (_, appMode, __) {
+        final isDark = appMode == AppThemeMode.dark;
 
         SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
           statusBarColor: Colors.transparent,
           statusBarIconBrightness:
               isDark ? Brightness.light : Brightness.dark,
-          systemNavigationBarColor:
-              isDark ? AppTheme.background : AppTheme.lightBackground,
+          systemNavigationBarColor: isDark
+              ? AppTheme.background
+              : appMode == AppThemeMode.soft
+                  ? AppTheme.softBackground
+                  : AppTheme.lightBackground,
           systemNavigationBarIconBrightness:
               isDark ? Brightness.light : Brightness.dark,
         ));
 
+        // Soft tema → kendi ThemeData'sını kullanır (light base)
+        final ThemeData effectiveTheme = switch (appMode) {
+          AppThemeMode.dark  => AppTheme.darkTheme,
+          AppThemeMode.light => AppTheme.lightTheme,
+          AppThemeMode.soft  => AppTheme.softTheme,
+        };
+
         return MaterialApp(
           title: 'AsisTus',
           debugShowCheckedModeBanner: false,
-          themeMode: themeMode,
-          theme: AppTheme.lightTheme,
+          // Soft ve light aynı brightness olduğu için theme ile yönetiyoruz
+          themeMode: ThemeMode.light,
+          theme: effectiveTheme,
           darkTheme: AppTheme.darkTheme,
           home: const AuthWrapper(),
           builder: (context, child) => ResponsiveWrapper(child: child!),

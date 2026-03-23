@@ -49,7 +49,8 @@
           "Kızıl",
           "Toksik Şok Sendromu",
           "Menenjit",
-          "Kawasaki Hastalığı"
+          "Kawasaki Hastalığı",
+          "E) Hiçbiri"
         ],
         "correct_answer": "Toksik Şok Sendromu",
         "explanation": "Tampon kullanımı ve çoklu sistem tutulumu TSST-1'e bağlı stafilokokal toksik şok sendromunu düşündürür.",
@@ -97,7 +98,8 @@
           "K. pneumoniae",
           "S. aureus",
           "S. pneumoniae",
-          "M. catarrhalis"
+          "M. catarrhalis",
+          "E) Hiçbiri"
         ],
         "correct_answer": "S. pneumoniae",
         "explanation": "Lober tutulum, pas rengi balgam ve gram pozitif diplokoklar tipik pnömokok bulgularıdır.",
@@ -146,7 +148,8 @@
           "Suçiçeği",
           "Kızıl",
           "Kızamıkçık",
-          "El-Ayak-Ağız Hastalığı"
+          "El-Ayak-Ağız Hastalığı",
+          "E) Hiçbiri"
         ],
         "correct_answer": "Kızıl",
         "explanation": "Eksudatif farenjit, çilek dili ve yaygın döküntü S. pyogenes'in pirojenik ekzotoksinine bağlı Kızıl (Scarlet fever) tablosudur.",

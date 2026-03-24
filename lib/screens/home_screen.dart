@@ -166,27 +166,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  const SizedBox(height: 10),
-
-                                  // ── Daily Goal / Limit ──────────────────────────
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                                    child: DailyGoalWidget(
-                                      todayStudied: _progress.todayStudied,
-                                      dailyGoal: _progress.dailyGoal,
-                                      accentColor: AppTheme.cyan,
-                                    ),
-                                  ),
-
-                                  const SizedBox(height: 12),
-
-                                  // ── AI Koç Butonu ────────────────────────────────
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                                    child: _buildAiCoachButton(isDark),
-                                  ),
-
-                                  const SizedBox(height: 24),
+                                  const SizedBox(height: 16),
 
                                   // ── Flashcard Hub ──────────────────────────────────────
                                   RepaintBoundary(child: _buildFlashcardHub(isDark)),
@@ -849,12 +829,6 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    title.contains('Vaka') ? Icons.medical_services_rounded : Icons.replay_rounded,
-                    color: Colors.white,
-                    size: 20,
-                  ),
-                  const SizedBox(width: 12),
                   Text(
                     buttonLabel,
                     style: GoogleFonts.inter(
@@ -979,6 +953,7 @@ class _HomeScreenState extends State<HomeScreen> {
         mistakeCounts: mistakeCounts,
         topMistakeTopics: topMistakeTopics,
         userName: _user.name.isNotEmpty ? _user.name : 'Doktor',
+        targetBranch: _user.targetBranch,
       ),
     );
   }
@@ -1097,6 +1072,7 @@ class _HomeScreenState extends State<HomeScreen> {
         isDark: isDark,
         mistakeCounts: mistakeCounts,
         topMistakeTopics: top3Topics,
+        targetBranch: _user.targetBranch,
       ),
     );
   }
@@ -1622,7 +1598,6 @@ class _FolderCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final active = onTap != null;
-    const iconSize = 22.0;
 
     return GestureDetector(
       onTap: () {
@@ -1678,24 +1653,6 @@ class _FolderCard extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // İkon
-                  AnimatedContainer(
-                    duration: const Duration(milliseconds: 250),
-                    padding: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: active
-                          ? color.withValues(alpha: isDark ? 0.25 : 0.18)
-                          : Colors.white.withValues(alpha: isDark ? 0.07 : 0.60),
-                      shape: BoxShape.circle,
-                      boxShadow: active
-                          ? [BoxShadow(color: color.withValues(alpha: 0.30), blurRadius: 14, spreadRadius: 1)]
-                          : [],
-                    ),
-                    child: Icon(icon,
-                      color: active ? color : (isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary),
-                      size: iconSize),
-                  ),
-                  const SizedBox(height: 10),
                   // Sayaç badge
                   if (count > 0)
                     Container(

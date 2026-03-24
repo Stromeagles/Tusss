@@ -8,8 +8,8 @@ class AppRoute {
   static Route<T> slideUp<T>(Widget page) {
     return PageRouteBuilder<T>(
       pageBuilder: (_, animation, __) => page,
-      transitionDuration: const Duration(milliseconds: 380),
-      reverseTransitionDuration: const Duration(milliseconds: 300),
+      transitionDuration: const Duration(milliseconds: 260),
+      reverseTransitionDuration: const Duration(milliseconds: 220),
       transitionsBuilder: (_, animation, secondaryAnimation, child) {
         final slide = Tween<Offset>(
           begin: const Offset(0, 0.06),

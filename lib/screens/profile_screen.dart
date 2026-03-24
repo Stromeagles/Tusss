@@ -19,6 +19,7 @@ import '../services/auth_service.dart';
 import '../auth/auth_view_model.dart';
 import 'package:provider/provider.dart';
 import 'auth/login_screen.dart';
+import '../widgets/daily_goal_widget.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -116,6 +117,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
                         // ── İstatistik Kartları ─────────────────────────
                         _buildStatsRow(isDark),
+                        const SizedBox(height: 16),
+
+                        // ── Günlük Hedef ─────────────────────────────────
+                        DailyGoalWidget(
+                          todayStudied: _progress.todayStudied,
+                          dailyGoal: _progress.dailyGoal,
+                          accentColor: AppTheme.cyan,
+                        ),
                         const SizedBox(height: 16),
 
                         // ── Hedef Puan ──────────────────────────────────

@@ -10,6 +10,7 @@ class AiInsightSheet extends StatelessWidget {
   final Map<String, int> mistakeCounts; // Brans -> Yanlış Sayısı
   final List<String> topMistakeTopics; // En çok yanlış yapılan 3 konu
   final String userName;
+  final String targetBranch;
 
   const AiInsightSheet({
     super.key,
@@ -18,6 +19,7 @@ class AiInsightSheet extends StatelessWidget {
     required this.mistakeCounts,
     required this.topMistakeTopics,
     this.userName = 'Doktor',
+    this.targetBranch = 'Henüz Seçilmedi',
   });
 
   @override
@@ -65,7 +67,9 @@ class AiInsightSheet extends StatelessWidget {
                 padding: const EdgeInsets.all(24),
                 children: [
                   _buildIntensityCard(),
-                  const SizedBox(height: 24),
+                  const SizedBox(height: 16),
+                  _buildTargetBranchCard(),
+                  const SizedBox(height: 16),
                   _buildMistakeSection(textColor, subColor, sortedMistakes),
                   const SizedBox(height: 24),
                   _buildAdviceCard(mainWeakness),
@@ -339,6 +343,89 @@ class AiInsightSheet extends StatelessWidget {
     );
   }
 
+  Widget _buildTargetBranchCard() {
+    final hasTarget = targetBranch != 'Henüz Seçilmedi' && targetBranch.isNotEmpty;
+    final targetPuan = progress.targetScore;
+    final mevcutPuan = progress.baseScore;
+    final fark = (targetPuan - mevcutPuan).clamp(0.0, 100.0);
+    final recommended = progress.recommendedDailyGoal;
+    final days = progress.daysToExam;
+
+    final Color accentColor = hasTarget ? AppTheme.neonPurple : AppTheme.textSecondary;
+
+    String action;
+    if (!hasTarget) {
+      action = 'Profil ekranından hedef branşını seçersen sana özel analiz yapabilirim.';
+    } else if (fark <= 2) {
+      action = '$targetBranch için gereken $targetPuan puana çok yakınsın! Mevcut çalışma temponunu koru.';
+    } else {
+      action = '$targetBranch için hedefin $targetPuan puan. Şu anki tahminin $mevcutPuan puan. ${fark.toStringAsFixed(0)} puanlık açığı kapatmak için $days günde günde $recommended soru/kart çözmelisin.';
+    }
+
+    return Container(
+      padding: const EdgeInsets.all(18),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [accentColor.withValues(alpha: 0.12), accentColor.withValues(alpha: 0.05)],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: accentColor.withValues(alpha: 0.30)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.school_rounded, color: accentColor, size: 18),
+              const SizedBox(width: 8),
+              Text(
+                'HEDEF BÖLÜM ANALİZİ',
+                style: GoogleFonts.inter(color: accentColor, fontSize: 11, fontWeight: FontWeight.w900, letterSpacing: 0.5),
+              ),
+              const Spacer(),
+              if (hasTarget)
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: accentColor.withValues(alpha: 0.15),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text(
+                    targetBranch,
+                    style: GoogleFonts.inter(color: accentColor, fontSize: 11, fontWeight: FontWeight.w800),
+                  ),
+                ),
+            ],
+          ),
+          if (hasTarget) ...[
+            const SizedBox(height: 14),
+            Row(
+              children: [
+                _ScoreChip(label: 'Mevcut', value: mevcutPuan.toStringAsFixed(0), color: AppTheme.neonGold),
+                const SizedBox(width: 8),
+                Icon(Icons.arrow_forward_rounded, color: accentColor.withValues(alpha: 0.5), size: 16),
+                const SizedBox(width: 8),
+                _ScoreChip(label: 'Hedef', value: targetPuan.toStringAsFixed(0), color: accentColor),
+              ],
+            ),
+          ],
+          const SizedBox(height: 12),
+          Text(
+            action,
+            style: GoogleFonts.inter(
+              color: isDark ? Colors.white.withValues(alpha: 0.85) : Colors.black87,
+              fontSize: 13,
+              height: 1.5,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   Widget _buildTopicSection(Color textColor, Color subColor) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -361,6 +448,34 @@ class AiInsightSheet extends StatelessWidget {
           )).toList(),
         ),
       ],
+    );
+  }
+}
+
+class _ScoreChip extends StatelessWidget {
+  final String label;
+  final String value;
+  final Color color;
+
+  const _ScoreChip({required this.label, required this.value, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: 0.12),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: color.withValues(alpha: 0.30)),
+      ),
+      child: Column(
+        children: [
+          Text(label,
+              style: GoogleFonts.inter(color: color.withValues(alpha: 0.7), fontSize: 10, fontWeight: FontWeight.w700)),
+          Text(value,
+              style: GoogleFonts.inter(color: color, fontSize: 15, fontWeight: FontWeight.w900)),
+        ],
+      ),
     );
   }
 }

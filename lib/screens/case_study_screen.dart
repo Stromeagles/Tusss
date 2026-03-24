@@ -134,14 +134,11 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
 
       // DataService'de hata varsa kullanıcıya bildir (kısmi yükleme)
       if (_dataService.lastError != null && mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Bazi veriler yuklenemedi. Mevcut verilerle devam ediliyor.'),
-            backgroundColor: Colors.orange,
-            behavior: SnackBarBehavior.floating,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-            margin: const EdgeInsets.all(16),
-          ),
+        ErrorHandler.showSnackbar(
+          context,
+          message: 'Bazı veriler yüklenemedi. Mevcut verilerle devam ediliyor.',
+          isError: false,
+          onRetry: _loadCases,
         );
       }
     } catch (e) {

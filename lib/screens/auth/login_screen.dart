@@ -86,28 +86,30 @@ class _LoginScreenState extends State<LoginScreen> {
   // ── Build ─────────────────────────────────────────────────────────────────
   @override
   Widget build(BuildContext context) {
-    return Consumer<AuthViewModel>(
-      builder: (context, vm, _) {
-        return Scaffold(
-          backgroundColor: AppTheme.background,
-          resizeToAvoidBottomInset: true,
-          body: Stack(
-            children: [
-              _buildBackground(),
-              SafeArea(
-                child: LayoutBuilder(
-                  builder: (context, constraints) {
+    // Scaffold ve arka plan statik — Consumer sadece form içeriğini kapsar.
+    // Her tuş vuruşunda tüm ekranın rebuild edilmesi önlenir.
+    return Scaffold(
+      backgroundColor: AppTheme.background,
+      resizeToAvoidBottomInset: true,
+      body: Stack(
+        children: [
+          _buildBackground(),
+          SafeArea(
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                return Consumer<AuthViewModel>(
+                  builder: (context, vm, _) {
                     if (kIsWeb || constraints.maxWidth >= 900) {
                       return _buildDesktopLayout(vm);
                     }
                     return _buildMobileLayout(vm, constraints);
                   },
-                ),
-              ),
-            ],
+                );
+              },
+            ),
           ),
-        );
-      },
+        ],
+      ),
     );
   }
 
@@ -286,7 +288,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Stack(
       fit: StackFit.expand,
       children: [
-        Image.asset('assets/hero_login.jpg', fit: BoxFit.cover),
+        Image.asset('assets/hero_login.jpg', fit: BoxFit.cover, cacheWidth: 1200),
         // Sağa doğru gradient — form paneliyle geçiş
         Container(
           decoration: BoxDecoration(

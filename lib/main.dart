@@ -22,6 +22,7 @@ import 'services/mock_exam_service.dart';
 import 'services/collection_service.dart';
 import 'services/notification_service.dart';
 import 'services/theme_service.dart';
+import 'services/specialty_score_service.dart';
 import 'widgets/responsive_wrapper.dart';
 
 void main() async {
@@ -129,8 +130,11 @@ class _AuthWrapperState extends State<AuthWrapper> {
       _onboardingDone = false;
     }
 
-    // 3) Cache ısınma (arka planda)
-    AIService().warmUpCache();
+    // 3) İlk frame render edildikten sonra ağır servisleri lazy başlat
+    Future.delayed(const Duration(seconds: 2), () {
+      AIService().warmUpCache();
+      SpecialtyScoreService().init();
+    });
     if (!kIsWeb) NotificationService().init();
 
     if (mounted) {
@@ -195,6 +199,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
                 'assets/hero_splash.jpg',
                 width: 250,
                 fit: BoxFit.cover,
+                cacheWidth: 750, // 250px × 3x — bellek tasarrufu
               ),
             ).animate().fadeIn(duration: 600.ms).scale(begin: const Offset(0.9, 0.9)),
             const SizedBox(height: 32),

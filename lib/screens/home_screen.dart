@@ -22,6 +22,7 @@ import '../services/user_service.dart';
 import '../services/spaced_repetition_service.dart';
 import '../services/theme_service.dart';
 import '../utils/transitions.dart';
+import '../utils/error_handler.dart';
 import 'flashcard_screen.dart';
 import 'case_study_screen.dart';
 import 'profile_screen.dart';
@@ -106,8 +107,11 @@ class _HomeScreenState extends State<HomeScreen> {
       debugPrint('🚨 KRİTİK HATA: Veri yükleme başarısız oldu: $e');
       if (mounted) {
         setState(() => _loading = false);
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Veriler yüklenirken bir sorun oluştu. Bazı konular eksik olabilir.')),
+        ErrorHandler.showSnackbar(
+          context,
+          message: 'Veri güncelleniyor, lütfen bekleyin...',
+          isError: false,
+          onRetry: _loadData,
         );
       }
     }

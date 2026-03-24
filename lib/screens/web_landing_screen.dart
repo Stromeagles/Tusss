@@ -180,7 +180,7 @@ class _WebLandingScreenState extends State<WebLandingScreen>
         child: Stack(
           fit: StackFit.expand,
           children: [
-            Image.asset('assets/hero_splash.jpg', fit: BoxFit.cover),
+            Image.asset('assets/hero_splash.jpg', fit: BoxFit.cover, cacheWidth: 1200),
             // Koyu alt gradient
             Container(
               decoration: BoxDecoration(

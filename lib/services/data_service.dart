@@ -1,7 +1,16 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import '../models/topic_model.dart';
 import '../models/subject_registry.dart';
+
+// compute() için top-level fonksiyon — class metodu olamaz
+List<Map<String, dynamic>> _parseTopicJson(String jsonString) {
+  final decoded = json.decode(jsonString);
+  if (decoded is List) return List<Map<String, dynamic>>.from(decoded);
+  if (decoded is Map<String, dynamic>) return [decoded];
+  return [];
+}
 
 class DataService {
   static final DataService _instance = DataService._internal();
@@ -19,15 +28,9 @@ class DataService {
   Future<List<Topic>> _loadSingleFile(String path) async {
     try {
       final jsonString = await rootBundle.loadString(path);
-      final decoded = json.decode(jsonString);
-      if (decoded is List) {
-        return decoded
-            .map((e) => Topic.fromJson(e as Map<String, dynamic>))
-            .toList();
-      } else if (decoded is Map<String, dynamic>) {
-        return [Topic.fromJson(decoded)];
-      }
-      return [];
+      // Büyük JSON parse işlemini arka plan isolate'e taşı — UI thread'i bloklamaz
+      final maps = await compute(_parseTopicJson, jsonString);
+      return maps.map((e) => Topic.fromJson(e)).toList();
     } on FormatException catch (e) {
       lastError = 'JSON format hatasi: $path ($e)';
       return [];

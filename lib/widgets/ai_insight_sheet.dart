@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_theme.dart';
 import '../models/progress_model.dart';
 import '../services/specialty_score_service.dart';
+import '../services/premium_service.dart';
+import 'paywall_widget.dart';
 
 class AiInsightSheet extends StatefulWidget {
   final StudyProgress progress;
@@ -721,7 +723,15 @@ class _AiInsightSheetState extends State<AiInsightSheet> {
                 child: InkWell(
                   borderRadius: BorderRadius.circular(14),
                   onTap: () {
-                    // TODO: PaywallWidget'a yönlendir
+                    showModalBottomSheet(
+                      context: context,
+                      isScrollControlled: true,
+                      backgroundColor: Colors.transparent,
+                      builder: (_) => const PaywallWidget(
+                        type: 'ai_coach',
+                        dailyLimit: PremiumService.dailyFreeCaseLimit,
+                      ),
+                    );
                   },
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 14),

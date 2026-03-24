@@ -131,34 +131,47 @@ class _LoginScreenState extends State<LoginScreen> {
         Expanded(
           flex: 45,
           child: Container(
-            decoration: BoxDecoration(
-              color: AppTheme.surface.withValues(alpha: 0.85),
-              border: Border(
-                left: BorderSide(color: AppTheme.cyan.withValues(alpha: 0.08)),
-              ),
-            ),
+            color: AppTheme.surface.withValues(alpha: 0.75),
             child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+              filter: ImageFilter.blur(sigmaX: 30, sigmaY: 30),
               child: Center(
                 child: SingleChildScrollView(
-                  padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 40),
+                  padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 40),
                   physics: const BouncingScrollPhysics(),
                   child: ConstrainedBox(
                     constraints: const BoxConstraints(maxWidth: 400),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        _buildDesktopFormHeader(vm),
-                        const SizedBox(height: 32),
-                        _buildFormContent(vm),
-                        const SizedBox(height: 28),
-                        _buildBottomToggle(vm),
-                        if (kIsWeb) ...[
-                          const SizedBox(height: 40),
-                          _buildStoreButtons(),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: 0.04),
+                        borderRadius: BorderRadius.circular(24),
+                        border: Border.all(
+                          color: Colors.white.withValues(alpha: 0.08),
+                          width: 1.2,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withValues(alpha: 0.3),
+                            blurRadius: 40,
+                            offset: const Offset(0, 16),
+                          ),
                         ],
-                        const SizedBox(height: 24),
-                      ],
+                      ),
+                      padding: const EdgeInsets.fromLTRB(32, 36, 32, 32),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          _buildDesktopFormHeader(vm),
+                          const SizedBox(height: 32),
+                          _buildFormContent(vm),
+                          const SizedBox(height: 32),
+                          _buildBottomToggle(vm),
+                          if (kIsWeb) ...[
+                            const SizedBox(height: 44),
+                            _buildStoreButtons(),
+                          ],
+                          const SizedBox(height: 8),
+                        ],
+                      ),
                     ),
                   ),
                 ),

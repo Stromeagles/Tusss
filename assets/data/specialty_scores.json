@@ -1,0 +1,84 @@
+{
+  "last_updated": "2024-06-03",
+  "source": "OSYM TUS 2024 1. Donem",
+  "specialties": [
+    {
+      "name": "Deri ve Zuhrevi Hastaliklari (Dermatoloji)",
+      "average_score": 72.7,
+      "difficulty": "Cok Yuksek",
+      "advice": "Dermatoloji icin temel bilimler netlerini %90 uzerine cikarmalisin. Ozellikle Mikrobiyoloji ve Patoloji sorularini kacirmaman kritik."
+    },
+    {
+      "name": "Plastik, Rekonstruktif ve Estetik Cerrahi",
+      "average_score": 71.7,
+      "difficulty": "Cok Yuksek",
+      "advice": "Plastik cerrahi hedefi icin Anatomi ve Genel Cerrahi vaka sorularinda kusursuz olmalisin."
+    },
+    {
+      "name": "Ruh Sagligi ve Hastaliklari (Psikiyatri)",
+      "average_score": 73.3,
+      "difficulty": "Cok Yuksek",
+      "advice": "Psikiyatri son yillarda cok yukseldi. Farmakoloji ve Noroloji konularina ekstra agirlik vermelisin."
+    },
+    {
+      "name": "Goz Hastaliklari",
+      "average_score": 69.9,
+      "difficulty": "Yuksek",
+      "advice": "Goz icin klinik bilimlerde hata payin cok dusuk olmali. Ozellikle 70 barajini asmak icin her gun 100+ soru cozmelisin."
+    },
+    {
+      "name": "Nukleer Tip",
+      "average_score": 70.6,
+      "difficulty": "Yuksek",
+      "advice": "Radyoloji ve Nukleer Tip benzer puanlarda. Temel fizik ve klinik laboratuvar sorularina dikkat."
+    },
+    {
+      "name": "Radyoloji",
+      "average_score": 68.8,
+      "difficulty": "Yuksek",
+      "advice": "Radyoloji icin vaka sorularini (Case Studies) cozme hizini artirmalisin."
+    },
+    {
+      "name": "Fiziksel Tip ve Rehabilitasyon",
+      "average_score": 68.9,
+      "difficulty": "Yuksek",
+      "advice": "FTR hedefine ulasmak icin Anatomi netlerin belirleyici olacaktir."
+    },
+    {
+      "name": "Ic Hastaliklari (Dahiliye)",
+      "average_score": 63.5,
+      "difficulty": "Orta - Yuksek",
+      "advice": "Dahiliye Genis bir kapsama sahip. Ozellikle vaka bazli calisma (Clinical Cases) puanini hizla artirir."
+    },
+    {
+      "name": "Cocuk Sagligi ve Hastaliklari",
+      "average_score": 58.2,
+      "difficulty": "Orta",
+      "advice": "Pediatri icin temel mekanizmalari iyi anlamalisin. Netlerin 60 bandina yaklastiginda yerlesme sansin cok yuksek."
+    },
+    {
+      "name": "Genel Cerrahi",
+      "average_score": 56.5,
+      "difficulty": "Orta",
+      "advice": "Genel cerrahi icin vaka sorulari senin en buyuk yardimcin olacaktir."
+    },
+    {
+      "name": "Kadin Hastaliklari ve Dogum",
+      "average_score": 52.4,
+      "difficulty": "Orta",
+      "advice": "Kadin dogum hedefine ulasmak icin temel klinik bilgileri sabitlemen yeterli olacaktir."
+    },
+    {
+      "name": "Anesteziyoloji ve Reanimasyon",
+      "average_score": 48.5,
+      "difficulty": "Dusun - Orta",
+      "advice": "Anestezi icin 50 puan bandini asmak seni guvenli bolgeye tasiyacaktir."
+    },
+    {
+      "name": "Acil Tip",
+      "average_score": 45.2,
+      "difficulty": "Dusuk - Orta",
+      "advice": "Acil tip icin temel baraji asip klinik netlerini stabilize etmen yerlesmen icin yeterlidir."
+    }
+  ]
+}

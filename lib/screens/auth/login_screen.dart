@@ -485,7 +485,7 @@ class _LoginScreenState extends State<LoginScreen> {
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
           child: Padding(
-            padding: const EdgeInsets.all(24),
+            padding: const EdgeInsets.fromLTRB(22, 28, 22, 24),
             child: _buildFormContent(vm),
           ),
         ),
@@ -699,7 +699,7 @@ class _LoginForm extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: 24),
+        const SizedBox(height: 20),
 
         // General error
         if (vm.generalError != null) ...[
@@ -738,7 +738,7 @@ class _LoginForm extends StatelessWidget {
         if (defaultTargetPlatform == TargetPlatform.iOS ||
             defaultTargetPlatform == TargetPlatform.macOS)
           const SizedBox(height: 10),
-        const SizedBox(height: 4),
+        const SizedBox(height: 16),
       ],
     );
   }

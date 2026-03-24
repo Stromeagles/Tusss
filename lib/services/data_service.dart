@@ -16,34 +16,40 @@ class DataService {
 
   // ── Tek modül yükleme (try-catch ile korumalı) ──────────────────────────
 
+  Future<List<Topic>> _loadSingleFile(String path) async {
+    try {
+      final jsonString = await rootBundle.loadString(path);
+      final decoded = json.decode(jsonString);
+      if (decoded is List) {
+        return decoded
+            .map((e) => Topic.fromJson(e as Map<String, dynamic>))
+            .toList();
+      } else if (decoded is Map<String, dynamic>) {
+        return [Topic.fromJson(decoded)];
+      }
+      return [];
+    } on FormatException catch (e) {
+      lastError = 'JSON format hatasi: $path ($e)';
+      return [];
+    } catch (e) {
+      lastError = 'Veri yukleme hatasi: $path ($e)';
+      return [];
+    }
+  }
+
   Future<List<Topic>> loadBySubject(String subjectId) async {
     if (_cache.containsKey(subjectId)) return _cache[subjectId]!;
 
     final module = SubjectRegistry.findById(subjectId);
     if (module == null) return [];
 
-    final allTopics = <Topic>[];
     lastError = null;
 
-    // Her JSON dosyasını ayrı ayrı yükle — biri bozuksa diğerleri etkilenmesin
-    for (final path in module.assetPaths) {
-      try {
-        final jsonString = await rootBundle.loadString(path);
-        final decoded = json.decode(jsonString);
-
-        if (decoded is List) {
-          allTopics.addAll(
-            decoded.map((e) => Topic.fromJson(e as Map<String, dynamic>)),
-          );
-        } else if (decoded is Map<String, dynamic>) {
-          allTopics.add(Topic.fromJson(decoded));
-        }
-      } on FormatException catch (e) {
-        lastError = 'JSON format hatasi: $path ($e)';
-      } catch (e) {
-        lastError = 'Veri yukleme hatasi: $path ($e)';
-      }
-    }
+    // Her JSON dosyasını paralel yükle — biri bozuksa diğerleri etkilenmesin
+    final results = await Future.wait(
+      module.assetPaths.map(_loadSingleFile),
+    );
+    final allTopics = results.expand((list) => list).toList();
 
     _cache[subjectId] = allTopics;
     return allTopics;

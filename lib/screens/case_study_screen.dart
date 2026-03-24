@@ -79,24 +79,27 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
   void initState() {
     super.initState();
     _mode = widget.initialMode;
-    _checkPremiumStatus();
-    _checkLimitAndLoad();
+    _initializeScreen();
   }
 
-  Future<void> _checkPremiumStatus() async {
-    final premium = await _premiumService.isPremium();
-    final remaining = await _premiumService.remainingCases();
-    if (mounted) {
-      setState(() {
-        _isPremium = premium;
-        _remaining = remaining;
-      });
-    }
-  }
+  Future<void> _initializeScreen() async {
+    final results = await Future.wait([
+      _premiumService.isPremium(),
+      _premiumService.remainingCases(),
+      _premiumService.isCaseLimitReached(),
+    ]);
 
-  Future<void> _checkLimitAndLoad() async {
-    final limitReached = await _premiumService.isCaseLimitReached();
-    if (limitReached && mounted) {
+    final premium      = results[0] as bool;
+    final remaining    = results[1] as int;
+    final limitReached = results[2] as bool;
+
+    if (!mounted) return;
+    setState(() {
+      _isPremium = premium;
+      _remaining = remaining;
+    });
+
+    if (limitReached) {
       setState(() {
         _limitReached = true;
         _loading = false;

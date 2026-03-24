@@ -343,6 +343,39 @@ class AiInsightSheet extends StatelessWidget {
     );
   }
 
+  /// TUS 2024-2025 branş minimum yerleşme puanı tahminleri
+  static const Map<String, double> _branchMinScores = {
+    'Acil Tıp': 57.0,
+    'Aile Hekimliği': 52.0,
+    'Anatomi': 53.0,
+    'Anesteziyoloji': 63.0,
+    'Beyin Cerrahisi': 70.0,
+    'Biyokimya': 53.0,
+    'Çocuk Cerrahisi': 69.0,
+    'Çocuk Sağlığı': 64.0,
+    'Dermatoloji': 74.0,
+    'Enfeksiyon Hastalıkları': 59.0,
+    'Fiziksel Tıp': 61.0,
+    'Genel Cerrahi': 66.0,
+    'Göğüs Cerrahisi': 66.0,
+    'Göğüs Hastalıkları': 61.0,
+    'Göz Hastalıkları': 71.0,
+    'Histoloji': 53.0,
+    'İç Hastalıkları': 66.0,
+    'Kadın Hastalıkları': 68.0,
+    'Kalp Damar Cerrahisi': 69.0,
+    'Kardiyoloji': 73.0,
+    'KBB': 71.0,
+    'Mikrobiyoloji': 56.0,
+    'Nöroloji': 66.0,
+    'Ortopedi': 68.0,
+    'Patoloji': 56.0,
+    'Plastik Cerrahi': 70.0,
+    'Psikiyatri': 66.0,
+    'Radyoloji': 71.0,
+    'Üroloji': 68.0,
+  };
+
   Widget _buildTargetBranchCard() {
     final hasTarget = targetBranch != 'Henüz Seçilmedi' && targetBranch.isNotEmpty;
     final targetPuan = progress.targetScore;
@@ -350,23 +383,28 @@ class AiInsightSheet extends StatelessWidget {
     final fark = (targetPuan - mevcutPuan).clamp(0.0, 100.0);
     final recommended = progress.recommendedDailyGoal;
     final days = progress.daysToExam;
+    final branchMin = _branchMinScores[targetBranch];
 
     final Color accentColor = hasTarget ? AppTheme.neonPurple : AppTheme.textSecondary;
 
-    String action;
+    // Yol haritası metni
+    String roadmap;
     if (!hasTarget) {
-      action = 'Profil ekranından hedef branşını seçersen sana özel analiz yapabilirim.';
+      roadmap = 'Profil ekranından hedef branşını seçersen sana özel yol haritası çıkarırım.';
+    } else if (branchMin != null && targetPuan < branchMin) {
+      roadmap = '⚠️ $targetBranch için ortalama yerleşme puanı ${branchMin.toStringAsFixed(0)} civarında. Hedefini ${branchMin.toStringAsFixed(0)}+ olarak güncellemeyi düşün.';
     } else if (fark <= 2) {
-      action = '$targetBranch için gereken $targetPuan puana çok yakınsın! Mevcut çalışma temponunu koru.';
+      roadmap = '✅ $targetBranch için gerekli ${targetPuan.toStringAsFixed(0)} puana çok yakınsın. Mevcut temponu koru!';
     } else {
-      action = '$targetBranch için hedefin $targetPuan puan. Şu anki tahminin $mevcutPuan puan. ${fark.toStringAsFixed(0)} puanlık açığı kapatmak için $days günde günde $recommended soru/kart çözmelisin.';
+      final netArtisi = (fark * 4).ceil(); // ~4 net = 1 puan
+      roadmap = '$targetBranch için $days günde ${fark.toStringAsFixed(0)} puanlık açığı kapatmak için günde $recommended kart/soru çözmelisin. Yaklaşık $netArtisi net artışı gerekiyor.';
     }
 
     return Container(
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [accentColor.withValues(alpha: 0.12), accentColor.withValues(alpha: 0.05)],
+          colors: [accentColor.withValues(alpha: 0.12), accentColor.withValues(alpha: 0.04)],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
@@ -408,12 +446,18 @@ class AiInsightSheet extends StatelessWidget {
                 Icon(Icons.arrow_forward_rounded, color: accentColor.withValues(alpha: 0.5), size: 16),
                 const SizedBox(width: 8),
                 _ScoreChip(label: 'Hedef', value: targetPuan.toStringAsFixed(0), color: accentColor),
+                if (branchMin != null) ...[
+                  const SizedBox(width: 8),
+                  Icon(Icons.arrow_forward_rounded, color: AppTheme.textSecondary.withValues(alpha: 0.4), size: 16),
+                  const SizedBox(width: 8),
+                  _ScoreChip(label: 'Min.Yerleşme', value: branchMin.toStringAsFixed(0), color: AppTheme.neonPink),
+                ],
               ],
             ),
           ],
           const SizedBox(height: 12),
           Text(
-            action,
+            roadmap,
             style: GoogleFonts.inter(
               color: isDark ? Colors.white.withValues(alpha: 0.85) : Colors.black87,
               fontSize: 13,

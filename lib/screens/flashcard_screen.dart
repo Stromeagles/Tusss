@@ -75,7 +75,26 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   }
 
   Future<void> _checkLimitAndLoad() async {
-    final limitReached = await _premiumService.isFlashcardLimitReached();
+    // Premium kontrolü ve veri yüklemeyi paralel başlat
+    final limitReachedFuture = _premiumService.isFlashcardLimitReached();
+
+    // Veriyi şimdiden arka planda yükle (cache varsa anında döner)
+    List<Flashcard> preloadedCards = [];
+    try {
+      if (widget.topicFilter != null) {
+        preloadedCards = widget.topicFilter!.flashcards;
+      } else if (widget.subjectIds != null && widget.subjectIds!.isNotEmpty) {
+        final futures = widget.subjectIds!
+            .map((id) => _dataService.loadFlashcards(subjectId: id));
+        final resultsList = await Future.wait(futures);
+        preloadedCards = resultsList.expand((c) => c).toList();
+      } else {
+        preloadedCards = await _dataService.loadFlashcards(subjectId: widget.subjectId);
+      }
+    } catch (_) {}
+
+    final limitReached = await limitReachedFuture;
+
     if (limitReached && mounted) {
       setState(() {
         _limitReached = true;
@@ -83,7 +102,21 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       });
       return;
     }
-    _loadCards();
+
+    // Veri zaten hazır, sadece mode uygula
+    if (preloadedCards.isNotEmpty) {
+      _allCards = preloadedCards;
+      await _applyMode(preloadedCards);
+      if (_dataService.lastError != null && mounted) {
+        ErrorHandler.showSnackbar(
+          context,
+          message: 'Bazı kart dosyaları yüklenemedi. Mevcut kartlarla devam ediliyor.',
+          isError: false,
+        );
+      }
+    } else {
+      await _loadCards();
+    }
   }
 
   @override

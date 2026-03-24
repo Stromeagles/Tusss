@@ -21,7 +21,6 @@ import '../services/progress_service.dart';
 import '../services/user_service.dart';
 import '../services/spaced_repetition_service.dart';
 import '../services/theme_service.dart';
-import '../widgets/daily_goal_widget.dart';
 import '../utils/transitions.dart';
 import 'flashcard_screen.dart';
 import 'case_study_screen.dart';
@@ -852,68 +851,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
 
-  Widget _buildAiCoachButton(bool isDark) {
-    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
-    return GestureDetector(
-      onTap: () => _openAiInsightSheet(isDark),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              AppTheme.neonPurple.withValues(alpha: 0.10),
-              AppTheme.cyan.withValues(alpha: 0.07),
-            ],
-            begin: Alignment.centerLeft,
-            end: Alignment.centerRight,
-          ),
-          borderRadius: BorderRadius.circular(18),
-          border: Border.all(
-            color: AppTheme.neonPurple.withValues(alpha: 0.28),
-          ),
-        ),
-        child: Row(
-          children: [
-            Container(
-              width: 42, height: 42,
-              decoration: BoxDecoration(
-                color: AppTheme.neonPurple.withValues(alpha: 0.14),
-                shape: BoxShape.circle,
-              ),
-              child: const Icon(Icons.smart_toy_rounded,
-                  color: AppTheme.neonPurple, size: 22),
-            ),
-            const SizedBox(width: 14),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'AI Koç Analizi',
-                    style: GoogleFonts.inter(
-                      color: textColor,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  Text(
-                    'Zayıf konular, tavsiyeler ve hedef analizi',
-                    style: GoogleFonts.inter(
-                      color: AppTheme.neonPurple.withValues(alpha: 0.8),
-                      fontSize: 11,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            const Icon(Icons.arrow_forward_ios_rounded,
-                color: AppTheme.neonPurple, size: 14),
-          ],
-        ),
-      ),
-    );
-  }
 
   void _openAiInsightSheet(bool isDark) {
     // Branş → yanlış sayısı

@@ -181,18 +181,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
                                   const SizedBox(height: 20),
 
-                                  // ── Deneme Sınavı ─────────────────────────────────────
-                                  _buildDenemeButton(isDark),
-
-                                  const SizedBox(height: 12),
-
                                   // ── Spot Bilgiler Hızlı Erişim ────────────────────────
                                   _buildSpotBilgilerButton(isDark),
-
-                                  const SizedBox(height: 12),
-
-                                  // ── Klasörlerim Hızlı Erişim ──────────────────────────
-                                  _buildKlasorlerimButton(isDark),
 
                                   const SizedBox(height: 20),
                                 ],
@@ -573,153 +563,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Icon(Icons.chevron_right_rounded,
                   color: AppTheme.neonPurple.withValues(alpha: 0.6), size: 22),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  // ── Deneme Sınavı Hızlı Erişim ──────────────────────────────────────────────
-
-  Widget _buildDenemeButton(bool isDark) {
-    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
-    final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
-
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: GestureDetector(
-        onTap: () => Navigator.push(context,
-            AppRoute.slideUp(const MockExamSetupScreen())),
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: isDark
-                  ? [const Color(0xFF1A0A10), const Color(0xFF1A1230)]
-                  : [const Color(0xFFFFEEEE), const Color(0xFFFFEBF5)],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-            borderRadius: BorderRadius.circular(18),
-            border: Border.all(
-              color: AppTheme.cyan.withValues(alpha: isDark ? 0.30 : 0.20)),
-            boxShadow: [
-              BoxShadow(
-                color: AppTheme.cyan.withValues(alpha: isDark ? 0.10 : 0.05),
-                blurRadius: 16,
-              ),
-            ],
-          ),
-          child: Row(
-            children: [
-              Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      AppTheme.cyan.withValues(alpha: 0.20),
-                      AppTheme.neonPink.withValues(alpha: 0.10),
-                    ],
-                  ),
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.30)),
-                ),
-                child: const Icon(Icons.assignment_rounded,
-                    color: AppTheme.cyan, size: 22),
-              ),
-              const SizedBox(width: 14),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Text('Deneme Sınavı',
-                          style: GoogleFonts.inter(
-                            color: textColor, fontSize: 15, fontWeight: FontWeight.w800)),
-                        const SizedBox(width: 8),
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
-                          decoration: BoxDecoration(
-                            color: AppTheme.cyan.withValues(alpha: 0.15),
-                            borderRadius: BorderRadius.circular(6),
-                          ),
-                          child: Text('YENİ',
-                            style: GoogleFonts.inter(
-                              color: AppTheme.cyan, fontSize: 9, fontWeight: FontWeight.w900)),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 2),
-                    Text('TUS formatında zamanlı sınav',
-                      style: GoogleFonts.inter(
-                        color: subColor, fontSize: 12, fontWeight: FontWeight.w500)),
-                  ],
-                ),
-              ),
-              Icon(Icons.chevron_right_rounded,
-                  color: AppTheme.cyan.withValues(alpha: 0.6), size: 22),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  // ── Klasörlerim Hızlı Erişim ──────────────────────────────────────────────
-
-  Widget _buildKlasorlerimButton(bool isDark) {
-    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
-    final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
-
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: GestureDetector(
-        onTap: () => Navigator.push(context,
-            AppRoute.slideUp(const CollectionsScreen())),
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: isDark
-                  ? [const Color(0xFF0F1A2E), const Color(0xFF1A1A30)]
-                  : [const Color(0xFFE6F0FF), const Color(0xFFEEE6FF)],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-            borderRadius: BorderRadius.circular(18),
-            border: Border.all(
-              color: AppTheme.cyan.withValues(alpha: isDark ? 0.20 : 0.15)),
-          ),
-          child: Row(
-            children: [
-              Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: AppTheme.cyan.withValues(alpha: 0.12),
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: const Icon(Icons.folder_rounded,
-                    color: AppTheme.cyan, size: 22),
-              ),
-              const SizedBox(width: 14),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text('Klasörlerim',
-                      style: GoogleFonts.inter(
-                        color: textColor, fontSize: 15, fontWeight: FontWeight.w800)),
-                    const SizedBox(height: 2),
-                    Text('Kaydettiğin kartları organize et',
-                      style: GoogleFonts.inter(
-                        color: subColor, fontSize: 12, fontWeight: FontWeight.w500)),
-                  ],
-                ),
-              ),
-              Icon(Icons.chevron_right_rounded,
-                  color: AppTheme.cyan.withValues(alpha: 0.6), size: 22),
             ],
           ),
         ),
@@ -1202,14 +1045,16 @@ class _HomeScreenState extends State<HomeScreen> {
     final isFocusActive = focusService.isRunning || focusService.isAudioPlaying;
 
     final items = [
-      (Icons.home_rounded,           Icons.home_outlined,           'Home'),
-      (Icons.bar_chart_rounded,      Icons.bar_chart_outlined,      'Analiz'),
+      (Icons.home_rounded,                Icons.home_outlined,                'Home'),
+      (Icons.folder_special_rounded,      Icons.folder_special_outlined,      'Klasörler'),
       (
         isFocusActive ? Icons.timer_rounded : Icons.timer_outlined,
         isFocusActive ? Icons.timer_rounded : Icons.timer_outlined,
         'Odak'
       ),
-      (Icons.person_rounded,         Icons.person_outline_rounded,  'Profil'),
+      (Icons.assignment_rounded,          Icons.assignment_outlined,          'Deneme'),
+      (Icons.bar_chart_rounded,           Icons.bar_chart_outlined,           'Analiz'),
+      (Icons.person_rounded,              Icons.person_outline_rounded,       'Profil'),
     ];
 
     return Padding(
@@ -1251,7 +1096,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: AnimatedContainer(
                     duration: const Duration(milliseconds: 220),
                     curve: Curves.easeOutCubic,
-                    padding: EdgeInsets.symmetric(horizontal: isActive ? 16 : 12, vertical: 8),
+                    padding: EdgeInsets.symmetric(horizontal: isActive ? 10 : 6, vertical: 8),
                     decoration: isActive
                         ? BoxDecoration(
                             color:  AppTheme.cyan.withValues(alpha: isDark ? 0.14 : 0.12),
@@ -1282,8 +1127,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             ],
                           ],
                         ),
-                        // ── Focus Indicators (Next to Profile) ──
-                        if (i == 5) ...[
+                        // ── Focus Indicators (Odak sekmesi: index 2) ──
+                        if (i == 2) ...[
                           if (focusService.isRunning)
                             Positioned(
                               left: -18, top: 0,
@@ -1325,15 +1170,23 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() => _navIndex = index);
     switch (index) {
       case 0: break; // Home
-      case 1: // Analiz
-        await Navigator.push(context, AppRoute.slideUp(ProgressAnalyticsScreen(user: _user, progress: _progress)));
+      case 1: // Klasörler
+        await Navigator.push(context, AppRoute.slideUp(const CollectionsScreen()));
         _loadData();
         break;
       case 2: // Odak
         await Navigator.push(context, AppRoute.slideUp(const FocusScreen()));
         _loadData();
         break;
-      case 3: // Profil
+      case 3: // Deneme
+        await Navigator.push(context, AppRoute.slideUp(const MockExamSetupScreen()));
+        _loadData();
+        break;
+      case 4: // Analiz
+        await Navigator.push(context, AppRoute.slideUp(ProgressAnalyticsScreen(user: _user, progress: _progress)));
+        _loadData();
+        break;
+      case 5: // Profil
         await Navigator.push(context, AppRoute.slideUp(const ProfileScreen()));
         _loadData();
         break;

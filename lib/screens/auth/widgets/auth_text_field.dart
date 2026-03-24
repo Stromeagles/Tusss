@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:google_fonts/google_fonts.dart';
 import '../../../theme/app_theme.dart';
 
@@ -106,37 +107,40 @@ class _AuthTextFieldState extends State<AuthTextField>
                   )!;
             final glowOpacity = hasError ? 0.0 : _borderAnim.value * 0.30;
 
+            final fieldContainer = Container(
+              decoration: BoxDecoration(
+                color: Colors.white.withValues(alpha: 0.06),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(
+                  color: borderColor,
+                  width: _isFocused && !hasError ? 1.5 : 1.0,
+                ),
+                boxShadow: [
+                  if (glowOpacity > 0) ...[
+                    BoxShadow(
+                      color: AppTheme.cyan.withValues(alpha: glowOpacity),
+                      blurRadius: 14,
+                      spreadRadius: 1,
+                    ),
+                    BoxShadow(
+                      color: AppTheme.cyan.withValues(alpha: glowOpacity * 0.4),
+                      blurRadius: 28,
+                      spreadRadius: 2,
+                    ),
+                  ],
+                ],
+              ),
+              child: child,
+            );
+
+            // Web'de BackdropFilter input'u bloke edebildiğinden kullanılmaz
+            if (kIsWeb) return fieldContainer;
+
             return ClipRRect(
               borderRadius: BorderRadius.circular(12),
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white.withValues(alpha: 0.04),
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(
-                      color: borderColor,
-                      width: _isFocused && !hasError ? 1.5 : 1.0,
-                    ),
-                    boxShadow: [
-                      if (glowOpacity > 0) ...[
-                        // İç glow — yoğun
-                        BoxShadow(
-                          color: AppTheme.cyan.withValues(alpha: glowOpacity),
-                          blurRadius: 14,
-                          spreadRadius: 1,
-                        ),
-                        // Dış glow — yumuşak hale
-                        BoxShadow(
-                          color: AppTheme.cyan.withValues(alpha: glowOpacity * 0.4),
-                          blurRadius: 28,
-                          spreadRadius: 2,
-                        ),
-                      ],
-                    ],
-                  ),
-                  child: child,
-                ),
+                child: fieldContainer,
               ),
             );
           },

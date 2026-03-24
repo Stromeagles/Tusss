@@ -13,9 +13,11 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'screens/auth/login_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/onboarding_screen.dart';
+import 'screens/web_landing_screen.dart';
 import 'services/ai_service.dart';
 import 'services/auth_service.dart';
 import 'services/focus_service.dart';
+import 'services/spaced_repetition_service.dart';
 import 'services/mock_exam_service.dart';
 import 'services/collection_service.dart';
 import 'services/notification_service.dart';
@@ -100,6 +102,7 @@ class AuthWrapper extends StatefulWidget {
 
 class _AuthWrapperState extends State<AuthWrapper> {
   bool? _onboardingDone;
+  bool _proceededToWeb = false; // Session-only: her yeni ziyarette false başlar
   bool _initialized = false;
 
   @override
@@ -120,6 +123,8 @@ class _AuthWrapperState extends State<AuthWrapper> {
     try {
       final prefs = await SharedPreferences.getInstance().timeout(const Duration(seconds: 4));
       _onboardingDone = prefs.getBool('onboarding_done') ?? false;
+      // _proceededToWeb SharedPreferences'e kaydedilmiyor —
+      // her yeni oturumda landing page gösterilsin
     } catch (_) {
       _onboardingDone = false;
     }
@@ -139,10 +144,21 @@ class _AuthWrapperState extends State<AuthWrapper> {
     if (mounted) setState(() => _onboardingDone = true);
   }
 
+  Future<void> _handleWebContinue() async {
+    // Sadece state güncelle — SharedPreferences'e kaydetme
+    // Landing page her yeni ziyarette tekrar gösterilsin
+    if (mounted) setState(() => _proceededToWeb = true);
+  }
+
   @override
   Widget build(BuildContext context) {
     if (!_initialized) {
       return _buildSplashScreen();
+    }
+
+    // Web landing logic
+    if (kIsWeb && !_proceededToWeb) {
+      return WebLandingScreen(onContinue: _handleWebContinue);
     }
 
     return StreamBuilder<User?>(
@@ -153,6 +169,8 @@ class _AuthWrapperState extends State<AuthWrapper> {
         }
 
         if (snapshot.hasData && snapshot.data != null) {
+          // Giriş yapıldı — SRS cache'ini temizle, Firestore'dan çeksin
+          SpacedRepetitionService().onUserLogin();
           if (!(_onboardingDone ?? false)) {
             return OnboardingScreen(onComplete: _completeOnboarding);
           }

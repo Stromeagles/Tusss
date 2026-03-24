@@ -28,14 +28,14 @@
       {
         "case": "25 yaşında bir hasta, 2 haftadır devam eden ateş, kabızlık ve gövdesinde pembe lekelerle başvuruyor. Nabzı 60/dakika saptanıyor (Ateş 39C).",
         "options": [
-          "Tifo",
-          "Bruselloz",
-          "Sıtma",
-          "Pnömoni",
-          "E) Integronlar"
+          "A) Tifo (S. Typhi)",
+          "B) Bruselloz (B. melitensis)",
+          "C) Sıtma (P. falciparum)",
+          "D) Atipik Pnömoni",
+          "E) Q Ateşi (C. burnetii)"
         ],
-        "correct_answer": "Tifo",
-        "explanation": "Uzamış ateş, rölatif bradikardi ve taş roze lekeleri Tifo kliniğidir.",
+        "correct_answer": "A) Tifo (S. Typhi)",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Tifo (Enterik Ateş), S. Typhi'nin neden olduğu sistemik bir enfeksiyondur. \n\n🎓 HOCA ÖZETİ:\n- Faget Belirtisi: Yüksek ateşe rağmen nabzın düşük kalması (Rölatif bradikardi). Tifo için çok tipiktir.\n- Rose Spots (Gül lekeleri): Gövdede görülen geçici pembe maküller.\n- Komplikasyon: 3. haftada Peyer plaklarının nekrozu sonucu bağırsak perforasyonu (delinme) riski vardır.\n- Taşıyıcılık: Safra kesesi en sık odaktır; kolesistektomi gerekebilir.",
         "id": "cc-micro-enter-001-001"
       }
     ]

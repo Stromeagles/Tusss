@@ -46,42 +46,70 @@
         "id": "cc-micro-prof-001",
         "case": "Klebsiella pneumoniae suşu izole edilen bir hastada çoklu ilaç direncinin (horizontal) en yaygın bulaş mekanizması hangisidir?",
         "options": [
-          "Transformasyon",
-          "Transdüksiyon",
-          "Konjugatif Plazmidler",
-          "Mutasyon",
-          "DNA Giraz İnhibisyonu"
+          "A) Transformasyon",
+          "B) Transdüksiyon",
+          "C) Konjugatif Plazmidler",
+          "D) Mutasyon",
+          "E) DNA Giraz İnhibisyonu"
         ],
-        "correct_answer": "Konjugatif Plazmidler",
-        "explanation": "Hızlı direnç yayılımı, bakteriler arasında genetik materyal aktarımı sağlayan konjugasyon yoluyla gerçekleşir. Klebsiella ve E.coli gibi Gram negatif basillerde bu süreç konjugatif plazmidler üzerinden yürütülür.\n\n💡 KRİTİK BİLGİ: Gram negatif çubuklarda (Kleb., E.coli) plazmid aracılı konjugasyon 'P-pili' üzerinden gerçekleşir ve hastane ortamında çoklu ilaç direncinin (horizontal gen transferi) en sık nedenidir.",
+        "correct_answer": "C) Konjugatif Plazmidler",
+        "explanation": "Hızlı direnç yayılımı, bakteriler arasında genetik materyal aktarımı sağlayan konjugasyon yoluyla gerçekleşir. Klebsiella ve E.coli gibi Gram negatif basillerde bu süreç konjugatif plazmidler üzerinden yürütülür.\n\n💡 KRİTİK BİLGİ: Gram negatif çubuklarda (Kleb., E.coli) plazmid aracılı konjugasyon 'P-pili' üzerinden gerçekleşir ve hastane ortamında çoklu ilaç direncinin (horizontal gen transferi) en sık nedenidir.\n\n🎓 HOCA ÖZETİ (PROF. NOTU): \n- Gram Negatiflerde Konjugasyon: Seks pilusu (sekretuar pili) kullanılır.\n- Gram Pozitiflerde Konjugasyon: Seks pilusu YOKTUR. Feromonlar (clumping factor) yardımıyla hücreler birbirine yapışır.\n- Konjugasyon hem kromozom hem plazmid aktarabilir, ancak en sık plazmid (R plazmidi) aktarılır.",
         "difficulty": "medium"
       },
       {
         "id": "cc-micro-prof-002",
         "case": "Aşağıdakilerden hangisi Neisseria meningitidis'in nazofarenks epiteline tutunmasını sağlayan en önemli virülans faktörüdür?",
         "options": [
-          "Kapsül",
-          "Pili",
-          "IgA Proteaz",
-          "LOS (Lipooligosakkarid)",
-          "Hiyalüronidaz"
+          "A) Kapsül",
+          "B) Pili",
+          "C) IgA Proteaz",
+          "D) LOS (Lipooligosakkarid)",
+          "E) Hiyalüronidaz"
         ],
-        "correct_answer": "Pili",
-        "explanation": "Meningokoklar nazofarenks mukozasına pili (fimbriya) yapıları ile tutunurlar. Pili, kolonizasyonun ilk aşaması için kritiktir. Kapsül ise daha çok fagositozdan korunma ve sistemik yayılım (menenjit) ile ilgilidir.\n\n💡 KRİTİK BİLGİ: N. meningitidis ve N. gonorrhoeae için pili, mukozaya 'yapışma' (adhezyon) demektir. Pili olmadan hastalık yapamazlar.",
+        "correct_answer": "B) Pili",
+        "explanation": "Meningokoklar nazofarenks mukozasına pili (fimbriya) yapıları ile tutunurlar. Pili, kolonizasyonun ilk aşaması için kritiktir. Kapsül ise daha çok fagositozdan korunma ve sistemik yayılım (menenjit) ile ilgilidir.\n\n💡 KRİTİK BİLGİ: N. meningitidis ve N. gonorrhoeae için pili, mukozaya 'yapışma' (adhezyon) demektir. Pili olmadan hastalık yapamazlar.\n\n🎓 HOCA ÖZETİ (PROF. NOTU): \n- Neisseria türlerinde 'Antijenik Varyasyon' denince akla Pili ve Opa proteinleri gelmelidir. \n- N. meningitidis'te endotoksin olarak LPS değil, LOS (Lipooligosakkarid) bulunur. Farkı: O-antijeni yoktur, bu yüzden daha hızlı yayılır ve şoka sokar!",
         "difficulty": "easy"
       },
       {
         "id": "cc-micro-prof-003",
         "case": "Diyabetik ketoasidoz tablosuyla başvuran bir hastada gelişen rinoserebral enfeksiyonun en olası etkeni hangisidir?",
         "options": [
-          "Aspergillus fumigatus",
-          "Candida albicans",
-          "Rhizopus türleri",
-          "Cryptococcus neoformans",
-          "Mucor türleri"
+          "A) Aspergillus fumigatus",
+          "B) Candida albicans",
+          "C) Rhizopus türleri",
+          "D) Cryptococcus neoformans",
+          "E) Mucor türleri"
         ],
-        "correct_answer": "Rhizopus türleri",
-        "explanation": "Diyabetik ketoasidozlu hastalarda 90 derece dik açıyla dallanan, septasız hiflere sahip Zygomycetes sınıfı mantarlar (Rhizopus, Mucor) çok hızlı ilerleyen rinoserebral enfeksiyona yol açar.\n\n💡 KRİTİK BİLGİ: Tusta 'Diyabet + Burun/Beyin enfeksiyonu + 90 derece dallanma' üçlüsü gelirse tek cevap: Mukormikoz (Rhizopus/Mucor).",
+        "correct_answer": "C) Rhizopus türleri",
+        "explanation": "Diyabetik ketoasidozlu hastalarda 90 derece dik açıyla dallanan, septasız hiflere sahip Zygomycetes sınıfı mantarlar (Rhizopus, Mucor) çok hızlı ilerleyen rinoserebral enfeksiyona yol açar.\n\n💡 KRİTİK BİLGİ: Tusta 'Diyabet + Burun/Beyin enfeksiyonu + 90 derece dallanma' üçlüsü gelirse tek cevap: Mukormikoz (Rhizopus/Mucor).\n\n🎓 HOCA ÖZETİ (PROF. NOTU): \n- Neden Diyabetik Ketoasidoz? Çünkü bu mantarlar asidik ortamda ve yüksek glukoz seviyelerinde ketoz redüktaz enzimi sayesinde hızla ürer. Ayrıca demir bağlayıcı proteinlere (siderofor) sahiptirler, ketoasidozda serbest demir artışı üremelerini kamçılar!",
+        "difficulty": "medium"
+      },
+      {
+        "id": "cc-micro-prof-004",
+        "case": "Klamidya yaşam döngüsüyle ilgili aşağıdakilerden hangisi yanlıştır?",
+        "options": [
+          "A) Elementer cisimcik (EB) hücre dışı stabil, bulaşıcı formdur.",
+          "B) Retiküler cisimcik (RB) hücre içi çoğalan, replikatif formdur.",
+          "C) EB, konak hücresine endositoz ile girer.",
+          "D) RB, ATP üretebilen bağımsız bir formdur.",
+          "E) RB'ler tekrar EB'ye dönüşerek hücreden salınır."
+        ],
+        "correct_answer": "D) RB, ATP üretebilen bağımsız bir formdur.",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Chlamydia türleri 'enerji paraziti' (obligat intraselüler) olarak bilinirler çünkü kendi ATP'lerini sentezleyemezler, konak hücreden ATP çalarlar (ATP/ADP translokaz).\n\n🎓 HOCA ÖZETİ:\n- EB (Elementer): E-nfeksiyöz (Bulaşıcı), dış ortamda yaşar, inerttir.\n- RB (Retiküler): R-eplikatif (Çoğalan), hücre içinde bölünür, metabolik aktiftir ama bulaşıcı değildir.\n- TUS İPUCU: Giemsa boyası ile inklüzyon cisimcikleri görülür. Tanıda PCR (NAAT) altın standarttır.",
+        "difficulty": "hard"
+      },
+      {
+        "id": "cc-micro-prof-005",
+        "case": "Atipik pnömoni tanısıyla takip edilen bir hastada, eritrositleri soğukta kümeleyen (soğuk aglütinin +) bir etken saptanıyor. Bu etken aşağıdakilerden hangisidir?",
+        "options": [
+          "A) Legionella pneumophila",
+          "B) Mycoplasma pneumoniae",
+          "C) Chlamydia psittaci",
+          "D) Coxiella burnetii",
+          "E) Klebsiella pneumoniae"
+        ],
+        "correct_answer": "B) Mycoplasma pneumoniae",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Mycoplasma pneumoniae, hücre duvarı olmayan, membranında sterol (istisna!) bulunduran en küçük bakteridir.\n\n🎓 HOCA ÖZETİ:\n- Soğuk Aglütinin: Mycoplasma enfeksiyonunda eritrosit 'I' antijenine karşı IgM antikorları oluşur, testi (+) yapar.\n- Klinik: Genç erişkinde 'Walk-in' (yürüyen) pnömoni yapar; AC grafisi kötü ama hasta rahattır.\n- Tedavi: Penisilinler etkisizdir (duvar yok!). Makrolidler veya florokinolonlar seçilir.",
         "difficulty": "medium"
       }
     ],

@@ -38,14 +38,14 @@
       {
         "case": "Hayvancılıkla uğraşan bir hastada el sırtında ortası siyah krutlu, ağrısız, periferi ödemli bir lezyon gelişiyor. Çevreden yapılan gram incelemede gram pozitif hareketsiz basiller görülüyor. Etken nedir?",
         "options": [
-          "B. cereus",
-          "S. aureus",
-          "B. anthracis",
-          "L. monocytogenes",
-          "E) Integronlar"
+          "A) B. cereus (Gıda zehirlenmesi)",
+          "B) S. aureus (Ağrılı püstül)",
+          "C) B. anthracis (Şarbon - Püstül malin)",
+          "D) L. monocytogenes (Menenjit)",
+          "E) E. rhusiopathiae (Erizipeloid)"
         ],
-        "correct_answer": "B. anthracis",
-        "explanation": "Hayvan teması öyküsü, ağrısız siyah eskar (püstül malin) ve gram pozitif hareketsiz basiller şarbonun deri formudur.",
+        "correct_answer": "C) B. anthracis (Şarbon - Püstül malin)",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: B. anthracis, hayvancılıkla uğraşanlarda 'Püstül malin' denilen ağrısız, siyah nekrotik merkezli deri lezyonu yapar. \n\n🎓 HOCA ÖZETİ:\n- Morfoloji: Gram pozitif, uçları küt (bamya çiçeği / bambu kamışı) şeklinde basiller.\n- Kültür: Kanlı agarda 'Medusa başı' kolonileri yapar. Ters çam ağacı şeklinde jelatin eritir.\n- Kapsül: Polipeptid (D-glutamik asit) yapıdadır (istisna!).\n- Toksin: PA (bağlayıcı), EF (ödem yapan cAMP), LF (öldürücü metaloproteaz).",
         "id": "cc-micro-gpos-bac-001-001"
       }
     ]
@@ -90,14 +90,14 @@
       {
         "case": "Paslı çivi batması sonrası 10 gün sonra çenesini açamama, ense sertliği ve sırtında yay şeklinde kasılma olan hastada en olası etken?",
         "options": [
-          "C. botulinum",
-          "C. tetani",
-          "S. pyogenes",
-          "C. difficile",
-          "E) Integronlar"
+          "A) C. botulinum (Gevşek felç)",
+          "B) C. tetani (Spastik felç)",
+          "C) S. pyogenes (Erizipel)",
+          "D) C. difficile (Kolit)",
+          "E) B. cereus (Toksin)"
         ],
-        "correct_answer": "C. tetani",
-        "explanation": "Yara öyküsü, trismus (çene kilidi) ve opistotonus tetanozun klasik triadıdır.",
+        "correct_answer": "B) C. tetani (Spastik felç)",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: C. tetani'nin tetanospazmin toksini, inhibitör (frenleyici) nöronları (GABA ve Glisin) bloke eder. \n\n🎓 HOCA ÖZETİ:\n- Sürekli uyarılma sonucu: Trismus (çene kilitlenmesi), Risus sardonicus (alaycı gülümseme) ve Opistotonus (yay şeklinde gerilme) gelişir.\n- Uyarı: Paslı çivi veya toprak bulaşmış her türlü derin yara tetanos için risktir.\n- Hareket: Periferden MSS'ye retrograd aksonal transport ile taşınır.",
         "id": "cc-micro-gpos-bac-002-001"
       }
     ]
@@ -142,14 +142,14 @@
       {
         "case": "Boğazda gri-beyaz, kaldırılınca kanayan psödomembranları olan çocukta boyun lenf bezlerinde şişlik (boğa boynu) izleniyor. En olası tanı?",
         "options": [
-          "Enfeksiyöz Mononükleoz",
-          "Difteri",
-          "Farenjit",
-          "Kaba kulak",
-          "E) Integronlar"
+          "A) Enfeksiyöz Mononükleoz (EBV)",
+          "B) C. diphtheriae (Difteri)",
+          "C) Adenovirüs Farenjiti",
+          "D) Kabakulak (Parotit)",
+          "E) Epiglottit (Hib)"
         ],
-        "correct_answer": "Difteri",
-        "explanation": "Kaldırılınca kanayan psödomembran ve boğa boynu görünümü C. diphtheriae (Difteri) için tipiktir.",
+        "correct_answer": "B) C. diphtheriae (Difteri)",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Difteri psödomembranı, mukoza ile sıkı sıkıya bağlı olup kaldırıldığında altta kanayan yaralar bırakır. \n\n🎓 HOCA ÖZETİ:\n- Mekanizma: Toksin, EF-2'yi ADP-ribozilleyerek protein sentezini durdurur.\n- Komplikasyonlar: Miyokardit ve periferik nöropati (toksinin sistemik yayılımı).\n- Tanı: Löffler besiyeri (hızlı üreme), Tellüritli besiyeri (siyah koloni), Elek testi (toksin varlığı).",
         "id": "cc-micro-gpos-bac-003-001"
       }
     ]

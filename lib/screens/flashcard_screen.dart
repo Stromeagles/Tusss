@@ -58,8 +58,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   int _unknownCount = 0;
   late FlashcardMode _mode;
 
-  // Swipe geçmişi — Geri Al için
-  final List<CardSwiperDirection> _swipeHistory = [];
 
   // Drag sırasında anlık % değerleri — dikey yön önceliği için
   int _dragPctY = 0;
@@ -232,7 +230,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
         _knownCount = 0;
         _unknownCount = 0;
         _isFinished = false;
-        _swipeHistory.clear();
         _loading = false;
       });
     }
@@ -417,25 +414,9 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                 : CardSwiperDirection.bottom;
           }
 
-          // ← SOL: Geri Al — kartı geri çek, önceki cevabı sil
+          // ← SOL: yoksay — sola swipe etkisizleştirildi
           if (effectiveDir == CardSwiperDirection.left) {
-            _pendingQuality = null;
-            if (_swipeHistory.isNotEmpty) {
-              WidgetsBinding.instance.addPostFrameCallback((_) {
-                if (!mounted) return;
-                _swiperController.undo();
-                setState(() {
-                  final lastDir = _swipeHistory.removeLast();
-                  if (lastDir == CardSwiperDirection.top) {
-                    _knownCount = (_knownCount - 1).clamp(0, 9999);
-                  } else if (lastDir == CardSwiperDirection.bottom) {
-                    _unknownCount = (_unknownCount - 1).clamp(0, 9999);
-                  }
-                  if (_currentIndex > 0) _currentIndex--;
-                });
-              });
-            }
-            return false; // Sola swipe iptal → kart geri döner
+            return false;
           }
 
           // → SAĞ veya ↑ YUKARI: Bildim — her ikisi de aynı aksiyonu tetikler
@@ -464,7 +445,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             final limitReached = await _premiumService.isFlashcardLimitReached();
 
             setState(() {
-              _swipeHistory.add(effectiveDir);
               if (effectiveDir == CardSwiperDirection.top) {
                 _knownCount++;
                 if (updated != null) _showAnswerToast(updated);
@@ -620,7 +600,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                _buildStatItem('Bildiğim', _knownCount.toString(), AppTheme.success),
+                _buildStatItem('Doğrular', _knownCount.toString(), AppTheme.success),
                 const SizedBox(width: 40),
                 _buildStatItem('Başarı', '%$successRate', AppTheme.cyan),
               ],
@@ -690,22 +670,14 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 6, 20, 0),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          _HintChip(
-              icon: Icons.arrow_back_rounded,
-              label: 'Geri Al',
-              color: AppTheme.textMuted.withValues(alpha: 0.40)),
           _HintChip(
               icon: Icons.arrow_downward_rounded,
               label: 'Yanlış',
               color: AppTheme.error.withValues(alpha: 0.30)),
           _HintChip(
               icon: Icons.arrow_upward_rounded,
-              label: 'Orta',
-              color: AppTheme.success.withValues(alpha: 0.30)),
-          _HintChip(
-              icon: Icons.arrow_forward_rounded,
               label: 'Doğru',
               color: AppTheme.success.withValues(alpha: 0.30)),
         ],
@@ -1212,24 +1184,18 @@ class _ModeToggle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final (label, icon, color) = switch (mode) {
-      FlashcardMode.dueOnly      => ('Günün Tekrarları', Icons.replay_rounded,  AppTheme.cyan),
-      FlashcardMode.pocketOnly   => ('Favoriler',       Icons.star_rounded,           AppTheme.neonGold),
-      FlashcardMode.all          => ('Tümü',           Icons.all_inclusive_rounded,  AppTheme.textMuted),
-      FlashcardMode.newOnly      => ('Yeni',           Icons.auto_awesome_rounded,   AppTheme.neonPurple),
-      FlashcardMode.learnedOnly  => ('Doğrular',       Icons.check_circle_rounded,   AppTheme.success),
-      FlashcardMode.failedOnly   => ('Yanlışlar',     Icons.cancel_rounded,         AppTheme.error),
-      FlashcardMode.criticalOnly => ('Yanlışlar',     Icons.cancel_rounded,         AppTheme.error),
+      FlashcardMode.learnedOnly  => ('Doğrular',  Icons.check_circle_rounded, AppTheme.success),
+      FlashcardMode.failedOnly   => ('Yanlışlar', Icons.cancel_rounded,       AppTheme.error),
+      FlashcardMode.pocketOnly   => ('Favoriler', Icons.bookmark_rounded,     AppTheme.neonGold),
+      _                          => ('Doğrular',  Icons.check_circle_rounded, AppTheme.success),
     };
     return GestureDetector(
       onTap: () {
         final next = switch (mode) {
-          FlashcardMode.dueOnly      => FlashcardMode.all,
-          FlashcardMode.all          => FlashcardMode.pocketOnly,
-          FlashcardMode.pocketOnly   => FlashcardMode.newOnly,
-          FlashcardMode.newOnly      => FlashcardMode.learnedOnly,
-          FlashcardMode.learnedOnly  => FlashcardMode.failedOnly,
-          FlashcardMode.failedOnly   => FlashcardMode.criticalOnly,
-          FlashcardMode.criticalOnly => FlashcardMode.dueOnly,
+          FlashcardMode.learnedOnly => FlashcardMode.failedOnly,
+          FlashcardMode.failedOnly  => FlashcardMode.pocketOnly,
+          FlashcardMode.pocketOnly  => FlashcardMode.learnedOnly,
+          _                         => FlashcardMode.learnedOnly,
         };
         onChanged(next);
       },

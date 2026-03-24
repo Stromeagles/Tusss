@@ -51,14 +51,14 @@
       {
         "case": "Beta-laktam antibiyotik kullanımı sonrası bakterinin hücre duvarını kaybetmesine rağmen hayatta kalabildiği çoğalabilen forma ne ad verilir?",
         "options": [
-          "Protoplast",
-          "Sferoplast",
-          "L-Form",
-          "Much granülü",
-          "E) Integronlar"
+          "A) Protoplast",
+          "B) Sferoplast",
+          "C) L-Form",
+          "D) Much granülü",
+          "E) Mezozom"
         ],
-        "correct_answer": "L-Form",
-        "explanation": "Hücre duvarını kaybetmiş ama çoğalabilen forma L-Form denir.",
+        "correct_answer": "C) L-Form",
+        "explanation": "PROFESÖR NOTU: Normal bakteriler hücre duvarını (peptidoglikan) kaybettiğinde genellikle ozmotik basınçla patlar (lizis). Ancak izotonik ortamda hücre duvarı olmadan yaşamaya ve bölünmeye devam edebilen forma 'L-Form' denir. \n\n🎓 HOCA ÖZETİ:\n- Antibiyotik tedavisi bittiğinde bu formlar tekrar duvar örüp 'dirilebilir' (nüks nedeni).\n- Protoplast: Gram pozitiflerin duvarsız hali.\n- Sferoplast: Gram negatiflerin kısmi duvarsız hali.\n- Much granülü: M. tuberculosis'in L-formuna verilen özel ad.",
         "id": "cc-micro-ch1-001-001"
       }
     ]
@@ -99,6 +99,21 @@
       "S. pyogenes kapsülü hyalüronik asit yapısındadır (kamufle eder).",
       "Kapsüllü mikroorganizmalara karşı temel savunma Opsonizasyondur (IgG ve C3b).",
       "Kapsül esansiyel bir yapı değildir, kaybedilirse virülans azalır."
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-micro-ch1-002-001",
+        "case": "Dalağı alınmış (splenektomili) 45 yaşında bir erkek hasta, yüksek ateş, titreme ve bilinç bulanıklığı ile acil servise getiriliyor. Kan kültüründe kapsüllü bakteri üremesi saptandı. Bu hastada en sık sepsise neden olan bakteri hangisidir?",
+        "options": [
+          "A) Staphylococcus aureus",
+          "B) Streptococcus pneumoniae",
+          "C) Escherichia coli",
+          "D) Pseudomonas aeruginosa",
+          "E) Listeria monocytogenes"
+        ],
+        "correct_answer": "B) Streptococcus pneumoniae",
+        "explanation": "PROFESÖR NOTU: Dalak, kapsüllü bakterilere karşı en kritik savunma organıdır. Kapsüllü bakterileri opsonize eden IgM antikoru ağırlıklı olarak dalakta üretilir. Dalak olmadan bu opsonizasyon zayıflar.\n\n🎓 HOCA ÖZETİ:\n- Splenektomi sonrası sepsis riski en yüksek kapsüllü bakteriler: 'SHiN' = S. pneumoniae (en sık!), H. influenzae, N. meningitidis.\n- Mnemonic: 'SHiN = Dalaksız hastayı ŞİNlendiren üçlü'\n- Önlem: Splenektomi öncesi S. pneumoniae, H. influenzae tip b ve N. meningitidis aşıları yapılmalı.\n- TUS SPOT: Dalaksız hastada ateş + sepsis = S. pneumoniae önce düşün!"
+      }
     ]
   }
 ]

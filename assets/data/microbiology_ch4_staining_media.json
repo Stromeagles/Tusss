@@ -46,6 +46,21 @@
       "Ziehl-Neelsen boyamada örnek ısıtılır; Kinyoun yönteminde (soğuk) ısıtılmaz.",
       "Kalkoflor beyazı: Mantar hücre duvarındaki kitine bağlanan floresan boyadır.",
       "Pneumocystis saptanmasında Toluidin mavisi O ve Gümüşleme kullanılır."
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-micro-ch4-001-001",
+        "case": "HIV pozitif, CD4 sayısı 40/mm³ olan hastanın balgam örneği Giemsa boyası ile incelendi. Boyamada hücre içinde küçük nokta şeklinde organizmalar görüldü. Tanıya yönelik hangi yorum doğrudur?",
+        "options": [
+          "A) Aside dirençli boyama (ARB) yapılmalı — Tüberküloz şüphesi",
+          "B) Giemsa ile görülen organizmalar Pneumocystis jirovecii",
+          "C) Giemsa ile görülen intrasellüler organizmalar Leishmania veya Histoplasma olabilir",
+          "D) Gram boyama tekrarlanmalı — Gram negatif basil şüphesi",
+          "E) Karanlık saha mikroskopisi gerekli — Spirokettir"
+        ],
+        "correct_answer": "C) Giemsa ile görülen intrasellüler organizmalar Leishmania veya Histoplasma olabilir",
+        "explanation": "PROFESÖR NOTU: Giemsa boyası hücre içi patojenleri (intrasellüler) saptamada altın standarttır. HIV hastalarında fırsatçı enfeksiyonlarda düşük CD4 (<100) olduğunda Histoplasma capsulatum ve Leishmania donovani hücre içinde görülebilir.\n\n🎓 HOCA ÖZETİ:\n- Giemsa ile görülen intrasellüler organizmalar: Leishmania, Histoplasma, Plasmodium, Chlamydia, Ricketsia\n- Mnemonic: 'GİEMSA = Gizli Hücre İçi Enfeksiyon Manşeti Sunar Aslında'\n- Pneumocystis: Toluidin mavisi O veya Gümüş boyası (Giemsa değil!)\n- TUS SPOT: CD4 <200 → PCP (Pneumocystis); CD4 <100 → Toxoplazma, Histoplasma, CMV; CD4 <50 → MAC, CMV retinit"
+      }
     ]
   },
   {
@@ -101,14 +116,14 @@
       {
         "case": "Boğmaca şüphesiyle alınan nazofaringeal sürüntü örneği hangi özel besiyerine ekilmelidir?",
         "options": [
-          "Lowenstein-Jensen",
-          "Thayer-Martin",
-          "Bordet-Gengau",
-          "TCBS",
-          "E) Integronlar"
+          "A) Löwenstein-Jensen (Tüberküloz)",
+          "B) Thayer-Martin (Neisseria)",
+          "C) Bordet-Gengau (Boğmaca)",
+          "D) TCBS Agar (Vibrio)",
+          "E) Löffler Besiyeri (Difteri)"
         ],
-        "correct_answer": "Bordet-Gengau",
-        "explanation": "Bordatella pertussis (Boğmaca) üretmek için Bordet-Gengau veya Regan-Lowe besiyerleri kullanılır.",
+        "correct_answer": "C) Bordet-Gengau (Boğmaca)",
+        "explanation": "PROFESÖR NOTU: Bordetella pertussis (Boğmaca) üretmek için Bordet-Gengau (patates-gliserin-kanlı) veya Regan-Lowe (kömürlü) besiyerleri kullanılır. \n\n🎓 HOCA ÖZETİ:\n- Bakteri bu besiyerlerinde 'cıva damlası' (mercury drops) veya 'inci tanesi' gibi parlak koloniler oluşturur.\n- Nazofaringeal sürüntü en iyi örnektir.\n- Günümüzde Regan-Lowe, Bordet-Gengau'dan daha sık tercih edilmektedir.",
         "id": "cc-micro-ch4-002-001"
       }
     ]

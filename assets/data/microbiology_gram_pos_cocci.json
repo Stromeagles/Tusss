@@ -49,14 +49,14 @@
       {
         "case": "Burun ameliyatı sonrası tamponları uzun süre kalan hastada aniden gelişen yüksek ateş, hipotansiyon ve el ayası dahil tüm vücutta kızarıklık gözleniyor. En olası tanı?",
         "options": [
-          "Kızıl",
-          "Toksik Şok Sendromu",
-          "Menenjit",
-          "Kawasaki Hastalığı",
-          "E) Integronlar"
+          "A) Kızıl (Eritrojenik toksin)",
+          "B) Toksik Şok Sendromu (TSST-1)",
+          "C) Menengokoksik Menenjit",
+          "D) Kawasaki Hastalığı",
+          "E) Eksfolyatif Dermatit (Ritter)"
         ],
-        "correct_answer": "Toksik Şok Sendromu",
-        "explanation": "Tampon kullanımı ve çoklu sistem tutulumu TSST-1'e bağlı stafilokokal toksik şok sendromunu düşündürür.",
+        "correct_answer": "B) Toksik Şok Sendromu (TSST-1)",
+        "explanation": "PROFESÖR NOTU: TSST-1, klasik bir süperantijendir. Tampon kullanımı veya postoperatif sargı bezi/tampon varlığı en tipik senaryodur. \n\n🎓 HOCA ÖZETİ:\n- Mekanizma: MHC-II ve TCR arasına doğrudan bağlanarak T-hücrelerinin %20'sini aktive eder (Sitokin fırtınası: TNF-alfa, IL-1, IL-2).\n- Klinik Triad: Ateş + Hipotansiyon + Yaygın eritrodermi (el ayası ve ayak tabanında soyulma ile iyileşir).\n- Dikkat: Diş ve burun operasyonu tamponları da bu tabloyu yapabilir!",
         "id": "cc-micro-gpos-coc-001-001"
       }
     ]
@@ -100,14 +100,14 @@
       {
         "case": "65 yaşında KOAH hastasında üşüme titreme ile başlayan ateş, yan ağrısı ve pas rengi balgam şikayeti var. Akciğer grafisinde sağ alt lobda konsolidasyon izleniyor. Balgam gram incelemesinde gram pozitif diplokoklar görülüyor. Etken nedir?",
         "options": [
-          "K. pneumoniae",
-          "S. aureus",
-          "S. pneumoniae",
-          "M. catarrhalis",
-          "E) Integronlar"
+          "A) K. pneumoniae (Mukoid balgam)",
+          "B) S. aureus (Kaviter lezyonlar)",
+          "C) S. pneumoniae (Lober pnömoni)",
+          "D) M. catarrhalis (KOAH alevlenme)",
+          "E) H. influenzae (KOAH en sık etken)"
         ],
-        "correct_answer": "S. pneumoniae",
-        "explanation": "Lober tutulum, pas rengi balgam ve gram pozitif diplokoklar tipik pnömokok bulgularıdır.",
+        "correct_answer": "C) S. pneumoniae (Lober pnömoni)",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: S. pneumoniae (Pnömokok), toplumda gelişen lober pnömoninin açık ara en sık etkenidir. \n\n🎓 HOCA ÖZETİ:\n- Pas rengi balgam: Pnömokok için patognomoniktir (eritrosit yıkımı sonucu).\n- Mikroskopi: Gram pozitif, lanset (mızrak ucu) şeklinde diplokok.\n- Kültür: Kanlı agarda alfa-hemoliz (yeşilimsi), Optokine DUYARLI, Safrada ERİYEN tek alfa hemolitik koktur.\n- Risk: KOAH, splenektomi ve alkolizmde mortalite yüksektir.",
         "id": "cc-micro-gpos-coc-002-001"
       }
     ]
@@ -152,14 +152,14 @@
       {
         "case": "Boğaz ağrısı ve ateş şikayeti ile gelen 7 yaşındaki çocukta boğazda eksuda, dilde 'çilek dili' görünümü ve gövdede basmakla solan yaygın mikropapüler döküntü var. Tanı nedir?",
         "options": [
-          "Suçiçeği",
-          "Kızıl",
-          "Kızamıkçık",
-          "El-Ayak-Ağız Hastalığı",
-          "E) Integronlar"
+          "A) Suçiçeği (Veziküler döküntü)",
+          "B) Kızıl (Scarlet Fever)",
+          "C) Kızamıkçık (Post-auriküler LAP)",
+          "D) El-Ayak-Ağız Hastalığı (Koksaki)",
+          "E) Stafilokokal Haşlanmış Deri Sendromu"
         ],
-        "correct_answer": "Kızıl",
-        "explanation": "Eksudatif farenjit, çilek dili ve yaygın döküntü S. pyogenes'in pirojenik ekzotoksinine bağlı Kızıl (Scarlet fever) tablosudur.",
+        "correct_answer": "B) Kızıl (Scarlet Fever)",
+        "explanation": "PROFESÖR NOTU: Kızıl, S. pyogenes'in eritrojenik (Spe) toksini üreten suşları ile oluşur. \n\n🎓 HOCA ÖZETİ:\n- Klinik: Eksudatif farenjit + Çilek dili + Pastia çizgileri (eklem kıvrımlarında çizgilenme).\n- Döküntü: Zımpara kağıdı (sandpaper) hissi verir, basmakla solar (Schultz-Charlton fenomeni).\n- Ayırıcı Tanı: Kızılda perioral (ağız çevresi) solukluk izlenir, döküntü ağız çevresini korur.",
         "id": "cc-micro-gpos-coc-003-001"
       }
     ]

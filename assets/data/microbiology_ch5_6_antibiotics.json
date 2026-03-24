@@ -47,6 +47,21 @@
       "Karbapenemler en geniş spektrumlu beta-laktamlardır; Ertapenem'in Pseudomonas etkinliği yoktur.",
       "Vankomisin yan etkisi: Histamin salınımına bağlı 'Kırmızı Adam Sendromu'.",
       "Sefazolin cerrahi profilakside ilk tercihtir."
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-micro-ch5-001-001",
+        "case": "Kateter ilişkili kan dolaşımı enfeksiyonu nedeniyle tedavi edilen hastanın kan kültüründe S. aureus üredi. Antibiyograma göre metisilin dirençli (MRSA) olarak raporlandı. Bu hastada en uygun tedavi seçeneği hangisidir?",
+        "options": [
+          "A) Amoksisilin-Klavulanat",
+          "B) Sefazolin",
+          "C) Vankomisin",
+          "D) Ampisilin",
+          "E) İmipenem"
+        ],
+        "correct_answer": "C) Vankomisin",
+        "explanation": "PROFESÖR NOTU: MRSA'da mecA geni kaynaklı PBP2a, tüm beta-laktam antibiyotiklere (penisilinler, sefalosporinler, karbapenemler) karşı yüksek direnç gösterir. Bu nedenle tüm beta-laktamlar etkisizdir.\n\n🎓 HOCA ÖZETİ:\n- MRSA tedavisi: Vankomisin (1. seçenek) veya Linezolid / Daptomisin / Tedizolit (alternatif)\n- Mnemonic: 'MRSA = Muazzam Rezil Stafilokoktur, Ancak Vankomisin yener'\n- Vankomisin mekanizması: D-ala D-ala'ya bağlanır → hücre duvarı öncüllerini bloke eder (PBP'ye değil!)\n- TUS SPOT: Tüm beta-laktamlara dirençli S. aureus = MRSA. Tedavisi Vankomisin. Vankomisin yan etkisi: Kırmızı Adam Sendromu (hızlı infüzyonda histamin)."
+      }
     ]
   },
   {
@@ -96,6 +111,21 @@
       "Klindamisin psödomembranöz enterokolit (C. difficile) riskini en çok artıran ilaçlardandır.",
       "Makrolitler (Eritromisin) motilin reseptörlerini uyararak ishale neden olabilir (diabetik gastroparezide kullanılır).",
       "Kinolonlar (Siprofloksasin) DNA giraz (Topoizomeraz II) ve Topoizomeraz IV'ü inhibe eder."
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-micro-ch5-002-001",
+        "case": "6 aylık bebek, yüksek ateş ve irritabilite ile başvuruyor. BOS kültüründe bakteri üremesi bekleniyor. Kloramfenikol kullanımı planlanırken anne 'bu ilacın bebekler için tehlikeli olduğunu duyduğunu' söylüyor. Kloramfenikolün yenidoğanlarda ciddi toksisiteye yol açmasının temel nedeni nedir?",
+        "options": [
+          "A) Renal tübüler sekresyon eksikliği — İlaç böbrekten atılamaz",
+          "B) Karaciğer UDP-glukuronil transferaz enzim eksikliği — İlaç birikir",
+          "C) Kan-beyin bariyeri geçirgenliğinin fazla olması",
+          "D) Kemik iliği aplazisi — Doğrudan toksisite",
+          "E) Bağırsak florasının olmaması — Emilim artar"
+        ],
+        "correct_answer": "B) Karaciğer UDP-glukuronil transferaz enzim eksikliği — İlaç birikir",
+        "explanation": "PROFESÖR NOTU: Yenidoğanlarda karaciğer UDP-glukuronil transferaz enzimi henüz tam gelişmemiştir. Kloramfenikol bu enzimle konjuge edilerek atılır; enzim yetersizliğinde ilaç kanda birikir ve kardiyovasküler kollaps + gri-siyanotik görünüm yapar.\n\n🎓 HOCA ÖZETİ:\n- Gri Bebek Sendromu belirtileri: Kusma, solunum bozukluğu, siyanoz (gri-mavi renk), kardiyovasküler kollaps\n- Erişkin yan etkisi: Kemik iliği aplazisi (idiyosinkratik — doz bağımsız, nadir ama ölümcül)\n- Mnemonic: 'Kloramfenikol = Çocuğu GRİ yapar, Erişkini KEMİKSİZ bırakır'\n- TUS SPOT: Kloramfenikol 50S'e bağlanır, bakteriyostatiktir. H. influenzae menenjitinde eskiden kullanılırdı — artık 3. kuşak sefalosporinler tercih edilir."
+      }
     ]
   },
   {
@@ -133,6 +163,22 @@
       "Transdüksiyon: Bir bakteriyofajın (virüs) bir bakteriden diğerine genetik bilgi taşımasıdır.",
       "Transpozonlar (Sıçrayan Genler): Genom içinde veya plazmidler arasında yer değiştirebilen genetik elemanlardır.",
       "Hfr hücre: F plazmidinin bakteri kromozomuna entegre olduğu hücredir."
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-micro-ch5-001-001",
+        "case": "65 yaşında erkek hasta, Psödomonas sepsisi nedeniyle bir antibiyotik tedavisi alırken idrar miktarında azalma ve her iki kulakta çınlama şikayeti ile başvuruyor. Laboratuvarda kreatinin düzeyi 2.4 mg/dL saptanıyor.\n\nHangi antibiyotik grubunun bu tabloya yol açma olasılığı en yüksektir?",
+        "options": [
+          "A) Penisilinler",
+          "B) Aminoglikozidler (Gentamisin)",
+          "C) Florokinolonlar",
+          "D) Makrolidler",
+          "E) Karbapenemler"
+        ],
+        "correct_answer": "B) Aminoglikozidler (Gentamisin)",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Aminoglikozidler (Gentamisin, Amikasin, Tobramisin), özellikle Gram negatif tedavilerinde çok etkili olsalar da iki önemli toksisiteleri ile bilinirler: Nefrotoksisite ve Ototoksisite.\n\n🎓 HOCA ÖZETİ:\n- Nefrotoksisite: Akut tübüler nekroz (ATN) yapar, genellikle geri dönüşümlüdür.\n- Ototoksisite: Hem vestibüler (denge) hem koklear (işitme) hasar yapabilir, genellikle geri dönüşümsüzdür.\n- Mnemonic: A-minoglikozid = A-kut Tübüler Nekroz + A-ğır işitme kaybı.",
+        "difficulty": "medium"
+      }
     ]
   }
 ]

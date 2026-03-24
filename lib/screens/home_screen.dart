@@ -20,8 +20,8 @@ import '../services/data_service.dart';
 import '../services/progress_service.dart';
 import '../services/user_service.dart';
 import '../services/spaced_repetition_service.dart';
-import '../services/ai_coach_service.dart';
 import '../services/theme_service.dart';
+import '../widgets/daily_goal_widget.dart';
 import '../utils/transitions.dart';
 import 'flashcard_screen.dart';
 import 'case_study_screen.dart';
@@ -58,7 +58,6 @@ class _HomeScreenState extends State<HomeScreen> {
   SrsSummary    _flashcardSummary = const SrsSummary(newCount: 0, toReviewCount: 0, learnedCount: 0, bookmarkCount: 0);
   SrsSummary    _caseSummary      = const SrsSummary(newCount: 0, toReviewCount: 0, learnedCount: 0, bookmarkCount: 0);
   Map<String, SM2CardData> _sm2Data = {};
-  CoachInsight? _coachInsight;
 
   @override
   void initState() {
@@ -94,8 +93,6 @@ class _HomeScreenState extends State<HomeScreen> {
           SpacedRepetitionService().getSummary(ccIds, dailyGoal: progress.dailyGoal),
         ]);
 
-        final coachInsight = AiCoachService().analyze(topics, sm2Data);
-
         setState(() {
           _topics           = topics;
           _progress         = progress;
@@ -103,7 +100,6 @@ class _HomeScreenState extends State<HomeScreen> {
           _flashcardSummary = summaries[0];
           _caseSummary      = summaries[1];
           _sm2Data          = sm2Data;
-          _coachInsight     = coachInsight;
           _loading          = false;
         });
       }
@@ -171,9 +167,27 @@ class _HomeScreenState extends State<HomeScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   const SizedBox(height: 10),
-                                  _buildAiCoachNote(isDark),
-                                  if (_coachInsight != null) const SizedBox(height: 12),
-                                  
+
+                                  // ── Daily Goal / Limit ──────────────────────────
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                                    child: DailyGoalWidget(
+                                      todayStudied: _progress.todayStudied,
+                                      dailyGoal: _progress.dailyGoal,
+                                      accentColor: AppTheme.cyan,
+                                    ),
+                                  ),
+
+                                  const SizedBox(height: 12),
+
+                                  // ── AI Koç Butonu ────────────────────────────────
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                                    child: _buildAiCoachButton(isDark),
+                                  ),
+
+                                  const SizedBox(height: 24),
+
                                   // ── Flashcard Hub ──────────────────────────────────────
                                   RepaintBoundary(child: _buildFlashcardHub(isDark)),
 
@@ -511,9 +525,9 @@ class _HomeScreenState extends State<HomeScreen> {
       summary: _flashcardSummary,
       baseColor: AppTheme.cyan,
       folders: [
-        (label: 'Bilemediklerim', icon: Icons.cancel_rounded, color: AppTheme.error, mode: FlashcardMode.failedOnly),
-        (label: 'Bildiklerim', icon: Icons.check_circle_rounded, color: AppTheme.success, mode: FlashcardMode.learnedOnly),
-        (label: 'Ezberim', icon: Icons.star_rounded, color: AppTheme.neonGold, mode: FlashcardMode.pocketOnly),
+        (label: 'Doğrular', icon: Icons.check_circle_rounded, color: AppTheme.success, mode: FlashcardMode.learnedOnly),
+        (label: 'Yanlışlar', icon: Icons.cancel_rounded, color: AppTheme.error, mode: FlashcardMode.failedOnly),
+        (label: 'Favoriler', icon: Icons.bookmark_rounded, color: AppTheme.neonGold, mode: FlashcardMode.pocketOnly),
       ],
       onButtonTap: () => _showSubjectSelectionSheet(isCards: true, isDark: isDark),
       onFolderTap: (mode) async {
@@ -739,9 +753,9 @@ class _HomeScreenState extends State<HomeScreen> {
       summary: _caseSummary,
       baseColor: const Color(0xFF6366F1), // Indigo
       folders: [
-        (label: 'Yanlışlarım', icon: Icons.error_outline_rounded, color: const Color(0xFFF43F5E), mode: CaseStudyMode.failedOnly),
-        (label: 'Doğrularım', icon: Icons.verified_rounded, color: const Color(0xFF10B981), mode: CaseStudyMode.learnedOnly),
-        (label: 'Favorilerim', icon: Icons.favorite_rounded, color: const Color(0xFF8B5CF6), mode: CaseStudyMode.pocketOnly),
+        (label: 'Doğrular', icon: Icons.check_circle_rounded, color: AppTheme.success, mode: CaseStudyMode.learnedOnly),
+        (label: 'Yanlışlar', icon: Icons.cancel_rounded, color: AppTheme.error, mode: CaseStudyMode.failedOnly),
+        (label: 'Favoriler', icon: Icons.bookmark_rounded, color: AppTheme.neonGold, mode: CaseStudyMode.pocketOnly),
       ],
       onButtonTap: () => _showSubjectSelectionSheet(isCards: false, isDark: isDark),
       onFolderTap: (mode) async {
@@ -863,6 +877,111 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
 
+
+  Widget _buildAiCoachButton(bool isDark) {
+    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
+    return GestureDetector(
+      onTap: () => _openAiInsightSheet(isDark),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              AppTheme.neonPurple.withValues(alpha: 0.10),
+              AppTheme.cyan.withValues(alpha: 0.07),
+            ],
+            begin: Alignment.centerLeft,
+            end: Alignment.centerRight,
+          ),
+          borderRadius: BorderRadius.circular(18),
+          border: Border.all(
+            color: AppTheme.neonPurple.withValues(alpha: 0.28),
+          ),
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 42, height: 42,
+              decoration: BoxDecoration(
+                color: AppTheme.neonPurple.withValues(alpha: 0.14),
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(Icons.smart_toy_rounded,
+                  color: AppTheme.neonPurple, size: 22),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'AI Koç Analizi',
+                    style: GoogleFonts.inter(
+                      color: textColor,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  Text(
+                    'Zayıf konular, tavsiyeler ve hedef analizi',
+                    style: GoogleFonts.inter(
+                      color: AppTheme.neonPurple.withValues(alpha: 0.8),
+                      fontSize: 11,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const Icon(Icons.arrow_forward_ios_rounded,
+                color: AppTheme.neonPurple, size: 14),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _openAiInsightSheet(bool isDark) {
+    // Branş → yanlış sayısı
+    final Map<String, int> mistakeCounts = {};
+    final Map<String, int> topicMistakes = {};
+
+    for (final t in _topics) {
+      for (final fc in t.flashcards) {
+        final d = _sm2Data[fc.id];
+        if (d != null && d.lastQuality == 1) {
+          mistakeCounts[t.subject] = (mistakeCounts[t.subject] ?? 0) + 1;
+          topicMistakes[t.subTopic] = (topicMistakes[t.subTopic] ?? 0) + 1;
+        }
+      }
+      for (final cc in t.clinicalCases) {
+        final d = _sm2Data[cc.id];
+        if (d != null && d.lastQuality == 1) {
+          mistakeCounts[t.subject] = (mistakeCounts[t.subject] ?? 0) + 1;
+          topicMistakes[t.subTopic] = (topicMistakes[t.subTopic] ?? 0) + 1;
+        }
+      }
+    }
+
+    final topMistakeTopics = (topicMistakes.entries.toList()
+          ..sort((a, b) => b.value.compareTo(a.value)))
+        .take(5)
+        .map((e) => e.key)
+        .toList();
+
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (_) => AiInsightSheet(
+        progress: _progress,
+        isDark: isDark,
+        mistakeCounts: mistakeCounts,
+        topMistakeTopics: topMistakeTopics,
+        userName: _user.name.isNotEmpty ? _user.name : 'Doktor',
+      ),
+    );
+  }
 
   void _showAppNotifications() {
     final isDark = ThemeService.isDark;
@@ -1305,82 +1424,6 @@ class _HomeScreenState extends State<HomeScreen> {
     if (mounted) setState(() => _navIndex = 0);
   }
 
-
-
-
-
-  Widget _buildAiCoachNote(bool isDark) {
-    final insight = _coachInsight;
-    if (insight == null) return const SizedBox.shrink();
-
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(20),
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                AppTheme.neonPurple.withValues(alpha: isDark ? 0.15 : 0.08),
-                AppTheme.neonGold.withValues(alpha: isDark ? 0.06 : 0.03),
-              ],
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-            ),
-            borderRadius: BorderRadius.circular(20),
-            border: Border.all(
-              color: AppTheme.neonPurple.withValues(alpha: 0.30),
-              width: 1.0,
-            ),
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                padding: const EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: AppTheme.neonPurple.withValues(alpha: 0.15),
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                      color: AppTheme.neonPurple.withValues(alpha: 0.35)),
-                ),
-                child: const Text('🤖', style: TextStyle(fontSize: 16)),
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'ASISTAN NOTU',
-                      style: GoogleFonts.inter(
-                        color: AppTheme.neonPurple,
-                        fontSize: 10,
-                        fontWeight: FontWeight.w700,
-                        letterSpacing: 1.0,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      insight.message,
-                      style: GoogleFonts.inter(
-                        color: isDark
-                            ? AppTheme.textSecondary
-                            : AppTheme.lightTextSecondary,
-                        fontSize: 12,
-                        height: 1.5,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    ).animate().fadeIn(duration: 500.ms, delay: 200.ms).slideY(begin: 0.05, end: 0);
-  }
 
   Widget _buildLoadingState() {
     final isDark = Theme.of(context).brightness == Brightness.dark;

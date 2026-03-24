@@ -72,12 +72,26 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
   // Premium / Limit
   final _premiumService = PremiumService();
   bool _limitReached = false;
+  bool _isPremium = false;
+  int _remaining = PremiumService.dailyFreeCaseLimit;
 
   @override
   void initState() {
     super.initState();
     _mode = widget.initialMode;
+    _checkPremiumStatus();
     _checkLimitAndLoad();
+  }
+
+  Future<void> _checkPremiumStatus() async {
+    final premium = await _premiumService.isPremium();
+    final remaining = await _premiumService.remainingCases();
+    if (mounted) {
+      setState(() {
+        _isPremium = premium;
+        _remaining = remaining;
+      });
+    }
   }
 
   Future<void> _checkLimitAndLoad() async {
@@ -494,6 +508,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          if (!_isPremium) _buildTrialBanner(),
           _buildProgressIndicator(),
           const SizedBox(height: 20),
           _buildCaseCard(),
@@ -508,6 +523,58 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
             _buildAISection(),
           ],
           const SizedBox(height: 32),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildTrialBanner() {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 14),
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            AppTheme.neonGold.withValues(alpha: 0.10),
+            AppTheme.neonPurple.withValues(alpha: 0.07),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(
+          color: AppTheme.neonGold.withValues(alpha: 0.28),
+        ),
+      ),
+      child: Row(
+        children: [
+          const Icon(
+            Icons.workspace_premium_rounded,
+            color: AppTheme.neonGold,
+            size: 16,
+          ),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              'Bugün $_remaining TUS sorusu hakkın kaldı',
+              style: const TextStyle(
+                color: AppTheme.neonGold,
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () => setState(() => _limitReached = true),
+            child: Text(
+              'Premium Ol →',
+              style: TextStyle(
+                color: AppTheme.neonGold.withValues(alpha: 0.9),
+                fontSize: 11,
+                fontWeight: FontWeight.w800,
+                decoration: TextDecoration.underline,
+                decorationColor: AppTheme.neonGold.withValues(alpha: 0.6),
+              ),
+            ),
+          ),
         ],
       ),
     );
@@ -804,11 +871,9 @@ class _CaseModeToggle extends StatelessWidget {
       color: AppTheme.surfaceVariant,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       itemBuilder: (context) => [
-        _buildItem(CaseStudyMode.dueOnly, 'Günün Tekrarları', AppTheme.cyan),
         _buildItem(CaseStudyMode.learnedOnly, 'Doğrular', AppTheme.success),
         _buildItem(CaseStudyMode.failedOnly, 'Yanlışlar', AppTheme.error),
         _buildItem(CaseStudyMode.pocketOnly, 'Favoriler', AppTheme.neonGold),
-        _buildItem(CaseStudyMode.all, 'Tüm Vakalar', AppTheme.textSecondary),
       ],
     );
   }
@@ -831,7 +896,7 @@ class _CaseModeToggle extends StatelessWidget {
       case CaseStudyMode.dueOnly: return Icons.replay_rounded;
       case CaseStudyMode.failedOnly: return Icons.cancel_rounded;
       case CaseStudyMode.learnedOnly: return Icons.check_circle_rounded;
-      case CaseStudyMode.pocketOnly: return Icons.star_rounded;
+      case CaseStudyMode.pocketOnly: return Icons.bookmark_rounded;
       case CaseStudyMode.all: return Icons.grid_view_rounded;
       case CaseStudyMode.newOnly: return Icons.new_releases_rounded;
     }

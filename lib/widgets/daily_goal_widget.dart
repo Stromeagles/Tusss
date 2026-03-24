@@ -2,6 +2,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../theme/app_theme.dart';
+import '../services/premium_service.dart';
 
 class DailyGoalWidget extends StatelessWidget {
   final int todayStudied;
@@ -130,9 +131,9 @@ class DailyGoalWidget extends StatelessWidget {
                       size: 16,
                     ),
                     const SizedBox(width: 6),
-                    const Text(
-                      'Günlük Hedef',
-                      style: TextStyle(
+                    Text(
+                      dailyGoal == PremiumService.dailyFreeFlashcardLimit ? 'Günlük Limit' : 'Günlük Hedef',
+                      style: const TextStyle(
                         color: AppTheme.textPrimary,
                         fontSize: 15,
                         fontWeight: FontWeight.w700,

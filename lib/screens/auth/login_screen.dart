@@ -92,41 +92,111 @@ class _LoginScreenState extends State<LoginScreen> {
           backgroundColor: AppTheme.background,
           body: Stack(
             children: [
-              // Background gradient
               _buildBackground(),
-              // Content
               SafeArea(
-                child: Center(
-                  child: Container(
-                    constraints: const BoxConstraints(maxWidth: 500),
-                    child: SingleChildScrollView(
-                      padding: const EdgeInsets.symmetric(horizontal: 24),
-                      physics: const BouncingScrollPhysics(),
-                      child: Column(
-                        children: [
-                          // Logo area
-                          _buildLogoArea(vm),
-                          const SizedBox(height: 24),
-                          // Glass card
-                          _buildGlassCard(vm),
-                          const SizedBox(height: 28),
-                          // Bottom toggle
-                          _buildBottomToggle(vm),
-                          if (kIsWeb) ...[
-                            const SizedBox(height: 48),
-                            _buildStoreButtons(),
-                          ],
-                          const SizedBox(height: 40),
-                        ],
-                      ),
-                    ),
-                  ),
+                child: LayoutBuilder(
+                  builder: (context, constraints) {
+                    if (kIsWeb || constraints.maxWidth >= 900) {
+                      return _buildDesktopLayout(vm);
+                    }
+                    return _buildMobileLayout(vm, constraints);
+                  },
                 ),
               ),
             ],
           ),
         );
       },
+    );
+  }
+
+  // ── Desktop: iki sütun ────────────────────────────────────────────────────
+  Widget _buildDesktopLayout(AuthViewModel vm) {
+    return Row(
+      children: [
+        // Sol: hero görsel
+        Expanded(
+          flex: 55,
+          child: _buildHeroPanel(vm),
+        ),
+        // İnce ayırıcı çizgi
+        Container(
+          width: 1,
+          color: AppTheme.cyan.withValues(alpha: 0.10),
+        ),
+        // Sağ: form paneli
+        Expanded(
+          flex: 45,
+          child: Container(
+            decoration: BoxDecoration(
+              color: AppTheme.surface.withValues(alpha: 0.85),
+              border: Border(
+                left: BorderSide(color: AppTheme.cyan.withValues(alpha: 0.08)),
+              ),
+            ),
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+              child: Center(
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 40),
+                  physics: const BouncingScrollPhysics(),
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 400),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        _buildDesktopFormHeader(vm),
+                        const SizedBox(height: 32),
+                        _buildFormContent(vm),
+                        const SizedBox(height: 28),
+                        _buildBottomToggle(vm),
+                        if (kIsWeb) ...[
+                          const SizedBox(height: 40),
+                          _buildStoreButtons(),
+                        ],
+                        const SizedBox(height: 24),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  // ── Mobile: tek sütun ────────────────────────────────────────────────────
+  Widget _buildMobileLayout(AuthViewModel vm, BoxConstraints constraints) {
+    final heroHeight = (constraints.maxHeight * 0.35).clamp(180.0, 300.0);
+    return SingleChildScrollView(
+      physics: const BouncingScrollPhysics(),
+      child: Column(
+        children: [
+          // Hero görsel — dinamik yükseklik
+          SizedBox(
+            height: heroHeight,
+            child: _buildMobileHero(vm),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              children: [
+                const SizedBox(height: 24),
+                _buildGlassCard(vm),
+                const SizedBox(height: 24),
+                _buildBottomToggle(vm),
+                if (kIsWeb) ...[
+                  const SizedBox(height: 40),
+                  _buildStoreButtons(),
+                ],
+                const SizedBox(height: 40),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -209,96 +279,203 @@ class _LoginScreenState extends State<LoginScreen> {
     ];
   }
 
-  // ── Logo area (Restored to App Icon style) ────────────────────────────────
-  Widget _buildLogoArea(AuthViewModel vm) {
-    return Column(
+  // ── Desktop sol panel: tam ekran hero ────────────────────────────────────
+  Widget _buildHeroPanel(AuthViewModel vm) {
+    return Stack(
+      fit: StackFit.expand,
       children: [
-        // App icon with glow
+        Image.asset('assets/hero_login.jpg', fit: BoxFit.cover),
+        // Sağa doğru gradient — form paneliyle geçiş
         Container(
-          width: 90,
-          height: 90,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(22),
-            boxShadow: [
-              BoxShadow(
-                color: AppTheme.cyan.withValues(alpha: 0.30),
-                blurRadius: 28,
-                spreadRadius: 2,
-                offset: const Offset(0, 6),
+            gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: [
+                Colors.transparent,
+                AppTheme.surface.withValues(alpha: 0.25),
+              ],
+            ),
+          ),
+        ),
+        // Alt gradient — yazı okunabilirliği
+        Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Colors.transparent,
+                Colors.black.withValues(alpha: 0.7),
+              ],
+              stops: const [0.5, 1.0],
+            ),
+          ),
+        ),
+        // Sol alt: logo + tagline
+        Positioned(
+          bottom: 40,
+          left: 40,
+          right: 40,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'AsisTus',
+                style: GoogleFonts.outfit(
+                  fontSize: 42,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.white,
+                  letterSpacing: -1.0,
+                ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'TUS\'a hazırlığın en akıllı yolu.\nAI destekli, kişiselleştirilmiş öğrenme.',
+                style: GoogleFonts.inter(
+                  fontSize: 15,
+                  color: Colors.white.withValues(alpha: 0.75),
+                  fontWeight: FontWeight.w500,
+                  height: 1.5,
+                ),
+              ),
+            ],
+          ).animate().fadeIn(delay: 300.ms, duration: 600.ms).slideY(begin: 0.1, end: 0),
+        ),
+      ],
+    ).animate().fadeIn(duration: 700.ms);
+  }
+
+  // ── Desktop form başlığı ──────────────────────────────────────────────────
+  Widget _buildDesktopFormHeader(AuthViewModel vm) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          vm.mode == AuthMode.login ? 'Tekrar Hoş Geldin 👋' : 'Hesap Oluştur 🚀',
+          style: GoogleFonts.outfit(
+            fontSize: 28,
+            fontWeight: FontWeight.w800,
+            color: AppTheme.textPrimary,
+            letterSpacing: -0.5,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Text(
+          vm.mode == AuthMode.login
+              ? 'Devam etmek için giriş yap.'
+              : 'Birkaç adımda TUS hazırlığına başla.',
+          style: GoogleFonts.inter(
+            fontSize: 14,
+            color: AppTheme.textSecondary,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+      ],
+    ).animate().fadeIn(delay: 200.ms, duration: 500.ms);
+  }
+
+  // ── Mobile hero: dinamik yükseklik ───────────────────────────────────────
+  Widget _buildMobileHero(AuthViewModel vm) {
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        Image.asset('assets/hero_login.jpg', fit: BoxFit.cover),
+        Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Colors.black.withValues(alpha: 0.05),
+                Colors.black.withValues(alpha: 0.70),
+              ],
+            ),
+          ),
+        ),
+        Positioned(
+          bottom: 20,
+          left: 20,
+          right: 20,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'AsisTus',
+                style: GoogleFonts.outfit(
+                  fontSize: 28,
+                  fontWeight: FontWeight.w800,
+                  color: Colors.white,
+                  letterSpacing: -0.5,
+                ),
+              ),
+              const SizedBox(height: 6),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+                decoration: BoxDecoration(
+                  color: AppTheme.cyan.withValues(alpha: 0.2),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.4)),
+                ),
+                child: Text(
+                  vm.mode == AuthMode.login ? 'Tekrar Hoş Geldin 👋' : 'Yeni Yolculuğa Başla 🚀',
+                  style: GoogleFonts.inter(
+                    fontSize: 12,
+                    color: AppTheme.cyan,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
               ),
             ],
           ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(22),
-            child: Image.asset(
-              'assets/icon/app_icon.png',
-              width: 90,
-              height: 90,
-              fit: BoxFit.cover,
-            ),
-          ),
-        )
-            .animate()
-            .fadeIn(duration: 500.ms)
-            .slideY(begin: -0.3, end: 0, duration: 500.ms, curve: Curves.easeOut),
-
-        const SizedBox(height: 16),
-
-        // App name
-        Text(
-          'AsisTus',
-          style: GoogleFonts.outfit(
-            fontSize: 28,
-            fontWeight: FontWeight.w700,
-            color: Colors.white,
-            letterSpacing: -0.5,
-          ),
-        )
-            .animate()
-            .fadeIn(delay: 100.ms, duration: 400.ms)
-            .slideY(begin: 0.2, end: 0, delay: 100.ms, duration: 400.ms),
-
-        const SizedBox(height: 12),
-
-        // Subtitle/Toggle info
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-          decoration: BoxDecoration(
-            color: AppTheme.cyan.withValues(alpha: 0.1),
-            borderRadius: BorderRadius.circular(20),
-            border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.2)),
-          ),
-          child: Text(
-            vm.mode == AuthMode.login ? 'Tekrar Hoş Geldin' : 'Yeni Yolculuğa Başla',
-            style: GoogleFonts.inter(
-              fontSize: 12,
-              color: AppTheme.cyan,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
-        )
-            .animate()
-            .fadeIn(delay: 150.ms, duration: 400.ms),
+        ),
       ],
+    ).animate().fadeIn(duration: 600.ms);
+  }
+
+  // ── Form içeriği (login/signup) ───────────────────────────────────────────
+  Widget _buildFormContent(AuthViewModel vm) {
+    return AnimatedSwitcher(
+      duration: const Duration(milliseconds: 350),
+      transitionBuilder: (child, animation) => FadeTransition(
+        opacity: animation,
+        child: SlideTransition(
+          position: Tween<Offset>(begin: const Offset(0.04, 0), end: Offset.zero)
+              .animate(CurvedAnimation(parent: animation, curve: Curves.easeOutCubic)),
+          child: child,
+        ),
+      ),
+      child: vm.mode == AuthMode.login
+          ? _LoginForm(
+              key: const ValueKey('login'),
+              vm: vm,
+              emailCtrl: _emailCtrl,
+              pwCtrl: _pwCtrl,
+              onSubmit: () => _onSubmit(vm),
+              onGoogleSignIn: () => _signInWithGoogle(context),
+              onAppleSignIn: () => _signInWithApple(context),
+            )
+          : _SignupForm(
+              key: const ValueKey('signup'),
+              vm: vm,
+              nameCtrl: _nameCtrl,
+              emailCtrl: _emailCtrl,
+              pwCtrl: _pwCtrl,
+              confirmCtrl: _confirmCtrl,
+              onSubmit: () => _onSubmit(vm),
+            ),
     );
   }
 
-  // ── Glass card ────────────────────────────────────────────────────────────
+  // ── Glass card (mobile only) ──────────────────────────────────────────────
   Widget _buildGlassCard(AuthViewModel vm) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.04), // Ultra subtle for high premium feel
+        color: Colors.white.withValues(alpha: 0.04),
         borderRadius: BorderRadius.circular(28),
-        border: Border.all(
-          color: Colors.white.withValues(alpha: 0.08),
-          width: 1.2,
-        ),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.08), width: 1.2),
         boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.4),
-            blurRadius: 32,
-            offset: const Offset(0, 12),
-          ),
+          BoxShadow(color: Colors.black.withValues(alpha: 0.4), blurRadius: 32, offset: const Offset(0, 12)),
         ],
       ),
       child: ClipRRect(
@@ -306,48 +483,15 @@ class _LoginScreenState extends State<LoginScreen> {
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
           child: Padding(
-            padding: const EdgeInsets.all(28),
-            child: AnimatedSwitcher(
-              duration: const Duration(milliseconds: 350),
-              transitionBuilder: (child, animation) {
-                return FadeTransition(
-                  opacity: animation,
-                  child: SlideTransition(
-                    position: Tween<Offset>(
-                      begin: const Offset(0.04, 0),
-                      end: Offset.zero,
-                    ).animate(CurvedAnimation(parent: animation, curve: Curves.easeOutCubic)),
-                    child: child,
-                  ),
-                );
-              },
-              child: vm.mode == AuthMode.login
-                  ? _LoginForm(
-                      key: const ValueKey('login'),
-                      vm: vm,
-                      emailCtrl: _emailCtrl,
-                      pwCtrl: _pwCtrl,
-                      onSubmit: () => _onSubmit(vm),
-                      onGoogleSignIn: () => _signInWithGoogle(context),
-                      onAppleSignIn: () => _signInWithApple(context),
-                    )
-                  : _SignupForm(
-                      key: const ValueKey('signup'),
-                      vm: vm,
-                      nameCtrl: _nameCtrl,
-                      emailCtrl: _emailCtrl,
-                      pwCtrl: _pwCtrl,
-                      confirmCtrl: _confirmCtrl,
-                      onSubmit: () => _onSubmit(vm),
-                    ),
-            ),
+            padding: const EdgeInsets.all(24),
+            child: _buildFormContent(vm),
           ),
         ),
       ),
     )
         .animate()
         .fadeIn(delay: 300.ms, duration: 600.ms)
-        .slideY(begin: 0.2, end: 0, delay: 300.ms, duration: 600.ms, curve: Curves.easeOutQuart);
+        .slideY(begin: 0.15, end: 0, delay: 300.ms, duration: 600.ms, curve: Curves.easeOutQuart);
   }
 
   // ── Bottom toggle ─────────────────────────────────────────────────────────

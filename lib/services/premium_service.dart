@@ -2,7 +2,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 /// Freemium iş modeli servisi.
-/// Ücretsiz kullanıcılar günlük 20 flashcard + 10 soru limiti ile sınırlıdır.
+/// Ücretsiz kullanıcılar günlük 20 flashcard + 20 soru limiti ile sınırlıdır.
 /// Premium kullanıcılar için tüm limitler kaldırılır.
 class PremiumService {
   // Singleton

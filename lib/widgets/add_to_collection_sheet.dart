@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import '../models/collection_model.dart';
 import '../services/collection_service.dart';
 import '../theme/app_theme.dart';
+import '../services/premium_service.dart';
+import 'package:flutter/services.dart';
 
 /// Kart → Klasör ekleme / çıkarma bottom sheet
 class AddToCollectionSheet extends StatefulWidget {
@@ -36,9 +38,110 @@ class AddToCollectionSheet extends StatefulWidget {
 class _AddToCollectionSheetState extends State<AddToCollectionSheet> {
   final _service = CollectionService();
   bool _creating = false;
+  bool _isPremium = false;
   final _nameCtrl = TextEditingController();
   String _selectedEmoji = '📚';
   int _selectedColor = const Color(0xFF00D4FF).toARGB32();
+
+  @override
+  void initState() {
+    super.initState();
+    _checkPremium();
+  }
+
+  Future<void> _checkPremium() async {
+    final premium = await PremiumService().isPremium();
+    if (mounted) setState(() => _isPremium = premium);
+  }
+
+  void _showPremiumGate(BuildContext context) {
+    HapticFeedback.mediumImpact();
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (ctx) => Container(
+        padding: const EdgeInsets.fromLTRB(28, 20, 28, 32),
+        decoration: const BoxDecoration(
+          color: Color(0xFF12161E),
+          borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              width: 40, height: 4,
+              decoration: BoxDecoration(
+                color: Colors.white12,
+                borderRadius: BorderRadius.circular(2),
+              ),
+            ),
+            const SizedBox(height: 24),
+            Container(
+              width: 72, height: 72,
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: LinearGradient(
+                  colors: [Color(0xFFFFD700), Color(0xFFA371F7)],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+              ),
+              child: const Icon(Icons.workspace_premium_rounded, color: Colors.white, size: 34),
+            ),
+            const SizedBox(height: 18),
+            Text(
+              'Klasörleme Premium Özellik',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.outfit(
+                color: Colors.white,
+                fontSize: 20,
+                fontWeight: FontWeight.w800,
+                letterSpacing: -0.3,
+              ),
+            ),
+            const SizedBox(height: 10),
+            Text(
+              'Kendi klasörlerini oluşturmak ve\nkartları düzenlemek için Premium üye ol.',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.inter(
+                color: AppTheme.textSecondary,
+                fontSize: 13,
+                height: 1.55,
+              ),
+            ),
+            const SizedBox(height: 12),
+            _PremiumFeatureRow(icon: Icons.folder_special_rounded, text: 'Sınırsız klasör oluştur'),
+            _PremiumFeatureRow(icon: Icons.add_card_rounded, text: 'Her karta not ve etiket ekle'),
+            _PremiumFeatureRow(icon: Icons.sync_rounded, text: 'Tüm cihazlarda klasör senkronizasyonu'),
+            const SizedBox(height: 24),
+            SizedBox(
+              width: double.infinity,
+              height: 52,
+              child: ElevatedButton.icon(
+                onPressed: () => Navigator.pop(ctx),
+                icon: const Icon(Icons.star_rounded, size: 18),
+                label: Text(
+                  "Premium'a Geç",
+                  style: GoogleFonts.inter(
+                    fontWeight: FontWeight.w800,
+                    fontSize: 15,
+                  ),
+                ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFFFFD700),
+                  foregroundColor: Colors.black87,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  elevation: 0,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 
   @override
   void dispose() {
@@ -152,7 +255,13 @@ class _AddToCollectionSheetState extends State<AddToCollectionSheet> {
                     : SizedBox(
                         width: double.infinity,
                         child: OutlinedButton.icon(
-                          onPressed: () => setState(() => _creating = true),
+                          onPressed: () {
+                            if (!_isPremium) {
+                              _showPremiumGate(context);
+                              return;
+                            }
+                            setState(() => _creating = true);
+                          },
                           icon: const Icon(Icons.add_rounded, size: 18),
                           label: Text('Yeni Klasör Oluştur',
                               style: GoogleFonts.inter(
@@ -180,6 +289,10 @@ class _AddToCollectionSheetState extends State<AddToCollectionSheet> {
     final inCollection = _service.isCardInCollection(col.id, widget.cardId);
     return GestureDetector(
       onTap: () async {
+        if (!_isPremium) {
+          _showPremiumGate(context);
+          return;
+        }
         await _service.toggleCard(col.id, widget.cardId);
         setState(() {});
       },
@@ -412,6 +525,40 @@ class _AddToCollectionSheetState extends State<AddToCollectionSheet> {
               style: GoogleFonts.inter(
                   color: subColor.withValues(alpha: 0.6), fontSize: 12)),
           const SizedBox(height: 16),
+        ],
+      ),
+    );
+  }
+}
+
+class _PremiumFeatureRow extends StatelessWidget {
+  final IconData icon;
+  final String text;
+  const _PremiumFeatureRow({required this.icon, required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Row(
+        children: [
+          Container(
+            width: 28, height: 28,
+            decoration: BoxDecoration(
+              color: const Color(0xFFFFD700).withValues(alpha: 0.12),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Icon(icon, color: const Color(0xFFFFD700), size: 14),
+          ),
+          const SizedBox(width: 10),
+          Text(
+            text,
+            style: GoogleFonts.inter(
+              color: AppTheme.textSecondary,
+              fontSize: 12,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
         ],
       ),
     );

@@ -309,11 +309,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
   // ── Hedef Puan Kartı ──────────────────────────────────────────────────────
 
   Widget _buildTargetCard(bool isDark, Color textColor, Color subColor) {
-    final targetPuan = _progress.targetScore;
-    final basePuan = _progress.baseScore;
-    final dailyGoal = _progress.recommendedDailyGoal;
+    final today = _progress.todayStudied;
+    final goal = _progress.dailyGoal;
     final daysLeft = _progress.daysToExam;
-    final progressRatio = (targetPuan - 40) / (85 - 40);
+    final progressRatio = goal > 0 ? (today / goal) : 0.0;
 
     return GestureDetector(
       onTap: () => _showGoalSetupSheet(isDark),
@@ -336,27 +335,44 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             child: Row(
               children: [
-                // Circular progress
+                // Circular progress (0/50 etc)
                 SizedBox(
                   width: 64,
                   height: 64,
-                  child: CustomPaint(
-                    painter: _CircularProgressPainter(
-                      progress: progressRatio.clamp(0.0, 1.0),
-                      color: AppTheme.cyan,
-                      bgColor: isDark
-                          ? Colors.white.withValues(alpha: 0.08)
-                          : Colors.black.withValues(alpha: 0.06),
-                    ),
-                    child: Center(
-                      child: Text(
-                        targetPuan.toStringAsFixed(0),
-                        style: GoogleFonts.inter(
-                            color: AppTheme.cyan,
-                            fontSize: 20,
-                            fontWeight: FontWeight.w900),
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      CustomPaint(
+                        size: const Size(64, 64),
+                        painter: _CircularProgressPainter(
+                          progress: progressRatio.clamp(0.0, 1.0),
+                          color: AppTheme.cyan,
+                          bgColor: isDark
+                              ? Colors.white.withValues(alpha: 0.08)
+                              : Colors.black.withValues(alpha: 0.06),
+                        ),
                       ),
-                    ),
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            '$today',
+                            style: GoogleFonts.inter(
+                                color: AppTheme.cyan,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w900,
+                                height: 1.1),
+                          ),
+                          Text(
+                            '/$goal',
+                            style: GoogleFonts.inter(
+                                color: subColor,
+                                fontSize: 10,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
                 const SizedBox(width: 18),
@@ -364,17 +380,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Hedef TUS Puanı',
+                      Text(goal == 50 ? 'Günlük Limit' : 'Günlük Hedef',
                           style: GoogleFonts.inter(
                               color: textColor,
                               fontSize: 15,
                               fontWeight: FontWeight.w800)),
                       const SizedBox(height: 4),
-                      Text('Mevcut: ${basePuan.toStringAsFixed(0)}  ·  Günlük: $dailyGoal soru',
+                      Text('Branş: ${_user.targetBranch}',
                           style: GoogleFonts.inter(
-                              color: subColor,
+                              color: AppTheme.neonPurple,
                               fontSize: 12,
-                              fontWeight: FontWeight.w500)),
+                              fontWeight: FontWeight.w700)),
                       const SizedBox(height: 2),
                       Text('Sınava $daysLeft gün kaldı',
                           style: GoogleFonts.inter(

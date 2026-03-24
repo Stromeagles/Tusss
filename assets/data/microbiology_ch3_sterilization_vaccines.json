@@ -48,6 +48,21 @@
       "HEPA filtreleri 0.3 mikrona kadar olan mikropları temizler.",
       "Tindalizasyon (Benmari): Protein veya karbonhidrat içeren maddelerin 3 gün üst üste ısıtılarak steril edilmesidir.",
       "Gluteraldehit endoskopların yüksek düzey dezenfeksiyonunda kullanılır."
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-micro-ch3-001-001",
+        "case": "Bir ameliyathanede rutin sterilizasyon denetimi yapılıyor. Otoklav (nemli ısı, 121°C, 15 dk) biyolojik indikatörü pozitif geldi. Bu durumda hangi yorum doğrudur?",
+        "options": [
+          "A) Sterilizasyon başarılı — Bacillus subtilis öldü",
+          "B) Sterilizasyon BAŞARISIZ — Bacillus stearothermophilus sporları hayatta",
+          "C) Sterilizasyon başarılı — Bacillus stearothermophilus zaten ısıya duyarlı",
+          "D) İndikatör yanlış — Etilen oksit için Bacillus stearothermophilus kullanılır",
+          "E) Sterilizasyon kısmen başarılı — Vejetatif formlar öldü"
+        ],
+        "correct_answer": "B) Sterilizasyon BAŞARISIZ — Bacillus stearothermophilus sporları hayatta",
+        "explanation": "PROFESÖR NOTU: Biyolojik indikatörler, sterilizasyon sürecinin etkinliğini kanıtlayan 'altın standart' kontrol yöntemidir. Pozitif sonuç = bakteri hayatta = sterilizasyon BAŞARISIZ demektir.\n\n🎓 HOCA ÖZETİ:\n- Otoklav (Nemli ısı) → Bacillus stearothermophilus (en dayanıklı spor)\n- Etilen Oksit → Bacillus subtilis var. niger\n- Kuru ısı (Pastör fırını) → Bacillus subtilis\n- Mnemonic: 'OtoKLAV = Klav-us (çivi) gibi sert Bacillus stearothermophilus'\n- TUS SPOT: İndikatör pozitif = sterilizasyon başarısız. Tüm aletler yeniden sterilize edilmeli!"
+      }
     ]
   },
   {
@@ -103,14 +118,14 @@
       {
         "case": "Daha önce hiç aşılanmamış bir çocukta 'Göbek Bağının Geç Düşmesi' ve tekrarlayan enfeksiyonlar görülüyorsa, hangi immün defekt düşünülmelidir?",
         "options": [
-          "NADPH Oksidaz eksikliği",
-          "Lökosit Adezyon Defekti (LAD)",
-          "Chediak-Higashi",
-          "Kompleman eksikliği",
-          "E) Integronlar"
+          "A) NADPH Oksidaz eksikliği (Kronik Granülomatöz Hastalık)",
+          "B) Lökosit Adezyon Defekti (LAD)",
+          "C) Chédiak-Higashi Sendromu",
+          "D) C3 Kompleman eksikliği",
+          "E) Hiper-IgE Sendromu (Job Sendromu)"
         ],
-        "correct_answer": "Lökosit Adezyon Defekti (LAD)",
-        "explanation": "LAD'da integrin beta (CD11/18) eksikliği vardır, nötrofiller dokuya göç edemez. Klasik bulgu göbek bağının geç düşmesidir.",
+        "correct_answer": "B) Lökosit Adezyon Defekti (LAD)",
+        "explanation": "PROFESÖR NOTU: Lökosit Adezyon Defekti (LAD), integrin beta-2 (CD18) eksikliği nedeniyle nötrofillerin damar dışına çıkamadığı bir hastalıktır. \n\n🎓 HOCA ÖZETİ:\n- Tipik Bulgu: 1) Göbek bağının geç düşmesi (>3 hafta). 2) İrin (püy) oluşmayan soğuk enfeksiyonlar. 3) Kanda aşırı lökositoz (çünkü nötrofiller kanda hapsolur).\n- Mnemonic: L-AD = L-ökositlerin A-dam gibi D-ışarı çıkamaması.",
         "id": "cc-micro-ch3-002-001"
       }
     ]

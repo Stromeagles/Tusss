@@ -17,22 +17,34 @@ class FocusScreen extends StatefulWidget {
   State<FocusScreen> createState() => _FocusScreenState();
 }
 
-class _FocusScreenState extends State<FocusScreen> {
+class _FocusScreenState extends State<FocusScreen>
+    with TickerProviderStateMixin {
   // Pomodoro süreleri (dakika)
   int _focusMinutes = 25;
   int _breakMinutes = 5;
   bool _isPomodoro = true; // true = Pomodoro geri sayım, false = Stopwatch
   bool _isPremium = false;
+  late AnimationController _glowCtrl;
 
   @override
   void initState() {
     super.initState();
     _checkPremium();
+    _glowCtrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 2200),
+    )..repeat(reverse: true);
   }
 
   Future<void> _checkPremium() async {
     final premium = await PremiumService().isPremium();
     if (mounted) setState(() => _isPremium = premium);
+  }
+
+  @override
+  void dispose() {
+    _glowCtrl.dispose();
+    super.dispose();
   }
 
   @override
@@ -43,11 +55,9 @@ class _FocusScreenState extends State<FocusScreen> {
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: isDark
-                ? const [Color(0xFF0B1120), Color(0xFF0F172A), Color(0xFF152035)]
-                : const [Color(0xFFF0F5FF), Color(0xFFE8F0FF)],
+            colors: [Color(0xFF020810), Color(0xFF05101E), Color(0xFF0A1628)],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),
@@ -58,24 +68,36 @@ class _FocusScreenState extends State<FocusScreen> {
             Positioned(
               top: -120, left: -80,
               child: _BreathingBlob(
-                color: AppTheme.cyan, size: 350,
-                opacity: isDark ? 0.10 : 0.04,
+                color: AppTheme.cyan, size: 420,
+                opacity: service.isRunning ? 0.18 : 0.09,
                 isActive: service.isRunning,
               ),
             ),
             Positioned(
               bottom: -100, right: -60,
               child: _BreathingBlob(
-                color: AppTheme.neonPurple, size: 280,
-                opacity: isDark ? 0.08 : 0.03,
+                color: AppTheme.neonPurple, size: 360,
+                opacity: service.isRunning ? 0.15 : 0.07,
                 isActive: service.isRunning,
+              ),
+            ),
+            // Deep Focus overlay — screen darkens when running
+            AnimatedContainer(
+              duration: const Duration(milliseconds: 1200),
+              decoration: BoxDecoration(
+                color: Colors.black.withValues(
+                    alpha: service.isRunning ? 0.28 : 0.0),
               ),
             ),
 
             SafeArea(
               child: Column(
                 children: [
-                  _buildHeader(context, isDark),
+                  AnimatedOpacity(
+                    opacity: service.isRunning ? 0.30 : 1.0,
+                    duration: const Duration(milliseconds: 900),
+                    child: _buildHeader(context, isDark),
+                  ),
                   const Spacer(flex: 1),
                   _buildTimerCircle(service, isDark),
                   const SizedBox(height: 12),
@@ -83,9 +105,20 @@ class _FocusScreenState extends State<FocusScreen> {
                   const Spacer(flex: 1),
                   _buildControls(context, service, isDark),
                   const SizedBox(height: 24),
-                  _buildSoundPicker(service, isDark),
+                  AnimatedOpacity(
+                    opacity: service.isRunning ? 0.18 : 1.0,
+                    duration: const Duration(milliseconds: 900),
+                    child: IgnorePointer(
+                      ignoring: service.isRunning,
+                      child: _buildSoundPicker(service, isDark),
+                    ),
+                  ),
                   const SizedBox(height: 12),
-                  _buildStats(service, isDark),
+                  AnimatedOpacity(
+                    opacity: service.isRunning ? 0.18 : 1.0,
+                    duration: const Duration(milliseconds: 900),
+                    child: _buildStats(service, isDark),
+                  ),
                   const SizedBox(height: 20),
                 ],
               ),
@@ -169,24 +202,37 @@ class _FocusScreenState extends State<FocusScreen> {
   }
 
   Widget _buildTimerCircle(FocusService service, bool isDark) {
+    final glowColor = service.isBreak ? AppTheme.success : AppTheme.cyan;
     return GestureDetector(
       onLongPress: service.isRunning ? null : () => _showDurationPicker(isDark),
       child: Stack(
         alignment: Alignment.center,
         children: [
-          // Dış glow
+          // Pulsing neon glow — "nefes alan" efekt
           if (service.isRunning)
-            Container(
-              width: 280, height: 280,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                    color: AppTheme.cyan.withValues(alpha: 0.12),
-                    blurRadius: 60, spreadRadius: 10,
+            AnimatedBuilder(
+              animation: _glowCtrl,
+              builder: (_, __) {
+                final t = _glowCtrl.value;
+                return Container(
+                  width: 300, height: 300,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: glowColor.withValues(alpha: 0.16 + t * 0.14),
+                        blurRadius: 50 + t * 35,
+                        spreadRadius: 10 + t * 12,
+                      ),
+                      BoxShadow(
+                        color: glowColor.withValues(alpha: 0.07 + t * 0.05),
+                        blurRadius: 100 + t * 50,
+                        spreadRadius: 0,
+                      ),
+                    ],
                   ),
-                ],
-              ),
+                );
+              },
             ),
 
           // Ring
@@ -785,7 +831,7 @@ class _FlowRingPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final center = Offset(size.width / 2, size.height / 2);
     final radius = (size.width - 12) / 2;
-    const strokeWidth = 6.0;
+    final strokeWidth = isActive ? 9.0 : 6.0;
 
     canvas.drawCircle(center, radius, Paint()..color = trackColor..style = PaintingStyle.stroke..strokeWidth = strokeWidth..strokeCap = StrokeCap.round);
 

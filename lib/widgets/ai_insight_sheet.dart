@@ -9,6 +9,7 @@ class AiInsightSheet extends StatelessWidget {
   final bool isDark;
   final Map<String, int> mistakeCounts; // Brans -> Yanlış Sayısı
   final List<String> topMistakeTopics; // En çok yanlış yapılan 3 konu
+  final String userName;
 
   const AiInsightSheet({
     super.key,
@@ -16,6 +17,7 @@ class AiInsightSheet extends StatelessWidget {
     required this.isDark,
     required this.mistakeCounts,
     required this.topMistakeTopics,
+    this.userName = 'Doktor',
   });
 
   @override
@@ -81,31 +83,82 @@ class AiInsightSheet extends StatelessWidget {
   }
 
   Widget _buildHeader(Color textColor, Color subColor) {
+    final days = progress.daysToExam;
+    final isUrgent = days <= 30;
+    final isSoon = days <= 90 && days > 30;
+    final urgentColor = isUrgent ? const Color(0xFFFF4757) : (isSoon ? AppTheme.neonGold : AppTheme.cyan);
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24),
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            padding: const EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: AppTheme.cyan.withValues(alpha: 0.12),
-              borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.35)),
-            ),
-            child: const Icon(Icons.psychology_rounded, color: AppTheme.cyan, size: 28),
-          ),
-          const SizedBox(width: 16),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          Row(
             children: [
-              Text('Dahi Asistan',
-                  style: GoogleFonts.inter(
-                      color: textColor, fontSize: 22, fontWeight: FontWeight.w900)),
-              Text('Yapay Zeka Analiz Raporu',
-                  style: GoogleFonts.inter(
-                      color: subColor, fontSize: 13, fontWeight: FontWeight.w500)),
+              Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: urgentColor.withValues(alpha: 0.12),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: urgentColor.withValues(alpha: 0.35)),
+                ),
+                child: Icon(
+                  isUrgent ? Icons.warning_amber_rounded : Icons.smart_toy_rounded,
+                  color: urgentColor, size: 28,
+                ),
+              ),
+              const SizedBox(width: 16),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Merhaba, $userName 👋',
+                      style: GoogleFonts.inter(
+                          color: textColor, fontSize: 20, fontWeight: FontWeight.w900),
+                    ),
+                    Text(
+                      isUrgent
+                          ? 'Sınava $days gün kaldı — Kritik mod!'
+                          : isSoon
+                              ? 'Sınava $days gün kaldı — Son düzlük!'
+                              : 'Yapay Zeka Analiz Raporu',
+                      style: GoogleFonts.inter(
+                          color: urgentColor, fontSize: 13, fontWeight: FontWeight.w600),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
+          if (isUrgent) ...[
+            const SizedBox(height: 12),
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+              decoration: BoxDecoration(
+                color: const Color(0xFFFF4757).withValues(alpha: 0.10),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: const Color(0xFFFF4757).withValues(alpha: 0.35)),
+              ),
+              child: Row(
+                children: [
+                  const Icon(Icons.bolt_rounded, color: Color(0xFFFF4757), size: 16),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      '$days gün içinde TUS\'a giriyorsun. Yanlışlara tam gaz odaklan!',
+                      style: GoogleFonts.inter(
+                        color: const Color(0xFFFF4757),
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ],
       ),
     );
@@ -242,14 +295,19 @@ class AiInsightSheet extends StatelessWidget {
 
   Widget _buildAdviceCard(String mainWeakness) {
     final intensity = progress.scoreIntensity;
+    final days = progress.daysToExam;
+    final name = userName;
+    final isUrgent = days <= 30;
     String advice;
 
-    if (intensity == 'Efsane') {
-      advice = '$mainWeakness branşındaki yanlışların %10\'un altına düşmeli. Bu hafta sadece $mainWeakness "Kritik" kartlarına odaklanarak netlerini sabitleyebilirsin.';
+    if (isUrgent) {
+      advice = '$name, sınava $days gün kaldı ve $mainWeakness branşında kritik açıklar var. Artık yeni konu çalışma değil, sadece "Yanlışlar" listeni bitir. Her gün minimum ${progress.dailyGoal} kart, sıfır mazeret.';
+    } else if (intensity == 'Efsane') {
+      advice = '$name, $mainWeakness branşındaki yanlışların %10\'un altına düşmeli. Bu hafta sadece $mainWeakness "Kritik" kartlarına odaklanarak netlerini sabitleyebilirsin.';
     } else if (intensity == 'Uzman') {
-      advice = 'Hedefin yüksek. $mainWeakness konusundaki eksiklerin temel bilimlerde puanını baskılıyor. Bu branştaki vaka sorularına ağırlık vermelisin.';
+      advice = '$name, hedefin yüksek. $mainWeakness konusundaki eksiklerin temel bilimlerde puanını baskılıyor. Bu branştaki vaka sorularına ağırlık vermelisin.';
     } else {
-      advice = '$mainWeakness branşından gelen yanlışlar çalışma düzenini bozabilir. Önce bu branştaki "En Çok Soru Çıkan" spotlara bakmanı öneririm.';
+      advice = '$name, $mainWeakness branşından gelen yanlışlar çalışma düzenini bozabilir. Önce bu branştaki "En Çok Soru Çıkan" spotlara bakmanı öneririm.';
     }
 
     return Container(

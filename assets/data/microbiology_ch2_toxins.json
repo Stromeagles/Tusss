@@ -65,14 +65,14 @@
       {
         "case": "Konserve gıda tüketimi sonrası simetrik desendan flask felç, diplopi ve disfaji şikayetleri olan bir hastada sorumlu toksinin etki mekanizması nedir?",
         "options": [
-          "cAMP artışı",
-          "GABA inhibisyonu",
-          "ACh salınımının engellenmesi",
-          "EF-2 inaktivasyonu",
-          "E) Integronlar"
+          "A) cAMP artışı (Kolera-ETEC)",
+          "B) GABA/Glisin inhibisyonu (Tetanoz)",
+          "C) Presinaptik ACh salınımının engellenmesi (Botulismus)",
+          "D) EF-2 inaktivasyonu (Difteri-Pseudomonas)",
+          "E) Guanilat siklaz aktivasyonu (ST Toksini)"
         ],
-        "correct_answer": "ACh salınımının engellenmesi",
-        "explanation": "Botulinum toksini periferik presinaptik uçlardan Asetilkolin (ACh) salınımını engelleyerek gevşek (flask) felç yapar.",
+        "correct_answer": "C) Presinaptik ACh salınımının engellenmesi (Botulismus)",
+        "explanation": "PROFESÖR NOTU: Clostridium botulinum toksini, sinir-kas kavşağında (periferik kolinerjik sinapslar) presinaptik uçtan Asetilkolin (ACh) salınımını geri dönüşsüz olarak engeller. \n\n🎓 HOCA ÖZETİ:\n- Sonuç: Gevşek (flaksid) felç, pitozis (göz kapağı düşüklüğü), diplopi (çift görme) ve disfaji (yutma güçlüğü).\n- Mnemonic: Botulismus = B-oşaltamaz (ACh'yi boşaltamaz).\n- Bebeklerde bal tüketimine dikkat: Floppy Baby (gevşek bebek) sendromu yapar.",
         "id": "cc-micro-ch2-001-001"
       }
     ]
@@ -125,6 +125,21 @@
       "Zorunlu anaeroblar: Actinomyces, Bacteroides, Clostridium (Katalaz negatif).",
       "Pasteur etkisi: Fakültatif anaeroblarda oksijen varlığında glikolizin azalmasıdır.",
       "Kapnofiller (%5-10 CO2): Brucella abortus, Neisseria gonorrhoeae."
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-micro-ch2-002-001",
+        "case": "Derin yumuşak doku enfeksiyonu (nekrotizan fasiit) şüphesiyle ameliyata alınan hastanın yara kültüründe üreme için oksijensiz ortam (anaerobik kültür) gerekmektedir. Bu bakteri için en uygun büyüme koşulu hangisidir?",
+        "options": [
+          "A) %21 O2 — Zorunlu aerob ortam",
+          "B) %5-10 CO2 — Kapnofilik ortam",
+          "C) Oksijensiz ortam — Zorunlu anaerob",
+          "D) %5 O2 — Mikroaerofilik ortam",
+          "E) Herhangi bir O2 konsantrasyonu — Fakültatif anaerob"
+        ],
+        "correct_answer": "C) Oksijensiz ortam — Zorunlu anaerob",
+        "explanation": "PROFESÖR NOTU: Nekrotizan fasiit ve derin yara enfeksiyonlarında Clostridium perfringens ve diğer zorunlu anaeroblar önemli etkenlerdir. Bu bakteriler oksijen varlığında üreyemez.\n\n🎓 HOCA ÖZETİ:\n- Zorunlu Anaeroblar (ABC): Actinomyces, Bacteroides, Clostridium\n- Klinik ipucu: Kötü kokulu, gaz kabarcıklı yara + nekroz = Clostridium perfringens (gazlı gangren)\n- Mnemonic: 'Anaeroblar OKSİJENDEN NEFRET EDER — O2 onlar için ZEHİR'\n- TUS SPOT: Zorunlu aeroblar: M. tuberculosis, Nocardia, Pseudomonas (MANtolu Profesör Ayakta)"
+      }
     ]
   }
 ]

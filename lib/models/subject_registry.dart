@@ -68,7 +68,9 @@ class SubjectRegistry {
       icon: Icons.bubble_chart_rounded,
       color: Color(0xFFE0A3FF),
       category: SubjectCategory.temel,
-      assetPaths: [],
+      assetPaths: [
+        'assets/data/biyokimya_batch1.json',
+      ],
     ),
     SubjectModule(
       id: 'mikrobiyoloji',
@@ -167,6 +169,7 @@ class SubjectRegistry {
       category: SubjectCategory.temel,
       assetPaths: [
         'assets/data/farmakoloji_batch1.json',
+        'assets/data/farmakoloji_batch2.json',
       ],
     ),
 

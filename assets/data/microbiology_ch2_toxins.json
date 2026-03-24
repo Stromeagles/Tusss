@@ -65,14 +65,14 @@
       {
         "case": "Konserve gıda tüketimi sonrası simetrik desendan flask felç, diplopi ve disfaji şikayetleri olan bir hastada sorumlu toksinin etki mekanizması nedir?",
         "options": [
-          "A) cAMP artışı (Kolera-ETEC)",
-          "B) GABA/Glisin inhibisyonu (Tetanoz)",
-          "C) Presinaptik ACh salınımının engellenmesi (Botulismus)",
-          "D) EF-2 inaktivasyonu (Difteri-Pseudomonas)",
-          "E) Guanilat siklaz aktivasyonu (ST Toksini)"
+          "A) cAMP artışı",
+          "B) GABA/Glisin inhibisyonu",
+          "C) Presinaptik ACh salınımının engellenmesi",
+          "D) EF-2 inaktivasyonu",
+          "E) Guanilat siklaz aktivasyonu"
         ],
-        "correct_answer": "C) Presinaptik ACh salınımının engellenmesi (Botulismus)",
-        "explanation": "PROFESÖR NOTU: Clostridium botulinum toksini, sinir-kas kavşağında (periferik kolinerjik sinapslar) presinaptik uçtan Asetilkolin (ACh) salınımını geri dönüşsüz olarak engeller. \n\n🎓 HOCA ÖZETİ:\n- Sonuç: Gevşek (flaksid) felç, pitozis (göz kapağı düşüklüğü), diplopi (çift görme) ve disfaji (yutma güçlüğü).\n- Mnemonic: Botulismus = B-oşaltamaz (ACh'yi boşaltamaz).\n- Bebeklerde bal tüketimine dikkat: Floppy Baby (gevşek bebek) sendromu yapar.",
+        "correct_answer": "C) Presinaptik ACh salınımının engellenmesi",
+        "explanation": "PROFESÖR NOTU: Clostridium botulinum toksini, sinir-kas kavşağında (periferik kolinerjik sinapslar) presinaptik uçtan Asetilkolin (ACh) salınımını geri dönüşsüz olarak engeller. Bu tablonun etkeni Botulismus'tur. \n\n🎓 HOCA ÖZETİ:\n- Sonuç: Gevşek (flaksid) felç, pitozis (göz kapağı düşüklüğü), diplopi (çift görme) ve disfaji (yutma güçlüğü).\n- Mnemonic: Botulismus = B-oşaltamaz (ACh'yi boşaltamaz).\n- Bebeklerde bal tüketimine dikkat: Floppy Baby (gevşek bebek) sendromu yapar.\n- Ayırıcı: cAMP artışı = Kolera/ETEC; GABA/Glisin inhibisyonu = Tetanoz; EF-2 inaktivasyonu = Difteri/Pseudomonas; Guanilat siklaz aktivasyonu = ST Toksini.",
         "id": "cc-micro-ch2-001-001"
       }
     ]

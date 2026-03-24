@@ -104,14 +104,14 @@
       {
         "case": "Boğaz ağrısı sonrası Basitrasin duyarlı, beta hemolitik koloniler saptanan bir çocukta 3 hafta sonra idrarda renk değişikliği ve ödem gelişmiştir. En olası tanı nedir?",
         "options": [
-          "A) Akut Romatizmal Ateş (Sadece farenjit sonrası)",
-          "B) Akut Poststreptokokal Glomerülonefrit (APSGN)",
-          "C) Kızıl (Scarlet Fever - döküntü ile gider)",
-          "D) Toksik Şok Sendromu (Hipotansiyon + şok)",
-          "E) IgA Nefropatisi (Asendan seyir)"
+          "A) Akut Romatizmal Ateş",
+          "B) Akut Poststreptokokal Glomerülonefrit",
+          "C) Kızıl",
+          "D) Toksik Şok Sendromu",
+          "E) IgA Nefropatisi"
         ],
-        "correct_answer": "B) Akut Poststreptokokal Glomerülonefrit (APSGN)",
-        "explanation": "PROFESÖR DEĞERLENDİRMESİ: S. pyogenes (A Grubu Beta Hemolitik Streptokok) enfeksiyonlarından sonra gelişen 'steril' komplikasyonları iyi ayırt etmek gerekir. \n\n🎓 HOCA ÖZETİ:\n- APSGN: Hem boğaz hem deri (impetigo) enfeksiyonu sonrası gelişebilir. İdrarda çay rengi görünümü (hematüri) ve ödem klasiktir.\n- ARA (Akut Romatizmal Ateş): SADECE boğaz enfeksiyonu (farenjit) sonrası gelişir. Deri enfeksiyonu sonrası ARA GÖRÜLMEZ.\n- Mekanizma: Tip 3 aşırı duyarlılık (immün kompleks çökmesi).",
+        "correct_answer": "B) Akut Poststreptokokal Glomerülonefrit",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: S. pyogenes (A Grubu Beta Hemolitik Streptokok) enfeksiyonlarından sonra gelişen 'steril' komplikasyonları iyi ayırt etmek gerekir. \n\n🎓 HOCA ÖZETİ:\n- APSGN (Akut Poststreptokokal Glomerülonefrit): Hem boğaz hem deri (impetigo) enfeksiyonu sonrası gelişebilir. İdrarda çay rengi görünümü (hematüri) ve ödem klasiktir.\n- ARA (Akut Romatizmal Ateş): SADECE boğaz enfeksiyonu (farenjit) sonrası gelişir. Deri enfeksiyonu sonrası ARA GÖRÜLMEZ.\n- Kızıl = Scarlet Fever; döküntü ile seyreder.\n- Toksik Şok Sendromu = Hipotansiyon + şok ile seyreder.\n- IgA Nefropatisi = Asendan seyirli, post-streptokokal değildir.\n- Mekanizma: Tip 3 aşırı duyarlılık (immün kompleks çökmesi).",
         "id": "cc-micro-bact-cocci-002-001"
       }
     ]

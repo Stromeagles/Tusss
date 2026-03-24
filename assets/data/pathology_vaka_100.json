@@ -27,12 +27,12 @@
       "case": "**Apoptoz**\n\nHIV pozitif hastanın periferik kan yaymasında lenfosit sayısı belirgin azalmış bulunuyor. Lenf nodu biyopsisinde hücrelerin küçüldüğü, nükleer kromatinin yoğunlaştığı ve sitoplazmik fragmanların (membran-bağlı cisimcikler) oluştuğu izleniyor. İnflamatuar infiltrasyon mevcut değil.\n\nBu hücre ölüm mekanizmasını tetikleyen en önemli yolak hangisidir?",
       "options": [
         "A) Ekstrinsik yolak — Fas/FasL etkileşimi",
-        "B) İntrinsik (mitokondriyal) yolak — Bcl-2 ailesi düzenlenmesi ve sitokrom-c salınımı",
+        "B) İntrinsik (mitokondriyal) yolak",
         "C) Nekroptoz — RIPK1/RIPK3 aktivasyonu",
         "D) Piroptoz — inflammazom aktivasyonu",
         "E) Otofaji — lizozomal sindirim"
       ],
-      "correct_answer": "B) İntrinsik (mitokondriyal) yolak — Bcl-2 ailesi düzenlenmesi ve sitokrom-c salınımı",
+      "correct_answer": "B) İntrinsik (mitokondriyal) yolak",
       "explanation": "HIV'de CD4+ T lenfositlerin kaybı ağırlıklı olarak intrinsik (mitokondriyal) apoptoz yolağı ile gerçekleşir. Viral proteinler Bcl-2 ailesinin pro-apoptotik üyelerini (Bax, Bak) aktive eder; mitokondri dış membranından sitokrom-c salınır ve kaspaz-9 → kaspaz-3 kaskadı başlar. İnflamatuar yanıt olmaması apoptozun temel özelliğidir (nekrozdan ayırt edici). Ekstrinsik yolak da (Fas/FasL) rol oynar ama birincil mekanizma intrinsik yolaktır.",
       "story_hint": "💡 HİKAYE: HIV virüsü hücrenin enerji santralini (mitokondri) ele geçirip kapılarını açtı — sitokrom-c dışarı kaçtı ve kaspaz ordusu harekete geçti. Hücre sessizce büzüşerek öldü, kimse fark etmedi (inflamasyon yok = apoptoz)."
     },
@@ -84,11 +84,11 @@
       "options": [
         "A) Lökotrien B4",
         "B) Prostaglandin E2",
-        "C) Histamin — venüllerde endotel kontraksiyonu ile vasküler geçirgenlik artışı",
+        "C) Histamin",
         "D) TNF-alfa",
         "E) IL-1"
       ],
-      "correct_answer": "C) Histamin — venüllerde endotel kontraksiyonu ile vasküler geçirgenlik artışı",
+      "correct_answer": "C) Histamin",
       "explanation": "Anjiyoödemde mast hücrelerinden salınan histamin, postkapiller venüllerde endotel hücreleri arasında boşluk oluşturarak (endotel kontraksiyonu) vasküler permeabiliteyi artırır — erken faz (0-30 dk) yanıtıdır. LTB4 nötrofil kemotaksisi yapar. PGE2 ağrı ve ateş ile ilişkilidir. TNF-alfa ve IL-1 geç faz sitokinleridir.",
       "story_hint": "💡 HİKAYE: Arı soktu, mast hücreleri panik düğmesine bastı — histamin bombası patladı! Venüllerdeki endotel hücreleri birbirinden ayrıldı (kontraksiyon), su dışarı aktı → dudaklar balon gibi şişti. İlk 30 dakikanın kahramanı histamindir."
     },
@@ -98,11 +98,11 @@
       "options": [
         "A) Kronik granülomatöz hastalık",
         "B) Chédiak-Higashi sendromu",
-        "C) Lökosit adezyon defekti tip 1 (LAD-1) — CD18 integrin eksikliği",
+        "C) Lökosit adezyon defekti tip 1 (LAD-1)",
         "D) Myeloperoksidaz eksikliği",
-        "E) Job sendromu (Hiper-IgE)"
+        "E) Job sendromu"
       ],
-      "correct_answer": "C) Lökosit adezyon defekti tip 1 (LAD-1) — CD18 integrin eksikliği",
+      "correct_answer": "C) Lökosit adezyon defekti tip 1 (LAD-1)",
       "explanation": "LAD-1'de CD18 (β2-integrin) eksikliği vardır. Lökositler endotele sıkı yapışamaz (adezyon) ve dokuya göç edemez (kemotaksi bozulur). Tekrarlayan bakteriyel enfeksiyonlar, gecikmiş göbek kordon düşmesi ve pyojenik apselerin abse oluşturamadan selülit şeklinde seyretmesi tipiktir. KGH'da NADPH oksidaz defekti, Chédiak-Higashi'de mikrotübül/granül defekti (dev granüller), MPO eksikliğinde genellikle asemptomatik seyir, Job sendromunda kemotaksi bozukluğu + yüksek IgE vardır.",
       "story_hint": "💡 HİKAYE: Nötrofiller askerdir ama CD18 yapıştırıcıları bozuk — otobüse (endotel) yapışamıyorlar, savaş alanına gidemiyorlar! Göbek kordonu bile düşmüyor çünkü nötrofiller orada da işe yaramıyor. LAD-1'in hikayesi budur."
     },
@@ -155,10 +155,10 @@
         "A) Yalnız endotel hasarı",
         "B) Yalnız staz",
         "C) Yalnız hiperkoagülabilite",
-        "D) Staz (uzun hareketsizlik) + hiperkoagülabilite (oral kontraseptif)",
+        "D) Staz + hiperkoagülabilite",
         "E) Endotel hasarı + staz + hiperkoagülabilite"
       ],
-      "correct_answer": "D) Staz (uzun hareketsizlik) + hiperkoagülabilite (oral kontraseptif)",
+      "correct_answer": "D) Staz + hiperkoagülabilite",
       "explanation": "Virchow triadı: (1) endotel hasarı, (2) kan akım bozukluğu (staz/türbülans), (3) hiperkoagülabilite. Bu hastada uzun uçuş → staz, OKS kullanımı → östrojen aracılı hiperkoagülabilite (pıhtılaşma faktörleri artar, antitrombin III azalır). Belirgin bir endotel hasarı öyküsü yoktur. DVT'nin en sık tetikleyicileri: immobilizasyon, gebelik/OKS, malignite, cerrahi.",
       "story_hint": "💡 HİKAYE: Uzun uçak yolculuğunda bacaklar hareketsiz kaldı (staz), doğum kontrol hapı kanı koyu çorbaya çevirdi (hiperkoagülabilite). Virchow'un iki ayağı aktif — üçüncüsü (endotel hasarı) bu sefer katılmadı. DVT doğdu!"
     },
@@ -210,11 +210,11 @@
       "options": [
         "A) Trombotik trombositopenik purpura",
         "B) von Willebrand hastalığı",
-        "C) Yaygın damar içi pıhtılaşma (DIC) — pıhtılaşma faktörlerinin ve trombositlerin tüketilmesi",
+        "C) Yaygın damar içi pıhtılaşma (DIC)",
         "D) İmmün trombositopenik purpura",
         "E) Hemofili A"
       ],
-      "correct_answer": "C) Yaygın damar içi pıhtılaşma (DIC) — pıhtılaşma faktörlerinin ve trombositlerin tüketilmesi",
+      "correct_answer": "C) Yaygın damar içi pıhtılaşma (DIC)",
       "explanation": "DIC'de doku faktörü (TF) dolaşıma geçer → yaygın mikrotrombi oluşur → pıhtılaşma faktörleri ve trombositler tüketilir → paradoksal kanama gelişir. D-dimer yükselir (fibrin yıkımı). Ablatio plasenta, amniyotik sıvı embolisi, sepsis, AML (M3) ve müsinöz adenokarsinomlar DIC'in klasik tetikleyicileridir. TTP'de ADAMTS13 eksikliği ve schistositler ön planda, ITP'de izole trombositopeni vardır.",
       "story_hint": "💡 HİKAYE: Plasenta ayrıldı, doku faktörü kan nehrine döküldü — her yerde minik pıhtılar (mikrotrombi) oluştu. Pıhtılaşma faktörleri ve trombositler hepsi harcandı, paradoks olarak hasta kanamaya başladı. DIC = tüketim koagülopatisi."
     },
@@ -224,11 +224,11 @@
       "options": [
         "A) Membranöz nefropati",
         "B) Fokal segmental glomerüloskleroz",
-        "C) Minimal değişiklik hastalığı (MCD)",
+        "C) Minimal değişiklik hastalığı",
         "D) Membranoproliferatif glomerülonefrit",
         "E) IgA nefropatisi"
       ],
-      "correct_answer": "C) Minimal değişiklik hastalığı (MCD)",
+      "correct_answer": "C) Minimal değişiklik hastalığı",
       "explanation": "MCD çocuklarda nefrotik sendromun en sık nedenidir. Işık mikroskobu ve IF normaldir, EM'de podosit foot process effacement görülür. Steroide mükemmel yanıt verir. Membranöz nefropatide bazal membranda kalınlaşma + granüler IgG/C3 (spike & dome), FSGS'de skleroz, MPGN'de tram-ray görünümü, IgA nefropatisinde mezangial IgA birikimi izlenir.",
       "story_hint": "💡 HİKAYE: 4 yaşında çocuğun gözleri şişmiş, karnı davul gibi — protein idrarda kaçıyor (nefrotik). Işık mikroskobu 'hiçbir şey görmüyor' ama elektron mikroskobu podositlerin ayaklarının silindiğini yakalar. Minimal değişiklik = maksimum steroid yanıtı!"
     },
@@ -237,12 +237,12 @@
       "case": "**Amiloidoz**\n\n65 yaşında hasta, kronik böbrek yetmezliği, hepatomegali ve makroglossi ile başvuruyor. Biyopside Congo kırmızısı ile boyanan ve polarize ışıkta elma yeşili çift kırıcılık (birefringence) gösteren materyal izleniyor.\n\nAltta yatan amiloid tipi ve en olası hastalık aşağıdakilerden hangisinde doğru eşleştirilmiştir?",
       "options": [
         "A) AA amiloid — Romatoid artrit",
-        "B) AL amiloid — Primer amiloidoz (plazma hücre diskrazisi)",
+        "B) AL amiloid — Primer amiloidoz",
         "C) Aβ amiloid — Alzheimer hastalığı",
         "D) ATTR amiloid — Familyal amiloid polinöropati",
         "E) Aβ2M amiloid — Diyaliz ilişkili amiloidoz"
       ],
-      "correct_answer": "B) AL amiloid — Primer amiloidoz (plazma hücre diskrazisi)",
+      "correct_answer": "B) AL amiloid — Primer amiloidoz",
       "explanation": "Makroglossi amiloidozda neredeyse patognomoniktir ve büyük çoğunlukla AL (immünoglobulin hafif zincir) tipini işaret eder. AL amiloidoz plazma hücre diskrazisi (multipl miyelom veya monoklonal gammopati) zemininde gelişir. Congo kırmızısı boyama ve polarize ışıkta elma yeşili birefringence tüm amiloid tiplerinin ortak tanı kriteridir. AA amiloid kronik inflamatuar hastalıklarda (RA, FMF) görülür ama makroglossi yapmaz.",
       "story_hint": "💡 HİKAYE: Yaşlı hastanın dili büyümüş (makroglossi) — ağzına sığmıyor! Congo kırmızısı ile boyayınca polarize ışıkta elma yeşili parladı: amiloid! Dil büyümesi AL amiloidozun neredeyse patognomonik işareti — plazma hücreleri hafif zincirleri yanlış katlamış."
     },
@@ -322,11 +322,11 @@
       "options": [
         "A) Asbest — Mezotelyoma",
         "B) Aflatoksin B1 — Hepatoselüler karsinom",
-        "C) Beta-naftilamin (aromatik amin) — Mesane ürotelyal karsinomu",
+        "C) Beta-naftilamin — Mesane ürotelyal karsinomu",
         "D) Vinil klorür — Hepatik anjiyosarkom",
         "E) Benzen — Akut miyeloid lösemi"
       ],
-      "correct_answer": "C) Beta-naftilamin (aromatik amin) — Mesane ürotelyal karsinomu",
+      "correct_answer": "C) Beta-naftilamin — Mesane ürotelyal karsinomu",
       "explanation": "Aromatik aminler (beta-naftilamin, benzidin) boya, kauçuk ve tekstil endüstrisinde kullanılır. Karaciğerde hidroksilasyon ile aktive olur ve idrarla atılırken mesane mukozasına karsinojen etki gösterir → ürotelyal (transizyonel hücreli) karsinom. Asbest → mezotelyoma + bronkojenik karsinom, aflatoksin → HCC (TP53 R249S mutasyonu), vinil klorür → hepatik anjiyosarkom, benzen → AML.",
       "story_hint": "💡 HİKAYE: 30 yıl boya fabrikasında çalışan adam, aromatik aminleri (beta-naftilamin) soluyarak mesane duvarına karsinojen biriktirdi. Karaciğer bunları aktive eder, idrarla atılırken mesane mukozasını boyar → ürotelyal karsinom!"
     },
@@ -336,11 +336,11 @@
       "options": [
         "A) E5 → Rb, E7 → p53",
         "B) E6 → Rb, E7 → p53",
-        "C) E6 → p53 (ubikuitin aracılı yıkım), E7 → Rb (inaktivasyon)",
+        "C) E6 → p53, E7 → Rb",
         "D) E6 → p21, E7 → p27",
         "E) E2 → p53, E4 → Rb"
       ],
-      "correct_answer": "C) E6 → p53 (ubikuitin aracılı yıkım), E7 → Rb (inaktivasyon)",
+      "correct_answer": "C) E6 → p53, E7 → Rb",
       "explanation": "Yüksek riskli HPV tipleri (16, 18): E6 proteini → p53'ü ubikuitin-proteazom yolu ile yıkar (E6-AP ubikuitin ligaz), E7 proteini → Rb'yi inaktive eder → E2F serbest kalır → hücre döngüsü kontrolsüz ilerler. Bu \"iki darbe\" hem apoptoz (p53) hem proliferasyon (Rb) kontrolünü ortadan kaldırır. HPV-16 skuamöz hücreli karsinomda, HPV-18 adenokarsinomda daha baskındır.",
       "story_hint": "💡 HİKAYE: HPV-16 iki suikastçı gönderdi: E6 p53'ü öldürdü (ubikuitin bıçağıyla), E7 Rb'yi etkisiz hale getirdi. Hem bekçi (p53) hem kapıcı (Rb) gitti — hücre kontrolsüz bölünmeye başladı! Servikal kanserin moleküler hikayesi."
     },
@@ -377,12 +377,12 @@
       "case": "**Hematolojik Neoplazi / Lösemi Belirteçleri**\n\n3 yaşında erkek çocuk, solukluk, ekimoz ve hepatosplenomegali ile getiriliyor. Periferik yaymasında blast hücreleri izleniyor. Flow sitometride TdT(+), CD10(+), CD19(+), CD22(+) bulunuyor.\n\nEn olası tanı hangisidir?",
       "options": [
         "A) T-ALL",
-        "B) Pre-B ALL (CALLA +)",
+        "B) Pre-B ALL",
         "C) AML-M3",
         "D) KLL",
         "E) Burkitt lenfoma/lösemi"
       ],
-      "correct_answer": "B) Pre-B ALL (CALLA +)",
+      "correct_answer": "B) Pre-B ALL",
       "explanation": "CD19/CD22 = B hücre belirteçleri, CD10 = CALLA (common ALL antigen), TdT = immatürite belirteci (lenfoblastik). Bu profil Pre-B ALL'yi (en sık çocukluk çağı lösemisi) gösterir. t(12;21) ETV6-RUNX1 en iyi prognozlu alt tiptir. T-ALL'de CD3/CD7 pozitif, AML'de TdT negatif ve MPO pozitif, KLL'de olgun lenfositler (CD5+, CD23+), Burkitt'te c-MYC translokasyonu vardır.",
       "story_hint": "💡 HİKAYE: 3 yaşında çocuk soluyor, morluklar çıkmış. Blastlar TdT ile 'ben immatürüm!' diyor, CD10 (CALLA) ile 'ben common ALL'yim!' diyor, CD19/22 ile 'ben B hücresiyim!' diyor. Pre-B ALL = çocukluk çağının en sık lösemisi."
     },
@@ -419,12 +419,12 @@
       "case": "**Lynch Sendromu**\n\n45 yaşında kadın, sağ kolon kanseri tanısı alıyor. Aile öyküsünde annede endometrium kanseri, dayıda kolon kanseri, teyzede over kanseri var. Tümörde mikrosatellit instabilitesi (MSI-high) saptanıyor.\n\nBu sendromun genetik temeli hangisidir?",
       "options": [
         "A) APC mutasyonu",
-        "B) DNA mismatch repair (MMR) gen mutasyonu (MLH1, MSH2, MSH6, PMS2)",
+        "B) DNA mismatch repair (MMR) gen mutasyonu",
         "C) TP53 mutasyonu",
         "D) BRCA1 mutasyonu",
         "E) CDH1 mutasyonu"
       ],
-      "correct_answer": "B) DNA mismatch repair (MMR) gen mutasyonu (MLH1, MSH2, MSH6, PMS2)",
+      "correct_answer": "B) DNA mismatch repair (MMR) gen mutasyonu",
       "explanation": "Lynch sendromu (HNPCC): MMR gen germline mutasyonu → DNA onarım defekti → mikrosatellit instabilitesi (MSI-H). En sık kolorektal kanser (sağ kolon predileksiyonu), endometrium, over, mide, üriner sistem kanserleri. Amsterdam kriterleri ile klinik tanı. FAP'tan farkı: çok az polip olması ama kanser riskinin yüksek olmasıdır.",
       "story_hint": "💡 HİKAYE: Lynch ailesinde DNA tamircileri (MMR genleri) bozuk — yazım hataları düzeltilemiyor, mikrosatellitler kaymaya başlıyor (MSI-H). Az polip ama yüksek kanser riski; kolon, endometrium ve over hedefte. Amsterdam kriterleriyle tanınır."
     },
@@ -433,12 +433,12 @@
       "case": "**Ateroskleroz**\n\n55 yaşında diyabetik, hipertansif, sigara içen erkek hasta göğüs ağrısı ile başvuruyor.\n\nAterosklerotik plak oluşumunda en erken lezyon ve bunu başlatan olay hangisidir?",
       "options": [
         "A) Fibröz plak — düz kas proliferasyonu",
-        "B) Yağlı çizgilenme (fatty streak) — endotel disfonksiyonu sonrası okside LDL'nin makrofajlarca alınması",
+        "B) Yağlı çizgilenme (fatty streak) — okside LDL'nin makrofajlarca alınması",
         "C) Komplike plak — trombüs formasyonu",
         "D) Kalsifiye plak — distrofik kalsifikasyon",
         "E) Anevrizma — media hasarı"
       ],
-      "correct_answer": "B) Yağlı çizgilenme (fatty streak) — endotel disfonksiyonu sonrası okside LDL'nin makrofajlarca alınması",
+      "correct_answer": "B) Yağlı çizgilenme (fatty streak) — okside LDL'nin makrofajlarca alınması",
       "explanation": "Aterosklerozda \"response to injury\" hipotezi: endotel disfonksiyonu (sigara, HT, DM, hiperkolesterolemi) → LDL intimaya geçer → okside olur → monositler göç eder, makrofaja dönüşür → okside LDL'yi scavenger reseptörlerle alır → köpük hücreleri (foam cells) oluşur → FATTY STREAK (en erken lezyon, çocuklarda bile görülebilir). Zamanla düz kas göçü ve kollajen birikimiyle fibröz plak gelişir.",
       "story_hint": "💡 HİKAYE: Sigara, HT ve DM endoteli yaraladı — LDL yaradan süzülüp oksitlendi. Makrofajlar 'temizleyelim' deyip LDL'yi yuttu ama şişip köpük hücresine dönüştü. Bu köpükler yığılınca fatty streak (yağlı çizgi) oluştu — aterosklerozun ilk adımı!"
     },
@@ -476,11 +476,11 @@
       "options": [
         "A) Verrüköz endokardit",
         "B) Libman-Sacks endokarditi",
-        "C) Aschoff cisimcikleri (Aschoff nodülleri) — Anitschkow hücreleri (caterpillar cells) içeren granülomlar",
+        "C) Aschoff cisimcikleri — Anitschkow hücreleri içeren granülomlar",
         "D) Fibrinöz perikardit",
         "E) MacCallum plağı"
       ],
-      "correct_answer": "C) Aschoff cisimcikleri (Aschoff nodülleri) — Anitschkow hücreleri (caterpillar cells) içeren granülomlar",
+      "correct_answer": "C) Aschoff cisimcikleri — Anitschkow hücreleri içeren granülomlar",
       "explanation": "Akut romatizmal ateş Grup A Streptokoklara karşı gelişen çapraz immün yanıt (moleküler taklit) sonucu oluşur. Aschoff cisimcikleri miyokardda bulunan patognomonik granülomlardır; merkezdeki fibrinoid nekroz çevresinde Anitschkow hücreleri (tırtıl hücresi — caterpillar cells, nükleus uzun dalgalı) ve dev Aschoff hücreleri bulunur. En sık mitral kapak tutulur; kronik dönemde mitral stenoz gelişir.",
       "story_hint": "💡 HİKAYE: Streptokok boğaz ağrısı yaptı, 3 hafta sonra bağışıklık sistemi kalbi hedef aldı (moleküler taklit). Miyokardda Aschoff nodülleri oluştu — içlerinde tırtıl gibi kıvrılan Anitschkow hücreleri var. Romatizmal ateşin patognomonik imzası!"
     },
@@ -520,7 +520,7 @@
         "B) Takayasu arteriti",
         "C) Poliarteritis nodoza",
         "D) Kawasaki hastalığı",
-        "E) Granülomatöz polianjit (Wegener)"
+        "E) Granülomatöz polianjit"
       ],
       "correct_answer": "B) Takayasu arteriti",
       "explanation": "Takayasu arteriti = \"nabızsız hastalık.\" Genç kadın (<50 yaş), büyük damar vasküliti, arkus aorta ve dallarını tutar. Granülomatöz inflamasyon → intimal fibrozis → daralma/oklüzyon. Dev hücreli arterit de büyük damar vasküliti ama >50 yaş, temporal arter tutulumu, görme kaybı (a. ophthalmica) ön plandadır. PAN orta çaplı damar, Kawasaki çocuklarda orta çaplı damar (koroner arterlerde anevrizma), Wegener küçük damar vasküliti.",
@@ -573,12 +573,12 @@
       "case": "**Mezotelyoma**\n\n65 yaşında erkek, nefes darlığı ve göğüs ağrısı ile başvuruyor. 40 yıl gemi tersanesinde çalışma öyküsü var. Toraks BT'de sağ plevrada difüz kalınlaşma ve plevral efüzyon izleniyor. Biyopside kalretinin ve sitokeratin 5/6 pozitif, CEA negatif bulunuyor.\n\nEn olası tanı ve ilişkili maruziyet hangisidir?",
       "options": [
         "A) Metastatik adenokarsinom — sigara",
-        "B) Malign mezotelyoma — asbest (chrysotile, crocidolite)",
+        "B) Malign mezotelyoma — asbest maruziyeti",
         "C) Soliter fibröz tümör — hormonal",
         "D) Plevral lenfoma — EBV",
         "E) Plevral sarkom — radyasyon"
       ],
-      "correct_answer": "B) Malign mezotelyoma — asbest (chrysotile, crocidolite)",
+      "correct_answer": "B) Malign mezotelyoma — asbest maruziyeti",
       "explanation": "Malign mezotelyoma asbest maruziyetinin en spesifik (ama en sık değil) komplikasyonudur (latent periyod 25-45 yıl). Kalretinin(+), WT-1(+), CK5/6(+) mezotelyoma lehine; CEA(+), TTF-1(+) adenokarsinom lehine. Asbest maruziyetinin en sık malign komplikasyonu bronkojenik karsinomdur (mezotelyoma değil). Crocidolite (mavi asbest) en karsinojen tiptir.",
       "story_hint": "💡 HİKAYE: Berger (IgA nefropatisi) dünyada en sık glomerülonefrittir. Üst solunum yolu enfeksiyonu ile 'eş zamanlı' hematüri gelir — PSGN'deki 2-4 haftalık gecikme yok! Mezangiumda IgA birikimi IF'de parlak görünür."
     },
@@ -588,11 +588,11 @@
       "options": [
         "A) İnterstisyel fibrozis",
         "B) Bal peteği akciğer",
-        "C) Hiyalen membranlar (alveoler duvarlarda fibrin + nekrotik epitel birikimi)",
+        "C) Hiyalen membranlar",
         "D) Granülom formasyonu",
         "E) Bronşektazi"
       ],
-      "correct_answer": "C) Hiyalen membranlar (alveoler duvarlarda fibrin + nekrotik epitel birikimi)",
+      "correct_answer": "C) Hiyalen membranlar",
       "explanation": "ARDS'de alveolokapiller membran hasarı → protein ve fibrin içeren sıvı alveollere sızar → hiyalen membranlar oluşur (diffuse alveolar damage = DAD). Faz 1 (eksüdatif, 0-7 gün): hiyalen membranlar, ödem, nötrofil infiltrasyonu. Faz 2 (proliferatif): tip II pnömosit proliferasyonu, organizasyon. Faz 3 (fibrotik): interstisyel fibrozis (iyileşemeyen olgularda).",
       "story_hint": "💡 HİKAYE: Membranöz nefropati bazal membranı kalınlaştırır — 'spike and dome' (dikenli taç) görünümü subepitelyal IgG/C3 birikimidir. Erişkin nefrotik sendromun 2. en sık nedeni. Otoimmün veya HBV/malignite ilişkili olabilir."
     },
@@ -603,7 +603,7 @@
         "A) Asbestoz",
         "B) Silikoz",
         "C) Berilyoz",
-        "D) Antrakoz (kömür işçisi pnömokonyozu)",
+        "D) Antrakoz",
         "E) Talkoz"
       ],
       "correct_answer": "B) Silikoz",
@@ -615,12 +615,12 @@
       "case": "**KOAH / Amfizem**\n\n60 yaşında erkek, 40 paket/yıl sigara öyküsü ile ilerleyici nefes darlığı ve fıçı göğüs ile başvuruyor. SFT'de FEV1/FVC <70%, DLCO azalmış.\n\nSantriasiner (sentrlobüler) amfizemin patogenezi hangisidir?",
       "options": [
         "A) Alpha-1 antitripsin eksikliği → panasiner yıkım",
-        "B) Sigara dumanı → nötrofil ve makrofaj birikimi → elastaz/proteaz salınımı → alveoler duvar yıkımı (proteaz-antiproteaz dengesizliği)",
+        "B) Sigara dumanı → nötrofil ve makrofaj birikimi → elastaz/proteaz salınımı → alveoler duvar yıkımı",
         "C) Bronşiyal obstrüksiyon → distal hava hapsi",
         "D) İnterstisyel fibrozis → traksiyon bronşektazi",
         "E) Pulmoner vaskülit → iskemik hasar"
       ],
-      "correct_answer": "B) Sigara dumanı → nötrofil ve makrofaj birikimi → elastaz/proteaz salınımı → alveoler duvar yıkımı (proteaz-antiproteaz dengesizliği)",
+      "correct_answer": "B) Sigara dumanı → nötrofil ve makrofaj birikimi → elastaz/proteaz salınımı → alveoler duvar yıkımı",
       "explanation": "Sigara → nötrofil ve makrofaj kemotaksisi → elastaz, MMP'ler, ROS salınımı → alveoler duvar elastik lifleri yıkılır. Aynı zamanda sigara alfa-1 antitripsin'i oksidatif olarak inaktive eder → proteaz-antiproteaz dengesi bozulur. Santriasiner amfizem üst lobları tutar (sigara ilişkili). Panasiner amfizem alt lobları tutar (alfa-1 antitripsin eksikliği). Paraseptal amfizem subplevral, spontan pnömotoraks riski.",
       "story_hint": "💡 HİKAYE: Berrak hücreli RCC = böbreğin en sık karsinomu. VHL gen mutasyonu HIF-alfa'nın yıkılmasını engeller → VEGF artar → tümör damarlanması patlar. Sol renal vende tümör trombozu 'varikosel' ile kendini ele verir!"
     },
@@ -644,11 +644,11 @@
       "options": [
         "A) Transüda — konjestif kalp yetmezliği",
         "B) Transüda — nefrotik sendrom",
-        "C) Eksüda — malignite (akciğer karsinomu veya metastaz)",
+        "C) Eksüda — malignite",
         "D) Transüda — karaciğer sirozu",
         "E) Eksüda — tüberküloz"
       ],
-      "correct_answer": "C) Eksüda — malignite (akciğer karsinomu veya metastaz)",
+      "correct_answer": "C) Eksüda — malignite",
       "explanation": "Light kriterleri (herhangi biri pozitifse eksüda): sıvı/serum protein >0.5, sıvı/serum LDH >0.6, sıvı LDH >2/3 üst sınır. Eksüdatif efüzyonun nedenleri: malignite, enfeksiyon (TB, parapnömonik), PE, otoimmün. Yaşlı hastada masif tek taraflı eksüdatif efüzyon → maligniteyi düşündürür. KKY, siroz, nefrotik sendrom transüda yapar (hidrostatik basınç artışı veya onkotik basınç azalması).",
       "story_hint": "💡 HİKAYE: Amfizemde akciğer balonları patlamış — hava kesesicikleri genişlemiş ama elastikiyet kaybolmuş. Pink puffer (pembemsi, öne eğik, dudakları büzük nefes verir). Alfa-1 AT eksikliğinde genç yaşta, alt loblarda panasiner tip gelişir."
     },
@@ -658,11 +658,11 @@
       "options": [
         "A) Hiperplazi — kanser riski yok",
         "B) Displazi — yüksek kanser riski",
-        "C) İntestinal metaplazi (Barrett özofagusu) — özofagus adenokarsinomu riski",
+        "C) İntestinal metaplazi (Barrett özofagusu)",
         "D) Atrofi — malnütrisyon riski",
         "E) Skuamöz metaplazi — skuamöz karsinom riski"
       ],
-      "correct_answer": "C) İntestinal metaplazi (Barrett özofagusu) — özofagus adenokarsinomu riski",
+      "correct_answer": "C) İntestinal metaplazi (Barrett özofagusu)",
       "explanation": "Barrett özofagusu: kronik GÖRH → distal özofagusta stratifiye skuamöz epitel → goblet hücreli intestinal metaplazi. Bu, özofagus adenokarsinomuna premalign bir lezyondur (yıllık risk %0.5-1). Tedavi: PPI + endoskopik takip ± ablasyon. Displazi gelişirse kanser riski artar. Metaplazi = bir erişkin hücre tipinin başka bir erişkin hücre tipine dönüşmesi.",
       "story_hint": "💡 HİKAYE: Astım = reversibl hava yolu obstrüksiyonu. Tip I hipersensitivite (IgE-mast hücresi) erken fazda, Tip IV (Th2-eozinofil) geç fazda aktif. Spirometride FEV1/FVC↓, bronkodilatöre yanıt verir. Eozinofilik inflamasyon = Charcot-Leyden kristalleri."
     },
@@ -686,11 +686,11 @@
       "options": [
         "A) Diffüz büyük B hücreli lenfoma",
         "B) Burkitt lenfoma",
-        "C) MALT (mucosa-associated lymphoid tissue) lenfoma — marginal zon B hücreli lenfoma",
+        "C) MALT lenfoma — marginal zon B hücreli lenfoma",
         "D) Mantle cell lenfoma",
         "E) Folliküler lenfoma"
       ],
-      "correct_answer": "C) MALT (mucosa-associated lymphoid tissue) lenfoma — marginal zon B hücreli lenfoma",
+      "correct_answer": "C) MALT lenfoma — marginal zon B hücreli lenfoma",
       "explanation": "H. pylori → kronik antral gastrit → MALT hiperplazisi → düşük gradeli gastrik MALT lenfoma (marginal zon B hücreli). En önemli özelliği: erken evrede antibiyotik ile H. pylori eradikasyonu lenfomayı geriletebilir! Ayrıca H. pylori → kronik gastrit → atrofi → intestinal metaplazi → displazi → adenokarsinom (intestinal tip) sekansı da önemlidir.",
       "story_hint": "💡 HİKAYE: Küçük hücreli karsinom nöroendokrin bir 'hormon fabrikası' — ACTH üretir (Cushing), ADH üretir (SIADH). Chromogranin ve sinaptofizin pozitif. Cerrahiye yanıtsız ama kemoterapi+radyoterapiye iyi yanıt verir."
     },
@@ -700,11 +700,11 @@
       "options": [
         "A) IgE aracılı gıda alerjisi",
         "B) Laktaz enzim eksikliği",
-        "C) Gliadine (gluten) karşı T hücre aracılı otoimmün yanıt — HLA-DQ2/DQ8 ilişkili",
+        "C) Gliadine (gluten) karşı T hücre aracılı otoimmün yanıt",
         "D) IgA eksikliği",
         "E) Tropikal enfeksiyon"
       ],
-      "correct_answer": "C) Gliadine (gluten) karşı T hücre aracılı otoimmün yanıt — HLA-DQ2/DQ8 ilişkili",
+      "correct_answer": "C) Gliadine (gluten) karşı T hücre aracılı otoimmün yanıt",
       "explanation": "Çölyak hastalığı: buğday gluteninin gliadin fraksiyonuna karşı HLA-DQ2 (%90) veya DQ8 kısıtlı T hücre yanıtı. Tissue transglutaminase gliadini deamide eder → immünojen hale getirir → villöz hasar. Tanı: anti-tTG IgA + biyopsi. İlişkili durumlar: dermatitis herpetiformis, tip 1 DM, IgA eksikliği. Enteropati-ilişkili T hücreli lenfoma riski artar.",
       "story_hint": "💡 HİKAYE: Asbest lifler plevra mezotelini delip kanser başlatır. Ferruginous body (demir kaplı asbest lifi) = dambıl şekilli kahverengi yapılar. Kalretinin (+) = mezotelyom, CEA (+) = adenokarsinom ayrımı! Latent periyod 25-45 yıl."
     },
@@ -713,12 +713,12 @@
       "case": "**Crohn Hastalığı vs Ülseratif Kolit**\n\n28 yaşında kadın, kronik ishal, karın ağrısı ve perianal fistül ile başvuruyor. Kolonoskopide kaldırım taşı görünümü ve atlama lezyonları (skip lesions) izleniyor. Biyopside transmural inflamasyon ve non-kazeifiye granülomlar saptanıyor.\n\nBu hasta için en olası tanı ve ülseratif kolitten en önemli ayrım hangisidir?",
       "options": [
         "A) ÜK — granülomlar her ikisinde de görülür",
-        "B) Crohn hastalığı — transmural inflamasyon + granülomlar + skip lezyonlar (ÜK'de sadece mukoza ve submukoza tutulur, süreklidir)",
+        "B) Crohn hastalığı — transmural inflamasyon + granülomlar + skip lezyonlar",
         "C) İskemik kolit — mezenterik arter hastalığı",
         "D) Tüberküloz kolit — kazeöz granülomlar",
         "E) Divertikülit — sol kolon tutulumu"
       ],
-      "correct_answer": "B) Crohn hastalığı — transmural inflamasyon + granülomlar + skip lezyonlar (ÜK'de sadece mukoza ve submukoza tutulur, süreklidir)",
+      "correct_answer": "B) Crohn hastalığı — transmural inflamasyon + granülomlar + skip lezyonlar",
       "explanation": "Crohn vs ÜK ayırımı TUS'un en klasik konularından:\n\n| Özellik | Crohn | ÜK |\n|",
       "story_hint": "💡 HİKAYE: Barrett'te mide asidi yıllar boyu özofagus squamöz epitelini yakar → hücreler goblet hücreli kolumnar epitele dönüşür (intestinal metaplazi). Bu metaplazi displaziye, displazi adenokarsinoma gider. PPI + endoskopik takip şart!"
     },
@@ -742,11 +742,11 @@
       "options": [
         "A) Adenokarsinom — sağ hemikolektomi",
         "B) Müsinöz kistadenom — takip",
-        "C) Karsinoid tümör (NET) — <2 cm ve uçta ise apendektomi yeterli",
+        "C) Karsinoid tümör (NET) — apendektomi",
         "D) Lenfoma — kemoterapi",
         "E) GIST — imatinib"
       ],
-      "correct_answer": "C) Karsinoid tümör (NET) — <2 cm ve uçta ise apendektomi yeterli",
+      "correct_answer": "C) Karsinoid tümör (NET) — apendektomi",
       "explanation": "Apendiks karsinoid tümörü en sık apendiks tümörüdür. Nöroendokrin belirteçler pozitiftir. <2 cm ve uçta (tip) yerleşimliyse apendektomi yeterlidir; >2 cm veya tabanı tutan tümörlerde sağ hemikolektomi gerekir. Karsinoid sendrom (flushing, ishal, bronkospazm) genellikle karaciğer metastazı olduğunda gelişir (serotonin portal dolaşımda inaktive edilmezse).",
       "story_hint": "💡 HİKAYE: Crohn ve ÜK kardeştir ama çok farklı! Crohn: 'atlayan' transmural lezyon, fistül, granülom. ÜK: rektumdan yukarı 'sürekli' mukozal tutulum, kript absesi. Toksik megakolon ÜK'nin acil komplikasyonudur."
     },
@@ -756,11 +756,11 @@
       "options": [
         "A) Mekanik obstrüksiyon — atrezi",
         "B) Kas tabakasının yokluğu",
-        "C) Aganglionoz — submukozal (Meissner) ve myenterik (Auerbach) pleksusta ganglion hücrelerinin yokluğu",
+        "C) Aganglionoz — Meissner ve Auerbach pleksusta ganglion hücrelerinin yokluğu",
         "D) Villöz atrofi",
         "E) Mukozal inflamasyon"
       ],
-      "correct_answer": "C) Aganglionoz — submukozal (Meissner) ve myenterik (Auerbach) pleksusta ganglion hücrelerinin yokluğu",
+      "correct_answer": "C) Aganglionoz — Meissner ve Auerbach pleksusta ganglion hücrelerinin yokluğu",
       "explanation": "Hirschsprung hastalığı: nöral krest hücrelerinin kraniokaudal göçünün inkomplet olması → distal kolonda (genellikle rektosigmoid) ganglion hücreleri oluşmaz → aganglionik segment sürekli kontrakte kalır → fonksiyonel obstrüksiyon → proksimal dilatasyon. Tanı: rektal suction biyopsi (ganglion hücresi yok + asetilkolinesteraz artmış sinir lifleri). RET proto-onkogen mutasyonu ilişkilidir.",
       "story_hint": "💡 HİKAYE: Çölyak hastası buğday yiyince bağırsakları isyan eder — gluten (gliadin) immün saldırıyı tetikler. Villüsler düzleşir, kriptler derinleşir. Anti-tTG IgA en iyi tarama testi. Glütensiz diyet = tam iyileşme!"
     },
@@ -770,11 +770,11 @@
       "options": [
         "A) Leiomyom — cerrahi",
         "B) Schwannom — gözlem",
-        "C) Gastrointestinal stromal tümör (GIST) — imatinib (c-KIT/tirozin kinaz inhibitörü)",
+        "C) Gastrointestinal stromal tümör (GIST) — imatinib",
         "D) Leiomyosarkom — kemoterapi",
         "E) Nörofibrom — cerrahi"
       ],
-      "correct_answer": "C) Gastrointestinal stromal tümör (GIST) — imatinib (c-KIT/tirozin kinaz inhibitörü)",
+      "correct_answer": "C) Gastrointestinal stromal tümör (GIST) — imatinib",
       "explanation": "GIST GIS'in en sık mezenkimal tümörüdür. Cajal hücrelerinden köken alır. c-KIT (CD117) veya PDGFRA mutasyonu → tirozin kinaz sürekli aktif. İmatinib (Gleevec) c-KIT'i inhibe eder (KML'de BCR-ABL'yi de inhibe ettiğini hatırlayın). En sık mide, sonra ince barsak. Leiomyomda SMA(+)/desmin(+), CD117(-). DOG1 GIST için CD117'den daha spesifiktir.",
       "story_hint": "💡 HİKAYE: Alkolik karaciğerde üç aşama: sarı yağlı karaciğer (steatoz) → nötrofil dolu iltihaplı karaciğer (steatohepatit, Mallory cisimcikleri) → sert, nodüler, çekilmiş karaciğer (siroz). Her adım geri dönüşsüze yaklaşır!"
     },
@@ -784,11 +784,11 @@
       "options": [
         "A) Kronik pankreatit — CFTR mutasyonu",
         "B) Ampulla Vateri adenomu — APC",
-        "C) Pankreas duktal adenokarsinom — KRAS mutasyonu (%90+)",
+        "C) Pankreas duktal adenokarsinom — KRAS mutasyonu",
         "D) Pankreatik nöroendokrin tümör — MEN1",
         "E) İntrahepatik kolanjiokarsinom — IDH1"
       ],
-      "correct_answer": "C) Pankreas duktal adenokarsinom — KRAS mutasyonu (%90+)",
+      "correct_answer": "C) Pankreas duktal adenokarsinom — KRAS mutasyonu",
       "explanation": "Pankreas başı karsinomu: ağrısız obstrüktif sarılık + Courvoisier bulgusu klasik prezentasyondur. KRAS mutasyonu olguların >%90'ında saptanır. Diğer sık mutasyonlar: CDKN2A (p16), TP53, SMAD4. Prognoz çok kötüdür (5 yıllık sağkalım <%10). CA 19-9 yüksektir. Courvoisier kanunu: taş olmadan safra kesesinin ağrısız büyümesi → malign distal obstrüksiyon düşündürür.",
       "story_hint": "💡 HİKAYE: HBV hepatositi 'buzlu cam'a çevirir (HBsAg birikimi) ve DNA'sını entegre edip HCC'ye zemin hazırlar. HCV ise yağlanma + lenfoid kümelenme yapar ve %80 kronikleşir. İkisi de siroz ve HCC'ye gider ama yolları farklı."
     },
@@ -800,7 +800,7 @@
         "B) Portal ven trombozu",
         "C) Fibrozis ve rejenerasyon nodülleri → sinüzoidal akımın bozulması → portal direnç artışı",
         "D) Splenik arter anevrizması",
-        "E) Hepatik ven oklüzyonu (Budd-Chiari)"
+        "E) Hepatik ven oklüzyonu"
       ],
       "correct_answer": "C) Fibrozis ve rejenerasyon nodülleri → sinüzoidal akımın bozulması → portal direnç artışı",
       "explanation": "Sirozda kronik hasar → hepatosit nekrozu → fibrozis + rejenerasyon nodülleri → karaciğer mimarisinin bozulması → sinüzoidal kan akımına mekanik direnç + stellat hücrelerden endotelin salınımı (vazokonstrüksiyon) → portal hipertansiyon. Sonuçları: asit, splenomegali, özofagus/gastrik varisler, kaput medusa, hemoroidler. Budd-Chiari hepatik ven oklüzyonudur (posthepatik).",
@@ -840,11 +840,11 @@
       "options": [
         "A) Otoimmün hepatit",
         "B) Primer sklerozan kolanjit",
-        "C) Primer biliyer kolanjit (eski adıyla primer biliyer siroz)",
+        "C) Primer biliyer kolanjit",
         "D) Sekonder biliyer siroz",
         "E) İlaç ilişkili kolestaz"
       ],
-      "correct_answer": "C) Primer biliyer kolanjit (eski adıyla primer biliyer siroz)",
+      "correct_answer": "C) Primer biliyer kolanjit",
       "explanation": "Primer biliyer kolanjit (PBC): orta yaşlı kadın, AMA(+) (%90-95), interlobüler safra kanallarında granülomatöz hasar (florid duct lesion). Evre 1: portal inflamasyon; Evre 2: periportal hepatit; Evre 3: septal fibrozis; Evre 4: siroz. Tedavi: ursodeoksikolik asit (UDCA). PSC'de p-ANCA(+), ülseratif kolit ilişkisi, boncuk dizisi (beading) görünümü vardır.",
       "story_hint": "💡 HİKAYE: Pankreasta enzimler isyan etti — tripsin tripsinojeni aktive etti, pankreas kendini sindirmeye başladı! Lipaz yağı sabunlaştırdı (tebeşir beyazı), kanama nekroz alanlarına yayıldı. Grey-Turner (bel) ve Cullen (göbek) morlukları tehlike sinyali!"
     },
@@ -853,12 +853,12 @@
       "case": "**Safra Taşları**\n\n45 yaşında obez kadın (5F: Female, Forty, Fat, Fertile, Fair), sağ üst kadran ağrısı ile başvuruyor. USG'de safra kesesinde çok sayıda radyolüsen taş saptanıyor.\n\nEn sık safra taşı tipi ve oluşum mekanizması hangisidir?",
       "options": [
         "A) Pigment taşı — hemolitik anemi",
-        "B) Kolesterol taşı — safradaki kolesterol supersaturasyonu (safra asidi ve lesitin yetersizliği)",
+        "B) Kolesterol taşı — safradaki kolesterol supersaturasyonu",
         "C) Mikst taş — enfeksiyon",
         "D) Kalsiyum karbonat taşı — hiperkalsemi",
         "E) Pigment taşı — siroz"
       ],
-      "correct_answer": "B) Kolesterol taşı — safradaki kolesterol supersaturasyonu (safra asidi ve lesitin yetersizliği)",
+      "correct_answer": "B) Kolesterol taşı — safradaki kolesterol supersaturasyonu",
       "explanation": "Batı toplumlarında safra taşlarının %80'i kolesterol taşıdır. Risk faktörleri (5F): Female, Forty, Fat, Fertile, Fair + oral kontraseptif, fibratlar, hızlı kilo kaybı, Crohn (terminal ileum → safra asidi emilim bozukluğu). Siyah pigment taşları: hemolitik anemi (orak hücreli, sferositoz). Kahverengi pigment taşları: enfeksiyon (E. coli glukuronidaz → bilirübin dekonjugasyonu).",
       "story_hint": "💡 HİKAYE: Pankreas başı kanseri sessiz büyür — sarılık (koledoğu tıkar), ağrısız palpabl safra kesesi (Courvoisier bulgusu) ve migratuar tromboflebit (Trousseau sendromu). CA 19-9 yükselir. Whipple ameliyatı tek küratif şans."
     },
@@ -867,12 +867,12 @@
       "case": "**Wilson Hastalığı**\n\n14 yaşında çocuk, karaciğer yetmezliği bulguları ve psikiyatrik semptomlarla başvuruyor. Göz muayenesinde Kayser-Fleischer halkaları izleniyor. Serum seruloplazmin düşük, 24 saatlik idrar bakırı yüksek.\n\nBu hastalığın genetik temeli ve patolojik mekanizması hangisidir?",
       "options": [
         "A) HFE mutasyonu — demir birikimi",
-        "B) ATP7B mutasyonu — hepatositlerde bakır atılım defekti → karaciğer, beyin, kornea birikimi",
+        "B) ATP7B mutasyonu — bakır atılım defekti",
         "C) AAT mutasyonu — proteaz inhibitör eksikliği",
         "D) CFTR mutasyonu — klor kanal defekti",
         "E) Seruloplazmin gen mutasyonu — bakır taşınma defekti"
       ],
-      "correct_answer": "B) ATP7B mutasyonu — hepatositlerde bakır atılım defekti → karaciğer, beyin, kornea birikimi",
+      "correct_answer": "B) ATP7B mutasyonu — bakır atılım defekti",
       "explanation": "Wilson hastalığı: ATP7B geni (13. kromozom) mutasyonu, otozomal resesif. Bakır biliyer atılımı bozulur → karaciğerde birikir (hepatit, siroz), bazal ganglionlarda birikir (nöropsikiyatrik bulgular), Descemet membranında birikir (Kayser-Fleischer halkaları). Tedavi: penicillamine (bakır şelatörü) veya çinko (bakır emilimini azaltır). Hemokromatozda (HFE mutasyonu) demir birikir.",
       "story_hint": "💡 HİKAYE: İnvaziv duktal karsinom memenin en sık malignitesidir — sert, yıldızsı (stellat) kitle. Sentinel lenf nodu aksiller evrelemenin anahtarı. ER/PR pozitifse hormonal tedavi, HER2 pozitifse trastuzumab, triple negatifse agresif kemoterapi!"
     },
@@ -895,12 +895,12 @@
       "case": "**Alfa-1 Antitripsin Eksikliği**\n\n35 yaşında sigara içmeyen erkek, nefes darlığı ile başvuruyor. SFT'de obstrüktif patern (FEV1/FVC düşük). Karaciğer biyopsisinde hepatositlerde PAS-pozitif, diyastaza dirençli globüller izleniyor.\n\nBu hastalıkta karaciğer ve akciğer tutulumunun mekanizması hangisidir?",
       "options": [
         "A) Karaciğer: bakır birikimi; Akciğer: bronşial inflamasyon",
-        "B) Karaciğer: anormal AAT proteini hepatositte birikir (gain of function); Akciğer: proteaz-antiproteaz dengesizliği → panasiner amfizem (loss of function)",
+        "B) Karaciğer: anormal AAT proteini hepatositte birikir; Akciğer: proteaz-antiproteaz dengesizliği → panasiner amfizem",
         "C) Karaciğer: demir birikimi; Akciğer: interstisyel fibrozis",
         "D) Karaciğer: trigliserid birikimi; Akciğer: pulmoner hipertansiyon",
         "E) Karaciğer: glikojen birikimi; Akciğer: bronşektazi"
       ],
-      "correct_answer": "B) Karaciğer: anormal AAT proteini hepatositte birikir (gain of function); Akciğer: proteaz-antiproteaz dengesizliği → panasiner amfizem (loss of function)",
+      "correct_answer": "B) Karaciğer: anormal AAT proteini hepatositte birikir; Akciğer: proteaz-antiproteaz dengesizliği → panasiner amfizem",
       "explanation": "AAT eksikliği (PiZZ fenotipi): (1) Akciğer: AAT (elastaz inhibitörü) eksikliği → nötrofil elastaz alveoler duvarları yıkar → panasiner amfizem (alt loblar). (2) Karaciğer: Mutant Z proteini katlanamaz ve hepatosit ER'de birikir (PAS+, diyastaza dirençli globüller) → hepatit → siroz. İlginç şekilde karaciğer hasarı \"gain of toxic function\", akciğer hasarı \"loss of function\" mekanizmasıyladır.",
       "story_hint": "💡 HİKAYE: HPV serviksı ele geçirdi — E6 suikastçısı p53'ü öldürdü, E7 Rb'yi etkisiz bıraktı. Koilositler (çekirdek etrafında boşluk) enfeksiyonun imzası. PAP smear ile erken tanı, HPV aşısı ile önleme mümkün!"
     },
@@ -910,11 +910,11 @@
       "options": [
         "A) IgA nefropatisi",
         "B) Membranöz nefropati",
-        "C) Poststreptokokal glomerülonefrit (PSGN)",
+        "C) Poststreptokokal glomerülonefrit",
         "D) Lupus nefriti",
         "E) Anti-GBM hastalığı"
       ],
-      "correct_answer": "C) Poststreptokokal glomerülonefrit (PSGN)",
+      "correct_answer": "C) Poststreptokokal glomerülonefrit",
       "explanation": "PSGN: Grup A Streptokok enfeksiyonundan 1-3 hafta sonra nefritik sendrom. İmmün kompleks hastalığı (tip III hipersensitivite). EM'de subepitelyal humps patognomoniktir. C3 düşük (alternatif kompleman yolu aktivasyonu), ASO yüksek. Çocuklarda prognoz mükemmeldir (>%95 iyileşme). IgA nefropatisinde enfeksiyonla eşzamanlı (sinfarenjitik) hematüri, mezangial IgA birikimi görülür.",
       "story_hint": "💡 HİKAYE: Postmenopozal kanama = endometrium kanseri düşün! Tip I östrojen bağımlı (obezite, nulliparite risk), iyi prognoz. Tip II (seröz) östrojenden bağımsız, agresif. Endometrial biyopsi altın standart tanı yöntemidir."
     },
@@ -924,11 +924,11 @@
       "options": [
         "A) Yaş grubu",
         "B) Biyopsi bulgusu",
-        "C) Enfeksiyonla eşzamanlı (sinfarenjitik) hematüri (PSGN'de 1-3 hafta gecikme var)",
+        "C) Enfeksiyonla eşzamanlı hematüri",
         "D) Proteinüri miktarı",
         "E) Kompleman düzeyi"
       ],
-      "correct_answer": "C) Enfeksiyonla eşzamanlı (sinfarenjitik) hematüri (PSGN'de 1-3 hafta gecikme var)",
+      "correct_answer": "C) Enfeksiyonla eşzamanlı hematüri",
       "explanation": "IgA nefropatisi dünyanın en sık glomerülonefriti'dir. PSGN'den farkları: (1) Hematüri enfeksiyonla eşzamanlı (\"synpharyngitic\" — PSGN'de gecikme var), (2) kompleman normal (PSGN'de C3 düşük), (3) mezangial IgA (PSGN'de subepitelyal IgG/C3), (4) kronik böbrek hastalığına ilerleme riski daha yüksek. Henoch-Schönlein purpurası IgA nefropatisinin sistemik formudur.",
       "story_hint": "💡 HİKAYE: Seröz kistadenokarsinom overin en sık malign tümörü — psammom cisimcikleri (kum taneleri gibi kalsifikasyon) içinde parlar. CA-125 ile takip edilir. Bilateral tutulum sık. Peritoneal yayılım tipiktir."
     },
@@ -938,11 +938,11 @@
       "options": [
         "A) ANCA-ilişkili vaskülit — pauci-immün",
         "B) İmmün kompleks hastalığı — granüler IF",
-        "C) Goodpasture sendromu — anti-GBM (tip IV kollajenin α3 zincirine karşı antikor) → akciğer + böbrek",
+        "C) Goodpasture sendromu — anti-GBM antikorları → akciğer + böbrek",
         "D) Lupus nefriti — \"full house\" IF",
         "E) IgA nefropatisi — mezangial IgA"
       ],
-      "correct_answer": "C) Goodpasture sendromu — anti-GBM (tip IV kollajenin α3 zincirine karşı antikor) → akciğer + böbrek",
+      "correct_answer": "C) Goodpasture sendromu — anti-GBM antikorları → akciğer + böbrek",
       "explanation": "Goodpasture sendromu: anti-GBM antikorları (tip IV kollajen α3 zinciri) → lineer IF paterni (tip II hipersensitivite). Hem glomerüler hem alveoler bazal membranı hedefler → pulmorenal sendrom (hemoptizi + nefrit). Kresentik GN (RPGN) sınıflandırması: Tip I = anti-GBM (lineer), Tip II = immün kompleks (granüler), Tip III = pauci-immün (ANCA+, IF negatif).",
       "story_hint": "💡 HİKAYE: Dermoid kist (matür kistik teratom) bir sürpriz kutusu — saç, diş, kemik, deri her şey çıkabilir! Overin en sık germ hücreli tümörü. Genelde benign. İmmatür olursa AFP yükselir ve malign kabul edilir."
     },
@@ -979,12 +979,12 @@
       "case": "**Wilms Tümörü**\n\n3 yaşında çocuk, karın şişliği ve palpabl abdominal kitle ile getiriliyor. BT'de sol böbrekte büyük, solid-kistik kitle izleniyor. Biyopside triphasic patern: blastem, stroma (iskelet kası, kıkırdak) ve tübüler epitelyal yapılar.\n\nEn olası tanı ve ilişkili sendromlar hangisidir?",
       "options": [
         "A) Nöroblastom — VMA yüksek, N-MYC amplifikasyonu",
-        "B) Nefroblastom (Wilms tümörü) — WAGR sendromu (Wilms, Aniridia, Genital anomali, mental Retardasyon), Beckwith-Wiedemann",
+        "B) Nefroblastom (Wilms tümörü) — WAGR sendromu, Beckwith-Wiedemann",
         "C) Clear cell sarkom",
         "D) Mezoblastik nefroma",
         "E) Rabdomyosarkom"
       ],
-      "correct_answer": "B) Nefroblastom (Wilms tümörü) — WAGR sendromu (Wilms, Aniridia, Genital anomali, mental Retardasyon), Beckwith-Wiedemann",
+      "correct_answer": "B) Nefroblastom (Wilms tümörü) — WAGR sendromu, Beckwith-Wiedemann",
       "explanation": "Wilms tümörü çocuklukta en sık böbrek tümörüdür. Triphasic görünüm patognomoniktir. WT1 geni (11p13): WAGR sendromu (delesyon), Denys-Drash sendromu (nokta mutasyonu). WT2 geni (11p15.5): Beckwith-Wiedemann sendromu (makrosomi, makroglossi, organomegali, hemihipertrofi). Nöroblastomda VMA/HVA yüksek, kalsifikasyon, N-MYC amplifikasyonu (kötü prognoz).",
       "story_hint": "💡 HİKAYE: Reed-Sternberg hücresi iki gözüyle baykuş gibi bakıyor — Hodgkin lenfomanın patognomonik imzası! CD15 ve CD30 pozitif. Genç hastada boyunda ağrısız LAP. Alkol ile ağrıyan lenf nodu Hodgkin'in tuhaf ama klasik özelliği."
     },
@@ -1007,12 +1007,12 @@
       "case": "**Polikistik Böbrek Hastalığı**\n\n30 yaşında erkek, bilateral büyümüş böbrekler, hipertansiyon ve aile öyküsünde amcasının diyalize girdiği belirtiliyor. BT'de her iki böbrekte çok sayıda değişen boyutlarda kistler izleniyor.\n\nEn olası tanı ve ilişkili ekstrarenal bulgu hangisidir?",
       "options": [
         "A) Otozomal resesif polikistik böbrek hastalığı — konjenital hepatik fibrozis",
-        "B) Otozomal dominant polikistik böbrek hastalığı (ADPKD) — Berry (sakküler) anevrizma rüptürü riski",
+        "B) Otozomal dominant polikistik böbrek hastalığı (ADPKD) — Berry anevrizma riski",
         "C) Medüller sünger böbrek — nefrolitiyazis",
         "D) Edinsel kistik hastalık — diyaliz ilişkili",
         "E) Basit renal kist — benign"
       ],
-      "correct_answer": "B) Otozomal dominant polikistik böbrek hastalığı (ADPKD) — Berry (sakküler) anevrizma rüptürü riski",
+      "correct_answer": "B) Otozomal dominant polikistik böbrek hastalığı (ADPKD) — Berry anevrizma riski",
       "explanation": "ADPKD: PKD1 (%85, 16p — daha ağır) veya PKD2 (4q) mutasyonu. Erişkin dönemde böbrek yetmezliğine ilerler. Ekstrarenal bulgular: Berry anevrizmaları (subaraknoid kanama riski), hepatik kistler, mitral valv prolapsusu, kolon divertikülü. ARPKD ise çocuklarda görülür, konjenital hepatik fibrozis eşlik eder.",
       "story_hint": "💡 HİKAYE: Foliküler lenfomada t(14;18) bcl-2'yi aşırı eksprese eder — hücreler ölmeyi reddeder! Yavaş büyüyen, ağrısız LAP ile gelen yaşlı hasta. Difüz büyük B hücreli lenfomaya dönüşüm (Richter benzeri) en korkulan komplikasyon."
     },
@@ -1022,11 +1022,11 @@
       "options": [
         "A) Histerektomi",
         "B) Konizasyon",
-        "C) HPV tiplendirmesi (refleks HPV testi)",
+        "C) HPV tiplendirmesi",
         "D) 3 yıl sonra tekrar PAP smear",
         "E) Kolposkopi ve biyopsi"
       ],
-      "correct_answer": "C) HPV tiplendirmesi (refleks HPV testi)",
+      "correct_answer": "C) HPV tiplendirmesi",
       "explanation": "ASCUS'ta iki yaklaşım: (1) Refleks HPV testi (tercih edilen) — yüksek riskli HPV pozitifse kolposkopi, negatifse 1 yıl sonra tekrar. (2) 6-12 ay sonra tekrar sitoloji. LSIL ve HSIL'de doğrudan kolposkopi yapılır. HPV 16/18 pozitifliğinde ASCUS bile olsa doğrudan kolposkopi önerilir.",
       "story_hint": "💡 HİKAYE: KML'nin Philadelphia kromozomu [t(9;22)] sürekli çalışan bir motor — BCR-ABL tirozin kinaz. Periferik yaymada her evreden hücre var (sola kayma). Bazofili ve LAP skoru düşüklüğü KML'yi lökemoid reaksiyondan ayırır. İmatinib motoru kapatır!"
     },
@@ -1036,11 +1036,11 @@
       "options": [
         "A) Multiparite",
         "B) OKS kullanımı",
-        "C) Karşılanmamış östrojen (obezite → periferik aromatizasyon → östrojen fazlalığı)",
+        "C) Karşılanmamış östrojen",
         "D) Progesteron tedavisi",
         "E) Sigara kullanımı"
       ],
-      "correct_answer": "C) Karşılanmamış östrojen (obezite → periferik aromatizasyon → östrojen fazlalığı)",
+      "correct_answer": "C) Karşılanmamış östrojen",
       "explanation": "Tip I endometrial karsinom (endometrioid) östrojen bağımlıdır. Risk faktörleri: obezite (yağ dokusunda androjen → östrojene çevrilir), erken menarş/geç menopoz, nulliparite, PCOS, tamoksifen, karşılanmamış HRT. Atipik hiperplazi → endometrioid adenokarsinom sekansı. Obez postmenopozal kadında vajinal kanama → endometrial biyopsi şarttır. Tip II (seröz) östrojenden bağımsızdır, TP53 mutasyonu ilişkili, daha agresif.",
       "story_hint": "💡 HİKAYE: KLL yaşlıların 'uslu' lösemisidir — olgun ama işlevsiz B lenfositler birikir. Smudge cells yaymada 'ezilmiş hücre' olarak görülür. CD5+ B hücreleri karakteristik. Richter transformasyonu (DLBCL'ye dönüşüm) beklenen en kötü senaryo."
     },
@@ -1049,12 +1049,12 @@
       "case": "**Over Tümörleri**\n\n16 yaşında kız, hızlı büyüyen pelvik kitle, AFP yüksekliği ve erken puberte ile başvuruyor. Histolojide Schiller-Duval cisimcikleri (endodermal sinüs yapıları) izleniyor.\n\nEn olası tanı hangisidir?",
       "options": [
         "A) Disgerminom",
-        "B) Matür kistik teratom (dermoid kist)",
-        "C) Endodermal sinüs tümörü (yolk sac tümör)",
+        "B) Matür kistik teratom",
+        "C) Endodermal sinüs tümörü",
         "D) Koryokarsinom",
         "E) Embriyonel karsinom"
       ],
-      "correct_answer": "C) Endodermal sinüs tümörü (yolk sac tümör)",
+      "correct_answer": "C) Endodermal sinüs tümörü",
       "explanation": "Endodermal sinüs tümörü (yolk sac tümör): AFP yüksek, Schiller-Duval cisimcikleri (glomeruloid yapılar) patognomonik. Çocuk ve genç kadınlarda. Disgerminom: LDH yüksek, seminomun over karşılığı, radyosensitif. Koryokarsinom: β-hCG çok yüksek. İmmatür teratom: AFP hafif yüksek olabilir, nöroepitelyal elemanlar. Matür kistik teratom en sık over germ hücreli tümörüdür ama benigntir.",
       "story_hint": "💡 HİKAYE: Multipl miyelom kemik iliğinde plazma hücre istilasıdır — CRAB ile hatırla: Calcium↑, Renal failure, Anemia, Bone lesions (zımba deliği). M-spike protein elektroforezde, Bence-Jones idrarda. Rouleaux = bozuk para dizili eritrositler."
     },
@@ -1063,12 +1063,12 @@
       "case": "**Molar Gebelik**\n\n20 yaşında kadın, ilk trimesterde aşırı bulantı, vajinal kanama ve \"kar fırtınası\" ultrason paterni ile başvuruyor. β-hCG 200.000 mIU/mL. Uterin kavitede fetal doku izlenmiyor.\n\nEn olası tanı ve genetik temeli hangisidir?",
       "options": [
         "A) Parsiyel mol — triploid (69,XXY), fetal doku var",
-        "B) Komplet mol — diploid (46,XX), tüm genomu paternaldir (androjenik), fetal doku yok",
+        "B) Komplet mol — diploid, tüm genomu paternaldir, fetal doku yok",
         "C) İnvaziv mol — miyometrium invazyonu",
         "D) Koryokarsinom — metastatik hastalık",
         "E) Plasental site trofoblastik tümör — düşük hCG"
       ],
-      "correct_answer": "B) Komplet mol — diploid (46,XX), tüm genomu paternaldir (androjenik), fetal doku yok",
+      "correct_answer": "B) Komplet mol — diploid, tüm genomu paternaldir, fetal doku yok",
       "explanation": "Komplet mol: boş ovumu 1 sperm döller ve dublike olur (46,XX tamamı paternal) veya 2 sperm döller. Fetal doku yok, tüm villi hidropik, trofoblast proliferasyonu yaygın, β-hCG çok yüksek. Koryokarsinom riski %2-3. Parsiyel mol: triploid (69,XXX veya 69,XXY), fetal doku kısmen var, malignite riski düşük. β-hCG takibi zorunludur (küretaj sonrası).",
       "story_hint": "💡 HİKAYE: Demir eksikliği = mikrositer hipokrom aneminin en sık nedeni. Ferritin düşer (depo boş), TIBC artar (transferrin aç). Koilonychia (kaşık tırnak) ve Plummer-Vinson (disfaji + glossit + demir eksikliği) sorularda klasik ipuçları."
     },
@@ -1077,12 +1077,12 @@
       "case": "**Meme Karsinomu / Duktal**\n\n52 yaşında kadın, sol memede sert, fikse, düzensiz sınırlı kitle ile başvuruyor. Biyopside duktal yapılar oluşturan infiltratif karsinom; çevrede dezmoplastik stroma reaksiyonu izleniyor.\n\nEn sık meme karsinomu tipi ve en önemli prognostik faktör hangisidir?",
       "options": [
         "A) Lobüler karsinom — E-cadherin kaybı",
-        "B) İnvaziv duktal karsinom (NST) — aksiller lenf nodu metastazı (evre)",
+        "B) İnvaziv duktal karsinom (NST) — aksiller lenf nodu metastazı",
         "C) Medüller karsinom — lenfoid infiltrasyon",
         "D) Müsinöz karsinom — müsin üretimi",
         "E) Tübüler karsinom — tübüler yapılar"
       ],
-      "correct_answer": "B) İnvaziv duktal karsinom (NST) — aksiller lenf nodu metastazı (evre)",
+      "correct_answer": "B) İnvaziv duktal karsinom (NST) — aksiller lenf nodu metastazı",
       "explanation": "İnvaziv duktal karsinom (no special type) en sık meme karsinomu tipidir (%70-80). En önemli prognostik faktör aksiller lenf nodu tutulumudur (evre > grade). Diğer prognostik faktörler: tümör boyutu, grade, ER/PR durumu, HER2 durumu, Ki-67. Lobüler karsinomda E-cadherin (CDH1) kaybı → Indian file (tek sıra) infiltrasyon paterni, bilateral olma eğilimi.",
       "story_hint": "💡 HİKAYE: B12 eksikliğinde DNA sentezi bozulur — hücreler büyür ama bölünemez (megaloblastik). Hipersegmente nötrofiller (>5 lob) kan yaymasının imzası. Arka kordon dejenerasyonu (vibrasyon/propriyosepsiyon kaybı) nörolojik tablo. Folat eksikliğinde nöroloji YOKTUR!"
     },
@@ -1092,11 +1092,11 @@
       "options": [
         "A) Tamoksifen",
         "B) Aromataz inhibitörü",
-        "C) Trastuzumab (Herceptin) — anti-HER2 monoklonal antikor",
+        "C) Trastuzumab — anti-HER2 monoklonal antikor",
         "D) İmatinib",
         "E) Rituximab"
       ],
-      "correct_answer": "C) Trastuzumab (Herceptin) — anti-HER2 monoklonal antikor",
+      "correct_answer": "C) Trastuzumab — anti-HER2 monoklonal antikor",
       "explanation": "HER2 (ERBB2) overekspresyonu/amplifikasyonu meme kanserlerinin %15-20'sinde görülür. Agresif seyirlidir ama trastuzumab (anti-HER2 monoklonal antikor) ile hedeflenebilir → prognoz dramatik iyileşir. Triple-negatif (ER-, PR-, HER2-): en kötü prognoz, hedefe yönelik tedavi seçeneği sınırlı. Tamoksifen ve aromataz inhibitörleri ER(+) tümörlerde, rituximab B hücreli lenfomalarda kullanılır.",
       "story_hint": "💡 HİKAYE: Orak hücre anemisinde tek amino asit değişimi (Glu→Val) kaderimizi belirler — HbS düşük O₂'de polimerize olur, eritrosit orak şeklini alır. Dalak tekrarlayan infarktlarla küçülür (otosplenektomi). Kapsüllü bakterilere savunmasız kalınır!"
     },
@@ -1119,12 +1119,12 @@
       "case": "**DCIS ve Paget Hastalığı**\n\n50 yaşında kadın, meme başında egzamatöz, krutlu lezyon ile başvuruyor. Biyopside epidermis içinde büyük, açık sitoplazmalı, PAS-pozitif tümör hücreleri (\"Paget hücreleri\") izleniyor.\n\nBu lezyonun altında yatan patoloji hangisidir?",
       "options": [
         "A) Kontakt dermatit",
-        "B) Altta yatan duktal karsinom in situ (DCIS) veya invaziv karsinom — Paget hücreleri duktuslardan epidermise göç eder",
+        "B) Altta yatan duktal karsinom in situ (DCIS) veya invaziv karsinom",
         "C) Melanom — epidermal melanosit proliferasyonu",
         "D) Eczema — atopik dermatit",
         "E) Bowen hastalığı — skuamöz hücreli karsinom in situ"
       ],
-      "correct_answer": "B) Altta yatan duktal karsinom in situ (DCIS) veya invaziv karsinom — Paget hücreleri duktuslardan epidermise göç eder",
+      "correct_answer": "B) Altta yatan duktal karsinom in situ (DCIS) veya invaziv karsinom",
       "explanation": "Meme başı Paget hastalığı: meme başında egzamatöz lezyon altında NEREDEYSE HER ZAMAN altta DCIS veya invaziv karsinom vardır. Paget hücreleri mukopolisakkarit içerir (PAS+, CEA+, HER2 sıklıkla+). Kemik Paget hastalığı (osteitis deformans) farklı bir hastalıktır. Meme başında tek taraflı \"eczema\" → Paget'i düşün, biyopsi şart.",
       "story_hint": "💡 HİKAYE: Herediter sferositozda eritrosit iskeleti (spektrin/ankirin) bozuk — hücre küre şeklini alır ve dalak labirentinde sıkışıp yıkılır. Ozmotik frajilite testi pozitif, MCHC artmış. Splenektomi yapılırsa hücreler sağ kalır!"
     },
@@ -1133,12 +1133,12 @@
       "case": "**Tiroid Karsinomu / Papiller**\n\n35 yaşında kadın, boyunda ağrısız tiroid nodülü ile başvuruyor. İİAB'de papiller yapılar, nükleer oluklar (grooves), nükleer psödoinklüzyonlar ve buzlu cam (ground-glass / Orphan Annie eyes) nükleus izleniyor.\n\nEn olası tanı ve en sık yayılım yolu hangisidir?",
       "options": [
         "A) Folliküler karsinom — hematojen yayılım",
-        "B) Papiller tiroid karsinomu — lenfatik yayılım (servikal LAP)",
+        "B) Papiller tiroid karsinomu — lenfatik yayılım",
         "C) Medüller karsinom — lenfatik ve hematojen",
         "D) Anaplastik karsinom — lokal invazyon",
         "E) Tiroid lenfoma — Hashimoto zemininde"
       ],
-      "correct_answer": "B) Papiller tiroid karsinomu — lenfatik yayılım (servikal LAP)",
+      "correct_answer": "B) Papiller tiroid karsinomu — lenfatik yayılım",
       "explanation": "Papiller tiroid karsinomu en sık tiroid malignitesidir (%80+). Nükleer özellikler tanı koydurucudur: Orphan Annie eyes (buzlu cam nükleus), nükleer grooves, psödoinklüzyonlar, psammom cisimleri (konsantrik kalsifiye yapılar). Lenfatik yayılım → servikal lenf nodları. Prognoz mükemmeldir (%95+ 10 yıllık sağkalım). RET/PTC yeniden düzenlenmesi, BRAF V600E mutasyonu. Folliküler karsinomda vasküler invazyon → hematojen yayılım (akciğer, kemik).",
       "story_hint": "💡 HİKAYE: G6PD eksik hastaya oksidatif stres (bakla, naftalin, sulfonamid) gelince eritrositler patlar — Heinz cisimcikleri (denatüre Hb) ve bite cells (dalak ısırığı) oluşur. X-linked resesif → erkeklerde sık. Akut hemoliz atağı sonrasında düzey normal çıkabilir (genç hücreler sağlam)!"
     },
@@ -1161,12 +1161,12 @@
       "case": "**Feokromositoma**\n\n35 yaşında kadın, paroksismal hipertansiyon (episodik başağrısı, terleme, çarpıntı) ile başvuruyor. 24 saatlik idrarda metanefrin ve VMA yüksek. BT'de sağ adrenal bezde 4 cm kitle izleniyor.\n\nFeokromositomanın \"10 kuralı\" hangi özellikleri kapsar?",
       "options": [
         "A) %10 benign, %10 familyal, %10 ekstra-adrenal",
-        "B) %10 bilateral, %10 ekstra-adrenal (paraganglioma), %10 malign, %10 çocuklarda, %10 familyal (MEN 2, VHL, NF1)",
+        "B) %10 bilateral, %10 ekstra-adrenal, %10 malign, %10 çocuklarda, %10 familyal",
         "C) %10 asemptomatik, %10 kalsifiye, %10 kistik",
         "D) %10 kadınlarda, %10 nüks, %10 metastatik",
         "E) %10 aldosteron da üretir, %10 kortizol de üretir"
       ],
-      "correct_answer": "B) %10 bilateral, %10 ekstra-adrenal (paraganglioma), %10 malign, %10 çocuklarda, %10 familyal (MEN 2, VHL, NF1)",
+      "correct_answer": "B) %10 bilateral, %10 ekstra-adrenal, %10 malign, %10 çocuklarda, %10 familyal",
       "explanation": "Feokromositoma (\"10 kuralı tümörü\"): kromaffin hücrelerinden katekolamin (epinefrin, norepinefrin) üreten tümör. Paroksismal HT, baş ağrısı, terleme, taşikardi klasik triad. Güncel verilerde familyal oran %25-30'a çıkmıştır (MEN2, VHL, NF1, SDH mutasyonları). Cerrahi öncesi alfa-blokör (fenoksibenzamin) → sonra beta-blokör ile hazırlık gerekir (beta önce verilirse karşılanmamış alfa etkisi → hipertansif kriz).",
       "story_hint": "💡 HİKAYE: Çocuk kanlı ishale yakalandı (E. coli O157:H7) → Shiga toksin böbrek damarlarını yıktı → schistositler (parçalanmış eritrositler) + trombositopeni + akut böbrek yetmezliği = HUS üçlüsü! Destek tedavisi ile çoğu çocuk iyileşir."
     },
@@ -1176,11 +1176,11 @@
       "options": [
         "A) Adrenal adenom — ACTH bağımsız",
         "B) Ektopik ACTH — küçük hücreli akciğer karsinomu",
-        "C) Hipofiz adenomu (Cushing hastalığı) — ACTH bağımlı, yüksek dozla baskılanır",
+        "C) Hipofiz adenomu (Cushing hastalığı) — ACTH bağımlı",
         "D) Adrenal karsinom — ACTH bağımsız",
         "E) Eksojen steroid kullanımı — en sık neden"
       ],
-      "correct_answer": "C) Hipofiz adenomu (Cushing hastalığı) — ACTH bağımlı, yüksek dozla baskılanır",
+      "correct_answer": "C) Hipofiz adenomu (Cushing hastalığı) — ACTH bağımlı",
       "explanation": "Cushing SENDROMU: kortizol fazlalığı (herhangi neden). Cushing HASTALIĞI: hipofiz ACTH adenomu (en sık endojen neden). Yüksek doz deksametazonla baskılanma → hipofiz adenomunu gösterir. Ektopik ACTH (SCLC, karsinoid) yüksek dozla baskılanmaz. ACTH düşükse adrenal tümör düşünülür. Tüm Cushing nedenlerinin en sık olanı eksojen steroid kullanımıdır.",
       "story_hint": "💡 HİKAYE: TTP'de ADAMTS13 makası bozuk — ultra-büyük vWF multimerleri kesilemiyor, küçük damarlarda tıkaç oluşturuyor. Beyin ve böbrek en çok etkilenir. Pentad: anemi + trombositopeni + böbrek + nöroloji + ateş. Plazma değişimi ACIL!"
     },
@@ -1192,7 +1192,7 @@
         "B) Metastatik karsinom",
         "C) Otoimmün adrenalitis",
         "D) Fungal enfeksiyon",
-        "E) Adrenal hemoraji (Waterhouse-Friderichsen)"
+        "E) Adrenal hemoraji"
       ],
       "correct_answer": "C) Otoimmün adrenalitis",
       "explanation": "Gelişmiş ülkelerde Addison'un en sık nedeni otoimmün adrenalitis'tir (%70-80). Gelişmekte olan ülkelerde TB en sık nedendir. Hiperpigmentasyon: ACTH yüksek → POMC'den MSH de artar → melanin üretimi artar. Waterhouse-Friderichsen sendromu: bilateral adrenal hemorajik nekroz → N. meningitidis sepsisinde. Otoimmün poliglandüler sendrom tip 1 veya 2 ile birliktelik olabilir.",
@@ -1232,11 +1232,11 @@
       "options": [
         "A) t(14;18) BCL2 — HIV",
         "B) t(11;14) Cyclin D1 — HHV-8",
-        "C) t(8;14) c-MYC/IgH — Epstein-Barr virüsü (endemik formda)",
+        "C) t(8;14) c-MYC/IgH — Epstein-Barr virüsü",
         "D) t(9;22) BCR-ABL — HTLV-1",
         "E) t(15;17) PML-RARα — HBV"
       ],
-      "correct_answer": "C) t(8;14) c-MYC/IgH — Epstein-Barr virüsü (endemik formda)",
+      "correct_answer": "C) t(8;14) c-MYC/IgH — Epstein-Barr virüsü",
       "explanation": "Burkitt lenfoma: en hızlı büyüyen insan tümörü (doubling time 24-48 saat). t(8;14) → c-MYC onkogeni IgH promotörü kontrolüne girer → aşırı proliferasyon. Endemik (Afrika) = çene/yüz, EBV %100 ilişkili. Sporadik = ileoçekal bölge, EBV %20. HIV-ilişkili form da vardır. \"Starry sky\" = makrofajlar apoptotik artıkları temizler (tingible body macrophages).",
       "story_hint": "💡 HİKAYE: Tiroid papiller karsinomu = en sık tiroid kanseri. Orphan Annie gözleri (buzlu cam çekirdek) + psammom cisimcikleri + nükleer oluklar = üçlü imza! Lenfatik yayılım yapar ama 10 yıllık sağkalım %95+. Radyasyona maruz kalma risk faktörü."
     },
@@ -1245,12 +1245,12 @@
       "case": "**Folliküler Lenfoma**\n\n55 yaşında kadın, yaygın ağrısız lenfadenopati ile başvuruyor. Biyopside folliküler büyüme paterni ve BCL2(+) hücreler izleniyor. Ki-67 düşük.\n\nBu lenfomanın genetik temeli ve klinik önemi hangisidir?",
       "options": [
         "A) t(8;14) c-MYC — agresif seyir",
-        "B) t(14;18) BCL2/IgH — BCL2 overekspresyonu → apoptoz inhibisyonu, indolan (yavaş) seyir",
+        "B) t(14;18) BCL2/IgH — BCL2 overekspresyonu → apoptoz inhibisyonu",
         "C) t(11;14) Cyclin D1 — mantle cell",
         "D) Trizomi 12 — KLL",
         "E) t(9;22) BCR-ABL — KML"
       ],
-      "correct_answer": "B) t(14;18) BCL2/IgH — BCL2 overekspresyonu → apoptoz inhibisyonu, indolan (yavaş) seyir",
+      "correct_answer": "B) t(14;18) BCL2/IgH — BCL2 overekspresyonu → apoptoz inhibisyonu",
       "explanation": "Folliküler lenfoma erişkinlerde en sık indolan (düşük gradeli) NHL'dir. t(14;18) → BCL2 anti-apoptotik protein overekspresyonu → lenfosit birikimi (proliferasyondan çok apoptoz inhibisyonu). Yıllarca indolan seyredebilir ama diffüz büyük B hücreli lenfomaya (DLBCL) transformasyon riski vardır. Normal germinal merkezde BCL2 negatiftir (folliküler lenfomadan ayırt edici).",
       "story_hint": "💡 HİKAYE: Hashimoto = en sık otoimmün tiroidit. Anti-TPO ve anti-Tg antikorları tiroid bezini yavaşça yıkar → hipotiroidiye gider. Hürthle hücreleri (onkositik, granüler sitoplazmalı) ve germinal merkezli lenfoid foliküller biyopside karakteristik. Tiroid MALT lenfoma riski!"
     },
@@ -1259,12 +1259,12 @@
       "case": "**Multipl Miyelom**\n\n68 yaşında erkek, bel ağrısı, anemi ve böbrek yetmezliği ile başvuruyor. Serum protein elektroforezinde M-pike (monoklonal pik), Bence-Jones proteinürisi, röntgende yaygın litik kemik lezyonları ve hiperkalsemi saptanıyor.\n\nMultipl miyelomun tanı kriterleri ve patolojik mekanizması hangisidir?",
       "options": [
         "A) Lenfoplazmasitik lenfoma — IgM monoklonal, hiperviskozite",
-        "B) Kemik iliğinde %10+ klonal plazma hücreleri + uç organ hasarı (CRAB: Ca↑, Renal yetmezlik, Anemia, Bone lezyonları)",
+        "B) Kemik iliğinde %10+ klonal plazma hücreleri + uç organ hasarı (CRAB kriterleri)",
         "C) MGUS — monoklonal gammopati ama organ hasarı yok",
         "D) Primer amiloidoz — AL amiloid birikimi",
         "E) Ağır zincir hastalığı — IgA ağır zincir"
       ],
-      "correct_answer": "B) Kemik iliğinde %10+ klonal plazma hücreleri + uç organ hasarı (CRAB: Ca↑, Renal yetmezlik, Anemia, Bone lezyonları)",
+      "correct_answer": "B) Kemik iliğinde %10+ klonal plazma hücreleri + uç organ hasarı (CRAB kriterleri)",
       "explanation": "Multipl miyelom: kemik iliğinde neoplastik plazma hücre proliferasyonu. CRAB kriterleri: Calcium ↑, Renal failure (hafif zincir nefropatisi, amiloidoz), Anemia (iliği infiltrasyon), Bone lesions (osteolitik — osteoklast aktivasyonu, RANKL ↑). Bence-Jones proteini: idrarda monoklonal hafif zincirler. Waldenström makroglobulinemisi IgM üretir → hiperviskozite. MGUS → miyelom transformasyonu yılda %1.",
       "story_hint": "💡 HİKAYE: Graves'te TSI (TSH reseptör stimülan antikor) tiroidin gazını açar — hipertiroidi! Difüz guatr (tüm bez büyür), ekzoftalmus (göz fırlaması — orbital fibrozis), pretibial miksödem (bacakta kalınlaşma). Tip II hipersensitivite ama stimülatör tip!"
     },
@@ -1273,12 +1273,12 @@
       "case": "**KLL (Kronik Lenfositik Lösemi)**\n\n70 yaşında erkek, rutin kan testinde lenfositoz (WBC 45.000, %85 olgun küçük lenfositler) saptanıyor. Flow sitometri: CD5(+), CD19(+), CD23(+).\n\nKLL'nin patolojik özelliği ve periferik yaymada karakteristik bulgusu hangisidir?",
       "options": [
         "A) Blast hücreleri ve Auer rod'ları",
-        "B) Olgun küçük lenfositler ve smudge cells (çizilmiş hücreler — frajil lenfositlerin preparasyonda parçalanması)",
+        "B) Olgun küçük lenfositler ve smudge cells",
         "C) Atipik lenfositler — monosit benzeri",
         "D) Sézary hücreleri — serebriform nükleus",
         "E) Reed-Sternberg hücreleri"
       ],
-      "correct_answer": "B) Olgun küçük lenfositler ve smudge cells (çizilmiş hücreler — frajil lenfositlerin preparasyonda parçalanması)",
+      "correct_answer": "B) Olgun küçük lenfositler ve smudge cells",
       "explanation": "KLL en sık erişkin lösemisidir (Batı'da). CD5(+) B hücreleri (normalde T hücre markeri olan CD5'i eksprese eder — Small lymphocytic lymphoma/SLL aynı hastalığın doku tutulumlu formudur). Smudge cells: frajil lenfositlerin yayma sırasında parçalanması. Komplikasyonlar: otoimmün hemolitik anemi (sıcak tip, IgG), hipogamaglobulinemi, Richter transformasyonu (DLBCL'ye dönüşüm).",
       "story_hint": "💡 HİKAYE: Feokromositoma adrenal medullanın katekolamin bombası — epizodik HT atakları, çarpıntı, terleme, baş ağrısı! '10 kuralı' ile hatırla. VMA ve metanefrinler idrarda yükselir. Ameliyat öncesi alfa blokaj (fenoksibenzamin) şart — yoksa hipertansif kriz!"
     },
@@ -1287,12 +1287,12 @@
       "case": "**AML M3 (Akut Promiyelositik Lösemi)**\n\n30 yaşında kadın, yaygın ekimoz, diş eti kanaması ve DIC bulguları ile başvuruyor. Periferik yaymada sitoplazmalarında çok sayıda Auer rod içeren (faggot cells) atipik promiyelositler izleniyor.\n\nBu lösemi alt tipinin genetik temeli ve spesifik tedavisi hangisidir?",
       "options": [
         "A) t(9;22) BCR-ABL — imatinib",
-        "B) t(15;17) PML-RARα — all-trans retinoik asit (ATRA) + arsenik trioksid",
+        "B) t(15;17) PML-RARα — ATRA + arsenik trioksid",
         "C) t(8;21) AML1-ETO — standart kemoterapi",
         "D) inv(16) CBFB-MYH11 — standart kemoterapi",
         "E) t(8;14) c-MYC — yoğun kemoterapi"
       ],
-      "correct_answer": "B) t(15;17) PML-RARα — all-trans retinoik asit (ATRA) + arsenik trioksid",
+      "correct_answer": "B) t(15;17) PML-RARα — ATRA + arsenik trioksid",
       "explanation": "AML M3 (APL): t(15;17) → PML-RARα füzyon proteini → retinoik asit reseptörü bloke → diferansiyasyon durur. ATRA (vitamin A türevi) blokajı aşar → promiyelositler matürasyona zorlanır (\"diferansiyasyon tedavisi\"). DIC bu alt tipe spesifiktir (granüllerden prokoagülan salınımı). Faggot cells (çok sayıda Auer rod içeren hücre) patognomoniktir. Tedaviyle kür oranı %90+.",
       "story_hint": "💡 HİKAYE: Addison hastalığında adrenal korteks yıkılmıştır — kortizol↓, aldosteron↓, ACTH↑. ACTH artışı MSH benzeri etki ile hiperpigmentasyona yol açar (avuç içi kıvrımları, mukoza). Hipotansiyon + hiperkalemi + hiponatremi triadı. Akut kriz (Addisonian kriz) hayatı tehdit eder!"
     },
@@ -1302,11 +1302,11 @@
       "options": [
         "A) Meningiom — psammom cisimleri",
         "B) Oligodendrogliom — fried egg görünümü",
-        "C) Glioblastom multiforme (GBM, Grade 4) — psödopalizatlanma (tümör hücreleri nekroz çevresinde dizilim), mikrovasküler proliferasyon",
+        "C) Glioblastom multiforme (Grade 4) — psödopalizatlanma, mikrovasküler proliferasyon",
         "D) Ependimom — perivasküler psödorozetler",
         "E) Medulloblastom — Homer-Wright rozetleri"
       ],
-      "correct_answer": "C) Glioblastom multiforme (GBM, Grade 4) — psödopalizatlanma (tümör hücreleri nekroz çevresinde dizilim), mikrovasküler proliferasyon",
+      "correct_answer": "C) Glioblastom multiforme (Grade 4) — psödopalizatlanma, mikrovasküler proliferasyon",
       "explanation": "GBM en sık ve en agresif primer beyin tümörüdür. Halkasal kontrast tutulumu (periferik viable tümör + santral nekroz) tipiktir. Histopatoloji: psödopalizatlanma (nekroz çevresinde tümör hücrelerinin palçit dizilimi), mikrovasküler proliferasyon (glomeruloid vasküler yapılar). IDH-wildtype (primer GBM, yaşlılarda) prognoz çok kötü (medyan sağkalım ~15 ay). IDH-mutant (sekonder, genç) biraz daha iyi.",
       "story_hint": "💡 HİKAYE: Cushing'te kortizol fazlası vücudu dönüştürür — yüz ay gibi yuvarlaklaşır (moon facies), sırta yağ birikir (buffalo hump), karında mor çatlaklar (striae). En sık neden ekzojen steroid! Endojen en sık = hipofiz adenomu (Cushing hastalığı)."
     },
@@ -1315,12 +1315,12 @@
       "case": "**Meningiom**\n\n55 yaşında kadın, yavaş ilerleyen baş ağrısı ile başvuruyor. MRI'da falks serebri'ye yapışık, homojen kontrast tutan, ekstra-aksiyel kitle ve \"dural kuyruk\" işareti (dural tail sign) izleniyor. Kitle beyin parankimine invaze değil.\n\nEn olası tanı ve histopatolojik bulgusu hangisidir?",
       "options": [
         "A) Schwannom — Verocay cisimcikleri",
-        "B) Meningiom — menenkse hücrelerin girdap (whorled) paterni ve psammom cisimleri",
+        "B) Meningiom — girdap paterni ve psammom cisimleri",
         "C) Hemanjioblastom — stromal hücreler ve kapiller ağ",
         "D) Kraniyofaringiom — kalsifikasyon ve wet keratin",
         "E) Lenfoma — perivasküler infiltrasyon"
       ],
-      "correct_answer": "B) Meningiom — menenkse hücrelerin girdap (whorled) paterni ve psammom cisimleri",
+      "correct_answer": "B) Meningiom — girdap paterni ve psammom cisimleri",
       "explanation": "Meningiom en sık benign intrakranyal tümördür, araknoid cap hücrelerinden köken alır. Kadınlarda daha sık (östrojen/progesteron reseptörleri +). Ekstra-aksiyel (beyin dışı), yavaş büyüyen, dural tail sign klasik. Psammom cisimleri (konsantrik lameller kalsifikasyon) meningiom, papiller tiroid karsinomu, seröz over karsinomu ve mezotelyomada görülür.",
       "story_hint": "💡 HİKAYE: MEN sendromları aile içi tümör paketleridir. MEN1: 3P (Paratiroid + Pituiter + Pankreas). MEN2A: Medüller tiroid + Feokromositoma + Paratiroid. MEN2B: Medüller tiroid + Feokromositoma + Mukozal nöromalar. RET mutasyonu MEN2'nin anahtarı!"
     },
@@ -1329,12 +1329,12 @@
       "case": "**Alzheimer Hastalığı**\n\n75 yaşında kadın, 3 yıldır ilerleyici bellek kaybı ve kognitif bozulma ile getiriliyor. Otopsi beyninde kortekste yaygın senil plaklar ve nörofibriler yumaklar (neurofibrillary tangles) izleniyor.\n\nSenil plakların ve nörofibriler yumakların bileşenleri doğru olarak hangisinde verilmiştir?",
       "options": [
         "A) Plak: Tau proteini; Yumak: Amiloid-beta",
-        "B) Plak: Amiloid-beta peptid (Aβ42, APP'den derive); Yumak: Hiperfosforile Tau proteini",
+        "B) Plak: Amiloid-beta peptid; Yumak: Hiperfosforile Tau proteini",
         "C) Plak: Alfa-sinüklein; Yumak: Ubikuitin",
         "D) Plak: Prion proteini; Yumak: TDP-43",
         "E) Plak: Lewy cisimcikleri; Yumak: Amiloid-beta"
       ],
-      "correct_answer": "B) Plak: Amiloid-beta peptid (Aβ42, APP'den derive); Yumak: Hiperfosforile Tau proteini",
+      "correct_answer": "B) Plak: Amiloid-beta peptid; Yumak: Hiperfosforile Tau proteini",
       "explanation": "Alzheimer: (1) Senil (nöritik) plaklar = Aβ42 peptid birikimi (amiloid prekürsör proteinden β ve γ sekretaz ile kesilir). (2) Nörofibriler yumaklar = hiperfosforile Tau protein (mikrotübül stabilizasyonu bozulur). Presenilin 1 (14q, en sık erken başlangıçlı), Presenilin 2 (1q), APP (21q) mutasyonları → erken Alzheimer. Down sendromunda (trizomi 21) APP geni ekstra kopya → erken Alzheimer.",
       "story_hint": "💡 HİKAYE: Tip 1 DM'de T hücreleri beta adacıklarını yıkar — insülin sıfır! Anti-GAD antikorları tanıda yol gösterir. DKA (ketoasidoz) ile acile gelebilir. Tip 2'de ise insülin var ama etkisiz (direnç). Adacıklarda amiloid (amilin) birikimi Tip 2'nin patolojik imzası."
     },
@@ -1344,11 +1344,11 @@
       "options": [
         "A) Neokortikal nörofibriler yumaklar — temporal lob",
         "B) Huntingtin protein birikimi — kaudat nükleus",
-        "C) Substansia nigra pars kompaktadaki dopaminerjik nöron kaybı ve Lewy cisimcikleri (alfa-sinüklein birikimi)",
+        "C) Substansia nigra pars kompaktadaki dopaminerjik nöron kaybı ve Lewy cisimcikleri",
         "D) Anterior horn motor nöron dejenerasyonu — spinal kord",
         "E) Serebellar Purkinje hücre kaybı — serebellum"
       ],
-      "correct_answer": "C) Substansia nigra pars kompaktadaki dopaminerjik nöron kaybı ve Lewy cisimcikleri (alfa-sinüklein birikimi)",
+      "correct_answer": "C) Substansia nigra pars kompaktadaki dopaminerjik nöron kaybı ve Lewy cisimcikleri",
       "explanation": "Parkinson: substansia nigra pars kompakta'da dopaminerjik nöronlar dejenerasyona uğrar → nigrostriatal yolak bozulur → striatumda dopamin azalır. Lewy cisimcikleri: eozinofilik, yuvarlak, intrasitoplazmatik inklüzyonlar — alfa-sinüklein ana bileşendir. Tedavi: Levodopa/karbidopa (dopamin öncüsü). Lewy cisimcik demansı: kortikal Lewy cisimcikleri + demans + görsel halüsinasyonlar.",
       "story_hint": "💡 HİKAYE: GBM beynin en agresif tümörü — kelebek gibi corpus callosum'dan karşıya yayılır! Nekroz çevresinde pseudopalisading dizilim ve mikrovasküler proliferasyon tanıda kilit. MGMT metilasyonu temozolomide yanıtı öngörür."
     },
@@ -1357,12 +1357,12 @@
       "case": "**Osteosarkom**\n\n15 yaşında erkek, diz çevresinde ağrı ve şişlik ile başvuruyor. Röntgende distal femur metafizinde güneş ışığı (sunburst) paterni ve Codman üçgeni izleniyor. Biyopside malign osteoblastlar tarafından üretilen osteoid izleniyor.\n\nEn olası tanı ve predispozan faktör hangisidir?",
       "options": [
         "A) Ewing sarkomu — t(11;22), diafiz",
-        "B) Osteosarkom — metafizde, Rb ve p53 mutasyonu (Li-Fraumeni, herediter retinoblastom)",
+        "B) Osteosarkom — metafizde, Rb ve p53 mutasyonu",
         "C) Kondrosarkom — kıkırdak üretimi",
         "D) Dev hücreli tümör — epifiz, sabun köpüğü",
         "E) Fibrosarkom — herring-bone paterni"
       ],
-      "correct_answer": "B) Osteosarkom — metafizde, Rb ve p53 mutasyonu (Li-Fraumeni, herediter retinoblastom)",
+      "correct_answer": "B) Osteosarkom — metafizde, Rb ve p53 mutasyonu",
       "explanation": "Osteosarkom en sık primer malign kemik tümörüdür (çocuk/adölesanlarda). Metafiz (en sık distal femur, proksimal tibia). Tümör osteoid üretimi tanı koydurucudur. Predispozan: Paget hastalığı (yaşlılarda), retinoblastom (Rb kaybı), Li-Fraumeni (TP53), radyasyon. Sunburst paterni + Codman üçgeni (periost elevasyonu) klasik radyolojik bulgulardır. Ewing sarkomu diafizde, \"onion skin\" (soğan kabuğu) periost reaksiyonu gösterir.",
       "story_hint": "💡 HİKAYE: Meningiom meninkslerden doğar — MR'da dural tail (kuyruk) işareti ile tanınır. Psammom cisimcikleri histolojide parlar. Genellikle benign ama lokalizasyona göre semptom verir. Gebelikte büyüyebilir (östrojen reseptörü taşır)!"
     },
@@ -1386,11 +1386,11 @@
       "options": [
         "A) Tümör çapı",
         "B) Ulserasyon varlığı",
-        "C) Breslow kalınlığı (tümörün vertikal kalınlığı mm cinsinden)",
+        "C) Breslow kalınlığı",
         "D) Clark seviyesi",
         "E) Mitotik indeks"
       ],
-      "correct_answer": "C) Breslow kalınlığı (tümörün vertikal kalınlığı mm cinsinden)",
+      "correct_answer": "C) Breslow kalınlığı",
       "explanation": "ABCDE kriterleri: Asimetri, Border düzensizliği, Color çeşitliliği, Diameter >6mm, Evolving (değişen). En önemli prognostik faktör Breslow kalınlığıdır (mm). <1 mm → mükemmel prognoz, >4 mm → kötü. Clark seviyesi (anatomik invazyon derinliği) artık daha az kullanılır. BRAF V600E mutasyonu melanomaların ~%50'sinde bulunur → vemurafenib/dabrafenib hedefe yönelik tedavi.",
       "story_hint": "💡 HİKAYE: Osteosarkom gençlerin kemik kanseri — distal femurda en sık! Codman üçgeni (periost kabarması) ve sunburst paterni (güneş ışını) radyolojide alarm verir. Alkalin fosfataz yükselir. Neoadjuvan kemoterapi + cerrahi standart tedavi."
     },
@@ -1400,11 +1400,11 @@
       "options": [
         "A) Yavaş virüs — hava yoluyla",
         "B) Prion — vertikal geçiş",
-        "C) PrPSc (abnormal katlanan prion proteini) — normal PrPC'yi patolojik konformasyona dönüştürür; nükleik asit içermez",
+        "C) PrPSc — normal PrPC'yi patolojik konformasyona dönüştürür; nükleik asit içermez",
         "D) Otoimmün ensefalit — antinöronal antikorlar",
         "E) HIV — immünsüpresyon ilişkili"
       ],
-      "correct_answer": "C) PrPSc (abnormal katlanan prion proteini) — normal PrPC'yi patolojik konformasyona dönüştürür; nükleik asit içermez",
+      "correct_answer": "C) PrPSc — normal PrPC'yi patolojik konformasyona dönüştürür; nükleik asit içermez",
       "explanation": "Creutzfeldt-Jakob hastalığı (CJD): transmissibl spongiform ensefalopati. PrPSc (scrapie formu) normal PrPC'yi β-sheet yapısına dönüştürür → birikim → nöronal ölüm → spongiform değişiklikler (vakuolizasyon). Nükleik asit (DNA/RNA) içermez → immün yanıt oluşmaz, inflamasyon yok. Sporadic CJD (%85) en sık formdur. Variant CJD: \"deli dana hastalığı\" — BSE prionlarının kontamine et ile bulaşması.",
       "story_hint": "💡 HİKAYE: Ewing sarkomu çocuklarda diyafizi seven küçük yuvarlak mavi hücreli tümördür. t(11;22) translokasyonu = EWS-FLI1. Soğan zarı (onion peel) periost reaksiyonu ve CD99 (MIC2) pozitifliği tanıda kilit. Kemoterapi + radyoterapi iyi yanıt verir."
     }

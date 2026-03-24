@@ -136,13 +136,13 @@
         "id": "farma_cc_003",
         "case": "Soru:(Farmakoloji - Otonom Sistem) 70 yaşında erkek hasta, KOAH nedeniyle takip edilmektedir. Son poliklinik başvurusunda nefes darlığının arttığı görülmüş ve bronkodilatör tedavi düzenlenmiştir. Hasta aynı zamanda dar açılı glokom tanısı da taşımaktadır. Aşağıdaki bronkodilatörlerden hangisi bu hastada kontrendikedir?",
         "options": [
-          "A) Salbutamol (inhale beta-2 agonist)",
-          "B) İpratropium (inhale antikolinerjik)",
-          "C) Salmeterol (uzun etkili beta-2 agonist)",
-          "D) Budesonid (inhale kortikosteroid)",
-          "E) Montelukast (lökotrien reseptör antagonisti)"
+          "A) Salbutamol",
+          "B) İpratropium",
+          "C) Salmeterol",
+          "D) Budesonid",
+          "E) Montelukast"
         ],
-        "correct_answer": "B) İpratropium (inhale antikolinerjik)",
+        "correct_answer": "B) İpratropium",
         "explanation": "Dar açılı glokomda antikolinerjik ilaçlar (ipratropium dahil) kontrendikedir. Muskarinik blokaj sfinkter pupilla kasını gevşeterek pupil genişlemesine neden olur; bu da iridokorneal açıyı daha da daraltır ve aköz sıvı drenajını engeller — GİB kritik yükselir, akut glokom atağı tetiklenebilir. İnhale form olsa da göze sızabileceğinden dikkat edilmelidir. Diğer seçenekler dar açılı glokomda güvenlidir."
       },
       {
@@ -660,9 +660,9 @@
         "options": [
           "A) Siprofloksasin",
           "B) Doksisiklin",
-          "C) Nitrofurantoin (1. trimester)",
+          "C) Nitrofurantoin",
           "D) Amoksisilin-klavulanat",
-          "E) Trimetoprim-sülfametoksazol (3. trimester)"
+          "E) Trimetoprim-sülfametoksazol"
         ],
         "correct_answer": "D) Amoksisilin-klavulanat",
         "explanation": "Gebelikte siprofloksasin (florokinolon — kıkırdak gelişimi riski) ve doksisiklin (tetrasiklin — diş/kemik gelişimi bozukluğu) kontrendikedir. Nitrofurantoin 1. trimesterde bazı çalışmalarda nöral tüp defekti ile ilişkilendirilmiş; 3. trimesterde de hemolitik anemi riski nedeniyle kaçınılır. TMP-SMX 1. trimesterde folat antagonizması, 3. trimesterde kernikterus riski nedeniyle kontrendike. Amoksisilin-klavulanat (beta-laktam + beta-laktamaz inhibitörü) gebelikte güvenli kabul edilir ve E. coli idrar yolu enfeksiyonunda etkilidir."

@@ -273,13 +273,13 @@
       {
         "case": "35 yaşında erkek hasta, motosiklet kazası sonrası sağ kolunu hareket ettiremiyor. Muayenede omuz abduksiyonu, dirsek fleksiyonu ve ön kol supinasyonu yapamıyor. Kol iç rotasyonda adduksiyonda asılı duruyor. Bu hastada en olası lezyon yeri neresidir?",
         "options": [
-          "A) Brakial pleksus alt trunkusu (C8-T1)",
+          "A) Brakial pleksus alt trunkusu",
           "B) N. axillaris",
-          "C) Brakial pleksus üst trunkusu (C5-C6)",
+          "C) Brakial pleksus üst trunkusu",
           "D) N. musculocutaneus",
           "E) N. radialis"
         ],
-        "correct_answer": "C) Brakial pleksus üst trunkusu (C5-C6)",
+        "correct_answer": "C) Brakial pleksus üst trunkusu",
         "explanation": "Omuz abduksiyonu ve dış rotasyonu, dirsek fleksiyonu ve ön kol supinasyonunun kaybı Erb-Duchenne felcini (C5-C6 / üst trunkus lezyonu) gösterir. Kolun bahşiş pozisyonunda (waiter's tip) kalması patognomoniktir. Alt trunkus (C8-T1) lezyonu Klumpke felcidir ve el intrinsik kaslarını etkiler."
       }
     ]
@@ -567,13 +567,13 @@
       {
         "case": "55 yaşında erkek hasta göğüs ağrısı ile acile başvuruyor. EKG'de DII, DIII ve aVF derivasyonlarında ST elevasyonu saptanıyor. Hastada bradikardi ve 2. derece AV blok gelişiyor. Tıkanan koroner arter hangisidir?",
         "options": [
-          "A) Sol ön inen arter (LAD)",
-          "B) Sol sirkümfleks arter (Cx)",
-          "C) Sağ koroner arter (RCA)",
-          "D) Sol ana koroner arter (Left main)",
-          "E) Posterior inen arter (PDA)"
+          "A) Sol ön inen arter",
+          "B) Sol sirkümfleks arter",
+          "C) Sağ koroner arter",
+          "D) Sol ana koroner arter",
+          "E) Posterior inen arter"
         ],
-        "correct_answer": "C) Sağ koroner arter (RCA)",
+        "correct_answer": "C) Sağ koroner arter",
         "explanation": "DII, DIII, aVF derivasyonlarında ST elevasyonu inferior MI'yı gösterir. İnferior duvarı besleyen sağ koroner arter (RCA) tıkanmıştır. RCA ayrıca AV düğümü %85 olguda besler, bu nedenle inferior MI'da AV blok gelişmesi tipiktir. LAD tıkanıklığı anterior MI'ya, Cx tıkanıklığı ise lateral MI'ya neden olur."
       }
     ]
@@ -1276,13 +1276,13 @@
       {
         "case": "30 yaşında erkek hasta sabah uyandığında sağ yüz yarısını hareket ettiremediğini fark ediyor. Sağ göz kapağını kapatamıyor, sağ alında kırışıklık yapamıyor ve sağ nazolabial oluk silinmiş. Bu hastada en olası tanı nedir?",
         "options": [
-          "A) Sağ hemisfer inme (santral fasiyal paralizi)",
+          "A) Sağ hemisfer inme",
           "B) Trigeminal nevralji",
-          "C) Bell paralizisi (periferik fasiyal paralizi)",
+          "C) Bell paralizisi",
           "D) Akustik nöroma",
           "E) Ramsay Hunt sendromu"
         ],
-        "correct_answer": "C) Bell paralizisi (periferik fasiyal paralizi)",
+        "correct_answer": "C) Bell paralizisi",
         "explanation": "Sağ yüzün tamamının (alın dahil) etkilenmesi periferik CN VII lezyonunu gösterir. Bell paralizisi periferik fasiyal paralizinin en sık nedenidir (idiopatik, HSV-1 ile ilişkili). Santral lezyonda alın korunur (bilateral kortikal innervasyon). Ramsay Hunt sendromunda kulak çevresinde veziküller ve ağrı olması beklenir (VZV reaktivasyonu)."
       },
       {
@@ -1678,11 +1678,11 @@
         "options": [
           "A) A. cerebri anterior",
           "B) A. communicans posterior",
-          "C) A. cerebri media (lentikulostriat dallar)",
+          "C) A. cerebri media",
           "D) A. cerebri posterior",
           "E) A. choroidea anterior"
         ],
-        "correct_answer": "C) A. cerebri media (lentikulostriat dallar)",
+        "correct_answer": "C) A. cerebri media",
         "explanation": "Hipertansif intraserebral kanama en sık bazal ganglion/capsula interna bölgesinde görülür. Bu bölgenin kanlanması A. cerebri media'nın lentikulostriat dalları (perforan arterler) tarafından sağlanır. Bu arterler 'hemorajik inme arterleri' olarak da bilinir. Capsula interna lezyonu kontralateral hemipleji yapar."
       },
       {
@@ -1933,8 +1933,8 @@
       {
         "case": "35 yaşında kadın hasta paroksismal hipertansiyon atakları, çarpıntı, baş ağrısı ve terleme ile başvuruyor. 24 saatlik idrarda VMA (vanilmandelik asit) yüksek bulunuyor. BT'de sol böbreküstü bezinde 4 cm kitle saptanıyor. En olası tanı nedir?",
         "options": [
-          "A) Cushing sendromu (adrenal adenom)",
-          "B) Conn sendromu (aldosteronoma)",
+          "A) Cushing sendromu",
+          "B) Conn sendromu",
           "C) Feokromositoma",
           "D) Adrenokortikal karsinom",
           "E) Nöroblastom"
@@ -1946,12 +1946,12 @@
         "case": "62 yaşında erkek hasta halsizlik, makrositik anemi ve periferik yaymada hipersegmente nötrofiller saptanıyor. Serum vitamin B12 düzeyi çok düşük. Bu hastada intrinsik faktör eksikliğinin en olası nedeni nedir?",
         "options": [
           "A) Terminal ileum rezeksiyonu",
-          "B) Otoimmün atrofik gastrit (pernisiyöz anemi)",
+          "B) Otoimmün atrofik gastrit",
           "C) Pankreas yetmezliği",
           "D) Çölyak hastalığı",
           "E) Helicobacter pylori enfeksiyonu"
         ],
-        "correct_answer": "B) Otoimmün atrofik gastrit (pernisiyöz anemi)",
+        "correct_answer": "B) Otoimmün atrofik gastrit",
         "explanation": "B12 eksikliği, makrositik anemi ve hipersegmente nötrofiller megaloblastik anemiyi gösterir. İntrinsik faktör (IF) eksikliğinin en sık nedeni otoimmün atrofik gastrit (pernisiyöz anemi)dir. Parietal hücrelere karşı anti-parietal hücre antikorları ve anti-IF antikorları üretilir. IF olmadan terminal ileumda B12 emilimi olmaz."
       }
     ]
@@ -2014,7 +2014,7 @@
       },
       {
         "id": "anat_092",
-        "question": "Hesselbach üçgeninin sınırları nelerdir? (Direkt kasık fıtığı bölgesi)",
+        "question": "Hesselbach üçgeninin sınırları nelerdir?",
         "answer": "M. rectus abdominis dış kenarı, Lig. inguinale ve [[A. v. epigastrica inferior]]",
         "explanation": "Hesselbach üçgeni direkt (mediyal) inguinal fıtığın çıktığı bölgedir. Sınırları: medial (M. rectus abdominis lateral kenarı), inferior (lig. inguinale), lateral (A/V epigastrica inferior). Direkt fıtık Hesselbach üçgeninden çıkar ve A. epigastrica inferior'un MEDİALİNDEN geçer. İndirekt fıtık ise A. epigastrica inferior'un LATERALİNDEN (iç inguinal halkadan) çıkar ve spermatik kord ile birlikte inguinal kanaldan geçer.",
         "difficulty": "Orta",

@@ -422,12 +422,12 @@
         "case": "5 yaşında bir çocukta bilateral retinoblastom saptanıyor. Ailesinde de retinoblastom öyküsü var. Bu durumun genetik açıklaması nedir?",
         "options": [
           "Tek somatik RB mutasyonu yeterlidir",
-          "Germline RB mutasyonu + ikinci somatik mutasyon (Knudson iki vuruş hipotezi)",
+          "Germline RB mutasyonu + ikinci somatik mutasyon",
           "RAS onkogeninin aktivasyonu",
           "p53 kaybı",
           "BRCA1 germline mutasyonu"
         ],
-        "correct_answer": "Germline RB mutasyonu + ikinci somatik mutasyon (Knudson iki vuruş hipotezi)",
+        "correct_answer": "Germline RB mutasyonu + ikinci somatik mutasyon",
         "explanation": "Herediter retinoblastomada hasta zaten bir mutant RB aleli ile doğar (germline). Retina hücrelerinden birinde ikinci RB alelinin somatik mutasyonu olunca tümör gelişir. Bu nedenle bilateral, erken yaşta olur. Sporadik vakada her iki vuruş da somatiktir; unilateral ve geç yaşta görülür.",
         "story_hint": "💡 HİKAYE: Bilateral retinoblastom + aile öyküsü = germline RB1 mutasyonu. Bebek doğduğunda her hücresinde bir RB alleli zaten bozuk (birinci vuruş). Retina hücresinde ikinci allel de bozulunca (ikinci vuruş) tümör başlar. Knudson iki vuruş!",
         "id": "cc-path-mod-006-001"

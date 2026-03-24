@@ -231,13 +231,13 @@
         "id": "cc-anat-b3-004",
         "case": "30 yaşında erkek hasta, sağ kulak ağrısı şikayetiyle başvuruyor. Otoskopik muayenede dış kulak yoluna pamuklu çubukla girildiğinde şiddetli öksürük refleksi tetikleniyor. Bu refleksi tetikleyen sinir hangisidir?",
         "options": [
-          "A) N. trigeminus (V3)",
-          "B) N. facialis (VII)",
-          "C) N. glossopharyngeus (IX)",
-          "D) N. vagus (X) — r. auricularis (Arnold siniri)",
-          "E) N. vestibulocochlearis (VIII)"
+          "A) N. trigeminus",
+          "B) N. facialis",
+          "C) N. glossopharyngeus",
+          "D) N. vagus",
+          "E) N. vestibulocochlearis"
         ],
-        "correct_answer": "D) N. vagus (X) — r. auricularis (Arnold siniri)",
+        "correct_answer": "D) N. vagus",
         "explanation": "N. vagus'un r. auricularis dalı (Arnold siniri) dış kulak yolu ve timpanik membranın dış yüzeyini innerve eder. Bu dalın stimülasyonu vagal refleks yoluyla öksürük refleksini (Arnold refleksi) tetikleyebilir. Bu klinik bulgu TUS'ta kranial sinir soruları içinde sorulabilir."
       }
     ]
@@ -362,13 +362,13 @@
         "id": "cc-anat-b3-005",
         "case": "60 yaşında hipertansif erkek hastada supraventriküler taşikardi atağı gelişiyor. Acil serviste karotid sinüs masajı uygulanarak kalp hızı düşürülüyor. Bu manevranın etki mekanizmasında afferent sinyalleri taşıyan sinir hangisidir?",
         "options": [
-          "A) N. vagus (CN X)",
-          "B) N. glossopharyngeus (CN IX) — Hering siniri",
+          "A) N. vagus",
+          "B) N. glossopharyngeus",
           "C) N. phrenicus",
-          "D) N. accessorius (CN XI)",
-          "E) N. hypoglossus (CN XII)"
+          "D) N. accessorius",
+          "E) N. hypoglossus"
         ],
-        "correct_answer": "B) N. glossopharyngeus (CN IX) — Hering siniri",
+        "correct_answer": "B) N. glossopharyngeus",
         "explanation": "Karotid sinüs baroreseptörlerinden afferent sinyaller CN IX'un dalı olan Hering siniri ile nucleus tractus solitarius'a taşınır. Buradan efferent vagal tonus artışı sağlanarak kalp hızı düşürülür. Afferent yol CN IX, efferent yol CN X üzerinden çalışır."
       }
     ]
@@ -468,7 +468,7 @@
         "options": [
           "A) A. cerebri media",
           "B) A. meningea media",
-          "C) Köprü venleri (bridging veins)",
+          "C) Köprü venleri",
           "D) A. cerebri anterior",
           "E) A. cerebri posterior"
         ],
@@ -934,13 +934,13 @@
         "id": "cc-anat-b3-014",
         "case": "45 yaşında kadın hastada EKG'de birinci derece AV blok saptanıyor. AV nod'un kanlanmasını sağlayan arter en sık hangi koroner arterden kaynaklanır?",
         "options": [
-          "A) Sol ön inen arter (LAD)",
-          "B) Sol sirkumfleks arter (LCx)",
-          "C) Sağ koroner arter (RCA)",
-          "D) Sol ana koroner arter (LMCA)",
-          "E) Posterior inen arter (PDA) — sol dominant"
+          "A) Sol ön inen arter",
+          "B) Sol sirkumfleks arter",
+          "C) Sağ koroner arter",
+          "D) Sol ana koroner arter",
+          "E) Posterior inen arter"
         ],
-        "correct_answer": "C) Sağ koroner arter (RCA)",
+        "correct_answer": "C) Sağ koroner arter",
         "explanation": "AV nod'un kanlanması %80 oranında sağ koroner arterden (RCA) sağlanır (sağ dominant dolaşım). Sağ koroner arter tıkanıklığında AV blok gelişme riski yüksektir. %20 oranında sol sirkumfleks arter (LCx) AV nod'u besler (sol dominant dolaşım)."
       }
     ]
@@ -1049,12 +1049,12 @@
         "options": [
           "A) Ductus cysticus",
           "B) Ductus hepaticus communis",
-          "C) Ductus choledochus (ductus biliaris communis)",
-          "D) Ductus pancreaticus (Wirsung kanalı)",
+          "C) Ductus choledochus",
+          "D) Ductus pancreaticus",
           "E) Ductus hepaticus dexter"
         ],
-        "correct_answer": "C) Ductus choledochus (ductus biliaris communis)",
-        "explanation": "Pankreas başı tümörü, intrapankreatik ductus choledochus'u sıkıştırarak obstrüktif sarılığa neden olur. Safra kesesi taşı olmadığı için safra akışının önlenmesiyle safra kesesi gergin ve palpabl hale gelir (Courvoisier belirtisi). Bu tablo pankreas başı kanseri için patognomoniktir."
+        "correct_answer": "C) Ductus choledochus",
+        "explanation": "Pankreas başı tümörü, intrapankreatik ductus choledochus'u (ductus biliaris communis) sıkıştırarak obstrüktif sarılığa neden olur. Safra kesesi taşı olmadığı için safra akışının önlenmesiyle safra kesesi gergin ve palpabl hale gelir (Courvoisier belirtisi). Bu tablo pankreas başı kanseri için patognomoniktir. D seçeneği olan ductus pancreaticus (Wirsung kanalı) ise pankreas salgısını taşır."
       },
       {
         "id": "cc-anat-b3-016",

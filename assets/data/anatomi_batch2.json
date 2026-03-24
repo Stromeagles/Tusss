@@ -98,11 +98,11 @@
         "options": [
           "A) Sağ venöz açı",
           "B) Sol venöz açı",
-          "C) Cisterna chyli (L1-L2)",
+          "C) Cisterna chyli",
           "D) Mediastinum posterius",
           "E) Arcus aortae"
         ],
-        "correct_answer": "C) Cisterna chyli (L1-L2)",
+        "correct_answer": "C) Cisterna chyli",
         "explanation": "Ductus thoracicus cisterna chyli'den (L1-L2 seviyesi) başlar, aortik hiatustan geçerek posterior mediastinumda seyreder ve sol venöz açıya (angulus venosus sinister) açılır. Yaralanması şilotoraks ile sonuçlanabilir."
       }
     ]
@@ -567,7 +567,7 @@
       },
       {
         "id": "anat_163",
-        "question": "M. levator palpabraz superior kasının siniri hangisidir? (Kapak kalkması)",
+        "question": "M. levator palpabraz superior kasının siniri hangisidir?",
         "answer": "[[Nervus oculomotorius]] ([[CN III]])",
         "explanation": "M. levator palpebrae superioris üst göz kapağını kaldıran kastır ve n. oculomotorius (CN III) tarafından innerve edilir. CN III felcinde pitozis (kapak düşüklüğü), dışa-aşağı bakış (m. rectus lateralis ve m. obliquus superior dominant) ve midriyazis görülür.",
         "difficulty": "Orta",
@@ -659,13 +659,13 @@
         "id": "cc-anat-b2-007",
         "case": "45 yaşında kadın hasta sol gözde kapak düşüklüğü, gözün dışa-aşağı kayması ve pupil dilatasyonu ile başvuruyor. Hangi kranial sinir felci en olası tanıdır?",
         "options": [
-          "A) N. trochlearis (CN IV)",
-          "B) N. abducens (CN VI)",
-          "C) N. oculomotorius (CN III)",
-          "D) N. opticus (CN II)",
-          "E) N. trigeminus (CN V)"
+          "A) N. trochlearis",
+          "B) N. abducens",
+          "C) N. oculomotorius",
+          "D) N. opticus",
+          "E) N. trigeminus"
         ],
-        "correct_answer": "C) N. oculomotorius (CN III)",
+        "correct_answer": "C) N. oculomotorius",
         "explanation": "Pitozis (kapak düşüklüğü), gözün dışa-aşağı kayması (m. rectus lateralis ve m. obliquus superior'un karşılıksız kalması) ve midriyazis (pupil dilatasyonu) CN III felcinin klasik triadıdır. Posterior komünikan arter anevrizması önemli bir nedendir."
       },
       {
@@ -831,12 +831,12 @@
         "case": "25 yaşında futbolcu ani yön değiştirme sırasında sağ dizinde şiddetli ağrı hissediyor. MR'da medial menisküs yırtığı, medial kollateral ligament yırtığı ve ön çapraz bağ yırtığı saptanıyor. Bu klinik tablonun adı aşağıdakilerden hangisidir?",
         "options": [
           "A) Posterior drawer sendromu",
-          "B) Unhappy triad (Mutsuz triad / O'Donoghue triadi)",
+          "B) Unhappy triad",
           "C) Baker kist rüptürü",
           "D) Osgood-Schlatter hastalığı",
           "E) Pellegrini-Stieda sendromu"
         ],
-        "correct_answer": "B) Unhappy triad (Mutsuz triad / O'Donoghue triadi)",
+        "correct_answer": "B) Unhappy triad",
         "explanation": "Medial menisküs, MCL ve ACL'nin birlikte yırtılması 'unhappy triad' (mutsuz triad) olarak adlandırılır. Genellikle dizde valgus stres ile birlikte rotasyon kuvveti etkisiyle oluşur. Medial menisküsün MCL'ye yapışık olması bu kombinasyonu kolaylaştırır."
       },
       {

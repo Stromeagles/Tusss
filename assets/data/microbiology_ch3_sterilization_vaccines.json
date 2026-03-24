@@ -118,14 +118,14 @@
       {
         "case": "Daha önce hiç aşılanmamış bir çocukta 'Göbek Bağının Geç Düşmesi' ve tekrarlayan enfeksiyonlar görülüyorsa, hangi immün defekt düşünülmelidir?",
         "options": [
-          "A) NADPH Oksidaz eksikliği (Kronik Granülomatöz Hastalık)",
-          "B) Lökosit Adezyon Defekti (LAD)",
+          "A) NADPH Oksidaz eksikliği",
+          "B) Lökosit Adezyon Defekti",
           "C) Chédiak-Higashi Sendromu",
           "D) C3 Kompleman eksikliği",
-          "E) Hiper-IgE Sendromu (Job Sendromu)"
+          "E) Hiper-IgE Sendromu"
         ],
-        "correct_answer": "B) Lökosit Adezyon Defekti (LAD)",
-        "explanation": "PROFESÖR NOTU: Lökosit Adezyon Defekti (LAD), integrin beta-2 (CD18) eksikliği nedeniyle nötrofillerin damar dışına çıkamadığı bir hastalıktır. \n\n🎓 HOCA ÖZETİ:\n- Tipik Bulgu: 1) Göbek bağının geç düşmesi (>3 hafta). 2) İrin (püy) oluşmayan soğuk enfeksiyonlar. 3) Kanda aşırı lökositoz (çünkü nötrofiller kanda hapsolur).\n- Mnemonic: L-AD = L-ökositlerin A-dam gibi D-ışarı çıkamaması.",
+        "correct_answer": "B) Lökosit Adezyon Defekti",
+        "explanation": "PROFESÖR NOTU: Lökosit Adezyon Defekti (LAD), integrin beta-2 (CD18) eksikliği nedeniyle nötrofillerin damar dışına çıkamadığı bir hastalıktır. \n\n🎓 HOCA ÖZETİ:\n- Tipik Bulgu: 1) Göbek bağının geç düşmesi (>3 hafta). 2) İrin (püy) oluşmayan soğuk enfeksiyonlar. 3) Kanda aşırı lökositoz (çünkü nötrofiller kanda hapsolur).\n- Mnemonic: L-AD = L-ökositlerin A-dam gibi D-ışarı çıkamaması.\n- NADPH Oksidaz eksikliği = Kronik Granülomatöz Hastalık; Hiper-IgE Sendromu = Job Sendromu.",
         "id": "cc-micro-ch3-002-001"
       }
     ]

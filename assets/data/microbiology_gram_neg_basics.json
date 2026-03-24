@@ -28,14 +28,14 @@
       {
         "case": "20 yaşında üniversite öğrencisi, ani başlayan ateş, baş ağrısı ve vücutta peteşiyal döküntülerle acile başvuruyor. Ense sertliği saptanıyor.",
         "options": [
-          "A) Meningokokal Menenjit (N. meningitidis)",
-          "B) Pnömokokal Menenjit (S. pneumoniae)",
-          "C) Viral (Aseptik) Menenjit",
-          "D) Listeriyoz (L. monocytogenes)",
+          "A) Meningokokal Menenjit",
+          "B) Pnömokokal Menenjit",
+          "C) Viral Menenjit",
+          "D) Listeriyoz",
           "E) Waterhouse-Friderichsen Sendromu"
         ],
-        "correct_answer": "A) Meningokokal Menenjit (N. meningitidis)",
-        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Ani başlayan ateş, ense sertliği ve özellikle peteşiyal/purpurik döküntüler (diffüz damar hasarı) Neisseria meningitidis sepsisi ve menenjiti için patognomoniktir. \n\n🎓 HOCA ÖZETİ:\n- Virülans: Polisakkarit kapsül (fagositozu engeller) ve LOS (LPS benzeri endotoksin - şoktan sorumlu).\n- Laboratuvar: Gram negatif, kahve çekirdeği şeklinde diplokoklar.\n- Bulaş: Nazofaringeal taşıyıcılardan damlacık yoluyla.\n- Komplikasyon: Sürrenal yetmezlik ile giden Waterhouse-Friderichsen sendromuna dikkat!",
+        "correct_answer": "A) Meningokokal Menenjit",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Ani başlayan ateş, ense sertliği ve özellikle peteşiyal/purpurik döküntüler (diffüz damar hasarı) Neisseria meningitidis (meningokok) sepsisi ve menenjiti için patognomoniktir. \n\n🎓 HOCA ÖZETİ:\n- Virülans: Polisakkarit kapsül (fagositozu engeller) ve LOS (LPS benzeri endotoksin - şoktan sorumlu).\n- Laboratuvar: Gram negatif, kahve çekirdeği şeklinde diplokoklar.\n- Bulaş: Nazofaringeal taşıyıcılardan damlacık yoluyla.\n- Pnömokokal Menenjit (S. pneumoniae) = yaşlılarda ve splenektomililde daha sık.\n- Komplikasyon: Sürrenal yetmezlik ile giden Waterhouse-Friderichsen sendromuna dikkat!",
         "id": "cc-micro-gneg-basic-001-001"
       }
     ]
@@ -69,14 +69,14 @@
       {
         "case": "7 yaşında bir çocuk, kanlı ishal sonrası halsizlik ve idrar miktarında azalma ile getiriliyor. Laboratuvarda anemi ve trombositopeni saptanıyor.",
         "options": [
-          "A) HÜS (Hemolitik Üremik Sendrom - EHEC ilişkili)",
-          "B) TTP (Trombotik Trompositopenik Purpura)",
+          "A) HÜS (Hemolitik Üremik Sendrom)",
+          "B) TTP (Trombotik Trombositopenik Purpura)",
           "C) DİC (Disseminize İntravasküler Koagülasyon)",
-          "D) İTP (İmmün Trompositopenik Purpura)",
+          "D) İTP (İmmün Trombositopenik Purpura)",
           "E) Henoch-Schönlein Purpurası"
         ],
-        "correct_answer": "A) HÜS (Hemolitik Üremik Sendrom - EHEC ilişkili)",
-        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Kanlı ishal (hemorajik kolit) sonrası gelişen 'HÜS Triadı'nı unutma: 1) Mikroanjiyopatik hemolitik anemi (Schistositler), 2) Trombositopeni, 3) Akut böbrek yetmezliği.\n\n🎓 HOCA ÖZETİ:\n- Etken: E. coli O157:H7 (EHEC) veya Shigella dysenteriae tip 1.\n- Mekanizma: Shiga (veya Shiga-like) toksini damar endoteline hasar verir, mikrotrombüsler oluşur.\n- Uyarı: Çocuklarda en sık akut böbrek yetmezliği nedenlerinden biridir. Antibiyotik kullanımı toksin salınımını artırabileceği için risklidir.",
+        "correct_answer": "A) HÜS (Hemolitik Üremik Sendrom)",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Kanlı ishal (hemorajik kolit) sonrası gelişen 'HÜS Triadı'nı unutma: 1) Mikroanjiyopatik hemolitik anemi (Schistositler), 2) Trombositopeni, 3) Akut böbrek yetmezliği.\n\n🎓 HOCA ÖZETİ:\n- Etken: E. coli O157:H7 (EHEC) veya Shigella dysenteriae tip 1.\n- Mekanizma: Shiga (veya Shiga-like) toksini damar endoteline hasar verir, mikrotrombüsler oluşur.\n- EHEC = Enterohemorajik E. coli ilişkilidir.\n- Uyarı: Çocuklarda en sık akut böbrek yetmezliği nedenlerinden biridir. Antibiyotik kullanımı toksin salınımını artırabileceği için risklidir.",
         "id": "cc-micro-gneg-basic-002-001"
       }
     ]

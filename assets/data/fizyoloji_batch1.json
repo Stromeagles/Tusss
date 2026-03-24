@@ -168,12 +168,12 @@
         "case": "Soru: (Fizyoloji — Kardiyovasküler) Bir hastada aort kapağı yetmezliği saptanmaktadır. Basınç-volüm döngüsü incelendiğinde aşağıdaki değişikliklerden hangisi beklenir?",
         "options": [
           "A) EDV azalması ve ESV artması",
-          "B) EDV artması ve SV artması (ekzantrik hipertrofi)",
+          "B) EDV artması ve SV artması",
           "C) EDV normal, afterload artışı nedeniyle SV azalması",
           "D) İzovolümetrik relaksasyon süresinin uzaması",
           "E) S4 gallopun baskın bulgu olması"
         ],
-        "correct_answer": "B) EDV artması ve SV artması (ekzantrik hipertrofi)",
+        "correct_answer": "B) EDV artması ve SV artması",
         "explanation": "Aort yetersizliğinde diyastolde kan aortadan sol ventriküle geri kaçar → volüm yüklenmesi → EDV artar (preload↑). Frank-Starling mekanizmasıyla SV artar (regürjitan volümü karşılamak için). Kronik süreçte ekzantrik hipertrofi gelişir (sarkomerler seri dizilir, lümen genişler, duvar kalınlığı normale yakın). Bu nedenle geniş nabız basıncı, Corrigan nabzı görülür."
       }
     ]
@@ -285,13 +285,13 @@
         "id": "fizyo_cc_006",
         "case": "Soru: (Fizyoloji — Solunum) Bir hastada solunum sayısı 28/dk, PaCO2: 28 mmHg, pH: 7.52, HCO3-: 20 mEq/L bulunmuştur. Bu tablonun en olası nedeni nedir?",
         "options": [
-          "A) Metabolik alkaloz (Kompanse)",
-          "B) Respiratuar alkaloz (Kompanse — kronik)",
-          "C) Respiratuar alkaloz (Akut, kompansasyonsuz)",
-          "D) Metabolik asidoz (Respiratuar kompansasyon ile)",
+          "A) Metabolik alkaloz",
+          "B) Respiratuar alkaloz, kronik kompanse",
+          "C) Respiratuar alkaloz, akut",
+          "D) Metabolik asidoz",
           "E) Miks asit-baz bozukluğu"
         ],
-        "correct_answer": "B) Respiratuar alkaloz (Kompanse — kronik)",
+        "correct_answer": "B) Respiratuar alkaloz, kronik kompanse",
         "explanation": "pH 7.52 → Alkaloz. PaCO2 28 mmHg → Düşük → Respiratuar alkaloz (primer). HCO3- 20 mEq/L → Düşük → Kompansasyon (böbrek HCO3 atıyor). Kronik respiratuar alkaloz beklenen HCO3- düşüşü: ΔHCO3- = 5 × (40-28)/10 = 5 × 1.2 = 6 → beklenen HCO3- = 24-6 = 18-20 mEq/L. HCO3- = 20 → beklenen aralıkta → kompanse kronik respiratuar alkaloz. Akut olguda HCO3- bu kadar düşmez."
       },
       {
@@ -338,12 +338,12 @@
         "case": "Soru: (Fizyoloji — Solunum) Bir sağlıklı kişide spirometri yapılmaktadır. FVC: 4.8 L, FEV1: 3.9 L ölçülmüştür. Egzersiz testinde VO2max: 45 mL/kg/dk saptanmıştır. Bu kişi yüksek irtifaya (4000 m) çıktığında akut dönemde beklenen fizyolojik değişiklikler nelerdir?",
         "options": [
           "A) PaO2↑, PaCO2↑, pH↓, HCO3-↑",
-          "B) PaO2↓, PaCO2↓, pH↑, HCO3- değişmez (akut)",
-          "C) PaO2↓, PaCO2↑, pH↓, HCO3-↑ (kompansasyon)",
+          "B) PaO2↓, PaCO2↓, pH↑, HCO3- değişmez",
+          "C) PaO2↓, PaCO2↑, pH↓, HCO3-↑",
           "D) PaO2 değişmez, sadece SaO2 düşer",
           "E) PaO2↓, PaCO2 değişmez, pH değişmez"
         ],
-        "correct_answer": "B) PaO2↓, PaCO2↓, pH↑, HCO3- değişmez (akut)",
+        "correct_answer": "B) PaO2↓, PaCO2↓, pH↑, HCO3- değişmez",
         "explanation": "Yüksek irtifada PB düşer → PAO2 düşer → PaO2 düşer → hipoksik ventilasyonstimulan → hiperventilasyon → PaCO2 düşer → respiratuar alkaloz (pH↑). Akut dönemde HCO3- henüz değişmez (renal kompansasyon günler alır). Kronik adaptasyon: Böbrek HCO3- atar → pH normalize olur. Ayrıca eritropoetin↑ → eritropoez↑ → polisitemi; 2,3-DPG↑ → Hb O2 affinitesi↓ → O2 daha kolay bırakılır."
       }
     ]
@@ -457,9 +457,9 @@
         "options": [
           "A) Santral diabetes insipidus",
           "B) Nefrojenik diabetes insipidus",
-          "C) Primer polidipsi (psikojenik)",
+          "C) Primer polidipsi",
           "D) SIADH",
-          "E) Ozmotik diürez (kontrolsüz DM)"
+          "E) Ozmotik diürez"
         ],
         "correct_answer": "B) Nefrojenik diabetes insipidus",
         "explanation": "Santral DI'da su kısıtlaması testi sonrası desmopressin verilince idrar konsantre olur (ADH yoktu, dışarıdan verildi). Nefrojenik DI'da böbrek ADH'ye yanıt vermez → desmopressin etkisiz. Primer polidipside su kısıtlamasıyla idrar ozmolalitesi yükselir (ADH sistemi normal, böbrek çalışıyor). Dilüe serum (hiponatremi) beklenmez bu hastada çünkü böbrek su tutamıyor → hipernatremi eğilimi."
@@ -469,12 +469,12 @@
         "case": "Soru: (Fizyoloji — Böbrek) 60 yaşında erkek hasta hipertansiyon ve hipokalemi nedeniyle araştırılıyor. Serum Na: 148 mEq/L, K: 2.8 mEq/L, bikarbonat: 30 mEq/L, idrar aldosteron düzeyi yüksek, plazma renin aktivitesi düşük saptanıyor. Tanıya götüren patofizyoloji nedir?",
         "options": [
           "A) Renin üreten tümör → sekonder hiperaldosteronizm",
-          "B) Adrenal adenom → primer hiperaldosteronizm (Conn sendromu)",
+          "B) Adrenal adenom → primer hiperaldosteronizm",
           "C) Renovasküler HT → sekonder aldosteronizm",
           "D) Cushing sendromu → kortizol fazlalığı",
           "E) Bartter sendromu → Na-K-2Cl bozukluğu"
         ],
-        "correct_answer": "B) Adrenal adenom → primer hiperaldosteronizm (Conn sendromu)",
+        "correct_answer": "B) Adrenal adenom → primer hiperaldosteronizm",
         "explanation": "Primer hiperaldosteronizm (Conn): Adrenal kaynaklı aldosteron fazlalığı. Aldosteron distal tübülde Na⁺ tutar (hipernatremi/HT), K⁺ ve H⁺ atar (hipokalemi + metabolik alkaloz). Renin yüksek aldosteron tarafından baskılanır (düşük PRA = primer). Sekonder hiperaldosteronizmde (renal arter stenozu, renin üreten tümör) renin yüksektir. Tedavi: Spironolakton (aldosteron antagonisti) veya cerrahi."
       },
       {
@@ -507,13 +507,13 @@
         "id": "fizyo_cc_015",
         "case": "Soru: (Fizyoloji — Böbrek) Bir hastada kreatinin kliransi 30 mL/dk, serum kreatinin: 2.8 mg/dL, BUN: 45 mg/dL, idrar ozmolalitesi: 290 mOsm/kg, fraksiyonel Na atılımı (FENa): %2.5 saptanıyor. Bu bulgular hangi akut böbrek hasarı (AKI) kategorisiyle en uyumludur?",
         "options": [
-          "A) Prerenal AKI (FENa < %1, konsantre idrar)",
-          "B) İntrarenal AKI — akut tübüler nekroz (FENa > %2, dilüe idrar)",
+          "A) Prerenal AKI",
+          "B) İntrarenal AKI — akut tübüler nekroz",
           "C) Postrenal AKI — obstrüktif üropati",
           "D) Glomerülonefrit — nefritik sendrom",
           "E) Nefrotik sendrom — hipoalbüminemi"
         ],
-        "correct_answer": "B) İntrarenal AKI — akut tübüler nekroz (FENa > %2, dilüe idrar)",
+        "correct_answer": "B) İntrarenal AKI — akut tübüler nekroz",
         "explanation": "FENa > %2 (burada %2.5) + idrarda dilüsyon (ozmolalite 290 mOsm/kg ≈ izoozmotik): Tübüler fonksiyon bozulmuş. Tübüller Na tutamıyor, idraru konsantre edemiyor → ATN (akut tübüler nekroz). Prerenal AKI'da: FENa < %1, idrar ozmolalitesi > 500 mOsm/kg (tübüller çalışıyor ama glomerül yetersiz perfüze). Postrenal AKI'da obstrüksiyon bulguları ve US ile tanı. Glomerülonefrit hematüri+proteinüri ile seyreder."
       }
     ]

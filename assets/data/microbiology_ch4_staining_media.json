@@ -116,14 +116,14 @@
       {
         "case": "Boğmaca şüphesiyle alınan nazofaringeal sürüntü örneği hangi özel besiyerine ekilmelidir?",
         "options": [
-          "A) Löwenstein-Jensen (Tüberküloz)",
-          "B) Thayer-Martin (Neisseria)",
-          "C) Bordet-Gengau (Boğmaca)",
-          "D) TCBS Agar (Vibrio)",
-          "E) Löffler Besiyeri (Difteri)"
+          "A) Löwenstein-Jensen",
+          "B) Thayer-Martin",
+          "C) Bordet-Gengau",
+          "D) TCBS Agar",
+          "E) Löffler Besiyeri"
         ],
-        "correct_answer": "C) Bordet-Gengau (Boğmaca)",
-        "explanation": "PROFESÖR NOTU: Bordetella pertussis (Boğmaca) üretmek için Bordet-Gengau (patates-gliserin-kanlı) veya Regan-Lowe (kömürlü) besiyerleri kullanılır. \n\n🎓 HOCA ÖZETİ:\n- Bakteri bu besiyerlerinde 'cıva damlası' (mercury drops) veya 'inci tanesi' gibi parlak koloniler oluşturur.\n- Nazofaringeal sürüntü en iyi örnektir.\n- Günümüzde Regan-Lowe, Bordet-Gengau'dan daha sık tercih edilmektedir.",
+        "correct_answer": "C) Bordet-Gengau",
+        "explanation": "PROFESÖR NOTU: Bordetella pertussis (Boğmaca) üretmek için Bordet-Gengau (patates-gliserin-kanlı) veya Regan-Lowe (kömürlü) besiyerleri kullanılır. \n\n🎓 HOCA ÖZETİ:\n- Bakteri bu besiyerlerinde 'cıva damlası' (mercury drops) veya 'inci tanesi' gibi parlak koloniler oluşturur.\n- Nazofaringeal sürüntü en iyi örnektir.\n- Günümüzde Regan-Lowe, Bordet-Gengau'dan daha sık tercih edilmektedir.\n- Diğer besiyerleri: Löwenstein-Jensen = Tüberküloz; Thayer-Martin = Neisseria; TCBS Agar = Vibrio; Löffler Besiyeri = Difteri.",
         "id": "cc-micro-ch4-002-001"
       }
     ]

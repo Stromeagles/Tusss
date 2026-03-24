@@ -96,20 +96,20 @@
         "id": "biyo_cc_001",
         "case": "Soru: (Biyokimya — Karbonhidrat) 6 aylık erkek bebek, hipoglisemi, hepatomegali ve büyüme geriliği ile başvuruyor. Kan şekeri: 45 mg/dL, karaciğer biyopsisinde masif glikojen birikimi saptandı. Glukoz verildiğinde kan şekeri düzeliyor, glukagon verildiğinde düzelmiyor. Bu tabloda en olası enzim eksikliği hangisidir?",
         "options": [
-          "A) Glikojen fosforilaz (McArdle hastalığı)",
-          "B) Glukoz-6-fosfataz (Von Gierke hastalığı)",
-          "C) Lizozomal α-1,4-glukozidaz (Pompe hastalığı)",
+          "A) Glikojen fosforilaz",
+          "B) Glukoz-6-fosfataz",
+          "C) Lizozomal α-1,4-glukozidaz",
           "D) Fruktoz-1,6-bisfosfataz",
           "E) Fosfofruktokinaz-1"
         ],
-        "correct_answer": "B) Glukoz-6-fosfataz (Von Gierke hastalığı)",
+        "correct_answer": "B) Glukoz-6-fosfataz",
         "explanation": "Von Gierke hastalığı (Tip I glikojen depo hastalığı): Glukoz-6-fosfataz eksikliği. G6P → Glukoz dönüşümü bozulur → Glikojen ve yağ karaciğerde birikir (hepatomegali). Hipoglisemi ciddi çünkü ne glikojenoliz ne de glukoneogenez kan şekerini artıramaz (her ikisi G6Paz'a bağlı). Glukagon etkisiz (doğrulayıcı bulgu). Ek bulgular: Hiperürisemi, hiperlipidemi, laktat asidoz. McArdle kasta görülür (kramp, miyoglobinüri). Pompe kardiyomegali + miyopati ile görülür."
       },
       {
         "id": "biyo_cc_002",
         "case": "Soru: (Biyokimya — Karbonhidrat) 25 yaşında erkek hasta, sıtma tedavisi için primakine başlandıktan 2 gün sonra sarılık, koyu idrar ve hemoglobin 7 g/dL ile acile geliyor. Periferik yaymada Heinz cisimcikleri görüldü. En olası tanı nedir?",
         "options": [
-          "A) Orak hücre anemisi (kriz)",
+          "A) Orak hücre anemisi",
           "B) Herediter sferositoz",
           "C) Otoimmün hemolitik anemi",
           "D) G6PD eksikliği",
@@ -193,8 +193,8 @@
         "id": "biyo_cc_004",
         "case": "Soru: (Biyokimya — Lipid) 4 yaşında kız çocuğu, uzun süre aç kaldıktan sonra hipoglisemi, letarji ve kas güçsüzlüğü ile başvuruyor. Kan şekeri 35 mg/dL, keton cisimleri negatif, plazma karnitin düzeyi çok düşük bulundu. Karaciğerde yağlanma ve kardiyomegali saptandı. En olası tanı hangisidir?",
         "options": [
-          "A) Von Gierke hastalığı (G6Paz eksikliği)",
-          "B) Mcárdle hastalığı (Kas fosforilaz eksikliği)",
+          "A) Von Gierke hastalığı",
+          "B) Mcárdle hastalığı",
           "C) Primer karnitin eksikliği",
           "D) Diyabetik ketoasidoz",
           "E) G6PD eksikliği"
@@ -276,24 +276,24 @@
         "options": [
           "A) Fenilalanin transaminaz",
           "B) Tirozin hidroksilaz",
-          "C) Fenilalanin hidroksilaz (PAH)",
+          "C) Fenilalanin hidroksilaz",
           "D) Homogentisat oksidaz",
-          "E) Sistationin beta-sentaz (CBS)"
+          "E) Sistationin beta-sentaz"
         ],
-        "correct_answer": "C) Fenilalanin hidroksilaz (PAH)",
+        "correct_answer": "C) Fenilalanin hidroksilaz",
         "explanation": "PKU (Fenilketonüri): PAH eksikliği nedeniyle fenilalanin tirozine dönüşemez. Aşırı fenilalanin → Fenil pirüvat + Fenil asetat (fare/küf kokusu). Tirozin azalır → Melanin sentezi bozulur (sarı saç, mavi göz, açık ten). BH4 kofaktörü de PAH için gereklidir (BH4 eksikliği atipik PKU yapar). Tedavi edilmezse ağır mental retardasyon gelişir. Türkiye dahil pek çok ülkede yenidoğan taraması zorunludur. Tirozin hidroksilaz: Tirozin→DOPA (dopamin öncüsü). Homogentisat oksidaz eksikliği: Alkaptonüri."
       },
       {
         "id": "biyo_cc_006",
         "case": "Soru: (Biyokimya — Enzim Kinetiği) Bir hastada kolesterol yüksekliği nedeniyle atorvastatin (HMG-CoA redüktaz inhibitörü) başlandı. İlaçla ilgili aşağıdakilerden hangisi doğrudur?",
         "options": [
-          "A) Enzimin Vmax'ını azaltır, Km'yi değiştirmez (non-kompetitif)",
-          "B) Enzimin Km'sini artırır, Vmax'ı değiştirmez (kompetitif)",
-          "C) Enzimi geri dönüşümsüz olarak inhibe eder (irreversibl)",
+          "A) Enzimin Vmax'ını azaltır, Km'yi değiştirmez",
+          "B) Enzimin Km'sini artırır, Vmax'ı değiştirmez",
+          "C) Enzimi geri dönüşümsüz olarak inhibe eder",
           "D) Allosterik site'a bağlanarak enzimi aktive eder",
           "E) Enzim miktarını transkripsiyon düzeyinde azaltır"
         ],
-        "correct_answer": "B) Enzimin Km'sini artırır, Vmax'ı değiştirmez (kompetitif)",
+        "correct_answer": "B) Enzimin Km'sini artırır, Vmax'ı değiştirmez",
         "explanation": "Statinler (atorvastatin, simvastatin, rosuvastatin) HMG-CoA redüktazın aktif sitesine HMG-CoA'ya yapısal benzerlikle kompetitif bağlanır. Kompetitif inhibisyon: Km↑ (görünür Km artar — enzim substrat için daha yüksek konsantrasyona ihtiyaç duyar), Vmax değişmez (substrat konsantrasyonu artırılırsa inhibisyon aşılabilir). Lineweaver-Burk grafiğinde: Aynı Y eksenini keser (Vmax aynı), X eksenini farklı noktada keser. Statinler ayrıca SREBP aktivasyonu yoluyla LDL reseptör ekspresyonunu artırır — ikincil etki."
       }
     ]

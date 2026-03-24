@@ -170,12 +170,12 @@
         "case": "65 yaşında erkek hasta, Psödomonas sepsisi nedeniyle bir antibiyotik tedavisi alırken idrar miktarında azalma ve her iki kulakta çınlama şikayeti ile başvuruyor. Laboratuvarda kreatinin düzeyi 2.4 mg/dL saptanıyor.\n\nHangi antibiyotik grubunun bu tabloya yol açma olasılığı en yüksektir?",
         "options": [
           "A) Penisilinler",
-          "B) Aminoglikozidler (Gentamisin)",
+          "B) Aminoglikozidler",
           "C) Florokinolonlar",
           "D) Makrolidler",
           "E) Karbapenemler"
         ],
-        "correct_answer": "B) Aminoglikozidler (Gentamisin)",
+        "correct_answer": "B) Aminoglikozidler",
         "explanation": "PROFESÖR DEĞERLENDİRMESİ: Aminoglikozidler (Gentamisin, Amikasin, Tobramisin), özellikle Gram negatif tedavilerinde çok etkili olsalar da iki önemli toksisiteleri ile bilinirler: Nefrotoksisite ve Ototoksisite.\n\n🎓 HOCA ÖZETİ:\n- Nefrotoksisite: Akut tübüler nekroz (ATN) yapar, genellikle geri dönüşümlüdür.\n- Ototoksisite: Hem vestibüler (denge) hem koklear (işitme) hasar yapabilir, genellikle geri dönüşümsüzdür.\n- Mnemonic: A-minoglikozid = A-kut Tübüler Nekroz + A-ğır işitme kaybı.",
         "difficulty": "medium"
       }

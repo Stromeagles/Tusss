@@ -27,12 +27,12 @@
       "case": "Soru:(Osteoloji) Os sphenoidale (temel kemik) üzerinde yer alan ve hipofiz bezinin oturduğu derin çukura ne ad verilir?",
       "options": [
         "A) Fossa cranii anterior",
-        "B) Fossa hypophysialis (Sella turcica)",
+        "B) Fossa hypophysialis",
         "C) Canalis opticus",
         "D) Foramen rotundum",
         "E) Sinus sphenoidalis"
       ],
-      "correct_answer": "B) Fossa hypophysialis (Sella turcica)",
+      "correct_answer": "B) Fossa hypophysialis",
       "explanation": "HOCANIN ÖZETİ: Sfenoid kemiğin gövdesinde (corpus) bulunan Sella turcica (Türk eğeri), hipofiz bezine ev sahipliği yapar. Bu bölgenin önünde chiasma opticum (görme sinirlerinin çaprazı) yer alır. Sfenoid kemik, kafa tabanının 'anahtar' kemiğidir çünkü tüm kranyal kemiklerle eklem yapar. İçindeki hava boşlukları (sinus sphenoidalis) kafa ağırlığını azaltır ve rezonans sağlar.",
       "story_hint": "💡 HİKAYE: Sfenoid kemiğin ortasında 'Türk eğeri' (Sella turcica) var — hipofiz bezi bu eğere oturmuş bir süvari gibi. Önünde optik kiazma bekliyor. Hipofiz tümörü büyürse bu çaprazı sıkıştırıp bitemporal hemianopsi yapar!"
     },
@@ -54,13 +54,13 @@
       "id": "ant-051",
       "case": "Soru:(Nöroanatomi) Nervus trigeminus'un (CN V) üç ana dalından hangisi hem duyu hem de motor lifler içerir?",
       "options": [
-        "A) N. ophthalmicus (V1)",
-        "B) N. maxillaris (V2)",
-        "C) N. mandibularis (V3)",
-        "D)  N. facialis (CN VII)",
-        "E)  N. abducens (CN VI)"
+        "A) N. ophthalmicus",
+        "B) N. maxillaris",
+        "C) N. mandibularis",
+        "D) N. facialis",
+        "E) N. abducens"
       ],
-      "correct_answer": "C) N. mandibularis (V3)",
+      "correct_answer": "C) N. mandibularis",
       "explanation": "KRİTİK BİLGİ: N. trigeminus yüzün temel duyu siniridir. V1 ve V2 dalları saf duyusaldır. Ancak V3 (n. mandibularis), duyusal liflerin yanı sıra çiğneme kaslarını (masseter, temporalis, pterygoideuslar) inerve eden motor lifleri de taşır. Bu nedenle V3 'mikst' (karma) bir sinirdir. Kafa tabanından Foramen Ovale aracılığıyla çıkar. Diğer kısımlardan V1 (Fissura orbitalis superior) ve V2 (Foramen rotundum) ile geçer.",
       "story_hint": "💡 HİKAYE: Trigeminus üç dallı yüz siniridir: V1 ve V2 saf duyusal, V3 ise hem duyu hem motor (mikst). V3 foramen ovale'den geçer ve çiğneme kaslarını yönetir. 'Mandibula' = çene = çiğneme = motor!"
     },
@@ -125,12 +125,12 @@
       "case": "Soru:(Ürogenital Sistem) Uterus ile overler arasındaki bağlantıyı sağlayan ve döllenmenin (fertilizasyon) en sık gerçekleştiği bölge hangisidir?",
       "options": [
         "A) Infundibulum",
-        "B) Ampulla (Tuba uterina)",
+        "B) Ampulla",
         "C) Isthmus",
         "D) Ostium abdominale",
         "E) Mesometrium"
       ],
-      "correct_answer": "B) Ampulla (Tuba uterina)",
+      "correct_answer": "B) Ampulla",
       "explanation": "FERTİLİZASYON DURAĞI: Tuba uterina'nın (Fallop tüpü) parçaları dıştan içe şöyledir: Infundibulum (fimbrialı kısım), Ampulla (en geniş ve en uzun kısım), Isthmus (en dar kısım) ve Pars uterina. Ampulla, döllenmenin %90 oranında gerçekleştiği yerdir. Dış gebeliklerin (ektopik gebelik) en sık görüldüğü yer de yine ampulla'dır.",
       "story_hint": "💡 HİKAYE: Ampulla tuba uterinanın 'buluşma noktası'dır — sperm ve yumurta burada karşılaşır (fertilizasyon). Aynı zamanda ektopik gebeliklerin de en sık yaşandığı yer."
     },
@@ -154,11 +154,11 @@
       "options": [
         "A) Septum interatriale",
         "B) Crista terminalis",
-        "C) Trabecula septomarginalis (Moderator band)",
+        "C) Trabecula septomarginalis",
         "D) Musculi pectinati",
         "E) Chordae tendineae"
       ],
-      "correct_answer": "C) Trabecula septomarginalis (Moderator band)",
+      "correct_answer": "C) Trabecula septomarginalis",
       "explanation": "KALBİN MİMARİSİ: Moderator band, sağ karıncığa özgü kalın bir kas bandıdır. İçinden His huzmesinin sağ dalı (fasciculus atrioventricularis) geçer. Görevi, interventriküler septumdaki iletiyi ön papiller kaslara hızla ulaştırmaktır. Musculi pectinati atriyumlarda, Chordae tendineae ise kapakların ters dönmesini engelleyen iplikçiklerdir.",
       "story_hint": "💡 HİKAYE: Moderator band (trabecula septomarginalis) sağ ventriküle özgü bir 'hızlı iletim kablosu'dur — His huzmesinin sağ dalını septumdan ön papiller kasa taşır."
     },
@@ -211,11 +211,11 @@
         "A) Hiatus aorticus",
         "B) Hiatus oesophageus",
         "C) Foramen venae cavae",
-        "D) Trigonum sternocostale (Morgagni)",
-        "E) Trigonum lumbocostale (Bochdalek)"
+        "D) Trigonum sternocostale",
+        "E) Trigonum lumbocostale"
       ],
       "correct_answer": "C) Foramen venae cavae",
-      "explanation": "DİYAFRAM DELİKLERİ: Diyaframda 3 ana geçit bulunur. Yukarıdan aşağıya T8 seviyesinde Foramen venae cavae (içinden V. cava inferior ve sağ n. phrenicus geçer), T10 seviyesinde Hiatus oesophageus (içinden Oesophagus ve n. vagus'un trunkusları geçer), ve en arkada T12 seviyesinde Hiatus aorticus (içinden Aorta ve Ductus thoracicus geçer) bulunur. Kısaltma: I (8 harf - IVC), ate (10 - esophagus), 12 (12 - aorta) -> 'I ate 12 eggs at 8'.",
+      "explanation": "DİYAFRAM DELİKLERİ: Diyaframda 3 ana geçit bulunur. Yukarıdan aşağıya T8 seviyesinde Foramen venae cavae (içinden V. cava inferior ve sağ n. phrenicus geçer), T10 seviyesinde Hiatus oesophageus (içinden Oesophagus ve n. vagus'un trunkusları geçer), ve en arkada T12 seviyesinde Hiatus aorticus (içinden Aorta ve Ductus thoracicus geçer) bulunur. Kısaltma: I (8 harf - IVC), ate (10 - esophagus), 12 (12 - aorta) -> 'I ate 12 eggs at 8'. Diyafram zayıf noktaları: Trigonum sternocostale (Morgagni hernisi - öne) ve Trigonum lumbocostale (Bochdalek hernisi - arkaya, daha sık).",
       "story_hint": "💡 HİKAYE: Diyaframın delikleri 'I ate 12 eggs at 8' ile ezberlenir: T8=IVC (8 harf), T10=esophagus, T12=aorta. Foramen venae cavae en üstte (T8), sağ n. phrenicus de buradan geçer."
     },
     {
@@ -223,12 +223,12 @@
       "case": "Soru:(Sindirim Sistemi) Koledok kanalı (Ductus choledochus) ile ana pankreas kanalının (Ductus pancreaticus - Wirsung) birleşerek duodenum'un ikinci kıtasına (pars descendens) açıldığı yapıya ne ad verilir?",
       "options": [
         "A) Papilla duodeni minor",
-        "B) Ampulla hepatopancreatica (Vater ampullası)",
+        "B) Ampulla hepatopancreatica",
         "C) Pylorus",
         "D) Flexura duodenojejunalis",
         "E) Curvatura major"
       ],
-      "correct_answer": "B) Ampulla hepatopancreatica (Vater ampullası)",
+      "correct_answer": "B) Ampulla hepatopancreatica",
       "explanation": "SAFRA VE PANKREAS YOLU: Safra kesesinden gelen sıvı (ductus cysticus ve ductus hepaticus communis birleşimi koledok) ve pankreastan gelen enzimler (Ductus pancreaticus), ampulla hepatopancreatica (Vater ampullası) adlı genişlemede birleşir ve Papilla duodeni major (Pili) üzerinde duodenum'a dökülürler. Bu geçitin etrafındaki düz kas sfinkterine Sphincter Oddi denir.",
       "story_hint": "💡 HİKAYE: Vater ampullası safra ve pankreas suyunun 'kavşak noktası'dır — koledok + Wirsung kanalı birleşip duodenuma dökülür. Sfinkter Oddi bu kavşağın trafik polisi."
     },
@@ -236,13 +236,13 @@
       "id": "ant-205",
       "case": "Soru:(Sinir Sistemi) Nervus vagus (CN X) gastrointestinal sistemde hangi anatomik noktaya kadar parasempatik inervasyon sağlar?",
       "options": [
-        "A) Flexura coli dextra (Hepatik fleksura)",
-        "B) Flexura coli sinistra (Splenik fleksura) yakınına kadar",
+        "A) Flexura coli dextra",
+        "B) Flexura coli sinistra yakınına kadar",
         "C) Rectum sonuna kadar",
         "D) Pylorus'a kadar",
         "E) Valva ileocaecalis'e kadar"
       ],
-      "correct_answer": "B) Flexura coli sinistra (Splenik fleksura) yakınına kadar",
+      "correct_answer": "B) Flexura coli sinistra yakınına kadar",
       "explanation": "OTONOM SINIR HARİTASI: N. vagus, barsak sisteminde foregut (ön barsak) ve midgut (orta barsak) kökenli tüm yapıları parasempatik olarak uyarır. Bu etki, colon transversum'un 2/3 sağ kısmı bitene kadar (yaklaşık Flexura coli sinistra'ya veya Cannon-Böhm noktasına kadar) devam eder. Colon descendens, sigmoideum ve rectum (hindgut kökenli kısımlar) ise parasempatik inervasyonlarını Nn. splanchnici pelvici (S2, S3, S4) den alırlar.",
       "story_hint": "💡 HİKAYE: Vagus siniri GIS'te Cannon-Böhm noktasına (splenik fleksura civarı) kadar parasempatik inervasyon sağlar. Buradan sonra S2-S4 devralır."
     },
@@ -266,7 +266,7 @@
       "options": [
         "A) N. laryngeus superior",
         "B) N. laryngeus recurrens",
-        "C) N. vagus (ana trunkus)",
+        "C) N. vagus",
         "D) Ansa cervicalis",
         "E) N. glossopharyngeus"
       ],
@@ -279,12 +279,12 @@
       "case": "Soru:(Artroloji) Diz ekleminde (Art. genus) tibia'nın femur'a göre öne doğru kaymasını engelleyen ana bağ hangisidir?",
       "options": [
         "A) Ligamentum patellae",
-        "B) Ligamentum cruciatum anterius (Ön çapraz bağ)",
-        "C) Ligamentum cruciatum posterius (Arka çapraz bağ)",
+        "B) Ligamentum cruciatum anterius",
+        "C) Ligamentum cruciatum posterius",
         "D) Ligamentum collaterale fibulare",
         "E) Ligamentum collaterale tibiale"
       ],
-      "correct_answer": "B) Ligamentum cruciatum anterius (Ön çapraz bağ)",
+      "correct_answer": "B) Ligamentum cruciatum anterius",
       "explanation": "ÇAPRAZ BAĞLARIN GÖREVİ: Ön çapraz bağ (ACL), tibia'nın öne, femur'un arkaya kaymasını önler; kopmasında klinik olarak 'Ön Çekmece Belirtisi' (Anterior drawer sign) pozitif bulunur. Arka çapraz bağ (PCL) ise tibia'nın arkaya kaymasını önler. ACL, bükük dizle yapılan ani duruş ve dönüş (pivot) hareketlerinde en sık yaralanan diz bağıdır.",
       "story_hint": "💡 HİKAYE: ACL (ön çapraz bağ) tibianın öne kaymasını engeller — kopunca 'ön çekmece testi' pozitifleşir. Futbolcuların kabusu: ani dönüş hareketi → ACL yırtığı!"
     },
@@ -308,11 +308,11 @@
       "options": [
         "A) Sağ 2. interkostal aralık sternum kenarı",
         "B) Sol 2. interkostal aralık sternum kenarı",
-        "C) Sol 5. interkostal aralık sternum kenarı (triceps kapak)",
-        "D) Sol 5. interkostal aralık mid-klavikular hat (apex)",
-        "E) Sol 3. interkostal aralık (Erb noktası)"
+        "C) Sol 5. interkostal aralık sternum kenarı",
+        "D) Sol 5. interkostal aralık mid-klavikular hat",
+        "E) Sol 3. interkostal aralık"
       ],
-      "correct_answer": "D) Sol 5. interkostal aralık mid-klavikular hat (apex)",
+      "correct_answer": "D) Sol 5. interkostal aralık mid-klavikular hat",
       "explanation": "OSKÜLTASYON NOKTALARI: Kalp sesleri, kapakların iz düşümlerinde değil, o kapaklardan geçen kanın çarptığı kalbin yüzeylerinde en iyi duyulur. Mitral kapak, sol karıncığın uç kısmı (apeks) olan Sol 5. interkostal aralık mid-klavikular hatta dinlenir. Aort: Sağ 2. İKA, Pulmoner: Sol 2. İKA, Triküspit: Sol 5. İKA sternum kenarında dinlenir.",
       "story_hint": "💡 HİKAYE: Mitral kapak apekste (sol 5. IKA mid-klavikular hat) dinlenir. Aort: sağ 2. İKA, pulmoner: sol 2. İKA, triküspid: sol 5. İKA sternum kenarı."
     },
@@ -320,13 +320,13 @@
       "id": "ant-211",
       "case": "Soru:(Solunum Sistemi) Çocuklarda yabancı cisim aspirasyonlarında (örn: fıstık yutulması), nefes borusuna kaçan cismin geometrik ve anatomik özellikleri nedeniyle daha sık kaçtığı bölge neresidir?",
       "options": [
-        "A) Bronchus principalis sinister (Sol ana bronş)",
-        "B) Bronchus principalis dexter (Sağ ana bronş)",
+        "A) Bronchus principalis sinister",
+        "B) Bronchus principalis dexter",
         "C) Carina tracheae",
         "D) Sinus maxillaris",
         "E) Recessus piriformis"
       ],
-      "correct_answer": "B) Bronchus principalis dexter (Sağ ana bronş)",
+      "correct_answer": "B) Bronchus principalis dexter",
       "explanation": "SAĞ ANA BRONŞUN ÖZELLİĞİ: Sağ ana bronş, sol ana bronşa göre daha KISA, daha GENİŞ ve daha DİKTİR (trakea iz düşümüne göre). Sol ana bronş ise kalbin üzerinden geçmek için daha yatay bir seyir izler. Bu anatomik farktan ötürü solunum yollarına kaçan yabancı bir cisim büyük ihtimalle sağ ana bronşa ve oradan sağ alt loba gider.",
       "story_hint": "💡 HİKAYE: Sağ ana bronş daha kısa, geniş ve dik — tıpkı geniş bir kaydırak gibi! Yabancı cisimler yerçekimiyle bu kaydıraktan aşağı kayar ve sağ alt loba gider."
     },
@@ -335,12 +335,12 @@
       "case": "Soru:(Üriner Sistem) Böbreği çevreleyen ve böbreğin travmalara karşı korunmasını sağlayan en önemli yağ tabakası olan 'Capsula adiposa'nın hemen dışında böbreği ve böbreküstü bezini saran kılıfın adı nedir?",
       "options": [
         "A) Capsula fibrosa",
-        "B) Fascia renalis (Gerota fasyası)",
+        "B) Fascia renalis",
         "C) Corpus adiposum pararenale",
         "D) Tunica albuginea",
         "E) Peritoneum parietale"
       ],
-      "correct_answer": "B) Fascia renalis (Gerota fasyası)",
+      "correct_answer": "B) Fascia renalis",
       "explanation": "BÖBREĞİN ZIRHI: Böbreği dıştan içe saran katmanlar şöyledir: 1. Pararenal yağ dokusu (en dışta), 2. Fascia renalis (Gerota fasyası - böbreği ve adrenal bezi bir torba gibi sarar), 3. Capsula adiposa (Perirenal yağ dokusu), 4. Capsula fibrosa (böbrek dokusuna sıkıca yapışık böbrek zarı). Böbreğin retroperitoneal sarkmaları (nefroptozis) genellikle yağ dokusunun kaybında görülür.",
       "story_hint": "💡 HİKAYE: Gerota fasyası böbreğin 'zırh'ıdır — böbrek ve adrenal bezi bir torba gibi sarar. İçinde perirenal yağ tampon görevi yapar."
     },
@@ -351,8 +351,8 @@
         "A) Klumpke felci",
         "B) Erb-Duchenne felci",
         "C) Karpal Tünel Sendromu",
-        "D) Cumday felci (Drop hand)",
-        "E) Kanat skapula (Scapula alata)"
+        "D) Cumday felci",
+        "E) Kanat skapula"
       ],
       "correct_answer": "B) Erb-Duchenne felci",
       "explanation": "PLEXUS BRACHIALIS ZEDELENMESİ: Truncus superior'u oluşturan C5 ve C6 köklerinin yırtılması sonucu omuz kuşağı (m. deltoideus vd.) ve önkolun fleksörleri (m. biceps brachii vb.) felç olur. Kol yanlarda asılı kalır, iç rotasyon ve tam ekstansiyondadır, el bileği ise bir miktar büküktür. Klumpke felci ise C8-T1 zedelenmesidir (ağaca tutunarak düşme veya makattan çekilerek zor doğum), elin iç kaslarında atrofi ('pençe el') yapar.",
@@ -391,12 +391,12 @@
       "case": "Soru:(Duyu Organları) İç kulakta, koklea (salyangoz) içinde mekanik ses dalgalarını sinirsel impuslara (elektriksel sinyal) çeviren tüy hücrelerinin yerleştiği spesifik duyu reseptör cihazı?",
       "options": [
         "A) Macula sacculi",
-        "B) Organum spirale (Corti organı)",
+        "B) Organum spirale",
         "C) Crista ampullaris",
         "D) Ganglion vestibulare",
         "E) Membrana tectoria"
       ],
-      "correct_answer": "B) Organum spirale (Corti organı)",
+      "correct_answer": "B) Organum spirale",
       "explanation": "İŞİTMENİN KALBİ: Corti organı, Ductus cochlearis'in içinde, Membrana basilaris üzerinde yer alır. Ses dalgaları sıvıları titreştirdikçe tüy hücreleri tepedeki tectorial membrana çarparak bükülür, bükülme aksiyon potansiyelini tetikler. Utrıculus ve sacculus'taki maculalar ile ampulladaki crista'lar yerçekimi ve dengeyle ilgilidir.",
       "story_hint": "💡 HİKAYE: Corti organı koklea içindeki 'piyano'dur — membrana basilaris üzerindeki tüy hücreleri ses frekanslarına göre titreşir. İşitmenin elektriğe dönüştüğü nokta!"
     },
@@ -448,11 +448,11 @@
       "options": [
         "A) Glandula submandibularis",
         "B) Glandula sublingualis",
-        "C) Glandula parotidea (Parotis bezi)",
+        "C) Glandula parotidea",
         "D) Glandula thyroidea",
         "E) Glandula lacrimalis"
       ],
-      "correct_answer": "C) Glandula parotidea (Parotis bezi)",
+      "correct_answer": "C) Glandula parotidea",
       "explanation": "PAROTİS VE YEDİNCİ SİNİR: Glandula parotidea tamamen seröz salgı yapan (sulu tükürük) en büyük beze denk gelir. İçinden üç önemli yapı geçer: N. facialis (kasları inerve etmek için), V. retromandibularis ve A. carotis externa. N. facialis bezin içindeyken bez ile temas etmez, sadece içinden transit geçer ancak cerrahisinde çok yüksek zedelenme riski taşır.",
       "story_hint": "💡 HİKAYE: Parotis bezi en büyük tükürük bezi ve tamamen seröz salgı yapar. İçinden n. facialis transit geçer — cerrahide en büyük risk yüz felci!"
     },
@@ -489,12 +489,12 @@
       "case": "Soru:(Özel Duyular) Orta kulak boşluğu (Tympanum) ile nazofarenks arasındaki bağlantıyı sağlayan, orta kulak basıncını dengeleyen kanal hangisidir?",
       "options": [
         "A) Canalis semicircularis",
-        "B) Tuba auditiva (Östaki borusu)",
+        "B) Tuba auditiva",
         "C) Canalis facialis",
         "D) Meatus acusticus externus",
         "E) Vestibulum"
       ],
-      "correct_answer": "B) Tuba auditiva (Östaki borusu)",
+      "correct_answer": "B) Tuba auditiva",
       "explanation": "KULAK BASINCI: Östaki borusu, orta kulak basıncını dış basınçla eşitlemek için açılır (yutkunurken veya esnerken). Çocuklarda bu kanal daha kısa ve yatay olduğu için üst solunum yolu enfeksiyonları orta kulağa daha kolay yayılır (Otitis media). İç kulaktaki semisirküler kanallar ise denge ile ilgilidir.",
       "story_hint": "💡 HİKAYE: Östaki borusu orta kulağın 'havalandırma kanalı'dır — yutkunurken açılıp basıncı dengeler. Çocuklarda daha kısa ve yatay → otitis media!"
     },
@@ -502,13 +502,13 @@
       "id": "ant-104",
       "case": "Soru:(Nöroanatomi) N. ulnaris hasarında (Örn: dirsek kırıkları) elin küçük kaslarının felcine bağlı olarak ortaya çıkan karakteristik el deformitesi hangisidir?",
       "options": [
-        "A) Düşük el (Drop wrist)",
-        "B) Maymun eli (Ape hand)",
-        "C) Pençe el (Claw hand)",
-        "D) Ebe eli (Bishop's hand)",
+        "A) Düşük el",
+        "B) Maymun eli",
+        "C) Pençe el",
+        "D) Ebe eli",
         "E) Yazıcı eli"
       ],
-      "correct_answer": "C) Pençe el (Claw hand)",
+      "correct_answer": "C) Pençe el",
       "explanation": "EL SİNİR YARALANMALARI (TUS KLASİĞİ): 1. N. ulnaris: Pençe el (interosseoz kas felci). 2. N. radialis: Düşük el (ekstansör kas felci). 3. N. medianus: Maymun eli (tenar kas felci). 'Ebe eli' ise proksimal n. medianus hasarında el yumruk yapılmak istendiğinde oluşur. Bu sinirlerin fonksiyonlarını motor muayene ile bilmek hayati önemdedir.",
       "story_hint": "💡 HİKAYE: Üç sinir, üç el deformitesi: N. ulnaris = Pençe el, N. radialis = Düşük el, N. medianus = Maymun eli. 'URP-PMD' ile hatırla!"
     },
@@ -573,12 +573,12 @@
       "case": "Soru:(Nöroanatomi) Beyinde motor konuşma merkezi (Broca alanı) frontal lobda, motor yazı merkezi (Exner alanı) ise nerede bulunur?",
       "options": [
         "A) Lobus temporalis",
-        "B) Lobus frontalis (Gyrus frontalis medius)",
+        "B) Lobus frontalis",
         "C) Lobus parietalis",
         "D) Gyrus postcentralis",
         "E) Lingula"
       ],
-      "correct_answer": "B) Lobus frontalis (Gyrus frontalis medius)",
+      "correct_answer": "B) Lobus frontalis",
       "explanation": "BEYİN MERKEZLERİ: Broca alanı (Gyrus frontalis inferior - Pars triangularis) konuşma motor merkezidir. Exner alanı ise hemen üzerinde, orta frontal girusun arkasındadır. Hasarında hasta yazamaz (Agrafi). Anlama merkezi ise temporal lobdaki Wernicke alanıdır.",
       "story_hint": "💡 HİKAYE: Broca alanı konuşma motoru (frontal lob), Wernicke alanı anlama merkezi (temporal lob). Exner alanı ise yazı motoru (frontal lob, orta girus)."
     },
@@ -799,7 +799,7 @@
         "A) Ligamentum teres hepatis",
         "B) Vena cava inferior",
         "C) Vena portae hepatis",
-        "D) Vesica biliaris (Safra kesesi)",
+        "D) Vesica biliaris",
         "E) Ductus choledochus"
       ],
       "correct_answer": "C) Vena portae hepatis",
@@ -838,13 +838,13 @@
       "id": "ant-053",
       "case": "Soru:(Kardiyovasküler Sistem) Kalbin kendi dokusunu besleyen arterler (Coronariae) hangi damar üzerinden, tam olarak nereden köken alır?",
       "options": [
-        "A) Aorta ascendens (Sinus aortae)",
+        "A) Aorta ascendens",
         "B) Arcus aortae",
         "C) Aorta abdominalis",
         "D) Arteria pulmonalis",
         "E) Truncus brachiocephalicus"
       ],
-      "correct_answer": "A) Aorta ascendens (Sinus aortae)",
+      "correct_answer": "A) Aorta ascendens",
       "explanation": "KALBİN BESLENMESİ: Koroner arterler (sağ ve sol), aorta ascendens'in hemen başlangıcındaki valva aortae kapakçıklarının arkasındaki genişlemelerden (Sinus aortae / Valsalva sinüsü) çıkar. Kalbin diyastolü sırasında (kan geriye doğru kapaklara çarptığında) koronerler dolar. Bu yüzden kalp, vücudun geri kalanının aksine diyastolde beslenir.",
       "story_hint": "💡 HİKAYE: Koroner arterler Valsalva sinüsünden çıkar ve DİYASTOL sırasında dolar. Kalp vücudun aksine gevşerken beslenir!"
     },
@@ -852,13 +852,13 @@
       "id": "ant-054",
       "case": "Soru:(Sindirim Sistemi) Pankreasın hem endokrin hem de ekzokrin salgılarını taşıyan ana kanalı (Ductus pancreaticus major) hangi yapıya, nereden açılır?",
       "options": [
-        "A) Mide (Antrum)",
-        "B) Duodenum (Papilla duodeni major / Wirsung)",
+        "A) Mide",
+        "B) Duodenum",
         "C) Jejunum",
         "D) Ileum",
         "E) Colon transversum"
       ],
-      "correct_answer": "B) Duodenum (Papilla duodeni major / Wirsung)",
+      "correct_answer": "B) Duodenum",
       "explanation": "PANKREAS YOLLARI: Ana pankreas kanalı (Wirsung), safra kanalı (Ductus choledochus) ile birleşerek Vater ampullasını (Ampulla hepatopancreatica) oluşturur ve duodenum'un ikinci parçasındaki Papilla duodeni major'a açılır. Burada 'Oddi sfinkteri' salgı akışını kontrol eder. Aksesuar kanal (Santorini) ise Papilla duodeni minor'a açılır.",
       "story_hint": "💡 HİKAYE: Wirsung kanalı koledokla birleşip Vater ampullasını oluşturur → Papilla duodeni major'dan duodenuma açılır. Sfinkter Oddi geçidi kontrol eder."
     },
@@ -881,12 +881,12 @@
       "case": "Soru:(Nöroanatomi) Vücudun dengesinden, kas tonusundan ve hareketlerin koordinasyonundan (hassas ayar) sorumlu olan beyin bölümü hangisidir?",
       "options": [
         "A) Cerebrum",
-        "B) Cerebellum (Beyincik)",
+        "B) Cerebellum",
         "C) Thalamus",
         "D) Hypothalamus",
         "E) Medulla oblongata"
       ],
-      "correct_answer": "B) Cerebellum (Beyincik)",
+      "correct_answer": "B) Cerebellum",
       "explanation": "DENGE MERKEZİ: Cerebellum, motor hareketlerin 'nasıl' yapılacağını koordine eder. Hasarında (Ataksi), sarhoşvari yürüyüş, nistagmus (göz titremesi) ve dismetri (mesafe tayini bozukluğu) görülür. Bilgi girişi pons üzerindeki pedunculus cerebellaris'lerden sağlanır.",
       "story_hint": "💡 HİKAYE: Beyincik (cerebellum) motor hareketlerin 'kalite kontrol'üdür. Hasarında ataksi, dismetri ve nistagmus gelişir."
     },

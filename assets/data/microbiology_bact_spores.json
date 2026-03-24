@@ -97,14 +97,14 @@
       {
         "case": "Ev yapımı konserve yedikten 18 saat sonra çift görme, yutma güçlüğü ve konuşma bozukluğu şikayetiyle başvuran, ateşi olmayan hastada dilate pupiller saptanıyor. En olası tanı nedir?",
         "options": [
-          "A) Miyastenia Gravis (Pupiller korunur)",
-          "B) Botulizm (4D bulgusu + pitozis)",
-          "C) Tetanoz (Trismus + risus sardonicus)",
-          "D) Guillain-Barré Sendromu (Asendan felç)",
-          "E) Kene Paralizisi (Hızlı asendan felç)"
+          "A) Miyastenia Gravis",
+          "B) Botulizm",
+          "C) Tetanoz",
+          "D) Guillain-Barré Sendromu",
+          "E) Kene Paralizisi"
         ],
-        "correct_answer": "B) Botulizm (4D bulgusu + pitozis)",
-        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Clostridium botulinum toksini, sinir-kas kavşağında asetilkolin salınımını geri dönüşümsüz olarak bloke eder. \n\n🎓 HOCA ÖZETİ:\n- Klasik Senaryo: Ev yapımı konserve tüketimi sonrası '4D' (Diplopi, Dizartri, Disfaji, Dispne).\n- Ayırıcı Tanı (Miyastenia Gravis): MG'de pupiller etkilenmez, ancak Botulizmde 'fiks dilate pupiller' saptanır.\n- Felç Karakteri: Simetrik, desendan (yukarıdan aşağıya) gevşek felç yapar.\n- Tedavi: Antitoksin uygulaması hayati önem taşır.",
+        "correct_answer": "B) Botulizm",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Clostridium botulinum toksini, sinir-kas kavşağında asetilkolin salınımını geri dönüşümsüz olarak bloke eder. \n\n🎓 HOCA ÖZETİ:\n- Klasik Senaryo: Ev yapımı konserve tüketimi sonrası '4D' (Diplopi, Dizartri, Disfaji, Dispne).\n- Ayırıcı Tanı: Miyastenia Gravis'de pupiller etkilenmez, Botulizmde ise 'fiks dilate pupiller' (4D bulgusu + pitozis) saptanır.\n- Tetanoz = Trismus + risus sardonicus ile seyreder (Spastik felç).\n- Guillain-Barré Sendromu = Asendan felç yapar.\n- Kene Paralizisi = Hızlı asendan felç yapar.\n- Felç Karakteri: Simetrik, desendan (yukarıdan aşağıya) gevşek felç yapar.\n- Tedavi: Antitoksin uygulaması hayati önem taşır.",
         "id": "cc-micro-spores-002-001"
       }
     ]

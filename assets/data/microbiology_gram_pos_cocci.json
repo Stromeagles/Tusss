@@ -12,21 +12,31 @@
         "question": "S. aureus'un IgG'nin Fc kısmına bağlanarak opsonizasyon ve kompleman aktivasyonunu engelleyen proteini?",
         "answer": "Protein A.",
         "difficulty": "medium",
-        "tags": ["Protein A", "S. aureus"]
+        "tags": [
+          "Protein A",
+          "S. aureus"
+        ],
+        "story_hint": "💡 HİKAYE: Protein A, IgG'nin Fc kısmını 'ters' tutar — opsonizasyonu engeller. S. aureus bu proteini bir kalkan gibi kullanır; tıpkı askerin dürbünü ters çevirip düşmanı küçük göstermesi gibi."
       },
       {
         "id": "fc-gpc-1001",
         "question": "Hiperadsorban tampon kullanımı sonrası ateş, hipotansiyon ve yaygın döküntü yapan toksin?",
         "answer": "TSST-1 (Toksik Şok Sendromu Toksini-1).",
         "difficulty": "medium",
-        "tags": ["TSST-1"]
+        "tags": [
+          "TSST-1"
+        ],
+        "story_hint": "💡 HİKAYE: TSST-1 toksini, tampon kullanan kadında süper antijen olarak T hücrelerini kitlesel uyarır. Sitokin fırtınası başlar — ateş, şok ve döküntü her yeri sarar."
       },
       {
         "id": "fc-gpc-1002",
         "question": "Besin zehirlenmesi yapan S. aureus enterotoksini hangi gıdalarla ilişkilidir?",
         "answer": "Dondurma, mayonez, sütlü tatlılar ve tuzlu etler.",
         "difficulty": "easy",
-        "tags": ["Besin Zehirlenmesi"]
+        "tags": [
+          "Besin Zehirlenmesi"
+        ],
+        "story_hint": "💡 HİKAYE: S. aureus enterotoksini, dondurma ve mayonezde hazır bekler. 1-6 saat içinde kusma başlar — toksin ısıya dayanıklıdır, yemeği ısıtmak bile onu öldürmez."
       }
     ],
     "tus_spots": [
@@ -38,9 +48,16 @@
     "clinical_cases": [
       {
         "case": "Burun ameliyatı sonrası tamponları uzun süre kalan hastada aniden gelişen yüksek ateş, hipotansiyon ve el ayası dahil tüm vücutta kızarıklık gözleniyor. En olası tanı?",
-        "options": ["Kızıl", "Toksik Şok Sendromu", "Menenjit", "Kawasaki Hastalığı"],
-        "correct_answer": "Toksik Şok Sendromu",
-        "explanation": "Tampon kullanımı ve çoklu sistem tutulumu TSST-1'e bağlı stafilokokal toksik şok sendromunu düşündürür."
+        "options": [
+          "A) Kızıl",
+          "B) Toksik Şok Sendromu",
+          "C) Menengokoksik Menenjit",
+          "D) Kawasaki Hastalığı",
+          "E) Eksfolyatif Dermatit"
+        ],
+        "correct_answer": "B) Toksik Şok Sendromu",
+        "explanation": "PROFESÖR NOTU: TSST-1, klasik bir süperantijendir. Tampon kullanımı veya postoperatif sargı bezi/tampon varlığı en tipik senaryodur. \n\n🎓 HOCA ÖZETİ:\n- Mekanizma: MHC-II ve TCR arasına doğrudan bağlanarak T-hücrelerinin %20'sini aktive eder (Sitokin fırtınası: TNF-alfa, IL-1, IL-2).\n- Klinik Triad: Ateş + Hipotansiyon + Yaygın eritrodermi (el ayası ve ayak tabanında soyulma ile iyileşir). Bu tablo TSST-1 (Toksik Şok Sendromu Toksini-1) ile oluşur.\n- Kızıl = Eritrojenik toksin ile oluşur; Eksfolyatif Dermatit = Ritter hastalığı (eksfolyatif toksin ile oluşur).\n- Dikkat: Diş ve burun operasyonu tamponları da bu tabloyu yapabilir!",
+        "id": "cc-micro-gpos-coc-001-001"
       }
     ]
   },
@@ -57,14 +74,20 @@
         "question": "Pnömokoklarda beklemekle ortası çökük (nargile tepsisi) koloni yapmasından sorumlu enzim?",
         "answer": "Otolizin (LytA).",
         "difficulty": "medium",
-        "tags": ["Otolizin"]
+        "tags": [
+          "Otolizin"
+        ],
+        "story_hint": "💡 HİKAYE: Otolizin (LytA), pnömokokun kendi kendini yiyen enzimi — bekleyen koloniler ortadan çöker ve nargile tepsisi gibi çukurlaşır. Kendi yıkımıyla tanınır."
       },
       {
         "id": "fc-gpc-1101",
         "question": "Pnömokoklar menenjit, sinüzit, otitis media ve hangi pnömoni tipinin en sık etkenidir?",
         "answer": "Lober Pnömoni (Toplumda gelişen).",
         "difficulty": "easy",
-        "tags": ["Hastalıklar"]
+        "tags": [
+          "Hastalıklar"
+        ],
+        "story_hint": "💡 HİKAYE: Pnömokok, lober pnömoninin kralıdır — pas rengi balgamı ve lanset şeklinde diplokokları onun imzasıdır. Toplumda gelişen pnömonide ilk akla gelen isimdir."
       }
     ],
     "tus_spots": [
@@ -76,9 +99,16 @@
     "clinical_cases": [
       {
         "case": "65 yaşında KOAH hastasında üşüme titreme ile başlayan ateş, yan ağrısı ve pas rengi balgam şikayeti var. Akciğer grafisinde sağ alt lobda konsolidasyon izleniyor. Balgam gram incelemesinde gram pozitif diplokoklar görülüyor. Etken nedir?",
-        "options": ["K. pneumoniae", "S. aureus", "S. pneumoniae", "M. catarrhalis"],
-        "correct_answer": "S. pneumoniae",
-        "explanation": "Lober tutulum, pas rengi balgam ve gram pozitif diplokoklar tipik pnömokok bulgularıdır."
+        "options": [
+          "A) K. pneumoniae",
+          "B) S. aureus",
+          "C) S. pneumoniae",
+          "D) M. catarrhalis",
+          "E) H. influenzae"
+        ],
+        "correct_answer": "C) S. pneumoniae",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: S. pneumoniae (Pnömokok), toplumda gelişen lober pnömoninin açık ara en sık etkenidir. \n\n🎓 HOCA ÖZETİ:\n- Pas rengi balgam: Pnömokok için patognomoniktir (eritrosit yıkımı sonucu).\n- Mikroskopi: Gram pozitif, lanset (mızrak ucu) şeklinde diplokok.\n- Kültür: Kanlı agarda alfa-hemoliz (yeşilimsi), Optokine DUYARLI, Safrada ERİYEN tek alfa hemolitik koktur. Bu tablo Lober pnömoni kliniğiyle uyumludur.\n- K. pneumoniae = Mukoid balgam; S. aureus = Kaviter lezyonlar; M. catarrhalis = KOAH alevlenmesi; H. influenzae = KOAH'da sık etken.\n- Risk: KOAH, splenektomi ve alkolizmde mortalite yüksektir.",
+        "id": "cc-micro-gpos-coc-002-001"
       }
     ]
   },
@@ -95,14 +125,21 @@
         "question": "S. pyogenes deri enfeksiyonlarının (impetigo) ardından ASO yükselmemesinin nedeni nedir?",
         "answer": "Derideki kolesterolün Streptolizin O'yu inaktive etmesi.",
         "difficulty": "hard",
-        "tags": ["ASO", "Deri"]
+        "tags": [
+          "ASO",
+          "Deri"
+        ],
+        "story_hint": "💡 HİKAYE: Derideki kolesterol, Streptolizin O'nun düşmanıdır — onu inaktive eder. Bu yüzden deri enfeksiyonunda ASO yükselmez; tıpkı suyun ateşi söndürmesi gibi kolesterol toksini söndürür."
       },
       {
         "id": "fc-gpc-1201",
         "question": "Kızıl hastalığında görülen, deri kıvrımlarında çizgilenme şeklinde döküntülerin adı?",
         "answer": "Pastia çizgileri.",
         "difficulty": "medium",
-        "tags": ["Kızıl"]
+        "tags": [
+          "Kızıl"
+        ],
+        "story_hint": "💡 HİKAYE: Kızıl hastalığında eritrojenik toksin deriyi kızartır, kıvrımlarda Pastia çizgileri belirir. Çilek dili, kızarık deri ve çizgiler — tıpkı kırmızı boyayla çizilmiş bir tablo gibi."
       }
     ],
     "tus_spots": [
@@ -114,9 +151,16 @@
     "clinical_cases": [
       {
         "case": "Boğaz ağrısı ve ateş şikayeti ile gelen 7 yaşındaki çocukta boğazda eksuda, dilde 'çilek dili' görünümü ve gövdede basmakla solan yaygın mikropapüler döküntü var. Tanı nedir?",
-        "options": ["Suçiçeği", "Kızıl", "Kızamıkçık", "El-Ayak-Ağız Hastalığı"],
-        "correct_answer": "Kızıl",
-        "explanation": "Eksudatif farenjit, çilek dili ve yaygın döküntü S. pyogenes'in pirojenik ekzotoksinine bağlı Kızıl (Scarlet fever) tablosudur."
+        "options": [
+          "A) Suçiçeği",
+          "B) Kızıl",
+          "C) Kızamıkçık",
+          "D) El-Ayak-Ağız Hastalığı",
+          "E) Stafilokokal Haşlanmış Deri Sendromu"
+        ],
+        "correct_answer": "B) Kızıl",
+        "explanation": "PROFESÖR NOTU: Kızıl, S. pyogenes'in eritrojenik (Spe) toksini üreten suşları ile oluşur. Tam adı Scarlet Fever'dır. \n\n🎓 HOCA ÖZETİ:\n- Klinik: Eksudatif farenjit + Çilek dili + Pastia çizgileri (eklem kıvrımlarında çizgilenme).\n- Döküntü: Zımpara kağıdı (sandpaper) hissi verir, basmakla solar (Schultz-Charlton fenomeni).\n- Ayırıcı Tanı: Kızılda perioral (ağız çevresi) solukluk izlenir, döküntü ağız çevresini korur.\n- Suçiçeği = Veziküler döküntü; Kızamıkçık = Post-auriküler LAP; El-Ayak-Ağız = Koksaki virüs.",
+        "id": "cc-micro-gpos-coc-003-001"
       }
     ]
   }

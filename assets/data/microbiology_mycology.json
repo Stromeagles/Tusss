@@ -10,7 +10,8 @@
       {
         "id": "fc-myco-100",
         "question": "Gemi dümeni şeklinde maya hücreleri yapan mantar hangisidir?",
-        "answer": "Paracoccidioides brasiliensis."
+        "answer": "Paracoccidioides brasiliensis.",
+        "story_hint": "💡 HİKAYE: Paracoccidioides, gemi dümeni şeklinde çoklu tomurcuklanan maya hücresi yapar. Mikroskop altında bir kaptan köşkü görürsün — 'Pilot wheel' denilen bu dümen Güney Amerika'dan gelir."
       }
     ],
     "tus_spots": [
@@ -29,7 +30,8 @@
       {
         "id": "fc-myco-110",
         "question": "Çini mürekkebi (India ink) ile negatif boyanan kapsüllü mantar?",
-        "answer": "Cryptococcus neoformans."
+        "answer": "Cryptococcus neoformans.",
+        "story_hint": "💡 HİKAYE: Cryptococcus neoformans, kapsülüyle gizlenen bir hayalet mantardır. Çini mürekkebi (India ink) döküldüğünde arkaplan siyahlanır ama kapsül parlak hale kalır — negatif boyama ile ele verilir."
       }
     ],
     "tus_spots": [

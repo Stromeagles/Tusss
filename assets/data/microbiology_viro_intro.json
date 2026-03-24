@@ -12,21 +12,33 @@
         "question": "Chlamydia'nın dış ortamda dayanıklı, enfeksiyöz olan formu hangisidir?",
         "answer": "Elementer Cisim (EC).",
         "difficulty": "easy",
-        "tags": ["Chlamydia", "EC"]
+        "tags": [
+          "Chlamydia",
+          "EC"
+        ],
+        "story_hint": "💡 HİKAYE: Elementer Cisim, Chlamydia'nın 'kurşun geçirmez' zırhlı aracıdır — dış ortamda dayanır ve yeni hücrelere bulaşır. İçeri girince zırhı çıkarıp Retiküler Cisim olarak çoğalmaya başlar."
       },
       {
         "id": "fc-micro-1001",
         "question": "Dünyada önlenebilir körlüğün en sık nedeni olan Chlamydia serovarları?",
         "answer": "A, B, Ba, C serovarları (Trahom).",
         "difficulty": "medium",
-        "tags": ["Chlamydia", "Trahom"]
+        "tags": [
+          "Chlamydia",
+          "Trahom"
+        ],
+        "story_hint": "💡 HİKAYE: Trahomun A-B-Ba-C serovarları, ABC sırası gibi gözün öğrenmesi gereken ilk şeydir. Dünyada önlenebilir körlüğün bir numaralı nedeni — göze yazılan kara bir alfabe gibidir."
       },
       {
         "id": "fc-micro-1002",
         "question": "Q Ateşi (Coxiella burnetii) tanısında akut ve kronik enfeksiyonu ayıran antijen fazları?",
         "answer": "Akut: Faz II antikorları (+), Kronik: Faz I antikorları (+).",
         "difficulty": "hard",
-        "tags": ["Coxiella", "Faz Antijenleri"]
+        "tags": [
+          "Coxiella",
+          "Faz Antijenleri"
+        ],
+        "story_hint": "💡 HİKAYE: Coxiella'da Faz II akut, Faz I kroniktir. 'İki gelir ilk önce' diye hatırla — akut enfeksiyon önce başlar ve Faz II antikorları önce yükselir. Kronik olunca Faz I devralır."
       }
     ],
     "tus_spots": [
@@ -49,21 +61,32 @@
         "question": "Nükleik asit içermeyen, sadece protein yapıda olan enfeksiyöz ajanlara ne ad verilir?",
         "answer": "Prionlar.",
         "difficulty": "easy",
-        "tags": ["Prion"]
-  },
-  {
-    "id": "fc-viro-2001",
-    "question": "Zarflı bir virüsün konak hücreden ayrılma biçimi nedir?",
-    "answer": "Tomurcuklanma (Budding).",
-    "difficulty": "easy",
-    "tags": ["Virüs", "Zarf"]
+        "tags": [
+          "Prion"
+        ],
+        "story_hint": "💡 HİKAYE: Prionlar, ne DNA ne RNA taşıyan 'hayalet' ajanlar — sadece proteindir. Normal proteini kendi şekline büker, tıpkı bir origami ustasının kağıtları katlayıp bozması gibi. Sterilizasyona bile direnir."
+      },
+      {
+        "id": "fc-viro-2001",
+        "question": "Zarflı bir virüsün konak hücreden ayrılma biçimi nedir?",
+        "answer": "Tomurcuklanma (Budding).",
+        "difficulty": "easy",
+        "tags": [
+          "Virüs",
+          "Zarf"
+        ],
+        "story_hint": "💡 HİKAYE: Zarflı virüs, konakçının evinden çıkarken kapıyı sökmez — zarını alarak tomurcuklanır. Tıpkı misafirin ev sahibinin paltosunu giyip çıkması gibi, konak zarını üstüne alır."
       },
       {
         "id": "fc-viro-2002",
         "question": "Sitoplazmada replike olan tek DNA virüsü hangisidir?",
         "answer": "Poksvirüs (Poxvirus). (Kendi DNA bağımlı RNA polimerazı vardır).",
         "difficulty": "medium",
-        "tags": ["Poxvirus", "DNA Virüsü"]
+        "tags": [
+          "Poxvirus",
+          "DNA Virüsü"
+        ],
+        "story_hint": "💡 HİKAYE: Poksvirüs, DNA virüsleri arasında tek 'isyankar'dır — çekirdeğe girmez, sitoplazmada kalır. Kendi RNA polimerazını taşır, tıpkı kendi jeneratörünü getiren bir karavan gibi bağımsızdır."
       }
     ],
     "tus_spots": [

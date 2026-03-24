@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "876041819479",
+    "project_id": "tusai-2fb30",
+    "storage_bucket": "tusai-2fb30.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876041819479:android:825febdc34cbe8d4ef1a12",
+        "android_client_info": {
+          "package_name": "com.stromeagles.tusasistani"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876041819479-1p9quhjbkv7edrgqfrqbp0tgiah5c3a2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-cH6EL52vJzaSX2pxxBSf894WkkYag38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876041819479-1p9quhjbkv7edrgqfrqbp0tgiah5c3a2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "876041819479-bsgok87hm8amot5sitjjho7vmtehdjlk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.stromeagles.tusasistani"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "micro-imm-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "İmmünoloji",
+    "topic": "Temel Kavramlar",
+    "sub_topic": "Antijen ve İmmünojenite",
+    "content_summary": "Antijen TCR veya antikora bağlanan moleküldür. İmmünojen ise yanıtı başlatan antijendir. Haptenler tek başına immünojenik değildir, taşıyıcı proteine ihtiyaç duyarlar.",
+    "flashcards": [
+      {
+        "id": "fc-imm-001",
+        "question": "Hapten nedir ve nasıl immünojenik hale gelir?",
+        "answer": "Antijenik olup tek başına immünojenik olmayan küçük moleküllerdir. Taşıyıcı bir proteine (adjuvan) bağlanarak immünojenik hale gelirler.",
+        "difficulty": "medium",
+        "tags": [
+          "Hapten",
+          "İmmünojenite"
+        ]
+      },
+      {
+        "id": "fc-imm-002",
+        "question": "Antikorun epitopa bağlanan kısmına ne ad verilir?",
+        "answer": "Paratop.",
+        "difficulty": "easy",
+        "tags": [
+          "Epitop",
+          "Paratop"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "micro-imm-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "İmmünoloji",
+    "topic": "İmmün Sistem Hücreleri",
+    "sub_topic": "Doğal ve Kazanılmış İmmünite Hücreleri",
+    "content_summary": "Doğal yanıt (Nötrofil, NK, Makrofaj, Dendritik) hızlı ve belleksizdir. Kazanılmış yanıt (T ve B lenfositler) yavaş, spesifik ve bellek hücreleri oluşturur.",
+    "flashcards": [
+      {
+        "id": "fc-imm-010",
+        "question": "Enfeksiyon bölgesine ilk göç eden ve temel işlevi fagositoz olan hücre grubudur?",
+        "answer": "Nötrofiller (Polimorf nüveli lökositler).",
+        "difficulty": "easy",
+        "tags": [
+          "Nötrofil",
+          "Fagositoz"
+        ]
+      },
+      {
+        "id": "fc-imm-011",
+        "question": "Doğal katil (NK) hücrelerin yüzey markerları nelerdir ve nasıl öldürürler?",
+        "answer": "CD16 ve CD56. Perforin ve granzim aracılığıyla apoptozu tetikleyerek öldürürler.",
+        "difficulty": "medium",
+        "tags": [
+          "NK Hücre",
+          "Perforin",
+          "Granzim"
+        ]
+      },
+      {
+        "id": "fc-imm-012",
+        "question": "MHC-II sunumu yapan temel antijen sunan hücreler (APC) hangileridir?",
+        "answer": "Dendritik hücreler, Makrofajlar ve B lenfositler.",
+        "difficulty": "medium",
+        "tags": [
+          "APC",
+          "MHC-II"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Langerhans hücreleri (derideki dendritik hücreler) Birbeck granülleri (raket şeklinde) içerir.",
+      "Th1 hücreleri IFN-gama salgılayarak makrofajları aktive eder; eksikliğinde hücre içi (TBC vb.) enfeksiyon riski artar.",
+      "Treg hücreleri (CD25, FOXP3) otoimmüniteyi önler; defekti IPEX sendromuna yol açar.",
+      "NK hücreleri MHC-I sinyali azalan (tümör veya virüs enfekte) hücreleri hedef alır."
+    ]
+  },
+  {
+    "id": "micro-imm-003",
+    "subject": "Mikrobiyoloji",
+    "chapter": "İmmünoloji",
+    "topic": "Kompleman Sistemi",
+    "sub_topic": "Yolaklar ve Eksiklikler",
+    "content_summary": "Klasik (antikor), Alternatif (LPS) ve Lektin (mannoz) yolakları C3b'de birleşir ve C5b-9 (MAC) ile hücreyi parçalar.",
+    "flashcards": [
+      {
+        "id": "fc-imm-050",
+        "question": "Herediter anjioödem hangi kompleman düzenleyicisinin eksikliğinde görülür?",
+        "answer": "C1 inhibitör (C1-INH) eksikliği.",
+        "difficulty": "medium",
+        "tags": [
+          "C1-INH",
+          "Anjioödem"
+        ]
+      },
+      {
+        "id": "fc-imm-051",
+        "question": "Neisseria enfeksiyonlarına (menenjit/gonore) duyarlılık artışı hangi kompleman eksikliklerinde görülür?",
+        "answer": "MAC (C5b-9) veya Properdin eksikliği.",
+        "difficulty": "hard",
+        "tags": [
+          "MAC",
+          "Neisseria"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "C3b: En önemli opsonindir.",
+      "C5a: En güçlü anafilotoksin ve nötrofil kemotaktik ajandır.",
+      "PNH (Paroksismal Nokturnal Hemoglobinüri): DAF (CD55) ve CD59 eksikliği sonucu eritrositlerin kompleman lizisine duyarlı olmasıdır."
+    ]
+  }
+]

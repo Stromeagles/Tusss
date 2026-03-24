@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../models/topic_model.dart';
@@ -18,6 +19,7 @@ class TopicListScreen extends StatefulWidget {
 class _TopicListScreenState extends State<TopicListScreen> {
   final _dataService = DataService();
   final TextEditingController _searchController = TextEditingController();
+  Timer? _debounce;
 
   List<Topic> _allTopics = [];
   List<Topic> _filtered = [];
@@ -36,6 +38,7 @@ class _TopicListScreenState extends State<TopicListScreen> {
 
   @override
   void dispose() {
+    _debounce?.cancel();
     _searchController.dispose();
     super.dispose();
   }
@@ -57,24 +60,28 @@ class _TopicListScreenState extends State<TopicListScreen> {
   }
 
   void _onSearchChanged() {
-    final q = _searchController.text.trim().toLowerCase();
-    setState(() {
-      _query = q;
-      if (q.isEmpty) {
-        _filtered = _allTopics;
-      } else {
-        _filtered = _allTopics.where((t) {
-          return t.subject.toLowerCase().contains(q) ||
-              t.chapter.toLowerCase().contains(q) ||
-              t.topic.toLowerCase().contains(q) ||
-              t.subTopic.toLowerCase().contains(q) ||
-              t.contentSummary.toLowerCase().contains(q) ||
-              t.flashcards.any((fc) =>
-                  fc.question.toLowerCase().contains(q) ||
-                  fc.answer.toLowerCase().contains(q)) ||
-              t.tusSpots.any((s) => s.toLowerCase().contains(q));
-        }).toList();
-      }
+    _debounce?.cancel();
+    _debounce = Timer(const Duration(milliseconds: 300), () {
+      final q = _searchController.text.trim().toLowerCase();
+      if (!mounted) return;
+      setState(() {
+        _query = q;
+        if (q.isEmpty) {
+          _filtered = _allTopics;
+        } else {
+          _filtered = _allTopics.where((t) {
+            return t.subject.toLowerCase().contains(q) ||
+                t.chapter.toLowerCase().contains(q) ||
+                t.topic.toLowerCase().contains(q) ||
+                t.subTopic.toLowerCase().contains(q) ||
+                t.contentSummary.toLowerCase().contains(q) ||
+                t.flashcards.any((fc) =>
+                    fc.question.toLowerCase().contains(q) ||
+                    fc.answer.toLowerCase().contains(q)) ||
+                t.tusSpots.any((s) => s.toLowerCase().contains(q));
+          }).toList();
+        }
+      });
     });
   }
 

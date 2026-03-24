@@ -1,0 +1,254 @@
+{
+  "subject": "Patoloji",
+  "chapter": "Kas İskelet Sistemi + İmmün Sistem (Batch 3A)",
+  "flashcards": [
+    {
+      "id": "path_b3A_001",
+      "question": "Osteoporozda trabeküler ince olmasına rağmen mineral yoğunluğu neden normaldir?",
+      "answer": "[[Osteoporozda]] kemik miktarı azalmış ama [[mineralizasyon normaldir]]. [[Osteomalazide]] ise [[hipomineralizasyon]] vardır.",
+      "difficulty": "Orta",
+      "tags": ["Kemik", "Osteoporoz", "Osteomalazi"],
+      "ai_coding": "🤖 Kodlama: Osteoporoz = 'Az kemik, ama minerali normal'. Osteomalazi = 'Kemik var, mineral az'."
+    },
+    {
+      "id": "path_b3A_002",
+      "question": "Paget hastalığında (osteitis deformans) üç evre nedir ve hangi komplikasyon önemlidir?",
+      "answer": "Evreler: [[Litik]] → [[Miks]] → [[Sklerotik]] (mozaik). Komplikasyon: [[Osteosarkom]] (%1) ve kalp yetmezliği.",
+      "difficulty": "Zor",
+      "tags": ["Paget", "Kemik", "Osteosarkom"],
+      "ai_coding": "🤖 Kodlama: Paget = 'Litik→Miks→Mozaik'. Osteosarkom riski %1."
+    },
+    {
+      "id": "path_b3A_003",
+      "question": "Osteosarkomun en sık görüldüğü yer ve yaş grubu nedir?",
+      "answer": "[[Distal femur metafizi]] (en sık). [[Codman üçgeni]] + '[[güneş ışınları]]' görünümü. Malign [[osteid]] üretimi tipiktir.",
+      "difficulty": "Orta",
+      "tags": ["Osteosarkom", "Kemik Tümörü"],
+      "ai_coding": "🤖 Kodlama: Osteosarkom = 'Genç + Distal Femur + Codman üçgeni + Güneş ışını'."
+    },
+    {
+      "id": "path_b3A_004",
+      "question": "Ewing sarkomu hangi yaş grubunda ve hangi kemik bölgesinde görülür?",
+      "answer": "[[Diyafiz]] (orta gövde). Histoloji: [[Küçük yuvarlak mavi hücreler]]. Radyo: '[[Soğan kabuğu]]' görünümü. [[t(11;22)]].",
+      "difficulty": "Orta",
+      "tags": ["Ewing Sarkomu", "Kemik", "t(11;22)"],
+      "ai_coding": "🤖 Kodlama: Ewing = 'Diyafiz + Soğan kabuğu + t(11;22) + Küçük yuvarlak mavi'."
+    },
+    {
+      "id": "path_b3A_005",
+      "question": "Kondrosarkomun osteosarkomdan ayıran özellikleri nelerdir?",
+      "answer": "[[Orta-ileri yaş]]. [[Pelvis]] ve aksial iskelet. ALP [[normaldir]]. [[Kıkırdak matriks]] üretimi vardır.",
+      "difficulty": "Orta",
+      "tags": ["Kondrosarkom", "Kemik Tümörü"],
+      "ai_coding": "🤖 Kodlama: Kondrosarkom = 'Orta yaş + Pelvis + Yavaş + Kemo az etkili'."
+    },
+    {
+      "id": "path_b3A_006",
+      "question": "Dev hücreli tümör (osteoklaştoma) özellikleri nelerdir?",
+      "answer": "[[Epifiz]] yerleşimli. [[Sabun köpüğü]] görünümü. [[Dev çok çekirdekli]] hücreler (osteoklast benzeri).",
+      "difficulty": "Orta",
+      "tags": ["Dev Hücreli Tümör", "Kemik"],
+      "ai_coding": "🤖 Kodlama: Dev hücreli = 'Epifiz + Sabun köpüğü + Dev hücreli + Benign ama agresif'."
+    },
+    {
+      "id": "path_b3A_007",
+      "question": "Osteokondromun (ekzostoz) histolojisi ve malignleşme riski nedir?",
+      "answer": "[[Kıkırdak başlık]] (kap) içeren kemik çıkıntısı. [[EXT1/EXT2]] mutasyonu. Malignleşme → [[Kondrosarkom]].",
+      "difficulty": "Orta",
+      "tags": ["Osteokondrọm", "Ekzostoz", "Kemik"],
+      "ai_coding": "🤖 Kodlama: Osteokondrọm = 'Kıkırdak başlıklı kemik çıkıntı'. Herediter → Daha fazla risk."
+    },
+    {
+      "id": "path_b3A_008",
+      "question": "Romatoid artrit (RA) eklem hasarının patolojik mekanizması nedir?",
+      "answer": "[[Panus]] oluşumu (sinoviyal proliferasyon). [[TNF-α]] ve [[IL-1]] aracılı kıkırdak/kemik yıkımı.",
+      "difficulty": "Zor",
+      "tags": ["RA", "Romatoid Artrit", "Panus"],
+      "ai_coding": "🤖 Kodlama: RA = 'Panus = Sinoviyal saldırı kuvveti'. TNF+IL-1 → Kemik yer."
+    },
+    {
+      "id": "path_b3A_009",
+      "question": "Romatoid artrit ile osteoartriti ayıran klinik ve patolojik özellikler nelerdir?",
+      "answer": "RA: [[Sinoviyal inflamasyon]], [[anti-CCP (+)]], sabah tutukluğu [[>1 saat]]. OA: [[Kıkırdak yıkımı]], mekanik.",
+      "difficulty": "Orta",
+      "tags": ["RA", "OA", "Artrit"],
+      "ai_coding": "🤖 Kodlama: RA = 'İnflamatuar, sabah 1 saat tutukluk'. OA = 'Mekanik, kıkırdak aşınması'."
+    },
+    {
+      "id": "path_b3A_010",
+      "question": "Gut artritinde ürik asit kristallerinin özellikleri ve eklem hasarı nedir?",
+      "answer": "[[Monosodyum ürat (MSU)]] kristalleri. [[Negatif çift kırınımlı]] + [[İğne]] şekli. [[Tofüs]] birikimi.",
+      "difficulty": "Orta",
+      "tags": ["Gut", "Ürik Asit", "Kristal"],
+      "ai_coding": "🤖 Kodlama: Gut = 'İğne şekli, negatif çift kırınımlı'. Kalkülüm nefrolitiyazis de olur."
+    },
+    {
+      "id": "path_b3A_011",
+      "question": "Psödogut (CPPD) ile gut kristallerinin polarize ışıkta farkı nedir?",
+      "answer": "[[CPPD]]: [[Pozitif çift kırınımlı]] + [[Romboid]] şekli. Gut: [[Negatif]] + [[İğne]].",
+      "difficulty": "Zor",
+      "tags": ["CPPD", "Psödogut", "Kristal"],
+      "ai_coding": "🤖 Kodlama: CPPD = 'Pozitif + Romboid'. Gut = 'Negatif + İğne'. Zıt!"
+    },
+    {
+      "id": "path_b3A_012",
+      "question": "Duchenne kas distrofisinde protein eksikliği ve neden motor nöronlar değil kaslar etkilenir?",
+      "answer": "[[Distrofin]] proteini eksikliği → [[Sarkolemma instabilitesi]] → Ca girişi → [[Miyosit nekrozu]].",
+      "difficulty": "Zor",
+      "tags": ["Duchenne", "Distrofin", "Kas"],
+      "ai_coding": "🤖 Kodlama: Distrofin = 'Kas membranı tutkalı'. Kaybolunca membran yırtılır → Kas ölür."
+    },
+    {
+      "id": "path_b3A_013",
+      "question": "Miyastenia gravis ile Lambert-Eaton miyastenik sendromun farkı nedir?",
+      "answer": "MG: [[Anti-AChR]] antikoru → Tekrarlayan kullanımla [[kötüleşen]] güçsüzlük. LE: [[Anti-VGCC]] → Kullandıkça [[düzelen]] güçsüzlük. [[SCLC]] ile ilişkili.",
+      "difficulty": "Zor",
+      "tags": ["Miyastenia Gravis", "Lambert-Eaton"],
+      "ai_coding": "🤖 Kodlama: MG = 'Kullandıkça kötüleşir'. LE = 'Kullandıkça düzelir'. LE+SCLC."
+    },
+    {
+      "id": "path_b3A_014",
+      "question": "Polimiyozit ile dermatomiyozitin patolojik farklılıkları nelerdir?",
+      "answer": "Polimiyozit: [[CD8+ T hücre]] + [[Endomisyal]]. Dermatomiyozit: [[CD4+ T hücre]] + [[Perimisyal]] + [[Deri tutulumu]].",
+      "difficulty": "Zor",
+      "tags": ["Polimiyozit", "Dermatomiyozit"],
+      "ai_coding": "🤖 Kodlama: PM = CD8 endo. DM = CD4 perimisyal + Deri + Kanser riski."
+    },
+    {
+      "id": "path_b3A_016",
+      "question": "Ankilozan spondilit HLA-B27 ile ilişkisini açıklayın.",
+      "answer": "[[HLA-B27]] ile ilişkili. [[Sakroiliyak]] tutulum + '[[bambu omurga]]' (bamboo spine).",
+      "difficulty": "Orta",
+      "tags": ["Ankilozan Spondilit", "HLA-B27"],
+      "ai_coding": "🤖 Kodlama: AS = HLA-B27 + Bambu omurga + Genç erkek + Sakroiliyak."
+    },
+    {
+      "id": "path_b3A_017",
+      "question": "Osteomyelitin akut ve kronik formlarındaki histolojik farklar nelerdir?",
+      "answer": "[[Sequestrum]]: Nekrotik kemik adası. [[Involukrum]]: Yeni kemik kabuğu. Akut: Nötrofil. Kronik: Plazma hücresi.",
+      "difficulty": "Orta",
+      "tags": ["Osteomyelit", "Kemik İnfeksiyon"],
+      "ai_coding": "🤖 Kodlama: Sequestrum = Nekrotik kemik adası. Involucrum = Yeni kemik kabuğu."
+    },
+    {
+      "id": "path_b3A_018",
+      "question": "DiGeorge sendromunun (22q11.2 delesyon) immunolojik eksikliği nedir?",
+      "answer": "[[Timüs aplazisi]] → [[T hücre eksikliği]]. [[22q11]] delesyonu. [[Hipokalsemi]] (paratiroid yokluğu).",
+      "difficulty": "Orta",
+      "tags": ["DiGeorge", "T Hücre Eksikliği", "22q11"],
+      "ai_coding": "🤖 Kodlama: DiGeorge = 'Timüs yok = T hücre yok'. 22q11 = '3T: Timüs+Tiroid+Trunkus'."
+    },
+    {
+      "id": "path_b3A_019",
+      "question": "Bruton hastalığında (X'e bağlı agammaglobulinemi) hangi hücre eksikliği ve hangi enfeksiyonlar görülür?",
+      "answer": "[[BTK mutasyonu]] → [[B hücre YOK]] → [[İmmünoglobulin YOK]]. Kapsüllü bakterilere duyarlılık.",
+      "difficulty": "Orta",
+      "tags": ["Bruton", "Agammaglobulinemi", "BTK"],
+      "ai_coding": "🤖 Kodlama: Bruton = 'BTK bozuk = B hücre yok = Antikor yok = Bakteri savunması yok'."
+    },
+    {
+      "id": "path_b3A_020",
+      "question": "Seçici IgA eksikliğinde klinik ve eşlik eden otoimmün hastalıklar nelerdir?",
+      "answer": "IgA ≤7. Kan transfüzyonunda [[anafilaksi]] ([[anti-IgA]] antikoru sebebiyle). En sık primer immün yetmezlik.",
+      "difficulty": "Orta",
+      "tags": ["IgA Eksikliği", "İmmün Yetmezlik"],
+      "ai_coding": "🤖 Kodlama: IgA eksikliği = 'En sık PİY'. Transfüzyon → Anafilaksi (anti-IgA)."
+    },
+    {
+      "id": "path_b3A_021",
+      "question": "Ağır kombine immün yetmezlik (SCID) türleri ve ortak özellikleri nelerdir?",
+      "answer": "[[T ve B hücre]] eksikliği. [[ADA eksikliği]] veya [[X-bağlı γc]] mutasyonu. Tedavi: Kemik iliği nakli.",
+      "difficulty": "Zor",
+      "tags": ["SCID", "İmmün Yetmezlik"],
+      "ai_coding": "🤖 Kodlama: SCID = 'T ve B yok = Ağır kombinasyon'. X-bağlı en sık, ADA = Enzim."
+    },
+    {
+      "id": "path_b3A_022",
+      "question": "Akut transplant rejeksiyonunu kronik rejeksiyondan ayıran histolojik özellikler nelerdir?",
+      "answer": "Akut: T hücre saldırısı ([[kapillerit]]). Humoral: [[C4d (+)]]. Kronik: [[Damar obliterasyonu]] + Fibrozis.",
+      "difficulty": "Zor",
+      "tags": ["Rejeksiyon", "Transplant", "Böbrek"],
+      "ai_coding": "🤖 Kodlama: Akut = 'T hücre saldırısı'. Humoral = 'C4d +'. Kronik = 'Damar fibrozu'."
+    },
+    {
+      "id": "path_b3A_023",
+      "question": "Sistemik lupus eritematozus (SLE) için ANA testinin sensitivite ve spesifitesi nedir?",
+      "answer": "[[ANA]]: Tarama (yüksek sensitivite). [[Anti-dsDNA]]: Aktivite takibi. [[Anti-Sm]]: En spesifik (pathognomik).",
+      "difficulty": "Orta",
+      "tags": ["SLE", "ANA", "Anti-dsDNA"],
+      "ai_coding": "🤖 Kodlama: SLE antikorları: ANA=Tarama, dsDNA=Aktivite, Sm=Spesifik, SSA=Neonatal."
+    },
+    {
+      "id": "path_b3A_024",
+      "question": "Sjögren sendromunda tükürük bezi histolojisi ve Anti-SSA/SSB'nin önemi nedir?",
+      "answer": "[[Fokal lenfositik]] siyalodenit. [[Anti-SSA (Ro)]] pozitifliği. [[MALT lenfoma]] riski artmıştır.",
+      "difficulty": "Orta",
+      "tags": ["Sjögren", "Anti-SSA", "Tükürük Bezi"],
+      "ai_coding": "🤖 Kodlama: Sjögren = 'Anti-SSA/Ro. Tükürük bezi lenfosit. MALT lenfoma riski'."
+    },
+    {
+      "id": "path_b3A_025",
+      "question": "Sistemik skleroz (skleroderma) da Raynaud fenomeni ve iç organ tutulumunun mekanizması nedir?",
+      "answer": "[[Aşırı kollajen]] (TGF-β) + Endotel hasarı. [[Anti-topoizomeraz I (Scl-70)]]: Diffüz/Akciğer. [[Anti-sentromer]]: CREST.",
+      "difficulty": "Zor",
+      "tags": ["Skleroderma", "SSc", "Raynaud"],
+      "ai_coding": "🤖 Kodlama: Scl-70 = Diffüz+Akciğer. Anti-sentromer = CREST (sınırlı, daha iyi)."
+    },
+    {
+      "id": "path_b3A_026",
+      "question": "Tip I hipersensitivite (anafilaksi) mekanizması nedir?",
+      "answer": "[[Allerjen]] + [[IgE]] + [[Mast hücresi]] degranülasyonu. [[Histamin]] ve [[Lökotrienler]] salınımı.",
+      "difficulty": "Orta",
+      "tags": ["Hipersensitivite", "Tip I", "IgE", "Anafilaksi"],
+      "ai_coding": "🤖 Kodlama: Tip I = 'IgE + Mast hücresi + Histamin'. İlk maruziyet = Hazırlık. İkinci = Reaksiyon."
+    },
+    {
+      "id": "path_b3A_027",
+      "question": "Tip II hipersensitiviteye örnekler verin.",
+      "answer": "Örnekler: [[Goodpasture (Anti-GBM)]], Otioimmün hemolitik anemi, [[Miyastenia gravis]], [[Graves]].",
+      "difficulty": "Orta",
+      "tags": ["Hipersensitivite", "Tip II"],
+      "ai_coding": "🤖 Kodlama: Tip II = 'IgG/IgM hücreye bağlanır → Öldürür'. Goodpasture, MG, Graves."
+    },
+    {
+      "id": "path_b3A_028",
+      "question": "Tip III hipersensitivite (immün kompleks) ile Tip II arasındaki fark nedir?",
+      "answer": "[[İmmün komplekslerin]] damar duvarında birikimi. Örnek: [[SLE]], [[PSGN]], Serum hastalığı.",
+      "difficulty": "Orta",
+      "tags": ["Hipersensitivite", "Tip III", "İmmün Kompleks"],
+      "ai_coding": "🤖 Kodlama: Tip III = 'İmmün kompleks damar duvarına takılır'. SLE, PSGN."
+    },
+    {
+      "id": "path_b3A_029",
+      "question": "Tip IV hipersensitivite (DTH) mekanizması ve örnekler nelerdir?",
+      "answer": "T hücre aracılı (antikorsuz). [[CD4+ Th1]] → [[IFN-γ]] → Makrofaj. Örnek: [[PPD testi]], temas dermatiti.",
+      "difficulty": "Kolay",
+      "tags": ["Hipersensitivite", "Tip IV", "DTH"],
+      "ai_coding": "🤖 Kodlama: Tip IV = 'Geç, antikorsuz, T hücresi'. PPD, temas dermatiti."
+    },
+    {
+      "id": "path_b3A_030",
+      "question": "Granülom oluşumunun mekanizması nedir?",
+      "answer": "[[Epiteloid histiyosit]] + [[Langerhans dev hücresi]]. [[CD4+ T hücre]] halkası. [[IFN-γ]] ana sitokindir.",
+      "difficulty": "Orta",
+      "tags": ["Granülom", "İmmün"],
+      "ai_coding": "🤖 Kodlama: Granülom = 'Makrofaj yıkayamadı → Çember oluşturdu'. Epiteloid+Dev hücre."
+    },
+    {
+      "id": "path_b3A_031",
+      "question": "Kompleman sisteminin klasik, lektin ve alternatif yolları hangi aktivatörlerle başlar?",
+      "answer": "Klasik: [[İmmün kompleks]] (IgG/IgM). Lektin: [[MBL]]. Alternatif: [[Bakteri duvarı]] (LPS).",
+      "difficulty": "Zor",
+      "tags": ["Kompleman", "İmmün Sistem"],
+      "ai_coding": "🤖 Kodlama: Klasik = IgG/IgM. Lektin = MBL. Alternatif = Bakteri duvarı. '3 yol 1 C3'."
+    },
+    {
+      "id": "path_b3A_033",
+      "question": "Kronik granülomatöz hastalıkta (KGH) patolojik mekanizma ve hangi enfeksiyonlar görülür?",
+      "answer": "[[NADPH oksidaz eksikliği]] → [[Katalaz (+)]] organizmalar yıkılamaz ([[S. aureus]], Aspergillus).",
+      "difficulty": "Zor",
+      "tags": ["KGH", "NADPH oksidaz", "Fagosit"],
+      "ai_coding": "🤖 Kodlama: KGH = 'NADPH yok → Oksidatif patlama yok → Katalaz(+) bakteri durdurulamaz'."
+    }
+  ]
+}

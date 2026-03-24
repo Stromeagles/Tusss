@@ -12,21 +12,31 @@
         "question": "Bacillus anthracis'in (Şarbon) kapsülünün diğer bakterilerden farkı nedir ve hangi boya ile pembe görünür?",
         "answer": "Polipeptid (Poli-D-glutamik asit) yapıdadır (diğerleri polisakkarid). Metilen mavisi ile 'McFadyean reaksiyonu' sonucu pembe görünür.",
         "difficulty": "hard",
-        "tags": ["B. anthracis", "Kapsül", "McFadyean"]
+        "tags": [
+          "B. anthracis",
+          "Kapsül",
+          "McFadyean"
+        ]
       },
       {
         "id": "fc-micro-301",
         "question": "Şarbon toksininin üç parçası nelerdir ve hangisi immünojeniktir?",
         "answer": "PA (Protektif Antijen), EF (Ödem Faktör), LF (Letal Faktör). En immünojenik olan PA'dır (Aşı ve tedavi hedefi).",
         "difficulty": "medium",
-        "tags": ["Şarbon", "Toksin"]
+        "tags": [
+          "Şarbon",
+          "Toksin"
+        ]
       },
       {
         "id": "fc-micro-302",
         "question": "Pirinç yeme öyküsü sonrası 1-6 saat içinde kusma ile seyreden besin zehirlenmesi etkeni?",
         "answer": "Bacillus cereus (HSET - ısıya dirençli toksin).",
         "difficulty": "medium",
-        "tags": ["B. cereus", "Pirinç"]
+        "tags": [
+          "B. cereus",
+          "Pirinç"
+        ]
       }
     ],
     "tus_spots": [
@@ -48,21 +58,33 @@
         "question": "Botulinum toksininin etki mekanizması nedir ve hangi tip paralizi yapar?",
         "answer": "Asetilkolin (ACh) salınımını IRREVERSIBLE engeller. Gevşek (Flask) paralizi (aşağı doğru inen - desendan) yapar.",
         "difficulty": "medium",
-        "tags": ["Botulizm", "Asetilkolin", "Flask Paralizi"]
+        "tags": [
+          "Botulizm",
+          "Asetilkolin",
+          "Flask Paralizi"
+        ]
       },
       {
         "id": "fc-micro-351",
         "question": "Tetanoz toksininin (tetanospazmin) etki mekanizması nedir ve hangi hücreleri etkiler?",
         "answer": "Spinal korddaki Renshaw hücrelerinden GABA ve Glisin (inhibitör) salınımını engeller. Spastik paralizi yapar.",
         "difficulty": "medium",
-        "tags": ["Tetanoz", "Renshaw", "GABA"]
+        "tags": [
+          "Tetanoz",
+          "Renshaw",
+          "GABA"
+        ]
       },
       {
         "id": "fc-micro-352",
         "question": "C. perfringens'in gazlı gangren yapan temel toksini ve etki mekanizması nedir?",
         "answer": "Alfa Toksin (Lesitinaz / Fosfolipaz C). Hücre membranlarını parçalar ve masif hemolize neden olur.",
         "difficulty": "hard",
-        "tags": ["C. perfringens", "Alfa Toksin", "Lesitinaz"]
+        "tags": [
+          "C. perfringens",
+          "Alfa Toksin",
+          "Lesitinaz"
+        ]
       }
     ],
     "tus_spots": [
@@ -74,9 +96,16 @@
     "clinical_cases": [
       {
         "case": "Ev yapımı konserve yedikten 18 saat sonra çift görme, yutma güçlüğü ve konuşma bozukluğu şikayetiyle başvuran, ateşi olmayan hastada dilate pupiller saptanıyor. En olası tanı nedir?",
-        "options": ["Miyastenia Gravis", "Botulizm", "Tetanoz", "Kene Paralizisi"],
-        "correct_answer": "Botulizm",
-        "explanation": "Konserve öyküsü ve '4D' (Diplopi, Dizartri, Disfaji, Dispne) bulguları Botulizm için karakteristiktir. Mg'de pupiller etkilenmez."
+        "options": [
+          "A) Miyastenia Gravis",
+          "B) Botulizm",
+          "C) Tetanoz",
+          "D) Guillain-Barré Sendromu",
+          "E) Kene Paralizisi"
+        ],
+        "correct_answer": "B) Botulizm",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Clostridium botulinum toksini, sinir-kas kavşağında asetilkolin salınımını geri dönüşümsüz olarak bloke eder. \n\n🎓 HOCA ÖZETİ:\n- Klasik Senaryo: Ev yapımı konserve tüketimi sonrası '4D' (Diplopi, Dizartri, Disfaji, Dispne).\n- Ayırıcı Tanı: Miyastenia Gravis'de pupiller etkilenmez, Botulizmde ise 'fiks dilate pupiller' (4D bulgusu + pitozis) saptanır.\n- Tetanoz = Trismus + risus sardonicus ile seyreder (Spastik felç).\n- Guillain-Barré Sendromu = Asendan felç yapar.\n- Kene Paralizisi = Hızlı asendan felç yapar.\n- Felç Karakteri: Simetrik, desendan (yukarıdan aşağıya) gevşek felç yapar.\n- Tedavi: Antitoksin uygulaması hayati önem taşır.",
+        "id": "cc-micro-spores-002-001"
       }
     ]
   }

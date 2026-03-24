@@ -12,21 +12,33 @@
         "question": "Mycoplasma'ların diğer bakterilerden en önemli yapısal farkı nedir?",
         "answer": "Hücre duvarlarının olmaması ve sitoplazmik membranlarında sterol (kolesterol) içermeleridir.",
         "difficulty": "easy",
-        "tags": ["Mycoplasma", "Sterol"]
+        "tags": [
+          "Mycoplasma",
+          "Sterol"
+        ],
+        "story_hint": "💡 HİKAYE: Mycoplasma, zırhını (hücre duvarını) çıkarmış cesur bir savaşçıdır; korunmak için vücudundan çaldığı kolesterol mantosunu giyer. Bu yüzden beta-laktam mermileri ona işlemez — hedef duvar zaten yoktur!"
       },
       {
         "id": "fc-micro-851",
         "question": "Atipik pnömoni tanısında kullanılan, eritrositleri soğukta kümeleyen spesifik olmayan test?",
         "answer": "Soğuk aglütinin testi.",
         "difficulty": "medium",
-        "tags": ["M. pneumoniae", "Soğuk Aglütinin"]
+        "tags": [
+          "M. pneumoniae",
+          "Soğuk Aglütinin"
+        ],
+        "story_hint": "💡 HİKAYE: M. pneumoniae kış ortasında akciğere yerleşen sinsi bir misafirdir. Soğuk havada kırmızı kan hücreleri birbirine sarılıp kümelenir — bu 'soğuk aglütinin' ipucunu veren dondurucu bir el sıkışmadır."
       },
       {
         "id": "fc-micro-852",
         "question": "Üremek için üreye ihtiyaç duyan (üreaz+) genitoüriner patojen?",
         "answer": "Ureaplasma urealyticum.",
         "difficulty": "medium",
-        "tags": ["Ureaplasma", "Üreaz"]
+        "tags": [
+          "Ureaplasma",
+          "Üreaz"
+        ],
+        "story_hint": "💡 HİKAYE: Ureaplasma adını aşkından almıştır: üre olmadan yaşayamaz! Üreaz bıçağıyla üreyi parçalayıp enerji kazanır ve genitoüriner sistemde sessizce kolonize olur — ismi zaten yol haritasıdır: Ure-a-plasma."
       }
     ],
     "tus_spots": [
@@ -48,14 +60,22 @@
         "question": "İntraabdominal enfeksiyonlarda en sık izole edilen, safraya dirençli gram negatif anaerob basil?",
         "answer": "Bacteroides fragilis.",
         "difficulty": "medium",
-        "tags": ["B. fragilis", "Anaerob"]
+        "tags": [
+          "B. fragilis",
+          "Anaerob"
+        ],
+        "story_hint": "💡 HİKAYE: Bacteroides fragilis karın boşluğunun yeraltı kralıdır — oksijenden nefret eder ama safranın acı deryasında rahatça yüzer. Diğer anaeroblar safradan kaçarken o direnir ve intraabdominal apselerin baş mimarı olur."
       },
       {
         "id": "fc-micro-901",
         "question": "EMN (Öpücük hastalığı) sonrası septik tromboflebit (Lemierre Hastalığı) yapan anaerob?",
         "answer": "Fusobacterium necrophorum.",
         "difficulty": "hard",
-        "tags": ["Lemierre", "Fusobacterium"]
+        "tags": [
+          "Lemierre",
+          "Fusobacterium"
+        ],
+        "story_hint": "💡 HİKAYE: Mono'nun öpücüğü boğazı harap ettikten sonra Fusobacterium fırsatçı bir korsan gibi jugular vene sızar. Damar içinde pıhtı oluşturup septik emboliler fırlatır — Lemierre Sendromu adlı bu korsan hikayesi, boğaz ağrısından sonra ateş ve boyun şişliği ile kendini ele verir."
       }
     ],
     "tus_spots": [
@@ -77,14 +97,23 @@
         "question": "Lyme hastalığının (B. burgdorferi) erken döneminde görülen tipik deri lezyonu?",
         "answer": "Eritema Kronikum Migrans (Öküz gözü görünümü).",
         "difficulty": "easy",
-        "tags": ["Lyme", "Borrelia", "Eritem"]
+        "tags": [
+          "Lyme",
+          "Borrelia",
+          "Eritem"
+        ],
+        "story_hint": "💡 HİKAYE: Kene ısırığından sonra Borrelia, deride bir hedef tahtası çizer — ortası soluk, çevresi kırmızı yüzükler halinde genişleyen bu 'öküz gözü' deseni, Lyme hastalığının imza kartıdır. Sanki kene, 'Beni buraya ısırdılar!' diye harita bırakır."
       },
       {
         "id": "fc-micro-951",
         "question": "Sarılık, kanama ve böbrek yetmezliği ile seyreden ağır Leptospiroz tablosuna ne ad verilir?",
         "answer": "Weil Hastalığı.",
         "difficulty": "medium",
-        "tags": ["Leptospira", "Weil"]
+        "tags": [
+          "Leptospira",
+          "Weil"
+        ],
+        "story_hint": "💡 HİKAYE: Leptospira, fare idrarıyla kirlenmiş sulardan vücuda giren ince bir sarmal casusdur. Ağır formunda üç organa saldırır: karaciğer sararır, damarlar kanar, böbrekler çöker — bu üçlü yıkıma Weil Hastalığı denir, adeta vücudun sel felaketidir."
       }
     ],
     "tus_spots": [

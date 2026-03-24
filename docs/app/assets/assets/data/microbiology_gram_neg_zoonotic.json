@@ -1,0 +1,40 @@
+[
+  {
+    "id": "micro-gnz-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Zoonotik Bakteriler",
+    "sub_topic": "Brucella Türleri",
+    "content_summary": "Bruselloz (Peynir hastalığı) etkenidir. Undulan ateş yapar.",
+    "flashcards": [
+      {
+        "id": "fc-gnz-100",
+        "question": "Brusellozda görülen tipik ateş karakteri nedir?",
+        "answer": "Undulan (dalgalı) ateş."
+      }
+    ],
+    "tus_spots": [
+      "Kemik iliği kültürü bruselloz tanısında altın standarttır.",
+      "Properdin veya MAC eksikliğinde Neisseria riski artar (Brucella ile karışmasın)."
+    ]
+  },
+  {
+    "id": "micro-gnz-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Özel Bakteriler",
+    "sub_topic": "Legionella pneumophila",
+    "content_summary": "Klimalardan bulaşan atipik pnömoni etkenidir. Hiponatremi yapması tipiktir.",
+    "flashcards": [
+      {
+        "id": "fc-gnz-110",
+        "question": "Legioner hastalığında hangi tipik elektrolit bozukluğu görülür?",
+        "answer": "Hiponatremi."
+      }
+    ],
+    "tus_spots": [
+      "BCYE agar Legionella izolasyonu için kullanılır.",
+      "İdrarda antijen tespiti tanıda çok değerlidir."
+    ]
+  }
+]

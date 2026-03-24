@@ -1,0 +1,263 @@
+{
+  "subject": "Patoloji",
+  "chapter": "Onarım + Endokrin + Sinir Sistemi (Batch 5A)",
+  "flashcards": [
+    {
+      "id": "path_b5A_001",
+      "question": "Yara iyileşmesinde primer ve sekonder iyileşmenin farkı nedir?",
+      "answer": "[[Primer]]: Temiz kenarların yakınlaştırılması → Az skar. [[Sekonder]]: Yarada fazla doku kaybı → [[Granülasyon dokusu]] → [[Kontraksiyon]] → Büyük skar.",
+      "difficulty": "Kolay",
+      "tags": [
+        "Onarım",
+        "Yara İyileşme"
+      ],
+      "story_hint": "💡 HİKAYE: Primer iyileşme iki temiz masa kenarını yapıştırmak gibidir: düzgün birleşir, iz az kalır. Sekonder iyileşme ise kırık bir duvarı yeniden inşa etmek gibidir: granülasyon tuğlaları döşenir, kontraksiyon duvarı daraltır ve büyük skar kalır.",
+      "ai_coding": "🤖 Kodlama: Primer = 'Dikişle kapandı = Az skar'. Sekonder = 'Açık kaldı = Granülasyon = Büyük skar'."
+    },
+    {
+      "id": "path_b5A_002",
+      "question": "Granülasyon dokusu hangi bileşenlerden oluşur ve ne zaman görülür?",
+      "answer": "[[Granülasyon doku]]: Yeni kapillerler ([[anjiyogenez]]), fibroblastlar ve makrofajlar. Pembemsi, granüler görünüm. Yararsız birikim: '[[Gurur eti (Kibrit başı)]]'.",
+      "difficulty": "Kolay",
+      "tags": [
+        "Granülasyon Doku",
+        "Onarım"
+      ],
+      "story_hint": "💡 HİKAYE: Granülasyon dokusu yaranın \"inşaat sahası\"dir: VEGF ile yeni damarlar çekilir (anjiyogenez), fibroblastlar iskele kurar, makrofajlar enkaz temizler. Pembemsi granüler görünüm sağlıklı iyileşme işaretidir. Aşırı büyürse \"gurur eti\" olur.",
+      "ai_coding": "🤖 Kodlama: Granülasyon = 'VEGF+Fibroblast+Yeni damar'. 3-5. günde başlar."
+    },
+    {
+      "id": "path_b5A_003",
+      "question": "TGF-β'nın yara iyileşmesindeki rolü nedir?",
+      "answer": "[[TGF-β]]: Kollajen sentezi stimülasyonu + [[Fibroblast aktivasyonu]]. Aşırı aktivasyonu [[fibrozis]] ve keloid oluşumuna yol açar.",
+      "difficulty": "Orta",
+      "tags": [
+        "TGF-β",
+        "Fibrozis",
+        "Onarım"
+      ],
+      "story_hint": "💡 HİKAYE: TGF-beta fibroblastların \"patron\"udur: kollajen üretimini emreder ve yara iyileşmesini yönetir. Ama patron çok baskıcı olursa (aşırı aktivasyon), fibrozis ve keloid ortaya çıkar. Denge anahtar kelimedir.",
+      "ai_coding": "🤖 Kodlama: TGF-β = 'Fibroz ustası'. Fazlası = Keloid. Yeterisi = Normal iyileşme."
+    },
+    {
+      "id": "path_b5A_004",
+      "question": "Keloid ile hipertrofik skar arasındaki fark nedir?",
+      "answer": "[[Hipertrofik skar]]: Yara sınırı içinde kalır. [[Keloid]]: [[Yara sınırını aşar]], ilerleyicidir. Histoloji: Kalın [[hyalinize kollajen]] bantları.",
+      "difficulty": "Orta",
+      "tags": [
+        "Keloid",
+        "Hipertrofik Skar"
+      ],
+      "story_hint": "💡 HİKAYE: Hipertrofik skar disiplinli bir asker gibidir: sınırını bilir ve yara hattında kalır. Keloid ise isyankar bir asker gibidir: yara sınırını aşar, yayılır ve geri çekilmez. Keloid'de kalın hyalinize kollajen bantları görülür.",
+      "ai_coding": "🤖 Kodlama: Keloid = 'Sınırı aştı'. Hipertrofik = 'Sınırda kaldı, geri çekildi'."
+    },
+    {
+      "id": "path_b5A_005",
+      "question": "Yara iyileşmesini bozan faktörler nelerdir?",
+      "answer": "[[C vitamini eksikliği]] (kollajen sentezi bozulur), diyabet, [[kortikosteroid]] kullanımı ve enfeksiyon.",
+      "difficulty": "Orta",
+      "tags": [
+        "Onarım",
+        "Yara İyileşme",
+        "Engeller"
+      ],
+      "story_hint": "💡 HİKAYE: Yara iyileşmesinin dört düşmanı vardır: C vitamini eksikliği kollajen fabrikasını kapatır, diyabet mikrovasküler hasar yapar, kortikosteroid inflamasyonu bastırır (ama iyileşmeyi de engeller), enfeksiyon ise inşaat sahasını sabote eder.",
+      "ai_coding": "🤖 Kodlama: Vit C = Kollajen için. Eksikliği = Yara açık kalır. DM+steroid de bozar."
+    },
+    {
+      "id": "path_b5A_006",
+      "question": "Kollajen sentezinde C vitamini (askorbik asit) hangi basamakta kritiktir?",
+      "answer": "[[Prolil ve lisil hidroksilaz]] enzimlerinin kofaktörüdür. Eksikliği → [[Skorbüt]] (diş eti kanaması, yara açılması).",
+      "difficulty": "Orta",
+      "tags": [
+        "Kollajen",
+        "C Vitamini",
+        "Skorbüt"
+      ],
+      "story_hint": "💡 HİKAYE: C vitamini kollajen fabrikasının yakıtıdır: prolil ve lisil hidroksilaz motorlarını çalıştırır. Yakıt bitince motorlar durur, kollajen üretilemez ve skorbüt ortaya çıkar: diş etleri kanar, yaralar açılır, denizcilerin kabusu olur.",
+      "ai_coding": "🤖 Kodlama: C vitamini = 'Prolil hidroksilaz'. Skorbüt = Kollajen bozuk = Diş eti kanaması."
+    },
+    {
+      "id": "path_b5A_007",
+      "question": "Labile, stable ve kalıcı (permanent) hücre tiplerinin proliferasyon kapasitesi nedir?",
+      "answer": "[[Labile]]: Sürekli bölünür (GİS). [[Stable]]: Uyarıyla bölünür ([[Karaciğer]]). [[Permanent]]: Bölünemez ([[Nöron]], Kalp).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Hücre Proliferasyonu",
+        "Onarım"
+      ],
+      "story_hint": "💡 HİKAYE: Labile hücreler durmadan dönen bir çamaşır makinesi gibidir (GİS, kemik iliği). Stable hücreler uyandırılmayı bekleyen karaciğer gibidir: lazım olunca bölünür. Permanent hücreler emekli askerler gibidir (nöron, kalp): bir kez oluşur, bir daha bölünemez.",
+      "ai_coding": "🤖 Kodlama: Labile=GİS/Kemik iliği (her zaman). Stable=KC (tetikle). Permanent=Kalp/Nöron (bölünemez)."
+    },
+    {
+      "id": "path_b5A_008",
+      "question": "Karaciğer rejenerasyonunda hangi büyüme faktörleri rol oynar?",
+      "answer": "[[HGF]] (hepatosit büyüme faktörü) ana sitokindir. [[TGF-α]] ve EGF de eşlik eder. [[Sirozda]] rejenerasyon yeteneği kaybolur.",
+      "difficulty": "Orta",
+      "tags": [
+        "Karaciğer",
+        "Rejenerasyon",
+        "HGF"
+      ],
+      "story_hint": "💡 HİKAYE: Karaciğer vücudun Prometheus'udur: kesilse bile yeniden büyür. HGF komutanı hepatositlere \"bölünün!\" emri verir. Ama siroz gelince fibrozis duvarları yükselir ve rejenerasyon yeteneği kaybolur.",
+      "ai_coding": "🤖 Kodlama: KC rejenerasyonu = HGF lider. Siroz = 'Rejenerasyon bozuk, fibrozis var'."
+    },
+    {
+      "id": "path_b5A_009",
+      "question": "Tiroid papiller karsinomunda (PTC) hangi histolojik nükleer özellikler ve genetik değişiklikler görülür?",
+      "answer": "[[Optik cam]] nükleuslar + [[Psammoma cisimleri]]. Pozitif marker: [[BRAF V600E]]. [[Bölgesel lenf nodu]] metastazı yapar.",
+      "difficulty": "Orta",
+      "tags": [
+        "Tiroid",
+        "Papiller Karsinom",
+        "BRAF"
+      ],
+      "story_hint": "💡 HİKAYE: Papiller tiroid karsinom hücreleri \"cam göz\" (optik cam nükleus) ile bakıyor ve psammoma kum taneleriyle süslenmiştir. BRAF V600E mutasyonu motoru çalıştırır. Lenf nodlarına yayılmayı sever ama prognozu iyidir.",
+      "ai_coding": "🤖 Kodlama: PTC = 'Cam nükleus + Nükleer yarık + Psödomikroinclüzyon + Psammoma'."
+    },
+    {
+      "id": "path_b5A_010",
+      "question": "Tiroid foliküler karsinomu ile tiroid adenomunun ayırt edilmesi nasıl yapılır?",
+      "answer": "Ayırıcı tanı: [[Kapsül veya vasküler invazyon]] varlığı. [[İİAB]] ile bu ayırım yapılamaz.",
+      "difficulty": "Zor",
+      "tags": [
+        "Tiroid",
+        "Foliküler Karsinom"
+      ],
+      "story_hint": "💡 HİKAYE: Foliküler karsinom ve adenom ikiz gibidir: İİAB ile ayırt edilemezler. Tek fark kapsülde ve damarlardadır: karsinom kapsülü deler veya damara girer (invazyon), adenom ise nazikçe sınırında kalır. Cerrahi çıkardıktan sonra histoloji ile anlaşılır.",
+      "ai_coding": "🤖 Kodlama: Foliküler Ca = 'Kapsülü deldi veya damarına girdi'. İİAB ayırt edemez!"
+    },
+    {
+      "id": "path_b5A_011",
+      "question": "Medüller tiroid karsinomunda hangi hormon ve hangi genetik mutasyon önemlidir?",
+      "answer": "[[Kalsitonin]] üretilir. [[RET proto-onkogen]] mutasyonu ([[MEN 2]]). Stroma içinde [[amiloid]] birikimi görülür.",
+      "difficulty": "Zor",
+      "tags": [
+        "Medüller Tiroid",
+        "RET",
+        "MEN2"
+      ],
+      "story_hint": "💡 HİKAYE: Medüller tiroid karsinom C hücrelerinden doğar ve kalsitonin fabrikası kurar. RET proto-onkogeni fabrikayı açan anahtardır ve MEN 2 ailesinin bir parçasıdır. Stroma amiloidle dolduğunda Congo red boyası ile parlak yeşil görünür.",
+      "ai_coding": "🤖 Kodlama: MTC = 'C hücre + Kalsitonin + RET + Amiloid stroma'. MEN2 ile."
+    },
+    {
+      "id": "path_b5A_012",
+      "question": "Feokromositomanın '10 kuralı' nedir?",
+      "answer": "[[%10 malign]], [[%10 bilateral]], %10 ekstraadrenal. [[Katekolamin]] krizi yapar.",
+      "difficulty": "Orta",
+      "tags": [
+        "Feokromositoma",
+        "10 Kural"
+      ],
+      "story_hint": "💡 HİKAYE: Feokromositoma \"10'lar kulübü\"nün üyesidir: %10 malign, %10 bilateral, %10 ekstraadrenal, %10 çocuk, %10 familyal. Katekolamin krizi panik atak gibidir: ani hipertansiyon, taşikardi, terleme ve baş ağrısı.",
+      "ai_coding": "🤖 Kodlama: Feokromositoma = '10-10-10-10-10'. Katekolamin krizi = 5P."
+    },
+    {
+      "id": "path_b5A_013",
+      "question": "MEN-1 (Wermer sendromu) ile MEN-2A (Sipple sendromu) bileşenleri nelerdir?",
+      "answer": "[[MEN-1]]: [[Paratiroid]], [[Pankreas NET]], [[Hipofiz]]. [[MEN-2A]]: [[Medüller tiroid]], [[Feokromositoma]], Paratiroid.",
+      "difficulty": "Orta",
+      "tags": [
+        "MEN",
+        "Endokrin"
+      ],
+      "story_hint": "💡 HİKAYE: MEN-1 \"3P Kulübü\"dür: Paratiroid, Pankreas ve Pitüiter (hipofiz). MEN-2A ise \"MFP Kulübü\"dür: Medüller tiroid, Feokromositoma ve Paratiroid. RET mutasyonu MEN-2'nin giriş kartıdır.",
+      "ai_coding": "🤖 Kodlama: MEN-1 = '3P: Paratiroid+Pankreas+Pitüiter'. MEN-2A = 'MTC+Feokromo+Para'."
+    },
+    {
+      "id": "path_b5A_015",
+      "question": "Alzheimer hastalığında β-amiloid ve tau patolojisinin lokalizasyonu nedir?",
+      "answer": "[[β-amiloid plak]]: Ekstraselüler. [[Tau yumağı (NFT)]]: İntraselüler. İlk olarak [[hipokampus]] tutulur.",
+      "difficulty": "Orta",
+      "tags": [
+        "Alzheimer",
+        "Tau",
+        "β-amiloid"
+      ],
+      "story_hint": "💡 HİKAYE: Alzheimer'da beyin iki düşmanla savaşır: dışarıda amiloid plakları sokakları tıkar (ekstraselüler), içeride tau yumakları nöronları boğar (intraselüler). İlk savaş alanı hafıza merkezi hipokampustur.",
+      "ai_coding": "🤖 Kodlama: Alzheimer = 'Dışarıda amiloid plak, içeride tau yumağı'."
+    },
+    {
+      "id": "path_b5A_016",
+      "question": "Parkinson hastalığının patognomik histolojik bulgusu nedir?",
+      "answer": "[[Lewy cismi]] ([[α-sinüklein]] birikimi). [[Substantia nigra (pars compacta)]] nöron kaybı vardır.",
+      "difficulty": "Orta",
+      "tags": [
+        "Parkinson",
+        "Lewy Cismi",
+        "α-sinüklein"
+      ],
+      "story_hint": "💡 HİKAYE: Parkinson'da substantia nigra nöronları teker teker düşen domino taşları gibi kaybolur. Geriye kalan nöronlarda Lewy cisimleri (alfa-sinüklein yumakları) \"burada savaş oldu\" işareti olarak kalır. Siyah bölge soluklaşır.",
+      "ai_coding": "🤖 Kodlama: Parkinson = 'Lewy cismi = α-sinüklein'. Substantia nigra = 'Kararır (pigmenti azalır)'."
+    },
+    {
+      "id": "path_b5A_017",
+      "question": "Beyin tümörlerinde WHO derecelendirmesinde Grade I-IV ne anlama gelir?",
+      "answer": "Grade IV: [[Glioblastom multiforme (GBM)]]. Karakteristik bulgu: [[Psödopalisading nekroz]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Beyin Tümörü",
+        "WHO Grade"
+      ],
+      "story_hint": "💡 HİKAYE: WHO grade sistemi bir asansör gibidir: Grade I zemin kattır (pilositik astrositom, iyi huylu), Grade IV en üst kattır (GBM, en kötü). GBM'nin imzası psödopalisading nekrozdur: tümör hücreleri nekroz etrafında çit gibi dizilir.",
+      "ai_coding": "🤖 Kodlama: Beyin WHO = I (iyi) → IV (GBM, en kötü). Psödopalisading nekroz = GBM."
+    },
+    {
+      "id": "path_b5A_019",
+      "question": "Medulloblastom kimlerde görülür ve hangi serebellar bölgeden kaynaklanır?",
+      "answer": "[[Çocuklarda]] sık. [[Serebellar vermis]]. [[Homer-Wright rozeti]] ve küçük yuvarlak mavi hücreler.",
+      "difficulty": "Orta",
+      "tags": [
+        "Medulloblastom",
+        "Çocuk",
+        "Beyin"
+      ],
+      "story_hint": "💡 HİKAYE: Medulloblastom çocukların serebellar vermisinde doğan bir tümördür. Homer-Wright rozetleri tümör hücrelerinin oluşturduğu çiçek şekilleridir. Küçük yuvarlak mavi hücreler tümörün parmak izidir.",
+      "ai_coding": "🤖 Kodlama: Medulloblastom = 'Çocuk + Serebellar vermis + Homer-Wright'. WNT=iyi, MYC=kötü."
+    },
+    {
+      "id": "path_b5A_020",
+      "question": "Nörofibromatozis tip 1 ve tip 2'nin ayırt edici özellikleri nelerdir?",
+      "answer": "[[NF1]]: [[Lisch nodülleri]] + Café-au-lait. [[NF2]]: [[Bilateral akustik schwannom]] (VIII. sinir).",
+      "difficulty": "Orta",
+      "tags": [
+        "Nörofibromatoz",
+        "NF1",
+        "NF2"
+      ],
+      "story_hint": "💡 HİKAYE: NF1 ve NF2 iki kardeştir ama farklı mahallelerde yaşar. NF1 (17q) cilt üzerinde café-au-lait lekeleri ve gözde Lisch nodülleri ile tanınır. NF2 (22q) ise her iki kulakta schwannom ile sağırlaştıran bir hastalıktır (bilateral akustik).",
+      "ai_coding": "🤖 Kodlama: NF1=17q=Café-lait+Lisch+Nörofibrom. NF2=22q=Bilateral akustik schwannom."
+    },
+    {
+      "id": "path_b5A_021",
+      "question": "İnme (stroke) patolojisinde iskemik ile hemorajik infarktın farkı nedir?",
+      "answer": "İskemik inme: [[Liquefikatif nekroz]] → Kavite oluşumu. Hemorajik: [[Hipertansiyon]] veya amiloid sebebiyle.",
+      "difficulty": "Orta",
+      "tags": [
+        "İnme",
+        "İskemik",
+        "Hemorajik"
+      ],
+      "story_hint": "💡 HİKAYE: İskemik inme beynin \"susuzluktan ölen\" bölgesidir: liquefikatif nekroz ile yumuşar ve kavite oluşur. Hemorajik inme ise beyin içi \"su baskını\"dır: hipertansiyon damarı patlatır ve putamende kanama olur.",
+      "ai_coding": "🤖 Kodlama: İskemik = Liquefikatif nekroz. Hemorajik = HT+Putamen. İskemik geç dönüşüm = Hemorajik."
+    },
+    {
+      "id": "path_b5A_022",
+      "question": "ALS (Amyotrofik lateral skleroz) patolojisi ve SOD1 mutasyonunun önemi nedir?",
+      "answer": "[[Hem üst hem alt motor nöron]] dejenerasyonu. Patognomik marker: [[TDP-43]] inklüzyonları.",
+      "difficulty": "Zor",
+      "tags": [
+        "ALS",
+        "Motor Nöron",
+        "SOD1"
+      ],
+      "story_hint": "💡 HİKAYE: ALS hem üst hem alt motor nöronları yok eden bir seri katildir: üst nöronlar spastisite, alt nöronlar atrofi ve fasikülasyon yapar. TDP-43 inklüzyonları olay yerinde bırakılan parmak izleridir. SOD1 mutasyonu familyal vakaların anahtarıdır.",
+      "ai_coding": "🤖 Kodlama: ALS = 'Hem üst hem alt motor nöron'. TDP-43 = ALS patolojik marker."
+    }
+  ],
+  "id": "pathology_batch5A-topic-0",
+  "topic": "Onarım + Endokrin + Sinir Sistemi (Batch 5A)",
+  "sub_topic": "Onarım + Endokrin + Sinir Sistemi (Batch 5A)",
+  "content_summary": "",
+  "tus_spots": []
+}

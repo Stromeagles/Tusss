@@ -10,7 +10,8 @@
       {
         "id": "fc-vrna-100",
         "question": "İnfluenza virüsünün pandemilere yol açan büyük değişimine ne denir?",
-        "answer": "Antijenik Shift."
+        "answer": "Antijenik Shift.",
+        "story_hint": "💡 HİKAYE: Antijenik Shift, İnfluenza'nın 'deprem'idir — segmentler başka bir suşla yer değiştirir ve tamamen yeni bir virüs doğar. Drift hafif sallanmadır, Shift ise tsunami gibi pandemi başlatır."
       }
     ],
     "tus_spots": [
@@ -28,7 +29,8 @@
       {
         "id": "fc-vrna-110",
         "question": "HIV hangi hücre reseptörüne bağlanır?",
-        "answer": "CD4 (ve CCR5/CXCR4)."
+        "answer": "CD4 (ve CCR5/CXCR4).",
+        "story_hint": "💡 HİKAYE: HIV, CD4 kapısını gp120 anahtarıyla açar ve CCR5/CXCR4 sürgüsünü de kaldırır. İçeri girince T hücrelerini tek tek yıkar — bağışıklık ordusunun generalini esir alan bir düşman gibi."
       }
     ],
     "tus_spots": [

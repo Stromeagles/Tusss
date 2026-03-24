@@ -1,0 +1,98 @@
+[
+  {
+    "id": "micro-ch1-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Genel Mikrobiyoloji",
+    "topic": "Bakteri Hücre Yapısı",
+    "sub_topic": "Hücre Duvarı (Peptidoglikan)",
+    "content_summary": "Bakteriye şekil verir ve iç osmotik basıncı dengeler. Gram pozitiflerde kalın, negatiflerde incedir. Beta 1-4 bağları içerir.",
+    "flashcards": [
+      {
+        "id": "fc-micro-001",
+        "question": "Gram pozitif bakterilerde peptidoglikan hangi reseptör üzerinden sitokin salınımını uyarır?",
+        "answer": "TLR-2 reseptörleri üzerinden TNF-alfa ve IL-1 salınımını uyarır.",
+        "difficulty": "hard",
+        "tags": [
+          "Peptidoglikan",
+          "TLR-2"
+        ]
+      },
+      {
+        "id": "fc-micro-002",
+        "question": "Lizozim enzimi hücre duvarında hangi bağları parçalar?",
+        "answer": "Beta 1-4 endoglikozid bağlarını parçalar.",
+        "difficulty": "medium",
+        "tags": [
+          "Enzim",
+          "Hücre Duvarı"
+        ]
+      },
+      {
+        "id": "fc-micro-003",
+        "question": "Much granülü hangi bakterinin L-formudur?",
+        "answer": "Mycobacterium tuberculosis",
+        "difficulty": "medium",
+        "tags": [
+          "L-Form",
+          "Tüberküloz"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Gram pozitiflerde kalın peptidoglikan endotoksin benzeri aktivite gösterir.",
+      "Lizozim gram negatiflere porları nedeniyle etkisizdir.",
+      "Vankomisin sadece gram pozitiflere etkilidir (gram negatiflerde dış membran engeli).",
+      "Periplazmik aralıkta gram negatiflerde Beta-laktamaz enzimleri depolanır."
+    ],
+    "clinical_cases": [
+      {
+        "case": "Beta-laktam antibiyotik kullanımı sonrası bakterinin hücre duvarını kaybetmesine rağmen hayatta kalabildiği çoğalabilen forma ne ad verilir?",
+        "options": [
+          "Protoplast",
+          "Sferoplast",
+          "L-Form",
+          "Much granülü"
+        ],
+        "correct_answer": "L-Form",
+        "explanation": "Hücre duvarını kaybetmiş ama çoğalabilen forma L-Form denir.",
+        "id": "cc-micro-ch1-001-001"
+      }
+    ]
+  },
+  {
+    "id": "micro-ch1-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Genel Mikrobiyoloji",
+    "topic": "Bakteri Hücre Yapısı",
+    "sub_topic": "Kapsül",
+    "content_summary": "Bakteriyi fagositoza karşı korur. Sıklıkla polisakkarid yapıdadır. Temel savunma opsonizasyondur (IgG ve C3b).",
+    "flashcards": [
+      {
+        "id": "fc-micro-010",
+        "question": "Hangi bakterinin kapsülü Protein (poli-D-glutamik asit) yapıdadır?",
+        "answer": "Bacillus anthracis (Antraks/Şarbon)",
+        "difficulty": "hard",
+        "tags": [
+          "Kapsül",
+          "Şarbon"
+        ]
+      },
+      {
+        "id": "fc-micro-011",
+        "question": "Kapsüler etkenlerin tespitinde kullanılan reaksiyonun adı nedir?",
+        "answer": "Quellung (Kapsül şişme) reaksiyonu.",
+        "difficulty": "medium",
+        "tags": [
+          "Teşhis",
+          "Kapsül"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Kapsül bakteriyi fagositoza karşı korur.",
+      "S. pyogenes kapsülü hyalüronik asit yapısındadır (kamufle eder).",
+      "Kapsüllü mikroorganizmalara karşı temel savunma Opsonizasyondur (IgG ve C3b).",
+      "Kapsül esansiyel bir yapı değildir, kaybedilirse virülans azalır."
+    ]
+  }
+]

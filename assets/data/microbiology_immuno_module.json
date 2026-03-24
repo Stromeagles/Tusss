@@ -12,16 +12,25 @@
         "question": "Hapten nedir ve nasıl immünojenik hale gelir?",
         "answer": "Antijenik olup tek başına immünojenik olmayan küçük moleküllerdir. Taşıyıcı bir proteine (adjuvan) bağlanarak immünojenik hale gelirler.",
         "difficulty": "medium",
-        "tags": ["Hapten", "İmmünojenite"]
+        "tags": [
+          "Hapten",
+          "İmmünojenite"
+        ],
+        "story_hint": "💡 HİKAYE: Hapten, bağışıklık sahnesinde tek başına şarkı söyleyemeyen küçük bir çocuktur. Taşıyıcı protein onu omuzuna alınca mikrofona ulaşır ve immün sistem konseri başlar."
       },
       {
         "id": "fc-imm-002",
         "question": "Antikorun epitopa bağlanan kısmına ne ad verilir?",
         "answer": "Paratop.",
         "difficulty": "easy",
-        "tags": ["Epitop", "Paratop"]
+        "tags": [
+          "Epitop",
+          "Paratop"
+        ],
+        "story_hint": "💡 HİKAYE: Epitop, antijenin üzerindeki 'parmak izi'dir. Paratop ise antikorun 'eli'dir — el, parmak izini kavrar ve tutar. Epitop-Paratop birleşmesi, anahtar-kilit uyumu gibidir."
       }
-    ]
+    ],
+    "tus_spots": []
   },
   {
     "id": "micro-imm-002",
@@ -36,21 +45,34 @@
         "question": "Enfeksiyon bölgesine ilk göç eden ve temel işlevi fagositoz olan hücre grubudur?",
         "answer": "Nötrofiller (Polimorf nüveli lökositler).",
         "difficulty": "easy",
-        "tags": ["Nötrofil", "Fagositoz"]
+        "tags": [
+          "Nötrofil",
+          "Fagositoz"
+        ],
+        "story_hint": "💡 HİKAYE: Nötrofiller, enfeksiyona ilk koşan itfaiyecilerdir. Fagositoz hortumlarıyla mikropları yutar — sayıca en kalabalık ve en hızlı müdahale ekibi onlardır."
       },
       {
         "id": "fc-imm-011",
         "question": "Doğal katil (NK) hücrelerin yüzey markerları nelerdir ve nasıl öldürürler?",
         "answer": "CD16 ve CD56. Perforin ve granzim aracılığıyla apoptozu tetikleyerek öldürürler.",
         "difficulty": "medium",
-        "tags": ["NK Hücre", "Perforin", "Granzim"]
+        "tags": [
+          "NK Hücre",
+          "Perforin",
+          "Granzim"
+        ],
+        "story_hint": "💡 HİKAYE: NK hücreleri, CD16 ve CD56 rozetli gizli ajanlar gibi dolaşır. MHC-I kimliğini gösteremeyen hücreleri (tümör veya virüslü) perforin mermisi ve granzim bombasıyla yok eder."
       },
       {
         "id": "fc-imm-012",
         "question": "MHC-II sunumu yapan temel antijen sunan hücreler (APC) hangileridir?",
         "answer": "Dendritik hücreler, Makrofajlar ve B lenfositler.",
         "difficulty": "medium",
-        "tags": ["APC", "MHC-II"]
+        "tags": [
+          "APC",
+          "MHC-II"
+        ],
+        "story_hint": "💡 HİKAYE: MHC-II, APC'lerin elindeki 'suç kanıtı tepsisi'dir. Dendritik hücreler, Makrofajlar ve B lenfositler bu tepsiyi CD4+ T hücresine gösterir — 'Bak, düşmanı yakaladım!' der."
       }
     ],
     "tus_spots": [
@@ -73,14 +95,22 @@
         "question": "Herediter anjioödem hangi kompleman düzenleyicisinin eksikliğinde görülür?",
         "answer": "C1 inhibitör (C1-INH) eksikliği.",
         "difficulty": "medium",
-        "tags": ["C1-INH", "Anjioödem"]
+        "tags": [
+          "C1-INH",
+          "Anjioödem"
+        ],
+        "story_hint": "💡 HİKAYE: C1-INH, komplemanın 'fren pedalı'dır. Eksik olunca fren patlar, bradikinin birikir ve damarlardan sıvı taşar — yüzde ve boğazda anjioödem krizi başlar."
       },
       {
         "id": "fc-imm-051",
         "question": "Neisseria enfeksiyonlarına (menenjit/gonore) duyarlılık artışı hangi kompleman eksikliklerinde görülür?",
         "answer": "MAC (C5b-9) veya Properdin eksikliği.",
         "difficulty": "hard",
-        "tags": ["MAC", "Neisseria"]
+        "tags": [
+          "MAC",
+          "Neisseria"
+        ],
+        "story_hint": "💡 HİKAYE: MAC (C5b-9), bakterinin duvarına açılan 'tünel'dir. Neisseria özellikle bu tünelle öldürülür — MAC veya Properdin eksikse tünel açılmaz ve meningokok serbest kalır."
       }
     ],
     "tus_spots": [

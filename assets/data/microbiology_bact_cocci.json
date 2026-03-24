@@ -12,21 +12,34 @@
         "question": "Gram pozitif bir kokun Stafilokok mu yoksa Streptokok mu olduğunu ayıran temel test nedir?",
         "answer": "Katalaz testi. (Stafilokoklar +, Streptokoklar -).",
         "difficulty": "easy",
-        "tags": ["Katalaz", "Stafilokok", "Streptokok"]
+        "tags": [
+          "Katalaz",
+          "Stafilokok",
+          "Streptokok"
+        ],
+        "story_hint": "💡 HİKAYE: Katalaz testi, gram pozitif kokların 'kimlik kontrolü'dür. Stafilokok H2O2'yi köpürterek parçalar (katalaz +), Streptokok köpürtemez (katalaz -). Köpük varsa Stafilokok, yoksa Streptokok."
       },
       {
         "id": "fc-micro-201",
         "question": "Novobiyosin direnci ile diğer koagülaz negatif stafilokoklardan (KNS) ayrılan, özellikle genç kadınlarda İYE yapan bakteri?",
         "answer": "Staphylococcus saprophyticus.",
         "difficulty": "medium",
-        "tags": ["S. saprophyticus", "Novobiyosin"]
+        "tags": [
+          "S. saprophyticus",
+          "Novobiyosin"
+        ],
+        "story_hint": "💡 HİKAYE: S. saprophyticus, novobiyosine direnen asi bir koagülaz negatif stafilokoktur. Genç kadınlarda İYE yapar — 'Safir kız novobiyosine direnir' diye hatırla, balayı sistitinin sebebi budur."
       },
       {
         "id": "fc-micro-202",
         "question": "Staphylococcus aureus'un immun sistemden kaçışını sağlayan, IgG'nin Fc kısmına bağlanan yüzey proteini hangisidir?",
         "answer": "Protein A.",
         "difficulty": "medium",
-        "tags": ["S. aureus", "Protein A"]
+        "tags": [
+          "S. aureus",
+          "Protein A"
+        ],
+        "story_hint": "💡 HİKAYE: Protein A, IgG'nin Fc kısmını ters tutar — antikor bağlanır ama opsonizasyon çalışmaz. S. aureus bu proteini bir kalkan gibi kullanır, bağışıklık sisteminin silahını etkisiz bırakır."
       }
     ],
     "tus_spots": [
@@ -49,21 +62,36 @@
         "question": "Alfa hemolitik (yeşil), optokine duyarlı ve kapsüllü olan, toplum kökenli pnömoninin en sık nedeni?",
         "answer": "Streptococcus pneumoniae (Pnömokok).",
         "difficulty": "easy",
-        "tags": ["Pnömokok", "Alfa Hemoliz", "Optokin"]
+        "tags": [
+          "Pnömokok",
+          "Alfa Hemoliz",
+          "Optokin"
+        ],
+        "story_hint": "💡 HİKAYE: Pnömokok, alfa hemolitik yeşil bir daire içinde oturan, optokine duyarlı lanset diplokoktur. Toplum kökenli pnömoninin kralıdır — pas rengi balgam onun mührüdür."
       },
       {
         "id": "fc-micro-251",
         "question": "A grubu beta hemolitik streptokokların (S. pyogenes) ayırıcı tanısında kullanılan spesifik duyarlılık testi?",
         "answer": "Basitrasin duyarlılığı. (A grubu duyarlıdır).",
         "difficulty": "medium",
-        "tags": ["S. pyogenes", "A Grubu", "Basitrasin"]
+        "tags": [
+          "S. pyogenes",
+          "A Grubu",
+          "Basitrasin"
+        ],
+        "story_hint": "💡 HİKAYE: A grubu streptokok (S. pyogenes), basitrasin diskinin etrafında büyüyemez — tıpkı yangın hattının içine giremeyen alevler gibi. B grubu (S. agalactiae) ise basitrasine direnir."
       },
       {
         "id": "fc-micro-252",
         "question": "%6.5 NaCl'de üreyebilen ve PYR testi pozitif olan gram pozitif kok grubu?",
         "answer": "Enterokoklar.",
         "difficulty": "medium",
-        "tags": ["Enterokok", "NaCl", "PYR"]
+        "tags": [
+          "Enterokok",
+          "NaCl",
+          "PYR"
+        ],
+        "story_hint": "💡 HİKAYE: Enterokoklar, %6.5 tuzlu su ve safrada bile yaşayan dayanıklı askerlerdir. PYR testi pozitiftir — tuz gölünde yüzen bu bakteriler, hastane enfeksiyonlarının korkulu düşmanıdır."
       }
     ],
     "tus_spots": [
@@ -75,9 +103,16 @@
     "clinical_cases": [
       {
         "case": "Boğaz ağrısı sonrası Basitrasin duyarlı, beta hemolitik koloniler saptanan bir çocukta 3 hafta sonra idrarda renk değişikliği ve ödem gelişmiştir. En olası tanı nedir?",
-        "options": ["Akut Romatizmal Ateş", "Poststreptokokal Glomerülonefrit", "Kızıl", "Toksik Şok Sendromu"],
-        "correct_answer": "Poststreptokokal Glomerülonefrit",
-        "explanation": "A grubu beta hemolitik streptokok (S. pyogenes) enfeksiyonu sonrası gelişen nefritik tablo tipiktir. ARA için eklem ağrısı veya kalp bulguları beklenirdi."
+        "options": [
+          "A) Akut Romatizmal Ateş",
+          "B) Akut Poststreptokokal Glomerülonefrit",
+          "C) Kızıl",
+          "D) Toksik Şok Sendromu",
+          "E) IgA Nefropatisi"
+        ],
+        "correct_answer": "B) Akut Poststreptokokal Glomerülonefrit",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: S. pyogenes (A Grubu Beta Hemolitik Streptokok) enfeksiyonlarından sonra gelişen 'steril' komplikasyonları iyi ayırt etmek gerekir. \n\n🎓 HOCA ÖZETİ:\n- APSGN (Akut Poststreptokokal Glomerülonefrit): Hem boğaz hem deri (impetigo) enfeksiyonu sonrası gelişebilir. İdrarda çay rengi görünümü (hematüri) ve ödem klasiktir.\n- ARA (Akut Romatizmal Ateş): SADECE boğaz enfeksiyonu (farenjit) sonrası gelişir. Deri enfeksiyonu sonrası ARA GÖRÜLMEZ.\n- Kızıl = Scarlet Fever; döküntü ile seyreder.\n- Toksik Şok Sendromu = Hipotansiyon + şok ile seyreder.\n- IgA Nefropatisi = Asendan seyirli, post-streptokokal değildir.\n- Mekanizma: Tip 3 aşırı duyarlılık (immün kompleks çökmesi).",
+        "id": "cc-micro-bact-cocci-002-001"
       }
     ]
   }

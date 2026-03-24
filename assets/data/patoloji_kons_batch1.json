@@ -1,0 +1,1111 @@
+{
+  "subject": "Patoloji",
+  "chapter": "Patoloji - Konsolide (Batch 1)",
+  "flashcards": [
+    {
+      "id": "patk_001",
+      "question": "Hücre zedelenmesinin geri dönüşümsüz (irreversibl) aşamaya geçtiğini gösteren membran bulgusu nedir?",
+      "answer": "Plazma membranında yaygın hasar (AMOF - Amorf matrikssiz opasiteler) ve mitokondri hasarı",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Bir kalenin (hücre) surları (membran) yıkılınca artık geri dönüş yoktur — düşman içeri girmiştir. Mitokondri ise kalenin enerji santrali; o da çökünce kale tamamen düşer. AMOF = 'Artık Mücadele Olanaksız, Firar!'"
+    },
+    {
+      "id": "patk_002",
+      "question": "Hücre içinde mitokondri membranında permeabilite artışına yol açan sitokrom C salınımı hangi yolağı tetikler?",
+      "answer": "[[Apoptoz]] ([[İntrinsik yolak]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Mitokondri bir hapishane, sitokrom C ise kaçan mahkum. Mahkum kaçınca (salınım) içeriden alarm çalar — hücre kendi kendini yok etme kararı alır (intrinsik apoptoz). Kaçış içeriden başladığı için 'intrinsik' yolak."
+    },
+    {
+      "id": "patk_003",
+      "question": "Apoptozun ekstrinsik (ölüm reseptörü) yolunu başlatan temel reseptörler hangileridir?",
+      "answer": "[[FAS]] ([[CD95]]) ve [[TNF reseptörleri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Hücrenin kapısında iki zil var: FAS zili (CD95) ve TNF zili. Dışarıdan biri bu zillere basınca 'ölüm emri' gelir — ekstrinsik yani dışarıdan gelen emirle hücre intihar eder. FAS = 'Fatal Alarm Sistemi'."
+    },
+    {
+      "id": "patk_004",
+      "question": "Apoptozda intraselüler proteolitik kaskadı başlatan anazim (enzim) ailesi nedir?",
+      "answer": "[[Kaspazlar]] (Özellikle inici kaspaz 8 ve 9, uygulayıcı kaspaz 3)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kaspazlar, hücrenin cellat ekibi gibidir. Komutanlar (kaspaz 8 ve 9) emri verir, infazcı (kaspaz 3) hücreyi parçalar. 'KASPaz' = 'Kesin Artık Son Perdedir, az kaldı!' diye bağırırlar."
+    },
+    {
+      "id": "patk_005",
+      "question": "Kazeifikasyon nekrozu en klasik hangi hastalıkta görülür?",
+      "answer": "[[Tüberküloz]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: 'Kazeifikasyon' kelimesi peynir (caseus) demek. Tüberküloz basili dokuyu peynir gibi yumuşak, beyaz-sarı, ufalanan bir kıvama getirir. TB hastasının akciğeri sanki peynir fabrikasına dönmüş!"
+    },
+    {
+      "id": "patk_006",
+      "question": "Sıvılaşma (Likuifaksiyon) nekrozu vücutta en sık nerede görülür?",
+      "answer": "[[Merkezi Sinir Sistemi]] izkemileri (Beyin [[enfarktüs]]ü) ve bakteriyel/mantar [[enfeksiyon]]ları",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Beyin zaten yumuşak bir organdır — oksijensiz kalınca tamamen sıvılaşır, eriyik çorbaya döner. 'Likör' (sıvı) gibi olur. Bakteriler de enzimleriyle dokuyu çorba kıvamına getirir. Beyin = sıvılaşma!"
+    },
+    {
+      "id": "patk_007",
+      "question": "Yağ nekrozu (Enzimatik yağ nekrozu) tipik olarak hangi organda / hastalıkta görülür?",
+      "answer": "[[Akut Pankreatit]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Pankreas yağ sindiren lipaz enzimlerinin deposu. Akut pankreatitte bu enzimler kaçar ve etraftaki yağ dokusunu 'sindirir' — adeta yağı eritir. Pankreasın yağ yakma makinesi kontrolden çıkmış!"
+    },
+    {
+      "id": "patk_008",
+      "question": "Fibrinoid nekroz hangi durumlarda görülür?",
+      "answer": "[[İmmün kompleks]] vaskülitleri ve malign [[hipertansiyon]]da kan damarı duvarında",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Damar duvarına immün kompleksler ve yüksek tansiyon birlikte saldırır. Duvar fibrin gibi parlak pembe bir görünüm alır — sanki damar duvarı fibrin boyasına batırılmış. 'FİBRİNoid' = fibrin benzeri görünüm, damar duvarında!"
+    },
+    {
+      "id": "patk_009",
+      "question": "Kalpte iskemi sonrası gelişen en patognomonik nekroz tipi hangisidir?",
+      "answer": "[[Koagülasyon nekrozu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kalp kasında kan donunca (koagülasyon) hücreler şekillerini korur ama ölüdür — mumyalanmış askerler gibi. Beyin hariç tüm solid organ iskemilerinde bu olur. Kalp = Koagülasyon, ikisi de 'K' ile başlar!"
+    },
+    {
+      "id": "patk_010",
+      "question": "Hücresel atrofinin nedenlerinden biri olan ubikitin-proteazom yolağını aktive eden durum nedir?",
+      "answer": "Beslenme yetersizliği, inaktivite (Kas atrofisi)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Açlık ve hareketsizlik hücreye 'fazlalıkları at!' emri verir. Ubikitin etiketçi, proteazom ise çöp öğütücüdür — gereksiz proteinleri etiketleyip parçalar. Yatağa mahkum hastanın kasları böyle erir."
+    },
+    {
+      "id": "patk_011",
+      "question": "Stratifiye yassı epitelin metaplazi ile kolumnar (silindirik) epitele dönüştüğü klasik hastalık örneği nedir?",
+      "answer": "[[Barrett Özofagusu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Barrett adlı bir adam sürekli reflüden şikayet eder. Mide asidi özofagusa o kadar çok gelir ki, özofagus 'ben yassı epitelle baş edemiyorum, bari mide gibi silindirik epitele döneyim' der. Bu dönüşüm = metaplazi!"
+    },
+    {
+      "id": "patk_012",
+      "question": "Kanser dışı epitelde displazi nedir?",
+      "answer": "Hücrelerin şekil ve boyutlarında düzensizlik, polarite kaybı (genellikle metaplastik veya hiperplastik epitelde pre-kanseröz durum)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Normal epitel düzenli bir okul sınıfı gibidir — herkes sırasında oturur. Displazide öğrenciler sıralarını terk eder, boyları ve şekilleri farklılaşır, kaos başlar. Henüz tam isyan (kanser) yok ama alarm zili çalıyor!"
+    },
+    {
+      "id": "patk_013",
+      "question": "Kurşun zehirlenmesinde ve CMV enfeksiyonlarında hücrede mikroskopla görülen intranükleer bulgu nedir?",
+      "answer": "[[İnklüzyon cisimcikleri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kurşun ve CMV virüsü çekirdeğe girince oraya 'hediye paketi' bırakır — bu paketler inklüzyon cisimcikleridir. CMV'de 'baykuş gözü' gibi dev inklüzyonlar, kurşunda ise asit-fast inklüzyonlar görülür."
+    },
+    {
+      "id": "patk_014",
+      "question": "Russel cisimcikleri ve Dutcher cisimcikleri hangi hücrede biriken immünoglobulinleri temsil eder?",
+      "answer": "[[Plazma hücreleri]] ([[Multipl Myelom]] vb.)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Plazma hücreleri antikor fabrikasıdır. Miyelomda fabrika bozulunca üretilen antikorlar depoda birikir: Russel (sitoplazmada) ve Dutcher (çekirdekte). 'RuSSeL = Sitoplazmada Stok, DutCHer = ÇEkirdekte' diye hatırla."
+    },
+    {
+      "id": "patk_015",
+      "question": "Alkolik karaciğer hastalığında hepatositler içinde biriken eozinofilik inklüzyonlara ne ad verilir?",
+      "answer": "[[Mallory cisimcikleri]] ([[Mallory denkleri]] - [[intermedier filamentler]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Alkolik Mallory Bey her gece içer, karaciğerine pembe (eozinofilik) ip yumakları birikir — bunlar keratin filamentlerin dolaşık hali. Mallory = Malt (bira) + Lory (ip yumağı) diye düşün!"
+    },
+    {
+      "id": "patk_016",
+      "question": "Hücre zedelenmesinde biriken ve 'Yaşlanma pigmenti' olarak bilinen lipid-protein kompleksi nedir?",
+      "answer": "[[Lipofuskin]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Yaşlı bir teyzenin evinde yıllar içinde biriken eski eşyalar gibi, hücrede de Lipofuskin birikir — yağ (lipo) + kahverengi (fuscus) = yaşlanma lekesi. Zararsızdır ama hücrenin yaşını ele verir!"
+    },
+    {
+      "id": "patk_017",
+      "question": "Gümüş lekeleriyle boyanan, genelde diyabet ve hipertansiyonda görülen küçük damar duvarı kalınlaşması nedir?",
+      "answer": "[[Hyalin arteriyoloskleroz]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Diyabet ve hipertansiyon ikilisi küçük damarları 'cam gibi' (hyalin = cam) kalınlaştırır. Gümüş boyası ile parıldar. Damar duvarı sanki şeker ve tuzla kaplanmış bir cam boru olmuş!"
+    },
+    {
+      "id": "patk_018",
+      "question": "Ölü dokulardaki (nekrotik) kalsifikasyon tipine ne ad verilir?",
+      "answer": "[[Distrofik kalsifikasyon]] ([[Serum kalsiyum]] düzeyi normaldir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: 'Distrofik' = hasarlı doku. Ölü dokunun üzerine kalsiyum taşları yağar ama kandaki kalsiyum normaldir — sorun dokuda! Bir mezarlığa mermer taş dikmek gibi düşün: taş (kalsiyum) normal, ama yer (doku) ölü."
+    },
+    {
+      "id": "patk_019",
+      "question": "Metastatik kalsifikasyon hangi durumda görülür?",
+      "answer": "[[Hiperkalsemi]] durumlarında (Böbrek yetmezliği, hiperparatiroidi) normal dokulara çökmesi",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kanda fazla kalsiyum olunca (hiperkalsemi), kalsiyum bir turist gibi sağlıklı organlara 'metastaz' yapar. Böbrek bozulunca veya parathormon fazla olunca kalsiyum taşar ve normal dokuya çöker."
+    },
+    {
+      "id": "patk_020",
+      "question": "Hücre yaşlanmasından sorumlu en önemli telomer kısalması mekanizmasını hangi enzim engeller (kök hücre ve kanser hücrelerinde)?",
+      "answer": "[[Telomeraz]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Telomerler kromozomun ucundaki koruyucu kapak — her bölünmede kısalır, mumun erimesi gibi. Telomeraz ise mumu yeniden uzatan sihirli el. Kanser hücreleri bu sihri çalarak ölümsüz olur!"
+    },
+    {
+      "id": "patk_021",
+      "question": "Akut inflamasyonun baş roldeki (ilk 24 saat) iltihap hücresi hangisidir?",
+      "answer": "Polimorfonüveli Lökosit ([[PMNL]] / [[Nötrofil]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Akut iltihap bir yangın ihbarı gibidir. İlk olay yerine koşan itfaiyeciler nötrofillerdir — hızlı, çok sayıda ve ilk 24 saatte sahadadırlar. Nötrofil = 'Number 1' (1. gelen), PMNL = 'Patlama Müdahale Nöbet Lökositi'."
+    },
+    {
+      "id": "patk_022",
+      "question": "Kronik inflamasyonun baş roldeki hücreleri hangileridir?",
+      "answer": "[[Makrofajlar]] ve [[Lenfositler]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kronik iltihap uzun süreli bir savaştır. Nötrofiller (acil ekip) yorulup gidince yerlerine 'uzman kuvvetler' gelir: Makrofajlar (ağır silah) ve Lenfositler (istihbarat). MakroLenfo = Kronik'in kahramanları."
+    },
+    {
+      "id": "patk_023",
+      "question": "Akut inflamasyonda vazodilatasyonu başlatan temel vazoaktif amin nedir?",
+      "answer": "[[Histamin]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Histamin mast hücrelerinin cebindeki 'acil genişlet' düğmesidir. Bir arı soktuğunda mast hücresi bu düğmeye basar, damarlar genişler, bölge kızarır ve şişer. HİSTAmin = 'Hemen İltihap Sinyali Tetikleyen Amin'."
+    },
+    {
+      "id": "patk_024",
+      "question": "Lökositlerin adezyonunu (endotele yapışmasını) sağlayan ana moleküller hangileridir?",
+      "answer": "[[İntegrinler]] ve [[Selektinler]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Lökosit akan bir nehirde (kan) duvar kenarına yapışmaya çalışan bir kurbağa gibidir. Selektinler önce hafifçe tutunmasını (yuvarlanma), İntegrinler ise sıkıca yapışmasını sağlar. Selektin = Seçici tutunma, İntegrin = İntegral (sıkı) bağ."
+    },
+    {
+      "id": "patk_025",
+      "question": "Diapedez (Endotel hücreleri arasına lökosit geçişi) sürecinde hangi adezyon molekülü önemlidir?",
+      "answer": "[[PECAM-1]] ([[CD31]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Diapedez = damardan geçiş. PECAM-1 (CD31) endotel hücreleri arasındaki 'kapı kilidi'dir. Lökosit bu kilide anahtarını sokar ve iki endotel hücresi arasından sızar. PECAM = 'Passage Exit CAM' (geçiş çıkış molekülü)."
+    },
+    {
+      "id": "patk_026",
+      "question": "En güçlü lökosit kemotaktik faktörleri (Kemotaksis yaptıranlar) nelerdir?",
+      "answer": "[[C5a]], [[LTB4]] ([[Lökotrien B4]]), [[IL-8]], Bakteriyel ürünler",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kemotaksis = lökositi çağıran GPS sinyali. Dört büyük çağrıcı var: C5a (kompleman çığlığı), LTB4 (lipid alarmı), IL-8 (interlökin sireni), bakteri kokusu. Kodla: 'C5-LT-IL8-Bakteri = Çabuk Lütfen İlerle Buraya!'"
+    },
+    {
+      "id": "patk_027",
+      "question": "Fagositoz sonrası mikropları öldüren oksijene bağımlı en önemli enzim mekanizması nedir?",
+      "answer": "[[NADPH oksidaz]] sistemi (Solunum patlaması - Respiratory burst)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Nötrofil mikrobu yutunca içeride bir 'oksijen bombası' patlatır — bu NADPH oksidaz sistemidir. Serbest oksijen radikalleri mikrobu yakar. 'Respiratory burst' = solunum patlaması, nötrofilin atom bombası!"
+    },
+    {
+      "id": "patk_028",
+      "question": "Kronik granülomatöz inflamasyonun en spesifik epiteloit hücre öncülü nedir?",
+      "answer": "[[Aktive makrofajlar]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Makrofajlar savaşta deneyim kazanınca 'terfi ederek' epiteloid hücreye dönüşür — sanki askerden generale terfi! Bu aktive makrofajlar bir araya gelince granülom adlı özel birlikler oluşturur."
+    },
+    {
+      "id": "patk_029",
+      "question": "Tüberküloz granülomunun tipik dev hücresi ve özelliği nedir?",
+      "answer": "[[Langhans dev hücresi]] (Nükleusları periferde at nalı şeklinde dizilmiş)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Langhans dev hücresini bir at nalı düşün — çekirdekler kenarda at nalı gibi dizilmiş. TB basili o kadar inatçıdır ki makrofajlar birleşerek dev bir hücre olur. Langhans = 'Lang (uzun) Hans at nalı takar'."
+    },
+    {
+      "id": "patk_030",
+      "question": "Yabancı cisim granülomlarındaki dev hücrelerin özelliği nedir?",
+      "answer": "[[Yabancı cisim dev hücresi]] (Nükleusları sitoplazmaya dağınık yerleşmiş)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Yabancı cisim dev hücresi kaotik bir kalabalık gibi — çekirdekler rastgele dağınık. Langhans'ta düzenli at nalı vardı, ama yabancı cisimde düzensiz! Yabancı = düzensiz, TB = düzenli (at nalı)."
+    },
+    {
+      "id": "patk_031",
+      "question": "Sarkoidoz granülomlarında görülebilen inklüzyonlar nelerdir?",
+      "answer": "[[Asteroid cisimcikleri]] ve [[Schaumann cisimcikleri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Sarkoidoz'un granülomlarında iki hediye var: Asteroid (yıldız şekilli) ve Schaumann (kabuk/istiridye şekilli kalsifiye). Sarkoidoz = 'Star (Asteroid) ve Shell (Schaumann)' — yıldız ve istiridye ikilisi!"
+    },
+    {
+      "id": "patk_032",
+      "question": "Araşidonik asit metabolizmasından sentezlenen ve ağrı/ateş oluşumundan sorumlu mediatör nedir?",
+      "answer": "[[Prostaglandinler]] (Örn: [[PGE2]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: ProstaglandinE2 bir 'ateş ve ağrı DJ'i' gibidir — müziği (iltihap sinyalini) açar, vücut ateşlenir ve ağrır. Aspirin ve NSAİİ'ler bu DJ'in fişini çeker (COX enzimini bloke eder). PGE2 = 'Pain Generator E2'."
+    },
+    {
+      "id": "patk_033",
+      "question": "Makrofajları aktive eden temel sitokin (T lenfositlerden salınır) hangisidir?",
+      "answer": "[[IFN-gama]] ([[İnterferon gama]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: T lenfosit bir komutan, makrofaj ise asker. Komutan IFN-gama adlı 'savaş emri' verir ve asker (makrofaj) aktive olur — süper güç kazanır! IFN-gama = 'İleri Fırlat Nötrofilleri-Gamma modu ON'."
+    },
+    {
+      "id": "patk_034",
+      "question": "Yara iyileşmesinde proliferatif fazın başroldeki hücresi hangisidir?",
+      "answer": "[[Fibroblastlar]] (ve [[anjiyogenez]] için endotel hücreleri)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Yara iyileşmesinin inşaat fazında fibroblastlar 'duvar ustası' olarak kollajen örüp yarayı kapatır. Endotel hücreleri ise 'tesisatçı' rolüyle yeni damarlar döşer (anjiyogenez). Fibro = fiber/lif dokuyan usta!"
+    },
+    {
+      "id": "patk_035",
+      "question": "Keloid ile hipertrofik skar arasındaki temel fark nedir?",
+      "answer": "[[Keloid]] yara sınırlarını taşar ve gerilemez ([[Tip I]]/III [[kollajen]] dengesi bozuk) , hipertrofik skar yara sınırları içindedir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Keloid sınır tanımayan bir istilacı — yara sınırını aşar ve geri çekilmez. Hipertrofik skar ise uslu bir çocuk — kabarır ama sınırın içinde kalır ve zamanla küçülebilir. Keloid = Kontrol dışı, Hipertrofik = Hudut içinde."
+    },
+    {
+      "id": "patk_036",
+      "question": "Granülasyon dokusu ile granülom arasındaki fark nedir?",
+      "answer": "[[Granülasyon dokusu]] onarım (yara iyileşmesi) dokusudur ([[anjiyogenez]]+fibroblast). [[Granülom]] ise spesifik bir kronik inflamasyon tipidir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: İsim benzerliği sınavda tuzak! GranülaSYON = yapım/tamir (Construction), GranülOM = tümör gibi yuvarlak iltihap topağı. Granülasyon = inşaat sahası (damar + fibroblast), Granülom = savunma kalesi (makrofaj topluluğu)."
+    },
+    {
+      "id": "patk_037",
+      "question": "Anjiyogenezi uyaran en potent faktör hangisidir?",
+      "answer": "[[VEGF]] ([[Vascular Endothelial Growth Factor]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: VEGF yeni damar yapımının baş mimarıdır. Doku hipoksik olunca 'VEGF çağrısı' yapar: 'Damar lazım, acil inşaat!' Kanser de bu hileli mimari kullanarak kendi damarını yapar. VEGF = 'Very Essential Growth Factor'."
+    },
+    {
+      "id": "patk_038",
+      "question": "Yara kontraksiyonundan (yaranın küçülmesi/büzülmesinden) sorumlu hücreler hangileridir?",
+      "answer": "[[Miyofibroblastlar]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Miyofibroblastlar yarı kas (miyo) yarı fibroblast — yaranın kenarlarını bir ip gibi çekerek büzüştürür. Bir çuvalın ağzını ip ile büzdüğünüzü düşünün — miyofibroblastlar o ipi çeken güçtür!"
+    },
+    {
+      "id": "patk_039",
+      "question": "İnflamasyonda akut faz reaktanlarının yapımını uyaran ana sitokin hangisidir?",
+      "answer": "[[IL-6]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: IL-6 karaciğere telefon eden bir haberci — 'Acil durum var, CRP, fibrinojen ve hepsiini üret!' der. Karaciğer hemen akut faz reaktanlarını basar. IL-6 = 'İltihap Lojistiği 6. kanal' — acil yayın yapar."
+    },
+    {
+      "id": "patk_040",
+      "question": "Chediak-Higashi sendromunda lökositlerde beklenen hücresel bozukluk nedir?",
+      "answer": "[[Fagozom ve lizozom füzyon defekti]] (Dev granüller görülür)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Chediak-Higashi'de lökositin çöp kamyonu (lizozom) ve çöp torbası (fagozom) birleşemez — sonuç dev çöp yığınları (dev granüller). CHediak = 'CH' = 'Cannot Hug (kucaklayamaz)' — füzyon bozuk!"
+    },
+    {
+      "id": "patk_041",
+      "question": "Kronik Granülomatöz Hastalıkta eksik olan enzim nedir?",
+      "answer": "[[NADPH oksidaz]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: KGH'da nötrofilin 'oksijen bombası' (NADPH oksidaz) bozuktur — mikrop yutulur ama öldürülemez! Katalaz-pozitif bakteriler (S. aureus) bu durumdan yararlanır. KGH = 'Kılıcı Gitti, Hapishane boş' — silah yok!"
+    },
+    {
+      "id": "patk_042",
+      "question": "Lökosit Adezyon Defekti (LAD) Tip 1'de hangi molekülde eksiklik vardır?",
+      "answer": "İntegrin eksikliği ([[CD18]] beta zinciri eksik)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: LAD-1'de lökositin 'yapıştırıcısı' (integrin/CD18) eksik — damar duvarına yapışamaz, enfeksiyon yerine gidemez. Göbek kordonu geç düşer çünkü nötrofiller gelemiyor. LAD = 'Lökosit Adezyon Defekti' = tutunma bozuk!"
+    },
+    {
+      "id": "patk_043",
+      "question": "Ödem sıvısının, protein içeriği düşük ve pürüzsüz hücresiz (berrak) formuna ne ad verilir?",
+      "answer": "[[Transüda]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Transüda = 'Trans' (geçiş) + 'süda' (ter gibi). Saf su gibi berrak, proteinsiz — sadece basınç farkıyla süzülmüş. Kalp yetmezliğinde bacaklar şişer ama sıvı temiz, iltihapsız. Trans = sadece su geçti!"
+    },
+    {
+      "id": "patk_044",
+      "question": "Protein içeriği yüksek (>3g/dL), inflamasyona sekonder gelişen ödeme ne denir?",
+      "answer": "[[Eksüda]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Eksüda = 'Ex' (dışarı) + protein dolu sıvı. İltihap damar geçirgenliğini artırınca proteinler de kaçar. Eksüda bulanık ve kirli — sanki iltihap çorbası. Transüda = temiz su, Eksüda = kirli çorba!"
+    },
+    {
+      "id": "patk_045",
+      "question": "Kalp yetmezliğine bağlı gelişen ilk histolojik pulmoner değişiklik nedir?",
+      "answer": "Kalp yetmezliği hücreleri (Eritrosit fagosite etmiş [[hemosiderin]] yüklü alveolar [[makrofajlar]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Sol kalp yetmezliğinde akciğere kan göllenir, eritrositler alveollere sızar. Alveolar makrofajlar bu eritrositleri yer ve hemosiderinle kahverengiye boyanır — 'Kalp yetmezliği hücreleri' = kana bulanmış temizlikçiler!"
+    },
+    {
+      "id": "patk_046",
+      "question": "Kronik sağ kalp yetmezliğinde karaciğerde görülen klasik makroskopik bulgu nedir?",
+      "answer": "Hindistan cevizi (Nutmeg) karaciğeri ([[Kronik pasif konjesyon]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Sağ kalp çöküncce kan karaciğere göl olur. Karaciğer kesitinde koyu kırmızı (konjesyon) ve açık (normal) alanlar karışır — tıpkı Hindistan cevizi (nutmeg) kesiti gibi benekli! Sağ kalp = Sag nutmeg."
+    },
+    {
+      "id": "patk_047",
+      "question": "Arteriyel tıkanıklık (ör: miyokard, böbrek, dalak) en çok hangi tip enfarktüse neden olur?",
+      "answer": "Soluk (Beyaz) [[Enfarktüs]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Arter tıkanınca kan gelemiyor, doku solgunlaşıyor — beyaz enfarktüs. Kalp, böbrek, dalak gibi solid organlar tek arterden beslenir: tıkanınca renk solar. 'Arter tıkalı = Albino enfarktüs' (beyaz/soluk)."
+    },
+    {
+      "id": "patk_048",
+      "question": "Venöz oklüzyon, çift kan kaynaklı organlar (akciğer) ve reperfüzyon sonrası görülen enfarktüs tipi nedir?",
+      "answer": "Kırmızı ([[Hemorajik]]) [[Enfarktüs]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Akciğer iki damardan beslenir (bronşiyal + pulmoner), venöz tıkanıklıkta kan geri göllenir — doku kana boğulur, kırmızı olur. Reperfüzyonda da önceden iskemik dokuya kan akınca hemorajik enfarktüs. Çift kaynak = kırmızı!"
+    },
+    {
+      "id": "patk_049",
+      "question": "Bir trombüsün endotele (duvara) yapışık olduğu ve içinde açık renkli kan akım izlerini içeren yapıya ne denir?",
+      "answer": "[[Zahn çizgileri]] (Canlıda oluştuğunu gösterir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Zahn çizgileri trombüsün 'parmak izi'dir — açık (trombosit+fibrin) ve koyu (eritrosit) katmanlar sıralanır. Bu çizgiler varsa trombüs canlıda oluşmuş demektir, postmortem pıhtıda yoktur. Zahn = Zebra çizgili!"
+    },
+    {
+      "id": "patk_050",
+      "question": "Derin Ven Trombozu (DVT) en sık nereye emboli yapar?",
+      "answer": "Akciğer ([[Pulmoner emboli]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Bacaktaki pıhtı (DVT) kopunca venöz akımla kalbe, oradan akciğere fırlar — pulmoner emboli! Bacak veni -> sağ kalp -> akciğer. DVT = 'Doğrudan Ven'den Titreterek akciğere gider'."
+    },
+    {
+      "id": "patk_051",
+      "question": "Paradoksal emboli nedir?",
+      "answer": "Venöz sistemden gelen embolinin, kalpteki bir sağ-sol şanttan (ör: Patent Foramen Ovale, [[VSD]]) geçerek sistemik arteriyel sisteme gitmesidir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Normalde venöz pıhtı akciğere gider ama kalpte bir 'gizli geçit' (PFO/VSD) varsa pıhtı sol tarafa kaçar ve beyne veya bacağa gider — paradoks! Ven pıhtısı arter embolisi yapar, mantığa aykırı = paradoks."
+    },
+    {
+      "id": "patk_052",
+      "question": "Kemik kırıklarından sonra en tipik beklenen emboli türü nedir?",
+      "answer": "[[Yağ embolisi]] (Bulgular: Dispne, Peteşi, Nörolojik bozukluk)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Uzun kemik kırılınca kemik iliğindeki yağ damlacıkları kana karışır — akciğere ve beyne gider. Triad: Dispne (nefes darlığı), Peteşi (deri altı kanamalar), Konfüzyon (beyin). Kemik kırığı = yağ sıçraması!"
+    },
+    {
+      "id": "patk_053",
+      "question": "Dalgıçlarda vurgun (Decompression Sickness / Caisson hastalığı) hangi gazın embolisi ile oluşur?",
+      "answer": "[[Azot]] ([[Nitrojen]]) gazı embolisi",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Dalgıç derinlerde yüksek basınçta azot (N2) kanına çözünür. Hızlı çıkınca basınç düşer, azot gazlaşıp kabarcıklar oluşturur — tıpkı gazoz kapağını açmak gibi! Dalgıç = Decompression = azot gazı patlaması."
+    },
+    {
+      "id": "patk_054",
+      "question": "Lökositik (beyaz) trombüs tipik olarak nerede oluşur?",
+      "answer": "Arteriyel sistemde ([[Trombosit]] ve [[fibrin]] baskın)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Arterlerde kan hızlı akar, bu yüzden trombositler ve fibrin ön plandadır — beyaz trombüs oluşur. Venlerde ise kan yavaş akar, eritrositler çöker — kırmızı trombüs. Arter = Ak (beyaz), Ven = Vişne (kırmızı)."
+    },
+    {
+      "id": "patk_055",
+      "question": "Virchow triadını (Trombüs risk faktörleri) oluşturan 3 ana unsur nedir?",
+      "answer": "1- [[Endotel hasarı]], 2- Kan akımında staz/türbülans, 3- [[Hiperkoagülabilite]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Virchow'un üç düşmanı: 1) Duvar hasarı (endotel çizilmiş), 2) Durgun su (staz/türbülans), 3) Yapışkan kan (hiperkoagülabilite). 'ESH' = Endotel-Staz-Hiperkoagülabilite. Bir nehirde çöp birikimi gibi!"
+    },
+    {
+      "id": "patk_056",
+      "question": "Tip 1 Aşırı Duyarlılık Reaksiyonunun mediatörü (ana antikoru) nedir?",
+      "answer": "[[IgE]] ([[Mast hücre]] degranülasyonunu tetikler)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: IgE mast hücresinin üzerindeki 'tetik'tir. Alerjen gelince IgE tetik çekilir, mast hücresi patlar (degranülasyon) ve histamin yağmuru başlar. Tip 1 = 1 dakikada olur (anında alerji). IgE = 'Immediate Explosion'."
+    },
+    {
+      "id": "patk_057",
+      "question": "Tip 1 Aşırı Duyarlılık Reaksiyonlarına örnekler nelerdir?",
+      "answer": "[[Anafilaksi]], [[Allerjik rinit]] (saman nezlesi), [[Astım]], [[Ürtiker]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Tip 1'in dört atlısı: Anafilaksi (şok), Allerjik rinit (hapşırık), Astım (hışıltı), Ürtiker (kaşıntı). Hepsi IgE-mast hücresi aracılı ve hızlıdır. 'AAAU!' diye bağırırsın — Anafilaksi, Alerji, Astım, Ürtiker!"
+    },
+    {
+      "id": "patk_058",
+      "question": "Tip 2 Aşırı Duyarlılık Reaksiyonunun patogenezi nedir?",
+      "answer": "Hücre yüzey antijenlerine karşı antikor gelişmesi ve [[opsonizasyon]]/[[kompleman]] aktivasyonu",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Tip 2'de antikorlar hücrenin üzerine yapışır — hücreyi 'işaretler'. Sonra kompleman veya fagositler gelip işaretli hücreyi yok eder. Hücre yüzeyine hedef tahtası çizilmiş gibi — Tip 2 = hedefli saldırı!"
+    },
+    {
+      "id": "patk_059",
+      "question": "Sarkoidoz, kontakt dermatit (zehirli sarmaşık) ve PPD tüberkülin testi hangi hipersensitivite tipidir?",
+      "answer": "[[Tip 4]] (Gecikmiş, T-hücre aracılı hipersensitivite)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Tip 4 = 'Tardif' (geç), T-hücre aracılı. PPD testinde kolunuza iğne batırılır, 48-72 saat sonra şişlik olur — gecikmiş reaksiyon! Antikor yok, T hücreleri iş başında. Tip 4 = 4 gün (48-72 saat) bekle, T hücresi gelsin."
+    },
+    {
+      "id": "patk_060",
+      "question": "Graves hastalığı ve Myastenia Gravis hastalıklarında gözlenen reseptör uyarıcı/bloke edici antikor reaksiyonu hangi tipe örnektir?",
+      "answer": "[[Tip 2]] Aşırı Duyarlılık",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Tip 2'nin özel alt tipi: reseptöre bağlanan antikorlar. Graves'te TSH reseptörünü uyarır (aşırı tiroid), MG'de asetilkolin reseptörünü bloke eder (kas güçsüzlüğü). Biri gaza basar, diğeri frene — ikisi de Tip 2!"
+    },
+    {
+      "id": "patk_061",
+      "question": "Goodpasture sendromu ve Otoimmün Hemolitik Anemi hangi hipersensitivite tipidir?",
+      "answer": "[[Tip 2]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Goodpasture'da antikorlar akciğer ve böbrek bazal membranına saldırır — hücre yüzeyine hedefli atak (Tip 2). OİHA'da antikorlar eritrositlerin üzerine yapışıp onları parçalar. İkisinde de hücre üzerinde antikor = Tip 2."
+    },
+    {
+      "id": "patk_062",
+      "question": "Tip 3 Aşırı Duyarlılık Reaksiyonunun mekanizması nedir?",
+      "answer": "[[İmmün kompleks]]lerin ([[Antijen-Antikor]]) dokulara (damar, böbrek, eklem) çökmesi",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Tip 3'te antijen ve antikor kanda birleşip 'çöp yığınları' (immün kompleksler) oluşturur. Bu çöpler damar, böbrek ve eklemlere çöker. Tip 3 = 3 yer: damar, böbrek, eklem. Çöp = Çöken immün kompleks."
+    },
+    {
+      "id": "patk_063",
+      "question": "Sistemik Lupus Eritematozus (SLE), Post-streptokoksik glomerulonefrit ve Serum Hastalığı hangi hipersensitivite tipidir?",
+      "answer": "[[Tip 3]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: SLE, PSGN ve serum hastalığı — üçünde de immün kompleksler dokulara çöker (Tip 3). Lupus kelebeği böbreğe konar (glomerülonefrit), streptokoktan sonra böbrek çöker, serum hastalığında tüm vücut etkilenir. 3 hastalık = Tip 3."
+    },
+    {
+      "id": "patk_064",
+      "question": "SLE (Lupus)'de en spesifik otoantikor hangisidir?",
+      "answer": "[[Anti-Sm]] ([[Anti-Sm]]ith) ve [[Anti-dsDNA]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Lupus hastası Smith Bey'in DNA'sına saldırılır! Anti-Sm (Smith antijeni) ve Anti-dsDNA en spesifik olanlarıdır. Anti-dsDNA ayrıca hastalık aktivitesiyle orantılıdır. 'SLE = Smith'in Lupusu, DNA'sı Eziliyor'."
+    },
+    {
+      "id": "patk_065",
+      "question": "İlaca bağlı lupusta (Drug-induced lupus) pozitifleşen en spesifik antikor nedir?",
+      "answer": "[[Anti-Histon]] antikoru",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: İlaç lupusu yapan ilaçlar (Hidralazin, İzoniyazid, Prokainamid) histon proteinlerine saldırı başlatır. Anti-Histon = ilaca bağlı lupusun parmak izi. 'HIP' ilaçları = Hidralazin, İzoniyazid, Prokainamid = Histon!"
+    },
+    {
+      "id": "patk_066",
+      "question": "Romatoid Artrit (RA) hastalarında hastalığa özgül ve tanı değeri yüksek olan otoantikor hangisidir?",
+      "answer": "[[Anti-CCP]] ([[Anti-Siklik Sirtuline Peptid]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: RA hastasının eklemleri ağrır, Anti-CCP o eklemin kimlik kartıdır — çok spesifik! RF (Romatoid Faktör) daha duyarlı ama daha az spesifik. CCP = 'Certain Clue for Particular (RA)' — kesin ipucu!"
+    },
+    {
+      "id": "patk_067",
+      "question": "Sjögren sendromunda görülen temel lezyonlar nelerdir ve karakteristik antikorları hangileridir?",
+      "answer": "Kuru göz (Keratoconjunctivitis sicca), kuru ağız (Xerostomia) / [[Anti-Ro]] ([[SSA]]) ve [[Anti-La]] ([[SSB]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Sjögren hastası 'kuru' bir insandır — gözü kuru, ağzı kuru. Anti-Ro ve Anti-La antikor ikilisi. 'Ro' = 'gözyaşı (tears) ROlled away' (kurudu), 'La' = 'LAcrimal (gözyaşı bezi) saldırı altında'. SSA ve SSB = Sicca Sendromu A/B."
+    },
+    {
+      "id": "patk_068",
+      "question": "Ciltte gerginleşme ve iç organlarda fibrozis ile giden Sistemik Skleroz'da (Skleroderma) en spesifik antikor hangisidir?",
+      "answer": "[[Anti-Scl-70]] ([[Anti-DNA topoizomeraz-1]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Skleroderma cildi taş gibi sertleştirir (sklero=sert). Anti-Scl-70 bu hastalığın parmak izi — SCL = Scleroderma, 70 = molekül ağırlığı 70 kDa. Diffüz form daha ağırdır, iç organları da etkiler."
+    },
+    {
+      "id": "patk_069",
+      "question": "CREST sendromunun harflerinin açılımı ve spesifik antikoru nedir?",
+      "answer": "Calcinosis, Raynaud, Esophageal dysmotility, Sclerodactyly, Telangiectasia / [[Anti-Sentromer antikoru]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: CREST = bir el düşün: C (kalsiyum birikimi), R (soğukta parmaklar beyazlar-Raynaud), E (yutma güçlüğü), S (sert parmaklar), T (deride kırmızı örümcekler). Anti-Sentromer antikoru = sentromer'e (kromozom merkezi) saldırı!"
+    },
+    {
+      "id": "patk_070",
+      "question": "Dermatomiyozite özgü otoantikor (interstisyel akciğer hastalığı ile de ilişkili) hangisidir?",
+      "answer": "[[Anti-Jo-1]] antikoru",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: 'Jo' adlı bir kadın hem kasları ağrıyor (miyozit) hem nefes alamıyor (interstisyel akciğer hastalığı) hem de derisi kızarmış (dermatomiyozit). Anti-Jo-1 = Jo'nun 1 numaralı düşmanı. DermatoMiyozit = Jo-1."
+    },
+    {
+      "id": "patk_071",
+      "question": "Primer Biliyer Kolanjit (Siroz) için patognomonik olan antikor hangisidir?",
+      "answer": "[[AMA]] ([[Anti-Mitokondrial Antikor]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Primer Biliyer Kolanjit'te safra kanalları yıkılır. AMA (Anti-Mitokondrial Antikor) patognomoniktir — mitokondrilere saldırı! AMA = 'Ama benim mitokondrilerime dokunma!' diye karaciğer çığlık atar."
+    },
+    {
+      "id": "patk_072",
+      "question": "X'e bağlı Agamaglobulinemi (Bruton Hastalığı)'nda defekt olan gen nedir ve klinik sonucu nasıldır?",
+      "answer": "[[BTK]] ([[Bruton Tirozin Kinaz]]) gen mutasyonu, [[B hücre]]leri olgunlaşamaz, tüm immünoglobulinler düşüktür.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Bruton adlı bir erkek çocuk (X'e bağlı = erkeklerde) sürekli enfeksiyon geçirir çünkü B hücreleri hiç büyüyemez. BTK geni bozuk, antikor fabrikası kurulamaz. Bruton = B hücreleri Tamamen Kayıp!"
+    },
+    {
+      "id": "patk_073",
+      "question": "DiGeorge Sendromunun klasik triad bulguları ve eksik yapısı nedir?",
+      "answer": "Timus aplazisi ([[T hücre]] defekti), Hipokalsemi (Paratiroid aplazisi), Konjenital kalp defektleri. (3. ve 4. faringeal poş gelişmez)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: DiGeorge bebeğin 3. ve 4. faringeal poşu gelişmemiş — Timus yok (T hücre eksik), Paratiroid yok (kalsiyum düşük), Kalp defektli. 'DiGeorge = Di (iki poş) + George: Timus-Paratiroid-Kalp üçlüsü eksik!'"
+    },
+    {
+      "id": "patk_074",
+      "question": "Şiddetli Kombine İmmün Yetmezlikte (SCID) en sık görülen eksiklik nedir?",
+      "answer": "Ortak gama zinciri mutasyonu (X'e bağlı), enzimatik olarak Adenozin Deaminaz ([[ADA]]) eksikliği",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: SCID = 'Şiddetli Çaresiz İmmün Defisit' — hem T hem B hücreleri çalışmaz. 'Balon çocuklar' steril ortamda yaşar. ADA eksikliğinde toksik metabolitler lenfositleri öldürür. SCID = en ağır immün yetmezlik!"
+    },
+    {
+      "id": "patk_075",
+      "question": "Wiskott-Aldrich sendromunun klinik üçlemesi (triadı) nedir?",
+      "answer": "[[Trombositopeni]], [[Egzama]], Tekrarlayan [[enfeksiyon]]lar (X'e bağlı resesif, [[WAS]] geni mutasyonu)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: WAS = 'Wiskott Aldrich Sendromu' triadı: TET = Trombositopeni (kanama), Egzama (kaşıntı), Tekrarlayan enfeksiyonlar. Erkek çocukta (X'e bağlı) hem kanamalı, hem kaşıntılı, hem hasta — WAS = 'What A Struggle!'"
+    },
+    {
+      "id": "patk_076",
+      "question": "AL tipi (Primer) Amiloidoz hangi durumda görülür ve yapısındaki fibriller nedir?",
+      "answer": "[[Multipl Miyelom]] veya Plasma hücre diskrazilerinde. Hafif zincir (Light chain) birikimi.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: AL = Amyloid Light chain. Multipl Miyelomda plazma hücreleri aşırı hafif zincir (L chain) üretir, bu fazlalık organlara çöker. AL = 'ALabildiğine Light chain üretildi, her yere çöktü!'"
+    },
+    {
+      "id": "patk_077",
+      "question": "AA tipi (Sekonder / Reaktif) Amiloidoz hangi hastalıklara ikincil gelişir ve öncül proteini nedir?",
+      "answer": "[[Romatoid Artrit]], FMF (Ailevi Akdeniz Ateşi), [[Tüberküloz]] gibi kronik yangılı hastalıklar / [[SAA]] ([[Serum Amiloid A]]).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: AA = Amyloid A, kronik inflamasyon sonucu. Vücut uzun süre yangıyla savaşınca SAA proteini aşırı üretilir ve amiloid olarak çöker. RA, FMF, TB = uzun savaş = AA birikimi. AA = 'Ateşli Artrit sonucu Amiloid'."
+    },
+    {
+      "id": "patk_078",
+      "question": "Amiloidisin tanısında kullanılan ve mikroskop altında elma yeşili (apple-green) refre vermesine neden olan boya nedir?",
+      "answer": "[[Kongo kırmızısı]] ([[Congo Red]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kongo Kırmızısı ile boyanan amiloid, polarize ışıkta elma yeşili parlar — kırmızı boya yeşil verir, sürpriz! Kongo = Kırmızı boyarsın ama yeşil görürsün. 'Kongo ile boyadın, elma yeşili gördün = Amiloid!'"
+    },
+    {
+      "id": "patk_079",
+      "question": "Alzheimer hastalığında beyinde biriken amiloid tipi hangisidir?",
+      "answer": "A-beta amiloid ([[APP]]'den derive edilir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Alzheimer = A-beta! APP (Amiloid Prekürsör Protein) yanlış kesilince A-beta peptidi oluşur ve beyinde plaklar halinde birikir. Beyindeki 'Amiloid çöplüğü' hafızayı siler. Alzheimer = A-beta = APP bozulması."
+    },
+    {
+      "id": "patk_080",
+      "question": "Hemodiyalize giren hastalarda kemik/eklemlerde biriken amiloid tipi hangisidir?",
+      "answer": "[[A-beta-2 mikroglobulin]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Diyaliz makinesi beta-2 mikroglobulini yeterince temizleyemez, yıllar içinde birikir ve eklemlere/kemiklere çöker. Diyaliz hastasının eklem ağrısı = beta-2 mikroglobulin amiloidozu. Diyaliz = beta-2 birikimi!"
+    },
+    {
+      "id": "patk_081",
+      "question": "Meduiller tiroid karsinomunda biriken amiloidin kaynağı hangi hormondur?",
+      "answer": "[[Kalsitonin]] (Pro[[kalsitonin]] derived)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Medüller tiroid karsinom C hücrelerinden (parafoliküler) köken alır — C hücreleri kalsitonin salgılar. Fazla kalsitonin amiloid olarak çöker. Medüller = C hücreleri = Calsitonin amiloidi. MTC = 'Medüller Tiroid Calsitonin'."
+    },
+    {
+      "id": "patk_082",
+      "question": "Marfan sendromunda hangi gende/proteinde mutasyon vardır?",
+      "answer": "[[Fibrillin-1]] ([[FBN1]] geni)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Marfan hastaları uzun boylu, uzun parmaklı (araknodaktili) — elastik dokuları zayıf çünkü Fibrillin-1 bozuk. Fibrillin = fibril + lin (bağlayıcı), bağ dokusu iskeletinin tutkası. MARfan = Mutant fibrillin ARızası."
+    },
+    {
+      "id": "patk_083",
+      "question": "Marfan sendromlu hastaların en korkulan kardiyovasküler komplikasyonu nedir?",
+      "answer": "[[Aort anevrizması]] ve disseksiyonu ([[Kistik medial nekroz]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Marfan'da aort duvarı zayıf — balon gibi şişer (anevrizma) ve sonra yırtılabilir (disseksiyon). Kistik medial nekroz = aort duvarının ortası çürümüş. Marfan'ın en büyük korkusu: aort patlaması!"
+    },
+    {
+      "id": "patk_084",
+      "question": "Kafa tası şekil bozuklukları (Örn: Kraniyosinostoz) ve sindaktili ile giden akondroplazi dışı iskelet displazilerine ne gen mutasyonu sebep olur?",
+      "answer": "[[FGFR]] gen mutasyonları (örn: [[FGFR]]2 -> Apert veya Crouzon, [[FGFR]]3 -> [[Akondroplazi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: FGFR = Fibroblast Growth Factor Receptor — kemik büyümesinin trafik ışığı. Mutasyon olunca ışık bozulur: FGFR3'te kırmızı yanar (kemik büyümesi durur = akondroplazi), FGFR2'de kafatası erken kapanır (kraniyosinostoz)."
+    },
+    {
+      "id": "patk_085",
+      "question": "Klasik Ehler-Danlos sendromu (Tip I/II) hangi kollajen tipinin mutasyonundan kaynaklanır?",
+      "answer": "[[Tip I]] veya [[Tip V]] [[kollajen]] defekti (Hiperelastik deri, eklem hipermobilitesi)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Ehler-Danlos hastaları sirk akrobatları gibidir — derileri lastik gibi uzar, eklemleri aşırı esner. Tip I/V kollajen bozuk olunca bağ dokusu gevşer. EDS = 'Elastic Deri Sendromu' — kollajen I ve V defekti."
+    },
+    {
+      "id": "patk_086",
+      "question": "Vasküler tip Ehler Danlos Sendromu (Tip IV)'nda hangi kollajen sentezinde hata vardır ve riski nedir?",
+      "answer": "[[Tip III]] [[kollajen]]. Aort/barsak rüptürü riski yüksektir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Vasküler EDS (Tip IV) en tehlikeli olanıdır — Tip III kollajen damar ve barsak duvarında bulunur. Bozulunca aort veya barsak patlayabilir! EDS Tip IV = 'IV' (intravenöz düşün) = Vasküler = damar patlar. Kollajen III = 3 harf: V-A-S (vasküler)."
+    },
+    {
+      "id": "patk_087",
+      "question": "Ailesel Hiperkolesterolemi (Tip IIa Hiperlipoproteinemi) hangi genin mutasyonuna bağlıdır?",
+      "answer": "[[LDL reseptör geni]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: LDL reseptörü karaciğerin 'kolesterol süpürgesi'dir. Mutasyon olunca süpürge bozulur, LDL kanda birikir — erken MI, ksantomlar oluşur. Homozigot formda çocukluk çağında kalp krizi! LDL reseptör = kolesterol çöpçüsü bozuk."
+    },
+    {
+      "id": "patk_088",
+      "question": "Kistik Fibrozis (CFTR geni) hangi yolla kalıtılır ve en sık görülen mutasyonu hangisidir?",
+      "answer": "[[Otozomal resesif]], [[Delta-F508]] delesyonu",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: CF'de klor kanalı (CFTR) bozuk — salgılar yapışkan ve koyu olur. Akciğerde tıkaç, pankreasta tıkaç, terde tuz fazla. Delta-F508 = en sık mutasyon, 508. pozisyondaki fenilalanin silinmiş. CF = 'Chloride Flow' bozuk."
+    },
+    {
+      "id": "patk_089",
+      "question": "Fenilketonüri'de eksik olan enzim nedir ve biriken madde zeka geriliğine yol açar?",
+      "answer": "[[Fenilalanin hidroksilaz]] ([[PAH]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: FKÜ'de fenilalanin tirozine dönüştürülemez çünkü PAH enzimi yok. Fenilalanin beyinde birikince zekayı zehirler. Bebek küfümsü kokulu, açık tenli (melanin yapılamaz). PAH = 'Phenylalanin Artık Hidroksilenemez'."
+    },
+    {
+      "id": "patk_090",
+      "question": "Tay-Sachs hastalığında hangi enzim eksiktir ve beyinde ne birikir?",
+      "answer": "[[Heksozaminidaz A]] eksik. [[GM2 gangliozid]] birikir. (Tipik bulgu: Göz dibinde Japon bayrağı - [[Cherry red spot]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Tay-Sachs bebeğinin gözüne bakınca Japon bayrağı (cherry red spot) görürsün — retinada kırmızı nokta! HeksA enzimi yok, GM2 beyinde birikir. Tay-Sachs = 'Two' (iki): Heks-A eksik, GM-2 birikir, göz kırmızı!"
+    },
+    {
+      "id": "patk_091",
+      "question": "Niemann-Pick hastalığında hangi enzim eksiktir ve biriken madde nedir? (A ve B tiplerinde)",
+      "answer": "[[Sfingomiyelinaz]] eksik. [[Sfingomiyelin]] birikir. ([[Makrofajlar]] köpüksü - foam cells - görülür, [[hepatosplenomegali]] vardır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Niemann-Pick = 'No Sphingomyelinase' — sfingomiyelinaz yok, sfingomiyelin birikir. Makrofajlar köpük dolu (foam cells) — sabun köpüğü gibi şişerler. 'Niemann Pick' = Nobody Picks up sphingomyelin (kimse temizlemiyor)!"
+    },
+    {
+      "id": "patk_092",
+      "question": "Gaucher hastalığında hangi enzim eksiktir?",
+      "answer": "[[Glukoserebrozidaz]]. [[Glikoserebrozid]] birikir. (Buruşuk kağıt görünümlü [[Gaucher hücreleri]] klasiktir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Gaucher hücreleri buruşuk kağıt gibi görünür — makrofajlar glikoserebrozid ile dolunca kırışık kağıt topağına benzer. Gaucher = 'Gauze' (gazlı bez) gibi buruşuk! Glukoserebrozidaz eksik, glikoserebrozid birikir."
+    },
+    {
+      "id": "patk_093",
+      "question": "Mukopolisakkaridozlar (Hurler, Hunter vs.) vücutta ne birikimiyle karakterizedir?",
+      "answer": "Dermatan sülfat, heparan sülfat ([[Glikozaminoglikanlar]] birikir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Mukopolisakkaridozlarda GAG (glikozaminoglikanlar) birikir — dermatan sülfat ve heparan sülfat. Hastaların yüzü kaba, eklemleri sert, kornea bulanık. 'MPS = Muko Poli Sakaridoz' = şeker zincirleri birikimi. Hurler en ağır!"
+    },
+    {
+      "id": "patk_094",
+      "question": "Hurler sendromuna kıyasla, Hunter sendromunun farklı olan özelliği ve kalıtım şekli nedir?",
+      "answer": "Korneal bulanıklık (clouding) yoktur. Kalıtım şekli X'e bağlı resesiftir (Diğerleri [[otozomal resesif]]tir).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Hunter avcıdır (hunter = avcı) — avcının gözleri keskin olmalı, bu yüzden kornea berraktır (bulanıklık yok)! Ayrıca Hunter X'e bağlıdır çünkü avcı erkektir. Hurler ise her şeyi etkiler (kornea dahil, otozomal resesif)."
+    },
+    {
+      "id": "patk_095",
+      "question": "Frajil X (Fragile X) Sendromunun genetik mekanizması nedir?",
+      "answer": "[[FMR1]] geninde CGG üçlü tekrar artışı ([[Trinükleotid tekrar]] hastalığı)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: X kromozomunda FMR1 geninde CGG tekrarı çok artınca kromozom o noktada 'kırılgan' (fragile) olur. Erkeklerde büyük testisler, uzun yüz, büyük kulaklar, zeka geriliği. CGG = 'C Gibi G Gibi' tekrar tekrar kopyalanır!"
+    },
+    {
+      "id": "patk_096",
+      "question": "Down Sendromunun (Trizomi 21) en yaygın patogenezi (nedeni) nedir?",
+      "answer": "Anne yaşına bağlı anne mayozu sırasındaki [[non-disjunction]] (Ayrılmama)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Anne yaşlandıkça yumurtaları da yaşlanır — mayoz sırasında 21. kromozomlar ayrılamaz (non-disjunction), bebekte 3 adet 21. kromozom olur. Yaşlı annenin yumurtası '21'i bırakamıyor' — trizomi 21 = Down."
+    },
+    {
+      "id": "patk_097",
+      "question": "Down Sendromlu hastalarda 40 yaşından sonra erken görülmesi beklenen nörolojik hastalık hangisidir?",
+      "answer": "Alzheimer hastalığı ([[APP]] geni 21. kromozomda olduğu için A-beta birikimi hızlanır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Down sendromunda 21. kromozom 3 kopya — APP geni de 21'de olduğu için 3 kat A-beta üretilir! Bu yüzden 40 yaşında bile erken Alzheimer gelişir. Trizomi 21 = 3 kopya APP = erken amiloid birikimi = erken Alzheimer."
+    },
+    {
+      "id": "patk_098",
+      "question": "Klinefelter Sendromu'nun kromozomal formülü ve klasik görünümü nedir?",
+      "answer": "47, XXY. Uzuu boy, [[jinekomasti]], atrofik testisler, [[infertilite]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: XXY = fazladan bir X alan erkek. Uzun boylu ama testisleri küçük, meme büyümesi var (jinekomasti), çocuk yapamaz. Klinefelter = 'Kline' (klinikte) 'felter' (hissetmez) — testosteron azalmış, XX etkisi artmış."
+    },
+    {
+      "id": "patk_099",
+      "question": "Klinik olarak 'Yele boyun (webbed neck), geniş göğüs kafesi (shield chest), bisküspid aort kapağı ve koarktasyon' u olan ve yumurtalıkları 'streak ovary' (çizgi şeklinde) olan hastada olası tanı nedir?",
+      "answer": "[[Turner Sendromu]] (45, X0)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Turner kızının bir X'i eksik (45,X0) — kısa boylu, yele boyunlu (webbed neck), kalkan göğüslü, overler ip gibi ince (streak). Turner = 'Turn-her' (onu çevir ve bak): boyun yele, göğüs geniş, overler çizgi!"
+    },
+    {
+      "id": "patk_100",
+      "question": "Bir genin sadece anneden kalıtılanının susturulmasına bağlı (genomik imprinting ihlali) meydana gelen kalıtımsal sendromlara örnekler nelerdir?",
+      "answer": "[[Prader-Willi Sendromu]] (Baba delesyonu/Anne disomisi) ve [[Angelman Sendromu]] (Anne delesyonu/Baba disomisi)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: İkisi de 15q11-13 delesyonu ama farklı ebeveynden! Prader-Willi = baba kopisi silindi, çocuk obez ve tembel (sürekli yer). Angelman = anne kopisi silindi, çocuk gülen, mutlu ama zeka geriliği var. 'Baba yoksa Prader (iştah), Anne yoksa Angel (melek gülüşü)'."
+    },
+    {
+      "id": "patk_101",
+      "question": "Onkogenlerin (kanser yapıcı genler) hücredeki normal formuna ne ad verilir?",
+      "answer": "[[Proto-onkogen]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Proto-onkogen hücrenin 'gaz pedalı'dır — normal büyüme sinyali verir. Mutasyon olunca gaz pedalı takılı kalır ve proto-onkogen -> onkogen'e dönüşür. 'Proto' = önceki (masum) hali, onkogen = kanserci!"
+    },
+    {
+      "id": "patk_102",
+      "question": "İnsan kanserlerinde en sık mutasyona uğrayan (nokta mutasyonu) ve RAS ailesinin bir üyesi olan gen hangisidir?",
+      "answer": "[[KRAS]] ([[Pankreas]] ve kolon kanserlerinde çok yaygın)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: KRAS kanserin en popüler suçlusudur — pankreas kanserlerinin %90'ında mutant! KRAS proteini bir 'moleküler anahtar' — mutasyon olunca sürekli açık kalır ve hücreye 'böl, böl, böl!' der. KRAS = Kanser'in en Rağbet gören Aktif Sinyali."
+    },
+    {
+      "id": "patk_103",
+      "question": "C-myc onkogeninin translokasyonu t(8;14) sonucunda oluşan lenfoma hangisidir?",
+      "answer": "[[Burkitt Lenfoma]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Burkitt lenfomada c-myc (8. kromozom) immünoglobulin geninin yanına (14. kromozom) taşınır — sürekli aktif olur. Histolojide 'yıldızlı gökyüzü' paterni görülür. t(8;14) = '8'de myc, 14'te Ig' — Burkitt!"
+    },
+    {
+      "id": "patk_104",
+      "question": "Philadelphia kromozomu t(9;22) hangi genlerin füzyonuna ve hangi hastalığa yol açar?",
+      "answer": "[[BCR-ABL]] füzyonu, KML ([[Kronik Myeloid Lösemi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Philadelphia şehrinde 9. ve 22. sokak kesişir — BCR (22) ve ABL (9) geni birleşir, süper aktif tirozin kinaz oluşur. KML'nin parmak izi! İmatinib (Gleevec) bu füzyonu hedefler. t(9;22) = Philadelphia = KML."
+    },
+    {
+      "id": "patk_105",
+      "question": "Meme ve over karsinomlarında hedeflenebilir bir tirozin kinaz reseptörü olan ERBB2 antijeninin diğer adı nedir?",
+      "answer": "[[HER2]] / neu",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: HER2 meme kanserinin 'büyüme anteni'dir — fazla HER2 = hücre çok çoğalır. Trastuzumab (Herceptin) bu anteni bloke eder. HER2 = 'Human Epidermal growth factor Receptor 2' = meme kanserinin 2 numaralı hedefi!"
+    },
+    {
+      "id": "patk_106",
+      "question": "Rb (Retinoblastom) gürzübaskılayıcı (Tumor suppressor) geni hücre siklusunda hangi fazı kontrol eder?",
+      "answer": "G1 -> S evresine geçişi ([[E2F]] transkripsiyon faktörüne bağlanarak inhibe eder)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Rb geni hücre siklusunun 'fren pedalı'dır — G1'den S'ye geçişte E2F'yi tutar. Rb bozulunca fren patlar, hücre kontrolsüz S fazına girer (DNA sentezi başlar). Rb = 'Really Brakes' = gerçek fren, kaybedilince kanser!"
+    },
+    {
+      "id": "patk_107",
+      "question": "P53 geni 'Genomun Gardiyanı'dır. İnsan kanserlerinde mutasyonu en sık olan gendir. P53 eksikliğinde artan Li-Fraumeni sendromu riskleri nelerdir?",
+      "answer": "Erken yaşta [[sarkom]]lar, meme kanseri, [[lösemi]]ler ve beyin tümörleri",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: P53 genomun polisi — DNA hasarını tespit eder, ya tamir ettirir ya apoptoz başlatır. P53 öldüğünde suçlular serbest kalır! Li-Fraumeni = 'SBML' = Sarkomlar, Breast (meme), Myeloid lösemi, beyin (Lobe). Genç yaşta çoklu kanser!"
+    },
+    {
+      "id": "patk_108",
+      "question": "Apoptozu inhibe eden (anti-apoptotik) ana gen/protein ailesi hangisidir?",
+      "answer": "[[BCL-2]] (Foliküler lenfomada t(14;18) ile aşırı ifadelenir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: BCL-2 hücrenin 'ölüm kalkanı'dır — apoptozu engeller. Foliküler lenfomada t(14;18) ile BCL-2 aşırı üretilir ve lenfositler ölmeyi reddeder! BCL-2 = 'Block Cell Loss-2' — hücre kaybını engelle! t(14;18) = foliküler lenfoma."
+    },
+    {
+      "id": "patk_109",
+      "question": "Kolon kanserinin gelişiminde ilk mutasyona uğrayan (adenomatöz polipten kanser gidişatının kapıcısı) tümör süpresör gen hangisidir?",
+      "answer": "[[APC]] geni ([[Adenomatous polyposis coli]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: APC kolon kanserinin 'kapı bekçisi'dir (gatekeeper). APC bozulunca kapı açılır ve adenom -> displazi -> karsinom yolculuğu başlar. APC = 'Açılan Polip Kapısı' — ilk adım! Sonra KRAS, p53 mutasyonları eklenir."
+    },
+    {
+      "id": "patk_110",
+      "question": "Onkogenlerin aşırı ifadesinde genellikle tek allel (kopya) mutasyonu yeterlidir (dominant). Tümör süpresör genlerin inaktivasyonu için kaç allelin mutasyonu gereklidir?",
+      "answer": "İki allelin de hasarı gerekir ([[Knudson]]'un İki Vuruş - Two Hit hipotezi)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Tümör süpresör genler iki kopya halinde çalışır — biri bozulsa diğeri yedek olarak devam eder. Kanser için iki kopyanın da bozulması gerekir (iki vuruş). Knudson = 'Knock-Knock' (iki kez vur) = Two Hit hipotezi!"
+    }
+  ],
+  "id": "patoloji_kons_batch1-topic-0",
+  "topic": "Patoloji - Konsolide (Batch 1)",
+  "sub_topic": "Patoloji - Konsolide (Batch 1)",
+  "content_summary": "",
+  "tus_spots": []
+}

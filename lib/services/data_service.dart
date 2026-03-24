@@ -8,10 +8,13 @@ class DataService {
   factory DataService() => _instance;
   DataService._internal();
 
-  /// Per-subject cache: subjectId → topics (tüm dosyalar birleştirilmiş)
+  /// Per-subject cache: subjectId -> topics
   final Map<String, List<Topic>> _cache = {};
 
-  // ── Tek modül yükleme ─────────────────────────────────────────────────────
+  /// Son hata mesajı (UI'dan okunabilir)
+  String? lastError;
+
+  // ── Tek modül yükleme (try-catch ile korumalı) ──────────────────────────
 
   Future<List<Topic>> loadBySubject(String subjectId) async {
     if (_cache.containsKey(subjectId)) return _cache[subjectId]!;
@@ -19,23 +22,34 @@ class DataService {
     final module = SubjectRegistry.findById(subjectId);
     if (module == null) return [];
 
-    // Modüle ait tüm JSON dosyalarını paralel yükle ve birleştir
-    final futures = module.assetPaths.map((path) async {
-      final jsonString = await rootBundle.loadString(path);
-      final list = json.decode(jsonString) as List<dynamic>;
-      return list
-          .map((e) => Topic.fromJson(e as Map<String, dynamic>))
-          .toList();
-    });
+    final allTopics = <Topic>[];
+    lastError = null;
 
-    final results = await Future.wait(futures);
-    final topics = results.expand((list) => list).toList();
+    // Her JSON dosyasını ayrı ayrı yükle — biri bozuksa diğerleri etkilenmesin
+    for (final path in module.assetPaths) {
+      try {
+        final jsonString = await rootBundle.loadString(path);
+        final decoded = json.decode(jsonString);
 
-    _cache[subjectId] = topics;
-    return topics;
+        if (decoded is List) {
+          allTopics.addAll(
+            decoded.map((e) => Topic.fromJson(e as Map<String, dynamic>)),
+          );
+        } else if (decoded is Map<String, dynamic>) {
+          allTopics.add(Topic.fromJson(decoded));
+        }
+      } on FormatException catch (e) {
+        lastError = 'JSON format hatasi: $path ($e)';
+      } catch (e) {
+        lastError = 'Veri yukleme hatasi: $path ($e)';
+      }
+    }
+
+    _cache[subjectId] = allTopics;
+    return allTopics;
   }
 
-  // ── Tüm modülleri yükleme ─────────────────────────────────────────────────
+  // ── Tüm modülleri yükleme ───────────────────────────────────────────────
 
   Future<List<Topic>> loadAllTopics() async {
     final results = await Future.wait(
@@ -44,7 +58,7 @@ class DataService {
     return results.expand((list) => list).toList();
   }
 
-  // ── Filtered helpers ──────────────────────────────────────────────────────
+  // ── Filtered helpers ────────────────────────────────────────────────────
 
   Future<List<Topic>> loadTopics({String? subjectId}) async {
     if (subjectId == null) return loadAllTopics();
@@ -61,7 +75,43 @@ class DataService {
     return topics.expand((t) => t.clinicalCases).toList();
   }
 
-  // ── Geriye dönük uyumluluk ────────────────────────────────────────────────
+  // ── Sayfalama destekli yükleme ──────────────────────────────────────────
+  /// Büyük veri setlerinde bellek tasarrufu için offset/limit ile yükleme.
+
+  Future<List<Flashcard>> loadFlashcardsPaginated({
+    String? subjectId,
+    int offset = 0,
+    int limit = 100,
+  }) async {
+    final all = await loadFlashcards(subjectId: subjectId);
+    if (offset >= all.length) return [];
+    final end = (offset + limit).clamp(0, all.length);
+    return all.sublist(offset, end);
+  }
+
+  Future<List<ClinicalCase>> loadCasesPaginated({
+    String? subjectId,
+    int offset = 0,
+    int limit = 100,
+  }) async {
+    final all = await loadCases(subjectId: subjectId);
+    if (offset >= all.length) return [];
+    final end = (offset + limit).clamp(0, all.length);
+    return all.sublist(offset, end);
+  }
+
+  /// Toplam sayı bilgisi (UI'da "45/200" göstermek için)
+  Future<int> getFlashcardCount({String? subjectId}) async {
+    final topics = await loadTopics(subjectId: subjectId);
+    return topics.fold<int>(0, (sum, t) => sum + t.flashcards.length);
+  }
+
+  Future<int> getCaseCount({String? subjectId}) async {
+    final topics = await loadTopics(subjectId: subjectId);
+    return topics.fold<int>(0, (sum, t) => sum + t.clinicalCases.length);
+  }
+
+  // ── Geriye dönük uyumluluk ──────────────────────────────────────────────
 
   Future<List<Flashcard>> loadAllFlashcards() => loadFlashcards();
   Future<List<ClinicalCase>> loadAllCases() => loadCases();

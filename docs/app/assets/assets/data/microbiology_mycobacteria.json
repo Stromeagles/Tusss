@@ -1,0 +1,138 @@
+[
+  {
+    "id": "micro-myco-101",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Mikobakteriler",
+    "sub_topic": "Mycobacterium tuberculosis (Tüberküloz)",
+    "content_summary": "Zorunlu aerob, aside dirençli (ARB+), intraselüler basil. Kord faktörü ve mikolik asitleri önemlidir.",
+    "flashcards": [
+      {
+        "id": "fc-myco-3000",
+        "question": "Mikobakterilerin aside dirençli boyanmasından sorumlu hücre duvarı bileşeni?",
+        "answer": "Mikolik asit.",
+        "difficulty": "medium",
+        "tags": [
+          "Hücre Duvarı"
+        ]
+      },
+      {
+        "id": "fc-myco-3001",
+        "question": "Hangi madde lökosit göçünü inhibe eder ve mikroskobide serpentine (yılanımsı) kordonlar oluşturur?",
+        "answer": "Kord Faktörü (Trehaloz-6-6' dimikolat).",
+        "difficulty": "hard",
+        "tags": [
+          "Kord Faktörü"
+        ]
+      },
+      {
+        "id": "fc-myco-3002",
+        "question": "Tüberküloz tanısında kullanılan ve 8 hafta enkübe edilen yumurtalı besiyeri?",
+        "answer": "Löwenstein-Jensen.",
+        "difficulty": "easy",
+        "tags": [
+          "Besi yeri"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Ghon Kompleksi: Akciğer parankim odağı + Hiler lenf nodu tutulumu.",
+      "Sekonder Tüberküloz: Akciğerin en üst (apeks) kısımlarını (yüksek oksijenli yerler) tutar.",
+      "Niasin testi (+): M. tuberculosis için tanısaldır.",
+      "QuantiFERON: IFN-gama salınımını ölçer; BCG aşısından etkilenmez (PPD'ye üstündür).",
+      "Kazeifikasyon nekrozu: Mikobakterilerin makrofaj fagositozu sonrası granülom merkezinde görülür."
+    ],
+    "clinical_cases": [
+      {
+        "case": "Gece terlemesi, kilo kaybı ve kanlı öksürükle gelen 30 yaşında bir hastanın akciğer grafisinde sağ apeksde kavite izleniyor. Balgam gram boyamasında aside dirençli basiller görülüyor. En olası tanı?",
+        "options": [
+          "Pnömoni",
+          "Sekonder Tüberküloz",
+          "Sarkoidoz",
+          "Akciğer Kanseri"
+        ],
+        "correct_answer": "Sekonder Tüberküloz",
+        "explanation": "Apeks tutulumu, kavite, konstitüsyonel semptomlar ve ARB pozitifliği (aside dirençli basil) reaktivasyon (sekonder) tüberkülozunu gösterir.",
+        "id": "cc-micro-mycobac-001-001"
+      }
+    ]
+  },
+  {
+    "id": "micro-myco-102",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Mikobakteriler",
+    "sub_topic": "Tüberküloz Tedavisi ve İlaç Direnci",
+    "content_summary": "Birinci kuşak ilaçlar: İzoniazid, Rifampin, Pirazinamid ve Etambutol'dür.",
+    "flashcards": [
+      {
+        "id": "fc-myco-3100",
+        "question": "İzoniazid (INH) hangi vitamini tüketerek periferik nöropati yapar? Profilakside ne verilir?",
+        "answer": "B6 vitamini (Piridoksin). Profilakside B6 verilir.",
+        "difficulty": "medium",
+        "tags": [
+          "İlaçlar",
+          "INH"
+        ]
+      },
+      {
+        "id": "fc-myco-3101",
+        "question": "Vücut sıvılarını (idrar, ter) turuncuya boyayan antitüberküloz ilaç?",
+        "answer": "Rifampin.",
+        "difficulty": "easy",
+        "tags": [
+          "Yan Etki"
+        ]
+      },
+      {
+        "id": "fc-myco-3102",
+        "question": "Optik nöropati (kırmızı-yeşil renk körlüğü) yapan ilaç?",
+        "answer": "Etambutol.",
+        "difficulty": "medium",
+        "tags": [
+          "Yan Etki"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "İzoniazid (INH): Mikolik asit sentezini inhibe eder. KatG mutasyonu ile direnç gelişir.",
+      "Rifampin: DNA bağımlı RNA polimerazı inhibe eder. rpoB mutasyonu ile direnç gelişir.",
+      "Pirazinamid (PZA): Asidik pH'ta (fagolizozom içi) en etkilidir. Hiperürisemi yapar.",
+      "MDR-TB (Çoklu İlaç Direnci): En az INH ve RIF'e dirençli olması durumudur."
+    ]
+  },
+  {
+    "id": "micro-myco-103",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Mikobakteriler",
+    "sub_topic": "Lepra ve Atipik Mikobakteriler",
+    "content_summary": "Lepra (Cüzzam) tüberküloid ve lepramatöz formlara sahiptir. Atipikler ışıkla pigment ilişkisine göre sınıflandırılır.",
+    "flashcards": [
+      {
+        "id": "fc-myco-3200",
+        "question": "Hücresel immun yanıtın yetersiz olduğu, lepromin testinin (-) olduğu, aslan yüzü (leontin facies) yapan lepra tipi?",
+        "answer": "Lepramatöz Lepra.",
+        "difficulty": "medium",
+        "tags": [
+          "Lepra"
+        ]
+      },
+      {
+        "id": "fc-myco-3201",
+        "question": "Fotokromojen (ışık varlığında pigment yapan) Mikobakterilere iki örnek?",
+        "answer": "M. kansasii ve M. marinum.",
+        "difficulty": "hard",
+        "tags": [
+          "Atipik"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "M. leprae: İn-vitro (yapay besiyerinde) üretilemez; sadece Armadillolarda üretilebilir.",
+      "M. scrofulaceum (Skotokromojen): Çocuklarda ağrısız servikal lenfadenit (skrofula) yapar.",
+      "M. avium-complex (MAC): AIDS hastalarında en sık dissemine (yaygın) enfeksiyon yapan atipiktir.",
+      "M. marinum: Akvaryum bakımı veya yüzme havuzu yaralanması sonrası cilt lezyonu (yüzücü granulomu) yapar."
+    ]
+  }
+]

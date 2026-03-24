@@ -1,0 +1,251 @@
+{
+  "subject": "Patoloji",
+  "chapter": "Hepatobilier + İnflamasyon + Hemodinamik (Batch 4A)",
+  "flashcards": [
+    {
+      "id": "path_b4A_001",
+      "question": "Karaciğerde viral hepatit B ve C'nin kronikleşme riski ne kadardır?",
+      "answer": "HBV: Yetişkinde %5-10. [[HCV]]: [[%70-85]] kronikleşir (en fazla kronikleşen). [[Yenidoğan HBV]]: [[%90]] kronikleşir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Karaciğer",
+        "Viral Hepatit",
+        "Kronikleşme"
+      ],
+      "story_hint": "💡 HİKAYE: HCV sinsi bir kiracı gibidir: %70-85 olasılıkla karaciğere yerleşir ve çıkmaz (kronikleşir). HBV yetişkini genelde yenemez (%5-10), ama yenidoğanı %90 tuzağa düşürür çünkü bağışıklık sistemi henüz gelişmemiştir.",
+      "ai_coding": "🤖 Kodlama: HCV = %70-85 kronikleşir (en kötü). HBV yenidoğan %90."
+    },
+    {
+      "id": "path_b4A_002",
+      "question": "Alkollü karaciğer hastalığının histolojik basamakları nelerdir?",
+      "answer": "1) [[Steatoz]]. 2) Alkollü hepatit: [[Mallory-Denk]] cisimleri (sitokeratin) + [[Nötrofil]] infiltrasyonu. 3) [[Siroz]]. [[AST/ALT >2:1]] oranı tipiktir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Alkol Karaciğer",
+        "Mallory-Denk"
+      ],
+      "story_hint": "💡 HİKAYE: Alkolik karaciğer üç basamaklı bir merdiven gibidir: ilk basamak yağlanma (steatoz), ikinci basamakta Mallory-Denk cisimleri ve nötrofiller gelir (hepatit), üçüncü basamakta siroz çıkışı yoktur. AST/ALT oranı 2:1'dir çünkü AST mitokondri hasarını yansıtır.",
+      "ai_coding": "🤖 Kodlama: Alkol KC = 'Steatoz → Hepatit (Mallory) → Siroz'. AST/ALT>2:1."
+    },
+    {
+      "id": "path_b4A_003",
+      "question": "Non-alkollü yağlı karaciğer hastalığı (NAFLD/NASH) histolojik kriterleri nedir?",
+      "answer": "[[NASH]]: [[Steatoz]] + [[Balon dejenerasyon]] + [[Lobüler inflamasyon]]. [[İnsulin direnci]] ve metabolik sendrom ile ilişkilidir.",
+      "difficulty": "Orta",
+      "tags": [
+        "NAFLD",
+        "NASH",
+        "Karaciğer"
+      ],
+      "story_hint": "💡 HİKAYE: NASH karaciğerin metabolik sendrom protestosudur: yağ birikir (steatoz), hepatositler şişer (balon dejenerasyon) ve lobüler inflamasyon başlar. Alkol içmeden de karaciğer hastalanabilir; suçlu insülin direncidir.",
+      "ai_coding": "🤖 Kodlama: NASH = NAFLD + İnflamasyon + Balon. Metabolik sendrom zemininde."
+    },
+    {
+      "id": "path_b4A_004",
+      "question": "Wilson hastalığında organ tutulumları ve tanı testleri nelerdir?",
+      "answer": "[[ATP7B]] mutasyonu → [[Bakır]] birikimi. [[Kayser-Fleischer halkası]] (göz). [[Seruloplazmin düşüktür]]. [[Rodanin]] boyası ile bakır gösterilir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Wilson",
+        "Bakır",
+        "Karaciğer"
+      ],
+      "story_hint": "💡 HİKAYE: Wilson hastalığında ATP7B pompası bozuktur ve bakır vücutta birikir. Gözde altın-yeşil bir halka (Kayser-Fleischer) belirir, sanki bakır gözü çevrelemiştir. Seruloplazmin taşıyıcı kamyon eksik olduğu için bakır dağıtılamaz.",
+      "ai_coding": "🤖 Kodlama: Wilson = 'ATP7B = Bakır + KC+Beyin+KF halkası'. Seruloplazmin düşük."
+    },
+    {
+      "id": "path_b4A_005",
+      "question": "Primer biliyer kolanjit (PBC) ile primer sklerozan kolanjit (PSC) farkı nedir?",
+      "answer": "[[PBC]]: Küçük kanal, [[AMA-M2]], kadın. [[PSC]]: Büyük kanal, [[ANCA]], [[Ülseratif kolit]] (IBD) ilişkili, erkek.",
+      "difficulty": "Zor",
+      "tags": [
+        "PBC",
+        "PSC",
+        "Safra Kanalı"
+      ],
+      "story_hint": "💡 HİKAYE: PBC küçük kanallarda oturan AMA bayraklı bir kadın gibidir. PSC ise büyük kanallarda ANCA rozeti taşıyan bir erkektir ve yanında ülseratif kolit arkadaşı vardır. İkisi farklı mahallede yaşar.",
+      "ai_coding": "🤖 Kodlama: PBC = AMA + Küçük kanal + Kadın. PSC = ANCA + Büyük kanal + IBD/Erkek."
+    },
+    {
+      "id": "path_b4A_006",
+      "question": "Karaciğer sirozunda 'Laennec siroz' ve 'makronodüler siroz' hangisiyle ilişkilidir?",
+      "answer": "[[Laennec (mikronodüler)]]: Alkol. [[Makronodüler]]: [[Viral hepatit]]. Siroz: İrreversible [[fibrozis]] + [[Nodüler rejenerasyon]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Siroz",
+        "Karaciğer"
+      ],
+      "story_hint": "💡 HİKAYE: Laennec sirozu alkolün eseri olan küçük nodüllerle doludur (mikronodüler), sanki karaciğer küçük toplarla dolmuştur. Viral hepatit ise büyük toplar yapar (makronodüler). Her iki durumda da fibrozis geri dönüşsüzdür.",
+      "ai_coding": "🤖 Kodlama: Mikronodüler = Alkol. Makronodüler = Viral hepatit."
+    },
+    {
+      "id": "path_b4A_007",
+      "question": "Hepatoselüler karsinomun en önemli risk faktörleri nelerdir?",
+      "answer": "[[Siroz]] (en sık zemin). [[HBV]] ve [[HCV]]. [[Aflatoksin B1]] (Aspergillus, tahıl). [[Hemokromatoz]].",
+      "difficulty": "Orta",
+      "tags": [
+        "HCC",
+        "Risk Faktörleri"
+      ],
+      "story_hint": "💡 HİKAYE: HCC sirozun en korkutucu komplikasyonudur: siroz zemini HCC'nin \"anavatanı\"dır. HBV ve HCV virüsleri yol açar, Aflatoksin B1 ise Afrika'dan gelen tahıl küfü toksindir. Hemokromatoz da demir birikimiyle HCC'ye davet çıkarır.",
+      "ai_coding": "🤖 Kodlama: HCC = 'Siroz+HBV+HCV+Aflatoksin'. Aflatoksin = Afrika + Tahıl."
+    },
+    {
+      "id": "path_b4A_008",
+      "question": "Kolanjiokarsinom ile HCC'nin ayırımında hangi serum belirteçleri ve histoloji kullanılır?",
+      "answer": "[[HCC]]: [[AFP]], [[HepPar1 (+)]], trabeküler patern. [[Kolanjiokarsinom]]: [[CA 19-9]], [[desmoplazi]], [[CK7/19 (+)]].",
+      "difficulty": "Zor",
+      "tags": [
+        "Kolanjiokarsinom",
+        "HCC",
+        "Safra"
+      ],
+      "story_hint": "💡 HİKAYE: HCC ve kolanjiokarsinom karaciğerin iki farklı mahallesinden gelir. HCC hepatosit mahallesinden: AFP kimliği ve HepPar1 rozeti taşır. Kolanjiokarsinom safra kanalı mahallesinden: CA 19-9 kimliği ve CK7/19 rozeti ile desmoplazi zırhı vardır.",
+      "ai_coding": "🤖 Kodlama: HCC = AFP + HepPar1. Kolanjiokarsinom = CA19-9 + CK7/19."
+    },
+    {
+      "id": "path_b4A_009",
+      "question": "Karaciğerde sentrilobüler nekroz hangi durumlarda görülür?",
+      "answer": "[[Sağ kalp yetmezliği]] (nutmeg/muskümel KC). [[Şok]] ve [[Budd-Chiari]]. [[Zon 3]] (perivenüler) etkilenir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Karaciğer",
+        "Sentrilobüler Nekroz",
+        "Konjestif"
+      ],
+      "story_hint": "💡 HİKAYE: Sağ kalp yetmezliğinde kan karaciğere geri dolar ve muskümel (küçük hindistan cevizi) görünümü oluşur. Zon 3 hücreleri oksijene en uzak olduğu için ilk onlar ölür (sentrilobüler nekroz). Şok ve Budd-Chiari de aynı sahneyi yaratır.",
+      "ai_coding": "🤖 Kodlama: Sentrilobüler nekroz = 'Kalp yetmezliği'. Muskümel (küçük hindistan cevizi) KC."
+    },
+    {
+      "id": "path_b4A_010",
+      "question": "Akut inflamasyonda vasküler değişiklikler sırası nedir?",
+      "answer": "1) [[Vazodilatasyon]]. 2) [[Permeabilite artışı]]. 3) [[Lökosit marginasyonu]] ve göçü ([[kemotaksi]]).",
+      "difficulty": "Orta",
+      "tags": [
+        "İnflamasyon",
+        "Vasküler Değişik"
+      ],
+      "story_hint": "💡 HİKAYE: Akut inflamasyon bir trafik kazası gibidir: önce yol genişler (vazodilatasyon), sonra bariyerler açılır (permeabilite artışı), en sonunda yardım ekipleri olay yerine koşar (lökosit göçü ve kemotaksi).",
+      "ai_coding": "🤖 Kodlama: İnflamasyon = 'Dilat → Permeable → Lökosit göç'. 5 kardinal belirti."
+    },
+    {
+      "id": "path_b4A_011",
+      "question": "Lökosit endotele yapışmasında hangi adezyon molekülleri rol oynar?",
+      "answer": "[[Selektinler]] (P-selektin, E-selektin): [[Rolaj]]. [[İntegrinler]] (LFA-1): Sıkı adezyon. [[PECAM-1 (CD31)]]: [[Transmigrasyon]].",
+      "difficulty": "Zor",
+      "tags": [
+        "İnflamasyon",
+        "Lökosit Göçü",
+        "Adezyon"
+      ],
+      "story_hint": "💡 HİKAYE: Lökosit göçü bir havaalanı gibidir: selektinler check-in'dir (rolaj/yavaşlatma), integrinler pasaport kontrolüdür (sıkı yapışma), PECAM-1 ise uçak kapısıdır (transmigrasyon). Her adım bir sonrakine geçiş izni verir.",
+      "ai_coding": "🤖 Kodlama: Selektin = Rolaj (yavaşlatır). İntegrin+ICAM = Yapışma. PECAM = Geçiş."
+    },
+    {
+      "id": "path_b4A_012",
+      "question": "C5a'nın inflamasyondaki işlevleri nelerdir?",
+      "answer": "[[Potent kemotaksin]] (hücreleri çeker). [[Mast hücre degranülasyonu]]. [[C5-9]]: [[Membran atak kompleksi (MAC)]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Kompleman",
+        "C5a",
+        "İnflamasyon"
+      ],
+      "story_hint": "💡 HİKAYE: C5a inflamasyonun \"çağrı merkezi\" gibidir: hücreleri olay yerine çeker (kemotaksin) ve mast hücrelerini uyarır. C5-9 ise MAC silahını oluşturarak hedef hücrenin membranında delik açar ve onu yok eder.",
+      "ai_coding": "🤖 Kodlama: C5a = 'Çağrı işareti (kemotaksin) + Mast hücre uyarır'. C5-9 = MAC = Liz."
+    },
+    {
+      "id": "path_b4A_013",
+      "question": "Bradikinin'in inflamasyondaki rolü ve hangi sisteme ait olduğu nedir?",
+      "answer": "[[Kinin sistemi]] ürünüdür. [[Vazodilatasyon]], permeabilite artışı ve [[ağrı]] yapar. [[ACE inhibitörleri]] ile birikir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Bradikinin",
+        "Kinin Sistemi",
+        "İnflamasyon"
+      ],
+      "story_hint": "💡 HİKAYE: Bradikinin kinin sisteminin \"ağrı habercisi\"dir: damarları genişletir, geçirgenliği artırır ve ağrı sinyali gönderir. ACE normalde bradikinini yıkar; ACEi kullanan hastada bradikinin birikir ve öksürük yapar.",
+      "ai_coding": "🤖 Kodlama: Bradikinin = 'ACEi almayan bradikinin yıkır'. ACEi = Bradikinin birikir = Öksürük."
+    },
+    {
+      "id": "path_b4A_014",
+      "question": "Araşidonik asit yolağından oluşan inflamasyon mediatörleri nelerdir?",
+      "answer": "[[COX]]: [[PGE2]] (ateş/ağrı). [[LOX]]: [[LTB4]] (kemotaksin) ve [[LTC4/D4/E4]] (bronkospazm/astım).",
+      "difficulty": "Zor",
+      "tags": [
+        "Araşidonik Asit",
+        "PG",
+        "Lökotrien"
+      ],
+      "story_hint": "💡 HİKAYE: Araşidonik asit bir kavşaktır: COX yoluna sapılırsa PGE2 ateş ve ağrı yapar, LOX yoluna sapılırsa LTB4 askerleri çağırır (kemotaksin) ve LTC4/D4/E4 bronşları sıkıştırır (astım). Aspirin COX yolunu kapatır.",
+      "ai_coding": "🤖 Kodlama: COX=PG (PGE2 ateş). LOX=LT (LTB4 kemotaksin, LTC4 astım). Aspirin=COX bloke."
+    },
+    {
+      "id": "path_b4A_015",
+      "question": "Kronik inflamasyonda hangi hücreler baskındır ve hangi sitokinler önemlidir?",
+      "answer": "[[Makrofajlar]], [[lenfositler]] ve plazma hücreleri. [[TNF-α]], [[IL-1]] ve [[IL-6]] ana sitokinlerdir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Kronik İnflamasyon",
+        "Makrofaj"
+      ],
+      "story_hint": "💡 HİKAYE: Kronik inflamasyon uzun süreli bir kuşatma gibidir: makrofajlar şef komutandır, lenfositler strateji belirler, plazma hücreleri antikor mermisi üretir. TNF-alfa, IL-1 ve IL-6 üçlüsü savaş komutlarını verir.",
+      "ai_coding": "🤖 Kodlama: Kronik = 'Makrofaj şefi'. IL-1+TNF+IL-6 üçlüsü sistemi etkiler."
+    },
+    {
+      "id": "path_b4A_016",
+      "question": "Akut faz reaktanları (AFP) hangileridir ve klinik önemi nedir?",
+      "answer": "[[CRP]] (takip testi), [[Fibrinojen]] (ESR artışı), Ferritin. [[IL-6]] karaciğerden sentezini uyarır.",
+      "difficulty": "Orta",
+      "tags": [
+        "Akut Faz",
+        "CRP",
+        "İnflamasyon"
+      ],
+      "story_hint": "💡 HİKAYE: Akut faz reaktanları karaciğerin \"alarm sireni\"dir. IL-6 alarmı çalar, karaciğer CRP, fibrinojen ve ferritin üretir. CRP en hızlı takip testidir. Albumin ise tersine davranır: inflamasyonda düşer.",
+      "ai_coding": "🤖 Kodlama: Akut faz = CRP+Fibrinojen artar. Albumin azalır. IL-6 = Karaciğer uyarıcı."
+    },
+    {
+      "id": "path_b4A_017",
+      "question": "Septik şok ile non-septik şokun patofizyolojik farkı nedir?",
+      "answer": "[[Septik şok]]: [[LPS ( endotoksin)]] → [[NO artışı]] → [[Vazodilatasyon]] (düşük SVR). [[Sıcak şok]] olarak başlar.",
+      "difficulty": "Zor",
+      "tags": [
+        "Septik Şok",
+        "Hemodinamik"
+      ],
+      "story_hint": "💡 HİKAYE: Septik şok LPS bombasıyla başlar: TNF patlar, NO damarları açar, SVR düşer ve \"sıcak şok\" olur (deri sıcak, nabız dolgun). Ama ilerleyince soğuk şoka döner. Diğer şoklarda ise damarlar kasılır (soğuk ve solgun).",
+      "ai_coding": "🤖 Kodlama: Septik şok = 'LPS → TNF → NO → Vasodilat'. Sıcak + Düşük SVR başlangıçta."
+    },
+    {
+      "id": "path_b4A_018",
+      "question": "Tromboza predispozisyon yaratan Virchow üçlüsü nedir?",
+      "answer": "1) [[Endotel hasarı]]. 2) [[Hiperkoagülabilite]] (staz). 3) [[Kan akım bozukluğu]] (türbulans).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Tromboz",
+        "Virchow",
+        "Hemodinamik"
+      ],
+      "story_hint": "💡 HİKAYE: Virchow üçlüsü trombozun \"üç musketeeri\"dir: Endotel hasarı duvarı çizer, hiperkoagülabilite kanı yapışkan yapar, staz/türbulans akımı bozar. Üçü bir araya gelince trombüs doğar.",
+      "ai_coding": "🤖 Kodlama: Virchow = 'Endotel+Hiperkoag+Staz'. 3'ü birden = Tromboz."
+    },
+    {
+      "id": "path_b4A_019",
+      "question": "Pulmoner emboli'de 'Hampton hump' ve 'Westermark işareti' nedir?",
+      "answer": "[[Hampton hump]]: Kama şeklinde [[infarkt]]. [[Westermark]]: Damar işaretlerinin azalması ([[oligemi]]).",
+      "difficulty": "Orta",
+      "tags": [
+        "Pulmoner Emboli",
+        "Radyoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Hampton hump akciğerde kama şeklinde bir pasta dilimi gibidir: infarkt bölgesini gösterir. Westermark ise boş bir otopark gibidir: emboli sonrası damarlar boşalmış (oligemi) ve radyografide o bölge parlak görünür.",
+      "ai_coding": "🤖 Kodlama: Hampton = Kama (infarkt). Westermark = Damar boş (oligemi)."
+    }
+  ],
+  "id": "pathology_batch4A-topic-0",
+  "topic": "Hepatobilier + İnflamasyon + Hemodinamik (Batch 4A)",
+  "sub_topic": "Hepatobilier + İnflamasyon + Hemodinamik (Batch 4A)",
+  "content_summary": "",
+  "tus_spots": []
+}

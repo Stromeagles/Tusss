@@ -1,0 +1,138 @@
+[
+  {
+    "id": "micro-viro-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Viroloji",
+    "topic": "DNA Virüsleri",
+    "sub_topic": "Parvovirüs ve Adenovirüs",
+    "content_summary": "Parvovirüs B19 (tek iplikli DNA) ve Adenovirüs (fiberli, çift iplikli DNA) önemli zarfsız virüslerdir.",
+    "flashcards": [
+      {
+        "id": "fc-viro-2100",
+        "question": "Eritrositlerin P antijenine bağlanarak çoğalan, orak hücreli anemide aplastik kriz yapan virüs?",
+        "answer": "Parvovirüs B19.",
+        "difficulty": "medium",
+        "tags": [
+          "Parvovirüs",
+          "Aplastik Kriz"
+        ]
+      },
+      {
+        "id": "fc-viro-2101",
+        "question": "Hangi virüs kapsidinde Fiber (çıkıntı) barındıran tek virüstür?",
+        "answer": "Adenovirüs.",
+        "difficulty": "medium",
+        "tags": [
+          "Adenovirüs",
+          "Fiber"
+        ]
+      },
+      {
+        "id": "fc-viro-2102",
+        "question": "Adenovirüslerin tip 8, 19 ve 37 suşları hangi klinik tabloya neden olur?",
+        "answer": "Epidemik Keratokonjonktivit.",
+        "difficulty": "hard",
+        "tags": [
+          "Adenovirüs",
+          "Göz"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Parvovirüs B19: '5. Hastalık' (Eritema İnfeksiyozum) etkenidir, tokatlanmış yanak görünümü tipiktir.",
+      "Adenovirüs: Askeri birliklerde respiratuvar salgınlara (Tip 3, 4, 7) neden olur.",
+      "Adenovirüs Tip 11-21: Hemorajik sistit yapar."
+    ]
+  },
+  {
+    "id": "micro-viro-003",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Viroloji",
+    "topic": "RNA Virüsleri - Solunum",
+    "sub_topic": "Ortomikso ve Paramiksovirüsler",
+    "content_summary": "İnfluenza (segmenter) ve Paramikso (Measles, Mumps, RSV) solunum yolu virüsleridir.",
+    "flashcards": [
+      {
+        "id": "fc-viro-2200",
+        "question": "İnfluenza virüsünde pandemilerden sorumlu olan, segment değişimi ile karakterize majör değişiklik?",
+        "answer": "Antijenik Shift.",
+        "difficulty": "medium",
+        "tags": [
+          "İnfluenza",
+          "Shift"
+        ]
+      },
+      {
+        "id": "fc-viro-2201",
+        "question": "İnfantlarda bronşiolit ve pnömoninin en sık nedeni olan, F proteini ile sinsitya yapan virüs?",
+        "answer": "RSV (Respiratuvar Sinsityal Virüs).",
+        "difficulty": "easy",
+        "tags": [
+          "RSV"
+        ]
+      },
+      {
+        "id": "fc-viro-2202",
+        "question": "Kızamık (Measles) hastalığında diagnostik olan, ağız mukozasındaki beyaz lezyonlar?",
+        "answer": "Koplik Lekeleri.",
+        "difficulty": "easy",
+        "tags": [
+          "Kızamık",
+          "Koplik"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "SSPE: M proteini defektif kızamık virüsünün yıllar sonra yaptığı ilerleyici ensefalittir.",
+      "Krup (Croup): Parainfluenza tip 1, 2 etkenidir. Grafide 'Kalem ucu' veya 'Çan kulesi' (Steeple sign) görülür.",
+      "İnfluenza: Replikasyonu çekirdekte olan nadir RNA virüslerindendir.",
+      "Reye Sendromu: İnfluenza veya VZV sırasında aspirin kullanımı ile gelişen karaciğer yetmezliği."
+    ]
+  },
+  {
+    "id": "micro-viro-004",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Viroloji",
+    "topic": "Hepatit Virüsleri",
+    "sub_topic": "HAV, HBV ve HCV",
+    "content_summary": "Hepatit virüsleri (Sarı humma hariç) karaciğeri primer tutan virüslerdir.",
+    "flashcards": [
+      {
+        "id": "fc-viro-2300",
+        "question": "HBV'nin enfeksiyöz tam partikülüne ne ad verilir?",
+        "answer": "Dane Partikülü.",
+        "difficulty": "medium",
+        "tags": [
+          "HBV",
+          "Dane"
+        ]
+      },
+      {
+        "id": "fc-viro-2301",
+        "question": "HBV replikasyonunda çekirdekte oluşan ve kalıp görevi gören DNA formu?",
+        "answer": "cccDNA (Closed circular DNA).",
+        "difficulty": "hard",
+        "tags": [
+          "HBV",
+          "cccDNA"
+        ]
+      },
+      {
+        "id": "fc-viro-2302",
+        "question": "HCV tanısında ilk bakılan ve sadece virüsle karşılaşıldığını gösteren test?",
+        "answer": "Anti-HCV (ELISA). Aktif enfeksiyon için HCV-RNA (PCR) bakılmalıdır.",
+        "difficulty": "medium",
+        "tags": [
+          "HCV",
+          "Anti-HCV"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "HBV: Hepatitler içinde tek DNA virüsüdür. Revers transkriptaz aktivitesi vardır.",
+      "HBsAg: Aşı ve bağışıklık takibinde temel hedeftir. Anti-HBs (+) olması bağışıklığı gösterir.",
+      "HCV: En sık kronikleşen (%85) ve karaciğer naklinin en sık nedeni olan hepatit virüsüdür.",
+      "HAV: Fekal-oral bulaşır, kronikleşmez. Çocuklarda genelde hafif/asemptomatik geçer."
+    ]
+  }
+]

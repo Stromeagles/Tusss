@@ -12,21 +12,35 @@
         "question": "Otoklav sterilizasyonunun (nemli ısı) etkinliğini kontrol etmek için kullanılan 'Altın Standart' biyolojik indikatör hangisidir?",
         "answer": "Bacillus stearothermophilus.",
         "difficulty": "medium",
-        "tags": ["Sterilizasyon", "Otoklav", "Biyolojik İndikatör"]
+        "tags": [
+          "Sterilizasyon",
+          "Otoklav",
+          "Biyolojik İndikatör"
+        ],
+        "story_hint": "💡 HİKAYE: Otoklav sınavının müfettişi Bacillus stearothermophilus'tur — eğer o bile öldüyse sterilizasyon başarılıdır. 'Altın standart' denir çünkü en dayanıklı sınav sorusudur."
       },
       {
         "id": "fc-micro-041",
         "question": "Etilen Oksit sterilizasyonu hangi mekanizma ile öldürür ve kontrolünde hangi bakteri kullanılır?",
         "answer": "Alkilizasyon ile öldürür. Kontrolünde Bacillus subtilis kullanılır.",
         "difficulty": "hard",
-        "tags": ["Etilen Oksit", "Alkilizasyon", "Bacillus subtilis"]
+        "tags": [
+          "Etilen Oksit",
+          "Alkilizasyon",
+          "Bacillus subtilis"
+        ],
+        "story_hint": "💡 HİKAYE: Etilen Oksit gazı, bakterinin DNA'sına alkil grupları yapıştırarak onu boğar. Sınavı geçip geçmediğini kontrol eden Bacillus subtilis'tir — incelemeyi o yapar."
       },
       {
         "id": "fc-micro-042",
         "question": "Vücuda penetre olmayan, mukoza ile teması olan aletlere (örn: endoskoplar) ne düzey dezenfeksiyon yapılmalıdır?",
         "answer": "Yüksek düzey dezenfeksiyon (Yarı-kritik aletler).",
         "difficulty": "medium",
-        "tags": ["Dezenfeksiyon", "Spaulding Sınıflaması"]
+        "tags": [
+          "Dezenfeksiyon",
+          "Spaulding Sınıflaması"
+        ],
+        "story_hint": "💡 HİKAYE: Endoskop gibi mukozaya dokunan aletler 'yarı-kritik' misafirlerdir. Tam steril olmasa da yüksek düzey dezenfeksiyon şarttır — tıpkı VIP davetlilere özel güvenlik kontrolü gibi."
       }
     ],
     "tus_spots": [
@@ -34,6 +48,21 @@
       "HEPA filtreleri 0.3 mikrona kadar olan mikropları temizler.",
       "Tindalizasyon (Benmari): Protein veya karbonhidrat içeren maddelerin 3 gün üst üste ısıtılarak steril edilmesidir.",
       "Gluteraldehit endoskopların yüksek düzey dezenfeksiyonunda kullanılır."
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-micro-ch3-001-001",
+        "case": "Bir ameliyathanede rutin sterilizasyon denetimi yapılıyor. Otoklav (nemli ısı, 121°C, 15 dk) biyolojik indikatörü pozitif geldi. Bu durumda hangi yorum doğrudur?",
+        "options": [
+          "A) Sterilizasyon başarılı — Bacillus subtilis öldü",
+          "B) Sterilizasyon BAŞARISIZ — Bacillus stearothermophilus sporları hayatta",
+          "C) Sterilizasyon başarılı — Bacillus stearothermophilus zaten ısıya duyarlı",
+          "D) İndikatör yanlış — Etilen oksit için Bacillus stearothermophilus kullanılır",
+          "E) Sterilizasyon kısmen başarılı — Vejetatif formlar öldü"
+        ],
+        "correct_answer": "B) Sterilizasyon BAŞARISIZ — Bacillus stearothermophilus sporları hayatta",
+        "explanation": "PROFESÖR NOTU: Biyolojik indikatörler, sterilizasyon sürecinin etkinliğini kanıtlayan 'altın standart' kontrol yöntemidir. Pozitif sonuç = bakteri hayatta = sterilizasyon BAŞARISIZ demektir.\n\n🎓 HOCA ÖZETİ:\n- Otoklav (Nemli ısı) → Bacillus stearothermophilus (en dayanıklı spor)\n- Etilen Oksit → Bacillus subtilis var. niger\n- Kuru ısı (Pastör fırını) → Bacillus subtilis\n- Mnemonic: 'OtoKLAV = Klav-us (çivi) gibi sert Bacillus stearothermophilus'\n- TUS SPOT: İndikatör pozitif = sterilizasyon başarısız. Tüm aletler yeniden sterilize edilmeli!"
+      }
     ]
   },
   {
@@ -49,21 +78,34 @@
         "question": "Aşıyla birlikte verildiğinde antijenin immünojenik özelliğini (etkisini) artıran maddelere ne ad verilir?",
         "answer": "Adjuvan (Örn: Alüminyum tuzları).",
         "difficulty": "easy",
-        "tags": ["Aşı", "Adjuvan"]
+        "tags": [
+          "Aşı",
+          "Adjuvan"
+        ],
+        "story_hint": "💡 HİKAYE: Adjuvan, aşının 'megafon'udur — antijeni tek başına fısıldayan biriyken, alüminyum tuzları megafonu eline verir ve bağışıklık sistemi onu net duyar."
       },
       {
         "id": "fc-micro-051",
         "question": "Gebelere ve immünsüpresif hastalara kontrendike olan aşı tipi hangisidir?",
         "answer": "Canlı (atenüe) aşılar. (İstisna: Sarı humma gebelere risk varsa yapılabilir).",
         "difficulty": "medium",
-        "tags": ["Aşı", "Kontrendikasyon", "Gebelik"]
+        "tags": [
+          "Aşı",
+          "Kontrendikasyon",
+          "Gebelik"
+        ],
+        "story_hint": "💡 HİKAYE: Canlı aşılar, 'evcilleştirilmiş' virüslerdir ama yine de canlıdır. Gebeler ve bağışıklığı zayıf olanlar bu 'evcil aslanla' aynı odaya giremez — istisnası sarı humma."
       },
       {
         "id": "fc-micro-052",
         "question": "Hepatit B aşısı hangi hücre kültürü kullanılarak hazırlanır?",
         "answer": "Maya hücreleri (HBsAg geninin entegre edilmesiyle).",
         "difficulty": "medium",
-        "tags": ["HBV", "Rekombinan Aşı"]
+        "tags": [
+          "HBV",
+          "Rekombinan Aşı"
+        ],
+        "story_hint": "💡 HİKAYE: Hepatit B aşısı, maya hücrelerini 'fabrika' olarak kullanır. HBsAg geni mayaya sokulur, maya bunu üretir — tıpkı bir ekmek fırınında özel sipariş pasta yapmak gibi."
       }
     ],
     "tus_spots": [
@@ -75,9 +117,16 @@
     "clinical_cases": [
       {
         "case": "Daha önce hiç aşılanmamış bir çocukta 'Göbek Bağının Geç Düşmesi' ve tekrarlayan enfeksiyonlar görülüyorsa, hangi immün defekt düşünülmelidir?",
-        "options": ["NADPH Oksidaz eksikliği", "Lökosit Adezyon Defekti (LAD)", "Chediak-Higashi", "Kompleman eksikliği"],
-        "correct_answer": "Lökosit Adezyon Defekti (LAD)",
-        "explanation": "LAD'da integrin beta (CD11/18) eksikliği vardır, nötrofiller dokuya göç edemez. Klasik bulgu göbek bağının geç düşmesidir."
+        "options": [
+          "A) NADPH Oksidaz eksikliği",
+          "B) Lökosit Adezyon Defekti",
+          "C) Chédiak-Higashi Sendromu",
+          "D) C3 Kompleman eksikliği",
+          "E) Hiper-IgE Sendromu"
+        ],
+        "correct_answer": "B) Lökosit Adezyon Defekti",
+        "explanation": "PROFESÖR NOTU: Lökosit Adezyon Defekti (LAD), integrin beta-2 (CD18) eksikliği nedeniyle nötrofillerin damar dışına çıkamadığı bir hastalıktır. \n\n🎓 HOCA ÖZETİ:\n- Tipik Bulgu: 1) Göbek bağının geç düşmesi (>3 hafta). 2) İrin (püy) oluşmayan soğuk enfeksiyonlar. 3) Kanda aşırı lökositoz (çünkü nötrofiller kanda hapsolur).\n- Mnemonic: L-AD = L-ökositlerin A-dam gibi D-ışarı çıkamaması.\n- NADPH Oksidaz eksikliği = Kronik Granülomatöz Hastalık; Hiper-IgE Sendromu = Job Sendromu.",
+        "id": "cc-micro-ch3-002-001"
       }
     ]
   }

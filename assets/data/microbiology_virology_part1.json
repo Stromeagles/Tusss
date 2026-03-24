@@ -12,21 +12,33 @@
         "question": "Eritrositlerin P antijenine bağlanarak çoğalan, orak hücreli anemide aplastik kriz yapan virüs?",
         "answer": "Parvovirüs B19.",
         "difficulty": "medium",
-        "tags": ["Parvovirüs", "Aplastik Kriz"]
+        "tags": [
+          "Parvovirüs",
+          "Aplastik Kriz"
+        ],
+        "story_hint": "💡 HİKAYE: Küçük vampir Parvo (B19), sadece P harfli kan bankasından (P antijeni) beslenir. Orak şeklindeki kılıçlarla savaşan askerlerin (orak hücreli anemi) fabrikasını (kemik iliği) tamamen kapatarak aplastik krize yol açar."
       },
       {
         "id": "fc-viro-2101",
         "question": "Hangi virüs kapsidinde Fiber (çıkıntı) barındıran tek virüstür?",
         "answer": "Adenovirüs.",
         "difficulty": "medium",
-        "tags": ["Adenovirüs", "Fiber"]
+        "tags": [
+          "Adenovirüs",
+          "Fiber"
+        ],
+        "story_hint": "💡 HİKAYE: Adenovirüs, virüsler dünyasının dikenlı kirpisi gibidir — kapsidinden uzanan fiber çıkıntılarıyla hücrelere tutunur. Başka hiçbir virüs bu 'anten'lere sahip değildir."
       },
       {
         "id": "fc-viro-2102",
         "question": "Adenovirüslerin tip 8, 19 ve 37 suşları hangi klinik tabloya neden olur?",
         "answer": "Epidemik Keratokonjonktivit.",
         "difficulty": "hard",
-        "tags": ["Adenovirüs", "Göz"]
+        "tags": [
+          "Adenovirüs",
+          "Göz"
+        ],
+        "story_hint": "💡 HİKAYE: Adeno'nun üç kötü kardeşi (8, 19, 37) göz avcılarıdır — nereye gitseler epidemik keratokonjonktivit salgını çıkarırlar. '8-19-37 = göze bak!' diye hatırla."
       }
     ],
     "tus_spots": [
@@ -48,21 +60,32 @@
         "question": "İnfluenza virüsünde pandemilerden sorumlu olan, segment değişimi ile karakterize majör değişiklik?",
         "answer": "Antijenik Shift.",
         "difficulty": "medium",
-        "tags": ["İnfluenza", "Shift"]
+        "tags": [
+          "İnfluenza",
+          "Shift"
+        ],
+        "story_hint": "💡 HİKAYE: İnfluenza iki farklı suş aynı hücrede buluştuğunda genomlarını tamamen değiş-tokuş eder — sanki iki farklı ülkenin askerleri üniformalarını takas etmiş gibi. Bu büyük 'shift' (kayma) pandemi başlatır çünkü bağışıklık sistemi yeni düşmanı tanıyamaz."
       },
       {
         "id": "fc-viro-2201",
         "question": "İnfantlarda bronşiolit ve pnömoninin en sık nedeni olan, F proteini ile sinsitya yapan virüs?",
         "answer": "RSV (Respiratuvar Sinsityal Virüs).",
         "difficulty": "easy",
-        "tags": ["RSV"]
+        "tags": [
+          "RSV"
+        ],
+        "story_hint": "💡 HİKAYE: RSV, bebeklerin ciğerlerinde hücreleri F (Füzyon) proteiniyle birbirine yapıştırarak dev sinsityal hücreler oluşturur — sanki baloncukları birleştiren bir sihirbaz gibi. Bebeklerde bronşiolidin bir numaralı suçlusudur."
       },
       {
         "id": "fc-viro-2202",
         "question": "Kızamık (Measles) hastalığında diagnostik olan, ağız mukozasındaki beyaz lezyonlar?",
         "answer": "Koplik Lekeleri.",
         "difficulty": "easy",
-        "tags": ["Kızamık", "Koplik"]
+        "tags": [
+          "Kızamık",
+          "Koplik"
+        ],
+        "story_hint": "💡 HİKAYE: Kızamık virüsü döküntülerden önce ağız içine gizli bir mesaj bırakır: yanak mukozasında tuz taneciklerine benzeyen beyaz Koplik lekeleri. Bu lekeleri gören doktor, döküntü başlamadan suçluyu yakalar."
       }
     ],
     "tus_spots": [
@@ -85,21 +108,33 @@
         "question": "HBV'nin enfeksiyöz tam partikülüne ne ad verilir?",
         "answer": "Dane Partikülü.",
         "difficulty": "medium",
-        "tags": ["HBV", "Dane"]
+        "tags": [
+          "HBV",
+          "Dane"
+        ],
+        "story_hint": "💡 HİKAYE: HBV'nin savaş filosunda birçok sahte gemi (boş HBsAg partikülleri) vardır, ama gerçek savaş gemisi sadece Dane Partikülü'dür — tam donanımlı, içinde DNA ve enzimlerini taşıyan tek enfeksiyöz gemi."
       },
       {
         "id": "fc-viro-2301",
         "question": "HBV replikasyonunda çekirdekte oluşan ve kalıp görevi gören DNA formu?",
         "answer": "cccDNA (Closed circular DNA).",
         "difficulty": "hard",
-        "tags": ["HBV", "cccDNA"]
+        "tags": [
+          "HBV",
+          "cccDNA"
+        ],
+        "story_hint": "💡 HİKAYE: HBV hücre çekirdeğine sızıp kapalı daire şeklinde bir 'ana kalıp' (cccDNA) kurar — bu kalıp bir matbaa gibi sürekli yeni viral kopyalar basar. İlaçlar virüsü baskılasa bile bu gizli kalıp çekirdekte sağ kalır."
       },
       {
         "id": "fc-viro-2302",
         "question": "HCV tanısında ilk bakılan ve sadece virüsle karşılaşıldığını gösteren test?",
         "answer": "Anti-HCV (ELISA). Aktif enfeksiyon için HCV-RNA (PCR) bakılmalıdır.",
         "difficulty": "medium",
-        "tags": ["HCV", "Anti-HCV"]
+        "tags": [
+          "HCV",
+          "Anti-HCV"
+        ],
+        "story_hint": "💡 HİKAYE: Anti-HCV testi kapıda duran güvenlik gibidir — hırsızın (virüsün) gelip gelmediğini söyler ama hâlâ içeride mi bilmez. Gerçek suçluyu yakalamak için PCR dedektifi (HCV-RNA) çağrılmalıdır."
       }
     ],
     "tus_spots": [

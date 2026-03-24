@@ -1,0 +1,59 @@
+[
+  {
+    "id": "micro-ent-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Enterobacteriaceae",
+    "sub_topic": "Salmonella Türleri",
+    "content_summary": "Salmonella türleri gram negatif, hareketli, H2S pozitif basillerdir. Laktozu fermente etmezler.",
+    "flashcards": [
+      {
+        "id": "fc-ent-100",
+        "question": "Salmonella Typhi taşıyıcılığında bakteri nerede kolonize olur?",
+        "answer": "Safra kesesi."
+      },
+      {
+        "id": "fc-ent-101",
+        "question": "Orak hücreli anemili hastalarda en sık osteomiyelit etkeni nedir?",
+        "answer": "Salmonella."
+      }
+    ],
+    "tus_spots": [
+      "Salmonella Typhi, Peyer plaklarını tutarak intestinal perforasyona neden olabilir.",
+      "Rölatif bradikardi (ateş yüksek olmasına rağmen nabzın düşük kalması) Tifo' da görülür."
+    ],
+    "clinical_cases": [
+      {
+        "case": "25 yaşında bir hasta, 2 haftadır devam eden ateş, kabızlık ve gövdesinde pembe lekelerle başvuruyor. Nabzı 60/dakika saptanıyor (Ateş 39C).",
+        "options": [
+          "Tifo",
+          "Bruselloz",
+          "Sıtma",
+          "Pnömoni"
+        ],
+        "correct_answer": "Tifo",
+        "explanation": "Uzamış ateş, rölatif bradikardi ve taş roze lekeleri Tifo kliniğidir.",
+        "id": "cc-micro-enter-001-001"
+      }
+    ]
+  },
+  {
+    "id": "micro-ent-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Enterobacteriaceae",
+    "sub_topic": "Shigella Türleri",
+    "content_summary": "Shigella türleri gram negatif, hareketsiz basillerdir. Basilli dizanteri etkenidirler.",
+    "flashcards": [
+      {
+        "id": "fc-ent-110",
+        "question": "Shigella türlerinin enfeksiyon dozu nasıldır?",
+        "answer": "Çok düşüktür (10-100 bakteri yeterlidir)."
+      }
+    ],
+    "tus_spots": [
+      "Shigella' nın en sık görülen türü S. sonnei' dir.",
+      "Shigella, hücreden hücreye aktin roketleri kullanarak yayılır."
+    ]
+  }
+]

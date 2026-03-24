@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import '../theme/app_theme.dart';
 
 class StreakWidget extends StatelessWidget {
   final int currentStreak;
@@ -36,25 +35,27 @@ class StreakWidget extends StatelessWidget {
       child: Row(
         children: [
           // Ateş ikonu
-          Container(
-            padding: const EdgeInsets.all(12),
-            decoration: BoxDecoration(
-              color: Colors.white.withValues(alpha: 0.2),
-              borderRadius: BorderRadius.circular(14),
-            ),
-            child: const Icon(
-              Icons.local_fire_department_rounded,
-              color: Colors.white,
-              size: 32,
-            ),
-          )
-              .animate(onPlay: (c) => c.repeat())
-              .shimmer(
-                duration: 1800.ms,
-                color: Colors.white.withValues(alpha: 0.3),
-              )
-              .then()
-              .shake(hz: 2, duration: 400.ms),
+          RepaintBoundary(
+            child: Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: Colors.white.withValues(alpha: 0.2),
+                borderRadius: BorderRadius.circular(14),
+              ),
+              child: const Icon(
+                Icons.local_fire_department_rounded,
+                color: Colors.white,
+                size: 32,
+              ),
+            )
+                .animate(onPlay: (c) => c.repeat())
+                .shimmer(
+                  duration: 1800.ms,
+                  color: Colors.white.withValues(alpha: 0.3),
+                )
+                .then()
+                .shake(hz: 2, duration: 400.ms),
+          ),
           const SizedBox(width: 16),
           // Streak bilgisi
           Expanded(

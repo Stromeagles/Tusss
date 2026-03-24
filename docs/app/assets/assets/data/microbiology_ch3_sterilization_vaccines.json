@@ -1,0 +1,111 @@
+[
+  {
+    "id": "micro-ch3-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Genel Mikrobiyoloji",
+    "topic": "Sterilizasyon ve Dezenfeksiyon",
+    "sub_topic": "Yöntemler ve Kontrol",
+    "content_summary": "Sterilizasyon tüm canlıları (sporlar dahil) yok eder. Nemli ısı (Otoklav), Kuru ısı (Pastör fırını) ve Gaz (Etilen Oksit) en yaygın yöntemlerdir.",
+    "flashcards": [
+      {
+        "id": "fc-micro-040",
+        "question": "Otoklav sterilizasyonunun (nemli ısı) etkinliğini kontrol etmek için kullanılan 'Altın Standart' biyolojik indikatör hangisidir?",
+        "answer": "Bacillus stearothermophilus.",
+        "difficulty": "medium",
+        "tags": [
+          "Sterilizasyon",
+          "Otoklav",
+          "Biyolojik İndikatör"
+        ]
+      },
+      {
+        "id": "fc-micro-041",
+        "question": "Etilen Oksit sterilizasyonu hangi mekanizma ile öldürür ve kontrolünde hangi bakteri kullanılır?",
+        "answer": "Alkilizasyon ile öldürür. Kontrolünde Bacillus subtilis kullanılır.",
+        "difficulty": "hard",
+        "tags": [
+          "Etilen Oksit",
+          "Alkilizasyon",
+          "Bacillus subtilis"
+        ]
+      },
+      {
+        "id": "fc-micro-042",
+        "question": "Vücuda penetre olmayan, mukoza ile teması olan aletlere (örn: endoskoplar) ne düzey dezenfeksiyon yapılmalıdır?",
+        "answer": "Yüksek düzey dezenfeksiyon (Yarı-kritik aletler).",
+        "difficulty": "medium",
+        "tags": [
+          "Dezenfeksiyon",
+          "Spaulding Sınıflaması"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Prionlar sterilizasyona en dayanıklı gruptur, özel prosedür (134°C 18 dk ön vakumlu) gerektirir.",
+      "HEPA filtreleri 0.3 mikrona kadar olan mikropları temizler.",
+      "Tindalizasyon (Benmari): Protein veya karbonhidrat içeren maddelerin 3 gün üst üste ısıtılarak steril edilmesidir.",
+      "Gluteraldehit endoskopların yüksek düzey dezenfeksiyonunda kullanılır."
+    ]
+  },
+  {
+    "id": "micro-ch3-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Genel Mikrobiyoloji",
+    "topic": "Bağışıklama ve Aşılar",
+    "sub_topic": "Aşı Tipleri ve Endikasyonlar",
+    "content_summary": "Aktif bağışıklık aşı veya hastalıkla (bellek var), pasif bağışıklık serum veya anne sütüyle (bellek yok) sağlanır. Canlı ve inaktif aşıların faklı özellikleri vardır.",
+    "flashcards": [
+      {
+        "id": "fc-micro-050",
+        "question": "Aşıyla birlikte verildiğinde antijenin immünojenik özelliğini (etkisini) artıran maddelere ne ad verilir?",
+        "answer": "Adjuvan (Örn: Alüminyum tuzları).",
+        "difficulty": "easy",
+        "tags": [
+          "Aşı",
+          "Adjuvan"
+        ]
+      },
+      {
+        "id": "fc-micro-051",
+        "question": "Gebelere ve immünsüpresif hastalara kontrendike olan aşı tipi hangisidir?",
+        "answer": "Canlı (atenüe) aşılar. (İstisna: Sarı humma gebelere risk varsa yapılabilir).",
+        "difficulty": "medium",
+        "tags": [
+          "Aşı",
+          "Kontrendikasyon",
+          "Gebelik"
+        ]
+      },
+      {
+        "id": "fc-micro-052",
+        "question": "Hepatit B aşısı hangi hücre kültürü kullanılarak hazırlanır?",
+        "answer": "Maya hücreleri (HBsAg geninin entegre edilmesiyle).",
+        "difficulty": "medium",
+        "tags": [
+          "HBV",
+          "Rekombinan Aşı"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Canlı bacterial aşıları: BCG, Salmonella ty21a.",
+      "Canlı viral aşılar: KKK (Kızamık-Kızamıkçık-Kabakulak), Su çiçeği, Çocuk felci (Sabin-Oral), Rotavirüs.",
+      "Toksoid aşılar: Difteri ve Tetanoz.",
+      "Hib ve Pnömokok aşıları 2 yaş altında konjuge (taşıyıcı proteinli) olarak uygulanmalıdır."
+    ],
+    "clinical_cases": [
+      {
+        "case": "Daha önce hiç aşılanmamış bir çocukta 'Göbek Bağının Geç Düşmesi' ve tekrarlayan enfeksiyonlar görülüyorsa, hangi immün defekt düşünülmelidir?",
+        "options": [
+          "NADPH Oksidaz eksikliği",
+          "Lökosit Adezyon Defekti (LAD)",
+          "Chediak-Higashi",
+          "Kompleman eksikliği"
+        ],
+        "correct_answer": "Lökosit Adezyon Defekti (LAD)",
+        "explanation": "LAD'da integrin beta (CD11/18) eksikliği vardır, nötrofiller dokuya göç edemez. Klasik bulgu göbek bağının geç düşmesidir.",
+        "id": "cc-micro-ch3-002-001"
+      }
+    ]
+  }
+]

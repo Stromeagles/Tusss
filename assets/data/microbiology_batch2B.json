@@ -1,0 +1,611 @@
+{
+  "subject": "Mikrobiyoloji",
+  "chapter": "Temel Mikro (Final) & Viroloji (Giriş) - Batch 2B",
+  "flashcards": [
+    {
+      "id": "micro_b2b_251",
+      "question": "Biyogüvenlik düzeyleri: En tehlikeli ve aşısı/tedavisi olmayan (örn: Ebola) etkenler hangi düzeydedir?",
+      "answer": "[[Biyogüvenlik Düzeyi 4]] ([[BSL-4]]).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Temel",
+        "Lab Güvenliği"
+      ],
+      "ai_coding": "🤖 Kodlama: B-SL-4 = E-n tehlikeli.",
+      "story_hint": "💡 HİKAYE: Ebola adlı bir cani, dünyanın en güvenlikli hapishanesine (BSL-4) kapatılmış. Ne aşısı ne ilacı var — 4 kat duvar bile yetmiyor, gardiyanlar uzay kıyafeti giyiyor!"
+    },
+    {
+      "id": "micro_b2b_252",
+      "question": "Bacteroides ve Clostridium gibi etkenlerin çalışıldığı BSL düzeyi?",
+      "answer": "[[Biyogüvenlik Düzeyi 2]] ([[BSL-2]]).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Temel",
+        "Lab Güvenliği"
+      ],
+      "ai_coding": "🤖 Kodlama: B-SL-2 = B-ak-te-r-i.",
+      "story_hint": "💡 HİKAYE: Bacteroides ve Clostridium iki yaramaz çocuk gibi — normal bir okula (BSL-2) gidiyorlar. Tehlikeli ama kontrol altında, sınıfta maske takmak yetiyor."
+    },
+    {
+      "id": "micro_b2b_253",
+      "question": "Mycobacterium tuberculosis ve Brucella için önerilen BSL düzeyi?",
+      "answer": "[[Biyogüvenlik Düzeyi 3]] ([[BSL-3]]).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Temel",
+        "Lab Güvenliği"
+      ],
+      "ai_coding": "🤖 Kodlama: B-SL-3 = B-rucella / T-bc.",
+      "story_hint": "💡 HİKAYE: Tüberküloz ve Brucella, hapishanenin 3. katında tutuluyorlar (BSL-3). Havadan bulaşıyorlar ama Ebola kadar tehlikeli değiller — yine de negatif basınçlı oda şart!"
+    },
+    {
+      "id": "micro_b2b_254",
+      "question": "Bakteriyel 'İzolat' ne demektir?",
+      "answer": "Bir örnekten [[saf olarak elde edilen]] bakteri topluluğu.",
+      "difficulty": "Kolay",
+      "tags": [
+        "Temel",
+        "Tanım"
+      ],
+      "ai_coding": "🤖 Kodlama: İ-zolat = İ-zole edilmiş.",
+      "story_hint": "💡 HİKAYE: İzolat kelimesini 'izole edilmiş yalnız bakteri' olarak düşün. Kalabalıktan ayrılmış, tek başına saf kalmış bir münzevi gibi — arkadaşsız ama kimliği net."
+    },
+    {
+      "id": "micro_b2b_255",
+      "question": "Bakterilerde 'Otokatalitik' büyüme ne demektir?",
+      "answer": "Bakteri sayısının [[logaritmik]] olarak (2, 4, 8...) artması.",
+      "difficulty": "Orta",
+      "tags": [
+        "Temel",
+        "Üreme"
+      ],
+      "ai_coding": "🤖 Kodlama: O-to = O-tomatik katlanma.",
+      "story_hint": "💡 HİKAYE: Otokatalitik üreyen bakteri, kendini kopyalayan bir fotokopi makinesi gibi. Her kopya yeni kopya çıkarıyor: 1 sayfa 2 olur, 2 sayfa 4 olur — logaritmik çılgınlık!"
+    },
+    {
+      "id": "micro_b2b_256",
+      "question": "Bakterilerde 'Tersiyer' (3.) yapıdaki proteinlerin bozulmasına ne denir?",
+      "answer": "[[Denatürasyon]] (Isı, asit vb. ile olur).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Temel",
+        "Fizyoloji"
+      ],
+      "ai_coding": "🤖 Kodlama: D-enatürasyon = D-oğal yapının bozulması.",
+      "story_hint": "💡 HİKAYE: Bir origami kuğusu (tersiyer yapı) sıcak suya düşünce kağıt hamuruna dönüyor — denatürasyon! Isı ve asit, proteinin güzel katlanmasını bozup dümdüz ediyor."
+    },
+    {
+      "id": "micro_b2b_257",
+      "question": "Bakterilerin 'Sıvı' olarak bulunduğu besiyeri formuna ne denir?",
+      "answer": "[[Broth (Buyyon)]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Temel",
+        "Besiyeri"
+      ],
+      "ai_coding": "🤖 Kodlama: B-uyyon = B-ol sıvı.",
+      "story_hint": "💡 HİKAYE: Buyyon, bakterilerin yüzme havuzu — sıvı besiyerinde keyifle kulaç atıyorlar. 'Broth' kelimesi İngilizce 'çorba' demek, bakteriler çorbada yüzüyor!"
+    },
+    {
+      "id": "micro_b2b_258",
+      "question": "Agar'ın (besiyeri katılaştırıcısı) ana özelliği nedir?",
+      "answer": "Bakteriler tarafından [[parçalanamaz]] olması ve [[42-45°C'ye]] kadar sıvı kalabilmesi.",
+      "difficulty": "Orta",
+      "tags": [
+        "Temel",
+        "Besiyeri"
+      ],
+      "ai_coding": "🤖 Kodlama: A-gar = A-yrışmaz.",
+      "story_hint": "💡 HİKAYE: Agar, bakterilerin yiyemediği jöle — 'Bu tatlıyı kim yaptı, tadı yok!' diye şikayet ediyorlar. 42-45°C'de eriyor ama soğuyunca taş gibi katılaşıyor."
+    },
+    {
+      "id": "micro_b2b_259",
+      "question": "Bakteriyofajların lökosit vb. hücrelere girmesi neye yol açar?",
+      "answer": "Yol açmaz, [[fajlar]] sadece [[bakterilere spesifiktir]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Temel",
+        "Genetik"
+      ],
+      "ai_coding": "🤖 Kodlama: F-aj = F-ren (Sadece bakteriye).",
+      "story_hint": "💡 HİKAYE: Faj kapıcısı sadece bakteri apartmanına giriyor. Lökosit apartmanının kapısını çalsa bile 'Yanlış adres!' diye geri dönüyor — bakterilere özel kurye!"
+    },
+    {
+      "id": "micro_b2b_260",
+      "question": "Bakteriyel genomun (nükleoid) ökaryotlardan farkı?",
+      "answer": "[[Nükleer membran]] yoktur, [[histon proteinleri]] yoktur, [[sirküler DNA'dır]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Temel",
+        "Genetik"
+      ],
+      "ai_coding": "🤖 Kodlama: B-akteri = B-asit (Sirküler).",
+      "story_hint": "💡 HİKAYE: Bakteri DNA'sı tembel bir öğrenci gibi — zarfını bile kapatmamış (nükleer membran yok), kitaplarını düzenlememiş (histon yok), defterini yuvarlak bırakmış (sirküler)!"
+    },
+    {
+      "id": "micro_b2b_261",
+      "question": "Bakterilerde 'Ekzon' ve 'İntron' ayrımı var mıdır?",
+      "answer": "Hayır, bakteriyel genler genellikle [[kesintisizdir]] ([[intron içermezler]]).",
+      "difficulty": "Orta",
+      "tags": [
+        "Temel",
+        "Genetik"
+      ],
+      "ai_coding": "🤖 Kodlama: İ-ntron = İ-stisna (Bakteride yok).",
+      "story_hint": "💡 HİKAYE: Bakteriler minimalist — genlerinde intron denen 'gereksiz paragraflar' yok. Ökaryotlar roman yazar, bakteriler tweet atar: kısa, öz, kesintisiz!"
+    },
+    {
+      "id": "micro_b2b_262",
+      "question": "Antibiyotik direnç genleri plazmidlerde mi yoksa kromozomda mı bulunur?",
+      "answer": "Her ikisinde de bulunabilir ama [[plazmidler]] [[hızlı yayılım]] sağlar.",
+      "difficulty": "Kolay",
+      "tags": [
+        "Temel",
+        "Direnç"
+      ],
+      "ai_coding": "🤖 Kodlama: P-lazmid = P-ortatif direnç.",
+      "story_hint": "💡 HİKAYE: Plazmid, bakterilerin USB belleği — direnç genlerini taşıyıp arkadaşlarına dağıtıyor. Kromozom sabit disk ise, plazmid taşınabilir korsan yazılım!"
+    },
+    {
+      "id": "micro_b2b_263",
+      "question": "Dezenfektanların 'Geniş Spektrumlu' olması ne demektir?",
+      "answer": "Hem [[Gram pozitif]], hem [[negatif]], hem de zarflı/zarfsız virüslere etkili olması.",
+      "difficulty": "Kolay",
+      "tags": [
+        "Temel",
+        "Dezenfeksiyon"
+      ],
+      "ai_coding": "🤖 Kodlama: G-eniş = G-erçek temizlik.",
+      "story_hint": "💡 HİKAYE: Geniş spektrumlu dezenfektan, bir süper kahraman gibi hem Gram pozitif hem negatif hem de virüsleri tek yumrukla devirir — ayrım yapmaz, herkesi temizler!"
+    },
+    {
+      "id": "micro_b2b_264",
+      "question": "Hangi dezenfektan 'Sporisid' (spor öldürücü) özelliğe sahiptir?",
+      "answer": "[[%2 Glutaraldehit]] (Soğuk sterilizasyon).",
+      "difficulty": "Orta",
+      "tags": [
+        "Temel",
+        "Sterilizasyon"
+      ],
+      "ai_coding": "🤖 Kodlama: G-lutaraldehit = G-erçek (Spor) katili.",
+      "story_hint": "💡 HİKAYE: Glutaraldehit %2, sporların kâbusu — soğuk sterilizasyonun buz gibi katili. Endoskoplar 'banyoya giriyorum' diye glutaraldehit havuzuna dalıyor, sporlar bile kurtulamıyor!"
+    },
+    {
+      "id": "micro_b2b_265",
+      "question": "Deride kullanılan dezenfektanlara ne denir?",
+      "answer": "[[Antiseptik]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Temel",
+        "Dezenfeksiyon"
+      ],
+      "ai_coding": "🤖 Kodlama: A-ntiseptik = A-rkadaş (Canlı dokuya).",
+      "story_hint": "💡 HİKAYE: Antiseptik, canlı dokuya dost dezenfektan — derine inmez ama yüzeyde temizler. Cerrahın eli ile tokalaşıp 'Seni koruyorum!' diyen kibar bir bekçi."
+    },
+    {
+      "id": "micro_b2b_266",
+      "question": "En sık kullanılan antiseptiklerden olan 'Klorheksidin' hangi durumlarda tercih edilir?",
+      "answer": "[[Cerrahi el yıkama]] ve [[ağız gargarası]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Temel",
+        "Antisepsi"
+      ],
+      "ai_coding": "🤖 Kodlama: K-lorheksidin = K-olay temizlik (Cilt).",
+      "story_hint": "💡 HİKAYE: Klorheksidin, cerrahların el yıkama arkadaşı ve diş hekimlerinin gargara partneri. Her sabah ellere 'Günaydın!' der, akşam da ağıza 'İyi geceler!' der."
+    },
+    {
+      "id": "micro_b2b_267",
+      "question": "Hücre duvarı olmayan (Mycoplasma) bakterilere hangi antibiyotikler ETKİSİZDİR?",
+      "answer": "[[Penisilinler]], [[Sefalosporinler]], [[Vankomisin]]. (Tüm beta-laktamlar).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Antibiyotikler",
+        "Bakteriyoloji"
+      ],
+      "ai_coding": "🤖 Kodlama: Duvar-yok = Mermi-boşa (Penisilin).",
+      "story_hint": "💡 HİKAYE: Mycoplasma duvarı olmayan çıplak bakteri — penisilin mermisi ona çarpmadan geçiyor! Zırh yoksa mermi işe yaramaz, beta-laktamlar boşa gider."
+    },
+    {
+      "id": "micro_b2b_268",
+      "question": "Direnç: Beta-laktamaz enzimi hangi bağı parçalar?",
+      "answer": "[[Beta-laktam halkasının]] '[[C-N bağını]]'.",
+      "difficulty": "Zor",
+      "tags": [
+        "Direnç",
+        "Antibiyotikler"
+      ],
+      "ai_coding": "🤖 Kodlama: B-eta = C-N bağı (Kesit).",
+      "story_hint": "💡 HİKAYE: Beta-laktamaz enzimi, bir makas gibi beta-laktam halkasının C-N bağını 'çıt!' diye kesiyor. Yüzük koptu mu antibiyotik işe yaramaz!"
+    },
+    {
+      "id": "micro_b2b_269",
+      "question": "Antibiyotik 'Sinerjisi' ne demektir?",
+      "answer": "İki ilacın birlikte kullanımının, toplam etkilerinden daha fazla etki göstermesi (örn: [[Penisilin]] + [[Aminoglikozid]]).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Tedavi",
+        "Temel"
+      ],
+      "ai_coding": "🤖 Kodlama: S-inerji = S-üper etki.",
+      "story_hint": "💡 HİKAYE: Penisilin duvarı deler, aminoglikozid içeri girer — birlikte çalışınca 1+1=3 yapıyorlar! Sinerji: gardırop kapısını sen aç, ben içindeki elbiseleri çalarım!"
+    },
+    {
+      "id": "micro_b2b_270",
+      "question": "Antibiyotik 'Antagonizması' nedir?",
+      "answer": "Bir ilacın diğerinin [[etkisini azaltması]]/[[yok etmesi]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Tedavi",
+        "Temel"
+      ],
+      "ai_coding": "🤖 Kodlama: A-ntagonizma = A-leyhte etki.",
+      "story_hint": "💡 HİKAYE: Antagonizma — bir ilaç diğerine 'Sen otur, ben hallederim' diyor ama hiçbir şey halledemiyor. Birbirlerinin ayağına basan dans partnerleri gibi!"
+    },
+    {
+      "id": "micro_b2b_271",
+      "question": "Geniş Spektrumlu Beta-Laktamaz (GSBL / ESBL) üreten bakterilerde ilk seçenek?",
+      "answer": "[[Karbapenemler]] ([[Ertapenem]], [[Meropenem]] vb.).",
+      "difficulty": "Zor",
+      "tags": [
+        "Direnç",
+        "Antibiyotikler"
+      ],
+      "ai_coding": "🤖 Kodlama: E-SBL = K-arbapenem.",
+      "story_hint": "💡 HİKAYE: ESBL üreten bakteri, kale kapısını kıran dev gibi — ama karbapenem onun kriptoniti! 'Ertapenem' adlı süper kahraman gelince dev diz çöküyor."
+    },
+    {
+      "id": "micro_b2b_272",
+      "question": "Direnç: Metisilin direnci (MRSA) hangi genle kontrol edilir?",
+      "answer": "[[mecA geni]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Direnç",
+        "S. aureus"
+      ],
+      "ai_coding": "🤖 Kodlama: M-ec-A = M-etisilin.",
+      "story_hint": "💡 HİKAYE: mecA geni, MRSA'nın gizli silahı — 'METİSİLİN mi? Tanımıyorum!' diyor. mec-A = Met-isilin-e Cevap-Alamazsın! Penisilin kapıyı çalamaz bile."
+    },
+    {
+      "id": "micro_b2b_273",
+      "question": "Vankomisin dirençli enterokoklarda (VRE) direnç hangi modifikasyonla olur?",
+      "answer": "[[D-Ala-D-Ala]] yerine [[D-Ala-D-Laktat]] oluşumu.",
+      "difficulty": "Zor",
+      "tags": [
+        "Direnç",
+        "Enterokok"
+      ],
+      "ai_coding": "🤖 Kodlama: V-R-E = L-aktat.",
+      "story_hint": "💡 HİKAYE: VRE enterokokları Vankomisin'e kapıyı açmıyor! D-Ala-D-Ala yerine D-Ala-D-Laktat koymuşlar — kilit değişmiş, Vankomisin'in anahtarı artık uymuyor."
+    },
+    {
+      "id": "micro_b2b_274",
+      "question": "Antibiyotiklerin 'Konsantrasyona Bağlı' öldürme özelliği ne demektir?",
+      "answer": "İlaç dozu arttıkça öldürme hızının artması (örn: [[Aminoglikozidler]], [[Kinolonlar]]).",
+      "difficulty": "Zor",
+      "tags": [
+        "Farmakoloji",
+        "Temel"
+      ],
+      "ai_coding": "🤖 Kodlama: K-onsantrasyon = K-inolon.",
+      "story_hint": "💡 HİKAYE: Aminoglikozid ve Kinolon, sniper tüfeği gibi — tek ama güçlü atış! Konsantrasyon ne kadar yüksekse kurşun o kadar öldürücü, sık atışa gerek yok."
+    },
+    {
+      "id": "micro_b2b_275",
+      "question": "Karanlık saha mikroskopisi hangi etkenlerin tanısında vazgeçilmezdir?",
+      "answer": "[[Spiroketler]] ([[Treponema]], [[Borrelia]], [[Leptospira]]).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Temel",
+        "Mikroskopi"
+      ],
+      "ai_coding": "🤖 Kodlama: K-aranlık = S-piroket.",
+      "story_hint": "💡 HİKAYE: Karanlık sahada spiroketler dans ediyor! Treponema, Borrelia, Leptospira — üçü de kıvrıla kıvrıla parlıyor. Karanlık sahne onların disco topu!"
+    },
+    {
+      "id": "micro_b2b_276",
+      "question": "Virüslerin yapısal birimi olan ve genomu çevreleyen protein kılıfa ne denir?",
+      "answer": "[[Kapsid]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Viroloji",
+        "Yapı"
+      ],
+      "ai_coding": "🤖 Kodlama: K-apsid = K-orumacı kılıf.",
+      "story_hint": "💡 HİKAYE: Kapsid, virüsün zırhı — genomu bir şövalye gibi koruyor. 'Kap-sid' = Kap gibi üstünü kapatan protein kalkanı!"
+    },
+    {
+      "id": "micro_b2b_277",
+      "question": "Virüslerin 'Zarf' (Envelope) yapısı nereden köken alır?",
+      "answer": "[[Konak hücre zarı]] veya [[nükleer membranından]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Viroloji",
+        "Yapı"
+      ],
+      "ai_coding": "🤖 Kodlama: Z-arf = Z-ar (Konak zarından).",
+      "story_hint": "💡 HİKAYE: Virüs zarfı, konak hücrenin cüzdanından çaldığı kimlik kartı gibi — kendi zarı yok, çıkarken ev sahibinin paltosunu giyip gidiyor!"
+    },
+    {
+      "id": "micro_b2b_278",
+      "question": "En büyük boyuta sahip virüs (Hafif mikroskopta görülebilir) hangisidir?",
+      "answer": "[[Poxvirus]] (Örn: [[Çiçek virüsü]]).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Viroloji",
+        "Yapı"
+      ],
+      "ai_coding": "🤖 Kodlama: P-ox = B-üyük (P-apağan gibi).",
+      "story_hint": "💡 HİKAYE: Poxvirus o kadar büyük ki ışık mikroskobunda bile görünüyor! Virüsler arasında sumo güreşçisi — diğerleri fare, Pox fil gibi!"
+    },
+    {
+      "id": "micro_b2b_279",
+      "question": "Genomu 'DNA' olan virüsler arasında 'Zarfsız' olanlar?",
+      "answer": "[[Adenovirus]], [[Papillomavirus]], [[Polyomavirus]], [[Parvovirus]] (APPP).",
+      "difficulty": "Zor",
+      "tags": [
+        "Viroloji",
+        "DNA Virüsleri"
+      ],
+      "ai_coding": "🤖 Kodlama: A-P-P-P. Çıplak (Zarfsız) DNA!",
+      "story_hint": "💡 HİKAYE: APPP (Adeno-Papilloma-Polyoma-Parvo) — dört çıplak DNA virüsü plajda güneşleniyor. Zarf giymemişler, çıplak DNA ile dolaşıyorlar!"
+    },
+    {
+      "id": "micro_b2b_280",
+      "question": "Hangi DNA virüsü 'Tek İplikli' (Single-stranded) genom içerir?",
+      "answer": "[[Parvovirus B19]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Viroloji",
+        "DNA Virüsleri"
+      ],
+      "ai_coding": "🤖 Kodlama: P-arvo-B19 = B-ir (Tek iplik).",
+      "story_hint": "💡 HİKAYE: Parvovirus B19, DNA virüsleri arasındaki yalnız tekçi — herkes çift iplik taşırken o tek iplikle dolaşıyor. B-19 = B-ir iplik, tek başına!"
+    },
+    {
+      "id": "micro_b2b_281",
+      "question": "Hangi DNA virüsü sitoplazmada replike olur (İstisna)?",
+      "answer": "[[Poxvirus]].",
+      "difficulty": "Zor",
+      "tags": [
+        "Viroloji",
+        "DNA Virüsleri"
+      ],
+      "ai_coding": "🤖 Kodlama: P-ox = P-rofesyonel (Hücre çekirdeğine muhtaç değil).",
+      "story_hint": "💡 HİKAYE: Poxvirus isyankâr — diğer DNA virüsleri çekirdeğe giderken o sitoplazmada kendi laboratuvarını kurmuş! 'Çekirdeğe ihtiyacım yok!' diye bağırıyor."
+    },
+    {
+      "id": "micro_b2b_282",
+      "question": "Herpesvirüslerin latin alfabesine göre sınıflandırılmasında 'Alfa' grubunda kimler vardır?",
+      "answer": "[[HSV-1]], [[HSV-2]] ve [[VZV (Varisella Zoster)]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Viroloji",
+        "Herpes"
+      ],
+      "ai_coding": "🤖 Kodlama: A-lfa = A-teş ve Suçiçeği (Hızlı yayılır).",
+      "story_hint": "💡 HİKAYE: Alfa Herpes ailesi hızlı koşucular — HSV-1 yüze, HSV-2 alta, VZV her yere koşuyor! 'Alfa' = 'Acele' — hızla yayılıp ganglionda saklanıyorlar."
+    },
+    {
+      "id": "micro_b2b_283",
+      "question": "HSV-1 genellikle nerede latent (uyur) kalır?",
+      "answer": "[[Trigeminal Ganglion]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Viroloji",
+        "Herpes"
+      ],
+      "ai_coding": "🤖 Kodlama: HSV-1 = T-rigeminal (Yüz).",
+      "story_hint": "💡 HİKAYE: HSV-1, Trigeminal gangliona yerleşmiş tembel bir kiracı — yüzde oturmuş, dudak uçunda uyuyor. Stres olunca uyanıp 'uçuk' yapıyor!"
+    },
+    {
+      "id": "micro_b2b_284",
+      "question": "HSV-2 genellikle nerede latent kalır?",
+      "answer": "[[Sakral Ganglionlar]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Viroloji",
+        "Herpes"
+      ],
+      "ai_coding": "🤖 Kodlama: HSV-2 = S-akral (Alt taraf).",
+      "story_hint": "💡 HİKAYE: HSV-2, sakral ganglionun alt kat kiracısı — belden aşağıda oturmuş, genital bölgede uyuyor. 2 = alt taraf, sakral = kuyruk sokumu!"
+    },
+    {
+      "id": "micro_b2b_285",
+      "question": "Ağır Herpes mikroskopisinde görülen karakteristik bulgu?",
+      "answer": "[[Tzanck Testi]] ([[Multinükleer dev hücreler]]).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Viroloji",
+        "Tanı"
+      ],
+      "ai_coding": "🤖 Kodlama: T-zanck = T-eşhis.",
+      "story_hint": "💡 HİKAYE: Tzanck testi, Herpes'in parmak izi — multinükleer dev hücreler suçüstü yakalanıyor! 'Tzanck' = 'Şans' — doğru tanıya şans veren hızlı test!"
+    },
+    {
+      "id": "micro_b2b_286",
+      "question": "EBV (Epstein-Barr Virüs) enfeksiyonunda periferik yaymada ne görülür?",
+      "answer": "[[Atipik Lenfositler]] ([[Downey Hücreleri]]).",
+      "difficulty": "Orta",
+      "tags": [
+        "Viroloji",
+        "EBV"
+      ],
+      "ai_coding": "🤖 Kodlama: E-B-V = A-tipik L-enfosit.",
+      "story_hint": "💡 HİKAYE: EBV, B lenfositleri zombiye çeviriyor ve kana atipik lenfositler (Downey hücreleri) salıyor. Periferik yaymada tuhaf görünen askerler — bunlar Downey'nin zombi ordusu!"
+    },
+    {
+      "id": "micro_b2b_287",
+      "question": "EBV hangi hücrelerin reseptörüne (CD21 / CR2) bağlanarak enfekte eder?",
+      "answer": "[[B Lenfositler]].",
+      "difficulty": "Zor",
+      "tags": [
+        "Viroloji",
+        "EBV"
+      ],
+      "ai_coding": "🤖 Kodlama: E-B-V = B hücresi.",
+      "story_hint": "💡 HİKAYE: EBV, B lenfositlerin CD21 kapısını çalıyor — 'Merhaba, ben Epstein, içeri girebilir miyim?' Sadece B hücrelerine aşık, T hücreleri ilgisini çekmiyor!"
+    },
+    {
+      "id": "micro_b2b_288",
+      "question": "Cytomegalovirus (CMV) enfeksiyonunda karakteristik doku bulgusu?",
+      "answer": "[[Baykuş gözü (Owl's eye)]] inklüzyon cisimcikleri.",
+      "difficulty": "Kolay",
+      "tags": [
+        "Viroloji",
+        "CMV"
+      ],
+      "ai_coding": "🤖 Kodlama: C-M-V = B-aykuş.",
+      "story_hint": "💡 HİKAYE: CMV enfeksiyonunda hücreler 'Baykuş gözü' gibi bakıyor — inklüzyon cisimcikleri iki büyük göze benziyor. Gece gelen CMV, baykuş izini bırakıyor!"
+    },
+    {
+      "id": "micro_b2b_289",
+      "question": "Adenovirusların en sık neden olduğu üçlü tablo?",
+      "answer": "[[Farenjit]], [[Konjonktivit]] ve [[Hemorajik Sistit]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Viroloji",
+        "Adenovirus"
+      ],
+      "ai_coding": "🤖 Kodlama: A-denovirus = A-vrupalı hastalığı (Havuz sistiti).",
+      "story_hint": "💡 HİKAYE: Adenovirus üç belayı birden getiriyor — boğazı yakar (farenjit), gözü kızdırır (konjonktivit), mesaneyi kanatır (hemorajik sistit). Havuz partisinin istenmeyen misafiri!"
+    },
+    {
+      "id": "micro_b2b_290",
+      "question": "HPV (Papillomavirus) enfeksiyonunda koilositoz ne demektir?",
+      "answer": "[[Nükleer düzensizlik]] ve genişlemiş şeffaf sitoplazmalı epitel hücreleri.",
+      "difficulty": "Orta",
+      "tags": [
+        "Viroloji",
+        "HPV"
+      ],
+      "ai_coding": "🤖 Kodlama: P-apilloma = K-oilositoz.",
+      "story_hint": "💡 HİKAYE: HPV hücreleri garip şekle sokuyor — koilositoz! Nükleus büyüyüp etrafında hale oluşuyor, sanki hücre şaşkınlıktan gözlerini açmış bakıyor."
+    },
+    {
+      "id": "micro_b2b_291",
+      "question": "HPV 6 ve 11 hangi tabloya yol açar?",
+      "answer": "[[Kondiloma Aküminata]] (Genital siğiller, düşük kanser riski).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Viroloji",
+        "HPV"
+      ],
+      "ai_coding": "🤖 Kodlama: 6-11 = S-iğil.",
+      "story_hint": "💡 HİKAYE: HPV 6 ve 11, genital bölgede 'siğil bahçesi' açıyor ama kansere dönüşmüyor. 6+11=17 yaşındaki ergenler gibi — gürültücü ama zararsız!"
+    },
+    {
+      "id": "micro_b2b_292",
+      "question": "Polyomaviruslardan olan BK virüs en çok hangi hastada sorun çıkarır?",
+      "answer": "[[Böbrek nakilli (Renal transplant)]] hastalar. ([[Nefropati]] yapar).",
+      "difficulty": "Orta",
+      "tags": [
+        "Viroloji",
+        "Polyoma"
+      ],
+      "ai_coding": "🤖 Kodlama: B-K = B-öbrek.",
+      "story_hint": "💡 HİKAYE: BK virüsü böbrek nakilli hastaların kâbusu — 'BK' = 'Böbrek Katili'! Nakil böbreğe sızıp nefropati yapıyor, immünsüprese hastanın sessiz düşmanı."
+    },
+    {
+      "id": "micro_b2b_293",
+      "question": "Polyomaviruslardan olan JC virüs hangi hastalığa yol açar?",
+      "answer": "[[PML]] ([[Progresif Multifokal Lökoensefalopati]]).",
+      "difficulty": "Zor",
+      "tags": [
+        "Viroloji",
+        "Polyoma"
+      ],
+      "ai_coding": "🤖 Kodlama: J-C = B-eyin (J-oker gibi).",
+      "story_hint": "💡 HİKAYE: JC virüsü beyinde PML yapıyor — 'JC' = 'Joker Cerebral'! AIDS hastasının beyninde joker gibi saklanıp beyaz cevheri yok ediyor, lökoensefalopati başlıyor."
+    },
+    {
+      "id": "micro_b2b_294",
+      "question": "Parvovirus B19 hangi hücrelere (P antijeni reseptörü üzerinden) saldırır?",
+      "answer": "[[Eritroid öncü hücreleri]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Viroloji",
+        "Parvovirus"
+      ],
+      "ai_coding": "🤖 Kodlama: B19 = B-ebek (Tokatlanmış yanak) ve Kan.",
+      "story_hint": "💡 HİKAYE: Parvovirus B19, P antijeni reseptörü ile eritroid öncü hücrelere yapışıyor — kırmızı kan hücrelerin fabrikanın kapısını kilitliyor! Anemi başlasın!"
+    },
+    {
+      "id": "micro_b2b_295",
+      "question": "Parvovirus B19'un çocuklarda yaptığı hastalık?",
+      "answer": "[[Eritema İnfeksiyozum]] ([[5. Hastalık]] / Tokatlanmış yanak görüntüsü).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Viroloji",
+        "Parvovirus"
+      ],
+      "ai_coding": "🤖 Kodlama: P-arvo = P-embe yanaklar.",
+      "story_hint": "💡 HİKAYE: Parvovirus B19, çocuğun yanağına tokat atıyor — 'tokatlanmış yanak' görüntüsü! 5. Hastalık = 5 parmak izi yanakta, kıpkırmızı!"
+    },
+    {
+      "id": "micro_b2b_296",
+      "question": "HBV (Hepatit B) virüsünün genom yapısı nasıldır?",
+      "answer": "[[Kısmi çift iplikli sirküler DNA]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Viroloji",
+        "HBV"
+      ],
+      "ai_coding": "🤖 Kodlama: H-B-V = B-oşluklu DNA.",
+      "story_hint": "💡 HİKAYE: HBV'nin DNA'sı yarım yamalak — kısmi çift iplikli sirküler, sanki fermuar tam kapanmamış. 'Kapanmamış fermuar' = kısmi çift iplik!"
+    },
+    {
+      "id": "micro_b2b_297",
+      "question": "HBV replikasyonunda kullanılan (Retrovirüsler gibi) enzim hangisidir?",
+      "answer": "[[Revers Transkriptaz (RT)]] aktivitesi olan [[DNA polimeraz]].",
+      "difficulty": "Zor",
+      "tags": [
+        "Viroloji",
+        "HBV"
+      ],
+      "ai_coding": "🤖 Kodlama: H-B-V = R-T içerir.",
+      "story_hint": "💡 HİKAYE: HBV, DNA virüsü olmasına rağmen Revers Transkriptaz kullanıyor — retrovirüs kılığına girmiş gizli ajan! DNA virüslerinin arasındaki çifte ajan."
+    },
+    {
+      "id": "micro_b2b_298",
+      "question": "Hangi HBV göstergesi enfektiviteyi (bulaştırıcılığı) en iyi yansıtır?",
+      "answer": "[[HBeAg]] (ve [[HBV-DNA]]).",
+      "difficulty": "Orta",
+      "tags": [
+        "Viroloji",
+        "HBV"
+      ],
+      "ai_coding": "🤖 Kodlama: e-Ag = e-nfektivite.",
+      "story_hint": "💡 HİKAYE: HBeAg, bulaştırıcılığın alarm sireni — 'e' = 'enfektif'! HBeAg pozitifse hasta adeta virus saçıyor, etrafındaki herkes dikkat etmeli!"
+    },
+    {
+      "id": "micro_b2b_299",
+      "question": "Çiçek hastalığı (Variola) virüsü hangi virüs ailesindendir?",
+      "answer": "[[Poxviridae]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Viroloji",
+        "Poxvirus"
+      ],
+      "ai_coding": "🤖 Kodlama: V-ariola = P-ox.",
+      "story_hint": "💡 HİKAYE: Variola (çiçek), Poxviridae ailesinin en korkulan üyesi — dünyadan silinen tek virüs! 'Pox' = 'Pis çukurlar' — deride iz bırakan canavar."
+    },
+    {
+      "id": "micro_b2b_300",
+      "question": "Poxvirusların inklüzyon cisimciğine ne ad verilir?",
+      "answer": "[[Guarnieri Cisimcikleri]].",
+      "difficulty": "Zor",
+      "tags": [
+        "Viroloji",
+        "Poxvirus"
+      ],
+      "ai_coding": "🤖 Kodlama: G-uarnieri = P-ox.",
+      "story_hint": "💡 HİKAYE: Guarnieri cisimcikleri, Poxvirus'un sitoplazmaya bıraktığı imza — İtalyan ressam Guarnieri'nin tablosu gibi, hücre içinde sanat eseri bırakıyor!"
+    }
+  ],
+  "id": "microbiology_batch2B-topic-0",
+  "topic": "Temel Mikro (Final) & Viroloji (Giriş) - Batch 2B",
+  "sub_topic": "Temel Mikro (Final) & Viroloji (Giriş) - Batch 2B",
+  "content_summary": "",
+  "tus_spots": []
+}

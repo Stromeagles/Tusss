@@ -12,14 +12,20 @@
         "question": "B. anthracis'in metilen mavisi ile boyandığında pembe kapsüllü görülmesi?",
         "answer": "M'Fadyean reaksiyonu.",
         "difficulty": "hard",
-        "tags": ["Boyama"]
+        "tags": [
+          "Boyama"
+        ],
+        "story_hint": "💡 HİKAYE: M'Fadyean, Şarbon basilini metilen mavisiyle boyar ama kapsül pembe kalır — mavi fonda pembe bir çerçeve gibi parlak görünür. Bu 'pembe çerçeve' reaksiyonu tanıyı doğrular."
       },
       {
         "id": "fc-gpb-2001",
         "question": "Hayvan yünü ile uğraşanlarda görülen, hemorajik mediastinal lenfadenit yapan şarbon formu?",
         "answer": "Akciğer Şarbonu (Yün eğirici hastalığı).",
         "difficulty": "medium",
-        "tags": ["Enfeksiyon"]
+        "tags": [
+          "Enfeksiyon"
+        ],
+        "story_hint": "💡 HİKAYE: Yün eğiren işçi, havadaki şarbon sporlarını solur. Mediastendeki lenf bezleri hemorajik yangına döner — 'Yün Eğirici Hastalığı' adı bu meslek hazinesinden gelir."
       }
     ],
     "tus_spots": [
@@ -31,9 +37,16 @@
     "clinical_cases": [
       {
         "case": "Hayvancılıkla uğraşan bir hastada el sırtında ortası siyah krutlu, ağrısız, periferi ödemli bir lezyon gelişiyor. Çevreden yapılan gram incelemede gram pozitif hareketsiz basiller görülüyor. Etken nedir?",
-        "options": ["B. cereus", "S. aureus", "B. anthracis", "L. monocytogenes"],
-        "correct_answer": "B. anthracis",
-        "explanation": "Hayvan teması öyküsü, ağrısız siyah eskar (püstül malin) ve gram pozitif hareketsiz basiller şarbonun deri formudur."
+        "options": [
+          "A) B. cereus",
+          "B) S. aureus",
+          "C) B. anthracis",
+          "D) L. monocytogenes",
+          "E) E. rhusiopathiae"
+        ],
+        "correct_answer": "C) B. anthracis",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: B. anthracis, hayvancılıkla uğraşanlarda 'Püstül malin' denilen ağrısız, siyah nekrotik merkezli deri lezyonu yapar. \n\n🎓 HOCA ÖZETİ:\n- Morfoloji: Gram pozitif, uçları küt (bamya çiçeği / bambu kamışı) şeklinde basiller.\n- Kültür: Kanlı agarda 'Medusa başı' kolonileri yapar. Ters çam ağacı şeklinde jelatin eritir.\n- Kapsül: Polipeptid (D-glutamik asit) yapıdadır (istisna!).\n- Toksin: PA (bağlayıcı), EF (ödem yapan cAMP), LF (öldürücü metaloproteaz).\n- Ayırıcı: B. cereus = Gıda zehirlenmesi; S. aureus = Ağrılı püstül; L. monocytogenes = Menenjit; E. rhusiopathiae = Erizipeloid.",
+        "id": "cc-micro-gpos-bac-001-001"
       }
     ]
   },
@@ -50,14 +63,20 @@
         "question": "Tetanozda ilk tutulan kas ve görülen ilk bulgu?",
         "answer": "Masseter kası tutulumu ve Çene kilitlenmesi (Trismus).",
         "difficulty": "easy",
-        "tags": ["Tetanoz"]
+        "tags": [
+          "Tetanoz"
+        ],
+        "story_hint": "💡 HİKAYE: Tetanoz toksininin ilk hedefi çene kasıdır (masseter). Ağız kilitlenir, hasta konuşamaz — tıpkı paslanmış bir menteşe gibi çene açılmaz. Trismus, tetanozun ilk çığlığıdır."
       },
       {
         "id": "fc-gpb-2101",
         "question": "Botulizmde görülen '4D' bulguları nelerdir?",
         "answer": "Diplopi, Dizartri, Disfaji ve Dispne.",
         "difficulty": "medium",
-        "tags": ["Botulizm"]
+        "tags": [
+          "Botulizm"
+        ],
+        "story_hint": "💡 HİKAYE: Botulizm '4D' ordusuyla saldırır: Diplopi (çift görme), Dizartri (konuşma bozukluğu), Disfaji (yutma güçlüğü) ve Dispne (nefes darlığı). Dört D birden gelirse konserveyi hatırla."
       }
     ],
     "tus_spots": [
@@ -70,9 +89,16 @@
     "clinical_cases": [
       {
         "case": "Paslı çivi batması sonrası 10 gün sonra çenesini açamama, ense sertliği ve sırtında yay şeklinde kasılma olan hastada en olası etken?",
-        "options": ["C. botulinum", "C. tetani", "S. pyogenes", "C. difficile"],
-        "correct_answer": "C. tetani",
-        "explanation": "Yara öyküsü, trismus (çene kilidi) ve opistotonus tetanozun klasik triadıdır."
+        "options": [
+          "A) C. botulinum",
+          "B) C. tetani",
+          "C) S. pyogenes",
+          "D) C. difficile",
+          "E) B. cereus"
+        ],
+        "correct_answer": "B) C. tetani",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: C. tetani'nin tetanospazmin toksini, inhibitör (frenleyici) nöronları (GABA ve Glisin) bloke eder. \n\n🎓 HOCA ÖZETİ:\n- Sürekli uyarılma sonucu: Trismus (çene kilitlenmesi), Risus sardonicus (alaycı gülümseme) ve Opistotonus (yay şeklinde gerilme) gelişir. Bu tablo Spastik felçtir.\n- C. botulinum ise gevşek felç yapar — konserve ile ilişkilidir.\n- Uyarı: Paslı çivi veya toprak bulaşmış her türlü derin yara tetanos için risktir.\n- Hareket: Periferden MSS'ye retrograd aksonal transport ile taşınır.",
+        "id": "cc-micro-gpos-bac-002-001"
       }
     ]
   },
@@ -89,14 +115,20 @@
         "question": "Listeria'nın oda ısısında (22-28°C) yaptığı karakteristik hareket?",
         "answer": "Taklacı (Tumbling) hareket.",
         "difficulty": "medium",
-        "tags": ["Listeria"]
+        "tags": [
+          "Listeria"
+        ],
+        "story_hint": "💡 HİKAYE: Listeria, oda sıcaklığında taklacı gibi döner (tumbling hareket). Buzdolabının soğuğunda bile çoğalır — soğukkanlı bir akrobat gibi 4°C'de gösteri yapar."
       },
       {
         "id": "fc-gpb-2201",
         "question": "Corynebacterium diphtheriae tanısında kullanılan, siyah koloni yapan besiyeri?",
         "answer": "Tellüritli besiyeri (Tinsdale).",
         "difficulty": "medium",
-        "tags": ["Difteri"]
+        "tags": [
+          "Difteri"
+        ],
+        "story_hint": "💡 HİKAYE: Difteri basili, tellüritli besiyerinde siyah koloni yapar — tıpkı karanlık bir sahneye çıkan bir villana gibi. Tinsdale besiyerindeki bu siyah iz, difterinin parmak izidir."
       }
     ],
     "tus_spots": [
@@ -109,9 +141,16 @@
     "clinical_cases": [
       {
         "case": "Boğazda gri-beyaz, kaldırılınca kanayan psödomembranları olan çocukta boyun lenf bezlerinde şişlik (boğa boynu) izleniyor. En olası tanı?",
-        "options": ["Enfeksiyöz Mononükleoz", "Difteri", "Farenjit", "Kaba kulak"],
-        "correct_answer": "Difteri",
-        "explanation": "Kaldırılınca kanayan psödomembran ve boğa boynu görünümü C. diphtheriae (Difteri) için tipiktir."
+        "options": [
+          "A) Enfeksiyöz Mononükleoz",
+          "B) C. diphtheriae (Difteri)",
+          "C) Adenovirüs Farenjiti",
+          "D) Kabakulak",
+          "E) Epiglottit"
+        ],
+        "correct_answer": "B) C. diphtheriae (Difteri)",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Difteri psödomembranı, mukoza ile sıkı sıkıya bağlı olup kaldırıldığında altta kanayan yaralar bırakır. \n\n🎓 HOCA ÖZETİ:\n- Mekanizma: Toksin, EF-2'yi ADP-ribozilleyerek protein sentezini durdurur.\n- Komplikasyonlar: Miyokardit ve periferik nöropati (toksinin sistemik yayılımı).\n- Tanı: Löffler besiyeri (hızlı üreme), Tellüritli besiyeri (siyah koloni), Elek testi (toksin varlığı).\n- Enfeksiyöz Mononükleoz = EBV; Kabakulak = Parotit; Epiglottit = Hib (H. influenzae tip b).",
+        "id": "cc-micro-gpos-bac-003-001"
       }
     ]
   }

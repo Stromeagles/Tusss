@@ -10,7 +10,8 @@
       {
         "id": "fc-gno-100",
         "question": "Vibrio cholerae' nın tanısında kullanılan özel besiyeri nedir?",
-        "answer": "TCBS agar."
+        "answer": "TCBS agar.",
+        "story_hint": "💡 HİKAYE: Vibrio cholerae, TCBS agarında sükrozu fermente edip sarı koloni yapar. Bu sarı leke, tıpkı virgül şeklindeki basilin sarı bayrak sallaması gibidir — 'Beni burada ara!' der."
       }
     ],
     "tus_spots": [
@@ -28,7 +29,8 @@
       {
         "id": "fc-gno-110",
         "question": "Pseudomonas enfeksiyonu kliniğinde görülen nekrotik deri lezyonuna ne ad verilir?",
-        "answer": "Ektima gangrenozum."
+        "answer": "Ektima gangrenozum.",
+        "story_hint": "💡 HİKAYE: Pseudomonas, nötropenik hastanın derisinde ektima gangrenozum adlı siyah nekrotik yaralar açar. Mavi-yeşil cerahati ve bu siyah yaralar — tıpkı bir savaş alanında bıraktığı izler gibi korkunçtur."
       }
     ],
     "tus_spots": [

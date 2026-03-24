@@ -12,21 +12,30 @@
         "question": "Mikobakterilerin aside dirençli boyanmasından sorumlu hücre duvarı bileşeni?",
         "answer": "Mikolik asit.",
         "difficulty": "medium",
-        "tags": ["Hücre Duvarı"]
+        "tags": [
+          "Hücre Duvarı"
+        ],
+        "story_hint": "💡 HİKAYE: Mikolik asit, mikobakterinin mumlu zırhıdır. Bu zırh aside bile dayanır — boyama sırasında diğerleri soluklarken o kırmızı kalır. 'Aside dirençli basil' unvanını bu mumdan alır."
       },
       {
         "id": "fc-myco-3001",
         "question": "Hangi madde lökosit göçünü inhibe eder ve mikroskobide serpentine (yılanımsı) kordonlar oluşturur?",
         "answer": "Kord Faktörü (Trehaloz-6-6' dimikolat).",
         "difficulty": "hard",
-        "tags": ["Kord Faktörü"]
+        "tags": [
+          "Kord Faktörü"
+        ],
+        "story_hint": "💡 HİKAYE: Kord Faktörü, TBC basillerini yılan gibi kıvrılan kordonlar halinde dizer. Lökositlerin yolunu keser — tıpkı yolun ortasına çekilen ip bariyeri gibi askerlerin geçişini engeller."
       },
       {
         "id": "fc-myco-3002",
         "question": "Tüberküloz tanısında kullanılan ve 8 hafta enkübe edilen yumurtalı besiyeri?",
         "answer": "Löwenstein-Jensen.",
         "difficulty": "easy",
-        "tags": ["Besi yeri"]
+        "tags": [
+          "Besi yeri"
+        ],
+        "story_hint": "💡 HİKAYE: Löwenstein-Jensen, tüberkülozun 8 haftalık 'yumurtalı sabır sofrası'dır. Basil o kadar yavaş büyür ki, haftalarca beklersin — ama sonunda kahverengi karnabahar gibi koloni belirir."
       }
     ],
     "tus_spots": [
@@ -39,9 +48,16 @@
     "clinical_cases": [
       {
         "case": "Gece terlemesi, kilo kaybı ve kanlı öksürükle gelen 30 yaşında bir hastanın akciğer grafisinde sağ apeksde kavite izleniyor. Balgam gram boyamasında aside dirençli basiller görülüyor. En olası tanı?",
-        "options": ["Pnömoni", "Sekonder Tüberküloz", "Sarkoidoz", "Akciğer Kanseri"],
-        "correct_answer": "Sekonder Tüberküloz",
-        "explanation": "Apeks tutulumu, kavite, konstitüsyonel semptomlar ve ARB pozitifliği (aside dirençli basil) reaktivasyon (sekonder) tüberkülozunu gösterir."
+        "options": [
+          "A) Bakteriyel Pnömoni (Alt lob tutulumu)",
+          "B) Sekonder (Reaktivasyon) Tüberküloz",
+          "C) Sarkoidoz (Bilateral hiler LAP)",
+          "D) Akciğer Kanseri (Genellikle yaşlı)",
+          "E) Wegener Granülomatozu"
+        ],
+        "correct_answer": "B) Sekonder (Reaktivasyon) Tüberküloz",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Gece terlemesi, kilo kaybı ve kanlı öksürük (hemoptizi) tüberküloz için klasik 'konstitüsyonel' semptomlardır. \n\n🎓 HOCA ÖZETİ:\n- Apeks Tutulumu: Sekonder TBC'nin en sevdiği yerdir (yüksek oksijenli ortam). \n- Kavite Oluşumu: Enfeksiyonun aktif olduğunu ve bulaştırıcılığın yüksek olduğunu gösterir.\n- Laboratuvar: Aside dirençli basiller (ARB) Ziehl-Neelsen boyama ile pembe/kırmızı görülür.\n- Epidemiyoloji: Cezaevleri, yurtlar ve bağışıklığı baskılanmış kişiler risk grubundadır.",
+        "id": "cc-micro-mycobac-001-001"
       }
     ]
   },
@@ -58,21 +74,31 @@
         "question": "İzoniazid (INH) hangi vitamini tüketerek periferik nöropati yapar? Profilakside ne verilir?",
         "answer": "B6 vitamini (Piridoksin). Profilakside B6 verilir.",
         "difficulty": "medium",
-        "tags": ["İlaçlar", "INH"]
+        "tags": [
+          "İlaçlar",
+          "INH"
+        ],
+        "story_hint": "💡 HİKAYE: İzoniazid, B6 vitaminini çalarak sinirler boyunca hırsızlık yapar — eller ve ayaklar uyuşur (periferik nöropati). Tedaviye B6 eklemek, hırsıza karşı kilit takmak gibidir."
       },
       {
         "id": "fc-myco-3101",
         "question": "Vücut sıvılarını (idrar, ter) turuncuya boyayan antitüberküloz ilaç?",
         "answer": "Rifampin.",
         "difficulty": "easy",
-        "tags": ["Yan Etki"]
+        "tags": [
+          "Yan Etki"
+        ],
+        "story_hint": "💡 HİKAYE: Rifampin, vücudun her sıvısını turuncu boyar — idrar, ter, gözyaşı hep turuncu! Tıpkı elbiselerine turuncu boya dökmüş bir ressam gibi her yere iz bırakır."
       },
       {
         "id": "fc-myco-3102",
         "question": "Optik nöropati (kırmızı-yeşil renk körlüğü) yapan ilaç?",
         "answer": "Etambutol.",
         "difficulty": "medium",
-        "tags": ["Yan Etki"]
+        "tags": [
+          "Yan Etki"
+        ],
+        "story_hint": "💡 HİKAYE: Etambutol, gözün optik sinirine saldırır ve kırmızı-yeşil renkleri karıştırır. Hasta trafik ışıklarını ayırt edemez hale gelir — 'E(ye)tambutol = Eye (göz)' diye hatırla."
       }
     ],
     "tus_spots": [
@@ -95,14 +121,20 @@
         "question": "Hücresel immun yanıtın yetersiz olduğu, lepromin testinin (-) olduğu, aslan yüzü (leontin facies) yapan lepra tipi?",
         "answer": "Lepramatöz Lepra.",
         "difficulty": "medium",
-        "tags": ["Lepra"]
+        "tags": [
+          "Lepra"
+        ],
+        "story_hint": "💡 HİKAYE: Lepramatöz leprada bağışıklık teslim bayrağı çeker — lepromin testi negatiftir. Basiller yüzü istila eder ve 'aslan yüzü' (leontin facies) oluşur, tıpkı bir aslan maskesi gibi."
       },
       {
         "id": "fc-myco-3201",
         "question": "Fotokromojen (ışık varlığında pigment yapan) Mikobakterilere iki örnek?",
         "answer": "M. kansasii ve M. marinum.",
         "difficulty": "hard",
-        "tags": ["Atipik"]
+        "tags": [
+          "Atipik"
+        ],
+        "story_hint": "💡 HİKAYE: Fotokromojen mikobakteriler güneş ışığında pigment üretir — M. kansasii ve M. marinum fotoğraf çektirmeyi seven ikizler gibidir. Işık gelince renklenirler."
       }
     ],
     "tus_spots": [

@@ -1,0 +1,406 @@
+{
+  "subject": "Mikrobiyoloji",
+  "chapter": "Bakteriyoloji (Batch 1C) - Enterikler, Anaeroplar & Mikobakteriler",
+  "flashcards": [
+    {
+      "id": "micro_b1c_101",
+      "question": "Salmonella typhi'nin neden olduğu Tifo tablosunda 'Rose spots' (Gül lekeleri) en sık nerede görülür?",
+      "answer": "[[Gövde]] ve [[Karın]] bölgesinde.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Salmonella"],
+      "ai_coding": "🤖 Kodlama: S-almonella = S-hotgun (Gövdede döküntü)."
+    },
+    {
+      "id": "micro_b1c_102",
+      "question": "Salmonella ve Shigella'yı besiyerindeki hareketliliklerine (motilite) göre nasıl ayırırsınız?",
+      "answer": "[[Salmonella]] hareketlidir ([[H antijeni]] +), [[Shigella]] hareketsizdir.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Enterikler"],
+      "ai_coding": "🤖 Kodlama: S-h-igella = S-abit (Hareketsiz)."
+    },
+    {
+      "id": "micro_b1c_103",
+      "question": "Şigelloz (Basilli Dizanteri) tablosunda en önemli komplikasyonlardan biri olan HUS en sık hangi türle görülür?",
+      "answer": "[[Shigella dysenteriae]] Tip [[1]].",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Shigella"],
+      "ai_coding": "🤖 Kodlama: D-ysenteriae = D-anger (Tehlikeli / HUS)."
+    },
+    {
+      "id": "micro_b1c_104",
+      "question": "Yersinia enterocolitica enfeksiyonu hangi klinik tabloyu taklit edebilir?",
+      "answer": "Akut [[Apandisit]] ([[Psödoapandisit]]).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Yersinia"],
+      "ai_coding": "🤖 Kodlama: Y-ersinia = Y-alan-cı Apandisit."
+    },
+    {
+      "id": "micro_b1c_105",
+      "question": "Proteus mirabilis'in kültürdeki karakteristik 'Swarming' (dalgalanma) hareketi hangi besiyerinde görülür?",
+      "answer": "[[Kanlı Agar]] (veya [[EMI besiyeri]]).",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Proteus"],
+      "ai_coding": "🤖 Kodlama: P-roteus = P-lanör gibi (Dalgalı hareket)."
+    },
+    {
+      "id": "micro_b1c_106",
+      "question": "Vibrio cholerae'nin 'Pirinç suyu' şeklinde ishale yol açan toksini hangi mekanizmayla etki eder?",
+      "answer": "[[Adenilat siklaz]]ı kalıcı olarak aktifler ([[cAMP artışı]] ➔ K ve Su sekresyonu).",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Vibrio"],
+      "ai_coding": "🤖 Kodlama: K-olera = K-alıcı cAMP."
+    },
+    {
+      "id": "micro_b1c_107",
+      "question": "Campylobacter jejuni enfeksiyonu sonrası görülen en önemli nörolojik komplikasyon?",
+      "answer": "[[Guillain-Barré Sendromu]] ([[GBS]]).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Campylobacter"],
+      "ai_coding": "🤖 Kodlama: C-ampy = G-B-S (G-üç-B-el-S-izliği)."
+    },
+    {
+      "id": "micro_b1c_108",
+      "question": "H. pylori midede canlı kalmak için hangi enzimi yüksek miktarda üretir?",
+      "answer": "[[ÜREAZ]] (Amonyak oluşturarak asidi nötralize eder).",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "H. pylori"],
+      "ai_coding": "🤖 Kodlama: H-pylori = Ü-reaz şampiyonu."
+    },
+    {
+      "id": "micro_b1c_109",
+      "question": "Bacteroides fragilis'in ana virülans faktörü olan 'Zwitteriyonik' kapsülü neyi tetikler?",
+      "answer": "[[T-hücreleri]]ni uyararak doğrudan [[abse]] oluşumunu.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Bacteroides"],
+      "ai_coding": "🤖 Kodlama: B-ragilis = B-üyük-Abse."
+    },
+    {
+      "id": "micro_b1c_110",
+      "question": "Fusobacterium spp. hangi ağır klinik tabloyla (Post-anjinal sepsis) ilişkilidir?",
+      "answer": "[[Lemierre Sendromu]] ([[V. Jugularis interna]] tromboflebiti).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Anaeroplar"],
+      "ai_coding": "🤖 Kodlama: F-usobacterium = L-emierre."
+    },
+    {
+      "id": "micro_b1c_111",
+      "question": "Clostridium difficile toksini saptamasında hangi yöntem 'Altın Standart'tır?",
+      "answer": "[[Hücre Kültürü Sitotoksisite Nötralizasyon Testi]] ([[CCNA]]).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "C. difficile"],
+      "ai_coding": "🤖 Kodlama: C-C-N-A = C-diff."
+    },
+    {
+      "id": "micro_b1c_112",
+      "question": "Actinomyces lezyonlarında sülfür granülleri görülürken Nocardia'da görülür mü?",
+      "answer": "Hayır, [[Nocardia]] [[sülfür granülü]] yapmaz.",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Anaeroplar"],
+      "ai_coding": "🤖 Kodlama: A-ctinomyces = A-ğı (Sülfür ağı)."
+    },
+    {
+      "id": "micro_b1c_113",
+      "question": "Mycobacterium tuberculosis'in besiyerinde aşırı yavaş üremesinin (15-20 saatte bir bölünme) nedeni?",
+      "answer": "Hücre duvarındaki yoğun lipid ([[Mikolik asit]]) tabakası.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Tüberküloz"],
+      "ai_coding": "🤖 Kodlama: M-yco = M-esafe (Yavaş üreme)."
+    },
+    {
+      "id": "micro_b1c_114",
+      "question": "Tüberküloz tanısında kullanılan ve 15-20 mm üzeri pozitiflikte 'Aşırı Duyarlı' (BCG'sizler için) kabul edilen test?",
+      "answer": "[[PPD]] ([[Mantoux]]) Testi.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Tüberküloz"],
+      "ai_coding": "🤖 Kodlama: P-P-D = P-ozitiflik-D-erecesi."
+    },
+    {
+      "id": "micro_b1c_115",
+      "question": "M. leprae'nin neden olduğu Lepra'nın 'Tüberküloid' formunda immunitet nasıldır?",
+      "answer": "Yüksek ([[Hücresel immunitet]] güçlüdür, basil sayısı azdır).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Lepra"],
+      "ai_coding": "🤖 Kodlama: T-überküloid = T-güçlü (Hücresel)."
+    },
+    {
+      "id": "micro_b1c_116",
+      "question": "Lepromatöz lepra'da immunitet nasıldır?",
+      "answer": "Düşük ([[Hücresel immunitet]] yetersizdir, basil sayısı çoktur - [[Multibasiler]]).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Lepra"],
+      "ai_coding": "🤖 Kodlama: L-epromatöz = L-imitli immunitet."
+    },
+    {
+      "id": "micro_b1c_117",
+      "question": "Sifilizde (Frengi) 'Sert Şankr' hangi evrede görülür ve ağrılı mıdır?",
+      "answer": "[[Birinci evre]] ([[Primer sifiliz]]); AĞRISIZDIR.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Sifiliz"],
+      "ai_coding": "🤖 Kodlama: S-ifiliz = S-ert ve S-essiz (Ağrısız)."
+    },
+    {
+      "id": "micro_b1c_118",
+      "question": "Sifilizin ikinci evresinde (Sekonder) görülen en karakteristik döküntü alanı neresidir?",
+      "answer": "[[Avuç içi]] ve [[Ayak tabanı]].",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Sifiliz"],
+      "ai_coding": "🤖 Kodlama: Sekonder = S-v-A-y (Avuç içi)."
+    },
+    {
+      "id": "micro_b1c_119",
+      "question": "Borrelia recurrentis hangi hastalıkla ilişkilidir ve bulaş yolu nedir?",
+      "answer": "[[Epidemik Dönek Ateş]]; [[Bit]] (Pediculus humanus) üzerinden bulaşır.",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Borrelia"],
+      "ai_coding": "🤖 Kodlama: B-it = B-orrelia."
+    },
+    {
+      "id": "micro_b1c_120",
+      "question": "Lyme hastalığının karakteristik döküntüsü nedir?",
+      "answer": "[[Eritema Kronikum Migrans]] (Hedef tahtası görüntüsü).",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Lyme"],
+      "ai_coding": "🤖 Kodlama: L-yme = E-ritema M-igrans."
+    },
+    {
+      "id": "micro_b1c_121",
+      "question": "Leptospira enfeksiyonunda 'İkter' (Sarılık) ve 'Hemanjiyom' (Kanama) eşlik ediyorsa adı nedir?",
+      "answer": "[[Weil Hastalığı]].",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Leptospira"],
+      "ai_coding": "🤖 Kodlama: W-eil = S-arı hastalık."
+    },
+    {
+      "id": "micro_b1c_122",
+      "question": "Chlamydia türlerinde hücre içinde çoğalan (metabolik aktif) form nedir?",
+      "answer": "[[Retiküler Cisim]] ([[RB]]).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Chlamydia"],
+      "ai_coding": "🤖 Kodlama: R-B = R-eplikasyon (Çoğalma)."
+    },
+    {
+      "id": "micro_b1c_123",
+      "question": "Trachoma (Göz trahomu) etkeni Chlamydia serotipleri hangileridir?",
+      "answer": "[[A]], [[B]], [[Ba]] ve [[C]].",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Chlamydia"],
+      "ai_coding": "🤖 Kodlama: A-B-C = A-ma (Körlük yapar)."
+    },
+    {
+      "id": "micro_b1c_124",
+      "question": "Mycoplasma pneumoniae tanısında 'Cold Agglutinins' testi hangi durumda pozitifleşir?",
+      "answer": "Enfeksiyondan [[1-2 hafta]] sonra (Spesifik değildir ama hızlı bir ipucudur).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Mycoplasma"],
+      "ai_coding": "🤖 Kodlama: M-yco = C-old."
+    },
+    {
+      "id": "micro_b1c_125",
+      "question": "Üretrit tanısında kullanılan 'Moleküler Testler' (NAAT) neden Chlamydia ve Gonokok için tercih edilir?",
+      "answer": "[[Chlamydia]] kültürü çok zor olduğu ve bu yöntem en yüksek [[hassasiyete]] (sensitivite) sahip olduğu için.",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Tanı Yöntemleri"],
+      "ai_coding": "🤖 Kodlama: N-A-A-T = N-et-A-naliz."
+    },
+    {
+      "id": "micro_b1c_126",
+      "question": "Gardnerella vaginalis enfeksiyonunda vajinal akıntının rengi ve özelliği?",
+      "answer": "Homojen, [[beyaz-gri]], köpüklü ve [[balık kokulu]].",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Gardnerella"],
+      "ai_coding": "🤖 Kodlama: G-ardnerella = G-ri akıntı."
+    },
+    {
+      "id": "micro_b1c_127",
+      "question": "Rickettsia prowazekii (Epidemik Tifüs) bulaştırıcısı nedir?",
+      "answer": "[[Vücut biti]].",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Rickettsia"],
+      "ai_coding": "🤖 Kodlama: P-rowazekii = P-ediculus (Bit)."
+    },
+    {
+      "id": "micro_b1c_128",
+      "question": "Orientia tsutsugamushi (Çalı Tifüsü) bulaştırıcısı nedir?",
+      "answer": "[[Akar]] ([[Mite]]).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Rickettsia"],
+      "ai_coding": "🤖 Kodlama: T-sutsugamushi = T-atarcık değil, Akar!"
+    },
+    {
+      "id": "micro_b1c_129",
+      "question": "Bartonella quintana hangi hastalığa yol açar (Birinci Dünya Savaşı'nda saptanmıştır)?",
+      "answer": "[[Siper Ateşi]] ([[Trench Fever]]).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Bartonella"],
+      "ai_coding": "🤖 Kodlama: Q-uintana = Beş gün (Siperde geçen beş gün)."
+    },
+    {
+      "id": "micro_b1c_130",
+      "question": "Actinobacillus actinomycetemcomitans hangi klinik tabloyla kuvvetli ilişkilidir?",
+      "answer": "[[Agresif Periodontit]] (Diş eti hastalığı).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "HACEK"],
+      "ai_coding": "🤖 Kodlama: A-ctinobacillus = A-ğız-diş."
+    },
+    {
+      "id": "micro_b1c_131",
+      "question": "Streptococcus anginosus (S. milleri) grubunun en tipik özelliği?",
+      "answer": "Vücudun her yerinde ([[Beyin]], [[karaciğer]] vb.) [[abse]] yapmaya meyilli olması.",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Streptokok"],
+      "ai_coding": "🤖 Kodlama: A-nginosus = A-bse yapıcı."
+    },
+    {
+      "id": "micro_b1c_132",
+      "question": "Erysipelothrix'in en iyi üreme ortamı?",
+      "answer": "[[%5-10 CO2]] (Zenginleştirilmiş besiyeri).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Erizipeloid"],
+      "ai_coding": "🤖 Kodlama: E-rys = E-kstra CO2."
+    },
+    {
+      "id": "micro_b1c_133",
+      "question": "Clostridium septicum saptandığında (travma olmaksızın sepsis) ne düşünülmelidir?",
+      "answer": "[[Kolon Kanseri]] (Malignite).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Clostridium"],
+      "ai_coding": "🤖 Kodlama: S-epticum = S-ik-kolon (Karsinom)."
+    },
+    {
+      "id": "micro_b1c_134",
+      "question": "Bacteroides fragilis'in LPS yapısının farkı nedir?",
+      "answer": "[[Endotoksik aktivitesi]] zayıftır (Hücre duvarı farkı nedeniyle [[şok]] nadirdir).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Bacteroides"],
+      "ai_coding": "🤖 Kodlama: B-ragilis = B-unaltmayan (Şok yapmayan) LPS."
+    },
+    {
+      "id": "micro_b1c_135",
+      "question": "Propionibacterium (Cutibacterium) acnes neyin yolunda rol oynar?",
+      "answer": "[[Akne vulgaris]] (Sivilce) ve [[Şant enfeksiyonları]].",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Anaeroplar"],
+      "ai_coding": "🤖 Kodlama: A-cnes = A-kne."
+    },
+    {
+      "id": "micro_b1c_136",
+      "question": "Mycobacterium kansasii hangi tip mikobakteriler (Runyon sınıflaması) grubundadır?",
+      "answer": "[[Foto-kromojenler]] (Işıkta pigment yapanlar).",
+      "difficulty": "Zor",
+      "tags": ["Bakteriyoloji", "Mikobakteriler"],
+      "ai_coding": "🤖 Kodlama: K-ansasii = K-amera (Işıkla çalışır)."
+    },
+    {
+      "id": "micro_b1c_137",
+      "question": "M. scrofulaceum çocuklarda neye yol açar?",
+      "answer": "[[Servikal Lenfadenit]] ([[Scrofula]]).",
+      "difficulty": "Orta",
+      "tags": ["Bakteriyoloji", "Mikobakteriler"],
+      "ai_coding": "🤖 Kodlama: S-crofulaceum = S-crofula."
+    },
+    {
+      "id": "micro_b1c_138",
+      "question": "M. marinum nasıl bulaşır (Akvaryumculara dikkat)?",
+      "answer": "[[Yüzme havuzu]] veya [[akvaryum suyu]]yla.",
+      "difficulty": "Kolay",
+      "tags": ["Bakteriyoloji", "Mikobakteriler"],
+      "ai_coding": "🤖 Kodlama: M-arinum = M-arina (Deniz)."
+    },
+    {
+      "id": "micro_b1c_139",
+      "question": "Tüberküloz ilacı olan Rifampisin'in ana etki mekanizması?",
+      "answer": "[[DNA bağımlı RNA polimeraz]] inhibisyonu.",
+      "difficulty": "Orta",
+      "tags": ["Antibiyotikler", "Tüberküloz"],
+      "ai_coding": "🤖 Kodlama: R-ifampisin = R-NA blokajı."
+    },
+    {
+      "id": "micro_b1c_140",
+      "question": "İzoniazid (INH) hangi mekanizmayla direnç geliştirir?",
+      "answer": "[[KatG geni]] mutasyonu ([[Katalaz-peroksidaz]] azalması).",
+      "difficulty": "Zor",
+      "tags": ["Antibiyotikler", "Tüberküloz"],
+      "ai_coding": "🤖 Kodlama: I-N-H = K-at-G."
+    },
+    {
+      "id": "micro_b1c_141",
+      "question": "Bunya virüslerinden olan Kırım Kongo Kanamalı Ateşi (KKKA) bulaş yolu?",
+      "answer": "[[Hyalomma]] kenesi.",
+      "difficulty": "Kolay",
+      "tags": ["Viroloji", "KKKA"],
+      "ai_coding": "🤖 Kodlama: K-K-K-A = K-ene."
+    },
+    {
+      "id": "micro_b1c_142",
+      "question": "Rabies (Kuduz) virüsünün santral sinir sisteminde yaptığı karakteristik cisimcik?",
+      "answer": "[[Negri Cisimcikleri]].",
+      "difficulty": "Kolay",
+      "tags": ["Viroloji", "Kuduz"],
+      "ai_coding": "🤖 Kodlama: N-egri = N-öronlarda kuduz."
+    },
+    {
+      "id": "micro_b1c_143",
+      "question": "Measles (Kızamık) virüsünün ağız içinde yaptığı beyaz lekeler?",
+      "answer": "[[Koplik Lekeleri]].",
+      "difficulty": "Kolay",
+      "tags": ["Viroloji", "Kızamık"],
+      "ai_coding": "🤖 Kodlama: K-oplik = K-ızamık."
+    },
+    {
+      "id": "micro_b1c_144",
+      "question": "Enterobius vermicularis (Kıl kurdu) tanısında hangi yöntem kullanılır?",
+      "answer": "[[Seloteyp]] ([[Perianal bant]]) yöntemi.",
+      "difficulty": "Kolay",
+      "tags": ["Parazitoloji", "Helmintler"],
+      "ai_coding": "🤖 Kodlama: K-ıl kurdu = B-and metodu."
+    },
+    {
+      "id": "micro_b1c_145",
+      "question": "Ascaris lumbricoides'in en tehlikeli komplikasyonu?",
+      "answer": "[[Bağırsak obstrüksiyonu]] (Düğümleme).",
+      "difficulty": "Kolay",
+      "tags": ["Parazitoloji", "Helmintler"],
+      "ai_coding": "🤖 Kodlama: A-scaris = A-çmaya (Bağırsağı) engel."
+    },
+    {
+      "id": "micro_b1c_146",
+      "question": "Wuchereria bancrofti hangi hastalığa yol açar?",
+      "answer": "[[Fil Hastalığı]] ([[Elefantiyazis]]).",
+      "difficulty": "Kolay",
+      "tags": ["Parazitoloji", "Filaryaz"],
+      "ai_coding": "🤖 Kodlama: F-ilaryaz = F-il hastalığı."
+    },
+    {
+      "id": "micro_b1c_147",
+      "question": "Hangi parazit enfeksiyonunda B12 vitamin eksikliği ve megaloblastik anemi görülür?",
+      "answer": "[[Diphyllobothrium latum]].",
+      "difficulty": "Orta",
+      "tags": ["Parazitoloji", "Sestodlar"],
+      "ai_coding": "🤖 Kodlama: D-latum = B-12 yoksunu."
+    },
+    {
+      "id": "micro_b1c_148",
+      "question": "Taenia solium'da (Domuz tenyası) ara konak kimdir?",
+      "answer": "İnsan ([[Sistiserkoz]] durumunda) veya [[Domuz]].",
+      "difficulty": "Orta",
+      "tags": ["Parazitoloji", "Sestodlar"],
+      "ai_coding": "🤖 Kodlama: S-olium = S-istiserkoz."
+    },
+    {
+      "id": "micro_b1c_149",
+      "question": "Echinococcus granulosus (Kist Hidatik) tanısında kistin içinde görülen yapılar?",
+      "answer": "[[Kaya suyu]], [[Çimlenme zarı]], [[Hidatik kum]].",
+      "difficulty": "Kolay",
+      "tags": ["Parazitoloji", "Kist Hidatik"],
+      "ai_coding": "🤖 Kodlama: K-ist = K-aya suyu."
+    },
+    {
+      "id": "micro_b1c_150",
+      "question": "Schistosoma haematobium hangi kanser ile ilişkilidir?",
+      "answer": "[[Mesane Kanseri]] ([[Yassı hücreli karsinom]]).",
+      "difficulty": "Orta",
+      "tags": ["Parazitoloji", "Trematodlar"],
+      "ai_coding": "🤖 Kodlama: H-aematobium = H-ematuari ve Kanseri."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "id": "micro-intra-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Zorunlu Hücre İçi Bakteriler",
+    "sub_topic": "Chlamydia ve Rickettsia",
+    "content_summary": "Kendi ATP'sini üretemeyen, zorunlu hücre içi patojenlerdir. Chlamydia elementer (enfeksiyöz) ve retiküler (replikatif) cisimcikler içerir.",
+    "flashcards": [
+      {
+        "id": "fc-micro-1000",
+        "question": "Chlamydia'nın dış ortamda dayanıklı, enfeksiyöz olan formu hangisidir?",
+        "answer": "Elementer Cisim (EC).",
+        "difficulty": "easy",
+        "tags": [
+          "Chlamydia",
+          "EC"
+        ]
+      },
+      {
+        "id": "fc-micro-1001",
+        "question": "Dünyada önlenebilir körlüğün en sık nedeni olan Chlamydia serovarları?",
+        "answer": "A, B, Ba, C serovarları (Trahom).",
+        "difficulty": "medium",
+        "tags": [
+          "Chlamydia",
+          "Trahom"
+        ]
+      },
+      {
+        "id": "fc-micro-1002",
+        "question": "Q Ateşi (Coxiella burnetii) tanısında akut ve kronik enfeksiyonu ayıran antijen fazları?",
+        "answer": "Akut: Faz II antikorları (+), Kronik: Faz I antikorları (+).",
+        "difficulty": "hard",
+        "tags": [
+          "Coxiella",
+          "Faz Antijenleri"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Chlamydia: İyot (+) inklüzyon sadece C. trachomatis'te görülür (glikojen içerir).",
+      "C. pneumoniae: Atipik pnömoni ve ateroskleroz ile ilişkilendirilmiştir.",
+      "Rickettsia: Sülfonamidler üremelerini artırır (diğer bakterilerin aksine).",
+      "Weil-Felix testi: Bazı Proteus antijenleri ile Riketsiya antikorları arasındaki çapraz reaksiyona dayanır (artık önerilmiyor)."
+    ]
+  },
+  {
+    "id": "micro-viro-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Viroloji",
+    "topic": "Genel Viroloji",
+    "sub_topic": "Virüs Yapısı ve Sınıflandırma",
+    "content_summary": "Virüsler aselüler canlılardır. DNA veya RNA genomu, kapsid ve bazen zarf içerirler.",
+    "flashcards": [
+      {
+        "id": "fc-viro-2000",
+        "question": "Nükleik asit içermeyen, sadece protein yapıda olan enfeksiyöz ajanlara ne ad verilir?",
+        "answer": "Prionlar.",
+        "difficulty": "easy",
+        "tags": [
+          "Prion"
+        ]
+      },
+      {
+        "id": "fc-viro-2001",
+        "question": "Zarflı bir virüsün konak hücreden ayrılma biçimi nedir?",
+        "answer": "Tomurcuklanma (Budding).",
+        "difficulty": "easy",
+        "tags": [
+          "Virüs",
+          "Zarf"
+        ]
+      },
+      {
+        "id": "fc-viro-2002",
+        "question": "Sitoplazmada replike olan tek DNA virüsü hangisidir?",
+        "answer": "Poksvirüs (Poxvirus). (Kendi DNA bağımlı RNA polimerazı vardır).",
+        "difficulty": "medium",
+        "tags": [
+          "Poxvirus",
+          "DNA Virüsü"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Prion: Beta-düz yapılı proteinsel yapı. Sterilizasyona, UV'ye ve mide asidine çok dirençlidir.",
+      "DNA Virüsleri: Parvo hariç hepsi çift iplikli, Poks hariç hepsi çekirdekli replike olur.",
+      "EBV reseptörü: CD21 (CR2).",
+      "HIV reseptörü: CD4 + CCR5/CXCR4."
+    ]
+  }
+]

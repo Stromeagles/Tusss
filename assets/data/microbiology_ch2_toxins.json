@@ -12,28 +12,47 @@
         "question": "EF-2 inaktivasyonu yaparak protein sentezini durduran ve hücre ölümüne yol açan iki temel toksin nedir?",
         "answer": "Difteri toksini ve Pseudomonas Ekzotoksin A.",
         "difficulty": "hard",
-        "tags": ["Toksin", "Protein Sentezi", "EF-2"]
+        "tags": [
+          "Toksin",
+          "Protein Sentezi",
+          "EF-2"
+        ],
+        "story_hint": "💡 HİKAYE: Difteri ve Pseudomonas, fabrikadaki EF-2 ustasını kaçırıp ADP-ribozu ile bağlar. Protein üretim bandı durur, fabrika (hücre) kapanır — iki sabotajcı aynı yöntemi kullanır."
       },
       {
         "id": "fc-micro-021",
         "question": "Kolera toksini hangi reseptöre bağlanır ve hangi hücresel mekanizmayı aktive eder?",
         "answer": "GM1 gangliyozid reseptörüne bağlanır ve cAMP artışına (sekretuar diyare) yol açar.",
         "difficulty": "medium",
-        "tags": ["Kolera", "cAMP", "Diyare"]
+        "tags": [
+          "Kolera",
+          "cAMP",
+          "Diyare"
+        ],
+        "story_hint": "💡 HİKAYE: Kolera toksininin B kolu, GM1 limanına demir atar. A kolu içeri girip cAMP musluğunu sonuna kadar açar — bağırsaktan sel gibi su akar, pirinç suyu ishal başlar."
       },
       {
         "id": "fc-micro-022",
         "question": "Tetanoz toksini (Tetanospazmin) hangi nörotransmitterlerin salınımını bloke ederek spastik felç yapar?",
         "answer": "İnhibitör nöronlardan GABA ve Glisin salınımını bloke eder.",
         "difficulty": "hard",
-        "tags": ["Tetanoz", "GABA", "Glisin"]
+        "tags": [
+          "Tetanoz",
+          "GABA",
+          "Glisin"
+        ],
+        "story_hint": "💡 HİKAYE: Tetanoz canavarı, Renshaw hücrelerinin GABA ve Glisin frenlerini keser. Fren patlamış araba gibi kaslar sürekli kasılır — çene kilitlenir, vücut yay gibi gerilir."
       },
       {
         "id": "fc-micro-023",
         "question": "Şarbon (Anthrax) toksininin üç alt birimi nelerdir?",
         "answer": "PA (Protektif Antijen), EF (Ödem Faktörü - cAMP artırır), LF (Letal Faktör - Hücre ölümü).",
         "difficulty": "hard",
-        "tags": ["Şarbon", "Toksin"]
+        "tags": [
+          "Şarbon",
+          "Toksin"
+        ],
+        "story_hint": "💡 HİKAYE: Şarbon üçlü çete kurar: PA kapıyı açar (Protektif Antijen), EF içeri girip cAMP ile ödem yapar, LF ise hücreyi öldürür. PA olmadan diğer ikisi eve giremez."
       }
     ],
     "tus_spots": [
@@ -45,9 +64,16 @@
     "clinical_cases": [
       {
         "case": "Konserve gıda tüketimi sonrası simetrik desendan flask felç, diplopi ve disfaji şikayetleri olan bir hastada sorumlu toksinin etki mekanizması nedir?",
-        "options": ["cAMP artışı", "GABA inhibisyonu", "ACh salınımının engellenmesi", "EF-2 inaktivasyonu"],
-        "correct_answer": "ACh salınımının engellenmesi",
-        "explanation": "Botulinum toksini periferik presinaptik uçlardan Asetilkolin (ACh) salınımını engelleyerek gevşek (flask) felç yapar."
+        "options": [
+          "A) cAMP artışı",
+          "B) GABA/Glisin inhibisyonu",
+          "C) Presinaptik ACh salınımının engellenmesi",
+          "D) EF-2 inaktivasyonu",
+          "E) Guanilat siklaz aktivasyonu"
+        ],
+        "correct_answer": "C) Presinaptik ACh salınımının engellenmesi",
+        "explanation": "PROFESÖR NOTU: Clostridium botulinum toksini, sinir-kas kavşağında (periferik kolinerjik sinapslar) presinaptik uçtan Asetilkolin (ACh) salınımını geri dönüşsüz olarak engeller. Bu tablonun etkeni Botulismus'tur. \n\n🎓 HOCA ÖZETİ:\n- Sonuç: Gevşek (flaksid) felç, pitozis (göz kapağı düşüklüğü), diplopi (çift görme) ve disfaji (yutma güçlüğü).\n- Mnemonic: Botulismus = B-oşaltamaz (ACh'yi boşaltamaz).\n- Bebeklerde bal tüketimine dikkat: Floppy Baby (gevşek bebek) sendromu yapar.\n- Ayırıcı: cAMP artışı = Kolera/ETEC; GABA/Glisin inhibisyonu = Tetanoz; EF-2 inaktivasyonu = Difteri/Pseudomonas; Guanilat siklaz aktivasyonu = ST Toksini.",
+        "id": "cc-micro-ch2-001-001"
       }
     ]
   },
@@ -64,21 +90,34 @@
         "question": "Bakterilerin antibiyotiklere en duyarlı oldukları ve boyutlarının en küçük olduğu çoğalmayı evresi hangisidir?",
         "answer": "Log (Eksponansiyel) faz.",
         "difficulty": "medium",
-        "tags": ["Bakteriyoloji", "Log Fazı"]
+        "tags": [
+          "Bakteriyoloji",
+          "Log Fazı"
+        ],
+        "story_hint": "💡 HİKAYE: Log fazındaki bakteriler, hızla bölünen gençler gibidir — en küçük ve en savunmasızdırlar. Antibiyotik polisi tam bu partide baskın yaparsa en çok tutuklamayı yapar."
       },
       {
         "id": "fc-micro-031",
         "question": "Mikroaerofilik (belirli oranda O2 isteyen) bakterilere en tipik iki örnek nedir?",
         "answer": "Helicobacter ve Campylobacter.",
         "difficulty": "medium",
-        "tags": ["Oksijen", "Helicobacter", "Campylobacter"]
+        "tags": [
+          "Oksijen",
+          "Helicobacter",
+          "Campylobacter"
+        ],
+        "story_hint": "💡 HİKAYE: Helicobacter ve Campylobacter, oksijen barında 'az içeriz' diyen iki arkadaştır. Ne tam aerob ne tam anaerob — mikroaerofil kulüpte takılırlar, %5 oksijen yeterlidir."
       },
       {
         "id": "fc-micro-032",
         "question": "Bakterilerin spor oluşturmaya başladıkları çoğalma fazı hangisidir?",
         "answer": "Stasyoner (Duraklama) fazı.",
         "difficulty": "medium",
-        "tags": ["Spor", "Çoğalma"]
+        "tags": [
+          "Spor",
+          "Çoğalma"
+        ],
+        "story_hint": "💡 HİKAYE: Stasyoner fazda yiyecek biter, bakteri 'kış uykusuna yatayım' deyip spor oluşturur. Tıpkı kıtlıkta tohum saklayan bir çiftçi gibi, zor günler için dayanıklı form hazırlar."
       }
     ],
     "tus_spots": [
@@ -86,6 +125,21 @@
       "Zorunlu anaeroblar: Actinomyces, Bacteroides, Clostridium (Katalaz negatif).",
       "Pasteur etkisi: Fakültatif anaeroblarda oksijen varlığında glikolizin azalmasıdır.",
       "Kapnofiller (%5-10 CO2): Brucella abortus, Neisseria gonorrhoeae."
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-micro-ch2-002-001",
+        "case": "Derin yumuşak doku enfeksiyonu (nekrotizan fasiit) şüphesiyle ameliyata alınan hastanın yara kültüründe üreme için oksijensiz ortam (anaerobik kültür) gerekmektedir. Bu bakteri için en uygun büyüme koşulu hangisidir?",
+        "options": [
+          "A) %21 O2 — Zorunlu aerob ortam",
+          "B) %5-10 CO2 — Kapnofilik ortam",
+          "C) Oksijensiz ortam — Zorunlu anaerob",
+          "D) %5 O2 — Mikroaerofilik ortam",
+          "E) Herhangi bir O2 konsantrasyonu — Fakültatif anaerob"
+        ],
+        "correct_answer": "C) Oksijensiz ortam — Zorunlu anaerob",
+        "explanation": "PROFESÖR NOTU: Nekrotizan fasiit ve derin yara enfeksiyonlarında Clostridium perfringens ve diğer zorunlu anaeroblar önemli etkenlerdir. Bu bakteriler oksijen varlığında üreyemez.\n\n🎓 HOCA ÖZETİ:\n- Zorunlu Anaeroblar (ABC): Actinomyces, Bacteroides, Clostridium\n- Klinik ipucu: Kötü kokulu, gaz kabarcıklı yara + nekroz = Clostridium perfringens (gazlı gangren)\n- Mnemonic: 'Anaeroblar OKSİJENDEN NEFRET EDER — O2 onlar için ZEHİR'\n- TUS SPOT: Zorunlu aeroblar: M. tuberculosis, Nocardia, Pseudomonas (MANtolu Profesör Ayakta)"
+      }
     ]
   }
 ]

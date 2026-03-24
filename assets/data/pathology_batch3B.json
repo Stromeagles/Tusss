@@ -1,0 +1,346 @@
+{
+  "subject": "Patoloji",
+  "chapter": "Kadın Genital + Meme + Deri (Batch 3B)",
+  "flashcards": [
+    {
+      "id": "path_b3B_001",
+      "question": "Servikal kanserin gelişiminde HPV'nin E6 ve E7 proteinlerinin rolü nedir?",
+      "answer": "[[E6]]: [[p53]]'ü yıkıma uğratır. [[E7]]: [[Rb proteinine]] bağlanır → [[E2F]] serbest kalır. Sonuç: Hücre döngüsü kontrolü kalkar.",
+      "difficulty": "Zor",
+      "tags": [
+        "HPV",
+        "Serviks",
+        "E6",
+        "E7"
+      ],
+      "story_hint": "💡 HİKAYE: HPV bir hırsız gibi eve girer: E6 güvenlik kamerasını (p53) söker, E7 kapı kilidini (Rb) kırar. İkisi birlikte çalışınca ev (hücre) savunmasız kalır ve kanser hırsızları içeri dolar.",
+      "ai_coding": "🤖 Kodlama: E6 = 'p53 öldürür'. E7 = 'Rb'yi bozar'. İkisi beraber = Servikal kanser."
+    },
+    {
+      "id": "path_b3B_002",
+      "question": "Servikal intraepitelyal neoplazi (CIN) evreleme sistemi nedir?",
+      "answer": "[[CIN 1]]: Alt 1/3 displazi ([[LSIL]]). [[CIN 2]]: Alt 2/3. [[CIN 3]]: Tüm katlar ([[HSIL]]). CIN 3 = [[Karsinoma in situ]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "CIN",
+        "Serviks",
+        "Displazi"
+      ],
+      "story_hint": "💡 HİKAYE: CIN bir binadaki yangın gibidir: CIN 1 sadece bodrum katı tutar (alt 1/3), CIN 2 iki kata yayılır, CIN 3 tüm binayı sarar ama henüz dışarı çıkmamıştır (in situ). Dışarı çıkarsa invaziv olur!",
+      "ai_coding": "🤖 Kodlama: CIN 1=1/3, CIN 2=2/3, CIN 3=3/3. 'Yukarı çık'. CIN 3=CIS."
+    },
+    {
+      "id": "path_b3B_003",
+      "question": "Endometrium kanseri Tip 1 ve Tip 2 arasındaki fark nedir?",
+      "answer": "[[Tip 1]]: Endometrioid, östrojen bağımlı, [[PTEN]] mutasyonu. [[Tip 2]]: [[Seröz karsinom]], [[p53]] mutasyonu, kötü prognoz.",
+      "difficulty": "Orta",
+      "tags": [
+        "Endometrium Kanseri",
+        "Tip 1/2"
+      ],
+      "story_hint": "💡 HİKAYE: Tip 1 östrojenin şımartılmış çocuğudur: yavaş büyür, PTEN korumasını kaybetmiştir ama iyi huyludur. Tip 2 ise p53 kaybeden asi çocuktur: seröz, agresif ve kötü prognozlu.",
+      "ai_coding": "🤖 Kodlama: Tip 1 = Endometrioid+PTEN+İyi. Tip 2 = Seröz+p53+Kötü."
+    },
+    {
+      "id": "path_b3B_004",
+      "question": "Leiomiyom (uterus miyomu) ile leiomiyosarkomun histolojik farkı nedir?",
+      "answer": "[[Leiomiyom]]: Benign. [[Leiomiyosarkom]]: [[Mitoz >10/10HPF]] + [[Hücresel atipi]] + [[Nekroz]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Leiomiyom",
+        "Leiomiyosarkom",
+        "Uterus"
+      ],
+      "story_hint": "💡 HİKAYE: Leiomiyom sakin bir köylü gibidir: yerinde oturur, kimseye zarar vermez. Leiomiyosarkom ise baştan beri asi bir savaşçıdır: >10 mitoz, atipi ve nekroz üçlüsüyle doğar. Miyomdan dönüşmez!",
+      "ai_coding": "🤖 Kodlama: Leiomiyosarkom = 'Mitoz>10 + Atipi + Nekroz'. Miyomdan GELMİYOR."
+    },
+    {
+      "id": "path_b3B_005",
+      "question": "Endometriozis ile adenomiyozun tanımı ve semptomları nedir?",
+      "answer": "[[Endometriozis]]: Uterus dışında endometrial doku ([[çikolata kisti]]). [[Adenomiyoz]]: Endometriyum [[myometriyuma]] ilerler.",
+      "difficulty": "Orta",
+      "tags": [
+        "Endometriozis",
+        "Adenomiyoz"
+      ],
+      "story_hint": "💡 HİKAYE: Endometriozis evden kaçan bir genç gibidir: uterus dışına çıkar, overde çikolata kisti kurar. Adenomiyoz ise bodrum katına inen kiracı gibidir: endometrium myometriyumun içine gömülür.",
+      "ai_coding": "🤖 Kodlama: Endometriozis = 'Uterus dışı endometrium'. Adenomiyoz = 'İçeri gömülen'."
+    },
+    {
+      "id": "path_b3B_006",
+      "question": "Over tümörlerinde epitelyal, germ hücre ve stromal tümörlerin oranları ve en sık temsilcileri nelerdir?",
+      "answer": "[[Seröz sistadenokarsinom]] (en sık malign epitelyal). [[Dermoid kist]] (matür teratom, en sık benign germ). [[Granüloza hücre]] tümörü (stromal).",
+      "difficulty": "Orta",
+      "tags": [
+        "Over Tümörleri",
+        "Epitelyal",
+        "Germ Hücre"
+      ],
+      "story_hint": "💡 HİKAYE: Over tümörleri bir apartman gibidir: üst katta epitelyal ailesi oturur (seröz en kalabalık), orta katta germ hücre ailesi (dermoid kist en popüler), bodrum katta stromal aile (granüloza östrojen üretir).",
+      "ai_coding": "🤖 Kodlama: Over = Epitelyal(en çok)+Germ(matür teratom en sık benign)+Stromal."
+    },
+    {
+      "id": "path_b3B_007",
+      "question": "Seröz over tümörlerinde psammoma cisimleri ne ifade eder?",
+      "answer": "[[Psammoma cismi]]: Konsantrik [[lamellated kalsifiye]] yapılar. Görülür: [[Seröz over]], [[Papiller tiroid]], Mezotelyoma.",
+      "difficulty": "Orta",
+      "tags": [
+        "Over",
+        "Psammoma",
+        "Seröz"
+      ],
+      "story_hint": "💡 HİKAYE: Psammoma cisimleri ağaç kesitindeki yıllık halkalar gibidir: konsantrik kalsifiye katmanlar. Bu halkaları üç yerde bulursun: seröz overde, papiller tiroidde ve mezotelyomada.",
+      "ai_coding": "🤖 Kodlama: Psammoma = 'Konsantrik kalsifiye halka'. Seröz over + Papiller tiroid + Mezotelyoma."
+    },
+    {
+      "id": "path_b3B_008",
+      "question": "Granüloza hücre tümörü hangi hormonu üretir ve klinik önemi nedir?",
+      "answer": "[[Östrojen]] üretir. [[Call-Exner]] cisimleri histolojik olarak tanısal (küçük folikül benzeri). [[FOXL2]] mutasyonu.",
+      "difficulty": "Zor",
+      "tags": [
+        "Granüloza Hücre",
+        "Over",
+        "Östrojen"
+      ],
+      "story_hint": "💡 HİKAYE: Granüloza hücre tümörü bir östrojen fabrikasıdır: durmadan östrojen üretir. Call-Exner cisimleri fabrikadaki küçük üretim birimleridir (mini foliküller). FOXL2 mutasyonu fabrikayı kuran mühendistir.",
+      "ai_coding": "🤖 Kodlama: Granüloza = 'Östrojen üreten + Call-Exner cismi'. Çocukta puberte prekoks."
+    },
+    {
+      "id": "path_b3B_009",
+      "question": "Dermoid kist (matür kistik teratom) içeriği ve Struma ovari nedir?",
+      "answer": "[[Dermoid kist]]: 3 germ yaprağı dokusu. [[Struma ovari]]: Teratom içinde dominant [[tiroid]] dokusu → [[Hipertiroidi]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Dermoid Kist",
+        "Teratom",
+        "Over"
+      ],
+      "story_hint": "💡 HİKAYE: Dermoid kist bir sürpriz kutusu gibidir: içinden saç, diş, yağ çıkar (3 germ yaprağı). Bazen kutunun içinde tiroid bezinin kendisi saklanır (Struma ovari) ve hipertiroidi yapar!",
+      "ai_coding": "🤖 Kodlama: Dermoid = 'Her 3 yaprak var'. Struma Ovari = 'İçinde tiroid'."
+    },
+    {
+      "id": "path_b3B_010",
+      "question": "Preeklampsi-eklampside plasentada hangi histolojik değişiklikler görülür?",
+      "answer": "[[Akut ateroz]] (spiral arterlerde [[fibrinoid nekroz]]). [[Yetersiz trofoblastik invazyon]] sonucu gelişir.",
+      "difficulty": "Zor",
+      "tags": [
+        "Preeklampsi",
+        "Plasenta",
+        "Eklampsi"
+      ],
+      "story_hint": "💡 HİKAYE: Preeklampside trofoblastlar tembel işçiler gibidir: spiral arterleri yeterince genişletemez. Damarlar daralır, akut ateroz gelişir ve plasenta \"ben aç kaldım\" diye bağırarak hipertansiyon ve proteinüri yapar.",
+      "ai_coding": "🤖 Kodlama: Preeklampsi = 'Akut ateroz + Yetersiz invazyon' → HT+Protein."
+    },
+    {
+      "id": "path_b3B_011",
+      "question": "Gestasyonel trofoblastik hastalık türleri ve β-hCG'nin önemi nedir?",
+      "answer": "[[Komplet mol]] (46XX, paternel). [[Parsiyel mol]] (69 kromozom). [[Koryokarsinom]] (β-hCG çok yüksek, metastaz yapar).",
+      "difficulty": "Orta",
+      "tags": [
+        "GTH",
+        "Mol",
+        "Koryokarsinom"
+      ],
+      "story_hint": "💡 HİKAYE: Komplet mol babanın tek başına yaptığı bir proje gibidir (46XX paternel): fetus yoktur, sadece kar tanesi ultrasonu görülür. Koryokarsinom ise en agresif formdur: hCG roketini fırlatır ve akciğere metastaz yapar.",
+      "ai_coding": "🤖 Kodlama: Komplet mol = 46XX+Paternel+Kar tanesi US. Koryokarsinom = β-hCG çok yüksek."
+    },
+    {
+      "id": "path_b3B_012",
+      "question": "Meme kanserinde DCIS (duktal carsinoma in situ) ve LCIS (lobüler carsinoma in situ) farkları nelerdir?",
+      "answer": "[[DCIS]]: [[Komedo nekroz]] en kötüsüdür. [[LCIS]]: [[E-kaderin NEGATİF]]. Bilateral risk göstergesidir.",
+      "difficulty": "Orta",
+      "tags": [
+        "DCIS",
+        "LCIS",
+        "Meme"
+      ],
+      "story_hint": "💡 HİKAYE: DCIS duktuslarda oturan ve komedo nekroz ateşi yakan bir yangıncıdır. LCIS ise E-kaderin yapıştırıcısını kaybetmiş sessiz bir casus gibidir: her iki memede de gizlice risk oluşturur.",
+      "ai_coding": "🤖 Kodlama: DCIS = 'Komedo nekroz, duktal'. LCIS = 'E-kaderin(-), bilateral risk'."
+    },
+    {
+      "id": "path_b3B_013",
+      "question": "Meme kanserinde tümör histolojik tipleri ve prognozları nasıldır?",
+      "answer": "En sık: [[İnvaziv duktal NOS]]. [[İnvaziv lobüler]]: [[E-kaderin(-)]]. En kötü: [[İnflamatuar]] (dermal lenf invazyonu).",
+      "difficulty": "Orta",
+      "tags": [
+        "Meme Kanseri",
+        "Histolojik Tip"
+      ],
+      "story_hint": "💡 HİKAYE: Meme kanseri ailesinde invaziv duktal NOS en kalabalık kardeştir (en sık). İnvaziv lobüler E-kaderin'i kaybetmiş yalnız kardeştir. İnflamatuar ise en tehlikeli kardeştir: dermal lenfatikleri istila eder.",
+      "ai_coding": "🤖 Kodlama: Meme kanseri en sık = İnvaziv duktal NOS. En kötü = İnflamatuar."
+    },
+    {
+      "id": "path_b3B_014",
+      "question": "Meme kanserinin Nottingham (Elston-Ellis) histolojik gradelemesi neleri içerir?",
+      "answer": "3 parametre: 1) [[Tübül oluşumu]]. 2) [[Nükleer pleomorfizm]]. 3) [[Mitoz sayısı]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Meme",
+        "Histolojik Grade",
+        "Nottingham"
+      ],
+      "story_hint": "💡 HİKAYE: Nottingham gradelemesi bir sınav gibidir ve üç sorusu vardır: Tübül yapabildin mi? Nükleuslarda düzensizlik var mı? Kaç tane mitoz saydık? Her soru 1-3 puan alır ve toplam grade'i belirler.",
+      "ai_coding": "🤖 Kodlama: Nottingham = 'Tübül+Nükleus+Mitoz = 1-3'. Total = Grade."
+    },
+    {
+      "id": "path_b3B_015",
+      "question": "Triple negatif meme kanseri (TNBC) ne demektir ve prognoz nedir?",
+      "answer": "[[ER, PR, HER2]] negatiftir. [[BRCA1]] mutasyonu ile ilişkilidir. Hedef tedavi yoktur; [[kemoterapi]] verilir.",
+      "difficulty": "Orta",
+      "tags": [
+        "TNBC",
+        "Triple Negatif",
+        "Meme"
+      ],
+      "story_hint": "💡 HİKAYE: TNBC üç kapıyı da kilitlemiş bir oda gibidir: ER kapısı kapalı, PR kapısı kapalı, HER2 kapısı kapalı. Hedefli tedavi anahtarı hiçbir kapıya uymaz, geriye sadece kemoterapi kalır. BRCA1 bu odanın mimarıdır.",
+      "ai_coding": "🤖 Kodlama: TNBC = 'Üç de negatif = Hedef yok = Sadece kemo'. BRCA1 ilişkili."
+    },
+    {
+      "id": "path_b3B_016",
+      "question": "Paget hastalığı memede (deri) ile kemik Paget hastalığı nasıl ayrılır?",
+      "answer": "[[Meme Paget]]: Meme başı derisinde [[adenokarsinom]] (DCIS/invaziv kaynaklı) hücreleri.",
+      "difficulty": "Orta",
+      "tags": [
+        "Paget Meme",
+        "Meme Başı"
+      ],
+      "story_hint": "💡 HİKAYE: Meme Paget meme başında egzema kılığında gizlenen bir kanser casusudur: altında DCIS veya invaziv karsinom saklanır. Kemik Paget ise tamamen farklı bir hastalıktır ve memeyle ilişkisi yoktur.",
+      "ai_coding": "🤖 Kodlama: Meme Paget = 'Meme başında kanser hücresi'. Kemik Paget = Ayrı hastalık."
+    },
+    {
+      "id": "path_b3B_017",
+      "question": "Fibroadenomun meme kanserinden histolojik ayırımı nedir?",
+      "answer": "[[Fibroadenom]]: [[Benign]]. Hem [[stromal]] hem duktüler proliferasyon vardır. Hormona duyarlıdır.",
+      "difficulty": "Kolay",
+      "tags": [
+        "Fibroadenom",
+        "Meme",
+        "Benign"
+      ],
+      "story_hint": "💡 HİKAYE: Fibroadenom genç kızın memesinde mobil bir bilye gibidir: düzgün, kaygan ve iyi huyludur. Stromal ve duktal elemanlar birlikte büyür. Hormona duyarlıdır ama kanser riski çok düşüktür.",
+      "ai_coding": "🤖 Kodlama: Fibroadenom = 'Genç kız, mobil, uniform'. Benign ama hafif risk artışı."
+    },
+    {
+      "id": "path_b3B_019",
+      "question": "Psoriasisin histolojik özellikleri nelerdir?",
+      "answer": "[[Akantozis]] + [[Parakeratoz]] + [[Munro mikroapsesi]] (stratum korneumda nötrofil). [[Auspitz işareti]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Psoriasis",
+        "Deri",
+        "Histoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Psoriasis deride bir isyan gibidir: epidermis kalınlaşır (akantozis), çekirdekler atılamaz (parakeratoz), nötrofiller stratum korneumda Munro mikroapsesini kurar. Plağı kaldırınca kanama olur (Auspitz).",
+      "ai_coding": "🤖 Kodlama: Psoriasis = 'Akantozis+Parakeratoz+Munro apsesi'. Auspitz işareti = Deri soyununca kanama."
+    },
+    {
+      "id": "path_b3B_020",
+      "question": "Pemfigus vulgaris ile büllöz pemfigoidin klinik ve histolojik farkı nedir?",
+      "answer": "[[Pemfigus vulgaris]]: [[Anti-Desmoglein 1/3]] → [[İntraepidermal]] bül. [[Büllöz Pemfigoid]]: [[Anti-BP180/230]] → [[Subepidermal]] bül.",
+      "difficulty": "Zor",
+      "tags": [
+        "Pemfigus",
+        "Büllöz Pemfigoid",
+        "Bül"
+      ],
+      "story_hint": "💡 HİKAYE: Pemfigus vulgaris epidermisin içindeki tutkalı (desmoglein) eritir: hücreler birbirinden ayrılır, bül içeride oluşur (Nikolsky+). Büllöz pemfigoid ise temeli (bazal membran) kazar: bül altta oluşur, daha sağlamdır.",
+      "ai_coding": "🤖 Kodlama: PV = 'İntraepidermal+Desmoglein+Nikolsky+'. BP = 'Subepidermal+BP180-230+Yaşlı'."
+    },
+    {
+      "id": "path_b3B_021",
+      "question": "Melanom'un klinik ABCDE kriterleri ve Clark evreleme sistemi nedir?",
+      "answer": "[[ABCDE]] kriterleri ile tanınır. [[Clark]]: İnvazyonun [[anatomik derinliğini]] (epidermis→dermis→yağ) gösterir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Melanom",
+        "ABCDE",
+        "Clark"
+      ],
+      "story_hint": "💡 HİKAYE: Melanom ABCDE kodlu bir suçlu gibidir: Asimetrik, Border düzensiz, Color çok renkli, Diameter büyük, Evolving değişen. Clark seviyesi suçlunun derine kaçma mesafesini ölçer.",
+      "ai_coding": "🤖 Kodlama: Melanom = ABCDE. Clark = 'Derinlik = Prognoz'."
+    },
+    {
+      "id": "path_b3B_022",
+      "question": "Melanomda Breslow kalınlığının prognoz ile ilişkisi nedir?",
+      "answer": "[[Breslow]]: Tümörün [[mm]] cinsinden kalınlığı. En önemli [[prognostik]] faktördür.",
+      "difficulty": "Orta",
+      "tags": [
+        "Melanom",
+        "Breslow",
+        "Prognoz"
+      ],
+      "story_hint": "💡 HİKAYE: Breslow kalınlığı melanomun \"suya dalma derinliği\" gibidir: ne kadar derine dalarsa (mm cinsinden) prognoz o kadar kötüleşir. 0.8 mm'nin altı sığ su (iyi), 4 mm üstü derin okyanus (kötü).",
+      "ai_coding": "🤖 Kodlama: Breslow = 'Derinlik mm'. <0.8=iyi, >4=kötü. 'Derine indikçe kötü'."
+    },
+    {
+      "id": "path_b3B_023",
+      "question": "Bazal hücreli karsinom ile skuamöz hücreli karsinomun metastaz potansiyeli karşılaştırılması nedir?",
+      "answer": "[[BHK]]: Metastaz [[nadirdir]]. [[SHK]]: Metastaz [[yapabilir]]. HK'da '[[palisading]]' histoloji tipiktir.",
+      "difficulty": "Orta",
+      "tags": [
+        "BHK",
+        "SHK",
+        "Deri Kanseri"
+      ],
+      "story_hint": "💡 HİKAYE: BHK lokal bir zorba gibidir: yerinde agresif davranır ama uzağa gidemez (metastaz nadir). SHK ise gezgin bir hayduttur: metastaz yaparak uzak diyarlara yayılabilir. BHK'nın palisading çiti vardır.",
+      "ai_coding": "🤖 Kodlama: BHK = 'Metastaz yok, lokal agresif'. SHK = 'Metastaz yapabilir'."
+    },
+    {
+      "id": "path_b3B_024",
+      "question": "Xeroderma pigmentosum (XP) neden deri kanserine yol açar?",
+      "answer": "[[Nükleotid eksizyon onarım (NER)]] eksikliği → [[Timin dimerleri]] onarılamaz → Kanserleşme.",
+      "difficulty": "Zor",
+      "tags": [
+        "XP",
+        "Xeroderma Pigmentosum",
+        "NER"
+      ],
+      "story_hint": "💡 HİKAYE: XP'li birinin DNA tamir ekibi (NER) grev yapmıştır. UV güneş timin dimerlerini oluşturur ama kimse tamir edemez. Hasarlar birikir ve deri kanser fabrikasına dönüşür. Bu yüzden güneş en büyük düşmandır.",
+      "ai_coding": "🤖 Kodlama: XP = 'NER yok = UV hasarı biriyor = Deri kanseri'. Güneş düşmanı."
+    },
+    {
+      "id": "path_b3B_026",
+      "question": "Kaposi sarkomunda HHV-8'in rolü nedir?",
+      "answer": "[[HHV-8]] enfeksiyonu → [[Vasküler proliferasyon]]. [[AIDS]] hastalarında (CD4<200) agresif seyreder.",
+      "difficulty": "Orta",
+      "tags": [
+        "Kaposi Sarkomu",
+        "HHV-8",
+        "HIV"
+      ],
+      "story_hint": "💡 HİKAYE: HHV-8 damarları çoğaltan bir bahçıvan gibidir: vasküler proliferasyon yapar. AIDS hastasında bağışıklık polisi (CD4) azalınca bu bahçıvan kontrolden çıkar ve mor-kırmızı lezyonlar her yeri sarar.",
+      "ai_coding": "🤖 Kodlama: Kaposi = HHV-8 + HIV/Transplant. Vasküler+Spindle hücre."
+    },
+    {
+      "id": "path_b3B_027",
+      "question": "Erythema multiforme ile Stevens-Johnson sendromunun histolojik farkı nedir?",
+      "answer": "[[Interface dermatit]]. [[SJS]]: >%10. [[TEN]]: >%30 vücut tutulumu + epidermal nekroz.",
+      "difficulty": "Zor",
+      "tags": [
+        "Erythema Multiforme",
+        "SJS",
+        "Deri"
+      ],
+      "story_hint": "💡 HİKAYE: EM, SJS ve TEN bir yangın skalası gibidir: EM küçük bir alev (%10'dan az), SJS orta yangın (%10-30), TEN ise tüm binayı saran inferno (%30 üstü). Hepsi interface dermatit temelinde epidermal nekroz yapar.",
+      "ai_coding": "🤖 Kodlama: EM → SJS → TEN. Vücut alanı arttıkça ağırlık artar. Interface dermatit."
+    },
+    {
+      "id": "path_b3B_028",
+      "question": "Dermatofibrosarkoma protuberans (DFSP) hangi genetik değişikliği ile karakterizedir?",
+      "answer": "[[t(17;22)]] → [[PDGFB]] aşırı üretimi. Tedavi: [[İmatinib]] etkili olabilir.",
+      "difficulty": "Zor",
+      "tags": [
+        "DFSP",
+        "Deri Tümörü",
+        "PDGFB"
+      ],
+      "story_hint": "💡 HİKAYE: DFSP'nin telefon numarası 17-22'dir (translokasyon). Bu numara arandığında PDGFB fabrikası aşırı üretime geçer. İmatinib bu fabrikanın fişini çeker ve tümörü kontrol altına alır.",
+      "ai_coding": "🤖 Kodlama: DFSP = t(17;22) = COL1A1-PDGFB. CD34(+). İmatinib hedefi."
+    }
+  ],
+  "id": "pathology_batch3B-topic-0",
+  "topic": "Kadın Genital + Meme + Deri (Batch 3B)",
+  "sub_topic": "Kadın Genital + Meme + Deri (Batch 3B)",
+  "content_summary": "",
+  "tus_spots": []
+}

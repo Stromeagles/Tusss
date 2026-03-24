@@ -1,0 +1,118 @@
+[
+  {
+    "id": "micro-bact-012",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Hücre Duvarı Olmayan Bakteriler",
+    "sub_topic": "Mycoplasma ve Ureaplasma",
+    "content_summary": "Hücre duvarsız, sterol içeren sitorlazmik membranlı en küçük bakterilerdir. Gram ile boyanmazlar ve beta-laktamlara dirençlidirler.",
+    "flashcards": [
+      {
+        "id": "fc-micro-850",
+        "question": "Mycoplasma'ların diğer bakterilerden en önemli yapısal farkı nedir?",
+        "answer": "Hücre duvarlarının olmaması ve sitoplazmik membranlarında sterol (kolesterol) içermeleridir.",
+        "difficulty": "easy",
+        "tags": [
+          "Mycoplasma",
+          "Sterol"
+        ]
+      },
+      {
+        "id": "fc-micro-851",
+        "question": "Atipik pnömoni tanısında kullanılan, eritrositleri soğukta kümeleyen spesifik olmayan test?",
+        "answer": "Soğuk aglütinin testi.",
+        "difficulty": "medium",
+        "tags": [
+          "M. pneumoniae",
+          "Soğuk Aglütinin"
+        ]
+      },
+      {
+        "id": "fc-micro-852",
+        "question": "Üremek için üreye ihtiyaç duyan (üreaz+) genitoüriner patojen?",
+        "answer": "Ureaplasma urealyticum.",
+        "difficulty": "medium",
+        "tags": [
+          "Ureaplasma",
+          "Üreaz"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "M. pneumoniae: 'Ayaklı pnömoni' (walking pneumonia) yapar, grafi bulgusu klinikten daha kötüdür.",
+      "M. hominis: 'Sahanda yumurta' (fried-egg) görünümünde koloniler oluşturur.",
+      "Mycoplasmalar: Sterol sentezleyemezler, dışarıdan (serumdan) almaları gerekir."
+    ]
+  },
+  {
+    "id": "micro-bact-013",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Anaerob Bakteriler",
+    "sub_topic": "Bacteroides ve Diğerleri",
+    "content_summary": "Oksijensiz ortamda üreyen, SOD ve Katalaz eksikliği olan bakterilerdir. Genelde kötü kokulu ve gazlı enfeksiyon yaparlar.",
+    "flashcards": [
+      {
+        "id": "fc-micro-900",
+        "question": "İntraabdominal enfeksiyonlarda en sık izole edilen, safraya dirençli gram negatif anaerob basil?",
+        "answer": "Bacteroides fragilis.",
+        "difficulty": "medium",
+        "tags": [
+          "B. fragilis",
+          "Anaerob"
+        ]
+      },
+      {
+        "id": "fc-micro-901",
+        "question": "EMN (Öpücük hastalığı) sonrası septik tromboflebit (Lemierre Hastalığı) yapan anaerob?",
+        "answer": "Fusobacterium necrophorum.",
+        "difficulty": "hard",
+        "tags": [
+          "Lemierre",
+          "Fusobacterium"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Anaerob enfeksiyonlar: Kötü kokulu akıntı, dokuda gaz ve aerob kültür negatifliği ipucudur.",
+      "Bakteriyel Vajinoz: Vajinal pH > 4.5, balık kokusu ve 'Clue cell' (İpucu hücresi) görülür. Etken genelde Gardnerella vaginalis.",
+      "Vajinoz tedavisi: Metronidazol."
+    ]
+  },
+  {
+    "id": "micro-bact-014",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Spiroketler",
+    "sub_topic": "Borrelia ve Leptospira",
+    "content_summary": "İnce, sarmal yapılı bakterilerdir. Lyme (Borrelia) ve Weil Hastalığı (Leptospira) en önemli klinik tablolarıdır.",
+    "flashcards": [
+      {
+        "id": "fc-micro-950",
+        "question": "Lyme hastalığının (B. burgdorferi) erken döneminde görülen tipik deri lezyonu?",
+        "answer": "Eritema Kronikum Migrans (Öküz gözü görünümü).",
+        "difficulty": "easy",
+        "tags": [
+          "Lyme",
+          "Borrelia",
+          "Eritem"
+        ]
+      },
+      {
+        "id": "fc-micro-951",
+        "question": "Sarılık, kanama ve böbrek yetmezliği ile seyreden ağır Leptospiroz tablosuna ne ad verilir?",
+        "answer": "Weil Hastalığı.",
+        "difficulty": "medium",
+        "tags": [
+          "Leptospira",
+          "Weil"
+        ]
+      }
+    ],
+    "tus_spots": [
+      "Borrelia: Antijenik varyasyon yeteneği nedeniyle ateş dönektir (Rekürren Ateş).",
+      "Leptospira: Karanlık saha mikroskobu ile gösterilir (çok ince oldukları için).",
+      "Leptospira kaynağı: Genelde kemirici (sıçan/fare) idrarı ile kontamine sular."
+    ]
+  }
+]

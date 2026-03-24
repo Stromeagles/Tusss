@@ -1,0 +1,521 @@
+[
+  {
+    "id": "fizyo-batch1-001",
+    "subject": "Fizyoloji",
+    "chapter": "Kardiyovasküler Fizyoloji",
+    "topic": "Frank-Starling Yasası ve Basınç-Volüm İlişkisi",
+    "sub_topic": "Kardiyak Output, Preload, Afterload",
+    "content_summary": "Frank-Starling yasasına göre kalp kası, diyastol sonu gerilimi (preload) arttıkça daha güçlü kasılır. Kardiyak output (CO = HR × SV) preload, afterload ve kontraktilite tarafından belirlenir. Basınç-volüm döngüsü kalbin mekanik işini yansıtır.",
+    "flashcards": [
+      {
+        "id": "fizyo_fc_001",
+        "question": "Frank-Starling yasasına göre preload arttığında stroke volüm nasıl değişir?",
+        "answer": "[[Artar]] ([[Miyofilamanlar arası örtüşme optimum düzeye gelir, kalsiyum duyarlılığı artar]])",
+        "explanation": "Frank-Starling yasası: kalp kasının gerilme uzunluğu arttıkça (preload↑), diyastolik dolum artar ve miyosinaktin çapraz köprü sayısı optimuma ulaşır. Bu sayede stroke volüm ve dolayısıyla kardiyak output artar. Sağlam kalpte bu mekanizma venöz dönüşü otomatik olarak pompalama kapasitesine eşitler.",
+        "difficulty": "Orta",
+        "tags": ["Fizyoloji", "Kardiyovasküler", "Frank-Starling", "Preload"],
+        "story_hint": "💡 HİKAYE: Kalp bir yay gibidir — ne kadar çok gerersen o kadar güçlü fırlatır. Starling 1914'te bunu keşfetti: 'Daha fazla kan gelirse, daha fazla kan at!' Bu yüzden yatarken nabzın düşer ama venöz dönüşün artar."
+      },
+      {
+        "id": "fizyo_fc_002",
+        "question": "Kardiyak output formülü nedir ve normal değeri nedir?",
+        "answer": "[[CO = HR × SV]] ([[Normal: 5 L/dk; 70 atım/dk × 70 mL/atım]])",
+        "explanation": "Kardiyak output (CO), kalp hızı (HR) ile stroke volümün (SV) çarpımıdır. İstirahat halinde ~5 L/dk'dır. Egzersizde 20-25 L/dk'ya çıkabilir. Kardiyak indeks = CO/Vücut yüzey alanı (normal: 2.5-4.0 L/dk/m²).",
+        "difficulty": "Kolay",
+        "tags": ["Fizyoloji", "Kardiyovasküler", "Kardiyak Output"],
+        "story_hint": "💡 HİKAYE: '70 × 70 = 4900 ≈ 5000 mL = 5 L' — 70 yaşında bir hastayı hayal et: 70 yaş, 70 atım, 70 mL. Hepsini çarp, 5 litre çıkar. TUS'ta 'normal CO kaçtır?' sorusu gelirse: 5 L/dk!"
+      },
+      {
+        "id": "fizyo_fc_003",
+        "question": "Afterload'u artıran durumda (örn. aort stenozu) stroke volüm nasıl değişir?",
+        "answer": "[[Azalır]] ([[Ventrikül ejeksiyona karşı dirençle karşılaşır, kompansatuar hipertrofi gelişir]])",
+        "explanation": "Afterload, ventriküllerin kasılırken karşılaştığı dirençtir (SVR veya aort kapak direnci). Afterload arttıkça stroke volüm düşer, EF azalır. Kronik artışta konsantrik hipertrofi gelişir (duvar kalınlığı artar, lümen aynı kalır). Bu, HFpEF'in mekanizmasıdır.",
+        "difficulty": "Orta",
+        "tags": ["Fizyoloji", "Kardiyovasküler", "Afterload", "Hipertrofi"],
+        "story_hint": "💡 HİKAYE: Kapıyı iterken birisi öte taraftan tutuyorsa — işte bu afterload. Kapıyı açmak için daha fazla güç harcarsın ama kapı o kadar açılmaz. Aort stenozu = kapının önünde duran dev bir güvenlik görevlisi!"
+      },
+      {
+        "id": "fizyo_fc_004",
+        "question": "Ejeksiyon fraksiyonu (EF) nasıl hesaplanır ve normal değeri nedir?",
+        "answer": "[[EF = SV / EDV × 100]] ([[Normal: %55-70; < %40 sistolik disfonksiyon]])",
+        "explanation": "EF = (EDV - ESV) / EDV × 100. Normal EDV ~120 mL, ESV ~50 mL, SV ~70 mL → EF = 70/120 = %58. EF < %40 sistolik kalp yetmezliği (HFrEF), EF > %50 diyastolik disfonksiyon (HFpEF) tanısını destekler. TUS'ta EF hesabı sık sorulur.",
+        "difficulty": "Zor",
+        "tags": ["Fizyoloji", "Kardiyovasküler", "Ejeksiyon Fraksiyonu", "Kalp Yetmezliği"],
+        "story_hint": "💡 HİKAYE: Kalp bir kova gibi — 120 mL dolar, 70 mL boşalır. Boşalınanın doluya oranı EF'dir: 70/120 = %58. 'Kalp yarısını pompalıyor' dersen %50, '%40'ın altı kötü' diye ezberle!"
+      },
+      {
+        "id": "fizyo_fc_005",
+        "question": "Basınç-volüm döngüsünde izovolümetrik kontraksiyonun tanımı nedir?",
+        "answer": "[[Mitral ve aort kapakları kapalıyken basınç artar, volüm değişmez]] ([[S1'den aort kapağının açılmasına kadar olan fase]])",
+        "explanation": "İzovolümetrik kontraksiyon: S1 ile başlar (mitral kapanır), aort kapağı açılana dek devam eder. Bu fazda ventriküler basınç hızla yükselir ancak volüm değişmez çünkü tüm kapaklar kapalıdır. Enerji sarfiyatı yüksektir. Aort stenozu ve hipertansiyon bu faz süresini uzatır.",
+        "difficulty": "Orta",
+        "tags": ["Fizyoloji", "Kardiyovasküler", "Kalp Döngüsü", "Basınç-Volüm"],
+        "story_hint": "💡 HİKAYE: 'İzometrik egzersiz' gibi — kas kasılır ama hareket yok. Kalp de aynı: sıkışır ama kan gitmez, tüm kapılar kapalı. S1 çaldı, kapılar kilitlendi, basınç tırmanıyor, aort açılana kadar bekliyoruz!"
+      },
+      {
+        "id": "fizyo_fc_006",
+        "question": "Venöz dönüşü etkileyen faktörler nelerdir?",
+        "answer": "[[Sağ atriyal basınç, venöz ton, solunum pompası, kas pompası, kan volümü]]",
+        "explanation": "Venöz dönüş = (Ortalama sistemik dolum basıncı - Sağ atriyal basınç) / Venöz direnç. İnspirasyonda göğüs içi basınç düşer → venöz dönüş artar. Sempatik aktivasyon venöz tonu artırır → venöz dönüş artar. Hipovolemi venöz dönüşü azaltır.",
+        "difficulty": "Orta",
+        "tags": ["Fizyoloji", "Kardiyovasküler", "Venöz Dönüş", "Frank-Starling"],
+        "story_hint": "💡 HİKAYE: 'Venöz dönüş = kalbe giden trafik.' Yollar geniş (venöz ton↑), araçlar çok (volüm↑), ışıklar yeşil (solunum pompası) olunca trafik akar. Sağ atriyal basınç yüksekse trafik sıkışır!"
+      },
+      {
+        "id": "fizyo_fc_007",
+        "question": "Ortalama arteriyel basınç (MAP) formülü nedir?",
+        "answer": "[[MAP = DBP + 1/3 (SBP - DBP)]] ([[veya MAP = CO × SVR; normal ~93 mmHg]])",
+        "explanation": "MAP = Diyastolik basınç + Nabız basıncının 1/3'ü. Örnek: 120/80 mmHg → MAP = 80 + 1/3(40) = 80 + 13.3 = 93.3 mmHg. Diyastolün sistolden 2 kat uzun olması nedeniyle 1/3 kullanılır. MAP < 65 mmHg şok sınırı kabul edilir.",
+        "difficulty": "Kolay",
+        "tags": ["Fizyoloji", "Kardiyovasküler", "Arteriyel Basınç", "MAP"],
+        "story_hint": "💡 HİKAYE: '120/80'de MAP = 80 + 13 = 93' — 'Diyastol daha uzun o yüzden 1/3 değil 2/3 diyastol.' Formülü şöyle ezberle: 'Diyastol + üçte bir nabız basıncı.' MAP < 65 = ŞOKTA!"
+      },
+      {
+        "id": "fizyo_fc_008",
+        "question": "Kontraktiliteyi artıran faktörler nelerdir?",
+        "answer": "[[Katekolaminler, dijital glikozidler, hiperkalemi → azaltır; kalsiyum, beta-1 agonistler → artırır]]",
+        "explanation": "Kontraktilite (inotropi): Beta-1 agonistler (NA, A, dobutamin) → cAMP↑ → PKA → miyozin hafif zincir kinaZ fosforilasyonu ve L-tipi Ca²⁺ kanalı aktivasyonu → kontraktilite↑. Digoksin Na/K-ATPaz'ı inhibe eder → hücre içi Na⁺↑ → Na/Ca değiştiricisi tersine çalışır → Ca²⁺↑ → kontraktilite↑.",
+        "difficulty": "Zor",
+        "tags": ["Fizyoloji", "Kardiyovasküler", "Kontraktilite", "İnotropi"],
+        "story_hint": "💡 HİKAYE: 'Adrenalin kalbi tutuşturur — beta-1 alıcıları tetikler, kalsiyum girer, kalp daha sert vurur.' Digoksin ise kapıyı kilitleyip sodyu içeride tutar, sodyum kalsiyumu iter içeri. İkisi de sonuçta kalsiyumu artırır!"
+      },
+      {
+        "id": "fizyo_fc_009",
+        "question": "Kalp seslerinin (S1, S2, S3, S4) fizyolojik temeli nedir?",
+        "answer": "[[S1: AV kapaklar kapanır; S2: Semilunar kapaklar kapanır; S3: Ventriküler dolum (sol KY); S4: Atriyal kasılma (sert ventrikül)]]",
+        "explanation": "S1 = Mitral+Triküspit kapanması (sistol başlangıcı). S2 = Aort+Pulmoner kapanması (diyastol başlangıcı). S3 = Hızlı ventriküler dolum sesi, sol KY'nde, 30 yaş altında normal. S4 = Atriyal kick, sert (non-compliant) ventrikül varlığında duyulur (HT, HCM). S3+S4 = Gallop ritmi.",
+        "difficulty": "Orta",
+        "tags": ["Fizyoloji", "Kardiyovasküler", "Kalp Sesleri", "Auskültasyon"],
+        "story_hint": "💡 HİKAYE: 'LUB-DUP-ta-ta: S1 kapılar kapanır (LUB), S2 kapılar kapanır (DUP), S3 kan dolar (ta — kardiyak galop!), S4 kulakçık iter (ta — hipertansif kalp!).' TUS'ta S3 = sol KY, S4 = sert ventrikül!"
+      },
+      {
+        "id": "fizyo_fc_010",
+        "question": "Juguler venöz basınç (JVP) dalgaları hangi olayları yansıtır?",
+        "answer": "[[a dalgası: atriyal kasılma; c dalgası: triküspit kapak kabarması; v dalgası: atriyal dolum; x iniş: atriyal relaksasyon; y iniş: triküspit açılımı]]",
+        "explanation": "JVP dalgaları: a = atrial contraction (PR aralığına karşılık); c = triküspit kabarması; x = atriyal relaksasyon + descent; v = venous filling (triküspit kapalıyken atriyal dolum); y = yükleme bitti, triküspit açıldı. Dev a dalgası: triküspit stenozu, pulmoner HT. Cannon a dalgası: AV tam blok. v dalgası kaybolması: AF.",
+        "difficulty": "Zor",
+        "tags": ["Fizyoloji", "Kardiyovasküler", "JVP", "Venöz Basınç"],
+        "story_hint": "💡 HİKAYE: 'a-c-x-v-y: Atriyal kasılır, Triküspit canar, eXit (relakze), Venöz dolar, Yükleme biter.' Dev a = kulakçık eziyet çekiyor (stenoz/HT). Cannon a = kulakçık kapalı kapıya çarptı (tam blok)!"
+      }
+    ],
+    "tus_spots": [
+      "Frank-Starling: Preload↑ → SV↑ (miyofilaman örtüşme optimizasyonu)",
+      "CO = HR × SV = 70 × 70 = ~5 L/dk (normal)",
+      "EF = SV/EDV × %100; normal %55-70; <% 40 = sistolik KY (HFrEF)",
+      "MAP = DBP + 1/3 PP; 120/80 mmHg → MAP ≈ 93 mmHg; <65 mmHg şok",
+      "İzovolümetrik kontraksiyon: Tüm kapaklar kapalı, basınç↑, volüm sabit (S1'den aort açılışına kadar)",
+      "S3 gallop = sol kalp yetmezliği; S4 gallop = non-compliant ventrikül (HT, HCM)",
+      "JVP'de cannon a dalgası = AV tam blok (ventrikül kasılırken kulakçık da kasılıyor)",
+      "Digoksin: Na/K-ATPaz inhibisyonu → Na⁺↑ → Na/Ca değiştirici tersine → Ca²⁺↑ → inotropi↑",
+      "Konsantrik hipertrofi: Afterload↑ (HT, aort stenozu) sonucu; duvar kalın, lümen normal",
+      "Ekzantrik hipertrofi: Preload↑ (aort yetersizliği, dilate KMP) sonucu; lümen genişler"
+    ],
+    "clinical_cases": [
+      {
+        "id": "fizyo_cc_001",
+        "case": "Soru: (Fizyoloji — Kardiyovasküler) 65 yaşında erkek hasta, eforla nefes darlığı ve alt ekstremite ödemi ile başvuruyor. Fizik muayenede S3 gallop ve juguler venöz basınç artışı saptanıyor. Ekokardiyografide EF: %30 bulunuyor. Bu hastanın patofizyolojisinde aşağıdakilerden hangisi baskın mekanizmadır?",
+        "options": [
+          "A) Diyastolik disfonksiyon nedeniyle kardiyak dolumun bozulması",
+          "B) Sistolik disfonksiyon nedeniyle stroke volümün azalması",
+          "C) Afterload azalması nedeniyle periferik vasodilatasyon",
+          "D) Kontraktilite artışı nedeniyle taşikardi gelişimi",
+          "E) Preload azalması nedeniyle venöz dönüşün bozulması"
+        ],
+        "correct_answer": "B) Sistolik disfonksiyon nedeniyle stroke volümün azalması",
+        "explanation": "EF %30 (<%40) sistolik disfonksiyonu (HFrEF) gösterir. Frank-Starling mekanizması çökmüştür: preload artmasına rağmen yeterli SV üretilemez. S3 gallop hızlı ventriküler dolumun sert duvara çarpmasıyla oluşur ve sol KY'nin işaretidir. JVP artışı venöz konjesyonu yansıtır. Diyastolik disfonksiyon (HFpEF) EF > %50 ile seyreder."
+      },
+      {
+        "id": "fizyo_cc_002",
+        "case": "Soru: (Fizyoloji — Kardiyovasküler) Bir araştırmada sağlıklı gönüllülerde egzersiz sırasında kardiyak output ölçülüyor. İstirahatte CO: 5 L/dk iken maksimal egzersizde 25 L/dk'ya ulaşıyor. Aşağıdakilerden hangisi bu artışa en az katkıda bulunan faktördür?",
+        "options": [
+          "A) Sempatik sinir sistemi aktivasyonu ile kalp hızı artışı",
+          "B) Kas pompası aktivasyonu ile venöz dönüş artışı",
+          "C) Katekolamin salınımı ile kontraktilite artışı",
+          "D) Parasempatik tonus artışı ile preload optimizasyonu",
+          "E) Solunum pompası ile venöz dönüş artışı"
+        ],
+        "correct_answer": "D) Parasempatik tonus artışı ile preload optimizasyonu",
+        "explanation": "Egzersizde sempatik sistem aktive olur, parasempatik sistem baskılanır. Parasempatik tonus artışı egzersizle çelişir — egzersiz sırasında vagal tonus azalır, sempatik aktivasyon artar. Sempatik sistem: HR↑, kontraktilite↑, venöz ton↑ → venöz dönüş↑. Kas pompası ve solunum pompası da venöz dönüşü artırır."
+      },
+      {
+        "id": "fizyo_cc_003",
+        "case": "Soru: (Fizyoloji — Kardiyovasküler) 55 yaşında hipertansiyon tanılı kadın hasta kardiyoloji polikliniğine başvuruyor. Ekokardiyografide sol ventrikül duvar kalınlığı artmış, iç çap normal, EF %65 saptanıyor. Diyastolik disfonksiyon mevcut. Bu hastada gelişen yapısal değişikliğin mekanizması nedir?",
+        "options": [
+          "A) Kronik preload artışı → ekzantrik hipertrofi",
+          "B) Kronik afterload artışı → konsantrik hipertrofi",
+          "C) Kontraktilite azalması → dilate kardiyomiyopati",
+          "D) Kronik volüm yüklenmesi → sarkomerlerin paralel dizilimi",
+          "E) İskemi → apikal anörizm formasyonu"
+        ],
+        "correct_answer": "B) Kronik afterload artışı → konsantrik hipertrofi",
+        "explanation": "Hipertansiyonda afterload (SVR) kronik olarak artar. Ventrikül bu yüke adapte olmak için duvarını kalınlaştırır (konsantrik hipertrofi): sarkomerler paralel değil seri dizilir, duvar/lümen oranı artar. EF korunur ama diyastolik uyum bozulur (HFpEF). Ekzantrik hipertrofi ise volüm yüklenmesinde görülür (sarkomerler seri dizilir, lümen genişler)."
+      },
+      {
+        "id": "fizyo_cc_004",
+        "case": "Soru: (Fizyoloji — Kardiyovasküler) Bir hastada juguler venöz nabız incelemesinde 'cannon a dalgaları' saptanıyor. Bu bulgular hangi durumla en çok uyumludur?",
+        "options": [
+          "A) Triküspit stenozu",
+          "B) Aort yetersizliği",
+          "C) Tam atriyoventriküler blok",
+          "D) Atriyal fibrilasyon",
+          "E) Mitral darlık"
+        ],
+        "correct_answer": "C) Tam atriyoventriküler blok",
+        "explanation": "Cannon a dalgaları: kulakçık triküspit kapak kapalıyken kasıldığında oluşur (atriyal kasılma ventrikül sistolüne denk gelir). Tam AV blokta P dalgaları QRS'ten bağımsız ilerler; zaman zaman kulakçık kasılması triküspit kapalıyken gerçekleşir → dev (cannon) a dalgaları. AF'de a dalgası kaybolur (kulakçık kasılmıyor). Triküspit stenozunda dev ama cannon olmayan a dalgası görülür."
+      },
+      {
+        "id": "fizyo_cc_005",
+        "case": "Soru: (Fizyoloji — Kardiyovasküler) Bir hastada aort kapağı yetmezliği saptanmaktadır. Basınç-volüm döngüsü incelendiğinde aşağıdaki değişikliklerden hangisi beklenir?",
+        "options": [
+          "A) EDV azalması ve ESV artması",
+          "B) EDV artması ve SV artması",
+          "C) EDV normal, afterload artışı nedeniyle SV azalması",
+          "D) İzovolümetrik relaksasyon süresinin uzaması",
+          "E) S4 gallopun baskın bulgu olması"
+        ],
+        "correct_answer": "B) EDV artması ve SV artması",
+        "explanation": "Aort yetersizliğinde diyastolde kan aortadan sol ventriküle geri kaçar → volüm yüklenmesi → EDV artar (preload↑). Frank-Starling mekanizmasıyla SV artar (regürjitan volümü karşılamak için). Kronik süreçte ekzantrik hipertrofi gelişir (sarkomerler seri dizilir, lümen genişler, duvar kalınlığı normale yakın). Bu nedenle geniş nabız basıncı, Corrigan nabzı görülür."
+      }
+    ]
+  },
+  {
+    "id": "fizyo-batch1-002",
+    "subject": "Fizyoloji",
+    "chapter": "Solunum Fizyolojisi",
+    "topic": "Akciğer Volümleri, Gaz Değişimi ve Asit-Baz Dengesi",
+    "sub_topic": "Spirometri, Diffüzyon, Henderson-Hasselbalch",
+    "content_summary": "Akciğer volümleri ve kapasiteleri solunum fonksiyonunun temelini oluşturur. Gaz değişimi diffüzyon kapasitesi ve ventilasyon-perfüzyon uyumu ile belirlenir. Asit-baz dengesi pH, PaCO2 ve HCO3- üçgenine göre yorumlanır.",
+    "flashcards": [
+      {
+        "id": "fizyo_fc_011",
+        "question": "Spirometri ile ölçülemeyen akciğer volümleri hangileridir?",
+        "answer": "[[Rezidüel volüm (RV) ve RV içeren kapasiteler: FRC, TLC]] ([[Helyum dilüsyon veya plethysmografi ile ölçülür]])",
+        "explanation": "Spirometri ile ölçülebilen: TV (tidal volüm ~500 mL), IRV (inspiratuar rezerv ~3000 mL), ERV (ekspiratuar rezerv ~1200 mL), VC (vital kapasite ~4700 mL), IC, EC. Ölçülemeyen: RV (~1200 mL), FRC = ERV + RV (~2400 mL), TLC = VC + RV (~5900 mL). RV spirometri ile ölçülemez çünkü maksimal ekspirasyon sonrası akciğerde kalan havanın dışarı atılması mümkün değildir.",
+        "difficulty": "Orta",
+        "tags": ["Fizyoloji", "Solunum", "Spirometri", "Akciğer Volümleri"],
+        "story_hint": "💡 HİKAYE: 'RV = Rezidüel = Geriye kalan = Spirometre göremez.' FRC ve TLC de RV içerdiği için spirometreye yakalanmaz. Ezber: 'RV KAÇAR — Spirometrenin GÖZÜNDEN KAÇAR.' Helyum ile yakalanır!"
+      },
+      {
+        "id": "fizyo_fc_012",
+        "question": "Obstrüktif ve restriktif akciğer hastalıklarında spirometrik parametreler nasıl değişir?",
+        "answer": "[[Obstrüktif: FEV1↓, FVC normal/↓, FEV1/FVC < %70; Restriktif: FEV1↓, FVC↓, FEV1/FVC normal veya↑]]",
+        "explanation": "Obstrüktif (astım, KOAH): Hava akımı kısıtlı, FEV1 orantısız düşer, FEV1/FVC <%70. RV ve FRC genişler (air trapping). Restriktif (İPF, plevral efüzyon, kifoskolyoz): Akciğer kapasitesi küçülür, tüm volümler düşer ama oran korunur. FEV1/FVC = %80+ (normal veya yüksek). TLC < %80 restriktif pattern'ı onaylar.",
+        "difficulty": "Orta",
+        "tags": ["Fizyoloji", "Solunum", "Obstrüktif", "Restriktif", "Spirometri"],
+        "story_hint": "💡 HİKAYE: 'Obstrüktif = BORUlar tıkalı, hava çıkmıyor. Restriktif = TORBA küçülmüş, hava giremiyor.' FEV1/FVC oranı tıkalı boruda düşer, küçük torbada normaldir. TUS'ta: oran <%70 = obstrüktif!"
+      },
+      {
+        "id": "fizyo_fc_013",
+        "question": "Ventilasyon-Perfüzyon (V/Q) oranı akciğerin farklı bölgelerinde nasıl değişir ve klinik önemi nedir?",
+        "answer": "[[Apex: V/Q yüksek (>1, ölü boşluk benzeri); Baz: V/Q düşük (<1, şant benzeri); Normal V/Q = 0.8]]",
+        "explanation": "Dik duruşta: Apex → graviteye bağlı az perfüzyon, V/Q > 1 (ventilasyon fazla, perfüzyon az). Baz → fazla perfüzyon, V/Q < 1. Normal V/Q = 0.8. Pulmoner emboli: Ventile edilmiş ama perfüze edilmeyen bölge → V/Q↑ (ölü boşluk). Atelektazi, pnömoni: Perfüze ama ventile edilmeyen bölge → şant (V/Q=0).",
+        "difficulty": "Zor",
+        "tags": ["Fizyoloji", "Solunum", "V/Q Oranı", "Pulmoner Emboli"],
+        "story_hint": "💡 HİKAYE: 'Apex = Aristokrat (az kirli, bol hava); Baz = İşçi (çok kan, az hava).' Emboli tepede ölü boşluk yaratır, pnömoni tabanda şant yaratır. V/Q = 0 = tam şant = O2 versen de işe yaramaz!"
+      },
+      {
+        "id": "fizyo_fc_014",
+        "question": "Henderson-Hasselbalch denklemi nedir ve asit-baz yorumunda nasıl kullanılır?",
+        "answer": "[[pH = 6.1 + log ([HCO3-] / 0.03 × PaCO2)]] ([[pH 7.40, PaCO2 40 mmHg, HCO3- 24 mEq/L normal değerler]])",
+        "explanation": "pH ∝ HCO3- / PaCO2. PaCO2 solunum kontrolü, HCO3- renal kontrolü altındadır. Primer bozukluklar: Respiratuar asidoz (PaCO2↑), Respiratuar alkaloz (PaCO2↓), Metabolik asidoz (HCO3-↓), Metabolik alkaloz (HCO3-↑). Kompansasyon her zaman bozukluğu düzeltme yönünde olur ancak tam düzeltme sağlamaz.",
+        "difficulty": "Orta",
+        "tags": ["Fizyoloji", "Solunum", "Asit-Baz", "Henderson-Hasselbalch"],
+        "story_hint": "💡 HİKAYE: 'pH = HCO3 / CO2 = Böbrek / Akciğer.' Akciğer hızlı (dakikalar), böbrek yavaş (günler) kompanse eder. 'CO2 asit, HCO3 baz: fazla CO2 = asidoz, fazla HCO3 = alkaloz.' Bu kadar basit!"
+      },
+      {
+        "id": "fizyo_fc_015",
+        "question": "Respiratuar alkalozda kompansasyon mekanizması nedir?",
+        "answer": "[[Renal HCO3- atılımı artar → HCO3-↓]] ([[Akut: H⁺ tampon sisteminden salınır; Kronik: Böbrek HCO3- atar]])",
+        "explanation": "Primer respiratuar alkaloz (PaCO2↓): pH yükselir. Kompansasyon: Böbrekler HCO3- atımını artırır (bikarbonat reabsorpsiyonu azalır). Akut kompansasyon formülü: ΔHCO3- = -2 × ΔPaCO2/10. Kronik: ΔHCO3- = -5 × ΔPaCO2/10. pH tamamen normalize edilemez (kompanse asla tam normalizeye ulaşamaz).",
+        "difficulty": "Zor",
+        "tags": ["Fizyoloji", "Solunum", "Asit-Baz", "Respiratuar Alkaloz"],
+        "story_hint": "💡 HİKAYE: 'Hyperventilasyon → CO2 kaçtı → alkaloz → böbrek HCO3 atar.' Panik atakta solunum hızlanır, CO2 düşer, baş döner — bu respiratuar alkaloz! Böbrek 'fazla baz var, at!' der ve HCO3 idrarla gider."
+      },
+      {
+        "id": "fizyo_fc_016",
+        "question": "Oksijen-hemoglobin dissosiasyon eğrisini sağa kaydıran faktörler nelerdir?",
+        "answer": "[[Asidoz (pH↓), Hiperkapni (PaCO2↑), Ateş (sıcaklık↑), 2,3-DPG↑]] ([[Bohr etkisi: asidoz eğriyi sağa kaydırır → O2 salınımı artar]])",
+        "explanation": "Sağa kayma → hemoglobin O2'yi daha kolay bırakır (P50↑). Bohr etkisi: CO2 ve H⁺ hemoglobinik O2 affinitesini azaltır. Periferik dokular asidik ve CO2 yüklü → O2 salınımı↑ (dokular için iyi). Sol kayma: Alkaloz, hipotermi, 2,3-DPG azalması, CO (karbonmonoksit zehirlenmesi) → O2 bırakmaz → doku hipoksisi.",
+        "difficulty": "Orta",
+        "tags": ["Fizyoloji", "Solunum", "Hemoglobin", "Oksijen Dissosiasyonu", "Bohr Etkisi"],
+        "story_hint": "💡 HİKAYE: 'CADET — CO2, Asidoz, DPG, Egzersiz (ısı) → Sağa kaydırır = Teslim eder (O2 bırakır).' Ateşli hasta, yorgun kas: asit ve CO2 üretir, Hb O2'yi serbest bırakır. CO zehirlenmesi tam tersi: Hb O2'yi tutmaz bırakmaz — sola kayar!"
+      },
+      {
+        "id": "fizyo_fc_017",
+        "question": "Fizyolojik ölü boşluk (dead space) nedir ve Bohr denklemi nedir?",
+        "answer": "[[Ventile edilen ancak gaz değişimi yapmayan alan; VD/VT = (PaCO2 - PECO2) / PaCO2]]",
+        "explanation": "Anatomik ölü boşluk (~150 mL): Havayolları (trakea, bronşlar). Fizyolojik ölü boşluk: Anatomik + alveolar ölü boşluk (perfüze edilmeyen alveollar). Bohr denklemi: VD/VT = (PaCO2 - PE'CO2) / PaCO2. Normal VD/VT = 0.3. Pulmoner emboli, ARDS, amfizem → fizyolojik ölü boşluk artar.",
+        "difficulty": "Zor",
+        "tags": ["Fizyoloji", "Solunum", "Ölü Boşluk", "Bohr Denklemi"],
+        "story_hint": "💡 HİKAYE: 'Ölü boşluk = Boşa harcanan nefes.' Trakea ve bronşlar gaz değişimi yapmaz — anatomik ölü boşluk. PE'de kanlanmayan alveol de ölü boşluk — fizyolojik ölü boşluk. PaCO2 - PECO2 farkı büyükse 'boşa giden nefes fazla' demek!"
+      },
+      {
+        "id": "fizyo_fc_018",
+        "question": "Alveolar gaz denkleminde alveolar PO2 (PAO2) nasıl hesaplanır?",
+        "answer": "[[PAO2 = FiO2 × (PB - PH2O) - PaCO2/RQ]] ([[Normal: PAO2 = 0.21 × (760-47) - 40/0.8 ≈ 100 mmHg]])",
+        "explanation": "PB = Atmosfer basıncı (760 mmHg deniz seviyesi). PH2O = Su buharı basıncı (47 mmHg). FiO2 = 0.21 (oda havası). RQ = Solunum katsayısı (0.8 normal). A-a gradienti = PAO2 - PaO2 (normal < 15 mmHg). Artmış A-a gradienti: V/Q uyumsuzluğu, şant, diffüzyon bozukluğu. Normal A-a + hipoksi = hipoventilasyon.",
+        "difficulty": "Zor",
+        "tags": ["Fizyoloji", "Solunum", "Alveolar Gaz Denklemi", "A-a Gradienti"],
+        "story_hint": "💡 HİKAYE: 'PAO2 = 100 mmHg, PaO2 = 95 mmHg → A-a = 5 (normal).' A-a gradiyenti artmışsa alveol-kapiler sorun var (şant, V/Q bozukluğu, diffüzyon). Normal A-a + düşük PaO2 = hipoventilasyon (beyin sorunu, opiat, kas)!"
+      },
+      {
+        "id": "fizyo_fc_019",
+        "question": "Sürfaktan nedir, hangi hücrelerden salgılanır ve görevi nedir?",
+        "answer": "[[Tip II pnömositlerden salgılanan dipalmitolfosfatidilkolin (DPPC); yüzey gerilimini azaltır, atelektaziyi önler]]",
+        "explanation": "Sürfaktan bileşimi: %80 fosfolipid (DPPC başlıca), %10 protein (SP-A, SP-B, SP-C, SP-D), %10 nötral lipid. Tip II pnömositler tarafından 24-28. gebelik haftasından itibaren üretilir. Laplace yasası: P = 2T/r → küçük alveollar daha yüksek basınçla çöker. Sürfaktan yüzey gerilimi azaltır → küçük alveollerin kollapsını önler. RDS: Prematürite → sürfaktan eksikliği.",
+        "difficulty": "Orta",
+        "tags": ["Fizyoloji", "Solunum", "Sürfaktan", "Tip II Pnömosit", "RDS"],
+        "story_hint": "💡 HİKAYE: 'Sürfaktan = Akciğerin sabunu — yüzey gerilimini kırar.' Premature bebekte sabun yok → alveollar yapışır → RDS. 28. haftadan önce doğarsa betametazon ver, sürfaktan üretimini hızlandır!"
+      }
+    ],
+    "tus_spots": [
+      "Spirometri ile RV ölçülemez; FRC ve TLC de RV içerdiğinden ölçülemez (helyum dilüsyon/plethysmografi gerekir)",
+      "Obstrüktif: FEV1/FVC < %70; Restriktif: FEV1/FVC normal, TLC↓",
+      "V/Q = 0 = tam şant (pnömoni, atelektazi); V/Q = ∞ = ölü boşluk (pulmoner emboli)",
+      "Normal pH: 7.35-7.45; PaCO2: 35-45 mmHg; HCO3-: 22-26 mEq/L",
+      "Respiratuar alkaloz kompansasyonu: Böbrek HCO3- atar (kronik: ΔHCO3- = -5 × ΔPaCO2/10)",
+      "Bohr etkisi: Asidoz + CO2↑ → Hb O2 affinitesi↓ → O2 salınımı↑ (eğri sağa kayar)",
+      "A-a gradienti normal + hipoksi → Hipoventilasyon (santral baskılanma, nöromusküler hastalık)",
+      "A-a gradienti artmış + hipoksi → V/Q uyumsuzluğu, şant veya diffüzyon bozukluğu",
+      "Sürfaktan: Tip II pnömositler, DPPC, 24-28. gebelik haftasında başlar; eksikliği → RDS",
+      "CO zehirlenmesi: Hb-CO affinitesi Hb-O2'den 240 kat fazla → eğri sola kayar → doku hipoksisi"
+    ],
+    "clinical_cases": [
+      {
+        "id": "fizyo_cc_006",
+        "case": "Soru: (Fizyoloji — Solunum) Bir hastada solunum sayısı 28/dk, PaCO2: 28 mmHg, pH: 7.52, HCO3-: 20 mEq/L bulunmuştur. Bu tablonun en olası nedeni nedir?",
+        "options": [
+          "A) Metabolik alkaloz",
+          "B) Respiratuar alkaloz, kronik kompanse",
+          "C) Respiratuar alkaloz, akut",
+          "D) Metabolik asidoz",
+          "E) Miks asit-baz bozukluğu"
+        ],
+        "correct_answer": "B) Respiratuar alkaloz, kronik kompanse",
+        "explanation": "pH 7.52 → Alkaloz. PaCO2 28 mmHg → Düşük → Respiratuar alkaloz (primer). HCO3- 20 mEq/L → Düşük → Kompansasyon (böbrek HCO3 atıyor). Kronik respiratuar alkaloz beklenen HCO3- düşüşü: ΔHCO3- = 5 × (40-28)/10 = 5 × 1.2 = 6 → beklenen HCO3- = 24-6 = 18-20 mEq/L. HCO3- = 20 → beklenen aralıkta → kompanse kronik respiratuar alkaloz. Akut olguda HCO3- bu kadar düşmez."
+      },
+      {
+        "id": "fizyo_cc_007",
+        "case": "Soru: (Fizyoloji — Solunum) 70 yaşında KOAH tanılı erkek hasta acil servise geliyor. Kan gazı: pH: 7.32, PaCO2: 65 mmHg, HCO3-: 33 mEq/L, PaO2: 52 mmHg, SaO2: %85. Bu hastada aşağıdakilerden hangisi doğrudur?",
+        "options": [
+          "A) Akut respiratuar asidoz, metabolik kompansasyon yok",
+          "B) Kronik respiratuar asidoz üzerine binmiş akut alevlenme",
+          "C) Metabolik alkaloz, respiratuar kompansasyon ile",
+          "D) Miks metabolik ve respiratuar asidoz",
+          "E) Kronik metabolik asidoz, solunum kompansasyonu normal"
+        ],
+        "correct_answer": "B) Kronik respiratuar asidoz üzerine binmiş akut alevlenme",
+        "explanation": "pH 7.32 → Asidoz. PaCO2 65 → Yüksek → Respiratuar asidoz primer. HCO3- 33 → Yüksek → Renal kompansasyon var (kronik). Kronik respiratuar asidoz beklenen HCO3-: ΔHCO3- = +3.5 × (65-40)/10 = 8.75 → beklenen HCO3- = 24 + 8.75 ≈ 33. HCO3- = 33 → tam kompanse görünüyor ama pH hâlâ asidik → akut alevlenme eklendi. KOAH'lı hastada kronik hiperkapni + akut infeksiyon/bronkospazm kombinasyonu."
+      },
+      {
+        "id": "fizyo_cc_008",
+        "case": "Soru: (Fizyoloji — Solunum) Bir hastada pulmoner emboli düşünülmektedir. Kan gazı: pH: 7.48, PaCO2: 30 mmHg, PaO2: 58 mmHg bulunmuştur. A-a gradienti hesaplandığında 50 mmHg olduğu görülmektedir. Bu bulgular aşağıdakilerden hangisi ile en iyi açıklanır?",
+        "options": [
+          "A) Hipoventilasyon nedeniyle hipoksi ve normokapni",
+          "B) V/Q uyumsuzluğu ve artmış ölü boşluk",
+          "C) Tam şant — O2 tedavisine yanıt yok",
+          "D) Normal A-a gradienti — yüksek irtifa etkisi",
+          "E) Diffüzyon bozukluğu — efor hipoksisi"
+        ],
+        "correct_answer": "B) V/Q uyumsuzluğu ve artmış ölü boşluk",
+        "explanation": "PE'de emboli tıkanan damarın beslediği alveolleri ventile eder ama perfüze edemez → ölü boşluk (V/Q↑). Kompansatuar hiperventilasyon → PaCO2 düşer (30 mmHg) → respiratuar alkaloz (pH 7.48). Hipoksi → A-a gradienti artmış (50 mmHg >> normal <15 mmHg). O2 tedavisine kısmi yanıt alınır (tam şant değil). Bu klasik PE kan gazı profilidir: respiratuar alkaloz + hipoksi + artmış A-a gradienti."
+      },
+      {
+        "id": "fizyo_cc_009",
+        "case": "Soru: (Fizyoloji — Solunum) 32 haftalık prematüre yenidoğanda doğumdan 4 saat sonra progresif solunum güçlüğü, inleme, burun kanadı solunumu ve retraksiyonlar gelişiyor. Akciğer grafisinde yaygın buzlu cam görünümü var. Bu tablonun patofizyolojik temeli nedir?",
+        "options": [
+          "A) Surfaktan fazlalığı nedeniyle alveolar ödem",
+          "B) Tip I pnömosit hasarı sonrası eksüda birikimi",
+          "C) Surfaktan yetersizliği → yüzey gerilimi artışı → alveolar kollaps",
+          "D) Pulmoner hipertansiyon → sağdan sola şant",
+          "E) Mekonium aspirasyonu → obstrüktif patern"
+        ],
+        "correct_answer": "C) Surfaktan yetersizliği → yüzey gerilimi artışı → alveolar kollaps",
+        "explanation": "Respiratuvar Distress Sendromu (RDS): 28. haftadan önce sürfaktan üretimi yetersizdir. Sürfaktan yokluğunda yüzey gerilimi artar. Laplace yasasına göre (P = 2T/r), küçük alveollar daha yüksek basınçla karşılaşır ve çöker (atelektazi). Buzlu cam görünümü, hava bronkogramları tipiktir. Tedavi: Surfaktan replasman tedavisi, CPAP/mekanik ventilasyon. Antenatal kortikosteroid (betametazon) surfaktan sentezini hızlandırır."
+      },
+      {
+        "id": "fizyo_cc_010",
+        "case": "Soru: (Fizyoloji — Solunum) Bir sağlıklı kişide spirometri yapılmaktadır. FVC: 4.8 L, FEV1: 3.9 L ölçülmüştür. Egzersiz testinde VO2max: 45 mL/kg/dk saptanmıştır. Bu kişi yüksek irtifaya (4000 m) çıktığında akut dönemde beklenen fizyolojik değişiklikler nelerdir?",
+        "options": [
+          "A) PaO2↑, PaCO2↑, pH↓, HCO3-↑",
+          "B) PaO2↓, PaCO2↓, pH↑, HCO3- değişmez",
+          "C) PaO2↓, PaCO2↑, pH↓, HCO3-↑",
+          "D) PaO2 değişmez, sadece SaO2 düşer",
+          "E) PaO2↓, PaCO2 değişmez, pH değişmez"
+        ],
+        "correct_answer": "B) PaO2↓, PaCO2↓, pH↑, HCO3- değişmez",
+        "explanation": "Yüksek irtifada PB düşer → PAO2 düşer → PaO2 düşer → hipoksik ventilasyonstimulan → hiperventilasyon → PaCO2 düşer → respiratuar alkaloz (pH↑). Akut dönemde HCO3- henüz değişmez (renal kompansasyon günler alır). Kronik adaptasyon: Böbrek HCO3- atar → pH normalize olur. Ayrıca eritropoetin↑ → eritropoez↑ → polisitemi; 2,3-DPG↑ → Hb O2 affinitesi↓ → O2 daha kolay bırakılır."
+      }
+    ]
+  },
+  {
+    "id": "fizyo-batch1-003",
+    "subject": "Fizyoloji",
+    "chapter": "Böbrek Fizyolojisi",
+    "topic": "GFR, Tübüler Geri Emilim ve Konsantrasyon Mekanizması",
+    "sub_topic": "Klirens, Renin-Anjiyotensin-Aldosteron, Antidiüretik Hormon",
+    "content_summary": "Glomerüler filtrasyon hızı (GFR) böbrek fonksiyonunun en önemli göstergesidir. Tübüler geri emilim ve sekresyon idrar kompozisyonunu belirler. Böbreğin konsantrasyon mekanizması medüller ozmotik gradyan ve ADH ile sağlanır.",
+    "flashcards": [
+      {
+        "id": "fizyo_fc_020",
+        "question": "GFR'nin klinik ölçümünde hangi madde altın standart kabul edilir ve neden?",
+        "answer": "[[İnülin kliransi]] ([[Tamamen filtre edilir, salgılanmaz, geri emilmez → net filtrasyon ölçer]])",
+        "explanation": "İdeal GFR belirteci özellikleri: Serbestçe filtre edilmeli, tübülden ne geri emilmeli ne salgılanmalı, böbrekten başka atılmamalı, toksik olmamalı. İnülin tüm kriterleri karşılar → altın standart. Klinik pratikte kreatinin kliransi kullanılır (pratik, ama tübüler salgılandığı için GFR'yi biraz fazla gösterir). Sistin C: Kreatinin kadar etkilenmez, daha güvenilir.",
+        "difficulty": "Orta",
+        "tags": ["Fizyoloji", "Böbrek", "GFR", "Klirens", "İnülin"],
+        "story_hint": "💡 HİKAYE: 'İnülin = Dürüst tanık — ne alır ne verir, gördüğünü söyler.' Klirens formülü: C = (U × V) / P. İnülin kliransi = GFR. Kreatinin biraz tanık ifadesi bozar (tübülden salgılanır) ama pratikte kullanırız!"
+      },
+      {
+        "id": "fizyo_fc_021",
+        "question": "Glomerüler filtrasyon hızını (GFR) belirleyen Starling kuvvetleri nelerdir?",
+        "answer": "[[GFR = Kf × [(Pgc - Pbs) - (πgc - πbs)]; Kf = filtrasyon katsayısı]]",
+        "explanation": "Filtrasyon kuvvetleri: Glomerüler kapiler hidrostatik basınç (Pgc ~60 mmHg, ↑ filtrasyonu artırır), Bowman kapsülü basıncı (Pbs ~18 mmHg, ↑ filtrasyonu azaltır). Onkotik kuvvetler: Plazma onkotiği (πgc ~32 mmHg, ↑ filtrasyonu azaltır), filtrat onkotiği (πbs ~0, ihmal edilir). Net filtrasyon = 60 - 18 - 32 = ~10 mmHg. Afferent arteriol dilatasyonu → Pgc↑ → GFR↑.",
+        "difficulty": "Zor",
+        "tags": ["Fizyoloji", "Böbrek", "GFR", "Starling Kuvvetleri", "Glomerül"],
+        "story_hint": "💡 HİKAYE: 'Glomerüle giren kuvvetler: İçeriden iten (Pgc=60), dışarıdan baskılayan (Pbs=18), içeride tutan (πgc=32). 60-18-32=10 mmHg net baskı ile süzülür.' Afferent açılırsa Pgc↑ → GFR↑. NSAİİ afferenti daraltır → GFR↓!"
+      },
+      {
+        "id": "fizyo_fc_022",
+        "question": "Proksimal tübülde hangi maddeler ne kadarı geri emilir?",
+        "answer": "[[Na⁺ %67, Su %67, HCO3- %85-90, Glukoz %100, Aminoasitler %100, Fosfat, Ürat]]",
+        "explanation": "Proksimal tübül izozmotik geri emilim yapan en önemli bölümdür. Na⁺ geri emilimi diğer maddeleri sürükler (solvent drag). Glukoz ve aminoasitler Na⁺ kotransportörlerle tamamen geri emilir. HCO3- karbonik anhidraz ile geri emilir (asetazolamid bloke eder). PTH proksimal tübülde fosfat geri emilimini azaltır. Ürik asit proksimal tübülde hem salgılanır hem geri emilir.",
+        "difficulty": "Orta",
+        "tags": ["Fizyoloji", "Böbrek", "Proksimal Tübül", "Geri Emilim"],
+        "story_hint": "💡 HİKAYE: 'Proksimal tübül = VIP VIP lounge — değerli her şey buraya girer, hepsini içine alır.' Glukoz tam alınır, amino asitler tam alınır, bikarbonatın %90'ı alınır. Glukoz idrarsa (glikozüri) ya kan şekeri Tm'yi aştı ya böbrek hasarlı!"
+      },
+      {
+        "id": "fizyo_fc_023",
+        "question": "Henle kulpunun ince inen ve çıkan kolu ile kalın çıkan kolunun geçirgenlik özellikleri nelerdir?",
+        "answer": "[[İnce inen: Suya geçirgen, solütlere geçirgen değil; Kalın çıkan: Suya GEÇİRGEN DEĞİL, Na/K/2Cl kotransporter aktif]]",
+        "explanation": "İnce inen kol: Suya serbestçe geçirgen (ozmosisle su çıkar), aktif taşıma yok, solütler girer. Kalın çıkan kol: Suya geçirgen DEĞİL (önemli!), Na-K-2Cl kotransporter (furosemid hedefi) → Na⁺, K⁺, Cl⁻ aktif taşınır. Bu asimetri medüller hipertonisiteyi oluşturur (karşı akım çoğaltıcı sistem). Furosemid kalın çıkan kolu bloke eder → konsantrasyon bozulur → diürez.",
+        "difficulty": "Zor",
+        "tags": ["Fizyoloji", "Böbrek", "Henle Kulpu", "Furosemid", "Konsantrasyon"],
+        "story_hint": "💡 HİKAYE: 'İnen kol su kaybeder (ozmoz), çıkan kol tuz kaybeder (aktif). Tuz çıkınca medülla tuzlanır, su çekilir. Furosemid çıkış koluna girer, tuzu alamaz, medülla tuzlanmaz, konsantrasyon bozulur!' Furosemid = tuzun düşmanı!"
+      },
+      {
+        "id": "fizyo_fc_024",
+        "question": "ADH (Antidiüretik Hormon / Vazopressin) nerede üretilir ve böbrekteki etki mekanizması nedir?",
+        "answer": "[[Hipotalamus supraoptik ve paraventriküler nükleuslarda üretilir, nörohipofizden salgılanır; Toplayıcı kanalda AQP-2 ekspresyonunu artırır]]",
+        "explanation": "ADH: Hipotalamusta sentez, posterior hipofizden salınım. Uyaranlar: Ozmolalite↑ (ozmoreseptörler), volüm↓ (baroreseptörler, kuvvetli uyaran). Böbrekte V2 reseptörü → cAMP↑ → AQP-2 (Aquaporin-2) toplayıcı kanal apikaline inserte edilir → su geçirgenliği↑ → konsantre idrar. ADH eksikliği = Diabetes insipidus (diyabetes insipidus). SIADH = Uygunsuz ADH salgılanması (hiponatremi).",
+        "difficulty": "Orta",
+        "tags": ["Fizyoloji", "Böbrek", "ADH", "Vazopressin", "AQP-2", "Diabetes Insipidus"],
+        "story_hint": "💡 HİKAYE: 'ADH = Anti-Diüretik = Suyu Durduran Hormon.' Hipotalamus üretir, arka hipofiz salar. V2 reseptörü tutar, cAMP artar, AQP-2 kapı açılır, su geri döner. ADH yoksa kapılar kapalı → dilüe idrar → diabetes insipidus. 10 L idrar/gün = DI!"
+      },
+      {
+        "id": "fizyo_fc_025",
+        "question": "Renin-Anjiyotensin-Aldosteron sistemi (RAAS) hangi durumda aktive olur ve aldosteronun tübüler etkisi nedir?",
+        "answer": "[[Volüm azalması, renal perfüzyon↓, sempatik aktivasyon → Renin↑ → Ang II → Aldosteron; Distal tübül/toplayıcı kanalda Na⁺ geri emilimi↑, K⁺ ve H⁺ atılımı↑]]",
+        "explanation": "RAAS aktivasyonu: Afferent arterioldeki baroreseptörler, makula densa (düşük NaCl), sempatik β1 uyarısı → Renin (JGA'dan). Anjiyotensinogen → Ang I (renin) → Ang II (ACE) → Aldosteron (zona glomerulosa). Aldosteron distal tübül ve toplayıcı kanalda: Epitel Na kanalları (ENaC) ve Na/K-ATPaz sentezini artırır → Na⁺ tutulur, K⁺ ve H⁺ atılır → hipokalemi + metabolik alkaloz + hipertansiyon.",
+        "difficulty": "Zor",
+        "tags": ["Fizyoloji", "Böbrek", "RAAS", "Aldosteron", "Renin", "Anjiyotensin"],
+        "story_hint": "💡 HİKAYE: 'KAN BASINCI DÜŞTÜ → Böbrek panikladı → Renin çıktı → Anjiyotensin II üretildi → Aldosteron uyandı → Na tut, K at, su tut, basınç çıksın.' Aldosteron = 'Na'yı tut, K'yı at' formülü. Konnlar hastalığında fazla aldosteron → hipokalemi + HT!"
+      },
+      {
+        "id": "fizyo_fc_026",
+        "question": "Distal tübülde Na-K-ATPaz ve Na-Cl kotransporterı hangi ilaçların etki yeridir?",
+        "answer": "[[Tiyazid diüretikler: Distal tübül Na-Cl kotransporteri (NCC) bloke eder; Spironolakton: Aldosteron antagonisti (ENaC ve Na/K-ATPaz)]]",
+        "explanation": "Diüretik etki yerleri: Karbonik anhidraz inhibitörleri → Proksimal tübül (HCO3- geri emilimi↓). Furosemid (loop) → Henle kalın çıkan kol (Na-K-2Cl). Tiyazid → Distal tübül (NCC). Spironolakton/Amilorid → Toplayıcı kanal (ENaC/aldosteron). Potasyum etkisi: Loop + tiyazid → hipokalemi; Spironolakton/amilorid → hiperkalemi (K⁺ koruyucu).",
+        "difficulty": "Zor",
+        "tags": ["Fizyoloji", "Böbrek", "Diüretikler", "Tiyazid", "Spironolakton", "Furosemid"],
+        "story_hint": "💡 HİKAYE: 'Diüretik fabrikası — katları var: 1. kat Proksimal (asetazolamid), 2. kat Henle (furosemid), 3. kat Distal (tiyazid), 4. kat Toplayıcı (spironolakton).' Her kat yukarıya atılan Na'yı tutamaz → daha fazla diürez. K tutucular en son katta nöbetçi!"
+      },
+      {
+        "id": "fizyo_fc_027",
+        "question": "Diabetes insipidus (DI) türleri ve ayırt edici özellikleri nelerdir?",
+        "answer": "[[Santral DI: ADH eksikliği (hipofiz/hipotalamus hasarı); Nefrojenik DI: ADH'ye böbrek yanıtsızlığı (V2R mutasyonu, Li toksisitesi); Su kısıtlaması testinde ayrım yapılır]]",
+        "explanation": "Her ikisinde: Poliüri (>3 L/gün), polidipsi, dilüe idrar (özgül ağırlık <1.005, idrar ozmolalitesi <300 mOsm/kg), hipernatremi eğilimi. Ayırt edici test: Desmopressin (DDAVP) verilince → Santral DI'da idrar konsantre olur (ADH yoktu, dışarıdan verildi). Nefrojenik DI'da yanıt yok (böbrek ADH'ye duyarsız). Tedavi: Santral = desmopressin; Nefrojenik = tiyazid + düşük Na diyeti, indometasin.",
+        "difficulty": "Orta",
+        "tags": ["Fizyoloji", "Böbrek", "Diabetes Insipidus", "ADH", "Desmopressin"],
+        "story_hint": "💡 HİKAYE: 'Santral DI = fabrika kapandı (ADH üretilmiyor); Nefrojenik DI = fabrika çalışıyor ama müşteri kabul etmiyor (böbrek ADH görmüyor).' Desmopressin test: Santral kapıyı açar, nefrojenik kapıyı açmaz. Li toksik olunca böbrek duyarsızlaşır!"
+      },
+      {
+        "id": "fizyo_fc_028",
+        "question": "Böbreğin asit-baz dengesini sağlamasında hangi mekanizmalar görev yapar?",
+        "answer": "[[HCO3- geri emilimi (proksimal tübül), H⁺ salgılanması (distal tübül/toplayıcı kanal), NH4⁺ üretimi ve atılımı, titratable asit atılımı]]",
+        "explanation": "1) HCO3- geri emilimi: Proksimal tübülde %85-90 (karbonik anhidraz). 2) H⁺ salgılanması: Distal tübül ve toplayıcı kanal H-ATPaz ve H/K-ATPaz ile. 3) NH4⁺ üretimi: Glutaminden amonyak üretilir, NH4⁺ olarak atılır (kronik asidozda artar, kronik böbrek hastalığında azalır). 4) Titratable asit (fosfat, kreatin). Böbrek günde ~70 mEq H⁺ atar. Böbrek yetmezliği → metabolik asidoz (anyon açığı artabilir).",
+        "difficulty": "Zor",
+        "tags": ["Fizyoloji", "Böbrek", "Asit-Baz", "Amonyak", "HCO3 Geri Emilimi"],
+        "story_hint": "💡 HİKAYE: 'Böbrek asit-baz temizlikçisi — 3 süpürgesi var: 1. HCO3 toplar, 2. H⁺ atar, 3. Amonyak üretir H⁺'ü paketler.' Kroniğe gidince böbrek süpürgeleri yorulur → metabolik asidoz. NH4⁺ atılımı azlığı = en önemli gösterge!"
+      }
+    ],
+    "tus_spots": [
+      "İnülin kliransi = GFR altın standardı (tamamen filtre, salgılanmaz, geri emilmez)",
+      "PAH (para-aminohipürat) kliransi = Etkin renal plazma akımı (ERPF) altın standardı",
+      "GFR = Kf × net filtrasyon basıncı; Afferent dilatasyon → GFR↑; Efferent dilatasyon → GFR↓",
+      "Proksimal tübül: Glukoz ve aminoasitler %100, HCO3- %85-90, Na+ %67, Su %67 geri emilir",
+      "Henle kalın çıkan kol: Suya GEÇİRGEN DEĞİL; Na-K-2Cl kotransporter (furosemid hedefi)",
+      "ADH: Hipotalamusta sentez, arka hipofizden salınım → V2R → cAMP↑ → AQP-2 → su geri emilimi",
+      "Aldosteron: Distal tübül/toplayıcı kanal → ENaC ve Na/K-ATPaz↑ → Na tutulur, K atılır",
+      "Santral DI: Desmopressin'e yanıt var; Nefrojenik DI: Yanıt yok (Li, demeklosiklin neden)",
+      "Tiyazid paradoksal etki: Nefrojenik DI tedavisinde kullanılır (proksimal Na tutumu → daha az suya ulaşır toplayıcı kanal)",
+      "Kronik böbrek hastalığında: NH4⁺ atılımı↓ → metabolik asidoz (non-anyon açığı, sonra anyon açığı)"
+    ],
+    "clinical_cases": [
+      {
+        "id": "fizyo_cc_011",
+        "case": "Soru: (Fizyoloji — Böbrek) 45 yaşında kadın hasta aşırı su içme (polidipsi) ve çok miktarda idrar yapma (poliüri, >10 L/gün) ile başvuruyor. İdrar ozmolalitesi: 60 mOsm/kg, serum ozmolalitesi: 295 mOsm/kg. Su kısıtlaması testinde idrar ozmolalitesi değişmiyor; desmopressin uygulamasında da yanıt alınamıyor. Tanı nedir?",
+        "options": [
+          "A) Santral diabetes insipidus",
+          "B) Nefrojenik diabetes insipidus",
+          "C) Primer polidipsi",
+          "D) SIADH",
+          "E) Ozmotik diürez"
+        ],
+        "correct_answer": "B) Nefrojenik diabetes insipidus",
+        "explanation": "Santral DI'da su kısıtlaması testi sonrası desmopressin verilince idrar konsantre olur (ADH yoktu, dışarıdan verildi). Nefrojenik DI'da böbrek ADH'ye yanıt vermez → desmopressin etkisiz. Primer polidipside su kısıtlamasıyla idrar ozmolalitesi yükselir (ADH sistemi normal, böbrek çalışıyor). Dilüe serum (hiponatremi) beklenmez bu hastada çünkü böbrek su tutamıyor → hipernatremi eğilimi."
+      },
+      {
+        "id": "fizyo_cc_012",
+        "case": "Soru: (Fizyoloji — Böbrek) 60 yaşında erkek hasta hipertansiyon ve hipokalemi nedeniyle araştırılıyor. Serum Na: 148 mEq/L, K: 2.8 mEq/L, bikarbonat: 30 mEq/L, idrar aldosteron düzeyi yüksek, plazma renin aktivitesi düşük saptanıyor. Tanıya götüren patofizyoloji nedir?",
+        "options": [
+          "A) Renin üreten tümör → sekonder hiperaldosteronizm",
+          "B) Adrenal adenom → primer hiperaldosteronizm",
+          "C) Renovasküler HT → sekonder aldosteronizm",
+          "D) Cushing sendromu → kortizol fazlalığı",
+          "E) Bartter sendromu → Na-K-2Cl bozukluğu"
+        ],
+        "correct_answer": "B) Adrenal adenom → primer hiperaldosteronizm",
+        "explanation": "Primer hiperaldosteronizm (Conn): Adrenal kaynaklı aldosteron fazlalığı. Aldosteron distal tübülde Na⁺ tutar (hipernatremi/HT), K⁺ ve H⁺ atar (hipokalemi + metabolik alkaloz). Renin yüksek aldosteron tarafından baskılanır (düşük PRA = primer). Sekonder hiperaldosteronizmde (renal arter stenozu, renin üreten tümör) renin yüksektir. Tedavi: Spironolakton (aldosteron antagonisti) veya cerrahi."
+      },
+      {
+        "id": "fizyo_cc_013",
+        "case": "Soru: (Fizyoloji — Böbrek) Bir hastada NSAID kullanımı sonrası akut böbrek yetmezliği gelişiyor. GFR'nin düşmesine yol açan fizyolojik mekanizma aşağıdakilerden hangisidir?",
+        "options": [
+          "A) Proksimal tübülde Na geri emiliminin artması",
+          "B) Afferent arterioldeki prostaglandin bağımlı vazodilatasyonun inhibisyonu",
+          "C) ADH salgılanmasının artması ile su tutulumu",
+          "D") Toplayıcı kanalda aldosteron duyarlılığının azalması",
+          "E) Renin salgılanmasının artması ile anjiyotensin II oluşumu"
+        ],
+        "correct_answer": "B) Afferent arterioldeki prostaglandin bağımlı vazodilatasyonun inhibisyonu",
+        "explanation": "Böbrek perfüzyonunun tehlikeli olduğu durumlarda (volüm azalması, KY, siroz) afferent arteriol prostaglandinlerle (PGE2, PGI2) dilate tutulur → GFR korunur. NSAİİler siklooksijenaz (COX) inhibisyonu ile prostoglandin sentezini bloke eder → afferent arteriol büzülür → Pgc↓ → GFR↓ → akut prerenal AKI. Bu nedenle NSAİİ; KKY, siroz, hipovolemik hastalarda kontrendikedir."
+      },
+      {
+        "id": "fizyo_cc_014",
+        "case": "Soru: (Fizyoloji — Böbrek) 25 yaşında kadın hasta 3 gündür bulantı-kusma ile başvuruyor. Kan gazı: pH: 7.50, PaCO2: 48 mmHg, HCO3-: 36 mEq/L, Na: 138, K: 3.0, Cl: 88 mEq/L. Bu tabloda primer bozukluk ve kompansasyon mekanizması nedir?",
+        "options": [
+          "A) Respiratuar asidoz; renal HCO3- tutulumu ile kompanse",
+          "B) Metabolik alkaloz; hipoventilasyon ile respiratuar kompansasyon",
+          "C) Miks metabolik ve respiratuar alkaloz",
+          "D) Respiratuar alkaloz; renal HCO3- atılımı ile kompanse",
+          "E) Metabolik asidoz; hiperventilasyon ile respiratuar kompansasyon"
+        ],
+        "correct_answer": "B) Metabolik alkaloz; hipoventilasyon ile respiratuar kompansasyon",
+        "explanation": "pH 7.50 → Alkaloz. HCO3- 36 mEq/L → Yüksek → Metabolik alkaloz primer. PaCO2 48 mmHg → Yüksek → Solunum kompansasyonu (hipoventilasyon, CO2 tutulumu). Kusma: HCl kaybı → H⁺ kaybı → HCO3- birikimi + hipokloremi. Beklenen kompansasyon: PaCO2 = 40 + 0.7 × (36-24) = 40 + 8.4 = 48.4 mmHg ✓ (tam kompanse). Anyon açığı = 138 - (88 + 36) = 14 mEq/L → normal (hipokloremik metabolik alkaloz)."
+      },
+      {
+        "id": "fizyo_cc_015",
+        "case": "Soru: (Fizyoloji — Böbrek) Bir hastada kreatinin kliransi 30 mL/dk, serum kreatinin: 2.8 mg/dL, BUN: 45 mg/dL, idrar ozmolalitesi: 290 mOsm/kg, fraksiyonel Na atılımı (FENa): %2.5 saptanıyor. Bu bulgular hangi akut böbrek hasarı (AKI) kategorisiyle en uyumludur?",
+        "options": [
+          "A) Prerenal AKI",
+          "B) İntrarenal AKI — akut tübüler nekroz",
+          "C) Postrenal AKI — obstrüktif üropati",
+          "D) Glomerülonefrit — nefritik sendrom",
+          "E) Nefrotik sendrom — hipoalbüminemi"
+        ],
+        "correct_answer": "B) İntrarenal AKI — akut tübüler nekroz",
+        "explanation": "FENa > %2 (burada %2.5) + idrarda dilüsyon (ozmolalite 290 mOsm/kg ≈ izoozmotik): Tübüler fonksiyon bozulmuş. Tübüller Na tutamıyor, idraru konsantre edemiyor → ATN (akut tübüler nekroz). Prerenal AKI'da: FENa < %1, idrar ozmolalitesi > 500 mOsm/kg (tübüller çalışıyor ama glomerül yetersiz perfüze). Postrenal AKI'da obstrüksiyon bulguları ve US ile tanı. Glomerülonefrit hematüri+proteinüri ile seyreder."
+      }
+    ]
+  }
+]

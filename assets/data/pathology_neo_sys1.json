@@ -10,12 +10,14 @@
       {
         "id": "fc-patho-neo-200",
         "question": "Karsinomların vücutta en sık yayılım yolu hangisidir?",
-        "answer": "Lenfatik yol (İstisna: Böbrek ve Karaciğer karsinomları hematojen yayılabilir)."
+        "answer": "Lenfatik yol (İstisna: Böbrek ve Karaciğer karsinomları hematojen yayılabilir).",
+        "story_hint": "💡 HİKAYE: Karsinomlar lenfatik sistemi 'otobüs' olarak kullanır — lenfatik damarlarla uzak lenf nodlarına yayılır. Ama böbrek ve karaciğer karsinomları isyankardır: hematojen yolu (kan otoyolunu) tercih ederler!"
       },
       {
         "id": "fc-patho-neo-201",
         "question": "Sarkomların vücutta en sık yayılım yolu hangisidir?",
-        "answer": "Hematojen yol."
+        "answer": "Hematojen yol.",
+        "story_hint": "💡 HİKAYE: Sarkomlar mezenkimal kökenli tümörlerdir ve kanı severler — hematojen yolla akciğer, karaciğer ve kemiğe metastaz yapar. Lenfatik yol yerine 'kırmızı otoyol'u tercih eden agresif yolcular!"
       }
     ],
     "tus_spots": [
@@ -34,12 +36,14 @@
       {
         "id": "fc-patho-sys1-210",
         "question": "MI sonrası 1-3. günlerde gelişen perikardite ne ad verilir?",
-        "answer": "Fibrinöz perikardit."
+        "answer": "Fibrinöz perikardit.",
+        "story_hint": "💡 HİKAYE: MI sonrası 1-3. günde nekrotik miyokard perikarda yakın — inflamasyon perikarda sıçrar ve fibrin birikir. Fibrinöz perikardit = 'sandviç kağıdı' gibi sürtünme sesi (friction rub). Dressler sendromu ise haftalar sonra otoimmün perikardit!"
       },
       {
         "id": "fc-patho-sys1-211",
         "question": "Akut romatizmal ateşte miyokardda görülen patognomonik granülom yapısına ne denir?",
-        "answer": "Aschoff cisimciği."
+        "answer": "Aschoff cisimciği.",
+        "story_hint": "💡 HİKAYE: Romatizmal ateşte streptokok kalbi hedef alır — miyokardda Aschoff cisimcikleri oluşur. İçlerinde tırtıl gibi kıvrılan Anitschkow hücreleri var (caterpillar cells). Bu patognomonik granülom, romatizmal karditin imzasıdır!"
       }
     ],
     "tus_spots": [
@@ -58,12 +62,14 @@
       {
         "id": "fc-patho-sys1-220",
         "question": "Akciğerin en sık görülen primer malign tümörü hangisidir?",
-        "answer": "Adenokarsinom (Özellikle kadınlarda ve sigara içmeyenlerde de en sık)."
+        "answer": "Adenokarsinom (Özellikle kadınlarda ve sigara içmeyenlerde de en sık).",
+        "story_hint": "💡 HİKAYE: Adenokarsinom akciğerin en sık primer malignitesidir — kadınlarda ve sigara içmeyenlerde bile lider! Periferik yerleşimli, sıklıkla mukus salgılar. EGFR ve ALK mutasyonları hedefe yönelik tedavinin kapısını açar."
       },
       {
         "id": "fc-patho-sys1-221",
         "question": "Hangi akciğer tümörü santral yerleşimli olup kemoterapiye en iyi yanıtı verir?",
-        "answer": "Küçük hücreli karsinom (Small Cell Carcinoma)."
+        "answer": "Küçük hücreli karsinom (Small Cell Carcinoma).",
+        "story_hint": "💡 HİKAYE: Küçük hücreli karsinom santral yerleşimli bir nöroendokrin tümördür — ektopik hormon fabrikası (ACTH, ADH). Cerrahiye yanıtsız ama kemoterapiye en duyarlı akciğer kanseri! 'Küçük ama tehlikeli, ilaca boyun eğen' tümör."
       }
     ],
     "tus_spots": [

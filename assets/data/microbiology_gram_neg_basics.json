@@ -10,12 +10,14 @@
       {
         "id": "fc-gn-100",
         "question": "Neisseria türlerinin temel morfolojik özelliği nedir?",
-        "answer": "Gram negatif, kahve çekirdeği şeklinde diplokoklardır."
+        "answer": "Gram negatif, kahve çekirdeği şeklinde diplokoklardır.",
+        "story_hint": "💡 HİKAYE: Neisseria türleri, kahve çekirdeği şeklinde yan yana duran ikizlerdir (diplokok). Gram negatif pembe elbise giyerler — kafede kahve çekirdeği gibi çifter çifter oturur."
       },
       {
         "id": "fc-gn-101",
         "question": "Neisseria meningitidis (Meningokok) hangi şekeri fermente eder?",
-        "answer": "Glikoz ve Maltoz (M-altoz = M-eningokok)."
+        "answer": "Glikoz ve Maltoz (M-altoz = M-eningokok).",
+        "story_hint": "💡 HİKAYE: Meningokok, Maltoz ve Glikoz sofrasına oturur. 'M-altoz = M-eningokok' formülüyle hatırla — gonokok ise sadece glikoz yer, maltoza dokunmaz."
       }
     ],
     "tus_spots": [
@@ -25,9 +27,16 @@
     "clinical_cases": [
       {
         "case": "20 yaşında üniversite öğrencisi, ani başlayan ateş, baş ağrısı ve vücutta peteşiyal döküntülerle acile başvuruyor. Ense sertliği saptanıyor.",
-        "options": ["Meningokokal Menenjit", "Pnömokokal Menenjit", "Viral Menenjit", "Listeriyoz"],
-        "correct_answer": "Meningokokal Menenjit",
-        "explanation": "Peteşiyal döküntü ve hızlı seyir Neisseria meningitidis için tipiktir."
+        "options": [
+          "A) Meningokokal Menenjit",
+          "B) Pnömokokal Menenjit",
+          "C) Viral Menenjit",
+          "D) Listeriyoz",
+          "E) Waterhouse-Friderichsen Sendromu"
+        ],
+        "correct_answer": "A) Meningokokal Menenjit",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Ani başlayan ateş, ense sertliği ve özellikle peteşiyal/purpurik döküntüler (diffüz damar hasarı) Neisseria meningitidis (meningokok) sepsisi ve menenjiti için patognomoniktir. \n\n🎓 HOCA ÖZETİ:\n- Virülans: Polisakkarit kapsül (fagositozu engeller) ve LOS (LPS benzeri endotoksin - şoktan sorumlu).\n- Laboratuvar: Gram negatif, kahve çekirdeği şeklinde diplokoklar.\n- Bulaş: Nazofaringeal taşıyıcılardan damlacık yoluyla.\n- Pnömokokal Menenjit (S. pneumoniae) = yaşlılarda ve splenektomililde daha sık.\n- Komplikasyon: Sürrenal yetmezlik ile giden Waterhouse-Friderichsen sendromuna dikkat!",
+        "id": "cc-micro-gneg-basic-001-001"
       }
     ]
   },
@@ -42,12 +51,14 @@
       {
         "id": "fc-gn-110",
         "question": "E. coli' nın en önemli idrar yolu enfeksiyonu virülans faktörü nedir?",
-        "answer": "P pili (Pyelonefrit ile ilişkili)."
+        "answer": "P pili (Pyelonefrit ile ilişkili).",
+        "story_hint": "💡 HİKAYE: E. coli'nin P pili, böbreğe giden asansör düğmesidir — P harfi Pyelonefrit'i hatırlatır. Bu pili olan E. coli mesanede kalmaz, yukarıya böbreğe çıkar."
       },
       {
         "id": "fc-gn-111",
         "question": "Hangi E. coli türü Shiga-like toksin (Verotoksin) üretir?",
-        "answer": "EHEC (STEC), özellikle O157:H7 suşu."
+        "answer": "EHEC (STEC), özellikle O157:H7 suşu.",
+        "story_hint": "💡 HİKAYE: EHEC O157:H7, Shiga benzeri toksin silahıyla kanlı ishal yapar. Toksin böbrek damarlarını da vurur ve HÜS (Hemolitik Üremik Sendrom) başlar — çocuklarda en tehlikeli düşman."
       }
     ],
     "tus_spots": [
@@ -57,9 +68,16 @@
     "clinical_cases": [
       {
         "case": "7 yaşında bir çocuk, kanlı ishal sonrası halsizlik ve idrar miktarında azalma ile getiriliyor. Laboratuvarda anemi ve trombositopeni saptanıyor.",
-        "options": ["HÜS (EHEC ilişkili)", "TTP", "DİC", "İTP"],
-        "correct_answer": "HÜS (EHEC ilişkili)",
-        "explanation": "Kanlı ishal sonrası gelişen anemi ve trombositopeni HÜS'ü düşündürür."
+        "options": [
+          "A) HÜS (Hemolitik Üremik Sendrom)",
+          "B) TTP (Trombotik Trombositopenik Purpura)",
+          "C) DİC (Disseminize İntravasküler Koagülasyon)",
+          "D) İTP (İmmün Trombositopenik Purpura)",
+          "E) Henoch-Schönlein Purpurası"
+        ],
+        "correct_answer": "A) HÜS (Hemolitik Üremik Sendrom)",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Kanlı ishal (hemorajik kolit) sonrası gelişen 'HÜS Triadı'nı unutma: 1) Mikroanjiyopatik hemolitik anemi (Schistositler), 2) Trombositopeni, 3) Akut böbrek yetmezliği.\n\n🎓 HOCA ÖZETİ:\n- Etken: E. coli O157:H7 (EHEC) veya Shigella dysenteriae tip 1.\n- Mekanizma: Shiga (veya Shiga-like) toksini damar endoteline hasar verir, mikrotrombüsler oluşur.\n- EHEC = Enterohemorajik E. coli ilişkilidir.\n- Uyarı: Çocuklarda en sık akut böbrek yetmezliği nedenlerinden biridir. Antibiyotik kullanımı toksin salınımını artırabileceği için risklidir.",
+        "id": "cc-micro-gneg-basic-002-001"
       }
     ]
   }

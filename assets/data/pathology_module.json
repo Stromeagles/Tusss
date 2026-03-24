@@ -12,28 +12,48 @@
         "question": "Geri dönüşümlü hücre hasarında ilk ve en önemli ultrastrüktürel bulgu nedir?",
         "answer": "Mitokondri şişmesi (mitokondriyal kondenzasyon) — oksidatif fosforilasyonun bozulmasına bağlı ATP azalması sonucu gelişir.",
         "difficulty": "medium",
-        "tags": ["Mitokondri", "ATP", "Geri Dönüşümlü Hasar"]
+        "tags": [
+          "Mitokondri",
+          "ATP",
+          "Geri Dönüşümlü Hasar"
+        ],
+        "story_hint": "💡 HİKAYE: Mitokondri hücrenin enerji santrali — hasar gelince ilk o şişer (kondenzasyon). ATP üretimi düşer ama membran hâlâ sağlam. Erken uyarı sistemi gibi: 'Dikkat, enerji kesiliyor!' diye alarm veriyor."
       },
       {
         "id": "fc-patho-002",
         "question": "Hücre ölümünün geri dönüşümsüz hale geldiğini gösteren en kritik biyokimyasal bulgu nedir?",
         "answer": "Kalsiyumun mitokondriyal matrikse girişi (kalsiyum birikimi) ve membran fosfolipaz aktivasyonu — bu noktadan sonra hücre ölümü kaçınılmazdır.",
         "difficulty": "hard",
-        "tags": ["Kalsiyum", "Mitokondri", "Geri Dönüşümsüz"]
+        "tags": [
+          "Kalsiyum",
+          "Mitokondri",
+          "Geri Dönüşümsüz"
+        ],
+        "story_hint": "💡 HİKAYE: Kalsiyum mitokondriye girdi mi artık geri dönüş yok — kapılar kapandı! Fosfolipazlar aktive olup membranı eritmeye başlar. Bu 'geri dönüşsüzlük noktası' bir uçurumun kenarıdır: bir adım daha atılırsa hücre düşer."
       },
       {
         "id": "fc-patho-003",
         "question": "Piknoz, karyoreksis ve karyolizis terimlerini tanımla.",
         "answer": "Piknoz: nükleer kondenzasyon (küçülme+koyulaşma). Karyoreksis: nükleer parçalanma. Karyolizis: nükleusun tamamen erimesi (DNaz aktivasyonu ile).",
         "difficulty": "medium",
-        "tags": ["Nükleus", "Nekroz", "Morfoloji"]
+        "tags": [
+          "Nükleus",
+          "Nekroz",
+          "Morfoloji"
+        ],
+        "story_hint": "💡 HİKAYE: Piknoz = çekirdek koyulaşıp küçüldü (yumruk gibi sıkıştı). Karyoreksis = çekirdek parçalara ayrıldı (cam kırıldı). Karyolizis = çekirdek eridi (buz eridi). P-K-L sıralaması: önce sıkış, sonra kırıl, en son eri!"
       },
       {
         "id": "fc-patho-004",
         "question": "İskemik hücre hasarında ATP azalmasının neden olduğu ilk değişiklik nedir?",
         "answer": "Na⁺-K⁺ ATPaz pompasının durması → Na⁺ ve su hücre içine girer → akut hücre şişmesi (hidropik dejenerasyon).",
         "difficulty": "medium",
-        "tags": ["İskemi", "Na-K ATPaz", "Hidropik Dejenerasyon"]
+        "tags": [
+          "İskemi",
+          "Na-K ATPaz",
+          "Hidropik Dejenerasyon"
+        ],
+        "story_hint": "💡 HİKAYE: İskemide ATP düşünce Na/K pompası durur — hücre içine Na ve su dolar, hücre balon gibi şişer (hidropik dejenerasyon). Sanki evin su boruları patlamış, su basıyor ama pompalar çalışmıyor!"
       }
     ],
     "tus_spots": [
@@ -45,9 +65,17 @@
     "clinical_cases": [
       {
         "case": "Miyokard enfarktüsü geçiren bir hastada 24 saat sonra etkilenen alanda hangi nükleer değişiklik beklenir?",
-        "options": ["Piknoz", "Karyoreksis", "Karyolizis", "Hepsi görülebilir"],
+        "options": [
+          "Piknoz",
+          "Karyoreksis",
+          "Karyolizis",
+          "Apoptotik büzüşme",
+          "Hidropik dejenerasyon"
+        ],
         "correct_answer": "Karyolizis",
-        "explanation": "24 saatlik enfarktüste koagülatif nekroz görülür; nükleer değişiklikler piknoz → karyoreksis → karyolizis şeklinde sıralı gelişir; 24. saatte karyolizis hakimdir."
+        "explanation": "24 saatlik enfarktüste koagülatif nekroz görülür; nükleer değişiklikler piknoz → karyoreksis → karyolizis şeklinde sıralı gelişir; 24. saatte karyolizis hakimdir.",
+        "story_hint": "💡 HİKAYE: MI'ın 24. saatinde nükleer değişiklikler sıralı gelişir: piknoz → karyoreksis → karyolizis. 24. saatte karyolizis hakimdir — DNaz çekirdeği tamamen eritmiştir. Kronometrenin son tıkı!",
+        "id": "cc-path-mod-001-001"
       }
     ]
   },
@@ -64,28 +92,48 @@
         "question": "Beyin iskemisinde koagülatif değil likefikasyon nekrozu gelişmesinin nedeni nedir?",
         "answer": "Beyinde lipid içeriği yüksektir ve güçlü lizozomal enzimler mevcuttur; fosfolipazlar membranları hızla parçalar → sıvılaşma (likefikasyon) baskın gelir.",
         "difficulty": "hard",
-        "tags": ["Beyin", "Likefikasyon", "Lipid"]
+        "tags": [
+          "Beyin",
+          "Likefikasyon",
+          "Lipid"
+        ],
+        "story_hint": "💡 HİKAYE: Beyin yağ deposu gibidir — lipidce zengin. İskemide güçlü lizozomal enzimler (fosfolipazlar) devreye girer ve her şeyi eritir (likefikasyon). Kalp ve böbrek ise protein ağırlıklı olduğu için katılaşır (koagülatif). Beyin = sıvılaşma, kalp = katılaşma!"
       },
       {
         "id": "fc-patho-011",
         "question": "Kazeöz nekroz hangi organizmada karakteristiktir ve histolojik çevresinde ne görülür?",
         "answer": "Mycobacterium tuberculosis karakteristiği. Histolojik çevresinde Langhans tipi dev hücreler içeren granülomatöz inflamasyon görülür.",
         "difficulty": "medium",
-        "tags": ["Tüberküloz", "Granülom", "Kazeöz"]
+        "tags": [
+          "Tüberküloz",
+          "Granülom",
+          "Kazeöz"
+        ],
+        "story_hint": "💡 HİKAYE: Tüberküloz basili makrofajları mağlup edemez ama makrofajlar da basili öldüremez — savaş alanı peynir kıvamında (kazeöz) nekroza dönüşür. Etrafında Langhans dev hücreleri nöbet tutar: granülom = kalenin kuşatması!"
       },
       {
         "id": "fc-patho-012",
         "question": "Yağ nekrozu en sık hangi organda ve hangi mekanizma ile gelişir?",
         "answer": "Pankreas çevresindeki yağ dokusunda — pankreatik lipazların aktivasyonuyla serbest yağ asitleri kalsiyum ile sabunlaşır (saponifikasyon → kireçlenme).",
         "difficulty": "medium",
-        "tags": ["Yağ Nekrozu", "Pankreas", "Saponifikasyon"]
+        "tags": [
+          "Yağ Nekrozu",
+          "Pankreas",
+          "Saponifikasyon"
+        ],
+        "story_hint": "💡 HİKAYE: Pankreatit patladığında lipaz serbest kalır, etraftaki yağı parçalar. Serbest yağ asitleri kalsiyumla birleşip 'sabun' oluşturur (saponifikasyon) — tebeşir beyazı lekeler! Pankreas çevresinin beyaz boyası."
       },
       {
         "id": "fc-patho-013",
         "question": "Gangrenöz nekroz nedir ve wet-dry ayrımı nasıl yapılır?",
         "answer": "Kuru gangren: koagülatif nekroz baskın, bakteri yoktur. Islak gangren: likefikasyon + bakteriyel süperenfeksiyon; daha tehlikeli ve hızlı ilerler.",
         "difficulty": "medium",
-        "tags": ["Gangren", "İskemi", "Enfeksiyon"]
+        "tags": [
+          "Gangren",
+          "İskemi",
+          "Enfeksiyon"
+        ],
+        "story_hint": "💡 HİKAYE: Kuru gangren = arterler tıkalı ama bakteri yok, doku kurumuş mısır gibi (koagülatif). Islak gangren = bakteriler gelmiş, doku çürümüş, kokulu, tehlikeli (likefikasyon). Kuru = sessiz ölüm, ıslak = gürültülü enfeksiyon!"
       }
     ],
     "tus_spots": [
@@ -101,10 +149,13 @@
           "Koagülatif nekroz",
           "Yağ nekrozu ile saponifikasyon",
           "Kazeöz nekroz",
-          "Likefikasyon nekrozu"
+          "Likefikasyon nekrozu",
+          "Fibrinoid nekroz"
         ],
         "correct_answer": "Yağ nekrozu ile saponifikasyon",
-        "explanation": "Pankreatik lipazlar peripankreatik yağı parçalar; serbest yağ asitleri kalsiyumla sabunlaşır (saponifikasyon). Bu kalsiyum tuzları görüntülemede radyoopak görünür."
+        "explanation": "Pankreatik lipazlar peripankreatik yağı parçalar; serbest yağ asitleri kalsiyumla sabunlaşır (saponifikasyon). Bu kalsiyum tuzları görüntülemede radyoopak görünür.",
+        "story_hint": "💡 HİKAYE: Pankreas etrafında beyaz kireçlenme = lipazın sabunlaşma eseri! Serbest yağ asitleri kalsiyumla birleşip saponifikasyon yapar. BT'de radyoopak görünüm = yağ nekrozunun röntgen imzası.",
+        "id": "cc-path-mod-002-001"
       }
     ]
   },
@@ -121,21 +172,36 @@
         "question": "Apoptozun ekstrinsik (reseptör) yolağında hangi reseptör ve ligand çifti merkezi rol oynar?",
         "answer": "Fas (CD95) – FasL çifti. FasL bağlanması → FADD adaptör → kaspaz-8 aktivasyonu → efektör kaspazlar (3, 6, 7).",
         "difficulty": "hard",
-        "tags": ["Apoptoz", "Fas", "Kaspaz"]
+        "tags": [
+          "Apoptoz",
+          "Fas",
+          "Kaspaz"
+        ],
+        "story_hint": "💡 HİKAYE: Fas ligandı, ölüm reseptörüne (Fas/CD95) bağlanır — kapıyı çalar ve 'öl!' der. FADD adaptör kaspaz-8'i uyandırır, o da kaspaz-3 cellat ordusunu salar. Ekstrinsik yolak = dışarıdan gelen ölüm emri!"
       },
       {
         "id": "fc-patho-021",
         "question": "Bcl-2 proteinin apoptozdaki rolü nedir?",
         "answer": "Bcl-2 anti-apoptotiktir; mitokondriden sitokrom-c salınımını engeller. Foliküler lenfomada t(14;18) translokasyonu ile Bcl-2 aşırı eksprese olur → apoptoz baskılanır.",
         "difficulty": "hard",
-        "tags": ["Bcl-2", "Mitokondri", "Lenfoma"]
+        "tags": [
+          "Bcl-2",
+          "Mitokondri",
+          "Lenfoma"
+        ],
+        "story_hint": "💡 HİKAYE: Bcl-2 mitokondrinin kapı bekçisidir — sitokrom-c'yi içeride tutar, apoptozu engeller. Foliküler lenfomada t(14;18) ile Bcl-2 aşırı üretilir → hücreler ölmeyi reddeder → lenfoma gelişir. Bekçi çok güçlenince suçlular kaçamıyor!"
       },
       {
         "id": "fc-patho-022",
         "question": "Apoptoz ile nekroz arasındaki dört temel fark nelerdir?",
         "answer": "1) Apoptoz enerji bağımlı, nekroz değil. 2) Apoptoz inflamasyonsuz, nekroz inflamasyonlu. 3) Apoptozda hücre büzüşür, nekrozda şişer. 4) Apoptozda DNA 180 bp katlarda kesilir (merdiven paterni), nekrozda rastgele.",
         "difficulty": "medium",
-        "tags": ["Apoptoz", "Nekroz", "Karşılaştırma"]
+        "tags": [
+          "Apoptoz",
+          "Nekroz",
+          "Karşılaştırma"
+        ],
+        "story_hint": "💡 HİKAYE: Apoptoz = sessiz intihar (enerji gerekli, inflamasyon yok, hücre büzüşür, DNA merdiven gibi kesilir). Nekroz = gürültülü kaza (enerji gereksiz, inflamasyon var, hücre şişer, DNA rastgele parçalanır). Biri planlı, diğeri kaotik!"
       }
     ],
     "tus_spots": [
@@ -151,10 +217,13 @@
           "Koagülatif nekroz",
           "Apoptoz — kaspaz aracılı programlı ölüm",
           "Likefikasyon nekrozu",
-          "Otofaji"
+          "Otofaji",
+          "Nekroptoz (programlı nekroz)"
         ],
         "correct_answer": "Apoptoz — kaspaz aracılı programlı ölüm",
-        "explanation": "Apoptotik cisimcikler, membranı bütün kalmış, organel içeren hücre fragmanlarıdır. Fagositler tarafından temizlenirler. İnflamasyon oluşmaması apoptozun temel özelliğidir; nekrozdan bu şekilde ayrılır."
+        "explanation": "Apoptotik cisimcikler, membranı bütün kalmış, organel içeren hücre fragmanlarıdır. Fagositler tarafından temizlenirler. İnflamasyon oluşmaması apoptozun temel özelliğidir; nekrozdan bu şekilde ayrılır.",
+        "story_hint": "💡 HİKAYE: Apoptotik cisimcikler = membranı bütün, organ içeren minik paketler. Fagositler bunları sessizce toplar — inflamasyon YOK! Nekrozda ise hücre patlar, içerik dışarı saçılır, inflamasyon kaçınılmaz.",
+        "id": "cc-path-mod-003-001"
       }
     ]
   },
@@ -171,21 +240,37 @@
         "question": "Nötrofil yuvarlanmasında görev yapan başlıca adhezyon molekülleri nelerdir?",
         "answer": "P-selektin (trombosit/endotel — hızla salınan, Weibel-Palade cisimciğinden) ve E-selektin (endotel — IL-1/TNF uyarısıyla 4-6 saatte eksprese olur). Her ikisi nötrofil L-selektiniyle bağlanır.",
         "difficulty": "hard",
-        "tags": ["Selektin", "Nötrofil", "Adhezyon"]
+        "tags": [
+          "Selektin",
+          "Nötrofil",
+          "Adhezyon"
+        ],
+        "story_hint": "💡 HİKAYE: P-selektin acil çağrı butonu — dakikalar içinde Weibel-Palade cisimciğinden fırlar. E-selektin ise 4-6 saat sonra IL-1/TNF uyarısıyla fabrikada üretilir. İkisi de nötrofilleri endotelde yuvarlatır — ilk temas!"
       },
       {
         "id": "fc-patho-031",
         "question": "Lökosit adhezyonunda hangi integrin-ligand çifti firm adhezyon sağlar?",
         "answer": "LFA-1 (CD11a/CD18, β2-integrin) ile endoteldeki ICAM-1 arasındaki bağ firm adezyonu sağlar. CD18 eksikliği → LAD (Lökosit Adhezyon Defisiti).",
         "difficulty": "hard",
-        "tags": ["İntegrin", "ICAM-1", "LAD"]
+        "tags": [
+          "İntegrin",
+          "ICAM-1",
+          "LAD"
+        ],
+        "story_hint": "💡 HİKAYE: LFA-1 (CD11a/CD18) nötrofilin 'yapışkan eli'dir — endoteldeki ICAM-1'e sıkıca tutunur (firm adhezyon). CD18 bozuksa el yapışmaz → nötrofil dokuya göç edemez → LAD! Tekrarlayan enfeksiyon + gecikmiş göbek düşmesi."
       },
       {
         "id": "fc-patho-032",
         "question": "Akut inflamasyonun en güçlü kemotaktik ajanları hangileridir?",
         "answer": "C5a (kompleman), IL-8 (CXCL8), LTB4 (lökotrien B4) ve bakteriyel f-Met-Leu-Phe peptidleri. Bunlar nötrofili hasara yönlendirir.",
         "difficulty": "medium",
-        "tags": ["Kemotaksis", "C5a", "IL-8", "LTB4"]
+        "tags": [
+          "Kemotaksis",
+          "C5a",
+          "IL-8",
+          "LTB4"
+        ],
+        "story_hint": "💡 HİKAYE: C5a, IL-8, LTB4 ve bakteriyel peptidler nötrofilin 'GPS navigasyonu'dur — hepsini hasara yönlendirir. IL-8 en güçlü sitokin kemotaktik ajan, C5a komplemanın en güçlü kemotaktik parçası. Dört pusula, tek hedef: enfeksiyon bölgesi!"
       }
     ],
     "tus_spots": [
@@ -201,10 +286,13 @@
           "Kronik granülomatöz hastalık",
           "Lökosit adhezyon defisiti (LAD)",
           "Chédiak-Higashi sendromu",
-          "Miyeloperoksidaz eksikliği"
+          "Miyeloperoksidaz eksikliği",
+          "Siklik nötropeni"
         ],
         "correct_answer": "Lökosit adhezyon defisiti (LAD)",
-        "explanation": "LAD'da CD18 (β2-integrin) eksikliği nedeniyle nötrofiller endotele yapışamaz ve hasara göç edemez. Kanda nötrofili vardır (göç edemeyen nötrofiller kanda birikir). Gecikmiş göbek düşmesi LAD'ın klasik klinik bulgusudur."
+        "explanation": "LAD'da CD18 (β2-integrin) eksikliği nedeniyle nötrofiller endotele yapışamaz ve hasara göç edemez. Kanda nötrofili vardır (göç edemeyen nötrofiller kanda birikir). Gecikmiş göbek düşmesi LAD'ın klasik klinik bulgusudur.",
+        "story_hint": "💡 HİKAYE: LAD bebeğinde nötrofiller kanda bol ama dokuya göç edemiyor — CD18 yapıştırıcısı bozuk! Göbek kordonu bile düşmüyor çünkü nötrofiller orada da işe yaramıyor. Kanda nötrofili + dokuda nötrofil yokluğu = LAD!",
+        "id": "cc-path-mod-004-001"
       }
     ]
   },
@@ -221,21 +309,37 @@
         "question": "Granülom oluşumunda hangi T hücresi alt tipi ve sitokin kritik rol oynar?",
         "answer": "CD4⁺ Th1 hücreleri IFN-γ salgılar → makrofajları aktive eder → makrofajlar epiteloid hücreye dönüşür → granülom oluşur.",
         "difficulty": "hard",
-        "tags": ["Granülom", "Th1", "IFN-γ", "Makrofaj"]
+        "tags": [
+          "Granülom",
+          "Th1",
+          "IFN-γ",
+          "Makrofaj"
+        ],
+        "story_hint": "💡 HİKAYE: CD4 Th1 hücreleri IFN-gamma salgılar → makrofajlar güçlenir → epiteloid hücreye dönüşür → granülom oluşur. Bu bir 'kale inşaatı' — düşmanı (örn. TBC basili) kuşatmak için organize yapı kurulur!"
       },
       {
         "id": "fc-patho-041",
         "question": "Sarkoidoz granülomunu tüberküloz granülomundan ayıran iki temel özellik nedir?",
         "answer": "1) Sarkoidozda kazeifikasyon nekrozu YOKTUR (non-kazeifiye). 2) Sarkoidozda Schaumann ve asteroid cisimcikleri dev hücre içinde görülebilir. Tüberkülozda kazeifikasyon ve Langhans dev hücreleri karakteristiktir.",
         "difficulty": "medium",
-        "tags": ["Sarkoidoz", "Tüberküloz", "Granülom"]
+        "tags": [
+          "Sarkoidoz",
+          "Tüberküloz",
+          "Granülom"
+        ],
+        "story_hint": "💡 HİKAYE: Sarkoidoz = peynir yok (non-kazeifiye) ama yıldızlar (asteroid) ve katmanlı taşlar (Schaumann) var. TBC = peynir var (kazeifiye), Langhans dev hücreleri bekçi. İki granülom, iki farklı dünya!"
       },
       {
         "id": "fc-patho-042",
         "question": "Crohn hastalığında görülen granülomun özellikleri nelerdir?",
         "answer": "Non-kazeifiye granülomlar — transmural yerleşim, özellikle terminal ileumu tutar. Granülomlar Crohn için patognomonik değil ama tanıyı destekler (%60 vakada görülür).",
         "difficulty": "medium",
-        "tags": ["Crohn", "IBD", "Granülom"]
+        "tags": [
+          "Crohn",
+          "IBD",
+          "Granülom"
+        ],
+        "story_hint": "💡 HİKAYE: Crohn'un granülomları duvar boyunca (transmural) yayılır — non-kazeifiye, tıpkı sarkoidoz gibi. Terminal ileum en sevdiği yer. Granülom her hastada bulunmaz (%60) ama varsa Crohn tanısını güçlendirir."
       }
     ],
     "tus_spots": [
@@ -251,10 +355,13 @@
           "Tüberküloz",
           "Sarkoidoz",
           "Lenfoma",
-          "Wegener granülomatozu"
+          "Wegener granülomatozu",
+          "Histoplazmoz"
         ],
         "correct_answer": "Sarkoidoz",
-        "explanation": "Sarkoidozun klasik triadı: bilateral hiler lenfadenopati + eritema nodozum + üveit (Löfgren sendromu). Non-kazeifiye granülom ve yüksek ACE tanıyı destekler. Tüberkülozda kazeifiye granülom beklenir."
+        "explanation": "Sarkoidozun klasik triadı: bilateral hiler lenfadenopati + eritema nodozum + üveit (Löfgren sendromu). Non-kazeifiye granülom ve yüksek ACE tanıyı destekler. Tüberkülozda kazeifiye granülom beklenir.",
+        "story_hint": "💡 HİKAYE: Sarkoidoz triadı = bilateral hiler LAP + eritema nodosum + üveit (Löfgren sendromu). Non-kazeifiye granülom + yüksek ACE = tanıyı mühürler. TBC'de kazeöz nekroz beklenir — peynir yoksa sarkoidoz düşün!",
+        "id": "cc-path-mod-005-001"
       }
     ]
   },
@@ -271,21 +378,37 @@
         "question": "RAS onkogeninin normal işlevi ve kanserdeki aktivasyon mekanizması nedir?",
         "answer": "Normal RAS: GTP bağlanınca aktif, GTPaz aktivitesiyle GDP'ye dönüştürüp kendini kapatır. Mutant RAS: GTPaz aktivitesi kaybedilir → sürekli GTP-bağlı aktif kalır → proliferasyon sinyali sürekli → kanser.",
         "difficulty": "hard",
-        "tags": ["RAS", "Onkogen", "GTPaz"]
+        "tags": [
+          "RAS",
+          "Onkogen",
+          "GTPaz"
+        ],
+        "story_hint": "💡 HİKAYE: Normal RAS bir ışık anahtarıdır — GTP ile açar, GTPaz ile kapatır. Mutant RAS'ta anahtar kırıldı: sürekli AÇIK! Işık (proliferasyon sinyali) hiç sönmüyor → kontrolsüz hücre bölünmesi → kanser. İnsan kanserlerinin %30'unda bu bozuk anahtar var."
       },
       {
         "id": "fc-patho-051",
         "question": "Retinoblastoma (RB) geni nasıl işlev görür ve iki vuruş hipotezi nedir?",
         "answer": "RB fosforilesiz halde E2F transkripsiyon faktörünü baskılar → G1 durur. Fosforilenince E2F serbest kalır → S fazına giriş. İki vuruş hipotezi (Knudson): her iki RB aleli de inaktive edilmelidir (sporadik=2 somatik, herediter=1 germline+1 somatik).",
         "difficulty": "hard",
-        "tags": ["RB", "E2F", "Knudson", "İki Vuruş"]
+        "tags": [
+          "RB",
+          "E2F",
+          "Knudson",
+          "İki Vuruş"
+        ],
+        "story_hint": "💡 HİKAYE: RB geni hücre döngüsünün 'kapısı'dır — E2F'yi kilitleyerek S fazına girişi engeller. Fosforillenince kilit açılır. İki vuruş hipotezi: her iki RB kopyası da kırılmalı. Herediter = doğuştan bir anahtar bozuk (bilateral, erken), sporadik = iki anahtar da sonradan kırılır (tek taraflı, geç)."
       },
       {
         "id": "fc-patho-052",
         "question": "HER2/neu (ERBB2) amplifikasyonu hangi kanserle ilişkilidir ve tedavide önemi nedir?",
         "answer": "Meme kanseri (% 20-30'unda amplifikasyon). HER2 pozitifliği daha agresif seyir gösterir ancak Trastuzumab (Herceptin) tedavisine yanıt verir — hedefe yönelik tedavinin klasik örneği.",
         "difficulty": "medium",
-        "tags": ["HER2", "Meme Kanseri", "Trastuzumab"]
+        "tags": [
+          "HER2",
+          "Meme Kanseri",
+          "Trastuzumab"
+        ],
+        "story_hint": "💡 HİKAYE: HER2/neu meme kanserinde bir 'megafon'dur — sinyal amplifikasyonu yapar, tümör agresifleşir. Ama Trastuzumab bu megafonu sessizleştirir! HER2 pozitif kanser = kötü prognoz ama hedefli tedavi şansı."
       }
     ],
     "tus_spots": [
@@ -299,12 +422,15 @@
         "case": "5 yaşında bir çocukta bilateral retinoblastom saptanıyor. Ailesinde de retinoblastom öyküsü var. Bu durumun genetik açıklaması nedir?",
         "options": [
           "Tek somatik RB mutasyonu yeterlidir",
-          "Germline RB mutasyonu + ikinci somatik mutasyon (Knudson iki vuruş hipotezi)",
+          "Germline RB mutasyonu + ikinci somatik mutasyon",
           "RAS onkogeninin aktivasyonu",
-          "p53 kaybı"
+          "p53 kaybı",
+          "BRCA1 germline mutasyonu"
         ],
-        "correct_answer": "Germline RB mutasyonu + ikinci somatik mutasyon (Knudson iki vuruş hipotezi)",
-        "explanation": "Herediter retinoblastomada hasta zaten bir mutant RB aleli ile doğar (germline). Retina hücrelerinden birinde ikinci RB alelinin somatik mutasyonu olunca tümör gelişir. Bu nedenle bilateral, erken yaşta olur. Sporadik vakada her iki vuruş da somatiktir; unilateral ve geç yaşta görülür."
+        "correct_answer": "Germline RB mutasyonu + ikinci somatik mutasyon",
+        "explanation": "Herediter retinoblastomada hasta zaten bir mutant RB aleli ile doğar (germline). Retina hücrelerinden birinde ikinci RB alelinin somatik mutasyonu olunca tümör gelişir. Bu nedenle bilateral, erken yaşta olur. Sporadik vakada her iki vuruş da somatiktir; unilateral ve geç yaşta görülür.",
+        "story_hint": "💡 HİKAYE: Bilateral retinoblastom + aile öyküsü = germline RB1 mutasyonu. Bebek doğduğunda her hücresinde bir RB alleli zaten bozuk (birinci vuruş). Retina hücresinde ikinci allel de bozulunca (ikinci vuruş) tümör başlar. Knudson iki vuruş!",
+        "id": "cc-path-mod-006-001"
       }
     ]
   }

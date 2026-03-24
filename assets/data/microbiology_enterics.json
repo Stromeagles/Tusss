@@ -10,12 +10,14 @@
       {
         "id": "fc-ent-100",
         "question": "Salmonella Typhi taşıyıcılığında bakteri nerede kolonize olur?",
-        "answer": "Safra kesesi."
+        "answer": "Safra kesesi.",
+        "story_hint": "💡 HİKAYE: Salmonella Typhi, safra kesesini kalıcı evi olarak seçer. Taşıyıcı kişi farkında olmadan her yemek pişirdiğinde bakteriyi yayar — safra kesesi onun gizli sığınağıdır."
       },
       {
         "id": "fc-ent-101",
         "question": "Orak hücreli anemili hastalarda en sık osteomiyelit etkeni nedir?",
-        "answer": "Salmonella."
+        "answer": "Salmonella.",
+        "story_hint": "💡 HİKAYE: Orak hücreli anemi hastasının kemikleri, Salmonella'nın favori mekanıdır. Tıpkı orak şeklindeki kırmızı hücreler gibi Salmonella da kemiğe 'orakla biçer gibi' yerleşir ve osteomiyelit yapar."
       }
     ],
     "tus_spots": [
@@ -25,9 +27,16 @@
     "clinical_cases": [
       {
         "case": "25 yaşında bir hasta, 2 haftadır devam eden ateş, kabızlık ve gövdesinde pembe lekelerle başvuruyor. Nabzı 60/dakika saptanıyor (Ateş 39C).",
-        "options": ["Tifo", "Bruselloz", "Sıtma", "Pnömoni"],
-        "correct_answer": "Tifo",
-        "explanation": "Uzamış ateş, rölatif bradikardi ve taş roze lekeleri Tifo kliniğidir."
+        "options": [
+          "A) Tifo (S. Typhi)",
+          "B) Bruselloz (B. melitensis)",
+          "C) Sıtma (P. falciparum)",
+          "D) Atipik Pnömoni",
+          "E) Q Ateşi (C. burnetii)"
+        ],
+        "correct_answer": "A) Tifo (S. Typhi)",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Tifo (Enterik Ateş), S. Typhi'nin neden olduğu sistemik bir enfeksiyondur. \n\n🎓 HOCA ÖZETİ:\n- Faget Belirtisi: Yüksek ateşe rağmen nabzın düşük kalması (Rölatif bradikardi). Tifo için çok tipiktir.\n- Rose Spots (Gül lekeleri): Gövdede görülen geçici pembe maküller.\n- Komplikasyon: 3. haftada Peyer plaklarının nekrozu sonucu bağırsak perforasyonu (delinme) riski vardır.\n- Taşıyıcılık: Safra kesesi en sık odaktır; kolesistektomi gerekebilir.",
+        "id": "cc-micro-enter-001-001"
       }
     ]
   },
@@ -42,7 +51,8 @@
       {
         "id": "fc-ent-110",
         "question": "Shigella türlerinin enfeksiyon dozu nasıldır?",
-        "answer": "Çok düşüktür (10-100 bakteri yeterlidir)."
+        "answer": "Çok düşüktür (10-100 bakteri yeterlidir).",
+        "story_hint": "💡 HİKAYE: Shigella, mikroplar dünyasının 'ninja'sıdır — sadece 10-100 bakteri yeterli! Bu kadar az dozla hastalık yapan başka enterik bakteri yoktur. Bir avuç ninja, koca bir kaleyi düşürür."
       }
     ],
     "tus_spots": [

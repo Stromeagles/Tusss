@@ -12,21 +12,33 @@
         "question": "Gram pozitif bakterilerde peptidoglikan hangi reseptör üzerinden sitokin salınımını uyarır?",
         "answer": "TLR-2 reseptörleri üzerinden TNF-alfa ve IL-1 salınımını uyarır.",
         "difficulty": "hard",
-        "tags": ["Peptidoglikan", "TLR-2"]
+        "tags": [
+          "Peptidoglikan",
+          "TLR-2"
+        ],
+        "story_hint": "💡 HİKAYE: Peptidoglikan adlı bir kale bekçisi, TLR-2 kapısını çalarak TNF-alfa ve IL-1 adlı iki savaşçıyı uyandırır. Kalın duvarlı Gram pozitif şatodan gelen bu alarm, tüm vücudu ayağa kaldırır."
       },
       {
         "id": "fc-micro-002",
         "question": "Lizozim enzimi hücre duvarında hangi bağları parçalar?",
         "answer": "Beta 1-4 endoglikozid bağlarını parçalar.",
         "difficulty": "medium",
-        "tags": ["Enzim", "Hücre Duvarı"]
+        "tags": [
+          "Enzim",
+          "Hücre Duvarı"
+        ],
+        "story_hint": "💡 HİKAYE: Lizozim adlı bir marangoz, duvarın Beta 1-4 tuğlalarını tek tek söker. Duvar çöker ve bakteri evsiz kalır — tıpkı yumurta kabuğu kırılınca içindekinin savunmasız kalması gibi."
       },
       {
         "id": "fc-micro-003",
         "question": "Much granülü hangi bakterinin L-formudur?",
         "answer": "Mycobacterium tuberculosis",
         "difficulty": "medium",
-        "tags": ["L-Form", "Tüberküloz"]
+        "tags": [
+          "L-Form",
+          "Tüberküloz"
+        ],
+        "story_hint": "💡 HİKAYE: Tüberküloz hastası Much Amca, duvarını kaybedince 'L-Form' takma adıyla gizlenir. Artık gram boyası onu tanıyamaz — tıpkı kılık değiştirmiş bir casus gibi laboratuvardan kaçar."
       }
     ],
     "tus_spots": [
@@ -38,9 +50,16 @@
     "clinical_cases": [
       {
         "case": "Beta-laktam antibiyotik kullanımı sonrası bakterinin hücre duvarını kaybetmesine rağmen hayatta kalabildiği çoğalabilen forma ne ad verilir?",
-        "options": ["Protoplast", "Sferoplast", "L-Form", "Much granülü"],
-        "correct_answer": "L-Form",
-        "explanation": "Hücre duvarını kaybetmiş ama çoğalabilen forma L-Form denir."
+        "options": [
+          "A) Protoplast",
+          "B) Sferoplast",
+          "C) L-Form",
+          "D) Much granülü",
+          "E) Mezozom"
+        ],
+        "correct_answer": "C) L-Form",
+        "explanation": "PROFESÖR NOTU: Normal bakteriler hücre duvarını (peptidoglikan) kaybettiğinde genellikle ozmotik basınçla patlar (lizis). Ancak izotonik ortamda hücre duvarı olmadan yaşamaya ve bölünmeye devam edebilen forma 'L-Form' denir. \n\n🎓 HOCA ÖZETİ:\n- Antibiyotik tedavisi bittiğinde bu formlar tekrar duvar örüp 'dirilebilir' (nüks nedeni).\n- Protoplast: Gram pozitiflerin duvarsız hali.\n- Sferoplast: Gram negatiflerin kısmi duvarsız hali.\n- Much granülü: M. tuberculosis'in L-formuna verilen özel ad.",
+        "id": "cc-micro-ch1-001-001"
       }
     ]
   },
@@ -57,14 +76,22 @@
         "question": "Hangi bakterinin kapsülü Protein (poli-D-glutamik asit) yapıdadır?",
         "answer": "Bacillus anthracis (Antraks/Şarbon)",
         "difficulty": "hard",
-        "tags": ["Kapsül", "Şarbon"]
+        "tags": [
+          "Kapsül",
+          "Şarbon"
+        ],
+        "story_hint": "💡 HİKAYE: Şarbon (Anthrax) askeri, diğer bakterilerin polisakkarit kalkanı yerine protein zırhı (poli-D-glutamik asit) giyer. Bu benzersiz zırh onu bağışıklık ordusunun gözünden saklar."
       },
       {
         "id": "fc-micro-011",
         "question": "Kapsüler etkenlerin tespitinde kullanılan reaksiyonun adı nedir?",
         "answer": "Quellung (Kapsül şişme) reaksiyonu.",
         "difficulty": "medium",
-        "tags": ["Teşhis", "Kapsül"]
+        "tags": [
+          "Teşhis",
+          "Kapsül"
+        ],
+        "story_hint": "💡 HİKAYE: Quellung dedektifi, şüpheli bakterinin kapsülüne özel antiserum sıkar. Kapsül şişip balonlaşınca suçlu yakalanır — 'Seni şişirdim, artık kaçamazsın!' der dedektif."
       }
     ],
     "tus_spots": [
@@ -72,6 +99,21 @@
       "S. pyogenes kapsülü hyalüronik asit yapısındadır (kamufle eder).",
       "Kapsüllü mikroorganizmalara karşı temel savunma Opsonizasyondur (IgG ve C3b).",
       "Kapsül esansiyel bir yapı değildir, kaybedilirse virülans azalır."
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-micro-ch1-002-001",
+        "case": "Dalağı alınmış (splenektomili) 45 yaşında bir erkek hasta, yüksek ateş, titreme ve bilinç bulanıklığı ile acil servise getiriliyor. Kan kültüründe kapsüllü bakteri üremesi saptandı. Bu hastada en sık sepsise neden olan bakteri hangisidir?",
+        "options": [
+          "A) Staphylococcus aureus",
+          "B) Streptococcus pneumoniae",
+          "C) Escherichia coli",
+          "D) Pseudomonas aeruginosa",
+          "E) Listeria monocytogenes"
+        ],
+        "correct_answer": "B) Streptococcus pneumoniae",
+        "explanation": "PROFESÖR NOTU: Dalak, kapsüllü bakterilere karşı en kritik savunma organıdır. Kapsüllü bakterileri opsonize eden IgM antikoru ağırlıklı olarak dalakta üretilir. Dalak olmadan bu opsonizasyon zayıflar.\n\n🎓 HOCA ÖZETİ:\n- Splenektomi sonrası sepsis riski en yüksek kapsüllü bakteriler: 'SHiN' = S. pneumoniae (en sık!), H. influenzae, N. meningitidis.\n- Mnemonic: 'SHiN = Dalaksız hastayı ŞİNlendiren üçlü'\n- Önlem: Splenektomi öncesi S. pneumoniae, H. influenzae tip b ve N. meningitidis aşıları yapılmalı.\n- TUS SPOT: Dalaksız hastada ateş + sepsis = S. pneumoniae önce düşün!"
+      }
     ]
   }
 ]

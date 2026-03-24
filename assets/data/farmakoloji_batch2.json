@@ -1,0 +1,291 @@
+[
+  {
+    "id": "farma-batch2-001",
+    "subject": "Farmakoloji",
+    "chapter": "Klinik Farmakoloji",
+    "topic": "KVS Farmakolojisi Batch 2",
+    "sub_topic": "Beta Blokerler, ACE İnhibitörleri, ARB, Kalsiyum Kanal Blokerleri, Digoksin",
+    "content_summary": "Kardiyovasküler farmakolojinin temel ilaç grupları: Beta blokerler (selektif vs non-selektif), ACE inhibitörleri ve ARB'lar (RAAS blokajı), kalsiyum kanal blokerleri (dihidropiridin vs non-dihidropiridin), ve digoksin (pozitif inotropi, negatif kronotropi, dar terapötik indeks). Her grubun endikasyonları, yan etkileri ve kontrendikasyonları TUS'ta sık soru konusudur.",
+    "flashcards": [
+      {
+        "id": "fc-farma-200",
+        "question": "Kardiyoselektif (beta-1 selektif) beta blokerler hangileridir ve neden tercih edilirler?",
+        "answer": "[[Metoprolol]], [[atenolol]], [[bisoprolol]], [[esmolol]] beta-1 selektiftir; astım/KOAH hastalarında beta-2 blokajından kaçınmak için tercih edilir. Mnemonic: 'MABE' (Metoprolol, Atenolol, Bisoprolol, Esmolol).",
+        "difficulty": "medium",
+        "tags": ["Beta Bloker", "Kardiyoselektivite", "KVS Farmakolojisi", "TUS"],
+        "story_hint": "💡 HİKAYE: Kardiyoselektif beta blokerler 'kalpten başka yere uğramaz' — sadece kalbi hedef alır. 'MABE' öğrencisi sadece Kardiyoloji dersine girer, Göğüs Hastalıkları'na (beta-2) girmez. Astımlı hastada güvenli!"
+      },
+      {
+        "id": "fc-farma-201",
+        "question": "Beta blokerlerin yan etkileri ve kontrendikasyonları nelerdir?",
+        "answer": "Yan etkiler: [[bradikardi]], [[bronkospazm]] (non-selektif), [[soğuk ekstremite]], [[depresyon]], [[maskeli hipoglisemi]]. Kontrendikasyonlar: astım, 2.-3. derece AV blok, dekompanse kalp yetmezliği, Prinzmetal anjin.",
+        "difficulty": "medium",
+        "tags": ["Beta Bloker", "Yan Etki", "Kontrendikasyon", "KVS Farmakolojisi"],
+        "story_hint": "💡 HİKAYE: Beta bloker yan etkileri = 'BCSDMi' (Bradikardi, Bronkospazm, Soğuk, Depresyon, Maskeli hipoglisemi). Diyabetiklerde 'düşmanı gizler' — hipoglisemi belirtilerini (taşikardi, titreme) maskeler, ama terleme devam eder. Kontrendikasyon: 'Astımlı hastanın kalp hekimi çekinir!'"
+      },
+      {
+        "id": "fc-farma-202",
+        "question": "ACE inhibitörleri ile ARB'ların farkı nedir? Kuru öksürük neden ACE inhibitörüne özgüdür?",
+        "answer": "ACE inhibitörleri (kaptopril, enalapril, lisinopril) [[bradikinin]] yıkımını da engeller → birikim → [[kuru öksürük ve anjiyoödem]]. ARB'lar (losartan, valsartan) ise doğrudan AT1 reseptörünü bloke eder; bradikinin birikmez → öksürük yapmaz.",
+        "difficulty": "medium",
+        "tags": ["ACE İnhibitörü", "ARB", "Bradikinin", "Kuru Öksürük", "RAAS"],
+        "story_hint": "💡 HİKAYE: ACE inhibitörü iki işi birden yapar: angiotensin II'yi durdurur + bradikinin'i biriktirerek boğazı gıdıklar (öksürük). ARB ise 'sadece angiotensin kapısını kilitler', bradikinin serbest dolaşır — öksürük yok. Öksürük varsa ACE'den ARB'a geç!"
+      },
+      {
+        "id": "fc-farma-203",
+        "question": "Dihidropiridin ve non-dihidropiridin kalsiyum kanal blokerlerinin farkları nelerdir?",
+        "answer": "[[Dihidropiridinler]] (amlodipin, nifedipin): vasküler selektif, periferik vazodilatasyon, refleks taşikardi; hipertansiyon ve anjin. [[Non-dihidropiridinler]] (verapamil, diltiazem): kalp ve damar, negatif kronotropi/dromotropi; anjin, supraventriküler aritmi, hipertansiyon.",
+        "difficulty": "hard",
+        "tags": ["Kalsiyum Kanal Blokeri", "Dihidropiridin", "Verapamil", "Diltiazem", "KVS"],
+        "story_hint": "💡 HİKAYE: Dihidropiridinler = 'damar genişletici' (sonları -dipin: amlodipin, nifedipin) — kalbi önemsemez, damarları açar. Verapamil ve diltiazem = 'kalp ve damar' — hem hızı yavaşlatır hem damarı açar. 'Dipin=Damar, Verapamil=Vagus gibi'!"
+      },
+      {
+        "id": "fc-farma-204",
+        "question": "Digoksinin etki mekanizması nedir ve pozitif inotropi nasıl sağlanır?",
+        "answer": "Digoksin [[Na⁺/K⁺-ATPaz]]'ı inhibe eder → hücre içi Na⁺ artar → [[Na⁺/Ca²⁺ değiştirici]] (NCX) tersine döner → hücre içi Ca²⁺ artar → [[pozitif inotropi]]. Vagal tonus artışıyla negatif kronotropi ve dromotropi de sağlar.",
+        "difficulty": "hard",
+        "tags": ["Digoksin", "Na-K-ATPaz", "Pozitif İnotropi", "Kalp Yetmezliği"],
+        "story_hint": "💡 HİKAYE: Digoksin 'sodyum pompasını kilitler' — Na birikir, hücre 'Na'dan bunalınca' kalsiyumu içeri çeker. Daha fazla Ca = daha güçlü kasılma (inotropi). Aynı zamanda 'vagus pedalına basar' → kalp yavaşlar (kronotropi↓). 'Digi = Güçlü + Yavaş!'"
+      },
+      {
+        "id": "fc-farma-205",
+        "question": "Digoksin toksisitesinin bulguları nelerdir ve antidotu nedir?",
+        "answer": "Toksisite: [[sarı-yeşil görme (ksantopsi)]], [[bulantı-kusma]], [[çeşitli aritmi]] (VT, VF, AV blok). Risk faktörleri: hipokalemi, hipomagnezemi, hiperkalemi. Antidot: [[digoksin-spesifik Fab antikorları]] (DigiFab).",
+        "difficulty": "hard",
+        "tags": ["Digoksin", "Toksisite", "Ksantopsi", "Fab Antikoru", "Antidot"],
+        "story_hint": "💡 HİKAYE: Digoksin zehirlenmesinde hasta 'sarı gözlükle bakar' (ksantopsi) ve kalbi 'çılgına döner' (aritmi). Antidot = DigiFab = 'Dijital sabun' — toksini tutup dışarı atar. Hipokalemi toksisiteyi artırır: 'K düşükse Digi daha da zehirli!'"
+      }
+    ],
+    "tus_spots": [
+      "Kardiyoselektif beta blokerler: Metoprolol, Atenolol, Bisoprolol, Esmolol (MABE) — astım/KOAH'ta görece güvenli.",
+      "ACE inhibitörleri kuru öksürük ve anjiyoödem yapar (bradikinin birikimi); öksürükte ARB'a geç.",
+      "Verapamil + beta bloker kombinasyonu: şiddetli bradikardi ve AV blok riski — birlikte VERİLMEZ.",
+      "Digoksin toksisitesinde ksantopsi (sarı-yeşil görme) patognomonik bulgudur.",
+      "Hipokalemi digoksin toksisitesini artırır; tiazid/loop diüretik kullananlarda dikkat.",
+      "Digoksin antidotu: Digoksin-spesifik Fab antikorları (DigiFab).",
+      "Nifedipin (kısa etkili) refleks taşikardiye yol açar; miyokard enfarktüsünde zararlı olabilir — uzun etkili dihidropiridinler tercih edilir."
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-farma-batch2-001",
+        "case": "Soru:(Farmakoloji - KVS) 58 yaşında erkek hasta, 2 yıldır hipertansiyon için kaptopril kullanmaktadır. Son 3 haftadır ilaçla ilişkili kuru öksürük şikayeti başlamıştır. Fizik muayenede akciğer sesleri doğal, PA akciğer grafisi normal bulunmuştur. Bu hastada en uygun tedavi değişikliği aşağıdakilerden hangisidir?",
+        "options": [
+          "A) Kaptopril dozunu yarıya indir",
+          "B) Kaptopril yerine losartan başla",
+          "C) Kaptopril'e antihistaminik ekle",
+          "D) Kaptopril yerine metoprolol başla",
+          "E) Kaptopril yerine amlodipin başla"
+        ],
+        "correct_answer": "B) Kaptopril yerine losartan başla",
+        "explanation": "ACE inhibitörleri (kaptopril, enalapril, lisinopril) bradikinin yıkımını engelleyerek bradikinin birikimini artırır. Bradikinin; prostaglandinleri ve substans P'yi uyararak havayollarında irritasyona ve kuru öksüruğe neden olur. Bu yan etki doz bağımsızdır — doz azaltılsa da öksürük devam eder. Çözüm: aynı RAAS blokaj etkisine sahip ancak bradikinin üzerine etkisi olmayan ARB grubuna (losartan, valsartan) geçilmesidir.\n\n🎓 HOCA ÖZETİ:\n- ACE inhibitörü öksürüğü: bradikinin birikimi (doz bağımsız) → ARB'a geç\n- ARB'lar AT1 reseptörünü bloke eder; bradikinin serbest kalır → öksürük yok\n- Mnemonic: 'ACE Öksürür, ARB Susar'\n- TUS SPOT: ACE inhibitörü öksürüğünde enalaprilden losartana geçiş klasik TUS sorusudur"
+      },
+      {
+        "id": "cc-farma-batch2-002",
+        "case": "Soru:(Farmakoloji - KVS) 72 yaşında erkek hasta, kronik atriyal fibrilasyon ve hafif kalp yetmezliği nedeniyle digoksin kullanmaktadır. Tiazid diüretik kullanım geçmişi de mevcuttur. Başvuruda sarı-yeşil görme ve bulantı-kusma şikayetleri olduğu, EKG'de çift yönlü VT görüntüsü bulunduğu saptanmaktadır. Serum potasyum: 2.8 mEq/L. Bu hastada uygun tedavi nedir?",
+        "options": [
+          "A) Digoksin dozunu artır",
+          "B) Digoksin'e lidokain ekle",
+          "C) Digoksin-spesifik Fab antikorları (DigiFab) ver",
+          "D) Hemen elektriksel kardiyoversiyon uygula",
+          "E) Amiyodaron başla"
+        ],
+        "correct_answer": "C) Digoksin-spesifik Fab antikorları (DigiFab) ver",
+        "explanation": "Bu hastada digoksin toksisitesinin klasik triadı mevcuttur: ksantopsi (sarı-yeşil görme), GİS bulguları (bulantı-kusma) ve tehlikeli ventriküler aritmi (çift yönlü VT). Hipokalemi (K: 2.8) toksisiteyi potansiyelize etmiştir — tiazid diüretiği K kaybı yaratmıştır. Digoksin toksisitesinin spesifik antidotu digoksin-spesifik Fab antikorlarıdır (DigiFab). Bu antikorlar serbest digoksini bağlayarak dolaşımdan uzaklaştırır. Elektriksel kardiyoversiyon digoksin toksisitesinde tehlikeli fibrilasyona neden olabileceğinden kontrendikedir.\n\n🎓 HOCA ÖZETİ:\n- Digoksin toksisitesi triadı: Ksantopsi + GİS bulgular + Aritmi\n- Hipokalemi toksisiteyi artırır (tiazid+digoksin tehlikeli kombinasyon)\n- Antidot: DigiFab (Digoksin-spesifik Fab antikorları)\n- Mnemonic: 'Digi toksik = Sarı gözlük + Çılgın kalp → Fab ile temizle'\n- TUS SPOT: Digoksin toksisitesinde kardiyoversiyon KONTRAENDİKE"
+      }
+    ]
+  },
+  {
+    "id": "farma-batch2-002",
+    "subject": "Farmakoloji",
+    "chapter": "Klinik Farmakoloji",
+    "topic": "CNS Farmakolojisi",
+    "sub_topic": "Benzodiyazepinler, Barbitüratlar, Antidepresanlar, Antipsikotikler",
+    "content_summary": "SSS farmakolojisinin temel grupları: benzodiyazepinler ve barbitüratlar (GABA-A potansiyasyonu, farklı mekanizmalar, antidotlar), antidepresanlar (TCA, SSRI, SNRI, MAOİ — etki mekanizmaları ve kritik yan etkiler), antipsikotikler (tipik vs atipik, ekstrapiramidal yan etkiler, tardif diskinezi, nöroleptik malign sendrom). Bu konular TUS'ta yüksek sıklıkta çıkmaktadır.",
+    "flashcards": [
+      {
+        "id": "fc-farma-206",
+        "question": "Benzodiyazepinler ile barbitüratların GABA-A üzerindeki etki mekanizması farkı nedir?",
+        "answer": "[[Benzodiyazepinler]]: Cl⁻ kanalının açılma [[frekansını]] artırır (GABA varlığında). [[Barbitüratlar]]: Cl⁻ kanalının açık kalma [[süresini]] artırır; yüksek dozda GABA'sız da açabilir → daha toksik.",
+        "difficulty": "hard",
+        "tags": ["Benzodiyazepin", "Barbitürat", "GABA-A", "SSS Farmakolojisi"],
+        "story_hint": "💡 HİKAYE: Benzodiyazepin = 'sık sık kapıyı açar' (frekans ↑). Barbitürat = 'kapıyı uzun süre açık tutar' (süre ↑). Barbitürat daha tehlikeli: 'Kapıyı zorla açabilir' (GABA'sız bile). Bu yüzden benzo antidotu var (flumazenil), barbitüratın yok — daha geniş terapötik indeks benzo'da!"
+      },
+      {
+        "id": "fc-farma-207",
+        "question": "Benzodiyazepin antidotu nedir ve etki mekanizması nedir? Antidot neden barbitüratlarda işe yaramaz?",
+        "answer": "[[Flumazenil]] benzodiyazepin reseptör antagonistidir — GABA-A'nın benzo bağlanma bölgesini kompetitif bloke eder. Barbitüratlar ise farklı bir bölgeye bağlandığından flumazenil etkisizdir.",
+        "difficulty": "medium",
+        "tags": ["Flumazenil", "Benzodiyazepin Antidotu", "GABA-A", "SSS Farmakolojisi"],
+        "story_hint": "💡 HİKAYE: Flumazenil = 'benzodiyazepin kapıcısı' — sadece benzo'nun oturduğu koltuğu bloke eder. Barbitürat farklı koltukta oturur, flumazenil oraya ulaşamaz. 'Flu = Flumazenil, sadece benzo'yu çıkarır!' Barbitürat aşırı dozunda sadece destek tedavisi var."
+      },
+      {
+        "id": "fc-farma-208",
+        "question": "Trisiklik antidepresanların (TCA) etki mekanizması ve tehlikeli yan etkileri nelerdir?",
+        "answer": "TCA'lar (amitriptilin, imipramin, klomipramin) [[serotonin ve noradrenalin]] geri alımını bloke eder. Tehlikeli yan etkiler: [[antikolinerjik etki]] (ağız kuruluğu, konstipasyon, idrar retansiyonu, taşikardi), [[kardiyotoksisite]] (QRS uzaması, ventriküler aritmi), [[alfa-1 blokajı]] (ortostatik hipotansiyon), ve [[serotonin sendromu]] (MAOİ ile birlikte).",
+        "difficulty": "hard",
+        "tags": ["TCA", "Amitriptilin", "Antidepresan", "Kardiyotoksisite", "Antikolinerjik"],
+        "story_hint": "💡 HİKAYE: TCA = '3 kapıyı birden kilitler': Serotonin geri alımı + NA geri alımı + ekstra: antikolinerjik, alfa blokajı ve hızlı Na kanalı blokajı (QRS uzar!). Aşırı dozda en tehlikeli bulgu: 'Geniş QRS = Kalp tehlikede!' Antidot: Sodyum bikarbonat (QRS'i daraltır)."
+      },
+      {
+        "id": "fc-farma-209",
+        "question": "SSRI'ların avantajları ve serotonin sendromu nedir?",
+        "answer": "SSRI'lar (fluoksetin, sertralin, paroksetin, essitalopram) yalnızca [[serotonin geri alımını]] bloke eder; TCA'ya göre çok daha az antikolinerjik ve kardiyak yan etki. [[Serotonin sendromu]]: MAOİ + SSRI kombinasyonunda aşırı serotonin → [[hipertermi, ajitasyon, klonus, diyaforez]] → ölümcül olabilir.",
+        "difficulty": "medium",
+        "tags": ["SSRI", "Serotonin Sendromu", "MAOİ", "Antidepresan"],
+        "story_hint": "💡 HİKAYE: SSRI = 'sadece serotonini tutar', yan etkisi az, güvenli. Ama MAOİ ile buluşursa = 'serotonin patlaması!' (sendrom). Serotonin sendromu üçlüsü: Klonus + Hipertermi + Ajitasyon. 'SSRI+MAOİ = Serotonin Bombası!' En az 14 gün ara ver geçişte."
+      },
+      {
+        "id": "fc-farma-210",
+        "question": "MAOİ'lerin yan etkileri ve ilaç-besin etkileşimleri nelerdir?",
+        "answer": "[[MAOİ]]lar (fenelzin, tranilsipromin, moklobemid) MAO enzimini bloke ederek monoaminleri yıkımdan korur. Kritik etkileşim: [[tiraminden zengin besinler]] (peynir, şarap, bira, çikolata, salça) + MAOİ → tiraminin yıkılamaması → [[hipertansif kriz]]. [[Peynir etkisi]] (cheese effect) olarak bilinir.",
+        "difficulty": "hard",
+        "tags": ["MAOİ", "Tiramin", "Hipertansif Kriz", "Peynir Etkisi", "Antidepresan"],
+        "story_hint": "💡 HİKAYE: MAOİ kullanan hasta peynir yiyince 'tansiyon roket gibi fırlar' — tiramin normalde MAO tarafından yıkılır, ama MAO kilitli → tiramin dolaşımda birikir → sempatomimetik kriz. 'MAOİ + Peynir = Kriz!'. Moklobemid (reversibl MAOİ-A) biraz daha güvenli."
+      },
+      {
+        "id": "fc-farma-211",
+        "question": "Tipik ve atipik antipsikotikler arasındaki farklar nelerdir? Ekstrapiramidal yan etkiler ve tardif diskinezi nasıl oluşur?",
+        "answer": "[[Tipik antipsikotikler]] (haloperidol, klorpromazin): D2 blokajı baskın → [[EPS]] (akut distoni, akatizi, parkinsonizm), [[tardif diskinezi]] (uzun süreli). [[Atipik antipsikotikler]] (klozapin, olanzapin, risperidon): D2 + 5-HT2A blokajı → daha az EPS, daha fazla metabolik yan etki (kilo, diyabet). Tardif diskinezi: uzun süreli D2 blokajına [[up-regulasyon]] ile yanıt → istemsiz orofasyal hareketler.",
+        "difficulty": "hard",
+        "tags": ["Antipsikotik", "EPS", "Tardif Diskinezi", "D2 Blokajı", "Klozapin"],
+        "story_hint": "💡 HİKAYE: Tipik antipsikotikler = 'sadece D2'yi kapatır' → motor sistem aç kalır → EPS. Atipikler = 'D2 + serotonin ikisini birden kapatır' → denge sağlanır, motor daha az bozulur. Tardif diskinezi = 'reseptörler intikam alır' (up-reg) → kontrol dışı hareketler. 'Halo = Haloperidol = EPS riski yüksek!'"
+      }
+    ],
+    "tus_spots": [
+      "Benzodiyazepin: frekansı artırır; barbitürat: süreyi artırır — bu fark TUS'ta sık çıkar.",
+      "Flumazenil yalnızca benzodiyazepin antidotu; barbitüratta işe yaramaz.",
+      "TCA aşırı dozunda QRS uzaması görülür → antidot: sodyum bikarbonat (IV).",
+      "MAOİ + tiraminli besin → hipertansif kriz (peynir etkisi, cheese effect).",
+      "MAOİ + SSRI kombinasyonu → serotonin sendromu (en az 14 gün ara gerekli).",
+      "Tardif diskinezi en az geri döndürülebilir EPS türüdür — uzun süreli D2 blokajı sonucu.",
+      "Klozapin en etkili atipik antipsikotiktir fakat agranülositoz riski nedeniyle hemogram takibi zorunludur.",
+      "Nöroleptik malign sendrom (NMS): antipsikotik sonrası ateş + kas rijiditesi + otonomik instabilite + bilinç bozukluğu → dantrolen + bromokriptin."
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-farma-batch2-003",
+        "case": "Soru:(Farmakoloji - CNS) 35 yaşında kadın hasta, 6 aydır major depresyon tanısıyla fenelzin kullanmaktadır. Arkadaşlarıyla gece dışarı çıktıktan sonra şiddetli baş ağrısı, taşikardi ve kan basıncı 200/120 mmHg ile acil servise getirilmektedir. Hastanın o gece peynirli makarna ve kırmızı şarap tükettiği öğrenilmektedir. Bu tablonun mekanizması nedir?",
+        "options": [
+          "A) Serotonin sendromu gelişmiştir",
+          "B) Tiramin MAO tarafından yıkılamamış, sempatik kriz oluşmuştur",
+          "C) Fenelzin direkt alfa agonist etkiyle tansiyonu yükseltmiştir",
+          "D) Şarap içindeki alkol MAOİ ile etkileşime girmiştir",
+          "E) Hastada hipertansif ensefalopati gelişmiştir"
+        ],
+        "correct_answer": "B) Tiramin MAO tarafından yıkılamamış, sempatik kriz oluşmuştur",
+        "explanation": "Fenelzin irreversibl, non-selektif MAO inhibitörüdür. Tiramin normalde barsakta ve karaciğerde MAO-A tarafından yıkılır. MAO inhibe edilince, peynir ve şaraptan alınan yüksek tiramin sistemik dolaşıma girer. Tiramin presinaptik katekolamin salınımını indirekt olarak artırır (özellikle NA) → sempatik akut hipertansif kriz (cheese effect). Tedavi: antihipertansif (fentolamin veya nitroprusid), fenelzini kes.\n\n🎓 HOCA ÖZETİ:\n- MAOİ + tiraminli besin (peynir, kırmızı şarap, bira, çikolata) = hipertansif kriz\n- Mekanizma: MAO inaktif → tiramin yıkılamaz → NA salınımı ↑ → kriz\n- Mnemonic: 'MAOİ + Peynir = Kriz, MAOİ + SSRI = Serotonin Sendromu'\n- TUS SPOT: MAOİ kullanan hastaya tiramin kısıtlaması hayati önem taşır"
+      },
+      {
+        "id": "cc-farma-batch2-004",
+        "case": "Soru:(Farmakoloji - CNS) 42 yaşında erkek hasta, şizofreni tanısıyla 3 yıldır haloperidol kullanmaktadır. Son 2 aydır dudak şapırtması, dil çıkarma ve yüzde istemsiz grimace hareketleri gelişmiştir. Bilinç açık, ateş yok, kas tonusu normal. Bu hastada en olası tanı ve ilk yapılacak işlem nedir?",
+        "options": [
+          "A) Nöroleptik malign sendrom — dantrolen başla",
+          "B) Tardif diskinezi — haloperidol'ü azalt/kes ve atipik antipsikotiğe geç",
+          "C) Akut distoni — difenhidramin ver",
+          "D) Parkinson hastalığı — levodopa başla",
+          "E) Huntington hastalığı — tetrabenazin ver"
+        ],
+        "correct_answer": "B) Tardif diskinezi — haloperidol'ü azalt/kes ve atipik antipsikotiğe geç",
+        "explanation": "Uzun süreli (aylar-yıllar) D2 reseptör blokajına bağlı olarak postsinaptik D2 reseptörleri up-regüle olur. İlaç kesildiğinde veya doz azaltıldığında aşırı duyarlı D2 reseptörleri istemsiz orofasyal hareketlere (tardif diskinezi) neden olur. Dudak şapırtması, dil çıkarma ve yüz grimace hareketi patognomonikdir. Akut distoni erken başlar ve antikolinerjikle tedavi edilir; NMS'de ateş ve kas rijiditesi mevcuttur. Tedavi: tipik antipsikotiği kes, atipik antipsikotiğe geç (klozapin en etkili), valbenazin veya deutetrabenazin (VMAT2 inhibitörleri) kullanılabilir.\n\n🎓 HOCA ÖZETİ:\n- Tardif diskinezi: uzun süreli D2 blokajı → D2 up-regülasyon → istemsiz hareketler\n- Tipik antipsikotiklerle daha sık (haloperidol, klorpromazin)\n- Mnemonic: 'Tardif = Geç çıkar, Uzun sürer, Geri dönmesi zor'\n- TUS SPOT: Tardif diskineziyi akut distoniden ayır — akut erken olur, antikolinerjikle geçer; tardif geç olur, zor geçer"
+      }
+    ]
+  },
+  {
+    "id": "farma-batch2-003",
+    "subject": "Farmakoloji",
+    "chapter": "Klinik Farmakoloji",
+    "topic": "Ağrı ve Anestezi Farmakolojisi",
+    "sub_topic": "NSAİİ, Opioidler, Lokal Anestezikler, Genel Anestezi",
+    "content_summary": "Ağrı ve anestezi farmakolojisi: NSAİİ'lerin COX-1/COX-2 inhibisyon mekanizmaları ve gastrointestinal/renal yan etkileri; opioidlerin reseptör tipleri (mü, kappa, delta) ve naloksan antagonizması; lokal anesteziklerin amid/ester sınıflaması ve toksisite profilleri; genel anestezi ajanları (ketamin, propofol, tiyopental) ve klinik özellikleri. TUS'ta yüksek öncelikli konular.",
+    "flashcards": [
+      {
+        "id": "fc-farma-212",
+        "question": "COX-1 ve COX-2 inhibisyonunun klinik önemi nedir? Selektif COX-2 inhibitörlerinin avantajı ve dezavantajı nedir?",
+        "answer": "[[COX-1]]: konstütif, mide koruyucu prostaglandin (PGE2, PGI2), tromboksan A2 (TXA2) yapar. [[COX-2]]: indüklenebilir, inflamasyon ve ağrıda artış. [[Selektif COX-2 inhibitörleri]] (selekoksib, etorikoksib): gastrik yan etki azalmış fakat [[tromboembolik risk]] (MI, inme) artmıştır — PGI2 (vazodilatör) azalır, TXA2 (vazokonstriktör) görece artar.",
+        "difficulty": "hard",
+        "tags": ["NSAİİ", "COX-1", "COX-2", "Selekoksib", "GİS Yan Etki"],
+        "story_hint": "💡 HİKAYE: COX-1 = 'koruyucu ev bekçisi' (mideyi korur, kanı sulandırır). COX-2 = 'yangın körükleyici' (inflamasyon). Selektif COX-2 inhibitörü = 'sadece yangını söndürür, ama ev bekçisini bırakır, damarı koruyamaz' → tromboz riski. 'Selekoksib mideni korur ama kalp riski taşır!'"
+      },
+      {
+        "id": "fc-farma-213",
+        "question": "NSAİİ'lerin böbrek üzerine etkileri ve hangi hastalarda tehlikeli olduğu nedir?",
+        "answer": "NSAİİ'ler [[prostaglandin sentezini]] inhibe ederek renal perfüzyonu azaltır. Normal böbrekte minimal etki; ancak [[kalp yetmezliği, karaciğer sirozu, dehidratasyon ve kronik böbrek hastalığı]]nda renal prostaglandinler kritik → NSAİİ → [[akut böbrek yetmezliği]], hiperkalemi, tuz-su tutulumu.",
+        "difficulty": "medium",
+        "tags": ["NSAİİ", "Böbrek", "Akut Böbrek Yetmezliği", "Kalp Yetmezliği"],
+        "story_hint": "💡 HİKAYE: Sağlıklı böbrekte prostaglandinler 'lüks', ancak hasta böbrekte (KY, siroz, dehidre) 'can simidi'. NSAİİ bu can simidini alırsa böbrek batar. 'NSAİİ + hasta böbrek = Tehlike!'. Alternatif: parasetamol böbrekte güvenli (ama karaciğer dikkat)."
+      },
+      {
+        "id": "fc-farma-214",
+        "question": "Opioid reseptörleri ve klinik etkileri nelerdir? Morfin ile kodein arasındaki fark?",
+        "answer": "[[Mü (μ) reseptörü]]: analjezi, öfori, solunum depresyonu, konstipasyon, miozis, bağımlılık. [[Kappa (κ)]]: analjezi, sedasyon, disfori. [[Delta (δ)]]: analjezi, mood. [[Morfin]] aktif opioid; [[kodein]] prodrug → karaciğerde CYP2D6 ile morfine dönüştürülür (yavaş metabolizörde yetersiz etki, ultra-hızlı metabolizörde toksisite).",
+        "difficulty": "hard",
+        "tags": ["Opioid", "Mü Reseptörü", "Morfin", "Kodein", "Solunum Depresyonu"],
+        "story_hint": "💡 HİKAYE: Mü reseptörü = 'Morfinin evi' — ağrıyı keser ama bedel öder: nefesi yavaşlatır, kabız eder, pupili küçültür (miozis). Kodein = 'Morfinin tembel versiyonu' — önce karaciğer çevirmeli. CYP2D6 yavaşsa 'kodeinden ilaç çıkmaz', hızlıysa 'morfin patlar'!"
+      },
+      {
+        "id": "fc-farma-215",
+        "question": "Naloksan nedir ve hangi durumlarda kullanılır? Etki süresi ve naltreksandan farkı nedir?",
+        "answer": "[[Naloksan]]: kompetitif opioid reseptör antagonisti (mü, kappa, delta); [[opioid aşırı dozunda]] (miozis + solunum depresyonu + bilinç bozukluğu) IV/IM/IN verilir. Etki süresi [[30-90 dk]] (çoğu opioidten kısa) → tekrar dozlanabilir. [[Naltreks]an]: uzun etkili (24 saat), oral, opioid bağımlılığı tedavisinde.",
+        "difficulty": "medium",
+        "tags": ["Naloksan", "Opioid Antagonisti", "Antidot", "Opioid Aşırı Dozu"],
+        "story_hint": "💡 HİKAYE: Naloksan = 'opioid yangın söndürücüsü' — hızlı devreye girer, opioid etkisini siler. Ama kısa ömürlü! Morfin 4 saat sürer, naloksan 1 saat — tekrar doz gerekebilir. Naltreks = 'uzun menzilli bekçi', bağımlılık tedavisinde günlük kullanım. 'Nal-oksan = Ok gibi hızlı ve kısa!'"
+      },
+      {
+        "id": "fc-farma-216",
+        "question": "Lokal anestezikler amid ve ester olarak nasıl sınıflandırılır? Toksisiteleri ve alerjileri nasıl farklıdır?",
+        "answer": "[[Amid grubu]] (-kain, iki 'i' içerir: lidokain, bupivakain, mepivakain, ropivakain): karaciğerde metabolize, gerçek alerji nadirdir. [[Ester grubu]] (prokain, benzokain, tetrakain, kokain): plazmada psödokolinesteraz ile hidroliz, PABA üretir → [[alerjik reaksiyon]] daha sık. Mnemonic: 'Amid = İki i (lidoka-i-n), Ester = Tek i (proka-i-n)'.",
+        "difficulty": "hard",
+        "tags": ["Lokal Anestezik", "Amid", "Ester", "Lidokain", "Alerji"],
+        "story_hint": "💡 HİKAYE: Amid grubu = 'İki nokta üstü: lidokaİİn, mepIvakain' — karaciğer parçalar, alerji nadir. Ester = 'Tek nokta: prokain' — plazma parçalar, PABA çıkar, alerji sık. 'Amid=Akıllı (az alerji), Ester=Endişeli (alerji riski)'!"
+      },
+      {
+        "id": "fc-farma-217",
+        "question": "Ketamin, propofol ve tiyopentalin genel anestezi özelliklerini karşılaştırın.",
+        "answer": "[[Ketamin]]: NMDA antagonisti, [[disosiyatif anestezi]], bronkodilatör, sempatik uyarı (KAB↑, HR↑), huzursuz uyanma, kontraendike: hipertansiyon, psikiyatrik hastalıklar. [[Propofol]]: GABA-A potansiyasyonu, hızlı indüksiyon ve derlenme, antiemetik, hipotansiyon, propofol infüzyon sendromu (uzun/yüksek doz). [[Tiyopental]]: barbitürat, kardiyak depresyon, porfiriyada kontrendike.",
+        "difficulty": "hard",
+        "tags": ["Ketamin", "Propofol", "Tiyopental", "Genel Anestezi", "NMDA"],
+        "story_hint": "💡 HİKAYE: Ketamin = 'Bambaşka dünya' (disosiyatif) — bronş açar, kan basıncı yükselir, uyanışta 'rüya görür'. Astımlı astımlı entübasyonda tercih. Propofol = 'Süt gibi beyaz, hızlı uyku, hızlı uyanış' + antiemetik bonus. Tiyopental = 'Eski emekli barbitürat, kalbi baskılar'. 'Ket=Kriz ortamı, Prop=Planlı ameliyat!'"
+      }
+    ],
+    "tus_spots": [
+      "Selektif COX-2 inhibitörleri (selekoksib): GİS yan etki ↓ ama kardiyovasküler tromboembolik risk ↑ (PGI2 azalır).",
+      "NSAİİ kalp yetmezliği, siroz ve dehidratasyon gibi volüm-depleted durumlarda akut böbrek yetmezliğine yol açabilir.",
+      "Opioid aşırı dozu klasik triadı: miozis + solunum depresyonu + bilinç kaybı → naloksan IV.",
+      "Naloksanın etkisi kısadır (30-90 dk); uzun etkili opioidlerde tekrarlayan doz gerekebilir.",
+      "Amid lokal anestezikler: lidokain, bupivakain, ropivakain — 'iki i içerir', karaciğerde yıkılır, gerçek alerji nadir.",
+      "Ester lokal anestezikler: prokain, benzokain, tetrakain — PABA açığa çıkar, alerji daha sık.",
+      "Ketamin bronkodilatör etkisiyle astımlı hastalarda entübasyon için güvenli seçenek; hipertansiyonda kontrendike.",
+      "Propofol infüzyon sendromu: uzun süreli/yüksek doz propofol → laktik asidoz, rabdomiyoliz, kardiyak yetmezlik.",
+      "Tiyopental akut intermittant porfiriyada kesinlikle kontrendikedir.",
+      "Aspirin COX-1 ve COX-2'yi irreversibl (kovalent) inhibe eder — diğer NSAİİ'ler reversibl kompetitif inhibitördür."
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-farma-batch2-005",
+        "case": "Soru:(Farmakoloji - Anestezi) 25 yaşında erkek hasta, trafik kazası sonrası bilinç kaybı, solunum hızı 6/dk ve pupillerde ileri derecede miyozis ile acil servise getirilmektedir. Arkadaşları hastanın uyuşturucu kullandığını söylemektedir. Oksijen verilmekte; SpO2: 82%. Bu hastada acil tedavi nedir?",
+        "options": [
+          "A) Flumazenil IV ver",
+          "B) Naloksan IV ver",
+          "C) Fizostigmin IV ver",
+          "D) N-asetilsistein IV ver",
+          "E) Sodyum bikarbonat IV ver"
+        ],
+        "correct_answer": "B) Naloksan IV ver",
+        "explanation": "Opioid aşırı dozunun klasik triadı: bilinç bozukluğu + solunum depresyonu + miozis (iğne deliği pupil). Bu tablo opioid toksisitesinin patognomonik bulgusudur. Acil tedavi: naloksan (0.4–2 mg IV/IM/IN), opioid reseptör antagonisti olarak tüm opioid reseptörlerini (mü, kappa, delta) bloke eder ve etkileri tersine çevirir. Naloksanın etkisi 30–90 dakika sürer; uzun etkili opioidlerde tekrarlayan doz veya infüzyon gerekebilir. Flumazenil benzodiyazepin antidotudur; fizostigmin kolinerjik sistemde etkilidır; N-asetilsistein parasetamol toksisitesinde; bikarbonat TCA toksisitesinde kullanılır.\n\n🎓 HOCA ÖZETİ:\n- Opioid triadı: Miozis + Solunum depresyonu + Bilinç kaybı\n- Antidot: Naloksan (tüm opioid reseptör antagonisti)\n- Mnemonic: 'MİYOZİS = Morfin, Naloksan = Nefes açar'\n- TUS SPOT: Naloksan etkisi kısa → uzun etkili opioidlerde (metadon) tekrar doz gerekebilir"
+      },
+      {
+        "id": "cc-farma-batch2-006",
+        "case": "Soru:(Farmakoloji - Anestezi) 8 yaşında erkek çocuk, solunum yolu yabancı cismi çıkarma operasyonu için hazırlanmaktadır. Anestezi değerlendirmesinde hafif hışıltılı solunum ve aşikar bronkospazm eğilimi saptanmaktadır. Anestezi ekibi bronkospazmı en az tetikleyecek anestezik ajana karar vermek için tartışmaktadır. Aşağıdakilerden hangisi bu hasta için en uygun indüksiyon ajanıdır?",
+        "options": [
+          "A) Tiyopental",
+          "B) Halotan",
+          "C) Ketamin",
+          "D) Propofol",
+          "E) Etomidat"
+        ],
+        "correct_answer": "C) Ketamin",
+        "explanation": "Ketamin, NMDA reseptör antagonisti olarak disosiyatif anestezi sağlar. En önemli özelliklerinden biri: sempatik sistem uyarısı nedeniyle bronş düz kasını gevşetir (bronkodilatör etki). Bu özelliği sayesinde astım ve reaktif havayolu hastalığı olan olgularda güvenle kullanılabilir. Tiyopental barbitürat olup laringospazm ve bronkospazmı artırabilir. Halotan bronkodilatör olsa da kardiyak aritmilere yol açabilir ve artık kullanımı azalmıştır. Propofol genel olarak iyi tolere edilir ancak ketamin kadar güçlü bronkodilatör değildir. Etomidat kardiyak stabilite için tercih edilir, bronkodilatör etkisi yoktur.\n\n🎓 HOCA ÖZETİ:\n- Ketamin = NMDA antagonisti + disosiyatif + bronkodilatör + sempatik uyarı (KAB↑)\n- Reaktif havayolu / astım hastasında tercih edilir\n- Mnemonic: 'Ketamin = Kurtarıcı Ast(ım)anoz'\n- TUS SPOT: Ketamin kontrendikasyonları: hipertansiyon, psikiyatrik hastalık, yüksek kafa içi basıncı"
+      }
+    ]
+  }
+]

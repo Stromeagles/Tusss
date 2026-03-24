@@ -10,12 +10,14 @@
       {
         "id": "fc-patho-sys4-500",
         "question": "Auer cisimciği hangi hastalık için patognomoniktir?",
-        "answer": "Akut Myeloid Lösemi (AML) - Özellikle M3 tipi."
+        "answer": "Akut Myeloid Lösemi (AML) - Özellikle M3 tipi.",
+        "story_hint": "💡 HİKAYE: Auer cisimciği AML'nin 'parmak izi'dir — kristalize granüller iğne şeklinde sitoplazmada dizilir. M3 (APL) tipinde 'faggot cells' (çubuk demetleri) görülür. All-trans retinoik asit (ATRA) M3'te diferansiyasyonu başlatır!"
       },
       {
         "id": "fc-patho-sys4-501",
         "question": "Yaşlılarda en sık görülen lösemi tipi hangisidir?",
-        "answer": "KLL (Kronik Lenfositik Lösemi)."
+        "answer": "KLL (Kronik Lenfositik Lösemi).",
+        "story_hint": "💡 HİKAYE: KLL yaşlıların 'uslu' lösemisidir — olgun ama işlevsiz lenfositler yavaşça birikir. CD5+, CD23+ B hücreleri. Yaymada 'smudge cells' (ezilmiş hücreler) = KLL'nin parmak izi. Richter transformasyonu en korkulan komplikasyon."
       }
     ],
     "tus_spots": [
@@ -34,12 +36,14 @@
       {
         "id": "fc-patho-sys4-510",
         "question": "Osteosarkomda radyolojide görülen patognomonik periost reaksiyonuna ne denir?",
-        "answer": "Codman Üçgeni."
+        "answer": "Codman Üçgeni.",
+        "story_hint": "💡 HİKAYE: Osteosarkomda tümör periostun altında büyürken periost yukarı kalkar — üçgen şeklinde bir boşluk oluşur (Codman üçgeni). Radyolojide bu üçgen 'burada kemik kanseri var!' diyen alarm işareti. Genç erkeklerde diz çevresi en sık!"
       },
       {
         "id": "fc-patho-sys4-511",
         "question": "Ewing Sarkomu'nda görülen translokasyon hangisidir?",
-        "answer": "t(11;22)."
+        "answer": "t(11;22).",
+        "story_hint": "💡 HİKAYE: Ewing sarkomunda 11. ve 22. kromozomlar translokasyon yapar → EWS-FLI1 füzyon proteini oluşur. Bu protein hücre büyümesini tetikler. 'Soğan zarı' periost reaksiyonu ve CD99 pozitifliği Ewing'in iki imzası!"
       }
     ],
     "tus_spots": [

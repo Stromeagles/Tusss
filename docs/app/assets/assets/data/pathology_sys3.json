@@ -1,0 +1,50 @@
+[
+  {
+    "id": "patho-sys3-001",
+    "subject": "Patoloji",
+    "chapter": "Üriner Sistem",
+    "topic": "Glomerüler Hastalıklar",
+    "sub_topic": "Nefrotik ve Nefritik Sendromlar",
+    "content_summary": "Minimal Değişiklik Hastalığı: Çocuklarda en sık nefrotik sendrom, EM'de pedisel (ayakçık) silinmesi. PSGN (Post-streptokokal): Çocuklarda en sık nefritik sendrom, LM'de 'yıldızlı gökyüzü', EM'de subepitelyal 'hörgüç (humps)' görülür.",
+    "flashcards": [
+      {
+        "id": "fc-patho-sys3-400",
+        "question": "Erişkinlerde en sık görülen nefrotik sendrom tablosu hangisidir?",
+        "answer": "Fokal Segmental Glomerüloskleroz (FSGS) — (Özellikle IV ilaç bağımlılığı ve HIV ile ilişkili)."
+      },
+      {
+        "id": "fc-patho-sys3-401",
+        "question": "En sık görülen primer böbrek karsinomu hangisidir ve hangi gen mutasyonu ile ilişkilidir?",
+        "answer": "Bclear Cell (Berrak Hücreli) Karsinom; VHL (Von Hippel-Lindau) gen mutasyonu."
+      }
+    ],
+    "tus_spots": [
+      "Goodpasture Sendromu: Tip II hipersensitivite, lineer (çizgisel) IgG birikimi.",
+      "Mesane kanserinin en sık tipi: Ürotelyal (değişici epitel) karsinom."
+    ]
+  },
+  {
+    "id": "patho-sys3-002",
+    "subject": "Patoloji",
+    "chapter": "Kadın Genital ve Meme",
+    "topic": "Uterus, Over ve Meme Tümörleri",
+    "sub_topic": "Sık Görülen Maligniteler",
+    "content_summary": "Servikal karsinomda HPV 16 ve 18 en riskli tiplerdir. Endometrium karsinomu en sık kadında görülen genital sistem kanseridir (Östrojen bağımlı tip I sıktır). Overde en sık seröz tümörler görülür.",
+    "flashcards": [
+      {
+        "id": "fc-patho-sys3-410",
+        "question": "Memenin en sık görülen benign tümörü hangisidir?",
+        "answer": "Fibroadenom."
+      },
+      {
+        "id": "fc-patho-sys3-411",
+        "question": "Karnabahar görünümlü, HPV 6 ve 11 ile ilişkili siğillere ne denir?",
+        "answer": "Kondiloma Akuminatum."
+      }
+    ],
+    "tus_spots": [
+      "Psammom cisimciği görülen over tümörü: Seröz kistadenokarsinom.",
+      "Schiller-Duval cisimciği görülen over tümörü: Yolk sac tümörü."
+    ]
+  }
+]

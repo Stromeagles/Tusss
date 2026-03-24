@@ -1,11 +1,11 @@
 {
-    "name": "tus_asistani",
-    "short_name": "tus_asistani",
+    "name": "AsisTus",
+    "short_name": "AsisTus",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#0F172A",
+    "theme_color": "#0F172A",
+    "description": "AsisTus - Yapay zeka destekli TUS hazirlik uygulamasi",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

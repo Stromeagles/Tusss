@@ -1,0 +1,1111 @@
+{
+  "subject": "Patoloji",
+  "chapter": "Patoloji - Konsolide (Batch 2)",
+  "flashcards": [
+    {
+      "id": "patk_111",
+      "question": "Kimyasal karsinogenlerden aflatoksin B1 (Aspergillus'tan üretilen) hangi kansere neden olur?",
+      "answer": "Hepatocellular carcinoma ([[HCC]]) - [[P53]] geninde spesifik mutasyon yaparak.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Küflü fıstık deposunda çalışan bir bekçi (Aspergillus) her gece karaciğerine zehir (aflatoksin B1) sızıyor. Sonunda karaciğer hücreleri isyan edip kontrolsüz çoğalıyor — P53 kapısının kilidi kırılmış, HCC kapıdan içeri girmiş."
+    },
+    {
+      "id": "patk_112",
+      "question": "HTLV-1 (Human T-cell Leukemia Virus type 1) hangi kansere yol açar?",
+      "answer": "[[Erişkin T Hücreli Lösemi]] / Lenfoma (ATLL)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: HTLV-1 virüsü bir vampir gibi yetişkin T hücrelerine yapışıp onları 'ölümsüz lösemi askerleri'ne dönüştürüyor. İsmi bile ipucu: Human T-cell Leukemia Virus — doğrudan T hücreli lösemi yapıyor."
+    },
+    {
+      "id": "patk_113",
+      "question": "HPV (İnsan Papilloma Virüsü) tip 16 ve 18 in kanser yapıcı mekanizması nasıldır?",
+      "answer": "Viral kökenli [[E6]] proteini [[P53]]'ü inhibe eder, [[E7]] proteini ise [[Rb]] proteinini inhibe eder.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: HPV'nin iki hırsızı var: E6 ve E7. E6 hırsızı P53 polisini bağlayıp etkisiz hale getiriyor, E7 hırsızı ise Rb güvenlik kamerasını kapatıyor. İkisi birlikte çalışınca hücre kontrolsüz bölünmeye başlıyor."
+    },
+    {
+      "id": "patk_114",
+      "question": "EBV (Epstein-Barr Virüs) hangi kanserlerle ilişkilidir?",
+      "answer": "[[Burkitt lenfoma]], Nazofaringeal karsinom, [[Hodgkin lenfoma]], İmmünyetmezlikte [[B hücre]] lenfoması",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: EBV bir 'öpücük virüsü' ama öpücüğü dört farklı kapıya bırakıyor: Burkitt'in Afrika kulübesi, burunun nazofarenksi, Hodgkin'in sahnesi ve bağışıklığı düşük B hücre mahallesi. Her kapıda farklı bir kanser açılıyor."
+    },
+    {
+      "id": "patk_115",
+      "question": "Helicobacter pylori kronik enfeksiyonu midede hangi iki kanser türüne sebep olabilir?",
+      "answer": "[[Gastrik adenokarsinom]] ve [[MALT lenfoma]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: H. pylori midede kiracı gibi yerleşiyor ama iki ayrı hasar veriyor: bir taraftan mide bezlerini adenokarsinoma çeviriyor, diğer taraftan lenfoid dokuyu tahrik edip MALT lenfoma başlatıyor. Tek bakteri, iki kanser — kötü kiracı!"
+    },
+    {
+      "id": "patk_116",
+      "question": "Kanserde yayılma tiplerinden karsinomlar (epitelyal maligniteler) en sık hangi yolla yayılır?",
+      "answer": "[[Lenfatik yol]] ile",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Karsinomlar 'yüzey hücreleri' olduğu için lenfatik kanalları otobüs gibi kullanıyorlar. Epitel tabakasının hemen altındaki lenf damarlarına atlayıp lenf nodlarına seyahat ediyorlar — karsinomun favorisi lenfatik yol!"
+    },
+    {
+      "id": "patk_117",
+      "question": "Sarkomlar (mezenkimal tümörler) en sık hangi yolla yayılır?",
+      "answer": "[[Hematojen]] (kan) yolla",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Sarkomlar derin dokularda (kas, kemik, bağ dokusu) yaşıyor ve etraflarında bol kan damarı var. Bu yüzden kan yolunu tercih ediyorlar — sarkom = kan yolu, karsinom = lenf yolu olarak hatırla!"
+    },
+    {
+      "id": "patk_118",
+      "question": "Damarları istila etmeyi (hematojen yayılmayı) seven 4 önemli karsinom hangileridir?",
+      "answer": "[[Folliküler tiroid karsinomu]], Koryokarsinom, [[Renal Hücreli Karsinom]] (RCC), [[Hepatosellüler Karsinom]] ([[HCC]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: 'FoKuR HeKim' diye hatırla: Folliküler tiroid, Koryokarsinom, Renal Hücreli Karsinom, Hepatosellüler Karsinom. Bu dört karsinom isyankar — lenf yerine doğrudan kan damarlarına atlıyorlar!"
+    },
+    {
+      "id": "patk_119",
+      "question": "Yenidoğanda hidrops fetalisin immun (antikor aracılı) sebebi nedir?",
+      "answer": "Rh uyuşmazlığına bağlı [[Eritroblastosis Fetalis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Rh(-) anne 'yabancı' Rh(+) bebeğe karşı asker (anti-Rh antikor) gönderiyor. Bu askerler bebeğin eritrositlerini yıkınca bebek şişiyor (hidrops) ve kemik iliği çılgınca eritroblast üretiyor — Eritroblastosis Fetalis!"
+    },
+    {
+      "id": "patk_120",
+      "question": "Pediatrik dönem (ilk 10 yaş) görülen en sık benign tümör nedir?",
+      "answer": "[[Hemanjiyom]] (Çilek [[hemanjiyom]]u - Strawberry hemangioma)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Yeni doğan bir bebeğin yanağında kıpkırmızı bir çilek beliriyor — bu çilek hemanjiyom! Çocukluk çağının en sık benign tümörü tıpkı bir çilek gibi kırmızı, kabarık ve zamanla kendiliğinden küçülüyor."
+    },
+    {
+      "id": "patk_121",
+      "question": "Nöroblastom hangi yapı kaynaklıdır ve kan tablosunda ne artar?",
+      "answer": "Adrenal medulla veya sempatik ganglion (Nöral kres[[t hücre]]si) / [[VMA]] ve [[HVA]] idrarda artar.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Böbreküstü bezinin iç kısmında (medulla) gizlenen nöral krest hücreleri kontrolsüz çoğalıyor. Katekolamin fabrikası gibi çalışıp idrara VMA ve HVA döküyorlar — idrar testi ile yakalanıyorlar!"
+    },
+    {
+      "id": "patk_122",
+      "question": "Çocukluk çağının en sık böbrek tümörü nedir?",
+      "answer": "[[Wilms tümörü]] ([[Nefroblastom]]) - WT1/WT2 gen mutasyonu.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Küçük Willy'nin böbreğinde bir tümör büyüyor — Wilms tümörü! WT1 ve WT2 genleri bozulunca böbrek embriyonal dokudan gelen hücreler (nefroblast) kontrolsüz çoğalıyor. Çocuk + böbrek = Wilms!"
+    },
+    {
+      "id": "patk_123",
+      "question": "Çocuklarda kemiğin en sık primer malign tümörü nedir?",
+      "answer": "[[Osteosarkom]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Hızla büyüyen bir çocuğun diz çevresinde kemik ağrısı başlıyor — osteosarkom! Büyüme plağının en aktif olduğu yerde kemik hücreleri isyan ediyor. Çocuk + kemik kanseri = osteosarkom diye hatırla."
+    },
+    {
+      "id": "patk_124",
+      "question": "Kalbin sol tarafının konjenital yetmezlik sendromlarından, doğum sonrası ductus arteriosus kapanırsa yaşamla bağdaşmayan hangisidir?",
+      "answer": "[[Hipoplastik sol kalp sendromu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Sol kalp o kadar küçük ki (hipoplastik) kan pompalayamıyor. Ductus arteriosus açıkken sağ kalp yardım ediyor ama ductus kapanınca sol kalp tek başına kalamıyor — yaşamla bağdaşmaz hale geliyor."
+    },
+    {
+      "id": "patk_125",
+      "question": "Gümüş lekeleriyle boyanan, genelde diyabet ve hipertansiyonda görülen küçük damar duvarı kalınlaşması nedir?",
+      "answer": "[[Hyalin arteriyoloskleroz]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Diyabet ve hipertansiyon ikilisi küçük damarlara 'cam macunu' (hyalin madde) sürüyor. Damar duvarı kalınlaşıp sertleşiyor, gümüş boyayla parlak parlak boyanıyor — hyalin arteriyoloskleroz!"
+    },
+    {
+      "id": "patk_126",
+      "question": "Tümör dokusunda hücre tiplerinin köken aldığı orijinal dokuya yapısal benzerlik derecesine ne ad verilir?",
+      "answer": "[[Diferansiyasyon]] (Farklılaşma)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Tümör hücresine soruyorsun 'sen kimsin?' — eğer annesine benziyorsa iyi diferansiye, hiç benzemiyorsa kötü diferansiye. Diferansiyasyon = 'aileye ne kadar benziyorsun?' sorusunun cevabı."
+    },
+    {
+      "id": "patk_127",
+      "question": "Diferansiyasyon kaybı (hücrelerin tamamen farklılaşmamış olması) haline ne ad verilir?",
+      "answer": "[[Anaplazi]] (Malignitenin en güvenilir morfolojik bulgularından biridir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: 'Ana' (geri) + 'plazi' (oluşum) = geriye dönüş. Hücre o kadar ilkel hale gelmiş ki kimliğini kaybetmiş, nereden geldiği belli değil. Anaplazi gören patolog 'bu kesin malign' diyor — en güvenilir kötülük işareti!"
+    },
+    {
+      "id": "patk_128",
+      "question": "Fibrom benign bir tümör iken, fibroz dokunun malign karşılığı nedir?",
+      "answer": "[[Fibrosarkom]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Fibrom sakin bir koyun iken, fibrosarkom aynı koyunun kurt kılığına girmesi. -om son eki 'iyi huylu', -sarkom son eki 'kötü huylu mezenkimal' demek. Fibröz doku kötüleşince fibro+sarkom oluyor."
+    },
+    {
+      "id": "patk_129",
+      "question": "Kıkırdak dokunun benign ve malign tümörlerinin isimleri nelerdir?",
+      "answer": "[[Kondrom]] (Benign) ve [[Kondrosarkom]] (Malign)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kıkırdak (chondro) ailesi iki kardeş: uslu Kondrom ve asi Kondrosarkom. Kondrom sessizce büyürken, Kondrosarkom agresif davranıp etrafa yayılıyor. Kıkırdak + -om = iyi, kıkırdak + -sarkom = kötü."
+    },
+    {
+      "id": "patk_130",
+      "question": "Çizgili kas dokusunun malign tümörü nedir?",
+      "answer": "[[Rhabdomyosarkom]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Rhabdo = çubuk/çizgi, myo = kas. Çizgili kas hücresi isyan edip malign olunca rhabdomyosarkom oluyor. Çocuklarda yumuşak doku sarkomlarının en sık nedeni — çizgili kasın kötü versiyonu!"
+    },
+    {
+      "id": "patk_131",
+      "question": "Yassı epitelden köken alan malign tümörlere genel ad olarak ne denir?",
+      "answer": "[[Skuamöz hücreli karsinom]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Squamous = pul/yassı. Yassı epitel hücreleri (cilt, ağız, özofagus) malign olunca 'skuamöz hücreli karsinom' adını alıyor. Keratin incileri üreterek kendini ele veriyor — yassı hücrenin kötü yüzü!"
+    },
+    {
+      "id": "patk_132",
+      "question": "Glandüler (bez epitelinden) köken alan malign tümörlere ne ad verilir?",
+      "answer": "[[Adenokarsinom]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Adeno = bez. Bez hücreleri normalda salgı üretir, ama malign olunca 'adenokarsinom' adını alır. Mide, kolon, akciğer, pankreas bezleri — hepsi adenokarsinom potansiyeli taşıyor. Bez + karsinom = adenokarsinom!"
+    },
+    {
+      "id": "patk_133",
+      "question": "Birden fazla germ yaprağına (Endoderm, Ektoderm, Mezoderm) ait doku içeren tümörlere ne ad verilir?",
+      "answer": "[[Teratom]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Teratom kelimesi 'teras' (canavar) kökenli. İçinde diş, saç, kemik, bağırsak dokusu — her şey var! Üç germ yaprağından da doku içeren bu 'canavar tümör' gerçek bir biyolojik kaos."
+    },
+    {
+      "id": "patk_134",
+      "question": "Koristom nedir?",
+      "answer": "Normal mikroskobik yapıda ancak anormal yerleşimli (ektopik) doku kitlesi (Ör: Mide mukozasında [[pankreas]] dokusu)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Koristom = 'Kaybolmuş turist'. Normal bir doku (pankreas gibi) yanlış yere (mideye) yerleşmiş. Doku kendisi normal ama adresi yanlış — ektopik yerleşim! Koristom = doğru doku, yanlış adres."
+    },
+    {
+      "id": "patk_135",
+      "question": "Hamartom nedir?",
+      "answer": "Kendi yerleşim yerinde (lokal) bulunan, ancak düzensiz organize olmuş doku kitlesi (Ör: Akciğerde kıkırdak ağırlıklı [[hamartom]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Hamartom = 'Dağınık oda'. Doku doğru yerde ama düzensiz dizilmiş, sanki bir çocuk odasındaki oyuncaklar gibi. Akciğerde kıkırdak var ama kaotik şekilde — doğru adres, yanlış düzen!"
+    },
+    {
+      "id": "patk_136",
+      "question": "Tümör hücrelerinde nükleus/sitoplazma (N/C) oranının artması neyi ifade eder?",
+      "answer": "Malign hücrelerde nükleer büyüme ve [[pleomorfizm]]i (Normal oran 1:4 iken 1:1'e yaklaşır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Normal hücrede çekirdek küçük bir yönetici iken, malign hücrede çekirdek devasa bir diktatöre dönüşüyor. N/C oranı 1:4'ten 1:1'e yaklaşıyor — çekirdek büyüdükçe kötülük artıyor!"
+    },
+    {
+      "id": "patk_137",
+      "question": "Karsinom in situ (CIS) nedir?",
+      "answer": "Displastik hücrelerin epitelin tüm kalınlığını kaplaması ancak [[bazal membran]]ı henüz aşmaması durumu",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: In situ = 'yerinde duran'. Kanser hücreleri tüm epitel katını işgal etmiş ama bazal membran duvarını henüz aşamamış — sanki hapiste bekleyen mahkumlar gibi. Duvar yıkılırsa invaziv kanser başlıyor!"
+    },
+    {
+      "id": "patk_138",
+      "question": "Malign tümörlerde stroma gelişiminin bağ dokudan çok zengin ve sert olmasına ne ad verilir?",
+      "answer": "[[Desmoplazi]] ([[Desmoplastik reaksiyon]] - Skiröz tümör)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Desmos = bağ. Tümör etrafında vücut savunma duvarı örüyor — bol fibröz doku ile tümörü kuşatıyor. Ama bu duvar tümörü sert bir kitle haline getiriyor. Desmoplazi = tümörün etrafındaki 'beton duvar' reaksiyonu."
+    },
+    {
+      "id": "patk_139",
+      "question": "Pankreas adenokarsinomu ve meme kanserlerinde kanser hücresi için karakteristik, lokal yoğun stromayı anlatan terim nedir?",
+      "answer": "[[Desmoplazi]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Pankreas ve meme kanserleri 'taş gibi sert' kitleler oluşturuyor. Sebebi desmoplazi — kanser hücreleri etrafına yoğun fibröz doku çekiyor. Elle muayenede sert kitle hissediliyorsa desmoplastik reaksiyonu düşün!"
+    },
+    {
+      "id": "patk_140",
+      "question": "Bir tümörün primer olarak bölgesel lenf nodlarına yayılma eğilimi, epitelial malignitenin (Karsinom) ana özelliğidir. İstisnai olarak hematojen yayılan karsinomlar hangileridir?",
+      "answer": "Hepatoselüler karsinom, böbrek hücreli karsinom, koryokarsinom, tiroid [[folliküler karsinom]]u",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Dört isyankar karsinom lenf yolunu reddedip kan damarlarına atlıyor. 'HeBoKoTi' diye hatırla: Hepatoselüler, Böbrek hücreli, Koryokarsinom, Tiroid folliküler. Bu dörtlü kan yolunu tercih eden asi karsinomlar!"
+    },
+    {
+      "id": "patk_141",
+      "question": "Kanser kaşeksisi sendromunda iştahsızlık, kas yıkımı ve kilo kaybına yol açan temel tümör faktörü/sitokin hangisidir?",
+      "answer": "[[TNF-alfa]] (Tümör Nekrozis Faktör alfa, diğer adıyla [[Kaşektin]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: TNF-alfa'nın diğer adı zaten 'Kaşektin' — adı kaşeksiyi ele veriyor! Bu sitokin hem iştahı kapatıyor hem kasları eritiyor hem de yağları yakıyor. Kanser hastasını bir iskelet haline getiren gizli ajan TNF-alfa."
+    },
+    {
+      "id": "patk_142",
+      "question": "Bronkojenik karsinomlardan olan Küçük Hücreli Akciğer Kanserinin (SCLC) neden olduğu en yaygın paraneoplastik sendromlar hangileridir?",
+      "answer": "[[Cushing sendromu]] ([[ACTH]] salgısı) ve Uygunsuz [[ADH]] Sendromu ([[SIADH]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Küçük hücreli akciğer kanseri nöroendokrin kökenli — hormon fabrikası gibi çalışıyor! Ektopik ACTH salgılayıp Cushing yapıyor, ektopik ADH salgılayıp SIADH yapıyor. Küçük hücre, büyük hormon kaos!"
+    },
+    {
+      "id": "patk_143",
+      "question": "Skuamöz hücreli akciğer karsinomunda sıklıkla görülen ve hiperkalsemiye neden olan paraneoplastik peptit nedir?",
+      "answer": "[[PTH-rp]] ([[Parathormon related peptide]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Skuamöz hücreli karsinom sahte PTH (PTH-rp) üreterek vücudu kandırıyor. Vücut 'kalsiyum lazım' sanıp kemiklerden kalsiyum çekiyor — sonuç hiperkalsemi! Skuamöz = PTH-rp = hiperkalsemi zincirini hatırla."
+    },
+    {
+      "id": "patk_144",
+      "question": "Trousseau bulgusu (Gezici Tromboflebit - Migratory thrombophlebitis) olarak bilinen paraneoplastik bulgu en sık hangi kanserlerle ilişkilidir?",
+      "answer": "[[Pankreas]] karsinomu ve mide [[adenokarsinom]]u (Müsin salgılayan kanserler)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Dr. Trousseau kendisi de bu bulguyu kendi bacağında fark edip pankreas kanseri tanısı koymuş! Müsin salgılayan kanserler (pankreas, mide) kanı yapışkan hale getirip gezici tromboflebit yapıyor."
+    },
+    {
+      "id": "patk_145",
+      "question": "Kanda yüksek Alfa-fetoprotein (AFP) düzeyi tipik olarak hangi kanserleri düşündürür?",
+      "answer": "Hepatoselüler karsinom ([[HCC]]) ve [[Yolk sak tümörü]] ([[Endodermal sinüs tümörü]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: AFP normalde fetüsün karaciğerinde üretilir. Yetişkinde yükseliyorsa iki ihtimal var: ya karaciğer kanseri (HCC) ya da yolk sak tümörü. Fetüs proteini = fetal kaynaklı kanserler — karaciğer ve yolk sak!"
+    },
+    {
+      "id": "patk_146",
+      "question": "Kanda yüksek Karsinoembriyonik antijen (CEA) özellikle hangi kanserde takip amaçlı kullanılır?",
+      "answer": "[[Kolorektal]] kanserler",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: CEA = Colon'u En iyi Anlatan marker! Kolorektal kanser ameliyatından sonra CEA takibi yapılıyor — düşerse iyi, tekrar yükselirse nüks var demek. CEA kolon kanserinin sadık takipçisi."
+    },
+    {
+      "id": "patk_147",
+      "question": "Epitelyal ovariyan tümörlerde (özellikle seröz kistadenokarsinom) yüksek olan tümör markeri nedir?",
+      "answer": "[[CA 125]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: CA 125 = 'Over'in şifresi 125'. Over kanseri (özellikle seröz tip) CA 125'i fırlatıyor. Kadında karın şişliği + CA 125 yüksekliği = over kanseri şüphesi. 125'i over ile eşleştir!"
+    },
+    {
+      "id": "patk_148",
+      "question": "CA 19-9 tümör markeri en sık hangi kanser şüphesinde istenir?",
+      "answer": "[[Pankreas]] ve safra yolu kanserleri",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: CA 19-9 = Pankreas'ın '19 numaralı' alarm sistemi. Pankreas ve safra yolları kanserinde yükseliyor. 19-9'u 'PankreaSafra' ile eşle — sarılık + CA 19-9 yüksekliği = pankreas/safra yolu kanseri!"
+    },
+    {
+      "id": "patk_149",
+      "question": "PSA (Prokstat Spesifik Antijen) yüksekliği tek başına prostat kanseri tanısı koydurur mu?",
+      "answer": "Hayır, [[BPH]] (Benign Prostat [[Hiperplazi]]si) ve prostatitte de yükselebilir, tarama ve takipte kullanılır.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: PSA prostatın 'genel alarm sistemi' — sadece kanserde değil, BPH ve prostatitte de çalıyor. Yani PSA yüksek diye panik yok! Tarama ve takipte kullanılır ama tek başına tanı koydurtmaz."
+    },
+    {
+      "id": "patk_150",
+      "question": "Eritrosit sedimentasyon hızı ve CRP ne zaman artar?",
+      "answer": "[[Akut faz]] reaksiyonlarında (İltihap, [[enfeksiyon]], malignite vb.)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: ESR ve CRP vücudun 'yangın alarmı'. İltihap, enfeksiyon veya kanser olduğunda ikisi birlikte yükseliyor. Akut faz reaktanları olarak vücuttaki her türlü yangını haber veriyorlar — nonspesifik ama çok hassas dedektörler!"
+    },
+    {
+      "id": "patk_151",
+      "question": "Kalp yetmezliği sol atrium basıncını artırır. Akciğer kılcal damarlarından alveollere geçen sıvının oluşturduğu tablo nedir?",
+      "answer": "[[Pulmoner ödem]] ve [[konjesyon]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Sol kalp yetmezliğinde kan akciğerde birikiyor — sol atriyum basıncı artınca sıvı damarlardan alveollere sızıyor. Hasta boğuluyormuş gibi nefes nefese kalıyor — pulmoner ödem ve konjesyon tablosu!"
+    },
+    {
+      "id": "patk_152",
+      "question": "Sağ kalp yetmezliğinde klasik klinik bulgular nelerdir?",
+      "answer": "Boyun venlerinde dolgunluk, hepatomegali (nutmeg/hindistan cevizi karaciğer) ve alt ekstremite (periferik) pretibial [[ödem]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Sağ kalp yetmezliğinde kan geri birikip üç yerde şişlik yapıyor: boyun venleri dolup şişiyor, karaciğer hindistan cevizi gibi büyüyor (nutmeg liver), bacaklar su topluyor. Boyun-karaciğer-bacak üçlüsü!"
+    },
+    {
+      "id": "patk_153",
+      "question": "Kardiyak hipertrofide (Hücre büyümesi), hacim yüklenmesine bağlı olarak (Kapak yetmezliklerinde) miyokard yapısı nasıl değişir?",
+      "answer": "[[Eksantrik hipertrofi]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Hacim yüklenmesi = çok su dolması. Kalp odası balona dönüyor, duvar incelip genişliyor — eksantrik (dışa doğru) hipertrofi. Sarkomerler seri ekleniyor. Hacim = genişleme = eksantrik!"
+    },
+    {
+      "id": "patk_154",
+      "question": "Kardiyak hipertrofide basınç yüklenmesine bağlı olarak (Aort stenozu veya hipertansiyon) miyokard yapısı nasıl değişir?",
+      "answer": "[[Konsantrik hipertrofi]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Basınç yüklenmesi = duvarı iterek zorluyor. Kalp duvarı kalınlaşarak direniyor — konsantrik (içe doğru) hipertrofi. Sarkomerler paralel ekleniyor. Basınç = kalınlaşma = konsantrik! Aort stenozu ve HT'nin imzası."
+    },
+    {
+      "id": "patk_155",
+      "question": "Aterosklerozda plak gelişiminde ilk oluşan (makroskopik ve histolojik) lezyon nedir?",
+      "answer": "Yağlı çizgilenmeler ([[Fatty streaks]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Ateroskleroz bir yolculuk — ilk adım yağlı çizgilenmeler (fatty streaks). Damar duvarına yapışan köpük hücreleri sarı çizgiler oluşturuyor. Daha çocuklukta başlayan bu çizgiler yıllar sonra plak olacak!"
+    },
+    {
+      "id": "patk_156",
+      "question": "Aterosklerotik plağın yırtılmasında (rüptür - MI veya inme başlatan süreç) en zayıf noktası neresidir?",
+      "answer": "Plağın omuz bölgesi ([[fibroz kapsül]]ün en ince ve inflamasyonun en çok olduğu yer)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Plağı bir yanardağ gibi düşün — en ince kabuk 'omuz bölgesinde'. Makrofajlar burada en yoğun, fibroz kapsül en ince. Yanardağ omuzdan patlar, plak da omuzdan yırtılır — MI veya inme başlıyor!"
+    },
+    {
+      "id": "patk_157",
+      "question": "Prinzmetal (Varyant) angina pektorisin etyopatogenezinde yatan temel mekanizma nedir?",
+      "answer": "[[Koroner arter spazmı]] (Aterosklerotik [[plak]] olması şart değildir, istirahatte gelir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Prinzmetal anginada plak yok ama koroner arter aniden kasılıp daralıyor — spazm! Hasta istirahatte, belki uyurken göğüs ağrısı başlıyor. Varyant = farklı, çünkü plaksız ve istirahatte geliyor."
+    },
+    {
+      "id": "patk_158",
+      "question": "Akut Miyokard Enfarktüsü (MI) sonrası histolojik olarak koagülasyon nekrozu en erken ne kadar sürede görülür?",
+      "answer": "Yaklaşık 4-12 saat sonra",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: MI sonrası ilk 4 saatte mikroskop altında hiçbir şey görünmüyor — 'sessiz dönem'. 4-12 saat sonra koagülasyon nekrozu başlıyor, hücreler pişmiş yumurta gibi pıhtılaşıyor. Histoloji gecikmeli çalışıyor!"
+    },
+    {
+      "id": "patk_159",
+      "question": "MI sonrası inflamasyon sahasına ilk ulaşan (1-3 gün) yangı hücreleri hangileridir?",
+      "answer": "[[Nötrofiller]] ([[PMNL]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Nötrofiller inflamasyonun 'itfaiyecileri' — her zaman ilk olay yerine koşanlar! MI sonrası 1-3. günde nekrotik alana nötrofiller akın ediyor. İlk gelen her zaman nötrofil, sonra makrofajlar devralıyor."
+    },
+    {
+      "id": "patk_160",
+      "question": "MI sonrası makrofajların en yoğun görev yaptığı dönem hangi günlerdir ve en tehlikeli, yırtılmanın en sık görüldüğü dönemdir?",
+      "answer": "3-7. günler",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: 3-7. günlerde makrofajlar nekrotik dokuyu temizliyor ama bu 'yıkım dönemi' kalp duvarını en zayıf hale getiriyor. Rüptür riski en yüksek! 3-7 gün = makrofaj + yumuşama + yırtılma tehlikesi."
+    },
+    {
+      "id": "patk_161",
+      "question": "Miyokard enfarktüsü sonrası kanda en erken yükselen biyomerker hangisidir?",
+      "answer": "[[Miyoglobin]] (Özgül değildir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Miyoglobin kas hücresinin küçük oksijen taşıyıcısı — hücre hasarlanınca ilk kaçan o! En hızlı yükselen ama en az spesifik olan marker. Koşucu gibi hızlı ama yönü belirsiz — her kas hasarında çıkıyor."
+    },
+    {
+      "id": "patk_162",
+      "question": "Miyokard enfarktüsü tanısında kanda en spesifik olan ve 3-4 saatte yükselmeye başlayıp günlerce yüksek kalan enzim markeri hangisidir?",
+      "answer": "[[Kardiyak Troponinler]] ([[TnI]] ve [[TnT]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Troponinler kalbin 'parmak izi' — sadece kalp kasına özgü! 3-4 saatte yükselip günlerce yüksek kalıyorlar. TnI ve TnT ikiz dedektifler: MI'ın en güvenilir kanıtını sunuyorlar."
+    },
+    {
+      "id": "patk_163",
+      "question": "Dressler Sendromu nedir?",
+      "answer": "[[Enfarktüs]]ten haftalar sonra ortaya çıkan, miyokard antijenlerine karşı oluşan otoimmün [[fibrin]]öz peri[[kardit]]tir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: MI'dan haftalar sonra bağışıklık sistemi 'geç intikam' alıyor — nekrotik kalp dokusuna karşı antikor üretiyor ve perikarditi tetikliyor. Dressler = geç gelen otoimmün misafir, fibrinöz perikardit hediye getiriyor!"
+    },
+    {
+      "id": "patk_164",
+      "question": "Akut romatizmal ateşin (ARA) majör Jones kriterleri nelerdir?",
+      "answer": "J (Joint/[[Poliartrit]]), O (Kalp/[[Kardit]]), N (Nodüller/Subkutan), E ([[Eritema marginatum]]), S ([[Sydenham koresi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: JONES kısaltması her şeyi anlatıyor: J=Joint (eklem ağrısı), O=kalp (O harfi kalbe benziyor, kardit), N=Nodül (subkutan), E=Eritema marginatum (halka döküntü), S=Sydenham koresi (dans hareketleri). JONES dans ediyor!"
+    },
+    {
+      "id": "patk_165",
+      "question": "Romatizmal kalp hastalığının patognomonik lezyonları miyokardda hangi isimle anılır ve içerdikleri dev makrofajların adı nedir?",
+      "answer": "[[Aschoff Cisimcikleri]] ve içlerindeki tırtıl çekirdekli [[Anitschkow hücreleri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Miyokardda küçük granülomlar (Aschoff cisimcikleri) oluşuyor, içlerinde tırtıl gibi çekirdekleri olan dev makrofajlar (Anitschkow hücreleri) yaşıyor. Tırtıl çekirdekli hücre = romatizmal kalp hastalığının imzası!"
+    },
+    {
+      "id": "patk_166",
+      "question": "Kronik romatizmal kalp hastalığının en çok etkilediği ve fibrozis/kalsifikasyonla en sık darlığına neden olduğu kapak hangisidir?",
+      "answer": "[[Mitral Kapak]] (Balık ağzı veya ilik görünümü deformitesi)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Romatizmal kalp hastalığı mitral kapağı en çok seviyor! Kapak fibrozis ve kalsifikasyonla daraldıkça 'balık ağzı' gibi küçülüyor. Mitral stenoz = romatizmal kalp hastalığının en klasik son durağı."
+    },
+    {
+      "id": "patk_167",
+      "question": "İnfektif endokarditlerde (IE) kapakçıklarda oluşan pıhtı+mikroorganizma içeren yapılara ne ad verilir?",
+      "answer": "[[Vejetasyon]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kapak üzerinde bakteriler pıhtı ile karışıp 'bitki gibi büyüyen' kitleler oluşturuyor — vejetasyon! Tıpkı kayaların üzerinde yosun bitmesi gibi, kapak üzerinde bakteri+fibrin yığılıyor."
+    },
+    {
+      "id": "patk_168",
+      "question": "Akut İnfektif endokarditin en sık etkeni olan bakteri ve tuttuğu kapakların durumu nedir?",
+      "answer": "[[Staphylococcus aureus]] - Önceden normal (sağlıklı) kapakları da tutabilir ve yüksek dektriktiftir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: S. aureus agresif bir saldırgan — sağlıklı kapakları bile istila edebiliyor! IV ilaç kullanıcılarının korkulu rüyası. Akut, yıkıcı, hızlı — aureus her kapağa saldırır, hasarlı olmasını beklemez."
+    },
+    {
+      "id": "patk_169",
+      "question": "Subakut infektif endokarditin en sık etkeni olan bakteri türü hangisidir?",
+      "answer": "[[Viridans grup Streptokoklar]] (Zaten hasarlı veya protez kapakları tutma eğilimindedir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Viridans streptokoklar ağız florasında yaşayan uysal bakteriler. Ama hasarlı kapak görünce fırsatı kaçırmıyorlar — yavaş yavaş (subakut) yerleşiyorlar. Diş çekimi sonrası riskli — subakut = viridans = hasarlı kapak!"
+    },
+    {
+      "id": "patk_170",
+      "question": "IE'de parmak uçlarında ağrılı ve kırmızı nodüllerle seyreden klinik bulguya ne ad verilir?",
+      "answer": "[[Osler nodülleri]] ([[İmmün kompleks]] birikimine bağlıdır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: 'Osler = Ouch (Ağrılı)!' Parmak uçlarında ağrılı kırmızı nodüller — immün kompleks birikimi sonucu. Osler nodülleri ağrılı, Janeway lezyonları ağrısız — Osler = Ouch, Janeway = Painless olarak hatırla!"
+    },
+    {
+      "id": "patk_171",
+      "question": "IE'de avuç içi ve ayak tabanında ağrısız, kırmızı-mor maküler lezyonlara ne ad verilir?",
+      "answer": "[[Janeway lezyonları]] (Septik mikroembolilere bağlıdır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Janeway lezyonları avuç içi ve ayak tabanında ağrısız mor lekeler — septik embolilerin bıraktığı izler. Janeway = 'Jane yolda yürürken acı hissetmiyor' yani ağrısız! Septik emboli kaynaklı."
+    },
+    {
+      "id": "patk_172",
+      "question": "Kalbin en sık görülen primer benign tümörü hangisidir?",
+      "answer": "[[Miksoma]] (En sık sol atriyumda görülür)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Sol atriyumda sapla asılı bir 'jöle top' sallanıyor — bu miksoma! Kalbin en sık benign tümörü sol atriyumda jölemsi bir kitle olarak büyüyor. Miksoid = müköz/jölemsi, sol atriyum = favori yeri."
+    },
+    {
+      "id": "patk_173",
+      "question": "Küçük çocuklarda kalpte en sık izlenen primer benign tümör ve ilişkili hastalık hangisidir?",
+      "answer": "[[Rhabdomyom]], Tüberöz Skleroz ile ilişkilidir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Çocuğun kalbinde çizgili kas tümörü (rhabdomyom) büyüyor ve beyin-böbrek-ciltte de tüberler var — Tüberöz Skleroz! Rhabdomyom + çocuk = Tüberöz Skleroz bağlantısını hatırla."
+    },
+    {
+      "id": "patk_174",
+      "question": "Büyük damar vaskülitlerinden (Tüm aortayı ve dallarını tutan) granülomatöz inflamasyon gösteren arteritlerin iki ana formu nedir?",
+      "answer": "Dev hücreli ([[Temporal]]) arterit ve [[Takayasu arteriti]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: İki büyük damar vasküliti, ikisi de granülomatöz: Temporal arterit yaşlı kadınların şakak arterini seviyor, Takayasu genç kadınların aort arkını seviyor. Yaşlı kadın = temporal, genç kadın = Takayasu!"
+    },
+    {
+      "id": "patk_175",
+      "question": "50 yaş üstü kadınlarda baş ağrısı, çiğnerken yorulma (çene klaudikasyonu) ve görme kaybı riski olan vaskülit nedir?",
+      "answer": "[[Temporal]] (Dev hücreli) arterit.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: 50+ yaşında bir kadın sakız çiğnerken çenesi ağrıyor (çene klaudikasyonu), başı zonkluyor ve bir gözü kararmaya başlıyor. Acil steroid verilmezse kör kalabilir — temporal arterit acildir!"
+    },
+    {
+      "id": "patk_176",
+      "question": "Özellikle 40 yaş altı kadınlarda sık görülen, nabızsızlık hastalığı (Pulseless disease) olarak bilinen aortik ark arteriti nedir?",
+      "answer": "[[Takayasu arteriti]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Genç bir kadın kollarını kaldırınca nabzı kayboluyor — 'nabızsızlık hastalığı'! Takayasu arteriti aort arkını ve dallarını tıkayarak kol nabzını yok ediyor. Genç kadın + nabızsızlık = Takayasu!"
+    },
+    {
+      "id": "patk_177",
+      "question": "Küçük çocuklarda koroner arter anevrizmaları yapma riski yüksek, mukokutanöz lenf nodu sendromu olan hastalık nedir?",
+      "answer": "[[Kawasaki Hastalığı]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Küçük bir çocuk ateşli, dudakları kıpkırmızı çatlak, gözleri kızarmış, boyun lenf nodları şiş — Kawasaki! En tehlikeli komplikasyonu koroner arter anevrizması. Çocuk + ateş + koroner anevrizma = Kawasaki."
+    },
+    {
+      "id": "patk_178",
+      "question": "Genç erkeklerde sigara kullanımıyla sıkı ilişkili olan, ayak parmaklarında iskemik ülser/gangren yapan vaskülit hangisidir?",
+      "answer": "[[Buerger Hastalığı]] ([[Tromboanjitis Obliterans]]).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Genç bir adam ağır sigara içiyor, ayak parmakları morarıp gangren oluyor — Buerger hastalığı! Sigara bırakmazsa ampütasyon kaçınılmaz. Buerger = Burger = sigara ile pişen ayak parmakları!"
+    },
+    {
+      "id": "patk_179",
+      "question": "Orta boy damalarlı tutan, MPO-ANCA ve PR3-ANCA negatif olan ama sıklıkla Hepatit B infeksiyonu ile seyreden fibrinoit nekrozlu vaskülit nedir?",
+      "answer": "[[Poliarteritis Nodosa]] ([[PAN]]). (Not: Glomerülonefrit yapabilir [[ama]] patogenez farklıdır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: PAN = ANCA negatif! Hepatit B ile arkadaş, orta boy damarları tutan, fibrinoid nekroz yapan vaskülit. 'PAN kızartma tavasında Hep-B ile pişiyor' — ANCA yok ama Hep-B var!"
+    },
+    {
+      "id": "patk_180",
+      "question": "Küçük damar (pauci-immun) vaskülitlerinden PR3-ANCA (C-ANCA) pozitifliğiyle klasikleşen ve solunum yollarında kaviteli granülom yapan hastalık nedir?",
+      "answer": "[[Wegener granülomatozu]] ([[Granülom]]atöz Polianjiitis).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Wegener üçlüsü: üst solunum yolu (burun), alt solunum yolu (akciğer kaviteleri) ve böbrek (glomerülonefrit). C-ANCA pozitif! 'W' harfini düşün: W = Wegener = C-ANCA = kaviteli granülom."
+    },
+    {
+      "id": "patk_181",
+      "question": "Hipertansiyon patojenezinde böbrek damarlarında görülen klassik duvar kalınlaşmaları nelerdir?",
+      "answer": "Benign HT'de [[Hyalin arteriyoloskleroz]], Malign HT'de Hiperplastik ([[Soğan zarı]] görünümü) arteriyoloskleroz.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Benign HT damar duvarına 'cam macunu' (hyalin) sürüyor. Malign HT ise damarı soğan gibi kat kat sarıyor (soğan zarı görünümü). Hyalin = cam gibi homojen, hiperplastik = soğan gibi katmanlı!"
+    },
+    {
+      "id": "patk_182",
+      "question": "Abdominal aort anevrizmasının (AAA) en büyük etyolojik sebebi nedir?",
+      "answer": "[[Ateroskleroz]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Karın aortası aterosklerozun en sevdiği yer — plaklar duvarı zayıflatıp balon gibi şişiriyor. AAA = Ateroskleroz'un A'sı! Yaşlı, sigara içen erkekte karında pulsatil kitle = AAA düşün."
+    },
+    {
+      "id": "patk_183",
+      "question": "Torasik aort anevrizması ve aort kökü dilatasyonunun klasik nedeni nedir?",
+      "answer": "[[Hipertansiyon]], Bikuspid aort kapağı ve [[Marfan sendromu]] (Sifiliz de eskiden sıktı).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Göğüs aortunu üç düşman zorluyor: HT basınçla, bikuspid kapak türbülansla, Marfan bağ dokusu zayıflığıyla. Abdominal = ateroskleroz, torasik = HT/Marfan/bikuspid olarak ayır!"
+    },
+    {
+      "id": "patk_184",
+      "question": "Arter duvarında rüptür olmadan, adventisya boyuta ilerleyen ama aslında yalancı lümen (damar katmanları arası) kan dolmasına ne ad verilir?",
+      "answer": "[[Aort disseksiyonu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Aort duvarı sandviç gibi — kan intimadan girip media katmanları arasında yol alıyor, yalancı bir lümen oluşturuyor. Sırtına bıçak saplanmış gibi ağrı! Disseksiyon = damar duvarının ikiye ayrılması."
+    },
+    {
+      "id": "patk_185",
+      "question": "Çilek hemanjiyomu (kapiller hemanjiyom) yaşlandıkça nasıl bir seyir izler?",
+      "answer": "Genellikle bebeklik döneminde büyür, çocuklukta spontan geriler.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Bebeğin yüzündeki kırmızı çilek büyüyor, anne endişeleniyor ama doktor 'sabır' diyor. Çocuklukta çilek kendiliğinden soluyor ve kayboluyor — çilek hemanjiyomu sabırlı bekleyeni ödüllendiriyor!"
+    },
+    {
+      "id": "patk_186",
+      "question": "Kaposi Sarkomu, özellikle AIDS hastalarında ciltte mor-koyu lekeler yapar. Hangi virüs ile ilişkilidir?",
+      "answer": "[[HHV-8]] (Human Herpesvirus 8 / [[KSHV]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: AIDS hastasının cildinde mor-koyu lekeler beliriyor — Kaposi sarkomu! Arkasında HHV-8 virüsü var. K(aposi) = 8 harfinin alt kısmına benziyor, HHV-8 ile eşle. AIDS + mor cilt lezyonu = Kaposi = HHV-8!"
+    },
+    {
+      "id": "patk_187",
+      "question": "Karaciğerin spesifik vasküler malignitesidir. Arsenik ve polivinil klorür (PVC) maruziyeti riski artıran tümör nedir?",
+      "answer": "[[Karaciğer anjiyosarkomu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: PVC fabrikasında çalışan bir işçi arsenik zehrine de maruz kalıyor — karaciğerindeki damar hücreleri malign olup anjiyosarkom yapıyor. Arsenik + PVC = karaciğer anjiyosarkomu, çevresel karsinojenler!"
+    },
+    {
+      "id": "patk_188",
+      "question": "Akciğer alveol hacminin artıp duvarlarının destrüksiyonu (yıkımı) ile karakterize non-inflamatuar geri dönüşsüz hastalık nedir?",
+      "answer": "[[Amfizem]] ([[KOAH]] bileşenidir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Alveol duvarları yıkılıp dev hava kesecikleri oluşuyor — balon gibi şişmiş ama gaz değişimi yapamıyor. Amfizem = 'şişirme' anlamında, akciğer şişiyor ama işe yaramıyor. Geri dönüşsüz bir yıkım!"
+    },
+    {
+      "id": "patk_189",
+      "question": "Sentriasinar (Sentrilobüler) amfizem en çok hangi grup hastada ve akciğer bölgelerinde görülür?",
+      "answer": "Sigara içenlerde ve akciğerin üst loblarında (apekslerde)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Sigara dumanı yukarı çıkar — akciğerin üst loblarına yerleşir! Sentriasinar amfizem sigara içenlerin hastalığı ve üst loblarda yoğunlaşır. Sigara = yukarı = üst lob = sentriasinar!"
+    },
+    {
+      "id": "patk_190",
+      "question": "Panasinar (Panlobüler) amfizem en çok kime bağlıdır ve nerede yoğunlaşır?",
+      "answer": "[[Alfa-1 antitripsin]] eksikliği olanlarda ve akciğerin alt loblarında",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Alfa-1 antitripsin eksik olunca elastaz enzimi dizginsiz alveol duvarlarını yıkıyor — panasinar amfizem! Yerçekimi gibi aşağıya iniyor: alt loblar etkileniyor. Alfa-1 = pan = alt lob, sigara = sentri = üst lob!"
+    },
+    {
+      "id": "patk_191",
+      "question": "Kronik bronşitin klinik tanımı nedir?",
+      "answer": "Peş peşe en az iki yıl boyunca, her yıl en az 3 ay süren kronik prodüktif (balgamlı) öksürük ([[Reid indeksi]] artar).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: '2 yıl, 3 ay' formülünü hatırla! Üst üste 2 yıl boyunca her yıl en az 3 ay balgamlı öksürük = kronik bronşit. Reid indeksi 0.4'ü geçiyor — submukozal bezler kalınlaşmış demek."
+    },
+    {
+      "id": "patk_192",
+      "question": "Reid İndeksi nedir?",
+      "answer": "Kronik bronşitte, submukozal bez tabakası kalınlığının bronş duvar kalınlığına oranıdır (>0.4 olması tanısaldır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Reid indeksi bronş duvarının 'şişmanlık ölçüsü'. Submukozal bez kalınlığı / duvar kalınlığı > 0.4 ise bezler şişmiş demek — kronik bronşit! Reid = Read (oku) indeksi, bronşun kalınlığını oku."
+    },
+    {
+      "id": "patk_193",
+      "question": "Amfizemli hastalardaki klasik fenotipe (nefes darlığı, zayıf, pembemsi ten rengi) ne ad verilir?",
+      "answer": "[[Pink puffer]] (Pembe oflayan)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Amfizemli hasta zayıf, pembe tenli ve sürekli dudaklarını büzerek nefes veriyor — 'pembe oflayan'! Hipoksisi az ama dispnesi çok. Pink puffer = amfizem, blue bloater = kronik bronşit olarak eşle."
+    },
+    {
+      "id": "patk_194",
+      "question": "Kronik bronşitli hastalardaki klasik fenotipe (kilolu, siyanotik, balgamlı) ne ad verilir?",
+      "answer": "[[Blue bloater]] (Mor şişkin)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kronik bronşitli hasta kilolu, morarık ve balgam çıkarıyor — 'mavi şişkin'! Siyanoz belirgin çünkü ventilasyon düşük ama perfüzyon devam ediyor. Blue bloater = bronşit = şişkin + mavi!"
+    },
+    {
+      "id": "patk_195",
+      "question": "Astımda balgamda mikroskopla tespit edilebilen, eozinofil kaynaklı protein kristallerine ne ad verilir?",
+      "answer": "[[Charcot-Leyden kristalleri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Eozinofiller astımda savaşırken arkalarında elmas şeklinde kristaller bırakıyor — Charcot-Leyden kristalleri! Balgamda parlayan bu kristaller eozinofilik inflamasyonun kanıtı. Eozinofil = kristal = astım!"
+    },
+    {
+      "id": "patk_196",
+      "question": "Astımda görülen dökülen epitel hücresi sarmallarına ne ad verilir?",
+      "answer": "[[Curschmann sarmalları]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Astımda bronş epiteli döküldüğünde hücreler balgamda sarmal (spiral) şekilde kıvrılıyor — Curschmann sarmalları! 'Curschmann = Corkscrew (tirbuşon)' gibi düşün, dökülen epitel sarmal oluşturuyor."
+    },
+    {
+      "id": "patk_197",
+      "question": "Bronşların veya bronşiyollerin kalıcı ve anormal dilatasyonuyla (genişlemesi) karakterize enfeksiyon ağırlıklı tablo nedir?",
+      "answer": "[[Bronşiektazi]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Bronşlar kronik enfeksiyondan yorulup kalıcı olarak genişliyor — ektazi = genişleme! Tekrarlayan enfeksiyonlar bronş duvarını tahrip edip geri dönüşümsüz dilatasyon yapıyor. Balgam havuzları oluşuyor."
+    },
+    {
+      "id": "patk_198",
+      "question": "Bronşiektazi ile giden, siliyaların disfonksiyonuna (Dynein kolu yokluğu) bağlı olan durum nedir?",
+      "answer": "[[Kartagener sendromu]] ([[Primer siliyer diskinezi]], [[situs inversus]], [[bronşiektazi]] ve [[sinüzit]] triadı)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Siliyalar dynein kolu olmadan hareket edemiyor — salgılar temizlenemiyor! Sonuç: bronşiektazi + sinüzit. Bonus: embriyoda da siliyer hareket bozulunca organlar ters yerleşiyor = situs inversus. Kartagener triadı!"
+    },
+    {
+      "id": "patk_199",
+      "question": "İdiopatik pulmoner fibrozisin (IPF) akciğer CT bulgularında fibrozise bağlı oluşturduğu klasik mikroskobik/radyolojik görünüme ne ad verilir?",
+      "answer": "[[Balpeteği]] ([[Honeycomb]]) akciğer",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Akciğer fibrozisle sertleşince CT'de arı kovanı gibi küçük kistik boşluklar oluşuyor — balpeteği (honeycomb) görünümü! IPF'nin son evre imzası. Akciğer arı kovanına dönüşmüş ama bal yerine fibrozis var."
+    },
+    {
+      "id": "patk_200",
+      "question": "Pnömokonyoz ne anlama gelir?",
+      "answer": "Toz, mineral veya partikül inhilasyonuna bağlı gelişen mesleki/çevresel non-neoplastik akciğer fibrozisleri",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Pneumo = akciğer, konis = toz. Akciğerin 'toz hastalığı'! Madenci, cam işçisi, tersaneci — hepsi toz soluyorlar ve akciğerleri fibrozisle dolup sertleşiyor. Meslek + toz = pnömokonyoz!"
+    },
+    {
+      "id": "patk_201",
+      "question": "Kömür işçisi pnömokonyozunda lezyonlar genelde hangi loblarda başlar?",
+      "answer": "Üst loblar",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kömür tozu hafif olduğu için nefesle akciğerin üst loblarına kadar ulaşıyor ve orada birikip siyah lezyonlar yapıyor. Tıpkı sigara dumanı gibi üst lobları tercih ediyor — kömür ve sigara ikisi de üst lobçu!"
+    },
+    {
+      "id": "patk_202",
+      "question": "Silikozis en çok kime görülür, hangi lobu tutar ve hangi enfeksiyonun riskini ciddi şekilde arttırır?",
+      "answer": "Kum/cam/maden işçilerinde, üst loablarda görülür; [[Tüberküloz]] riskini çok artırır.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Silika = kum kristali. Cam ve maden işçileri silika soluyorlar, üst loblarda fibrotik nodüller oluşuyor. Silika makrofajları öldürdüğü için tüberküloz basili rahat yerleşiyor — silikozis + TB beraber gelir!"
+    },
+    {
+      "id": "patk_203",
+      "question": "Tersane işçiliği veya asbestoz maruziyeti sonrasında plevranın malign mezotelyoması haricinde asbestoza en çok bağlı olan kanser hangisidir?",
+      "answer": "[[Bronkojenik Karsinom]] (Asbest, karsinom riskini mezotelyomadan daha fazla artırır - özellikle sigarayla birlikte)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Asbest denince akla mezotelyoma gelir ama asıl sık yaptığı kanser bronkojenik karsinomdur! Sigara ile birleşince risk katlanıyor. Asbest + sigara = bronkojenik karsinom riski roket gibi fırlıyor."
+    },
+    {
+      "id": "patk_204",
+      "question": "Granülomatöz hastalıklardan Sarkoidoz, akciğerde ağırlıklı olarak hangi hilar lenf nodu görünümüyle karakterizedir?",
+      "answer": "[[Bilateral hiler lenfadenopati]] ([[BHL]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Sarkoidoz röntgende iki yumruk gibi bilateral hiler lenfadenopati (BHL) gösteriyor — akciğerin iki kapısında da şişmiş bekçiler var! Genç kadın + BHL + kazeifikasyon olmayan granülom = sarkoidoz."
+    },
+    {
+      "id": "patk_205",
+      "question": "Tükrük bezinin en sık görülen benign tümörü hangisidir?",
+      "answer": "[[Pleomorfik Adenom]] (Mikst tümör)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Parotis bezinde yavaşça büyüyen ağrısız bir şişlik — pleomorfik adenom! 'Pleomorfik' = çok şekilli, hem epitelyal hem mezenkimal doku içeriyor. Tükrük bezi tümörlerinin en sık ve en karışık olanı!"
+    },
+    {
+      "id": "patk_206",
+      "question": "Tükrük bezinde sigara içenlerde daha sık görülen, çift katlı onkositik epitelden ve lenfoid stromadan oluşan benign tümör nedir?",
+      "answer": "[[Warthin tümörü]] (Papiller kistadenoma lenfomatozum)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Warthin tümörü sigara tiryakilerinin parotis bezinde çıkıyor. İçinde çift sıra onkositik epitel + lenfoid doku var — bir tümörde iki farklı doku, 'WARThin = WAR (savaş) iki taraflı' gibi düşün!"
+    },
+    {
+      "id": "patk_207",
+      "question": "Tükrük bezinin en sık görülen malign tümörü hangisidir?",
+      "answer": "[[Mukoepidermoid karsinom]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Tükrük bezinin malign şampiyonu mukoepidermoid karsinom! Muko (müsin) + epidermoid (yassı) iki tip hücre içeriyor. Benign en sık = pleomorfik adenom, malign en sık = mukoepidermoid — bu ikiliyi ezbere!"
+    },
+    {
+      "id": "patk_208",
+      "question": "Özofagusta en sık görülen divertikül hangisidir?",
+      "answer": "[[Zenker divertikülü]] (Faringoözofageal divertikül, krikofaringeal kas zayıflığı, sahte divertikül)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Özofagusun en üstünde krikofaringeal kasın zayıf noktasından mukoza dışarı fıtıklaşıyor — Zenker divertikülü! Yaşlı hastada yutma güçlüğü ve ağız kokusu. Zenker = en üstte = sahte (yalancı) divertikül!"
+    },
+    {
+      "id": "patk_209",
+      "question": "Özofagusta alt sfinkterin (AÖS) gevşeyememesi ve miyenterik pleksus gangliyonlarının yokluğu ile seyreden hastalık nedir?",
+      "answer": "[[Akalazya]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: A(kalazya) = A (yokluk) + khalasis (gevşeme) = gevşeyememe! Alt özofageal sfinkter inatla kapalı kalıyor çünkü miyenterik pleksus ganglionları yok. Yemek yukarıda birikip kuş gagası görünümü yapıyor."
+    },
+    {
+      "id": "patk_210",
+      "question": "Özofagus varislerinin en yaygın etyolojik sebebi nedir?",
+      "answer": "[[Siroz]]a bağlı [[portal hipertansiyon]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Siroz karaciğeri taşlaştırınca portal ven basıncı artıyor. Kan alternatif yol arıyor ve özofagus venlerini şişiriyor — varisler! Rüptür olursa masif kanama. Siroz = portal HT = özofagus varisleri zinciri."
+    },
+    {
+      "id": "patk_211",
+      "question": "Kronik reflü sonucu (GÖRH), özofagus alt ucu stratifiye yassı epitelinin intestinal tip kolumnar epitele dönüşmesine ne ad verilir?",
+      "answer": "[[Barrett özofagusu]] ([[Adenokarsinom]] riskidir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kronik asit reflüsünden bunalan özofagus epiteli 'ben de bağırsak olayım' deyip intestinal metaplazi yapıyor — Barrett özofagusu! Bu dönüşüm adenokarsinom riskini artırıyor. Reflü = Barrett = adenokarsinom basamakları."
+    },
+    {
+      "id": "patk_212",
+      "question": "Özofagusta 1/3 üst-orta kısmında en sık görülen karsinom tipi nedir?",
+      "answer": "[[Yassı hücreli]] (Skuamöz hücreli) karsinom (Risk: Alkol, sigara, sıcak içecekler)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Özofagusun üst-orta kısmı normalde yassı epitelle kaplı — bu bölgede kanser olursa doğal olarak yassı hücreli karsinom çıkar! Alkol ve sigara bu bölgeyi sürekli tahriş ediyor. Üst = yassı, alt = Barrett = adeno."
+    },
+    {
+      "id": "patk_213",
+      "question": "Midenin Helicobacter Pylori ile ilişkili olan, diffüz eozinofil ve nötrofil infiltrasyonu yapan tablosuna ne ad verilir?",
+      "answer": "[[Kronik aktif gastrit]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: H. pylori midede kronik bir savaş başlatıyor — hem kronik (lenfosit, eozinofil) hem aktif (nötrofil) inflamasyon birlikte! 'Kronik aktif' = iki cephede savaş. Nötrofil varsa 'aktif' demek, H. pylori devam ediyor."
+    },
+    {
+      "id": "patk_214",
+      "question": "Otoimmün gastritte patogenez kime karşı antikor gelişmesidir ve kliniği nasıl sonuçlanır?",
+      "answer": "[[Parietal hücre]]lere ve [[intrinsik faktör]]e karşı antikorlar. [[Pernisiyöz anemi]] gelişebilir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Bağışıklık sistemi kendi mide hücrelerine (parietal) saldırıp intrinsik faktörü yok ediyor. B12 emilemiyor = pernisiyöz anemi! Otoimmün gastrit = parietal hücre yıkımı = IF kaybı = B12 eksikliği = megaloblastik anemi."
+    },
+    {
+      "id": "patk_215",
+      "question": "Peptik ülserin en yaygın iki nedeni nedir?",
+      "answer": "[[H. pylori]] infeksiyonu ve NSAİİ (steroid olmayan antiinflamatuar ilaç) kullanımı",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Peptik ülserin iki büyük düşmanı: H. pylori bakterisi mukozayı kemiriyor, NSAİİ ilaçları ise koruyucu prostaglandinleri engelleyip mukozayı savunmasız bırakıyor. İkisi birlikte mideyi iki cepheden kuşatıyor!"
+    },
+    {
+      "id": "patk_216",
+      "question": "Mide adenokarsinomlarında hücrelerin müsin dolu olup nükleusu kenara ittiği (Taşlı yüzük hücresi) histolojik tipi hangisidir?",
+      "answer": "Diffüz ([[Taşlı Yüzük Hücreli]]) karsinom - Lauren klasifikasyonuna göre",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Hücre müsinle o kadar dolmuş ki çekirdek kenara itilmiş — tıpkı bir yüzüğün üstündeki taş gibi! Taşlı yüzük hücresi = müsin vakuolü büyük, nükleus kenarda. Diffüz tip mide kanseri, daha agresif seyreder."
+    },
+    {
+      "id": "patk_217",
+      "question": "Mide kanserinin sol supraklavikular lenf noduna metastaz yapmış haline ne ad verilir?",
+      "answer": "[[Virchow nodülü]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Mide kanseri ductus thoracicus yoluyla sol supraklavikular lenf noduna ulaşıyor — Virchow nodülü! Sol köprücük kemiği üstünde ele gelen sert lenf nodu = karın içi kanser metastazı düşün. Virchow = sol üst köşe!"
+    },
+    {
+      "id": "patk_218",
+      "question": "Mide karsinomunun bilateral over metastazlarına ne ad verilir?",
+      "answer": "[[Krukenberg tümörü]] (Bol taşlı yüzük hücresi içerir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Mide kanserinin taşlı yüzük hücreleri periton yoluyla overlere göç ediyor — bilateral over metastazı = Krukenberg tümörü! 'Krukenberg = Karnından geldi, iki overe yerleşti' diye hatırla."
+    },
+    {
+      "id": "patk_219",
+      "question": "Glüten proteinlerinden olan gliadin sekonderi immünolojik bir eteropati olan klinik tablo nedir?",
+      "answer": "[[Çölyak hastalığı]] ([[Gluten sensitif enteropati]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Gliadin proteini bağırsakta immün sistemi kışkırtıyor — villüsler düzleşiyor, emilim bozuluyor! Buğday, arpa, çavdar yiyince ishal ve kilo kaybı. Glutensiz diyet ile villüsler yeniden yeşeriyor — çölyak tedavisi!"
+    },
+    {
+      "id": "patk_220",
+      "question": "Çölyak hastalarında en çok artan malignite riski nedir?",
+      "answer": "Enteropati ile ilişkili T-hücreli lenfoma ([[EATL]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Çölyak hastalığında kronik immün aktivasyon bağırsaktaki T hücrelerini sürekli uyarıyor — sonunda T hücreleri kontrolden çıkıp lenfoma yapıyor! EATL = Enteropathy Associated T-cell Lymphoma. Çölyak + lenfoma = EATL!"
+    }
+  ],
+  "id": "patoloji_kons_batch2-topic-0",
+  "topic": "Patoloji - Konsolide (Batch 2)",
+  "sub_topic": "Patoloji - Konsolide (Batch 2)",
+  "content_summary": "",
+  "tus_spots": []
+}

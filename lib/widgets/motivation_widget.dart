@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../theme/app_theme.dart';
@@ -30,27 +29,27 @@ class MotivationWidget extends StatelessWidget {
     },
     {
       'text': 'Her gün biraz daha ileri, her gün biraz daha iyi.',
-      'author': 'TUS Asistanı'
+      'author': 'AsisTus'
     },
     {
       'text': 'Bugün çalıştığın her kart, yarın bir hastaya daha iyi bakman demek.',
-      'author': 'TUS Asistanı'
+      'author': 'AsisTus'
     },
     {
       'text': 'Hedefine ulaşmanın tek yolu, her gün bir adım atmak.',
-      'author': 'TUS Asistanı'
+      'author': 'AsisTus'
     },
     {
       'text': 'Yorulduğunda hatırla: Neden başladığını.',
-      'author': 'TUS Asistanı'
+      'author': 'AsisTus'
     },
     {
       'text': 'Başarı tesadüf değil, disiplindir.',
-      'author': 'TUS Asistanı'
+      'author': 'AsisTus'
     },
     {
       'text': 'Bugün çalıştığın bilgi, yarın kurtaracağın can.',
-      'author': 'TUS Asistanı'
+      'author': 'AsisTus'
     },
   ];
 

@@ -1,0 +1,301 @@
+[
+  {
+    "id": "biyo-batch1-001",
+    "subject": "Biyokimya",
+    "chapter": "Karbonhidrat Metabolizması",
+    "topic": "Glikoliz, TCA Döngüsü ve Glukoneogenez",
+    "sub_topic": "Anahtar Enzimler, ATP Üretimi, Düzenleme Noktaları",
+    "content_summary": "Glikoliz sitoplazmasında gerçekleşir, 1 mol glukoz → 2 mol pirüvat + net 2 ATP + 2 NADH üretir. Krebs döngüsü (TCA) mitokondride işlenir, 1 mol asetil-CoA → 3 NADH + 1 FADH2 + 1 GTP + 2 CO2. Glukoneogenez karaciğer ve böbrekte açlıkta glikolizin tersi yönde çalışır; 3 geri dönülemez adımı bypass eder. TUS'ta anahtar enzimler, ürünler ve patolojik durumlar sık sorulur.",
+    "flashcards": [
+      {
+        "id": "biyo_fc_001",
+        "question": "Glikolizin geri dönülemez 3 adımı (anahtar enzimler) hangileridir?",
+        "answer": "[[1) Hekzokinaz/Glukokinaz (Glukoz→G6P); 2) Fosfofruktokinaz-1 (F6P→F1,6BP); 3) Pirüvat kinaz (PEP→Pirüvat)]]",
+        "explanation": "Glikolizin 3 geri dönülemez (ekzergonic) adımı:\n1. Hekzokinaz (tüm hücreler)/Glukokinaz (karaciğer, pankreas β hücreleri): Glukoz + ATP → G6P + ADP. Glukokinaz düşük afinite, yüksek Km → hiperglisemide aktif (insülin ile indüklenir).\n2. Fosfofruktokinaz-1 (PFK-1): F6P + ATP → F1,6BP + ADP. Hız kısıtlayıcı enzim. AMP/ADP aktive eder, ATP/sitrat inhibe eder. F2,6BP en güçlü aktivatör (insülin etkisiyle).\n3. Pirüvat kinaz: PEP + ADP → Pirüvat + ATP. F1,6BP allosterik aktivatör.",
+        "difficulty": "Orta",
+        "tags": ["Biyokimya", "Glikoliz", "PFK-1", "Hekzokinaz", "Pirüvat Kinaz"],
+        "story_hint": "💡 HİKAYE: 'Glikolizin 3 kapısı — HP3: Hekzokinaz, PFK-1, Pirüvat kinaz.' Kılıç çekersen (ATP harcarsın) kapılar açılır. PFK-1 = 'Glikolizin valfi' — AMP açar (enerji lazım!), ATP kapar (enerji var, dur!). F2,6BP = insülinin mesajı: 'Glukoz yak!'"
+      },
+      {
+        "id": "biyo_fc_002",
+        "question": "1 mol glukozun tamamen oksidasyonundan kaç mol ATP üretilir?",
+        "answer": "[[~30-32 mol ATP (modern hesap); Glikoliz: 2 ATP net + 2 NADH; Pirüvat dekarboksilasyon: 2 NADH; TCA: 6 NADH + 2 FADH2 + 2 GTP; NADH=2.5 ATP, FADH2=1.5 ATP]]",
+        "explanation": "Geleneksel hesap 36-38 ATP'ydi; modern mitokondriyal P/O oranlarıyla ~30-32 ATP kabul edilir.\nGlikoliz: 2 ATP (net) + 2 NADH (sitoplazmik) = 2 + 2×1.5 = 5 ATP (malat-aspartat mekiği ile 2×2.5)\nPirüvat dekarboksilasyon: 2 NADH = 5 ATP\nTCA (×2): 6 NADH (15 ATP) + 2 FADH2 (3 ATP) + 2 GTP (2 ATP) = 20 ATP\nToplam ≈ 30-32 ATP. TUS eski kaynaklarda hâlâ 36-38 sorabilir — bağlama dikkat!",
+        "difficulty": "Orta",
+        "tags": ["Biyokimya", "ATP", "Glikoliz", "TCA", "Oksidatif Fosforilasyon"],
+        "story_hint": "💡 HİKAYE: '1 glukoz = yaklaşık 30 ATP modern, 36-38 eski.' TUS'ta eski sorularda 36 veya 38 görürsen paniklenme — NADH ve FADH2'yi say. NADH=2.5, FADH2=1.5 ATP, GTP=1 ATP. Glikoliz az, TCA ve ETS çok kazandırır!"
+      },
+      {
+        "id": "biyo_fc_003",
+        "question": "TCA döngüsünün anahtar enzimleri ve düzenlenmesi nasıldır?",
+        "answer": "[[İzositrat dehidrogenaz (hız kısıtlayıcı); Pirüvat dehidrogenaz (PDH — TCA girişi); α-Ketoglutarat dehidrogenaz; ADP/Ca²⁺ aktive eder; NADH/ATP/asetil-CoA inhibe eder]]",
+        "explanation": "TCA döngüsünün geri dönülemez adımları:\n1. PDH (Pirüvat → Asetil-CoA): Kofaktörler: TPP, lipoat, CoA, FAD, NAD⁺. PDH kinaz (NADH/ATP ile aktif) PDH'yi fosforilasyon ile inhibe eder. PDH fosfataz (Ca²⁺/insülin ile aktif) PDH'yi aktive eder.\n2. İzositrat dehidrogenaz: İzositrat → α-Ketoglutarat; ADP/Ca²⁺ aktive, NADH/ATP inhibe.\n3. α-Ketoglutarat dehidrogenaz: α-KG → Süksinil-CoA; Suksinat dehidrogenaz: FAD kullanır (tek membranda olan TCA enzimi).\nHer tur: 3 NADH + 1 FADH2 + 1 GTP + 2 CO2.",
+        "difficulty": "Zor",
+        "tags": ["Biyokimya", "TCA", "Krebs", "PDH", "İzositrat Dehidrogenaz"],
+        "story_hint": "💡 HİKAYE: 'TCA = Enerji fabrikasının kalbi, PDH kapıcısı.' Asetil-CoA fabrikaya girmek için PDH'den geçmeli. NADH birikince PDH kapıyı kapatır (enerji fazla). Ca²⁺ ve egzersiz kapıyı açar — kas çalışıyor, enerji lazım! İzositrat DH hız valfi: ADP açar, ATP kapar."
+      },
+      {
+        "id": "biyo_fc_004",
+        "question": "Glukoneogenezin 3 bypass reaksiyonu nelerdir ve hangi enzimler katılır?",
+        "answer": "[[1) Pirüvat → OAA → PEP (Pirüvat karboksilaz + PEPCK); 2) F1,6BP → F6P (Fruktoz-1,6-bisfosfataz); 3) G6P → Glukoz (Glukoz-6-fosfataz — karaciğer/böbrek)]]",
+        "explanation": "Glukoneogenez glikolizin 3 geri dönülemez adımını bypass eder:\n1. Pirüvat → Oksaloasetat (pirüvat karboksilaz, mitokondri, bikarbonat+ATP gerekli; asetil-CoA aktive eder) → PEP (PEPCK, GTP gerekli).\n2. F1,6BP → F6P (Fruktoz-1,6-bisfosfataz; AMP inhibe eder, sitrat aktive eder).\n3. G6P → Glukoz (Glukoz-6-fosfataz; sadece karaciğer ve böbrekte, kasta YOK).\nGlukoneogenez substratları: Laktat (Cori döngüsü), alanin (glukoz-alanin döngüsü), gliserol, glukojenik amino asitler.",
+        "difficulty": "Zor",
+        "tags": ["Biyokimya", "Glukoneogenez", "PEPCK", "G6Paz", "Pirüvat Karboksilaz"],
+        "story_hint": "💡 HİKAYE: 'Glukoneogenez = Glikolizin U-dönüşü — ama 3 köşede özel yol var.' Pirüvat doğrudan PEP'e geçemez — karboksilaz köprüsü kurar. G6Paz kas ve beyinde YOK — kas kan şekerini sağlayamaz! Cori döngüsü: Kas laktat → Karaciğer glukoz → Kas. Verimli değil ama hayat kurtarır!"
+      },
+      {
+        "id": "biyo_fc_005",
+        "question": "Glikojenin sentezi ve yıkımındaki anahtar enzimler nelerdir?",
+        "answer": "[[Sentez: Glikojen sintaz (UDP-glukoz + glikojen → dallanmış glikojen); Yıkım: Glikojen fosforilaz (G1P üretir) + Dallanma enzimi / Debranching enzim; Karaciğer: Glukoza salınır; Kas: G6P'de kalır]]",
+        "explanation": "Glikojen sentezi: UDP-glukoz sentaz → UDP-glukoz. Glikojen sintaz: UDP-glukoz + glikojen (n) → glikojen (n+1). Branching enzim: α1,4→α1,6 bağ oluşturur (dallanma). Glikojen yıkımı: Glikojen fosforilaz: glikojen → G1P (pirofosfat ile). Debranching enzim: α1,6 bağları kırar. G1P → G6P (fosfoglukomutaz). Karaciğer: G6P → Glukoz (G6Paz var) → kana salınır. Kas: G6Paz yok → G6P glikolize girer. Von Gierke: G6Paz eksikliği. Pompe: lizozomal α-1,4-glukozidaz eksikliği. McArdle: Kas glikojen fosforilaz eksikliği.",
+        "difficulty": "Orta",
+        "tags": ["Biyokimya", "Glikojen", "Glikojen Sintaz", "Glikojen Fosforilaz", "Glikojen Depo Hastalıkları"],
+        "story_hint": "💡 HİKAYE: 'Glikojen = Depo karbonhidrat. Sintaz yapar, fosforilaz yıkar.' Karaciğer kanı besler (G6Paz var), kas kendini besler (G6Paz yok). Von Gierke'de karaciğer devasa — glukoz kandan çıkamaz, içeride birikir! McArdle'da egzersizde kas krampı — kas kendi deposunu kullanamaz."
+      },
+      {
+        "id": "biyo_fc_006",
+        "question": "Pentoz fosfat yolunun (PPP) işlevi, ürünleri ve önemli hastalıkları nelerdir?",
+        "answer": "[[NADPH (antioksidan, yağ asidi sentezi) + Riboz-5-fosfat (nükleotid sentezi) üretir; G6PD eksikliği → Hemolitik anemi (oksidatif stres)]]",
+        "explanation": "PPP (Heksoz Monofosfat Şantı) sitoplazmada gerçekleşir. Oksidatif faz: G6P → Ribulose-5P + 2 NADPH + CO2 (G6PD katalize eder). Non-oksidatif faz: Riboz-5P üretimi (DNA/RNA için). NADPH kullanım alanları: Glutatyon redüktaz (GSH rejenerasyonu → H2O2 temizleme), Yağ asidi sentezi, Sitokrom P450 reaksiyonları, Fagosit oksidatif burst. G6PD eksikliği (X'e bağlı): Oksidatif stres → Heinz cisimcikleri → hemolitik anemi. Tetikleyiciler: Primakine, sulfonamid, bakla (favizm).",
+        "difficulty": "Orta",
+        "tags": ["Biyokimya", "Pentoz Fosfat Yolu", "G6PD", "NADPH", "Hemolitik Anemi"],
+        "story_hint": "💡 HİKAYE: 'PPP = NADPH fabrikası ve DNA hammaddesi.' G6PD bu fabrikanın kapıcısı. G6PD eksikse NADPH azalır → GSH azalır → oksidatif stres → eritrositler parçalanır. Primakine alan G6PD eksikli hasta → hemolitik kriz! Bakla (favizm) da aynı mekanizma."
+      },
+      {
+        "id": "biyo_fc_007",
+        "question": "Pirüvat ve asetil-CoA'nın metabolik kavşak noktaları nelerdir?",
+        "answer": "[[Pirüvat: Glikoliz ürünü → Asetil-CoA (PDH, aerobik), Laktat (LDH, anaerobik), OAA (Pirüvat karboksilaz, glukoneogenez), Alanin (transaminasyon); Asetil-CoA: TCA, Yağ asidi sentezi, Ketogenez, Kolesterol sentezi]]",
+        "explanation": "Pirüvat kavşağı: Aerobik → PDH → Asetil-CoA (mitokondri). Anaerobik → LDH → Laktat (sitoplazma). Glukoneogenez → Pirüvat karboksilaz → OAA (bikarbonat+ATP). Transaminasyon → Alanin (enerji taşıyıcı) Asetil-CoA kavşağı (mitokondri): TCA → Enerji. Yağ asidi sentezi → (sitozole taşınmalı, malonil-CoA üzerinden). Ketogenez → Keton cisimleri (HMG-CoA yolu). Kolesterol sentezi → HMG-CoA → Mevalonat (statin hedefi). Asetil-CoA doğrudan glukoneogeneze giremez (önemli!)",
+        "difficulty": "Zor",
+        "tags": ["Biyokimya", "Pirüvat", "Asetil-CoA", "Metabolik Kavşak", "PDH"],
+        "story_hint": "💡 HİKAYE: 'Pirüvat = Kavşak yolunun trafik lambası — 4 yol ayrımı.' Oksijen varsa asetil-CoA'ya gider, yoksa laktata. Asetil-CoA ise ya TCA'ya (enerji), ya yağa, ya keton cismine, ya kolesterole gider. Ama keton ve yağdan glukoz yapılamaz — asetil-CoA → glukoneogeneze giremez!"
+      },
+      {
+        "id": "biyo_fc_008",
+        "question": "Anaerobik glikoliz ve Cori döngüsü nedir?",
+        "answer": "[[Anaerobik: Pirüvat → Laktat (LDH, NAD⁺ rejenerasyonu için); Net: 2 ATP; Cori döngüsü: Kas laktata → Karaciğer glukoza → Kasa gönderir]]",
+        "explanation": "Anaerobik glikoliz: O2 yokken pirüvat laktat dehidrogenaz (LDH) ile laktata dönüştürülür. Amaç: NAD⁺ rejenerasyonu (glikolizin devamı için). Net kazanç: 2 ATP/glukoz. Cori döngüsü: Aktif kastaki laktat → Kan → Karaciğer → Pirüvat → Glukoneogenez → Glukoz → Kan → Kas. Enerjetik olarak verimsiz: Karaciğerde 6 ATP harcanır, kas 2 ATP kazanır. Egzersizde ve anemide önemli. Laktat asidoz: Doku hipoksisi (Tip A: hipoksi) veya biguanid (metformin, Tip B).",
+        "difficulty": "Orta",
+        "tags": ["Biyokimya", "Anaerobik Glikoliz", "Cori Döngüsü", "Laktat", "LDH"],
+        "story_hint": "💡 HİKAYE: 'Cori döngüsü = Kas ile karaciğer arasındaki atık yönetimi.' Kas sprint yapar → laktat üretir → karaciğer temizler, glukosa çevirir → kasa geri yollar. Masraflı ama hayat kurtarır! Metformin bu döngüyü bozar → laktat birikir → asidoz (böbrek yetmezliğinde kontrendike)."
+      }
+    ],
+    "tus_spots": [
+      "PFK-1 = Glikolizin hız kısıtlayıcı enzimi; AMP/F2,6BP aktive eder; ATP/sitrat inhibe eder",
+      "Glukoz-6-fosfataz: SADECE karaciğer ve böbrekte (kasta YOK) → Kas kana glukoz veremez",
+      "Von Gierke: G6Paz eksikliği → Karaciğer glikojeni → Hipoglisemi + hepatomegali",
+      "McArdle: Kas glikojen fosforilaz eksikliği → Egzersizde kramp, laktat yanıtsızlığı",
+      "G6PD eksikliği: X'e bağlı → Oksidatif stres (primakine, sulfonamid, bakla) → Hemolitik anemi + Heinz cisimcikleri",
+      "PDH kofaktörleri: TPP (B1), Lipoat, CoA (B5), FAD (B2), NAD (B3) — 'TLC FAN' ile ezberle",
+      "Asetil-CoA → Glukoneogeneze GIREMEZ (geri dönüşümsüz PDH adımı nedeniyle)",
+      "NADPH kullanımı: Yağ asidi sentezi, Kolesterol sentezi, Glutatyon redüktaz (antioksidan), Sitokrom P450",
+      "Cori döngüsü: Kas laktat → Karaciğer glukoz (6 ATP harcar, kas 2 ATP kazanır — verimsiz)"
+    ],
+    "clinical_cases": [
+      {
+        "id": "biyo_cc_001",
+        "case": "Soru: (Biyokimya — Karbonhidrat) 6 aylık erkek bebek, hipoglisemi, hepatomegali ve büyüme geriliği ile başvuruyor. Kan şekeri: 45 mg/dL, karaciğer biyopsisinde masif glikojen birikimi saptandı. Glukoz verildiğinde kan şekeri düzeliyor, glukagon verildiğinde düzelmiyor. Bu tabloda en olası enzim eksikliği hangisidir?",
+        "options": [
+          "A) Glikojen fosforilaz",
+          "B) Glukoz-6-fosfataz",
+          "C) Lizozomal α-1,4-glukozidaz",
+          "D) Fruktoz-1,6-bisfosfataz",
+          "E) Fosfofruktokinaz-1"
+        ],
+        "correct_answer": "B) Glukoz-6-fosfataz",
+        "explanation": "Von Gierke hastalığı (Tip I glikojen depo hastalığı): Glukoz-6-fosfataz eksikliği. G6P → Glukoz dönüşümü bozulur → Glikojen ve yağ karaciğerde birikir (hepatomegali). Hipoglisemi ciddi çünkü ne glikojenoliz ne de glukoneogenez kan şekerini artıramaz (her ikisi G6Paz'a bağlı). Glukagon etkisiz (doğrulayıcı bulgu). Ek bulgular: Hiperürisemi, hiperlipidemi, laktat asidoz. McArdle kasta görülür (kramp, miyoglobinüri). Pompe kardiyomegali + miyopati ile görülür."
+      },
+      {
+        "id": "biyo_cc_002",
+        "case": "Soru: (Biyokimya — Karbonhidrat) 25 yaşında erkek hasta, sıtma tedavisi için primakine başlandıktan 2 gün sonra sarılık, koyu idrar ve hemoglobin 7 g/dL ile acile geliyor. Periferik yaymada Heinz cisimcikleri görüldü. En olası tanı nedir?",
+        "options": [
+          "A) Orak hücre anemisi",
+          "B) Herediter sferositoz",
+          "C) Otoimmün hemolitik anemi",
+          "D) G6PD eksikliği",
+          "E") Pirüvat kinaz eksikliği"
+        ],
+        "correct_answer": "D) G6PD eksikliği",
+        "explanation": "G6PD (Glukoz-6-fosfat dehidrogenaz) eksikliği: X'e bağlı resesif, en yaygın enzim eksikliği. Pentoz fosfat yolunun ilk enzimi → NADPH azalır → GSH azalır → oksidatif stres → denatüre Hb (Heinz cisimcikleri) → eritrosit hemolizi. Tetikleyiciler: Primakine, dapson, sulfonamidler, bakla (favizm), aspirin (yüksek doz), enfeksiyon. Yayma: Heinz cisimcikleri (kristal viyole ile görülür), ısırık hücreleri (bite cells). G6PD enzim aktivitesi testi tanı koydurucu (hemoliz döneminde yanlış normal çıkabilir — genç eritrositlerde aktivite yüksek)."
+      }
+    ]
+  },
+  {
+    "id": "biyo-batch1-002",
+    "subject": "Biyokimya",
+    "chapter": "Lipid Metabolizması",
+    "topic": "Yağ Asidi Oksidasyonu ve Keton Cisim Metabolizması",
+    "sub_topic": "Beta Oksidasyon, Ketogenez, Ketoasidoz",
+    "content_summary": "Yağ asitleri beta oksidasyon ile mitokondriye asetil-CoA'ya parçalanır. Karnitin sistemi uzun zincirli yağ asitlerini mitokondri içine taşır. Açlık ve DM'de asetil-CoA keton cisimlerine (asetoasetat, beta-hidroksibutirat, aseton) dönüşür. TUS'ta beta oksidasyon ATP hesabı, karnitin eksikliği ve diyabetik ketoasidoz mekanizması sık sorulur.",
+    "flashcards": [
+      {
+        "id": "biyo_fc_009",
+        "question": "Beta oksidasyonun lokalizasyonu ve temel reaksiyon döngüsü nedir?",
+        "answer": "[[Mitokondri matrisi (uzun zincirli); Peroksizom (çok uzun zincirli >C22); Her döngü: 1 Asetil-CoA + 1 NADH + 1 FADH2; Son tur 2 Asetil-CoA]]",
+        "explanation": "Beta oksidasyon mitokondrinin iç yüzeyinde gerçekleşir. Her döngü 4 adım:\n1. FAD bağımlı dehidrojenaz → FADH2 (trans-enoil-CoA)\n2. Hidrasyon → L-3-hidroksiasil-CoA\n3. NAD⁺ bağımlı dehidrojenaz → NADH\n4. Tiyolaz → Asetil-CoA + kısalmış yağ asili-CoA\nNET her döngü: 1 Asetil-CoA + 1 NADH + 1 FADH2. Palmitat (C16): 7 tur → 8 Asetil-CoA + 7 NADH + 7 FADH2 - 2 ATP (aktivasyon) = net ~106 ATP. Peroksizom: Çok uzun zincirli (>C22, fitanik asit) — FADH2 yerine H2O2 üretir (daha az ATP).",
+        "difficulty": "Zor",
+        "tags": ["Biyokimya", "Beta Oksidasyon", "Yağ Asidi", "Mitokondri", "Asetil-CoA"],
+        "story_hint": "💡 HİKAYE: 'Beta oksidasyon = Yağ asidinin iskeleti parçalanıyor!' Her turda 2 karbon koparılır (asetil-CoA), bir NADH ve bir FADH2 kazanılır. Palmitat C16: 7 tur = 8 asetil-CoA. Hesap: 8×10 + 7×2.5 + 7×1.5 - 2 = 80+17.5+10.5-2 = 106 ATP!"
+      },
+      {
+        "id": "biyo_fc_010",
+        "question": "Karnitin taşıma sisteminin önemi ve karnitin eksikliğinin sonuçları nelerdir?",
+        "answer": "[[Uzun zincirli yağ asitleri (>C12) karnitin olmadan mitokondri içine giremez; Karnitin eksikliği → Hipoglisemi, Kardiyomiyopati, Miyopati, Hipoketotik hipoglisemi]]",
+        "explanation": "Aktive edilmiş uzun zincirli yağ asidi (Yağ asili-CoA) mitokondri iç zarından geçemez. Karnitin açiltransferaz I (CAT I, dış zar): Yağ asili-CoA → Yağ asili-karnitin (dış yüzey). Translokaz: Karnitini içe taşır. CAT II (iç zar): Yağ asili-karnitin → Yağ asili-CoA (matris). Karnitin eksikliği: Birincil (genetik, OCTN2 taşıyıcı mutasyonu) veya ikincil (diyaliz, pivalat içeren antibiyotikler, valproat). Bulgular: Hipoglisemi (keton yok, yağ asidi oksidasyonu yok), kardiyomiyopati, enerji kısıtlılığı. Malonil-CoA CAT I'i inhibe eder (yağ asidi sentezi + oksidasyon aynı anda olmaz).",
+        "difficulty": "Orta",
+        "tags": ["Biyokimya", "Karnitin", "Beta Oksidasyon", "CAT I", "Hipoglisemi"],
+        "story_hint": "💡 HİKAYE: 'Karnitin = Yağ asidinin mitokondri kapısındaki taksi.' Karnitin yoksa taksi yok, yağ asidi kapıda bekler. Sonuç: Enerji yok + keton yok + hipoglisemi + kalp büyür. Malonil-CoA taksiyi durduran trafik polisi — sentez varken oksidasyon durur!"
+      },
+      {
+        "id": "biyo_fc_011",
+        "question": "Keton cisimleri nelerdir, nerede ve nasıl üretilir?",
+        "answer": "[[Asetoasetat + β-Hidroksibutirat + Aseton; Karaciğer mitokondrisinde (HMG-CoA yolu); Açlık ve DKA'da; Beyin, kalp ve kas kullanabilir; Karaciğer kullanamaz (tioforaz yok)]]",
+        "explanation": "Keton cismi sentezi (ketogenez) karaciğer mitokondrisinde:\n2 Asetil-CoA → Asetoasetil-CoA (tiolaz)\nAsetoasetil-CoA + Asetil-CoA → HMG-CoA (HMG-CoA sentaz — hız kısıtlayıcı)\nHMG-CoA → Asetoasetat + Asetil-CoA (HMG-CoA liyaz)\nAsetoasetat → β-Hidroksibutirat (β-HB dehidrogenaz, NADH gerekli) veya Aseton (spontan dekarboksilasyon)\nKullanım (periferik): Asetoasetat + Süksinil-CoA → Asetoasetil-CoA → 2 Asetil-CoA → TCA. Karaciğerde süksinil-CoA tioforaz (3-oktoasil-CoA transferaz) YOK → Karaciğer keton kullanamaz.",
+        "difficulty": "Zor",
+        "tags": ["Biyokimya", "Keton", "Ketogenez", "HMG-CoA", "DKA", "Açlık"],
+        "story_hint": "💡 HİKAYE: 'Karaciğer keton fabrikası ama kendisi kullanamaz!' HMG-CoA sentaz hız ayarını yapar. Aseton uçar (meyve kokusu — DKA'da nefes kokusu!). Beyin açlıkta güvenle keton kullanır ama karaciğer 'ben yaptım, siz yiyin' der. Süksinil-CoA transferaz = yiyebilmenin anahtarı."
+      },
+      {
+        "id": "biyo_fc_012",
+        "question": "Yağ asidi sentezinin beta oksidasyondan farkları nelerdir?",
+        "answer": "[[Sentez: Sitoplazma, NADPH gerekli, malonil-CoA ara ürün, asetil-CoA karboksilaz (ACC) hız kısıtlayıcı, insülin aktive; Oksidasyon: Mitokondri, FAD+NAD⁺, L-karnitin gerekli, glukagon/katekolamin aktive]]",
+        "explanation": "Yağ asidi sentezi (De novo lipogenez) sitoplazmada: Asetil-CoA (mitokondriden sitrattan gelir) → Malonil-CoA (ACC, bikarbonat+ATP) → Yağ asidi sentaz (FASN) → Palmitat. NADPH kaynağı: PPP + Malat enzimi (malat → pirüvat). ACC düzenlemesi: İnsülin/sitrat aktive; glukagon/palmitoil-CoA/AMPK inhibe. Malonil-CoA: Hem sentez ara ürünü, hem CAT I inhibitörü (eşzamanlı sentez+oksidasyon önlenir). Karşılaştırma: Her iki yolda kullanılan su: Oksidasyon üretir, sentez tüketir. 2C birim: Oksidasyonda ayrılır (asetil-CoA), sentezde eklenir (malonil-CoA).",
+        "difficulty": "Zor",
+        "tags": ["Biyokimya", "Yağ Asidi Sentezi", "ACC", "Malonil-CoA", "FASN"],
+        "story_hint": "💡 HİKAYE: 'Sentez vs Oksidasyon = Tam tersi lokasyon ve kofaktör!' Sitoplazma ↔ Mitokondri. NADPH ↔ FADH2+NADH. İnsülin sentezi açar, glukagon oksidasyonu açar. Malonil-CoA hem sentez yapbloğu hem de CAT I'in freni — aynı anda iki iş yapar!"
+      }
+    ],
+    "tus_spots": [
+      "Beta oksidasyon: Mitokondri; Her döngü → 1 Asetil-CoA + 1 NADH + 1 FADH2",
+      "Palmitat (C16) netti ATP = ~106 (7 tur × döngü ürünleri + 8 asetil-CoA TCA'da - 2 ATP aktivasyon)",
+      "Karnitin eksikliği → Hipoketotik hipoglisemi + Kardiyomiyopati + Miyopati",
+      "Malonil-CoA: CAT I inhibitörü (beta oksidasyonu durdurur) — sentez varken oksidasyon olmaz",
+      "Ketogenez: Karaciğer mitokondrisinde, HMG-CoA sentaz hız kısıtlayıcı",
+      "Karaciğer keton üretir ama kullanamaz (3-oktoasil-CoA transferaz/tioforaz yok)",
+      "DKA: İnsülin yokluğu → Lipoliz↑ → FFA→ Asetil-CoA↑ → Keton↑ (asetoasetat, β-HB, aseton)",
+      "Yağ asidi sentezi: Sitoplazma, NADPH gerekli, ACC hız kısıtlayıcı, insülin aktive eder"
+    ],
+    "clinical_cases": [
+      {
+        "id": "biyo_cc_003",
+        "case": "Soru: (Biyokimya — Lipid) Tip 1 diyabetli 18 yaşında hasta, insülinini 2 gündür almıyor. Acile kusma, karın ağrısı ve bilinç bulanıklığıyla geliyor. Kan gazı: pH 7.18, HCO3-: 10 mEq/L, AG (Anyon gap): 28. İdrarda keton (+++) ve kan glukozu: 450 mg/dL. Bu tablodaki biyokimyasal mekanizma nedir?",
+        "options": [
+          "A) Glikojen fosforilaz aktivasyonu → Glikojenoliz artışı",
+          "B) İnsülin eksikliği → Lipoliz↑ → FFA↑ → Asetil-CoA↑ → Keton↑ → Yüksek AG metabolik asidoz",
+          "C) Pentoz fosfat yolu aktivasyonu → Laktat birikimi",
+          "D) Fruktoz-1,6-bisfosfataz inhibisyonu → Glukoneogenez bozulması",
+          "E) NADPH oksidaz eksikliği → Antioksidan savunma bozukluğu"
+        ],
+        "correct_answer": "B) İnsülin eksikliği → Lipoliz↑ → FFA↑ → Asetil-CoA↑ → Keton↑ → Yüksek AG metabolik asidoz",
+        "explanation": "DKA mekanizması: İnsülin eksikliği → Hormona duyarlı lipaz aktivasyonu (HSL) → Trigliserid yıkımı → Serbest yağ asitleri (FFA) → Karaciğerde beta oksidasyon↑ → Asetil-CoA birikimi (OAA yetersizliği+TCA kapasitesi aşılır) → HMG-CoA yolu → Keton cisimleri (asetoasetat + β-hidroksibutirat) → Kan pH↓ → Yüksek AG metabolik asidoz. Anyon gap = Na - (Cl + HCO3) > 12 = Keton asitleri birikimi. Tedavi: İnsülin infüzyonu + IV sıvı + K⁺ replasmanı."
+      },
+      {
+        "id": "biyo_cc_004",
+        "case": "Soru: (Biyokimya — Lipid) 4 yaşında kız çocuğu, uzun süre aç kaldıktan sonra hipoglisemi, letarji ve kas güçsüzlüğü ile başvuruyor. Kan şekeri 35 mg/dL, keton cisimleri negatif, plazma karnitin düzeyi çok düşük bulundu. Karaciğerde yağlanma ve kardiyomegali saptandı. En olası tanı hangisidir?",
+        "options": [
+          "A) Von Gierke hastalığı",
+          "B) Mcárdle hastalığı",
+          "C) Primer karnitin eksikliği",
+          "D) Diyabetik ketoasidoz",
+          "E) G6PD eksikliği"
+        ],
+        "correct_answer": "C) Primer karnitin eksikliği",
+        "explanation": "Primer karnitin eksikliği (OCTN2 taşıyıcı mutasyonu): Uzun zincirli yağ asitleri mitokondri iç zarına giremez → Beta oksidasyon bozulur → Keton cismi OLUŞAMAZ (hipoketotik hipoglisemi) → Enerji açığı → Karaciğerde yağlanma (FFA birikimi) + Kardiyomiyopati + Miyopati. Hipoketotik hipoglisemi önemli ayırt edici: DKA'da keton yüksek, karnitin eksikliğinde keton düşük. Tedavi: Oral karnitin replasman tedavisi. Von Gierke hepatomegali+hipoglisemi ama glikojen birikimi ve karnitin normal."
+      }
+    ]
+  },
+  {
+    "id": "biyo-batch1-003",
+    "subject": "Biyokimya",
+    "chapter": "Amino Asit ve Protein Metabolizması",
+    "topic": "Üre Döngüsü, Amino Asit Katabolizması ve Enzim Kinetiği",
+    "sub_topic": "Transaminasyon, Üre Döngüsü Enzimleri, Michaelis-Menten, Enzim İnhibisyon Tipleri",
+    "content_summary": "Amino asitlerin katabolizmasında transaminasyon ve oksidatif deaminasyon amonyak üretir. Amonyak karaciğerde üre döngüsüyle zararsız hale getirilir. Enzim kinetiği Michaelis-Menten denklemini temel alır; kompetitif, non-kompetitif ve irreversibl inhibisyon TUS'ta sık sorulur. Aminoasit metabolizma bozuklukları (PKU, alkaptonüri, homosistinüri) önemli klinik tablolar oluşturur.",
+    "flashcards": [
+      {
+        "id": "biyo_fc_013",
+        "question": "Üre döngüsünün lokalizasyonu, temel enzimleri ve substrat kaynakları nelerdir?",
+        "answer": "[[Mitokondri+Sitoplazma; 2 NH3 + CO2 + 3 ATP → Üre; Mitokondri: CPS-I, OTC; Sitoplazma: AS, AL, Arginaz; N kaynakları: NH4⁺ (GDH) + Aspartat (1. ve 2. azot)]]",
+        "explanation": "Üre döngüsü iki bölmede gerçekleşir:\nMitokondri: NH4⁺ + CO2 + 2 ATP → Karbamoil fosfat (CPS-I, N-asetilglutamat aktive eder). Karbamoil fosfat + Ornitin → Sitrülin (OTC — Ornitin transkarbamilaz).\nSitoplazma: Sitrülin + Aspartat → Argininsüksinat (AS) → Arginin + Fumarat (AL) → Üre + Ornitin (Arginaz).\nAzot kaynakları: 1. N → NH4⁺ (glutamat dehidrogenaz ile amino asit → α-KG + NH3). 2. N → Aspartat (transaminasyon ile OAA + glutamat → aspartat + α-KG). Üre döngüsü yetersizliği → Hiperamonyemi.",
+        "difficulty": "Zor",
+        "tags": ["Biyokimya", "Üre Döngüsü", "CPS-I", "OTC", "Hiperamonyemi"],
+        "story_hint": "💡 HİKAYE: 'Üre döngüsü = Amonyak atık yönetimi fabrikası.' Mitokondri ilk 2 adımı atar, sitoplazma kalanı bitirir. Ornitin her tur döngüde 'taşıyıcı' olur (girmez çıkmaz). OTC eksikliği en sık — X'e bağlı, hiperamonyemi ile koma! N-asetilglutamat = CPS-I aktivatörü (açlıkta artar)."
+      },
+      {
+        "id": "biyo_fc_014",
+        "question": "Michaelis-Menten kinetiğinde Km ve Vmax ne anlama gelir?",
+        "answer": "[[Km: Enzimin substrata afinitesinin tersi (düşük Km = yüksek afinite); Vmax: Maksimum reaksiyon hızı (enzim konsantrasyonuyla artar); Km = V=Vmax/2'deki substrat konsantrasyonu]]",
+        "explanation": "Michaelis-Menten denklemi: V = Vmax × [S] / (Km + [S]).\nKm (Michaelis Sabiti): V = Vmax/2 olduğundaki [S] değeri. Düşük Km → Yüksek afinite (az substrata ihtiyaç). Yüksek Km → Düşük afinite.\nVmax: Tüm enzim aktif-site'ları dolduğunda ulaşılan maksimum hız. Enzim miktarıyla doğru orantılı.\nLineweaver-Burk (çift tersinir) grafiği: Y ekseninde 1/V, X ekseninde 1/[S]. Y eksenini kestiği yer: 1/Vmax. X eksenini kestiği yer: -1/Km.\nGlukokinaz vs Hekzokinaz: Glukokinaz yüksek Km (düşük afinite, ~10 mM) — hiperglisemi sensörü. Hekzokinaz düşük Km (~0.1 mM) — sürekli aktif.",
+        "difficulty": "Orta",
+        "tags": ["Biyokimya", "Enzim Kinetiği", "Michaelis-Menten", "Km", "Vmax"],
+        "story_hint": "💡 HİKAYE: 'Km = Enzimin substratı 'yarı doyurma' konsantrasyonu.' Düşük Km = 'az ile doyar' = yüksek afinite. Hekzokinaz düşük Km ile glukoza sıkı bağlanır. Glukokinaz yüksek Km ile ancak kan şekeri yüksekken çalışır — karaciğirin 'glukoz sensörü'!"
+      },
+      {
+        "id": "biyo_fc_015",
+        "question": "Kompetitif ve non-kompetitif inhibisyonun Km ve Vmax üzerine etkileri nelerdir?",
+        "answer": "[[Kompetitif: Km↑, Vmax değişmez (artan substrat ile yenilebilir); Non-kompetitif: Km değişmez, Vmax↓ (substrat artışıyla yenilemez)]]",
+        "explanation": "Kompetitif inhibisyon: İnhibitör aktif siteye bağlanır (substratla rekabet). Substrat konsantrasyonu artırılarak inhibisyon aşılabilir → Vmax korunur, Km artar (görünür Km artar). Lineweaver-Burk: Aynı Y eksenini keser (Vmax aynı), farklı X kesişimi. Non-kompetitif inhibisyon: İnhibitör allosterik site'a bağlanır (enzim + substrat kompleksine). Substrat artışıyla aşılamaz → Vmax azalır, Km değişmez. Lineweaver-Burk: Aynı X ekseni, farklı Y kesişimi. Geri dönüşümsüz (İrreversibl): Aktif siteye kovalent bağ → Vmax azalır (aktif enzim sayısı azalır).",
+        "difficulty": "Orta",
+        "tags": ["Biyokimya", "Enzim İnhibisyonu", "Kompetitif", "Non-Kompetitif", "Lineweaver-Burk"],
+        "story_hint": "💡 HİKAYE: 'Kompetitif = Koltuğa oturan yarışmacı — daha fazla substrat gelince kovulur!' Vmax korunur, Km artar. Non-kompetitif = Enzim formunu bozuyor — substrat gelse de çalışmaz. Vmax düşer, Km değişmez. 'Statinler HMG-CoA redüktaza kompetitif bağlanır!' — TUS klasik örneği."
+      },
+      {
+        "id": "biyo_fc_016",
+        "question": "Fenilketonüri (PKU) biyokimyasal temeli, bulguları ve tedavisi nedir?",
+        "answer": "[[Fenilalanin hidroksilaz eksikliği → Fenilalanin birikimi + Tirozin azalması; Bulgular: Mental retardasyon, fare idrar kokusu, sarı saç/mavi göz, egzama; Tedavi: Fenilalanin kısıtlı diyet + BH4]]",
+        "explanation": "PKU: Fenilalanin hidroksilaz (PAH) eksikliği veya BH4 (tetrahidrobiopterin) kofaktör eksikliği. Fenilalanin → Tirozin dönüşümü bozulur. Fenilalanin birikir → Fenil pirüvat, fenil asetat, fenil laktat (fare/küf kokusu). Tirozin azalır → Melanin↓ (hipopigmentasyon), Dopamin/Noradrenalin↓, Tiroid hormonu↓. Nörolojik hasar: Beyin gelişiminde miyelinizasyon bozulur → IQ düşüşü, nöbet. Yenidoğan taraması: Guthrie testi/Kan fenilalanin. Tedavi: Fenilalanin kısıtlı diyet (düşük protein + özel formüla) + BH4 kofaktörü (bazı hastalarda). Anne PKU: Gebede diyete uyulmazsa fetüste mikrosefali, kalp anomalisi.",
+        "difficulty": "Orta",
+        "tags": ["Biyokimya", "PKU", "Fenilalanin", "Aminoasit Metabolizması", "Yenidoğan Taraması"],
+        "story_hint": "💡 HİKAYE: 'PKU = Fenilalanin fabrikasında geri dönüşüm bozuldu.' Tirozine gidemez → birikim yapar → beyin zarar görür. Yenidoğanda hafif pembe/sarı saçlı, mavi gözlü bebek, fare kokusu = PKU alarm! Hayatboyu diyet şart — PKU'lu anne hamileyse diyete dönmeli!"
+      },
+      {
+        "id": "biyo_fc_017",
+        "question": "Homosistinüri, alkaptonüri ve akçaağaç şurubu idrar hastalığı nedir?",
+        "answer": "[[Homosistinüri: CBS eksikliği → Homosistein birikimi → Lens dislokasyonu, tromboz, Marfan benzeri; Alkaptonüri: Homogentisat oksidaz eksikliği → Ochronosis; MSUD: BCKA DH eksikliği → Yanmış şeker kokusu]]",
+        "explanation": "Homosistinüri (CBS — Sistationin β-sentaz eksikliği): Metiyonin → Homosistein → Sistin yolu bozulur. Homosistein birikir. Bulgular: Lens dislokasyonu (ektopi lentis, aşağı-iç), osteoporozis, Marfan benzeri (ama uzun ince parmaklar — arachnodaktili), tromboembolizm (arteryel+venöz), mental gerilik. B6 vitamini (piridoksin) tedavide etkili. Alkaptonüri (Homogentisat oksidaz eksikliği): Tirozin yıkım yolunda blok. Homonjentisat birikir → Koyu idrar (hava temasıyla kararır), eklem kartilajı ve deri kararması (ochronosis). Eklem hasarı (late). MSUD (Dal zincirli amino asit DH eksikliği): Lösin, izolösin, valin birikir → Yanmış şeker kokusu, nörolojik hasar.",
+        "difficulty": "Zor",
+        "tags": ["Biyokimya", "Homosistinüri", "Alkaptonüri", "MSUD", "Aminoasit Bozukluğu"],
+        "story_hint": "💡 HİKAYE: 'Üç büyük amino asit hastalığı — üç farklı koku/renk!' Alkaptonüri = idrar kararır (ochronosis). Homosistinüri = tromboz + lens aşağı kayar. MSUD = yanmış şeker kokusu + nöbet. PKU'dan fark: Homosistinürüde lens AŞAĞI iner (Marfan'da YUKARI iner)!"
+      }
+    ],
+    "tus_spots": [
+      "Üre döngüsü: Mitokondri (CPS-I, OTC) + Sitoplazma (AS, AL, Arginaz); N-asetilglutamat CPS-I aktivatörü",
+      "OTC eksikliği: X'e bağlı, en sık üre döngüsü defekti → Hiperamonyemi + Koma",
+      "Km düşük = Yüksek afinite; Km yüksek = Düşük afinite",
+      "Kompetitif inhibisyon: Km↑, Vmax aynı (substrat artışıyla yenilebilir)",
+      "Non-kompetitif inhibisyon: Km aynı, Vmax↓ (substrat artışıyla yenilemez)",
+      "PKU: PAH eksikliği, fare kokusu, mental retardasyon, hipopigmentasyon; Yenidoğan taraması zorunlu",
+      "Homosistinüri: CBS eksikliği, lens AŞAĞI-İÇE disloke olur (Marfan'da yukarı-dışa)",
+      "Alkaptonüri: Homogentisat oksidaz eksikliği, koyu idrar, ochronosis (eklem kararması)",
+      "MSUD: BCAA DH eksikliği (lösin-izolösin-valin), yanmış şeker kokusu, nöbet"
+    ],
+    "clinical_cases": [
+      {
+        "id": "biyo_cc_005",
+        "case": "Soru: (Biyokimya — Amino Asit) Yenidoğan taramasında fenilalanin yüksekliği saptanan 10 günlük bebek, sarışın, mavi gözlü, ve idrarı fare idrarına benzer kokuyor. Fenilalanin 25 mg/dL (N:<2). Hangi enzim bu hastalıktan sorumludur?",
+        "options": [
+          "A) Fenilalanin transaminaz",
+          "B) Tirozin hidroksilaz",
+          "C) Fenilalanin hidroksilaz",
+          "D) Homogentisat oksidaz",
+          "E) Sistationin beta-sentaz"
+        ],
+        "correct_answer": "C) Fenilalanin hidroksilaz",
+        "explanation": "PKU (Fenilketonüri): PAH eksikliği nedeniyle fenilalanin tirozine dönüşemez. Aşırı fenilalanin → Fenil pirüvat + Fenil asetat (fare/küf kokusu). Tirozin azalır → Melanin sentezi bozulur (sarı saç, mavi göz, açık ten). BH4 kofaktörü de PAH için gereklidir (BH4 eksikliği atipik PKU yapar). Tedavi edilmezse ağır mental retardasyon gelişir. Türkiye dahil pek çok ülkede yenidoğan taraması zorunludur. Tirozin hidroksilaz: Tirozin→DOPA (dopamin öncüsü). Homogentisat oksidaz eksikliği: Alkaptonüri."
+      },
+      {
+        "id": "biyo_cc_006",
+        "case": "Soru: (Biyokimya — Enzim Kinetiği) Bir hastada kolesterol yüksekliği nedeniyle atorvastatin (HMG-CoA redüktaz inhibitörü) başlandı. İlaçla ilgili aşağıdakilerden hangisi doğrudur?",
+        "options": [
+          "A) Enzimin Vmax'ını azaltır, Km'yi değiştirmez",
+          "B) Enzimin Km'sini artırır, Vmax'ı değiştirmez",
+          "C) Enzimi geri dönüşümsüz olarak inhibe eder",
+          "D) Allosterik site'a bağlanarak enzimi aktive eder",
+          "E) Enzim miktarını transkripsiyon düzeyinde azaltır"
+        ],
+        "correct_answer": "B) Enzimin Km'sini artırır, Vmax'ı değiştirmez",
+        "explanation": "Statinler (atorvastatin, simvastatin, rosuvastatin) HMG-CoA redüktazın aktif sitesine HMG-CoA'ya yapısal benzerlikle kompetitif bağlanır. Kompetitif inhibisyon: Km↑ (görünür Km artar — enzim substrat için daha yüksek konsantrasyona ihtiyaç duyar), Vmax değişmez (substrat konsantrasyonu artırılırsa inhibisyon aşılabilir). Lineweaver-Burk grafiğinde: Aynı Y eksenini keser (Vmax aynı), X eksenini farklı noktada keser. Statinler ayrıca SREBP aktivasyonu yoluyla LDL reseptör ekspresyonunu artırır — ikincil etki."
+      }
+    ]
+  }
+]

@@ -12,21 +12,30 @@
         "question": "Kuş ve yarasa dışkısı ile kontamine topraktan bulaşan, makrofaj içinde küçük oval mayalar yapan mantar?",
         "answer": "Histoplasma capsulatum.",
         "difficulty": "medium",
-        "tags": ["Histoplasma"]
+        "tags": [
+          "Histoplasma"
+        ],
+        "story_hint": "💡 HİKAYE: Histoplasma, kuş ve yarasa dışkılı mağaralarda yaşar. Solunan sporlar makrofajların içine saklanır — tıpkı mağarada gizlenen küçük hırsızların evlere sızması gibi. Ohio ve Mississippi vadisini sever."
       },
       {
         "id": "fc-myco-3101",
         "question": "Çöl romatizması (vadi ateşi) yapan, vücutta maya değil sferül (spor dolu kese) oluşturan mantar?",
         "answer": "Coccidioides immitis.",
         "difficulty": "medium",
-        "tags": ["Coccidioides"]
+        "tags": [
+          "Coccidioides"
+        ],
+        "story_hint": "💡 HİKAYE: Coccidioides, çöl tozu fırtınasıyla uçar ve akciğere iner. Vücutta sferül (spor dolu balon) oluşturur — tıpkı çölde şişen bir kum balonunun patlaması gibi sporları yayar."
       },
       {
         "id": "fc-myco-3102",
         "question": "Gemi dümeni (pilot wheel) şeklinde çoklu tomurcuklanan maya hücresi hangi mantara özgüdür?",
         "answer": "Paracoccidioides brasiliensis.",
         "difficulty": "medium",
-        "tags": ["Paracoccidioides"]
+        "tags": [
+          "Paracoccidioides"
+        ],
+        "story_hint": "💡 HİKAYE: Paracoccidioides, gemi dümeni (pilot wheel) şeklinde çoklu tomurcuklanır. Güney Amerika ormanlarından gelen bu kaptan, her yöne tomurcuk uzatarak ilerler — dümeni çevirdikçe yayılır."
       }
     ],
     "tus_spots": [
@@ -49,21 +58,30 @@
         "question": "37°C'de serumda Germ Tüp oluşturan, en sık hastalık yapan Candida türü?",
         "answer": "Candida albicans.",
         "difficulty": "easy",
-        "tags": ["Candida"]
+        "tags": [
+          "Candida"
+        ],
+        "story_hint": "💡 HİKAYE: Candida albicans, 37°C serumda Germ Tüp çıkararak 'ben buradayım!' diye bağırır. Bu tüp, mayadan hife dönüşün ilk adımıdır — diğer Candidalar bu numarayı yapamaz."
       },
       {
         "id": "fc-myco-3201",
         "question": "Geniş kapsüllü olan, Çini Mürekkebi ile gösterilen ve HIV hastasında en sık menenjit yapan mantar?",
         "answer": "Cryptococcus neoformans.",
         "difficulty": "medium",
-        "tags": ["Cryptococcus"]
+        "tags": [
+          "Cryptococcus"
+        ],
+        "story_hint": "💡 HİKAYE: Cryptococcus, HIV hastasının beynine sızan kapsüllü bir hırsızdır. Çini mürekkebiyle yakalanır — siyah arkaplanda parlayan hale gibi kapsülü görünür olur."
       },
       {
         "id": "fc-myco-3202",
         "question": "Dar açılı (45 derece) dikotom dallanan septalı hifleri olan, nötropenik hastada anjioinvaziv seyreden mantar?",
         "answer": "Aspergillus fumigatus.",
         "difficulty": "medium",
-        "tags": ["Aspergillus"]
+        "tags": [
+          "Aspergillus"
+        ],
+        "story_hint": "💡 HİKAYE: Aspergillus fumigatus, 45 derece açıyla dallanan septalı hiflerle nötropenik hastanın damarlarına dalış yapar. Anjioinvaziv seyir — tıpkı ağaç dallarının damara doğru büyümesi gibi."
       }
     ],
     "tus_spots": [

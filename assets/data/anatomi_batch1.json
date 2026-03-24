@@ -1,0 +1,2087 @@
+[
+  {
+    "id": "anat-batch1-001",
+    "subject": "Anatomi",
+    "chapter": "Hareket Sistemi",
+    "topic": "Üst Ekstremite",
+    "sub_topic": "Eklemler, Kaslar, Sinirler ve Klinik Anatomi",
+    "content_summary": "Üst ekstremitenin temel eklemleri, rotator manşet kasları, sinir lezyonları ve klinik bulguları. TUS'ta sık sorulan omuz çıkığı, karpal tünel, el deformiteleri konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_001",
+        "question": "Vücutta hareketin en fazla olduğu eklem hangisidir?",
+        "answer": "[[Articulatio humeri]] ([[Omuz eklemi]])",
+        "explanation": "Art. humeri (omuz eklemi), sferoid (küresel) tip bir eklem olduğu ve cavitas glenoidalis'in caput humeri'ye göre çok sığ olması nedeniyle vücudun en geniş hareket açıklığına (fleksiyon, ekstansiyon, abduksiyon, adduksiyon, rotasyon ve sirkümdiksiyon) sahip eklemidir. Ancak bu geniş hareket yeteneği, onu çıkıklara (dislokasyon) en yatkın eklem yapar.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Bir dansçı düşün, sahnede omzuyla 360 derece dönerek dans ediyor — her yöne hareket! Ama sahne çok kaygan (sığ glenoidal çukur), ayağı kayıp düşüyor. Omuz eklemi de öyle: en çok hareket eden ama en kolay çıkan eklem!"
+      },
+      {
+        "id": "anat_002",
+        "question": "Omuz ekleminin en zayıf olduğu yön hangisidir?",
+        "answer": "[[Ön-Aşağı]] ([[Anteroinferior]])",
+        "explanation": "Omuz eklemini üstten coracoakromial ark ve rotator cuff kasları destekler, arkadan yine kaslar desteklerken alt (inferior) kısımda sadece zayıf eklem kapsülü bulunur. Bu nedenle omuz çıkıkları %95 oranında öne-aşağıya (anteroinferior) doğru gerçekleşir. Bu çıkıklarda N. axillaris zedelenme riski çok yüksektir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Omuzunda ağır çanta taşıyan bir öğrenci düşün. Çanta hep öne-aşağı kayıyor (anteroinferior) çünkü orada destek yok. Omuz da aynı — en zayıf yeri öne-aşağı, çıkık hep oradan! Aksiller sinir de tam orada eziliyor."
+      },
+      {
+        "id": "anat_003",
+        "question": "Klavikula kırıklarında en sık yer değiştiren parça hangisidir?",
+        "answer": "[[Medial parça]] ([[M. sternocleidomastoideus tarafından yukarı çekilir]])",
+        "explanation": "Klavikula en sık 1/3 orta noktasından kırılır. Kırık sonrasında Medial (iç) parça M. sternocleidomastoideus'un kasılmasıyla yukarı (superiora) çekilir. Lateral (dış) parça ise kolun ağırlığı ve M. deltoideus'un etkisiyle aşağı sarkar; aynı zamanda M. pectoralis major tarafından mediale doğru çekilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Bir orkestra şefi (sternokleidomastoid kası) batonunu hep yukarı kaldırıyor. Klavikula kırılınca, şef iç parçayı yukarı çekiyor. Dış parça ise kolun ağırlığıyla aşağı sarkıyor — sanki orkestranın bir yarısı ayağa kalkıp diğeri oturuyor!"
+      },
+      {
+        "id": "anat_004",
+        "question": "Radius başı çıkığı (Nursemaid's elbow / Dadı dirseği) hangi bağın zedelenmesiyle oluşur?",
+        "answer": "[[Lig. anulare radii]]",
+        "explanation": "Lig. anulare radii, radius başını (caput radii) çevreleyen halka şeklinde bir bağdır ve radius başını ulna'nın incisura radialis'ine tutar. Çocuklarda (2-5 yaş) koldan ani çekme hareketiyle radius başı bu bağın altından sublukse olur. Tedavisi supinasyon-fleksiyon manevrası ile redüksiyondur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Dadı küçük çocuğun elinden tutup aniden çekti. Çocuğun radius başındaki yüzük (anüler = yüzük şeklinde bağ) parmaktan kayıp düştü! Çocuk ağlıyor, kolunu oynatamıyor. Dadı dirseği — yüzük bağı kaydı!"
+      },
+      {
+        "id": "anat_005",
+        "question": "Karpal tünelden geçmeyen ancak karpal fleksör olan tendon hangisidir?",
+        "answer": "[[M. palmaris longus]] ve [[M. flexor carpi ulnaris]]",
+        "explanation": "Karpal tünelden N. medianus ve 9 tendon (4 FDS, 4 FDP, 1 FPL) geçer. M. palmaris longus tendonu retinaculum flexorum'un üzerinden geçer, M. flexor carpi ulnaris ise os pisiforme'ye tutunarak karpal tünelin dışında kalır. Karpal tünel sendromunda bu iki kas etkilenmez.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Karpal tünel bir otoyol tüneli, 9 araba (tendon) ve 1 otobüs (medianus siniri) geçiyor. Palmaris longus tünelin ÜZERİNDEKİ köprüden geçen yaya, flexor carpi ulnaris ise yan yoldan giden bisikletçi — ikisi tünele hiç girmiyor!"
+      },
+      {
+        "id": "anat_006",
+        "question": "El bileğindeki karpal kemiklerden en sık kırılanı hangisidir?",
+        "answer": "[[Os scaphoideum]] ([[Skafoid kemik]])",
+        "explanation": "Skafoid kemik el üzerine düşme sonrası en sık kırılan karpal kemiktir. Özelliği kanlanmasının distalden proksimale doğru olmasıdır; bu nedenle proksimal parçanın avasküler nekrozu (AVN) riski yüksektir. Direkt grafide kırık hattı başlangıçta görülmeyebilir; şüphe varsa 2 hafta sonra kontrol grafisi veya MR çekilir. Anatomik enfiye çukurunda hassasiyet önemli klinik bulgudur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Bir kaptan (Skafoid = gemi/kayık demek) gemisi batınca elini yere vurdu. Anatomik enfiye çukurunda ağrı başladı. Geminin burnu (proksimal pol) kan alamadığı için çürüdü (AVN)! İlk röntgende kırık gizlenmiş — 2 hafta sonra ortaya çıktı."
+      },
+      {
+        "id": "anat_007",
+        "question": "El bileğindeki karpal kemiklerden en sık çıkan (çıkık) hangisidir?",
+        "answer": "[[Os lunatum]] ([[Lunat kemik]])",
+        "explanation": "Os lunatum el üzerine düşme sonrası en sık çıkan karpal kemiktir. Anteriora çıkarak karpal tüneli daraltır ve N. medianus basısına neden olabilir. Bu durum akut karpal tünel sendromu tablosu oluşturabilir. Lunat çıkığında Kienböck hastalığı (lunat AVN) de gelişebilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Ay (Lunat = ay demek) gökyüzünden düşüp el bileğine saplandı, sonra öne fırladı (anterior çıkık). Düşerken karpal tünelin kapısını daralttı ve medianus sinirini sıkıştırdı. Ay düştü, tünel tıkandı!"
+      },
+      {
+        "id": "anat_013",
+        "question": "Rotator manşet (Rotator cuff) kasları nelerdir?",
+        "answer": "[[Supraspinatus]], [[Infraspinatus]], [[Teres minor]], [[Subscapularis]] ([[SITS]])",
+        "explanation": "Rotator manşet kasları SITS kısaltmasıyla hatırlanır: Supraspinatus (abduksiyon başlatır, en sık yırtılan kas), Infraspinatus (dış rotasyon), Teres minor (dış rotasyon), Subscapularis (iç rotasyon, tek ön yerleşimli kas). Bu kaslar omuz eklemini stabilize eder ve çıkıklara karşı korur. TUS'ta en sık supraspinatus tendonu yırtığı sorulur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Bir otel odasında 4 koruma (rotator cuff kasları) omuz patronunu koruyor. Supra kapının ÜSTÜNDE duruyor (Supraspinatus), Infra ARKADA gizleniyor (Infraspinatus), küçük Teres de ARKADA yardımcı, Subscapularis ise ÖNDE tek başına nöbet tutuyor ve iç rotasyonla kapıyı kilitliyor. Supra en çok yorulan — ilk o yırtılıyor!"
+      },
+      {
+        "id": "anat_014",
+        "question": "Rotator manşet kasları içinde humerusa iç rotasyon yaptıran tek kas hangisidir?",
+        "answer": "[[M. subscapularis]]",
+        "explanation": "M. subscapularis, skapulanın ön yüzünde (fossa subscapularis) yer alır ve tuberculum minus'a tutunur. Diğer rotator manşet kasları (supraspinatus, infraspinatus, teres minor) skapulanın arka yüzünde yer alıp tuberculum majus'a tutunur. Subscapularis, rotator manşetin tek iç rotatör kasıdır ve Lift-off testi ile değerlendirilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Abonelik (Subscapularis) kasan biri düşün — skapulanın ÖN yüzünde gizli ofisi var, küçük tüberkülüne (minus) tutunuyor. Diğer üç koruma arkada büyük tüberkülde takılırken, o tek başına önde iç rotasyonla kapıları kilitliyor. Lift-off testiyle kontrol — arkana elini koy, kaldır!"
+      },
+      {
+        "id": "anat_015",
+        "question": "Kanat skapula (Scapula alata) hangi kas ve sinir lezyonunda görülür?",
+        "answer": "[[M. serratus anterior]] ve [[N. thoracicus longus]]",
+        "explanation": "M. serratus anterior, skapulayı göğüs duvarına yapıştırır ve skapulanın protraksiyonunu sağlar. N. thoracicus longus (C5-C7) lezyonunda skapulanın medial kenarı duvara iterken posteriora çıkıntı yapar (kanat skapula). Mastektomi ameliyatlarında bu sinirin korunması önemlidir; ayrıca ağır çanta taşıma ile de zedelenebilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Bir kuş (serratus anterior = testere dişi gibi kanat kası) göğüs duvarına yapışmış kanatlarıyla uçuyor. Uzun torasik sinir kesilince kuşun kanatları serbest kaldı — skapula duvardan ayrılıp kanat gibi açıldı! Mastektomi ameliyatında cerrah bu kuşun sinirini korumalı."
+      },
+      {
+        "id": "anat_016",
+        "question": "Memenin en sık görülen lenfatik drenaj yolu neresidir?",
+        "answer": "[[Nodi lymphatici axillares]]",
+        "explanation": "Memenin lenfatik drenajının yaklaşık %75'i aksiller lenf nodlarına drene olur. Bu durum meme kanserinin cerrahi tedavisinde sentinel lenf nodu biyopsisinin önemini açıklar. İç kadranlardan parasternal (internal mammarian) lenf nodlarına da drenaj olur. TUS'ta meme kanserinin en sık metastaz yaptığı lenf nodları sorulur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Memenin lenfası bir nehir gibi akıyor. Nehrin %75'i koltukaltı (aksilla) gölüne dökülüyor. Kanser hücreleri bu nehirde yüzerek aksiller lenf nodlarına ulaşıyor. Nöbetçi (sentinel) lenf nodu ilk durak — onu bul, nehrin yolunu öğren!"
+      },
+      {
+        "id": "anat_093",
+        "question": "Carpal Tünel sendromunda hangi sinir sıkışır?",
+        "answer": "[[Nervus medianus]]",
+        "explanation": "Karpal tünel sendromu en sık görülen tuzak nöropatidir. N. medianus retinaculum flexorum altında sıkışır. Elin ilk 3.5 parmağında (başparmak, işaret, orta ve yüzük parmağının radial yarısı) uyuşma, ağrı ve parestezi görülür. Geceleri artan şikayetler tipiktir. Tinel ve Phalen testleri pozitiftir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Medianus siniri bir tünelde (karpal tünel) sıkışmış madenci gibi düşün. Gece vardiyasında (gece artan ağrı) ilk 3.5 parmağı uyuşuyor. Tinel çekiciyle tünele vur — madenci bağırır! Phalen'le eli bük — tünel daralır, madenci daha çok acı çeker!"
+      },
+      {
+        "id": "anat_094",
+        "question": "Guyon kanalı (Karpal ulnar tünel) sendromunda hangi sinir sıkışır?",
+        "answer": "[[Nervus ulnaris]]",
+        "explanation": "Guyon kanalı, os pisiforme ile hamulus ossis hamati arasında yer alır. N. ulnaris bu kanalda sıkışarak el küçük parmağı ve yüzük parmağının ulnar yarısında duyu kaybı, interossei ve hipotenar kaslarda güçsüzlük oluşturur. Bisiklet sürmek (handlebar palsy) ve uzun süreli bilgisayar kullanımı risk faktörleridir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Guy isimli bir bisikletçi (Guyon kanalı) saatlerce gidon tutunca küçük parmağı uyuştu. Ulnar sinir, pisiform ile hamat kemiğin kancası arasında sıkıştı. Bisiklet dirseği değil — el bilek sendromu! Guy'ın kanalında ulnar sinir ezildi."
+      },
+      {
+        "id": "anat_095",
+        "question": "Humerus gövde kırıklarında en sık hangi sinir ve arter zedelenir?",
+        "answer": "[[Nervus radialis]] ve [[A. profunda brachii]]",
+        "explanation": "N. radialis ve A. profunda brachii, humerus gövdesinin arka yüzünde sulcus nervi radialis (spiral oluk) içinden geçer. Humerus cisim kırıklarında bu yapılar en sık zedelenen yapılardır. N. radialis lezyonu düşük el (drop hand) tablosuna neden olur: el bileği ve parmak ekstansiyonu yapılamaz.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Humerus kemiğinin arkasında spiral bir oluk var — radyal sinir ve derin brakial arter orada yürüyüş yapıyor. Kemik kırılınca oluk çöktü, ikisi de altında kaldı! Sonuç: el düştü (drop hand), bilek kalkmıyor — cumartesi gecesi felci!"
+      },
+      {
+        "id": "anat_096",
+        "question": "Düşük el (Drop hand) hangi sinir lezyonunda görülür?",
+        "answer": "[[Nervus radialis lezyonu]]",
+        "explanation": "N. radialis lezyonunda el bileği ve parmak ekstansörlerinde paralizi gelişir; el yerçekimiyle düşer (drop hand/wrist drop). Hastanın el bileğini dorsifleksiyona getirememesi tanı koydurucudur. Saturday night palsy (kolun uzun süre baskı altında kalması) tipik bir nedendir. Supinator kas düzeyinde posterior interosseöz sinir de tutulabilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Cumartesi gecesi barda kolunu bankın üstüne koyup uyuyan adam uyandığında eli sarkmış — radyal sinir ezilmiş! Elini kaldıramıyor, bileği düşük. Garson 'Hesap!' diye el kaldırmasını istedi ama adam bileğini kaldıramadı. Drop hand = düşük el!"
+      },
+      {
+        "id": "anat_097",
+        "question": "Maymun eli veya papaz eli görünümü hangi sinir lezyonunda görülür?",
+        "answer": "[[Nervus medianus lezyonu]]",
+        "explanation": "N. medianus yüksek lezyonunda (el bileği proksimali) tenar kasların (opponens pollicis, abductor pollicis brevis, flexor pollicis brevis yüzeyel başı) felci sonucu başparmak opozisyona getirilmez ve tenar eminens atrofiye uğrar; el düz yassı görünüm alır (maymun eli/ape hand). Bu durum Benediction sign'dan (median sinir lezyonunda yumruk yapmaya çalışırken) farklıdır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Maymun düşün — başparmağını karşıya getiremez, eli dümdüz! Medianus siniri kesilince tenar kaslar eridi, başparmak opozisyon yapamıyor. El yassılaştı, maymun eli oldu. Papaz da dua ederken elini düz tutar — aynı görüntü!"
+      },
+      {
+        "id": "anat_098",
+        "question": "Pençe el (Claw hand) görünümü hangi sinir lezyonunda görülür?",
+        "answer": "[[Nervus ulnaris lezyonu]]",
+        "explanation": "N. ulnaris lezyonunda lumbrikal kas (3. ve 4.) ve interossei kasların felci sonucu MKF eklemlerde hiperekstansiyon, PIF ve DIF eklemlerde fleksiyon görülür (pençe el/claw hand). Paradoks olarak düşük ulnar sinir lezyonunda pençe eli daha belirgindir (ulnar paradox). Froment testi ile adductor pollicis güçsüzlüğü gösterilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Bir kartal (ulnar sinir lezyonu) pençelerini açamıyor — MKF'de hiperekstansiyon, PIF-DIF'te fleksiyon. Pençe el! Paradoks: lezyon ne kadar aşağıda (el bileği), pençe o kadar belirgin. Froment testiyle kağıt tutamıyor — başparmak bükülüyor çünkü adduktor felçli."
+      },
+      {
+        "id": "anat_b1_001",
+        "question": "Erb-Duchenne felcinde (üst brakial pleksus lezyonu, C5-C6) kol hangi pozisyonda kalır?",
+        "answer": "[[Adduksiyon]], [[iç rotasyon]], [[dirsek ekstansiyonda]] ([[Bahşiş isteme pozisyonu]])",
+        "explanation": "Erb-Duchenne felci C5-C6 köklerinin (üst trunkus) zedelenmesiyle oluşur. Doğum travmasında en sık görülen brakial pleksus lezyonudur. Omuz abduksiyonu ve dış rotasyonu (deltoid, supraspinatus, infraspinatus), dirsek fleksiyonu (biseps, brakialis) ve ön kol supinasyonu yapılamaz. Kol iç rotasyonda, adduksiyonda ve dirsek ekstansiyonda asılı kalır (waiter's tip/bahşiş isteme pozisyonu).",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite",
+          "Brakial Pleksus"
+        ],
+        "story_hint": "💡 HİKAYE: Bir garson (Erb-Duchenne) tepsiyi düşürdükten sonra bahşiş istiyor ama kolunu kaldıramıyor! C5-C6 hasar — kol içe dönmüş, adduksiyonda, dirsek düz. Sanki 'bahşiş ver' diye el uzatmış ama kolu öyle donakalmış. Doğumda en sık görülen brakial pleksus yaralanması!"
+      },
+      {
+        "id": "anat_b1_002",
+        "question": "Anatomik enfiye çukurunun (Fovea radialis) sınırlarını oluşturan yapılar nelerdir ve klinik önemi nedir?",
+        "answer": "[[Lateral: M. abductor pollicis longus ve M. extensor pollicis brevis]], [[Medial: M. extensor pollicis longus]], [[Tabanında: Os scaphoideum]]",
+        "explanation": "Anatomik enfiye çukuru (snuffbox) el bileğinin dorsolateral yüzünde yer alır. Tabanında os scaphoideum bulunur; skafoid kırıklarında bu bölgede palpasyonla hassasiyet önemli bir klinik bulgudur. A. radialis bu bölgeden geçer ve burada nabız palpe edilebilir. TUS'ta skafoid kırığı tanısında anatomik enfiye çukuru hassasiyeti sık sorulur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Eski zamanlarda insanlar enfiye (burun tütünü) koklardı — avucun o çukuruna koyarlardı. Skafoid tam o çukurun tabanında oturuyor. Kırık olunca oraya basınca acıyor. A. radialis de oradan geçiyor — nabız alınabilir. Enfiye çukuru = skafoid evi!"
+      },
+      {
+        "id": "anat_b1_003",
+        "question": "Kübital tünel sendromunda hangi sinir sıkışır ve hangi klinik bulgular ortaya çıkar?",
+        "answer": "[[Nervus ulnaris]] ([[Dirsek medial epikondili arkasında]])",
+        "explanation": "Kübital tünel sendromu, N. ulnaris'in dirsek bölgesinde (epicondylus medialis arkasındaki sulcus nervi ulnaris) sıkışmasıyla oluşur. Karpal tünel sendromundan sonra ikinci en sık tuzak nöropatidir. Küçük parmak ve yüzük parmağının ulnar yarısında uyuşma, intrinsik kas güçsüzlüğü ve geç dönemde pençe el deformitesi gelişir. Uzun süre dirseğin bükülü pozisyonda tutulması riski artırır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Üst Ekstremite",
+          "Tuzak Nöropati"
+        ],
+        "story_hint": "💡 HİKAYE: Kübital tünel dirseğin arkasındaki 'komik kemik' bölgesi — oraya vurulunca elektrik çarpar! Ulnar sinir orada yüzeyde. Masada dirseğe uzun süre dayanınca sinir sıkışıyor. Karpal tünelden sonra ikinci en sık tuzak — küçük parmak uyuşuyor, sonunda pençe el!"
+      }
+    ],
+    "tus_spots": [
+      "Omuz çıkığı en sık anteroinferior yönde olur ve N. axillaris zedelenmesi riski taşır.",
+      "Humerus cisim kırığında N. radialis ve A. profunda brachii zedelenir → Düşük el (drop hand).",
+      "Karpal tünel sendromu: N. medianus sıkışır; Phalen ve Tinel testleri pozitif. En sık tuzak nöropatidir.",
+      "Skafoid: en sık kırılan karpal kemik; Lunat: en sık çıkan karpal kemik.",
+      "Erb-Duchenne (C5-C6): bahşiş pozisyonu; Klumpke (C8-T1): pençe el + Horner sendromu."
+    ],
+    "clinical_cases": [
+      {
+        "case": "28 yaşında kadın hasta, geceleri ellerinde uyuşma ve ağrı şikayetiyle başvuruyor. Özellikle ilk üç parmağında parestezi tarif ediyor. El bileğinin volar yüzüne perküsyon ile şikayetleri artıyor. Bu hastada en olası tanı nedir?",
+        "options": [
+          "A) Guyon kanalı sendromu",
+          "B) Karpal tünel sendromu",
+          "C) Kübital tünel sendromu",
+          "D) Thoracic outlet sendromu",
+          "E) Servikal disk hernisi"
+        ],
+        "correct_answer": "B) Karpal tünel sendromu",
+        "explanation": "Gece artan parestezi, ilk 3 parmakta uyuşma ve pozitif Tinel bulgusu (el bileği volar yüze perküsyon) karpal tünel sendromunu düşündürür. N. medianus retinaculum flexorum altında sıkışır. Guyon kanalı sendromunda 4-5. parmaklar etkilenir; kübital tünel dirsek seviyesindedir."
+      },
+      {
+        "case": "35 yaşında erkek hasta, motosiklet kazası sonrası sağ kolunu hareket ettiremiyor. Muayenede omuz abduksiyonu, dirsek fleksiyonu ve ön kol supinasyonu yapamıyor. Kol iç rotasyonda adduksiyonda asılı duruyor. Bu hastada en olası lezyon yeri neresidir?",
+        "options": [
+          "A) Brakial pleksus alt trunkusu",
+          "B) N. axillaris",
+          "C) Brakial pleksus üst trunkusu",
+          "D) N. musculocutaneus",
+          "E) N. radialis"
+        ],
+        "correct_answer": "C) Brakial pleksus üst trunkusu",
+        "explanation": "Omuz abduksiyonu ve dış rotasyonu, dirsek fleksiyonu ve ön kol supinasyonunun kaybı Erb-Duchenne felcini (C5-C6 / üst trunkus lezyonu) gösterir. Kolun bahşiş pozisyonunda (waiter's tip) kalması patognomoniktir. Alt trunkus (C8-T1) lezyonu Klumpke felcidir ve el intrinsik kaslarını etkiler."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch1-002",
+    "subject": "Anatomi",
+    "chapter": "Hareket Sistemi",
+    "topic": "Alt Ekstremite",
+    "sub_topic": "Eklemler, Kaslar, Sinirler ve Refleksler",
+    "content_summary": "Alt ekstremitenin temel eklemleri, bağları, sinir lezyonları ve klinik refleksleri. TUS'ta sık sorulan femur boynu kırığı, diz bağları ve alt ekstremite refleksleri konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_008",
+        "question": "Kalça ekleminin (Art. coxae) en güçlü bağı hangisidir?",
+        "answer": "[[Lig. iliofemorale]] ([[Y bağı]])",
+        "explanation": "Lig. iliofemorale (Bigelow bağı/Y bağı) vücuttaki en güçlü bağdır. Spina iliaca anterior inferior'dan femur'un linea intertrochanterica'sına uzanır. Kalça ekleminin hiperekstansiyonunu engeller ve ayakta dururken eklemi stabilize eder. Posterior kalça çıkığında bu bağ genellikle sağlam kalır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Alt Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Kalça ekleminde 'Y' harfi şeklinde bir halat (lig. iliofemorale) bağlı — vücudun en güçlü halatı! Bu halat kalçanın arkaya aşırı açılmasını engelliyor. Ayakta dururken bizi dik tutan bu Y halatı. Posterior çıkıkta bile kopmuyor — o kadar güçlü!"
+      },
+      {
+        "id": "anat_009",
+        "question": "Aşil tendonunun (Tendo calcaneus) yapısına hangi kaslar katılır?",
+        "answer": "[[M. gastrocnemius]] ve [[M. soleus]] ([[M. triceps surae]])",
+        "explanation": "Aşil tendonu vücudun en kalın ve en güçlü tendonudur. M. gastrocnemius ve M. soleus birleşerek (M. triceps surae) bu tendonu oluşturur ve calcaneus'un tuber calcanei'sine tutunur. Aşil tendon rüptüründe Thompson testi pozitiftir (baldıra sıkma ile ayak plantar fleksiyona gelmez). N. tibialis (S1-S2) innerve eder.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Alt Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Yunan savaşçısı Aşil'in annesi onu topuğundan tutup ölümsüzlük suyuna daldırmış — ama topuk ıslak kalmamış! Gastrocnemius ve soleus birleşip bu zayıf noktayı oluşturdu. Thompson testiyle baldıra sık — ayak kıpırdamıyorsa tendon kopmuş, Aşil düşmüş!"
+      },
+      {
+        "id": "anat_010",
+        "question": "Diz ekleminin hiperekstansiyonunu sınırlayan ana bağ hangisidir?",
+        "answer": "[[Lig. cruciatum anterius]] ([[Ön çapraz bağ - ACL]])",
+        "explanation": "ACL (ön çapraz bağ) tibianın anteriora kaymasını ve dizin hiperekstansiyonunu engeller. Ön çekmece testi ve Lachman testi ile değerlendirilir. Spor yaralanmalarında (pivot hareketi) en sık zedelenen çapraz bağdır. ACL yırtığında \"unhappy triad\" (ACL + medial menisküs + MCL) görülebilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Alt Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Diz ekleminde ön çapraz bağ (ACL) bir güvenlik kemeri — tibianın öne kaymasını engelliyor. Futbolcu pivot yapınca kemer koptu, 'pop' sesi duyuldu! Lachman testiyle çek — tibia öne kayıyorsa kemer kopmuş. Unhappy triad: ACL + medial menisküs + MCL, üçü birden gitti!"
+      },
+      {
+        "id": "anat_011",
+        "question": "Ayakta longitudinal arkı destekleyen en önemli bağ hangisidir?",
+        "answer": "[[Lig. calcaneonaviculare plantare]] ([[Spring ligament]])",
+        "explanation": "Spring ligament (yay bağı) calcaneus'un sustentaculum tali'sinden os naviculare'ye uzanır ve medial longitudinal arkın en önemli pasif desteğidir. Bu bağın yetmezliği pes planus (düz tabanlık) gelişimine katkıda bulunur. M. tibialis posterior tendonu da bu arkın aktif desteğidir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Alt Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Ayağın altında bir yay (Spring ligament = yay bağı) var — her adımda sizi zıplatıyor. Calcaneus'tan naviculare'ye uzanıyor. Bu yay gevşeyince ayak düzleşiyor — pes planus (düz taban)! Tibialis posterior kası da yaya yardım ediyor ama yay kırılırsa tek başına yetmiyor."
+      },
+      {
+        "id": "anat_012",
+        "question": "Femur boynu kırıklarında başın avasküler nekrozuna neden olan zedelenen arter hangisidir?",
+        "answer": "[[A. circumflexa femoris medialis]]",
+        "explanation": "Femur başının kan dolaşımının büyük bölümü A. circumflexa femoris medialis'in retinaküler dalları tarafından sağlanır. Femur boynu intrakapsüler kırıklarında bu arter zedelenerek femur başı avasküler nekrozuna (AVN) yol açar. Bu nedenle genç hastalarda internal fiksasyon, yaşlılarda ise protez tercih edilir. Lig. capitis femoris içindeki A. obturatoria dalı yetersiz kalmaktadır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Alt Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Femur başı bir ada, kanı tek bir köprüden (A. circumflexa femoris medialis) alıyor. Femur boynu kırılınca köprü yıkıldı — ada kansız kaldı (AVN)! Yaşlılarda ada kurtarılamaz, protez konur. Gençlerde acil köprü tamiri (internal fiksasyon) şart!"
+      },
+      {
+        "id": "anat_067",
+        "question": "M. psoas major ve M. iliacus'un ortak insersiyo yeri neresidir?",
+        "answer": "[[Trochanter minor]] ([[Femur]])",
+        "explanation": "M. iliopsoas (M. psoas major + M. iliacus) kalça ekleminin en güçlü fleksörüdür. Lig. inguinale altından geçerek trochanter minor'a tutunur. N. femoralis (L2-L4) tarafından innerve edilir. Psoas apsesi bu kasın içinde oluşabilir ve kalça fleksiyonda tutulur (psoas sign). Appendisit tanısında psoas testi kullanılır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Alt Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: İliopsoas kası kalçanın süper kahramanı — en güçlü fleksör! Psoas ve iliacus ikiz kardeşler gibi birleşip trokanter minor'a tutunuyor. Kasığın altından geçiyorlar. Apandisit düşünüldüğünde psoas testini yap — bacağı geriye it, ağrı varsa apse komşu!"
+      },
+      {
+        "id": "anat_071",
+        "question": "Tendon reflekslerinin en bilineni olan patellar refleks hangi spinal sinir köklerini test eder?",
+        "answer": "[[L2]], [[L3]], [[L4]] ([[Nervus femoralis]])",
+        "explanation": "Patellar refleks (diz refleksi) M. quadriceps femoris'in tendonuna vurulmasıyla elde edilir. L2-L4 segmentlerini ve N. femoralis'i test eder. Üst motor nöron lezyonlarında hiperaktif, alt motor nöron lezyonlarında ise azalmış veya kaybolmuş olabilir. Klinik nörolojik muayenenin temel parçasıdır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Alt Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Doktor dizin altına çekiçle vurdu, bacak fırladı! Patellar refleks = L2-L4 (femoralis sinir). Hatırla: 'L234 kapıyı tekMEle' — quadriceps kasılıp bacak fırlıyor. Üst motor nöron lezyonunda refleks aşırı, alt motor nöron lezyonunda kayıp!"
+      },
+      {
+        "id": "anat_072",
+        "question": "Aşil tendon refleksi hangi spinal sinir kökünü test eder?",
+        "answer": "[[S1]] ([[S2]]) (Nervus tibialis)",
+        "explanation": "Aşil tendon refleksi tendo calcaneus'a vurulmasıyla elde edilir ve S1 (ve S2) spinal segmentlerini test eder. N. tibialis aracılığıyla M. triceps surae'nin refleks kasılması değerlendirilir. L5-S1 disk hernisi tanısında önemlidir; S1 kök basısında Aşil refleksi azalır veya kaybolur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Alt Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Aşil tendonuna çekiçle vurulunca ayak plantar fleksiyona gitti — S1 refleksi! 'S1 = Step on gas' (gaza bas) — ayak aşağı basıyor. L5-S1 disk hernisinde Aşil refleksi kayboluyor. Tibial sinir bu işin sorumlusu!"
+      },
+      {
+        "id": "anat_099",
+        "question": "Pulsasyonu ayak sırtında palpasyonla hissedilebilen arter hangisidir?",
+        "answer": "[[A. dorsalis pedis]]",
+        "explanation": "A. dorsalis pedis, A. tibialis anterior'un devamıdır ve ayak sırtında 1. ve 2. metatars kemiklerinin proksimalinde palpe edilir. Periferik arter hastalığı değerlendirmesinde önemlidir. Bu arter palpe edilemezse periferik arter hastalığı düşünülmelidir. Ankle-brakial indeks (ABI) ölçümünde kullanılır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Alt Ekstremite"
+        ],
+        "story_hint": "💡 HİKAYE: Ayak sırtında bir nehir akıyor — dorsalis pedis arteri! 1. ve 2. metatars arası, sandaletinizin kayışının geçtiği yerde nabzını hissedebilirsiniz. Nabız yoksa periferik arter hastalığı alarm veriyor. Diyabetik ayak kontrolünde ilk bakılacak yer!"
+      },
+      {
+        "id": "anat_b1_004",
+        "question": "Trendelenburg testi pozitifliği hangi sinir ve kasın lezyonunu gösterir?",
+        "answer": "[[N. gluteus superior]] ve [[M. gluteus medius/minimus]]",
+        "explanation": "Trendelenburg testi tek ayak üzerinde durularak yapılır. Normalde kaldırılan taraftaki pelvis yükselir (karşı taraf gluteus medius/minimus kasılır). N. gluteus superior (L4-S1) lezyonunda etkilenen tarafta durunca karşı taraf pelvis düşer (pozitif Trendelenburg). Kalça protezi ameliyatlarında ve konjenital kalça çıkığında bu test önemlidir. Bilateral pozitiflikte yürüyüş bozukluğu (Trendelenburg yürüyüşü / ördek yürüyüşü) gelişir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Alt Ekstremite",
+          "Nörolojik Muayene"
+        ],
+        "story_hint": "💡 HİKAYE: Tek ayak üstünde duran bir flamingo düşün — karşı kalçası düşmüyor çünkü gluteus medius tutuyor. N. gluteus superior kesilince flamingo dengesi bozuldu — karşı taraf pelvis düştü (pozitif Trendelenburg). İki taraflıysa ördek gibi yürüyor — sağa sola sallanarak!"
+      },
+      {
+        "id": "anat_b1_005",
+        "question": "Arka çapraz bağ (PCL) lezyonunda hangi test pozitif bulunur ve tibianın hangi yöne kayması engellenir?",
+        "answer": "[[Arka çekmece testi pozitif]], [[Tibianın posteriora kaymasını engeller]]",
+        "explanation": "PCL (lig. cruciatum posterius) dizin en güçlü bağıdır ve tibianın posteriora kaymasını engeller. En sık dashboard yaralanmasında (araç kazasında dizin torpidoya çarpması) zedelenir. Arka çekmece testi (posterior drawer test) ile değerlendirilir: diz 90° fleksiyonda iken tibia posteriora itilir ve artmış kayma PCL yırtığını gösterir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Alt Ekstremite",
+          "Diz"
+        ],
+        "story_hint": "💡 HİKAYE: Arabayla giderken ani fren yaptınız, diziniz torpidoya çarptı (dashboard injury)! Tibia arkaya itildi, arka çapraz bağ (PCL) koptu. PCL dizin EN GÜÇLÜ bağı ama torpido daha güçlü çıktı! Arka çekmece testi: tibiayı arkaya it — kayıyorsa PCL gitmiş."
+      }
+    ],
+    "tus_spots": [
+      "Femur boynu kırığında A. circumflexa femoris medialis zedelenmesi → Femur başı AVN riski.",
+      "ACL: tibianın öne kaymasını engeller (ön çekmece ve Lachman testi); PCL: tibianın arkaya kaymasını engeller (arka çekmece testi).",
+      "Patellar refleks: L2-L4 (N. femoralis); Aşil refleks: S1-S2 (N. tibialis).",
+      "Trendelenburg pozitifliği: N. gluteus superior lezyonu → M. gluteus medius/minimus felci.",
+      "Lig. iliofemorale (Y bağı): vücudun en güçlü bağı; kalça hiperekstansiyonunu engeller."
+    ],
+    "clinical_cases": [
+      {
+        "case": "70 yaşında kadın hasta düşme sonrası sol kalça ağrısı ile acile başvuruyor. Sol alt ekstremite kısalmış ve dış rotasyonda. Direkt grafide femur boynu kırığı saptanıyor. Bu hastada en çok endişelenilmesi gereken komplikasyon nedir?",
+        "options": [
+          "A) N. ischiadicus lezyonu",
+          "B) Femur başı avasküler nekrozu",
+          "C) Kompartman sendromu",
+          "D) Yağ embolisi",
+          "E) Derin ven trombozu"
+        ],
+        "correct_answer": "B) Femur başı avasküler nekrozu",
+        "explanation": "Femur boynu intrakapsüler kırıklarında A. circumflexa femoris medialis'in retinaküler dalları zedelenerek femur başına kan akımı bozulur. Bu durum avasküler nekroz (AVN) riskini ciddi oranda artırır. Yaşlı hastalarda bu nedenle genellikle protez tercih edilirken, genç hastalarda acil internal fiksasyon yapılır."
+      },
+      {
+        "case": "22 yaşında futbolcu, maç sırasında pivot hareketi yaparken dizinde 'pop' sesi duyuyor ve şiddetli ağrı başlıyor. Diz şiş ve ön çekmece testi pozitif. Bu hastada en olası tanı nedir?",
+        "options": [
+          "A) Medial menisküs yırtığı",
+          "B) Arka çapraz bağ (PCL) yırtığı",
+          "C) Lateral kollateral bağ yırtığı",
+          "D) Ön çapraz bağ (ACL) yırtığı",
+          "E) Patella çıkığı"
+        ],
+        "correct_answer": "D) Ön çapraz bağ (ACL) yırtığı",
+        "explanation": "Pivot hareketi sırasında duyulan 'pop' sesi, akut diz efüzyonu ve pozitif ön çekmece testi ACL (ön çapraz bağ) yırtığının klasik triadıdır. ACL spor yaralanmalarında en sık zedelenen çapraz bağdır. Lachman testi en sensitif testtir. MR ile tanı doğrulanır."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch1-003",
+    "subject": "Anatomi",
+    "chapter": "Kardiyovasküler Sistem",
+    "topic": "Kardiyovasküler",
+    "sub_topic": "Kalp Anatomisi, İleti Sistemi ve Koroner Arterler",
+    "content_summary": "Kalbin anatomik yapısı, ileti sistemi, koroner arterler ve klinik yansımaları. TUS'ta sık sorulan SA düğüm, koroner arter dalları ve fetal dolaşım kalıntıları konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_023",
+        "question": "Kalbin ileti sisteminin doğal pacemaker'ı (uyarı oluşturucusu) neresidir?",
+        "answer": "[[Nodus sinuatrialis]] ([[SA düğüm - Keith-Flack nodu]])",
+        "explanation": "SA düğüm kalbin doğal pace-maker'ıdır ve dakikada 60-100 arası uyarı üretir. Sağ atriyumda, V. cava superior'un açılma yerinin hemen lateralinde, sulcus terminalis'te yer alır. %60 olguda sağ koroner arter (RCA) tarafından kanlanır. SA düğüm disfonksiyonu hasta sinüs sendromuna neden olur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kardiyovasküler"
+        ],
+        "story_hint": "💡 HİKAYE: Kalbin orkestra şefi SA düğüm — müziği o başlatıyor (pacemaker)! Sağ atriyumda, V. cava superior'un yanında oturuyor, dakikada 60-100 ritim tutturuyor. Sağ koroner arter (%60) onun kahvesini getiriyor. Şef hastalanırsa (hasta sinüs sendromu) orkestra dağılıyor!"
+      },
+      {
+        "id": "anat_024",
+        "question": "Kalbin ön yüzünü büyük oranda hangi boşluk oluşturur?",
+        "answer": "[[Ventriculus dexter]] ([[Sağ ventrikül]])",
+        "explanation": "Sağ ventrikül kalbin ön yüzünün (facies sternocostalis) büyük bölümünü oluşturur. Bu nedenle göğse penetran yaralanmalarda en sık sağ ventrikül zedelenir. Sol ventrikül ise kalbin sol-alt ve arka yüzünü (facies diaphragmatica) oluşturur. PA akciğer grafisinde kalp siluetinin sağ kenarını sağ atriyum, sol kenarını sol ventrikül ve sol atriyum aurikülü oluşturur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kardiyovasküler"
+        ],
+        "story_hint": "💡 HİKAYE: Kalbin ön yüzü bir kalkan gibi — ve bu kalkanı sağ ventrikül tutuyor! Göğse bıçak saplanırsa ilk sağ ventrikül yaralanır çünkü o en önde. Sol ventrikül arkada gizli, diyaframa yaslanmış. PA grafide ise sağ kenar sağ atriyum, sol kenar sol ventrikül!"
+      },
+      {
+        "id": "anat_025",
+        "question": "Sinus coronarius kalpte nereye açılır?",
+        "answer": "[[Atrium dextrum]] ([[Sağ atriyum]])",
+        "explanation": "Sinus coronarius, kalbin venöz kanının büyük bölümünü toplayan ana venöz yapıdır ve sağ atriyuma açılır. V. cava inferior'un açılma yerinin hemen üstünde, ostium sinus coronarii olarak bilinen açıklıktan drene olur. Kalbin venöz dönüşünün yaklaşık %60'ını taşır. Thebesius kapakçığı (valvula sinus coronarii) bu açıklığı kısmen örter.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kardiyovasküler"
+        ],
+        "story_hint": "💡 HİKAYE: Koroner sinüs kalbin çöp kamyonu — tüm kirli kanı (venöz kan) toplayıp sağ atriyuma döküyor. V. cava inferior'un hemen üstünde, Thebesius kapakçığının ardında gizli bir kapıdan giriyor. Kalbin kanının %60'ını bu çöp kamyonu taşıyor!"
+      },
+      {
+        "id": "anat_026",
+        "question": "Fossa ovalis nerede bulunur?",
+        "answer": "[[Sağ atriyumun interatriyal septumunda]]",
+        "explanation": "Fossa ovalis, fetal dönemdeki foramen ovale'nin kapanmasıyla oluşan bir çukurluktur ve sağ atriyumun interatriyal septumunda yer alır. Fetal dönemde oksijenlenmiş kan sağ atriyumdan sol atriyuma bu açıklık yoluyla geçer. Yaklaşık %25 olguda probe patent foramen ovale (PFO) kalabilir; bu durum paradoks emboliye yol açabilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kardiyovasküler"
+        ],
+        "story_hint": "💡 HİKAYE: Bebek anne karnındayken kalpte bir gizli geçit vardı — foramen ovale! Sağ atriyumdan sol atriyuma kan akıyordu. Doğumda geçit kapandı, geriye fossa ovalis (çukurluk) kaldı. Ama %25'inde geçit tam kapanmıyor (PFO) — pıhtılar gizli geçitten geçip paradoks emboli yapıyor!"
+      },
+      {
+        "id": "anat_b1_006",
+        "question": "Sol koroner arterin (A. coronaria sinistra) başlıca dalları nelerdir?",
+        "answer": "[[Ramus interventricularis anterior (LAD)]] ve [[Ramus circumflexus (Cx)]]",
+        "explanation": "Sol koroner arter (LCA) sol aortik sinüsten çıkar ve kısa bir ana gövdeden (left main) sonra iki ana dala ayrılır: LAD (sol ön inen arter) ve Cx (sirkümfleks arter). LAD, sol ventrikülün ön duvarını ve interventriküler septumun ön 2/3'ünü besler; en sık tıkanan koroner arterdir ve 'widowmaker' olarak bilinir. Cx ise sol ventrikülün lateral ve posterior duvarını besler.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kardiyovasküler",
+          "Koroner Arter"
+        ],
+        "story_hint": "💡 HİKAYE: Sol koroner arter bir nehir — kısa bir ana koldan (left main) sonra ikiye ayrılıyor: LAD önden iniyor (sol ventrikül ön duvarı), Cx sola dönüyor (lateral duvar). LAD tıkanırsa 'dul bırakan' (widowmaker) diyorlar — çünkü en sık tıkanan ve en ölümcül olan o!"
+      },
+      {
+        "id": "anat_b1_007",
+        "question": "AV düğümün kanlanması en sık hangi koroner arter tarafından sağlanır?",
+        "answer": "[[Arteria coronaria dextra (RCA)]] (%85 olguda)",
+        "explanation": "AV düğüm (nodus atrioventricularis / Aschoff-Tawara düğümü) olguların yaklaşık %85'inde sağ koroner arter (RCA) tarafından, %15'inde ise sol sirkümfleks arter (Cx) tarafından kanlanır. Bu nedenle inferior MI (RCA tıkanıklığı) durumunda AV blok gelişme riski yüksektir. SA düğüm de %60 olguda RCA, %40 olguda Cx tarafından kanlanır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kardiyovasküler",
+          "Koroner Arter"
+        ],
+        "story_hint": "💡 HİKAYE: AV düğüm kalbin geçiş kapısı — atriyumlardan ventriküllere sinyali o geçiriyor. Kapının anahtarı %85 sağ koroner arterde (RCA). İnferior MI'da RCA tıkanınca anahtar kayboldu — AV blok gelişti, sinyal geçemiyor! Kalp yavaşladı, bradikardi başladı."
+      },
+      {
+        "id": "anat_b1_008",
+        "question": "Sulcus coronarius (atriyoventriküler oluk) hangi yapıları birbirinden ayırır ve hangi önemli damarlar geçer?",
+        "answer": "[[Atriyumları ventriküllerden ayırır]]. [[RCA, Cx ve sinus coronarius]] bu olukta seyreder.",
+        "explanation": "Sulcus coronarius (koroner oluk) kalbin dış yüzeyinde atriyumlar ile ventriküller arasındaki sınırı belirleyen dairesel bir oluktur. Sağ koroner arter (RCA) sağ tarafta, sol sirkümfleks arter (Cx) sol tarafta ve sinus coronarius arka tarafta bu oluk içinde seyreder. Kalp cerrahisinde bu oluğun anatomisini bilmek hayati önem taşır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kardiyovasküler"
+        ],
+        "story_hint": "💡 HİKAYE: Kalbin etrafında dairesel bir hendek var — sulcus coronarius! Bu hendek atriyumları ventriküllerden ayırıyor. Hendeğin içinde üç önemli yolcu seyrediyor: sağda RCA, solda Cx, arkada sinus coronarius. Kalp cerrahı bu hendeği iyi bilmeli — yanlış yere bıçak atarsa üç yolcuyu birden keser!"
+      }
+    ],
+    "tus_spots": [
+      "SA düğüm: sağ atriyum, sulcus terminalis'te; %60 RCA, %40 Cx tarafından kanlanır.",
+      "AV düğüm: %85 RCA kanlanır → İnferior MI'da AV blok riski yüksek.",
+      "LAD: sol ventrikül ön duvarı ve septum ön 2/3; en sık tıkanan koroner arter.",
+      "Kalbin ön yüzü = sağ ventrikül → Penetran göğüs travmasında en sık sağ ventrikül yaralanır.",
+      "Fossa ovalis: foramen ovale kalıntısı; %25 PFO → paradoks emboli riski."
+    ],
+    "clinical_cases": [
+      {
+        "case": "55 yaşında erkek hasta göğüs ağrısı ile acile başvuruyor. EKG'de DII, DIII ve aVF derivasyonlarında ST elevasyonu saptanıyor. Hastada bradikardi ve 2. derece AV blok gelişiyor. Tıkanan koroner arter hangisidir?",
+        "options": [
+          "A) Sol ön inen arter",
+          "B) Sol sirkümfleks arter",
+          "C) Sağ koroner arter",
+          "D) Sol ana koroner arter",
+          "E) Posterior inen arter"
+        ],
+        "correct_answer": "C) Sağ koroner arter",
+        "explanation": "DII, DIII, aVF derivasyonlarında ST elevasyonu inferior MI'yı gösterir. İnferior duvarı besleyen sağ koroner arter (RCA) tıkanmıştır. RCA ayrıca AV düğümü %85 olguda besler, bu nedenle inferior MI'da AV blok gelişmesi tipiktir. LAD tıkanıklığı anterior MI'ya, Cx tıkanıklığı ise lateral MI'ya neden olur."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch1-004",
+    "subject": "Anatomi",
+    "chapter": "Solunum Sistemi ve Toraks",
+    "topic": "Solunum/Toraks",
+    "sub_topic": "Diyafragma, Akciğerler, Larenks",
+    "content_summary": "Diyafragma geçişleri, akciğer lobları, larenks anatomisi ve klinik yansımaları. TUS'ta sık sorulan diyafragma geçişleri, rekürren laringeal sinir ve yabancı cisim aspirasyonu konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_019",
+        "question": "Diyafragmanın ana motor siniri hangisidir?",
+        "answer": "[[Nervus phrenicus (C3]], [[C4]], [[C5)]]",
+        "explanation": "N. phrenicus C3-C4-C5 spinal sinir köklerinden oluşur (C3,4,5 keeps the diaphragm alive). Diyafragmanın tek motor siniridir; ayrıca santral tendonun duyusunu da alır. Unilateral N. phrenicus lezyonunda aynı taraf diyafragma yükselir (paradoks hareket). Bilateral lezyonda hasta mekanik ventilasyona bağımlı hale gelir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Solunum"
+        ],
+        "story_hint": "💡 HİKAYE: 'C3-4-5 diyafragmayı canlı tutar!' Frenik sinir diyafragmanın tek motor siniri — bir tarafı kesilince o taraf diyafragma felç olup yukarı çıkıyor (paradoks hareket). İki tarafı da kesilirse hasta nefes alamaz — ventilatöre bağımlı!"
+      },
+      {
+        "id": "anat_020",
+        "question": "Diyafragmadaki hiatus aorticus'tan geçen yapılar nelerdir?",
+        "answer": "[[Aorta, Ductus thoracicus]] ve [[Vena azygos]]",
+        "explanation": "Diyafragma geçişleri TUS klasiklerinden biridir: T8'de foramen venae cavae (V. cava inferior + N. phrenicus dexter dalı), T10'da hiatus oesophageus (özofagus + N. vagus trunkusları), T12'de hiatus aorticus (aorta + ductus thoracicus + V. azygos). Hiatus aorticus aslında diyafragmanın arkasında (retroperitoneal) olduğu için diyafragma kasılmasından etkilenmez.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Solunum"
+        ],
+        "story_hint": "💡 HİKAYE: Diyafragmada 3 kapı var — T8, T10, T12! T8'den şişman teyze geçiyor (Vena Cava, 8 harf). T10'da on harfli oesophagus vagusla birlikte geçiyor. T12'de ise aorta, duktus thoracicus ve azygos. Aortik geçit diyafragmanın arkasında, kasılmadan etkilenmiyor!"
+      },
+      {
+        "id": "anat_084",
+        "question": "Plica vocalis (ses telleri) hangi iki kıkırdak arasındadır?",
+        "answer": "[[Cartilago thyroidea ile Cartilago arytenoidea]]",
+        "explanation": "Ses telleri (plica vocalis) önde cartilago thyroidea'nın iç yüzüne (commissura anterior), arkada cartilago arytenoidea'nın processus vocalis'ine tutunur. Ses tellerini geren kas M. cricothyroideus (N. laryngeus superior'un dış dalı ile innerve edilir), ses tellerini açan tek kas M. cricoarytenoideus posterior'dur (N. laryngeus recurrens). Bu kasların bilinmesi klinik açıdan önemlidir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Solunum",
+          "Larenks"
+        ],
+        "story_hint": "💡 HİKAYE: Ses tellerini bir gitar teli gibi düşün — önde tiroid kıkırdağa (gitar gövdesi), arkada aritenoid kıkırdağa (tuning pegleri) bağlı. Krikotiroid kası teli geriyor (N. laryngeus superior), posterior krikoaritenoid kası teli açıyor (N. laryngeus recurrens). Tek açıcı kas — kapanırsa nefes alamazsın!"
+      },
+      {
+        "id": "anat_085",
+        "question": "Sağ akciğerde kaç lob, sol akciğerde kaç lob vardır?",
+        "answer": "[[Sağ akciğerde 3 lob, sol akciğerde 2 lob vardır]].",
+        "explanation": "Sağ akciğer fissura obliqua ve fissura horizontalis ile 3 loba (superior, medius, inferior) ayrılır. Sol akciğer ise sadece fissura obliqua ile 2 loba (superior ve inferior) ayrılır; kalp çentiği (incisura cardiaca) ve lingula sol akciğere aittir. Sağ bronş daha dik, kısa ve geniş olduğu için yabancı cisimler en sık sağ ana bronşa düşer.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Solunum"
+        ],
+        "story_hint": "💡 HİKAYE: Sağ akciğer 3 odalı bir ev (superior, medius, inferior), sol akciğer 2 odalı — çünkü kalp sol tarafa yaslanıp bir odayı çalmış (incisura cardiaca)! Sağ bronş daha dik, kısa ve geniş — yuttuğun fıstık hep sağa düşer, yerçekimi onu sağ ana bronşa çekiyor."
+      },
+      {
+        "id": "anat_b1_009",
+        "question": "Ses tellerini açan (abduksiyon yapan) tek larenks kası hangisidir ve hangi sinir innerve eder?",
+        "answer": "[[M. cricoarytenoideus posterior]] ([[N. laryngeus recurrens (CN X dalı)]])",
+        "explanation": "M. cricoarytenoideus posterior, larenks kasları içinde ses tellerini açan (abduksiyon) tek kastır. N. laryngeus recurrens (N. vagus dalı) tarafından innerve edilir. Bilateral N. laryngeus recurrens felcinde her iki ses teli median pozisyonda kalır (adduksiyon) ve hayatı tehdit eden üst solunum yolu obstrüksiyonu gelişir. Tiroid cerrahisinde bu sinirin korunması kritik öneme sahiptir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Solunum",
+          "Larenks"
+        ],
+        "story_hint": "💡 HİKAYE: Larenks kasları arasında sadece BİR kas ses tellerini açabiliyor — posterior krikoaritenoid! Geri kalanı hep kapatıyor. Bu kasın siniri (rekürren laringeal) iki tarafta da kesilirse ses telleri kapanıyor, hasta boğuluyor! Tiroid cerrahisinin en korkulan komplikasyonu."
+      },
+      {
+        "id": "anat_b1_010",
+        "question": "Yabancı cisim aspirasyonunda cisim en sık hangi bronşa düşer ve neden?",
+        "answer": "[[Sağ ana bronş]] ([[Bronchus principalis dexter]])",
+        "explanation": "Sağ ana bronş sol ana bronşa göre daha kısa, daha geniş ve daha dik açıyla (daha vertikal) trakea'dan ayrılır. Bu anatomik özellik nedeniyle aspire edilen yabancı cisimler en sık sağ ana bronşa düşer. Ayakta aspire edildiğinde sağ alt lob bronşuna, yatar pozisyonda aspire edildiğinde ise sağ üst lob posterior segment bronşuna düşme eğilimi vardır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Solunum",
+          "Klinik"
+        ],
+        "story_hint": "💡 HİKAYE: Nefes borusunda bir çatal var — sağ yol daha geniş, daha dik, daha kısa. Sanki otoyol! Sol yol dar ve eğri — tali yol. Çocuk fıstık yutunca fıstık otoyolu tercih etti — sağ ana bronşa düştü! Ayaktaysa sağ alt loba, yatıyorsa sağ üst lob posterioruna gidiyor."
+      }
+    ],
+    "tus_spots": [
+      "Diyafragma geçişleri: T8 (V. cava inferior), T10 (özofagus + N. vagus), T12 (aorta + ductus thoracicus + V. azygos).",
+      "N. phrenicus: C3-C4-C5 → Diyafragmanın tek motor siniri.",
+      "M. cricoarytenoideus posterior: ses tellerini açan TEK kas; N. laryngeus recurrens innerve eder.",
+      "Sağ bronş daha dik ve geniş → Yabancı cisim aspirasyonunda sağ tarafa düşer.",
+      "Bilateral N. laryngeus recurrens felci → Ses telleri median pozisyonda → Akut solunum yolu obstrüksiyonu."
+    ],
+    "clinical_cases": [
+      {
+        "case": "45 yaşında kadın hasta tiroid ameliyatı sonrası ses kısıklığı gelişiyor. Laringoskopide sol ses telinin paramedian pozisyonda hareketsiz olduğu görülüyor. Zedelenen sinir hangisidir?",
+        "options": [
+          "A) N. laryngeus superior",
+          "B) N. laryngeus recurrens sinister",
+          "C) N. phrenicus",
+          "D) N. glossopharyngeus",
+          "E) N. hypoglossus"
+        ],
+        "correct_answer": "B) N. laryngeus recurrens sinister",
+        "explanation": "Tiroid cerrahisi sırasında en sık zedelenen sinir N. laryngeus recurrens'tir. Sol N. laryngeus recurrens arkus aortayı dolanarak yukarı çıktığı için daha uzun seyirlidir ve zedelenme riski daha yüksektir. Unilateral lezyon ses kısıklığına, bilateral lezyon ise ses telleri median pozisyonda kalarak solunum yolu obstrüksiyonuna neden olur."
+      },
+      {
+        "case": "3 yaşında çocuk aniden öksürük, wheezing ve solunum sıkıntısı ile acile getiriliyor. Öyküde fıstık yerken semptomların başladığı öğreniliyor. Yabancı cisim en olası hangi lokalizasyondadır?",
+        "options": [
+          "A) Sol ana bronş",
+          "B) Trakea",
+          "C) Sağ ana bronş",
+          "D) Sol üst lob bronşu",
+          "E) Özofagus"
+        ],
+        "correct_answer": "C) Sağ ana bronş",
+        "explanation": "Sağ ana bronş sol ana bronşa göre daha dik, kısa ve geniş olduğu için aspire edilen yabancı cisimler en sık sağ ana bronşa düşer. Acil bronkoskopi yapılmalıdır. Ekspiratuvar grafide tuzak hava (air trapping) bulgusu tanıda yardımcıdır."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch1-005",
+    "subject": "Anatomi",
+    "chapter": "Gastrointestinal Sistem",
+    "topic": "GIS",
+    "sub_topic": "Özofagus, Mide, Barsak, Karaciğer ve Safra Yolları",
+    "content_summary": "Gastrointestinal sistemin anatomisi, portokaval anastomozlar, karaciğer segmentleri ve klinik yansımaları. TUS'ta sık sorulan portal hipertansiyon, Vater ampullası ve özofagus darlıkları konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_021",
+        "question": "En büyük tükürük bezi hangisidir ve kanalının adı nedir?",
+        "answer": "[[Gl. parotidea, Ductus parotideus]] ([[Stensen kanalı]])",
+        "explanation": "Gl. parotidea en büyük tükürük bezidir ve seröz salgı üretir. Ductus parotideus (Stensen kanalı) M. masseter'in üzerinden geçer, M. buccinator'u delerek ağız boşluğuna üst 2. molar diş hizasında açılır. N. facialis (CN VII) bez içinden geçer; parotis cerrahisinde bu sinirin korunması kritiktir. Kabakulak (mumps) en sık parotis bezini tutar.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS"
+        ],
+        "story_hint": "💡 HİKAYE: Parotis bezi yanaklardaki en büyük tükürük fabrikası! Stensen kanalı masseter kasının üzerinden geçip buccinator'u delerek üst 2. azı dişin karşısına açılıyor. Ama dikkat — fasiyal sinir (CN VII) fabrikanın TAM İÇİNDEN geçiyor! Ameliyatta yanlışlıkla kesilirse yüz felci!"
+      },
+      {
+        "id": "anat_022",
+        "question": "Safra kesesinin kasılmasını sağlayan (kontraksiyon) temel hormon hangisidir?",
+        "answer": "[[Kolesistokinin]] ([[CCK]])",
+        "explanation": "CCK (kolesistokinin) duodenum I hücreleri tarafından yağlı besinlere yanıt olarak salgılanır. Safra kesesini kasarak safranın duodenuma boşalmasını sağlar, Oddi sfinkterini gevşetir ve pankreas enzim salgısını artırır. Ayrıca tokluk hissi vererek besin alımını azaltır. Sekretin ise bikarbonat salgısını artırır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS"
+        ],
+        "story_hint": "💡 HİKAYE: Yağlı yemek yedikten sonra bağırsaklardan CCK habercisi çıkıyor: 'Safra lazım!' Safra kesesi kasılıyor, Oddi sfinkteri açılıyor, safra duodenuma akıyor. CCK aynı zamanda 'Tok oldum!' sinyali de gönderiyor. Yağ = CCK = safra + tokluk!"
+      },
+      {
+        "id": "anat_031",
+        "question": "İnce barsağın peyer plakları en yoğun nerede bulunur?",
+        "answer": "[[İleum]]",
+        "explanation": "Peyer plakları (GALT - barsak ilişkili lenfoid doku) ileumun antimezenterik kenarında en yoğun şekilde bulunur. B lenfosit ağırlıklı lenfoid foliküllerdir ve mukozal bağışıklıkta önemli rol oynarlar. Tifo basili (Salmonella typhi) peyer plaklarına yerleşerek ileum perforasyonuna neden olabilir. Crohn hastalığı da en sık terminal ileumu tutar.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS"
+        ],
+        "story_hint": "💡 HİKAYE: İleumun duvarında askeri üsler var — Peyer plakları! B lenfositlerin karargahı, bağışıklığın ön cephesi. Tifo basili bu üslere sızıp ileum duvarını deliyor (perforasyon). Crohn hastalığı da bu bölgeyi seviyor — terminal ileum her zaman ateş hattında!"
+      },
+      {
+        "id": "anat_032",
+        "question": "Midede parietal hücrelerin salgıladığı yapılar nelerdir?",
+        "answer": "[[HCl]] ve [[İntrinsik faktör]]",
+        "explanation": "Parietal (oksintik) hücreler mide fundus ve gövde bölgesindeki bezlerde yer alır. HCl salgılayarak mide pH'ını düşürür ve pepsinojeni aktif pepsine dönüştürür. İntrinsik faktör ise terminal ileumda vitamin B12 emilimi için zorunludur. Otoimmün gastrit veya gastrektomi sonrası intrinsik faktör eksikliği pernisiyöz anemiye yol açar.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS"
+        ],
+        "story_hint": "💡 HİKAYE: Midenin parietal hücreleri iki ürün çıkaran bir fabrika: HCl (asit) ve intrinsik faktör (B12'nin pasaportu). Asit olmadan pepsin çalışmaz, intrinsik faktör olmadan B12 emilemez. Otoimmün gastrit bu fabrikayı yıkınca hem asit biter hem B12 — pernisiyöz anemi!"
+      },
+      {
+        "id": "anat_033",
+        "question": "Apandisit ağrısının ilk önce göbek çevresinde (periumbilikal) duyulmasının nedeni nedir?",
+        "answer": "[[Apendiksin afferent sinirlerinin T10 spinal segmentine gitmesi]]",
+        "explanation": "Apandisit başlangıçta viseral ağrı olarak periumbilikal bölgede hissedilir çünkü apendiksin afferent sinirleri T10 segmentine gider (referred/yansıyan ağrı). İnflamasyon paryetal peritona ulaştığında ağrı sağ alt kadrana (McBurney noktası) lokalize olur (somatik ağrı). Bu klasik ağrı göçü (migration) apandisite özgü önemli bir klinik bulgudur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS"
+        ],
+        "story_hint": "💡 HİKAYE: Apandisit ağrısı yolculuk yapıyor! Önce göbeğe gidiyor (T10 viseral ağrı). Sonra sağ alt kadrana taşınıyor (McBurney). Neden? İltihaplanma peritonea ulaşınca ağrı lokalize oluyor. Ağrının göçü (migration) = apandisitin imzası!"
+      },
+      {
+        "id": "anat_060",
+        "question": "V. portae hepatis'i oluşturan damarlar nelerdir?",
+        "answer": "[[V. splenica]] ve [[V. mesenterica superior]]",
+        "explanation": "V. portae hepatis, V. splenica (lienalis) ile V. mesenterica superior'un pankreas başının arkasında birleşmesiyle oluşur. V. mesenterica inferior genellikle V. splenica'ya drene olur. Portal ven, karaciğere giden kanın yaklaşık %75'ini taşır (geri kalan %25 A. hepatica propria'dan gelir). Portal hipertansiyonda bu sistem önem kazanır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS"
+        ],
+        "story_hint": "💡 HİKAYE: Portal ven iki nehrin (V. splenica + V. mesenterica superior) pankreas başının arkasında birleşmesiyle oluşan büyük bir göl! Karaciğere giden kanın %75'i bu gölden akıyor. V. mesenterica inferior genelde V. splenica'ya katılıyor — üçü birleşip portal veni oluşturuyor."
+      },
+      {
+        "id": "anat_061",
+        "question": "Portokaval anastomozlardan özofagus venleri arasındaki anormallik neye yol açar?",
+        "answer": "[[Özofagus varisleri (V. gastrica sinistra]] ve [[V. azygos dalları arası)]]",
+        "explanation": "Portal hipertansiyonda portokaval anastomozlar genişler. Özofagus alt ucunda V. gastrica sinistra (portal) ile V. azygos dalları (kaval) arasındaki anastomoz özofagus varislerine neden olur. Varisler rüptüre olursa hayatı tehdit eden üst GIS kanaması gelişir. Diğer portokaval anastomozlar: rektal venler (hemoroid), paraumbilikal venler (caput medusae) ve retroperitoneal venlerdir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS"
+        ],
+        "story_hint": "💡 HİKAYE: Siroz olunca portal ven tıkandı — kan geri basınçla alternatif yollar arıyor! Özofagus altında V. gastrica sinistra (portal) ile V. azygos (kaval) buluşuyor — varisler şişiyor. Varisler patlarsa ağızdan kan geliyor — hayatı tehdit eden üst GIS kanaması!"
+      },
+      {
+        "id": "anat_062",
+        "question": "Caval vende açılan hemoroidler portokaval anastomozların bozulmasında hangi damarları ilgilendirir?",
+        "answer": "[[V. rectalis superior]] ([[Portal]]) ile V. rectalis media/inferior (Caval)",
+        "explanation": "Rektum bölgesinde V. rectalis superior (V. mesenterica inferior → Portal sistem) ile V. rectalis media/inferior (V. iliaca interna → Kaval sistem) arasında portokaval anastomoz bulunur. Portal hipertansiyonda bu anastomozlar genişleyerek internal hemoroidlere neden olabilir. Ancak hemoroidlerin en sık nedeni portal hipertansiyon değil, kabızlık ve ıkınmadır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS"
+        ],
+        "story_hint": "💡 HİKAYE: Rektumda da portal-kaval buluşma var! V. rectalis superior (portal) ile media/inferior (kaval) arasında köprü. Portal basınç artınca bu köprüdeki damarlar şişiyor — internal hemoroid! Ama hemoroidlerin asıl suçlusu genelde kabızlık ve ıkınma, portal hipertansiyon değil."
+      },
+      {
+        "id": "anat_086",
+        "question": "Yemek borusunun (Esophagus) darlıklarından en dar olanı neresidir?",
+        "answer": "[[Başlangıç kısmı]] ([[C6 hizası / M. cricopharyngeus seviyesi]])",
+        "explanation": "Özofagusun 3 anatomik darlığı vardır: 1) Başlangıç darlığı (C6 - M. cricopharyngeus / üst özofageal sfinkter) → en dar yer, 2) Aortik/bronşiyal darlık (T4-5 - arkus aorta ve sol ana bronş çaprazı), 3) Diyafragmatik darlık (T10 - hiatus oesophageus). Yabancı cisimler en sık başlangıç darlığında takılır. Kanserler darlık bölgelerinde daha sık görülür.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS"
+        ],
+        "story_hint": "💡 HİKAYE: Yemek borusu bir tünel — 3 yerde darlaşıyor! Giriş (C6, krikofaringeal kas) EN DAR yer — yuttuğun balık kılçığı genelde burada takılır. Ortada aort ve bronş bastırıyor (T4-5), çıkışta diyafragma sıkıştırıyor (T10). Kanserler de bu darlıkları seviyor!"
+      },
+      {
+        "id": "anat_087",
+        "question": "Midenin özofagus ile birleştiği bölgeye ne ad verilir?",
+        "answer": "[[Cardia]] ([[Pars cardiaca]])",
+        "explanation": "Cardia, midenin özofagusla birleştiği giriş bölgesidir. Alt özofageal sfinkter (LES) bu bölgede fonksiyonel bir sfinkter olarak bulunur. LES yetersizliğinde gastroözofageal reflü (GÖRH) gelişir. Barrett özofagusu GÖRH'ün komplikasyonudur ve özofagus adenokarsinomu riskini artırır. Kardiya kanserleri cerrahi olarak proksimal gastrektomi gerektirir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS"
+        ],
+        "story_hint": "💡 HİKAYE: Midenin giriş kapısına 'Kardia' deniyor — kalbe yakın olduğu için! Alt özofageal sfinkter (LES) burada nöbet tutuyor. Nöbetçi uyuyakalırsa asit yukarı kaçıyor — reflü! Uzun süre reflü olursa Barrett özofagusu gelişir — kanser riski artar."
+      },
+      {
+        "id": "anat_088",
+        "question": "Midenin ince barsak ile (Duodenum) birleştiği çıkış noktası neresidir?",
+        "answer": "[[Pylorus]]",
+        "explanation": "Pylorus, midenin duodenumla birleştiği çıkış bölgesidir ve güçlü bir sirküler kas tabakası (M. sphincter pylori) içerir. Bebeklerde hipertrofik pilor stenozu (HPS) pylorik sfinkter hipertrofisi sonucu olive şeklinde kitle, projektil kusma ve metabolik alkaloz ile prezente olur. Mide çıkış obstrüksiyonunun en sık nedeni çocuklarda HPS, yetişkinlerde ise mide kanseridir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS"
+        ],
+        "story_hint": "💡 HİKAYE: Pylorus midenin çıkış kapısı — güçlü bir bekçi (sfinkter) var! Bebeklerde bu bekçi aşırı kaslı olursa (hipertrofik pilor stenozu) kapı açılmıyor — bebek projektil kusuyor. Karnında zeytin gibi kitle palpe ediliyor. Metabolik alkaloz gelişiyor!"
+      },
+      {
+        "id": "anat_089",
+        "question": "Safra taşı en sık nerede tıkanıklık yapar ve pankreatit tablosuna yol açar?",
+        "answer": "[[Ampulla hepatopancreatica]] ([[Vater ampullası]])",
+        "explanation": "Vater ampullası (Ampulla hepatopancreatica), ductus choledochus ile ductus pancreaticus'un birleşerek duodenum pars descendens'in medial duvarına (papilla duodeni major) açıldığı yerdir. Safra taşının burada tıkanması hem biliyer obstrüksiyona (tıkanma sarılığı) hem de akut pankreatite neden olabilir. Oddi sfinkteri bu açıklıktaki düz kas yapısıdır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS"
+        ],
+        "story_hint": "💡 HİKAYE: Safra taşı bir bilye — Vater ampullasında sıkıştı! Bir taşla iki kuş vurdu: hem safra akışını tıkadı (sarılık) hem pankreas kanalını tıkadı (pankreatit). Oddi sfinkteri bu kavşağın trafik polisi ama taş onu da ezdi!"
+      },
+      {
+        "id": "anat_b1_011",
+        "question": "Treitz ligamanı (Lig. suspensorium duodeni) nedir ve klinik önemi nedir?",
+        "answer": "[[Duodenojejunal fleksürayı arka karın duvarına asan ligaman]]. [[Üst-alt GIS kanama ayrımında sınır noktasıdır.]]",
+        "explanation": "Treitz ligamanı (M. suspensorius duodeni) düz kas ve bağ dokusu içeren bir yapıdır ve duodenojejunal fleksürayı diyafragmanın sağ krusuna asar. Klinik olarak üst GIS kanaması (Treitz ligamanı proksimali) ile alt GIS kanaması (Treitz ligamanı distali) ayrımında referans noktası olarak kullanılır. Hematemez ve melena üst GIS kanamasını, hematokezya ise genellikle alt GIS kanamasını düşündürür.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS",
+          "Klinik"
+        ],
+        "story_hint": "💡 HİKAYE: Treitz ligamanı GIS'in sınır kapısı — yukarısı üst GIS, aşağısı alt GIS! Hematemez ve melena gelenler yukarıdan geliyor. Hematokezya aşağıdan. Bu ligaman duodenojejunal fleksürayı diyafragmaya asıyor — GIS'in askıda tutan ipi!"
+      },
+      {
+        "id": "anat_b1_012",
+        "question": "Meckel divertikülü nedir ve '2'ler kuralı' nelerdir?",
+        "answer": "[[Ductus vitellinus (omfalomezenterik kanal) kalıntısı]], [[İleumda bulunur]]",
+        "explanation": "Meckel divertikülü ductus vitellinus'un (omfalomezenterik/vitellin kanal) kapanmamasıyla oluşan konjenital bir gerçek divertikülüdür. 2'ler kuralı: populasyonun %2'sinde görülür, ileoçekal valvden yaklaşık 2 feet (60 cm) proksimalde, yaklaşık 2 inç (5 cm) uzunluğunda, 2 tip ektopik doku içerebilir (gastrik ve pankreatik), en sık 2 yaşından önce semptom verir. Ağrısız rektal kanama çocuklarda en sık belirtisidir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS",
+          "Embriyoloji"
+        ],
+        "story_hint": "💡 HİKAYE: Meckel divertikülü her şeyi 2'yle yapıyor — %2 insanda, ileoçekal valvden 2 feet uzakta, 2 inç uzun, 2 tip ektopik doku (gastrik ve pankreatik), 2 yaşından önce belirti veriyor! Çocukta ağrısız rektal kanama varsa Meckel'i düşün — Tc-99m sintigrafisi ile ara!"
+      },
+      {
+        "id": "anat_b1_013",
+        "question": "Cantlie hattı (Rex-Cantlie hattı) nedir ve karaciğeri nasıl böler?",
+        "answer": "[[Safra kesesi yatağından V. cava inferior'a çizilen hayali hat]]. [[Karaciğeri sağ ve sol fonksiyonel loblara ayırır.]]",
+        "explanation": "Cantlie hattı safra kesesi çukurundan (fossa vesicae biliaris) V. cava inferior'a çekilen hayali bir çizgidir ve V. hepatica media bu hattın derininde seyreder. Karaciğeri anatomik olarak değil, fonksiyonel (cerrahi) olarak sağ ve sol loblara ayırır. Couinaud sınıflandırmasında karaciğer 8 segmente ayrılır. Hepatektomi planlamasında bu hat kritik referans noktasıdır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "GIS",
+          "Karaciğer"
+        ],
+        "story_hint": "💡 HİKAYE: Cantlie hattı karaciğerin görünmez sınırı — safra kesesi çukurundan V. cava inferior'a çizilen hayali çizgi! Bu çizgi karaciğeri sağ ve sol cerrahi loblara ayırıyor. V. hepatica media bu çizginin derininde akıyor. Cerrah hepatektomi planlarken bu hattı haritada işaretliyor!"
+      }
+    ],
+    "tus_spots": [
+      "Portal ven = V. splenica + V. mesenterica superior; pankreas başı arkasında birleşir.",
+      "Portokaval anastomozlar: özofagus varisleri, hemoroid, caput medusae, retroperitoneal.",
+      "Vater ampullası: ductus choledochus + ductus pancreaticus birleşimi; safra taşı tıkanıklığı → pankreatit.",
+      "Treitz ligamanı: üst-alt GIS kanama ayrımında sınır noktasıdır.",
+      "Meckel divertikülü: 2'ler kuralı; çocuklarda en sık ağrısız rektal kanama nedeni."
+    ],
+    "clinical_cases": [
+      {
+        "case": "58 yaşında siroz tanılı erkek hasta hematemez ile acile başvuruyor. Fizik muayenede asit, splenomegali ve göbek çevresinde dilate venler (caput medusae) saptanıyor. Bu klinik tablonun altında yatan temel patofizyolojik mekanizma nedir?",
+        "options": [
+          "A) Hepatik arter trombozu",
+          "B) Portal hipertansiyon",
+          "C) V. cava superior sendromu",
+          "D) Budd-Chiari sendromu",
+          "E) Splenik arter anevrizması"
+        ],
+        "correct_answer": "B) Portal hipertansiyon",
+        "explanation": "Siroz → Portal hipertansiyon → Portokaval anastomozlarda genişleme. Özofagus varisleri (hematemez), splenomegali, asit ve caput medusae (göbek çevresinde dilate venler) portal hipertansiyonun klasik bulgularıdır. Portokaval anastomozlardan kan kaval sisteme yönlenmeye çalışır."
+      },
+      {
+        "case": "2 yaşında çocuk ağrısız, parlak kırmızı rektal kanama ile getiriliyor. Fizik muayenede karın ağrısı yok. Hemoglobin düşük. Tc-99m perteknetat sintigrafisi pozitif. En olası tanı nedir?",
+        "options": [
+          "A) İntussusepsiyon",
+          "B) Juvenil polip",
+          "C) Meckel divertikülü",
+          "D) İnflamatuvar barsak hastalığı",
+          "E) Anal fissür"
+        ],
+        "correct_answer": "C) Meckel divertikülü",
+        "explanation": "2 yaşında çocukta ağrısız rektal kanama ve pozitif Tc-99m perteknetat sintigrafisi (Meckel scan) Meckel divertikülünü düşündürür. Ektopik gastrik mukoza Tc-99m perteknetat tutulumu gösterir. Ektopik gastrik mukozanın asit salgılaması ileal ülserasyona ve kanamaya neden olur."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch1-006",
+    "subject": "Anatomi",
+    "chapter": "Ürogenital Sistem",
+    "topic": "Ürogenital",
+    "sub_topic": "Böbrek, Üreter, Mesane ve Genital Organlar",
+    "content_summary": "Ürogenital sistemin anatomisi, embriyolojik gelişimi ve klinik yansımaları. TUS'ta sık sorulan Douglas çıkmazı, üreter darlıkları, genital kanal gelişimi konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_017",
+        "question": "Ekskavatio rectouterina (Douglas çıkmazı) kadın vücudunun peritondaki en alt noktasıdır. Hangi yapılar arasındadır?",
+        "answer": "[[Rektum]] ve [[Uterus arası]]",
+        "explanation": "Douglas çıkmazı (excavatio rectouterina) kadın pelvisinde peritonun en alt noktasıdır ve rektum ile uterus arasında yer alır. Sıvı birikimleri (kan, irin, asit) burada toplanır ve vaginal fornix posterior yoluyla (kuldosentez) aspire edilebilir. Rüptüre ektopik gebelikte Douglas çıkmazında serbest kan birikir. Erkeklerde ise en alt nokta excavatio rectovesicalis'tir (rektum-mesane arası).",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Ürogenital"
+        ],
+        "story_hint": "💡 HİKAYE: Douglas çıkmazı kadın pelvisinin en derin çukuru — rektum ile uterus arasında! Vücuttaki sıvılar yerçekimiyle buraya birikir. Ektopik gebelik patladığında kan Douglas'a akar — vaginal forniks posteriordan iğneyle çekilir (kuldosentez). Erkekte en derin çukur rektum-mesane arası!"
+      },
+      {
+        "id": "anat_034",
+        "question": "Erkekte urethra'nın en dar yeri neresidir?",
+        "answer": "[[Ostium urethrae externum]] ([[ve pars membranacea]])",
+        "explanation": "Erkek uretrasının en dar yeri ostium urethrae externum (dış üretral ağızlık)dur; ikinci dar yeri pars membranacea'dır. En geniş yeri ise fossa navicularis'tir. Kateterizasyon ve endoskopi uygulamalarında bu darlıklar önemlidir. Üretral striktürler en sık pars spongiosa'da (bulbar üretra) görülür.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Ürogenital"
+        ],
+        "story_hint": "💡 HİKAYE: Erkek üretrasını bir nehir gibi düşün — en dar yeri nehrin ağzı (ostium urethrae externum)! İkinci dar yeri pars membranacea (kayalık geçit). En geniş yeri fossa navicularis (gemi limanı). Sonda geçirirken ağızda ve kayalık geçitte dikkat — sıkışabilir!"
+      },
+      {
+        "id": "anat_035",
+        "question": "Fallop tüpünde (Tuba uterina) döllenmenin en sık gerçekleştiği bölüm neresidir?",
+        "answer": "[[Ampulla]]",
+        "explanation": "Tuba uterina 4 bölümden oluşur: pars uterina (intramural), isthmus (en dar), ampulla (en geniş ve en uzun) ve infundibulum (fimbrialar). Döllenme (fertilizasyon) en sık ampulla bölümünde gerçekleşir. Ektopik (tubal) gebelik de en sık ampullada implante olur (%70). Tubal ligasyon genellikle isthmus bölgesinden yapılır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Ürogenital"
+        ],
+        "story_hint": "💡 HİKAYE: Fallop tüpü bir koridor: uterus tarafında dar giriş (istmus), ortada geniş salon (ampulla), uçta balkon (infundibulum + fimbriyalar). Sperm ve yumurta salonda (ampulla) buluşuyor — döllenme orada! Ektopik gebelik de genelde salona yerleşiyor (%70)."
+      },
+      {
+        "id": "anat_068",
+        "question": "Spermatik kordonu (Funiculus spermaticus) oluşturan yapılar içindeki duktus hangisidir?",
+        "answer": "[[Ductus deferens]]",
+        "explanation": "Spermatik kord, inguinal kanaldan geçerek testisi karın duvarına bağlayan yapılar topluluğudur. İçinde ductus deferens, A. testicularis (A. ductus deferentis, A. cremasterica), plexus pampiniformis (venler), N. ilioinguinalis, N. genitofemoralis genital dalı, lenfatikler ve processus vaginalis kalıntısı bulunur. Vazektomi ductus deferens'in kesilmesidir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Ürogenital"
+        ],
+        "story_hint": "💡 HİKAYE: Spermatik kord testisi karın duvarına bağlayan bir halat demeti — içinden ductus deferens (sperm borusu), A. testicularis (kan yolu), pampiniform pleksus (soğutma sistemi) ve sinirler geçiyor. Vazektomi = halat demetinin içindeki sperm borusunu kesmek!"
+      },
+      {
+        "id": "anat_069",
+        "question": "Erkek ve kadın iç genital organlarının yapısını oluşturan ana embriyolojik kanallar nelerdir?",
+        "answer": "[[Wolff kanalı]] ([[erkek]]) , Müller kanalı (kadın)",
+        "explanation": "Wolff (mezonefrik) kanalı erkekte testosteron etkisiyle gelişerek epididimis, ductus deferens, vesicula seminalis ve duktus ejakulatoriusu oluşturur. Müller (paramezonefrik) kanalı kadında tuba uterina, uterus ve vajinanın üst 1/3'ünü oluşturur. Erkekte Sertoli hücreleri AMH (Anti-Müllerian Hormon) salgılayarak Müller kanalının gerilemesini sağlar.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Ürogenital",
+          "Embriyoloji"
+        ],
+        "story_hint": "💡 HİKAYE: Embriyoda iki kanal var — Wolff (erkek) ve Müller (kadın). Testosteron Wolff'u uyandırıyor: epididimis, duktus deferens, vezikula seminalis oluşuyor. Müller kanalı kadında tuba uterina, uterus ve vajinanın üst kısmını yapıyor. Erkekte Sertoli hücreleri AMH salgılayıp Müller'i yok ediyor!"
+      },
+      {
+        "id": "anat_070",
+        "question": "Uterus'un bağlarından hangisi inguinal kanaldan geçerek labium majus'a tutunur?",
+        "answer": "[[Lig. teres uteri]] ([[Lig. rotundum]])",
+        "explanation": "Lig. teres uteri (round ligament) uterus kornu seviyesinden başlar, lig. latum'un iki yaprağı arasından geçer, inguinal kanaldan geçerek labium majus'ta sonlanır. Erkekteki gubernaculum testis'in karşılığıdır. Uterusu öne doğru (anteversiyon-antefleksiyon) tutmaya yardımcı olur. Gebelikte gerilmesi kasık ağrısına neden olabilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Ürogenital"
+        ],
+        "story_hint": "💡 HİKAYE: Lig. teres uteri (round ligament) uterusu öne doğru tutan bir ip — uterus kornusundan başlayıp inguinal kanaldan geçerek labium majusa tutunuyor. Erkekteki gubernaculum testis'in kız kardeşi! Gebelikte bu ip gerilince kasıkta ağrı oluyor — merak etme, normal!"
+      },
+      {
+        "id": "anat_080",
+        "question": "Testiste testosteron hormonunu üreten hücreler hangileridir?",
+        "answer": "[[Leydig hücreleri]]",
+        "explanation": "Leydig hücreleri (interstisiyel hücreler) testis tubülleri arasındaki interstisiyel dokuda yer alır ve LH (luteinizan hormon) etkisiyle testosteron üretir. Testosteron erkek seks karakterlerinin gelişimi, spermatogenez ve kas-kemik metabolizması için gereklidir. Leydig hücreli tümör testislerin en sık hormon salgılayan stromal tümörüdür.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Ürogenital"
+        ],
+        "story_hint": "💡 HİKAYE: Leydig hücreleri testisteki testosteron fabrikası — LH (patron) emrediyor, Leydig üretiyor! Seminifer tübüllerin arasında, interstisiyel dokuda gizli. Testosteron erkeklik hormonlarının şahı — kas, kemik, sakal, ses kalınlığı hep ondan. Leydig tümörü bu fabrikanın kontrolden çıkmasıdır!"
+      },
+      {
+        "id": "anat_081",
+        "question": "Testiste sperm yapımına (spermatogenez) destek olan hücreler hangileridir?",
+        "answer": "[[Sertoli hücreleri]]",
+        "explanation": "Sertoli hücreleri seminifer tübüllerin bazal membranında yer alır ve spermatojenik hücrelere fiziksel ve nutrisyonel destek sağlar. FSH etkisiyle ABP (androjen bağlayıcı protein) ve inhibin B salgılar. Kan-testis bariyerini oluşturur. AMH (Anti-Müllerian Hormon) salgılayarak fetal dönemde Müller kanalının gerilemesini sağlar.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Ürogenital"
+        ],
+        "story_hint": "💡 HİKAYE: Sertoli hücreleri spermlerin dadısı — seminifer tübüllerde spermlere bakım yapıyor, besliyor, koruyor! FSH emrediyor, Sertoli çalışıyor. Kan-testis bariyerini kuruyor (güvenlik duvarı). Fetal dönemde AMH salgılayıp Müller kanalını yok ediyor — 'Erkek olacaksın!' diyor."
+      },
+      {
+        "id": "anat_090",
+        "question": "Böbreklerin arka yüz komşuluğu olan kaslar nelerdir?",
+        "answer": "[[M. psoas major]], [[M. quadratus lumborum]], [[M. transversus abdominis]]",
+        "explanation": "Böbreklerin arka yüzü retroperitoneal olarak bu kaslara komşudur. M. psoas major mediale, M. quadratus lumborum laterale, M. transversus abdominis daha laterale yerleşir. 12. kosta sol böbreğin arka yüzünü çaprazlar. Bu anatomik ilişki perkütan nefrolitotomi ve böbrek biyopsisi gibi girişimsel işlemlerde önemlidir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Ürogenital"
+        ],
+        "story_hint": "💡 HİKAYE: Böbrekler sırtını 3 kasa dayamış — psoas major (iç yastık), quadratus lumborum (orta yastık), transversus abdominis (dış yastık). 12. kosta sol böbreğin arkasını çaprazlıyor. Perkütan nefrolitotomide bu yastıkları geçerek böbreğe ulaşılıyor!"
+      },
+      {
+        "id": "anat_091",
+        "question": "Ureter'in en dar iki yeri nerelerdir?",
+        "answer": "[[Pelvis renalis ile birleştiği yer]] ve [[idrar kesesine]] ([[mesane]]) giriş yeri",
+        "explanation": "Üreterin 3 anatomik darlığı vardır: 1) Pelviüreterik bileşke (PUJ - pelvis renalis çıkışı), 2) Linea terminalis'i çaprazladığı yer (iliak damarlarla çaprazlaşma), 3) Vezikoüreterik bileşke (VUJ - mesane girişi). Üreter taşları en sık bu darlıklarda takılır. VUJ en dar yerdir ve taşların en sık takıldığı bölgedir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Ürogenital"
+        ],
+        "story_hint": "💡 HİKAYE: Üreter bir boru hattı — 3 yerde darlaşıyor: çıkışta (PUJ), iliak damarlarla kesiştiği yerde ve mesaneye girişte (VUJ). Taşlar hep dar yerlerde takılıyor! VUJ en dar yer — taşların en sevdiği tıkanma noktası. Renal kolik = taşın boru hattında sıkışma ağrısı!"
+      },
+      {
+        "id": "anat_100",
+        "question": "Ereksiyonu (parasempatik) ve ejakülasyonu (sempatik) sağlayan genel sinir sistemleri hangileridir?",
+        "answer": "[[Parasempatik]] ([[N. splanchnici pelvici S2-S4]]) ve [[Sempatik]] ([[T11-L2]])",
+        "explanation": "Ereksiyon parasempatik sinir sistemi (S2-S4 / N. erigentes / pelvic splanknik sinirler) tarafından kontrol edilir: damar düz kaslarının gevşemesi ile kavernöz cisimlere kan dolması sağlanır. Ejakülasyon ise sempatik sinir sistemi (T11-L2 / hipogastrik pleksus) tarafından kontrol edilir. 'Point and Shoot' kuralı: Parasempatik = ereksiyon (Point), Sempatik = ejakülasyon (Shoot).",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Ürogenital"
+        ],
+        "story_hint": "💡 HİKAYE: 'Point and Shoot' kuralını unutma! Point (işaret et) = Ereksiyon = Parasempatik (S2-S4, pelvik splanknik sinirler). Shoot (ateş et) = Ejakülasyon = Sempatik (T11-L2, hipogastrik pleksus). Parasempatik damarları gevşetip kanı doldurur, sempatik ise atışı tetikler!"
+      },
+      {
+        "id": "anat_b1_014",
+        "question": "Brödel hattı (avasküler hat) nedir ve klinik önemi nedir?",
+        "answer": "[[Böbreğin ön ve arka segmental arterlerinin kanlanma alanları arasındaki avasküler bölge]]",
+        "explanation": "Brödel hattı (Brödel's bloodless line) böbreğin posterolateral yüzeyinde, ön ve arka segmental arter dallarının kanlanma alanları arasındaki nispeten avasküler çizgidir. Böbreğin arka yüzünün dış 2/3'ünde yer alır. Nefrolitotomi (böbrek taşı cerrahisi) sırasında en az kanama ile böbreğe giriş bu hattan yapılır. Perkütan nefrolitotomi planlamasında kritik anatomik landmarktır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Ürogenital",
+          "Cerrahi"
+        ],
+        "story_hint": "💡 HİKAYE: Brödel hattı böbreğin 'kansız yolu' — ön ve arka segmental arterlerin kanlanma alanları arasındaki sessiz bölge! Cerrah bu yoldan böbreğe girerse en az kanama olur. Posterolateral yüzeyde, dış 2/3'te. Brödel'in kansız çizgisi = cerrahın güvenli yolu!"
+      },
+      {
+        "id": "anat_b1_015",
+        "question": "Üreter ile A. uterina'nın çaprazlaşma ilişkisi nedir ve klinik önemi nedir?",
+        "answer": "[[A. uterina üreterin üzerinden geçer]] ([[Water under the bridge]])",
+        "explanation": "A. uterina pelviste üreterin ÜZERİNDEN çaprazlar (üreter alttan geçer). Bu ilişki 'water under the bridge' kuralıyla hatırlanır: su (üreter/water) köprünün (arter/bridge) altından geçer. Histerektomi (rahim ameliyatı) sırasında A. uterina bağlanırken üreter yaralanması riski vardır; cerrahın bu anatomik ilişkiyi bilmesi iatrojenik üreter hasarını önlemek için kritiktir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Ürogenital",
+          "Cerrahi"
+        ],
+        "story_hint": "💡 HİKAYE: 'Su köprünün altından akar!' (Water under the bridge) — Üreter (water/su) A. uterina'nın (bridge/köprü) ALTINDAN geçiyor. Histerektomide cerrah uterin arteri bağlarken 2 cm uzaktaki üreteri kesmemeye dikkat etmeli! Bu anatomik ilişkiyi bilmeyen cerrah böbreği felç eder."
+      }
+    ],
+    "tus_spots": [
+      "Douglas çıkmazı: kadın pelvisinin en alt noktası (rektum-uterus arası); kuldosentez yapılır.",
+      "Üreter darlıkları: PUJ, iliak çapraz ve VUJ; taşlar en sık VUJ'da takılır.",
+      "Tuba uterina: döllenme ve ektopik gebelik en sık ampullada.",
+      "A. uterina üreterin üzerinden geçer (water under the bridge) → Histerektomide üreter yaralanma riski.",
+      "Ereksiyon = parasempatik (S2-S4), Ejakülasyon = sempatik (T11-L2) — 'Point and Shoot' kuralı."
+    ],
+    "clinical_cases": [
+      {
+        "case": "32 yaşında kadın hasta ani başlayan sol kasık ağrısı ve vaginal kanama ile acile başvuruyor. Beta-hCG pozitif. Transvaginal USG'de uterus içinde gestasyonel kese görülemiyor, sol adneksial bölgede kitle saptanıyor. Douglas çıkmazında serbest sıvı var. En olası tanı nedir?",
+        "options": [
+          "A) Over kist rüptürü",
+          "B) Ektopik gebelik",
+          "C) Düşük tehdidi",
+          "D) Over torsiyonu",
+          "E) Appendisit"
+        ],
+        "correct_answer": "B) Ektopik gebelik",
+        "explanation": "Pozitif beta-hCG, uterusta gestasyonel kese yokluğu, adneksial kitle ve Douglas çıkmazında serbest sıvı (muhtemelen kan) ektopik gebeliği güçlü şekilde düşündürür. Ektopik gebelik en sık tuba uterina'nın ampulla bölümünde yerleşir (%70). Rüptür durumunda hemoperitoneum gelişir ve acil cerrahi gerekir."
+      },
+      {
+        "case": "48 yaşında kadın hastaya histerektomi planlanıyor. Cerrah üreter yaralanmasını önlemek istiyor. A. uterina ile üreter arasındaki anatomik ilişki nedir?",
+        "options": [
+          "A) Üreter A. uterina'nın üzerinden geçer",
+          "B) A. uterina üreterin üzerinden geçer",
+          "C) İkisi paralel seyreder",
+          "D) Çaprazlaşma yoktur",
+          "E) Üreter A. uterina'nın lateralinde kalır"
+        ],
+        "correct_answer": "B) A. uterina üreterin üzerinden geçer",
+        "explanation": "A. uterina pelviste üreterin üzerinden çaprazlar. 'Water under the bridge' kuralı: üreter (water/su) arterin (bridge/köprü) altından geçer. Histerektomide uterin arter bağlanırken üreter yaklaşık 2 cm mesafededir ve iatrojenik yaralanma riski yüksektir."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch1-007",
+    "subject": "Anatomi",
+    "chapter": "Kranial Sinirler",
+    "topic": "Kranial Sinirler",
+    "sub_topic": "CN I-XII ve Klinik Yansımaları",
+    "content_summary": "Kranial sinirlerin anatomisi, fonksiyonları, kafatası geçişleri ve klinik yansımaları. TUS'ta sık sorulan dil innervasyonu, CN VII felci, CN X fonksiyonları konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_029",
+        "question": "Gözün uyum (akomodasyon) refleksini hangi kranial sinir taşır?",
+        "answer": "[[Nervus oculomotorius]] ([[CN III]])",
+        "explanation": "CN III (N. oculomotorius) parasempatik lifleri (Edinger-Westphal çekirdeğinden) ganglion ciliare'de sinaps yaparak M. sphincter pupillae (miozis) ve M. ciliaris'i (akomodasyon) innerve eder. Akomodasyon refleksinde yakına bakışta lens kalınlaşır (M. ciliaris kasılır), pupilla daralır (miozis) ve gözler konverge olur. CN III kompresyonunda önce parasempatik lifler etkilenir → unilateral midriyazis.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kranial Sinirler"
+        ],
+        "story_hint": "💡 HİKAYE: CN III gözün süper kahramanı — hem kasları hareket ettiriyor hem de pupillayı daraltıp lensi ayarlıyor (akomodasyon)! Edinger-Westphal çekirdeğinden parasempatik lifler ganglion ciliare'de durak yapıp göze gidiyor. CN III basısında ilk parasempatikler etkilenir — pupilla genişler, ışık refleksi kaybolur!"
+      },
+      {
+        "id": "anat_041",
+        "question": "Hangi kranial sinir en uzun intrakranial seyre sahiptir ve travmaya en duyarlıdır?",
+        "answer": "[[Nervus trochlearis]] ([[CN IV]])",
+        "explanation": "CN IV (N. trochlearis) kranial sinirlerin en incesidir, en uzun intrakranial seyre sahiptir ve beyin sapının DORSAL yüzünden çıkan tek kranial sinirdir. Bu özellikleri nedeniyle kafa travmalarına en duyarlı kranial sinirdir. M. obliquus superior'u innerve eder (gözü aşağı-içe çevirir). CN IV felcinde hasta başını karşı tarafa eğer (Head tilt testi pozitif).",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kranial Sinirler"
+        ],
+        "story_hint": "💡 HİKAYE: CN IV (troklear) kranial sinirlerin en zayıf halkası — en ince, en uzun intrakranial seyir, beyin sapının ARKASINDA tek başına çıkan yalnız kurt! Travmaya en duyarlı. Sadece M. obliquus superior'u innerve ediyor. Felcinde hasta merdiven inemez, başını karşı tarafa eğer."
+      },
+      {
+        "id": "anat_042",
+        "question": "Yüzün mimik kaslarını innerve eden sinir hangisidir?",
+        "answer": "[[Nervus facialis]] ([[CN VII]])",
+        "explanation": "CN VII (N. facialis) yüzün tüm mimik kaslarını motor olarak innerve eder. Ayrıca ön 2/3 dil tat duyusu (chorda tympani), lakrimal bez ve sublingual/submandibular bez sekresyonu (parasempatik), ve dış kulak yolu duyusu görevlerini de üstlenir. Periferik CN VII felcinde yüzün tüm yarısı etkilenirken, santral lezyonda sadece alt yüz etkilenir (alın korunur, bilateral kortikal innervasyon nedeniyle).",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kranial Sinirler"
+        ],
+        "story_hint": "💡 HİKAYE: CN VII yüzün mimik direktörü — gülme, ağlama, göz kırpma hep ondan! Aynı zamanda dilin ön 2/3 tadını alıyor (chorda tympani), gözyaşı üretiyor ve tükürük bezi çalıştırıyor. Periferik felcinde yüzün tamamı düşer (Bell). Santral felcinde sadece alt yüz — alın korunur!"
+      },
+      {
+        "id": "anat_043",
+        "question": "Yüzün genel duyusunu ve çiğneme kaslarının motor inervasyonunu sağlayan sinir hangisidir?",
+        "answer": "[[Nervus trigeminus]] ([[CN V]])",
+        "explanation": "CN V (N. trigeminus) yüzün en kalın kranial siniridir. Üç dalı vardır: V1 (oftalmik - frontal ve nazal bölge duyusu), V2 (maksiller - yanak ve üst dudak duyusu), V3 (mandibular - alt çene duyusu + çiğneme kasları motoru). Çiğneme kasları: masseter, temporalis, pterygoideus medialis ve lateralis. Kornea refleksinin afferent kolu V1 (efferent CN VII) tarafından taşınır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kranial Sinirler"
+        ],
+        "story_hint": "💡 HİKAYE: CN V (trigeminus) yüzün kalkanı ve çiğneme motoru — üç kollu bir yıldız! V1 alın-burun (oftalmik), V2 yanak-üst dudak (maksiller), V3 alt çene (mandibular) + çiğneme kasları motoru. Kornea refleksinde V1 afferent (duyuyor), CN VII efferent (kırpıyor). Üçlü güç!"
+      },
+      {
+        "id": "anat_044",
+        "question": "Dilin gövdesinin (ön 2/3) genel duyusunu hangi sinir alır?",
+        "answer": "[[Nervus lingualis]] ([[CN V3 dalı]])",
+        "explanation": "Dilin ön 2/3'ünün genel duyusu (dokunma, ağrı, ısı) N. lingualis (CN V3 mandibular dalı) tarafından taşınır. Aynı bölgenin tat duyusu ise chorda tympani (CN VII dalı) tarafından taşınır. Dilin arka 1/3'ünün hem genel duyusu hem tat duyusu CN IX (N. glossopharyngeus) tarafından taşınır. Epiglottis tat duyusu CN X tarafından alınır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kranial Sinirler"
+        ],
+        "story_hint": "💡 HİKAYE: Dilin ön 2/3'ünde iki ayrı postacı çalışıyor: N. lingualis (CN V3 dalı) genel duyuyu taşıyor, chorda tympani (CN VII dalı) tat mektuplarını taşıyor. Arka 1/3'te ise tek postacı var — CN IX, hem genel duyu hem tat! Epiglottise ise CN X bakıyor."
+      },
+      {
+        "id": "anat_045",
+        "question": "Dilin ön 2/3'ünün tat duyusunu alan sinir hangisidir?",
+        "answer": "[[Chorda tympani]] ([[Nervus facialis CN VII dalı]])",
+        "explanation": "Chorda tympani, CN VII'nin dalıdır ve orta kulak boşluğundan geçerek N. lingualis'e katılır. Dilin ön 2/3'ünün tat duyusunu taşır. Ayrıca gl. submandibularis ve gl. sublingualis'e parasempatik lif taşır. Orta kulak cerrahisinde veya Bell paralizisinde chorda tympani zedelenebilir ve ön 2/3 tat kaybı (ageusia) gelişebilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kranial Sinirler"
+        ],
+        "story_hint": "💡 HİKAYE: Chorda tympani orta kulak boşluğundan geçen gizli bir ajan — CN VII'nin dalı! N. lingualis'e katılarak dilin ön 2/3 tat duyusunu taşıyor. Ayrıca submandibular ve sublingual bezlere tükürük emri veriyor. Bell felcinde ajan yaralanırsa ön 2/3 tat kayboluyor!"
+      },
+      {
+        "id": "anat_046",
+        "question": "Dilin motor siniri hangisidir?",
+        "answer": "[[Nervus hypoglossus]] ([[CN XII]]) (M. palatoglossus hariç)",
+        "explanation": "CN XII (N. hypoglossus) dilin TÜM intrinsik ve ekstrinsik kaslarını innerve eder (M. palatoglossus hariç — onu CN X/pharyngeal pleksus innerve eder). Unilateral CN XII lezyonunda dil çıkarıldığında lezyon tarafına devier (sağlam taraf dili karşıya iter). Bilateral lezyonda dil hareket ettirilemez (yutma ve konuşma güçlüğü). Hipoglossal kanal (canalis nervi hypoglossi) kafa tabanından çıkışıdır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kranial Sinirler"
+        ],
+        "story_hint": "💡 HİKAYE: CN XII (hipoglossus) dilin şoförü — tüm intrinsik ve ekstrinsik kasları o sürüyor (M. palatoglossus hariç, onu CN X yönetiyor). Tek taraflı lezyonda dil çıkarılınca lezyon tarafına kayıyor — sağlam taraf dili karşıya itiyor! İki taraflı lezyonda dil hiç hareket etmiyor."
+      },
+      {
+        "id": "anat_082",
+        "question": "Boyunda karotis kılıfının (Vagina carotica) içinden geçen yapılar nelerdir?",
+        "answer": "[[A. carotis communis/interna]], [[V. jugularis interna]], [[N. vagus]] ([[CN X]])",
+        "explanation": "Karotis kılıfı boyunda C2-T4 arası uzanan bir fasya kılıfıdır. İçinde A. carotis communis (aşağıda) / A. carotis interna (yukarıda), V. jugularis interna (lateral) ve N. vagus (CN X - iki damar arasında, arkada) bulunur. Santral venöz kateterizasyon, karotis endarterektomisi ve radikal boyun diseksiyonunda bu yapıların bilinmesi hayati öneme sahiptir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kranial Sinirler"
+        ],
+        "story_hint": "💡 HİKAYE: Boyunda karotis kılıfı bir zırhlı konvoy — içinde 3 VIP yolcu var: A. carotis (büyük patron, ortada), V. jugularis interna (yardımcı, yanda), N. vagus (gizli ajan, arkada ikisinin arasında). Santral venöz kateter takarken bu konvoya dikkat!"
+      },
+      {
+        "id": "anat_b1_016",
+        "question": "CN X (N. vagus) lezyonunda uvula hangi tarafa devier?",
+        "answer": "[[Sağlam tarafa devier]] (lezyon tarafının M. levator veli palatini felci)",
+        "explanation": "Unilateral CN X lezyonunda etkilenen taraftaki M. levator veli palatini felç olur. Hasta 'Aaa' dediğinde uvula sağlam tarafa çekilir (sağlam taraf kasları yumuşak damağı kendi tarafına çeker). Dil CN XII lezyonunda lezyon tarafına devier (zıt yönde). Bu ayrım TUS'ta sık sorulan bir kranial sinir muayenesi sorusudur. CN X ayrıca yutma, ses ve parasempatik fonksiyonları da kontrol eder.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kranial Sinirler"
+        ],
+        "story_hint": "💡 HİKAYE: CN X lezyonunda uvula sağlam tarafa kaçıyor — hasta 'Aaa' deyince lezyon tarafının perdesi düşük kalıyor, sağlam taraf yukarı çekiyor! CN XII lezyonunda ise dil tam tersi — lezyon tarafına kayıyor. Hatırla: Uvula sağlama kaçar, dil lezyona koşar!"
+      },
+      {
+        "id": "anat_b1_017",
+        "question": "Foramen jugulare'den geçen kranial sinirler hangileridir?",
+        "answer": "[[CN IX (N. glossopharyngeus)]], [[CN X (N. vagus)]], [[CN XI (N. accessorius)]]",
+        "explanation": "Foramen jugulare kafatasının tabanında os temporale ile os occipitale arasında yer alır. CN IX, CN X ve CN XI bu foramenden geçer; ayrıca V. jugularis interna da buradan çıkar. Foramen jugulare sendromunda (Vernet sendromu) bu üç sinir birlikte tutulur: disfaji, disfoni, omuz düşüklüğü ve aynı taraf dil 1/3 arka tat kaybı görülür. Glomus jugulare tümörü bu sendromun sık nedenidir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kranial Sinirler"
+        ],
+        "story_hint": "💡 HİKAYE: Foramen jugulare kafatasının VIP çıkış kapısı — CN IX, X ve XI üçlüsü buradan geçiyor, V. jugularis interna da! Tümör bu kapıyı tıkarsa (Vernet sendromu): yutamıyorsun (IX), konuşamıyorsun (X), omuz düşüyor (XI). Glomus jugulare tümörü bu kapının en korkutucu bekçisi!"
+      },
+      {
+        "id": "anat_b1_018",
+        "question": "CN XI (N. accessorius) hangi kasları innerve eder?",
+        "answer": "[[M. sternocleidomastoideus]] ve [[M. trapezius]]",
+        "explanation": "CN XI (N. accessorius) iki kökten oluşur: spinal kök (C1-C5/C6 medulla spinalis'ten) ve kranial kök (N. ambiguus'tan). Spinal kök M. sternocleidomastoideus (SCM) ve M. trapezius'u innerve eder. SCM felcinde baş karşı tarafa çevrilemez; trapezius felcinde omuz düşer ve kol abduksiyonu 90° üzerinde güçsüzleşir. Radikal boyun diseksiyonu ve posterior üçgen cerrahisinde risk altındadır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Kranial Sinirler"
+        ],
+        "story_hint": "💡 HİKAYE: CN XI (aksesuar sinir) iki kasın patronu — sternokleidomastoid (SCM) ve trapezius! SCM başı karşı tarafa çeviriyor, trapezius omuzu kaldırıyor. Radikal boyun diseksiyonunda CN XI kesilirse: başını çeviremezsin, omuzun düşer, kolunu 90 derece üstüne kaldıramazsın!"
+      }
+    ],
+    "tus_spots": [
+      "Dil innervasyonu: Ön 2/3 genel duyu = V3 (N. lingualis), tat = VII (chorda tympani); Arka 1/3 = IX; Motor = XII (M. palatoglossus hariç = X).",
+      "CN IV: en ince, en uzun intrakranial seyir, beyin sapı dorsalinden çıkan tek sinir.",
+      "CN VII periferik felci: tüm yüz yarısı etkilenir; santral lezyonda sadece alt yüz (alın korunur).",
+      "CN X lezyonunda uvula sağlam tarafa, CN XII lezyonunda dil lezyon tarafına devier.",
+      "Foramen jugulare: CN IX + X + XI geçer → Vernet sendromu."
+    ],
+    "clinical_cases": [
+      {
+        "case": "30 yaşında erkek hasta sabah uyandığında sağ yüz yarısını hareket ettiremediğini fark ediyor. Sağ göz kapağını kapatamıyor, sağ alında kırışıklık yapamıyor ve sağ nazolabial oluk silinmiş. Bu hastada en olası tanı nedir?",
+        "options": [
+          "A) Sağ hemisfer inme",
+          "B) Trigeminal nevralji",
+          "C) Bell paralizisi",
+          "D) Akustik nöroma",
+          "E) Ramsay Hunt sendromu"
+        ],
+        "correct_answer": "C) Bell paralizisi",
+        "explanation": "Sağ yüzün tamamının (alın dahil) etkilenmesi periferik CN VII lezyonunu gösterir. Bell paralizisi periferik fasiyal paralizinin en sık nedenidir (idiopatik, HSV-1 ile ilişkili). Santral lezyonda alın korunur (bilateral kortikal innervasyon). Ramsay Hunt sendromunda kulak çevresinde veziküller ve ağrı olması beklenir (VZV reaktivasyonu)."
+      },
+      {
+        "case": "55 yaşında erkek hasta yutma güçlüğü, ses kısıklığı ve sağ omuzda düşüklük ile başvuruyor. Muayenede sağ yumuşak damak düşük, uvula sola deviasyon gösteriyor, sağ SCM ve trapezius güçsüz. Bu bulgular hangi anatomik yapının lezyonunu düşündürür?",
+        "options": [
+          "A) Kavernöz sinüs",
+          "B) Foramen jugulare",
+          "C) Beyin sapı lateral bölgesi",
+          "D) Serebellopontin köşe",
+          "E) Foramen magnum"
+        ],
+        "correct_answer": "B) Foramen jugulare",
+        "explanation": "CN IX (yutma güçlüğü), CN X (ses kısıklığı, yumuşak damak felci, uvula sağlam tarafa deviyasyonu) ve CN XI (SCM ve trapezius güçsüzlüğü) birlikte tutulumu foramen jugulare sendromunu (Vernet sendromu) düşündürür. Bu üç sinir birlikte foramen jugulare'den geçer. Glomus jugulare tümörü veya kafa tabanı metastazı düşünülmelidir."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch1-008",
+    "subject": "Anatomi",
+    "chapter": "Baş, Boyun ve Kafatası",
+    "topic": "Baş-Boyun",
+    "sub_topic": "Kafatası Suturaları, Fontaneller, Foramenler ve Boyun Anatomisi",
+    "content_summary": "Kafatası kemikleri, suturaları, fontaneller, foramenler ve boyun anatomisi. TUS'ta sık sorulan pterion, fontanel kapanma zamanları ve boyun sinir lezyonları konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_063",
+        "question": "Kafa tasındaki sutura coronalis hangi kemikler arasındadır?",
+        "answer": "[[Os frontale]] ve [[Os parietale]]",
+        "explanation": "Sutura coronalis (koronal sutur) os frontale ile iki os parietale arasında yer alan transvers (enine) bir suturdur. Erken kapanması (kraniosinostozis) brakisefali (kısa kafa) ile sonuçlanır. Sutura sagittalis erken kapanırsa skafosefali (uzun kafa), sutura metopica erken kapanırsa trigonosefali (üçgen kafa) gelişir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Baş-Boyun"
+        ],
+        "story_hint": "💡 HİKAYE: Koronal sutur alın kemiği ile parietal kemiklerin arasındaki enine çizgi — taç (corona) gibi başın üstünde! Erken kapanırsa kafa kısa kalıyor (brakisefali). Sagittal erken kapanırsa uzun kafa, metopik erken kapanırsa üçgen kafa!"
+      },
+      {
+        "id": "anat_064",
+        "question": "Sutura sagittalis hangi kemikler arasındadır?",
+        "answer": "[[İki os parietale arasında]]",
+        "explanation": "Sutura sagittalis iki os parietale arasında median hatta yer alır ve önde bregma'da (sutura coronalis ile kesişim), arkada lambda'da (sutura lambdoidea ile kesişim) son bulur. Erken kapanması (sagittal sinostoz) en sık görülen kraniosinostozis tipidir ve skafosefali (uzun, dar kafa) oluşturur. Sinus sagittalis superior bu sutura altında seyreder.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Baş-Boyun"
+        ],
+        "story_hint": "💡 HİKAYE: Sagittal sutur iki parietal kemik arasında, tam ortada ok gibi gidiyor (sagitta = ok)! Önde bregma'da, arkada lambda'da buluşuyor. En sık görülen kraniosinostozis tipi — erken kapanırsa kafa uzun ve dar kalıyor (skafosefali). Altında sinus sagittalis superior akıyor!"
+      },
+      {
+        "id": "anat_065",
+        "question": "Bebeklerde ön fontanel (Fonticulus anterior) ortalama ne zaman kapanır?",
+        "answer": "[[18-24. aylar arasında]]",
+        "explanation": "Ön fontanel (bregmatik fontanel) en büyük fontaneldir, eşkenar dörtgen şeklindedir ve sutura coronalis, sutura sagittalis ile sutura metopica'nın birleşim yerindedir. 18-24 ayda kapanır. Arka fontanel (lambdatik fontanel) üçgen şeklindedir ve 2-3 ayda kapanır. Kabarık fontanel intrakranial basınç artışını, çökük fontanel dehidratasyonu düşündürür.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Baş-Boyun"
+        ],
+        "story_hint": "💡 HİKAYE: Bebeğin kafasında eşkenar dörtgen şeklinde yumuşak bir pencere var — ön fontanel! 18-24 ayda kapanıyor. Arka fontanel üçgen şekilli, 2-3 ayda kapanıyor. Fontanelin kabarması kafa içi basınç artışı — beyinden SOS sinyali! Çökmesi ise dehidratasyon — bebek susuz kalmış!"
+      },
+      {
+        "id": "anat_066",
+        "question": "Kafatası tabanındaki Foramen magnum'dan geçen yapılar nelerdir?",
+        "answer": "[[Medulla oblongata]], [[meninges]], [[A. vertebralis'ler]], [[N. accessorius'un spinal kökü]]",
+        "explanation": "Foramen magnum kafatası tabanının en büyük açıklığıdır. Medulla oblongata (omurilik soğanı), meninks tabakaları, sağ ve sol A. vertebralis'ler, A. spinalis anterior ve posterior'lar ve CN XI'in spinal kökü bu açıklıktan geçer. Arnold-Chiari malformasyonunda serebellar tonsiller foramen magnumdan aşağı herniye olur ve BOS akımını engelleyerek hidrosefali gelişebilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Baş-Boyun"
+        ],
+        "story_hint": "💡 HİKAYE: Foramen magnum kafatasının en büyük kapısı — medulla oblongata, vertebral arterler ve CN XI'in spinal kökü buradan geçiyor. Arnold-Chiari malformasyonunda serebellar tonsiller bu kapıdan aşağı sarkıyor — kapıyı tıkıyor, BOS akışı duruyor, hidrosefali gelişiyor!"
+      },
+      {
+        "id": "anat_083",
+        "question": "Tiroid bezinin hemen arkasında yer alan ve kalsiyum metabolizmasını düzenleyen bez hangisidir?",
+        "answer": "[[Glandula parathyroidea]] ([[Paratiroid]])",
+        "explanation": "Paratiroid bezleri genellikle 4 adet olup (2 üst, 2 alt) tiroid bezinin arka yüzünde, tiroid kapsülünün dışında yer alır. PTH (parathormon) salgılayarak kan kalsiyum seviyesini yükseltir (kemikten Ca mobilizasyonu, böbrekten Ca reabsorpsiyonu, D vitamini aktivasyonu). Tiroid cerrahisinde yanlışlıkla çıkarılırsa hipoparatiroidi ve hipokalsemi gelişir (Chvostek ve Trousseau belirtileri pozitif).",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Baş-Boyun"
+        ],
+        "story_hint": "💡 HİKAYE: Paratiroid bezleri tiroidin arkasına gizlenmiş 4 nöbetçi — PTH salgılayarak kanda kalsiyum seviyesini yüksek tutuyorlar. Tiroid ameliyatında cerrah yanlışlıkla bunları alırsa kalsiyum düşer — kas spazmları başlar! Chvostek (yüze vur, kas seğirir) ve Trousseau testleri pozitifleşir."
+      },
+      {
+        "id": "anat_b1_019",
+        "question": "N. laryngeus recurrens sinister neden sağa göre daha uzun seyirlidir ve tiroid cerrahisinde daha çok risk altındadır?",
+        "answer": "[[Sol taraf: arkus aortayı dolanır]], [[Sağ taraf: A. subclavia dextra'yı dolanır]]",
+        "explanation": "Sol N. laryngeus recurrens göğüs boşluğuna kadar inerek arkus aortayı (lig. arteriosum düzeyinde) dolanıp yukarı çıkar; bu nedenle daha uzundur ve mediasten patolojilerinden etkilenebilir. Sağ tarafta ise A. subclavia dextra'yı dolanarak daha kısa bir seyir izler. Sol tarafın daha uzun seyri nedeniyle akciğer apeks tümörleri, aort anevrizması ve mediastinal lenfadenopati sol rekürren sinir felcine neden olabilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Baş-Boyun",
+          "Larenks"
+        ],
+        "story_hint": "💡 HİKAYE: Sol rekürren laringeal sinir uzun yolculuğa çıkıyor — göğse kadar inip arkus aortayı dolanıp geri geliyor! Sağ taraf kısa yoldan (A. subclavia dextra'yı dolanarak) dönüyor. Sol taraf daha uzun olduğu için akciğer apeks tümörü, aort anevrizması sol ses teli felcine neden olabiliyor!"
+      },
+      {
+        "id": "anat_b1_020",
+        "question": "Pterion nedir ve klinik önemi nedir?",
+        "answer": "[[Os frontale, os parietale, os temporale ve ala major ossis sphenoidalis'in birleşim noktası]]. [[A. meningea media'nın ön dalı altından geçer.]]",
+        "explanation": "Pterion kafatasının yan yüzünde dört kemiğin (frontal, parietal, temporal, sfenoid büyük kanat) birleştiği H şeklinde sutura bölgesidir. Kafatasının en ince ve en zayıf noktasıdır. A. meningea media'nın ön dalı bu bölgenin altından geçer; pterion bölgesine alınan travmada arter yırtılarak epidural hematom gelişir. TUS'ta epidural hematomun en sık nedeni olarak A. meningea media sorulur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Baş-Boyun",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Pterion kafatasının Aşil topuğu — 4 kemiğin (frontal, parietal, temporal, sfenoid) buluştuğu en ince nokta! Tam altından A. meningea media'nın ön dalı geçiyor. Şakağa yumruk atıldığında kemik kırılıp arter yırtılıyor — epidural hematom! Lusid interval sonrası bilinç kaybı."
+      }
+    ],
+    "tus_spots": [
+      "Ön fontanel 18-24 ayda, arka fontanel 2-3 ayda kapanır.",
+      "Pterion: kafatasının en zayıf noktası; A. meningea media burada → Travmada epidural hematom.",
+      "Foramen magnum: medulla oblongata, A. vertebralis'ler, CN XI spinal kökü geçer.",
+      "Sol N. laryngeus recurrens arkus aortayı dolanır → Mediasten patolojilerinde ses kısıklığı.",
+      "Tiroid cerrahisinde paratiroid ve N. laryngeus recurrens korunmalıdır."
+    ],
+    "clinical_cases": [
+      {
+        "case": "8 yaşında çocuk bisikletten düşerek kafasının sol tarafını vuruyor. Başlangıçta bilinci açık (lusid interval), ancak birkaç saat sonra bilinç bulanıklığı ve sağ hemiparezi gelişiyor. BT'de sol temporal bölgede bikonveks (lens şeklinde) hiperdens alan saptanıyor. Bu tabloya neden olan anatomik yapı hangisidir?",
+        "options": [
+          "A) Köprü venleri",
+          "B) A. meningea media",
+          "C) A. cerebri media",
+          "D) Sinus sagittalis superior",
+          "E) A. carotis interna"
+        ],
+        "correct_answer": "B) A. meningea media",
+        "explanation": "Lusid interval (geçici iyilik dönemi) ve ardından hızlı kötüleşme epidural hematomun klasik prezentasyonudur. Temporal bölge (pterion) travmasında A. meningea media'nın ön dalı yırtılır. BT'de bikonveks (lens şeklinde) hiperdens alan tipiktir. Subdural hematom ise köprü venlerinin yırtılmasıyla oluşur ve hilal şeklinde görülür."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch1-009",
+    "subject": "Anatomi",
+    "chapter": "Nöroanatomi",
+    "topic": "Nöroanatomi",
+    "sub_topic": "Beyin, BOS, Traktuslar, Serebral Vaskülarizasyon ve Kanamalari",
+    "content_summary": "Beyin lobları ve fonksiyonel alanları, BOS dolaşımı, spinal traktuslar, Willis poligonu ve intrakranial kanamalar. TUS'ta sık sorulan Broca/Wernicke alanları, epidural/subdural hematom ve spinal yollar konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_027",
+        "question": "Serebrospinal sıvının (BOS) yapım yeri neresidir?",
+        "answer": "[[Yüzde 70 Plexus choroideus]]",
+        "explanation": "BOS'un yaklaşık %70'i lateral, 3. ve 4. ventriküllerdeki plexus choroideus tarafından üretilir. Günde yaklaşık 500 ml BOS üretilir ve herhangi bir zamanda yaklaşık 150 ml BOS bulunur. Pleksus choroideus epandim hücreleri ve kapillerlerden oluşur. Choroid plexus papillomu BOS aşırı üretimi ile obstrüktif olmayan (kommunikan) hidrosefali yapabilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Beyin ventriküllerinde pleksus koroideus var — BOS'un çeşmesi! Günde 500 ml BOS üretip ventriküllere akıtıyor. Herhangi bir anda 150 ml BOS dolaşımda. Koroid pleksus papillomu bu çeşmeyi açık bırakıyor — aşırı BOS üretimi, kommunikan hidrosefali!"
+      },
+      {
+        "id": "anat_028",
+        "question": "BOS dolaşımının emilim yeri neresidir?",
+        "answer": "[[Granulationes arachnoideae]] ([[Pacchioni granülasyonları]])",
+        "explanation": "BOS, araknoid granülasyonlar (Pacchioni granülasyonları) aracılığıyla sinus sagittalis superior'a drene olarak venöz sisteme emilir. Araknoid granülasyonların tıkanması (örn: subaraknoid kanamada kan hücreleri tarafından) kommunikan hidrosefali gelişmesine neden olur. Normal basınçlı hidrosefali (NPH) yaşlılarda demans, yürüme bozukluğu ve üriner inkontinans triadı (Hakim triadı) ile prezente olur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: BOS'un çöp toplama sistemi araknoid granülasyonlar (Pacchioni) — BOS'u süzerek sinus sagittalis superior'a döküyorlar! Subaraknoid kanamada kan hücreleri bu süzgeci tıkıyor — kommunikan hidrosefali. Normal basınçlı hidrosefalide yaşlılar: demans + yürüme bozukluğu + idrar tutamama (Hakim triadı)!"
+      },
+      {
+        "id": "anat_036",
+        "question": "Broca motor konuşma alanı beynin hangi lobunda yer alır?",
+        "answer": "Lobus frontalis (Gyrus frontalis inferior - Pars opercularis ve [[triangularis)]]",
+        "explanation": "Broca alanı (Brodmann alan 44 ve 45) sol frontal lobda gyrus frontalis inferior'un pars opercularis ve pars triangularis bölümlerinde yer alır. Konuşma üretiminin (motor konuşma) merkezi olup lezyonunda Broca afazisi (motor/ekspressif afazi) gelişir: hasta konuşulanı anlar ancak akıcı konuşamaz, kısa cümleler kurar (telegrafik konuşma). Wernicke afazisinde ise konuşma akıcı ama anlamsızdır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Broca alanı frontal lobda konuşma fabrikası — kelimeleri ÜRETİYOR! Lezyonunda hasta anlatmak istediğini anlar ama söyleyemez — telegrafik konuşma: 'Ben... hastane... ağrı...' Motor afazi. Broca = Broken speech (kırık konuşma)! Sol frontal lob, gyrus frontalis inferior."
+      },
+      {
+        "id": "anat_037",
+        "question": "Wernicke duysal konuşma alanı beynin hangi lobunda yer alır?",
+        "answer": "[[Lobus temporalis]] ([[Gyrus temporalis superior]])",
+        "explanation": "Wernicke alanı (Brodmann alan 22) sol temporal lobda gyrus temporalis superior'un arka bölümünde yer alır. Konuşmanın anlaşılmasının (duysal/reseptif konuşma) merkezidir. Lezyonunda Wernicke afazisi gelişir: hasta akıcı konuşur ancak konuşma anlamsızdır (jargon afazi), konuşulanı anlamaz. Broca ve Wernicke alanlarını birbirine bağlayan fasciculus arcuatus'un lezyonunda iletim afazisi gelişir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Wernicke alanı temporal lobda konuşma ANLAMA merkezi — kelimeleri DEŞİFRE ediyor! Lezyonunda hasta akıcı konuşuyor ama anlamsız — kelime salatası (jargon afazi). Konuşulanı da anlamıyor. Wernicke = Words without meaning! Fasciculus arcuatus ikisini birbirine bağlıyor."
+      },
+      {
+        "id": "anat_038",
+        "question": "Görme korteksi (Primer görme alanı) beynin neresindedir?",
+        "answer": "[[Lobus occipitalis]] ([[Sulcus calcarinus etrafında, Alan 17]])",
+        "explanation": "Primer görme korteksi (V1 / Brodmann alan 17) oksipital lobda sulcus calcarinus'un her iki yanında yer alır. Sol görme korteksi sağ görme alanını, sağ görme korteksi sol görme alanını işler (optik kiazma'da nazal liflerin çapraz yapması nedeniyle). Sulcus calcarinus üstü alt görme alanını, altı üst görme alanını temsil eder. PCA (A. cerebri posterior) tıkanıklığında kontralateral homonim hemianopsi gelişir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Görme korteksi oksipital lobun en arkasında — kafanın tam arka tarafında, sulcus calcarinus etrafında oturuyor. Sol korteks sağ görme alanını işliyor (optik kiazmada çapraz var!). PCA tıkanırsa karşı taraf görme alanı kararıyor — homonim hemianopsi!"
+      },
+      {
+        "id": "anat_039",
+        "question": "İşitme korteksi beynin neresindedir?",
+        "answer": "[[Lobus temporalis]] ([[Gyri temporales transversi - Heschl girusları]])",
+        "explanation": "Primer işitme korteksi (A1 / Brodmann alan 41 ve 42) temporal lobda gyri temporales transversi (Heschl girusları) bölgesinde, lateral sulkus içinde yer alır. İşitme yolları bilateral olduğu için unilateral temporal lob lezyonunda tam sağırlık gelişmez; ancak kontralateral kulakta işitme azalması olabilir. İşitme korteksinin çevresindeki asosiyasyon alanı (alan 22) Wernicke alanını oluşturur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: İşitme korteksi temporal lobda Heschl giruslarında — kulağın hemen iç tarafında! İşitme yolları bilateral olduğu için tek taraflı lezyon tam sağırlık yapmıyor. Heschl'in etrafındaki alan 22 ise Wernicke alanı — işitmeden anlamaya geçiş kapısı!"
+      },
+      {
+        "id": "anat_040",
+        "question": "Beyincik (Cerebellum) ile beyin sapı arasındaki boşluk hangisidir?",
+        "answer": "[[Ventriculus quartus]] ([[4. Ventrikül]])",
+        "explanation": "4. ventrikül beyincik (cerebellum) ile pons ve medulla oblongata arasında yer alır. Tavanını cerebellum ve velum medullare'ler, tabanını ise fossa rhomboidea (pons ve medulla) oluşturur. BOS foramen Luschka'lardan (lateral aperturalar, 2 adet) ve foramen Magendie'den (medial apertura, 1 adet) subaraknoid aralığa geçer. 4. ventrikül tümörleri (çocuklarda medulloblastom) obstrüktif hidrosefali yapar.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: 4. ventrikül cerebellum ile pons/medulla arasında gizli bir mağara! BOS buradan 3 kapıyla (2 Luschka yanlardan, 1 Magendie ortadan) subaraknoid aralığa çıkıyor. Çocuklarda medulloblastom bu mağarada büyüyüp kapıları tıkıyor — obstrüktif hidrosefali!"
+      },
+      {
+        "id": "anat_047",
+        "question": "Epidural hematom en sık hangi arterin yırtılmasıyla oluşur?",
+        "answer": "[[Arteria meningea media]]",
+        "explanation": "Epidural hematom en sık A. meningea media'nın yırtılmasıyla oluşur (temporal bölge / pterion travması). Dura mater ile kafatası kemikleri arasında kan birikir. BT'de bikonveks (lens şeklinde) hiperdens alan görülür. Klasik prezentasyon: travma → bilinç kaybı → lusid interval (geçici iyilik) → hızlı kötüleşme. Acil cerrahi (kraniektomi) gerektirir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Temporal bölgeye darbe aldın — pterion kırıldı, A. meningea media yırtıldı! Dura ile kemik arasına kan doldu — epidural hematom. BT'de mercek (lens) şeklinde parlak beyaz alan. Önce iyisin (lusid interval), sonra birden kötüleşme — acil kraniektomi!"
+      },
+      {
+        "id": "anat_048",
+        "question": "Subdural hematom en sık nelerin yırtılmasıyla oluşur?",
+        "answer": "[[Köprü venleri]] ([[Venae cerebri superiores]])",
+        "explanation": "Subdural hematom, beyin yüzeyindeki köprü venlerinin (dura mater ile araknoid arasını geçen venler) yırtılmasıyla oluşur. Dura mater ile araknoid mater arasında kan birikir. BT'de hilal (ay/crescent) şeklinde hiperdens alan görülür. Yaşlılarda ve antikoagülan kullananlarda sıktır. Kronik subdural hematom demans benzeri tabloya neden olabilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Yaşlı adam düştü — beyin küçüldüğü için köprü venleri gergin, kolay kopuyor! Dura ile araknoid arasına yavaş yavaş kan sızıyor — subdural hematom. BT'de hilal (ay) şeklinde. Kronik subdural demans benzeri tablo yapıyor — operasyonla drene edilince iyileşiyor!"
+      },
+      {
+        "id": "anat_049",
+        "question": "Subaraknoid kanama en sık hangi klinik tabloyla ortaya çıkar?",
+        "answer": "[[Berry]] ([[Sakküler]]) anevrizma rüptürü (\"Hayatımın en kötü baş ağrısı\")",
+        "explanation": "Subaraknoid kanama (SAK) en sık berry (sakküler) anevrizma rüptürü sonucu gelişir. En sık anevrizma lokalizasyonu A. communicans anterior'dur. Ani başlayan şiddetli baş ağrısı ('thunderclap headache' - hayatımın en kötü baş ağrısı), ense sertliği ve bulantı/kusma klasik bulgulardır. BT'de bazal sisternalarda hiperdens alan görülür. LP'de ksantokromi (sarı BOS) tanısaldır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: 'Hayatımın en kötü baş ağrısı!' — bu cümle subaraknoid kanamayı düşündürür. Berry anevrizması A. communicans anterior'da patladı! Kan beyin zarları arasına yayıldı, ense sertleşti. BT'de bazal sisternalarda kan, LP'de ksantokromi (sarı BOS). Thunderclap headache = SAK!"
+      },
+      {
+        "id": "anat_050",
+        "question": "Willis poligonunu oluşturan damarlar hangileridir?",
+        "answer": "A. cerebri anterior, A. cerebri media, A. cerebri posterior, A. communicans anterior ve [[posterior]]",
+        "explanation": "Willis poligonu (circulus arteriosus cerebri) karotis ve vertebrobaziler sistemleri birbirine bağlayan anastomoz halkasıdır. Bileşenleri: 2x A. cerebri anterior, 1x A. communicans anterior (öndeki bağlantı), 2x A. carotis interna (kısmen), 2x A. communicans posterior (arka bağlantılar), 2x A. cerebri posterior. En sık anevrizma A. communicans anterior'da görülür. Willis poligonu tek taraflı tıkanıklıklarda kollateral dolaşım sağlar.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Willis poligonu beynin güvenlik halkası — karotis ve vertebral sistemleri birbirine bağlayan dairesel otoyol! Bir taraf tıkanırsa diğer taraftan kan geliyor. A. communicans anterior ön bağlantı, posterior arka bağlantı. En sık anevrizma A. communicans anterior'da!"
+      },
+      {
+        "id": "anat_051",
+        "question": "Tractus corticospinalis nerede çapraz yapar?",
+        "answer": "[[Decussatio pyramidum]] ([[Medulla oblongata/Bulbus]])",
+        "explanation": "Tractus corticospinalis (piramidal yol) motor korteksten (precentral girus) başlayarak korona radiata, capsula interna'nın crus posterius'u, pedunculus cerebri (mesencephalon), pons ve medulla'dan geçer. Medulla'da decussatio pyramidum'da liflerin %85'i çapraz yaparak tractus corticospinalis lateralis olarak iner. Bu çaprazlanma nedeniyle sağ motor korteks lezyonunda sol vücut yarısı felç olur (kontralateral hemipleji).",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Piramidal yol (tractus corticospinalis) motor korteksten omurilige giden otoyol! Medulla'da (decussatio pyramidum) liflerin %85'i ÇAPRAZ yapıyor — sağ beyin sol vücudu kontrol ediyor. Capsula interna'nın crus posterius'undan geçiyor. Bu yolun kesilmesi = kontralateral hemipleji!"
+      },
+      {
+        "id": "anat_052",
+        "question": "Ağrı ve ısı duyusunu taşıyan ana yol hangisidir?",
+        "answer": "[[Tractus spinothalamicus lateralis]]",
+        "explanation": "Tractus spinothalamicus lateralis ağrı ve ısı (sıcak/soğuk) duyusunu taşıyan ana yoldur. Birinci nöron dorsal kök ganglionunda, ikinci nöron arka boynuz'da (substantia gelatinosa) yer alır ve commissura alba anterior'da çapraz yaparak karşı tarafa geçer, sonra lateral spinotalamik trakt olarak talamusa (VPL çekirdeği) yükselir. Syringomyeli'de bu çapraz lif kesilir ve bilateral ağrı/ısı kaybı (pelerin tarzı) görülür.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Ağrı ve ısı duyusu lateral spinotalamik traktusla taşınıyor — omurilikteki arka boynuzda sinaps yapıp ÇAPRAZ geçiyor. Syringomyeli'de bu çapraz yol kesilince bilateral ağrı ve ısı kaybı oluyor — pelerin şeklinde! Dokunma korunuyor ama acı hissetmiyor."
+      },
+      {
+        "id": "anat_053",
+        "question": "Şuurlu propriyosepsiyon, iki nokta ayrımı ve vibrasyon duyusunu taşıyan ana yollar hangileridir?",
+        "answer": "[[Fasciculus gracilis]] ve [[Fasciculus cuneatus]] ([[Arka kordon sistemi]])",
+        "explanation": "Arka kordon (dorsal kolon / medial lemniskus) sistemi ince dokunma, iki nokta ayrımı, vibrasyon ve şuurlu propriyosepsiyon taşır. Birinci nöron DRG'de, sinapsı medulla'daki nucleus gracilis (bacak - T6 altı) ve nucleus cuneatus'ta (kol - T6 üstü) yapar. İkinci nöron burada çapraz yaparak (lemniscus medialis) talamusa (VPL) çıkar. B12 eksikliğinde (subakut kombine dejenerasyon) arka kordon tutulumu ile vibrasyon ve propriyosepsiyon kaybı görülür.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Arka kordon (fasciculus gracilis + cuneatus) vücudun GPS'i — vibrasyon, propriyosepsiyon ve ince dokunma taşıyor! Gracilis bacaktan (T6 altı), cuneatus koldan (T6 üstü) geliyor. B12 eksikliğinde arka kordon eriyor — hasta karanlıkta yürüyemiyor, ayaklarını hissetmiyor!"
+      },
+      {
+        "id": "anat_055",
+        "question": "Otonom sinir sisteminin temel kontrol merkezi beynin neresindedir?",
+        "answer": "[[Hipotalamus]]",
+        "explanation": "Hipotalamus otonom sinir sisteminin en üst merkezi olup vücut ısısı, açlık-tokluk, susuzluk, sirkadiyen ritim, emosyon ve endokrin fonksiyonları düzenler. Supraoptik çekirdek ADH, paraventriküler çekirdek oksitosin salgılar. Lateral hipotalamus açlık merkezi (lezyonunda anoreksi), ventromedial hipotalamus tokluk merkezidir (lezyonunda obezite). Suprakiazmatik çekirdek biyolojik saattir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Hipotalamus beynin kontrol odası — ısı, açlık, susuzluk, uyku, duygu ve hormonları yönetiyor! Lateral hipotalamus açlık merkezi (lezyonunda anoreksi), ventromedial hipotalamus tokluk merkezi (lezyonunda obezite). Suprakiazmatik çekirdek biyolojik saat — gece-gündüz ritmini ayarlıyor!"
+      },
+      {
+        "id": "anat_076",
+        "question": "Corpus callosum nedir ve görevi nedir?",
+        "answer": "[[İki serebral hemisferi birbirine bağlayan en büyük komissüral yoldur]].",
+        "explanation": "Corpus callosum beyindeki en büyük beyaz cevher (komissüral lif) yapısıdır ve sağ-sol hemisferleri birbirine bağlar. Bölümleri: rostrum (en ön), genu (diz), truncus (gövde) ve splenium (en arka). Splenium görme bilgilerini taşır; genu frontal bağlantıları sağlar. Corpus callosum agenezisinde hemisferler arası iletişim bozulur. Split-brain sendromu corpus callosum kesilmesiyle oluşur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Corpus callosum beynin köprüsü — sağ ve sol hemisferleri birbirine bağlayan en büyük beyaz cevher! Rostrum (burun), genu (diz), truncus (gövde), splenium (kuyruk). Kesilirse (split-brain) hemisferler birbirleriyle konuşamıyor — sağ el ne yaptığını sol el bilmiyor!"
+      },
+      {
+        "id": "anat_077",
+        "question": "Miyelin kılıfı Merkezi Sinir Sisteminde ve Periferik Sinir Sisteminde hangi hücreler oluşturur?",
+        "answer": "[[MSS'de Oligodendrositler, PSS'de Schwann hücreleri]]",
+        "explanation": "MSS'de oligodendrositler birden fazla aksonu miyelinler; PSS'de ise her Schwann hücresi tek bir aksonu miyelinler. Multipl skleroz (MS) MSS'de oligodendrosit ve miyelin hasarıyla karakterize otoimmün bir hastalıktır. Guillain-Barré sendromu ise PSS'de Schwann hücresi ve miyelin hasarıyla oluşan akut inflamatuvar demiyelinizan polinöropatidir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Sinir tellerinin yalıtım kaplaması miyelin! MSS'de oligodendrositler (bir işçi birçok teli kaplıyor), PSS'de Schwann hücreleri (bir işçi tek tel) yapıyor. MS hastalığı MSS yalıtımını yiyor. Guillain-Barré ise PSS yalıtımını yiyor. İkisi de kısa devre yapıyor!"
+      },
+      {
+        "id": "anat_b1_021",
+        "question": "Medulla oblongata'da (bulbus) bulunan hayati merkezler nelerdir?",
+        "answer": "[[Solunum merkezi]], [[kardiyovasküler merkez (vazomotor)]] ve [[kusma merkezi]]",
+        "explanation": "Medulla oblongata beyin sapının en alt bölümüdür ve solunum ritmi (dorsal ve ventral respiratuar grup), kalp hızı ve kan basıncı düzenlenmesi (vazomotor merkez), yutma, kusma ve öksürük gibi hayati refleks merkezlerini içerir. Medulla lezyonları hayatla bağdaşmayabilir. Lateral medüller sendrom (Wallenberg sendromu) PICA tıkanıklığında gelişir ve ipsilateral yüzde, kontralateral gövdede ağrı/ısı kaybı ile prezente olur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Medulla oblongata beyin sapının en alt katı — hayati merkezlerin binası! Solunum, kardiyovasküler ve kusma merkezi burada. Bu bina yıkılırsa yaşam durur! Wallenberg sendromu (PICA tıkanıklığı): aynı taraf yüzde, karşı taraf gövdede ağrı/ısı kaybı — çapraz duyu kaybı!"
+      },
+      {
+        "id": "anat_b1_022",
+        "question": "Capsula interna (internal kapsül) lezyonunda hangi klinik tablo gelişir?",
+        "answer": "[[Kontralateral hemipleji]] ([[motor ve duysal lifler birlikte etkilenir]])",
+        "explanation": "Capsula interna beyindeki en önemli beyaz cevher yapısıdır ve motor (tractus corticospinalis - crus posterius), duysal (talamokortkal radyasyonlar) ve görme yollarını (optik radyasyon) bir arada taşır. Capsula interna'nın kanlanması ağırlıklı olarak A. cerebri media'nın lentikulostriat dalları tarafından sağlanır. Bu arterlerin tıkanması veya kanaması (hipertansif intraserebral kanama en sık lokalizasyonu) kontralateral hemiplejiye neden olur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Capsula interna beyindeki en kalabalık otoyol — motor, duysal ve görme yolları hepsi buradan geçiyor! Lentikulostriat arterler (MCA dalları) bu otoyolu besliyor. Hipertansiyonda bu küçük arterler patlıyor — en sık kanama yeri! Bir damla kan otoyolu tıkıyor — kontralateral hemipleji!"
+      },
+      {
+        "id": "anat_b1_023",
+        "question": "Foramen interventriculare (Monro deliği) hangi yapılar arasındadır ve tıkanırsa ne olur?",
+        "answer": "[[Lateral ventrikül ile 3. ventrikül arasında]]. [[Tıkanırsa ipsilateral lateral ventrikül genişler (obstrüktif hidrosefali).]]",
+        "explanation": "Foramen Monro (foramen interventriculare) lateral ventrikülleri 3. ventriküle bağlayan dar bir geçittir. Kolloid kist gibi tümörler bu forameni tıkayarak akut obstrüktif hidrosefali ve ani intrakranial basınç artışına neden olabilir. BOS akışı: Lateral ventrikül → (F. Monro) → 3. ventrikül → (Aquaeductus cerebri/Sylvius) → 4. ventrikül → (F. Luschka ve Magendie) → subaraknoid aralık.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Nöroanatomi"
+        ],
+        "story_hint": "💡 HİKAYE: Monro deliği lateral ventrikülleri 3. ventriküle bağlayan dar geçit! Kolloid kist bu geçide yerleşip kapıyı tıkıyor — lateral ventrikül şişiyor (obstrüktif hidrosefali). BOS akışı: Lateral V -> Monro -> 3.V -> Sylvius -> 4.V -> Luschka/Magendie -> subaraknoid aralık. Herhangi bir noktada tıkanma = hidrosefali!"
+      }
+    ],
+    "tus_spots": [
+      "Epidural hematom: A. meningea media, bikonveks (lens) şeklinde, lusid interval. Subdural hematom: köprü venleri, hilal şeklinde.",
+      "Broca afazisi: frontal lob, konuşamaz ama anlar (non-fluent). Wernicke afazisi: temporal lob, akıcı ama anlamsız konuşma.",
+      "BOS akışı: Lateral ventrikül → F. Monro → 3. ventrikül → Aquaeductus Sylvii → 4. ventrikül → F. Luschka/Magendie → subaraknoid aralık → araknoid granülasyonlar.",
+      "Capsula interna kanlanması: lentikulostriat arterler (MCA dalları) → Hipertansif kanama en sık burada.",
+      "Arka kordon (fasciculus gracilis/cuneatus): vibrasyon, propriyosepsiyon, ince dokunma; B12 eksikliğinde tutulur."
+    ],
+    "clinical_cases": [
+      {
+        "case": "65 yaşında hipertansif erkek hasta ani başlayan sağ taraf güçsüzlüğü ile acile getiriliyor. BT'de sol bazal ganglion bölgesinde (capsula interna düzeyinde) intraserebral kanama saptanıyor. Bu kanama en sık hangi arterin dalından kaynaklanır?",
+        "options": [
+          "A) A. cerebri anterior",
+          "B) A. communicans posterior",
+          "C) A. cerebri media",
+          "D) A. cerebri posterior",
+          "E) A. choroidea anterior"
+        ],
+        "correct_answer": "C) A. cerebri media",
+        "explanation": "Hipertansif intraserebral kanama en sık bazal ganglion/capsula interna bölgesinde görülür. Bu bölgenin kanlanması A. cerebri media'nın lentikulostriat dalları (perforan arterler) tarafından sağlanır. Bu arterler 'hemorajik inme arterleri' olarak da bilinir. Capsula interna lezyonu kontralateral hemipleji yapar."
+      },
+      {
+        "case": "50 yaşında kadın hasta ani başlayan şiddetli baş ağrısı ('hayatımın en kötü baş ağrısı'), kusma ve ense sertliği ile acile başvuruyor. BT'de bazal sisternalarda yaygın kanama saptanıyor. Bu klinik tabloda en sık neden nedir?",
+        "options": [
+          "A) Hipertansif intraserebral kanama",
+          "B) AVM rüptürü",
+          "C) Berry (sakküler) anevrizma rüptürü",
+          "D) Kavernöz malformasyon kanaması",
+          "E) Dural AV fistül"
+        ],
+        "correct_answer": "C) Berry (sakküler) anevrizma rüptürü",
+        "explanation": "Ani şiddetli baş ağrısı (thunderclap headache), ense sertliği ve bazal sisternal kanama subaraknoid kanamayı (SAK) gösterir. SAK'ın en sık nedeni berry (sakküler) anevrizma rüptürüdür (%85). En sık anevrizma yeri A. communicans anterior'dur. Tanıda BT (%95 sensitif ilk 24 saatte) ve LP (ksantokromi) kullanılır."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch1-010",
+    "subject": "Anatomi",
+    "chapter": "Duyu Organları",
+    "topic": "Duyu Organları",
+    "sub_topic": "Kulak, Göz ve Denge Anatomisi",
+    "content_summary": "Kulak, göz ve denge organlarının anatomisi. TUS'ta sık sorulan orta kulak kemikçikleri, retina yapısı ve denge organı konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_073",
+        "question": "Kulakta ses titreşimlerini zardan iç kulağa aktaran kemikçiklerin dıştan içe sıralaması nedir?",
+        "answer": "[[Malleus]] ([[Çekiç]]), [[Incus]] ([[Örs]]), [[Stapes]] ([[Üzengi]])",
+        "explanation": "Orta kulak kemikçikleri membrana tympani'den başlayarak sırasıyla malleus (çekiç), incus (örs) ve stapes (üzengi) şeklinde sıralanır. Stapes'in tabanı (basis stapedis) fenestra vestibuli'ye (oval pencere) oturur. Bu kemikçikler ses enerjisini yaklaşık 20 kat amplifiye eder. Otoskleroz hastalığında stapes tabanı oval pencereye fikse olur ve iletim tipi işitme kaybı gelişir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Duyu Organları"
+        ],
+        "story_hint": "💡 HİKAYE: Kulak kemikçikleri bir demirci atölyesi — Çekiç (malleus) zardan gelen sesi alıp Örs'e (incus) vuruyor, Örs de Üzengi'ye (stapes) iletiyor! Üzengi oval pencereye basıyor, ses 20 kat güçlenmiş olarak iç kulağa giriyor. Otosklerozda üzengi pencereye yapışıp kımıldayamıyor!"
+      },
+      {
+        "id": "anat_074",
+        "question": "İç kulakta dengeden sorumlu yapı hangisidir?",
+        "answer": "[[Canales semicirculares, Utriculus]] ve [[Sacculus]]",
+        "explanation": "İç kulağın vestibüler bölümü denge organını oluşturur. Üç semisirküler kanal (anterior, posterior, lateral) açısal (rotasyonel) hareketleri algılar; ampullalarındaki crista ampullaris'te yer alan tüy hücreleri endolenf akımıyla uyarılır. Utriculus lineer horizontal akselerasyon ve baş pozisyonunu, sacculus ise lineer vertikal akselerasyon ve yerçekimini algılar (makula'daki otolit organları aracılığıyla). Benign paroksismal pozisyonel vertigo (BPPV) en sık posterior semisirküler kanalda otolit kristallerinin yer değiştirmesi ile oluşur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Duyu Organları"
+        ],
+        "story_hint": "💡 HİKAYE: İç kulakta 3 yarım daire kanalı var — her biri farklı düzlemde dönme hareketini algılıyor. Utriculus yatay hızlanmayı (arabada gaz), sacculus dikey hızlanmayı (asansör) algılıyor. BPPV'de posterior kanaldaki otolit kristalleri yerinden oynuyor — baş döndürünce vertigo!"
+      },
+      {
+        "id": "anat_075",
+        "question": "Retinada renkli görmeden sorumlu fotoreseptör hücreler hangileridir ve nerede yoğunlaşır?",
+        "answer": "[[Koniler, Macula lutea içindeki Fovea centralis'te]]",
+        "explanation": "Retinada iki tip fotoreseptör bulunur: koniler (renkli görme, keskin görme, fotopik/gün ışığı görme) ve çubuklar/basiller (karanlık görme, periferik görme, skotopik görme). Koniler fovea centralis'te (makulanın merkezi) en yoğundur; burada çubuk yoktur. Çubuklar ise periferik retinada yoğundur. Maküler dejenerasyon konileri etkileyerek santral görme kaybına neden olur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Duyu Organları"
+        ],
+        "story_hint": "💡 HİKAYE: Retinada iki tip fotoğrafçı var: Koniler (renkli fotoğraf, yüksek çözünürlük, gün ışığı) ve Çubuklar (siyah-beyaz, düşük ışık, gece modu). Koniler fovea centralis'te toplanmış — en keskin görüntü oradan! Maküler dejenerasyonda koniler ölüyor — ortayı göremiyorsun."
+      },
+      {
+        "id": "anat_b1_024",
+        "question": "CN IV (N. trochlearis) hangi göz kasını innerve eder ve bu kasın fonksiyonu nedir?",
+        "answer": "[[M. obliquus superior]] ([[Gözü aşağı ve içe çevirir, intorsiyon yapar]])",
+        "explanation": "CN IV (N. trochlearis) sadece M. obliquus superior'u innerve eder. Bu kas gözü aşağı-içe çevirir (depresyon - özellikle adduksiyondayken) ve intorsiyon yapar. CN IV felcinde hasta merdiven inerken zorluk çeker (aşağı bakamaz) ve diplopi gelişir. Bunu kompanse etmek için başını karşı tarafa eğer (head tilt). Bischoff testi (head tilt test) CN IV felcini değerlendirmek için kullanılır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Duyu Organları",
+          "Kranial Sinirler"
+        ],
+        "story_hint": "💡 HİKAYE: CN IV sadece tek bir kasın patronu — M. obliquus superior! Bu kas gözü aşağı ve içe çeviriyor (merdiven inerken kullanıyorsun). CN IV felcinde merdiven kabusa dönüyor — çift görme! Hasta başını karşı tarafa eğerek kompanse ediyor. Head tilt testi pozitif!"
+      },
+      {
+        "id": "anat_b1_025",
+        "question": "Gözdeki kör nokta (scotoma) nereye karşılık gelir ve neden burada görüntü algılanmaz?",
+        "answer": "[[Discus nervi optici (optik disk)]] — [[Fotoreseptör hücre bulunmaz]]",
+        "explanation": "Kör nokta (fizyolojik scotom) retinada optik diskin (discus nervi optici) bulunduğu noktaya karşılık gelir. Burada ganglion hücre aksonları birleşerek N. opticus'u oluşturur; fotoreseptör hücre (kon/çubuk) bulunmadığı için ışık algılanmaz. Optik disk aynı zamanda retinal damarların giriş-çıkış noktasıdır. Papilödem (optik disk ödemi) intrakranial basınç artışının önemli bir bulgusudur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Duyu Organları"
+        ],
+        "story_hint": "💡 HİKAYE: Retinada bir kör nokta var — optik disk! Tüm sinir lifleri burada toplanıp N. opticus olarak çıkıyor, ama bu noktada fotoreseptör yok — ışık algılanamıyor. Normalde beyin bu boşluğu dolduruyor. Papilödem optik diskin şişmesi — kafa içi basınç artışının kırmızı alarm lambası!"
+      },
+      {
+        "id": "anat_b1_026",
+        "question": "Corti organı nerede bulunur ve işlevi nedir?",
+        "answer": "[[Koklea'nın (iç kulak) membrana basilaris'i üzerinde]], [[İşitmenin duyu organıdır]]",
+        "explanation": "Corti organı koklea'nın ductus cochlearis'inde (scala media) membrana basilaris üzerinde yer alan işitme reseptörüdür. İç tüy hücreleri (işitme duyusunun asıl alıcıları) ve dış tüy hücreleri (amplifikasyon) içerir. Membrana tectoria tüy hücrelerin stereosilialarıyla temas eder. Ses dalgaları → stapes → oval pencere → perilenf dalgası → membrana basilaris → tüy hücreleri → CN VIII (N. cochlearis). Gürültüye bağlı işitme kaybı 4000 Hz frekansında (bazal kıvrım) başlar.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Duyu Organları"
+        ],
+        "story_hint": "💡 HİKAYE: Corti organı koklea'nın içinde membrana basilaris üzerinde oturan müzik stüdyosu! İç tüy hücreleri mikrofon (asıl ses alıcı), dış tüy hücreleri amplifikatör (sesi güçlendiriyor). Ses dalgaları oval pencereden girip perilenf dalgası olarak membrana basilaris'i titreştiriyor. 4000 Hz'de gürültü hasarı başlıyor!"
+      }
+    ],
+    "tus_spots": [
+      "Orta kulak kemikçikleri: Malleus → Incus → Stapes; otosklerozda stapes fikse olur → iletim tipi işitme kaybı.",
+      "BPPV: en sık posterior semisirküler kanal; otolit kristalleri yer değiştirir → pozisyonel vertigo.",
+      "Fovea centralis: sadece koniler var → en keskin görme; maküler dejenerasyonda santral görme kaybı.",
+      "Kör nokta = optik disk; fotoreseptör yok. Papilödem intrakranial basınç artışını gösterir.",
+      "Corti organı: membrana basilaris üzerinde; iç tüy hücreleri asıl işitme reseptörüdür."
+    ],
+    "clinical_cases": [
+      {
+        "case": "60 yaşında kadın hasta her iki kulakta ilerleyici işitme kaybı ile başvuruyor. Weber testinde ses ortada lateralize olmuyor, Rinne testinde hava yolu iletimi kemik yolundan kısa. Timpanogram tip As (düşük kompliyanslı). Bu hastada en olası tanı nedir?",
+        "options": [
+          "A) Prezbiakuzi",
+          "B) Meniere hastalığı",
+          "C) Otoskleroz",
+          "D) Akustik nöroma",
+          "E) Otitis media seröz"
+        ],
+        "correct_answer": "C) Otoskleroz",
+        "explanation": "İlerleyici bilateral iletim tipi işitme kaybı (Rinne negatif: kemik > hava) ve tip As timpanogram otosklerozu düşündürür. Otosklerozda stapes tabanı oval pencereye fikse olur ve ses iletimi bozulur. Stapes cerrahisi (stapedotomi/stapedektomi) tedavide kullanılır. Carhart çentiği (2000 Hz'de kemik yolunda düşme) odyometride karakteristik bulgudur."
+      },
+      {
+        "case": "45 yaşında erkek hasta kafa travması sonrası çift görme (diplopi) şikayetiyle başvuruyor. Diplopi özellikle merdiven inerken artıyor. Muayenede sol göz aşağı bakışta güçsüz ve hasta başını sağa eğme eğiliminde. En olası lezyon hangisidir?",
+        "options": [
+          "A) Sol CN III felci",
+          "B) Sol CN IV felci",
+          "C) Sol CN VI felci",
+          "D) Sağ CN IV felci",
+          "E) Sol orbita taban kırığı"
+        ],
+        "correct_answer": "B) Sol CN IV felci",
+        "explanation": "Merdiven inerken artan diplopi (aşağı bakış güçsüzlüğü), sol göz depresyon kısıtlılığı ve başı karşı tarafa (sağa) eğme CN IV (trochlear sinir) felcini gösterir. CN IV, M. obliquus superior'u innerve eder. CN IV en uzun intrakranial seyirli ve kafa travmasına en duyarlı kranial sinirdir."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch1-011",
+    "subject": "Anatomi",
+    "chapter": "Endokrin, Histoloji ve Hematoloji",
+    "topic": "Endokrin/Histoloji",
+    "sub_topic": "Böbreküstü Bezi, Pankreas, Dalak ve Kan Hücreleri",
+    "content_summary": "Endokrin organlar, histolojik yapılar ve kan hücrelerinin anatomisi. TUS'ta sık sorulan adrenal medulla, Langerhans adacıkları, dalak fonksiyonları ve lökosit tipleri konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_018",
+        "question": "Epinefrin ve norepinefrin üreten böbreküstü bezi bölümü neresidir?",
+        "answer": "[[Medulla suprarenalis]]",
+        "explanation": "Böbreküstü bezi (gl. suprarenalis) iki kısımdan oluşur: korteks (dışta, mezodermal kökenli) ve medulla (içte, nöral krest kökenli). Medulla, modifiye sempatik ganglion hücreleri olan kromaffin hücreler içerir ve epinefrin (%80) ile norepinefrin (%20) salgılar. Feokromositoma medulladan kaynaklanan katekolamin salgılayan tümördür; 10'lar kuralı ile karakterize edilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Endokrin"
+        ],
+        "story_hint": "💡 HİKAYE: Böbreküstü bezinin içi (medulla) aslında gizli bir sempatik ganglion! Nöral krest kökenli kromaffin hücreler adrenalin (%80) ve noradrenalin (%20) üretiyor. Stres anında medulla devreye giriyor! Feokromositoma bu fabrikanın kontrolden çıkması — 10'lar kuralı: %10 bilateral, %10 malign, %10 ekstraadrenal."
+      },
+      {
+        "id": "anat_056",
+        "question": "Kanda en fazla bulunan lökosit tipi nedir?",
+        "answer": "[[Nötrofil]]",
+        "explanation": "Nötrofiller (polimorfonükleer lökositler) kanda en fazla bulunan beyaz kan hücreleridir (%60-70). Bakteriyel enfeksiyonlara karşı ilk savunma hattıdır (fagositoz). Çok loblu çekirdekleri vardır (normalde 2-5 lob). 5'ten fazla lob olması (hipersegmentasyon) megaloblastik anemiyi (B12/folat eksikliği) düşündürür. Sol kayma (band formları artışı) akut bakteriyel enfeksiyon göstergesidir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Histoloji"
+        ],
+        "story_hint": "💡 HİKAYE: Nötrofiller kanın polis gücü — %60-70 oranıyla en kalabalık lökosit! Bakteri görünce ilk koşan onlar (fagositoz). 2-5 loblu çekirdekleri var — 5'ten fazla lob varsa (hipersegmentasyon) megaloblastik anemi! Sol kayma (band formları artışı) ise acil polis takviyesi — akut bakteriyel enfeksiyon!"
+      },
+      {
+        "id": "anat_057",
+        "question": "Vücudun en büyük lenfoid organı hangisidir?",
+        "answer": "[[Dalak]] ([[Splen / Lien]])",
+        "explanation": "Dalak sol hipokondrium bölgesinde, 9-11. kostalar hizasında yer alan vücudun en büyük lenfoid organıdır. Beyaz pulpa (periarterioler lenfoid kılıf - T hücreleri, lenfoid foliküller - B hücreleri) immün fonksiyon, kırmızı pulpa ise yaşlı eritrositlerin yıkımı ve kan filtrelenmesi görevini üstlenir. Splenektomi sonrası kapsüllü bakterilere (S. pneumoniae, H. influenzae, N. meningitidis) duyarlılık artar.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Histoloji"
+        ],
+        "story_hint": "💡 HİKAYE: Dalak vücudun en büyük lenfoid karakolu — sol hipokondryumda 9-11. kostalar hizasında! Beyaz pulpa bağışıklığın karargahı, kırmızı pulpa yaşlı eritrositlerin mezarlığı. Dalak çıkarılırsa kapsüllü bakterilere (pnömokok, H. influenzae, meningokok) karşı savunmasız kalıyorsun — aşılama şart!"
+      },
+      {
+        "id": "anat_078",
+        "question": "Pankreasın Langerhans adacıkları'nda insülin salgılayan hücreler hangileridir?",
+        "answer": "[[Beta hücreleri]]",
+        "explanation": "Langerhans adacıkları pankreasın endokrin kısmını oluşturur. Beta hücreleri (%60-70) insülin salgılar (kan şekerini düşürür), alfa hücreleri (%20-25) glukagon salgılar (kan şekerini yükseltir), delta hücreleri somatostatin salgılar (diğer hormonları inhibe eder), PP hücreleri pankreatik polipeptid salgılar. Tip 1 diyabette beta hücreleri otoimmün olarak yıkılır.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Endokrin"
+        ],
+        "story_hint": "💡 HİKAYE: Langerhans adacıkları pankreasın gizli adaları — her birine farklı hücre yerleşmiş! Beta hücreleri (%60-70) insülin üretiyor (şekeri düşürüyor), alfa hücreleri glukagon üretiyor (şekeri yükseltiyor), delta hücreleri somatostatin ile herkesi susturuyor. Tip 1 diyabette bağışıklık beta adalarını bombalıyor!"
+      },
+      {
+        "id": "anat_079",
+        "question": "Dalakta miyadını dolduran eritrositlerin parçalandığı bölgeye ne denir?",
+        "answer": "[[Kırmızı pulpa]]",
+        "explanation": "Dalağın kırmızı pulpası splenik kordlar (Billroth kordları) ve splenik sinüslerden oluşur. Yaşlı, hasarlı veya anormal eritrositler (örn: orak hücreli anemi, sferositoz) kırmızı pulpada makrofajlar tarafından fagositoz ile yıkılır. Bu işleme 'ekstravasküler hemoliz' denir. Herediter sferositozda eritrositler dalakta aşırı yıkılır; splenektomi tedavi seçeneğidir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Histoloji"
+        ],
+        "story_hint": "💡 HİKAYE: Dalağın kırmızı pulpası bir eritrosit geri dönüşüm fabrikası! Yaşlı kırmızı kan hücreleri Billroth kordlarından geçerken makrofajlar tarafından yakalanıp parçalanıyor (ekstravasküler hemoliz). Sferositozda eritrositler yuvarlak olduğu için koridorlardan geçemiyor — dalakta aşırı yıkım! Splenektomi tedavi!"
+      },
+      {
+        "id": "anat_b1_027",
+        "question": "Tiroid bezinde kalsitonin salgılayan hücreler hangileridir ve embriyolojik kökeni nedir?",
+        "answer": "[[Parafolliküler C hücreleri]] ([[Nöral krest kökenli]])",
+        "explanation": "Parafolliküler C hücreleri (Clear hücreler) tiroid foliküllerinin arasında yer alır ve kalsitonin hormonu salgılar. Kalsitonin kan kalsiyum seviyesini düşürür (PTH'nın antagonisti); osteoklast aktivitesini inhibe eder. C hücreleri nöral krest kökenlidir (ultimobrankial cisimden gelişir). Medüller tiroid karsinomu C hücrelerinden kaynaklanan tümördür; serum kalsitonin yüksekliği ve MEN 2 sendromu ile ilişkilidir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Endokrin",
+          "Histoloji"
+        ],
+        "story_hint": "💡 HİKAYE: Tiroid bezinde foliküllerin arasına gizlenmiş 'C' ajanları var — parafolliküler C hücreleri! Nöral krest kökenli. Kalsitonin salgılayarak kanda kalsiyumu düşürüyorlar — PTH'nın rakibi! Medüller tiroid karsinomu bu C hücrelerinden çıkıyor — serum kalsitonin marker, MEN 2 ile ilişkili!"
+      },
+      {
+        "id": "anat_b1_028",
+        "question": "Böbreküstü bezi korteksinin zona glomerulosa tabakası hangi hormonu salgılar?",
+        "answer": "[[Aldosteron]] ([[Mineralokortikoid]])",
+        "explanation": "Böbreküstü bezi korteksi dıştan içe üç tabakadan oluşur: Zona Glomerulosa (aldosteron - mineralokortikoid), Zona Fasciculata (kortizol - glukokortikoid), Zona Reticularis (androjenler - DHEA). GFR kısaltması ile hatırlanır: 'Salt, Sugar, Sex' (tuz-şeker-seks). Conn sendromunda (primer hiperaldosteronizm) zona glomerulosa adenomu hipertansiyon ve hipokalemiye neden olur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Endokrin"
+        ],
+        "story_hint": "💡 HİKAYE: Böbreküstü korteksi üç katlı bir bina — dıştan içe GFR! Glomerulosa katı aldosteron üretiyor (tuz — Salt), Fasciculata katı kortizol üretiyor (şeker — Sugar), Reticularis katı androjen üretiyor (cinsiyet — Sex). 'Salt, Sugar, Sex' sırası! Conn sendromu = glomerulosa adenomu."
+      },
+      {
+        "id": "anat_b1_029",
+        "question": "Periferik kan yaymasında hipersegmente nötrofiller görülmesi hangi durumu düşündürür?",
+        "answer": "[[Megaloblastik anemi]] ([[Vitamin B12 ve/veya folat eksikliği]])",
+        "explanation": "Normal nötrofillerde çekirdek 2-5 lobludur. 5'ten fazla lob içeren (hipersegmente) nötrofillerin varlığı megaloblastik anemiyi (B12 veya folat eksikliği) kuvvetle düşündürür. DNA sentez bozukluğu nedeniyle nükleer olgunlaşma gecikir ve çekirdek aşırı lobüle olur. Periferik yaymada ayrıca makro-ovalositler, Howell-Jolly cisimcikleri ve anizositoz de görülür. MCV > 100 fL tipik bulgudur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Histoloji",
+          "Hematoloji"
+        ],
+        "story_hint": "💡 HİKAYE: Kan yaymasında nötrofiller normalde 2-5 loblu. Ama bir tanesi 6 loblu göründü — alarm! Hipersegmentasyon = megaloblastik anemi (B12 veya folat eksikliği). DNA sentezi bozulunca çekirdek bölünmeye devam ediyor ama hücre bölünemiyor — lob sayısı artıyor. MCV > 100, makro-ovalositler de var!"
+      }
+    ],
+    "tus_spots": [
+      "Adrenal korteks: Glomerulosa (aldosteron), Fasciculata (kortizol), Reticularis (androjen) — GFR: Salt/Sugar/Sex.",
+      "Adrenal medulla: kromaffin hücreler, nöral krest kökenli → epinefrin/norepinefrin; feokromositoma.",
+      "Dalak beyaz pulpası: immün fonksiyon (T ve B hücreleri); kırmızı pulpası: eritrosit yıkımı.",
+      "Langerhans: Beta (insülin), Alfa (glukagon), Delta (somatostatin).",
+      "Hipersegmente nötrofil: megaloblastik anemi (B12/folat eksikliği) patognomonik bulgusu."
+    ],
+    "clinical_cases": [
+      {
+        "case": "35 yaşında kadın hasta paroksismal hipertansiyon atakları, çarpıntı, baş ağrısı ve terleme ile başvuruyor. 24 saatlik idrarda VMA (vanilmandelik asit) yüksek bulunuyor. BT'de sol böbreküstü bezinde 4 cm kitle saptanıyor. En olası tanı nedir?",
+        "options": [
+          "A) Cushing sendromu",
+          "B) Conn sendromu",
+          "C) Feokromositoma",
+          "D) Adrenokortikal karsinom",
+          "E) Nöroblastom"
+        ],
+        "correct_answer": "C) Feokromositoma",
+        "explanation": "Paroksismal hipertansiyon, çarpıntı, baş ağrısı ve terleme triadı, yüksek idrar VMA ve adrenal kitle feokromositomayı gösterir. Feokromositoma adrenal medullanın kromaffin hücrelerinden kaynaklanan katekolamin salgılayan tümördür. %10 bilateral, %10 malign, %10 ekstraadrenal (paraganglioma). MEN 2A ve 2B, VHL sendromu ile ilişkilidir."
+      },
+      {
+        "case": "62 yaşında erkek hasta halsizlik, makrositik anemi ve periferik yaymada hipersegmente nötrofiller saptanıyor. Serum vitamin B12 düzeyi çok düşük. Bu hastada intrinsik faktör eksikliğinin en olası nedeni nedir?",
+        "options": [
+          "A) Terminal ileum rezeksiyonu",
+          "B) Otoimmün atrofik gastrit",
+          "C) Pankreas yetmezliği",
+          "D) Çölyak hastalığı",
+          "E) Helicobacter pylori enfeksiyonu"
+        ],
+        "correct_answer": "B) Otoimmün atrofik gastrit",
+        "explanation": "B12 eksikliği, makrositik anemi ve hipersegmente nötrofiller megaloblastik anemiyi gösterir. İntrinsik faktör (IF) eksikliğinin en sık nedeni otoimmün atrofik gastrit (pernisiyöz anemi)dir. Parietal hücrelere karşı anti-parietal hücre antikorları ve anti-IF antikorları üretilir. IF olmadan terminal ileumda B12 emilimi olmaz."
+      }
+    ]
+  },
+  {
+    "id": "anat-batch1-012",
+    "subject": "Anatomi",
+    "chapter": "Lenfatik, Vasküler Sistem ve Otonom Sinir Sistemi",
+    "topic": "Lenfatik/Vasküler/Otonom",
+    "sub_topic": "Lenfatik Drenaj, Hematopoez, Sempatik Sistem ve Klinik Anatomi",
+    "content_summary": "Lenfatik sistem, vasküler anatomi, otonom sinir sistemi ve klinik yansımaları. TUS'ta sık sorulan ductus thoracicus, Hesselbach üçgeni, sempatik sistem ve eritropoez konularını kapsar.",
+    "flashcards": [
+      {
+        "id": "anat_030",
+        "question": "Makat (anüs) bölgesinin duyusunu hangi sinir alır?",
+        "answer": "[[Nervus pudendus]]",
+        "explanation": "N. pudendus (S2-S4) perineum bölgesinin ana siniridir. Anal bölge duyusu (N. rectalis/analis inferior), perineal duyu ve motor innervasyon (M. sphincter ani externus, M. sphincter urethrae externus) sağlar. Pudendal sinir bloğu doğum analjezisinde kullanılır. N. pudendus spina ischiadica çevresinde bloke edilir (Alcock kanalında seyreder).",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Lenfatik/Vasküler/Otonom"
+        ],
+        "story_hint": "💡 HİKAYE: N. pudendus perineum bölgesinin tek patronu — S2-S4'ten çıkıyor! Anal bölge duyusu, sfinkter kontrolü hep ondan. Doğumda ağrıyı kesmek için spina ischiadica çevresinde bloke ediliyor (pudendal blok). Alcock kanalında seyrediyor — pudendus = utanma siniri (pudor = utanç)!"
+      },
+      {
+        "id": "anat_054",
+        "question": "Sempatik sistemin nöron gövdeleri medulla spinalis'in neresinde yer alır?",
+        "answer": "[[T1-L2 segmentlerindeki cornu laterale]]",
+        "explanation": "Sempatik sinir sisteminin preganglionik nöron gövdeleri medulla spinalis'in T1-L2 (torakolomber) segmentlerinde columna intermediolateralis'te (cornu laterale) yer alır. Bu nedenle sempatik sisteme 'torakolomber sistem' denir. Preganglionik lifler truncus sympathicus'taki ganglionlarda sinaps yapar. Parasempatik sistemin preganglionik nöronları ise kraniosakral (beyin sapı + S2-S4) yerleşimlidir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Lenfatik/Vasküler/Otonom"
+        ],
+        "story_hint": "💡 HİKAYE: Sempatik sistem torakolomber (T1-L2) — cornu laterale'de oturuyor! 'Fight or flight' (savaş ya da kaç) sistemi. Parasempatik ise kraniosakral (beyin sapı + S2-S4) — 'Rest and digest' (dinlen ve sindir). İki sistem birbirine zıt çalışıyor — denge böyle sağlanıyor!"
+      },
+      {
+        "id": "anat_058",
+        "question": "Ductus thoracicus nereye dökülür?",
+        "answer": "[[Sol v. jugularis interna ile sol v. subclavia'nın birleşme açısına]] ([[Angulus venosus]])",
+        "explanation": "Ductus thoracicus (lenfatik sistemin en büyük kanalı) cisterna chyli'den (L1-L2 hizası) başlar ve sol angulus venosus'a (sol V. jugularis interna + sol V. subclavia birleşimi) açılır. Vücudun sol yarısı ve belden aşağısının tüm lenfatik drenajını toplar. Sağ taraf baş, boyun, kol ve göğüs sağ yarısı ise ductus lymphaticus dexter ile sağ angulus venosus'a drene olur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Lenfatik/Vasküler/Otonom"
+        ],
+        "story_hint": "💡 HİKAYE: Ductus thoracicus lenfatik sistemin ana otoyolu — cisterna chyli'den (L1-L2) başlayıp sol angulus venosus'a döküyor! Vücudun sol yarısını ve belden aşağının TAMAMINI drene ediyor. Sağ taraf baş-boyun-kol-göğüs ise ductus lymphaticus dexter ile sağ tarafa gidiyor."
+      },
+      {
+        "id": "anat_059",
+        "question": "Eritrositlerin yapım (hematopoez) yeri yetişkinde neresidir?",
+        "answer": "[[Kırmızı kemik iliği]]",
+        "explanation": "Yetişkinde hematopoez (kan hücresi yapımı) kırmızı kemik iliğinde gerçekleşir. Sternum, pelvis kemikleri (iliak krest), vertebralar ve kostaların proksimal uçları başlıca hematopoez bölgeleridir. Kemik iliği biyopsisi genellikle spina iliaca posterior superior'dan yapılır. Fetal dönemde hematopoez sırasıyla yolk sac → karaciğer/dalak → kemik iliği şeklinde yer değiştirir. Kronik anemilerde ekstramedüller hematopoez (dalak, karaciğer) gelişebilir.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Lenfatik/Vasküler/Otonom"
+        ],
+        "story_hint": "💡 HİKAYE: Kan hücrelerinin fabrikası yaşla birlikte taşınıyor! Fetal dönemde: önce yolk sac, sonra karaciğer/dalak, sonunda kemik iliği! Yetişkinde sadece kırmızı kemik iliği çalışıyor — sternum, pelvis, vertebralar. Biyopsi spina iliaca posterior superior'dan. Kronik anemide eski fabrikalar tekrar açılıyor — ekstramedüller hematopoez!"
+      },
+      {
+        "id": "anat_092",
+        "question": "Hesselbach üçgeninin sınırları nelerdir?",
+        "answer": "M. rectus abdominis dış kenarı, Lig. inguinale ve [[A. v. epigastrica inferior]]",
+        "explanation": "Hesselbach üçgeni direkt (mediyal) inguinal fıtığın çıktığı bölgedir. Sınırları: medial (M. rectus abdominis lateral kenarı), inferior (lig. inguinale), lateral (A/V epigastrica inferior). Direkt fıtık Hesselbach üçgeninden çıkar ve A. epigastrica inferior'un MEDİALİNDEN geçer. İndirekt fıtık ise A. epigastrica inferior'un LATERALİNDEN (iç inguinal halkadan) çıkar ve spermatik kord ile birlikte inguinal kanaldan geçer.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Lenfatik/Vasküler/Otonom"
+        ],
+        "story_hint": "💡 HİKAYE: Hesselbach üçgeni kasık fıtığının adresi! Üç sınırı var: içte M. rectus abdominis, altta lig. inguinale, dışta A. epigastrica inferior. Direkt fıtık bu üçgenden (medialden) çıkıyor. İndirekt fıtık ise lateralden (iç inguinal halkadan) çıkıp spermatik kordu takip ediyor. Medial = direkt, lateral = indirekt!"
+      },
+      {
+        "id": "anat_b1_030",
+        "question": "Parasempatik sistemin kranial çıkışları (kranial sinirler) hangileridir?",
+        "answer": "[[CN III]], [[CN VII]], [[CN IX]] ve [[CN X]]",
+        "explanation": "Parasempatik sistem kraniosakral yerleşimlidir. Kranial bölümdeki parasempatik lifler CN III (Edinger-Westphal → ganglion ciliare → miozis, akomodasyon), CN VII (superior salivator → ganglion pterygopalatinum ve submandibulare → lakrimal, sublingual, submandibular bez sekresyonu), CN IX (inferior salivator → ganglion oticum → parotis bez sekresyonu) ve CN X (dorsal motor nukleus → toraks ve abdomen organları) ile taşınır. Sakral kısım S2-S4'ten çıkar.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Lenfatik/Vasküler/Otonom"
+        ],
+        "story_hint": "💡 HİKAYE: Parasempatik sistemin kranial elçileri 4 tane — CN III, VII, IX, X! III gözü (miozis, akomodasyon), VII gözyaşı ve tükürük bezlerini, IX parotis bezini, X ise göğüs ve karın organlarını yönetiyor. Sakral kısım (S2-S4) pelvik organları kontrol ediyor. 'Rest and digest' ekibinin tam kadrosu!"
+      },
+      {
+        "id": "anat_b1_031",
+        "question": "Virchow nodülü (Troisier bulgusu) nedir ve klinik önemi nedir?",
+        "answer": "[[Sol supraklaviküler lenf nodu metastazı]], [[Özellikle mide kanseri ile ilişkili]]",
+        "explanation": "Virchow nodülü sol supraklaviküler fossada palpe edilen metastatik lenf nodudur. Ductus thoracicus bu bölgeye drene olduğundan, abdominal maligniteler (özellikle mide kanseri) buraya metastaz yapabilir. Sol supraklaviküler lenfadenopati saptanması (Troisier bulgusu) abdominal malignite araştırmasını zorunlu kılar. Virchow nodülü genellikle sert, ağrısız ve fikse bir lenf nodudur.",
+        "difficulty": "Orta",
+        "tags": [
+          "Anatomi",
+          "Lenfatik/Vasküler/Otonom",
+          "Onkoloji"
+        ],
+        "story_hint": "💡 HİKAYE: Sol supraklaviküler fossada sert, ağrısız bir lenf nodu — Virchow nodülü! Mide kanseri ductus thoracicus yoluyla buraya metastaz yapmış (Troisier bulgusu). Ductus thoracicus sol angulus venosus'a döküldüğü için abdominal kanserler buraya ulaşıyor. Sol supraklaviküler LAP gören doktor hemen karnı araştırmalı!"
+      }
+    ],
+    "tus_spots": [
+      "Ductus thoracicus: sol angulus venosus'a açılır; vücudun sol yarısı + belden aşağının tüm lenfasını toplar.",
+      "Hesselbach üçgeni: M. rectus abdominis, lig. inguinale, A. epigastrica inferior → Direkt fıtık buradan çıkar.",
+      "Sempatik = Torakolomber (T1-L2); Parasempatik = Kraniosakral (CN III, VII, IX, X + S2-S4).",
+      "Virchow nodülü: sol supraklaviküler metastatik LAP → Özellikle mide kanseri düşünülmeli.",
+      "Hematopoez: Fetal: yolk sac → KC/dalak → kemik iliği; Yetişkin: kırmızı kemik iliği (sternum, pelvis, vertebra)."
+    ],
+    "clinical_cases": [
+      {
+        "case": "55 yaşında erkek hasta sol supraklaviküler fossada sert, ağrısız, hareketsiz lenf nodu şişliği ile başvuruyor. Kilo kaybı ve iştahsızlık mevcut. Endoskopide mide antrumunda ülserovejetan kitle saptanıyor. Sol supraklaviküler lenfadenopatinin anatomik açıklaması nedir?",
+        "options": [
+          "A) Direkt lenfatik drenaj yoluyla",
+          "B) Hematojen metastaz",
+          "C) Ductus thoracicus yoluyla sol angulus venosus bölgesine metastaz",
+          "D) Transselomik yayılım",
+          "E) Perinöral invazyon"
+        ],
+        "correct_answer": "C) Ductus thoracicus yoluyla sol angulus venosus bölgesine metastaz",
+        "explanation": "Mide kanserinin sol supraklaviküler lenf noduna metastazı (Virchow nodülü / Troisier bulgusu) ductus thoracicus yoluyla gerçekleşir. Abdominal organlardan lenfatik drenaj ductus thoracicus ile yukarı taşınarak sol angulus venosus'a (sol V. jugularis interna + sol V. subclavia birleşimi) ulaşır. Bu bölgedeki lenf nodlarına retrograd metastaz yapılır."
+      },
+      {
+        "case": "40 yaşında erkek hasta sağ kasık bölgesinde şişlik ile başvuruyor. Muayenede şişlik öksürükle belirginleşiyor. Palpasyonda şişlik A. epigastrica inferior'un medialinden çıkıyor ve doğrudan inguinal kanal arka duvarından geçiyor. Bu hastadaki fıtık tipi nedir?",
+        "options": [
+          "A) İndirekt inguinal fıtık",
+          "B) Direkt inguinal fıtık",
+          "C) Femoral fıtık",
+          "D) Spigelian fıtık",
+          "E) Obturator fıtık"
+        ],
+        "correct_answer": "B) Direkt inguinal fıtık",
+        "explanation": "A. epigastrica inferior'un medialinden çıkan ve inguinal kanalın arka duvarından (Hesselbach üçgeni) geçen fıtık direkt inguinal fıtıktır. Direkt fıtık iç inguinal halkadan geçmez, inguinal kanalın arka duvarının zayıflığından kaynaklanır. İndirekt fıtık ise A. epigastrica inferior'un lateralinden (iç inguinal halkadan) çıkarak spermatik kord boyunca ilerler."
+      }
+    ]
+  }
+]

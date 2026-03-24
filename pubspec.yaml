@@ -30,14 +30,75 @@ dependencies:
 
   # Premium typography
   google_fonts: ^6.2.1
+  image_picker: ^1.2.1
+  path_provider: ^2.1.5
+  audioplayers: ^5.2.1
+
+  # Local notifications for study reminders
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.10.0
+
+  # Firebase Authentication
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.5.1
+  cloud_firestore: ^5.6.5
+  google_sign_in: ^6.2.2
+  sign_in_with_apple: ^6.1.4
+  crypto: ^3.0.6
+
+  # Web platform APIs (Fullscreen, DOM)
+  web: ^1.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
 
+  # Uygulama ikonu olusturucu
+  flutter_launcher_icons: ^0.14.3
+
+  # Native splash screen olusturucu
+  flutter_native_splash: ^2.4.4
+
+# ── Flutter Launcher Icons Konfigürasyonu ──────────────────────────────────────
+# Calistirmak icin: flutter pub run flutter_launcher_icons
+# NOT: Oncelikle assets/icon/app_icon.png (1024x1024, transparan PNG) dosyasini olusturun!
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 23
+  # Android Adaptive Icon (Android 8.0+)
+  adaptive_icon_background: "#0F172A"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+  # Web favicon (opsiyonel)
+  web:
+    generate: false
+
+# ── Flutter Native Splash Konfigürasyonu ───────────────────────────────────────
+# Calistirmak icin: flutter pub run flutter_native_splash:create
+flutter_native_splash:
+  color: "#0F172A"
+  color_dark: "#0F172A"
+  image: "assets/icon/app_icon.png"
+  # Android 12+ splash screen
+  android_12:
+    color: "#0F172A"
+    color_dark: "#0F172A"
+    icon_background_color: "#0F172A"
+    icon_background_color_dark: "#0F172A"
+    image: "assets/icon/app_icon.png"
+  # iOS splash
+  ios: true
+  # Splash ekraninin otomatik kapanmasini Flutter engine handle etsin
+  android: true
+
 flutter:
   uses-material-design: true
 
   assets:
     - assets/data/
+    - assets/icon/
+    - assets/sounds/
+    - assets/hero_login.jpg
+    - assets/hero_splash.jpg

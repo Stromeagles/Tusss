@@ -1,0 +1,611 @@
+{
+  "subject": "Mikrobiyoloji",
+  "chapter": "Bakteriyoloji (Batch 1B) - Gram Negatifler & Zoonozlar",
+  "flashcards": [
+    {
+      "id": "micro_b1b_051",
+      "question": "H. influenzae'nın üremesi için besiyerine eklenmesi gereken X ve V faktörleri nelerdir?",
+      "answer": "X faktörü: [[Hemin]], V faktörü: [[NAD]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Haemophilus"
+      ],
+      "ai_coding": "🤖 Kodlama: X = He-mi-n (10), V = NAD (5). Toplam 15 gün (faktör) tatil!",
+      "story_hint": "💡 HİKAYE: Haemophilus aç bir bakteri, X (hemin) ve V (NAD) vitaminli yemek istiyor. İkisini de bulamazsa üreyemiyor. Çikolata agarda ikisi de var, şölene başlıyor!"
+    },
+    {
+      "id": "micro_b1b_052",
+      "question": "Haemophilus ducreyi'nin neden olduğu ağrılı genital ülser tablosu nedir?",
+      "answer": "[[Yumuşak Şankr]] ([[Şankroid]]).",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Haemophilus"
+      ],
+      "ai_coding": "🤖 Kodlama: Du-creyi = 'Do cry' (Ağlatır/Ağrılı).",
+      "story_hint": "💡 HİKAYE: Ducreyi ('Do cry' = Ağla!) genital bölgede ağrılı bir yara açıyor. Sert şankrın aksine bu yara acı veriyor, hasta ağlıyor. Yumuşak şankr = Ağrılı!"
+    },
+    {
+      "id": "micro_b1b_053",
+      "question": "Bordetella pertussis'in (Boğmaca) lenfositoza yol açan toksini hangisidir?",
+      "answer": "[[Boğmaca Toksini (PT)]] - Adenilat siklazı uyararak [[cAMP]] artırır.",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Boğmaca"
+      ],
+      "ai_coding": "🤖 Kodlama: Boğmaca = B-ol cAMP!",
+      "story_hint": "💡 HİKAYE: Boğmaca toksini lenfositlerin çıkış kapısını kilitliyor, lenfositler kandan çıkamıyor. Kan sayımında lenfositler tavan yapıyor, cAMP düğmesi açık kalıyor!"
+    },
+    {
+      "id": "micro_b1b_054",
+      "question": "Legionella pneumophila enfeksiyonu (Lejyoner Hastalığı) tipik olarak hangi yolla bulaşır?",
+      "answer": "[[Aerosol yoluyla]] (Klima, su sistemleri, soğutma kuleleri).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Legionella"
+      ],
+      "ai_coding": "🤖 Kodlama: L-egionella = L-ava-b-o / Klima suyu.",
+      "story_hint": "💡 HİKAYE: Lejyoner askerlerin toplantı salonundaki klimadan buğu yükseliyor. Bu buğunun içinde Legionella gizli, soluyunca akciğerlere yerleşiyor!"
+    },
+    {
+      "id": "micro_b1b_055",
+      "question": "Brucella türleri arasında insanda en ağır ve en sık kronikleşen enfeksiyonu hangisi yapar?",
+      "answer": "[[B. melitensis]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Brucella"
+      ],
+      "ai_coding": "🤖 Kodlama: M-elitensis = M-e-e (Keçi) ve M-ortal (Ağır).",
+      "story_hint": "💡 HİKAYE: Brucella ailesinin en acımasız üyesi melitensis, keçi peynirinden atlayıp insana geçiyor. Dalgalı ateş yapıp kronikleşiyor, bir türlü gitmek bilmiyor!"
+    },
+    {
+      "id": "micro_b1b_056",
+      "question": "Francisella tularensis'in 'Glandüler' formunda ana klinik bulgu nedir?",
+      "answer": "[[Ağrılı lenfadenopati]] (Genellikle koltuk altı veya boyun).",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Tularemi"
+      ],
+      "ai_coding": "🤖 Kodlama: Tu-L-a-remi = L-enfadenopati.",
+      "story_hint": "💡 HİKAYE: Tularemi tavşanını tutan avcının koltuk altı lenf bezleri şişip ağrıyor. Glandüler form = Lenf bezi şişliği. Tavşan dokunmak tehlikeli!"
+    },
+    {
+      "id": "micro_b1b_057",
+      "question": "Yersinia pestis'in (Veba) boyanmasında görülen karakteristik görüntü?",
+      "answer": "[[Bipolar boyanma]] (Çengelli iğne görüntüsü).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Veba"
+      ],
+      "ai_coding": "🤖 Kodlama: P-estis = P-in (İğne).",
+      "story_hint": "💡 HİKAYE: Veba basili boyandığında iki ucu koyu, ortası açık renk kalıyor. Sanki çengelli iğne gibi! Bu bipolar boyanma vebayı ele veriyor."
+    },
+    {
+      "id": "micro_b1b_058",
+      "question": "Pasteurella multocida hangi besiyerinde üremez, hangisinde ürer?",
+      "answer": "[[MacConkey'de üremez]], Kanlı agarda 'küçük, mukoid koloniler' yapar.",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "Pasteurella"
+      ],
+      "ai_coding": "🤖 Kodlama: P-asteurella = P-et (Evcil hayvan) ve P-embe (MacConkey) sevmez.",
+      "story_hint": "💡 HİKAYE: Pasteurella MacConkey restoranına gidiyor ama kapıdan geri çevriliyor, 'Sen burada üremezsin!' deniyor. Kanlı agar kahvesinde ise küçük mukoid kolonilerle rahatça oturuyor."
+    },
+    {
+      "id": "micro_b1b_059",
+      "question": "E. coli'nin (ETEC) sıcağa duyarlı (LT) ve sıcağa dayanıklı (ST) toksinleri hangi ikincil haberciyi artırır?",
+      "answer": "LT: [[cAMP]], ST: [[cGMP]].",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "E. coli"
+      ],
+      "ai_coding": "🤖 Kodlama: L-A (LT-cAMP) / S-G (ST-cGMP). 'LA - SG' (Uzaklaş/İshal).",
+      "story_hint": "💡 HİKAYE: ETEC'in iki toksini var: LT sıcaktan korkan korkak (cAMP artırır), ST sıcağa dayanan cesur (cGMP artırır). LA-SG diye şifrele: LT-cAMP, ST-cGMP!"
+    },
+    {
+      "id": "micro_b1b_060",
+      "question": "Klebsiella'nın tipik özellikleri nelerdir?",
+      "answer": "[[Hareketsizdir]], [[kapsüllüdür]] ve Laktoz pozitiftir.",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Klebsiella"
+      ],
+      "ai_coding": "🤖 Kodlama: K-lebsiella = K-apsüllü, K-olay üreyen (Laktoz +), K-ıpırdamaz (Hareketsiz).",
+      "story_hint": "💡 HİKAYE: Klebsiella hareketsiz, şişman ve kapsüllü bir bakteri. Yerinden kıpırdamadan laktoz yiyor, mukoid koloniler yapıyor. Tembel ama güçlü!"
+    },
+    {
+      "id": "micro_b1b_061",
+      "question": "Proteus mirabilis'in idrar yolu enfeksiyonlarında en tipik bulgusu nedir?",
+      "answer": "İdrar pH'sını yükselterek ([[Üreaz +]]) [[Staghorn (Geyik boynuzu) taşı]] yapar.",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Proteus"
+      ],
+      "ai_coding": "🤖 Kodlama: P-roteus = P-H artırır.",
+      "story_hint": "💡 HİKAYE: Proteus idrar yollarında üreaz silahıyla pH'ı yükseltiyor. Alkali ortamda taşlar büyüyor, geyik boynuzu şeklinde dev taşlar oluşuyor. Proteus = pH yükselten taş ustası!"
+    },
+    {
+      "id": "micro_b1b_062",
+      "question": "Serratia marcescens'in kültürdeki karakteristik rengi nedir?",
+      "answer": "[[Kırmızı]] ([[Prodigiosin pigmenti]]).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Serratia"
+      ],
+      "ai_coding": "🤖 Kodlama: S-erratia = S-alça (Kırmızı).",
+      "story_hint": "💡 HİKAYE: Serratia kültür tabağına kırmızı salça dökmüş gibi görünüyor. Prodigiosin pigmenti sayesinde kanlı kırmızı koloni yapıyor. Hastanede kırmızı alarm!"
+    },
+    {
+      "id": "micro_b1b_063",
+      "question": "Shigella türlerinde Shiga Toksini (Stx) hangi mekanizmayla protein sentezini durdurur?",
+      "answer": "[[60S ribozomun]] [[28S rRNA]] kısmını parçalayarak.",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "Shigella"
+      ],
+      "ai_coding": "🤖 Kodlama: S-higa = S-eksen (60S üzerine etki, 28 parça).",
+      "story_hint": "💡 HİKAYE: Shiga toksini ribozom fabrikasına gizlice girip, 60S makinesinin 28S parçasını kırıyor. Fabrika duruyor, protein üretimi sıfıra iniyor, hücre ölüyor!"
+    },
+    {
+      "id": "micro_b1b_064",
+      "question": "Salmonella typhi'nin Widal testinde bakılan O ve H antijenleri neyi ifade eder?",
+      "answer": "O: [[Somatik (Hücre duvarı)]], H: [[Kirpik (Flagella)]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Salmonella"
+      ],
+      "ai_coding": "🤖 Kodlama: H = H-areket (Kirpik).",
+      "story_hint": "💡 HİKAYE: Widal testinde O askeri duvar gibi somatik, H askeri hareket eden kirpik gibi. O duvarı sağlam, H koşuyor. Tifo tanısında ikisini de arıyoruz!"
+    },
+    {
+      "id": "micro_b1b_065",
+      "question": "Campylobacter jejuni'nin üremesi için gerekli sıcaklık ve atmosfer koşulu?",
+      "answer": "[[42°C]] ([[Mikroaerofilik ortam]]).",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "Campylobacter"
+      ],
+      "ai_coding": "🤖 Kodlama: C-ampy = C-ehennem (42 derece) sıcaklığı.",
+      "story_hint": "💡 HİKAYE: Campylobacter cehennem sıcağında (42 derece) bile yaşayan ateş sever bir bakteri. Az oksijenli ortamda (mikroaerofilik) en mutlu. Sıcak seven garip yaratık!"
+    },
+    {
+      "id": "micro_b1b_066",
+      "question": "Helicobacter pylori tedavisinde kullanılan ana ajan kombinasyonu (Üçlü Tedavi)?",
+      "answer": "[[PPI]] + [[Klaritromisin]] + [[Amoksisilin]] (veya Metronidazol).",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "H. pylori"
+      ],
+      "ai_coding": "🤖 Kodlama: H-P-A. H-elico P-PI A-moksisilin.",
+      "story_hint": "💡 HİKAYE: H. pylori midede saklanıyor, doktor üçlü ordu gönderiyor: PPI kalkanı, Klaritromisin kılıcı, Amoksisilin mızrağı. Üçü birden saldırınca pylori teslim oluyor!"
+    },
+    {
+      "id": "micro_b1b_067",
+      "question": "Vibrio parahaemolyticus tipik olarak nasıl bulaşır?",
+      "answer": "[[Deniz ürünleri]] (Özellikle çiğ istiridye, karides) tüketimiyle.",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Vibrio"
+      ],
+      "ai_coding": "🤖 Kodlama: P-arahaemolyticus = P-alamut/Balık.",
+      "story_hint": "💡 HİKAYE: Sahilde çiğ istiridye yiyen turist, Vibrio parahaemolyticus ile tanışıyor. Deniz ürünlerinden atlayan bu bakteri kanlı ishale yol açıyor!"
+    },
+    {
+      "id": "micro_b1b_068",
+      "question": "Pseudomonas'ın kistik fibrozisli hastalarda yaptığı kronik kolonizasyonun nedeni nedir?",
+      "answer": "[[Aljinat (Mücoid ekzopolisakkarit)]] üretimi ve [[biyofilm]] oluşumu.",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "Pseudomonas"
+      ],
+      "ai_coding": "🤖 Kodlama: Al-J-inat = İ-natçı koloni.",
+      "story_hint": "💡 HİKAYE: Pseudomonas kistik fibrozisli hastanın akciğerine yerleşip aljinat yapışkanıyla biyofilm kalesi inşa ediyor. Bu yapışkan kale antibiyotikleri içeri sokmuyor!"
+    },
+    {
+      "id": "micro_b1b_069",
+      "question": "Burkholderia cepacia kompleksinin en önemli özelliği?",
+      "answer": "Kistik fibrozisli hastalarda [[CEP (Cepacia Syndrome)]] denilen ağır tabloya yol açması.",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "Burkholderia"
+      ],
+      "ai_coding": "🤖 Kodlama: B-urkholderia = B-etiketi (İyi bilinmeli).",
+      "story_hint": "💡 HİKAYE: Burkholderia cepacia kistik fibrozis hastasının akciğerine girince ani ve ağır bir fırtına (Cepacia Sendromu) koparıyor. Diğer bakterilerden çok daha tehlikeli!"
+    },
+    {
+      "id": "micro_b1b_070",
+      "question": "Stenotrophomonas maltophilia tedavisinde ilk seçenek?",
+      "answer": "[[Trimetoprim-Sülfametoksazol (TMP-SMX)]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Stenotrophomonas"
+      ],
+      "ai_coding": "🤖 Kodlama: S-tenotrophomonas = S-eptrin (TMP-SMX).",
+      "story_hint": "💡 HİKAYE: Stenotrophomonas her antibiyotiğe direnen asi bir bakteri. Tek korkusu TMP-SMX (Septrin). Doktor 'Septrin'i getirin!' diye bağırıyor!"
+    },
+    {
+      "id": "micro_b1b_071",
+      "question": "Acinetobacter baumannii'nin en kritik direnç mekanizması nedir?",
+      "answer": "[[Karbapenemaz üretimi]] ([[OXA-23]] vb.).",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "Acinetobacter"
+      ],
+      "ai_coding": "🤖 Kodlama: A-cinetobacter = A-ğır dirençli (Yoğun bakım).",
+      "story_hint": "💡 HİKAYE: Acinetobacter yoğun bakım ünitesinde OXA-23 zırhını giyip karbapenem silahlarını bile kıran süper dirençli bir canavar. Hastane kabusu!"
+    },
+    {
+      "id": "micro_b1b_072",
+      "question": "Bacteroides fragilis'in kapsül yapısı neye yol açar?",
+      "answer": "[[Abse oluşumunu]] doğrudan tetikler (Immunojeniktir).",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Bacteroides"
+      ],
+      "ai_coding": "🤖 Kodlama: B-ragilis = B-üyük abse.",
+      "story_hint": "💡 HİKAYE: Bacteroides fragilis kapsülünü kalkan gibi kullanıp T-hücrelerini kışkırtıyor. Etrafında dev abse duvarları yükseliyor, içinde cerahat birikiyor!"
+    },
+    {
+      "id": "micro_b1b_073",
+      "question": "Fusobacterium nucleatum'un mikroskobik görüntüsü?",
+      "answer": "[[İğ şeklinde (Mekik)]], ince ve uzun uçlu.",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Anaeroplar"
+      ],
+      "ai_coding": "🤖 Kodlama: F-usobacterium = F-ilit (İnce).",
+      "story_hint": "💡 HİKAYE: Fusobacterium mikroskoptan bakılınca iğ (mekik) şeklinde, iki ucu sivri bir füze gibi görünüyor. İnce ve uzun, ağız florasının sessiz üyesi!"
+    },
+    {
+      "id": "micro_b1b_074",
+      "question": "Prevotella melaninogenica'nın karakteristik kültürel bulgusu?",
+      "answer": "[[Koyu kahverengi-siyah pigment]] (Melanin benzeri).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Anaeroplar"
+      ],
+      "ai_coding": "🤖 Kodlama: M-elaninogenica = M-elanin (Siyah).",
+      "story_hint": "💡 HİKAYE: Prevotella kültür tabağında melanin boyası dökmüş gibi siyah-kahverengi leke bırakıyor. Adı bile melaninogenica: melanin üreten karanlık bakteri!"
+    },
+    {
+      "id": "micro_b1b_075",
+      "question": "Gardnerella vaginalis testi için kullanılan 'Whiff Testi' (Koku Testi) nasıl yapılır?",
+      "answer": "Vajinal akıntıya [[%10 KOH]] eklendiğinde 'bayat balık kokusu' çıkması.",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Gardnerella"
+      ],
+      "ai_coding": "🤖 Kodlama: W-hiff = W-albalık kokusu!",
+      "story_hint": "💡 HİKAYE: Gardnerella vajinal akıntısına KOH damlatılınca balık pazarı kokusu yayılıyor. Whiff testi = Bir koklayınca balık kokusu gelirse Gardnerella kesin!"
+    },
+    {
+      "id": "micro_b1b_076",
+      "question": "C. trachomatis'in L1, L2, L3 serotipleri hangi hastalığı yapar?",
+      "answer": "[[Lenfogranuloma venereum (LGV)]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Chlamydia"
+      ],
+      "ai_coding": "🤖 Kodlama: L = L-enf düğümü büyümesi.",
+      "story_hint": "💡 HİKAYE: Chlamydia L takımı (L1, L2, L3) kasık lenf bezlerini hedef alıyor. Bezler şişip patlayınca 'Lenfogranuloma!' diye bağırılıyor. L = Lenf!"
+    },
+    {
+      "id": "micro_b1b_077",
+      "question": "Chlamydia psittaci insana nasıl bulaşır?",
+      "answer": "[[Kuş (Papağan vb.) dışkılarının]] inhalasyonuyla.",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Chlamydia"
+      ],
+      "ai_coding": "🤖 Kodlama: P-sittaci = P-apağan.",
+      "story_hint": "💡 HİKAYE: Renkli papağanın kafesini temizleyen adam, kuş dışkısı tozunu soluyor. Psittaci papağandan adını almış, akciğerlere havayoluyla giriyor!"
+    },
+    {
+      "id": "micro_b1b_078",
+      "question": "Mycoplasma pneumoniae enfeksiyonunda görülen 'Soğuk Aglütininler' hangi antijene karşıdır?",
+      "answer": "Eritrosit [['I' antijenine]] karşı ([[IgM]] yapısında).",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "Mycoplasma"
+      ],
+      "ai_coding": "🤖 Kodlama: M-ycoplasma = I-antijeni.",
+      "story_hint": "💡 HİKAYE: Mycoplasma hastasının kanı soğutulunca eritrositler birbirine yapışıyor (soğuk aglütinin). I antijeni üzerindeki IgM antikorları soğukta aktifleşiyor!"
+    },
+    {
+      "id": "micro_b1b_079",
+      "question": "Ureaplasma urealyticum genital sistemde neye yol açar?",
+      "answer": "[[Non-gonokoksik üretrit (NGÜ)]] ve taş oluşumu ([[Üreaz +]]).",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Ureaplasma"
+      ],
+      "ai_coding": "🤖 Kodlama: U-re-a-p-l-a-s-m-a = U-reatit ve Taş.",
+      "story_hint": "💡 HİKAYE: Ureaplasma adından anlaşılıyor: Üreyi parçalayan (üreaz+) bakteri. Üretrit yapıyor ve üreaz ile taş oluşturuyor. Üre-aplasma = Üre yıkıcı!"
+    },
+    {
+      "id": "micro_b1b_080",
+      "question": "Treponema pallidum tanısında 'Karanlık Saha Mikroskopisi' yapılamıyorsa ne kullanılır?",
+      "answer": "[[Direkt Floresan Antikor (DFA-TP)]] testi.",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Spiroketler"
+      ],
+      "ai_coding": "🤖 Kodlama: T-reponema = T-eşhis floresanla.",
+      "story_hint": "💡 HİKAYE: Karanlık saha mikroskobu bozulunca doktor floresan el feneri çıkarıyor (DFA-TP). Treponema bu özel ışıkla parlatılınca ele geçiriliyor!"
+    },
+    {
+      "id": "micro_b1b_081",
+      "question": "Sifilizde 'Jarisch-Herxheimer' reaksiyonu nedir?",
+      "answer": "Tedavi ([[Penisilin]]) sonrası bakterilerin hızlı ölümüyle açığa çıkan toksinlere bağlı [[ateş ve şok]] tablosu.",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Sifiliz"
+      ],
+      "ai_coding": "🤖 Kodlama: J-H reaksiyonu = J-andarma baskını (Ani şok).",
+      "story_hint": "💡 HİKAYE: Sifiliz tedavisinde penisilin verilince bakteriler toplu halde ölüyor. Toksinleri patlama gibi açığa çıkıyor, hasta ateşler içinde titriyor. Tedavi paradoksu!"
+    },
+    {
+      "id": "micro_b1b_082",
+      "question": "Borrelia burgdorferi hangi hastalığa yol açar ve bulaştırıcısı nedir?",
+      "answer": "[[Lyme Hastalığı]]; [[Ixodes kenesi]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Borrelia"
+      ],
+      "ai_coding": "🤖 Kodlama: L-Y-M-E = L-yme (Kenenin hediyesi).",
+      "story_hint": "💡 HİKAYE: Ormanda yürüyen adam bacağında Ixodes kenesi buluyor. Birkaç hafta sonra hedef tahtası döküntü çıkıyor. Borrelia = Lyme hastalığı, kene hediyesi!"
+    },
+    {
+      "id": "micro_b1b_083",
+      "question": "Bartonella henselae hangi tabloya yol açar?",
+      "answer": "[[Kedi Tırmalaması Hastalığı]] (ve HIV+'lerde [[Basiller Anjiyomatoz]]).",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Bartonella"
+      ],
+      "ai_coding": "🤖 Kodlama: H-enselae = H-ayvan tırmalaması.",
+      "story_hint": "💡 HİKAYE: Kedi sahiplenen çocuğun kolu tırmalanıyor, birkaç gün sonra koltukaltı lenf bezi şişiyor. Bartonella henselae kedinin pençesinde gizli!"
+    },
+    {
+      "id": "micro_b1b_084",
+      "question": "Cary-Blair besiyeri ne için kullanılır?",
+      "answer": "Gaita örneklerinin ([[Vibrio]], [[Salmonella]] vb.) transportu için.",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "Transport"
+      ],
+      "ai_coding": "🤖 Kodlama: C-ary-B-lair = G-aita-T-ransport.",
+      "story_hint": "💡 HİKAYE: Gaita numunesi uzun yolculuğa çıkıyor, Cary-Blair kutusuna konuyor. Bu özel kutu Vibrio ve Salmonella'yı canlı tutuyor, laboratuvara sağ salim ulaştırıyor!"
+    },
+    {
+      "id": "micro_b1b_085",
+      "question": "Löwenstein-Jensen besiyeri hangi etken için karakteristiktir?",
+      "answer": "[[Mycobacterium tuberculosis]] (Tüberküloz).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Tüberküloz"
+      ],
+      "ai_coding": "🤖 Kodlama: L-öwenstein = T-bc.",
+      "story_hint": "💡 HİKAYE: Tüberküloz basili Löwenstein-Jensen dağında yavaş yavaş tırmanıyor. 4-8 hafta sonra nihayet zirveye ulaşıp karnabahar gibi koloni yapıyor!"
+    },
+    {
+      "id": "micro_b1b_086",
+      "question": "Bacteroides bile-esculin agar (BBE) hangi tür için seçicidir?",
+      "answer": "[[Bacteroides fragilis]] grubu.",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "Anaeroplar"
+      ],
+      "ai_coding": "🤖 Kodlama: B-B-E = B-acteroides.",
+      "story_hint": "💡 HİKAYE: Bacteroides fragilis BBE restoranına özel davetli. Safra ve eskülin karışımında rahatça yaşayabilen tek anaerop. BBE = Bacteroides'in özel mekanı!"
+    },
+    {
+      "id": "micro_b1b_087",
+      "question": "Thayer-Martin besiyeri hangi etkenleri izole etmek için kullanılır?",
+      "answer": "Patojen [[Neisseria]] ([[Gonokok ve Meningokok]]).",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Neisseria"
+      ],
+      "ai_coding": "🤖 Kodlama: T-M = N-eisseria.",
+      "story_hint": "💡 HİKAYE: Thayer-Martin besiyeri Neisseria'nın özel VIP kulübü. Antibiyotik korumalarıyla diğer bakterileri kapıda durdurup sadece gonok ve meningokoku içeri alıyor!"
+    },
+    {
+      "id": "micro_b1b_088",
+      "question": "Tellüritli besiyeri (Tinsdale) hangisi için tercih edilir?",
+      "answer": "[[Corynebacterium diphtheriae]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Difteri"
+      ],
+      "ai_coding": "🤖 Kodlama: T-ellürit = D-ifteri.",
+      "story_hint": "💡 HİKAYE: Tellüritli besiyeri siyah bir sahne kuruyor, difteri basili bu sahnede siyah koloni yaparak şov yapıyor. Tinsdale sahnesinin yıldızı Corynebacterium!"
+    },
+    {
+      "id": "micro_b1b_089",
+      "question": "Eaton Agarı hangi etkenin üretilmesi için spesifiktir?",
+      "answer": "[[Mycoplasma pneumoniae]].",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "Mycoplasma"
+      ],
+      "ai_coding": "🤖 Kodlama: E-aton = M-ycoplasma.",
+      "story_hint": "💡 HİKAYE: Mycoplasma duvarsız, çıplak bir bakteri. Eaton Agarı özel bir yuva gibi, sadece bu çıplak bakteriyi barındırabiliyor. Sahipsiz Mycoplasma'nın tek evi!"
+    },
+    {
+      "id": "micro_b1b_090",
+      "question": "Tellüridli kanlı agar (Tellurite agar) üzerinde 'potasyum tellüridi' indirgeyerek siyah koloni yapan?",
+      "answer": "[[C. diphtheriae]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Difteri"
+      ],
+      "ai_coding": "🤖 Kodlama: T-ellürid = Siyah koloni.",
+      "story_hint": "💡 HİKAYE: Difteri basili tellüridi indirgeyip siyah bir bayrak diktiyor. Kültür tabağında siyah koloni = 'Ben buradayım!' sinyali veriyor!"
+    },
+    {
+      "id": "micro_b1b_091",
+      "question": "Streptococcus pneumoniae'de 'Quellung Reaksiyonu' (Kapsül Şişme) neyi gösterir?",
+      "answer": "[[Kapsül varlığını]] ve [[serotipini]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Pnömokok"
+      ],
+      "ai_coding": "🤖 Kodlama: Q-uellung = Q-apsül.",
+      "story_hint": "💡 HİKAYE: Pnömokok antiserumla karşılaşınca kapsülü balon gibi şişiyor (Quellung). Doktor mikroskoptan bakıp 'Kapsül şişti, pnömokok buldum!' diyor. Quellung = Şişme!"
+    },
+    {
+      "id": "micro_b1b_092",
+      "question": "Staphylococcus epidermidis'in IV kateter vb. cihazlara yapışmasını sağlayan ana faktör?",
+      "answer": "[[Slaym (Biyofilm) tabakası]].",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "KNS"
+      ],
+      "ai_coding": "🤖 Kodlama: E-pidermidis = S-laym tabakası.",
+      "story_hint": "💡 HİKAYE: S. epidermidis hastanede IV katetere slaym yapıştırıcısıyla tutunuyor. Bu yapışkan biyofilm tabakası antibiyotikleri geçirmiyor. Kateter = Epidermidis'in evi!"
+    },
+    {
+      "id": "micro_b1b_093",
+      "question": "A grubu beta hemolitik streptokokların (S. pyogenes) en önemli 'yayıcı' enzimi?",
+      "answer": "[[Hiyaluronidaz]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Bakteriyoloji",
+        "Streptokok"
+      ],
+      "ai_coding": "🤖 Kodlama: H-iyaluronidaz = H-er yere yayan.",
+      "story_hint": "💡 HİKAYE: S. pyogenes hiyaluronidaz makasıyla doku aralarındaki jeli (hyalüronik asit) kesiyor. Yollar açılıyor, bakteri her yöne yayılıyor!"
+    },
+    {
+      "id": "micro_b1b_094",
+      "question": "Bakteriyel menenjit (Yenidoğan sonrası) tanısında BOS'ta ne görülür?",
+      "answer": "[[Düşük Glikoz]], [[Yüksek Protein]], Lökositoz (PNL hakimiyeti).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Menenjit"
+      ],
+      "ai_coding": "🤖 Kodlama: B-akteri = G-likoz yiyen (Düşük).",
+      "story_hint": "💡 HİKAYE: BOS'taki bakteriler şeker (glikoz) yemeye bayılıyor, hepsini tüketiyor. Protein artıyor çünkü zar hasar görüyor. Düşük glikoz + yüksek protein = Bakteriyel menenjit!"
+    },
+    {
+      "id": "micro_b1b_095",
+      "question": "Weil-Felix reaksiyonu hangi hastalık grubunun tanısında kullanılır (Proteus OX antijenleri kullanılır)?",
+      "answer": "[[Rickettsia]] (Riketsiyozlar).",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "Rickettsia"
+      ],
+      "ai_coding": "🤖 Kodlama: W-E-İ-L = R-İ-K-E-T-S-İ-Y-A.",
+      "story_hint": "💡 HİKAYE: Weil ve Felix, Proteus bakterisinin OX antijenlerini kullanarak Rickettsia'yı yakalıyor. Proteus'un antijenleri Rickettsia'ya benziyor, bu çapraz reaksiyon tanı koydurıyor!"
+    },
+    {
+      "id": "micro_b1b_096",
+      "question": "Ureaplasma'yı Mycoplasma'dan ayıran en önemli biyokimyasal özellik?",
+      "answer": "[[Üreaz aktivitesi]] pozitifliği.",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Ureaplasma"
+      ],
+      "ai_coding": "🤖 Kodlama: U-re-a = Ü-re.",
+      "story_hint": "💡 HİKAYE: Ureaplasma adını üreazdan alıyor. Mycoplasma'dan tek farkı: Üreyi parçalayabilmesi. İsim sana her şeyi söylüyor: Ure-aplasma = Üreaz var!"
+    },
+    {
+      "id": "micro_b1b_097",
+      "question": "BOS'ta Gram negatif diplokok görülürse ilk akla gelen etken?",
+      "answer": "[[N. meningitidis]] ([[Meningokok]]).",
+      "difficulty": "Kolay",
+      "tags": [
+        "Bakteriyoloji",
+        "Neisseria"
+      ],
+      "ai_coding": "🤖 Kodlama: D-iplokok = M-eningokok.",
+      "story_hint": "💡 HİKAYE: BOS örneğinde Gram negatif, ikili dizilmiş (diplokok) bakteriler görülüyor. Meningokok alarm! Beyin zarlarının en azılı düşmanı yakalandı!"
+    },
+    {
+      "id": "micro_b1b_098",
+      "question": "C. perfringens'in 'Nagler Reaksiyonu' neyi saptar?",
+      "answer": "[[Alfa-toksin (Lesitinaz)]] aktivitesini.",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "C. perfringens"
+      ],
+      "ai_coding": "🤖 Kodlama: N-agler = L-esitinaz.",
+      "story_hint": "💡 HİKAYE: Nagler yumurta sarısı agar tabağında C. perfringens'i arıyor. Alfa-toksin (lesitinaz) yumurta sarısındaki lesitini parçalayınca etrafta opak halka çıkıyor!"
+    },
+    {
+      "id": "micro_b1b_099",
+      "question": "Burkholderia pseudomallei'nin neden olduğu hastalık?",
+      "answer": "[[Melioidoz]].",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "Burkholderia"
+      ],
+      "ai_coding": "🤖 Kodlama: P-seudomallei = M-elioidoz.",
+      "story_hint": "💡 HİKAYE: Güneydoğu Asya'da topraktan bulaşan pseudomallei, melioidoz denen gizli hastalığı yapıyor. 'Vietnam'ın saatli bombası' lakabıyla anılıyor!"
+    },
+    {
+      "id": "micro_b1b_100",
+      "question": "Streptococcus bovis (S. gallolyticus) bakteriyemisi saptanırsa ne araştırılmalıdır?",
+      "answer": "[[Kolon Kanseri]] (Gastrointestinal maligniteler).",
+      "difficulty": "Zor",
+      "tags": [
+        "Bakteriyoloji",
+        "S. bovis"
+      ],
+      "ai_coding": "🤖 Kodlama: B-ovis = B-ağırsak (Malignite).",
+      "story_hint": "💡 HİKAYE: S. bovis kanında yakalanan hastaya doktor 'Hemen kolonoskopi yapalım!' diyor. Bu bakteri bağırsakta gizli bir kanser olduğunu haber veriyor. Bovis = Bağırsak kanseri habercisi!"
+    }
+  ],
+  "id": "microbiology_batch1B-topic-0",
+  "topic": "Bakteriyoloji (Batch 1B) - Gram Negatifler & Zoonozlar",
+  "sub_topic": "Bakteriyoloji (Batch 1B) - Gram Negatifler & Zoonozlar",
+  "content_summary": "",
+  "tus_spots": []
+}

@@ -10,12 +10,14 @@
       {
         "id": "fc-patho-hemo-100",
         "question": "Nefrotik sendromda ödemin temel mekanizması nedir?",
-        "answer": "Plazma onkotik basıncının azalması (albumin kaybına bağlı)."
+        "answer": "Plazma onkotik basıncının azalması (albumin kaybına bağlı).",
+        "story_hint": "💡 HİKAYE: Nefrotik sendromda böbrekler 'elek' gibi protein kaçırır — albumin kaybı onkotik basıncı düşürür, su damardan interstisyuma sızar. Sanki su deposunun kapağı gevşemiş, sıvı dışarı taşıyor!"
       },
       {
         "id": "fc-patho-hemo-101",
         "question": "Sol kalp yetmezliğinde akciğerlerde görülen karakteristik makrofajlara ne denir?",
-        "answer": "Kalp hatası hücreleri (hemosiderin yüklü makrofajlar)."
+        "answer": "Kalp hatası hücreleri (hemosiderin yüklü makrofajlar).",
+        "story_hint": "💡 HİKAYE: Sol kalp yetmezliğinde akciğerler su basar, eritrositler alveollere sızar. Makrofajlar bu eritrositleri yutar ve hemosiderin biriktirerek kahverengi 'kalp hatası hücreleri'ne dönüşür — akciğerin paslı temizlikçileri!"
       }
     ],
     "tus_spots": [
@@ -34,12 +36,14 @@
       {
         "id": "fc-patho-hemo-110",
         "question": "Trombusun intravital (sağ iken) oluştuğunu gösteren mikroskopik bulgu nedir?",
-        "answer": "Zahn çizgileri (Laminasyon gösteren fibrin ve platelet tabakaları)."
+        "answer": "Zahn çizgileri (Laminasyon gösteren fibrin ve platelet tabakaları).",
+        "story_hint": "💡 HİKAYE: Zahn çizgileri trombusun 'hayattayken' oluştuğunun kanıtıdır — fibrin ve platelet tabakaları pasta dilimi gibi katman katman dizilir (laminasyon). Postmortem pıhtılarda bu düzen yoktur — homojen, jelöz kıvamda olurlar."
       },
       {
         "id": "fc-patho-hemo-111",
         "question": "Kemik kırıkları sonrası görülen, solunum yetmezliği ve peteşilerle karakterize emboli tipi?",
-        "answer": "Yağ embolisi."
+        "answer": "Yağ embolisi.",
+        "story_hint": "💡 HİKAYE: Kemik kırıldı, ilik yağları kana karıştı — küçük yağ damlacıkları akciğere gidip kapillerleri tıkadı. Solunum yetmezliği + ciltte peteşiler = yağ embolisi. Kırık + nefes darlığı + peteşi üçlüsü sorularda alarm veriyor!"
       }
     ],
     "tus_spots": [
@@ -58,12 +62,14 @@
       {
         "id": "fc-patho-imm-120",
         "question": "Arthus reaksiyonu hangi tip hipersensitivitedir?",
-        "answer": "Tip III (Lokalize immün kompleks vasküliti)."
+        "answer": "Tip III (Lokalize immün kompleks vasküliti).",
+        "story_hint": "💡 HİKAYE: Arthus reaksiyonunda antijen deriye enjekte edilir, bol miktarda antikor zaten kanda bekler — ikisi buluşup immün kompleks oluşturur ve damar duvarını yakalar (lokalize vaskülit). Tip III'ün küçük ölçekli deneyi!"
       },
       {
         "id": "fc-patho-imm-121",
         "question": "Granülom oluşumu hangi tip hipersensitiviteye dayanır?",
-        "answer": "Tip IV (Gecikmiş tip)."
+        "answer": "Tip IV (Gecikmiş tip).",
+        "story_hint": "💡 HİKAYE: Granülom oluşumunda CD4 T hücreleri IFN-gamma ile makrofajları çağırır, makrofajlar epiteloid hücrelere dönüşüp dev hücre olur. Bu organizasyon haftalar sürer — gecikmiş tip (Tip IV) hipersensitivitenin en sofistike versiyonu!"
       }
     ],
     "tus_spots": [
@@ -82,12 +88,14 @@
       {
         "id": "fc-patho-imm-130",
         "question": "SLE için en duyarlı (tarama) antikor hangisidir?",
-        "answer": "ANA (Antinükleer antikor)."
+        "answer": "ANA (Antinükleer antikor).",
+        "story_hint": "💡 HİKAYE: ANA testi SLE'nin 'kapı zili'dir — hemen hemen her SLE hastasında çalar (>%95 duyarlılık). Ama başka otoimmün hastalıklarda da çalabilir. Tarama için ideal ama özgüllüğü düşük!"
       },
       {
         "id": "fc-patho-imm-131",
         "question": "SLE için en spesifik (tanı koydurucu) antikor hangisidir?",
-        "answer": "Anti-dsDNA ve Anti-Smith."
+        "answer": "Anti-dsDNA ve Anti-Smith.",
+        "story_hint": "💡 HİKAYE: Anti-dsDNA lupus böbreğini, Anti-Smith lupus kimliğini tanır! İkisi de SLE'ye son derece spesifik — başka hastalıklarda nadiren pozitif çıkar. Tanı koydurucu 'altın anahtar' ikili."
       }
     ],
     "tus_spots": [
@@ -106,7 +114,8 @@
       {
         "id": "fc-patho-imm-140",
         "question": "Amiloidin en spesifik boyası ve polarize mikroskopta verdiği röfle nedir?",
-        "answer": "Kongored (Congo red) boyası; polarize ışıkta elma yeşili röfle verir."
+        "answer": "Kongored (Congo red) boyası; polarize ışıkta elma yeşili röfle verir.",
+        "story_hint": "💡 HİKAYE: Amiloidi teşhis etmek için Congo kırmızısı boyası kullanılır — normal ışıkta pembe-kırmızı, polarize ışıkta elma yeşili çift kırıcılık (birefringence) gösterir. Sanki amiloid gece karanlığında yeşil parıldayan bir hayalet!"
       }
     ],
     "tus_spots": [

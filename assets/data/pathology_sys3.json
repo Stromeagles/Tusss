@@ -10,12 +10,14 @@
       {
         "id": "fc-patho-sys3-400",
         "question": "Erişkinlerde en sık görülen nefrotik sendrom tablosu hangisidir?",
-        "answer": "Fokal Segmental Glomerüloskleroz (FSGS) — (Özellikle IV ilaç bağımlılığı ve HIV ile ilişkili)."
+        "answer": "Fokal Segmental Glomerüloskleroz (FSGS) — (Özellikle IV ilaç bağımlılığı ve HIV ile ilişkili).",
+        "story_hint": "💡 HİKAYE: FSGS erişkinlerde nefrotik sendromun en sık nedenidir — özellikle HIV ve IV ilaç bağımlılarında. 'Fokal' (bazı glomerüller) + 'Segmental' (glomerülün bir kısmı) = kısmi tahribat. Steroide yanıt FSGS'de MCD kadar iyi değildir."
       },
       {
         "id": "fc-patho-sys3-401",
         "question": "En sık görülen primer böbrek karsinomu hangisidir ve hangi gen mutasyonu ile ilişkilidir?",
-        "answer": "Bclear Cell (Berrak Hücreli) Karsinom; VHL (Von Hippel-Lindau) gen mutasyonu."
+        "answer": "Bclear Cell (Berrak Hücreli) Karsinom; VHL (Von Hippel-Lindau) gen mutasyonu.",
+        "story_hint": "💡 HİKAYE: Berrak hücreli karsinom böbreğin 'kristal' tümörüdür — sitoplazmadaki lipid ve glikojen hücreyi berrak gösterir. VHL geni (3p) bozulunca HIF birikir → VEGF artar → tümör damarlanması patlar. Von Hippel-Lindau sendromunda bilateral ve erken!"
       }
     ],
     "tus_spots": [
@@ -34,12 +36,14 @@
       {
         "id": "fc-patho-sys3-410",
         "question": "Memenin en sık görülen benign tümörü hangisidir?",
-        "answer": "Fibroadenom."
+        "answer": "Fibroadenom.",
+        "story_hint": "💡 HİKAYE: Fibroadenom genç kadınlarda en sık görülen meme kitlesidir — düzgün sınırlı, hareketli, kauçuk kıvamında ('fare' gibi kayar). Östrojen etkisiyle büyür, gebelikte artar. Benign olmasına rağmen kontrol önemli!"
       },
       {
         "id": "fc-patho-sys3-411",
         "question": "Karnabahar görünümlü, HPV 6 ve 11 ile ilişkili siğillere ne denir?",
-        "answer": "Kondiloma Akuminatum."
+        "answer": "Kondiloma Akuminatum.",
+        "story_hint": "💡 HİKAYE: Kondiloma akuminatum = genital siğil. HPV 6 ve 11 düşük riskli tiplerin eseri — karnabahar gibi büyür! Yüksek riskli HPV (16, 18) ise displazi ve kanser yapar. 6-11 = siğil, 16-18 = kanser!"
       }
     ],
     "tus_spots": [

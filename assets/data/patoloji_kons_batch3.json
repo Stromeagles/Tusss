@@ -1,0 +1,1121 @@
+{
+  "subject": "Patoloji",
+  "chapter": "Patoloji - Konsolide (Batch 3)",
+  "flashcards": [
+    {
+      "id": "patk_221",
+      "question": "Ağızdan anüse kadar GIS'in her yerini 'patchy/atlamalı' tutabilen ve tüm duvarı (transmural) inflamasyon yapan hastalık nedir?",
+      "answer": "[[Crohn hastalığı]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Bir kurbağa (CROHn) bağırsakların üzerinde atlaya atlaya (patchy/atlamalı) ilerliyor ve her atladığı yerde duvarın tamamını delip geçiyor (transmural). Ağızdan başlayıp anüse kadar her yere zıplıyor — hiçbir yer güvende değil!"
+    },
+    {
+      "id": "patk_222",
+      "question": "Crohn hastalığında en sık tutulan bölge neresidir?",
+      "answer": "[[Terminal ileum]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Atlayan kurbağa (Crohn) en çok terminal (son durak) ileumda dinleniyor. Bağırsak yolculuğunun 'terminali' yani son durağı onun favori konaklama yeri — her seferinde oraya atlıyor."
+    },
+    {
+      "id": "patk_223",
+      "question": "İnflamatuar bağırsak hastalıklarından sadece kalını barsağı tutan, mukoza ve submukozada inflamasyon/pseüdo poliplerle giden hastalık nedir?",
+      "answer": "[[Ülseratif kolit]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Ülseratif kolit bir 'ev kedisi' gibi — sadece kalın bağırsağın içinde kalır, dışarı çıkmaz (mukoza-submukoza sınırlı). Crohn'un aksine atlamaz, sürekli ve yüzeysel tutar. Kalın bağırsak duvarında sahte polip şapkaları takar."
+    },
+    {
+      "id": "patk_224",
+      "question": "Toksik megakolon en ciddi hangi hastalıkla ilişkilidir?",
+      "answer": "[[Ülseratif kolit]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Ülseratif kolit kedisi o kadar kalın bağırsakta şişirdi ki, kolon balon gibi dev hale geldi — TOKSİK MEGAKOLON! Kalın bağırsağı sadece tutan hastalık, onu en çok da şişirebilen hastalık."
+    },
+    {
+      "id": "patk_225",
+      "question": "Bağırsak anstriüpsiyonu olarak infantil çağda barsağın mekoniumu atamamasına ve agangliyonik segmentleşmesine ne ad verilir?",
+      "answer": "[[Hirschsprung Hastalığı]] ([[Aganglionik megakolon]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Bebek HIRSCH (geyik) gibi koca gözlerle bakıyor ama kakasını yapamıyor! Çünkü bağırsağındaki sinir hücreleri (ganglion) hiç gelmemiş — a-ganglionik. Sinirler olmayınca bağırsak hareket etmiyor ve şişiyor: megakolon."
+    },
+    {
+      "id": "patk_226",
+      "question": "Kolonda adenomatöz poliplere ek olarak yüz osteomları, epidermal kist, tiroid kanseri ile giden genetik sendrom hangisidir?",
+      "answer": "[[Gardner Sendromu]] ([[APC]] geni mutasyon varyantı)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: GARDNER (bahçıvan) bahçesinde her yere polip ekiyor — kolona, yüze kemik (osteom), deriye kist ve tiroide bile! APC tohumları mutasyonlu olduğu için her yer tümörle doluyor."
+    },
+    {
+      "id": "patk_227",
+      "question": "Mukoza boyunca binlerce polip görülen, kolon kanseri riskinin 40'lı yaşlarda %100'e ulaştığı hastalık nedir?",
+      "answer": "[[Ailesel Adenomatöz Polipozis]] ([[FAP]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: FAP ailesi her nesilde kolonu binlerce poliple dolduran lanetli bir sülale. 40 yaşına gelince kolon kanseri %100 kaçınılmaz — adeta bir kehanet. Aileden kalıtılan APC genindeki bozukluk, kolonu polip tarlasına çeviriyor."
+    },
+    {
+      "id": "patk_228",
+      "question": "Gastrointestinal hamartomatöz polipler, ağız mukozasında hiperpegmentasyon ve kanser riski artışıyla giden ozzotomal dominant sendrom nedir?",
+      "answer": "[[Peutz-Jeghers Sendromu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: PEUTZ-JEGHERS — 'Dudaklarda LEKE, bağırsakta POLIP.' Hastaların dudaklarındaki kahverengi benekleri gördüğünüzde hemen bağırsaklarındaki hamartomatöz polipleri düşünün. Dominant bir aile mirası — hem güzellik lekesi hem polip hediyesi."
+    },
+    {
+      "id": "patk_229",
+      "question": "Karaciğer yetmezliğinin en sık nedeni nedir?",
+      "answer": "[[Siroz]] ve viral hepatitler",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Karaciğer bir fabrika; SİROZ onu yıllarca pas ve fibrozla tıkayan düşman. Viral hepatitler de yanına gelince fabrika tamamen kapanıyor. En büyük yıkımı bu ikili yapıyor — karaciğer yetmezliğinin bir numaralı sebebi."
+    },
+    {
+      "id": "patk_230",
+      "question": "Viral hepatitlerde karaciğer biyopsisinde görülen, Councilman cisimciği adı verilen yapı aslında nedir?",
+      "answer": "[[Apoptoz]]a uğramış, büzülmüş asidofilik hepatosit",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: COUNCILMAN bir 'meclis üyesi' (council member) — karaciğer meclisinde ölüm kararı almış ve intihar etmiş (apoptoz) bir hepatosit. Büzülmüş, asidofilik pembeleşmiş haliyle mecliste tek başına oturuyor."
+    },
+    {
+      "id": "patk_231",
+      "question": "Hepatit B virolojik serolojisinde tam iyileşmeyi (Bağışık ve HBsAg negatif) gösteren antikor hangisidir?",
+      "answer": "[[Anti-HBs]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Anti-HBs = 'Savaşı KAZANDIK' bayrağı. HBsAg (düşman yüzey antijeni) kayboldu, onun yerine Anti-HBs (zafer antikorları) geldi. Bu antikor tam bağışıklığın kanıtı — aşı da bunu üretiyor."
+    },
+    {
+      "id": "patk_232",
+      "question": "Wilson Hastalığında biriken mineral nedir ve gözdeki patognomonik lekesi ne ad alır?",
+      "answer": "Bakır (Cu), [[Kayser-Fleischer halkası]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: WILSON adlı bakırcı usta, vücutta biriktirdiği bakırı (Cu) gözünün etrafına halka olarak takıyor — KAYSER-FLEISCHER halkası. Yeşilimsi-kahverengi bu halka, bakırın kornea çevresindeki birikim yüzüğü."
+    },
+    {
+      "id": "patk_233",
+      "question": "Demir birikimi ile giden genetik hastalık olan Hemokromatoziste klasik triadı nedir?",
+      "answer": "[[Siroz]], Diyabet (\"[[Bronz diyabet]]\") ve Ciltte hiperpigmentasyon",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Demir Adam (Iron Man) vücuduna çok demir yükledi: karaciğeri sirotik oldu, pankreası bozulup diyabet yaptı, cildi bronz rengine döndü. 'BRONZ DİYABET' — demir pas rengi ciltle + şeker hastalığı birleşimi."
+    },
+    {
+      "id": "patk_234",
+      "question": "Oral kontraseptif kullanımı ile güçlü ilişkili olan benign karaciğer tümörü hangisidir?",
+      "answer": "[[Hepatik adenom]] (Rüptür riski vardır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Doğum kontrol hapı kullanan genç kadın, karaciğerinde bir 'hediye paketi' (adenom) büyütüyor. Ama bu paket tehlikeli — rüptür olabilir ve kanayabilir! OKS = Hepatik Adenom, patlarsa acil durum."
+    },
+    {
+      "id": "patk_235",
+      "question": "Hepatoselüler karsinomda (HCC) etyolojik risk faktörleri nelerdir?",
+      "answer": "Kronik HBV/HCV [[enfeksiyon]]u, Aflatoksin maruziyeti, [[Siroz]], [[Hemokromatoz]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: HCC'nin dört düşmanı: Hepatit B/C virüsleri (kronik saldırganlar), Aflatoksin (küflü fıstıktaki gizli zehir), Siroz (yıllarca birikmiş hasar) ve Hemokromatoz (demir yükü). Bu dörtlü karaciğer kanserinin suç ortakları."
+    },
+    {
+      "id": "patk_236",
+      "question": "Safra taşı gelişiminde asıl sorumlu patoloji nedir?",
+      "answer": "Safranın [[kolesterol]] veya [[bilirubin]] ile aşırı doygunluğu (Bile supersaturation)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Safra bir çay bardağı, kolesterol/bilirubin ise şeker. Çok fazla şeker koyarsan çözünmez ve dibe çöker — taş oluşur! Supersatürasyon = bardak taştı, kristaller oluştu."
+    },
+    {
+      "id": "patk_237",
+      "question": "Akut kolesistit (kalkülöz tip) şikayeti ile gelen bir hastada en sık izole edilen bakteri hangisidir?",
+      "answer": "[[E. coli]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Safra kesesini taşla tıkayan hastanın kapısını ilk çalan bakteri E. coli — bağırsaktan komşu olan bu bakteri, fırsatçı bir şekilde tıkanmış keseye sızıyor. GIS enfeksiyonlarının 'her yerde karşına çıkan' klasik suçlusu."
+    },
+    {
+      "id": "patk_238",
+      "question": "Kronik kolesistit şüphesinde kese duvarının kalınlaşması, kasanın epitelinin duvar dışına uzanması ile oluşan çıkmazlara ne ad verilir?",
+      "answer": "[[Rokitansky-Aschoff sinüsleri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kronik iltihaptan bıkan safra kesesi mukozası dışarı kaçmak istiyor — duvarın içine doğru tüneller kazıyor. Bu çıkmaz sokaklara ROKİTANSKY-ASCHOFF sinüsleri deniyor. Roket gibi fırlamış mukoza, duvar dışına uzanıyor."
+    },
+    {
+      "id": "patk_239",
+      "question": "Nefrotik sendromların ortak belirleyici klasik klinik tablosu nedir?",
+      "answer": "Masif [[proteinüri]] (>3.5g/gün), [[hipoalbuminemi]], yaygın [[ödem]] ve [[hiperlipidemi]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Nefrotik sendrom = böbrekteki süzgeç DELİNDİ! Protein sel gibi idrarla akıyor (>3.5g), kanda albumin düşüyor, onkotik basınç kalmayınca vücut şişiyor (ödem) ve karaciğer telafi için yağ üretiyor (hiperlipidemi). PÖH kısaltması: Proteinüri-Ödem-Hiperlipidemi."
+    },
+    {
+      "id": "patk_240",
+      "question": "Çocuklarda nefrotik sendromun en sık nedeni hangisidir?",
+      "answer": "[[Minimal Değişiklik Hastalığı]] (Işık mikroskobunda glomerüller normal, elektron mikroskobunda [[podosit]] ayakçıkları silinmiş)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Çocuğun böbreğine ışık mikroskobunda baktın — 'hiçbir şey yok, MİNİMAL!' dedin. Ama elektron mikroskopla yaklaşınca podositlerin ayakları ezilmiş gördün. Minimal değişiklik = göze görünmeyen gizli hasar, çocuğun en sık nefrotik sebebi."
+    },
+    {
+      "id": "patk_241",
+      "question": "Yetişkinlerde nefrotik sendromun en sık sebebi hangisidir?",
+      "answer": "[[Fokal Segmental Glomerüloskleroz]] ([[FSGS]]) ve Membranöz Nefropati",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Yetişkinde böbreğin bazı glomerülleri (fokal) ve bazı kısımları (segmental) sertleşip skleroza gidiyor — FSGS. Membranöz nefropati de bazal membranı kalınlaştırıyor. İkisi yetişkin nefrotik sendromun baş düşmanları."
+    },
+    {
+      "id": "patk_242",
+      "question": "Dişilerde Malar rash, anemi ve nefropati ile gelen SLE (Lupus) hastasında en sık görülen böbrek patolojisi (WHO Class IV) nedir?",
+      "answer": "[[Diffüz proliferatif glomerülonefrit]] ([[Subendotelyal]] [[tel halkası]] -[[wire loop]]- birikimleri bulunur)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Lupus kurdu böbreğe saldırdığında en sevdiği hedef Class IV — DİFFÜZ proliferatif GN. Glomerül kapillerlerinde 'tel halka' (wire loop) şeklinde kalınlaşmalar oluşuyor, sanki kurt bağırsaklarına tel tuzak kurmuş."
+    },
+    {
+      "id": "patk_243",
+      "question": "Membranöz nefropatide, epitel altı immünkompleks birikimi nedeniyle gümüşle boyamada karakteristik GBM (Bowman zarı) görünümü nedir?",
+      "answer": "[[Spike and dome]] ([[Diken ve kubbe]]) paterni",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Membranöz nefropatide bazal membran üzerinde immün kompleksler dizilmiş — aralarında membran yukarı sivrilmiş 'DİKEN', komplekslerin üstü 'KUBBE' gibi kabarık. Gümüş boyamayla bakınca bir kale surları gibi: spike and dome paterni."
+    },
+    {
+      "id": "patk_244",
+      "question": "Nefrotik vs Nefritik sendrom farkı temel olarak nedir?",
+      "answer": "[[Nefrotik]]: Masif [[proteinüri]]; [[Nefritik]]: İltihap, hematüri ([[RBC cast]] / [[Eritrosit silendirleri]]) ve hafif [[proteinüri]]/[[hipertansiyon]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: NefroTİK = proTEİN kaybı (T harfi ortak), böbrek süzgeci delik. NefRİTİK = inflamasyon ve RBC (kıRmızı kan hücreleri), böbrek yangında. Biri protein döküyor, diğeri kan sızdırıyor — ikisi de böbrek ama farklı mekanizma."
+    },
+    {
+      "id": "patk_245",
+      "question": "Tipik subepitelyal 'hörgüç' (hump) tarzında immün kompleks depozitleri ile giden klasik hastalık hangisidir?",
+      "answer": "[[Akut Post-streptokoksik Glomerülonefrit]] ([[APSGN]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Streptokok enfeksiyonundan 2 hafta sonra böbrekteki deve (APSGN) glomerülün üzerine HÖRGÜÇ (hump) bırakıyor. Subepitelyal immün kompleksler deve hörgüçleri gibi çıkıntı yapıyor — çocuklarda boğaz ağrısından sonra gelen nefritik tablo."
+    },
+    {
+      "id": "patk_246",
+      "question": "Lineer (çizgisel) IgG ve C3 birikimi, anti-GBM antikorlarına bağlı, hemopoezi ve nefropati tablosu ile giden hastalık nedir?",
+      "answer": "[[Goodpasture Sendromu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: GOOD PASTURE — 'iyi çoban' hem akciğer hem böbrek çayırlarını lineer bir çitle (lineer IgG) çevreliyor. Anti-GBM antikorları bazal membranda düz çizgi halinde dizilip hem akciğerden kan (hemoptizi) hem böbrekten protein sızdırıyor."
+    },
+    {
+      "id": "patk_247",
+      "question": "Dünyada makroskobik hematürinin en sık sebebi olan, mezangial IgA birikimi ile giden böbrek hastalığı nedir?",
+      "answer": "[[IgA nefropatisi]] ([[Berger Hastalığı]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: BERGER adlı çoban ÜSYE geçirince kırmızı idrar yapıyor — IgA'lar mezangiumda birikiyor. Dünyada en sık kanlı idrar (makroskobik hematüri) sebebi. ÜSYE sonrası eşzamanlı hematüri = IgA nefropatisi."
+    },
+    {
+      "id": "patk_248",
+      "question": "Genetik bir hastalık olan, sağırlık, katarakt ve glomerüllerin böbrek zarlarının tip IV kollajen yapısının bozuk olması ile giden vaka nedir?",
+      "answer": "[[Alport Sendromu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: ALPORT — 'ALL PORTS bozuk': Kulak portu (sağırlık), göz portu (katarakt) ve böbrek portu (tip IV kollajen bozuk GBM) üçü birden arızalı. Kollajen yapısı bozulunca hem göz, hem kulak, hem böbrek zarar görüyor."
+    },
+    {
+      "id": "patk_249",
+      "question": "Yetişkin böbreğinin otozomal dominant kistik hastalığında (ADPKD) mutasyona uğrayan genler nelerdir?",
+      "answer": "[[PKD1]] ve [[PKD2]] genleri ([[Polikistin]] 1 ve 2 kodlarlar)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Yetişkin böbreğinde iki anahtar (PKD1 ve PKD2) kırıldı — kapılar açılınca her yer su balonlarıyla (kistlerle) doldu. Dominant miras: anne veya babadan bir bozuk anahtar yeterli, böbrekler üzüm salkımı gibi kistlerle doluyor."
+    },
+    {
+      "id": "patk_250",
+      "question": "Malign hipertansiyonda böbrekte görülen klasik vasküler nekrozun adı nedir?",
+      "answer": "[[Fibrinoid nekroz]] (hiperplastik arterioloskleroz eşliğinde)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Malign hipertansiyon o kadar güçlü basınçla damarları dövüyor ki, damar duvarına fibrin sızıyor ve nekroz oluşuyor — FİBRİNOİD NEKROZ. Arterioller soğan zarı gibi katman katman kalınlaşıyor (hiperplastik arterioloskleroz)."
+    },
+    {
+      "id": "patk_251",
+      "question": "Erişkinlerin en sık kötü huylu böbrek tümörü olup sıklıkla böbrek venini invaze eden ve von Hippel-Lindau sendromu (VHL) ile ilişkili olan karsinom nedir?",
+      "answer": "Şeffaf hücreli (Clear cell) [[Renal Hücreli Karsinom]] (RCC)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: ŞEFFAF hücreler cam gibi parlak — Renal Hücreli Karsinom'un en sık tipi. Bu tümör böbrek venine girmek için sabırsız, VHL sendromuyla da ortak yol arkadaşı. Erişkinin en sık malign böbrek tümörü = clear cell RCC."
+    },
+    {
+      "id": "patk_252",
+      "question": "Üriner yolların (renal pelvis, üreter, mesane) kanseri epitel yapısı nedir?",
+      "answer": "[[Ürotelyal karsinom]] (Değişici epitelyum karsinomu)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: İdrar yollarını kaplayan epitel sürekli 'değişiyor' — gerilince inceliyor, gevşeyince kalınlaşıyor. Bu değişken yapıdaki hücreler kanser olunca ÜROTELYAL karsinom adını alıyor. Pelvis, üreter, mesane — hepsi aynı örtüyle kaplı."
+    },
+    {
+      "id": "patk_253",
+      "question": "Böbrek taşlarında en sık görülen taş türü (%70-80) hangisidir?",
+      "answer": "[[Kalsiyum oksalat]] veya [[kalsiyum fosfat]] taşları",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Böbrekte en çok KALSİYUM taşları oluşur — %70-80 oranla lider. Kalsiyum oksalat veya kalsiyum fosfat. 'Kalsiyum = Kral taş' diye aklında tut, diğer taşlar (ürat, strüvit) krala hizmet eden askerler."
+    },
+    {
+      "id": "patk_254",
+      "question": "Proteus enfeksiyonlarına (üreaz üreten bakteriler) ikincil olarak oluşan büyük böbrek pelvisini dolduran, staghorn (geyik boynuzu) taşların içeriği nedir?",
+      "answer": "[[Magnezyum amonyum fosfat]] (Strüvit)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: PROTEUS denizlerdeki şekil değiştiren tanrı — üreaz enzimiyle idrarı alkali yapıp geyik boynuzu (staghorn) şeklinde dev STRÜVİT taşları yaratıyor. MAP = Magnezyum-Amonyum-Fosfat. Proteus haritasında (MAP) geyik boynuzu çiziyor."
+    },
+    {
+      "id": "patk_255",
+      "question": "Anemilerde eritrositlerin boyut farklılıklarının genel ifadesi nedir?",
+      "answer": "[[Anizositoz]] (Ölçüm değeri [[RDW]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: ANİZO = eşit olmayan, SİTOZ = hücre. Eritrositler bir sınıftaki öğrenciler gibi — boyları farklıysa ANİZOSİTOZ var. RDW (Red cell Distribution Width) bu boy farklılığını ölçen cetvel."
+    },
+    {
+      "id": "patk_256",
+      "question": "Demir eksikliği anemisinin periferik yayma (kan sayımı) sonucu klasik kırmızı küresi nasıldır?",
+      "answer": "[[Mikrositik]] (MCV düşük) ve [[Hipokrom]] (MCH düşük)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Demir eksikliğinde eritrositler hem KÜÇÜK (mikrositik) hem SOLUK (hipokrom) — sanki aç kalmış ve cılız kalmış hücreler. Demir yok = hemoglobin az = hücre küçük ve solgun. MCV ve MCH ikisi de düşük."
+    },
+    {
+      "id": "patk_257",
+      "question": "Megoblastik anemi (Makrositik MCV>100) en sık hangi eksikliklerine bağlıdır?",
+      "answer": "[[B12 Vitamini]] ve [[Folat]] ([[Folik asit]]) eksikliği",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: B12 ve Folat DNA sentezi için şart — eksik olunca hücre bölünemiyor ama büyümeye devam ediyor: DEV (MEGA) hücreler! MCV>100 olan kocaman eritrositler. 'B12-Folat ikilisi olmadan hücre bölünemez, şişer kalır.'"
+    },
+    {
+      "id": "patk_258",
+      "question": "Talasemide (Akdeniz Anemisi) patogenezin temeli nedir?",
+      "answer": "Globin zincirlerinin (alfa veya beta) kantitatif sentez yetersizliği ([[Mikrositik]] [[hipokrom]] anemi ve [[hedef hücre]]ler ([[target cell]]) bırakır).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Akdeniz kıyısında globin fabrikası var — alfa veya beta hattı bozulunca üretim düşüyor (kantitatif eksiklik). Eritrositler küçük ve soluk kalıyor (mikrositik hipokrom). Ortada fazla hemoglobin birikince HEDEF tahtası gibi target cell oluşuyor."
+    },
+    {
+      "id": "patk_259",
+      "question": "Orak Hücreli Anemideki (Sickle cell anemi) moleküler mutasyon nedir?",
+      "answer": "Beta globin zincirinin 6. pozisyonunda glutamik asit yerine valin geçmesi ([[Missense mutasyon]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Beta globin zincirinin 6. koltuğunda oturan GLUTAMİK asit yerinden kaldırıldı, yerine VALİN oturdu — tek bir koltuk değişikliği (missense) tüm eritrositi orak şekline büküyor. 6-GLU→VAL: sınıftaki bir öğrenci değişti, tüm sınıf düzeni bozuldu."
+    },
+    {
+      "id": "patk_260",
+      "question": "Sferositoz nedir ve en klasik nedeni nedir?",
+      "answer": "Kemik içinde [[spektrin]] / [[ankyrin]] mutasyonu nedeniyle eritrositlerin yuvarlak ve stabilitesi düşük oluşması, dalakta yıkılması durumu. (Herediter [[Sferositoz]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Eritrositin iskeleti (spektrin/ankyrin) bozulunca disk şeklini koruyamıyor ve TOP gibi yuvarlaklaşıyor — SFERO(küre)SİTOZ. Bu toplar dalağın dar geçitlerinden geçemeyip orada parçalanıyor. Herediter miras: ailede herkes top eritrosit taşıyor."
+    },
+    {
+      "id": "patk_261",
+      "question": "G6PD (Glukoz 6 Fosfat Dehidrojenaz) eksikliğinde hangi durumlarda hemoliz tetiklenir?",
+      "answer": "Oksidatif strese yol açan ilaçlar (Sıtma ilaçları, sülfonamidler) ve [[enfeksiyon]] veya bakla yemek (Favizm). [[Heinz cisimcikleri]] ve bite hücreleri görülür.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: G6PD eksik kişi oksidatif strese karşı silahsız — bakla yiyince (FAVİZM), sıtma ilacı alınca veya enfeksiyon geçirince eritrositler patlamaya başlıyor. Hemoglobin çökelip HEINZ cisimcikleri oluşuyor, dalak bunları ısırıp 'bite cell' yapıyor."
+    },
+    {
+      "id": "patk_262",
+      "question": "Reed-Sternberg hücresi hangi hastalığın tanısında mutlaka olmalıdır?",
+      "answer": "[[Hodgkin Lenfoma]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: REED-STERNBERG hücresi Hodgkin Lenfomanın kimlik kartı — bu hücreyi görmeden Hodgkin tanısı koyamazsın. İki göz gibi nükleusuyla 'Baykuş gözü' bakışıyla sana 'Ben HODGKİN'im!' diyor."
+    },
+    {
+      "id": "patk_263",
+      "question": "Baykuş gözü (Owl's eye) görünümüne sahip dev, çok çekirdekli veya multilobe nükleuslu lenfoma hücresi nedir?",
+      "answer": "[[Reed-Sternberg hücresi]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Gece ormanda bir BAYKUŞ seni izliyor — iki büyük parlak gözüyle. Bu baykuş Reed-Sternberg hücresi, iki loblu dev nükleusu baykuş gözlerine benziyor. Owl's eye = Reed-Sternberg = Hodgkin'in işareti."
+    },
+    {
+      "id": "patk_264",
+      "question": "Burkitt Lenfomada çok klasik olan histolojik görünümünün adı nedir?",
+      "answer": "[[Yıldızlı gökyüzü]] ([[Starry sky]]) görünümü ([[Makrofajlar]]ın arası malign lenfosit denizidir)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Burkitt'in mikroskobuna bak — koyu mavi malign lenfosit denizinin içinde parlak makrofajlar yıldız gibi ışıldıyor: YILDIZLI GÖKYÜZÜ! Gece gökyüzünde yıldızlar (makrofajlar) ve karanlık (malign hücreler) bir arada."
+    },
+    {
+      "id": "patk_265",
+      "question": "Tüm yaş grupları içinde erişkinlerin en sık görülen lösemi/lenfoması olan (KLL ile eşdeğer) hastalık hangisidir?",
+      "answer": "[[Kronik Lenfositik Lösemi]] / [[Küçük Lenfositik Lenfoma]] ([[Smudge hücreleri]]-ezik hücreler bulunur)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: KLL yaşlı erişkinlerin en sık lösemisi — hücreler o kadar kırılgan ki lam üzerinde ezilip SMUDGE (bulaşık/ezik) hücreleri oluşturuyor. Yaşlı ve kırılgan lenfositler = KLL'nin imzası."
+    },
+    {
+      "id": "patk_266",
+      "question": "B hücresel lenfomalardan olup yaşlı kadınlarda 'tüylü/saçaklı' görünüme sahip mikroskobisi olan lenfoma nedir?",
+      "answer": "[[Hairy Cell Leukemia]] (TRAP enzim pozitif, dalakta masif kırmızı pulpa invazyonu).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: HAIRY (tüylü) hücreler sanki saçları diken diken olmuş korku filminden çıkmış — TRAP testini pozitif yapıyorlar ve dalağın kırmızı pulpasını işgal ediyorlar. Yaşlı kadınlarda tüylü hücrelerin dalak partisi."
+    },
+    {
+      "id": "patk_267",
+      "question": "Auer cisimcikleri hangi lösemi hücresinde tipik olarak bulunur?",
+      "answer": "[[Akut Myeloblastik Lösemi]] (AML) özellikle promiyelositlerde",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: AUER çubukları AML hücrelerinin içindeki kırmızı kılıçlar — özellikle promiyelositler bu kılıçları taşıyor. AML = AUER, ikisi hep birlikte. Auer rod görürsen aklına hemen AML gelsin."
+    },
+    {
+      "id": "patk_268",
+      "question": "Ateş, kemik ağrısı, pansitopeni, lenfadenopatiyle başvuran çocukta (Pediatrik yaş) en sık görülen malignite nedir?",
+      "answer": "[[Akut Lenfoblastik Lösemi]] (ALL)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Çocuklarda ALL = 'ALL children' — tüm çocukların en sık karşılaştığı kanser. Ateş, kemik ağrısı, pansitopeni ve şişmiş lenf bezleri. Kemik iliğini blast hücreleriyle doldurup normal hücreleri dışarı itiyor."
+    },
+    {
+      "id": "patk_269",
+      "question": "Miyelom (Multipl Miyelom) kemikte hangi tip lezyonlara neden olur?",
+      "answer": "Litk (Kemik yıkıcı - zımba deliği manzaralı) lezyonlar.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Multipl Miyelom kemiği bir ZIMBA ile delik deşik ediyor — litik lezyonlar. Röntgende kemiklerde sanki biri zımbayla delik açmış gibi çok sayıda yuvarlak boşluklar görülüyor. Zımba deliği manzarası = Miyelom."
+    },
+    {
+      "id": "patk_270",
+      "question": "Multipl Myelomda böbrek tutulumunun temel mekanizması (miyelo böbreği) nedir?",
+      "answer": "[[Bence Jones proteinleri]]nin (hafif zincirlerin) tübülüslerde çökelmesi ve tıkaç oluşturması veya toksisite yapması.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: BENCE JONES proteinleri (hafif zincirler) böbreğin tübülüslerinde birikiyor — sanki bir lavabonun borusuna çimento dökmüşsün, tıkanıyor ve toksisite yapıyor. Miyelom böbreği = hafif zincir tıkacı."
+    },
+    {
+      "id": "patk_271",
+      "question": "Gastrik adenokarsinomun tipik olarak ilk başlama sahasını en çok tahrip eden iki önemli faktör hangileridir?",
+      "answer": "[[H. Pylori]] ve gıda koruyucuları (nitritler)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Mide kanserinin iki suç ortağı: H. pylori (mideye yerleşen kalıcı kiracı) ve nitritler (işlenmiş gıdalardaki gizli zehir). İkisi birlikte mide mukozasını kronik hasara uğratıp adenokarsinom zeminini hazırlıyor."
+    },
+    {
+      "id": "patk_272",
+      "question": "Hipofiz adenomları içinde en sık görülen hormon aktif tümör hangisidir?",
+      "answer": "[[Prolaktinoma]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Hipofiz adenomları arasında PROLAKTİNOMA şampiyon — en sık fonksiyonel tümör. Prolaktin salgılayarak galaktore ve amenore yapıyor. 'PRO' = birinci, 'LAKTIN' = süt — hipofizin bir numaralı süt üreticisi tümörü."
+    },
+    {
+      "id": "patk_273",
+      "question": "Sheehan Sendromu nedir?",
+      "answer": "Postpartum (doğum sonrası) kanamaya veya şoka bağlı olarak gelişen iskemik pituiter (hipofiz bezi) nekrozu. [[Panhipopitüitarizm]] yapar.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: SHEEHAN — doğum sırasında aşırı kanama yaşayan anne, hipofiz bezini besleyen kanı kaybetti. Hipofiz 'açlıktan' nekroza gitti ve tüm hormonları durdu (panhipopitüitarizm). Doğum sonrası süt gelmemesi ilk ipucu."
+    },
+    {
+      "id": "patk_274",
+      "question": "Akromegali neyin sonucudur?",
+      "answer": "[[Epifiz]] [[plak]]ları kapandıktan sonra (erişkinde) gelişen aşırı Büyüme Hormonu ([[GH]]) salınımı ([[GH]] adenomu). Ergenlik öncesi olursa [[Gigantizm]] yapar.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Epifiz plakları kapandıktan sonra GH adenomu çalışmaya başlarsa vücut yukarı büyüyemez ama yanlara genişler — el, ayak, çene BÜYÜR: AKROMEGALİ. Epifiz kapanmadan olursa kişi DEV olur: Gigantizm. Kapandıysa genişler, kapanmadıysa uzar."
+    },
+    {
+      "id": "patk_275",
+      "question": "Uygunsuz ADH sendromunda (SIADH) hastanın su ve sodyum tablosu nasıldır?",
+      "answer": "Su retansiyonu (tutulumu) ve dilüsyonel [[hiponatremi]] ([[Ödem]] görülmez, santral sinir sistemi bulguları ön plandadır).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: SIADH'da ADH durmadan su tutuyor — kan sulandı, sodyum dilüe oldu (hiponatremi). Ama ilginçtir ödem yok! Çünkü su hücre içine girip beyin şişmesine yol açıyor — baş ağrısı, konfüzyon gibi SSS bulguları ön planda."
+    },
+    {
+      "id": "patk_276",
+      "question": "Diabetes İnsipidus (Şekersiz diyabet) tablosunun en önemli kliniği ve ADH seviyesi nasıldır?",
+      "answer": "[[ADH]] eksikliği veya böbrek direnci. [[Polidipsi]] ve düşük dansiteli yoğun [[poliüri]] görülür. Kanda sodyum ([[Hipernatremi]]) artar.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Dİ = 'su musluğu açık kaldı!' ADH yok veya böbrek ADH'yı dinlemiyor — su tutulmuyor, litrelerle seyreltik idrar akıyor (poliüri) ve hasta susuzluktan ölecek gibi su içiyor (polidipsi). Kan konsantre olup sodyum yükseliyor (hipernatremi)."
+    },
+    {
+      "id": "patk_277",
+      "question": "Kretinizm nedir?",
+      "answer": "Erken çocukluk / infant döneminde gelişen şiddetli [[hipotiroidi]]. Zeka geriliği, kısa boy ve umbilikal herni ile karakterizedir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Bebeğin tiroid hormonu yoksa her şey yavaş kalıyor — beyin gelişemez (zeka geriliği), kemikler uzayamaz (kısa boy) ve karın duvarı kapanmaz (umbilikal herni). KRETİNİZM = tiroid hormonunun bebeğe ulaşmadığı karanlık tablo."
+    },
+    {
+      "id": "patk_278",
+      "question": "Yetişkinde şiddetli hipotiroidinin kliniğine ne ad verilir?",
+      "answer": "[[Miksödem]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: MİKSÖDEM — yetişkinde tiroid çalışmayınca vücut mukopolisakkaritlerle şişiyor ama bası uyguladığında iz bırakmıyor (non-pitting ödem). 'MİKS' = müsinöz madde birikimi, yüz bir ay yüzü gibi şişkin ve ifadesiz."
+    },
+    {
+      "id": "patk_279",
+      "question": "İyot eksikliğinin olmadığı bölgelerde hipotiroidinin en sık nedeni (otoimmün tiroidit) hangisidir?",
+      "answer": "[[Hashimoto Tiroiditi]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: HASHIMOTO — bağışıklık sistemi tiroid bezine 'hash' (parçalamak) yapıyor! İyot yeterli olsa bile otoimmün saldırı tiroidi yok ediyor. Gelişmiş ülkelerde hipotiroidinin bir numaralı sebebi."
+    },
+    {
+      "id": "patk_280",
+      "question": "Hashimoto tiroiditinin histolojik bulgusunda lenfoid folikül oluşumlarının yanı sıra karakteristik epitel hücresi nedir?",
+      "answer": "[[Hürthle hücreleri]] ([[Oksifilik hücre metaplazisi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Hashimoto'nun tiroidinde lenfositler ordu kurmuş (lenfoid foliküller) ve tiroid hücreleri stres altında HÜRTHLE hücrelerine dönüşmüş — bol pembe sitoplazmalarıyla (oksifilik) stresli ve şişkin görünüyorlar."
+    },
+    {
+      "id": "patk_281",
+      "question": "Hashimoto tiroiditi hastalarında ileriki dönemde riski artan malignite hangisidir?",
+      "answer": "[[B hücre]]li Non-[[Hodgkin Lenfoma]] ([[MALT lenfoma]]) ve Tiroid [[Papiller Karsinomu]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Hashimoto'da kronik lenfosit infiltrasyonu yıllarca devam edince B lenfositleri kontrolden çıkıp MALT lenfoma yapabiliyor. Ayrıca sürekli hasar-onarım döngüsü papiller karsinom riskini de artırıyor. Kronik iltihap = kanser zemini."
+    },
+    {
+      "id": "patk_282",
+      "question": "Sıklıkla viral bir enfeksiyondan sonra (ÜSYE) gelişen, çok ağrılı tiroid bezi büyümesine ne ad verilir?",
+      "answer": "Subakut [[Granülom]]atöz Tiroidit ([[De Quervain tiroiditi]]). Çok dev hücre içerir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: ÜSYE sonrası boyun ağrıyorsa DE QUERVAIN tiroiditi düşün! Virüs tiroid bezine saldırdı, granülomlar ve dev hücreler oluştu. 'De Quervain = Ağrılı tiroid = ÜSYE sonrası' üçlemesi."
+    },
+    {
+      "id": "patk_283",
+      "question": "Hipertiroidinin (Tirotoksikozun) en sık nedeni nedir? (Ekzoftalmi ve pretibial miksödem eşlik eder)",
+      "answer": "[[Graves Hastalığı]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: GRAVES — mezar (grave) gibi ciddi bir hastalık! Gözler fırlıyor (ekzoftalmi), kalp hızlanıyor, kilo eriyor. Hipertiroidinin en sık sebebi. Graves hastası mezardan kalkmış gibi gözleri pörtlek ve huzursuz."
+    },
+    {
+      "id": "patk_284",
+      "question": "Graves hastalığının etyopatogenezinde yatan temel mekanizma nedir?",
+      "answer": "[[TSH]] reseptörünü uyaran otoantikorlar ([[TSI]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Graves'te bağışıklık sistemi sahte bir TSH (TSI antikoru) üretiyor — TSH reseptörünü sürekli uyarıyor sanki 'çalış, çalış!' diye bağırıyor. Tiroid de durmadan hormon üretiyor. TSI = Tiroid Stimülan İmmünoglobulin = sahte TSH."
+    },
+    {
+      "id": "patk_285",
+      "question": "Tiroidin en sık görülen karsinomu hangisidir?",
+      "answer": "[[Papiller Karsinom]] (Mükemmel prognoz)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: PAPİLLER karsinom tiroidin en sık ama en 'nazik' kanseri — mükemmel prognozla çoğu hasta iyileşiyor. 'Papiller = Popular = en sık' diye hatırla. Lenfatik yayılım yapar ama yine de prognoz çok iyi."
+    },
+    {
+      "id": "patk_286",
+      "question": "Tiroid Papiller karsinomunun histolojik özelliklerinde (çekirdek bulguları) ne adlar kullanılır?",
+      "answer": "[[Yetim Annie gözü]] nükleusu ([[Orphan Annie eye]]), intranükleer psödoinklüzyonlar, [[psammom cisimcikleri]] ve [[nükleer yivler]] (grooves).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Papiller karsinomun hücrelerinde YETİM ANNİE çizgi filmindeki boş gözler var — Orphan Annie eye (berrak, boş nükleus). Nükleus içinde sahte inklüzyonlar, yüzeyinde yivler (grooves) ve çevresinde kumlu psammom cisimcikleri. Annie'nin boş gözleri = papiller karsinom."
+    },
+    {
+      "id": "patk_287",
+      "question": "İyot eksikliği olan bölgelerde daha sık izlenen, hematojen yolla yayılan ve kapsül/damar invazyonu gösteren tiroid tümörü nedir?",
+      "answer": "Müküler Karsinom ([[Folliküler Karsinom]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: FOLLİKÜLER karsinom iyotsuz bölgelerin tümörü — damar ve kapsülü delip KAN yoluyla (hematojen) uzak yerlere yayılıyor. Papiller lenfatik yayılırken, folliküler damara giriyor. İyot eksikliği = folliküler karsinom riski."
+    },
+    {
+      "id": "patk_288",
+      "question": "Tiroidin Medüller Karsinomu hangi hücreden köken alır ve ne salgılar?",
+      "answer": "Parafolliküler C hücrelerinden köken alır, [[Kalsitonin]] salgılar. (Amiloid stroması vardır)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Medüller karsinom = C hücresinin kanseri. C = Calcitonin (Kalsitonin). C hücresi kalsitonin üretir, kanseri de kalsitonin salgılamaya devam eder. Stromada amiloid birikimi — kalsitonin kalıntıları amiloid olarak çökelir."
+    },
+    {
+      "id": "patk_289",
+      "question": "Primer hiperparatiroidinin en sık nedeni nedir?",
+      "answer": "[[Paratiroid Adenomu]] (%85)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Primer hiperparatiroidide suçlu genellikle tek bir paratiroid bezindeki ADENOM — %85 oranla bir numaralı neden. Tek bir bez aşırı çalışıp PTH pompalarken diğer üçü uyuyor (atrofik)."
+    },
+    {
+      "id": "patk_290",
+      "question": "Primer hiperparatiroidide serum kalsiyumu ve fosforu nasıldır?",
+      "answer": "Kalsiyum yüksek ([[Hiperkalsemi]]), Fosfor düşük ([[Hipofosfatemi]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: PTH kemikten kalsiyumu çekip kana veriyor (hiperkalsemi) ve böbrekten fosforu attırıyor (hipofosfatemi). Kalsiyum YUKARI, Fosfor AŞAĞI — PTH bir tahterevrekte kalsiyumu yukarı, fosforu aşağı bastırıyor."
+    },
+    {
+      "id": "patk_291",
+      "question": "Primer hiperparatiroidide böbrek ve kemikte görülen klasik iki tablo nedir?",
+      "answer": "[[Nefrokalsinoz]]/[[Nefrolitiazis]] ve [[Osteitis Fibrosa Cystica]] ([[Kahverengi tümörler]])",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Aşırı PTH iki yere saldırıyor: böbrekte kalsiyum birikiyor ve taş yapıyor (nefrokalsinoz/nefrolitiazis), kemikte ise osteoklastlar çılgınca yıkım yapıp kahverengi tümörlerle dolu kistik kemikler bırakıyor (Osteitis Fibrosa Cystica). 'Taşlı böbrek + delikli kemik = primer hiperparatiroidi.'"
+    },
+    {
+      "id": "patk_292",
+      "question": "Cushing Sendromunun klinik özelliklerinde gövdesel (santral) tipik bulgular nelerdir?",
+      "answer": "Aydede yüzü ([[Moon facies]]), ense yağlanması ([[Buffalo hump]]), abdominal mor strialar ve atrofi, [[hipertansiyon]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Cushing hastası bir AY yüzlü, BUFFALO hörgüçlü, mor çizgili (stria) ve şişman gövdeli karakter. Yüzü dolunay gibi yuvarlak, ensesinde bufalo hörgücü, karnında mor yarıklar — kortizol fazlalığının portresi."
+    },
+    {
+      "id": "patk_293",
+      "question": "Cushing Hastalığı (Hastalık ile Sendrom farkı) nedir?",
+      "answer": "Eğer kortizol yüksekliği, hipofizdeki bir [[ACTH]] salgılayan adenomdan kaynaklanıyorsa buna [[Cushing Hastalığı]] denir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Cushing SENDROMU = kortizol yüksekliğinin genel adı (her sebepten). Cushing HASTALIĞI = spesifik olarak hipofiz adenomunun ACTH salgılaması. 'Hastalık daha spesifik, sendrom daha genel' — hastalık hipofizi işaret eder."
+    },
+    {
+      "id": "patk_294",
+      "question": "Primer hiperaldosteronizmin (Conn Sendromu) klasik triad veya kliniği nedir?",
+      "answer": "[[Hipertansiyon]], [[Hipokalemi]] ve düşük plazma renin aktivitesi.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: CONN sendromu — aldosteron sodyum tutuyor (hipertansiyon) ve potasyum atıyor (hipokalemi). Renin de baskılanmış çünkü aldosteron zaten fazla. 'CONN = sodyumu KONserve ediyor, potasyumu atıyor, renini bastırıyor.'"
+    },
+    {
+      "id": "patk_295",
+      "question": "Konjenital Adrenal Hiperplazi (KAH) en sık hangi enzim eksikliğiyle görülür?",
+      "answer": "[[21-Hidroksilaz]] eksikliği (Böbreküstü bezinde tuz kaybı veya sadece virilizan bulgular ile dişi fetüste genital amibiguiti).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: KAH'ta 21-HİDROKSİLAZ eksikliği = kortizol ve aldosteron yapılamıyor, ACTH arttırılıyor ve androjen yolu açılıyor. Dişi fetüs erkeksi genitalya ile doğuyor (virilizasyon). '21 yaşına gelmeden tuz kaybeden bebek' diye hatırla."
+    },
+    {
+      "id": "patk_296",
+      "question": "Primer kronik adrenal yetmezliğe (Addison Hastalığı) gelişmiş ülkelerde en sık ne sebep olur?",
+      "answer": "[[Otoimmün adrenalitis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: ADDİSON'un adrenal bezleri otoimmün saldırı altında — bağışıklık sistemi kendi böbreküstü bezlerini yiyor. Gelişmiş ülkelerde tüberküloz azaldığı için bir numaralı neden otoimmün adrenalitis oldu. Bronz cilt + hipotansiyon + yorgunluk = Addison."
+    },
+    {
+      "id": "patk_297",
+      "question": "Waterhouse-Friderichsen sendromu nedir?",
+      "answer": "[[Neisseria meningitidis]] [[enfeksiyon]]una bağlı, bilateral adrenalektomi hemorajisinin yol açtığı akut adrenal yetmezlik ve şok tablosu.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: WATERHOUSE-FRİDERICHSEN — meningokok fırtınası! N. meningitidis kana yayılınca iki adrenal bez birden kanıyor (bilateral hemoraji). Akut adrenal yetmezlik + DIC + şok = ölümcül bir fırtına. 'Su evi (Waterhouse) sular altında kaldı' — adrenaller kana boğuldu."
+    },
+    {
+      "id": "patk_298",
+      "question": "Erişkinlerde Adrenal medullanın en sık tümörü hangisidir?",
+      "answer": "[[Feokromasitoma]] (%10 kuralları vardır: %10 bilateral, %10 çocuk, %10 yandaş malign, %10 ekstra-adrenal).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: FEOKROMASİTOMA = '%10'lar tümörü': %10 bilateral, %10 çocuk, %10 malign, %10 ekstra-adrenal. Adrenal medullanın katekolamin salgılayan canavarı — her şeyi %10'la yapıyor. Erişkinin en sık adrenal medulla tümörü."
+    },
+    {
+      "id": "patk_299",
+      "question": "Feokromasitomada sürekli veya ataklar halinde (paroksismal) olan klasik klinik triad nedir?",
+      "answer": "[[Taşikardi]] (Çarpıntı), Terleme ve Başağrısı ([[Hipertansiyon]]la birlikte).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Feokromasitoma atağı = adrenalin fırtınası! Kalp hızlanıyor (taşikardi), vücut terliyor, baş zonkluyor ve tansiyon fırlıyor. Sanki ayı tarafından kovalanıyorsun — fight or flight tepkisinin aşırı hali. TTB: Taşikardi-Terleme-Başağrısı."
+    },
+    {
+      "id": "patk_300",
+      "question": "Multipl Endokrin Neoplazi (MEN) Tip 1 sendromunda hangi endokrin organ tümörleri vardır?",
+      "answer": "[[Paratiroid adenomu]], [[Pankreatik adacık]] tümörleri (ör: [[Gastrinoma]]), Pituiter (Hipofiz) adenomu. (3P kuralı)",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: MEN 1 = 3P kuralı: Paratiroid + Pankreas + Pituiter (Hipofiz). Üç 'P' harfli organın tümörleri bir arada. 'MEN 1 = PPP' diye hatırla — üç P bir arada neoplazi yapıyor."
+    },
+    {
+      "id": "patk_301",
+      "question": "MEN Tip 2A'da hangi tümörler bir aradadır? (RET onkogen mutasyonu)",
+      "answer": "[[Medüller Tiroid Kanseri]], [[Feokromasitoma]], [[Paratiroid Adenomu]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: MEN 2A = RET proto-onkogeninin lanet üçlüsü: Medüller tiroid kanseri (C hücreleri), Feokromasitoma (adrenal medulla) ve Paratiroid adenomu. 'MFP' — Medüller, Feo, Paratroid. RET mutasyonu bu üçlüyü birbirine bağlıyor."
+    },
+    {
+      "id": "patk_302",
+      "question": "Tip 1 Diabetes Mellitus'un (DM) etyopatogenezi nedir?",
+      "answer": "[[Pankreas]] beta hücrelerinin otoimmün yıkımı ve mutlak [[insülin]] eksikliği.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Tip 1 DM'de bağışıklık sistemi pankreasın beta hücrelerine savaş ilan etti — tüm insülin fabrikasını yıktı! MUTLAK insülin eksikliği: fabrika tamamen yok, dışarıdan insülin almak zorunlu. Genç yaşta başlayan otoimmün yıkım."
+    },
+    {
+      "id": "patk_303",
+      "question": "Tip 2 DM'de erken dönem asıl patofizyolojik problem nedir?",
+      "answer": "Periferik dokularda [[insülin direnci]] ve [[pankreas]]ta rölatif [[insülin]] yetmezliği.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Tip 2 DM'de insülin var ama kapılar (reseptörler) kilitli — DİRENÇ! Pankreas daha fazla insülin üretmeye çalışıyor ama yetişemiyor (rölatif yetmezlik). 'Anahtar var ama kilit pas tutmuş' — insülin direncinin metaforu."
+    },
+    {
+      "id": "patk_304",
+      "question": "Diyabetin spesifik böbrek patolojisi (nodüler glomerüloskleroz) ne ad alır?",
+      "answer": "[[Kimmelstiel-Wilson nodülleri]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: KİMMELSTIEL-WILSON — diyabetin böbrekteki imzası! Glomerüllerde nodüler (yumrulu) skleroz — şeker yıllar boyunca glomerül kapillerlerinde birikip yumrular oluşturuyor. Diyabetik nefropatinin patognomonik bulgusu."
+    },
+    {
+      "id": "patk_305",
+      "question": "Kemik kütlesinde azalma, matriksin normal ancak mineralize bölgenin oranının azaldığı, yaşlılık ve postmenopozal devrede sık görülen durum nedir?",
+      "answer": "[[Osteoporoz]] (Kırık riski çok yüksektir, kalça/vertebra).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: OSTEOPOROZ = kemik gözenekli (porous) oldu! Matriks normal ama mineral azaldı — kemik sünger gibi hafif ve kırılgan. Yaşlı kadın düşerse kalça kırığı, eğilirse vertebra çökmesi. 'POR' = delik deşik kemik."
+    },
+    {
+      "id": "patk_306",
+      "question": "Çocukluk çağında D vitamini eksikliğine bağlı büyüme plağındaki yetersiz kalsifikasyon hastalığı nedir?",
+      "answer": "[[Raşitizm]] ([[Rickets]]) - [[Epifiz]]lerde kadehleme, kemiklerde yaylanma görülür.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: RAŞİTİZM — D vitaminsiz çocuğun kemikleri yumuşak hamur gibi: bacaklar yay gibi eğiliyor, bilekler ve epifizler kadeh gibi genişliyor. 'D yok = kemik yumuşak = çocuk eğrildi' formülü. Güneşsiz büyüyen çocuğun dramı."
+    },
+    {
+      "id": "patk_307",
+      "question": "Erişkinde D vitamini eksikliğine bağlı gelişen kemik yumuşaması / matriksin kalsifiye olamaması durumu nedir?",
+      "answer": "[[Osteomalazi]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: OSTEOMALAZİ = kemik (osteo) yumuşaması (malacia). Erişkinde D vitamini eksikliğinde kemik matriksi var ama kalsifiye olamıyor — raşitizmin erişkin versiyonu. Çocukta raşitizm, erişkinde osteomalazi: ikisi de D vitamini eksikliği."
+    },
+    {
+      "id": "patk_308",
+      "question": "Paget Hastalığı (Osteitis Deformans) kemikte hangi düzensizliğe yol açar?",
+      "answer": "Kemik yapım ([[Osteoblast]]) ve yıkımının ([[Osteoklast]]) aşırı ve düzensiz olması sonucu oluşan kalın [[ama]] zayıf \"[[mozaik paternli]]\" kemikler.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: PAGET hastalığında kemik sürekli yıkılıp yapılıyor ama düzensiz — sonuç MOZAİK gibi rastgele dizilmiş kemik dokusu. Kalın ama zayıf kemikler, çatlak bir seramik gibi. Osteoblast ve osteoklast kavga ediyor, ortaya karmaşık bir mozaik çıkıyor."
+    },
+    {
+      "id": "patk_309",
+      "question": "Erişkinlerde Paget hastalığının potansiyel (en korkulan) komplikasyonu nedir?",
+      "answer": "[[Osteosarkom]] gelişimi (Kötü diferansiye ve agresif).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Paget'in sürekli yıkım-yapım döngüsü kemiği o kadar yoruyor ki sonunda OSTEOSARKOM gelişebiliyor — en korkulan komplikasyon! Kronik hasarın ardından gelen agresif kanser. Paget → Osteosarkom: uzun süreli stres kansere dönüşür."
+    },
+    {
+      "id": "patk_310",
+      "question": "Piyojenik Osteomyelit'in en yaygın bulaşma yolu ve etkeni nedir?",
+      "answer": "[[Hematojen]] yayılım, en sık etken [[Staphylococcus aureus]].",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: S. aureus kana karışıp (hematojen) kemiğe ulaşan altın renkli (aureus) bir suçlu — osteomyelitin bir numaralı etkeni. Kan yoluyla kemiğe gelen stafilokok, kemiği iltihapla eritiyor. 'Altın stafilokok kemik kırar.'"
+    },
+    {
+      "id": "patk_311",
+      "question": "Kemiğin benign ama lokal agresif olabilen, epifiz yerleşimli ve X-ray'de \"sabun köpüğü\" (soap bubble) görünümlü osteoklast tip tümörü nedir?",
+      "answer": "[[Dev Hücreli Kemik Tümörü]] (Giant cell tumor).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Epifizde 'sabun köpüğü' gibi şişen dev hücreli tümör — osteoklast tipinde DEV hücreler kemiği köpük gibi eritiyor. X-ray'de sabun köpüğü, mikroskopda dev hücreler = Giant Cell Tumor. Benign ama agresif bir köpük makinesi."
+    },
+    {
+      "id": "patk_312",
+      "question": "Çocuklarda (10-20 yaş) diafizden köken alan, küçük yuvarlak mavi hücreli (t(11;22) translokasyonlu) kemik malignitesi hangisidir?",
+      "answer": "[[Ewing Sarkomu]] (\"[[Soğan zarı]] - onion skin\" [[periost reaksiyonu]] görülür).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: EWING sarkomu = çocuğun diafizinde SOĞAN ZARI gibi katman katman periost reaksiyonu yapan mavi hücreli tümör. t(11;22) translokasyonu var. 'Ewing = soğan soyan genç' diye hatırla — onion skin pattern ve genç yaş grubu."
+    },
+    {
+      "id": "patk_313",
+      "question": "Eklemlerde sabah sertliğinin az sürdüğü, kıkırdak yıkımı olan (Heberden nodülü distalde, Bouchard nodülü proksimalde olan) dejeneratif hastalık nedir?",
+      "answer": "[[Osteoartrit]] (Dejeneratif eklem hastalığı).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: OSTEOARTRİT = yıpranma artriti. Yaşlı ellerde distal DIP'te HEBERDEN, proksimal PIP'te BOUCHARD nodülleri. 'H = distal (High = uzak), B = proksimal (Base = yakın)' diye hatırla. Sabah sertliği kısa, hareketle artan ağrı."
+    },
+    {
+      "id": "patk_314",
+      "question": "Sistmik otoimmün, bilateral snovyal hiperplazi (Pannus tabakası) ile kıkırdağı yiyen ve sabah sertliğinin uzun (>1 saat) sürdüğü artrit nedir?",
+      "answer": "[[Romatoid Artrit]] (RA).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: RA'da sinovya PANNUS adlı canavar tabakası oluşturuyor — kıkırdağı yiyen agresif bir doku. Sabah >1 saat sertlik, simetrik eklem tutulumu. 'PANNUS = kıkırdak yiyen panter' diye hatırla — her iki elde de aynı eklemleri tırmalıyor."
+    },
+    {
+      "id": "patk_315",
+      "question": "Gut artritinde eklemde biriken kristallerin yapısı ve polarize mikroskop görüntüsü milyordur?",
+      "answer": "[[Monosodyum ürat]] kristalleri (İğne şeklinde ve negatif çift kırılımlı - sarı/mavi refreje).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: GUT = ürik asit kristallerinin eklemde İĞNE gibi batması! Monosodyum ürat kristalleri polarize mikroskopta NEGATİF çift kırılımlı (sarı renk). 'GUT = iğne batıyor, negatif kırılım' — iğne şeklinde kristaller ayak başparmağını acıtıyor."
+    },
+    {
+      "id": "patk_316",
+      "question": "Duchenne Musküler Distrofi (DMD)'nin kalıtımı ve etkilenen proteini nedir?",
+      "answer": "X'e bağlı resesif, [[Distrofin]] proteini gen mutasyonu sonucu tamamen eksiktir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: DUCHENNE — küçük erkek çocuğun kasları eriyor çünkü DİSTROFİN proteini tamamen yok! X'e bağlı resesif: anneden oğula geçiyor. Distrofin olmadan kas hücreleri dağılıyor. 'D = Duchenne = Distrofin = Deficiency (eksiklik)' dörtlüsü."
+    },
+    {
+      "id": "patk_317",
+      "question": "Deri lezyonlarından makül ve papül farkı nedir?",
+      "answer": "[[Makül]] düz renkte değişiklik (<1 cm), [[Papül]] ise kabarık (<1 cm) yapıdadır.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: MAKÜL = düz bir LEKE (el gezdirsen hissetmezsin), PAPÜL = kabarık bir nokta (el gezdirsen hissedersin). İkisi de <1 cm. 'Makül = Map (düz harita), Papül = Pıtırtı (kabarık)' diye hatırla."
+    },
+    {
+      "id": "patk_318",
+      "question": "Vezikül ve bül farkı nedir?",
+      "answer": "İkisi de sıvı dolu kabarcıktır. [[Vezikül]] <5 mm, [[Bül]] >5 mm (Blister) büyüklüktedir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: VEZİKÜL = küçük su baloncuğu (<5mm), BÜL = büyük su balonu (>5mm, blister). 'Vezikül = VEspa (küçük), Bül = BUldozer (büyük)' diye hatırla — ikisi de sıvı dolu ama boyutları farklı."
+    },
+    {
+      "id": "patk_319",
+      "question": "Psoriasis (Sedef hastalığı) tipik lezyonları nasıldır ve kazındığında kanama bulgusuna ne ad verilir?",
+      "answer": "Eritematöz zemin üzerinde gümüş/sedef rengi skuamlar(kabuklar). Pulu kazıyınca ufak odaklı kanama olmasına [[Auspitz bulgusu]] denir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Sedef hastalığında deri gümüş pullarla kaplı bir balık gibi — pulları kazıyınca altından kanama (AUSPİTZ bulgusu) geliyor. 'AUSPITZ = kazıyınca AUS (dışarı) kan PİTZ (fışkırır)' diye hatırla. Gümüş pul + kazıma kanaması = Psoriasis."
+    },
+    {
+      "id": "patk_320",
+      "question": "Pemphigus Vulgaris'te patojenez ve immünfloresan bulgusu nedir?",
+      "answer": "[[Desmoglein]]-1 ve 3 (Epidermal desmozomlara) otoantikor. Balık ağı (net-like) interselüler [[IgG]] birikimi ([[Akoliz]]is mevcut + [[Nikolsky]] sign pozitif).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: PEMPHIGUS = hücreler arası bağlantı (desmozom) KOPTU! Desmoglein antikorları hücreleri birbirinden ayırıyor (akantolizis). İmmünfloresanda BALIK AĞI paterni — hücre arası IgG birikimi. Deriyi ittirince soyuluyor (Nikolsky +). 'Balık ağı = Pemphigus.'"
+    },
+    {
+      "id": "patk_321",
+      "question": "Büllöz Pemfigoid'de patojenez ve bülün yeri neresidir?",
+      "answer": "[[Hemidesmozom]] ([[BPAG1]] ve [[BPAG2]])'a antikor. Subepidermal dermoepidermal bileşkede ayrılma ([[Akoliz]]is yok, [[Nikolsky]] sign negatif - sağlam lineer [[IgG]]).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Büllöz PemfiGOİD = zeminden (bazal membrandan) ayrılma! Hemidesmozom antikorları derinin tabanını kaldırıyor — subepidermal büller. Nikolsky NEGATİF çünkü hücre arası bağlantı sağlam. İmmünfloresanda LİNEER IgG çizgisi. 'Pemfigoid = Floor (zemin) ayrılması.'"
+    },
+    {
+      "id": "patk_322",
+      "question": "Çölyak hastalığı ile güçlü beraberliği olan, dirsek-dizlerde aşırı kaşıntılı papül/veziküllerle giden ve IgA çökeltisi gösteren dermatolojik hastalık nedir?",
+      "answer": "[[Dermatitis Herpetiformis]]",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: DERMATİTİS HERPETİFORMİS — Çölyak hastasının derisi de isyan ediyor! Dirsek ve dizlerde kaşıntılı kabarcıklar (vezikül) ve IgA birikimi. 'Gluten bağırsakta çölyak, deride herpetiformis yapar' — ikisi kardeş hastalık."
+    },
+    {
+      "id": "patk_323",
+      "question": "Melanom patolojisinde prognozu (sağkalımı) belirleyen en önemli faktör (Breslow kalınlığı) neyi ölçer?",
+      "answer": "Tümörün dikey (vertikal) olarak deriye, granüler tabakanın altına doğru inen invazyon derinliğini ölçer.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: BRESLOW kalınlığı = melanomun deriye ne kadar DERİN daldığının ölçüsü. Ne kadar derin dalış yaparsa prognoz o kadar kötü. 'Breslow = Below (aşağıya)' diye hatırla — tümörün aşağıya doğru invazyon derinliği hayat kurtarıcı bilgi."
+    },
+    {
+      "id": "patk_324",
+      "question": "Epidural hematom hangi kafa travmasına ve hagi damar rüptürüne bağlıdır ve klasik klinik seyri nasıldır?",
+      "answer": "Sıklıkla fraktür sonucu [[A. meningea media]] yırtılması. Bilinç kaybı sonrası '[[Lucid interval]]' (geçici uyanıklık ve hızlı koma) ptojenidir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Kafaya darbe → temporal kemik kırığı → A. meningea MEDİA yırtılması → EPİDURAL hematom. Hasta önce bayılıyor, sonra uyanıyor (LUCİD interval = 'aydınlık aralık'), sonra tekrar komaya giriyor. 'Talk and die' — konuşup ölme sendromu."
+    },
+    {
+      "id": "patk_325",
+      "question": "Subaraknoid kanamanın (SAK) en sık non-travmatik nedeni ve beyin omurilik sıvısı (BOS) bulgusu nedir?",
+      "answer": "Sakküler (Berry) anevrizma rüptürü. LP'de kanlı BOS veya [[Ksantokromi]] (sarı renk) görülür.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Beyindeki BERRY (çilek) anevrizması patladı — kan subaraknoid aralığa doldu! BOS'ta kan veya ksantokromi (sarı renk, hemoglobin yıkım ürünü) görülüyor. 'Berry patlayınca SAK olur, BOS kana boyanır' — en şiddetli baş ağrısıyla başlar."
+    },
+    {
+      "id": "patk_326",
+      "question": "Multipl Skleroz (MS) patojenezi nedir?",
+      "answer": "[[Merkezi Sinir Sistemi]] (MSS) miyelinine karşı gelişen otoimmün demyelinizasyon plağı oluşumları.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: MS'te bağışıklık sistemi MSS'nin miyelin kılıfını soyuyor — sinirlerin izolasyonu kalktığında elektrik sinyalleri kaçırıyor. Beyin ve omurilikte demyelinizasyon plakları oluşuyor. 'MS = Miyelin Soyucu' diye hatırla."
+    },
+    {
+      "id": "patk_327",
+      "question": "Guillain-Barré Sendromu'nda etkilenen sinir kılıfı hücresi hangisidir ve klinik ilerleyişi nasıldır?",
+      "answer": "[[Schwann hücreleri]] (Periferik sinir miyelini). Asendan (Aşağıdan yukarı, bacaklardan yukarı doğru ilerleyen) simetrik güçsüzlük ve arefleksi.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: GBS = periferik sinirlerin Schwann hücreleri saldırı altında! Bacaklardan başlayıp yukarı doğru tırmanan (asendan) felç — sanki bataklıkta aşağıdan yukarı batıyorsun. MS beyini soyar, GBS periferi soyar. 'Guillain = ayaktan yukarı tırmanır.'"
+    },
+    {
+      "id": "patk_328",
+      "question": "Parkinson Hastalığında dejenerasyona uğrayan (ölen) hücreler nerede bulunur ve mikroskopta hücre içinde ne saptanır?",
+      "answer": "[[Substantia nigra]] (pars compacta) dopaminerjik nöronları. Hücre içi kalıntıya [[Lewy cisimciği]] ([[alfa-sinüklein]] agregatları) denir.",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Parkinson'da SUBSTANTİA NİGRA (kara madde) gerçekten 'kararıyor' — dopamin nöronları ölüyor ve geride LEWY cisimcikleri (alfa-sinüklein topakları) bırakıyor. Kara bölge soluklaşıyor, dopamin azalıyor, hasta titriyor. 'Nigra + Lewy = Parkinson.'"
+    },
+    {
+      "id": "patk_329",
+      "question": "Erişkinlerin en sık görülen primer malign intrakranyal tümörü (Glial hücreli) hangisidir?",
+      "answer": "[[Glioblastoma Multiforme]] (Nekroz ve etrafında pseudopalisading hücre dizilimi/ damar proliferasyonu, yüksek gradeli astrositom).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: GBM = 'Great Big Monster' — beyindeki en agresif canavar! Nekroz etrafında hücreler dizi halinde (pseudopalisading) dizilmiş sanki yangın etrafında nöbet tutan askerler. Erişkinin en sık primer beyin tümörü, en yüksek grade astrositom."
+    },
+    {
+      "id": "patk_330",
+      "question": "Menenjiom, beyin zarlarından köken alan ve X-ray/mikroskop ile hangi klasik bulguyu (sekresyon kalıntısı kalsifikasyonu) gösteren genellikle benign tümördür?",
+      "answer": "[[Psammoma cisimcikleri]] (kalsifiye dairesel birikimler). (Dura'ya geniş bir tabanla oturur - dural tail).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: MENENJİOM dura üzerine oturan uslu bir tümör — PSAMMOM (kum = psammos) cisimcikleri bırakıyor: küçük kalsifiye kum taneleri. 'Psammo = kum, meningiom = zardan gelen kumlu tümör.' Dural tail ile kuyruğunu gösteriyor."
+    },
+    {
+      "id": "patk_331",
+      "question": "Çocukluk çağında arka çukurda (infratentorial) en sık görülen benign kistik beyin tümörü hangisidir?",
+      "answer": "[[Pilositik Astrositom]] ([[Rosenthal fiberleri]] içerir).",
+      "difficulty": "Orta",
+      "tags": [
+        "Patoloji"
+      ],
+      "story_hint": "💡 HİKAYE: Çocuğun arka çukurunda (serebellum) kistik bir balon var — PİLOSİTİK ASTROSİTOM! İçinde ROSENTHAL fiberleri (sosis şeklinde eozinofilik yapılar) var. 'Pilo = kıl gibi ince lifli, Rosenthal = kırmızı gül (eozinofilik)' — çocuğun benign kistik tümörü."
+    }
+  ],
+  "id": "patoloji_kons_batch3-topic-0",
+  "topic": "Patoloji - Konsolide (Batch 3)",
+  "sub_topic": "Patoloji - Konsolide (Batch 3)",
+  "content_summary": "",
+  "tus_spots": []
+}

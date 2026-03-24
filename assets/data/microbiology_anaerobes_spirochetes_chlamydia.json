@@ -10,7 +10,8 @@
       {
         "id": "fc-asc-100",
         "question": "Sifiliz (Frengi) etkeni nedir?",
-        "answer": "Treponema pallidum."
+        "answer": "Treponema pallidum.",
+        "story_hint": "💡 HİKAYE: Treponema pallidum, sifilizin soluk (pallidum) yüzlü hayaleti gibi dolanır. İlk hediye ağrısız bir şankır bırakır — 'Ağrısız yara = Frengi' diye hatırla, bu hayalet acıtmadan yaklaşır."
       }
     ],
     "tus_spots": [
@@ -29,7 +30,8 @@
       {
         "id": "fc-asc-110",
         "question": "Chlamydia' nın enfeksiyöz formu hangisidir?",
-        "answer": "Elementer Cisim (EC)."
+        "answer": "Elementer Cisim (EC).",
+        "story_hint": "💡 HİKAYE: Chlamydia'nın Elementer Cismi, dış dünyaya gönderilen zırhlı kapsüldür — küçük ama dayanıklı. Hücreye girince Retiküler Cisim'e dönüşüp çoğalmaya başlar, tıpkı tohumun filize dönmesi gibi."
       }
     ],
     "tus_spots": [

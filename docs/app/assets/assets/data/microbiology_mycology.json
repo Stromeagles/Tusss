@@ -1,0 +1,39 @@
+[
+  {
+    "id": "micro-myco-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Mikoloji",
+    "topic": "Sistemik Mikozlar",
+    "sub_topic": "Dimorfik Mantarlar",
+    "content_summary": "Doğada küf, vücutta maya formunda bulunurlar.",
+    "flashcards": [
+      {
+        "id": "fc-myco-100",
+        "question": "Gemi dümeni şeklinde maya hücreleri yapan mantar hangisidir?",
+        "answer": "Paracoccidioides brasiliensis."
+      }
+    ],
+    "tus_spots": [
+      "Histoplasma makrofajlar içinde küçük mayalar şeklinde görülür.",
+      "Coccidioides vücutta sferül oluşturur."
+    ]
+  },
+  {
+    "id": "micro-myco-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Mikoloji",
+    "topic": "Fırsatçı Mikozlar",
+    "sub_topic": "Cryptococcus neoformans",
+    "content_summary": "Kapsüllü mantardır. Çini mürekkebi ile gösterilir.",
+    "flashcards": [
+      {
+        "id": "fc-myco-110",
+        "question": "Çini mürekkebi (India ink) ile negatif boyanan kapsüllü mantar?",
+        "answer": "Cryptococcus neoformans."
+      }
+    ],
+    "tus_spots": [
+      "Kriptokok menenjiti HIV hastalarında görülen önemli bir fırsatçı enfeksiyondur."
+    ]
+  }
+]

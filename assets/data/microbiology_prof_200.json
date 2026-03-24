@@ -1,0 +1,578 @@
+[
+  {
+    "id": "micro-prof-gen-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Genel Mikrobiyoloji",
+    "topic": "Bakteri Genetiği ve Direnç",
+    "sub_topic": "Plazmidler ve Transpozonlar",
+    "flashcards": [
+      {
+        "id": "fc-micro-prof-001",
+        "question": "Bakterilerde 'zıplayan genler' olarak bilinen genetik elemanlar?",
+        "answer": "Transpozonlar.",
+        "difficulty": "easy",
+        "tags": [
+          "Genetik"
+        ],
+        "story_hint": "💡 HİKAYE: Transpozonlar genomun parazitleri — bir yerden diğerine zıplayarak yer değiştirirler! Sanki DNA'da parkur yapan atlet gibi. Barbara McClintock mısır bitkisinde keşfetti, Nobel aldı. 'Transpozon = Trampolin geni, zıpla dur!'"
+      },
+      {
+        "id": "fc-micro-prof-002",
+        "question": "Kromozomal DNA'ya entegre olabilen plazmidlere ne ad verilir?",
+        "answer": "Epizom.",
+        "difficulty": "medium",
+        "tags": [
+          "Genetik"
+        ],
+        "story_hint": "💡 HİKAYE: Epizom hem bağımsız hem de kromozoma entegre olabilen çift hayatlı plazmid — bazen serbest dolaşır, bazen eve (kromozoma) yerleşir! F plazmidi en bilinen epizom. 'Epizom = Episode (Bölüm) gibi, bazen bağımsız bazen seri içinde!'"
+      },
+      {
+        "id": "fc-micro-prof-003",
+        "question": "F pilusu aracılığıyla gerçekleşen gen transferi?",
+        "answer": "Konjugasyon.",
+        "difficulty": "easy",
+        "tags": [
+          "Genetik"
+        ],
+        "story_hint": "💡 HİKAYE: F pilusu iki bakteri arasında köprü kurar — konjugasyon tüpü üzerinden plazmid DNA aktarılır! F+ bakteri F- bakteriye plazmid gönderir. 'F pilus = Flört köprüsü, Konjugasyon = Bakteriyel evlilik!' diye kodla."
+      }
+    ],
+    "tus_spots": [
+      "Konjugasyon en sık direnç yayılım yoludur.",
+      "Transdüksiyon için faj gereklidir."
+    ],
+    "clinical_cases": [
+      {
+        "id": "cc-micro-prof-001",
+        "case": "Klebsiella pneumoniae suşu izole edilen bir hastada çoklu ilaç direncinin (horizontal) en yaygın bulaş mekanizması hangisidir?",
+        "options": [
+          "A) Transformasyon",
+          "B) Transdüksiyon",
+          "C) Konjugatif Plazmidler",
+          "D) Mutasyon",
+          "E) DNA Giraz İnhibisyonu"
+        ],
+        "correct_answer": "C) Konjugatif Plazmidler",
+        "explanation": "Hızlı direnç yayılımı, bakteriler arasında genetik materyal aktarımı sağlayan konjugasyon yoluyla gerçekleşir. Klebsiella ve E.coli gibi Gram negatif basillerde bu süreç konjugatif plazmidler üzerinden yürütülür.\n\n💡 KRİTİK BİLGİ: Gram negatif çubuklarda (Kleb., E.coli) plazmid aracılı konjugasyon 'P-pili' üzerinden gerçekleşir ve hastane ortamında çoklu ilaç direncinin (horizontal gen transferi) en sık nedenidir.\n\n🎓 HOCA ÖZETİ (PROF. NOTU): \n- Gram Negatiflerde Konjugasyon: Seks pilusu (sekretuar pili) kullanılır.\n- Gram Pozitiflerde Konjugasyon: Seks pilusu YOKTUR. Feromonlar (clumping factor) yardımıyla hücreler birbirine yapışır.\n- Konjugasyon hem kromozom hem plazmid aktarabilir, ancak en sık plazmid (R plazmidi) aktarılır.",
+        "difficulty": "medium"
+      },
+      {
+        "id": "cc-micro-prof-002",
+        "case": "Aşağıdakilerden hangisi Neisseria meningitidis'in nazofarenks epiteline tutunmasını sağlayan en önemli virülans faktörüdür?",
+        "options": [
+          "A) Kapsül",
+          "B) Pili",
+          "C) IgA Proteaz",
+          "D) LOS (Lipooligosakkarid)",
+          "E) Hiyalüronidaz"
+        ],
+        "correct_answer": "B) Pili",
+        "explanation": "Meningokoklar nazofarenks mukozasına pili (fimbriya) yapıları ile tutunurlar. Pili, kolonizasyonun ilk aşaması için kritiktir. Kapsül ise daha çok fagositozdan korunma ve sistemik yayılım (menenjit) ile ilgilidir.\n\n💡 KRİTİK BİLGİ: N. meningitidis ve N. gonorrhoeae için pili, mukozaya 'yapışma' (adhezyon) demektir. Pili olmadan hastalık yapamazlar.\n\n🎓 HOCA ÖZETİ (PROF. NOTU): \n- Neisseria türlerinde 'Antijenik Varyasyon' denince akla Pili ve Opa proteinleri gelmelidir. \n- N. meningitidis'te endotoksin olarak LPS değil, LOS (Lipooligosakkarid) bulunur. Farkı: O-antijeni yoktur, bu yüzden daha hızlı yayılır ve şoka sokar!",
+        "difficulty": "easy"
+      },
+      {
+        "id": "cc-micro-prof-003",
+        "case": "Diyabetik ketoasidoz tablosuyla başvuran bir hastada gelişen rinoserebral enfeksiyonun en olası etkeni hangisidir?",
+        "options": [
+          "A) Aspergillus fumigatus",
+          "B) Candida albicans",
+          "C) Rhizopus türleri",
+          "D) Cryptococcus neoformans",
+          "E) Mucor türleri"
+        ],
+        "correct_answer": "C) Rhizopus türleri",
+        "explanation": "Diyabetik ketoasidozlu hastalarda 90 derece dik açıyla dallanan, septasız hiflere sahip Zygomycetes sınıfı mantarlar (Rhizopus, Mucor) çok hızlı ilerleyen rinoserebral enfeksiyona yol açar.\n\n💡 KRİTİK BİLGİ: Tusta 'Diyabet + Burun/Beyin enfeksiyonu + 90 derece dallanma' üçlüsü gelirse tek cevap: Mukormikoz (Rhizopus/Mucor).\n\n🎓 HOCA ÖZETİ (PROF. NOTU): \n- Neden Diyabetik Ketoasidoz? Çünkü bu mantarlar asidik ortamda ve yüksek glukoz seviyelerinde ketoz redüktaz enzimi sayesinde hızla ürer. Ayrıca demir bağlayıcı proteinlere (siderofor) sahiptirler, ketoasidozda serbest demir artışı üremelerini kamçılar!",
+        "difficulty": "medium"
+      },
+      {
+        "id": "cc-micro-prof-004",
+        "case": "Klamidya yaşam döngüsüyle ilgili aşağıdakilerden hangisi yanlıştır?",
+        "options": [
+          "A) Elementer cisimcik (EB) hücre dışı stabil, bulaşıcı formdur.",
+          "B) Retiküler cisimcik (RB) hücre içi çoğalan, replikatif formdur.",
+          "C) EB, konak hücresine endositoz ile girer.",
+          "D) RB, ATP üretebilen bağımsız bir formdur.",
+          "E) RB'ler tekrar EB'ye dönüşerek hücreden salınır."
+        ],
+        "correct_answer": "D) RB, ATP üretebilen bağımsız bir formdur.",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Chlamydia türleri 'enerji paraziti' (obligat intraselüler) olarak bilinirler çünkü kendi ATP'lerini sentezleyemezler, konak hücreden ATP çalarlar (ATP/ADP translokaz).\n\n🎓 HOCA ÖZETİ:\n- EB (Elementer): E-nfeksiyöz (Bulaşıcı), dış ortamda yaşar, inerttir.\n- RB (Retiküler): R-eplikatif (Çoğalan), hücre içinde bölünür, metabolik aktiftir ama bulaşıcı değildir.\n- TUS İPUCU: Giemsa boyası ile inklüzyon cisimcikleri görülür. Tanıda PCR (NAAT) altın standarttır.",
+        "difficulty": "hard"
+      },
+      {
+        "id": "cc-micro-prof-005",
+        "case": "Atipik pnömoni tanısıyla takip edilen bir hastada, eritrositleri soğukta kümeleyen (soğuk aglütinin +) bir etken saptanıyor. Bu etken aşağıdakilerden hangisidir?",
+        "options": [
+          "A) Legionella pneumophila",
+          "B) Mycoplasma pneumoniae",
+          "C) Chlamydia psittaci",
+          "D) Coxiella burnetii",
+          "E) Klebsiella pneumoniae"
+        ],
+        "correct_answer": "B) Mycoplasma pneumoniae",
+        "explanation": "PROFESÖR DEĞERLENDİRMESİ: Mycoplasma pneumoniae, hücre duvarı olmayan, membranında sterol (istisna!) bulunduran en küçük bakteridir.\n\n🎓 HOCA ÖZETİ:\n- Soğuk Aglütinin: Mycoplasma enfeksiyonunda eritrosit 'I' antijenine karşı IgM antikorları oluşur, testi (+) yapar.\n- Klinik: Genç erişkinde 'Walk-in' (yürüyen) pnömoni yapar; AC grafisi kötü ama hasta rahattır.\n- Tedavi: Penisilinler etkisizdir (duvar yok!). Makrolidler veya florokinolonlar seçilir.",
+        "difficulty": "medium"
+      }
+    ],
+    "content_summary": ""
+  },
+  {
+    "id": "micro-prof-bact-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Pozitif Koklar",
+    "sub_topic": "Staphylococcus aureus",
+    "flashcards": [
+      {
+        "id": "fc-micro-prof-010",
+        "question": "S. aureus'ta IgG Fc'sine bağlanan protein?",
+        "answer": "Protein A.",
+        "difficulty": "medium",
+        "tags": [
+          "S. aureus"
+        ],
+        "story_hint": "💡 HİKAYE: Protein A S. aureus'un gizli silahı — antikorun Fc kısmına ters bağlanarak opsonizasyonu engeller! Antikor düşmanı kucaklamak yerine arkasını dönüyor. 'Protein A = Antikoru ters giydiren hırsız!' diye kodla."
+      },
+      {
+        "id": "fc-micro-prof-011",
+        "question": "MRSA direncinden sorumlu gen?",
+        "answer": "mecA geni.",
+        "difficulty": "hard",
+        "tags": [
+          "MRSA"
+        ],
+        "story_hint": "💡 HİKAYE: mecA geni PBP2a adında değişik bir penisilin bağlayıcı protein kodlar — beta-laktam antibiyotikler bu modifiye PBP'ye bağlanamaz! 'mecA = Metisilin Engelleyen Casus Ajan, PBP2a = Yeni kilit' diye kodla."
+      },
+      {
+        "id": "fc-micro-prof-012",
+        "question": "S. aureus gıda zehirlenmesi neden bu kadar hızlı başlar?",
+        "answer": "Pre-formed enterotoksin alımı nedeniyle.",
+        "difficulty": "medium",
+        "tags": [
+          "Toksin"
+        ],
+        "story_hint": "💡 HİKAYE: S. aureus gıdada önceden toksin üretir — yemek yediğinde bakteri değil hazır toksin alıyorsun! 1-6 saat içinde bulantı-kusma başlar, çok kısa inkübasyon. 'Pre-formed = Hazır bomba, yeme = patlama!' diye kodla."
+      }
+    ],
+    "content_summary": "",
+    "tus_spots": []
+  },
+  {
+    "id": "micro-prof-bact-003",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Gram Negatif Koklar",
+    "sub_topic": "Neisseria meningitidis",
+    "flashcards": [
+      {
+        "id": "fc-micro-prof-040",
+        "question": "N. meningitidis'te nazofarenks kolonizasyonunu sağlayan faktör?",
+        "answer": "Pili.",
+        "difficulty": "medium",
+        "tags": [
+          "Neisseria"
+        ],
+        "story_hint": "💡 HİKAYE: N. meningitidis pilileri (fimbriyaları) ile nazofarenks mukozasına yapışır — tıpkı duvara tutunan sarmaşık gibi! Pili olmadan kayıp düşer, kolonize olamaz. 'Pili = Yapışkan ayak, Nazofarenks = Duvar' diye kodla."
+      },
+      {
+        "id": "fc-micro-prof-041",
+        "question": "Meningokokseminin ağır tablosundan sorumlu endotoksin?",
+        "answer": "Lipooligosakkarid (LOS).",
+        "difficulty": "medium",
+        "tags": [
+          "Neisseria"
+        ],
+        "story_hint": "💡 HİKAYE: Neisseria'nın LOS'u (LPS benzeri ama daha kısa) çok güçlü endotoksin etkisi yapar — DIC ve Waterhouse-Friderichsen sendromu (bilateral adrenal nekroz)! 'LOS = Lethal Overwhelming Shock' diye kodla."
+      }
+    ],
+    "content_summary": "",
+    "tus_spots": []
+  },
+  {
+    "id": "micro-prof-myc-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Mikobakteriler",
+    "sub_topic": "Mycobacterium tuberculosis",
+    "flashcards": [
+      {
+        "id": "fc-micro-prof-050",
+        "question": "Fagozom-lizozom birleşmesini engelleyen TBC faktörü?",
+        "answer": "Sulfatidler.",
+        "difficulty": "hard",
+        "tags": [
+          "TBC"
+        ],
+        "story_hint": "💡 HİKAYE: M. tuberculosis makrofaj tarafından yutulur ama fagozom ile lizozom birleştirilmesini sulfatidlerle engeller — sanki kapıya kilit vuruyormuş gibi! Lizozomal enzimler ulaşamaz, bakteri hücre içinde rahatça yaşar. 'Sulfatid = Kapı kilidi!'"
+      },
+      {
+        "id": "fc-micro-prof-051",
+        "question": "TBC tanısında altın standart besiyeri?",
+        "answer": "Löwenstein-Jensen.",
+        "difficulty": "easy",
+        "tags": [
+          "TBC"
+        ],
+        "story_hint": "💡 HİKAYE: Löwenstein-Jensen (LJ) besiyeri yumurta bazlı yeşil renkli bir besiyeri — TBC basili burada 3-8 haftada karnabahar benzeri koloniler oluşturur! 'LJ = Lüks Jade (Yeşil) otel, TBC yavaş ama konforlu ürer' diye kodla."
+      }
+    ],
+    "content_summary": "",
+    "tus_spots": []
+  },
+  {
+    "id": "micro-prof-para-001",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Parazitoloji",
+    "topic": "Protozoonlar",
+    "sub_topic": "Plasmodium türleri",
+    "flashcards": [
+      {
+        "id": "fc-micro-prof-060",
+        "question": "Sadece retikülositleri enfekte eden sıtma etkenleri?",
+        "answer": "P. vivax ve P. ovale.",
+        "difficulty": "medium",
+        "tags": [
+          "Sıtma"
+        ],
+        "story_hint": "💡 HİKAYE: P. vivax ve P. ovale genç eritrositleri (retikülositleri) tercih eder — yaşlı hücrelere girmez! Bu yüzden parazitemi düşük kalır. P. falciparum ise her yaşta eritrosite girer, parazitemi çok yüksek olur. 'Vivax-Ovale = Genç sevici' diye kodla!"
+      },
+      {
+        "id": "fc-micro-prof-061",
+        "question": "Serebral sıtmanın temel nedeni?",
+        "answer": "Sekestrasyon.",
+        "difficulty": "hard",
+        "tags": [
+          "Sıtma"
+        ],
+        "story_hint": "💡 HİKAYE: P. falciparum enfekte eritrositlerin yüzeyinde PfEMP1 proteini eksprese eder — bu protein beyin kapillerindeki endotele yapışır (sekestrasyon)! Kapillerler tıkanır, beyin oksijensiz kalır. 'Sekestrasyon = Yapışıp tıkama = Serebral sıtma' diye kodla!"
+      }
+    ],
+    "content_summary": "",
+    "tus_spots": []
+  },
+  {
+    "id": "micro-prof-bact-004",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Bakteriyoloji",
+    "topic": "Enterobacteriaceae",
+    "sub_topic": "Salmonella ve Shigella",
+    "flashcards": [
+      {
+        "id": "fc-micro-prof-070",
+        "question": "Salmonella Typhi'de fagositozu engelleyen ve taşıyıcılığı belirleyen antijen?",
+        "answer": "Vi antijeni (Kapsül).",
+        "difficulty": "medium",
+        "tags": [
+          "Salmonella"
+        ],
+        "story_hint": "💡 HİKAYE: Vi antijeni S. Typhi'nin görünmezlik pelerini — kapsül şeklinde bakteriyi sarar, fagositlerin görmesini engeller! Kronik taşıyıcılıkta safra kesesinde Vi antijeni pozitif bakteri barınır. 'Vi = VIP koruma kalkanı' diye kodla!"
+      },
+      {
+        "id": "fc-micro-prof-071",
+        "question": "Shigella'nın hücre içine girişini sağlayan proteinler?",
+        "answer": "Ipa proteinleri (İnvazyon plazmidi antijenleri).",
+        "difficulty": "hard",
+        "tags": [
+          "Shigella"
+        ],
+        "story_hint": "💡 HİKAYE: Shigella Ipa proteinleri ile bağırsak epitel hücresinin zarını manipüle eder — hücre Shigella'yı kendi içine alır (tip III sekresyon)! 'Ipa = İçeri Pass Anahtarı' diye kodla. Shigella hücreden hücreye aktin roketi ile yayılır!"
+      },
+      {
+        "id": "fc-micro-prof-072",
+        "question": "Hemolitik Üremik Sendrom (HÜS) ile en sık ilişkili Shigella tipi?",
+        "answer": "Shigella dysenteriae tip 1 (Shiga toksin nedeniyle).",
+        "difficulty": "medium",
+        "tags": [
+          "Shigella",
+          "HÜS"
+        ],
+        "story_hint": "💡 HİKAYE: S. dysenteriae tip 1 Shiga toksini üretir — bu toksin böbrek glomerül endotelini hasar verir ve HÜS gelişir! E. coli O157:H7 de Shiga-like toksin yapar. 'Shiga toksin = Böbrek düşmanı = HÜS' diye kodla!"
+      },
+      {
+        "id": "fc-micro-prof-073",
+        "question": "Widal testi hangi hastalığın tanısında kullanılır?",
+        "answer": "Tifo (Enterik ateş).",
+        "difficulty": "easy",
+        "tags": [
+          "Tifo"
+        ],
+        "story_hint": "💡 HİKAYE: Widal testi S. Typhi'nin O ve H antijenlerine karşı antikor arar — titre artışı tifo tanısını destekler! Ama yanlış pozitiflik olabilir. 'Widal = Tifo'nun Widdet (şiddet) testi' diye kodla. Kan kültürü altın standart!"
+      }
+    ],
+    "tus_spots": [
+      "Salmonella H2S üretir (Shigella üretmez).",
+      "S. Typhi safra kesesinde kolonize olarak kronik taşıyıcılığa neden olur.",
+      "Shigella en düşük infeksiyöz doza sahip (10-100 bakteri) enterik patojendir (çünkü aside dirençlidir).",
+      "Salmonella enfeksiyonu anemik hastalarda (Örn: Sickle Cell) osteomiyelit riskini artırır."
+    ],
+    "content_summary": ""
+  },
+  {
+    "id": "micro-prof-vir-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Viroloji",
+    "topic": "RNA Virüsleri",
+    "sub_topic": "Hepatit Virüsleri",
+    "flashcards": [
+      {
+        "id": "fc-micro-prof-080",
+        "question": "Hepatit B enfeksiyonunda iyileşmeyi ve bağışıklığı gösteren temel gösterge?",
+        "answer": "Anti-HBs pozitifliği.",
+        "difficulty": "easy",
+        "tags": [
+          "HBV"
+        ],
+        "story_hint": "💡 HİKAYE: Anti-HBs bağışıklık madalyası — ister enfeksiyon geçirmiş ol ister aşı olmuş ol, Anti-HBs pozitifliği 'korunuyorsun' demek! 'Anti-HBs = Savaşı kazandın belgesi' diye kodla. Aşılı kişilerde sadece Anti-HBs pozitif!"
+      },
+      {
+        "id": "fc-micro-prof-081",
+        "question": "Pencere döneminde (window period) pozitif bulunan tek gösterge?",
+        "answer": "Anti-HBc IgM.",
+        "difficulty": "medium",
+        "tags": [
+          "HBV"
+        ],
+        "story_hint": "💡 HİKAYE: Pencere döneminde HBsAg kaybolmuş ama Anti-HBs henüz çıkmamış — ikisi de negatif! Bu boşlukta tek pozitif gösterge Anti-HBc IgM. 'Pencere = HBc IgM'in tek adam gösterisi' diye kodla. Pencereden sadece o bakıyor!"
+      },
+      {
+        "id": "fc-micro-prof-082",
+        "question": "Gebelikte mortalite riski (%20) en yüksek olan hepatit virüsü?",
+        "answer": "Hepatit E virüsü (HEV).",
+        "difficulty": "medium",
+        "tags": [
+          "HEV"
+        ],
+        "story_hint": "💡 HİKAYE: HEV normalde hafif seyreder ama gebelerde %20 mortaliteye ulaşır — özellikle 3. trimesterde fulminan hepatit riski! Fekal-oral bulaşır, su kaynaklı salgınlar yapar. 'HEV = Hamilelikte Ek Vahim (tehlikeli)' diye kodla!"
+      },
+      {
+        "id": "fc-micro-prof-083",
+        "question": "Kronikleşme riski (%80) en yüksek olan hepatit virüsü?",
+        "answer": "Hepatit C virüsü (HCV).",
+        "difficulty": "easy",
+        "tags": [
+          "HCV"
+        ],
+        "story_hint": "💡 HİKAYE: HCV sessiz katil — %80 oranında kronikleşir! Yüksek mutasyon hızı nedeniyle bağışıklık sistemi temizleyemez. Siroz ve hepatoselüler karsinoma ilerler. 'HCV = %80 Chronic = Kronik şampiyon' diye kodla. DAA ilaçlarla artık tedavi edilebilir!"
+      }
+    ],
+    "tus_spots": [
+      "HBsAg: Enfeksiyon varlığını gösterir.",
+      "HBeAg: Replikasyon ve yüksek bulaştırıcılığı gösterir.",
+      "HBV DNA'sı tam olmayan sirküler bir yapıdır (Reverse Transcriptase içerir).",
+      "HDV için HBV co-enfeksiyonu veya super-enfeksiyonu şarttır."
+    ],
+    "content_summary": ""
+  },
+  {
+    "id": "micro-prof-myco-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Mantar",
+    "topic": "Sistemik Mantarlar",
+    "sub_topic": "Candida ve Aspergillus",
+    "flashcards": [
+      {
+        "id": "fc-micro-prof-090",
+        "question": "Serumda 'Germ tüp' testi pozitifliği hangi mantar için tanısaldır?",
+        "answer": "Candida albicans.",
+        "difficulty": "easy",
+        "tags": [
+          "Candida"
+        ],
+        "story_hint": "💡 HİKAYE: Germ tüp testi hızlı ve ucuz — serum içinde 37°C'de 2-3 saat beklet, C. albicans boğumsuz hif uzatır! Diğer Candida türleri bunu yapamaz. 'Germ tüp = Albicans'ın parmak izi' diye kodla."
+      },
+      {
+        "id": "fc-micro-prof-091",
+        "question": "Bağışıklığı baskılanmış hastalarda dar açılı dallanma yapan ve galaktomannan testi ile tanınan mantar?",
+        "answer": "Aspergillus fumigatus.",
+        "difficulty": "medium",
+        "tags": [
+          "Aspergillus"
+        ],
+        "story_hint": "💡 HİKAYE: Aspergillus 45° dar açıda dallanır, septalı hifler yapar. İnvaziv asperjillozda galaktomannan antijeni kanda yükselir — bu serolojik test erken tanı için çok değerli! 'Galaktomannan = Aspergillus'un kan izi' diye kodla."
+      },
+      {
+        "id": "fc-micro-prof-092",
+        "question": "Geniş açılı (90 derece) dallanan ve diyabetiklerde rinoserebral enfeksiyon yapan mantar?",
+        "answer": "Rhyzopus veya Mucor (Zygomycetes).",
+        "difficulty": "medium",
+        "tags": [
+          "Mucor"
+        ],
+        "story_hint": "💡 HİKAYE: Mucor/Rhizopus 90° dik açıda dallanır (Aspergillus 45°), septum yoktur! Diyabetik ketoasidozda burundan girip sinüs-göz-beyin hattında ilerler. 'Mucor = 90° = Diyabet = Rinoserebral' diye kodla. Acil debridman + Amfoterisin B!"
+      }
+    ],
+    "tus_spots": [
+      "C. albicans mısır unlu Tween 80 besiyerinde klamidospor yapar.",
+      "Aspergillus 'Mantarlı top' (Aspergiloma) yapabilir.",
+      "Kriptokokozis tanısında Çini mürekkebi (Indian Ink) kullanılır.",
+      "Amfoterisin B mantar hücre membranındaki ergosterole bağlanır."
+    ],
+    "content_summary": ""
+  },
+  {
+    "id": "micro-prof-para-002",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Parazitoloji",
+    "topic": "Helmintler",
+    "sub_topic": "Nematodlar ve Sestodlar",
+    "flashcards": [
+      {
+        "id": "fc-micro-prof-100",
+        "question": "Dünya genelinde en sık görülen bağırsak helminti?",
+        "answer": "Ascaris lumbricoides.",
+        "difficulty": "easy",
+        "tags": [
+          "Ascaris"
+        ],
+        "story_hint": "💡 HİKAYE: Ascaris dünya nüfusunun yaklaşık 1 milyarını enfekte eden dev bağırsak solucanı — 20-35 cm uzunluğa ulaşır! Yetersiz hijyen ortamlarında yumurta yutularak bulaşır. 'Ascaris = A sınıfı (En sık) solucan' diye kodla!"
+      },
+      {
+        "id": "fc-micro-prof-101",
+        "question": "Perianal bölgede kaşıntı yapan ve seloteyp (selofan bant) yöntemiyle tanısı konan parazit?",
+        "answer": "Enterobius vermicularis (Kıl kurdu).",
+        "difficulty": "easy",
+        "tags": [
+          "Kılkurdu"
+        ],
+        "story_hint": "💡 HİKAYE: Kıl kurdu gece perianal bölgeye yumurta bırakır — çocuk kaşınır, parmakla ağza taşır (otoenfeksiyon)! Sabah selofan bant testi ile yumurta yakalanır. 'Enterobius = Gece kaşıntısı + Bant testi' diye kodla!"
+      },
+      {
+        "id": "fc-micro-prof-102",
+        "question": "Karaciğer kistik hidatiğine en sık neden olan parazit?",
+        "answer": "Echinococcus granulosus.",
+        "difficulty": "easy",
+        "tags": [
+          "Hidatik Kist"
+        ],
+        "story_hint": "💡 HİKAYE: E. granulosus köpek bağırsağında yaşar, yumurtaları insana bulaşınca karaciğerde büyük uniloküler kist yapar! Kist rüptürü anafilaksi yapabilir, dikkatli cerrahi şart. 'Granulosus = Grandiöz (büyük) kist = Karaciğer' diye kodla!"
+      },
+      {
+        "id": "fc-micro-prof-103",
+        "question": "Çiğ balık tüketimi ile bulaşan ve B12 vitamini eksikliğine neden olan parazit?",
+        "answer": "Diphyllobothrium latum.",
+        "difficulty": "medium",
+        "tags": [
+          "D. latum"
+        ],
+        "story_hint": "💡 HİKAYE: D. latum en uzun insan paraziti (10+ metre!) — çiğ balıktan bulaşır ve bağırsakta B12 vitaminini çalar! Megaloblastik anemi yapar. 'D. latum = Devasa balık tenyası = B12 hırsızı' diye kodla. İskandinav ülkelerinde sık!"
+      }
+    ],
+    "tus_spots": [
+      "Ascaris ve Strongyloides akciğer geçişi (Loeffler sendromu) yapar.",
+      "Trichinella spiralis çiğ domuz eti ile bulaşır, kaslara yerleşir.",
+      "Kist hidatik rüptürü anafilaktik şok riskine neden olur.",
+      "Şistozomlar deri yoluyla (serkerler) bulaşır."
+    ],
+    "content_summary": ""
+  },
+  {
+    "id": "micro-prof-mixed-1",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Karma",
+    "topic": "Klinik Önemli Sorular",
+    "flashcards": [
+      {
+        "id": "fc-micro-prof-110",
+        "question": "Vajinal akıntıda 'Clue cell' (İpucu hücresi) görülmesi?",
+        "answer": "Gardnerella vaginalis (Bakteriyel Vajinozis).",
+        "difficulty": "medium",
+        "tags": [
+          "Vajinozis"
+        ],
+        "story_hint": "💡 HİKAYE: Clue cell = epitel hücresinin yüzeyini kaplayan bakteriler — sanki hücreye kamuflaj boyası sürülmüş! Gardnerella vajinal flora dengesini bozar, balık kokulu gri akıntı yapar. 'Clue cell = Gardnerella'nın parmak izi!' diye kodla."
+      },
+      {
+        "id": "fc-micro-prof-111",
+        "question": "Boğmaca tanısında kullanılan özel besiyeri?",
+        "answer": "Bordet-Gengou veya Regan-Lowe.",
+        "difficulty": "medium",
+        "tags": [
+          "Boğmaca"
+        ],
+        "story_hint": "💡 HİKAYE: Bordet-Gengou besiyeri patates-gliserin-kan bazlı — B. pertussis burada cıva damlası benzeri koloniler oluşturur! Regan-Lowe daha modern alternatif. 'BG = Boğmaca'nın Grand oteli, cıva damlası şeklinde ürer' diye kodla!"
+      },
+      {
+        "id": "fc-micro-prof-112",
+        "question": "Fare ısırığı sonrası gelişen hastalık etkeni?",
+        "answer": "Spirillum minus veya Streptobacillus moniliformis.",
+        "difficulty": "hard",
+        "tags": [
+          "Fare Isırığı"
+        ],
+        "story_hint": "💡 HİKAYE: Fare ısırığı hastalığı iki etken yapar: Spirillum minus (Asya tipi — sodoku) ve Streptobacillus moniliformis (ABD tipi — Haverhill ateşi). 'Fare ısırığı = SM ikilisi (Spirillum + Streptobacillus)' diye kodla!"
+      },
+      {
+        "id": "fc-micro-prof-113",
+        "question": "Lyme hastalığı etkeni ve bulaştıran kene?",
+        "answer": "Borrelia burgdorferi - Ixodes cinsi kene.",
+        "difficulty": "medium",
+        "tags": [
+          "Lyme"
+        ],
+        "story_hint": "💡 HİKAYE: Ixodes kenesi Borrelia burgdorferi'yi bulaştırır — ilk bulgu eritema migrans (hedef tahtası lezyon), sonra kalp ve eklem tutulumu! 'Lyme = Ixodes kene + Borrelia + Hedef tahtası' diye kodla. ABD Connecticut eyaletinde keşfedildi!"
+      },
+      {
+        "id": "fc-micro-prof-114",
+        "question": "Q ateşi etkeni ve en önemli özelliği?",
+        "answer": "Coxiella burnetii - Pastörizasyona dirençli olması.",
+        "difficulty": "hard",
+        "tags": [
+          "Q Ateşi"
+        ],
+        "story_hint": "💡 HİKAYE: Coxiella burnetii spor benzeri yapısı sayesinde pastörizasyona bile direnir — sütten bulaşabilir! Koyun, keçi ve sığırlardan aerosolizasyonla geçer. 'Q = Question (Soru işareti) ateşi — pastörizasyona dirençli tek riketsiya!' diye kodla."
+      },
+      {
+        "id": "fc-micro-prof-115",
+        "question": "Atipik pnömoni etkeni olup hücre duvarı içermeyen bakteri?",
+        "answer": "Mycoplasma pneumoniae.",
+        "difficulty": "easy",
+        "tags": [
+          "M. pneumoniae"
+        ],
+        "story_hint": "💡 HİKAYE: Mycoplasma'nın hücre duvarı yok — bu yüzden beta-laktam antibiyotikler işe yaramaz! Zarında kolesterol var (tek bakteri!). 'Mycoplasma = Duvarsız bakteri, Beta-laktama gülüyor!' diye kodla. Makrolid veya tetrasiklin ile tedavi!"
+      },
+      {
+        "id": "fc-micro-prof-116",
+        "question": "Donovanoz (Granuloma inguinale) etkeni?",
+        "answer": "Klebsiella granulomatis.",
+        "difficulty": "hard",
+        "tags": [
+          "Donovanoz"
+        ],
+        "story_hint": "💡 HİKAYE: Donovanoz genital bölgede ağrısız granulomatöz ülserler yapar. Biyopside makrofaj içinde Donovan cisimcikleri görülür — güvenlik pini (safety pin) şeklinde! 'Donovanoz = Donovan cisimcik = Klebsiella granulomatis' diye kodla!"
+      },
+      {
+        "id": "fc-micro-prof-117",
+        "question": "Kedi tırmığı hastalığı etkeni?",
+        "answer": "Bartonella henselae.",
+        "difficulty": "easy",
+        "tags": [
+          "Kedi Tırmığı"
+        ],
+        "story_hint": "💡 HİKAYE: Kedi tırmıklar veya ısırır — Bartonella henselae bölgesel lenfadenopati yapar! Genellikle kendi kendine iyileşir. Warthin-Starry gümüş boyamayla gösterilir. 'Bartonella = Bıçkın kedi hastalığı' diye kodla!"
+      },
+      {
+        "id": "fc-micro-prof-118",
+        "question": "Epiglottit ve menenjitin çocukluk çağındaki (modern aşı öncesi) en sık etkeni?",
+        "answer": "Haemophilus influenzae tip b (Hib).",
+        "difficulty": "medium",
+        "tags": [
+          "Hib"
+        ],
+        "story_hint": "💡 HİKAYE: Hib aşısından önce çocuklarda epiglottit ve menenjitin baş nedeni Hib'di — kapsüllü tip b en virülan! PRP (poliribozilribitol fosfat) kapsül aşısı ile dramatik azaldı. 'Hib = Her çocuğun İlaç ve Bağışıklık hakkı!' diye kodla."
+      },
+      {
+        "id": "fc-micro-prof-119",
+        "question": "Bulaşıcı süngerimsi ensefalopatilerin (Prion) temel özelliği?",
+        "answer": "Nükleik asit içermeyen, yanlış katlanmış proteinler olmaları.",
+        "difficulty": "medium",
+        "tags": [
+          "Prion"
+        ],
+        "story_hint": "💡 HİKAYE: Prion DNA veya RNA içermeyen tek enfeksiyöz ajan — sadece yanlış katlanmış protein (PrPSc)! Normal PrPc'yi de yanlış katlanmaya zorlar, domino etkisi gibi yayılır. 'Prion = Proteinden ibaret, nükleik asitsiz zombi!' diye kodla."
+      }
+    ],
+    "sub_topic": "Klinik Önemli Sorular",
+    "content_summary": "",
+    "tus_spots": []
+  }
+]

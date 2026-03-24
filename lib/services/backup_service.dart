@@ -24,6 +24,8 @@ class BackupService {
     'target_score',
     'focus_minutes',
     'sm2_card_data',
+    'user_collections_v1',
+    'mock_exam_history_v1',
     'auth_logged_in',
     'auth_email',
     'auth_name',

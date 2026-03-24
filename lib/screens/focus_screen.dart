@@ -453,8 +453,8 @@ class _FocusScreenState extends State<FocusScreen>
   void _showDurationPicker(bool isDark) {
     int tempFocus = _focusMinutes;
     int tempBreak = _breakMinutes;
-    // Free: sadece 10, 15, 25 dk | Premium: tüm seçenekler
-    final freePresets = [10, 15, 25];
+    // Free: sadece 25 dk | Premium: tüm seçenekler
+    final freePresets = [25];
     final premiumPresets = [10, 15, 25, 45, 50, 60, 90, 120];
     final presets = _isPremium ? premiumPresets : freePresets;
 

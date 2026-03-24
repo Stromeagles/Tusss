@@ -6,79 +6,92 @@
       "name": "Deri ve Zuhrevi Hastaliklari (Dermatoloji)",
       "average_score": 72.7,
       "difficulty": "Cok Yuksek",
-      "advice": "Dermatoloji icin temel bilimler netlerini %90 uzerine cikarmalisin. Ozellikle Mikrobiyoloji ve Patoloji sorularini kacirmaman kritik."
+      "advice": "Dermatoloji icin temel bilimler netlerini %90 uzerine cikarmalisin. Ozellikle Mikrobiyoloji ve Patoloji sorularini kacirmaman kritik.",
+      "image_path": "assets/images/sınav.jpg"
     },
     {
       "name": "Plastik, Rekonstruktif ve Estetik Cerrahi",
       "average_score": 71.7,
       "difficulty": "Cok Yuksek",
-      "advice": "Plastik cerrahi hedefi icin Anatomi ve Genel Cerrahi vaka sorularinda kusursuz olmalisin."
+      "advice": "Plastik cerrahi hedefi icin Anatomi ve Genel Cerrahi vaka sorularinda kusursuz olmalisin.",
+      "image_path": "assets/images/genelcerrahı.jpg"
     },
     {
       "name": "Ruh Sagligi ve Hastaliklari (Psikiyatri)",
       "average_score": 73.3,
       "difficulty": "Cok Yuksek",
-      "advice": "Psikiyatri son yillarda cok yukseldi. Farmakoloji ve Noroloji konularina ekstra agirlik vermelisin."
+      "advice": "Psikiyatri son yillarda cok yukseldi. Farmakoloji ve Noroloji konularina ekstra agirlik vermelisin.",
+      "image_path": "assets/images/Aı_acıklamaları.jpg"
     },
     {
       "name": "Goz Hastaliklari",
       "average_score": 69.9,
       "difficulty": "Yuksek",
-      "advice": "Goz icin klinik bilimlerde hata payin cok dusuk olmali. Ozellikle 70 barajini asmak icin her gun 100+ soru cozmelisin."
+      "advice": "Goz icin klinik bilimlerde hata payin cok dusuk olmali. Ozellikle 70 barajini asmak icin her gun 100+ soru cozmelisin.",
+      "image_path": "assets/images/sınav.jpg"
     },
     {
       "name": "Nukleer Tip",
       "average_score": 70.6,
       "difficulty": "Yuksek",
-      "advice": "Radyoloji ve Nukleer Tip benzer puanlarda. Temel fizik ve klinik laboratuvar sorularina dikkat."
+      "advice": "Radyoloji ve Nukleer Tip benzer puanlarda. Temel fizik ve klinik laboratuvar sorularina dikkat.",
+      "image_path": "assets/images/radyo.jpg"
     },
     {
       "name": "Radyoloji",
       "average_score": 68.8,
       "difficulty": "Yuksek",
-      "advice": "Radyoloji icin vaka sorularini (Case Studies) cozme hizini artirmalisin."
+      "advice": "Radyoloji icin vaka sorularini (Case Studies) cozme hizini artirmalisin.",
+      "image_path": "assets/images/radyo.jpg"
     },
     {
       "name": "Fiziksel Tip ve Rehabilitasyon",
       "average_score": 68.9,
       "difficulty": "Yuksek",
-      "advice": "FTR hedefine ulasmak icin Anatomi netlerin belirleyici olacaktir."
+      "advice": "FTR hedefine ulasmak icin Anatomi netlerin belirleyici olacaktir.",
+      "image_path": "assets/images/anatomı.jpg"
     },
     {
       "name": "Ic Hastaliklari (Dahiliye)",
       "average_score": 63.5,
       "difficulty": "Orta - Yuksek",
-      "advice": "Dahiliye Genis bir kapsama sahip. Ozellikle vaka bazli calisma (Clinical Cases) puanini hizla artirir."
+      "advice": "Dahiliye Genis bir kapsama sahip. Ozellikle vaka bazli calisma (Clinical Cases) puanini hizla artirir.",
+      "image_path": "assets/images/dahiliye.jpg"
     },
     {
       "name": "Cocuk Sagligi ve Hastaliklari",
       "average_score": 58.2,
       "difficulty": "Orta",
-      "advice": "Pediatri icin temel mekanizmalari iyi anlamalisin. Netlerin 60 bandina yaklastiginda yerlesme sansin cok yuksek."
+      "advice": "Pediatri icin temel mekanizmalari iyi anlamalisin. Netlerin 60 bandina yaklastiginda yerlesme sansin cok yuksek.",
+      "image_path": "assets/images/pedaitr.jpg"
     },
     {
       "name": "Genel Cerrahi",
       "average_score": 56.5,
       "difficulty": "Orta",
-      "advice": "Genel cerrahi icin vaka sorulari senin en buyuk yardimcin olacaktir."
+      "advice": "Genel cerrahi icin vaka sorulari senin en buyuk yardimcin olacaktir.",
+      "image_path": "assets/images/genelcerrahı.jpg"
     },
     {
       "name": "Kadin Hastaliklari ve Dogum",
       "average_score": 52.4,
       "difficulty": "Orta",
-      "advice": "Kadin dogum hedefine ulasmak icin temel klinik bilgileri sabitlemen yeterli olacaktir."
+      "advice": "Kadin dogum hedefine ulasmak icin temel klinik bilgileri sabitlemen yeterli olacaktir.",
+      "image_path": "assets/images/klınık_vakalar.jpg"
     },
     {
       "name": "Anesteziyoloji ve Reanimasyon",
       "average_score": 48.5,
       "difficulty": "Dusun - Orta",
-      "advice": "Anestezi icin 50 puan bandini asmak seni guvenli bolgeye tasiyacaktir."
+      "advice": "Anestezi icin 50 puan bandini asmak seni guvenli bolgeye tasiyacaktir.",
+      "image_path": "assets/images/farmakolojı.jpg"
     },
     {
       "name": "Acil Tip",
       "average_score": 45.2,
       "difficulty": "Dusuk - Orta",
-      "advice": "Acil tip icin temel baraji asip klinik netlerini stabilize etmen yerlesmen icin yeterlidir."
+      "advice": "Acil tip icin temel baraji asip klinik netlerini stabilize etmen yerlesmen icin yeterlidir.",
+      "image_path": "assets/images/klınık_vakalar.jpg"
     }
   ]
 }

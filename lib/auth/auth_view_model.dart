@@ -7,9 +7,11 @@ enum AuthMode { login, signup }
 enum PasswordStrength { weak, medium, strong }
 
 class AuthViewModel extends ChangeNotifier {
-  static const _keyLoggedIn = 'auth_logged_in';
-  static const _keyEmail = 'auth_email';
-  static const _keyName = 'auth_name';
+  static const _keyLoggedIn    = 'auth_logged_in';
+  static const _keyEmail       = 'auth_email';
+  static const _keyName        = 'auth_name';
+  static const _keyRememberMe  = 'auth_remember_me';
+  static const _keySavedEmail  = 'auth_saved_email';
 
   // ── Form fields ───────────────────────────────────────────────────────────
   String name            = '';
@@ -24,6 +26,7 @@ class AuthViewModel extends ChangeNotifier {
   bool acceptTerms        = false;
   bool isLoggedIn         = false;
   bool isInitialized      = false;
+  bool rememberMe         = false;
   AuthMode mode           = AuthMode.login;
 
   // ── Validation errors ─────────────────────────────────────────────────────
@@ -53,6 +56,11 @@ class AuthViewModel extends ChangeNotifier {
 
   void setAcceptTerms(bool value) {
     acceptTerms = value;
+    notifyListeners();
+  }
+
+  void setRememberMe(bool value) {
+    rememberMe = value;
     notifyListeners();
   }
 
@@ -183,6 +191,11 @@ class AuthViewModel extends ChangeNotifier {
       name = prefs.getString(_keyName) ?? '';
       isLoggedIn = true;
     }
+    // Beni Hatırla: kaydedilmiş e-postayı forma doldur
+    rememberMe = prefs.getBool(_keyRememberMe) ?? false;
+    if (rememberMe && email.isEmpty) {
+      email = prefs.getString(_keySavedEmail) ?? '';
+    }
     isInitialized = true;
     notifyListeners();
     return loggedIn;
@@ -193,6 +206,12 @@ class AuthViewModel extends ChangeNotifier {
     await prefs.setBool(_keyLoggedIn, true);
     await prefs.setString(_keyEmail, email);
     await prefs.setString(_keyName, name);
+    await prefs.setBool(_keyRememberMe, rememberMe);
+    if (rememberMe) {
+      await prefs.setString(_keySavedEmail, email);
+    } else {
+      await prefs.remove(_keySavedEmail);
+    }
   }
 
   // ── Submit ────────────────────────────────────────────────────────────────

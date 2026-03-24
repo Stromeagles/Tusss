@@ -86,15 +86,13 @@ class _WebLandingScreenState extends State<WebLandingScreen>
                         const SizedBox(height: 36),
                         _buildHeadline(),
                         const SizedBox(height: 32),
-                        _buildStats(),
-                        const SizedBox(height: 28),
-                        _buildAppPreview(),
-                        const SizedBox(height: 28),
-                        isWide ? _buildFeaturesGrid() : _buildFeaturesList(),
-                        const SizedBox(height: 36),
                         _buildPrimaryButton(),
-                        const SizedBox(height: 14),
+                        const SizedBox(height: 12),
                         _buildStoreRow(),
+                        const SizedBox(height: 32),
+                        _buildStats(),
+                        const SizedBox(height: 32),
+                        isWide ? _buildFeaturesGrid() : _buildFeaturesList(),
                         const SizedBox(height: 32),
                         _buildFooter(),
                         const SizedBox(height: 20),
@@ -374,75 +372,13 @@ class _WebLandingScreenState extends State<WebLandingScreen>
     ).animate().fadeIn(delay: 450.ms).scale(begin: const Offset(0.96, 0.96));
   }
 
-  // ── App Screenshot Preview ─────────────────────────────────────────────────
-  Widget _buildAppPreview() {
-    final screens = [
-      ('assets/images/acılan_ekran.jpg',      'Açılış',        AppTheme.cyan),
-      ('assets/images/tus_Deneme.jpg',      'TUS Soruları',  AppTheme.neonPurple),
-      ('assets/images/Kutuphane.jpg',         'Kütüphane',     AppTheme.neonGold),
-      ('assets/images/ilerleme_gorseli.jpg',  'İlerleme',      AppTheme.success),
-      ('assets/images/sınav.jpg',             'Deneme Sınavı', const Color(0xFFF78166)),
-    ];
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: const EdgeInsets.only(left: 2, bottom: 14),
-          child: Row(
-            children: [
-              Container(
-                width: 3, height: 16,
-                decoration: BoxDecoration(
-                  gradient: const LinearGradient(
-                    colors: [Color(0xFF00D4FF), Color(0xFFA371F7)],
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                  ),
-                  borderRadius: BorderRadius.circular(2),
-                ),
-              ),
-              const SizedBox(width: 10),
-              Text(
-                'Uygulamadan Görüntüler',
-                style: GoogleFonts.inter(
-                  color: AppTheme.textSecondary,
-                  fontSize: 12,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 0.8,
-                ),
-              ),
-            ],
-          ),
-        ),
-        SizedBox(
-          height: 200,
-          child: ListView.separated(
-            scrollDirection: Axis.horizontal,
-            physics: const BouncingScrollPhysics(),
-            itemCount: screens.length,
-            separatorBuilder: (_, __) => const SizedBox(width: 10),
-            itemBuilder: (_, i) {
-              final s = screens[i];
-              return _ScreenshotCard(
-                assetPath: s.$1,
-                label: s.$2,
-                accentColor: s.$3,
-                delay: 500 + i * 80,
-              );
-            },
-          ),
-        ),
-      ],
-    ).animate().fadeIn(delay: 480.ms);
-  }
 
   Widget _buildFeaturesGrid() {
     final features = [
-      (Icons.psychology_rounded,    'AI Açıklamaları', 'Her soruya uzman anlatımı',   AppTheme.neonPurple, 'assets/images/tus_Deneme.jpg'),
-      (Icons.repeat_rounded,        'Akıllı Tekrar',   'SM-2 ile güçlü hafıza',        AppTheme.cyan,       null),
-      (Icons.local_hospital_rounded,'Klinik Vakalar',  'Gerçek TUS tarzı vakalar',     AppTheme.success,    'assets/images/sınav.jpg'),
-      (Icons.bookmark_rounded,      'Favoriler',       'Zor soruları kaydet & tekrar', AppTheme.neonGold,   'assets/images/Kutuphane.jpg'),
+      (Icons.psychology_rounded,    'AI Açıklamaları', 'Yapay zeka asistanı, her sorunun arkasındaki tıbbi mantığı açıklar, bilginizi pekiştirir.',   AppTheme.neonPurple, 'assets/images/tus_Deneme.jpg'),
+      (Icons.repeat_rounded,        'Akıllı Tekrar',   'SM-2 algoritması, unutmaya başladığınız an kartları karşınıza çıkararak kalıcı öğrenme sağlar.',        AppTheme.cyan,       'assets/images/acılan_ekran.jpg'),
+      (Icons.local_hospital_rounded,'Klinik Vakalar',  'TUS\'ta en çok kazandıran vaka sorularına özel içeriklerle klinik yaklaşımınızı geliştirin.',     AppTheme.success,    'assets/images/sınav.jpg'),
+      (Icons.bookmark_rounded,      'Favoriler & Kütüphane',       'Önemli soruları koleksiyonlara ekleyin ve dilediğiniz zaman tekrar ederek kalıcı öğrenme sağlayın.', AppTheme.neonGold,   'assets/images/Kutuphane.jpg'),
     ];
     return Column(
       children: [
@@ -461,10 +397,10 @@ class _WebLandingScreenState extends State<WebLandingScreen>
 
   Widget _buildFeaturesList() {
     final features = [
-      (Icons.psychology_rounded,    'AI Açıklamaları', 'Her soruya uzman hoca anlatımı',    AppTheme.neonPurple, 'assets/images/tus_Deneme.jpg'),
-      (Icons.repeat_rounded,        'Akıllı Tekrar',   'SM-2 algoritmasıyla güçlü hafıza',  AppTheme.cyan,       null),
-      (Icons.local_hospital_rounded,'Klinik Vakalar',  'Gerçek TUS tarzı hasta vakaları',   AppTheme.success,    'assets/images/sınav.jpg'),
-      (Icons.bookmark_rounded,      'Favori Listesi',  'Zor soruları kaydet, tekrar çalış', AppTheme.neonGold,   'assets/images/Kutuphane.jpg'),
+      (Icons.psychology_rounded,    'AI Açıklamaları', 'Yapay zeka asistanı, her sorunun arkasındaki tıbbi mantığı açıklar, bilginizi pekiştirir.',    AppTheme.neonPurple, 'assets/images/tus_Deneme.jpg'),
+      (Icons.repeat_rounded,        'Akıllı Tekrar',   'SM-2 algoritmasıyla unutmayı engelleyen bilimsel çalışma sistemi.',  AppTheme.cyan,       'assets/images/acılan_ekran.jpg'),
+      (Icons.local_hospital_rounded,'Klinik Vakalar',  'TUS tarzı gerçek hasta vakaları üzerinden klinik muhakeme eğitimi.',   AppTheme.success,    'assets/images/sınav.jpg'),
+      (Icons.bookmark_rounded,      'Favoriler & Kütüphane',  'Önemli soruları kaydedin ve dilediğiniz zaman tekrar ederek kalıcı öğrenme sağlayın.', AppTheme.neonGold,   'assets/images/Kutuphane.jpg'),
     ];
     return Column(
       children: features.asMap().entries.map((e) =>
@@ -500,7 +436,7 @@ class _WebLandingScreenState extends State<WebLandingScreen>
             const Icon(Icons.rocket_launch_rounded, color: Colors.white, size: 20),
             const SizedBox(width: 10),
             Text(
-              'Hemen Başla — Ücretsiz',
+              'Hemen Web\'te Başla — Ücretsiz',
               style: GoogleFonts.inter(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,
@@ -581,171 +517,140 @@ class _FeatureCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final hasImage = f.$5 != null;
-    return Container(
-      decoration: BoxDecoration(
-        color: f.$4.withValues(alpha: 0.06),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: f.$4.withValues(alpha: 0.18)),
-      ),
-      clipBehavior: Clip.antiAlias,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          if (hasImage)
-            SizedBox(
-              height: 90,
-              width: double.infinity,
-              child: Stack(
-                fit: StackFit.expand,
-                children: [
-                  Image.asset(
-                    f.$5!,
-                    fit: BoxFit.cover,
-                    cacheWidth: 400,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors: [
-                          Colors.transparent,
-                          f.$4.withValues(alpha: 0.55),
-                        ],
-                        stops: const [0.3, 1.0],
+    return GestureDetector(
+      onTap: () {
+        showDialog(
+          context: context,
+          builder: (context) => BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+            child: Center(
+              child: Container(
+                margin: const EdgeInsets.all(24),
+                padding: const EdgeInsets.all(24),
+                decoration: BoxDecoration(
+                  color: AppTheme.surface.withValues(alpha: 0.9),
+                  borderRadius: BorderRadius.circular(24),
+                  border: Border.all(color: f.$4.withValues(alpha: 0.3)),
+                  boxShadow: [
+                    BoxShadow(color: Colors.black.withValues(alpha: 0.4), blurRadius: 40),
+                  ],
+                ),
+                constraints: const BoxConstraints(maxWidth: 400),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      width: 56, height: 56,
+                      decoration: BoxDecoration(
+                        color: f.$4.withValues(alpha: 0.15),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Icon(f.$1, color: f.$4, size: 28),
+                    ),
+                    const SizedBox(height: 18),
+                    Text(
+                      f.$2,
+                      style: GoogleFonts.outfit(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w800,
+                        color: AppTheme.textPrimary,
                       ),
                     ),
-                  ),
-                ],
-              ),
-            ),
-          Padding(
-            padding: const EdgeInsets.all(12),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  width: 32,
-                  height: 32,
-                  decoration: BoxDecoration(
-                    color: f.$4.withValues(alpha: 0.16),
-                    borderRadius: BorderRadius.circular(9),
-                  ),
-                  child: Icon(f.$1, color: f.$4, size: 16),
-                ),
-                const SizedBox(width: 9),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        f.$2,
-                        style: GoogleFonts.inter(
-                          color: AppTheme.textPrimary,
-                          fontSize: 12,
-                          fontWeight: FontWeight.w700,
-                        ),
+                    const SizedBox(height: 12),
+                    Text(
+                      f.$3,
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.inter(
+                        fontSize: 15,
+                        color: AppTheme.textSecondary,
+                        height: 1.5,
                       ),
-                      const SizedBox(height: 2),
-                      Text(
-                        f.$3,
-                        style: GoogleFonts.inter(
-                          color: AppTheme.textSecondary,
-                          fontSize: 10,
-                          height: 1.4,
-                        ),
+                    ),
+                    const SizedBox(height: 24),
+                    TextButton(
+                      onPressed: () => Navigator.pop(context),
+                      style: TextButton.styleFrom(
+                        backgroundColor: f.$4.withValues(alpha: 0.1),
+                        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                       ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    ).animate().fadeIn(delay: Duration(milliseconds: delay)).slideY(begin: 0.05, end: 0);
-  }
-}
-
-class _ScreenshotCard extends StatelessWidget {
-  final String assetPath;
-  final String label;
-  final Color accentColor;
-  final int delay;
-  const _ScreenshotCard({
-    required this.assetPath,
-    required this.label,
-    required this.accentColor,
-    required this.delay,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 120,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: accentColor.withValues(alpha: 0.25)),
-        boxShadow: [
-          BoxShadow(
-            color: accentColor.withValues(alpha: 0.12),
-            blurRadius: 16,
-            offset: const Offset(0, 6),
-          ),
-        ],
-      ),
-      clipBehavior: Clip.antiAlias,
-      child: Stack(
-        fit: StackFit.expand,
-        children: [
-          Image.asset(
-            assetPath,
-            fit: BoxFit.cover,
-            cacheWidth: 300,
-          ),
-          // Bottom gradient + label
-          Positioned(
-            left: 0, right: 0, bottom: 0,
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Colors.transparent,
-                    Colors.black.withValues(alpha: 0.72),
+                      child: Text('Anladım', style: TextStyle(color: f.$4, fontWeight: FontWeight.bold)),
+                    ),
                   ],
                 ),
               ),
-              child: Text(
-                label,
-                style: GoogleFonts.inter(
-                  color: Colors.white,
-                  fontSize: 11,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 0.2,
-                ),
-              ),
             ),
           ),
-          // Top accent dot
-          Positioned(
-            top: 8, right: 8,
-            child: Container(
-              width: 8, height: 8,
-              decoration: BoxDecoration(
-                color: accentColor,
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(color: accentColor.withValues(alpha: 0.6), blurRadius: 6),
+        );
+      },
+      child: Container(
+        decoration: BoxDecoration(
+          color: f.$4.withValues(alpha: 0.08),
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: f.$4.withValues(alpha: 0.18)),
+        ),
+        clipBehavior: Clip.antiAlias,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (hasImage)
+              SizedBox(
+                height: 100,
+                width: double.infinity,
+                child: Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    Image.asset(
+                      f.$5!,
+                      fit: BoxFit.cover,
+                      cacheWidth: 400,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [
+                            Colors.transparent,
+                            f.$4.withValues(alpha: 0.6),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            Padding(
+              padding: const EdgeInsets.all(12),
+              child: Row(
+                children: [
+                  Container(
+                    width: 32, height: 32,
+                    decoration: BoxDecoration(
+                      color: f.$4.withValues(alpha: 0.16),
+                      borderRadius: BorderRadius.circular(9),
+                    ),
+                    child: Icon(f.$1, color: f.$4, size: 16),
+                  ),
+                  const SizedBox(width: 9),
+                  Expanded(
+                    child: Text(
+                      f.$2,
+                      style: GoogleFonts.inter(
+                        color: AppTheme.textPrimary,
+                        fontSize: 13,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ),
+                  Icon(Icons.chevron_right_rounded, color: f.$4.withValues(alpha: 0.5), size: 16),
                 ],
               ),
             ),
-          ),
-        ],
-      ),
-    ).animate().fadeIn(delay: Duration(milliseconds: delay)).slideX(begin: 0.1, end: 0);
+          ],
+        ),
+      ).animate().fadeIn(delay: Duration(milliseconds: delay)).slideY(begin: 0.05, end: 0),
+    );
   }
 }
 

@@ -6,6 +6,7 @@ import '../models/progress_model.dart';
 import '../models/subject_registry.dart';
 import '../services/data_service.dart';
 import '../services/spaced_repetition_service.dart';
+import '../services/leaderboard_service.dart';
 
 class ProgressAnalyticsScreen extends StatefulWidget {
   final UserProfile user;
@@ -23,11 +24,13 @@ class ProgressAnalyticsScreen extends StatefulWidget {
 
 class _ProgressAnalyticsScreenState extends State<ProgressAnalyticsScreen> {
   late Future<List<_SubjectMasteryData>> _masteryFuture;
+  late Future<List<LeaderboardEntry>> _leaderboardFuture;
 
   @override
   void initState() {
     super.initState();
     _masteryFuture = _loadMasteryData();
+    _leaderboardFuture = LeaderboardService().getTopUsers();
   }
 
   Future<List<_SubjectMasteryData>> _loadMasteryData() async {
@@ -112,6 +115,17 @@ class _ProgressAnalyticsScreenState extends State<ProgressAnalyticsScreen> {
                   ),
                   const SizedBox(height: 16),
                   _buildSubjectMastery(isDark),
+                  const SizedBox(height: 28),
+                  Text(
+                    'Haftalık Sıralama',
+                    style: GoogleFonts.inter(
+                      color: isDark ? Colors.white : AppTheme.textPrimary,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  _buildLeaderboard(isDark),
                   const SizedBox(height: 100),
                 ],
               ),
@@ -391,6 +405,185 @@ class _ProgressAnalyticsScreenState extends State<ProgressAnalyticsScreen> {
       padding: const EdgeInsets.only(bottom: 8, left: 4),
       child: Text(message,
         style: GoogleFonts.inter(color: subColor.withValues(alpha: 0.6), fontSize: 13, fontStyle: FontStyle.italic)),
+    );
+  }
+
+  Widget _buildLeaderboard(bool isDark) {
+    return FutureBuilder<List<LeaderboardEntry>>(
+      future: _leaderboardFuture,
+      builder: (context, snap) {
+        if (snap.connectionState == ConnectionState.waiting) {
+          return const Padding(
+            padding: EdgeInsets.symmetric(vertical: 24),
+            child: Center(
+              child: CircularProgressIndicator(color: AppTheme.coral, strokeWidth: 2.5),
+            ),
+          );
+        }
+
+        final entries = snap.data ?? [];
+        if (entries.isEmpty) {
+          return Container(
+            padding: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              color: isDark ? AppTheme.surface : Colors.white,
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(
+                color: AppTheme.coral.withValues(alpha: 0.2),
+              ),
+            ),
+            child: Text(
+              'Henüz sıralama verisi yok — ilk sen ol!',
+              style: GoogleFonts.inter(
+                color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
+                fontSize: 14,
+              ),
+            ),
+          );
+        }
+
+        return Container(
+          decoration: BoxDecoration(
+            color: isDark ? AppTheme.surface : Colors.white,
+            borderRadius: BorderRadius.circular(24),
+            border: Border.all(
+              color: AppTheme.coral.withValues(alpha: 0.15),
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: AppTheme.coral.withValues(alpha: isDark ? 0.08 : 0.04),
+                blurRadius: 20,
+                offset: const Offset(0, 8),
+              ),
+            ],
+          ),
+          child: Column(
+            children: [
+              // Header
+              Padding(
+                padding: const EdgeInsets.fromLTRB(20, 16, 20, 12),
+                child: Row(
+                  children: [
+                    const Icon(Icons.emoji_events_rounded,
+                        color: Color(0xFFFBBF24), size: 20),
+                    const SizedBox(width: 8),
+                    Text(
+                      'Bu Hafta En Çok Çözenler',
+                      style: GoogleFonts.inter(
+                        color: isDark ? Colors.white : AppTheme.textPrimary,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const Divider(height: 1, thickness: 1, indent: 20, endIndent: 20),
+              ...entries.asMap().entries.map(
+                    (e) => _buildLeaderboardRow(e.key, e.value, isDark),
+                  ),
+              const SizedBox(height: 8),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildLeaderboardRow(int index, LeaderboardEntry entry, bool isDark) {
+    final rank = index + 1;
+    final medalColors = {
+      1: const Color(0xFFFBBF24), // altın
+      2: const Color(0xFF9CA3AF), // gümüş
+      3: const Color(0xFFB45309), // bronz
+    };
+    final rankColor = medalColors[rank] ?? AppTheme.textMuted;
+    final isMe = entry.isCurrentUser;
+
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 3),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      decoration: BoxDecoration(
+        color: isMe
+            ? AppTheme.coral.withValues(alpha: 0.1)
+            : Colors.transparent,
+        borderRadius: BorderRadius.circular(12),
+        border: isMe
+            ? Border.all(color: AppTheme.coral.withValues(alpha: 0.3))
+            : null,
+      ),
+      child: Row(
+        children: [
+          // Sıra
+          SizedBox(
+            width: 28,
+            child: rank <= 3
+                ? Icon(Icons.emoji_events_rounded, color: rankColor, size: 20)
+                : Text(
+                    '$rank',
+                    style: GoogleFonts.inter(
+                      color: AppTheme.textMuted,
+                      fontSize: 13,
+                      fontWeight: FontWeight.w700,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+          ),
+          const SizedBox(width: 10),
+          // Avatar
+          CircleAvatar(
+            radius: 16,
+            backgroundColor: AppTheme.violet.withValues(alpha: 0.3),
+            backgroundImage: entry.photoUrl != null
+                ? NetworkImage(entry.photoUrl!)
+                : null,
+            child: entry.photoUrl == null
+                ? Text(
+                    entry.displayName.isNotEmpty
+                        ? entry.displayName[0].toUpperCase()
+                        : '?',
+                    style: GoogleFonts.inter(
+                      color: Colors.white,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  )
+                : null,
+          ),
+          const SizedBox(width: 10),
+          // İsim
+          Expanded(
+            child: Text(
+              isMe ? '${entry.displayName} (Sen)' : entry.displayName,
+              style: GoogleFonts.inter(
+                color: isMe
+                    ? AppTheme.coral
+                    : (isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary),
+                fontSize: 13,
+                fontWeight: isMe ? FontWeight.w700 : FontWeight.w500,
+              ),
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+          // Skor
+          Text(
+            '${entry.weeklyCount}',
+            style: GoogleFonts.inter(
+              color: isDark ? Colors.white : AppTheme.textPrimary,
+              fontSize: 15,
+              fontWeight: FontWeight.w800,
+            ),
+          ),
+          const SizedBox(width: 4),
+          Text(
+            'soru',
+            style: GoogleFonts.inter(
+              color: AppTheme.textMuted,
+              fontSize: 11,
+            ),
+          ),
+        ],
+      ),
     );
   }
 

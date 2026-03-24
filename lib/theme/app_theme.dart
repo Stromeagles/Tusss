@@ -10,6 +10,8 @@ class AppTheme {
   static const Color neonPurple = Color(0xFFA371F7); // Violet
   static const Color neonGold   = Color(0xFFE3B341); // Amber
   static const Color neonPinkGlow = Color(0x22D2A8FF);
+  static const Color coral      = Color(0xFFF78166); // Coral / Nar çiçeği
+  static const Color violet     = Color(0xFFA371F7); // Violet / Mor
 
   static const Color success    = Color(0xFF3FB950); // GitHub green
   static const Color error      = Color(0xFFF85149); // GitHub red

@@ -1,10 +1,12 @@
 import 'dart:async';
 import 'dart:math';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/mock_exam_model.dart';
 import '../models/topic_model.dart';
 import '../services/data_service.dart';
+import 'auth_service.dart';
 
 class MockExamService extends ChangeNotifier {
   static final MockExamService _instance = MockExamService._internal();
@@ -14,32 +16,40 @@ class MockExamService extends ChangeNotifier {
   static const _historyKey = 'mock_exam_history_v1';
 
   // ── Aktif Sınav Durumu ───────────────────────────────────────────────────
-
+  // (State fields...)
   MockExamConfig? _config;
   List<ExamQuestion> _questions = [];
   int _currentIndex = 0;
   bool _isRunning = false;
   bool _isFinished = false;
 
-  // Timer
   Timer? _timer;
   int _elapsedSeconds = 0;
   int _timeLimitSeconds = 0;
 
-  // History
   List<MockExamResult> _history = [];
   bool _historyLoaded = false;
 
-  // ── Getters ──────────────────────────────────────────────────────────────
+  // ── Firestore yolu ────────────────────────────────────────────────────────
+  DocumentReference? get _firestoreDoc {
+    final uid = AuthService.instance.currentUser?.uid;
+    if (uid == null) return null;
+    return FirebaseFirestore.instance
+        .collection('users')
+        .doc(uid)
+        .collection('content')
+        .doc('exam_history');
+  }
 
+  // ── Getters ──────────────────────────────────────────────────────────────
+  // ... (Gerekli getterlar)
   MockExamConfig? get config => _config;
   List<ExamQuestion> get questions => List.unmodifiable(_questions);
   int get currentIndex => _currentIndex;
   bool get isRunning => _isRunning;
   bool get isFinished => _isFinished;
   int get elapsedSeconds => _elapsedSeconds;
-  int get remainingSeconds =>
-      (_timeLimitSeconds - _elapsedSeconds).clamp(0, _timeLimitSeconds);
+  int get remainingSeconds => (_timeLimitSeconds - _elapsedSeconds).clamp(0, _timeLimitSeconds);
   List<MockExamResult> get history => List.unmodifiable(_history);
 
   ExamQuestion? get currentQuestion =>
@@ -48,13 +58,11 @@ class MockExamService extends ChangeNotifier {
   int get answeredCount => _questions.where((q) => q.isAnswered).length;
   int get flaggedCount => _questions.where((q) => q.isFlagged).length;
 
-  /// 0.0 → 1.0 geri sayım progress
   double get timeProgress {
     if (_timeLimitSeconds == 0) return 0;
     return (_elapsedSeconds / _timeLimitSeconds).clamp(0.0, 1.0);
   }
 
-  /// Kalan süre formatı "24:59"
   String get formattedRemaining {
     final rem = remainingSeconds;
     final m = (rem ~/ 60).toString().padLeft(2, '0');
@@ -62,10 +70,10 @@ class MockExamService extends ChangeNotifier {
     return '$m:$s';
   }
 
-  bool get isTimeWarning => remainingSeconds <= 120; // Son 2 dakika
+  bool get isTimeWarning => remainingSeconds <= 120;
 
   // ── Sınav Oluşturma ──────────────────────────────────────────────────────
-
+  // (Aynen saklanıyor...)
   Future<bool> generateExam(MockExamConfig config) async {
     _config = config;
     _questions = [];
@@ -81,33 +89,22 @@ class MockExamService extends ChangeNotifier {
       for (final subjectId in config.subjectIds) {
         final topics = await dataService.loadTopics(subjectId: subjectId);
         for (final topic in topics) {
-          for (final cc in topic.clinicalCases) {
-            if (cc.options.length >= 4 && cc.correctAnswer.isNotEmpty) {
-              allCases.add(cc);
-            }
-          }
+          allCases.addAll(topic.clinicalCases.where((cc) => cc.options.length >= 4 && cc.correctAnswer.isNotEmpty));
         }
       }
 
       if (allCases.isEmpty) return false;
 
-      // Karıştır
       if (config.shuffleQuestions) {
-        // Hile onleme: Sadece alfabetik/sabit sira veya premium degilse karistirma?
-        // Simdilik gercek rastgelelik kalsin ama UI tarafında limit kontrolü yapacağız.
-        allCases.shuffle(Random(42)); // Sabit seed (42) ile herkes ayni "rastgele" sirayi gorur
+        allCases.shuffle(Random(42));
       }
 
-      // Konu dağılımı: subjectId'ye göre proportional seçim
       final needed = config.questionCount.clamp(1, allCases.length);
       final selected = allCases.take(needed).toList();
 
       _questions = selected.map((cc) {
         final subjectId = _extractSubject(cc.caseText);
-        return ExamQuestion(
-          clinicalCase: cc,
-          subject: subjectId,
-        );
+        return ExamQuestion(clinicalCase: cc, subject: subjectId);
       }).toList();
 
       notifyListeners();
@@ -124,7 +121,7 @@ class MockExamService extends ChangeNotifier {
   }
 
   // ── Timer ────────────────────────────────────────────────────────────────
-
+  // ... (Gerekli timer mantığı)
   void startTimer({VoidCallback? onTimeUp}) {
     if (_isRunning) return;
     _isRunning = true;
@@ -151,7 +148,6 @@ class MockExamService extends ChangeNotifier {
   }
 
   // ── Navigasyon ───────────────────────────────────────────────────────────
-
   void goToQuestion(int index) {
     if (index < 0 || index >= _questions.length) return;
     _currentIndex = index;
@@ -185,7 +181,6 @@ class MockExamService extends ChangeNotifier {
   }
 
   // ── Sınav Tamamlama ──────────────────────────────────────────────────────
-
   Future<MockExamResult> finishExam() async {
     _timer?.cancel();
     _isRunning = false;
@@ -205,24 +200,15 @@ class MockExamService extends ChangeNotifier {
         unanswered++;
       } else if (q.isCorrect) {
         correct++;
-        subjectData[subject]!['correct'] =
-            subjectData[subject]!['correct']! + 1;
+        subjectData[subject]!['correct'] = subjectData[subject]!['correct']! + 1;
       } else {
         wrong++;
       }
     }
 
-    final breakdown = subjectData.map(
-      (k, v) => MapEntry(
-        k,
-        SubjectScore(
-          subjectId: k,
-          subjectName: k,
-          total: v['total']!,
-          correct: v['correct']!,
-        ),
-      ),
-    );
+    final breakdown = subjectData.map((k, v) => MapEntry(k, SubjectScore(
+      subjectId: k, subjectName: k, total: v['total']!, correct: v['correct']!,
+    )));
 
     final result = MockExamResult(
       id: '${DateTime.now().millisecondsSinceEpoch}',
@@ -254,9 +240,31 @@ class MockExamService extends ChangeNotifier {
 
   // ── History ──────────────────────────────────────────────────────────────
 
+  Future<void> syncWithCloud() async {
+    _historyLoaded = false;
+    await loadHistory();
+  }
+
   Future<void> loadHistory() async {
     if (_historyLoaded) return;
     final prefs = await SharedPreferences.getInstance();
+
+    // 1) Firestore'dan senkronize et
+    final doc = _firestoreDoc;
+    if (doc != null) {
+      try {
+        final snap = await doc.get().timeout(const Duration(seconds: 6));
+        if (snap.exists) {
+          final data = snap.data() as Map<String, dynamic>;
+          final remoteRaw = data['history'] as String?;
+          if (remoteRaw != null) {
+            await prefs.setString(_historyKey, remoteRaw);
+          }
+        }
+      } catch (_) {}
+    }
+
+    // 2) Yerelden yükle
     final raw = prefs.getString(_historyKey);
     if (raw != null) {
       try {
@@ -271,11 +279,22 @@ class MockExamService extends ChangeNotifier {
 
   Future<void> _saveResult(MockExamResult result) async {
     _history.insert(0, result);
-    // En fazla 50 sınav tut
     if (_history.length > 50) _history = _history.sublist(0, 50);
+    
+    final raw = MockExamResult.encodeList(_history);
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(
-        _historyKey, MockExamResult.encodeList(_history));
+    await prefs.setString(_historyKey, raw);
+
+    // Firestore yedekle
+    final doc = _firestoreDoc;
+    if (doc != null) {
+      doc.set({
+        'history': raw,
+        'updated_at': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true)).catchError((e) {
+        debugPrint('🚨 Exam backup failed: $e');
+      });
+    }
   }
 
   @override

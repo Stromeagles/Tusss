@@ -20,6 +20,8 @@ import '../auth/auth_view_model.dart';
 import 'package:provider/provider.dart';
 import 'auth/login_screen.dart';
 import '../widgets/daily_goal_widget.dart';
+import '../services/specialty_score_service.dart';
+import 'specialty_detail_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -661,20 +663,97 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         itemBuilder: (_, i) {
                           final branch = filtered[i];
                           final selected = branch == current;
+                          final imgPath = SpecialtyScoreService.getImagePath(branch);
                           return ListTile(
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                            tileColor: selected ? AppTheme.cyan.withValues(alpha: 0.1) : null,
-                            leading: Icon(
-                              selected ? Icons.check_circle_rounded : Icons.circle_outlined,
-                              color: selected ? AppTheme.cyan : subColor,
-                              size: 20,
+                            contentPadding: const EdgeInsets.symmetric(
+                                horizontal: 12, vertical: 4),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12)),
+                            tileColor: selected
+                                ? AppTheme.cyan.withValues(alpha: 0.1)
+                                : null,
+                            leading: Hero(
+                              tag: 'specialty_hero_$branch',
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: SizedBox(
+                                  width: 48,
+                                  height: 48,
+                                  child: Stack(
+                                    fit: StackFit.expand,
+                                    children: [
+                                      Image.asset(
+                                        imgPath,
+                                        fit: BoxFit.cover,
+                                        cacheWidth: 96,
+                                      ),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          gradient: LinearGradient(
+                                            begin: Alignment.topCenter,
+                                            end: Alignment.bottomCenter,
+                                            colors: [
+                                              Colors.transparent,
+                                              Colors.black
+                                                  .withValues(alpha: 0.35),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
                             ),
-                            title: Text(branch,
+                            title: Text(
+                              branch,
                               style: GoogleFonts.inter(
                                 color: selected ? AppTheme.cyan : textColor,
                                 fontSize: 14,
-                                fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
+                                fontWeight: selected
+                                    ? FontWeight.w700
+                                    : FontWeight.w500,
                               ),
+                            ),
+                            trailing: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                // Detay sayfası butonu
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      sheetCtx,
+                                      MaterialPageRoute<void>(
+                                        builder: (_) => SpecialtyDetailScreen(
+                                            branchName: branch),
+                                      ),
+                                    );
+                                  },
+                                  child: Container(
+                                    width: 30,
+                                    height: 30,
+                                    decoration: BoxDecoration(
+                                      color: AppTheme.cyan
+                                          .withValues(alpha: 0.08),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: const Icon(
+                                      Icons.info_outline_rounded,
+                                      color: AppTheme.cyan,
+                                      size: 16,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(width: 6),
+                                Icon(
+                                  selected
+                                      ? Icons.check_circle_rounded
+                                      : Icons.circle_outlined,
+                                  color:
+                                      selected ? AppTheme.cyan : subColor,
+                                  size: 20,
+                                ),
+                              ],
                             ),
                             onTap: () {
                               onSelect(branch);
@@ -892,6 +971,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               name: nameCtrl.text.trim().isEmpty ? 'KlinDoktor' : nameCtrl.text.trim(),
                             );
                             await _userService.saveUser(updated);
+                            // Veri tutarlılığı için ProgressService'i de güncelle
+                            await ProgressService().setDailyGoal(updated.dailyGoal);
+                            
                             if (mounted) {
                               setState(() => _user = updated);
                               nav.pop();

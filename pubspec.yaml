@@ -49,6 +49,9 @@ dependencies:
   # Web platform APIs (Fullscreen, DOM)
   web: ^1.1.0
 
+  # In-App Purchase (Google Play + App Store)
+  in_app_purchase: ^3.2.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -758,49 +758,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
 
-  void _openAiInsightSheet(bool isDark) {
-    // Branş → yanlış sayısı
-    final Map<String, int> mistakeCounts = {};
-    final Map<String, int> topicMistakes = {};
-
-    for (final t in _topics) {
-      for (final fc in t.flashcards) {
-        final d = _sm2Data[fc.id];
-        if (d != null && d.lastQuality == 1) {
-          mistakeCounts[t.subject] = (mistakeCounts[t.subject] ?? 0) + 1;
-          topicMistakes[t.subTopic] = (topicMistakes[t.subTopic] ?? 0) + 1;
-        }
-      }
-      for (final cc in t.clinicalCases) {
-        final d = _sm2Data[cc.id];
-        if (d != null && d.lastQuality == 1) {
-          mistakeCounts[t.subject] = (mistakeCounts[t.subject] ?? 0) + 1;
-          topicMistakes[t.subTopic] = (topicMistakes[t.subTopic] ?? 0) + 1;
-        }
-      }
-    }
-
-    final topMistakeTopics = (topicMistakes.entries.toList()
-          ..sort((a, b) => b.value.compareTo(a.value)))
-        .take(5)
-        .map((e) => e.key)
-        .toList();
-
-    showModalBottomSheet(
-      context: context,
-      isScrollControlled: true,
-      backgroundColor: Colors.transparent,
-      builder: (_) => AiInsightSheet(
-        progress: _progress,
-        isDark: isDark,
-        mistakeCounts: mistakeCounts,
-        topMistakeTopics: topMistakeTopics,
-        userName: _user.name.isNotEmpty ? _user.name : 'Doktor',
-        targetBranch: _user.targetBranch,
-      ),
-    );
-  }
-
   void _showAppNotifications() {
     final isDark = ThemeService.isDark;
     

@@ -27,6 +27,18 @@ class _LoginScreenState extends State<LoginScreen> {
   final _confirmCtrl  = TextEditingController();
 
   @override
+  void initState() {
+    super.initState();
+    // Beni Hatırla aktifse kayıtlı e-postayı forma doldur
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final vm = context.read<AuthViewModel>();
+      if (vm.rememberMe && vm.email.isNotEmpty) {
+        _emailCtrl.text = vm.email;
+      }
+    });
+  }
+
+  @override
   void dispose() {
     _nameCtrl.dispose();
     _emailCtrl.dispose();
@@ -113,56 +125,21 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  // ── Desktop: iki sütun ────────────────────────────────────────────────────
+  // ── Desktop: Tam ekran hero + alt overlay strip ───────────────────────────
   Widget _buildDesktopLayout(AuthViewModel vm) {
-    return Row(
+    return Stack(
+      fit: StackFit.expand,
       children: [
-        // Sol: hero görsel
-        Expanded(
-          flex: 55,
-          child: _buildHeroPanel(vm),
-        ),
-        // İnce ayırıcı çizgi
-        Container(
-          width: 1,
-          color: AppTheme.cyan.withValues(alpha: 0.10),
-        ),
-        // Sağ: form paneli
-        Expanded(
-          flex: 45,
-          child: Container(
-            decoration: BoxDecoration(
-              color: AppTheme.surface.withValues(alpha: 0.95),
-              border: Border(
-                left: BorderSide(color: AppTheme.cyan.withValues(alpha: 0.08)),
-              ),
-            ),
-            child: Center(
-              child: SingleChildScrollView(
-                padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 40),
-                physics: const BouncingScrollPhysics(),
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 400),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      _buildDesktopFormHeader(vm),
-                      const SizedBox(height: 32),
-                      _buildFormContent(vm),
-                      const SizedBox(height: 32),
-                      _buildBottomToggle(vm),
-                      if (kIsWeb) ...[
-                        const SizedBox(height: 44),
-                        _buildStoreButtons(),
-                      ],
-                      const SizedBox(height: 8),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ),
-        ),
+        _buildHeroFull(),
+        if (vm.mode == AuthMode.login)
+          Positioned(
+            bottom: 0,
+            left: 0,
+            right: 0,
+            child: _buildDesktopLoginStrip(vm),
+          )
+        else
+          Center(child: _buildDesktopSignupPanel(vm)),
       ],
     );
   }
@@ -405,26 +382,13 @@ class _LoginScreenState extends State<LoginScreen> {
     ];
   }
 
-  // ── Desktop sol panel: tam ekran hero ────────────────────────────────────
-  Widget _buildHeroPanel(AuthViewModel vm) {
+  // ── Desktop: Tam ekran hero (overlay için) ────────────────────────────────
+  Widget _buildHeroFull() {
     return Stack(
       fit: StackFit.expand,
       children: [
-        Image.asset('assets/images/hero_login.jpg', fit: BoxFit.cover, cacheWidth: 1200),
-        // Sağa doğru gradient — form paneliyle geçiş
-        Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: [
-                Colors.transparent,
-                AppTheme.surface.withValues(alpha: 0.25),
-              ],
-            ),
-          ),
-        ),
-        // Alt gradient — yazı okunabilirliği
+        Image.asset('assets/images/hero_login.jpg', fit: BoxFit.cover, cacheWidth: 1400),
+        // Alt vignette — strip ile kaynaşma
         Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -432,44 +396,367 @@ class _LoginScreenState extends State<LoginScreen> {
               end: Alignment.bottomCenter,
               colors: [
                 Colors.transparent,
-                Colors.black.withValues(alpha: 0.7),
+                Colors.black.withValues(alpha: 0.65),
               ],
-              stops: const [0.5, 1.0],
+              stops: const [0.4, 1.0],
             ),
           ),
         ),
-        // Sol alt: logo + tagline
-        Positioned(
-          bottom: 40,
-          left: 40,
-          right: 40,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'AsisTus',
-                style: GoogleFonts.outfit(
-                  fontSize: 42,
-                  fontWeight: FontWeight.w900,
-                  color: Colors.white,
-                  letterSpacing: -1.0,
-                ),
-              ),
-              const SizedBox(height: 8),
-              Text(
-                'TUS\'a hazırlığın en akıllı yolu.\nAI destekli, kişiselleştirilmiş öğrenme.',
-                style: GoogleFonts.inter(
-                  fontSize: 15,
-                  color: Colors.white.withValues(alpha: 0.75),
-                  fontWeight: FontWeight.w500,
-                  height: 1.5,
-                ),
-              ),
-            ],
-          ).animate().fadeIn(delay: 300.ms, duration: 600.ms).slideY(begin: 0.1, end: 0),
-        ),
       ],
     ).animate().fadeIn(duration: 700.ms);
+  }
+
+  // ── Desktop: Yatay Glass Strip (Login) ───────────────────────────────────
+  Widget _buildDesktopLoginStrip(AuthViewModel vm) {
+    return Stack(
+      children: [
+        // Blur arka plan — IgnorePointer ile tıklama olaylarını geçirgenleştirir
+        Positioned.fill(
+          child: IgnorePointer(
+            child: ClipRect(
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.black.withValues(alpha: 0.52),
+                    border: Border(
+                      top: BorderSide(color: Colors.white.withValues(alpha: 0.12)),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+        // İnteraktif içerik — blur katmanının üstünde
+        Container(
+          padding: const EdgeInsets.fromLTRB(40, 20, 40, 24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // Ana satır: Logo | E-posta | Şifre | Giriş Yap | Google
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Logo + tagline
+                  SizedBox(width: 190, child: _buildStripLogo()),
+                  // Dikey ayırıcı
+                  Container(
+                    width: 1,
+                    height: 72,
+                    margin: const EdgeInsets.only(left: 24, right: 24, top: 4),
+                    color: Colors.white.withValues(alpha: 0.14),
+                  ),
+                  // E-posta
+                  Expanded(
+                    flex: 3,
+                    child: AuthTextField(
+                      label: 'E-posta',
+                      hint: 'ornek@email.com',
+                      icon: Icons.email_outlined,
+                      controller: _emailCtrl,
+                      errorText: vm.emailError,
+                      keyboardType: TextInputType.emailAddress,
+                      textInputAction: TextInputAction.next,
+                      onChanged: vm.setEmail,
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  // Şifre
+                  Expanded(
+                    flex: 3,
+                    child: AuthTextField(
+                      label: 'Şifre',
+                      hint: '••••••••',
+                      icon: Icons.lock_outline_rounded,
+                      controller: _pwCtrl,
+                      obscureText: vm.obscurePassword,
+                      errorText: vm.passwordError,
+                      textInputAction: TextInputAction.done,
+                      onChanged: vm.setPassword,
+                      onSubmitted: (_) => _onSubmit(vm),
+                      suffix: IconButton(
+                        icon: Icon(
+                          vm.obscurePassword
+                              ? Icons.visibility_off_outlined
+                              : Icons.visibility_outlined,
+                          color: AppTheme.textMuted,
+                          size: 20,
+                        ),
+                        onPressed: vm.togglePasswordVisibility,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  // Beni Hatırla + Giriş Yap (label yüksekliğiyle hizalı)
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(height: 21),
+                      // Beni Hatırla checkbox
+                      GestureDetector(
+                        onTap: () => vm.setRememberMe(!vm.rememberMe),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            SizedBox(
+                              width: 18,
+                              height: 18,
+                              child: Checkbox(
+                                value: vm.rememberMe,
+                                onChanged: (v) => vm.setRememberMe(v ?? false),
+                                activeColor: AppTheme.cyan,
+                                checkColor: AppTheme.background,
+                                side: BorderSide(
+                                  color: Colors.white.withValues(alpha: 0.4),
+                                  width: 1.5,
+                                ),
+                                materialTapTargetSize:
+                                    MaterialTapTargetSize.shrinkWrap,
+                                visualDensity: VisualDensity.compact,
+                              ),
+                            ),
+                            const SizedBox(width: 6),
+                            Text(
+                              'Beni Hatırla',
+                              style: GoogleFonts.inter(
+                                color: Colors.white.withValues(alpha: 0.70),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      SizedBox(
+                        width: 155,
+                        child: _GradientButton(
+                          label: 'GİRİŞ YAP',
+                          isLoading: vm.isLoading,
+                          onTap: () => _onSubmit(vm),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(width: 10),
+                  // Google butonu (label + checkbox yüksekliğiyle hizalı)
+                  Column(
+                    children: [
+                      const SizedBox(height: 21),
+                      const SizedBox(height: 26), // checkbox satır yüksekliği
+                      const SizedBox(height: 8),
+                      _buildGoogleStripButton(),
+                    ],
+                  ),
+                ],
+              ),
+              // Hata bandı
+              if (vm.generalError != null) ...[
+                const SizedBox(height: 10),
+                _ErrorBanner(message: vm.generalError!),
+              ],
+              const SizedBox(height: 10),
+              // Alt linkler
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  GestureDetector(
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute<void>(
+                          builder: (_) => const ForgotPasswordScreen()),
+                    ),
+                    child: Text(
+                      'Şifremi Unuttum',
+                      style: GoogleFonts.inter(
+                        color: AppTheme.cyan,
+                        fontSize: 13,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: 3,
+                    height: 3,
+                    margin: const EdgeInsets.symmetric(horizontal: 14),
+                    decoration: const BoxDecoration(
+                      color: AppTheme.textMuted,
+                      shape: BoxShape.circle,
+                    ),
+                  ),
+                  Text(
+                    'Hesabın yok mu?',
+                    style: GoogleFonts.inter(
+                      color: AppTheme.textSecondary,
+                      fontSize: 13,
+                    ),
+                  ),
+                  const SizedBox(width: 6),
+                  GestureDetector(
+                    onTap: vm.isLoading ? null : vm.toggleMode,
+                    child: Text(
+                      'Kayıt Ol',
+                      style: GoogleFonts.inter(
+                        color: AppTheme.cyan,
+                        fontSize: 13,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ],
+    ).animate().fadeIn(delay: 400.ms, duration: 600.ms).slideY(begin: 0.08, end: 0);
+  }
+
+  // ── Desktop: Kayıt Formu — Merkezi Glass Kart ─────────────────────────────
+  Widget _buildDesktopSignupPanel(AuthViewModel vm) {
+    return SingleChildScrollView(
+      padding: const EdgeInsets.symmetric(vertical: 32),
+      child: Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 440),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(28),
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.black.withValues(alpha: 0.60),
+                  borderRadius: BorderRadius.circular(28),
+                  border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: 0.4),
+                      blurRadius: 40,
+                    ),
+                  ],
+                ),
+                padding: const EdgeInsets.all(36),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    _buildDesktopFormHeader(vm),
+                    const SizedBox(height: 28),
+                    _buildFormContent(vm),
+                    const SizedBox(height: 16),
+                    _buildBottomToggle(vm),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    ).animate()
+        .fadeIn(delay: 200.ms, duration: 500.ms)
+        .scale(begin: const Offset(0.97, 0.97));
+  }
+
+  // ── Strip: Logo widget ────────────────────────────────────────────────────
+  Widget _buildStripLogo() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              width: 36,
+              height: 36,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: const LinearGradient(
+                  colors: [AppTheme.cyan, AppTheme.neonPurple],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: AppTheme.cyan.withValues(alpha: 0.4),
+                    blurRadius: 12,
+                  ),
+                ],
+              ),
+              child: const Icon(Icons.psychology_rounded, color: Colors.white, size: 18),
+            ),
+            const SizedBox(width: 10),
+            Text(
+              'AsisTus',
+              style: GoogleFonts.outfit(
+                fontSize: 22,
+                fontWeight: FontWeight.w900,
+                color: Colors.white,
+                letterSpacing: -0.5,
+              ),
+            ),
+            const SizedBox(width: 8),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                    colors: [AppTheme.cyan, AppTheme.neonPurple]),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Text(
+                'AI',
+                style: GoogleFonts.inter(
+                  color: Colors.white,
+                  fontSize: 10,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 6),
+        Text(
+          'TUS\'a hazırlığın en akıllı yolu.',
+          style: GoogleFonts.inter(
+            fontSize: 12,
+            color: Colors.white.withValues(alpha: 0.65),
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+      ],
+    );
+  }
+
+  // ── Strip: Kompakt Google butonu ──────────────────────────────────────────
+  Widget _buildGoogleStripButton() {
+    return GestureDetector(
+      onTap: () => _signInWithGoogle(context),
+      child: Container(
+        height: 50,
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        decoration: BoxDecoration(
+          color: Colors.white.withValues(alpha: 0.07),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: Colors.white.withValues(alpha: 0.15)),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.g_mobiledata_rounded, color: Colors.white, size: 22),
+            const SizedBox(width: 8),
+            Text(
+              'Google',
+              style: GoogleFonts.inter(
+                color: Colors.white,
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   // ── Desktop form başlığı ──────────────────────────────────────────────────
@@ -713,12 +1000,13 @@ class _LoginForm extends StatelessWidget {
           hint: 'ornek@email.com',
           icon: Icons.email_outlined,
           controller: emailCtrl,
+          horizontal: true,
           errorText: vm.emailError,
           keyboardType: TextInputType.emailAddress,
           textInputAction: TextInputAction.next,
           onChanged: vm.setEmail,
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 12),
 
         // Password
         AuthTextField(
@@ -726,6 +1014,7 @@ class _LoginForm extends StatelessWidget {
           hint: '••••••••',
           icon: Icons.lock_outline_rounded,
           controller: pwCtrl,
+          horizontal: true,
           obscureText: vm.obscurePassword,
           errorText: vm.passwordError,
           textInputAction: TextInputAction.done,
@@ -845,10 +1134,11 @@ class _SignupForm extends StatelessWidget {
           controller: nameCtrl,
           errorText: vm.nameError,
           keyboardType: TextInputType.name,
+          horizontal: true,
           textInputAction: TextInputAction.next,
           onChanged: vm.setName,
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 12),
 
         // Email
         AuthTextField(
@@ -856,12 +1146,13 @@ class _SignupForm extends StatelessWidget {
           hint: 'ornek@email.com',
           icon: Icons.email_outlined,
           controller: emailCtrl,
+          horizontal: true,
           errorText: vm.emailError,
           keyboardType: TextInputType.emailAddress,
           textInputAction: TextInputAction.next,
           onChanged: vm.setEmail,
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 12),
 
         // Password
         AuthTextField(
@@ -869,6 +1160,7 @@ class _SignupForm extends StatelessWidget {
           hint: '••••••••',
           icon: Icons.lock_outline_rounded,
           controller: pwCtrl,
+          horizontal: true,
           obscureText: vm.obscurePassword,
           errorText: vm.passwordError,
           textInputAction: TextInputAction.next,
@@ -884,7 +1176,7 @@ class _SignupForm extends StatelessWidget {
             onPressed: vm.togglePasswordVisibility,
           ),
         ),
-        const SizedBox(height: 8),
+        const SizedBox(height: 4),
 
         // Password strength indicator
         if (vm.password.isNotEmpty)
@@ -898,6 +1190,7 @@ class _SignupForm extends StatelessWidget {
           hint: '••••••••',
           icon: Icons.lock_reset_rounded,
           controller: confirmCtrl,
+          horizontal: true,
           obscureText: vm.obscureConfirm,
           errorText: vm.confirmError,
           textInputAction: TextInputAction.done,
@@ -913,7 +1206,7 @@ class _SignupForm extends StatelessWidget {
             onPressed: vm.toggleConfirmVisibility,
           ),
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 16),
 
         // Terms checkbox
         _TermsCheckbox(vm: vm),

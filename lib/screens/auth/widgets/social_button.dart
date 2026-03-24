@@ -89,12 +89,15 @@ class _SocialButtonState extends State<SocialButton> {
                           size: 20,
                         ),
                         const SizedBox(width: 10),
-                        Text(
-                          widget.label,
-                          style: GoogleFonts.inter(
-                            color: widget.textColor ?? AppTheme.textPrimary,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
+                        Flexible(
+                          child: Text(
+                            widget.label,
+                            overflow: TextOverflow.ellipsis,
+                            style: GoogleFonts.inter(
+                              color: widget.textColor ?? AppTheme.textPrimary,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500,
+                            ),
                           ),
                         ),
                       ],

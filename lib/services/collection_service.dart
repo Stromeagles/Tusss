@@ -1,6 +1,8 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/collection_model.dart';
+import 'auth_service.dart';
 
 class CollectionService extends ChangeNotifier {
   static final CollectionService _instance = CollectionService._internal();
@@ -17,10 +19,44 @@ class CollectionService extends ChangeNotifier {
   List<CardCollection> get collections => List.unmodifiable(_collections);
   bool get isLoaded => _loaded;
 
+  // ── Firestore yolu ────────────────────────────────────────────────────────
+  DocumentReference? get _firestoreDoc {
+    final uid = AuthService.instance.currentUser?.uid;
+    if (uid == null) return null;
+    return FirebaseFirestore.instance
+        .collection('users')
+        .doc(uid)
+        .collection('content')
+        .doc('collections');
+  }
+
   // ── Load / Save ──────────────────────────────────────────────────────────
+
+  Future<void> init() async {
+    if (_loaded) return;
+    await _load();
+  }
 
   Future<void> _load() async {
     final prefs = await SharedPreferences.getInstance();
+    
+    // 1) Firestore'dan senkronize et
+    final doc = _firestoreDoc;
+    if (doc != null) {
+      try {
+        final snap = await doc.get().timeout(const Duration(seconds: 6));
+        if (snap.exists) {
+          final data = snap.data() as Map<String, dynamic>;
+          final remoteRaw = data['data'] as String?;
+          if (remoteRaw != null) {
+            // Firestore verisi varsa yereli güncelle
+            await prefs.setString(_prefsKey, remoteRaw);
+          }
+        }
+      } catch (_) {}
+    }
+
+    // 2) Yerelden yükle
     final raw = prefs.getString(_prefsKey);
     if (raw != null) {
       try {
@@ -35,7 +71,23 @@ class CollectionService extends ChangeNotifier {
 
   Future<void> _save() async {
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_prefsKey, CardCollection.encodeList(_collections));
+    final raw = CardCollection.encodeList(_collections);
+    await prefs.setString(_prefsKey, raw);
+
+    // Firestore yedekle
+    final doc = _firestoreDoc;
+    if (doc != null) {
+      doc.set({
+        'data': raw,
+        'updated_at': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true)).catchError((_) {});
+    }
+  }
+
+  /// Giriş yapıldığında veya manuel yenilemede kullanılır
+  Future<void> syncWithCloud() async {
+    _loaded = false;
+    await _load();
   }
 
   // ── CRUD ─────────────────────────────────────────────────────────────────

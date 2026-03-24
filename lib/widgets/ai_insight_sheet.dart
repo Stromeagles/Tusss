@@ -6,6 +6,7 @@ import '../models/progress_model.dart';
 import '../services/specialty_score_service.dart';
 import '../services/premium_service.dart';
 import 'paywall_widget.dart';
+import '../screens/specialty_detail_screen.dart';
 
 class AiInsightSheet extends StatefulWidget {
   final StudyProgress progress;
@@ -378,7 +379,21 @@ class _AiInsightSheetState extends State<AiInsightSheet> {
       }
     }
 
-    return Container(
+    final branchImage = hasTarget
+        ? SpecialtyScoreService.getImagePath(targetBranch)
+        : null;
+
+    return GestureDetector(
+      onTap: hasTarget
+          ? () => Navigator.push(
+                context,
+                MaterialPageRoute<void>(
+                  builder: (_) =>
+                      SpecialtyDetailScreen(branchName: targetBranch),
+                ),
+              )
+          : null,
+      child: Container(
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -395,6 +410,58 @@ class _AiInsightSheetState extends State<AiInsightSheet> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Branş görseli (sadece hedef seçilmişse)
+          if (branchImage != null) ...[
+            ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: SizedBox(
+                height: 100,
+                width: double.infinity,
+                child: Hero(
+                  tag: 'specialty_hero_$targetBranch',
+                  child: Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      Image.asset(branchImage, fit: BoxFit.cover, cacheWidth: 600),
+                      Container(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [
+                              Colors.transparent,
+                              Colors.black.withValues(alpha: 0.65),
+                            ],
+                            stops: const [0.3, 1.0],
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 10,
+                        left: 12,
+                        child: Row(
+                          children: [
+                            Text(
+                              targetBranch,
+                              style: GoogleFonts.outfit(
+                                color: Colors.white,
+                                fontSize: 13,
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
+                            const SizedBox(width: 6),
+                            const Icon(Icons.open_in_new_rounded,
+                                color: Colors.white70, size: 12),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 14),
+          ],
           Row(
             children: [
               Icon(Icons.school_rounded, color: accentColor, size: 18),
@@ -468,7 +535,8 @@ class _AiInsightSheetState extends State<AiInsightSheet> {
           ),
         ],
       ),
-    );
+    ), // Container
+    ); // GestureDetector
   }
 
   // ── Zayıf Halkalar ─────────────────────────────────────────────────────────

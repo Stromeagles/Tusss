@@ -23,6 +23,7 @@ import 'services/collection_service.dart';
 import 'services/notification_service.dart';
 import 'services/theme_service.dart';
 import 'services/specialty_score_service.dart';
+import 'services/user_service.dart';
 import 'widgets/responsive_wrapper.dart';
 
 void main() async {
@@ -173,8 +174,12 @@ class _AuthWrapperState extends State<AuthWrapper> {
         }
 
         if (snapshot.hasData && snapshot.data != null) {
-          // Giriş yapıldı — SRS cache'ini temizle, Firestore'dan çeksin
+          // Giriş yapıldı — Tüm servisleri Firestore senkronizasyonu için tetikle
           SpacedRepetitionService().onUserLogin();
+          UserService().onUserLogin();
+          CollectionService().syncWithCloud();
+          MockExamService().syncWithCloud();
+          
           if (!(_onboardingDone ?? false)) {
             return OnboardingScreen(onComplete: _completeOnboarding);
           }

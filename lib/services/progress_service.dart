@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/progress_model.dart';
 import 'auth_service.dart';
+import 'leaderboard_service.dart';
 
 class ProgressService {
   static const String _keyFlashcardsStudied = 'flashcards_studied';
@@ -211,6 +212,7 @@ class ProgressService {
       final newTotal = current + 1;
       await prefs.setInt(_keyFlashcardsStudied, newTotal);
       await _updateDailyActivity(prefs);
+      LeaderboardService().increment();
 
       _backupToFirestore({
         'flashcards_studied': newTotal,
@@ -262,6 +264,7 @@ class ProgressService {
     }
 
     await _updateDailyActivity(prefs);
+    LeaderboardService().increment();
 
     _backupToFirestore({
       'cases_attempted': attempted,

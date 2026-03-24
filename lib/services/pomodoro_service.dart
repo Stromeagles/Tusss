@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'progress_service.dart';
 
 enum PomodoroPhase { focus, breakTime }
 
 class PomodoroService extends ChangeNotifier {
-  // ── Singleton ───────────────────────────────────────────────────────────────
   static final PomodoroService _instance = PomodoroService._internal();
   factory PomodoroService() => _instance;
   PomodoroService._internal() {
@@ -25,9 +25,9 @@ class PomodoroService extends ChangeNotifier {
   int _completedPomodoros = 0;       // Tamamlanan pomodoro sayısı
 
   // ── Getters ─────────────────────────────────────────────────────────────────
-  PomodoroPhase get phase => _phase;
   int get secondsRemaining => _secondsRemaining;
   bool get isRunning => _isRunning;
+  PomodoroPhase get phase => _phase;
   int get todayFocusSeconds => _todayFocusSeconds;
   int get completedPomodoros => _completedPomodoros;
 
@@ -36,17 +36,14 @@ class PomodoroService extends ChangeNotifier {
   int get _totalDuration =>
       _phase == PomodoroPhase.focus ? focusDurationSec : breakDurationSec;
 
-  /// 0.0 → 1.0 arası ilerleme (geçen süre oranı)
   double get progress => 1.0 - (_secondsRemaining / _totalDuration);
 
-  /// "24:59" formatında kalan süre
   String get timerString {
     final m = (_secondsRemaining ~/ 60).toString().padLeft(2, '0');
     final s = (_secondsRemaining % 60).toString().padLeft(2, '0');
     return '$m:$s';
   }
 
-  /// Bugünkü toplam çalışma — okunabilir format
   String get todayFocusFormatted {
     final h = _todayFocusSeconds ~/ 3600;
     final m = (_todayFocusSeconds % 3600) ~/ 60;
@@ -69,7 +66,6 @@ class PomodoroService extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Mevcut döngüyü sıfırla (aynı fazda kalır)
   void reset() {
     _isRunning = false;
     _timer?.cancel();
@@ -77,7 +73,6 @@ class PomodoroService extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Mevcut fazı atla — çalışmadaysa molaya, moladaysa çalışmaya geç
   void skip() {
     _timer?.cancel();
     _isRunning = false;
@@ -93,8 +88,9 @@ class PomodoroService extends ChangeNotifier {
       // Sadece odaklanma fazında toplam süreye ekle
       if (_phase == PomodoroPhase.focus) {
         _todayFocusSeconds++;
-        // Her 60 saniyede bir persist et (performans için)
+        // Her 60 saniyede bir persist et ve ProgressService'e yansıt
         if (_todayFocusSeconds % 60 == 0) {
+          ProgressService().recordFocusMinutes(1);
           _persistTodayMinutes();
         }
       }
@@ -129,7 +125,6 @@ class PomodoroService extends ChangeNotifier {
   Future<void> _loadTodayMinutes() async {
     final prefs = await SharedPreferences.getInstance();
     _todayFocusSeconds = (prefs.getInt(_todayKey) ?? 0) * 60;
-    // Eski günleri temizlemiyoruz — sadece bugünü okuyoruz
     notifyListeners();
   }
 

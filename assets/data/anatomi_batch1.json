@@ -453,10 +453,10 @@
           "A) Medial menisküs yırtığı",
           "B) Arka çapraz bağ (PCL) yırtığı",
           "C) Lateral kollateral bağ yırtığı",
-          "D) Ön çapraz bağ (ACL) yırtığı",
+          "D) Ön çapraz bağ yırtığı",
           "E) Patella çıkığı"
         ],
-        "correct_answer": "D) Ön çapraz bağ (ACL) yırtığı",
+        "correct_answer": "D) Ön çapraz bağ yırtığı",
         "explanation": "Pivot hareketi sırasında duyulan 'pop' sesi, akut diz efüzyonu ve pozitif ön çekmece testi ACL (ön çapraz bağ) yırtığının klasik triadıdır. ACL spor yaralanmalarında en sık zedelenen çapraz bağdır. Lachman testi en sensitif testtir. MR ile tanı doğrulanır."
       }
     ]
@@ -1690,11 +1690,11 @@
         "options": [
           "A) Hipertansif intraserebral kanama",
           "B) AVM rüptürü",
-          "C) Berry (sakküler) anevrizma rüptürü",
+          "C) Berry anevrizma rüptürü",
           "D) Kavernöz malformasyon kanaması",
           "E) Dural AV fistül"
         ],
-        "correct_answer": "C) Berry (sakküler) anevrizma rüptürü",
+        "correct_answer": "C) Berry anevrizma rüptürü",
         "explanation": "Ani şiddetli baş ağrısı (thunderclap headache), ense sertliği ve bazal sisternal kanama subaraknoid kanamayı (SAK) gösterir. SAK'ın en sık nedeni berry (sakküler) anevrizma rüptürüdür (%85). En sık anevrizma yeri A. communicans anterior'dur. Tanıda BT (%95 sensitif ilk 24 saatte) ve LP (ksantokromi) kullanılır."
       }
     ]

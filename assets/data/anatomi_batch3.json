@@ -97,12 +97,12 @@
         "case": "35 yaşında kadın hasta, şiddetli sol lomber ağrı ve sol kasığa yayılan kolik tarzında ağrı ile acil servise başvuruyor. Üriner USG'de sol üreterde 6 mm taş saptanıyor. Ağrının kasığa yansımasının anatomik açıklaması nedir?",
         "options": [
           "A) Üreter ve uterusun aynı lenfatik drenaja sahip olması",
-          "B) Böbrek ve gonadların aynı spinal segmentlerden (T10-L1) duyu alması",
+          "B) Böbrek ve gonadların aynı spinal segmentlerden duyu alması",
           "C) N. ilioinguinalis'in direkt üreter duyusu taşıması",
           "D) Üreter ağrısının peritoneal iritasyona bağlı olması",
           "E) Böbrek kapsülünün frenik sinir tarafından innerve edilmesi"
         ],
-        "correct_answer": "B) Böbrek ve gonadların aynı spinal segmentlerden (T10-L1) duyu alması",
+        "correct_answer": "B) Böbrek ve gonadların aynı spinal segmentlerden duyu alması",
         "explanation": "Böbrek, üreter ve gonadlar embriyolojik olarak mezonefros'tan gelişir ve ortak spinal segmentlerden (T10-L1) duyusal innervasyona sahiptir. Bu nedenle üreter koliğinde ağrı, referred pain (yansıyan ağrı) mekanizmasıyla genital bölge ve kasığa yayılır."
       }
     ]

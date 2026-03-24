@@ -85,11 +85,11 @@
         "options": [
           "A) Digoksin dozunu artır",
           "B) Digoksin'e lidokain ekle",
-          "C) Digoksin-spesifik Fab antikorları (DigiFab) ver",
+          "C) Digoksin-spesifik Fab antikorları ver",
           "D) Hemen elektriksel kardiyoversiyon uygula",
           "E) Amiyodaron başla"
         ],
-        "correct_answer": "C) Digoksin-spesifik Fab antikorları (DigiFab) ver",
+        "correct_answer": "C) Digoksin-spesifik Fab antikorları ver",
         "explanation": "Bu hastada digoksin toksisitesinin klasik triadı mevcuttur: ksantopsi (sarı-yeşil görme), GİS bulguları (bulantı-kusma) ve tehlikeli ventriküler aritmi (çift yönlü VT). Hipokalemi (K: 2.8) toksisiteyi potansiyelize etmiştir — tiazid diüretiği K kaybı yaratmıştır. Digoksin toksisitesinin spesifik antidotu digoksin-spesifik Fab antikorlarıdır (DigiFab). Bu antikorlar serbest digoksini bağlayarak dolaşımdan uzaklaştırır. Elektriksel kardiyoversiyon digoksin toksisitesinde tehlikeli fibrilasyona neden olabileceğinden kontrendikedir.\n\n🎓 HOCA ÖZETİ:\n- Digoksin toksisitesi triadı: Ksantopsi + GİS bulgular + Aritmi\n- Hipokalemi toksisiteyi artırır (tiazid+digoksin tehlikeli kombinasyon)\n- Antidot: DigiFab (Digoksin-spesifik Fab antikorları)\n- Mnemonic: 'Digi toksik = Sarı gözlük + Çılgın kalp → Fab ile temizle'\n- TUS SPOT: Digoksin toksisitesinde kardiyoversiyon KONTRAENDİKE"
       }
     ]

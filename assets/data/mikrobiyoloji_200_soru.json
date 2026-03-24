@@ -450,9 +450,9 @@
         "B) mRNA'yı parçalayarak",
         "C) 30S ribozomal alt birime bağlanarak",
         "D) tRNA'yı defosforilasyonla inaktive ederek",
-        "E) EF-2'yi (Elongasyon faktörü) ADP-ribozilleyerek"
+        "E) EF-2'yi ADP-ribozilleyerek"
       ],
-      "correct_answer": "E) EF-2'yi (Elongasyon faktörü) ADP-ribozilleyerek",
+      "correct_answer": "E) EF-2'yi ADP-ribozilleyerek",
       "explanation": "PROFESÖR NOTU: Difteri toksini, AB tipi bir ekzotoksindir. B alt birimi hücre yüzeyindeki HB-EGF reseptörüne bağlanır, A alt birimi hücre içine girerek EF-2'yi (Elongasyon Faktörü 2) ADP-ribozilasyon ile inaktive eder. EF-2 protein sentezinde translokasyon basamağı için zorunludur; inaktivasyonu protein sentezini tamamen durdurur. Aynı mekanizmayı Pseudomonas Ekzotoksin A da kullanır. Mnemonic: Difteri ve Pseudomonas = EF-2 katilleri."
     },
     {
@@ -1175,12 +1175,12 @@
       "case": "Soru:(RNA Virüsleri) Kabakulak virüsünün en sık komplikasyonu nedir?",
       "options": [
         "A) Pnömonit ve fibrozis",
-        "B) Orkitis (erkeklerde) ve menenjit",
+        "B) Orkitis ve menenjit",
         "C) Miyokardit ve perikardit",
         "D) Hepatit ve sarılık",
         "E) Ensefalit ve hidrosefali"
       ],
-      "correct_answer": "B) Orkitis (erkeklerde) ve menenjit",
+      "correct_answer": "B) Orkitis ve menenjit",
       "explanation": "TUS HATIRLATMA: Kabakulak (Mumps) virüsünün klasik bulgusu bilateral veya unilateral parotis bezi şişliğidir. En sık komplikasyonları: Aseptik menenjit (en sık nörolojik komplikasyon), Orkitis (pubertede ve sonrasında %20-30, genellikle tek taraflı, nadiren infertiliteye neden olur), Pankreatit ve Ooforit. Kabakulak aşısı KKK (MMR) içinde uygulanır. HATIRLA: Mumps = Menenjit + Orkitis + Parotit."
     },
     {
@@ -1409,12 +1409,12 @@
       "case": "Soru:(Mikoloji) Mucormycosis tablosunda (90 derece dallanma) en riskli hasta grubu hangisidir?",
       "options": [
         "A) Kronik böbrek yetmezliği hastaları",
-        "B) Diyabetik (DKA) hastalar",
+        "B) Diyabetik hastalar",
         "C) Astım hastaları",
         "D) Gut hastaları",
         "E) Hipotiroidizm hastaları"
       ],
-      "correct_answer": "B) Diyabetik (DKA) hastalar",
+      "correct_answer": "B) Diyabetik hastalar",
       "explanation": "HOCANIN ÖZETİ: Mukormikoz (Zigomikoz), özellikle diyabetik ketoasidoz (DKA) hastalarında görülen ağır bir mantar enfeksiyonudur. Rinocerebral form en sık görülen tiptir. Asidotik ortam ve yüksek demir düzeyleri mantarın büyümesini kolaylaştırır. Tedavide amfoterisin B ve cerrahi debridman gereklidir. TUS'ta DKA + yüz ağrısı + siyah nekroz = mukormikoz düşün."
     },
     {
@@ -1436,11 +1436,11 @@
       "options": [
         "A) Yalancı membranlı ülser",
         "B) Aftöz ülser",
-        "C) Gömlek düğmesi (flask-shaped) ülseri",
+        "C) Gömlek düğmesi ülseri",
         "D) Serpijinöz ülser",
         "E) Lineer ülser"
       ],
-      "correct_answer": "C) Gömlek düğmesi (flask-shaped) ülseri",
+      "correct_answer": "C) Gömlek düğmesi ülseri",
       "explanation": "PATOGNOMONIK BULGU: E. histolytica, kalın bağırsak mukozasına invaze olarak şişe şeklinde (flask-shaped / gömlek düğmesi) ülserler oluşturur. Bu ülserler mukozada dar giriş, submukozada geniş yayılım gösterir. Kanlı-muküslü ishal (çilek jelesi) yapar. Karaciğer apsesi en sık ekstraintestinal komplikasyondur. Tanıda dışkıda trofozoitlerde yutulmuş eritrosit görülmesi tanıyı destekler."
     },
     {
@@ -1619,10 +1619,10 @@
         "A) 30S ribozomal alt birimi",
         "B) 50S ribozomal alt birimi",
         "C) DNA bağımlı RNA polimeraz",
-        "D) DNA Giraz (Topoizomeraz II) ve Topoizomeraz IV",
+        "D) DNA Giraz ve Topoizomeraz IV",
         "E) Dihidrofolat redüktaz"
       ],
-      "correct_answer": "D) DNA Giraz (Topoizomeraz II) ve Topoizomeraz IV",
+      "correct_answer": "D) DNA Giraz ve Topoizomeraz IV",
       "explanation": "İLAÇ HEDEFİ: Kinolonlar (siprofloksasin, levofloksasin, moksifloksasin) DNA giraz (topoizomeraz II) ve topoizomeraz IV enzimlerini inhibe ederek bakteri DNA replikasyonunu ve onarımını engeller. Gram negatiflerde birincil hedef DNA giraz, Gram pozitiflerde ise topoizomeraz IV'tür. Yan etkileri arasında tendon rüptürü (Aşil tendonu), QT uzaması ve fotosensitivite sayılabilir."
     },
     {
@@ -1658,10 +1658,10 @@
         "A) Hedef ribozomda metilasyon",
         "B) Enzimatik inaktivasyon",
         "C) Hücre duvarı geçirgenliğinin azalması",
-        "D) Efluks (dışa atım) pompaları ile",
+        "D) Efluks pompaları ile",
         "E) İlaç hedefinin amplifikasyonu"
       ],
-      "correct_answer": "D) Efluks (dışa atım) pompaları ile",
+      "correct_answer": "D) Efluks pompaları ile",
       "explanation": "DİRENÇ MEKANİZMASI: Tetrasiklinlere karşı en sık direnç mekanizması efluks (dışa atım) pompalarıdır. Bu pompalar ilacı hücre içinden dışa atar ve ribozomdaki konsantrasyonu düşürür. Tetrasiklinler 30S ribozoma bağlanarak aminoasil-tRNA'nın A bölgesine yerleşimini engeller. Tigesiklin, efluks pompalarından etkilenmeyen yeni nesil bir glisilsiklindir."
     },
     {
@@ -2229,11 +2229,11 @@
       "options": [
         "A) Aspergillus niger",
         "B) Sporothrix schenckii",
-        "C) Talaromyces (Penicillium) marneffei",
+        "C) Talaromyces marneffei",
         "D) Histoplasma capsulatum",
         "E) Cryptococcus gattii"
       ],
-      "correct_answer": "C) Talaromyces (Penicillium) marneffei",
+      "correct_answer": "C) Talaromyces marneffei",
       "explanation": "HOCANIN OZETi: Talaromyces marneffei (eski adi Penicillium marneffei), Guneydogu Asya'da (Tayland, Vietnam) endemik olan dimorfik bir mantardir. AIDS hastalarinda dissemine enfeksiyon yapar. Koloniler karakteristik KIRMIZI pigment uretir ve bu tani icin cok degerlidir. Hucre icinde bolunen maya formlari gorulebilir. Bamboo faresi dogal konaktir. Tedavide amfoterisin B ardindan itrakonazol kullanilir. TUS'ta: HIV + Guneydogu Asya + kirmizi pigment = Talaromyces marneffei."
     },
     {
@@ -2541,11 +2541,11 @@
       "options": [
         "A) Tam (berrak) hemoliz",
         "B) Hemoliz yoklugu",
-        "C) Kismi (yesilimsi) hemoliz",
+        "C) Kismi hemoliz",
         "D) Cift zonlu hemoliz",
         "E) Gecikmis hemoliz"
       ],
-      "correct_answer": "C) Kismi (yesilimsi) hemoliz",
+      "correct_answer": "C) Kismi hemoliz",
       "explanation": "LABORATUVAR iPUCU: Alfa hemoliz, kanli agarda eritrositlerin kismi parcalanmasi sonucu koloni cevresinde yesilimsi bir zon olusmasidir. Yesillik, hemoglobinin methemoglobine (veya biliverdin) donusmesinden kaynaklanir. Alfa hemolitik streptokoklar: S. pneumoniae ve viridans grup streptokoklar (S. mutans, S. mitis, S. sanguinis). Beta hemoliz: Tam berrak hemoliz (S. pyogenes, S. agalactiae). Gama hemoliz: Hemoliz yok (Enterokoklar). TUS'ta: Yesilimsi zon = alfa = Pnomokok/Viridans."
     },
     {

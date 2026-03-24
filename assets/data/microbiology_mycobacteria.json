@@ -49,13 +49,13 @@
       {
         "case": "Gece terlemesi, kilo kaybı ve kanlı öksürükle gelen 30 yaşında bir hastanın akciğer grafisinde sağ apeksde kavite izleniyor. Balgam gram boyamasında aside dirençli basiller görülüyor. En olası tanı?",
         "options": [
-          "A) Bakteriyel Pnömoni (Alt lob tutulumu)",
-          "B) Sekonder (Reaktivasyon) Tüberküloz",
-          "C) Sarkoidoz (Bilateral hiler LAP)",
-          "D) Akciğer Kanseri (Genellikle yaşlı)",
+          "A) Bakteriyel Pnömoni",
+          "B) Sekonder Tüberküloz",
+          "C) Sarkoidoz",
+          "D) Akciğer Kanseri",
           "E) Wegener Granülomatozu"
         ],
-        "correct_answer": "B) Sekonder (Reaktivasyon) Tüberküloz",
+        "correct_answer": "B) Sekonder Tüberküloz",
         "explanation": "PROFESÖR DEĞERLENDİRMESİ: Gece terlemesi, kilo kaybı ve kanlı öksürük (hemoptizi) tüberküloz için klasik 'konstitüsyonel' semptomlardır. \n\n🎓 HOCA ÖZETİ:\n- Apeks Tutulumu: Sekonder TBC'nin en sevdiği yerdir (yüksek oksijenli ortam). \n- Kavite Oluşumu: Enfeksiyonun aktif olduğunu ve bulaştırıcılığın yüksek olduğunu gösterir.\n- Laboratuvar: Aside dirençli basiller (ARB) Ziehl-Neelsen boyama ile pembe/kırmızı görülür.\n- Epidemiyoloji: Cezaevleri, yurtlar ve bağışıklığı baskılanmış kişiler risk grubundadır.",
         "id": "cc-micro-mycobac-001-001"
       }

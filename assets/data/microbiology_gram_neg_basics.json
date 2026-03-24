@@ -75,7 +75,7 @@
           "D) İTP (İmmün Trombositopenik Purpura)",
           "E) Henoch-Schönlein Purpurası"
         ],
-        "correct_answer": "A) HÜS (Hemolitik Üremik Sendrom)",
+        "correct_answer": "A) HÜS",
         "explanation": "PROFESÖR DEĞERLENDİRMESİ: Kanlı ishal (hemorajik kolit) sonrası gelişen 'HÜS Triadı'nı unutma: 1) Mikroanjiyopatik hemolitik anemi (Schistositler), 2) Trombositopeni, 3) Akut böbrek yetmezliği.\n\n🎓 HOCA ÖZETİ:\n- Etken: E. coli O157:H7 (EHEC) veya Shigella dysenteriae tip 1.\n- Mekanizma: Shiga (veya Shiga-like) toksini damar endoteline hasar verir, mikrotrombüsler oluşur.\n- EHEC = Enterohemorajik E. coli ilişkilidir.\n- Uyarı: Çocuklarda en sık akut böbrek yetmezliği nedenlerinden biridir. Antibiyotik kullanımı toksin salınımını artırabileceği için risklidir.",
         "id": "cc-micro-gneg-basic-002-001"
       }

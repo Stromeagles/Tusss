@@ -27,12 +27,12 @@
       "case": "**Apoptoz**\n\nHIV pozitif hastanın periferik kan yaymasında lenfosit sayısı belirgin azalmış bulunuyor. Lenf nodu biyopsisinde hücrelerin küçüldüğü, nükleer kromatinin yoğunlaştığı ve sitoplazmik fragmanların (membran-bağlı cisimcikler) oluştuğu izleniyor. İnflamatuar infiltrasyon mevcut değil.\n\nBu hücre ölüm mekanizmasını tetikleyen en önemli yolak hangisidir?",
       "options": [
         "A) Ekstrinsik yolak — Fas/FasL etkileşimi",
-        "B) İntrinsik (mitokondriyal) yolak",
+        "B) İntrinsik yolak",
         "C) Nekroptoz — RIPK1/RIPK3 aktivasyonu",
         "D) Piroptoz — inflammazom aktivasyonu",
         "E) Otofaji — lizozomal sindirim"
       ],
-      "correct_answer": "B) İntrinsik (mitokondriyal) yolak",
+      "correct_answer": "B) İntrinsik yolak",
       "explanation": "HIV'de CD4+ T lenfositlerin kaybı ağırlıklı olarak intrinsik (mitokondriyal) apoptoz yolağı ile gerçekleşir. Viral proteinler Bcl-2 ailesinin pro-apoptotik üyelerini (Bax, Bak) aktive eder; mitokondri dış membranından sitokrom-c salınır ve kaspaz-9 → kaspaz-3 kaskadı başlar. İnflamatuar yanıt olmaması apoptozun temel özelliğidir (nekrozdan ayırt edici). Ekstrinsik yolak da (Fas/FasL) rol oynar ama birincil mekanizma intrinsik yolaktır.",
       "story_hint": "💡 HİKAYE: HIV virüsü hücrenin enerji santralini (mitokondri) ele geçirip kapılarını açtı — sitokrom-c dışarı kaçtı ve kaspaz ordusu harekete geçti. Hücre sessizce büzüşerek öldü, kimse fark etmedi (inflamasyon yok = apoptoz)."
     },
@@ -54,7 +54,7 @@
       "id": "path_vaka_4",
       "case": "**İrreversibl Hasar Belirteci**\n\n68 yaşında erkek hasta, akut miyokard enfarktüsü şüphesiyle takip ediliyor. Eğer reperfüzyon sağlanamazsa ve iskemi 4 saati aşarsa, miyokard biyopsisinde irreversibl (geri dönüşsüz) hasarı gösteren en erken morfolojik bulgu hangisi olurdu?",
       "options": [
-        "A) Miyofibrillerde dalgalanma (wavy fibers)",
+        "A) Miyofibrillerde dalgalanma",
         "B) Koagülatif nekroz",
         "C) Nötrofil infiltrasyonu",
         "D) Mitokondride amorf yoğun cisimcikler ve membran yırtılması",
@@ -69,12 +69,12 @@
       "case": "**Serbest Radikal Hasarı**\n\nYenidoğan yoğun bakımda prematüre bebek yüksek konsantrasyonda oksijen tedavisi alıyor. Birkaç gün sonra göz muayenesinde retinal hasar saptanıyor (retinopathy of prematurity).\n\nBu hasarın temel mekanizması aşağıdakilerden hangisidir?",
       "options": [
         "A) Hipoksik hücre hasarı",
-        "B) Reaktif oksijen türlerinin (ROS) lipid peroksidasyonu ve protein oksidasyonu",
+        "B) Reaktif oksijen türlerinin lipid peroksidasyonu ve protein oksidasyonu",
         "C) Kompleman aracılı hücre lizisi",
         "D) Mitokondriyal DNA mutasyonu",
         "E) Endoplazmik retikulum stres yanıtı"
       ],
-      "correct_answer": "B) Reaktif oksijen türlerinin (ROS) lipid peroksidasyonu ve protein oksidasyonu",
+      "correct_answer": "B) Reaktif oksijen türlerinin lipid peroksidasyonu ve protein oksidasyonu",
       "explanation": "Hiperoksi ortamında süperoksid (O₂⁻), hidrojen peroksid (H₂O₂) ve hidroksil radikali (OH•) aşırı üretilir. Bu ROS'lar lipid peroksidasyonu (membran hasarı), protein oksidasyonu ve DNA hasarı yapar. Prematüre bebeklerin antioksidan savunması (SOD, katalaz, glutatyon peroksidaz) yetersizdir. ROP'un (retinopathy of prematurity) temel mekanizması budur.",
       "story_hint": "💡 HİKAYE: Prematüre bebek, oksijen odasında güneşlenirken (hiperoksi) serbest radikaller UV ışını gibi retinayı yakıyor. Bebeğin kalkanı (antioksidanlar: SOD, katalaz) henüz zayıf — ROS lipid peroksidasyonu ile hasarı başlatır."
     },
@@ -98,11 +98,11 @@
       "options": [
         "A) Kronik granülomatöz hastalık",
         "B) Chédiak-Higashi sendromu",
-        "C) Lökosit adezyon defekti tip 1 (LAD-1)",
+        "C) Lökosit adezyon defekti tip 1",
         "D) Myeloperoksidaz eksikliği",
         "E) Job sendromu"
       ],
-      "correct_answer": "C) Lökosit adezyon defekti tip 1 (LAD-1)",
+      "correct_answer": "C) Lökosit adezyon defekti tip 1",
       "explanation": "LAD-1'de CD18 (β2-integrin) eksikliği vardır. Lökositler endotele sıkı yapışamaz (adezyon) ve dokuya göç edemez (kemotaksi bozulur). Tekrarlayan bakteriyel enfeksiyonlar, gecikmiş göbek kordon düşmesi ve pyojenik apselerin abse oluşturamadan selülit şeklinde seyretmesi tipiktir. KGH'da NADPH oksidaz defekti, Chédiak-Higashi'de mikrotübül/granül defekti (dev granüller), MPO eksikliğinde genellikle asemptomatik seyir, Job sendromunda kemotaksi bozukluğu + yüksek IgE vardır.",
       "story_hint": "💡 HİKAYE: Nötrofiller askerdir ama CD18 yapıştırıcıları bozuk — otobüse (endotel) yapışamıyorlar, savaş alanına gidemiyorlar! Göbek kordonu bile düşmüyor çünkü nötrofiller orada da işe yaramıyor. LAD-1'in hikayesi budur."
     },
@@ -140,11 +140,11 @@
       "options": [
         "A) Aşırı fibrinoliz",
         "B) Trombosit fonksiyon bozukluğu",
-        "C) Küçük damar hastalığı (mikroanjiyopati) ile azalmış perfüzyon ve bozulmuş lökosit fonksiyonu",
-        "D) Aşırı MMP (matriks metalloproteinaz) aktivasyonu",
+        "C) Küçük damar hastalığı ile azalmış perfüzyon ve bozulmuş lökosit fonksiyonu",
+        "D) Aşırı MMP aktivasyonu",
         "E) Vitamin C eksikliği"
       ],
-      "correct_answer": "C) Küçük damar hastalığı (mikroanjiyopati) ile azalmış perfüzyon ve bozulmuş lökosit fonksiyonu",
+      "correct_answer": "C) Küçük damar hastalığı ile azalmış perfüzyon ve bozulmuş lökosit fonksiyonu",
       "explanation": "Diyabette yara iyileşmesini bozan temel mekanizmalar: (1) mikroanjiyopati → doku perfüzyonu azalır, (2) hiperglisemi → lökosit kemotaksisi ve fagositozu bozulur (enfeksiyon riski artar), (3) nöropati → travma fark edilmez. Kollajen sentezi ve granülasyon dokusu oluşumu bu nedenlerle gecikir. C vitamini eksikliğinde (skorbüt) prolil ve lizil hidroksilaz çalışamaz ama bu diyabetin birincil mekanizması değildir.",
       "story_hint": "💡 HİKAYE: Diyabetik hastanın ayağındaki yara, şekerin boğduğu küçük damarlar (mikroanjiyopati) yüzünden kanlanamıyor. Lökositler de şekerli ortamda uyuşuk — ne düşman tanıyor ne yara kapanıyor. Küçük damar hastalığı + bozuk lökosit = geciken iyileşme."
     },
@@ -210,11 +210,11 @@
       "options": [
         "A) Trombotik trombositopenik purpura",
         "B) von Willebrand hastalığı",
-        "C) Yaygın damar içi pıhtılaşma (DIC)",
+        "C) Yaygın damar içi pıhtılaşma",
         "D) İmmün trombositopenik purpura",
         "E) Hemofili A"
       ],
-      "correct_answer": "C) Yaygın damar içi pıhtılaşma (DIC)",
+      "correct_answer": "C) Yaygın damar içi pıhtılaşma",
       "explanation": "DIC'de doku faktörü (TF) dolaşıma geçer → yaygın mikrotrombi oluşur → pıhtılaşma faktörleri ve trombositler tüketilir → paradoksal kanama gelişir. D-dimer yükselir (fibrin yıkımı). Ablatio plasenta, amniyotik sıvı embolisi, sepsis, AML (M3) ve müsinöz adenokarsinomlar DIC'in klasik tetikleyicileridir. TTP'de ADAMTS13 eksikliği ve schistositler ön planda, ITP'de izole trombositopeni vardır.",
       "story_hint": "💡 HİKAYE: Plasenta ayrıldı, doku faktörü kan nehrine döküldü — her yerde minik pıhtılar (mikrotrombi) oluştu. Pıhtılaşma faktörleri ve trombositler hepsi harcandı, paradoks olarak hasta kanamaya başladı. DIC = tüketim koagülopatisi."
     },
@@ -419,12 +419,12 @@
       "case": "**Lynch Sendromu**\n\n45 yaşında kadın, sağ kolon kanseri tanısı alıyor. Aile öyküsünde annede endometrium kanseri, dayıda kolon kanseri, teyzede over kanseri var. Tümörde mikrosatellit instabilitesi (MSI-high) saptanıyor.\n\nBu sendromun genetik temeli hangisidir?",
       "options": [
         "A) APC mutasyonu",
-        "B) DNA mismatch repair (MMR) gen mutasyonu",
+        "B) DNA mismatch repair gen mutasyonu",
         "C) TP53 mutasyonu",
         "D) BRCA1 mutasyonu",
         "E) CDH1 mutasyonu"
       ],
-      "correct_answer": "B) DNA mismatch repair (MMR) gen mutasyonu",
+      "correct_answer": "B) DNA mismatch repair gen mutasyonu",
       "explanation": "Lynch sendromu (HNPCC): MMR gen germline mutasyonu → DNA onarım defekti → mikrosatellit instabilitesi (MSI-H). En sık kolorektal kanser (sağ kolon predileksiyonu), endometrium, over, mide, üriner sistem kanserleri. Amsterdam kriterleri ile klinik tanı. FAP'tan farkı: çok az polip olması ama kanser riskinin yüksek olmasıdır.",
       "story_hint": "💡 HİKAYE: Lynch ailesinde DNA tamircileri (MMR genleri) bozuk — yazım hataları düzeltilemiyor, mikrosatellitler kaymaya başlıyor (MSI-H). Az polip ama yüksek kanser riski; kolon, endometrium ve over hedefte. Amsterdam kriterleriyle tanınır."
     },
@@ -433,12 +433,12 @@
       "case": "**Ateroskleroz**\n\n55 yaşında diyabetik, hipertansif, sigara içen erkek hasta göğüs ağrısı ile başvuruyor.\n\nAterosklerotik plak oluşumunda en erken lezyon ve bunu başlatan olay hangisidir?",
       "options": [
         "A) Fibröz plak — düz kas proliferasyonu",
-        "B) Yağlı çizgilenme (fatty streak) — okside LDL'nin makrofajlarca alınması",
+        "B) Yağlı çizgilenme — okside LDL'nin makrofajlarca alınması",
         "C) Komplike plak — trombüs formasyonu",
         "D) Kalsifiye plak — distrofik kalsifikasyon",
         "E) Anevrizma — media hasarı"
       ],
-      "correct_answer": "B) Yağlı çizgilenme (fatty streak) — okside LDL'nin makrofajlarca alınması",
+      "correct_answer": "B) Yağlı çizgilenme — okside LDL'nin makrofajlarca alınması",
       "explanation": "Aterosklerozda \"response to injury\" hipotezi: endotel disfonksiyonu (sigara, HT, DM, hiperkolesterolemi) → LDL intimaya geçer → okside olur → monositler göç eder, makrofaja dönüşür → okside LDL'yi scavenger reseptörlerle alır → köpük hücreleri (foam cells) oluşur → FATTY STREAK (en erken lezyon, çocuklarda bile görülebilir). Zamanla düz kas göçü ve kollajen birikimiyle fibröz plak gelişir.",
       "story_hint": "💡 HİKAYE: Sigara, HT ve DM endoteli yaraladı — LDL yaradan süzülüp oksitlendi. Makrofajlar 'temizleyelim' deyip LDL'yi yuttu ama şişip köpük hücresine dönüştü. Bu köpükler yığılınca fatty streak (yağlı çizgi) oluştu — aterosklerozun ilk adımı!"
     },
@@ -446,10 +446,10 @@
       "id": "path_vaka_32",
       "case": "**Akut Miyokard İnfarktüsü / Zaman Çizelgesi**\n\nAkut MI geçiren hastanın 24 saat sonra alınan biyopsisinde en belirgin histopatolojik bulgu hangisidir?",
       "options": [
-        "A) Dalgalı miyofibriller (wavy fibers)",
+        "A) Dalgalı miyofibriller",
         "B) Koagülatif nekroz + yoğun nötrofil infiltrasyonu",
         "C) Makrofaj infiltrasyonu ve granülasyon dokusu",
-        "D) Skar dokusu (kollajen)",
+        "D) Skar dokusu",
         "E) Normal miyokard"
       ],
       "correct_answer": "B) Koagülatif nekroz + yoğun nötrofil infiltrasyonu",
@@ -546,11 +546,11 @@
       "options": [
         "A) Skuamöz hücreli karsinom — hiperkalsemi",
         "B) Adenokarsinom — hipertrofik osteoartropati",
-        "C) Küçük hücreli (small cell) karsinom — SIADH veya ektopik ACTH",
+        "C) Küçük hücreli karsinom — SIADH veya ektopik ACTH",
         "D) Büyük hücreli karsinom — jinekomasti",
         "E) Karsinoid tümör — karsinoid sendrom"
       ],
-      "correct_answer": "C) Küçük hücreli (small cell) karsinom — SIADH veya ektopik ACTH",
+      "correct_answer": "C) Küçük hücreli karsinom — SIADH veya ektopik ACTH",
       "explanation": "Küçük hücreli karsinom (SCLC): nöroendokrin belirteçler (sinaptofizin, kromogranin, NSE) pozitif, santral yerleşim, sigara ile güçlü ilişki. En sık paraneoplastik sendromlar: SIADH (ADH sekresyonu → hiponatremi), ektopik ACTH (Cushing sendromu), Lambert-Eaton sendromu (presinaptik kalsiyum kanallarına karşı antikorlar). Cerrahi değil kemoradyoterapi uygulanır. Skuamöz hücreli → PTHrP → hiperkalsemi.",
       "story_hint": "💡 HİKAYE: Benign nefroskleroz = kronik HT'de arteriyollerde hyalen birikimi (pembe cam gibi). Malign nefroskleroz = acil HT'de soğan zarı intimal hiperplazi + fibrinoid nekroz. İki farklı basınç, iki farklı mikroskopi!"
     },
@@ -658,11 +658,11 @@
       "options": [
         "A) Hiperplazi — kanser riski yok",
         "B) Displazi — yüksek kanser riski",
-        "C) İntestinal metaplazi (Barrett özofagusu)",
+        "C) İntestinal metaplazi",
         "D) Atrofi — malnütrisyon riski",
         "E) Skuamöz metaplazi — skuamöz karsinom riski"
       ],
-      "correct_answer": "C) İntestinal metaplazi (Barrett özofagusu)",
+      "correct_answer": "C) İntestinal metaplazi",
       "explanation": "Barrett özofagusu: kronik GÖRH → distal özofagusta stratifiye skuamöz epitel → goblet hücreli intestinal metaplazi. Bu, özofagus adenokarsinomuna premalign bir lezyondur (yıllık risk %0.5-1). Tedavi: PPI + endoskopik takip ± ablasyon. Displazi gelişirse kanser riski artar. Metaplazi = bir erişkin hücre tipinin başka bir erişkin hücre tipine dönüşmesi.",
       "story_hint": "💡 HİKAYE: Astım = reversibl hava yolu obstrüksiyonu. Tip I hipersensitivite (IgE-mast hücresi) erken fazda, Tip IV (Th2-eozinofil) geç fazda aktif. Spirometride FEV1/FVC↓, bronkodilatöre yanıt verir. Eozinofilik inflamasyon = Charcot-Leyden kristalleri."
     },
@@ -966,11 +966,11 @@
       "options": [
         "A) Papiller RCC — MET mutasyonu",
         "B) Kromofob RCC — BHD geni",
-        "C) Clear cell (berrak hücreli) RCC — VHL gen kaybı (3p)",
+        "C) Clear cell RCC — VHL gen kaybı",
         "D) Onkositom — benign",
         "E) Wilms tümörü — WT1 geni"
       ],
-      "correct_answer": "C) Clear cell (berrak hücreli) RCC — VHL gen kaybı (3p)",
+      "correct_answer": "C) Clear cell RCC — VHL gen kaybı",
       "explanation": "Berrak hücreli RCC en sık RCC alt tipidir (%70-80). VHL tümör supresör gen kaybı (kromozom 3p) → HIF birikir → VEGF ve PDGF üretimi artar → anjiogenez. Paraneoplastik bulgular: polisitemi (eritropoietin), hiperkalsemi (PTHrP), Cushing. Renal vene tümör trombusu uzanabilir ve IVC'ye kadar ilerleyebilir. Tedavi: nefrektomi + tirozin kinaz inhibitörleri (sunitinib).",
       "story_hint": "💡 HİKAYE: Seminom testisin en sık germ hücreli tümörü — radyoterapiye mükemmel yanıt verir! 'Kızarmış yumurta' hücreleri (büyük çekirdek, berrak sitoplazma) ve PLAP pozitifliği tanıda yol gösterir. İnmemiş testis (kriptorşidizm) en büyük risk!"
     },
@@ -1205,7 +1205,7 @@
         "A) İnsülin direnci + relatif insülin eksikliği",
         "B) T hücre aracılı otoimmün beta hücre yıkımı — HLA-DR3/DR4 ilişkili",
         "C) Amilin birikimi — adacık amiloidi",
-        "D) Matürite-onset diabetes of the young (MODY) — monogenik",
+        "D) Matürite-onset diabetes of the young — monogenik",
         "E) Gestasyonel hormonal değişiklikler"
       ],
       "correct_answer": "B) T hücre aracılı otoimmün beta hücre yıkımı — HLA-DR3/DR4 ilişkili",
@@ -1259,12 +1259,12 @@
       "case": "**Multipl Miyelom**\n\n68 yaşında erkek, bel ağrısı, anemi ve böbrek yetmezliği ile başvuruyor. Serum protein elektroforezinde M-pike (monoklonal pik), Bence-Jones proteinürisi, röntgende yaygın litik kemik lezyonları ve hiperkalsemi saptanıyor.\n\nMultipl miyelomun tanı kriterleri ve patolojik mekanizması hangisidir?",
       "options": [
         "A) Lenfoplazmasitik lenfoma — IgM monoklonal, hiperviskozite",
-        "B) Kemik iliğinde %10+ klonal plazma hücreleri + uç organ hasarı (CRAB kriterleri)",
+        "B) Kemik iliğinde %10+ klonal plazma hücreleri + uç organ hasarı",
         "C) MGUS — monoklonal gammopati ama organ hasarı yok",
         "D) Primer amiloidoz — AL amiloid birikimi",
         "E) Ağır zincir hastalığı — IgA ağır zincir"
       ],
-      "correct_answer": "B) Kemik iliğinde %10+ klonal plazma hücreleri + uç organ hasarı (CRAB kriterleri)",
+      "correct_answer": "B) Kemik iliğinde %10+ klonal plazma hücreleri + uç organ hasarı",
       "explanation": "Multipl miyelom: kemik iliğinde neoplastik plazma hücre proliferasyonu. CRAB kriterleri: Calcium ↑, Renal failure (hafif zincir nefropatisi, amiloidoz), Anemia (iliği infiltrasyon), Bone lesions (osteolitik — osteoklast aktivasyonu, RANKL ↑). Bence-Jones proteini: idrarda monoklonal hafif zincirler. Waldenström makroglobulinemisi IgM üretir → hiperviskozite. MGUS → miyelom transformasyonu yılda %1.",
       "story_hint": "💡 HİKAYE: Graves'te TSI (TSH reseptör stimülan antikor) tiroidin gazını açar — hipertiroidi! Difüz guatr (tüm bez büyür), ekzoftalmus (göz fırlaması — orbital fibrozis), pretibial miksödem (bacakta kalınlaşma). Tip II hipersensitivite ama stimülatör tip!"
     },

@@ -4,10 +4,6 @@
 Options -MultiViews
 RewriteEngine On
 
-# HTTPS yönlendirme
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
 # Flutter web SPA routing — mevcut dosya/dizin değilse index.html'e yönlendir
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

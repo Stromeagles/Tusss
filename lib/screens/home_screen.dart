@@ -497,6 +497,7 @@ class _HomeScreenState extends State<HomeScreen> {
       buttonLabel: 'FLASHKARTLAR',
       summary: _flashcardSummary,
       baseColor: AppTheme.cyan,
+      bgImage: 'assets/images/tus_Deneme.jpg',
       folders: [
         (label: 'Doğrular', icon: Icons.check_circle_rounded, color: AppTheme.success, mode: FlashcardMode.learnedOnly),
         (label: 'Yanlışlar', icon: Icons.cancel_rounded, color: AppTheme.error, mode: FlashcardMode.failedOnly),
@@ -522,47 +523,93 @@ class _HomeScreenState extends State<HomeScreen> {
         onTap: () => Navigator.push(context,
             AppRoute.slideUp(const SpotsScreen())),
         child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+          height: 76,
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: isDark
-                  ? [const Color(0xFF1A1230), const Color(0xFF0F1A2E)]
-                  : [const Color(0xFFF0E6FF), const Color(0xFFE6F0FF)],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
             borderRadius: BorderRadius.circular(18),
             border: Border.all(
               color: AppTheme.neonPurple.withValues(alpha: isDark ? 0.25 : 0.15)),
           ),
-          child: Row(
+          clipBehavior: Clip.antiAlias,
+          child: Stack(
+            fit: StackFit.expand,
             children: [
+              // Arka plan gradient
               Container(
-                padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: AppTheme.neonPurple.withValues(alpha: 0.15),
-                  borderRadius: BorderRadius.circular(12),
+                  gradient: LinearGradient(
+                    colors: isDark
+                        ? [const Color(0xFF1A1230), const Color(0xFF0F1A2E)]
+                        : [const Color(0xFFF0E6FF), const Color(0xFFE6F0FF)],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
                 ),
-                child: const Icon(Icons.local_fire_department_rounded,
-                    color: AppTheme.neonPurple, size: 22),
               ),
-              const SizedBox(width: 14),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+              // Sağ taraf — dekoratif görsel
+              Positioned(
+                right: 0, top: 0, bottom: 0,
+                child: SizedBox(
+                  width: 110,
+                  child: Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      Image.asset(
+                        'assets/images/ilerleme_gorseli.jpg',
+                        fit: BoxFit.cover,
+                        cacheWidth: 300,
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
+                            colors: [
+                              (isDark ? const Color(0xFF1A1230) : const Color(0xFFF0E6FF)),
+                              Colors.transparent,
+                            ],
+                            stops: const [0.0, 0.55],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              // İçerik
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                child: Row(
                   children: [
-                    Text('Spot Bilgiler',
-                      style: GoogleFonts.inter(
-                        color: textColor, fontSize: 15, fontWeight: FontWeight.w800)),
-                    const SizedBox(height: 2),
-                    Text('TUS\'ta en çok çıkan hap bilgiler',
-                      style: GoogleFonts.inter(
-                        color: subColor, fontSize: 12, fontWeight: FontWeight.w500)),
+                    Container(
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: AppTheme.neonPurple.withValues(alpha: 0.15),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: const Icon(Icons.local_fire_department_rounded,
+                          color: AppTheme.neonPurple, size: 22),
+                    ),
+                    const SizedBox(width: 14),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('Spot Bilgiler',
+                            style: GoogleFonts.inter(
+                              color: textColor, fontSize: 15, fontWeight: FontWeight.w800)),
+                          const SizedBox(height: 2),
+                          Text('TUS\'ta en çok çıkan hap bilgiler',
+                            style: GoogleFonts.inter(
+                              color: subColor, fontSize: 12, fontWeight: FontWeight.w500)),
+                        ],
+                      ),
+                    ),
+                    Icon(Icons.chevron_right_rounded,
+                        color: AppTheme.neonPurple.withValues(alpha: 0.6), size: 22),
                   ],
                 ),
               ),
-              Icon(Icons.chevron_right_rounded,
-                  color: AppTheme.neonPurple.withValues(alpha: 0.6), size: 22),
             ],
           ),
         ),
@@ -578,6 +625,7 @@ class _HomeScreenState extends State<HomeScreen> {
       buttonLabel: 'SORULAR',
       summary: _caseSummary,
       baseColor: const Color(0xFF6366F1), // Indigo
+      bgImage: 'assets/images/sınav.jpg',
       folders: [
         (label: 'Doğrular', icon: Icons.check_circle_rounded, color: AppTheme.success, mode: CaseStudyMode.learnedOnly),
         (label: 'Yanlışlar', icon: Icons.cancel_rounded, color: AppTheme.error, mode: CaseStudyMode.failedOnly),
@@ -598,6 +646,7 @@ class _HomeScreenState extends State<HomeScreen> {
     required String buttonLabel,
     required SrsSummary summary,
     required Color baseColor,
+    String? bgImage,
     required List<({String label, IconData icon, Color color, dynamic mode})> folders,
     required VoidCallback onButtonTap,
     required Function(dynamic) onFolderTap,
@@ -630,7 +679,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   padding: EdgeInsets.only(right: i < 2 ? 12 : 0),
                   child: _FolderCard(
                     label: f.label,
-                    icon: f.icon,
                     count: count,
                     color: f.color,
                     isDark: isDark,
@@ -654,15 +702,6 @@ class _HomeScreenState extends State<HomeScreen> {
               width: double.infinity,
               height: 60,
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    baseColor,
-                    baseColor.withValues(alpha: 0.8),
-                    baseColor.withValues(alpha: 0.6),
-                  ],
-                  begin: Alignment.centerLeft,
-                  end: Alignment.centerRight,
-                ),
                 borderRadius: BorderRadius.circular(24),
                 boxShadow: [
                   BoxShadow(
@@ -672,16 +711,36 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+              clipBehavior: Clip.antiAlias,
+              child: Stack(
+                fit: StackFit.expand,
                 children: [
-                  Text(
-                    buttonLabel,
-                    style: GoogleFonts.inter(
-                      color: Colors.white,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w900,
-                      letterSpacing: 0.5,
+                  // Arka plan görseli (varsa)
+                  if (bgImage != null)
+                    Image.asset(bgImage, fit: BoxFit.cover, cacheWidth: 600),
+                  // Gradient overlay
+                  Container(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [
+                          baseColor.withValues(alpha: bgImage != null ? 0.82 : 1.0),
+                          baseColor.withValues(alpha: bgImage != null ? 0.65 : 0.6),
+                        ],
+                        begin: Alignment.centerLeft,
+                        end: Alignment.centerRight,
+                      ),
+                    ),
+                  ),
+                  // Label
+                  Center(
+                    child: Text(
+                      buttonLabel,
+                      style: GoogleFonts.inter(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w900,
+                        letterSpacing: 0.5,
+                      ),
                     ),
                   ),
                 ],
@@ -1374,7 +1433,6 @@ class GlowIconBox extends StatelessWidget {
 // ── Folder Card ────────────────────────────────────────────────────────────
 class _FolderCard extends StatelessWidget {
   final String       label;
-  final IconData     icon;
   final int          count;
   final Color        color;
   final bool         isDark;
@@ -1382,7 +1440,6 @@ class _FolderCard extends StatelessWidget {
 
   const _FolderCard({
     required this.label,
-    required this.icon,
     required this.count,
     required this.color,
     required this.isDark,

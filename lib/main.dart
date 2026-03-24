@@ -196,7 +196,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
             ClipRRect(
               borderRadius: BorderRadius.circular(24),
               child: Image.asset(
-                'assets/hero_splash.jpg',
+                'assets/images/hero_splash.jpg',
                 width: 250,
                 fit: BoxFit.cover,
                 cacheWidth: 750, // 250px × 3x — bellek tasarrufu

@@ -1,0 +1,914 @@
+[
+  {
+    "id": "mikro-flash-batch1",
+    "subject": "Mikrobiyoloji",
+    "chapter": "Flashcard Paketi",
+    "topic": "Mikrobiyoloji Özet Kartları",
+    "sub_topic": "TUS Kritik Noktalar",
+    "content_summary": "Mikrobiyoloji TUS kritik bilgileri — 100 flashcard. Antibiyotikler, toksinler, bakteriler, virüsler, immünoloji.",
+    "flashcards": [
+      {
+        "id": "mflash_001",
+        "question": "Gram boyama basamakları sırasıyla nelerdir ve gram (+) ile gram (-) bakteriler nasıl ayrılır?",
+        "answer": "Sıra: [[Kristal viyole]] → [[Lugol iyot]] (fikse eder) → [[Alkol/aseton]] (dekolorize) → [[Safranin]] (karşı boya). Gram (+): mor kalır (kalın peptidoglikan). Gram (-): pembe boyanır (ince peptidoglikan + dış membran).",
+        "explanation": "Gram boyama en temel mikrobiyoloji boyamasıdır. Gram (+) bakterilerde kalın peptidoglikan tabakası alkol-aseton yıkamasına rağmen kristal viyoleyi tutar. Gram (-) bakterilerde dış membran alkolle çözülür, ince peptidoglikan kristal viyoleyi bırakır ve safranin ile pembeye boyanır. TUS'ta boyama sırası ve mekanizması sıkça sorulur.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Bakteri Yapısı", "Boyama"],
+        "story_hint": "💡 HİKAYE: 'Kız İle Arkadaşı Sahile Gitti' — Kristal viyole, İyot, Alkol/aseton, Safranin, Gram boyama tamamdır!"
+      },
+      {
+        "id": "mflash_002",
+        "question": "Gram boyama ile boyanmayan bakteriler hangileridir?",
+        "answer": "[[Mycoplasma]] (hücre duvarı yok), [[Treponema]] (çok ince), [[Rickettsia]] (hücre içi), [[Chlamydia]] (hücre içi), [[Mycobacteria]] (mikolik asit duvarı). Kısaltma: 'My Tree Reached Chilly Mountains'.",
+        "explanation": "Bu bakteriler gram boyama ile görüntülenemez; özel boyama yöntemleri gerekir. Mycoplasma peptidoglikan duvarı olmadığı için hiç boyanmaz. Mycobacteria ise mikolik asit içeriği nedeniyle asido-rezistant boyama gerektirir. TUS'ta hangi bakterinin gram negatif veya pozitif olmadığı, hangi yöntemle boyandığı sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Boyama", "Gram Negatif Olmayanlar"],
+        "story_hint": "💡 HİKAYE: 'My Tree Reached Chilly Mountains' — Mycoplasma, Treponema, Rickettsia, Chlamydia, Mycobacteria gram boyamayı reddeder!"
+      },
+      {
+        "id": "mflash_003",
+        "question": "Ziehl-Neelsen boyamasında hangi bakteriler pozitif boyanır ve asido-rezistanslığın mekanizması nedir?",
+        "answer": "[[Mycobacterium]] spp. ve [[Nocardia]] (kısmen) pozitif boyanır. Mekanizma: hücre duvarındaki [[mikolik asit]] karbolfuksin boyasını bağlar ve asit-alkol ile dekolorize olmaz. Isıtma ile boyama nüfuz eder.",
+        "explanation": "Ziehl-Neelsen boyamasında karbolfuksin ısı yardımıyla hücre duvarına işler. Mikolik asit içeren bakteriler kırmızı-pembe boyanır (aside rezistan = ARB pozitif), diğerleri mavi karşı boya (metilen mavisi) ile boyanır. Nocardia kısmen aside rezistandır. TUS'ta TB şüphesi olan balgamda ZN boyama sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Boyama", "Mycobacterium", "Asido-rezistans"],
+        "story_hint": "💡 HİKAYE: Mikobakteri, 'Mikolik asit zırhı' giymiş bir savaşçı — asit-alkol silahı onu boyayamaz, sadece ısıyla girilir!"
+      },
+      {
+        "id": "mflash_004",
+        "question": "Giemsa boyaması hangi mikroorganizmaları göstermek için kullanılır?",
+        "answer": "[[Plasmodium]] (sıtma), [[Borrelia]], [[Rickettsia]], [[Chlamydia]] (intrasellüler inklüzyon cisimcikleri) Giemsa ile görüntülenir.",
+        "explanation": "Giemsa boyası hücre içi patojenleri ve kan parazitlerini görüntülemek için idealdir. Plasmodium'da eritrositler içindeki halka formları ve Schüffner noktaları görülür. Chlamydia'da inklüzyon cisimcikleri mor-mavi boyanır. TUS'ta Giemsa boyama ile sıtma tanısı sıkça sorulur.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Boyama", "Giemsa", "Parazitoloji"],
+        "story_hint": "💡 HİKAYE: Giemsa, 'Gizli İçi Görür' — hücrelerin içine giren parazit ve bakterileri boyar: Plasmodium, Borrelia, Rickettsia, Chlamydia."
+      },
+      {
+        "id": "mflash_005",
+        "question": "Peptidoglikan yapısı nedir ve lizozim nasıl etki eder?",
+        "answer": "Peptidoglikan: [[NAM]] (N-asetil muramik asit) ve [[NAG]] (N-asetil glukozamin) [[beta 1-4 glikozidik bağ]] ile birleşir. [[Lizozim]] bu bağı keser → hücre duvarı yıkılır → osmotik liz. Gram (+)'de daha [[kalın]] tabaka.",
+        "explanation": "Peptidoglikan bakteriyel hücre duvarının iskeletidir. Beta-laktam antibiyotikler transpeptidaz (PBP) enzimini inhibe ederek peptidoglikan çapraz bağlanmasını engeller. Lizozim ise beta 1-4 bağı hidrolize ederek aynı hedefe farklı mekanizmayla saldırır. Gram (+) bakterilerde 20-80 nm, Gram (-)'de 2-7 nm kalınlığında peptidoglikan bulunur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteri Yapısı", "Peptidoglikan"],
+        "story_hint": "💡 HİKAYE: NAM ve NAG el ele tutuşmuş (beta 1-4 bağ) iki arkadaş — Lizozim gelip el tutmalarını ayırır, bakteri çöker!"
+      },
+      {
+        "id": "mflash_006",
+        "question": "Endotoksinin (LPS) yapısı ve biyolojik etkileri nelerdir?",
+        "answer": "LPS = [[Lipid A]] (toksik kısım) + Core + O antijeni. [[Lipid A]] makrofajları aktive eder → [[TNF-α]], [[IL-1]], IL-6 salınımı. Ateş, hipotansiyon, DIC, [[Shwartzman reaksiyonu]].",
+        "explanation": "Endotoksin gram negatif bakterilerin dış membranında bulunan lipopolisakkarittir. Lipid A TLR-4 reseptörüne bağlanarak makrofaj aktivasyonuna yol açar. Masif sitokin salınımı septik şoka neden olur. Shwartzman reaksiyonu iki ardışık LPS dozuyla oluşur: lokal ve sistemik formu vardır. TUS'ta LPS'nin hangi kısmının toksik olduğu sıkça sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteri Yapısı", "Endotoksin", "LPS"],
+        "story_hint": "💡 HİKAYE: LPS bir sandviç — O antijeni ekmek, core ortası, Lipid A zehirli dolgu. Lipid A makrofajı 'delirtir', ateş ve şok başlar!"
+      },
+      {
+        "id": "mflash_007",
+        "question": "Bakteriyel kapsülün fonksiyonu nedir ve kapsüle karşı tanı yöntemi nedir?",
+        "answer": "Kapsül: [[fagositoza direnç]] (ana virülans faktörü), kompleman aktivasyonunu engeller. Tanı: [[Quellung reaksiyonu]] (S.pneumoniae kapsülü antiserumla şişer). Kapsüllü bakteriler: S.pneumoniae, H.influenzae, N.meningitidis, Klebsiella.",
+        "explanation": "Kapsül polisakkarit yapıda olup fagositozu engeller. Kapsülsüz mutantlar avirulandır. Asplenik hastalarda kapsüllü bakterilere karşı savunma ciddi ölçüde azalır. Quellung (Neufeld) reaksiyonu'nda kapsül spesifik antikorla opaklaşır ve şişmiş görünür — S.pneumoniae tiplemesinde kullanılır. TUS'ta aspleni + pnömokok ilişkisi çok önemlidir.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteri Yapısı", "Kapsül", "Virülans"],
+        "story_hint": "💡 HİKAYE: Kapsüllü bakteri, kendini 'balonla saran' bir suçlu — fagosit polis onu yakalayamaz. Quellung testi balonu patlatır!"
+      },
+      {
+        "id": "mflash_008",
+        "question": "Bakteri sporlarını hangi mikroorganizmalar oluşturur ve sterilizasyonda hangi koşul gerekir?",
+        "answer": "Spor: [[Bacillus]] (aerob, antraks) ve [[Clostridium]] (anaerob, tetanoz/botulizm) oluşturur. Otoklav: [[121°C / 15 dakika]] veya 134°C/3 dk. [[UV ışını]] ve kimyasallar sporu öldürmez.",
+        "explanation": "Sporlar, besin kıtlığı ve stres koşullarında oluşan yüksek dirençli dinlenme formlarıdır. Dipikolinik asit içerir, su içeriği çok azdır. Biyolojik gösterge olarak Bacillus stearothermophilus (Geobacillus) otoklav kontrolünde kullanılır. Tetanoz yarasındaki spor kontaminasyonu klasik TUS sorusudur.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Bakteri Yapısı", "Spor", "Sterilizasyon"],
+        "story_hint": "💡 HİKAYE: Sporlar 'ölümsüz askerler' — sıcak, kimyasal, UV hiçbiri işe yaramaz. Sadece 121°C otoklav onları yener!"
+      },
+      {
+        "id": "mflash_009",
+        "question": "Bakteri pilisinin (fimbriyasının) fonksiyonu nedir? Önemli örnekler nelerdir?",
+        "answer": "Pili: [[adezyon]] (konak hücreye yapışma), konjugasyon (F pili). [[CFA antijeni]] (ETEC, kolonizasyon faktörü), [[Tip IV pili]] (N.gonorrhoeae kayarak hareketi), P fimbria (E.coli üropatojenik).",
+        "explanation": "Pili, bakteri yüzeyindeki protein uzantılarıdır. Üriner sistem enfeksiyonlarında E.coli'nin P fimbriyası uroepitel hücrelerindeki P kan grubu antijenlerine bağlanır. N.gonorrhoeae'nin Tip IV pilisi 'sürünme hareketi' ve epitel invazyonu için kritiktir. Konjugasyon pilisi DNA transferini sağlar. TUS'ta adezyon-virülans ilişkisi sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteri Yapısı", "Pili", "Virülans"],
+        "story_hint": "💡 HİKAYE: Pili, bakterinin 'grappling hook'u — konak hücreye çengel atar ve yerleşir. ETEC CFA ile bağırsaklara, E.coli P fimbria ile mesaneye!"
+      },
+      {
+        "id": "mflash_010",
+        "question": "Flagella (kırbaç) nedir ve Salmonella'daki önemi nedir?",
+        "answer": "Flagella: [[H antijeni]] (somatik O antijeninden farklı), hareket ve kemotaksi. [[Salmonella'da fazik varyasyon]]: H1 ve H2 arasında geçiş — bağışıklık sisteminden kaçınır. Monotrik, lofotrik, peritrik düzenleme.",
+        "explanation": "Flagella, bakteri hareketi için kullanılan ve H antijenini taşıyan yapıdır. Salmonella'da faz varyasyonu (H1↔H2) antijenik değişkenliğe olanak sağlar; bu nedenle antikor yanıtı etkinliğini kaybeder. TUS'ta Salmonella serotipleme sırasında H ve O antijenleri sorulur. E.coli'de H antijeni serotipin üçüncü bileşenidir (O:K:H).",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteri Yapısı", "Flagella", "Salmonella"],
+        "story_hint": "💡 HİKAYE: Salmonella'nın flagellası 'kılık değiştiren ajan' — H1 kimliğinde gezer, antikor gelince H2 kimliğine geçer, yakalanmaz!"
+      },
+      {
+        "id": "mflash_011",
+        "question": "Biyofilm nedir ve hangi bakteriler klinik açıdan önemli biyofilm oluşturur?",
+        "answer": "Biyofilm: bakterilerin yüzeye yapışıp [[ekstraselüler matriks]] ile çevrilmiş topluluk oluşturması. [[Pseudomonas aeruginosa]] (alginat), [[S.epidermidis]] (slime), S.mutans (diş çürüğü). [[Kateter ve protez]] enfeksiyonları, antibiyotik direnci artar.",
+        "explanation": "Biyofilm içindeki bakteriler planktonik formlardan 100-1000 kat daha dirençlidir. Antibiyotik penetrasyonu azalır, metabolik aktivite yavaşlar. Pseudomonas'ın biyofilmi kistik fibrozis hastalarında kronik akciğer enfeksiyonuna yol açar. Kateter ilişkili enfeksiyonlarda S.epidermidis biyofilmi kritik önem taşır. TUS'ta biyofilm-kateter ilişkisi sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteri Yapısı", "Biyofilm", "Direnç"],
+        "story_hint": "💡 HİKAYE: Biyofilm, bakterilerin 'kalesi' — mukus ve polisakkarit duvarlarla çevrilmiş, antibiyotik ordusu içeri giremez. Kateter bu kalenin kapısı!"
+      },
+      {
+        "id": "mflash_012",
+        "question": "Mezozom nedir ve bakteride hangi işlevleri vardır?",
+        "answer": "Mezozom: [[sitoplazmik membranın içe doğru girintisi]]. İşlevler: [[DNA replikasyonu]] ve hücre bölünmesi, [[beta-laktamaz]] salgısı, solunum enzimlerinin tutulması. [[Spor oluşumunda]] rol oynar.",
+        "explanation": "Mezozomlar özellikle gram (+) bakterilerde belirgindir. Mitokondrinin yokluğunda solunum zinciri enzimlerini barındırır. Bazı araştırmacılar mezozomun sadece hazırlama artefaktı olduğunu öne sürmüş olsa da TUS'ta beta-laktamaz salgısı ve spor oluşumu bağlamında sorulmaktadır.",
+        "difficulty": "Zor",
+        "tags": ["Mikrobiyoloji", "Bakteri Yapısı", "Mezozom"],
+        "story_hint": "💡 HİKAYE: Mezozom, membranın 'iç büro ofisi' — bölünme kararları, enerji üretimi ve savunma (beta-laktamaz) hep burada yönetilir!"
+      },
+      {
+        "id": "mflash_013",
+        "question": "Penisilin G ve V'nin etki spektrumu nedir ve temel zafiyeti nedir?",
+        "answer": "Penisilin G/V: [[gram (+) koklar]] (S.pyogenes, S.pneumoniae), [[Treponema pallidum]] (sifiliz, ilk seçenek). [[Beta-laktamaza duyarlı]] — S.aureus çoğu suşu dirençli.",
+        "explanation": "Penisilin G parenteral, V oral kullanılan dar spektrumlu bir beta-laktamdır. Transpeptidaz (PBP) enzimini inhibe ederek peptidoglikan çapraz bağlanmasını engeller. Sifiliz tedavisinde hâlâ altın standart. Penisilin allerjisi TUS'ta önemli: IgE aracılıklı anafilaksi, tüm beta-laktamlarda çapraz reaksiyon riski. Beta-laktamaz beta-laktam halkasını hidrolize eder.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Penisilin"],
+        "story_hint": "💡 HİKAYE: Penisilin G, 'Büyükanne tarifi' — eski ama sifilize karşı hâlâ en iyi. Sadece beta-laktamaz makası onu bitirebilir!"
+      },
+      {
+        "id": "mflash_014",
+        "question": "Oksasilin ve nafsilin ne için kullanılır? MRSA'ya neden etkisiz?",
+        "answer": "[[Oksasilin/Nafsilin]]: [[MSSA]] (penisilinaz üreten S.aureus) için kullanılır. [[MRSA'ya etkisiz]] çünkü MRSA'da mecA geni kodlu [[PBP2a]] tüm beta-laktamlara düşük afinite gösterir.",
+        "explanation": "Oksasilin ve nafsilin, beta-laktamaz enzimini hidrolize etmeyen yapısal değişiklik sayesinde S.aureus'un penisilinaz enzimine dirençlidir. Ancak MRSA'da mecA gen ürünü olan PBP2a, tüm beta-laktamlara (karbapenemler dahil) çok düşük affiniteyle bağlanır. MRSA için vankomisin veya seftarolin kullanılır. TUS'ta MRSA direncinin mekanizması önemlidir.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "MRSA", "Beta-laktam Direnci"],
+        "story_hint": "💡 HİKAYE: Oksasilin, penisilinaz 'makasını' bilen silahlı ajan — ama MRSA'nın PBP2a zırhı tüm beta-laktamları reddeder. Kale değil, farklı kilit!"
+      },
+      {
+        "id": "mflash_015",
+        "question": "Ampisilin ve amoksisilin hangi bakterilere etkilidir?",
+        "answer": "[[Ampisilin/Amoksisilin]]: gram (+) + bazı gram (-): [[H.influenzae]], [[E.coli]], [[Listeria monocytogenes]], Enterococcus. [[Beta-laktamaza duyarlı]] — amoksisilin+klavulanat direnci aşar.",
+        "explanation": "Ampisilin ve amoksisilin aminopenisilin grubu geniş spektrumlu penisilinlerdir. Listeria monocytogenes, TMP-SMX ile birlikte ampisilin/amoksisilin seçilir. Amoksisilin+klavulanat (Augmentin) beta-laktamaz üreten H.influenzae, E.coli ve MSSA'ya etkilidir. TUS'ta Listeria menenjitinde ampisilin tercih edilir (seftriakson Listeria'ya etkisizdir).",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Aminopenisilin", "Listeria"],
+        "story_hint": "💡 HİKAYE: Ampisilin, 'Genişletilmiş kapı' penisilin — gram negatife de girer. Ama Listeria menenjitinde kritik: seftriakson kapıyı açamaz, ampisilin açar!"
+      },
+      {
+        "id": "mflash_016",
+        "question": "Piperasilin hangi amaçla kullanılır?",
+        "answer": "[[Piperasilin]]: antipsödomonal aktiviteli geniş spektrumlu penisilin. [[Pseudomonas aeruginosa]] dahil gram (-) bakterilere etkili. Genellikle [[tazobaktam]] ile kombinasyonu (pip-tazo) kullanılır.",
+        "explanation": "Piperasilin, üreidopenisilin grubu olup Pseudomonas'a karşı etkinliği ile öne çıkar. Piperasilin-tazobaktam, ESBL üreten gram negatifler, Pseudomonas ve anaeroblara karşı geniş spektrum sağlar. Nötropenik ateş, intraabdominal enfeksiyon ve hastane kaynaklı pnömonide kullanılır. TUS'ta antipsödomonal antibiyotikler listesinde sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Piperasilin", "Pseudomonas"],
+        "story_hint": "💡 HİKAYE: Piperasilin-tazobaktam, 'dinamik ikili' — Pip kapıyı açar, Tazo beta-laktamazı etkisiz kılar. Pseudomonas ve ESBL'ye karşı süper güç!"
+      },
+      {
+        "id": "mflash_017",
+        "question": "Beta-laktamaz inhibitörleri nelerdir ve nasıl çalışır?",
+        "answer": "[[Klavulanat]], [[Sulbaktam]], [[Tazobaktam]]: beta-laktamaz enzimini [[irreversibl inhibe]] eder. Özellikle [[ESBL]] üreten bakterilerde etkili. Kombine preparatlar: amoksilin+klavulanat, ampisilin+sulbaktam, pip+tazobaktam.",
+        "explanation": "Beta-laktamaz inhibitörleri beta-laktam halkası içerir ancak antibiyotik etkinliği zayıftır. Asıl görevleri beta-laktamaz enzimini tuzağa düşürerek kompanyondaki antibiyotiği korumaktır. ESBL (Extended Spectrum Beta-Laktamaz) üreten E.coli ve Klebsiella'ya karşı pip-tazo veya karbapenem kullanılır. KPC (Klebsiella pneumoniae karbapenemaz) karbapenemlere de dirençlidir.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Beta-laktamaz İnhibitörü", "ESBL"],
+        "story_hint": "💡 HİKAYE: Klavulanat, beta-laktamazın ağzına 'zehirli yem' verir — enzim onu yerken kilitlenir, asıl antibiyotiği yiyemez!"
+      },
+      {
+        "id": "mflash_018",
+        "question": "1. kuşak sefalosporinler (sefazolin) ne için kullanılır?",
+        "answer": "[[Sefazolin]] (1. kuşak): gram (+) koklar (MSSA, Streptococcus), [[cerrahi profilaksi]] altın standardı. Gram (-) kapsüm: E.coli, Klebsiella, Proteus mirabilis. Pseudomonas'a etkisiz.",
+        "explanation": "1. kuşak sefalosporinler gram (+) aktivitesi güçlüdür. Sefazolin, cerrahi profilakside en sık kullanılan antibiyotiktir (deri florası olan MSSA'ya karşı). Sefradinin oral formu mevcuttur. TUS'ta 'cerrahi profilaksi' sorusunda sefazolin doğru cevaptır (beta-laktam allerjisinde klindamisin veya vankomisin).",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Sefalosporin", "Cerrahi Profilaksi"],
+        "story_hint": "💡 HİKAYE: Sefazolin, ameliyathane kapıcısı — operasyon öncesi MSSA'yı kapıdan içeri almaz. 1. kuşak basit ama cerrahi profilakside şampiyon!"
+      },
+      {
+        "id": "mflash_019",
+        "question": "2. kuşak sefalosporinlerin (sefuroksim) özellikleri nelerdir?",
+        "answer": "[[Sefuroksim]] (2. kuşak): [[H.influenzae]] dahil gram (-) kapsüm genişler. Gram (+) aktivitesi 1. kuşaktan biraz azalmış. Sefoksitin/sefotetan: anaerob kapsüm (B.fragilis), jinekolojik profilaksi.",
+        "explanation": "2. kuşak sefalosporinlerin H.influenzae'ye karşı etkinliği artmıştır. Sefoksitin ve sefotetan (sefamisinler) anaerob aktivitesi ile intraabdominal ve jinekolojik enfeksiyonlarda kullanılır. Kan-beyin bariyerini iyi geçmez, menenjit tedavisinde kullanılmaz. TUS'ta H.influenzae tedavisinde sefuroksim veya seftriakson sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Sefalosporin", "H.influenzae"],
+        "story_hint": "💡 HİKAYE: 2. kuşak sefalosporin, 'genişletilmiş sınırlar' — H.influenzae kapısını da açtı, ama beyne giremez. Menenjitte çalışmaz!"
+      },
+      {
+        "id": "mflash_020",
+        "question": "3. kuşak sefalosporinler (seftriakson, sefotaksim) hangi endikasyonlarda kullanılır?",
+        "answer": "[[Seftriakson/Sefotaksim]] (3. kuşak): [[bakteriyel menenjit]] (kan-beyin bariyerini geçer), [[toplum kökenli pnömoni]], [[gonore]] (seftriakson IM tek doz), gram (-) ciddi enfeksiyonlar. Seftazidim: Pseudomonas.",
+        "explanation": "3. kuşak sefalosporinler gram negatif etkinliği artmış, gram pozitif etkinliği 1. kuşaktan azalmıştır. Seftriakson uzun yarı ömrü (8 saat) nedeniyle günde tek doz uygulanır. N.gonorrhoeae'de florkinolon direnci arttığından seftriakson ilk seçim olmuştur. Menenjitte seftriakson+vankomisin (pnömokok direnci nedeniyle) standart tedavidir. TUS'ta menenjit tedavi şeması kritik.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Sefalosporin", "Menenjit"],
+        "story_hint": "💡 HİKAYE: Seftriakson, 'beyin kapısını açan' sefalosporin — 3. kuşak güçlü gram negatif ve menenjitte baş vurulan silah. Gonore'ye tek dozda meydan okur!"
+      },
+      {
+        "id": "mflash_021",
+        "question": "4. kuşak sefalosporin (sefepim) özelliği nedir?",
+        "answer": "[[Sefepim]] (4. kuşak): [[Pseudomonas aeruginosa]] dahil geniş gram (-) spektrum + gram (+) aktivitesi korunmuş. Nötropenik ateş, hastane kaynaklı pnömoni. [[Seftolozane-tazobaktam]]: çok dirençli Pseudomonas.",
+        "explanation": "Sefepim, sefalosporinler içinde en geniş spektruma sahip olanlardan biridir. Hem Pseudomonas hem de gram pozitif organizmalara etkinliği ile 3. kuşak ile karbopenem arasında köprü görevi görür. Nötropenik ateşte ampirik tedavide kullanılır. TUS'ta Pseudomonas'a etkili antibiyotikler listesi önemlidir: pip-tazo, sefepim, seftazidim, imipenem, siprofloksasin, aminoglikozitler.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Sefalosporin", "Pseudomonas"],
+        "story_hint": "💡 HİKAYE: Sefepim, 'çift başlı ok' — hem Pseudomonas hem gram pozitife aynı anda vurur. 4. kuşak hem sola hem sağa bakıyor!"
+      },
+      {
+        "id": "mflash_022",
+        "question": "5. kuşak sefalosporin (seftarolin) neye karşı etkilidir ve neden önemlidir?",
+        "answer": "[[Seftarolin]] (5. kuşak): [[MRSA'ya etkili tek sefalosporin]] — PBP2a'ya bağlanır. Toplum kökenli pnömoni, cilt ve yumuşak doku enfeksiyonları. Pseudomonas'a etkisiz.",
+        "explanation": "Seftarolin, MRSA'nın PBP2a proteinine bağlanabilen yapısal olarak değiştirilmiş sefalosporindir. Bu, diğer tüm beta-laktamların yapamadığı bir özelliktir. MRSA pnömonisinde vankomisin veya linezolid ile birlikte alternatif olarak kullanılabilir. TUS'ta 'MRSA'ya etkili sefalosporin hangisi?' sorusu için seftarolin ezberlenmelidir.",
+        "difficulty": "Zor",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "MRSA", "Seftarolin"],
+        "story_hint": "💡 HİKAYE: Seftarolin, MRSA'nın 'kırılmaz zırhı' PBP2a'ya sığan tek anahtar — tek sefalosporin ama MRSA kapısını açar!"
+      },
+      {
+        "id": "mflash_023",
+        "question": "Karbapenemler (imipenem, meropenem) neden en geniş spektrumlu antibiyotiklerdir?",
+        "answer": "[[Karbapenemler]]: gram (+), gram (-), anaerob dahil [[en geniş spektrum]]. ESBL'ye rağmen etkili. [[KPC]] (Klebsiella pnömoni karbapenemaz) karbapenemlere dirençli. İmipenem: nöbet riski (özellikle yüksek doz), [[silastatin]] ile kombine.",
+        "explanation": "Karbapenemler, beta-laktam antibiyotiklerin en geniş spektrumlularıdır. ESBL üreten organizmalarda tedavi seçeneğidir. Ancak KPC ve NDM-1 gibi metallobeta-laktamazlar karbapenemleri de hidrolize eder; bu durumda kolistin veya seftazidim-avibaktam kullanılır. İmipenem renal dihidropeptidaz-I tarafından inaktive edildiğinden silastatin ile kombinasyon gereklidir. Meropenem bu gereksinimi yoktur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Karbapenem", "ESBL", "KPC"],
+        "story_hint": "💡 HİKAYE: Karbapenem, antibiyotik 'çekiç takımı' — neredeyse her kapıyı kırar. Ama KPC bakteri 'çekici yutan' özel metalden yapılmış!"
+      },
+      {
+        "id": "mflash_024",
+        "question": "Aztreonam (monobaktam) hangi bakterilere etkilidir ve ne zaman tercih edilir?",
+        "answer": "[[Aztreonam]]: sadece [[aerob gram negatif]] bakteriler. Gram (+) ve anaeroblara etkisiz. [[Penisilin allerjisinde]] gram negatif enfeksiyonlarda kullanılabilir (çapraz alerji çok nadir). Pseudomonas dahil.",
+        "explanation": "Aztreonam, tek antibiyotik olarak dar bir kapsam sunar ancak penisilin allerjili hastalarda güvenli kullanım için değerlidir. Gram pozitif veya anaerob enfeksiyonlarda etkisi yoktur; kombine tedavi gerektirebilir. Seftazidim allerjisi olan hastalarda aztreonam ile çapraz alerji riski bulunabilir. TUS'ta penisilin allerjisi + gram negatif enfeksiyon senaryosunda aztreonam sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Monobaktam", "Alerji"],
+        "story_hint": "💡 HİKAYE: Aztreonam, 'tekli güreşçi' — sadece aerob gram negatiflere dövüşür. Penisilin allerjili hastanın can simidi!"
+      },
+      {
+        "id": "mflash_025",
+        "question": "Vankomisinin etki mekanizması, endikasyonları ve yan etkileri nelerdir?",
+        "answer": "[[Vankomisin]]: [[D-Ala-D-Ala]] terminal peptidine bağlanır → peptidoglikan sentezi bozulur. [[MRSA]], [[VRE]] (sadece oral VRE'ye), [[C.difficile]] koliti (oral). Yan etkiler: [[kırmızı adam sendromu]] (hızlı infüzyon → histamin), nefrotoksisite, ototoksisite.",
+        "explanation": "Vankomisin glikopeptid grubu antibiyotiktir ve beta-laktam direnci olan gram pozitif enfeksiyonlarda temel ilaçtır. VRE'de vanA geni D-Ala-D-Ala'yı D-Ala-D-Lac ile değiştirir; vankomisin artık bağlanamaz. Kırmızı adam sendromu alerjik değil histamin aracılıklıdır; infüzyon hızı yavaşlatılarak önlenir. TUS'ta vankomisin dozu ve yan etkileri sıkça sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Vankomisin", "MRSA", "VRE"],
+        "story_hint": "💡 HİKAYE: Vankomisin, D-Ala-D-Ala 'kapı koluna' yapışır — bakteri duvarını inşa edemez. Ama hızlı verilirse 'kıpkırmızı' yan etki çıkar!"
+      },
+      {
+        "id": "mflash_026",
+        "question": "Aminoglikozitler nasıl çalışır ve temel yan etkileri nelerdir?",
+        "answer": "[[Aminoglikozitler]] (gentamisin, amikasin, tobramisin): [[30S ribozomal alt birim]], yanlış okuma/çeviri inhibisyonu. [[Ototoksisite]] (8. kranyal sinir, geri dönüşsüz) ve [[nefrotoksisite]]. Anaeroblara etkisiz (O2 gerektirir). Beta-laktamlarla [[sinerjizm]].",
+        "explanation": "Aminoglikozitler, konsantrasyon bağımlı öldürücülük gösterir; günlük tek doz önerilir. Anaerobik ortamda proton motif gücü olmadığından hücreye giremezler. Aktif tübüler sekresyon ile birikir ve proksimal tübül hasarı yapar. Tobramisin, Pseudomonas'a karşı en potent aminoglikozittir. TUS'ta otoksisite ve kullanım kontrendikasyonları sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Aminoglikozit", "Toksisite"],
+        "story_hint": "💡 HİKAYE: Aminoglikozitler, 30S ribozoma 'yanlış talimat' verir — bakteri saçmalar ve ölür. Ama kulak ve böbrek bu 'gürültü'den zarar görür!"
+      },
+      {
+        "id": "mflash_027",
+        "question": "Tetrasiklin kullanımının kontrendikasyonları nelerdir ve absorbsiyonu ne azaltır?",
+        "answer": "[[Tetrasiklin]]: [[30S]] ribozom, aminoasil-tRNA bağlanmasını engeller. [[Çocuklar]] (diş renklenmesi, kemik büyüme bozukluğu) ve [[gebeler]] kontraendike. [[Divalent katyonlar]] (Ca, Mg, Fe, Al) absorbsiyonu azaltır — süt ve antasitlerle alınmamalı.",
+        "explanation": "Tetrasiklin, geniş spektrumlu bir antibiyotiktir (Rickettsia, Chlamydia, Mycoplasma, Brucella dahil). Süt ve antasitler içindeki divalent/trivalent katyonlar tetrasiklinle kelat oluşturur ve absorbsiyonu önler. 8 yaş altı çocuklarda dişlerde sarı-kahverengi kalıcı renk değişikliği bırakır. TUS'ta hangi antibiyotik hangi yaşta kontraendike sorusu önemlidir.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Tetrasiklin", "Kontrendikasyon"],
+        "story_hint": "💡 HİKAYE: Tetrasiklin ve süt 'baş düşmanları' — kalsiyum onu yakalar, absorbsiyon sıfırlanır. Çocuğa verme: dişleri sarıya döner!"
+      },
+      {
+        "id": "mflash_028",
+        "question": "Doksisiklin hangi enfeksiyonlarda tercih edilir?",
+        "answer": "[[Doksisiklin]]: [[atipik pnömoni]] (Mycoplasma, Legionella, Chlamydophila), [[Lyme hastalığı]] (Borrelia burgdorferi), [[Brucella]] (streptomisinle), [[Rickettsia]], [[toplum kökenli MRSA]] (CA-MRSA deri enfeksiyonları). Günde 2 doz, uzun yarı ömür.",
+        "explanation": "Doksisiklin, tetrasiklinin daha lipofilik türevidir ve daha iyi dokusal penetrasyon sağlar. Süt etkileşimi tetrasikline göre daha azdır ancak dikkatli olunmalıdır. Lyme hastalığının erken döneminde (eritema migrans) ilk seçimdir. Rocky Mountain spotted fever'da (Rickettsia) tek seçimdir, gebelerde bile fayda-zarar dengesi açısından verilir. TUS'ta Brucella tedavisinde doksisiklin+rifampisin veya doksisiklin+streptomisin sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Doksisiklin", "Atipik Pnömoni"],
+        "story_hint": "💡 HİKAYE: Doksisiklin 'çok amaçlı İsviçre çakısı' — Lyme'dan Rickettsia'ya, Brucella'dan atipik pnömoniye. Bir ilaç pek çok düşman!"
+      },
+      {
+        "id": "mflash_029",
+        "question": "Kloramfenikol hangi ciddi yan etkilere yol açar?",
+        "answer": "[[Kloramfenikol]]: 50S (23S rRNA), peptidiltransferaz inhibisyonu. Yan etkiler: [[aplastik anemi]] (doz bağımsız, idiyosinkratik, ölümcül) ve [[gri bebek sendromu]] (prematüre/yenidoğan: gri renk, kardiyovasküler kollaps, UDP-glukuronidasyon eksikliği).",
+        "explanation": "Kloramfenikol tüm dünyada kullanımı kısıtlı olan antibiyotiktir. Doz bağımsız aplastik anemi 25.000'de 1 sıklığında görülür ancak ölümcüldür. Gri bebek sendromu, prematürelerde glukuronidasyon enziminin olgunlaşmamış olması nedeniyle kloramfenikolün birikmesiyle olur. TUS'ta hem aplastik anemi hem de gri bebek sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Kloramfenikol", "Aplastik Anemi"],
+        "story_hint": "💡 HİKAYE: Kloramfenikol, 'sessiz katil' — aplastik anemi doz bağımsız iner, prematüre bebekte gri renk = alarm işareti!"
+      },
+      {
+        "id": "mflash_030",
+        "question": "Makrolid antibiyotikler (eritromisin, klaritromisin, azitromisin) hakkında bilinmesi gereken kritik noktalar nelerdir?",
+        "answer": "[[Makrolidler]]: [[50S ribozom]] (23S rRNA), translokasyon inhibisyonu. [[QT uzaması]] (kardiyak yan etki). [[CYP450 inhibisyonu]] (eritromisin, klaritromisin — ilaç etkileşimi). Eritromisin → [[pilor stenozu]] riski yenidoğan (motilindeki etki).",
+        "explanation": "Makrolidler atipik organizmalara (Mycoplasma, Chlamydophila, Legionella) ve gram pozitif bakterilere etkilidir. Azitromisin daha uzun doku yarı ömrü nedeniyle 5 günlük kür yeterlidir. Eritromisinin prokinetik etkisi motilin reseptör agonizması ile açıklanır; yenidoğanda pilor stenozu vaka bildirimleri mevcuttur. TUS'ta makrolid + ilaç etkileşimi (varfarin, statin, digoksin) sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Makrolid", "QT Uzaması"],
+        "story_hint": "💡 HİKAYE: Makrolidler 50S'e 'dur' der — ribosom hareket edemez. Ama QT uzarsa kalp de 'durmak ister'. CYP450 inhibisyonu her ilacı sürprizle etkiler!"
+      },
+      {
+        "id": "mflash_031",
+        "question": "Klindamisin hangi enfeksiyonlarda kullanılır ve önemli yan etkisi nedir?",
+        "answer": "[[Klindamisin]]: [[50S ribozom]], gram (+) ve [[anaerob]] bakteriler (abse, aspirayon pnömonisi, deri/yumuşak doku). [[C.difficile psödomembranöz kolit]] riski (antibiyotiğe bağlı diyare).",
+        "explanation": "Klindamisin özellikle deri ve yumuşak doku enfeksiyonlarında, anaerob enfeksiyonlarda ve aspirayon pnömonisinde tercih edilir. CA-MRSA deri enfeksiyonlarında TMP-SMX veya doksisiklin yanında alternatif seçenektir. C.difficile koliti riski en yüksek antibiyotikler arasındadır (klindamisin, florokinolonlar, sefalosporinler, ampisilin). TUS'ta psödomembranöz kolit-antibiyotik ilişkisi kritik.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Klindamisin", "C.difficile"],
+        "story_hint": "💡 HİKAYE: Klindamisin anaerob abselerin 'kahraman antibiyotiği' — ama C.difficile 'yan etki canavarı' olarak bağırsakta bekler!"
+      },
+      {
+        "id": "mflash_032",
+        "question": "Linezolidin etki mekanizması, endikasyonları ve yan etkileri nelerdir?",
+        "answer": "[[Linezolid]]: [[50S ribozom]] (23S rRNA, başlangıç kompleksi oluşumunu engeller — bakteriostatik). [[MRSA]] ve [[VRE]] tedavisi. Yan etkiler: [[trombositopeni]], [[serotonin sendromu]] (MAO inhibitörü etkisi), laktik asidoz (uzun kullanımda).",
+        "explanation": "Linezolid, oksazolidinon sınıfının ilk klinik üyesidir. Benzersiz etki mekanizması nedeniyle gram pozitif patojenlere karşı çapraz direnç riski düşüktür. Monotrombosit inhibisyonu trombositopeniye yol açar; 2 haftadan uzun kullanımda hemogram takibi gerekir. MAO inhibitörü etkisi nedeniyle tiramin içeren gıdalar (peynir, kırmızı şarap) ile kombine alındığında hipertansif kriz riski vardır. TUS'ta VRE tedavisi mutlaka bilinmeli.",
+        "difficulty": "Zor",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Linezolid", "VRE", "MRSA"],
+        "story_hint": "💡 HİKAYE: Linezolid, ribozomun 'açılış törenini' iptal eder — bakteri protein fabrikasını başlatamaz. Ama MAO inhibitörü özelliği 'serotonin partisi' başlatır!"
+      },
+      {
+        "id": "mflash_033",
+        "question": "Daptomisinin etki mekanizması ve neden akciğer enfeksiyonlarında kullanılmaz?",
+        "answer": "[[Daptomisin]]: gram (+) bakterilerin [[sitoplazmik membranına]] kalsiyum bağımlı kanal açar → membran depolarizasyonu → ölüm. MRSA, VRE. [[Akciğerde kullanılmaz]] çünkü [[sürfaktan]] daptomisini inaktive eder. [[Miyopati]] (CK yükselir).",
+        "explanation": "Daptomisin, lipopeptid grubu olup deterjan benzeri etki ile gram pozitif bakterilerin membranını bozar. Akciğer sürfaktanı daptomisinin lipid kuyruğunu seçici olarak bağlar ve inaktive eder; bu nedenle MRSA pnömonisinde kullanılmaz (bu durumda vankomisin veya linezolid). CK düzeyi 5x üst sınırı aşarsa kesilmelidir. TUS'ta daptomisin-sürfaktan ilişkisi klasik sorudur.",
+        "difficulty": "Zor",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Daptomisin", "Sürfaktan"],
+        "story_hint": "💡 HİKAYE: Daptomisin, membranı 'patlatır' — ama akciğer sürfaktanı onu tuzağa düşürür. Pnömonide davet edilmez, sürfaktan onu boşaltır!"
+      },
+      {
+        "id": "mflash_034",
+        "question": "TMP-SMX nasıl çalışır ve hangi enfeksiyonlarda kullanılır?",
+        "answer": "[[TMP-SMX]]: [[çift blok]] — SMX [[DHPS]] inhibisyonu (folik asit sentezi), TMP [[DHFR]] inhibisyonu (THF→DHF). [[PCP]] (Pneumocystis jirovecii pnömonisi), İYE, Shigella, [[Nocardia]], [[Toxoplasma profilaksi]] (CD4<100).",
+        "explanation": "TMP-SMX'in çift blokaj mekanizması sinerjistik etki yaratır ve direnç gelişimini zorlaştırır. PCP profilaksisi CD4<200/mm³ olan HIV hastalarında başlanır. Nocardia tedavisinde uzun süreli TMP-SMX gerekir. Böbrek yetmezliğinde kreatinin yükselmesi yanıltıcı olabilir (TMP tübüler sekresiyon rekabeti). TUS'ta HIV'li hastada fırsatçı enfeksiyon profilaksisi kritik bilgidir.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "TMP-SMX", "PCP", "HIV"],
+        "story_hint": "💡 HİKAYE: TMP-SMX, folik asit fabrikasına 'çifte kilit' — hem kapı kilidi (SMX) hem de iç odası (TMP) kilitler. Bakteri folik asit üretemez!"
+      },
+      {
+        "id": "mflash_035",
+        "question": "Florokinolonlar nasıl çalışır ve hangi bakterilere karşı etkilidir?",
+        "answer": "[[Florokinolonlar]] (siprofloksasin, levofloksasin): [[DNA giraz]] (gram -, topoizomeraz II) ve [[topoizomeraz IV]] (gram +) inhibisyonu. Geniş gram (-) spektrum, [[antipsödomonal]] (sipro). Levofloksasin: pnömokok dahil.",
+        "explanation": "Siprofloksasin gram negatif ve antipsödomonal aktivitesiyle, levofloksasin ise solunum yolu patojenleri (pnömokok, atipikler) dahil geniş spektrumuyla öne çıkar. Florokinolonlar tendon rüptürü (Achilles tendonu, özellikle kortikosteroid alanlar), QT uzaması, nöropsikiyatrik yan etkiler yapabilir. TUS'ta siprofloksasin+pseudomonas ilişkisi ve tendon rüptürü sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Florokinolon", "DNA Giraz"],
+        "story_hint": "💡 HİKAYE: Florokinolonlar, bakterinin DNA sarmal 'düğümcüsüne' saldırır — DNA giraz çalışamaz, bakteri sarılır ve çöker. Ama tendonu da sararsa dikkat!"
+      },
+      {
+        "id": "mflash_036",
+        "question": "Rifampisinin etki mekanizması ve klinik kullanımı nedir?",
+        "answer": "[[Rifampisin]]: bakteriyel [[RNA polimeraz beta alt birim]] inhibisyonu → mRNA sentezi durur. TB tedavisi (HRZE), [[meningokok profilaksi]] (temas sonrası), Brucella. [[Kırmızı-turuncu]] vücut sıvıları (renk değişimi). [[CYP450 indükleyici]] — oral kontraseptifler, varfarin etkinliğini azaltır.",
+        "explanation": "Rifampisin TB'nin temel ilacıdır; ancak monoterapi verilirse direnç hızla gelişir. Neisseria meningitidis teması sonrası profilaksi için 2 gün süreyle kullanılır (siprofloksasin ve seftriakson da alternatif). CYP450 indüksiyonu nedeniyle oral kontraseptif başarısızlığı ciddi klinik sonuçlara yol açabilir. TUS'ta rifampisin yan etkileri ve ilaç etkileşimleri önemlidir.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Rifampisin", "TB", "CYP450"],
+        "story_hint": "💡 HİKAYE: Rifampisin, RNA polimerazın 'sözlü sınavını' iptal eder — bakteri mRNA üretemez ve susup ölür. İdrar kırmızı = normal, endişelenme!"
+      },
+      {
+        "id": "mflash_037",
+        "question": "Metronidazol hangi mikroorganizmalara karşı etkilidir?",
+        "answer": "[[Metronidazol]]: [[anaeroblar]] (B.fragilis, Clostridium), [[Giardia lamblia]], [[Trichomonas vaginalis]], [[C.difficile]], [[H.pylori]] (kombinasyon). Etki: DNA'ya serbest radikal hasarı.",
+        "explanation": "Metronidazol, anaerobik ortamda aktive olan bir ön ilaçtır. Nitro grubu anaerobik koşulda indirgenip reaktif ara ürünlere dönüşür ve DNA kırılmasına yol açar. H.pylori üçlü tedavisinin temel bileşenlerinden biridir (PPI+klaritromisin+metronidazol veya amoksisilin). C.difficile enfeksiyonunun hafif-orta vakalarında oral metronidazol, ağır vakalarda oral vankomisin tercih edilir. TUS'ta G.lamblia ilacı olarak metronidazol sorulur.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Antibiyotikler", "Metronidazol", "Anaerob", "Giardia"],
+        "story_hint": "💡 HİKAYE: Metronidazol, anaerob bakteri ile 'gizli anlaşma' yapar — sadece oksijensiz ortamda aktive olur ve DNA'yı parçalar. Aeroblar etkilenmez!"
+      },
+      {
+        "id": "mflash_038",
+        "question": "Spaulding sınıflamasına göre kritik aletler için hangi sterilizasyon yöntemi gerekir?",
+        "answer": "[[Spaulding sınıflaması — Kritik aletler]]: steril doku veya vasküler sisteme giren aletler (cerrahi aletler, kateter). [[Sterilizasyon]] gerekir: [[otoklav]] (ısıya dayanıklı) veya [[ETO]] (ısıya duyarlı).",
+        "explanation": "Spaulding sınıflaması tıbbi aletler için dezenfeksiyon düzeyini belirler. Kritik aletler herhangi bir mikroorganizma ile kontaminasyonu enfeksiyona yol açtığından tam sterilizasyon şarttır. Otoklav en güvenilir yöntemdir; ısıya dayanıklı her alet için tercih edilir. ETO ise plastik, fiber optik gibi ısıya duyarlı aletler için kullanılır ancak kanserojen ve uzun havalandırma süresi gerektirir.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Sterilizasyon", "Spaulding", "Kritik Alet"],
+        "story_hint": "💡 HİKAYE: Kritik alet = 'vücudun içine girer' — sıfır mikroorganizma toleransı! Otoklav veya ETO tam sterilizasyon demek."
+      },
+      {
+        "id": "mflash_039",
+        "question": "Spaulding sınıflamasında yarı-kritik aletler için ne gerekir?",
+        "answer": "[[Yarı-kritik aletler]]: mukoz membran veya hasarlı deriyle temas (endoskop, bronkoskop, laringoskop spatülü). [[Yüksek düzey dezenfeksiyon]] gerekir: [[glutaraldehit]] (%2, 20-30 dk), hidrojen peroksit, ortoftalaldehit.",
+        "explanation": "Yarı-kritik aletlerin müköz membranla teması nedeniyle spor dışındaki tüm mikroorganizmalar yok edilmelidir. Glutaraldehit en yaygın kullanılan yüksek düzey dezenfektandır; 10 saatlik temas kimyasal sterilizasyon sağlar. Endoskopların ısıya dayanıksızlığı otoklav kullanımını engeller. TUS'ta Spaulding sınıflaması ve dezenfeksiyon düzeyleri önemli bir konudur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Sterilizasyon", "Spaulding", "Dezenfeksiyon"],
+        "story_hint": "💡 HİKAYE: Endoskop mukozaya girer ama içeriye değil — 'yarı kritik' bu yüzden. Glutaraldehit 'neredeyse temiz' yapar, spor dışında her şeyi öldürür!"
+      },
+      {
+        "id": "mflash_040",
+        "question": "Otoklavın çalışma prensipleri ve biyolojik göstergesi nedir?",
+        "answer": "[[Otoklav]]: [[121°C / 15 dakika]] veya [[134°C / 3 dakika]], basınçlı buhar (15 psi). [[Biyolojik gösterge]]: [[Geobacillus stearothermophilus]] (Bacillus stearothermophilus) sporları — direncin altın standardı.",
+        "explanation": "Otoklav, en güvenilir sterilizasyon yöntemidir. Basınçlı buhar hem sıcaklığı 100°C üzerine çıkarır hem de bakterisidal etkiyi artırır. Biyolojik gösterge, her otoklav döngüsünün etkinliğini doğrular; spor ampulü otoklav içine yerleştirilir, işlem sonrası inkübe edilir ve üreme görülmemesi sterilizasyonu doğrular. Kimyasal göstergeler (şeritler) sadece sıcaklığı değil sterilizasyonu garantilemez.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Sterilizasyon", "Otoklav", "Biyolojik Gösterge"],
+        "story_hint": "💡 HİKAYE: Otoklav göstergesi 'hayatta kalan son sporcu' — Bacillus stearothermophilus sporları dayanırsa otoklav başarısız. Üremezse steril!"
+      },
+      {
+        "id": "mflash_041",
+        "question": "ETO (etilen oksit) sterilizasyonunun özellikleri ve dezavantajları nelerdir?",
+        "answer": "[[ETO (Etilen oksit)]]: [[ısıya duyarlı]] aletler (plastik, fiber optik, elektronik). Alkilasyon ile DNA hasarı. [[Kanserojen ve mutajen]]. Uzun [[havalandırma süresi]] gerektirir (8-24 saat). 37-63°C'de işlem.",
+        "explanation": "ETO, ısıya dayanıksız kritik ve yarı-kritik aletlerin sterilizasyonu için kullanılır. Düşük sıcaklıkta tüm mikroorganizmaları (spor dahil) öldürür. Ancak kanserojen özelliği ve uzun aeration süresi önemli dezavantajlardır. Kapalı alanlarda ETO birikimi çalışanlarda kanser riskini artırır. Günümüzde hidrojen peroksit plazma sterilizasyonu ETO'nun yerini almaktadır. TUS'ta ETO kanserojen etkisi sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Sterilizasyon", "ETO", "Isıya Duyarlı"],
+        "story_hint": "💡 HİKAYE: ETO, 'soğuk suikastçı' — plastik alet ısıya dayanamaz, ETO düşük sıcaklıkta DNA'ya saldırır. Ama kanserojen olduğu için kendisi de tehlikeli!"
+      },
+      {
+        "id": "mflash_042",
+        "question": "UV ışınının antimikrobiyal etkisi nasıldır ve sınırlamaları nelerdir?",
+        "answer": "[[UV ışını]] (254 nm): [[pirimidin dimeri]] (timin dimeri) oluşturur → DNA replikasyonu bozulur. [[Spor öldürmez]]. Yüzey ve hava dezenfeksiyonu, [[su dezenfeksiyonu]]. Toz, duman, plastik bariyerlerle engellenir.",
+        "explanation": "UV ışını, temas ettiği yüzeylerde ve havada etkilidir ancak penetrasyonu yoktur; camı dahi geçemez. Spora karşı etkisizliği önemli bir kısıtlamadır. Su arıtmada klorlama ve ozonlamaya ek olarak kullanılır. TUS'ta UV ışını ile DNA hasar tipi (timin dimeri) sıkça sorulur.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Sterilizasyon", "UV", "DNA Hasarı"],
+        "story_hint": "💡 HİKAYE: UV ışını, DNA'nın 'timin ikililerini' yapıştırır — bakteri okuyamaz ve ölür. Ama spor 'ışık geçirmez zırhı' sayesinde sağ kalır!"
+      },
+      {
+        "id": "mflash_043",
+        "question": "Pastörizasyon hangi mikroorganizmaları öldürür ve öldüremez?",
+        "answer": "[[Pastörizasyon]]: 63°C/30 dk (LTLT) veya 72°C/15 sn (HTST). [[Mycobacterium tuberculosis]] ve [[Brucella]] dahil vejetatif bakterileri öldürür. [[Spor öldürmez]]. Süt, meyve suyu sterilizasyonu değil — pastörizasyondur.",
+        "explanation": "Pastörizasyon, tüm sporları ve termofilik organizmaları öldürmez, bu nedenle sterilizasyon değildir. Süt kaynatma alışkanlığı bulunan yerlerde Brucella ve TB bulaşı mümkündür. TUS'ta pastörizasyon ile hangi patojenlerin öldürüldüğü ve öldürülmediği sorulur. Sterilizasyon ile pastörizasyon arasındaki farkın bilinmesi önemlidir.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Sterilizasyon", "Pastörizasyon", "Brucella"],
+        "story_hint": "💡 HİKAYE: Pastörize süt = sporlu değil steril — TB ve Brucella gibi vejetatif düşmanlara karşı güçlü, ama Bacillus sporuna 'geçilir' der!"
+      },
+      {
+        "id": "mflash_044",
+        "question": "Canlı attenüe aşılar hangileridir ve neden özel dikkat gerektirir?",
+        "answer": "Canlı attenüe aşılar: [[BCG]], [[OPV/Sabin]] (oral polio), [[MMR]] (kızamık-kabakulak-kızamıkçık), [[suçiçeği]], [[sarı humma]], [[rotavirus]], [[nasal influenza]]. [[İmmünkompromize ve gebede kontraendike]].",
+        "explanation": "Canlı aşılar, zayıflatılmış ancak çoğalabilen mikroorganizmalardır. Güçlü ve uzun süreli bağışıklık sağlarlar; genellikle adjuvan gerektirmezler. İmmün yetmezliği olan hastalarda (AIDS, lösemi, immünsüpresif tedavi) hastalığa dönüşebilirler. Gebede fetal enfeksiyon riski vardır. TUS'ta MMR'in gebelikte kontraendike olduğu ve canlı aşıların immünkompromizedede verilmemesi sorulur.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Aşılar", "Canlı Aşı", "Kontraendikasyon"],
+        "story_hint": "💡 HİKAYE: Canlı aşı, 'zayıf düşman' gibi vücuda girer — bağışıklık sistemi tanır, savaşır, hafızaya alır. Ama immün sistemi yoksa düşman 'güçlenir'!"
+      },
+      {
+        "id": "mflash_045",
+        "question": "Toksoid aşılar nasıl hazırlanır ve hangileri mevcuttur?",
+        "answer": "Toksoid aşılar: [[toksin formaldehit ile inaktive]] edilir → antijenik özellik kalır, toksik özellik kaybolur. [[Tetanoz toksoid]] (DT/Td), [[difteri toksoid]] (DT). İlk dozdan sonra hümoral bağışıklık, booster doz güçlendirir.",
+        "explanation": "Toksoidler, bakterinin kendisine değil toksinlerine karşı bağışıklık oluşturur. Tetanoz yara tedavisinde aşı durumu değerlendirilerek booster doz veya tam seri uygulanır. Difteri toksini, EF-2 inhibisyonu yaparak protein sentezini durdurur; toksoid aşı bu toksin epitopuna karşı antikor oluşturur. TUS'ta tetanoz profilaksisi sık sorulan konu.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Aşılar", "Toksoid", "Tetanoz", "Difteri"],
+        "story_hint": "💡 HİKAYE: Formaldehit, toksini 'emekli eder' — zehiri gider ama yüzü kalır. Bağışıklık sistemi tanır, hafızaya alır. Sonra gerçeği görünce hızla savaşır!"
+      },
+      {
+        "id": "mflash_046",
+        "question": "Konjuge aşıların avantajları nelerdir ve hangileri mevcuttur?",
+        "answer": "Konjuge aşılar: polisakkarit [[T bağımlı antijene]] bağlanır → [[infantlarda]] (< 2 yaş) etkili hale gelir. [[Hib]] (PRP-T), [[meningokok konjuge]], [[pnömokok 13-valent]] (PCV13). Saf polisakkarit aşılarından üstün.",
+        "explanation": "Saf polisakkarit aşıları T hücresinden bağımsız B hücre yanıtı oluşturur ve 2 yaş altında etkisizdir. Protein taşıyıcıya konjuge edildiğinde T hücre yardımı sağlanır, hafıza hücresi oluşur ve infant aşılaması mümkün olur. Hib konjuge aşı, haemophilus menenjitini neredeyse tamamen ortadan kaldırmıştır. TUS'ta konjuge vs. saf polisakkarit aşı farkı sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Aşılar", "Konjuge Aşı", "Hib", "Pnömokok"],
+        "story_hint": "💡 HİKAYE: Konjuge aşı, polisakkariti proteinin 'sırtına bağlar' — T hücresi tanır, bebek de korunur. Saf polisakkarit bebek için 'anlaşılmaz dil' konuşur!"
+      },
+      {
+        "id": "mflash_047",
+        "question": "Hepatit B ve HPV aşıları hangi teknoloji ile üretilir?",
+        "answer": "[[Rekombinant aşılar]]: [[Hepatit B aşısı]] — [[HBsAg]] Saccharomyces cerevisiae (maya) ile üretilir. [[HPV aşısı]] — [[VLP]] (virus-like particle) L1 kapsid proteinleri (Gardasil 9: 6/11/16/18/31/33/45/52/58, Cervarix: 16/18).",
+        "explanation": "Rekombinant DNA teknolojisi ile üretilen aşılar canlı organizma içermez. HBsAg'nin maya ortamında üretilmesi hem güvenli hem de büyük ölçekli üretimi mümkün kılar. HPV VLP'ları virüs yüzey proteininden oluşur ancak DNA içermez; infeksiyöz değildir. Gardasil 9, serviks Ca ve kondilom sıklığını dramatik azaltmaktadır. TUS'ta HBsAg ve HPV aşı tipi sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Aşılar", "Rekombinant", "HBV", "HPV"],
+        "story_hint": "💡 HİKAYE: HBV aşısı, mayadan 'foto kopy' çıkarır — HBsAg proteini yapılır, asıl virüs girmez. Bağışıklık sistemi sahteyi görünce gerçeğine hazırlanır!"
+      },
+      {
+        "id": "mflash_048",
+        "question": "Aşı soğuk zinciri nedir ve hangi aşılar dondurulmamalıdır?",
+        "answer": "[[Soğuk zincir]]: aşılar [[+2 ile +8°C]] arasında saklanır. [[Dondurmaya toleransı olmayanlar]]: [[toksoid aşılar]] (tetanoz, difteri), [[inaktive aşılar]] (IPV, hepatit B), alüminyum adjuvanlı aşılar — çözüldükten sonra granüllenir ve etkisizleşir.",
+        "explanation": "Soğuk zincir kırılması, küresel aşılama programlarında ciddi bir sorundur. Dondurulmuş ve çözülmüş bir inaktive aşı görünür değişiklik göstermeyebilir ancak artık etkili değildir. Çalkalama testi alüminyum adjuvanlı aşılarda bozulmanın belirlenmesinde kullanılır. Canlı aşılar (MMR, OPV) dondurma tolerans gösterir. TUS'ta soğuk zincir ve hangi aşıların dondurulmayacağı sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Aşılar", "Soğuk Zincir", "Saklama"],
+        "story_hint": "💡 HİKAYE: Toksoid aşılar 'dondurma düşmanı' — buz kristalleri alüminyum adjuvanı bozar ve aşı işe yaramaz hale gelir. Sadece buzdolabı, dondurucu değil!"
+      },
+      {
+        "id": "mflash_049",
+        "question": "BCG aşısına ait özel bilgiler nelerdir?",
+        "answer": "[[BCG]]: Mycobacterium bovis'in attenüe suşu. [[Doğumda]] uygulanır (sol kol üst bölge, intradermal). [[Tüberküloz ve akciğer dışı TB]] (milier, menenjit TB) önler. [[Skar oluşturur]]. [[İmmünkompromizede verilmez]] (HIV +, konjenital immün yetmezlik).",
+        "explanation": "BCG, dünya genelinde en fazla uygulanan aşıdır. Primer TB'yi tam önlemez (%50-80 etkinlik) ancak çocuklarda milier TB ve TB menenjitini büyük ölçüde engeller. BCG sonrası PPD (Mantoux) testi yanlış pozitif çıkabilir. BCG, mesane kanserinin immünoterapisinde de kullanılır (intravesikal). TUS'ta BCG aşısının immünkompromizede kontraendikasyonu sorulur.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Aşılar", "BCG", "Tüberküloz"],
+        "story_hint": "💡 HİKAYE: BCG, M. bovis'in 'evcilleştirilmiş hali' — aşılandıktan sonra kolda skar kalır, TB menenjitine karşı zırh takılır. HIV'liye verilirse tersine döner!"
+      },
+      {
+        "id": "mflash_050",
+        "question": "DNA virüsler hangileridir?",
+        "answer": "DNA virüsler: [[Herpesvirus]] (HSV-1/2, VZV, CMV, EBV, HHV-6/7/8), [[Adenovirus]], [[Papillomavirus]] (HPV), [[Hepadnavirus]] (HBV), [[Parvovirus]], [[Poxvirus]] (çiçek, molluscum), [[Polyomavirus]] (JC, BK). Kısaltma: [[HAPPPY]] — Herpes, Adeno, Papova, Parvo, Pox, Hepadna, polYomavirus.",
+        "explanation": "DNA virüsler çift zincirli DNA içerir (Parvovirus ve HBV hariç — kısmen tek zincir). Çoğunluğu çekirdekte replike olur (Poxvirus hariç). DNA virüslerin üyeleri TUS'ta sıkça sorulur; özellikle hangi virüsün hangi hastalığa yol açtığı bilinmelidir. Herpesvirus ailesi latansisi ile klasik TUS konusudur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Viroloji", "DNA Virüs"],
+        "story_hint": "💡 HİKAYE: 'HAPPPY DNA' — Herpes, Adeno, Papova, Parvo, Pox, hepadna, polYoma. DNA ailesi bu 7 ile mutlu (happy) yaşar!"
+      },
+      {
+        "id": "mflash_051",
+        "question": "RNA virüsler hangileridir? (Temel sınıflar)",
+        "answer": "RNA virüsler: [[Picornavirus]] (HAV, Polio, Rhino), [[Calicivirus]] (Norovirus), [[Togavirus]] (Rubella), [[Flavivirus]] (HCV, Zika, Dang, WNV, sarı humma), [[Coronavirus]], [[Rhabdovirus]] (kuduz), [[Paramyxovirus]] (kızamık, kabakulak, RSV), [[Orthomyxovirus]] (influenza), [[Retrovirus]] (HIV, HTLV), [[Reovirus]] (rotavirus).",
+        "explanation": "RNA virüsler genellikle sitoplazmada replike olur (Influenza ve Retrovirus hariç — çekirdekte). RNA bağımlı RNA polimeraz ('RdRp') kullanırlar ve proofreading olmadığından mutasyon hızları yüksektir. Bu özellik antijenik değişkenliğe (influenza) ve ilaç direncine (HIV) katkıda bulunur. TUS'ta hangi virüsün hangi sınıfta olduğu ve klinik tablosu sorulur.",
+        "difficulty": "Zor",
+        "tags": ["Mikrobiyoloji", "Viroloji", "RNA Virüs"],
+        "story_hint": "💡 HİKAYE: RNA virüsler 'proofreading yapmayan yazarlar' — hata üstüne hata, mutasyon şampiyonları. İşte bu yüzden influenza her yıl değişir!"
+      },
+      {
+        "id": "mflash_052",
+        "question": "Zarflı ve zarfsız virüsler arasındaki dezenfektan direnci farkı nedir?",
+        "answer": "[[Zarflı virüsler]] (Herpes, HIV, Influenza, HBV): deterjan, alkol, ısıya duyarlı — [[kolayca inaktive edilir]]. [[Zarfsız virüsler]] (Norovirus, Parvovirus, Poliovirus, HAV, Rotavirus, Adenovirus): dezenfektanlara [[daha dirençli]], el dezenfektanı etkisiz olabilir.",
+        "explanation": "Zarflı virüsler lipid zarfı nedeniyle deterjan ve solvent içeren dezenfektanlarla kolayca parçalanır. Zarfsız virüslerin kapsid yapısı kimyasallara dirençlidir; bu nedenle norovirus salgınlarında klorin bazlı dezenfektanlar (çamaşır suyu) tercih edilir. TUS'ta hangi virüsün zarflı veya zarfsız olduğu ve buna bağlı sterilizasyon tercihleri sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Viroloji", "Zarf", "Dezenfeksiyon"],
+        "story_hint": "💡 HİKAYE: Zarflı virüs 'balonla gelen misafir' — iğne (deterjan) balonunu patlatır, gider. Zarfsız virüs 'zırhlı arabadaki misafir' — iğne işe yaramaz!"
+      },
+      {
+        "id": "mflash_053",
+        "question": "HBV'nin yapısı, antijenleri ve klinik önemi nedir?",
+        "answer": "HBV: [[kısmen çift zincirli DNA]], [[Dane partikülü]] (42 nm tam viryon). 3 antijen: [[HBsAg]] (yüzey, aşı ve tanı), [[HBcAg]] (kor, serum tanısı anti-HBc ile), [[HBeAg]] (aktif replikasyon ve bulaşıcılık göstergesi). [[Reverse transkriptaz]] kullanır.",
+        "explanation": "HBV hem DNA virüs hem de reverse transkriptaz kullanması bakımından benzersizdir. HBsAg pozitifliği akut veya kronik enfeksiyonu gösterir; aşı sonrası sadece anti-HBs pozitif olur. HBeAg yüksek replikasyon ve bulaşıcılık göstergesidir. Anti-HBc IgM akut infeksiyonu, IgG geçmiş enfeksiyonu gösterir. 'Pencere dönemi'nde HBsAg kaybolmuş, anti-HBs henüz çıkmamıştır; tek pozitif anti-HBc IgM. TUS'ta serolojik pencere dönemi kritik.",
+        "difficulty": "Zor",
+        "tags": ["Mikrobiyoloji", "Viroloji", "HBV", "Seroloji"],
+        "story_hint": "💡 HİKAYE: HBV'nin 3 yüzü var — HBsAg 'dış kabuğu', HBcAg 'iç özü', HBeAg 'aktif üretim rozeti'. Pencere döneminde ikisi de kaybolur, sadece anti-HBc kalır!"
+      },
+      {
+        "id": "mflash_054",
+        "question": "HIV'in yapısı ve CD4 T hücresine girişi nasıldır?",
+        "answer": "[[HIV]]: RNA retrovirüs, [[gp120]] CD4 ve CCR5/CXCR4 ko-reseptörlerine bağlanır, [[gp41]] füzyon sağlar. İçeride [[reverse transkriptaz]] RNA'yı DNA'ya çevirir, [[integraz]] konak genomuna entegre eder. [[CD4 T lenfosit]] azalır → AIDS.",
+        "explanation": "HIV'in tropiksizmi gp120'nin CD4 reseptörüne bağlanmasıyla başlar. Ko-reseptör tercihi enfeksiyon fazına göre değişir: CCR5 kullanan R5 suşlar erken dönemde, CXCR4 kullanan X4 suşlar ileri dönemde baskın olur. Maravirok CCR5 antagonistidir. Reverse transkriptaz, integraz ve proteaz antiretroviral ilaçların hedefleridir. TUS'ta HIV ilaç mekanizmaları ve fırsatçı enfeksiyonlar sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Viroloji", "HIV", "CD4", "Retrovirus"],
+        "story_hint": "💡 HİKAYE: HIV, gp120 ile CD4 kapısını çalar, gp41 kapıyı kırarak girer. İçeride reverse transkriptaz DNA kopyasını çıkarır ve genoma saklar!"
+      },
+      {
+        "id": "mflash_055",
+        "question": "CMV'nin klinik tabloları nelerdir?",
+        "answer": "[[CMV]] (en büyük herpesvirus): [[konjenital CMV]] — [[periventriküler kalsifikasyon]], sensorinöral işitme kaybı, mikrosefali. İmmünkompromizede: [[retinit]] (AIDS), [[pnömoni]], özefajit, kolit. Transplant sonrası ciddi enfeksiyon.",
+        "explanation": "CMV en sık konjenital viral enfeksiyon nedenidir. Periventriküler kalsifikasyon, Toxoplasma'nın parankimal/diffüz kalsifikasyonundan ayrılır. İmmünkompromize hastalarda CD4<50/mm³'de CMV retiniti görülür; gansiklovir tedavi seçeneğidir. Organ transplantı alıcılarında CMV profilaksisi valgansiklovir ile yapılır. TUS'ta konjenital CMV özellikleri sıkça sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Viroloji", "CMV", "Konjenital Enfeksiyon"],
+        "story_hint": "💡 HİKAYE: CMV, bebeğin beyninde 'ventrikül çevresine kalsiyum serpintiyor' — bu iz onu Toxoplasma'dan ayırır. AIDS'te göze girer, retini yakar!"
+      },
+      {
+        "id": "mflash_056",
+        "question": "EBV'nin klinik tabloları ve onkolojik önemi nedir?",
+        "answer": "[[EBV]] (HHV-4): [[İnfeksiyöz mononükleoz]] — ateş, farenjit, lenfadenopati, splenomegali; [[heterofil antikor]] (+), [[Downey hücresi]] (atipik lenfosit). Onkoloji: [[Burkitt lenfoması]] (t(8;14), c-myc), [[nazofarinks kanseri]] (Asya), [[Hodgkin lenfoma]].",
+        "explanation": "EBV B lenfositlerini enfekte eder; reaktif CD8 T hücreleri atipik lenfosit görünümü oluşturur. Mono'da ampisilin verilirse yaygın makülopapüler döküntü görülür (penisilin allerjisi değil, altta yatan hastalığa bağlı). Heterofil antikor Monospot testi ile hızla saptanır. Burkitt lenfomasının endemik formu Orta Afrika'da görülür ve c-myc onkogeninin aktivasyonunu içerir. TUS'ta EBV maligniteleri önemlidir.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Viroloji", "EBV", "Mononükleoz", "Lenfoma"],
+        "story_hint": "💡 HİKAYE: EBV, B hücrelerine girer — T hücreler alarma geçer ve atipik lenfosit olarak görünür. Ampisilin verirsen 'döküntü partisi' başlar!"
+      },
+      {
+        "id": "mflash_057",
+        "question": "HSV-1 ve HSV-2 arasındaki farklar nelerdir?",
+        "answer": "[[HSV-1]]: orolabyal herpes, uçuk, keratit, ensefalit (temporal lob). Latans: [[trigeminal ganglion]]. [[HSV-2]]: genital herpes, neonatal herpes. Latans: [[sakral ganglion]] (S2-S4). Her ikisi [[asiklovir]] ile tedavi.",
+        "explanation": "HSV ensefaliti en sık sporadik ensefalit nedenidir ve temporal lob tutulumu (davranış değişikliği, amnezi) ile karakterizedir. PCR BOS'ta tanı koydurur. Neonatal herpes doğum kanalından geçişle oluşur; annede aktif lezyon varsa sezaryen önerilir. Asiklovir, viral timidin kinazı (TK) aktive olarak selektif etkidir. TUS'ta HSV ensefaliti ve latans ganglionları sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Viroloji", "HSV", "Ensefalit", "Latans"],
+        "story_hint": "💡 HİKAYE: HSV-1 'trigeminal kapıdan gelir' — uçuk, göz, beyin. HSV-2 'sakral asansörle iner' — genital bölge. Her ikisi de gizlenirken sadece uyumakta!"
+      },
+      {
+        "id": "mflash_058",
+        "question": "VZV'nin oluşturduğu iki klinik tablo nedir ve latansı nerede?",
+        "answer": "[[VZV]]: [[Suçiçeği]] (varicella — primer enfeksiyon) ve [[zona]] (herpes zoster — reaktivasyon). Latans: [[dorsal kök ganglionları]]. Zona sırasında [[postherpetik nevralji]] (özellikle yaşlılarda). İmmünkompromizede yaygın zona.",
+        "explanation": "Suçiçeği deri lezyonları farklı evrelerde (maküler, papüler, veziküler, krustöz) aynı anda görülmesi ile tanınır. Zona unilateral, dermatomal dağılımda döküntü ve şiddetli ağrı ile karakterizedir. Yaşlılarda zoster aşısı (Shingrix — rekombinant) önerilir. Göz tutulumu (zoster oftalmikus) V1 dermatomunda görülür. TUS'ta suçiçeği ve zona ayrımı ile postherpetik nevralji sorulur.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Viroloji", "VZV", "Zona", "Suçiçeği"],
+        "story_hint": "💡 HİKAYE: VZV, çocukluğunda 'suçiçeği partisi' verir, sonra dorsal kök ganglionuna çekilir. Yaşlılıkta 'zona misafiri' olarak tek taraflı döner!"
+      },
+      {
+        "id": "mflash_059",
+        "question": "Parvovirus B19'un klinik tabloları nelerdir?",
+        "answer": "[[Parvovirus B19]]: [[Eritema infeksiyosum]] (5. hastalık, 'tokat yüz' görünümü). [[Aplastik kriz]] (orak hücre anemisi gibi hemolitik anemisi olanlarda). [[Hidrops fetalis]] (gebede plasenta geçişi). Tek zincirli DNA, küçük virüs.",
+        "explanation": "Parvovirus B19, eritroid öncüllerindeki P antijeni aracılığıyla eritroblastları enfekte eder ve geçici aplazi oluşturur. Sağlıklı bireyde hafif ve kendiliğinden geçerken hemolitik anemisi olanlarda yaşamı tehdit eden aplastik kriz oluşturabilir. Gebede fetal anemi ve hidrops fetalis görülür; kordosentez ile intrauterin transfüzyon gerekebilir. TUS'ta 'aplastik kriz + orak hücre' kombinasyonu B19'u işaret eder.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Viroloji", "Parvovirus", "Aplastik Kriz"],
+        "story_hint": "💡 HİKAYE: B19 vitriüs, yanak kıpkırmızı tokatlar — ama orak hücre anemisinde tüm kemik iliğini durdurur. Gebe için tehlike: bebek anemisi!"
+      },
+      {
+        "id": "mflash_060",
+        "question": "HPV'nin onkogenik tipleri ve mekanizması nedir?",
+        "answer": "HPV [[6/11]]: kondiloma akuminata (genital siğil). HPV [[16/18]]: serviks Ca, orofarinks Ca, anüs Ca. Mekanizma: [[E6]] proteini [[p53'ü]] yıkar (p53 ubiquitin yoluyla), [[E7]] [[pRb'yi]] inaktive eder → hücre döngüsü kontrolsüz ilerler.",
+        "explanation": "HPV E6 ve E7 onkoproteini tümör supresör genler p53 ve Rb'yi etkisiz kılar. Bu nedenle HPV (+) servikal karsinom, HPV (-) servikal karsinom ile karşılaştırıldığında daha iyi prognoza sahiptir (p53 mutasyonu yoktur). HPV aşısı okul öncesi dönemde en etkilidir (cinsel temas öncesi). TUS'ta HPV tipleri ve E6/E7 mekanizması kritiktir.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Viroloji", "HPV", "Onkovirüs", "p53"],
+        "story_hint": "💡 HİKAYE: HPV 16/18 'iki gangster' — E6, p53 polisini öldürür; E7, Rb bekçisini dövüp bağlar. Hücre artık kontrolsüz büyür: kanser!"
+      },
+      {
+        "id": "mflash_061",
+        "question": "Influenza virüsünün antijenik yapısı ve antijenik kayma/sürüklenme farkı nedir?",
+        "answer": "Influenza: [[HA]] (hemagglutinin — konak hücreye bağlanma) ve [[NA]] (nöraminidaz — salıverilme) yüzey proteinleri. [[Antijenik sürüklenme]] (drift): küçük nokta mutasyonlar, mevsimsel gripte. [[Antijenik kayma]] (shift): farklı hayvan suşu ile segment reassortment → pandemi.",
+        "explanation": "Influenza A segmentli genomu nedeniyle reassortment (genetik karışma) yapabilir. Domuz gribi (H1N1 2009) ve kuş gribi (H5N1) antijenik kaymayı yansıtır. HA, influenza nötralizan antikorlarının hedefidir. Nöraminidaz inhibitörleri (oseltamivir, zanamivir) NA'yı bloke ederek yeni virüs taneciklerinin hücreden salıverilmesini engeller. TUS'ta drift vs shift ayrımı sıkça sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Viroloji", "Influenza", "Antijenik Kayma"],
+        "story_hint": "💡 HİKAYE: Drift küçük 'kıyafet değişikliği' — her yıl biraz farklı. Shift büyük 'kimlik değişikliği' — hayvan segmentiyle birleşir, pandemi çıkar!"
+      },
+      {
+        "id": "mflash_062",
+        "question": "Rotavirüsün özellikleri ve epidemiyolojisi nedir?",
+        "answer": "[[Rotavirus]]: [[çift zincirli RNA]], [[non-zarflı]], 11 segment. [[İnfantil ishalin en sık nedeni]] (dünyada). Mevsimsel (kış). Oral-fekal yol. [[Oral canlı aşı]] (Rotarix, RotaTeq) etkilidir. El dezenfektanına dirençli.",
+        "explanation": "Rotavirus ishal 2 yaş altı çocuklarda dehidrasyona bağlı ölümün önde gelen nedenidir. Non-zarflı yapısı alkol bazlı el dezenfektanına karşı direnci açıklar; bu nedenle el yıkama (su ve sabun) daha etkilidir. Rotavirus aşısı invajinasyon riskini sınırlamak için ilk dozun 15 hafta öncesinde tamamlanması önerilir. TUS'ta infantil ishal ve non-zarflı virüsün dezenfektana direnci sorulur.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Viroloji", "Rotavirus", "İnfantil İshal"],
+        "story_hint": "💡 HİKAYE: Rotavirus, bebek bağırsağının 'kış fırtınası' — el dezenfektanı işe yaramaz, suyla yıkamak şart. Aşıyla fırtına önlenebilir!"
+      },
+      {
+        "id": "mflash_063",
+        "question": "Adenovirüsün klinik tabloları nelerdir?",
+        "answer": "[[Adenovirus]]: [[farenjit]] (özellikle askeri kamplarda salgın), [[konjonktivit]] (yüzme havuzu konjonktiviti), [[gastroenterit]] (çocuklar), [[hemorajik sistit]] (immünkompromize). Çift zincirli DNA, non-zarflı.",
+        "explanation": "Adenovirus non-zarflı olduğundan havuz suyunda uzun süre canlı kalabilir. Tip 40/41 gastroenterite, Tip 3/4 solunum yolu enfeksiyonuna yol açar. İmmünkompromize çocuklarda yaygın adenovirus enfeksiyonu ölümcül olabilir. Adenovirus vektörel aşı geliştirmede de kullanılmıştır (COVID-19 aşılarında). TUS'ta asker kampı + farenjit → adenovirus sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Viroloji", "Adenovirus", "Konjonktivit"],
+        "story_hint": "💡 HİKAYE: Adenovirus, havuzda yüzmek, asker kampında kalmak, mesane enfeksiyonu — 3 farklı saldırı noktası. Çocuklarda bağırsakta da devreye girer!"
+      },
+      {
+        "id": "mflash_064",
+        "question": "Kabakulak (mumps) virüsünün klinik komplikasyonları nelerdir?",
+        "answer": "[[Kabakulak (Mumps)]]: Paramyxovirus. [[Parotit]] (bilateral, ağrılı), [[orşit]] (unilateral, pubertal erkekte infertilite nadir), [[viral menenjit]] (en sık), [[pankreatit]] (kan amilaz yükselir). [[MMR aşısı]] ile önlenir.",
+        "explanation": "Kabakulak parotit dışında sistemik komplikasyonlarıyla önemlidir. Menenjit, parotit öncesinde, sırasında veya sonrasında görülebilir. Orşit pubertal dönemde daha ciddidir ancak bilateral tutulum (<30%) nadir ve infertilite daha az görülür. Kabakulak menejiti kendi kendine geçer. MMR aşısı 12. ay ve 4-6. yaş şeklinde uygulanır. TUS'ta kabakulak komplikasyonları sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Viroloji", "Kabakulak", "Orşit", "Menenjit"],
+        "story_hint": "💡 HİKAYE: Kabakulak 'dört cephede savaşır' — tükürük bezi, testis, beyin, pankreas. MMR ile dört cephe de korunur!"
+      },
+      {
+        "id": "mflash_065",
+        "question": "MHC I ve MHC II arasındaki farklar nedir?",
+        "answer": "[[MHC I]]: [[tüm nükleuslu hücreler]], [[CD8+ sitotoksik T hücrelere]] sunar, [[endojen antijenler]] (virüs, tümör, intrasellüler bakteri). [[MHC II]]: [[APC]] (dendritik hücre, makrofaj, B hücresi), [[CD4+ yardımcı T hücrelere]] sunar, [[eksojen antijenler]].",
+        "explanation": "MHC I molekülleri 'hücre içi tehdidi' bildirirken MHC II molekülleri 'dış tehdidi' sunar. CD8 T hücreler MHC I-peptid kompleksini tanır ve enfekte hücreyi öldürür (perforin/granzim). CD4 T hücreler MHC II-peptid kompleksini tanır ve makrofaj aktivasyonu, B hücre yardımı sağlar. TUS'ta 'CD4 hangi MHC ile kısıtlıdır' sorusu kritik bilgidir.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "İmmünoloji", "MHC", "T Hücresi"],
+        "story_hint": "💡 HİKAYE: MHC I 'iç güvenlik kamerası' — hücre içini CD8'e gösterir. MHC II 'gümrük memuru' — dışarıdan gelen antijenlerı CD4'e sunar!"
+      },
+      {
+        "id": "mflash_066",
+        "question": "Kompleman klasik yolunun aktivasyonu ve fonksiyonları nelerdir?",
+        "answer": "Klasik yol: [[antijen-antikor kompleksi]] C1q'yu aktive eder → C4b2a (C3 konvertaz) → [[C3b]] (opsonizasyon) → C5-9 [[MAC]] (membran atak kompleksi, liz). [[C3a ve C5a]]: anafilatoksin (mast hücre degranülasyonu, kemotaksi).",
+        "explanation": "Klasik yol edinsel bağışıklığı komplemana bağlar. C1q IgG (Fc bölgesi) veya IgM'e bağlanarak kaskadı başlatır. C3b bakterileri opsonize ederek fagositozu kolaylaştırır. MAC (C5b-9) gram negatif bakterilerin dış membranını delerek liz oluşturur. C5a en güçlü kemotaktik faktördür. TUS'ta kompleman bileşenleri ve fonksiyonları, eksiklik durumları sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "İmmünoloji", "Kompleman", "Klasik Yol"],
+        "story_hint": "💡 HİKAYE: Klasik yol 'antikor dedektif işaret eder, kompleman polis müdahale eder' — C1q dedektif, C3b handcuff, MAC son kurşun!"
+      },
+      {
+        "id": "mflash_067",
+        "question": "Alternatif kompleman yolu nasıl aktive olur?",
+        "answer": "[[Alternatif yol]]: [[bakteri yüzeyi]] (LPS, mannan, yieast duvarı) spontan C3 hidrolizi → [[C3b]] bakteri yüzeyine bağlanır → faktör B ve D → [[C3bBb]] (alternatif C3 konvertaz) → amplifikasyon döngüsü → MAC.",
+        "explanation": "Alternatif yol antikor gerektirmez; bu nedenle enfeksiyonun erken saatlerinde, henüz antikor yanıtı gelişmeden aktiftir. Properdin (faktör P) C3bBb konvertazı stabilize eder. Faktör H ve I negatif regülatör olarak çalışır. Properdin eksikliği tekrarlayan Neisseria enfeksiyonlarına yol açar. TUS'ta hangi kompleman yolunun antikorsuz çalıştığı sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "İmmünoloji", "Kompleman", "Alternatif Yol"],
+        "story_hint": "💡 HİKAYE: Alternatif yol, 'antikoru beklemeyen acil servis' — bakteri yüzeyi C3'ü anında aktive eder. Antikor olmadan savunma başlar!"
+      },
+      {
+        "id": "mflash_068",
+        "question": "NK hücrelerinin çalışma mekanizması nedir?",
+        "answer": "[[NK hücre]]: [[MHC I eksikliğinde]] aktive olur ('missing self' — öz kayıp hipotezi). [[ADCC]] (antikora bağımlı hücresel sitotoksisite). [[Virüs enfeksiyonu]] ve [[tümör hücreleri]] kontrolü. Perforin ve granzim ile öldürür.",
+        "explanation": "NK hücreleri yüzeyinde inhibitör (KIR-MHC I) ve aktivatör (NKG2D) reseptörler bulunur. Sağlıklı hücrelerde MHC I inhibitör sinyali iletir ve NK öldürmez. Virüs veya tümör MHC I'i aşağı regüle ettiğinde inhibisyon ortadan kalkar, aktivatör sinyaller NK'yı uyarır. ADCC'de IgG Fc bölgesi NK yüzeyindeki CD16'ya bağlanır. TUS'ta 'MHC I eksikliğinde hangi hücre devreye girer' sorusu NK'yı işaret eder.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "İmmünoloji", "NK Hücre", "MHC I"],
+        "story_hint": "💡 HİKAYE: NK 'yoklama memuru' — her hücreye 'MHC I kartını göster' der. Kart yoksa 'kayıp öz' alarmı verir ve öldürür!"
+      },
+      {
+        "id": "mflash_069",
+        "question": "Th1 ve Th2 hücrelerin görevleri ve sitokinleri nelerdir?",
+        "answer": "[[Th1]]: [[IFN-γ]] üretir → makrofaj aktivasyonu → [[hücre içi patojenler]] (TB, Listeria, Leishmania). [[Th2]]: [[IL-4, IL-5, IL-13]] → IgE sentezi, [[eozinofili]] → [[parazit]] ve allerjiye karşı. IL-12 Th1, IL-4 Th2 yönlendirir.",
+        "explanation": "Th1/Th2 dengesi enfeksiyonun seyrini belirler. Leishmania'da Th1 dominant yanıt (IFN-γ, makrofaj aktivasyonu) koruyucu iken Th2 dominansı (IL-4, IL-5) hastalığın ilerlemesini sağlar. Allerjik hastalıklarda Th2 aşırı aktivasyonu IgE üretimini ve mast hücre/eozinofil aktivasyonunu artırır. TUS'ta Th1 makrofaj aktivasyonu ve tüberküloz ilişkisi kritik.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "İmmünoloji", "Th1", "Th2", "Sitokin"],
+        "story_hint": "💡 HİKAYE: Th1 'makrofaj komutanı' — IFN-γ ile hücre içi düşmanı deviriyor. Th2 'IgE fabrikatörü' — parazitleri allerjilerle çarpıyor!"
+      },
+      {
+        "id": "mflash_070",
+        "question": "Th17 hücrelerinin rolü nedir?",
+        "answer": "[[Th17]]: [[IL-17]] üretir → [[nötrofil]] bölgeye çeker. [[Fungal enfeksiyonlar]] (Candida, Aspergillus) ve [[ekstrasellüler bakteri]] savunması. IL-6 + TGF-β Th17 yönlendirir. IL-17 eksikliği → kronik mukokütanöz kandidiyaz.",
+        "explanation": "Th17 hücreleri nötrofillerin mobilizasyonu ve aktivasyonunda kritik rol oynar. STAT3 eksikliği (Hyper-IgE sendromu, Job sendromu) Th17 fonksiyon bozukluğuna ve tekrarlayan Stafilokokal abseler ve Candida enfeksiyonlarına yol açar. Th17 otoimmün hastalıklarda da (romatoid artrit, IBD) patolojik rol üstlenir. TUS'ta Job sendromu-IgE-Th17 bağlantısı sorulabilir.",
+        "difficulty": "Zor",
+        "tags": ["Mikrobiyoloji", "İmmünoloji", "Th17", "IL-17", "Candida"],
+        "story_hint": "💡 HİKAYE: Th17 'nötrofil çağrı merkezi' — IL-17 telefon eder, nötrofil ordusu gelir. Mantar ve dış bakteri saldırısında ilk müdahale ekibi!"
+      },
+      {
+        "id": "mflash_071",
+        "question": "Treg (T düzenleyici) hücrelerinin fonksiyonu nedir?",
+        "answer": "[[Treg hücreleri]]: [[Foxp3+]] CD4+ T hücre alt kümesi. [[IL-10]] ve [[TGF-β]] üretir → otoimmüniteyi baskılar, tolerans sağlar. [[IPEX sendromu]]: Foxp3 mutasyonu → Treg yok → çoklu otoimmünite (enteropatı, endokrinopatı, egzama).",
+        "explanation": "Treg hücreleri 'bağışıklık jandarması' rolü üstlenerek aşırı enflamasyon ve otoimmüniteyi önler. IPEX (immunodysregulation polyendocrinopathy enteropathy X-linked) sendromunda Foxp3 mutasyonu nedeniyle Treg fonksiyon kaybı olur ve yaygın otoimmün hasar gelişir. Tümörler Treg aktivasyonunu artırarak bağışıklık kaçışını kolaylaştırır. TUS'ta IPEX sendromu ve Foxp3 mutasyonu ilişkisi sorulur.",
+        "difficulty": "Zor",
+        "tags": ["Mikrobiyoloji", "İmmünoloji", "Treg", "Foxp3", "Otoimmünite"],
+        "story_hint": "💡 HİKAYE: Treg, bağışıklık sisteminin 'freni' — Foxp3 anahtarı kırılırsa fren patlıyor, otoimmünite ortalığı yakıp yıkıyor: IPEX sendromu!"
+      },
+      {
+        "id": "mflash_072",
+        "question": "Plasmodium falciparum'un diğer Plasmodium türlerinden farklı özellikleri nelerdir?",
+        "answer": "[[P. falciparum]]: [[tropikal tersiyan]] (düzensiz), [[beyin malaryası]] (serebral), [[RBC'de çift halka trofozoit]] ve [[muz/banana şekilli gametosit]]. Tüm RBC invazyonu (diğerleri yaş sınırlı). En ölümcül. [[Klorokin dirençli]].",
+        "explanation": "P. falciparum'un rosette ve sekestrasyon oluşturması (RBC'lerin serebral kapillerlere yapışması) serebral malaryaya yol açar. Splenomegali, anemi, hipoglisemi (kinin kullanımında da) görülür. Klorokin direnci yaygın; artemisin kombinasyon tedavisi önerilir. Schwann-Ziemann ve Maurer nokta yoktur. TUS'ta falciparum özellikleri ve tedavisi önemlidir.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Parazitoloji", "Plasmodium", "Sıtma"],
+        "story_hint": "💡 HİKAYE: Falciparum'un gametositi 'muz gibi eğrilmiş' — akılda kalsın! Beyin damarlarını tıkar, en tehlikeli kardeş!"
+      },
+      {
+        "id": "mflash_073",
+        "question": "Plasmodium vivax ve ovale'nin relaps yapma mekanizması nedir?",
+        "answer": "[[P.vivax ve P.ovale]]: karaciğerde [[hipnozoit]] (dormant form) oluşturur → kan evresiz dönemde semptomsuz. Aylarca-yıllarca sonra [[relaps]] (nüks). Tedavi: [[primakuin]] (hipnozoiti öldürür) + klorokin (kan evresi). [[Duffy antijeni]] gerektirir (vivax).",
+        "explanation": "Hipnozoit, karaciğerde serodiğer malarya türlerinin aksine dormant kalabilen formdur. Bu nedenle P.vivax ve P.ovale malaryasında sadece klorokin vermek yeterli değildir; hipnozoiti temizlemek için primakuin gereklidir. G6PD eksikliğinde primakuin hemoliz yapabilir — kullanım öncesi G6PD taraması. TUS'ta relaps-hipnozoit-primakuin üçlüsü kritiktir.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Parazitoloji", "P.vivax", "Hipnozoit", "Relaps"],
+        "story_hint": "💡 HİKAYE: P.vivax karaciğerde 'hipnozoit uyku bombası' bırakır — yıllar sonra patlayabilir. Primakuin bombayı etkisiz kılan tek ilaç!"
+      },
+      {
+        "id": "mflash_074",
+        "question": "Plasmodium malariae'nin özellikleri ve komplikasyonu nedir?",
+        "answer": "[[P. malariae]]: [[kuartan ateş]] (72 saatte bir, her 4 günde nöbet). Yaşlı eritrositlere tropizm, band trofozoit görünümü. Komplikasyon: [[nefrotik sendrom]] (immün kompleks GN). Yıllarca asemptomatik enfeksiyon ('persistan') kalabilir.",
+        "explanation": "P. malariae en uzun latanslı sıtma türüdür; kan evresini yıllarca sürdürebilir. Nefrotik sendrom, immün kompleks birikiminin glomerüllerde neden olduğu membranoproliferatif GN ile ilişkilidir. Klorokine hâlâ duyarlı. Diğer malarya türleriyle karşılaştırıldığında en hafif klinik tabloya sahiptir. TUS'ta kuartan ateş ve nefrotik sendrom ilişkisi P. malariae'yi işaret eder.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Parazitoloji", "P.malariae", "Kuartan Ateş"],
+        "story_hint": "💡 HİKAYE: P. malariae 'dört günde bir ateş' — kadranlı saat gibi. Böbreği immün kompleksle vurur: nefrotik sendrom sürprizi!"
+      },
+      {
+        "id": "mflash_075",
+        "question": "Toxoplasma gondii'nin yaşam döngüsü ve klinik tabloları nelerdir?",
+        "answer": "[[Toxoplasma gondii]]: kesin konak [[kedi]] (ookist feçes ile atılır), ara konak insan/diğer memeli. [[Kist (bradizoit)]]: çiğ et ile bulaş. [[Konjenital toksoplazmoz]]: [[hidrosefali]], [[korioretinit]], [[intrakraniyal kalsifikasyon]] (diffüz/parankimal). AIDS'te [[serebral abse]] (CD4<100).",
+        "explanation": "Konjenital toksoplazmoz'da kalsifikasyon parankimal ve yaygın iken CMV'de periventrikülerdir. Serebral toksoplazmoz AIDS'te halka şeklinde kontrastlanan lezyonlar oluşturur; TMP-SMX profilaksisi CD4<100 altında başlanır. Pyrimethamin+sülfadiazin+lökovorin tedavide kullanılır. TUS'ta Toxoplasma vs CMV konjenital farkları önemlidir.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Parazitoloji", "Toxoplasma", "Konjenital", "AIDS"],
+        "story_hint": "💡 HİKAYE: Kedi, Toxoplasma'nın 'gerçek evi' — insanda konuk misafir. Gebede bebeğin beynine 'kalsiyum serpinti' bırakır: diffüz, CMV gibi periventrikül değil!"
+      },
+      {
+        "id": "mflash_076",
+        "question": "Leishmania'nın klinik formları ve vektörü nedir?",
+        "answer": "[[Leishmania]]: vektör [[kum sineği]] (Phlebotomus/Lutzomyia). [[Visseral leishmaniasis]] (kala-azar): ateş, splenomegali, kaşeksi, [[hiperpigmentasyon]] (kala-azar = siyah ateş). [[Kutanöz]]: Bağdat çıbanı. [[Mukokütanöz]]: yüz deformitesi.",
+        "explanation": "Leishmania'nın akut fazı ateş ve splenomegaliyle; kronik fazı hiperpigmentasyon ve kaşeksiyle gider. Kemik iliği tutulumu nedeniyle pansitopeni görülür. Tanı için dalak veya kemik iliği aspiratında amastigot (kinin vakuol = Leishman-Donovan cisimcikleri) gösterilir. Amfoterisin B veya miltefosin tedavide kullanılır. TUS'ta kutanöz Leishmania ülserinin özellikleri ve vektör sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Parazitoloji", "Leishmania", "Kum Sineği"],
+        "story_hint": "💡 HİKAYE: Kum sineği 'visseral Leishmania'nın posta aracısı' — kala-azar karaciğer ve dalağı büyütür, deri kararmaya başlar: kara ateş!"
+      },
+      {
+        "id": "mflash_077",
+        "question": "Giardia lamblia'nın morfolojisi ve klinik tablosu nedir?",
+        "answer": "[[Giardia lamblia]]: [[ikili çekirdekli trofozoit]] (surfatçı yüzlü adam görünümü), dağ-nehir suyuyla bulaş. [[Malabsorpsiyon]]: yağlı dışkı, gaz, şişkinlik. [[Metronidazol]] tedavi. Tanı: dışkıda kist/trofozoit, duodenal aspirat.",
+        "explanation": "Giardia, duodenuma yapışır ve emilim yüzeyini azaltır. D-ksiloz emilim testi bozuktur. Hipogamaglobulinemi (IgA eksikliği) hastalarında kronik giardiasis görülür. Kistler çevreye dirençli ve klor dezenfeksiyonuna dayanıklı; kaynatma veya iyotla etkisiz hale gelir. TUS'ta seyahat diyaresi + malabsorpsiyon → Giardia bağlantısı sıkça sorulur.",
+        "difficulty": "Kolay",
+        "tags": ["Mikrobiyoloji", "Parazitoloji", "Giardia", "Malabsorpsiyon"],
+        "story_hint": "💡 HİKAYE: Giardia trofozoiti 'ikiz yüzlü, gülümseyen şekil' — dağ suyundan gelir, bağırsakta 'yağ emilimini çalar'. Karnınız şişer, yağlı kaka çıkar!"
+      },
+      {
+        "id": "mflash_078",
+        "question": "Entamoeba histolytica'nın patogenezi ve komplikasyonları nelerdir?",
+        "answer": "[[Entamoeba histolytica]]: [[kanlı mukuslu ishal]] (dizanteri), [[flask (şişe boyunlu) ülser]] (çekum ve sigmoid), [[karaciğer absesi]] — [[ançüez ezmesi (anchovy paste)]] görünümünde aspirat. Tanı: dışkıda eritrositofajik trofozoit.",
+        "explanation": "Amip koliti ve amip karaciğer absesi aynı hastada birlikte olmayabilir; karaciğer absesi koliti takip etmeyebilir. Amip absesi sağ üst kadranda ağrı, ateş ile gelir; aspirasyonda kahverengi-devetüyü renkte akıcı materyal (ançüez ezmesi) görülür. Metronidazol sistemik tedavide; luminal ajanlar (iodoquinol, paromomisin) bağırsak kistlerini eradike eder. TUS'ta Amip absesi rengi ve flask ülser sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Parazitoloji", "Entamoeba", "Karaciğer Absesi"],
+        "story_hint": "💡 HİKAYE: Amip abse içine iğne girince 'ançüez ezme rengi çıkar' — ançüez gören hemen amip abse tanısı koyar. Flask ülser bağırsağın 'boğulmuş şişesi'!"
+      },
+      {
+        "id": "mflash_079",
+        "question": "Taenia solium'un yaşam döngüsü ve sistiserkozis nedir?",
+        "answer": "[[Taenia solium]]: [[çiğ domuz eti]] → erişkin tenia (bağırsakta). [[Sistiserkozis]]: insan yanlışlıkla [[ara konak]] olur (oncosphere yutulur) → larvalar [[beyinde, adele, gözde]] kistleşir → [[epilepsi]], baş ağrısı. [[Albendazol]] tedavi.",
+        "explanation": "Sistiserkozis dünyada önlenebilir epilepsinin en sık nedenidir. Beyin görüntülemesinde kalsifiye veya kistik lezyonlar görülür. Nörolojik semptomlar kist ölürken artar (enflamasyon). Taenia solium tenya hastalığında dominan konak olan domuz kistleri yabancı ülkelerde helal kurallara bağlı olarak pek görülmez; burada hac dönüşü veya göç ile bağlantı kurulabilir. TUS'ta sistiserkozis-epilepsi ilişkisi sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Parazitoloji", "Taenia solium", "Sistiserkoz"],
+        "story_hint": "💡 HİKAYE: Taenia solium 'yanlış konak' yapar — insan domuz gibi ara konak olursa, larvalar beyine gider epilepsi başlar. 'Yanlış tarafta' olmak tehlikeli!"
+      },
+      {
+        "id": "mflash_080",
+        "question": "Echinococcus granulosus'un yaşam döngüsü ve hidatik kist özellikleri nelerdir?",
+        "answer": "[[Echinococcus granulosus]]: kesin konak [[köpek]], ara konak [[koyun]] (ve insan). İnsan yanlışlıkla ara konak: [[hidatik kist]] (karaciğer %70, akciğer %20). [[Kız veziküller]] (endokist içinde). Kist aspirasyonu [[anafilaksi]] riski! [[Albendazol]] + cerrahi.",
+        "explanation": "Hidatik kist büyük bir kistik kitle oluşturur; radyolojide 'kız veziküller' içeren kist karakteristiktir. Kist rüptürü (cerrahi sırasında veya travmada) anafilaktik şok ve dissemine hastalığa yol açabilir. PAIR prosedürü (perkütanöz aspirasyon-enjeksiyon-reaspirasyon) albendazol örtüsünde yapılabilir. TUS'ta kız vezikül ve anafilaksi riski sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Parazitoloji", "Echinococcus", "Hidatik Kist"],
+        "story_hint": "💡 HİKAYE: Köpek dışkısında yumuşak öpücük — insan yutarsa karaciğerde 'kız veziküllü balon' oluşur. Dokunma, patlayabilir ve anafilaksi getirir!"
+      },
+      {
+        "id": "mflash_081",
+        "question": "Trichinella spiralis enfeksiyonunun klinik tablosu ve epidemiyolojisi nedir?",
+        "answer": "[[Trichinella spiralis]]: [[çiğ/az pişmiş domuz eti]] (kültürel nedenler, hac dönüşü). [[Periorbital ödem]], [[miyalji]], [[eozinofili]], ateş. Larvalar adelede kistleşir. Tanı: kas biyopsisi, seroloji.",
+        "explanation": "Trichinosis, domuz kasyetinde kistleşen Trichinella larvalarının tüketilmesiyle oluşur. İnce bağırsak evresinde bulantı-ishal görülür. Kas invazyonu döneminde periorbital ödem (göz çevresinde şişlik) ve kas ağrısı belirgindir. Eozinofili doku invaze eden helmintlerde karakteristiktir. Albendazol veya mebendazol tedavide kullanılır. TUS'ta periorbital ödem + eozinofili → Trichinella bağlantısı sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Parazitoloji", "Trichinella", "Eozinofili"],
+        "story_hint": "💡 HİKAYE: Hac dönüşü Türkiye'de çiğ et yenirse Trichinella kapıda bekliyor — gözlerin çevresini şişirir, kaslarda saklı uyur. Eozinofili alarm verir!"
+      },
+      {
+        "id": "mflash_082",
+        "question": "Staphylococcus aureus'un virülans faktörleri ve klinik tabloları nelerdir?",
+        "answer": "[[S. aureus]] virülans faktörleri: [[Protein A]] (IgG Fc bağlar, opsonizasyonu engeller), [[TSST-1]] (toksik şok sendromu toksini, süperoantijen), [[eksfoliatin]] (stafilokokal haşlanmış deri = SSSS), [[koagülaz]] (+) (gram (+) koklarda ayrımı).",
+        "explanation": "S. aureus pek çok virülans faktörü olan fırsatçı patojendir. TSST-1 süperoantijen olarak T hücrelerini toplu aktive eder, masif sitokin salınımı yapar ve toksik şok sendromuna yol açar. Eksfoliatin epidermis yüzeyini ayırır (SSSS). Koagülaz, fibrinojeni fibrine çevirerek bakteriyi koruyucu pıhtıyla sarar. TUS'ta S. aureus'un koagülaz pozitifliği ve TSST-1 mekanizması kritik.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "S. aureus", "Virülans"],
+        "story_hint": "💡 HİKAYE: S. aureus'un 'Protein A kalkanı' IgG'yi ters çevirir, fagositozu engeller. TSST-1 tüm T hücrelerini 'aynı anda çağırır' — sitokin tsunamisi!"
+      },
+      {
+        "id": "mflash_083",
+        "question": "Streptococcus pyogenes'in (Grup A Strep) komplikasyonları nelerdir?",
+        "answer": "[[S. pyogenes]] (GAS): boğaz enfeksiyonunun [[immün komplikasyonları]]: [[romatizmal ateş]] (kalp kapağı, Aschoff nodülü) ve [[akut GN]] (nefritojenik suşlar). [[Nekrotizan fasiit]] tip II (M tip 1/3). [[Streptolizin O/S]], streptokinaz, hyalüronidaz.",
+        "explanation": "Boğaz enfeksiyonunun yetersiz tedavisi romatizmal ateşe (RA) yol açabilir. RA patogenezinde M proteinine karşı antikorların kalp kası çapraz reaktivitesi rol oynar (moleküler mimikri). Streptokokal GN ise farenjit veya deri enfeksiyonu sonrası gelişir; proteinüri, hematüri, hipertansiyon ile seyreder. TUS'ta RA ve GN hangi streptokokal enfeksiyon sonrası çıkar sorusu kritik.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "S.pyogenes", "Romatizmal Ateş"],
+        "story_hint": "💡 HİKAYE: Tedavisiz boğaz ağrısı 'kalp ve böbreğe çek keser' — romatizmal ateş kapağı bozar, GN böbreği sıkıştırır. Penisilin tedavisi hayat kurtarır!"
+      },
+      {
+        "id": "mflash_084",
+        "question": "Streptococcus pneumoniae'nin hangi hastalıklara yol açar ve direnç problemi nedir?",
+        "answer": "[[S. pneumoniae]] (pnömokok): [[pnömoni]] (pas rengi balgam), [[menenjit]], [[otitis media]], [[sinüzit]], [[sepsis]] (asplenikde). [[Alpha-hemoliz]] (yeşil), [[oksijene duyarlı]], optokine duyarlı. [[Penisilin direnci]] artan oranlarda ([[PBP2b mutasyonu]]).",
+        "explanation": "Pnömokok alfa-hemolizlik yapar ve optokine duyarlılığı ile S. viridans'tan ayrılır. Asplenik hastalarda pnömokoka karşı opsonizasyon yeterli olmadığından fulminan pnömokok sepsisi oluşabilir. Penisilin direncinde PBP değişikliği söz konusudur (beta-laktamaz üretimi değil). TUS'ta pnömokok aspleni ilişkisi ve optochin duyarlılığı sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "Pnömokok", "Menenjit"],
+        "story_hint": "💡 HİKAYE: Pnömokok 'optochine boyun eğer' — laboratuvarda onu tanımak için optochin disk koy. Asplenide onu pastörize etmek için aşı şart!"
+      },
+      {
+        "id": "mflash_085",
+        "question": "Clostridium tetani'nin toksin mekanizması ve tetanoz klinik tablosu nedir?",
+        "answer": "[[C. tetani]]: [[tetanospazmin]] (sinir toksin) inhibitör internöronları bloke eder (glisin ve GABA salgısını engeller) → [[spastik paralizi]]. [[Trismus]] (çene kilitlenmesi), [[opistotonus]], [[risus sardonicus]. Yara temizliği + [[tetanoz antitoksini]] + penisilin + diazepam.",
+        "explanation": "Tetanoz toksini periferik sinir uçlarından retrograd aksonal transport ile omuriliğe ulaşır ve inhibitör internöronlara bağlanır. İnhibisyon kaybolunca motor nöron sürekli ateşlenir, spastik paralizi oluşur (botulinum toksinin tersine). Nadir bir hastalıktır; derin temizlik gerektiren yara + aşılanmamış hasta TUS'ta klasik senaryodur. Tetanoz antitoksini bağlanmamış toksini nötralize eder.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "Tetanoz", "Toksin"],
+        "story_hint": "💡 HİKAYE: Tetanoz toksini inhibitör nöronu 'susturur' — frensiz motor nöron sürekli bağırır, kaslar kasılır. Botulizm'in tam tersi!"
+      },
+      {
+        "id": "mflash_086",
+        "question": "Clostridium botulinum toksininin mekanizması nedir ve klinik tabloları nelerdir?",
+        "answer": "[[Botulinum toksini]]: [[nörömüsküler kavşakta ACh salıverilmesini bloke eder]] (SNARE proteini kesimi) → [[flask paralizi]] (aşağıdan yukarı). [[Gıda botulizmi]], [[yara botulizmi]], [[bebek botulizmi]] (bal = C.botulinum sporu). [[Antitoksin]] tedavi.",
+        "explanation": "Botulinum toksini 7 serotipin en güçlüsüdür (A serotipi). Bebek botulizminde bal tüketimi (sporun çimlenmesi) klasik hikayedir; erişkinlerde bağırsak florası sporu inhibe eder. İnen flask paralizi (okülomotor tutulum, disfaji, solunum yetmezliği) tetanozdan ayırt eder. Presinaptik menbrana etki eder; antikolinerjik bulgular görülür (midriazis, ağız kuruluğu). TUS'ta botulizm mekanizması ve bebek-bal ilişkisi sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "Botulizm", "ACh", "Toksin"],
+        "story_hint": "💡 HİKAYE: Botulinum 'ACh musluğunu kapatır' — kas haberi alamaz ve flask olur. Tetanoz aksine 'musluğu açık bırakır' — spazm. İken-çıkan flask/spastik ayrımı kritik!"
+      },
+      {
+        "id": "mflash_087",
+        "question": "Clostridium difficile enfeksiyonunun patogenezi ve tedavisi nedir?",
+        "answer": "[[C. difficile]]: antibiyotik sonrası normal flora bozulur, C.difficile aşırı çoğalır. [[Toksin A]] (enterotoksin, diyare) ve [[Toksin B]] (sitotoksin, psödomembran). [[Psödomembranöz kolit]]. Tedavi: hafif-orta → [[metronidazol oral]]; ağır → [[vankomisin oral]].",
+        "explanation": "C. difficile'nin en sık tetikleyen antibiyotikler: klindamisin, florokinolonlar, sefalosporinler ve ampisilin. Tanı: dışkıda GDH antijeni + toksin testi veya PCR. Psödomembranlar sarımsı-beyaz plaklar şeklinde endoskopide görülür. Tekrarlayan vakalarda fidaksomisin veya fekal mikrobiyota transplantasyonu (FMT) uygulanır. TUS'ta en sık C.difficile tetikleyicisi sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "C.difficile", "Psödomembranöz Kolit"],
+        "story_hint": "💡 HİKAYE: Klindamisin 'bağırsak florasını süpürür' — C.difficile boşluğa yerleşir, toksin salar, psödomembran yapar. Tedavi: metronidazol veya vankomisin ORAL!"
+      },
+      {
+        "id": "mflash_088",
+        "question": "Escherichia coli'nin diyare yapan tipleri nelerdir?",
+        "answer": "[[ETEC]]: seyahat diyaresi, ısıya dayanıklı/hassas toksin (LT/ST). [[EPEC]]: çocuk diyaresi, kaide lezyon. [[EIEC]]: Shigella benzeri kanlı diyare. [[EHEC]] (O157:H7): kanlı diyare, [[HÜS]] (hemolitik üremik sendrom), [[Shiga toksini]]. [[EAEC]]: kalıcı diyare.",
+        "explanation": "EHEC O157:H7, Shiga toksin 1 ve 2 üretir; bu toksinler renal endoteli bozarak HÜS oluşturur (trombositopeni, hemolitik anemi, böbrek yetmezliği). EHEC enfeksiyonunda antibiyotik kullanımı tartışmalı (toksin salınımı artabilir). ETEC ısıya dayanıklı ST toksini sGC'ı aktive ederek siklik GMP artışıyla sekretuar diyare yapar. TUS'ta EHEC ve HÜS ilişkisi kritik.",
+        "difficulty": "Zor",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "E.coli", "Diyare", "HÜS"],
+        "story_hint": "💡 HİKAYE: EHEC hamburger virusu — O157:H7 Shiga toksin üretir, böbrekleri dondurur. HÜS üçlüsü: hemolitik anemi + trombositopeni + böbrek yetmezliği!"
+      },
+      {
+        "id": "mflash_089",
+        "question": "Salmonella türlerinin klinik tabloları nelerdir?",
+        "answer": "[[S. typhi]]: [[tifo ateşi]] — [[Faget belirtisi]] (rölatif bradikardi), gül benekleri (Rose spots), bağırsak perforasyonu. [[S. non-typhi]]: gastroenterit (çiğ tavuk, yumurta). Orak hücreli anemide Salmonella [[osteomiyeliti]].",
+        "explanation": "Salmonella typhi insanın tek rezervuarıdır; fekal-oral bulaş, düşük enfektif doz. Kan kültürü 1. haftada, dışkı kültürü 2-3. haftada pozitif. Widal testi O ve H antijenlerine karşı antikor gösterir. Non-typhoidal Salmonella'nın en önemli hayvan rezervuarları kaplumbağalar, tavuklar ve yumurtadır. TUS'ta orak hücre + osteomiyelit → Salmonella ezberi kritik.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "Salmonella", "Tifo"],
+        "story_hint": "💡 HİKAYE: Tifo ateşinde kalp hızı artmaz — 'Faget belirtisi' ateş yüksek, nabız yavaş. Orak hücre kemik iliğinde Salmonella sever!"
+      },
+      {
+        "id": "mflash_090",
+        "question": "Mycobacterium tuberculosis'in patogenezi ve primer-sekonder TB farkı nedir?",
+        "answer": "[[TB]]: [[Ghon kompleksi]] (primer enfeksiyon: akciğer alt bölge + hiler LAP). [[Latent TB]]: Mantoux (+), semptom yok. [[Reaktivasyon (sekonder) TB]]: [[akciğer üst lob]], kavitasyon, [[kazeöz nekroz]]. Granülom: epiteloid makrofaj, Langhans dev hücre, lenfositler.",
+        "explanation": "M. tuberculosis yavaş üreyen (18-24 saat) aerobtur. Primer kompleks alt lob paratrakeal LAP ile karakteristiktir. Reaktivasyon üst lob oksijen basıncından yararlanır. Granülom oluşumu Th1 aracılıklı IFN-γ ile makrofaj aktivasyonuna dayanır. TUS'ta granülom yapısı, Ghon odağı ve reaktivasyon TB semptomları sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "Tüberküloz", "Granülom"],
+        "story_hint": "💡 HİKAYE: Primer TB alt lobdan kapıya gelir, Ghon odağı bırakır. Yıllar sonra üst loba taşınır, kavitasyon açar — reaktivasyon TB başlamış demektir!"
+      },
+      {
+        "id": "mflash_091",
+        "question": "TB tedavisinde HRZE rejimi nedir ve ilaç yan etkileri nelerdir?",
+        "answer": "[[HRZE]]: [[İzoniazid (H)]] (hepatotoksisite, periferik nöropati — B6 vitamini verilir), [[Rifampisin (R)]] (CYP450 indüksiyonu, kırmızı sıvılar), [[Pirazinamid (Z)]] (hiperürisemi, hepatotoksisite), [[Etambutol (E)]] ([[retrobulber nörit, renk görme bozukluğu]]). 2 ay HRZE + 4 ay HR.",
+        "explanation": "İzoniazid, NAT2 yavaş asetilleyicilerde daha yüksek toksisite riskine sahiptir. Etambutolün görme yan etkisi geri dönüşümlüdür. Pirazinamid ürik asit sentezini artırarak gut ataklarına yol açabilir. Rifampisin ile oral kontraseptifler etkisizleşir. TUS'ta her TB ilacının özel yan etkisi ayrı ayrı sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "TB Tedavisi", "İzoniazid", "Etambutol"],
+        "story_hint": "💡 HİKAYE: HRZE bir takım: İzoniazid karaciğeri, Rifampisin ilaçları, Pirazinamid ürik asidi, Etambutol gözü seçer etkiler. Hepsini bil, yan etki sürpriz olmasın!"
+      },
+      {
+        "id": "mflash_092",
+        "question": "Neisseria meningitidis enfeksiyonunun klinik tablosu ve profilaksisi nedir?",
+        "answer": "[[N. meningitidis]]: [[menenjit + peteşiyal/purpurik döküntü]] (Waterhouse-Friderichsen sendromu — adrenal yetmezlik). Kapsüllü gram (-) kok, fermente laktoz-maltoz. [[Rifampisin]] veya [[siprofloksasin]] temas profilaksisi. [[Penisilin G]] tedavi.",
+        "explanation": "N. meningitidis serogrubu B çocuklarda, C ve Y erişkinlerde baskındır. Asplenik hastalar ve kompleman eksiklikleri (C5-C9) artmış risk altındadır. Waterhouse-Friderichsen sendromu: bilateral adrenal hemoraji nedeniyle akut adrenal yetmezlik ve şok. Meningokok konjuge aşı ergenlikte uygulanır. TUS'ta peteşiyal döküntü + menenjit → meningokok acil antibiyotik verilmesi gerektirir.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "Meningokok", "Waterhouse-Friderichsen"],
+        "story_hint": "💡 HİKAYE: Ateş + mor deri lekeleri = menenjit acili! Waterhouse-Friderichsen böbrek üstünü patlatır. Rifampisin temaslıyı, penisilin hastayı kurtarır!"
+      },
+      {
+        "id": "mflash_093",
+        "question": "Haemophilus influenzae'nin klinik önemi ve aşı ile olan ilişkisi nedir?",
+        "answer": "[[H. influenzae Tip b (Hib)]]: konjuge aşı öncesi çocuklarda menenjit, epiglottit, sepsis. [[Çikolata agar]] gerektirir (X=hemin, V=NAD). [[Beta-laktamaz]] üreten suşlar: amoksisilin-klavulanat. [[Hib konjuge aşı]] çocukluk programında.",
+        "explanation": "Hib kapsüllü suş olan tip b, invazif hastalık yapar. Non-tiplendirilebilir H. influenzae (NTHI) kapsülsüzdür ve KOAH alevlenmesi, otitis media nedenidir. Satelitizm fenomeni: S. aureus heminin (V faktörü benzeri) sağlaması ile çikolata agardan farklı agar besiyerinde H. influenzae S. aureus kolonileri çevresinde ürer. TUS'ta çikolata agar büyüme faktörleri ve Hib aşısı sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "H.influenzae", "Hib Aşı"],
+        "story_hint": "💡 HİKAYE: H. influenzae, X ve V olmadan büyüyemez — çikolata agarda hem X hem V var. Hib konjuge aşısıyla menenjit tarihe karıştı!"
+      },
+      {
+        "id": "mflash_094",
+        "question": "Pseudomonas aeruginosa'nın karakteristik özellikleri ve klinik önemi nedir?",
+        "answer": "[[Pseudomonas aeruginosa]]: [[mavi-yeşil pigment]] (piyosiyanin ve piyoverdin), [[üzüm kokusu]], non-fermentatif gram (-) basil. [[Kistik fibrozis]] (alginat biyofilm), yanık enfeksiyonu, VAPnömoni, [[nötropenik ateş]]. [[Doğal direnç]], çoklu ilaç direnci.",
+        "explanation": "Pseudomonas hastane kökenli enfeksiyonların baş etkenidir. Kistik fibrozis hastalarında alginat üreten biofilm formasyonu antibiyotik tedavisini zorlaştırır. Yanık hastalarında yeşil-mavi renk değişimi ve üzüm kokusu Pseudomonas'ı düşündürür. Pip-tazo, sefepim, imipenem, amikasin ve siprofloksasin antipsödomonal ilaçlardır. TUS'ta mavi-yeşil pigment ve kistik fibrozis ilişkisi sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "Pseudomonas", "Kistik Fibrozis"],
+        "story_hint": "💡 HİKAYE: Pseudomonas 'mavi-yeşil ressam' — üzüm kokusu ve renk değişimi onun imzası. Kistik fibrozis akciğerinde 'alginat kaleye' çekilir, antibiyotik giremez!"
+      },
+      {
+        "id": "mflash_095",
+        "question": "Legionella pneumophila'nın epidemiyolojisi, klinik tablosu ve tedavisi nedir?",
+        "answer": "[[Legionella pneumophila]]: [[BCYE agar]] (sistin ve demir gerektirir), gram negatif (zayıf boyanır), [[su sistemleri]] (klima, su deposu, duş). [[Legionner hastalığı]]: pnömoni + hiponatremi + ishal + konfüzyon. [[Pontiac ateşi]] (hafif, kendiliğinden). Tedavi: [[florokinolon veya azitromisin]].",
+        "explanation": "Legionella havadan (aerosolizasyon) bulaşır, kişiden kişiye geçmez. BCYE (Buffered Charcoal Yeast Extract) agarda ürer; standart kanlı agarda üremez. Gram boyama zayıf boyanır, Giemsa veya gümüş boyama ile daha iyi görünür. İdrar Legionella antijen testi hızlı tanı sağlar. Beta-laktamlar hücre içi etkisizliği nedeniyle kullanılmaz. TUS'ta Legionella büyüme ortamı ve tanı yöntemi sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "Legionella", "Atipik Pnömoni"],
+        "story_hint": "💡 HİKAYE: Legionella, otel klima sistemine gizlenir — duş suyu mist yapınca akciğere girer. BCYE agar olmadan büyüyemez, hiponatremi ipucu verir!"
+      },
+      {
+        "id": "mflash_096",
+        "question": "Helicobacter pylori'nin patogenezi ve H. pylori-ilişkili hastalıklar nelerdir?",
+        "answer": "[[H. pylori]]: [[üreaz]] (+) — amonyak ureyi parçalar, mide asidini nötralize eder. [[CagA]] proteini (virülans, gastrik Ca riski). [[Peptik ülser]] (özellikle duodenal), [[MALToma]], [[gastrik adenokarsinom]]. Tedavi: PPI + klaritromisin + amoksisilin (veya metronidazol).",
+        "explanation": "H. pylori gram negatif spiral basil olup midenin antrum ve korpusunda yaşar. Üreaz enzimi pozitifliği üflemeli nefes testi (13C-üre) ve hızlı üreaz testi (biyopsi bazlı) ile gösterilir. CagA pozitif suşlar gastrik kanser riskini artırır. MALToma H. pylori eradikasyonu ile gerileyebilir. TUS'ta H. pylori-duodenal ülser-MALToma ilişkisi kritik.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "H.pylori", "Peptik Ülser", "MALToma"],
+        "story_hint": "💡 HİKAYE: H. pylori üreaz silahıyla mide asidini 'amonyak kalkanı' ile söndürür. CagA onu kanser ajanına dönüştürür. Üçlü tedavi ile eradike et!"
+      },
+      {
+        "id": "mflash_097",
+        "question": "Treponema pallidum'un sifiliz evrelerindeki klinik tabloları nelerdir?",
+        "answer": "[[Primer sifiliz]]: [[şankr]] (ağrısız sert ülser, enfeksiyöz). [[Sekonder]]: generalize döküntü (palmoplantar dahil), kondiloma lata, mukoza plakaları. [[Tersiyer]]: gom, kardiyovasküler sifiliz (aortit), [[nörosifiliz]]. Tanı: VDRL/RPR (nontreponemal), FTA-ABS (treponemal onay).",
+        "explanation": "Treponema pallidum kültürde üretilemez. Karanlık alan mikroskopi primer lezyondan treponem gösterir. VDRL/RPR yanlış pozitif verebilir (gebelik, SLE, enfektif endokardit). FTA-ABS tüm sifiliz evrelerinde pozitif kalır (tedavi sonrası da). Tedavi: benzatin penisilin G (primer/sekonder), IV penisilin G (nörosifiliz). TUS'ta şankr özelliği ve VDRL/FTA-ABS ayrımı sorulur.",
+        "difficulty": "Zor",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "Sifiliz", "Treponema"],
+        "story_hint": "💡 HİKAYE: Sifiliz 'ağrısız ülser ile gelir, sesiz ilerler' — döküntü tüm vücuda yayılır, sonra saklara. Şankrı gören penisilin verir, geç kalma!"
+      },
+      {
+        "id": "mflash_098",
+        "question": "Chlamydia trachomatis'in klinik formları nelerdir?",
+        "answer": "[[C. trachomatis]]: L1-L3 → [[lenfogranüloma venereum]] (inguinal lenf nodu süpürasyonu). D-K → [[genital C. trachomatis]] (en sık bakteriyel STI), [[neonatal konjunktivit ve pnömoni]]. A-C → [[trahom]] (körlük, kıl çekme, entropion). [[Hücre içi]] zorunlu parazit.",
+        "explanation": "Chlamydia iki form arasında geçiş yapar: EB (elementar cisimcik = enfeksiyöz, metabolik inaktif) ve RB (retikuler cisimcik = hücre içinde replike olur). STI olarak en sık asemptomatik seyir gösterir ve kadınlarda tubal infertiliteye yol açabilir. Trahom hâlâ gelişmekte olan ülkelerde enfeksiyöz körlüğün önde gelen nedenidir. Tedavi: doksisiklin veya azitromisin.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Bakteriyoloji", "Chlamydia", "STI", "Trahom"],
+        "story_hint": "💡 HİKAYE: Chlamydia 'enerji hırsızı' — kendi ATP'sini üretemez, konakçının pili üzerinde yaşar. EB gider, RB çoğalır, EB yeniden salınır!"
+      },
+      {
+        "id": "mflash_099",
+        "question": "Aspergillus fumigatus'un klinik formları nelerdir ve kim risk altındadır?",
+        "answer": "[[Aspergillus fumigatus]]: [[allerjik bronkopulmoner asperjilloz]] (ABPA — astım/kistik fibrozis, IgE yüksek), [[asperjilloma]] (eski tüberküloz kavitesinde top lezyon), [[invazif asperjilloz]] ([[nötropenik]], transplant). Tedavi: [[vorikonazol]].",
+        "explanation": "Aspergillus septatı hiflerle karakterizedir; Mucor'dan ayrımında septum önemlidir (Mucor non-septat). ABPA'da IgE yüksek, kan eozinofili ve merkezi bronşektazi görülür; steroid ile tedavi. Asperjilloma'da hemoptizi en ciddi semptomdur. İnvazif asperjillozda bronkoskopi/BAL ve galaktomannan antijeni tanıda kullanılır. TUS'ta Aspergillus morfoloji ve klinik formları sorulur.",
+        "difficulty": "Zor",
+        "tags": ["Mikrobiyoloji", "Mikoloji", "Aspergillus", "İnvazif Enfeksiyon"],
+        "story_hint": "💡 HİKAYE: Aspergillus 3 maske takar — allerjik (ABPA), eski kavitede top (asperjilloma), nötropeni için invazif suikast. Vorikonazol 3'üne de karşı!"
+      },
+      {
+        "id": "mflash_100",
+        "question": "Candida albicans'ın patogenezi ve tedavisi nedir?",
+        "answer": "[[Candida albicans]]: [[germ tüpü]] (37°C'de hif oluşumu — diğer Candida türlerinden ayırır). [[Oral kandidiazis]] (pamukçuk, immünkompromize, steroid inhale). [[Özefajit]] (AIDS'te ilk AIDS göstergesi). [[Sistemik kandidiazis]] (nötropeni, kateter). Tedavi: yüzeyel → [[flukonazol]]; invazif → [[kaspofungin/amfoterisin B]].",
+        "explanation": "Candida'nın germ tüpü testi hem virülansla hem de tür kimliğiyle ilgilidir. Flukonazol, C. krusei'ye intrinsik dirençlidir; C. glabrata'da azalmış duyarlılık görülür. Kaspofungin (ekinokandin) beta-1,3-glukan sentezini inhibe eder. Kandida özefajiti AIDS tanı kriterleri arasındadır. TUS'ta germ tüpü testi ve özefajit-AIDS ilişkisi sorulur.",
+        "difficulty": "Orta",
+        "tags": ["Mikrobiyoloji", "Mikoloji", "Candida", "AIDS", "Flukonazol"],
+        "story_hint": "💡 HİKAYE: Candida 37°C'de 'germ tüpü çıkarır' — bu kılık değiştirme virülanstır. AIDS'te özefajite giderse bu hastalık 'AIDS tanısı' koydurur!"
+      }
+    ],
+    "tus_spots": [],
+    "clinical_cases": []
+  }
+]

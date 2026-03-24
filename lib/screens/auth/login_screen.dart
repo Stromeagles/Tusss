@@ -170,35 +170,160 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  // ── Mobile: tek sütun ────────────────────────────────────────────────────
+  // ── Mobile: Hero + Form ──────────────────────────────────────────────────
   Widget _buildMobileLayout(AuthViewModel vm, BoxConstraints constraints) {
+    final screenH = constraints.maxHeight;
+    final heroH = (screenH * 0.38).clamp(200.0, 300.0);
+
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
       child: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-        child: Padding(
-          padding: EdgeInsets.only(
-            left: 24,
-            right: 24,
-            top: MediaQuery.of(context).padding.top + 32,
-            bottom: MediaQuery.of(context).viewInsets.bottom + 48,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              _buildMobileHeader(vm),
-              const SizedBox(height: 32),
-              _buildGlassCard(vm),
-              const SizedBox(height: 20),
-              _buildBottomToggle(vm),
-              if (kIsWeb) ...[
-                const SizedBox(height: 40),
-                _buildStoreButtons(),
-              ],
-              const SizedBox(height: 32),
-            ],
-          ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            // ── Hero Görsel Bölümü ───────────────────────────────────────
+            SizedBox(
+              height: heroH,
+              child: Stack(
+                fit: StackFit.expand,
+                children: [
+                  // Hero görsel
+                  Image.asset(
+                    'assets/images/hero_login_new.png',
+                    fit: BoxFit.cover,
+                    cacheWidth: 800,
+                  ),
+                  // Alt gradient — forma geçiş
+                  Container(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.black.withValues(alpha: 0.25),
+                          AppTheme.background.withValues(alpha: 0.95),
+                        ],
+                        stops: const [0.4, 1.0],
+                      ),
+                    ),
+                  ),
+                  // Logo + başlık overlay
+                  Positioned(
+                    bottom: 20,
+                    left: 24,
+                    right: 24,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              width: 44, height: 44,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                gradient: const LinearGradient(
+                                  colors: [AppTheme.cyan, AppTheme.neonPurple],
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: AppTheme.cyan.withValues(alpha: 0.45),
+                                    blurRadius: 16,
+                                  ),
+                                ],
+                              ),
+                              child: const Icon(Icons.psychology_rounded,
+                                  color: Colors.white, size: 22),
+                            ),
+                            const SizedBox(width: 12),
+                            Text(
+                              'AsisTus',
+                              style: GoogleFonts.outfit(
+                                fontSize: 28,
+                                fontWeight: FontWeight.w900,
+                                color: Colors.white,
+                                letterSpacing: -0.8,
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 9, vertical: 3),
+                              decoration: BoxDecoration(
+                                gradient: const LinearGradient(
+                                  colors: [AppTheme.cyan, AppTheme.neonPurple],
+                                ),
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Text(
+                                'AI',
+                                style: GoogleFonts.inter(
+                                  color: Colors.white,
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 6),
+                        Text(
+                          'TUS\'a hazırlığın en akıllı yolu',
+                          style: GoogleFonts.inter(
+                            fontSize: 13,
+                            color: Colors.white.withValues(alpha: 0.70),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ).animate().fadeIn(delay: 150.ms, duration: 600.ms)
+                        .slideY(begin: 0.08, end: 0),
+                  ),
+                ],
+              ),
+            ).animate().fadeIn(duration: 700.ms),
+
+            // ── Form Bölümü ──────────────────────────────────────────────
+            Padding(
+              padding: EdgeInsets.only(
+                left: 20,
+                right: 20,
+                top: 8,
+                bottom: MediaQuery.of(context).viewInsets.bottom + 40,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  // Mode başlığı
+                  Padding(
+                    padding: const EdgeInsets.only(left: 4, bottom: 16),
+                    child: Text(
+                      vm.mode == AuthMode.login
+                          ? 'Tekrar Hoş Geldin 👋'
+                          : 'Hesap Oluştur 🚀',
+                      style: GoogleFonts.outfit(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w800,
+                        color: AppTheme.textPrimary,
+                        letterSpacing: -0.5,
+                      ),
+                    ).animate().fadeIn(delay: 250.ms, duration: 400.ms),
+                  ),
+                  _buildGlassCard(vm),
+                  const SizedBox(height: 18),
+                  _buildBottomToggle(vm),
+                  if (kIsWeb) ...[
+                    const SizedBox(height: 36),
+                    _buildStoreButtons(),
+                  ],
+                  const SizedBox(height: 24),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
@@ -288,7 +413,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Stack(
       fit: StackFit.expand,
       children: [
-        Image.asset('assets/hero_login.jpg', fit: BoxFit.cover, cacheWidth: 1200),
+        Image.asset('assets/images/hero_login.jpg', fit: BoxFit.cover, cacheWidth: 1200),
         // Sağa doğru gradient — form paneliyle geçiş
         Container(
           decoration: BoxDecoration(
@@ -377,64 +502,6 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       ],
     ).animate().fadeIn(delay: 200.ms, duration: 500.ms);
-  }
-
-  // ── Mobile header: logo + başlık ─────────────────────────────────────────
-  Widget _buildMobileHeader(AuthViewModel vm) {
-    return Column(
-      children: [
-        // Logo
-        Container(
-          width: 80,
-          height: 80,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            gradient: const LinearGradient(
-              colors: [AppTheme.cyan, AppTheme.neonPurple],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: AppTheme.cyan.withValues(alpha: 0.40),
-                blurRadius: 28,
-                spreadRadius: 2,
-              ),
-            ],
-          ),
-          child: const Center(
-            child: Icon(Icons.psychology_rounded, color: Colors.white, size: 38),
-          ),
-        ),
-        const SizedBox(height: 18),
-        Text(
-          'AsisTus',
-          style: GoogleFonts.outfit(
-            fontSize: 34,
-            fontWeight: FontWeight.w900,
-            color: Colors.white,
-            letterSpacing: -1.0,
-          ),
-        ),
-        const SizedBox(height: 10),
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 7),
-          decoration: BoxDecoration(
-            color: AppTheme.cyan.withValues(alpha: 0.12),
-            borderRadius: BorderRadius.circular(20),
-            border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.30)),
-          ),
-          child: Text(
-            vm.mode == AuthMode.login ? 'Tekrar Hoş Geldin 👋' : 'Hesap Oluştur 🚀',
-            style: GoogleFonts.inter(
-              fontSize: 13,
-              color: AppTheme.cyan,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
-        ),
-      ],
-    ).animate().fadeIn(duration: 600.ms).slideY(begin: -0.08, end: 0);
   }
 
   // ── Form içeriği (login/signup) ───────────────────────────────────────────

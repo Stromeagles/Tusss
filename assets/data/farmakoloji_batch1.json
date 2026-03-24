@@ -13,7 +13,12 @@
         "answer": "[[Kolin asetiltransferaz (ChAT)]] enzimi, [[kolin]] ve [[asetil-CoA]]'yı birleştirerek asetilkolin sentezler.",
         "explanation": "Kolin asetiltransferaz (ChAT), kolinerjik nöronlarda asetilkolin sentezinden sorumlu spesifik enzimdir. Kolin, sinaptik yarıktan geri alınır (veziküler kolin transporter ile); asetil-CoA mitokondri kaynaklıdır. Sentezlenen ACh vezikül içinde depolanır ve sinir uyarısıyla ekzositozla salınır.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Kolinerjik", "Sinaps", "Nörotransmitter"],
+        "tags": [
+          "Farmakoloji",
+          "Kolinerjik",
+          "Sinaps",
+          "Nörotransmitter"
+        ],
         "story_hint": "💡 HİKAYE: 'Chat' uygulaması gibi düşün — ChAT enzimi iki malzemeyi (Kolin + AsetilCoA) 'chat'leştirerek (birleştirerek) ACh mesajını üretir. Mesaj gönderilmeden önce vezikül kutusuna konur."
       },
       {
@@ -22,7 +27,11 @@
         "answer": "[[M1]]: SSS, mide (asit salgısı↑); [[M2]]: kalp (HR↓, iletim↓); [[M3]]: düz kas (kontraksiyon), bezler (sekresyon↑), göz (miyozis, akomodasyon).",
         "explanation": "M1 — nöronal reseptör, gastrik asit salgısını artırır, SSS'de öğrenme/hafızada rol oynar. M2 — kardiyak reseptör; SA nod hızını düşürür, AV iletime yavaşlatır; negatif kronotropi ve dromotropi. M3 — bronş, mesane, GİS düz kasında kasılma; tükürük, lakrimal, ter bezlerinde sekresyon artışı; gözde sfinkter pupilla kasılması (miyozis) ve silyer kas kasılması (akomodasyon).",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Kolinerjik", "Muskarinik Reseptörler"],
+        "tags": [
+          "Farmakoloji",
+          "Kolinerjik",
+          "Muskarinik Reseptörler"
+        ],
         "story_hint": "💡 HİKAYE: M1=Mide (1 mide var), M2=Myokard (2 oda gibi kulakçık-karıncık), M3=Müköz bezler ve Mide Düz Kası (3'lü: bez, göz, düz kas). 'M123 — Mide, Myokard, Mukoza!'"
       },
       {
@@ -31,7 +40,12 @@
         "answer": "Atropin M3 blokajıyla [[midriyazis]] (pupil genişlemesi) ve [[siklopleji]] (akomodasyon felci) yapar; göz içi basıncı artırır.",
         "explanation": "Atropin muskarinik M3 reseptörlerini bloke ederek sfinkter pupilla kasını ve silier kasını gevşetir. Midriyazis ve siklopleji oluşur, dolayısıyla yakını görmek güçleşir. GİB artabileceğinden dar açılı glokomda kontrendikedir. Klinik kullanım: fundus muayenesi öncesi midriyazis elde etmek, üveit tedavisinde silispazm.",
         "difficulty": "Kolay",
-        "tags": ["Farmakoloji", "Antikolinerjik", "Atropin", "Göz"],
+        "tags": [
+          "Farmakoloji",
+          "Antikolinerjik",
+          "Atropin",
+          "Göz"
+        ],
         "story_hint": "💡 HİKAYE: Atropin gözde 'çöl sıcağı' yaratır — pupil 'kurak çöl gibi' genişler (midriyazis), göz 'uzağa bakar' (siklopleji). Dar açılı glokomda yasak, çünkü kapı (açı) zaten dar!"
       },
       {
@@ -40,7 +54,13 @@
         "answer": "[[SLUDGE]] bulguları (Salivation, Lacrimation, Urination, Defecation, GI distress, Emesis) görülür; tedavide [[atropin]] + [[pralidoksim]] kullanılır.",
         "explanation": "Organofosfatlar asetilkolinesterazı irreversibl inhibe eder; ACh birikimi hem muskarinik hem nikotinik etkiler yaratır. Muskarinik: SLUDGE + bronkospazm + miozis. Nikotinik: fasikülasyon, paralizi, taşikardi. Santral: nöbet, koma. Tedavi: Atropin muskarinik etkileri giderir (önce solunum kurtarılır), pralidoksim enzimi reaktive eder (erken verilmezse 'aging' olur ve etki kaybolur).",
         "difficulty": "Zor",
-        "tags": ["Farmakoloji", "Zehirlenme", "Organofosfor", "Atropin", "Pralidoksim"],
+        "tags": [
+          "Farmakoloji",
+          "Zehirlenme",
+          "Organofosfor",
+          "Atropin",
+          "Pralidoksim"
+        ],
         "story_hint": "💡 HİKAYE: Organofosfor saldırısında vücut 'sel altında kalır' — her delik akar (SLUDGE). Atropin 'barajı kapatır', pralidoksim ise 'pompa tamircisi' gibi enzimi onarır. Ama tamirci geç kalırsa (aging), motor bozulur!"
       },
       {
@@ -49,7 +69,12 @@
         "answer": "Süksinilkolin [[depolarize edici]] nöromüsküler blokördür; etkisi [[psödokolinesteraz]] ile geri döndürülemez, önce fasikülasyon sonra paralizi yapar.",
         "explanation": "Süksinilkolin Nm reseptörüne bağlanır ve ACh gibi depolarizan etki yapar; ancak psödokolinesteraz tarafından yavaş yıkıldığı için uzamış depolarizasyon oluşur. Fasikülasyon → paralizi. Etki 5-10 dk sürer. Yan etkiler: hiperkalemi (yanık, ezilme sendromu, uzun süreli immobilizasyonda kontraindike), malign hipertermi, bradikardi. Non-depolarize blokerler (vekuronyum, rokuronyum) ise kompetitif antagonisttir ve neostigminle geri döndürülebilir.",
         "difficulty": "Zor",
-        "tags": ["Farmakoloji", "Nöromüsküler Blokaj", "Süksinilkolin", "Anestezi"],
+        "tags": [
+          "Farmakoloji",
+          "Nöromüsküler Blokaj",
+          "Süksinilkolin",
+          "Anestezi"
+        ],
         "story_hint": "💡 HİKAYE: Süksinilkolin kapıya 'düzme anahtar' sokar — önce kapı titrer (fasikülasyon), sonra kilitlenir (paralizi). Anahtarı çıkarmak için enzim (psödokolinesteraz) lazım, yoksa kapı kilitli kalır. Non-depolarizanlar ise 'kilidi değiştirir' ve neostigmin geri alabilir."
       },
       {
@@ -58,7 +83,13 @@
         "answer": "[[Pilokarpin]] doğrudan M3 agonistidir; [[açık açılı glokom]] tedavisinde ve [[Sjögren sendromu]]nda kserostomi tedavisinde kullanılır.",
         "explanation": "Pilokarpin direkt muskarinik agonist olarak sfinkter pupilla kasını kasarak (miyozis) trabeküler ağ üzerinde gerilimi azaltır ve aköz sıvı drenajını artırır — göz içi basıncı düşer. Sjögren sendromunda ağız ve göz kuruluğu için oral pilokarpin sekresyonu uyarır. Yan etki: terleme, bronkospazm, GİS uyarısı.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Kolinerjik", "Pilokarpin", "Glokom", "Sjögren"],
+        "tags": [
+          "Farmakoloji",
+          "Kolinerjik",
+          "Pilokarpin",
+          "Glokom",
+          "Sjögren"
+        ],
         "story_hint": "💡 HİKAYE: Pilokarpin 'sulama sistemi' gibi çalışır — gözde drenaj kanalını açar (glokom), ağızda tükürük kanallarını açar (Sjögren). 'Pilo = pilot, gözü açık tutar!'"
       },
       {
@@ -67,7 +98,12 @@
         "answer": "[[Pridostigmin]] (ve neostigmin) reversible kolinesteraz inhibitörü olarak ACh'yi artırır; NMJ'deki nikotin reseptörlerine etki eder.",
         "explanation": "Miastenia graviste otoimmün süreçle Nm reseptörlerine karşı antikorlar oluşur. Tedavide kolinesteraz inhibitörleri (pridostigmin, neostigmin, edrofonium) ACh'nin yıkımını engelleyerek NMJ'deki konsantrasyonu artırır ve iletimi güçlendirir. Edrofonium (kısa etkili) tanı testi için kullanılır (Tensilon testi). Muskarinik yan etkiler için atropin birlikte verilebilir.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Kolinerjik", "Miastenia Gravis", "Pridostigmin"],
+        "tags": [
+          "Farmakoloji",
+          "Kolinerjik",
+          "Miastenia Gravis",
+          "Pridostigmin"
+        ],
         "story_hint": "💡 HİKAYE: Miasteniada kaslar 'şarj bitmiş telefon' gibi — pridostigmin 'şarj adaptörü' olarak ACh'yi biriktirip kasları tekrar çalıştırır. Edrofonium ise '5 dakikalık güç bankası', sadece test için!"
       },
       {
@@ -76,7 +112,13 @@
         "answer": "[[İpratropium]] kısa etkili (6-8 saat), [[tiotropium]] uzun etkili (24 saat) inhale antikolinerjiklerdir; KOAH'ta bronkodilatasyon sağlar, sistemik yan etkisi azdır.",
         "explanation": "Her ikisi de kuaterner amonyum bileşiği olduğundan inhale edildiğinde GİS'ten ve kan-beyin bariyerinden geçiş minimumdur — sistemik atropin yan etkileri görülmez. KOAH'ta M3 blokajıyla bronş düz kasını gevşetir, sekresyonu azaltır. Tiotropium M2'ye bağlanma süresi kısa (neden istenmeyen M2 blokajı az), M3'e uzun süreli bağlanır; günde tek doz kullanımına imkan verir.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Antikolinerjik", "KOAH", "İpratropium", "Tiotropium"],
+        "tags": [
+          "Farmakoloji",
+          "Antikolinerjik",
+          "KOAH",
+          "İpratropium",
+          "Tiotropium"
+        ],
         "story_hint": "💡 HİKAYE: İpratropium = 'Günde birkaç kez öpücük' (kısa 6-8 saat). Tiotropium = 'Günde tek öpücük ama tüm gün sürer' (24 saat). İkisi de 'kuaterner' — sistemik geçemezler, sinir sistemi rahat!"
       },
       {
@@ -85,7 +127,12 @@
         "answer": "Düşük dozda atropin önce [[bradikardi]] yapar (presinaptik M1 blokajı, ACh salınımı artar); yüksek dozda ise [[taşikardi]] (SA nod M2 blokajı).",
         "explanation": "Atropinin paradoks bradikardisi: düşük dozlarda presinaptik muskarinik M1 reseptörleri bloke olur, ACh'nin oto-inhibisyonu kalkar, ACh salınımı artar → SA noda baskı → geçici bradikardi. Yüksek dozda ise SA nodundaki M2 reseptörleri bloke olur → vagal baskı ortadan kalkar → taşikardi. Klinik: bradikardi tedavisinde yeterli doz (0.5 mg ve üzeri) verilmelidir.",
         "difficulty": "Zor",
-        "tags": ["Farmakoloji", "Atropin", "Paradoks Bradikardi", "Kalp Hızı"],
+        "tags": [
+          "Farmakoloji",
+          "Atropin",
+          "Paradoks Bradikardi",
+          "Kalp Hızı"
+        ],
         "story_hint": "💡 HİKAYE: Atropinin kalpteki paradoksu: az içersen (düşük doz) 'sarhoş gibi yavaşlar' (ACh artar), çok içersen 'koşmaya başlar' (M2 blokajı). İlaç dozunun önemi: 'Az iyi değil, doğru olan iyi!'"
       },
       {
@@ -94,7 +141,13 @@
         "answer": "[[Botulinum toksini]] SNARE proteinlerini keserek [[ACh vezikül ekzositozunu]] engeller; spastisite, hiperhidroz, blefarospazm, kozmetik amaçlarla kullanılır.",
         "explanation": "Botulinum toksini (Clostridium botulinum) SNARE proteinlerinden SNAP-25, VAMP/sinaptobrevin veya sintaksini proteolitik olarak inaktive eder — ACh presinaptik vezikülle kaynaşamaz, salınamaz. NMJ'de flassid paralizi. Klinik kullanım: servikal distoni, blefarospazm, spastisite, aşırı terleme (hiperhidroz), kronik migren profilaksisi, kozmetik kırışıklık tedavisi. Etki 3-6 ay sürer.",
         "difficulty": "Zor",
-        "tags": ["Farmakoloji", "Botulinum", "SNARE", "NMJ", "Spastisite"],
+        "tags": [
+          "Farmakoloji",
+          "Botulinum",
+          "SNARE",
+          "NMJ",
+          "Spastisite"
+        ],
         "story_hint": "💡 HİKAYE: Botulinum toksini 'makas gibi' SNARE proteinini keser — vezikül kapısı hiç açılamaz. ACh 'içeride hapsolur'. Klinik: 'Botu = boş tüp' — kas boşalır, gevşer. Kozmetikten migrene kadar işe yarar!"
       }
     ],
@@ -187,7 +240,12 @@
         "answer": "[[Alfa-1]]: vasküler düz kas (vazokonstriksiyon), göz (midriyazis); [[Alfa-2]]: presinaptik (NA inhibisyon), trombosit; [[Beta-1]]: kalp (↑HR, ↑kontraktilite), böbrek (renin↑); [[Beta-2]]: bronş (relaksasyon), uterus, iskelet kası damarları.",
         "explanation": "Alfa-1 aktivasyonu: damar kasılır, kan basıncı yükselir. Alfa-2 aktivasyonu: presinaptik otoreseptörlerde NA salınımı azalır (oto-inhibisyon); trombositlerde agregasyon artar. Beta-1 aktivasyonu: pozitif kronotropi, inotropi, dromotropi; böbrekte renin salınımı artar. Beta-2 aktivasyonu: bronkodilatasyon, uterus gevşemesi, glikojenoliz artar (hiperglisemi), vazodilatasyon.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Adrenerjik", "Reseptörler", "Sempatik Sistem"],
+        "tags": [
+          "Farmakoloji",
+          "Adrenerjik",
+          "Reseptörler",
+          "Sempatik Sistem"
+        ],
         "story_hint": "💡 HİKAYE: 'Alpha-1=Arterleri kasar, Alpha-2=Autoinhibe eder, Beta-1=Birak kalbi koşsun, Beta-2=Bronşları aç!' Şehir haritası gibi: A1 yolları tıkar, A2 kavşağı düzenler, B1 motoru hızlandırır, B2 tüneli açar."
       },
       {
@@ -196,7 +254,12 @@
         "answer": "Düşük doz adrenalin: beta etki baskın → [[taşikardi]], [[vazodilatasyon]] (diastol düşer); yüksek doz: alfa etki baskın → [[vazokonstriksiyon]] (diastol yükselir), nabız basıncı genişler.",
         "explanation": "Adrenalin alfa-1, alfa-2, beta-1 ve beta-2 reseptörlerin hepsine bağlanır. Düşük dozda beta-2 aracılı vasküler dilatasyon baskın; kalp hızı artar (beta-1), diyastolik basınç düşer. Yüksek dozda alfa-1 aracılı vazokonstriksiyon baskın olur; hem sistolik hem diyastolik basınç yükselir. Kalp hızı vagal refleksle düşebilir (refleks bradikardi). Anafilaktik şokta 0.3-0.5 mg IM adrenalin hayat kurtarıcıdır.",
         "difficulty": "Zor",
-        "tags": ["Farmakoloji", "Adrenalin", "Kardiyovasküler", "Doz-Yanıt"],
+        "tags": [
+          "Farmakoloji",
+          "Adrenalin",
+          "Kardiyovasküler",
+          "Doz-Yanıt"
+        ],
         "story_hint": "💡 HİKAYE: Adrenalinin 'Jekyll ve Hyde' kişiliği: az dozda 'Hyde gibi Beta hakim' — kalp koşar, damar açılır; fazla dozda 'Jekyll gibi Alpha hakim' — her şey kasılır, basınç tırmanır. Anafilakside 'Doğru dozda iyi polis!'"
       },
       {
@@ -205,7 +268,12 @@
         "answer": "[[Fenilefrin]] saf alfa-1 agonist (vazokonstriksiyon, refleks bradikardi); [[psödoefedrin]] karma etkili (NA salınımı + direkt adrenerjik) dekonjestif olarak kullanılır.",
         "explanation": "Fenilefrin: saf alfa-1 agonist, doğrudan vasküler düz kası kasar. Oftalmolojide midriyazis için damla, hipotansiyonda IV ajan, nazal dekonjestan olarak kullanılır. Beta etkisi olmadığından refleks bradikardi görülür. Psödoefedrin: karma mekanizmalı sempatomimatik; presinaptik NA salınımını artırır + direkt adrenerjik etki. Sinüzit ve üst solunum yolu tıkanıklığında kullanılır. MAO inhibitörleriyle şiddetli hipertansif kriz riski vardır.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Adrenerjik", "Fenilefrin", "Psödoefedrin"],
+        "tags": [
+          "Farmakoloji",
+          "Adrenerjik",
+          "Fenilefrin",
+          "Psödoefedrin"
+        ],
         "story_hint": "💡 HİKAYE: Fenilefrin = 'Saf alfa savaşçısı' — sadece damarları kasar, kalbe dokunmaz. Refleks: kalp yavaşlar (baroreseptör). Psödoefedrin = 'Çift kollu dekonjestan' hem depoya (presinaptik) dokunur hem direkt çalışır. MAOI ile KESİNLİKLE birleşme!"
       },
       {
@@ -214,7 +282,12 @@
         "answer": "[[Selektif beta-1 blokörler]] (metoprolol, atenolol, bisoprolol) astımlı hastalarda tercih edilir; [[non-selektif beta blokörler]] (propranolol, karvedilol) beta-2 blokajı nedeniyle bronkospazm yapabilir.",
         "explanation": "Kardiyoselektif (beta-1 selektif) blokörler düşük dozda bronş üzerindeki beta-2 reseptörleri nispeten korur. Ancak yüksek dozda selektivite kaybolur. Karvedilol alfa-1 + beta-1 + beta-2 bloker (non-selektif + alfa blokaj) olup kalp yetmezliğinde mortiliteyi azaltır. Propranolol lipofiliği sayesinde SSS'e girer (migren profilaksisi, esansiyel tremor). Beta blokörler diyabetik hastalarda hipoglisemi belirtilerini (taşikardi) maskeleyebilir.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Beta Blokör", "Kardiyoselektiflik", "Astım"],
+        "tags": [
+          "Farmakoloji",
+          "Beta Blokör",
+          "Kardiyoselektiflik",
+          "Astım"
+        ],
         "story_hint": "💡 HİKAYE: Selektif beta-1 blokörler 'kalp uzmanı doktor gibi': sadece kalple ilgilenir, akciğere karışmaz. Non-selektif ise 'genel pratisyen' — her yere müdahale eder, astımlı hastada sorun çıkar. Metoprolol=Metro (sadece kalp rotası), Propranolol=Propeller (her yere gider)."
       },
       {
@@ -223,7 +296,12 @@
         "answer": "[[Klonidin]] merkezi alfa-2 agonist olarak SSS'de sempatik çıkışı azaltır; aniden kesilirse [[rebound hipertansiyon]] gelişebilir.",
         "explanation": "Klonidin beyin sapındaki (locus coeruleus) alfa-2 reseptörlerini uyararak sempatik deşarjı inhibe eder — periferik NA salınımı azalır, kan basıncı düşer, kalp hızı yavaşlar. Ani ilaç kesilmesi halinde sempatik tonus aniden yükselir ve şiddetli rebound hipertansiyon (kriz) gelişebilir. Bu nedenle klonidin tedavisi yavaşça azaltılarak kesilmelidir. Ayrıca opioid yoksunluğu ve DEHB (çocuklarda) tedavisinde kullanılır.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Klonidin", "Alfa-2 Agonist", "Rebound Hipertansiyon"],
+        "tags": [
+          "Farmakoloji",
+          "Klonidin",
+          "Alfa-2 Agonist",
+          "Rebound Hipertansiyon"
+        ],
         "story_hint": "💡 HİKAYE: Klonidin beyin sapına 'yatıştırıcı' mesaj gönderir — sempatik sistem uyur, tansiyon düşer. Aniden kesilirse sistem 'uyku sersemliğiyle' aşırı tepki verir — rebound kriz! 'Klonidin = Kademeli kesilmeli, yoksa KLONLAR gibi saldırır!'"
       },
       {
@@ -232,7 +310,13 @@
         "answer": "Düşük doz ([[1-5 mcg/kg/dk]]): D1/D2 böbrek ve mezenterik vazodilatasyon; orta doz ([[5-10 mcg/kg/dk]]): beta-1 etkisi, kardiyak output↑; yüksek doz ([[>10 mcg/kg/dk]]): alfa-1, vazokonstriksiyon.",
         "explanation": "Dopaminin etkileri doza bağlıdır: 1-5 mcg/kg/dk: dopaminerjik reseptörler (D1) — renal ve mezenterik vazodilatasyon (idrar çıkışı artabilir). 5-10 mcg/kg/dk: beta-1 agonizm baskın — pozitif inotropi ve kronotropi, kardiyak output artar. >10 mcg/kg/dk: alfa-1 baskın — periferik vazokonstriksiyon, afterload artar. Şokta kullanılır; ancak noradrenalin septik şokta dopaminin önüne geçmiştir (aritmojenisite az).",
         "difficulty": "Zor",
-        "tags": ["Farmakoloji", "Dopamin", "Şok", "Doz-Etki", "Yoğun Bakım"],
+        "tags": [
+          "Farmakoloji",
+          "Dopamin",
+          "Şok",
+          "Doz-Etki",
+          "Yoğun Bakım"
+        ],
         "story_hint": "💡 HİKAYE: Dopamin 'doz asistanı': az doz (1-5) = böbrek dostu (D1); orta doz (5-10) = kalp pompacısı (beta); yüksek doz (>10) = damar kasıcı (alfa). 'Dopa-min = Doz'a göre min/max!' Şok protokolünde doz titrasyon şeması ezberle!"
       },
       {
@@ -241,7 +325,13 @@
         "answer": "[[Prazosin]] kompetitif/reversibl alfa-1 selektif blokör (HT, BPH); [[fenoksibenzamin]] non-kompetitif/irreversibl non-selektif alfa blokör (feokromositoma preoperatif).",
         "explanation": "Prazosin alfa-1 selektif ve reversibl blokördür; hipertansiyon ve benign prostat hiperplazisinde (BPH) kullanılır. İlk doz fenomeni önemlidir (ortostatik hipotansiyon riski). Fenoksibenzamin alfa-1 ve alfa-2'yi ireversible olarak bloke eder; feokromositoma ameliyatı öncesinde katekolamin kaynaklı hipertansiyon krizini önlemek için kullanılır. Feokromositomada önce alfa blokör, sonra beta blokör başlanır (sıra önemli — önce beta verilirse paradoks hipertansiyon gelişir).",
         "difficulty": "Zor",
-        "tags": ["Farmakoloji", "Alfa Blokör", "Prazosin", "Fenoksibenzamin", "Feokromositoma"],
+        "tags": [
+          "Farmakoloji",
+          "Alfa Blokör",
+          "Prazosin",
+          "Fenoksibenzamin",
+          "Feokromositoma"
+        ],
         "story_hint": "💡 HİKAYE: Prazosin 'kiralık araba' (reversibl, geri verilebilir); fenoksibenzamin 'satın alınan araba' (irreversibl, geri alınamaz). Feokromositomada fenoksibenzamin gerekli çünkü operasyon sırasında katekolamin fırtınasına karşı 'kalıcı zırh' lazım. Sıra: ÖNCE alfa koru, SONRA beta!"
       },
       {
@@ -250,7 +340,12 @@
         "answer": "[[Dobutamin]] beta-1 selektif agonisttir; [[akut kalp yetmezliği]] ve kardiyojenik şokta kullanılır, pozitif inotropi sağlar, vazokonstriksiyon yapmaz.",
         "explanation": "Dobutamin ağırlıklı olarak beta-1 agonist etkiyle miyokard kontraktilitesini artırır; hafif beta-2 ve alfa-1 etkisi vardır (net etkide vazodilatasyon eğilimi). Dopaminden farkı: dobutamin vazokonstriksiyon yapmaz, afterloadu artırmaz — kalp yetmezliğinde öne çıkar. Kardiyojenik şokta, akut kalp yetmezliğinde, stres EKO testlerinde kullanılır. Taşikardi ve aritmi yan etkileridir.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Dobutamin", "Kalp Yetmezliği", "İnotropi"],
+        "tags": [
+          "Farmakoloji",
+          "Dobutamin",
+          "Kalp Yetmezliği",
+          "İnotropi"
+        ],
         "story_hint": "💡 HİKAYE: Dobutamin = 'Kalp antrenörü': sadece kalbe koçluk yapar (beta-1), damarları karıştırmaz. Dopamin ise 'doz bağımlı sporcu' — dozu artınca damarları da kasar. Kardiyojenik şokta dobutamin = 'Kalbi çalıştır ama sıkmadan!'"
       },
       {
@@ -259,7 +354,13 @@
         "answer": "[[Salbutamol]] beta-2 selektif agonist; [[astım]] ve KOAH'ta bronkodilatasyon, [[hiperkalemi]]de acil K+ düşürme, [[prematür doğum]] önlemede tokoliz amacıyla kullanılır.",
         "explanation": "Salbutamol (albuterol) beta-2 reseptörleri uyararak bronş düz kasını gevşetir, hızlı (4-6 saat) etki gösterir. İnhale tercih edilir, sistemik yan etkiler minimal. Hiperkalemide IV salbutamol K+'ı hücre içine iter (beta-2 aktivasyonu Na/K-ATPaz'ı uyarır). Tokoliz: uterin düz kası beta-2 aracılı gevşetir. Yan etkiler: tremor (iskelet kası beta-2), taşikardi, hipokalemi (K+ hücre içine girer), hiperglisemi.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Salbutamol", "Beta-2 Agonist", "Astım", "Hiperkalemi"],
+        "tags": [
+          "Farmakoloji",
+          "Salbutamol",
+          "Beta-2 Agonist",
+          "Astım",
+          "Hiperkalemi"
+        ],
         "story_hint": "💡 HİKAYE: Salbutamol 'üçlü kaptan': 1) Astım — bronş kapısını açar; 2) Hiperkalemi — K+'ı hücre içine park eder; 3) Erken doğum — uterusu yatıştırır. 'Salbu = Solunum, potaSYUM, uteruS — 3'lü SBS!'"
       },
       {
@@ -268,7 +369,13 @@
         "answer": "[[Propranolol]] non-selektif beta blokör; hipertansiyon, anjina, aritmiler, [[migren profilaksisi]], [[esansiyel tremor]], feokromositoma (alfa sonrası) endikasyonlarında kullanılır; astım ve KOAH'ta kontrendike.",
         "explanation": "Propranolol yüksek lipofilliği sayesinde kan-beyin bariyerini geçer — migren profilaksisi ve esansiyel tremorda etkilidir. Beta-1 blokajı: kalp hızı ve kontraktiliteyi azaltır (hipertansiyon, anjina, aritmiler). Beta-2 blokajı: bronkospazm (astım/KOAH kontraindikasyon), periferik vazokonstriksiyon, hipoglisemi belirtilerini maskeler. İntrinsik sempatomimetik aktivitesi (ISA) yoktur. Diyabetik hastalarda dikkatli kullanım gerekir.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Propranolol", "Beta Blokör", "Migren", "Tremor"],
+        "tags": [
+          "Farmakoloji",
+          "Propranolol",
+          "Beta Blokör",
+          "Migren",
+          "Tremor"
+        ],
         "story_hint": "💡 HİKAYE: Propranolol 'kara kutu gibi — her yere girer' (lipofil, SSS'e geçer): kalbi yavaşlatır, migren ağrısını engeller, tremorutekinleştirir. Ama astımlıda 'bronş kapısını kilitler' — yasak! 'Pro-pranolol = Çok yönlü ama astımda YASAK!'"
       }
     ],
@@ -361,7 +468,12 @@
         "answer": "[[ACE inhibitörleri]] anjiotensin I → II dönüşümünü ve [[bradikinin]] yıkımını engeller; bradikinin birikimi [[kuru öksürük]] ve anjiyoödeme neden olur.",
         "explanation": "Anjiotensin dönüştürücü enzim (ACE) hem anjiotensin I'i aktif anjiotensin II'ye çevirir hem de bradikinin ve substans P'yi inaktive eder. ACE inhibitörleri bu enzimi bloke edince anjiotensin II azalır (vazodilatation, aldosteron azalır) ve bradikinin birikir. Bradikinin solunum yollarını uyararak kuru öksürüğe neden olur (hastaların %10-20'sinde). Anjiyoödem nadir ama ciddi bir komplikasyondur. Bu durumda ARB (losartan) geçilmelidir — ARB bradikinin yıkımını etkilemez.",
         "difficulty": "Kolay",
-        "tags": ["Farmakoloji", "ACE İnhibitörü", "Bradikinin", "Kuru Öksürük"],
+        "tags": [
+          "Farmakoloji",
+          "ACE İnhibitörü",
+          "Bradikinin",
+          "Kuru Öksürük"
+        ],
         "story_hint": "💡 HİKAYE: ACE inhibitörü 'ikili görev yapan enzimi' bloke eder: hem anjiotensin fabrikası kapanır (iyi) hem de bradikinin çöp kutusu kapanır (kötü — öksürük birikir). 'Kuru öksürük = Bradikinin birikmesi = ACE bloke!' ARB'ye geç: bradikinin yolu açık kalır."
       },
       {
@@ -370,7 +482,12 @@
         "answer": "[[ARB'ler]] (losartan, valsartan) AT1 reseptörünü bloke eder; bradikinin birikimi olmadığından [[öksürük yapmaz]]; ACE inhibitörü intoleransında ve diyabetik nefropatide tercih edilir.",
         "explanation": "ARB'ler (angiotensin receptor blokers) anjiotensin II'nin AT1 reseptörüne bağlanmasını engeller — vazodilatasyon, aldosteron azalması. Bradikinin metabolizmasını etkilemediğinden öksürük ve anjiyoödem görülmez (anjiyoödem çok nadir). Diyabetik nefropatide (özellikle tip 2 diyabet ile proteinüri) renoprotektif etkisi kanıtlanmıştır. Kalp yetmezliğinde ACE inhibitörü ile birlikte kullanımdan kaçınılmalıdır (kombinasyon hipotansiyon, hiperkalemi riski artırır). Gebelikte KONTRAENDİKE (tıpkı ACE inhibitörleri gibi).",
         "difficulty": "Kolay",
-        "tags": ["Farmakoloji", "ARB", "Losartan", "Diyabetik Nefropati"],
+        "tags": [
+          "Farmakoloji",
+          "ARB",
+          "Losartan",
+          "Diyabetik Nefropati"
+        ],
         "story_hint": "💡 HİKAYE: ARB = 'ACE inhibitörünün sessiz kardeşi' — aynı sistemi bloke eder ama bradikinin yoluna dokunmaz, öksürük olmaz. 'ACE öksürttü, ARB sessiz çalışır.' Diyabetik böbrek için ikisi de koruyucu, ama gebelikte ikisi de yasak!"
       },
       {
@@ -379,7 +496,12 @@
         "answer": "[[Dihidropiridinler]] (amlodipin, nifedipin) periferik damarlar üzerine etkili; [[non-dihidropiridinler]] (verapamil, diltiazem) kalp üzerine etkili (HR↓, iletim↓).",
         "explanation": "Dihidropiridin KKB'ler (amlodipin, nifedipin, felodipin) vasküler düz kasta baskın etki gösterir → periferik vazodilatation, afterload azalır. Kalp hızını refleks taşikardiyle artırabilir. Non-dihidropiridinler (verapamil: en güçlü kardiyak, diltiazem: orta) SA nod ve AV iletimi yavaşlatır — negatif kronotropi ve dromotropi. Verapamil beta blokörle KOMBİNASYON YAPILMAZ (komplet kalp bloğu riski). Diltiazem anjina tedavisinde kullanışlı. Amlodipin ilk seçenek antihipertansif.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Kalsiyum Kanal Blokör", "Amlodipin", "Verapamil"],
+        "tags": [
+          "Farmakoloji",
+          "Kalsiyum Kanal Blokör",
+          "Amlodipin",
+          "Verapamil"
+        ],
         "story_hint": "💡 HİKAYE: KKB ailesi: DHP'ler 'damar uzmanı' (amlodipin = kan basıncı), Non-DHP'ler 'kalp uzmanı' (verapamil = ritim). 'Amlo=Arterleri açar, Vera=Ventriküler hızı yavaşlatır.' Verapamil + beta blokör = 'iki frenci aynı anda basmak' — kalp durabilir!"
       },
       {
@@ -388,7 +510,13 @@
         "answer": "[[Furosemid]] Henle kulpunun çıkan kalın kolunda [[Na-K-2Cl kotransporterını]] inhibe eder; [[hipokalemi]], [[hipomagnezemi]], [[ototoksisite]] ve [[hiperürisemi]] yapabilir.",
         "explanation": "Furosemid en güçlü diüretiklerdendir. Henle kulpunda Na-K-2Cl kotransporteri bloke edilince su, Na, K, Mg, Ca atılımı artar. Yan etkiler: hipokalemi (K+ atılımı artışı), hipomagnezemi, metabolik alkaloz, hiperürisemi (ürik asit sekresyonu azalır), ototoksisite (özellikle aminoglikozidlerle). Hiperkalsiüri (tiyazidlerin aksine Ca atılımı artırır — böbrek taşı tedavisinde kullanılmaz). Endikasyonlar: pulmoner ödem, KKY, nefrotik sendrom, hiperkalemi, hiperkalsemi.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Furosemid", "Loop Diüretik", "Hipokalemi", "Ototoksisite"],
+        "tags": [
+          "Farmakoloji",
+          "Furosemid",
+          "Loop Diüretik",
+          "Hipokalemi",
+          "Ototoksisite"
+        ],
         "story_hint": "💡 HİKAYE: Furosemid 'agresif çöp toplayıcısı' — Henle kulpunun Na-K-2Cl kapısını kırıp her şeyi atar: su, K, Mg, Ca. 'FuroSEMİD = SEMİ-kamyon dolusu atar!' Yan etkiler: HİPO-K, HİPO-Mg, HIPER-ürisemi, OTOTOKS. Tiyazidden farkı: Ca'yı atar (tiyazid tutar)."
       },
       {
@@ -397,7 +525,13 @@
         "answer": "[[Tiyazidler]] (hidroklorotiyazid) distal tübülde [[NaCl kotransportörünü]] inhibe eder; [[hipokalemi]], [[hiperglisemi]], [[hiperlipidemi]], [[hiperürisemi]] yapar; [[hiperkalsemi]] ve [[böbrek taşı]] tedavisinde faydalı.",
         "explanation": "Tiyazidler distal tübülde NaCl taşıyıcısını bloke eder; orta güçlü diüretiklerdir. Metabolik yan etkiler: hipokalemi (metabolik alkaloz), hiperglisemi (insülin sekresyonunu azaltır), hiperlipidemi (LDL artar, HDL azalır), hiperürisemi. Hiperkalsemi: Ca reabsorpsiyonunu artırır — hiperkalsemi riski. Paradoks: furosemid Ca atar, tiyazid Ca tutar. İdiopatik hiperkalsiüri (kalsiyum oksalat taşı) nedeniyle kullanılan ilaçlar: tiyazid diüretikler (Ca atılımını azaltır). Hipertansiyon tedavisinde maliyet etkin ve etkili ilk seçenek.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Tiyazid", "Hidroklorotiyazid", "Böbrek Taşı", "Hipokalemi"],
+        "tags": [
+          "Farmakoloji",
+          "Tiyazid",
+          "Hidroklorotiyazid",
+          "Böbrek Taşı",
+          "Hipokalemi"
+        ],
         "story_hint": "💡 HİKAYE: Tiyazid = '4H + 1B' yan etkisi: Hipokalemi, Hiperglisemi, Hiperlipidemi, Hiperürisemi + Hiperkalsemi (Ca'yı tutar!). 'Tiya-ZİD = ZIT: furosemid Ca atar, tiyazid Ca tutar.' Böbrek taşında tiyazid: Ca'yı idrara vermez, taş oluşmaz."
       },
       {
@@ -406,7 +540,12 @@
         "answer": "[[Spironolakton]] aldosteron antagonisti olarak toplayıcı tübülde Na tutulumunu engeller; [[potasyum koruyucu]] diüretiktir; kalp yetmezliğinde mortaliteyi azaltır.",
         "explanation": "Spironolakton toplayıcı tübül ve toplayıcı kanallardaki mineralokortikoid reseptörlerini bloke eder — Na atılımı artar, K tutulur (K-sparing). Aldosteronun kardiyak fibrozis ve yeniden şekillenme etkilerine karşı da koruyuculuğu vardır. RALES çalışmasıyla şiddetli kalp yetmezliğinde mortaliteyi azalttığı kanıtlanmıştır. Yan etki: hiperkalemi (ACE inhibitörü ile birlikte kullanımda dikkat), jinekomasti (androjen reseptör antagonizması), menstrüel düzensizlik. Eplerenon daha selektif (jinekomasti az).",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Spironolakton", "Aldosteron Antagonisti", "Kalp Yetmezliği"],
+        "tags": [
+          "Farmakoloji",
+          "Spironolakton",
+          "Aldosteron Antagonisti",
+          "Kalp Yetmezliği"
+        ],
         "story_hint": "💡 HİKAYE: Spironolakton 'kalkan diyetisyen' — aldosteron 'Na tut-K at' emrini dinlemez, tersini yapar (Na at-K tut). Kalp yetmezliğinde 'fibrozisi önleyerek kalbi genişlemekten kurtarır'. Yan etki: erkekte 'jinekomasti = öfkeli hormonal karışma.'"
       },
       {
@@ -415,7 +554,12 @@
         "answer": "[[Hidralasin]] arteriolar düz kası direkt gevşeterek [[afterloadu azaltır]]; [[gebelik hipertansiyonu]] ve [[kalp yetmezliğinde]] (nitrat ile kombine) kullanılır.",
         "explanation": "Hidralasin direkt arteriolar vazodilatör; mekanizma net bilinmemekle birlikte KATP kanalları ve NO yolu ilişkilidir. Venüller üzerinde etkisi sınırlıdır (afterload azalır, preload değişmez). Yan etki: refleks taşikardi, Na tutulumu, lupus benzeri sendrom (uzun süreli yüksek dozda). Gebelikte güvenli (ACE ve ARB kontrendike). İsosorbid dinitrat + hidralasin kombinasyonu Siyah Amerikalı kalp yetmezliği hastalarında mortaliteyi azaltır (A-HeFT çalışması).",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Hidralasin", "Gebelik Hipertansiyonu", "Kalp Yetmezliği"],
+        "tags": [
+          "Farmakoloji",
+          "Hidralasin",
+          "Gebelik Hipertansiyonu",
+          "Kalp Yetmezliği"
+        ],
         "story_hint": "💡 HİKAYE: Hidralasin 'doğrudan ateşli vazodilatör' — arterleri gevşetir, refleks olarak kalp hızlanır. Gebede ACE/ARB yasak, hidralasin güvenli. Uzun süre kullanınca 'lupus benzeri çıkar' — uyarı! Nitrat ile kombinasyonu 'Afrika-Amerikalı kalp yetmezliği' için özel endikasyon."
       },
       {
@@ -424,7 +568,13 @@
         "answer": "[[Nitratlar]] NO (nitrik oksit) salarak [[cGMP arttırır]], venöz ve arteriolar dilatation yapar; [[8-12 saatlik nitrat-free dönem]] ile tolerans önlenir.",
         "explanation": "Organik nitratlar (nitrogliserin, isosorbid mononitrat, isosorbid dinitrat) endotelde ve düz kasta NO'ya dönüşür; guanilat siklaz aktivasyonuyla cGMP artar, düz kas gevşer. Önce venöz dilatasyon (preload ↓), yüksek dozda arteriolar dilatasyon (afterload ↓). Anjina pektöriste nitrogliserin sublingualdir (1-2 dk etkili). Tolerans: sürekli kullanımda nitrat toleransı gelişir. Çözüm: günde 8-12 saatlik nitrat-serbest dönem. Yan etki: baş ağrısı (serebral dilatasyon), hipotansiyon, refleks taşikardi. Sildenafil ile KOMBİNASYON YASAK (ciddi hipotansiyon).",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Nitrat", "Anjina", "Tolerans", "cGMP"],
+        "tags": [
+          "Farmakoloji",
+          "Nitrat",
+          "Anjina",
+          "Tolerans",
+          "cGMP"
+        ],
         "story_hint": "💡 HİKAYE: Nitrat 'NO fabrikası' açar — cGMP üretir, damar gevşer. Prelodu önce indirir (venöz), afterloadu sonra. 'Nitrat 7/24 kullanılmaz — 8 saat mola lazım, yoksa body tolerans geliştirir.' Sildenafil ile birlikte = 'iki gevşetici birden = tansiyon sıfır!' YASAK!"
       },
       {
@@ -433,7 +583,13 @@
         "answer": "Gebelikte güvenli: [[metildopa]], [[labetolol]], [[nifedipin]], [[hidralasin]]; kontrendike: [[ACE inhibitörleri]], [[ARB'ler]] (fetal renal disgenezi, oligohidramnios).",
         "explanation": "Gebelikte kan basıncı yönetimi önemlidir. Güvenli ilaçlar: Metildopa (merkezi alfa-2 agonist, gebelikte altın standart uzun yıllardır); labetolol (alfa+beta blokör, IV preeklampsi tedavisinde); nifedipin (oral, preeklampsi); hidralasin (IV akut kriz). Kontrendike: ACE inhibitörleri ve ARB — 2. ve 3. trimesterde fetal böbrek gelişimini bozar, oligohidramnios, fetal renal tübüler displazisi, neonatal ölüm. 1. trimesterde de kaçınılmalı (kardiyovasküler malformasyon riski).",
         "difficulty": "Kolay",
-        "tags": ["Farmakoloji", "Gebelik", "Antihipertansif", "Metildopa", "ACE İnhibitörü"],
+        "tags": [
+          "Farmakoloji",
+          "Gebelik",
+          "Antihipertansif",
+          "Metildopa",
+          "ACE İnhibitörü"
+        ],
         "story_hint": "💡 HİKAYE: Gebelikte 'SAFE4': Metildopa (eski güvenilir bakan), Labetolol (alfanın+betanın sakin karışımı), Nifedipin (damar açıcı), Hidralasin (acil artileryal genişletici). ACE/ARB 'fetal böbreği mahveder' — 'Aces destroy baby kidneys!' Ezber: MLNH = Mamma'ya Layık Nifedipin+Hidralasin."
       },
       {
@@ -442,7 +598,13 @@
         "answer": "KKY+post-MI: [[beta blokör]]+[[ACEi]]+[[spironolakton]]; DM nefropati: [[ACEi/ARB]]; astım: [[KKB/ACEi]] (beta blokör kaçın); izole sistolik HT yaşlı: [[tiyazid/KKB]].",
         "explanation": "JNC kılavuzlarına göre zorlayıcı endikasyonlar: Kalp yetmezliği: ACE inhibitörü, beta blokör (carvedilol/metoprolol), spironolakton, ARB. Post-MI: beta blokör, ACE inhibitörü (kardiyak remodeling önler). Diyabetik nefropati: ACEi veya ARB (proteinüriyi azaltır, renal koruma). Astım: beta blokör kontrendike; KKB veya ACEi tercih. İzole sistolik hipertansiyon (yaşlı): tiyazid diüretik veya uzun etkili dihidropiridin KKB. İnme sonrası: ACEi + tiyazid (PROGRESS çalışması).",
         "difficulty": "Zor",
-        "tags": ["Farmakoloji", "Antihipertansif", "Kompelling Endikasyon", "Kalp Yetmezliği", "Diyabet"],
+        "tags": [
+          "Farmakoloji",
+          "Antihipertansif",
+          "Kompelling Endikasyon",
+          "Kalp Yetmezliği",
+          "Diyabet"
+        ],
         "story_hint": "💡 HİKAYE: 'Zorlayıcı endikasyon = kişiye özel elbise': KKY'de 'ACE+Beta+Spiro üçlüsü', Diyabetik böbrekte 'ACE/ARB koruyucu kalkan', Astımda 'beta blokör yasaklı alan'. 'KKY=3'lü takım, DM=ACE/ARB, Astım=KKB tercih!' Sınav favori sorusu!"
       }
     ],
@@ -512,7 +674,7 @@
         "options": [
           "A) Kan glukoz düzeyi",
           "B) Serum potasyum düzeyi",
-          "C") Serum kalsiyum düzeyi",
+          "C) Serum kalsiyum düzeyi",
           "D) Karaciğer enzim düzeyleri",
           "E) Serum sodyum düzeyi"
         ],
@@ -535,7 +697,13 @@
         "answer": "[[Beta-laktamlar]] penisilin bağlayan proteinlere (PBP) bağlanarak [[hücre duvarı sentezini]] inhibe eder; direnç: [[beta-laktamaz]] üretimi, PBP değişimi (MRSA), dış membran geçirgenliği azalması.",
         "explanation": "Beta-laktamlar (penisilinler, sefalosporinler, karbapenemler, monobaktamlar) peptidoglikan zincir sentezinde transpeptidazları (PBP) inhibe eder — hücre duvarı sentezi durur, bakteri osmotik strese yenik düşer. Direnç mekanizmaları: 1) Beta-laktamaz üretimi: enzim beta-laktam halkasını hidrolize eder (beta-laktamaz inhibitörleri: klavulanat, sulbaktam, tazobaktam ile aşılır). 2) PBP2a: MRSA'da mecA geni kodlar, tüm beta-laktamlara direnç. 3) Gram-negativlarda porin kanalı kaybı. 4) Efluks pompaları.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Antibiyotik", "Beta-laktam", "Direnç", "MRSA"],
+        "tags": [
+          "Farmakoloji",
+          "Antibiyotik",
+          "Beta-laktam",
+          "Direnç",
+          "MRSA"
+        ],
         "story_hint": "💡 HİKAYE: Beta-laktam 'duvar ustasının elini bağlar' (PBP blokajı). Direnç: bakteri ya 'makası çıkarır' (beta-laktamaz), ya 'yeni el kullanır' (PBP2a-MRSA), ya 'kapıyı kapatır' (porin kaybı). Klavulanat = 'makas kırıcı' — beta-laktamaz önler."
       },
       {
@@ -544,7 +712,13 @@
         "answer": "[[Aminoglikozidler]] (gentamisin, amikasin, tobramisin) 30S ribozomal alt birime bağlanarak [[protein sentezini]] inhibe eder; majör yan etki: [[nefrotoksisite]] ve [[ototoksisite]].",
         "explanation": "Aminoglikozidler 30S ribozomal alt birime bağlanır, hatalı mRNA okunmasına (yanlış amino asit eklenmesi) ve protein sentezi blokajına yol açar. Konsantrasyon-bağımlı öldürme özelliği vardır (günde tek doz dozaj avantajlı). Aerobik gram-negatif bakterilere etkilidir (anaerobik aktivasyona enerji bağımlı membran geçişi gerektirir — anaerobik ortamda etkisiz). Ototoksisite: vestibüler (denge bozukluğu) ve koklear (işitme kaybı). Nefrotoksisite: proksimal tübül hasarı, geri dönüşlü. Furosemid ile kombinasyon ototoksisiteyi artırır.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Aminoglikozid", "Ototoksisite", "Nefrotoksisite", "30S"],
+        "tags": [
+          "Farmakoloji",
+          "Aminoglikozid",
+          "Ototoksisite",
+          "Nefrotoksisite",
+          "30S"
+        ],
         "story_hint": "💡 HİKAYE: Aminoglikozid '30S'e saldırır' — protein sentez hattını bozar. 'Amino = kulak ve böbreği sever!' (ototoks + nefrotoks). Furosemid ile 'çift kulak saldırısı' — yasak kombinasyon! Anaerobik: 'enerji yok, giriş yok' — etkisiz."
       },
       {
@@ -553,7 +727,13 @@
         "answer": "[[Makrolidler]] (eritromisin, azitromisin, klaritromisin) 50S ribozomal alt birime bağlanarak [[translokasyonu]] engeller; [[CYP3A4 inhibisyonu]] nedeniyle ciddi ilaç etkileşimleri (eritromisin, klaritromisin).",
         "explanation": "Makrolidler 50S'e bağlanarak peptidil transferaz aktivitesini inhibe eder ve translokasyonu durdurur — protein sentezi durur, bakteriostatik etki (yüksek dozda bakterisidal). Eritromisin ve klaritromisin güçlü CYP3A4 inhibitörüdür — warfarin, statinler (rabdomiyoliz), terfenadin (QT uzaması, torsades), siklosporin düzeyleri artar. Azitromisin CYP450 etkileşimi minimumdur. Eritromisin motilin reseptörünü uyarır — gastroparezi tedavisinde kullanılır. Legionella, Mycoplasma, Chlamydia, Bordetella pertüssis tedavisinde kullanılır.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Makrolid", "CYP3A4", "İlaç Etkileşimi", "50S"],
+        "tags": [
+          "Farmakoloji",
+          "Makrolid",
+          "CYP3A4",
+          "İlaç Etkileşimi",
+          "50S"
+        ],
         "story_hint": "💡 HİKAYE: Makrolid '50S'in translokasyon bandını keser' — protein yürüyüşü durur. Eritromisin = 'CYP3A4 dedektifi' — her ilacı tutar! Warfarin+statin+eritromisin = kaos (kanama+rabdomiyoliz). Azitromisin = 'sakin, etkileşmez.' 'EritroCYP = CYP killer!'"
       },
       {
@@ -562,7 +742,13 @@
         "answer": "[[Florokinolonlar]] (siprofloksasin, levofloksasin) DNA giraz (gram-negatif) ve [[topoizomeraz IV]] (gram-pozitif) inhibe ederek [[DNA replikasyonunu]] durdurur; gram-negatif, atipik, bazı gram-pozitif etki.",
         "explanation": "Florokinolonlar (kinolonlar) bakteriyel DNA replikasyonunda kritik role sahip enzimleri inhibe eder: gram-negatiflerde DNA giraz (topoizomeraz II), gram-pozitiflerde topoizomeraz IV. Konsantrasyon-bağımlı bakterisidal. Gram-negatiflere (E. coli, Pseudomonas, Salmonella), atipik organizmalara (Legionella, Mycoplasma, Chlamydia) etkindir. Yan etkiler: QT uzaması, tendinit/tendon rüptürü (özellikle Aşil, kortikosteroidle), fotodermatit, çocukta kıkırdak hasarı (gebelik, çocuk kontrendike). Artrit ve retinal dekolman riski.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Florokinolon", "DNA Giraz", "Topoizomeraz", "Tendinit"],
+        "tags": [
+          "Farmakoloji",
+          "Florokinolon",
+          "DNA Giraz",
+          "Topoizomeraz",
+          "Tendinit"
+        ],
         "story_hint": "💡 HİKAYE: Florokinolon 'DNA sarmal polisi' — giraz ve topoizomeraz IV'ü tutuklayarak DNA'yı kilitler. Yan etki: 'Tendon aşil kırığı' (özellikle yaşlıda + steroid) ve QT uzaması. 'Floro = Floş — Flaş tendinit!' Çocuk + gebe: 'Kıkırdak koruyucu alan — giriş yasak!'"
       },
       {
@@ -571,7 +757,13 @@
         "answer": "[[Vankomisin]] gram-pozitif bakterilere (özellikle [[MRSA]], enterokoklar) karşı kullanılır; hızlı IV infüzyonla [[Red Man Sendromu]] (histamin salınımı, yüz-boyun kızarması) gelişebilir.",
         "explanation": "Vankomisin D-Ala-D-Ala peptidoglikan segmentine bağlanarak hücre duvarı sentezini inhibe eder (beta-laktamların aksine PBP üzerine değil, substrata bağlanır). Gram-pozitif spektrum: MRSA, koagülaz-negatif stafilokoklar, enterokoklar, Clostridium difficile (oral, sistemik kullanılmaz). Red Man Sendromu: alerjik reaksiyon değil, histamin salınımına bağlı non-immünolojik reaksiyondur; yavaş infüzyon (60-90 dk) ve antihistaminik profilaksisiyle önlenir. Nefrotoksisite ve ototoksisite yan etkileri.",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Vankomisin", "MRSA", "Red Man Sendromu", "Hücre Duvarı"],
+        "tags": [
+          "Farmakoloji",
+          "Vankomisin",
+          "MRSA",
+          "Red Man Sendromu",
+          "Hücre Duvarı"
+        ],
         "story_hint": "💡 HİKAYE: Vankomisin 'D-Ala-D-Ala kilidi kapatan büyük anahtar' — PBP'yi değil substratı bloke eder. MRSA savaşçısı! Hızlı infüze edersen 'Red Man gelir': yüz-boyun kıpkırmızı, histamin fırtınası. 'Vanko = Yavaş git, kızarıklık önle!'"
       },
       {
@@ -580,7 +772,12 @@
         "answer": "[[Kloramfenikol]] 50S'e bağlanarak peptidil transferaz inhibe eder; [[Gray Baby Sendromu]] (yenidoğan — gluküronidasyon yetersizliği) ve [[aplastik anemi]] önemli yan etkileri.",
         "explanation": "Kloramfenikol 50S ribozomal alt birime bağlanarak peptidil transferazı inhibe eder; bakteriostatik (bazılarına bakterisidal). Geniş spektrumlu; Salmonella typhi, meningit, Rickettsia enfeksiyonlarında kullanılır. Gray Baby Sendromu: yenidoğanda gluküronidasyon kapasitesi yetersiz → kloramfenikol birikir → kardiyovasküler kollaps, gri renk. Aplastik anemi: idiosinkratik, doz-bağımsız, nadir ama ölümcül. Bu nedenle kullanımı çok kısıtlıdır.",
         "difficulty": "Zor",
-        "tags": ["Farmakoloji", "Kloramfenikol", "Gray Baby", "Aplastik Anemi"],
+        "tags": [
+          "Farmakoloji",
+          "Kloramfenikol",
+          "Gray Baby",
+          "Aplastik Anemi"
+        ],
         "story_hint": "💡 HİKAYE: Kloramfenikol '50S peptidil transferazı durdurur' — protein fabrikası kapanır. Yenidoğanda 'gri bebek sendromu' çünkü karaciğer enzimi (gluküronidasyon) gelişmemiş — ilaç birikir, bebek grilenir! 'Klor = Grey zone. Aplastik anemi = kırmızı alarm!'"
       },
       {
@@ -589,7 +786,13 @@
         "answer": "[[Tetrasiklinler]] 30S'e bağlanarak aminoaçil-tRNA bağlanmasını engeller; [[atipik pnömoni]], Lyme, brucella, klamidya, Rickettsiya endikasyonlarında kullanılır; [[gebelik]] ve [[çocuk (<8 yaş)]] kontrendike.",
         "explanation": "Tetrasiklinler 30S ribozomal alt birime bağlanarak aminoaçil-tRNA'nın A bölgesine bağlanmasını engeller — protein sentezi durur. Doksisiklin en sık kullanılan (uzun yarı ömür, hepatik atılım avantajlı). Endikasyonlar: Mycoplasma, Chlamydia, Rickettsia, Borrelia (Lyme), Brucella, kolera, akne. Kontrendikasyonlar: Gebelik (fetal kemik/diş gelişimini bozar), 8 yaş altı çocuk (diş sarılığı, kemik büyümesi baskı). İlaç etkileşimi: Ca, Mg, Al, Fe içeren preparatlar bağlanmayı azaltır (aynı anda alınmamalı).",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Tetrasiklin", "Doksisiklin", "Atipik Pnömoni", "Gebelik"],
+        "tags": [
+          "Farmakoloji",
+          "Tetrasiklin",
+          "Doksisiklin",
+          "Atipik Pnömoni",
+          "Gebelik"
+        ],
         "story_hint": "💡 HİKAYE: Tetrasiklin '30S'e çift duvar örer' — tRNA giremez, protein yapılamaz. 'MCLRB = Mycoplasma, Chlamydia, Lyme, Rickettsiya, Brucella' — 5 atipik düşman için. Gebelik + çocuk (<8) YASAK: 'Dişler sarılaşır, kemikler küçülür!'"
       },
       {
@@ -598,7 +801,13 @@
         "answer": "[[Metronidazol]] anaerobik bakteriler ve protozoalarda [[DNA zincir kırığı]] yapar; [[Clostridium difficile]], [[Bacteroides fragilis]], [[Giardia]], [[Trichomonas]], [[amebiyaz]] tedavisinde kullanılır.",
         "explanation": "Metronidazol anaerobik ortamda (ferredoksin aracılığıyla) indirgenerek sitotoksik nitrozo radikaller oluşturur ve DNA'da zincir kırığına yol açar. Sadece anaerobik bakteriler ve protozoalarda etkindir. Endikasyonlar: C. difficile kolit (oral), Bacteroides enfeksiyonları (batın içi, beyin absesi), Giardia, Trichomonas vaginalis, amip enfeksiyonları. Antabus (disülfiram) benzeri reaksiyon: alkol ile birlikte alındığında yüz kızarması, bulantı, hipotansiyon — alkol yasak!",
         "difficulty": "Orta",
-        "tags": ["Farmakoloji", "Metronidazol", "Anaerobik", "C. difficile", "Disülfiram"],
+        "tags": [
+          "Farmakoloji",
+          "Metronidazol",
+          "Anaerobik",
+          "C. difficile",
+          "Disülfiram"
+        ],
         "story_hint": "💡 HİKAYE: Metronidazol 'anaerobik ortamın suikastçısı' — sadece oksijensiz ortamda devşirilen silahla (nitrozo radikal) DNA'yı keser. 'Metro = Yalnız anaeroblarla savaşır.' Alkol içersen 'metro-alkol kavgası' — yüz kızarır, kusarsın. 'METRO + ALKOL = KAVGA!'"
       },
       {
@@ -607,7 +816,13 @@
         "answer": "MRSA tedavisinde [[vankomisin]] (IV), [[linezolid]], [[daptomisin]], [[tigesiklin]] ve [[trimetoprim-sülfametoksazol]] (toplum kökenli MRSA) kullanılır.",
         "explanation": "MRSA (Metisilin dirençli S. aureus) tüm beta-laktamlara direnç gösterir (mecA geni — PBP2a). Tedavi: Hastane kaynaklı MRSA: vankomisin (IV, altın standart) veya alternatif olarak daptomisin, linezolid, tigesiklin. Toplum kaynaklı MRSA (CA-MRSA): TMP-SMX, klindamisin, doksisiklin genellikle duyarlıdır. Linezolid: 50S ribozom inhibitörü, aylarca kullanımda trombositopeni ve optik nöropati yapabilir. Daptomisin: hücre membranını depolarize eder — pnömonide inaktive edilir (pulmoner sürfaktan), kullanılmaz.",
         "difficulty": "Zor",
-        "tags": ["Farmakoloji", "MRSA", "Vankomisin", "Linezolid", "Daptomisin"],
+        "tags": [
+          "Farmakoloji",
+          "MRSA",
+          "Vankomisin",
+          "Linezolid",
+          "Daptomisin"
+        ],
         "story_hint": "💡 HİKAYE: MRSA 'beta-laktam zırhı giyen süper asker' — PBP2a sayesinde her penisiline güler. Ona karşı 'özel kuvvetler': Vankomisin (D-Ala kapısını kapar), Linezolid (50S'i kilitler), Daptomisin (membrandan bomba). Ama Dapto akciğerde 'sürfaktan ile sinir olur' — pnömoni yasak!"
       },
       {
@@ -616,7 +831,13 @@
         "answer": "[[Rifampisin]] bakteriyel [[RNA polimerazı]] inhibe eder; güçlü [[CYP450 indükleyicisi]] olarak oral kontraseptifler, warfarin, antiretroviraller, siklosporin düzeylerini düşürür.",
         "explanation": "Rifampisin beta-beta' alt ünitesine bağlanarak bakteriyel RNA polimerazı inhibe eder — transkripsiyon durur. Mikobakteri (TB, lepra), MRSA (kombinasyon), N. meningitidis profilaksisi için kullanılır. Rifampisin güçlü CYP450 (CYP3A4, 2C9, vb.) indükleyicisidir — birçok ilacın plazma düzeyini düşürür: oral kontraseptif (gebelik riski!), warfarin (INR düşer), kalp nakli ilaçları (siklosporin), HIV ilaçları (proteaz inhibitörleri), kortikosteroidler. Vücut salgıları turuncu renge döner (idrar, gözyaşı, tükürük) — hastayı önceden uyar.",
         "difficulty": "Zor",
-        "tags": ["Farmakoloji", "Rifampisin", "RNA Polimeraz", "CYP450 İndüksiyonu", "Tüberküloz"],
+        "tags": [
+          "Farmakoloji",
+          "Rifampisin",
+          "RNA Polimeraz",
+          "CYP450 İndüksiyonu",
+          "Tüberküloz"
+        ],
         "story_hint": "💡 HİKAYE: Rifampisin 'RNA polimeraz polisi' — transkripsiyon bekçisini tutuklayarak TB'yi durdurur. Ama aynı zamanda 'CYP450 fabrikasını hız artırır' — diğer ilaçlar hızla parçalanır. 'Rifa = Rifayet eder, ilaçları eritir!' Vücut salgıları turuncu — 'Turuncu uyarı: OKP etkinliği sıfır!'"
       }
     ],

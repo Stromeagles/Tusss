@@ -1,0 +1,1412 @@
+{
+  "id": "mikrobiyoloji_vaka_100",
+  "subject": "Mikrobiyoloji",
+  "chapter": "Vaka Soruları",
+  "topic": "Klinik Mikrobiyoloji Vakaları",
+  "sub_topic": "Enfeksiyon Hastalıkları Vakaları",
+  "content_summary": "Klinik bulgular üzerinden etken tanımlamayı test eden 100 mikrobiyoloji vaka sorusu.",
+  "flashcards": [],
+  "tus_spots": [],
+  "clinical_cases": [
+    {
+      "id": "mvak-001",
+      "case": "Vaka: 62 yaşında erkek hasta, aniden başlayan yüksek ateş (39.8°C), şiddetli üşüme-titreme, prodüktif öksürük ve plöritik göğüs ağrısı ile başvuruyor. PA akciğer grafisinde sağ alt lobda lobar konsolidasyon izleniyor. Balgam Gram boyasında Gram-pozitif diplokoklar görülüyor. Optochin diskine duyarlı koloni üremesi saptanıyor.",
+      "options": [
+        "A) Staphylococcus aureus",
+        "B) Streptococcus pneumoniae",
+        "C) Klebsiella pneumoniae",
+        "D) Haemophilus influenzae",
+        "E) Legionella pneumophila"
+      ],
+      "correct_answer": "B) Streptococcus pneumoniae",
+      "explanation": "Streptococcus pneumoniae toplum kökenli pnömoninin en sık nedenidir. Ani başlangıç, üşüme-titreme, lobar konsolidasyon ve Gram-pozitif diplokok görünümü klasik bulgulardır. Optochin duyarlılığı S. pneumoniae'yi diğer alfa-hemolitik streptokoklardan ayırır. S. aureus pnömonisi influenza sonrası gelişir ve kavite yapar. Klebsiella özellikle alkoliklerde görülür, mukoid koloni ve 'currant jelly' balgam ile karakterizedir. Legionella'da hiponatremi ve idrar antijen testi pozitifliği öne çıkar.",
+      "story_hint": "💡 HİKAYE: 'Pneumo = Pnömoni Ustası' — Ani üşüme-titreme, lobar konsolidasyon, Gram(+) diplokok + optochin duyarlı = S. pneumoniae. Yaşlı, alkolsüz, toplumdan gelen klasik pnömoni vakası."
+    },
+    {
+      "id": "mvak-002",
+      "case": "Vaka: 22 yaşında üniversite öğrencisi, 2 haftadır süren kuru öksürük, hafif ateş (38.1°C) ve halsizlik şikayetiyle başvuruyor. Fizik muayenede pnömoni bulgularına rağmen akciğer grafisinde bilateral yaygın infiltratlar izleniyor. Soğuk aglutinin testi pozitif bulunuyor. Önceki hafta aynı yurtta kalan 3 öğrencide de benzer tablo görülmüş.",
+      "options": [
+        "A) Streptococcus pneumoniae",
+        "B) Legionella pneumophila",
+        "C) Mycoplasma pneumoniae",
+        "D) Chlamydophila pneumoniae",
+        "E) Pneumocystis jirovecii"
+      ],
+      "correct_answer": "C) Mycoplasma pneumoniae",
+      "explanation": "Mycoplasma pneumoniae atipik pnömoninin en sık nedenidir. Genç yaşta, kapalı ortamlarda (yurt, kışla) salgın yapması, radyolojik bulguların klinik bulgulardan daha ağır görünmesi (radyolojik-klinik dissosiyasyon) ve soğuk aglutinin pozitifliği tanıyı destekler. Kuru öksürük (köpek öksürüğü) karakteristiktir. S. pneumoniae'de lobar konsolidasyon ve Gram(+) diplokok görülür. Legionella'da hiponatremi ve otel/klima maruziyeti öne çıkar. PCP bağışıklığı baskılanmış hastalarda görülür.",
+      "story_hint": "💡 HİKAYE: 'Yurt Öksürüğü' — Genç, kuru öksürük, X-ray klinikten kötü görünüyor + soğuk aglutinin = Mycoplasma. Hücresi yok (hücre duvarı yok), bu yüzden beta-laktam tutmaz!"
+    },
+    {
+      "id": "mvak-003",
+      "case": "Vaka: 55 yaşında erkek hasta, 5 gün önce bir otelde kalan, şimdi yüksek ateş (40°C), nefes darlığı, öksürük ve konfüzyon ile başvuruyor. Laboratuvarda sodyum 128 mEq/L (hiponatremi), ALT yüksekliği ve idrar testinde antijen pozitifliği saptanıyor. PA akciğer grafisinde multilobar infiltratlar görülüyor.",
+      "options": [
+        "A) Streptococcus pneumoniae",
+        "B) Mycoplasma pneumoniae",
+        "C) Legionella pneumophila",
+        "D) Chlamydophila psittaci",
+        "E) Coxiella burnetii"
+      ],
+      "correct_answer": "C) Legionella pneumophila",
+      "explanation": "Legionella pneumophila otel/hastane su sistemleri ve klima soğutma kulelerinde üreyen bir bakteri olup salgın pnömoniye yol açar. Hiponatremi, karaciğer enzim yüksekliği, konfüzyon ve idrar antijen testi pozitifliği tanıya yönlendirir. Gram ile boyanmaz, Buffered Charcoal Yeast Extract (BCYE) agarda ürer. Tedavide azitromisin veya florokinolon kullanılır. S. pneumoniae'de lobar konsolidasyon ve hiponatremi beklenmez. Mycoplasma'da soğuk aglutinin pozitifliği öne çıkar.",
+      "story_hint": "💡 HİKAYE: 'Otel Klima Kazası' — Otel + klima + hiponatremi + idrar antijen (+) = Legionella. Klima suyunu sever, idrardan yakalanır!"
+    },
+    {
+      "id": "mvak-004",
+      "case": "Vaka: 4 yaşında aşısız erkek çocuk, 2 haftadır devam eden paroksismal öksürük atakları ile başvuruyor. Öksürük atakları hava çekme sesiyle (whoop) bitiyor ve sonrasında kusma oluyor. Tam kan sayımında lenfosit hakimiyetiyle lökositoz (18.000/mm³) saptanıyor. Ailenin başka çocukları aşılandığı halde bu çocuk aşılanmamış.",
+      "options": [
+        "A) Haemophilus influenzae",
+        "B) Bordetella pertussis",
+        "C) Streptococcus pneumoniae",
+        "D) Mycoplasma pneumoniae",
+        "E) RSV"
+      ],
+      "correct_answer": "B) Bordetella pertussis",
+      "explanation": "Bordetella pertussis boğmaca hastalığının etkenidir. Aşısız çocuklarda paroksismal öksürük atakları, inspiratuar whoop sesi (boğmaca sesi) ve öksürük sonrası kusma tipik bulgulardır. Lenfositozla seyreden lökositoz karakteristiktir (nötrofil değil, lenfosit hakimiyeti). Tanı nazofarenks kültürü veya PCR ile konulur. Tedavide azitromisin kullanılır. RSV'de bronşiolit tablosu ve wheezing öne çıkar. Mycoplasma'da kuru öksürük ve radyolojik-klinik dissosiyasyon görülür.",
+      "story_hint": "💡 HİKAYE: 'Boğmaca Whoop' — Aşısız çocuk + paroksismal öksürük + inspiratuar whoop + lenfositoz = Bordetella pertussis. 'Whoop' sesini duyunca Bordetella düşün!"
+    },
+    {
+      "id": "mvak-005",
+      "case": "Vaka: 38 yaşında erkek hasta, 3 aydır süren öksürük, gece terlemesi, kilo kaybı (8 kg) ve ara sıra kanlı balgam şikayetiyle başvuruyor. PA akciğer grafisinde sağ apekste kavite ve infiltrasyonlar görülüyor. Balgamın aside dirençli boyaması (Ehrlich-Ziehl-Neelsen) pozitif bulunuyor.",
+      "options": [
+        "A) Streptococcus pneumoniae",
+        "B) Klebsiella pneumoniae",
+        "C) Mycobacterium tuberculosis",
+        "D) Staphylococcus aureus",
+        "E) Aspergillus fumigatus"
+      ],
+      "correct_answer": "C) Mycobacterium tuberculosis",
+      "explanation": "Mycobacterium tuberculosis klasik tüberküloz bulgularıyla karşımıza çıkmaktadır: kronik öksürük, gece terlemesi, kilo kaybı, hemoptizi ve apeks kavitesi. EZN boyamasında aside dirençli kırmızı basiller görülmesi tanıyı destekler. Kesin tanı kültür ile konulur (Löwenstein-Jensen besiyeri). Tedavide 2 ay HRZE + 4 ay HR protokolü uygulanır. S. aureus pnömonisi daha akut seyirli ve kavite yapabilse de EZN boyaması negatiftir. Aspergillus aspergillozu bağışıklığı baskılanmış hastalarda görülür ve halo işareti karakteristiktir.",
+      "story_hint": "💡 HİKAYE: 'Apeks Üçlüsü' — Gece terlemesi + kilo kaybı + apeks kavitesi + EZN(+) = TBC. 'Apekste oturan gece terleyen' = Tüberküloz!"
+    },
+    {
+      "id": "mvak-006",
+      "case": "Vaka: 14 aylık bebek, kış ayında başlayan hızlı nefes alma, hışıltılı solunum (wheezing) ve hafif ateş (37.8°C) ile başvuruyor. Muayenede subkostal retraksiyonlar ve ekspiratuvar wheezing saptanıyor. PA grafisinde hiperinflasyon görülüyor. Nazofarenks sürüntüsünde RSV antijeni pozitif bulunuyor.",
+      "options": [
+        "A) Influenza A virüsü",
+        "B) Parainfluenza virüsü",
+        "C) RSV (Respiratuar Sinsityal Virüs)",
+        "D) Adenovirüs",
+        "E) Rhinovirüs"
+      ],
+      "correct_answer": "C) RSV (Respiratuar Sinsityal Virüs)",
+      "explanation": "RSV, 2 yaş altı bebeklerde bronşiolit ve pnömoninin en sık nedenidir. Kış aylarında salgın yapar. Ekspiratuvar wheezing, hiperinflasyon ve alt solunum yolu tutulumu karakteristiktir. Tanı nazofarenks örneklerinden antijen testi veya PCR ile konulur. Parainfluenza virüsü krup (laringotrakeobronşit) tablosuna yol açar ve 'havlayan köpek' öksürüğü görülür. Influenza genel semptomlar (miyalji, baş ağrısı) ile daha ağır seyreder. RSV'de palivizumab ile profilaksi yapılabilir.",
+      "story_hint": "💡 HİKAYE: 'Kış Bebeği' — 2 yaş altı + kış + wheezing + bronşiolit = RSV. Bebeklerin kış düşmanı, hiperinflasyon yapan virüs!"
+    },
+    {
+      "id": "mvak-007",
+      "case": "Vaka: 3 yaşında aşısız kız çocuk, yüksek ateş (39.5°C), yutma güçlüğü, siyalore (salya akması) ve solunum sıkıntısı ile acile getiriliyor. Muayenede çocuk öne eğilerek oturuyor ve boynunu hareket ettiremiyor. Lateral boyun grafisinde 'başparmak işareti (thumb sign)' görülüyor.",
+      "options": [
+        "A) Streptococcus pyogenes",
+        "B) Staphylococcus aureus",
+        "C) Haemophilus influenzae tip b",
+        "D) Corynebacterium diphtheriae",
+        "E) Streptococcus pneumoniae"
+      ],
+      "correct_answer": "C) Haemophilus influenzae tip b",
+      "explanation": "Haemophilus influenzae tip b (Hib), aşısız çocuklarda akut epiglottit'in klasik nedenidir. Ani başlangıçlı yüksek ateş, şiddetli yutma güçlüğü, siyalore ve tripod pozisyonu (öne eğilerek oturma) karakteristik bulgulardır. Lateral boyun grafisinde 'thumb sign' (başparmak işareti) epiglot ödemiyle oluşur. Laringoskopi solunum yolu tıkanıklığını tetikleyebileceği için dikkatli yapılmalıdır. C. diphtheriae'de gri-beyaz membran ve boğa boynu görünümü izlenir. S. pyogenes'de daha hafif farenjit tablosu görülür.",
+      "story_hint": "💡 HİKAYE: 'Başparmak Epiglot' — Aşısız çocuk + drooling + thumb sign + tripod pozisyon = H. influenzae tip b epiglottit. Lateral grafide başparmak = tehlike!"
+    },
+    {
+      "id": "mvak-008",
+      "case": "Vaka: 45 yaşında erkek hasta, bir hafta önce geçirdiği influenza tablosunun ardından tekrar yükselen ateş, plöritik göğüs ağrısı ve bol pürülan balgam ile başvuruyor. PA akciğer grafisinde hava-sıvı seviyesi içeren kavite görülüyor. Balgam kültüründe koagülaz-pozitif, katalaz-pozitif Gram-pozitif kümeler halinde koklar üremekte.",
+      "options": [
+        "A) Streptococcus pneumoniae",
+        "B) Klebsiella pneumoniae",
+        "C) Staphylococcus aureus",
+        "D) Pseudomonas aeruginosa",
+        "E) Haemophilus influenzae"
+      ],
+      "correct_answer": "C) Staphylococcus aureus",
+      "explanation": "Influenza sonrası gelişen sekonder bakteriyel pnömoninin en önemli nedeni Staphylococcus aureus'tur. İnfluenza virüsü solunum epitelini hasarlar ve S. aureus için zemin hazırlar. Kavite, abse ve piyopnömotoraks S. aureus pnömonisinin komplikasyonlarıdır. Koagülaz pozitifliği S. aureus'u koagülaz-negatif stafilokoklardan ayırır. MRSA durumunda vankomisin, MSSA'da nafsilin/oksasilin kullanılır. S. pneumoniae influenza sonrası da görülebilse de kavite yapmaz. Klebsiella alkolikle pnömonisidir, 'currant jelly' balgamı vardır.",
+      "story_hint": "💡 HİKAYE: 'Influenza Sonrası Kavite' — İnfluenza geçirdi + kavite + koagülaz(+) Gram(+) kümeler = S. aureus sekonder pnömoni. Grip sonrası kötüleşme = S. aureus!"
+    },
+    {
+      "id": "mvak-009",
+      "case": "Vaka: 28 yaşında erkek hasta, 5 gün önce Hindistan'dan yurda döndükten sonra yüksek ateş (39-40°C), karın ağrısı ve ishal ile başvuruyor. Muayenede karın ön duvarında soluk pembe renkli 'rose spots' görülüyor. Nabzın ateşle orantılı yükselmemesi (rölatif bradikardi) dikkat çekiyor. Hemogram'da lökopeni saptanıyor.",
+      "options": [
+        "A) Salmonella enteritidis",
+        "B) Salmonella typhi",
+        "C) Shigella dysenteriae",
+        "D) Vibrio cholerae",
+        "E) Entamoeba histolytica"
+      ],
+      "correct_answer": "B) Salmonella typhi",
+      "explanation": "Salmonella typhi'nin neden olduğu tifo hastalığı; rölatif bradikardi, rose spots (karın ön duvarında pembe maküller), lökopeni ve 3. haftada bağırsak perforasyonu riski ile karakterizedir. Endemik bölgeden dönüş öyküsü önemlidir. Widal testi ve kan kültürü tanıda kullanılır. 3. haftada bağırsak perforasyonu en korkulan komplikasyondur. S. enteritidis hafif, kendiliğinden geçen gastroenterit yapar. Shigella kanlı-mukuslu ishal ile seyreder. Vibrio cholerae pirinç suyu görünümlü masif ishal yapar.",
+      "story_hint": "💡 HİKAYE: 'Rose Bradikardi' — Ateş var ama nabız yükselmedi + gül lekesi (rose spot) + lökopeni = S. typhi = Tifo. Ateş + bradikardi = Tifo klasiği!"
+    },
+    {
+      "id": "mvak-010",
+      "case": "Vaka: 35 yaşında kadın hasta, piknikte tavuk kebabı yedikten 12 saat sonra başlayan bulantı, kusma ve sulu ishal ile başvuruyor. Ateş yok (36.8°C). Benzer şikayetler piknikte aynı yiyeceği yiyen 6 kişide daha görülmüş. Birkaç gün içinde kendiliğinden geçiyor.",
+      "options": [
+        "A) Salmonella typhi",
+        "B) Shigella sonnei",
+        "C) Salmonella enteritidis",
+        "D) Vibrio cholerae",
+        "E) Clostridium perfringens"
+      ],
+      "correct_answer": "C) Salmonella enteritidis",
+      "explanation": "Salmonella enteritidis kümes hayvanlarından (tavuk, yumurta) bulaşan ve 12-48 saat kuluçka süresi olan bir gastroenterit etkenidir. Ateşsiz veya hafif ateşli seyredebilir, ishal, bulantı ve kusma ile kendiliğinden iyileşir. Antibiyotik tedavisi rutin olarak önerilmez; hatta taşıyıcılık süresini uzatabilir. Bağışıklığı normal kişilerde destekleyici tedavi yeterlidir. S. typhi'de rose spots ve rölatif bradikardi görülür. C. perfringens'te kuluçka süresi 8-16 saat ve özellikle et yemekleri sorumludur.",
+      "story_hint": "💡 HİKAYE: 'Tavuk Piknik Kuralı' — Tavuk + 12 saat sonra ishal + kendiliğinden geçer + antibiyotik verme = Salmonella enteritidis. Antibiyotik verme, taşıyıcılığı uzatır!"
+    },
+    {
+      "id": "mvak-011",
+      "case": "Vaka: 5 yaşında kız çocuk, 3 günlük kanlı ve mukuslu ishal, karın krampları ve tenesmus ile başvuruyor. Ateş 38.5°C. Dışkı mikroskobisinde bol lökosit görülüyor. Ailenin daha önce gittiği çocuk bakım evinde benzer vakalar saptanmış. Dışkı kültüründe laktoz negatif, H2S negatif bakteri üremesi görülüyor.",
+      "options": [
+        "A) Salmonella enteritidis",
+        "B) Vibrio cholerae",
+        "C) Shigella sonnei",
+        "D) Campylobacter jejuni",
+        "E) Yersinia enterocolitica"
+      ],
+      "correct_answer": "C) Shigella sonnei",
+      "explanation": "Shigella kanlı-mukuslu ishal, tenesmus ve bol lökositli dışkı ile karakterize dizanterinin en sık nedenidir. Çocuk bakım evleri gibi kapalı ortamlarda salgın yapar. Dışkı kültüründe laktoz negatif, H2S negatif koloniler (S. sonnei en sık izole edilen türdür). S. dysenteriae tip 1, Shiga toksin üretir ve HUS'a yol açabilir. Tedavide siprofloksasin veya azitromisin kullanılır. Salmonella'da dışkıda lökosit daha az görülür ve H2S pozitif koloni ürer. Vibrio cholerae kansız, pirinç suyu görünümünde ishal yapar.",
+      "story_hint": "💡 HİKAYE: 'Tenesmus Şigellas' — Kanlı-mukuslu ishal + tenesmus + dışkıda bol lökosit + çocuk bakımevi = Shigella. S.dysenteriae = HUS riski!"
+    },
+    {
+      "id": "mvak-012",
+      "case": "Vaka: 8 yaşında erkek çocuk, 4 gün önce az pişmiş hamburger yedikten sonra kanlı ishal başlamış. Şimdi idrar miktarı azalmış, yüzü şişmiş ve ciltte ekimozlar gelişmiş. Laboratuvarda hemoglobin 7 g/dL, trombosit 45.000/mm³, kreatinin 3.2 mg/dL saptanıyor. Periferik yaymada parçalanmış eritrositler (şistositler) görülüyor.",
+      "options": [
+        "A) Shigella dysenteriae",
+        "B) Salmonella typhi",
+        "C) Vibrio cholerae",
+        "D) Enterohemorajik E. coli O157:H7",
+        "E) Campylobacter jejuni"
+      ],
+      "correct_answer": "D) Enterohemorajik E. coli O157:H7",
+      "explanation": "EHEC O157:H7, az pişmiş hamburger ve sığır ürünleriyle bulaşan ve Shiga benzeri toksin (Verotoksin) üreten bir E. coli suşudur. Kanlı ishal sonrasında gelişen HUS triadı tanıyı koyar: mikroanjiyopatik hemolitik anemi (şistositler), trombositopeni ve akut böbrek yetmezliği. Antibiyotik kullanımı HUS riskini artırabilir! Tedavi destekleyicidir, hemodiyaliz gerekebilir. Shigella dysenteriae tip 1 de HUS yapabilse de hamburger öyküsü EHEC'i düşündürür. Kanlı ishalsiz başlayan renal yetmezlik HUS'u işaret eder.",
+      "story_hint": "💡 HİKAYE: 'Hamburger HUS Üçlüsü' — Az pişmiş hamburger + kanlı ishal + HUS (hemolitik anemi + trombositopeni + renal yetmezlik) = EHEC O157:H7. Antibiyotik verme!"
+    },
+    {
+      "id": "mvak-013",
+      "case": "Vaka: 45 yaşında erkek, Bangladeş'ten yeni dönen bir gezgin, aniden başlayan masif, pirinç suyu görünümünde sulu ishal ile başvuruyor. Günde 10-20 litre sıvı kaybı var. Ateş yok. Ciddi dehidratasyon bulguları mevcut. Dışkı mikroskobisinde lökosit yok. Hastalık bölgesinde su sisteminde sorun olduğu biliniyor.",
+      "options": [
+        "A) Shigella dysenteriae",
+        "B) Salmonella typhi",
+        "C) Rotavirus",
+        "D) Vibrio cholerae",
+        "E) Giardia lamblia"
+      ],
+      "correct_answer": "D) Vibrio cholerae",
+      "explanation": "Vibrio cholerae kolera hastalığının etkenidir. Pirinç suyu görünümünde, kansız, masif sulu ishal ve ağır dehidratasyon karakteristik bulgulardır. Dışkıda lökosit bulunmaz (non-inflamatuvar ishal). Kolera toksini adenilat siklazı aktive ederek cAMP'ı artırır ve Cl⁻ sekresyonunu uyarır. Tedavide ORS veya IV sıvı replasmanı ve doksisiklin (yetişkin) kullanılır. Shigella inflamatuvar ishal yaparak lökositli, kanlı dışkıya yol açar. Giardia malabsorpsiyona bağlı yağlı, köpüklü dışkı ile seyreder.",
+      "story_hint": "💡 HİKAYE: 'Pirinç Suyu Seli' — Masif sulu ishal + pirinç suyu + salgın bölgesi + lökositsiz dışkı = Kolera (Vibrio cholerae). Dehidrasyona dikkat!"
+    },
+    {
+      "id": "mvak-014",
+      "case": "Vaka: 72 yaşında kadın hasta, 10 gün önce toplum kökenli pnömoni nedeniyle amoksisilin-klavulanat başlanmış. Tedavinin 7. gününden itibaren günde 8-10 kez sulu ishal, karın ağrısı ve ateş (38.8°C) gelişmiş. Kolonoskopide mukozada sarı-gri renkli plaklar (psödomembranlar) görülüyor.",
+      "options": [
+        "A) Salmonella enteritidis",
+        "B) Clostridioides difficile",
+        "C) Campylobacter jejuni",
+        "D) Clostridium perfringens",
+        "E) Klebsiella oxytoca"
+      ],
+      "correct_answer": "B) Clostridioides difficile",
+      "explanation": "Clostridioides (eskiden Clostridium) difficile, antibiyotik kullanımı sonrası normal bağırsak florasının bozulmasıyla aşırı çoğalan bir bakteri olup psödomembranöz kolite yol açar. Toksin A (enterotoksin) ve Toksin B (sitotoksin) hasara yol açar. Tanı dışkıda toksin testi veya GDH antijeni ile konulur. Tedavide hafif-orta vakada metronidazol, ağır vakada oral vankomisin, tekrarlayan vakada fidaksomisin kullanılır. İlk atakta antibiyotiğin kesilmesi de önemlidir. Salmonella veya Campylobacter antibiyotik öncesi dönemde görülür.",
+      "story_hint": "💡 HİKAYE: 'Antibiyotik Sonrası Plaklı Kolon' — Antibiyotik aldı + ishal başladı + psödomembran = C. difficile. Antibiyotik, C. difficile'nin kapısını açar!"
+    },
+    {
+      "id": "mvak-015",
+      "case": "Vaka: 48 yaşında erkek hasta, 3 aydır süren epigastrik ağrı, bulantı ve zaman zaman kusma şikayetiyle başvuruyor. Endoskopide antrum bölgesinde ülser görülüyor ve biyopside üreaz testi pozitif bulunuyor. Hastanın ağzından amonyak kokusu geliyor.",
+      "options": [
+        "A) Campylobacter jejuni",
+        "B) Helicobacter pylori",
+        "C) Clostridium perfringens",
+        "D) Yersinia enterocolitica",
+        "E) Shigella flexneri"
+      ],
+      "correct_answer": "B) Helicobacter pylori",
+      "explanation": "Helicobacter pylori, peptik ülser hastalığının ve kronik gastrit'in en önemli nedendir. Üreaz enzimi üretir (üre nefes testi veya biyopside üreaz testi pozitif). Antrum ülseri ve amonyak kokusu karakteristik bulgulardır. Uzun dönemde MALT lenfoma ve gastrik adenokarsinom riski artmaktadır. Tedavide 14 günlük üçlü tedavi (PPI + klaritromisin + amoksisilin) veya dörtlü tedavi uygulanır. Eradikasyon sonrası üre nefes testi ile kontrol yapılır. Campylobacter inflamatuvar ishal yapar, gastrik ülserle ilişkisi yoktur.",
+      "story_hint": "💡 HİKAYE: 'Antrum Ülseri Amonyak' — Epigastrik ağrı + antrum ülseri + üreaz(+) = H. pylori. Ülser + MALToma riski birlikte gelir!"
+    },
+    {
+      "id": "mvak-016",
+      "case": "Vaka: 30 yaşında erkek hasta, kamp tatilinden döndükten sonra 2 haftadır süren şişkinlik, gaz, karın krampları ve yağlı, köpüklü ishal şikayetiyle başvuruyor. Dışkı mikroskobisinde armut şeklinde ikili simetrik flagellatlı organizmalar (trofozoit) görülüyor. Hastanın kampta dere suyundan içtiği öğreniliyor.",
+      "options": [
+        "A) Entamoeba histolytica",
+        "B) Cryptosporidium parvum",
+        "C) Giardia lamblia",
+        "D) Cyclospora cayetanensis",
+        "E) Isospora belli"
+      ],
+      "correct_answer": "C) Giardia lamblia",
+      "explanation": "Giardia lamblia (intestinalis), kist içeren su ve yiyeceklerle bulaşan ve duodenumu tutan bir protozoondur. Yağlı, köpüklü ishal ve malabsorpsiyon tablosu ile seyreder. Trofozoitler armut biçiminde ve ikili simetri gösterir, 'gülen yüz' görünümü vardır. Tanı dışkıda kist/trofozoit araştırması veya ELISA antijen testi ile konulur. Tedavide metronidazol kullanılır. E. histolytica kanlı-mukuslu ishal ve karaciğer absesi yapabilir. Cryptosporidium bağışıklığı baskılanmış hastalarda ağır seyreder.",
+      "story_hint": "💡 HİKAYE: 'Dere Suyu Yağlı İshal' — Kamp + dere suyu + yağlı köpüklü ishal + armut şekli trofozoit = Giardia. Gülen yüze benzeyen parazit!"
+    },
+    {
+      "id": "mvak-017",
+      "case": "Vaka: 18 aylık kız çocuğu, Aralık ayında başlayan yüksek ateş (39°C), bol kusma ve ardından başlayan sulu ishal ile başvuruyor. Dışkıda kan veya mukus yok. Hızlı antijen testi pozitif sonuç veriyor. Ebeveynler çocuğun daha önce bu hastalığa karşı aşı olmadığını belirtiyor.",
+      "options": [
+        "A) Norovirüs",
+        "B) Rotavirüs",
+        "C) Adenovirüs",
+        "D) Astrovirüs",
+        "E) Sapovirus"
+      ],
+      "correct_answer": "B) Rotavirüs",
+      "explanation": "Rotavirüs, 6-24 ay arası çocuklarda viral gastroenterit ve ishal hastalığının en sık nedenidir. Kış aylarında salgın yapar. Kusma ile başlar, ardından sulu ishal gelişir. Ateş eşlik edebilir. Hızlı antijen testi tanıda kullanılır. Aşı (oral rotavirüs aşısı) ile önlenebilir. Tedavi destekleyicidir; dehidrasyon önlenmesi esastır. Norovirüs tüm yaş gruplarını etkiler, kruvaziyer salgınları yapar. Adenovirüs ishaline ek olarak solunum yolu tutulumu da görülür.",
+      "story_hint": "💡 HİKAYE: 'Kış Bebek İshali' — Kış + 6-24 ay + önce kusma sonra ishal + antijen(+) = Rotavirus. Bebeklerin kış mide-bağırsak virüsü!"
+    },
+    {
+      "id": "mvak-018",
+      "case": "Vaka: Bir şirket pikniğinde kremalı pasta yiyen 15 kişiden 9'unda 2-4 saat içinde bulantı, kusma ve karın krampları gelişiyor. Ateş yok. Semptomlar 24 saat içinde kendiliğinden geçiyor. Pasta 8 saat oda sıcaklığında bekletilmiş. Besin kültüründe koagülaz-pozitif Gram-pozitif kümeler halinde bakteriler üremekte.",
+      "options": [
+        "A) Salmonella enteritidis",
+        "B) Staphylococcus aureus besin zehirlenmesi",
+        "C) Bacillus cereus",
+        "D) Clostridium perfringens",
+        "E) Vibrio parahaemolyticus"
+      ],
+      "correct_answer": "B) Staphylococcus aureus besin zehirlenmesi",
+      "explanation": "S. aureus besin zehirlenmesi, bakterinin oda sıcaklığında üremesiyle ısıya dayanıklı enterotoksin (A-E tipleri) üretmesi sonucu gelişir. Toksin önceden yiyeceğe geçtiğinden kuluçka süresi çok kısadır (1-6 saat). Bulantı-kusma hakimdir, ishal daha az görülür. Ateş yoktur (toksin hastalığı). Yiyeceği pişirmek toksini inaktive etmez. Salmonella'nın kuluçka süresi 12-48 saattir ve ateş görülür. B. cereus 1-6 saat kusma veya 8-16 saat ishal formu yapar. C. perfringens büyük et yemeklerinde 8-16 saat sonra ishal yapar.",
+      "story_hint": "💡 HİKAYE: 'Kremali Pasta 2 Saat' — Mayonez/krema + 1-6 saat + kusma + ateş yok = S. aureus. Toksin ısıya dayanıklı, pişirince yok olmaz!"
+    },
+    {
+      "id": "mvak-019",
+      "case": "Vaka: Çin restoranında pilav yiyen 12 kişiden 8'inde, yemekten 1-5 saat sonra bulantı ve kusma, ayrıca bazı kişilerde 8-16 saat sonra ishal gelişiyor. Pilavın dün yapılıp oda sıcaklığında bekletildiği öğreniliyor. Kültürde sporlu Gram-pozitif basil üremekte.",
+      "options": [
+        "A) Staphylococcus aureus",
+        "B) Clostridium perfringens",
+        "C) Bacillus cereus",
+        "D) Salmonella typhi",
+        "E) Listeria monocytogenes"
+      ],
+      "correct_answer": "C) Bacillus cereus",
+      "explanation": "Bacillus cereus, pirinç (pilav) ile ilişkili besin zehirlenmesinin klasik nedenidir. İki farklı formu vardır: emetic form (1-5 saat — kusma hakimi, S. aureus benzeri, ısıya dayanıklı toksin) ve diyarik form (8-16 saat — ishal hakimi, C. perfringens benzeri). Pilav oda sıcaklığında bekletildiğinde sporların germineasyonu ve toksin üretimi gerçekleşir. Sporlu Gram-pozitif basil üremesi tanıyı destekler. S. aureus kuluçka süresi benzer olsa da pilav öyküsü B. cereus'u işaret eder. Çift kuluçka dönemi B. cereus için patognomoniktir.",
+      "story_hint": "💡 HİKAYE: 'Pilav Çift Kuluçka' — Pilav + 2 farklı kuluçka (kısa=kusma, uzun=ishal) = B. cereus. Pirinç sporlarını aktive eder!"
+    },
+    {
+      "id": "mvak-020",
+      "case": "Vaka: 25 yaşında erkek, seyahat sonrası gelişen kanlı ishal şikayetiyle başvuruyor. Endoskopide kolonun sağ yarısında derin ülserler ('flakon görünümü') saptanıyor. Dışkı mikroskobisinde içinde kırmızı kan hücreleri yutan büyük trofozoitler görülüyor. Batı Afrika'da 2 hafta kaldığı öğreniliyor.",
+      "options": [
+        "A) Giardia lamblia",
+        "B) Cryptosporidium parvum",
+        "C) Entamoeba histolytica",
+        "D) Balantidium coli",
+        "E) Cyclospora cayetanensis"
+      ],
+      "correct_answer": "C) Entamoeba histolytica",
+      "explanation": "Entamoeba histolytica, kanlı-mukuslu ishal ve karaciğer absesinin önemli bir nedenidir. Seyahatle bulaşır (fekal-oral). Kolonda şişe (flakon) biçimli ülserler karakteristik bulgudur. Eritrosit fagosite eden büyük trofozoitler (eritrofagositoz) patognomoniktir ve benign E. dispar'dan ayırt ettirir. Karaciğer absesinde 'ançüez sosu' veya 'çikolata sos' görünümlü içerik bulunur. Tedavide metronidazol (invazif hastalık) + diloksanid furoat (lüminal etkenin eradikasyonu) kullanılır. Giardia yağlı köpüklü ishal yapar, kanlı ishal yapmaz.",
+      "story_hint": "💡 HİKAYE: 'Kan Yiyen Amip' — Seyahat + kanlı ishal + eritrofagositoz + flakon ülser = E. histolytica. Karaciğer absesi = ançüez sosu!"
+    },
+    {
+      "id": "mvak-021",
+      "case": "Vaka: 19 yaşında erkek hasta, aniden başlayan şiddetli baş ağrısı, ense sertliği, ateş (40°C) ve vücutta peteşi-purpura döküntüsü ile acile getiriliyor. BOS incelemesinde: basınç artmış, hücre 2000/mm³ (PNL hakimi), protein yüksek, glukoz düşük. BOS Gram boyasında Gram-negatif çift içi diplokoklar görülüyor.",
+      "options": [
+        "A) Streptococcus pneumoniae",
+        "B) Neisseria meningitidis",
+        "C) Haemophilus influenzae",
+        "D) Listeria monocytogenes",
+        "E) Escherichia coli K1"
+      ],
+      "correct_answer": "B) Neisseria meningitidis",
+      "explanation": "Neisseria meningitidis (meningokok), özellikle genç yetişkinlerde epidemik menenjite yol açar. Ateş, şiddetli baş ağrısı, ense sertliği ile birlikte peteşi/purpura döküntüsü menингokokik menenjiti/septisemiyi düşündürür. BOS'ta Gram-negatif çift içi diplokok görülmesi tanıyı doğrular. Waterhouse-Friderichsen sendromu (bilateral adrenal hemoraji, DIC, şok) ölümcül komplikasyondur. Penicillin G veya seftriakson ile tedavi edilir. S. pneumoniae'de Gram-pozitif diplokok görülür. Listeria'da ampisilin eklenmesi gerekir.",
+      "story_hint": "💡 HİKAYE: 'Purpura Menenjit' — Genç + ateş + ense sertliği + peteşi-purpura + Gram(-) diplokok = N. meningitidis. Döküntü hayati tehlike işareti!"
+    },
+    {
+      "id": "mvak-022",
+      "case": "Vaka: 68 yaşında alkol bağımlısı erkek hasta, ateş, ense sertliği ve bilinç bulanıklığıyla başvuruyor. BOS incelemesinde PNL hakimiyeti, düşük glukoz, yüksek protein saptanıyor. BOS Gram boyasında Gram-pozitif çift içi diplokoklar görülüyor. Pnömoni öyküsü de mevcut. Yüksek mortalite riski taşıyan bu vakada hangi etken düşünülmelidir?",
+      "options": [
+        "A) Neisseria meningitidis",
+        "B) Streptococcus pneumoniae",
+        "C) Listeria monocytogenes",
+        "D) Haemophilus influenzae",
+        "E) Staphylococcus aureus"
+      ],
+      "correct_answer": "B) Streptococcus pneumoniae",
+      "explanation": "Streptococcus pneumoniae, yaşlılarda ve bağışıklığı baskılanmış kişilerde (alkolizm, aspleni, HIV) bakteriyel menenjit'in en sık nedenidir. Gram-pozitif diplokok görülmesi ve yüksek mortalite riski öne çıkar. Tedavide seftriakson + vankomisin (penisilin direnci için) + deksametazon (inflamasyonu azaltmak için) kullanılır. N. meningitidis genç yetişkinlerde salgın yapar ve purpura ile karakterizedir. Listeria özellikle gebeler ve immünsüprese hastalarda görülür, ampisilin eklenir. H. influenzae aşısız çocuklarda menenjit yapar.",
+      "story_hint": "💡 HİKAYE: 'Alkolik Yaşlı Menenjit' — Yaşlı/alkolik + menenjit + Gram(+) diplokok = S. pneumoniae. Yaşlı + pnömoni öyküsü = pnömokok menenjiti!"
+    },
+    {
+      "id": "mvak-023",
+      "case": "Vaka: 34 yaşında gebe kadın (32. hafta), ateş, baş ağrısı ve hafif ense sertliği ile başvuruyor. BOS incelemesinde hafif pleositoz görülüyor. Gram boyasında Gram-pozitif, kısa basiller ve çevrelerinde hale izleniyor. Hasta son haftalarda çiğ süt peyniri tüketmiş. Hangi antibiyotik bu vakada tercih edilmelidir?",
+      "options": [
+        "A) Seftriakson",
+        "B) Vankomisin",
+        "C) Ampisilin",
+        "D) Metronidazol",
+        "E) Kloramfenikol"
+      ],
+      "correct_answer": "C) Ampisilin",
+      "explanation": "Listeria monocytogenes, gebe kadınlar, yenidoğanlar, yaşlılar ve immünsüprese kişilerde menenjit ve sepsis yapan bir bakteridir. Çiğ süt ürünleri, işlenmemiş etler ve soğuk depolanmış yiyeceklerle bulaşır. Gram-pozitif kısa çomak görünümü (dantel benzeri hale olabilir) ve soğukta hareket (4°C'de hareketli) özelliği karakteristiktir. Sefalosporinlere doğal dirençli olduğundan tedavide ampisilin kullanılır. Gebede fetusa geçerek konjenital listeryoza yol açabilir. Romboensefalit da önemli bir komplikasyondur.",
+      "story_hint": "💡 HİKAYE: 'Gebe Peynir Listeria' — Gebe + çiğ peynir + menenjit + Gram(+) basil = Listeria. Sefalosporin işe yaramaz, ampisilin ver!"
+    },
+    {
+      "id": "mvak-024",
+      "case": "Vaka: 52 yaşında erkek hasta, 4 gündür süren ateş, şiddetli baş ağrısı, konfüzyon ve davranış değişikliği ile başvuruyor. MRI'da sol temporal lobda ödem ve sinyal değişikliği görülüyor. EEG'de temporal bölgede epileptik aktivite saptanıyor. BOS'ta PCR ile spesifik viral nükleik asit pozitif. BOS'ta lenfosit hakimiyeti mevcut.",
+      "options": [
+        "A) Cytomegalovirus",
+        "B) Epstein-Barr virüsü",
+        "C) HSV-1 ensefaliti",
+        "D) Varisella Zoster virüsü",
+        "E) JC virüsü"
+      ],
+      "correct_answer": "C) HSV-1 ensefaliti",
+      "explanation": "HSV-1 ensefaliti, viral ensefalitin en sık nedeni ve tedavi edilebilen en ağır formudur. Temporal lob tutulumu (anosmia, davranış değişikliği, kişilik değişikliği), EEG'de temporal epileptik aktivite ve MRI'da temporal sinyal değişikliği karakteristiktir. BOS'ta lenfosit hakimiyeti ve PCR ile HSV-DNA pozitifliği tanıyı doğrular. Acilen asiklovir (IV 10 mg/kg × 3 kez, 14-21 gün) başlanmalıdır. CMV ensefaliti bağışıklığı baskılanmış kişilerde görülür. JC virüsü PML'ye yol açar.",
+      "story_hint": "💡 HİKAYE: 'Temporal Temporal Temporal' — Temporal lob + davranış değişikliği + EEG temporal + BOS PCR(+) = HSV-1 ensefalist. Asikloviri geciktirme!"
+    },
+    {
+      "id": "mvak-025",
+      "case": "Vaka: 38 yaşında HIV pozitif erkek hasta (CD4: 85/mm³), 2 haftadır süren ateş, baş ağrısı ve ense sertliği ile başvuruyor. BOS'ta basınç artmış, hindistancevizi yağına benzer Hint mürekkebi boyamasında kapsüllü organizmalar görülüyor. Kriptokokal antijen pozitif bulunuyor.",
+      "options": [
+        "A) Toxoplasma gondii",
+        "B) Aspergillus fumigatus",
+        "C) Cryptococcus neoformans",
+        "D) Candida albicans",
+        "E) Histoplasma capsulatum"
+      ],
+      "correct_answer": "C) Cryptococcus neoformans",
+      "explanation": "Cryptococcus neoformans, CD4 <100/mm³ olan AIDS hastalarında kriptokok menenjitine yol açar. Hindistancevizi yağına benzer mürekkep boyamasında (Hint mürekkebi veya çini mürekkebi) geniş kapsüllü maya hücreleri görülür. Serum ve BOS'ta kriptokokal antijen pozitifliği yüksek duyarlılıklı tanı testidir. Tedavide amfoterisin B + flusitozin (indüksiyon) ardından flukonazol (idame) kullanılır. Toxoplasma'da halkalı kontrastlanma BT'de görülür. Histoplasma güvercin dışkısından bulaşır ve akciğer bulguları öne çıkar.",
+      "story_hint": "💡 HİKAYE: 'AIDS Kapsüllü Maya' — HIV + CD4<100 + menenjit + mürekkep boyama kapsüllü = Cryptococcus. Hindistancevizi yağı = kriptokokal kapsül!"
+    },
+    {
+      "id": "mvak-026",
+      "case": "Vaka: Menenjit etkeni araştırılıyor. 3 günlük yenidoğan bebeğin ateş, beslenme güçlüğü ve irritabilitesi var. BOS'ta PNL hakimiyeti, düşük glukoz saptanıyor. Annenin vajinal kültüründe beta-hemolitik B grubu streptokok üremekteymiş. BOS kültüründe de aynı bakteri izole ediliyor.",
+      "options": [
+        "A) Escherichia coli K1",
+        "B) Listeria monocytogenes",
+        "C) Streptococcus agalactiae (GBS)",
+        "D) Neisseria meningitidis",
+        "E) Klebsiella pneumoniae"
+      ],
+      "correct_answer": "C) Streptococcus agalactiae (GBS)",
+      "explanation": "Streptococcus agalactiae (Grup B Streptococcus — GBS), neonatal menenjit ve sepsisinin en önemli erken başlangıçlı (0-7 gün) nedenidir. Anne vajinasından doğum sırasında bebeğe bulaşır. Beta-hemolitik, CAMP testi pozitif özellikleri vardır. Erken başlangıçlı hastalık (sepsis, pnömoni, menenjit) doğumda veya hemen sonrası görülür. Gebelerde 35-37. haftada tarama kültürü yapılır; pozitifse intrapartum ampisilin profilaksisi verilir. Neonatal menenjit etkenleri: GBS, E.coli K1 ve Listeria. Tedavide ampisilin + gentamisin kombinasyonu kullanılır.",
+      "story_hint": "💡 HİKAYE: 'Anne Vajinal GBS' — Yenidoğan + menenjit + anne GBS taşıyıcısı = S. agalactiae (GBS). 35-37. hafta tarama unutulmamalı!"
+    },
+    {
+      "id": "mvak-027",
+      "case": "Vaka: 24 yaşında kadın hasta, 2 gündür süren dizüri, sık idrara çıkma ve suprapubik ağrı ile başvuruyor. Ateş yok. İdrar analizi: nitrit pozitif, lökosit esteraz pozitif, mikroskobide bol bakteriüri ve piyüri. İdrar kültüründe laktozu fermente eden, oksidaz-negatif, Gram-negatif çomak üremekte.",
+      "options": [
+        "A) Staphylococcus saprophyticus",
+        "B) Klebsiella pneumoniae",
+        "C) Proteus mirabilis",
+        "D) Escherichia coli",
+        "E) Enterococcus faecalis"
+      ],
+      "correct_answer": "D) Escherichia coli",
+      "explanation": "Escherichia coli, komplike olmayan üriner sistem enfeksiyonlarının (özellikle genç kadınlarda alt İYE) %80'inden sorumludur. Laktozu fermente eder, oksidaz negatiftir, EMB agarda metalik parlaklık yapar. Nitrit pozitifliği gram-negatif bakterileri düşündürür. Dizüri, pollaküri ve suprapubik ağrı sistit bulgularıdır. Tedavide TMP-SMX veya nitrofurantoin kullanılır. S. saprophyticus genç cinsel aktif kadınlarda görülen koagülaz-negatif, novobiosine dirençli stafllokoktur. Proteus alkal idrar ve taş oluşumu ile karakterizedir.",
+      "story_hint": "💡 HİKAYE: 'Genç Kadın Sistit' — Genç kadın + dizüri + nitrit(+) + laktozu fermente Gram(-) = E. coli. İYE altın standardı = E. coli!"
+    },
+    {
+      "id": "mvak-028",
+      "case": "Vaka: 20 yaşında cinsel aktif kadın, 3 gündür süren dizüri ve sık idrara çıkma ile başvuruyor. İdrar kültüründe koagülaz-negatif, katalaz-pozitif Gram-pozitif kümeler halinde koloni üremekte. Novobiozin disk testi dirençli sonuç veriyor.",
+      "options": [
+        "A) Staphylococcus aureus",
+        "B) Staphylococcus epidermidis",
+        "C) Staphylococcus saprophyticus",
+        "D) Enterococcus faecalis",
+        "E) Streptococcus agalactiae"
+      ],
+      "correct_answer": "C) Staphylococcus saprophyticus",
+      "explanation": "Staphylococcus saprophyticus, genç cinsel aktif kadınlarda E. coli'den sonra idrar yolu enfeksiyonlarının 2. sık nedenidir. Koagülaz-negatif, novobiozine dirençli olması (S. epidermidis novobiozine duyarlıdır) tanı kriteridir. Hastanede edinilmiş infeksiyonlara yol açmaz; toplum kökenlidir. Tedavide nitrofurantoin veya TMP-SMX etkilidir. S. epidermidis kateter ve protez enfeksiyonlarında görülür ve novobiozine duyarlıdır. S. aureus İYE nadiren yapar ve koagülaz pozitiftir.",
+      "story_hint": "💡 HİKAYE: 'Novobiozin Dirençli İYE' — Genç aktif kadın + İYE + koag(-) stafilokok + novobiozin dirençli = S. saprophyticus. Cinsel aktivite sonrası İYE = S. saprophyticus!"
+    },
+    {
+      "id": "mvak-029",
+      "case": "Vaka: 58 yaşında diyabetik erkek hasta, ateş, karın ağrısı ve koyu renkli idrar ile başvuruyor. Akciğer grafisinde sağ alt lobda infiltrasyon görülüyor. İdrar kültüründe mukoid koloni yapan Gram-negatif bakteri üremekte. Bu bakteri kapsüllü ve çelik teli andıran koloniler oluşturuyor.",
+      "options": [
+        "A) Pseudomonas aeruginosa",
+        "B) Escherichia coli",
+        "C) Klebsiella pneumoniae",
+        "D) Proteus mirabilis",
+        "E) Acinetobacter baumannii"
+      ],
+      "correct_answer": "C) Klebsiella pneumoniae",
+      "explanation": "Klebsiella pneumoniae, diyabetik hastalarda ve alkoliklerde ağır pnömoni ve üriner sistem enfeksiyonlarına yol açar. Mukoid (viskoz) koloni oluşturması karakteristik bir özelliğidir. 'Currant jelly' (frenk üzümü jölesi) görünümlü balgam pnömonide karakteristiktir. İdrar kültüründe üreyen mukoid bakteri ve klinik tablo Klebsiella'yı işaret eder. Pnömonide genellikle üst lob veya sağ üst-alt lob konsolidasyonu ile kavite görülür. Pseudomonas'ta mavi-yeşil pigment ve üzüm kokusu bulunur. Proteus alkali idrara yol açar.",
+      "story_hint": "💡 HİKAYE: 'Diyabetik Mukoid Koloni' — Diyabetik + ağır pnömoni + mukoid koloni = Klebsiella. Currant jelly balgam = Klebsiella pnömonisi!"
+    },
+    {
+      "id": "mvak-030",
+      "case": "Vaka: 45 yaşında erkek hasta, üroloji servisinde kateter uygulanıyor ve 5 gün sonra ateş ve dizüri gelişiyor. İdrar kültüründe kötü kokulu, amonyak kokulu Gram-negatif bakteri üremekte. İdrar pH'sı 8.5 (alkali). Direkt idrarda taş oluşumuna eğilim saptanıyor.",
+      "options": [
+        "A) Escherichia coli",
+        "B) Klebsiella pneumoniae",
+        "C) Pseudomonas aeruginosa",
+        "D) Proteus mirabilis",
+        "E) Staphylococcus saprophyticus"
+      ],
+      "correct_answer": "D) Proteus mirabilis",
+      "explanation": "Proteus mirabilis, üreaz enzimi üretir ve üreyi amonyağa parçalayarak idrarda alkali pH oluşturur. Alkali idrar strüvit (magnezyum amonyum fosfat) taşı oluşumuna zemin hazırlar (staghorn taşları). Amonyak kokusu ve alkali idrar Proteus İYE'sinin karakteristik bulgularıdır. Sürünen (swarming) hareketi de karakteristiktir. Tedavide TMP-SMX veya siprofloksasin kullanılır. E. coli asit idrar ve nitrit pozitifliği ile seyreder. S. saprophyticus genç kadın İYE'sidir ve novobiozin direnci gösterir.",
+      "story_hint": "💡 HİKAYE: 'Amonyak + Alkali = Proteus' — Amonyak kokusu + alkali idrar + taş = Proteus mirabilis. Üreaz = alkali idrar = taş oluşumu!"
+    },
+    {
+      "id": "mvak-031",
+      "case": "Vaka: 52 yaşında yoğun bakım hastası, uzun süreli mekanik ventilasyon ve kateterizasyon altında ateş gelişiyor. İdrar kültüründe mavi-yeşil renkte pigment üreten, üzüm kokulu Gram-negatif bakteri üremekte. Bakteri birden fazla antibiyotiğe dirençli. Oksidaz testi pozitif.",
+      "options": [
+        "A) Klebsiella pneumoniae",
+        "B) Acinetobacter baumannii",
+        "C) Pseudomonas aeruginosa",
+        "D) Stenotrophomonas maltophilia",
+        "E) Burkholderia cepacia"
+      ],
+      "correct_answer": "C) Pseudomonas aeruginosa",
+      "explanation": "Pseudomonas aeruginosa, hastane kökenli enfeksiyonların (İYE, pnömoni, yanık enfeksiyonu) önemli nedenidir. Mavi-yeşil pigment (piyosiyanin) üretmesi, üzüm kokusu ve oksidaz pozitifliği karakteristiktir. Çok ilaca dirençlidir; karbapenem (imipenem veya meropenem) veya antipsödomonal penisilin + aminoglikozit kombinasyonu kullanılır. Kistik fibrozis hastalarında da mukoid P. aeruginosa kronik akciğer enfeksiyonlarına yol açar. Acinetobacter oksidaz negatiftir. Klebsiella mukoid koloni yapar ama pigment üretmez.",
+      "story_hint": "💡 HİKAYE: 'Mavi-Yeşil Yoğun Bakım' — YBÜ + mavi-yeşil pigment + üzüm kokusu + oksidaz(+) = Pseudomonas. Hastane kökenli dirençli enfeksiyonun simgesi!"
+    },
+    {
+      "id": "mvak-032",
+      "case": "Vaka: 35 yaşında erkek hasta, sağ ön kol iç yüzünde şişlik, kızarıklık ve akıntılı apse ile başvuruyor. Semptomlar 3 gün önce başlamış, hafif ateş ve lokal ısı artışı mevcut. Kültürde oksasiline dirençli Gram-pozitif kok üremekte. Hasta hastane çalışanı olmayıp toplumdan geliyor. Vankomisin tedavisine yanıt veriyor.",
+      "options": [
+        "A) Hastane kökenli MRSA",
+        "B) Streptococcus pyogenes",
+        "C) Toplum kökenli MRSA (CA-MRSA)",
+        "D) Staphylococcus epidermidis",
+        "E) Klebsiella pneumoniae"
+      ],
+      "correct_answer": "C) Toplum kökenli MRSA (CA-MRSA)",
+      "explanation": "Toplum kökenli MRSA (CA-MRSA), hastaneyle ilişkisi olmayan kişilerde deri ve yumuşak doku enfeksiyonlarına (apse, furunkül, sellülit) yol açar. Hastane kökenli MRSA'dan farklı olarak genellikle mecA geni (SCCmec IV veya V) taşır ve PVL toksin üretir. Vankomisin etkilidir; ancak CA-MRSA'ya TMP-SMX veya klindamisin de kullanılabilir. HA-MRSA daha çok pnömoni, bakteriyemi ve kateter enfeksiyonu yapar. S. pyogenes oksasilin duyarlıdır. MRSA tanımı, oksasilin/metisilin direnci ile konulur.",
+      "story_hint": "💡 HİKAYE: 'Hastane Dışı MRSA' — Toplumdan + apse + oksasilin dirençli Gram(+) = CA-MRSA. PVL toksin = agresif deri enfeksiyonu!"
+    },
+    {
+      "id": "mvak-033",
+      "case": "Vaka: 62 yaşında kadın hasta, sağ bacağında aniden başlayan parlak kırmızı, belirgin sınırlı, şişmiş ve ağrılı alan ile başvuruyor. Ateş 38.9°C. Yüzeyel lenfatikler boyunca kızarıklık uzanıyor. Kültür yapılıyor.",
+      "options": [
+        "A) Staphylococcus aureus",
+        "B) Streptococcus pyogenes",
+        "C) Streptococcus agalactiae",
+        "D) Clostridium perfringens",
+        "E) Erysipelothrix rhusiopathiae"
+      ],
+      "correct_answer": "B) Streptococcus pyogenes",
+      "explanation": "Streptococcus pyogenes (Grup A Streptococcus), erizipelin klasik nedenidir. Parlak kırmızı, belirgin (palpable) sınırlı ve yüksek, ağrılı cilt lezyonu karakteristiktir. Lenfatik yayılım ve sistemik toksisite görülebilir. Penisilin tedavisine çok iyi yanıt verir. Komplikasyonlar: glomerülonefrit, romatizmal ateş. S. aureus daha çok derin doku absesi ve belirsiz sınırlı enfeksiyon yapar. C. perfringens gazlı gangren tablosu oluşturur. Erizipeloid (E. rhusiopathiae) mor-kırmızı el lezyonu ile seyreder ve balıkçılarda görülür.",
+      "story_hint": "💡 HİKAYE: 'Belirgin Sınır Erizipel' — Parlak kırmızı + belirgin sınır + ateş + lenfatik uzanım = S. pyogenes erizipel. Sınır belirginse = Strep, belirsizse = Staph!"
+    },
+    {
+      "id": "mvak-034",
+      "case": "Vaka: 48 yaşında diyabetik erkek hasta, sol bacakta şiddetli ağrı, şişlik ve renk değişikliği ile başvuruyor. Deri değişikliği oldukça az olmasına rağmen ağrı son derece şiddetli. Fasya arasında gaz kabarcıkları görülüyor (radyolojik). Hasta hızla sepsis tablosuna giriyor.",
+      "options": [
+        "A) Erizipel",
+        "B) Sellülit",
+        "C) Nekrotizan fasiit",
+        "D) Osteomiyelit",
+        "E) Trombofilebit"
+      ],
+      "correct_answer": "C) Nekrotizan fasiit",
+      "explanation": "Nekrotizan fasiit, fasyayı tutan ve yaşamı tehdit eden derin yumuşak doku enfeksiyonudur. Şiddetli ağrı ile deri bulgularının orantısız olması (deri görece sağlamken iç dokular nekroz olmaktadır), fasyal gaz ve hızlı ilerleme karakteristiktir. Tip 1 polimikrobiktir (S. pyogenes + anaeroblar + Gram-negatifler); Tip 2 tek etkenlidir (S. pyogenes). Tanı klinik ve radyolojiktir; görüntülemede gaz izlenmesi önemlidir. Acil ve agresif cerrahi debridman (geniş doku eksizyonu) hayat kurtarıcıdır. Erizipel yüzeyel ve belirgin sınırlıdır; gaz izlenmez.",
+      "story_hint": "💡 HİKAYE: 'Ağrı >> Deri Değişikliği' — Şiddetli ağrı + minimal deri bulgusu + radyolojik gaz = Nekrotizan fasiit. Acil cerrahi = hayat kurtarır!"
+    },
+    {
+      "id": "mvak-035",
+      "case": "Vaka: 67 yaşında çiftçi erkek, sağ elinde mor-kırmızı renk değişikliği ve şişlik ile başvuruyor. Lezyonun merkezi soluk ve çevresi kızarık. İki gün önce çalışırken elini çiğ balıkla temas ettirmiş. Ateş yok, lokal ağrı mevcut. Kültürde Gram-pozitif, okside ize pozitif, H2S üreten ince basil izole ediliyor.",
+      "options": [
+        "A) Staphylococcus aureus",
+        "B) Streptococcus pyogenes",
+        "C) Erysipelothrix rhusiopathiae",
+        "D) Clostridium perfringens",
+        "E) Bacillus anthracis"
+      ],
+      "correct_answer": "C) Erysipelothrix rhusiopathiae",
+      "explanation": "Erysipelothrix rhusiopathiae, balıkçılar, kasaplar ve çiftçilerde mesleki temas sonrası görülen erizipeloid hastalığına yol açar. Sağ elin dorsal yüzünde mor-kırmızı, merkezi soluk, çevresi daha kırmızı olan karakteristik lezyon görülür. Gram-pozitif ince basil olup H2S üretir. Sistemik tutulum (endokardit) nadir ama ölümcül olabilir. Penisilin G tedavide kullanılır. S. pyogenes erizipeli daha yüzeyel, parlak kırmızı ve belirgin sınırlıdır. B. anthracis deri şarbonu siyah eskar (ağrısız) ile karakterizedir.",
+      "story_hint": "💡 HİKAYE: 'Balıkçı Mor El' — Balık/et teması + mor-kırmızı el lezyonu + merkezi soluk = Erysipelothrix. Erizipeloid = balıkçı meslek hastalığı!"
+    },
+    {
+      "id": "mvak-036",
+      "case": "Vaka: 8 yaşında erkek çocuk, yüzünde bal renkli kurutlu lezyonlar ile başvuruyor. Lezyonlar burun çevresinde başlamış ve yayılmış. Hafif kaşıntı mevcut. Ateş yok. Okul arkadaşlarında da benzer lezyonlar varmış. Sürüntü kültüründe beta-hemolitik Gram-pozitif kümeler veya zincirler şeklinde bakteri üremekte.",
+      "options": [
+        "A) Herpes simpleks virüs",
+        "B) Tinea faciei",
+        "C) İmpetigo (S. aureus veya S. pyogenes)",
+        "D) Varisella zoster virüsü",
+        "E) Molluscum contagiosum"
+      ],
+      "correct_answer": "C) İmpetigo (S. aureus veya S. pyogenes)",
+      "explanation": "İmpetigo, çocuklarda çok görülen yüzeysel bir cilt enfeksiyonudur. Klasik (krutlu) impetigo S. pyogenes ve/veya S. aureus'tan kaynaklanır. Bal renkli, sarı-kahverengi kurutlu lezyonlar karakteristiktir ve özellikle yüzde (burun-ağız çevresi) görülür. Bulaşıcıdır, doğrudan temas ve nesneler aracılığıyla yayılır. Topikal mupirosin veya oral sefaleksin ile tedavi edilir. Fırıncı streptokoku (S. pyogenes) akut glomerülonefriti komplikasyon olarak yapabilir. Herpes'te ağrılı veziküller ve kabuklar görülür. Varisella gövde başlangıçlıdır.",
+      "story_hint": "💡 HİKAYE: 'Bal Rengi Kabuk Yüz' — Çocuk + burun çevresi + bal renkli kabuk = İmpetigo. S. pyogenes = glomerülonefrit komplikasyonu!"
+    },
+    {
+      "id": "mvak-037",
+      "case": "Vaka: 55 yaşında çiftçi, bahçede toprakla temas sonrası sağ ayak bileğinde ilerleyici ağrısız ülser gelişmiş. Ülserin merkezi siyah eskar ile örtülü. Ateş yok. Daha önce Orta Doğu'dan getirilen hayvanlarla çalıştığı öğreniliyor. Sürüntü kültüründe büyük sporlu Gram-pozitif basil üremekte.",
+      "options": [
+        "A) Clostridium perfringens",
+        "B) Bacillus anthracis",
+        "C) Erysipelothrix rhusiopathiae",
+        "D) Staphylococcus aureus",
+        "E) Pseudomonas aeruginosa"
+      ],
+      "correct_answer": "B) Bacillus anthracis",
+      "explanation": "Bacillus anthracis, şarbon hastalığının etkenidir. Deri şarbonu, sporların deri çatlaklarından girmesiyle oluşan ağrısız papül ve siyah eskar (malign püstül) ile karakterizedir. Büyük sporlu Gram-pozitif basil görülmesi tanıya yönlendirir. Hastalıkla bulaşmış hayvanlarla temas öyküsü önemlidir. Deri şarbonu en sık formudur (%95) ve penisilin veya doksisiklin ile tedavi edilir. Biyoterörizm ajanı olarak da önem taşır. C. perfringens gazlı kangren yapar ve ağrılıdır. Erysipelothrix mor-kırmızı el lezyonu ile seyreder.",
+      "story_hint": "💡 HİKAYE: 'Ağrısız Siyah Eskar' — Hayvan teması + ağrısız ülser + siyah eskar + sporlu Gram(+) basil = B. anthracis deri şarbonu. Ağrısız = şarbon!"
+    },
+    {
+      "id": "mvak-038",
+      "case": "Vaka: 23 yaşında erkek hasta, 4 gündür pürülan üretral akıntı ve dizüri şikayetiyle başvuruyor. Yeni cinsel partner geçmişi var. Üretral sürüntü Gram boyasında nötrofil içinde Gram-negatif çift (çift içi) diplokoklar görülüyor. Kültür yapılıyor.",
+      "options": [
+        "A) Chlamydia trachomatis",
+        "B) Treponema pallidum",
+        "C) Neisseria gonorrhoeae",
+        "D) Trichomonas vaginalis",
+        "E) Ureaplasma urealyticum"
+      ],
+      "correct_answer": "C) Neisseria gonorrhoeae",
+      "explanation": "Neisseria gonorrhoeae gonore hastalığının etkenidir. Pürülan üretral akıntı ve Gram boyamada nötrofil içinde Gram-negatif çift içi diplokok görülmesi gonoreyi tanımlayan klasik bulgudur. Eşzamanlı Chlamydia enfeksiyonu sık olduğundan kombinasyon tedavisi önerilir (seftriakson IM + azitromisin). Komplikasyonlar: pelvik inflamatuvar hastalık (PID), epididimit, artrit, endokardit. PPNG (penisilin dirençli Neisseria) penisilin direncini oluşturmuş suşlardır. Chlamydia'da Gram boyamada bakteri görülmez ve akıntı daha mukoiddir.",
+      "story_hint": "💡 HİKAYE: 'Nötrofil İçi Diplokok' — Pürülan akıntı + Gram(-) çift içi diplokok nötrofil içinde = Gonore. Seftriakson + azitromisin kombinasyonu!"
+    },
+    {
+      "id": "mvak-039",
+      "case": "Vaka: 26 yaşında kadın, jinekoloji polikliniğine asemptomatik servikal akıntı nedeniyle başvuruyor. Cinsel yolla bulaşan hastalık taraması yapılıyor. NAAT testi pozitif. Gram boyamada bakteri görülmüyor. Hücre içi zorunlu parazit olduğu biliniyor. Doksisiklin reçeteleniyor.",
+      "options": [
+        "A) Neisseria gonorrhoeae",
+        "B) Treponema pallidum",
+        "C) Chlamydia trachomatis",
+        "D) Mycoplasma genitalium",
+        "E) Ureaplasma urealyticum"
+      ],
+      "correct_answer": "C) Chlamydia trachomatis",
+      "explanation": "Chlamydia trachomatis, dünyada en sık görülen bakteriyel cinsel yolla bulaşan hastalığın etkenidir. Hücre içi zorunlu parazittir ve Gram boyamada görülmez. Kadınlarda genellikle asemptomatik seyreder ve PID, tubal faktör infertilitesi komplikasyonlarına yol açabilir. Altın standart tanı NAAT (nükleik asit amplifikasyon testi) yöntemidir. Tedavide tek doz azitromisin veya 7 gün doksisiklin kullanılır. Serotip D-K genital enfeksiyon, L1-L3 Lenfogranüloma venereum, A-C trahom yapar. N. gonorrhoeae'de Gram boyamada bakteri görülür.",
+      "story_hint": "💡 HİKAYE: 'Sessiz Hücre İçi' — Asemptomatik + NAAT(+) + Gram boyamada görünmez + hücre içi = Chlamydia. Sessiz ilerleyerek infertiliteye yol açar!"
+    },
+    {
+      "id": "mvak-040",
+      "case": "Vaka: 32 yaşında erkek hasta, 10 gün önce seksüel temas sonrası penis üzerinde ağrısız, sert kenarlı, temiz tabanlı tek ülser (şankr) gelişmiş. Şimdi inguinal lenfadenopati de mevcut. Karanlık alan mikroskobisinde döner hareketli spiroketal organizmalar görülüyor.",
+      "options": [
+        "A) Herpes simpleks virüsü",
+        "B) Haemophilus ducreyi",
+        "C) Treponema pallidum",
+        "D) Chlamydia trachomatis",
+        "E) Neisseria gonorrhoeae"
+      ],
+      "correct_answer": "C) Treponema pallidum",
+      "explanation": "Treponema pallidum sifilizin etkenidir. Primer sifilizde ağrısız sert şankr ve inguinal lenfadenopati görülür. Karanlık alan mikroskobisinde döner hareketli spiroketal organizmalar tanıyı doğrular. İkincil sifilizde avuç içi ve ayak tabanını da tutan makülopapüler döküntü, kondiloma lata ve mukoza yamaları görülür. Tersiyer sifiliz: gomma, aortit ve nörosifiliz. Tedavide benzatin penisilin G (2,4 MÜ IM tek doz birincil/ikincil) kullanılır. H. ducreyi'de ağrılı ve düzensiz kenarlı yumuşak şankr (şankroid) görülür. HSV ağrılı veziküler lezyonlar yapar.",
+      "story_hint": "💡 HİKAYE: 'Ağrısız Sert Şankr' — Ağrısız + sert kenarlı + temiz tabanlı ülser + spiroketal = Sifiliz (T. pallidum). Şankr ağrısızsa sifiliz, ağrılıysa herpes!"
+    },
+    {
+      "id": "mvak-041",
+      "case": "Vaka: 28 yaşında kadın hasta, genital bölgede ağrılı, su dolu kabarcıklar ve sonrasında ülserler geliştiğini söylüyor. 3 yıl önce de benzer tablo yaşamış. Lezyonlar 2 hafta içinde kendiliğinden geçmiş ama tekrarlıyor. Boyama testinde dev çok çekirdekli hücreler (Tzanck preparatı) görülüyor.",
+      "options": [
+        "A) Treponema pallidum",
+        "B) Haemophilus ducreyi",
+        "C) HSV-2",
+        "D) Varisella Zoster virüsü",
+        "E) Molluscum contagiosum"
+      ],
+      "correct_answer": "C) HSV-2",
+      "explanation": "HSV-2, genital herpese yol açan ve sakral ganglionda latent kalan virüstür. Ağrılı veziküller ve ülserler, kendiliğinden iyileşme ve nüks etme ile karakterizedir. Tzanck preparatında dev çok çekirdekli hücreler görülür (HSV-1 ve 2'de de bulunur). Primer enfeksiyonda sistemik belirtiler (ateş, miyalji) daha belirgindir. Tedavide asiklovir veya valasiklovir kullanılır; rekürrensleri baskılamak için süpresif tedavi verilebilir. Sifiliz şankrı ağrısızdır. H. ducreyi ağrılı ülser yapar ama Tzanck negatiftir. Nörojenik komplikasyonlar (aseptik menenjit) olabilir.",
+      "story_hint": "💡 HİKAYE: 'Tekrarlayan Veziküller' — Genital ağrılı veziküller + tekrarlama + Tzanck(+) dev çok çekirdekli = HSV-2. Sakral ganglionda uyur, tetiklenince uyanır!"
+    },
+    {
+      "id": "mvak-042",
+      "case": "Vaka: 30 yaşında erkek hasta, genital bölgede ağrılı, düzensiz kenarlı, yumuşak tabanlı ülser şikayetiyle başvuruyor. Sağ kasıkta ağrılı şişlik (bubo) de mevcut. Ülser kolayca kanayor. Gram boyamada 'balık sürüsü' düzeninde Gram-negatif küçük kokobasiller görülüyor.",
+      "options": [
+        "A) Treponema pallidum",
+        "B) Herpes simpleks virüsü",
+        "C) Haemophilus ducreyi",
+        "D) Chlamydia trachomatis",
+        "E) Neisseria gonorrhoeae"
+      ],
+      "correct_answer": "C) Haemophilus ducreyi",
+      "explanation": "Haemophilus ducreyi şankroid (yumuşak şankr) hastalığının etkenidir. Ağrılı, düzensiz kenarlı ve yumuşak tabanlı ülser, ağrılı inguinal lenfadenopati (bubo) ve kanayan taban karakteristiktir. Gram boyamada 'balık sürüsü' (school of fish) düzeninde Gram-negatif küçük kokobasiller görülmesi tanıya yönlendirir. Hem ağrılı şankr hem bubo aynı anda varsa H. ducreyi düşünülmelidir. Sifiliz şankrı ağrısız ve serttir. HSV veziküler lezyonlar yapar ve Tzanck pozitiftir. Tedavide azitromisin tek doz veya seftriakson kullanılır.",
+      "story_hint": "💡 HİKAYE: 'Ağrılı Yumuşak Şankr' — Ağrılı + yumuşak + düzensiz + bubo + balık sürüsü Gram(-) = H. ducreyi. Sert=Sifiliz, Yumuşak=Şankroid!"
+    },
+    {
+      "id": "mvak-043",
+      "case": "Vaka: 16 yaşında kız öğrenci, 2 haftadır halsizlik, iştahsızlık ve sarılık şikayetiyle başvuruyor. Ateş 37.9°C. Karaciğer biyokimyasında ALT 420 IU/L. Seroloji: anti-HAV IgM pozitif. Benzer şikayetler sınıf arkadaşlarında da görülmüş.",
+      "options": [
+        "A) Hepatit B virüsü",
+        "B) Hepatit A virüsü",
+        "C) Hepatit C virüsü",
+        "D) Hepatit E virüsü",
+        "E) Epstein-Barr virüsü"
+      ],
+      "correct_answer": "B) Hepatit A virüsü",
+      "explanation": "Hepatit A virüsü (HAV) fekal-oral yolla bulaşır ve okul çağı çocuklarda salgın yapabilir. Akut hepatit: ateş, halsizlik, sarılık ve anti-HAV IgM pozitifliği ile karakterizedir. Kronikleşmez. Fulminan hepatit nadir ama ağır komplikasyondur. Aşı ile önlenebilir. Anti-HAV IgG geçirilmiş enfeksiyon veya aşıyı gösterir. HBV serumla/cinsel yolla bulaşır ve HBsAg pozitifliği gösterir. HCV transfüzyon geçmişiyle ilişkilidir ve %70 kronikleşir. HEV gebede yüksek mortalite ile seyreder.",
+      "story_hint": "💡 HİKAYE: 'Okul Salgını Sarılık' — Fekal-oral + okul salgını + sarılık + anti-HAV IgM(+) = Hepatit A. Kronikleşmez, aşı var!"
+    },
+    {
+      "id": "mvak-044",
+      "case": "Vaka: 28 yaşında erkek hasta, acil servise sezaryen olmayan anne karnında doğmuş olduğunun belirtildiği bir bebek değil, aksine kan donörü olarak başvuruyor. HBsAg pozitif, anti-HBc IgM pozitif, HBeAg pozitif saptanıyor. ALT yüksek. 1 ay önce kaza sonrası başkasının kanıyla temasın olduğu öğreniliyor.",
+      "options": [
+        "A) Kronik HBV taşıyıcısı",
+        "B) Geçirilmiş HBV enfeksiyonu",
+        "C) Akut HBV enfeksiyonu (yüksek infeksiozite)",
+        "D) Aşı ile bağışıklık",
+        "E) Delta hepatit süperenfeksiyonu"
+      ],
+      "correct_answer": "C) Akut HBV enfeksiyonu (yüksek infeksiozite)",
+      "explanation": "HBsAg pozitif (virüs mevcut), anti-HBc IgM pozitif (akut enfeksiyon), HBeAg pozitif (yüksek replikasyon ve infeksiozite) kombinasyonu akut HBV enfeksiyonunu ve yüksek bulaştırıcılığı gösterir. Kan teması ile bulaştığını destekleyen anamnez mevcuttur. Kronik taşıyıcılarda anti-HBc IgG (IgM değil) ve HBsAg pozitiftir. Geçirilmiş enfeksiyonda anti-HBs ve anti-HBc IgG pozitif, HBsAg negatiftir. Aşı ile bağışıklıkta yalnızca anti-HBs pozitiftir. HBeAg pozitifliği viral replikasyonun yüksek olduğunu gösterir.",
+      "story_hint": "💡 HİKAYE: 'HBeAg = Bulaşıcılık' — HBsAg(+) + anti-HBc IgM(+) + HBeAg(+) = Akut HBV, çok bulaşıcı. HBeAg = 'e'nfeksiöz = bulaşıcı!"
+    },
+    {
+      "id": "mvak-045",
+      "case": "Vaka: 45 yaşında kadın hasta, rutin check-up sırasında HBsAg pozitif saptanıyor. Daha ayrıntılı testler: HBsAg pozitif (>6 aydır), anti-HBc IgG pozitif, anti-HBs negatif, HBeAg negatif, anti-HBe pozitif. ALT normal. Karaciğer biyopsisi minimal inflamasyon gösteriyor.",
+      "options": [
+        "A) Akut HBV enfeksiyonu",
+        "B) Geçirilmiş HBV enfeksiyonu",
+        "C) Kronik HBV taşıyıcısı (inaktif)",
+        "D) Aşı ile bağışıklık",
+        "E) Delta hepatit koenfeksiyonu"
+      ],
+      "correct_answer": "C) Kronik HBV taşıyıcısı (inaktif)",
+      "explanation": "HBsAg'nin 6 aydan uzun süre pozitif kalması kronik HBV enfeksiyonunu tanımlar. Anti-HBc IgG (IgM değil) ve anti-HBe pozitifliği, düşük viral replikasyon ve inaktif taşıyıcılık durumunu gösterir. Normal ALT ve minimal inflamasyon inaktif taşıyıcı profilini tamamlar. Tedavi gerekmeyebilir; izlem yeterlidir. Anti-HBs negatifliği korunmayı göstermez. Aşı ile bağışıklıkta yalnızca anti-HBs pozitiftir. Geçirilmiş enfeksiyonda HBsAg negatif, anti-HBs ve anti-HBc IgG pozitiftir.",
+      "story_hint": "💡 HİKAYE: 'HBsAg 6 Ay Pozitif' — HBsAg(+) >6 ay + anti-HBc IgG(+) + anti-HBs(-) + normal ALT = İnaktif kronik taşıyıcı. Aşı = sadece anti-HBs(+)!"
+    },
+    {
+      "id": "mvak-046",
+      "case": "Vaka: 38 yaşında kadın, check-up sırasında serolojisi: HBsAg negatif, anti-HBs pozitif (150 mIU/mL), anti-HBc negatif. Hiç sarılık geçirmemiş. 5 yıl önce 3 doz HBV aşısı uygulanmış.",
+      "options": [
+        "A) Akut HBV enfeksiyonu",
+        "B) Kronik HBV taşıyıcısı",
+        "C) Geçirilmiş HBV enfeksiyonu",
+        "D) Aşı ile bağışıklık",
+        "E) Delta hepatit"
+      ],
+      "correct_answer": "D) Aşı ile bağışıklık",
+      "explanation": "Sadece anti-HBs pozitifliği (anti-HBc negatif, HBsAg negatif) aşı ile bağışıklığı gösterir. Doğal enfeksiyonda hem anti-HBs hem anti-HBc IgG pozitif olur (çünkü çekirdek antijeni [HBcAg] de immün yanıt oluşturur). Aşı yalnızca yüzey antijeni (HBsAg) içerdiğinden yalnızca anti-HBs oluşur. Anti-HBs ≥10 mIU/mL koruyucu sayılır. Geçirilmiş enfeksiyonda HBsAg negatif, anti-HBs ve anti-HBc IgG birlikte pozitiftir. Bu ayrım sağlık çalışanlarının taranmasında ve bağışıklık durumunun değerlendirilmesinde kritiktir.",
+      "story_hint": "💡 HİKAYE: 'Sadece Anti-HBs' — Yalnızca anti-HBs(+) = Aşı. Anti-HBs + anti-HBc = Geçirilmiş enfeksiyon. Anti-HBc yok = Aşı!"
+    },
+    {
+      "id": "mvak-047",
+      "case": "Vaka: 52 yaşında erkek hasta, 1990'lı yıllarda kan transfüzyonu almış. Rutin tetkiklerinde hafif ALT yüksekliği saptanıyor. Anti-HCV pozitif, HCV RNA pozitif. Karaciğer biyopsisinde fibrozis evre 2 görülüyor. Sarılık hiç geçirmemiş.",
+      "options": [
+        "A) Akut HAV enfeksiyonu",
+        "B) Kronik HBV enfeksiyonu",
+        "C) Kronik HCV enfeksiyonu",
+        "D) Otoimmün hepatit",
+        "E) Wilson hastalığı"
+      ],
+      "correct_answer": "C) Kronik HCV enfeksiyonu",
+      "explanation": "Hepatit C virüsü (HCV), kan ve kan ürünü transfüzyonu ile bulaşır ve akut enfeksiyonların %70-85'i kronikleşir. Genellikle asemptomatik seyreder ve yıllar içinde siroz ve hepatoselüler karsinoma yol açabilir. Anti-HCV tanısal tarama testi, HCV RNA ise aktif viremi ve tedavi takibi için kullanılır. Tedavide doğrudan etkili antiviraller (NS5B inhibitörü: sofosbuvir gibi) kullanılır; kalıcı virolojik yanıt hedeflenir. HBV'de HBsAg pozifliği görülür. Otoimmün hepatitte ANA/ASMA pozitifliği öne çıkar.",
+      "story_hint": "💡 HİKAYE: 'Sessiz Siroz Yürüyüşü' — Eski transfüzyon + asemptomatik + anti-HCV(+) + HCV RNA(+) = Kronik HCV. %70 kronikleşir, sessizce siroza gider!"
+    },
+    {
+      "id": "mvak-048",
+      "case": "Vaka: 35 yaşında Nijerya'dan gelen erkek hasta, HBsAg pozitif olduğu biliniyor. Yeni başlayan ağır hepatit kliniği gelişiyor: ALT 1800 IU/L, sarılık ve koagülopati. Seroloji: HBsAg(+), anti-delta IgM(+), HBV DNA düşük. Delta antikorları pozitif bulunuyor.",
+      "options": [
+        "A) Akut HAV koenfeksiyonu",
+        "B) HBV reaktivasyonu",
+        "C) HCV süperenfeksiyonu",
+        "D) Delta hepatit (HDV) süperenfeksiyonu",
+        "E) HEV enfeksiyonu"
+      ],
+      "correct_answer": "D) Delta hepatit (HDV) süperenfeksiyonu",
+      "explanation": "Hepatit D virüsü (HDV) defektif bir virüs olup yalnızca HBsAg varlığında replike olabilir. Kronik HBV taşıyıcısında HDV ile yeni enfeksiyon = süperenfeksiyon (daha ağır seyreder). Koenfeksiyon (eş zamanlı HBV+HDV) genellikle kendi kendini sınırlar. Anti-delta IgM akut HDV'yi, IgG geçirilmiş veya kronik enfeksiyonu gösterir. Delta hepatiti en ağır hepatit formu olarak bilinir; hızla karaciğer yetmezliğine yol açabilir. Tedavide interferon alfa kullanılır; HBV önlenerek HDV de önlenmiş olur (HBV aşısı korur). HBV DNA'nın düşük olması HDV'nin HBV replikasyonunu baskıladığını gösterir.",
+      "story_hint": "💡 HİKAYE: 'Asalak Virüs' — HBsAg(+) kronik hasta + ağır hepatit + anti-delta(+) = HDV süperenfeksiyon. Delta HBV'ye muhtaç asalak virüs!"
+    },
+    {
+      "id": "mvak-049",
+      "case": "Vaka: 28 yaşında gebe kadın (3. trimester), Hindistan seyahatinden döndükten sonra akut sarılık, karaciğer yetmezliği ve koagülopati gelişiyor. Anti-HEV IgM pozitif. Diğer hepatit serolojileri negatif.",
+      "options": [
+        "A) Hepatit A enfeksiyonu",
+        "B) Hepatit B enfeksiyonu",
+        "C) Hepatit C enfeksiyonu",
+        "D) Hepatit E enfeksiyonu",
+        "E) Hepatit D enfeksiyonu"
+      ],
+      "correct_answer": "D) Hepatit E enfeksiyonu",
+      "explanation": "Hepatit E virüsü (HEV) fekal-oral yolla (kirli su) bulaşan ve özellikle Asya ve Afrika'da salgın yapan bir virüstür. Genel popülasyonda kendiliğinden iyileşir. Ancak gebe kadınlarda (özellikle 3. trimesterde) mortalite %20-25'e ulaşabilir — en yüksek hepatit mortalitesi gebede HEV'dir. Anti-HEV IgM akut enfeksiyonu gösterir. Özel antiviral tedavisi yoktur; destekleyici tedavi uygulanır. Akut karaciğer yetmezliği gelişebilir. HAV da fekal-oral bulaşır ancak gebede bu kadar yüksek mortalite yapmaz. HBV ve HCV parenteral yolla bulaşır.",
+      "story_hint": "💡 HİKAYE: 'Gebe HEV = Ölüm Riski' — Gebe + Asya seyahati + sarılık + anti-HEV IgM(+) = HEV. Gebede HEV = %20-25 mortalite!"
+    },
+    {
+      "id": "mvak-050",
+      "case": "Vaka: 35 yaşında HIV pozitif erkek hasta (CD4: 155/mm³), 3 haftadır giderek kötüleşen kuru öksürük, nefes darlığı ve hafif ateş ile başvuruyor. PA grafide bilateral perihiler infiltratlar görülüyor. LDH 480 IU/L. Bronkoalveoler lavajda Grocott (gümüş) boyamada mantar formları görülüyor.",
+      "options": [
+        "A) Mycobacterium tuberculosis",
+        "B) Cryptococcus neoformans",
+        "C) Pneumocystis jirovecii pnömonisi (PCP)",
+        "D) Aspergillus fumigatus",
+        "E) Histoplasma capsulatum"
+      ],
+      "correct_answer": "C) Pneumocystis jirovecii pnömonisi (PCP)",
+      "explanation": "PCP (Pneumocystis jirovecii Pnömonisi), CD4 <200/mm³ olan AIDS hastalarında en sık görülen fırsatçı enfeksiyondur. Kuru öksürük, progresif dispne, bilateral perihiler infiltratlar ve yüksek LDH klasik bulgulardır. Gümüş boyamada (Grocott) mantar görülmesi tanıyı doğrular. Tedavide yüksek doz TMP-SMX kullanılır; ağır vakada steroid eklenir. Profilaksi CD4 <200 olduğunda TMP-SMX ile başlanır. Tüberkülozda apeks kavitesi ve EZN boyaması pozitiftir. Aspergilloz bağışıklığı baskılanmış hastalarda halo işareti ile görülür.",
+      "story_hint": "💡 HİKAYE: 'CD4<200 Bilateral İnfiltrat' — HIV + CD4<200 + kuru öksürük + bilateral infiltrat + yüksek LDH = PCP. TMP-SMX hem tedavi hem profilaksi!"
+    },
+    {
+      "id": "mvak-051",
+      "case": "Vaka: 42 yaşında HIV pozitif erkek hasta (CD4: 75/mm³), baş ağrısı, ateş ve bilinç bulanıklığı ile başvuruyor. Beyin BT'sinde birden fazla halkalı kontrastlanan lezyon görülüyor. Toksoplazmoza yönelik seroloji pozitif. Çiğ et tüketim öyküsü mevcut.",
+      "options": [
+        "A) Cryptococcus neoformans menenjiti",
+        "B) Primer MSS lenfoması",
+        "C) CMV ensefaliti",
+        "D) Toxoplasma ensefaliti",
+        "E) HSV ensefaliti"
+      ],
+      "correct_answer": "D) Toxoplasma ensefaliti",
+      "explanation": "Toxoplasma gondii ensefaliti, CD4 <100/mm³ olan AIDS hastalarında MSS'nin en sık fırsatçı enfeksiyonudur. BT'de halkalı kontrastlanan çoklu lezyonlar karakteristiktir. Anti-Toxoplasma IgG pozitifliği geçirilmiş latent enfeksiyonun reaktivasyonunu gösterir. Tedavide pirimetamin + sülfadiazin + folinik asit kombinasyonu kullanılır. TMP-SMX profilaktik amaçla da kullanılabilir. Primer MSS lenfomasında da halkalı lezyon görülür ama lezyonlar daha az sayıdadır ve EBV ilişkilidir. Cryptococcus'ta halkalı lezyon beklenmez; menenjit tablosu öne çıkar.",
+      "story_hint": "💡 HİKAYE: 'CD4<100 Halkalı Lezyon' — HIV + CD4<100 + halkalı BT lezyonu + Toxo IgG(+) = Toxoplasma ensefaliti. Çiğ et + kedi = Toxoplasma!"
+    },
+    {
+      "id": "mvak-052",
+      "case": "Vaka: 48 yaşında HIV pozitif erkek hasta (CD4: 42/mm³), 2 haftadır giderek kötüleşen görme bulanıklığı şikayetiyle göz kliniğine başvuruyor. Fundoskopide perivazküler eksüdalar ve hemoraji görülüyor — 'domates soslu pizza' görünümü. Gansiklovir IV tedavisi başlanıyor.",
+      "options": [
+        "A) Toxoplasma retinokorioretiniti",
+        "B) Cryptococcus retiniti",
+        "C) CMV retiniti",
+        "D) HSV retiniti",
+        "E) Aspergillus endoftalmiti"
+      ],
+      "correct_answer": "C) CMV retiniti",
+      "explanation": "CMV (Cytomegalovirus) retiniti, CD4 <50/mm³ olan AIDS hastalarında körlüğe yol açabilen en önemli fırsatçı enfeksiyondur. Fundoskopide perivazküler eksüdalar ve hemoraji paterni 'peynir ve domates sosu' veya 'pizza' görünümü olarak tanımlanır. Tedavide gansiklovir (IV veya intravitreal) veya valgansiklovir kullanılır. CD4 <50 olduğunda profilaktik tedavi düşünülmelidir. Toxoplasma koryoretiniti'nde fundusta beyaz odaklar ve koroid lezyonları görülür. Aspergillus endoftalmisi nötropenik hastalarda görülür.",
+      "story_hint": "💡 HİKAYE: 'Peynir Domates Retina' — HIV + CD4<50 + görme kaybı + pizza görünümü fundus = CMV retiniti. Gansiklovir kurtarıcı!"
+    },
+    {
+      "id": "mvak-053",
+      "case": "Vaka: 36 yaşında HIV pozitif kadın hasta (CD4: 45/mm³), disfaji ve odinofaji şikayetiyle başvuruyor. Endoskopide özofagus mukozasında beyaz plaklar görülüyor. Hücre hasarı görülmüyor. KOH preparatında psödohifler ve blastosporlar saptanıyor.",
+      "options": [
+        "A) HSV özofajiti",
+        "B) CMV özofajiti",
+        "C) Candida özofajiti",
+        "D) Aspergillus özofajiti",
+        "E) H. pylori gastrit"
+      ],
+      "correct_answer": "C) Candida özofajiti",
+      "explanation": "Candida özofajiti, AIDS hastalarında en sık görülen özofageal fırsatçı enfeksiyondur. Disfaji ve odinofaji ile başvurur. Endoskopide beyaz plaklar ve KOH preparatında psödohifler + blastosporlar Candida'yı tanımlar. Flukonazol oral veya IV ile tedavi edilir; dirençli durumlarda vorikonazol veya kaspofungin kullanılır. HSV özofajitinde ağrılı veziküler lezyonlar ve ülserler görülür. CMV özofajitinde BT'de boyuna uzanan tek büyük ülser görülür. Candida oral tutulum (pamukçuk) ile eş zamanlı görülebilir.",
+      "story_hint": "💡 HİKAYE: 'Beyaz Plaklı Özofagus' — HIV + disfaji + beyaz plaklar + psödohif = Candida özofajiti. Flukonazol hem ağzı hem özofagusu temizler!"
+    },
+    {
+      "id": "mvak-054",
+      "case": "Vaka: 55 yaşında hematolojik malignite nedeniyle kemoterapi alan ve nötropenik (nötrofil <500/mm³) hasta, persistan ateş ve akciğer BT'sinde 'halo işareti' (buzlu cam çevreli nodül) görülüyor. Bronkoskopi BAL örneğinde ince septalı hifler saptanıyor. Galaktomannan testi pozitif.",
+      "options": [
+        "A) Pneumocystis jirovecii",
+        "B) Candida albicans",
+        "C) Cryptococcus neoformans",
+        "D) Aspergillus fumigatus",
+        "E) Mucor sp."
+      ],
+      "correct_answer": "D) Aspergillus fumigatus",
+      "explanation": "Aspergillus fumigatus, nötropenik hastalarda invazif pulmoner aspergilloza yol açar. BT'de 'halo işareti' (hemoraji halkasıyla çevrilmiş nodül) erken dönemde görülür; ilerleyen dönemde 'hava hilal işareti' ortaya çıkar. Galaktomannan (Aspergillus hücre duvarı bileşeni) tanıda kullanılır. BAL'da ince septalı hifler görülür. Tedavide vorikonazol (birinci basamak) kullanılır. PCP bilateral interstisyel infiltrat yapar, hif görülmez. Mucor geniş non-septalı hifler ile ayrılır ve diyabetiklerde rinosinüzit yapar. Candida daha çok sistemik kandidemi yapar.",
+      "story_hint": "💡 HİKAYE: 'Nötropenik Halo İşareti' — Nötropeni + ateş + BT halo işareti + galaktomannan(+) = Aspergillus. Vorikonazol = 1. basamak tedavi!"
+    },
+    {
+      "id": "mvak-055",
+      "case": "Vaka: 40 yaşında HIV pozitif erkek hasta (CD4: 38/mm³), 3 aydır ateş, gece terlemesi, ishal ve kilo kaybı (12 kg) yaşıyor. Hemoglobin 8.5 g/dL, lökosit düşük. Kan kültüründe aside dirençli organizma üremekte. Azitromisin profilaksisi başlanıyor.",
+      "options": [
+        "A) Mycobacterium tuberculosis",
+        "B) Mycobacterium avium complex (MAC)",
+        "C) Mycobacterium kansasii",
+        "D) Bartonella henselae",
+        "E) Cryptococcus neoformans"
+      ],
+      "correct_answer": "B) Mycobacterium avium complex (MAC)",
+      "explanation": "Mycobacterium avium complex (MAC), CD4 <50/mm³ olan ileri AIDS hastalarında dissemine enfeksiyona yol açar. Ateş, gece terlemesi, ishal, kilo kaybı ve anemi ile seyreder. Kan kültüründe aside dirençli organizma üremesi tanıyı destekler. Profilaksi CD4 <50 olduğunda azitromisin (haftalık) ile başlanır. Tedavide azitromisin + etambutol kullanılır. MTB'de apeks kavitesi ve solunum semptomları öne çıkar. Bartonella kedi tırmığı hastalığı ve anjiomatozis yapar.",
+      "story_hint": "💡 HİKAYE: 'CD4<50 Aside Dirençli Kan' — HIV + CD4<50 + ateş + anemi + kan kültüründe aside dirençli = MAC. Azitromisin profilaksi ve tedavi!"
+    },
+    {
+      "id": "mvak-056",
+      "case": "Vaka: 38 yaşında HIV pozitif erkek hasta (CD4: 62/mm³), yüzünde, gövdesinde ve ağız mukozasında mor-kırmızı papül ve plaklar gelişiyor. Biyopside vasküler proliferasyon ve HHV-8 pozitifliği saptanıyor.",
+      "options": [
+        "A) Molluscum contagiosum",
+        "B) Melanom",
+        "C) Kaposi sarkomu",
+        "D) Bazal hücre karsinomu",
+        "E) Deri anjiyosarkomu"
+      ],
+      "correct_answer": "C) Kaposi sarkomu",
+      "explanation": "Kaposi sarkomu, HHV-8 (Human Herpesvirus 8) ile ilişkili ve AIDS'e bağlı malignitelerin başında gelen bir tümördür. Mor-kırmızı deri lezyonları, mukoza tutulumu ve iç organ tutulumu görülebilir. CD4 sayısı genellikle düşüktür. HHV-8 tanıda ve etiyolojide belirleyicidir. Tedavide antiretroviral tedavinin başlanması önemlidir; kemoterapi (vinkristin, bleomisin) ve radyoterapi kullanılabilir. Molluscum contagiosum göbek çukurlu papüller yapar. Melanom HHV-8 ile ilişkili değildir. AIDS'e bağlı diğer malignite: primer MSS lenfoması (EBV).",
+      "story_hint": "💡 HİKAYE: 'HIV Mor Lezyon HHV-8' — HIV + mor-kırmızı cilt lezyonu + HHV-8(+) = Kaposi sarkomu. HHV-8 = Kaposi'nin imzası!"
+    },
+    {
+      "id": "mvak-057",
+      "case": "Vaka: 42 yaşında veteriner, 2 haftadır süren dalgalı ateş (akşamları yükseliyor, sabah normale dönüyor), aşırı terleme, eklem ağrısı ve halsizlik ile başvuruyor. Mesleği gereği hayvanlarla yakın temas halinde. Sığır ve keçi doğumlarına yardım etmiş. Rose Bengal testi pozitif.",
+      "options": [
+        "A) Leptospira interrogans",
+        "B) Brucella abortus/melitensis",
+        "C) Coxiella burnetii",
+        "D) Francisella tularensis",
+        "E) Borrelia burgdorferi"
+      ],
+      "correct_answer": "B) Brucella abortus/melitensis",
+      "explanation": "Brucella, hayvanlarla (inek, keçi) temas, çiğ süt veya peynir tüketimi ile bulaşan zoonotik bir bakteridir. Dalgalı (undülant) ateş, gece terlemesi, eklem ağrısı ve splenomegali karakteristik bulgulardır. Rose Bengal testi ve tüp aglütinasyon testi (Brucella aglütinasyon) tanıda kullanılır. Tedavide doksisiklin + rifampisin (6 hafta) kombinasyonu kullanılır. Bruselloz relaps eğilimi taşır. Leptospira ağır vakalarda sarılık + renal yetmezlik (Weil hastalığı) yapar. Coxiella Q ateşi yapar ve çiftçilerde görülür. Francisella tularemi etkenidir.",
+      "story_hint": "💡 HİKAYE: 'Veteriner Dalgalı Ateş' — Veteriner + hayvan teması + dalgalı ateş + Rose Bengal(+) = Brucella. Dalgalı = Brucella! Doksi + Rifampisin!"
+    },
+    {
+      "id": "mvak-058",
+      "case": "Vaka: 28 yaşında balık çiftliği işçisi, 5 gün önce kirli bataklıkta çalışırken baldırında kesik oluşmuş. Şimdi yüksek ateş, sarılık, konjonktival hiperemi ve renal yetmezlik bulguları mevcut. Kreatin 3.8 mg/dL. Mesleki temas öyküsü önemli.",
+      "options": [
+        "A) Brucella melitensis",
+        "B) Borrelia burgdorferi",
+        "C) Leptospira interrogans",
+        "D) Francisella tularensis",
+        "E) Rickettsia rickettsii"
+      ],
+      "correct_answer": "C) Leptospira interrogans",
+      "explanation": "Leptospira interrogans, su/toprak/hayvan idrarı ile temas yoluyla bulaşan zoonotik spiroketal bir bakteridir. Bifazik seyir gösterir: Leptospiremik faz (ateş, miyalji, konjonktiva hiperemi) → İmmün faz (sarılık, menejit, renal yetmezlik). Weil hastalığı (ağır leptospiroz) sarılık + akut böbrek yetmezliği + kanama ile karakterizedir. Penisilin G veya doksisiklin ile tedavi edilir. Brucella dalgalı ateş ve eklem ağrısı yapar, sarılık ve renal yetmezlik ön plana geçmez. Borrelia'da göç eden eritem ve Lyme bulguları görülür.",
+      "story_hint": "💡 HİKAYE: 'Weil Üçlüsü' — Bataklık/hayvan idrarı + sarılık + böbrek yetmezliği + konjonktiva hiperemi = Leptospira / Weil hastalığı. Weil = Sarılık + Böbrek!"
+    },
+    {
+      "id": "mvak-059",
+      "case": "Vaka: 35 yaşında erkek, kırsal alanda yürüyüş sonrası sol bacağında kene tutunması fark ediyor. 3 hafta sonra kenerin tutunduğu bölgede büyüyen, merkezden perifere doğru genişleyen halka şeklinde kırmızı lezyon (goç eden eritem) oluşuyor. Hafif ateş ve halsizlik var.",
+      "options": [
+        "A) Rickettsia rickettsii",
+        "B) Borrelia burgdorferi",
+        "C) Francisella tularensis",
+        "D) Coxiella burnetii",
+        "E) Anaplasma phagocytophilum"
+      ],
+      "correct_answer": "B) Borrelia burgdorferi",
+      "explanation": "Borrelia burgdorferi, Lyme hastalığının etkenidir ve Ixodes kenesi ile bulaşır. Göç eden eritem (erythema migrans, 5 cm'den büyük genişleyen halkalı lezyon) Lyme hastalığının patognomonik bulgusu olup %70-80 vakada görülür. Tedavide doksisiklin (yetişkin, lokal hastalık) veya amoksisilin (çocuk, gebe) kullanılır. Geç dönem komplikasyonlar: Lyme artriti, kalp bloğu (kardiyak Lyme), nörolojik Lyme (Bannwarth sendromu). Rickettsia'da döküntü avuç içi ve ayak tabanını da tutar. Francisella'da ülseroglandüler lezyon ve lenfadenopati görülür.",
+      "story_hint": "💡 HİKAYE: 'Kene Sonrası Halka Lezyon' — Kene + büyüyen halkalı lezyon = Göç eden eritem = Lyme (Borrelia). Eritem migrans = Lyme hastalığı patognomonik!"
+    },
+    {
+      "id": "mvak-060",
+      "case": "Vaka: 40 yaşında orman parkı çalışanı, kene ısırığından 3-5 gün sonra ateş, baş ağrısı, miyalji ve bileklerden başlayıp tüm vücuda yayılan, avuç içi ve ayak tabanını da tutan peteşiyal döküntü ile başvuruyor. WBC düşük, trombosit düşük.",
+      "options": [
+        "A) Borrelia burgdorferi",
+        "B) Rickettsia rickettsii",
+        "C) Ehrlichia chaffeensis",
+        "D) Anaplasma phagocytophilum",
+        "E) Coxiella burnetii"
+      ],
+      "correct_answer": "B) Rickettsia rickettsii",
+      "explanation": "Rickettsia rickettsii, Rocky Mountain Spotted Fever'ın etkeni olup Dermacentor kenesi ile bulaşır. Döküntünün bilekten başlayıp santripetal yayılması ve avuç içi ile ayak tabanını tutması karakteristik bulgudur. Peteşiyal döküntü, ateş ve baş ağrısı klasik üçlüyü oluşturur. Döküntü geç ortaya çıkabilir; tedavi geciktirilmemelidir. Tedavide doksisiklin kullanılır. Ehrlichia ve Anaplasma'da döküntü beklenmez. Borrelia'da göç eden eritem halkalı lezyondur. Riketsiyalarda hücreler içinde (endotel) ürer.",
+      "story_hint": "💡 HİKAYE: 'Avuç İçi Döküntü' — Kene + ateş + avuç içi-ayak tabanı dahil peteşi = R. rickettsii. Döküntü bilekten başlar, avuç içine iner = Rickettsia!"
+    },
+    {
+      "id": "mvak-061",
+      "case": "Vaka: 25 yaşında fare araştırmacısı, kasıkta oldukça ağrılı ve şişmiş lenf nodülleri (bubo) ile yüksek ateş, titreme ile başvuruyor. Yakın zamanda laboratuvarda fare ısırığına maruz kalmış. Gram boyasında ikili kutup boyanan Gram-negatif kokobasil görülüyor.",
+      "options": [
+        "A) Brucella melitensis",
+        "B) Francisella tularensis",
+        "C) Yersinia pestis",
+        "D) Bartonella henselae",
+        "E) Pasteurella multocida"
+      ],
+      "correct_answer": "C) Yersinia pestis",
+      "explanation": "Yersinia pestis veba hastalığının etkenidir. Sıçan piresi ve enfekte hayvan teması ile bulaşır. Bubonic plague (bubonik veba): ateş, titreme ve bölgesel son derece ağrılı lenfadenopati (bubo) ile karakterizedir. Gram boyamada 'güvenlik iğnesi' (safety pin) veya ikili kutup boyanan Gram-negatif kokobasil görülür. Tedavide streptomisin veya gentamisin (birinci seçenek), alternatif doksisiklin veya kloramfenikol kullanılır. Biyoterörizm ajanıdır. Francisella tularemi yapar ve ülseroglandüler form görülür. Bartonella kedi tırmığı hastalığı yapar.",
+      "story_hint": "💡 HİKAYE: 'Ağrılı Bubo Veba' — Fare + bubo (ağrılı LAP) + kutup boyanan Gram(-) = Yersinia pestis. Veba = ağrılı bubo + ikili kutup boyama!"
+    },
+    {
+      "id": "mvak-062",
+      "case": "Vaka: 35 yaşında avcı erkek, 1 hafta önce tavşan derisi yüzerken sağ elinde ülser ve koltuk altında şişlik gelişmiş. Ateş ve halsizlik mevcut. Lezyondan alınan sürüntüde zayıf boyanan Gram-negatif küçük basil görülüyor. Kültür son derece güçlükle üretilebiliyor.",
+      "options": [
+        "A) Bartonella henselae",
+        "B) Brucella abortus",
+        "C) Francisella tularensis",
+        "D) Yersinia pestis",
+        "E) Pasteurella multocida"
+      ],
+      "correct_answer": "C) Francisella tularensis",
+      "explanation": "Francisella tularensis tularemi hastalığının etkenidir. Tavşan, sincap ve kene ile temas ile bulaşır. Ülseroglandüler form: enfeksiyon bölgesinde ülser + bölgesel lenfadenopati. Kültürde üretilmesi çok güçtür (BSL-3 gerektirir). Biyoterörizm ajanı listesindedir. Tedavide streptomisin veya gentamisin kullanılır; alternatif doksisiklin veya siprofloksasin. Bartonella kedi tırmığı ile bulaşır ve aksiller lenfadenopati yapar. Y. pestis'te ağrılı bubo ve birden fazla bölge tutulumu görülür.",
+      "story_hint": "💡 HİKAYE: 'Tavşan Ülseri Tularemi' — Tavşan/kene + ülser + LAP + zor üreyen Gram(-) = Francisella tularensis. Tularemi = tavşan avcısı hastalığı!"
+    },
+    {
+      "id": "mvak-063",
+      "case": "Vaka: 32 yaşında erkek, 3 haftadır süren aralıklı ateş (48 saatte bir), titreme ve terleme atakları ile başvuruyor. 2 ay önce Gana'ya seyahat etmiş. Hemogram: hemoglobin 8.2 g/dL, trombosit 75.000/mm³. Periferik yaymada eritrositlerde yüzük (ring) formu ve multiple enfeksiyon görülüyor. Beyin tutulumu gelişiyor.",
+      "options": [
+        "A) Plasmodium vivax",
+        "B) Plasmodium ovale",
+        "C) Plasmodium malariae",
+        "D) Plasmodium falciparum",
+        "E) Babesia microti"
+      ],
+      "correct_answer": "D) Plasmodium falciparum",
+      "explanation": "Plasmodium falciparum en ağır sıtma formunu yapar ve Afrika seyahatiyle ilişkilidir. Eritrositlerde multiple enfeksiyon (birden fazla yüzük formu aynı hücrede) ve appliqué (uçtan basan) formu karakteristiktir. Serebral malaria (bilinç kaybı, konvülsiyon), ağır anemi, trombositopeni ve böbrek yetmezliği ciddi komplikasyonlardır. Blackwater fever (hemoliz + hemoglobinüri + böbrek yetmezliği) görülebilir. Tedavide artemisin bazlı kombinasyon; ağır vakada IV artesunat kullanılır. P. vivax/ovale karaciğerde hipnozoit bırakarak relaps yapar, klorokin + primakin tedavisi gerekir.",
+      "story_hint": "💡 HİKAYE: 'Afrika Beyin Sıtma' — Afrika + multiple yüzük formu + beyin tutulumu = P. falciparum. En ölümcül sıtma, karaciğerde hipnozoit bırakmaz!"
+    },
+    {
+      "id": "mvak-064",
+      "case": "Vaka: 28 yaşında erkek, 3 ay önce Hindistan'dan döndükten sonra ateş, titreme atakları ile tekrarlayan epizodlar yaşıyor. Sıtma tedavisi almıştı ve iyileşmişti. Şimdi yeniden aynı tablo başladı. Karaciğer biyopsisinde dormant parazit formları saptanıyor.",
+      "options": [
+        "A) Plasmodium falciparum relaps",
+        "B) Plasmodium malariae rekürrensi",
+        "C) Plasmodium vivax/ovale relaps",
+        "D) Babesia microti enfeksiyonu",
+        "E) Tekrarlayan grip"
+      ],
+      "correct_answer": "C) Plasmodium vivax/ovale relaps",
+      "explanation": "Plasmodium vivax ve P. ovale, karaciğerde hipnozoit (dormant form) bırakarak haftalarca, aylarca veya yıllarca sonra relaps yapar. Karaciğer biyopsisinde dormant formlar görülmesi bunu doğrular. Tedavide kan formu için klorokin + karaciğer hipnozoit eradikasyonu için primakin (G6PD eksikliği ekarte edilerek) kullanılır. P. falciparum hipnozoit bırakmaz, erken rekürrans (rekrudesans) yapabilir. P. malariae uzun kuluçka ile kronik enfeksiyon yapabilir ama relaps mekanizması farklıdır. Primakin olmadan relaps önlenemez.",
+      "story_hint": "💡 HİKAYE: 'Karaciğer Uyuyan Sıtma' — Tedavi sonra tekrar sıtma + Hindistan/Afrika + karaciğer hipnozoit = P. vivax/ovale. Primakin olmadan relaps önlenemez!"
+    },
+    {
+      "id": "mvak-065",
+      "case": "Vaka: 29 yaşında gebe kadın, 24. haftada rutin kontrolde Toxoplasma IgG(+) IgM(+) bulunuyor. İlk trimesterde kedi temizliği yapmış. Amniyosentez kararı alınıyor. Konjenital toksoplazma riski değerlendiriliyor.",
+      "options": [
+        "A) Tedavi gerekmez, sadece izlem",
+        "B) Pirimetamin + sülfadiazin başla",
+        "C) Spiramisin başla (fetal geçişi azaltmak için)",
+        "D) Azitromisin başla",
+        "E) Klindamisin başla"
+      ],
+      "correct_answer": "C) Spiramisin başla (fetal geçişi azaltmak için)",
+      "explanation": "Gebelikte akut Toxoplasma enfeksiyonu (IgM pozitif) plasenta üzerinden fetusa geçerek konjenital toksoplazma yapabilir. Spiramisin, fetusa geçişi azaltmak için (plasentada konsantre olur) tercih edilir, özellikle erken gebelikte ve amniyosentez sonucu beklenen dönemde kullanılır. Amniyosentez ile fetal tutulum doğrulandığında pirimetamin + sülfadiazin + folinik asit tedavisine geçilir. Konjenital toksoplazma: hidrosefali, koryoretinit, serebral kalsifikasyon triadı. Kedi dışkısı ve çiğ et ana bulaşma yollarıdır. Spiramisin gebe güvenli profili nedeniyle tercih edilir.",
+      "story_hint": "💡 HİKAYE: 'Gebe Kedi Spiramisin' — Gebe + kedi + Toxo IgM(+) = Spiramisin başla. Spiramisin plasenta bariyerini korur, fetusa geçişi azaltır!"
+    },
+    {
+      "id": "mvak-066",
+      "case": "Vaka: 10 yaşında erkek çocuk, Hindistan'dan yeni göç eden ailesiyle birlikte gelmiş. Düşük dereceli ateş, karaciğer ve dalak büyümesi, kilo kaybı ve aşırı yorgunluk şikayetleri 2 aydır devam ediyor. Kemik iliği aspirasyon örneğinde intrasellüler amastigot formlar görülüyor.",
+      "options": [
+        "A) Plasmodium falciparum",
+        "B) Trypanosoma brucei",
+        "C) Visceral leishmaniasis (kala-azar)",
+        "D) Schistosoma mansoni",
+        "E) Babesia microti"
+      ],
+      "correct_answer": "C) Visceral leishmaniasis (kala-azar)",
+      "explanation": "Visceral leishmaniasis (kala-azar), Leishmania donovani'nin kum sineği (Phlebotomus) ile bulaşmasıyla oluşur. Hepatosplenomegali, dalgalı ateş, kilo kaybı ve pansitopeni karakteristik bulgulardır. Deri rengi koyulaşabilir (kala-azar = 'siyah hastalık'). Kemik iliğinde makrofajlar içinde amastigot formları görülmesi tanıyı doğrular. Tedavide amfoterisin B (liposomal) veya miltefosin kullanılır. Plasmodium'da periferik yaymada eritrositlerde ring formları görülür. Trypanosoma'da uyku hastalığı (Afrika) veya Chagas hastalığı (Latin Amerika) görülür.",
+      "story_hint": "💡 HİKAYE: 'Kum Sineği Dalak' — Endemik bölge + hepatosplenomegali + kemik iliğinde amastigot = Visceral Leishmaniasis. Kala-azar = kum sineği + iç organ!"
+    },
+    {
+      "id": "mvak-067",
+      "case": "Vaka: 8 yaşında erkek çocuk, kırsal alanda koyun çobanı babasıyla birlikte çalışıyor. Karın ağrısı ve karında ele gelen kistik kitle ile başvuruyor. Karaciğer USG'sinde kalsifikasyon içeren kistik lezyon görülüyor. Kist aspirasyonu sonrası anafilaksi gelişiyor.",
+      "options": [
+        "A) Entamoeba histolytica karaciğer absesi",
+        "B) Pyojenik karaciğer absesi",
+        "C) Echinococcus granulosus (kist hidatik)",
+        "D) Toxocara canis",
+        "E) Fasciola hepatica"
+      ],
+      "correct_answer": "C) Echinococcus granulosus (kist hidatik)",
+      "explanation": "Echinococcus granulosus kist hidatik hastalığının etkenidir. Köpek/koyun döngüsü ile bulaşır; koyun çobanlarında sık görülür. Karaciğerde yavaş büyüyen kistik lezyon, kalsifikasyon ve anafilaksi riski karakteristiktir. Kist aspirasyonu anafilaksiye yol açabilir (kist içeriğinin peritoneal alana sızması). Tedavide PAIR (Percutaneous Aspiration, Infusion, Re-aspiration) + albendazol veya cerrahi uygulanır. Cerrahi öncesi albendazol başlanmalıdır. E. histolytica absesinde 'ançüez sosu' görünüm ve kalsifikasyon beklenmez. Fasciola epigastrik ağrı ve eozinofili ile seyreder.",
+      "story_hint": "💡 HİKAYE: 'Çoban Koyun Kist' — Koyun çobanı + karaciğer kisti + kalsifikasyon + anafilaksi riski = Echinococcus. PAIR öncesi albendazol!"
+    },
+    {
+      "id": "mvak-068",
+      "case": "Vaka: 55 yaşında kemik iliği nakli sonrası bağışıklığı baskılanmış hasta, sinüs bölgesinde şiddetli ağrı, ateş ve göz çevresinde siyah nekrotik lezyon ile başvuruyor. BT'de sinüs duvarı invazyonu görülüyor. KOH preparatında geniş non-septalı (pauci-septalı) hifler saptanıyor.",
+      "options": [
+        "A) Aspergillus fumigatus",
+        "B) Candida albicans",
+        "C) Cryptococcus neoformans",
+        "D) Mucor/Rhizopus (Mukormikoz)",
+        "E) Fusarium solani"
+      ],
+      "correct_answer": "D) Mucor/Rhizopus (Mukormikoz)",
+      "explanation": "Mukormikoz (Zigomikoz), Mucor ve Rhizopus türlerinin yol açtığı anjioinvazif bir fungal enfeksiyondur. Diyabetik ketoasidoz (DKA), hematolojik malignite ve immünsüpresyon risk faktörüdür. Rinoorbital-serebral form: sinüsten başlayıp orbital ve serebral alana yayılır. Siyah nekrotik lezyon ve anjioinvazyon karakteristiktir. KOH'da geniş, az septalı hifler görülür. Tedavide liposomal amfoterisin B + agresif cerrahi debridman kullanılır. Aspergillus ince septalı hif yapar. Mukormikoz sırasında hipoksi + demir (DKA'da) fungusun büyümesini tetikler.",
+      "story_hint": "💡 HİKAYE: 'Siyah Nekroz Sinüs' — İmmünsüprese/DKA + siyah nekroz + non-septalı hif = Mukormikoz. Siyah = nekroz = Mucor!"
+    },
+    {
+      "id": "mvak-069",
+      "case": "Vaka: 40 yaşında HIV pozitif erkek hasta (CD4: 210/mm³), güvercin barınaklarının bulunduğu depoda çalışıyor. Ateş, öksürük ve kilo kaybı ile başvuruyor. PA grafide yaygın nodüler infiltratlar görülüyor. Balgam kültüründe küçük maya benzeri organizmalar saptanıyor. Kompleman fiksasyon testi pozitif.",
+      "options": [
+        "A) Cryptococcus neoformans",
+        "B) Pneumocystis jirovecii",
+        "C) Histoplasma capsulatum",
+        "D) Coccidioides immitis",
+        "E) Aspergillus fumigatus"
+      ],
+      "correct_answer": "C) Histoplasma capsulatum",
+      "explanation": "Histoplasma capsulatum, kuş (güvercin, tavuk) ve yarasa dışkısıyla kirlenmiş toprak ile bulaşan ve endemik bölgelerde sık görülen bir mantar hastalığının etkenidir. İmmünokompetanlarda genellikle asemptomatik; immünsüprese hastalarda dissemine enfeksiyon yapar. Küçük intrasellüler maya formları makrofajlar içinde görülür. Kompleman fiksasyon testi veya üriner antijen testi tanıda kullanılır. Tedavide itrakonazol (hafif-orta) veya amfoterisin B (ağır) kullanılır. Cryptococcus daha çok menenjit yapar ve güvercin dışkısıyla ilişkilidir. PCP bilateral infiltrat yapar.",
+      "story_hint": "💡 HİKAYE: 'Güvercin Barınağı Mantar' — Güvercin dışkısı + HIV + nodüler infiltrat + küçük intrasellüler maya = Histoplasma. Güvercin = Histoplasma!"
+    },
+    {
+      "id": "mvak-070",
+      "case": "Vaka: 3 yaşında kız çocuk, 3 gündür süren ateş, boyun sertliği ve fotofobi ile başvuruyor. BOS: renk berrak-bulanık, basınç artmış, hücre 850/mm³ (PNL hakimi), glukoz 28 mg/dL (serum glukozunun <40%), protein 180 mg/dL. Gram boyamada ince Gram-negatif diplokok görülüyor.",
+      "options": [
+        "A) Streptococcus pneumoniae",
+        "B) Neisseria meningitidis",
+        "C) Haemophilus influenzae tip b",
+        "D) Listeria monocytogenes",
+        "E) Escherichia coli K1"
+      ],
+      "correct_answer": "C) Haemophilus influenzae tip b",
+      "explanation": "Aşı öncesi dönemde Haemophilus influenzae tip b (Hib), küçük çocuklarda bakteriyel menenjit'in en sık nedeni idi. Kapsüllü Gram-negatif kokobasil görünümündedir. BOS'ta piyojenik menenjit bulguları tipiktir. Hib aşısı ile bu enfeksiyon dramatik biçimde azalmıştır. Tedavide seftriakson veya kloramfenikol kullanılır. N. meningitidis Gram(-) diplokok yapar, genellikle peteşil döküntü ile gelir. S. pneumoniae Gram(+) diplokok yapar, yaşlıları etkiler. Listeria Gram(+) basil olup gebeler ve yaşlılarda görülür.",
+      "story_hint": "💡 HİKAYE: 'Aşısız Çocuk Menenjit' — Küçük çocuk + menenjit + Gram(-) kokobasil = H. influenzae tip b. Aşı ile neredeyse ortadan kalktı!"
+    },
+    {
+      "id": "mvak-071",
+      "case": "Vaka: 19 yaşında kız öğrenci, boğaz ağrısı, ateş (38.5°C), tonsillerde beyaz eksüda ve ağrılı servikal lenfadenopati ile başvuruyor. Hızlı strep testi pozitif bulunuyor. Boğaz kültüründe beta-hemolitik Grup A streptokok üremekte.",
+      "options": [
+        "A) Epstein-Barr virüsü",
+        "B) Streptococcus pyogenes (GAS) farenjiti",
+        "C) Adenovirüs farenjiti",
+        "D) Corynebacterium diphtheriae",
+        "E) Fusobacterium necrophorum"
+      ],
+      "correct_answer": "B) Streptococcus pyogenes (GAS) farenjiti",
+      "explanation": "Streptococcus pyogenes (Grup A Streptokok — GAS) bakteriyel tonsillofarenjitin en sık nedenidir. Centor kriterleri (tonsillar eksüda, ağrılı anterior servikal LAP, ateş, öksürük yokluğu) 3-4 puan olunca antibiyotik başlanır. Tedavide penisilin V (oral 10 gün) veya azitromisin (penisilin alerjisinde) kullanılır. Tedavi edilmezse akut romatizmal ateş komplikasyonu gelişebilir. EBV'de (mononükleoz) posterior servikal LAP, splenomegali ve monosit artışı (atipik lenfositler) görülür. C. diphtheriae'de gri-beyaz boğaz membranı ve boğaz ağrısı ile seyreder.",
+      "story_hint": "💡 HİKAYE: 'Centor Kriterleri' — Tonsillar eksüda + anterior LAP + ateş + öksürük yok = GAS farenjiti. Penisilin ver, romatizmal ateşi önle!"
+    },
+    {
+      "id": "mvak-072",
+      "case": "Vaka: 12 yaşında kız çocuk, boğaz ağrısı, ateş ve boğazda gri membran ile başvuruyor. Membranı soyunca altından kanama oluyor. Boyun şişmiş ('boğa boynu' görünümü). Nefes darlığı gelişmiş. Aşılanma durumu belirsiz.",
+      "options": [
+        "A) Streptococcus pyogenes",
+        "B) Fusobacterium necrophorum",
+        "C) Corynebacterium diphtheriae",
+        "D) Epstein-Barr virüsü",
+        "E) Actinomyces israelii"
+      ],
+      "correct_answer": "C) Corynebacterium diphtheriae",
+      "explanation": "Corynebacterium diphtheriae difteri hastalığının etkenidir. Boğazda sıkı yapışık gri-beyaz psödomembran (soyulunca kanama) ve bull neck (boğa boynu — boyun şişmesi) difteri için patognomoniktir. Eksotoksin (protein sentez inhibitörü) kalp, sinir sistemi ve böbrek hasarına yol açar. Tedavide antitoksin serum (en önemli) + penisilin/eritromisin kullanılır. DPT aşısı ile önlenebilir. S. pyogenes tonsilitte membran daha yumuşak ve kolayca soyulur. EBV'de splenomegali ve atipik lenfositoz görülür.",
+      "story_hint": "💡 HİKAYE: 'Boğa Boynu Gri Membran' — Gri membran + kanama + boğa boynu + aşısız = Difteri. Antitoksin ön koşul!"
+    },
+    {
+      "id": "mvak-073",
+      "case": "Vaka: 65 yaşında erkek, yaygın karın ağrısı, ateş ve bağırsak seslerinin artması ile başvuruyor. Son 2 haftada birden fazla kez antibiyotik kullanmış. Karın BT'de sigmoid kolon çevresinde inflamasyon görülüyor. Dışkıda toksin A ve B pozitif bulunuyor.",
+      "options": [
+        "A) Salmonella enteritidis",
+        "B) Clostridioides difficile",
+        "C) Clostridium perfringens",
+        "D) Campylobacter jejuni",
+        "E) EHEC O157:H7"
+      ],
+      "correct_answer": "B) Clostridioides difficile",
+      "explanation": "Bu vakada antibiyotik kullanım öyküsü, toksin A ve B pozitifliği C. difficile pseudomembranöz kolitini işaret etmektedir. C. difficile sporları antibiyotik ile baskılanmış florada aşırı çoğalır. BT'de 'accordion sign' (kolon duvarında kalınlaşma) görülebilir. Tedavi: hafif ise metronidazol, ağır ise oral vankomisin, nükse yatkın veya ağır-komplike ise fidaksomisin. Fekal mikrobiyota transplantasyonu (FMT) tekrarlayan vakalarda etkilidir. Tanı için dışkıda GDH antijeni (tarama) + toksin testi (doğrulama) kullanılır. EHEC'te antibiyotik öyküsü yoktur ve HUS gelişir.",
+      "story_hint": "💡 HİKAYE: 'Antibiyotik Sonrası Toksin' — Antibiyotik + ishal + toksin A/B(+) = C. difficile. Metro hafif, Vanko ağır, FMT tekrar eden!"
+    },
+    {
+      "id": "mvak-074",
+      "case": "Vaka: 45 yaşında bahçıvan, elindeki bir yara bölgesinden kırmızı çizgi ilerlemekte ve koltuk altında şişlik oluşmakta. Dün gübreyle toprak temizlerken yaralanmış. Ateş 38.2°C. Sürüntü kültüründe sporlu, anaerobik Gram-pozitif basil görülüyor. Lezyonda gaz kabarcıkları dikkat çekiyor.",
+      "options": [
+        "A) Staphylococcus aureus",
+        "B) Clostridium perfringens (gazlı gangren)",
+        "C) Streptococcus pyogenes erizipel",
+        "D) Bacillus anthracis",
+        "E) Erysipelothrix rhusiopathiae"
+      ],
+      "correct_answer": "B) Clostridium perfringens (gazlı gangren)",
+      "explanation": "Clostridium perfringens, toprak ve hayvan dışkısında bulunan sporlu anaerobik bir bakteridir. Derin yara ile toprak teması sonrası gazlı gangren (miyonekroz) gelişebilir. Radyolojik olarak doku içinde gaz ve şiddetli ağrı karakteristiktir. Alfa toksin (fosfolipaz C/lesitinaz) doku hasarından sorumludur. Tedavide acil cerrahi debridman + penisilin G + klindamisin ± hiperbarik oksijen kullanılır. S. pyogenes erizipelinde gaz kabarcıkları beklenmez. Bacillus anthracis deri şarbonunda ağrısız siyah eskar görülür.",
+      "story_hint": "💡 HİKAYE: 'Bahçe Yarası Gaz' — Toprak yarası + gaz kabarcıkları + anaerobik sporlu Gram(+) basil = C. perfringens. Gaz + yara = Gazlı Gangren!"
+    },
+    {
+      "id": "mvak-075",
+      "case": "Vaka: 52 yaşında kadın hasta, sol diz ekleminde ağrı, şişlik, sıcaklık artışı ve hareket kısıtlılığı ile başvuruyor. Ateş 38°C. Diz sıvısı analizi: WBC 65.000/mm³ (%90 PNL), glukoz düşük. Gram boyamada Gram-pozitif kümeler halinde koklar görülüyor. Kültürde koagülaz-pozitif bakteri üremekte.",
+      "options": [
+        "A) Neisseria gonorrhoeae",
+        "B) Streptococcus pyogenes",
+        "C) Staphylococcus aureus",
+        "D) Borrelia burgdorferi",
+        "E) Mycobacterium tuberculosis"
+      ],
+      "correct_answer": "C) Staphylococcus aureus",
+      "explanation": "Staphylococcus aureus, septik artritin en sık nedenidir (%40-50). Eklem sıvısında yüksek WBC (>50.000, PNL hakimi), düşük glukoz ve pozitif kültür septik artriti tanımlar. Koagülaz-pozitif Gram-pozitif kümeler S. aureus'u tanımlar. Hızlı tanı ve tedavi eklem hasarını önlemek için kritiktir. Tedavide nafsilin/oksasilin (MSSA) veya vankomisin (MRSA) + cerrahi drenaj kullanılır. Gonokokal artrit genç cinsel aktif yetişkinlerde görülür ve deri lezyonları eşlik edebilir. Lyme artriti daha kronik seyreder ve Gram boyaması negatiftir.",
+      "story_hint": "💡 HİKAYE: 'Eklem Sarı Sıvı' — Septik artrit + WBC>50.000 + koagülaz(+) Gram(+) kümeler = S. aureus. Eklem sıvısını boşalt, vankomisin ver!"
+    },
+    {
+      "id": "mvak-076",
+      "case": "Vaka: 30 yaşında erkek, son 3 yıldır kistik fibrozis tanısıyla izlenmekte. Sputum kültürlerinde mavi-yeşil pigmentli, oksidaz-pozitif, karbapenem grubu antibiyotiklere dirençli bakteri defalarca üremiş.",
+      "options": [
+        "A) Pseudomonas aeruginosa (mukoid suş)",
+        "B) Staphylococcus aureus MRSA",
+        "C) Burkholderia cepacia",
+        "D) Stenotrophomonas maltophilia",
+        "E) Acinetobacter baumannii"
+      ],
+      "correct_answer": "A) Pseudomonas aeruginosa (mukoid suş)",
+      "explanation": "Pseudomonas aeruginosa, kistik fibrozis (KF) hastalarının akciğerlerinde kronik enfeksiyonun en sık ve en önemli nedenidir. Mukoid (aljinat kapsüllü) suşları KF hastalarında oluşur ve eradike edilmesi neredeyse imkânsızdır. Mavi-yeşil pigment ve oksidaz pozitifliği P. aeruginosa'yı tanımlar. Karbapenem direnci yaygınlaşmaktadır. Tedavide inhale antibiyotikler (tobramisin, kolistin) ve aralıklı IV tedavi kullanılır. Burkholderia cepacia da KF'de görülebilir ancak mavi-yeşil pigment üretmez. S. aureus MRSA oksidaz negatiftir.",
+      "story_hint": "💡 HİKAYE: 'KF Mavi-Yeşil Kronik' — Kistik fibrozis + kronik akciğer + mavi-yeşil pigment = P. aeruginosa mukoid suş. KF hastasını en çok o öldürür!"
+    },
+    {
+      "id": "mvak-077",
+      "case": "Vaka: 55 yaşında kalça protezi olan erkek hasta, 6 ay sonra prostetik eklemde ağrı ve şişlik gelişiyor. Titreme ve ateş yok. Eklem sıvısında WBC 15.000/mm³. Kültürde biyofilm oluşturan koagülaz-negatif stafilokok üremekte. Novobiozine duyarlı.",
+      "options": [
+        "A) Staphylococcus aureus",
+        "B) Staphylococcus saprophyticus",
+        "C) Staphylococcus epidermidis",
+        "D) Streptococcus pyogenes",
+        "E) Enterococcus faecalis"
+      ],
+      "correct_answer": "C) Staphylococcus epidermidis",
+      "explanation": "Staphylococcus epidermidis, prostetik eklem ve kateter enfeksiyonlarının en sık nedenidir. Koagülaz-negatif, novobiozine duyarlı, biyofilm oluşturucu özellikleri karakteristiktir. Biyofilm antibiyotiklere ve fagositoza direnci artırır. Geç prostetik enfeksiyonlar (implantasyondan >3 ay sonra) genellikle S. epidermidis ile gerçekleşir. Tedavide vankomisin + rifampisin kombinasyonu ve prostetik komponentin çıkarılması gerekebilir. S. saprophyticus İYE yapar ve novobiozine dirençlidir. S. aureus koagülaz pozitiftir.",
+      "story_hint": "💡 HİKAYE: 'Protez Biyofilm' — Protez + geç enfeksiyon + koag(-) + novobiozin duyarlı + biyofilm = S. epidermidis. Protez = S. epidermidis yuvası!"
+    },
+    {
+      "id": "mvak-078",
+      "case": "Vaka: 28 yaşında erkek, İntravenöz ilaç bağımlısı, ateş, kalp çarpıntısı ve nefes darlığı ile başvuruyor. Göğüs grafide bilateral septic emboli odakları görülüyor. Ekokardiyografide triküspid kapakta vejetasyon saptanıyor. Kan kültüründe koagülaz-pozitif Gram-pozitif kümeler üremekte.",
+      "options": [
+        "A) Streptococcus viridans",
+        "B) Enterococcus faecalis",
+        "C) Staphylococcus aureus",
+        "D) Streptococcus bovis",
+        "E) HACEK grubu bakteriler"
+      ],
+      "correct_answer": "C) Staphylococcus aureus",
+      "explanation": "IV ilaç kullanıcılarında infektif endokardit (İE) en sık triküspid kapağı tutar ve S. aureus en sık etkendir. Koagülaz-pozitif Gram-pozitif kümeler S. aureus'u gösterir. Septic pulmoner emboli (bilateral buzlu cam veya nodüler infiltratlar) sağ kalp IE'nin önemli bulgusudur. Tedavide nafsilin/oksasilin (MSSA) veya vankomisin (MRSA) 4-6 hafta verilir. S. viridans subakut endokarditi ve native sol kapak IE'yi tercih eder. HACEK grubu gram-negatif bakteriler subakut endokardite yol açar. Streptococcus bovis kolon kanserini işaret eder.",
+      "story_hint": "💡 HİKAYE: 'IV Bağımlı Triküspid' — IV bağımlı + triküspid vejetasyon + pulmoner emboli + S. aureus = Sağ kalp İE. IV bağımlı = triküspid, normal = mitral!"
+    },
+    {
+      "id": "mvak-079",
+      "case": "Vaka: 60 yaşında diş çekimi sonrası 2 hafta geçen kadın hasta, ateş, titreme ve eklem ağrılarıyla başvuruyor. Kalp muayenesinde mitral kapak üfürümü mevcut; romatizmal kalp hastalığı öyküsü var. Ekokardiyografide mitral kapakta vejetasyon izleniyor. Kan kültüründe alfa hemolitik bakteri üremekte.",
+      "options": [
+        "A) Staphylococcus aureus",
+        "B) Streptococcus viridans grubu",
+        "C) Enterococcus faecalis",
+        "D) Streptococcus pyogenes",
+        "E) Haemophilus aphrophilus"
+      ],
+      "correct_answer": "B) Streptococcus viridans grubu",
+      "explanation": "Streptococcus viridans, oral flora üyesidir ve diş prosedürleri sırasında bakteriyemiye yol açarak subakut bakteriyel endokardit (SBE) ve native kapak endokarditine (özellikle hasarlı kapakta mitral tutulum) neden olur. Alfa hemolitik, optochine dirençli (pnömokok değil) özelliktedir. Kronik seyir, Osler nodülleri, Janeway lezyonları, Roth lekeleri görülebilir. Penisilin G veya seftriakson 4 hafta tedavide kullanılır. Yüksek riskli kapak hastalığında diş işlemi öncesi profilaksi önerilir. S. aureus akut enfektif endokardit yapar, daha yıkıcı seyreder.",
+      "story_hint": "💡 HİKAYE: 'Diş Sonrası Mitral' — Diş işlemi + hasarlı kapak + subakut endokardit + alfa hemolitik = S. viridans. Diş = Viridans geçiş kapısı!"
+    },
+    {
+      "id": "mvak-080",
+      "case": "Vaka: 7 yaşında kız çocuk, yüksek ateş, döküntü ve el-ayak şişliği ile başvuruyor. 5 gün boyunca ateş devam etmiş. Muayenede yoğun dudak kızarıklığı, dil papillalarında belirginleşme (çilek dili), konjunktival hiperemi ve el-ayak tabanında kızarıklık saptanıyor. Ekokardiyografide koroner arter anevrizması görülüyor.",
+      "options": [
+        "A) Streptococcal toksik şok sendromu",
+        "B) Kawasaki hastalığı",
+        "C) Stafilokokal haşlanmış deri sendromu",
+        "D) Kızıl hastalığı",
+        "E) Eritema multiforme"
+      ],
+      "correct_answer": "B) Kawasaki hastalığı",
+      "explanation": "Kawasaki hastalığı, etiyolojisi tam bilinmemekle birlikte infektif bir ajan (muhtemelen viral) tarafından tetiklendiği düşünülen ve çocuklarda sistemik vaskülit yapan bir hastalıktır. Tanı kriterleri: ≥5 gün ateş + aşağıdakilerden 4'ü: konjunktival hiperemi, dudak kızarıklığı/çilek dili, el-ayak şişliği/kızarıklığı, polimorf döküntü, servikal LAP. En korkulan komplikasyon koroner arter anevrizması ve miyokardittir. Tedavide IVIG + aspirin kullanılır. Kızılda GAS toksinleri sorumludur ve döküntü yüzden başlar. Haşlanmış deri sendromunda geniş büllöz lezyonlar görülür.",
+      "story_hint": "💡 HİKAYE: '5 Gün Ateş + Çilek Dil' — 5 gün ateş + çilek dili + el şişliği + konjunktivit + koroner anevrizma = Kawasaki. IVIG + Aspirin!"
+    },
+    {
+      "id": "mvak-081",
+      "case": "Vaka: 14 yaşında erkek, boğaz ağrısı, döküntü ve ateşle başvuruyor. Yüzde kızarıklık (perioral solukluk alanı), boyunda ve tüm gövdede zımpara kağıdı hissinde kırmızı döküntü var. Boğaz kültüründe beta hemolitik GAS üremekte. Köpek dili muayenesi: ilk beyaz, sonra çilek.",
+      "options": [
+        "A) Kawasaki hastalığı",
+        "B) Kızamık",
+        "C) Kızıl (Scarlet Fever)",
+        "D) Roseola infantum",
+        "E) Eritema infeksiyozum"
+      ],
+      "correct_answer": "C) Kızıl (Scarlet Fever)",
+      "explanation": "Kızıl, S. pyogenes'in erytrojenik toksin (pyrogenic ekzotoksin A, B veya C) üretmesiyle oluşur. Karakteristik bulgular: farenjit + kaba zımpara kağıdı hissinde kızıl döküntü + perioral solukluk + dil değişimi (önce beyaz çilek dili, sonra kırmızı çilek dili). Döküntü boyun ve gövdeden başlar, avuç içi ve tabanı tutmaz. Komplikasyon: akut romatizmal ateş ve glomerülonefrit. Penisilin V veya azitromisin ile tedavi edilir. Kawasaki'de döküntü farklı tip ve koroner tutulum var. Kızamıkta Koplik lekeleri ve makülopapüler döküntü gözlenir.",
+      "story_hint": "💡 HİKAYE: 'Zımpara Döküntü Çilek Dil' — GAS + farenjit + zımpara döküntü + çilek dil + perioral solukluk = Kızıl. S. pyogenes toksin ateşi!"
+    },
+    {
+      "id": "mvak-082",
+      "case": "Vaka: 2 yaşında çocuk, yüksek ateş (40°C) ile 3 gün hastanede yatmış. Antibiyotik başlanmamış. Ateş düşünce vücutta pembe makülopapüler döküntü beliriyor. Genel durumu iyi. HHV-6 testi pozitif.",
+      "options": [
+        "A) Kızıl hastalığı",
+        "B) Kızamık",
+        "C) Roseola infantum (altıncı hastalık)",
+        "D) Eritema infeksiyozum (beşinci hastalık)",
+        "E) Varisella"
+      ],
+      "correct_answer": "C) Roseola infantum (altıncı hastalık)",
+      "explanation": "Roseola infantum (Altıncı hastalık), HHV-6 veya HHV-7'nin yol açtığı, 6 ay-2 yaş çocuklarda görülen viral ekzantemdir. 3-5 gün yüksek ateş, ardından ateşin düşmesiyle birlikte gövdede başlayan döküntü karakteristiktir (ateş düşünce döküntü çıkar — diğer eksantemlerin tersi). Döküntü 1-2 gün içinde kaybolur. Febril konvülsiyonlara yol açabilir. Tedavi destekleyicidir. Eritema infeksiozum'da (5. hastalık, Parvovirüs B19) önce 'tokat yenmiş yanak' görünümü oluşur. Kızıl GAS farenjiti ile birliktedir.",
+      "story_hint": "💡 HİKAYE: 'Ateş Düşünce Döküntü' — 6 ay-2 yaş + yüksek ateş → ateş düşünce döküntü = Roseola (HHV-6). Altıncı hastalık = önce ateş, sonra döküntü!"
+    },
+    {
+      "id": "mvak-083",
+      "case": "Vaka: 8 yaşında kız çocuk, ilkbahar döneminde yanaklarında 'tokat yenmiş' görünümde kızarıklık ve gövde-ekstremitelerde dantel benzeri döküntü ile başvuruyor. Hafif ateş mevcut. Hemolizik anemi hastası olan kardeşinde aplastik kriz gelişiyor.",
+      "options": [
+        "A) Roseola infantum",
+        "B) Kızamık",
+        "C) Eritema infeksiyozum (5. hastalık / Parvovirüs B19)",
+        "D) Kızıl",
+        "E) Varisella"
+      ],
+      "correct_answer": "C) Eritema infeksiyozum (5. hastalık / Parvovirüs B19)",
+      "explanation": "Eritema infeksiyozum (5. hastalık), Parvovirüs B19'un yol açtığı viral ekzantemdir. Çocuklarda 'tokat yenmiş yanak' döküntüsü ve gövde-ekstremitelerde dantel benzeri döküntü karakteristiktir. Hemolitik anemisi olan kişilerde aplastik kriz, gebede hidrops fetalis ve geçici kemik iliği supresyonu yapabilir. Tanı seroloji veya PCR ile konulur. Hedefe spesifik bir tedavisi yoktur. Roseola'da ateş sonrası gövde döküntüsü olur. Kızıl GAS farenjiti ile birliktedir. Gebede Parvovirüs B19 önemli bir risktir.",
+      "story_hint": "💡 HİKAYE: 'Tokat Yanak Dantel' — Tokat yenmiş yanak + dantel döküntü = Parvovirüs B19 (5. hastalık). Hemolitik anemide aplastik kriz tetikler!"
+    },
+    {
+      "id": "mvak-084",
+      "case": "Vaka: 35 yaşında kadın, 2 haftadır süren ateş, boğaz ağrısı, halsizlik ve sağ ön boyun şişliği ile başvuruyor. Tonsillerde eksüda, posterior servikal lenfadenopati ve hafif splenomegali saptanıyor. Hemogramda atipik lenfositler %15 görülüyor. Monospot testi pozitif.",
+      "options": [
+        "A) Streptococcus pyogenes farenjiti",
+        "B) Adenovirüs farenjiti",
+        "C) İnfeksiyöz mononükleoz (EBV)",
+        "D) CMV enfeksiyonu",
+        "E) HIV akut enfeksiyonu"
+      ],
+      "correct_answer": "C) İnfeksiyöz mononükleoz (EBV)",
+      "explanation": "İnfeksiyöz mononükleoz (IM), EBV'nin yol açtığı ve 'öpücük hastalığı' olarak bilinir. Ateş, farenjit/tonsillit, posterior servikal lenfadenopati, splenomegali ve atipik lenfositoz (Downey hücreleri) klasik bulgulardır. Monospot testi (heterofil antikor testi) pozitifliği tanıyı destekler. Ampisilin verilirse yaygın makülopapüler döküntü gelişir (ampisilin döküntüsü). Dalak rüptürü ciddi komplikasyondur; temas sporundan kaçınılmalıdır. EBV ayrıca Burkitt lenfoma, nazofarenks karsinomu ile ilişkilidir. CMV'de monospot negatif olabilir, seroloji ile ayırt edilir.",
+      "story_hint": "💡 HİKAYE: 'Monospot Pozitif Ampisilin Döküntü' — Ateş + posterior LAP + splenomegali + atipik lenfosit + monospot(+) = EBV. Ampisilin verme!"
+    },
+    {
+      "id": "mvak-085",
+      "case": "Vaka: 25 yaşında erkek hasta, 10 gün önce HIV risk teması sonrası ateş, farenjit, lenfadenopati ve makülopapüler döküntü gelişmiş. HIV 4. kuşak testi (antijen/antikor) pozitif ancak Western Blot belirsiz sonuç veriyor. HIV RNA (viral yük) yüksek.",
+      "options": [
+        "A) EBV mononükleoz",
+        "B) CMV enfeksiyonu",
+        "C) Akut HIV retroviral sendromu",
+        "D) Sekonder sifiliz",
+        "E) İnfluenza"
+      ],
+      "correct_answer": "C) Akut HIV retroviral sendromu",
+      "explanation": "Akut HIV retroviral sendromu (primer HIV enfeksiyonu), bulaştan 2-4 hafta sonra gelişen ve 'mononükleoz benzeri' tablo ile karakterizedir. Ateş, farenjit, lenfadenopati, makülopapüler döküntü ve miyalji görülür. Bu dönemde HIV RNA yüksektir (yüksek viral yük = yüksek bulaşma riski) ancak antikorlar henüz tam oluşmamıştır (pencere periyodu). 4. kuşak testler p24 antijeni + antikoru birlikte saptayarak pencere dönemini kısaltır. Erken antiretroviral tedavi başlanması önerilir. Monospot EBV'yi, sifiliz serolojisi TP'yi ayırt ettirir.",
+      "story_hint": "💡 HİKAYE: 'Risk Sonrası Mono Benzeri' — Yüksek risk teması + 2-4 hafta + mononükleoz benzeri tablo + yüksek viral yük = Akut HIV. Pencere periyodunda antikor eksik!"
+    },
+    {
+      "id": "mvak-086",
+      "case": "Vaka: 45 yaşında erkek, sol üst karın ağrısı, ateş ve kilo kaybı ile başvuruyor. ABD'nin güneybatısından gelmiş. PA grafide sol üst lobda nodüler lezyon görülüyor. BAL örneğinde fıçı şeklinde çift duvarlı sporanjiumu andıran büyük küreler görülüyor. Kompleman fiksasyon testi pozitif.",
+      "options": [
+        "A) Histoplasma capsulatum",
+        "B) Aspergillus fumigatus",
+        "C) Coccidioides immitis",
+        "D) Blastomyces dermatitidis",
+        "E) Cryptococcus neoformans"
+      ],
+      "correct_answer": "C) Coccidioides immitis",
+      "explanation": "Coccidioides immitis koksidioidomikozun etkenidir ve ABD'nin güneybatısı ile Latin Amerika'da (endemik bölge) görülür. Topraktan inhalasyon yoluyla bulaşır. Dokuya karakteristik büyük küreler (sferüller) içinde endosporlar oluşturur. İmmünokompetanlarda genellikle sınırlı pnömoni; immünsüprese hastalarda dissemine tutulum görülür. Kompleman fiksasyon testi ve idrar antijeni tanıda kullanılır. Tedavide flukonazol veya amfoterisin B kullanılır. Histoplasma'da küçük intrasellüler maya formları görülür. Blastomyces'te geniş tabanlı tomurcuklanan maya görülür.",
+      "story_hint": "💡 HİKAYE: 'Güneybatı ABD Küre Mantar' — Güneybatı ABD + nodüler lezyon + sferül (büyük küre endospor) = Coccidioides. Sferül = Koksidio patognomoniku!"
+    },
+    {
+      "id": "mvak-087",
+      "case": "Vaka: 38 yaşında inek çobanı, Wisconsin'de yaşayan erkek hasta, deri lezyonları (verrüköz plaklar), akciğer infiltratı ve kemik ağrısı ile başvuruyor. Doku örneğinde geniş tabanlı tomurcuklanan büyük maya hücreleri görülüyor.",
+      "options": [
+        "A) Histoplasma capsulatum",
+        "B) Coccidioides immitis",
+        "C) Blastomyces dermatitidis",
+        "D) Cryptococcus neoformans",
+        "E) Paracoccidioides brasiliensis"
+      ],
+      "correct_answer": "C) Blastomyces dermatitidis",
+      "explanation": "Blastomyces dermatitidis blastomikozun etkenidir ve Kuzey Amerika'da (özellikle Mississipi-Ohio nehir vadileri, Büyük Göller) görülür. Toprak ve çürüyen ahşapla temas ile bulaşır. Akciğer tutulumu (pnömoni) + deri tutulumu (verrüköz plaklar) + kemik tutulumu tipiktir. KOH preparatında geniş tabanlı tomurcuklanan büyük maya hücreleri (tek tomurcuk, geniş kaide) görülür. Tedavide itrakonazol (hafif-orta) veya amfoterisin B (ağır) kullanılır. Coccidioides sferüller yapar. Histoplasma küçük intrasellüler mayadır.",
+      "story_hint": "💡 HİKAYE: 'Büyük Göller Geniş Tomurcuk' — Kuzey Amerika + verrüköz deri + geniş tabanlı tomurcuklanan maya = Blastomyces. Geniş taban = Blasto!"
+    },
+    {
+      "id": "mvak-088",
+      "case": "Vaka: 55 yaşında erkek, düzenli hemodiyaliz hastası, ateş, titreme ve kan kültüründe maya üremesi saptanıyor. Santral venöz kateterin çıkarılması gerekiyor. KOH preparatında psödohifler ve tomurcuklanan hücreler görülüyor.",
+      "options": [
+        "A) Cryptococcus neoformans",
+        "B) Histoplasma capsulatum",
+        "C) Candida albicans kandidemi",
+        "D) Aspergillus fumigatus",
+        "E) Trichosporon asahii"
+      ],
+      "correct_answer": "C) Candida albicans kandidemi",
+      "explanation": "Candida albicans kan dolaşımına girerek (kandidemi) özellikle kateter, geniş spektrumlu antibiyotik kullanımı, TPN, immünsüpresyon ve böbrek yetmezliğinde sistemik enfeksiyona yol açar. KOH preparatında psödohifler ve tomurcuklanan maya görülmesi C. albicans'ı destekler. Kan kültürü pozitifliğinde kateterin çıkarılması zorunludur. Tedavide ekinokandinler (kaspofungin — birinci seçenek) veya flukonazol (duyarlı suşlarda) kullanılır. Cryptococcus kapsüllü, mürekkep boyamada görünür. Aspergillus ince septalı hif yapar, kan kültüründe nadiren ürer.",
+      "story_hint": "💡 HİKAYE: 'Kateter Kan Kültürü Maya' — Kateter + kan kültürü maya + psödohif = Candida kandidemi. Kateteni çıkar, ekinokandin başla!"
+    },
+    {
+      "id": "mvak-089",
+      "case": "Vaka: 55 yaşında erkek hasta, yüz sol yarısında dışkulak kanalında şiddetli ağrı ve kabarcıklar, yüz felci (periferik fasiyal paralizi) ve baş dönmesiyle başvuruyor. Otoskopide kulak kepçesi ve dış kulak yolunda veziküler lezyonlar görülüyor.",
+      "options": [
+        "A) HSV-1 fasiyal nörit",
+        "B) Otitis eksterna maligna",
+        "C) Ramsay Hunt sendromu (VZV)",
+        "D) Bell paralizisi (idiyopatik)",
+        "E) Lyme hastalığı nörolojik tutulum"
+      ],
+      "correct_answer": "C) Ramsay Hunt sendromu (VZV)",
+      "explanation": "Ramsay Hunt sendromu, Varicella Zoster virüsünün (VZV) genikulat ganglion reaktivasyonu ile oluşur. Kulak kepçesi ve dış kulak yolunda veziküler lezyonlar, ipsilateral periferik fasiyal paralizi (7. kranial sinir) ve işitme/denge bozukluğu (8. kranial sinir) kombinasyonu tanıya yönlendirir. Tedavide asiklovir veya valasiklovir + steroid (prednizon) kullanılır. Bell paralizisinde döküntü yoktur. HSV-1'de fasiyal veziküller daha nadir ve genellikle dudakta görülür. Lyme hastalığında bilateral fasiyal paralizi olabilir.",
+      "story_hint": "💡 HİKAYE: 'Kulak Veziküllü Yüz Felci' — Kulak + veziküller + fasiyal paralizi + baş dönmesi = Ramsay Hunt (VZV). Genikulat ganglion reaktivasyonu = VZV!"
+    },
+    {
+      "id": "mvak-090",
+      "case": "Vaka: 4 yaşında aşısız çocuk, yüksek ateş, konjunktivit, koryza ve ağız içinde küçük beyaz noktalar (Koplik lekeleri) ile başvuruyor. 2 gün sonra kulak arkasından başlayan makülopapüler döküntü gövdeye yayılıyor.",
+      "options": [
+        "A) Rubella",
+        "B) Roseola infantum",
+        "C) Kızamık (Measles — Rubeola)",
+        "D) Eritema infeksiyozum",
+        "E) Suçiçeği (Varisella)"
+      ],
+      "correct_answer": "C) Kızamık (Measles — Rubeola)",
+      "explanation": "Kızamık (Rubeola), Paramyxoviridae ailesinden Measles virüsünün yol açtığı oldukça bulaşıcı bir viral hastalıktır. Ateş, öksürük, koryza, konjunktivit (3K) ve Koplik lekeleri (yanak mukozasında beyaz noktalar — patognomonik) ile başlar; 3-5. günde kulak arkasından başlayan döküntü gövdeye yayılır. Komplikasyonlar: pnömoni, ensefaslit, subakut sklerozan panensefalit (SSPE). MMR aşısı ile önlenebilir. Rubella daha hafif seyreder ve döküntü önce yüzden başlar. Koplik lekeleri kızamığa özgüdür.",
+      "story_hint": "💡 HİKAYE: 'Koplik = Kızamık' — Ateş + 3K (öksürük, koryza, konjunktivit) + Koplik lekesi + kulak arkası döküntü = Kızamık. Koplik = Patognomonik!"
+    },
+    {
+      "id": "mvak-091",
+      "case": "Vaka: 12 yaşında gebe olmayan kız çocuk, hafif ateş, posterior oksipital lenfadenopati ve yüzden başlayan ince makülopapüler döküntü ile başvuruyor. Döküntü 3 gün içinde kayboluyor. Rubella IgM pozitif.",
+      "options": [
+        "A) Kızamık (Rubeola)",
+        "B) Kızıl",
+        "C) Rubella (Alman kızamığı)",
+        "D) Roseola",
+        "E) Eritema infeksiyozum"
+      ],
+      "correct_answer": "C) Rubella (Alman kızamığı)",
+      "explanation": "Rubella (Alman kızamığı), Togaviridae ailesinden Rubella virüsünün yol açtığı hafif seyirli eksantemdir. Posterior oksipital ve retroauriküler lenfadenopati, hafif ateş ve yüzden başlayan kısa süreli döküntü karakteristiktir. Gebe kadında rubella enfeksiyonu, özellikle 1. trimesterde konjenital rubella sendromuna (KRS) yol açar: konjenital kalp hastalığı, sağırlık, katarakt. MMR aşısı ile önlenebilir. Rubeola'da Koplik lekeleri ve 3K semptomları daha belirgindir. Eritema infeksiozum'da tokat yenmiş yanak görünümü vardır.",
+      "story_hint": "💡 HİKAYE: 'Oksipital LAP 3 Gün Döküntü' — Posterior LAP + hafif döküntü + 3 gün = Rubella. Gebe geçirirse: kalp + katarakt + sağırlık!"
+    },
+    {
+      "id": "mvak-092",
+      "case": "Vaka: 65 yaşında bağışıklığı sağlıklı kadın, 3 gün önce sağ göğüs duvarında bant şeklinde yanma-batma ağrısı başlamış. Bugün aynı dermatomal bölgede veziküler döküntü ortaya çıkıyor. Ateş hafif. Anti-VZV tedavisi başlanacak.",
+      "options": [
+        "A) HSV-2 reaktivasyonu",
+        "B) Kontakt dermatit",
+        "C) Herpes Zoster (Zona)",
+        "D) Büllöz impetigo",
+        "E) Psoriazis"
+      ],
+      "correct_answer": "C) Herpes Zoster (Zona)",
+      "explanation": "Herpes Zoster (Zona), dorsal kök ganglionda latent kalan Varicella Zoster virüsünün reaktivasyonu ile oluşur. Tek taraflı dermatomal dağılımda veziküler döküntü ve öncesinde ağrı/yanma karakteristiktir. Yaşlılarda ve immünsüprese kişilerde sık görülür. Tedavide asiklovir, valasiklovir veya famsiklovir kullanılır; erken başlanması önemlidir. Postherpetik nöralji (PHN) önemli komplikasyondur. Zoster vaksinasyonu (shingrix) ile PHN riski azaltılır. HSV-2 bel altı dermatomları tutar. Kontakt dermatit alerjik temas öyküsüyle olur.",
+      "story_hint": "💡 HİKAYE: 'Bant Ağrısı Vezikül' — Yaşlı + dermatomal yanma + veziküler döküntü = Herpes Zoster. Latent VZV yeniden uyandı!"
+    },
+    {
+      "id": "mvak-093",
+      "case": "Vaka: 6 yaşında kız çocuk, 3 gün önce hafif ateş, ardından tüm vücuda yayılan, farklı evrelerde (papül, vezikül, krust) eş zamanlı döküntü ile başvuruyor. Özellikle saçlı deriye de döküntü yayılmış. Dudak mukozasında da lezyonlar mevcut.",
+      "options": [
+        "A) El-Ayak-Ağız hastalığı",
+        "B) Kızamık",
+        "C) Varisella (suçiçeği)",
+        "D) Kızıl",
+        "E) Molluscum contagiosum"
+      ],
+      "correct_answer": "C) Varisella (suçiçeği)",
+      "explanation": "Varisella (suçiçeği), Varicella Zoster virüsü (VZV) tarafından oluşturulur. Farklı evrelerde (papül, vezikül, püstül, krust) eş zamanlı lezyonlar bulunması — polimorf döküntü — ve saçlı deriyi de tutması karakteristiktir. Mukoza lezyonları eşlik edebilir. Komplikasyonlar: sekonder bakteriyel enfeksiyon, serebellar ensefalit (çocuk), pnömoni (yetişkin, immünsüprese). Aspirin verilmesi Reye sendromuna yol açabilir. Asiklovir bağışıklığı baskılanmışlarda kullanılır. VZV aşısı ile önlenebilir. El-ayak-ağız hastalığında (Coxsackie A16) avuç içi ve ayak tabanında lezyonlar lokalizedir.",
+      "story_hint": "💡 HİKAYE: 'Polimorf Döküntü Saçlı Deri' — Saçlı deri + farklı evrede eş zamanlı lezyonlar = Varisella. Aspirin verme, Reye tehlikesi!"
+    },
+    {
+      "id": "mvak-094",
+      "case": "Vaka: 3 yaşında erkek çocuk, ateş ve ağızda ağrılı lezyonlar nedeniyle yemek yiyemiyor. Avuç içinde ve ayak tabanında veziküller var. Ağız içinde ülserler mevcut. Salgın yuvada da görülmüş.",
+      "options": [
+        "A) Varisella",
+        "B) Herpangina",
+        "C) El-Ayak-Ağız hastalığı (Coxsackie A)",
+        "D) Kızamık",
+        "E) HSV primer gingivostomatit"
+      ],
+      "correct_answer": "C) El-Ayak-Ağız hastalığı (Coxsackie A)",
+      "explanation": "El-Ayak-Ağız (EAA) hastalığı, Coxsackievirus A16 (ve Enterovirus 71) tarafından oluşturulan ve özellikle çocuklarda görülen viral ekzantemdir. Ağız içinde ağrılı ülserler, avuç içi ve ayak tabanında veziküller karakteristiktir. Çocuk yuvalarında salgın yapar. Tedavi destekleyicidir; prognoz genellikle iyidir. Enterovirus 71 ile ilişkili formlar nörolojik komplikasyona yol açabilir. Herpangina'da sadece ağız içi (posterior orofarenks) lezyonları görülür. Varisella'da polimorf döküntü tüm vücudu tutar, avuç içi/taban tutulumu daha az belirgindir.",
+      "story_hint": "💡 HİKAYE: 'El Ayak Ağız Üçgeni' — Çocuk + ağız ülseri + avuç içi/ayak tabanı vezikül = Coxsackie EAA hastalığı. Üçgen bölge = Coxsackie!"
+    },
+    {
+      "id": "mvak-095",
+      "case": "Vaka: 72 yaşında diyabetik erkek hasta, perianal ağrılı ülserlerle başvuruyor. Bölgede siyah nekroz ve kötü koku mevcut. Nekrotik alan scrotum ve perineum'u kaplıyor. Hızlı ilerleyen enfeksiyon tablosu görülüyor. Cerrahi konsültasyonu acilen yapılıyor.",
+      "options": [
+        "A) Basit anal fissür",
+        "B) Perianal apse",
+        "C) Fournier gangreni (nekrotizan fasiit)",
+        "D) Herpes simpleks anogenital",
+        "E) Anal kanser"
+      ],
+      "correct_answer": "C) Fournier gangreni (nekrotizan fasiit)",
+      "explanation": "Fournier gangreni, genital ve perineal bölgenin ölümcül polimikrobik nekrotizan fasiitidir. Diyabet, alkolizm ve immünsüpresyon risk faktörüdür. Hızlı yayılan siyah nekroz, kötü koku, şiddetli ağrı ve sepsis ile karakterizedir. Etkenler genellikle polimikrobiktir (anaeroblar + gram negatifler + gram pozitifler). Acil ve geniş cerrahi debridman hayat kurtarıcıdır. Geniş spektrumlu antibiyotikler (karbapenem + metronidazol) eklenir. Hiperbarik oksijen yardımcı tedavi olarak kullanılabilir. Perianal apse daha lokalize ve yavaş seyirlidir.",
+      "story_hint": "💡 HİKAYE: 'Genital Nekroz Diyabetik' — Diyabetik + perineal siyah nekroz = Fournier gangreni. Acil cerrahi = tek kurtuluş!"
+    },
+    {
+      "id": "mvak-096",
+      "case": "Vaka: 18 yaşında erkek, düzenli cinsel teması olan birinden sonra kasıkta ağrılı şişlik gelişiyor. İlk dönemde genital ülser olduğunu fark etmiş ama kaybolmuş. Şimdi serolezyonlar döküntü (avuç içi dahil) ve mukoza yamaları mevcut. RPR pozitif, TPHA pozitif.",
+      "options": [
+        "A) Gonore",
+        "B) Herpes genitalis",
+        "C) İkincil (sekonder) sifiliz",
+        "D) Lenfogranüloma venereum",
+        "E) Şankroid"
+      ],
+      "correct_answer": "C) İkincil (sekonder) sifiliz",
+      "explanation": "Sekonder sifiliz, primer şankrın kaybolmasından 4-10 hafta sonra spiroketal bakteriyemi ile gelişir. Avuç içi ve ayak tabanını da tutan makülopapüler döküntü, kondiloma lata (ıslak verrüköz lezyonlar) ve mukoza yamaları karakteristiktir. Genel semptomlar (ateş, lenfadenopati) eşlik eder. RPR/VDRL (non-treponemal) ve TPHA/FTA-ABS (treponemal) testler pozitif. Bu dönem çok bulaşıcıdır. Tedavide benzatin penisilin 2,4 MÜ tek doz IM. LGV'de Chlamydia L1-L3 sorumludur ve masif lenfadenopati görülür.",
+      "story_hint": "💡 HİKAYE: 'Avuç İçi Döküntü RPR+' — Avuç içi dahil döküntü + mukoza yaması + RPR(+) = Sekonder sifiliz. Avuç içi döküntü = Sekonder sifiliz veya Rickettsia!"
+    },
+    {
+      "id": "mvak-097",
+      "case": "Vaka: 60 yaşında erkek, 20 yıl önce sifiliz tedavisi almış. Şimdi aortada anevrizmatik dilatasyon ve AR (aort yetmezliği) saptanıyor. BT anjiyografide 'ağaç kabuğu' görünümlü kalsifikasyon mevcut. TPHA hâlâ pozitif.",
+      "options": [
+        "A) Primer sifiliz",
+        "B) Sekonder sifiliz",
+        "C) Tersiyer sifiliz (kardiyovasküler)",
+        "D) Nörosifiliz",
+        "E) Konjenital sifiliz"
+      ],
+      "correct_answer": "C) Tersiyer sifiliz (kardiyovasküler)",
+      "explanation": "Kardiyovasküler sifiliz, tedavi edilmemiş veya yetersiz tedavi edilmiş T. pallidum enfeksiyonunun geç komplikasyonudur (genellikle 10-30 yıl sonra). Ascending aortayı tutan endarteritis ve vasa vasorum tutulumu aorta anevrizmasına, aort kapak yetmezliğine ve 'tree bark appearance' kalsifikasyona yol açar. TPHA pozitifliği sürüyor olabilir ancak RPR/VDRL titresi düşük veya negatif olabilir. Nörosifiliz: tabes dorsalis, argyll robertson pupil, general paralizi. Tersiyer sifilizde gomma oluşumu da görülebilir. Tedavide IV penisilin G (geç sifiliz protokolü) uygulanır.",
+      "story_hint": "💡 HİKAYE: 'Aorta Ağaç Kabuğu' — 20 yıl önce sifiliz + aort anevrizması + ağaç kabuğu kalsifikasyon = Tersiyer sifiliz kardiyovasküler. Vasa vasorum tutulumu!"
+    },
+    {
+      "id": "mvak-098",
+      "case": "Vaka: Neonatoloji servisinde 10 günlük bebek, ateş, emme güçlüğü ve kasılma ile başvuruyor. Anne doğumdan 3 gün önce ateşlenmiş ve idrar yolu enfeksiyonu geçirmiş. Beyin BT'sinde multipl abse odakları görülüyor. BOS Gram boyasında Gram-negatif kapsüllü basil görülüyor.",
+      "options": [
+        "A) Streptococcus agalactiae",
+        "B) Listeria monocytogenes",
+        "C) Escherichia coli K1",
+        "D) Klebsiella pneumoniae",
+        "E) Neisseria meningitidis"
+      ],
+      "correct_answer": "C) Escherichia coli K1",
+      "explanation": "Escherichia coli K1 kapsülü, neonatal menenjit ve sepsisinin önemli bir nedenidir. K1 polisakkarit kapsülü fagositoza direnç sağlar ve nörotropizmi artırır. Anneden vertikal geçiş sözkonusu olup annenin üriner sistem enfeksiyonu öyküsü anlamlıdır. Multipl abse oluşturabilir. BOS kültürü ve Gram boyama tanıya yönlendirir. Tedavide ampisilin + gentamisin (etkin olduğu doğrulanana kadar) veya 3. kuşak sefalosporin kullanılır. GBS (S. agalactiae) Gram(+) zincir oluştururken E. coli K1 Gram(-) basildir. Listeria Gram(+) basildir.",
+      "story_hint": "💡 HİKAYE: 'Yenidoğan Gram(-) Basil Menenjit' — Yenidoğan + Gram(-) kapsüllü basil + anne İYE öyküsü = E. coli K1. K1 kapsülü = nörotropizm!"
+    },
+    {
+      "id": "mvak-099",
+      "case": "Vaka: 45 yaşında splenektomi yapılmış erkek hasta, aşılanmamış, ateş, titreme ve bilinç bulanıklığıyla acile geliyor. Kan kültüründe Gram-pozitif diplokok üremekte. Hızlı sepsis tablosuna giriyor. Bu hasta için en ölümcül bakteri hangisidir?",
+      "options": [
+        "A) Staphylococcus aureus",
+        "B) Streptococcus pyogenes",
+        "C) Streptococcus pneumoniae",
+        "D) Neisseria meningitidis",
+        "E) Haemophilus influenzae"
+      ],
+      "correct_answer": "C) Streptococcus pneumoniae",
+      "explanation": "Asplenik (dalağı alınmış) hastalarda kapsüllü bakterilere karşı savunma bozulur. S. pneumoniae, H. influenzae ve N. meningitidis özellikle tehlikelidir. OPSI (Overwhelming Post-Splenectomy Infection — Ezici Sonrası Splenektomi Enfeksiyonu) kavramı, en sık S. pneumoniae ile gelişir ve %50-70 mortalite riski taşır. Splenektomi öncesi veya en geç 2 hafta öncesinde pnömokok, Hib ve meningokok aşıları yapılmalıdır. Uzun dönem profilaktik penisilin bazı hastalarda önerilir. Gram(+) diplokok S. pneumoniae'yi işaret eder. S. aureus splenektomi ile özel bir ilişki göstermez.",
+      "story_hint": "💡 HİKAYE: 'Asplenik OPSI' — Splenektomi + ateş + Gram(+) diplokok = S. pneumoniae OPSI. Aşı önceden yapılmalıydı!"
+    },
+    {
+      "id": "mvak-100",
+      "case": "Vaka: 14 yaşında kız çocuk, 4 gündür devam eden yüksek ateş, boyun ağrısı, trismus ve ses değişikliği ile başvuruyor. Orofarenks muayenesinde uvula sola deviye, sağda peritonsillar dolgunluk ve ödem mevcut. Sağ servikal lenf nodu büyük. Drenaj yapılıyor ve S. pyogenes üretiyor.",
+      "options": [
+        "A) Retrofarengeal apse",
+        "B) Difteri",
+        "C) Peritonsillar apse",
+        "D) Ludwig anjini",
+        "E) Epiglottit"
+      ],
+      "correct_answer": "C) Peritonsillar apse",
+      "explanation": "Peritonsillar apse (PTA), tonsillofarenjitin en sık komplikasyonudur ve genellikle S. pyogenes, S. aureus veya oral anaeroblar tarafından oluşturulur. Uvulanın karşı tarafa deviyasyonu, ipsilateral dolgunluk ve trismus (çene kaslarının spazmi) PTA'nın karakteristik bulgularıdır. Ses değişikliği (patates sesi — 'hot potato voice') da görülür. Tedavide iğne aspirasyonu veya insiyon-drenaj + IV penisilin/amoksisilin-klavulanat uygulanır. Retrofarengeal apsa daha küçük yaşlarda ve boyun hareketlerinde ağrıyla görülür. Ludwig anjini submandibüler alanı tutan ağız tabanı selülitidir. Epiglottit'te drooling ve thumb sign bulguları öne çıkar.",
+      "story_hint": "💡 HİKAYE: 'Uvula Kaçıyor Trismus' — Ateş + trismus + uvula deviyasyonu + peritonsillar dolgunluk = Peritonsillar apse. Patates sesi = PTA!"
+    }
+  ]
+}

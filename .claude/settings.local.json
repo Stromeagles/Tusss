@@ -84,7 +84,26 @@
       "Bash(python add_story_hints_remaining.py)",
       "Bash(find /c/Users/ceyla/Desktop -name *.pdf)",
       "Bash(sed -i 's/c\\\\.value/c.toARGB32\\(\\)/g; s/\\\\.value == _selectedColor/\\\\.toARGB32\\(\\) == _selectedColor/g; s/_selectedColor = c\\\\.value/_selectedColor = c.toARGB32\\(\\)/g; s/color: Color\\(col\\\\.colorValue\\)/color: Color\\(col.colorValue\\)/g' \"C:/Users/ceyla/Desktop/tus/tus_app_project/tus_asistani/lib/screens/collections_screen.dart\")",
-      "Bash(sed -i 's/const Color\\(0xFF00D4FF\\)\\\\.value/const Color\\(0xFF00D4FF\\).toARGB32\\(\\)/g; s/c\\\\.value/c.toARGB32\\(\\)/g' \"C:/Users/ceyla/Desktop/tus/tus_app_project/tus_asistani/lib/widgets/add_to_collection_sheet.dart\")"
+      "Bash(sed -i 's/const Color\\(0xFF00D4FF\\)\\\\.value/const Color\\(0xFF00D4FF\\).toARGB32\\(\\)/g; s/c\\\\.value/c.toARGB32\\(\\)/g' \"C:/Users/ceyla/Desktop/tus/tus_app_project/tus_asistani/lib/widgets/add_to_collection_sheet.dart\")",
+      "Bash(grep -rn \"Integronlar\" \"/c/Users/ceyla/Desktop/tus/tus_app_project/tus_asistani/assets/data/microbiology_ch\"*.json \"/c/Users/ceyla/Desktop/tus/tus_app_project/tus_asistani/assets/data/microbiology_prof_200.json\")",
+      "Bash(cmd /c \"flutter build web --release --base-href=/app/\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(winget install:*)",
+      "Bash(where gh:*)",
+      "Bash(export PATH=\"$PATH:/c/Program Files/GitHub CLI\")",
+      "Bash(gh --version)",
+      "Bash(done)",
+      "Bash(grep '\"\"correct_answer\"\"' pathology_module.json)",
+      "Bash(grep '\"\"correct_answer\"\"' microbiology_gram_pos_bacilli.json)",
+      "Bash(grep '\"\"correct_answer\"\"' microbiology_gram_neg_basics.json)",
+      "Bash(grep '\"\"correct_answer\"\"' microbiology_enterics.json)",
+      "Bash(find C:/Users/ceyla/Desktop/tus -name *.pdf)",
+      "Bash(find C:/Users/ceyla/Desktop -name *.pdf)",
+      "Bash(cat \"C:/Users/ceyla/Desktop/tus/tus_app_project/tus_asistani/deploy_staging/\"*.sh)",
+      "Bash(python:*)",
+      "Bash(identify \"C:/Users/ceyla/Desktop/tus/tus_app_project/tus_asistani/assets/images/hero_login_new.png\")"
     ]
   }
 }

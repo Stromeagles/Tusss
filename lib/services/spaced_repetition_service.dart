@@ -39,7 +39,16 @@ class SpacedRepetitionService {
   // ── Veri yükleme: Firestore → SharedPreferences → cache ──────────────────
   Future<Map<String, SM2CardData>> getAllData() async {
     if (_cache != null) return _cache!;
+    return await _load();
+  }
 
+  /// Önbelleği temizler ve sunucudan taze veri çeker (Sync Fix)
+  Future<Map<String, SM2CardData>> clearCacheAndReload() async {
+    _cache = null;
+    return await _load();
+  }
+
+  Future<Map<String, SM2CardData>> _load() async {
     final prefs = await SharedPreferences.getInstance();
 
     // Firestore'dan senkronize et (giriş yapılmışsa)
@@ -74,6 +83,16 @@ class SpacedRepetitionService {
     return _cache!;
   }
 
+  /// Cache'i hemen güncelle, disk/Firestore yazmasını arka plana bırak
+  void _saveAsync(Map<String, SM2CardData> data) {
+    _cache = data;
+    SharedPreferences.getInstance().then((prefs) {
+      final encoded = json.encode(data.map((k, v) => MapEntry(k, v.toJson())));
+      prefs.setString(_prefsKey, encoded);
+      _backupToFirestore(data);
+    });
+  }
+
   Future<void> _saveAll(Map<String, SM2CardData> data) async {
     final prefs = await SharedPreferences.getInstance();
     final encoded = json.encode(data.map((k, v) => MapEntry(k, v.toJson())));
@@ -89,12 +108,13 @@ class SpacedRepetitionService {
     return all[cardId] ?? SM2CardData.initial(cardId);
   }
 
+  /// Cevap kaydeder — cache anında güncellenir, disk arka planda yazılır
   Future<SM2CardData> recordAnswer(String cardId, int quality) async {
     final all = await getAllData();
     final current = all[cardId] ?? SM2CardData.initial(cardId);
     final updated = current.computeNext(quality);
     all[cardId] = updated;
-    await _saveAll(all);
+    _saveAsync(all); // Bloklamaz
     return updated;
   }
 
@@ -129,7 +149,7 @@ class SpacedRepetitionService {
     final current = all[cardId] ?? SM2CardData.initial(cardId);
     final updated = current.copyWithBookmark(!current.isBookmarked);
     all[cardId] = updated;
-    await _saveAll(all);
+    _saveAsync(all);
     return updated;
   }
 

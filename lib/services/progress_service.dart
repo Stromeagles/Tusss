@@ -76,6 +76,12 @@ class ProgressService {
     }
   }
 
+  /// Sadece yerel (SharedPreferences) veriden yükle — Firestore çağrısı yok
+  Future<StudyProgress> loadProgressCached() async {
+    final prefs = await SharedPreferences.getInstance();
+    return _readFromPrefs(prefs);
+  }
+
   /// Firestore verisini SharedPreferences'e yaz (Firestore daha yeniyse)
   Future<void> _mergeFirestoreToPrefs(
       SharedPreferences prefs, Map<String, dynamic> data) async {

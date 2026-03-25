@@ -121,7 +121,7 @@ class _HomeScreenState extends State<HomeScreen> {
     if (!mounted || _topics.isEmpty) return;
     try {
       final results = await Future.wait([
-        _progressService.loadProgress(),
+        _progressService.loadProgressCached(), // Firestore'a gitme — yerel yeterli
         SpacedRepetitionService().getAllData(),
         _userService.loadUser(),
       ]);
@@ -917,12 +917,8 @@ class _HomeScreenState extends State<HomeScreen> {
           borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
           border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.15), width: 1.5),
         ),
-        child: ClipRRect(
-          borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
               child: Column(
                 children: [
                   Container(
@@ -993,8 +989,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
-        ),
-      ),
     );
   }
 

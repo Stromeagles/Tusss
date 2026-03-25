@@ -646,7 +646,8 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
   }
 
   Widget _buildOptions() {
-    return Column(
+    return RepaintBoundary(
+      child: Column(
       children: _currentCase.options.map((option) {
         Color borderColor = AppTheme.divider;
         Color textColor = AppTheme.textPrimary;
@@ -699,6 +700,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
           ),
         );
       }).toList(),
+    ),
     );
   }
 

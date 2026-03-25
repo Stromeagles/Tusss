@@ -794,8 +794,8 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
   String? _mnemonic;
   bool _mnemonicLoading = false;
 
-  // Hangi cloze (buzlu) alanların açıldığı bilgisini tutar
-  final Set<int> _revealedClozes = {};
+  // Hangi cloze (buzlu) alanların açıldığı — ValueNotifier ile tüm kart rebuild'i önlenir
+  final ValueNotifier<Set<int>> _revealedClozes = ValueNotifier(<int>{});
 
   // Blur: sadece [[]] içeren VE daha önce "Bildim" işaretlenmiş kartlarda aktif
   bool get _shouldBlur =>
@@ -837,6 +837,7 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
   void dispose() {
     _flipCtrl.dispose();
     _enterCtrl.dispose();
+    _revealedClozes.dispose();
     super.dispose();
   }
 
@@ -982,7 +983,9 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
             text: widget.card.question.replaceFirst(RegExp(r'Soru:\([^)]+\)\s*'), ''),
             shouldBlur: false, // Soruda genelde buzlama istemeyiz ama altyapı hazır
             revealedIndices: _revealedClozes,
-            onReveal: (idx) => setState(() => _revealedClozes.add(idx)),
+            onReveal: (idx) {
+              _revealedClozes.value = {..._revealedClozes.value, idx};
+            },
             style: const TextStyle(
                 color: AppTheme.textPrimary,
                 fontSize: 17,
@@ -1055,7 +1058,9 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
             text: widget.card.answer,
             shouldBlur: _shouldBlur,
             revealedIndices: _revealedClozes,
-            onReveal: (idx) => setState(() => _revealedClozes.add(idx)),
+            onReveal: (idx) {
+              _revealedClozes.value = {..._revealedClozes.value, idx};
+            },
             style: const TextStyle(
                 color: AppTheme.textPrimary,
                 fontSize: 17,
@@ -1422,7 +1427,7 @@ class _MnemonicBox extends StatelessWidget {
 class _ClozeText extends StatelessWidget {
   final String text;
   final bool shouldBlur;
-  final Set<int> revealedIndices;
+  final ValueNotifier<Set<int>> revealedIndices;
   final Function(int) onReveal;
   final TextStyle style;
 
@@ -1439,7 +1444,14 @@ class _ClozeText extends StatelessWidget {
     if (!text.contains('[[')) {
       return Text(text, style: style);
     }
+    // ValueListenableBuilder: sadece bu widget yeniden çizilir, kart tree'si değil
+    return ValueListenableBuilder<Set<int>>(
+      valueListenable: revealedIndices,
+      builder: (_, revealed, __) => _buildSpans(revealed),
+    );
+  }
 
+  Widget _buildSpans(Set<int> revealedSet) {
     final List<InlineSpan> spans = [];
     final regExp = RegExp(r'\[\[(.*?)\]\]');
     int start = 0;
@@ -1452,7 +1464,7 @@ class _ClozeText extends StatelessWidget {
 
       final content = match.group(1) ?? '';
       final currentIdx = index;
-      final isRevealed = revealedIndices.contains(currentIdx);
+      final isRevealed = revealedSet.contains(currentIdx);
 
       spans.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
@@ -1510,3 +1522,4 @@ class _ClozeText extends StatelessWidget {
     );
   }
 }
+

@@ -138,15 +138,15 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         child: Stack(
           children: [
-            // ── Ambient Neon Glows ──────────────────────────────────────────
-            Positioned(top: -160, left: -120,
-                child: _AmbientBlob(color: AppTheme.cyan,      size: 500, opacity: isDark ? 0.12 : 0.05)),
-            Positioned(top: 180, right: -140,
-                child: _AmbientBlob(color: AppTheme.neonPink,  size: 420, opacity: isDark ? 0.10 : 0.04)),
-            Positioned(bottom: 150, left: -100,
-                child: _AmbientBlob(color: AppTheme.neonPurple,size: 360, opacity: isDark ? 0.10 : 0.04)),
-            Positioned(bottom: -80, right: -60,
-                child: _AmbientBlob(color: AppTheme.cyan,      size: 300, opacity: isDark ? 0.07 : 0.03)),
+            // ── Ambient Neon Glows — RepaintBoundary ile izole edildi ────────
+            RepaintBoundary(child: Positioned(top: -160, left: -120,
+                child: _AmbientBlob(color: AppTheme.cyan,      size: 500, opacity: isDark ? 0.12 : 0.05))),
+            RepaintBoundary(child: Positioned(top: 180, right: -140,
+                child: _AmbientBlob(color: AppTheme.neonPink,  size: 420, opacity: isDark ? 0.10 : 0.04))),
+            RepaintBoundary(child: Positioned(bottom: 150, left: -100,
+                child: _AmbientBlob(color: AppTheme.neonPurple,size: 360, opacity: isDark ? 0.10 : 0.04))),
+            RepaintBoundary(child: Positioned(bottom: -80, right: -60,
+                child: _AmbientBlob(color: AppTheme.cyan,      size: 300, opacity: isDark ? 0.07 : 0.03))),
 
             // ── Main Content ────────────────────────────────────────────────
             SafeArea(
@@ -672,7 +672,7 @@ class _HomeScreenState extends State<HomeScreen> {
             children: folders.asMap().entries.map((entry) {
               final i = entry.key;
               final f = entry.value;
-              final count = i == 0 ? summary.toReviewCount : (i == 1 ? summary.learnedCount : summary.bookmarkCount);
+              final count = i == 0 ? summary.learnedCount : (i == 1 ? summary.toReviewCount : summary.bookmarkCount);
               
               return Expanded(
                 child: Padding(
@@ -745,9 +745,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-            ).animate(onPlay: (c) => c.repeat(reverse: true))
-             .scale(begin: const Offset(1, 1), end: const Offset(1.015, 1.015), duration: 2500.ms, curve: Curves.easeInOut)
-             .shimmer(duration: 2500.ms, color: Colors.white.withValues(alpha: 0.2)),
+            ).animate().fadeIn(duration: 400.ms),
           ).animate().fadeIn(duration: 700.ms, delay: 300.ms),
         ],
       ),
@@ -1073,18 +1071,15 @@ class _HomeScreenState extends State<HomeScreen> {
       (Icons.person_rounded,              Icons.person_outline_rounded,       'Profil'),
     ];
 
-    return Padding(
+    return RepaintBoundary(
+      child: Padding(
       padding: EdgeInsets.fromLTRB(16, 0, 16, MediaQuery.of(context).padding.bottom + 12),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(28),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
-          child: Container(
+      child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
             decoration: BoxDecoration(
               color: isDark
-                  ? Colors.white.withValues(alpha: 0.06)
-                  : Colors.white.withValues(alpha: 0.85),
+                  ? const Color(0xFF1A2235)
+                  : Colors.white.withValues(alpha: 0.96),
               borderRadius: BorderRadius.circular(28),
               border: Border.all(
                 color: isDark
@@ -1176,7 +1171,6 @@ class _HomeScreenState extends State<HomeScreen> {
               }),
             ),
           ),
-        ),
       ),
     );
   }

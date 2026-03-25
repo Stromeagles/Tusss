@@ -35,7 +35,7 @@ class UserService {
     final doc = _firestoreDoc;
     if (doc != null) {
       try {
-        final snap = await doc.get().timeout(const Duration(seconds: 6));
+        final snap = await doc.get(const GetOptions(source: Source.server)).timeout(const Duration(seconds: 6));
         if (snap.exists) {
           final data = snap.data() as Map<String, dynamic>;
           // Firestore'daki veriyi yerele yaz

@@ -662,35 +662,29 @@ class _LoginScreenState extends State<LoginScreen> {
       child: Center(
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 440),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(28),
-            child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.black.withValues(alpha: 0.60),
-                  borderRadius: BorderRadius.circular(28),
-                  border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withValues(alpha: 0.4),
-                      blurRadius: 40,
-                    ),
-                  ],
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.black, // Solid black for performance
+              borderRadius: BorderRadius.circular(28),
+              border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.4),
+                  blurRadius: 40,
                 ),
-                padding: const EdgeInsets.all(36),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    _buildDesktopFormHeader(vm),
-                    const SizedBox(height: 28),
-                    _buildFormContent(vm),
-                    const SizedBox(height: 16),
-                    _buildBottomToggle(vm),
-                  ],
-                ),
-              ),
+              ],
+            ),
+            padding: const EdgeInsets.all(36),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                _buildDesktopFormHeader(vm),
+                const SizedBox(height: 28),
+                _buildFormContent(vm),
+                const SizedBox(height: 16),
+                _buildBottomToggle(vm),
+              ],
             ),
           ),
         ),

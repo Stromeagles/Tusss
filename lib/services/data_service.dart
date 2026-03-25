@@ -109,6 +109,40 @@ class DataService {
     return all.sublist(offset, end);
   }
 
+  // ── Kademeli (Progressive) Yükleme ──────────────────────────────────────
+  /// Verileri asset dosyalarından okundukça parça parça döner.
+  /// İlk 100 card/vakanın hızlıca görünmesini sağlar.
+
+  Stream<List<Flashcard>> loadFlashcardsProgressive({String? subjectId, List<String>? subjectIds}) async* {
+    final ids = subjectIds ?? (subjectId != null ? [subjectId] : SubjectRegistry.activeModules.map((m) => m.id).toList());
+    
+    for (final id in ids) {
+      final module = SubjectRegistry.findById(id);
+      if (module == null) continue;
+
+      for (final path in module.assetPaths) {
+        final topics = await _loadSingleFile(path);
+        if (topics.isNotEmpty) {
+          final cards = topics.expand((t) => t.flashcards).toList();
+          if (cards.isNotEmpty) yield cards;
+        }
+      }
+    }
+  }
+
+  Stream<List<ClinicalCase>> loadCasesProgressive({String? subjectId}) async* {
+    final module = subjectId != null ? SubjectRegistry.findById(subjectId) : null;
+    final paths = module?.assetPaths ?? SubjectRegistry.activeModules.expand((m) => m.assetPaths).toList();
+
+    for (final path in paths) {
+      final topics = await _loadSingleFile(path);
+      if (topics.isNotEmpty) {
+        final cases = topics.expand((t) => t.clinicalCases).toList();
+        if (cases.isNotEmpty) yield cases;
+      }
+    }
+  }
+
   /// Toplam sayı bilgisi (UI'da "45/200" göstermek için)
   Future<int> getFlashcardCount({String? subjectId}) async {
     final topics = await loadTopics(subjectId: subjectId);

@@ -110,30 +110,33 @@ class MockExamResultScreen extends StatelessWidget {
 
   Widget _buildScoreCard(bool isDark, Color textColor, Color subColor,
       String grade, Color gradeColor, String netStr, String accuracy) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(24),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
-        child: Container(
-          padding: const EdgeInsets.all(24),
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: isDark
-                  ? [
-                      gradeColor.withValues(alpha: 0.12),
-                      AppTheme.neonPurple.withValues(alpha: 0.08),
-                    ]
-                  : [
-                      gradeColor.withValues(alpha: 0.08),
-                      AppTheme.neonPurple.withValues(alpha: 0.05),
-                    ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-            borderRadius: BorderRadius.circular(24),
-            border:
-                Border.all(color: gradeColor.withValues(alpha: 0.25)),
+    return Container(
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: isDark
+              ? [
+                  gradeColor.withValues(alpha: 0.20),
+                  AppTheme.neonPurple.withValues(alpha: 0.12),
+                ]
+              : [
+                  gradeColor.withValues(alpha: 0.15),
+                  AppTheme.neonPurple.withValues(alpha: 0.10),
+                ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        color: isDark ? AppTheme.surface : Colors.white,
+        borderRadius: BorderRadius.circular(24),
+        border: Border.all(color: gradeColor.withValues(alpha: 0.35)),
+        boxShadow: [
+          BoxShadow(
+            color: gradeColor.withValues(alpha: 0.15),
+            blurRadius: 20,
+            offset: const Offset(0, 8),
           ),
+        ],
+      ),
           child: Column(
             children: [
               // Derece rozeti
@@ -247,9 +250,7 @@ class MockExamResultScreen extends StatelessWidget {
               ),
             ],
           ),
-        ),
-      ),
-    );
+        );
   }
 
   Widget _buildStatsRow(bool isDark, Color textColor, Color subColor) {

@@ -37,6 +37,12 @@ class CollectionService extends ChangeNotifier {
     await _load();
   }
 
+  /// Önbelleği temizler ve sunucudan taze veri çeker (Sync Fix)
+  Future<void> clearCacheAndReload() async {
+    _loaded = false;
+    await _load();
+  }
+
   Future<void> _load() async {
     final prefs = await SharedPreferences.getInstance();
     

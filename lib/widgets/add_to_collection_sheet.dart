@@ -156,25 +156,26 @@ class _AddToCollectionSheetState extends State<AddToCollectionSheet> {
     final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
     final collections = _service.collections;
 
-    return ClipRRect(
-      borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-        child: Container(
-          constraints: BoxConstraints(
-            maxHeight: MediaQuery.of(context).size.height * 0.85,
+    return Container(
+      constraints: BoxConstraints(
+        maxHeight: MediaQuery.of(context).size.height * 0.85,
+      ),
+      decoration: BoxDecoration(
+        color: isDark ? AppTheme.surface : Colors.white,
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.2),
+            blurRadius: 20,
+            offset: const Offset(0, -4),
           ),
-          decoration: BoxDecoration(
-            color: isDark
-                ? AppTheme.surface.withValues(alpha: 0.97)
-                : Colors.white.withValues(alpha: 0.97),
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              // Handle
-              const SizedBox(height: 12),
+        ],
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          // Handle
+          const SizedBox(height: 12),
               Container(
                 width: 40, height: 4,
                 decoration: BoxDecoration(
@@ -275,13 +276,11 @@ class _AddToCollectionSheetState extends State<AddToCollectionSheet> {
                             padding: const EdgeInsets.symmetric(vertical: 14),
                           ),
                         ),
-                      ),
+                ),
               ),
             ],
           ),
-        ),
-      ),
-    );
+        );
   }
 
   Widget _buildCollectionTile(CardCollection col, bool isDark, Color textColor,

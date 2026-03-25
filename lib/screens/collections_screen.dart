@@ -157,69 +157,63 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
         );
       },
       onLongPress: () => _showEditDialog(col, isDark),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(20),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-          child: Container(
-            decoration: BoxDecoration(
-              color: isDark
-                  ? color.withValues(alpha: 0.10)
-                  : color.withValues(alpha: 0.07),
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: color.withValues(alpha: 0.25),
-              ),
-              boxShadow: [
-                BoxShadow(
-                    color: color.withValues(alpha: isDark ? 0.15 : 0.08),
-                    blurRadius: 18),
-              ],
-            ),
-            padding: const EdgeInsets.all(16),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(col.emoji,
-                        style: const TextStyle(fontSize: 28)),
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 8, vertical: 4),
-                      decoration: BoxDecoration(
-                        color: color.withValues(alpha: 0.15),
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Text('${col.cardIds.length}',
-                          style: GoogleFonts.inter(
-                              color: color,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w800)),
-                    ),
-                  ],
-                ),
-                const Spacer(),
-                Text(col.name,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: GoogleFonts.inter(
-                        color: isDark
-                            ? AppTheme.textPrimary
-                            : AppTheme.lightTextPrimary,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w800)),
-                const SizedBox(height: 2),
-                Text('${col.cardIds.length} kart',
-                    style: GoogleFonts.inter(
-                        color: isDark
-                            ? AppTheme.textSecondary
-                            : AppTheme.lightTextSecondary,
-                        fontSize: 11)),
-              ],
-            ),
+      child: Container(
+        decoration: BoxDecoration(
+          color: isDark
+              ? color.withValues(alpha: 0.15)
+              : color.withValues(alpha: 0.12),
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(
+            color: color.withValues(alpha: 0.35),
           ),
+          boxShadow: [
+            BoxShadow(
+                color: color.withValues(alpha: isDark ? 0.15 : 0.08),
+                blurRadius: 18),
+          ],
+        ),
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(col.emoji,
+                    style: const TextStyle(fontSize: 28)),
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: color.withValues(alpha: 0.20),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Text('${col.cardIds.length}',
+                      style: GoogleFonts.inter(
+                          color: color,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w800)),
+                ),
+              ],
+            ),
+            const Spacer(),
+            Text(col.name,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: GoogleFonts.inter(
+                    color: isDark
+                        ? AppTheme.textPrimary
+                        : AppTheme.lightTextPrimary,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w800)),
+            const SizedBox(height: 2),
+            Text('${col.cardIds.length} kart',
+                style: GoogleFonts.inter(
+                    color: isDark
+                        ? AppTheme.textSecondary
+                        : AppTheme.lightTextSecondary,
+                    fontSize: 11)),
+          ],
         ),
       ),
     )
@@ -307,206 +301,199 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
       isScrollControlled: true,
       backgroundColor: Colors.transparent,
       builder: (ctx) => StatefulBuilder(
-        builder: (ctx, setLocal) => ClipRRect(
-          borderRadius:
-              const BorderRadius.vertical(top: Radius.circular(24)),
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-            child: Container(
-              padding: EdgeInsets.fromLTRB(
-                  20,
-                  20,
-                  20,
-                  MediaQuery.of(ctx).viewInsets.bottom + 20),
-              decoration: BoxDecoration(
-                color: isDark
-                    ? AppTheme.surface.withValues(alpha: 0.97)
-                    : Colors.white.withValues(alpha: 0.97),
-                borderRadius:
-                    const BorderRadius.vertical(top: Radius.circular(24)),
+        builder: (ctx, setLocal) => Container(
+          padding: EdgeInsets.fromLTRB(
+              20,
+              20,
+              20,
+              MediaQuery.of(ctx).viewInsets.bottom + 20),
+          decoration: BoxDecoration(
+            color: isDark
+                ? AppTheme.surface
+                : Colors.white,
+            borderRadius:
+                const BorderRadius.vertical(top: Radius.circular(24)),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                existing == null
+                    ? 'Yeni Klasör'
+                    : 'Klasörü Düzenle',
+                style: GoogleFonts.inter(
+                    color: textColor,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w800),
               ),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    existing == null
-                        ? 'Yeni Klasör'
-                        : 'Klasörü Düzenle',
-                    style: GoogleFonts.inter(
-                        color: textColor,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w800),
-                  ),
-                  const SizedBox(height: 16),
-                  // Emoji seçici
-                  SizedBox(
-                    height: 44,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: CollectionPresets.emojis.length,
-                      itemBuilder: (_, i) {
-                        final e = CollectionPresets.emojis[i];
-                        final sel = e == emoji;
-                        return GestureDetector(
-                          onTap: () => setLocal(() => emoji = e),
-                          child: AnimatedContainer(
-                            duration: const Duration(milliseconds: 150),
-                            width: 44,
-                            margin: const EdgeInsets.only(right: 6),
-                            decoration: BoxDecoration(
-                              color: sel
-                                  ? AppTheme.neonPurple
-                                      .withValues(alpha: 0.2)
-                                  : Colors.transparent,
-                              borderRadius: BorderRadius.circular(12),
-                              border: Border.all(
-                                color: sel
-                                    ? AppTheme.neonPurple
-                                        .withValues(alpha: 0.4)
-                                    : Colors.transparent,
-                              ),
-                            ),
-                            child: Center(
-                                child: Text(e,
-                                    style:
-                                        const TextStyle(fontSize: 22))),
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  // Renk seçici
-                  SizedBox(
-                    height: 32,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: CollectionPresets.colors.length,
-                      itemBuilder: (_, i) {
-                        final c = CollectionPresets.colors[i];
-                        final sel = c.toARGB32() == colorVal;
-                        return GestureDetector(
-                          onTap: () => setLocal(() => colorVal = c.toARGB32()),
-                          child: AnimatedContainer(
-                            duration: const Duration(milliseconds: 150),
-                            width: 32, height: 32,
-                            margin: const EdgeInsets.only(right: 8),
-                            decoration: BoxDecoration(
-                              color: c,
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                color: sel
-                                    ? Colors.white
-                                    : Colors.transparent,
-                                width: 2.5,
-                              ),
-                              boxShadow: sel
-                                  ? [
-                                      BoxShadow(
-                                          color: c.withValues(alpha: 0.5),
-                                          blurRadius: 10)
-                                    ]
-                                  : null,
-                            ),
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                  const SizedBox(height: 14),
-                  TextField(
-                    controller: nameCtrl,
-                    autofocus: true,
-                    style:
-                        GoogleFonts.inter(color: textColor, fontSize: 15),
-                    decoration: InputDecoration(
-                      hintText: 'Klasör adı...',
-                      hintStyle: GoogleFonts.inter(
-                          color: subColor.withValues(alpha: 0.5),
-                          fontSize: 14),
-                      filled: true,
-                      fillColor: isDark
-                          ? Colors.white.withValues(alpha: 0.06)
-                          : Colors.black.withValues(alpha: 0.04),
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(14),
-                          borderSide: BorderSide.none),
-                      contentPadding: const EdgeInsets.symmetric(
-                          horizontal: 16, vertical: 14),
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  Row(
-                    children: [
-                      if (existing != null)
-                        Expanded(
-                          child: OutlinedButton.icon(
-                            onPressed: () async {
-                              Navigator.pop(ctx);
-                              await _service
-                                  .deleteCollection(existing.id);
-                            },
-                            icon: const Icon(Icons.delete_outline_rounded,
-                                size: 16),
-                            label: Text('Sil',
-                                style: GoogleFonts.inter(
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 13)),
-                            style: OutlinedButton.styleFrom(
-                              foregroundColor: Colors.red,
-                              side: const BorderSide(color: Colors.red),
-                              shape: RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.circular(12)),
-                              padding: const EdgeInsets.symmetric(
-                                  vertical: 13),
-                            ),
+              const SizedBox(height: 16),
+              // Emoji seçici
+              SizedBox(
+                height: 44,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: CollectionPresets.emojis.length,
+                  itemBuilder: (_, i) {
+                    final e = CollectionPresets.emojis[i];
+                    final sel = e == emoji;
+                    return GestureDetector(
+                      onTap: () => setLocal(() => emoji = e),
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 150),
+                        width: 44,
+                        margin: const EdgeInsets.only(right: 6),
+                        decoration: BoxDecoration(
+                          color: sel
+                              ? AppTheme.neonPurple
+                                  .withValues(alpha: 0.2)
+                              : Colors.transparent,
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color: sel
+                                ? AppTheme.neonPurple
+                                    .withValues(alpha: 0.4)
+                                : Colors.transparent,
                           ),
                         ),
-                      if (existing != null) const SizedBox(width: 10),
-                      Expanded(
-                        flex: 2,
-                        child: ElevatedButton(
-                          onPressed: nameCtrl.text.trim().isEmpty
-                              ? null
-                              : () async {
-                                  Navigator.pop(ctx);
-                                  if (existing == null) {
-                                    await _service.createCollection(
-                                        nameCtrl.text.trim(),
-                                        emoji,
-                                        colorVal);
-                                  } else {
-                                    await _service.renameCollection(
-                                        existing.id,
-                                        nameCtrl.text.trim(),
-                                        emoji,
-                                        colorVal);
-                                  }
-                                },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: AppTheme.neonPurple,
-                            foregroundColor: Colors.white,
-                            elevation: 0,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12)),
-                            padding:
-                                const EdgeInsets.symmetric(vertical: 14),
+                        child: Center(
+                            child: Text(e,
+                                style:
+                                    const TextStyle(fontSize: 22))),
+                      ),
+                    );
+                  },
+                ),
+              ),
+              const SizedBox(height: 12),
+              // Renk seçici
+              SizedBox(
+                height: 32,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: CollectionPresets.colors.length,
+                  itemBuilder: (_, i) {
+                    final c = CollectionPresets.colors[i];
+                    final sel = c.toARGB32() == colorVal;
+                    return GestureDetector(
+                      onTap: () => setLocal(() => colorVal = c.toARGB32()),
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 150),
+                        width: 32, height: 32,
+                        margin: const EdgeInsets.only(right: 8),
+                        decoration: BoxDecoration(
+                          color: c,
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: sel
+                                ? Colors.white
+                                : Colors.transparent,
+                            width: 2.5,
                           ),
-                          child: Text(
-                            existing == null ? 'Oluştur' : 'Kaydet',
-                            style: GoogleFonts.inter(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 14),
-                          ),
+                          boxShadow: sel
+                              ? [
+                                  BoxShadow(
+                                      color: c.withValues(alpha: 0.5),
+                                      blurRadius: 10)
+                                ]
+                              : null,
                         ),
                       ),
-                    ],
+                    );
+                  },
+                ),
+              ),
+              const SizedBox(height: 14),
+              TextField(
+                controller: nameCtrl,
+                autofocus: true,
+                style:
+                    GoogleFonts.inter(color: textColor, fontSize: 15),
+                decoration: InputDecoration(
+                  hintText: 'Klasör adı...',
+                  hintStyle: GoogleFonts.inter(
+                      color: subColor.withValues(alpha: 0.5),
+                      fontSize: 14),
+                  filled: true,
+                  fillColor: isDark
+                      ? Colors.white.withValues(alpha: 0.06)
+                      : Colors.black.withValues(alpha: 0.04),
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(14),
+                      borderSide: BorderSide.none),
+                  contentPadding: const EdgeInsets.symmetric(
+                      horizontal: 16, vertical: 14),
+                ),
+              ),
+              const SizedBox(height: 16),
+              Row(
+                children: [
+                  if (existing != null)
+                    Expanded(
+                      child: OutlinedButton.icon(
+                        onPressed: () async {
+                          Navigator.pop(ctx);
+                          await _service
+                              .deleteCollection(existing.id);
+                        },
+                        icon: const Icon(Icons.delete_outline_rounded,
+                            size: 16),
+                        label: Text('Sil',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w600,
+                                fontSize: 13)),
+                        style: OutlinedButton.styleFrom(
+                          foregroundColor: Colors.red,
+                          side: const BorderSide(color: Colors.red),
+                          shape: RoundedRectangleBorder(
+                              borderRadius:
+                                  BorderRadius.circular(12)),
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 13),
+                        ),
+                      ),
+                    ),
+                  if (existing != null) const SizedBox(width: 10),
+                  Expanded(
+                    flex: 2,
+                    child: ElevatedButton(
+                      onPressed: nameCtrl.text.trim().isEmpty
+                          ? null
+                          : () async {
+                              Navigator.pop(ctx);
+                              if (existing == null) {
+                                await _service.createCollection(
+                                    nameCtrl.text.trim(),
+                                    emoji,
+                                    colorVal);
+                              } else {
+                                await _service.renameCollection(
+                                    existing.id,
+                                    nameCtrl.text.trim(),
+                                    emoji,
+                                    colorVal);
+                              }
+                            },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppTheme.neonPurple,
+                        foregroundColor: Colors.white,
+                        elevation: 0,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12)),
+                        padding:
+                            const EdgeInsets.symmetric(vertical: 14),
+                      ),
+                      child: Text(
+                        existing == null ? 'Oluştur' : 'Kaydet',
+                        style: GoogleFonts.inter(
+                            fontWeight: FontWeight.w700,
+                            fontSize: 14),
+                      ),
+                    ),
                   ),
                 ],
               ),
-            ),
+            ],
           ),
         ),
       ),

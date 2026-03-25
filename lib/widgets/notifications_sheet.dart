@@ -32,60 +32,54 @@ class AppNotificationsSheet extends StatelessWidget {
           ),
         ],
       ),
-      child: ClipRRect(
-        borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 40, sigmaY: 40),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 24),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(height: 12),
+            Center(
+              child: Container(
+                width: 40, height: 4,
+                decoration: BoxDecoration(
+                  color: AppTheme.textMuted.withValues(alpha: 0.3),
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+            ),
+            const SizedBox(height: 24),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const SizedBox(height: 12),
-                Center(
-                  child: Container(
-                    width: 40, height: 4,
-                    decoration: BoxDecoration(
-                      color: AppTheme.textMuted.withValues(alpha: 0.3),
-                      borderRadius: BorderRadius.circular(2),
-                    ),
+                Text('Bildirim Merkezi',
+                  style: GoogleFonts.inter(
+                    color: textColor, fontSize: 24, fontWeight: FontWeight.w900, letterSpacing: -1.0,
                   ),
                 ),
-                const SizedBox(height: 24),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('Bildirim Merkezi',
-                      style: GoogleFonts.inter(
-                        color: textColor, fontSize: 24, fontWeight: FontWeight.w900, letterSpacing: -1.0,
-                      ),
-                    ),
-                    IconButton(
-                      onPressed: () => Navigator.pop(context),
-                      icon: Icon(Icons.close_rounded, color: textColor.withValues(alpha: 0.5)),
-                    ),
-                  ],
+                IconButton(
+                  onPressed: () => Navigator.pop(context),
+                  icon: Icon(Icons.close_rounded, color: textColor.withValues(alpha: 0.5)),
                 ),
-                const SizedBox(height: 16),
-                Expanded(
-                  child: notifications.isEmpty
-                      ? _buildEmptyState(textColor)
-                      : ListView.separated(
-                          physics: const BouncingScrollPhysics(),
-                          itemCount: notifications.length,
-                          separatorBuilder: (_, __) => const SizedBox(height: 12),
-                          itemBuilder: (context, index) {
-                            return _NotificationCard(
-                              notification: notifications[index],
-                              isDark: isDark,
-                            );
-                          },
-                        ),
-                ),
-                const SizedBox(height: 24),
               ],
             ),
-          ),
+            const SizedBox(height: 16),
+            Expanded(
+              child: notifications.isEmpty
+                  ? _buildEmptyState(textColor)
+                  : ListView.separated(
+                      physics: const BouncingScrollPhysics(),
+                      itemCount: notifications.length,
+                      separatorBuilder: (_, __) => const SizedBox(height: 12),
+                      itemBuilder: (context, index) {
+                        return _NotificationCard(
+                          notification: notifications[index],
+                          isDark: isDark,
+                        );
+                      },
+                    ),
+            ),
+            const SizedBox(height: 24),
+          ],
         ),
       ),
     );

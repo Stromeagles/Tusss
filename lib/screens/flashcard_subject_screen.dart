@@ -282,24 +282,20 @@ class _SubjectCard extends StatelessWidget {
 
     return GestureDetector(
       onTap: onTap,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(20),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
-            decoration: BoxDecoration(
-              color: glassBg,
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: glassBorder, width: 1.5),
-              boxShadow: [
-                BoxShadow(
-                  color: color.withValues(alpha: 0.10),
-                  blurRadius: 20,
-                  spreadRadius: 0,
-                ),
-              ],
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+        decoration: BoxDecoration(
+          color: glassBg,
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: glassBorder, width: 1.5),
+          boxShadow: [
+            BoxShadow(
+              color: color.withValues(alpha: 0.10),
+              blurRadius: 20,
+              spreadRadius: 0,
             ),
+          ],
+        ),
             child: Row(
               children: [
                 Container(
@@ -365,8 +361,6 @@ class _SubjectCard extends StatelessWidget {
               ],
             ),
           ),
-        ),
-      ),
     );
   }
 }

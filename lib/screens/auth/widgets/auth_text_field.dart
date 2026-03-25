@@ -1,6 +1,4 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:google_fonts/google_fonts.dart';
 import '../../../theme/app_theme.dart';
 
@@ -192,15 +190,7 @@ class _AuthTextFieldState extends State<AuthTextField>
           child: child,
         );
 
-        if (kIsWeb) return fieldContainer;
-
-        return ClipRRect(
-          borderRadius: BorderRadius.circular(12),
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-            child: fieldContainer,
-          ),
-        );
+        return fieldContainer;
       },
       child: TextField(
         controller: widget.controller,

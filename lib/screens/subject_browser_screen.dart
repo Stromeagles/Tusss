@@ -130,9 +130,6 @@ class _SubjectTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final glassBg = isDark
-        ? module.color.withValues(alpha: 0.07)
-        : module.color.withValues(alpha: 0.08);
     final glassBorder = isDark
         ? module.color.withValues(alpha: 0.25)
         : module.color.withValues(alpha: 0.30);
@@ -141,73 +138,67 @@ class _SubjectTile extends StatelessWidget {
 
     return GestureDetector(
       onTap: onTap,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(20),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
-            decoration: BoxDecoration(
-              color: glassBg,
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: glassBorder, width: 1.5),
-              boxShadow: [
-                BoxShadow(
-                  color: module.color.withValues(alpha: 0.10),
-                  blurRadius: 20,
-                  spreadRadius: 0,
-                ),
-              ],
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+        decoration: BoxDecoration(
+          color: isDark ? AppTheme.surface : Colors.white,
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: glassBorder, width: 1.5),
+          boxShadow: [
+            BoxShadow(
+              color: module.color.withValues(alpha: 0.10),
+              blurRadius: 20,
+              spreadRadius: 0,
             ),
-            child: Row(
-              children: [
-                Container(
-                  width: 48,
-                  height: 48,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [
-                        module.color.withValues(alpha: 0.25),
-                        module.color.withValues(alpha: 0.10),
-                      ],
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
+          ],
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 48,
+              height: 48,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    module.color.withValues(alpha: 0.25),
+                    module.color.withValues(alpha: 0.10),
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(14),
+              ),
+              child: Icon(module.icon, color: module.color, size: 24),
+            ),
+            const SizedBox(width: 16),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    module.name,
+                    style: GoogleFonts.inter(
+                      color: textColor,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
                     ),
-                    borderRadius: BorderRadius.circular(14),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                   ),
-                  child: Icon(module.icon, color: module.color, size: 24),
-                ),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        module.name,
-                        style: GoogleFonts.inter(
-                          color: textColor,
-                          fontSize: 16,
-                          fontWeight: FontWeight.w700,
-                        ),
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        '$topicCount konu  ·  $cardCount içerik',
-                        style: GoogleFonts.inter(
-                          color: subColor,
-                          fontSize: 12,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                    ],
+                  const SizedBox(height: 4),
+                  Text(
+                    '$topicCount konu  ·  $cardCount içerik',
+                    style: GoogleFonts.inter(
+                      color: subColor,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
-                ),
-                Icon(Icons.chevron_right_rounded, color: subColor, size: 22),
-              ],
+                ],
+              ),
             ),
-          ),
+            Icon(Icons.chevron_right_rounded, color: subColor, size: 22),
+          ],
         ),
       ),
     );

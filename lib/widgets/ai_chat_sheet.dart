@@ -105,162 +105,161 @@ class _AiChatSheetState extends State<AiChatSheet> {
     final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
     final bottomPadding = MediaQuery.of(context).viewInsets.bottom;
 
-    return ClipRRect(
-      borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-        child: Container(
-          height: MediaQuery.of(context).size.height * 0.75,
-          decoration: BoxDecoration(
-            color: isDark
-                ? AppTheme.surface.withValues(alpha: 0.97)
-                : Colors.white.withValues(alpha: 0.97),
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+    return Container(
+      height: MediaQuery.of(context).size.height * 0.75,
+      decoration: BoxDecoration(
+        color: isDark ? AppTheme.surface : Colors.white,
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.2),
+            blurRadius: 20,
+            offset: const Offset(0, -4),
           ),
-          child: Column(
-            children: [
-              // ── Header ──
-              Padding(
-                padding: const EdgeInsets.fromLTRB(20, 12, 20, 0),
-                child: Column(
-                  children: [
-                    Container(
-                      width: 40, height: 4,
-                      decoration: BoxDecoration(
-                        color: subColor.withValues(alpha: 0.3),
-                        borderRadius: BorderRadius.circular(2),
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    Row(
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.all(8),
-                          decoration: BoxDecoration(
-                            color: AppTheme.cyan.withValues(alpha: 0.12),
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: const Icon(Icons.psychology_rounded,
-                              color: AppTheme.cyan, size: 20),
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text('AI Asistan',
-                                style: GoogleFonts.inter(
-                                  color: textColor,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w800,
-                                )),
-                              Text(
-                                widget.cardTitle,
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: GoogleFonts.inter(
-                                  color: subColor, fontSize: 12),
-                              ),
-                            ],
-                          ),
-                        ),
-                        IconButton(
-                          onPressed: () => Navigator.pop(context),
-                          icon: Icon(Icons.close_rounded,
-                              color: subColor, size: 20),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 12),
-                    Divider(color: isDark ? AppTheme.divider : AppTheme.lightDivider, height: 1),
-                  ],
-                ),
-              ),
-
-              // ── Chat Messages ──
-              Expanded(
-                child: _messages.isEmpty
-                    ? _buildEmptyState(subColor)
-                    : ListView.builder(
-                        controller: _scrollController,
-                        padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
-                        itemCount: _messages.length + (_loading ? 1 : 0),
-                        itemBuilder: (_, i) {
-                          if (i == _messages.length && _loading) {
-                            return _buildTypingIndicator(isDark);
-                          }
-                          return _buildMessageBubble(_messages[i], isDark);
-                        },
-                      ),
-              ),
-
-              // ── Input Field ──
-              Container(
-                padding: EdgeInsets.fromLTRB(16, 8, 8, bottomPadding + 16),
-                decoration: BoxDecoration(
-                  color: isDark
-                      ? AppTheme.surface.withValues(alpha: 0.98)
-                      : Colors.white.withValues(alpha: 0.98),
-                  border: Border(
-                    top: BorderSide(
-                      color: isDark ? AppTheme.divider : AppTheme.lightDivider),
+        ],
+      ),
+      child: Column(
+        children: [
+          // ── Header ──
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 12, 20, 0),
+            child: Column(
+              children: [
+                Container(
+                  width: 40, height: 4,
+                  decoration: BoxDecoration(
+                    color: subColor.withValues(alpha: 0.3),
+                    borderRadius: BorderRadius.circular(2),
                   ),
                 ),
-                child: Row(
+                const SizedBox(height: 16),
+                Row(
                   children: [
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: AppTheme.cyan.withValues(alpha: 0.12),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: const Icon(Icons.psychology_rounded,
+                          color: AppTheme.cyan, size: 20),
+                    ),
+                    const SizedBox(width: 12),
                     Expanded(
-                      child: TextField(
-                        controller: _controller,
-                        style: GoogleFonts.inter(
-                          color: textColor, fontSize: 14),
-                        maxLines: 3,
-                        minLines: 1,
-                        textInputAction: TextInputAction.send,
-                        onSubmitted: (_) => _sendMessage(),
-                        decoration: InputDecoration(
-                          hintText: 'Bu kartla ilgili bir soru sor...',
-                          hintStyle: GoogleFonts.inter(
-                            color: subColor.withValues(alpha: 0.5),
-                            fontSize: 14,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('AI Asistan',
+                            style: GoogleFonts.inter(
+                              color: textColor,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800,
+                            )),
+                          Text(
+                            widget.cardTitle,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: GoogleFonts.inter(
+                              color: subColor, fontSize: 12),
                           ),
-                          filled: true,
-                          fillColor: isDark
-                              ? Colors.white.withValues(alpha: 0.05)
-                              : Colors.black.withValues(alpha: 0.03),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
-                            borderSide: BorderSide.none,
-                          ),
-                          contentPadding: const EdgeInsets.symmetric(
-                            horizontal: 16, vertical: 12),
-                        ),
+                        ],
                       ),
                     ),
-                    const SizedBox(width: 8),
-                    GestureDetector(
-                      onTap: _sendMessage,
-                      child: Container(
-                        width: 44, height: 44,
-                        decoration: BoxDecoration(
-                          color: _loading
-                              ? AppTheme.cyan.withValues(alpha: 0.3)
-                              : AppTheme.cyan,
-                          borderRadius: BorderRadius.circular(14),
-                        ),
-                        child: Icon(
-                          _loading
-                              ? Icons.hourglass_top_rounded
-                              : Icons.send_rounded,
-                          color: Colors.white, size: 20,
-                        ),
-                      ),
+                    IconButton(
+                      onPressed: () => Navigator.pop(context),
+                      icon: Icon(Icons.close_rounded,
+                          color: subColor, size: 20),
                     ),
                   ],
                 ),
-              ),
-            ],
+                const SizedBox(height: 12),
+                Divider(color: isDark ? AppTheme.divider : AppTheme.lightDivider, height: 1),
+              ],
+            ),
           ),
-        ),
+
+          // ── Chat Messages ──
+          Expanded(
+            child: _messages.isEmpty
+                ? _buildEmptyState(subColor)
+                : ListView.builder(
+                    controller: _scrollController,
+                    padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+                    itemCount: _messages.length + (_loading ? 1 : 0),
+                    itemBuilder: (_, i) {
+                      if (i == _messages.length && _loading) {
+                        return _buildTypingIndicator(isDark);
+                      }
+                      return _buildMessageBubble(_messages[i], isDark);
+                    },
+                  ),
+          ),
+
+          // ── Input Field ──
+          Container(
+            padding: EdgeInsets.fromLTRB(16, 8, 8, bottomPadding + 16),
+            decoration: BoxDecoration(
+              color: isDark
+                  ? AppTheme.surface.withValues(alpha: 0.98)
+                  : Colors.white.withValues(alpha: 0.98),
+              border: Border(
+                top: BorderSide(
+                  color: isDark ? AppTheme.divider : AppTheme.lightDivider),
+              ),
+            ),
+            child: Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    controller: _controller,
+                    style: GoogleFonts.inter(
+                      color: textColor, fontSize: 14),
+                    maxLines: 3,
+                    minLines: 1,
+                    textInputAction: TextInputAction.send,
+                    onSubmitted: (_) => _sendMessage(),
+                    decoration: InputDecoration(
+                      hintText: 'Bu kartla ilgili bir soru sor...',
+                      hintStyle: GoogleFonts.inter(
+                        color: subColor.withValues(alpha: 0.5),
+                        fontSize: 14,
+                      ),
+                      filled: true,
+                      fillColor: isDark
+                          ? Colors.white.withValues(alpha: 0.05)
+                          : Colors.black.withValues(alpha: 0.03),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(16),
+                        borderSide: BorderSide.none,
+                      ),
+                      contentPadding: const EdgeInsets.symmetric(
+                        horizontal: 16, vertical: 12),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                GestureDetector(
+                  onTap: _sendMessage,
+                  child: Container(
+                    width: 44, height: 44,
+                    decoration: BoxDecoration(
+                      color: _loading
+                          ? AppTheme.cyan.withValues(alpha: 0.3)
+                          : AppTheme.cyan,
+                      borderRadius: BorderRadius.circular(14),
+                    ),
+                    child: Icon(
+                      _loading
+                          ? Icons.hourglass_top_rounded
+                          : Icons.send_rounded,
+                      color: Colors.white, size: 20,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

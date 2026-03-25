@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../models/topic_model.dart';
@@ -74,6 +75,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
   bool _limitReached = false;
   bool _isPremium = false;
   int _remaining = PremiumService.dailyFreeCaseLimit;
+  StreamSubscription? _loadSub;
 
   @override
   void initState() {
@@ -106,7 +108,13 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
       });
       return;
     }
-    _loadCases();
+    await _loadCases();
+  }
+
+  @override
+  void dispose() {
+    _loadSub?.cancel();
+    super.dispose();
   }
 
   String _subjectName(String id) =>
@@ -116,69 +124,59 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
     setState(() {
       _loading = true;
       _loadError = false;
+      _allCases = [];
+      _cases = [];
     });
-    try {
-      List<ClinicalCase> cases;
-      if (widget.topicFilter != null) {
-        cases = widget.topicFilter!.clinicalCases;
-      } else if (widget.subjectIds != null && widget.subjectIds!.isNotEmpty) {
-        final futures = widget.subjectIds!
-            .map((id) => _dataService.loadCases(subjectId: id));
-        final results = await Future.wait(futures);
-        cases = results.expand((c) => c).toList();
-      } else {
-        cases = await _dataService.loadCases(subjectId: widget.subjectId);
-      }
-      _allCases = cases;
-      await _applyMode(cases);
 
-      // DataService'de hata varsa kullanıcıya bildir (kısmi yükleme)
-      if (_dataService.lastError != null && mounted) {
-        ErrorHandler.showSnackbar(
-          context,
-          message: 'Bazı veriler yüklenemedi. Mevcut verilerle devam ediliyor.',
-          isError: false,
-          onRetry: _loadCases,
-        );
-      }
-    } catch (e) {
-      if (mounted) {
-        setState(() {
-          _loading = false;
-          _loadError = true;
-        });
-      }
+    _loadSub?.cancel();
+
+    // Specific topic fast-path
+    if (widget.topicFilter != null) {
+      _allCases = List.from(widget.topicFilter!.clinicalCases);
+      await _applyMode(_allCases);
+      setState(() => _loading = false);
+      return;
     }
+
+    _loadSub = _dataService
+        .loadCasesProgressive(subjectId: widget.subjectId)
+        .listen(
+      (chunk) async {
+        if (!mounted) return;
+        _allCases.addAll(chunk);
+        await _applyMode(chunk, isIncremental: true);
+      },
+      onError: (e) {
+        if (mounted) {
+          setState(() {
+            _loading = false;
+            _loadError = true;
+          });
+        }
+      },
+      onDone: () {
+        if (mounted) {
+          setState(() => _loading = false);
+        }
+      },
+    );
   }
 
-  Future<void> _applyMode(List<ClinicalCase> source) async {
+  Future<void> _applyMode(List<ClinicalCase> source, {bool isIncremental = false}) async {
     List<ClinicalCase> result = [];
     final allMap = await _srService.getAllData();
 
     if (_mode == CaseStudyMode.learnedOnly) {
-      result = source.where((cc) {
-        final data = allMap[cc.id];
-        return data != null && data.lastQuality == 2;
-      }).toList();
+      result = source.where((cc) => allMap[cc.id]?.lastQuality == 2).toList();
     } else if (_mode == CaseStudyMode.failedOnly) {
-      result = source.where((cc) {
-        final data = allMap[cc.id];
-        return data != null && data.lastQuality == 1;
-      }).toList();
+      result = source.where((cc) => allMap[cc.id]?.lastQuality == 1).toList();
     } else if (_mode == CaseStudyMode.pocketOnly) {
-      result = source.where((cc) {
-        final data = allMap[cc.id];
-        return data != null && data.isBookmarked;
-      }).toList();
+      result = source.where((cc) => allMap[cc.id]?.isBookmarked ?? false).toList();
     } else if (_mode == CaseStudyMode.newOnly) {
       result = source.where((cc) => !allMap.containsKey(cc.id)).toList();
-      // Sıralı gösterim — shuffle yok
-      if (widget.dailyGoal != null && widget.dailyGoal! > 0 && result.length > widget.dailyGoal!) {
-        result = result.take(widget.dailyGoal!).toList();
-      }
     } else if (_mode == CaseStudyMode.dueOnly) {
-      final dueFailed  = <ClinicalCase>[];
-      final newCases   = <ClinicalCase>[];
+      final dueFailed = <ClinicalCase>[];
+      final newCases = <ClinicalCase>[];
       final dueLearned = <ClinicalCase>[];
 
       for (final cc in source) {
@@ -191,23 +189,25 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
           dueLearned.add(cc);
         }
       }
-      // Sıralı gösterim — shuffle yok
-      if (widget.dailyGoal != null && widget.dailyGoal! > 0 && newCases.length > widget.dailyGoal!) {
-        newCases.removeRange(widget.dailyGoal!, newCases.length);
-      }
       result = [...dueFailed, ...newCases, ...dueLearned];
-      if (result.isEmpty) result = List.from(source);
+      if (result.isEmpty && !isIncremental) result = List.from(source);
     } else {
       result = List.from(source);
     }
 
     if (mounted) {
       setState(() {
-        _cases = result;
-        _currentIndex = 0;
-        _loading = false;
+        if (isIncremental) {
+          _cases.addAll(result);
+        } else {
+          _cases = result;
+          _currentIndex = 0;
+          _loading = false;
+        }
       });
-      _loadBookmarkState();
+      if (!isIncremental || _currentIndex == 0) {
+        _loadBookmarkState();
+      }
     }
   }
 

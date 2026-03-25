@@ -374,46 +374,40 @@ class _MockExamSetupScreenState extends State<MockExamSetupScreen> {
   Widget _buildSummaryCard(bool isDark) {
     final timeMin = (_questionCount * 1.5).ceil();
 
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(18),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-        child: Container(
-          padding: const EdgeInsets.all(20),
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: isDark
-                  ? [
-                      AppTheme.cyan.withValues(alpha: 0.10),
-                      AppTheme.neonPurple.withValues(alpha: 0.08),
-                    ]
-                  : [
-                      AppTheme.cyan.withValues(alpha: 0.07),
-                      AppTheme.neonPurple.withValues(alpha: 0.05),
-                    ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-            borderRadius: BorderRadius.circular(18),
-            border: Border.all(
-                color: AppTheme.cyan.withValues(alpha: 0.20)),
-          ),
-          child: Row(
-            children: [
-              _buildStatItem(
-                  '⏱️', '$timeMin dk', 'Süre', isDark),
-              _buildDivider(isDark),
-              _buildStatItem(
-                  '📝', '$_questionCount', 'Soru', isDark),
-              _buildDivider(isDark),
-              _buildStatItem(
-                  '🎯',
-                  '${_selectedSubjects.length}',
-                  'Branş',
-                  isDark),
-            ],
-          ),
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: isDark
+              ? [
+                  AppTheme.cyan.withValues(alpha: 0.15),
+                  AppTheme.neonPurple.withValues(alpha: 0.12),
+                ]
+              : [
+                  AppTheme.cyan.withValues(alpha: 0.10),
+                  AppTheme.neonPurple.withValues(alpha: 0.08),
+                ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
         ),
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(
+            color: AppTheme.cyan.withValues(alpha: 0.30)),
+      ),
+      child: Row(
+        children: [
+          _buildStatItem(
+              '⏱️', '$timeMin dk', 'Süre', isDark),
+          _buildDivider(isDark),
+          _buildStatItem(
+              '📝', '$_questionCount', 'Soru', isDark),
+          _buildDivider(isDark),
+          _buildStatItem(
+              '🎯',
+              '${_selectedSubjects.length}',
+              'Branş',
+              isDark),
+        ],
       ),
     )
         .animate()

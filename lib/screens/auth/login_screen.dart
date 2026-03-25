@@ -1003,27 +1003,62 @@ class _LoginForm extends StatelessWidget {
         ),
         const SizedBox(height: 10),
 
-        // Forgot password
-        Align(
-          alignment: Alignment.centerRight,
-          child: GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute<void>(
-                  builder: (_) => const ForgotPasswordScreen(),
-                ),
-              );
-            },
-            child: Text(
-              'Şifremi Unuttum',
-              style: GoogleFonts.inter(
-                color: AppTheme.cyan,
-                fontSize: 13,
-                fontWeight: FontWeight.w600,
+        // Beni Hatırla + Şifremi Unuttum
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            GestureDetector(
+              onTap: () => vm.setRememberMe(!vm.rememberMe),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  SizedBox(
+                    width: 18,
+                    height: 18,
+                    child: Checkbox(
+                      value: vm.rememberMe,
+                      onChanged: (v) => vm.setRememberMe(v ?? false),
+                      activeColor: AppTheme.cyan,
+                      checkColor: AppTheme.background,
+                      side: BorderSide(
+                        color: Colors.white.withValues(alpha: 0.35),
+                        width: 1.5,
+                      ),
+                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      visualDensity: VisualDensity.compact,
+                    ),
+                  ),
+                  const SizedBox(width: 6),
+                  Text(
+                    'Beni Hatırla',
+                    style: GoogleFonts.inter(
+                      color: Colors.white.withValues(alpha: 0.65),
+                      fontSize: 13,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ],
               ),
             ),
-          ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute<void>(
+                    builder: (_) => const ForgotPasswordScreen(),
+                  ),
+                );
+              },
+              child: Text(
+                'Şifremi Unuttum',
+                style: GoogleFonts.inter(
+                  color: AppTheme.cyan,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+          ],
         ),
         const SizedBox(height: 20),
 

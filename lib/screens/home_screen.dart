@@ -139,14 +139,14 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Stack(
           children: [
             // ── Ambient Neon Glows — RepaintBoundary ile izole edildi ────────
-            RepaintBoundary(child: Positioned(top: -160, left: -120,
-                child: _AmbientBlob(color: AppTheme.cyan,      size: 500, opacity: isDark ? 0.12 : 0.05))),
-            RepaintBoundary(child: Positioned(top: 180, right: -140,
-                child: _AmbientBlob(color: AppTheme.neonPink,  size: 420, opacity: isDark ? 0.10 : 0.04))),
-            RepaintBoundary(child: Positioned(bottom: 150, left: -100,
-                child: _AmbientBlob(color: AppTheme.neonPurple,size: 360, opacity: isDark ? 0.10 : 0.04))),
-            RepaintBoundary(child: Positioned(bottom: -80, right: -60,
-                child: _AmbientBlob(color: AppTheme.cyan,      size: 300, opacity: isDark ? 0.07 : 0.03))),
+            Positioned(top: -160, left: -120,
+                child: RepaintBoundary(child: _AmbientBlob(color: AppTheme.cyan,      size: 500, opacity: isDark ? 0.12 : 0.05))),
+            Positioned(top: 180, right: -140,
+                child: RepaintBoundary(child: _AmbientBlob(color: AppTheme.neonPink,  size: 420, opacity: isDark ? 0.10 : 0.04))),
+            Positioned(bottom: 150, left: -100,
+                child: RepaintBoundary(child: _AmbientBlob(color: AppTheme.neonPurple,size: 360, opacity: isDark ? 0.10 : 0.04))),
+            Positioned(bottom: -80, right: -60,
+                child: RepaintBoundary(child: _AmbientBlob(color: AppTheme.cyan,      size: 300, opacity: isDark ? 0.07 : 0.03))),
 
             // ── Main Content ────────────────────────────────────────────────
             SafeArea(

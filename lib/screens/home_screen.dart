@@ -210,6 +210,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   const SizedBox(height: 16),
 
+                                  // ── Günün Akıllı Görevi ────────────────────────────────
+                                  _buildSmartTaskCard(isDark),
+
+                                  const SizedBox(height: 24),
+
                                   // ── Flashcard Hub ──────────────────────────────────────
                                   RepaintBoundary(child: _buildFlashcardHub(isDark)),
 
@@ -510,6 +515,303 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Colors.transparent,
       builder: (_) => _InfoSheet(isDark: isDark),
     );
+  }
+
+  // ── Günün Akıllı Görevi ────────────────────────────────────────────────────
+  Widget _buildSmartTaskCard(bool isDark) {
+    final dueCards = _flashcardSummary.toReviewCount.clamp(0, 20);
+    final dueCases = _caseSummary.toReviewCount.clamp(0, 5);
+
+    if (dueCards == 0 && dueCases == 0) return const SizedBox.shrink();
+
+    // En çok hata yapılan branşlar (SM-2 lastQuality=1)
+    final Map<String, int> failedBySubject = {};
+    for (final t in _topics) {
+      int fail = 0;
+      for (final fc in t.flashcards) {
+        final d = _sm2Data[fc.id];
+        if (d != null && d.lastQuality == 1) fail++;
+      }
+      if (fail > 0 && t.subject.isNotEmpty) {
+        failedBySubject[t.subject] = (failedBySubject[t.subject] ?? 0) + fail;
+      }
+    }
+    final topSubjects = (failedBySubject.entries.toList()
+          ..sort((a, b) => b.value.compareTo(a.value)))
+        .take(3)
+        .map((e) => e.key)
+        .toList();
+
+    final estimatedMin = (dueCards * 0.5 + dueCases * 3).round().clamp(5, 60);
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: GestureDetector(
+        onTap: () {
+          HapticFeedback.mediumImpact();
+          _startSmartSession();
+        },
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(24),
+            gradient: LinearGradient(
+              colors: isDark
+                  ? [const Color(0xFF1E0E2C), const Color(0xFF0C1525)]
+                  : [const Color(0xFFFFF3F0), const Color(0xFFF3ECFF)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            border: Border.all(
+              color: AppTheme.coral.withValues(alpha: 0.45),
+              width: 1.2,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: AppTheme.coral.withValues(alpha: isDark ? 0.28 : 0.14),
+                blurRadius: 36,
+                spreadRadius: -4,
+                offset: const Offset(0, 10),
+              ),
+              BoxShadow(
+                color: AppTheme.violet.withValues(alpha: isDark ? 0.18 : 0.09),
+                blurRadius: 20,
+                offset: const Offset(0, 4),
+              ),
+            ],
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // ── Header ────────────────────────────────────────────────────
+              Padding(
+                padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+                child: Row(
+                  children: [
+                    // Brain icon — coral→violet gradient
+                    Container(
+                      width: 46,
+                      height: 46,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(14),
+                        gradient: const LinearGradient(
+                          colors: [AppTheme.coral, AppTheme.violet],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: AppTheme.coral.withValues(alpha: 0.55),
+                            blurRadius: 18,
+                            spreadRadius: -2,
+                          ),
+                        ],
+                      ),
+                      child: const Icon(Icons.psychology_alt_rounded,
+                          color: Colors.white, size: 24),
+                    ),
+                    const SizedBox(width: 14),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                'Günün Akıllı Görevi',
+                                style: GoogleFonts.inter(
+                                  color: isDark
+                                      ? AppTheme.textPrimary
+                                      : AppTheme.lightTextPrimary,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                              const SizedBox(width: 8),
+                              Container(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 7, vertical: 3),
+                                decoration: BoxDecoration(
+                                  gradient: const LinearGradient(
+                                    colors: [AppTheme.coral, AppTheme.violet],
+                                  ),
+                                  borderRadius: BorderRadius.circular(6),
+                                ),
+                                child: Text(
+                                  'PREMIUM',
+                                  style: GoogleFonts.inter(
+                                    color: Colors.white,
+                                    fontSize: 9,
+                                    fontWeight: FontWeight.w800,
+                                    letterSpacing: 0.8,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 3),
+                          Text(
+                            'TUS Zekası Hazır!  •  ~$estimatedMin dk fokus',
+                            style: GoogleFonts.inter(
+                              color: AppTheme.coral,
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Icon(Icons.bolt_rounded,
+                        color: AppTheme.neonGold, size: 26),
+                  ],
+                ),
+              ),
+
+              // ── Divider ───────────────────────────────────────────────────
+              Padding(
+                padding: const EdgeInsets.fromLTRB(20, 16, 20, 0),
+                child: Container(
+                  height: 1,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [
+                        AppTheme.coral.withValues(alpha: 0.5),
+                        AppTheme.violet.withValues(alpha: 0.5),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+
+              // ── Sayaçlar + Branşlar ───────────────────────────────────────
+              Padding(
+                padding: const EdgeInsets.fromLTRB(20, 14, 20, 0),
+                child: Row(
+                  children: [
+                    _SmartCounter(
+                      icon: Icons.style_rounded,
+                      label: 'Kart',
+                      count: dueCards,
+                      color: AppTheme.cyan,
+                      isDark: isDark,
+                    ),
+                    const SizedBox(width: 10),
+                    _SmartCounter(
+                      icon: Icons.quiz_rounded,
+                      label: 'Vaka',
+                      count: dueCases,
+                      color: AppTheme.violet,
+                      isDark: isDark,
+                    ),
+                    if (topSubjects.isNotEmpty) ...[
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            children: topSubjects.map((s) {
+                              final label = s.length > 7
+                                  ? '${s.substring(0, 7)}…'
+                                  : s;
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 6),
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 10, vertical: 5),
+                                  decoration: BoxDecoration(
+                                    color: AppTheme.error.withValues(
+                                        alpha: isDark ? 0.15 : 0.08),
+                                    borderRadius: BorderRadius.circular(20),
+                                    border: Border.all(
+                                      color: AppTheme.error
+                                          .withValues(alpha: 0.35),
+                                    ),
+                                  ),
+                                  child: Text(
+                                    label,
+                                    style: GoogleFonts.inter(
+                                      color: AppTheme.error,
+                                      fontSize: 11,
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  ),
+                                ),
+                              );
+                            }).toList(),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+
+              // ── Fokus Seansı Başlat butonu ────────────────────────────────
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: Container(
+                  width: double.infinity,
+                  height: 54,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(16),
+                    gradient: const LinearGradient(
+                      colors: [AppTheme.coral, AppTheme.violet],
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: AppTheme.coral.withValues(alpha: 0.45),
+                        blurRadius: 22,
+                        offset: const Offset(0, 6),
+                      ),
+                    ],
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Icon(Icons.play_arrow_rounded,
+                          color: Colors.white, size: 22),
+                      const SizedBox(width: 8),
+                      Text(
+                        'Fokus Seansı Başlat',
+                        style: GoogleFonts.inter(
+                          color: Colors.white,
+                          fontSize: 15,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 0.3,
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      const Icon(Icons.arrow_forward_rounded,
+                          color: Colors.white, size: 18),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        )
+            .animate()
+            .fadeIn(duration: 500.ms, delay: 60.ms)
+            .slideY(begin: 0.08, end: 0, curve: Curves.easeOutExpo),
+      ),
+    );
+  }
+
+  void _startSmartSession() async {
+    await Navigator.push(
+      context,
+      AppRoute.slideUp(
+        FlashcardScreen(
+          subjectIds: _progress.selectedSubjectIds.isNotEmpty
+              ? _progress.selectedSubjectIds
+              : null,
+          initialMode: FlashcardMode.dueOnly,
+          dailyGoal: 20,
+        ),
+      ),
+    );
+    _refreshStats();
   }
 
   // ── Flashcard Hub ──────────────────────────────────────────────────────────
@@ -1405,6 +1707,50 @@ class GlowIconBox extends StatelessWidget {
 }
 
 // ── Folder Card ────────────────────────────────────────────────────────────
+// ── Günün Akıllı Görevi — Sayaç Chip'i ────────────────────────────────────────
+class _SmartCounter extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final int count;
+  final Color color;
+  final bool isDark;
+
+  const _SmartCounter({
+    required this.icon,
+    required this.label,
+    required this.count,
+    required this.color,
+    required this.isDark,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: isDark ? 0.13 : 0.09),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: color.withValues(alpha: 0.35)),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, color: color, size: 15),
+          const SizedBox(width: 6),
+          Text(
+            '$count $label',
+            style: GoogleFonts.inter(
+              color: color,
+              fontSize: 13,
+              fontWeight: FontWeight.w800,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class _FolderCard extends StatelessWidget {
   final String       label;
   final int          count;

@@ -1,137 +1,812 @@
 {
+  "id": "patoloji_prof_v3",
   "subject": "Patoloji",
-  "type": "prof_v3",
-  "source": "patoloji_100_prof_v3.txt",
-  "cards": [
+  "chapter": "Patoloji Profesör Soruları V3",
+  "topic": "Patoloji TUS Soruları",
+  "sub_topic": "Profesör Açıklamalı Sorular - Set 3",
+  "content_summary": "100 adet profesör açıklamalı Patoloji sorusu - 3. Set",
+  "flashcards": [],
+  "tus_spots": [],
+  "clinical_cases": [
     {
       "id": "patoloji_pv3-001",
-      "question": "Akut enflamasyonda damar geçirgenliğini artıran, ancak sadece venüllerde etkili olan en erken mediyatör hangisidir?",
-      "options": [
-        "A) Histamin",
-        "B) Lökotrienler",
-        "C) Kompleman C5a",
-        "D) Bradikinin",
-        "E) Prostaglandinler"
-      ],
+      "case": "Soru:(Patoloji) Akut enflamasyonda damar geçirgenliğini artıran, ancak sadece venüllerde etkili olan en erken mediyatör hangisidir?",
+      "options": ["A) Histamin", "B) Lökotrienler", "C) Kompleman C5a", "D) Bradikinin", "E) Prostaglandinler"],
       "correct_answer": "A) Histamin",
-      "explanation": "Histamin, vazoaktif aminler içinde en erken salınan ve postkapiller venüllerde endotel kontraksiyonu yaparak ödeme yol açan ana mediyatördür."
+      "explanation": "Histamin, vazoaktif aminler içinde en erken salınan ve postkapiller venüllerde endotel kontraksiyonu yaparak ödeme yol açan ana mediyatördür. Mast hücrelerinden, bazofillerden ve trombositlerden salınır.",
+      "story_hint": "💡 PROFESÖR NOTU: 'H1 = Hemen' — Histamin akut fazın ilk saniyelerinde salınan en erken mediyatördür."
     },
     {
       "id": "patoloji_pv3-002",
-      "question": "\"Fibrinoid nekroz\" damar duvarlarında amorf, eosinofilik madde birikimiyle karakterizedir. Bu süreçte biriken madde esas olarak nedir?",
-      "options": [
-        "A) Plazma proteinleri ve Antijen-antikor kompleksleri",
-        "B) Sadece kalsiyum",
-        "C) Yağ damlacıkları",
-        "D) Tip IV kollajen",
-        "E) Amiloid lifleri"
-      ],
-      "correct_answer": "A) Plazma proteinleri ve Antijen-antikor kompleksleri",
-      "explanation": "İmmün vaskülitlerde plazmadan sızan proteinlerin ve immün komplekslerin damar duvarında polimerize olmasıyla \"fibrin benzeri\" bir görüntü oluşur."
+      "case": "Soru:(Patoloji) 'Fibrinoid nekroz' damar duvarlarında amorf, eosinofilik madde birikimiyle karakterizedir. Bu süreçte biriken madde esas olarak nedir?",
+      "options": ["A) Plazma proteinleri ve antijen-antikor kompleksleri", "B) Sadece kalsiyum", "C) Yağ damlacıkları", "D) Tip IV kollajen", "E) Amiloid lifleri"],
+      "correct_answer": "A) Plazma proteinleri ve antijen-antikor kompleksleri",
+      "explanation": "İmmün vaskülitlerde plazmadan sızan proteinlerin ve immün komplekslerin damar duvarında polimerize olmasıyla 'fibrin benzeri' bir görüntü oluşur.",
+      "story_hint": "💡 PROFESÖR NOTU: Fibrinoid nekroz = immün kompleks + plazma proteini birikimi; malign HT ve SLE'de görülür."
     },
     {
       "id": "patoloji_pv3-003",
-      "question": "Atrofik mide mukozasında, normalde bulunmayan goblet hücrelerinin ve bağırsak tipi epitelin görülmesine ne ad verilir?",
-      "options": [
-        "A) İntestinal Metaplazi",
-        "B) Skuamöz Metaplazi",
-        "C) Displazi",
-        "D) Anaplazi",
-        "E) Atipik hiperplazi"
-      ],
-      "correct_answer": "A) İntestinal Metaplazi",
-      "explanation": "Kronik gastrit ve H. pylori enfeksiyonunda mide epiteli değişime uğrayarak bağırsak karakteri kazanır; bu durum gastrik adenokarsinom için risk faktörüdür."
+      "case": "Soru:(Patoloji) Atrofik mide mukozasında, normalde bulunmayan goblet hücrelerinin ve bağırsak tipi epitelin görülmesine ne ad verilir?",
+      "options": ["A) İntestinal metaplazi", "B) Skuamöz metaplazi", "C) Displazi", "D) Anaplazi", "E) Atipik hiperplazi"],
+      "correct_answer": "A) İntestinal metaplazi",
+      "explanation": "Kronik gastrit ve H. pylori enfeksiyonunda mide epiteli değişime uğrayarak bağırsak karakteri kazanır; bu durum gastrik adenokarsinom için risk faktörüdür.",
+      "story_hint": "💡 PROFESÖR NOTU: H. pylori → kronik gastrit → intestinal metaplazi → displazi → karsinom zinciri TUS'ta sık çıkar."
     },
     {
       "id": "patoloji_pv3-004",
-      "question": "Özellikle genç erkeklerde görülen, kemiğin diafiz yerleşimli ve radyolojide \"soğan zarı\" (onion skin) görüntüsü veren küçük yuvarlak hücreli tümörü hangisidir?",
-      "options": [
-        "A) Ewing Sarkomu",
-        "B) Osteosarkom",
-        "C) Kondrosarkom",
-        "D) Multipl Miyelom",
-        "E) Osteoid Osteoma"
-      ],
-      "correct_answer": "A) Ewing Sarkomu",
-      "explanation": "Ewing sarkomu t(11;22) translokasyonu ile ilişkilidir ve periost reaksiyonuna bağlı katmanlı kemik oluşumu ile tanınır."
+      "case": "Soru:(Patoloji) Özellikle genç erkeklerde görülen, kemiğin diafiz yerleşimli ve radyolojide 'soğan zarı' (onion skin) görüntüsü veren küçük yuvarlak hücreli tümörü hangisidir?",
+      "options": ["A) Ewing sarkomu", "B) Osteosarkom", "C) Kondrosarkom", "D) Multipl miyelom", "E) Osteoid osteoma"],
+      "correct_answer": "A) Ewing sarkomu",
+      "explanation": "Ewing sarkomu t(11;22) translokasyonu ile ilişkilidir ve periost reaksiyonuna bağlı katmanlı kemik oluşumu ile tanınır.",
+      "story_hint": "💡 PROFESÖR NOTU: Ewing = diafiz + soğan zarı + t(11;22); osteosarkom = metafiz + güneş ışını + osteoid."
     },
     {
       "id": "patoloji_pv3-005",
-      "question": "\"Paraneoplastik sendrom\" olarak \"Hiperkalsemi\" (PTHrP salınımı ile) en sık hangi akciğer kanseri türünde görülür?",
-      "options": [
-        "A) Skuamöz hücreli karsinom",
-        "B) Adenokarsinom",
-        "C) Küçük hücreli karsinom (SCLC)",
-        "D) Büyük hücreli karsinom",
-        "E) Karsinoid tümör"
-      ],
+      "case": "Soru:(Patoloji) 'Paraneoplastik sendrom' olarak hiperkalsemi (PTHrP salınımı ile) en sık hangi akciğer kanseri türünde görülür?",
+      "options": ["A) Skuamöz hücreli karsinom", "B) Adenokarsinom", "C) Küçük hücreli karsinom (SCLC)", "D) Büyük hücreli karsinom", "E) Karsinoid tümör"],
       "correct_answer": "A) Skuamöz hücreli karsinom",
-      "explanation": "Skuamöz hücreli karsinom, PTH benzeri protein salgılayarak kalsiyum yüksekliğine neden olur. Küçük hücreli karsinom ise daha çok ACTH ve ADH (SIADH) salgılar."
+      "explanation": "Skuamöz hücreli karsinom PTH benzeri protein salgılayarak kalsiyum yüksekliğine neden olur. Küçük hücreli karsinom ise daha çok ACTH ve ADH (SIADH) salgılar.",
+      "story_hint": "💡 PROFESÖR NOTU: Skuamöz → PTHrP → hiperkalsemi; SCLC → ACTH/ADH → Cushing/SIADH."
     },
     {
       "id": "patoloji_pv3-006",
-      "question": "Hipertansiyon hastalarının böbreklerinde, arteriol duvarlarının pembe, camsı bir şekilde kalınlaşmasıyla giden patolojik tablo hangisidir?",
-      "options": [
-        "A) Hyalin Arterioloskleroz",
-        "B) Hiperplastik Arterioloskleroz",
-        "C) Monckeberg kalsifikasyonu",
-        "D) Fibrinoid nekroz",
-        "E) Ateroskleroz"
-      ],
-      "correct_answer": "A) Hyalin Arterioloskleroz",
-      "explanation": "Uzun süreli benign hipertansiyonda ve diyabette plazma proteinlerinin bazal membrana sızması sonucu hyalin arterioloskleroz gelişir."
+      "case": "Soru:(Patoloji) Hipertansiyon hastalarının böbreklerinde, arteriol duvarlarının pembe, camsı bir şekilde kalınlaşmasıyla giden patolojik tablo hangisidir?",
+      "options": ["A) Hyalin arterioloskleroz", "B) Hiperplastik arterioloskleroz", "C) Monckeberg kalsifikasyonu", "D) Fibrinoid nekroz", "E) Ateroskleroz"],
+      "correct_answer": "A) Hyalin arterioloskleroz",
+      "explanation": "Uzun süreli benign hipertansiyonda ve diyabette plazma proteinlerinin bazal membrana sızması sonucu hyalin arterioloskleroz gelişir.",
+      "story_hint": "💡 PROFESÖR NOTU: Benign HT = hyalin; malign HT = hiperplastik (soğan zarı) arterioloskleroz."
     },
     {
       "id": "patoloji_pv3-007",
-      "question": "Karaciğer kistik lezyonları arasında, \"scolex\"lerin (parazit başı) ve \"kız veziküllerin\" görülmesi hangi patolojiyi kanıtlar?",
-      "options": [
-        "A) Hidatik kist (Echinococcus granulosus)",
-        "B) Amip apsesi",
-        "C) Piyojenik apse",
-        "D) Biliyer kistadenom",
-        "E) Polikistik karaciğer hastalığı"
-      ],
+      "case": "Soru:(Patoloji) Karaciğer kistik lezyonları arasında, 'scolex'lerin (parazit başı) ve 'kız veziküllerin' görülmesi hangi patolojiyi kanıtlar?",
+      "options": ["A) Hidatik kist (Echinococcus granulosus)", "B) Amip apsesi", "C) Piyojenik apse", "D) Biliyer kistadenom", "E) Polikistik karaciğer hastalığı"],
       "correct_answer": "A) Hidatik kist (Echinococcus granulosus)",
-      "explanation": "Echinococcus granulosus larvaları karaciğerde kist oluşturur; kist içindeki çimlenme zarından skoleksler ve yeni kistler oluşur."
+      "explanation": "Echinococcus granulosus larvaları karaciğerde kist oluşturur; kist içindeki çimlenme zarından skoleksler ve yeni kistler oluşur.",
+      "story_hint": "💡 PROFESÖR NOTU: Hidatik kist = kız veziküller + skoleks + 'kum' görünümü; koyun-köpek döngüsü ile bulaşır."
     },
     {
       "id": "patoloji_pv3-008",
-      "question": "Tiroid kanserleri arasında en iyi prognoza sahip olan ve karakteristik olarak \"Orphan Annie\" (buzlu cam) çekirdekleri içeren tür hangisidir?",
-      "options": [
-        "A) Papiller karsinom",
-        "B) Foliküler karsinom",
-        "C) Medüller karsinom",
-        "D) Anaplastik karsinom",
-        "E) Hurthle hücreli tümör"
-      ],
+      "case": "Soru:(Patoloji) Tiroid kanserleri arasında en iyi prognoza sahip olan ve karakteristik olarak 'Orphan Annie' (buzlu cam) çekirdekleri içeren tür hangisidir?",
+      "options": ["A) Papiller karsinom", "B) Foliküler karsinom", "C) Medüller karsinom", "D) Anaplastik karsinom", "E) Hurthle hücreli tümör"],
       "correct_answer": "A) Papiller karsinom",
-      "explanation": "Papiller karsinom en sık görülen tiroid kanseridir ve intranükleer psödoinvazyonlar ve şeffaf çekirdeklerle tanınır; Psammom cisimcikleri de sık görülür."
+      "explanation": "Papiller karsinom en sık görülen tiroid kanseridir ve intranükleer psödoinvazyonlar ve şeffaf çekirdeklerle tanınır; Psammom cisimcikleri de sık görülür.",
+      "story_hint": "💡 PROFESÖR NOTU: Papiller = buzlu cam çekirdek + Psammom cisimciği + lenf nodu metastazı + en iyi prognoz."
     },
     {
       "id": "patoloji_pv3-009",
-      "question": "Bir hücrede \"Apoptozis\"in başladığının ve hücrenin ölüm yoluna girdiğinin kesin kanıtı olan karakteristik morfolojik bulgu hangisidir?",
-      "options": [
-        "A) Kromatin kondansasyonu (Piknozis) ve Apoptozis cisimcikleri",
-        "B) Hücrenin şişmesi",
-        "C) Endoplazmik retikulum genişlemesi",
-        "D) Lizozomların parçalanması",
-        "E) Yağlanma (Steatoz)"
-      ],
-      "correct_answer": "A) Kromatin kondansasyonu (Piknozis) ve Apoptozis cisimcikleri",
-      "explanation": "Apoptozis sırasında hücre büzülür, çekirdek parçalanır ve hücre zarıyla çevrili küçük parçalara (cisimciklere) ayrılır. Nekrozda ise hücre şişer ve patlar."
+      "case": "Soru:(Patoloji) Bir hücrede 'Apoptozis'in başladığının ve hücrenin ölüm yoluna girdiğinin kesin kanıtı olan karakteristik morfolojik bulgu hangisidir?",
+      "options": ["A) Kromatin kondansasyonu (piknozis) ve apoptozis cisimcikleri", "B) Hücrenin şişmesi", "C) Endoplazmik retikulum genişlemesi", "D) Lizozomların parçalanması", "E) Yağlanma (steatoz)"],
+      "correct_answer": "A) Kromatin kondansasyonu (piknozis) ve apoptozis cisimcikleri",
+      "explanation": "Apoptozis sırasında hücre büzülür, çekirdek parçalanır ve hücre zarıyla çevrili küçük parçalara (cisimciklere) ayrılır. Nekrozda ise hücre şişer ve patlar.",
+      "story_hint": "💡 PROFESÖR NOTU: Apoptoz = büzülme + piknozis + cisimcik; Nekroz = şişme + karyolizis + inflamasyon."
     },
     {
       "id": "patoloji_pv3-010",
-      "question": "Testis tümörleri içinde \"Schiller-Duval cisimcikleri\" ve fötal (embriyonel) yapıların görülmesi hangi tümörü düşündürür?",
-      "options": [
-        "A) Yolk Sac (Endodermal Sinüs) Tümörü",
-        "B) Seminom",
-        "C) Teratom",
-        "D) Koryokarsinom",
-        "E) Leydig hücreli tümör"
-      ],
-      "correct_answer": "A) Yolk Sac (Endodermal Sinüs) Tümörü",
-      "explanation": "Yolk sac tümörü, çocuklarda en sık görülen testis tümörüdür ve kanda AFP (Alfa-fetoprotein) düzeyi yüksekliği ile karakterizedir."
+      "case": "Soru:(Patoloji) Testis tümörleri içinde 'Schiller-Duval cisimcikleri' ve fötal (embriyonel) yapıların görülmesi hangi tümörü düşündürür?",
+      "options": ["A) Yolk sac (endodermal sinüs) tümörü", "B) Seminom", "C) Teratom", "D) Koryokarsinom", "E) Leydig hücreli tümör"],
+      "correct_answer": "A) Yolk sac (endodermal sinüs) tümörü",
+      "explanation": "Yolk sac tümörü, çocuklarda en sık görülen testis tümörüdür ve kanda AFP (Alfa-fetoprotein) düzeyi yüksekliği ile karakterizedir.",
+      "story_hint": "💡 PROFESÖR NOTU: Yolk sac = Schiller-Duval cisimciği + AFP yüksekliği; çocuklarda en sık testis tümörü."
+    },
+    {
+      "id": "patoloji_pv3-011",
+      "case": "Soru:(Patoloji) 45 yaşında bir erkek hastada miyokard infarktüsü sonrası 3. günde yapılan biyopside en belirgin histolojik bulgu hangisi olur?",
+      "options": ["A) Nötrofil infiltrasyonu ve koagülasyon nekrozu", "B) Granülasyon dokusu ve fibroblast proliferasyonu", "C) Yoğun fibröz skar dokusu", "D) Lenfosit ve makrofaj infiltrasyonu", "E) Miyosit hipertrofisi"],
+      "correct_answer": "A) Nötrofil infiltrasyonu ve koagülasyon nekrozu",
+      "explanation": "MI'da ilk 24-72 saatte koagülasyon nekrozu ve nötrofil infiltrasyonu izlenir. 3-7. günlerde makrofajlar ve granülasyon dokusu, 6. haftadan sonra ise skar dokusu oluşur.",
+      "story_hint": "💡 PROFESÖR NOTU: MI zaman çizelgesi: 0-24s=wavy fibers; 1-3g=nötrofil; 3-7g=makrofaj; 1-3h=granülasyon; >6h=skar."
+    },
+    {
+      "id": "patoloji_pv3-012",
+      "case": "Soru:(Patoloji) Crohn hastalığı ile ülseratif kolit arasındaki en önemli histopatolojik fark nedir?",
+      "options": ["A) Transmural inflamasyon ve granülom oluşumu", "B) Kript apsesi varlığı", "C) Goblet hücresi azalması", "D) Yüzeyel mukozal ülserasyon", "E) Psödopolip oluşumu"],
+      "correct_answer": "A) Transmural inflamasyon ve granülom oluşumu",
+      "explanation": "Crohn hastalığında inflamasyon tüm barsak duvarını kapsar (transmural) ve non-kazeifiye granülomlar görülür. ÜK ise mukoza ve submukozayla sınırlıdır.",
+      "story_hint": "💡 PROFESÖR NOTU: Crohn = transmural + granülom + skip lezyonlar + tüm GIS; ÜK = mukozal + sürekli + sadece kolon."
+    },
+    {
+      "id": "patoloji_pv3-013",
+      "case": "Soru:(Patoloji) Minimal change hastalığı (MCD) böbrek biyopsisinde ışık mikroskobunda normal görünüm sergilerken, elektron mikroskobunda hangi karakteristik bulgu saptanır?",
+      "options": ["A) Podosite ait ayaksı çıkıntıların (foot process) silinmesi", "B) Subepitelyal dense deposit birikimi", "C) Mezengial IgA birikimi", "D) Bazal membran kalınlaşması", "E) Nötrofil infiltrasyonu"],
+      "correct_answer": "A) Podosite ait ayaksı çıkıntıların (foot process) silinmesi",
+      "explanation": "MCD'de ışık ve immünfloresan mikroskopi normaldir; yalnızca elektron mikroskobunda podosit foot process silinmesi izlenir. En sık çocukluk çağı nefrotik sendromu nedenidir.",
+      "story_hint": "💡 PROFESÖR NOTU: MCD = foot process silinmesi (EM) + çocuk + nefrotik sendrom + steroid yanıtı mükemmel."
+    },
+    {
+      "id": "patoloji_pv3-014",
+      "case": "Soru:(Patoloji) Bir hastada karaciğer biyopsisinde hepatositlerin büyük yağ damlacıkları içerdiği (makroveziküler steatoz) görülüyor. Bu bulguda en sık sorumlu etken hangisidir?",
+      "options": ["A) Alkol kullanımı", "B) Hepatit B virüsü", "C) Otoimmün hepatit", "D) Wilson hastalığı", "E) Primer biliyer siroz"],
+      "correct_answer": "A) Alkol kullanımı",
+      "explanation": "Alkole bağlı karaciğer hastalığında başlangıçta makroveziküler yağlanma (steatoz) görülür. Bu durum reversible bir değişikliktir ancak alkolün devamıyla steatohepatit ve siroze ilerleyebilir.",
+      "story_hint": "💡 PROFESÖR NOTU: Alkol → makroveziküler steatoz; Reye sendromu/valproat → mikroveziküler steatoz."
+    },
+    {
+      "id": "patoloji_pv3-015",
+      "case": "Soru:(Patoloji) Reed-Sternberg hücreleri hangi lenfoma tipinin patolojik tanı kriteri olup, bu hücrelerin immünfenotipik özellikleri nelerdir?",
+      "options": ["A) Hodgkin lenfoma; CD15+, CD30+", "B) Diffüz büyük B hücreli lenfoma; CD20+, CD79a+", "C) Foliküler lenfoma; CD10+, BCL-2+", "D) Mantle hücreli lenfoma; CD5+, cyclin D1+", "E) Burkitt lenfoma; CD10+, BCL-6+"],
+      "correct_answer": "A) Hodgkin lenfoma; CD15+, CD30+",
+      "explanation": "Reed-Sternberg hücreleri Hodgkin lenfomanın tanı hücreleridir. Bu dev, iki çekirdekli hücreler CD15 ve CD30 ile pozitif, CD45 (LCA) ile negatiftir.",
+      "story_hint": "💡 PROFESÖR NOTU: RS hücresi = baykuş gözü görünümü + CD15+ CD30+ CD45-; EBV ile ilişkili."
+    },
+    {
+      "id": "patoloji_pv3-016",
+      "case": "Soru:(Patoloji) 60 yaşında erkek hastada beyin MRI'da halka şeklinde kontrastlanan kitlesel lezyon saptanıyor. Biyopside psödopalizad nekroz ve mikrovasküler proliferasyon görülüyor. Tanı nedir?",
+      "options": ["A) Glioblastom multiforme (WHO Grade 4)", "B) Astrositom Grade 2", "C) Oligodendrogliom", "D) Medulloblastom", "E) Menengiom"],
+      "correct_answer": "A) Glioblastom multiforme (WHO Grade 4)",
+      "explanation": "GBM, beyin tümörlerinin en kötü prognozlusudur. Histolojik tanı kriterleri psödopalizad nekroz (tümör hücrelerinin nekroz çevresinde dizilmesi) ve glomeruloid mikrovasküler proliferasyondur.",
+      "story_hint": "💡 PROFESÖR NOTU: GBM = psödopalizad nekroz + mikrovasküler proliferasyon + kelebek lezyon + 15 ay medyan sağkalım."
+    },
+    {
+      "id": "patoloji_pv3-017",
+      "case": "Soru:(Patoloji) Serviks kanserinin prekürsörü olan CIN (Servikal İntraepitelyal Neoplazi) lezyonlarında HPV ilişkisinde, yüksek riskli suşlar hangileridir?",
+      "options": ["A) HPV 16 ve 18", "B) HPV 6 ve 11", "C) HPV 31 ve 33", "D) HPV 16 ve 6", "C) HPV 45 ve 52"],
+      "correct_answer": "A) HPV 16 ve 18",
+      "explanation": "HPV 16 ve 18, serviks kanserinin yaklaşık %70'inden sorumludur. HPV 6 ve 11 düşük riskli suşlar olup kondiloma aküminatuma yol açar. E6 ve E7 onkoproteinleri p53 ve Rb'yi inaktive eder.",
+      "story_hint": "💡 PROFESÖR NOTU: HPV 16=skuamöz; HPV 18=adenokarsinom; HPV 6/11=kondilom (benign)."
+    },
+    {
+      "id": "patoloji_pv3-018",
+      "case": "Soru:(Patoloji) Akut pankreatitte yağ nekrozu alanlarında görülen mavi-mor renkli kalsiyum birikintileri ne olarak adlandırılır ve nasıl oluşur?",
+      "options": ["A) Distrofik kalsifikasyon; nekrotik yağ asitlerinin kalsiyumla sabunlaşması", "B) Metastatik kalsifikasyon; hiperkalsemi", "C) Psammom cisimciği; konsantrik kalsiyum birikimi", "D) Dystrofik kalsifikasyon; kalsiyum metabolizması bozukluğu", "E) Ossifikasyon; osteoblast aktivasyonu"],
+      "correct_answer": "A) Distrofik kalsifikasyon; nekrotik yağ asitlerinin kalsiyumla sabunlaşması",
+      "explanation": "Akut pankreatitte lipaz serbest yağ asitlerini serbest bırakır; bu asitler serum kalsiyumuyla birleşerek kalsiyum sabunu (distrofik kalsifikasyon) oluşturur. Serum kalsiyumu normal olabilir.",
+      "story_hint": "💡 PROFESÖR NOTU: Yağ nekrozu + kalsifikasyon = distrofik; serum kalsiyumu normaldir; metastatik kalsifikasyonda ise hiperkalsemi vardır."
+    },
+    {
+      "id": "patoloji_pv3-019",
+      "case": "Soru:(Patoloji) Bir hastada BRCA1 mutasyonu saptanıyor. Bu mutasyon en çok hangi kanserlere yatkınlık oluşturur?",
+      "options": ["A) Meme ve over kanseri", "B) Kolon ve pankreas kanseri", "C) Akciğer ve mesane kanseri", "D) Tiroid ve böbrek kanseri", "E) Melanom ve beyin kanseri"],
+      "correct_answer": "A) Meme ve over kanseri",
+      "explanation": "BRCA1 ve BRCA2 tümör baskılayıcı genler olup mutasyonları meme kanseri riskini %50-85'e, over kanseri riskini ise %15-40'a çıkarır. DNA çift zincir kırığı tamiriyle ilgilidir.",
+      "story_hint": "💡 PROFESÖR NOTU: BRCA1/2 = DNA onarım geni; meme + over kanseri riski; otozomal dominant kalıtım."
+    },
+    {
+      "id": "patoloji_pv3-020",
+      "case": "Soru:(Patoloji) IgA nefropatisi (Berger hastalığı) tanısında altın standart nedir ve karakteristik immünfloresan bulgusu nedir?",
+      "options": ["A) Böbrek biyopsisi; mezengiumda IgA birikimi", "B) İdrar IgA ölçümü; polimerize IgA yüksekliği", "C) Serum kompleman; C3 düşüklüğü", "D) Serum IgA; yüksek polimerize IgA", "E) Böbrek biyopsisi; subepitelyal IgG birikimi"],
+      "correct_answer": "A) Böbrek biyopsisi; mezengiumda IgA birikimi",
+      "explanation": "IgA nefropatisi en sık görülen glomerülonefrit tipidir. İmmünfloresanda mezengiumda IgA granüler birikimi pathognomoniktir. Üst solunum yolu enfeksiyonu ile birlikte hematüri atakları tipiktir.",
+      "story_hint": "💡 PROFESÖR NOTU: IgA nefropati = mezengial IgA + makroskopik hematüri + ÜSYE ile eş zamanlı; Henoch-Schönlein ile ilişkili."
+    },
+    {
+      "id": "patoloji_pv3-021",
+      "case": "Soru:(Patoloji) 'Koagülatif nekroz' ile 'liküfaksiyon nekrozu' arasındaki temel fark nedir?",
+      "options": ["A) Koagülatif nekrozda hücre iskelet yapısı korunur; liküfaksiyon nekrozunda hücre tamamen erir", "B) Koagülatif nekroz beyinde, liküfaksiyon nekrozu kalpte görülür", "C) Koagülatif nekrozda inflamasyon yoktur; liküfaksiyon nekrozunda vardır", "D) Koagülatif nekroz reversible; liküfaksiyon nekrozu irreversibldir", "E) İkisi arasında morfolojik fark yoktur"],
+      "correct_answer": "A) Koagülatif nekrozda hücre iskelet yapısı korunur; liküfaksiyon nekrozunda hücre tamamen erir",
+      "explanation": "Koagülatif nekrozda doku mimarisi ve hücre silueti korunurken çekirdek ayrıntıları kaybolur; çoğu organda görülür. Liküfaksiyon nekrozunda proteolitik enzimler hücreleri tamamen eritir; beyin iskemisi ve bakteri apselerinde tipiktir.",
+      "story_hint": "💡 PROFESÖR NOTU: Koagülatif = siluet korunur (kalp, böbrek); Liküfaksiyon = sıvılaşma (beyin, apse)."
+    },
+    {
+      "id": "patoloji_pv3-022",
+      "case": "Soru:(Patoloji) Multiple myelomda böbrek tutulumu (myelom böbreği) nasıl gelişir ve histolojik görünümü nedir?",
+      "options": ["A) Bence-Jones proteinleri tübüllerde tıkaç oluşturur; dev hücreli tübüler döküntüler", "B) IgG birikimi glomerüllerde hasara yol açar; membranöz GN paterni", "C) Amiloid birikimi mesangiumda; nodüler glomerüloskleroz", "D) Kalsiyum birikimi tübüllerde; nefrolitiyazis", "E) Lenfoma hücreleri interstisyuma infiltre olur"],
+      "correct_answer": "A) Bence-Jones proteinleri tübüllerde tıkaç oluşturur; dev hücreli tübüler döküntüler",
+      "explanation": "Myelom böbreğinde hafif zincirler (Bence-Jones proteini) tübüllerde birikir ve dev hücreli tübüler 'döküntüler' (cast nephropathy) oluşturur. Ayrıca sekonder amiloidoz ve hiperkalsemi de böbrek hasarına katkıda bulunur.",
+      "story_hint": "💡 PROFESÖR NOTU: Myelom böbreği = Bence-Jones cast nefropati; hiperkalsemi + amiloidoz da böbreği etkiler."
+    },
+    {
+      "id": "patoloji_pv3-023",
+      "case": "Soru:(Patoloji) Pnömoni patolojisinde 'gri hepatizasyon' evresi, hangi süreçte gerçekleşir ve baskın hücre tipi nedir?",
+      "options": ["A) 4-8. günler; fibrin ve nötrofillerden makrofajlara geçiş dönemi", "B) 1-2. günler; konjesyon ve ödem", "C) 2-4. günler; eritrosit ve nötrofil yoğunluğu (kırmızı hepatizasyon)", "D) 8-10. günler; tamamen makrofaj infiltrasyonu", "E) İlk 24 saat; ödem sıvısı ve bakteriler"],
+      "correct_answer": "A) 4-8. günler; fibrin ve nötrofillerden makrofajlara geçiş dönemi",
+      "explanation": "Lober pnömonide: 1-2. gün konjesyon; 2-4. gün kırmızı hepatizasyon (eritrosit+nötrofil+fibrin); 4-8. gün gri hepatizasyon (fibrin+nötrofiller azalır, makrofajlar artar); sonra rezolüsyon.",
+      "story_hint": "💡 PROFESÖR NOTU: Lober pnömoni 4 evre: Konjesyon→Kırmızı H.→Gri H.→Rezolüsyon; gri evrede makrofajlar baskın."
+    },
+    {
+      "id": "patoloji_pv3-024",
+      "case": "Soru:(Patoloji) Diffüz alveoler hasar (DAH) patolojisinin erken evresinde (eksüdatif evre) akciğerde görülen karakteristik histolojik bulgu nedir?",
+      "options": ["A) Hyalin membran oluşumu", "B) Granülom formasyonu", "C) Eozinofilik infiltrasyon", "D) Fibroblast proliferasyonu", "E) Kalsifik nodüller"],
+      "correct_answer": "A) Hyalin membran oluşumu",
+      "explanation": "DAH eksüdatif evresinde (ilk 1 hafta) alveol duvarlarında fibrin ve hücre dökünülerinden oluşan hyalin membranlar izlenir. Bu bulgu ARDS'nin patolojik karşılığıdır.",
+      "story_hint": "💡 PROFESÖR NOTU: ARDS = DAH = hyalin membran; prematüre bebekte RDS de aynı bulguyu verir (surfaktan eksikliği)."
+    },
+    {
+      "id": "patoloji_pv3-025",
+      "case": "Soru:(Patoloji) Aorta ve büyük damarları tutan, adventisya katmanına vasa vasorum'un granülomatöz inflamasyonu ile karakterize vaskülit hangisidir?",
+      "options": ["A) Takayasu arteriti", "B) Poliarteritis nodoza", "C) Temporal arterit (dev hücreli arterit)", "D) Wegener granülomatozisi", "E) Kawasaki hastalığı"],
+      "correct_answer": "A) Takayasu arteriti",
+      "explanation": "Takayasu arteriti ('nabızsız hastalık') büyük damarları (aorta ve dalları) etkiler. Genç Asya kadınlarında görülür; kolda nabız alınamaması tipiktir. Temporal arterit de büyük damar vaskülitidir ancak yaşlı hastalarda görülür.",
+      "story_hint": "💡 PROFESÖR NOTU: Takayasu = genç kadın + büyük damar + nabızsız; temporal arterit = yaşlı + temporal arter + körlük riski."
+    },
+    {
+      "id": "patoloji_pv3-026",
+      "case": "Soru:(Patoloji) Membranöz nefropati (MN) immünfloresanda nasıl görünür ve idiyopatik formunun en sık antijeni nedir?",
+      "options": ["A) Subepitelyal granüler IgG ve C3; PLA2R antijeni", "B) Mezengial IgA birikimi; galaktoz-defisiyent IgA1", "C) Subendotelyal IgG ve C3; anti-dsDNA", "D) Linear IgG; anti-GBM antikoru", "E) Hiç immün birikimi yok; podosit mutasyonu"],
+      "correct_answer": "A) Subepitelyal granüler IgG ve C3; PLA2R antijeni",
+      "explanation": "MN'de immün kompleksler glomerüler bazal membranın dış yüzeyinde (subepitelyal) granüler IgG ve C3 depozitleri oluşturur. Elektronmikroskobunda subepitelyal spike ve dome görünümü; idiyopatik formda anti-PLA2R antikorları pozitif.",
+      "story_hint": "💡 PROFESÖR NOTU: MN = subepitelyal + spike/dome + PLA2R + yetişkin nefrotik sendromu sık nedeni."
+    },
+    {
+      "id": "patoloji_pv3-027",
+      "case": "Soru:(Patoloji) Sarkoidoz için patognomonik olan histolojik bulgu nedir ve hangi organlar en sık tutulur?",
+      "options": ["A) Non-kazeifiye granülom; akciğer ve mediastinal lenf nodları", "B) Kazeifiye granülom; akciğer apeksi", "C) Fibrinoid nekroz; böbrekler", "D) Lenfositik infiltrasyon; karaciğer", "E) Psödomembran oluşumu; kolon"],
+      "correct_answer": "A) Non-kazeifiye granülom; akciğer ve mediastinal lenf nodları",
+      "explanation": "Sarkoidozda epithelioid histiyositler, dev Langhans hücreleri ve lenfositlerden oluşan non-kazeifiye (cansız nekroz içermeyen) granülomlar izlenir. En sık akciğer ve hiler/mediastinal lenf nodlarını tutar.",
+      "story_hint": "💡 PROFESÖR NOTU: Sarkoidoz = non-kazeifiye granülom; TB = kazeifiye granülom; ikisi arasındaki en önemli fark nekroz varlığı."
+    },
+    {
+      "id": "patoloji_pv3-028",
+      "case": "Soru:(Patoloji) Romatoid artritin ekstraartiküler komplikasyonu olarak akciğerde görülen patolojik oluşumlar hangisidir?",
+      "options": ["A) Romatoid nodüller ve fibrozis", "B) Granülomatöz inflamasyon ve kavitasyon", "C) Pulmoner hipertansiyon ve vaskülözit", "D) Bronşiektazi ve mukus tıkaçları", "E) Lenfomatöz infiltrasyon"],
+      "correct_answer": "A) Romatoid nodüller ve fibrozis",
+      "explanation": "Romatoid artritte akciğerde romatoid nodüller (fibrinoid nekroz çevresinde palizad histiyosit) ve interstisyel akciğer hastalığı (fibrozis) görülür. Ayrıca plevral effüzyon da sık eşlik eder.",
+      "story_hint": "💡 PROFESÖR NOTU: RA ekstraartiküler = plevra (plörit) + akciğer nodülü/fibrozis + Felty sendromu + amiloidoz."
+    },
+    {
+      "id": "patoloji_pv3-029",
+      "case": "Soru:(Patoloji) Endometriyal hiperplazi sınıflamasında kanser riskini en fazla artıran form hangisidir?",
+      "options": ["A) Atipik kompleks hiperplazi", "B) Basit hiperplazi (atipisiz)", "C) Kompleks hiperplazi (atipisiz)", "D) Basit atipik hiperplazi", "E) Tüm formlar eşit risk taşır"],
+      "correct_answer": "A) Atipik kompleks hiperplazi",
+      "explanation": "Atipik kompleks hiperplazi (güncel terminolojide: endometrioid intraepitelyal neoplazi) yaklaşık %25-30 oranında endometriyal karsinoma ilerler. Sitolojik atipi varlığı kritik prognostik faktördür.",
+      "story_hint": "💡 PROFESÖR NOTU: Hiperplazi riski: basit (%1) < kompleks (%3) < basit atipik (%8) < kompleks atipik (%25-30)."
+    },
+    {
+      "id": "patoloji_pv3-030",
+      "case": "Soru:(Patoloji) Down sendromunda (trisomi 21) beyinde erken yaşta görülen nöropatolojik değişiklik hangisidir?",
+      "options": ["A) Alzheimer hastalığı patolojisi; amiloid plaklar ve nörofibriler yumaklar", "B) Parkinson hastalığı; Lewy cisimcikleri", "C) Huntington hastalığı; kaudatus atrofisi", "D) MS lezyonları; demyelinizasyon plakaları", "E) Prion hastalığı; spongiform değişiklikler"],
+      "correct_answer": "A) Alzheimer hastalığı patolojisi; amiloid plaklar ve nörofibriler yumaklar",
+      "explanation": "Down sendromlu bireylerde APP geni trisomi 21'de yer aldığından aşırı beta-amiloid üretilir. 40 yaşından itibaren neredeyse tüm bireylerde Alzheimer patolojisi gelişir.",
+      "story_hint": "💡 PROFESÖR NOTU: Down sendromu + 40 yaş = Alzheimer kaçınılmaz; APP geni 21. kromozomda, trizomi nedeniyle fazla amiloid üretilir."
+    },
+    {
+      "id": "patoloji_pv3-031",
+      "case": "Soru:(Patoloji) Mallory-Denk cisimcikleri (Mallory hyalini) histolojik olarak ne anlama gelir ve hangi hastalıkta en çok görülür?",
+      "options": ["A) Hasar görmüş intermediate filament (keratin) birikimi; alkolik hepatit", "B) Viral inklüzyon cisimciği; hepatit B", "C) Lipofuksin birikimi; yaşlanma", "D) Glikojen birikimi; glikojen depo hastalığı", "E) Demir birikimi; hemokromatoz"],
+      "correct_answer": "A) Hasar görmüş intermediate filament (keratin) birikimi; alkolik hepatit",
+      "explanation": "Mallory-Denk cisimcikleri, sitoplazma içinde anormal CK8/18 keratin filament kümeleşmesini yansıtır. En çok alkolik hepatitte görülse de NASH, Wilson ve kolestaz durumlarında da izlenebilir.",
+      "story_hint": "💡 PROFESÖR NOTU: Mallory = sitoplazmik keratin topaklası; alkolik hepatit = Mallory + satellit nekroz + nötrofil infiltrasyonu."
+    },
+    {
+      "id": "patoloji_pv3-032",
+      "case": "Soru:(Patoloji) Karotis arterinde aterosklerotik plak rüptürü sonucu oluşan trombüs hangi tür emboliye yol açabilir?",
+      "options": ["A) Arteriyel (paradoksal olmayan) serebral emboli", "B) Pulmoner tromboemboli", "C) Venöz emboli", "D) Yağ embolisi", "E) Hava embolisi"],
+      "correct_answer": "A) Arteriyel (paradoksal olmayan) serebral emboli",
+      "explanation": "Karotis plak rüptüründe oluşan trombus fragmanları serebral arterlere taşınarak iskemik inme oluşturur. Bu arterden artere emboli mekanizmasıdır. Pulmoner emboli ise venöz kaynaklıdır.",
+      "story_hint": "💡 PROFESÖR NOTU: Aterotrombotik inme = arterden artere emboli; kardiyoembolik inme = kalp kökeni; kriptojenik inme = bilinmeyen."
+    },
+    {
+      "id": "patoloji_pv3-033",
+      "case": "Soru:(Patoloji) Ailesel adenomatöz polipozis (FAP) hangi gen mutasyonuyla oluşur ve kolorektal kansere ilerleme riski nedir?",
+      "options": ["A) APC gen mutasyonu; %100 kanser riski (tedavi edilmezse)", "B) MLH1/MSH2 mutasyonu; %80 kanser riski", "C) KRAS mutasyonu; %50 kanser riski", "D) TP53 mutasyonu; %40 kanser riski", "E) BRAF mutasyonu; %60 kanser riski"],
+      "correct_answer": "A) APC gen mutasyonu; %100 kanser riski (tedavi edilmezse)",
+      "explanation": "FAP'ta APC tümör baskılayıcı gen mutasyonu ile kolon mukozasında 100-1000'den fazla polip oluşur. Tedavi edilmezse 40 yaşına kadar %100 kolorektal karsinom gelişir. Profilaktik kolektomi önerilir.",
+      "story_hint": "💡 PROFESÖR NOTU: FAP = APC mutasyonu + yüzlerce polip + %100 CA riski; Lynch sendromu = MMR genler + az polip + yüksek CA riski."
+    },
+    {
+      "id": "patoloji_pv3-034",
+      "case": "Soru:(Patoloji) 25 yaşında kadın hastada over tümörü rezeke ediliyor. Patolojik incelemede 'Schiller-Duval cisimciği' benzeri yapılar ve AFP yüksekliği saptanıyor. Bu overin hangi germ hücreli tümörüdür?",
+      "options": ["A) Yolk sac tümörü", "B) Disgerminom", "C) Matür teratom", "D) Koryokarsinom", "E) Embriyonal karsinom"],
+      "correct_answer": "A) Yolk sac tümörü",
+      "explanation": "Yolk sac tümörü (endodermal sinüs tümörü) overin en sık germ hücreli tümörlerinden biridir. Schiller-Duval cisimcikleri ve serum AFP yüksekliği tanı kriterleridir.",
+      "story_hint": "💡 PROFESÖR NOTU: Yolk sac tümörü = AFP marker; disgerminom = LDH; koryokarsinom = beta-hCG."
+    },
+    {
+      "id": "patoloji_pv3-035",
+      "case": "Soru:(Patoloji) Wegener granülomatozisi (Granülomatöz polianjitis) patolojik olarak hangi triad ile karakterizedir?",
+      "options": ["A) Üst/alt solunum yolu granülomu + nekrotizan vaskülît + fokal nekrotizan GN", "B) Granülom + eozinofi + astım", "C) IgA depolanması + purpura + artrit", "D) Lenf nodu granülomu + akciğer fibrozis + iridosiklit", "E) Kazeifiye granülom + plevral effüzyon + eritrosit sedimentasyonu"],
+      "correct_answer": "A) Üst/alt solunum yolu granülomu + nekrotizan vaskülît + fokal nekrotizan GN",
+      "explanation": "Wegener granülomatozisi/GPA; üst solunum yolu (sinüzit, burun), alt solunum yolu (akciğer) ve böbrek üçlüsüyle seyreder. c-ANCA (anti-PR3) pozitifliği karakteristiktir.",
+      "story_hint": "💡 PROFESÖR NOTU: GPA = c-ANCA (PR3) + solunum yolu granülom + pauci-immün GN; MPA = p-ANCA (MPO) + vaskülît + GN."
+    },
+    {
+      "id": "patoloji_pv3-036",
+      "case": "Soru:(Patoloji) Emfizem tiplerinin patolojik farkı nedir? Sentriasinar (sentrlobuler) ve panasinar emfizemi birbirinden ayırt eden özellik nedir?",
+      "options": ["A) Sentriasinar: respiratuar bronşiyol tutulumu (sigara); Panasinar: tüm asinus (alfa-1 antitripsin eksikliği)", "B) Sentriasinar: tüm asinus; Panasinar: sadece terminal bronşiyol", "C) Sentriasinar: alt lob; Panasinar: üst lob", "D) Sentriasinar: alfa-1 AT eksikliği; Panasinar: sigara", "E) İkisi arasında patolojik fark yoktur"],
+      "correct_answer": "A) Sentriasinar: respiratuar bronşiyol tutulumu (sigara); Panasinar: tüm asinus (alfa-1 antitripsin eksikliği)",
+      "explanation": "Sentriasinar emfizem üst loblarda, respiratuar bronşiyollerin selektif genişlemesi ile seyreder; sigara içicilerinde görülür. Panasinar emfizem alt loblarda tüm asinusu etkiler; alfa-1 antitripsin eksikliğinde ve yaşlılarda görülür.",
+      "story_hint": "💡 PROFESÖR NOTU: Sentriasinar = sigara + üst lob; Panasinar = alfa-1AT eksikliği + alt lob; Distal asinar = spontan pnömotoraks."
+    },
+    {
+      "id": "patoloji_pv3-037",
+      "case": "Soru:(Patoloji) Fokal segmental glomerüloskleroz (FSGS) tanısı için en karakteristik histolojik özellik nedir?",
+      "options": ["A) Glomerüllerin bazılarında (fokal) ve her glomerülün bir bölümünde (segmental) skleroz", "B) Tüm glomerüllerde diffüz mezengial genişleme", "C) Subepitelyal spike formasyonu", "D) Krescent (hilal) oluşumu tüm glomerüllerde", "E) Lineer IgG boyanma"],
+      "correct_answer": "A) Glomerüllerin bazılarında (fokal) ve her glomerülün bir bölümünde (segmental) skleroz",
+      "explanation": "FSGS'de skleroz fokal (tüm glomerülleri değil) ve segmental (glomerülün tümünü değil) dağılım gösterir. Erişkin nefrotik sendromunun önemli nedenidir. HIV, orak hücreli anemi ve obesite ile ilişkili olabilir.",
+      "story_hint": "💡 PROFESÖR NOTU: FSGS = fokal + segmental + skleroz; MCD ile karıştırılır ama FSGS steroid dirençlidir ve prognozu daha kötüdür."
+    },
+    {
+      "id": "patoloji_pv3-038",
+      "case": "Soru:(Patoloji) Kronik alkolik karaciğer hastalığında siroz gelişimindeki histolojik evre sıralaması doğru olan seçenek hangisidir?",
+      "options": ["A) Steatoz → Alkolik hepatit → Siroz", "B) Alkolik hepatit → Steatoz → Siroz", "C) Siroz → Alkolik hepatit → Steatoz", "D) Steatoz → Siroz → Alkolik hepatit", "E) Fibrozis → Steatoz → Hepatit → Siroz"],
+      "correct_answer": "A) Steatoz → Alkolik hepatit → Siroz",
+      "explanation": "Alkolün karaciğerdeki ilerleyici etkisi: (1) Steatoz - reversible yağlanma; (2) Alkolik steatohepatit - inflamasyon + Mallory cisimcikleri; (3) Siroz - irreversible fibrozis ve nodül oluşumu.",
+      "story_hint": "💡 PROFESÖR NOTU: Alkol → Steatoz (geri dönüşlü) → Hepatit (kısmen geri dönüşlü) → Siroz (geri dönüşsüz)."
+    },
+    {
+      "id": "patoloji_pv3-039",
+      "case": "Soru:(Patoloji) Akut lösemilerde periferal yayma ve kemik iliği biyopsisinde görülen 'Auer çomakları (Auer rods)' hangi lösemi tipinde görülür ve ne anlam taşır?",
+      "options": ["A) Akut miyeloid lösemi (AML); özgün bir patolojik bulgu", "B) Akut lenfoblastik lösemi (ALL); tedavi yanıtını gösterir", "C) Kronik miyeloid lösemi (KML); kötü prognoz işareti", "D) Kronik lenfositik lösemi (KLL); hastalık aktivitesi", "E) Tüm lösemi tiplerinde görülür"],
+      "correct_answer": "A) Akut miyeloid lösemi (AML); özgün bir patolojik bulgu",
+      "explanation": "Auer çomakları AML'de miyeloid blastların sitoplazmasında görülen, anormal füzyon granüllerinden oluşan iğ şeklinde yapılardır. AML'nin patognomonik bulgusu olup ALL'de hiç görülmez.",
+      "story_hint": "💡 PROFESÖR NOTU: Auer çomaklı = AML (kesinlikle); ALL'de yoktur; AML-M3 (APL)'de en fazla Auer çomaklı = faggot cell."
+    },
+    {
+      "id": "patoloji_pv3-040",
+      "case": "Soru:(Patoloji) 'Starry sky' (yıldızlı gökyüzü) görünümü hangi lenfomada görülür ve bu görünüm histolojik olarak neden oluşur?",
+      "options": ["A) Burkitt lenfoma; apoptotik hücreleri fagosite eden makrofajlar", "B) Hodgkin lenfoma; Reed-Sternberg hücreleri", "C) Foliküler lenfoma; germinal merkez hücreleri", "D) Mantle hücreli lenfoma; küçük B hücreleri", "E) T hücreli lenfoma; pleomorfik hücreler"],
+      "correct_answer": "A) Burkitt lenfoma; apoptotik hücreleri fagosite eden makrofajlar",
+      "explanation": "Burkitt lenfomada çok sayıda tingible body makrofaj (apoptotik hücre fragmanlarını içeren) koyu mavi lenfoma hücreleri arasında parlak alanlar oluşturarak 'yıldızlı gökyüzü' görüntüsü verir. MYC translokasyonu t(8;14) karakteristiktir.",
+      "story_hint": "💡 PROFESÖR NOTU: Burkitt = starry sky + t(8;14) MYC + EBV ilişkili (endemik form) + en hızlı büyüyen insan tümörü."
+    },
+    {
+      "id": "patoloji_pv3-041",
+      "case": "Soru:(Patoloji) 55 yaşında bir erkek hastada, özellikle boyun ve mediastinal lenf nodlarında büyüme, kaşıntı, gece terlemesi ve ateş (B semptomu) tespit ediliyor. Biyopside RS hücreleri görülüyor. En sık görülen Hodgkin lenfoma alt tipi hangisidir?",
+      "options": ["A) Nodüler skleroz tipi", "B) Mikst selülarite tipi", "C) Lenfosit predominant tipi", "D) Lenfosit fakir tipi", "E) Nodüler lenfosit predominant tipi"],
+      "correct_answer": "A) Nodüler skleroz tipi",
+      "explanation": "Nodüler skleroz tipi tüm Hodgkin lenfoma vakalarının %60-70'ini oluşturur ve en sık görülen alt tiptir. Mediastinal tutulum karakteristiktir ve kollajen bantları nodüler yapı oluşturur. Lacunar RS hücreleri tipiktir.",
+      "story_hint": "💡 PROFESÖR NOTU: HL en sık tipi = nodüler skleroz (%60-70); en iyi prognoz = lenfosit predominant; en kötü = lenfosit fakir."
+    },
+    {
+      "id": "patoloji_pv3-042",
+      "case": "Soru:(Patoloji) Primer biliyer siroz (PBC) ve primer sklerozan kolanjit (PSK) arasındaki en önemli fark hangisidir?",
+      "options": ["A) PBC: intrahepatik duktuslar + AMA+ + kadın; PSK: ekstra ve intrahepatik + p-ANCA+ + IBD + erkek", "B) PBC: ekstrahepatik; PSK: intrahepatik biliyer tutulum", "C) PBC: erkek baskın; PSK: kadın baskın", "D) PBC: IBD ile ilişkili; PSK: tiroid hastalığıyla ilişkili", "E) İkisi arasında fark yoktur, aynı hastalıktır"],
+      "correct_answer": "A) PBC: intrahepatik duktuslar + AMA+ + kadın; PSK: ekstra ve intrahepatik + p-ANCA+ + IBD + erkek",
+      "explanation": "PBC orta yaşlı kadınlarda, intrahepatik biliyer duktusların otoimmün tahribatıyla görülür; anti-mitokondriyal antikor (AMA) M2 pozitifliği tanısaldır. PSK, ülseratif kolitle ilişkili olup her iki biliyer sistemi tutar; p-ANCA pozitifdir.",
+      "story_hint": "💡 PROFESÖR NOTU: PBC = kadın + AMA + intrahepatik; PSK = erkek + ÜK + p-ANCA + boncuk tanesi görünümü (ERCP)."
+    },
+    {
+      "id": "patoloji_pv3-043",
+      "case": "Soru:(Patoloji) Nöroblastomun patolojik tanı kriteri olan 'Homer-Wright psödorozet' neden oluşur ve bu tümörde hangi katekolamin metaboliti yüksek bulunur?",
+      "options": ["A) Tümör hücrelerinin santral nöropil etrafında dizilmesi; VMA ve HVA", "B) Reed-Sternberg hücreleri etrafında lenfositler; LDH", "C) Gland yapısı oluşumu; CEA", "D) Tübül formasyonu; AFP", "E) Rozet oluşumu olmaz; sadece nöron spesifik enolaz"],
+      "correct_answer": "A) Tümör hücrelerinin santral nöropil etrafında dizilmesi; VMA ve HVA",
+      "explanation": "Homer-Wright psödorozeti, nöroblastom hücrelerinin ince nöropil fibrilleri içeren merkezi bir alana doğru düzenlenmesiyle oluşur. Bu tümörde katekolaminler salgılandığından idrar VMA (vanilmandelik asit) ve HVA (homovanilik asit) yükselir.",
+      "story_hint": "💡 PROFESÖR NOTU: Nöroblastom = çocuklarda sürrenal medulla + Homer-Wright + VMA/HVA yüksek; N-MYC amplifikasyonu kötü prognoz."
+    },
+    {
+      "id": "patoloji_pv3-044",
+      "case": "Soru:(Patoloji) Dermis içinde mast hücre granüllerinden histamin salınımına bağlı olarak gelişen ani, kaşıntılı, soluk kırmızı şişlik nedir ve patolojik mekanizması nedir?",
+      "options": ["A) Ürtiker (kurdeşen); Tip I hipersensitivite (IgE aracılı)", "B) Kontakt dermatit; Tip IV hipersensitivite (T hücresi aracılı)", "C) Serum hastalığı; Tip III hipersensitivite (immün kompleks)", "D) Pemfigus; Tip II hipersensitivite (sitotoksik)", "E) Eritema multiforme; viral otoimmün reaksiyon"],
+      "correct_answer": "A) Ürtiker (kurdeşen); Tip I hipersensitivite (IgE aracılı)",
+      "explanation": "Ürtikerde, daha önce duyarlılaşmış bireylerde alerjen IgE'ye bağlanarak mast hücrelerinden histamin salınımını tetikler. Bu Tip I (anafilaktik) hipersensitivitedir. Vazodilatasyona bağlı ödematöz papüller ve plaklar oluşur.",
+      "story_hint": "💡 PROFESÖR NOTU: Tip I = IgE + mast hücresi + histamin = anafilaksi/ürtiker; Tip IV = T hücresi = temas dermatiti/PPD testi."
+    },
+    {
+      "id": "patoloji_pv3-045",
+      "case": "Soru:(Patoloji) Paget hastalığı kemiklerinde, radyolojide 'pamuk yünü' görünümü ve histolojide 'mozaik çimento çizgileri' neden oluşur?",
+      "options": ["A) Anormal osteoklast ve osteoblast aktivitesi ile düzensiz kemik yeniden yapılanması", "B) Primer kemik tümörü infiltrasyonu", "C) Kalsiyum birikimi ve ossifikasyon", "D) Fibröz doku ile kemik replasmanı", "E) Nekrotik kemik ve reaktif periost"],
+      "correct_answer": "A) Anormal osteoklast ve osteoblast aktivitesi ile düzensiz kemik yeniden yapılanması",
+      "explanation": "Paget hastalığında aşırı osteoklastik rezorpsiyon, ardından osteoblastik yoğun kemik yapımı döngüsü ile kaotik lamellar kemik paketi oluşur. Mozaik çimento çizgileri bu düzensiz remodelingin patolojik yansımasıdır. Komplikasyon: osteosarkom.",
+      "story_hint": "💡 PROFESÖR NOTU: Paget = mozaik kemik + ALP yüksek + osteosarkom riski; tibia 'saber shin' + kafatası 'pamuk yünü'."
+    },
+    {
+      "id": "patoloji_pv3-046",
+      "case": "Soru:(Patoloji) Diyabetik nefropati patolojisinde, Kimmelstiel-Wilson lezyonu (KW nodülü) histolojik olarak nedir?",
+      "options": ["A) Glomerülün periferinde yerleşik nodüler mezengial matris artışı", "B) Tüm glomerülde diffüz bazal membran kalınlaşması", "C) Subepitelyal immün kompleks depolanması", "D) Glomerüler kapiller tromboz", "E) Glomerüler kapiller loop'larda amiloid birikimi"],
+      "correct_answer": "A) Glomerülün periferinde yerleşik nodüler mezengial matris artışı",
+      "explanation": "KW nodülleri diyabetik nefropatinin patognomonik bulgusudur. Mezengiumda nodüler hyalin matris birikmesi ile oluşur. Periferikteki kapiller loop'lar açık kalır. Hem tip 1 hem tip 2 diyabette görülür.",
+      "story_hint": "💡 PROFESÖR NOTU: KW nodülü = diyabetik nodüler glomerüloskleroz; diffüz glomerüloskleroz daha sık ancak KW patognomonik."
+    },
+    {
+      "id": "patoloji_pv3-047",
+      "case": "Soru:(Patoloji) Medüller tiroid karsinomu (MTC) kalsitonin üretir ve hangi histolojik marker ile karakterizedir?",
+      "options": ["A) Amiloid birikimi (kalsitoninden kökenli) ve kalsitonin IHK pozitifliği", "B) Psammom cisimciği ve buzlu cam çekirdek", "C) Foliküler yapı ve koloid", "D) Papiller mimari ve ince dallar", "E) Dev anaplastik hücreler ve nekroz"],
+      "correct_answer": "A) Amiloid birikimi (kalsitoninden kökenli) ve kalsitonin IHK pozitifliği",
+      "explanation": "MTC parafoliküler C hücrelerinden köken alır ve kalsitonin salgılar. Stroma amiloid birikimi (kalsitonin prekürsörünün fibrilleşmesi) ve immunohistokimyasal kalsitonin pozitifliği tanı kriterleridir. MEN 2A ve 2B ile ilişkilidir.",
+      "story_hint": "💡 PROFESÖR NOTU: MTC = C hücresi + kalsitonin + stromal amiloid; MEN 2A = MTC + hiperparatiroidizm + feokromositoma."
+    },
+    {
+      "id": "patoloji_pv3-048",
+      "case": "Soru:(Patoloji) Mezotelyoma gelişiminde en güçlü çevresel risk faktörü nedir ve tümörün histolojik tipleri nelerdir?",
+      "options": ["A) Asbest maruziyeti; epiteloid, sarkomatoid ve bifazik tipler", "B) Sigara içimi; skuamöz ve adenokarsinom tipleri", "C) Radyasyon; anaplastik ve bazaloid tipler", "D) HPV enfeksiyonu; verrüköz ve spindle hücreli tipler", "E) Radon gazı; küçük hücreli ve büyük hücreli tipler"],
+      "correct_answer": "A) Asbest maruziyeti; epiteloid, sarkomatoid ve bifazik tipler",
+      "explanation": "Plevral mezotelyomada asbestin (özellikle amfibol lifleri: krozidolit) en güçlü etiyolojik faktör olduğu kanıtlanmıştır. Histolojik tipler: epiteloid (en iyi prognoz), sarkomatoid (en kötü) ve bifazik (ikisinin karışımı).",
+      "story_hint": "💡 PROFESÖR NOTU: Mezotelyoma = asbest + plevra; kalretinin ve WT-1 IHK pozitif; adenokarsinomdan ayırt için CEA negatif."
+    },
+    {
+      "id": "patoloji_pv3-049",
+      "case": "Soru:(Patoloji) Orak hücreli anemide kronik doku iskemisi sonucu hangi organda en erken ve en ciddi hasar gelişir?",
+      "options": ["A) Dalak (hiposplenizm/otosplenektomi)", "B) Beyin (inme)", "C) Böbrek (papiller nekroz)", "D) Kemik iliği (aplazik kriz)", "E) Karaciğer (hepatopati)"],
+      "correct_answer": "A) Dalak (hiposplenizm/otosplenektomi)",
+      "explanation": "Orak hücreli anemide tekrarlayan dalak enfarktüsü sonucu dalak giderek küçülür ve fibröz dokuya dönüşür (otosplenektomi). Hiposplenizm kapsüllü bakteri enfeksiyonlarına (Streptococcus pneumoniae, H. influenzae) yatkınlık oluşturur.",
+      "story_hint": "💡 PROFESÖR NOTU: Orak HCR → dalak enfarktüsü → otosplenektomi → kapsüllü bakteri enfeksiyonu riski."
+    },
+    {
+      "id": "patoloji_pv3-050",
+      "case": "Soru:(Patoloji) Tüberküloz granülomlarında 'Langhans dev hücreleri' neden oluşur ve bu hücrelerin morfolojisi nedir?",
+      "options": ["A) Birden fazla makrofajın füzyonu; çevre dizilimli çekirdekler (at nalı/at arabası düzeni)", "B) Lenfosit transformasyonu; merkezi çekirdek", "C) Tümör hücresi diferansiyasyonu; hiperkromatik çekirdekler", "D) Epiteloid hücre nekrozu; piknotik çekirdekler", "E) Nötrofil kümeleşmesi; multilobuler çekirdekler"],
+      "correct_answer": "A) Birden fazla makrofajın füzyonu; çevre dizilimli çekirdekler (at nalı/at arabası düzeni)",
+      "explanation": "Langhans dev hücreleri, birden fazla aktive makrofajın füzyonuyla oluşur. Çekirdekler hücre periferinde at nalı veya at arabası düzeninde dizilir. TB'ya özgü olmayıp diğer granülomatöz hastalıklarda da görülür.",
+      "story_hint": "💡 PROFESÖR NOTU: Langhans = çevre çekirdek (at nalı); yabancı cisim dev hücresi = merkezi/dağınık çekirdek."
+    },
+    {
+      "id": "patoloji_pv3-051",
+      "case": "Soru:(Patoloji) Kolorektal karsinom gelişiminde Vogelstein'ın 'adenoma-karsinom dizisi' (adenom-karsinom sekansı) hangi gen mutasyonlarını kapsar?",
+      "options": ["A) APC → KRAS → SMAD4 → TP53 sırasıyla mutasyonlar", "B) TP53 → KRAS → APC → MLH1 sırasıyla mutasyonlar", "C) MLH1 → MSH2 → MSH6 → PMS2 sırasıyla mutasyonlar", "D) BRAF → PIK3CA → PTEN → EGFR sırasıyla mutasyonlar", "E) RET → MEN1 → VHL → NF1 sırasıyla mutasyonlar"],
+      "correct_answer": "A) APC → KRAS → SMAD4 → TP53 sırasıyla mutasyonlar",
+      "explanation": "Fearon-Vogelstein modelinde kolorektal karsinom gelişimi basamaklı gen mutasyonlarıyla gerçekleşir: APC kaybı (adenom başlangıcı) → KRAS aktivasyonu (adenom büyümesi) → SMAD4/DCC kaybı → TP53 kaybı (karsinom dönüşümü).",
+      "story_hint": "💡 PROFESÖR NOTU: Adenom-karsinom sekansı: APC (küçük adenom) → KRAS (büyük adenom) → p53 (karsinom). TUS'ta sık sorulan şema."
+    },
+    {
+      "id": "patoloji_pv3-052",
+      "case": "Soru:(Patoloji) Bir hastada hipersplenizm tablosu gelişiyor. Dalak histopatolojisinde yoğun lenfositik infiltrat, 'beyaz pulpa'nın dominant olduğu görülüyor. Hangi hastalık düşünülür?",
+      "options": ["A) Kronik lenfositik lösemi (KLL)", "B) Orak hücreli anemi (otosplenektomi)", "C) Portal hipertansiyon (konjesyon)", "D) Amyloidoz", "E) İdiyopatik trombositopenik purpura (ITP)"],
+      "correct_answer": "A) Kronik lenfositik lösemi (KLL)",
+      "explanation": "KLL'de dalak beyaz pulpası küçük matür lenfositlerin diffüz infiltrasyonu ile genişler. Anormal B lenfositler CD5+, CD19+, CD23+ fenotipindedir. Hipersplenizm ve splenomegali sık görülür.",
+      "story_hint": "💡 PROFESÖR NOTU: KLL = en sık erişkin lösemisi; CD5+ B hücre; 'smudge cell' periferik yaymada; soğuk aglütinin hemolizi."
+    },
+    {
+      "id": "patoloji_pv3-053",
+      "case": "Soru:(Patoloji) Akciğer patolojisinde 'asbestosis'in histolojik markeri olan ve plevral plakların yanı sıra parankimde izlenen yapı nedir?",
+      "options": ["A) Asbest cisimciği (ferruginous body); demir-protein kaplı asbest lifi", "B) Schaumann cisimciği; sarkoidozda kalsifik inklüzyon", "C) Psammom cisimciği; konsantrik kalsiyum katmanları", "D) Asteroid cisimciği; yıldız şekilli inklüzyon", "E) Curschmann spirali; mukus filamanlı sarmal"],
+      "correct_answer": "A) Asbest cisimciği (ferruginous body); demir-protein kaplı asbest lifi",
+      "explanation": "Asbest lifleri makrofajlar tarafından demir-protein (hemosiderin) ile kaplanır ve 'drum-stick' ya da 'dumbbell' görünümünde asbest cisimciklerini oluşturur. Bunlar Prusya mavisi boyasıyla pozitif boyanır.",
+      "story_hint": "💡 PROFESÖR NOTU: Asbestozis = asbest cisimciği + alt lob fibrozis + plevral plak; mezotelyoma riski yüksek."
+    },
+    {
+      "id": "patoloji_pv3-054",
+      "case": "Soru:(Patoloji) Koryokarsinomda serum beta-hCG yüksekliği izleniyor. Tümörün patolojik özellikleri arasında hangisi en belirleyicidir?",
+      "options": ["A) Sitotrofoblast ve sinsityotrofoblast proliferasyonu; villüs yapısının olmaması", "B) Granüloza hücreli tümör yapısı; Call-Exner cisimcikleri", "C) Yolk sac yapısı; Schiller-Duval cisimciği", "D) Matür teratom; 3 germ tabakası dokuları", "E) Seminom hücreleri; lenfosit infiltrasyonu"],
+      "correct_answer": "A) Sitotrofoblast ve sinsityotrofoblast proliferasyonu; villüs yapısının olmaması",
+      "explanation": "Koryokarsinomda her iki trofoblast tipi prolifere olur ancak villüs yapısı yoktur (gestasyonel koryokarsinomu ile nongestasyonel formdan ayırt eden kural: ör. plasental yapı). Yaygın hemorajik nekroz eşlik eder.",
+      "story_hint": "💡 PROFESÖR NOTU: Koryokarsinom = beta-hCG + sitotrofoblast/sinsitio + villüs yok + hemorajik nekroz; kemoterapiye çok iyi yanıt."
+    },
+    {
+      "id": "patoloji_pv3-055",
+      "case": "Soru:(Patoloji) Seminom ve non-seminom germ hücreli testis tümörlerini ayırt etmede hangi özellik kullanılır?",
+      "options": ["A) Seminom: homojen hücreler + lenfositik infiltrat + AFP negatif + beta-hCG genellikle negatif; non-seminom: heterojen + AFP/hCG pozitif olabilir", "B) Seminom: AFP pozitif; non-seminom: AFP negatif", "C) Seminom: radyoterapiye dirençli; non-seminom: radyosensitif", "D) Seminom: çocuklarda sık; non-seminom: yaşlılarda sık", "E) İkisi arasında klinik fark yoktur"],
+      "correct_answer": "A) Seminom: homojen hücreler + lenfositik infiltrat + AFP negatif + beta-hCG genellikle negatif; non-seminom: heterojen + AFP/hCG pozitif olabilir",
+      "explanation": "Seminom en sık testis tümörüdür; uniform büyük hücreler, belirgin çekirdekçikler ve lenfositik stroma ile karakterizedir. AFP hiç yükseltmez. Non-seminomlar (embryonal, yolk sac, koryokarsinom, teratom) çeşitli tümör markerları yükseltir.",
+      "story_hint": "💡 PROFESÖR NOTU: Seminom = AFP negatif + radyosensitif; Yolk sac = AFP+; Koryokarsinom = beta-hCG+."
+    },
+    {
+      "id": "patoloji_pv3-056",
+      "case": "Soru:(Patoloji) Glomerüler bazal membran (GBM) üzerinde lineer IgG birikimi hangi hastalığın patolojik göstergesidir?",
+      "options": ["A) Goodpasture sendromu (anti-GBM hastalığı)", "B) Minimal change hastalığı", "C) Membranöz nefropati", "D) IgA nefropati", "E) Lupus nefriti"],
+      "correct_answer": "A) Goodpasture sendromu (anti-GBM hastalığı)",
+      "explanation": "Goodpasture sendromunun patolojik tanısı immünfloresanda GBM boyunca lineer IgG birikimi ile konulur. Anti-GBM antikorları tip IV kollajenin alfa-3 zincirine (NC1 domain) karşı oluşur. Akciğer ve böbrek eş zamanlı tutulur.",
+      "story_hint": "💡 PROFESÖR NOTU: Lineer IgG = Goodpasture; granüler IgG = immün kompleks hastalığı; pauci-immün = ANCA vasküliti."
+    },
+    {
+      "id": "patoloji_pv3-057",
+      "case": "Soru:(Patoloji) 'Pnömokonyoz' grubunda silika maruziyeti sonucu gelişen hastalık hangisidir ve histolojik özelliği nedir?",
+      "options": ["A) Silikozis; konsantrik kollajen bantlarından oluşan 'silika nodülleri'", "B) Asbestozis; asbest cisimcikleri ve alt lob fibrozis", "C) Antrakozis; karbon pigment birikimi, minimal fibrozis", "D) Berilliozis; non-kazeifiye granülom (sarkoidoza benzer)", "E) Talkkozis; talk partikülleri ve granülom"],
+      "correct_answer": "A) Silikozis; konsantrik kollajen bantlarından oluşan 'silika nodülleri'",
+      "explanation": "Silikozis, kuvars (SiO2) partiküllerinin makrofajlar tarafından fagosite edilmesiyle ortaya çıkar. Silika nodülleri konsantrik hiyalinize kollajen bantlarından oluşur. Üst lob tutulumu baskındır. TB riskini artırır (silikotüberküloz).",
+      "story_hint": "💡 PROFESÖR NOTU: Silika = üst lob + konsantrik nodül + TB riski; asbest = alt lob + ferruginous body + mezotelyoma riski."
+    },
+    {
+      "id": "patoloji_pv3-058",
+      "case": "Soru:(Patoloji) Akut tubüler nekroz (ATN) oluşmasında iskemik ve nefrotoksik mekanizmalar arasındaki histolojik fark nedir?",
+      "options": ["A) İskemik ATN: tübüler bazal membran yıkımı (TBM bozulur); nefrotoksik ATN: TBM sağlam, geniş nekrotik segment", "B) İskemik ATN: proksimal tübül; nefrotoksik ATN: distal tübül seçici hasarı", "C) İkisinde histolojik fark yoktur", "D) İskemik ATN: glomerüler hasar baskın; nefrotoksik ATN: tübüler hasar baskın", "E) İskemik ATN: mikrovasküler tromboz; nefrotoksik ATN: interstisyel inflamasyon"],
+      "correct_answer": "A) İskemik ATN: tübüler bazal membran yıkımı (TBM bozulur); nefrotoksik ATN: TBM sağlam, geniş nekrotik segment",
+      "explanation": "İskemik ATN'de hasarlı tübüler segmentler yamalı (patchy) dağılım gösterir ve TBM destrüksiyonu (tubulorrhexis) izlenir. Nefrotoksik ATN'de (örn. aminoglikozit, sisplatin) nekroz sürekli ve geniş segmentlidir, TBM genellikle korunur; bu sayede rejenerasyon daha hızlı olur.",
+      "story_hint": "💡 PROFESÖR NOTU: ATN'nin en sık nedeni iskemi; en geri dönüşlü akut böbrek hasarı; TBM korunursa rejenerasyon hızlı."
+    },
+    {
+      "id": "patoloji_pv3-059",
+      "case": "Soru:(Patoloji) Karaciğer sinüzoidlerinde 'perisinüzoidal fibrozis' (space of Disse'de kollajen birikimi) hangi sürecin başlangıç evresini gösterir?",
+      "options": ["A) Hepatik fibrozis ve siroz gelişimi; aktive hepatik stellat hücre kollajen sentezi", "B) Amiloid birikimi; serum amiloid A lifleri", "C) Granülom oluşumu; epithelioid makrofajlar", "D) Steatoz; yağ damlacığı birikimi", "E) Kolestaz; safra tıkaçları oluşumu"],
+      "correct_answer": "A) Hepatik fibrozis ve siroz gelişimi; aktive hepatik stellat hücre kollajen sentezi",
+      "explanation": "Kronik karaciğer hasarında hepatik stellat hücreler (Ito hücreleri) aktive olarak miyofibroblastlara dönüşür ve sinüzoidal perisinüzoidal alanda tip I ve III kollajen biriktirir. Bu süreç kapilarizasyona ve sonunda siroze yol açar.",
+      "story_hint": "💡 PROFESÖR NOTU: Siroz anahtarı = aktive Ito hücresi (stellat) → kollajen → fibrozis → nodüler rejenerasyon."
+    },
+    {
+      "id": "patoloji_pv3-060",
+      "case": "Soru:(Patoloji) Granüloza hücreli over tümöründe görülen ve TUS'ta sık sorulan karakteristik histolojik yapı nedir?",
+      "options": ["A) Call-Exner cisimciği; rozet benzeri granüloza hücre kümesi etrafında eozinofilik sıvı", "B) Schiller-Duval cisimciği; glomerüloid vasküler yapı", "C) Psammom cisimciği; konsantrik kalsifikasyon", "D) Reinke kristali; altıgen protein kristalleri", "E) Charcot-Leyden kristali; eozinofil granül proteini"],
+      "correct_answer": "A) Call-Exner cisimciği; rozet benzeri granüloza hücre kümesi etrafında eozinofilik sıvı",
+      "explanation": "Call-Exner cisimciği, granüloza hücreli tümörün patognomonik bulgusudur. Granüloza hücreleri rozet benzeri dizilimle foliküler sıvıya benzeyen eozinofilik materyali çevreler. Bu tümör östrojen salgılar ve endometrial hiperplazi/karsinoma yol açabilir.",
+      "story_hint": "💡 PROFESÖR NOTU: Granüloza hücreli tümör = Call-Exner + östrojen → endometrial hiperplazi/CA riski; inhibin tümör markeri."
+    },
+    {
+      "id": "patoloji_pv3-061",
+      "case": "Soru:(Patoloji) Sistemik lupus eritematosus (SLE) böbrek tutulumunun sınıflandırmasında en kötü prognozlu sınıf hangisidir?",
+      "options": ["A) Sınıf IV (Diffüz proliferatif lupus nefriti)", "B) Sınıf I (Minimal mezengial)", "C) Sınıf II (Mezengial proliferatif)", "D) Sınıf V (Membranöz)", "E) Sınıf VI (İlerlemiş sklerotik)"],
+      "correct_answer": "A) Sınıf IV (Diffüz proliferatif lupus nefriti)",
+      "explanation": "ISN/RPS sınıflamasında Sınıf IV diffüz proliferatif lupus nefriti, glomerüllerin %50'sinden fazlasını tutar ve en ağır formdur. 'Wire loop lezyonu' (subendotelyal immün kompleks birikimi) karakteristiktir. En agresif tedavi gerektiren formdur.",
+      "story_hint": "💡 PROFESÖR NOTU: Lupus nefriti Sınıf IV = wire loop + diffüz tutulum + en kötü prognoz; SLE'de 'wire loop' = Sınıf IV."
+    },
+    {
+      "id": "patoloji_pv3-062",
+      "case": "Soru:(Patoloji) Kronik granülomatöz hastalıkta (KGH) nötrofiller oksidatif patlama yapamaz. Bu durumun moleküler temeli nedir?",
+      "options": ["A) NADPH oksidaz kompleks eksikliği; süperoksit üretilememesi", "B) Miyeloperoksidaz eksikliği; hipokloröz asit üretilememesi", "C) Lizozim eksikliği; hücre duvarı yıkılamaması", "D) Elastaz eksikliği; protein sindirilememesi", "E) Katepsin eksikliği; lizozomal sindirim bozukluğu"],
+      "correct_answer": "A) NADPH oksidaz kompleks eksikliği; süperoksit üretilememesi",
+      "explanation": "KGH'da NADPH oksidaz kompleksinin gp91phox gibi alt birimlerinde mutasyon nedeniyle reaktif oksijen türleri (O2-) üretilemez. Katalazyı pozitif bakteriler (S. aureus, Aspergillus) temizlenemeyen kronik enfeksiyonlara yol açar.",
+      "story_hint": "💡 PROFESÖR NOTU: KGH = NADPH oksidaz eksikliği + katalaz+ bakteri enfeksiyonu + granülom; DHR testi ile tanı."
+    },
+    {
+      "id": "patoloji_pv3-063",
+      "case": "Soru:(Patoloji) Akut appendisit patolojisinde tanı kriterleri nelerdir? Hangi histolojik bulgu tanıyı kesinleştirir?",
+      "options": ["A) Muskularis propria katmanına nötrofil infiltrasyonu", "B) Sadece mukozada nötrofil birikimi", "C) Submukozada ödem ve hiperemi", "D) Periapendisiyal yağ dokusunda inflamasyon", "E) Lümen içi fekalit varlığı"],
+      "correct_answer": "A) Muskularis propria katmanına nötrofil infiltrasyonu",
+      "explanation": "Akut appendisitin kesin histolojik tanısı için nötrofillerin muskularis propria katmanına ulaşması gerekir. Yüzeysel mukozal nötrofil infiltrasyonu yeterli değildir; bu non-spesifik bir bulgu olabilir.",
+      "story_hint": "💡 PROFESÖR NOTU: Akut appendisit tanısı = muskularis propria içinde nötrofil; mukozal infiltrasyon yetersiz kriter."
+    },
+    {
+      "id": "patoloji_pv3-064",
+      "case": "Soru:(Patoloji) Femur distalinde, metafiz yerleşimli, radyolojide 'güneş ışını (sunburst)' paterni ve Codman üçgeni gösteren kemik tümörü hangisidir?",
+      "options": ["A) Osteosarkom", "B) Ewing sarkomu", "C) Kondrosarkom", "D) Kordoma", "E) Dev hücreli tümör (osteoklastom)"],
+      "correct_answer": "A) Osteosarkom",
+      "explanation": "Osteosarkom 10-25 yaş grubunda en sık görülen primer malign kemik tümörüdür. Metafiz yerleşimlidir, osteoid üretir. Güneş ışını paterni ve Codman üçgeni (periost reaksiyonu) radyolojik bulgulardır. ALP yüksekliği eşlik eder.",
+      "story_hint": "💡 PROFESÖR NOTU: Osteosarkom = metafiz + güneş ışını + Codman üçgeni + ALP yüksek + osteoid üretimi."
+    },
+    {
+      "id": "patoloji_pv3-065",
+      "case": "Soru:(Patoloji) Pulmoner hipertansiyonun (PH) patolojik sürecinde Heath-Edwards sınıflamasının en ileri evresi (Grade VI) hangi lezyonla karakterizedir?",
+      "options": ["A) Pleksiform lezyon ve nekrotizan arterit", "B) Sadece medya hipertrofisi", "C) İntima fibrozisi", "D) Konsantrik laminar intima fibrozisi", "E) Dilatasyon lezyonu"],
+      "correct_answer": "A) Pleksiform lezyon ve nekrotizan arterit",
+      "explanation": "Heath-Edwards Grade VI'da pleksiform lezyon (vasküler kanal ağı) ve nekrotizan arterit izlenir; bu değişiklikler irreversible vasküler hasarı gösterir. Grade I yalnızca medya hipertrofisi iken değişiklikler ilerleyen evrelerde giderek daha ağır olur.",
+      "story_hint": "💡 PROFESÖR NOTU: PH evreleme: I=medya hipertrofisi → III=intima fibrozis → VI=pleksiform+nekrotizan arterit (geri dönüşsüz)."
+    },
+    {
+      "id": "patoloji_pv3-066",
+      "case": "Soru:(Patoloji) Hepatoselüler karsinomun (HCC) en önemli iki risk faktörü hangileridir ve hangisi daha sık ilişkili olduğu kanıtlanmıştır?",
+      "options": ["A) Kronik HBV ve kronik HCV enfeksiyonu; HBV daha sık ilişkili (siroz olmadan da)", "B) Alkol ve otoimmün hepatit; alkol daha sık", "C) NASH ve hemokromatoz; hemokromatoz daha sık", "D) Wilson ve alfa-1 AT eksikliği; Wilson daha sık", "E) Aflatoksin ve sklerozan kolanjit; aflatoksin daha sık"],
+      "correct_answer": "A) Kronik HBV ve kronik HCV enfeksiyonu; HBV daha sık ilişkili (siroz olmadan da)",
+      "explanation": "HCC'nin dünya genelinde en sık risk faktörü kronik HBV enfeksiyonudur (özellikle Asya ve Afrika'da). HBV, siroz olmaksızın da HCC'ye yol açabilir çünkü viral DNA hepatosit genomiyle entegre olabilir. HCV ise neredeyse her zaman siroz üzerinden HCC geliştirir.",
+      "story_hint": "💡 PROFESÖR NOTU: HCC = HBV (siroz şart değil) > HCV (siroz şart) > alkol; AFP tümör markeri; fibrolamellar varyant genç kadın."
+    },
+    {
+      "id": "patoloji_pv3-067",
+      "case": "Soru:(Patoloji) Multipl myelomun kemik iliği biyopsisinde tanıyı kesinleştiren histolojik bulgular nelerdir?",
+      "options": ["A) Kemik iliğinde %10'dan fazla klonal plazma hücresi birikimi ve anormal fenotip", "B) Reed-Sternberg hücreleri ve lenfositik arka plan", "C) Miyeloblast oranının %20'yi geçmesi", "D) Granülom oluşumu ve epiteloid histiyositler", "E) Fibroblast proliferasyonu ve kollajen birikimi"],
+      "correct_answer": "A) Kemik iliğinde %10'dan fazla klonal plazma hücresi birikimi ve anormal fenotip",
+      "explanation": "Multipl myelom tanısı için kemik iliğinde en az %10 klonal plazma hücre infiltrasyonu gerekir. Anormal plazma hücreleri CD138+, CD38+, CD19- fenotipindedir. 'Russell cisimcikleri' sitoplazmik immünoglobulin birikimini yansıtır.",
+      "story_hint": "💡 PROFESÖR NOTU: Myelom = >%10 plazma hücresi + M proteini + CRAB (hiperkalsemi, böbrek, anemi, kemik lezyonu)."
+    },
+    {
+      "id": "patoloji_pv3-068",
+      "case": "Soru:(Patoloji) Tiroid papiller karsinomunda 'Psammom cisimciği' nasıl oluşur ve klinik önemi nedir?",
+      "options": ["A) Tümör hücresi ölümünden sonra kalsiyum birikimi; malignite göstergesi", "B) Tiroglobulin kümeleşmesi; koloit birikimi", "C) Amiloid prekürsörünün kalsifikasyonu; medüller CA göstergesi", "D) Kemik metastaz kalsifikasyonu; uzak metastaz işareti", "E) Reaktif kalsifikasyon; benign lezyon göstergesi"],
+      "correct_answer": "A) Tümör hücresi ölümünden sonra kalsiyum birikimi; malignite göstergesi",
+      "explanation": "Psammom cisimcikleri, apoptotik tümör hücrelerinin etrafında konsantrik lameller halinde kalsiyum birikimi ile oluşur. Papiller tiroid karsinomunda tanı değeri yüksektir; psammom cisimciğinin varlığı papiller karsinomu güçlü biçimde düşündürür.",
+      "story_hint": "💡 PROFESÖR NOTU: Psammom cisimciği = papiller tiroid CA + papiller seröz over CA + mezotelyoma + menengiom."
+    },
+    {
+      "id": "patoloji_pv3-069",
+      "case": "Soru:(Patoloji) Tümör baskılayıcı gen p53'ün işlevi nedir ve kanser gelişimindeki rolü nasıl gerçekleşir?",
+      "options": ["A) DNA hasarı yanıtını düzenler; mutasyonla inaktive olduğunda hasarlı hücreler apoptoza gitmez ve çoğalmaya devam eder", "B) Büyüme faktörü reseptörü olarak çalışır; mutasyonla aşırı aktivasyon", "C) Hücre döngüsünü G2/M noktasında kontrol eder sadece", "D) Anjiyogenezi inhibe eder; mutasyonda vaskülarizasyon artar", "E) İmmün gözetimde rol alır; mutasyonda NK hücre aktivitesi azalır"],
+      "correct_answer": "A) DNA hasarı yanıtını düzenler; mutasyonla inaktive olduğunda hasarlı hücreler apoptoza gitmez ve çoğalmaya devam eder",
+      "explanation": "p53 'genomun bekçisi' olarak bilinir. DNA hasarı sonrası hücre döngüsünü G1/S kontrol noktasında durdurur ve onarım sağlanmazsa apoptozu tetikler. TP53 mutasyonu insan kanserlerinin %50'sinde bulunur. Li-Fraumeni sendromunda germline TP53 mutasyonu mevcuttur.",
+      "story_hint": "💡 PROFESÖR NOTU: p53 = 'genomun bekçisi'; Li-Fraumeni = germline TP53; en sık mutasyona uğrayan tümör baskılayıcı gen."
+    },
+    {
+      "id": "patoloji_pv3-070",
+      "case": "Soru:(Patoloji) Aterotrombozda plak rüptürünün patolojik tetikleyicisi nedir? Hangi plak özelliği en yüksek rüptür riskini oluşturur?",
+      "options": ["A) İnce fibroz kapsül + büyük lipid çekirdeği + makrofaj infiltrasyonu = 'vulnerable plaque'", "B) Kalın fibroz kapsül + küçük lipid çekirdeği", "C) Kalsifikasyon ve fibroz dominant plak", "D) Tamamen tıkayıcı stabil trombüs", "E) Sadece endotel disfonksiyonu, plak yoktur"],
+      "correct_answer": "A) İnce fibroz kapsül + büyük lipid çekirdeği + makrofaj infiltrasyonu = 'vulnerable plaque'",
+      "explanation": "Kırılgan (vulnerable) plak; ince fibroz kapsül, geniş nekrotik lipid çekirdeği ve aktif makrofaj infiltrasyonuyla karakterizedir. Makrofajlar MMP salgılayarak kapsülü inceltir. Rüptür ani MI ve ölüme neden olabilir.",
+      "story_hint": "💡 PROFESÖR NOTU: Vulnerable plaque = ince kapsül + büyük lipid çekirdeği + makrofaj/T hücresi infiltrasyonu; rüptür = MI."
+    },
+    {
+      "id": "patoloji_pv3-071",
+      "case": "Soru:(Patoloji) Akut romatizmal ateşte (ARA) kalpte görülen 'Aschoff cisimciği' histolojik olarak nedir?",
+      "options": ["A) Perivasküler granülom; merkezi fibrinoid nekroz + Aschoff dev hücreleri (makrofaj kökenli)", "B) Bakteriyel emboli etrafında nötrofil kümesi", "C) Antijen-antikor kompleks birikimi", "D) Lenfositik perikardit plakları", "E) Miyo kardit nekroz alanı"],
+      "correct_answer": "A) Perivasküler granülom; merkezi fibrinoid nekroz + Aschoff dev hücreleri (makrofaj kökenli)",
+      "explanation": "Aschoff cisimcikleri ARA'nın patognomonik kardiyak bulgusudur. Miyokardda perivasküler yerleşimli granülomlar; merkezi fibrinoid nekroz, çevrelerinde Anitschkow hücreleri (tırtıl çekirdekli, makrofaj kökenli) ve dev Aschoff hücreleri içerir.",
+      "story_hint": "💡 PROFESÖR NOTU: ARA = Aschoff cisimciği (perivasküler granülom) + Anitschkow hücresi (tırtıl çekirdek) + mitral kapak etkilenir."
+    },
+    {
+      "id": "patoloji_pv3-072",
+      "case": "Soru:(Patoloji) Polisitemia vera (PV) patolojisinde kemik iliği bulgularının en belirgin özelliği nedir ve PV ile sekonder polisitemiyi ayırt eden test hangisidir?",
+      "options": ["A) Trilineage hiperplazi (eritroid + miyeloid + megakaryosit); serum EPO düzeyi (PV'de düşük)", "B) Sadece eritroid hiperplazi; periferik kanda sadece eritrositoz", "C) Blast artışı (%20>); EPO düzeyi yüksek", "D) Hiposelüler kemik iliği; pan-sitopeni", "E) Diffüz plazmositoz; M proteini yüksek"],
+      "correct_answer": "A) Trilineage hiperplazi (eritroid + miyeloid + megakaryosit); serum EPO düzeyi (PV'de düşük)",
+      "explanation": "PV'de JAK2 V617F mutasyonu sonucu tüm hematopoetik seri artış gösterir (panmyeloz). Eritropoietin bağımsız eritropoez nedeniyle serum EPO düzeyi düşüktür; sekonder polisitemide ise EPO yüksektir.",
+      "story_hint": "💡 PROFESÖR NOTU: PV = JAK2+ + trilineage hiperplazi + EPO düşük; sekonder polisitemi = EPO yüksek (hipoksi, tümör)."
+    },
+    {
+      "id": "patoloji_pv3-073",
+      "case": "Soru:(Patoloji) 'Karsinoid tümör' patolojik olarak nasıl tanımlanır ve hangi histokimyasal yöntemle doğrulanır?",
+      "options": ["A) İyi diferansiye nöroendokrin tümör; kromogranin A ve sinaptofizin IHK pozitifliği", "B) Kötü diferansiye adenokarsinom; CEA ve CK7 pozitifliği", "C) Skuamöz hücreli karsinom; p63 ve CK5/6 pozitifliği", "D) Germ hücreli tümör; PLAP ve AFP pozitifliği", "E) Mezenkimal tümör; vimentin ve desmin pozitifliği"],
+      "correct_answer": "A) İyi diferansiye nöroendokrin tümör; kromogranin A ve sinaptofizin IHK pozitifliği",
+      "explanation": "Karsinoid tümörler (NET Grade 1-2) düzenli hücreler, yuvarlak çekirdekler ve granüler sitoplazmadan oluşur. Nöroendokrin diferansiyasyon için kromogranin A ve sinaptofizin IHK belirteçleri kullanılır. Appendiks en sık lokalizasyondur.",
+      "story_hint": "💡 PROFESÖR NOTU: Karsinoid/NET = kromogranin + sinaptofizin; appendiks en sık yer; serotonin → karsinoid sendrom (akciğere geçince)."
+    },
+    {
+      "id": "patoloji_pv3-074",
+      "case": "Soru:(Patoloji) Wilms tümörü (nefroblastom) patolojisinin klasik 'trifazik' histolojik görünümü hangi üç komponentten oluşur?",
+      "options": ["A) Blastem + stromal + epitelyal (tübüler) komponentler", "B) Endokrin + ekzokrin + nöroendokrin komponentler", "C) Skuamöz + glandüler + bazaloid komponentler", "D) Nöral + kas + kıkırdak komponentler", "E) Vasküler + lenfatik + mezengial komponentler"],
+      "correct_answer": "A) Blastem + stromal + epitelyal (tübüler) komponentler",
+      "explanation": "Wilms tümörü böbrekteki metanefrik blastema artığından köken alır. Trifazik histoloji: (1) primitif blastem hücreleri, (2) stromal/mezenkimal komponent, (3) epitelyal tübüler yapılar. WT1 gen mutasyonu ile ilişkilidir. Çocuklarda en sık renal tümördür.",
+      "story_hint": "💡 PROFESÖR NOTU: Wilms = blastem + stroma + epitel (trifazik); WT1 mutasyonu; WAGR sendromuyla birlikte (Wilms+aniridia+GU anomalileri+retardasyon)."
+    },
+    {
+      "id": "patoloji_pv3-075",
+      "case": "Soru:(Patoloji) Sistemik amiloidozda amiloid birikiminin doku tanısı için hangi boya kullanılır ve polarize ışık altında ne görülür?",
+      "options": ["A) Kongo kırmızısı boyası; elma yeşili çift kırınım (birefringence)", "B) PAS boyası; pembe granüller", "C) Masson trikrom; mavi kollajen", "D) Sudan III; kırmızı yağ damlacıkları", "E) Giemsa boyası; mavi parazitler"],
+      "correct_answer": "A) Kongo kırmızısı boyası; elma yeşili çift kırınım (birefringence)",
+      "explanation": "Amiloid birikiminin histolojik tanısı Kongo kırmızısı boyasıyla konur. Normal ışıkta pembe-kırmızı renklenen amiloid, polarize ışık altında elma yeşili birefringence gösterir. Bu, beta-pileli yapının optik özelliğinden kaynaklanır.",
+      "story_hint": "💡 PROFESÖR NOTU: Amiloid = Kongo kırmızısı + polarize = elma yeşili; SAA (sekonder) ve AL (primer/myelom) en sık tipler."
+    },
+    {
+      "id": "patoloji_pv3-076",
+      "case": "Soru:(Patoloji) Kronik miyeloid lösemide (KML) Philadelphia kromozomu nedir ve hangi onkoproteini kodlar?",
+      "options": ["A) t(9;22); BCR-ABL füzyon proteini (tirozin kinaz)", "B) t(8;14); MYC aktivasyonu", "C) t(15;17); PML-RARA füzyon proteini", "D) t(11;14); BCL-1/Cyclin D1 füzyon", "E) t(14;18); BCL-2 aşırı ekspresyonu"],
+      "correct_answer": "A) t(9;22); BCR-ABL füzyon proteini (tirozin kinaz)",
+      "explanation": "Philadelphia kromozomu t(9;22)(q34;q11) translokasyonuyla oluşur. BCR-ABL füzyon proteini anaysal olarak aktif tirozin kinaz aktivitesine sahiptir ve hücre proliferasyonunu artırır. KML tedavisinde imatinib (BCR-ABL inhibitörü) kullanılır.",
+      "story_hint": "💡 PROFESÖR NOTU: Philadelphia = t(9;22) = BCR-ABL = imatinib hedefi; ALL'de de görülür ama KML'nin ikonu."
+    },
+    {
+      "id": "patoloji_pv3-077",
+      "case": "Soru:(Patoloji) Mantle hücreli lenfomada (MCL) karakteristik genetik anomali ve aşırı eksprese edilen protein hangisidir?",
+      "options": ["A) t(11;14); Cyclin D1 aşırı ekspresyonu", "B) t(14;18); BCL-2 aşırı ekspresyonu", "C) t(8;14); MYC aşırı ekspresyonu", "D) t(2;5); ALK füzyon proteini", "E) t(9;22); BCR-ABL tirozin kinaz"],
+      "correct_answer": "A) t(11;14); Cyclin D1 aşırı ekspresyonu",
+      "explanation": "MCL'de t(11;14)(q13;q32) translokasyonu ile Cyclin D1 geni BCH geni promotörünün yanına taşınarak aşırı eksprese edilir. Cyclin D1 hücre döngüsü regülatörüdür; aşırı ekspresyon G1/S geçişini hızlandırır.",
+      "story_hint": "💡 PROFESÖR NOTU: MCL = t(11;14) + Cyclin D1 + CD5+ CD23-; foliküler lenfomadan CD23 negatifliği ile ayrılır."
+    },
+    {
+      "id": "patoloji_pv3-078",
+      "case": "Soru:(Patoloji) İskemik inme (beyin enfarktüsü) patolojisinde 'kırmızı nöron' ne zaman görülür ve ne anlama gelir?",
+      "options": ["A) 12-24. saatlerde; nekrotik nöronların eozinofilik sitoplazmalarının koyulaşması", "B) 1. haftada; granülasyon dokusu oluşumu", "C) İlk 4-6 saatte; sadece ödem ve hücre şişmesi", "D) 3-4. günlerde; liküfaksiyon nekrozu başlangıcı", "E) 2 hafta sonra; glial skar oluşumu"],
+      "correct_answer": "A) 12-24. saatlerde; nekrotik nöronların eozinofilik sitoplazmalarının koyulaşması",
+      "explanation": "Beyin iskemisinde 12-24. saatlerde nöronlar eozinofilik sitoplazma koyulaşması ve piknotik çekirdekle 'kırmızı nöron' görünümü alır. İlk 4-6 saat makroskopik ve mikroskopik bulgu yoktur. Liküfaksiyon nekrozu ve glia skarı sonraki günlerde-haftalarda oluşur.",
+      "story_hint": "💡 PROFESÖR NOTU: Beyin enfarktüsü: 12-24s=kırmızı nöron; 1-3g=nötrofil; 1-2h=makrofaj; haftalar=liküfaksiyon; skar=gliozis."
+    },
+    {
+      "id": "patoloji_pv3-079",
+      "case": "Soru:(Patoloji) Meme kanserinin en sık histolojik tipi hangisidir ve prognoz tayininde kullanılan en önemli moleküler belirteçler nelerdir?",
+      "options": ["A) İnvaziv duktal karsinom (NST); ER, PR, HER2 ve Ki-67", "B) Lobüler karsinom in situ; p53 ve EGFR", "C) İnflamatuvar meme kanseri; CA 15-3 ve CEA", "D) Medüller karsinom; BRCA1 ve BRCA2", "E) Müsinöz karsinom; MUC1 ve mucin"],
+      "correct_answer": "A) İnvaziv duktal karsinom (NST); ER, PR, HER2 ve Ki-67",
+      "explanation": "İnvaziv duktal karsinom (artık 'NST - No Special Type' olarak adlandırılır) meme kanserlerinin %70-80'ini oluşturur. ER/PR pozitifliği hormonal tedavi yanıtını, HER2 amplifikasyonu trastuzumab tedavisini, Ki-67 proliferasyon hızını belirler.",
+      "story_hint": "💡 PROFESÖR NOTU: Meme CA panel: ER+PR+ = luminal A/B (iyi prognoz); HER2+ = trastuzumab; Triple negatif = kötü prognoz, BRCA mutasyonu."
+    },
+    {
+      "id": "patoloji_pv3-080",
+      "case": "Soru:(Patoloji) Wilson hastalığında karaciğer biyopsisinde bakır birikimini göstermek için hangi histokimyasal boya kullanılır?",
+      "options": ["A) Rubeanic asit veya rodanin boyası", "B) Prusya mavisi (Perls boyası)", "C) PAS boyası", "D) Orcein boyası", "E) Kongo kırmızısı"],
+      "correct_answer": "A) Rubeanic asit veya rodanin boyası",
+      "explanation": "Wilson hastalığında (hepatolentiküler dejenerasyon) ATP7B gen mutasyonu nedeniyle bakır safra ile atılamaz ve karaciğerde birikir. Bakır birikimi rubeanic asit veya rodanin boyasıyla gösterilir; demir birikimi için Prusya mavisi kullanılır.",
+      "story_hint": "💡 PROFESÖR NOTU: Wilson = bakır birikimi + ATP7B mutasyonu; rubeanic asit/rodanin ile gösterilir; Kayser-Fleischer halkası patognomonik."
+    },
+    {
+      "id": "patoloji_pv3-081",
+      "case": "Soru:(Patoloji) Adrenokortikal karsinom ile adenom arasında patolojik ayrımda Weiss kriterleri kullanılır. Malignite kriterleri arasında hangisi en güçlü prediktördür?",
+      "options": ["A) Vasküler invazyon ve kapsül invazyonu", "B) Sadece mitoz sayısı yüksekliği", "C) Tümör boyutunun 5 cm'i geçmesi", "D) Nekroz varlığı", "E) Diffüz büyüme paterni"],
+      "correct_answer": "A) Vasküler invazyon ve kapsül invazyonu",
+      "explanation": "Weiss skorlamasında 9 kriter bulunur; 3 veya daha fazlası maligniteyi gösterir. Vasküler invazyon ve kapsül invazyonu en güçlü malignite kriterleri olup bunlar olmadan diğer kriterler yeterli olmayabilir.",
+      "story_hint": "💡 PROFESÖR NOTU: Weiss kriterleri (9 adet, ≥3=malign): vasküler invazyon + kapsül invazyonu en güçlü malignitenin kanıtı."
+    },
+    {
+      "id": "patoloji_pv3-082",
+      "case": "Soru:(Patoloji) Paratiroid hiperplazisi ile paratiroid adenomunu patolojik olarak ayırt etmede hangi kriter kullanılır?",
+      "options": ["A) Adenom: tek bez tutulumu, çevre normokalsemik bez korunmuş; Hiperplazi: tüm bezler tutulmuş", "B) Adenom: tüm bezler büyümüş; Hiperplazi: tek bez büyümüş", "C) Adenom: malign özellikler taşır; Hiperplazi: tamamen benign", "D) Adenom: kadınlarda sık; Hiperplazi: erkeklerde sık", "E) Morfoljik ayrım mümkün değildir, ancak klinikle değerlendirilir"],
+      "correct_answer": "A) Adenom: tek bez tutulumu, çevre normokalsemik bez korunmuş; Hiperplazi: tüm bezler tutulmuş",
+      "explanation": "Paratiroid adenomunda genellikle tek bir bez büyür, diğerleri normal kalır. Hiperplazide ise dört bez de büyür. Bu ayrım intraoperatif olarak kalan bezlerin değerlendirilmesiyle yapılır. MEN 1 ve 2A'da hiperplazi görülür.",
+      "story_hint": "💡 PROFESÖR NOTU: Adenom = tek bez; hiperplazi = 4 bez; karsinom = vasküler invazyon + kapsül invazyonu (nadir)."
+    },
+    {
+      "id": "patoloji_pv3-083",
+      "case": "Soru:(Patoloji) Akut tubüler nekrozda (ATN) toparlanma sürecinde proksimal tübül hücreleri yeniden çoğalır. Bu rejenerasyonun histolojik kanıtı nedir?",
+      "options": ["A) Mitoz figürleri ve düzleşmiş (basık) tübüler epitel ile bazal membran korunması", "B) Glomerüler proliferasyon ve mezengial genişleme", "C) İnterstisyel fibrozis ve lenfosit infiltrasyonu", "D) Tübüler atrofi ve BM kalınlaşması", "E) Makrofaj infiltrasyonu ve granülom oluşumu"],
+      "correct_answer": "A) Mitoz figürleri ve düzleşmiş (basık) tübüler epitel ile bazal membran korunması",
+      "explanation": "ATN rejenerasyonunda tübüler bazal membran (BM) bütünlüğünün korunması kritiktir; BM korunduğunda yeni hücreler BM boyunca migrasyon ederek yeniden epitelize eder. Aktif proliferasyon mitoz figürleriyle gösterilir.",
+      "story_hint": "💡 PROFESÖR NOTU: ATN iyileşme = BM sağlam → epitelize; BM bozulmuş = uzun süreli hasar; nefrotoksik ATN daha hızlı iyileşir."
+    },
+    {
+      "id": "patoloji_pv3-084",
+      "case": "Soru:(Patoloji) Rabdomiyosarkom histolojik alt tiplerinden hangisi en sık görülen ve en iyi prognoza sahip olanıdır?",
+      "options": ["A) Embriyonel rabdomiyosarkom", "B) Alveoler rabdomiyosarkom", "C) Pleomorfik rabdomiyosarkom", "D) Botryoid varyant", "E) Iğ hücreli varyant"],
+      "correct_answer": "A) Embriyonel rabdomiyosarkom",
+      "explanation": "Embriyonel rabdomiyosarkom çocuklarda en sık görülen yumuşak doku sarkomudur ve diğer tiplere göre en iyi prognoza sahiptir. Başlık ve boyun, genitoüriner sistem ve retroperitonda görülür. İğ/oval hücreler ve ilkel miyoblastlar içerir.",
+      "story_hint": "💡 PROFESÖR NOTU: Rabdomiyosarkom tipleri: embriyonel (%60, iyi prognoz) > alveoler (%20, t(2;13), kötü prognoz) > pleomorfik (yetişkin)."
+    },
+    {
+      "id": "patoloji_pv3-085",
+      "case": "Soru:(Patoloji) Foliküler tiroid karsinomu ile foliküler adenomu patolojik olarak ayırt etmede kullanılan kesin kriter nedir?",
+      "options": ["A) Kapsül ve/veya vasküler invazyon varlığı", "B) Hücre sayısı ve büyüklüğü", "C) Tiroglobulin pozitifliği", "D) Folikül boyutu ve koloid miktarı", "E) Mitoz sayısı"],
+      "correct_answer": "A) Kapsül ve/veya vasküler invazyon varlığı",
+      "explanation": "Foliküler adenom ile karsinom arasındaki tek ayrım kapsül ve/veya vasküler invazyondur; sitolojik özellikler yeterli değildir. Bu nedenle ince iğne aspirasyon biyopsisi (İİAB) foliküler karsinomu adenomdan ayırt edemez.",
+      "story_hint": "💡 PROFESÖR NOTU: Foliküler CA vs adenom = sadece invazyon kriteri; İİAB bu ayrımı yapamaz → cerrahi şart."
+    },
+    {
+      "id": "patoloji_pv3-086",
+      "case": "Soru:(Patoloji) Diffüz büyük B hücreli lenfoma (DLBCL) en sık görülen agresif lenfomadır. Germinal merkez (GCB) ve germinal merkez dışı (non-GCB/ABC) alt tiplerini ayırt etmede hangi IHK belirteçleri kullanılır?",
+      "options": ["A) CD10, BCL-6, MUM1; GCB: CD10+/BCL6+ ve MUM1-; non-GCB: MUM1+", "B) CD5, CD23, BCL-2; GCB: CD5+; non-GCB: CD5-", "C) Cyclin D1, SOX11; GCB: Cyclin D1+; non-GCB: SOX11+", "D) CD30, CD15; GCB: CD30+; non-GCB: CD15+", "E) ALK, EMA; GCB: ALK+; non-GCB: EMA+"],
+      "correct_answer": "A) CD10, BCL-6, MUM1; GCB: CD10+/BCL6+ ve MUM1-; non-GCB: MUM1+",
+      "explanation": "Hans algoritması CD10, BCL-6 ve MUM1 kullanır. GCB alt tipi CD10 veya BCL6+/MUM1- ile karakterizedir ve daha iyi prognoza sahiptir. Non-GCB (ABC) alt tipi MUM1 pozitifliği ve R-CHOP'a daha az yanıtla seyreder.",
+      "story_hint": "💡 PROFESÖR NOTU: DLBCL: GCB (CD10/BCL6 pozitif, iyi prognoz) vs ABC/non-GCB (MUM1 pozitif, kötü prognoz)."
+    },
+    {
+      "id": "patoloji_pv3-087",
+      "case": "Soru:(Patoloji) Tip 1 diyabetes mellitusun pankreas patolojisinde görülen değişiklikler hangileridir?",
+      "options": ["A) İnsülit (adacık lenfosit infiltrasyonu) ve beta hücre kaybı ile adacık atrofisi", "B) Adacık amiloid birikimi ve adacık hipertrofisi", "C) Ekzokrin pankreas atrofisi olmadan adacık hiperplazisi", "D) Duktal proliferasyon ve kistik değişiklikler", "E) Granülom oluşumu ve fibrozis"],
+      "correct_answer": "A) İnsülit (adacık lenfosit infiltrasyonu) ve beta hücre kaybı ile adacık atrofisi",
+      "explanation": "Tip 1 DM'de otoimmün insülit (CD8+ T lenfositlerin adacıklara infiltrasyonu) ile beta hücreleri selektif olarak yok edilir. Adacıklar küçülür (atrofi). Tip 2 DM'de ise adacık amiloid birikimi (IAPP/amilin) ve beta hücre azalması görülür.",
+      "story_hint": "💡 PROFESÖR NOTU: Tip 1 DM = insülit + beta hücre kaybı; Tip 2 DM = adacık amiloidi (IAPP) + beta hücre azalması."
+    },
+    {
+      "id": "patoloji_pv3-088",
+      "case": "Soru:(Patoloji) İmmünfloresanda 'tam ay görünümü' (full house immunofluorescence) ne anlama gelir ve hangi hastalıkta görülür?",
+      "options": ["A) IgG, IgA, IgM, C3 ve C1q'nun glomerüllerde birlikte bulunması; lupus nefriti", "B) Sadece IgA birikimi; IgA nefropatisi", "C) Linear IgG; Goodpasture sendromu", "D) IgM birikimi; Waldenström makroglobulinemisi", "E) C3 birikimi; C3 glomerulopati"],
+      "correct_answer": "A) IgG, IgA, IgM, C3 ve C1q'nun glomerüllerde birlikte bulunması; lupus nefriti",
+      "explanation": "Lupus nefritinde tüm immünoglobulin izotipleri (IgG, IgA, IgM) ve kompleman bileşenleri (C3, C1q) birlikte birikir. Bu 'full house' patern lupus nefritinin patognomonik immünfloresan bulgusudur.",
+      "story_hint": "💡 PROFESÖR NOTU: Full house IF = IgG+IgA+IgM+C3+C1q = lupus nefriti; C1q SLE'yi diğer GN'lerden ayırt ettirir."
+    },
+    {
+      "id": "patoloji_pv3-089",
+      "case": "Soru:(Patoloji) Multifokal fibröz displazide (poliostotik) McCune-Albright sendromuyla birlikteliği olan patolojik özellik nedir?",
+      "options": ["A) GNAS1 gen mutasyonu; Gs-alfa protein aktivasyonu", "B) FGFR3 mutasyonu; akondroplazi paterni", "C) RET proto-onkogen mutasyonu; MEN 2 ilişkisi", "D) NF1 mutasyonu; nörofibromatozis", "E) VHL mutasyonu; hemanjiyoblastom"],
+      "correct_answer": "A) GNAS1 gen mutasyonu; Gs-alfa protein aktivasyonu",
+      "explanation": "Fibröz displazide GNAS1 gen mozaik mutasyonu somatik olarak oluşur ve cAMP yolunu aktive eder. McCune-Albright sendromunda poliostotik fibröz displazi + cafe-au-lait lekeleri + erken puberte üçlüsü izlenir.",
+      "story_hint": "💡 PROFESÖR NOTU: Fibröz displazi = GNAS1 + kemik medullası fibröz doku ile dolar; 'çoban sopası' deformitesi (femur)."
+    },
+    {
+      "id": "patoloji_pv3-090",
+      "case": "Soru:(Patoloji) 'Pseudomembranöz kolit' neden oluşur ve kolonun patolojik görünümü nasıldır?",
+      "options": ["A) Clostridium difficile toksin A/B; müsin, fibrin ve nötrofillerden oluşan psödomembranlar", "B) Salmonella enteritidis; hemorajik ülserler", "C) Crohn hastalığı; transmural granülomlar", "D) İskemik kolit; submukozal hemoraji", "E) CMV koliti; intranükleer inklüzyonlar"],
+      "correct_answer": "A) Clostridium difficile toksin A/B; müsin, fibrin ve nötrofillerden oluşan psödomembranlar",
+      "explanation": "Antibiyotik kullanımı sonrası C. difficile çoğalarak toksin A (enterotoksin) ve toksin B (sitotoksin) salgılar. Kolon mukozasında nokta şeklinde nekroz alanları üzerine müsin, fibrin, nötrofil ve hücre debrisinden oluşan psödomembranlar oluşur.",
+      "story_hint": "💡 PROFESÖR NOTU: C. diff → psödomembranöz kolit; antibiyotik ilişkili; tanı: GDH + toksin testi; tedavi: vankomisin/fidaksomisin."
+    },
+    {
+      "id": "patoloji_pv3-091",
+      "case": "Soru:(Patoloji) Menengiomun patolojik sınıflamasında WHO Grade 1 tümörün en sık alt tipi ve karakteristik histolojik yapısı nedir?",
+      "options": ["A) Meningoteliomatöz tip; vorteks (girdap) oluşumu ve Psammom cisimcikleri", "B) Atipik tip; mitoz artışı ve nekroz", "C) Anaplastik tip; sarkomatöz dönüşüm", "D) Kordoid tip; müsinöz stroma", "E) Şeffaf hücreli tip; glikojen birikimi"],
+      "correct_answer": "A) Meningoteliomatöz tip; vorteks (girdap) oluşumu ve Psammom cisimcikleri",
+      "explanation": "Meningoteliomatöz menengiom en sık görülen alt tiptir. Meningotelyal hücreler çevrimisel vorteks (girdap) düzeninde dizilir; merkezde kalsifikasyon oluşmasıyla Psammom cisimcikleri meydana gelir. EMA ve vimentin pozitif, GFAP negatif.",
+      "story_hint": "💡 PROFESÖR NOTU: Menengiom = araknoid hücreler + vorteks + Psammom + EMA+ vimentin+; en sık intrakraniyal ekstraaksiyel tümör."
+    },
+    {
+      "id": "patoloji_pv3-092",
+      "case": "Soru:(Patoloji) 65 yaşında erkek hastada izole proteinüri, böbrek biyopsisinde mezengial ve subendotelyal bölgelerde PAS+ eozinofilik nodüler birikimler izleniyor. Serum SPEP'te M proteini pozitif. Tanı nedir?",
+      "options": ["A) AL amiloidozu (primer amiloidoz)", "B) Kimmelstiel-Wilson lezyonu (diyabetik nefropati)", "C) MPGN tip 1", "D) Krioglobulinemik glomerülonefrit", "E) C3 glomerulopati"],
+      "correct_answer": "A) AL amiloidozu (primer amiloidoz)",
+      "explanation": "AL amiloidozda hafif zincirler (lambda > kappa) amiloid fibrillerine dönüşerek glomerüllerde, damar duvarlarında ve interstisyumda birikir. Kongo kırmızısı pozitifliği ve elma yeşili birefringence tanısaldır. Myelom veya MGUS ile ilişkilidir.",
+      "story_hint": "💡 PROFESÖR NOTU: AL amiloidoz = myelom/MGUS + hafif zincir + Kongo kırmızısı+ + nefrotik sendrom."
+    },
+    {
+      "id": "patoloji_pv3-093",
+      "case": "Soru:(Patoloji) Hodgkin lenfomanın lenf nodu patolojisinde 'lakünöz hücreler' hangi alt tipte görülür?",
+      "options": ["A) Nodüler skleroz tipinde", "B) Mikst selülaritenin", "C) Lenfosit predominant tipte", "D) Lenfosit fakir tipte", "E) Nodüler lenfosit predominant tipte"],
+      "correct_answer": "A) Nodüler skleroz tipinde",
+      "explanation": "Nodüler skleroz tipinde kollajen bantlarla çevrili nodüller içinde 'lakünöz hücreler' izlenir. Bu hücreler formalin fiksasyonu sırasında sitoplazmalarının geri çekilmesiyle oluşan geniş, boş görünümlü RS hücre varyantlarıdır.",
+      "story_hint": "💡 PROFESÖR NOTU: HL nodüler skleroz = lakünöz hücre + kollajen bandlar; mediastinal kitle gençlerde tipik."
+    },
+    {
+      "id": "patoloji_pv3-094",
+      "case": "Soru:(Patoloji) Anaplastik büyük hücreli lenfoma (ALCL) tanısında ALK (anaplastik lenfoma kinaz) ekspresyonunun klinik önemi nedir?",
+      "options": ["A) ALK+ ALCL daha genç hastalarda görülür ve prognoz ALK- olanlara göre çok daha iyidir", "B) ALK+ ALCL kötü prognozludur ve standart kemoterapiye yanıt vermez", "C) ALK ekspresyonu B hücreli lenfomada görülür", "D) ALK+ ALCL yaşlı hastalarda sık ve agresif seyirlidir", "E) ALK+ ve ALK- ALCL arasında prognoz farkı yoktur"],
+      "correct_answer": "A) ALK+ ALCL daha genç hastalarda görülür ve prognoz ALK- olanlara göre çok daha iyidir",
+      "explanation": "ALCL'de t(2;5) translokasyonuyla NPM-ALK füzyon proteini oluşur. ALK+ hastalar genellikle daha genç (<30 yaş) olup 5 yıllık sağkalım ALK+ için ~%70, ALK- için ~%40'tır. ALK inhibitörleri (crizotinib) bu hastalarda kullanılabilir.",
+      "story_hint": "💡 PROFESÖR NOTU: ALCL = CD30+ T hücreli lenfoma; ALK+ = genç + iyi prognoz; ALK- = yaşlı + kötü prognoz."
+    },
+    {
+      "id": "patoloji_pv3-095",
+      "case": "Soru:(Patoloji) Serebral amiloid anjiopati (CAA) neden oluşur ve hangi komplikasyona yol açar?",
+      "options": ["A) Beta-amiloidin serebral damar duvarlarında birikmesi; spontan lober intraserebral kanama", "B) Ateroskleroz; laküner infarkt", "C) Vaskülit; diffüz kortikal hasar", "D) Hipertansiyon; bazal ganglion kanaması", "E) Embolizm; orta serebral arter infarktüsü"],
+      "correct_answer": "A) Beta-amiloidin serebral damar duvarlarında birikmesi; spontan lober intraserebral kanama",
+      "explanation": "CAA'da Abeta (beta-amiloid) kortikal ve leptomeningeal damarlarda birikir; damar duvarı bütünlüğünü bozarak lober (özellikle oksipital ve parietal) kanama riskini artırır. Yaşlılarda ve Alzheimer hastalarında sıktır.",
+      "story_hint": "💡 PROFESÖR NOTU: CAA = beta-amiloid + damar duvarı + lober kanama; bazal gangliyon = HT; serebellum = hemanjiyoblastom."
+    },
+    {
+      "id": "patoloji_pv3-096",
+      "case": "Soru:(Patoloji) Kolorektal kanserde mikrosatellit instabilitesi (MSI) neden oluşur ve MSI-yüksek (MSI-H) tümörlerin prognozu nasıldır?",
+      "options": ["A) DNA uyumsuzluk onarım (MMR) gen inaktivasyonu; MSI-H tümörler evre II-III'de daha iyi prognoza sahip ve immünoterapiye yanıt verir", "B) MMR gen amplifikasyonu; MSI-H tümörler kötü prognozlu", "C) KRAS mutasyonu; MSI durumuyla ilgisi yoktur", "D) TP53 mutasyonu; MSI-H kötü prognoz işareti", "E) APC mutasyonu; MSI-H tümörler daha az agresif ama tedaviye yanıtsız"],
+      "correct_answer": "A) DNA uyumsuzluk onarım (MMR) gen inaktivasyonu; MSI-H tümörler evre II-III'de daha iyi prognoza sahip ve immünoterapiye yanıt verir",
+      "explanation": "Lynch sendromu ve sporadik CRC'de MLH1, MSH2, MSH6, PMS2 gen inaktivasyonu MSI'ya yol açar. MSI-H tümörler daha fazla neoantijen üreterek güçlü immün yanıt tetikler; bu da anti-PD-1 immünoterapisine (pembrolizumab) yanıtı açıklar.",
+      "story_hint": "💡 PROFESÖR NOTU: MSI-H CRC = MMR eksik + iyi prognoz + immünoterapi yanıtlı; sağ kolon yerleşim + müsinöz histoloji sık."
+    },
+    {
+      "id": "patoloji_pv3-097",
+      "case": "Soru:(Patoloji) İnfektif endokarditte (IE) vejetasyonların histolojik bileşimi nedir ve steril trombotik (non-bakteriyel) endokarditle farkı nedir?",
+      "options": ["A) IE: fibrin + trombosit + bakteri + nötrofil; NBTE: fibrin + trombosit, bakteri yok, ince, kapak hasarı minimal", "B) IE: sadece trombosit + fibrin; NBTE: bakteri + lökosit", "C) İkisi histolojik olarak ayırt edilemez", "D) IE: sadece lenfosit infiltrasyonu; NBTE: nötrofil baskın", "E) IE: kapağı tutmaz; NBTE: kapak destruksiyon yapar"],
+      "correct_answer": "A) IE: fibrin + trombosit + bakteri + nötrofil; NBTE: fibrin + trombosit, bakteri yok, ince, kapak hasarı minimal",
+      "explanation": "İnfektif endokarditte vejetasyonlar büyük, düzensiz, kapak destruktif yapıda olup içlerinde bakteri kolonileri ve nötrofiller izlenir. NBTE (marantik endokardit) ise ince, steril, kapak kapanma çizgisine dizilmiş birikimlerdir; maligni ve SLE ile ilişkilidir.",
+      "story_hint": "💡 PROFESÖR NOTU: IE=büyük destruktif vejetasyon+bakteri; Libman-Sacks=SLE+her iki yüz; NBTE=kanser+ince vejetasyon."
+    },
+    {
+      "id": "patoloji_pv3-098",
+      "case": "Soru:(Patoloji) Herediter hemokromatozda hangi organlarda demir birikimi en sık ve klinik tablo nasıl şekillenir?",
+      "options": ["A) Karaciğer, pankreas, kalp, eklemler ve deri; siroz + diyabet + kardiyomiyopati + artropati + bronz pigmentasyon", "B) Böbrek ve dalak; böbrek yetmezliği ve hipersplenizm", "C) Beyin ve karaciğer; demans ve siroz", "D) Kemik iliği ve lenf nodları; aplastik anemi", "E) Akciğer ve karaciğer; fibrozis"],
+      "correct_answer": "A) Karaciğer, pankreas, kalp, eklemler ve deri; siroz + diyabet + kardiyomiyopati + artropati + bronz pigmentasyon",
+      "explanation": "Herediter hemokromatozda (HFE gen mutasyonu) intestinal demir emilimi artarak organlarda birikir. 'Bronz diyabet' terimi siroz + diyabet + bronzlaşma triadını tanımlar. Patolojide Prusya mavisi boyasıyla hemosiderin birikimi gösterilir.",
+      "story_hint": "💡 PROFESÖR NOTU: Hemokromatoz = HFE mutasyonu + bronz diyabet + Prusya mavisi+ demir birikimi + HCC riski."
+    },
+    {
+      "id": "patoloji_pv3-099",
+      "case": "Soru:(Patoloji) 'Apoptoz' ve 'nekroptoz' arasındaki temel mekanistik fark nedir?",
+      "options": ["A) Apoptoz: enerji bağımlı, kaspaz aracılı, inflamasyon yok; Nekroptoz: RIPK3/MLKL aracılı, plazma membran yıkımı, inflamasyon var", "B) Apoptoz: inflamasyon yapar; Nekroptoz: inflamasyon yapmaz", "C) Apoptoz: sadece dış yolakla gerçekleşir; Nekroptoz: sadece iç yolakla", "D) Apoptoz ve nekroptoz arasında mekanistik fark yoktur", "E) Nekroptoz: kaspaz-8 bağımlı; Apoptoz: kaspaz-8 bağımsız"],
+      "correct_answer": "A) Apoptoz: enerji bağımlı, kaspaz aracılı, inflamasyon yok; Nekroptoz: RIPK3/MLKL aracılı, plazma membran yıkımı, inflamasyon var",
+      "explanation": "Nekroptoz programlı nekroz biçimidir; kaspaz inhibisyonu durumunda RIPK1-RIPK3-MLKL ekseni aktive olur ve plazma membranı yıkımıyla hücre içeriği dışarı sızarak inflamasyon tetikler. Apoptozda membran bütünlüğü korunur, inflamasyon olmaz.",
+      "story_hint": "💡 PROFESÖR NOTU: Hücre ölümü tipleri: Apoptoz (kaspaz+, inflamasyonsuz) → Nekroptoz (RIPK3/MLKL, inflamasyonlu) → Ferroptoz (demir+lipid oksidasyon)."
+    },
+    {
+      "id": "patoloji_pv3-100",
+      "case": "Soru:(Patoloji) 40 yaşında erkek hastada bilateral hiler lenfadenopati, serum ACE yüksekliği ve göz tutulumu (üveit) saptanıyor. Lenf nodu biyopsisinde non-kazeifiye granülomlar görülüyor. Doğru tanı ve ayırıcı tanı nedir?",
+      "options": ["A) Sarkoidoz; ayırıcı tanı: tüberküloz (kazeifiye granülom yapar), lenfoma, fungal enfeksiyon", "B) Tüberküloz; ayırıcı tanı: sarkoidoz, histoplazmoz", "C) Hodgkin lenfoma; ayırıcı tanı: non-Hodgkin lenfoma, sarkoidoz", "D) Wegener granülomatozisi; ayırıcı tanı: sarkoidoz, ANCA vaskülit", "E) Histoplazmoz; ayırıcı tanı: sarkoidoz, kriptokokkoz"],
+      "correct_answer": "A) Sarkoidoz; ayırıcı tanı: tüberküloz (kazeifiye granülom yapar), lenfoma, fungal enfeksiyon",
+      "explanation": "Bilateral hiler adenopati + ACE yüksekliği + üveit + non-kazeifiye granülom = sarkoidoz. TB granülomu kazeifiye nekroz içerir (Löwenstein-Jensen kültürü ve PCR ile ayrılır). Sarkoidozda %90 akciğer tutulumu, %25 göz tutulumu izlenir. Tedavi genellikle sistemik kortikosteroid.",
+      "story_hint": "💡 PROFESÖR NOTU: Sarkoidoz = non-kazeifiye granülom + ACE↑ + bilateral hiler adenopati + üveit; TB = kazeifiye + PPD+ + gece terlemesi."
     }
   ]
 }

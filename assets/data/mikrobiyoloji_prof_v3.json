@@ -1,137 +1,812 @@
 {
+  "id": "mikrobiyoloji_prof_v3",
   "subject": "Mikrobiyoloji",
-  "type": "prof_v3",
-  "source": "mikrobiyoloji_100_prof_v3.txt",
-  "cards": [
+  "chapter": "Mikrobiyoloji Profesör Soruları V3",
+  "topic": "Mikrobiyoloji TUS Soruları",
+  "sub_topic": "Profesör Açıklamalı Sorular - Set 3",
+  "content_summary": "100 adet profesör açıklamalı Mikrobiyoloji sorusu - 3. Set",
+  "flashcards": [],
+  "tus_spots": [],
+  "clinical_cases": [
     {
       "id": "mikro_pv3-001",
-      "question": "Özellikle çocuklarda görülen \"Hücresel İmmün Yetmezlik\" durumlarında (örn: DiGeorge Sendromu) hangi aşının uygulanması kontrendikedir?",
-      "options": [
-        "A) BCG ve KKK (Canlı aşılar)",
-        "B) Hepatit B",
-        "C) Tetanos",
-        "D) Kuduz",
-        "E) Boğmaca (Cansız)"
-      ],
+      "case": "Soru:(Mikrobiyoloji) Özellikle çocuklarda görülen 'Hücresel İmmün Yetmezlik' durumlarında (örn: DiGeorge Sendromu) hangi aşının uygulanması kontrendikedir?",
+      "options": ["A) BCG ve KKK (Canlı aşılar)", "B) Hepatit B", "C) Tetanos", "D) Kuduz", "E) Boğmaca (Cansız)"],
       "correct_answer": "A) BCG ve KKK (Canlı aşılar)",
-      "explanation": "Hücresel bağışıklığı zayıf olan bireylerde canlı aşılar (varicella, kızamık, BCG vb.) yaygın enfeksiyona neden olabileceği için yapılmamalıdır."
+      "explanation": "Hücresel bağışıklığı zayıf olan bireylerde canlı aşılar (varicella, kızamık, BCG vb.) yaygın enfeksiyona neden olabileceği için yapılmamalıdır.",
+      "story_hint": "💡 PROFESÖR NOTU: Canlı aşılar = immün yetmezlikte tehlikeli. DiGeorge = T hücre eksikliği → BCG ve KKK kontrendike."
     },
     {
       "id": "mikro_pv3-002",
-      "question": "\"Mavi cerahat\" (blue pus) oluşturan ve kistik fibrozis hastalarının akciğerlerinde kronik enfeksiyona yol açan non-fermentatif bakteri hangisidir?",
-      "options": [
-        "A) Pseudomonas aeruginosa",
-        "B) Klebsiella pneumoniae",
-        "C) Burkholderia cepacia",
-        "D) Stenotrophomonas maltophilia",
-        "E) Acinetobacter baumannii"
-      ],
+      "case": "Soru:(Mikrobiyoloji) 'Mavi cerahat' (blue pus) oluşturan ve kistik fibrozis hastalarının akciğerlerinde kronik enfeksiyona yol açan non-fermentatif bakteri hangisidir?",
+      "options": ["A) Pseudomonas aeruginosa", "B) Klebsiella pneumoniae", "C) Burkholderia cepacia", "D) Stenotrophomonas maltophilia", "E) Acinetobacter baumannii"],
       "correct_answer": "A) Pseudomonas aeruginosa",
-      "explanation": "Pseudomonas, ürettiği piyosiyanin pigmenti ile mavi-yeşil renk oluşturur ve multirezistan bir fırsatçıdır."
+      "explanation": "Pseudomonas, ürettiği piyosiyanin pigmenti ile mavi-yeşil renk oluşturur ve multirezistan bir fırsatçıdır.",
+      "story_hint": "💡 PROFESÖR NOTU: Mavi-yeşil pus = Pseudomonas. KF hastası = Pseudomonas + Burkholderia. Piyosiyanin = mavi pigment."
     },
     {
       "id": "mikro_pv3-003",
-      "question": "HIV tanısında \"tarama\" testi olarak kullanılan ELISA'da saptanan antikorlar genellikle hangi viral proteine karşıdır?",
-      "options": [
-        "A) gp120 ve gp41",
-        "B) p24",
-        "C) Reverse Transcriptase",
-        "D) Integrase",
-        "E) Protease"
-      ],
+      "case": "Soru:(Mikrobiyoloji) HIV tanısında 'tarama' testi olarak kullanılan ELISA'da saptanan antikorlar genellikle hangi viral proteine karşıdır?",
+      "options": ["A) gp120 ve gp41", "B) p24", "C) Reverse Transcriptase", "D) Integrase", "E) Protease"],
       "correct_answer": "A) gp120 ve gp41",
-      "explanation": "Tarama testlerinde zarf glikoproteinlerine (gp120/41) karşı antikorlar aranır. p24 ise erken dönemde saptanan antijendir."
+      "explanation": "Tarama testlerinde zarf glikoproteinlerine (gp120/41) karşı antikorlar aranır. p24 ise erken dönemde saptanan antijendir.",
+      "story_hint": "💡 PROFESÖR NOTU: ELISA = gp120/41 antikorları. p24 = erken antijen. Western blot = doğrulama testi."
     },
     {
       "id": "mikro_pv3-004",
-      "question": "Midede üreaz aktivitesi ile amonyak oluşturarak asit ortamda hayatta kalan Gram negatif spiral bakteri hangisidir?",
-      "options": [
-        "A) Helicobacter pylori",
-        "B) Campylobacter jejuni",
-        "C) Vibrio cholerae",
-        "D) Salmonella typhi",
-        "E) Shigella sonnei"
-      ],
+      "case": "Soru:(Mikrobiyoloji) Midede üreaz aktivitesi ile amonyak oluşturarak asit ortamda hayatta kalan Gram negatif spiral bakteri hangisidir?",
+      "options": ["A) Helicobacter pylori", "B) Campylobacter jejuni", "C) Vibrio cholerae", "D) Salmonella typhi", "E) Shigella sonnei"],
       "correct_answer": "A) Helicobacter pylori",
-      "explanation": "H. pylori, üreaz enzimi sayesinde çevresinde alkali bir bulut oluşturarak mide asidinden korunur ve ülser/kanser riskini artırır."
+      "explanation": "H. pylori, üreaz enzimi sayesinde çevresinde alkali bir bulut oluşturarak mide asidinden korunur ve ülser/kanser riskini artırır.",
+      "story_hint": "💡 PROFESÖR NOTU: H. pylori = üreaz + midede yaşar. Nefes testi (C13/C14 üre) = tanı yöntemi. Peptik ülser + gastrik kanser ilişkisi."
     },
     {
       "id": "mikro_pv3-005",
-      "question": "Aşağıdaki antibiyotiklerden hangisi bakteri ribozomunun 50S alt birimine bağlanarak \"peptidil transferaz\" enzimini inhibe eder?",
-      "options": [
-        "A) Kloramfenikol",
-        "B) Tetrasiklin",
-        "C) Gentamisin",
-        "D) Eritromisin",
-        "E) Linezolid"
-      ],
+      "case": "Soru:(Mikrobiyoloji) Aşağıdaki antibiyotiklerden hangisi bakteri ribozomunun 50S alt birimine bağlanarak 'peptidil transferaz' enzimini inhibe eder?",
+      "options": ["A) Kloramfenikol", "B) Tetrasiklin", "C) Gentamisin", "D) Eritromisin", "E) Linezolid"],
       "correct_answer": "A) Kloramfenikol",
-      "explanation": "Kloramfenikol 50S'e bağlanıp peptit bağı oluşumunu engeller. Eritromisin ise translokasyonu engeller."
+      "explanation": "Kloramfenikol 50S'e bağlanıp peptit bağı oluşumunu engeller. Eritromisin ise translokasyonu engeller.",
+      "story_hint": "💡 PROFESÖR NOTU: 50S inhibitörleri: Kloramfenikol (peptidil transferaz), Eritromisin (translokasyon), Linezolid (başlangıç kompleksi). 30S: Tetrasiklin, Aminoglikozitler."
     },
     {
       "id": "mikro_pv3-006",
-      "question": "\"Karanlık alan mikroskobunda\" karakteristik hareketleri ile tanınan, Sifiliz (Frengi) etkeni spiroket hangisidir?",
-      "options": [
-        "A) Treponema pallidum",
-        "B) Borrelia burgdorferi",
-        "C) Leptospira interrogans",
-        "D) Spirillum minus",
-        "E) Ehrlichia chaffeensis"
-      ],
+      "case": "Soru:(Mikrobiyoloji) 'Karanlık alan mikroskobunda' karakteristik hareketleriyle tanınan, Sifiliz (Frengi) etkeni spiroket hangisidir?",
+      "options": ["A) Treponema pallidum", "B) Borrelia burgdorferi", "C) Leptospira interrogans", "D) Spirillum minus", "E) Ehrlichia chaffeensis"],
       "correct_answer": "A) Treponema pallidum",
-      "explanation": "T. pallidum rutin laboratuvar boyalarıyla boyanmaz; primer şankır evresinde karanlık alan mikroskopisi ile hareketli spiroketler görülerek tanı konur."
+      "explanation": "T. pallidum rutin laboratuvar boyalarıyla boyanmaz; primer şankır evresinde karanlık alan mikroskopisi ile hareketli spiroketler görülerek tanı konur.",
+      "story_hint": "💡 PROFESÖR NOTU: T. pallidum = boyama YOK → karanlık alan. Primer sifiliz = ağrısız şankır. VDRL/RPR = tarama, FTA-ABS = doğrulama."
     },
     {
       "id": "mikro_pv3-007",
-      "question": "Mantar hücre membranında bulunan \"Ergosterol\" sentezini \"squlene epoxidase\" enzimini inhibe ederek engelleyen antifungal ilaç grubu hangisidir?",
-      "options": [
-        "A) Allilaminler (Terbinafin)",
-        "B) Azoller (Flukonazol)",
-        "C) Poliyenler (Amfoterisin B)",
-        "D) Ekinokandinler (Kaspofungin)",
-        "E) Flusitozin"
-      ],
+      "case": "Soru:(Mikrobiyoloji) Mantar hücre membranında bulunan 'Ergosterol' sentezini 'squalene epoxidase' enzimini inhibe ederek engelleyen antifungal ilaç grubu hangisidir?",
+      "options": ["A) Allilaminler (Terbinafin)", "B) Azoller (Flukonazol)", "C) Poliyenler (Amfoterisin B)", "D) Ekinokandinler (Kaspofungin)", "E) Flusitozin"],
       "correct_answer": "A) Allilaminler (Terbinafin)",
-      "explanation": "Terbinafin skualen birikimine neden olarak fungisidal etki yapar. Azoller ise 14-alfa demetilaz enzimini inhibe eder."
+      "explanation": "Terbinafin skualen birikimine neden olarak fungisidal etki yapar. Azoller ise 14-alfa demetilaz enzimini inhibe eder.",
+      "story_hint": "💡 PROFESÖR NOTU: Terbinafin = skualen epoksidaz inhibitörü. Flukonazol = 14α-demetilaz. Amfoterisin B = ergosterole direkt bağlanır. Kaspofungin = β-glukan sentezi inhibe."
     },
     {
       "id": "mikro_pv3-008",
-      "question": "Özellikle pirinçli gıdaların oda sıcaklığında bekletilmesiyle oluşan \"emetik (kusma) tip\" gıda zehirlenmesinden hangi bakterinin ısıya dayanıklı toksini sorumludur?",
-      "options": [
-        "A) Bacillus cereus",
-        "B) Staphylococcus aureus",
-        "C) Clostridium botulinum",
-        "D) Salmonella enteritidis",
-        "E) Listeria monocytogenes"
-      ],
+      "case": "Soru:(Mikrobiyoloji) Özellikle pirinçli gıdaların oda sıcaklığında bekletilmesiyle oluşan 'emetik (kusma) tip' gıda zehirlenmesinden hangi bakterinin ısıya dayanıklı toksini sorumludur?",
+      "options": ["A) Bacillus cereus", "B) Staphylococcus aureus", "C) Clostridium botulinum", "D) Salmonella enteritidis", "E) Listeria monocytogenes"],
       "correct_answer": "A) Bacillus cereus",
-      "explanation": "B. cereus pirinçte çoğalabilir ve ürettiği ısıya dirençli toksin, gıda tüketildikten 1-5 saat sonra kusmaya neden olur."
+      "explanation": "B. cereus pirinçte çoğalabilir ve ürettiği ısıya dirençli toksin, gıda tüketildikten 1-5 saat sonra kusmaya neden olur.",
+      "story_hint": "💡 PROFESÖR NOTU: B. cereus = 2 tip: Emetik (pirinç, 1-5 saat) + Diyareik (et/sebze, 8-16 saat). Emetik toksin ısıya dayanıklı = cereulide."
     },
     {
       "id": "mikro_pv3-009",
-      "question": "Hepatit B enfeksiyonunda \"pencere dönemi\" (window period) sırasında kanda saptanan tek serolojik işaret hangisidir?",
-      "options": [
-        "A) Anti-HBc IgM",
-        "B) HBsAg",
-        "C) Anti-HBs",
-        "D) HBeAg",
-        "E) Anti-HBe"
-      ],
+      "case": "Soru:(Mikrobiyoloji) Hepatit B enfeksiyonunda 'pencere dönemi' (window period) sırasında kanda saptanan tek serolojik işaret hangisidir?",
+      "options": ["A) Anti-HBc IgM", "B) HBsAg", "C) Anti-HBs", "D) HBeAg", "E) Anti-HBe"],
       "correct_answer": "A) Anti-HBc IgM",
-      "explanation": "HBsAg kaybolup anti-HBs'nin henüz oluşmadığı dönemde core (çekirdek) antikoru olan Anti-HBc IgM tanıda kritiktir."
+      "explanation": "HBsAg kaybolup anti-HBs'nin henüz oluşmadığı dönemde core (çekirdek) antikoru olan Anti-HBc IgM tanıda kritiktir.",
+      "story_hint": "💡 PROFESÖR NOTU: Pencere dönemi = HBsAg(-), Anti-HBs(-), sadece Anti-HBc IgM(+). 'Tek pencerede kalan anti-HBc IgM'."
     },
     {
       "id": "mikro_pv3-010",
-      "question": "Difteri (Kuşpalazı) etkeni C. diphtheriae'nin toksin üretme yeteneği kazanması için hangi olayın gerçekleşmesi şarttır?",
-      "options": [
-        "A) Lizojenik faz enfeksiyonu (Beta-faj)",
-        "B) Plazmid aktarımı",
-        "C) Transformasyon",
-        "D) Transpozisyon",
-        "E) Mutasyon"
-      ],
-      "correct_answer": "A) Lizojenik faz enfeksiyonu (Beta-faj)",
-      "explanation": "Difteri toksini geni (tox geni) bir bakteriyofaj tarafından taşınır. Sadece bu faja sahip suşlar hastalık yapıcı toksin üretebilir."
+      "case": "Soru:(Mikrobiyoloji) Difteri (Kuşpalazı) etkeni C. diphtheriae'nin toksin üretme yeteneği kazanması için hangi olayın gerçekleşmesi şarttır?",
+      "options": ["A) Lizojenik faj enfeksiyonu (Beta-faj)", "B) Plazmid aktarımı", "C) Transformasyon", "D) Transpozisyon", "E) Mutasyon"],
+      "correct_answer": "A) Lizojenik faj enfeksiyonu (Beta-faj)",
+      "explanation": "Difteri toksini geni (tox geni) bir bakteriyofaj tarafından taşınır. Sadece bu faja sahip suşlar hastalık yapıcı toksin üretebilir.",
+      "story_hint": "💡 PROFESÖR NOTU: Difteri toksini = Beta-faj ile taşınır. Toksin = EF-2 (elongasyon faktörü-2) ribozilasyonu → protein sentezi durur."
+    },
+    {
+      "id": "mikro_pv3-011",
+      "case": "Soru:(Mikrobiyoloji) 28 yaşında kadın hasta, cinsel ilişki sonrası üretral akıntı ve dizüri şikayetiyle başvuruyor. Gram boyamada gram negatif çift koklar (diplokoklar) görülüyor. Bu hastada en olası etken hangisidir?",
+      "options": ["A) Neisseria gonorrhoeae", "B) Chlamydia trachomatis", "C) Treponema pallidum", "D) Haemophilus ducreyi", "E) Trichomonas vaginalis"],
+      "correct_answer": "A) Neisseria gonorrhoeae",
+      "explanation": "Gram negatif diplokoklar üretral akıntıda görüldüğünde gonore (bel soğukluğu) düşünülmelidir. N. gonorrhoeae hücre içi (PNL'ler içinde) yerleşimiyle tanınır.",
+      "story_hint": "💡 PROFESÖR NOTU: Gonore = Gram(-) diplokok, hücre içi. Chlamydia = hücre içi zorunlu parazit, Gram boyamada görülmez. İkisi birlikte tedavi et = Seftriakson + Azitromisin."
+    },
+    {
+      "id": "mikro_pv3-012",
+      "case": "Soru:(Mikrobiyoloji) MRSA (Metisilin dirençli Staphylococcus aureus) enfeksiyonlarında direnç mekanizması nedir?",
+      "options": ["A) mecA geni ile PBP2a proteini sentezi", "B) Beta-laktamaz enzimi üretimi", "C) Dış membran geçirgenlik kaybı", "D) Efluks pompası aktivasyonu", "E) Hedef değişikliği (16S rRNA mutasyonu)"],
+      "correct_answer": "A) mecA geni ile PBP2a proteini sentezi",
+      "explanation": "MRSA'da mecA geni SCCmec adlı mobil genetik element üzerindedir. PBP2a, beta-laktam antibiyotiklere düşük afinite gösterir ve hücre duvarı sentezi devam eder.",
+      "story_hint": "💡 PROFESÖR NOTU: MRSA = mecA geni → PBP2a. Tedavi = Vankomisin veya Linezolid. Tüm beta-laktamlara dirençlidir."
+    },
+    {
+      "id": "mikro_pv3-013",
+      "case": "Soru:(Mikrobiyoloji) Streptococcus pyogenes (Grup A Streptokok) ile geçirilen farenjit tedavi edilmezse hangi non-süpüratif komplikasyon gelişebilir?",
+      "options": ["A) Akut romatizmal ateş", "B) Glomerülonefrit sadece", "C) Endokardit", "D) Lenfoma", "E) Hepatit"],
+      "correct_answer": "A) Akut romatizmal ateş",
+      "explanation": "GAS farenjitinin tedavi edilmemesi akut romatizmal ateşe (ARA) yol açabilir. Cilt enfeksiyonları ise nefrite neden olur ama ARA'ya yol açmaz.",
+      "story_hint": "💡 PROFESÖR NOTU: GAS farenjit → ARA (kalp tutulumu). GAS impetigo → APSGN (böbrek). ARA önlemek için penisilin 10 gün şart."
+    },
+    {
+      "id": "mikro_pv3-014",
+      "case": "Soru:(Mikrobiyoloji) Yenidoğanda menenjit ve sepsise yol açan, vajinal florada bulunan Grup B Streptokok'un (GBS) bilimsel adı nedir?",
+      "options": ["A) Streptococcus agalactiae", "B) Streptococcus pneumoniae", "C) Streptococcus pyogenes", "D) Enterococcus faecalis", "E) Listeria monocytogenes"],
+      "correct_answer": "A) Streptococcus agalactiae",
+      "explanation": "GBS (Grup B Streptokok = S. agalactiae) perinatal dönemde anneden bebeğe geçer ve erken başlangıçlı yenidoğan sepsisi/menenjitinin önemli bir etkenidir.",
+      "story_hint": "💡 PROFESÖR NOTU: GBS = S. agalactiae. Yenidoğan menenjiti: GBS + E.coli + Listeria. Gebelikte 35-37. haftada tarama kültürü yapılır."
+    },
+    {
+      "id": "mikro_pv3-015",
+      "case": "Soru:(Mikrobiyoloji) Kanlı ishale neden olan, verotoksin (Shiga benzeri toksin) üreten ve hemolitik üremik sendroma (HÜS) yol açan E. coli serotipi hangisidir?",
+      "options": ["A) E. coli O157:H7 (EHEC)", "B) E. coli O55:H7 (EPEC)", "C) E. coli (ETEC)", "D) E. coli (EIEC)", "E) E. coli (EAEC)"],
+      "correct_answer": "A) E. coli O157:H7 (EHEC)",
+      "explanation": "EHEC (enterohemoraji E. coli) O157:H7 serotipi verotoksin üretir. HÜS = mikroanjiyopatik hemolitik anemi + trombositopeni + akut böbrek yetmezliği.",
+      "story_hint": "💡 PROFESÖR NOTU: EHEC O157:H7 = kanlı ishal + HÜS. Antibiyotik kontrendike (toksin salınımı artar). Çiğ hamburger kaynağı."
+    },
+    {
+      "id": "mikro_pv3-016",
+      "case": "Soru:(Mikrobiyoloji) Kolera (Vibrio cholerae) hastalığında pirinç suyu görünümünde ishal yapan toksin hangi mekanizmayla çalışır?",
+      "options": ["A) Gs proteini ADP-ribozilasyonu → cAMP artışı → Cl⁻ sekresyonu", "B) Gi proteini inhibisyonu", "C) PLC aktivasyonu → IP3 artışı", "D) İyon kanalı açılımı", "E) Na⁺/K⁺ ATPaz inhibisyonu"],
+      "correct_answer": "A) Gs proteini ADP-ribozilasyonu → cAMP artışı → Cl⁻ sekresyonu",
+      "explanation": "Kolera toksini A alt birimi Gs proteinini kalıcı aktif hale getirir → cAMP yükselir → PKA aktive → CFTR kanalı açılır → Cl⁻ ve su intestinal lümene dökülür.",
+      "story_hint": "💡 PROFESÖR NOTU: Kolera toksini = cAMP artışı (Gs ADP-ribozilasyonu). Benzer: LT toksini (ETEC). Pertussis toksini = Gi ADP-ribozilasyonu."
+    },
+    {
+      "id": "mikro_pv3-017",
+      "case": "Soru:(Mikrobiyoloji) 45 yaşında erkek hasta, iki haftadır süren ateş, gece terlemeleri ve bel ağrısı şikayetiyle başvuruyor. Çiğ keçi sütü içtiği öğreniliyor. Tanı için Rose-Bengal testi pozitif. En olası etken hangisidir?",
+      "options": ["A) Brucella melitensis", "B) Coxiella burnetii", "C) Francisella tularensis", "D) Yersinia pestis", "E) Leptospira interrogans"],
+      "correct_answer": "A) Brucella melitensis",
+      "explanation": "Bruselloz çiğ keçi/koyun sütü veya peyniri ile bulaşır. Dalgalı ateş, gece terlemeleri ve bel ağrısı (sakroileit) klasik klinik tablodur. Rose-Bengal aglütinasyon testi tarama testi olarak kullanılır.",
+      "story_hint": "💡 PROFESÖR NOTU: Brusella = çiğ süt/peynir → dalgalı ateş + sakroileit. Tedavi: Doksisiklin + Rifampisin (6 hafta). Veteriner, çoban meslek hastalığı."
+    },
+    {
+      "id": "mikro_pv3-018",
+      "case": "Soru:(Mikrobiyoloji) Tüberküloz (TB) etkeni Mycobacterium tuberculosis hangi özelliği nedeniyle 'aside dirençli' (asido-rezistan) olarak kabul edilir?",
+      "options": ["A) Hücre duvarında mikolik asit içermesi", "B) Spor oluşturması", "C) Kapsül yapısı", "D) LPS (lipopolisakkarit) tabakası", "E) Peptidoglikan kalınlığı"],
+      "correct_answer": "A) Hücre duvarında mikolik asit içermesi",
+      "explanation": "Mikobakterilerin hücre duvarındaki mikolik asitler, aside direnci sağlar. Ziehl-Neelsen boyamasında kırmızı boyanıp asitle muameleye rağmen renk vermezler.",
+      "story_hint": "💡 PROFESÖR NOTU: ARB = mikolik asit. ZN boyama = kırmızı. Mikobakteri = Gram boyama YOK (ne (+) ne (-)). Hücre içi parazit (makrofaj içinde)."
+    },
+    {
+      "id": "mikro_pv3-019",
+      "case": "Soru:(Mikrobiyoloji) Primer tüberkülozda akciğerde oluşan 'Ghon kompleksi' neyin birleşiminden oluşur?",
+      "options": ["A) Ghon odağı + hilar lenf nodu", "B) Kavite + plevral efüzyon", "C) Apeks granülomu + kalsifikasyon", "D) Bronşiektazi + fibrozis", "E) Milier nodüller + atelektazi"],
+      "correct_answer": "A) Ghon odağı + hilar lenf nodu",
+      "explanation": "Primer TB'de akciğer parankimindeki primer odak (Ghon odağı) ile bölgesel hiler lenf nodunun birlikte kalsifiye olmasıyla Ghon kompleksi oluşur.",
+      "story_hint": "💡 PROFESÖR NOTU: Ghon kompleksi = Ghon odağı (alt lob) + hiler LAP. Reaktivasyon TB = apeks (üst lob) tutulumu. Primer TB genellikle alt lobda."
+    },
+    {
+      "id": "mikro_pv3-020",
+      "case": "Soru:(Mikrobiyoloji) Lepra (Cüzzam) hastalığında lepromatöz tip ile tüberkuloid tip arasındaki en önemli fark hangisidir?",
+      "options": ["A) Lepromatöz tipte hücresel immünite baskılı, basillerle dolu makrofajlar (köpük hücreleri) vardır", "B) Tüberkuloid tipte daha çok organ tutulumu olur", "C) Lepromatöz tipte lepromin testi pozitiftir", "D) Tüberkuloid tipte çok sayıda basil görülür", "E) İkisi arasında klinik fark yoktur"],
+      "correct_answer": "A) Lepromatöz tipte hücresel immünite baskılı, basillerle dolu makrofajlar (köpük hücreleri) vardır",
+      "explanation": "Lepromatöz leprada T hücre yanıtı yetersizdir → basiller kontrolsüz çoğalır → köpük hücreleri (Virchow hücreleri) oluşur. Tüberkuloid tipte güçlü hücresel immünite → az basil.",
+      "story_hint": "💡 PROFESÖR NOTU: Tüberkuloid = güçlü immünite, az basil, lepromin (+). Lepromatöz = zayıf immünite, çok basil, lepromin (-), sistemik tutulum."
+    },
+    {
+      "id": "mikro_pv3-021",
+      "case": "Soru:(Mikrobiyoloji) Lyme hastalığının etkeni olan Borrelia burgdorferi'yi insana bulaştıran vektör hangisidir?",
+      "options": ["A) Ixodes scapularis (geyik kenesi)", "B) Dermacentor variabilis", "C) Anopheles mosquito", "D) Culex mosquito", "E) Phlebotomus papatasi"],
+      "correct_answer": "A) Ixodes scapularis (geyik kenesi)",
+      "explanation": "Lyme hastalığı Ixodes cinsi keneler (geyik kenesi) tarafından bulaştırılır. Karakteristik bulgu erken dönemde 'Eritema migrans' (göçen eritem) döküntüsüdür.",
+      "story_hint": "💡 PROFESÖR NOTU: Lyme = Ixodes kenesi. 3 evre: 1-Eritema migrans, 2-kardiyak/nörolojik, 3-artrit. Tedavi: Doksisiklin."
+    },
+    {
+      "id": "mikro_pv3-022",
+      "case": "Soru:(Mikrobiyoloji) Chlamydia trachomatis'in hangi serotipi (L1, L2, L3) lenfogranüloma venereum (LGV) hastalığına yol açar?",
+      "options": ["A) L1, L2, L3", "B) A, B, Ba, C", "C) D, E, F, G, H, I, J, K", "D) Tüm serotipleri", "E) Hiçbiri"],
+      "correct_answer": "A) L1, L2, L3",
+      "explanation": "Chlamydia trachomatis serotipleri: A-C = trahom (körlük), D-K = genital enfeksiyonlar, L1-L3 = lenfogranüloma venereum (ağrılı inguinal LAP, fistüller).",
+      "story_hint": "💡 PROFESÖR NOTU: C. trachomatis serotipleri: A-C=Trahom, D-K=Genital, L1-3=LGV. Hücre içi zorunlu parazit, Gram boyamaz."
+    },
+    {
+      "id": "mikro_pv3-023",
+      "case": "Soru:(Mikrobiyoloji) Q ateşi (Query fever) etkeni Coxiella burnetii'nin en önemli epidemiyolojik özelliği nedir?",
+      "options": ["A) Vektör gerekmeksizin aerosol yoluyla bulaşabilmesi", "B) Sadece kene ısırması ile bulaşması", "C) Veneryal yolla bulaşması", "D) Yalnızca kontamine su ile bulaşması", "E) Vertikal bulaşmanın temel yol olması"],
+      "correct_answer": "A) Vektör gerekmeksizin aerosol yoluyla bulaşabilmesi",
+      "explanation": "C. burnetii diğer Rickettsialardan farklı olarak vektör (kene) gerektirmeden enfekte hayvan plasentası/yününden aerosolle doğrudan insana bulaşabilir.",
+      "story_hint": "💡 PROFESÖR NOTU: Q ateşi = tek Rickettsia = keneye gerek yok, aerosol. Weil-Felix negatif. Endokardit yapabilir. Hayvan çiftçisi meslek hastalığı."
+    },
+    {
+      "id": "mikro_pv3-024",
+      "case": "Soru:(Mikrobiyoloji) Mycoplasma pneumoniae'nin neden olduğu 'atipik pnömoni' diğer bakteriyel pnömonilerden nasıl ayrılır?",
+      "options": ["A) Hücre duvarı olmadığı için beta-laktam antibiyotiklere doğal dirençli olması", "B) Gram boyamada gram pozitif görünmesi", "C) Kültürde kolay üremesi", "D) Yüksek ateş ve lökositoz yapması", "E) Pnömokokal pnömoniye özdeş klinik tablo"],
+      "correct_answer": "A) Hücre duvarı olmadığı için beta-laktam antibiyotiklere doğal dirençli olması",
+      "explanation": "Mycoplasma'nın hücre duvarı yoktur → peptidoglikan hedef almayan beta-laktamlar etkisizdir. Tedavide makrolid veya tetrasiklin kullanılır.",
+      "story_hint": "💡 PROFESÖR NOTU: Mycoplasma = hücre duvarı YOK = beta-laktam RESİSTAN. Soğuk aglütinin (+). Yürüyen pnömoni. Tedavi: Azitromisin/Doksisiklin."
+    },
+    {
+      "id": "mikro_pv3-025",
+      "case": "Soru:(Mikrobiyoloji) Herpes simpleks virüs (HSV) tip 1 ile HSV tip 2 arasındaki en klasik klinik ayrım hangisidir?",
+      "options": ["A) HSV-1 orolabial, HSV-2 genital bölgeyi tercih eder", "B) HSV-1 genital, HSV-2 orolabial bölgeyi etkiler", "C) İkisi arasında anatomik bölge farkı yoktur", "D) HSV-2 ensefalite neden olmaz", "E) HSV-1 latent kalmaz"],
+      "correct_answer": "A) HSV-1 orolabial, HSV-2 genital bölgeyi tercih eder",
+      "explanation": "HSV-1 trigeminal ganglionda, HSV-2 sakral ganglionda latent kalır. HSV-1 orolabial herpes ve ensefalit; HSV-2 genital herpes ve neonatal herpes ile ilişkilidir.",
+      "story_hint": "💡 PROFESÖR NOTU: HSV-1 = trigeminal gangliyon = ağız uçuğu + ensefalit. HSV-2 = sakral gangliyon = genital herpes + neonatal herpes. Tedavi: Asiklovir."
+    },
+    {
+      "id": "mikro_pv3-026",
+      "case": "Soru:(Mikrobiyoloji) Epstein-Barr virüsü (EBV) ile oluşan enfeksiyöz mononükleozda periferik kanda görülen karakteristik hücre hangisidir?",
+      "options": ["A) Reaktif (atipik) lenfositler (Downey hücreleri)", "B) Nötrofili", "C) Monositopeni", "D) Eosinofili", "E) Trombositoz"],
+      "correct_answer": "A) Reaktif (atipik) lenfositler (Downey hücreleri)",
+      "explanation": "EBV, B lenfositlerini enfekte eder; CD8+ T hücreleri bu enfekte B hücrelerine karşı reaktif olarak çoğalır ve periferik yaymada atipik lenfositler (Downey hücreleri) görülür.",
+      "story_hint": "💡 PROFESÖR NOTU: EBV = enfeksiyöz mono = atipik lenfositler. Monospot testi (heterofil antikor). Ampisillin verilirse döküntü oluşur. EBV = Burkitt lenfoması ve nazofarengeal karsinom."
+    },
+    {
+      "id": "mikro_pv3-027",
+      "case": "Soru:(Mikrobiyoloji) CMV (Sitomegalovirüs) enfeksiyonuna özgü 'baykuş gözü' (owl eye) görünümü histopatolojik olarak neyi temsil eder?",
+      "options": ["A) İntranükleer inklüzyon cisimcikleri içeren büyümüş hücreler", "B) Nekrotik alanlardaki dev hücreler", "C) Kapsüllü fungal elementler", "D) Granülomatöz reaksiyon", "E) Eozinofilik sitoplazmik inklüzyonlar"],
+      "correct_answer": "A) İntranükleer inklüzyon cisimcikleri içeren büyümüş hücreler",
+      "explanation": "CMV ile enfekte hücrelerde büyük intranükleer inklüzyon cisimcikleri, etrafında belirgin bir hale (halo) ile 'baykuş gözü' görünümü oluşturur.",
+      "story_hint": "💡 PROFESÖR NOTU: CMV = baykuş gözü inklüzyon. İmmün yetmezlikte tehlikeli (AIDS, transplant). Yenidoğanda CMV = situs inversus değil, sarılık+hepatosplenomegali."
+    },
+    {
+      "id": "mikro_pv3-028",
+      "case": "Soru:(Mikrobiyoloji) İnfluenza virüsünde 'antijenik kayma' (antigenic shift) ile 'antijenik sürüklenme' (antigenic drift) arasındaki temel fark nedir?",
+      "options": ["A) Kayma = yeni HA/NA segmenti rekombinasyonu (pandemi), Sürüklenme = nokta mutasyonu (mevsimsel epidemi)", "B) Sürüklenme = yeni HA/NA kombinasyonu (pandemi), Kayma = nokta mutasyonu", "C) İkisi de aynı mekanizma ile olur", "D) Kayma yalnızca influenza B'de görülür", "E) Sürüklenme yalnızca influenza A'da görülür"],
+      "correct_answer": "A) Kayma = yeni HA/NA segmenti rekombinasyonu (pandemi), Sürüklenme = nokta mutasyonu (mevsimsel epidemi)",
+      "explanation": "Antijenik kayma (shift) farklı influenza suşlarının gen segmentlerini değiştirmesiyle yeni pandemi potansiyelli virüs oluşturur. Sürüklenme (drift) ise nokta mutasyonlarla mevsimsel epidemilere yol açar.",
+      "story_hint": "💡 PROFESÖR NOTU: Shift = Büyük değişim = PANDEMİ. Drift = Küçük değişim = EPİDEMİ. Influenza A = her ikisi. Influenza B = sadece drift."
+    },
+    {
+      "id": "mikro_pv3-029",
+      "case": "Soru:(Mikrobiyoloji) Kızamık (Measles) virüsüne özgü 'Koplik lekeleri' nerede görülür ve klinik önemi nedir?",
+      "options": ["A) Yanak mukozasında görülen beyaz lekeler, döküntüden 1-2 gün önce ortaya çıkar", "B) Damak üzerinde hemorajik lekeler, döküntüyle eş zamanlı", "C) Dil dorsal yüzeyinde sarı plaklar", "D) Tonsil üzerinde beyaz membran", "E) Gingival kenarda kırmızı çizgiler"],
+      "correct_answer": "A) Yanak mukozasında görülen beyaz lekeler, döküntüden 1-2 gün önce ortaya çıkar",
+      "explanation": "Koplik lekeleri kızamığa özgüdür ve prodromal dönemde alt ikinci molar dişlerin karşısındaki bukkal mukozada görülür. Patognomoniktir.",
+      "story_hint": "💡 PROFESÖR NOTU: Koplik lekeleri = kızamık patognomonik. Yanak mukozası, döküntüden ÖNCE. 3K: Koplik + Konjunktivit + Koryza + döküntü."
+    },
+    {
+      "id": "mikro_pv3-030",
+      "case": "Soru:(Mikrobiyoloji) Kuduz (Rabies) virüsünün sinir sistemine ulaşma mekanizması ve histopatolojik tanı bulgusu nedir?",
+      "options": ["A) Retrograd aksonal transport + Negri cisimcikleri", "B) Hematojen yayılım + Cowdry A inklüzyonları", "C) Lenfatik yayılım + baykuş gözü", "D) Kronik demyelinizasyon + Lewy cisimcikleri", "E) Transsinaptik geçiş + Hirano cisimcikleri"],
+      "correct_answer": "A) Retrograd aksonal transport + Negri cisimcikleri",
+      "explanation": "Kuduz virüsü ısırık bölgesinden nöronal retrograd aksonal transport ile MSS'e ulaşır. Beyin dokusunda (özellikle Ammon boynuzu) sitoplazmik Negri cisimcikleri görülür.",
+      "story_hint": "💡 PROFESÖR NOTU: Kuduz = retrograd transport. Negri cisimciği = sitoplazmik, Ammon boynuzu. Ölüm oranı %100 klinik sonrası. Profilaksi = aşı + HRIG."
+    },
+    {
+      "id": "mikro_pv3-031",
+      "case": "Soru:(Mikrobiyoloji) Hepatit A virüsü ile Hepatit E virüsü arasındaki en önemli epidemiyolojik fark hangisidir?",
+      "options": ["A) Hepatit E gebelerde fulminan seyir ve yüksek mortalite gösterir", "B) Hepatit A kronikleşebilirken Hepatit E hiç kronikleşmez", "C) Hepatit E fekal-oral yolla bulaşmaz", "D) Hepatit A'nın aşısı yoktur", "E) İkisi arasında epidemiyolojik fark yoktur"],
+      "correct_answer": "A) Hepatit E gebelerde fulminan seyir ve yüksek mortalite gösterir",
+      "explanation": "Hepatit E (HEV) genel nüfusta hafif seyreder ancak gebelerde, özellikle 3. trimesterde, %20 mortalite ile fulminan hepatit yapabilir. Her ikisi de fekal-oral yolla bulaşır ve kronikleşmez.",
+      "story_hint": "💡 PROFESÖR NOTU: HEV = gebe kadında tehlikeli (%20 mortalite). HAV = çocukta hafif, yetişkinde ağır. İkisi de fekal-oral, ikisi de kronikleşmez."
+    },
+    {
+      "id": "mikro_pv3-032",
+      "case": "Soru:(Mikrobiyoloji) Hepatit D virüsü (Delta virüs) için hangi ifade doğrudur?",
+      "options": ["A) Replikasyon için HBsAg'ye ihtiyaç duyar, yalnızca HBV ile birlikte enfeksiyon yapar", "B) Bağımsız olarak replike olabilir", "C) Hepatit C ile koenfeksiyon gerektirir", "D) RNA virüsü değildir", "E) Kronikleşme riski yoktur"],
+      "correct_answer": "A) Replikasyon için HBsAg'ye ihtiyaç duyar, yalnızca HBV ile birlikte enfeksiyon yapar",
+      "explanation": "HDV, eksiksiz viral partiküller oluşturmak için HBV'nin yüzey antijeni (HBsAg) ile sarılmak zorundadır. Bu nedenle HBV aşısı HDV'ye karşı da koruma sağlar.",
+      "story_hint": "💡 PROFESÖR NOTU: HDV = HBV paraziti. HBV+HDV koenfeksiyon = ağır akut. HBV+HDV süperenfeksiyon = kronik + fulminan. HBV aşısı = HDV'ye karşı da korur."
+    },
+    {
+      "id": "mikro_pv3-033",
+      "case": "Soru:(Mikrobiyoloji) Candida albicans'ın virülans faktörlerinden biri olan 'germ tüpü oluşumu' hangi amaçla kullanılır?",
+      "options": ["A) İnvazyon için hifa formuna geçiş; doku penetrasyonunu artırır", "B) Spor oluşumu", "C) Antifungal direnci", "D) Biyofilm oluşumu değil", "E) Toksin üretimi"],
+      "correct_answer": "A) İnvazyon için hifa formuna geçiş; doku penetrasyonunu artırır",
+      "explanation": "Candida albicans 37°C'de ve serum varlığında germ tüpü oluşturur. Bu mayadan hifaya geçiş (dimorfizm) doku invazyonunu kolaylaştırır ve virülansı artırır.",
+      "story_hint": "💡 PROFESÖR NOTU: Germ tüpü testi = C. albicans tanısı. Serumda 37°C = germ tüpü (+). Dimorfik: maya → hifa → invazyon."
+    },
+    {
+      "id": "mikro_pv3-034",
+      "case": "Soru:(Mikrobiyoloji) AIDS hastasında CD4 sayısı <100/mm³ olduğunda görülen Cryptococcus neoformans menenjitinin tanısında kullanılan en hızlı yöntem hangisidir?",
+      "options": ["A) Hint mürekkebi (Indian ink) preparatı ve BOS kriptokok antijen testi", "B) BOS kültürü (48-72 saat)", "C) Gram boyama", "D) Ziehl-Neelsen boyama", "E) MRI görüntüleme"],
+      "correct_answer": "A) Hint mürekkebi (Indian ink) preparatı ve BOS kriptokok antijen testi",
+      "explanation": "Hint mürekkebi preparatında kapsüllü maya hücreleri etrafında şeffaf hale görülür. BOS antijen testi ise çok duyarlı ve hızlıdır.",
+      "story_hint": "💡 PROFESÖR NOTU: Cryptococcus = India ink = kapsüllü maya. AIDS'te en sık fungal menenjit. Tedavi: Amfoterisin B + Flusitozin → Flukonazol idame."
+    },
+    {
+      "id": "mikro_pv3-035",
+      "case": "Soru:(Mikrobiyoloji) Aspergillus fumigatus'un neden olduğu invazif pulmoner aspergillozun en önemli risk faktörü hangisidir?",
+      "options": ["A) Uzun süreli nötropeni ve yüksek doz kortikosteroid kullanımı", "B) Diyabet mellitus", "C) Alkol kullanımı", "D) Sigara içiciliği", "E) Solid organ transplantasyonu (nötropeni olmaksızın)"],
+      "correct_answer": "A) Uzun süreli nötropeni ve yüksek doz kortikosteroid kullanımı",
+      "explanation": "İnvazif aspergilloz esas olarak nötropenik hastalarda (hematolojik malignite, kök hücre nakli) ve yüksek doz steroid kullananlarda görülür. Galaktomannan antijen testi tanıda kullanılır.",
+      "story_hint": "💡 PROFESÖR NOTU: Aspergillus = nötropeni riski. Septate hifalar, 45° dallanma. Galaktomannan testi. Vorikonazol = birinci seçenek tedavi."
+    },
+    {
+      "id": "mikro_pv3-036",
+      "case": "Soru:(Mikrobiyoloji) Plasmodium falciparum sıtmasını diğer Plasmodium türlerinden ayıran en önemli klinik özellik hangisidir?",
+      "options": ["A) Serebral sıtma ve ağır malaria yapabilmesi, tüm aşamalarda eritrositleri enfekte etmesi", "B) 48 saatlik ateş siklusu yapmaması", "C) Karaciğerde hipnozoite oluşturması", "D) Yalnızca genç eritrositleri tutması", "E) En uzun inkübasyon süresine sahip olması"],
+      "correct_answer": "A) Serebral sıtma ve ağır malaria yapabilmesi, tüm aşamalarda eritrositleri enfekte etmesi",
+      "explanation": "P. falciparum tüm eritrositleri (yaşlı-genç-orta) enfekte edebilir ve yüksek parazitemi yapar. Eritrositlerin kırmızı kan hücresine tutunması (sitoaderans) ile serebral sıtmaya yol açar.",
+      "story_hint": "💡 PROFESÖR NOTU: P. falciparum = en tehlikeli = serebral malaria. Hipnozoit yok. Klorokine direnç var. P. vivax ve P. ovale = hipnozoit (karaciğerde latent) = Primakın gerekli."
+    },
+    {
+      "id": "mikro_pv3-037",
+      "case": "Soru:(Mikrobiyoloji) Toxoplasma gondii'nin insanlarda hastalık yapmasında 'kedi' ne rol oynar?",
+      "options": ["A) Kediler kesin konaktır ve dışkıyla ookist atarak ortamı bulaştırır", "B) Kediler ara konaktır", "C) Kediler mekanik vektördür", "D) Kediler hastalığı insanlara doğrudan kan teması ile bulaştırır", "E) Kedilerin rolü yoktur"],
+      "correct_answer": "A) Kediler kesin konaktır ve dışkıyla ookist atarak ortamı bulaştırır",
+      "explanation": "Toxoplasma'nın cinsel üremesi yalnızca kedi bağırsağında olur (kesin konak). Kediler dışkıyla ookist atar. İnsanlara ookist alımı veya çiğ et (doku kisti) ile bulaşır.",
+      "story_hint": "💡 PROFESÖR NOTU: Toxoplasma = kedi kesin konak → ookist. İnsan = ara konak. Gebelikte önlem: Çiğ et yeme + kedi kumu değiştirme. AIDS'te ensefalit."
+    },
+    {
+      "id": "mikro_pv3-038",
+      "case": "Soru:(Mikrobiyoloji) Giardia intestinalis enfeksiyonunun en belirgin klinik özelliği olan yağlı ishalin mekanizması nedir?",
+      "options": ["A) Proksimal ince bağırsakta villüs yüzeyini kaplayarak yağ emilimini bozma (malabsorpsiyon)", "B) İnvazyonla kolon epitelini tahrip etme", "C) Enterotoksin salgılama", "D) Kan-mukus içeren ishal", "E) Karaciğer apsesi komplikasyonu"],
+      "correct_answer": "A) Proksimal ince bağırsakta villüs yüzeyini kaplayarak yağ emilimini bozma (malabsorpsiyon)",
+      "explanation": "Giardia, ince bağırsak lümeninde yaşar ve villüsleri mekanik olarak örterek ve yapışarak yağ + yağda çözünen vitamin emilimini bozar. İnvazyon yapmaz.",
+      "story_hint": "💡 PROFESÖR NOTU: Giardia = malabsorpsiyon + steatore. Kist formu = enfeksiyöz. Dağcı ishal (kirli su). Tanı: Dışkı mikroskopisi veya GI antijen testi. Tedavi: Metronidazol."
+    },
+    {
+      "id": "mikro_pv3-039",
+      "case": "Soru:(Mikrobiyoloji) Entamoeba histolytica'nın neden olduğu amebik apse en sık hangi organda görülür ve içeriği nasıl tanımlanır?",
+      "options": ["A) Karaciğer, 'ançuez sosu' (hamsi ezmesi) görünümünde sarı-kahverengi nekrotik içerik", "B) Akciğer, pürülan içerik", "C) Beyin, berrak BOS", "D) Dalak, hemorajik içerik", "E) Böbrek, süt beyazı içerik"],
+      "correct_answer": "A) Karaciğer, 'ançuez sosu' (hamsi ezmesi) görünümünde sarı-kahverengi nekrotik içerik",
+      "explanation": "Amebik karaciğer apsesi tipik olarak sağ lobda yerleşir ve içeriği 'ançuez sosu' olarak tanımlanan sarı-kahverengi nekrotik materyaldir.",
+      "story_hint": "💡 PROFESÖR NOTU: E. histolytica = kolon (kanlı ishal, flask şekilli ülser) + karaciğer apsesi (ançuez sosu). Tedavi: Metronidazol + Lodoksikinol (lüminal)."
+    },
+    {
+      "id": "mikro_pv3-040",
+      "case": "Soru:(Mikrobiyoloji) Otoklavın sterilizasyondaki standart koşulları nelerdir?",
+      "options": ["A) 121°C, 15 psi, 15-20 dakika", "B) 160°C, 1 atm, 60 dakika", "C) 100°C, 1 atm, 30 dakika", "D) 134°C, 30 psi, 5 dakika", "E) 70°C, 15 psi, 60 dakika"],
+      "correct_answer": "A) 121°C, 15 psi, 15-20 dakika",
+      "explanation": "Otoklav (buhar basıncı sterilizasyonu) 121°C'de 15 psi (1 atm üzeri basınç) altında 15-20 dakika uygulanır. Sporları dahil tüm mikroorganizmaları yok eder.",
+      "story_hint": "💡 PROFESÖR NOTU: Otoklav = 121°C + 15 psi + 15-20 dk = Sporları yok eder. Kuru ısı sterilizasyonu = 160-170°C + 1-2 saat. ETO = ısıya dayanıksız malzeme."
+    },
+    {
+      "id": "mikro_pv3-041",
+      "case": "Soru:(Mikrobiyoloji) Prion hastalıklarının (Creutzfeldt-Jakob, kuru, BSE) geleneksel sterilizasyon yöntemlerine neden dirençli olduğu düşünülmektedir?",
+      "options": ["A) Nükleik asit içermeyen, yalnızca anormal katlanmış prion proteini (PrPSc) içerdiğinden", "B) Çok kalın hücre duvarına sahip olduğundan", "C) Spor oluşturduğundan", "D) DNA onarım mekanizmaları olduğundan", "E) Kapsül yapısı nedeniyle"],
+      "correct_answer": "A) Nükleik asit içermeyen, yalnızca anormal katlanmış prion proteini (PrPSc) içerdiğinden",
+      "explanation": "Prionlar nükleik asit içermez; protein yapısındaki PrPSc normal PrPc'yi yanlış katlamaya zorlar. Isı, UV ve kimyasal dezenfektanlara son derece dirençlidirler.",
+      "story_hint": "💡 PROFESÖR NOTU: Prion = sadece protein, DNA/RNA YOK. PrPSc anormal katlanmış. Otoklavla yok edilmez. CJD + Kuru + BSE (deli dana) = prion hastalığı."
+    },
+    {
+      "id": "mikro_pv3-042",
+      "case": "Soru:(Mikrobiyoloji) Tetanoz toksini hangi mekanizmayla spastik paralizi oluşturur?",
+      "options": ["A) İnhibitör nöronlarda (Renshaw hücresi) glisin/GABA salınımını bloke eder", "B) Asetilkolin salınımını engeller", "C) Motor nöron akson potansiyelini bloke eder", "D) Nöromüsküler kavşakta depolarizasyon yapar", "E) NMDA reseptörlerini aktive eder"],
+      "correct_answer": "A) İnhibitör nöronlarda (Renshaw hücresi) glisin/GABA salınımını bloke eder",
+      "explanation": "Tetanospazmin (tetanoz toksini), omurilikteki inhibitör internöronlara retrograd aksiyon ile ulaşır ve SNARE proteinlerini keserek glisin/GABA salınımını engeller → spastik paralizi.",
+      "story_hint": "💡 PROFESÖR NOTU: Tetanoz toksini = inhibitör nöron → glisin/GABA bloke → SPASTİK paralizi. Botulinum = motor nöron → asetilkolin bloke → FLASK paralizi."
+    },
+    {
+      "id": "mikro_pv3-043",
+      "case": "Soru:(Mikrobiyoloji) Clostridium botulinum toksini hangi mekanizmayla flask (gevşek) paralizi yapar?",
+      "options": ["A) Presinaptik nöromüsküler kavşakta asetilkolin salınımını bloke eder", "B) Postsinaptik asetilkolin reseptörlerini bloke eder", "C) İnhibitör nöronlarda GABA salınımını artırır", "D) Kas membranında depolarizasyon yapar", "E) Motor nöron akson iletimini keser"],
+      "correct_answer": "A) Presinaptik nöromüsküler kavşakta asetilkolin salınımını bloke eder",
+      "explanation": "Botulinum toksini SNARE proteinlerini proteoliz ile keserek asetilkolin vesiküllerinin membranla füzyonunu engeller → ACh salınamaz → flask paralizi.",
+      "story_hint": "💡 PROFESÖR NOTU: Botulinum = ACh salınamaz = FLASK paralizi. Bebek botulinizmi = bal. Gıda: Ev konserveleri. Tedavi: Antitoksin (trivalent A,B,E)."
+    },
+    {
+      "id": "mikro_pv3-044",
+      "case": "Soru:(Mikrobiyoloji) Clostridium difficile'nin neden olduğu psödomembranöz kolit için en önemli risk faktörü hangisidir?",
+      "options": ["A) Antibiyotik kullanımı (özellikle klindamisin, ampisilin, sefalosporinler)", "B) NSAID kullanımı", "C) İmmün yetmezlik", "D) Yaşlılık tek başına", "E) Diyete"],
+      "correct_answer": "A) Antibiyotik kullanımı (özellikle klindamisin, ampisilin, sefalosporinler)",
+      "explanation": "Antibiyotik kullanımı normal kolon florasını bozarak C. difficile'nin kolonize olmasına ve toksin A (enterotoksin) + toksin B (sitotoksin) üretmesine zemin hazırlar.",
+      "story_hint": "💡 PROFESÖR NOTU: C. difficile = antibiyotik sonrası ishal. Toksin A+B. Psödomembranöz kolit. Tanı: Dışkı toksin testi. Tedavi: Oral Vankomisin veya Fidaksomisin."
+    },
+    {
+      "id": "mikro_pv3-045",
+      "case": "Soru:(Mikrobiyoloji) Klebsiella pneumoniae pnömonisinin karakteristik radyolojik ve klinik özelliği hangisidir?",
+      "options": ["A) Üst lob konsolidasyonu, 'buldozer' işareti (interlobar fissürün aşağı itilmesi), geç yaşta alkol bağımlısı erkek", "B) Alt lob bronkopnömoni, genç hasta", "C) Bilateral interstisyel infiltratlar, bağışıklığı normal hasta", "D) Plevral efüzyon ön planda, ateş yok", "E) Hiler lenfadenopati + kalsifikasyon"],
+      "correct_answer": "A) Üst lob konsolidasyonu, 'buldozer' işareti (interlobar fissürün aşağı itilmesi), geç yaşta alkol bağımlısı erkek",
+      "explanation": "Klebsiella pnömonisi tipik olarak yaşlı alkol bağımlısı erkeklerde üst lobda ağır konsolidasyon yapar ve artmış eksüda nedeniyle fissürü aşağı iter (buldozer işareti).",
+      "story_hint": "💡 PROFESÖR NOTU: Klebsiella = alkol bağımlısı + üst lob + buldozer işareti + kanlı-jöle balgam. Nosokomiyal pnömoninin de önemli etkeni."
+    },
+    {
+      "id": "mikro_pv3-046",
+      "case": "Soru:(Mikrobiyoloji) Legionella pneumophila'nın epidemiyolojik kaynağı ve bulaşma yolu hangisidir?",
+      "options": ["A) Klima/su soğutma kuleleri ve aerosol yoluyla, kişiden kişiye bulaşmaz", "B) Kişiden kişiye damlacık yoluyla", "C) Kontamine gıda tüketimi ile", "D) Kene ısırması ile", "E) Toprak teması ile"],
+      "correct_answer": "A) Klima/su soğutma kuleleri ve aerosol yoluyla, kişiden kişiye bulaşmaz",
+      "explanation": "Legionella, otel/hastane klima sistemleri ve su soğutma kulelerinde ürer. Aerosol yoluyla solunum yoluna girer. Kişiden kişiye bulaşım olmaz.",
+      "story_hint": "💡 PROFESÖR NOTU: Legionella = klima/su kulesi aerosol. Kişiden kişiye BULAŞMAZ. Legionella antijen testi idrarda. Tedavi: Azitromisin/Florokinolon."
+    },
+    {
+      "id": "mikro_pv3-047",
+      "case": "Soru:(Mikrobiyoloji) Neisseria meningitidis menenjitinde profilaksi amacıyla temaslılara verilen antibiyotik hangisidir?",
+      "options": ["A) Rifampisin veya Siprofloksasin", "B) Penisilin G", "C) Vankomisin", "D) Kloramfenikol", "E) Doksisiklin"],
+      "correct_answer": "A) Rifampisin veya Siprofloksasin",
+      "explanation": "N. meningitidis temaslılarına (yakın temas, aile bireyleri) Rifampisin (2 gün) veya tek doz Siprofloksasin ile kemopofilaksi uygulanır.",
+      "story_hint": "💡 PROFESÖR NOTU: Menenjit profilaksisi = Rifampisin 2 gün veya Siprofloksasin tek doz. Tedavi = Penisilin G veya Seftriakson. Peteki + ateş + boyun sertliği = acil."
+    },
+    {
+      "id": "mikro_pv3-048",
+      "case": "Soru:(Mikrobiyoloji) Salmonella typhi'nin neden olduğu tifo hastalığında 'gül lekeleri' (rose spots) nerede görülür?",
+      "options": ["A) Karın ön duvarında pembe maküler döküntüler", "B) Palmar yüzeylerde peteşiler", "C) Yüzde kelebek tarzı eritem", "D) Ekstremitelerde veziküller", "E) Dil üzerinde sarı plaklar"],
+      "correct_answer": "A) Karın ön duvarında pembe maküler döküntüler",
+      "explanation": "Tifo hastalığının 2. haftasında karakteristik olarak karın ön duvarında 2-4 mm çaplı, baskıyla soluk alan pembe makülopapüller döküntüler (gül lekeleri) görülür.",
+      "story_hint": "💡 PROFESÖR NOTU: Tifo = gül lekeleri (karın). Bağıl bradikardi + karaciğer dalak büyümesi. Widal testi. Tanı: Kan kültürü (1. hafta), dışkı kültürü (2-3. hafta)."
+    },
+    {
+      "id": "mikro_pv3-049",
+      "case": "Soru:(Mikrobiyoloji) Staphylococcus aureus'un neden olduğu toksik şok sendromunda (TSS) süperantijen olarak hangi toksin rol oynar?",
+      "options": ["A) Toksik şok sendromu toksini-1 (TSST-1)", "B) Eksofoliatin (eksfoliyatif toksin)", "C) Panton-Valentine lökosidin", "D) Enterotoksin B", "E) Koagülaz"],
+      "correct_answer": "A) Toksik şok sendromu toksini-1 (TSST-1)",
+      "explanation": "TSST-1, MHC II-TCR arasına bağlanan süperantijen olarak T hücrelerini nonspesifik aktive eder → masif sitokin fırtınası → şok, ateş, döküntü.",
+      "story_hint": "💡 PROFESÖR NOTU: TSS = TSST-1 süperantijen. Tampon kullanımı + ateş + diffüz eritem + hipotansiyon. Eksofoliatin = Stafilokokal haşlanmış deri sendromu (SSSS)."
+    },
+    {
+      "id": "mikro_pv3-050",
+      "case": "Soru:(Mikrobiyoloji) HPV (Human Papillomavirus) hangi serotipleri servikal kansere yol açar ve hangi serotipleri genital siğil (kondilom) oluşturur?",
+      "options": ["A) Kanser: HPV 16, 18 (yüksek riskli); Kondilom: HPV 6, 11 (düşük riskli)", "B) Kanser: HPV 6, 11; Kondilom: HPV 16, 18", "C) Tüm HPV serotipleri kanser yapar", "D) HPV 31, 33 kondilom; HPV 6, 11 kanser", "E) HPV serotipleri arasında fark yoktur"],
+      "correct_answer": "A) Kanser: HPV 16, 18 (yüksek riskli); Kondilom: HPV 6, 11 (düşük riskli)",
+      "explanation": "HPV 16 ve 18 yüksek riskli tipler olup servikal kanserin %70'inden sorumludur. HPV 6 ve 11 düşük riskli olup genital siğil (kondiloma aküminata) yapar.",
+      "story_hint": "💡 PROFESÖR NOTU: HPV 16/18 = kanser. HPV 6/11 = siğil. Gardasil aşısı = 4'lü (6,11,16,18). HPV, E6 (p53 baskılar) ve E7 (Rb baskılar) onkoproteinleri ile kanser yapar."
+    },
+    {
+      "id": "mikro_pv3-051",
+      "case": "Soru:(Mikrobiyoloji) 35 yaşında HIV pozitif erkek hasta, CD4 sayısı 50/mm³, ateş ve gece terlemeleri şikayetiyle başvuruyor. Kan kültüründe aside dirençli basil üriyor. Hangi etken düşünülmelidir?",
+      "options": ["A) Mycobacterium avium complex (MAC)", "B) Mycobacterium tuberculosis", "C) Mycobacterium leprae", "D) Nocardia asteroides", "E) Rhodococcus equi"],
+      "correct_answer": "A) Mycobacterium avium complex (MAC)",
+      "explanation": "CD4 <50/mm³ olan AIDS hastalarında yaygın MAC enfeksiyonu görülür. Ateş, gece terlemeleri, kilo kaybı ve kan kültüründe ARB üremesi ile karakterizedir. TB'den farklı olarak akciğer tutulumu ikincil plana geçer.",
+      "story_hint": "💡 PROFESÖR NOTU: CD4 <50 = MAC riski. Profilaksi: Azitromisin haftada 1. Tedavi: Klaritromisin + Etambutol. CD4 eşiği hatırla: <200=PCP, <100=Cryptococcus, <50=MAC."
+    },
+    {
+      "id": "mikro_pv3-052",
+      "case": "Soru:(Mikrobiyoloji) Poliovirus (Çocuk Felci) hangi hücreleri tercihli olarak enfekte eder ve hastalığın kalıcı felç mekanizması nedir?",
+      "options": ["A) Ön boynuz motor nöronları; nöron ölümü ile flask paralizi", "B) Arka boynuz duyusal nöronları; his kaybı", "C) Serebral korteks; spastik paralizi", "D) Periferik sinir miyelin kılıfı; demyelinizasyon", "E) Kas hücreleri direkt; miyozit"],
+      "correct_answer": "A) Ön boynuz motor nöronları; nöron ölümü ile flask paralizi",
+      "explanation": "Poliovirus spinal kordun ön boynuzundaki motor nöronları tercihli olarak enfekte eder ve tahrip eder. Bu nöronların ölümü kalıcı flask (gevşek) paralizi ile sonuçlanır.",
+      "story_hint": "💡 PROFESÖR NOTU: Polio = ön boynuz motor nöron = flask paralizi. Asimetrik, ağrısız. OPV (canlı) ve IPV (ölü) aşıları. Eradikasyon aşamasında."
+    },
+    {
+      "id": "mikro_pv3-053",
+      "case": "Soru:(Mikrobiyoloji) Rotavirüs ishalinin en sık görüldüğü yaş grubu ve patogenez mekanizması nedir?",
+      "options": ["A) 6 ay - 2 yaş arası çocuklar; ince bağırsak villüs epitelini tahrip ederek osmotik ishal", "B) Yetişkinler; enterotoksin ile sekretuar ishal", "C) Tüm yaş grupları eşit; invazyon ile kanlı ishal", "D) Yenidoğanlar; karaciğer tutulumu ile sarılık", "E) Okul çağı çocukları; nörotoksin ile kusma"],
+      "correct_answer": "A) 6 ay - 2 yaş arası çocuklar; ince bağırsak villüs epitelini tahrip ederek osmotik ishal",
+      "explanation": "Rotavirüs 6 ay-2 yaş arası çocuklarda viral gastroenteritlerin en sık nedenidir. Villüs epitel hücrelerini tahrip ederek malabsorpsiyon ve osmotik ishal yapar.",
+      "story_hint": "💡 PROFESÖR NOTU: Rotavirüs = bebek ishali. Kış ayları. Rota = tekerlek görünümü (EM). Oral rehidratasyon tedavisi. Aşısı var (Rotarix, RotaTeq)."
+    },
+    {
+      "id": "mikro_pv3-054",
+      "case": "Soru:(Mikrobiyoloji) Varisella Zoster Virüsü (VZV) primer enfeksiyondan sonra nerede latent kalır ve reaktivasyon ile hangi hastalığa yol açar?",
+      "options": ["A) Dorsal kök ganglionu → Herpes zoster (zona)", "B) Trigeminal gangliyon → Herpes labialis", "C) Frontal korteks → Ensefalit", "D) Karaciğer → Hepatit", "E) Kemik iliği → Aplastik anemi"],
+      "correct_answer": "A) Dorsal kök ganglionu → Herpes zoster (zona)",
+      "explanation": "VZV primer enfeksiyon (suçiçeği) sonrası dorsal kök ganglionlarında latent kalır. İlerleyen yaşta veya immünosüpresyonda reaktive olarak dermatom boyunca ağrılı veziküler döküntü (herpes zoster = zona) oluşturur.",
+      "story_hint": "💡 PROFESÖR NOTU: VZV latent = dorsal kök gangliyon. Zona = dermatomal, tek taraflı, ağrılı. Zoster oftalmik → Hutchinson işareti (burun ucu vezikülleri) = göz tutulumu."
+    },
+    {
+      "id": "mikro_pv3-055",
+      "case": "Soru:(Mikrobiyoloji) Sifilizin sekonder evresinde görülen döküntünün en karakteristik özelliği nedir?",
+      "options": ["A) Palmar ve plantar yüzeyleri de tutan yaygın makülopapüler döküntü", "B) Yalnızca gövdede görülen veziküler döküntü", "C) Yüzde kelebek tarzı eritem", "D) Ekstremitelerde purpurik döküntü", "E) Saçlı deride lokalize döküntü"],
+      "correct_answer": "A) Palmar ve plantar yüzeyleri de tutan yaygın makülopapüler döküntü",
+      "explanation": "Sekonder sifilizin en karakteristik özelliği avuç içi ve ayak tabanlarını da tutan yaygın makülopapüler döküntüdür. Bu lokalizasyon sifilizi diğer egzantemlerdenyaygın döküntülerden ayırır.",
+      "story_hint": "💡 PROFESÖR NOTU: Sekonder sifiliz = avuç içi + ayak tabanı döküntüsü (çok nadir başka hastalıkta). Alopesi, kondiloma lata, lenfadenopati de görülür."
+    },
+    {
+      "id": "mikro_pv3-056",
+      "case": "Soru:(Mikrobiyoloji) Gram boyamada 'Gram değişken' ya da zayıf boyanan, üre pozitif, oxidaz negatif ve laktoz fermente etmeyen Klebsiella pneumoniae'yi E. coli'den ayıran en önemli özellik nedir?",
+      "options": ["A) Klebsiella hareketsiz ve kapsüllüdür; E. coli hareketli ve kapsülsüzdür", "B) Klebsiella laktoz fermente eder, E. coli etmez", "C) E. coli hareketsiz, Klebsiella hareketlidir", "D) İkisi arasında biyokimyasal fark yoktur", "E) Klebsiella hemoliz yapar, E. coli yapmaz"],
+      "correct_answer": "A) Klebsiella hareketsiz ve kapsüllüdür; E. coli hareketli ve kapsülsüzdür",
+      "explanation": "Klebsiella belirgin kapsül ve hareketsizlik ile E. coli'den ayrılır. Klebsiella'nın büyük mukoid kapsülü virülansa katkıda bulunur ve antibiyotik direncini artırır.",
+      "story_hint": "💡 PROFESÖR NOTU: Klebsiella = hareketsiz + kapsül + mukoid koloni. E.coli = hareketli + kapsülsüz. Her ikisi de laktoz fermente eder."
+    },
+    {
+      "id": "mikro_pv3-057",
+      "case": "Soru:(Mikrobiyoloji) Sterilizasyon yöntemleri arasında 'etilen oksit gazı (ETO)' ne zaman tercih edilir?",
+      "options": ["A) Isı ve neme dayanıksız malzemelerin sterilizasyonunda (plastik, endoskop, elektronik)", "B) Metal aletlerin rutin sterilizasyonunda", "C) Sıvı solüsyonların sterilizasyonunda", "D) Laboratuvar ortamının hava sterilizasyonunda", "E) Deri antisepsisinde"],
+      "correct_answer": "A) Isı ve neme dayanıksız malzemelerin sterilizasyonunda (plastik, endoskop, elektronik)",
+      "explanation": "ETO düşük sıcaklıkta (37-55°C) etkili olduğundan ısıya dayanıksız plastik, kauçuk, optik aletler ve elektronik cihazların sterilizasyonunda tercih edilir. Ancak kanserojen ve uzun havalandırma gerektirir.",
+      "story_hint": "💡 PROFESÖR NOTU: ETO = ısıya dayanıksız malzeme. Uzun süre (birkaç saat) + havalandırma gerekli. Kanserojen! Alternatif: H2O2 plazma sterilizasyonu."
+    },
+    {
+      "id": "mikro_pv3-058",
+      "case": "Soru:(Mikrobiyoloji) Trypanosoma brucei'nin neden olduğu uyku hastalığının vektörü ve klinik özellikleri nelerdir?",
+      "options": ["A) Tsetse sineği; ateş, lenfadenopati, ilerleyici nörolojik bozukluk (uyku hali)", "B) Anopheles sivrisineği; periyodik ateş", "C) Reduviid bug; Chagas kalp tutulumu", "D) Phlebotomus sineksi; deri lezyonları", "E) Blackfly (Simulium); gözde fibrozis"],
+      "correct_answer": "A) Tsetse sineği; ateş, lenfadenopati, ilerleyici nörolojik bozukluk (uyku hali)",
+      "explanation": "Afrika uyku hastalığı Tsetse sineği ile bulaşır. Winterbottom belirtisi (arka servikal LAP), ilerleyen dönemde MSS tutulumu ile aşırı uyku hali, koma ve ölüm görülür.",
+      "story_hint": "💡 PROFESÖR NOTU: T. brucei = Tsetse = Afrika uyku hastalığı. T. cruzi = Reduviid bug = Chagas (Güney Amerika, kalp tutulumu). Vektörleri karıştırma."
+    },
+    {
+      "id": "mikro_pv3-059",
+      "case": "Soru:(Mikrobiyoloji) Leishmania donovani'nin neden olduğu visseral leyşmanyozda (kala-azar) hangi klinik bulgular karakteristiktir?",
+      "options": ["A) Ateş, masif splenomegali, pansitopeni ve hipergamaglobulinemi", "B) Deri ülserleri, lokalize lenfadenopati", "C) Solunum yetmezliği, pnömoni", "D) Sarılık, karaciğer yetmezliği", "E) Nörolojik bulgular, bilinç bozukluğu"],
+      "correct_answer": "A) Ateş, masif splenomegali, pansitopeni ve hipergamaglobulinemi",
+      "explanation": "Visseral leyşmanyozda parazitler retiküloendotelyal sistemi (karaciğer, dalak, kemik iliği) tutar. Masif splenomegali, ateş, pansitopeni ve yüksek immünoglobulinler karakteristiktir.",
+      "story_hint": "💡 PROFESÖR NOTU: Kala-azar = masif splenomegali + pansitopeni. Phlebotomus (tatarcık) vektör. Türkiye'de endemik. Tedavi: Amfoterisin B liposomal."
+    },
+    {
+      "id": "mikro_pv3-060",
+      "case": "Soru:(Mikrobiyoloji) Strongyloides stercoralis'in diğer bağırsak helmintlerinden farkı olan 'otoenfeksiyon' ne anlama gelir?",
+      "options": ["A) Larvalar bağırsakta ergin olmadan tekrar konak derisi/mukozasından penetre olabilir, dışarıya çıkmadan yaşam döngüsü tamamlanır", "B) İki farklı konakta gelişim zorunludur", "C) Vücutta aseksüel üreme olmaz", "D) Yalnızca dışkıyla atılan yumurtalar enfeksiyözdür", "E) Konak dışında uzun süre canlı kalır"],
+      "correct_answer": "A) Larvalar bağırsakta ergin olmadan tekrar konak derisi/mukozasından penetre olabilir, dışarıya çıkmadan yaşam döngüsü tamamlanır",
+      "explanation": "Strongyloides'te rhabditiform larvalar bağırsakta filariform (enfeksiyöz) larvalara dönüşebilir ve bağırsak mukozasından veya perianal deriden tekrar penetre olarak otoenfeksiyon yapar. İmmün yetmezlikte hiperenfeksiyon sendromu gelişebilir.",
+      "story_hint": "💡 PROFESÖR NOTU: Strongyloides = otoenfeksiyon. İmmün yetmezlikte hiperenfeksiyon (larvaların organlara yayılımı). Tedavi: İvermektin."
+    },
+    {
+      "id": "mikro_pv3-061",
+      "case": "Soru:(Mikrobiyoloji) Taenia solium (domuz tenya) ile Taenia saginata (sığır tenya) arasındaki en önemli klinik fark nedir?",
+      "options": ["A) T. solium sistiserkoz (beyin, göz, kas kist lezyonları) yapabilir; T. saginata yapamaz", "B) T. saginata sistiserkoz; T. solium yapamaz", "C) Her ikisi de sistiserkoz yapar", "D) T. saginata daha tehlikelidir", "E) İkisi arasında klinik fark yoktur"],
+      "correct_answer": "A) T. solium sistiserkoz (beyin, göz, kas kist lezyonları) yapabilir; T. saginata yapamaz",
+      "explanation": "T. solium'un yumurtaları yutulduğunda insan ara konak rolü üstlenir ve larvalar (sistiserkler) beyin, kas ve gözde kist oluşturur (nörosistiserkoz). T. saginata'da bu durum görülmez.",
+      "story_hint": "💡 PROFESÖR NOTU: T. solium = nörosistiserkoz riski (insanlar hem kesin hem ara konak olabilir). T. saginata = sadece bağırsak solucanı. Domuz eti = T. solium."
+    },
+    {
+      "id": "mikro_pv3-062",
+      "case": "Soru:(Mikrobiyoloji) İnfektif endokarditte Streptococcus viridans en sık hangi yapıyı etkiler ve patogenezi nedir?",
+      "options": ["A) Daha önce hasarlı kalp kapakçıklarına tutunur; düşük virülanslı, subakut seyir", "B) Normal kapakçıklara tutunur; yüksek virülanslı, akut seyir", "C) Yalnızca triküspit kapağı tutar", "D) Miyokard dokusunu direkt invaze eder", "E) Perikarda tutunur, endokardı etkilemez"],
+      "correct_answer": "A) Daha önce hasarlı kalp kapakçıklarına tutunur; düşük virülanslı, subakut seyir",
+      "explanation": "Viridans streptokoklar ağız florasından dental işlemler sırasında kana karışır ve önceden hasarlı (romatizmal, konjenital) kapakçıklara yapışarak subakut bakteriyel endokardit yapar.",
+      "story_hint": "💡 PROFESÖR NOTU: Viridans = hasarlı kapak = subakut endokardit. S. aureus = normal kapak = akut endokardit. HACEK grubu = kültür-negatif endokardit."
+    },
+    {
+      "id": "mikro_pv3-063",
+      "case": "Soru:(Mikrobiyoloji) Akut bakteriyel menenjitte BOS bulgularının tipik özellikleri nelerdir?",
+      "options": ["A) Yüksek basınç, bulanık görünüm, artmış protein, düşük glukoz, nötrofil hakimiyeti", "B) Normal basınç, berrak görünüm, normal protein, normal glukoz, lenfosit hakimiyeti", "C) Yüksek basınç, ksantokromik, artmış protein, normal glukoz, eritrosit", "D) Düşük basınç, berrak, azalmış protein, düşük glukoz, monosit hakimiyeti", "E) Normal basınç, opak, normal protein, artmış glukoz, nötrofil"],
+      "correct_answer": "A) Yüksek basınç, bulanık görünüm, artmış protein, düşük glukoz, nötrofil hakimiyeti",
+      "explanation": "Bakteriyel menenjitte BOS: Artmış basınç, bulanık/pürülan görünüm, protein >100 mg/dL, glukoz <45 mg/dL (BOS/kan <0.4), >1000 hücre/mm³ PMN hakimiyeti.",
+      "story_hint": "💡 PROFESÖR NOTU: Bakteriyel menenjit BOS = BULANIKTIR, PMN↑, protein↑, glukoz↓. Viral = berrak, lenfosit↑, protein hafif↑, glukoz normal. TB menenjit = lenfosit + protein↑↑ + glukoz↓↓."
+    },
+    {
+      "id": "mikro_pv3-064",
+      "case": "Soru:(Mikrobiyoloji) Listeria monocytogenes enfeksiyonunun en riskli olduğu hasta grupları hangileridir?",
+      "options": ["A) Gebeler, yenidoğanlar, yaşlılar, immün yetmezlikli hastalar", "B) Sağlıklı genç yetişkinler", "C) Yalnızca AIDS hastaları", "D) Yalnızca transplant alıcıları", "E) Sigara içicileri"],
+      "correct_answer": "A) Gebeler, yenidoğanlar, yaşlılar, immün yetmezlikli hastalar",
+      "explanation": "Listeria soğukta büyüyebilir (psikrotrof) ve dondurucudan çıkarılan işlenmiş etler, pastörize edilmemiş peynirler ile bulaşır. Gebeler, yenidoğanlar ve immünsüprese kişilerde ciddi hastalık yapar.",
+      "story_hint": "💡 PROFESÖR NOTU: Listeria = soğukta ürer. Risk: gebe + yenidoğan + yaşlı. Yenidoğan menenjiti: Listeria + GBS + E. coli. Tedavi: Ampisilin."
+    },
+    {
+      "id": "mikro_pv3-065",
+      "case": "Soru:(Mikrobiyoloji) Erişkin dönemde görülen toplum kökenli pnömoninin en sık etkeni hangisidir?",
+      "options": ["A) Streptococcus pneumoniae", "B) Mycoplasma pneumoniae", "C) Haemophilus influenzae", "D) Klebsiella pneumoniae", "E) Staphylococcus aureus"],
+      "correct_answer": "A) Streptococcus pneumoniae",
+      "explanation": "S. pneumoniae, erişkinlerde toplum kökenli pnömoninin (TKP) en sık etkenidir (%30-40). Lobar konsolidasyon, pas renkli balgam ve rusty sputum klasik bulguları arasındadır.",
+      "story_hint": "💡 PROFESÖR NOTU: TKP en sık = S. pneumoniae. Rust-colored sputum + lobar pnömoni. Optochin duyarlı, safra çözünür. Kapsüllü = antifagositik. Aşısı: PCV13, PPSV23."
+    },
+    {
+      "id": "mikro_pv3-066",
+      "case": "Soru:(Mikrobiyoloji) Ascaris lumbricoides enfeksiyonunda Löffler sendromu hangi dönemde ve nasıl oluşur?",
+      "options": ["A) Larvaların akciğerden geçişi sırasında; eozinofilik pnömonit", "B) Bağırsakta ergin oluşumu sırasında; kanlı ishal", "C) Safra yoluna geçiş sırasında; kolanjit", "D) Beyne geçiş sırasında; ensefalit", "E) Karaciğere geçiş sırasında; apse"],
+      "correct_answer": "A) Larvaların akciğerden geçişi sırasında; eozinofilik pnömonit",
+      "explanation": "Ascaris larvaları karaciğer → kalp → akciğerler rotasını izler (Löffler migrasyonu). Akciğerlerde eozinofilik infiltrasyon ve geçici pnömonit tablosu (Löffler sendromu) oluşur.",
+      "story_hint": "💡 PROFESÖR NOTU: Löffler sendromu = Ascaris larva migrasyonu = akciğer. Eozinofili + geçici infiltrat. Tedavi: Albendazol veya Mebendazol."
+    },
+    {
+      "id": "mikro_pv3-067",
+      "case": "Soru:(Mikrobiyoloji) Bağışıklık sisteminde 'doğal öldürücü hücreler' (NK hücreler) nasıl çalışır?",
+      "options": ["A) MHC-I ekspresyonu azalmış hücreleri (virüs enfekte, tümör) öldürür; antikor veya antijen tanıma gerekmez", "B) Yalnızca MHC-II sunulan antijenlere karşı çalışır", "C) B hücre aktivasyonunu tetikler", "D) Makrofajları aktive eder ama direkt öldürmez", "E) Yalnızca bakterileri öldürür, virüse etkisizdir"],
+      "correct_answer": "A) MHC-I ekspresyonu azalmış hücreleri (virüs enfekte, tümör) öldürür; antikor veya antijen tanıma gerekmez",
+      "explanation": "NK hücreler 'missing self' mekanizmasıyla çalışır: Normal hücrelerde MHC-I NK'ı inhibe eder. Virüs enfekte veya tümör hücrelerinde MHC-I azaldığında NK aktivasyona geçer ve sitotoksik aktivite gösterir.",
+      "story_hint": "💡 PROFESÖR NOTU: NK = MHC-I azaldığında öldür. CD8 T hücresi = MHC-I artınca öldür. NK = doğal bağışıklık. ADCC: NK + antikor birlikte de öldürür."
+    },
+    {
+      "id": "mikro_pv3-068",
+      "case": "Soru:(Mikrobiyoloji) IgA antikorunun mukozal bağışıklıktaki rolü nedir?",
+      "options": ["A) Sekretuar IgA mukoza yüzeyinde patojenlerin epitele yapışmasını önler (nötralizasyon ve aglütinasyon)", "B) Kompleman aktivasyonu yapar", "C) Opsonizasyon ile fagositozu artırır", "D) Mast hücre degranülasyonunu tetikler", "E) T hücre aktivasyonunu sağlar"],
+      "correct_answer": "A) Sekretuar IgA mukoza yüzeyinde patojenlerin epitele yapışmasını önler (nötralizasyon ve aglütinasyon)",
+      "explanation": "Sekretuar IgA (sIgA) tükürük, gözyaşı, süt ve GİS salgılarında bulunur. Patojenlerin epitel hücrelerine tutunmasını önleyerek 'birinci savunma hattı' oluşturur.",
+      "story_hint": "💡 PROFESÖR NOTU: sIgA = mukozal bağışıklık. Anne sütü → bebeğe pasif immunite sIgA ile. IgA eksikliği = en sık primer immün yetmezlik = tekrarlayan sinüzit/otit."
+    },
+    {
+      "id": "mikro_pv3-069",
+      "case": "Soru:(Mikrobiyoloji) Grip aşısının her yıl yeniden hazırlanmasının nedeni nedir?",
+      "options": ["A) Influenza A virüsünün sürekli antijenik sürüklenme (drift) ile yüzey antijenlerini değiştirmesi", "B) Aşının immünojenik olmaması", "C) Ömrünün yalnızca 3 ay olması", "D) Soğuk zincir kırılması", "E) Adjuvan sorunları"],
+      "correct_answer": "A) Influenza A virüsünün sürekli antijenik sürüklenme (drift) ile yüzey antijenlerini değiştirmesi",
+      "explanation": "İnfluenza virüsünde HA ve NA genlerinde nokta mutasyonlarla sürekli antijenik sürüklenme olur. Bir önceki yıl üretilen aşı yeni suşa karşı yetersiz kalır.",
+      "story_hint": "💡 PROFESÖR NOTU: Grip aşısı her yıl = drift. DSÖ her Şubat yeni formülasyonu açıklar. Kuzey yarıküre için Şubat, Güney için Eylül tahmini."
+    },
+    {
+      "id": "mikro_pv3-070",
+      "case": "Soru:(Mikrobiyoloji) Pastörizasyon işlemi hangi mikroorganizmaları yok eder ve sporları yok eder mi?",
+      "options": ["A) Vejetatif formları yok eder; sporları yok etmez", "B) Sporlar dahil tüm mikroorganizmaları yok eder", "C) Yalnızca fungusları yok eder", "D) Yalnızca bakterileri değil virüsleri yok eder", "E) Hiçbir mikroorganizmayı yok etmez, yalnızca sayıyı azaltır"],
+      "correct_answer": "A) Vejetatif formları yok eder; sporları yok etmez",
+      "explanation": "Pastörizasyon (63°C/30 dk veya 72°C/15 sn) vejetatif bakteri formlarını, Mycobacterium bovis ve Brucella gibi patojenleri yok eder ama ısıya dirençli sporları yok edemez.",
+      "story_hint": "💡 PROFESÖR NOTU: Pastörizasyon = spor YOK EDEMEZler. Sterilizasyon = sporlar dahil hepsi. Yüksek sıcaklık kısa süre (HTST) veya düşük sıcaklık uzun süre (LTLT)."
+    },
+    {
+      "id": "mikro_pv3-071",
+      "case": "Soru:(Mikrobiyoloji) 22 yaşında üniversite öğrencisi, ateş, boğaz ağrısı, halsizlik ve boyunda şişlik şikayetiyle başvuruyor. Monospot testi pozitif bulunuyor. Bu hastaya ampisillin verilirse ne olur?",
+      "options": ["A) Makülopapüler döküntü gelişir (ampisilin döküntüsü)", "B) Hızlı iyileşme sağlanır", "C) Karaciğer yetmezliği gelişir", "D) Menenjit gelişir", "E) Hiçbir yan etki olmaz"],
+      "correct_answer": "A) Makülopapüler döküntü gelişir (ampisilin döküntüsü)",
+      "explanation": "EBV enfeksiyöz mononükleozda ampisilin veya amoksisillin verildiğinde %80-90 oranında yaygın makülopapüler döküntü gelişir. Bu gerçek penisilin alerjisi değildir.",
+      "story_hint": "💡 PROFESÖR NOTU: EBV + Ampisilin = döküntü (%80-90). Bu bir 'ilaç-hastalık etkileşimi'. Gerçek penisilin alerjisi değil. Tedavide antibiyotik gerekmez, destekleyici."
+    },
+    {
+      "id": "mikro_pv3-072",
+      "case": "Soru:(Mikrobiyoloji) Histoplasma capsulatum enfeksiyonunun en sık görüldüğü coğrafik bölge ve epidemiyolojik kaynağı nedir?",
+      "options": ["A) ABD'nin Mississippi ve Ohio nehir vadileri; yarasa ve kuş dışkısıyla kontamine toprak", "B) Akdeniz ülkeleri; çiğ süt", "C) Güneydoğu Asya; pirinç tarlaları", "D) Afrika; kene ısırması", "E) Arktik bölgeler; balık"],
+      "correct_answer": "A) ABD'nin Mississippi ve Ohio nehir vadileri; yarasa ve kuş dışkısıyla kontamine toprak",
+      "explanation": "Histoplasma, ABD'nin iki büyük nehir vadisinde endemiktir. Yarasa ve kuş dışkısıyla zenginleşmiş toprakta miçel formunda yaşar, inhalasyonla bulaşır.",
+      "story_hint": "💡 PROFESÖR NOTU: Histoplasma = ABD nehir vadileri. Mağara veya kuş kafesini temizleyenler. Dimorfik mantar: toprakta hifa, vücutta maya. Makrofaj içinde görülür."
+    },
+    {
+      "id": "mikro_pv3-073",
+      "case": "Soru:(Mikrobiyoloji) Coccidioides immitis enfeksiyonunun karakteristik tanısal bulgusu nedir?",
+      "options": ["A) Dokularda içi endospor dolu büyük sferüller", "B) Genişçe kapsüllü maya hücreleri", "C) 45° dallanmalı septate hifalar", "D) Granülom içinde 'baykuş gözü' inklüzyonları", "E) Germ tüpü oluşumu"],
+      "correct_answer": "A) Dokularda içi endospor dolu büyük sferüller",
+      "explanation": "Coccidioides vücutta sferül adı verilen büyük, içi endosporla dolu yapılar oluşturur. Bu, diğer mantarlardan ayırt edici patolojik bulgusudur.",
+      "story_hint": "💡 PROFESÖR NOTU: Coccidioides = sferül içinde endosporlar. Güneybatı ABD (Sonora çölü). San Joaquin vadisi ateşi. HIV'de dissemine olur."
+    },
+    {
+      "id": "mikro_pv3-074",
+      "case": "Soru:(Mikrobiyoloji) Pneumocystis jirovecii (eski adı P. carinii) pnömonisinin TMP-SMX profilaksisi hangi CD4 eşiğinin altında başlanır?",
+      "options": ["A) CD4 < 200 hücre/mm³", "B) CD4 < 500 hücre/mm³", "C) CD4 < 100 hücre/mm³", "D) CD4 < 50 hücre/mm³", "E) Her CD4 seviyesinde başlanır"],
+      "correct_answer": "A) CD4 < 200 hücre/mm³",
+      "explanation": "PCP profilaksisi CD4 <200/mm³ olduğunda TMP-SMX ile başlanır. PCP, HIV hastalarında AIDS tanı koydurabilecek enfeksiyonların başında gelir.",
+      "story_hint": "💡 PROFESÖR NOTU: PCP profilaksi = CD4<200. Tanı: BAL + methenamine silver boyama. Klinik: dispne + kuru öksürük + LDH↑ + bilateral ground-glass. Tedavi: yüksek doz TMP-SMX."
+    },
+    {
+      "id": "mikro_pv3-075",
+      "case": "Soru:(Mikrobiyoloji) Antifungal ilaç ekinokandinlerin (kaspofungin, mikafungin) etki mekanizması nedir?",
+      "options": ["A) Mantar hücre duvarında β-(1,3)-D-glukan sentezini inhibe ederler", "B) Ergosterole bağlanarak membran geçirgenliğini artırırlar", "C) 14α-demetilaz enzimini inhibe ederler", "D) DNA sentezini inhibe ederler", "E) RNA polimerazı inhibe ederler"],
+      "correct_answer": "A) Mantar hücre duvarında β-(1,3)-D-glukan sentezini inhibe ederler",
+      "explanation": "Ekinokandinler β-glukan sentaz enzimini inhibe ederek mantar hücre duvarı sentezini bozar. İnsan hücrelerinde bu hedef olmadığından selektif toksisiteye sahiptirler.",
+      "story_hint": "💡 PROFESÖR NOTU: Ekinokandinler = β-glukan sentaz inhibitörü. Candida ve Aspergillus'a etkili. Cryptococcus'a etkisiz (β-glukan az). Böbrek toksisitesi düşük."
+    },
+    {
+      "id": "mikro_pv3-076",
+      "case": "Soru:(Mikrobiyoloji) Neisseria gonorrhoeae ile Neisseria meningitidis'i kültür ortamında ayırt etmede hangi özellik kullanılır?",
+      "options": ["A) N. gonorrhoeae maltoz fermente etmez; N. meningitidis maltoz fermente eder", "B) N. meningitidis glikoz fermente etmez; N. gonorrhoeae eder", "C) N. gonorrhoeae oksidaz negatif; N. meningitidis pozitif", "D) N. meningitidis Gram negatif; N. gonorrhoeae pozitif", "E) İkisi arasında biyokimyasal fark yoktur"],
+      "correct_answer": "A) N. gonorrhoeae maltoz fermente etmez; N. meningitidis maltoz fermente eder",
+      "explanation": "Her ikisi de glikoz fermente eder, ancak N. meningitidis ayrıca maltozu da fermente eder. N. gonorrhoeae maltozu fermente etmez. Bu ayırım tanıda kritiktir.",
+      "story_hint": "💡 PROFESÖR NOTU: Gonore = glikoz(+) maltoz(-). Meningokok = glikoz(+) maltoz(+). Her ikisi oksidaz (+). Thayer-Martin agar = seçici besiyeri."
+    },
+    {
+      "id": "mikro_pv3-077",
+      "case": "Soru:(Mikrobiyoloji) İdrar yolu enfeksiyonlarında en sık etken olan bakteri ve virülans faktörleri nelerdir?",
+      "options": ["A) E. coli; P fimbriası (üroepitele tutunma), alfa-hemolizin, aerobaktin", "B) Klebsiella pneumoniae; kapsül", "C) Proteus mirabilis; üreaz", "D) Staphylococcus saprophyticus; koagülaz", "E) Enterococcus faecalis; beta-laktamaz"],
+      "correct_answer": "A) E. coli; P fimbriası (üroepitele tutunma), alfa-hemolizin, aerobaktin",
+      "explanation": "Toplum kökenli İYE'nin %80'inden E. coli sorumludur. P fimbriaları üroepitele tutunmayı, hemolizin doku hasarını, aerobaktin demir chelation ile üremeyi sağlar.",
+      "story_hint": "💡 PROFESÖR NOTU: İYE en sık = E. coli → P fimbriaları. Genç cinsel aktif kadın: E. coli. Genç kadın tekrarlayan İYE: S. saprophyticus. Kataplazmik İYE: Klebsiella."
+    },
+    {
+      "id": "mikro_pv3-078",
+      "case": "Soru:(Mikrobiyoloji) 'Weil hastalığı' olarak bilinen ağır leptospiroz formunda en karakteristik organ tutulumu hangisidir?",
+      "options": ["A) Karaciğer (sarılık) + Böbrek (akut böbrek yetmezliği) + Kanama diyatezi", "B) Yalnızca akciğer tutulumu", "C) Yalnızca MSS tutulumu", "D) Kalp tutulumu + miyokardit", "E) Deri tutulumu + döküntü"],
+      "correct_answer": "A) Karaciğer (sarılık) + Böbrek (akut böbrek yetmezliği) + Kanama diyatezi",
+      "explanation": "Weil hastalığı (ağır leptospiroz) karaciğer yetmezliği (sarılık), akut böbrek yetmezliği ve kanama diatezi (trombositopeni) üçlüsü ile karakterizedir.",
+      "story_hint": "💡 PROFESÖR NOTU: Weil = sarılık + böbrek yetmezliği + kanama. Bulaş: kirli su (nehir, pirinç tarlası). Zoonoz: sıçan, köpek, sığır. Türkiye'de pirinç tarlası çalışanları."
+    },
+    {
+      "id": "mikro_pv3-079",
+      "case": "Soru:(Mikrobiyoloji) HIV'nin CD4+ T lenfositlerine bağlanmasında hangi moleküler etkileşim kullanılır?",
+      "options": ["A) gp120 → CD4 + CCR5/CXCR4 (koreseptör)", "B) gp41 → CD8 + CCR7", "C) p24 → CD3", "D) Reverse transkriptaz → CD4", "E) Integraz → CXCR4"],
+      "correct_answer": "A) gp120 → CD4 + CCR5/CXCR4 (koreseptör)",
+      "explanation": "HIV zarfındaki gp120 önce CD4'e bağlanır, konformasyonel değişiklik ile CCR5 (makrofaj tropik, R5 suşları) veya CXCR4 (T-tropik, X4 suşları) koreseptörüne bağlanır. Ardından gp41 membran füzyonu sağlar.",
+      "story_hint": "💡 PROFESÖR NOTU: HIV giriş = gp120+CD4+CCR5/CXCR4. CCR5Δ32 mutasyonu = HIV'e direnç. Maravirok = CCR5 antagonisti (tedavi). Erken HIV = R5 suş."
+    },
+    {
+      "id": "mikro_pv3-080",
+      "case": "Soru:(Mikrobiyoloji) Staphylococcus epidermidis'in hastane ortamında önemli bir patojen haline gelmesinin en önemli nedeni nedir?",
+      "options": ["A) Plastik yüzeylerde (kateter, protez) biyofilm oluşturarak antibiyotiklere direnç kazanması", "B) Yüksek virülans toksinleri üretmesi", "C) Hücre içinde yaşayabilmesi", "D) Kan kültüründe hızlı üremesi", "E) Kapsül oluşturması"],
+      "correct_answer": "A) Plastik yüzeylerde (kateter, protez) biyofilm oluşturarak antibiyotiklere direnç kazanması",
+      "explanation": "S. epidermidis normalde düşük virülanslı koagülaz-negatif stafilokok olmasına rağmen plastik yüzeylerde biyofilm oluşturur. Biyofilm içindeki bakteriler antibiyotik ve bağışıklık sistemine karşı son derece dirençlidir.",
+      "story_hint": "💡 PROFESÖR NOTU: S. epidermidis = biyofilm = kateter/protez enfeksiyonu. Koagülaz negatif stafilokok. Tedavi: Vankomisin (MRSE çok sık). Kateter çıkarılmalı."
+    },
+    {
+      "id": "mikro_pv3-081",
+      "case": "Soru:(Mikrobiyoloji) Tüberküloz tedavisinin ilk 2 ayında kullanılan 4'lü rejim hangi ilaçları içerir?",
+      "options": ["A) İzoniazid + Rifampisin + Pirazinamid + Etambutol (2HRZE)", "B) İzoniazid + Streptomisin + Etambutol + Siprofloksasin", "C) Rifampisin + Vankomisin + Pirazinamid + Etambutol", "D) Klaritromisin + Rifabutin + Etambutol + Levofloksasin", "E) İzoniazid + Rifampisin + Metronidazol + Tetrasiklin"],
+      "correct_answer": "A) İzoniazid + Rifampisin + Pirazinamid + Etambutol (2HRZE)",
+      "explanation": "Standart TB tedavisinin yoğun fazında 2 ay boyunca HRZE (İzoniazid, Rifampisin, Pirazinamid, Etambutol) kullanılır. Devam fazı 4 ay HR ile tamamlanır.",
+      "story_hint": "💡 PROFESÖR NOTU: TB = 2HRZE + 4HR. Pirazinamid = karaciğer toksik. İzoniazid = periferik nöropati (B6 ver). Rifampisin = turuncu idrar/sekresyonlar. Etambutol = görme bozukluğu."
+    },
+    {
+      "id": "mikro_pv3-082",
+      "case": "Soru:(Mikrobiyoloji) Rubella (Kızamıkçık) enfeksiyonunun gebelikte en tehlikeli olduğu dönem hangisidir ve bu dönemde hangi organ sistemleri etkilenir?",
+      "options": ["A) İlk trimester; kalp defektleri, katarakt, sağırlık (konjenital rubella sendromu)", "B) Üçüncü trimester; erken doğum", "C) İkinci trimester; nöral tüp defektleri", "D) Tüm trimesterler eşit tehlikeli", "E) Gebelikte tehlikeli değil"],
+      "correct_answer": "A) İlk trimester; kalp defektleri, katarakt, sağırlık (konjenital rubella sendromu)",
+      "explanation": "Rubella virüsünün organogenez dönemindeki (1. trimester) fetüse etkisi en büyüktür. Konjenital Rubella Sendromu (KRS): kardiyak defektler (PDA), göz (katarakt, glokom), kulak (sağırlık).",
+      "story_hint": "💡 PROFESÖR NOTU: Rubella = 1. trimester = KRS (kalp+göz+kulak). Gregg üçlüsü: katarakt+PDA+sağırlık. Aşı: KKK. Gebelikte canlı aşı kontrendike."
+    },
+    {
+      "id": "mikro_pv3-083",
+      "case": "Soru:(Mikrobiyoloji) Akut hepatit B enfeksiyonunun serolojik takibinde 'iyileşme ve bağışıklık kazanma' hangi marker ile gösterilir?",
+      "options": ["A) Anti-HBs pozitifliği", "B) HBsAg pozitifliği", "C) HBeAg pozitifliği", "D) Anti-HBc IgM pozitifliği", "E) HBV DNA yüksekliği"],
+      "correct_answer": "A) Anti-HBs pozitifliği",
+      "explanation": "Anti-HBs hem HBV enfeksiyonundan iyileşmeyi hem de aşı ile bağışıklık kazanmayı gösterir. Titre >10 mIU/mL koruyucu kabul edilir.",
+      "story_hint": "💡 PROFESÖR NOTU: Anti-HBs = iyileşme veya aşı koruyuculuğu. HBsAg = akut veya kronik enfeksiyon. Anti-HBc IgG = geçirilmiş enfeksiyon işareti."
+    },
+    {
+      "id": "mikro_pv3-084",
+      "case": "Soru:(Mikrobiyoloji) Kompleman sisteminin 'klasik yol' aktivasyonu hangi bileşen ile başlar?",
+      "options": ["A) C1q'nun antijen-antikor kompleksine (IgG veya IgM) bağlanması", "B) Mannoz bağlayıcı lektin (MBL)", "C) C3b'nin yüzeye direkt bağlanması", "D) Bakteri LPS'inin C3'ü aktive etmesi", "E) Tüm yollar aynı şekilde başlar"],
+      "correct_answer": "A) C1q'nun antijen-antikor kompleksine (IgG veya IgM) bağlanması",
+      "explanation": "Klasik yolda C1q antijen-antikor kompleksine (en güçlü: IgM, sonra IgG) bağlanarak C1r ve C1s'yi aktive eder. Lektin yolu: MBL. Alternatif yol: C3b direkt yüzey bağlanması.",
+      "story_hint": "💡 PROFESÖR NOTU: Klasik yol = antikor (IgG/IgM). Lektin yolu = MBL. Alternatif yol = LPS/yüzey. Hepsi → C3 convertaz → MAC (membran attak kompleksi)."
+    },
+    {
+      "id": "mikro_pv3-085",
+      "case": "Soru:(Mikrobiyoloji) Gram negatif bakterilerdeki 'endotoksin' (LPS) hangi lipid fraksiyonundan kaynaklanır ve etkileri nelerdir?",
+      "options": ["A) Lipid A; sitokin fırtınası, ateş, sepsis, DIC", "B) O antijeni; kompleman aktivasyonu", "C) Nükleer faktör; DNA hasarı", "D) Teikozoik asit; tromboz", "E) Peptidoglikan; nötrofil aktivasyonu"],
+      "correct_answer": "A) Lipid A; sitokin fırtınası, ateş, sepsis, DIC",
+      "explanation": "LPS'nin Lipid A fraksiyonu biyolojik aktivitenin ana kaynağıdır. Makrofajlardan TNF-α, IL-1, IL-6 salınımını tetikler → ateş, sepsis, DIC, şok.",
+      "story_hint": "💡 PROFESÖR NOTU: Endotoksin = LPS = Lipid A aktif. Gram(-) septisemide DIC sık. Lipopolisakkarit TLR-4 reseptörüne bağlanır. Pirogen = IL-1, TNF-α."
+    },
+    {
+      "id": "mikro_pv3-086",
+      "case": "Soru:(Mikrobiyoloji) 50 yaşında diyabetik erkek hasta, sağ ayak parmağında nekrotik, fötid kokulu yara ve şişlik ile başvuruyor. Yarada krepitasyon alınıyor. Hangi tanı düşünülmelidir?",
+      "options": ["A) Clostridium perfringens gaz gangreni (miyonekroz)", "B) S. aureus selüliti", "C) Pseudomonas derin enfeksiyonu", "D) Fungal enfeksiyon (Mucor)", "E) Anaerob Streptokokal miyozit"],
+      "correct_answer": "A) Clostridium perfringens gaz gangreni (miyonekroz)",
+      "explanation": "Krepitasyon (deri altında gaz), nekroz ve fötid koku gaz gangrenini işaret eder. C. perfringens kollajenaz, lipaz ve lesitin enzimlerini üretir ve hızlı doku nekrozu yapar.",
+      "story_hint": "💡 PROFESÖR NOTU: Krepitasyon + nekroz + fötid koku = GAZ GANGRENİ. C. perfringens alfa toksin (fosfolipaz C). Tedavi: Debridman + Penisilin + Hiperbarik oksijen."
+    },
+    {
+      "id": "mikro_pv3-087",
+      "case": "Soru:(Mikrobiyoloji) Yersinia pestis'in neden olduğu veba hastalığında 'Bubon' nedir?",
+      "options": ["A) Ağrılı bölgesel lenf nodu şişliği (inguinal, aksiler veya servikal)", "B) Deri ülseri", "C) Pulmoner konsolidasyon", "D) Splenik apse", "E) Orbital ödem"],
+      "correct_answer": "A) Ağrılı bölgesel lenf nodu şişliği (inguinal, aksiler veya servikal)",
+      "explanation": "Bubonlu veba (en sık form) pire ısırma bölgesine yakın drene eden lenf nodunun ağrılı şişmesiyle karakterizedir. Bu şişliğe 'bubon' denir.",
+      "story_hint": "💡 PROFESÖR NOTU: Veba = Y. pestis = pire vektörü (Xenopsylla). Bubon = şiş lenf nodu. Pnömonik veba = en bulaşıcı form. Tedavi: Streptomisin veya Doksisiklin."
+    },
+    {
+      "id": "mikro_pv3-088",
+      "case": "Soru:(Mikrobiyoloji) Fransisella tularensis'in neden olduğu tularemide en sık bulaş yolu ve klinik formu hangisidir?",
+      "options": ["A) Hasta hayvanlarla temas veya kene ısırması; ülseroglandüler form (deri ülseri + LAP)", "B) Kontamine su; pulmoner form", "C) Aerosol; oküloglandüler form", "D) Gıda; tifo benzeri form", "E) Kişiden kişiye damlacık; faringeal form"],
+      "correct_answer": "A) Hasta hayvanlarla temas veya kene ısırması; ülseroglandüler form (deri ülseri + LAP)",
+      "explanation": "Tularemide ülseroglandüler form en sık görülen tiptir (%75-85). İnoküle edilen bölgede ülser + bölgesel lenfadenopati ile karakterizedir. Tavşan, geyik gibi hayvanlarla temas ile bulaşır.",
+      "story_hint": "💡 PROFESÖR NOTU: Tularemi = F. tularensis = tavşan/kene. Ülseroglandüler = en sık. Biyoterörizm ajanı (Kategori A). Tedavi: Streptomisin veya Gentamisin."
+    },
+    {
+      "id": "mikro_pv3-089",
+      "case": "Soru:(Mikrobiyoloji) Aşağıdakilerden hangisi 'zorunlu hücre içi parazit' olan bakterilerden biridir?",
+      "options": ["A) Rickettsia rickettsii", "B) Mycobacterium tuberculosis", "C) Listeria monocytogenes", "D) Brucella melitensis", "E) Salmonella typhi"],
+      "correct_answer": "A) Rickettsia rickettsii",
+      "explanation": "Rickettsia, Chlamydia ve Coxiella zorunlu hücre içi parazitlerdir; kendi ATP üretim sistemleri yetersiz olduğundan konak hücresi dışında çoğalamazlar.",
+      "story_hint": "💡 PROFESÖR NOTU: Zorunlu hücre içi = Rickettsia + Chlamydia + Coxiella. Fakültatif hücre içi = Mycobacterium + Listeria + Brucella + Salmonella + Leishmania + Toxoplasma."
+    },
+    {
+      "id": "mikro_pv3-090",
+      "case": "Soru:(Mikrobiyoloji) Rocky Mountain Spotted Fever (Benekli Ateş) etkeni ve patognomonik deri bulgusu nedir?",
+      "options": ["A) Rickettsia rickettsii; el bilekleri ve ayak bileklerinden başlayan, avuç içi ve ayak tabanına yayılan döküntü", "B) Rickettsia typhi; gövdeden başlayan döküntü", "C) Borrelia burgdorferi; eritema migrans", "D) Ehrlichia; peteşi yok, döküntüsüz", "E) Anaplasma; yüzde döküntü"],
+      "correct_answer": "A) Rickettsia rickettsii; el bilekleri ve ayak bileklerinden başlayan, avuç içi ve ayak tabanına yayılan döküntü",
+      "explanation": "RMSF'de döküntü karakteristik olarak bilek ve ayak bileklerinde başlar, santrale (gövdeye) yayılır ve avuç içi/ayak tabanını da tutar. Bu periferik-sentral yayılım diğer Rickettsia'dan ayırt ettirir.",
+      "story_hint": "💡 PROFESÖR NOTU: RMSF = periferi → santral döküntü + avuç içi/ayak tabanı. Ixodes değil, Dermacentor kenesi. Tedavi: Doksisiklin (çocuklarda bile). Weil-Felix testi artık kullanılmıyor."
+    },
+    {
+      "id": "mikro_pv3-091",
+      "case": "Soru:(Mikrobiyoloji) Hepatit C virüsünün (HCV) kronikleşme oranı akut enfeksiyonlarda ne kadardır?",
+      "options": ["A) %70-85 oranında kronikleşir (en yüksek kronikleşme oranı)", "B) %5-10 oranında kronikleşir", "C) Kronikleşmez", "D) %50 oranında kronikleşir", "E) %95 oranında kronikleşir"],
+      "correct_answer": "A) %70-85 oranında kronikleşir (en yüksek kronikleşme oranı)",
+      "explanation": "HCV akut enfeksiyonun %70-85'i kronikleşir ve bu oran tüm hepatit virüsleri arasında en yüksektir. Kronik HCV → sirozis → hepatoselüler karsinom zinciri önemlidir.",
+      "story_hint": "💡 PROFESÖR NOTU: Kronikleşme oranı: HCV %70-85 > HBV %5-10 (yetişkin) > HAV=HEV %0. HCV: RNA virüsü, zarf varken kılıfsız. Tedavi: DAA (direkt antiviraller) ≥%95 kür."
+    },
+    {
+      "id": "mikro_pv3-092",
+      "case": "Soru:(Mikrobiyoloji) Candida enfeksiyonlarında 'oral trush' (ağız kandidiazisi) ile özofajit birlikte görüldüğünde hangi durumdan şüphelenilir?",
+      "options": ["A) HIV enfeksiyonu / AIDS (CD4 < 200)", "B) Yalnızca antibiyotik kullanımı", "C) Diyabet mellitus", "D) Gebelik", "E) Demir eksikliği anemisi"],
+      "correct_answer": "A) HIV enfeksiyonu / AIDS (CD4 < 200)",
+      "explanation": "Oral trush sağlıklı yetişkinlerde nadirken özofajiale birlikte görüldüğünde ciddi immün yetmezlik düşündürür. AIDS tanı koydurabilecek hastalıklar arasında Candida özofajiti yer alır.",
+      "story_hint": "💡 PROFESÖR NOTU: Candida özofajit = AIDS tanı koydurabilir. Disfaji + odiyofaji + beyaz plaklarla birlikte HIV testi yap. Tedavi: Flukonazol."
+    },
+    {
+      "id": "mikro_pv3-093",
+      "case": "Soru:(Mikrobiyoloji) Blastomyces dermatitidis enfeksiyonunun karakteristik histopatolojik bulgusu nedir?",
+      "options": ["A) Geniş tabanlı tomurcuklanan (broad-based budding) büyük maya hücreleri", "B) Dar tabanlı tomurcuklanan küçük maya hücreleri", "C) İçi endospor dolu sferüller", "D) Kapsüllü maya hücreleri", "E) Septate hifalar 45° dallanma"],
+      "correct_answer": "A) Geniş tabanlı tomurcuklanan (broad-based budding) büyük maya hücreleri",
+      "explanation": "Blastomyces'in doku formunda geniş tabanlı tomurcuklanan (broad-based bud) büyük (8-15 μm) çift duvarlı maya hücreleri görülür. Bu diğer dimorfik mantarlardan ayırt edicidir.",
+      "story_hint": "💡 PROFESÖR NOTU: Blastomyces = geniş tabanlı tomurcuklanma. Histoplasma = dar tabanlı, intrasellüler, küçük. Coccidioides = sferül. Blastomyces: Büyük Göller bölgesi (ABD)."
+    },
+    {
+      "id": "mikro_pv3-094",
+      "case": "Soru:(Mikrobiyoloji) Enterococcus faecalis'in antibiyotik tedavisinde neden yüksek doz aminoglikozid ile beta-laktam kombinasyonu gerekir?",
+      "options": ["A) Sinerjistik etki: beta-laktam hücre duvarını bozarak aminoglikozidi içeri girmesini sağlar (yüksek düzey aminoglikozid direnci olmadıkça)", "B) Her iki ilaç aynı hedefi bloke eder", "C) Enterokoklar sadece aminoglikozide duyarlıdır", "D) Beta-laktam aminoglikozidin böbrek toksisitesini azaltır", "E) Kombine etki bağışıklık sistemi için gereklidir"],
+      "correct_answer": "A) Sinerjistik etki: beta-laktam hücre duvarını bozarak aminoglikozidi içeri girmesini sağlar (yüksek düzey aminoglikozid direnci olmadıkça)",
+      "explanation": "Enterokoklar aminoglikozidlere intrensek orta düzey direnç gösterir çünkü giriş zordur. Beta-laktam hücre duvarı geçirgenliğini artırarak aminoglikozidi içeri sokar → sinerjistik bakterisidal etki.",
+      "story_hint": "💡 PROFESÖR NOTU: Enterokok = Beta-laktam + aminoglikozid sinerjisi. VRE (vankomisin dirençli Enterokok) = Linezolid veya Daptomisin. Enterokok: intrensek sefalosporin direnci."
+    },
+    {
+      "id": "mikro_pv3-095",
+      "case": "Soru:(Mikrobiyoloji) 'Spiroketler' diğer bakterilerden yapısal olarak nasıl ayrılır?",
+      "options": ["A) Aksiyel filamanlar (endoflagellar) hücre çeperinin iç kısmında bulunur ve dönerek hareket eder", "B) Dış flagella ile hareket ederler", "C) Sert çubuk şekilli hareket etmezler", "D) Kapsül varlığı ile ayrılır", "E) Spor oluşturma özelliğiyle ayrılır"],
+      "correct_answer": "A) Aksiyel filamanlar (endoflagellar) hücre çeperinin iç kısmında bulunur ve dönerek hareket eder",
+      "explanation": "Spirokhetlerde flagellalar dışarı çıkmaz, periplazmatik alana yerleşmiş endoflagellar (aksiyel filamanlar) sarmal gövdenin dönerek ilerlemesini sağlar.",
+      "story_hint": "💡 PROFESÖR NOTU: Spiroket = endoflagellar = vidalı hareket. Treponema, Borrelia, Leptospira. Treponema = boyamaz. Borrelia = Giemsa ile boyanır."
+    },
+    {
+      "id": "mikro_pv3-096",
+      "case": "Soru:(Mikrobiyoloji) Antijenik varyasyon mekanizmaları arasında 'faz varyasyonu' (phase variation) nasıl çalışır?",
+      "options": ["A) Gen ekspresyonunun reversible açılıp kapanmasıyla yüzey proteinleri değişir (DNA inversiyon veya metilasyon)", "B) Mutasyon ile kalıcı gen değişimi olur", "C) Plazmid ile yeni gen kazanılır", "D) Rekombinasyon ile tamamen yeni gen oluşur", "E) Yüzey proteinleri hiç değişmez"],
+      "correct_answer": "A) Gen ekspresyonunun reversible açılıp kapanmasıyla yüzey proteinleri değişir (DNA inversiyon veya metilasyon)",
+      "explanation": "Faz varyasyonunda belirli genlerin ekspresyonu tersine çevrilebilir (on-off) şekilde DNA inversiyon veya promoter metilasyon mekanizmasıyla değiştirilir. H. influenzae fimbriaları, Salmonella flagellaları örnek gösterilebilir.",
+      "story_hint": "💡 PROFESÖR NOTU: Faz varyasyon = reversible açık/kapalı. Antigenik kayma = kalıcı. Borrelia = VMP (variable major protein) ile antijenik varyasyon = relapsing fever."
+    },
+    {
+      "id": "mikro_pv3-097",
+      "case": "Soru:(Mikrobiyoloji) Mups (Kabakulak) virüsünün en önemli komplikasyonları nelerdir?",
+      "options": ["A) Orşit (erkekte infertilite riski), menenjit, pankreatit, ooforit", "B) Kardiyomiyopati, hepatit, retinit", "C) Pnömoni, artrit, böbrek yetmezliği", "D) Yalnızca tükürük bezi şişmesi, komplikasyon yok", "E) Ensefalit, epilepsi, körlük"],
+      "correct_answer": "A) Orşit (erkekte infertilite riski), menenjit, pankreatit, ooforit",
+      "explanation": "Kabakulak en sık parotis bezini tutar. Komplikasyonlar: orşit (puberte sonrası erkeklerde sık, bilateral olursa infertilite), aseptik menenjit, pankreatit ve ooforit.",
+      "story_hint": "💡 PROFESÖR NOTU: Kabakulak = parotit. Komplikasyon: Orşit (tek taraflı genellikle, bilateral = infertilite). Aseptik menenjit = viral menenjitlerin en sık etkeni eskiden Mups'tu. KKK aşısı ile önlenir."
+    },
+    {
+      "id": "mikro_pv3-098",
+      "case": "Soru:(Mikrobiyoloji) Gram negatif bakterilerdeki 'pili/fimbriae' (pilus) yapısının temel işlevi nedir?",
+      "options": ["A) Konak hücre reseptörlerine tutunma (adezyon) ve virülans", "B) Hareket sağlamak (motilite)", "C) Enerji üretimi", "D) Antibiyotik direnci", "E) Protein sekresyonu"],
+      "correct_answer": "A) Konak hücre reseptörlerine tutunma (adezyon) ve virülans",
+      "explanation": "Pili/fimbriae bakteri yüzeyindeki protein uzantılardır ve konak hücre epitelyum reseptörlerine spesifik bağlanmayı sağlar. E. coli P fimbriaları üriner epitele, N. gonorrhoeae pili genital epitele tutunur.",
+      "story_hint": "💡 PROFESÖR NOTU: Pili = adezyon = virülans faktörü. Sex pili (F pili) = konjugasyon (DNA transferi). Tip IV pili = N. gonorrhoeae, Pseudomonas = antijenik varyasyon."
+    },
+    {
+      "id": "mikro_pv3-099",
+      "case": "Soru:(Mikrobiyoloji) 60 yaşında immünosüprese erkek hasta, CD4=80, ateş ve şiddetli baş ağrısı şikayetiyle başvuruyor. BOS basıncı 40 cm H2O, BOS'ta mürekkep preparatında kapsüllü maya görülüyor. Tedavi planı nasıl olmalıdır?",
+      "options": ["A) Amfoterisin B deoksikolat + Flusitozin (2 hafta indüksiyon) → Flukonazol (8 hafta konsolidasyon) → Flukonazol idame", "B) Flukonazol monoterapi", "C) Vorikonazol monoterapi", "D) Kaspofungin + Flukonazol", "E) Amfoterisin B + Vorikonazol"],
+      "correct_answer": "A) Amfoterisin B deoksikolat + Flusitozin (2 hafta indüksiyon) → Flukonazol (8 hafta konsolidasyon) → Flukonazol idame",
+      "explanation": "Kriptokokal menenjit standart tedavisi: İndüksiyon 2 hafta AmfB+5-FC, ardından 8 hafta Flukonazol konsolidasyonu, uzun süreli Flukonazol idamesi. Yüksek BOS basıncı için tekrarlayan LP gerekebilir.",
+      "story_hint": "💡 PROFESÖR NOTU: Kriptokokal menenjit = AmfB + Flusitozin → Flukonazol. BOS basıncı >25 cm H2O = LP ile boşalt. India ink veya kriptokok antijen testi tanı."
+    },
+    {
+      "id": "mikro_pv3-100",
+      "case": "Soru:(Mikrobiyoloji) Gram pozitif bakterilerin hücre duvarındaki 'teikozoik asit' ve 'lipoteikozoik asit' yapılarının immunolojik önemi nedir?",
+      "options": ["A) TLR-2 reseptörünü aktive ederek inflamatuar sitokin (TNF-α, IL-1) salınımını uyarırlar", "B) Kompleman klasik yolunu aktive ederler", "C) NK hücre aktivasyonunu inhibe ederler", "D) T hücre aktivasyonunu baskılarlar", "E) İmmün yanıtta hiçbir rolü yoktur"],
+      "correct_answer": "A) TLR-2 reseptörünü aktive ederek inflamatuar sitokin (TNF-α, IL-1) salınımını uyarırlar",
+      "explanation": "Gram pozitif bakterilerin teikozoik asit ve lipoteikozoik asitleri patern tanıma reseptörü TLR-2'yi aktive eder → makrofaj/monositlerden proinflamatuar sitokin salınımı → ateş ve inflamasyon. Gram negatif LPS ise TLR-4'ü aktive eder.",
+      "story_hint": "💡 PROFESÖR NOTU: Gram(+) = teikozoik asit → TLR-2. Gram(-) = LPS → TLR-4. Her ikisi de sepsis ve sitokin fırtınasına yol açabilir. Peptidoglikan da TLR-2 aktive eder."
     }
   ]
 }

@@ -1,6 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../services/auth_service.dart';
+import '../services/user_service.dart';
+import '../services/progress_service.dart';
+import '../services/collection_service.dart';
+import '../services/spaced_repetition_service.dart';
 
 enum AuthMode { login, signup }
 
@@ -10,8 +14,9 @@ class AuthViewModel extends ChangeNotifier {
   static const _keyLoggedIn    = 'auth_logged_in';
   static const _keyEmail       = 'auth_email';
   static const _keyName        = 'auth_name';
-  static const _keyRememberMe  = 'auth_remember_me';
-  static const _keySavedEmail  = 'auth_saved_email';
+  static const _keyRememberMe    = 'auth_remember_me';
+  static const _keySavedEmail    = 'auth_saved_email';
+  static const _keySavedPassword = 'auth_saved_password';
 
   // ── Form fields ───────────────────────────────────────────────────────────
   String name            = '';
@@ -194,11 +199,27 @@ class AuthViewModel extends ChangeNotifier {
     // Beni Hatırla: kaydedilmiş e-postayı forma doldur
     rememberMe = prefs.getBool(_keyRememberMe) ?? false;
     if (rememberMe && email.isEmpty) {
-      email = prefs.getString(_keySavedEmail) ?? '';
+      email    = prefs.getString(_keySavedEmail)    ?? '';
+      password = prefs.getString(_keySavedPassword) ?? '';
     }
     isInitialized = true;
+    if (isLoggedIn) {
+      _syncData();
+    }
     notifyListeners();
     return loggedIn;
+  }
+
+  // ── Sync Data After Login ────────────────────────────────────────────────
+  Future<void> _syncData() async {
+    try {
+      await UserService().onUserLogin();
+      await ProgressService().loadProgress();
+      await CollectionService().clearCacheAndReload();
+      await SpacedRepetitionService().clearCacheAndReload();
+    } catch (e) {
+      debugPrint('🚨 Global sync failed: $e');
+    }
   }
 
   Future<void> _persistSession() async {
@@ -208,9 +229,11 @@ class AuthViewModel extends ChangeNotifier {
     await prefs.setString(_keyName, name);
     await prefs.setBool(_keyRememberMe, rememberMe);
     if (rememberMe) {
-      await prefs.setString(_keySavedEmail, email);
+      await prefs.setString(_keySavedEmail,    email);
+      await prefs.setString(_keySavedPassword, password);
     } else {
       await prefs.remove(_keySavedEmail);
+      await prefs.remove(_keySavedPassword);
     }
   }
 
@@ -246,6 +269,7 @@ class AuthViewModel extends ChangeNotifier {
       }
       isLoggedIn = true;
       await _persistSession();
+      await _syncData();
     } on FirebaseAuthException catch (e) {
       generalError = e.message;
     } catch (e) {
@@ -264,6 +288,7 @@ class AuthViewModel extends ChangeNotifier {
     try {
       await AuthService.instance.signInWithGoogle();
       isLoggedIn = true;
+      await _syncData();
     } on FirebaseAuthException catch (e) {
       generalError = e.message;
     } catch (e) {
@@ -281,6 +306,7 @@ class AuthViewModel extends ChangeNotifier {
     try {
       await AuthService.instance.signInWithApple();
       isLoggedIn = true;
+      await _syncData();
     } on FirebaseAuthException catch (e) {
       generalError = e.message;
     } catch (e) {

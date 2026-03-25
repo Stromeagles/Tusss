@@ -33,6 +33,9 @@ class _LoginScreenState extends State<LoginScreen> {
       final vm = context.read<AuthViewModel>();
       if (vm.rememberMe && vm.email.isNotEmpty) {
         _emailCtrl.text = vm.email;
+        if (vm.password.isNotEmpty) {
+          _pwCtrl.text = vm.password;
+        }
       }
     });
   }

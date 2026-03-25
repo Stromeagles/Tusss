@@ -24,6 +24,7 @@ import 'services/notification_service.dart';
 import 'services/theme_service.dart';
 import 'services/specialty_score_service.dart';
 import 'services/user_service.dart';
+import 'services/progress_service.dart';
 import 'widgets/responsive_wrapper.dart';
 
 void main() async {
@@ -179,6 +180,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
           UserService().onUserLogin();
           CollectionService().syncWithCloud();
           MockExamService().syncWithCloud();
+          ProgressService().syncWithCloud();
           
           if (!(_onboardingDone ?? false)) {
             return OnboardingScreen(onComplete: _completeOnboarding);

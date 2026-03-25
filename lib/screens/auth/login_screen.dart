@@ -5,7 +5,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/foundation.dart' show defaultTargetPlatform, TargetPlatform, kIsWeb;
 import '../../auth/auth_view_model.dart';
-import '../../services/auth_service.dart';
 import '../../theme/app_theme.dart';
 import '../home_screen.dart';
 import 'forgot_password_screen.dart';
@@ -60,37 +59,24 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   // ── Firebase Social Sign-In ──────────────────────────────────────────────
-  Future<void> _signInWithGoogle(BuildContext ctx) async {
-    try {
-      await AuthService.instance.signInWithGoogle();
-      // AuthWrapper stream'i otomatik olarak HomeScreen'e yonlendirecek
-    } catch (e) {
-      if (!mounted) return;
-      ScaffoldMessenger.of(ctx).showSnackBar(
-        SnackBar(
-          content: Text('Google girisi basarisiz: $e'),
-          backgroundColor: AppTheme.error,
-          behavior: SnackBarBehavior.floating,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-          margin: const EdgeInsets.all(16),
-        ),
+  Future<void> _signInWithGoogle(BuildContext ctx, AuthViewModel vm) async {
+    await vm.signInWithGoogle();
+    if (!mounted) return;
+    if (vm.isLoggedIn) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute<void>(builder: (_) => const HomeScreen()),
       );
     }
   }
 
-  Future<void> _signInWithApple(BuildContext ctx) async {
-    try {
-      await AuthService.instance.signInWithApple();
-    } catch (e) {
-      if (!mounted) return;
-      ScaffoldMessenger.of(ctx).showSnackBar(
-        SnackBar(
-          content: Text('Apple girisi basarisiz: $e'),
-          backgroundColor: AppTheme.error,
-          behavior: SnackBarBehavior.floating,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-          margin: const EdgeInsets.all(16),
-        ),
+  Future<void> _signInWithApple(BuildContext ctx, AuthViewModel vm) async {
+    await vm.signInWithApple();
+    if (!mounted) return;
+    if (vm.isLoggedIn) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute<void>(builder: (_) => const HomeScreen()),
       );
     }
   }
@@ -465,7 +451,8 @@ class _LoginScreenState extends State<LoginScreen> {
     ).animate().fadeIn(duration: 700.ms);
   }
 
-  // ── Desktop: Yatay Glass Strip (Login) ───────────────────────────────────
+  // ── [KALDIRILDI] Desktop strip artık kullanılmıyor — merkezi panel aktif ──
+  // ignore: unused_element
   Widget _buildDesktopLoginStrip(AuthViewModel vm) {
     return Stack(
       children: [
@@ -598,7 +585,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(height: 21),
                       const SizedBox(height: 26), // checkbox satır yüksekliği
                       const SizedBox(height: 8),
-                      _buildGoogleStripButton(),
+                      _buildGoogleStripButton(vm),
                     ],
                   ),
                 ],
@@ -711,9 +698,9 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   // ── Strip: Kompakt Google butonu ──────────────────────────────────────────
-  Widget _buildGoogleStripButton() {
+  Widget _buildGoogleStripButton(AuthViewModel vm) {
     return GestureDetector(
-      onTap: () => _signInWithGoogle(context),
+      onTap: () => _signInWithGoogle(context, vm),
       child: Container(
         height: 50,
         padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -789,8 +776,8 @@ class _LoginScreenState extends State<LoginScreen> {
               emailCtrl: _emailCtrl,
               pwCtrl: _pwCtrl,
               onSubmit: () => _onSubmit(vm),
-              onGoogleSignIn: () => _signInWithGoogle(context),
-              onAppleSignIn: () => _signInWithApple(context),
+              onGoogleSignIn: () => _signInWithGoogle(context, vm),
+              onAppleSignIn: () => _signInWithApple(context, vm),
             )
           : _SignupForm(
               key: const ValueKey('signup'),
@@ -800,6 +787,8 @@ class _LoginScreenState extends State<LoginScreen> {
               pwCtrl: _pwCtrl,
               confirmCtrl: _confirmCtrl,
               onSubmit: () => _onSubmit(vm),
+              onGoogleSignIn: () => _signInWithGoogle(context, vm),
+              onAppleSignIn: () => _signInWithApple(context, vm),
             ),
     );
   }
@@ -1094,6 +1083,8 @@ class _SignupForm extends StatelessWidget {
     required this.pwCtrl,
     required this.confirmCtrl,
     required this.onSubmit,
+    required this.onGoogleSignIn,
+    required this.onAppleSignIn,
   });
 
   final AuthViewModel         vm;
@@ -1102,6 +1093,8 @@ class _SignupForm extends StatelessWidget {
   final TextEditingController pwCtrl;
   final TextEditingController confirmCtrl;
   final VoidCallback          onSubmit;
+  final Future<void> Function() onGoogleSignIn;
+  final Future<void> Function() onAppleSignIn;
 
   @override
   Widget build(BuildContext context) {
@@ -1206,6 +1199,28 @@ class _SignupForm extends StatelessWidget {
           isLoading: vm.isLoading,
           onTap: onSubmit,
         ),
+        const SizedBox(height: 24),
+
+        // Divider
+        _OrDivider(),
+        const SizedBox(height: 20),
+
+        // Social buttons
+        SocialButton(
+          label: 'Google ile Kayıt Ol',
+          icon: Icons.g_mobiledata_rounded,
+          onTap: onGoogleSignIn,
+        ),
+        const SizedBox(height: 10),
+        if (defaultTargetPlatform == TargetPlatform.iOS ||
+            defaultTargetPlatform == TargetPlatform.macOS)
+          SocialButton(
+            label: 'Apple ile Kayıt Ol',
+            icon: Icons.apple_rounded,
+            backgroundColor: Colors.white.withValues(alpha: 0.08),
+            onTap: onAppleSignIn,
+          ),
+        const SizedBox(height: 16),
       ],
     );
   }

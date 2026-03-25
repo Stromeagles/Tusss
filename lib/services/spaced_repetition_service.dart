@@ -46,7 +46,7 @@ class SpacedRepetitionService {
     final doc = _firestoreDoc;
     if (doc != null) {
       try {
-        final snap = await doc.get().timeout(const Duration(seconds: 6));
+        final snap = await doc.get(const GetOptions(source: Source.server)).timeout(const Duration(seconds: 7));
         if (snap.exists) {
           final data = snap.data() as Map<String, dynamic>;
           final remoteCards = data['sm2_card_data'] as Map<String, dynamic>?;

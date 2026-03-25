@@ -48,7 +48,7 @@ class ProgressService {
     final doc = _firestoreDoc;
     if (doc != null) {
       try {
-        final snap = await doc.get().timeout(const Duration(seconds: 6));
+        final snap = await doc.get(const GetOptions(source: Source.server)).timeout(const Duration(seconds: 8));
         if (snap.exists) {
           final data = snap.data() as Map<String, dynamic>;
           await _mergeFirestoreToPrefs(prefs, data);
@@ -59,6 +59,21 @@ class ProgressService {
     }
 
     return _readFromPrefs(prefs);
+  }
+
+  /// Firestore'dan verileri zorla çekip yereli günceller
+  Future<void> syncWithCloud() async {
+    final prefs = await SharedPreferences.getInstance();
+    final doc = _firestoreDoc;
+    if (doc != null) {
+      try {
+        final snap = await doc.get(const GetOptions(source: Source.server)).timeout(const Duration(seconds: 8));
+        if (snap.exists) {
+          final data = snap.data() as Map<String, dynamic>;
+          await _mergeFirestoreToPrefs(prefs, data);
+        }
+      } catch (_) {}
+    }
   }
 
   /// Firestore verisini SharedPreferences'e yaz (Firestore daha yeniyse)

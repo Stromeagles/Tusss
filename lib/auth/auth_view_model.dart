@@ -256,6 +256,41 @@ class AuthViewModel extends ChangeNotifier {
     }
   }
 
+  // ── Social Sign-In ────────────────────────────────────────────────────────
+  Future<void> signInWithGoogle() async {
+    resetErrors();
+    isLoading = true;
+    notifyListeners();
+    try {
+      await AuthService.instance.signInWithGoogle();
+      isLoggedIn = true;
+    } on FirebaseAuthException catch (e) {
+      generalError = e.message;
+    } catch (e) {
+      generalError = 'Google girişi başarısız oldu.';
+    } finally {
+      isLoading = false;
+      notifyListeners();
+    }
+  }
+
+  Future<void> signInWithApple() async {
+    resetErrors();
+    isLoading = true;
+    notifyListeners();
+    try {
+      await AuthService.instance.signInWithApple();
+      isLoggedIn = true;
+    } on FirebaseAuthException catch (e) {
+      generalError = e.message;
+    } catch (e) {
+      generalError = 'Apple girişi başarısız oldu.';
+    } finally {
+      isLoading = false;
+      notifyListeners();
+    }
+  }
+
 
   // ── Logout ────────────────────────────────────────────────────────────────
   Future<void> logout() async {

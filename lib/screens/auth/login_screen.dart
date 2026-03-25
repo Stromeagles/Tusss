@@ -137,15 +137,7 @@ class _LoginScreenState extends State<LoginScreen> {
           left: 40,
           child: _buildHeroLogo(),
         ),
-        if (vm.mode == AuthMode.login)
-          Positioned(
-            bottom: 0,
-            left: 0,
-            right: 0,
-            child: _buildDesktopLoginStrip(vm),
-          )
-        else
-          Center(child: _buildDesktopSignupPanel(vm)),
+        Center(child: _buildDesktopSignupPanel(vm)),
       ],
     );
   }

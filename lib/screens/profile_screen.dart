@@ -332,16 +332,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
     return GestureDetector(
       onTap: () => _showGoalSetupSheet(isDark),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(22),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-          child: Container(
+      child: Container(
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
               color: isDark
-                  ? Colors.white.withValues(alpha: 0.06)
-                  : Colors.white.withValues(alpha: 0.80),
+                  ? const Color(0xFF1E2A3A)
+                  : Colors.white.withValues(alpha: 0.90),
               borderRadius: BorderRadius.circular(22),
               border: Border.all(
                   color: isDark
@@ -427,8 +423,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ],
             ),
           ),
-        ),
-      ),
     )
         .animate()
         .fadeIn(delay: 400.ms, duration: 400.ms)
@@ -997,17 +991,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   // ── Akıllı Hedef Belirleme Sheet ────────────────────────────────────────────
 
-  void _showGoalSetupSheet(bool isDark) async {
+  void _showGoalSetupSheet(bool isDark) {
     final progressService = ProgressService();
-    final progress = await progressService.loadProgress();
-    final isPremium = await PremiumService().isPremium();
-    if (!mounted) return;
-
-    double tempBase = progress.baseScore;
-    double tempTarget = progress.targetScore;
-    DateTime tempTargetDate = DateTime.parse(progress.targetTusDate);
     final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
     final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+
+    // Closure state — sheet hemen açılır, veri içinde yüklenir
+    bool sheetLoading = true;
+    bool loadStarted = false;
+    StudyProgress progress = StudyProgress();
+    bool isPremium = false;
+    double tempBase = 0;
+    double tempTarget = 0;
+    DateTime tempTargetDate = DateTime.now();
 
     showModalBottomSheet(
       context: context,
@@ -1015,6 +1011,54 @@ class _ProfileScreenState extends State<ProfileScreen> {
       backgroundColor: Colors.transparent,
       builder: (ctx) => StatefulBuilder(
         builder: (ctx, setModalState) {
+          // İlk build'de veriyi arka planda yükle
+          if (!loadStarted) {
+            loadStarted = true;
+            Future.wait([
+              progressService.loadProgress(),
+              PremiumService().isPremium(),
+            ]).then((results) {
+              if (ctx.mounted) {
+                setModalState(() {
+                  progress = results[0] as StudyProgress;
+                  isPremium = results[1] as bool;
+                  tempBase = progress.baseScore;
+                  tempTarget = progress.targetScore;
+                  tempTargetDate = DateTime.parse(progress.targetTusDate);
+                  sheetLoading = false;
+                });
+              }
+            });
+          }
+
+          // Loading göster
+          if (sheetLoading) {
+            return Container(
+              height: 220,
+              decoration: BoxDecoration(
+                color: isDark ? AppTheme.background : Colors.white,
+                borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
+                border: Border.all(color: AppTheme.neonGold.withValues(alpha: 0.15), width: 1.5),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Center(child: Container(
+                    width: 40, height: 4,
+                    margin: const EdgeInsets.only(bottom: 32),
+                    decoration: BoxDecoration(
+                      color: AppTheme.textMuted.withValues(alpha: 0.3),
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                  )),
+                  CircularProgressIndicator(color: AppTheme.neonGold, strokeWidth: 2),
+                  const SizedBox(height: 16),
+                  Text('Veriler yükleniyor...', style: GoogleFonts.inter(color: subColor, fontSize: 13)),
+                ],
+              ),
+            );
+          }
+
           final targetStr = tempTargetDate.toIso8601String().split('T')[0];
           final recommendation = progress.copyWith(
             baseScore: tempBase,

@@ -1,4 +1,4 @@
-import 'dart:ui';
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -73,15 +73,44 @@ class _SpotsScreenState extends State<SpotsScreen> {
       }
     }
 
-    // spots.shuffle(Random()); // Rastgelelik kaldirildi — hile onleme icin sabit sira
+    final shuffled = _interleaveBySubject(spots);
 
     if (mounted) {
       setState(() {
-        _allSpots = spots;
-        _spots = spots;
+        _allSpots = shuffled;
+        _spots = List.from(shuffled);
         _loading = false;
       });
     }
+  }
+
+  /// Branşlara göre interleave karıştırma — her swipe'ta farklı branş
+  List<_SpotItem> _interleaveBySubject(List<_SpotItem> spots) {
+    final rng = Random();
+    final Map<String, List<_SpotItem>> bySubject = {};
+    for (final s in spots) {
+      bySubject.putIfAbsent(s.subject, () => []).add(s);
+    }
+    for (final list in bySubject.values) {
+      list.shuffle(rng);
+    }
+    final lists = bySubject.values.toList()..shuffle(rng);
+    final result = <_SpotItem>[];
+    int i = 0;
+    while (result.length < spots.length) {
+      bool added = false;
+      for (int attempt = 0; attempt < lists.length; attempt++) {
+        final list = lists[(i + attempt) % lists.length];
+        if (list.isNotEmpty) {
+          result.add(list.removeAt(0));
+          i = (i + attempt + 1) % lists.length;
+          added = true;
+          break;
+        }
+      }
+      if (!added) break;
+    }
+    return result;
   }
 
   void _filterBySubject(String? subjectId) {
@@ -92,7 +121,8 @@ class _SpotsScreenState extends State<SpotsScreen> {
       } else {
         final module = SubjectRegistry.findById(subjectId);
         if (module != null) {
-          _spots = _allSpots.where((s) => s.subject == module.name).toList();
+          _spots = _allSpots.where((s) => s.subject == module.name).toList()
+            ..shuffle(Random());
         }
       }
       _currentPage = 0;
@@ -133,23 +163,25 @@ class _SpotsScreenState extends State<SpotsScreen> {
         title: Text('Spot Bilgiler',
           style: GoogleFonts.inter(color: textColor, fontSize: 18, fontWeight: FontWeight.w800)),
         actions: [
-          if (!_loading && _spots.isNotEmpty)
-            Padding(
-              padding: const EdgeInsets.only(right: 8),
-              child: Center(
-                child: Text(
-                  '${_currentPage + 1}/${_spots.length}',
-                  style: GoogleFonts.inter(color: subColor, fontSize: 12, fontWeight: FontWeight.w600),
-                ),
+          if (!_loading && _spots.isNotEmpty) ...[
+            Center(
+              child: Text(
+                '${_currentPage + 1}/${_spots.length}',
+                style: GoogleFonts.inter(color: subColor, fontSize: 12, fontWeight: FontWeight.w600),
               ),
             ),
-          /*
-          IconButton(
-            icon: Icon(Icons.shuffle_rounded, color: AppTheme.cyan, size: 22),
-            tooltip: 'Karıştır',
-            onPressed: _shuffle,
-          ),
-          */
+            IconButton(
+              icon: Icon(Icons.shuffle_rounded, color: AppTheme.cyan, size: 20),
+              tooltip: 'Karıştır',
+              onPressed: () {
+                setState(() {
+                  _spots.shuffle(Random());
+                  _currentPage = 0;
+                });
+                if (_pageController.hasClients) _pageController.jumpToPage(0);
+              },
+            ),
+          ],
         ],
       ),
       body: _loading
@@ -171,23 +203,127 @@ class _SpotsScreenState extends State<SpotsScreen> {
                 ),
                 const SizedBox(height: 8),
 
-                // ── Spot Kartları (Dikey Kaydırma) ──
+                // ── Spot Kartları ──
                 Expanded(
                   child: _spots.isEmpty
                       ? Center(
                           child: Text('Bu kategoride spot bilgi yok',
                             style: GoogleFonts.inter(color: subColor, fontSize: 14)),
                         )
-                      : PageView.builder(
-                          controller: _pageController,
-                          scrollDirection: Axis.vertical,
-                          physics: const BouncingScrollPhysics(),
-                          itemCount: _spots.length,
-                          onPageChanged: (i) => setState(() => _currentPage = i),
-                          itemBuilder: (_, index) =>
-                              _SpotCard(spot: _spots[index], isDark: isDark),
+                      : GestureDetector(
+                          onTap: () {
+                            // Karta tıklayınca sonraki
+                            if (_currentPage < _spots.length - 1) {
+                              _pageController.nextPage(
+                                duration: const Duration(milliseconds: 300),
+                                curve: Curves.easeOutCubic,
+                              );
+                            }
+                          },
+                          child: PageView.builder(
+                            controller: _pageController,
+                            scrollDirection: Axis.vertical,
+                            physics: const BouncingScrollPhysics(),
+                            itemCount: _spots.length,
+                            onPageChanged: (i) => setState(() => _currentPage = i),
+                            itemBuilder: (_, index) =>
+                                _SpotCard(spot: _spots[index], isDark: isDark),
+                          ),
                         ),
                 ),
+
+                // ── Prev / Next Butonları ──
+                if (!_loading && _spots.isNotEmpty)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 4, 20, 16),
+                    child: Row(
+                      children: [
+                        // Önceki
+                        Expanded(
+                          child: GestureDetector(
+                            onTap: _currentPage > 0
+                                ? () => _pageController.previousPage(
+                                      duration: const Duration(milliseconds: 300),
+                                      curve: Curves.easeOutCubic,
+                                    )
+                                : null,
+                            child: AnimatedOpacity(
+                              opacity: _currentPage > 0 ? 1.0 : 0.3,
+                              duration: const Duration(milliseconds: 200),
+                              child: Container(
+                                height: 48,
+                                decoration: BoxDecoration(
+                                  color: isDark
+                                      ? Colors.white.withValues(alpha: 0.06)
+                                      : Colors.black.withValues(alpha: 0.04),
+                                  borderRadius: BorderRadius.circular(14),
+                                  border: Border.all(
+                                    color: isDark
+                                        ? Colors.white.withValues(alpha: 0.08)
+                                        : Colors.black.withValues(alpha: 0.06),
+                                  ),
+                                ),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Icon(Icons.arrow_upward_rounded,
+                                        size: 16,
+                                        color: isDark ? Colors.white70 : Colors.black54),
+                                    const SizedBox(width: 6),
+                                    Text('Önceki',
+                                        style: GoogleFonts.inter(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.w600,
+                                            color: isDark ? Colors.white70 : Colors.black54)),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 12),
+                        // Sonraki
+                        Expanded(
+                          flex: 2,
+                          child: GestureDetector(
+                            onTap: _currentPage < _spots.length - 1
+                                ? () => _pageController.nextPage(
+                                      duration: const Duration(milliseconds: 300),
+                                      curve: Curves.easeOutCubic,
+                                    )
+                                : null,
+                            child: AnimatedOpacity(
+                              opacity: _currentPage < _spots.length - 1 ? 1.0 : 0.3,
+                              duration: const Duration(milliseconds: 200),
+                              child: Container(
+                                height: 48,
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [
+                                    AppTheme.cyan.withValues(alpha: 0.8),
+                                    AppTheme.neonPurple.withValues(alpha: 0.7),
+                                  ]),
+                                  borderRadius: BorderRadius.circular(14),
+                                ),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text('Sonraki',
+                                        style: GoogleFonts.inter(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.w700,
+                                            color: Colors.white)),
+                                    const SizedBox(width: 6),
+                                    const Icon(Icons.arrow_downward_rounded,
+                                        size: 16, color: Colors.white),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
               ],
             ),
     );
@@ -245,139 +381,118 @@ class _SpotCard extends StatelessWidget {
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(24),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
-          child: Container(
-            decoration: BoxDecoration(
-              color: isDark
-                  ? spot.color.withValues(alpha: 0.06)
-                  : spot.color.withValues(alpha: 0.05),
-              borderRadius: BorderRadius.circular(24),
-              border: Border.all(
-                color: spot.color.withValues(alpha: 0.2), width: 1.5),
-              boxShadow: [
-                BoxShadow(
-                  color: spot.color.withValues(alpha: 0.08),
-                  blurRadius: 30, spreadRadius: 0,
-                ),
-              ],
+      child: Container(
+        decoration: BoxDecoration(
+          color: isDark
+              ? spot.color.withValues(alpha: 0.12)
+              : spot.color.withValues(alpha: 0.08),
+          borderRadius: BorderRadius.circular(24),
+          border: Border.all(
+            color: spot.color.withValues(alpha: 0.2), width: 1.5),
+          boxShadow: [
+            BoxShadow(
+              color: spot.color.withValues(alpha: 0.08),
+              blurRadius: 30, spreadRadius: 0,
             ),
-            child: Padding(
-              padding: const EdgeInsets.all(28),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // Konu Badge
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                    decoration: BoxDecoration(
-                      color: spot.color.withValues(alpha: 0.12),
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(color: spot.color.withValues(alpha: 0.25)),
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(Icons.local_fire_department_rounded,
-                            color: spot.color, size: 14),
-                        const SizedBox(width: 6),
-                        Flexible(
-                          child: Text(
-                            spot.topicName,
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: GoogleFonts.inter(
-                              color: spot.color,
-                              fontSize: 11,
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 24),
-
-                  // Spot Metin
-                  Expanded(
-                    child: Center(
+          ],
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(28),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Konu Badge
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                decoration: BoxDecoration(
+                  color: spot.color.withValues(alpha: 0.12),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: spot.color.withValues(alpha: 0.25)),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.local_fire_department_rounded,
+                        color: spot.color, size: 14),
+                    const SizedBox(width: 6),
+                    Flexible(
                       child: Text(
-                        spot.text,
+                        spot.topicName,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.inter(
-                          color: textColor,
-                          fontSize: 20,
+                          color: spot.color,
+                          fontSize: 11,
                           fontWeight: FontWeight.w700,
-                          height: 1.6,
-                          letterSpacing: -0.3,
                         ),
                       ),
                     ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 24),
+
+              // Spot Metin
+              Expanded(
+                child: Center(
+                  child: Text(
+                    spot.text,
+                    style: GoogleFonts.inter(
+                      color: textColor,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w700,
+                      height: 1.6,
+                      letterSpacing: -0.3,
+                    ),
                   ),
+                ),
+              ),
 
-                  const SizedBox(height: 16),
+              const SizedBox(height: 16),
 
-                  // Alt bilgi
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      // Kaynak
-                      Flexible(
-                        child: Text(
-                          '${spot.subject} — ${spot.chapter}',
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: GoogleFonts.inter(
-                            color: subColor, fontSize: 11, fontWeight: FontWeight.w500),
-                        ),
-                      ),
-                      // Kopyala butonu
-                      GestureDetector(
-                        onTap: () {
-                          Clipboard.setData(ClipboardData(text: spot.text));
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                              content: Text('Kopyalandı!',
-                                style: GoogleFonts.inter(fontWeight: FontWeight.w600)),
-                              duration: const Duration(seconds: 1),
-                              backgroundColor: AppTheme.cyan,
-                            ),
-                          );
-                        },
-                        child: Container(
-                          padding: const EdgeInsets.all(8),
-                          decoration: BoxDecoration(
-                            color: isDark
-                                ? Colors.white.withValues(alpha: 0.06)
-                                : Colors.black.withValues(alpha: 0.04),
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: Icon(Icons.copy_rounded, color: subColor, size: 16),
-                        ),
-                      ),
-                    ],
+              // Alt bilgi
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  // Kaynak
+                  Flexible(
+                    child: Text(
+                      '${spot.subject} — ${spot.chapter}',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: GoogleFonts.inter(
+                        color: subColor, fontSize: 11, fontWeight: FontWeight.w500),
+                    ),
                   ),
-
-                  const SizedBox(height: 8),
-
-                  // Kaydırma ipucu
-                  Center(
-                    child: Column(
-                      children: [
-                        Icon(Icons.keyboard_arrow_down_rounded,
-                            color: subColor.withValues(alpha: 0.4), size: 24),
-                        Text('Kaydır',
-                          style: GoogleFonts.inter(
-                            color: subColor.withValues(alpha: 0.3),
-                            fontSize: 10, fontWeight: FontWeight.w500)),
-                      ],
+                  // Kopyala butonu
+                  GestureDetector(
+                    onTap: () {
+                      Clipboard.setData(ClipboardData(text: spot.text));
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('Kopyalandı!',
+                            style: GoogleFonts.inter(fontWeight: FontWeight.w600)),
+                          duration: const Duration(seconds: 1),
+                          backgroundColor: AppTheme.cyan,
+                        ),
+                      );
+                    },
+                    child: Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: isDark
+                            ? Colors.white.withValues(alpha: 0.06)
+                            : Colors.black.withValues(alpha: 0.04),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Icon(Icons.copy_rounded, color: subColor, size: 16),
                     ),
                   ),
                 ],
               ),
-            ),
+
+            ],
           ),
         ),
       ),

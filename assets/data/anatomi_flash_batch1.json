@@ -1,0 +1,606 @@
+{
+  "subject": "Anatomi",
+  "type": "flashcard",
+  "cards": [
+    {
+      "id": "anafl-001",
+      "front": "N. radialis hangi kasın arkasında spiralize seyreder ve hangi fraktürde zarar görür?",
+      "back": "N. radialis, humerus cismi etrafında spiral kanalda (sulcus nervi radialis) seyreder. Humerus cisim kırıklarında en sık zarar gören sinirdir; 'düşen el' (wrist drop) tablosu oluşur.",
+      "tags": ["üst_ekstremite", "sinir", "radialis", "klinik"]
+    },
+    {
+      "id": "anafl-002",
+      "front": "N. ulnaris'in en sık sıkıştığı yer neresidir ve klinik bulgusu nedir?",
+      "back": "N. ulnaris en sık cubitus tünelinde (medial epikondil arkasındaki ulnar oluk) sıkışır. '4. ve 5. parmak pençe eli' (claw hand) ve hipotenardaki güç kaybı temel bulgulardır.",
+      "tags": ["üst_ekstremite", "sinir", "ulnaris", "klinik"]
+    },
+    {
+      "id": "anafl-003",
+      "front": "N. medianus hangi tünelde sıkışır ve hangi kasları innerve edemez?",
+      "back": "N. medianus karpal tünelde (flexor retinaculum altında) sıkışır; karpal tünel sendromu oluşur. Thenar kaslar (abductor pollicis brevis, opponens pollicis, flexor pollicis brevis yüzeyel başı) etkilenir, 'maymun eli' görülür.",
+      "tags": ["üst_ekstremite", "sinir", "medianus", "klinik"]
+    },
+    {
+      "id": "anafl-004",
+      "front": "N. axillaris hangi kırıkta ve hangi anatomik bölgede zarar görür?",
+      "back": "N. axillaris, humerus boyun kırığı veya glenohumeral eklem çıkığında zarar görür. Quadrangular aralıktan geçer; deltoid ve teres minor kaslarını innerve eder. Omuz lateralinde his kaybı ve deltoid paralizisi oluşur.",
+      "tags": ["üst_ekstremite", "sinir", "axillaris", "klinik"]
+    },
+    {
+      "id": "anafl-005",
+      "front": "N. musculocutaneus hangi kasları innerve eder ve duysal alanı neresidir?",
+      "back": "N. musculocutaneus (C5-C7), korakobrakiyalis, biseps brakii ve brakiyalisi motor olarak innerve eder. Ön kolun lateral yüzünde duysal dal (n. cutaneus antebrachii lateralis) olarak devam eder.",
+      "tags": ["üst_ekstremite", "sinir", "musculocutaneus"]
+    },
+    {
+      "id": "anafl-006",
+      "front": "N. femoralis lezyonunda hangi hareket kaybı ve hangi refleks kaybı görülür?",
+      "back": "N. femoralis (L2-L4) lezyonunda diz ekstansiyonu kaybı (quadriceps felci) ve diz refleksinin (patella refleksi) kaybı oluşur. Uyluk ön ve iç yüzünde his kaybı eşlik eder.",
+      "tags": ["alt_ekstremite", "sinir", "femoralis", "klinik"]
+    },
+    {
+      "id": "anafl-007",
+      "front": "N. ischiadicus hangi kasın altından geçer ve lezyonunda hangi bulgular çıkar?",
+      "back": "N. ischiadicus piriformis kasının altından (veya içinden) geçer; piriformis sendromuna yol açabilir. Bacakta tüm kasları etkiler; diz fleksiyonu, ayak dorsifleksiyonu ve plantarfleksiyonu kaybı görülür.",
+      "tags": ["alt_ekstremite", "sinir", "ischiadicus", "klinik"]
+    },
+    {
+      "id": "anafl-008",
+      "front": "N. peroneus communis en sık nerede sıkışır ve klinik tablosu nedir?",
+      "back": "N. peroneus communis fibula başının posterolateralinde sıkışır (alçı, bacak bacak üstüne atma). Ayak dorsifleksiyonu ve eversiyonu kaybolur; 'stepaj yürüyüşü' (foot drop) ve bacak lateralinde his kaybı görülür.",
+      "tags": ["alt_ekstremite", "sinir", "peroneus", "klinik"]
+    },
+    {
+      "id": "anafl-009",
+      "front": "N. tibialis lezyonunda hangi hareket ve refleks etkilenir?",
+      "back": "N. tibialis lezyonunda ayak plantarfleksiyonu ve inversiyonu kaybedilir. Aşil refleksi (S1-S2) kaybolur. Plantar yüzde his kaybı oluşur ve 'tırmanma yürüyüşü' yapılamaz.",
+      "tags": ["alt_ekstremite", "sinir", "tibialis", "klinik"]
+    },
+    {
+      "id": "anafl-010",
+      "front": "N. obturatorius hangi hareketi sağlar ve lezyonunda ne görülür?",
+      "back": "N. obturatorius (L2-L4) uyluk addüktörlerini innerve eder. Lezyonunda uyluk addüksiyonu kaybı ve iç uyluğun medialinde his kaybı oluşur; pelvik tümörlerde veya doğumda zarar görebilir.",
+      "tags": ["alt_ekstremite", "sinir", "obturatorius"]
+    },
+    {
+      "id": "anafl-011",
+      "front": "Quadrangular space'den hangi yapılar geçer?",
+      "back": "Quadrangular space (dörtgen aralık); üstte teres minor, altta teres major, medialde humerus uzun başı, lateralde humerus boynu arasındadır. İçinden n. axillaris ve a. circumflexa humeri posterior geçer.",
+      "tags": ["üst_ekstremite", "anatomik_nokta", "fossa"]
+    },
+    {
+      "id": "anafl-012",
+      "front": "Triangular space ve triangular interval'dan hangi yapılar geçer?",
+      "back": "Triangular space'den a. circumflexa scapulae geçer. Triangular interval'dan (alt üçgen aralık) a. profunda brachii ve n. radialis geçer; aşağı doğru kolun arka kompartmanına girer.",
+      "tags": ["üst_ekstremite", "anatomik_nokta", "damar"]
+    },
+    {
+      "id": "anafl-013",
+      "front": "Foramen ovale, rotundum ve spinosum'dan hangi yapılar geçer?",
+      "back": "Foramen rotundum: N. maxillaris (V2). Foramen ovale: N. mandibularis (V3) + a. meningea accessoria. Foramen spinosum: A. meningea media + ramus meningeus (V3).",
+      "tags": ["baş_boyun", "foramen", "kafa_siniri"]
+    },
+    {
+      "id": "anafl-014",
+      "front": "Jugular foramen'den hangi yapılar geçer?",
+      "back": "Jugular foramen'den N. glossopharyngeus (IX), N. vagus (X), N. accessorius (XI) ve v. jugularis interna geçer. Jugular foramen sendromunda bu sinirler etkilenir.",
+      "tags": ["baş_boyun", "foramen", "kafa_siniri"]
+    },
+    {
+      "id": "anafl-015",
+      "front": "İnfraoribital kanal hangi siniri taşır ve nereye açılır?",
+      "back": "İnfraorbital kanal, n. infraorbitalis'i (V2 dalı) taşır ve infraorbital foramenden maxilla ön yüzüne açılır. Alt göz kapağı, burun yanı ve üst dudak üçgeninde duyuyu sağlar.",
+      "tags": ["baş_boyun", "foramen", "sinir"]
+    },
+    {
+      "id": "anafl-016",
+      "front": "Hiatus semilunaris nerede bulunur ve hangi sinüsler buraya drene olur?",
+      "back": "Hiatus semilunaris, orta nazal meatusta (orta konka altında) bulunan yarım ay şekilli bir açıklıktır. Maksiller sinüs, frontal sinüs ve ön etmoid hücreler buraya drene olur.",
+      "tags": ["baş_boyun", "anatomi", "sinüs"]
+    },
+    {
+      "id": "anafl-017",
+      "front": "Karotis kanalı (canalis caroticus) hangi kemikte bulunur ve içinden ne geçer?",
+      "back": "Karotis kanalı temporal kemiğin petröz parçasında bulunur. İçinden a. carotis interna ve sempatik sinir pleksusu (karotikotimpanik lifler) geçer.",
+      "tags": ["baş_boyun", "damar", "kanal"]
+    },
+    {
+      "id": "anafl-018",
+      "front": "Optik kanal (canalis opticus) içinden hangi yapılar geçer?",
+      "back": "Optik kanaldan N. opticus (II. kafa siniri) ve a. ophthalmica geçer. Sfenoid kemiğin küçük kanadında bulunur; optik sinir kılıfı içinde beyin-omurilik sıvısı da bulunur.",
+      "tags": ["baş_boyun", "foramen", "kafa_siniri"]
+    },
+    {
+      "id": "anafl-019",
+      "front": "Fossa cranii posterior'un en büyük açıklığı hangisidir ve içinden ne geçer?",
+      "back": "Foramen magnum, fossa cranii posterior'un en büyük açıklığıdır. İçinden medulla oblongata, vertebral arterler (a. vertebralis), n. accessorius'un spinal kökleri ve ön spinal arter geçer.",
+      "tags": ["nöroanatomi", "foramen", "baş_boyun"]
+    },
+    {
+      "id": "anafl-020",
+      "front": "Internal capsule'ün (kapsül interna) ön bacağı (crus anterius) hangi lifleri taşır?",
+      "back": "Kapsül interna ön bacağı, frontopontin lifler ve talamokortikal lifleri (özellikle prefrontal-talamus bağlantıları) taşır. Caudat nucleus ile putamen arasında yer alır.",
+      "tags": ["nöroanatomi", "kapsül_interna"]
+    },
+    {
+      "id": "anafl-021",
+      "front": "Kapsül interna'nın genu'sünden (dizi) hangi lifler geçer?",
+      "back": "Kapsül interna genusundan kortikobulber lifler geçer. Bu lifler motor korteksten beyin sapı motor çekirdeklerine (n. facialis, n. hypoglossus vb.) projeksiyon taşır.",
+      "tags": ["nöroanatomi", "kapsül_interna"]
+    },
+    {
+      "id": "anafl-022",
+      "front": "Kapsül interna'nın arka bacağından (crus posterius) hangi önemli lifler geçer?",
+      "back": "Kapsül interna arka bacağından kortikospinal lifler (piramidal yol), talamik radyasyonlar (duysal) ve görme yolları (optik radyasyon — arka 1/3) geçer. Lezyonu kontralateral hemipleji ve hemianestezi yapar.",
+      "tags": ["nöroanatomi", "kapsül_interna"]
+    },
+    {
+      "id": "anafl-023",
+      "front": "Beyin sapında hangi kısımda 4. ventrikül tabanı bulunur ve buradaki önemli yapılar nelerdir?",
+      "back": "4. ventrikül tabanı pons ve medulla oblongata'nın arka yüzüdür. Önemli yapılar: facial colliculus (n. facialis + n. abducens çekirdeği), hypoglossal ve vagal üçgenler (12. ve 10. sinir çekirdekleri) ve area postrema (kusma merkezi).",
+      "tags": ["nöroanatomi", "beyin_sapı"]
+    },
+    {
+      "id": "anafl-024",
+      "front": "Serebellum'un korteks tabakaları ve Purkinje hücrelerinin yeri nedir?",
+      "back": "Serebellar korteks 3 tabakadan oluşur: dıştan içe moleküler tabaka, Purkinje hücre tabakası ve granüler tabaka. Purkinje hücreleri orta tabakadadır ve tek çıkan inhibitör nöronlardır (GABA-erjik).",
+      "tags": ["nöroanatomi", "serebellum"]
+    },
+    {
+      "id": "anafl-025",
+      "front": "Diyafragmayı delerek geçen yapılar ve geçiş seviyeleri nelerdir?",
+      "back": "T8 seviyesi: v. cava inferior + n. phrenicus dextra. T10 seviyesi: özofagus + n. vagus (ön-arka). T12 seviyesi: aorta + ductus thoracicus + v. azygos. 'Ten aTe iZ' kuralı ile hatırlanır.",
+      "tags": ["toraks", "diyafragma", "damar"]
+    },
+    {
+      "id": "anafl-026",
+      "front": "Pulmoner kapak kaç adet yaprakçığa sahiptir ve oskültasyon alanı neresidir?",
+      "back": "Pulmoner kapak 3 yaprakçıklıdır (triküspit semilunar kapak). Oskültasyon alanı sol 2. interkostal aralık, sternum kenarıdır. Diastolde kapanır; sistolik ejeksiyon üfürümü pulmoner stenozda duyulur.",
+      "tags": ["toraks", "kalp", "kapak"]
+    },
+    {
+      "id": "anafl-027",
+      "front": "Aort kapağının (aortic valve) yaprakçıkları hangileridir ve oskültasyon alanı neresidir?",
+      "back": "Aort kapağı sağ, sol ve arka (posterior/non-coronary) olmak üzere 3 yaprakçığa sahiptir. Sağ ve sol yaprakçıkların dibinden koroner arterler çıkar. Oskültasyon alanı sağ 2. interkostal aralık, sternum kenarıdır.",
+      "tags": ["toraks", "kalp", "kapak", "damar"]
+    },
+    {
+      "id": "anafl-028",
+      "front": "Sol atrium (aurikula sinistra) hangi yapıyla komşudur ve bu klinik önemi nedir?",
+      "back": "Sol atrium önde özofagusla komşudur. Sol atrium genişlemesinde (mitral stenoz) özofagus öne itilir; baryumlu grafilerde 'özofagus izi' görülür ve disfaji ortaya çıkabilir.",
+      "tags": ["toraks", "kalp", "klinik"]
+    },
+    {
+      "id": "anafl-029",
+      "front": "Sinus coronarius nereye açılır ve hangi büyük venleri alır?",
+      "back": "Sinus coronarius sağ atriumun arka duvarına (atriuma açılır, fossa ovalis yakınında) drene olur. V. cordis magna, v. cordis media ve v. cordis parva başlıca dallarıdır.",
+      "tags": ["toraks", "kalp", "damar"]
+    },
+    {
+      "id": "anafl-030",
+      "front": "Akciğerin hangi lobu en uzun ve en geniş bronş dalına sahiptir? Klinik önemi nedir?",
+      "back": "Sağ akciğer alt lobu apikal segmentinin (S6) bronşu en dik açıyla ana bronşa katılır. Yabancı cisimler dik pozisyonda sağ ana bronşa (daha geniş ve dik), yatar pozisyonda sağ üst ve alt lob posterior segmentlerine gider.",
+      "tags": ["toraks", "akciğer", "klinik"]
+    },
+    {
+      "id": "anafl-031",
+      "front": "Plevranın viseral ve parietal katmanları arasındaki anatomik ayrım nedir?",
+      "back": "Viseral plevra akciğer yüzeyine yapışık olup duyussuzdur (somatik sinir yok). Parietal plevra göğüs duvarı, diyafragma ve mediasteni örter; somatik sinirle (n. phrenicus ve interkostal sinirler) innerve edilir, ağrı hisseder.",
+      "tags": ["toraks", "plevra"]
+    },
+    {
+      "id": "anafl-032",
+      "front": "Retroperitoneal organlar hangileridir? (SADPUCKER kuralı)",
+      "back": "S-Suprarenal bezler, A-Aorta/IVC, D-Duodenum (2-3. kısım), P-Pankreas (kuyruk hariç), U-Üreter, C-Kolon (çıkan ve inen), K-Böbrekler (Kidney), E-Özofagus (alt), R-Rektum (alt 2/3). Primer retroperitoneal organlardır.",
+      "tags": ["karın_pelvis", "retroperitoneal"]
+    },
+    {
+      "id": "anafl-033",
+      "front": "Appendiks vermiformis'in kökü nerede bulunur ve McBurney noktası neresidir?",
+      "back": "Appendiks, çekumun posteromedial yüzünde tenia coli'lerin birleştiği noktadan köken alır. McBurney noktası; umbilikus ile sağ spina iliaca anterior superior'u birleştiren çizginin dış 1/3 ile iç 2/3 birleşim yeridir.",
+      "tags": ["karın_pelvis", "klinik", "landmark"]
+    },
+    {
+      "id": "anafl-034",
+      "front": "Peritoneum'un hangi bölgesi Douglas poşunu (excavatio rectouterina) oluşturur?",
+      "back": "Douglas poşu kadında rektum ile uterus arasındaki peritoneal çıkmaz-kese'dir (excavatio rectouterina). Peritoneal boşluğun en alçak noktasıdır; infeksiyonlar ve kanlar burada birikir; posterior vajinal forniksten aspire edilebilir.",
+      "tags": ["karın_pelvis", "periton", "pelvis"]
+    },
+    {
+      "id": "anafl-035",
+      "front": "Omentum minus (küçük omentum) hangi yapılar arasında uzanır ve ne içerir?",
+      "back": "Omentum minus, karaciğer hilus'u ile kurvatura minor gastrika ve duodenum'un ilk kısmı arasında uzanır. Serbest kenarında portal triad bulunur: v. portae (arkada), a. hepatica propria (solda), ductus choledochus (sağda).",
+      "tags": ["karın_pelvis", "periton", "damar"]
+    },
+    {
+      "id": "anafl-036",
+      "front": "Winslow foramen (foramen epiploicum) hangi yapılarla sınırlandırılır?",
+      "back": "Winslow foramen; önde omentum minus serbest kenarı (portal triad), arkada IVC, üstte karaciğer kaudal lobu, altta duodenum 1. kısmı ile sınırlandırılır. Bursa omentalis'e (küçük peritoneal kese) geçiş kapısıdır.",
+      "tags": ["karın_pelvis", "periton"]
+    },
+    {
+      "id": "anafl-037",
+      "front": "Ductus choledochus hangi yapılarla birleşerek nereye açılır?",
+      "back": "Ductus choledochus, ductus pancreaticus (Wirsung) ile birleşerek ampulla Vateri'yi oluşturur. Duodenum'un 2. kısmına (pars descendens) papilla duodeni major'den açılır. Sfinkter Oddi bu noktayı kontrollar.",
+      "tags": ["karın_pelvis", "safra_yolu", "pankreas"]
+    },
+    {
+      "id": "anafl-038",
+      "front": "A. mesenterica superior hangi vertebra hizasında çıkar ve hangi organları besler?",
+      "back": "A. mesenterica superior L1 hizasında aortadan çıkar. Pankreas başı/boynu, duodenum alt kısımları, jejunum, ileum, çıkan kolon ve transvers kolonun 2/3'ünü besler. L1'de a. mesenterica superior ile aorta arasında sol renal ven sıkışabilir (nutcracker sendromu).",
+      "tags": ["karın_pelvis", "damar", "anatomik_nokta"]
+    },
+    {
+      "id": "anafl-039",
+      "front": "Portal hipertansiyonda hangi porto-sistemik anastomozlar genişler?",
+      "back": "1) Özofagus alt 1/3: v. gastrica sinistra ↔ v. azygos (özofageal varis). 2) Rektum: v. rectalis superior ↔ v. rectalis media/inferior (hemoroid). 3) Paraumbilikal: v. paraumbilicalis ↔ epigastrik venler (caput medusae). 4) Retroperitoneal: Retzius venleri.",
+      "tags": ["karın_pelvis", "damar", "klinik"]
+    },
+    {
+      "id": "anafl-040",
+      "front": "Femoral üçgenin (Scarpa üçgeni) sınırları ve içerikleri nelerdir?",
+      "back": "Scarpa üçgeni; üstte inguinal ligaman, medialde m. adductor longus medial kenarı, lateralde m. sartorius medial kenarıyla sınırlıdır. İçerdiği yapılar (dıştan içe): N. femoralis, A. femoralis, V. femoralis (NAVe). Lenfatikler en medialdedir.",
+      "tags": ["alt_ekstremite", "damar", "anatomik_nokta", "landmark"]
+    },
+    {
+      "id": "anafl-041",
+      "front": "İnguinal kanal hangi iki açıklık arasında uzanır ve içinden ne geçer?",
+      "back": "İnguinal kanal, anulus inguinalis profundus (derin halka) ile anulus inguinalis superficialis (yüzeyel halka) arasında uzanır. Erkekte spermatik kordon (+ genital sinir), kadında ligamentum teres uteri geçer. N. ilioinguinalis her iki cinsiyette kanalda bulunur.",
+      "tags": ["karın_pelvis", "kanal", "klinik"]
+    },
+    {
+      "id": "anafl-042",
+      "front": "Direkt ve indirekt inguinal herni arasındaki anatomik fark nedir?",
+      "back": "İndirekt herni: anulus inguinalis profundustan girer, spermatik kordonu sarar, konjenital (processus vaginalis açık kalması). Direkt herni: Hesselbach üçgeninden (epigastrik damarların mediali) çıkar, edinseldir, tipik olarak yaşlı erkeklerde görülür.",
+      "tags": ["karın_pelvis", "klinik", "herni"]
+    },
+    {
+      "id": "anafl-043",
+      "front": "A. carotis communis sinistra ile dextra'nın kökeni neden farklıdır?",
+      "back": "A. carotis communis dextra, truncus brachiocephalicus'tan (brakiyosefalik gövde) köken alır. A. carotis communis sinistra doğrudan aortik arktan (arcus aortae) çıkar. Bu nedenle sol karotid sol subklavyen sonrası üçüncü dal; sağ karotid brakiyosefalik gövdenin dalıdır.",
+      "tags": ["baş_boyun", "damar", "karotis"]
+    },
+    {
+      "id": "anafl-044",
+      "front": "A. carotis interna'nın beyne girdiği yer ve dalları nelerdir?",
+      "back": "A. carotis interna karotis kanalından geçer, kavernöz sinüste S şekli yapar (karotis sifonu), sonra dura'yı delerek subaraknoid boşluğa girer. Dalları: a. ophthalmica, a. communicans posterior, a. choroidea anterior, a. cerebri anterior ve a. cerebri media.",
+      "tags": ["baş_boyun", "damar", "karotis"]
+    },
+    {
+      "id": "anafl-045",
+      "front": "Kavernöz sinüste hangi kafa sinirleri bulunur?",
+      "back": "Kavernöz sinüsün lateral duvarında (dıştan içe): N. oculomotorius (III), N. trochlearis (IV), N. ophthalmicus (V1), N. maxillaris (V2). Kavernöz sinüs içinde: N. abducens (VI) ve a. carotis interna. Kavernöz sinüs trombozu tüm bu sinirleri etkiler.",
+      "tags": ["baş_boyun", "kafa_siniri", "kavernöz_sinüs"]
+    },
+    {
+      "id": "anafl-046",
+      "front": "N. facialis (VII) hangi kemik kanaldan geçer ve kaç bölümü vardır?",
+      "back": "N. facialis fasiyal kanaldan (canalis nervi facialis, temporal kemik) geçer. 3 bölümü: labirentin bölüm (kısa, geniculate ganglion içerir), timpanik bölüm, mastoid bölüm. Stilomastoid foramenden çıkarak yüz kaslarını innerve eder.",
+      "tags": ["baş_boyun", "kafa_siniri", "n_facialis"]
+    },
+    {
+      "id": "anafl-047",
+      "front": "Chorda tympani hangi sinirin dalıdır ve ne taşır?",
+      "back": "Chorda tympani, N. facialis'in (VII) bir dalıdır. N. lingualis (V3 dalı) ile birleşerek dilin ön 2/3'ünün tad duyusunu ve submandibular + sublingual bezlere parasempatik lifler taşır. Orta kulaktan geçer.",
+      "tags": ["baş_boyun", "kafa_siniri", "n_facialis"]
+    },
+    {
+      "id": "anafl-048",
+      "front": "Boyun segmentleri (anterior servikal üçgen ve posterior servikal üçgen) neleri içerir?",
+      "back": "Anterior servikal üçgen (m. sternocleidomastoideus ön, mandibula, orta hat): karotis bifurkasyonu, juguler ven, hipoglossal sinir, tiroid, larenks. Posterior servikal üçgen (SCM arka, trapezius ön, klavikula): n. accessorius (XI), brakiyal pleksus, subklavyen damarlar.",
+      "tags": ["baş_boyun", "boyun", "anatomik_nokta"]
+    },
+    {
+      "id": "anafl-049",
+      "front": "N. vagus (X) hangi foramenden çıkar ve thorax'ta ne yapar?",
+      "back": "N. vagus jugular foramenden çıkar. Göğüste: sağ vagus aort arkını çaprazlar (n. laryngeus recurrens sağda subklavyen arteri sarar), sol vagus arkus aortayı sarar ve sol n. laryngeus recurrens'i verir. Özofajeal pleksus oluşturur.",
+      "tags": ["baş_boyun", "toraks", "kafa_siniri"]
+    },
+    {
+      "id": "anafl-050",
+      "front": "N. laryngeus recurrens sol tarafta nereyi sarar ve klinik önemi nedir?",
+      "back": "Sol n. laryngeus recurrens arkus aortayı sarar ve mediastende uzun seyreder. Aort anevrizması, sol akciğer apeks tümörü (Pancoast) veya sol hiler lenf bezi büyümesi bu siniri sıkıştırabilir; hoarseness (ses kısıklığı) oluşur.",
+      "tags": ["baş_boyun", "toraks", "kafa_siniri", "klinik"]
+    },
+    {
+      "id": "anafl-051",
+      "front": "Popliteal fossa'nın içeriği nedir?",
+      "back": "Popliteal fossa; dört yüz kemiği tarafından sınırlandırılır (üstte semimembranosus-semitendinosus ve biseps femoris, altta gastroknemius başları). İçeriği (derinden yüzeye): popliteal arter ve ven, n. tibialis, n. peroneus communis, yağ dokusu.",
+      "tags": ["alt_ekstremite", "anatomik_nokta", "damar", "sinir"]
+    },
+    {
+      "id": "anafl-052",
+      "front": "M. deltoideus hangi kaslarla antagonistik çalışır ve innervasyonu nedir?",
+      "back": "M. deltoideus ön lifleriyle fleksiyon, orta lifleriyle abdüksiyon, arka lifleriyle ekstansiyon yapar. N. axillaris (C5-C6) tarafından innerve edilir. Antagonisti: m. latissimus dorsi ve m. pectoralis major (addüksiyoncular).",
+      "tags": ["üst_ekstremite", "kas", "sinir"]
+    },
+    {
+      "id": "anafl-053",
+      "front": "Rotator cuff kasları hangileridir ve origo-insersiyoları nelerdir?",
+      "back": "SITS: Supraspinatus (fossa supraspinata → humerus büyük tüberkül üst yüz), Infraspinatus (fossa infraspinata → büyük tüberkül orta yüz), Teres minor (skapula lateral kenar → büyük tüberkül alt yüz), Subscapularis (fossa subscapularis → küçük tüberkül). Hepsinin görevi glenohumeral eklem stabilizasyonudur.",
+      "tags": ["üst_ekstremite", "kas", "origo_insersio"]
+    },
+    {
+      "id": "anafl-054",
+      "front": "M. biceps brachii'nin origo ve insersiyosu nedir?",
+      "back": "Origo: uzun başı supraglenoid tüberkül (intrakapsüler), kısa başı korakoid çıkıntı. İnsersio: radius tuberositesi ve brakiyal aponövroz (bicipital aponeurosis). Supinasyon + fleksiyon + zayıf addüksiyon yapar.",
+      "tags": ["üst_ekstremite", "kas", "origo_insersio"]
+    },
+    {
+      "id": "anafl-055",
+      "front": "M. iliopsoas hangi iki kastan oluşur ve origo-insersiyosu nedir?",
+      "back": "M. iliopsoas = m. iliacus (fossa iliaca) + m. psoas major (T12-L5 korpus ve transvers çıkıntılar). İkisi birleşerek lesser trochanter'e (küçük trokanter) insersio yapar. Kalça fleksiyonunun en güçlü kasıdır.",
+      "tags": ["karın_pelvis", "alt_ekstremite", "kas", "origo_insersio"]
+    },
+    {
+      "id": "anafl-056",
+      "front": "Gluteus maximus hangi hareketi yapar ve innervasyonu nedir?",
+      "back": "Gluteus maximus kalça ekstansiyonu ve eksternal rotasyonunun en güçlü kasıdır. N. gluteus inferior (L5-S2) tarafından innerve edilir. İnsersiyosu: iliotibial band ve gluteal tuberosity. Trendelenburg testi pozitifliğinde m. gluteus medius yetersizliği vardır.",
+      "tags": ["alt_ekstremite", "kas", "sinir"]
+    },
+    {
+      "id": "anafl-057",
+      "front": "Quadriceps femoris hangi dört kastan oluşur ve ortak insersiyosu nedir?",
+      "back": "Quadriceps femoris: rectus femoris (SIAS + asetabulum üstü), vastus medialis, vastus lateralis, vastus intermedius. Dört kas ligamentum patellae aracılığıyla tibial tüberkuluma insersio yapar. N. femoralis (L2-L4) innerve eder.",
+      "tags": ["alt_ekstremite", "kas", "origo_insersio"]
+    },
+    {
+      "id": "anafl-058",
+      "front": "Tibialis anterior'un origo ve insersiyosu ve fonksiyonu nedir?",
+      "back": "Origo: tibia lateral yüzü ve interosseöz membran. İnsersio: medial cuneiform ve 1. metatars tabanı. Dorsifleksiyon ve inversiyonu sağlar; n. peroneus profundus innerve eder. Lezyonunda 'foot drop' gelişir.",
+      "tags": ["alt_ekstremite", "kas", "origo_insersio"]
+    },
+    {
+      "id": "anafl-059",
+      "front": "A. femoralis'in önemli dalları nelerdir?",
+      "back": "A. femoralis'in ana dalı a. profunda femoris'tir (femoral üçgende, inguinal liganın 4 cm altında ayrılır). A. profunda femoris'ten a. circumflexa femoris medialis ve lateralis çıkar. A. femoralis adductor kanaldan geçerek popliteal artere dönüşür.",
+      "tags": ["alt_ekstremite", "damar"]
+    },
+    {
+      "id": "anafl-060",
+      "front": "Popliteal arterin dallanma düzeni nedir?",
+      "back": "Popliteal arter; dizin genikular arterlerini verdikten sonra fibula boynunda anterior ve posterior tibial arterlere ayrılır. A. tibialis anterior interossöz membrandan öne geçerek a. dorsalis pedis olur. A. tibialis posterior malleol arkasından geçerek a. plantaris medialis ve lateralis'e ayrılır.",
+      "tags": ["alt_ekstremite", "damar"]
+    },
+    {
+      "id": "anafl-061",
+      "front": "Arterial circle of Willis (Willis poligonu) hangi arterlerden oluşur?",
+      "back": "Willis poligonu: 2× a. cerebri anterior, 1× a. communicans anterior, 2× a. carotis interna, 2× a. communicans posterior, 2× a. cerebri posterior. A. cerebri posterior'lar a. basilaris'ten köken alır. Komplet bir halkada kan dolaşımı redastrüe edilebilir.",
+      "tags": ["nöroanatomi", "damar"]
+    },
+    {
+      "id": "anafl-062",
+      "front": "A. cerebri media lezyonunda hangi klinik bulgular oluşur?",
+      "back": "A. cerebri media (MCA) lezyonu: kontralateral hemiplejia (yüz + kol > bacak), kontralateral hemianestezi, kontralateral homonim hemianopsi. Dominant hemisfer lezyonunda afazi, non-dominant hemisfer lezyonunda ihmal (neglect) görülür.",
+      "tags": ["nöroanatomi", "damar", "klinik"]
+    },
+    {
+      "id": "anafl-063",
+      "front": "A. cerebri posterior lezyonunda hangi görsel defekt oluşur?",
+      "back": "A. cerebri posterior oksipital lobu besler. Lezyonunda kontralateral homonim hemianopsi oluşur; ancak maküler alan bağımsız beslendiği için maküler görme korunabilir (maküler korunma). Talamusun da etkilenmesiyle hemianestezi eklenebilir.",
+      "tags": ["nöroanatomi", "damar", "klinik"]
+    },
+    {
+      "id": "anafl-064",
+      "front": "Subaraknoid hemoraji en sık hangi damarın lezyonunda görülür ve klinik belirtisi nedir?",
+      "back": "Subaraknoid hemoraji en sık a. communicans anterior anevrizmasının rüptüründe görülür (en sık yer). Ani başlayan 'hayatımın en şiddetli başağrısı' (thunder clap headache), ense sertliği, ışık hassasiyeti, kusma klasik bulgulardır.",
+      "tags": ["nöroanatomi", "damar", "klinik"]
+    },
+    {
+      "id": "anafl-065",
+      "front": "Epidural hematom hangi damarın lezyonunda oluşur ve BT görünümü nedir?",
+      "back": "Epidural hematom en sık a. meningea media dalının temporal kemik kırığında zedelenmesiyle oluşur. BT'de temporal bölgede bikonveks (lenste şekli) hematom görülür. Lucid interval (bilinç açıklık dönemi) klasik bulgudur.",
+      "tags": ["nöroanatomi", "damar", "klinik"]
+    },
+    {
+      "id": "anafl-066",
+      "front": "Subdural hematom hangi damardan kaynaklanır ve klinik seyri nedir?",
+      "back": "Subdural hematom köprü venlerinin (bridging veins) yırtılmasından kaynaklanır. Dura ile araknoid arasında birikir; BT'de konkav (ayın orak şekli) görünüm verir. Yaşlı ve alkoliklerde kronik subdural hematom görülebilir; başağrısı ve dalgalı bilinç değişikliği.",
+      "tags": ["nöroanatomi", "damar", "klinik"]
+    },
+    {
+      "id": "anafl-067",
+      "front": "Herniation türleri nelerdir? Unkal herniasyonun klinik bulgusu nedir?",
+      "back": "Unkal herniasyon: temporal lob uncus'u tentorium kenarından geçer. İpsilateral n. oculomotorius (III) sıkışır → midriyazis (dilate pupil), ptosis, 'down and out' göz; kontralateral hemipleji. Santral herniasyon (transtentorial), subfalsin (singulat girus) ve tonsiller herniasyon da diğer tipleridir.",
+      "tags": ["nöroanatomi", "klinik", "herniasyon"]
+    },
+    {
+      "id": "anafl-068",
+      "front": "Beyin sapında 'crossed' (çapraz) bulgular neden önemlidir?",
+      "back": "Beyin sapı lezyonlarında ipsilateral kafa siniri defekti + kontralateral vücut motor/duysal defekti (çapraz bulgular) görülür; çünkü kafa siniri çekirdekleri lezyon seviyesinde, kortikospinal yol ise henüz çapraz yapmamıştır. Bu durum beyin sapı lezyonunu serebral korteks lezyonundan ayırır.",
+      "tags": ["nöroanatomi", "beyin_sapı", "klinik"]
+    },
+    {
+      "id": "anafl-069",
+      "front": "Wallenberg (lateral medüller) sendromunda hangi bulgular görülür?",
+      "back": "PICA (posterior inferior cerebellar artery) tıkanıklığında Wallenberg sendromu: ipsilateral yüzde duysal kayıp, ipsilateral Horner sendromu, ipsilateral serebellar bulgular, disfaji/dizartri, kontralateral vücutta ağrı-ısı kaybı (spinotalamik yol).",
+      "tags": ["nöroanatomi", "damar", "klinik", "beyin_sapı"]
+    },
+    {
+      "id": "anafl-070",
+      "front": "Horner sendromu hangi sempatik yolun kesilmesiyle oluşur ve belirtileri nelerdir?",
+      "back": "Horner sendromu sempatik yolun herhangi bir seviyesinde (hipotalamus → ciliospinal merkez C8-T2 → superior servikal ganglion → göz) kesilmesiyle oluşur. Bulgular: miyozis (daralmış pupil), pitozis (düşük kapak), anhidroz (yüzde terleme azalması), enoftalmos.",
+      "tags": ["nöroanatomi", "klinik", "sempatik"]
+    },
+    {
+      "id": "anafl-071",
+      "front": "Muskuler üçgen (muscular triangle) hangi kasları içerir ve klinik önemi nedir?",
+      "back": "Boyun musküler üçgeni: m. sternohyoid, m. sternothyroid, m. omohyoid alt karın arasındadır. Tiroid bezi bu üçgende bulunur; boyun midline insizyonları bu üçgenden yapılır. Strap kaslar retraksiyon için kullanılır.",
+      "tags": ["baş_boyun", "boyun", "kas", "landmark"]
+    },
+    {
+      "id": "anafl-072",
+      "front": "Tiroid bezinin arteryel beslenmesi hangi damarlardan olur?",
+      "back": "Tiroid bezi: a. thyroidea superior (a. carotis externa'nın ilk dalı) ve a. thyroidea inferior (truncus thyrocervicalis'ten). Bazen a. thyroidea ima (arcus aortadan veya trunkus brachiocephalicustan) eklenir. A. thyroidea inferior, n. laryngeus recurrens'e çok yakındır; tiroidektomide dikkat gerektirir.",
+      "tags": ["baş_boyun", "damar", "tiroid", "klinik"]
+    },
+    {
+      "id": "anafl-073",
+      "front": "İnternal juguler ven nerede başlar ve nerede sonlanır?",
+      "back": "V. jugularis interna, jugular foramende sigmoid sinüsün devamı olarak başlar. Vagal kılıf (carotid sheath) içinde a. carotis interna/communis ile inerken klavikula altında v. subclavia ile birleşerek v. brachiocephalica'yı oluşturur.",
+      "tags": ["baş_boyun", "damar", "boyun"]
+    },
+    {
+      "id": "anafl-074",
+      "front": "N. hypoglossus (XII) hangi foramenden çıkar ve hangi kası innerve etmez?",
+      "back": "N. hypoglossus hypoglossal kanaldan (canalis hypoglossi) çıkar ve dilin tüm intrinsik ve ekstrinsik kaslarını innerve eder; palatoglossus hariç (n. vagus/XI innerve eder). Lezyonunda dil ipsilateral tarafa deviye olur (genioglossus etkisiz kalır).",
+      "tags": ["baş_boyun", "kafa_siniri", "n_hypoglossus"]
+    },
+    {
+      "id": "anafl-075",
+      "front": "N. glossopharyngeus (IX)'un duysal ve motor görevleri nelerdir?",
+      "back": "Duysal: dilin arka 1/3 genel duyusu + tad, farenksin duyusu, orta kulak + östaki tüpü, karotid cisim/sinüs baroreseptörleri. Motor: m. stylopharyngeus (tek). Parasempatik: parotis bezi (inferior salivatory nucleus → otic ganglion aracılığıyla).",
+      "tags": ["baş_boyun", "kafa_siniri"]
+    },
+    {
+      "id": "anafl-076",
+      "front": "Diyafragmanın motor innervasyonu hangi sinirden gelir?",
+      "back": "Diyafragmanın motor innervasyonu n. phrenicus'tan (C3-C4-C5, 'C3-4-5 keeps the diaphragm alive') gelir. Duysal innervasyon: merkezi kısım n. phrenicus, periferik kısım interkostal sinirler (T6-T12). Tek taraflı phrenicus lezyonunda hemidiyafragma paralizisi oluşur.",
+      "tags": ["toraks", "diyafragma", "sinir"]
+    },
+    {
+      "id": "anafl-077",
+      "front": "Truncus coeliacus hangi vertebra hizasında çıkar ve kaç dala ayrılır?",
+      "back": "Truncus coeliacus T12 hizasında aortanın ön yüzünden çıkar. 3 dala ayrılır: a. gastrica sinistra (özofagus + kurvatura minor), a. hepatica communis (karaciğer + mide + duodenum + pankreas), a. splenica (dalak + pankreas kuyruğu + mide büyük kurvatürü).",
+      "tags": ["karın_pelvis", "damar"]
+    },
+    {
+      "id": "anafl-078",
+      "front": "A. renalis'lerin kökeni ve renal hilus ilişkisi nedir?",
+      "back": "Her iki a. renalis L1-L2 hizasında aortadan çıkar. Sağ renal arter IVC'nin arkasından geçerek (daha uzun) böbreğe ulaşır. Renal hilus yapıları önden arkaya: v. renalis, a. renalis, pelvis renalis (VAPe). Sağ renal ven daha kısadır; sol adrenal ve gonadal venleri alır.",
+      "tags": ["karın_pelvis", "damar", "böbrek"]
+    },
+    {
+      "id": "anafl-079",
+      "front": "Böbreğin retroperitoneal yeri ve komşulukları nelerdir?",
+      "back": "Böbrekler T12-L3 arasındadır; sağ böbrek sol böbreğin yaklaşık 1-2 cm altındadır (karaciğer nedeniyle). Ön komşu: sağ böbrek üstü karaciğer, sağ kolon fleksürü, duodenum 2. kısım. Sol böbrek üstü dalak, kolon sol fleksürü, pankreas kuyruğu.",
+      "tags": ["karın_pelvis", "böbrek", "retroperitoneal"]
+    },
+    {
+      "id": "anafl-080",
+      "front": "Obturator kanal nerede bulunur ve içinden ne geçer?",
+      "back": "Obturator kanal, obturator membranın üst kenarında, pubik ramın altında yer alır. İçinden n. obturatorius ve obturator damarlar (a./v. obturatoria) geçer. Obturator herni bu kanaldan gelişir; Howship-Romberg bulgusu (diz iç yüzünde ağrı) vere bilir.",
+      "tags": ["karın_pelvis", "kanal", "sinir", "klinik"]
+    },
+    {
+      "id": "anafl-081",
+      "front": "M. piriformis nerede başlar ve biter ve hangi yapıların geçiş noktasıdır?",
+      "back": "M. piriformis sakrumun ön yüzünden başlar, greater sciatic foramen'den geçerek femur büyük trokanterinin üstüne insersio yapar. Greater sciatic foramen'i iki bölüme ayırır: üstünden superior gluteal damar/sinir, altından n. ischiadicus, n. pudendus ve inferior gluteal sinir geçer.",
+      "tags": ["karın_pelvis", "kas", "anatomik_nokta"]
+    },
+    {
+      "id": "anafl-082",
+      "front": "Canalis analis'te (anal kanal) dentate (pektinate) çizginin klinik önemi nedir?",
+      "back": "Dentate çizginin üstü: entoderm kökenli, iç hemoroidler, duyussuzdur (otonomik innervasyon), lenf üst rektal/inferior mezenterik lenf nodlarına drene olur. Altı: ektoderm kökenli, dış hemoroidler, ağrılıdır (somatik innervasyon), inguinal lenf nodlarına drene olur.",
+      "tags": ["karın_pelvis", "kanal", "klinik", "landmark"]
+    },
+    {
+      "id": "anafl-083",
+      "front": "Pudendalkanal (Alcock kanalı) nerede bulunur ve ne içerir?",
+      "back": "Pudendal kanal (Alcock kanalı) ischiorektal fossanın lateral duvarında, obturator fasya katları arasında bulunur. N. pudendus, a./v. pudenda interna içerir. Pudendal blok uygulama yeri ischial spin yakınıdır; perine cerrahisinde önemlidir.",
+      "tags": ["karın_pelvis", "kanal", "sinir", "klinik"]
+    },
+    {
+      "id": "anafl-084",
+      "front": "M. trapezius'un innervasyonu nedir ve lezyonunda ne görülür?",
+      "back": "M. trapezius, n. accessorius (XI. kafa siniri) tarafından innerve edilir (motor) + C3-C4 spinal duysal. Lezyonunda omuz düşüklüğü, skapula lateralize olur, el başa kaldırılamaz (üst liman kayıpları). Boyun posterior segmentinde biyopsilerde riski vardır.",
+      "tags": ["baş_boyun", "kas", "kafa_siniri", "klinik"]
+    },
+    {
+      "id": "anafl-085",
+      "front": "Servikal omurga'nın hangi seviyesinde karotid bifurkasyonu olur?",
+      "back": "A. carotis communis yaklaşık C4 (tiroid kıkırdağı üst sınırı) hizasında a. carotis interna ve a. carotis externa olarak ayrılır. Karotid sinüs (baroreseptör) bu bifurkasyonda bulunur. Boyun diseksiyonu sırasında bu referans nokta kullanılır.",
+      "tags": ["baş_boyun", "damar", "landmark"]
+    },
+    {
+      "id": "anafl-086",
+      "front": "Temporal kemik petröz parçasının içinden geçen önemli yapılar nelerdir?",
+      "back": "Petröz temporal kemik: fasiyal kanal (n. VII), iç kulak yolu (n. VIII ve a. labyrinthi), karotis kanalı (a. carotis interna), koklea, semisirküler kanallar, kavernöz sinüs medialinden geçer. Petröz apeks tümörleri birden fazla siniri etkiler.",
+      "tags": ["baş_boyun", "kemik", "anatomik_nokta"]
+    },
+    {
+      "id": "anafl-087",
+      "front": "Serebellopontin köşe (CPA angle) tümörü hangi sinirleri etkiler ve semptomları nelerdir?",
+      "back": "CPA açısı tümörü (akustik nörinom en sık): N. vestibulocochlearis (VIII) → işitme kaybı ve vertigo, N. facialis (VII) → periferik yüz paralizisi, N. trigeminus (V) → yüzde uyuşma. İlerlediğinde serebellar bulgular ve beyin sapı basısı eklenebilir.",
+      "tags": ["nöroanatomi", "klinik", "kafa_siniri"]
+    },
+    {
+      "id": "anafl-088",
+      "front": "Ligamentum inguinale (Poupart ligamanı) ne ile ne arasında uzanır ve klinik önemi nedir?",
+      "back": "Ligamentum inguinale, spina iliaca anterior superior ile tuberculum pubicum arasında uzanır. M. external oblique aponeurozunun alt kenarının kıvrılmasıyla oluşur. Femoral üçgenin tavanıdır; inguinal ve femoral herni sınırını belirler. Femoral kılıf bunun altından geçer.",
+      "tags": ["karın_pelvis", "ligaman", "landmark", "klinik"]
+    },
+    {
+      "id": "anafl-089",
+      "front": "Adductor (Hunter) kanalı hangi yapılar arasında uzanır ve içinden ne geçer?",
+      "back": "Hunter kanalı; m. vastus medialis, m. adductor longus/magnus ve sartorius fasyal örtüsü arasındadır; uyluk orta 1/3'ünde, Scarpa üçgeninin devamıdır. İçinden a. femoralis, v. femoralis ve n. saphenus geçer. Popliteal fossaya açılır.",
+      "tags": ["alt_ekstremite", "kanal", "damar", "sinir"]
+    },
+    {
+      "id": "anafl-090",
+      "front": "N. saphenus hangi sinirin dalıdır ve nereyi innerve eder?",
+      "back": "N. saphenus, n. femoralis'in en uzun saf duysal dalıdır. Hunter kanalından çıkar; diz iç yüzü, bacak iç yüzü ve ayak iç tarafının (medial malleol dahil) duyusunu sağlar. Büyük safen ven (v. saphena magna) ile birlikte seyreder.",
+      "tags": ["alt_ekstremite", "sinir"]
+    },
+    {
+      "id": "anafl-091",
+      "front": "V. saphena magna nereye drene olur ve klinik önemi nedir?",
+      "back": "V. saphena magna (büyük safen ven) medial malleolden başlar, bacak ve uyluğun iç yüzünde seyreder, inguinal liganın 4 cm altında saphenofemoral junksiyonda v. femoralis'e açılır. Varisli ven tedavisi, koroner bypass grefti ve kardiyak kateter için kullanılır.",
+      "tags": ["alt_ekstremite", "damar", "klinik"]
+    },
+    {
+      "id": "anafl-092",
+      "front": "Spinal kord konus medullaris hangi seviyede sonlanır?",
+      "back": "Spinal kord erişkinde L1-L2 intervertebral disk seviyesinde konus medullaris ile sonlanır. Altında sadece kauda equina (lif demeti) bulunur. Lomber ponksiyon L3-L4 veya L4-L5 aralığından yapılır; spinal kordu zedeleme riski yoktur.",
+      "tags": ["nöroanatomi", "spinal_kord", "landmark"]
+    },
+    {
+      "id": "anafl-093",
+      "front": "Brakiyal pleksusun kökleri ve ana trunkusları hangileridir?",
+      "back": "Brakiyal pleksus C5-T1 köklerinden oluşur. C5+C6 = Üst trunk, C7 = Orta trunk, C8+T1 = Alt trunk. Üst trunk yaralanması (Erb palsi): dışa rotasyon + addüksiyon + pronasyon ('garson bahşiş pozisyonu'). Alt trunk yaralanması (Klumpke palsi): el parmaklarında pençe + Horner sendromu.",
+      "tags": ["üst_ekstremite", "sinir", "klinik"]
+    },
+    {
+      "id": "anafl-094",
+      "front": "Torasik outlet sendromu hangi yapıları sıkıştırır ve belirtileri nelerdir?",
+      "back": "Torasik outlet sendromu: brakiyal pleksus (C8-T1) + subklavyen damarlar kostoklaviküler aralıkta veya servikal kaburga nedeniyle sıkışır. Ulnar dağılımda el uyuşması, kol yorgunluğu, kol kaldırınca şikayetlerin artması (Adson manevrası pozitif). Alt trunk liflerini etkiler.",
+      "tags": ["üst_ekstremite", "sinir", "klinik"]
+    },
+    {
+      "id": "anafl-095",
+      "front": "Pancoast tümörü hangi yapıları etkiler ve klinik tablosu nedir?",
+      "back": "Pancoast tümörü (superior sulcus tümörü) akciğer apikal tümörüdür. C8-T1 brakiyal pleksus kökleri, sempatik zincir, subklavyen damarlar ve birinci kaburga etkilenir. Horner sendromu + ipsilateral el küçük kas zayıflığı + omuz ağrısı klasik trias.",
+      "tags": ["toraks", "klinik", "sinir"]
+    },
+    {
+      "id": "anafl-096",
+      "front": "Periton boşluğunun en bağımsız serbest alanı olan Morrison poşu nerededir?",
+      "back": "Morrison poşu (hepatorenal reses), karaciğer sağ lobu ile sağ böbrek arasındadır. Supine pozisyonda sağ periton boşluğunun en alçak noktasıdır; kanama veya asit burada birikir. USG ile kolayca görüntülenir (FAST muayenesi).",
+      "tags": ["karın_pelvis", "periton", "klinik"]
+    },
+    {
+      "id": "anafl-097",
+      "front": "Ductus thoracicus nerede başlar, nasıl seyreder ve nereye dökülür?",
+      "back": "Ductus thoracicus L1-L2'de cisterna chyli'den başlar, aortanın sağında toraksa girer, T5 hizasında sola geçer, sol ven açısına (v. subclavia sinistra + v. jugularis interna sinistra) dökülür. Sağ taraf lenfi (sağ üst ekstre. + sağ baş-boyun) ductus lymphaticus dexter ile sağ ven açısına drene olur.",
+      "tags": ["toraks", "damar", "lenfatik"]
+    },
+    {
+      "id": "anafl-098",
+      "front": "İlioinguinal sinir (n. ilioinguinalis) hangi dermatom bölgesini innerve eder?",
+      "back": "N. ilioinguinalis (L1) inguinal kanal içinde seyreder, yüzeyel inguinal halkadan çıkar; skrotumun/labia majora'nın üst bölümü, penis kökü, uyluk iç üst yüzü duyusunu sağlar. İnguinal herni tamirinde hasar riski mevcuttur.",
+      "tags": ["karın_pelvis", "sinir", "klinik"]
+    },
+    {
+      "id": "anafl-099",
+      "front": "Fossa olecrani'ye hangi tendon insersio yapar ve klinikteki önemi nedir?",
+      "back": "Fossa olecrani (olekranon çukuru), humerusun posterior distalinde bulunur. M. triceps brachii olekranona (ulna) insersio yapar. N. radialis (radial sinir) lateral epikondil yanından geçerken humerus kırıklarında zarar görebilir; tam ekstensiyon sırasında olekranon bu çukura girer.",
+      "tags": ["üst_ekstremite", "kemik", "anatomik_nokta", "klinik"]
+    },
+    {
+      "id": "anafl-100",
+      "front": "Hesselbach üçgeninin sınırları nelerdir?",
+      "back": "Hesselbach üçgeni (direkt inguinal herni bölgesi): lateral sınır — a./v. epigastrica inferior, medial sınır — rektus abdominis lateral kenarı, alt sınır — inguinal ligaman. Bu üçgenden çıkan herniler 'direkt inguinal herni' olarak adlandırılır ve aponörozik defektten geçer.",
+      "tags": ["karın_pelvis", "anatomik_nokta", "klinik", "landmark"]
+    }
+  ]
+}

@@ -534,24 +534,25 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                 isPreview: widget.isPreview,
               ),
               // Glow overlay
-              if (glowColor != null && intensity > 0.04)
+              if (glowColor != null && intensity > 0.08)
                 Positioned.fill(
                   child: IgnorePointer(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(24),
-                        border: Border.all(
-                          color: glowColor.withValues(alpha: (intensity * 0.9).clamp(0.0, 1.0)),
-                          width: 2.5,
-                        ),
-                        color: glowColor.withValues(alpha: (intensity * 0.13).clamp(0.0, 1.0)),
-                        boxShadow: [
-                          BoxShadow(
-                            color: glowColor.withValues(alpha: (intensity * 0.40).clamp(0.0, 1.0)),
-                            blurRadius: 32,
-                            spreadRadius: 5,
+                    child: RepaintBoundary(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(24),
+                          border: Border.all(
+                            color: glowColor.withValues(alpha: (intensity * 0.85).clamp(0.0, 1.0)),
+                            width: 2,
                           ),
-                        ],
+                          color: glowColor.withValues(alpha: (intensity * 0.10).clamp(0.0, 1.0)),
+                          boxShadow: [
+                            BoxShadow(
+                              color: glowColor.withValues(alpha: (intensity * 0.30).clamp(0.0, 1.0)),
+                              blurRadius: 20,
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),

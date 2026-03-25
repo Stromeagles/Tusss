@@ -400,19 +400,37 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           const SizedBox(width: 10),
 
-          // Info Button
+          // Info Button — blur yerine solid (perf)
           GestureDetector(
             onTap: () => _showInfoSheet(context, isDark),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(14),
-              child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-                child: Container(
+            child: Container(
+              width: 44, height: 44,
+              decoration: BoxDecoration(
+                color: isDark ? const Color(0xFF1E2A3A) : const Color(0xFFE8EEF8),
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(
+                  color: isDark
+                      ? Colors.white.withValues(alpha: 0.10)
+                      : Colors.black.withValues(alpha: 0.07),
+                  width: 1,
+                ),
+              ),
+              child: Icon(Icons.info_outline_rounded,
+                  color: isDark ? Colors.white : AppTheme.lightTextPrimary, size: 20),
+            ),
+          ),
+          const SizedBox(width: 10),
+
+          // 🔔 BİLDİRİM ZİLİ — blur yerine solid (perf)
+          GestureDetector(
+            onTap: _showAppNotifications,
+            child: Stack(
+              clipBehavior: Clip.none,
+              children: [
+                Container(
                   width: 44, height: 44,
                   decoration: BoxDecoration(
-                    color: isDark
-                        ? Colors.white.withValues(alpha: 0.06)
-                        : Colors.black.withValues(alpha: 0.04),
+                    color: isDark ? const Color(0xFF1E2A3A) : const Color(0xFFE8EEF8),
                     borderRadius: BorderRadius.circular(14),
                     border: Border.all(
                       color: isDark
@@ -421,44 +439,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: 1,
                     ),
                   ),
-                  child: Icon(Icons.info_outline_rounded,
-                      color: isDark ? Colors.white : AppTheme.lightTextPrimary, size: 20),
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(width: 10),
-
-          // 🔔 BİLDİRİM ZİLİ (GLASSY) - AKTİF EDİLDİ
-          GestureDetector(
-            onTap: _showAppNotifications,
-            child: Stack(
-              clipBehavior: Clip.none,
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(14),
-                  child: BackdropFilter(
-                    filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-                    child: Container(
-                      width: 44, height: 44,
-                      decoration: BoxDecoration(
-                        color: isDark
-                            ? Colors.white.withValues(alpha: 0.06)
-                            : Colors.black.withValues(alpha: 0.04),
-                        borderRadius: BorderRadius.circular(14),
-                        border: Border.all(
-                          color: isDark
-                              ? Colors.white.withValues(alpha: 0.10)
-                              : Colors.black.withValues(alpha: 0.07),
-                          width: 1,
-                        ),
-                      ),
-                      child: Icon(
-                        Icons.notifications_active_rounded,
-                        color: isDark ? Colors.white : AppTheme.lightTextPrimary,
-                        size: 20,
-                      ),
-                    ),
+                  child: Icon(
+                    Icons.notifications_active_rounded,
+                    color: isDark ? Colors.white : AppTheme.lightTextPrimary,
+                    size: 20,
                   ),
                 ),
                 Positioned(
@@ -476,7 +460,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-    ).animate().fadeIn(duration: 600.ms).slideY(begin: -0.08, end: 0);
+    ).animate().fadeIn(duration: 500.ms, delay: 100.ms).slideY(begin: -0.05, end: 0);
   }
 
   // ── Info Sheet ────────────────────────────────────────────────────────────
@@ -556,7 +540,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       Image.asset(
                         'assets/images/ilerleme_gorseli.jpg',
                         fit: BoxFit.cover,
-                        cacheWidth: 300,
+                        cacheWidth: 220,
+                        cacheHeight: 160,
                       ),
                       Container(
                         decoration: BoxDecoration(
@@ -750,8 +735,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-            ).animate().fadeIn(duration: 400.ms),
-          ).animate().fadeIn(duration: 700.ms, delay: 300.ms),
+            ),
+          ).animate().fadeIn(duration: 500.ms, delay: 350.ms),
         ],
       ),
     );

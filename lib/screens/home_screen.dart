@@ -31,6 +31,7 @@ import 'focus_screen.dart';
 import 'spots_screen.dart';
 import 'collections_screen.dart';
 import 'mock_exam_setup_screen.dart';
+import 'mistake_analyzer_screen.dart';
 import '../services/focus_service.dart';
 
 // ╔══════════════════════════════════════════════════════════════════════════╗
@@ -546,18 +547,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: GestureDetector(
-        onTap: () {
-          HapticFeedback.mediumImpact();
-          _startSmartSession();
-        },
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(24),
-            gradient: LinearGradient(
-              colors: isDark
-                  ? [const Color(0xFF1E0E2C), const Color(0xFF0C1525)]
-                  : [const Color(0xFFFFF3F0), const Color(0xFFF3ECFF)],
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(24),
+          gradient: LinearGradient(
+            colors: isDark
+                ? [const Color(0xFF1E0E2C), const Color(0xFF0C1525)]
+                : [const Color(0xFFFFF3F0), const Color(0xFFF3ECFF)],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
@@ -745,47 +741,101 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
 
-              // ── Fokus Seansı Başlat butonu ────────────────────────────────
+              // ── Butonlar ──────────────────────────────────────────────────
               Padding(
                 padding: const EdgeInsets.all(20),
-                child: Container(
-                  width: double.infinity,
-                  height: 54,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(16),
-                    gradient: const LinearGradient(
-                      colors: [AppTheme.coral, AppTheme.violet],
-                      begin: Alignment.centerLeft,
-                      end: Alignment.centerRight,
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: AppTheme.coral.withValues(alpha: 0.45),
-                        blurRadius: 22,
-                        offset: const Offset(0, 6),
-                      ),
-                    ],
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Icon(Icons.play_arrow_rounded,
-                          color: Colors.white, size: 22),
-                      const SizedBox(width: 8),
-                      Text(
-                        'Fokus Seansı Başlat',
-                        style: GoogleFonts.inter(
-                          color: Colors.white,
-                          fontSize: 15,
-                          fontWeight: FontWeight.w800,
-                          letterSpacing: 0.3,
+                child: Row(
+                  children: [
+                    // Ana: Fokus Seansı
+                    Expanded(
+                      flex: 3,
+                      child: GestureDetector(
+                        onTap: () {
+                          HapticFeedback.mediumImpact();
+                          _startSmartSession();
+                        },
+                        child: Container(
+                          height: 52,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            gradient: const LinearGradient(
+                              colors: [AppTheme.coral, AppTheme.violet],
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: AppTheme.coral.withValues(alpha: 0.4),
+                                blurRadius: 18,
+                                offset: const Offset(0, 5),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(Icons.play_arrow_rounded,
+                                  color: Colors.white, size: 20),
+                              const SizedBox(width: 6),
+                              Text(
+                                'Fokus Seansı',
+                                style: GoogleFonts.inter(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
-                      const SizedBox(width: 8),
-                      const Icon(Icons.arrow_forward_rounded,
-                          color: Colors.white, size: 18),
-                    ],
-                  ),
+                    ),
+                    const SizedBox(width: 10),
+                    // İkincil: Hata Analizi
+                    Expanded(
+                      flex: 2,
+                      child: GestureDetector(
+                        onTap: () {
+                          HapticFeedback.lightImpact();
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) =>
+                                  const MistakeAnalyzerScreen(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          height: 52,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            color: AppTheme.error.withValues(
+                                alpha: isDark ? 0.12 : 0.08),
+                            border: Border.all(
+                              color: AppTheme.error
+                                  .withValues(alpha: 0.4),
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.analytics_rounded,
+                                  color: AppTheme.error, size: 18),
+                              const SizedBox(width: 6),
+                              Text(
+                                'Hata Analizi',
+                                style: GoogleFonts.inter(
+                                  color: AppTheme.error,
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
@@ -794,7 +844,6 @@ class _HomeScreenState extends State<HomeScreen> {
             .animate()
             .fadeIn(duration: 500.ms, delay: 60.ms)
             .slideY(begin: 0.08, end: 0, curve: Curves.easeOutExpo),
-      ),
     );
   }
 

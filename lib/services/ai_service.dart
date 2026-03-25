@@ -255,6 +255,86 @@ TUS icin hatirla:
     }
   }
 
+  // ── Zayıflık / Hata Örüntüsü Analizi ────────────────────────────────────
+
+  /// SM-2 hata özetini alır, AI ile tıbbi örüntü + eksik kapatma planı üretir.
+  /// [failureReport] formatı: "Branş: N hata\n  - Konu (M)\n..."
+  Future<String> analyzeWeakness(String failureReport) async {
+    if (!ApiConfig.isConfigured) {
+      return _fallbackWeaknessAnalysis(failureReport);
+    }
+
+    const systemPrompt =
+        'Sen deneyimli bir TUS sınav koçusun. Türkçe yanıt ver. '
+        'Kısa, pratik ve öğrenciye özgü ol. Markdown kullan.';
+
+    final userMsg =
+        'Aşağıda TUS adayının SM-2 sistemindeki hata kayıtları var.\n\n'
+        'HATA RAPORU:\n$failureReport\n\n'
+        'Şunları yap:\n'
+        '1. **Örüntü Analizi**: 2-3 cümleyle hataların ardındaki kavram karışıklığını '
+        'açıkla. "Genelde X branşında Y konuyu Z ile karıştırıyorsun" formatında '
+        'spesifik ol.\n'
+        '2. **Kritik TUS Spotları**: En kritik 3 branş için birer hatırlama noktası ver.\n'
+        '3. **Eksik Kapatma Planı**: Öncelikli 3 aksiyon öner (her biri max 1 cümle).\n\n'
+        'Format:\n'
+        '### 🔍 Örüntü Analizi\n[metin]\n\n'
+        '### 💡 Kritik TUS Spotları\n- **[Branş]**: [spot]\n\n'
+        '### 📋 Eksik Kapatma Planı\n1. [aksiyon]\n2. [aksiyon]\n3. [aksiyon]';
+
+    try {
+      final response = await http
+          .post(
+            Uri.parse(ApiConfig.anthropicBaseUrl),
+            headers: {
+              'Content-Type': 'application/json',
+              'x-api-key': ApiConfig.anthropicApiKey,
+              'anthropic-version': ApiConfig.anthropicVersion,
+            },
+            body: json.encode({
+              'model': ApiConfig.claudeModel,
+              'max_tokens': 900,
+              'system': systemPrompt,
+              'messages': [
+                {'role': 'user', 'content': userMsg},
+              ],
+            }),
+          )
+          .timeout(const Duration(seconds: 35));
+
+      if (response.statusCode == 200) {
+        final decoded =
+            json.decode(utf8.decode(response.bodyBytes)) as Map<String, dynamic>;
+        final content = decoded['content'] as List<dynamic>;
+        if (content.isNotEmpty) {
+          return (content.first as Map<String, dynamic>)['text'] as String;
+        }
+      }
+      return _fallbackWeaknessAnalysis(failureReport);
+    } on Exception {
+      return _fallbackWeaknessAnalysis(failureReport);
+    }
+  }
+
+  String _fallbackWeaknessAnalysis(String report) {
+    final lines = report.trim().split('\n');
+    final branches = lines
+        .where((l) => !l.startsWith(' ') && l.contains(':'))
+        .map((l) => l.split(':').first.trim())
+        .take(3)
+        .toList();
+    final branchText = branches.isEmpty ? 'çeşitli branşlarda' : branches.join(', ');
+    return '### 🔍 Örüntü Analizi\n'
+        '$branchText alanlarında hata yoğunluğu görülüyor. '
+        'Bu alanlarda kavram netleştirmesine ihtiyaç var.\n\n'
+        '### 💡 Kritik TUS Spotları\n'
+        '${branches.map((b) => '- **$b**: Bu branşın temel mekanizmalarını tekrar gözden geçir.').join('\n')}\n\n'
+        '### 📋 Eksik Kapatma Planı\n'
+        '1. Hata yaptığın kartları "Yanlışlar" modunda çalış.\n'
+        '2. Her yanlış sorunun açıklamasını dikkatlice oku.\n'
+        '3. Zayıf branşlarda günlük en az 10 kart hedefle.';
+  }
+
   /// Cache istatistikleri (debug icin)
   int get cachedExplanations => _explanationCache.length;
   int get cachedMnemonics => _mnemonicCache.length;

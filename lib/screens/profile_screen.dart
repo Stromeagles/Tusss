@@ -19,7 +19,6 @@ import '../services/auth_service.dart';
 import '../auth/auth_view_model.dart';
 import 'package:provider/provider.dart';
 import 'auth/login_screen.dart';
-import '../widgets/daily_goal_widget.dart';
 import '../services/specialty_score_service.dart';
 import 'specialty_detail_screen.dart';
 import '../services/premium_service.dart';
@@ -51,12 +50,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   Future<void> _load() async {
-    final user = await _userService.loadUser();
-    final progress = await ProgressService().loadProgress();
-    final srsData = await SpacedRepetitionService().getAllData();
-    final premium = await PremiumService().isPremium();
+    final results = await Future.wait([
+      _userService.loadUser(),
+      ProgressService().loadProgress(),
+      SpacedRepetitionService().getAllData(),
+      PremiumService().isPremium(),
+    ]);
 
     if (mounted) {
+      final user     = results[0] as UserProfile;
+      final progress = results[1] as StudyProgress;
+      final srsData  = results[2] as Map<String, dynamic>;
+      final premium  = results[3] as bool;
       setState(() {
         _user = user;
         _progress = progress;
@@ -124,14 +129,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
                         // ── İstatistik Kartları ─────────────────────────
                         _buildStatsRow(isDark),
-                        const SizedBox(height: 16),
-
-                        // ── Günlük Hedef ─────────────────────────────────
-                        DailyGoalWidget(
-                          todayStudied: _progress.todayStudied,
-                          dailyGoal: _progress.dailyGoal,
-                          accentColor: AppTheme.cyan,
-                        ),
                         const SizedBox(height: 16),
 
                         // ── Hedef Puan ──────────────────────────────────
@@ -624,154 +621,154 @@ class _ProfileScreenState extends State<ProfileScreen> {
               .where((b) => b.toLowerCase().contains(query))
               .toList();
 
-          return ClipRRect(
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
-            child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-              child: Container(
-                height: MediaQuery.of(sheetCtx).size.height * 0.65,
-                decoration: BoxDecoration(
-                  color: isDark
-                      ? AppTheme.surface.withValues(alpha: 0.97)
-                      : Colors.white.withValues(alpha: 0.97),
-                  borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+          return Container(
+            height: MediaQuery.of(sheetCtx).size.height * 0.65,
+            decoration: BoxDecoration(
+              color: isDark ? AppTheme.surface : Colors.white,
+              borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+            ),
+            child: Column(
+              children: [
+                const SizedBox(height: 12),
+                Container(
+                  width: 40,
+                  height: 4,
+                  decoration: BoxDecoration(
+                    color: subColor.withValues(alpha: 0.3),
+                    borderRadius: BorderRadius.circular(2),
+                  ),
                 ),
-                child: Column(
-                  children: [
-                    const SizedBox(height: 12),
-                    Container(width: 40, height: 4,
-                      decoration: BoxDecoration(
-                        color: subColor.withValues(alpha: 0.3),
-                        borderRadius: BorderRadius.circular(2),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 16, 20, 12),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Uzmanlık Dalı Seçin',
+                          style: GoogleFonts.inter(
+                              color: textColor,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w800)),
+                      const SizedBox(height: 12),
+                      TextField(
+                        controller: searchCtrl,
+                        style: GoogleFonts.inter(
+                            color: textColor, fontSize: 14),
+                        decoration: _premiumInput(
+                            hint: 'Ara...',
+                            icon: Icons.search_rounded,
+                            isDark: isDark),
+                        onChanged: (_) => setBS(() {}),
                       ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(20, 16, 20, 12),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('Uzmanlık Dalı Seçin',
-                            style: GoogleFonts.inter(color: textColor, fontSize: 18, fontWeight: FontWeight.w800)),
-                          const SizedBox(height: 12),
-                          TextField(
-                            controller: searchCtrl,
-                            style: GoogleFonts.inter(color: textColor, fontSize: 14),
-                            decoration: _premiumInput(hint: 'Ara...', icon: Icons.search_rounded, isDark: isDark),
-                            onChanged: (_) => setBS(() {}),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Expanded(
-                      child: ListView.builder(
-                        padding: const EdgeInsets.symmetric(horizontal: 12),
-                        itemCount: filtered.length,
-                        itemBuilder: (_, i) {
-                          final branch = filtered[i];
-                          final selected = branch == current;
-                          final imgPath = SpecialtyScoreService.getImagePath(branch);
-                          return ListTile(
-                            contentPadding: const EdgeInsets.symmetric(
-                                horizontal: 12, vertical: 4),
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12)),
-                            tileColor: selected
-                                ? AppTheme.cyan.withValues(alpha: 0.1)
-                                : null,
-                            leading: Hero(
-                              tag: 'specialty_hero_$branch',
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                child: SizedBox(
-                                  width: 48,
-                                  height: 48,
-                                  child: Stack(
-                                    fit: StackFit.expand,
-                                    children: [
-                                      Image.asset(
-                                        imgPath,
-                                        fit: BoxFit.cover,
-                                        cacheWidth: 96,
-                                      ),
-                                      Container(
-                                        decoration: BoxDecoration(
-                                          gradient: LinearGradient(
-                                            begin: Alignment.topCenter,
-                                            end: Alignment.bottomCenter,
-                                            colors: [
-                                              Colors.transparent,
-                                              Colors.black
-                                                  .withValues(alpha: 0.35),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                    ],
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: ListView.builder(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    itemCount: filtered.length,
+                    itemBuilder: (_, i) {
+                      final branch = filtered[i];
+                      final selected = branch == current;
+                      final imgPath =
+                          SpecialtyScoreService.getImagePath(branch);
+                      return ListTile(
+                        contentPadding: const EdgeInsets.symmetric(
+                            horizontal: 12, vertical: 4),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12)),
+                        tileColor: selected
+                            ? AppTheme.cyan.withValues(alpha: 0.1)
+                            : null,
+                        leading: Hero(
+                          tag: 'specialty_hero_$branch',
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: SizedBox(
+                              width: 48,
+                              height: 48,
+                              child: Stack(
+                                fit: StackFit.expand,
+                                children: [
+                                  Image.asset(
+                                    imgPath,
+                                    fit: BoxFit.cover,
+                                    cacheWidth: 96,
                                   ),
-                                ),
-                              ),
-                            ),
-                            title: Text(
-                              branch,
-                              style: GoogleFonts.inter(
-                                color: selected ? AppTheme.cyan : textColor,
-                                fontSize: 14,
-                                fontWeight: selected
-                                    ? FontWeight.w700
-                                    : FontWeight.w500,
-                              ),
-                            ),
-                            trailing: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                // Detay sayfası butonu
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.push(
-                                      sheetCtx,
-                                      MaterialPageRoute<void>(
-                                        builder: (_) => SpecialtyDetailScreen(
-                                            branchName: branch),
-                                      ),
-                                    );
-                                  },
-                                  child: Container(
-                                    width: 30,
-                                    height: 30,
+                                  Container(
                                     decoration: BoxDecoration(
-                                      color: AppTheme.cyan
-                                          .withValues(alpha: 0.08),
-                                      shape: BoxShape.circle,
-                                    ),
-                                    child: const Icon(
-                                      Icons.info_outline_rounded,
-                                      color: AppTheme.cyan,
-                                      size: 16,
+                                      gradient: LinearGradient(
+                                        begin: Alignment.topCenter,
+                                        end: Alignment.bottomCenter,
+                                        colors: [
+                                          Colors.transparent,
+                                          Colors.black
+                                              .withValues(alpha: 0.35),
+                                        ],
+                                      ),
                                     ),
                                   ),
-                                ),
-                                const SizedBox(width: 6),
-                                Icon(
-                                  selected
-                                      ? Icons.check_circle_rounded
-                                      : Icons.circle_outlined,
-                                  color:
-                                      selected ? AppTheme.cyan : subColor,
-                                  size: 20,
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                            onTap: () {
-                              onSelect(branch);
-                              Navigator.pop(sheetCtx);
-                            },
-                          );
+                          ),
+                        ),
+                        title: Text(
+                          branch,
+                          style: GoogleFonts.inter(
+                            color: selected ? AppTheme.cyan : textColor,
+                            fontSize: 14,
+                            fontWeight: selected
+                                ? FontWeight.w700
+                                : FontWeight.w500,
+                          ),
+                        ),
+                        trailing: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  sheetCtx,
+                                  MaterialPageRoute<void>(
+                                    builder: (_) => SpecialtyDetailScreen(
+                                        branchName: branch),
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  color: AppTheme.cyan
+                                      .withValues(alpha: 0.08),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: const Icon(
+                                  Icons.info_outline_rounded,
+                                  color: AppTheme.cyan,
+                                  size: 16,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 6),
+                            Icon(
+                              selected
+                                  ? Icons.check_circle_rounded
+                                  : Icons.circle_outlined,
+                              color: selected ? AppTheme.cyan : subColor,
+                              size: 20,
+                            ),
+                          ],
+                        ),
+                        onTap: () {
+                          onSelect(branch);
+                          Navigator.pop(sheetCtx);
                         },
-                      ),
-                    ),
-                  ],
+                      );
+                    },
+                  ),
                 ),
-              ),
+              ],
             ),
           );
         },
@@ -795,193 +792,230 @@ class _ProfileScreenState extends State<ProfileScreen> {
           final subColor =
               isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
 
-          return ClipRRect(
-            borderRadius:
-                const BorderRadius.vertical(top: Radius.circular(28)),
-            child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-              child: Container(
-                decoration: BoxDecoration(
-                  color: isDark
-                      ? AppTheme.surface.withValues(alpha: 0.95)
-                      : Colors.white.withValues(alpha: 0.96),
-                  borderRadius:
-                      const BorderRadius.vertical(top: Radius.circular(28)),
-                ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    // ── Scrollable Content ──
-                    Flexible(
-                      child: SingleChildScrollView(
-                        padding: EdgeInsets.fromLTRB(
-                            24, 20, 24, MediaQuery.of(ctx).viewInsets.bottom + 12),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            // Handle bar
-                            Center(
-                              child: Container(
-                                width: 40, height: 4,
-                                decoration: BoxDecoration(
-                                  color: subColor.withValues(alpha: 0.3),
-                                  borderRadius: BorderRadius.circular(2),
-                                ),
-                              ),
+          return Container(
+            decoration: BoxDecoration(
+              color: isDark ? AppTheme.surface : Colors.white,
+              borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Flexible(
+                  child: SingleChildScrollView(
+                    padding: EdgeInsets.fromLTRB(24, 20, 24,
+                        MediaQuery.of(ctx).viewInsets.bottom + 12),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Center(
+                          child: Container(
+                            width: 40,
+                            height: 4,
+                            decoration: BoxDecoration(
+                              color: subColor.withValues(alpha: 0.3),
+                              borderRadius: BorderRadius.circular(2),
                             ),
-                            const SizedBox(height: 20),
-
-                            Text('Profili Düzenle',
-                                style: GoogleFonts.inter(
-                                    color: textColor, fontSize: 22, fontWeight: FontWeight.w900)),
-                            const SizedBox(height: 6),
-                            Text('Bilgilerini güncelleyerek TUS yolculuğunu kişiselleştir',
-                                style: GoogleFonts.inter(
-                                    color: subColor, fontSize: 13, fontWeight: FontWeight.w400)),
-                            const SizedBox(height: 28),
-
-                            // ── Avatar Seçimi ──
-                            Text('AVATAR', style: GoogleFonts.inter(
-                                color: subColor, fontSize: 11, fontWeight: FontWeight.w700, letterSpacing: 1.2)),
-                            const SizedBox(height: 10),
-                            Wrap(
-                              spacing: 10, runSpacing: 10,
-                              children: ['T', 'D', 'A', 'M', 'S', 'K', 'E', 'H']
-                                  .map((e) => GestureDetector(
-                                        onTap: () => setSheetState(
-                                            () => tempUser = tempUser.copyWith(profileEmoji: e)),
-                                        child: AnimatedContainer(
-                                          duration: const Duration(milliseconds: 200),
-                                          width: 46, height: 46,
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            gradient: tempUser.profileEmoji == e
-                                                ? const LinearGradient(colors: [AppTheme.cyan, AppTheme.neonPink])
-                                                : null,
-                                            color: tempUser.profileEmoji == e
-                                                ? null
-                                                : (isDark ? Colors.white.withValues(alpha: 0.06) : Colors.black.withValues(alpha: 0.04)),
-                                            border: Border.all(
-                                              color: tempUser.profileEmoji == e
-                                                  ? AppTheme.cyan.withValues(alpha: 0.5)
-                                                  : Colors.transparent,
-                                              width: 2,
-                                            ),
-                                          ),
-                                          child: Center(
-                                            child: Text(e,
-                                              style: GoogleFonts.inter(
-                                                color: tempUser.profileEmoji == e ? Colors.white : textColor,
-                                                fontSize: 18, fontWeight: FontWeight.w800,
-                                              )),
-                                          ),
-                                        ),
-                                      ))
-                                  .toList(),
-                            ),
-                            const SizedBox(height: 24),
-
-                            // ── İsim Input ──
-                            Text('AD SOYAD', style: GoogleFonts.inter(
-                                color: subColor, fontSize: 11, fontWeight: FontWeight.w700, letterSpacing: 1.2)),
-                            const SizedBox(height: 8),
-                            TextField(
-                              controller: nameCtrl,
-                              style: GoogleFonts.inter(color: textColor, fontWeight: FontWeight.w600, fontSize: 15),
-                              decoration: _premiumInput(hint: 'İsminizi girin', icon: Icons.person_outline_rounded, isDark: isDark),
-                              onChanged: (v) => setSheetState(() => tempUser = tempUser.copyWith(name: v)),
-                            ),
-                            const SizedBox(height: 24),
-
-                            // ── Branş Seçimi (BottomSheet ile) ──
-                            Text('HEDEF UZMANLIK DALI', style: GoogleFonts.inter(
-                                color: subColor, fontSize: 11, fontWeight: FontWeight.w700, letterSpacing: 1.2)),
-                            const SizedBox(height: 8),
-                            GestureDetector(
-                              onTap: () => _showBranchPicker(ctx, isDark, tempUser.targetBranch, (b) {
-                                setSheetState(() => tempUser = tempUser.copyWith(targetBranch: b));
-                              }),
-                              child: Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 15),
-                                decoration: BoxDecoration(
-                                  color: isDark
-                                      ? Colors.white.withValues(alpha: 0.05)
-                                      : Colors.black.withValues(alpha: 0.03),
-                                  borderRadius: BorderRadius.circular(14),
-                                  border: Border.all(
-                                    color: isDark ? Colors.white.withValues(alpha: 0.08) : Colors.black.withValues(alpha: 0.06),
-                                  ),
-                                ),
-                                child: Row(
-                                  children: [
-                                    Icon(Icons.school_outlined, size: 20,
-                                      color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary),
-                                    const SizedBox(width: 12),
-                                    Expanded(
-                                      child: Text(
-                                        tempUser.targetBranch.isEmpty ? 'Uzmanlık dalı seçin' : tempUser.targetBranch,
-                                        style: GoogleFonts.inter(
-                                          color: tempUser.targetBranch.isEmpty ? subColor.withValues(alpha: 0.5) : textColor,
-                                          fontSize: 14, fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        const SizedBox(height: 20),
+                        Text('Profili Düzenle',
+                            style: GoogleFonts.inter(
+                                color: textColor,
+                                fontSize: 22,
+                                fontWeight: FontWeight.w900)),
+                        const SizedBox(height: 6),
+                        Text(
+                            'Bilgilerini güncelleyerek TUS yolculuğunu kişiselleştir',
+                            style: GoogleFonts.inter(
+                                color: subColor,
+                                fontSize: 13,
+                                fontWeight: FontWeight.w400)),
+                        const SizedBox(height: 28),
+                        Text('AVATAR',
+                            style: GoogleFonts.inter(
+                                color: subColor,
+                                fontSize: 11,
+                                fontWeight: FontWeight.w700,
+                                letterSpacing: 1.2)),
+                        const SizedBox(height: 10),
+                        Wrap(
+                          spacing: 10,
+                          runSpacing: 10,
+                          children: ['T', 'D', 'A', 'M', 'S', 'K', 'E', 'H']
+                              .map((e) => GestureDetector(
+                                    onTap: () => setSheetState(() =>
+                                        tempUser =
+                                            tempUser.copyWith(profileEmoji: e)),
+                                    child: AnimatedContainer(
+                                      duration:
+                                          const Duration(milliseconds: 200),
+                                      width: 46,
+                                      height: 46,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        gradient: tempUser.profileEmoji == e
+                                            ? const LinearGradient(colors: [
+                                                AppTheme.cyan,
+                                                AppTheme.neonPink
+                                              ])
+                                            : null,
+                                        color: tempUser.profileEmoji == e
+                                            ? null
+                                            : (isDark
+                                                ? Colors.white
+                                                    .withValues(alpha: 0.06)
+                                                : Colors.black
+                                                    .withValues(alpha: 0.04)),
+                                        border: Border.all(
+                                          color: tempUser.profileEmoji == e
+                                              ? AppTheme.cyan
+                                                  .withValues(alpha: 0.5)
+                                              : Colors.transparent,
+                                          width: 2,
                                         ),
                                       ),
+                                      child: Center(
+                                        child: Text(e,
+                                            style: GoogleFonts.inter(
+                                              color: tempUser.profileEmoji == e
+                                                  ? Colors.white
+                                                  : textColor,
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.w800,
+                                            )),
+                                      ),
                                     ),
-                                    Icon(Icons.keyboard_arrow_down_rounded, size: 22, color: subColor),
-                                  ],
-                                ),
+                                  ))
+                              .toList(),
+                        ),
+                        const SizedBox(height: 24),
+                        Text('AD SOYAD',
+                            style: GoogleFonts.inter(
+                                color: subColor,
+                                fontSize: 11,
+                                fontWeight: FontWeight.w700,
+                                letterSpacing: 1.2)),
+                        const SizedBox(height: 8),
+                        TextField(
+                          controller: nameCtrl,
+                          style: GoogleFonts.inter(
+                              color: textColor,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 15),
+                          decoration: _premiumInput(
+                              hint: 'İsminizi girin',
+                              icon: Icons.person_outline_rounded,
+                              isDark: isDark),
+                          onChanged: (v) => setSheetState(
+                              () => tempUser = tempUser.copyWith(name: v)),
+                        ),
+                        const SizedBox(height: 24),
+                        Text('HEDEF UZMANLIK DALI',
+                            style: GoogleFonts.inter(
+                                color: subColor,
+                                fontSize: 11,
+                                fontWeight: FontWeight.w700,
+                                letterSpacing: 1.2)),
+                        const SizedBox(height: 8),
+                        GestureDetector(
+                          onTap: () => _showBranchPicker(
+                              ctx, isDark, tempUser.targetBranch, (b) {
+                            setSheetState(() =>
+                                tempUser = tempUser.copyWith(targetBranch: b));
+                          }),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 16, vertical: 15),
+                            decoration: BoxDecoration(
+                              color: isDark
+                                  ? Colors.white.withValues(alpha: 0.05)
+                                  : Colors.black.withValues(alpha: 0.03),
+                              borderRadius: BorderRadius.circular(14),
+                              border: Border.all(
+                                color: isDark
+                                    ? Colors.white.withValues(alpha: 0.08)
+                                    : Colors.black.withValues(alpha: 0.06),
                               ),
                             ),
-                          ],
-                        ),
-                      ),
-                    ),
-
-                    // ── Sticky Kaydet Butonu ──
-                    Container(
-                      padding: EdgeInsets.fromLTRB(24, 12, 24, MediaQuery.of(ctx).padding.bottom + 16),
-                      decoration: BoxDecoration(
-                        color: isDark
-                            ? AppTheme.surface.withValues(alpha: 0.98)
-                            : Colors.white.withValues(alpha: 0.98),
-                        border: Border(
-                          top: BorderSide(
-                            color: isDark ? AppTheme.divider : AppTheme.lightDivider,
+                            child: Row(
+                              children: [
+                                Icon(Icons.school_outlined,
+                                    size: 20,
+                                    color: isDark
+                                        ? AppTheme.textSecondary
+                                        : AppTheme.lightTextSecondary),
+                                const SizedBox(width: 12),
+                                Expanded(
+                                  child: Text(
+                                    tempUser.targetBranch.isEmpty
+                                        ? 'Uzmanlık dalı seçin'
+                                        : tempUser.targetBranch,
+                                    style: GoogleFonts.inter(
+                                      color: tempUser.targetBranch.isEmpty
+                                          ? subColor.withValues(alpha: 0.5)
+                                          : textColor,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                ),
+                                Icon(Icons.keyboard_arrow_down_rounded,
+                                    size: 22, color: subColor),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                      child: SizedBox(
-                        width: double.infinity,
-                        child: ElevatedButton(
-                          onPressed: () async {
-                            final nav = Navigator.of(ctx);
-                            final updated = tempUser.copyWith(
-                              name: nameCtrl.text.trim().isEmpty ? 'KlinDoktor' : nameCtrl.text.trim(),
-                            );
-                            await _userService.saveUser(updated);
-                            // Veri tutarlılığı için ProgressService'i de güncelle
-                            await ProgressService().setDailyGoal(updated.dailyGoal);
-                            
-                            if (mounted) {
-                              setState(() => _user = updated);
-                              nav.pop();
-                            }
-                          },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: AppTheme.cyan,
-                            foregroundColor: Colors.white,
-                            padding: const EdgeInsets.symmetric(vertical: 16),
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-                            elevation: 0,
-                          ),
-                          child: Text('Kaydet',
-                              style: GoogleFonts.inter(fontWeight: FontWeight.w800, fontSize: 15)),
-                        ),
-                      ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
-              ),
+                Container(
+                  padding: EdgeInsets.fromLTRB(24, 12, 24,
+                      MediaQuery.of(ctx).padding.bottom + 16),
+                  decoration: BoxDecoration(
+                    color: isDark
+                        ? AppTheme.surface.withValues(alpha: 0.98)
+                        : Colors.white.withValues(alpha: 0.98),
+                    border: Border(
+                      top: BorderSide(
+                        color:
+                            isDark ? AppTheme.divider : AppTheme.lightDivider,
+                      ),
+                    ),
+                  ),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () async {
+                        final nav = Navigator.of(ctx);
+                        final updated = tempUser.copyWith(
+                          name: nameCtrl.text.trim().isEmpty
+                              ? 'KlinDoktor'
+                              : nameCtrl.text.trim(),
+                        );
+                        await _userService.saveUser(updated);
+                        await ProgressService().setDailyGoal(updated.dailyGoal);
+                        if (mounted) {
+                          setState(() => _user = updated);
+                          nav.pop();
+                        }
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppTheme.cyan,
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(14)),
+                        elevation: 0,
+                      ),
+                      child: Text('Kaydet',
+                          style: GoogleFonts.inter(
+                              fontWeight: FontWeight.w800, fontSize: 15)),
+                    ),
+                  ),
+                ),
+              ],
             ),
           );
         },
@@ -996,7 +1030,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
     final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
     final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
 
-    // Closure state — sheet hemen açılır, veri içinde yüklenir
     bool sheetLoading = true;
     bool loadStarted = false;
     StudyProgress progress = StudyProgress();
@@ -1011,7 +1044,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
       backgroundColor: Colors.transparent,
       builder: (ctx) => StatefulBuilder(
         builder: (ctx, setModalState) {
-          // İlk build'de veriyi arka planda yükle
           if (!loadStarted) {
             loadStarted = true;
             Future.wait([
@@ -1031,7 +1063,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
             });
           }
 
-          // Loading göster
           if (sheetLoading) {
             return Container(
               height: 220,
@@ -1099,8 +1130,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   Text('Sınav başarınızı garantilemek için verilerinizi girin.',
                     style: GoogleFonts.inter(color: subColor, fontSize: 14)),
                   const SizedBox(height: 32),
-
-                  // Mevcut Puan
                   _GoalScoreInput(
                     label: 'Mevcut TUS Puanın',
                     value: tempBase,
@@ -1109,8 +1138,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     onChanged: (val) => setModalState(() => tempBase = val),
                   ),
                   const SizedBox(height: 24),
-
-                  // Hedef Puan
                   _GoalScoreInput(
                     label: 'Hedeflediğin Puan',
                     value: tempTarget,
@@ -1119,8 +1146,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     onChanged: (val) => setModalState(() => tempTarget = val),
                   ),
                   const SizedBox(height: 24),
-
-                  // Sınav Tarihi (Yeni)
                   _GoalDateInput(
                     label: 'Hedef TUS Tarihi',
                     value: tempTargetDate,
@@ -1148,12 +1173,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       }
                     },
                   ),
-
                   const SizedBox(height: 48),
-
-                  // Öneri Kartı
                   GestureDetector(
-                    onTap: (!isPremium && recommendation > PremiumService.dailyFreeFlashcardLimit)
+                    onTap: (!isPremium && recommendation >= PremiumService.dailyFreeFlashcardLimit)
                         ? () {
                             Navigator.of(ctx).pop();
                             showModalBottomSheet(
@@ -1228,15 +1250,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ),
                   ),
                   const SizedBox(height: 24),
-
-                  // Onayla Butonu
                   SizedBox(
                     width: double.infinity, height: 60,
                     child: ElevatedButton(
                       onPressed: () async {
                         HapticFeedback.lightImpact();
                         final messenger = ScaffoldMessenger.of(context);
-                        
                         await progressService.saveScoreGoal(base: tempBase, target: tempTarget);
                         await progressService.saveGoalSettings(
                           weekdayGoalHours: progress.weekdayGoalHours,
@@ -1248,12 +1267,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             ? recommendation
                             : recommendation.clamp(0, PremiumService.dailyFreeFlashcardLimit);
                         await progressService.setDailyGoal(effectiveGoal);
-
                         if (Navigator.of(ctx).canPop()) {
                           Navigator.of(ctx).pop();
                         }
-
-                        _load(); // Hedef kartını güncelle
+                        _load();
                         messenger.showSnackBar(
                           SnackBar(
                             content: Text('Günlük hedefin ($effectiveGoal soru) güncellendi! 🚀'),
@@ -1310,7 +1327,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
 
     if (confirm == true && mounted) {
-      // Hem Firebase hem local auth'u temizle
       await AuthService.instance.signOut();
       final authVm = Provider.of<AuthViewModel>(context, listen: false);
       await authVm.logout();
@@ -1460,41 +1476,32 @@ class _StatMini extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(18),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-        child: Container(
-          padding: const EdgeInsets.symmetric(vertical: 14),
-          decoration: BoxDecoration(
-            color: isDark
-                ? color.withValues(alpha: 0.08)
-                : color.withValues(alpha: 0.06),
-            borderRadius: BorderRadius.circular(18),
-            border: Border.all(
-                color: color.withValues(alpha: isDark ? 0.25 : 0.18),
-                width: 1),
-          ),
-          child: Column(
-            children: [
-              Icon(icon, color: color, size: 20),
-              const SizedBox(height: 6),
-              Text(value,
-                  style: GoogleFonts.inter(
-                      color: color,
-                      fontSize: 18,
-                      fontWeight: FontWeight.w900)),
-              const SizedBox(height: 2),
-              Text(label,
-                  style: GoogleFonts.inter(
-                      color: isDark
-                          ? AppTheme.textSecondary
-                          : AppTheme.lightTextSecondary,
-                      fontSize: 10,
-                      fontWeight: FontWeight.w500)),
-            ],
-          ),
-        ),
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 14),
+      decoration: BoxDecoration(
+        color: isDark
+            ? color.withValues(alpha: 0.15)
+            : color.withValues(alpha: 0.10),
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(
+            color: color.withValues(alpha: isDark ? 0.35 : 0.25), width: 1),
+      ),
+      child: Column(
+        children: [
+          Icon(icon, color: color, size: 20),
+          const SizedBox(height: 6),
+          Text(value,
+              style: GoogleFonts.inter(
+                  color: color, fontSize: 18, fontWeight: FontWeight.w900)),
+          const SizedBox(height: 2),
+          Text(label,
+              style: GoogleFonts.inter(
+                  color: isDark
+                      ? AppTheme.textSecondary
+                      : AppTheme.lightTextSecondary,
+                  fontSize: 10,
+                  fontWeight: FontWeight.w500)),
+        ],
       ),
     );
   }

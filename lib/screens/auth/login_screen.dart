@@ -125,12 +125,18 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  // ── Desktop: Tam ekran hero + alt overlay strip ───────────────────────────
+  // ── Desktop: Tam ekran hero + üst-sol logo + alt overlay strip ──────────
   Widget _buildDesktopLayout(AuthViewModel vm) {
     return Stack(
       fit: StackFit.expand,
       children: [
         _buildHeroFull(),
+        // Logo — üst sol köşe
+        Positioned(
+          top: 32,
+          left: 40,
+          child: _buildHeroLogo(),
+        ),
         if (vm.mode == AuthMode.login)
           Positioned(
             bottom: 0,
@@ -142,6 +148,67 @@ class _LoginScreenState extends State<LoginScreen> {
           Center(child: _buildDesktopSignupPanel(vm)),
       ],
     );
+  }
+
+  // ── Desktop: Üst-sol köşe logosu ─────────────────────────────────────────
+  Widget _buildHeroLogo() {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          width: 44,
+          height: 44,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            gradient: const LinearGradient(
+              colors: [AppTheme.cyan, AppTheme.neonPurple],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: AppTheme.cyan.withValues(alpha: 0.5),
+                blurRadius: 18,
+              ),
+            ],
+          ),
+          child: const Icon(Icons.psychology_rounded, color: Colors.white, size: 22),
+        ),
+        const SizedBox(width: 12),
+        Text(
+          'AsisTus',
+          style: GoogleFonts.outfit(
+            fontSize: 26,
+            fontWeight: FontWeight.w900,
+            color: Colors.white,
+            letterSpacing: -0.5,
+            shadows: [
+              Shadow(
+                color: Colors.black.withValues(alpha: 0.4),
+                blurRadius: 8,
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(width: 8),
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 3),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+                colors: [AppTheme.cyan, AppTheme.neonPurple]),
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Text(
+            'AI',
+            style: GoogleFonts.inter(
+              color: Colors.white,
+              fontSize: 10,
+              fontWeight: FontWeight.w800,
+            ),
+          ),
+        ),
+      ],
+    ).animate().fadeIn(delay: 200.ms, duration: 600.ms).slideX(begin: -0.05, end: 0);
   }
 
   // ── Mobile: Hero + Form ──────────────────────────────────────────────────
@@ -433,20 +500,13 @@ class _LoginScreenState extends State<LoginScreen> {
           padding: const EdgeInsets.fromLTRB(40, 20, 40, 24),
           child: Column(
             mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Ana satır: Logo | E-posta | Şifre | Giriş Yap | Google
+              // Ana satır: E-posta | Şifre | Giriş Yap | Google (sola dayalı)
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  // Logo + tagline
-                  SizedBox(width: 190, child: _buildStripLogo()),
-                  // Dikey ayırıcı
-                  Container(
-                    width: 1,
-                    height: 72,
-                    margin: const EdgeInsets.only(left: 24, right: 24, top: 4),
-                    color: Colors.white.withValues(alpha: 0.14),
-                  ),
                   // E-posta
                   Expanded(
                     flex: 3,
@@ -559,7 +619,7 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(height: 10),
               // Alt linkler
               Row(
-                mainAxisAlignment: MainAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   GestureDetector(
                     onTap: () => Navigator.push(

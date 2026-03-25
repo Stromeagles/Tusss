@@ -1,0 +1,712 @@
+{
+  "id": "patoloji_vaka_batch1",
+  "subject": "Patoloji",
+  "chapter": "Klinik Vakalar",
+  "topic": "Patoloji Klinik Korelasyonlar",
+  "sub_topic": "Biyopsi ve Histoloji Odaklı TUS Vakalar",
+  "content_summary": "50 patoloji vakası — biyopsi bulguları, histolojik tanı ve klinik korelasyon",
+  "flashcards": [],
+  "tus_spots": [],
+  "clinical_cases": [
+    {
+      "id": "pvaka-001",
+      "case": "Vaka:(Koagülatif Nekroz) 58 yaşında erkek hasta ani başlayan göğüs ağrısı ve nefes darlığı şikayetiyle acile getiriliyor. EKG'de anterior ST elevasyonu saptanıyor. Troponin T düzeyi belirgin yüksek. Hasta 24 saat sonra kardiyak arrest ile kaybediliyor. Otopsideki miyokard biyopsisinde hücre sınırlarının korunduğu, nükleusların soluklaştığı ve kaybolduğu, 'hayalet hücre' görünümü izleniyor. Bu histolojik bulgular hangi nekroz tipine işaret eder?",
+      "options": [
+        "A) Kazeifikasyon nekrozu",
+        "B) Koagülatif nekroz",
+        "C) Likefaktif nekroz",
+        "D) Yağ nekrozu",
+        "E) Fibrinoid nekroz"
+      ],
+      "correct_answer": "B) Koagülatif nekroz",
+      "explanation": "Koagülatif nekrozda proteinler denatüre olur ancak sitoiskelet yapısı korunur. Bu nedenle hücre şekli bozulmaz, 'hayalet hücre' görünümü oluşur. Nükleus değişiklikleri sırasıyla piknozis (küçülme), karyoreksis (parçalanma) ve karyolizis (erime) şeklindedir. Miyokard enfarktüsü ve böbrek iskemisi klasik örnekleridir. Beyin hariç tüm organlarda görülür. Likefaktif nekroz beyinde ve apselerde, kazeifikasyon TB'de, yağ nekrozu pankreatitte, fibrinoid nekroz vaskülitlerde görülür.",
+      "story_hint": "💡 HİKAYE: Koagülatif = 'pişmiş yumurta'. Protein dondu ama şekil kaldı. Miyokard enfarktüsü → hücreler hayalet gibi durur ama içleri boş. 'Hayalet hücre = koagülatif.'"
+    },
+    {
+      "id": "pvaka-002",
+      "case": "Vaka:(Likefaktif Nekroz - Beyin) 70 yaşında hipertansif erkek hasta ani bilinç kaybı ile acile getirildi. BT'de sol hemisfer hiperdens alan saptandı. Hasta 48 saat sonra kaybedildi. Otopside beyin dokusunda sıvı dolu kistik alan izlendi. Biyopside hücre yapılarının tamamen eridiği, makrofajların dolu olduğu görüldü. Bu tablo hangi nekroz tipiyle uyumludur?",
+      "options": [
+        "A) Koagülatif nekroz",
+        "B) Fibrinoid nekroz",
+        "C) Likefaktif nekroz",
+        "D) Kazeifikasyon nekrozu",
+        "E) Gangrenöz nekroz"
+      ],
+      "correct_answer": "C) Likefaktif nekroz",
+      "explanation": "Beyin iskemisinde likefaktif nekroz görülür çünkü beyin kuru protein içeriği düşük, enzim içeriği yüksektir. Lizozomal enzimler serbest kalarak doku erimesine neden olur. Sıvı dolu kistik boşluk oluşur. Makrofajlar (gitter hücreleri) eriyik doku kalıntılarını fagosite eder. Beynin yanı sıra bakteriyel apseler de likefaktif nekroza yol açar, ama orada nötrofiller pü oluşturur. Histolojik fark: iskemlide makrofaj, enfeksiyöz apselerde nötrofil egemendir.",
+      "story_hint": "💡 HİKAYE: Beyin 'yağlı' bir organ — proteini az, enzimi çok. Iskemi gelince her şey erir, sıvı birikirm kistik çukur oluşur. Gitter hücreleri (makrofajlar) çöpçü gibi kalıntıları toplar."
+    },
+    {
+      "id": "pvaka-003",
+      "case": "Vaka:(Gangrenöz Nekroz) 72 yaşında diyabetik erkek hastanın sağ ayak 3-4-5. parmakları kararmış ve kuruyarak mumyalaşmış görünümde. Hasta 'karardı ama koku yok' diyor. Çevre doku normal görünümde. Bu tablo hangi nekroz tipine uymaktadır?",
+      "options": [
+        "A) Islak gangren",
+        "B) Kuru gangren",
+        "C) Gaz gangreni",
+        "D) Yağ nekrozu",
+        "E) Kazeifikasyon nekrozu"
+      ],
+      "correct_answer": "B) Kuru gangren",
+      "explanation": "Kuru gangren (momifiye nekroz), ateroskleroz veya diyabetik damar hastalığına bağlı kronik iskemide ortaya çıkar. Doku kurur, büzüşür ve siyahlaşır. Bakteri kolonizasyonu minimum olduğundan kötü koku yoktur, biyopside koagülatif nekroz paterni izlenir. Islak gangrenin aksine enfeksiyon ve pü yoktur. Diyabetik hastalarda önce kuru gangren görülür, ikincil enfeksiyon eklenirse ıslak gangrene dönüşür. Gaz gangreninde ise Clostridium perfringens ile krepitasyon oluşur.",
+      "story_hint": "💡 HİKAYE: Kuru gangren = mumya. Ateroskleroz → kan kesildi → doku kuruyarak mumyalandı. Koku yok, pü yok — sadece karbonlaşmış sessiz doku kalıntısı."
+    },
+    {
+      "id": "pvaka-004",
+      "case": "Vaka:(Yağ Nekrozu) 45 yaşında alkolik erkek hasta epigastrik ağrı ve bulantı ile acile başvurdu. Amilaz 1200 U/L, lipaz 900 U/L. Cerrahi girişimde pankreas çevresinde beyaz tebeşir benzeri nodüller izlendi. Patolojik incelemede bu nodüllerde kalsiyum birikimi saptandı. Bu lezyonun oluşum mekanizması nedir?",
+      "options": [
+        "A) Fibroblast proliferasyonu",
+        "B) Kalsiyumun fosfat ile birikmesi",
+        "C) Lipazın yağ asitlerini hidrolize etmesi ve kalsiyum ile sabunlaşması",
+        "D) Makrofaj infiltrasyonu ve granülom oluşumu",
+        "E) İmmün kompleks birikimi"
+      ],
+      "correct_answer": "C) Lipazın yağ asitlerini hidrolize etmesi ve kalsiyum ile sabunlaşması",
+      "explanation": "Akut pankreatitte serbest kalan pankreas lipazı peripankreatik yağ dokusunu hidrolize eder. Açığa çıkan yağ asitleri kalsiyum iyonlarıyla birleşerek kalsiyum sabunu (saponifikasyon) oluşturur. Histolojik kesitte şadometre şeklinde amorf kalsiyum birikintileri ve yağ hücresi gölgeleri görülür. Bu enzimatik yağ nekrozudur ve sadece pankreas hastalıklarında görülür. Travmatik yağ nekrozu ise meme dokusunda travma sonrası lipazdan bağımsız mekanik nedenle oluşur.",
+      "story_hint": "💡 HİKAYE: Pankreas delindi (pankreatit), lipaz kaçtı, çevre yağları parçaladı. Serbest yağ asitleri kalsiyumla çarpıştı → sabun oluştu → beyaz tebeşir nodülleri. Saponifikasyon = yağ + kalsiyum = sabun."
+    },
+    {
+      "id": "pvaka-005",
+      "case": "Vaka:(Fibrinoid Nekroz) 35 yaşında SLE tanılı kadın hasta böbrek yetersizliği ve hipertansiyon nedeniyle yatırıldı. Böbrek biyopsisinde küçük damar duvarlarında pembe, granüler, fibrin benzeri madde birikimi izlendi. PAS boyasında bu materyal yoğun renklenme gösterdi. Bu bulgu hangi nekroz tipine uymaktadır?",
+      "options": [
+        "A) Koagülatif nekroz",
+        "B) Kazeifikasyon nekrozu",
+        "C) Yağ nekrozu",
+        "D) Fibrinoid nekroz",
+        "E) Likefaktif nekroz"
+      ],
+      "correct_answer": "D) Fibrinoid nekroz",
+      "explanation": "Fibrinoid nekroz damar duvarında immün kompleks birikimi ve plazma proteinlerinin (özellikle fibrinojen) damar duvarına sızmasıyla oluşur. SLE, romatoid artrit, poliarteritis nodoza ve malign hipertansiyonda görülür. Histolojik olarak H&E'de damar duvarında pembe-kırmızı, granüler fibrin birikimi izlenir. PAS pozitiftir. Aslında gerçek bir nekroz değil, fibrin ve plazma proteinlerinin birikmesidir. Lümen daraldığında iskemik komplikasyonlar gelişir.",
+      "story_hint": "💡 HİKAYE: SLE'de bağışıklık sistemi damarları vurdu — immün kompleksler damar duvarına yapıştı, fibrin birikimiyle duvar pembe granüler hale geldi. 'Fibrinoid = fibrin benzeri materyal damar duvarında.'"
+    },
+    {
+      "id": "pvaka-006",
+      "case": "Vaka:(Kazeifikasyon Nekrozu - TB) 28 yaşında göçmen erkek hasta öksürük, gece terlemesi ve kilo kaybıyla başvurdu. Akciğer grafisinde sağ üst lob konsolidasyonu. Bronkoskopik biyopside merkezi granüler, pembe, şekilsiz, 'ezilmiş peynir' görünümünde nekroz ve çevreleyen epiteloid histiyositler ile dev hücreler izlendi. Tanı nedir?",
+      "options": [
+        "A) Sarkoidoz",
+        "B) Kriptokokkoz",
+        "C) Tüberküloz",
+        "D) Histoplazma",
+        "E) Wegener granülomatozu"
+      ],
+      "correct_answer": "C) Tüberküloz",
+      "explanation": "Kazeifikasyon (peynir kesiği) nekrozu tüberkülozun patognomonik bulgusudur. Merkezi kaseifikasyon nekrozu etrafında epiteloid histiyositler, Langhans dev hücreleri ve lenfositlerden oluşan granülom yapısı izlenir. Mikobakteri hücre duvarındaki lipidler (kordbakteriyal lipid, lipoarabinomannan) bu karakteristik görünümü oluşturur. Sarkoidozda granülomlar non-kazeifiye (nekroz yok) tir. AFB boyasıyla aside dirençli bakteri görülür. Kültür veya PCR ile kesin tanı konur.",
+      "story_hint": "💡 HİKAYE: Kaseifikasyon = peynir. TB granülomünün ortası beyaz peynir gibi — mikobakteri lipidleri dokuyu eritip 'peynirleştiriyor'. Çevresinde epiteloid + Langhans devleri = TB imzası."
+    },
+    {
+      "id": "pvaka-007",
+      "case": "Vaka:(Koagülatif Nekroz - Böbrek) 52 yaşında hipertansif kadın hasta sol böbrekte künt travma geçirdi. USG'de sol böbreğin alt polünde üçgen şekilli, kortikal ekojenik alan saptandı. İdrar volümü azalmış. Biyopside glomerül ve tübül şekillerinin korunduğu, nükleusların kaybolduğu 'hayalet nefron' görünümü izlendi. Bu alanda hangi nekroz tipi beklenir?",
+      "options": [
+        "A) Likefaktif nekroz",
+        "B) Koagülatif nekroz",
+        "C) Yağ nekrozu",
+        "D) Gangrenöz nekroz",
+        "E) Fibrinoid nekroz"
+      ],
+      "correct_answer": "B) Koagülatif nekroz",
+      "explanation": "Böbrekte iskemik enfarkt alanlarında koagülatif nekroz görülür. Üçgen (kama) şekilli enfarkt alanı, tabanı kortekse, apeksi renal pelvis yönüne bakar. Histolojik olarak glomerül ve tübül yapıları 'hayalet' olarak seçilir — hücre şekli var ama nükleus ve canlılık yok. Böbrek, beyin dışında neredeyse tüm solid organlar gibi koagülatif nekroza uğrar. Pürülan nefrit veya renal apse durumunda likefaktif nekroz görülür.",
+      "story_hint": "💡 HİKAYE: Böbrek iskemisi → koagülatif nekroz → hayalet nefronlar. Tübüller şekilli ama nükleussuz → 'içi boş ev'. Beyin hariç tüm solid organlarda = koagülatif."
+    },
+    {
+      "id": "pvaka-008",
+      "case": "Vaka:(Wet Gangren) 68 yaşında diyabetik kadın hastanın sol ayağındaki yara enfekte oldu. Ayak bileğine kadar şişlik, kızarıklık, kötü kokulu pürülan akıntı ve bülöz lezyonlar mevcut. Ateş 39.2°C. Bu tablonun adı ve patolojik altyapısı nedir?",
+      "options": [
+        "A) Kuru gangren — aterosklerotik iskemi",
+        "B) Islak gangren — bakteriyel süperenfeksiyon + likefaktif nekroz",
+        "C) Gaz gangreni — Clostridium perfringens",
+        "D) Yağ nekrozu — lipaz aktivasyonu",
+        "E) Kazeifikasyon — mikobakteri"
+      ],
+      "correct_answer": "B) Islak gangren — bakteriyel süperenfeksiyon + likefaktif nekroz",
+      "explanation": "Islak gangren diyabetik hastalarda sık görülür. İskemik dokulara bakteriyel süperenfeksiyon (genellikle mikst flora: E. coli, Klebsiella, Bacteroides) eklenmesiyle oluşur. Lenfatik drenaj bozulduğundan ödem belirgindir, nötrofil infiltrasyonu ve pü oluşumu (likefaktif nekroz) baskındır. Kötü koku karakteristiktir. Gaz gangreninden farkı: krepitasyon yoktur. Tedavide geniş spektrumlu antibiyotik ve debridman, gerekirse amputasyon uygulanır.",
+      "story_hint": "💡 HİKAYE: Islak gangren = iskemik dokuya bakteri saldırdı, iltihap yayıldı, pü doldu. Diyabetik ayak ıslak gangrenin klasik sahnesi — şişmiş, kötü kokulu, pürülan."
+    },
+    {
+      "id": "pvaka-009",
+      "case": "Vaka:(Reed-Sternberg Hücresi) 24 yaşında genç erkek hasta boyun lenfadenopati, ateş, gece terlemesi ve kilo kaybıyla başvurdu. Boyun lenf nodu eksizyonunda H&E incelemede büyük, iki ya da çok çekirdekli, baykuş gözü görünümünde nükleol içeren dev hücreler saptandı. Arkaplan lenfosit, eozinofil ve plazma hücrelerinden oluşuyor. Bu hücreler hangi hastalığın tanısını koydurmaktadır?",
+      "options": [
+        "A) Non-Hodgkin lenfoma",
+        "B) Burkitt lenfoma",
+        "C) Hodgkin lenfoma",
+        "D) Diffüz büyük B hücreli lenfoma",
+        "E) Folliküler lenfoma"
+      ],
+      "correct_answer": "C) Hodgkin lenfoma",
+      "explanation": "Reed-Sternberg (RS) hücreleri Hodgkin lenfomanın patognomonik bulgusudur. Geniş soluk sitoplazma, iki ya da daha fazla büyük nükleus ve her birinde belirgin 'baykuş gözü' (owl eye) nükleol karakteristiktir. RS hücreleri B lenfosit kökenlidir (CD15+, CD30+, CD45-, B hücre markırları kaybedilmiş). Lakuna hücreleri nodüler sklerozan tipte görülür. Non-Hodgkin lenfomalarda RS hücresi bulunmaz, sadece neoplastik lenfositler vardır.",
+      "story_hint": "💡 HİKAYE: Reed-Sternberg = 'Baykuş Gözü'. İki büyük nükleus, her birinde dev nükleol — baykuşun gözleri gibi bakan dev hücre. Gençlerde boyun lenf bezi + B semptomu → Hodgkin."
+    },
+    {
+      "id": "pvaka-010",
+      "case": "Vaka:(Psammom Cisimciği) 45 yaşında kadın hastanın kranial BT'sinde falks yakınında hiperdens kitlesi saptandı. Biyopside eşmerkezli, konsantrik, kireçlenmiş lameller yapılar (psammom cisimciği) görüldü, iğ şeklinde hücreler ve belirgin fibröz stroma mevcuttu. Hangi tümörün tanısı bu histolojik bulguyla konur?",
+      "options": [
+        "A) Glioblastom",
+        "B) Meninjiom",
+        "C) Schwannom",
+        "D) Ependimom",
+        "E) Kraniofarenjiyom"
+      ],
+      "correct_answer": "B) Meninjiom",
+      "explanation": "Psammom cisimcikleri eşmerkezli, konsantrik, kalsifiye lamellerden oluşan yapılardır. Meninjiom, papiller tiroid kanseri ve seröz over kanseri başlıca tümörleri arasındadır. Meninjiomda whorling (girdap) şeklinde hücre dizilimi ve psammom cisimciği karakteristiktir. EMA ve vimentin pozitiftir. GFAP negatiftir (gliomla ayırıcı tanıda önemli). Kadınlarda daha sıktır, falks veya konveksiteden köken alır.",
+      "story_hint": "💡 HİKAYE: Psammom = 'kum taşı' (Yunanca). Meninjiom, tiroid papiller, seröz over — bu üçü kum taşı sever. Meninjiomda + whorling = girdap içinde kum taneleri."
+    },
+    {
+      "id": "pvaka-011",
+      "case": "Vaka:(Psammom - Tiroid) 38 yaşında kadın hastanın tiroidinde saptanan 2 cm solid nodülden ince iğne aspirasyonu yapıldı. Sitolojide nükleer pseudoinkluzyonlar, nükleer oluklar, orphan Annie göz nükleusları ve psammom cisimcikleri izlendi. Tanı nedir?",
+      "options": [
+        "A) Foliküler tiroid kanseri",
+        "B) Medüller tiroid kanseri",
+        "C) Anaplastik tiroid kanseri",
+        "D) Papiller tiroid kanseri",
+        "E) Hurthle hücreli karsinom"
+      ],
+      "correct_answer": "D) Papiller tiroid kanseri",
+      "explanation": "Papiller tiroid karsinomu (PTC) en sık tiroid malignitesidir (%80). Sitolojik özellikleri: Orphan Annie nükleusları (optik boş nükleus), nükleer oluklar, nükleer psödoinkluzyonlar ve psammom cisimcikleri. BRAF V600E mutasyonu en sık genetik değişimdir. Lenf nodu metastazı sık görülür. Prognoz iyidir. Foliküler kanserde kapsül ve damar invazyonu, medüller kanserde amiloid stroma ve kalsitonin, anaplastik kanserde total diferansiasyon kaybı öne çıkar.",
+      "story_hint": "💡 HİKAYE: Papiller tiroid = Orphan Annie gözleri (boş bakışlar). Nükleer oluklar + psammom = papiller imzası. 'Sahipsiz Annie' yalnız bakıyor, tiroid nodülü bulundu."
+    },
+    {
+      "id": "pvaka-012",
+      "case": "Vaka:(Signet Ring Hücresi) 52 yaşında erkek hasta 3 aydır süren epigastrik ağrı ve kilo kaybı şikayetiyle başvurdu. Endoskopide mide gövdesinde yaygın sertleşme ('deri torbası mide' görünümü). Biyopside büyük, soluk sitoplazmada periferik nükleusun itildiği hücreler izlendi, belirgin stroma fibrozisi mevcuttu. Bu hücreler nedir?",
+      "options": [
+        "A) Goblet hücresi",
+        "B) Signet ring (yüzük taşı) hücresi",
+        "C) Köpük hücresi (foam cell)",
+        "D) Reed-Sternberg hücresi",
+        "E) Clara hücresi"
+      ],
+      "correct_answer": "B) Signet ring (yüzük taşı) hücresi",
+      "explanation": "Signet ring hücreleri, mukus dolu büyük vakuolün nükleusu perifere itmesiyle oluşur. Midenin diffüz tip adenokarsinomunda görülür (Linitis plastica — 'deri torbası mide' veya 'mühür yüzüğü mide'). Mide duvarı yaygın fibrozis ve tümör infiltrasyonu nedeniyle sertleşir. Bu tip tümörler hormonally sensitive olup özellikle genç kadınlarda ve Krukenberg tümörü (over metastazı) olarak karşımıza çıkar. Prognoz kötüdür. CDH1 (E-cadherin) mutasyonu herediter diffüz mide kanseriyle ilişkilidir.",
+      "story_hint": "💡 HİKAYE: Signet ring = mühür yüzüğü. Hücre içi mukus balonu nükleusu kenara itti — yüzüğün taşı gibi periferik nükleus. Deri torbası mide = yaygın linitis plastica."
+    },
+    {
+      "id": "pvaka-013",
+      "case": "Vaka:(Call-Exner Cisimciği) 30 yaşında kadın hasta adneksiyal kitle nedeniyle operasyona alındı. Cerrahi örnekte sarı-kahve renkli over kitlesi biyopsisinde küçük, granüloza benzeri hücreler eozinofilik materyal içeren mikrofollikiiller oluştururken, bu yapılar ortasında sıkışmış şekilde izlendi. Hastanın preoperatif östradiol düzeyi yüksek, CA-125 normal. Tanı nedir?",
+      "options": [
+        "A) Seröz kistadenom",
+        "B) Müsinöz kistadenom",
+        "C) Granüloza hücreli tümör",
+        "D) Teratom",
+        "E) Disgerminoma"
+      ],
+      "correct_answer": "C) Granüloza hücreli tümör",
+      "explanation": "Call-Exner cisimcikleri granüloza hücreli tümörün (GCT) histolojik belirtecidir. Bu cisimcikler küçük granüloza hücrelerinin eozinofilik materyal etrafında rozet şeklinde dizilmesiyle oluşur. GCT, seks kord stromal tümörler grubundandır. Östrojen sekrete ettiğinden erken puberte (çocuklarda) veya endometrial hiperplazi/kanser (yetişkinlerde) ile birlikte görülür. FOXL2 mutasyonu karakteristiktir. Inhibin ve Anti-Müllerian Hormon (AMH) belirteçleri pozitiftir.",
+      "story_hint": "💡 HİKAYE: Call-Exner = granüloza hücreli tümörün gizli şifresi. Küçük hücreler eozinofilik merkez etrafında rozet çiziyor — mikrofollikül yapısı. Östrojen salgılıyor → endometrial hiperplazi şüphesi."
+    },
+    {
+      "id": "pvaka-014",
+      "case": "Vaka:(Reinke Kristali) 45 yaşında erkek hasta bilateral jinekomasti şikayetiyle ürolojiye başvurdu. Testis muayenesinde sert nodül. USG'de sol testiste 1.5 cm kitlesi var. Testis biyopsisinde poligonal, eozinofilik sitoplazmaya sahip büyük hücreler ve hücre içinde rod-şeklinde kristaller izlendi. Testosterone düzeyi yüksek. Tanı nedir?",
+      "options": [
+        "A) Seminom",
+        "B) Leydig hücreli tümör",
+        "C) Sertoli hücreli tümör",
+        "D) Germ hücreli tümör",
+        "E) Lenfoma"
+      ],
+      "correct_answer": "B) Leydig hücreli tümör",
+      "explanation": "Reinke kristalleri Leydig hücreli tümörün patognomonik bulgusudur. Sitoplazmada görülen çubuk (rod) şekilli kristaller Reinke kristalleridir. Leydig hücreleri testosteron salgılar; çocuklarda erken puberte, yetişkinlerde jinekomasti (testosteron→östrojen aromatizasyonu) ile prezente olur. Tümörler genellikle benigndır (%90). Altın sarısı-kahverengi renkli testis kitlesi görülür. AFP ve HCG negatiftir. İnhibin pozitif olabilir.",
+      "story_hint": "💡 HİKAYE: Reinke kristali = Leydig tümörünün çubukları. Hücre içi çubuk kristaller + jinekomasti + testosteron yüksekliği = Leydig tümörü. 'Leydig kredi kartı gibi rod-shaped cristal taşır.'"
+    },
+    {
+      "id": "pvaka-015",
+      "case": "Vaka:(Orphan Annie Nükleusları) 42 yaşında kadın hasta tiroid nodülü nedeniyle takip edilirken nodülden FNAB yapıldı. Patolojik incelemede papiller yapılar, nükleer oluklar ve boş görünen, optik berrak nükleuslara sahip hücreler izlendi. Belirgin nükleer overlap mevcuttu. Bu bulgular hangi tümörü düşündürür?",
+      "options": [
+        "A) Medüller tiroid kanseri",
+        "B) Papiller tiroid kanseri",
+        "C) Foliküler karsinom",
+        "D) Hashimoto tiroiditi",
+        "E) Anaplastik karsinom"
+      ],
+      "correct_answer": "B) Papiller tiroid kanseri",
+      "explanation": "Orphan Annie nükleusları (optik boş nükleus) papiller tiroid karsinomunun karakteristik sitolojik bulgusudur. Nükleer oluklar ve psödoinkluzyonlar da eşlik eder. Papiller yapılar, fibröz stroma ve psammom cisimciği görülebilir. BRAF V600E mutasyonu çok sıktır (%60-70). Lenf nodu metastazı erken olur ama prognoz iyidir. Foliküler karsinom FNAB ile tanınamaz; kapsül ve vasküler invazyon gerekir.",
+      "story_hint": "💡 HİKAYE: Orphan Annie = sahipsiz gözler. Papiller tiroid sitolojisi: boş bakan nükleus + nükleer oluk + psammom = üçlü tanı zinciri."
+    },
+    {
+      "id": "pvaka-016",
+      "case": "Vaka:(Tümör Histoloji - Kolon) 65 yaşında erkek hasta 6 aydır süren rektal kanama ve bağırsak alışkanlık değişikliğiyle başvurdu. Kolonoskopik biyopside bez oluşturan, müsin salgılayan, nükleolü belirgin atipik hücreler izlendi. Bez lümenlerinde nekrotik debris (kirli nekroz) mevcut. En olası tanı nedir?",
+      "options": [
+        "A) Karsinoid tümör",
+        "B) Signet ring hücreli karsinom",
+        "C) Adenokarsinom",
+        "D) Skuamöz hücreli karsinom",
+        "E) GIST"
+      ],
+      "correct_answer": "C) Adenokarsinom",
+      "explanation": "Kolon adenokarsinomunun histolojik özellikleri: bez oluşumu (glandüler diferansiasyon), müsin sekresyonu, nükleolü belirgin hiperkromatik nükleus ve bez lümenlerinde 'kirli nekroz' (necrotic debris). CK7-/CK20+/CDX2+ profili tipiktir. Sol kolonda görülen tümörler obstrüksiyon yapar, sağ kolondakiler büyüyerek kanama yapar. Lynch sendromu (HNPCC) mismatch repair gen mutasyonlarıyla (MLH1, MSH2) ilişkilidir. Sporadik kolon kanseri APC gen mutasyonuyla başlar (adenoma-karsinom dizisi).",
+      "story_hint": "💡 HİKAYE: Kolon adenokarsinomu = bez yapıyor, mukus salgılıyor, lümende kirli nekroz. CK20+/CDX2+ kolon imzası. Kirli nekroz = kolon kanseri ipucu."
+    },
+    {
+      "id": "pvaka-017",
+      "case": "Vaka:(Glandüler Diferansiasyon - Akciğer) 60 yaşında sigara içmeyen kadın hasta akciğer kitlesi nedeniyle başvurdu. Biyopside asiner/papiller yapılar oluşturan, müsin salgılayan atipik hücreler izlendi. İmmünohistokimyada TTF-1 (+), Napsin A (+), CK7 (+), CK20 (-) saptandı. Tanı nedir?",
+      "options": [
+        "A) Skuamöz hücreli karsinom",
+        "B) Küçük hücreli karsinom",
+        "C) Adenokarsinom",
+        "D) Büyük hücreli karsinom",
+        "E) Karsinoid tümör"
+      ],
+      "correct_answer": "C) Adenokarsinom",
+      "explanation": "Akciğer adenokarsinomunda TTF-1 (Tiroid Transkripsiyon Faktörü-1) ve Napsin A pozitiftir. Bu belirteçler adenokarsinomu skuamöz hücreli karsinomdan (p40, p63, CK5/6 pozitif) ve küçük hücreli karsinomdan (synaptofizin, kromogranin, CD56 pozitif) ayırt etmede kullanılır. Sigara içmeyenlerde daha sık, periferik yerleşimli, EGFR mutasyonu sık görülür. TTF-1 tiroid ve akciğer adenokarsinomunu işaretler; CK7+/CK20- ile kolonu ekarte eder.",
+      "story_hint": "💡 HİKAYE: TTF-1 = 'Tiroid ve Akciğer etiketi'. Sigara içmeyen, periferik, TTF-1+ → akciğer adenokarsinomu. CK7+/CK20- = akciğer. CK7-/CK20+ = kolon."
+    },
+    {
+      "id": "pvaka-018",
+      "case": "Vaka:(Mezotelyoma IHK) 58 yaşında erkek hasta 20 yıl asbest maruziyeti öyküsüyle plevral effüzyon ve nefes darlığıyla başvurdu. Plevral biyopside iğ şekilli ve epiteloid hücreler izlendi. İHK: kalretinin (+), WT-1 (+), D2-40 (+), TTF-1 (-), CEA (-). Tanı nedir?",
+      "options": [
+        "A) Akciğer adenokarsinomu plevra metastazı",
+        "B) Plevral mezotelyoma",
+        "C) Timoma",
+        "D) Lenfoma",
+        "E) Skuamöz hücreli karsinom"
+      ],
+      "correct_answer": "B) Plevral mezotelyoma",
+      "explanation": "Mezotelyoma İHK profili: Kalretinin (+), WT-1 (+), D2-40 (podoplanin) (+), CK5/6 (+). Adenokarsinom belirteçleri (TTF-1, CEA, CK7 yüksek) negatiftir. Kalretinin mezotel hücrelerinin en güvenilir belirtecidir. D2-40 lenfatik endotel ve mezotel için pozitiftir. Asbest maruziyeti serozal mezotelyomanın en önemli risk faktörüdür. Latent süresi 20-40 yıldır. Plevral diffüz tutulum (plevral kalınlaşma) tipiktir. Prognoz kötüdür.",
+      "story_hint": "💡 HİKAYE: Mezotelyoma üçlüsü: kalretinin + WT-1 + D2-40 POZITIF, TTF-1 ve CEA NEGATİF. Asbest + plevral kalınlaşma + bu IHK profili = mezotelyoma."
+    },
+    {
+      "id": "pvaka-019",
+      "case": "Vaka:(CK7/CK20 - Over vs Kolon) 55 yaşında kadın hasta over kitlesinden biyopsi yapıldı. İHK: CK7 (+), CK20 (-), CA-125 (+), PAX8 (+). Aynı hastanın kolonoskopik biyopsisi: CK7 (-), CK20 (+), CDX2 (+). Hangi tümör profili hangi organa aittir?",
+      "options": [
+        "A) Birinci profil kolon, ikinci profil over",
+        "B) Her iki profil de over karsinomuna ait",
+        "C) Birinci profil over, ikinci profil kolon",
+        "D) Her iki profil de kolon karsinomuna ait",
+        "E) Birinci profil akciğer, ikinci profil kolon"
+      ],
+      "correct_answer": "C) Birinci profil over, ikinci profil kolon",
+      "explanation": "CK7/CK20 profili tümörün orijinini belirlemede kullanılan en önemli IHK paneldir. Over karsinomu: CK7+/CK20-/CA-125+/PAX8+. Kolon karsinomu: CK7-/CK20+/CDX2+. Akciğer adenokarsinomu: CK7+/CK20-/TTF-1+. Meme: CK7+/CK20-/ER+/PR+. Mesane: CK7+/CK20+. Karaciğer HCC: CK7-/CK20-/HepPar1+. Bu profiller metastaz kökenini belirlemede kritik öneme sahiptir.",
+      "story_hint": "💡 HİKAYE: CK7/CK20 = pasaport kontrolü. Over ve akciğer: CK7 YESİL-CK20 KIRMIZI. Kolon: CK7 KIRMIZI-CK20 YEŞİL. CDX2 = kolon özel etiketi."
+    },
+    {
+      "id": "pvaka-020",
+      "case": "Vaka:(PSA İmmünohistokimya) 70 yaşında erkek hastada kemik ağrıları ve PSA 250 ng/mL saptandı. Vertebra biyopsisinde atipik hücreler izlendi. İHK: PSA (+), NKX3.1 (+), CK20 (-), TTF-1 (-). Bu metastatik tümörün birincil kaynağı nedir?",
+      "options": [
+        "A) Akciğer",
+        "B) Kolon",
+        "C) Prostat",
+        "D) Karaciğer",
+        "E) Mesane"
+      ],
+      "correct_answer": "C) Prostat",
+      "explanation": "PSA (Prostat Spesifik Antijen) ve NKX3.1 prostat adenokarsinomunun en spesifik İHK belirteçleridir. Prostat kanseri kemik metastazı yapar (özellikle osteoblastik — alkalen fosfataz yüksek). Serum PSA çok yüksek olduğunda zaten prostat kanseri güçlü şüphelidir, ancak biyopsi ile İHK profil doğrulaması yapılır. Gleason skoru (3+4, 4+3 vb.) prostat kanserinin histolojik derecelendirmesini belirler. AR (androjen reseptörü) de pozitiftir.",
+      "story_hint": "💡 HİKAYE: PSA + kemik metastazı (osteoblastik) + NKX3.1 = prostat kanseri üçlüsü. Kemikte 'beyaz' (osteoblastik) metastaz = prostat imzası. Osteolitik = meme, MM, akciğer."
+    },
+    {
+      "id": "pvaka-021",
+      "case": "Vaka:(TTF-1 - Tiroid vs Akciğer) 50 yaşında kadın hasta beyin kitlesinden biyopsi yapıldı. İHK: TTF-1 (+), Tiroglobulin (-), Napsin A (+), CK7 (+). Bu metastatik tümörün birincil kaynağı nedir?",
+      "options": [
+        "A) Papiller tiroid kanseri",
+        "B) Akciğer adenokarsinomu",
+        "C) Meme karsinomu",
+        "D) Renal hücreli karsinom",
+        "E) Over karsinomu"
+      ],
+      "correct_answer": "B) Akciğer adenokarsinomu",
+      "explanation": "TTF-1 hem tiroid hem de akciğer adenokarsinomunda pozitiftir. Ayırım: Tiroid kanseri: TTF-1+, Tiroglobulin+, Napsin A-. Akciğer adenokarsinomu: TTF-1+, Tiroglobulin-, Napsin A+. Bu vakada tiroglobulin negatif, Napsin A pozitif olduğu için akciğer adenokarsinomu tanısı konur. Napsin A yalnızca akciğer için spesifiktir. Beyin metastazı en sık akciğer kanserinde görülür. EGFR, ALK, ROS1 mutasyonları tedaviyi yönlendirir.",
+      "story_hint": "💡 HİKAYE: TTF-1 iki kapıyı açar: tiroid ve akciğer. Ayırıcı tanı: Tiroglobulin var mı? Yok → akciğer. Napsin A var mı? Var → Akciğer adenokarsinomu. Napsin = akciğer'e özel."
+    },
+    {
+      "id": "pvaka-022",
+      "case": "Vaka:(Non-Kazeifiye Granülom - Sarkoidoz) 35 yaşında Afro-Amerikan kadın hasta öksürük, nefes darlığı ve bilateral hiler lenfadenopati nedeniyle başvurdu. Bronkoalveolar lavajda lenfosit artışı, CD4/CD8 oranı 3.5 (yüksek). Bronş biyopsisinde granülomlar izlendi ancak merkezi nekroz saptanmadı. Schaumann cisimciği ve asteroidal inklüzyonlar görüldü. Tanı nedir?",
+      "options": [
+        "A) Tüberküloz",
+        "B) Sarkoidoz",
+        "C) Histoplazmoz",
+        "D) Wegener granülomatozu",
+        "E) Hipersensitivite pnömonisi"
+      ],
+      "correct_answer": "B) Sarkoidoz",
+      "explanation": "Sarkoidoz non-kazeifiye (nekrozsuz) epiteloid granülomlarla karakterizedir. TB'den ayıran temel özellik nekroz yokluğudur. Schaumann cisimciği (kalsifiye laminar inklüzyon) ve asteroidal cisimcikler sarkoidoza spesifiktir ancak patognomonik değildir. BAL'da CD4/CD8 oranı >3.5 tipiktir. ACE (anjiyotensin dönüştürücü enzim) ve serum kalsiyum yüksektir. Bilateral hiler lenfadenopati (BHL) radyolojik bulgudur. AFB boyası negatiftir.",
+      "story_hint": "💡 HİKAYE: Sarkoidoz = nekrozsuz granülom. TB ile karşılaştırma: TB'de merkez peynirleşiyor, sarkoidozda granülom 'temiz' kalmaya devam ediyor. Schaumann + AFB negatif = sarkoidoz."
+    },
+    {
+      "id": "pvaka-023",
+      "case": "Vaka:(Yabancı Cisim Granülomu) 40 yaşında kadın hasta meme büyütme ameliyatından 5 yıl sonra sol memede sertlik şikayetiyle başvurdu. Eksizyonel biyopside dev çok çekirdekli yabancı cisim tipi dev hücreler ve etrafında fibrozis izlendi; merkezi nekroz yoktu. Bu bulgular neyi gösterir?",
+      "options": [
+        "A) Kazeifiye granülom",
+        "B) Sarkoidoz granülomu",
+        "C) Yabancı cisim granülomu",
+        "D) Kriptokokkoz",
+        "E) Aktinomikoz"
+      ],
+      "correct_answer": "C) Yabancı cisim granülomu",
+      "explanation": "Yabancı cisim granülomu, sindirilemeyen maddeler (silikon, sütür materyali, keratin, talc vb.) çevresinde gelişen kronik inflamatuar reaksiyondur. Histolojik özellikler: dev çok çekirdekli yabancı cisim tipi dev hücreler (nükleus düzensiz dağılımda), sürperficial fibrozis, eosinofil infiltrasyonu. Merkezi nekroz yoktur (TB ve mantar granülomlarından fark). Yabancı materyal polarize ışıkta birefrinjan görülür. Meme implantı, sütür materyali, talk pudrası gibi maddeler tipik nedenlerdir.",
+      "story_hint": "💡 HİKAYE: Silikon = vücut tarafından yabancı. Makrofajlar parçalayamıyor → dev hücre oluşturuyor → granülom sarıyor. Nekroz yok, yabancı materyal var — yabancı cisim granülomu."
+    },
+    {
+      "id": "pvaka-024",
+      "case": "Vaka:(Crohn Granülomu) 25 yaşında erkek hasta karın ağrısı, diyare ve perianal fistül şikayetiyle başvurdu. Kolonoskopik biyopside transmural tutulum, kriptit, yama tarzı (skip lesion) inflamasyon ve non-kazeifiye granülomlar izlendi. Tanı nedir?",
+      "options": [
+        "A) Ülseratif kolit",
+        "B) Crohn hastalığı",
+        "C) Tüberküloz koliti",
+        "D) Amip koliti",
+        "E) Psödomembranöz kolit"
+      ],
+      "correct_answer": "B) Crohn hastalığı",
+      "explanation": "Crohn hastalığı transmural inflamasyon, skip lezyonları (yama tarzı), non-kazeifiye granülomlar (%60 vakada) ve fisür/fistül oluşumuyla karakterizedir. Ağızdan anüse kadar tüm GIS tutulabilir; terminal ileum en sık bölgedir. Ülseratif kolit ile farkı: ÜK sadece mukozal, sürekli, kalın bağırsak, granülom yok. Crohn: transmural, yama, ince+kalın bağırsak, granülom var. Serolojik olarak ASCA (anti-Saccharomyces cerevisiae antikoru) Crohn'da pozitiftir.",
+      "story_hint": "💡 HİKAYE: Crohn = 'atlayan yangın' (skip). Tüm kat tutulumu, granülom var, fistül sever. Ülseratif kolit ise 'sürekli kızarıklık' — granülom yok, sadece iç kat (mukoza)."
+    },
+    {
+      "id": "pvaka-025",
+      "case": "Vaka:(TB Granülomu - Lenf Nodu) 30 yaşında HIV pozitif erkek hasta boyun lenf nodu büyümesi ve ateşle başvurdu. Lenf nodu biyopsisinde kazeifikasyon nekrozu, epiteloid histiyositler ve Langhans dev hücreleri izlendi. Ziehl-Neelsen boyasında aside dirençli basil görüldü. En olası tanı nedir?",
+      "options": [
+        "A) Sarkoidoz",
+        "B) Toksoplazma lenfadenit",
+        "C) Metastatik skuamöz hücreli karsinom",
+        "D) Tüberküloz lenfadenit",
+        "E) Hodgkin lenfoma"
+      ],
+      "correct_answer": "D) Tüberküloz lenfadenit",
+      "explanation": "Tüberküloz lenfadeniti (skrofula) HIV pozitif hastalarda çok sık görülür. Kazeifikasyon nekrozu + epiteloid histiyositler + Langhans dev hücreleri üçlüsü TB granülomunu tanımlar. Langhans dev hücreleri nükleuslarının periferye at nalı (horseshoe) şeklinde dizilmesiyle tanınır; yabancı cisim dev hücrelerinden ayrılır (düzensiz nükleus). ZN veya Auramin O boyasıyla ARB (aside dirençli basil) görülür. HIV pozitif hastalarda atipik mikobakteri de düşünülmelidir.",
+      "story_hint": "💡 HİKAYE: Kazeifikasyon + Langhans dev hücresi + ZN+ ARB = TB formülü. Langhans = 'at nalı' nükleus dizilimi. Lenf nodu TB = Skrofula (boyun lenfadenopati TB'si)."
+    },
+    {
+      "id": "pvaka-026",
+      "case": "Vaka:(Minimal Change Disease - EM) 5 yaşında erkek çocuk jeneralize ödem, göz kapaklarında şişlik ve proteinüriyle getirildi. İdrar protein/kreatinin oranı 8.5. Işık mikroskobisinde glomerüller normal. Elektron mikroskobisinde pedisel (foot process) füzyonu saptandı. İmmünfloresanste boyama negatif. Tanı nedir?",
+      "options": [
+        "A) Fokal segmental glomerüloskleroz (FSGS)",
+        "B) Membranöz nefropati",
+        "C) Minimal change disease (MCD)",
+        "D) Diffüz proliferatif GN",
+        "E) IgA nefropatisi"
+      ],
+      "correct_answer": "C) Minimal change disease (MCD)",
+      "explanation": "Minimal change disease (MCD) çocuklarda en sık nefrotik sendrom nedenidir. Işık mikroskobisinde glomerüller tamamen normaldir. Elektronmikroskopide pedisellerin (podosit foot process) yaygın füzyonu/silinmesi patognomoniktir. İmmünflöresansta immün kompleks yoktur (negatif). Albümin seçici proteinüri görülür. Steroidlere mükemmel yanıt verir. Podosit kaynaklı bir T hücre sitokin hastalığıdır. FSGS'de fokal skleroz, membranöz nefropatide subepitelyal depozit görülür.",
+      "story_hint": "💡 HİKAYE: MCD = 'Işık mikroskobu hiçbir şey görmüyor' ama EM gerçeği ortaya koyuyor: pedisel füzyonu. Çocuklarda nefrotik sendrom + steroid dram + EM pedisel silinmesi = MCD."
+    },
+    {
+      "id": "pvaka-027",
+      "case": "Vaka:(Barrett Özofagusu) 55 yaşında erkek hasta 15 yıllık gastroözofageal reflü (GÖRH) öyküsüyle üst GIS endoskopisi yapıldı. Endoskopide Z-çizgisinin 3 cm proksimalinde kırmızı mukoza izlendi. Biyopside çok katlı yassı epitelin yerine goblet hücresi içeren kolumnar epitel ile yer değiştirdiği görüldü. Bu durum nedir?",
+      "options": [
+        "A) Akut özofajit",
+        "B) Squamöz metaplazi",
+        "C) Barrett özofagusu",
+        "D) Özofagus karsinomu",
+        "E) Özofagus lenfoma"
+      ],
+      "correct_answer": "C) Barrett özofagusu",
+      "explanation": "Barrett özofagusu kronik asit reflüsüne bağlı metaplastik bir değişikliktir. Normalde yassı epitel olan distal özofagus mukozası, goblet hücreli intestinal tip kolumnar epitelle yer değiştirir (intestinal metaplazi). Bu, özofageal adenokarsinomu için en önemli premalign lezyondur. Özellikle goblet hücrelerinin varlığı Barrett özofagusunun tanımında zorunludur. Düzensiz displazi artışı → low grade displazi → high grade displazi → adenokarsinom sekansı izlenir. PPI tedavisi ve endoskopik takip önerilir.",
+      "story_hint": "💡 HİKAYE: Barrett = Reflü yıllarca özofagusun içini yaktı, yassı epiteli bıktırdı, bağırsak tipi hücre geldi. Goblet hücresi = intestinal tip metaplazi = Barrett imzası."
+    },
+    {
+      "id": "pvaka-028",
+      "case": "Vaka:(Barrett → Adenokarsinom) 60 yaşında erkek hasta uzun süreli Barrett özofagusu takibindeyken son endoskopide displastik değişiklikler saptandı. Eksizyon materyalinde goblet hücreli metaplazi zemininde bez oluşturan, nükleolü belirgin, mitoz gösteren atipik hücreler izlendi. Tanı nedir?",
+      "options": [
+        "A) Skuamöz hücreli karsinom",
+        "B) Mukoepidermoid karsinom",
+        "C) Adenokarsinom",
+        "D) Karsinoid tümör",
+        "E) Lenfoma"
+      ],
+      "correct_answer": "C) Adenokarsinom",
+      "explanation": "Barrett özofagusu zemininde gelişen tümör adenokarsinomdur ve alt özofagus/gastroözofageal bileşkede yerleşir. Yüksek dereceli displazinin invazyona dönüşümüdür. Histolojik olarak bez oluşumu, müsin sekresyonu ve belirgin atipi görülür. Skuamöz hücreli karsinom ise orta-üst özofagustan gelişir, sigara ve alkol risk faktörüdür. Batı ülkelerinde özofagus adenokarsinomu sıklığı artmakta, skuamöz karsinomun önüne geçmektedir. TTF-1 negatif, CK7+, CDX2 pozitif olabilir.",
+      "story_hint": "💡 HİKAYE: Barrett → displazi → adenokarsinom. Alt özofagus tümörü = adenokarsinom (reflü-Barrett zinciri). Üst özofagus = skuamöz (sigara-alkol). Lokalizasyon = tümör tipi ipucu."
+    },
+    {
+      "id": "pvaka-029",
+      "case": "Vaka:(Mallory Cisimciği - Siroz) 48 yaşında alkolik erkek hasta sarılık ve asit nedeniyle yatırıldı. Karaciğer biyopsisinde hepatosit şişmesi, nötrofil infiltrasyonu ve hepatosit içinde koyu pembe, düzensiz inklüzyon cisimcikleri saptandı. Kollajen lif artışı periportal alanda belirgin. Bu inklüzyonlar nedir?",
+      "options": [
+        "A) Councilman cisimciği",
+        "B) Mallory-Denk cisimciği",
+        "C) Michaelis-Gutmann cisimciği",
+        "D) Negri cisimciği",
+        "E) Russell cisimciği"
+      ],
+      "correct_answer": "B) Mallory-Denk cisimciği",
+      "explanation": "Mallory-Denk cisimciği (eski adı Mallory hyalin), hasar görmüş hepatosit içinde birikim gösteren sitokeratin intermediate filamentlerin yumaklanmasıyla oluşur. Alkol bağımlılığı, NASH (nonalkolik steatohepatit) ve Wilson hastalığında görülür. Alkolik hepatitte karakteristik bulgulardır: hepatosit balonlaşması, Mallory cisimciği, nötrofil infiltrasyonu (alkolik hepatit paterni) ve perivenüler fibrozis. İlerlemiş olguda siroz gelişir. Councilman cisimciği ise apoptotik hepatosit (sarı humma, viral hepatit)tir.",
+      "story_hint": "💡 HİKAYE: Mallory = alkolün hepatositlerde bıraktığı 'sitokeratin yumağı'. Alkolik hepatit dörtlüsü: balonlaşma + Mallory + nötrofil + fibrozis. Mallory = alkolün imzası."
+    },
+    {
+      "id": "pvaka-030",
+      "case": "Vaka:(Aschoff Cisimciği) 18 yaşında kız hasta boğaz ağrısı atağından 3 hafta sonra ateş, göğüs ağrısı, deri döküntüsü ve eklem şikayetiyle başvurdu. Ekokardiyografide mitral kapak hasarı saptandı. Kalp biyopsisinde myokardda fibrinoid nekroz ve etrafında büyük, nükleolü belirgin Anitschkow hücreleri ile dev Aschoff hücreleri içeren granülomlar izlendi. Tanı nedir?",
+      "options": [
+        "A) Viral miyokardit",
+        "B) Romatizmal ateş ile Aschoff granülomu",
+        "C) Sarkoidoz kardiyak tutulumu",
+        "D) TB perikardit",
+        "E) Eozinofilik miyokardit"
+      ],
+      "correct_answer": "B) Romatizmal ateş ile Aschoff granülomu",
+      "explanation": "Aschoff cisimciği (granülomu) akut romatizmal ateşin patognomonik bulgusudur. Miyokardda perivasküler fibrinoid nekroz odağı çevresinde iri Aschoff hücreleri (büyük makrofajlar, ayışığı nükleuslu) ve Anitschkow hücreleri (tırtıklı nükleus, 'caterpillar' nükleus) yer alır. Grup A beta-hemolitik Streptococcus pharyngitis sonrası immünolojik hasardır. Jones kriterleri (büyük: kardit, artrit, korea, halkasal eritem, subkutan nodüller) tanıda kullanılır. ASO titri yüksektir.",
+      "story_hint": "💡 HİKAYE: Boğaz enfeksiyonu → 3 hafta → kalp granülomu. Aschoff granülomu = romatizmal ateşin kalp içindeki izi. Anitschkow = tırtıklı nükleus = tırtıl hücre. Strep boğazı → kalbi hedef alır."
+    },
+    {
+      "id": "pvaka-031",
+      "case": "Vaka:(Minimal Change - EM Devam) 8 yaşında erkek çocuk akut nefrotik sendromla yatırıldı. Böbrek biyopsisinde ışık mikroskobu normaldi. Elektron mikroskobisinde diffüz podosit foot process silinmesi izlendi. İmmünflöresans tamamen negatifti. Serum albümin 1.8 g/dL. Bu bulgular hangi hastalıkla uyumludur?",
+      "options": [
+        "A) IgA nefropati",
+        "B) Fokal segmental glomerüloskleroz",
+        "C) Minimal change disease",
+        "D) Membranöz nefropati",
+        "E) MPGN tip 1"
+      ],
+      "correct_answer": "C) Minimal change disease",
+      "explanation": "MCD'de altın standart tanı elektron mikroskobisindeki diffüz podosit foot process efasmentidir (silinmesi). Işık mikroskobu normaldir. İmmünflöresansta immün kompleks yoktur. Çocukların nefrotik sendromunun %80'ini oluşturur. Steroid tedavisine yanıt mükemmeldir. Relaps-remisyon paterni görülebilir. Sekonder nedenleri: NSAID, lenfoma (özellikle Hodgkin lenfoma). FSGS'de fokal skleroz bölgeleri ve IgM depozit görülür. MCD'nin sekonder formu Hodgkin lenfoma ile birlikteliği açısından önemlidir.",
+      "story_hint": "💡 HİKAYE: Altın üçgen: EM (pedisel silinmesi) + IF negatif + LM normal = MCD. Steroid ver, düzelir. Hodgkin lenfoma ile birlikte gelebilir — her iki tanıyı birden düşün."
+    },
+    {
+      "id": "pvaka-032",
+      "case": "Vaka:(Membranöz Nefropati) 45 yaşında erkek hastada nefrotik sendrom saptandı. Böbrek biyopsisinde ışık mikroskobisinde bazal membran kalınlaşması, PAS boyasında spike (çivi) görünümü izlendi. İmmünflöresansta granüler IgG ve C3 depoziti görüldü. Elektron mikroskobisinde subepitelyal depozitler saptandı. Tanı nedir?",
+      "options": [
+        "A) Minimal change disease",
+        "B) IgA nefropati",
+        "C) Membranöz nefropati",
+        "D) Fokal segmental glomerüloskleroz",
+        "E) Diffüz proliferatif GN"
+      ],
+      "correct_answer": "C) Membranöz nefropati",
+      "explanation": "Membranöz nefropati erişkinlerde en sık nefrotik sendrom nedenidir. Histolojik özellikleri: GBM kalınlaşması, PAS ile spike görünümü (bazal membran uzantıları depozitler arasına girer), IF'da granüler IgG+C3, EM'de subepitelyal depozit. İdiyopatik formda PLA2R (fosfolipaz A2 reseptörü) antikoru pozitif (%70-80). Sekonder nedenler: SLE (lupus nefrit klas V), HBV, bazı ilaçlar (D-penisilamin, NSAIDs), solid organ tümörleri. Membranöz nefropati yetişkin nefrotik sendromu için 1 numara.",
+      "story_hint": "💡 HİKAYE: Membranöz = bazal membran kalınlaşıyor. Spike görünümü = depozitler arasına GBM uzanıyor. IF granüler = immün kompleks. PLA2R antikoru = idiyopatik form'un parmak izi."
+    },
+    {
+      "id": "pvaka-033",
+      "case": "Vaka:(IgA Nefropati - Berger) 22 yaşında erkek hasta üst solunum yolu enfeksiyonundan 1-2 gün sonra gross hematüri ile başvurdu. Böbrek biyopsisinde mezangial hücre ve matriks proliferasyonu saptandı. İmmünflöresansta mezangiyumda granüler IgA depoziti izlendi. Serum IgA düzeyi yüksek. Tanı nedir?",
+      "options": [
+        "A) Post-streptokokal glomerülonefrit",
+        "B) IgA nefropati (Berger hastalığı)",
+        "C) Henoch-Schönlein purpurası",
+        "D) MPGN",
+        "E) SLE nefrit"
+      ],
+      "correct_answer": "B) IgA nefropati (Berger hastalığı)",
+      "explanation": "IgA nefropati dünya genelinde en sık primer glomerülonefrit tipidir. Enfeksiyonla eş zamanlı (synpharyngitic) hematüri tipiktir — post-strep GN'den fark olarak 10-21 gün beklemez, 1-3 günde başlar. İF'da mezangiyumda IgA birikimi patognomoniktir. Post-strep GN'de subendotelyal hump depozitleri ve C3 birikimi baskındır. HSP sistemik formdur (IgA vaskülit) — deri, eklem, GIS ve böbrek tutulumu. Serum IgA yüksek olabilir. Proteinüri ve hipertansiyon kötü prognostik faktörlerdir.",
+      "story_hint": "💡 HİKAYE: IgA nefropati = solunum yolu enfeksiyonu → 1-2 gün → kanlı idrar. Post-strep 2-3 hafta bekler, IgA nefropati beklemez. Mezangiumda IgA birikiyor — 'Berger'in imzası.'"
+    },
+    {
+      "id": "pvaka-034",
+      "case": "Vaka:(Fokal Segmental Glomerüloskleroz) 35 yaşında erkek hastada nefrotik sendrom saptandı. HIV pozitif. Böbrek biyopsisinde bazı glomerüllerin (fokal) bir kısmında (segmental) yüzeysel hiyalinizasyon ve skleroz izlendi. İF'da IgM ve C3 mesangiumda birikimi görüldü. EM'de diffüz pedisel silinmesi mevcuttu. En olası tanı nedir?",
+      "options": [
+        "A) Minimal change disease",
+        "B) FSGS",
+        "C) Membranöz nefropati",
+        "D) IgA nefropati",
+        "E) Lupus nefrit"
+      ],
+      "correct_answer": "B) FSGS",
+      "explanation": "FSGS fokal (bazı glomerüller) ve segmental (glomerülün bir kısmı) skleroz ile karakterizedir. HIV nefropatisi (HIVAN), heroin kullanımı, obezite, hipertansiyon ve reflü nefropatisi nedenleri arasındadır. HIVAN'da kollaplı FSGS varyantı görülür ve siyah ırkta daha sık. IF'da IgM ve C3 nonspesifik birikir. EM'de pedisel silinmesi MCD ile benzer ama FSGS'de fokal skleroz lezyonu ayırt ettirici. Steroidlere MCD kadar iyi yanıt vermez. APOL1 gen varyantları riski artırır.",
+      "story_hint": "💡 HİKAYE: FSGS = 'sektörel hasar'. Fokal = hepsi değil, bazı glomerüller. Segmental = tümü değil, parça parça. HIV + nefrotik sendrom → HIVAN-FSGS düşün. MCD'den fark: skleroz var."
+    },
+    {
+      "id": "pvaka-035",
+      "case": "Vaka:(Post-Streptokokal GN) 10 yaşında erkek çocuk boğaz enfeksiyonundan 3 hafta sonra hematüri, hipertansiyon ve ödem ile başvurdu. İdrar sedimentinde eritrosit silendiri görüldü. ASO titresi yüksek. Böbrek biyopsisinde diffüz proliferatif glomerülonefrit saptandı. İF'da 'starry sky' görünümü (C3 ve IgG granüler). EM'de subepitelyal hump depozitleri izlendi. Tanı nedir?",
+      "options": [
+        "A) IgA nefropati",
+        "B) Membranöz nefropati",
+        "C) Post-streptokokal glomerülonefrit",
+        "D) Minimal change disease",
+        "E) Henoch-Schönlein purpurası"
+      ],
+      "correct_answer": "C) Post-streptokokal glomerülonefrit",
+      "explanation": "Post-streptokokal GN (PSGN) Grup A beta-hemolitik Streptococcus boğaz veya deri enfeksiyonundan 10-21 gün sonra görülür. Nefritik sendromla prezente olur (hematüri + hipertansiyon + oligüri). ASO yüksek, kompleman (C3) düşük. IF'da granüler IgG + C3 'starry sky' görünümü. EM'de subepitelyal hump şeklinde depozitler karakteristiktir. Çocuklarda en sık nefritik sendrom nedenidir. Prognoz genellikle iyidir, kendiliğinden düzelir. Kronikleşme riski düşüktür.",
+      "story_hint": "💡 HİKAYE: Strep boğaz → 3 hafta bekledi → böbreği vurdu. Subepitelyal hump = çobanın çoban köpeği gibi üste oturmuş. Starry sky = IF'da yıldızlı gökyüzü. Nefritik = kanlı idrar + tansiyon."
+    },
+    {
+      "id": "pvaka-036",
+      "case": "Vaka:(Siroz Patolojisi) 55 yaşında alkolik erkek hasta asit, sarılık ve hepatik ensefalopati ile başvurdu. Karaciğer biyopsisinde nodüler hepatosit rejennerasyonu, fibröz septalar ve kollajen köprüler izlendi. Hepatosit içinde Mallory hyalin cisimcikleri ve yağlı değişim (steatoz) mevcut. Bu histolojik bulgu hangi evreyı göstermektedir?",
+      "options": [
+        "A) Akut hepatit",
+        "B) Kronik hepatit",
+        "C) Siroz",
+        "D) Steatohepatit",
+        "E) Hepatoselüler karsinom"
+      ],
+      "correct_answer": "C) Siroz",
+      "explanation": "Siroz; normal karaciğer mimarisinin yıkılması, fibröz septaların oluşumu ve rejenerasyon nodüllerinin varlığıyla tanımlanır. Alkol sirozunda Mallory-Denk cisimcikleri, perivenüler fibrozis (Zone 3) ve steatoz eşlik eder. Fibroz Ishak/Metavir skorlamasıyla derecelendirilir. Portal hipertansyon (asit, splenomegali, özofagus varisleri), karaciğer yetmezliği (sarılık, koagülopati, HE) ve hepatoselüler karsinom riski artışı komplikasyonlardır. Sirozda rejenerasyon nodülleri tümörsüz izlenir; makronoduler >3mm, mikronoduler <3mm.",
+      "story_hint": "💡 HİKAYE: Siroz = yıkılmış ev + yeni yapı + duvarlar (fibröz septalar). Eski ev (hepatosit) yıkıldı, moloz (fibrozis) birikti, yeni çadır ev (rejenerasyon nodülü) kuruldu."
+    },
+    {
+      "id": "pvaka-037",
+      "case": "Vaka:(Hepatoselüler Karsinom - IHK) 60 yaşında HBV pozitif erkek hastada karaciğer kitlesi saptandı. Tru-cut biyopsisinde trabeküler düzende büyük poligonal hücreler, belirgin nükleol, paranükleer inklüzyon ve endotel astarlaması görüldü. İHK: HepPar-1 (+), AFP (+), Glypican-3 (+), CK7 (-), CK20 (-). Tanı nedir?",
+      "options": [
+        "A) Kolanjiokarsinom",
+        "B) Metastatik kolon kanseri",
+        "C) Hepatoselüler karsinom",
+        "D) Anjiyosarkom",
+        "E) Hepatoblastom"
+      ],
+      "correct_answer": "C) Hepatoselüler karsinom",
+      "explanation": "HCC İHK profili: HepPar-1 (hepatosit paraffin 1), AFP (alfa-fetoprotein), Glypican-3 (+) ve CK7-/CK20- (gastrointestinal kanserlere karşı negatif). Trabeküler patern HCC'nin klasik büyüme paterni olup endotelle kaplı sinüzoid benzeri kanallar içerir. Risk faktörleri: kronik HBV/HCV, siroz, alkol, aflatoksin B1. Serum AFP yüksekliği tanıyı destekler ama sensitivitesi %60-70 civarındadır. Kolanjiokarsinom CK7+, CK19+ eksprese eder.",
+      "story_hint": "💡 HİKAYE: HCC imzası: HepPar-1 + AFP + Glypican-3 = KARACIĞER damgası. HBV/siroz zemini + trabeküler büyük hücreler + AFP yüksekliği = HCC formülü."
+    },
+    {
+      "id": "pvaka-038",
+      "case": "Vaka:(Nöroendokrin Tümör - IHK) 50 yaşında erkek hasta tekrarlayan hipoglisemi atakları ve pankreas kitlesiyle başvurdu. İntraoperatif biyopside küçük, monoton hücreler uniform nükleus ve 'tuz biber' (salt-pepper) kromatin paterni ile izlendi. İHK: Synaptofizin (+), Kromogranin A (+), CD56 (+), CK7 hafif pozitif, Ki67 %2. Tanı nedir?",
+      "options": [
+        "A) Pankreas adenokarsinomu",
+        "B) Asinar hücreli karsinom",
+        "C) İnsülinoma (iyi differansiye nöroendokrin tümör)",
+        "D) Küçük hücreli karsinom",
+        "E) Solid psödopapiller neoplazi"
+      ],
+      "correct_answer": "C) İnsülinoma (iyi differansiye nöroendokrin tümör)",
+      "explanation": "Nöroendokrin tümörler (NET) synaptofizin, kromogranin A ve CD56 ile pozitiftir. Tuz-biber kromatin deseni karakteristiktir. Hipoglisemi ile prezente olan pankreatik NET = insülinoma. Ki67 <%3: Grade 1 (iyi diferansiye, iyi prognoz). Ki67 %3-20: Grade 2. Ki67 >%20: Grade 3 veya küçük hücreli karsinom. İnsülinoma %90 benigndır, soliter, pankreasta her lokalizasyonda olabilir. Whipple triadı: hipoglisemi + insülin yüksekliği + glikoz verilince düzelme.",
+      "story_hint": "💡 HİKAYE: Synaptofizin + Kromogranin = nöroendokrin. Tuz-biber nükleus = NET'in tuz-biber deseni. Ki67 düşük = iyi prognoz. Hipoglisemi + pankreas kitlesi = insülinoma."
+    },
+    {
+      "id": "pvaka-039",
+      "case": "Vaka:(Melanom - IHK) 55 yaşında erkek hastada sırt derisinde değişen pigmentli lezyon eksize edildi. Histolojide epidermis ve dermiş infiltre eden büyük, düzensiz, nükleolü belirgin hücreler ve melanin pigmenti izlendi. İHK: S100 (+), HMB-45 (+), Melan-A (+), CK (-), CK7 (-), EMA (-). Tanı nedir?",
+      "options": [
+        "A) Bazal hücreli karsinom",
+        "B) Skuamöz hücreli karsinom",
+        "C) Melanom",
+        "D) Metastatik adenokarsinom",
+        "E) Dermatofibrosarkom"
+      ],
+      "correct_answer": "C) Melanom",
+      "explanation": "Melanomun İHK belirteçleri: S100 (en sensitif ama az spesifik), HMB-45 (çok spesifik), Melan-A (MART-1), SOX10. Sitokeratin (CK) negatiftir — karsinomlardan ayırt etmede kritik. BRAF V600E mutasyonu %50-60 melanomda pozitiftir (tedavide hedef). Clark düzeyi ve Breslow kalınlığı prognostik faktörlerdir. Lenf nodu tutulumu sentinel lenf nodu biyopsisi ile araştırılır. Yüzeysel yayılan melanom en sıktır, nodüler melanom en agresiftir.",
+      "story_hint": "💡 HİKAYE: Melanom triple: S100 + HMB-45 + Melan-A. CK negatif → karsinom değil. Pigmentli, dermiş invazyonu + bu IHK = melanom. BRAF mutasyonu → vemurafenib hedef."
+    },
+    {
+      "id": "pvaka-040",
+      "case": "Vaka:(Lenfoma - CD Belirteçleri) 30 yaşında erkek hasta hızlı büyüyen boyun kitlesiyle başvurdu. Biyopside büyük, soluk sitoplazmalı, belirgin nükleolü, yırtık zar görünümde hücreler izlendi, sıklıkla birbiriyle temas halinde hücreler 'gökyüzü-yıldız' (starry sky) görünümü oluşturuyordu. İHK: CD20 (+), CD10 (+), BCL6 (+), BCL2 (-), Ki67 %100, MYC translokasyonu pozitif. Tanı nedir?",
+      "options": [
+        "A) Diffüz büyük B hücreli lenfoma",
+        "B) Hodgkin lenfoma",
+        "C) Foliküler lenfoma",
+        "D) Burkitt lenfoma",
+        "E) Mantle hücreli lenfoma"
+      ],
+      "correct_answer": "D) Burkitt lenfoma",
+      "explanation": "Burkitt lenfomanın klasik özellikleri: yüksek proliferasyon hızı (Ki67 ~%100), starry sky görünümü (apoptotik hücreler alan makrofajlar), MYC translokasyonu t(8;14), CD20+/CD10+/BCL6+/BCL2-. CD5-, CD23-. Endemic form EBV ile ilişkili, sporadik form immünkompromize hastalarda görülür. t(8;14) translokasyonu MYC'yi IgH heavy chain enhancer yanına taşır → MYC aşırı ekspresyonu → hızlı çoğalma. En hızlı büyüyen insan tümörlerindendir.",
+      "story_hint": "💡 HİKAYE: Burkitt = 'yıldızlı gökyüzü' + Ki67 %100 (çılgın çoğalma). MYC translokasyonu t(8;14) = Burkitt'in genetik imzası. Her 24 saatte ikiye katlanıyor!"
+    },
+    {
+      "id": "pvaka-041",
+      "case": "Vaka:(Mezotelyoma - Kalretinin) 62 yaşında erkek hasta asbest maruziyet öyküsüyle plevral kitle biyopsisi yapıldı. Biyopside epiteloid hücreler, papiller yapılar izlendi. İHK: Kalretinin (+), WT-1 (+), CK5/6 (+), D2-40 (+), CEA (-), TTF-1 (-), Ber-EP4 (-). Tanı nedir?",
+      "options": [
+        "A) Akciğer adenokarsinomu",
+        "B) Timoma",
+        "C) Mezotelyoma",
+        "D) Metastatik over karsinomu",
+        "E) Akciğer skuamöz hücreli karsinom"
+      ],
+      "correct_answer": "C) Mezotelyoma",
+      "explanation": "Mezotelyoma İHK'sı iki panel şeklinde değerlendirilir: Pozitif belirteçler (mezotel için): Kalretinin, WT-1, D2-40, CK5/6, mesotelin. Negatif belirteçler (karsinoma karşı): CEA, TTF-1, Ber-EP4, MOC-31, CD15. Bu ayırım metastatik adenokarsinom ile mezotelyomayı ayırt etmede kritiktir. Asbest maruziyeti (krizotil ve amfibol) en önemli risk faktörüdür, latent süre 20-40 yıldır. Genetik: BAP1 ve NF2 mutasyonları sıktır.",
+      "story_hint": "💡 HİKAYE: Mezotelyoma pozitif: KAL-ret-inin + WT1 + D2-40. Negatif: CEA + TTF-1 + Ber-EP4. Asbest + bu IHK = mezotelyoma. 'Kalretinin mezotel'in iç sesi.'"
+    },
+    {
+      "id": "pvaka-042",
+      "case": "Vaka:(Prostat Adenokarsinomu - Gleason) 68 yaşında erkek hastada PSA 15 ng/mL saptandı. Transrektal prostat biyopsisinde atipik bez proliferasyonu izlendi. En baskın patern 4, ikinci patern 3 görüldü. Perineural invazyon mevcut. İHK: PSA (+), NKX3.1 (+), bazal hücre kayıp (CK5/6 ve p63 negatif). Gleason skoru nedir ve önemi nedir?",
+      "options": [
+        "A) Gleason 6 (3+3) — düşük risk",
+        "B) Gleason 7 (4+3) — orta-yüksek risk",
+        "C) Gleason 8 (4+4) — yüksek risk",
+        "D) Gleason 7 (3+4) — orta risk",
+        "E) Gleason 9 (4+5) — çok yüksek risk"
+      ],
+      "correct_answer": "B) Gleason 7 (4+3) — orta-yüksek risk",
+      "explanation": "Gleason skoru prostat adenokarsinomunda bez diferansiasyonuna göre 1-5 arası patern puanlanır. Skor = Baskın patern + İkinci patern. 4+3=7, prognoz 3+4=7'den daha kötüdür (4 baskın = daha az diferansiasyon). Grade grupları: 1=Gleason 6, 2=Gleason 3+4=7, 3=Gleason 4+3=7, 4=Gleason 8, 5=Gleason 9-10. Prostat adenokarsinomunda bazal hücre yokluğu maligniteyi gösterir — normal prostat bezleri CK5/6 ve p63 pozitif bazal hücre içerir, karsinom bu tabakadan yoksundur.",
+      "story_hint": "💡 HİKAYE: Gleason = prostat kanseri puan tablosu. Baskın patern önce yazılır: 4+3=7, 4 baskın → daha agresif. Bazal hücre kayıp = malignite! Normal bezdeki 'koruyucu duvar' yıkılmış."
+    },
+    {
+      "id": "pvaka-043",
+      "case": "Vaka:(Meme Karsinomu - Hormon Reseptörü) 50 yaşında kadın hastada sağ meme kitlesinden tru-cut biyopsi yapıldı. İnvaziv duktal karsinom saptandı. İHK: ER (+++ %90), PR (++ %70), HER2 (+ skoru 1+), Ki67 %12. Bu tümörün moleküler alt tipi nedir ve tedavi yaklaşımı nasıldır?",
+      "options": [
+        "A) HER2-enriched — trastuzumab",
+        "B) Triple negatif — kemoterapi",
+        "C) Luminal A — hormonoterapi (tamoxifen/AI)",
+        "D) Luminal B — HER2 pozitif",
+        "E) Basal-like — BRCA1 mutasyonu"
+      ],
+      "correct_answer": "C) Luminal A — hormonoterapi (tamoxifen/AI)",
+      "explanation": "Meme karsinomu moleküler alt tipleri: Luminal A: ER+/PR+/HER2-/Ki67 düşük (<20%) — en iyi prognoz, sadece hormonoterapi. Luminal B: ER+/HER2- yüksek Ki67 veya HER2+ — kemoterapi + hormon. HER2 enriched: ER-/PR-/HER2+ — trastuzumab + kemoterapi. Triple negatif (TNBC): ER-/PR-/HER2- — kemoterapi, BRCA mutasyonu ile PARP inhibitörü. Bu vakada ER/PR pozitif, HER2 1+ (negatif), Ki67 %12 → Luminal A. Premenopozalde tamoxifen, postmenopozalde aromataz inhibitörü.",
+      "story_hint": "💡 HİKAYE: Meme kanseri dört takım: Luminal A (sakin hormon sever), Luminal B (hızlı hormon sever), HER2 (HER2 aşırı eksprese), Triple negatif (en vahşi). Bu vaka: ER yüksek, Ki67 düşük, HER2 zayıf = Luminal A."
+    },
+    {
+      "id": "pvaka-044",
+      "case": "Vaka:(Timoma - IHK) 40 yaşında erkek hasta miyastenia gravis tanısıyla takip edilirken ön mediastende kitle saptandı. Biyopside epitelyal hücreler ve lenfositler içeren kitle izlendi. İHK: CK (+), TdT (+) (immatür T lenfositler), CD5 (+), CD117 (-). Tanı nedir?",
+      "options": [
+        "A) Hodgkin lenfoma",
+        "B) Timoma",
+        "C) Mediastinal germ hücreli tümör",
+        "D) Timik karsinom",
+        "E) Lenfoblastik lenfoma"
+      ],
+      "correct_answer": "B) Timoma",
+      "explanation": "Timoma ön mediastenin en sık epitelyal tümörüdür. Epitelyal hücreler (CK+) ve immatür T lenfositler (TdT+, CD3+, CD5+) içerir. WHO sınıflaması (A, AB, B1-B3) kapsül invazyonuna ve epitelyal/lenfosit oranına göre yapılır. Miyastenia gravis (%30-50), kırmızı hücre aplazisi ve hipogammaglobulinemi paraneoplastik sendromlardır. Timik karsinomdan fark: CD5- ve CK5/6 zayıf. Timik karsinom daha agresif, CD5 kuvvetli pozitif. CD117 timik karsinomda pozitif olabilir.",
+      "story_hint": "💡 HİKAYE: Timoma = ön mediastende yaşayan, miyasteniayla arkadaşlık eden epitelyal-lenfosit karışımı. CK+ (epitel) + TdT+ (immatür T hücre) = timus işareti. Miyastenia gravis + ön mediastin kitle = timoma ilk düşünce."
+    },
+    {
+      "id": "pvaka-045",
+      "case": "Vaka:(Renal Hücreli Karsinom - IHK) 58 yaşında erkek hastada sağ böbrekte 4 cm solid kitle saptandı. Nefrektomi materyali biyopsisinde şeffaf sitoplazmalı, belirgin hücreli membranı olan, ince damarlı alveolar patern tümör izlendi. İHK: CD10 (+), RCC (+), PAX8 (+), CA9 (karbonikhidraz 9) (+), CK7 (-), CK20 (-), HMB45 (-). Tanı nedir?",
+      "options": [
+        "A) Anjiomiyolipom",
+        "B) Şeffaf hücreli renal hücreli karsinom",
+        "C) Papiller RCC",
+        "D) Kromofobi RCC",
+        "E) Onkositom"
+      ],
+      "correct_answer": "B) Şeffaf hücreli renal hücreli karsinom",
+      "explanation": "Şeffaf hücreli RCC (clear cell RCC) en sık böbrek tümörüdür (%75). Histolojik: geniş, şeffaf (lipid ve glikojen yüklü) sitoplazma, ince vasküler ağ, alveolar/asinik düzende hücreler. İHK: CD10+, RCC+, PAX8+, CA9+. VHL gen mutasyonu/delesyonu karakteristiktir (3p25). CK7 negatiftir (papiller RCC'den fark). Kromofobi RCC'de hücre membranı koyudur (koilosit benzeri). Onkositomda granüler eozinofilik sitoplazma ve merkezi skar görülür.",
+      "story_hint": "💡 HİKAYE: Şeffaf hücreli RCC = hücreler yağ deposuyla dolu, cam gibi şeffaf. VHL geni silinmiş, HIF aktif, VEGF artmış → damar zengin tümör. CD10 + PAX8 + CA9 = böbrek damgası."
+    },
+    {
+      "id": "pvaka-046",
+      "case": "Vaka:(Granülom - Histoplazma) 38 yaşında immünkompromize erkek hasta öksürük ve ateşle başvurdu. Ohio vadisinde yaşıyor. Akciğer biyopsisinde granülomlar, merkezi nekroz ve mantar sporları izlendi. PAS ve GMS boyasıyla küçük (2-4 µm) oval, tomurcuklanan mantarlar makrofaj içinde görüldü. Tanı nedir?",
+      "options": [
+        "A) Kriptokokkoz",
+        "B) Histoplazmoz",
+        "C) Aspergilloz",
+        "D) Blastomikoz",
+        "E) Kandida enfeksiyonu"
+      ],
+      "correct_answer": "B) Histoplazmoz",
+      "explanation": "Histoplasma capsulatum küçük (2-4 µm), oval, tomurcuklanan maya formunda hücrelerdir. İntrasellüler lokalizasyon özelliği vardır — makrofaj içinde görülür. Ohio ve Mississippi vadisi endemik bölgedir. GMS (Gomori methenamine silver) ve PAS boyasıyla görüntülenir. İmmünkompromize hastalarda dissemine histoplazmoz gelişebilir. Kriptokokkoz'da büyük (5-10 µm) kapsüllü maya, müsikarmin (+). Blastomikoz'da büyük (8-15 µm), geniş tabanlı tomurcuklanan maya. Aspergillus iplik şekilli (hif), damarları invaze eder.",
+      "story_hint": "💡 HİKAYE: Histoplazma = küçük, utangaç, makrofaj içine gizlenen mantar. Ohio vadisi + küçük intrasellüler maya = Histoplazma. 'Kapsamlı değil, kapsülsüz' ama adı capsulatum — yanıltmaca!"
+    },
+    {
+      "id": "pvaka-047",
+      "case": "Vaka:(Wegener / GPA - Granülom) 45 yaşında erkek hasta burun tıkanıklığı, sinüzit, hemoptizi ve böbrek yetmezliğiyle başvurdu. c-ANCA (PR3) pozitif. Böbrek biyopsisinde pauci-immün (az immün kompleks) nekrotizan glomerülonefrit ve crescentic GN izlendi. Akciğer biyopsisinde nekrotizan granülomlar saptandı. Tanı nedir?",
+      "options": [
+        "A) Poliarteriit nodoza",
+        "B) Sarkoidoz",
+        "C) Granülomatöz polianjiit (Wegener)",
+        "D) Eozinofilik polianjit (Churg-Strauss)",
+        "E) Mikroskopik polianjit"
+      ],
+      "correct_answer": "C) Granülomatöz polianjiit (Wegener)",
+      "explanation": "Granülomatöz polianjiit (GPA, eski Wegener granülomatozu) üst solunum yolu + alt solunum yolu + böbrek (ENT-Akciğer-Böbrek) triadıyla prezente olur. c-ANCA (PR3 antikoru) pozitif, p-ANCA negatif. Böbrekte pauci-immün (immün kompleks az/yok) nekrotizan crescentic GN görülür. Akciğer ve sinüslerde nekrotizan granülomlar tipiktir. Eozinofilik GPA (Churg-Strauss)'da eozinofili ve astım belirgindir. Mikroskopik polianjitte granülom yoktur, p-ANCA (MPO) pozitiftir.",
+      "story_hint": "💡 HİKAYE: Wegener = ENT-Akciğer-Böbrek üçlüsü. c-ANCA (PR3) = Wegener'in imzası. Böbrekte pauci-immün crescentic GN + akciğerde nekrotizan granülom = GPA. 'Wegener üçüncü katı (böbrek) yıktı.'"
+    },
+    {
+      "id": "pvaka-048",
+      "case": "Vaka:(GIST - IHK) 55 yaşında erkek hasta karın ağrısı ve mide duvarında kitle ile başvurdu. Endoskopik biyopside iğsi hücreler, mitoz düşük, büyük kitle görüldü. İHK: CD117 (c-KIT) (+), DOG1 (+), CD34 (+), SMA (-), S100 (-), Desmin (-). Tanı nedir?",
+      "options": [
+        "A) Liyomiyom",
+        "B) Liyomiyosarkom",
+        "C) Gastrointestinal stromal tümör (GIST)",
+        "D) Schwannom",
+        "E) Soliter fibröz tümör"
+      ],
+      "correct_answer": "C) Gastrointestinal stromal tümör (GIST)",
+      "explanation": "GIST, GIS'in en sık mezenkimal tümörüdür. Cajal hücrelerinden köken alır. İHK profili: CD117 (c-KIT) pozitif (%95), DOG1 pozitif (%85), CD34 (+). Düz kas belirteçleri (SMA, desmin) ve S100 genellikle negatiftir (liyomiyom ve schwannomdan fark). KIT exon 11 mutasyonu en sık (%70). İmatinib (Gleevec) moleküler hedefli tedavide c-KIT inhibitörüdür. Malignite kriterleri: tümör boyutu >5 cm ve mitoz >5/50 HPF. Mide en sık yerleşim yeridir.",
+      "story_hint": "💡 HİKAYE: GIST = mide/bağırsak duvarı iğsi hücreli tümör. CD117 ve DOG1 pozitif = Cajal hücre kökenli. İmatinib = c-KIT inhibitörü → GIST'i durdurur. DOG1 = GIST'in köpeği (spesifik belirteç)."
+    },
+    {
+      "id": "pvaka-049",
+      "case": "Vaka:(Schwannom - IHK) 40 yaşında kadın hastada servikal spinal kanalda kitlesi saptandı. Eksizyonel biyopside Antoni A (hücre yoğun, Verocay cisimciği) ve Antoni B (hücre seyrek, mikzoid) alanlar izlendi. İHK: S100 (+), SOX10 (+), GFAP (-), CD117 (-), SMA (-). Tanı nedir?",
+      "options": [
+        "A) Nörofibrom",
+        "B) Schwannom (Nörilemom)",
+        "C) Meninjiom",
+        "D) GIST",
+        "E) Liyomiyom"
+      ],
+      "correct_answer": "B) Schwannom (Nörilemom)",
+      "explanation": "Schwannom (nörilemom) Schwann hücrelerinden köken alan kapsüllü periferik sinir kılıfı tümörüdür. Histolojik özellikler: Antoni A alanı (hücre yoğun, iğsi hücreler palizad şeklinde — Verocay cisimciği) ve Antoni B alanı (hücre seyrek, miksoid stroma). İHK: S100 kuvvetli pozitif, SOX10 pozitif. Nörofibromdan fark: kapsüllüdür ve S100 daha kuvvetli (+). Nörinom NF2 mutasyonu ile ilişkilidir. Akustik nörinom (vestibüler schwannom) işitme kaybı ve tinnitus ile prezente olur.",
+      "story_hint": "💡 HİKAYE: Schwannom = Antoni A (yoğun) + Antoni B (seyrek). Verocay cisimciği = iki sıra iğsi hücre arasında pembe madde — palizad. S100 kuvvetli = Schwann hücre damgası."
+    },
+    {
+      "id": "pvaka-050",
+      "case": "Vaka:(Ewing Sarkomu - IHK) 15 yaşında erkek hasta femurda ağrılı kitle ile başvurdu. Radyografide periosteal reaksiyon (soğan kabuğu görünümü) izlendi. Biyopside küçük, yuvarlak, mavi hücreler izlendi; glikojen birikimine bağlı PAS pozitifti. İHK: CD99 (+), FLI-1 (+), CK (-), S100 (-), Desmin (-). t(11;22) translokasyonu pozitif. Tanı nedir?",
+      "options": [
+        "A) Osteosarkom",
+        "B) Nöroblastom",
+        "C) Rabdomiyosarkom",
+        "D) Ewing sarkomu",
+        "E) Medulloblastom"
+      ],
+      "correct_answer": "D) Ewing sarkomu",
+      "explanation": "Ewing sarkomu küçük yuvarlak mavi hücreli tümörler grubundadır. Histolojik: uniform küçük yuvarlak hücreler, glikojen (PAS+). İHK: CD99 (MIC2) diffüz membranöz pozitif, FLI-1 pozitif. Genetik: t(11;22)(q24;q12) translokasyonu — EWSR1-FLI1 füzyon geni patognomoniktir. Radyolojik: diafizde periosteal 'soğan kabuğu' reaksiyonu (onion skin). Lenfoma ile CD20-, T hücre belirteçleri negatif ile ayrılır. Nöroblastom NSE+, S100+ ve adrenal kökenlidir. 10-15 yaş grubu.",
+      "story_hint": "💡 HİKAYE: Ewing = genç kemik + küçük mavi hücreler + soğan kabuğu periosteal reaksiyon. t(11;22) = Ewing'in genetik imzası. CD99 = 'Ewing'in 99 numaralı jörseyi.'"
+    }
+  ]
+}

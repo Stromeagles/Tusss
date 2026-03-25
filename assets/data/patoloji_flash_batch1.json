@@ -1,0 +1,912 @@
+{
+  "id": "patoloji_flash_batch1",
+  "subject": "Patoloji",
+  "chapter": "Flashcards",
+  "topic": "Patoloji Temel Kavramlar",
+  "sub_topic": "TUS Yüksek Verimli Flashcard",
+  "content_summary": "100 patoloji flashcard — nekroz, inflamasyon, neoplazi, sistemik patoloji ve histolojik bulgular",
+  "flashcards": [
+    {
+      "id": "pflash-001",
+      "question": "Koagülatif nekrozun en sık görüldüğü organ ve temel histolojik özelliği nedir?",
+      "answer": "[[Miyokard enfarktüsü]] ve böbrek iskemisinde görülür. Hücre şekli korunur, nükleus kaybolur ([[hayalet hücre]] görünümü).",
+      "explanation": "Koagülatif nekrozda proteinler denatüre olur ama sitoiskelet korunur. Bu nedenle hücre çerçevesi 'hayalet' gibi seçilir. Beyin hariç tüm organlarda görülür.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Nekroz", "Hücre Hasarı"],
+      "story_hint": "💡 HİKAYE: Koagülatif = pişmiş yumurta gibi — şekil var ama içi boş."
+    },
+    {
+      "id": "pflash-002",
+      "question": "Likaefaktif nekroz hangi iki farklı durumda görülür ve mekanizmaları neden farklıdır?",
+      "answer": "[[Beyin iskemisi]]nde (lizozomal enzimler → sıvılaşma) ve [[apse]]de (nötrofil enzimleri → pü oluşumu) görülür.",
+      "explanation": "Beyinde kuru protein azlığı ve enzim bolluğu nedeniyle doku erir, kistik boşluk oluşur. Apselerde ise nötrofillerin salgıladığı proteazlar etkendir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Nekroz", "Beyin"],
+      "story_hint": "💡 HİKAYE: Lika = sıvı → beyin erir (iskemi) ya da pü olur (enfeksiyon)."
+    },
+    {
+      "id": "pflash-003",
+      "question": "Kazefiye (peynir kesiği) nekroz hangi hastalığın patognomonik bulgusudur ve histolojik görünümü nedir?",
+      "answer": "[[Tüberküloz]]un patognomonik bulgusudur. Amorf, granüler, pembe renkli, şekilsiz, 'ezilmiş peynir' görünümü — [[granülom]] merkezinde yer alır.",
+      "explanation": "Kazefiye nekroz koagülatif ve likaefaktifin karışımıdır. Hücre sınırları tamamen kaybolur. Mikobakteri hücre duvarındaki lipidler bu görünümü oluşturur.",
+      "difficulty": "Kolay",
+      "tags": ["Patoloji", "Nekroz", "Tüberküloz"],
+      "story_hint": "💡 HİKAYE: Kaze = peynir (İtalyanca) → TB granülomünün ortası beyaz peynir gibi."
+    },
+    {
+      "id": "pflash-004",
+      "question": "Yağ nekrozunun iki farklı tipi nedir ve hangi durumlarda görülürler?",
+      "answer": "[[Enzimatik yağ nekrozu]]: akut pankreatitte, lipazlar yağ dokusunu sabunlaştırır (kalsiyum birikir). [[Travmatik yağ nekrozu]]: meme dokusunda, travma sonrası.",
+      "explanation": "Akut pankreatitte serbest kalan lipaz ve fosfolipaz enzimler peripankreatik yağ dokusunu hidrolize eder. Serbest yağ asitleri kalsiyumla birleşerek kireç birikintileri (sabunlaşma) oluşturur.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Nekroz", "Pankreas"],
+      "story_hint": "💡 HİKAYE: Pankreas delindi → lipaz kaçtı → çevre yağlar sabun oldu (kalsiyum birikimi)."
+    },
+    {
+      "id": "pflash-005",
+      "question": "Fibrinoid nekroz hangi durumlarda görülür ve histolojik özelliği nedir?",
+      "answer": "[[Otoimmün hastalıklar]] (SLE, RA, poliarteritis nodoza) ve malign [[hipertansiyon]]da görülür. Damar duvarında pembe, granüler fibrin birikimi.",
+      "explanation": "Fibrinoid nekroz aslında bir nekroz değil, fibrin benzeri madde birikimidir. İmmün kompleks birikimi ve plazma proteinlerinin damar duvarına sızmasıyla oluşur.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "Nekroz", "Vaskülit"],
+      "story_hint": "💡 HİKAYE: Fibrinoid = damar duvarına fibrin benzeri madde → otoimmün saldırı işareti."
+    },
+    {
+      "id": "pflash-006",
+      "question": "Gangrenöz nekroz türleri nelerdir ve ayırt edici özellikleri nelerdir?",
+      "answer": "[[Kuru gangren]]: iskemik koagülatif nekroz, siyah-kuru, keskin sınır. [[Islak gangren]]: bakteriyel enfeksiyonla likaefaktif, ödemli, kötü koku. [[Gaz gangrenin]]: Clostridium, krepitasyon.",
+      "explanation": "Kuru gangren çoğunlukla aterosklerotik periferik damar hastalığında alt ekstremitelerde görülür. Islak gangrende bakteri invazyonu dokuyu eritir.",
+      "difficulty": "Kolay",
+      "tags": ["Patoloji", "Nekroz", "Gangren"],
+      "story_hint": "💡 HİKAYE: Kuru = mumya gibi; Islak = çürüme var; Gaz = Clostridium krep krep."
+    },
+    {
+      "id": "pflash-007",
+      "question": "Apoptoz ile nekroz arasındaki temel farklar nelerdir?",
+      "answer": "[[Apoptoz]]: programlı, enerji gerektirir, tek hücre, membran bütün, inflamasyon YOK, apoptotik cisimcikler. [[Nekroz]]: patolojik, enerji gerekmez, çok hücre, membran yıkılır, inflamasyon VAR.",
+      "explanation": "Apoptoz kaspazlar aracılığıyla gerçekleşir. Hücre içeriği dışarı çıkmaz, makrofajlar apoptotik cisimcikleri sessizce yutar. Nekrozda lizozomal içerik çevreye yayılır, inflamasyon tetiklenir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Apoptoz", "Nekroz"],
+      "story_hint": "💡 HİKAYE: Apoptoz = temiz ölüm (sessiz), Nekroz = kirli ölüm (yangın çıkar)."
+    },
+    {
+      "id": "pflash-008",
+      "question": "Reversibl hücre hasarının histolojik bulguları nelerdir?",
+      "answer": "[[Hücre şişmesi]] (hidropis dejenerasyon), yağlı değişim ([[steatoz]]), endoplazmik retikulum dilatasyonu, mitokondri şişmesi — tümü geri dönüşümlü.",
+      "explanation": "Reversibl hasarda Na-K ATPaz bozulur, hücreye su girer. Yağlı değişim karaciğerde en belirgin, alkol ve hipoksi ile görülür.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Hücre Hasarı", "Reversibl"],
+      "story_hint": "💡 HİKAYE: Reversbl = şişer ama düzelir; irreversibl = membran patlar, geri dönüş yok."
+    },
+    {
+      "id": "pflash-009",
+      "question": "İrreversibl hücre hasarının iki temel morfolojik işareti nedir?",
+      "answer": "[[Membran hasarı]] (kalsiyum girişi, fosfolipaz aktivasyonu) ve [[mitokondriyal amorf yoğunluklar]] — EM'de izlenen kalsiyum-fosfolipid kompleksleri.",
+      "explanation": "İrreversibl eşiğin aşılmasında membran bütünlüğünün bozulması kritiktir. Kalsiyum girişi fosfolipazları, proteazları ve endonükleazları aktive eder.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "Hücre Hasarı", "İrreversibl"],
+      "story_hint": "💡 HİKAYE: İrreversibl = Ca² girdi, membran delindi → artık geri dönüş yok."
+    },
+    {
+      "id": "pflash-010",
+      "question": "Lipofüsin nedir, nerede birikir ve ne anlama gelir?",
+      "answer": "[[Yaşlanma pigmenti]] — lipit + protein peroksidasyonu artığı. [[Kalp]], karaciğer, beyin nöronlarında birikir. Atrofik organlarda 'kahverengi atrofi' oluşturur.",
+      "explanation": "Lipofüsin zararsız bir pigmenttir, hücre hasarına yol açmaz. Otofaji lizozomlarından kaynaklanır. Varlığı yaşlanma veya kronik stres işaretidir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Pigment Birikimi", "Yaşlanma"],
+      "story_hint": "💡 HİKAYE: Lipo-füsin = yağ yanığı artığı → yaşlı hücrelerin 'kiri'."
+    },
+    {
+      "id": "pflash-011",
+      "question": "Hemosiderin birikiminin lokal ve sistemik formları hangi durumlarda görülür?",
+      "answer": "[[Lokal]]: kanama alanında (hemoglobin → ferritin → hemosiderin), akciğer kronik konjesyonunda (kalp yetm. hücreleri). [[Sistemik hemosideroz]]: herediter hemokromatoz, çoklu transfüzyon.",
+      "explanation": "Hemosiderin demir içeren sarı-kahverengi granüllerdir, Prusya mavisi boyasıyla mavi boyanır. Hemokromatozda karaciğer, pankreas, deri ve kalbe zarar verir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Pigment Birikimi", "Demir"],
+      "story_hint": "💡 HİKAYE: Hemosiderin = kan artığı demir → karaciğer pas tutuyor (hemokromatoz)."
+    },
+    {
+      "id": "pflash-012",
+      "question": "Distrofik ve metastatik kalsifikasyon arasındaki fark nedir?",
+      "answer": "[[Distrofik]]: nekrotik/hasarlı dokuda, serum kalsiyumu NORMAL (ateroskleroz plağı, tüberküloz). [[Metastatik]]: normal dokuda, serum kalsiyumu YÜKSEK (hiperparatiroidizm, D vitamini toksisitesi).",
+      "explanation": "Distrofik kalsifikasyon patolojik dokuların 'taşlaşmasıdır'. Metastatik kalsifikasyon sistemik hiperkalsemi nedeniyle normal böbrek, akciğer, mide mukozasında görülür.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Kalsifikasyon", "Mineral Birikimi"],
+      "story_hint": "💡 HİKAYE: Distrofik = hasta doku taşlaşır; Metastatik = kalsiyum taşıyor normal dokuya gidiyor."
+    },
+    {
+      "id": "pflash-013",
+      "question": "Kariyolizis, kariyoreksis ve piknozisin farkları nelerdir?",
+      "answer": "[[Piknosiz]]: nükleus küçülür, kromatın yoğunlaşır. [[Kariyoreksis]]: nükleus parçalanır. [[Kariyolizis]]: nükleus eriyip kaybolur — nekrozun son evreleri.",
+      "explanation": "Bu üç değişiklik nekroz sürecinde art arda görülür. Piknosiz apoptozda da olur. Kariyolizis H&E'de nükleusun soluk görünmesine yol açar.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "Nükleer Değişiklikler", "Nekroz"],
+      "story_hint": "💡 HİKAYE: Pikno = büzüldü, Reksiz = parçalandı, Lizis = eridi → ölümün 3 adımı."
+    },
+    {
+      "id": "pflash-014",
+      "question": "MI'de nekrozun elektron mikroskobi ve ışık mikroskobi bulguları zamanla nasıl değişir?",
+      "answer": "[[0-2 dk]]: EM'de mitokondri şişmesi. [[18-24 saat]]: ışık mikroskobu değişiklikleri başlar (koagülatif nekroz). [[3-5 gün]]: nötrofil infiltrasyonu. [[1-2 hafta]]: makrofaj (granülasyon doku). [[6-8 hafta]]: skar.",
+      "explanation": "İlk 6 saatte ışık mikroskobunda değişiklik yoktur; bu nedenle akut MI'de patolojik tanı için troponin ve klinik bulgular kullanılır.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "MI", "Zaman Serisi"],
+      "story_hint": "💡 HİKAYE: 0→EM şişme, 18s→ışık değişir, 3g→nötrofil, 1h→makrofaj, 6h→skar."
+    },
+    {
+      "id": "pflash-015",
+      "question": "Reperfüzyon hasarının mekanizması nedir?",
+      "answer": "[[Reaktif oksijen türleri]] (ROS) artışı, kalsiyum yüklenmesi, [[mitokondriyal geçirgenlik geçiş porlarının]] (mPTP) açılması → paradoks hücre ölümü.",
+      "explanation": "Reperfüzyon, iskemik dokuya oksijen getirirken aynı zamanda oksidatif hasar yaratır. Nötrofil aktivasyonu ve kompleman da katkıda bulunur.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "Reperfüzyon", "Oksidatif Stres"],
+      "story_hint": "💡 HİKAYE: Kan döndü ama ROS patladı → 'kurtarırken öldürme' paradoksu."
+    },
+    {
+      "id": "pflash-016",
+      "question": "Histamin hangi hücrelerden salınır ve akut inflamasyondaki rolü nedir?",
+      "answer": "[[Mast hücreleri]], bazofiller ve trombositlerden salınır. [[Vazodilatasyon]] ve [[vasküler permeabilite artışı]] (venül endoteli) → kızarıklık ve ödem.",
+      "explanation": "Histamin akut inflamasyonun ilk mediatörüdür. IgE aracılı (Tip I hipersensitivite), mekanik travma veya kompleman (C3a, C5a) ile mast hücrelerinden salınır.",
+      "difficulty": "Kolay",
+      "tags": ["Patoloji", "İnflamasyon", "Mediatörler"],
+      "story_hint": "💡 HİKAYE: Histamin = acil alarm → mast hücresinden fışkırır, damarı genişletir."
+    },
+    {
+      "id": "pflash-017",
+      "question": "Serotoninin inflamasyondaki kaynağı ve etkisi nedir?",
+      "answer": "[[Trombositler]]den (yoğun granüller) ve enterokromafin hücrelerinden salınır. Vasküler [[permeabilite artışı]] ve [[vazokonstrüksiyon]] yapar.",
+      "explanation": "Serotonin trombosit agregasyonu sırasında salınır. Ayrıca barsak motilitesini artırır. Karsinoid tümörlerde aşırı serotonin yüzünden flushing ve ishal görülür.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "İnflamasyon", "Mediatörler"],
+      "story_hint": "💡 HİKAYE: Serotonin = trombosit sıkıştı, serotonin fıştı → damar büzüldü."
+    },
+    {
+      "id": "pflash-018",
+      "question": "Bradikinin hangi etkilerden sorumludur ve hangi sistem tarafından üretilir?",
+      "answer": "[[Kallikrein-kinin sistemi]] üretir. Etkileri: [[ağrı]] (en önemli), vazodilatasyon, damar geçirgenliği artışı, bronkospazm. ACE inhibitörleri kinin yıkımını azaltır → öksürük.",
+      "explanation": "Bradikinin Hageman faktörü (XII) ile başlayan şelalenin ürünüdür. ACE inhibitörü kullananlarda bradikinin birikiminin neden olduğu anjiyoödem ciddi bir komplikasyondur.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "İnflamasyon", "Kinin Sistemi"],
+      "story_hint": "💡 HİKAYE: Bradikinin = 'ağrı ustası' → ACE inh. öksürük yaptırır çünkü bradikinin birikir."
+    },
+    {
+      "id": "pflash-019",
+      "question": "PGE2 ve PGI2'nin inflamasyondaki rolü ve COX inhibitörlerinin etkisi nedir?",
+      "answer": "[[PGE2]]: ateş (hipotalamus), ağrı duyarlılaştırması. [[PGI2]]: vazodilatasyon, trombosit agregasyonunu inhibe eder. [[NSAİİ]] her ikisini de inhibe eder (COX blokajı).",
+      "explanation": "Prostaglandinler arakidonik asitten COX-1 ve COX-2 ile üretilir. COX-2 seçici inhibitörler (selekoksib) tromboz riskini artırır çünkü PGI2 inhibisyonu > TXA2 inhibisyonu.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "İnflamasyon", "Prostaglandinler"],
+      "story_hint": "💡 HİKAYE: PGE2 = ateş ve ağrı sinyali → aspirin keser, ateş düşer."
+    },
+    {
+      "id": "pflash-020",
+      "question": "Lökotrien B4 ve sisteinil lökotrienler (LTC4/D4/E4) arasındaki fark nedir?",
+      "answer": "[[LTB4]]: güçlü nötrofil [[kemotaksisi]]. [[LTC4/D4/E4]] (sisteinil lökotrienler): bronkospazm, mukus sekresyonu artışı, vazodilatasyon — [[astım]]ın yavaş reaksiyona aracılık eden maddesi.",
+      "explanation": "Lökotrienler arakidonik asitten lipoksijenaz yoluyla oluşur. Montelukast sisteinil lökotrien reseptörünü bloke ederek astımı tedavi eder.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "İnflamasyon", "Lökotrienler"],
+      "story_hint": "💡 HİKAYE: LTB4 = nötrofil çağırır; LTC4/D4/E4 = bronşu büzer (astım mediatorü)."
+    },
+    {
+      "id": "pflash-021",
+      "question": "TNF-α ve IL-1'in akut inflamasyondaki sistemik etkileri nelerdir?",
+      "answer": "[[Ateş]] (hipotalamus COX-2 ↑, PGE2 ↑), [[akut faz proteinleri]] (karaciğer: CRP, fibrinojen, SAA), [[lökositoz]], kaheksi (TNF). IL-6 → akut faz proteini ana indükleyicisi.",
+      "explanation": "TNF-α ve IL-1 sepsiste tehlikeli düzeylere ulaşır: yaygın vasküler dilatasyon, DIC, organ yetmezliği (septik şok). TNF antagonistleri (infliksimab) bu yolağı bloke eder.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "İnflamasyon", "Sitokinler"],
+      "story_hint": "💡 HİKAYE: TNF+IL-1 = ateş üçlüsü → karaciğeri uyarır, CRP fırlar."
+    },
+    {
+      "id": "pflash-022",
+      "question": "Kompleman C5a ve C3b'nin inflamasyondaki görevleri nelerdir?",
+      "answer": "[[C5a]]: güçlü kemotaksis (nötrofil ve monosit), mast hücre aktivasyonu (anafilaktoksin), vasküler permeabilite ↑. [[C3b]]: [[opsonizasyon]] → fagositozu kolaylaştırır.",
+      "explanation": "Kompleman sistemi klasik (antikor), alternatif ve lektin yoluyla aktive olur. C3b-kaplı bakteriler makrofaj C3b reseptörüne (CR1) bağlanarak yutulur.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "İnflamasyon", "Kompleman"],
+      "story_hint": "💡 HİKAYE: C5a = çağırır ve şişirir; C3b = 'ye beni' etiketini bakteriye yapıştırır."
+    },
+    {
+      "id": "pflash-023",
+      "question": "Granülom oluşumunun aşamaları ve granülomda bulunan hücre tipleri nelerdir?",
+      "answer": "Makrofaj → aktivasyon → [[epiteloid hücre]] (granülomun temel hücresi). Füzyon → [[Langhans dev hücreleri]] (perifer nükleus). CD4+ T hücre (IL-2, IFN-γ) yönetir.",
+      "explanation": "Granülom kronik inflamasyonun özel formudur; fagositoz edilemeyen ajanlara karşı oluşur (TB, mantar, yabancı cisim, sarkoidoz). IFN-γ makrofajı epiteloid hücreye dönüştürür.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Granülom", "Kronik İnflamasyon"],
+      "story_hint": "💡 HİKAYE: Makrofaj yiyemedi → epiteloid oldu → komşularla kaynaştı → dev hücre."
+    },
+    {
+      "id": "pflash-024",
+      "question": "Sarkoidoz granülomu ile TB granülomu arasındaki histolojik fark nedir?",
+      "answer": "[[Sarkoidoz]]: non-kazeifiye granülom, kazefiye nekroz YOK, Schaumann ve asteroid cisimcikleri olabilir. [[TB]]: kazeifiye granülom, merkezi nekroz VAR.",
+      "explanation": "Sarkoidozda granülomlar akciğer, lenf nodu, karaciğer, deride görülür. AFB boyama negatif. TB'de ARB boyama pozitif, kazefiye nekroz kesin ayırt edicidir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Granülom", "Sarkoidoz"],
+      "story_hint": "💡 HİKAYE: Sarkoidoz = temiz granülom (nekroz yok); TB = kirli granülom (ortası peynir)."
+    },
+    {
+      "id": "pflash-025",
+      "question": "RAS onkogeninin kanser gelişimindeki rolü ve en sık mutasyon tipi nedir?",
+      "answer": "[[RAS]] GTPaz aktivitesi kazanç-işlev mutasyonu (nokta mutasyonu, kodon 12) → sürekli aktif sinyal. En sık [[kolorektal]], pankreas, akciğer kanserinde mutant.",
+      "explanation": "Normal RAS GTP'yi GDP'ye hidroliz eder (sinyal kapanır). Mutant RAS bu aktiviteyi kaybeder, sürekli büyüme sinyali gönderir. KRAS mutasyonu kolorektal kanserde %40 görülür.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Onkogen", "Neoplazi"],
+      "story_hint": "💡 HİKAYE: RAS = gaz pedalı sıkışıp kaldı → hücre durmuyor, büyümeye devam ediyor."
+    },
+    {
+      "id": "pflash-026",
+      "question": "MYC onkogeninin Burkitt lenfoma ile ilişkisi nasıl açıklanır?",
+      "answer": "[[t(8;14) translokasyonu]]: MYC geni (8q24) immunoglobulin ağır zincir promotörünün yanına taşınır → [[MYC aşırı ekspresyonu]] → hızlı B hücre proliferasyonu.",
+      "explanation": "MYC transkripsiyon faktörüdür, hücre döngüsü genlerini aktive eder. Burkitt lenfomasında 'yıldızlı gökyüzü' görünümü (apoptotik artıkları yiyen makrofajlar) karakteristiktir.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "Onkogen", "Burkitt Lenfoma"],
+      "story_hint": "💡 HİKAYE: MYC + Ig promotör = çılgın B hücresi → Burkitt = yıldızlı gökyüzü görünümü."
+    },
+    {
+      "id": "pflash-027",
+      "question": "BCR-ABL füzyon geni ve KML'deki rolü nedir?",
+      "answer": "[[t(9;22) Philadelphia kromozomu]]: BCR-ABL tirozin kinaz füzyonu → konstitütif TK aktivitesi → [[KML]], ALL. İmatinib BCR-ABL'yi inhibe eder.",
+      "explanation": "Philadelphia kromozomu KML'nin %95'inde, bazı ALL olgularında görülür. İmatinib (Gleevec) hedefe yönelik tedavinin klasik örneğidir; KML'de dramatik remisyon sağlar.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Onkogen", "KML"],
+      "story_hint": "💡 HİKAYE: Philadelphia = 9+22 → BCR-ABL kinaz → imatinib onu siler."
+    },
+    {
+      "id": "pflash-028",
+      "question": "HER2/neu (ERBB2) amplifikasyonunun meme kanserindeki önemi nedir?",
+      "answer": "[[HER2 amplifikasyonu]]: meme kanserinin ~%20'si, daha agresif seyir, lenfatik metastaz ↑. [[Trastuzumab]] (Herceptin) HER2'ye karşı monoklonal antikor tedavisi.",
+      "explanation": "HER2 EGF reseptör ailesinin üyesidir. IHC ile 3+ veya FISH ile amplifikasyon tedavi kararında belirleyicidir. HER2+ tümörler hormon reseptörüne göre değişken yanıt verir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Onkogen", "Meme Kanseri"],
+      "story_hint": "💡 HİKAYE: HER2 fazla → meme kanseri saldırganlaşır → Herceptin ile vur."
+    },
+    {
+      "id": "pflash-029",
+      "question": "p53 tümör supresörünün normal fonksiyonu ve kanser gelişimindeki rolü nedir?",
+      "answer": "[[DNA hasarı]] → p53 aktive → G1 durması (p21) veya [[apoptoz]]. Mutasyon/delesyon (17p13) → hasarlı hücreler çoğalır. [[En sık mutasyona uğrayan tümör supresör]] (%50+ kanserde).",
+      "explanation": "p53 'genomun koruyucusu' olarak adlandırılır. Li-Fraumeni sendromunda germline p53 mutasyonu vardır: sarkom, meme kanseri, beyin tümörü, lösemi erken yaşta.",
+      "difficulty": "Kolay",
+      "tags": ["Patoloji", "Tümör Supresör", "p53"],
+      "story_hint": "💡 HİKAYE: p53 = DNA polisi → bozuk DNA'yı durdurur ya da öldürür → mutasyonda polis yok."
+    },
+    {
+      "id": "pflash-030",
+      "question": "Retinoblastom proteini (Rb) ve 'iki vuruş hipotezi' nedir?",
+      "answer": "[[Knudson iki vuruş hipotezi]]: her iki Rb alleli inaktive olmalı. Herediter: 1. vuruş germline, 2. vuruş somatik → [[bilateral retinoblastom]], erken yaş. Sporadik: her iki vuruş somatik → unilateral.",
+      "explanation": "Rb G1/S geçişini kontrol eder; E2F transkripsiyon faktörünü bloke eder. Rb kaybında hücre döngüsü durmadan ilerler. Osteosarkom riski de artar herediter formda.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Tümör Supresör", "Retinoblastom"],
+      "story_hint": "💡 HİKAYE: İki gözü kör eden tümör → iki alleli de kırılması gerekiyor."
+    },
+    {
+      "id": "pflash-031",
+      "question": "APC gen mutasyonu hangi sendromla ilişkilidir ve mekanizması nedir?",
+      "answer": "[[Familyal adenomatöz polipozis (FAP)]]: 5q21 delesyon/mutasyon. APC β-katenini yıkar; APC bozulunca β-katenin çekirdeğe girer → [[Wnt sinyal yolu]] aktifleşir → çok sayıda kolon polibi → karsinom.",
+      "explanation": "FAP'ta yüzlerce-binlerce adenomatöz polip oluşur. Profilaktik kolektomi yapılmazsa neredeyse %100 kolorektal karsinom riski vardır. MUTYH geni de benzer fenotip oluşturabilir.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "Tümör Supresör", "Kolorektal Kanser"],
+      "story_hint": "💡 HİKAYE: APC yoksa Wnt durmuyor → polip fabrikası → kolon kanseri kaçınılmaz."
+    },
+    {
+      "id": "pflash-032",
+      "question": "BRCA1 ve BRCA2 genlerinin fonksiyonu ve ilişkili kanserler nelerdir?",
+      "answer": "[[BRCA1/2]]: DNA çift zincir kırığı tamiri (homolog rekombinasyon). Mutasyon → genomik instabilite. [[BRCA1]]: meme + over riski ↑↑; [[BRCA2]]: meme (erkek dahil), over, pankreas, prostat.",
+      "explanation": "BRCA1 mutasyonu triple-negatif meme kanseriyle ilişkilidir. PARP inhibitörleri (olaparib) BRCA mutasyonlu kanserlerde sentetik letalite prensibiyle çalışır.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Tümör Supresör", "Meme Kanseri"],
+      "story_hint": "💡 HİKAYE: BRCA1/2 = DNA tamircisi → bozulunca meme ve yumurtalık kanseri riski patlar."
+    },
+    {
+      "id": "pflash-033",
+      "question": "CEA tümör belirteci hangi kanserlerde yükselir ve klinik kullanımı nedir?",
+      "answer": "[[Karsinoembriyonik antijen (CEA)]]: [[kolorektal kanser]] (primer), ayrıca pankreas, meme, akciğer. Tarama için kullanılmaz (özgül değil); [[tedaviye yanıt izlemi ve nüks tespiti]] için kullanılır.",
+      "explanation": "CEA sigara içicilerde ve bazı benign durumlarda (karaciğer hastalığı, inflamatuar barsak) hafif yüksek olabilir. Negatif prediktif değeri yeterince yüksek değil.",
+      "difficulty": "Kolay",
+      "tags": ["Patoloji", "Tümör Belirteci", "Kolorektal"],
+      "story_hint": "💡 HİKAYE: CEA = kolon kanseri takip aracı → taramada değil, tedavi sonrası izlemde kullan."
+    },
+    {
+      "id": "pflash-034",
+      "question": "AFP (alfa-fetoprotein) hangi durumlarda yükselir?",
+      "answer": "[[Hepatosellüler karsinom]] (en önemli), [[yolk sac tümörü]] (endodermal sinüs tümörü), miks germ hücreli tümör. Gebelikte nöral tüp defektinde de yükselir.",
+      "explanation": "AFP normalde fetüs karaciğeri ve yolk sac tarafından üretilir. HCC'de karaciğer bu fetal programı yeniden açar. >400 ng/mL ile karakteristik karaciğer lezyonu HCC tanısı koydurur.",
+      "difficulty": "Kolay",
+      "tags": ["Patoloji", "Tümör Belirteci", "Karaciğer"],
+      "story_hint": "💡 HİKAYE: AFP = fetal protein → yetişkinde yükselince karaciğer veya germ hücreli tümör düşün."
+    },
+    {
+      "id": "pflash-035",
+      "question": "PSA'nın özellikleri ve prostat kanserindeki kullanımı nedir?",
+      "answer": "[[Prostat spesifik antijen (PSA)]]: prostat dokusu spesifik (organ spesifik), kanser spesifik değil. [[BPH]], prostatit, biyopsi sonrası da yükselir. Serbest/total PSA oranı ayırt edici.",
+      "explanation": "PSA prostat kanallarındaki epitelden üretilir. Tedavi (prostatektomi, radyoterapi) sonrası PSA takibi nüksü erken gösterir. Tarama kılavuzları tartışmalıdır.",
+      "difficulty": "Kolay",
+      "tags": ["Patoloji", "Tümör Belirteci", "Prostat"],
+      "story_hint": "💡 HİKAYE: PSA = prostatın sızdırması → BPH de sızdırır, kanser de; ikinciyi biyopsi ayırır."
+    },
+    {
+      "id": "pflash-036",
+      "question": "CA-125'in klinik önemi ve sınırlılıkları nelerdir?",
+      "answer": "[[Over kanseri izlemi]] için kullanılır (özellikle seröz tip). Tarama için özgül değil; endometriozis, miyom, peritonit, gebelik, karaciğer sirozu da [[CA-125]] yükseltir.",
+      "explanation": "CA-125 over kanserinin %80'inde yükselir ancak erken evre hastalıkta duyarlılığı düşüktür. Tedaviye yanıt izleminde ve nüks tespitinde değerlidir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Tümör Belirteci", "Over"],
+      "story_hint": "💡 HİKAYE: CA-125 = over takip dedektifi → ama yanlış alarmları çok, taramada yetersiz."
+    },
+    {
+      "id": "pflash-037",
+      "question": "CA 19-9 hangi kanserlerde yükselir ve klinik kullanımı nedir?",
+      "answer": "[[Pankreas kanseri]] (en önemli, %70-80 sensitivite), biliyer sistem kanserleri, mide kanseri. Obstruktif sarılık ve pankreatitte de yükselir. [[Tedavi yanıtı ve nüks izlemi]] için kullanılır.",
+      "explanation": "CA 19-9 Lewis antijen negatif kişilerde (Lewis negatif, yaklaşık %5-10) hiç yükselmez. Bu durum sonucu yorumlamayı güçleştirir. Erken evrede sensitivitesi düşüktür.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Tümör Belirteci", "Pankreas"],
+      "story_hint": "💡 HİKAYE: CA 19-9 = pankreas ve safra yolu kanseri takip kılavuzu → erken tanıda yetersiz."
+    },
+    {
+      "id": "pflash-038",
+      "question": "Beta-HCG hangi tümörlerde yükselir ve normal gebelikten nasıl ayırt edilir?",
+      "answer": "[[Koryokarsinom]] (en fazla ↑↑↑), gestasyonel trofoblastik hastalık, germ hücreli tümörler (non-seminomatöz). Erkekte yüksek β-HCG → [[germ hücreli tümör veya koryokarsinom]] düşün.",
+      "explanation": "Beta-HCG koryosit trofoblastlarından üretilir. Koryokarsinomda milyonlarca mIU/mL'ye ulaşabilir. Testis tümöründe marker kombinasyonu (AFP + β-HCG + LDH) evrelemeye yardımcı olur.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Tümör Belirteci", "Germ Hücreli"],
+      "story_hint": "💡 HİKAYE: β-HCG = hamilelik hormonu → erkekte yüksekse tümör var demektir."
+    },
+    {
+      "id": "pflash-039",
+      "question": "Reed-Sternberg hücresinin özellikleri ve Hodgkin lenfomayla ilişkisi nedir?",
+      "answer": "[[Baykuş gözü]] görünümü: ikili nükleus veya ikili nükleol, belirgin nükleol. İmmünfenotip: [[CD15+, CD30+]], CD20-, CD45-. B hücre kökenli. [[Hodgkin lenfoma]]nın tanı hücresi.",
+      "explanation": "Reed-Sternberg hücreleri germinal merkez B hücrelerinden köken alır ama B hücre markerleri kaybetmiştir. EBV ile ilişki vardır (özellikle karma hücreli ve lenfosit predominant dışı tiplerde).",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Hodgkin Lenfoma", "Reed-Sternberg"],
+      "story_hint": "💡 HİKAYE: Reed-Sternberg = baykuş bakışlı hücre → CD15+CD30+ → Hodgkin tanısı."
+    },
+    {
+      "id": "pflash-040",
+      "question": "Psammom cisimciği (psamomm body) hangi tümörlerde görülür?",
+      "answer": "[[Papiller tiroid karsinom]], [[seröz over karsinom]], [[mezotelyoma]], meninjiom. Konsantrik, laminar, kalsifiye yapılar — distrofik kalsifikasyon örneği.",
+      "explanation": "Psammom cisimciği nekrotik tümör hücreleri üzerine kalsiyum tuzlarının birikmesiyle oluşur. Papiller tiroid karsinomun %50'sinde görülür ve tanı koydurucudur.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Tümör Histoloji", "Kalsifikasyon"],
+      "story_hint": "💡 HİKAYE: Psammom = taş yumak → papiller tiroid, over, mezotelyoma, meninjiyom."
+    },
+    {
+      "id": "pflash-041",
+      "question": "Akciğer metastazının en sık primer kaynakları hangileridir?",
+      "answer": "[[Meme]], kolon, böbrek, tiroid, melanom → akciğere metastaz yapar. 'Top atışı' metastazlar: çok sayıda yuvarlak gölge. [[Primer akciğer tümörüne göre metastaz daha sık]].",
+      "explanation": "Akciğer kan filtresi gibi davrandığından hematojen metastazlar sıkça akciğerde tutulur. Kanser vakalarında akciğerde kitle gördüğünde önce metastaz düşünülmelidir.",
+      "difficulty": "Kolay",
+      "tags": ["Patoloji", "Metastaz", "Akciğer"],
+      "story_hint": "💡 HİKAYE: Akciğer = metastaz mıknatısı → meme, kolon, böbrek hep oraya gider."
+    },
+    {
+      "id": "pflash-042",
+      "question": "Kemik metastazının en sık primer kaynakları ve osteolitik/osteoblastik özellikleri nelerdir?",
+      "answer": "[[Osteolitik]]: böbrek, akciğer, tiroid, melanom, meme (bazen). [[Osteoblastik]]: [[prostat]] (en tipik), meme (karma). Mnemonic: [[BLT + KBM]] → meme, akciğer, tiroid, böbrek, melanom.",
+      "explanation": "Osteolitik metastazlarda hiperkalsemi görülür. Osteoblastik metastazlarda ALP ve PSA yükselir. Prostat kanseri aksiyel iskelette (vertebra, pelvis, femur) osteoblastik metastaz yapar.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Metastaz", "Kemik"],
+      "story_hint": "💡 HİKAYE: Prostat kemikle dost → osteoblastik; diğerleri yıkıcı → osteolitik."
+    },
+    {
+      "id": "pflash-043",
+      "question": "Karaciğer metastazının en sık kaynağı hangi organların tümörleridir?",
+      "answer": "[[Kolorektal kanser]] (portal venöz drenaj → karaciğer), pankreas, meme, akciğer, melanom. Hepatik metastaz primer tümörden çok daha sık görülür.",
+      "explanation": "Kolorektal kanser portal sistem aracılığıyla direkt karaciğere metastaz yapar. Kolorektal kanser karaciğer metastazı rezektabiliyse küratif cerrahi uygulanabilir.",
+      "difficulty": "Kolay",
+      "tags": ["Patoloji", "Metastaz", "Karaciğer"],
+      "story_hint": "💡 HİKAYE: Kolon → portal ven → karaciğer → 'bariyer geçildi' → karaciğer metastazı."
+    },
+    {
+      "id": "pflash-044",
+      "question": "Miyokard enfarktüsünün zaman serisinde troponin yüksekliğinin seyri nedir?",
+      "answer": "[[Troponin I/T]]: [[3-12 saat]] sonra yükselmeye başlar, 12-24 saatte zirve, [[5-14 gün]] yüksek kalır. CK-MB: 4-6 saatte başlar, 24 saatte zirve, 3 gün içinde düşer.",
+      "explanation": "Troponin MI'nın en duyarlı ve özgül biyokimyasal göstergesidir. Uzun süre yüksek kalması nedeniyle nüks MI'yi CK-MB daha iyi gösterir (tekrar yükselir). Miyokardit, PE'de de yükselir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "MI", "Biyobelirteç"],
+      "story_hint": "💡 HİKAYE: Troponin = yavaş ama uzun; CK-MB = hızlı ama kısa → nüks MI'yı CK-MB yakalar."
+    },
+    {
+      "id": "pflash-045",
+      "question": "Aterosklerozun patogenezinin 'Response to Injury' hipotezi adımları nelerdir?",
+      "answer": "[[Endotel hasarı]] (HT, sigara, DM) → LDL birikimi → monosit göçü → [[makrofaj]] → [[köpük hücresi]] → [[fatty streak]] → düz kas hücre proliferasyonu → [[fibroaterom plak]].",
+      "explanation": "Ateroskleroz inflamatuar bir hastalıktır. Okside LDL makrofajı aktive eder. Kararlı plakta fibröz başlık kalın; kararsız plakta ince fibröz başlık → rüptür riski yüksek.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Ateroskleroz", "Kardiyovasküler"],
+      "story_hint": "💡 HİKAYE: Damar hasarlandı → monosit geldi → yağ yedi → köpük oldu → plak büyüdü."
+    },
+    {
+      "id": "pflash-046",
+      "question": "Romatizmal kalp hastalığının histolojik bulguları nelerdir?",
+      "answer": "[[Aschoff cisimciği]]: fibrinoid nekroz etrafında [[Anitschkow hücreleri]] (tırtıl nükleuslu aktive makrofajlar) ve lenfositler. Mitral kapak en sık tutulan kapak ([[mitral stenoz]]).",
+      "explanation": "Grup A beta-hemolitik streptokok boğaz enfeksiyonu → M protein – kardiyak antijen çapraz reaksiyon → romatizmal ateş → karditis. Tekrar enfeksiyonlar kapak hasarını kümülatif olarak artırır.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Romatizmal Kalp", "Kardiyovasküler"],
+      "story_hint": "💡 HİKAYE: Streptokok boğazı → kalbi yanılttı → Aschoff cisimciği → mitral stenoz."
+    },
+    {
+      "id": "pflash-047",
+      "question": "Santriasinar ve panasinar amfizem arasındaki fark nedir?",
+      "answer": "[[Santriasinar]]: respiratuar bronşiyol düzeyi, [[üst loblar]], sigara içicilerde. [[Panasinar]]: tüm asinus, [[alt loblar]], [[α1-antitripsin eksikliği]]nde (genç, non-smoker).",
+      "explanation": "α1-AT nötrofil elastazı inhibe eder. Eksikliğinde elastaz alveol duvarını yıkar. PiZZ genotipi en şiddetli fenotip. Sigarada ise nötrofil elastaz fazlalığı santral alveolleri önce etkiler.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Amfizem", "Pulmoner"],
+      "story_hint": "💡 HİKAYE: Sigara → üst lobdan başlar; α1-AT eksikliği → alt lobdan tüm akciğere yayılır."
+    },
+    {
+      "id": "pflash-048",
+      "question": "ARDS'nin patogenezi ve histolojik bulgusu nedir?",
+      "answer": "[[Diffüz alveoler hasar (DAH)]]: kapiller geçirgenlik ↑ → protein zengini eksüda → [[hiyalin membran]] oluşumu → tip II pnömosit hiperplazisi (tamir). Surfaktan kaybolur → atelektazi.",
+      "explanation": "ARDS tetikleyicileri: sepsis, aspirasyon, ağır pnömoni, travma, pankreatit. Hiyalin membran histolojik tanımlayıcıdır. Mekanik ventilasyon gerektirir (düşük tidal volüm protokolü).",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "ARDS", "Pulmoner"],
+      "story_hint": "💡 HİKAYE: Damar geçirgen oldu → protein dışarı → hiyalin membran kapladı → nefes kesiliyor."
+    },
+    {
+      "id": "pflash-049",
+      "question": "Squamöz hücreli akciğer karsinomun özellikleri nelerdir?",
+      "answer": "[[Sentral]] yerleşim, sigara ile güçlü ilişki, [[kavitasyon]], keratin inci ve hücreler arası köprü (histoloji), paraneoplastik [[PTHrP]] → hiperkalsemi. p63/p40 pozitif.",
+      "explanation": "Squamöz hücreli karsinom hiler bölgede büyük kitle yapar, endobronşiyal büyüme → atelektazi. Hiperkalsemi PTHrP'den kaynaklanır (kemik metastazı olmadan da olur).",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Akciğer Kanseri", "Squamöz"],
+      "story_hint": "💡 HİKAYE: Squamöz = merkez + kavite + kalsiyum → 'sentral kaviteli hiperkalsemi'."
+    },
+    {
+      "id": "pflash-050",
+      "question": "Küçük hücreli akciğer karsinomu (KHAK) paraneoplastik sendromları nelerdir?",
+      "answer": "[[ACTH üretimi]] → Cushing sendromu, [[ADH üretimi]] (SIADH) → hiponatremi, Eaton-Lambert sendromu ([[nöromüsküler kavşak]], proksimal kas zayıflığı). Nöroendokrin belirteçler: [[synaptofizin+, kromogranin+]].",
+      "explanation": "KHAK nöroendokrin kökenlidir, hızlı büyür, erken metastaz yapar. Kemoterapi başlangıçta yanıt verir ama nüks gelişir. Merkezi yerleşimlidir, kavitasyon yapmaz.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "Akciğer Kanseri", "KHAK"],
+      "story_hint": "💡 HİKAYE: KHAK = paraneoplastik fabrika → ACTH, ADH, Lambert → nöroendokrin damgası."
+    },
+    {
+      "id": "pflash-051",
+      "question": "Mezotelyomayla asbest ilişkisi ve imunohistokimyasal belirteçleri nelerdir?",
+      "answer": "[[Asbest]] en önemli risk faktörü (latent süre 20-40 yıl). Belirteçler: [[kalretinin+]], [[WT1+]], D2-40+; TTF-1-, CEA- (adenokarsinomdan ayırt). [[Plevral mezotelyoma]] en sık tip.",
+      "explanation": "Sigara + asbest → akciğer kanseri riskini sinerjik artırır ancak mezotelyoma için sigaranın bağımsız katkısı yoktur. Biyopsi tanı için şarttır.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "Mezotelyoma", "Plevra"],
+      "story_hint": "💡 HİKAYE: Asbest → mezotelyoma → kalretinin+ (mezotel markeri) → TTF-1 negatif (akciğer değil)."
+    },
+    {
+      "id": "pflash-052",
+      "question": "Barrett özofagusu nedir ve malignite riski nasıldır?",
+      "answer": "[[Kronik GÖRH]] → skuamöz epitelin [[intestinal metaplazi]]ye (kolumnar, goblet hücreli) dönüşümü. [[Adenokarsinom]] riski 30-125 kat artmış. Alt özofagus etkilenir.",
+      "explanation": "Barrett'ta goblet hücreleri olması zorunludur (intestinal metaplazi). Displazi derecesi izlemi belirler: düşük grade → takip; yüksek grade → endoskopik tedavi veya özofajektomi.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Özofagus", "GİS"],
+      "story_hint": "💡 HİKAYE: Asit yanıktı → epitel değişti → goblet hücresi geldi → kanser kapıda."
+    },
+    {
+      "id": "pflash-053",
+      "question": "Signet ring hücreli mide karsinomunun özellikleri nelerdir?",
+      "answer": "[[Müsin]] dolup çekirdek kenara itilmiş hücreler → yüzük taşı görünümü. [[Diffüz tip]] mide kanseri (Lauren sınıflaması), submukozayı infiltre eder → [[linitis plastika]] (deri torbası mide).",
+      "explanation": "Diffüz tip mide kanseri H. pylori ile daha az ilişkili, E-kaderin kaybı var. Linitis plastikada mide duvarı kalınlaşır, rijid görünür. Prognoz kötü.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Mide Kanseri", "GİS"],
+      "story_hint": "💡 HİKAYE: Signet ring = müsin yüzüğü → mide sertleşti → linitis plastika = plastik torba mide."
+    },
+    {
+      "id": "pflash-054",
+      "question": "Crohn hastalığı ile ülseratif koliti histolojik ve klinik olarak ayırt eden özellikler nelerdir?",
+      "answer": "[[Crohn]]: transmural, skip lezyonlar, granülom, fistül, tüm GİS. [[ÜK]]: mukoza/submukoza, sürekli, kript apseleri, psödopolip, rektum → proksimal. Crohn'da taş döşemesi, ÜK'de düz.",
+      "explanation": "Her ikisinde de kolon kanseri riski artar (ÜK'de daha fazla). ÜK'de toksik megakolon riski vardır. Crohn'da perianal hastalık (fistül, apse) karakteristiktir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "İnflamatuar Barsak", "GİS"],
+      "story_hint": "💡 HİKAYE: Crohn = derine gider (transmural), skip eder; ÜK = yüzeyde kalır, kesintisizdir."
+    },
+    {
+      "id": "pflash-055",
+      "question": "Mallory-Weiss yırtığı ve Boerhaave sendromu arasındaki fark nedir?",
+      "answer": "[[Mallory-Weiss]]: özofagogastrik bileşke mukoza yırtığı, kanama, tam kat değil. [[Boerhaave]]: tüm katları kapsayan özofagus perforasyonu → mediastinit. Her ikisinde de güçlü kusma öyküsü.",
+      "explanation": "Mallory-Weiss endoskopik ligasyon veya konservatif tedaviyle iyileşir. Boerhaave hayatı tehdit eder; Hamman kritiği (mediasten amfizemi), acil cerrahi gerektirir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Özofagus", "GİS"],
+      "story_hint": "💡 HİKAYE: Mallory-Weiss = sadece mukoza yırtık; Boerhaave = tam delik → mediastinit."
+    },
+    {
+      "id": "pflash-056",
+      "question": "Minimal change nefropatinin klinik ve histolojik özellikleri nelerdir?",
+      "answer": "[[Çocuklarda en sık nefroz sendromu]]. Işık mikroskobu normal; [[elektron mikroskobu]]: podosit ayak çıkıntı kaybı ([[effacement]]). [[Steroid tedavisine yanıtlı]]. Selektif proteinüri (albümin).",
+      "explanation": "Minimal change'de immün kompleks birikimi yoktur. Patogenez T hücre disfonksiyonu → geçirgenlik faktörü → podosit hasarı. Hodgkin lenfoma ile ilişkisi bilinmektedir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Böbrek", "Nefrotik Sendrom"],
+      "story_hint": "💡 HİKAYE: Işık mikroskobu temiz → EM'de ayak parmakları silinmiş → steroid ile iyileşir."
+    },
+    {
+      "id": "pflash-057",
+      "question": "IgA nefropatisi (Berger hastalığı) ile Henoch-Schönlein purpura arasındaki ilişki nedir?",
+      "answer": "Her ikisinde de [[mezangial IgA birikimi]] var. [[IgA nefropati]]: böbrek sınırlı. [[HSP]]: sistemik (purpura, artrit, karın ağrısı + böbrek tutulumu). Üst solunum yolu enfeksiyonu [[sinüroz hematüri]] tetikler.",
+      "explanation": "IgA nefropatisi glomerülonefritin en yaygın formudur. Makroskopik veya mikroskopik hematüri ÜSYE'den 1-3 gün sonra görülür (post-streptokok nefritinden farkı: 2-3 hafta aralık).",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Böbrek", "IgA Nefropati"],
+      "story_hint": "💡 HİKAYE: Boğaz ağrısı → 1-3 gün → kanlı idrar = IgA; 2-3 hafta → = post-streptokok."
+    },
+    {
+      "id": "pflash-058",
+      "question": "KML'de Philadelphia kromozomunun moleküler yapısı ve tedavisi nedir?",
+      "answer": "[[t(9;22)]]: ABL (9q34) → BCR (22q11) → [[BCR-ABL füzyon]], anormal p210 tirozin kinaz. Tedavi: [[imatinib]] (birinci nesil TKI), dirençte dasatinib/nilotinib. Splenomegali, lökositoz, bazofili.",
+      "explanation": "KML üç fazda seyreder: kronik → akselerasyon → blastik kriz. Blastik krizde AML veya ALL klonu gelişir. Allogeneik kök hücre transplantasyonu küratifte standart.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "KML", "Hematoloji"],
+      "story_hint": "💡 HİKAYE: Philadelphia = 9+22 melez → BCR-ABL kinaz → imatinib = hedefli füze."
+    },
+    {
+      "id": "pflash-059",
+      "question": "Hodgkin lenfomanın alt tipleri ve Reed-Sternberg hücre varyantları nelerdir?",
+      "answer": "[[Nodüler skleroz]] (en sık, %65): laküner RS hücreleri, kollajen bantlar. [[Karma hücreli]]: klasik RS, EBV+. [[Lenfosit predominant]]: 'patlamış mısır' hücresi, CD20+. [[Lenfosit azalmış]]: en kötü prognoz.",
+      "explanation": "Hodgkin lenfomada bimodal yaş dağılımı: 15-35 ve >50. EBV ilişkisi en güçlü karma hücreli ve lenfosit azalmış tiplerde. Tedaviye yanıt genel olarak iyidir.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "Hodgkin Lenfoma", "Hematoloji"],
+      "story_hint": "💡 HİKAYE: Nodüler skleroz = genç kadın, laküner hücre; Karma = EBV'li klasik RS."
+    },
+    {
+      "id": "pflash-060",
+      "question": "Akut inflamasyonun temel vasküler ve hücresel olayları sırası nedir?",
+      "answer": "[[Vazodilatasyon]] (kızarıklık, sıcaklık) → [[permeabilite artışı]] (ödem) → [[lökosit marginasyonu]] → yuvarlanma (P/E selektin) → tutunma (ICAM-1/integrin) → [[transendotelyal migrasyon]] → kemotaksis.",
+      "explanation": "Lewis üçlüsü: kızarıklık, ödem, ağrı. Sıcaklık ve işlev kaybı da eklenir. Lökosit göçü C5a, IL-8, LTB4 gibi kemotaktik faktörlerle yönlendirilir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "İnflamasyon", "Vasküler Olaylar"],
+      "story_hint": "💡 HİKAYE: Dila → geçirgenlendi → lökosit yavaşladı → yapıştı → tünelden geçti → kemoçekimle hedefe."
+    },
+    {
+      "id": "pflash-061",
+      "question": "Adenokarsinomun akciğerdeki özellikleri ve moleküler belirteçleri nelerdir?",
+      "answer": "[[Periferik]] yerleşim, sigara ilişkisi daha az, [[TTF-1+]], [[napsin A+]]. Sürücü mutasyonlar: [[EGFR]] (erlotinib), [[ALK]] füzyon (krizotinib), ROS1, BRAF. Lepidik büyüme (Bronkioloalveoler patern).",
+      "explanation": "EGFR mutasyonu Asya kökenli, kadın, non-smoker hastalarda daha sık. EGFR TKI'lara yanıt iyi. ALK füzyonu genç hastalarda görülür ve ALK inhibitörleri etkilidir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Akciğer Kanseri", "Adenokarsinom"],
+      "story_hint": "💡 HİKAYE: Adenokarsinom = periferik, TTF-1+, EGFR/ALK mutasyonu = hedefe yönelik ilaç var."
+    },
+    {
+      "id": "pflash-062",
+      "question": "Tümör anjiyogenezisinde VEGF'nin rolü ve anti-VEGF tedavisi nedir?",
+      "answer": "[[VEGF]] hipoksi → [[HIF-1α]] → VEGF salgısı → yeni damar oluşumu → tümör beslenir. [[Bevacizumab]]: anti-VEGF monoklonal antikor, kolorektal, akciğer, böbrek kanserinde kullanılır.",
+      "explanation": "2 mm'den büyük tümörler anjiyogenez olmadan büyüyemez. VEGF endotel hücrelerini prolifere eder, geçirgenliği artırır. Anti-VEGF tedavi dolaşıma girmeyi de engeller.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Anjiyogenez", "Neoplazi"],
+      "story_hint": "💡 HİKAYE: Tümör büyüdü, oksijen istedi → VEGF çağırdı → damar yaptı → bevacizumab kesti."
+    },
+    {
+      "id": "pflash-063",
+      "question": "Kolorektal kanserin adenom-karsinom sekansı nasıl işler?",
+      "answer": "[[APC kaybı]] → [[KRAS mutasyonu]] → [[SMAD4 kaybı]] → [[p53 kaybı]] → karsinom. Vogelstein modeli. Sporadik: 10-15 yıl; FAP: daha erken. Düz mukoza → adenomatöz polip → karsinom.",
+      "explanation": "Bu model kanser gelişiminin çok adımlı doğasını gösterir. Her adım bir tümör supresör kaybı veya onkogen kazanımıdır. MSI (mikrosatellıt instabilite) alternatif yoldur.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Kolorektal Kanser", "Karsinom Sekansı"],
+      "story_hint": "💡 HİKAYE: APC → KRAS → SMAD4 → p53 = kanserin 4 basamaklı merdiveni."
+    },
+    {
+      "id": "pflash-064",
+      "question": "Hepatosellüler karsinomun (HCC) risk faktörleri ve tümör belirteci nedir?",
+      "answer": "[[HBV]] (en önemli dünya geneli), [[HCV]], alkol sirozu, aflatoksin (B1, A. flavus), NAFLD. [[AFP]] en önemli belirteç. Fibröz lamellar varyant: genç, AFP normal, iyi prognoz.",
+      "explanation": "HBV HCC'ye siroz olmaksızın da yol açabilir (viral DNA integrasyonu). Aflatoksin B1 p53 kodon 249 spesifik mutasyonu oluşturur. Sorafenib ilerlemiş HCC'de onaylıdır.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Karaciğer Kanseri", "GİS"],
+      "story_hint": "💡 HİKAYE: HBV + HCV + alkol + aflatoksin → karaciğer yıkıldı → AFP fırladı → HCC."
+    },
+    {
+      "id": "pflash-065",
+      "question": "Wilms tümörü (nefroblastom) histolojik bileşenleri ve WT1 gen ilişkisi nedir?",
+      "answer": "[[Trifazik histoloji]]: blastematöz, stromal, epitelyal. [[WT1]] tümör supresör (11p13), [[WAGR sendromu]] (Wilms + aniridi + GÜ anomali + zeka geriliği). En sık çocukluk dönemi renal tümörü.",
+      "explanation": "Wilms tümörü 2-5 yaş çocuklarda görülür. WT2 gen bölgesi (11p15) BWS sendromuyla ilişkili. Prognoz genellikle iyidir. Karın kitlesi başvuru şikayetidir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Böbrek Tümörü", "Pediatrik"],
+      "story_hint": "💡 HİKAYE: Wilms = 3'lü doku + WT1 geni + WAGR sendromu → çocuğun böbreğindeki trifazik kitle."
+    },
+    {
+      "id": "pflash-066",
+      "question": "Renal hücreli karsinomun alt tipleri ve genetiği nedir?",
+      "answer": "[[Şeffaf hücreli]] (en sık, %75): VHL mutasyonu (3p25), VEGF ↑. [[Papiller]]: MET proto-onkogen, krom 7/17 trizomi. [[Kromofob]]: en iyi prognoz, krom kaybı. Sigara, HT, obezite risk faktörleri.",
+      "explanation": "VHL kaybı → HIF-1α stabilizasyonu → VEGF/PDGF ↑ → anjiyogenez. Bu nedenle RHK'de VEGF inhibitörleri (sunitinib) etkilidir. Von Hippel-Lindau sendromunda bilateral/multifokale RHK görülür.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "Renal Hücreli Karsinom", "Böbrek"],
+      "story_hint": "💡 HİKAYE: Şeffaf hücre + VHL kaybı + VEGF artışı → sunitinib hedefi."
+    },
+    {
+      "id": "pflash-067",
+      "question": "Meme kanserinin histolojik alt tipleri ve en sık görüleni nedir?",
+      "answer": "[[İnvaziv duktal karsinom]] (NST, en sık ~%70): düzensiz sınırlı, desmoplastik stroma. [[İnvaziv lobüler]]: tek sıra hücre ('Hint kuyruğu'), E-kaderin kaybı. DCIS: non-invaziv, komedo nekrozu.",
+      "explanation": "İnvaziv duktal karsinom en sık görülen histolojik tiptir. Lobüler karsinom bilateral ve multifokal olma eğilimindedir. DCIS kalsifikasyonla görüntülenir (mamografi).",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Meme Kanseri", "Histoloji"],
+      "story_hint": "💡 HİKAYE: Duktal = en sık, sert kitle; Lobüler = Hint kuyruğu tek sıra hücre."
+    },
+    {
+      "id": "pflash-068",
+      "question": "Serviks kanserinin HPV ilişkisi ve öncü lezyonları nelerdir?",
+      "answer": "[[HPV 16]] (en sık servikal skuamöz karsinom), [[HPV 18]] (adenokarsinom). [[E6]]: p53'ü yıkar; [[E7]]: Rb'yi inhibe eder. CIN1-2-3 → CIS → invaziv karsinom. HPV aşısı (16,18,6,11) korunur.",
+      "explanation": "Skuamokolumnar bileşke (transformasyon zonu) HPV'nin en çok bulaştığı noktadır. Kolposkopi + biyopsi CIN tespiti için altın standart. CIN3 = şiddetli displazi/CIS.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Serviks Kanseri", "HPV"],
+      "story_hint": "💡 HİKAYE: HPV16 → E6 p53'ü siler, E7 Rb'yi parçalar → CIN → serviks kanseri."
+    },
+    {
+      "id": "pflash-069",
+      "question": "Over kanserinin en sık histolojik tipi ve tümör belirteci nedir?",
+      "answer": "[[Seröz kistadenokarsinomu]] (en sık, %50+): psammom cisimciği, BRCA1/2 ilişkili. [[CA-125]] ve BRCA mutasyon testi. İleri evrede tanı konur (peritoneal yaygılım).",
+      "explanation": "Over kanseri asemptomatik seyri nedeniyle genellikle evre III-IV'te tanınır. BRCA1/2 mutasyonu taşıyanlarda profilaktik salpingo-ooferektomi önerilir. PARP inhibitörleri tedavide kullanılır.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Over Kanseri", "Jinekolojik"],
+      "story_hint": "💡 HİKAYE: Seröz over kanseri = psammom cisimciği + CA-125 + BRCA mutasyonu = sessiz katil."
+    },
+    {
+      "id": "pflash-070",
+      "question": "Prostat adenokarsinomunun Gleason skoru ve klinik önemi nedir?",
+      "answer": "[[Gleason skoru]]: iki baskın paterni (1-5) toplar → [[3+4=7]] vs 4+3=7 fark eder (daha kötü). Yüksek skor → daha az diferansiye → kötü prognoz. [[PSA]] + Gleason + evre = tedavi kararı.",
+      "explanation": "Gleason sistemi histolojik diferansiyasyon derecesini belirler. İzole patolojide iki ayrı patern notlandırılır: primer (baskın) + sekonder. Total 6-10 arası: 6=iyi, 8-10=kötü.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Prostat Kanseri", "Gleason"],
+      "story_hint": "💡 HİKAYE: Gleason = patoloji puanı → 7'de 3+4 ile 4+3 aynı değil → 4+3 daha tehlikeli."
+    },
+    {
+      "id": "pflash-071",
+      "question": "Tiroid papiller karsinomunun tanı kriterleri nelerdir?",
+      "answer": "[[Optik görünüm]]: zemin cam nükleus, nükleer yarıklar (groove), nükleer psödoinclüzyon. [[Psammom cisimciği]]. [[RET/PTC]] rearanjmanı, BRAF V600E mutasyonu. Lenfatik yayılım.",
+      "explanation": "Papiller tiroid karsinom en sık tiroid malign tümörüdür (%80+). Radyasyon maruziyetiyle ilişkilidir (Çernobil). Prognoz genellikle iyi, yavaş büyür.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Tiroid Kanseri", "Endokrin"],
+      "story_hint": "💡 HİKAYE: Papiller tiroid = zemin cam nükleus + yarık + psammom cisimciği = RET/BRAF."
+    },
+    {
+      "id": "pflash-072",
+      "question": "Folliküler tiroid karsinomu ile adenom arasındaki histolojik fark nedir?",
+      "answer": "[[Kapsül invazyonu]] veya [[vasküler invazyon]] = karsinom. İnce iğne biyopsisi ayırt edemez (her ikisi foliküler neoplazi → cerrahi şart). [[Hürthle hücre karsinomu]] varyant.",
+      "explanation": "Folliküler karsinom hematojen yayılır (kemik ve akciğer metastazı). Lenfatik metastaz nadir. RAS mutasyonu ve PAX8-PPARγ füzyonu sık görülür.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Tiroid Kanseri", "Foliküler"],
+      "story_hint": "💡 HİKAYE: Foliküler adenom mu karsinom mu? Kapsülü delmeden söyleyemezsin → cerrahi gerek."
+    },
+    {
+      "id": "pflash-073",
+      "question": "Medüller tiroid karsinomunun özellikleri ve MEN sendromlarıyla ilişkisi nedir?",
+      "answer": "[[C hücreleri]] (parafoliküler, kalsitonin üreten). [[Amiloid]] birikimi (kalsitonin fibrillerinden). [[RET proto-onkogen]] mutasyonu. [[MEN 2A]] (feokromositoma + hiperparatiroidizm) ve [[MEN 2B]] (marfanoid habitus) ilişkili.",
+      "explanation": "Medüller karsinom ailevi (%25, RET mutasyonu) veya sporadik olabilir. Kalsitonin tümör belirteci ve tedaviye yanıt izleminde kullanılır. Profilaktik tiroidektomi RET mutasyon taşıyıcılarına önerilir.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "Medüller Tiroid", "MEN Sendromu"],
+      "story_hint": "💡 HİKAYE: Medüller = C hücre + kalsitonin + amiloid + RET = MEN2 üçlüsünün bir parçası."
+    },
+    {
+      "id": "pflash-074",
+      "question": "Feokromositomada '10 kuralı' nedir?",
+      "answer": "[[%10 malign]], [[%10 bilateral]], [[%10 ekstraadrenalin]] (paragangliom), [[%10 çocukta]], [[%10 ailesel]] (MEN 2A/2B, VHL, NF1). Katekolamin kriz: HT, başağrısı, terleme, çarpıntı.",
+      "explanation": "Feokromositoma adrenal medulladan köken alır. Cerrahi öncesi alfa-bloker (fenoksibenzamin) verilmeli, ardından beta-bloker. 24 saatlik idrarda VMA, metanefrin ölçülür.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Feokromositoma", "Endokrin"],
+      "story_hint": "💡 HİKAYE: 10 kuralı = %10'luk azınlıkların tümörü → 5 kez %10."
+    },
+    {
+      "id": "pflash-075",
+      "question": "Nöroblastomun özellikleri ve Shimada sınıflaması nedir?",
+      "answer": "[[Çocukluk çağı]]: <5 yaş, adrenal medulla en sık yerleşim. [[Homer-Wright psödorozet]]: nöroblast hücreleri nöropil kümesi etrafında. [[İyi huylu fenotip]]: stroma zengin, matürasyon var. N-MYC amplifikasyonu kötü prognoz.",
+      "explanation": "Nöroblastom spontan matürasyon gösterebilir (ganglionöroblastom, ganglionörom). Evre 4S (karaciğer, cilt, kemik iliği, <1 yaş) paradoks olarak iyi prognozludur.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "Nöroblastom", "Pediatrik"],
+      "story_hint": "💡 HİKAYE: Nöroblastom = bebek adrenal → N-MYC fazla → kötü; psödorozet = Homer-Wright."
+    },
+    {
+      "id": "pflash-076",
+      "question": "Osteosarkomun özellikleri ve röntgen bulguları nelerdir?",
+      "answer": "[[Genç erkek]], distal femur/proksimal tibia metafizi. [[Codman üçgeni]] (periost elevasyon) ve [[güneş ışığı]] paterni röntgende. [[LDH ve ALP]] yüksek. Radyasyona bağlı form: Paget hastalığı zemininde.",
+      "explanation": "Osteosarkom en sık primer kemik tümörüdür (metastaz hariç). p53 ve Rb mutasyonu görülür. Neoadjuvan kemoterapi + geniş rezeksiyon + adjuvan kemoterapi standard tedavi.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Kemik Tümörü", "Osteosarkom"],
+      "story_hint": "💡 HİKAYE: Genç diz → güneş ışığı röntgende → Codman üçgeni → osteosarkom."
+    },
+    {
+      "id": "pflash-077",
+      "question": "Ewing sarkomun özellikleri ve translokasyonu nedir?",
+      "answer": "[[t(11;22)]]: EWS-FLI1 füzyon geni. [[PAS pozitif]] glikojen granülleri. Küçük, yuvarlak, mavi hücreler (SYBR). Diyafiz orta kısmı, 'soğan kabuğu' periost reaksiyonu. [[CD99+]].",
+      "explanation": "Ewing sarkom 5-20 yaş arasında görülür. Uzak metastaz özellikle akciğere olur. Kemik sintigrafisi yaygınlığı değerlendirir. Kemoterapi + radyoterapi ± cerrahi.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "Kemik Tümörü", "Ewing"],
+      "story_hint": "💡 HİKAYE: Ewing = soğan kabuğu + t(11;22) + PAS+ + genç → EWS-FLI1 soğanı."
+    },
+    {
+      "id": "pflash-078",
+      "question": "Kondrosarkomun özellikleri ve en sık yerleşim yeri nedir?",
+      "answer": "[[Yavaş büyür]], kemik metafiz veya epifiz, [[pelvis/femur/omuz]] en sık. Radyasyona dirençli → [[cerrahinin en önemli tedavi]]. Orta yaşlı-yaşlı. Kalsifiye kıkırdak matriks (patlamış mısır işareti, röntgen).",
+      "explanation": "Kondrosarkom kıkırdak tümörlerinin en habisi. Kondroblastom (benign epifiz) ve enkondrom (benign metafiz) ile karıştırılmamalı. Grade histolojisi prognozu belirler.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Kemik Tümörü", "Kondrosarkom"],
+      "story_hint": "💡 HİKAYE: Kondrosarkom = radyasyona sağır → sadece bıçak (cerrahi) keser onu."
+    },
+    {
+      "id": "pflash-079",
+      "question": "Melanomun ABCDE kriterleri ve en sık sürücü mutasyonu nedir?",
+      "answer": "[[A]]simetri, [[B]]order düzensiz, [[C]]olor çok renkli, [[D]]iameter >6mm, [[E]]volution. [[BRAF V600E]] mutasyonu (~%50): vemurafenib/dabrafenib hedefi. Breslow kalınlığı prognoz belirler.",
+      "explanation": "Melanom nöral krest kökenli melanositlerden gelişir. Metastatik melanomda immünterapi (ipilimumab-CTLA4, pembrolizumab-PD-1) ve BRAF inhibitörleri kullanılır.",
+      "difficulty": "Kolay",
+      "tags": ["Patoloji", "Melanom", "Deri"],
+      "story_hint": "💡 HİKAYE: ABCDE = dermatolojinin alarm sistemi; BRAF mutasyonu = hedefli saldırı noktası."
+    },
+    {
+      "id": "pflash-080",
+      "question": "Bazal hücreli karsinom ile skuamöz hücreli deri karsinomu arasındaki farklar nelerdir?",
+      "answer": "[[BHK]]: 'inci boncuk' kenar, ülserasyon, nadiren metastaz, palisad düzenleme. [[SHK]]: güneş hasarı, aktinik keratoz zemininde, [[keratin inci]], [[metastaz yapabilir]]. Her ikisi UV ilişkili.",
+      "explanation": "BHK en sık görülen kanser türüdür (tüm kanserler içinde). Yüz, özellikle burun kökünde. SHK alt dudak, kulak kepçesi, dudakta daha sık. BHK çok nadiren metastaz yapar.",
+      "difficulty": "Kolay",
+      "tags": ["Patoloji", "Deri Kanseri", "Histoloji"],
+      "story_hint": "💡 HİKAYE: BHK = inci kenar, metastaz yok; SHK = keratin inci, metastaz riski var."
+    },
+    {
+      "id": "pflash-081",
+      "question": "Lenfosit göçünde (diapedez) rol oynayan moleküller nelerdir?",
+      "answer": "[[PECAM-1 (CD31)]]: transendotelyal geçişte. [[Selektinler]] (P, E, L): yuvarlanma. [[ICAM-1/VCAM-1]] ve [[integrinler]] (LFA-1, MAC-1): sıkı tutunma. Kemotaktik faktörler: C5a, IL-8, LTB4.",
+      "explanation": "Adezyon moleküllerinin ifade artışı inflamasyon sinyaliyle oluşur. TNF ve IL-1 endotelde selektin ve ICAM-1 ekspresyonunu artırır. PECAM-1 endotelde interselüler aralıkta yoğun.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "İnflamasyon", "Adezyon Molekülleri"],
+      "story_hint": "💡 HİKAYE: Lökosit endotelden geçiş = selektin (yavaşla) → integrin (yapış) → PECAM (geç)."
+    },
+    {
+      "id": "pflash-082",
+      "question": "Kronik inflamasyonun akut inflamasyondan temel farkları nelerdir?",
+      "answer": "Kronik: [[lenfosit, plazma hücresi, makrofaj]] baskın; sürekli doku hasarı ve tamir beraber gider; [[fibrozis]]. Akut: nötrofil baskın, kısa süre, eksüda.",
+      "explanation": "Kronik inflamasyon ya akut sonrası devam eder ya da baştan kronik başlar (TB, otoimmün). Granülom kronik inflamasyonun özel formu. Ateroskleroz kronik inflamatuar hastalık olarak kabul edilir.",
+      "difficulty": "Kolay",
+      "tags": ["Patoloji", "Kronik İnflamasyon"],
+      "story_hint": "💡 HİKAYE: Akut = nötrofil hücumu (kısa); Kronik = lenfosit+makrofaj kronik savaş (uzun)."
+    },
+    {
+      "id": "pflash-083",
+      "question": "Yara iyileşme aşamaları sırası nedir?",
+      "answer": "[[Hemostaz]] (0-hemen) → [[inflamasyon]] (1-5 gün, nötrofil→makrofaj) → [[proliferasyon]] (granülasyon doku, kollajen tip III, anjiyogenez, 5 gün-3 hafta) → [[yeniden şekillenme]] (kollajen III→I, skar, 3 hafta-1 yıl).",
+      "explanation": "Primer iyileşme: temiz cerrahi yara. Sekonder: geniş doku kaybı, granülasyon doku fazla, skar büyük. Kollajen tip III → tip I dönüşümü matriks metalloproteinazlarla gerçekleşir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Yara İyileşmesi", "Tamir"],
+      "story_hint": "💡 HİKAYE: Hemostaz → inflamasyon → granülasyon → skar = dört mevsim gibi sırayla."
+    },
+    {
+      "id": "pflash-084",
+      "question": "Keloid ile hipertrofik skar arasındaki fark nedir?",
+      "answer": "[[Keloid]]: sınırların ötesine geçer, spontan gerileme olmaz, kalın glikoprotein kollajen demetleri. [[Hipertrofik skar]]: sınır içinde kalır, zaman içinde düzelebilir. Her ikisi aşırı kollajen üretimiyle oluşur.",
+      "explanation": "Keloid kalın hiyalinize kollajen demetleri içerir. Koyu tenli bireylerde daha sık. Keloide eğilim ailevi olabilir. Tedavi: steroid enjeksiyonu, basınç bandajı, lazer.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Yara İyileşmesi", "Kollajen"],
+      "story_hint": "💡 HİKAYE: Keloid = sınır tanımaz skar; hipertrofik = şişkin ama yerini bilir."
+    },
+    {
+      "id": "pflash-085",
+      "question": "DIC (yaygın damar içi pıhtılaşma) patogenezi ve tetikleyicileri nelerdir?",
+      "answer": "[[Doku faktörü (TF)]] salınımı → koagülasyon kaskadı → trombüs → faktör tüketimi → [[kanama]]. Tetikleyiciler: sepsis, obstetrik komplikasyon (ablasyo), malignite (APML), travma.",
+      "explanation": "DIC'de paradoks olarak hem tromboz hem kanama görülür. APML'de ATRA tedavisi DIC'i düzeltir. Lab: PT/aPTT uzun, fibrinojen düşük, D-dimer yüksek, trombositopeni.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "DIC", "Koagülasyon"],
+      "story_hint": "💡 HİKAYE: DIC = pıhtılaşma fabrikası patladı → hem tıkandı hem aktı → tam kaos."
+    },
+    {
+      "id": "pflash-086",
+      "question": "Trombüs, emboli ve enfarktüs arasındaki fark nedir?",
+      "answer": "[[Trombüs]]: damar içinde yerinde pıhtı. [[Emboli]]: trombüsün kopup taşınması (pulmoner emboli, paradoks emboli). [[Enfarktüs]]: iskemi → doku nekrozu (MI, pulmoner, splenik).",
+      "explanation": "Virchow üçlüsü: staz, endotel hasarı, hiperkoagülabilite → tromboz. Mural trombüs (kardiyak) → sistemik emboli. DVT → PE en yaygın zincir.",
+      "difficulty": "Kolay",
+      "tags": ["Patoloji", "Tromboz", "Emboli"],
+      "story_hint": "💡 HİKAYE: Trombüs durur → emboli uçar → enfarktüs oluşur = pıhtı üçlemesi."
+    },
+    {
+      "id": "pflash-087",
+      "question": "Virchow üçlüsü nedir ve her bileşenin klinik örneği nedir?",
+      "answer": "[[Endotel hasarı]]: ateroskleroz, MI sonrası. [[Staz]]: AF, uzun uçuş, immobilizasyon, kalp yetmezliği. [[Hiperkoagülabilite]]: faktör V Leiden, protein C/S eksikliği, gebelik, OKS, kanser.",
+      "explanation": "Tromboz için genellikle birden fazla faktör biraraya gelir. DVT ve PE önlemek için bu risk faktörleri değerlendirilmelidir. Antikoardiolipin sendromu edinsel hiperkoagülopati örneğidir.",
+      "difficulty": "Kolay",
+      "tags": ["Patoloji", "Virchow Üçlüsü", "Tromboz"],
+      "story_hint": "💡 HİKAYE: Virchow üçlüsü = damar hasarı + yavaş kan + kalın kan → tromboz formülü."
+    },
+    {
+      "id": "pflash-088",
+      "question": "Şok türleri ve her birinin hemodinamik özellikleri nelerdir?",
+      "answer": "[[Hipovolemik]]: düşük CO, yüksek SVR. [[Kardiyojenik]]: düşük CO, yüksek SVR, yüksek PCWP. [[Septik/dağılım]]: yüksek CO, düşük SVR (erken). [[Obstruktif]] (PE, tamponad): düşük CO, yüksek CVP.",
+      "explanation": "Septik şokta başlangıçta yüksek CO (sıcak şok) olur; ilerlediğinde düşük CO (soğuk şok). Adrenal kriz (Addison) de dağılım şoku yapabilir. Tedavi altta yatan nedene yönelik.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Şok", "Hemodinami"],
+      "story_hint": "💡 HİKAYE: Hipovolemik = kan yok; kardiyojenik = kalp pompalayamıyor; septik = damar genişledi."
+    },
+    {
+      "id": "pflash-089",
+      "question": "Ödem oluşumunun dört temel mekanizması nelerdir?",
+      "answer": "[[Artmış hidrostatik basınç]] (kalp yetmezliği, portal HT). [[Azalmış onkotik basınç]] (nefrotik, siroz, malnutrisyon). [[Artmış permeabilite]] (inflamasyon, ARDS). [[Lenfatik tıkanma]] (meme kanseri cerrahisi, filariasis).",
+      "explanation": "Starling kuvvetleri: hidrostatik itme − onkotik çekme = net filtrasyon. Akut böbrek hasarında tuz-su tutulumu da ödem nedeni. Pitting vs non-pitting ödem ayırımı klinik önemlidir.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Ödem", "Hemodinami"],
+      "story_hint": "💡 HİKAYE: Ödem = 4 sebep: yüksek basınç, düşük protein, sızdıran damar, tıklı lenf."
+    },
+    {
+      "id": "pflash-090",
+      "question": "Pulmoner emboli'nin patolojik bulguları ve semptomları nelerdir?",
+      "answer": "[[Hemorajik enfarktüs]] (pulmoner emboli → pulmoner infarkt, kamalı, plevral taban). Semptomlar: [[ani nefes darlığı, plöritik göğüs ağrısı, hemoptizi]]. Masif PE → ani ölüm.",
+      "explanation": "Pulmoner enfarktüs aslında görece nadirdir çünkü akciğer çift dolaşıma sahiptir. Enfarktüs genellikle kardiyopulmoner rezervi düşük hastalarda görülür. Wells skoru + D-dimer + CTPA tanı.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Pulmoner Emboli", "Vasküler"],
+      "story_hint": "💡 HİKAYE: DVT koptu → akciğerde tıkandı → üçgen gölge (kama) + kan öksürdü."
+    },
+    {
+      "id": "pflash-091",
+      "question": "Lenfatik metastazın hangi tümörlerde belirgin olduğu ve sentinel lenf nodu kavramı nedir?",
+      "answer": "[[Karsinom]]lar (epitelyal) lenfatik yayılımı tercih eder. [[Sentinel lenf nodu]]: primer tümörden ilk drenaj alan lenf nodu. Negatifse diseksiyon gereksiz (meme, melanom standardı).",
+      "explanation": "Sarkomlar hematojen, karsinomlar lenfatik yayılımı tercih eder (genel kural). Ancak foliküler tiroid ve renal hücreli karsinom hematojen yayılır. Sentinel biyopsi morbiditey azaltır.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Metastaz", "Sentinel Lenf Nodu"],
+      "story_hint": "💡 HİKAYE: Karsinom = lenfatik; sarkom = hematojen. Sentinel = kapıcı lenf nodu."
+    },
+    {
+      "id": "pflash-092",
+      "question": "Tümör mikro çevresinin (TME) immün kaçış mekanizmaları nelerdir?",
+      "answer": "[[PD-L1]] tümör hücre ekspresyonu → T hücre inhibisyonu (anti-PD-1: pembrolizumab). [[CTLA-4]] T hücre regulasyonu (ipilimumab). [[Treg hücre]] artışı, MDSC, TGF-β → immünosupresif TME.",
+      "explanation": "İmmün kontrol noktası inhibitörleri (ICI) TME'deki bu baskıyı kaldırır. Ancak immün ilişkili advers olaylar (irAE) görülebilir: kolit, pnömonit, endokrinopatiler.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "İmmün Kaçış", "İmmünoterapi"],
+      "story_hint": "💡 HİKAYE: Tümör PD-L1 bayrağı açtı → T hücresi 'dur' dedi → pembrolizumab bayrağı indirdi."
+    },
+    {
+      "id": "pflash-093",
+      "question": "Akut faz yanıtının başlıca proteinleri ve klinik önemi nedir?",
+      "answer": "[[Pozitif akut faz]]: CRP, SAA, fibrinojen, ferritin, hepsidin, kompleman ↑. [[Negatif akut faz]]: albümin, transferrin ↓. [[CRP]] inflamasyon ve kardiyovasküler risk izleminde kullanılır.",
+      "explanation": "Akut faz yanıtı IL-6 (birincil), IL-1, TNF uyarısıyla karaciğerden üretilir. CRP opsonin görevini yapar. Eritrosit sedimentasyon hızı (ESR) fibrinojen artışını yansıtır.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Akut Faz", "İnflamasyon"],
+      "story_hint": "💡 HİKAYE: IL-6 karaciğeri çağırır → CRP ve fibrinojen üretilir → albümin düşer (alarm sistemi)."
+    },
+    {
+      "id": "pflash-094",
+      "question": "Sistinozis, Gaucher ve Niemann-Pick hastalıklarının biriktirdikleri substrat ve organ tutulumları nelerdir?",
+      "answer": "[[Gaucher]]: glukosilseramid, [[makrofaj birikimi]], splenomegali, kemik tutulumu, 'buruşuk kağıt' hücresi. [[Niemann-Pick]]: sfingomyelin, köpük hücresi, nöronal tutulum (Tip A). [[Sistinozis]]: sistin → böbrek, göz.",
+      "explanation": "Gaucher en sık lizozomal depo hastalığı. İmigluseraz (enzim replasman) tedavide. Niemann-Pick Tip C: kolesterol transport defekti. Sistinozis Fanconi sendromu yapar.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "Lizozomal Depo", "Metabolik"],
+      "story_hint": "💡 HİKAYE: Gaucher = buruşuk kağıt makrofaj; Niemann-Pick = köpük hücre + nöron; Sistinozis = böbrek."
+    },
+    {
+      "id": "pflash-095",
+      "question": "Amiloidozun AA, AL ve diğer tiplerinin klinik özellikleri nelerdir?",
+      "answer": "[[AL amiloidozu]]: plazma hücre diskrazisi (multiple myelom, MGUS), hafif zincir birikimi. [[AA amiloidozu]]: kronik inflamasyon (RA, TB, bronşiektazi), SAA proteini. [[TTR]]: yaşlılık ve ailesel.",
+      "explanation": "Amiloid Kongo kırmızısı boyasıyla boyanır, polarize ışıkta 'elma yeşili' çift kırınım görülür. Böbrek tutulumu nefrotik sendrom yapar. Kalp tutulumu kardiyomiyopati ve EKG'de düşük voltaj.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Amiloidoz", "Protein Birikimi"],
+      "story_hint": "💡 HİKAYE: Amiloid = Kongo kırmızısı + polarize ışık = elma yeşili → kalp ve böbreğe gizlice saldırır."
+    },
+    {
+      "id": "pflash-096",
+      "question": "Multipl myelomun histolojik ve laboratuvar bulguları nelerdir?",
+      "answer": "[[Plazma hücresi]] çoğalması (Russell cisimciği, saatin camı nükleusu). [[M proteini]] (monoklonal Ig), Bence-Jones proteini (hafif zincir idrarda). [[CRAB]]: hiperkalsemi, Renal yetm., Anemi, Bone lezyonları (litik).",
+      "explanation": "Myelomda kemik iliği %10+ plazma hücresi vardır. Röntgende 'yenilmiş tahta' görünümü. Hiperviskosite, tekrarlayan enfeksiyonlar, amiloidoz komplikasyonları. Bortezomib, lenalidomid tedavide.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Multipl Myelom", "Hematoloji"],
+      "story_hint": "💡 HİKAYE: CRAB = myelomun 4 pençesi → Kalsiyum, Renal, Anemi, Bone = litik delikler."
+    },
+    {
+      "id": "pflash-097",
+      "question": "Polisitemia vera'nın tanı kriterleri ve JAK2 mutasyonunun önemi nedir?",
+      "answer": "[[JAK2 V617F]] mutasyonu (%97): eritrosit bağımsız EPO sinyali → eritrositoz. Tanı: yüksek Hb/Hct, düşük EPO, [[JAK2 V617F]], splenomegali. Komplikasyon: tromboz, Budd-Chiari, AML dönüşümü.",
+      "explanation": "PV kronik miyeloproliferatif neoplazmdır. JAK2 mutasyonu ET ve PMF'de de görülür. Flebotomi + hidroksiüre tedavi. Ruksolitinib JAK inhibitörü.",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Polisitemia Vera", "Hematoloji"],
+      "story_hint": "💡 HİKAYE: JAK2 = EPO olmadan 'büyüyün' dedi → kırmızı kan hücresi kontrolsüz arttı."
+    },
+    {
+      "id": "pflash-098",
+      "question": "Akut lösemide FAB sınıflamasında AML M3'ün özellikleri nelerdir?",
+      "answer": "[[AML M3]] (Akut Promyelositik Lösemi, APML): promyelosit birikimi, [[Auer çomakları]] (füzyon lizosom kristalin), [[DIC]] (granül içeriği → TF), [[t(15;17)]] PML-RARα. [[ATRA]] (all-trans retinoik asit) tedavisi.",
+      "explanation": "APML ATRA tedavisiyle dramatik remisyon sağlar. Auer çomakları sadece myeloid lösemide görülür, lenfoblastik lösemide yoktur. Diferansiasyon sendromu ATRA komplikasyonu.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "APML", "Hematoloji"],
+      "story_hint": "💡 HİKAYE: M3 = Auer çomağı + DIC + t(15;17) → ATRA geldi, mucize yarattı."
+    },
+    {
+      "id": "pflash-099",
+      "question": "İmmün trombositopenik purpura (ITP) ve trombotik trombositopenik purpura (TTP) arasındaki fark nelerdir?",
+      "answer": "[[ITP]]: antitrombosit antikor (GPIIb/IIIa), izole trombositopeni, hemoliz YOK, IVTG/steroid tedavi. [[TTP]]: ADAMTS13 eksikliği → ultra-büyük vWF → trombüs → [[pentad]]: trombositopeni, MAHA, ateş, renal yetm., nörolojik bulgu.",
+      "explanation": "TTP'de plazmaferez acil tedavi. ADAMTS13 aktivitesi <10% tanı koydurur. ITP trombositopeni izole; TTP'de anemi (hemoliz) ve organ tutulumu eşlik eder.",
+      "difficulty": "Zor",
+      "tags": ["Patoloji", "ITP", "TTP", "Hematoloji"],
+      "story_hint": "💡 HİKAYE: ITP = sadece trombosit düşer; TTP = beş organa saldırır (pentad) → plazmaferez."
+    },
+    {
+      "id": "pflash-100",
+      "question": "Sistik fibrozis'in patolojik mekanizması ve organ tutulumları nelerdir?",
+      "answer": "[[CFTR]] klorür kanal mutasyonu (ΔF508 en sık) → viskoz mukus → [[bronşiektazi]], [[rekürren pnömoni]] (Pseudomonas), [[ekzokrin pankreas yetmezliği]] (malabsorpsiyon), [[mekoniyum ileus]] (yenidoğan), infertilite (erkek).",
+      "explanation": "CF en sık yaşamı tehdit eden otozomal resesif hastalıktır (Kafkaslar). Ter testi: yüksek klorür (>60 mEq/L) tanı koydurur. Ivakaftor CFTR potansiyatörü (belirli mutasyonlar için).",
+      "difficulty": "Orta",
+      "tags": ["Patoloji", "Sistik Fibrozis", "Genetik"],
+      "story_hint": "💡 HİKAYE: CFTR bozuldu → mukus kalınlaştı → akciğer, pankreas, intestin tıkandı."
+    }
+  ],
+  "tus_spots": [],
+  "clinical_cases": []
+}

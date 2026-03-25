@@ -54,6 +54,7 @@ class SubjectRegistry {
         'assets/data/anatomi_flash_batch1.json',
         'assets/data/anatomi_prof_100.json',
         'assets/data/anatomi_prof_v2.json',
+        'assets/data/anatomi_prof_v3.json',
       ],
     ),
     SubjectModule(
@@ -135,6 +136,7 @@ class SubjectRegistry {
         'assets/data/mikrobiyoloji_tus_batch2.json',
         'assets/data/mikrobiyoloji_prof_100.json',
         'assets/data/mikrobiyoloji_prof_v2.json',
+        'assets/data/mikrobiyoloji_prof_v3.json',
       ],
     ),
     SubjectModule(
@@ -176,6 +178,7 @@ class SubjectRegistry {
         'assets/data/patoloji_flash_batch1.json',
         'assets/data/patoloji_prof_100.json',
         'assets/data/patoloji_prof_v2.json',
+        'assets/data/patoloji_prof_v3.json',
       ],
     ),
     SubjectModule(

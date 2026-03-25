@@ -1,4 +1,6 @@
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_theme.dart';
 import '../models/user_model.dart';
@@ -6,6 +8,7 @@ import '../models/progress_model.dart';
 import '../models/subject_registry.dart';
 import '../services/data_service.dart';
 import '../services/spaced_repetition_service.dart';
+import '../services/specialty_score_service.dart';
 import '../services/leaderboard_service.dart';
 
 class ProgressAnalyticsScreen extends StatefulWidget {
@@ -103,6 +106,8 @@ class _ProgressAnalyticsScreenState extends State<ProgressAnalyticsScreen> {
                 children: [
                   _buildCountdownCard(daysRemaining, isDark),
                   const SizedBox(height: 20),
+                  _buildReadinessGauge(isDark),
+                  const SizedBox(height: 20),
                   _buildScorePredictionCard(predictedIncrease, isDark),
                   const SizedBox(height: 28),
                   Text(
@@ -155,6 +160,109 @@ class _ProgressAnalyticsScreenState extends State<ProgressAnalyticsScreen> {
           ),
         ),
       ),
+    );
+  }
+
+  // ── Readiness Gauge ────────────────────────────────────────────────────────
+  Widget _buildReadinessGauge(bool isDark) {
+    return FutureBuilder<List<_SubjectMasteryData>>(
+      future: _masteryFuture,
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return Container(
+            height: 220,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30),
+              color: isDark ? AppTheme.surface : Colors.white,
+              border: Border.all(
+                  color: AppTheme.coral.withValues(alpha: 0.2)),
+            ),
+            child: const Center(
+              child: CircularProgressIndicator(
+                  color: AppTheme.coral, strokeWidth: 2.5),
+            ),
+          );
+        }
+
+        final masteryData = snapshot.data ?? [];
+
+        // ── Rates ──────────────────────────────────────────────────────────
+        final totalCards =
+            masteryData.fold(0, (sum, s) => sum + s.total);
+        final masteredCards =
+            masteryData.fold(0, (sum, s) => sum + s.done);
+        final masteryRate =
+            totalCards > 0 ? (masteredCards / totalCards).clamp(0.0, 1.0) : 0.0;
+
+        final accuracyRate = widget.progress.totalCasesAttempted > 0
+            ? (widget.progress.correctAnswers /
+                    widget.progress.totalCasesAttempted)
+                .clamp(0.0, 1.0)
+            : 0.0;
+
+        final streakRate =
+            (widget.progress.currentStreak / 30).clamp(0.0, 1.0);
+
+        // ── Readiness Score (0-100) ─────────────────────────────────────────
+        final readiness =
+            masteryRate * 0.55 + accuracyRate * 0.35 + streakRate * 0.10;
+        final readinessScore = (readiness * 100).round();
+
+        // ── Projected TUS Score ─────────────────────────────────────────────
+        final projectedScore = widget.progress.baseScore +
+            (widget.progress.targetScore - widget.progress.baseScore) *
+                readiness;
+
+        // ── Target branch ───────────────────────────────────────────────────
+        final hasTargetBranch =
+            widget.user.targetBranch != 'Henüz Seçilmedi' &&
+                widget.user.targetBranch.isNotEmpty;
+        final branchScore = hasTargetBranch
+            ? SpecialtyScoreService().getScoreFor(widget.user.targetBranch)
+            : null;
+        final targetBranchAvg =
+            branchScore?.averageScore ?? widget.progress.targetScore;
+
+        // ── Nets needed ─────────────────────────────────────────────────────
+        final scoreGap = (targetBranchAvg - projectedScore).clamp(0.0, 50.0);
+        final netsNeeded = (scoreGap / 0.05).round();
+
+        // ── Readiness label ─────────────────────────────────────────────────
+        final String readinessLabel;
+        final Color readinessColor;
+        if (readinessScore >= 80) {
+          readinessLabel = 'Mükemmel';
+          readinessColor = AppTheme.success;
+        } else if (readinessScore >= 60) {
+          readinessLabel = 'İyi';
+          readinessColor = AppTheme.cyan;
+        } else if (readinessScore >= 40) {
+          readinessLabel = 'Orta';
+          readinessColor = AppTheme.neonGold;
+        } else {
+          readinessLabel = 'Başlangıç';
+          readinessColor = AppTheme.coral;
+        }
+
+        return _ReadinessGaugeCard(
+          isDark: isDark,
+          readinessScore: readinessScore,
+          readinessLabel: readinessLabel,
+          readinessColor: readinessColor,
+          masteryRate: masteryRate,
+          accuracyRate: accuracyRate,
+          streakRate: streakRate,
+          masteredCards: masteredCards,
+          totalCards: totalCards,
+          projectedScore: projectedScore,
+          targetBranchAvg: targetBranchAvg,
+          targetBranch:
+              hasTargetBranch ? widget.user.targetBranch : null,
+          netsNeeded: netsNeeded,
+          currentStreak: widget.progress.currentStreak,
+          targetScore: widget.progress.targetScore,
+        );
+      },
     );
   }
 
@@ -648,6 +756,545 @@ class _SubjectMasteryData {
   });
 
   double get percent => total > 0 ? done / total : 0.0;
+}
+
+// ╔══════════════════════════════════════════════════════════════════════════╗
+// ║  Readiness Gauge — 3-Halka Göstergesi (Apple Watch tarzı)                ║
+// ╚══════════════════════════════════════════════════════════════════════════╝
+
+class _ReadinessGaugeCard extends StatelessWidget {
+  final bool isDark;
+  final int readinessScore;
+  final String readinessLabel;
+  final Color readinessColor;
+  final double masteryRate;
+  final double accuracyRate;
+  final double streakRate;
+  final int masteredCards;
+  final int totalCards;
+  final double projectedScore;
+  final double targetBranchAvg;
+  final String? targetBranch;
+  final int netsNeeded;
+  final int currentStreak;
+  final double targetScore;
+
+  const _ReadinessGaugeCard({
+    required this.isDark,
+    required this.readinessScore,
+    required this.readinessLabel,
+    required this.readinessColor,
+    required this.masteryRate,
+    required this.accuracyRate,
+    required this.streakRate,
+    required this.masteredCards,
+    required this.totalCards,
+    required this.projectedScore,
+    required this.targetBranchAvg,
+    this.targetBranch,
+    required this.netsNeeded,
+    required this.currentStreak,
+    required this.targetScore,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final cardBg = isDark ? AppTheme.surface : Colors.white;
+    final textColor =
+        isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
+    final subColor =
+        isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+
+    return Container(
+      decoration: BoxDecoration(
+        color: cardBg,
+        borderRadius: BorderRadius.circular(30),
+        border: Border.all(
+          color: readinessColor.withValues(alpha: 0.3),
+          width: 1.5,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: readinessColor.withValues(alpha: isDark ? 0.18 : 0.1),
+            blurRadius: 32,
+            offset: const Offset(0, 10),
+          ),
+          BoxShadow(
+            color: AppTheme.violet.withValues(alpha: isDark ? 0.1 : 0.05),
+            blurRadius: 20,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Column(
+        children: [
+          // ── Header ──────────────────────────────────────────────────────
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 18, 20, 0),
+            child: Row(
+              children: [
+                Text(
+                  'SINAV HAZIRLIK SEVİYESİ',
+                  style: GoogleFonts.inter(
+                    color: subColor,
+                    fontSize: 11,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 1.2,
+                  ),
+                ),
+                const Spacer(),
+                Container(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: readinessColor.withValues(alpha: 0.15),
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(
+                        color: readinessColor.withValues(alpha: 0.4)),
+                  ),
+                  child: Text(
+                    readinessLabel.toUpperCase(),
+                    style: GoogleFonts.inter(
+                      color: readinessColor,
+                      fontSize: 10,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: 0.8,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          // ── Gauge + Legend ───────────────────────────────────────────────
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 16, 20, 16),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                // 3-Ring Gauge
+                SizedBox(
+                  width: 160,
+                  height: 160,
+                  child: TweenAnimationBuilder<double>(
+                    tween: Tween(begin: 0.0, end: 1.0),
+                    duration: const Duration(milliseconds: 1600),
+                    curve: Curves.easeOutCubic,
+                    builder: (_, progress, __) {
+                      return Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          CustomPaint(
+                            size: const Size(160, 160),
+                            painter: _ReadinessRingPainter(
+                              masteryRate: masteryRate * progress,
+                              accuracyRate: accuracyRate * progress,
+                              streakRate: streakRate * progress,
+                            ),
+                          ),
+                          // Center text
+                          Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                '$readinessScore%',
+                                style: GoogleFonts.inter(
+                                  color: textColor,
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.w900,
+                                  height: 1.0,
+                                ),
+                              ),
+                              const SizedBox(height: 2),
+                              Text(
+                                'HAZIRLIK',
+                                style: GoogleFonts.inter(
+                                  color: subColor,
+                                  fontSize: 9,
+                                  fontWeight: FontWeight.w800,
+                                  letterSpacing: 1.5,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      );
+                    },
+                  ),
+                ),
+
+                const SizedBox(width: 20),
+
+                // Legend
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _RingLegend(
+                        color: AppTheme.coral,
+                        icon: Icons.style_rounded,
+                        label: 'Hakimiyet',
+                        valueText:
+                            '${(masteryRate * 100).toInt()}%  ($masteredCards/$totalCards)',
+                        isDark: isDark,
+                      ),
+                      const SizedBox(height: 14),
+                      _RingLegend(
+                        color: AppTheme.cyan,
+                        icon: Icons.quiz_rounded,
+                        label: 'Doğruluk',
+                        valueText: '${(accuracyRate * 100).toInt()}%',
+                        isDark: isDark,
+                      ),
+                      const SizedBox(height: 14),
+                      _RingLegend(
+                        color: AppTheme.violet,
+                        icon: Icons.local_fire_department_rounded,
+                        label: 'Seri',
+                        valueText: '$currentStreak gün',
+                        isDark: isDark,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          // ── Divider ──────────────────────────────────────────────────────
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Container(
+              height: 1,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    readinessColor.withValues(alpha: 0.3),
+                    AppTheme.violet.withValues(alpha: 0.3),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          // ── Projection Card ───────────────────────────────────────────────
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Container(
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(18),
+                gradient: LinearGradient(
+                  colors: isDark
+                      ? [
+                          AppTheme.coral.withValues(alpha: 0.08),
+                          AppTheme.violet.withValues(alpha: 0.08),
+                        ]
+                      : [
+                          AppTheme.coral.withValues(alpha: 0.05),
+                          AppTheme.violet.withValues(alpha: 0.05),
+                        ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                border: Border.all(
+                    color: AppTheme.coral.withValues(alpha: 0.2)),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Projected score row
+                  Row(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(7),
+                        decoration: BoxDecoration(
+                          color: AppTheme.coral.withValues(alpha: 0.15),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: const Icon(Icons.track_changes_rounded,
+                            color: AppTheme.coral, size: 16),
+                      ),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: RichText(
+                          text: TextSpan(
+                            style: GoogleFonts.inter(
+                                color: isDark
+                                    ? AppTheme.textSecondary
+                                    : AppTheme.lightTextSecondary,
+                                fontSize: 13),
+                            children: [
+                              const TextSpan(
+                                  text: 'Tahmini TUS Puanın:  '),
+                              TextSpan(
+                                text: projectedScore.toStringAsFixed(1),
+                                style: GoogleFonts.inter(
+                                  color: AppTheme.coral,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w900,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  // Target branch row
+                  if (targetBranch != null) ...[
+                    const SizedBox(height: 10),
+                    Row(
+                      children: [
+                        const SizedBox(width: 39),
+                        Expanded(
+                          child: Text(
+                            'Hedef branş: $targetBranch  '
+                            '(ort. ${targetBranchAvg.toStringAsFixed(0)} puan)',
+                            style: GoogleFonts.inter(
+                              color: isDark
+                                  ? AppTheme.textSecondary
+                                  : AppTheme.lightTextSecondary,
+                              fontSize: 12,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+
+                  // Nets needed row
+                  if (netsNeeded > 0) ...[
+                    const SizedBox(height: 12),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 12, vertical: 10),
+                      decoration: BoxDecoration(
+                        color: AppTheme.neonGold.withValues(alpha: 0.1),
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(
+                            color:
+                                AppTheme.neonGold.withValues(alpha: 0.35)),
+                      ),
+                      child: Row(
+                        children: [
+                          const Icon(Icons.flag_rounded,
+                              color: AppTheme.neonGold, size: 18),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: Text(
+                              '${targetBranchAvg.toStringAsFixed(0)} puana çıkmak için '
+                              '~$netsNeeded net daha yapman lazım',
+                              style: GoogleFonts.inter(
+                                color: AppTheme.neonGold,
+                                fontSize: 12,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ] else if (netsNeeded == 0 && projectedScore >= targetBranchAvg) ...[
+                    const SizedBox(height: 12),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 12, vertical: 10),
+                      decoration: BoxDecoration(
+                        color: AppTheme.success.withValues(alpha: 0.1),
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(
+                            color:
+                                AppTheme.success.withValues(alpha: 0.35)),
+                      ),
+                      child: Row(
+                        children: [
+                          const Icon(Icons.verified_rounded,
+                              color: AppTheme.success, size: 18),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: Text(
+                              'Hedefe ulaştın! Mevcut performansın yeterli.',
+                              style: GoogleFonts.inter(
+                                color: AppTheme.success,
+                                fontSize: 12,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    )
+        .animate()
+        .fadeIn(duration: 600.ms, delay: 200.ms)
+        .slideY(begin: 0.08, end: 0, curve: Curves.easeOutExpo);
+  }
+}
+
+// ── Ring Legend Row ────────────────────────────────────────────────────────
+class _RingLegend extends StatelessWidget {
+  final Color color;
+  final IconData icon;
+  final String label;
+  final String valueText;
+  final bool isDark;
+
+  const _RingLegend({
+    required this.color,
+    required this.icon,
+    required this.label,
+    required this.valueText,
+    required this.isDark,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Container(
+          width: 12,
+          height: 12,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: color,
+            boxShadow: [
+              BoxShadow(
+                  color: color.withValues(alpha: 0.6), blurRadius: 6)
+            ],
+          ),
+        ),
+        const SizedBox(width: 8),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                label,
+                style: GoogleFonts.inter(
+                  color: isDark
+                      ? AppTheme.textSecondary
+                      : AppTheme.lightTextSecondary,
+                  fontSize: 11,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              Text(
+                valueText,
+                style: GoogleFonts.inter(
+                  color: color,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+// ── 3-Ring CustomPainter ───────────────────────────────────────────────────
+class _ReadinessRingPainter extends CustomPainter {
+  final double masteryRate;
+  final double accuracyRate;
+  final double streakRate;
+
+  static const double _startDeg = 150.0; // 7 o'clock start (like Apple Watch)
+  static const double _sweepDeg = 240.0; // 240° total sweep
+
+  const _ReadinessRingPainter({
+    required this.masteryRate,
+    required this.accuracyRate,
+    required this.streakRate,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    const ringStroke = 13.0;
+    const ringGap    = 7.0;
+    final cx = size.width / 2;
+    final cy = size.height / 2;
+
+    // Outer radius = half the canvas minus padding
+    final r1 = size.shortestSide / 2 - 4;
+    final r2 = r1 - ringStroke - ringGap;
+    final r3 = r2 - ringStroke - ringGap;
+
+    _drawRing(canvas, cx, cy, r1, masteryRate, AppTheme.coral);
+    _drawRing(canvas, cx, cy, r2, accuracyRate, AppTheme.cyan);
+    _drawRing(canvas, cx, cy, r3, streakRate, AppTheme.violet);
+  }
+
+  void _drawRing(
+      Canvas canvas, double cx, double cy, double r, double value, Color color) {
+    final start  = (_startDeg) * math.pi / 180;
+    final sweep  = _sweepDeg  * math.pi / 180;
+    final rect   = Rect.fromCircle(center: Offset(cx, cy), radius: r);
+
+    // Track
+    canvas.drawArc(
+      rect,
+      start,
+      sweep,
+      false,
+      Paint()
+        ..color      = color.withValues(alpha: 0.14)
+        ..style      = PaintingStyle.stroke
+        ..strokeWidth = 13.0
+        ..strokeCap  = StrokeCap.round,
+    );
+
+    if (value <= 0) return;
+
+    final fillSweep = sweep * value.clamp(0.0, 1.0);
+
+    // Glow
+    canvas.drawArc(
+      rect,
+      start,
+      fillSweep,
+      false,
+      Paint()
+        ..color      = color.withValues(alpha: 0.35)
+        ..style      = PaintingStyle.stroke
+        ..strokeWidth = 19.0
+        ..strokeCap  = StrokeCap.round
+        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 5),
+    );
+
+    // Fill
+    canvas.drawArc(
+      rect,
+      start,
+      fillSweep,
+      false,
+      Paint()
+        ..shader     = SweepGradient(
+            startAngle: start,
+            endAngle: start + fillSweep,
+            colors: [color, color.withValues(alpha: 0.7)],
+          ).createShader(rect)
+        ..style      = PaintingStyle.stroke
+        ..strokeWidth = 13.0
+        ..strokeCap  = StrokeCap.round,
+    );
+  }
+
+  @override
+  bool shouldRepaint(_ReadinessRingPainter old) =>
+      old.masteryRate  != masteryRate  ||
+      old.accuracyRate != accuracyRate ||
+      old.streakRate   != streakRate;
 }
 
 class _ChartPainter extends CustomPainter {

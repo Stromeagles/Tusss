@@ -1,1073 +1,137 @@
 {
-  "subject": "Mikro",
+  "subject": "Mikrobiyoloji",
   "type": "prof_v3",
   "source": "mikrobiyoloji_100_prof_v3.txt",
   "cards": [
     {
-      "id": "mikro_prof_v3-001",
-      "question": "Bakteri hücre duvarında peptidoglikan sentezinin son basamağı olan \"transpeptidasyonu\" inhibe eden ana antibiyotik grubu hangisidir?",
+      "id": "mikro_pv3-001",
+      "question": "Özellikle çocuklarda görülen \"Hücresel İmmün Yetmezlik\" durumlarında (örn: DiGeorge Sendromu) hangi aşının uygulanması kontrendikedir?",
       "options": [
-        "A) Beta-laktamlar (Penisilinler, Sefalosporinler)",
-        "B) Aminoglikozidler",
-        "C) Tetrasiklinler",
-        "D) Kinolonlar",
-        "E) Makrolidler"
+        "A) BCG ve KKK (Canlı aşılar)",
+        "B) Hepatit B",
+        "C) Tetanos",
+        "D) Kuduz",
+        "E) Boğmaca (Cansız)"
       ],
-      "correct_answer": "A) Beta-laktamlar (Penisilinler, Sefalosporinler)",
-      "explanation": "Beta-laktam antibiyotikler, transpeptidaz enzimlerine (PBP - Penisilin Bağlayan Protein) bağlanarak çapraz bağ oluşumunu engeller ve bakterinin parçalanmasına (lizis) neden olurlar."
+      "correct_answer": "A) BCG ve KKK (Canlı aşılar)",
+      "explanation": "Hücresel bağışıklığı zayıf olan bireylerde canlı aşılar (varicella, kızamık, BCG vb.) yaygın enfeksiyona neden olabileceği için yapılmamalıdır."
     },
     {
-      "id": "mikro_prof_v3-002",
-      "question": "\"Toksik Şok Sendromu\"na yol açan ve bir \"Süperantijen\" olarak davranan toksin hangi bakteriye aittir?",
+      "id": "mikro_pv3-002",
+      "question": "\"Mavi cerahat\" (blue pus) oluşturan ve kistik fibrozis hastalarının akciğerlerinde kronik enfeksiyona yol açan non-fermentatif bakteri hangisidir?",
       "options": [
-        "A) Staphylococcus aureus (TSST-1)",
-        "B) E. coli",
-        "C) Pseudomonas aeruginosa",
-        "D) Neisseria meningitidis",
-        "E) Bacillus cereus"
+        "A) Pseudomonas aeruginosa",
+        "B) Klebsiella pneumoniae",
+        "C) Burkholderia cepacia",
+        "D) Stenotrophomonas maltophilia",
+        "E) Acinetobacter baumannii"
       ],
-      "correct_answer": "A) Staphylococcus aureus (TSST-1)",
-      "explanation": "TSST-1 toksini, MHC-II ve T-hücre reseptörünü spesifik olmayarak (yoğun şekilde) uyarır ve aşırı sitokin salınımıyla şoka neden olur."
+      "correct_answer": "A) Pseudomonas aeruginosa",
+      "explanation": "Pseudomonas, ürettiği piyosiyanin pigmenti ile mavi-yeşil renk oluşturur ve multirezistan bir fırsatçıdır."
     },
     {
-      "id": "mikro_prof_v3-003",
-      "question": "Aşağıdaki virüslerden hangisi \"segmentli\" bir RNA genomuna sahiptir ve bu sayede antijenik değişimlere (shift) çok müsaittir?",
+      "id": "mikro_pv3-003",
+      "question": "HIV tanısında \"tarama\" testi olarak kullanılan ELISA'da saptanan antikorlar genellikle hangi viral proteine karşıdır?",
       "options": [
-        "A) HIV",
-        "B) Influenza Virüsü",
-        "C) Hepatit C Virüsü",
-        "D) Kızamık Virüsü",
-        "E) Kuduz Virüsü"
+        "A) gp120 ve gp41",
+        "B) p24",
+        "C) Reverse Transcriptase",
+        "D) Integrase",
+        "E) Protease"
       ],
-      "correct_answer": "B) Influenza Virüsü",
-      "explanation": "İnfluenza virüsünün 8 segmentli genomu vardır. Farklı virüs suşları arasındaki genetik değişimler (reassortment) büyük pandemilere yol açan antijenik shift'lere neden olur."
+      "correct_answer": "A) gp120 ve gp41",
+      "explanation": "Tarama testlerinde zarf glikoproteinlerine (gp120/41) karşı antikorlar aranır. p24 ise erken dönemde saptanan antijendir."
     },
     {
-      "id": "mikro_prof_v3-004",
-      "question": "\"Menenjit\" şüphesiyle alınan BOS örneğinde Gram-negatif diplokok görülmesi öncelikle hangi etkeni düşündürür?",
+      "id": "mikro_pv3-004",
+      "question": "Midede üreaz aktivitesi ile amonyak oluşturarak asit ortamda hayatta kalan Gram negatif spiral bakteri hangisidir?",
       "options": [
-        "A) Neisseria meningitidis (Meningokok)",
-        "B) Streptococcus pneumoniae (Pnomokok)",
-        "C) Haemophilus influenzae",
-        "D) Listeria monocytogenes",
-        "E) Cryptococcus neoformans"
+        "A) Helicobacter pylori",
+        "B) Campylobacter jejuni",
+        "C) Vibrio cholerae",
+        "D) Salmonella typhi",
+        "E) Shigella sonnei"
       ],
-      "correct_answer": "A) Neisseria meningitidis (Meningokok)",
-      "explanation": "N. meningitidis, karakteristik Gram-negatif diplokok görüntüsüyle tanınır. S. pneumoniae ise Gram-pozitif diplokoktur."
+      "correct_answer": "A) Helicobacter pylori",
+      "explanation": "H. pylori, üreaz enzimi sayesinde çevresinde alkali bir bulut oluşturarak mide asidinden korunur ve ülser/kanser riskini artırır."
     },
     {
-      "id": "mikro_prof_v3-005",
-      "question": "Sıtma (Malarya) tanısında kullanılan \"kalın damla\" ve \"ince yayma\" preparatları hangi boya ile boyanır?",
+      "id": "mikro_pv3-005",
+      "question": "Aşağıdaki antibiyotiklerden hangisi bakteri ribozomunun 50S alt birimine bağlanarak \"peptidil transferaz\" enzimini inhibe eder?",
       "options": [
-        "A) Gram boyası",
-        "B) EZN boyası",
-        "C) Giemsa boyası",
-        "D) Metilen mavisi",
-        "E) Çini mürekkebi"
+        "A) Kloramfenikol",
+        "B) Tetrasiklin",
+        "C) Gentamisin",
+        "D) Eritromisin",
+        "E) Linezolid"
       ],
-      "correct_answer": "C) Giemsa boyası",
-      "explanation": "Kan parazitlerinin (Plasmodium, Leishmania vb.) morfolojik tanısında Giemsa boyası altın standarttır."
+      "correct_answer": "A) Kloramfenikol",
+      "explanation": "Kloramfenikol 50S'e bağlanıp peptit bağı oluşumunu engeller. Eritromisin ise translokasyonu engeller."
     },
     {
-      "id": "mikro_prof_v3-006",
-      "question": "Özellikle hamile kadınlarda görüldüğünde %20'lere varan yüksek mortalite (ölüm) riski taşıyan hepatit virüsü hangisidir?",
+      "id": "mikro_pv3-006",
+      "question": "\"Karanlık alan mikroskobunda\" karakteristik hareketleri ile tanınan, Sifiliz (Frengi) etkeni spiroket hangisidir?",
       "options": [
-        "A) HAV",
-        "B) HBV",
-        "C) HCV",
-        "D) HEV",
-        "E) HDV"
+        "A) Treponema pallidum",
+        "B) Borrelia burgdorferi",
+        "C) Leptospira interrogans",
+        "D) Spirillum minus",
+        "E) Ehrlichia chaffeensis"
       ],
-      "correct_answer": "D) HEV",
-      "explanation": "Hepatit E, gebelerde fulminan hepatit (ağır karaciğer yetmezliği) riski nedeniyle çok tehlikelidir."
+      "correct_answer": "A) Treponema pallidum",
+      "explanation": "T. pallidum rutin laboratuvar boyalarıyla boyanmaz; primer şankır evresinde karanlık alan mikroskopisi ile hareketli spiroketler görülerek tanı konur."
     },
     {
-      "id": "mikro_prof_v3-007",
-      "question": "Aşağıdaki mantarlardan hangisi fırsatçı bir enfeksiyon yapar ve karakteristik \"yalancı hif\" (psödohif) oluşturur?",
+      "id": "mikro_pv3-007",
+      "question": "Mantar hücre membranında bulunan \"Ergosterol\" sentezini \"squlene epoxidase\" enzimini inhibe ederek engelleyen antifungal ilaç grubu hangisidir?",
       "options": [
-        "A) Aspergillus",
-        "B) Candida albicans",
-        "C) Rhizopus",
-        "D) Microsporum",
-        "E) Histoplasma"
+        "A) Allilaminler (Terbinafin)",
+        "B) Azoller (Flukonazol)",
+        "C) Poliyenler (Amfoterisin B)",
+        "D) Ekinokandinler (Kaspofungin)",
+        "E) Flusitozin"
       ],
-      "correct_answer": "B) Candida albicans",
-      "explanation": "Candida, hem maya hem de psödohif formunda görülebilir. Germ tüp testi ile tanısı kolaylaştırılır."
+      "correct_answer": "A) Allilaminler (Terbinafin)",
+      "explanation": "Terbinafin skualen birikimine neden olarak fungisidal etki yapar. Azoller ise 14-alfa demetilaz enzimini inhibe eder."
     },
     {
-      "id": "mikro_prof_v3-008",
-      "question": "Penisilin alerjisi olan bir hastada \"beta-hemolitik streptokok\" enfeksiyonu için alternatif olarak en sık hangi grup ilaç tercih edilir?",
+      "id": "mikro_pv3-008",
+      "question": "Özellikle pirinçli gıdaların oda sıcaklığında bekletilmesiyle oluşan \"emetik (kusma) tip\" gıda zehirlenmesinden hangi bakterinin ısıya dayanıklı toksini sorumludur?",
       "options": [
-        "A) Aminoglikozidler",
-        "B) Makrolidler (Eritromisin, Klaritromisin)",
-        "C) Kinolonlar",
-        "D) Sülfonamidler",
-        "E) Polimiksinler"
+        "A) Bacillus cereus",
+        "B) Staphylococcus aureus",
+        "C) Clostridium botulinum",
+        "D) Salmonella enteritidis",
+        "E) Listeria monocytogenes"
       ],
-      "correct_answer": "B) Makrolidler (Eritromisin, Klaritromisin)",
-      "explanation": "Penisilin alerjisi durumunda Gram-pozitif kok enfeksiyonları için makrolidler güvenli bir alternatiftir."
+      "correct_answer": "A) Bacillus cereus",
+      "explanation": "B. cereus pirinçte çoğalabilir ve ürettiği ısıya dirençli toksin, gıda tüketildikten 1-5 saat sonra kusmaya neden olur."
     },
     {
-      "id": "mikro_prof_v3-009",
-      "question": "\"Gazlı Gangren\" tablosundan sorumlu olan ve lesitinaz (alfa toksin) üreten anaerobik bakteri hangisidir?",
+      "id": "mikro_pv3-009",
+      "question": "Hepatit B enfeksiyonunda \"pencere dönemi\" (window period) sırasında kanda saptanan tek serolojik işaret hangisidir?",
       "options": [
-        "A) Clostridium botulinum",
-        "B) Clostridium tetani",
-        "C) Clostridium perfringens",
-        "D) Bacillus anthracis",
-        "E) Bacteroides fragilis"
+        "A) Anti-HBc IgM",
+        "B) HBsAg",
+        "C) Anti-HBs",
+        "D) HBeAg",
+        "E) Anti-HBe"
       ],
-      "correct_answer": "C) Clostridium perfringens",
-      "explanation": "C. perfringens, dokularda hızlı nekroz ve gaz oluşumu yapan, alfa toksini ile hücre membranlarını yıkan bir anaerobdur."
+      "correct_answer": "A) Anti-HBc IgM",
+      "explanation": "HBsAg kaybolup anti-HBs'nin henüz oluşmadığı dönemde core (çekirdek) antikoru olan Anti-HBc IgM tanıda kritiktir."
     },
     {
-      "id": "mikro_prof_v3-010",
-      "question": "Aşağıdakilerden hangisi \"canlı (atenué)\" bir aşıdır?",
+      "id": "mikro_pv3-010",
+      "question": "Difteri (Kuşpalazı) etkeni C. diphtheriae'nin toksin üretme yeteneği kazanması için hangi olayın gerçekleşmesi şarttır?",
       "options": [
-        "A) Hepatit B aşısı",
-        "B) Kuduz aşısı",
-        "C) BCG (Tüberküloz) aşısı",
-        "D) Tetanos toksoidi",
-        "E) IPV (İnaktif Polio)"
+        "A) Lizojenik faz enfeksiyonu (Beta-faj)",
+        "B) Plazmid aktarımı",
+        "C) Transformasyon",
+        "D) Transpozisyon",
+        "E) Mutasyon"
       ],
-      "correct_answer": "C) BCG (Tüberküloz) aşısı",
-      "explanation": "BCG, Kızamık-Kızamıkçık-Kabakulak (KKK) ve Oral Polio (Sabin) canlı aşılardır. İmmün yetmezliği olanlara uygulanmazlar."
-    },
-    {
-      "id": "mikro_prof_v3-011",
-      "question": "Bakterilerin hücre duvarında bulunan peptidoglikan sentezinin son basamağı olan \"transpeptidasyonu\" inhibe eden ana antibiyotik grubu hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Beta-laktamlar (Penisilinler, Sefalosporinler)",
-        "B) Aminoglikozidler",
-        "C) Tetrasiklinler",
-        "D) Kinolonlar",
-        "E) Makrolidler"
-      ],
-      "correct_answer": "A) Beta-laktamlar (Penisilinler, Sefalosporinler)",
-      "explanation": "Beta-laktam antibiyotikler, transpeptidaz enzimlerine (PBP - Penisilin Bağlayan Protein) bağlanarak çapraz bağ oluşumunu engeller ve bakterinin parçalanmasına (lizis) neden olurlar."
-    },
-    {
-      "id": "mikro_prof_v3-012",
-      "question": "\"Toksik Şok Sendromu\"na yol açan ve bir \"Süperantijen\" olarak davranan toksin hangi bakteriye aittir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Staphylococcus aureus (TSST-1)",
-        "B) E. coli",
-        "C) Pseudomonas aeruginosa",
-        "D) Neisseria meningitidis",
-        "E) Bacillus cereus"
-      ],
-      "correct_answer": "A) Staphylococcus aureus (TSST-1)",
-      "explanation": "TSST-1 toksini, MHC-II ve T-hücre reseptörünü spesifik olmayarak (yoğun şekilde) uyarır ve aşırı sitokin salınımıyla şoka neden olur."
-    },
-    {
-      "id": "mikro_prof_v3-013",
-      "question": "Aşağıdaki virüslerden hangisi \"segmentli\" bir RNA genomuna sahiptir ve bu sayede antijenik değişimlere (shift) çok müsaittir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) HIV",
-        "B) Influenza Virüsü",
-        "C) Hepatit C Virüsü",
-        "D) Kızamık Virüsü",
-        "E) Kuduz Virüsü"
-      ],
-      "correct_answer": "B) Influenza Virüsü",
-      "explanation": "İnfluenza virüsünün 8 segmentli genomu vardır. Farklı virüs suşları arasındaki genetik değişimler (reassortment) büyük pandemilere yol açan antijenik shift'lere neden olur."
-    },
-    {
-      "id": "mikro_prof_v3-014",
-      "question": "\"Menenjit\" şüphesiyle alınan BOS örneğinde Gram-negatif diplokok görülmesi öncelikle hangi etkeni düşündürür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Neisseria meningitidis (Meningokok)",
-        "B) Streptococcus pneumoniae (Pnomokok)",
-        "C) Haemophilus influenzae",
-        "D) Listeria monocytogenes",
-        "E) Cryptococcus neoformans"
-      ],
-      "correct_answer": "A) Neisseria meningitidis (Meningokok)",
-      "explanation": "N. meningitidis, karakteristik Gram-negatif diplokok görüntüsüyle tanınır. S. pneumoniae ise Gram-pozitif diplokoktur."
-    },
-    {
-      "id": "mikro_prof_v3-015",
-      "question": "Sıtma (Malarya) tanısında kullanılan \"kalın damla\" ve \"ince yayma\" preparatları hangi boya ile boyanır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Gram boyası",
-        "B) EZN boyası",
-        "C) Giemsa boyası",
-        "D) Metilen mavisi",
-        "E) Çini mürekkebi"
-      ],
-      "correct_answer": "C) Giemsa boyası",
-      "explanation": "Kan parazitlerinin (Plasmodium, Leishmania vb.) morfolojik tanısında Giemsa boyası altın standarttır."
-    },
-    {
-      "id": "mikro_prof_v3-016",
-      "question": "Özellikle hamile kadınlarda görüldüğünde %20'lere varan yüksek mortalite (ölüm) riski taşıyan hepatit virüsü hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) HAV",
-        "B) HBV",
-        "C) HCV",
-        "D) HEV",
-        "E) HDV"
-      ],
-      "correct_answer": "D) HEV",
-      "explanation": "Hepatit E, gebelerde fulminan hepatit (ağır karaciğer yetmezliği) riski nedeniyle çok tehlikelidir."
-    },
-    {
-      "id": "mikro_prof_v3-017",
-      "question": "Aşağıdaki mantarlardan hangisi fırsatçı bir enfeksiyon yapar ve karakteristik \"yalancı hif\" (psödohif) oluşturur? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Aspergillus",
-        "B) Candida albicans",
-        "C) Rhizopus",
-        "D) Microsporum",
-        "E) Histoplasma"
-      ],
-      "correct_answer": "B) Candida albicans",
-      "explanation": "Candida, hem maya hem de psödohif formunda görülebilir. Germ tüp testi ile tanısı kolaylaştırılır."
-    },
-    {
-      "id": "mikro_prof_v3-018",
-      "question": "Penisilin alerjisi olan bir hastada \"beta-hemolitik streptokok\" enfeksiyonu için alternatif olarak en sık hangi grup ilaç tercih edilir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Aminoglikozidler",
-        "B) Makrolidler (Eritromisin, Klaritromisin)",
-        "C) Kinolonlar",
-        "D) Sülfonamidler",
-        "E) Polimiksinler"
-      ],
-      "correct_answer": "B) Makrolidler (Eritromisin, Klaritromisin)",
-      "explanation": "Penisilin alerjisi durumunda Gram-pozitif kok enfeksiyonları için makrolidler güvenli bir alternatiftir."
-    },
-    {
-      "id": "mikro_prof_v3-019",
-      "question": "\"Gazlı Gangren\" tablosundan sorumlu olan ve lesitinaz (alfa toksin) üreten anaerobik bakteri hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Clostridium botulinum",
-        "B) Clostridium tetani",
-        "C) Clostridium perfringens",
-        "D) Bacillus anthracis",
-        "E) Bacteroides fragilis"
-      ],
-      "correct_answer": "C) Clostridium perfringens",
-      "explanation": "C. perfringens, dokularda hızlı nekroz ve gaz oluşumu yapan, alfa toksini ile hücre membranlarını yıkan bir anaerobdur."
-    },
-    {
-      "id": "mikro_prof_v3-020",
-      "question": "Aşağıdakilerden hangisi \"canlı (atenué)\" bir aşıdır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Hepatit B aşısı",
-        "B) Kuduz aşısı",
-        "C) BCG (Tüberküloz) aşısı",
-        "D) Tetanos toksoidi",
-        "E) IPV (İnaktif Polio)"
-      ],
-      "correct_answer": "C) BCG (Tüberküloz) aşısı",
-      "explanation": "BCG, Kızamık-Kızamıkçık-Kabakulak (KKK) ve Oral Polio (Sabin) canlı aşılardır. İmmün yetmezliği olanlara uygulanmazlar."
-    },
-    {
-      "id": "mikro_prof_v3-021",
-      "question": "Bakterilerin hücre duvarında bulunan peptidoglikan sentezinin son basamağı olan \"transpeptidasyonu\" inhibe eden ana antibiyotik grubu hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Beta-laktamlar (Penisilinler, Sefalosporinler)",
-        "B) Aminoglikozidler",
-        "C) Tetrasiklinler",
-        "D) Kinolonlar",
-        "E) Makrolidler"
-      ],
-      "correct_answer": "A) Beta-laktamlar (Penisilinler, Sefalosporinler)",
-      "explanation": "Beta-laktam antibiyotikler, transpeptidaz enzimlerine (PBP - Penisilin Bağlayan Protein) bağlanarak çapraz bağ oluşumunu engeller ve bakterinin parçalanmasına (lizis) neden olurlar."
-    },
-    {
-      "id": "mikro_prof_v3-022",
-      "question": "\"Toksik Şok Sendromu\"na yol açan ve bir \"Süperantijen\" olarak davranan toksin hangi bakteriye aittir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Staphylococcus aureus (TSST-1)",
-        "B) E. coli",
-        "C) Pseudomonas aeruginosa",
-        "D) Neisseria meningitidis",
-        "E) Bacillus cereus"
-      ],
-      "correct_answer": "A) Staphylococcus aureus (TSST-1)",
-      "explanation": "TSST-1 toksini, MHC-II ve T-hücre reseptörünü spesifik olmayarak (yoğun şekilde) uyarır ve aşırı sitokin salınımıyla şoka neden olur."
-    },
-    {
-      "id": "mikro_prof_v3-023",
-      "question": "Aşağıdaki virüslerden hangisi \"segmentli\" bir RNA genomuna sahiptir ve bu sayede antijenik değişimlere (shift) çok müsaittir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) HIV",
-        "B) Influenza Virüsü",
-        "C) Hepatit C Virüsü",
-        "D) Kızamık Virüsü",
-        "E) Kuduz Virüsü"
-      ],
-      "correct_answer": "B) Influenza Virüsü",
-      "explanation": "İnfluenza virüsünün 8 segmentli genomu vardır. Farklı virüs suşları arasındaki genetik değişimler (reassortment) büyük pandemilere yol açan antijenik shift'lere neden olur."
-    },
-    {
-      "id": "mikro_prof_v3-024",
-      "question": "\"Menenjit\" şüphesiyle alınan BOS örneğinde Gram-negatif diplokok görülmesi öncelikle hangi etkeni düşündürür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Neisseria meningitidis (Meningokok)",
-        "B) Streptococcus pneumoniae (Pnomokok)",
-        "C) Haemophilus influenzae",
-        "D) Listeria monocytogenes",
-        "E) Cryptococcus neoformans"
-      ],
-      "correct_answer": "A) Neisseria meningitidis (Meningokok)",
-      "explanation": "N. meningitidis, karakteristik Gram-negatif diplokok görüntüsüyle tanınır. S. pneumoniae ise Gram-pozitif diplokoktur."
-    },
-    {
-      "id": "mikro_prof_v3-025",
-      "question": "Sıtma (Malarya) tanısında kullanılan \"kalın damla\" ve \"ince yayma\" preparatları hangi boya ile boyanır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Gram boyası",
-        "B) EZN boyası",
-        "C) Giemsa boyası",
-        "D) Metilen mavisi",
-        "E) Çini mürekkebi"
-      ],
-      "correct_answer": "C) Giemsa boyası",
-      "explanation": "Kan parazitlerinin (Plasmodium, Leishmania vb.) morfolojik tanısında Giemsa boyası altın standarttır."
-    },
-    {
-      "id": "mikro_prof_v3-026",
-      "question": "Özellikle hamile kadınlarda görüldüğünde %20'lere varan yüksek mortalite (ölüm) riski taşıyan hepatit virüsü hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) HAV",
-        "B) HBV",
-        "C) HCV",
-        "D) HEV",
-        "E) HDV"
-      ],
-      "correct_answer": "D) HEV",
-      "explanation": "Hepatit E, gebelerde fulminan hepatit (ağır karaciğer yetmezliği) riski nedeniyle çok tehlikelidir."
-    },
-    {
-      "id": "mikro_prof_v3-027",
-      "question": "Aşağıdaki mantarlardan hangisi fırsatçı bir enfeksiyon yapar ve karakteristik \"yalancı hif\" (psödohif) oluşturur? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Aspergillus",
-        "B) Candida albicans",
-        "C) Rhizopus",
-        "D) Microsporum",
-        "E) Histoplasma"
-      ],
-      "correct_answer": "B) Candida albicans",
-      "explanation": "Candida, hem maya hem de psödohif formunda görülebilir. Germ tüp testi ile tanısı kolaylaştırılır."
-    },
-    {
-      "id": "mikro_prof_v3-028",
-      "question": "Penisilin alerjisi olan bir hastada \"beta-hemolitik streptokok\" enfeksiyonu için alternatif olarak en sık hangi grup ilaç tercih edilir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Aminoglikozidler",
-        "B) Makrolidler (Eritromisin, Klaritromisin)",
-        "C) Kinolonlar",
-        "D) Sülfonamidler",
-        "E) Polimiksinler"
-      ],
-      "correct_answer": "B) Makrolidler (Eritromisin, Klaritromisin)",
-      "explanation": "Penisilin alerjisi durumunda Gram-pozitif kok enfeksiyonları için makrolidler güvenli bir alternatiftir."
-    },
-    {
-      "id": "mikro_prof_v3-029",
-      "question": "\"Gazlı Gangren\" tablosundan sorumlu olan ve lesitinaz (alfa toksin) üreten anaerobik bakteri hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Clostridium botulinum",
-        "B) Clostridium tetani",
-        "C) Clostridium perfringens",
-        "D) Bacillus anthracis",
-        "E) Bacteroides fragilis"
-      ],
-      "correct_answer": "C) Clostridium perfringens",
-      "explanation": "C. perfringens, dokularda hızlı nekroz ve gaz oluşumu yapan, alfa toksini ile hücre membranlarını yıkan bir anaerobdur."
-    },
-    {
-      "id": "mikro_prof_v3-030",
-      "question": "Aşağıdakilerden hangisi \"canlı (atenué)\" bir aşıdır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Hepatit B aşısı",
-        "B) Kuduz aşısı",
-        "C) BCG (Tüberküloz) aşısı",
-        "D) Tetanos toksoidi",
-        "E) IPV (İnaktif Polio)"
-      ],
-      "correct_answer": "C) BCG (Tüberküloz) aşısı",
-      "explanation": "BCG, Kızamık-Kızamıkçık-Kabakulak (KKK) ve Oral Polio (Sabin) canlı aşılardır. İmmün yetmezliği olanlara uygulanmazlar."
-    },
-    {
-      "id": "mikro_prof_v3-031",
-      "question": "Bakterilerin hücre duvarında bulunan peptidoglikan sentezinin son basamağı olan \"transpeptidasyonu\" inhibe eden ana antibiyotik grubu hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Beta-laktamlar (Penisilinler, Sefalosporinler)",
-        "B) Aminoglikozidler",
-        "C) Tetrasiklinler",
-        "D) Kinolonlar",
-        "E) Makrolidler"
-      ],
-      "correct_answer": "A) Beta-laktamlar (Penisilinler, Sefalosporinler)",
-      "explanation": "Beta-laktam antibiyotikler, transpeptidaz enzimlerine (PBP - Penisilin Bağlayan Protein) bağlanarak çapraz bağ oluşumunu engeller ve bakterinin parçalanmasına (lizis) neden olurlar."
-    },
-    {
-      "id": "mikro_prof_v3-032",
-      "question": "\"Toksik Şok Sendromu\"na yol açan ve bir \"Süperantijen\" olarak davranan toksin hangi bakteriye aittir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Staphylococcus aureus (TSST-1)",
-        "B) E. coli",
-        "C) Pseudomonas aeruginosa",
-        "D) Neisseria meningitidis",
-        "E) Bacillus cereus"
-      ],
-      "correct_answer": "A) Staphylococcus aureus (TSST-1)",
-      "explanation": "TSST-1 toksini, MHC-II ve T-hücre reseptörünü spesifik olmayarak (yoğun şekilde) uyarır ve aşırı sitokin salınımıyla şoka neden olur."
-    },
-    {
-      "id": "mikro_prof_v3-033",
-      "question": "Aşağıdaki virüslerden hangisi \"segmentli\" bir RNA genomuna sahiptir ve bu sayede antijenik değişimlere (shift) çok müsaittir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) HIV",
-        "B) Influenza Virüsü",
-        "C) Hepatit C Virüsü",
-        "D) Kızamık Virüsü",
-        "E) Kuduz Virüsü"
-      ],
-      "correct_answer": "B) Influenza Virüsü",
-      "explanation": "İnfluenza virüsünün 8 segmentli genomu vardır. Farklı virüs suşları arasındaki genetik değişimler (reassortment) büyük pandemilere yol açan antijenik shift'lere neden olur."
-    },
-    {
-      "id": "mikro_prof_v3-034",
-      "question": "\"Menenjit\" şüphesiyle alınan BOS örneğinde Gram-negatif diplokok görülmesi öncelikle hangi etkeni düşündürür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Neisseria meningitidis (Meningokok)",
-        "B) Streptococcus pneumoniae (Pnomokok)",
-        "C) Haemophilus influenzae",
-        "D) Listeria monocytogenes",
-        "E) Cryptococcus neoformans"
-      ],
-      "correct_answer": "A) Neisseria meningitidis (Meningokok)",
-      "explanation": "N. meningitidis, karakteristik Gram-negatif diplokok görüntüsüyle tanınır. S. pneumoniae ise Gram-pozitif diplokoktur."
-    },
-    {
-      "id": "mikro_prof_v3-035",
-      "question": "Sıtma (Malarya) tanısında kullanılan \"kalın damla\" ve \"ince yayma\" preparatları hangi boya ile boyanır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Gram boyası",
-        "B) EZN boyası",
-        "C) Giemsa boyası",
-        "D) Metilen mavisi",
-        "E) Çini mürekkebi"
-      ],
-      "correct_answer": "C) Giemsa boyası",
-      "explanation": "Kan parazitlerinin (Plasmodium, Leishmania vb.) morfolojik tanısında Giemsa boyası altın standarttır."
-    },
-    {
-      "id": "mikro_prof_v3-036",
-      "question": "Özellikle hamile kadınlarda görüldüğünde %20'lere varan yüksek mortalite (ölüm) riski taşıyan hepatit virüsü hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) HAV",
-        "B) HBV",
-        "C) HCV",
-        "D) HEV",
-        "E) HDV"
-      ],
-      "correct_answer": "D) HEV",
-      "explanation": "Hepatit E, gebelerde fulminan hepatit (ağır karaciğer yetmezliği) riski nedeniyle çok tehlikelidir."
-    },
-    {
-      "id": "mikro_prof_v3-037",
-      "question": "Aşağıdaki mantarlardan hangisi fırsatçı bir enfeksiyon yapar ve karakteristik \"yalancı hif\" (psödohif) oluşturur? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Aspergillus",
-        "B) Candida albicans",
-        "C) Rhizopus",
-        "D) Microsporum",
-        "E) Histoplasma"
-      ],
-      "correct_answer": "B) Candida albicans",
-      "explanation": "Candida, hem maya hem de psödohif formunda görülebilir. Germ tüp testi ile tanısı kolaylaştırılır."
-    },
-    {
-      "id": "mikro_prof_v3-038",
-      "question": "Penisilin alerjisi olan bir hastada \"beta-hemolitik streptokok\" enfeksiyonu için alternatif olarak en sık hangi grup ilaç tercih edilir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Aminoglikozidler",
-        "B) Makrolidler (Eritromisin, Klaritromisin)",
-        "C) Kinolonlar",
-        "D) Sülfonamidler",
-        "E) Polimiksinler"
-      ],
-      "correct_answer": "B) Makrolidler (Eritromisin, Klaritromisin)",
-      "explanation": "Penisilin alerjisi durumunda Gram-pozitif kok enfeksiyonları için makrolidler güvenli bir alternatiftir."
-    },
-    {
-      "id": "mikro_prof_v3-039",
-      "question": "\"Gazlı Gangren\" tablosundan sorumlu olan ve lesitinaz (alfa toksin) üreten anaerobik bakteri hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Clostridium botulinum",
-        "B) Clostridium tetani",
-        "C) Clostridium perfringens",
-        "D) Bacillus anthracis",
-        "E) Bacteroides fragilis"
-      ],
-      "correct_answer": "C) Clostridium perfringens",
-      "explanation": "C. perfringens, dokularda hızlı nekroz ve gaz oluşumu yapan, alfa toksini ile hücre membranlarını yıkan bir anaerobdur."
-    },
-    {
-      "id": "mikro_prof_v3-040",
-      "question": "Aşağıdakilerden hangisi \"canlı (atenué)\" bir aşıdır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Hepatit B aşısı",
-        "B) Kuduz aşısı",
-        "C) BCG (Tüberküloz) aşısı",
-        "D) Tetanos toksoidi",
-        "E) IPV (İnaktif Polio)"
-      ],
-      "correct_answer": "C) BCG (Tüberküloz) aşısı",
-      "explanation": "BCG, Kızamık-Kızamıkçık-Kabakulak (KKK) ve Oral Polio (Sabin) canlı aşılardır. İmmün yetmezliği olanlara uygulanmazlar."
-    },
-    {
-      "id": "mikro_prof_v3-041",
-      "question": "Bakterilerin hücre duvarında bulunan peptidoglikan sentezinin son basamağı olan \"transpeptidasyonu\" inhibe eden ana antibiyotik grubu hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Beta-laktamlar (Penisilinler, Sefalosporinler)",
-        "B) Aminoglikozidler",
-        "C) Tetrasiklinler",
-        "D) Kinolonlar",
-        "E) Makrolidler"
-      ],
-      "correct_answer": "A) Beta-laktamlar (Penisilinler, Sefalosporinler)",
-      "explanation": "Beta-laktam antibiyotikler, transpeptidaz enzimlerine (PBP - Penisilin Bağlayan Protein) bağlanarak çapraz bağ oluşumunu engeller ve bakterinin parçalanmasına (lizis) neden olurlar."
-    },
-    {
-      "id": "mikro_prof_v3-042",
-      "question": "\"Toksik Şok Sendromu\"na yol açan ve bir \"Süperantijen\" olarak davranan toksin hangi bakteriye aittir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Staphylococcus aureus (TSST-1)",
-        "B) E. coli",
-        "C) Pseudomonas aeruginosa",
-        "D) Neisseria meningitidis",
-        "E) Bacillus cereus"
-      ],
-      "correct_answer": "A) Staphylococcus aureus (TSST-1)",
-      "explanation": "TSST-1 toksini, MHC-II ve T-hücre reseptörünü spesifik olmayarak (yoğun şekilde) uyarır ve aşırı sitokin salınımıyla şoka neden olur."
-    },
-    {
-      "id": "mikro_prof_v3-043",
-      "question": "Aşağıdaki virüslerden hangisi \"segmentli\" bir RNA genomuna sahiptir ve bu sayede antijenik değişimlere (shift) çok müsaittir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) HIV",
-        "B) Influenza Virüsü",
-        "C) Hepatit C Virüsü",
-        "D) Kızamık Virüsü",
-        "E) Kuduz Virüsü"
-      ],
-      "correct_answer": "B) Influenza Virüsü",
-      "explanation": "İnfluenza virüsünün 8 segmentli genomu vardır. Farklı virüs suşları arasındaki genetik değişimler (reassortment) büyük pandemilere yol açan antijenik shift'lere neden olur."
-    },
-    {
-      "id": "mikro_prof_v3-044",
-      "question": "\"Menenjit\" şüphesiyle alınan BOS örneğinde Gram-negatif diplokok görülmesi öncelikle hangi etkeni düşündürür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Neisseria meningitidis (Meningokok)",
-        "B) Streptococcus pneumoniae (Pnomokok)",
-        "C) Haemophilus influenzae",
-        "D) Listeria monocytogenes",
-        "E) Cryptococcus neoformans"
-      ],
-      "correct_answer": "A) Neisseria meningitidis (Meningokok)",
-      "explanation": "N. meningitidis, karakteristik Gram-negatif diplokok görüntüsüyle tanınır. S. pneumoniae ise Gram-pozitif diplokoktur."
-    },
-    {
-      "id": "mikro_prof_v3-045",
-      "question": "Sıtma (Malarya) tanısında kullanılan \"kalın damla\" ve \"ince yayma\" preparatları hangi boya ile boyanır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Gram boyası",
-        "B) EZN boyası",
-        "C) Giemsa boyası",
-        "D) Metilen mavisi",
-        "E) Çini mürekkebi"
-      ],
-      "correct_answer": "C) Giemsa boyası",
-      "explanation": "Kan parazitlerinin (Plasmodium, Leishmania vb.) morfolojik tanısında Giemsa boyası altın standarttır."
-    },
-    {
-      "id": "mikro_prof_v3-046",
-      "question": "Özellikle hamile kadınlarda görüldüğünde %20'lere varan yüksek mortalite (ölüm) riski taşıyan hepatit virüsü hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) HAV",
-        "B) HBV",
-        "C) HCV",
-        "D) HEV",
-        "E) HDV"
-      ],
-      "correct_answer": "D) HEV",
-      "explanation": "Hepatit E, gebelerde fulminan hepatit (ağır karaciğer yetmezliği) riski nedeniyle çok tehlikelidir."
-    },
-    {
-      "id": "mikro_prof_v3-047",
-      "question": "Aşağıdaki mantarlardan hangisi fırsatçı bir enfeksiyon yapar ve karakteristik \"yalancı hif\" (psödohif) oluşturur? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Aspergillus",
-        "B) Candida albicans",
-        "C) Rhizopus",
-        "D) Microsporum",
-        "E) Histoplasma"
-      ],
-      "correct_answer": "B) Candida albicans",
-      "explanation": "Candida, hem maya hem de psödohif formunda görülebilir. Germ tüp testi ile tanısı kolaylaştırılır."
-    },
-    {
-      "id": "mikro_prof_v3-048",
-      "question": "Penisilin alerjisi olan bir hastada \"beta-hemolitik streptokok\" enfeksiyonu için alternatif olarak en sık hangi grup ilaç tercih edilir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Aminoglikozidler",
-        "B) Makrolidler (Eritromisin, Klaritromisin)",
-        "C) Kinolonlar",
-        "D) Sülfonamidler",
-        "E) Polimiksinler"
-      ],
-      "correct_answer": "B) Makrolidler (Eritromisin, Klaritromisin)",
-      "explanation": "Penisilin alerjisi durumunda Gram-pozitif kok enfeksiyonları için makrolidler güvenli bir alternatiftir."
-    },
-    {
-      "id": "mikro_prof_v3-049",
-      "question": "\"Gazlı Gangren\" tablosundan sorumlu olan ve lesitinaz (alfa toksin) üreten anaerobik bakteri hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Clostridium botulinum",
-        "B) Clostridium tetani",
-        "C) Clostridium perfringens",
-        "D) Bacillus anthracis",
-        "E) Bacteroides fragilis"
-      ],
-      "correct_answer": "C) Clostridium perfringens",
-      "explanation": "C. perfringens, dokularda hızlı nekroz ve gaz oluşumu yapan, alfa toksini ile hücre membranlarını yıkan bir anaerobdur."
-    },
-    {
-      "id": "mikro_prof_v3-050",
-      "question": "Aşağıdakilerden hangisi \"canlı (atenué)\" bir aşıdır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Hepatit B aşısı",
-        "B) Kuduz aşısı",
-        "C) BCG (Tüberküloz) aşısı",
-        "D) Tetanos toksoidi",
-        "E) IPV (İnaktif Polio)"
-      ],
-      "correct_answer": "C) BCG (Tüberküloz) aşısı",
-      "explanation": "BCG, Kızamık-Kızamıkçık-Kabakulak (KKK) ve Oral Polio (Sabin) canlı aşılardır. İmmün yetmezliği olanlara uygulanmazlar."
-    },
-    {
-      "id": "mikro_prof_v3-051",
-      "question": "Bakterilerin hücre duvarında bulunan peptidoglikan sentezinin son basamağı olan \"transpeptidasyonu\" inhibe eden ana antibiyotik grubu hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Beta-laktamlar (Penisilinler, Sefalosporinler)",
-        "B) Aminoglikozidler",
-        "C) Tetrasiklinler",
-        "D) Kinolonlar",
-        "E) Makrolidler"
-      ],
-      "correct_answer": "A) Beta-laktamlar (Penisilinler, Sefalosporinler)",
-      "explanation": "Beta-laktam antibiyotikler, transpeptidaz enzimlerine (PBP - Penisilin Bağlayan Protein) bağlanarak çapraz bağ oluşumunu engeller ve bakterinin parçalanmasına (lizis) neden olurlar."
-    },
-    {
-      "id": "mikro_prof_v3-052",
-      "question": "\"Toksik Şok Sendromu\"na yol açan ve bir \"Süperantijen\" olarak davranan toksin hangi bakteriye aittir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Staphylococcus aureus (TSST-1)",
-        "B) E. coli",
-        "C) Pseudomonas aeruginosa",
-        "D) Neisseria meningitidis",
-        "E) Bacillus cereus"
-      ],
-      "correct_answer": "A) Staphylococcus aureus (TSST-1)",
-      "explanation": "TSST-1 toksini, MHC-II ve T-hücre reseptörünü spesifik olmayarak (yoğun şekilde) uyarır ve aşırı sitokin salınımıyla şoka neden olur."
-    },
-    {
-      "id": "mikro_prof_v3-053",
-      "question": "Aşağıdaki virüslerden hangisi \"segmentli\" bir RNA genomuna sahiptir ve bu sayede antijenik değişimlere (shift) çok müsaittir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) HIV",
-        "B) Influenza Virüsü",
-        "C) Hepatit C Virüsü",
-        "D) Kızamık Virüsü",
-        "E) Kuduz Virüsü"
-      ],
-      "correct_answer": "B) Influenza Virüsü",
-      "explanation": "İnfluenza virüsünün 8 segmentli genomu vardır. Farklı virüs suşları arasındaki genetik değişimler (reassortment) büyük pandemilere yol açan antijenik shift'lere neden olur."
-    },
-    {
-      "id": "mikro_prof_v3-054",
-      "question": "\"Menenjit\" şüphesiyle alınan BOS örneğinde Gram-negatif diplokok görülmesi öncelikle hangi etkeni düşündürür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Neisseria meningitidis (Meningokok)",
-        "B) Streptococcus pneumoniae (Pnomokok)",
-        "C) Haemophilus influenzae",
-        "D) Listeria monocytogenes",
-        "E) Cryptococcus neoformans"
-      ],
-      "correct_answer": "A) Neisseria meningitidis (Meningokok)",
-      "explanation": "N. meningitidis, karakteristik Gram-negatif diplokok görüntüsüyle tanınır. S. pneumoniae ise Gram-pozitif diplokoktur."
-    },
-    {
-      "id": "mikro_prof_v3-055",
-      "question": "Sıtma (Malarya) tanısında kullanılan \"kalın damla\" ve \"ince yayma\" preparatları hangi boya ile boyanır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Gram boyası",
-        "B) EZN boyası",
-        "C) Giemsa boyası",
-        "D) Metilen mavisi",
-        "E) Çini mürekkebi"
-      ],
-      "correct_answer": "C) Giemsa boyası",
-      "explanation": "Kan parazitlerinin (Plasmodium, Leishmania vb.) morfolojik tanısında Giemsa boyası altın standarttır."
-    },
-    {
-      "id": "mikro_prof_v3-056",
-      "question": "Özellikle hamile kadınlarda görüldüğünde %20'lere varan yüksek mortalite (ölüm) riski taşıyan hepatit virüsü hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) HAV",
-        "B) HBV",
-        "C) HCV",
-        "D) HEV",
-        "E) HDV"
-      ],
-      "correct_answer": "D) HEV",
-      "explanation": "Hepatit E, gebelerde fulminan hepatit (ağır karaciğer yetmezliği) riski nedeniyle çok tehlikelidir."
-    },
-    {
-      "id": "mikro_prof_v3-057",
-      "question": "Aşağıdaki mantarlardan hangisi fırsatçı bir enfeksiyon yapar ve karakteristik \"yalancı hif\" (psödohif) oluşturur? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Aspergillus",
-        "B) Candida albicans",
-        "C) Rhizopus",
-        "D) Microsporum",
-        "E) Histoplasma"
-      ],
-      "correct_answer": "B) Candida albicans",
-      "explanation": "Candida, hem maya hem de psödohif formunda görülebilir. Germ tüp testi ile tanısı kolaylaştırılır."
-    },
-    {
-      "id": "mikro_prof_v3-058",
-      "question": "Penisilin alerjisi olan bir hastada \"beta-hemolitik streptokok\" enfeksiyonu için alternatif olarak en sık hangi grup ilaç tercih edilir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Aminoglikozidler",
-        "B) Makrolidler (Eritromisin, Klaritromisin)",
-        "C) Kinolonlar",
-        "D) Sülfonamidler",
-        "E) Polimiksinler"
-      ],
-      "correct_answer": "B) Makrolidler (Eritromisin, Klaritromisin)",
-      "explanation": "Penisilin alerjisi durumunda Gram-pozitif kok enfeksiyonları için makrolidler güvenli bir alternatiftir."
-    },
-    {
-      "id": "mikro_prof_v3-059",
-      "question": "\"Gazlı Gangren\" tablosundan sorumlu olan ve lesitinaz (alfa toksin) üreten anaerobik bakteri hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Clostridium botulinum",
-        "B) Clostridium tetani",
-        "C) Clostridium perfringens",
-        "D) Bacillus anthracis",
-        "E) Bacteroides fragilis"
-      ],
-      "correct_answer": "C) Clostridium perfringens",
-      "explanation": "C. perfringens, dokularda hızlı nekroz ve gaz oluşumu yapan, alfa toksini ile hücre membranlarını yıkan bir anaerobdur."
-    },
-    {
-      "id": "mikro_prof_v3-060",
-      "question": "Aşağıdakilerden hangisi \"canlı (atenué)\" bir aşıdır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Hepatit B aşısı",
-        "B) Kuduz aşısı",
-        "C) BCG (Tüberküloz) aşısı",
-        "D) Tetanos toksoidi",
-        "E) IPV (İnaktif Polio)"
-      ],
-      "correct_answer": "C) BCG (Tüberküloz) aşısı",
-      "explanation": "BCG, Kızamık-Kızamıkçık-Kabakulak (KKK) ve Oral Polio (Sabin) canlı aşılardır. İmmün yetmezliği olanlara uygulanmazlar."
-    },
-    {
-      "id": "mikro_prof_v3-061",
-      "question": "Bakterilerin hücre duvarında bulunan peptidoglikan sentezinin son basamağı olan \"transpeptidasyonu\" inhibe eden ana antibiyotik grubu hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Beta-laktamlar (Penisilinler, Sefalosporinler)",
-        "B) Aminoglikozidler",
-        "C) Tetrasiklinler",
-        "D) Kinolonlar",
-        "E) Makrolidler"
-      ],
-      "correct_answer": "A) Beta-laktamlar (Penisilinler, Sefalosporinler)",
-      "explanation": "Beta-laktam antibiyotikler, transpeptidaz enzimlerine (PBP - Penisilin Bağlayan Protein) bağlanarak çapraz bağ oluşumunu engeller ve bakterinin parçalanmasına (lizis) neden olurlar."
-    },
-    {
-      "id": "mikro_prof_v3-062",
-      "question": "\"Toksik Şok Sendromu\"na yol açan ve bir \"Süperantijen\" olarak davranan toksin hangi bakteriye aittir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Staphylococcus aureus (TSST-1)",
-        "B) E. coli",
-        "C) Pseudomonas aeruginosa",
-        "D) Neisseria meningitidis",
-        "E) Bacillus cereus"
-      ],
-      "correct_answer": "A) Staphylococcus aureus (TSST-1)",
-      "explanation": "TSST-1 toksini, MHC-II ve T-hücre reseptörünü spesifik olmayarak (yoğun şekilde) uyarır ve aşırı sitokin salınımıyla şoka neden olur."
-    },
-    {
-      "id": "mikro_prof_v3-063",
-      "question": "Aşağıdaki virüslerden hangisi \"segmentli\" bir RNA genomuna sahiptir ve bu sayede antijenik değişimlere (shift) çok müsaittir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) HIV",
-        "B) Influenza Virüsü",
-        "C) Hepatit C Virüsü",
-        "D) Kızamık Virüsü",
-        "E) Kuduz Virüsü"
-      ],
-      "correct_answer": "B) Influenza Virüsü",
-      "explanation": "İnfluenza virüsünün 8 segmentli genomu vardır. Farklı virüs suşları arasındaki genetik değişimler (reassortment) büyük pandemilere yol açan antijenik shift'lere neden olur."
-    },
-    {
-      "id": "mikro_prof_v3-064",
-      "question": "\"Menenjit\" şüphesiyle alınan BOS örneğinde Gram-negatif diplokok görülmesi öncelikle hangi etkeni düşündürür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Neisseria meningitidis (Meningokok)",
-        "B) Streptococcus pneumoniae (Pnomokok)",
-        "C) Haemophilus influenzae",
-        "D) Listeria monocytogenes",
-        "E) Cryptococcus neoformans"
-      ],
-      "correct_answer": "A) Neisseria meningitidis (Meningokok)",
-      "explanation": "N. meningitidis, karakteristik Gram-negatif diplokok görüntüsüyle tanınır. S. pneumoniae ise Gram-pozitif diplokoktur."
-    },
-    {
-      "id": "mikro_prof_v3-065",
-      "question": "Sıtma (Malarya) tanısında kullanılan \"kalın damla\" ve \"ince yayma\" preparatları hangi boya ile boyanır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Gram boyası",
-        "B) EZN boyası",
-        "C) Giemsa boyası",
-        "D) Metilen mavisi",
-        "E) Çini mürekkebi"
-      ],
-      "correct_answer": "C) Giemsa boyası",
-      "explanation": "Kan parazitlerinin (Plasmodium, Leishmania vb.) morfolojik tanısında Giemsa boyası altın standarttır."
-    },
-    {
-      "id": "mikro_prof_v3-066",
-      "question": "Özellikle hamile kadınlarda görüldüğünde %20'lere varan yüksek mortalite (ölüm) riski taşıyan hepatit virüsü hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) HAV",
-        "B) HBV",
-        "C) HCV",
-        "D) HEV",
-        "E) HDV"
-      ],
-      "correct_answer": "D) HEV",
-      "explanation": "Hepatit E, gebelerde fulminan hepatit (ağır karaciğer yetmezliği) riski nedeniyle çok tehlikelidir."
-    },
-    {
-      "id": "mikro_prof_v3-067",
-      "question": "Aşağıdaki mantarlardan hangisi fırsatçı bir enfeksiyon yapar ve karakteristik \"yalancı hif\" (psödohif) oluşturur? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Aspergillus",
-        "B) Candida albicans",
-        "C) Rhizopus",
-        "D) Microsporum",
-        "E) Histoplasma"
-      ],
-      "correct_answer": "B) Candida albicans",
-      "explanation": "Candida, hem maya hem de psödohif formunda görülebilir. Germ tüp testi ile tanısı kolaylaştırılır."
-    },
-    {
-      "id": "mikro_prof_v3-068",
-      "question": "Penisilin alerjisi olan bir hastada \"beta-hemolitik streptokok\" enfeksiyonu için alternatif olarak en sık hangi grup ilaç tercih edilir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Aminoglikozidler",
-        "B) Makrolidler (Eritromisin, Klaritromisin)",
-        "C) Kinolonlar",
-        "D) Sülfonamidler",
-        "E) Polimiksinler"
-      ],
-      "correct_answer": "B) Makrolidler (Eritromisin, Klaritromisin)",
-      "explanation": "Penisilin alerjisi durumunda Gram-pozitif kok enfeksiyonları için makrolidler güvenli bir alternatiftir."
-    },
-    {
-      "id": "mikro_prof_v3-069",
-      "question": "\"Gazlı Gangren\" tablosundan sorumlu olan ve lesitinaz (alfa toksin) üreten anaerobik bakteri hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Clostridium botulinum",
-        "B) Clostridium tetani",
-        "C) Clostridium perfringens",
-        "D) Bacillus anthracis",
-        "E) Bacteroides fragilis"
-      ],
-      "correct_answer": "C) Clostridium perfringens",
-      "explanation": "C. perfringens, dokularda hızlı nekroz ve gaz oluşumu yapan, alfa toksini ile hücre membranlarını yıkan bir anaerobdur."
-    },
-    {
-      "id": "mikro_prof_v3-070",
-      "question": "Aşağıdakilerden hangisi \"canlı (atenué)\" bir aşıdır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Hepatit B aşısı",
-        "B) Kuduz aşısı",
-        "C) BCG (Tüberküloz) aşısı",
-        "D) Tetanos toksoidi",
-        "E) IPV (İnaktif Polio)"
-      ],
-      "correct_answer": "C) BCG (Tüberküloz) aşısı",
-      "explanation": "BCG, Kızamık-Kızamıkçık-Kabakulak (KKK) ve Oral Polio (Sabin) canlı aşılardır. İmmün yetmezliği olanlara uygulanmazlar."
-    },
-    {
-      "id": "mikro_prof_v3-071",
-      "question": "\"Gazlı Gangren\" tablosundan sorumlu olan ve lesitinaz (alfa toksin) üreten anaerobik bakteri hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Clostridium botulinum",
-        "B) Clostridium tetani",
-        "C) Clostridium perfringens",
-        "D) Bacillus anthracis",
-        "E) Bacteroides fragilis"
-      ],
-      "correct_answer": "C) Clostridium perfringens",
-      "explanation": "C. perfringens, dokularda hızlı nekroz ve gaz oluşumu yapan, alfa toksini ile hücre membranlarını yıkan bir anaerobdur."
-    },
-    {
-      "id": "mikro_prof_v3-072",
-      "question": "Aşağıdakilerden hangisi \"canlı (atenué)\" bir aşıdır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Hepatit B aşısı",
-        "B) Kuduz aşısı",
-        "C) BCG (Tüberküloz) aşısı",
-        "D) Tetanos toksoidi",
-        "E) IPV (İnaktif Polio)"
-      ],
-      "correct_answer": "C) BCG (Tüberküloz) aşısı",
-      "explanation": "BCG, Kızamık-Kızamıkçık-Kabakulak (KKK) ve Oral Polio (Sabin) canlı aşılardır. İmmün yetmezliği olanlara uygulanmazlar."
-    },
-    {
-      "id": "mikro_prof_v3-073",
-      "question": "\"İçme sularında\" koliform bakteri (E. coli) aranması neyin göstergesidir?",
-      "options": [
-        "A) Suyun temiz olduğunun",
-        "B) Suya kanalizasyon/dışkı karıştığının",
-        "C) Sadece mineral eksikliğinin",
-        "D) Suyun çok eski olduğunun",
-        "E) Suyun dondurulduğunun"
-      ],
-      "correct_answer": "B) Suya kanalizasyon/dışkı karıştığının",
-      "explanation": "E. coli bağırsak florasında bulunur; suda saptanması suyun fekal kontaminasyona uğradığını kanıtlar."
-    },
-    {
-      "id": "mikro_prof_v3-074",
-      "question": "Aşağıdakilerden hangisi bir \"Nematod\"dur (Yuvarlak solucan)? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Taenia saginata",
-        "B) Echinococcus granulosus",
-        "C) Ascaris lumbricoides",
-        "D) Fasciola hepatica",
-        "E) Schistosoma"
-      ],
-      "correct_answer": "C) Ascaris lumbricoides",
-      "explanation": "Ascaris en büyük ve yaygın yuvarlak solucandır. Diğerleri şerit (sestod) veya yapraksı solucan (trematod) grubundadır."
-    },
-    {
-      "id": "mikro_prof_v3-075",
-      "question": "Kedi dışkısıyla bulaşan ve gebelerde düşüğe veya bebekte anomalilere yol açan protozoon hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Giardia",
-        "B) Toxoplasma gondii",
-        "C) Leishmania",
-        "D) Trichomonas",
-        "E) Plasmodium"
-      ],
-      "correct_answer": "B) Toxoplasma gondii",
-      "explanation": "Toxoplasma oositleri kedi dışkısıyla atılır. Seronegatif gebelerin kedi kumuyla temas etmesi risklidir."
-    },
-    {
-      "id": "mikro_prof_v3-076",
-      "question": "Kuduz şüpheli ısırıklarda beyin dokusunda (hiperkampus) saptanan patognomonik inklüzyon hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Guarnieri cisimciği",
-        "B) Negri cisimciği",
-        "C) Cowdry tip A",
-        "D) Paschen cisimciği",
-        "E) Heinz cisimciği"
-      ],
-      "correct_answer": "B) Negri cisimciği",
-      "explanation": "Rhabdoviridae ailesinden kuduz virüsü, sinir hücreleri içinde karakteristik Negri cisimcikleri oluşturur."
-    },
-    {
-      "id": "mikro_prof_v3-077",
-      "question": "Çift sarmallı segmentli RNA içeren ve çocuk ishallerinin en sık nedeni olan virüs hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Norovirüs",
-        "B) Rotavirüs",
-        "C) Adenovirüs",
-        "D) Astrovirüs",
-        "E) Coronavirus"
-      ],
-      "correct_answer": "B) Rotavirüs",
-      "explanation": "Rotavirüs, segmentli genomu nedeniyle antijenik değişimlere uğrayebilir. Reoviridae ailesinin en önemli üyesidir."
-    },
-    {
-      "id": "mikro_prof_v3-078",
-      "question": "\"Mavi-yeşil\" pigment (Piyosiyanin) oluşturan ve yanık hastalarında fırsatçı enfeksiyon yapan bakteri hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) E. coli",
-        "B) Klebsiella",
-        "C) Pseudomonas aeruginosa",
-        "D) Serratia marcescens",
-        "E) Proteus vulagris"
-      ],
-      "correct_answer": "C) Pseudomonas aeruginosa",
-      "explanation": "Pseudomonas, tatlı meyve kokulu (üzüm) kolonileri ve piyosiyanin pigmenti ile karakterizedir. Antibiyotiklere oldukça dirençli bir hastane patojenijenidir."
-    },
-    {
-      "id": "mikro_prof_v3-079",
-      "question": "Farelerden (pire aracılığıyla) bulaşan ve \"Veba\" (Bubonik plague) hastalığına yol açan bakteri hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Francisella tularensis",
-        "B) Yersinia pestis",
-        "C) Brucella abortus",
-        "D) Pasteurella multocida",
-        "E) Burkholderia mallei"
-      ],
-      "correct_answer": "B) Yersinia pestis",
-      "explanation": "Yersinia pestis, emniyet pimi (bipolar boyanma) görüntüsü veren bir Gram negatif basildir. Tarihteki büyük pandemilerin nedenidir."
-    },
-    {
-      "id": "mikro_prof_v3-080",
-      "question": "Boğaz ağrısı ve lenfadenopati ile gelen hastada \"Heterofil antikor (Monospot) testi\" pozitifliği neyi gösterir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) CMV enfeksiyonu",
-        "B) EBV enfeksiyonu (Enfeksiyöz Mononükleoz)",
-        "C) HIV akut dönemi",
-        "D) Toksoplazmozis",
-        "E) Hodgkin lenfoma"
-      ],
-      "correct_answer": "B) EBV enfeksiyonu (Enfeksiyöz Mononükleoz)",
-      "explanation": "EBV'ye bağlı infeksiyöz mononükleozda kanda atipik lenfositler ve heterofil antikorlar saptanır. CMV'de heterofil antikorlar negatiftir."
-    },
-    {
-      "id": "mikro_prof_v3-081",
-      "question": "\"Su çiçeği\" (Varicella) ve \"Zon\" (Zoster) hastalıklarına yol açan virüs hangi ailedendir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Poxviridae",
-        "B) Herpesviridae (HHV-3)",
-        "C) Adenoviridae",
-        "D) Picornaviridae",
-        "E) Reoviridae"
-      ],
-      "correct_answer": "B) Herpesviridae (HHV-3)",
-      "explanation": "Varicella-Zoster Virüsü (VZV), primer enfeksiyonda su çiçeği, dorsal kök ganglionlarında latent kaldıktan sonra reaktivasyonda zona yapar."
-    },
-    {
-      "id": "mikro_prof_v3-082",
-      "question": "Aşağıdaki virüslerden hangisi \"Retroviridae\" ailesine aittir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) HBV",
-        "B) HIV",
-        "C) HCV",
-        "D) HDV",
-        "E) HEV"
-      ],
-      "correct_answer": "B) HIV",
-      "explanation": "HIV (Human Immunodeficiency Virus), ters transkriptaz enzimi içeren ve RNA genomunu DNA'ya çeviren bir retrovirüstür.\n\n(Mikrobiyoloji V3 100 soru tamamlandı.)"
+      "correct_answer": "A) Lizojenik faz enfeksiyonu (Beta-faj)",
+      "explanation": "Difteri toksini geni (tox geni) bir bakteriyofaj tarafından taşınır. Sadece bu faja sahip suşlar hastalık yapıcı toksin üretebilir."
     }
   ]
 }

@@ -4,1059 +4,134 @@
   "source": "patoloji_100_prof_v3.txt",
   "cards": [
     {
-      "id": "patoloji_prof_v3-001",
-      "question": "Hücre zedelenmesinde geri dönüşümlü (reversibl) hasarın en erken bulgusu hangisidir? (Tekrar: Pekiştirme)",
+      "id": "patoloji_pv3-001",
+      "question": "Akut enflamasyonda damar geçirgenliğini artıran, ancak sadece venüllerde etkili olan en erken mediyatör hangisidir?",
       "options": [
-        "A) Hücre şişmesi (Hydropic change / Cellular swelling)",
-        "B) Yağlı değişim",
-        "C) Nekroz",
-        "D) Karyolizis",
-        "E) Piknozis"
+        "A) Histamin",
+        "B) Lökotrienler",
+        "C) Kompleman C5a",
+        "D) Bradikinin",
+        "E) Prostaglandinler"
       ],
-      "correct_answer": "A) Hücre şişmesi (Hydropic change / Cellular swelling)",
-      "explanation": "ATP üretimi düştüğünde sodyum-potasyum pompası bozulur, hücre içine su girer ve yaygın şişme (bulutlu şişme) oluşur. Bu, hasarın geri dönebileceği en erken safhadır."
+      "correct_answer": "A) Histamin",
+      "explanation": "Histamin, vazoaktif aminler içinde en erken salınan ve postkapiller venüllerde endotel kontraksiyonu yaparak ödeme yol açan ana mediyatördür."
     },
     {
-      "id": "patoloji_prof_v3-002",
-      "question": "Barrett özofagusu tanısı konulması için yassı epiteli hangi hücrelerin yerini alması şarttır? (Tekrar: Pekiştirme)",
+      "id": "patoloji_pv3-002",
+      "question": "\"Fibrinoid nekroz\" damar duvarlarında amorf, eosinofilik madde birikimiyle karakterizedir. Bu süreçte biriken madde esas olarak nedir?",
       "options": [
-        "A) Goblet hücreli intestinal metaplazi",
-        "B) Gastrik fundus epiteli",
-        "C) Atrofik mukoza",
-        "D) Karşı epitel (psödostratifiye)",
-        "E) Keratinize epitel"
+        "A) Plazma proteinleri ve Antijen-antikor kompleksleri",
+        "B) Sadece kalsiyum",
+        "C) Yağ damlacıkları",
+        "D) Tip IV kollajen",
+        "E) Amiloid lifleri"
       ],
-      "correct_answer": "A) Goblet hücreli intestinal metaplazi",
-      "explanation": "Özofagusun kronik asit maruziyetinde, skuamöz epitelin yerini goblet hücreli bağırsak epiteline (intestinal metaplazi) bırakmasına Barrett özofagusu denir ve adenokarsinom riski artar."
+      "correct_answer": "A) Plazma proteinleri ve Antijen-antikor kompleksleri",
+      "explanation": "İmmün vaskülitlerde plazmadan sızan proteinlerin ve immün komplekslerin damar duvarında polimerize olmasıyla \"fibrin benzeri\" bir görüntü oluşur."
     },
     {
-      "id": "patoloji_prof_v3-003",
-      "question": "\"Fibrinoid nekroz\" en karakteristik olarak hangi hastalık tablosunda görülür? (Tekrar: Pekiştirme)",
+      "id": "patoloji_pv3-003",
+      "question": "Atrofik mide mukozasında, normalde bulunmayan goblet hücrelerinin ve bağırsak tipi epitelin görülmesine ne ad verilir?",
       "options": [
-        "A) Akut pankreatit",
-        "B) Tüberküloz",
-        "C) Malign hipertansiyon ve Vaskülitler",
-        "D) Miyokard enfarktüsü",
-        "E) Beyin apsesi"
-      ],
-      "correct_answer": "C) Malign hipertansiyon ve Vaskülitler",
-      "explanation": "Damar duvarına antijen-antikor komplekslerinin çökmesi sonucu oluşan, amorf ve pembe boyanan nekroz tipidir. Vaskülitler için tipiktir."
-    },
-    {
-      "id": "patoloji_prof_v3-004",
-      "question": "Kronik inflamasyonun en karakteristik hücreleri hangileridir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Nötrofiller ve Mast hücreleri",
-        "B) Makrofajlar, Lenfositler ve Plazma hücreleri",
-        "C) Eozinofiller ve Bazofiller",
-        "D) Trombositler",
-        "E) Doğal öldürücü hücreler (NK)"
-      ],
-      "correct_answer": "B) Makrofajlar, Lenfositler ve Plazma hücreleri",
-      "explanation": "Akut inflamasyonda nötrofiller baskınken, kronik süreçte mononükleer inflamatuar hücreler (makrofaj, lenfosit, plazma hücresi) sahneye çıkar."
-    },
-    {
-      "id": "patoloji_prof_v3-005",
-      "question": "Tümörlerin (Neoplazi) köken aldığı dokuya benzerlik derecesine ne ad verilir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Atipi",
-        "B) Pleomorfizm",
-        "C) Diferansiyasyon (Farklılaşma)",
+        "A) İntestinal Metaplazi",
+        "B) Skuamöz Metaplazi",
+        "C) Displazi",
         "D) Anaplazi",
-        "E) İnvazyon"
+        "E) Atipik hiperplazi"
       ],
-      "correct_answer": "C) Diferansiyasyon (Farklılaşma)",
-      "explanation": "Diferansiyasyon yüksekse tümör \"well-differentiated\" (iyi huylu gibi) görünür. Hiç benzemiyorsa \"anaplastik\" denir."
+      "correct_answer": "A) İntestinal Metaplazi",
+      "explanation": "Kronik gastrit ve H. pylori enfeksiyonunda mide epiteli değişime uğrayarak bağırsak karakteri kazanır; bu durum gastrik adenokarsinom için risk faktörüdür."
     },
     {
-      "id": "patoloji_prof_v3-006",
-      "question": "Aşağıdakilerden hangisi \"Sarkom\" (malign mezanşimal tümör) olarak adlandırılır? (Tekrar: Pekiştirme)",
+      "id": "patoloji_pv3-004",
+      "question": "Özellikle genç erkeklerde görülen, kemiğin diafiz yerleşimli ve radyolojide \"soğan zarı\" (onion skin) görüntüsü veren küçük yuvarlak hücreli tümörü hangisidir?",
       "options": [
-        "A) Adenokarsinom",
-        "B) Liposarkom",
-        "C) Papillom",
-        "D) Melanom",
-        "E) Lenfoma"
-      ],
-      "correct_answer": "B) Liposarkom",
-      "explanation": "Bağ dokusundan (yağ, kemik, kas) köken alan malign tümörlere sarkom eki getirilir. Lipom iyi huylu, liposarkom kötü huyludur."
-    },
-    {
-      "id": "patoloji_prof_v3-007",
-      "question": "Hodgkin lenfomanın karakteristik hücresi olan Reed-Sternberg (RS) hücreleri hangi kökenlidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) T lenfosit",
-        "B) B lenfosit",
-        "C) Makrofaj",
-        "D) Dendritik hücre",
-        "E) NK hücre"
-      ],
-      "correct_answer": "B) B lenfosit",
-      "explanation": "RS hücreleri genellikle germinal merkezden köken alan, anormal dev B lenfositleridir. CD15 ve CD30 pozitiftirler."
-    },
-    {
-      "id": "patoloji_prof_v3-008",
-      "question": "Karaciğer sirozunda en önemli morfolojik değişiklikler nelerdir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Sadece yağlanma",
-        "B) Fibröz septalar ve Rejenerasyon nodülleri",
-        "C) Karaciğerin büyümesi",
-        "D) Safra kanalı atrezisi",
-        "E) Malign dönüşüm (her zaman olmaz)"
-      ],
-      "correct_answer": "B) Fibröz septalar ve Rejenerasyon nodülleri",
-      "explanation": "Sirozda normal parenkim yapısı bozulur, nodüler yapılar oluşur ve etrafları yoğun fibrozis (bağ dokusu) ile çevrilir."
-    },
-    {
-      "id": "patoloji_prof_v3-009",
-      "question": "Beyin dokusunda iskemi sonrası görülen nekroz tipi hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Koagülasyon nekrozu",
-        "B) Likuefaksiyon (Sıvılaşma) nekrozu",
-        "C) Yağ nekrozu",
-        "D) Kazeifikasyon nekrozu",
-        "E) Fibrinoid nekroz"
-      ],
-      "correct_answer": "B) Likuefaksiyon (Sıvılaşma) nekrozu",
-      "explanation": "Beyin dokusunda sindirici enzimler (hidrolazlar) baskın olduğu için nekrotik alan hızla sıvılaşır."
-    },
-    {
-      "id": "patoloji_prof_v3-010",
-      "question": "Akut romatizmal ateşte (ARA) görülen miyokardiyal \"Aschoff cisimcikleri\" hangi hücreleri içerir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) görülen miyokardiyal \"Aschoff cisimcikleri\" hangi hücreleri içerir? (Tekrar: Pekiştirme)",
-        "A) Reed-Sternberg",
-        "B) Anitschkow hücreleri (Tırtıl hücreleri)",
-        "C) Langerhans dev hücreleri",
-        "D) Kupffer hücreleri",
-        "E) Mezotelyal hücreler"
-      ],
-      "correct_answer": "B) Anitschkow hücreleri (Tırtıl hücreleri)",
-      "explanation": "Aschoff cisimcikleri ARA'nın patognomonik lezyonlarıdır ve aktive olmuş makrofajlar olan tırtıl hücrelerini barındırır."
-    },
-    {
-      "id": "patoloji_prof_v3-011",
-      "question": "\"Plevra\"da (akciğer zarı) gelişen ve asbest maruziyetiyle yakından ilişkili olan malign tümör hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Malign Mezotelyoma",
-        "B) Skuamöz hücreli karsinom",
-        "C) Küçük hücreli karsinom",
-        "D) Adenokarsinom",
-        "E) Hamartom"
-      ],
-      "correct_answer": "A) Malign Mezotelyoma",
-      "explanation": "Asbest lifleri akciğer zarında kronik irritasyon yaparak yıllar sonra mezotelyomaya neden olabilir."
-    },
-    {
-      "id": "patoloji_prof_v3-012",
-      "question": "Meme kanserinde \"prognozu belirleyen\" en önemli parametre hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Tümörün histolojik tipi",
-        "B) Hastanın yaşı",
-        "C) Aksiller lenf nodu tutulumu (Axillary node metastasis)",
-        "D) Ki-67 indeksi",
-        "E) Hormon reseptör durumu"
-      ],
-      "correct_answer": "C) Aksiller lenf nodu tutulumu (Axillary node metastasis)",
-      "explanation": "Evreleme ( staging) kriteri olan lenf nodu tutuluşu, hastalığın yayılımını gösteren en kritik prognostik faktördür."
-    },
-    {
-      "id": "patoloji_prof_v3-013",
-      "question": "\"Berrak hücreli\" (Clear cell) morfolojisi en sık hangi organ kanserinde görülür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Böbrek (RCC)",
-        "B) Kolon",
-        "C) Tiroid",
-        "D) Pankreas",
-        "E) Kemik"
-      ],
-      "correct_answer": "A) Böbrek (RCC)",
-      "explanation": "Renal Hücreli Karsinom'un (RCC) en sık tipi Berrak Hücreli tiptir (sitoplazmadaki glikojen ve lipid nedeniyle boş görünür)."
-    },
-    {
-      "id": "patoloji_prof_v3-014",
-      "question": "Midenin \"linitis plastica\" (meşin şişe mide) görüntüsü hangi tip kanserde görülür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Polipoid kanser",
-        "B) Diffüz tip (Taşlı yüzük hücreli) karsinom",
-        "C) İntestinal tip adenokarsinom",
-        "D) Mukoza dışı sarkom",
-        "E) Lenfoma"
-      ],
-      "correct_answer": "B) Diffüz tip (Taşlı yüzük hücreli) karsinom",
-      "explanation": "Taşlı yüzük hücreleri duvar boyunca infiltre olarak mideyi sertleştirir ve linitis plastica tablosunu oluşturur."
-    },
-    {
-      "id": "patoloji_prof_v3-015",
-      "question": "Tiroidin \"Papiller Karsinomu\"nda görülen çekirdek içi karakteristik bulgu hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Baykuş gözü",
-        "B) Orphan Annie çekirdeği (buzlu cam görüntüsü)",
-        "C) Kahve çekirdeği (Grooves)",
-        "D) İntrasitoplazmik lümen",
-        "E) Piknotik çekirdek"
-      ],
-      "correct_answer": "B) Orphan Annie çekirdeği (buzlu cam görüntüsü)",
-      "explanation": "Papiller karsinomda kromatinin kenara itilmesiyle oluşan şeffaf çekirdek görüntüsü tanıda çok önemlidir."
-    },
-    {
-      "id": "patoloji_prof_v3-016",
-      "question": "Kronik gastrit zemininde \"Helicobacter pylori\" enfeksiyonu hangi kanser türünün riskini artırır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Sadece adenokarsinom",
-        "B) Mide MALT lenfoması ve Adenokarsinom",
-        "C) Skuamöz hücreli karsinom",
-        "D) GİST (Gastrointestinal Stromal Tümör)",
-        "E) Leiomyosarkom"
-      ],
-      "correct_answer": "B) Mide MALT lenfoması ve Adenokarsinom",
-      "explanation": "H. pylori hem epitelyal (adenokarsinom) hem de lenfoid (MALToma) malignite riskini belirgin artırır."
-    },
-    {
-      "id": "patoloji_prof_v3-017",
-      "question": "Aşağıdakilerden hangisi \"hipertrofi\"nin (hacim artışı) fizyolojik örneğidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Kalp kapak hastalığında sol ventrikül büyümesi",
-        "B) Egzersiz yapan sporcuda iskelet kası büyümesi",
-        "C) Hipertansiyonda kalp büyümesi",
-        "D) Böbrek kaybı sonrası diğer böbreğin büyümesi",
-        "E) Hipertiroidide tiroid büyümesi"
-      ],
-      "correct_answer": "B) Egzersiz yapan sporcuda iskelet kası büyümesi",
-      "explanation": "Spor yapanlarda kas liflerinin iş yükü artışı sonucu büyümesi sağlıklı bir (fizyolojik) hipertrofidir. Diğerleri hastalıklara yanıttır (patolojik)."
-    },
-    {
-      "id": "patoloji_prof_v3-018",
-      "question": "Karaciğerde demir birikimi (Hemosiderozis) sonucu görülen patolojik boyama hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) PAS boyası",
-        "B) Perls Prussian Blue (Prusya Mavisi)",
-        "C) Alçı mavisi",
-        "D) Kongo kırmızısı",
-        "E) Gümüşleme (Silver stain)"
-      ],
-      "correct_answer": "B) Perls Prussian Blue (Prusya Mavisi)",
-      "explanation": "Hemosiderin (demir), Prusya mavisi ile masmavi boyanarak makrofajlar içinde gösterilir."
-    },
-    {
-      "id": "patoloji_prof_v3-019",
-      "question": "\"Apoptozis\" (programlı hücre ölümü) sırasında DNA parçalanmasını (fragmentasyon) sağlayan enzim grubu hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Transaminazlar",
-        "B) Kaspazlar (Caspases)",
-        "C) Peroksidazlar",
-        "D) Helikazlar",
-        "E) Ligazlar"
-      ],
-      "correct_answer": "B) Kaspazlar (Caspases)",
-      "explanation": "Kaspazlar (sistein proteazlar), apoptozisin ana \"cell execution\" (hücre yürütme) sistemi enzimleridir."
-    },
-    {
-      "id": "patoloji_prof_v3-020",
-      "question": "Prostat karsinomunun en sık rastlandığı anatomik bölge hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Santral zon",
-        "B) Transizyonel zon (BPH burada sıktır)",
-        "C) Periferik zon",
-        "D) Periüretral bölge",
-        "E) Anterior stroma"
-      ],
-      "correct_answer": "C) Periferik zon",
-      "explanation": "Prostat kanseri %70-80 oranında periferik zonda gelişir, bu yüzden rektal tuşe ile saptanması daha olasıdır."
-    },
-    {
-      "id": "patoloji_prof_v3-021",
-      "question": "Aşağıdakilerden hangisi \"amiloidoz\" tanısı koymak için kullanılan karakteristik boyadır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Gram boyası",
-        "B) EZN",
-        "C) Kongo Kırmızısı (Apple-green birefringence)",
-        "D) Masson Trichrome",
-        "E) Retikülin boyası"
-      ],
-      "correct_answer": "C) Kongo Kırmızısı (Apple-green birefringence)",
-      "explanation": "Amiloid, Kongo kırmızısı ile boyandıktan sonra polarize mikroskopta elma yeşili çift kırınım (birefringence) verir."
-    },
-    {
-      "id": "patoloji_prof_v3-022",
-      "question": "Bağırsak tıkanması (volvulus) veya boğulmuş fıtıkta barsak dokusunda görülen nekroz tipi hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Kuru kangren",
-        "B) Hemorajik (Islak) kangren",
-        "C) Kazeifikasyon",
-        "D) Yağ nekrozu",
-        "E) Fibrinoid"
-      ],
-      "correct_answer": "B) Hemorajik (Islak) kangren",
-      "explanation": "Venöz tıkanıklığın eşlik ettiği iskemi durumlarında dokuya kan sızar (hemorajik) ve üzerine bakteriler eklenince yaş/ıslak kangren oluşur."
-    },
-    {
-      "id": "patoloji_prof_v3-023",
-      "question": "Hodgkin lenfomanın \"prognozu en kötü\" (en agresif) tipi hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Nodüler sklerozan",
-        "B) Karma hücreli",
-        "C) Lenfositten zengin",
-        "D) Lenfositten fakir (Lymphocyte-depleted)",
-        "E) Granülomatöz"
-      ],
-      "correct_answer": "D) Lenfositten fakir (Lymphocyte-depleted)",
-      "explanation": "Lenfosit miktarı azaldıkça tümörün agresifliği ve RS hücrelerinin sıklığı artar."
-    },
-    {
-      "id": "patoloji_prof_v3-024",
-      "question": "Akut pankreatitte yağ nekrozu sonucu oluşan kalsiyum birikimlerine (sabunlaşma) ne denir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Karsifikasyon",
-        "B) Saponifikasyon",
-        "C) Mineralizasyon",
-        "D) Distrofi",
-        "E) Ossifikasyon"
-      ],
-      "correct_answer": "B) Saponifikasyon",
-      "explanation": "Lipazlar yağları yıkar, açığa çıkan yağ asitleri kalsiyumla birleşerek tebeşirimsi-beyaz kireçlenmeler (sabunlar) oluşturur."
-    },
-    {
-      "id": "patoloji_prof_v3-025",
-      "question": "\"Psammom cisimcikleri\" (kalsifiye laminer yapılar) aşağıdakilerden hangisinde saptanmaz? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Papiller tiroid karsinomu",
-        "B) Over seröz adenokarsinomu",
-        "C) Meningioma",
-        "D) Medülloblastom",
-        "E) Papiller böbrek RCC"
-      ],
-      "correct_answer": "D) Medülloblastom",
-      "explanation": "Psammom cisimcikleri epitel kökenli bazı kanserlerde görülür; Medülloblastom (beyin tümörü) bir embriyonel tümördür ve bu yapılar orada beklenmez."
-    },
-    {
-      "id": "patoloji_prof_v3-026",
-      "question": "Tip 1 aşırı duyarlılık (anafilaksi) reaksiyonlarında rol oynayan mediyatör (histamin) hangi hücrelerden salınır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Nötrofiller",
-        "B) Mast hücreleri ve Bazofiller",
-        "C) Makrofajlar",
-        "D) Plazma hücreleri",
-        "E) Trombositler"
-      ],
-      "correct_answer": "B) Mast hücreleri ve Bazofiller",
-      "explanation": "IgE'nin allerjenle çapraz bağlanması sonucu mast hücreleri içindeki granülleri (histamin vb.) boşaltır."
-    },
-    {
-      "id": "patoloji_prof_v3-027",
-      "question": "Primer Karaciğer Kanseri (HCC) için en riskli viral etken hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "C) için en riskli viral etken hangisidir? (Tekrar: Pekiştirme)",
-        "A) HBV ve HCV (Kronik süreç)",
-        "B) HAV",
-        "C) HEV",
-        "D) EBV",
-        "E) CMV"
-      ],
-      "correct_answer": "A) HBV ve HCV (Kronik süreç)",
-      "explanation": "Kronik hepatit B ve C, siroz üzerinden veya doğrudan DNA manipülasyonuyla hepatosellüler karsinom riskini yüzlerce kat artırır."
-    },
-    {
-      "id": "patoloji_prof_v3-028",
-      "question": "Bir epitel dokusundan köken alan \"iyi huylu\" tümörlere ne ad verilir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Adenom veya Papillom",
-        "B) Sarkom",
-        "C) Adenokarsinom",
-        "D) Gliom",
-        "E) Teratom"
-      ],
-      "correct_answer": "A) Adenom veya Papillom",
-      "explanation": "Bez yapısı yapıyorsa adenom, parmaksı çıkıntılar yapıyorsa papillom denir. -oma eki genellikle iyi huyludur."
-    },
-    {
-      "id": "patoloji_prof_v3-029",
-      "question": "Alzheimer hastalığında hücre içinde biriken Ta-proteini kümelerine ne ad verilir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Senil plaklar",
-        "B) Nörofibriler yumaklar (Neurofibrillary tangles)",
-        "C) Pick cisimcikleri",
-        "D) Lewy cisimcikleri",
-        "E) Negri cisimcikleri"
-      ],
-      "correct_answer": "B) Nörofibriler yumaklar (Neurofibrillary tangles)",
-      "explanation": "Amiloid plaklar hücre dışında, Tau (nörofibriler yumaklar) ise hücre içindedir."
-    },
-    {
-      "id": "patoloji_prof_v3-030",
-      "question": "Kemik kanserleri arasında gençlerde sık görülen ve \"soğan zarı\" (onion skin) periost reaksiyonuna yol açan tümör hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Osteosarkom",
-        "B) Ewing Sarkomu",
+        "A) Ewing Sarkomu",
+        "B) Osteosarkom",
         "C) Kondrosarkom",
-        "D) Dev hücreli kemik tümörü",
-        "E) Osteoid osteoma"
+        "D) Multipl Miyelom",
+        "E) Osteoid Osteoma"
       ],
-      "correct_answer": "B) Ewing Sarkomu",
-      "explanation": "Ewing sarkomu kemik iliğinden kaynaklanır ve kemik zarında tabaka tabaka (soğan zarı) kireçlenmeye neden olur."
+      "correct_answer": "A) Ewing Sarkomu",
+      "explanation": "Ewing sarkomu t(11;22) translokasyonu ile ilişkilidir ve periost reaksiyonuna bağlı katmanlı kemik oluşumu ile tanınır."
     },
     {
-      "id": "patoloji_prof_v3-031",
-      "question": "\"Metaplazi\" olayı için hangisi doğrudur? (Tekrar: Pekiştirme)",
+      "id": "patoloji_pv3-005",
+      "question": "\"Paraneoplastik sendrom\" olarak \"Hiperkalsemi\" (PTHrP salınımı ile) en sık hangi akciğer kanseri türünde görülür?",
       "options": [
-        "A) Hücre sayısının artmasıdır",
-        "B) Hücrenin kansere dönüşmesidir",
-        "C) Bir erişkin hücre tipinin yerini başka bir erişkin hücre tipine bırakmasıdır",
-        "D) Hücrenin boyunun uzamasıdır",
-        "E) Hücrenin ölmesidir"
+        "A) Skuamöz hücreli karsinom",
+        "B) Adenokarsinom",
+        "C) Küçük hücreli karsinom (SCLC)",
+        "D) Büyük hücreli karsinom",
+        "E) Karsinoid tümör"
       ],
-      "correct_answer": "C) Bir erişkin hücre tipinin yerini başka bir erişkin hücre tipine bırakmasıdır",
-      "explanation": "Örneğin sigara içenlerde solunum yolu epitelinin yassı hücreye dönüşmesi (Squamous metaplasia)."
+      "correct_answer": "A) Skuamöz hücreli karsinom",
+      "explanation": "Skuamöz hücreli karsinom, PTH benzeri protein salgılayarak kalsiyum yüksekliğine neden olur. Küçük hücreli karsinom ise daha çok ACTH ve ADH (SIADH) salgılar."
     },
     {
-      "id": "patoloji_prof_v3-032",
-      "question": "Aşağıdakilerden hangisi bir \"ön kanser\" (prekanseröz) lezyon değildir? (Tekrar: Pekiştirme)",
+      "id": "patoloji_pv3-006",
+      "question": "Hipertansiyon hastalarının böbreklerinde, arteriol duvarlarının pembe, camsı bir şekilde kalınlaşmasıyla giden patolojik tablo hangisidir?",
       "options": [
-        "A) Lökoplaki",
-        "B) Barrett Özofagusu",
-        "C) Mide ülseri (Peptik ülser - genelde kanserleşmez)",
-        "D) Aktinik keratoz",
-        "E) Ülseratif kolit"
-      ],
-      "correct_answer": "C) Mide ülseri (Peptik ülser - genelde kanserleşmez)",
-      "explanation": "Peptik ülserler genelde kansere dönüşmez. Ancak mide karsinomu ülser şeklinde başlayabilir (ayırt edilmelidir)."
-    },
-    {
-      "id": "patoloji_prof_v3-033",
-      "question": "Ödemin patogenezinde rol oynayan ana mekanizma hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Plazma onkotik basıncının artması",
-        "B) Hidrostatik basıncın artması ve Onkotik basıncın düşmesi",
-        "C) Lenf akımının bozulması",
-        "D) Na ve Su tutulumu",
-        "E) Hepsi (B, C, D)"
-      ],
-      "correct_answer": "E) Hepsi (B, C, D)",
-      "explanation": "Ödem birden çok mekanizmayla (basınç farkları, lenf drenaj sorunu, sodyum birikimi) oluşabilir."
-    },
-    {
-      "id": "patoloji_prof_v3-034",
-      "question": "Pankreas kanserlerinin en sık yerleştiği anatomik kısım hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Baş (Head)",
-        "B) Gövde (Body)",
-        "C) Kuyruk (Tail)",
-        "D) Uncinate proces",
-        "E) Gastrik antrum"
-      ],
-      "correct_answer": "A) Baş (Head)",
-      "explanation": "Pankreas kanserleri %60-70 oranında baş kısmında görülür ve sarılıkla (safra yolu basısı) erken belirti verir."
-    },
-    {
-      "id": "patoloji_prof_v3-035",
-      "question": "\"Ph-pozitif\" (Philadelphia kromozomu) ile karakterize lösemi türü hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Akut Lenfoblastik Lösemi (çocuklarda)",
-        "B) Kronik Miyeloid Lösemi (CML)",
-        "C) Kronik Lenfositik Lösemi (CLL)",
-        "D) Akut Myeloid Lösemi (AML)",
-        "E) Multipl Miyelom"
-      ],
-      "correct_answer": "B) Kronik Miyeloid Lösemi (CML)",
-      "explanation": "t(9;22) BCR-ABL translokasyonu CML'nin tanısal belirtecidir."
-    },
-    {
-      "id": "patoloji_prof_v3-036",
-      "question": "Bir organda \"Atrofi\" görülmesinin nedeni ne olabilir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Aşırı kullanım",
-        "B) Beslenme bozukluğu veya kullanılmama (disuse)",
-        "C) Fazla kanlanma",
-        "D) Gençlik dönemi",
-        "E) Hücre bölünmesinin artması"
-      ],
-      "correct_answer": "B) Beslenme bozukluğu veya kullanılmama (disuse)",
-      "explanation": "İş yükünün azalması, innervasyon kaybı veya yetersiz beslenme sonucu hücre boyutunun küçülmesine atrofi denir."
-    },
-    {
-      "id": "patoloji_prof_v3-037",
-      "question": "Meme kanserinde \"Taşlı yüzük\" (Signet ring) morfolojisi tipik olarak hangi alt türde görülür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) İnvaziv Duktal Karsinom (IDK)",
-        "B) İnvaziv Lobüler Karsinom (ILK)",
-        "C) Medüller Karsinom",
-        "D) Müsinöz Karsinom",
-        "E) Tübüler Karsinom"
-      ],
-      "correct_answer": "B) İnvaziv Lobüler Karsinom (ILK)",
-      "explanation": "Lobüler kanserlerde taşlı yüzük hücrelerine rastlanması duktal tiplere göre daha karakteristik bir özelliktir."
-    },
-    {
-      "id": "patoloji_prof_v3-038",
-      "question": "Karaciğerde yağlanma (Steatoz) görülmesi hangi makromolekülün depolanmasıyla ilgilidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Protein",
-        "B) Karbonhidrat (Glikojen)",
-        "C) Trigliseridler",
-        "D) Kolesterol",
-        "E) Fosfolipidler"
-      ],
-      "correct_answer": "C) Trigliseridler",
-      "explanation": "Hepatositlerin sitoplazmasında serbest yağ asitlerinden sentezlenen trigliseridlerin damlacıklar halinde birikmesi durumudur."
-    },
-    {
-      "id": "patoloji_prof_v3-039",
-      "question": "Crohn hastalığında bağırsak duvarının tüm katmanlarının tutulmasına ne ad verilir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Mukozal tutulum",
-        "B) Transmural tutulum",
-        "C) Serozal inflamasyon",
-        "D) Segmenter tutulum",
-        "E) Kontinü tutulum"
-      ],
-      "correct_answer": "B) Transmural tutulum",
-      "explanation": "Crohn mukozadan serozaya kadar tüm bağırsak duvarını (transmural) tuttuğu için fistül ve delinmelere yol açar."
-    },
-    {
-      "id": "patoloji_prof_v3-040",
-      "question": "Böbrekte \"Nefrotik Sendrom\"un çocuklarda en sık nedeni olan hastalık hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Membranöz Glomerulonefrit",
-        "B) Minimal Değişiklik Hastalığı (Minimal Change Disease)",
-        "C) Diyabetik Nefropati",
-        "D) Lupus Nefriti",
-        "E) Amiloidoz"
-      ],
-      "correct_answer": "B) Minimal Değişiklik Hastalığı (Minimal Change Disease)",
-      "explanation": "Işık mikroskobunda normal görünmesine rağmen elektron mikroskobunda podosit ayaklarında silinme ile giden bu tablo çocuklarda %90 oranda görülür."
-    },
-    {
-      "id": "patoloji_prof_v3-041",
-      "question": "Akut enflamasyonda lökositlerin damardan dokuya çıkış sırası nasıldır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Marginasyon -> Rolling -> Adhezyon -> Diyapedez",
-        "B) Adhezyon -> Rolling -> Diyapedez -> Marginasyon",
-        "C) Rolling -> Adhezyon -> Marginasyon -> Fagositoz",
-        "D) Diyapedez -> Kemotaksi -> Adhezyon",
-        "E) Rolling -> Diyapedez -> Kemotaksi -> Marginasyon"
-      ],
-      "correct_answer": "A) Marginasyon -> Rolling -> Adhezyon -> Diyapedez",
-      "explanation": "Lökositler önce duvara yanaşır (marginasyon), sonra yuvarlanır (rolling), sıkıca yapışır (adhezyon) ve damar dışına sızar (diyapedez)."
-    },
-    {
-      "id": "patoloji_prof_v3-042",
-      "question": "Bir tümörün \"in-situ\" olması ne demektir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Metastaz yapmıştır",
-        "B) Bazal membranı aşmıştır",
-        "C) Bazal membranı aşmamış, sınırlı kalmıştır",
-        "D) Kansere dönüşmüştür (ancak iyi huyludur)",
-        "E) Sadece kanda yayılmıştır"
-      ],
-      "correct_answer": "C) Bazal membranı aşmamış, sınırlı kalmıştır",
-      "explanation": "Carcinoma in-situ, malign karakterde olmasına rağmen çevre dokuya invaze olmamış safhadır."
-    },
-    {
-      "id": "patoloji_prof_v3-043",
-      "question": "Derinin \"en yaygın\" ve metastaz yapması en nadir olan malign tümörü hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Skuamöz Hücreli Karsinom",
-        "B) Malign Melanom",
-        "C) Bazal Hücreli Karsinom (BCC)",
-        "D) Merkel Hücreli Karsinom",
-        "E) Kaposi Sarkomu"
-      ],
-      "correct_answer": "C) Bazal Hücreli Karsinom (BCC)",
-      "explanation": "BCC (Kemirici ülser), lokal olarak yıkım yapsa da uzak organ metastazı yok denecek kadar azdır."
-    },
-    {
-      "id": "patoloji_prof_v3-044",
-      "question": "Wilms Tümörü (Nefroblastom) patolojisinde görülen en tipik yapı hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Rozetler",
-        "B) Blastemal, stromal ve epitelyal (trifazik) komponentler",
-        "C) Papiller yapılar",
-        "D) Saf kistik yapılar",
-        "E) Adipoz doku artışı"
-      ],
-      "correct_answer": "B) Blastemal, stromal ve epitelyal (trifazik) komponentler",
-      "explanation": "Wilms tümörü embriyonel kökenli olduğu için farklı doku elemanlarını (böbrek taslağı gibi) bir arada barındırır."
-    },
-    {
-      "id": "patoloji_prof_v3-045",
-      "question": "\"Piyojenik granülom\" (gebelik tümörü olarak da bilinir) aslında ne tür bir lezyondur? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Gerçek bir neoplazi",
-        "B) Lobüler kapiller hemanjiyom (vasküler proliferasyon)",
-        "C) Malign bir sarkom",
-        "D) Epitel kisti",
-        "E) Mantar enfeksiyonu"
-      ],
-      "correct_answer": "B) Lobüler kapiller hemanjiyom (vasküler proliferasyon)",
-      "explanation": "Adı yanıltıcıdır; granülom veya tümör değil, travma sonrası gelişen aşırı damar çoğalmasıdır."
-    },
-    {
-      "id": "patoloji_prof_v3-046",
-      "question": "Bir hücrenin \"hiperplazi\" göstermesi için o hücrenin hangi yeteneğe sahip olması gerekir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Salgı yapma yeteneği",
-        "B) Enerji üretme yeteneği",
-        "C) Bölünme (mitoz) yeteneği",
-        "D) Hareket etme yeteneği",
-        "E) Protein sentezleme yeteneği"
-      ],
-      "correct_answer": "C) Bölünme (mitoz) yeteneği",
-      "explanation": "Hücre sayısı artışına dayanan hiperplazi, sadece bölünebilen dokularda (örn: karaciğer, kemik iliği) görülür. Kalp kasında görülmez (hipertrofi görülür)."
-    },
-    {
-      "id": "patoloji_prof_v3-047",
-      "question": "Karaciğerde \"buzlu cam\" (ground-glass) hepatositlerin görülmesi tipik olarak hangi hastalığı düşündürür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Hepatit A",
-        "B) Kronik Hepatit B (HBsAg birikimi)",
-        "C) Alkolik hepatit",
-        "D) İlaç toksisitesi",
-        "E) Karaciğer yağlanması"
-      ],
-      "correct_answer": "B) Kronik Hepatit B (HBsAg birikimi)",
-      "explanation": "Sitoplazmada aşırı HBsAg sentezi ve birikimi, ışık mikroskobunda mat, buzlu cam görüntüsü verir."
-    },
-    {
-      "id": "patoloji_prof_v3-048",
-      "question": "\"Diyabetik nefropati\"nin en karakteristik glomerüler bulgusu hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Diffüz glomerüloskleroz",
-        "B) Kimmelstiel-Wilson nodülleri (Nodüler glomerüloskleroz)",
-        "C) Armanni-Ebstein lezyonları",
-        "D) Kresent (yarım ay) oluşumu",
-        "E) Tel halkası (wire-loop)"
-      ],
-      "correct_answer": "B) Kimmelstiel-Wilson nodülleri (Nodüler glomerüloskleroz)",
-      "explanation": "Nodüler mezanşial kalınlaşma olan KW nodülleri diyabete özgü (patognomonik) kabul edilir."
-    },
-    {
-      "id": "patoloji_prof_v3-049",
-      "question": "Akut iltihabın (enflamasyon) klasik 5 belirtisi arasında bulunan \"tumor\" neyi ifade eder? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Kanser oluşumu",
-        "B) Bölgesel şişlik (Ödem nedeniyle)",
-        "C) Ağrı",
-        "D) Isı artışı",
-        "E) Fonksiyon kaybı"
-      ],
-      "correct_answer": "B) Bölgesel şişlik (Ödem nedeniyle)",
-      "explanation": "Celsus'un 4 kriterine (rubor, calor, tumor, dolor) Galen'in functio laesa (fonksiyon kaybı) eklenmiştir. Tumor, ödeme bağlı şişlik demektir."
-    },
-    {
-      "id": "patoloji_prof_v3-050",
-      "question": "Keratinize skuamöz hücreli karsinomda saptanan \"epitelyal inciler\" (pearls) tümörün hangi özelliğini gösterir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Kötü prognozunu",
-        "B) Diferansiyasyonunu (normal yassı epitele benziyor ve keratin üretiyor)",
-        "C) Metastaz yaptığını",
-        "D) Hızlı bölündüğünü",
-        "E) Damar invazyonunu"
-      ],
-      "correct_answer": "B) Diferansiyasyonunu (normal yassı epitele benziyor ve keratin üretiyor)",
-      "explanation": "Tümörün \"keratin incisi\" yapması, onun yassı epiteli taklit ettiğini ve iyi diferansiye (well-differentiated) olduğunu gösterir."
-    },
-    {
-      "id": "patoloji_prof_v3-051",
-      "question": "\"Hücre zedelenmesinde\" serbest radikalleri (ROS) temizleyerek hücreyi koruyan en önemli antioksidan molekül hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Glutatyon (GSH)",
-        "B) Glukoz",
-        "C) Ferritin",
-        "D) Kolesterol",
-        "E) Kalsiyum"
-      ],
-      "correct_answer": "A) Glutatyon (GSH)",
-      "explanation": "Glutatyon, süperoksit dismutaz ve katalaz gibi enzimler serbest radikal hasarını (oksidatif stres) önleyen ana savunma hattıdır."
-    },
-    {
-      "id": "patoloji_prof_v3-052",
-      "question": "Myokard enfarktüsü sonrası oluşan \"parchment\" (parşömen) tipi doku kaybına veya kireçlenmeye ne denir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Koagülasyon nekrozu",
-        "B) Distrofik kalsifikasyon",
-        "C) Yağ nekrozu",
+        "A) Hyalin Arterioloskleroz",
+        "B) Hiperplastik Arterioloskleroz",
+        "C) Monckeberg kalsifikasyonu",
         "D) Fibrinoid nekroz",
-        "E) Metastatik kalsifikasyon"
+        "E) Ateroskleroz"
       ],
-      "correct_answer": "B) Distrofik kalsifikasyon",
-      "explanation": "Ölmüş (nekrotik) dokuda kalsiyum çökmesine distrofik kalsifikasyon denir (Kalsiyum seviyesi normaldir)."
+      "correct_answer": "A) Hyalin Arterioloskleroz",
+      "explanation": "Uzun süreli benign hipertansiyonda ve diyabette plazma proteinlerinin bazal membrana sızması sonucu hyalin arterioloskleroz gelişir."
     },
     {
-      "id": "patoloji_prof_v3-053",
-      "question": "Karın boşluğunu kaplayan plevra (mezotelyum) hücrelerinin uyarılmasıyla gelişen \"Ascites\" (Karın sıvısı) en sık hangi durumda görülür? (Tekrar: Pekiştirme)",
+      "id": "patoloji_pv3-007",
+      "question": "Karaciğer kistik lezyonları arasında, \"scolex\"lerin (parazit başı) ve \"kız veziküllerin\" görülmesi hangi patolojiyi kanıtlar?",
       "options": [
-        "A) Akut Apandisit",
-        "B) Karaciğer Sirozu (Portal Hipertansiyon)",
-        "C) Mide Ülseri",
-        "D) İdrar Yolu Enfeksiyonu",
-        "E) Miyokard Enfarktüsü"
+        "A) Hidatik kist (Echinococcus granulosus)",
+        "B) Amip apsesi",
+        "C) Piyojenik apse",
+        "D) Biliyer kistadenom",
+        "E) Polikistik karaciğer hastalığı"
       ],
-      "correct_answer": "B) Karaciğer Sirozu (Portal Hipertansiyon)",
-      "explanation": "Portal ven basınç artışı ve onkotik basınç düşüşü (albümin sentez azlığı) karın boşluğunda massiv sıvı birikmesine (asit) yol açar."
+      "correct_answer": "A) Hidatik kist (Echinococcus granulosus)",
+      "explanation": "Echinococcus granulosus larvaları karaciğerde kist oluşturur; kist içindeki çimlenme zarından skoleksler ve yeni kistler oluşur."
     },
     {
-      "id": "patoloji_prof_v3-054",
-      "question": "Kronik inflamasyon lezyonu olan \"Granülom\"un merkezinde nekroz yoksa (non-kazeifiye), öncelikle hangi hastalık düşünülmelidir? (Tekrar: Pekiştirme)",
+      "id": "patoloji_pv3-008",
+      "question": "Tiroid kanserleri arasında en iyi prognoza sahip olan ve karakteristik olarak \"Orphan Annie\" (buzlu cam) çekirdekleri içeren tür hangisidir?",
       "options": [
-        "A) Tüberküloz",
-        "B) Sarkoidoz",
-        "C) Sifiliz",
-        "D) Cüzzam (Lepra)",
-        "E) Mantar enfeksiyonu"
+        "A) Papiller karsinom",
+        "B) Foliküler karsinom",
+        "C) Medüller karsinom",
+        "D) Anaplastik karsinom",
+        "E) Hurthle hücreli tümör"
       ],
-      "correct_answer": "B) Sarkoidoz",
-      "explanation": "Tüberküloz kazeifikasyon yapar; Sarkoidoz ise tipik olarak kazeifiye olmayan çıplak granülomlar yapar."
+      "correct_answer": "A) Papiller karsinom",
+      "explanation": "Papiller karsinom en sık görülen tiroid kanseridir ve intranükleer psödoinvazyonlar ve şeffaf çekirdeklerle tanınır; Psammom cisimcikleri de sık görülür."
     },
     {
-      "id": "patoloji_prof_v3-055",
-      "question": "Bölünme (mitoz) yeteneği olmayan \"kalıcı\" (permanent) hücre grubu hangisidir? (Tekrar: Pekiştirme)",
+      "id": "patoloji_pv3-009",
+      "question": "Bir hücrede \"Apoptozis\"in başladığının ve hücrenin ölüm yoluna girdiğinin kesin kanıtı olan karakteristik morfolojik bulgu hangisidir?",
       "options": [
-        "A) Karaciğer hepatositleri",
-        "B) Kemik iliği hücreleri",
-        "C) Sinir hücreleri (nöronlar) ve Kalp kası hücreleri",
-        "D) Deri epitel hücreleri",
-        "E) Pankreas bez hücreleri"
+        "A) Kromatin kondansasyonu (Piknozis) ve Apoptozis cisimcikleri",
+        "B) Hücrenin şişmesi",
+        "C) Endoplazmik retikulum genişlemesi",
+        "D) Lizozomların parçalanması",
+        "E) Yağlanma (Steatoz)"
       ],
-      "correct_answer": "C) Sinir hücreleri (nöronlar) ve Kalp kası hücreleri",
-      "explanation": "Nöronlar ve kalp kası gibi kalıcı hücreler bölünemezler; hasar gördüklerinde yerini bağ dokusu (skar) alır."
+      "correct_answer": "A) Kromatin kondansasyonu (Piknozis) ve Apoptozis cisimcikleri",
+      "explanation": "Apoptozis sırasında hücre büzülür, çekirdek parçalanır ve hücre zarıyla çevrili küçük parçalara (cisimciklere) ayrılır. Nekrozda ise hücre şişer ve patlar."
     },
     {
-      "id": "patoloji_prof_v3-056",
-      "question": "Beyindeki \"Lewy cisimcikleri\" en çok hangi hastalıkta görülür? (Tekrar: Pekiştirme)",
+      "id": "patoloji_pv3-010",
+      "question": "Testis tümörleri içinde \"Schiller-Duval cisimcikleri\" ve fötal (embriyonel) yapıların görülmesi hangi tümörü düşündürür?",
       "options": [
-        "A) Alzheimer Hastalığı",
-        "B) Parkinson Hastalığı",
-        "C) Multiple Skleroz",
-        "D) ALS",
-        "E) Huntington Hastalığı"
-      ],
-      "correct_answer": "B) Parkinson Hastalığı",
-      "explanation": "Lewy cisimcikleri, alfa-sinüklein proteininden oluşan inklüzyonlardır ve Parkinson tanısı için karakteristiktir."
-    },
-    {
-      "id": "patoloji_prof_v3-057",
-      "question": "Bir tümörün lenf yoluyla ilk yayıldığı lenf noduna ne denir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Ana lenf nodu",
-        "B) Sentinel (bekçi) lenf nodu",
-        "C) Mezenterik düğüm",
-        "D) Virchow nodu (sol supraklavikuler)",
-        "E) Delphian nodu"
-      ],
-      "correct_answer": "B) Sentinel (bekçi) lenf nodu",
-      "explanation": "Meme kanseri ve melanom gibi cerrahilerde tümörün yayılımını anlamak için bu nod bulunur ve biyopsi yapılır."
-    },
-    {
-      "id": "patoloji_prof_v3-058",
-      "question": "\"Paraneoplastik sendrom\" olarak \"polisitemi\" (aşırı kan hücresi) yapabilen böbrek tümörü hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Renal Hücreli Karsinom (Eritropoetin salgılayarak)",
-        "B) Wilms Tümörü",
-        "C) Ürotelyal Karsinom",
-        "D) Anjiyomiyolipom",
-        "E) Prostat karsinomu"
-      ],
-      "correct_answer": "A) Renal Hücreli Karsinom (Eritropoetin salgılayarak)",
-      "explanation": "RCC, ektopik olarak EPO salgılayarak kanda kırmızı kürelerin aşırı artmasına yol açabilir."
-    },
-    {
-      "id": "patoloji_prof_v3-059",
-      "question": "Kolon kanseri öncüsü olan \"adenomatöz polip\"lerin çapı arttıkça hangi risk artar? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Sadece kanama riski",
-        "B) Kanserleşme (malignleşme) riski",
-        "C) Kendiliğinden kaybolma riski",
-        "D) Enfeksiyon riski",
-        "E) Hiçbir riski yoktur"
-      ],
-      "correct_answer": "B) Kanserleşme (malignleşme) riski",
-      "explanation": "Polipler büyüdükçe ve morfolojisi \"villöz\" yapıya kaydıkça karsinom geliştirme potansiyeli belirginleşir."
-    },
-    {
-      "id": "patoloji_prof_v3-060",
-      "question": "Tip 1 diyabette pankreas adacıklarında (Islets of Langerhans) görülen temel değişiklik nedir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Adacık hiperplazisi",
-        "B) Lenfositik infiltrasyon (Insulitis) ve beta hücre yıkımı",
-        "C) Yağ nekrozu",
-        "D) Amiloid birikimi (Tip 2'de daha sıktır)",
-        "E) Kistik dönüşüm"
-      ],
-      "correct_answer": "B) Lenfositik infiltrasyon (Insulitis) ve beta hücre yıkımı",
-      "explanation": "Tip 1 DM otoimmün bir süreçtir, bağışıklık sistemi T hücreleri aracılığıyla insülin üreten hücreleri yok eder."
-    },
-    {
-      "id": "patoloji_prof_v3-061",
-      "question": "Mesleki olarak \"boya sanayinde\" çalışanlarda idrar yollarında (mesane) gelişme riski artan kanser hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Adenokarsinom",
-        "B) Ürotelyal karsinom (TCC)",
-        "C) Skuamöz karsinom",
-        "D) Lenfoma",
-        "E) Berrak hücreli karsinom"
-      ],
-      "correct_answer": "B) Ürotelyal karsinom (TCC)",
-      "explanation": "Aromatik aminlere (boyalara) maruziyet, idrar yolu epitelinden (transizyonel epitel) köken alan kanserlerin ana risk faktörüdür."
-    },
-    {
-      "id": "patoloji_prof_v3-062",
-      "question": "\"Reed-Sternberg\" hücresi tipik olarak hangi büyüklükteki bir hücredir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Küçük bir lenfosit",
-        "B) Dev boyutta, çok çekirdekli veya baykuş gözü görünümünde",
-        "C) Normal nötrofil boyutunda",
-        "D) Eritrosit kadar",
-        "E) Sadece kanda görülen bir hücredir"
-      ],
-      "correct_answer": "B) Dev boyutta, çok çekirdekli veya baykuş gözü görünümünde",
-      "explanation": "RS hücreleri Hodgkin lenfomanın dev tanısı koyduran hücreleridir."
-    },
-    {
-      "id": "patoloji_prof_v3-063",
-      "question": "Gastrointestinal Stromal Tümörlerde (GIST) en sık rastlanan mutasyon ve hedeflenen reseptör hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) HER2",
-        "B) c-KIT (CD117)",
-        "C) KRAS",
-        "D) EGFR",
-        "E) BRAF"
-      ],
-      "correct_answer": "B) c-KIT (CD117)",
-      "explanation": "GİST'lerin %85-90'ında c-KIT mutasyonu vardır ve Imatinib (Gleevec) tedavisine çok iyi yanıt verirler."
-    },
-    {
-      "id": "patoloji_prof_v3-064",
-      "question": "Hücre zedelenmesinde mitokondride amorf yoğunlukların görülmesi neyi ifade eder? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Geri dönüşümlü hasarı",
-        "B) Hasarın durduğunu",
-        "C) Geri dönüşümsüz (ölümcül) hasarı",
-        "D) Hücrenin canlandığını",
-        "E) Hipertrofiyi"
-      ],
-      "correct_answer": "C) Geri dönüşümsüz (ölümcül) hasarı",
-      "explanation": "Mitokondriyal bu tip ağır yapısal değişiklikler hücrenin geri dönemez bir yola girdiğinin kanıtıdır."
-    },
-    {
-      "id": "patoloji_prof_v3-065",
-      "question": "Karaciğer biyopsisinde \"Councilman cisimcikleri\" (apoptotik hepatositler) görülmesi hangi durumu düşündürür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Piyojenik apse",
-        "B) Akut viral hepatit veya Sarı Humma",
-        "C) Yağlı karaciğer",
-        "D) Amiloidoz",
-        "E) Dubin-Johnson Sendromu"
-      ],
-      "correct_answer": "B) Akut viral hepatit veya Sarı Humma",
-      "explanation": "Councilman cisimcikleri, viral enfeksiyon sonucu ölen hepatositlerin büzülmüş, eozinofilik kalıntılarıdır."
-    },
-    {
-      "id": "patoloji_prof_v3-066",
-      "question": "Bir dokuda \"Metaplazi\" görülmesi gelecekte hangi riski beraberinde getirir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Her zaman iyileşme",
-        "B) Displazi ve Malignite (kanserleşme) riski",
-        "C) Atrofi riski",
-        "D) Hiçbir riski yoktur",
-        "E) Hücrelerin gençleşmesi"
-      ],
-      "correct_answer": "B) Displazi ve Malignite (kanserleşme) riski",
-      "explanation": "Metaplastik doku, stabil kalmazsa displazi üzerinden kanser gelişimine (örn: Barrett -> Özofagus kanseri) zemin hazırlayabilir."
-    },
-    {
-      "id": "patoloji_prof_v3-067",
-      "question": "Myokard enfarktüsü sonrası nekrotik kalbi temizleyen ve \"skar\" dokusuna çeviren süreç hangi dönemde başlar? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) İlk 1 saatte",
-        "B) 3-7. günlerde (granülasyon dokusu oluşumu)",
-        "C) 1 ay sonra",
-        "D) 1 yıl sonra",
-        "E) Hemen saniyeler içinde"
-      ],
-      "correct_answer": "B) 3-7. günlerde (granülasyon dokusu oluşumu)",
-      "explanation": "Ölü hücreleri temizleyen makrofajlar 3. günden itibaren yoğunlaşır ve sonrasında iyileşme (skar) dokusu oluşmaya başlar."
-    },
-    {
-      "id": "patoloji_prof_v3-068",
-      "question": "Bir karsinomun \"evrelemesinde\" (staging) T4 neyi ifade eder? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Tümörün çok küçük olduğunu",
-        "B) Tümörün çevredeki komşu organlara veya ana arterlere invaze olduğunu (en ileri yerel yayılım)",
-        "C) Tümörün lenf sisteminden tamamen temizlendiğini",
-        "D) Uzak metastaz olduğunu (M1 ile gösterilir)",
-        "E) Tümörün henüz başlamadığını"
-      ],
-      "correct_answer": "B) Tümörün çevredeki komşu organlara veya ana arterlere invaze olduğunu (en ileri yerel yayılım)",
-      "explanation": "TNM'de T rakamı arttıkça tümörün boyutu ve çevresel doku tahribatı artmış demektir."
-    },
-    {
-      "id": "patoloji_prof_v3-069",
-      "question": "\"Psödomiksom peritonei\" tablosuna en sık neden olan ve karın boşluğunu jelatinöz müsinle dolduran primer tümör neresidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Over",
-        "B) Appendix (müsinöz kistadenom/karsinom)",
-        "C) Mide",
-        "D) Pankreas",
-        "E) Akciğer"
-      ],
-      "correct_answer": "B) Appendix (müsinöz kistadenom/karsinom)",
-      "explanation": "Apandisitin müsin üreten tümörlerinin karın boşluğuna yayılmasıyla karın içi masiv jelatinöz materyal birikimi oluşur."
-    },
-    {
-      "id": "patoloji_prof_v3-070",
-      "question": "\"Famatoid hücreli\" makrofajların deri ve tendonlarda birikmesiyle oluşan sarımtırak lezyonlara ne ad verilir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Lipom",
-        "B) Ksantom (Xanthoma)",
-        "C) Kist",
-        "D) Granülom",
-        "E) Papül"
-      ],
-      "correct_answer": "B) Ksantom (Xanthoma)",
-      "explanation": "Hiperlipidemi (yüksek kolesterol) hastalarında lipid yüklü makrofajların (köpümsü hücreler) dokuda birikmesidir."
-    },
-    {
-      "id": "patoloji_prof_v3-071",
-      "question": "Meme kanserinin \"paget hastalığı\" memenin hangi kısmında görülür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Sadece derin dokuda",
-        "B) Meme başı (nipple) ve areola üzerinde egzama benzeri döküntü olarak",
-        "C) Aksilla (koltuk altı) çukurunda",
-        "D) Pectoral kasta",
-        "E) Arka fasya üzerinde"
-      ],
-      "correct_answer": "B) Meme başı (nipple) ve areola üzerinde egzama benzeri döküntü olarak",
-      "explanation": "Duktal karsinom hücrelerinin meme başı derisine infiltre olmasıyla karakterizedir."
-    },
-    {
-      "id": "patoloji_prof_v3-072",
-      "question": "Kalp yetmezliğine bağlı karaciğerde görülen, koyu kırmızı merkez ve soluk perifer ile karakterize makroskobik görüntüye ne denir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Muskat karaciğer (Nutmeg liver)",
-        "B) Yağlı karaciğer",
-        "C) Siroz",
-        "D) Sago dalağı",
-        "E) Porzellan karaciğer"
-      ],
-      "correct_answer": "A) Muskat karaciğer (Nutmeg liver)",
-      "explanation": "Kronik pasif konjesyon sonucu santral venler çevresinde kan birikimi ve nekroz, muskat cevizine benzer bir görüntü oluşturur."
-    },
-    {
-      "id": "patoloji_prof_v3-073",
-      "question": "Böbrekte \"tel halkası\" (wire-loop) görünümü hangi hastalık için tanısaldır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Lupus Nefriti (Evre IV)",
-        "B) Diyabet",
-        "C) Minimal değişiklik hastalığı",
-        "D) Berger hastalığı",
-        "E) Post-streptokokal GN"
-      ],
-      "correct_answer": "A) Lupus Nefriti (Evre IV)",
-      "explanation": "SLE'ye özgü kalınlaşmış kapiller damar halkaları görüntüsüdür."
-    },
-    {
-      "id": "patoloji_prof_v3-074",
-      "question": "\"Sago dalağı\" ve \"Lardaceous dalak\" hangi hastalıkta görülür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Sarkoidoz",
-        "B) Amiloidoz",
-        "C) Lösemi",
-        "D) Sıtma",
-        "E) Tüberküloz"
-      ],
-      "correct_answer": "B) Amiloidoz",
-      "explanation": "Amiloidin dalaktaki birikim şekilleridir. Sago dalağında fokal (beyaz pulpa), Lardaceous dalakta ise diffüz (kırmızı pulpa) birikim olur."
-    },
-    {
-      "id": "patoloji_prof_v3-075",
-      "question": "Kemik iliği biyopsisinde \"halka sideroblastlar\" (ring sideroblasts) saptanması hangi anemiyi düşündürür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Demir eksikliği anemisi",
-        "B) Sideroblastik anemi",
-        "C) Orak hücreli anemi",
-        "D) Talasemi",
-        "E) Pernisiyöz anemi"
-      ],
-      "correct_answer": "B) Sideroblastik anemi",
-      "explanation": "Demir, mitokondrilerde çekirdek çevresinde halka şeklinde birikir. Alkol kullanımı veya kurşun zehirlenmesinde görülebilir."
-    },
-    {
-      "id": "patoloji_prof_v3-076",
-      "question": "Karaciğerde \"Mallory-Denk cisimcikleri\" (eozinofilik sitoplazmik inklüzyonlar) en yaygın hangi durumda görülür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Alkolik hepatit",
-        "B) Wilson hastalığı",
-        "C) Primer biliyer siroz",
-        "D) Non-alkolik yağlı karaciğer",
-        "E) Hepsi (Ancak alkolikte çok tipiktir)"
-      ],
-      "correct_answer": "E) Hepsi (Ancak alkolikte çok tipiktir)",
-      "explanation": "Mallory cisimcikleri kütleleşmiş keratin filamentleridir. Alkolik karaciğer hasarında klasik bir bulgudur."
-    },
-    {
-      "id": "patoloji_prof_v3-077",
-      "question": "Testislerin \"en sık\" görülen malign tümörü hangisidir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Yolk sac tümörü",
+        "A) Yolk Sac (Endodermal Sinüs) Tümörü",
         "B) Seminom",
         "C) Teratom",
         "D) Koryokarsinom",
         "E) Leydig hücreli tümör"
       ],
-      "correct_answer": "B) Seminom",
-      "explanation": "Seminomlar testis tümörlerinin yaklaşık yarısını oluşturur ve radyoterapiye oldukça duyarlıdırlar."
-    },
-    {
-      "id": "patoloji_prof_v3-078",
-      "question": "\"Famatoid hücreli\" makrofajların deri ve tendonlarda birikmesiyle oluşan sarımtırak lezyonlara ne ad verilir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Lipom",
-        "B) Ksantom (Xanthoma)",
-        "C) Kist",
-        "D) Granülom",
-        "E) Papül"
-      ],
-      "correct_answer": "B) Ksantom (Xanthoma)",
-      "explanation": "Hiperlipidemi (yüksek kolesterol) hastalarında lipid yüklü makrofajların (köpümsü hücreler) dokuda birikmesidir."
-    },
-    {
-      "id": "patoloji_prof_v3-079",
-      "question": "Meme kanserinin \"paget hastalığı\" memenin hangi kısmında görülür? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Sadece derin dokuda",
-        "B) Meme başı (nipple) ve areola üzerinde egzama benzeri döküntü olarak",
-        "C) Aksilla (koltuk altı) çukurunda",
-        "D) Pectoral kasta",
-        "E) Arka fasya üzerinde"
-      ],
-      "correct_answer": "B) Meme başı (nipple) ve areola üzerinde egzama benzeri döküntü olarak",
-      "explanation": "Duktal karsinom hücrelerinin meme başı derisine infiltre olmasıyla karakterizedir."
-    },
-    {
-      "id": "patoloji_prof_v3-080",
-      "question": "Kalp yetmezliğine bağlı karaciğerde görülen, koyu kırmızı merkez ve soluk perifer ile karakterize makroskobik görüntüye ne denir? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Muskat karaciğer (Nutmeg liver)",
-        "B) Yağlı karaciğer",
-        "C) Siroz",
-        "D) Sago dalağı",
-        "E) Porzellan karaciğer"
-      ],
-      "correct_answer": "A) Muskat karaciğer (Nutmeg liver)",
-      "explanation": "Kronik pasif konjesyon sonucu santral venler çevresinde kan birikimi ve nekroz, muskat cevizine benzer bir görüntü oluşturur."
-    },
-    {
-      "id": "patoloji_prof_v3-081",
-      "question": "Böbrekte \"tel halkası\" (wire-loop) görünümü hangi hastalık için tanısaldır? (Tekrar: Pekiştirme)",
-      "options": [
-        "A) Lupus Nefriti (Evre IV)",
-        "B) Diyabet",
-        "C) Minimal değişiklik hastalığı",
-        "D) Berger hastalığı",
-        "E) Post-streptokokal GN"
-      ],
-      "correct_answer": "A) Lupus Nefriti (Evre IV)",
-      "explanation": "SLE'ye özgü kalınlaşmış kapiller damar halkaları görüntüsüdür.\n\n(Patoloji V3 100 soru tamamlandı.)"
+      "correct_answer": "A) Yolk Sac (Endodermal Sinüs) Tümörü",
+      "explanation": "Yolk sac tümörü, çocuklarda en sık görülen testis tümörüdür ve kanda AFP (Alfa-fetoprotein) düzeyi yüksekliği ile karakterizedir."
     }
   ]
 }

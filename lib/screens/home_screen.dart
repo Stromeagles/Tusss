@@ -1453,11 +1453,7 @@ class _FolderCard extends StatelessWidget {
                 ]
               : [],
         ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(22),
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-            child: Container(
+        child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 18),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -1467,8 +1463,8 @@ class _FolderCard extends StatelessWidget {
                           color.withValues(alpha: isDark ? 0.08 : 0.05),
                         ]
                       : [
-                          Colors.white.withValues(alpha: isDark ? 0.05 : 0.60),
-                          Colors.white.withValues(alpha: isDark ? 0.02 : 0.40),
+                          isDark ? const Color(0xFF1E2A3A) : Colors.white.withValues(alpha: 0.80),
+                          isDark ? const Color(0xFF162030) : Colors.white.withValues(alpha: 0.60),
                         ],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
@@ -1521,8 +1517,6 @@ class _FolderCard extends StatelessWidget {
               ),
             ),
           ),
-        ),
-      ),
     );
   }
 }

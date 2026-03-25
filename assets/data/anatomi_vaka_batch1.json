@@ -1,0 +1,712 @@
+{
+  "id": "anatomi_vaka_batch1",
+  "subject": "Anatomi",
+  "chapter": "Klinik Vakalar",
+  "topic": "Anatomi Klinik Korelasyonlar",
+  "sub_topic": "TUS Yüksek Verimli Vakalar",
+  "content_summary": "Anatomik lezyonlar temelinde 50 TUS vakası — sinir hasarları, damar anomalileri, kırıklar ve komşuluk ilişkileri",
+  "flashcards": [],
+  "tus_spots": [],
+  "clinical_cases": [
+    {
+      "id": "avaka-001",
+      "case": "Vaka:(Erb Palsy) 28 yaşında bir kadın doğum sonrası değerlendiriliyor. Zor doğum sırasında bebekte sol omuz takılmış ve kurtarılmak için baş sağa doğru itilmiş. Muayenede sol kolun iç rotasyonda, dirsek ekstansiyonda ve ön kol pronasyonda olduğu görülüyor. Omuz abduksiyonu ve dış rotasyonu yapılamıyor. Bu tabloya yol açan hasarın en olası yeri hangisidir?",
+      "options": [
+        "A) C8-T1 kökleri",
+        "B) C5-C6 kökleri",
+        "C) N. ulnaris",
+        "D) N. medianus",
+        "E) N. thoracicus longus"
+      ],
+      "correct_answer": "B) C5-C6 kökleri",
+      "explanation": "Erb palsy (Erb-Duchenne felci) brakiyal pleksusun üst köklerinden (C5-C6) kaynaklanır. Omuz abduksiyonu (N. axillaris – C5-C6), dış rotasyon (N. axillaris ve suprascapularis – C5-C6) ve ön kol supinasyonu (N. musculocutaneus – C5-C6) kaybı ile karakterizedir. Kol 'garson bahşiş bekliyor' pozisyonundadır: adduksiyon, iç rotasyon, dirsek ekstansiyon, pronasyon. Doğum travmasında baş-omuz ayrılması mekanizmasıyla oluşur.",
+      "story_hint": "💡 HİKAYE: Garson bahşiş bekler gibi kol aşağı sarkıyor, iç rotasyonda. Bu Erb! Üst kökler (C5-C6) hasar görmüş — omuz ve dirsek motorları devre dışı."
+    },
+    {
+      "id": "avaka-002",
+      "case": "Vaka:(Klumpke Felci) 35 yaşında erkek hasta bir ağaçtan düşerken kolunu yukarı uzatarak tutunmaya çalışmış. Muayenede el içi kasların tamamında atrofi, dördüncü ve beşinci parmakların fleksiyonu mevcut, thenar ve hipotenar atrofi izleniyor. Ayrıca sağ göz kapağında pitozis ve miyozis saptanıyor. Hangi yapı hasarı bu tabloyu açıklar?",
+      "options": [
+        "A) C5-C6 kökleri hasarı",
+        "B) N. ulnaris izole hasarı",
+        "C) C8-T1 kökleri ve ramus communicans hasarı",
+        "D) N. medianus izole hasarı",
+        "E) N. radialis hasarı"
+      ],
+      "correct_answer": "C) C8-T1 kökleri ve ramus communicans hasarı",
+      "explanation": "Klumpke felci brakiyal pleksusun alt köklerini (C8-T1) etkiler. El içi kasların (interosseiler, lumbrikaller, hipotenar, thenar) tamamı C8-T1 tarafından innerve edildiğinden total el içi kas felci gelişir. T1'den çıkan sempatik lifler (ramus communicans griseus) de hasarlanırsa ipsilateral Horner sendromu (pitozis, miyozis, anhidrozis) ortaya çıkar. Kolun yukarıya zorlanmasıyla oluşan mekanizma tipiktir.",
+      "story_hint": "💡 HİKAYE: Alt kökler (C8-T1) ezildi — el içi kaslar çöktü, Horner eklendi. Klumpke = alt pleksus + Horner triadı. Yukarı tutunmak alt kökleri koparır."
+    },
+    {
+      "id": "avaka-003",
+      "case": "Vaka:(Radial Sinir) 42 yaşında erkek hasta koltuk değneği kullanırken kolunu koltuğuna yaslamış şekilde uyuya kalmış. Sabah uyandığında el bileğini yukarı kaldıramadığını fark etmiş. Muayenede bilek düşüklüğü (wrist drop), el sırtında duyusal kayıp ve parmak MCP ekstansiyon kaybı saptanıyor. İzole olarak korunan fonksiyon hangisidir?",
+      "options": [
+        "A) Parmak adduksiyonu",
+        "B) Parmak IP eklem ekstansiyonu",
+        "C) Bilek ekstansiyonu",
+        "D) El sırtı duyusu",
+        "E) MCP ekstansiyonu"
+      ],
+      "correct_answer": "B) Parmak IP eklem ekstansiyonu",
+      "explanation": "N. radialis, humerus spiral kanalında bası nedeniyle hasar görmüştür (Saturday night palsy). Bilek ekstansörleri, parmak MCP ekstansörleri ve duyusal lif hasarı mevcuttur. Ancak parmak IP eklem ekstansiyonu lumbrikal ve interosseous kaslar tarafından gerçekleştirilir — bunlar N. ulnaris ve N. medianus tarafından innerve edilir, N. radialis tarafından değil. Bu nedenle IP ekstansiyon korunmuştur.",
+      "story_hint": "💡 HİKAYE: Koltuk altında bası → radial sinir → wrist drop. IP ekstansiyon bozulmaz çünkü lumbrikal/interosseous kaslar ulnar ve mediandır. Radial = bilek ve MCP, IP değil!"
+    },
+    {
+      "id": "avaka-004",
+      "case": "Vaka:(Ulnar Sinir) 55 yaşında erkek hasta dirsek kırığı sonrası gelişen yüzük ve serçe parmak kıvrılması şikayetiyle başvuruyor. Muayenede dördüncü ve beşinci parmaklarda PIP fleksiyonu artmış, MCP hiperekstansiyonda, el sırtının ulnar yarısında duyu kaybı mevcut. 'Pençe el' deformitesi hangi sinir hasarını gösterir?",
+      "options": [
+        "A) N. medianus hasarı",
+        "B) N. radialis hasarı",
+        "C) N. ulnaris hasarı",
+        "D) N. musculocutaneus hasarı",
+        "E) N. axillaris hasarı"
+      ],
+      "correct_answer": "C) N. ulnaris hasarı",
+      "explanation": "N. ulnaris hasarında 4. ve 5. parmakların interosseous ve lumbrikal kasları felç olur. MCP'de hiperekstansiyon (korunan ekstansörler), PIP'de fleksiyon (korunan fleksörler) artışıyla 'pençe el' oluşur. 1. ve 2. parmaklarda lumbrikaller median sinirle innerve olduğundan daha az belirgindir — bu fark tanıda önemlidir. El sırtının ulnar yarısı ve beşinci parmak ile dördüncü parmağın ulnar yarısında duyu kaybı tipiktir.",
+      "story_hint": "💡 HİKAYE: Ulnar kırılınca 4-5. parmaklar pençe yapar. MCP açılır (ekstansör sağlam), IP bükümlür (fleksör sağlam, lumbrikal yok). Pençe = ulnar!"
+    },
+    {
+      "id": "avaka-005",
+      "case": "Vaka:(Median Sinir) 38 yaşında sekreter, aylardır geceleri bilek ve baş parmak bölgesinde uyuşma, sabahları el bileğini sallayarak rahatlama tarif ediyor. Muayenede Tinel (+), Phalen (+), tenar atrofi mevcut. Hangi sinirin hangi yapı altında sıkıştığı bu tabloyu açıklar?",
+      "options": [
+        "A) N. ulnaris — Guyon kanalı",
+        "B) N. medianus — retinaculum flexorum altı",
+        "C) N. radialis — spiral kanal",
+        "D) N. medianus — pronator teres",
+        "E) N. ulnaris — kübital tünel"
+      ],
+      "correct_answer": "B) N. medianus — retinaculum flexorum altı",
+      "explanation": "Karpal tünel sendromu, N. medianus'un retinaculum flexorum (flexor retinaculum) altında sıkışmasıyla oluşur. Tenar kaslar (abductor pollicis brevis, opponens pollicis, flexor pollicis brevis yüzeyel başı) median sinirle innerve edilir ve atrofi gelişir. 1-3. parmaklar ile 4. parmağın radyal yarısında uyuşma tipiktir. Tinel testi (bilek üzerine vurma) ve Phalen testi (bilek fleksiyonu) pozitifliği tanıyı destekler.",
+      "story_hint": "💡 HİKAYE: Sekreter klavye kullanıyor, median sinir retinakulum altında sıkışıyor. Tenar atrofi, Tinel ve Phalen pozitif = Karpal Tünel. Median sinirin karpal tünel içi dalı thenar kasları innerve eder."
+    },
+    {
+      "id": "avaka-006",
+      "case": "Vaka:(Peroneal Sinir) 29 yaşında genç hasta bacak üstüne bacak atma alışkanlığı olan biri. Son haftalarda sağ ayak bileğini dorsifleye edemediğini, ayak sırtında uyuşma hissettiğini bildiriyor. Dizin lateralinden geçen hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) N. tibialis",
+        "B) N. suralis",
+        "C) N. fibularis (peroneus) communis",
+        "D) N. saphenus",
+        "E) N. femoralis"
+      ],
+      "correct_answer": "C) N. fibularis (peroneus) communis",
+      "explanation": "N. fibularis communis, fibula boynunu (collum fibulae) dışarıdan sarar ve bu bölgede derin ve yüzeyel dallara ayrılır. Basıya son derece duyarlıdır. Hasar: ayak dorsifleksiyonu ve eversiyonu kaybı (foot drop), ayak sırtı ve birinci parmak arası bölgede duyu kaybı. Bacak üstüne bacak atma en sık nedenidir. Yüksek fibula kırığı da aynı tabloyu verebilir.",
+      "story_hint": "💡 HİKAYE: Bacak üstüne bacak atılınca fibula boynu basıya uğrar → peroneal sinir hasar → foot drop. Bacak laterali + ayak sırtı duyusu gider. Foot drop = peroneal!"
+    },
+    {
+      "id": "avaka-007",
+      "case": "Vaka:(Femoral Sinir) 62 yaşında diyabetik hasta aşırı kilo kaybı sonrası kalça bölgesinde ağrı, diz ekstansiyonunda güçsüzlük ve uyluk ön yüzünde uyuşma gelişiyor. Retroperitoneal alanda genişleyen psoas hematomu düşünülüyor. Hangi sinir etkilenmiştir?",
+      "options": [
+        "A) N. obturatorius",
+        "B) N. ischiadicus",
+        "C) N. femoralis",
+        "D) N. cutaneus femoris lateralis",
+        "E) N. genitofemoralis"
+      ],
+      "correct_answer": "C) N. femoralis",
+      "explanation": "N. femoralis (L2-L4), psoas kası içinden ya da yanından geçerek lacuna musculorum'dan geçer ve uyluğun önünden ilerler. Psoas kası içinde hematom oluşması (retroperitoneal kanama, diyabetik nöropati) siniri komprese eder. Tablo: kuadriseps felci (diz ekstansiyonu kaybı), diz refleksi (patellar refleks) kaybı, uyluğun ön-medial yüzünde duyu kaybı (N. saphenus yoluyla bacak iç yüzüne kadar uzanır).",
+      "story_hint": "💡 HİKAYE: Psoas içinde kan birikirken femoral siniri ezer. Diz açılmaz, patellar refleks yok, uyluk önü uyuşur. Femoral = diz ekstansiyonu + patellar refleks!"
+    },
+    {
+      "id": "avaka-008",
+      "case": "Vaka:(Aksiller Sinir) 22 yaşında futbolcu omuz çıkığı (anteroinferior dislokasyon) sonrasında omuzunu dışarıya döndüremiyor ve kolun dış yanında duyu kaybı bildiriyor. Hangi sinir hasarlanmıştır ve hangi kası innerve eder?",
+      "options": [
+        "A) N. radialis — M. triceps brachii",
+        "B) N. axillaris — M. deltoideus",
+        "C) N. musculocutaneus — M. biceps brachii",
+        "D) N. suprascapularis — M. supraspinatus",
+        "E) N. thoracicus longus — M. serratus anterior"
+      ],
+      "correct_answer": "B) N. axillaris — M. deltoideus",
+      "explanation": "N. axillaris, posterior kord'dan çıkarak quadrangular space'den (dörtgen aralık) geçer ve M. deltoideus ile M. teres minor'u innerve eder. Omuzun anteroinferior çıkığında aksiller sinir sıklıkla gerilir veya hasarlanır. Deltoid atrofisi ve omuz dış rotasyonu azalması görülür. Duyu kaybı 'rozet alanı' olarak adlandırılan omuzun lateral yüzünde olur (N. cutaneus brachii lateralis superior).",
+      "story_hint": "💡 HİKAYE: Omuz çıkığı → quadrangular space'de aksiller sinir sıkışır → deltoid çalışmaz, omuz rozeti (lateral deri) uyuşur. Aksiller = deltoid + rozet alanı!"
+    },
+    {
+      "id": "avaka-009",
+      "case": "Vaka:(Uzun Torasik Sinir) 48 yaşında boyun ameliyatı geçiren erkek hastanın sağ kürek kemiği anormal şekilde çıkıntı yapıyor. Hasta kolunu öne doğru uzatamıyor. Bu tablo hangi sinirin hangi kasa hasarıyla oluşmuştur?",
+      "options": [
+        "A) N. accessorius — M. trapezius",
+        "B) N. thoracicus longus — M. serratus anterior",
+        "C) N. dorsalis scapulae — M. rhomboideus",
+        "D) N. axillaris — M. deltoideus",
+        "E) N. suprascapularis — M. infraspinatus"
+      ],
+      "correct_answer": "B) N. thoracicus longus — M. serratus anterior",
+      "explanation": "N. thoracicus longus (C5-C7), M. serratus anterior'u innerve eder. Hasar, boyun disseksiyonu, radikal mastektomi veya akut brakiyal nevrit sonrası gelişebilir. M. serratus anterior'un felci, skapulayı göğüs duvarına yapıştıran görevini yitirmesi nedeniyle kürek kemiği geriye çıkıntı yapar: 'winged scapula' (kanat skapula). Kol öne uzatılırken belirginleşir.",
+      "story_hint": "💡 HİKAYE: Serratus anterior skapulayı duvara yapıştırır. Uzun torasik sinir kesilince kanat açılır (winged scapula). Boyun ameliyatı en sık neden. Kanat = uzun torasik!"
+    },
+    {
+      "id": "avaka-010",
+      "case": "Vaka:(Musculocutaneus Sinir) 30 yaşında vücut geliştirici ağır ağırlık kaldırma sırasında kolunda ani ağrı hissettikten sonra dirsek fleksiyonu zayıflamış, ön kol lateralinde uyuşma gelişmiş. Hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) N. medianus",
+        "B) N. ulnaris",
+        "C) N. musculocutaneus",
+        "D) N. radialis",
+        "E) N. axillaris"
+      ],
+      "correct_answer": "C) N. musculocutaneus",
+      "explanation": "N. musculocutaneus (C5-C7), lateral kord'dan çıkarak M. coracobrachialis, M. biceps brachii ve M. brachialis'i innerve eder, ardından N. cutaneus antebrachii lateralis olarak ön kol lateralinde devam eder. Hasar: güçlü dirsek fleksiyon kaybı (biseps atrofisi) ve ön kol lateralinde duyu kaybı. Ağır egzersizde M. coracobrachialis geçişinde sinir kompresyonu görülebilir.",
+      "story_hint": "💡 HİKAYE: Bisepsi hareket ettiren musculocutaneus. Hasar → biseps felci + ön kol laterali uyuşur. Sporda nadiren fakat unutulmaz: bicep yoksa musculocutaneus!"
+    },
+    {
+      "id": "avaka-011",
+      "case": "Vaka:(Anterior İnterosseous Sinir) 45 yaşında kadın hasta el bileğini fleksiyon yapabiliyor ancak baş parmak ve işaret parmağını uçlarında birleştirip 'O' şekli yapamıyor. Duyu kaybı yok. Hangi sinir dalı hasarlanmıştır?",
+      "options": [
+        "A) N. ulnaris — derin dal",
+        "B) N. medianus — yüzeyel dal",
+        "C) N. medianus — N. interosseus anterior",
+        "D) N. radialis — N. interosseus posterior",
+        "E) N. medianus — karpal tünel içi dal"
+      ],
+      "correct_answer": "C) N. medianus — N. interosseus anterior",
+      "explanation": "N. interosseus anterior, N. medianus'un saf motor dalıdır; duyu içermez. M. flexor pollicis longus, M. flexor digitorum profundus (1-2. parmak) ve M. pronator quadratus'u innerve eder. Hasar: baş parmak ve işaret parmağının IP eklemlerini fleksiyon yapamaz, 'O' yapamaz (Kilner işareti pozitif). Tüm bu tabloya rağmen duyu tamamen korunur — bu anterior interosseous sendromun belirleyici özelliğidir.",
+      "story_hint": "💡 HİKAYE: 'O' yapamıyor ama duyusu tam — bu anterior interosseous! Saf motor dal. Parmak ucunu büküyor ama uç uca gelemiyor. O şekli bozuk = AIN sendromu."
+    },
+    {
+      "id": "avaka-012",
+      "case": "Vaka:(Posterior İnterosseous Sinir) 52 yaşında tenis oynayan erkek hasta lateral epikondilit tedavisi görürken parmaklarını ekstansiyon yapamadığını fark ediyor. Bilek ekstansiyonu kısmen mevcut (radyal deviyasyonla yapabiliyor). Duyu kaybı yok. Nerede hangi dal hasarlanmıştır?",
+      "options": [
+        "A) N. radialis — spiral kanal",
+        "B) N. radialis — N. interosseus posterior, Arcade of Frohse",
+        "C) N. medianus — pronator sendromu",
+        "D) N. ulnaris — kübital tünel",
+        "E) N. radialis — lateral epikondilin proksimali"
+      ],
+      "correct_answer": "B) N. radialis — N. interosseus posterior, Arcade of Frohse",
+      "explanation": "N. interosseus posterior (N. radialis'in derin dalı), supinator kasının fibröz arkı olan Arcade of Frohse'den geçerken sıkışabilir. Saf motor daldir, parmak ve başparmak MCP ekstansiyon kaybı verir. Bilek ekstansiyonu ECRL aracılığıyla kısmen devam eder (N. radialis'in proksimal dalıdır) ve radyal deviyasyon oluşur. Lateral epikondilit ile birlikteliği sıktır.",
+      "story_hint": "💡 HİKAYE: Tenis dirseği + parmak düşüklüğü + bilek radyal deviyasyon = posterior interosseous. Frohse arkı sıkıştırıyor, duyu yok, bilek kısmen çalışıyor."
+    },
+    {
+      "id": "avaka-013",
+      "case": "Vaka:(Obturator Sinir) 67 yaşında kadın hasta sol kalça ameliyatı sonrasında uyluk iç yüzünde uyuşma ve bacağı içe doğru kapatmakta zorluk yaşıyor. Adduktor kaslar zayıf, patellar refleks normal. Hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) N. femoralis",
+        "B) N. obturatorius",
+        "C) N. ischiadicus",
+        "D) N. cutaneus femoris lateralis",
+        "E) N. pudendus"
+      ],
+      "correct_answer": "B) N. obturatorius",
+      "explanation": "N. obturatorius (L2-L4), pelvis içinden geçerek foramen obturatum'dan (canalis obturatorius) geçer ve uyluk adduktor kaslarını (M. obturatorius externus, adduktorlar, M. gracilis) innerve eder. Uyluk iç yüzündeki deri duyusunu sağlar. Pelvik ameliyatlar, obturator fıtığı ve doğum komplikasyonlarında hasar görülebilir. Patellar refleks korunmuştur (femoralis).",
+      "story_hint": "💡 HİKAYE: Foramen obturatum = obturator sinirin geçit noktası. Uyluk kapanmıyor, iç yüz uyuşuyor = obturator. Patellar refleks normal → femoralis sağlam."
+    },
+    {
+      "id": "avaka-014",
+      "case": "Vaka:(Tibial Sinir) 40 yaşında maraton koşucusu ayak tabanında yanma ve uyuşma şikayetiyle geliyor. Topuk üzerinde duramıyor, ayak plantarfleksiyonu zayıf. Medial malleolusun arkasından geçen hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) N. fibularis superficialis",
+        "B) N. suralis",
+        "C) N. tibialis — tarsal tünel",
+        "D) N. saphenus",
+        "E) N. fibularis profundus"
+      ],
+      "correct_answer": "C) N. tibialis — tarsal tünel",
+      "explanation": "Tarsal tünel sendromu, N. tibialis'in medial malleolus arkasındaki retinaculum flexorum altında sıkışmasıyla oluşur. Taban ağrısı, yanma, topuk ve parmak uyuşması ile plantarfleksiyon zayıflığı gelişir. N. tibialis, gastrocinemius ve soleus kaslarını (plantarfleksiyon), ayak içi kasları ve ayak tabanının tamamını innerve eder. Achilles refleksi de etkilenebilir.",
+      "story_hint": "💡 HİKAYE: Tibial sinir medial malleolusun arkasından taban ilerler. Tarsal tünel = tibial sinirin karpal tüneli. Taban yanıyor, topuk zayıf = tarsal tünel!"
+    },
+    {
+      "id": "avaka-015",
+      "case": "Vaka:(Süperior Gluteal Sinir) 55 yaşında erkek hasta intramüsküler enjeksiyon sonrası yürürken gövdesini sağa deviriyor (Trendelenburg yürüyüşü). Abduktor kaslar zayıf. Enjeksiyon nereye yapılmış olmalı ve hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) Gluteus maximus — N. gluteus inferior",
+        "B) Gluteus medius — N. gluteus superior",
+        "C) Piriformis — N. ischiadicus",
+        "D) Gluteus medius — N. obturatorius",
+        "E) Gluteus maximus — N. ischiadicus"
+      ],
+      "correct_answer": "B) Gluteus medius — N. gluteus superior",
+      "explanation": "N. gluteus superior (L4-S1), foramen ischiadicum majus'tan çıkarak M. gluteus medius, M. gluteus minimus ve M. tensor fasciae latae'yi innerve eder. Bu kaslar kalça abduksiyonunu sağlar. İM enjeksiyonların gluteus kasının üst-dış kadranı yerine yanlış yapılması bu siniri hasarlayabilir. Sonuç: karşı bacak yerden kaldırıldığında gövde hasarlı tarafa devrilir (Trendelenburg pozitif). Güvenli enjeksiyon bölgesi: üst-dış kadran (Ventrogluteal).",
+      "story_hint": "💡 HİKAYE: Yanlış enjeksiyon → süperior gluteal sinir → gluteus medius felci → Trendelenburg. Karşı tarafa yıkılmak: hasar IPSILATERAL, yıkılma KONTRALATERAl değil — aynı tarafa meyil eder!"
+    },
+    {
+      "id": "avaka-016",
+      "case": "Vaka:(Humerus Orta Diafiz Kırığı) 33 yaşında erkek motorsiklet kazasında humerus orta diafiz kırığı geçiriyor. Bilek düşüklüğü (wrist drop), el sırtında duyu kaybı ve parmak MCP ekstansiyon kaybı mevcut. Dirsek ekstansiyonu (triceps) KORUNMUŞ. Sinirin kırık hattına göre yeri nedir?",
+      "options": [
+        "A) N. radialis spiral kanalın proksimalinde hasarlanmıştır",
+        "B) N. radialis spiral kanaldan geçerken hasarlanmıştır",
+        "C) N. medianus cubital fossada hasarlanmıştır",
+        "D) N. ulnaris medial epikondil arkasında hasarlanmıştır",
+        "E) N. radialis aksilla düzeyinde hasarlanmıştır"
+      ],
+      "correct_answer": "B) N. radialis spiral kanaldan geçerken hasarlanmıştır",
+      "explanation": "N. radialis, humerusun arka yüzündeki spiral kanaldan (sulcus n. radialis) geçer. Humerus orta diafiz kırıklarında bu noktada hasar görülür. Proksimalden çıkan triceps dalları korunur (dirsek ekstansiyonu normal), ancak distal dallar (bilek ve parmak ekstansörleri) felç olur — wrist drop gelişir. Bu anatomik ilişki tanıda kritiktir: triceps sağlamsa lezyon spiral kanaldadır.",
+      "story_hint": "💡 HİKAYE: Humerus ortası kırık + wrist drop + triceps sağlam = spiral kanal düzeyinde radial sinir hasarı. Triceps dalları proximalden çıkar, kurtulur. Bilek düşer, dirsek açılır."
+    },
+    {
+      "id": "avaka-017",
+      "case": "Vaka:(Suprakondiler Kırık) 7 yaşında erkek çocuk düşme sonrası sol dirsek suprakondiler kırığı geçirdi. Redüksiyon sonrası kontrolde baş parmak ve işaret parmağını uçlarında birleştiremediği, 'O' yapamadığı görülüyor. Hangi sinir hasarlanmış olabilir?",
+      "options": [
+        "A) N. ulnaris",
+        "B) N. radialis",
+        "C) N. medianus — N. interosseus anterior",
+        "D) N. medianus — palmar dal",
+        "E) N. musculocutaneus"
+      ],
+      "correct_answer": "C) N. medianus — N. interosseus anterior",
+      "explanation": "Çocuklarda suprakondiler humerus kırıklarında en sık hasarlanan sinir N. medianus veya özellikle N. interosseus anterior'udur. AIN hasarı: M. flexor pollicis longus ve M. flexor digitorum profundus (1-2) felci. Sonuç: baş parmak ve işaret parmağı uçlarını birleştirip 'O' yapamamak (Kilner/pinch testi pozitif). Duyu korunduğu için gözden kaçabilir. N. ulnaris hasarı da görülebilir (ikinci sıklıkta).",
+      "story_hint": "💡 HİKAYE: Çocukta suprakondiler kırık → AIN hasarı → O yapamaz (pinch testi bozuk). Duyu normal olduğu için sinsi. Suprakondiler'de önce median/AIN, sonra ulnar!"
+    },
+    {
+      "id": "avaka-018",
+      "case": "Vaka:(Fibula Boynu Kırığı) 25 yaşında futbolcu sol bacağına darbe aldı. Fibula boynu kırığı saptandı. Muayenede ayak dorsifleksiyonu ve eversiyonu yapılamıyor, birinci metatars aralığında duyu kaybı var. Hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) N. tibialis",
+        "B) N. suralis",
+        "C) N. fibularis communis",
+        "D) N. saphenus",
+        "E) N. cutaneus surae lateralis"
+      ],
+      "correct_answer": "C) N. fibularis communis",
+      "explanation": "N. fibularis communis, fibula boynunun hemen dışından geçer ve bu bölge kırıklarında %30 oranında hasar görür. Derin dal (N. fibularis profundus) hasar görünce dorsifleksiyon kaybı (foot drop) ve birinci parmak arası duyu kaybı olur. Yüzeyel dal (N. fibularis superficialis) hasar görünce eversiyonu ve ayak sırtı duyusu kaybolur. Her ikisi de etkilenebilir. Foot drop yürüyüşte stepaj gait ile karakterizedir.",
+      "story_hint": "💡 HİKAYE: Fibula boynu = peroneal sinirin geçit noktası. Kırılırsa foot drop + eversion kaybı. Stepaj yürüyüşü = peroneal sinir hasarı."
+    },
+    {
+      "id": "avaka-019",
+      "case": "Vaka:(Femur Boynu Kırığı) 78 yaşında osteoporotik kadın hasta düşme sonrası femur boynu kırığı geçirdi. Operasyonsuz takipte femur başı avasküler nekrozu gelişti. Femur başını besleyen ana damar grubu hangisidir ve kırıkta neden kesilir?",
+      "options": [
+        "A) A. obturatoria — ligamentum capitis femoris içinden",
+        "B) Aa. circumflexae femoris — retinakular dallar, kapsül içinde yükselir",
+        "C) A. femoralis profunda — doğrudan femur başına girer",
+        "D) A. glutea superior — kapsül dışından femur başına geçer",
+        "E) A. iliolumbalis — kemik içi kanal yoluyla"
+      ],
+      "correct_answer": "B) Aa. circumflexae femoris — retinakular dallar, kapsül içinde yükselir",
+      "explanation": "Femur başı kan desteği temel olarak A. circumflexa femoris medialis ve lateralis'ten (A. femoralis profunda dalları) gelen retinakular arterlerden sağlanır. Bu damarlar sinovyal membranın katlantıları (retinakulalar) içinde seyreder. Femur boynu kırığında bu retinakulalar yırtılır ve femur başı ischemia'ya uğrar → avasküler nekroz. Küçük katkı Lig. capitis femoris içindeki A. obturatoria dalından gelir, ancak bu damar genellikle yetişkinlerde fonksiyonel değildir.",
+      "story_hint": "💡 HİKAYE: Femur başı retinakular arterler içinde beslenir. Boyun kırığı bu damarcıkları keser → avasküler nekroz. Yaşlı kadın, osteoporoz, düşme = femur boynu + AVN riski!"
+    },
+    {
+      "id": "avaka-020",
+      "case": "Vaka:(Humerus Proksimal Kırık) 65 yaşında kadın hasta humerus büyük tüberkül kırığı geçirdi. Kolunu 90° dışa döndüremiyor, deltoid atrofisi yok, omuzda rozet alanında duyusu normal. Supraspinatus ve infraspinatus disfonksiyonu düşünülüyor. Hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) N. axillaris",
+        "B) N. radialis",
+        "C) N. suprascapularis",
+        "D) N. subscapularis",
+        "E) N. musculocutaneus"
+      ],
+      "correct_answer": "C) N. suprascapularis",
+      "explanation": "N. suprascapularis (C5-C6), incisura scapulae'dan geçerek M. supraspinatus ve M. infraspinatus'u innerve eder. Büyük tüberkül kırığı veya glenohumeral dislokasyon bu siniri etkileyebilir. Supraspinatus: omuz abduksiyonunun ilk 15°'sini başlatır. Infraspinatus: dış rotasyonun ana kasıdır. Deltoid (aksiller sinir) ve rozet duyusu korunmuştur. Sinirin motor olması nedeniyle duyusal kayıp minimal olabilir.",
+      "story_hint": "💡 HİKAYE: Dış rotasyon yok + deltoid iyi = suprascapularis hasarı. İnkisura skapulada sıkışabilir. Supraspinatus + infraspinatus = suprascapularis çifti!"
+    },
+    {
+      "id": "avaka-021",
+      "case": "Vaka:(Femoral Üçgen) 52 yaşında erkek hasta femoral üçgen bölgesinde psoas absesi drene edildi. Operasyon sonrası hastanın kasık bölgesinde ağrı ve uyluğun ön-dış yüzünde uyuşma var ama motor kayıp yok. N. femoralis sağlam. Hangi yapı hasarlanmıştır?",
+      "options": [
+        "A) N. obturatorius",
+        "B) N. cutaneus femoris lateralis",
+        "C) N. femoralis — yüzeyel dal",
+        "D) N. genitofemoralis — femoralis dalı",
+        "E) N. ilioinguinalis"
+      ],
+      "correct_answer": "B) N. cutaneus femoris lateralis",
+      "explanation": "N. cutaneus femoris lateralis (L2-L3), ligamentum inguinale'nin hemen medialinden veya altından geçerek uyluğun ön-dış yüzündeki deriyi innerve eder. Saf duyusal sinirdir. Hasarlanması meralgia paresthetica'ya yol açar: uyluğun ön-dış yüzünde ağrı, yanma ve uyuşma. Motor kayıp yoktur. Obez bireyler, hamile kadınlar ve inguinal bölge ameliyatları risk faktörleridir.",
+      "story_hint": "💡 HİKAYE: Uyluk dış yüzü yanıyor ama motor kayıp yok = Meralgia Paresthetica. Lateral femoral kutanöz sinir saf duyu taşır. İnguinal ligament altından sıkışır."
+    },
+    {
+      "id": "avaka-022",
+      "case": "Vaka:(Popliteal Anevrizma) 70 yaşında erkek hasta diz arkasında nabız veren kitle ile geliyor. Görüntülemede popliteal anevrizma saptandı. Bu bölgede hangi yapılar risk altındadır ve anatomik sıralamada dıştan içe doğru sıralama nasıldır?",
+      "options": [
+        "A) Ven — Arter — Sinir (dıştan içe)",
+        "B) Sinir — Ven — Arter (dıştan içe)",
+        "C) Arter — Ven — Sinir (dıştan içe)",
+        "D) Sinir — Arter — Ven (dıştan içe)",
+        "E) Ven — Sinir — Arter (dıştan içe)"
+      ],
+      "correct_answer": "B) Sinir — Ven — Arter (dıştan içe)",
+      "explanation": "Popliteal fossada yapılar dıştan (yüzeyelden) derine (içe) doğru şu sıradadır: N. tibialis ve N. fibularis communis (en yüzeyel ve lateral), V. poplitea (orta), A. poplitea (en derin ve medial). Mnemonik: VAN (Vein-Artery-Nerve) tersine: NAV. Popliteal anevrizma — en sık periferik anevrizma — N. tibialis'i ve popliteal veni komprese edebilir. Tromboz riski yüksektir.",
+      "story_hint": "💡 HİKAYE: Popliteal fossa: Dıştan içe = Sinir → Ven → Arter (NAV veya ters VAN). En derin = arter. Anevrizma siniri ve veni ezer. NAV yüzeyden derine!"
+    },
+    {
+      "id": "avaka-023",
+      "case": "Vaka:(Karotid Üçgen) 58 yaşında erkek hasta boyun sol tarafında nabız veren kitle ile geliyor. Biopsi planlanıyor. Karotid üçgende hangi yapının yanlış biyopsi ile hasarlanması, ipsilateral dil yarısı hareketini etkiler?",
+      "options": [
+        "A) N. vagus (X)",
+        "B) N. hypoglossus (XII)",
+        "C) N. glossopharyngeus (IX)",
+        "D) N. accessorius (XI)",
+        "E) N. facialis (VII)"
+      ],
+      "correct_answer": "B) N. hypoglossus (XII)",
+      "explanation": "N. hypoglossus (XII. kranyal sinir), karotid üçgenden geçerek dili innerve eden tüm extrinsik ve intrinsik kas gruplarını yönetir. Hasarlanması durumunda ipsilateral dil yarısı felç olur ve dil çıkarıldığında hasarlı tarafa deviasyon görülür (sağlam taraf iter, felçli taraf çekilir). Karotid üçgen sınırları: M. digastricus'un arka karnı, M. sternocleidomastoideus ve M. omohyoideus.",
+      "story_hint": "💡 HİKAYE: Dil hasarlı tarafa döner! XII. sinir kesilince sağlam taraf dili iter, felçli taraf çekemez. Karotid üçgen = XII sinir geçer → biyopside dikkat!"
+    },
+    {
+      "id": "avaka-024",
+      "case": "Vaka:(Koroner Anatomi) 65 yaşında erkek hasta akut anterior MI geçiriyor. EKG'de V1-V6 derivasyonlarında ST elevasyonu var. Hangi koroner arteri tıkalı olduğu beklenir ve hangi bölgeyi besler?",
+      "options": [
+        "A) Sağ koroner — posterior duvar",
+        "B) Sol ön inen (LAD) — anterior duvar ve interventriküler septum",
+        "C) Sirkumfleks — sol ventrikül yan duvarı",
+        "D) Sağ marjinal — sağ ventrikül serbest duvarı",
+        "E) Posterior inen — inferior duvar"
+      ],
+      "correct_answer": "B) Sol ön inen (LAD) — anterior duvar ve interventriküler septum",
+      "explanation": "Sol ön inen arter (LAD — Left Anterior Descending), sol koroner arterin ön dalıdır ve interventriküler sulcus anterior'da seyreder. Sol ventrikülün anterior duvarını, interventriküler septumun 2/3 anteriorunu ve His-Purkinje sistemini besler. V1-V4 ST elevasyonu LAD tıkanmasının klasik EKG bulgusudur. 'Widow maker' (dul bırakan) olarak da bilinir. Sol dominant sistem varlığında arka duvara da katkısı olabilir.",
+      "story_hint": "💡 HİKAYE: LAD = 'Widow Maker'. Ön duvar + septum besler. V1-V6 elevasyonu = LAD tıkanması. Sol koroner = LAD + sirkumfleks."
+    },
+    {
+      "id": "avaka-025",
+      "case": "Vaka:(Selyak Trunkus) 55 yaşında erkek hasta kronik epigastrik ağrı şikayetiyle geliyor. Yemek sonrası ağrı artıyor. Anjiografide selyak trunkus baskılanması görülüyor. Bu trunkus hangi vertebra düzeyinde aortadan çıkar ve hangi organları besler?",
+      "options": [
+        "A) T10 — mide, karaciğer, dalak",
+        "B) T12/L1 arasında — mide, karaciğer, dalak, pankreas başı, onikiparmak bağırsağı üst kısmı",
+        "C) L1 — ince bağırsak ve proksimal kolon",
+        "D) L2 — böbrekler ve sürrenal bezler",
+        "E) T8 — özofagus ve mide"
+      ],
+      "correct_answer": "B) T12/L1 arasında — mide, karaciğer, dalak, pankreas başı, onikiparmak bağırsağı üst kısmı",
+      "explanation": "Truncus coeliacus, aortadan T12-L1 düzeyinde çıkan kısa ve geniş bir gövdedir. Sol gastrik, hepatik ve splenik arterlere ayrılır. Mide, karaciğer, dalak, pankreas (baş ve cisim) ve duodenum proksimalini besler. Median arcuat ligament baskısı (MALS — Median Arcuate Ligament Syndrome) yemek sonrası ağrı ile kendini gösterir.",
+      "story_hint": "💡 HİKAYE: Selyak = T12-L1. Üç dal: Sol gastrik + Hepatik + Splenik (GHS). Mide-karaciğer-dalak üçlüsü. MALS sendromu yemek sonrası ağrı yapar."
+    },
+    {
+      "id": "avaka-026",
+      "case": "Vaka:(Böbrek Yaralanması) 28 yaşında erkek hasta trafik kazasında sol böbrek yaralandı. Ameliyatta retroperitoneal hematom görüldü ve böbreğin ön yüzünde ince bağırsak tutunma noktaları nedeniyle erişim güçlüğü yaşandı. Sol böbreğin ön yüzüyle komşu olan yapılar hangileridir?",
+      "options": [
+        "A) Karaciğer, safra kesesi, onikiparmak bağırsağı",
+        "B) Mide, dalak, pankreas kuyruğu, kolon splenik fleksura",
+        "C) Apendiks, çekum, ince bağırsak",
+        "D) Sigmoid kolon, mesane, rektum",
+        "E) Sürrenal bez, aorta, vena cava inferior"
+      ],
+      "correct_answer": "B) Mide, dalak, pankreas kuyruğu, kolon splenik fleksura",
+      "explanation": "Sol böbreğin ön yüzü (retroperitoneal) ile komşu yapılar: Üst kutup — sol sürrenal bez; ön üst — fundus ventriculi (mide) ve dalak; ön orta — pankreas kuyruğu; ön alt — kolon splenik fleksurası ve ince bağırsak ansları. Sağ böbrekte ise ön yüz: karaciğer, safra kesesi, onikiparmak bağırsağı (duodenum), sağ kolon fleksurası.",
+      "story_hint": "💡 HİKAYE: Sol böbrek komşuları = Mide-Dalak-Pankreas kuyruğu-Splenik fleksura. Sağda = Karaciğer-Safra-Duodenum. SoL = Sol üçlü (Mide, daLak, panKreas)."
+    },
+    {
+      "id": "avaka-027",
+      "case": "Vaka:(Dalak Yaralanması) 35 yaşında erkek hasta sol alt göğüs kafesi yaralanması sonrası hipovolemik şok tablosuyla geliyor. Dalak yaralanması düşünülüyor. Dalak yaralanmalarında en sık hangi yapının eş zamanlı yaralandığı bilinir?",
+      "options": [
+        "A) Sol akciğer alt lobu",
+        "B) Sol böbrek",
+        "C) Sol 9, 10, 11. kaburgalar",
+        "D) Mide",
+        "E) Pankreas kuyruğu"
+      ],
+      "correct_answer": "C) Sol 9, 10, 11. kaburgalar",
+      "explanation": "Dalak, sol hipokondriyumda 9-11. kaburgaların arkasında yer alır. Künt travmada sol alt kaburgaların (9., 10., 11.) kırığı ile birlikte dalak yaralanması sık görülür. Ayrıca sol böbrek, pankreas kuyruğu ve sol akciğer alt lobu da komşuluk nedeniyle etkilenebilir. Dalak en sık yaralanan solid organ olup ameliyata alınmadan önce selektif embolizasyon düşünülmelidir.",
+      "story_hint": "💡 HİKAYE: Dalak = 9-11. kaburga arkası. Sol alt kaburga kırığı → dalak yaralanmasını düşün! En sık yaralanan solid organ dalak. Kırıkla birlikte git!"
+    },
+    {
+      "id": "avaka-028",
+      "case": "Vaka:(Karaciğer Yaralanması) 45 yaşında erkek hasta künt karın travması sonrası sağ üst kadran ağrısı ile geliyor. USG'de karaciğer sağ lob laserasyonu ve serbest sıvı görülüyor. Karaciğeri besleyen damarların anatomik önemi nedir ve portal ven ile hepatik arterin oranı nasıldır?",
+      "options": [
+        "A) A. hepatica %80, V. portae %20 kan sağlar",
+        "B) V. portae %75, A. hepatica %25 kan sağlar; A. hepatica %50 oksijen sağlar",
+        "C) V. portae %50, A. hepatica %50 eşit oranda besler",
+        "D) A. hepatica tüm kanı sağlar, portal ven drenaj yapar",
+        "E) V. portae %90, A. hepatica %10 kan sağlar"
+      ],
+      "correct_answer": "B) V. portae %75, A. hepatica %25 kan sağlar; A. hepatica %50 oksijen sağlar",
+      "explanation": "Karaciğer çift kan desteğine sahiptir: V. portae toplam kanın yaklaşık %75'ini (gastrointestinal kanaldan gelen besin açısından zengin, oksijen açısından görece fakir kan), A. hepatica propria ise %25'ini sağlar. Ancak oksijen sunumu açısından A. hepatica yaklaşık %50 katkı sağlar çünkü arteriyel kan yüksek oksijenlidir. Hepatik arter tıkanmasında portal ven kısmen kompanse eder ama safra kanalları beslendiği için ischemia riski yüksektir.",
+      "story_hint": "💡 HİKAYE: Karaciğer iki kapıdan beslenir. Portal ven = 3/4 kan ama az oksijen. Hepatik arter = 1/4 kan ama 1/2 oksijen. İki kaynak = iki türlü risk!"
+    },
+    {
+      "id": "avaka-029",
+      "case": "Vaka:(Pankreas Yaralanması) 32 yaşında bisikletçi düşerek direksiyona karnını çarptı. BT'de pankreas cisim-kuyruk bileşkesinde laserasyon görüldü. Pankreasın bu bölgesinde geçen ana damar hangisidir ve yaralanması ne anlama gelir?",
+      "options": [
+        "A) V. portae — karaciğere drenaj durur",
+        "B) A. mesenterica superior — ince bağırsak iskemisi gelişir",
+        "C) V. mesenterica superior / V. lienalis bileşimi — portal hipertansiyon riski",
+        "D) A. splenica — direkt dalak beslenmesi kesilir",
+        "E) A. gastroduodenalis — mide beslenmesi kesilir"
+      ],
+      "correct_answer": "C) V. mesenterica superior / V. lienalis bileşimi — portal hipertansiyon riski",
+      "explanation": "Pankreas cisim-kuyruk bileşkesi arkasında V. mesenterica superior ve V. lienalis (splenik ven) birleşerek V. portae'yi oluşturur. Künt travmada pankreas laserasyonu bu venöz bileşimi hasarlayabilir ve splenik ven trombozu gelişirse sol taraflı (sinistral) portal hipertansiyon oluşur. Ayrıca pankreatik duktus laserasyonu enzim sızıntısına yol açar. Bisiklet travmasında klasik 'pancreatic transection' mekanizması budur.",
+      "story_hint": "💡 HİKAYE: Bisiklet direksiyonu pankreas cismini keser. Arkasında portal ven öncüsü (mezenterik + splenik ven birleşimi) vardır. Hasar = sinistral portal hipertansiyon riski!"
+    },
+    {
+      "id": "avaka-030",
+      "case": "Vaka:(Duodenum Yaralanması) 40 yaşında erkek hasta araç içi trafik kazasında emniyet kemeri bası nedeniyle duodenum ikinci kısmı hasar gördü. Bu kısım retroperitoneal olduğundan peritonit gecikmeli gelişti. Duodenum D2 segmentinin önünden geçen ve yaralanmada risk altında olan yapı hangisidir?",
+      "options": [
+        "A) A. mesenterica superior",
+        "B) V. portae",
+        "C) Ductus choledochus ve V. mesenterica superior",
+        "D) A. hepatica communis",
+        "E) V. cava inferior"
+      ],
+      "correct_answer": "C) Ductus choledochus ve V. mesenterica superior",
+      "explanation": "Duodenum D2 (pars descendens) segmenti, retroperitonealdedir ve pankreasın başıyla yakın komşulukta bulunur. Ductus pancreaticus (Wirsung) ve Ductus choledochus bu segmentin posteromedial duvarından birleşerek Ampulla Vateri (Papilla duodeni major) aracılığıyla duodenuma açılır. A. mesenterica superior ise pankreas boynu arkasından geçerek D3 segmentinin önüne çıkar. D2 yaralanmasında safra kanalı ve pankreas kanalı da risk altındadır.",
+      "story_hint": "💡 HİKAYE: D2 = safra ve pankreas kanalının açıldığı nokta (Ampulla Vateri). Yaralandığında sarılık ve pankreatit birlikte gelişebilir. D2 = çift tehlike!"
+    },
+    {
+      "id": "avaka-031",
+      "case": "Vaka:(İnguinal Herni) 60 yaşında erkek hasta sağ kasıkta efor sırasında belirginleşen şişlik tarif ediyor. Muayenede şişliğin inguinal ligamentin üzerinde ve medialde, doğrudan karın duvarından çıktığı görülüyor. Bu hangi tip herni ve sınırları nelerdir?",
+      "options": [
+        "A) İndirekt inguinal herni — anulus inguinalis profundus'tan çıkar",
+        "B) Direkt inguinal herni — Hesselbach üçgeninden çıkar",
+        "C) Femoral herni — lacuna vasorum'dan çıkar",
+        "D) Umbilikal herni — linea alba'dan çıkar",
+        "E) Spigelian herni — linea semilunaris'ten çıkar"
+      ],
+      "correct_answer": "B) Direkt inguinal herni — Hesselbach üçgeninden çıkar",
+      "explanation": "Direkt inguinal herni, Hesselbach (inguinal) üçgeninden çıkar. Üçgenin sınırları: Lateral — Aa. epigastrica inferior, Medial — M. rectus abdominis lateral kenarı, Alt — Lig. inguinale. Hernin çıkış noktası anulus inguinalis superficialis medialindedir. İndirekt herniden farkı: direkt herni karın içi basınç artışıyla fascia transversalis zayıflığı nedeniyle oluşur, anulus inguinalis profundus'tan geçmez.",
+      "story_hint": "💡 HİKAYE: DİREKT = Hesselbach üçgeninden. İNDİREKT = derin halkadan (annulus profundus). Yaşlı erkek, zorlanmakla çıkan herni → direkt! Hesselbach = epigastrik arter + rektus + ligament üçgeni."
+    },
+    {
+      "id": "avaka-032",
+      "case": "Vaka:(Femoral Herni) 55 yaşında kadın hasta sağ uyluğun iç yüzünde inguinal ligamentin altında ele gelen sert kitle ile geliyor. Bağırsak tıkanıklığı bulguları mevcut. Bu herninin anatomik geçiş yolu nedir ve neden sıkışmaya yatkındır?",
+      "options": [
+        "A) Anulus inguinalis profundus — canalis inguinalis içinden geçer",
+        "B) Hesselbach üçgeni — fascia transversalis zayıflamasıyla",
+        "C) Lacuna vasorum — femoral kılıf içi medial boşluk (lacuna lymphatica)",
+        "D) Foramen obturatum — obturator kanal içinden",
+        "E) Linea alba üzerinden periton sürüntüsüyle"
+      ],
+      "correct_answer": "C) Lacuna vasorum — femoral kılıf içi medial boşluk (lacuna lymphatica)",
+      "explanation": "Femoral herni, femoral kılıfın medial boşluğu olan canalis femoralis'ten (lacuna lymphatica) geçer. Femoral halka (anulus femoralis) çevresi sert yapılarla (Lig. inguinale, Lig. lacunare, os pubis, femoral ven) sınırlandığı için elastik değildir. Bu nedenle femoral herniler strangulasyona ve bağırsak nekrozuna en yatkın herni tipidir. Yaşlı kadınlarda daha sık görülür.",
+      "story_hint": "💡 HİKAYE: Femoral herni = inguinal ligamentin ALTI, kadınlarda daha sık. Sert halkadan geçtiği için sıkışır! Femoral = inguinal ligin altı. İnguinal = üstü."
+    },
+    {
+      "id": "avaka-033",
+      "case": "Vaka:(Hesselbach Üçgeni) 50 yaşında erkek hasta direkt inguinal herni ameliyatı geçiriyor. Cerrah Hesselbach üçgenini tanımlamaya çalışıyor. Aşağıdaki sınırlardan hangisi yanlıştır?",
+      "options": [
+        "A) Lateral sınır: Aa. epigastrica inferior",
+        "B) Medial sınır: M. rectus abdominis lateral kenarı (linea semilunaris)",
+        "C) Alt sınır: Lig. inguinale",
+        "D) Üst sınır: Lig. interfoveolare",
+        "E) Taban: Fascia transversalis"
+      ],
+      "correct_answer": "D) Üst sınır: Lig. interfoveolare",
+      "explanation": "Hesselbach üçgeninin klasik sınırları: Lateral — A. epigastrica inferior, Medial — M. rectus abdominis'in lateral kenarı (linea semilunaris), Alt — Lig. inguinale. Üçgenin tabanı fascia transversalis'tir. 'Üst sınır' olarak Lig. interfoveolare tanımlanmaz; bu bağ derin halkanın medialindedir ama üçgenin kenarı değildir. Üçgen teorik olarak üç sınırlıdır (trigonum). Direkt herni tam bu üçgenden çıkar.",
+      "story_hint": "💡 HİKAYE: Hesselbach = EpiGastrik-Rektus-Ligament (ERL üçgeni). Üçgen 3 kenarlı, taban fascia transversalis. Lig. interfoveolare üçgenin kenarı DEĞİL!"
+    },
+    {
+      "id": "avaka-034",
+      "case": "Vaka:(Umbilikal Herni) 45 yaşında obez kadın hasta göbek deliğinde şişlik tarif ediyor. Muayenede linea alba üzerinden çıkan küçük herni saptandı. Bu herninin en sık hangi dönemde fizyolojik olarak görüldüğü ve hangi faktörlerin erişkin dönemde oluşturduğunu açıklayınız.",
+      "options": [
+        "A) Yenidoğan döneminde fizyolojik, erişkinde obezite/gebelik/asit nedeniyle",
+        "B) Emzirme döneminde hormonal, erişkinde yaş ile kendiliğinden",
+        "C) Adölesan döneminde kassal, erişkinde egzersizle",
+        "D) İntrauterin dönemde omphalocele ile aynı, erişkinde kabızlıkla",
+        "E) Prenatal dönemde gastroşizis ile aynı yapı"
+      ],
+      "correct_answer": "A) Yenidoğan döneminde fizyolojik, erişkinde obezite/gebelik/asit nedeniyle",
+      "explanation": "Umbilikal herni, yenidoğan döneminde göbek kordonu yerinin tam kapanmaması nedeniyle fizyolojik olarak görülür; çoğu 2-3 yılda spontan kapanır. Erişkin dönemde: intraabdominal basınç artışı (obezite, çok gebelik, asit, kronik öksürük) linea alba'daki zayıf noktadan fıtıklaşmaya neden olur. Çoklu gebelik yaşamış obez kadınlar en yüksek risk grubundadır.",
+      "story_hint": "💡 HİKAYE: Bebekte göbek fıtığı → genellikle kapanır. Erişkinde = obezite + gebelik + asit = karın basıncı artışı. Linea alba en zayıf nokta. Göbek fıtığı = basınç sorunudur!"
+    },
+    {
+      "id": "avaka-035",
+      "case": "Vaka:(Epigastrik Herni) 38 yaşında erkek hasta göbek üstünde küçük, ağrılı şişlik tarif ediyor. Eforla artıyor. BT'de linea alba defekti görüldü. Bu herninin umbilikal herniden farkı nedir?",
+      "options": [
+        "A) Linea semilunaris'ten çıkar, umbilikal göbekten",
+        "B) Epigastrik herni linea alba'dan göbek ÜSTÜNDE, umbilikal göbek HALKAsından",
+        "C) Epigastrik herni inguinal kanaldan, umbilikal göbekten",
+        "D) İkisi aynı yapıdan çıkar sadece lokalizasyon farklı değil",
+        "E) Epigastrik herni retroperitonealdır, umbilikal değil"
+      ],
+      "correct_answer": "B) Epigastrik herni linea alba'dan göbek ÜSTÜNDE, umbilikal göbek HALKAsından",
+      "explanation": "Epigastrik herni, linea alba'nın umbilikusun üzerindeki kısmından (xiphoid ile umbilikus arası) çıkar. Umbilikal herni ise umbilikal halkadan (göbek deliğinden) kaynaklanır. Her ikisi de linea alba zayıflığına bağlıdır. Epigastrik herniler genellikle küçüktür, preperitoneal yağ dokusu içerir ve strangulasyon riski düşük olmakla birlikte ağrılı olabilir.",
+      "story_hint": "💡 HİKAYE: Göbek üstü = epigastrik herni. Göbek halkası = umbilikal herni. İkisi de linea alba ama farklı noktalar. Xiphoid-göbek arası = epigastrik bölge."
+    },
+    {
+      "id": "avaka-036",
+      "case": "Vaka:(Karotid Sinüs) 72 yaşında hipertansif erkek hasta boyun masajı sırasında senkop geçirdi. Karotis bifurkasyonu bölgesine baskı uygulanıyor. Hangi mekanizma ile bu refleks senkop oluşur?",
+      "options": [
+        "A) Glomus karotikum hipoksiyi algılar, vazodilatasyona yol açar",
+        "B) Sinus caroticus baroreseptörler baskı algılar → N. glossopharyngeus (IX) → Vagus → bradikardi + hipotansiyon",
+        "C) N. vagus direkt karotid basıncı algılar, sinüs düğümünü uyarır",
+        "D) Chemoreseptörler CO2'yi algılar, apne refleksi tetikler",
+        "E) Sempatik ganglionlar komprese olarak tachikardi oluşturur"
+      ],
+      "correct_answer": "B) Sinus caroticus baroreseptörler baskı algılar → N. glossopharyngeus (IX) → Vagus → bradikardi + hipotansiyon",
+      "explanation": "Sinus caroticus, A. carotis communis bifurkasyonu veya A. carotis interna başlangıcındaki genişlemiş bölgedir. Mekanik basıncı algılayan baroreseptörler içerir. Aferent yol: N. sinüs carotici (N. glossopharyngeus'un dalı) → Tractus solitarius → efferent: N. vagus → SA nod inhibisyonu (bradikardi) + vazomotor merkez inhibisyonu (hipotansiyon) → senkop. Hypersensitive carotid sinus sendromu olan yaşlılarda boyun hareketleri bile tetikleyebilir.",
+      "story_hint": "💡 HİKAYE: Boyun masajı → sinus caroticus → IX. sinir → vagus → kalp yavaşlar, tansiyon düşer → senkop. Yaşlılarda boyun kravat veya yaka tehlikeli olabilir!"
+    },
+    {
+      "id": "avaka-037",
+      "case": "Vaka:(İnferior Laryngeal Sinir) 48 yaşında erkek hasta tiroid ameliyatı sonrası ses kısıklığı ve nefes almada güçlük bildiriyor. N. laryngicus recurrens hasarlanmış. Bu sinir tiroid bezi arkasında hangi anatomik ilişkiyle seyreder?",
+      "options": [
+        "A) A. tiroidea superior ile birlikte yukarı çıkar",
+        "B) A. tiroidea inferior ile çaprazlaşarak, trakeoözofageal olukta yukarı çıkar",
+        "C) V. jugularis internadan geçerek larinkse ulaşır",
+        "D) N. vagus'tan bağımsız olarak doğrudan larinkse girer",
+        "E) M. sternohyoid arkasında ilerleyerek krikotiroide girer"
+      ],
+      "correct_answer": "B) A. tiroidea inferior ile çaprazlaşarak, trakeoözofageal olukta yukarı çıkar",
+      "explanation": "N. laryngicus recurrens, trakeoözofageal olukta (sulcus tracheoesophagealis) yukarı çıkar. Tiroid bezi alt kutbunun arkasında A. tiroidea inferior ile kritik bir çaprazlaşma noktası vardır — ameliyatta en çok hasar gören yer burasıdır. Sağda subklavian arterin altından döner, solda aortik arkın altından döner ve daha uzun bir seyir izler. Krikotiroid kası hariç tüm intrinsik laringeal kasları innerve eder.",
+      "story_hint": "💡 HİKAYE: Rekürrent laringeal sinir tiroid ameliyatının en kritik noktası. A. tiroidea inferior'la çaprazlaşır = en tehlikeli yer. Sol daha uzun (aort altından döner). Hasar = ses kısıklığı!"
+    },
+    {
+      "id": "avaka-038",
+      "case": "Vaka:(Torasik Outlet) 27 yaşında sporcu kol üstüne yatarak uyuduğunda el parmaklarında uyuşma ve kolda ağrı tarif ediyor. Hiperabduksiyon testinde şikayetler artıyor. Hangi anatomik yapı sıkışmaya neden olur?",
+      "options": [
+        "A) Karpal tünel — N. medianus sıkışması",
+        "B) Kübital tünel — N. ulnaris sıkışması",
+        "C) Birinci kaburga/M. scalenus anterior — brakiyal pleksus ve subklavian damarlar",
+        "D) Quadrangular space — N. axillaris sıkışması",
+        "E) Spiral kanal — N. radialis sıkışması"
+      ],
+      "correct_answer": "C) Birinci kaburga/M. scalenus anterior — brakiyal pleksus ve subklavian damarlar",
+      "explanation": "Torasik outlet sendromu (TOS), birinci kaburga ile klavikula arasındaki boşlukta ya da M. scalenus anterior ile medius arasında brakiyal pleksus veya subklavian damarların sıkışmasıyla oluşur. Nörojenik TOS'ta uyuşma ve güçsüzlük (özellikle ulnar dağılım), vasküler TOS'ta kol solukluğu/ağrısı görülür. Hiperabduksiyon ve Adson testi pozitifliği tanıyı destekler.",
+      "story_hint": "💡 HİKAYE: Kol yukarıda sıkışma = TOS. 1. kaburga + klavikula + skalenler = dar geçit. Brakiyal pleksus ve subklavian damar sıkışır. Sporcularda, boyun kısa ve kaslılarda sık."
+    },
+    {
+      "id": "avaka-039",
+      "case": "Vaka:(Cubital Fossa) 45 yaşında erkek hasta dirsek medialinde ağrı, yüzük ve serçe parmakta uyuşma ve el kavrama gücü azalması tarif ediyor. Kübital tünel sendromu düşünülüyor. Bu tünelin sınırları nelerdir?",
+      "options": [
+        "A) Lateral epikondil, M. brachioradialis, M. supinator",
+        "B) Medial epikondil, M. flexor carpi ulnaris iki başı arasında, Lig. arcuatum Osborne",
+        "C) Medial epikondil, M. pronator teres, Lig. anulare",
+        "D) Olekranon, M. triceps, M. anconeus",
+        "E) Ulna stiloid, M. flexor digitorum superficialis, retinakulum"
+      ],
+      "correct_answer": "B) Medial epikondil, M. flexor carpi ulnaris iki başı arasında, Lig. arcuatum Osborne",
+      "explanation": "Kübital tünel: Tavan — Lig. arcuatum Osborne (M. flexor carpi ulnaris'in iki başını birleştiren fibröz bant), Taban — medial epikondil ve ulna, İçerik — N. ulnaris. N. ulnaris, medial epikondilin arkasındaki sulcustan geçerek M. flexor carpi ulnaris'in iki başı (humeral ve ulnar başlar) arasına girer. Dirsek fleksiyonu tüneli daraltır ve siniri gerer — bu nedenle uzun süre dirsek bükük tutmak şikayetleri artırır.",
+      "story_hint": "💡 HİKAYE: Kübital tünel = medial epikondil arkası. Ulnar sinir burada sıkışır. Telefon tutmak (dirsek bükük) uyuşma yapar. 4-5. parmak + el içi kas atrofisi = ulnar/kübital tünel!"
+    },
+    {
+      "id": "avaka-040",
+      "case": "Vaka:(Guyon Kanalı) 38 yaşında bisikletçi gidon üzerine bileğini dayayarak sürerken sol el yüzük ve serçe parmakta uyuşma ve motor kayıp gelişmiş. Tinel testi bileğin ulnar tarafında pozitif. Hangi kanal ve içerik etkilenmiştir?",
+      "options": [
+        "A) Karpal tünel — N. medianus",
+        "B) Guyon kanalı — N. ulnaris",
+        "C) Kübital tünel — N. ulnaris",
+        "D) Radyal tünel — N. radialis derin dalı",
+        "E) Pronator kanal — N. medianus"
+      ],
+      "correct_answer": "B) Guyon kanalı — N. ulnaris",
+      "explanation": "Guyon kanalı (ulnar tünel), Os pisiforme ile Os hamatum arasında yer alır. İçinden N. ulnaris ve A. ulnaris geçer. N. ulnaris burada yüzeyel (duyusal) ve derin (motor) dallara ayrılır. Sıkışma tipine göre duyu kaybı, motor kayıp veya her ikisi birlikte görülebilir. Bisiklet kulpuna veya gidona uzun süre baskı uygulamak en sık nedeni oluşturur (bisikletçi felci).",
+      "story_hint": "💡 HİKAYE: Bisiklet gidon baskısı → Guyon kanalı → ulnar sinir. Pisiforme-Hamatum arası tünel. 4-5. parmak uyuşur, el içi kaslar zayıflar. Guyon = bilek ulnar tünel!"
+    },
+    {
+      "id": "avaka-041",
+      "case": "Vaka:(İnferior Alveolar Sinir) 35 yaşında erkek hasta alt çene diş çekimi sonrası alt dudak ve çenede uyuşma bildiriyor. Hangi sinir hasarlanmıştır ve hangi foramen içinden geçer?",
+      "options": [
+        "A) N. mentalis — foramen mentale içinden çıkar, alt dudağı innerve eder",
+        "B) N. alveolaris inferior — foramen mandibulae'den girer, tüm alt dişleri ve alt dudağı innerve eder; N. mentalis olarak foramen mentale'den çıkar",
+        "C) N. lingualis — dil ön 2/3 duyusunu taşır",
+        "D) N. buccalis — yanak mukozasını innerve eder",
+        "E) N. massetericus — masseter kasını innerve eder"
+      ],
+      "correct_answer": "B) N. alveolaris inferior — foramen mandibulae'den girer, tüm alt dişleri ve alt dudağı innerve eder; N. mentalis olarak foramen mentale'den çıkar",
+      "explanation": "N. alveolaris inferior (N. trigeminus — V3 dalı), foramen mandibulae'den mandibular kanala girer. İçinde seyrederek tüm alt dişleri innerve eder. Foramen mentale'den çıkarken N. mentalis olarak adlandırılır ve alt dudak ile çene cildini innerve eder. Diş çekimi veya mandibula kırığında bu sinir hasarlanabilir ve alt dudak/çenede kalıcı uyuşma (anestezi) gelişir.",
+      "story_hint": "💡 HİKAYE: Alt diş çekimi → inferior alveolar sinir riski. Mandibular kanalda seyreder. Foramen mentale'den çıkınca mentalis = alt dudak. Alt diş uyuşması = V3 hasarı!"
+    },
+    {
+      "id": "avaka-042",
+      "case": "Vaka:(Yüz Siniri) 60 yaşında kadın hasta sabah uyandığında sağ yüz yarısının tamamen felç olduğunu fark etti. Alnını kırıştıramıyor, gözünü kapayamıyor, ağız köşesi düşük. Merkezi mi periferik mi felç, nasıl ayrılır?",
+      "options": [
+        "A) Göz kapama kaybı varsa merkezi, yoksa periferik",
+        "B) Alın ve göz kapama kurtulmuşsa merkezi; tüm yüz yarısı etkilenmişse periferik",
+        "C) Alnın etkilenmesi merkezi, etkilenmemesi periferik",
+        "D) Ağız düşüklüğü merkezi, alın düşüklüğü periferik",
+        "E) İki tip arasında klinik fark yoktur"
+      ],
+      "correct_answer": "B) Alın ve göz kapama kurtulmuşsa merkezi; tüm yüz yarısı etkilenmişse periferik",
+      "explanation": "Alın kısmı (frontalis kası) çift kortikal temsile sahiptir — her iki hemisferden innervasyon alır. Merkezi (korteks veya internal kapsül) lezyonunda karşı taraf alt yüz felç olurken alın korunur. Periferik (N. facialis gövdesi veya dalları) lezyonunda ise alın dahil tüm ipsilateral yüz yarısı etkilenir. Bu vakada alın felci var → periferik felç (Bell paralizisi). Ayrıca hiperakuzi, damak zevki kaybı eşlik edebilir.",
+      "story_hint": "💡 HİKAYE: Alın tutulmuşsa = periferik (Bell). Alın kurtulmuşsa = merkezi (stroke). Alın çift temsilli çünkü her iki hemisfer kontrol eder. Alın = periferik testi!"
+    },
+    {
+      "id": "avaka-043",
+      "case": "Vaka:(Aksillar Ven Trombozu) 22 yaşında yüzücü yoğun antrenman sonrası sağ kolda şişlik, ağırlık ve siyanozu fark etti. Paget-Schroetter sendromu düşünülüyor. Hangi venin trombozu bu tabloyu verir?",
+      "options": [
+        "A) V. subclavia izole trombozu",
+        "B) V. axillaris veya V. subclavia — effort thrombosis",
+        "C) V. brachialis trombozu",
+        "D) V. cephalica trombozu",
+        "E) V. jugularis interna trombozu"
+      ],
+      "correct_answer": "B) V. axillaris veya V. subclavia — effort thrombosis",
+      "explanation": "Paget-Schroetter sendromu (effort thrombosis), genellikle genç atletlerde tekrarlayan üst ekstremite kullanımına bağlı V. axillaris veya V. subclavia trombozudur. Birinci kaburga ve klavikula arasındaki torasik outlet sıkışmasına bağlı venöz hasar tetikleyicidir. Kol şişliği, siyanoz, ağırlık ve yüzeyel ven belirginleşmesi klasik bulgulardır. Hızlı antikoagülasyon ve bazen trombolitik tedavi gerekir.",
+      "story_hint": "💡 HİKAYE: Genç sporcu, ağır egzersiz → kol şişer, morarır = Paget-Schroetter. Aksiller/subklavian ven trombozu. Torasik outlet'te sıkışma ön koşul. Effort thrombosis!"
+    },
+    {
+      "id": "avaka-044",
+      "case": "Vaka:(Transvers Servikal Sinir) 45 yaşında erkek hasta karotid endarterektomi sonrası boyun ön yüzünde uyuşma hissediyor. Hangi sinir hasarlanmıştır ve hangi pleksusta?",
+      "options": [
+        "A) N. auricularis magnus — servikal pleksus",
+        "B) N. transversus colli — servikal pleksus, C2-C3",
+        "C) N. occipitalis minor — servikal pleksus",
+        "D) Nn. supraclaviculares — servikal pleksus",
+        "E) N. phrenicus — servikal pleksus, C3-C5"
+      ],
+      "correct_answer": "B) N. transversus colli — servikal pleksus, C2-C3",
+      "explanation": "N. transversus colli (transversus cervicis), servikal pleksusun (C2-C3) yüzeyel duyusal dallarından biridir. M. sternocleidomastoideus'un arka kenarından çıkarak boyun ön yüzünü innerve eder. Karotid endarterektomi veya boyun disseksiyonu sırasında bu sinir hasarlanabilir ve boyun ön yüzünde kalıcı uyuşma gelişir. Servikal pleksusun yüzeyel dalları Erb noktasında (SCM arka kenar ortası) bir araya gelir.",
+      "story_hint": "💡 HİKAYE: Boyun ameliyatı sonrası ön boyun uyuşması = N. transversus colli (C2-C3). Servikal pleksus yüzeyel dal. Erb noktasından çıkar. SCM arka kenarı = Erb noktası!"
+    },
+    {
+      "id": "avaka-045",
+      "case": "Vaka:(İntraabdominal Basınç) 65 yaşında KOAH'lı erkek hasta kronik öksürük nedeniyle bilateral inguinal herni gelişti. Karın duvarının anatomik olarak en zayıf noktaları hangileridir?",
+      "options": [
+        "A) M. rectus abdominis lateral kenarı ve linea alba",
+        "B) Linea alba, umbilikus, inguinal kanal (anulus inguinalis profundus ve Hesselbach üçgeni), femoral kanal, foramen obturatum",
+        "C) Yalnızca inguinal kanal ve femoral kanal",
+        "D) Torakoabdominal geçiş bölgesi ve psoas kasları",
+        "E) Lateral karın duvarı (M. obliquus externus) ve pelvik taban"
+      ],
+      "correct_answer": "B) Linea alba, umbilikus, inguinal kanal (anulus inguinalis profundus ve Hesselbach üçgeni), femoral kanal, foramen obturatum",
+      "explanation": "Karın duvarının anatomik zayıf noktaları: (1) Linea alba — midline avasküler bölge, (2) Umbilikus — göbek halkası, (3) Anulus inguinalis profundus ve Hesselbach üçgeni — indirekt ve direkt inguinal herni, (4) Femoral kanal (lacuna lymphatica) — femoral herni, (5) Foramen obturatum — obturator herni, (6) Hiatus oesophageus — hiatal herni, (7) Spigelian fasya — Spigelian herni. Kronik intraabdominal basınç artışı (KOAH, obezite, asit, gebelik) bu zayıf noktaları zorlar.",
+      "story_hint": "💡 HİKAYE: Karın duvarı 6 zayıf noktası: linea alba, göbek, inguinal derin halka, Hesselbach, femoral kanal, obturator. KOAH kronik baskıyla hepsini zorlar!"
+    },
+    {
+      "id": "avaka-046",
+      "case": "Vaka:(Diyafragma Hernisi) 55 yaşında erkek hasta epigastrik ağrı ve yutma güçlüğü tarif ediyor. BT'de mide fundusunun göğüs kafesine kaydığı görüldü. Özofagus diyafragmadan hangi aralıktan geçer ve bu bölge klinisyenlerin neden önem verdiği bir noktadır?",
+      "options": [
+        "A) T8 düzeyinde hiatus aorticus'tan geçer",
+        "B) T10 düzeyinde hiatus oesophageus'tan geçer, mide fundus kayabilir",
+        "C) T12 düzeyinde crura arasından geçer",
+        "D) L1 düzeyinde ligamentum arcuatum medianum altından geçer",
+        "E) T6 düzeyinde mediastinal yapılarla birlikte geçer"
+      ],
+      "correct_answer": "B) T10 düzeyinde hiatus oesophageus'tan geçer, mide fundus kayabilir",
+      "explanation": "Diyafragmanın üç ana aralığı: T8 — hiatus venae cavae (V. cava inferior + sağ frenik sinir), T10 — hiatus oesophageus (özofagus + N. vagus anterior + posterior), T12 — hiatus aorticus (aorta + ductus thoracicus + V. azygos). Hiatus oesophageus, kassal yapısı nedeniyle fıtıklaşmaya en yatkın aralıktır. Tip 1 (kayan) hiatal hernide gastroözofageal bileşke toraksa kayar; tip 2 (paraözofageal) hernide mide fundus kayar.",
+      "story_hint": "💡 HİKAYE: T8=vena cava, T10=özofagus, T12=aorta. 8-10-12 artan çift sayılar! Özofageal hiatus = en sık herni yeri. Mide fundus T10'dan kayar."
+    },
+    {
+      "id": "avaka-047",
+      "case": "Vaka:(Portal-Kaval Anastomoz) 58 yaşında siroz hastasında özofagus varisleri kanaması gelişti. Bu kanamada hangi anastomoz açılmıştır ve klinik önemi nedir?",
+      "options": [
+        "A) Paraumbilikal venler — caput medusae",
+        "B) Özofagus alt bölüm — V. gastrica sinistra (portal) ile V. azygos (kaval) arasında",
+        "C) Rektum alt bölüm — V. rectalis superior (portal) ile V. rectalis media/inferior (kaval)",
+        "D) Retroperitoneal venler — Retzius venleri",
+        "E) Karın duvarı venleri — umbilikal ven ile epigastrik venler arası"
+      ],
+      "correct_answer": "B) Özofagus alt bölüm — V. gastrica sinistra (portal) ile V. azygos (kaval) arasında",
+      "explanation": "Portal hipertansiyonda kanın alternatif yollar (porto-kaval anastomozlar) aracılığıyla sistemik dolaşıma drene edilmesi gerekir. Özofageal varisler, V. gastrica sinistra (portal sistem) ile V. azygos/hemiazygos (sistemik) arasındaki anastomozların genişlemesiyle oluşur. Bu, hayatı tehdit eden kanama kaynağıdır. Diğer anastomoz bölgeleri: paraumbilikal (caput medusae), rektal (hemoroid benzeri) ve retroperitoneal (Retzius venleri).",
+      "story_hint": "💡 HİKAYE: Portal hipertansiyon → 4 kaçış yolu: özofagus (varis), göbek (Medusa başı), rektum (hemoroid), retroperiton (Retzius). En tehlikelisi özofagus varisi kanaması!"
+    },
+    {
+      "id": "avaka-048",
+      "case": "Vaka:(McBurney Noktası) 22 yaşında kadın hasta sağ alt kadranda ağrı, ateş ve bulantı ile geliyor. Muayenede McBurney noktasında hassasiyet, rebound pozitif. Appendisit düşünülüyor. McBurney noktası anatomik olarak nerede tanımlanır?",
+      "options": [
+        "A) Sağ spina iliaca anterior superior ile umbilikus arasının 1/3 laterali",
+        "B) Sağ spina iliaca anterior superior ile umbilikus arasının 1/3 mediali (umbilikusa yakın)",
+        "C) Sağ spina iliaca anterior superior'dan 5 cm aşağıda",
+        "D) Sağ inguinal ligamentin orta noktasından 3 cm yukarıda",
+        "E) Umbilikusun 4 cm sağı ve 4 cm altı"
+      ],
+      "correct_answer": "A) Sağ spina iliaca anterior superior ile umbilikus arasının 1/3 laterali",
+      "explanation": "McBurney noktası, sağ spina iliaca anterior superior (SIAS) ile umbilikus arasındaki mesafenin lateral 1/3'üne denk gelir (SIAS'a yakın taraf). Appendiksin tabanının en sık bu noktanın altında bulunduğu gösterilmiştir. Appendisit tanısında bu noktaya parmakla bastırıldığında ağrı (McBurney işareti) ve el kaldırılınca ağrı (rebound/Blumberg işareti) appendisite işaret eder. Rovsing işareti: sol alt kadranda baskıyla sağda ağrı oluşması.",
+      "story_hint": "💡 HİKAYE: McBurney = SIAS-Göbek arası LATERAL 1/3 (SIAS'a yakın). Appendiks tabanı burada. Ağrı burada = appendisit! 1/3 lateral = laterale yakın."
+    },
+    {
+      "id": "avaka-049",
+      "case": "Vaka:(Calot Üçgeni) 45 yaşında kadın hasta laparoskopik kolesistektomi sırasında Calot üçgeninde anatomik belirsizlik oluştu ve safra kanalı hasarından korkuldu. Calot üçgeninin sınırları ve içeriği nedir?",
+      "options": [
+        "A) Karaciğer alt kenarı, A. hepatica communis, V. portae — İçerik: A. hepatica propria",
+        "B) Ductus cysticus, Ductus hepaticus communis, karaciğer alt yüzeyi — İçerik: A. cystica",
+        "C) V. portae, ductus choledochus, karaciğer alt yüzeyi — İçerik: N. vagus",
+        "D) A. hepatica dextra, ductus hepaticus dextra, karaciğer — İçerik: V. portae",
+        "E) Kolon hepatik fleksura, karaciğer, safra kesesi fundus — İçerik: A. gastroduodenalis"
+      ],
+      "correct_answer": "B) Ductus cysticus, Ductus hepaticus communis, karaciğer alt yüzeyi — İçerik: A. cystica",
+      "explanation": "Calot üçgeni (hepatosistik üçgen): Sağ kenar — Ductus cysticus, Sol kenar — Ductus hepaticus communis, Üst kenar — karaciğer alt yüzeyi (visseral periton). İçeriği: A. cystica (safra kesesi arteryası). Laparoskopik kolesistektomide güvenli diseksiyon için bu üçgenin skeletize edilmesi ve A. cystica ile Ductus cysticus'un tek tek tanımlanarak bağlanması (critical view of safety) esastır. A. hepatica dextra üçgenin hemen medialinde seyreder.",
+      "story_hint": "💡 HİKAYE: Calot üçgeni = safra ameliyatının en kritik noktası. Sınırlar: sistik kanal + hepatik kanal + karaciğer. İçinde: A. cystica. Hasarlanırsa safra fistülü!"
+    },
+    {
+      "id": "avaka-050",
+      "case": "Vaka:(Scarpa Üçgeni) 68 yaşında erkek hasta sağ femoral ven erozyonu nedeniyle bacağında ağırlık ve ödem şikayetiyle geliyor. Femoral üçgende femoral kılıfın içeriği ve sıralama nasıldır?",
+      "options": [
+        "A) Dıştan içe: A. femoralis — V. femoralis — N. femoralis — Canalis femoralis",
+        "B) Dıştan içe: N. femoralis — A. femoralis — V. femoralis — Canalis femoralis (lenf)",
+        "C) Dıştan içe: V. femoralis — A. femoralis — N. femoralis — Lenf kanalı",
+        "D) Dıştan içe: N. femoralis — V. femoralis — A. femoralis — Canalis femoralis",
+        "E) Dıştan içe: Canalis femoralis — A. femoralis — N. femoralis — V. femoralis"
+      ],
+      "correct_answer": "B) Dıştan içe: N. femoralis — A. femoralis — V. femoralis — Canalis femoralis (lenf)",
+      "explanation": "Femoral (Scarpa) üçgeni sınırları: Üst — Lig. inguinale, Lateral — M. sartorius, Medial — M. adductor longus. Femoral kılıf içeriği dıştan (lateralden) içe (mediale) doğru: NAVL — N. femoralis (kılıf dışında), A. femoralis, V. femoralis, Lacuna lymphatica (canalis femoralis — Cloquet lenf nodu burada). Mnemonik: NAVY (Nerve-Artery-Vein-lYmph). Femoral herni lacuna lymphatica'dan (en medial boşluk) geçer.",
+      "story_hint": "💡 HİKAYE: Femoral üçgende NAVY sırası — Sinir-Arter-Ven-Lenf (lateralden mediale). Femoral herni en medialden (lacuna lymphatica) geçer. NAVY = Femoral üçgenin sırrı!"
+    }
+  ]
+}

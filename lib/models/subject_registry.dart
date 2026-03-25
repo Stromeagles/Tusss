@@ -48,6 +48,11 @@ class SubjectRegistry {
         'assets/data/anatomi_batch1.json',
         'assets/data/anatomi_batch2.json',
         'assets/data/anatomi_batch3.json',
+        // ── Yeni Batch (2026) ────────────────────────────────────────────
+        'assets/data/anatomi_tus_batch1.json',
+        'assets/data/anatomi_vaka_batch1.json',
+        'assets/data/anatomi_flash_batch1.json',
+        'assets/data/anatomi_prof_100.json',
       ],
     ),
     SubjectModule(
@@ -123,6 +128,11 @@ class SubjectRegistry {
         'assets/data/microbiology_prof_200.json',
         // ── 200 Mikrobiyoloji Sorusu (Soru Bankası) ────────────────────
         'assets/data/mikrobiyoloji_200_soru.json',
+        // ── Yeni Batch (2026) ────────────────────────────────────────────
+        'assets/data/mikrobiyoloji_flash_100.json',
+        'assets/data/mikrobiyoloji_vaka_100.json',
+        'assets/data/mikrobiyoloji_tus_batch2.json',
+        'assets/data/mikrobiyoloji_prof_100.json',
       ],
     ),
     SubjectModule(
@@ -158,6 +168,11 @@ class SubjectRegistry {
         'assets/data/patoloji_kons_batch1.json',
         'assets/data/patoloji_kons_batch2.json',
         'assets/data/patoloji_kons_batch3.json',
+        // ── Yeni Batch (2026) ────────────────────────────────────────────
+        'assets/data/patoloji_tus_batch1.json',
+        'assets/data/patoloji_vaka_batch1.json',
+        'assets/data/patoloji_flash_batch1.json',
+        'assets/data/patoloji_prof_100.json',
       ],
     ),
     SubjectModule(

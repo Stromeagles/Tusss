@@ -1,0 +1,1412 @@
+{
+  "id": "anatomi_tus_batch1",
+  "subject": "Anatomi",
+  "chapter": "TUS Soruları Batch 1",
+  "topic": "Genel Anatomi ve Klinik Önemi",
+  "sub_topic": "TUS Yüksek Verimli Konular",
+  "content_summary": "TUS sınavına yönelik 100 anatomi sorusu — ekstremiteler, toraks, karın, baş-boyun ve nöroanatomi",
+  "flashcards": [],
+  "tus_spots": [],
+  "clinical_cases": [
+    {
+      "id": "atus1-001",
+      "case": "Soru:(Brakiyal Pleksus - Erb Palsy) 28 yaşında kadın hastada doğum travması sonrası bebeğin sağ kolunda adduksiyon ve iç rotasyon pozisyonu, dirsekte ekstansiyon ve ön kolda pronasyon gözleniyor. Hangi kök seviyesi hasarından kaynaklanmaktadır?",
+      "options": [
+        "A) C5-C6",
+        "B) C7-C8",
+        "C) C8-T1",
+        "D) C6-C7",
+        "E) C5-C7"
+      ],
+      "correct_answer": "A) C5-C6",
+      "explanation": "Erb palsy (üst tip brakiyal pleksus paralizisi) C5-C6 köklerinin hasarıyla oluşur. Etkilenen kaslar: deltoid, biseps, brakiyalis, brakioradialis ve supinator. Klinik tablo omuz adduksiyonu ve iç rotasyonu, dirsek ekstansiyonu ve ön kol pronasyonuyla karakterizedir. Bu pozisyon 'garson bahşiş bekliyor' (waiter's tip) pozisyonu olarak adlandırılır. Biseps ve brakioradialis refleksleri kaybolur. Sternoklavikular eklem yakınında travma veya zor doğum en sık nedendir.",
+      "story_hint": "💡 HİKAYE: ERB = 'El Reddetti Bahşişi' — C5-C6 kolu aşağı iter, garson gibi elin arkası yukarda"
+    },
+    {
+      "id": "atus1-002",
+      "case": "Soru:(Brakiyal Pleksus - Klumpke Palsy) Zor doğum sonrası yenidoğanda el intrinsik kaslarının tamamında paralizi, el bileğinde drop ve sol gözde pitoz, miyozis ve anhidroz saptanıyor. Bu tabloya en sık eşlik eden kök hasarı hangisidir?",
+      "options": [
+        "A) C5-C6",
+        "B) C6-C7",
+        "C) C7-C8",
+        "D) C8-T1",
+        "E) C5-T1"
+      ],
+      "correct_answer": "D) C8-T1",
+      "explanation": "Klumpke palsy alt tip brakiyal pleksus paralizisidir ve C8-T1 köklerinin hasarıyla oluşur. Etkilenen kaslar tüm el intrinsik kaslarıdır (lumbrikal, interosseal, tenar ve hipotenar kaslar). T1 kökünün hasarı servikal sempatik lifleri de etkileyerek Horner sendromunun (pitoz, miyozis, anhidroz, enoftalmus) eşlik ettiği tabloyu oluşturur. Kol abduksiyonu sırasında aşırı traksiyon tipik mekanizmadır. C8 hasarında 4-5. parmak fleksörleri de etkilenir.",
+      "story_hint": "💡 HİKAYE: KLUMPKE = 'Küçük parmaklar uyumaz' — C8-T1, alt demetten, Horner ile birlikte gelir"
+    },
+    {
+      "id": "atus1-003",
+      "case": "Soru:(N. Radialis Hasarı) 35 yaşında erkek hastada humerus shaft kırığı sonrası el bileğinde düşme (wrist drop) ve parmakların aktif ekstansiyonunda kayıp gözleniyor. Biseps refleksi normal olan bu hastada hangi sinir hasarlandığı düşünülmelidir?",
+      "options": [
+        "A) N. medianus",
+        "B) N. ulnaris",
+        "C) N. radialis",
+        "D) N. muskülokütan",
+        "E) N. aksillaris"
+      ],
+      "correct_answer": "C) N. radialis",
+      "explanation": "N. radialis humerusun spiral (radial) oluk boyunca seyreder ve humerus orta shaft kırıklarında sıkça hasarlanır. Wrist drop (el bileği düşmesi) n. radialis hasarının en karakteristik bulgusudur; ekstansör karpi radialis, ekstansör digitorum communis ve diğer ekstansörler felç olur. Parmak MCP eklemlerinde ekstansiyon kaybolur ancak IP eksteransiyonu lumbrikaller aracılığıyla korunabilir. Biseps kasını innerve eden n. muskülokütan proksimalde ayrıldığından biseps refleksi korunur. Ön kolun dorsal yüzünde duyu kaybı eşlik eder.",
+      "story_hint": "💡 HİKAYE: RADİAL = 'Rüzgar ALtında El Düşer' — Spiral oluktaki kırık, wrist drop = radialis"
+    },
+    {
+      "id": "atus1-004",
+      "case": "Soru:(N. Medianus - Karpal Tünel) 42 yaşında sekreter kadın hastada gece uyku sırasında artan el ağrısı ve uyuşma, başparmak opozisyonunda güçsüzlük ve tenar bölgede atrofi saptanıyor. Tinel ve Phalen testleri pozitif. En olası tanı nedir?",
+      "options": [
+        "A) Kubital tünel sendromu",
+        "B) Karpal tünel sendromu",
+        "C) Pronator sendromu",
+        "D) Torasik outlet sendromu",
+        "E) De Quervain tenosinoviti"
+      ],
+      "correct_answer": "B) Karpal tünel sendromu",
+      "explanation": "Karpal tünel sendromu n. medianusun karpal tünel içinde sıkışmasıyla oluşur ve en sık görülen tuzak nöropatidir. N. medianus tenar kasları (abduktör pollisis brevis, fleksör pollisis brevis, opponens pollisis) ve 1-2-3. lumbrikalleri innerve eder. Başparmak opozisyon kaybı ve tenar atrofi ileri evre bulgusudur. 'Maymun eli' (ape hand) deformitesi gelişir; başparmak palmar düzlemde kalır. Tinel testi (karpal tünel üzerinde perküsyon ile parestezi) ve Phalen testi (el bileği fleksiyonuyla semptom artışı) tanıyı destekler.",
+      "story_hint": "💡 HİKAYE: MEDİAN = 'Maymun Eli'  — başparmak karşıya gidemez, tenar solar, gece acıtır"
+    },
+    {
+      "id": "atus1-005",
+      "case": "Soru:(N. Ulnaris Hasarı) 55 yaşında erkek hastada medial epikondil bölgesinde kronik baskı sonrası 4. ve 5. parmaklarda pençe eli deformitesi, hipotenar atrofi ve iki parmak lateral hipoestezi gelişiyor. Hangi sinir hasarı bu tabloyu açıklar?",
+      "options": [
+        "A) N. medianus",
+        "B) N. radialis",
+        "C) N. ulnaris",
+        "D) N. muskülokütan",
+        "E) N. interosseus anterior"
+      ],
+      "correct_answer": "C) N. ulnaris",
+      "explanation": "N. ulnaris medial epikondilin arkasından geçen kubital kanalda en sık hasarlanır. İnnervasyon alanı: hipotenar kaslar, tüm interosseal kaslar, 3-4. lumbrikaller, adduktor pollisis ve fleksör karpi ulnaris. Pençe eli deformitesi (claw hand) 4. ve 5. parmaklarda belirgindir; MCP hiperekstansiyon, IP fleksiyon görülür. Froment belirtisi (başparmak adduktöründe kompansatuar IP fleksiyonu) tipiktir. 4-5. parmak ulnar yarısında ve hipotenar bölgede duyu kaybı eşlik eder.",
+      "story_hint": "💡 HİKAYE: ULNARİS = '4-5 ULUr gibi kıvrılır' — Serçe ve yüzük parmağı pençe, hipotenar solar"
+    },
+    {
+      "id": "atus1-006",
+      "case": "Soru:(N. Aksillaris Hasarı) 22 yaşında erkek hastada omuz öne çıkığı (anterior dislokasyon) redüksiyonu sonrası deltoid kasında güçsüzlük ve omuzun lateral yüzünde hipoestezi saptanıyor. Hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) N. radialis",
+        "B) N. muskülokütan",
+        "C) N. supraskaplaris",
+        "D) N. aksillaris",
+        "E) N. torasikus longus"
+      ],
+      "correct_answer": "D) N. aksillaris",
+      "explanation": "N. aksillaris (C5-C6) omuz öne çıkıklarında en sık hasarlanan sinirdir; humeral cerrahi boyun kırıklarında da risk altındadır. Quadrilateral (dörtgen) boşluktan geçerek deltoid ve teres minor kaslarını innerve eder. Deltoid felcinde omuz abduksiyonu (özellikle 0-90 derece) kaybolur, dış rotasyon zayıflar. 'Rozet patch' bölgesi denen lateral omuz ve üst kol lateralinde duyu kaybı karakteristiktir. Tanı klinik ve elektromiyografi ile konur.",
+      "story_hint": "💡 HİKAYE: AKSİLLARİS = 'Omuz çıktı, deltoid sustu' — Dörtgen boşluktan geçer, rozet bölgesi uyuşur"
+    },
+    {
+      "id": "atus1-007",
+      "case": "Soru:(N. Muskülokütan Hasarı) Biseps ve brakiyalis kaslarında güçsüzlük ile ön kolun lateral yüzünde hipoestezi olan hastada hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) N. aksillaris",
+        "B) N. radialis",
+        "C) N. muskülokütan",
+        "D) N. medianus",
+        "E) N. ulnaris"
+      ],
+      "correct_answer": "C) N. muskülokütan",
+      "explanation": "N. muskülokütan (C5-C6-C7) brakiyal pleksusun lateral kordonundan çıkar ve korakobrakiyalis kasını delerek ön kolun fleksör kompartmanını (biseps brakii, brakiyalis) innerve eder. Distal dal olan n. kutaneus antebrakii lateralis ön kolun lateral yüzünün duyusunu sağlar. Hasarında dirsek fleksiyonu (özellikle supinasyon pozisyonunda) ve ön kol lateral duyusu kaybı görülür. Biseps refleksi kaybolur. İzole hasarı nadir olup en sık korakoid bölge cerrahileri veya ağır egzersizle oluşur.",
+      "story_hint": "💡 HİKAYE: MUSKÜLOKÜTAN = 'Muskulöz Kol laterali' — Korakobrakiyalisi deler, bisepsi çalıştırır, laterali hisseder"
+    },
+    {
+      "id": "atus1-008",
+      "case": "Soru:(N. Interosseus Anterior) Humerus suprakondiler kırığı sonrası fleksör pollisis longus ve pronator kuadratus güçsüzlüğü gelişen hastada 'OK işareti' yapamıyor. Duyu kaybı bulunmuyor. Hangi sinir dalı hasarlanmıştır?",
+      "options": [
+        "A) N. medianus ana gövdesi",
+        "B) N. interosseus anterior",
+        "C) N. interosseus posterior",
+        "D) N. ulnaris",
+        "E) N. radialis"
+      ],
+      "correct_answer": "B) N. interosseus anterior",
+      "explanation": "N. interosseus anterior n. medianusun saf motor dalıdır; fleksör pollisis longus, fleksör digitorum profundus (2-3. parmak) ve pronator kuadratusı innerve eder. Duysal komponenti olmadığından hasarında hipoestezi görülmez. 'OK işareti yapamama' klasik bulgudur: başparmak ve işaret parmağı IP eklemlerinde fleksiyon yapılamaz; IP eksteransiyonu korunduğundan parmaklar düz kalır. Suprakondiler kırıklar, keskin obje yaralanmaları ve ön kol proksimal kompresyonlar en sık nedendir.",
+      "story_hint": "💡 HİKAYE: ANTERİOR INTEROSSEUS = 'OK yapamam ama hissederim' — Saf motor, FPL + FDP(2-3) + pronator"
+    },
+    {
+      "id": "atus1-009",
+      "case": "Soru:(Rotator Cuff - Supraspinatus) 50 yaşında boyacı erkek hastada kol 0-15 derece arası abduksiyonda ağrı ve güçsüzlük, 15 dereceden sonra deltoid devraldığında abduksiyon devam ediyor. Empty can testi pozitif. Hangi kas/tendon lezyonu düşünülmelidir?",
+      "options": [
+        "A) Subscapularis",
+        "B) İnfraspinatus",
+        "C) Supraspinatus",
+        "D) Teres minör",
+        "E) Biseps uzun başı"
+      ],
+      "correct_answer": "C) Supraspinatus",
+      "explanation": "Supraspinatus tendonu rotator cuffun en sık yırtılan komponentidir ve en dar subakromial mesafeden geçer. 'Ağrılı ark' 60-120 derece arasında görülürken supraspinatus yırtığında 0-15 derece başlatma güçlüğü özellikle belirgindir. Empty can (Jobe) testinde kol 90 derece abduksiyon, 30 derece horizontal fleksiyon ve iç rotasyon pozisyonunda aşağı baskıya karşı direnç test edilir; pozitif test supraspinatus yırtığını düşündürür. MRI ile kesin tanı konur. N. supraskaplaris (C5-C6) tarafından innerve edilir.",
+      "story_hint": "💡 HİKAYE: SUPRASPİNATUS = 'Sıfırda Başlayamam' — 0-15 derece kritik, boş kutu testi, subakromial sıkışma"
+    },
+    {
+      "id": "atus1-010",
+      "case": "Soru:(Biseps Tendon Rüptürü) 45 yaşında halterci erkek hastada ağır kaldırma sırasında ani 'pop' sesi ve ön kolda Popeye deformitesi gelişiyor. Dirsek fleksiyonu ve supinasyon güçsüzlüğü var ancak tamamen kaybolmamış. Hangi yapı hasarlanmıştır?",
+      "options": [
+        "A) Biseps kısa başı tendonu",
+        "B) Biseps uzun başı tendonu",
+        "C) Biseps distal tendonu",
+        "D) Brakiyalis tendonu",
+        "E) Korakobrakiyalis tendonu"
+      ],
+      "correct_answer": "B) Biseps uzun başı tendonu",
+      "explanation": "Biseps uzun başı tendonu korakoid çıkıntıdan değil glenoid üst kenarından (supraglenoid tüberkül) başlar ve intertüberküler oluğun içinden omuz eklemine girer. Proksimal rüptürde (uzun baş) kas gövdesi distale kayarak Popeye deformitesini oluşturur. Kısa baş sağlam kaldığından dirsek fleksiyonu ve supinasyon gücü tam kaybolmaz (%20-30 kayıp). Distal biseps tendon rüptürü ise antekübital fossada radial tüberküle yapışım yerinde olur ve supinasyon güçlüğü daha belirgindir. Tanı klinik ve ultrasonografi ile konur.",
+      "story_hint": "💡 HİKAYE: POPEYİ = 'Uzun baş yırtılır, kas topaklanır' — Proksimal rüptür, kısa baş çalışır, güç korunur"
+    },
+    {
+      "id": "atus1-011",
+      "case": "Soru:(De Quervain Tenosinoviti) 32 yaşında yeni anne kadın hastada bilek lateralinde (radial taraf) ağrı, başparmak hareketi ile artış, Finkelstein testi pozitif bulunuyor. Hangi tendonlar etkilenmektedir?",
+      "options": [
+        "A) Ekstansör pollisis longus ve brevis",
+        "B) Fleksör pollisis longus ve abduktör pollisis longus",
+        "C) Abduktör pollisis longus ve ekstansör pollisis brevis",
+        "D) Fleksör karpi radialis ve palmaris longus",
+        "E) Ekstansör karpi radialis longus ve brevis"
+      ],
+      "correct_answer": "C) Abduktör pollisis longus ve ekstansör pollisis brevis",
+      "explanation": "De Quervain tenosinoviti abduktör pollisis longus (APL) ve ekstansör pollisis brevis (EPB) tendonlarının birinci dorsal extansör kompartmandaki stenozan tenosinovitisidir. Yeni annelerde bebek taşıma ile sık görülür. Finkelstein testi: başparmak avuca alınıp parmaklar üzerine kapanırken el ulnar deviasyona getirilir; radial stiloid bölgesinde keskin ağrı pozitif testtir. Tedavi: atel, NSAİİ, kortikosteroid enjeksiyonu veya cerrahi dekompresyon. Anatomik varyant olan EPB'nin ayrı kompartmanı tedaviyi güçleştirebilir.",
+      "story_hint": "💡 HİKAYE: DE QUERVAIN = 'Anne Başparmağı ağlar' — APL+EPB, Finkelstein, bebek tutma"
+    },
+    {
+      "id": "atus1-012",
+      "case": "Soru:(Dupuytren Kontraktürü) 60 yaşında erkek hasta, sigara ve alkol öyküsü mevcut, ikinci el parmakta (4. ve 5. parmak) fleksiyon kontraktürü gelişiyor, parmakları açamıyor. Palmar bölgede kordon şeklinde sertlik hissediliyor. Tanı nedir?",
+      "options": [
+        "A) Tetik parmak (trigger finger)",
+        "B) Dupuytren kontraktürü",
+        "C) Ulnar sinir paralizisi",
+        "D) Volkmann iskemik kontraktürü",
+        "E) Psöriasik artrit"
+      ],
+      "correct_answer": "B) Dupuytren kontraktürü",
+      "explanation": "Dupuytren kontraktürü palmar fasyanın fibrotik proliferasyonu ile parmakların fleksiyon kontraktürüne yol açan bir hastalıktır. En sık 4. ve 5. parmaklarda görülür. Risk faktörleri: erkek cinsiyet, ileri yaş, kuzey Avrupalı köken, diyabet, epilepsi (fenitoin), alkol kullanımı, sigara. Palmar ve dijital fasyal kordon oluşur; MCP ve PIP eklemlerde ilerleyici fleksiyon kontraktürü gelişir. Nodüler fibrozis ile başlar. Tedavi: kollajenaz enjeksiyonu (Clostridium collagenase) veya cerrahi fasiyektomi. Ledderhose hastalığı (plantar fasya) ile birliktelik görülebilir.",
+      "story_hint": "💡 HİKAYE: DUPUYTREN = 'Dördüncü parmak 'DU' diye kapanır' — Palmar fasya, 4-5. parmak, alkol+diyabet"
+    },
+    {
+      "id": "atus1-013",
+      "case": "Soru:(Kübital Tünel Sendromu) 38 yaşında ofis çalışanı, dirseklerini masa üzerine uzun süre yaslaması sonrası 4. ve 5. parmaklarda uyuşma, hipotenar bölgede güçsüzlük şikayeti ile geliyor. Kübital fossada Tinel testi pozitif. Hangi sinir etkilenmiştir?",
+      "options": [
+        "A) N. medianus",
+        "B) N. radialis",
+        "C) N. ulnaris",
+        "D) N. interosseus anterior",
+        "E) N. muskülokütan"
+      ],
+      "correct_answer": "C) N. ulnaris",
+      "explanation": "Kübital tünel sendromu n. ulnarisin medial epikondilin arkasındaki kübital kanalda sıkışmasıyla oluşur ve karpal tünel sendromundan sonra en sık görülen ikinci tuzak nöropatidir. Uzun süreli dirsek fleksiyonu veya baskı (masa üzerinde dirsek dayama) tünel içi basıncı artırır. 4-5. parmakta uyuşma ve hipoestezi, hipotenar atrofi, Froment işareti (başparmak adduksiyonunda IP fleksiyon kompansasyonu) görülür. Sinir iletim hızı testinde medial epikondilin üzerinde yavaşlama saptanır. Konservatif: gece ateli; cerrahi: anterior transpozisyon veya medial epikondilektomi.",
+      "story_hint": "💡 HİKAYE: KÜBİTAL TÜNEL = 'Dirsek dayandı, 4-5 uyudu' — Ulnaris, medial epikondil arkası, masa dayama"
+    },
+    {
+      "id": "atus1-014",
+      "case": "Soru:(Pronator Sendromu) 30 yaşında tenisçi kadın hastada ön kol proksimalinde efor ile artan ağrı, başparmak, işaret ve orta parmakta uyuşma, tenar bölgede hafif güçsüzlük mevcut. Ancak Phalen testi negatif, el bileği seviyesinde sinir iletimi normal. Hangi sendrom düşünülmelidir?",
+      "options": [
+        "A) Karpal tünel sendromu",
+        "B) Pronator sendromu",
+        "C) Torasik outlet sendromu",
+        "D) Kübital tünel sendromu",
+        "E) Anterior interosseus sendromu"
+      ],
+      "correct_answer": "B) Pronator sendromu",
+      "explanation": "Pronator sendromu n. medianusun pronator teres kasının iki başı arasında sıkışmasıyla oluşur; karpal tünel sendromundan daha proksimalde yerleşimlidir. Karpal tünel sendromundan ayırt edilmesi: pronator sendromda Phalen negatif, gece semptomları daha az belirgin, ön kol proksimalinde hassasiyet var ve el bileği seviyesinde sinir iletimi normaldir. Sıkışma noktaları: pronator teres, fleksör digitorum superficialis arkı veya Struthers ligamanı. Tedavi: aktivite modifikasyonu, fizik tedavi; dirençli vakalarda cerrahi serbestleştirme.",
+      "story_hint": "💡 HİKAYE: PRONATOR = 'Phalen negatif, ön kolda pozitif' — Karpalden proksimal, pronator teres arasında"
+    },
+    {
+      "id": "atus1-015",
+      "case": "Soru:(Torasik Outlet Sendromu) 25 yaşında atletik genç kadında kol yukarı kaldırıldığında, özellikle klavikula altı bölgede baskı hissedilince kolda uyuşma, soğukluk ve renk değişimi görülüyor. Allen testi pozitif, Adson manevrası ile nabız kayboluyor. Tanı nedir?",
+      "options": [
+        "A) Rotator cuff yırtığı",
+        "B) Torasik outlet sendromu",
+        "C) Karpal tünel sendromu",
+        "D) Pronator sendromu",
+        "E) Erb palsy"
+      ],
+      "correct_answer": "B) Torasik outlet sendromu",
+      "explanation": "Torasik outlet sendromu brakiyal pleksus ve/veya subklaviyen damarların klavikula, 1. kosta ve skalen kaslar arasında sıkışmasıyla oluşur. Üç form vardır: nörojenik (%95 en sık — brakiyal pleksus), venöz ve arteryal. Nörojenik formda C8-T1 dermatom tutulumu (elde uyuşma) belirgindir. Provokasyon testleri: Adson (başı ipsilateral tarafa döndürüp derin nefes ile nabız kaybı), Wright (kol hiperabduksiyonu) ve Roos testi. Servikal kosta veya 1. kosta anomalileri predispozan faktördür. Tedavi: fizyoterapi, kas güçlendirme; cerrahi: 1. kosta rezeksiyonu.",
+      "story_hint": "💡 HİKAYE: TORASIK OUTLET = 'Klavikula altı tıkaç' — Adson testi, nabız kaybolur, skalen-klavikula-1.kosta"
+    },
+    {
+      "id": "atus1-016",
+      "case": "Soru:(Klavikula Kırığı) Bisiklet kazası geçiren 19 yaşında erkekte orta 1/3 klavikula kırığı ve akabinde subklaviyen damarda yaralanma şüphesi var. Bu kırık seviyesinde hangi sinir veya yapı risk altındadır?",
+      "options": [
+        "A) N. aksillaris",
+        "B) N. supraskaplaris",
+        "C) N. subklaviküler ve subklaviyen damar",
+        "D) N. torasikus longus",
+        "E) N. frenikus"
+      ],
+      "correct_answer": "C) N. subklaviküler ve subklaviyen damar",
+      "explanation": "Klavikula orta 1/3 kırıkları en sık görülen klavikula kırığıdır (%80). Subklaviyen damarlar (subklaviyen ven ve arter) ve brakiyal pleksus trunkaları klavikula ile 1. kosta arasından geçtiğinden kırık fragmanlarıyla hasarlanabilir. N. subklaviküler (C5-C6) ise subklavius kasını innerve eder ve bu kırıkta risk altındadır. Subklavius kası fizyolojik tampon görevi görür. Komplikasyonlar: pnömotoraks, hemotoraks, brakiyal pleksus yaralanması. Kırıklar genellikle düşme sırasında omuza veya yana uzanmış ele çarpma ile oluşur.",
+      "story_hint": "💡 HİKAYE: KLAVİKULA ORTA = 'Subklaviyen tehlikede' — Subklavius tampon, damara dikkat, %80 orta 1/3"
+    },
+    {
+      "id": "atus1-017",
+      "case": "Soru:(A. Brakialis) Suprakondiler humerus kırığı olan 8 yaşındaki çocukta kırık sonrası ön kolda ağrı artışı, parmak pasif ekstansiyonuyla ağrı ve kompartman sendromu belirtileri ortaya çıkıyor. Hangi damar hasarı ön planda düşünülmelidir?",
+      "options": [
+        "A) A. radialis",
+        "B) A. ulnaris",
+        "C) A. brakialis",
+        "D) A. subklaviyen",
+        "E) A. aksillaris"
+      ],
+      "correct_answer": "C) A. brakialis",
+      "explanation": "A. brakialis antekübital fossada radyal ve ulnar arterlere ayrılır ve humerus suprakondiler kırıklarında en sık hasarlanan damardır. Suprakondiler kırıklar çocuklarda en sık dirsek kırığıdır ve distal fragment öne kayarak a. braki alisyi sıkıştırabilir veya yaralayabilir. Volkmaan iskemik kontraktürü bu hasarın geç komplikasyonudur. Klinik: ön kolda artan ağrı, parmak pasif hareketinde ağrı, soluk-soğuk-pulsassız el (5P: pain, pallor, pulselessness, paresthesia, paralysis). A. brakialis aynı zamanda tansiyon manşonunun referans noktasıdır; antekübital fossada oskülte edilir.",
+      "story_hint": "💡 HİKAYE: BRAKİALİS = 'Çocuk düşer, Volkmann gelir' — Suprakondiler kırık, A.brakialis, iskemik kontraktür"
+    },
+    {
+      "id": "atus1-018",
+      "case": "Soru:(N. Femoralis Hasarı) Pelvis kırığı sonrası inguinal ligamanın hemen altında sinir hasarı gelişen hastada kuadriseps kasında güçsüzlük, diz ekstansiyonu kaybı ve ön uyluk-diz iç tarafında hipoestezi saptanıyor. Patellar refleks alınamıyor. Hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) N. ischiadicus",
+        "B) N. obturatorius",
+        "C) N. femoralis",
+        "D) N. kutaneus femoris lateralis",
+        "E) N. genitofemoralis"
+      ],
+      "correct_answer": "C) N. femoralis",
+      "explanation": "N. femoralis (L2-L3-L4) iliopsoasın lateralinden çıkarak inguinal ligamanın altından lacuna musculorum'dan geçer. Pelvis kırıkları, retroperitoneal hematomlar (psoas hematomu) ve inguinal ligaman cerrahileri risk faktörleridir. Kuadriseps femoris (4 baş), sartorius ve iliopsoasın hasarlanmasıyla diz ekstansiyonu kaybolur, merdiven çıkma güçleşir. Patellar refleks alınamaz. Duysal dal olan n. saphenus (ön-iç uyluk, iç bacak) da etkilenir. İzole psoas hematomu, özellikle hemofili ve antikoagülan tedavi alan hastalarda sık rastlanan bir etiyolojidir.",
+      "story_hint": "💡 HİKAYE: FEMORALIS = 'Diz bükemem, yokuş çıkamam' — Kuadriseps felci, patellar refleks yok, ön uyluk uyuşur"
+    },
+    {
+      "id": "atus1-019",
+      "case": "Soru:(N. İschiadicus Hasarı) Kalça çıkığı redüksiyonu yapılan 40 yaşında erkek hastada hem hamstring kasları hem de diz altı tüm kaslar felç, Achilles ve yüzeyel peroneal refleksler alınamıyor. Hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) N. femoralis + N. obturatorius",
+        "B) N. peroneus communis",
+        "C) N. tibialis",
+        "D) N. ischiadicus",
+        "E) N. gluteus süperior"
+      ],
+      "correct_answer": "D) N. ischiadicus",
+      "explanation": "N. ischiadicus (L4-L5-S1-S2-S3) vücudun en kalın siniridir ve posteriyor kalça üzerinden uyluk arka yüzünden geçer. Kalça arka çıkıkları ve yanlış yapılan gluteal enjeksiyonlar en sık nedendir. Hasarında hamstring kasları (diz fleksörleri), diz altındaki tüm kaslar (tibial ve peroneal) felç olur. Achilles, peroneal ve plantar refleksler kaybolur. Ayak ve ayak bileği hareketlerinin tamamı etkilenir. Kalça post-çıkık redüksiyonu sonrası sciatic nöropati görülme oranı %10-25'e kadar çıkabilir. Peroneal komponent genellikle daha ağır tutulur.",
+      "story_hint": "💡 HİKAYE: İSCHİADİKUS = 'İskiyada kalça çıkar, tüm bacak solar' — En kalın sinir, kalça çıkığı, diz altı tamamen"
+    },
+    {
+      "id": "atus1-020",
+      "case": "Soru:(N. Peroneus Communis Hasarı) Fibula boynu kırığı geçiren hastada ayak bileğini yukarı kaldıramama (foot drop), eversiyonda (pronasyon) güçsüzlük ve ayak dorsumu ile ayak parmakları üzerinde hipoestezi gelişiyor. Hangi sinir etkilenmiştir?",
+      "options": [
+        "A) N. tibialis",
+        "B) N. süral",
+        "C) N. peroneus communis",
+        "D) N. ischiadicus",
+        "E) N. safenöz"
+      ],
+      "correct_answer": "C) N. peroneus communis",
+      "explanation": "N. peroneus communis (L4-L5) fibula boynunu dışarıdan sarar ve burada yüzeyel yerleşimi nedeniyle en savunmasız noktadadır. Fibula boynu kırıkları, alçı baskısı, uzun süreli bacak bacak üstüne atma veya çömelme pozisyonu hasara yol açar. İki dala ayrılır: n. peroneus profundus (dorsifleksiyon + parmak ekstansiyonu, 1-2. parmak arası dorsum duyusu) ve n. peroneus superficialis (eversiyon + ayak dorsumu duyusu). Foot drop tipik bulgudur; yürüyüşte stepaj yürüyüşü (hip fleksiyonu artarak) oluşur. AFO (ankle-foot orthosis) ile rehabilitasyon yapılır.",
+      "story_hint": "💡 HİKAYE: PERONEUS = 'Fibula boynu kırdı, ayak düştü' — Foot drop, stepaj yürüyüş, fibula boynu = tehlike"
+    },
+    {
+      "id": "atus1-021",
+      "case": "Soru:(N. Tibialis Hasarı) 45 yaşında erkekte popliteal fossa yerleşimli kist rüptürü sonrası plantar fleksiyon ve inversiyon kaybı, Achilles refleksi alınamıyor, ayak tabanında hipoestezi gelişiyor. Hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) N. peroneus communis",
+        "B) N. tibialis",
+        "C) N. süral",
+        "D) N. femoralis",
+        "E) N. obturatorius"
+      ],
+      "correct_answer": "B) N. tibialis",
+      "explanation": "N. tibialis (L4-L5-S1-S2) popliteal fossanın en yüzeyel ve medialde yer alan nörovasküler yapısıdır. Gastroknemius, soleus, popliteus, fleksör digitorum longus, fleksör hallucis longus ve tibialis posterioru innerve eder. Hasarında plantar fleksiyon (bale parmağı hareketi) ve inversiyon kaybolur, Achilles refleksi alınamaz. Ayak tabanı ve parmak plantarları (n. plantaris medialis ve lateralis) uyuşur. Tarsal tünel sendromunda medial malleol arkasında sıkışma görülür. Popliteal fossa kistleri ve derin doku yaralanmaları sık nedendir.",
+      "story_hint": "💡 HİKAYE: TİBİALİS = 'Topuk Basılamaz, Achilles Susar' — Plantar fleksiyon+inversiyon, taban uyuşur, Achilles refleks yok"
+    },
+    {
+      "id": "atus1-022",
+      "case": "Soru:(N. Suralis) Safenöz venöz bypass greftleme ameliyatı sonrası ayak lateral kenarında uyuşma yakınan hasta geldiğinde hangi sinirin hasarlandığı düşünülmelidir?",
+      "options": [
+        "A) N. safenöz",
+        "B) N. peroneus superficialis",
+        "C) N. suralis",
+        "D) N. tibialis",
+        "E) N. plantaris lateralis"
+      ],
+      "correct_answer": "C) N. suralis",
+      "explanation": "N. suralis (sural nerve) saf duysal bir sinirdir; n. tibialis'in dalı olan medial sural kutanöz sinir ve n. peroneus communis'in dalı olan lateral sural kutanöz sinirin birleşmesiyle oluşur. Bacağın posterolateralinden aşağı inerek lateral ayak bileği ve ayak lateralinin duyusunu sağlar. Safen venöz greft cerrahisinde (koroner bypass) alınırken anatomik yakınlığı nedeniyle sıkça hasarlanır. Aynı zamanda periferik sinir grefti olarak kullanılır. Ayak lateralinde uyuşma ve disestezi görülür; motor defisit yoktur.",
+      "story_hint": "💡 HİKAYE: SURALIS = 'Bypass sırasında sural kurban' — Safen ven yolcusu, ayak laterali uyuşur, greft donörü"
+    },
+    {
+      "id": "atus1-023",
+      "case": "Soru:(Femoral Üçgen - Scarpa) Femoral ven kateterizasyonu sırasında yapıların sıralaması önemlidir. Femoral üçgende (Scarpa üçgeni) inguinal ligamanın hemen altında, dıştan içe doğru yapıların doğru sıralaması hangisidir?",
+      "options": [
+        "A) Ven - Arter - Sinir",
+        "B) Arter - Ven - Sinir",
+        "C) Sinir - Arter - Ven",
+        "D) Sinir - Ven - Arter",
+        "E) Arter - Sinir - Ven"
+      ],
+      "correct_answer": "C) Sinir - Arter - Ven",
+      "explanation": "Femoral üçgen (Scarpa üçgeni) inguinal ligaman (üst), sartorius kası (lateral) ve adduktör longus kası (medial) ile sınırlıdır. İçeriği dıştan içe: N. femoralis - A. femoralis - V. femoralis (NAVy: Nerve - Artery - Vein). Femoral kanal en medialdedir ve femoral fıtık içinden geçer. Klinik: femoral ven santral venöz kateter için arterin medialinden girilir. Femoral arterden nabız alınır. Femoral sinir en lateralde olduğundan lokal anestezi uygulamasında dikkat edilmelidir. Femoral lenfatikler en medialde yer alır.",
+      "story_hint": "💡 HİKAYE: SCARPA = 'NAVy gibi dıştan içe' — Sinir-Arter-Ven, 'SAV değil, NAV!'"
+    },
+    {
+      "id": "atus1-024",
+      "case": "Soru:(N. Obturatorius Hasarı) Pelvik kırık ya da obturatör foramen yakınında cerrahi sonrası iç uylukta hipoestezi ve kalça addüksiyonunda güçsüzlük gelişen hastada hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) N. femoralis",
+        "B) N. gluteus süperior",
+        "C) N. obturatorius",
+        "D) N. kutaneus femoris lateralis",
+        "E) N. ischiadicus"
+      ],
+      "correct_answer": "C) N. obturatorius",
+      "explanation": "N. obturatorius (L2-L3-L4) lumbar pleksustan çıkarak pelvis lateral duvarından obturatör kanaldan (obturatör foramen) geçer ve iç uyluk adduktör kaslarını (adduktör longus, brevis, magnus, gracilis, obturatör eksternus) innerve eder. Obturatör kanal yakınında pelvik tümörler, kırıklar ve total kalça cerrahisi risk oluşturur. Klinik: kalça addüksiyonunda zayıflık (özellikle bacak bacak üstüne atma güçlüğü), iç uylukta hipoestezi. Obturatör fıtıkta Howship-Romberg belirtisi tipiktir (uyluk iç yüzüne yayılan ağrı, diz fleksiyonu ile azalma).",
+      "story_hint": "💡 HİKAYE: OBTURATORİUS = 'Obturatör delik, içe çekemem' — Adduktör kaslar, iç uyluk hissi, Howship-Romberg"
+    },
+    {
+      "id": "atus1-025",
+      "case": "Soru:(Meralji Parestetika) 35 yaşında obez kadın hasta, hamileliğinin son döneminde sağ uyluğun dış yanında yanma ve uyuşma yakınıyor. Diz hareketi normal, kas güçsüzlüğü yok. Hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) N. femoralis",
+        "B) N. obturatorius",
+        "C) N. kutaneus femoris lateralis",
+        "D) N. genitofemoralis",
+        "E) N. ischiadicus"
+      ],
+      "correct_answer": "C) N. kutaneus femoris lateralis",
+      "explanation": "Meralji parestetika (meralgia paraesthetica) n. kutaneus femoris lateralisin (L2-L3) inguinal ligaman altında veya anterosüperior iliak spina yakınında sıkışmasıyla oluşan saf duysal tuzak nöropatidir. Risk faktörleri: obezite, hamilelik, sıkı kemer ve kıyafetler, diyabet. Uyluk anterolateralinde yanma, karıncalanma ve hipoestezi görülür; motor defisit yoktur. Saf duysal sinir olduğundan kas güçsüzlüğü hiçbir zaman olmaz. Tanı klinik; EMG normaldir. Tedavi: kilo verme, bol kıyafet, lokal enjeksiyon; nadiren cerrahi.",
+      "story_hint": "💡 HİKAYE: MERALJI = 'Merak etme, motor sağlam' — L2-L3 saf duysal, dış uyluk yanması, obezite+hamilelik"
+    },
+    {
+      "id": "atus1-026",
+      "case": "Soru:(Popliteal Fossa Anatomisi) Popliteal fossayı dolduran nörovasküler yapıların yüzeyelden derine doğru sıralaması hangisidir?",
+      "options": [
+        "A) N. tibialis - V. poplitea - A. poplitea",
+        "B) A. poplitea - V. poplitea - N. tibialis",
+        "C) V. poplitea - A. poplitea - N. tibialis",
+        "D) N. tibialis - A. poplitea - V. poplitea",
+        "E) N. peroneus - N. tibialis - V. poplitea - A. poplitea"
+      ],
+      "correct_answer": "A) N. tibialis - V. poplitea - A. poplitea",
+      "explanation": "Popliteal fossanın içeriği yüzeyelden derine: N. tibialis (en yüzeyel, en lateral) → V. poplitea → A. poplitea (en derin, kemiğe yakın). Sinir ven ve arterin arkasındadır; ven arterin önündedir ve bu nedenle venöz yapılar cerrahide önce karşılaşılır. N. peroneus communis biceps femoris kası ile birlikte fossanın lateral sınırını takip ederek fibula boynuna gider. Küçük safen ven fossanın alt kısmında popliteal vene dökülür. Bu anatomik bilgi popliteal anevrizma cerrahisi, diz artroskopu ve popliteal blok anestezisi için kritiktir.",
+      "story_hint": "💡 HİKAYE: POPLİTEAL FOSSA = 'Sinir Üstte, Ven Ortada, Arter Diptedir' — TİBİALİS-VEN-ARTER, derine gidiyoruz"
+    },
+    {
+      "id": "atus1-027",
+      "case": "Soru:(Trendelenburg Belirtisi) Kalça cerrahisi sonrası yürüyüşte karşı pelvisin düştüğü (Trendelenburg yürüyüşü) gözlemlenen hastada hangi sinir-kas birlikteliği hasarlanmıştır?",
+      "options": [
+        "A) N. gluteus inferior - Gluteus maksimus",
+        "B) N. gluteus süperior - Gluteus medius",
+        "C) N. femoralis - Kuadriseps",
+        "D) N. ischiadicus - Hamstringler",
+        "E) N. obturatorius - Adduktörler"
+      ],
+      "correct_answer": "B) N. gluteus süperior - Gluteus medius",
+      "explanation": "Trendelenburg belirtisi gluteus medius (ve minimus) zayıflığında görülür. Tek bacak üzerinde durulduğunda yük taşıyan bacağın karşı taraf pelvisi stabilize edemeyen gluteus medius düşer; hasta gövdesini yük taşıyan bacak üzerine eğerek kompanse eder. N. gluteus süperior (L4-L5-S1) gluteus medius, minimus ve tensör fasya latayı innerve eder. Total kalça artroplastisi, intramüsküler enjeksiyon hasarı veya L4-L5 kök lezyonlarında görülür. Bilateral Trendelenburg yürüyüşü 'ördek yürüyüşü' olarak tanımlanır ve musküler distrofilerde tipiktir.",
+      "story_hint": "💡 HİKAYE: TRENDELENBURGilk = 'Orta Gluteus durduramaz, pelvis düşer' — Süperior gluteal sinir, medius felci"
+    },
+    {
+      "id": "atus1-028",
+      "case": "Soru:(Gluteus Maksimus - N. Gluteus İnferior) 60 yaşında hastada alt pelvis bölgesi cerrahisi sonrası merdiven çıkma ve eğimli zeminde yürüme güçlüğü, kalça ekstansiyonunda belirgin zayıflık gelişiyor. Gluteus maksimus tutulumundan hangi sinir sorumludur?",
+      "options": [
+        "A) N. gluteus süperior",
+        "B) N. gluteus inferior",
+        "C) N. ischiadicus",
+        "D) N. pudendus",
+        "E) N. obturatorius"
+      ],
+      "correct_answer": "B) N. gluteus inferior",
+      "explanation": "N. gluteus inferior (L5-S1-S2) gluteus maksimus kasının tek innervatör siniridir. Büyük siyatik foramen alt bölümünden çıkar. Gluteus maksimus vücudun en büyük ve en güçlü kasıdır; kalça ekstansiyonu ve dış rotasyonu sağlar, özellikle merdiven çıkma, koşma ve yokuş çıkmada kritik rol oynar. Hasarında kalça ekstansiyon kaybı belirgindir. Pelvik cerrahiler, posterior kalça yaklaşımları ve inferior gluteal arterin bağlanması siniri riske atar. Oturma pozisyonundan kalkmak güçleşir; ekstremitenin öne atılmasında denge bozulur.",
+      "story_hint": "💡 HİKAYE: GLUTEUS MAKSİMUS = 'İnferior sinir, merdiven çıkmaz' — L5-S1-S2, en büyük kas, ekstansiyon"
+    },
+    {
+      "id": "atus1-029",
+      "case": "Soru:(N. İlioinguinalis Hasarı) İnguinal herni onarımı sonrası hastada skrotum üst yarısında (erkek) veya labia majora ve iç uylukta (kadın) hipoestezi gelişiyor. Kas güçsüzlüğü bulunmuyor. Hangi sinir hasarlanmıştır?",
+      "options": [
+        "A) N. genitofemoralis",
+        "B) N. ilioinguinalis",
+        "C) N. iliohipogastrikus",
+        "D) N. kutaneus femoris lateralis",
+        "E) N. femoralis"
+      ],
+      "correct_answer": "B) N. ilioinguinalis",
+      "explanation": "N. ilioinguinalis (L1) inguinal kanalın içinden geçerek yüzeyel inguinal halkadan çıkar ve skrotumun/labia majoranın üst medial bölgesi ile iç uyluğun proksimalini innerve eder. İnguinal herni tamirleri, sezaryen insizyonları ve apendektomiler en sık iyatrojenik hasar nedenidir. Saf duysal sinir olduğundan kas güçsüzlüğü görülmez. N. genitofemoralis (L1-L2) kremaster refleksinden ve skrotum alt bölümü ile iç uyluktan sorumludur; ikisi karıştırılabilir. Kronik kasık ağrısı veya hipoestezi şeklinde prezente olabilir.",
+      "story_hint": "💡 HİKAYE: İLİOİNGUİNALİS = 'Herni ameliyatı, skrotum uyudu' — L1, inguinal kanaldan, saf duysal"
+    },
+    {
+      "id": "atus1-030",
+      "case": "Soru:(Psoas Hematomu - N. Femoralis) Hemofili A tanılı 25 yaşında erkek hastada antifaktör VIII sonrası akut kasık ağrısı, ön uylukta uyuşma ve diz ekstansiyonunda güçsüzlük gelişiyor. Ultrasonografi iliopsoas kasında hematom gösteriyor. Hangi sinir baskı altındadır?",
+      "options": [
+        "A) N. obturatorius",
+        "B) N. femoralis",
+        "C) N. ischiadicus",
+        "D) N. kutaneus femoris lateralis",
+        "E) N. ilioinguinalis"
+      ],
+      "correct_answer": "B) N. femoralis",
+      "explanation": "N. femoralis iliopsoas kasının içinden geçerken iliopsoas fasyası içindeki hematom nedeniyle kompresyona uğrayabilir. Bu durum özellikle hemofili, antikoagülan tedavi (özellikle warfarin veya heparin) ve spontan retroperitoneal kanamalarda görülür. Psoas kası içindeki kanama genişleyerek femoral siniri sıkıştırır; sonuçta kuadriseps felci, patellar refleks kaybı ve ön uyluk hipoestezi gelişir. Hasta kalça fleksiyonunda (psoas gerilmesini azaltmak için) ağrının azaldığını fark edebilir. Tanı: CT veya MRI. Tedavi: faktör replasman ve acil cerrahi boşaltım.",
+      "story_hint": "💡 HİKAYE: PSOAS HEMATOMu = 'Hemofili hematomu femoral sıkıştırır' — İliopsoas içi kanama, femoral baskı, diz bükülmez"
+    },
+    {
+      "id": "atus1-031",
+      "case": "Soru:(Achilles Tendon Rüptürü) 38 yaşında futbolcu ani arkadan dürtülme hissi ve arkasında biri varmış gibi dönüp bakma tarifi ile geldiğinde topuk kaldırma yapamıyor. Thompson testi pozitif. Hangi kaslar etkilenmiştir ve bu kasları innerve eden sinir hangisidir?",
+      "options": [
+        "A) Tibialis anterior + Peroneus longus - N. peroneus",
+        "B) Gastroknemius + Soleus - N. tibialis",
+        "C) Plantaris + Popliteus - N. tibialis",
+        "D) Fleksör hallucis longus + Fleksör digitorum longus - N. tibialis",
+        "E) Gastroknemius + Soleus - N. peroneus communis"
+      ],
+      "correct_answer": "B) Gastroknemius + Soleus - N. tibialis",
+      "explanation": "Achilles tendonu gastroknemius ve soleus kaslarının ortak tendonu olup insanın en büyük ve en güçlü tendonu niteliğindedir. Rüptür tipik olarak kalkaneum üzerinde 2-6 cm proksimalinde, görece avasküler bölgede oluşur. Thompson testi: prone pozisyonda baldırın sıkılmasıyla normal ayakta plantar fleksiyon oluşurken rüptürde bu yanıt alınamaz — pozitif test. Flor kinolon antibiyotikleri (siprofloksasin, levofloksasin) Achilles tendon rüptürü riskini artırır. N. tibialis (S1-S2) bu kasları innerve eder. Tedavi: genç-aktif hastalarda cerrahi; yaşlılarda konservatif.",
+      "story_hint": "💡 HİKAYE: ACHİLLES RÜPTÜR = 'Thompson'dan cevap gelmiyor, flor kinolon sorgulanır' — Gastro+soleus, tibialis siniri"
+    },
+    {
+      "id": "atus1-032",
+      "case": "Soru:(Plantar Fasiit) 48 yaşında obez kadın hastada sabah yataktan kalkarken ilk adımlarda topuk tabanında şiddetli ağrı, birkaç dakika sonra azalıyor, uzun oturma sonrası tekrarlıyor. Ayak bileği dorsifleksiyonu ağrıyı provoke ediyor. Hangi yapı etkilenmektedir?",
+      "options": [
+        "A) Achilles tendonu",
+        "B) Tibialis posterior tendonu",
+        "C) Plantar fasya (kalkaneal tüberozite yapışma yeri)",
+        "D) N. plantaris lateralis",
+        "E) Fleksör digitorum brevis"
+      ],
+      "correct_answer": "C) Plantar fasya (kalkaneal tüberozite yapışma yeri)",
+      "explanation": "Plantar fasiit plantar fasyanın kalkaneal tüberoziteye yapıştığı bölgede tekrarlayan mikrotravma ve dejenerasyonla oluşan en sık ayak ağrısı nedenidir. 'Sabah ağrısı' tipiktir; ilk adımlarda belirgin, hareket ile azalır ancak uzun duruşta tekrarlayan aşırı yüklenmeyle artar. Risk faktörleri: obezite, uzun süre ayakta durma, pes planus/pes kavus, koşucular. Flor kinolon antibiyotikler plantar fasya rüptürünü de tetikleyebilir. Tanı klinik; ultrasonografi fasiyal kalınlaşmayı gösterir. Tedavi: ataç yürüyüşü egzersizleri, gece ateli, NSAİİ, kortikosteroid enjeksiyonu.",
+      "story_hint": "💡 HİKAYE: PLANTAR FASİİT = 'Sabah ilk adım = bıçak gibi' — Kalkaneal tüberozite, sabah belirgin, obezite"
+    },
+    {
+      "id": "atus1-033",
+      "case": "Soru:(Baker Kisti) 55 yaşında romatoid artritli kadın hastada sol diz arkasında şişlik şikayeti ile geliyor, diz fleksiyonuyla şişlik geriliyor. Doppler ultrasonografide derin ven trombozu ekarte ediliyor. Ayırıcı tanıda düşünülen oluşum hangisidir?",
+      "options": [
+        "A) Popliteal anevrizma",
+        "B) Liposarkom",
+        "C) Baker kisti (popliteal kist)",
+        "D) Menisküs kisti",
+        "E) Gangliyon kisti"
+      ],
+      "correct_answer": "C) Baker kisti (popliteal kist)",
+      "explanation": "Baker kisti (popliteal kist) semimembranöz bursa ile diz ekleminin patolojik iletişimi sonucu oluşan sinoviyal sıvı birikimdir. Romatoid artrit, osteoartrit ve menisküs yırtıkları gibi eklem içi patolojilerin komplikasyonudur. Diz arkasında şişlik, diz fleksiyonunda gerilme his ve ağrı görülür. Rüptür olduğunda baldıra sinoviyal sıvı yayılarak derin ven trombozu (DVT) tablosunu taklit eder (pseudotromboflebit sendromu). Ultrasonografi ve MRI tanısaldır. Tedavi altta yatan patolojiye yönelik; dirençli vakalarda aspirasyon veya cerrahi.",
+      "story_hint": "💡 HİKAYE: BAKER KİSTİ = 'DVT taklidi yapar ama rüptür edilmiş kist' — Popliteal fossa, semimembranöz bursa, RA"
+    },
+    {
+      "id": "atus1-034",
+      "case": "Soru:(Menisküs Yırtığı) 28 yaşında futbolcu hastada antrenman sırasında pivot hareketi sonrası medial diz ağrısı, şişlik ve kilitlenme hissediliyor. McMurray testi pozitif (diz fleksiyonda eksternal rotasyon ile klik). Hangi menisküs etkilenmiştir ve en sık birlikte hasar gören yapı hangisidir?",
+      "options": [
+        "A) Lateral menisküs - LCL",
+        "B) Medial menisküs - MCL",
+        "C) Lateral menisküs - ACL",
+        "D) Medial menisküs - PCL",
+        "E) Her iki menisküs - ACL"
+      ],
+      "correct_answer": "B) Medial menisküs - MCL",
+      "explanation": "Medial menisküs, medial kollateral ligamana (MCL) kapsüler bağlantısı nedeniyle laterale göre daha az hareketlidir ve spor yaralanmalarında daha sık etkilenir. McMurray testi: diz fleksiyonda internal rotasyon lateral menisküsü, eksternal rotasyon medial menisküsü strese sokar — klik/ağrı pozitif testtir. 'Unhappy triad' (mutsuz üçlü): medial menisküs + MCL + ACL birlikte yırtılması futbolcularda klasik tablo oluşturur. Medial kompartman McMurray testinde klik ve ağrı medial menisküs yırtığını düşündürür. Tanı MRI ile kesinleştirilir; tedavi artroskopik menisektomi veya onarım.",
+      "story_hint": "💡 HİKAYE: MENİSKÜS = 'Mutsuz Üçlü: Medial+MCL+ACL' — McMurray klik, dışa döndürünce medial, pivot travma"
+    },
+    {
+      "id": "atus1-035",
+      "case": "Soru:(Pes Planus - Tibialis Posterior Yetmezliği) 50 yaşında diyabetik kadın hastada uzun süredir var olan iç ayak yükseliminin kaybolması (düz taban), 'too many toes' işareti (arkadan bakışta ayak dışına taşan parmaklar) ve tek ayak üzerinde parmak ucuna kalkamama saptanıyor. Hangi yapı yetmezliği sorumludur?",
+      "options": [
+        "A) Fleksör hallucis longus tendonu",
+        "B) Tibialis anterior tendonu",
+        "C) Tibialis posterior tendonu",
+        "D) Plantar fasya",
+        "E) Peroneus longus tendonu"
+      ],
+      "correct_answer": "C) Tibialis posterior tendonu",
+      "explanation": "Tibialis posterior tendonu medial longitudinal arkın primer destekçisidir ve navikülere yapışarak tüm ayak kemiklerini kaldırır. Yetmezliğinde medial ark düşer, navikular plantar fleksiyona gider ve pes planus (edinsel düztaban) gelişir. 'Too many toes' işareti: arkadan bakışta ayak aşırı pronasyona geldiğinden normalde görünmeyen ayak dışındaki parmaklar da görünür hale gelir. Tek ayak topuk kalkışı (single heel rise test) yapılamaz — tibialis posterioru değerlendiren en spesifik klinik test. Diyabet, obezite ve hipertansiyon risk faktörleridir. MRI ile tendon hasarı belirlenir.",
+      "story_hint": "💡 HİKAYE: TİBİALİS POSTERİOR = 'Ark Bekçisi çöktü, too many toes' — Navikular düşer, tek topuk kalkışı yok, edinsel flat foot"
+    },
+    {
+      "id": "atus1-036",
+      "case": "Soru: Bir hastaya torasentez yapılacaktır. Girişim sırasında interkostal damar-sinir paketine zarar vermemek için iğnenin hangi bölgeden geçirilmesi gerekir?\nA) Kostanın üst kenarından\nB) Kostanın alt kenarından\nC) İki kosta arasının tam ortasından\nD) Kosta başının hemen önünden\nE) Kosta açısının hemen arkasından",
+      "options": [
+        "Kostanın üst kenarından",
+        "Kostanın alt kenarından",
+        "İki kosta arasının tam ortasından",
+        "Kosta başının hemen önünden",
+        "Kosta açısının hemen arkasından"
+      ],
+      "correct_answer": "Kostanın üst kenarından",
+      "explanation": "İnterkostal damar-sinir paketi kostanın ALT kenarında seyreder. Paket sıralaması dıştan içe: VAN (Ven - Arter - Sinir). Torasentezde damar-sinir paketine zarar vermemek için iğne bir ÜSTTEKI kostanın ÜST kenarından (yani alt kostanın üst kenarından) geçirilmelidir. Bu şekilde alttaki kostanın kenarında gizlenen damar-sinir demetinden uzak durulur.",
+      "story_hint": "VAN paketi kostanın ALT kenarında saklanır — torasentezde alt kostanın ÜSTÜNDEN gir, VAN'ı unut!"
+    },
+    {
+      "id": "atus1-037",
+      "case": "Soru: Sol servikal bölgede yapılan bir operasyon sırasında frenik sinir yaralanmıştır. Frenik sinirin kök değerleri aşağıdakilerden hangisidir?\nA) C1-C2-C3\nB) C2-C3-C4\nC) C3-C4-C5\nD) C4-C5-C6\nE) C5-C6-C7",
+      "options": [
+        "C1-C2-C3",
+        "C2-C3-C4",
+        "C3-C4-C5",
+        "C4-C5-C6",
+        "C5-C6-C7"
+      ],
+      "correct_answer": "C3-C4-C5",
+      "explanation": "Frenik sinir (n. phrenicus) C3-C4-C5 köklerinden köken alır. Diyafragmanın tek motor innervasyonunu sağlar; duyusal innervasyonunu da büyük ölçüde karşılar (santral diyafragma). Klasik İngilizce hafıza cümlesi: 'C3-4-5 keeps the diaphragm alive.' Bu nedenle yüksek servikal yaralanmalarda diyafragma paralizisi ve solunum yetmezliği gelişir.",
+      "story_hint": "C3-4-5 diyaframı canlı tutar! Bu kökleri ezberle, geri kalanı unutma."
+    },
+    {
+      "id": "atus1-038",
+      "case": "Soru: Diyafragmadaki açıklıklar ve içlerinden geçen yapılar eşleştirildiğinde hangisi yanlıştır?\nA) T8: vena cava inferior + sağ frenik sinir\nB) T10: özefagus + nervus vagus\nC) T12: aorta + torasik kanal + azygos ven\nD) T10: aorta + torasik kanal\nE) T8: yalnızca vena cava inferior",
+      "options": [
+        "T8: vena cava inferior + sağ frenik sinir",
+        "T10: özefagus + nervus vagus",
+        "T12: aorta + torasik kanal + azygos ven",
+        "T10: aorta + torasik kanal",
+        "T8: yalnızca vena cava inferior"
+      ],
+      "correct_answer": "T10: aorta + torasik kanal",
+      "explanation": "Diyafragma delikleri ve içerikleri: T8 = Vena Cava Inferior + sağ frenik sinir (tendinöz merkez). T10 = Özefagus + Nervus Vagus (musküler kısım). T12 = Aorta + Torasik Kanal + Azygos ven (aortik hiatus, posterior). Aorta T12'den geçer, T10'dan değil. 'Sekiz VCI, On özefagus, Oniki Aorta' hafıza formülü kullanılır.",
+      "story_hint": "8-10-12: VCI, Özefagus, Aorta — rakamlar büyüdükçe delik arkaya kayar!"
+    },
+    {
+      "id": "atus1-039",
+      "case": "Soru: Boyun tümörü nedeniyle opere edilen hastada sol frenik sinir kesilmiştir. Bu yaralanmanın beklenen bulgusu aşağıdakilerden hangisidir?\nA) Bilateral diyafragma felci\nB) İpsilateral diyafragma felci ve paradoks solunum\nC) Kontralateral diyafragma felci\nD) Yalnızca diyafragma ağrısı\nE) Sol pnömotoraks",
+      "options": [
+        "Bilateral diyafragma felci",
+        "İpsilateral diyafragma felci ve paradoks solunum",
+        "Kontralateral diyafragma felci",
+        "Yalnızca diyafragma ağrısı",
+        "Sol pnömotoraks"
+      ],
+      "correct_answer": "İpsilateral diyafragma felci ve paradoks solunum",
+      "explanation": "Frenik sinir kesisinde aynı taraf (ipsilateral) diyafragma paralize olur. Radyografide etkilenen hemidiyafragma yüksek durur. Paradoks solunum gelişir: inspirasyonda sağlam taraf aşağı inerken felçli taraf negatif basınçla yukarı çıkar. Hafif vakalarda klinik sessiz olabilir (kontralateral kompanzasyon). Servikal operasyonlarda frenik sinirin C3-C5 kökleriyle ilişkisi nedeniyle risk yüksektir.",
+      "story_hint": "Frenik sinir kesildi → aynı taraf diyafragma yukarı çıkar, ciğer paradoks solunum yapar!"
+    },
+    {
+      "id": "atus1-040",
+      "case": "Soru: Plevral effüzyonu olan bir hastaya torasentez uygulanacaktır. Aşağıdakilerden hangisi doğru teknik tanımlamayı yapar?\nA) 2. interkostal aralık, midklaviküler hat, kostanın alt kenarından\nB) 4. interkostal aralık, ön aksiller hat, kostanın üst kenarından\nC) 8. interkostal aralık, midaksiller hat, alt kostanın üst kenarından\nD) 6. interkostal aralık, posterior hat, kostanın alt kenarından\nE) 10. interkostal aralık, skapular hat, kostanın üst kenarından",
+      "options": [
+        "2. interkostal aralık, midklaviküler hat, kostanın alt kenarından",
+        "4. interkostal aralık, ön aksiller hat, kostanın üst kenarından",
+        "8. interkostal aralık, midaksiller hat, alt kostanın üst kenarından",
+        "6. interkostal aralık, posterior hat, kostanın alt kenarından",
+        "10. interkostal aralık, skapular hat, kostanın üst kenarından"
+      ],
+      "correct_answer": "8. interkostal aralık, midaksiller hat, alt kostanın üst kenarından",
+      "explanation": "Torasentezde sıvı aşağıda birikir. Standart teknik: midaksiller hat, 8. interkostal aralık (bazı kaynaklarda 7-9 arası kabul edilir). İğne alt kostanın ÜSTÜNDEN girilir; böylece üstteki kostanın alt kenarında seyreden VAN (ven-arter-sinir) paketine zarar verilmez. 2. İKA midklaviküler hat ise pnömotoraks dekompresyonu içindir (hava üstte birikir).",
+      "story_hint": "Sıvı altta → 8. İKA midaksiller; hava üstte → 2. İKA midklaviküler. Tam tersi karıştırma!"
+    },
+    {
+      "id": "atus1-041",
+      "case": "Soru: Trafik kazası geçiren genç bir erkek hastada tansiyon pnömotoraksı (gerilim pnömotoraks) şüphesi mevcuttur. Acil dekompresyon iğnesi hangi noktaya yapılmalıdır?\nA) 5. interkostal aralık, midaksiller hat\nB) 2. interkostal aralık, midklaviküler hat\nC) 8. interkostal aralık, midklaviküler hat\nD) 4. interkostal aralık, midaksiller hat\nE) 2. interkostal aralık, midaksiller hat",
+      "options": [
+        "5. interkostal aralık, midaksiller hat",
+        "2. interkostal aralık, midklaviküler hat",
+        "8. interkostal aralık, midklaviküler hat",
+        "4. interkostal aralık, midaksiller hat",
+        "2. interkostal aralık, midaksiller hat"
+      ],
+      "correct_answer": "2. interkostal aralık, midklaviküler hat",
+      "explanation": "Pnömotoraks iğne dekompresyonu: 2. interkostal aralık, midklaviküler hat. Gerekçe: Hava akciğer kollabsında APİKAL bölgede (üst kısımda) birikir; bu nedenle 2. İKA'dan girilir. Midklaviküler hat iç organlara en az risk teşkil eden düzlemdir. Torasentezden (8. İKA, midaksiller — sıvı için) farklıdır. İğne alt kostanın üst kenarından geçirilir.",
+      "story_hint": "Hava yukarı çıkar → 2. İKA midklaviküler. Sıvı aşağı iner → 8. İKA midaksiller. Yukarı=Hava, Aşağı=Sıvı!"
+    },
+    {
+      "id": "atus1-042",
+      "case": "Soru: Radyoloji kliniğinde okunan göğüs grafisinde sağ akciğerde yatay (horizontal) fissür görülmektedir. Bu bulgu hangi anatomiyle uyumludur?\nA) Sol akciğerde 2 lob arasındaki fissür\nB) Sağ akciğerde üst ve alt lobu ayıran oblik fissür\nC) Sağ akciğerde üst lob ve orta lobu ayıran horizontal fissür\nD) Sağ akciğerde 4 lob bulunduğunun göstergesi\nE) Sol akciğerde lingulayı ayıran fissür",
+      "options": [
+        "Sol akciğerde 2 lob arasındaki fissür",
+        "Sağ akciğerde üst ve alt lobu ayıran oblik fissür",
+        "Sağ akciğerde üst lob ve orta lobu ayıran horizontal fissür",
+        "Sağ akciğerde 4 lob bulunduğunun göstergesi",
+        "Sol akciğerde lingulayı ayıran fissür"
+      ],
+      "correct_answer": "Sağ akciğerde üst lob ve orta lobu ayıran horizontal fissür",
+      "explanation": "Sağ akciğerde 3 lob (süperior, medius, inferior) ve 2 fissür bulunur: oblik fissür (tüm lobları ayırır) ve horizontal/minör fissür (süperior ile medius lobu ayırır). Sol akciğerde ise 2 lob (süperior ve inferior) ile 1 oblik fissür vardır. Sol üst lobun alt uzantısı olan lingula ayrı bir lob değildir. Horizontal fissür sadece SAĞDA bulunur ve PA grafide 4. kosta seviyesinde görülür.",
+      "story_hint": "Sağda 3 lob, 2 fissür — Yatay (horizontal) fissür YALNIZCA sağda! Sol akciğerde yatay fissür yok."
+    },
+    {
+      "id": "atus1-043",
+      "case": "Soru: 60 yaşında erkek hastada kronik öksürük ve tekrarlayan pnömoni öyküsü mevcuttur. Akciğer grafisinde sağ orta lobda konsolidasyon görülmektedir. Bronkoskopide sağ orta lob bronşuna bası yapan bir kitle saptanmıştır. Bu klinik tablo hangi sendromla uyumludur?\nA) Loeffler sendromu\nB) Sağ orta lob sendromu\nC) Hamman-Rich sendromu\nD) Pancoast sendromu\nE) Kartagener sendromu",
+      "options": [
+        "Loeffler sendromu",
+        "Sağ orta lob sendromu",
+        "Hamman-Rich sendromu",
+        "Pancoast sendromu",
+        "Kartagener sendromu"
+      ],
+      "correct_answer": "Sağ orta lob sendromu",
+      "explanation": "Sağ orta lob (RML) sendromu: Sağ orta lob bronşuna lenf nodu veya kitle bası yaparak bronşu tıkar → akciğer salgıları boşalamaz → tekrarlayan pnömoni ve atelektazi gelişir. Sağ orta lob bronşu özellikle dardır ve açısı nedeniyle lenf nodu basısına yatkındır. Klinik: kronik öksürük, tekrarlayan sağ alt zon konsolidasyonları, bronkoskopik dışarıdan bası bulgusu. Tüberküloz lenf nodları klasik nedenidir.",
+      "story_hint": "RML bronşu dar ve açılı → lenf nodu bastı mı? Tekrarlayan pnömoni = Sağ Orta Lob Sendromu!"
+    },
+    {
+      "id": "atus1-044",
+      "case": "Soru: Superior mediastinumun anatomik sınırları ve içeriği sorulduğunda hangisi YANLIŞ eşleştirmeyi içermektedir?\nA) Üst sınır: torasik inlet (1. kosta + T1)\nB) Alt sınır: Louis açısı (manubriosternal eklem) — T4 vertebra\nC) İçerik: trakea, özefagus, timus\nD) İçerik: büyük damarlar (aorta arkusu, VCS, VCI)\nE) İçerik: frenik sinir, vagus siniri, torasik kanal",
+      "options": [
+        "Üst sınır: torasik inlet (1. kosta + T1)",
+        "Alt sınır: Louis açısı (manubriosternal eklem) — T4 vertebra",
+        "İçerik: trakea, özefagus, timus",
+        "İçerik: büyük damarlar (aorta arkusu, VCS, VCI)",
+        "İçerik: frenik sinir, vagus siniri, torasik kanal"
+      ],
+      "correct_answer": "İçerik: büyük damarlar (aorta arkusu, VCS, VCI)",
+      "explanation": "Superior mediastinum T1-T4 arasında yer alır. İçeriği: trakea, özefagus, timus, aorta arkusu ve dalları (brakiosefalik, sol karotis, sol subklaviyan), VCS (superior vena cava — VCI değil), azygos ven arkı, torasik kanal, frenik ve vagus sinirleri, sol reküren laringeal sinir. VCI (inferior vena cava) diyafragmayı T8'den geçerek sağ atriyuma girer; süperior mediastinumda BULUNMAZ.",
+      "story_hint": "Superior mediastinum: VCS var, VCI YOK! VCI diyaframdan geçer, süperior mediastinuma uğramaz."
+    },
+    {
+      "id": "atus1-045",
+      "case": "Soru: Posterior mediastinum ile ilgili aşağıdaki ifadelerden hangisi doğrudur?\nA) Perikard ve kalp posterior mediastinumda yer alır\nB) Trakea posterior mediastinumun en önemli yapısıdır\nC) Posterior mediastinumda aorta descendans, özefagus, azygos ven ve sempatik zincir bulunur\nD) Torasik kanal posterior mediastinumda yer almaz\nE) Frenik sinir posterior mediastinumun ana içeriğidir",
+      "options": [
+        "Perikard ve kalp posterior mediastinumda yer alır",
+        "Trakea posterior mediastinumun en önemli yapısıdır",
+        "Posterior mediastinumda aorta descendans, özefagus, azygos ven ve sempatik zincir bulunur",
+        "Torasik kanal posterior mediastinumda yer almaz",
+        "Frenik sinir posterior mediastinumun ana içeriğidir"
+      ],
+      "correct_answer": "Posterior mediastinumda aorta descendans, özefagus, azygos ven ve sempatik zincir bulunur",
+      "explanation": "Posterior mediastinum T4-T12 arasında perikardın arkasında yer alır. İçeriği: aorta descendans (torasik aorta), özefagus, azygos + hemiazygos venler, torasik kanal, sempatik zincir (truncus sympathicus), splanknik sinirler. Kalp ve perikard ORTA mediastinumda, trakea SÜPERIOR ve bazı kaynaklarda ön-superior mediastinumda yer alır. Frenik sinir orta mediastinumda perikarla beraber seyreder.",
+      "story_hint": "Posterior mediastinum = Aorta + Özefagus + Azygos + Torasik kanal + Sempatik zincir — 'AOATS' formülü!"
+    },
+    {
+      "id": "atus1-046",
+      "case": "Soru: 55 yaşında erkek hastada yüzde şişlik, boyun venlerinde dolgunluk ve üst ekstremitelerde ödem gelişmiştir. Göğüs tomografisinde sağ hiler büyük kitle görülmektedir. Bu klinik tablonun en olası açıklaması aşağıdakilerden hangisidir?\nA) Frenik sinir paralizisi\nB) Superior vena cava (VCS) sendromu\nC) Aortokaval fistül\nD) Pulmoner emboli\nE) Torasik aorta anevrizması",
+      "options": [
+        "Frenik sinir paralizisi",
+        "Superior vena cava (VCS) sendromu",
+        "Aortokaval fistül",
+        "Pulmoner emboli",
+        "Torasik aorta anevrizması"
+      ],
+      "correct_answer": "Superior vena cava (VCS) sendromu",
+      "explanation": "VCS (Superior Vena Cava) sendromu: Sağ akciğer tümörü veya mediastinal lenf nodları VCS'ye bası yaparak baş, boyun ve üst ekstremitelerden venöz dönüşü engeller. Bulgular: yüz-boyun-üst ekstremite ödemi, yüzeyel venlerde genişleme (kollateral venler), baş ağrısı, dispne, siyanoz. En sık neden sağ akciğer küçük hücreli karsinomu veya lenfomadır. Akciğer grafisinde sağ superior mediastinal genişleme görülür.",
+      "story_hint": "Yüz şiş, boyun venleri dolgun, üst kol ödemi → VCS sendromu! Sağ akciğer kitlesi VCS'yi sıkıştırıyor."
+    },
+    {
+      "id": "atus1-047",
+      "case": "Soru: 58 yaşında erkek hastada ani başlayan göğüs ağrısı, EKG'de V1-V4 derivasyonlarında ST yükselmesi ve troponin yüksekliği saptanmıştır. Etkilenen koroner arter ve sağladığı yapılar için aşağıdakilerden hangisi doğrudur?\nA) Sağ koroner arter — arka duvar\nB) Sol sirkumfleks arter — anterior septum\nC) Sol ön inen arter (LAD) — sol ventrikül ön duvarı ve interventriküler septum\nD) Posterior inen arter — sol ventrikül lateral duvarı\nE) Sağ koroner arter — sol ventrikül anterior",
+      "options": [
+        "Sağ koroner arter — arka duvar",
+        "Sol sirkumfleks arter — anterior septum",
+        "Sol ön inen arter (LAD) — sol ventrikül ön duvarı ve interventriküler septum",
+        "Posterior inen arter — sol ventrikül lateral duvarı",
+        "Sağ koroner arter — sol ventrikül anterior"
+      ],
+      "correct_answer": "Sol ön inen arter (LAD) — sol ventrikül ön duvarı ve interventriküler septum",
+      "explanation": "LAD (Left Anterior Descending / Sol Ön İnen Arter): Sol koroner arterden köken alır, ön interventriküler sulkusta seyreder. Beslediği yapılar: sol ventrikül ön (anterior) duvarı, interventriküler septumun ön 2/3'ü, sağ dal bloğu (His demeti sağ dalı), sol dal ön fasikülleri. LAD tıkanması 'widow maker' (dul yapıcı) olarak bilinir. V1-V4 ST yükselmesi anterior STEMI'yi gösterir.",
+      "story_hint": "LAD = Ön duvar + Septum. V1-V4 ST yükselmesi = LAD tıkandı. 'Widow Maker' unutma!"
+    },
+    {
+      "id": "atus1-048",
+      "case": "Soru: 65 yaşında erkek hastada inferior miyokard enfarktüsü ve tam AV blok gelişmiştir. Bu tablonun sorumlu koroner arteri ve anatomik gerekçesi için hangisi doğrudur?\nA) LAD — AV düğüm beslenir\nB) Sol sirkumfleks — SA düğüm beslenir\nC) Sağ koroner arter (RCA) — SA ve AV düğümlerin beslenmesi\nD) Ramus marginalis — posterior duvar beslenmesi\nE) Diagonal dal — septal perfüzyon",
+      "options": [
+        "LAD — AV düğüm beslenir",
+        "Sol sirkumfleks — SA düğüm beslenir",
+        "Sağ koroner arter (RCA) — SA ve AV düğümlerin beslenmesi",
+        "Ramus marginalis — posterior duvar beslenmesi",
+        "Diagonal dal — septal perfüzyon"
+      ],
+      "correct_answer": "Sağ koroner arter (RCA) — SA ve AV düğümlerin beslenmesi",
+      "explanation": "RCA (Sağ Koroner Arter): Sağ atriyoventriküler sulkustan seyreder ve posterior interventriküler dala (PDA) ayrılır. RCA'nın beslediği kritik yapılar: SA (sinoatriyal) düğüm (%60), AV (atriyoventriküler) düğüm (%80-90), sağ ventrikül, sol ventrikül inferior (alt) duvarı. RCA tıkanması → inferior MI (DII, DIII, aVF ST yükselmesi) + AV blok birlikteliği klasik tablodur.",
+      "story_hint": "RCA = İnferior MI + AV Blok! SA ve AV düğümü RCA besler. DII-DIII-aVF ST yükselmesi = RCA!"
+    },
+    {
+      "id": "atus1-049",
+      "case": "Soru: Bir hastada lateral miyokard enfarktüsü tanısı konulmuştur (EKG'de D1, aVL, V5-V6 ST yükselmesi). Bu MI'dan sorumlu koroner damar hangisidir?\nA) LAD (sol ön inen arter)\nB) RCA (sağ koroner arter)\nC) Sol sirkumfleks arter (Cx)\nD) Posterior inen arter\nE) Obtus marginal dal",
+      "options": [
+        "LAD (sol ön inen arter)",
+        "RCA (sağ koroner arter)",
+        "Sol sirkumfleks arter (Cx)",
+        "Posterior inen arter",
+        "Obtus marginal dal"
+      ],
+      "correct_answer": "Sol sirkumfleks arter (Cx)",
+      "explanation": "Sol sirkumfleks arter (Cx / LCx): Sol ana koroner arterden köken alır, sol atriyoventriküler sulkustan dolaşarak sol ventrikülün lateral duvarını besler. Ana dalı: obtus marginal (ramus marginalis sinister). Sol sirkumfleks tıkanması → lateral MI: DI, aVL ve V5-V6 derivasyonlarında ST yükselmesi. Dominant sirkumflekste PDA'yı da verebilir ve inferior MI'a yol açabilir. %15 vakada SA düğümünü de besler.",
+      "story_hint": "Cx = Lateral duvar. D1-aVL-V5-V6 → Cx tıkandı. 'Çevreleyen' (circumflex) sol ventrikülü çeviriyor!"
+    },
+    {
+      "id": "atus1-050",
+      "case": "Soru: 45 yaşında kadın hastada ani başlayan nefes darlığı, plöritik göğüs ağrısı ve hemoptizi gelişmiştir. EKG'de S1Q3T3 paterni görülmektedir. Bu tablonun en olası tanısı ve patofizyolojisi nedir?\nA) Akut perikardit — perikard inflamasyonu\nB) Sol ventrikül hipertrofisi — EKG voltaj artışı\nC) Pulmoner emboli — pulmoner arterde tıkanma, sağ kalp yüklenmesi\nD) Anterior MI — LAD tıkanması\nE) Aort diseksiyonu — adventisya yırtılması",
+      "options": [
+        "Akut perikardit — perikard inflamasyonu",
+        "Sol ventrikül hipertrofisi — EKG voltaj artışı",
+        "Pulmoner emboli — pulmoner arterde tıkanma, sağ kalp yüklenmesi",
+        "Anterior MI — LAD tıkanması",
+        "Aort diseksiyonu — adventisya yırtılması"
+      ],
+      "correct_answer": "Pulmoner emboli — pulmoner arterde tıkanma, sağ kalp yüklenmesi",
+      "explanation": "Pulmoner emboli (PE): A. pulmonalis'in trombüsle tıkanmasıdır. Pulmoner vasküler direncin artması → akut sağ kalp yüklenmesi → sağ ventrikül dilatasyonu. S1Q3T3 EKG paterni: DI'de derin S dalgası, DIII'de Q dalgası ve T inversiyonu. Sağ dal bloğu ve sinüs taşikardisi de görülebilir. Klinik: ani nefes darlığı, plöritik göğüs ağrısı (pulmoner enfarkt varsa), hemoptizi. D-dimer, BT anjiyografi tanısal.",
+      "story_hint": "S1Q3T3 = Pulmoner Emboli! Sağ kalp yüklendi → I'de S, III'de Q ve T ters döndü."
+    },
+    {
+      "id": "atus1-051",
+      "case": "Soru: Bir çocuk yuttuğu madeni paranın özefagusta takıldığı bildirilmektedir. Özefagusun fizyolojik darlıklarından hangisinde yabancı cisim en sık takılır?\nA) Özefagogastrik bileşke\nB) Torakoabdominal geçiş\nC) Krikoid kıkırdak düzeyi (Farinks-özefagus bileşkesi)\nD) Sol ana bronş çaprazlaşması\nE) Diyafragmatik açıklık (T10)",
+      "options": [
+        "Özefagogastrik bileşke",
+        "Torakoabdominal geçiş",
+        "Krikoid kıkırdak düzeyi (Farinks-özefagus bileşkesi)",
+        "Sol ana bronş çaprazlaşması",
+        "Diyafragmatik açıklık (T10)"
+      ],
+      "correct_answer": "Krikoid kıkırdak düzeyi (Farinks-özefagus bileşkesi)",
+      "explanation": "Özefagusun 3 fizyolojik darlığı: 1) Krikoid kıkırdak düzeyi (C6) — farinks-özefagus bileşkesi, en dar yer, yabancı cisim EN SIK buraya takılır. 2) Aortik ark ve sol ana bronş çaprazlaşması (T4-T5). 3) Diyafragmatik geçiş — hiatus özefagealis (T10). Madeni paralar ve yabancı cisimler sıklıkla 1. darlıkta takılır. Özefagoskopi ile çıkarılabilir.",
+      "story_hint": "Özefagus 3 darlık: Krikoid (C6) → Aortik ark (T4) → Diyafragma (T10). Yabancı cisim EN ÜSTTE takılır!"
+    },
+    {
+      "id": "atus1-052",
+      "case": "Soru: Torasik kanal ile ilgili aşağıdaki ifadelerden hangisi doğrudur?\nA) L1 düzeyinde sisterna şyliden başlar ve sağ venöz köşeye dökülür\nB) L2 düzeyinde sisterna şyliden başlar ve sol venöz köşeye dökülür\nC) Yalnızca sağ taraftaki lenfatikleri taşır\nD) Sol subklaviyan vene dökülmez, doğrudan kalbe girer\nE) Sağ lenf kanalı ile aynı yapıyı oluşturur",
+      "options": [
+        "L1 düzeyinde sisterna şyliden başlar ve sağ venöz köşeye dökülür",
+        "L2 düzeyinde sisterna şyliden başlar ve sol venöz köşeye dökülür",
+        "Yalnızca sağ taraftaki lenfatikleri taşır",
+        "Sol subklaviyan vene dökülmez, doğrudan kalbe girer",
+        "Sağ lenf kanalı ile aynı yapıyı oluşturur"
+      ],
+      "correct_answer": "L2 düzeyinde sisterna şyliden başlar ve sol venöz köşeye dökülür",
+      "explanation": "Torasik kanal (ductus thoracicus): Vücudun en büyük lenfatik damarıdır. L1-L2 düzeyindeki sisterna şyliden (chyli) başlar. Aortik hiatustan (T12) toraksa girer, önce sağda seyreder sonra T5-T6 düzeyinde sola geçer. Sol venöz köşeye (sol subklaviyan + sol iç juguler ven birleşim yeri) dökülür. Vücudun 3/4'ünün lenfatiklerini taşır. Sağ üst çeyreğin lenfi sağ lenf kanalı ile sağ venöz köşeye dökülür.",
+      "story_hint": "Torasik kanal: L2'de başlar, SOL venöz köşeye biter. Sağ lenf kanalı ise SAĞ köşeye. Başlangıç=Sağ, Bitiş=Sol!"
+    },
+    {
+      "id": "atus1-053",
+      "case": "Soru: İnguinal kanalın duvarları ile ilgili aşağıdaki eşleştirmelerden hangisi doğrudur?\nA) Ön duvar: transversalis fasya — Arka duvar: eksternal oblik aponöröz\nB) Ön duvar: eksternal oblik aponöröz — Arka duvar: transversalis fasya\nC) Tavan: inguinal ligaman — Taban: internal oblik + transvers abdominis\nD) Arka duvar: inguinal ligaman — Tavan: transversalis fasya\nE) Taban: internal oblik — Ön duvar: transversalis fasya",
+      "options": [
+        "Ön duvar: transversalis fasya — Arka duvar: eksternal oblik aponöröz",
+        "Ön duvar: eksternal oblik aponöröz — Arka duvar: transversalis fasya",
+        "Tavan: inguinal ligaman — Taban: internal oblik + transvers abdominis",
+        "Arka duvar: inguinal ligaman — Tavan: transversalis fasya",
+        "Taban: internal oblik — Ön duvar: transversalis fasya"
+      ],
+      "correct_answer": "Ön duvar: eksternal oblik aponöröz — Arka duvar: transversalis fasya",
+      "explanation": "İnguinal kanal 4 duvarı: ÖN duvar = eksternal oblik aponöröz (lateral kısımda iç oblik de katkıda bulunur). ARKA duvar = transversalis fasya (medial kısımda konjoint tendon/falks inguinalis de katkıda bulunur). TAVAN = iç oblik ve transvers abdominis kaslarının alt lifleri (arcade). TABAN = inguinal ligaman (Poupart ligamanı) ve lakünar ligaman (medial kısım). Hafıza: 'Önde Eksternal, Arkada Transversalis, Tavanda İç+Transvers, Tabanda İnguinal'.",
+      "story_hint": "Kanal duvarları: ÖN=Eksternal oblik, ARKA=Transversalis, TAVAN=İç oblik+Transvers, TABAN=İnguinal lig!"
+    },
+    {
+      "id": "atus1-054",
+      "case": "Soru: 8 aylık erkek bebekte sağ inguinoskrotal bölgede şişlik fark edilmiştir. Şişlik ağlayınca büyüyor, muayenede skrotuma kadar inen, redükte edilebilen bir kitle palpe ediliyor. Bu herni tipinin anatomik özelliği nedir?\nA) Hesselbach üçgeninden çıkar, inferior epigastrik arterin medialinden geçer\nB) Femoral kanaldan çıkar, inguinal ligin altından geçer\nC) Derin inguinal halkadan inferior epigastrik arterin lateralinden çıkar, skrotuma iner\nD) Doğrudan arka duvardan çıkar, skrotuma inmez\nE) Umbilikal halkadan çıkar, umbilikus çevresinde görülür",
+      "options": [
+        "Hesselbach üçgeninden çıkar, inferior epigastrik arterin medialinden geçer",
+        "Femoral kanaldan çıkar, inguinal ligin altından geçer",
+        "Derin inguinal halkadan inferior epigastrik arterin lateralinden çıkar, skrotuma iner",
+        "Doğrudan arka duvardan çıkar, skrotuma inmez",
+        "Umbilikal halkadan çıkar, umbilikus çevresinde görülür"
+      ],
+      "correct_answer": "Derin inguinal halkadan inferior epigastrik arterin lateralinden çıkar, skrotuma iner",
+      "explanation": "İNDİREKT inguinal herni: Derin (internal) inguinal halkadan girer → inguinal kanalı geçer → yüzeyel (eksternal) halkadan çıkar → skrotuma (erkek) veya labium majusa (kadın) iner. İnferior epigastrik arterin LATERALİNDEN geçer (direkt herninin medialiyle karışmasın). Konjenital kökenli: processus vaginalis açık kalır. En sık çocuklarda ve genç erkeklerde görülür. İnguinal hernilerin %75'ini oluşturur.",
+      "story_hint": "İndirekt = İNternal halkadan girer, epigastrikin LATERALİ, skrotuma İNER. Lateral+İnce+İndirekt!"
+    },
+    {
+      "id": "atus1-055",
+      "case": "Soru: 70 yaşında erkek hastada sol inguinal bölgede şişlik gelişmiştir. Şişlik inguinal kanalın iç halkasının medialinden kaynaklanmakta olup skrotuma inmemektedir. Bu herni için hangi anatomik ilişki tanımlayıcıdır?\nA) Processus vaginalis açıklığından kaynaklanır\nB) Femoral kanaldan geçer\nC) Hesselbach üçgeninden, inferior epigastrik arterin medialinden çıkar\nD) İnferior epigastrik arterin lateralinden geçer\nE) Konjenital kökenlidir, her zaman skrotuma iner",
+      "options": [
+        "Processus vaginalis açıklığından kaynaklanır",
+        "Femoral kanaldan geçer",
+        "Hesselbach üçgeninden, inferior epigastrik arterin medialinden çıkar",
+        "İnferior epigastrik arterin lateralinden geçer",
+        "Konjenital kökenlidir, her zaman skrotuma iner"
+      ],
+      "correct_answer": "Hesselbach üçgeninden, inferior epigastrik arterin medialinden çıkar",
+      "explanation": "DİREKT inguinal herni: Hasarlı/zayıf posterior inguinal duvardan (transversalis fasya) Hesselbach üçgeni aracılığıyla doğrudan çıkar. İnferior epigastrik arterin MEDİALİNDEN geçer. Skrotuma nadiren iner. Genellikle yaşlı erkeklerde, yıllarca ağır iş yapanlarda görülür — kazanılmış zayıflık nedeniyle. İnkarsere riski indirekte göre daha düşüktür.",
+      "story_hint": "Direkt = Doğrudan arka duvardan, epigastrikin MEDİALİ, Hesselbach üçgeni. Yaşlı+Direkt+Medial!"
+    },
+    {
+      "id": "atus1-056",
+      "case": "Soru: 45 yaşında kadın hastada sağ inguinal bölgede ağrılı şişlik gelişmiş, şişlik inguinal ligin ALTINDA palpe edilmektedir. İnkarsere herni düşünülmektedir. Bu tablo hangi herni tipiyle en uyumludur?\nA) İndirekt inguinal herni\nB) Direkt inguinal herni\nC) Femoral herni\nD) Umbilikal herni\nE) Spigel hernisi",
+      "options": [
+        "İndirekt inguinal herni",
+        "Direkt inguinal herni",
+        "Femoral herni",
+        "Umbilikal herni",
+        "Spigel hernisi"
+      ],
+      "correct_answer": "Femoral herni",
+      "explanation": "FEMORAL HERNİ: Femoral kanal aracılığıyla inguinal liganın ALTINDAN geçer (inguinal herniler üstten geçer). Femoral halka dar ve rijit olduğu için inkarsere olma riski en yüksek herni tipidir. Kadınlarda erkeklere oranla daha sık görülür (geniş pelvis → geniş femoral kanal). Klinik: inguinal liganın altında, pubik tüberkülün lateralinde şişlik. Acil cerrahi gerektirebilir.",
+      "story_hint": "Femoral herni = Liganın ALTINDA, KADINLARDA sık, inkarsere riski EN YÜKSEK! Altı=Femoral!"
+    },
+    {
+      "id": "atus1-057",
+      "case": "Soru: Hesselbach (inguinal) üçgeni ile ilgili aşağıdakilerden hangisi doğrudur?\nA) Lateral sınır: rektus kılıfının dış kenarı; medial sınır: inferior epigastrik arter; inferior: femoral ligaman\nB) Lateral sınır: inferior epigastrik arter; medial sınır: rektus abdominis kılıfının lateral kenarı; inferior: inguinal ligaman\nC) Lateral sınır: femoral sinir; medial sınır: femoral ven; inferior: inguinal ligaman\nD) Lateral sınır: inguinal ligaman; medial sınır: inferior epigastrik; inferior: rektus kılıfı\nE) Lateral: obturatör fasya; medial: rektus kılıfı; inferior: Poupart ligamanı",
+      "options": [
+        "Lateral sınır: rektus kılıfının dış kenarı; medial sınır: inferior epigastrik arter; inferior: femoral ligaman",
+        "Lateral sınır: inferior epigastrik arter; medial sınır: rektus abdominis kılıfının lateral kenarı; inferior: inguinal ligaman",
+        "Lateral sınır: femoral sinir; medial sınır: femoral ven; inferior: inguinal ligaman",
+        "Lateral sınır: inguinal ligaman; medial sınır: inferior epigastrik; inferior: rektus kılıfı",
+        "Lateral: obturatör fasya; medial: rektus kılıfı; inferior: Poupart ligamanı"
+      ],
+      "correct_answer": "Lateral sınır: inferior epigastrik arter; medial sınır: rektus abdominis kılıfının lateral kenarı; inferior: inguinal ligaman",
+      "explanation": "Hesselbach üçgeni (inguinal üçgen): LATERAL sınır = arteria epigastrica inferior (inferior epigastrik arter). MEDİAL sınır = rektus abdominis kılıfının lateral kenarı (linea semilunaris). İNFERİOR sınır = inguinal ligaman (Poupart ligamanı). Bu üçgen direkt inguinal hernilerin çıktığı zayıf bölgedir. İnferior epigastrik arterin LATERALİNDEKİ boşluktan indirekt herniler çıkar.",
+      "story_hint": "Hesselbach üçgeni: LATERAL=İnferior epigastrik, MEDİAL=Rektus kılıfı, ALT=İnguinal lig. Direkt buradan!"
+    },
+    {
+      "id": "atus1-058",
+      "case": "Soru: Retroperitoneal organları hatırlamak için kullanılan 'SAD PUCKER' mnemonik sistemine göre aşağıdakilerden hangisi retroperitoneal DEĞİLDİR?\nA) Suprarenal bezler\nB) Pankreas gövdesi\nC) İnen (desandan) kolon\nD) Transvers kolon\nE) Üreter",
+      "options": [
+        "Suprarenal bezler",
+        "Pankreas gövdesi",
+        "İnen (desandan) kolon",
+        "Transvers kolon",
+        "Üreter"
+      ],
+      "correct_answer": "Transvers kolon",
+      "explanation": "SAD PUCKER = Suprarenal (adrenal), Aorta/IVC, Duodenum (2-3-4. kısımlar), Pankreas (kuyruk hariç), Üreter, Kolon (asandan+desandan), Kidney (böbrek), Rektum (üst 1/3 hariç). Transvers kolon intraperitoneal bir organdır — mezokolon aracılığıyla peritonla sarılıdır. Pankreas kuyruğu dalak hilemine kadar uzandığı için intraperitoneal kabul edilir (gövde ve baş retroperitoneal). Jejenum, ileum, mide, dalak de intraperitonealdir.",
+      "story_hint": "SAD PUCKER retroperitoneal organlar. Transvers kolon mesenterli → intraperitone. Transvers=Gezgin!"
+    },
+    {
+      "id": "atus1-059",
+      "case": "Soru: Karaciğer sirozu olan bir hastada özefagus varisleri, kaput medusa ve hemoroid gelişmiştir. Bu bulgular hangi anatomik mekanizmayla açıklanır?\nA) Sistemik arteryel hipertansiyon\nB) Portal-kaval anastomozlarda kolateral dolaşım gelişmesi\nC) Sağ kalp yetmezliği\nD) Torasik kanal obstrüksiyonu\nE) Renal ven trombozu",
+      "options": [
+        "Sistemik arteryel hipertansiyon",
+        "Portal-kaval anastomozlarda kolateral dolaşım gelişmesi",
+        "Sağ kalp yetmezliği",
+        "Torasik kanal obstrüksiyonu",
+        "Renal ven trombozu"
+      ],
+      "correct_answer": "Portal-kaval anastomozlarda kolateral dolaşım gelişmesi",
+      "explanation": "Portal hipertansiyonda portal sistemdeki kan, portal-kaval anastomozlar aracılığıyla sistemik dolaşıma yönelir. Başlıca anastomoz noktaları: 1) Özefagus alt ucu: sol gastrik ven (portal) ↔ azygos/hemiazygos (sistemik) → özefagus varisleri. 2) Umbilikus çevresi: paraumbilikal venler (portal) ↔ epigastrik venler (sistemik) → kaput medusa. 3) Rektum: süperior rektal ven (portal) ↔ orta+inferior rektal venler (sistemik) → hemoroid.",
+      "story_hint": "Portal HT → kolateral açılır: Özefagus varisi + Kaput medusa + Hemoroid. 3 anastomoz noktası!"
+    },
+    {
+      "id": "atus1-060",
+      "case": "Soru: Karaciğer rezeksiyonu planlanan hastada Couinaud segmentasyonu kullanılmaktadır. Bu sisteme göre segment I hangisidir ve hangi özelliği onu diğerlerinden ayırır?\nA) Sağ lob, sağ hepatik vene bağımlı\nB) Sol lob, sol hepatik ven drene eder\nC) Kaudat lob, doğrudan VCI'ye drene olan bağımsız segment\nD) Kuadrat lob, safra kesesinin hemen üstünde\nE) Segment VIII, diyafragma yüzünde",
+      "options": [
+        "Sağ lob, sağ hepatik vene bağımlı",
+        "Sol lob, sol hepatik ven drene eder",
+        "Kaudat lob, doğrudan VCI'ye drene olan bağımsız segment",
+        "Kuadrat lob, safra kesesinin hemen üstünde",
+        "Segment VIII, diyafragma yüzünde"
+      ],
+      "correct_answer": "Kaudat lob, doğrudan VCI'ye drene olan bağımsız segment",
+      "explanation": "Couinaud sisteminde karaciğer 8 fonksiyonel segmente ayrılır. Segment I = kaudat lob. Özel özelliği: direkt kısa venler aracılığıyla VCI'ye (inferior vena cava) drene olur; hepatik venlerden bağımsızdır. Bu nedenle Budd-Chiari sendromunda (hepatik ven trombozu) diğer segmentler hasarlanırken kaudat lob hipertrofiye olur. Segmentler II-VIII portal ven dalları ve hepatik venler temel alınarak belirlenir.",
+      "story_hint": "Segment I = Kaudat lob = VCI'ye direkt drene! Budd-Chiari'de kaudat büyür, diğerleri hasar görür."
+    },
+    {
+      "id": "atus1-061",
+      "case": "Soru: Pankreas anatomisi ile ilgili aşağıdaki eşleştirmelerden hangisi doğrudur?\nA) Pankreas başı: dalak hilemine uzanır\nB) Pankreas boynu: duodenum C şeklini sarar\nC) Pankreas boynu: portal ven ve süperior mezenterik venin önünde yer alır\nD) Pankreas kuyruğu: aortanın önüne yerleşir\nE) Pankreas başı: jejunum ile komşuluk yapar",
+      "options": [
+        "Pankreas başı: dalak hilemine uzanır",
+        "Pankreas boynu: duodenum C şeklini sarar",
+        "Pankreas boynu: portal ven ve süperior mezenterik venin önünde yer alır",
+        "Pankreas kuyruğu: aortanın önüne yerleşir",
+        "Pankreas başı: jejunum ile komşuluk yapar"
+      ],
+      "correct_answer": "Pankreas boynu: portal ven ve süperior mezenterik venin önünde yer alır",
+      "explanation": "Pankreas anatomik komşulukları: BAĞI = duodenum C şekli içine oturur (pankreas başı duodenum içine yerleşir). BOYNU = portal ven + süperior mezenterik ven birleşim yeri (SMV+portal ven) önünde seyreder — cerrahi Whipple operasyonunda kritik referans noktasıdır. GÖVDE = aorta ve süperior mezenterik damarların önünde. KUYRUK = dalak hilemine uzanır, lienorenal ligaman içinde seyreder (intraperitoneal).",
+      "story_hint": "Boyun=Portal venin önü (Whipple'ın kritik noktası). Baş=Duodenum C, Kuyruk=Dalak hilumu!"
+    },
+    {
+      "id": "atus1-062",
+      "case": "Soru: Trafik kazası geçiren bir hastada sol omuza vuran ağrısı (Kehr belirtisi) olmaktadır. Fizik muayenede sol hipokondrium hassasiyeti mevcuttur. Dalak anatomisiyle ilgili doğru bilgi aşağıdakilerden hangisidir?\nA) Dalak 7-9. kaburgalar hizasında, retroperitoneal konumdadır\nB) Dalak 9-11. kaburgalar hizasında, intraperitoneal konumdadır\nC) Dalak sağ hipokondrium'da karaciğerin komşusunda yer alır\nD) Dalak kırıklarında sağ omuz ağrısı (Kehr belirtisi) görülür\nE) Dalak 12. kosta hizasında, retroperitoneal konumdadır",
+      "options": [
+        "Dalak 7-9. kaburgalar hizasında, retroperitoneal konumdadır",
+        "Dalak 9-11. kaburgalar hizasında, intraperitoneal konumdadır",
+        "Dalak sağ hipokondrium'da karaciğerin komşusunda yer alır",
+        "Dalak kırıklarında sağ omuz ağrısı (Kehr belirtisi) görülür",
+        "Dalak 12. kosta hizasında, retroperitoneal konumdadır"
+      ],
+      "correct_answer": "Dalak 9-11. kaburgalar hizasında, intraperitoneal konumdadır",
+      "explanation": "Dalak anatomisi: 9-11. kaburgalar hizasında, SOL hipokondrium'da, periton içi (intraperitoneal) organdır. Gastrolineal ve lienorenal ligamanlarla tutunur. Kehr belirtisi: Dalak rüptüründe diyafragma altında biriken kan, sol frenik siniri irrite ederek SOL omuza yansıyan ağrıya yol açar. Retroperitoneal değildir. Dalak kırılınca sol omuza vuran ağrı = Kehr belirtisi.",
+      "story_hint": "Dalak = 9-11. kosta, SOL hipokondrium, intraperitoneal. Kehr = Sol omuz ağrısı. Rüptürde sol omuz!"
+    },
+    {
+      "id": "atus1-063",
+      "case": "Soru: Böbrek hilumundan geçen yapıların önden arkaya sıralaması için aşağıdakilerden hangisi doğrudur?\nA) Üreter — Renal ven — Renal arter\nB) Renal arter — Renal ven — Üreter\nC) Renal ven — Renal arter — Üreter\nD) Üreter — Renal arter — Renal ven\nE) Renal ven — Üreter — Renal arter",
+      "options": [
+        "Üreter — Renal ven — Renal arter",
+        "Renal arter — Renal ven — Üreter",
+        "Renal ven — Renal arter — Üreter",
+        "Üreter — Renal arter — Renal ven",
+        "Renal ven — Üreter — Renal arter"
+      ],
+      "correct_answer": "Renal ven — Renal arter — Üreter",
+      "explanation": "Böbrek hilusundan önden arkaya: V-A-U (Ven — Arter — Üreter). Mnemonik: 'VAU!' Renal ven en önde (VCI'ye yakın), renal arter ortada, üreter en arkada yer alır. Böbrek 11-12. kaburgalar hizasındadır; sağ böbrek karaciğer nedeniyle soldan daha aşağıda seyreder. Fascia Gerota (böbrek kapsülü) içinde retroperitoneal konumdadır. Böbrek hilum yüzü mediale bakar.",
+      "story_hint": "VAU = Ven-Arter-Üreter (önden arkaya). Böbrek hilumunda VAU diye bağır, hatırlarsın!"
+    },
+    {
+      "id": "atus1-064",
+      "case": "Soru: Üreter taş hastalığı olan hastada taşın en sık hangi bölgelerde takıldığı sorulmaktadır. Üreter darlıklarının doğru sıralanması aşağıdakilerden hangisidir?\nA) Renal pelvis çıkışı — Mesane girişi — İliak çaprazlaşma\nB) Renal pelvis çıkışı — İliak damar çaprazlaşması — Mesaneye girişi (üreterovesikal bileşke)\nC) Böbrek içi pelvis — İliak çaprazlaşma — Diyafragma çaprazlaşması\nD) Üreteropelvik bileşke — Mesaneye giriş — Psoas kası üzeri\nE) Sadece mesaneye giriş noktası önemlidir",
+      "options": [
+        "Renal pelvis çıkışı — Mesane girişi — İliak çaprazlaşma",
+        "Renal pelvis çıkışı — İliak damar çaprazlaşması — Mesaneye girişi (üreterovesikal bileşke)",
+        "Böbrek içi pelvis — İliak çaprazlaşma — Diyafragma çaprazlaşması",
+        "Üreteropelvik bileşke — Mesaneye giriş — Psoas kası üzeri",
+        "Sadece mesaneye giriş noktası önemlidir"
+      ],
+      "correct_answer": "Renal pelvis çıkışı — İliak damar çaprazlaşması — Mesaneye girişi (üreterovesikal bileşke)",
+      "explanation": "Üreter 3 fizyolojik darlığı (taş takılma yerleri): 1) Üreteropelvik bileşke (UPJ) — renal pelvis ile üreterin birleştiği yer. 2) İliak damarların üzerinden geçtiği yer — pelvis girişinde. 3) Üreterovesikal bileşke (UVJ) — mesaneye girişi, en sık taş takılan ve en dar nokta. Taşlar bu üç noktada takılır ve kolik ağrıya yol açar. KUB grafisinde bu bölgeler kontrol edilir.",
+      "story_hint": "Üreter 3 dar: Pelvis çıkışı → İliak çaprazlama → Mesane girişi (UVJ en dar!). Taş bu 3 noktada durur!"
+    },
+    {
+      "id": "atus1-065",
+      "case": "Soru: 25 yaşında erkek hastada sağ alt kadran ağrısı, bulantı ve ateş mevcuttur. Mc Burney noktası hassasiyeti, Rovsing belirtisi pozitif, psoas belirtisi de pozitif saptanmıştır. Bu bulgular bağlamında appendiks anatomisi hakkında hangisi doğrudur?\nA) Mc Burney noktası umbiliküsten sol ASIS'e 1/3 dış mesafede\nB) Mc Burney noktası umbiliküsten sağ ASIS'e 1/3 dış mesafede\nC) Rovsing belirtisi sağ bölgeye bası yapılınca sol tarafta ağrı oluşması\nD) Psoas belirtisi kısa appendikste görülür\nE) Appendiks her zaman retroçekal konumda bulunur",
+      "options": [
+        "Mc Burney noktası umbiliküsten sol ASIS'e 1/3 dış mesafede",
+        "Mc Burney noktası umbiliküsten sağ ASIS'e 1/3 dış mesafede",
+        "Rovsing belirtisi sağ bölgeye bası yapılınca sol tarafta ağrı oluşması",
+        "Psoas belirtisi kısa appendikste görülür",
+        "Appendiks her zaman retroçekal konumda bulunur"
+      ],
+      "correct_answer": "Mc Burney noktası umbiliküsten sağ ASIS'e 1/3 dış mesafede",
+      "explanation": "Appendiks anatomisi: Mc Burney noktası umbiliküsten SAĞ ASIS'e olan mesafenin 1/3 dış (lateral) kesiminde bulunur. Rovsing belirtisi: SOL alt kadranda bası yapılırken sağ alt kadran ağrısı oluşur (gaz peritoneal kavitede yer değiştirir). Psoas belirtisi: UZUN/retroçekal appendikste görülür — appendiks iliopsoasın üstünde olduğundan sağ kalçanın ekstansiyonu ağrıyı artırır. Appendiks en sık retroçekal konumda (%65) bulunur.",
+      "story_hint": "McBurney = Umbilik → Sağ ASIS 1/3 DIŞ. Rovsing = Sol bası → Sağ ağrı. Psoas = Uzun appendiks!"
+    },
+    {
+      "id": "atus1-066",
+      "case": "Soru: Rektal kanserde cerrahi planlama yapılırken tümörün peritonla ilişkisi önemlidir. Rektumun peritonla ilişkisi doğru olarak aşağıdakilerden hangisinde verilmiştir?\nA) Üst 1/3: peritonla örtülü değil (ekstraperitoneal) — orta 1/3: her taraftan örtülü\nB) Üst 1/3: her taraftan peritonla örtülü — orta 1/3: ön+yan yüzler örtülü — alt 1/3: ekstraperitoneal\nC) Tüm rektum periton içindedir\nD) Tüm rektum ekstraperitonealdir\nE) Üst 1/3: yalnızca arka duvar örtülü — alt 1/3: ön+yan yüzler örtülü",
+      "options": [
+        "Üst 1/3: peritonla örtülü değil (ekstraperitoneal) — orta 1/3: her taraftan örtülü",
+        "Üst 1/3: her taraftan peritonla örtülü — orta 1/3: ön+yan yüzler örtülü — alt 1/3: ekstraperitoneal",
+        "Tüm rektum periton içindedir",
+        "Tüm rektum ekstraperitonealdir",
+        "Üst 1/3: yalnızca arka duvar örtülü — alt 1/3: ön+yan yüzler örtülü"
+      ],
+      "correct_answer": "Üst 1/3: her taraftan peritonla örtülü — orta 1/3: ön+yan yüzler örtülü — alt 1/3: ekstraperitoneal",
+      "explanation": "Rektumun peritonla ilişkisi: ÜST 1/3 = her taraftan peritonla örtülü (intraperitoneal). ORTA 1/3 = ön ve yan yüzleri peritonla örtülü. ALT 1/3 = tamamen ekstraperitoneal. Bu nedenle rektal kanser alt yerleşimli ise pelvik duvarlara, mesane/vajinaya direkt yayılabilir ve cerrahi daha güçtür. Douglas kavitesi (excavatio rectouterina/rectovesicalis) rektumun önünde en alçak periton çöküntüsüdür.",
+      "story_hint": "Rektum: Üst=Her taraf periton, Orta=Ön+Yan, Alt=Hiç periton yok (ekstraperitoneal). Aşağı indikçe açılır!"
+    },
+    {
+      "id": "atus1-067",
+      "case": "Soru: Pelvis tabanı anatomisiyle ilgili aşağıdakilerden hangisi doğrudur?\nA) Levator ani; iliokoksigeus, pubokoksigeus ve puborektal kaslardan oluşur\nB) Levator ani yalnızca koksigeus kasından oluşur\nC) Perineal cisim pelvis tabanından bağımsız bir yapıdır\nD) Levator ani pelvis tabanını oluşturmaz, sadece yan duvarda yer alır\nE) Pubokoksigeus kası hiatus genitalis olmaksızın tam kapanma sağlar",
+      "options": [
+        "Levator ani; iliokoksigeus, pubokoksigeus ve puborektal kaslardan oluşur",
+        "Levator ani yalnızca koksigeus kasından oluşur",
+        "Perineal cisim pelvis tabanından bağımsız bir yapıdır",
+        "Levator ani pelvis tabanını oluşturmaz, sadece yan duvarda yer alır",
+        "Pubokoksigeus kası hiatus genitalis olmaksızın tam kapanma sağlar"
+      ],
+      "correct_answer": "Levator ani; iliokoksigeus, pubokoksigeus ve puborektal kaslardan oluşur",
+      "explanation": "Pelvis tabanı (pelvic floor / diaphragma pelvis): Ana kas grubu levator ani'dir. Levator ani 3 bölümden oluşur: 1) İliokoksigeus: ilium ve iskial spinadan koksikse uzanır. 2) Pubokoksigeus: pubis arkasından koksikse uzanır, hiatus genitalis'i çevreler. 3) Puborektal: en medial, rektal boğazı oluşturur, kontinans için kritik. Koksigeus kası da pelvis diyaframının parçasıdır. Perineal cisim anusu destekler, doğum sırasında hasar görebilir.",
+      "story_hint": "Levator ani = İliokoksigeus + Pubokoksigeus + Puborektal. 3 parçayı ezberle, pelvis tabanı budur!"
+    },
+    {
+      "id": "atus1-068",
+      "case": "Soru: Bir hastada tekrarlayan perianal abse gelişmektedir. Abseler iskiorektal fossaya yayılmaktadır. İskiorektal fossa ile ilgili aşağıdakilerden hangisi doğrudur?\nA) İskiorektal fossanın içeriği: obturatör sinir + femoral damarlar\nB) İskiorektal fossanın içeriği: pudendal sinir (N. pudendus) ve internal pudendal damarlar\nC) İskiorektal fossa pelvis tabanının üstündedir\nD) İskiorektal fossada yalnızca yağ dokusu bulunur, sinir veya damar içermez\nE) İskiorektal fossada superior gluteal damarlar bulunur",
+      "options": [
+        "İskiorektal fossanın içeriği: obturatör sinir + femoral damarlar",
+        "İskiorektal fossanın içeriği: pudendal sinir (N. pudendus) ve internal pudendal damarlar",
+        "İskiorektal fossada pelvis tabanının üstündedir",
+        "İskiorektal fossada yalnızca yağ dokusu bulunur, sinir veya damar içermez",
+        "İskiorektal fossada superior gluteal damarlar bulunur"
+      ],
+      "correct_answer": "İskiorektal fossanın içeriği: pudendal sinir (N. pudendus) ve internal pudendal damarlar",
+      "explanation": "İskiorektal (ischioanal) fossa: Levator ani kası ile perine derisi arasında, anüsün her iki yanında yer alan yağ dolu boşluktur. İki yana birbirleriyle posteriorda irtibatlıdır (posterior recess — anorektal abse ilerleyebilir). İçeriği: N. pudendus (S2-S4, Alcock kanalından geçer) ve A./V. pudenda interna. Anoperineal cerrahide pudendal sinir blokajı için kritik. İki fossa posteriorda birleştiğinden abseler karşı tarafa atlayabilir (horseshoe abse).",
+      "story_hint": "İskiorektal fossa = Yağ dolu, içinde Pudendal sinir + İnternal pudendal damar. Abse at nalı gibi yayılır!"
+    },
+    {
+      "id": "atus1-069",
+      "case": "Soru: 70 yaşında erkek hastada idrar yapmada güçlük, zayıf idrar akımı ve noktüri şikayetleri mevcuttur. PSA yüksekliği de saptanmıştır. Mesane-prostat-üretra anatomisiyle ilgili aşağıdakilerden hangisi doğrudur?\nA) Prostat yalnızca mesane tavanı üzerinde bulunur\nB) Üretra prostatı arka yüzünden terk eder\nC) Prostat mesane boynunun hemen altında, üretrayı çevreler; BPH'de internal üretra orifisi tıkanır\nD) Prostat kadınlarda da benzer büyüme gösterir\nE) Mesane boynu rektumun önünde, prostata komşu değildir",
+      "options": [
+        "Prostat yalnızca mesane tavanı üzerinde bulunur",
+        "Üretra prostatı arka yüzünden terk eder",
+        "Prostat mesane boynunun hemen altında, üretrayı çevreler; BPH'de internal üretra orifisi tıkanır",
+        "Prostat kadınlarda da benzer büyüme gösterir",
+        "Mesane boynu rektumun önünde, prostata komşu değildir"
+      ],
+      "correct_answer": "Prostat mesane boynunun hemen altında, üretrayı çevreler; BPH'de internal üretra orifisi tıkanır",
+      "explanation": "Prostat anatomisi: Mesane boynunun hemen ALTINDA yer alır ve prostatik üretrayı çevreler. Üretra prostatı ÖN-İNFERİOR yüzünden terk eder. Rektumun önünde, inferior mesane ile seminal veziküller arasında bulunur. BPH (Benign Prostat Hiperplazisi): santral zon ve transisyonel zon büyür → internal üretra orifisini ve prostatik üretrayı sıkıştırır → obstrüktif semptomlar (zayıf akım, noktüri, idrar retansiyonu). PSA yükselmesi hem BPH hem prostat kanseri ile ilişkilidir.",
+      "story_hint": "Prostat = Mesane altı + Üretrayı sarar. BPH = Santral büyüme → İdrar yolunu tıkar. Prostat=Kapı bekçisi!"
+    },
+    {
+      "id": "atus1-070",
+      "case": "Soru: Geniş pelvik cerrahi (histerektomi) sırasında 'su üstünden geçer' mnemonik ifadesi hangi anatomik ilişkiyi anlatır?\nA) Uterin arter üreterden ÖNCE, altından geçerek ilerler\nB) Uterin arter üreterden SONRA, üstünden geçerek ilerler; 'su üstünden geçer' = uterin arter üreter üstünden\nC) Üreter uterin arterin üstünden geçer\nD) Uterin ven üreter üstünden geçer, uterin arter geçmez\nE) Uterin arter ve üreter paralel seyreder, çaprazlaşmaz",
+      "options": [
+        "Uterin arter üreterden ÖNCE, altından geçerek ilerler",
+        "Uterin arter üreterden SONRA, üstünden geçerek ilerler; 'su üstünden geçer' = uterin arter üreter üstünden",
+        "Üreter uterin arterin üstünden geçer",
+        "Uterin ven üreter üstünden geçer, uterin arter geçmez",
+        "Uterin arter ve üreter paralel seyreder, çaprazlaşmaz"
+      ],
+      "correct_answer": "Uterin arter üreterden SONRA, üstünden geçerek ilerler; 'su üstünden geçer' = uterin arter üreter üstünden",
+      "explanation": "Kritik anatomik ilişki: Uterin arter (a. uterina), internal iliak arterden köken alarak mediale doğru ilerlerken üreter üzerinden ÇAPRAZLAYARAK geçer — 'su (üreter) köprünün (uterin arterin) altından geçer' veya 'water (üreter) flows under the bridge (uterin arter)'. Histerektomi sırasında uterin arter bağlanırken üreter yanlışlıkla kesilebilir veya bağlanabilir. Bu iatrojenik üreter yaralanmasının en sık nedenidir. Üreter mesaneye yaklaşırken uterin arterin altından geçer.",
+      "story_hint": "'Su köprünün altından geçer': Üreter=su, Uterin arter=köprü. Histerektomide köprüyü kes, suyu kesme!"
+    },
+    {
+      "id": "atus1-071",
+      "case": "Soru: 45 yaşında bir kadın hasta sabah uyandığında sağ yüzünün sol tarafa çekildiğini, sağ gözünü kapatamadığını ve sağ kulağında ağrı olduğunu fark ediyor. Muayenede sağ alın kırışıklığı yok, sağ göz kapanmıyor, sağ ağız köşesi düşük. Hangi sinirin hangi düzeyde tutulumu bu tabloyu açıklar?",
+      "options": [
+        "A) N. facialis — stilomastoid foramen düzeyinde",
+        "B) N. trigeminus — foramen ovale düzeyinde",
+        "C) N. facialis — pontine çekirdek düzeyinde",
+        "D) N. glossopharyngeus — juguler foramen düzeyinde",
+        "E) N. hypoglossus — hipoglossal kanal düzeyinde"
+      ],
+      "correct_answer": "A",
+      "explanation": "Bell palsy, N. facialis'in stilomastoid foramen düzeyinde veya distalinde periferik tutulumudur. Periferik tutulumda TÜM yüz kasları etkilenir; alın kırışıklığı da kaybolur (bu, santral felçten ayrımın anahtarıdır). N. facialis stilomastoid foramen'den çıktıktan sonra parotis içinden geçerek MTZSB dallarına ayrılır: Marginal mandibular, Temporal, Zygomatik, Servikal, Buccal. Bell palsy'de alın tutulumu santral patolojiyi ekarte ettirir.",
+      "story_hint": "Bell çaldı, yüzün tamamı felç oldu — alın da dahil. Santral felçte alın kurtulur çünkü çift korteks innervasyonu vardır."
+    },
+    {
+      "id": "atus1-072",
+      "case": "Soru: 62 yaşında erkek hasta sağ yanak ve çene bölgesinde birkaç saniye süren, elektrik çarpması gibi ani şiddetli ağrı atakları tarif ediyor. Ağrı yemek yeme, yüz yıkama ve konuşmayla tetikleniyor. Nörolojik muayenesi normal. Bu tanıda hangi sinirin hangi dalı ve hangi foramen ilişkilidir?",
+      "options": [
+        "A) N. trigeminus V2 (maksiller) — foramen rotundum",
+        "B) N. trigeminus V3 (mandibüler) — foramen ovale",
+        "C) N. facialis — stilomastoid foramen",
+        "D) N. glossopharyngeus — juguler foramen",
+        "E) N. trigeminus V1 (oftalmik) — superior orbital fissür"
+      ],
+      "correct_answer": "B",
+      "explanation": "Trigeminal nevralji (tic douloureux) genellikle V2 ve V3 dağılımını tutar. Bu hastada yanak ve çene bölgesi V3 (mandibüler) dağılımına uygundur. N. trigeminus'un 3 dalı: V1 (oftalmik, superior orbital fissür), V2 (maksiller, foramen rotundum), V3 (mandibüler, foramen ovale). V3 hem duysal hem de motor lif taşır (çiğneme kasları). Tetik nokta karakteristiği ve elektrik çarpması tarzı ağrı trigeminal nevraljiyi düşündürür.",
+      "story_hint": "Trigeminal = üç dal, üç foramen. V3 foramen ovale'den — motor da taşır, çiğneme kaslarını yönetir. Nevralji en sık V2-V3'te."
+    },
+    {
+      "id": "atus1-073",
+      "case": "Soru: Toraks cerrahisi sırasında sol tarafta uzun bir boyun diseksiyonu yapılan hastada postoperatif dönemde ses kısıklığı gelişiyor. Hangi sinirin hangi anatomik yapının etrafında döndüğü hasarlanmıştır?",
+      "options": [
+        "A) N. vagus sağ — subklaviyen arterin arkasında döner",
+        "B) Sol N. laryngeus rekürren — aortik arkın altında döner",
+        "C) N. vagus sol — juguler foramenden çıkar",
+        "D) Sağ N. laryngeus rekürren — aortik arkın altında döner",
+        "E) N. laryngeus superior — tiroid kartilajın yanında döner"
+      ],
+      "correct_answer": "B",
+      "explanation": "Sol N. laryngeus rekürren, N. vagus'tan ayrılarak aortik arkın (ligamentum arteriosum'un hemen yanında) altında döner ve yukarı çıkarak larinkse ulaşır. Bu nedenle sol taraf cerrahilerinde (aort, mediastinum, sol akciğer) daha uzun bir yol kateder ve daha sık hasar görür. Sağ N. laryngeus rekürren ise sağ subklaviyen arterin arkasında döner ve daha kısadır. Her iki RLN de intrinsik larinks kaslarını (krikotiroid hariç) innerve eder.",
+      "story_hint": "Sol RLN — aortik ark etrafında uzun yol. Mediastinal tümörler, aort anevrizması, sol lobektomi = ses kısıklığı riski."
+    },
+    {
+      "id": "atus1-074",
+      "case": "Soru: Total tiroidektomi operasyonu geçiren bir hastada postoperatif dönemde ses kısıklığı ve nefes almada güçlük gelişiyor. Bu komplikasyondan sorumlu sinir hangi anatomik yapının etrafında döner ve tiroid kanseriyle ilişkisi nedir?",
+      "options": [
+        "A) N. laryngeus superior — krikoid kartilaj etrafında döner, tiroid kanserinden nadiren etkilenir",
+        "B) N. laryngeus rekürren — sol tarafta aortik ark, sağ tarafta subklaviyen arterin arkasında döner; trakeoözofageal olukta seyreder",
+        "C) N. vagus — juguler foramen yakınında döner; tiroid kanseri yayılımıyla ilişkisizdir",
+        "D) N. hipoglossal — hipoglossal kanal etrafında döner; tiroid bölgesinde seyretmez",
+        "E) N. frenik — ön skalen kası üzerinde seyreder; tiroid cerrahisiyle sık hasar görür"
+      ],
+      "correct_answer": "B",
+      "explanation": "N. laryngeus rekürren (RLN), trakeoözofageal olukta seyrederek tiroid bezinin arka yüzüne yakın geçer. Tiroid cerrahisinde en önemli risk bu sinirin hasarıdır. Tiroid kanseri (özellikle papiller karsinom) trakeoözofageal oluk lenf nodlarına metastaz yaparak RLN'yi invaze edebilir. Unilateral hasar ses kısıklığı, bilateral hasar stridor ve solunum sıkıntısı yapar. Sol RLN aortik ark etrafında, sağ RLN subklaviyen arterin arkasında döner.",
+      "story_hint": "RLN = trakeoözofageal oluk sakini. Tiroid cerrahisi ve tiroid kanseri metastazlarında birinci risk. Sol taraf = aortik ark, sağ taraf = subklaviyen arka."
+    },
+    {
+      "id": "atus1-075",
+      "case": "Soru: Dil kanseri nedeniyle cerrahi geçiren bir hastada operasyon sonrasında dilin sağ tarafa döndüğü gözlemleniyor. Hangi sinir hasarlandı ve mekanizması nedir?",
+      "options": [
+        "A) Sol N. hypoglossus hasarlandı; dil kontralateral tarafa döner",
+        "B) Sağ N. hypoglossus hasarlandı; dil ipsilateral tarafa döner",
+        "C) Sol N. hypoglossus hasarlandı; dil ipsilateral tarafa döner",
+        "D) Sağ N. glossopharyngeus hasarlandı; dil kontralateral tarafa döner",
+        "E) Sağ N. lingualis hasarlandı; dil ipsilateral tarafa döner"
+      ],
+      "correct_answer": "B",
+      "explanation": "N. hypoglossus (XII. kranyal sinir) hipoglossal kanaldan çıkarak dil kaslarını (genioglossus, hyoglossus, styloglossus) innerve eder. Dili ileri iten ana kas genioglossus'tur. Bir tarafın N. hypoglossus'u hasarlandığında, karşı tarafın genioglossus dili hasarlı tarafa iter. Bu nedenle dil HASARLI (ipsilateral) tarafa döner. 'Dil, hasta tarafa döner' kuralı XII. sinir lezyonlarının klinik sınavıdır.",
+      "story_hint": "XII. sinir = dil kasları, hipoglossal kanaldan çıkar. Hasar = dil ipsilateral döner. 'Dil hasta tarafı gösterir.'"
+    },
+    {
+      "id": "atus1-076",
+      "case": "Soru: Posterior servikal üçgen diseksiyonu sırasında bir sinir hasar gören hasta, postoperatif dönemde omzunu kaldıramıyor ve başını karşı tarafa çeviremiyor. Hangi sinir hasar görmüştür ve hangi foramen/bölgeden geçer?",
+      "options": [
+        "A) N. phrenicus — ön skalen kası önünden geçer",
+        "B) N. accessorius (XI) — juguler foramen → trapezius + sternokleidomastoid",
+        "C) N. hypoglossus — hipoglossal kanaldan geçer",
+        "D) N. vagus — juguler foramen → parasempatik",
+        "E) Brakiyal pleksus C5 kökü — skalene kaslar arasından geçer"
+      ],
+      "correct_answer": "B",
+      "explanation": "N. accessorius (kranyal sinir XI) juguler foramen'den çıkarak önce sternokleidomastoid'i, sonra posterior servikal üçgenden geçerek trapezius kasını innerve eder. Posterior servikal üçgen diseksiyonlarında (lenf nodu biyopsisi, boyun diseksiyonu) en sık hasarlanan sinirdir. Hasar: omuz düşüklüğü, omzu kaldıramama (trapezius felci), baş kontralateral rotasyonunun zayıflaması (SCM felci).",
+      "story_hint": "XI. sinir = juguler foramen → SCM + trapezius. Posterior servikal üçgen diseksiyonunun klasik komplikasyonu."
+    },
+    {
+      "id": "atus1-077",
+      "case": "Soru: Boyun ultrasonu yapılan bir hastada karotid bifurkasyonu C4 vertebra düzeyinde görülüyor. Bu bifurkasyon hangi üçgenin içindedir ve bu üçgenin sınırları nelerdir?",
+      "options": [
+        "A) Submental üçgen — anterior digastrik, mylohyoid, hyoid",
+        "B) Karotid üçgen — sternokleidomastoid arka kenarı, posterior digastrik, omohyoid superior belly",
+        "C) Submandibüler üçgen — mandibula altı kenarı, anterior ve posterior digastrik",
+        "D) Posterior servikal üçgen — trapezius, sternokleidomastoid, klavikula",
+        "E) Musküler üçgen — orta hat, omohyoid, sternokleidomastoid"
+      ],
+      "correct_answer": "B",
+      "explanation": "Karotid üçgen (trigonum caroticum), boyunun anterior üçgeni içinde yer alır. Sınırları: sternokleidomastoid arka kenarı (lateral), posterior digastrik (superior), omohyoid superior gövdesi (inferior). İçeriği: A. carotis communis bifurkasyonu (C4 düzeyinde), A. carotis interna ve externa, N. vagus, N. hypoglossus, N. accessorius'un bir bölümü, derin servikal lenf nodları.",
+      "story_hint": "Karotid üçgen = SCM + posterior digastrik + omohyoid. İçinde C4 düzeyinde karotid bifurkasyon var."
+    },
+    {
+      "id": "atus1-078",
+      "case": "Soru: Karotid endarterektomi sırasında karotid bifurkasyonu disseke edilen bir hastada ani bradikardi ve hipotansiyon gelişiyor. Bu fizyolojik yanıttan sorumlu yapı ve innervasyonu nedir?",
+      "options": [
+        "A) Karotid cisim — N. vagus (X) innervasyonu, hipoksi algılar",
+        "B) Karotid sinüs — N. glossopharyngeus (IX) innervasyonu, kan basıncı algılar",
+        "C) Karotid cisim — N. glossopharyngeus (IX), kan basıncı algılar",
+        "D) Karotid sinüs — N. vagus (X) innervasyonu, O2/CO2 dengesi algılar",
+        "E) Karotid cisim ve sinüs — N. hypoglossus (XII) innervasyonu"
+      ],
+      "correct_answer": "B",
+      "explanation": "Karotid bifurkasyonunda iki önemli yapı vardır: (1) Karotid SINÜS — internal karotid arterin başlangıcında baroreseptör; kan basıncı yükselince N. glossopharyngeus (IX) aracılığıyla medullaya sinyal gönderir, kalp hızı ve tansiyon düşer. (2) Karotid CİSİM — bifurkasyonun hemen yanında kemoreseptör; O2 düşüklüğü ve CO2 yüksekliğini algılar. Cerrahi sırasında karotid sinüsün baskısı veya manipülasyonu ani bradikardi ve hipotansiyona yol açar.",
+      "story_hint": "Karotid sinüs = baroreseptör = IX. sinir. Karotid cisim = kemoreseptör = IX. sinir. İkisi de IX!"
+    },
+    {
+      "id": "atus1-079",
+      "case": "Soru: Parotidektomi planlanan bir hastaya preoperatif danışmanlık yapılıyor. Cerrah, parotis cerrahisinin en önemli riskini anlatıyor. Stensen kanalı ve N. facialis'in bu bezle ilişkisi nedir?",
+      "options": [
+        "A) Stensen kanalı karşı taraf 1. alt molar hizasında açılır; N. facialis bezin dışından geçer",
+        "B) Stensen kanalı karşı taraf 2. üst molar hizasında açılır; N. facialis bezin içinden geçer",
+        "C) Stensen kanalı aynı taraf 2. üst molar hizasında açılır; N. facialis bezin dışından geçer",
+        "D) Stensen kanalı alt kesici dişler hizasında açılır; N. facialis bezin yüzeyinden geçer",
+        "E) Stensen kanalı karşı taraf 1. üst molar hizasında açılır; N. facialis bezin altından geçer"
+      ],
+      "correct_answer": "B",
+      "explanation": "Parotis bezi, kulak önünde yer alan en büyük tükürük bezidir. Stensen (parotid) kanalı, parotis bezinin ön yüzünden çıkarak masseter kası önünden geçip bükülür ve karşı tarafın 2. üst molar dişi hizasında ağız mukozasına açılır. N. facialis, stilomastoid foramen'den çıktıktan sonra parotis bezi içinden geçerek 5 terminal dala ayrılır (MTZSB). Bu nedenle parotidektomi sırasında N. facialis'in her dalı risk altındadır.",
+      "story_hint": "Parotis: Stensen kanalı = karşı 2. üst molar. N. facialis BEZİN İÇİNDEN geçer — parotidektominin en büyük riski!"
+    },
+    {
+      "id": "atus1-080",
+      "case": "Soru: Boyun ultrasonu yapılan bir hastada tiroid bezinin isthmus'unun C2-C4 trakea halkalarının önünde olduğu görülüyor. Pyramidal lob ve inferior tiroid arteri hakkında hangisi doğrudur?",
+      "options": [
+        "A) Pyramidal lob sağ üst kutuptan çıkar (%80 oranında); A. tiroidea inferior superior paratiroid bezini besler",
+        "B) Pyramidal lob sol üst kutuptan çıkar (%50 oranında); A. tiroidea inferior inferior paratiroid bezini besler",
+        "C) Pyramidal lob orta hattan çıkar (%100 oranında); A. tiroidea inferior superior paratiroid bezini besler",
+        "D) Pyramidal lob sağ üst kutuptan çıkar (%50 oranında); A. tiroidea inferior yalnızca tiroidi besler",
+        "E) Pyramidal lob yoktur; A. tiroidea superior tüm paratiroid bezlerini besler"
+      ],
+      "correct_answer": "B",
+      "explanation": "Tiroid bezi: iki lateral lob + isthmus (C2-C4 trakea halkalarının önünde). Pyramidal lob, isthmustan veya sol lobun üst kutbundan yukarı uzanan bir artık doku (thyroglossal kanal kalıntısı) olup %50 oranında sol üst kutuptan çıkar. A. tiroidea inferior (tirosservikal trunkustan), inferior ve superior paratiroid bezlerini besler — bu nedenle tiroid cerrahisinde inferior tiroid arterin korunması kritiktir.",
+      "story_hint": "Pyramidal lob: sol üst kutup, %50. A. tiroidea inferior: paratiroid bezlerinin kanlanmasından sorumlu — tiroid cerrahisinde dikkat!"
+    },
+    {
+      "id": "atus1-081",
+      "case": "Soru: Total tiroidektomi sonrası el ve ayaklarda karıncalanma, Chvostek ve Trousseau bulguları pozitif olan hastada postoperatif hipokalsemi gelişmiş. Bu komplikasyonla ilişkili yapılar ve kanlanmaları nedir?",
+      "options": [
+        "A) 2 adet paratiroid bezi — tiroid kapsülünün ön yüzünde — A. tiroidea superior",
+        "B) 4 adet paratiroid bezi — tiroid kapsülünün arka yüzünde — inferior larengeal (rekürren) arterde",
+        "C) 4 adet paratiroid bezi — trakea önünde — A. tiroidea inferior",
+        "D) 2 adet paratiroid bezi — tiroid kapsülü arka yüzünde — A. tiroidea inferior",
+        "E) 6 adet paratiroid bezi — boyun lateralinde — A. karotis eksterna dalları"
+      ],
+      "correct_answer": "B",
+      "explanation": "Paratiroid bezler genellikle 4 adettir (2 superior, 2 inferior) ve tiroid kapsülünün ARKA yüzüne gömülü durumdadır. Kanlanmaları inferior larengeal (rekürren) arter aracılığıyla sağlanır (A. tiroidea inferior'un terminal dalı). Total tiroidektomide bu bezlerin yanlışlıkla çıkarılması veya kanlanmasının bozulması hipoparatiroidizm → hipokalsemi → tetani tablosuna yol açar. Chvostek işareti (yüz kaslarında titreme) ve Trousseau işareti (manşon şişirilince el spazmı) hipokalseminin klinik bulgularıdır.",
+      "story_hint": "4 paratiroid = tiroid arka yüzü = inferior larengeal arter. Total tiroidektominin en önemli endokrin komplikasyonu: hipoparatiroidizm."
+    },
+    {
+      "id": "atus1-082",
+      "case": "Soru: Konjestif kalp yetmezliği olan bir hasta 45 derece oturur pozisyonda inceleniyor. Boyun venlerinin dolgunluğu (JVP) değerlendiriliyor. JVP'nin yansıttığı basınç ve ölçüm tekniği hakkında hangisi doğrudur?",
+      "options": [
+        "A) JVP sol atrium basıncını yansıtır; 30 derece açıyla ölçülür",
+        "B) JVP sağ atrium basıncını yansıtır; 45 derece açıyla ölçülür",
+        "C) JVP sol ventrikül basıncını yansıtır; yatay pozisyonda ölçülür",
+        "D) JVP pulmoner arter basıncını yansıtır; 60 derece açıyla ölçülür",
+        "E) JVP sağ ventrikül basıncını yansıtır; 90 derece açıyla ölçülür"
+      ],
+      "correct_answer": "B",
+      "explanation": "Juguler venöz nabız (JVP), sağ internal juguler ven üzerinde gözlemlenir ve SAĞ ATRİUM basıncını yansıtır. Ölçüm tekniği: hasta 45 derece yatırılır, juguler pulsasyonun en üst noktası ile sternal açı (manubrium-sternum birleşimi) arasındaki dikey mesafe ölçülür; normal <3-4 cm. Sağ kalp yetmezliği, triküspid yetmezliği, kardiyak tamponad ve konstriktif perikarditte JVP yüksek bulunur.",
+      "story_hint": "JVP = sağ atriumun aynası. 45 derecede ölç. >4 cm = sağ kalp yetmezliği veya tamponad."
+    },
+    {
+      "id": "atus1-083",
+      "case": "Soru: Submandibüler bez taşı (siyalolitiyazis) nedeniyle ağız tabanında şişlik ve ağrı olan bir hastada cerrahi planlanıyor. Submandibüler üçgenin içeriği incelenirken hangi sinir yapıları dikkate alınmalıdır?",
+      "options": [
+        "A) N. facialis, N. auriculotemporalis, yüz arteri",
+        "B) N. lingualis, N. hypoglossus, yüz arteri, submandibüler bez",
+        "C) N. glossopharyngeus, N. vagus, lingual arter",
+        "D) N. accessorius, N. phrenicus, subklaviyen damarlar",
+        "E) N. alveolaris inferior, N. mylohyoideus, maksiller arter"
+      ],
+      "correct_answer": "B",
+      "explanation": "Submandibüler üçgen (trigonum submandibulare): mandibula alt kenarı (superior) + anterior digastrik (anterior) + posterior digastrik (posterior). İçeriği: submandibüler bez (Wharton kanalı ile), yüz arteri ve veni, N. lingualis (V3 dalı — ağız tabanı ve dilin 2/3 ön duyusu), N. hypoglossus (XII — dil kasları motoru), submandibüler lenf nodları. Cerrahi sırasında N. lingualis ve N. hypoglossus'un korunması kritiktir.",
+      "story_hint": "Submandibüler üçgen içeriği: submandibüler bez + yüz arteri + N. lingualis + N. hypoglossus. İki önemli sinir, bir önemli bez."
+    },
+    {
+      "id": "atus1-084",
+      "case": "Soru: Posterior servikal üçgen diseksiyonu sırasında hangi nörovasküler yapılar risk altındadır? Bu üçgenin sınırları ve içeriği nedir?",
+      "options": [
+        "A) Sınırlar: mandibula-hyoid-orta hat; içerik: N. facialis, karotid arterler",
+        "B) Sınırlar: trapezius-sternokleidomastoid-klavikula; içerik: N. accessorius, brakiyal pleksus kökleri, subklaviyen damarlar, lenf düğümleri",
+        "C) Sınırlar: omohyoid-sternohyoid-orta hat; içerik: tiroid bezi, trakea, özofagus",
+        "D) Sınırlar: posterior digastrik-SCM-omohyoid; içerik: karotid bifurkasyon, N. vagus",
+        "E) Sınırlar: trapezius-klavikula-orta hat; içerik: brakiyal pleksus, subklaviyen ven, N. phrenicus"
+      ],
+      "correct_answer": "B",
+      "explanation": "Posterior servikal üçgen (trigonum cervicale posterius): trapezius ön kenarı (posterior) + sternokleidomastoid arka kenarı (anterior) + klavikula (inferior). İçeriği: N. accessorius (XI) — en yüzeyel ve en riskli sinir, brakiyal pleksus kökleri (C5-C8, T1), subklaviyen damarlar (omoclaviküler üçgende), servikal pleksus dalları, oksipital damarlar ve lenf nodları. Boyun lenf nodu biyopsilerinde en sık N. accessorius hasarlanır.",
+      "story_hint": "Posterior servikal üçgen = trapezius + SCM + klavikula. En yüzeyel sinir = N. accessorius — biyopsilerde ilk risk."
+    },
+    {
+      "id": "atus1-085",
+      "case": "Soru: Brakiyal pleksus kökleri ve subklaviyen arterin geçtiği aralık ile bu aralığın önünden geçen yapı nedir? Torasik çıkış sendromunda hangi kasın spazmı semptom yaratır?",
+      "options": [
+        "A) Anterior ve posterior skalen kas arasında subklaviyen ven + brakiyal pleksus geçer; posterior skalen spazm",
+        "B) Anterior ve orta skalen kas arasında subklaviyen arter + brakiyal pleksus geçer; anterior skalen kasın önünde subklaviyen ven geçer",
+        "C) Orta ve posterior skalen kas arasında subklaviyen arter + subklaviyen ven geçer",
+        "D) Anterior skalen kasın altında hem subklaviyen arter hem ven geçer",
+        "E) Skalen kaslar arasında yalnızca brakiyal pleksus geçer; subklaviyen damarlar klavikula altından geçer"
+      ],
+      "correct_answer": "B",
+      "explanation": "Skalen kaslar anatomisi: ANTERIOR ve ORTA skalen arasından brakiyal pleksus kökleri (C5-T1) ve subklaviyen ARTER geçer. Subklaviyen VEN ise anterior skalenin ÖNÜNDEN geçer (skalenler arasından geçmez). Torasik çıkış sendromunda anterior skalen kasın hipertrofisi veya spazmı, bu aralığı daraltarak brakiyal pleksus ve/veya subklaviyen artere bası yapabilir: elde uyuşma, güçsüzlük, nabız değişimi.",
+      "story_hint": "Skalen aralık: anterior + orta skalen arası = brakiyal pleksus + subklaviyen ARTER. Subklaviyen VEN anterior skalenin ÖNÜNDE."
+    },
+    {
+      "id": "atus1-086",
+      "case": "Soru: Göz hareketleri muayenesinde LR6(SO4)3 mnemonik kullanılmaktadır. Buna göre hangi kranyal sinir hangi göz kasını innerve eder?",
+      "options": [
+        "A) N. abducens (VI) — superior oblique; N. trochlearis (IV) — lateral rectus; N. oculomotorius (III) — diğer tüm kaslar",
+        "B) N. abducens (VI) — lateral rectus; N. trochlearis (IV) — superior oblique; N. oculomotorius (III) — medial, superior, inferior rectus + inferior oblique + levator palpebrae",
+        "C) N. abducens (VI) — lateral rectus; N. trochlearis (IV) — inferior oblique; N. oculomotorius (III) — diğer tüm kaslar",
+        "D) N. trochlearis (IV) — lateral rectus; N. abducens (VI) — superior oblique; N. oculomotorius (III) — diğer tüm kaslar",
+        "E) N. abducens (VI) — lateral ve medial rectus; N. trochlearis (IV) — superior oblique; N. oculomotorius (III) — oblique kaslar"
+      ],
+      "correct_answer": "B",
+      "explanation": "LR6(SO4)3 mnemonik: Lateral Rectus → 6 (N. abducens, VI); Superior Oblique → 4 (N. trochlearis, IV); diğer 4 kas → 3 (N. oculomotorius, III). N. oculomotorius (III): medial rectus, superior rectus, inferior rectus, inferior oblique, levator palpebrae superioris + pupil sfinkteri (parasempatik). N. trochlearis (IV) çaprazlaşan tek kranyal sinirdir ve en ince kranyal sinirdir. N. abducens (VI) en sık artmış intrakranyal basınçtan etkilenen sinirdir (yanlış lokalize edici bulgu).",
+      "story_hint": "LR6(SO4)3: Lateral Rectus = VI, Superior Oblique = IV, geri kalan 4 kas = III. IV en ince, VI yanlış lokalize eder."
+    },
+    {
+      "id": "atus1-087",
+      "case": "Soru: 55 yaşında erkek hastada ani başlayan sol göz kapağında düşme (ptoz), sol pupilde genişleme (midriyaz) ve gözün aşağı-dışa bakma pozisyonu saptanıyor. Bu tablo neyi düşündürmelidir?",
+      "options": [
+        "A) Sol N. trochlearis (IV) felci — superior oblique hasarı, göz aşağı-içe bakamaz",
+        "B) Sol N. oculomotorius (III) felci — posterior kommunikan arter anevrizması",
+        "C) Sol N. abducens (VI) felci — göz içe bakamaz, artmış ICP",
+        "D) Sol Horner sendromu — sempatik yol hasarı, ptoz + miyozis",
+        "E) Sol N. optikus hasarı — görme kaybı, pupil ışık refleksi bozulur"
+      ],
+      "correct_answer": "B",
+      "explanation": "N. oculomotorius (III) felcinin klasik triadı: (1) Ptoz — levator palpebrae felci, (2) Midriyaz — parasempatik pupil sfinkteri felci (pupil büyür), (3) 'Down and out' pozisyon — medial, superior ve inferior rectus ile inferior oblique'in felci; yalnızca lateral rectus (VI) ve superior oblique (IV) çalıştığı için göz aşağı-dışa bakar. Ani başlayan III. sinir felcinde (özellikle midriyaz varsa) posterior kommunikan arter anevrizması ÖNCE ekarte edilmeli (acil görüntüleme!). Midriyazın varlığı 'cerrahi' (kompresif) nedeni işaret eder.",
+      "story_hint": "III. sinir felci = ptoz + MİDRİYAZ + aşağı-dışa bakış. MİDRİYAZ varsa = posterior kommunikan anevrizma! Acil MRA."
+    },
+    {
+      "id": "atus1-088",
+      "case": "Soru: Baş ağrısı şikayetiyle başvuran bir hastada fundoskopide bilateral papil ödemi saptanıyor. Optik sinir kılıfının subaraknoid mesafeyle ilişkisi ve papil ödeminin mekanizması nedir?",
+      "options": [
+        "A) Optik sinir kılıfı epidural mesafeyle devamlıdır; papil ödemi azalmış ICP'yi yansıtır",
+        "B) Optik sinir kılıfı subaraknoid mesafeyle devamlıdır; artmış ICP BOS basıncını optik sinire ileterek papil ödemine yol açar",
+        "C) Optik sinir kılıfı izole bir yapıdır; papil ödemi lokal oküler patolojiyi yansıtır",
+        "D) Optik sinir kılıfı subdural mesafeyle devamlıdır; papil ödemi venöz tıkanıklıkla oluşur",
+        "E) Optik sinir kılıfı subaraknoid mesafeyle devamlıdır; azalmış ICP papil ödemine yol açar"
+      ],
+      "correct_answer": "B",
+      "explanation": "N. opticus kranyal sinirlerin II.'sidir ve beyin dokusuyla aynı embriyolojik kökene sahiptir (diensefalon uzantısı). Optik sinir kılıfı, intrakranyal subaraknoid mesafeyle devamlıdır. Artmış intrakranyal basınç (ICP) BOS'u bu mesafeye ileterek optik sinir başındaki venöz dönüşü engeller → aksoplazma akışı bozulur → papil ödemi. Bu nedenle bilateral papil ödemi = artmış ICP'nin önemli bulgusu. Unilateral papil ödemi ise lokal patolojiyi (optik nörit, iskemi) düşündürür.",
+      "story_hint": "Optik sinir kılıfı = subaraknoid mesafe uzantısı. Artmış ICP → papil ödemi. Bilateral papil ödemi = beyin tümörü/hipertansif ensefalopati ekarte et."
+    },
+    {
+      "id": "atus1-089",
+      "case": "Soru: Serebral korteks haritalamasında birincil motor korteks inceleniyor. Motor homonkülüs üzerinde bacak, gövde ve yüz temsilleri nerededir? Hangi arterin sulama alanı bacak motor korteksini besler?",
+      "options": [
+        "A) Bacak lateral konveksite, yüz medial yarımküre; A. serebri media besler",
+        "B) Bacak medial yarımküre (parasagittal), yüz lateral konveksite; A. serebri anterior besler",
+        "C) Bacak ve yüz her ikisi lateral konveksitede; A. serebri media besler",
+        "D) Bacak medial yarımküre, yüz lateral konveksite; A. serebri media besler",
+        "E) Tüm vücut temsilleri eşit dağılımlıdır; A. serebri posterior besler"
+      ],
+      "correct_answer": "B",
+      "explanation": "Birincil motor korteks precentral gyrus'ta (Brodmann area 4) yer alır. Motor homonkülüs organizasyonu: bacak ve ayak → MEDIAL yarımküre (interhemisferik fissür içi, parasagittal); gövde → üst lateral konveksite; kol/el → orta lateral konveksite; yüz → ALT lateral konveksite. A. serebri anterior (ACA) medial yarımküreyi (bacak alanını) besler; A. serebri media (ACM) lateral konveksiteyi (yüz ve kol alanını) besler. ACA tıkanmasında bacak, ACM tıkanmasında yüz+kol ağırlıklı etkilenir.",
+      "story_hint": "Homonkülüs: bacak = medial (ACA besler), yüz = lateral alt (ACM besler). ACA inme = bacak parezisi, ACM inme = kol+yüz parezisi."
+    },
+    {
+      "id": "atus1-090",
+      "case": "Soru: 68 yaşında hipertansif bir erkek hasta acile 'konuşamıyorum ama anlıyorum' şikayetiyle geliyor. Muayenede kelime üretimi bozuk, kısa ve çabayla söylenen cümleler var ama konuşulanı anlıyor. Hangi bölge hasarlanmış ve hangi afazi tipidir?",
+      "options": [
+        "A) Posterior superior temporal girus (Brodmann 22) — Wernicke afazisi",
+        "B) İnferior frontal girus (Brodmann 44-45) — Broca afazisi, ekspresif afazi",
+        "C) Angular girus — kondüksiyon afazisi",
+        "D) Tüm perisilvian alan — global afazi",
+        "E) Supplementer motor alan — transkortikalmotor afazi"
+      ],
+      "correct_answer": "B",
+      "explanation": "Broca afazisi (ekspresif/motor afazi): İnferior frontal girus'un pars triangularis ve pars opercularis'i (Brodmann alanları 44-45), sol hemisfer. Özellikleri: konuşma çabalı, kısa, dilbilgisel hatalar (agramatizm), anlama görece korunmuş, hasta durumunun farkında ve bundan rahatsız. N. facialis kontralateral (sağ) yüz alt kısmı felci eşlik edebilir. Sol MCA alt dalı tıkanması tipik nedendir. Wernicke'de ise anlama bozuk, akıcı konuşma ama anlamsız kelimeler (neologizm).",
+      "story_hint": "Broca = frontal (44-45) = 'kırık konuşan ama anlayan hastane' — ekspresif, çabalı, anlama korunmuş."
+    },
+    {
+      "id": "atus1-091",
+      "case": "Soru: 72 yaşında bir kadın hasta 'çok konuşuyor ama söyledikleri anlaşılmıyor' şikayetiyle getiriliyor. Muayenede akıcı ama anlamsız konuşma, neologizmler ve konuşulan komutları anlamıyor. Hangi bölge hasarlanmış?",
+      "options": [
+        "A) Sol inferior frontal girus (Brodmann 44-45) — Broca afazisi",
+        "B) Sol posterior superior temporal girus (Brodmann 22) — Wernicke afazisi",
+        "C) Sol angular girus — aleksi ve agrafia",
+        "D) Sol supramarginal girus — kondüksiyon afazisi",
+        "E) Sol precentral gyrus — motor afazi"
+      ],
+      "correct_answer": "B",
+      "explanation": "Wernicke afazisi (reseptif/duysal afazi): Sol posterior superior temporal girus (Brodmann alan 22). Özellikleri: akıcı konuşma ama anlamsız içerik, neologizmler (uydurma kelimeler), parafaziler, ANLAMA BOZUK (komutları yerine getiremez), hastanın durumunun farkında değil. Sol MCA superior dalının arka bölümü tıkanması tipik neden. Wernicke afazisinde tekrarlama da bozuktur (Broca'da da bozuktur, transkortikallerde korunmuştur).",
+      "story_hint": "Wernicke = temporal (22) = 'çok konuşan ama anlaşılmayan' — akıcı, anlamsız, anlama yok. 'Kelime salatası.'"
+    },
+    {
+      "id": "atus1-092",
+      "case": "Soru: MRI incelemesinde internal kapsül görüntüleniyor. Internal kapsülün ön bacak, genu ve arka bacağında hangi yolaklar seyreder?",
+      "options": [
+        "A) Ön bacak: kortikospinal; genu: kortikobulber; arka bacak: frontopontin + talamokortik",
+        "B) Ön bacak: frontopontin; genu: kortikobulber; arka bacak: kortikospinal + talamokortik + sensoriyal yollar",
+        "C) Ön bacak: kortikobulber; genu: kortikospinal; arka bacak: frontopontin",
+        "D) Ön bacak: talamokortik; genu: kortikospinal; arka bacak: kortikobulber",
+        "E) Ön bacak: optik radyasyon; genu: kortikobulber; arka bacak: işitsel radyasyon"
+      ],
+      "correct_answer": "B",
+      "explanation": "Internal kapsül organizasyonu: (1) Ön bacak (anterior limb): frontopontin lifler (prefrontal korteks → pons), talamokortikal lifler (talamus → frontal lob). (2) Genu: kortikobulber lifler (motor korteks → beyin sapı kranyal sinir çekirdekleri). (3) Arka bacak (posterior limb): kortikospinal lifler (motor korteks → spinal kord), talamokortik duysal lifler, optik radyasyon arka kısmı, işitsel radyasyon. Internal kapsül lezyon alanı: arka bacağın ön 2/3'ü kortikospinal yolu içerir.",
+      "story_hint": "İnternal kapsül: ön bacak = frontopontin, genu = kortikobulber (yüz+boğaz), arka bacak = kortikospinal + duysal. Genu = kafa siniri yolları."
+    },
+    {
+      "id": "atus1-093",
+      "case": "Soru: 58 yaşında hipertansif bir hasta ani başlayan sol taraf güçsüzlüğü, sol taraf his kaybı ve sol görme alanı kaybıyla başvuruyor. Görüntülemede sağ internal kapsül arka bacağında lezyon saptanıyor. Bu klinik tablo nasıl açıklanır?",
+      "options": [
+        "A) İpsilateral hemipleji + hemianestezi + hemianopsi (3H — ipsilateral)",
+        "B) Kontralateral hemipleji + kontralateral hemianestezi + kontralateral hemianopsi (3H — kontralateral)",
+        "C) Kontralateral hemipleji + ipsilateral hemianestezi + kontralateral hemianopsi",
+        "D) İpsilateral hemipleji + kontralateral hemianestezi + bilateral hemianopsi",
+        "E) Kontralateral hemipleji tek başına; duysal ve görsel yollar tutulmaz"
+      ],
+      "correct_answer": "B",
+      "explanation": "Internal kapsül arka bacak lezyonunun klasik triadı '3H': (1) Kontralateral HEMİPLEJİ — kortikospinal yol çaprazlaşır, (2) Kontralateral HEMİANESTEZİ — talamokortik duysal yollar çaprazlaşır, (3) Kontralateral HEMİANOPSİ — optik radyasyon tutulumu. Sağ internal kapsül lezyonunda SOL taraf 3H. Bu tablo 'internal kapsül sendromu' veya 'lentikülostriate serebrovasküler olay' olarak bilinir. Lentikülostriat arterler (ACM'den dallanır) bu bölgeyi besler.",
+      "story_hint": "İnternal kapsül = 3H kontralateral: Hemipleji + Hemianestezi + Hemianopsi. Lentikülostriat arter = hipertansif kanamada en sık yer."
+    },
+    {
+      "id": "atus1-094",
+      "case": "Soru: Parkinson hastalığı ve Huntington hastalığında etkilenen bazal ganglion yapıları ve nörotransmitter değişiklikleri nelerdir?",
+      "options": [
+        "A) Parkinson: kaudat nucleus, dopamin artar; Huntington: putamen, GABA azalır",
+        "B) Parkinson: substantia nigra pars compacta, dopamin azalır; Huntington: kaudat nucleus, GABA ve asetilkolin azalır",
+        "C) Parkinson: globus pallidus, glutamat azalır; Huntington: substantia nigra, serotonin azalır",
+        "D) Parkinson: putamen, dopamin azalır; Huntington: substantia nigra, GABA artar",
+        "E) Parkinson: subthalamic nucleus, GABA azalır; Huntington: putamen, glutamat artar"
+      ],
+      "correct_answer": "B",
+      "explanation": "Bazal ganglionlar: putamen + kaudat = striatum; striatum + globus pallidus = korpus striatum. Parkinson hastalığı: substantia nigra pars compacta'nın dopaminerjik nöronları dejenerasyona uğrar → striatum'a dopamin azalır → bradikinezia, tremor (istirahat), rijidite, postüral instabilite. Huntington hastalığı: kaudat nucleus atrofisi (karakteristik MRI bulgusu) + striatal GABA ve asetilkolin azalması → kore, demans, psikiyatrik bozukluklar. Huntington otozomal dominant, CAG trinükleotid tekrarı (HTT geni).",
+      "story_hint": "Parkinson = substantia nigra, dopamin azalır. Huntington = kaudat atrofisi, GABA+ACh azalır, kore. İkisi de bazal gangliyon hastalığı."
+    },
+    {
+      "id": "atus1-095",
+      "case": "Soru: Serebellar lezyonlarda bulgular ipsilateral mi kontralateral mı görülür? Hangi klinik bulgular serebellar patolojiyi destekler?",
+      "options": [
+        "A) Kontralateral bulgular: kontralateral dismetri, kontralateral intentsiyon tremoru, kontralateral ataksi",
+        "B) İpsilateral bulgular: ipsilateral dismetri, ipsilateral disdiyadikokinezi, ipsilateral intentsiyon tremoru, ipsilateral ataksi",
+        "C) İpsilateral kas güçsüzlüğü ve kontralateral his kaybı: çapraz sendrom",
+        "D) Bilateral simetrik bulgular: her iki tarafta eşit ataksi ve tremor",
+        "E) İpsilateral piramidal bulgular ve kontralateral serebellar bulgular"
+      ],
+      "correct_answer": "B",
+      "explanation": "Serebellum çift çapraz sistemiyle çalışır (afferent ve efferent yollar iki kez çaprazlaşır), sonuçta ipsilateral koordinasyon kontrolü sağlar. Serebellar lezyon bulguları İPSİLATERAL: (1) Dismetri — geçme/yetişememe (parmak-burun, diz-topuk testleri), (2) Disdiyadikokinezi — hızlı değişen hareketleri yapamama, (3) İntensiyon tremoru — hareket sırasında titreme (istirahat tremorundan farkı), (4) Ataksi — geniş tabanlı yürüyüş, (5) Nistag mus — horizontal, ipsilateral hızlı faz. Vermis lezyonu: gövde ataksisi. Hemisfer lezyonu: ipsilateral uzuv diskoordinasyonu.",
+      "story_hint": "Serebellum = çift çapraz = İPSİLATERAL bulgular. Dismetri + disdiyadikokinezi + intensiyon tremoru + ataksi = serebellar lezyon."
+    },
+    {
+      "id": "atus1-096",
+      "case": "Soru: Madde bağımlılığı araştırmalarında önemli bir yapı olan nükleus akkumbens hangi nörotransmitter sistemiyle ilişkilidir ve hangi yolun parçasıdır?",
+      "options": [
+        "A) Nükleus akkumbens — serotononerjik sistem — raphe-limbik yol",
+        "B) Nükleus akkumbens — dopaminerjik sistem — mezokortikolimbik yol (VTA → nükleus akkumbens)",
+        "C) Nükleus akkumbens — noradrenerjik sistem — locus coeruleus yolu",
+        "D) Nükleus akkumbens — GABAerjik sistem — striato-pallidal yol",
+        "E) Nükleus akkumbens — glutamaterjik sistem — kortikostriate yol"
+      ],
+      "correct_answer": "B",
+      "explanation": "Nükleus akkumbens, ventral striatumda yer alır ve 'ödül merkezi' olarak bilinir. Mezokortikolimbik dopamin yolu: Ventral Tegmental Alan (VTA) → nükleus akkumbens → prefrontal korteks ve limbik sistem. Bu yol ödül, motivasyon ve bağımlılık süreçlerinin temelidir. Tüm bağımlılık yapan maddeler (kokain, morfin, alkol, nikotin) nükleus akkumbenste dopamin salınımını artırır. Şizofreni tedavisinde kullanılan antipsikotikler bu yolu bloke eder (D2 reseptör antagonizması).",
+      "story_hint": "Nükleus akkumbens = ödül merkezi = dopamin = VTA → NAc mezokortikolimbik yol. Bağımlılığın anatomik kalbi."
+    },
+    {
+      "id": "atus1-097",
+      "case": "Soru: Thalamus'un duysal röle istasyonu işlevi inceleniyor. VPL, VPM, LGN ve MGN çekirdeklerinin işlevleri ve koku duyusunun talamusa uğramaması hakkında bilgi veriniz.",
+      "options": [
+        "A) VPL=yüz duyu, VPM=vücut duyu, LGN=işitme, MGN=görme; koku direkt kortekse gider",
+        "B) VPL=vücut duyu, VPM=yüz duyu, LGN=görme, MGN=işitme; koku direkt piriform kortekse gider (talamus bypass)",
+        "C) VPL=motor, VPM=yüz duyu, LGN=görme, MGN=işitme; koku her duyuyla aynı yolu izler",
+        "D) VPL=vücut duyu, VPM=motor, LGN=işitme, MGN=görme; koku talamusa uğrar",
+        "E) VPL=görme, VPM=işitme, LGN=vücut duyu, MGN=yüz duyu; koku direkt kortekse gider"
+      ],
+      "correct_answer": "B",
+      "explanation": "Talamus tüm duysal bilginin röle istasyonudur — KOKU HARİÇ. Talamik çekirdekler: VPL (Ventral Posterolateral) = vücut ve ekstremite duyu bilgisi (spinotalamik ve medyal lemnisküs), VPM (Ventral Posteromedial) = yüz duyu bilgisi (trigeminal yollar), LGN (Lateral Geniculate Nucleus) = görme (optik traktus → primer görsel korteks), MGN (Medial Geniculate Nucleus) = işitme (inferior colliculus → primer işitsel korteks). KOKU: olfaktör bulb → piriform korteks (uncus) → direkt — talamus bypass edilir; bu nedenle koku en primitif duyudur ve duygu-bellek bağlantısı güçlüdür.",
+      "story_hint": "Talamus = tüm duysal röle. VPL=vücut, VPM=yüz, LGN=görme, MGN=işitme. Koku BYPASS — direkt piriform korteks."
+    },
+    {
+      "id": "atus1-098",
+      "case": "Soru: Lomber ponksiyon (LP) yapılacak bir hastada hangi aralık seçilmeli ve neden? Conus medullaris'in sona erme düzeyi ve pediyatrik hastalardaki fark nedir?",
+      "options": [
+        "A) T12-L1 aralığı; conus medullaris L3-L4'te biter; çocuklarda aynı düzey",
+        "B) L3-L4 veya L4-L5 aralığı; conus medullaris L1-L2'de biter; çocuklarda L4-L5 tercih edilir",
+        "C) L1-L2 aralığı; conus medullaris L4-L5'te biter; çocuklarda L2-L3 kullanılır",
+        "D) L5-S1 aralığı; conus medullaris L2-L3'te biter; çocuklarda aynı düzey",
+        "E) L2-L3 aralığı; conus medullaris T12-L1'de biter; çocuklarda L3-L4 kullanılır"
+      ],
+      "correct_answer": "B",
+      "explanation": "Lomber ponksiyon tekniği: Yetişkinlerde conus medullaris L1-L2 düzeyinde biter; bu nedenle LP için L3-L4 (daha yaygın) veya L4-L5 aralığı seçilir — medulla spinalis hasarı riski yoktur, yalnızca cauda equina lifleri vardır. Çocuklarda conus medullaris nispeten daha aşağıda (L2-L3) olduğundan L4-L5 aralığı tercih edilir. Referans nokta: spina iliaka posteriora superior hizasındaki çizgi L4 çıkıntısını işaret eder. LP ile alınan BOS: renk (normalde berrak), basınç (70-200 mmH2O), hücre sayımı, protein, glukoz incelenir.",
+      "story_hint": "LP = L3-L4 veya L4-L5. Conus = L1-L2'de biter. Çocuk = L4-L5. Spina iliaka = L4 hizası — pratik referans."
+    },
+    {
+      "id": "atus1-099",
+      "case": "Soru: Obstrüktif hidrosefali olan bir hastada BOS akış yolu inceleniyor. Monro forameni, Sylvius akuaduktusu ve Luschka/Magendie foramenleri bu yolda nerededir?",
+      "options": [
+        "A) BOS: 3. ventrikül → Monro → lateral ventrikül → Sylvius → 4. ventrikül → Luschka/Magendie → subaraknoid",
+        "B) BOS: lateral ventrikül → Monro forameni → 3. ventrikül → Sylvius akuaduktusu → 4. ventrikül → Luschka/Magendie foramenleri → subaraknoid mesafe",
+        "C) BOS: 4. ventrikül → Sylvius akuaduktusu → 3. ventrikül → Monro forameni → lateral ventrikül → subaraknoid mesafe",
+        "D) BOS: lateral ventrikül → Sylvius akuaduktusu → 3. ventrikül → Monro → 4. ventrikül → subaraknoid mesafe",
+        "E) BOS: 3. ventrikül → Luschka/Magendie → 4. ventrikül → Sylvius → lateral ventrikül → subaraknoid mesafe"
+      ],
+      "correct_answer": "B",
+      "explanation": "BOS dolaşımı normal akış yolu: Koroid pleksus (lateral ventriküllerde en çok üretilir) → Lateral ventrikül → Foramen Monro (interventriküler foramen) → 3. ventrikül → Sylvius akuaduktusu (serebral akuadukt, en dar nokta) → 4. ventrikül → Luschka foramenleri (lateral, 2 adet) + Magendie forameni (medial, 1 adet) → subaraknoid mesafe → araknoid granülasyonlar → venöz sinüsler. Sylvius akuaduktunun tıkanması 'obstrüktif hidrosefali'nin en sık nedenidir (özellikle çocuklarda).",
+      "story_hint": "BOS: Lateral → Monro → 3. → Sylvius → 4. → Luschka(2)+Magendie(1) → subaraknoid. Sylvius = en dar, en sık tıkanan."
+    },
+    {
+      "id": "atus1-100",
+      "case": "Soru: Kan-beyin bariyeri (KBB) yapısı, hücresel bileşenleri ve bu bariyerin olmadığı (circumventricular organs) bölgeler hakkında hangisi doğrudur?",
+      "options": [
+        "A) KBB: endotel hücreleri arasında gevşek bağlantılar; astrosit son ayakları ve perisitler yok; istisna yok",
+        "B) KBB: endotel hücreleri arasında sıkı bağlantılar (tight junctions) + astrosit son ayakları + perisitler; istisna: area postrema, hipofiz, pineal bez, OVLT",
+        "C) KBB: endotel hücreleri arasında sıkı bağlantılar; yalnızca astrosit son ayakları; istisna: serebellum ve beyin sapı",
+        "D) KBB: perisitler ve mikroglia; sıkı bağlantı yok; istisna: bazal ganglionlar",
+        "E) KBB: yalnızca astrosit son ayakları oluşturur; istisna: lateral ventriküller ve subaraknoid mesafe"
+      ],
+      "correct_answer": "B",
+      "explanation": "Kan-beyin bariyeri (KBB) üç bileşeni: (1) Endotel hücreleri arasında SIKI BAĞLANTILAR (tight junctions/zonula occludens) — büyük ve suda çözünen molekülleri engeller, (2) ASTROSİT son ayakları (end-feet) — kapiller çevresinde kılıf oluşturur, (3) PERİSİTLER — bariyer bütünlüğünü düzenler. KBB olmayan bölgeler (circumventricular organs): area postrema (kusma merkezi, toksin algılar), ön hipofiz (hormonları kan yoluyla algılar), pineal bez, organum vasculosum laminae terminalis (OVLT — osmoregülasyon), subfornikal organ. Bu istisna bölgeler özellikle ilaç hedefleme açısından önem taşır.",
+      "story_hint": "KBB = tight junctions + astrosit ayakları + perisitler. İstisna = area postrema (kusma), hipofiz, pineal, OVLT. Kusturucu ilaçlar area postrema üzerinden etkir."
+    }
+  ]
+}

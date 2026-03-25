@@ -71,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
       final results = await Future.wait([
         _dataService.loadTopics(subjectId: _selectedSubjectId),
         _progressService.loadProgress(),
-        SpacedRepetitionService().getAllData(), // SM-2 verisini önbellekle
+        SpacedRepetitionService().getAllData(),
         _userService.loadUser(),
       ]);
       if (mounted) {
@@ -80,7 +80,6 @@ class _HomeScreenState extends State<HomeScreen> {
         final sm2Data  = results[2] as Map<String, SM2CardData>;
         final user     = results[3] as UserProfile;
 
-        // Tüm flashcard ve case ID'lerini topla
         final fcIds = <String>[];
         final ccIds = <String>[];
         for (final t in topics) {
@@ -114,6 +113,46 @@ class _HomeScreenState extends State<HomeScreen> {
           onRetry: _loadData,
         );
       }
+    }
+  }
+
+  /// Ekrandan geri dönünce çağrılır — loading göstermeden istatistikleri günceller
+  Future<void> _refreshStats() async {
+    if (!mounted || _topics.isEmpty) return;
+    try {
+      final results = await Future.wait([
+        _progressService.loadProgress(),
+        SpacedRepetitionService().getAllData(),
+        _userService.loadUser(),
+      ]);
+      if (!mounted) return;
+      final progress = results[0] as StudyProgress;
+      final sm2Data  = results[1] as Map<String, SM2CardData>;
+      final user     = results[2] as UserProfile;
+
+      final fcIds = <String>[];
+      final ccIds = <String>[];
+      for (final t in _topics) {
+        fcIds.addAll(t.flashcards.map((fc) => fc.id));
+        ccIds.addAll(t.clinicalCases.map((cc) => cc.id).where((id) => id.isNotEmpty));
+      }
+
+      final summaries = await Future.wait([
+        SpacedRepetitionService().getSummary(fcIds, dailyGoal: progress.dailyGoal),
+        SpacedRepetitionService().getSummary(ccIds, dailyGoal: progress.dailyGoal),
+      ]);
+
+      if (mounted) {
+        setState(() {
+          _progress         = progress;
+          _user             = user;
+          _flashcardSummary = summaries[0];
+          _caseSummary      = summaries[1];
+          _sm2Data          = sm2Data;
+        });
+      }
+    } catch (e) {
+      debugPrint('_refreshStats hata: $e');
     }
   }
 
@@ -209,7 +248,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return GestureDetector(
       onTap: () async {
         await Navigator.push(context, AppRoute.slideUp(const ProfileScreen()));
-        _loadData();
+        _refreshStats();
       },
       child: MouseRegion(
         cursor: SystemMouseCursors.click,
@@ -490,7 +529,7 @@ class _HomeScreenState extends State<HomeScreen> {
       onButtonTap: () => _showSubjectSelectionSheet(isCards: true, isDark: isDark),
       onFolderTap: (mode) async {
         await Navigator.push(context, AppRoute.slideUp(FlashcardScreen(initialMode: mode as FlashcardMode)));
-        _loadData();
+        _refreshStats();
       },
     );
   }
@@ -619,7 +658,7 @@ class _HomeScreenState extends State<HomeScreen> {
       onButtonTap: () => _showSubjectSelectionSheet(isCards: false, isDark: isDark),
       onFolderTap: (mode) async {
         await Navigator.push(context, AppRoute.slideUp(CaseStudyScreen(initialMode: mode as CaseStudyMode)));
-        _loadData();
+        _refreshStats();
       },
     );
   }
@@ -1040,7 +1079,7 @@ class _HomeScreenState extends State<HomeScreen> {
         dailyGoal: remaining,
       )));
     }
-    _loadData();
+    _refreshStats();
   }
 
   // ── Bottom Nav ─────────────────────────────────────────────────────────────
@@ -1172,23 +1211,23 @@ class _HomeScreenState extends State<HomeScreen> {
       case 0: break; // Home
       case 1: // Klasörler
         await Navigator.push(context, AppRoute.slideUp(const CollectionsScreen()));
-        _loadData();
+        _refreshStats();
         break;
       case 2: // Odak
         await Navigator.push(context, AppRoute.slideUp(const FocusScreen()));
-        _loadData();
+        _refreshStats();
         break;
       case 3: // Deneme
         await Navigator.push(context, AppRoute.slideUp(const MockExamSetupScreen()));
-        _loadData();
+        _refreshStats();
         break;
       case 4: // Analiz
         await Navigator.push(context, AppRoute.slideUp(ProgressAnalyticsScreen(user: _user, progress: _progress)));
-        _loadData();
+        _refreshStats();
         break;
       case 5: // Profil
         await Navigator.push(context, AppRoute.slideUp(const ProfileScreen()));
-        _loadData();
+        _refreshStats();
         break;
     }
     if (mounted) setState(() => _navIndex = 0);

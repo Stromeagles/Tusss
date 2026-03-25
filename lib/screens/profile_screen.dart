@@ -22,6 +22,8 @@ import 'auth/login_screen.dart';
 import '../widgets/daily_goal_widget.dart';
 import '../services/specialty_score_service.dart';
 import 'specialty_detail_screen.dart';
+import '../services/premium_service.dart';
+import '../widgets/paywall_widget.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -40,6 +42,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   int _correctCount = 0;
   int _srsCardCount = 0;
   StudyProgress _progress = StudyProgress();
+  bool _isPremium = false;
 
   @override
   void initState() {
@@ -51,6 +54,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     final user = await _userService.loadUser();
     final progress = await ProgressService().loadProgress();
     final srsData = await SpacedRepetitionService().getAllData();
+    final premium = await PremiumService().isPremium();
 
     if (mounted) {
       setState(() {
@@ -59,6 +63,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         _totalSolved = progress.totalFlashcardsStudied + progress.totalCasesAttempted;
         _correctCount = progress.correctAnswers;
         _srsCardCount = srsData.length;
+        _isPremium = premium;
         _loading = false;
       });
     }
@@ -374,12 +379,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 fontWeight: FontWeight.w900,
                                 height: 1.1),
                           ),
-                          Text(
-                            '/$goal',
-                            style: GoogleFonts.inter(
-                                color: subColor,
-                                fontSize: 10,
-                                fontWeight: FontWeight.w600),
+                          Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              if (!_isPremium)
+                                Icon(Icons.lock_rounded, size: 8, color: AppTheme.neonGold),
+                              Text(
+                                '/$goal',
+                                style: GoogleFonts.inter(
+                                    color: subColor,
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w600),
+                              ),
+                            ],
                           ),
                         ],
                       ),
@@ -391,7 +403,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(goal == 50 ? 'Günlük Limit' : 'Günlük Hedef',
+                      Text(_isPremium ? 'Günlük Hedef (Premium)' : 'Günlük Limit (Ücretsiz)',
                           style: GoogleFonts.inter(
                               color: textColor,
                               fontSize: 15,
@@ -926,24 +938,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 ),
                               ),
                             ),
-                            const SizedBox(height: 24),
-
-                            // ── Günlük Hedef Input ──
-                            Text('GÜNLÜK KART HEDEFİ', style: GoogleFonts.inter(
-                                color: subColor, fontSize: 11, fontWeight: FontWeight.w700, letterSpacing: 1.2)),
-                            const SizedBox(height: 8),
-                            TextField(
-                              keyboardType: TextInputType.number,
-                              inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-                              controller: TextEditingController(text: tempUser.dailyGoal.toString()),
-                              style: GoogleFonts.inter(color: textColor, fontWeight: FontWeight.w600, fontSize: 15),
-                              decoration: _premiumInput(hint: 'Günlük kart sayısı', icon: Icons.flag_outlined, isDark: isDark),
-                              onChanged: (v) {
-                                final val = int.tryParse(v) ?? 20;
-                                setSheetState(() => tempUser = tempUser.copyWith(dailyGoal: val.clamp(5, 500)));
-                              },
-                            ),
-                            const SizedBox(height: 16),
                           ],
                         ),
                       ),
@@ -1006,6 +1000,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   void _showGoalSetupSheet(bool isDark) async {
     final progressService = ProgressService();
     final progress = await progressService.loadProgress();
+    final isPremium = await PremiumService().isPremium();
     if (!mounted) return;
 
     double tempBase = progress.baseScore;
@@ -1113,37 +1108,79 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   const SizedBox(height: 48),
 
                   // Öneri Kartı
-                  Container(
-                    padding: const EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      color: AppTheme.cyan.withValues(alpha: 0.1),
-                      borderRadius: BorderRadius.circular(24),
-                      border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.2)),
-                    ),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                  GestureDetector(
+                    onTap: (!isPremium && recommendation > PremiumService.dailyFreeFlashcardLimit)
+                        ? () {
+                            Navigator.of(ctx).pop();
+                            showModalBottomSheet(
+                              context: context,
+                              isScrollControlled: true,
+                              backgroundColor: Colors.transparent,
+                              builder: (_) => const PaywallWidget(type: 'flashcard', dailyLimit: PremiumService.dailyFreeFlashcardLimit),
+                            );
+                          }
+                        : null,
+                    child: Container(
+                      padding: const EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                        color: (!isPremium && recommendation > PremiumService.dailyFreeFlashcardLimit)
+                            ? AppTheme.neonGold.withValues(alpha: 0.1)
+                            : AppTheme.cyan.withValues(alpha: 0.1),
+                        borderRadius: BorderRadius.circular(24),
+                        border: Border.all(
+                          color: (!isPremium && recommendation > PremiumService.dailyFreeFlashcardLimit)
+                              ? AppTheme.neonGold.withValues(alpha: 0.3)
+                              : AppTheme.cyan.withValues(alpha: 0.2),
+                        ),
+                      ),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  isPremium ? 'Önerilen Günlük Soru/Kart' : 'Günlük Limit (Ücretsiz)',
+                                  style: GoogleFonts.inter(color: subColor, fontSize: 13, fontWeight: FontWeight.w600),
+                                ),
+                                const SizedBox(height: 4),
+                                Row(
+                                  children: [
+                                    Text(
+                                      '${isPremium ? recommendation : recommendation.clamp(0, PremiumService.dailyFreeFlashcardLimit)} Adet',
+                                      style: GoogleFonts.inter(
+                                        color: (!isPremium && recommendation > PremiumService.dailyFreeFlashcardLimit)
+                                            ? AppTheme.neonGold
+                                            : AppTheme.cyan,
+                                        fontSize: 28,
+                                        fontWeight: FontWeight.w900,
+                                      ),
+                                    ),
+                                    if (!isPremium && recommendation > PremiumService.dailyFreeFlashcardLimit) ...[
+                                      const SizedBox(width: 8),
+                                      Icon(Icons.lock_rounded, size: 18, color: AppTheme.neonGold),
+                                    ],
+                                  ],
+                                ),
+                                if (!isPremium && recommendation > PremiumService.dailyFreeFlashcardLimit)
+                                  Text(
+                                    'Premium\'a geç: $recommendation kart/gün',
+                                    style: GoogleFonts.inter(color: AppTheme.neonGold, fontSize: 11, fontWeight: FontWeight.w600),
+                                  ),
+                              ],
+                            ),
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
-                              Text('Önerilen Günlük Soru/Kart',
-                                style: GoogleFonts.inter(color: subColor, fontSize: 13, fontWeight: FontWeight.w600)),
-                              const SizedBox(height: 4),
-                              Text('$recommendation Adet',
-                                style: GoogleFonts.inter(color: AppTheme.cyan, fontSize: 28, fontWeight: FontWeight.w900)),
+                              Text('$days Gün Kaldı',
+                                style: GoogleFonts.inter(color: subColor, fontSize: 12)),
+                              Text('${tempTargetDate.day} ${_getMonthName(tempTargetDate.month)}',
+                                style: GoogleFonts.inter(color: textColor, fontSize: 18, fontWeight: FontWeight.w800)),
                             ],
                           ),
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Text('$days Gün Kaldı',
-                              style: GoogleFonts.inter(color: subColor, fontSize: 12)),
-                            Text('${tempTargetDate.day} ${_getMonthName(tempTargetDate.month)}',
-                              style: GoogleFonts.inter(color: textColor, fontSize: 18, fontWeight: FontWeight.w800)),
-                          ],
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                   const SizedBox(height: 24),
@@ -1163,16 +1200,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           targetTusDate: targetStr,
                         );
                         await _userService.saveUser(_user.copyWith(targetDate: tempTargetDate));
-                        await progressService.setDailyGoal(recommendation);
-                        
+                        final effectiveGoal = isPremium
+                            ? recommendation
+                            : recommendation.clamp(0, PremiumService.dailyFreeFlashcardLimit);
+                        await progressService.setDailyGoal(effectiveGoal);
+
                         if (Navigator.of(ctx).canPop()) {
                           Navigator.of(ctx).pop();
                         }
-                        
+
                         _load(); // Hedef kartını güncelle
                         messenger.showSnackBar(
                           SnackBar(
-                            content: Text('Haftalık programın ve günlük hedefin ($recommendation soru) güncellendi! 🚀'),
+                            content: Text('Günlük hedefin ($effectiveGoal soru) güncellendi! 🚀'),
                             behavior: SnackBarBehavior.floating,
                             backgroundColor: AppTheme.success,
                           ),

@@ -4,6 +4,7 @@ import 'package:crypto/crypto.dart';
 import 'package:firebase_auth/firebase_auth.dart' hide FirebaseAuthException;
 import 'package:firebase_auth/firebase_auth.dart' as firebase_auth show FirebaseAuthException;
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
@@ -32,27 +33,35 @@ class AuthService {
 
   Future<UserCredential> signInWithGoogle() async {
     try {
-      final googleUser = await GoogleSignIn(scopes: ['email']).signIn();
-      if (googleUser == null) {
-        throw const FirebaseAuthException(
-          code: 'sign-in-cancelled',
-          message: 'Google girisi iptal edildi.',
+      UserCredential userCredential;
+
+      if (kIsWeb) {
+        // Web: signInWithPopup (google_sign_in paketi web'de token vermez)
+        final provider = GoogleAuthProvider()..addScope('email');
+        userCredential = await _auth.signInWithPopup(provider);
+      } else {
+        // Mobile: google_sign_in paketi
+        final googleUser = await GoogleSignIn(scopes: ['email']).signIn();
+        if (googleUser == null) {
+          throw firebase_auth.FirebaseAuthException(
+            code: 'sign-in-cancelled',
+            message: 'Google girisi iptal edildi.',
+          );
+        }
+        final googleAuth = await googleUser.authentication;
+        final credential = GoogleAuthProvider.credential(
+          accessToken: googleAuth.accessToken,
+          idToken: googleAuth.idToken,
         );
+        userCredential = await _auth.signInWithCredential(credential);
       }
 
-      final googleAuth = await googleUser.authentication;
-      final credential = GoogleAuthProvider.credential(
-        accessToken: googleAuth.accessToken,
-        idToken: googleAuth.idToken,
-      );
-
-      final userCredential = await _auth.signInWithCredential(credential);
       await _createUserInDbIfNotExists(userCredential.user);
       return userCredential;
-    } on FirebaseAuthException {
+    } on firebase_auth.FirebaseAuthException {
       rethrow;
     } catch (e) {
-      throw FirebaseAuthException(
+      throw firebase_auth.FirebaseAuthException(
         code: 'google-sign-in-failed',
         message: 'Google girisi basarisiz: $e',
       );

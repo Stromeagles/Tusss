@@ -672,7 +672,12 @@ class _HomeScreenState extends State<HomeScreen> {
             children: folders.asMap().entries.map((entry) {
               final i = entry.key;
               final f = entry.value;
-              final count = i == 0 ? summary.learnedCount : (i == 1 ? summary.toReviewCount : summary.bookmarkCount);
+              // Mode'a göre count — index'e değil, sıra değişse bile doğru kalır
+              final isLearned = f.mode == FlashcardMode.learnedOnly || f.mode == CaseStudyMode.learnedOnly;
+              final isFailed  = f.mode == FlashcardMode.failedOnly  || f.mode == CaseStudyMode.failedOnly;
+              final count = isLearned ? summary.learnedCount
+                          : isFailed  ? summary.toReviewCount
+                          : summary.bookmarkCount;
               
               return Expanded(
                 child: Padding(

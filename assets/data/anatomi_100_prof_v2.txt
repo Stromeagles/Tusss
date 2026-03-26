@@ -1,0 +1,998 @@
+Soru: (Anatomi) Gözyaşı bezini (Glandula lacrimalis) uyaran parasempatik lifler hangi sinir aracılığıyla taşınır?
+A) N. oculomotorius
+B) N. facialis (N. petrosus major)
+C) N. glossopharyngeus
+D) N. vagus
+E) N. trigeminus
+Cevap: B
+Profesör Açıklaması: Gözyaşı bezinin parasempatik uyarısı N. facialis'ten başlar. N. petrosus major, ganglion pterygopalatinum'da sinaps yapar ve buradaki lifler V2 (N. maxillaris) üzerinden beze ulaşır.
+
+Soru: (Anatomi) M. biceps brachii'nin kısa başı (caput breve) hangi kemik yapısından başlar?
+A) Tuberculum supraglenoidale
+B) Tuberculum infraglenoidale
+C) Processus coracoideus
+D) Acromion
+E) Spina scapulae
+Cevap: C
+Profesör Açıklaması: Biceps'in kısa başı processus coracoideus'tan, uzun başı (caput longum) ise eklem içi seyreden tuberculum supraglenoidale'den başlar.
+
+Soru: (Anatomi) Plexus brachialis'in hangi fasikülü, truncus inferior'un ön dalı (division anterior) tarafından oluşturulur?
+A) Fasciculus lateralis
+B) Fasciculus medialis
+C) Fasciculus posterior
+D) Truncus superior
+E) Truncus medius
+Cevap: B
+Profesör Açıklaması: Truncus inferior'un (C8-T1) ön dalı tek başına fasciculus medialis'i oluşturur.
+
+Soru: (Anatomi) "Drop foot" (Düşük ayak) tablosuna neden olan sinir hangisidir?
+A) N. fibularis (peroneus) profundus
+B) N. tibialis
+C) N. saphenus
+D) N. femoralis
+E) N. obturatorius
+Cevap: A
+Profesör Açıklaması: N. fibularis profundus ayağın dorsifleksörlerini uyarır. Felcinde ayak aşağı düşer (düşük ayak).
+
+Soru: (Anatomi) Midenin fundus ve corpus kısmındaki asit salgılayan "Parietal (Oksintik) hücreler" nerede bulunur?
+A) Cardia bezleri
+B) Glandulae gastricae propriae
+C) Pylor bezleri
+D) Muscularis mucosa
+E) Submukoza
+Cevap: B
+Profesör Açıklaması: Parietal hücreler (HCl ve İntrinsel faktör salgılayan) midenin fundus ve corpus'undaki gastrik bezlerde (glandulae gastricae propriae) yer alır.
+
+Soru: (Anatomi) Alt ekstremitede diz eklemi arkasındaki "Fossa poplitea"da en derinde yer alan yapı hangisidir?
+A) Vena poplitea
+B) Arteria poplitea
+C) Nervus tibialis
+D) Nervus fibularis communis
+E) Musculus plantaris
+Cevap: B
+Profesör Açıklaması: Fossa poplitea'da yüzeyelden derine sıralama: Sinir (N. tibialis) -> Ven (V. poplitea) -> Arter (A. poplitea). Arter kemiğe en yakın (en derin) yapıdır.
+
+Soru: (Anatomi) Aşağıdaki oluşumlardan hangisi "Sinus Cavernosus"un lateral duvarından geçmez?
+A) N. oculomotorius
+B) N. trochlearis
+C) N. abducens
+D) N. ophthalmicus (V1)
+E) N. maxillaris (V2)
+Cevap: C
+Profesör Açıklaması: N. abducens sinüsün içinden (ortasından) geçer. Diğerleri lateral duvarda yukarıdan aşağıya sıralanmıştır.
+
+Soru: (Anatomi) Kalbin sol ventrikülünden çıkan Aorta'nın kapakçıkları (Valva aortae) kaç adettir ve adı nedir?
+A) 2 adet, Valvula semilunaris
+B) 3 adet, Valvula semilunaris
+C) 2 adet, Valvula mitralis
+D) 3 adet, Valvula tricuspidalis
+E) 4 adet
+Cevap: B
+Profesör Açıklaması: Aorta ve Pulmoner kapaklar 3'er adet yarım ay (semilunar) şeklinde kapakçıktan oluşur.
+
+Soru: (Anatomi) Dilin 1/3 arka kısmının hem genel duyusunu hem de tat duyusunu alan sinir hangisidir?
+A) N. facialis
+B) N. glossopharyngeus
+C) N. vagus
+D) N. lingualis
+E) N. hypoglossus
+Cevap: B
+Profesör Açıklaması: Dilin arka 1/3'ü nükleer ve tat duyusu açısından tek bir sinir (N. glossopharyngeus) tarafından inerve edilir.
+
+Soru: (Anatomi) Omuz ekleminin (Art. humeri) stabilitesini sağlayan Rotator Cuff kaslarından hangisi Tuberculum minus'a tutunur?
+A) M. supraspinatus
+B) M. infraspinatus
+C) M. teres minor
+D) M. subscapularis
+E) M. teres major
+Cevap: D
+Profesör Açıklaması: Supraspinatus, infraspinatus ve teres minor tuberculum majus'a; sadece subscapularis tuberculum minus'a tutunur.
+
+Soru: (Anatomi) N. ulnaris zedelenmesinde elin tipik duruşu nasıldır?
+A) Düşük el
+B) Maymun eli
+C) Pençe el (Claw hand)
+D) Ebe eli
+E) Benediksiyon pozisyonu
+Cevap: C
+Profesör Açıklaması: N. ulnaris hasarında lumbrikal kasların (4 ve 5) kaybına bağlı olarak MCP eklemlerinde hiperekstansiyon, IP eklemlerde fleksiyon gelişir (Pençe el).
+
+Soru: (Anatomi) Beyinde motor konuşma merkezi (Broca alanı) genellikle hangi girusta bulunur?
+A) Gyrus frontalis superior
+B) Gyrus frontalis inferior (Pars triangularis ve opercularis)
+C) Gyrus temporalis superior
+D) Gyrus postcentralis
+E) Gyrus precentralis
+Cevap: B
+Profesör Açıklaması: Broca alanı dominant hemisferin (genellikle sol) gyrus frontalis inferior'unda (44-45. sahalar) yer alır.
+
+Soru: (Anatomi) Vena portae hepatis aşağıdaki venlerden hangilerinin birleşmesiyle oluşur?
+A) V. lienalis + V. mesenterica superior
+B) V. lienalis + V. mesenterica inferior
+C) V. mesenterica superior + V. mesenterica inferior
+D) V. renalis + V. cava inferior
+E) V. gastrica + V. lienalis
+Cevap: A
+Profesör Açıklaması: Karaciğere giden ana venöz yol (portal ven), splenik ven ve süperior mezenterik venin birleşmesiyle oluşur.
+
+Soru: (Anatomi) Diayıframayı (Diaphragma) delip geçen oluşumlardan Hangisi T8 seviyesinde bulunur?
+A) Hiatus aorticus
+B) Hiatus esophageus
+C) Foramen venae cavae
+D) Trigonum sternocostale
+E) Crus dextrum
+Cevap: C
+Profesör Açıklaması: T8: Vena Cava Inferior, T10: Özofagus, T12: Aorta geçer.
+
+Soru: (Anatomi) Aşağıdaki kafatası fossa'larından hangisi içinde "Hypophysis" (Pituiter bez) bulunur?
+A) Fossa cranii anterior
+B) Fossa cranii posterior
+C) Fossa hypophysialis (Sella turcica içinde)
+D) Canalis opticus
+E) Fossa supraspinata
+Cevap: C
+Profesör Açıklaması: Os sphenoidale üzerindeki sella turcica yapısında bulunan fossa hypophysialis hipofiz bezinin yerleştiği yerdir.
+
+Soru: (Anatomi) Erkeklerde idrar kanalının (Urethra) en geniş ve en kolay genişleyebilen parçası hangisidir?
+A) Pars prostatica
+B) Pars membranacea
+C) Pars spongiosa
+D) Ostium urethrae externum
+E) Fossa navicularis
+Cevap: A
+Profesör Açıklaması: Prostat içinden geçen kısım üretranın en geniş ve distansibilite (genişleme) yeteneği en yüksek kısmıdır.
+
+Soru: (Anatomi) Karaciğerin "H" şeklindeki visceral yüzünde, ön (anterior) tarafta bulunan lob hangisidir?
+A) Lobus caudatus
+B) Lobus quadratus
+C) Lobus sinister
+D) Lobus dexter
+E) Lobus posterior
+Cevap: B
+Profesör Açıklaması: Safra kesesi yatağı ile ligamentum teres arasında kalan ön lob "Lobus quadratus"tur.
+
+Soru: (Anatomi) Gözün dışındaki "M. obliquus superior" kasını hangi sinir inerve eder?
+A) N. oculomotorius (III)
+B) N. trochlearis (IV)
+C) N. abducens (VI)
+D) N. ophthalmicus (V)
+E) N. opticus (II)
+Cevap: B
+Profesör Açıklaması: Orbitayı hareket ettiren kaslardan M. rectus lateralis (VI) ve M. obliquus superior (IV) kaslarını farklı sinirler uyarır. Geri kalan kasları III uyarır.
+
+Soru: (Anatomi) Plexus lumbosacralis'in "N. femoralis" kolu hangi seviyelerden kaynaklanır?
+A) L1-L3
+B) L2-L4
+C) L4-S3
+D) S1-S3
+E) T12-L1
+Cevap: B
+Profesör Açıklaması: Nervus femoralis L2-L4 spinal sinirlerin arka dallarının birleşmesiyle oluşur.
+
+Soru: (Anatomi) Kolun (brachium) ön bölgesindeki kasları (M. biceps, M. coracobrachialis, M. brachialis) hangi sinir inerve eder?
+A) N. radialis
+B) N. medianus
+C) N. ulnaris
+D) N. musculocutaneus
+E) N. axillaris
+Cevap: D
+Profesör Açıklaması: N. musculocutaneus fasikülüs lateralis'ten çıkar ve kolun fleksör kaslarını uyarır.
+
+Soru: (Anatomi) Akciğerlerin damar ve bronşlarının girdiği "Hilum pulmonis" sınırlarında sağ akciğerde en üstte ne bulunur?
+A) A. pulmonalis
+B) Bronchus principalis dexter
+C) V. pulmonalis superior
+D) Bronchus eparterialis
+E) A. bronchialis
+Cevap: D
+Profesör Açıklaması: Sağ akciğer hilusunda A. pulmonalis'in üzerinde bir bronş (bronchus eparterialis) dalı bulunur. Sol tarafta ise arter en üsttedir.
+
+Soru: (Anatomi) Pankreasın "Uncinate proces"i (processus uncinatus) hangi damarların arkasında yer alır?
+A) V. lienalis
+B) Vasa mesenterica superior (A. ve V. mesenterica superior)
+C) V. portae
+D) Aorta
+E) V. cava inferior
+Cevap: B
+Profesör Açıklaması: Pankreas başının alt uzantısı olan uncinate process, süperior mezenterik damarların hemen arkasındadır.
+
+Soru: (Anatomi) Beyinde vücudun genel duyusunun (dokunma, ağrı, ısı) işlendiği "Primer Somatosensoriyel Merkez" (3-1-2) hangisidir?
+A) Gyrus precentralis
+B) Gyrus postcentralis
+C) Gyrus temporalis superior
+D) Lobulus parietalis superior
+E) Cuneus
+Cevap: B
+Profesör Açıklaması: Parietal lobdaki gyrus postcentralis duyu homunculus'unun olduğu yerdir.
+
+Soru: (Anatomi) "Clivus" hangi kemiklerin birleşmesiyle oluşur?
+A) Os frontale + Os parietale
+B) Os sphenoidale + Os occipitale
+C) Os temporale + Os sphenoidale
+D) Os zygomaticum + Os maxillaris
+E) Os ethmoidale + Os vomer
+Cevap: B
+Profesör Açıklaması: Os sphenoidale'nin dorsum sellae'si ile os occipitale'nin pars basilaris'inin birleşmesiyle oluşan eğimli bölgedir. Beyin sapı üzerine yaslanır.
+
+Soru: (Anatomi) Aşağıdaki organlardan hangisi "Sekonder Retroperitoneal" (başta peritonlu olup sonra periton arkasına geçen) bir organdır?
+A) Böbrek
+B) Glandula suprarenalis
+C) Pancreas (cauda hariç)
+D) Aorta abdominalis
+E) Jejunum
+Cevap: C
+Profesör Açıklaması: Pancreas ve duodenum'un çoğu gelişimin ilerleyen evrelerinde periton arkasına gömülür (sekonder retroperitoneal). Böbrekler primerdir.
+
+Soru: (Anatomi) Karın boşluğunu (Pelvis dahil) besleyen en büyük arter olan Aorta abdominalis hangi seviyede ikiye (Aa. iliaca communis) ayrılır?
+A) L2
+B) L3
+C) L4
+D) L5
+E) S1
+Cevap: C
+Profesör Açıklaması: Aorta L4 omur hizasında sağ ve sol iliak arterlere ayrılır (Bifurcatio aortae).
+
+Soru: (Anatomi) Gözün dışındaki "M. rectus lateralis" kasını hangi sinir inerve eder?
+A) III
+B) IV
+C) VI (N. abducens)
+D) V1
+E) II
+Cevap: C
+Profesör Açıklaması: Gözü dışa doğru (lateral) çeken kası N. abducens (VI) uyarır.
+
+Soru: (Anatomi) Midenin gastrin hormonu salgılayan "G hücreleri" mide duvarının hangi bölgesinde yoğunlaşmıştır?
+A) Fundus
+B) Cardia
+C) Corpus
+D) Pylorus (Antrum)
+E) Curvatura major
+Cevap: D
+Profesör Açıklaması: Gastrin salgılayan hücreler gastrik antrum (pylorus yakınında) bölgesinde yerleşiktir.
+
+Soru: (Anatomi) Diz ekleminde femur ve tibia arasındaki kaymayı engelleyen "Ligamentum cruciatum anterius" (Ön çapraz bağ) tibia'nın neresine tutunur?
+A) Epicondylus medialis
+B) Tuberositas tibia
+C) Area intercondylaris anterior
+D) Malleolus lateralis
+E) Eminentia intercondylaris posterior
+Cevap: C
+Profesör Açıklaması: ACL (ön çapraz bağ) tibia'nın ön interkondiller bölgesinden başlayıp femur'un lateral kondiline tutunur.
+
+Soru: (Anatomi) Spinal anestezi (Lumbal ponksiyon) yapmak için iğne hangi aralıktan sokulmalıdır?
+A) L1-L2 arası
+B) L2-L3 arası
+C) L4-L5 veya L3-L4 arası
+D) T12-L1 arası
+E) S1-S2 arası
+Cevap: C
+Profesör Açıklaması: Medulla spinalis L1-L2 hizasında sonlandığı için, zarar vermemek adına L3'ün altındaki mesafeler kullanılır.
+
+Soru: (Anatomi) Böbreküstü bezlerini (Glandula suprarenalis) besleyen üç arterden (üst, orta, alt) hangisi doğrudan Aorta'nın dalıdır?
+A) A. suprarenalis superior
+B) A. suprarenalis media
+C) A. suprarenalis inferior
+D) Hepsi aortadan çıkar
+E) Sadece arteria suprarenalis ventralis
+Cevap: B
+Profesör Açıklaması: Üst (frenik), Alt (renal) dalıdır; ancak a. suprarenalis media doğrudan aortadan gelir.
+
+Soru: (Anatomi) Spermlerin üretildiği "Tubuli seminiferi contorti" yapıları nerede bulunur?
+A) Epididymis
+B) Vesicula seminalis
+C) Lobuli testis (Testis içinde)
+D) Prostata
+E) Scrotum derisi
+Cevap: C
+Profesör Açıklaması: Testisin fonksiyonel parankimi içinde bulunan küçük kıvrımlı tübüllerde sperm üretimi (spermatogenez) gerçekleşir.
+
+Soru: (Anatomi) "Scapula alata" (kanat scapula) görünümü hangi sinir zedelenmesiyle ortaya çıkar?
+A) N. axillaris
+B) N. thoracicus longus (Bell siniri)
+C) N. thoracodorsalis
+D) N. medianus
+E) N. accessorius
+Cevap: B
+Profesör Açıklaması: N. thoracicus longus, m. serratus anterior'u uyarır. Bu sinir felç olduğunda scapula göğüs duvarından ayrılıp kanat gibi dışa çıkar.
+
+Soru: (Anatomi) Beyinde BOS (beyin omurilik sıvısı) fazlasını Sinus sagittalis superior'a boşaltan yapılar hangisidir?
+A) Plexus choroideus
+B) Granulationes arachnoideae (Arachnoid villus)
+C) Cisterna magna
+D) Sinus cavernosus
+E) Aqueductus cerebri
+Cevap: B
+Profesör Açıklaması: BOS reabsorbsiyonu (emilimi) araknoid granülasyonlarda venöz sisteme doğru gerçekleşir.
+
+Soru: (Anatomi) Duodenum'un 3. ve 4. parçasını ayıran en önemli anatomik yapı (treitz bağı) nedir?
+A) Ligamentum suspensorium duodeni
+B) Ligamentum falciforme
+C) Omentum majus
+D) Bursa omentalis
+E) Mesocolon transversum
+Cevap: A
+Profesör Açıklaması: Duodenum ile jejunum bileşkesinde (fleksura duodenojejunalis) duodenumu diaframaya asan kas ve bağ yapısıdır (Treitz bağı).
+
+Soru: (Anatomi) İnsanda en büyük lenf kanalı olan "Ductus thoracicus" nereye boşalır?
+A) Atrium dextrum
+B) Vena cava superior
+C) Angulus venosus sinister (Sol juguler ve subclavian ven birleşimi)
+D) V. azygos
+E) Portol ven
+Cevap: C
+Profesör Açıklaması: Vücudun 3/4'ünün lenfini toplayan kanal sol taraftaki venöz açıya dökülür.
+
+Soru: (Anatomi) El bileğinin iç yüzünde radius kemiği hizasında nabız alınan arter hangisidir?
+A) A. ulnaris
+B) A. radialis
+C) A. brachialis
+D) A. carotis
+E) A. iliaca
+Cevap: B
+Profesör Açıklaması: A. radialis el bileğinde nabız (palpasyon) için en sık kullanılan damardır.
+
+Soru: (Anatomi) Kalın bağırsaklarda görülen 3 adet boyuna kas bandına ne ad verilir?
+A) Haustra coli
+B) Taenia coli
+C) Appendices epiploicae
+D) Plicae semilunares
+E) Villi intestinalis
+Cevap: B
+Profesör Açıklaması: Taenia coli, kalın bağırsak boyunca uzanan düz kas şeritleridir. Bu şeritler bağırsakta büzülmelere (haustra) yol açar.
+
+Soru: (Anatomi) Midenin büyük kurvaturu (curvatura major) boyunca uzanan ve mideyi kolona bağlayan periton yapısı hangisidir?
+A) Omentum minus
+B) Omentum majus
+C) Mesenterium
+D) Ligamentum hepatogastricum
+E) Ligamentum gastrolienale
+Cevap: B
+Profesör Açıklaması: Omentum majus (büyük epiploon) midenin büyük kurvaturundan sarkıp barsakların önünü kaplayan yağlı örtüdür.
+
+Soru: (Anatomi) Boğazda "Yutma" (Deglutition) hareketinde dil kökünü yukarı ve geri çeken kasın siniri hangisidir?
+A) N. hypoglossus (XII)
+B) N. facialis
+C) N. vagus
+D) N. glossopharyngeus
+E) N. trigeminus
+Cevap: A
+Profesör Açıklaması: Dilin motor siniri hipoglossal sinirdir. Bütün iç ve dış dil kaslarını (palatoglossus hariç) uyarır.
+
+Soru: (Anatomi) Göz kapağının kapatılmasını (orbicularis oculi) sağlayan sinir hangisidir?
+A) III
+B) IV
+C) V
+D) VII (N. facialis)
+E) VI
+Cevap: D
+Profesör Açıklaması: Gözü kapatan (mimik kası) VII, kapağı kaldıran (levator palpebrae) III tarafından uyarılır.
+
+Soru: (Anatomi) İnce bağırsakların iç yüzündeki emilim yüzeyini artıran parmaksı çıkıntılara ne denir?
+A) Haustra
+B) Villi
+C) Plicae
+D) Taenia
+E) Crypts
+Cevap: B
+Profesör Açıklaması: Villus intestinalisler sadece ince bağırsaklara özgüdür.
+
+Soru: (Anatomi) Erkeklerde inguinal kanalda "Ductus deferens" ile birlikte seyreden yapı hangisidir?
+A) Arteria iliaca interna
+B) Arteria femoralis
+C) Plexus pampiniformis (Testis venleri)
+D) Üreter
+E) N. obturatorius
+Cevap: C
+Profesör Açıklaması: Spermatik kordon içinde duktus deferens, testiküler arter ve plexus pampiniformis (venler) bulunur.
+
+Soru: (Anatomi) Diz kapağı kemiği (Patella) hangi kasın tendonu içinde bulunan bir sesamoid kemiktir?
+A) Biceps femoris
+B) Sartorius
+C) Quadriceps femoris
+D) Gastrocnemius
+E) Soleus
+Cevap: C
+Profesör Açıklaması: Patella vücudun en büyük susamsı (sesamoid) kemiğidir.
+
+Soru: (Anatomi) Pankreasın kuyruk kısmı (Cauda pancreatis) hangi organ ile komşuluk yapar?
+A) Karaciğer
+B) Mide fundusu
+C) Dalak hilumu (Splen)
+D) Sol böbrek üstü bezi
+E) Jejunum
+Cevap: C
+Profesör Açıklaması: Pankreasın kuyruğu sol tarafa uzanarak dalağın hilumuna yaklaşır/temas eder.
+
+Soru: (Anatomi) Aşağıdaki oluşumlardan hangisi "Canalis femoralis"ten geçer?
+A) N. femoralis
+B) A. femoralis
+C) V. femoralis
+D) Lenf damarları (ve Cloquet lenf nodu)
+E) Hepsi geçer
+Cevap: D
+Profesör Açıklaması: Femoral kanal lenf yapıları için ayrılmıştır. Arter, ven ve sinir kanalın dışındadır (fasyal kılıf içindedir ama kanalda değildir).
+
+Soru: (Anatomi) N. radialis hasarında görülen tipik duyusal kayıp alanı neresidir?
+A) Avuç içi (palmar yüz)
+B) 1. dorsal interosseoz aralık (başparmak arkasındaki boşluk)
+C) 5. parmak (serçe parmak)
+D) Omuz başı
+E) Dirsek arkası
+Cevap: B
+Profesör Açıklaması: N. radialis elin sırtında başparmak ile işaret parmağı arasındaki "enfiye çukuru" ve çevresinin duyusunu alır.
+
+Soru: (Anatomi) Akciğerlerin pleura boşluğundan hava çıkarılması (pnömotoraks tedavisi) için iğne genellikle hangi kaburga hizasından sokulur?
+A) 2. interkostal aralık midklavikuler hat
+B) 5. interkostal aralık
+C) 8. interkostal aralık
+D) Clavicula üzeri
+E) Xiphoid yanı
+Cevap: A
+Profesör Açıklaması: Acil pnömotoraks boşaltımında hava üstte toplandığı için 2. aralık (üst hat) tercih edilir.
+
+Soru: (Anatomi) Beyin sapında (truncus cerebri) "Bulbus" (Medulla oblongata) hangi kafa çiftlerinin çıkış yeridir?
+A) III-IV
+B) V-VIII
+C) IX-XII
+D) I-II
+E) V-VII
+Cevap: C
+Profesör Açıklaması: IX (glossopharyngeus), X (vagus), XI (accessorius) ve XII (hypoglossus) bulbus seviyesinden çıkar.
+
+Soru: (Anatomi) Crista iliaca'nın en yüksek seviyesi (L4) hangi klinik işlem için referans noktasıdır?
+A) Apendektomi
+B) Lumbal ponksiyon
+C) Kateterizasyon
+D) Torasentez
+E) Sistostomi
+Cevap: B
+Profesör Açıklaması: L4 seviyesini belirlemek lumbal ponksiyon iğne girişi için güvenli bölge tayini sağlar.
+
+Soru: (Anatomi) Safra kesesi yatağı ile Karaciğer'in porta hepatis'ini birleştiren hayali çizgiye ne denir?
+A) Calot çizgisi
+B) Cantlie çizgisi
+C) Meckel hattı
+D) Glisson hattı
+E) Spigel hattı
+Cevap: B
+Profesör Açıklaması: Cantlie hattı karaciğeri fonksiyonel olarak sağ ve sol loba ayıran cerrahi sınırdır.
+
+Soru: (Anatomi) Aşağıdaki venlerden hangisi doğrudan Vena Cava Inferior'a dökülmez?
+A) V. renalis dextra
+B) V. renalis sinistra
+C) V. mesenterica superior
+D) V. hepatica
+E) V. suprarenalis dextra
+Cevap: C
+Profesör Açıklaması: Gastrointestinal sistemden gelen venler (V. portae aracılığıyla karaciğere gider) doğrudan VCI'ya dökülmezler.
+
+Soru: (Anatomi) İnsanda "Diz kapağı refleksi"nde (patellar refleks) hangi spinal seviye test edilir?
+A) L1-L2
+B) L3-L4
+C) L5-S1
+D) S2-S4
+E) T12-L1
+Cevap: B
+Profesör Açıklaması: Quadriceps tendonuna vurulduğunda uyluğun ön siniri (L2-L4) uyarılır, esas seviye L3-L4'tür.
+
+Soru: (Anatomi) Bir kafa kemiği olan "Os ethmoidale"nin delikli yapısı olan "Lamina cribrosa"dan hangi kafa çifti geçer?
+A) I (N. olfactorius)
+B) II (N. opticus)
+C) III (N. oculomotorius)
+D) V (N. trigeminus)
+E) VIII (N. vestibulocochlearis)
+Cevap: A
+Profesör Açıklaması: Koku sinirinin (I) lifleri lamina cribrosa'dan geçerek beyindeki bulbus olfactorius'a ulaşır.
+
+Soru: (Anatomi) Dirsek ekleminde (Art. cubiti) fleksiyon yaptıran en güçlü kas hangisidir?
+A) M. triceps brachii
+B) M. brachialis
+C) M. biceps brachii
+D) M. supinator
+E) M. coracobrachialis
+Cevap: B
+Profesör Açıklaması: Biceps'in aksine M. brachialis omuz pozisyonundan bağımsız olarak ana fleksördür. Supraspinatus omuz abdüksiyonuyla ilgiliyken, brachialis saf dirsek fleksörüdür.
+
+Soru: (Anatomi) Böbreğin (Ren) kapsülünün dışında bulunan ve peritonla komşu olan en dış yağ tabakasına ne ad verilir?
+A) Capsula adiposa (Perirenal yağ)
+B) Corpus adiposum pararenale (Pararenal yağ)
+C) Fascia renalis
+D) Tunica albuginea
+E) Fascia colli
+Cevap: B
+Profesör Açıklaması: Böbrekleri doğrudan saran kapsül adiposa'dır (Perirenal); gerota fasyasının dışındaki ise pararenal'dir.
+
+Soru: (Anatomi) Kalbin sağ atriumunda vena cava superior ile vena cava inferior girişleri arasındaki düz duvar bölümüne ne ad verilir?
+A) Sinus venarum cavarum
+B) Auricula dextra
+C) Fossa ovalis
+D) Crista terminalis
+E) Musculi pectinati
+Cevap: A
+Profesör Açıklaması: Venlerin döküldüğü embriyolojik olarak sinus venosus'tan gelişen düz yüzeydir.
+
+Soru: (Anatomi) Midenin gastroduodenal birleşme noktasındaki dairesel kas kalınlaşmasına ne denir?
+A) Cardia
+B) Pylorus (M. sphincter pylori)
+C) Fundus
+D) Antrum
+E) Incisura angularis
+Cevap: B
+Profesör Açıklaması: Pylor sfinkteri midenin boşalmasını kontrol eden kapakçık benzeri kas yapısıdır.
+
+Soru: (Anatomi) Aşağıdakilerden hangisi "Sinaptik İletim" sırasında nükleus'tan (çekirdekten) salınan ana nörotransmitterlerden biri DEĞİLDİR?
+A) Glutamat
+B) GABA
+C) Asetilkolin
+D) Dopamin
+E) Glikoz
+Cevap: E
+Profesör Açıklaması: Glikoz bir besin kaynağıdır (BT). Diğerleri ise sinir iletiminde kullanılan mediyatörlerdir (Anatomik temel fonksiyon).
+
+Soru: (Anatomi) Diayıframayı uyararak soluk almayı sağlayan "Nervus phrenicus" hangi spinal segmentlerden kaynaklanır?
+A) C3, C4, C5
+B) T1, T2
+C) C1, C2
+D) L1, L2
+E) S2, S3, S4
+Cevap: A
+Profesör Açıklaması: N. phrenicus plexus cervicalis'ten çıkar ve diaframayı motor olarak uyarır.
+
+Soru: (Anatomi) Beyin kan akışını sağlayan Willis Poligonu'nda (Circulus arteriosus cerebri) hangisi yer almaz?
+A) A. cerebri anterior
+B) A. cerebri media
+C) A. cerebri posterior
+D) A. communicans posterior
+E) A. carotis interna
+Cevap: B
+Profesör Açıklaması: A. cerebri media poligonun bir parçası değil, ondan sonraki devamı olarak kabul edilir (klinik olarak önemlidir ama geometrik poligonun halkasına dahil edilmez).
+
+Soru: (Anatomi) Safra kesesinin (Vesica biliaris) gövde ile duodenum arasındaki anatomik ilişkisi nasıldır?
+A) Duodenumun 1. parçasının arkasındadır
+B) Duodenumun 2. parçasının önündedir
+C) Mide ile duodenal ampulla arasındadır
+D) Diayıframanın altındadır
+E) Mesane ile komşudur
+Cevap: B
+Profesör Açıklaması: Safra kesesi duodenum'un ikinci parçasının üst/ön komşuluğunu yapar.
+
+Soru: (Anatomi) Omurilikte (Medulla spinalis) ağrı ve ısı duyusunu taşıyan ana yol hangisidir?
+A) Fasciculus gracilis
+B) Fasciculus cuneatus
+C) Tractus spinothalamicus lateralis
+D) Tractus corticospinalis
+E) Tractus vestibulospinalis
+Cevap: C
+Profesör Açıklaması: Vücudun karşı tarafından gelen ağrı-ısı bilgisini talamusa taşıyan yoldur.
+
+Soru: (Anatomi) Omuzda humerus'un tuberculum majus'una tutunan rotator manşet (cuff) kası hangisidir?
+A) M. subscapularis
+B) M. supraspinatus
+C) M. infraspinatus
+D) M. teres minor
+E) B-C-D hepsi tutunur
+Cevap: E
+Profesör Açıklaması: Tuberculum majus'a "SIT" kasları (supraspinatus, infraspinatus, teres minor) tutunur.
+
+Soru: (Anatomi) Pankreasın kanalını (Ductus pancreaticus) oluşturan en geniş bölüm ve Papilla duodeni major'a dökülen kanal hangisidir?
+A) Santorini kanalı
+B) Wirsung kanalı (Ductus pancreaticus major)
+C) Bilung kanalı
+D) Falop kanalı
+E) Stenon kanalı
+Cevap: B
+Profesör Açıklaması: Pankreasın ana salgı kanalı Wirsung kanalıdır.
+
+Soru: (Anatomi) Üretra'nın membrana perinei'yi delip geçtiği en kısa ve en az esnek parçası hangisidir?
+A) Pars prostatica
+B) Pars membranacea
+C) Pars spongiosa
+D) Pars preprostatica
+E) Fossa navicularis
+Cevap: B
+Profesör Açıklaması: Pars membranacea, ürogenital diafragmayı (m. sphincter urethrae externus) geçerken en dar ve en az genişleyebilen bölümdür.
+
+Soru: (Anatomi) Dilin tüm intrinsik ve ekstrinsik kaslarının (M. palatoglossus hariç) siniri hangisidir?
+A) N. vagus
+B) N. trigeminus
+C) N. hypoglossus (XII)
+D) N. glossopharyngeus
+E) N. facialis
+Cevap: C
+Profesör Açıklaması: Dilin motor siniri N. hypoglossus'tur. Sadece M. palatoglossus (damak kası kabul edilir) N. vagus tarafından uyarılır.
+
+Soru: (Anatomi) Kalp kapakçıklarından hangisi "mitral kapak" olarak da bilinir ve sol atrium ile sol ventrikül arasındadır?
+A) Valva tricuspidalis
+B) Valva bicuspidalis
+C) Valva aortae
+D) Valva trunci pulmonalis
+E) Valva semilunaris
+Cevap: B
+Profesör Açıklaması: Sol taraftaki kapak iki kapakçıklıdır (bicuspid / mitral). Sağ taraftaki ise üç kapakçıklıdır (tricuspid).
+
+Soru: (Anatomi) İnce bağırsakların (Jejunum ve Ileum) karın arka duvarına asılı kalmasını sağlayan yelpaze şeklindeki periton yapısına ne denir?
+A) Omentum majus
+B) Omentum minus
+C) Mesenterium
+D) Mesocolon transversum
+E) Ligamentum falciforme
+Cevap: C
+Profesör Açıklaması: Mesenterium propius, yaklaşık 15-20 cm'lik bir kökle (radix mesenteri) bağırsakları karın arka duvarına bağlar.
+
+Soru: (Anatomi) Böbreküstü bezlerinin (Glandula suprarenalis) korteksinden salgılanan "Aldosteron" hangi bölgeden sentezlenir?
+A) Zona glomerulosa
+B) Zona fasciculata
+C) Zona reticularis
+D) Medulla
+E) Hilum
+Cevap: A
+Profesör Açıklaması: Korteks dıştan içe; Glomerulosa (Mineralokortikoid/Aldosteron), Fasciculata (Glukokortikoid/Kortizol) ve Reticularis (Androidler) olarak tabakalanır (GFR kuralı).
+
+Soru: (Anatomi) Karın boşluğundaki en büyük lenfatik kanal olan Ductus thoracicus nereye dökülür?
+A) V. cava superior
+B) V. azygos
+C) Angulus venosus sinister
+D) Atrium dextrum
+E) V. renalis sinistra
+Cevap: C
+Profesör Açıklaması: Ductus thoracicus, sol taraftaki venöz açıya (Pirogoff açısı) dökülerek lenfi kana karıştırır. Sağ üst kısmın lenfi ise Ductus Lymphaticus Dexter'e dökülür.
+
+Soru: (Anatomi) Aşağıdakilerden hangisi "Sinus Cavernosus"un içinden (duvarından değil, ortasından) geçen oluşumlardır?
+A) A. carotis interna ve N. abducens (VI)
+B) N. oculomotorius ve N. trochlearis
+C) N. ophthalmicus ve N. maxillaris
+D) A. meningea media
+E) N. opticum
+Cevap: A
+Profesör Açıklaması: Sinus cavernosus'un içinden A. carotis interna ve N. abducens geçer. Diğer sinirler (3, 4, V1, V2) sinüsün lateral duvarında seyreder.
+
+Soru: (Anatomi) Karaciğerin "H" şeklindeki visceral yüzünde arkada bulunan ve Vena cava inferior'un hemen solunda yer alan lob hangisidir?
+A) Lobus quadratus
+B) Lobus caudatus (Spigel lobu)
+C) Lobus sinister
+D) Lobus dexter
+E) Lobus posterior
+Cevap: B
+Profesör Açıklaması: Lobus caudatus, VCI ile Lig. venosum arasında (arkada) bulunur. Anterior'da (safra kesesi ile Lig. teres arasında) ise Lobus quadratus bulunur.
+
+Soru: (Anatomi) Burun boşluğundaki (Cavitas nasi) meatus nasi medius'a hangi sinüs açılmaz?
+A) Sinus frontalis
+B) Sinus maxillaris
+C) Cellulae ethmoidales anteriores
+D) Sinus sphenoidalis
+E) Cellulae ethmoidales mediae
+Cevap: D
+Profesör Açıklaması: Sinus sphenoidalis, concha nasalis superior'un üzerindeki Recessus sphenoethmoidalis'e açılır.
+
+Soru: (Anatomi) Aşağıdaki oluşumlardan hangisi "Fossa Cubiti" sınırlarını oluşturur?
+A) M. brachioradialis ve M. pronator teres
+B) M. biceps brachii ve M. triceps brachii
+C) M. deltoideus ve M. pectoralis major
+D) M. supinator ve M. anconeus
+E) Ligamentum carpi transversum
+Cevap: A
+Profesör Açıklaması: Dirsek çukuru (Fossa cubiti); medialde M. pronator teres, lateralde M. brachioradialis ve üstte epikondilleri birleştiren hayali bir çizgi ile sınırlanır.
+
+Soru: (Anatomi) Spermlerin depolandığı ve olgunlaştığı (motilite kazandığı) epididymis'in en geniş üst kısmı hangisidir?
+A) Caput epididymidis
+B) Corpus epididymidis
+C) Cauda epididymidis
+D) Ductuli efferentes
+E) Rete testis
+Cevap: A
+Profesör Açıklaması: Epididymis'in başı (caput) en üstte ve en geniş kısmıdır. Kuyruk (cauda) kısmından sonra Ductus deferens başlar.
+
+Soru: (Anatomi) Beyincik (Cerebellum) ile beyin sapı arasındaki bağlantıyı sağlayan Pendunculus cerebellaris medius hangi yapı ile bağlantılıdır?
+A) Mesencephalon
+B) Pons
+C) Bulbus (Medulla oblongata)
+D) Thalamus
+E) Hipotalamus
+Cevap: B
+Profesör Açıklaması: Pendunculus cerebellaris superior (mesencephalon), medius (pons) ve inferior (bulbus) cerebellum bağlantılarını kurar. En kalın olanı Medius'tur.
+
+Soru: (Anatomi) Akciğerlerin damar ve sinir giriş noktası olan "Hilum pulmonis" seviyesi hangi vertebralara karşılık gelir?
+A) C7-T1
+B) T2-T4
+C) T5-T7
+D) T9-T11
+E) L1-L2
+Cevap: C
+Profesör Açıklaması: Akciğer hilusları anatomik olarak 5. ve 7. torakal vertabralar arasındaki hizada yer alır.
+
+Soru: (Anatomi) Omuzda humerus'un tuberculum majus'una tutunan rotator manşet (cuff) kası hangisidir?
+A) M. subscapularis
+B) M. supraspinatus
+C) M. teres major
+D) M. deltoideus
+E) M. trapezius
+Cevap: B
+Profesör Açıklaması: Supraspinatus, Infraspinatus ve Teres minor Tuberculum MAJUS'a tutunur ("SIT" kuralı). Subscapularis ise Tuberculum MINUS'a tutunur.
+
+Soru: (Anatomi) Midenin arteryel beslenmesinde yer alan "Aa. gastricae breves" (Kısa mide arterleri) hangi damarın dalıdır?
+A) A. gastrica sinistra
+B) A. hepatica propria
+C) A. lienalis (splenica)
+D) A. gastroomentalis dextra
+E) Truncus coeliacus
+Cevap: C
+Profesör Açıklaması: Dalak arteri midenin fundus kısmını besleyen 4-5 adet kısa mide arterini (Aa. gastricae breves) verir.
+
+Soru: (Anatomi) Kafa kemiklerinden Os temporale'nin "Pars petrosa" bölümünde bulunan ve m. tensor tympani'yi uyararak yüksek sese karşı kulağı koruyan kasın siniri hangisidir?
+A) N. facialis
+B) N. trigeminus (V3)
+C) N. glossopharyngeus
+D) N. vestibulocochlearis
+E) N. vagus
+Cevap: B
+Profesör Açıklaması: Kulağın iki koruyucu kasından M. tensor tympani N. trigeminus (V3) tarafından, M. stapedius ise N. facialis tarafından uyarılır.
+
+Soru: (Anatomi) "Scapula alata" görünümü hangi kasın felcinde ortaya çıkar?
+A) M. trapezius
+B) M. serratus anterior
+C) M. rhomboideus major
+D) M. levator scapulae
+E) M. latissimus dorsi
+Cevap: B
+Profesör Açıklaması: M. serratus anterior (siniri N. thoracicus longus), scapula'yı göğüs duvarına sabitler. Felcinde scapula arkaya doğru kalkar (kanat scapula).
+
+Soru: (Anatomi) Göz kapağını yukarı kaldıran "M. levator palpebrae superioris" kasının siniri hangisidir?
+A) N. facialis (VII)
+B) N. oculomotorius (III)
+C) N. ophthalmicus (V1)
+D) N. opticus (II)
+E) N. abducens (VI)
+Cevap: B
+Profesör Açıklaması: Göz kapağını açan asıl kas (Levator palpebrae) N. oculomotorius tarafından uyarılır. Gözü kapatan (Orbicularis oculi) ise N. facialis tarafından uyarılır.
+
+Soru: (Anatomi) Karın duvarının en alt kısmında yer alan "Falx inguinalis" hangi iki yapının birleşmesiyle oluşur?
+A) M. obliquus externus ve internus tendonları
+B) M. obliquus internus ve M. transversus abdominis tendonları
+C) M. rectus abdominis ve Pyramidalis
+D) Ligamentum inguinale ve Lacunare
+E) Fascia transversalis ve Periton
+Cevap: B
+Profesör Açıklaması: Falx inguinalis (tendo conjunctivus), internal oblik ve transvers abdominis kaslarının tendonlarının birleşerek os pubis'e tutunmasıyla oluşur.
+
+Soru: (Anatomi) Kalp iletim sisteminde yer alan "Sinüs düğümü" (SA Node) kalbin hangi bölgesinde yer alır?
+A) Sağ ventrikül apeksi
+B) Sol ventrikül septumu
+C) Sağ atrium, vena cava superior girişinin hemen altı
+D) Sol atrium, ostium venae pulmonalis yanı
+E) Atrioventriküler septum merkezi
+Cevap: C
+Profesör Açıklaması: SA düğümü, sağ atriumda sulcus terminalis'in üst ucunda, VCS giriş yerinin hemen lateralinde bulunur.
+
+Soru: (Anatomi) Canalis inguinalis'in ön duvarını esas olarak hangi yapı oluşturur?
+A) Fascia transversalis
+B) M. obliquus externus aponeurozu
+C) M. transversus abdominis
+D) Ligamentum interfoveolare
+E) Peritoneum parietale
+Cevap: B
+Profesör Açıklaması: İnguinal kanalın ön duvarı tüm uzunluğu boyunca eksternal oblik aponeurozu, lateral 1/3'lük kısmında ise ek olarak internal oblik kası tarafından oluşturulur.
+
+Soru: (Anatomi) Plexus lumbosacralis'in "N. ischiadicus" kolu hangi spinal sinirlerden oluşur?
+A) L2-L4
+B) L4-S3
+C) S1-S4
+D) T12-L2
+E) L1-L3
+Cevap: B
+Profesör Açıklaması: Vücudun en kalın siniri olan N. ischiadicus, L4-S3 spinal segmentlerinin ön ve arka dallarının birleşmesiyle oluşur.
+
+Soru: (Anatomi) Midenin "lymph" akımı esas olarak hangi nodlara dökülür?
+A) Nodi lymphatici iliaci
+B) Nodi lymphatici coeliaci
+C) Nodi lymphatici mesenterici superiores
+D) Nodi lymphatici renales
+E) Nodi lymphatici inguinales
+Cevap: B
+Profesör Açıklaması: Mide, truncus coeliacus çevresindeki lenf nodlarına (nodi coeliaci) dökülür.
+
+Soru: (Anatomi) Diz kapağı kemiği (Patella) hangi kasın tendonu içinde bulunan bir sesamoid kemiktir?
+A) M. biceps femoris
+B) M. quadriceps femoris
+C) M. sartorius
+D) M. gracilis
+E) M. gastrocnemius
+Cevap: B
+Profesör Açıklaması: Patella, vücudun en büyük sesamoid kemigidir ve quadriceps tendonu içinde yer alır.
+
+Soru: (Anatomi) Ses tellerini geren (tensing) ve N. laryngeus superior tarafından uyarılan tek gırtlak kası hangisidir?
+A) M. cricoarytenoideus posterior
+B) M. cricothyroideus
+C) M. thyroarytenoideus
+D) M. vocalis
+E) M. arytenoideus obliquus
+Cevap: B
+Profesör Açıklaması: Gırtlak kaslarının çoğu N. laryngeus recurrens tarafından uyarılırken, sadece M. cricothyroideus N. laryngeus superior (external dal) tarafından uyarılır.
+
+Soru: (Anatomi) Akciğerin "sağ üst lobu" ile "orta lobu"nu birbirinden ayıran yarık hangisidir?
+A) Fissura obliqua
+B) Fissura horisontalis
+C) Fissura transversa
+D) Incisura cardiaca
+E) Lingula
+Cevap: B
+Profesör Açıklaması: Sağ akciğerlerde hem horizontal hem oblik fissür vardır. Horizontal fissür üst ve orta lobu ayırır. Sol akciğerde sadece oblik fissür vardır.
+
+Soru: (Anatomi) Beyin ventriküllerini birbirine bağlayan "Foramen interventriculare" (Monro) hangi iki yapı arasındadır?
+A) Ventriculus lateralis - Ventriculus tertius
+B) Ventriculus tertius - Ventriculus quartus
+C) Ventriculus quartus - Cisterna magna
+D) Ventriculus tertius - Subaraknoid aralık
+E) İki lateral ventrikül arası
+Cevap: A
+Profesör Açıklaması: Yan ventriküllerde üretilen BOS, Monro deliği aracılığıyla 3. ventriküle geçer.
+
+Soru: (Anatomi) Omuriliğin (Medulla spinalis) sonlandığı "Conus medullaris" seviyesi erişkinlerde hangi vertebra hizasındadır?
+A) T10
+B) L1-L2
+C) L4-L5
+D) S1-S2
+E) S4
+Cevap: B
+Profesör Açıklaması: Omurilik erişkinlerde L1-L2 vertebra hizasında sonlanır. Bu yüzden lumbal ponksiyon L3-L4 veya L4-L5 aralığından yapılır.
+
+Soru: (Anatomi) Trachea'nın (soluk borusu) iki ana bronşa ayrıldığı çatal noktasına ne ad verilir?
+A) Hilum
+B) Carina
+C) Isthmus
+D) Cupula
+E) Bifurcatio
+Cevap: B
+Profesör Açıklaması: Trachea T4-T5 seviyesinde ikiye ayrılır. Buradaki kıkırdak çıkıntıya Carina tracheae denir.
+
+Soru: (Anatomi) Kalbin sağ ventrikülünden çıkan ve akciğerlere kirli kan taşıyan damar hangisidir?
+A) Aorta
+B) Truncus pulmonalis
+C) V. cava superior
+D) Vv. pulmonales
+E) Sinus coronarius
+Cevap: B
+Profesör Açıklaması: Truncus pulmonalis, sağ ventrikülden çıkarak kirli kanı akciğerlere götüren tek arteriyel yapıdır (oksijence fakir kan taşır).
+
+Soru: (Anatomi) Böbrek taşı düşüren bir hastada ağrının (kolik) vurduğu "Scrotum" veya "Labium majus" bölgesinin duyusunu hangi sinir taşır?
+A) N. femoralis
+B) N. genitofemoralis (R. genitalis)
+C) N. obturatorius
+D) N. iliohypogastricus
+E) N. pudendus
+Cevap: B
+Profesör Açıklaması: N. genitofemoralis'in genital dalı scrotum/labium majus duyusun alır. Böbrek taşı ağrısı bu hat boyunca yansıyabilir.
+
+Soru: (Anatomi) Karaciğerin arkasında yer alan ve peritonla örtülü olmayan "Area nuda" hangi iki ligament arasındadır?
+A) Ligamentum coronarium yaprakları arası
+B) Ligamentum falciforme - Ligamentum teres
+C) Ligamentum venosum - Ligamentum hepatogastricum
+D) Ligamentum triangulare dextra - sinistra
+E) Omentum minus - majus
+Cevap: A
+Profesör Açıklaması: Karaciğerin çıplak alanı (area nuda), koroner ligamentin ön ve arka yaprakları arasında kalan, diaphragma ile doğrudan temas eden bölgedir.
+
+Soru: (Anatomi) Erkeklerde "Ereksiyon" olayından sorumlu olan parasempatik sinirler (Nn. erigentes) hangi spinal seviyeden çıkar?
+A) L1-L2
+B) S2-S4
+C) T12-L1
+D) S4-S5
+E) L4-S1
+Cevap: B
+Profesör Açıklaması: Pelvik splanknik sinirler (S2-S4), alt pelvik organların ve ereksiyonun parasempatik kontrolünü sağlar.
+
+Soru: (Anatomi) İnsanda en büyük sinovial eklem aşağıdakilerden hangisidir?
+A) Art. humeri (Omuz)
+B) Art. coxae (Kalça)
+C) Art. genus (Diz)
+D) Art. cubiti (Dirsek)
+E) Art. temporomandibularis
+Cevap: C
+Profesör Açıklaması: Diz eklemi, vücudun hem en büyük hem de en karmaşık eklemidir.
+
+Soru: (Anatomi) Dilin "genel duyusu"nu (ağrı-ısı) taşıyan N. lingualis hangi büyük sinirin dalıdır?
+A) N. trigeminus (V3)
+B) N. facialis
+C) N. glossopharyngeus
+D) N. vagus
+E) N. hypoglossus
+Cevap: A
+Profesör Açıklaması: Dilin ön 2/3 genel duyusunu V3'ün dalı olan N. lingualis alır. Tat duyusun VII'nin dalı olan Chorda tympani alır.
+
+Soru: (Anatomi) "Internal kapsül"ün (Capsula interna) harabiyetinde vücudun karşı tarafında ne görülür?
+A) Hemiparazi / Hemipleji (Motor kayıp)
+B) Sadece görme kaybı
+C) Sadece işitme kaybı
+D) Konuşma bozukluğu (Afazi)
+E) Denge kaybı
+Cevap: A
+Profesör Açıklaması: Kapsula interna'nın arka bacağından (crus posterius) piramidal yollar geçer. Buradaki kanama/enfarkt karşı vücut yarısında felce neden olur.
+
+Soru: (Anatomi) Mesanenin (Vesica urinaria) boşalmasını sağlayan "M. detrusor" kasının siniri hangisidir?
+A) Sempatik sinirler (L1-L2)
+B) Parasempatik sinirler (S2-S4)
+C) N. pudendus
+D) N. obturatorius
+E) N. femoralis
+Cevap: B
+Profesör Açıklaması: İşeme refleksi parasempatik uyarılma ile detrusor kasının kasılması ve sfinkterin gevşemesiyle olur.
+
+Soru: (Anatomi) El bileğindeki "Enatomi enfiye çukuru" (Fovea radialis) tabanında bulunan kemik hangisidir?
+A) Os pisiforme
+B) Os scaphoideum
+C) Os hamatum
+D) Os capitatum
+E) Os lunatum
+Cevap: B
+Profesör Açıklaması: Enfiye çukurunun tabanında scaphoideum bulunur. El üzerine düşmelerde kırılması en yaygın karpal kemiktir.
+
+Soru: (Anatomi) Karın boşluğunu göğüs boşluğundan ayıran Diaphragma'nın siniri (N. phrenicus) hangi spinal segmentlerden gelir?
+A) C3-C5
+B) C1-C2
+C) T1-T5
+D) C5-C7
+E) T10-T12
+Cevap: A
+Profesör Açıklaması: "C3, 4, 5 keep the diaphragm alive" tekerlemesiyle bilinen bu sinir, boyun pleksusundan kaynaklanır.
+
+Soru: (Anatomi) Beynin "Primer İşitme Merkezi" (Brodmann 41-42) hangi lobdadır?
+A) Lobus frontalis
+B) Lobus temporalis
+C) Lobus parietalis
+D) Lobus occipitalis
+E) İnsula
+Cevap: B
+Profesör Açıklaması: İşitme merkezi temporal lobun üst yüzündeki Heschl giruslarında bulunur.
+
+Soru: (Anatomi) Böbrekleri besleyen A. renalis'ler aortadan hangi seviyede çıkar?
+A) T12
+B) L1-L2
+C) L4
+D) T10
+E) L5
+Cevap: B
+Profesör Açıklaması: Renal arterler genellikle L1-L2 diski veya L2 vertebra seviyesinde aortadan yanlara doğru çıkarlar.
+
+Soru: (Anatomi) Kalın bağırsaklarda görülen küçük yağ torbacıklarına (kesecikleri) ne ad verilir?
+A) Taenia coli
+B) Haustra coli
+C) Appendices epiploicae
+D) Plicae circulares
+E) Villi intestinalis
+Cevap: C
+Profesör Açıklaması: Kalın bağırsakların dış yüzünde seroza ile kaplı yağ dokusu kümelerine appendices epiploicae (omentales) denir.
+
+Soru: (Anatomi) Spermlerin üretildiği Testis dokusunca salgılanan "Testosteron" hangi hücrelerden sentezlenir?
+A) Sertoli hücreleri
+B) Leydig hücreleri (İntersitisyel hücreler)
+C) Spermatogonium
+D) Epididymis hücreleri
+E) Prostat epiteli
+Cevap: B
+Profesör Açıklaması: Leydig hücreleri LH etkisiyle testosteron salgılar. Sertoli hücreleri ise destek ve regülasyondan sorumludur.
+
+Soru: (Anatomi) İnce bağırsak mukozasında bulunan ve emilim yüzeyini artıran parmaksı çıkıntılara ne ad verilir?
+A) Haustra
+B) Villi
+C) Taenia
+D) Crypts
+E) Rugae
+Cevap: B
+Profesör Açıklaması: Villus intestinalisler sadece ince bağırsaklarda bulunur ve yüzey alanını devasa miktarda artırır.
+
+Soru: (Anatomi) Yüzün "Genel Duyusu"nu (dokunma, ağrı) taşıyan ana sinir hangisidir?
+A) N. facialis
+B) N. trigeminus
+C) N. glossopharyngeus
+D) N. accessorius
+E) N. vagus
+Cevap: B
+Profesör Açıklaması: Trigeminal sinir (V) yüzün, kafa ön yarısının ve dişlerin ana duyu siniridir.
+
+Soru: (Anatomi) Beyin sapında (Truncus cerebri) Bulbus (Medulla oblongata) ile Mesencephalon arasında kalan yapı hangisidir?
+A) Thalamus
+B) Pons
+C) Cerebellum
+D) Corpus callosum
+E) Hipotalamus
+Cevap: B
+Profesör Açıklaması: Beyin sapı yukarıdan aşağıya; Mesencephalon, Pons ve Bulbus olarak sıralanır.

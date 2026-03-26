@@ -11,8 +11,8 @@ import 'auth/auth_view_model.dart';
 import 'theme/app_theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'screens/auth/login_screen.dart';
-import 'screens/home_screen.dart';
 import 'screens/onboarding_screen.dart';
+import 'web/adaptive_app_shell.dart';
 import 'screens/web_landing_screen.dart';
 import 'services/ai_service.dart';
 import 'services/auth_service.dart';
@@ -105,7 +105,7 @@ class AuthWrapper extends StatefulWidget {
 
 class _AuthWrapperState extends State<AuthWrapper> {
   bool? _onboardingDone;
-  bool _proceededToWeb = false; // Session-only: her yeni ziyarette false başlar
+  bool _proceededToWeb = false;
   bool _initialized = false;
 
   @override
@@ -122,14 +122,14 @@ class _AuthWrapperState extends State<AuthWrapper> {
       ).timeout(const Duration(seconds: 8));
     } catch (_) {}
 
-    // 2) Onboarding kontrol
+    // 2) Onboarding + landing tercihi kontrol
     try {
       final prefs = await SharedPreferences.getInstance().timeout(const Duration(seconds: 4));
-      _onboardingDone = prefs.getBool('onboarding_done') ?? false;
-      // _proceededToWeb SharedPreferences'e kaydedilmiyor —
-      // her yeni oturumda landing page gösterilsin
+      _onboardingDone  = prefs.getBool('onboarding_done')  ?? false;
+      _proceededToWeb  = prefs.getBool('hasSeenLanding')   ?? false;
     } catch (_) {
       _onboardingDone = false;
+      _proceededToWeb = false;
     }
 
     // 3) İlk frame render edildikten sonra ağır servisleri lazy başlat
@@ -151,8 +151,11 @@ class _AuthWrapperState extends State<AuthWrapper> {
   }
 
   Future<void> _handleWebContinue() async {
-    // Sadece state güncelle — SharedPreferences'e kaydetme
-    // Landing page her yeni ziyarette tekrar gösterilsin
+    // SharedPreferences'e kaydet — bir sonraki ziyarette landing atlanır
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool('hasSeenLanding', true);
+    } catch (_) {}
     if (mounted) setState(() => _proceededToWeb = true);
   }
 
@@ -185,7 +188,8 @@ class _AuthWrapperState extends State<AuthWrapper> {
           if (!(_onboardingDone ?? false)) {
             return OnboardingScreen(onComplete: _completeOnboarding);
           }
-          return const HomeScreen();
+          // AdaptiveAppShell: web'de sidebar+IndexedStack, mobilde HomeScreen
+          return const AdaptiveAppShell();
         }
 
         return const LoginScreen();
@@ -195,41 +199,159 @@ class _AuthWrapperState extends State<AuthWrapper> {
 
   Widget _buildSplashScreen() {
     return Scaffold(
-      backgroundColor: AppTheme.background,
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(24),
-              child: Image.asset(
-                'assets/images/hero_splash.jpg',
-                width: 250,
-                fit: BoxFit.cover,
-                cacheWidth: 750, // 250px × 3x — bellek tasarrufu
+      backgroundColor: const Color(0xFF0D1117),
+      body: Stack(
+        children: [
+          // Ambient orb — sol üst (cyan)
+          Positioned(
+            top: -120, left: -100,
+            child: Container(
+              width: 420, height: 420,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: RadialGradient(
+                  colors: [
+                    AppTheme.cyan.withValues(alpha: 0.13),
+                    Colors.transparent,
+                  ],
+                ),
               ),
-            ).animate().fadeIn(duration: 600.ms).scale(begin: const Offset(0.9, 0.9)),
-            const SizedBox(height: 32),
-            Text(
-              'AsisTus',
-              style: GoogleFonts.outfit(
-                fontSize: 32,
-                fontWeight: FontWeight.w700,
-                color: AppTheme.textPrimary,
-                letterSpacing: -0.5,
+            ),
+          ),
+          // Ambient orb — sağ alt (violet)
+          Positioned(
+            bottom: -140, right: -80,
+            child: Container(
+              width: 480, height: 480,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: RadialGradient(
+                  colors: [
+                    AppTheme.neonPurple.withValues(alpha: 0.10),
+                    Colors.transparent,
+                  ],
+                ),
               ),
-            ).animate().fadeIn(delay: 200.ms),
-            const SizedBox(height: 12),
-            const SizedBox(
-              width: 120,
-              child: LinearProgressIndicator(
-                color: AppTheme.cyan,
-                backgroundColor: AppTheme.surfaceVariant,
-                minHeight: 2,
-              ),
-            ).animate().fadeIn(delay: 400.ms),
-          ],
-        ),
+            ),
+          ),
+          // İçerik
+          Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // Logo mark — gradyan kutu + monogram
+                Hero(
+                  tag: 'asistus-logo',
+                  child: Container(
+                    width: 96, height: 96,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(28),
+                      gradient: const LinearGradient(
+                        colors: [Color(0xFF00E5FF), Color(0xFFA371F7)],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                          color: AppTheme.cyan.withValues(alpha: 0.30),
+                          blurRadius: 36, offset: const Offset(0, 10),
+                        ),
+                        BoxShadow(
+                          color: AppTheme.neonPurple.withValues(alpha: 0.18),
+                          blurRadius: 60, offset: const Offset(0, 18),
+                        ),
+                      ],
+                    ),
+                    child: Center(
+                      child: Text(
+                        'A',
+                        style: GoogleFonts.outfit(
+                          fontSize: 52,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white,
+                          letterSpacing: -2,
+                          height: 1.0,
+                        ),
+                      ),
+                    ),
+                  ),
+                )
+                .animate()
+                .fadeIn(duration: 600.ms)
+                .scale(begin: const Offset(0.6, 0.6), curve: Curves.easeOutBack),
+
+                const SizedBox(height: 28),
+
+                // Wordmark — "Asis" beyaz, "Tus" cyan
+                RichText(
+                  text: TextSpan(
+                    children: [
+                      TextSpan(
+                        text: 'Asis',
+                        style: GoogleFonts.outfit(
+                          fontSize: 40,
+                          fontWeight: FontWeight.w800,
+                          color: AppTheme.textPrimary,
+                          letterSpacing: -1.5,
+                        ),
+                      ),
+                      TextSpan(
+                        text: 'Tus',
+                        style: GoogleFonts.outfit(
+                          fontSize: 40,
+                          fontWeight: FontWeight.w800,
+                          color: AppTheme.cyan,
+                          letterSpacing: -1.5,
+                        ),
+                      ),
+                    ],
+                  ),
+                ).animate().fadeIn(delay: 250.ms, duration: 500.ms).slideY(begin: 0.12),
+
+                const SizedBox(height: 10),
+
+                // Tagline
+                Text(
+                  'AI Destekli TUS Hazırlık',
+                  style: GoogleFonts.inter(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w400,
+                    color: AppTheme.textSecondary,
+                    letterSpacing: 0.4,
+                  ),
+                ).animate().fadeIn(delay: 400.ms, duration: 500.ms),
+
+                const SizedBox(height: 52),
+
+                // Nefes alan üç nokta
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: List.generate(3, (i) {
+                    return Container(
+                      width: 7, height: 7,
+                      margin: const EdgeInsets.symmetric(horizontal: 5),
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: AppTheme.cyan,
+                      ),
+                    )
+                    .animate(onPlay: (c) => c.repeat(reverse: true))
+                    .scaleXY(
+                      begin: 0.4, end: 1.0,
+                      delay: Duration(milliseconds: 500 + i * 180),
+                      duration: 500.ms,
+                      curve: Curves.easeInOut,
+                    )
+                    .fadeIn(
+                      delay: Duration(milliseconds: 500 + i * 180),
+                      duration: 400.ms,
+                    );
+                  }),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

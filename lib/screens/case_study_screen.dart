@@ -162,6 +162,12 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
     );
   }
 
+  static List<ClinicalCase> _byPriority(List<ClinicalCase> cases) {
+    final sorted = List<ClinicalCase>.from(cases)
+      ..sort((a, b) => b.priority.compareTo(a.priority));
+    return sorted;
+  }
+
   Future<void> _applyMode(List<ClinicalCase> source, {bool isIncremental = false}) async {
     List<ClinicalCase> result = [];
     final allMap = await _srService.getAllData();
@@ -169,14 +175,19 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
     if (_mode == CaseStudyMode.learnedOnly) {
       result = source.where((cc) => allMap[cc.id]?.lastQuality == 2).toList();
     } else if (_mode == CaseStudyMode.failedOnly) {
-      result = source.where((cc) => allMap[cc.id]?.lastQuality == 1).toList();
+      result = _byPriority(
+        source.where((cc) => allMap[cc.id]?.lastQuality == 1).toList(),
+      );
     } else if (_mode == CaseStudyMode.pocketOnly) {
       result = source.where((cc) => allMap[cc.id]?.isBookmarked ?? false).toList();
     } else if (_mode == CaseStudyMode.newOnly) {
-      result = source.where((cc) => !allMap.containsKey(cc.id)).toList();
+      // Yeni vakalar: TUS önceliğine göre en önemli konu önce
+      result = _byPriority(
+        source.where((cc) => !allMap.containsKey(cc.id)).toList(),
+      );
     } else if (_mode == CaseStudyMode.dueOnly) {
-      final dueFailed = <ClinicalCase>[];
-      final newCases = <ClinicalCase>[];
+      final dueFailed  = <ClinicalCase>[];
+      final newCases   = <ClinicalCase>[];
       final dueLearned = <ClinicalCase>[];
 
       for (final cc in source) {
@@ -189,10 +200,36 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
           dueLearned.add(cc);
         }
       }
-      result = [...dueFailed, ...newCases, ...dueLearned];
+      result = [
+        ..._byPriority(dueFailed),
+        ..._byPriority(newCases),
+        ..._byPriority(dueLearned),
+      ];
       if (result.isEmpty && !isIncremental) result = List.from(source);
     } else {
-      result = List.from(source);
+      // Tümü: Hybrid sort (yanlış-due → yeni priority desc → doğru-due → geri kalan)
+      final dueFailed  = <ClinicalCase>[];
+      final newCases   = <ClinicalCase>[];
+      final dueLearned = <ClinicalCase>[];
+      final rest       = <ClinicalCase>[];
+      for (final cc in source) {
+        final data = allMap[cc.id];
+        if (data == null) {
+          newCases.add(cc);
+        } else if (data.lastQuality == 1 && data.isDue) {
+          dueFailed.add(cc);
+        } else if (data.lastQuality == 2 && data.isDue) {
+          dueLearned.add(cc);
+        } else {
+          rest.add(cc);
+        }
+      }
+      result = [
+        ..._byPriority(dueFailed),
+        ..._byPriority(newCases),
+        ..._byPriority(dueLearned),
+        ...rest,
+      ];
     }
 
     if (mounted) {
@@ -324,7 +361,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
             : AppTheme.warning.withValues(alpha: 0.85),
         behavior: SnackBarBehavior.floating,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        duration: const Duration(seconds: 2),
+        duration: const Duration(milliseconds: 750),
         margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       ),
     );
@@ -433,7 +470,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
             IconButton(
               onPressed: _toggleBookmark,
               icon: AnimatedSwitcher(
-                duration: const Duration(milliseconds: 250),
+                duration: const Duration(milliseconds: 120),
                 transitionBuilder: (child, animation) => ScaleTransition(
                   scale: animation,
                   child: child,
@@ -674,7 +711,7 @@ class _CaseStudyScreenState extends State<CaseStudyScreen> {
         return GestureDetector(
           onTap: () => _selectAnswer(option),
           child: AnimatedContainer(
-            duration: const Duration(milliseconds: 220),
+            duration: const Duration(milliseconds: 80),
             margin: const EdgeInsets.only(bottom: 10),
             padding: const EdgeInsets.symmetric(
                 horizontal: 18, vertical: 16),

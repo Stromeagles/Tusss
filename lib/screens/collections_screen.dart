@@ -89,7 +89,9 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
         child: Row(
           children: [
             GestureDetector(
-              onTap: () => Navigator.pop(context),
+              onTap: () {
+                if (Navigator.canPop(context)) Navigator.pop(context);
+              },
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(

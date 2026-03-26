@@ -1,0 +1,739 @@
+Soru: (Patoloji) Hücre zedelenmesinde geri dönüşümsüz (irreversibl) hasarın en güvenilir morfolojik göstergesi hangisidir?
+A) Hücre şişmesi (Cellular swelling)
+B) Yağlı değişim (Steatoz)
+C) Mitokondriyal yoğun amorf depozitler ve membran hasarı
+D) Ribozom ayrılması
+E) Endoplazmik retikulum genişlemesi
+Cevap: C
+Profesör Açıklaması: Hücre şişmesi ve yağlanma geri dönüşümlüdür. Ancak ağır mitokondriyal şişme, amorf dansitelerin oluşumu ve plazma membranı ile lizozom membranlarının parçalanması geri dönüşümsüz hasardır.
+
+Soru: (Patoloji) Programlı hücre ölümü olan apoptoziste "intrinsek (mitokondriyal)" yolu başlatan temel faktör hangisidir?
+A) Fas-FasL etkileşimi
+B) TNF-reseptör aktivasyonu
+C) Sitokrom c'nin sitozole sızması
+D) Kaspaz-8 aktivasyonu
+E) Granzim B salınımı
+Cevap: C
+Profesör Açıklaması: İntrinsek yol, mitokondri geçirgenliğinin artması ve Sitokrom c'nin sitoplazmaya çıkmasıyla başlar. Kaspaz-8 ise ekstrinsek (ölüm reseptörü) yola özgüdür.
+
+Soru: (Patoloji) Kronik irritasyon sonucu (örn: sigara) solunum yolu silyalı epitelinin yerini yassı (skuamöz) epitele bırakmasına ne ad verilir?
+A) Atrofi
+B) Hiperplazi
+C) Metaplazi
+D) Displazi
+E) Hipertrofi
+Cevap: C
+Profesör Açıklaması: Bir erişkin hücre tipinin yerini başka bir erişkin hücre tipine bırakmasına metaplazi denir. Genellikle stresli ortama daha dayanıklı yeni bir hücre tipi oluşur.
+
+Soru: (Patoloji) Akut inflamasyonun karakteristik bulgusu olan ve damar dışına çıkan proteince zengin, yüksek dansiteli sıvıya ne denir?
+A) Transüda
+B) Eksüda
+C) Ödem
+D) Efüzyon
+E) Serum
+Cevap: B
+Profesör Açıklaması: Eksüda, inflamasyon nedeniyle damar geçirgenliğinin artması sonucu çıkan, hücresel kalıntı ve proteinden zengin sıvıdır. Transüda ise basınç dengesizliği sonucu çıkan düşük proteinli sıvıdır.
+
+Soru: (Patoloji) Granülomatöz inflamasyonun en karakteristik hücresi hangisidir?
+A) Nötrofil
+B) Epiteloid histiyosit (makrofaj)
+C) Plazma hücresi
+D) Eozinofil
+E) Lenfosit
+Cevap: B
+Profesör Açıklaması: Granülom, aktive histiyositlerin epitelyal hücrelere benzeyerek (epiteloid) birikmesi, çevresinde lenfosit tacı ve dev hücreler ile karakterizedir.
+
+Soru: (Patoloji) Aşağıdakilerden hangisi "distrofik kalsifikasyon" için doğrudur?
+A) Serum kalsiyum düzeyi yüksektir
+B) Sağlıklı dokularda görülür
+C) Zedelenmiş, nekrotik veya ölü dokularda görülür
+D) Paratiroid hormonu yüksekliğine bağlıdır
+E) Hipervitaminoz D sonucu oluşur
+Cevap: C
+Profesör Açıklaması: Distrofik kalsifikasyonda serum kalsiyumu normaldir, ancak kalsiyum nekrotik (örn: tüberküloz kazeifikasyon, aterom plağı) dokularda çöker. Metastatik kalsifikasyonda ise kalsiyum yüksektir.
+
+Soru: (Patoloji) Tümörlerin diferansiyasyon derecesini ve mitoz sayısını belirleyerek yapılan değerlendirmeye ne denir?
+A) Evreleme (Staging)
+B) Derecelendirme (Grading)
+C) Tip tayini
+D) Prognoz
+E) TNM sınıflaması
+Cevap: B
+Profesör Açıklaması: "Grade", tümör hücrelerinin normal hücreye ne kadar benzediğiyle alakalıdır. "Stage" (Evreleme) ise tümörün vücuttaki yaygınlığını gösterir.
+
+Soru: (Patoloji) Epitel kaynaklı kötü huylu (malign) tümörlerin genel adı hangisidir?
+A) Sarkom
+B) Karsinom
+C) Adenom
+D) Lenfoma
+E) Lipom
+Cevap: B
+Profesör Açıklaması: Epitel dokudan köken alan malign tümörlere karsinom, mezanşimal (bağ dokusu) kökenli olanlara sarkom denir.
+
+Soru: (Patoloji) Kalp yetmezliği sonucu akciğer alveollerinde görülen, içinde hemoglobin yıkım ürünü (hemosiderin) bulunan makrofajlara ne ad verilir?
+A) Toz hücreleri
+B) Kalp hatası hücreleri (Heart failure cells)
+C) Kupffer hücreleri
+D) Langerhans hücreleri
+E) Reed-Sternberg hücreleri
+Cevap: B
+Profesör Açıklaması: Sol kalp yetmezliğinde akciğerlerde gelişen konjesyon sonucu alveollere sızan eritrositleri yiyen hemosiderin yüklü makrofajlara "Kalp Hatası Hücreleri" denir.
+
+Soru: (Patoloji) Aşağıdaki şok tiplerinden hangisi tipik olarak "sıcak ve pembe deri" (vazodilatasyon nedeniyle) ile karakterizedir?
+A) Hipovolemik şok
+B) Kardiyojenik şok
+C) Septik şok (Erken evre)
+D) Obstrüktif şok
+E) Nörojenik şok
+Cevap: C
+Profesör Açıklaması: Genelde şokta deri soğuk ve soluktur (vazokonstrüksiyon). Ancak septik şokun ilk evresinde masif vazodilatasyon nedeniyle deri sıcak ve pembedir.
+
+Soru: (Patoloji) Dokularda "kazeifikasyon nekrozu" (peynirleşme) görülmesi öncelikle hangi hastalığı düşündürür?
+A) Akut pankreatit
+B) Miyokard enfarktüsü
+C) Tüberküloz
+D) Beyin enfarktüsü
+E) Kangren
+Cevap: C
+Profesör Açıklaması: Tüberküloz granülomlarının merkezindeki grimsi-beyaz, peynir benzeri nekroz odalarına kazeifikasyon nekrozu denir.
+
+Soru: (Patoloji) "Paraneoplastik sendrom" olarak ACTH salgılayarak Cushing sendromuna yol açan en yaygın akciğer tümörü hangisidir?
+A) Skuamöz hücreli karsinom
+B) Adenokarsinom
+C) Küçük hücreli karsinom
+D) Büyük hücreli karsinom
+E) Bronkoalveoler karsinom
+Cevap: C
+Profesör Açıklaması: Küçük hücreli akciğer karsinomu (Small cell), nöroendokrin kökenli olduğu için en sık paraneoplastik hormon (ACTH, ADH vb.) salgılayan tümördür.
+
+Soru: (Patoloji) Malign melanom tanısında dermoskopik değerlendirmede kullanılan ABCD kriterlerinden "B" harfi neyi temsil eder?
+A) Asymmetry (Asimetri)
+B) Border (Sınır düzensizliği)
+C) Color (Renk değişikliği)
+D) Benign (İyi huylu)
+E) Bleeding (Kanama)
+Cevap: B
+Profesör Açıklaması: ABCD: Asymmetry, Border irregularity, Color variation, Diameter (>6mm). Border, sınırların düzensizliğini ifade eder.
+
+Soru: (Patoloji) Tip 1 aşırı duyarlılık reaksiyonlarının (Anafilaksi, alerji) temelinde hangi immünglobulin ve hücre etkileşimi yatar?
+A) IgG - Nötrofil
+B) IgE - Mast hücresi / Bazofil
+C) IgM - Kompleman
+D) T lenfosit - Makrofaj
+E) IgA - Mukozal hücreler
+Cevap: B
+Profesör Açıklaması: Allerjen IgE'ye bağlanarak mast hücrelerinden histamin salınımına (degranülasyon) neden olur.
+
+Soru: (Patoloji) Aşağıdaki neoplazmlardan hangisi "benign" (iyi huylu) isimli olmasına rağmen her zaman "malign" (kötü huylu) kabul edilir?
+A) Adenom
+B) Papillom
+C) Lenfoma
+D) Lipom
+E) Fibrom
+Cevap: C
+Profesör Açıklaması: Lenfoma, Mezotelyoma, Melanom ve Seminom gibi tümörler son ekleri -oma (genelde benign eki) olsa da her zaman maligndirler.
+
+Soru: (Patoloji) Karaciğerde kronik alkol kullanımına bağlı olarak hepatositlerde görülen eozinofilik sitoplazmik birikimlere (keratin filamentleri) ne denir?
+A) Negri cisimciği
+B) Mallory cisimciği (Mallory-Denk hyaline)
+C) Councilman cisimciği
+D) Russell cisimciği
+E) Lewy cisimciği
+Cevap: B
+Profesör Açıklaması: Mallory cisimcikleri alkolik hepatitte saptanan hasarlanmış ara filaman (sitokeratin) birikimleridir.
+
+Soru: (Patoloji) Meme kanserinde "demir kapısı" veya "bekçi düğümü" olarak bilinen, metastazın ilk ulaşacağı lenf noduna ne ad verilir?
+A) Virchow lenf nodu
+B) Sentinel lenf nodu
+C) Rotter nodu
+D) Sister Mary Joseph nodu
+E) Delphian nodu
+Cevap: B
+Profesör Açıklaması: Sentinel lenf nodu, tümörün lenf yoluyla ilk yayıldığı lenf nodudur ve biyopsisi cerrahi evreleme için hayati önem taşır.
+
+Soru: (Patoloji) Romatoid artrit tanısında kullanılan ve eklem kıkırdağını yıkan granülasyon dokusuna ne ad verilir?
+A) Tofüs
+B) Pannus
+C) Gompozis
+D) Osteofit
+E) Ekzostoz
+Cevap: B
+Profesör Açıklaması: Pannus; sinovial hücreler, inflamatuar hücreler ve fibroblastlardan oluşan, kıkırdağı eriten agresif granülasyon dokusudur.
+
+Soru: (Patoloji) "Fibrinoid nekroz" en çok nerede görülür?
+A) Beyin dokusunda
+B) Pankreas yağ dokusunda
+C) Kan damarı duvarlarında (örn: Vaskülitler)
+D) Kalp kasında
+E) Dalak parenkiminde
+Cevap: C
+Profesör Açıklaması: Fibrinoid nekroz; antijen-antikor komplekslerinin damar duvarına çökmesiyle oluşan, ışık mikroskobunda amorf, parlak pembe görülen nekroz tipidir.
+
+Soru: (Patoloji) Hücre yaşlanmasında (aging) biriken ve "yıpranma pigmenti" olarak bilinen sarı-kahverengi pigment hangisidir?
+A) Melanin
+B) Hemosiderin
+C) Lipofuscin
+D) Bilirubin
+E) Antrakoz
+Cevap: C
+Profesör Açıklaması: Lipofuscin, hücrelerde lipit peroksidasyonu sonucu oluşan ve yaşlılıkla beraber biriken pigmenttir.
+
+Soru: (Patoloji) Kolon kanseri öncüsü olan poliplerden hangisi "malignleşme potansiyeli en yüksek" olandır?
+A) Hiperplastik polip
+B) Tübüler adenom
+C) Villöz adenom
+D) Hamartomatöz polip
+E) Enflamatuar polip
+Cevap: C
+Profesör Açıklaması: Neoplastik poliplerden (adenomlar) özellikle büyük çaplı ve "villöz" yapıda olanlar en yüksek kanserleşme riskine sahiptir.
+
+Soru: (Patoloji) Skuamöz hücreli karsinomun karakteristik ışık mikroskobu bulgusu hangisidir?
+A) Müsin vakuolleri
+B) Keratin incileri (Keratin pearls) ve intersellüler köprüler
+C) Rozet oluşumu
+D) Psammom cisimcikleri
+E) Taşlı yüzük hücreleri
+Cevap: B
+Profesör Açıklaması: Yassı hücreli epitelyal neoplazilerin (SCC) en belirgin özelliği hücrelerin keratin üretmesi ve keratin incileri oluşturmasıdır.
+
+Soru: (Patoloji) Akut miyokard enfarktüsü sonrası ilk 4-12 saatte mikroskobik olarak görülen ilk değişiklik hangisidir?
+A) Nötrofil infiltrasyonu
+B) Koagülasyon nekrozu ve dalgalı (wavy) lifler
+C) Granülasyon dokusu oluşumu
+D) Fibrozis
+E) Makrofaj birikimi
+Cevap: B
+Profesör Açıklaması: MI sonrası ışık mikroskobunda en erken bulgu dalgalı seyreltik lifler ve başlayan koagülasyon nekrozudur. Nötrofiller 12. saatten sonra yoğunlaşır.
+
+Soru: (Patoloji) Midenin Diffüz tip adenokarsinomunda görülen ve çekirdeği kenara iten hücre tipine ne denir?
+A) Reed-Sternberg hücresi
+B) Taşlı yüzük hücresi (Signet ring cell)
+C) Hürthle hücresi
+D) Anizositoz
+E) Koilosit
+Cevap: B
+Profesör Açıklaması: Sitoplazmik müsin vakuolünün çekirdeği hücre periferine itmesiyle oluşan bu hücreler diffüz mide kanseri için karakteristiktir.
+
+Soru: (Patoloji) "Onkojenik virüsler" içerisinde Serviks (rahim ağzı) kanseri ile doğrudan ilişkili olan hangisidir?
+A) EBV
+B) HBV
+C) HPV (Tip 16, 18)
+D) HIV
+E) HTLV-1
+Cevap: C
+Profesör Açıklaması: Human Papilloma Virüs (HPV), özellikle yüksek riskli tipleri (16-18) servikal skuamöz hücreli karsinomun temel nedenidir.
+
+Soru: (Patoloji) Bir karsinomun "in-situ" (yerinde) kabul edilmesi için hangi yapıyı aşmamış olması gerekir?
+A) Mukoza
+B) Kas tabakası
+C) Bazal membran
+D) Seraza
+E) Lenf damarı
+Cevap: C
+Profesör Açıklaması: Tümör hücreleri epitelyal tabaka içinde sınırlı kalıp bazal membranı delmedikçe "carcinoma in situ" olarak adlandırılır ve metastaz yapamaz.
+
+Soru: (Patoloji) Hodgkin lenfomanın karakteristik "baykuş gözü" görünümündeki hücresi hangisidir?
+A) Langerhans hücresi
+B) Reed-Sternberg hücresi
+C) Müller hücresi
+D) Aschoff cisimciği
+E) Anitschkow hücresi
+Cevap: B
+Profesör Açıklaması: Reed-Sternberg (RS) hücreleri, geniş sitoplazmalı ve çift çekirdekli (ayna görüntüsü) yapılardır. Hodgkin lenfoma tanısı için patognomoniktirler.
+
+Soru: (Patoloji) Akut romatizmal ateşin kalpte oluşturduğu karakteristik granülomatöz lezyonlara ne ad verilir?
+A) Libman-Sacks vejetasyonu
+B) Aschoff cisimciği
+C) Russell cisimciği
+D) Mallory cisimciği
+E) Councilman cisimciği
+Cevap: B
+Profesör Açıklaması: Aschoff cisimcikleri; merkezde fibrinoid nekroz, çevresinde lenfositler ve "tırtıl hücreleri" (Anitschkow) ile karakterize miyokardiyal lezyonlardır.
+
+Soru: (Patoloji) Aşağıdakilerden hangisi "hipertrofi"nin tanımıdır?
+A) Hücre sayısının artması
+B) Hücre boyutunun artması
+C) Hücre tipinin değişmesi
+D) Hücrenin küçülmesi
+E) Organın yokluğu
+Cevap: B
+Profesör Açıklaması: Hipertrofi, sentezlenen yapısal proteinlerin miktarının artması sonucu hücre hacminin büyümesidir. Hücre bölünmesinin olmadığı dokularda (örn: kalp kası) baskındır.
+
+Soru: (Patoloji) Meme kanserinde en sık görülen histolojik tip hangisidir?
+A) İnvaziv lobüler karsinom
+B) İnvaziv duktal karsinom (NST)
+C) Medüller karsinom
+D) Müsinöz karsinom
+E) Tübüler karsinom
+Cevap: B
+Profesör Açıklaması: İnvaziv duktal karsinom, tüm meme kanserlerinin yaklaşık %75-80'ini oluşturan en yaygın tiptir.
+
+Soru: (Patoloji) Alzheimer hastalığında beyinde biriken hücre dışı protein birikimlerine ne denir?
+A) Nörofibriler yumaklar
+B) Senil (Amiloid) plaklar
+C) Pick cisimcikleri
+D) Hirano cisimcikleri
+E) Lewy cisimcikleri
+Cevap: B
+Profesör Açıklaması: Alzheimer'da hücre dışında Amiloid-beta plakları, hücre içinde ise hiperfosforile Tau proteininden oluşan nörofibriler yumaklar görülür.
+
+Soru: (Patoloji) Aşağıdaki amiloid tiplerinden hangisi "Multiple Miyelom" ile ilişkilidir?
+A) AA amiloid
+B) AL amiloid
+C) ATTR amiloid
+D) Abeta amiloid
+E) A-Cal amiloid
+Cevap: B
+Profesör Açıklaması: AL (Amyloid Light chain), plazma hücre diskrazilerinde (Multiple Miyelom gibi) immünglobulin hafif zincirlerinin çökmesiyle oluşur.
+
+Soru: (Patoloji) Crohn hastalığının ülseratif kolitten ayrılmasındaki en önemli patolojik bulgu hangisidir?
+A) Sadece mukoza tutulumu
+B) Non-kazeifiye granülomlar ve transmural tutulum
+C) Sürekli (kontinü) tutulum
+D) Yalancı polipler (psödopolip)
+E) Kript abseleri (her ikisinde de olabilir, ama UK'da daha baskındır)
+Cevap: B
+Profesör Açıklaması: Crohn hastalığı "skip lezyonlar" ile karakterizedir, tüm duvar katmanlarını tutar (transmural) ve vakaların %40-60'ında granülom görülür.
+
+Soru: (Patoloji) Karaciğer sirozunun en yaygın mikroskobik özelliği hangisidir?
+A) Steatoz (yağlanma)
+B) Fibröz septalarla çevrili rejenerasyon nodülleri
+C) Safra stazı
+D) Glisson kapsülü kalınlaşması
+E) Santral ven dilatasyonu
+Cevap: B
+Profesör Açıklaması: Sirozda normal lobüler yapı bozulur, yerini fibrozis ve hepatositlerin oluşturduğu rejenerasyon nodülleri alır.
+
+Soru: (Patoloji) Akut pankreatitte görülen nekroz tipi hangisidir?
+A) Koagülasyon nekrozu
+B) Likuefaksiyon nekrozu
+C) Yağ nekrozu (Fat necrosis)
+D) Fibrinoid nekroz
+E) Kazeifikasyon nekrozu
+Cevap: C
+Profesör Açıklaması: Pankreatik enzimlerin (lipaz) salınımıyla çevre yağ dokusu sindirilir ve kalsiyum sabunlaşması (saponifikasyon) ile yağ nekrozu oluşur.
+
+Soru: (Patoloji) "Berrak hücreli (Clear cell) karsinom" en sık hangi organda görülür?
+A) Akciğer
+B) Böbrek (RCC)
+C) Karaciğer
+D) Kolon
+E) Tiroid
+Cevap: B
+Profesör Açıklaması: Renal Hücreli Karsinom'un (RCC) en sık görülen tipi berrak hücreli tiptir (Glikojen ve lipid birikimi nedeniyle sitoplazma boş/berrak görünür).
+
+Soru: (Patoloji) Aşağıdakilerden hangisi "otoimmün" bir hastalıktır ve göz/ağız kuruluğu (sicca kompleksi) ile karakterizedir?
+A) Sistemik Lupus Eritematozus
+B) Romatoid Artrit
+C) Sjögren Sendromu
+D) Skleroderma
+E) Dermatomiyozit
+Cevap: C
+Profesör Açıklaması: Sjögren sendromu, eksokrin bezlerin (gözyaşı, tükürük) lenfositik infiltrasyonu ve yıkımıyla giden bir hastalıktır.
+
+Soru: (Patoloji) Tiroid kanserleri içerisinde "Psammom cisimcikleri" ve "buzlu cam (Orphan Annie)" çekirdekleri ile tanınan en yaygın tür hangisidir?
+A) Foliküler karsinom
+B) Papiller karsinom
+C) Medüller karsinom
+D) Anaplastik karsinom
+E) Tiroid Lenfoması
+Cevap: B
+Profesör Açıklaması: Papiller karsinom, tiroidin en sık ve prognozu en iyi tümörüdür. Karakteristik nükleer bulguları ve kalsifiye psammom cisimcikleri ile tanı konur.
+
+Soru: (Patoloji) Kemik iliğinde plazma hücrelerinin kontrolsüz çoğalması ve idrarda "Bence-Jones" proteinlerinin görülmesi hangi hastalığa özgüdür?
+A) Akut lösemi
+B) Hodgkin dışı lenfoma
+C) Multiple Miyelom
+D) Aplastik anemi
+E) Miyelodisplastik sendrom
+Cevap: C
+Profesör Açıklaması: Multiple Miyelom, monoklonal immünglobulin (M proteini) üretimiyle giden, litik kemik lezyonları yapan bir plazma hücre neoplazisidir.
+
+Soru: (Patoloji) "Asbestozis" maruziyeti sonrası akciğer zarında gelişen en tehlikeli tümör hangisidir?
+A) Skuamöz hücreli karsinom
+B) Malign Mezotelyoma
+C) Adenokarsinom
+D) Hamartom
+E) Karsinoid tümör
+Cevap: B
+Profesör Açıklaması: Asbest lifleri plevrayı irrite ederek yıllar sonra mezotelyal hücrelerden köken alan malign mezotelyomaya yol açabilir.
+
+Soru: (Patoloji) Aşağıdakilerden hangisi bir "ön kanser" (prekanseröz) lezyon değildir?
+A) Lökoplaki
+B) Barrett özofagusu
+C) Güneş aktinik keratozu
+D) Gastrik hiperplastik polip (genelde kanserleşmez)
+E) Ülseratif kolit
+Cevap: D
+Profesör Açıklaması: Hiperplastik polipler genellikle non-neoplastiktir. Diğerleri ise yüksek karsinom riskine sahiptir (örn: Barrett -> Adenokarsinom).
+
+Soru: (Patoloji) Deride "Güneş yanığı" sonrası oluşan DNA hasarını (pirimidin dimerleri) tamir edemeyen hastalarda hangi hastalık görülür?
+A) Albinizm
+B) Kseroderma pigmentozum
+C) Vitiligo
+D) Melenoma
+E) İktiyozis
+Cevap: B
+Profesör Açıklaması: Xeroderma Pigmentosum, nükleotid kesip çıkarma tamir mekanizması (NER) bozukluğu sonucu gelişir. En küçük güneş ışığında bile deri kanserleri oluşur.
+
+Soru: (Patoloji) Kolon kanserinde tümörün submukozayı aşıp muskularis propriaya ulaştığı, ancak lenf nodu tutulumu olmadığı durum TNM sınıflamasında neyi ifade eder?
+A) T1 N0
+B) T2 N0
+C) T3 N0
+D) T2 N1
+E) T4 N0
+Cevap: B
+Profesör Açıklaması: T1 submukozayı tutar, T2 muskularis propriayı tutar. N0 lenf nodu negatifliğini gösterir.
+
+Soru: (Patoloji) Aşağıdaki damar sertliği tiplerinden hangisi "monckeberg medial sklerozu" olarak bilinir?
+A) Ateroskleroz
+B) Arteriyoloskleroz
+C) Medial kalsifik skleroz (Damar lümeni daralmaz)
+D) Hiperplastik skleroz
+E) Nekrotizan vaskülit
+Cevap: C
+Profesör Açıklaması: Monckeberg sklerozunda orta boy arterlerin medial tabakası kalsifiye olur. Lümen daralmadığı için klinik olarak semptom vermez (fil dişi arterler).
+
+Soru: (Patoloji) Karaciğerde "buzlu cam" (ground glass) hepatositlerin görülmesi hangi enfeksiyonu düşündürür?
+A) Hepatit A
+B) Kronik Hepatit B (HBsAg birikimi)
+C) Hepatit C
+D) Hepatit E
+E) CMV hepatiti
+Cevap: B
+Profesör Açıklaması: Kronik HBV taşıyıcılarında hepatosit sitoplazmasında aşırı HBsAg üretimi sonucu buzlu cam görüntüsü oluşur.
+
+Soru: (Patoloji) Prostat biyopsisinde "Gleason skorlaması" neye göre yapılır?
+A) Hücresel atipiye göre
+B) Glandüler (bez) diferansiyasyon ve büyüme paternine göre
+C) Damar invazyonuna göre
+D) Metastaz varlığına göre
+E) PSA düzeyine göre
+Cevap: B
+Profesör Açıklaması: Gleason skoru, prostat kanserinin mimari yapısına (bezlerin bozulma derecesine) göre 1-5 arası puan vererek hesaplanır (En sık iki paternin toplamı).
+
+Soru: (Patoloji) Böbrekte "Tel ağrısı" (Wire-loop) kapiller lezyonlar hangi hastalık için karakteristiktir?
+A) Diyabetik nefropati
+B) Lupus nefriti (Sınıf IV)
+C) Minimal değişiklik hastalığı
+D) Amiloidoz
+E) Goodpasture sendromu
+Cevap: B
+Profesör Açıklaması: SLE'de subendotelyal immün kompleks birikimleri glomerül kapiller duvarını kalınlaştırarak tel halkası (wire-loop) görüntüsü verir.
+
+Soru: (Patoloji) Beyin dokusunda "likuefaksiyon" (sıvılaşma) nekrozunun görülme nedeni nedir?
+A) Protein denatürasyonu
+B) Yüksek hidrolitik enzim içeriği ve az bağ dokusu
+C) Yağ asidi birikimi
+D) Kalsifikasyon
+E) İskemi (Vücudun diğer yerlerinde koagülasyon yapar)
+Cevap: B
+Profesör Açıklaması: Beyin iskemiye uğradığında, protein denatürasyonu yerine lizozomal enzimlerle hızlı sindirim gerçekleşir ve nekrotik alan sıvılaşır.
+
+Soru: (Patoloji) "Desmoplazi" terimi neyi ifade eder?
+A) Hücrelerin hızla bölünmesini
+B) Tümör hücrelerinin çevresinde yoğun konnektif (bağ) doku oluşumunu
+C) Tümörün kanlanmasının artmasını
+D) Hücrelerin göç etmesini
+E) Apoptozis artışını
+Cevap: B
+Profesör Açıklaması: Bazı karsinomlar (özellikle meme karsinomu) çevredeki stroma ile reaksiyona girerek sert, fibröz bir doku oluşumunu tetikler. Bu "taş gibi sert" tümör hissini veren durum desmoplazidir.
+
+Soru: (Patoloji) Aşağıdaki durumlardan hangisi "metastaz" yapamayan ancak lokal invaziv olan malign bir tümördür?
+A) Malign Melanom
+B) Bazal Hücreli Karsinom (BCC)
+C) Yassı Hücreli Karsinom (SCC)
+D) Adenokarsinom
+E) Osteosarkom
+Cevap: B
+Profesör Açıklaması: Bazal Hücreli Karsinom, derinin en sık görülen kanseridir. Lokal olarak dokuları yıksa da (ulcus rodens), uzak organlara metastaz yapması son derece nadirdir.
+
+Soru: (Patoloji) Bir organda hücre sayısının artması sonucu hacmin büyümesine ne denir?
+A) Hipertrofi
+B) Hiperplazi
+C) Metaplazi
+D) Atrofi
+E) Displazi
+Cevap: B
+Profesör Açıklaması: Sayıca artış hiperplazidir. Boyutça artış ise hipertrofidir.
+
+Soru: (Patoloji) Vücutta "enflamasyonun" 5 temel bulgusundan (cardinal signs) biri olan "ısı artışı"na (calor) ne sebep olur?
+A) Kapiller geçirgenlik artışı
+B) Vazodilatasyon ve kan akımının artması
+C) Nöronal fonksiyon kaybı
+D) Ödem sıvısı basısı
+E) Kemotaksi
+Cevap: B
+Profesör Açıklaması: Vazodilatasyon sonucu bölgeye gelen kan miktarının artması (hiperemi), bölgenin ısınmasına (calor) ve kızarmasına (rubor) neden olur.
+
+Soru: (Patoloji) Granülomatöz inflamasyonda görülen dev hücreler (örn: Langhans dev hücresi) hangi hücrelerin birleşmesiyle oluşur?
+A) Nötrofiller
+B) Lenfositler
+C) Aktive Makrofajlar (Epiteloid hücreler)
+D) Plazma hücreleri
+E) Fibroblastlar
+Cevap: C
+Profesör Açıklaması: Makrofajlar fagositoz yapamadıkları dirençli ajanlara karşı birleşerek çok çekirdekli dev hücreleri oluştururlar.
+
+Soru: (Patoloji) Tümörlerin vücuttaki yaygınlığını (TNM) belirleyerek yapılan değerlendirmeye ne ad verilir?
+A) Derecelendirme (Grading)
+B) Evreleme (Staging)
+C) Morfoloji
+D) Diferansiyasyon
+E) Atipi
+Cevap: B
+Profesör Açıklaması: Staging (Evreleme), tümörün boyutunu (T), lenf nodu tutulumunu (N) ve metastazı (M) değerlendirerek hastalığın yaygınlığını saptar. Tedavi planı için en kritik veridir.
+
+Soru: (Patoloji) Aşağıdaki şıklardan hangisi "apoptotik" hücre ölümü için doğrudur?
+A) Hücre şişer ve patlar
+B) Çevrede yoğun inflamasyon oluşur
+C) Hücre büzülür ve apoptotik cisimciklere bölünür
+D) DNA rastgele parçalanır
+E) Daima patolojiktir
+Cevap: C
+Profesör Açıklaması: Apoptoziste hücre büzülür, kromatini yoğunlaşır ve membran bütünlüğü bozulmadan küçük torbalara (cisimcikler) bölünür. Bu yüzden inflamasyon yapmaz.
+
+Soru: (Patoloji) Midenin "taşlı yüzük hücreli" (Signet ring cell) karsinomu hangi tip mide kanserine girer?
+A) İntestinal tip
+B) Diffüz tip
+C) Medüller tip
+D) Papiller tip
+E) Kolloid tip
+Cevap: B
+Profesör Açıklaması: Diffüz tip (Lauren sınıflaması) mide kanseri, kohezyon kaybı olan ve taşlı yüzük hücreleri içeren, infiltratif ve daha agresif bir tiptir.
+
+Soru: (Patoloji) Primer kolanjiyoselüler karsinom (safra yolu kanseri) için en önemli risk faktörü hangisidir?
+A) Alkol
+B) Hepatit B
+C) Safra yolu taşları ve parazitleri (Clonorchis sinensis)
+D) Sigara
+E) Şeker hastalığı
+Cevap: C
+Profesör Açıklaması: Kronik safra yolu irritasyonu, taşlar ve özellikle bazı karaciğer kelebekleri (parazitler) kolanjiyokarsinom riskini belirgin artırır.
+
+Soru: (Patoloji) Tiroidin "Medüller Karsinomu" hangi hücrelerden köken alır?
+A) Foliküler hücreler
+B) Hurthle hücreleri
+C) C-hücreleri (Parafoliküler hücreler)
+D) Lenfositler
+E) Fibroblastlar
+Cevap: C
+Profesör Açıklaması: Medüller karsinom C-hücrelerinden köken alır ve kalsitonin salgılar. Amiloid birikimi ile karakterizedir.
+
+Soru: (Patoloji) Malign tümörlerin "anaplazi" göstermesi ne demektir?
+A) Çok hızlı bölünmesi
+B) Kan damarı üretmesi
+C) Diferansiyasyon kaybı (normal hücreye benzememesi)
+D) Metastaz yapması
+E) Sitokin salgılaması
+Cevap: C
+Profesör Açıklaması: Anaplazi, hücrelerin orijin aldığı dokuya hiçbir benzerlik göstermemesi halidir ve yüksek malignite belirtisidir.
+
+Soru: (Patoloji) Osteosarkomda radyolojik olarak görülen, periostun tümör tarafından kaldırılmasıyla oluşan üçgen görüntüye ne ad verilir?
+A) Codman üçgeni
+B) Güneş patlaması görüntüsü
+C) Soğan zarı görüntüsü
+D) Sabun köpüğü görüntüsü
+E) Zımba deliği manzarası
+Cevap: A
+Profesör Açıklaması: Codman üçgeni ve güneş ışınları (sunburst) manzarası osteosarkomun periost reaksiyonlarıdır.
+
+Soru: (Patoloji) Karaciğerde demir birikimi sonucu oluşan, bronz deri ve diyabet ile karakterize sistemik hastalık hangisidir?
+A) Wilson hastalığı (Bakır birikimi)
+B) Hemokromatozis (Demir birikimi)
+C) Gaucher hastalığı
+D) Glikojen depo hastalığı
+E) Alfa-1 antitiripsin eksikliği
+Cevap: B
+Profesör Açıklaması: Hemokromatozisde aşırı demir emilimi sonucu organlarda (karaciğer, pankreas, kalp) hemosiderin birikir ve hasar verir.
+
+Soru: (Patoloji) Aşağıdakilerden hangisi bir "proto-onkojen" iken mutasyona uğrayarak onkojene dönüşen ve meme kanserinde hedeflenen bir gendir?
+A) p53
+B) Rb
+C) HER2/neu (ERBB2)
+D) BRCA1
+E) APC
+Cevap: C
+Profesör Açıklaması: HER2/neu bir büyüme faktörü reseptörüdür. Over-ekspresyonu meme kanserinde kötü prognozla seyreder ancak Trastuzumab tedavisine yanıt verir. Diğer şıklar tümör baskılayıcı genlerdir.
+
+Soru: (Patoloji) "Paraneoplastik" olarak PTH-benzeri protein salgılayarak hiperkalsemiye neden olan akciğer kanseri tipi hangisidir?
+A) Küçük hücreli karsinom
+B) Skuamöz hücreli karsinom
+C) Adenokarsinom
+D) Büyük hücreli karsinom
+E) Karsinoid tümör
+Cevap: B
+Profesör Açıklaması: Skuamöz hücreli karsinom (Yassı hücreli) sıklıkla PTHrP üreterek kalsiyum yüksekliğine yol açar. Küçük hücreli ise ACTH ve ADH ile bilinir.
+
+Soru: (Patoloji) Wilms tümörü (Nefroblastom) en çok hangi yaş grubunda görülür?
+A) Yenidoğan (ilk ay)
+B) Çocukluk çağı (2-5 yaş)
+C) Adölesan
+D) Orta yaş
+E) Yaşlılık
+Cevap: B
+Profesör Açıklaması: Wilms tümörü, çocukluk çağının en sık görülen birincil böbrek tümörüdür.
+
+Soru: (Patoloji) Karbon parçacıklarının solunması sonucu akciğerde ve lenf nodlarında siyah pigment birikmesine ne denir?
+A) Hemosiderozis
+B) Antrakozis
+C) Lipofuscin
+D) Melanozis
+E) Steatozis
+Cevap: B
+Profesör Açıklaması: Şehir hayatında ve sigara içenlerde yaygın olan karbon pigmenti birikimine antrakozis denir. Patolojik bir zarar vermeyebilir.
+
+Soru: (Patoloji) Kalp yetmezliğine bağlı karaciğerde görülen, koyu kırmızı merkez ve soluk perifer ile karakterize makroskobik görüntüye ne denir?
+A) Yağlı karaciğer
+B) Muskat karaciğer (Nutmeg liver)
+C) Siroz
+D) Sago dalağı
+E) Porzellan karaciğer
+Cevap: B
+Profesör Açıklaması: Kronik pasif konjesyon sonucu santral venler çevresinde kan birikimi ve nekroz, muskat cevizine benzer bir görüntü oluşturur.
+
+Soru: (Patoloji) Aşağıdakilerden hangisi bir "onkositik" tümördür ve böbrekte görülür?
+A) RCC berrak hücreli
+B) Onkositom (Bol mitokondrili eozinofilik hücreler)
+C) Anjiyomiyolipom
+D) Ürotelyal karsinom
+E) Wilms tümörü
+Cevap: B
+Profesör Açıklaması: Onkositomlar bol eozinofilik sitoplazmaya sahip, genellikle selim seyreden böbrek tümörleridir.
+
+Soru: (Patoloji) HPV enfeksiyonunda yassı epitel hücrelerinde görülen, çekirdeğin çevresinde berrak bir halo ve buruşuk çekirdek bulunan hücreye ne denir?
+A) Koilosit
+B) Hürthle hücresi
+C) Reed-Sternberg hücresi
+D) Gitter hücresi
+E) Mikulicz hücresi
+Cevap: A
+Profesör Açıklaması: Koilositoz, HPV'nin neden olduğu skuamöz hücrelerdeki viral sitopatik etkinin en karakteristik bulgusudur.
+
+Soru: (Patoloji) Kemikte "multipl punktat litik lezyonlar" yapan, plazma hücresi neoplazisi hangisidir?
+A) Osteosarkom
+B) Ewing sarkomu
+C) Multiple Miyelom
+D) Kondrosarkom
+E) Dev hücreli kemik tümörü
+Cevap: C
+Profesör Açıklaması: Plazma hücreleri kemik iliğinde aşırı çoğalarak kemiği eriten "zımba deliği" (punched-out) benzeri litik lezyonlar oluşturur.
+
+Soru: (Patoloji) Tümör hücresinin metastaz yapabilmesi için bazal membranı eritmekte kullandığı en önemli enzim grubu hangisidir?
+A) Lipazlar
+B) Amilazlar
+C) Matriks Metalloproteinazlar (MMP) ve Kollajenazlar
+D) Bakteriyosoller
+E) Kinazlar
+Cevap: C
+Profesör Açıklaması: MMP'ler (özellikle Tip IV kollajenaz), bağ dokusunu parçalayarak tümörün çevreye yayılmasına ve metastaza izin verir.
+
+Soru: (Patoloji) Akut enflamasyonda lökositlerin damar duvarına yaklaşması ve yuvarlanması (rolling) olayını başlatan molekül hangisidir?
+A) İntegrinler
+B) Selektinler (E, P selektin)
+C) ICAM-1
+D) PECAM-1
+E) Kompleman C5a
+Cevap: B
+Profesör Açıklaması: Rolling basamağı selektinler aracılığıyla olur. Sıkı yapışma (adhesion) ise integrinler aracılığıyla gerçekleşir.
+
+Soru: (Patoloji) Kolon kanseri gelişimini engelleyen, "bekçi gen" olarak bilinen ve mutasyonu ailevi adenomatöz polipozise (FAP) yol açan gen hangisidir?
+A) p53
+B) APC
+C) KRAS
+D) DCC
+E) SMAD4
+Cevap: B
+Profesör Açıklaması: APC geni mutasyonu, Wnt sinyal yolunu bozarak binlerce polip oluşumuna (FAP) neden olur.
+
+Soru: (Patoloji) Akut miyokard enfarktüsü sonrası kanda yükselen ve tanı koydurucu olan en spesifik enzim hangisidir?
+A) LDH
+B) AST
+C) Troponin I ve T
+D) Karbonik anhidraz
+E) Amilaz
+Cevap: C
+Profesör Açıklaması: Troponinler, kalp kası hasarına en duyarlı ve özgül belirteçlerdir. Hasardan kısa süre sonra yükselirler.
+
+Soru: (Patoloji) Karaciğer yağlanması (Steatoz) en çok hangi mekanizma ile oluşur?
+A) Hücre bölünmesi
+B) Trigliseridlerin sitoplazmada aşırı birikimi
+C) Glikojen depolarının boşalması
+D) Lizozomların parçalanması
+E) Su girişi
+Cevap: B
+Profesör Açıklaması: Alkol, obezite veya diyabet gibi durumlarda serbest yağ asitlerinin karaciğere girişi veya trigliserid sentezi artarak hücre içinde birikir.
+
+Soru: (Patoloji) Bir tümörün "malign" (kötü huylu) olduğunu gösteren en kesin kriter hangisidir?
+A) Hızlı büyüme
+B) Metastaz (uzak dokulara yayılım)
+C) Nekroz varlığı
+D) Çok sayıda mitoz
+E) Kapsüllü olması
+Cevap: B
+Profesör Açıklaması: Hızlı büyüme ve mitoz maligniteyi düşündürür ancak "Metastaz" bir tümörün %100 malign olduğunu kanıtlayan tek bulgudur.
+
+Soru: (Patoloji) Tip 4 aşırı duyarlılık reaksiyonu (Gecikmiş tip) hücresel olarak neye dayanır?
+A) Antikor-antijen kompleksi
+B) IgE bağlanması
+C) T-lenfositlerin (CD4+ ve CD8+) aktivasyonu
+D) Nötrofil masif saldırısı
+E) Eritrosit yıkımı
+Cevap: C
+Profesör Açıklaması: Tip 4 duyarlılıkta antikor yoktur; T hücresi aracılı bir immün yanıt ve makrofaj aktivasyonu söz konusudur.
+
+Soru: (Patoloji) Hodgkin lenfomanın "prognozu en iyi" olan tipi hangisidir?
+A) Nodüler sklerozan
+B) Karma hücreli
+C) Lenfositten zengin
+D) Lenfositten fakir (En kötü prognoz)
+E) Granülomatöz tip
+Cevap: C
+Profesör Açıklaması: Lenfosit miktarı ne kadar çoksa vücudun tümörle savaşı o kadar iyidir. Bu nedenle lenfositten zengin tip en iyi sağkalıma sahiptir.
+
+Soru: (Patoloji) "Sarkomlar" (Mezanşimal tümörler) genellikle vücutta hangi yolla yayılırlar (metastaz)?
+A) Lenfatik yol
+B) Hematopen (kan) yolu
+C) Direkt yayılım
+D) Implantasyon (ekilme)
+E) Sinir kılıfları boyunca
+Cevap: B
+Profesör Açıklaması: Karsinomlar genellikle lenfatikler yoluyla ilk metastazlarını yaparken, sarkomlar (kemik, kas, yağ tümörleri) kan yoluyla yayılma eğilimindedirler.
+
+Soru: (Patoloji) Aşağıdakilerden hangisi bir "yavaş virüs" enfeksiyonuna örnektir ve beyinde yaygın spongioform (süngerimsi) dejenerasyon yapar?
+A) Kuduz
+B) Polio
+C) Creutzfeldt-Jakob Hastalığı (Prion)
+D) HIV
+E) Herpes
+Cevap: C
+Profesör Açıklaması: CJK bir prion hastalığıdır. Beyin dokusunda vakuoller oluşturarak sünger benzeri bir görüntüye ve hızlı demansa yol açar.
+
+Soru: (Patoloji) Tiroidin "Papiller Karsinomu"nda görülen çekirdek içi berrak boşluklara ne denir?
+A) Orphan Annie gözü çekirdekleri
+B) Mallory cisimciği
+C) Psammom cisimciği (Sadece bunlar taşsı yapılardır)
+D) Call-Exner cisimciği
+E) Schiller-Duval cisimciği
+Cevap: A
+Profesör Açıklaması: Orphan Annie çekirdekleri, papiller tiroid kanserinin en tipik morfolojik özelliğidir (kromatinin nükleer membran altına itilmesiyle oluşur).
+
+Soru: (Patoloji) Akut enflamasyonda ödem oluşumunun temel sebebi nedir?
+A) Kan basıncının düşmesi
+B) Damar geçirgenliğinin (permeabilite) artması ve protein sızıntısı
+C) Lenf akımının hızlanması
+D) Kanın pıhtılaşması
+E) Hücrelerin bölünmesi
+Cevap: B
+Profesör Açıklaması: Histamin gibi mediyatörler kapiller geçirgenliği artırarak damar içindeki zengin sıvının doku arasına çıkmasına (ödem) neden olur.
+
+Soru: (Patoloji) Çocuklarda karın içinde en sık görülen, böbrek üstü bezi veya sempatik zincir kaynaklı malign tümör hangisidir?
+A) Wilms tümörü (Böbrek kaynaklı)
+B) Nöroblastom
+C) Hepatoblastom
+D) Teratom
+E) Ramdomiyosarkom
+Cevap: B
+Profesör Açıklaması: Nöroblastom, çocukluk çağının en sık görülen ekstrakranial solid tümörüdür ve genellikle böbreküstü bezinden başlar.
+
+(Patoloji branşı için 100 TUS sorusu ve profesör açıklamaları tamamlanmıştır.)

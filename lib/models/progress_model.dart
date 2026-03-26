@@ -69,21 +69,20 @@ class StudyProgress {
   }
 
   /// Puan hedefine göre önerilen günlük soru sayısı
-  /// Puan arttıkça bir puan almanın zorluğu (çalışma yükü) logaritmik/üstel artar.
+  /// SRS araştırmalarına göre günde 20-80 yeni kart optimal öğrenme aralığıdır.
+  /// Formül: Toplam içerik havuzunu kalan günlere bölerek gerçekçi bir tempo önerir.
   int get recommendedDailyGoal {
     final pointsToGain = (targetScore - baseScore).clamp(0.0, 100.0);
     final days = daysToExam;
-    if (days <= 0) return 100;
-    
-    // Ortalama puan (hedeflenen seviye)
+    if (days <= 0) return 50;
+
+    // Zorluk katsayısı: hedef yükseldikçe hafif artış (1.0x – 1.5x)
     final avgScore = (baseScore + targetScore) / 2;
-    
-    // Zorluk katsayısı: 40 puanda 1.0x, 70 puanda ~2.0x, 80 puanda ~3.0x maliyet
-    // Puan arttıkça her bir puanı kazanmak için gereken soru sayısı artar.
-    final difficultyMultiplier = 1.0 + ((avgScore - 40).clamp(0, 50) * (avgScore - 40).clamp(0, 50) / 800);
-    
-    final totalItemsNeeded = pointsToGain * 1000 * difficultyMultiplier;
-    return (totalItemsNeeded / days).ceil().clamp(20, 500);
+    final difficultyMultiplier = 1.0 + ((avgScore - 40).clamp(0, 50) / 100);
+
+    // Toplam kart havuzu tahmini: puan başına ~150 kart (gerçekçi TUS içeriği)
+    final totalItemsNeeded = pointsToGain * 150 * difficultyMultiplier;
+    return (totalItemsNeeded / days).ceil().clamp(20, 120);
   }
 
   /// Puan hedefine göre "hırs" seviyesi

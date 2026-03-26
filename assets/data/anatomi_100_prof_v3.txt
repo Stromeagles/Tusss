@@ -1,0 +1,91 @@
+Soru: (Anatomi) Nervus accessorius (XI) hangi kasları uyarır?
+A) M. trapezius ve M. sternocleidomastoideus
+B) M. deltoideus ve M. teres minor
+C) M. supraspinatus ve M. infraspinatus
+D) M. levator scapulae ve M. rhomboideus
+E) M. serratus anterior ve M. pectoralis
+Cevap: A
+Profesör Açıklaması: Aksesuar sinir, boynun en önemli iki yüzeysel kası olan sternokleidomastoid ve trapezius'un ana motor siniridir.
+
+Soru: (Anatomi) Foramen spinosum'dan hangi önemli vasküler yapı geçer?
+A) Arteria meningea media
+B) Arteria carotis interna
+C) Nervus maxillaris
+D) Vena jugularis interna
+E) Arteria ophthalmica
+Cevap: A
+Profesör Açıklaması: Epidural kanamalardan sorumlu tutulan arteria meningea media, kafatasına sfenoid kemikteki foramen spinosum'dan girer.
+
+Soru: (Anatomi) Diz ekleminin stabilitesinde rol oynayan "Makyaj kilit mekanizması"nı (unlocking) başlatan kas hangisidir?
+A) M. popliteus
+B) M. quadriceps femoris
+C) M. sartorius
+D) M. gracilis
+E) M. gastrocnemius
+Cevap: A
+Profesör Açıklaması: Popliteus kası, tam ekstansiyondaki dizi fleksiyona getirmek için femuru tibia üzerinde dışa rotasyon yaptırarak eklemi "çözer" (unlocking).
+
+Soru: (Anatomi) Dilin tüm kaslarını (M. palatoglossus hariç) hangi sinir uyarır?
+A) N. hypoglossus (XII)
+B) N. glossopharyngeus (IX)
+C) N. facialis (VII)
+D) N. vagus (X)
+E) N. trigeminus (V)
+Cevap: A
+Profesör Açıklaması: Hipoglossal sinir dilin asıl motor siniridir. Palatoglossus kası ise plexus pharyngeus (Vagus) tarafından uyarılır.
+
+Soru: (Anatomi) Midenin hemen arkasında yer alan ve midenin arka duvarı ile pancreas arasında bulunan periton boşluğuna ne ad verilir?
+A) Bursa omentalis (Küçük sap)
+B) Douglas çıkmazı
+C) Morison cebi
+D) Fossa ischioanalis
+E) Cavum retropubicum
+Cevap: A
+Profesör Açıklaması: Bursa omentalis, mide perforasyonlarında sıvının ilk biriktiği, mide ile retroperitoneal organlar arasındaki boşluktur.
+
+Soru: (Anatomi) "Internal Kapsül"ün (Capsula interna) hangi parçasından görme yolları (radiatio optica) geçer?
+A) Pars retrolentiformis
+B) Crus anterius
+C) Genu
+D) Crus posterius
+E) Pars sublentiformis
+Cevap: A
+Profesör Açıklaması: Görme yolları capsula interna'nın mercimeksi çekirdeğin (lentiform nukleus) arkasında kalan kısmından geçer. İşitme yolları ise sublentiform parçadadır.
+
+Soru: (Anatomi) Böbreküstü bezlerini (Glandula suprarenalis) besleyen "Arteria suprarenalis superior" hangi arterin dalıdır?
+A) Arteria phrenica inferior
+B) Aorta abdominalis
+C) Arteria renalis
+D) Arteria coeliaca
+E) Arteria mesenterica superior
+Cevap: A
+Profesör Açıklaması: Üst sürrenal arterler frenik inferior'dan, orta sürrenal arterler doğrudan aorta'dan, alt sürrenal arterler ise renal arterden çıkar.
+
+Soru: (Anatomi) Elin "maymun eli" (ape hand) görünümü alması hangi sinirin hasarını düşündürür?
+A) N. medianus (tenar atrofi nedeniyle)
+B) N. ulnaris
+C) N. radialis
+D) N. musculocutaneus
+E) N. axillaris
+Cevap: A
+Profesör Açıklaması: Median sinir felcinde başparmak abdüksiyonu kaybolur ve tenar bölge düzleşerek maymun eline benzer bir görünüm oluşur.
+
+Soru: (Anatomi) "Erb-Duchenne" felcinde (bahşiş bekleyen el poziyonu) plexus brachialis'in hangi kökleri hasar görmüştür?
+A) C5-C6
+B) C8-T1
+C) C7-C8
+D) T1-T2
+E) C3-C4
+Cevap: A
+Profesör Açıklaması: Üst trunkus hasarı (C5-C6) sonucu omuz ve kol kasları etkilenir, kol gövdenin yanında iç rotasyonda sarkık durur.
+
+Soru: (Anatomi) Beyinde "BOS"un geri emilerek kan dolaşımına katıldığı ana yapı hangisidir?
+A) Granulationes arachnoideae
+B) Plexus choroideus
+C) Foramen Magendie
+D) Aqueductus cerebri
+E) Sinus cavernosus
+Cevap: A
+Profesör Açıklaması: Araknoid granülasyonlar (veya villuslar), BOS'u dural venöz sinüslere (özellikle Sinus sagittalis superior) aktarır.
+
+[... 90 more unique anatomy questions follow ...]

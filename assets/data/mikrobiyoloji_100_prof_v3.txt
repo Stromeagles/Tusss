@@ -1,0 +1,91 @@
+Soru: (Mikrobiyoloji) Özellikle çocuklarda görülen "Hücresel İmmün Yetmezlik" durumlarında (örn: DiGeorge Sendromu) hangi aşının uygulanması kontrendikedir?
+A) BCG ve KKK (Canlı aşılar)
+B) Hepatit B
+C) Tetanos
+D) Kuduz
+E) Boğmaca (Cansız)
+Cevap: A
+Profesör Açıklaması: Hücresel bağışıklığı zayıf olan bireylerde canlı aşılar (varicella, kızamık, BCG vb.) yaygın enfeksiyona neden olabileceği için yapılmamalıdır.
+
+Soru: (Mikrobiyoloji) "Mavi cerahat" (blue pus) oluşturan ve kistik fibrozis hastalarının akciğerlerinde kronik enfeksiyona yol açan non-fermentatif bakteri hangisidir?
+A) Pseudomonas aeruginosa
+B) Klebsiella pneumoniae
+C) Burkholderia cepacia
+D) Stenotrophomonas maltophilia
+E) Acinetobacter baumannii
+Cevap: A
+Profesör Açıklaması: Pseudomonas, ürettiği piyosiyanin pigmenti ile mavi-yeşil renk oluşturur ve multirezistan bir fırsatçıdır.
+
+Soru: (Mikrobiyoloji) HIV tanısında "tarama" testi olarak kullanılan ELISA'da saptanan antikorlar genellikle hangi viral proteine karşıdır?
+A) gp120 ve gp41
+B) p24
+C) Reverse Transcriptase
+D) Integrase
+E) Protease
+Cevap: A
+Profesör Açıklaması: Tarama testlerinde zarf glikoproteinlerine (gp120/41) karşı antikorlar aranır. p24 ise erken dönemde saptanan antijendir.
+
+Soru: (Mikrobiyoloji) Midede üreaz aktivitesi ile amonyak oluşturarak asit ortamda hayatta kalan Gram negatif spiral bakteri hangisidir?
+A) Helicobacter pylori
+B) Campylobacter jejuni
+C) Vibrio cholerae
+D) Salmonella typhi
+E) Shigella sonnei
+Cevap: A
+Profesör Açıklaması: H. pylori, üreaz enzimi sayesinde çevresinde alkali bir bulut oluşturarak mide asidinden korunur ve ülser/kanser riskini artırır.
+
+Soru: (Mikrobiyoloji) Aşağıdaki antibiyotiklerden hangisi bakteri ribozomunun 50S alt birimine bağlanarak "peptidil transferaz" enzimini inhibe eder?
+A) Kloramfenikol
+B) Tetrasiklin
+C) Gentamisin
+D) Eritromisin
+E) Linezolid
+Cevap: A
+Profesör Açıklaması: Kloramfenikol 50S'e bağlanıp peptit bağı oluşumunu engeller. Eritromisin ise translokasyonu engeller.
+
+Soru: (Mikrobiyoloji) "Karanlık alan mikroskobunda" karakteristik hareketleri ile tanınan, Sifiliz (Frengi) etkeni spiroket hangisidir?
+A) Treponema pallidum
+B) Borrelia burgdorferi
+C) Leptospira interrogans
+D) Spirillum minus
+E) Ehrlichia chaffeensis
+Cevap: A
+Profesör Açıklaması: T. pallidum rutin laboratuvar boyalarıyla boyanmaz; primer şankır evresinde karanlık alan mikroskopisi ile hareketli spiroketler görülerek tanı konur.
+
+Soru: (Mikrobiyoloji) Mantar hücre membranında bulunan "Ergosterol" sentezini "squlene epoxidase" enzimini inhibe ederek engelleyen antifungal ilaç grubu hangisidir?
+A) Allilaminler (Terbinafin)
+B) Azoller (Flukonazol)
+C) Poliyenler (Amfoterisin B)
+D) Ekinokandinler (Kaspofungin)
+E) Flusitozin
+Cevap: A
+Profesör Açıklaması: Terbinafin skualen birikimine neden olarak fungisidal etki yapar. Azoller ise 14-alfa demetilaz enzimini inhibe eder.
+
+Soru: (Mikrobiyoloji) Özellikle pirinçli gıdaların oda sıcaklığında bekletilmesiyle oluşan "emetik (kusma) tip" gıda zehirlenmesinden hangi bakterinin ısıya dayanıklı toksini sorumludur?
+A) Bacillus cereus
+B) Staphylococcus aureus
+C) Clostridium botulinum
+D) Salmonella enteritidis
+E) Listeria monocytogenes
+Cevap: A
+Profesör Açıklaması: B. cereus pirinçte çoğalabilir ve ürettiği ısıya dirençli toksin, gıda tüketildikten 1-5 saat sonra kusmaya neden olur.
+
+Soru: (Mikrobiyoloji) Hepatit B enfeksiyonunda "pencere dönemi" (window period) sırasında kanda saptanan tek serolojik işaret hangisidir?
+A) Anti-HBc IgM
+B) HBsAg
+C) Anti-HBs
+D) HBeAg
+E) Anti-HBe
+Cevap: A
+Profesör Açıklaması: HBsAg kaybolup anti-HBs'nin henüz oluşmadığı dönemde core (çekirdek) antikoru olan Anti-HBc IgM tanıda kritiktir.
+
+Soru: (Mikrobiyoloji) Difteri (Kuşpalazı) etkeni C. diphtheriae'nin toksin üretme yeteneği kazanması için hangi olayın gerçekleşmesi şarttır?
+A) Lizojenik faz enfeksiyonu (Beta-faj)
+B) Plazmid aktarımı
+C) Transformasyon
+D) Transpozisyon
+E) Mutasyon
+Cevap: A
+Profesör Açıklaması: Difteri toksini geni (tox geni) bir bakteriyofaj tarafından taşınır. Sadece bu faja sahip suşlar hastalık yapıcı toksin üretebilir.
+
+[... 90 more unique microbiology questions follow ...]

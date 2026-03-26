@@ -4,6 +4,20 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_theme.dart';
 
+// ╔══════════════════════════════════════════════════════════════════════════╗
+// ║  WebLandingScreen — deploy_klinoi/index.html tasarımına sadık Flutter   ║
+// ║  Nav → Hero (icon+badge+gradient H1+3 buton) → Features (6 kart)       ║
+// ║  → Stats (3 kart) → CTA kutusu → Footer                                ║
+// ╚══════════════════════════════════════════════════════════════════════════╝
+
+const _kBg       = Color(0xFF0A0E14);
+const _kSurface  = Color(0xFF12161E);
+const _kBorder   = Color(0xFF1E2533);
+const _kCyan     = Color(0xFF00D4FF);
+const _kPurple   = Color(0xFFA855F7);
+const _kTextPri  = Color(0xFFF0F6FC);
+const _kTextSec  = Color(0xFF7B8BA3);
+
 class WebLandingScreen extends StatefulWidget {
   final VoidCallback onContinue;
   const WebLandingScreen({super.key, required this.onContinue});
@@ -14,677 +28,519 @@ class WebLandingScreen extends StatefulWidget {
 
 class _WebLandingScreenState extends State<WebLandingScreen>
     with SingleTickerProviderStateMixin {
-  late AnimationController _bgController;
+
+  late AnimationController _pulseCtrl;
+  final _scrollCtrl  = ScrollController();
+  final _featuresKey = GlobalKey();
+  final _statsKey    = GlobalKey();
+  final _downloadKey = GlobalKey();
 
   @override
   void initState() {
     super.initState();
-    _bgController = AnimationController(
+    _pulseCtrl = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 10),
+      duration: const Duration(seconds: 3),
     )..repeat(reverse: true);
   }
 
   @override
   void dispose() {
-    _bgController.dispose();
+    _pulseCtrl.dispose();
+    _scrollCtrl.dispose();
     super.dispose();
+  }
+
+  void _scrollTo(GlobalKey key) {
+    final ctx = key.currentContext;
+    if (ctx == null) return;
+    Scrollable.ensureVisible(
+      ctx,
+      duration: const Duration(milliseconds: 600),
+      curve: Curves.easeInOut,
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-    final isWide = size.width > 700;
+    final w = MediaQuery.of(context).size.width;
+    final isWide   = w > 768;
+    final isNarrow = w < 640;
 
     return Scaffold(
-      backgroundColor: AppTheme.background,
+      backgroundColor: _kBg,
       body: Stack(
         children: [
-          // ── Animasyonlu Arka Plan ──────────────────────────────────────────
-          AnimatedBuilder(
-            animation: _bgController,
-            builder: (_, __) {
-              final t = _bgController.value;
-              return Stack(children: [
-                Positioned(
-                  top: -120 + t * 50,
-                  right: -80 + t * 20,
-                  child: _Blob(color: AppTheme.cyan, size: 480, opacity: 0.07),
-                ),
-                Positioned(
-                  bottom: -80 + t * 40,
-                  left: -80,
-                  child: _Blob(color: AppTheme.neonPurple, size: 420, opacity: 0.07),
-                ),
-                Positioned(
-                  top: size.height * 0.4 - t * 20,
-                  left: size.width * 0.35,
-                  child: _Blob(color: AppTheme.neonGold, size: 220, opacity: 0.035),
-                ),
-              ]);
-            },
-          ),
+          // ── Arka plan glow efektleri ─────────────────────────────────
+          _BgGlow(),
 
-          // ── Sayfa İçeriği ─────────────────────────────────────────────────
-          SafeArea(
-            child: SingleChildScrollView(
-              physics: const BouncingScrollPhysics(),
-              child: Center(
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 680),
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: isWide ? 40 : 22,
-                      vertical: 32,
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        _buildLogoRow(),
-                        const SizedBox(height: 40),
-                        _buildHero(size),
-                        const SizedBox(height: 36),
-                        _buildHeadline(),
-                        const SizedBox(height: 32),
-                        _buildPrimaryButton(),
-                        const SizedBox(height: 12),
-                        _buildStoreRow(),
-                        const SizedBox(height: 32),
-                        _buildStats(),
-                        const SizedBox(height: 32),
-                        isWide ? _buildFeaturesGrid() : _buildFeaturesList(),
-                        const SizedBox(height: 32),
-                        _buildFooter(),
-                        const SizedBox(height: 20),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildLogoRow() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        ClipRRect(
-          borderRadius: BorderRadius.circular(12),
-          child: Image.asset(
-            'assets/images/hero_splash.jpg',
-            width: 40,
-            height: 40,
-            fit: BoxFit.cover,
-          ),
-        ),
-        const SizedBox(width: 10),
-        Text(
-          'AsisTus',
-          style: GoogleFonts.outfit(
-            fontSize: 24,
-            fontWeight: FontWeight.w800,
-            color: AppTheme.textPrimary,
-            letterSpacing: -0.5,
-          ),
-        ),
-        const SizedBox(width: 10),
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-          decoration: BoxDecoration(
-            gradient: const LinearGradient(
-              colors: [Color(0xFF00D4FF), Color(0xFFA371F7)],
-            ),
-            borderRadius: BorderRadius.circular(20),
-          ),
-          child: Text(
-            'AI Destekli',
-            style: GoogleFonts.inter(
-              fontSize: 11,
-              fontWeight: FontWeight.w700,
-              color: Colors.white,
-              letterSpacing: 0.4,
-            ),
-          ),
-        ),
-      ],
-    ).animate().fadeIn(duration: 600.ms);
-  }
-
-  Widget _buildHero(Size size) {
-    final heroH = (size.height * 0.38).clamp(200.0, 340.0);
-    return Container(
-      width: double.infinity,
-      height: heroH,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(28),
-        boxShadow: [
-          BoxShadow(
-            color: AppTheme.cyan.withValues(alpha: 0.18),
-            blurRadius: 48,
-            offset: const Offset(0, 16),
-          ),
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.45),
-            blurRadius: 32,
-            offset: const Offset(0, 8),
-          ),
-        ],
-      ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(28),
-        child: Stack(
-          fit: StackFit.expand,
-          children: [
-            Image.asset('assets/images/hero_splash.jpg', fit: BoxFit.cover, cacheWidth: 1200),
-            // Koyu alt gradient
-            Container(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Colors.transparent,
-                    AppTheme.background.withValues(alpha: 0.75),
-                  ],
-                  stops: const [0.35, 1.0],
-                ),
-              ),
-            ),
-            // Hafif üst gradient (kenar yumuşatma)
-            Container(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.center,
-                  colors: [
-                    Colors.black.withValues(alpha: 0.2),
-                    Colors.transparent,
-                  ],
-                ),
-              ),
-            ),
-            // Alt badge
-            Positioned(
-              bottom: 20,
-              left: 20,
-              child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
-                decoration: BoxDecoration(
-                  color: AppTheme.cyan.withValues(alpha: 0.18),
-                  borderRadius: BorderRadius.circular(30),
-                  border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.4)),
-                  boxShadow: [
-                    BoxShadow(
-                      color: AppTheme.cyan.withValues(alpha: 0.15),
-                      blurRadius: 16,
-                    ),
-                  ],
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const Icon(Icons.auto_awesome_rounded, color: AppTheme.cyan, size: 14),
-                    const SizedBox(width: 7),
-                    Text(
-                      'Spaced Repetition + AI',
-                      style: GoogleFonts.inter(
-                        color: AppTheme.cyan,
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
-                        letterSpacing: 0.2,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            // Sağ alt — küçük istatistik pill
-            Positioned(
-              bottom: 20,
-              right: 20,
-              child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
-                decoration: BoxDecoration(
-                  color: Colors.black.withValues(alpha: 0.45),
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const Icon(Icons.style_rounded, color: Colors.white70, size: 13),
-                    const SizedBox(width: 5),
-                    Text(
-                      '10.000+ kart',
-                      style: GoogleFonts.inter(
-                        color: Colors.white70,
-                        fontSize: 11,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    ).animate().fadeIn(delay: 200.ms, duration: 700.ms).slideY(begin: 0.06, end: 0);
-  }
-
-  Widget _buildHeadline() {
-    return Column(
-      children: [
-        ShaderMask(
-          shaderCallback: (bounds) => const LinearGradient(
-            colors: [Color(0xFF00D4FF), Color(0xFFFFFFFF), Color(0xFFA371F7)],
-            stops: [0.0, 0.45, 1.0],
-          ).createShader(bounds),
-          child: Text(
-            'TUS\'a Hazırlık\nArtık Daha Akıllı',
-            textAlign: TextAlign.center,
-            style: GoogleFonts.outfit(
-              fontSize: 40,
-              fontWeight: FontWeight.w900,
-              color: Colors.white,
-              height: 1.1,
-              letterSpacing: -1.2,
-            ),
-          ),
-        ).animate().fadeIn(delay: 300.ms).slideY(begin: 0.08, end: 0),
-        const SizedBox(height: 16),
-        Text(
-          'Binlerce TUS sorusu, klinik vaka ve AI destekli\nakıllı tekrar sistemi — her gün biraz daha güçlen.',
-          textAlign: TextAlign.center,
-          style: GoogleFonts.inter(
-            fontSize: 15,
-            color: AppTheme.textSecondary,
-            fontWeight: FontWeight.w400,
-            height: 1.65,
-          ),
-        ).animate().fadeIn(delay: 400.ms),
-      ],
-    );
-  }
-
-  Widget _buildStats() {
-    final stats = [
-      (Icons.style_rounded,    '10.000+', 'Soru & Kart',    AppTheme.cyan),
-      (Icons.psychology_rounded,'AI',      'Kişisel Mentor', AppTheme.neonPurple),
-      (Icons.repeat_rounded,   'SM-2',    'Tekrar Motoru',  AppTheme.neonGold),
-    ];
-
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 8),
-      decoration: BoxDecoration(
-        color: AppTheme.surface.withValues(alpha: 0.55),
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: AppTheme.border.withValues(alpha: 0.4)),
-      ),
-      child: Row(
-        children: stats.asMap().entries.map((entry) {
-          final i = entry.key;
-          final s = entry.value;
-          return Expanded(
-            child: Row(
-              children: [
-                if (i > 0)
-                  Container(
-                    width: 1,
-                    height: 40,
-                    color: AppTheme.border.withValues(alpha: 0.5),
-                  ),
-                Expanded(
+          // ── Sayfa içeriği ────────────────────────────────────────────
+          SingleChildScrollView(
+            controller: _scrollCtrl,
+            physics: const BouncingScrollPhysics(),
+            child: Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 1100),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
                   child: Column(
                     children: [
-                      Icon(s.$1, color: s.$4, size: 18),
-                      const SizedBox(height: 6),
-                      Text(
-                        s.$2,
-                        style: GoogleFonts.outfit(
-                          fontSize: 19,
-                          fontWeight: FontWeight.w800,
-                          color: s.$4,
-                        ),
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        s.$3,
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.inter(
-                          fontSize: 11,
-                          color: AppTheme.textSecondary,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
+                      _buildNav(isWide),
+                      _buildHero(isNarrow),
+                      _buildFeatures(isWide, isNarrow),
+                      _buildStats(isNarrow),
+                      _buildCta(isNarrow),
+                      _buildFooter(),
+                      const SizedBox(height: 32),
                     ],
                   ),
                 ),
-              ],
+              ),
             ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // ── Nav ──────────────────────────────────────────────────────────────────
+
+  Widget _buildNav(bool isWide) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 20),
+      child: Row(
+        children: [
+          // Logo
+          Row(
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Image.asset(
+                  'assets/images/hero_splash.jpg',
+                  width: 42, height: 42,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              const SizedBox(width: 12),
+              Text(
+                'TUS Asistanı',
+                style: GoogleFonts.outfit(
+                  fontSize: 22,
+                  fontWeight: FontWeight.w700,
+                  color: _kTextPri,
+                ),
+              ),
+            ],
+          ),
+
+          const Spacer(),
+
+          // Nav links — sadece geniş ekranda
+          if (isWide) ...[
+            _NavLink('Özellikler',    () => _scrollTo(_featuresKey)),
+            const SizedBox(width: 32),
+            _NavLink('İstatistikler', () => _scrollTo(_statsKey)),
+            const SizedBox(width: 32),
+            _NavLink('İndir',         () => _scrollTo(_downloadKey)),
+          ],
+        ],
+      ),
+    ).animate().fadeIn(duration: 500.ms);
+  }
+
+  // ── Hero ─────────────────────────────────────────────────────────────────
+
+  Widget _buildHero(bool isNarrow) {
+    final iconSize = isNarrow ? 110.0 : 140.0;
+    final iconRadius = isNarrow ? 26.0 : 32.0;
+
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: isNarrow ? 60 : 80),
+      child: Column(
+        children: [
+          // Simge + glow
+          AnimatedBuilder(
+            animation: _pulseCtrl,
+            builder: (_, child) {
+              final t = _pulseCtrl.value;
+              return Stack(
+                alignment: Alignment.center,
+                children: [
+                  // Radial glow halkası
+                  Container(
+                    width: iconSize + 40 + t * 10,
+                    height: iconSize + 40 + t * 10,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      gradient: RadialGradient(
+                        colors: [
+                          _kCyan.withValues(alpha: 0.25 * (0.6 + t * 0.4)),
+                          Colors.transparent,
+                        ],
+                        stops: const [0.0, 1.0],
+                      ),
+                    ),
+                  ),
+                  // İkon
+                  child!,
+                ],
+              );
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(iconRadius),
+                border: Border.all(color: _kCyan.withValues(alpha: 0.15)),
+                boxShadow: [
+                  BoxShadow(color: _kCyan.withValues(alpha: 0.20), blurRadius: 40),
+                  BoxShadow(color: Colors.black.withValues(alpha: 0.50), blurRadius: 60, offset: const Offset(0, 20)),
+                ],
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(iconRadius),
+                child: Image.asset(
+                  'assets/images/hero_splash.jpg',
+                  width: iconSize, height: iconSize,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          ).animate().fadeIn(duration: 600.ms).scale(begin: const Offset(0.9, 0.9)),
+
+          const SizedBox(height: 36),
+
+          // Badge
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 6),
+            decoration: BoxDecoration(
+              color: _kCyan.withValues(alpha: 0.08),
+              border: Border.all(color: _kCyan.withValues(alpha: 0.20)),
+              borderRadius: BorderRadius.circular(100),
+            ),
+            child: Text(
+              'Yapay Zeka Destekli',
+              style: GoogleFonts.inter(
+                fontSize: 13, fontWeight: FontWeight.w600,
+                color: _kCyan,
+              ),
+            ),
+          ).animate().fadeIn(delay: 200.ms),
+
+          const SizedBox(height: 28),
+
+          // H1
+          Column(
+            children: [
+              Text(
+                'TUS Hazırlığında',
+                textAlign: TextAlign.center,
+                style: GoogleFonts.outfit(
+                  fontSize: _clampFont(36, 60, MediaQuery.of(context).size.width),
+                  fontWeight: FontWeight.w800,
+                  color: _kTextPri,
+                  height: 1.1,
+                ),
+              ),
+              ShaderMask(
+                shaderCallback: (bounds) => const LinearGradient(
+                  colors: [_kCyan, _kPurple],
+                  begin: Alignment.centerLeft,
+                  end: Alignment.centerRight,
+                ).createShader(bounds),
+                child: Text(
+                  'Akıllı Asistanın',
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.outfit(
+                    fontSize: _clampFont(36, 60, MediaQuery.of(context).size.width),
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                    height: 1.1,
+                  ),
+                ),
+              ),
+            ],
+          ).animate().fadeIn(delay: 300.ms).slideY(begin: 0.06, end: 0),
+
+          const SizedBox(height: 20),
+
+          // Subtitle
+          ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 560),
+            child: Text(
+              'Flashcard\'lar, vaka analizleri, yapay zeka destekli açıklamalar ve pomodoro zamanlayıcı ile TUS\'a en etkili şekilde hazırlanın.',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.inter(
+                fontSize: 18,
+                color: _kTextSec,
+                height: 1.6,
+              ),
+            ),
+          ).animate().fadeIn(delay: 400.ms),
+
+          const SizedBox(height: 40),
+
+          // Butonlar
+          Wrap(
+            spacing: 16,
+            runSpacing: 14,
+            alignment: WrapAlignment.center,
+            children: [
+              // Birincil — Uygulamayı İndir
+              _PrimaryBtn(
+                label: 'Uygulamayı İndir',
+                onTap: () => _scrollTo(_downloadKey),
+              ),
+              // Web butonu
+              _WebBtn(
+                label: 'Web\'den Devam Et',
+                onTap: widget.onContinue,
+              ),
+              // İkincil
+              _SecondaryBtn(
+                label: 'Özellikleri Gör',
+                onTap: () => _scrollTo(_featuresKey),
+              ),
+            ],
+          ).animate().fadeIn(delay: 500.ms).slideY(begin: 0.06, end: 0),
+        ],
+      ),
+    );
+  }
+
+  // ── Özellikler ────────────────────────────────────────────────────────────
+
+  Widget _buildFeatures(bool isWide, bool isNarrow) {
+    final cols = isWide ? 3 : (isNarrow ? 1 : 2);
+    final features = _featureData();
+
+    return Container(
+      key: _featuresKey,
+      padding: const EdgeInsets.only(bottom: 80),
+      child: Column(
+        children: [
+          Text(
+            'Neden TUS Asistanı?',
+            style: GoogleFonts.outfit(
+              fontSize: 32, fontWeight: FontWeight.w700,
+              color: _kTextPri,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 12),
+          Text(
+            'Tıpta uzmanlık sınavına hazırlanmanın en akıllı yolu',
+            textAlign: TextAlign.center,
+            style: GoogleFonts.inter(fontSize: 16, color: _kTextSec),
+          ),
+          const SizedBox(height: 48),
+
+          // Grid
+          LayoutBuilder(builder: (_, constraints) {
+            final cardW = (constraints.maxWidth - (cols - 1) * 20) / cols;
+            return Wrap(
+              spacing: 20,
+              runSpacing: 20,
+              children: features.asMap().entries.map((e) {
+                return SizedBox(
+                  width: cardW,
+                  child: _FeatureCard(
+                    emoji: e.value.$1,
+                    title: e.value.$2,
+                    desc:  e.value.$3,
+                    delay: 200 + e.key * 80,
+                  ),
+                );
+              }).toList(),
+            );
+          }),
+        ],
+      ),
+    );
+  }
+
+  List<(String, String, String)> _featureData() => [
+    ('📚', 'Akıllı Flashcard\'lar',
+        'Binlerce TUS kartı ile Tinder-tarzı swipe mekanizması. Cloze formatı ile aktif öğrenme.'),
+    ('🔄', 'Akıllı Tekrar (Spaced Repetition)',
+        'SM-2 algoritması ile aralıklı tekrar. Tam unutmak üzereyken kartlar karşınıza çıkarılır.'),
+    ('🎯', 'Vaka Analizleri',
+        'Gerçekçi klinik vakalarla pratik yapın. TUS\'ta çıkan vaka stilinde sorular.'),
+    ('🎧', 'Focus Lab — Odak Sesleri',
+        'Dikkat dağıtıcı unsurlardan uzaklaşın. Konsantrasyonunuzu zirveye taşıyan odak ortamı.'),
+    ('🧠', 'AI Destekli Eksik Kapatma',
+        'Sadece soru çözmeyin, eksiklerinizi de görün! Zayıf konu odaklı kişiselleştirilmiş çalışma.'),
+    ('🏆', 'Günlük Hedefler ve Freemium',
+        'Her güne özel ücretsiz günlük kota ile disiplin kazanın. Premium ile sınırsız erişim.'),
+  ];
+
+  // ── İstatistikler ─────────────────────────────────────────────────────────
+
+  Widget _buildStats(bool isNarrow) {
+    final stats = [
+      ('2000+', 'Flashcard'),
+      ('15+',   'Tıbbi Branş'),
+      ('AI',    'Destekli Açıklamalar'),
+    ];
+
+    return Container(
+      key: _statsKey,
+      padding: const EdgeInsets.only(bottom: 80),
+      child: Wrap(
+        spacing: 16,
+        runSpacing: 16,
+        alignment: WrapAlignment.center,
+        children: stats.asMap().entries.map((e) {
+          return _StatCard(
+            number: e.value.$1,
+            label:  e.value.$2,
+            delay:  200 + e.key * 100,
           );
         }).toList(),
       ),
-    ).animate().fadeIn(delay: 450.ms).scale(begin: const Offset(0.96, 0.96));
-  }
-
-
-  Widget _buildFeaturesGrid() {
-    final features = [
-      (Icons.psychology_rounded,    'AI Açıklamaları', 'Yapay zeka asistanı, her sorunun arkasındaki tıbbi mantığı açıklar, bilginizi pekiştirir.',   AppTheme.neonPurple, 'assets/images/tus_Deneme.jpg'),
-      (Icons.repeat_rounded,        'Akıllı Tekrar',   'SM-2 algoritması, unutmaya başladığınız an kartları karşınıza çıkararak kalıcı öğrenme sağlar.',        AppTheme.cyan,       'assets/images/acılan_ekran.jpg'),
-      (Icons.local_hospital_rounded,'Klinik Vakalar',  'TUS\'ta en çok kazandıran vaka sorularına özel içeriklerle klinik yaklaşımınızı geliştirin.',     AppTheme.success,    'assets/images/sınav.jpg'),
-      (Icons.bookmark_rounded,      'Favoriler & Kütüphane',       'Önemli soruları koleksiyonlara ekleyin ve dilediğiniz zaman tekrar ederek kalıcı öğrenme sağlayın.', AppTheme.neonGold,   'assets/images/Kutuphane.jpg'),
-    ];
-    return Column(
-      children: [
-        Row(children: [
-          Expanded(child: Padding(padding: const EdgeInsets.only(right: 8), child: _FeatureCard(f: features[0], delay: 520))),
-          Expanded(child: _FeatureCard(f: features[1], delay: 590)),
-        ]),
-        const SizedBox(height: 10),
-        Row(children: [
-          Expanded(child: Padding(padding: const EdgeInsets.only(right: 8), child: _FeatureCard(f: features[2], delay: 660))),
-          Expanded(child: _FeatureCard(f: features[3], delay: 730)),
-        ]),
-      ],
     );
   }
 
-  Widget _buildFeaturesList() {
-    final features = [
-      (Icons.psychology_rounded,    'AI Açıklamaları', 'Yapay zeka asistanı, her sorunun arkasındaki tıbbi mantığı açıklar, bilginizi pekiştirir.',    AppTheme.neonPurple, 'assets/images/tus_Deneme.jpg'),
-      (Icons.repeat_rounded,        'Akıllı Tekrar',   'SM-2 algoritmasıyla unutmayı engelleyen bilimsel çalışma sistemi.',  AppTheme.cyan,       'assets/images/acılan_ekran.jpg'),
-      (Icons.local_hospital_rounded,'Klinik Vakalar',  'TUS tarzı gerçek hasta vakaları üzerinden klinik muhakeme eğitimi.',   AppTheme.success,    'assets/images/sınav.jpg'),
-      (Icons.bookmark_rounded,      'Favoriler & Kütüphane',  'Önemli soruları kaydedin ve dilediğiniz zaman tekrar ederek kalıcı öğrenme sağlayın.', AppTheme.neonGold,   'assets/images/Kutuphane.jpg'),
-    ];
-    return Column(
-      children: features.asMap().entries.map((e) =>
-        Padding(padding: const EdgeInsets.only(bottom: 10),
-          child: _FeatureCard(f: e.value, delay: 520 + e.key * 70))).toList(),
-    );
-  }
+  // ── CTA ───────────────────────────────────────────────────────────────────
 
-  Widget _buildPrimaryButton() {
-    return GestureDetector(
-      onTap: widget.onContinue,
+  Widget _buildCta(bool isNarrow) {
+    return Container(
+      key: _downloadKey,
+      padding: const EdgeInsets.only(bottom: 100),
       child: Container(
         width: double.infinity,
-        padding: const EdgeInsets.symmetric(vertical: 18),
+        padding: EdgeInsets.symmetric(
+          horizontal: isNarrow ? 24 : 40,
+          vertical: isNarrow ? 40 : 60,
+        ),
         decoration: BoxDecoration(
           gradient: const LinearGradient(
-            colors: [Color(0xFF00D4FF), Color(0xFF0099CC)],
-            begin: Alignment.centerLeft,
-            end: Alignment.centerRight,
+            colors: [Color(0xFF000D14), Color(0xFF0D0919)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
           ),
-          borderRadius: BorderRadius.circular(18),
-          boxShadow: [
-            BoxShadow(
-              color: AppTheme.cyan.withValues(alpha: 0.38),
-              blurRadius: 28,
-              offset: const Offset(0, 10),
-            ),
-          ],
+          border: Border.all(color: _kCyan.withValues(alpha: 0.12)),
+          borderRadius: BorderRadius.circular(24),
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Column(
           children: [
-            const Icon(Icons.rocket_launch_rounded, color: Colors.white, size: 20),
-            const SizedBox(width: 10),
             Text(
-              'Hemen Web\'te Başla — Ücretsiz',
-              style: GoogleFonts.inter(
-                color: Colors.white,
-                fontWeight: FontWeight.w800,
-                fontSize: 16,
-                letterSpacing: -0.2,
+              'Hemen Başlayın',
+              style: GoogleFonts.outfit(
+                fontSize: 28, fontWeight: FontWeight.w700,
+                color: _kTextPri,
               ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 16),
+            Text(
+              'TUS Asistanı yakın zamanda Google Play ve App Store\'da!',
+              style: GoogleFonts.inter(fontSize: 15, color: _kTextSec, height: 1.6),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 32),
+            Wrap(
+              spacing: 16,
+              runSpacing: 14,
+              alignment: WrapAlignment.center,
+              children: [
+                _PrimaryBtn(label: 'Google Play (Yakında)', onTap: () {}),
+                _SecondaryBtn(label: 'App Store (Yakında)',  onTap: () {}),
+                _WebBtn(label: 'Web\'den Devam Et', onTap: widget.onContinue),
+              ],
             ),
           ],
         ),
-      ),
-    ).animate().fadeIn(delay: 800.ms).slideY(begin: 0.06, end: 0);
+      ).animate().fadeIn(delay: 200.ms),
+    );
   }
 
-  Widget _buildStoreRow() {
-    return Row(
-      children: [
-        Expanded(
-          child: _StoreBtn(
-            icon: Icons.apple_rounded,
-            label: 'App Store',
-            sub: 'iPhone & iPad',
-            color: AppTheme.textPrimary,
-            onTap: () {},
-          ),
-        ),
-        const SizedBox(width: 10),
-        Expanded(
-          child: _StoreBtn(
-            icon: Icons.android_rounded,
-            label: 'Google Play',
-            sub: 'Android',
-            color: const Color(0xFF3DDC84),
-            onTap: () {},
-          ),
-        ),
-      ],
-    ).animate().fadeIn(delay: 900.ms);
-  }
+  // ── Footer ────────────────────────────────────────────────────────────────
 
   Widget _buildFooter() {
-    return Column(
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+    return Container(
+      decoration: BoxDecoration(
+        border: Border(top: BorderSide(color: _kBorder, width: 1)),
+      ),
+      padding: const EdgeInsets.symmetric(vertical: 32),
+      child: Column(
+        children: [
+          Wrap(
+            spacing: 24,
+            runSpacing: 10,
+            alignment: WrapAlignment.center,
+            children: [
+              _FooterLink('Gizlilik Politikası', () {}),
+              _FooterLink('Kullanım Koşulları',  () {}),
+              _FooterLink('Hesap Silme Talebi',  () {}),
+              _FooterLink('İletişim',             () {}),
+            ],
+          ),
+          const SizedBox(height: 12),
+          Text(
+            '© 2026 TUS Asistanı. Tüm hakları saklıdır.',
+            style: GoogleFonts.inter(fontSize: 13, color: _kTextSec),
+          ),
+        ],
+      ),
+    ).animate().fadeIn(delay: 300.ms);
+  }
+}
+
+// ── Yardımcı fonksiyon ─────────────────────────────────────────────────────
+
+double _clampFont(double min, double max, double screenW) {
+  final vw = screenW * 0.06;
+  return vw.clamp(min, max);
+}
+
+// ── Arka plan glow ─────────────────────────────────────────────────────────
+
+class _BgGlow extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+    return Positioned.fill(
+      child: IgnorePointer(
+        child: Stack(
           children: [
-            _FooterLink('Gizlilik Politikası', () {}),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+            // Üst-merkez cyan glow
+            Positioned(
+              top: -200,
+              left: size.width / 2 - 400,
               child: Container(
-                width: 3,
-                height: 3,
-                decoration: const BoxDecoration(
-                  color: AppTheme.textMuted,
+                width: 800, height: 600,
+                decoration: BoxDecoration(
+                  gradient: RadialGradient(
+                    colors: [
+                      _kCyan.withValues(alpha: 0.07),
+                      Colors.transparent,
+                    ],
+                    stops: const [0, 1],
+                  ),
+                  shape: BoxShape.circle,
+                ),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(sigmaX: 0, sigmaY: 0),
+                  child: const SizedBox.shrink(),
+                ),
+              ),
+            ),
+            // Alt-sağ purple glow
+            Positioned(
+              bottom: -150,
+              right: -100,
+              child: Container(
+                width: 500, height: 500,
+                decoration: BoxDecoration(
+                  gradient: RadialGradient(
+                    colors: [
+                      _kPurple.withValues(alpha: 0.05),
+                      Colors.transparent,
+                    ],
+                  ),
                   shape: BoxShape.circle,
                 ),
               ),
             ),
-            _FooterLink('Kullanım Şartları', () {}),
-          ],
-        ),
-        const SizedBox(height: 8),
-        Text(
-          '© 2025 AsisTus — Tüm hakları saklıdır.',
-          style: GoogleFonts.inter(color: AppTheme.textMuted, fontSize: 11),
-        ),
-      ],
-    ).animate().fadeIn(delay: 1050.ms);
-  }
-}
-
-// ── Yardımcı Widget'lar ───────────────────────────────────────────────────────
-
-class _FeatureCard extends StatelessWidget {
-  final (IconData, String, String, Color, String?) f;
-  final int delay;
-  const _FeatureCard({required this.f, required this.delay});
-
-  @override
-  Widget build(BuildContext context) {
-    final hasImage = f.$5 != null;
-    return GestureDetector(
-      onTap: () {
-        showDialog(
-          context: context,
-          builder: (context) => BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
-            child: Center(
-              child: Container(
-                margin: const EdgeInsets.all(24),
-                padding: const EdgeInsets.all(24),
-                decoration: BoxDecoration(
-                  color: AppTheme.surface.withValues(alpha: 0.9),
-                  borderRadius: BorderRadius.circular(24),
-                  border: Border.all(color: f.$4.withValues(alpha: 0.3)),
-                  boxShadow: [
-                    BoxShadow(color: Colors.black.withValues(alpha: 0.4), blurRadius: 40),
-                  ],
-                ),
-                constraints: const BoxConstraints(maxWidth: 400),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Container(
-                      width: 56, height: 56,
-                      decoration: BoxDecoration(
-                        color: f.$4.withValues(alpha: 0.15),
-                        shape: BoxShape.circle,
-                      ),
-                      child: Icon(f.$1, color: f.$4, size: 28),
-                    ),
-                    const SizedBox(height: 18),
-                    Text(
-                      f.$2,
-                      style: GoogleFonts.outfit(
-                        fontSize: 22,
-                        fontWeight: FontWeight.w800,
-                        color: AppTheme.textPrimary,
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                    Text(
-                      f.$3,
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.inter(
-                        fontSize: 15,
-                        color: AppTheme.textSecondary,
-                        height: 1.5,
-                      ),
-                    ),
-                    const SizedBox(height: 24),
-                    TextButton(
-                      onPressed: () => Navigator.pop(context),
-                      style: TextButton.styleFrom(
-                        backgroundColor: f.$4.withValues(alpha: 0.1),
-                        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                      ),
-                      child: Text('Anladım', style: TextStyle(color: f.$4, fontWeight: FontWeight.bold)),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        );
-      },
-      child: Container(
-        decoration: BoxDecoration(
-          color: f.$4.withValues(alpha: 0.08),
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: f.$4.withValues(alpha: 0.18)),
-        ),
-        clipBehavior: Clip.antiAlias,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            if (hasImage)
-              SizedBox(
-                height: 100,
-                width: double.infinity,
-                child: Stack(
-                  fit: StackFit.expand,
-                  children: [
-                    Image.asset(
-                      f.$5!,
-                      fit: BoxFit.cover,
-                      cacheWidth: 400,
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            Colors.transparent,
-                            f.$4.withValues(alpha: 0.6),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            Padding(
-              padding: const EdgeInsets.all(12),
-              child: Row(
-                children: [
-                  Container(
-                    width: 32, height: 32,
-                    decoration: BoxDecoration(
-                      color: f.$4.withValues(alpha: 0.16),
-                      borderRadius: BorderRadius.circular(9),
-                    ),
-                    child: Icon(f.$1, color: f.$4, size: 16),
-                  ),
-                  const SizedBox(width: 9),
-                  Expanded(
-                    child: Text(
-                      f.$2,
-                      style: GoogleFonts.inter(
-                        color: AppTheme.textPrimary,
-                        fontSize: 13,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                  ),
-                  Icon(Icons.chevron_right_rounded, color: f.$4.withValues(alpha: 0.5), size: 16),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ).animate().fadeIn(delay: Duration(milliseconds: delay)).slideY(begin: 0.05, end: 0),
-    );
-  }
-}
-
-class _StoreBtn extends StatelessWidget {
-  final IconData icon;
-  final String label;
-  final String sub;
-  final Color color;
-  final VoidCallback onTap;
-  const _StoreBtn({required this.icon, required this.label, required this.sub, required this.color, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-        decoration: BoxDecoration(
-          color: color.withValues(alpha: 0.07),
-          borderRadius: BorderRadius.circular(14),
-          border: Border.all(color: color.withValues(alpha: 0.22)),
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(icon, color: color, size: 24),
-            const SizedBox(width: 8),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(label, style: GoogleFonts.inter(color: AppTheme.textPrimary, fontSize: 13, fontWeight: FontWeight.w700)),
-                Text(sub,   style: GoogleFonts.inter(color: AppTheme.textSecondary, fontSize: 10)),
-              ],
-            ),
           ],
         ),
       ),
@@ -692,43 +548,386 @@ class _StoreBtn extends StatelessWidget {
   }
 }
 
-class _FooterLink extends StatelessWidget {
+// ── Butonlar ───────────────────────────────────────────────────────────────
+
+class _PrimaryBtn extends StatefulWidget {
+  final String label;
+  final VoidCallback onTap;
+  const _PrimaryBtn({required this.label, required this.onTap});
+
+  @override
+  State<_PrimaryBtn> createState() => _PrimaryBtnState();
+}
+
+class _PrimaryBtnState extends State<_PrimaryBtn> {
+  bool _hovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => setState(() => _hovered = true),
+      onExit:  (_) => setState(() => _hovered = false),
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: widget.onTap,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 150),
+          padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 14),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              colors: [_kCyan, Color(0xFF0090B3)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            borderRadius: BorderRadius.circular(14),
+            boxShadow: [
+              BoxShadow(
+                color: _kCyan.withValues(alpha: _hovered ? 0.35 : 0.25),
+                blurRadius: _hovered ? 32 : 24,
+                offset: Offset(0, _hovered ? 12 : 8),
+              ),
+            ],
+          ),
+          transform: _hovered
+              ? (Matrix4.identity()..translate(0.0, -2.0))
+              : Matrix4.identity(),
+          child: Text(
+            widget.label,
+            style: GoogleFonts.inter(
+              fontSize: 15, fontWeight: FontWeight.w700,
+              color: Colors.white,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _WebBtn extends StatefulWidget {
+  final String label;
+  final VoidCallback onTap;
+  const _WebBtn({required this.label, required this.onTap});
+
+  @override
+  State<_WebBtn> createState() => _WebBtnState();
+}
+
+class _WebBtnState extends State<_WebBtn> {
+  bool _hovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => setState(() => _hovered = true),
+      onExit:  (_) => setState(() => _hovered = false),
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: widget.onTap,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 150),
+          padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 14),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: _hovered
+                  ? [
+                      _kCyan.withValues(alpha: 0.20),
+                      _kPurple.withValues(alpha: 0.15),
+                    ]
+                  : [
+                      _kCyan.withValues(alpha: 0.12),
+                      _kPurple.withValues(alpha: 0.10),
+                    ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            borderRadius: BorderRadius.circular(14),
+            border: Border.all(
+              color: _kCyan.withValues(alpha: _hovered ? 0.50 : 0.35),
+            ),
+            boxShadow: _hovered
+                ? [BoxShadow(color: _kCyan.withValues(alpha: 0.15), blurRadius: 24, offset: const Offset(0, 8))]
+                : [],
+          ),
+          transform: _hovered
+              ? (Matrix4.identity()..translate(0.0, -2.0))
+              : Matrix4.identity(),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(Icons.language_rounded, color: _kCyan, size: 18),
+              const SizedBox(width: 8),
+              Text(
+                widget.label,
+                style: GoogleFonts.inter(
+                  fontSize: 15, fontWeight: FontWeight.w700,
+                  color: _kCyan,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _SecondaryBtn extends StatefulWidget {
+  final String label;
+  final VoidCallback onTap;
+  const _SecondaryBtn({required this.label, required this.onTap});
+
+  @override
+  State<_SecondaryBtn> createState() => _SecondaryBtnState();
+}
+
+class _SecondaryBtnState extends State<_SecondaryBtn> {
+  bool _hovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => setState(() => _hovered = true),
+      onExit:  (_) => setState(() => _hovered = false),
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: widget.onTap,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 200),
+          padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 14),
+          decoration: BoxDecoration(
+            color: _hovered
+                ? Colors.white.withValues(alpha: 0.07)
+                : Colors.white.withValues(alpha: 0.04),
+            borderRadius: BorderRadius.circular(14),
+            border: Border.all(
+              color: _hovered
+                  ? _kCyan.withValues(alpha: 0.20)
+                  : _kBorder,
+            ),
+          ),
+          child: Text(
+            widget.label,
+            style: GoogleFonts.inter(
+              fontSize: 15, fontWeight: FontWeight.w600,
+              color: _kTextPri,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ── Özellik Kartı ──────────────────────────────────────────────────────────
+
+class _FeatureCard extends StatefulWidget {
+  final String emoji;
+  final String title;
+  final String desc;
+  final int delay;
+  const _FeatureCard({
+    required this.emoji,
+    required this.title,
+    required this.desc,
+    required this.delay,
+  });
+
+  @override
+  State<_FeatureCard> createState() => _FeatureCardState();
+}
+
+class _FeatureCardState extends State<_FeatureCard> {
+  bool _hovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => setState(() => _hovered = true),
+      onExit:  (_) => setState(() => _hovered = false),
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        padding: const EdgeInsets.all(28),
+        decoration: BoxDecoration(
+          color: _kSurface,
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(
+            color: _hovered ? _kCyan.withValues(alpha: 0.25) : _kBorder,
+          ),
+          boxShadow: _hovered
+              ? [BoxShadow(color: Colors.black.withValues(alpha: 0.30), blurRadius: 40, offset: const Offset(0, 12))]
+              : [],
+        ),
+        transform: _hovered
+            ? (Matrix4.identity()..translate(0.0, -4.0))
+            : Matrix4.identity(),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              width: 48, height: 48,
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [
+                    Color(0x1F00D4FF),  // cyan 12%
+                    Color(0x14A855F7),  // purple 8%
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              alignment: Alignment.center,
+              child: Text(widget.emoji, style: const TextStyle(fontSize: 22)),
+            ),
+            const SizedBox(height: 16),
+            Text(
+              widget.title,
+              style: GoogleFonts.inter(
+                fontSize: 17, fontWeight: FontWeight.w700,
+                color: _kTextPri,
+              ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              widget.desc,
+              style: GoogleFonts.inter(
+                fontSize: 14, color: _kTextSec, height: 1.7,
+              ),
+            ),
+          ],
+        ),
+      ),
+    ).animate().fadeIn(delay: Duration(milliseconds: widget.delay)).slideY(begin: 0.05, end: 0);
+  }
+}
+
+// ── İstatistik Kartı ───────────────────────────────────────────────────────
+
+class _StatCard extends StatefulWidget {
+  final String number;
+  final String label;
+  final int delay;
+  const _StatCard({required this.number, required this.label, required this.delay});
+
+  @override
+  State<_StatCard> createState() => _StatCardState();
+}
+
+class _StatCardState extends State<_StatCard> {
+  bool _hovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => setState(() => _hovered = true),
+      onExit:  (_) => setState(() => _hovered = false),
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        constraints: const BoxConstraints(minWidth: 200),
+        padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 32),
+        decoration: BoxDecoration(
+          color: _kSurface,
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(
+            color: _hovered ? _kCyan.withValues(alpha: 0.20) : _kBorder,
+          ),
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ShaderMask(
+              shaderCallback: (bounds) => const LinearGradient(
+                colors: [_kCyan, _kPurple],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ).createShader(bounds),
+              child: Text(
+                widget.number,
+                style: GoogleFonts.outfit(
+                  fontSize: 42, fontWeight: FontWeight.w800,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              widget.label,
+              style: GoogleFonts.inter(fontSize: 14, color: _kTextSec),
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
+      ),
+    ).animate().fadeIn(delay: Duration(milliseconds: widget.delay)).scale(begin: const Offset(0.95, 0.95));
+  }
+}
+
+// ── Nav Link ───────────────────────────────────────────────────────────────
+
+class _NavLink extends StatefulWidget {
+  final String text;
+  final VoidCallback onTap;
+  const _NavLink(this.text, this.onTap);
+
+  @override
+  State<_NavLink> createState() => _NavLinkState();
+}
+
+class _NavLinkState extends State<_NavLink> {
+  bool _hovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => setState(() => _hovered = true),
+      onExit:  (_) => setState(() => _hovered = false),
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: widget.onTap,
+        child: AnimatedDefaultTextStyle(
+          duration: const Duration(milliseconds: 200),
+          style: GoogleFonts.inter(
+            fontSize: 14, fontWeight: FontWeight.w500,
+            color: _hovered ? _kCyan : _kTextSec,
+          ),
+          child: Text(widget.text),
+        ),
+      ),
+    );
+  }
+}
+
+// ── Footer Link ────────────────────────────────────────────────────────────
+
+class _FooterLink extends StatefulWidget {
   final String text;
   final VoidCallback onTap;
   const _FooterLink(this.text, this.onTap);
 
   @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Text(
-        text,
-        style: GoogleFonts.inter(
-          color: AppTheme.textMuted,
-          fontSize: 11,
-          decoration: TextDecoration.underline,
-          decorationColor: AppTheme.textMuted,
-        ),
-      ),
-    );
-  }
+  State<_FooterLink> createState() => _FooterLinkState();
 }
 
-class _Blob extends StatelessWidget {
-  final Color color;
-  final double size;
-  final double opacity;
-  const _Blob({required this.color, required this.size, required this.opacity});
+class _FooterLinkState extends State<_FooterLink> {
+  bool _hovered = false;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: size,
-      height: size,
-      decoration: BoxDecoration(shape: BoxShape.circle, color: color.withValues(alpha: opacity)),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 80, sigmaY: 80),
-        child: Container(color: Colors.transparent),
+    return MouseRegion(
+      onEnter: (_) => setState(() => _hovered = true),
+      onExit:  (_) => setState(() => _hovered = false),
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: widget.onTap,
+        child: AnimatedDefaultTextStyle(
+          duration: const Duration(milliseconds: 200),
+          style: GoogleFonts.inter(
+            fontSize: 13,
+            color: _hovered ? _kCyan : _kTextSec,
+          ),
+          child: Text(widget.text),
+        ),
       ),
     );
   }

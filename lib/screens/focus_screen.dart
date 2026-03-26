@@ -137,7 +137,9 @@ class _FocusScreenState extends State<FocusScreen>
           IconButton(
             icon: Icon(Icons.arrow_back_ios_new_rounded,
                 color: isDark ? Colors.white60 : AppTheme.lightTextPrimary, size: 20),
-            onPressed: () => Navigator.pop(context),
+            onPressed: () {
+              if (Navigator.canPop(context)) Navigator.pop(context);
+            },
           ),
           const Spacer(),
           Text(

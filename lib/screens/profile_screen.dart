@@ -1,6 +1,4 @@
 import 'dart:io';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -21,8 +19,7 @@ import 'package:provider/provider.dart';
 import 'auth/login_screen.dart';
 import '../services/specialty_score_service.dart';
 import 'specialty_detail_screen.dart';
-import '../services/premium_service.dart';
-import '../widgets/paywall_widget.dart';
+import '../widgets/goal_setup_sheet.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -40,8 +37,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
   int _totalSolved = 0;
   int _correctCount = 0;
   int _srsCardCount = 0;
-  StudyProgress _progress = StudyProgress();
-  bool _isPremium = false;
 
   @override
   void initState() {
@@ -52,23 +47,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Future<void> _load() async {
     final results = await Future.wait([
       _userService.loadUser(),
-      ProgressService().loadProgress(),
+      ProgressService().loadProgressCached(),
       SpacedRepetitionService().getAllData(),
-      PremiumService().isPremium(),
     ]);
 
     if (mounted) {
       final user     = results[0] as UserProfile;
       final progress = results[1] as StudyProgress;
       final srsData  = results[2] as Map<String, dynamic>;
-      final premium  = results[3] as bool;
       setState(() {
         _user = user;
-        _progress = progress;
         _totalSolved = progress.totalFlashcardsStudied + progress.totalCasesAttempted;
         _correctCount = progress.correctAnswers;
         _srsCardCount = srsData.length;
-        _isPremium = premium;
         _loading = false;
       });
     }
@@ -102,7 +93,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   leading: IconButton(
                     icon: Icon(Icons.arrow_back_ios_rounded,
                         color: textColor, size: 20),
-                    onPressed: () => Navigator.pop(context),
+                    onPressed: () {
+                      if (Navigator.canPop(context)) Navigator.pop(context);
+                    },
                   ),
                   actions: [
                     TextButton.icon(
@@ -130,10 +123,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         // ── İstatistik Kartları ─────────────────────────
                         _buildStatsRow(isDark),
                         const SizedBox(height: 16),
-
-                        // ── Hedef Puan ──────────────────────────────────
-                        _buildTargetCard(isDark, textColor, subColor),
-                        const SizedBox(height: 24),
 
                         // ── Ayarlar ─────────────────────────────────────
                         _buildSettingsSection(isDark, textColor, subColor),
@@ -319,113 +308,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
         .slideY(begin: 0.1, end: 0, duration: 400.ms);
   }
 
-  // ── Hedef Puan Kartı ──────────────────────────────────────────────────────
-
-  Widget _buildTargetCard(bool isDark, Color textColor, Color subColor) {
-    final today = _progress.todayStudied;
-    final goal = _progress.dailyGoal;
-    final daysLeft = _progress.daysToExam;
-    final progressRatio = goal > 0 ? (today / goal) : 0.0;
-
-    return GestureDetector(
-      onTap: () => _showGoalSetupSheet(isDark),
-      child: Container(
-            padding: const EdgeInsets.all(20),
-            decoration: BoxDecoration(
-              color: isDark
-                  ? const Color(0xFF1E2A3A)
-                  : Colors.white.withValues(alpha: 0.90),
-              borderRadius: BorderRadius.circular(22),
-              border: Border.all(
-                  color: isDark
-                      ? Colors.white.withValues(alpha: 0.10)
-                      : Colors.black.withValues(alpha: 0.06),
-                  width: 1),
-            ),
-            child: Row(
-              children: [
-                // Circular progress (0/50 etc)
-                SizedBox(
-                  width: 64,
-                  height: 64,
-                  child: Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      CustomPaint(
-                        size: const Size(64, 64),
-                        painter: _CircularProgressPainter(
-                          progress: progressRatio.clamp(0.0, 1.0),
-                          color: AppTheme.cyan,
-                          bgColor: isDark
-                              ? Colors.white.withValues(alpha: 0.08)
-                              : Colors.black.withValues(alpha: 0.06),
-                        ),
-                      ),
-                      Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Text(
-                            '$today',
-                            style: GoogleFonts.inter(
-                                color: AppTheme.cyan,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w900,
-                                height: 1.1),
-                          ),
-                          Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              if (!_isPremium)
-                                Icon(Icons.lock_rounded, size: 8, color: AppTheme.neonGold),
-                              Text(
-                                '/$goal',
-                                style: GoogleFonts.inter(
-                                    color: subColor,
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w600),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 18),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(_isPremium ? 'Günlük Hedef (Premium)' : 'Günlük Limit (Ücretsiz)',
-                          style: GoogleFonts.inter(
-                              color: textColor,
-                              fontSize: 15,
-                              fontWeight: FontWeight.w800)),
-                      const SizedBox(height: 4),
-                      Text('Branş: ${_user.targetBranch}',
-                          style: GoogleFonts.inter(
-                              color: AppTheme.neonPurple,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w700)),
-                      const SizedBox(height: 2),
-                      Text('Sınava $daysLeft gün kaldı',
-                          style: GoogleFonts.inter(
-                              color: AppTheme.neonGold,
-                              fontSize: 11,
-                              fontWeight: FontWeight.w600)),
-                    ],
-                  ),
-                ),
-                Icon(Icons.chevron_right_rounded, color: subColor, size: 20),
-              ],
-            ),
-          ),
-    )
-        .animate()
-        .fadeIn(delay: 400.ms, duration: 400.ms)
-        .slideY(begin: 0.1, end: 0, duration: 400.ms);
-  }
-
   // ── Tema Chip ──────────────────────────────────────────────────────────────
 
   Widget _themeChip(IconData icon, String label, bool selected, AppThemeMode target, bool isDark) {
@@ -479,7 +361,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           label: 'Akıllı Hedef Belirleme',
           isDark: isDark,
           color: AppTheme.neonGold,
-          onTap: () => _showGoalSetupSheet(isDark),
+          onTap: () => showGoalSetupSheet(context, isDark, onSaved: _load),
         ),
 
         // Tema — 3'lü Segmented Control
@@ -679,36 +561,33 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         tileColor: selected
                             ? AppTheme.cyan.withValues(alpha: 0.1)
                             : null,
-                        leading: Hero(
-                          tag: 'specialty_hero_$branch',
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(10),
-                            child: SizedBox(
-                              width: 48,
-                              height: 48,
-                              child: Stack(
-                                fit: StackFit.expand,
-                                children: [
-                                  Image.asset(
-                                    imgPath,
-                                    fit: BoxFit.cover,
-                                    cacheWidth: 96,
-                                  ),
-                                  Container(
-                                    decoration: BoxDecoration(
-                                      gradient: LinearGradient(
-                                        begin: Alignment.topCenter,
-                                        end: Alignment.bottomCenter,
-                                        colors: [
-                                          Colors.transparent,
-                                          Colors.black
-                                              .withValues(alpha: 0.35),
-                                        ],
-                                      ),
+                        leading: ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: SizedBox(
+                            width: 48,
+                            height: 48,
+                            child: Stack(
+                              fit: StackFit.expand,
+                              children: [
+                                Image.asset(
+                                  imgPath,
+                                  fit: BoxFit.cover,
+                                  cacheWidth: 96,
+                                ),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                      begin: Alignment.topCenter,
+                                      end: Alignment.bottomCenter,
+                                      colors: [
+                                        Colors.transparent,
+                                        Colors.black
+                                            .withValues(alpha: 0.35),
+                                      ],
                                     ),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
@@ -832,6 +711,54 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 fontSize: 13,
                                 fontWeight: FontWeight.w400)),
                         const SizedBox(height: 28),
+                        // FOTOĞRAF bölümü — avatardan önce
+                        Text('FOTOĞRAF',
+                            style: GoogleFonts.inter(color: subColor, fontSize: 11, fontWeight: FontWeight.w700, letterSpacing: 1.2)),
+                        const SizedBox(height: 10),
+                        Center(
+                          child: GestureDetector(
+                            onTap: () async {
+                              Navigator.pop(ctx);
+                              await _pickProfileImage();
+                              if (mounted) _showEditSheet(context, isDark);
+                            },
+                            child: Stack(
+                              children: [
+                                Container(
+                                  width: 80, height: 80,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    gradient: (_user.profileImagePath == null || _user.profileImagePath!.isEmpty)
+                                        ? const LinearGradient(colors: [AppTheme.cyan, AppTheme.neonPink], begin: Alignment.topLeft, end: Alignment.bottomRight)
+                                        : null,
+                                    image: (_user.profileImagePath != null && _user.profileImagePath!.isNotEmpty && !kIsWeb)
+                                        ? DecorationImage(image: FileImage(File(_user.profileImagePath!)), fit: BoxFit.cover)
+                                        : null,
+                                    border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.3), width: 2),
+                                  ),
+                                  child: (_user.profileImagePath == null || _user.profileImagePath!.isEmpty)
+                                      ? Center(child: Text(tempUser.profileEmoji, style: GoogleFonts.inter(color: Colors.white, fontSize: 28, fontWeight: FontWeight.w800)))
+                                      : null,
+                                ),
+                                Positioned(
+                                  right: 0, bottom: 0,
+                                  child: Container(
+                                    width: 26, height: 26,
+                                    decoration: BoxDecoration(
+                                      color: AppTheme.cyan,
+                                      shape: BoxShape.circle,
+                                      border: Border.all(color: isDark ? AppTheme.surface : Colors.white, width: 2),
+                                    ),
+                                    child: const Icon(Icons.camera_alt_rounded, color: Colors.white, size: 14),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 6),
+                        Center(child: Text('Fotoğraf değiştirmek için dokunun', style: GoogleFonts.inter(color: subColor.withValues(alpha: 0.6), fontSize: 11))),
+                        const SizedBox(height: 20),
                         Text('AVATAR',
                             style: GoogleFonts.inter(
                                 color: subColor,
@@ -909,6 +836,41 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               isDark: isDark),
                           onChanged: (v) => setSheetState(
                               () => tempUser = tempUser.copyWith(name: v)),
+                        ),
+                        const SizedBox(height: 20),
+                        Text('E-POSTA',
+                            style: GoogleFonts.inter(color: subColor, fontSize: 11, fontWeight: FontWeight.w700, letterSpacing: 1.2)),
+                        const SizedBox(height: 8),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 15),
+                          decoration: BoxDecoration(
+                            color: isDark ? Colors.white.withValues(alpha: 0.03) : Colors.black.withValues(alpha: 0.02),
+                            borderRadius: BorderRadius.circular(14),
+                            border: Border.all(color: isDark ? Colors.white.withValues(alpha: 0.05) : Colors.black.withValues(alpha: 0.04)),
+                          ),
+                          child: Row(
+                            children: [
+                              Icon(Icons.email_outlined, size: 20, color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary),
+                              const SizedBox(width: 12),
+                              Expanded(
+                                child: Text(
+                                  AuthService.instance.currentUser?.email ?? 'E-posta bulunamadı',
+                                  style: GoogleFonts.inter(
+                                    color: (isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary).withValues(alpha: 0.7),
+                                    fontSize: 14, fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                                decoration: BoxDecoration(
+                                  color: isDark ? Colors.white.withValues(alpha: 0.05) : Colors.black.withValues(alpha: 0.04),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Text('Değiştirilemez', style: GoogleFonts.inter(color: subColor.withValues(alpha: 0.5), fontSize: 10)),
+                              ),
+                            ],
+                          ),
                         ),
                         const SizedBox(height: 24),
                         Text('HEDEF UZMANLIK DALI',
@@ -1023,279 +985,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-  // ── Akıllı Hedef Belirleme Sheet ────────────────────────────────────────────
-
-  void _showGoalSetupSheet(bool isDark) {
-    final progressService = ProgressService();
-    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
-    final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
-
-    bool sheetLoading = true;
-    bool loadStarted = false;
-    StudyProgress progress = StudyProgress();
-    bool isPremium = false;
-    double tempBase = 0;
-    double tempTarget = 0;
-    DateTime tempTargetDate = DateTime.now();
-
-    showModalBottomSheet(
-      context: context,
-      isScrollControlled: true,
-      backgroundColor: Colors.transparent,
-      builder: (ctx) => StatefulBuilder(
-        builder: (ctx, setModalState) {
-          if (!loadStarted) {
-            loadStarted = true;
-            Future.wait([
-              progressService.loadProgress(),
-              PremiumService().isPremium(),
-            ]).then((results) {
-              if (ctx.mounted) {
-                setModalState(() {
-                  progress = results[0] as StudyProgress;
-                  isPremium = results[1] as bool;
-                  tempBase = progress.baseScore;
-                  tempTarget = progress.targetScore;
-                  tempTargetDate = DateTime.parse(progress.targetTusDate);
-                  sheetLoading = false;
-                });
-              }
-            });
-          }
-
-          if (sheetLoading) {
-            return Container(
-              height: 220,
-              decoration: BoxDecoration(
-                color: isDark ? AppTheme.background : Colors.white,
-                borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
-                border: Border.all(color: AppTheme.neonGold.withValues(alpha: 0.15), width: 1.5),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Center(child: Container(
-                    width: 40, height: 4,
-                    margin: const EdgeInsets.only(bottom: 32),
-                    decoration: BoxDecoration(
-                      color: AppTheme.textMuted.withValues(alpha: 0.3),
-                      borderRadius: BorderRadius.circular(2),
-                    ),
-                  )),
-                  CircularProgressIndicator(color: AppTheme.neonGold, strokeWidth: 2),
-                  const SizedBox(height: 16),
-                  Text('Veriler yükleniyor...', style: GoogleFonts.inter(color: subColor, fontSize: 13)),
-                ],
-              ),
-            );
-          }
-
-          final targetStr = tempTargetDate.toIso8601String().split('T')[0];
-          final recommendation = progress.copyWith(
-            baseScore: tempBase,
-            targetScore: tempTarget,
-            targetTusDate: targetStr,
-          ).recommendedDailyGoal;
-          final days = progress.copyWith(targetTusDate: targetStr).daysToExam;
-
-          return Container(
-            decoration: BoxDecoration(
-              color: isDark ? AppTheme.background : Colors.white,
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
-              border: Border.all(color: AppTheme.neonGold.withValues(alpha: 0.15), width: 1.5),
-            ),
-            child: SingleChildScrollView(
-              padding: EdgeInsets.fromLTRB(24, 12, 24, 32 + MediaQuery.of(ctx).viewInsets.bottom),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Center(
-                    child: Container(
-                      width: 40, height: 4,
-                      decoration: BoxDecoration(
-                        color: AppTheme.textMuted.withValues(alpha: 0.3),
-                        borderRadius: BorderRadius.circular(2),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 32),
-                  Text('Akıllı Hedef Belirleme',
-                    style: GoogleFonts.inter(
-                      color: textColor,
-                      fontSize: 24, fontWeight: FontWeight.w900, letterSpacing: -1.0,
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text('Sınav başarınızı garantilemek için verilerinizi girin.',
-                    style: GoogleFonts.inter(color: subColor, fontSize: 14)),
-                  const SizedBox(height: 32),
-                  _GoalScoreInput(
-                    label: 'Mevcut TUS Puanın',
-                    value: tempBase,
-                    color: AppTheme.cyan,
-                    isDark: isDark,
-                    onChanged: (val) => setModalState(() => tempBase = val),
-                  ),
-                  const SizedBox(height: 24),
-                  _GoalScoreInput(
-                    label: 'Hedeflediğin Puan',
-                    value: tempTarget,
-                    color: AppTheme.neonGold,
-                    isDark: isDark,
-                    onChanged: (val) => setModalState(() => tempTarget = val),
-                  ),
-                  const SizedBox(height: 24),
-                  _GoalDateInput(
-                    label: 'Hedef TUS Tarihi',
-                    value: tempTargetDate,
-                    color: AppTheme.neonPink,
-                    isDark: isDark,
-                    onTap: () async {
-                      final picked = await showDatePicker(
-                        context: context,
-                        initialDate: tempTargetDate,
-                        firstDate: DateTime.now(),
-                        lastDate: DateTime.now().add(const Duration(days: 1000)),
-                        builder: (context, child) => Theme(
-                          data: Theme.of(context).copyWith(
-                            colorScheme: (isDark ? const ColorScheme.dark() : const ColorScheme.light()).copyWith(
-                              primary: AppTheme.neonPink,
-                              onPrimary: Colors.white,
-                              surface: isDark ? AppTheme.surface : AppTheme.lightSurface,
-                            ),
-                          ),
-                          child: child!,
-                        ),
-                      );
-                      if (picked != null) {
-                        setModalState(() => tempTargetDate = picked);
-                      }
-                    },
-                  ),
-                  const SizedBox(height: 48),
-                  GestureDetector(
-                    onTap: (!isPremium && recommendation >= PremiumService.dailyFreeFlashcardLimit)
-                        ? () {
-                            Navigator.of(ctx).pop();
-                            showModalBottomSheet(
-                              context: context,
-                              isScrollControlled: true,
-                              backgroundColor: Colors.transparent,
-                              builder: (_) => const PaywallWidget(type: 'flashcard', dailyLimit: PremiumService.dailyFreeFlashcardLimit),
-                            );
-                          }
-                        : null,
-                    child: Container(
-                      padding: const EdgeInsets.all(20),
-                      decoration: BoxDecoration(
-                        color: (!isPremium && recommendation > PremiumService.dailyFreeFlashcardLimit)
-                            ? AppTheme.neonGold.withValues(alpha: 0.1)
-                            : AppTheme.cyan.withValues(alpha: 0.1),
-                        borderRadius: BorderRadius.circular(24),
-                        border: Border.all(
-                          color: (!isPremium && recommendation > PremiumService.dailyFreeFlashcardLimit)
-                              ? AppTheme.neonGold.withValues(alpha: 0.3)
-                              : AppTheme.cyan.withValues(alpha: 0.2),
-                        ),
-                      ),
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  isPremium ? 'Önerilen Günlük Soru/Kart' : 'Günlük Limit (Ücretsiz)',
-                                  style: GoogleFonts.inter(color: subColor, fontSize: 13, fontWeight: FontWeight.w600),
-                                ),
-                                const SizedBox(height: 4),
-                                Row(
-                                  children: [
-                                    Text(
-                                      '${isPremium ? recommendation : recommendation.clamp(0, PremiumService.dailyFreeFlashcardLimit)} Adet',
-                                      style: GoogleFonts.inter(
-                                        color: (!isPremium && recommendation > PremiumService.dailyFreeFlashcardLimit)
-                                            ? AppTheme.neonGold
-                                            : AppTheme.cyan,
-                                        fontSize: 28,
-                                        fontWeight: FontWeight.w900,
-                                      ),
-                                    ),
-                                    if (!isPremium && recommendation > PremiumService.dailyFreeFlashcardLimit) ...[
-                                      const SizedBox(width: 8),
-                                      Icon(Icons.lock_rounded, size: 18, color: AppTheme.neonGold),
-                                    ],
-                                  ],
-                                ),
-                                if (!isPremium && recommendation > PremiumService.dailyFreeFlashcardLimit)
-                                  Text(
-                                    'Premium\'a geç: $recommendation kart/gün',
-                                    style: GoogleFonts.inter(color: AppTheme.neonGold, fontSize: 11, fontWeight: FontWeight.w600),
-                                  ),
-                              ],
-                            ),
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              Text('$days Gün Kaldı',
-                                style: GoogleFonts.inter(color: subColor, fontSize: 12)),
-                              Text('${tempTargetDate.day} ${_getMonthName(tempTargetDate.month)}',
-                                style: GoogleFonts.inter(color: textColor, fontSize: 18, fontWeight: FontWeight.w800)),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 24),
-                  SizedBox(
-                    width: double.infinity, height: 60,
-                    child: ElevatedButton(
-                      onPressed: () async {
-                        HapticFeedback.lightImpact();
-                        final messenger = ScaffoldMessenger.of(context);
-                        await progressService.saveScoreGoal(base: tempBase, target: tempTarget);
-                        await progressService.saveGoalSettings(
-                          weekdayGoalHours: progress.weekdayGoalHours,
-                          weekendGoalHours: progress.weekendGoalHours,
-                          targetTusDate: targetStr,
-                        );
-                        await _userService.saveUser(_user.copyWith(targetDate: tempTargetDate));
-                        final effectiveGoal = isPremium
-                            ? recommendation
-                            : recommendation.clamp(0, PremiumService.dailyFreeFlashcardLimit);
-                        await progressService.setDailyGoal(effectiveGoal);
-                        if (Navigator.of(ctx).canPop()) {
-                          Navigator.of(ctx).pop();
-                        }
-                        _load();
-                        messenger.showSnackBar(
-                          SnackBar(
-                            content: Text('Günlük hedefin ($effectiveGoal soru) güncellendi! 🚀'),
-                            behavior: SnackBarBehavior.floating,
-                            backgroundColor: AppTheme.success,
-                          ),
-                        );
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppTheme.cyan,
-                        foregroundColor: Colors.white,
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                        elevation: 4,
-                      ),
-                      child: const Text('HEDEFİ ONAYLA', style: TextStyle(fontWeight: FontWeight.w900, letterSpacing: 0.5)),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        },
-      ),
-    );
-  }
 
   // ── Çıkış Yap ──────────────────────────────────────────────────────────────
 
@@ -1451,10 +1140,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-  String _getMonthName(int month) {
-    const names = ['', 'Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
-    return names[month];
-  }
 }
 
 // ── Stat Mini Card ───────────────────────────────────────────────────────────
@@ -1562,184 +1247,3 @@ class _SettingsTile extends StatelessWidget {
   }
 }
 
-// ── Circular Progress Painter ────────────────────────────────────────────────
-
-class _CircularProgressPainter extends CustomPainter {
-  final double progress;
-  final Color color;
-  final Color bgColor;
-
-  _CircularProgressPainter({
-    required this.progress,
-    required this.color,
-    required this.bgColor,
-  });
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final center = Offset(size.width / 2, size.height / 2);
-    final radius = size.width / 2 - 4;
-
-    // Background circle
-    canvas.drawCircle(
-      center,
-      radius,
-      Paint()
-        ..color = bgColor
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 6,
-    );
-
-    // Progress arc
-    canvas.drawArc(
-      Rect.fromCircle(center: center, radius: radius),
-      -pi / 2,
-      2 * pi * progress,
-      false,
-      Paint()
-        ..color = color
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 6
-        ..strokeCap = StrokeCap.round,
-    );
-  }
-
-  @override
-  bool shouldRepaint(covariant _CircularProgressPainter old) =>
-      old.progress != progress;
-}
-
-// ── Hedef Puan Slider Input ─────────────────────────────────────────────────
-
-class _GoalScoreInput extends StatelessWidget {
-  final String label;
-  final double value;
-  final Color color;
-  final bool isDark;
-  final ValueChanged<double> onChanged;
-
-  const _GoalScoreInput({
-    required this.label,
-    required this.value,
-    required this.color,
-    required this.isDark,
-    required this.onChanged,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(label,
-                style: GoogleFonts.inter(
-                    color: textColor,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w700)),
-            Text(value.toStringAsFixed(1),
-                style: GoogleFonts.inter(
-                    color: color,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900)),
-          ],
-        ),
-        const SizedBox(height: 8),
-        SliderTheme(
-          data: SliderTheme.of(context).copyWith(
-            activeTrackColor: color,
-            thumbColor: color,
-            overlayColor: color.withValues(alpha: 0.2),
-            trackHeight: 6,
-          ),
-          child: Slider(
-            value: value,
-            min: 40.0,
-            max: 85.0,
-            onChanged: onChanged,
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-// ── Hedef Tarih Seçim Input ──────────────────────────────────────────────────
-
-class _GoalDateInput extends StatelessWidget {
-  final String label;
-  final DateTime value;
-  final Color color;
-  final bool isDark;
-  final VoidCallback onTap;
-
-  const _GoalDateInput({
-    required this.label,
-    required this.value,
-    required this.color,
-    required this.isDark,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
-    final subColor = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(label,
-            style: GoogleFonts.inter(
-                color: textColor,
-                fontSize: 16,
-                fontWeight: FontWeight.w700)),
-        const SizedBox(height: 12),
-        GestureDetector(
-          onTap: () {
-            HapticFeedback.lightImpact();
-            onTap();
-          },
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-            decoration: BoxDecoration(
-              color: color.withValues(alpha: isDark ? 0.08 : 0.05),
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                  color: color.withValues(alpha: isDark ? 0.25 : 0.15),
-                  width: 1.5),
-            ),
-            child: Row(
-              children: [
-                Icon(Icons.calendar_today_rounded, color: color, size: 20),
-                const SizedBox(width: 16),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text('Sınav Günü', style: GoogleFonts.inter(color: subColor, fontSize: 11)),
-                    Text('${value.day} ${_getMonthName(value.month)} ${value.year}',
-                        style: GoogleFonts.inter(
-                            color: textColor,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w800)),
-                  ],
-                ),
-                const Spacer(),
-                Icon(Icons.edit_calendar_rounded, color: color.withValues(alpha: 0.5), size: 18),
-              ],
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-
-  String _getMonthName(int month) {
-    const names = ['', 'Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
-    return names[month];
-  }
-}

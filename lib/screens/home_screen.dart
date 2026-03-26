@@ -13,7 +13,9 @@ import '../models/user_model.dart';
 import '../models/progress_model.dart';
 import '../models/topic_model.dart';
 import '../widgets/ai_insight_sheet.dart';
+import '../widgets/goal_setup_sheet.dart';
 import '../widgets/notifications_sheet.dart';
+import '../widgets/readiness_card.dart';
 import '../models/subject_registry.dart';
 import '../models/sm2_model.dart';
 import '../services/data_service.dart';
@@ -39,7 +41,12 @@ import '../services/focus_service.dart';
 // ╚══════════════════════════════════════════════════════════════════════════╝
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  /// Web AdaptiveAppShell içinde kullanılırken true yapılır:
+  /// shell kendi sidebar nav'ını sağladığından HomeScreen'in
+  /// alt nav çubuğunu gizler.
+  final bool hideBottomNav;
+
+  const HomeScreen({super.key, this.hideBottomNav = false});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -162,7 +169,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
-    return Scaffold(
+    return PopScope(
+      canPop: false, // Ana ekranda geri tuşu uygulamayı kapatmasın / siyah ekran olmasın
+      child: Scaffold(
       extendBody: true,
       backgroundColor: Colors.transparent,
       body: Container(
@@ -180,60 +189,32 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             // ── Ambient Neon Glows — RepaintBoundary ile izole edildi ────────
             Positioned(top: -160, left: -120,
-                child: RepaintBoundary(child: _AmbientBlob(color: AppTheme.cyan,      size: 500, opacity: isDark ? 0.12 : 0.05))),
+                child: RepaintBoundary(child: _AmbientBlob(color: AppTheme.cyan,      size: 500, opacity: isDark ? 0.12 : 0.05, pulseDuration: const Duration(milliseconds: 6000)))),
             Positioned(top: 180, right: -140,
-                child: RepaintBoundary(child: _AmbientBlob(color: AppTheme.neonPink,  size: 420, opacity: isDark ? 0.10 : 0.04))),
+                child: RepaintBoundary(child: _AmbientBlob(color: AppTheme.neonPink,  size: 420, opacity: isDark ? 0.10 : 0.04, pulseDuration: const Duration(milliseconds: 7500)))),
             Positioned(bottom: 150, left: -100,
-                child: RepaintBoundary(child: _AmbientBlob(color: AppTheme.neonPurple,size: 360, opacity: isDark ? 0.10 : 0.04))),
+                child: RepaintBoundary(child: _AmbientBlob(color: AppTheme.neonPurple,size: 360, opacity: isDark ? 0.10 : 0.04, pulseDuration: const Duration(milliseconds: 5200)))),
             Positioned(bottom: -80, right: -60,
-                child: RepaintBoundary(child: _AmbientBlob(color: AppTheme.cyan,      size: 300, opacity: isDark ? 0.07 : 0.03))),
+                child: RepaintBoundary(child: _AmbientBlob(color: AppTheme.cyan,      size: 300, opacity: isDark ? 0.07 : 0.03, pulseDuration: const Duration(milliseconds: 8000)))),
 
             // ── Main Content ────────────────────────────────────────────────
             SafeArea(
               bottom: false,
               child: Column(
                 children: [
-                  _buildHeader(isDark),
+                  // Web'de header gereksiz — sol panel profili gösteriyor
+                  if (!kIsWeb) _buildHeader(isDark),
+                  // ── Platform-Aware Content ──────────────────────────
                   Expanded(
                     child: _loading
                         ? _buildLoadingState()
-                        : RefreshIndicator(
-                            onRefresh: _loadData,
-                            color: AppTheme.cyan,
-                            backgroundColor: isDark ? AppTheme.surface : Colors.white,
-                            child: SingleChildScrollView(
-                              physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
-                              padding: EdgeInsets.only(
-                                bottom: MediaQuery.of(context).padding.bottom + 110,
-                              ),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const SizedBox(height: 16),
-
-                                  // ── Günün Akıllı Görevi ────────────────────────────────
-                                  _buildSmartTaskCard(isDark),
-
-                                  const SizedBox(height: 24),
-
-                                  // ── Flashcard Hub ──────────────────────────────────────
-                                  RepaintBoundary(child: _buildFlashcardHub(isDark)),
-
-                                  const SizedBox(height: 32),
-
-                                  // ── Questions Hub (Sorular) ─────────────────────────────
-                                  RepaintBoundary(child: _buildCaseHub(isDark)),
-
-                                  const SizedBox(height: 20),
-
-                                  // ── Spot Bilgiler Hızlı Erişim ────────────────────────
-                                  _buildSpotBilgilerButton(isDark),
-
-                                  const SizedBox(height: 20),
-                                ],
-                              ),
-                            ),
-                          ),
+                        : kIsWeb
+                            ? LayoutBuilder(
+                                builder: (ctx, c) => c.maxWidth > 900
+                                    ? _buildDesktopDashboard(isDark)
+                                    : _buildMobileScrollContent(isDark),
+                              )
+                            : _buildMobileScrollContent(isDark),
                   ),
                 ],
               ),
@@ -241,7 +222,687 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      bottomNavigationBar: _buildBottomNav(isDark),
+      bottomNavigationBar: widget.hideBottomNav ? null : _buildBottomNav(isDark),
+      ),
+    );
+  }
+
+  // ── Mobile Scroll Content (mevcut layout) ─────────────────────────────────
+  Widget _buildMobileScrollContent(bool isDark) {
+    return RefreshIndicator(
+      onRefresh: _loadData,
+      color: AppTheme.cyan,
+      backgroundColor: isDark ? AppTheme.surface : Colors.white,
+      child: SingleChildScrollView(
+        physics: const BouncingScrollPhysics(
+            parent: AlwaysScrollableScrollPhysics()),
+        padding: EdgeInsets.only(
+          bottom: MediaQuery.of(context).padding.bottom + 110,
+        ),
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 1100),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SizedBox(height: 16),
+                _buildGreeting(isDark),
+                const SizedBox(height: 16),
+                _buildAiCoachPanel(isDark),
+                const SizedBox(height: 16),
+                _buildSmartTaskCard(isDark),
+                const SizedBox(height: 20),
+                LayoutBuilder(builder: (ctx, c) {
+                  if (c.maxWidth > 820) {
+                    return Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(child: _WebHoverSection(isDark: isDark, child: _buildFlashcardHub(isDark))),
+                        const SizedBox(width: 16),
+                        Expanded(child: _WebHoverSection(isDark: isDark, child: _buildCaseHub(isDark))),
+                      ],
+                    );
+                  }
+                  return Column(children: [
+                    _buildFlashcardHub(isDark),
+                    const SizedBox(height: 32),
+                    _buildCaseHub(isDark),
+                  ]);
+                }),
+                const SizedBox(height: 20),
+                _buildSpotBilgilerButton(isDark),
+                const SizedBox(height: 20),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  // ── Desktop 3-Column Dashboard ─────────────────────────────────────────────
+  Widget _buildDesktopDashboard(bool isDark) {
+    final divColor = isDark
+        ? Colors.white.withValues(alpha: 0.07)
+        : Colors.black.withValues(alpha: 0.05);
+
+    return Column(
+      children: [
+        // ── Desktop Top Bar: Hızlı Erişim ────────────────────────────
+        Container(
+          height: 56,
+          decoration: BoxDecoration(
+            border: Border(bottom: BorderSide(color: divColor)),
+          ),
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: Row(
+            children: [
+              Text(
+                'Ana Sayfa',
+                style: GoogleFonts.inter(
+                  color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              const Spacer(),
+              _buildIconTrio(isDark),
+              const SizedBox(width: 4),
+            ],
+          ),
+        ),
+
+        // ── 3 Sütun Dashboard ─────────────────────────────────────────
+        Expanded(child: Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // ── Sol Panel (240px) ─────────────────────────────────────────
+        SizedBox(
+          width: 240,
+          child: Container(
+            decoration:
+                BoxDecoration(border: Border(right: BorderSide(color: divColor))),
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.only(bottom: 40),
+              physics: const BouncingScrollPhysics(),
+              child: _buildDesktopLeftPanel(isDark),
+            ),
+          ),
+        ),
+
+        // ── Orta Panel (flex) ─────────────────────────────────────────
+        Expanded(
+          flex: 5,
+          child: RefreshIndicator(
+            onRefresh: _loadData,
+            color: AppTheme.cyan,
+            backgroundColor: isDark ? AppTheme.surface : Colors.white,
+            child: SingleChildScrollView(
+              physics: const BouncingScrollPhysics(
+                  parent: AlwaysScrollableScrollPhysics()),
+              padding: const EdgeInsets.only(bottom: 40),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(height: 20),
+                  _buildGreeting(isDark),
+                  const SizedBox(height: 16),
+                  _buildAiCoachPanel(isDark),
+                  const SizedBox(height: 16),
+                  _buildSmartTaskCard(isDark),
+                  const SizedBox(height: 20),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                          child: _WebHoverSection(
+                              isDark: isDark,
+                              child: _buildFlashcardHub(isDark))),
+                      const SizedBox(width: 16),
+                      Expanded(
+                          child: _WebHoverSection(
+                              isDark: isDark, child: _buildCaseHub(isDark))),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+                ],
+              ),
+            ),
+          ),
+        ),
+
+        // ── Sağ Panel (260px) ─────────────────────────────────────────
+        SizedBox(
+          width: 260,
+          child: Container(
+            decoration:
+                BoxDecoration(border: Border(left: BorderSide(color: divColor))),
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.only(bottom: 40),
+              physics: const BouncingScrollPhysics(),
+              child: _buildDesktopRightPanel(isDark),
+            ),
+          ),
+        ),
+      ]),
+      ),
+      ],
+    );
+  }
+
+  // ── Desktop Sol Panel: Profil + İstatistikler ─────────────────────────────
+  Widget _buildDesktopLeftPanel(bool isDark) {
+    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
+    final subColor  = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+    final surfaceBg = isDark ? AppTheme.surface : Colors.white;
+    final divColor  = isDark
+        ? Colors.white.withValues(alpha: 0.07)
+        : Colors.black.withValues(alpha: 0.05);
+    final accuracy = _progress.totalFlashcardsStudied > 0
+        ? (_progress.correctAnswers / _progress.totalFlashcardsStudied * 100).round()
+        : 0;
+    final dailyPct = _progress.dailyGoal > 0
+        ? (_progress.todayStudied / _progress.dailyGoal).clamp(0.0, 1.0)
+        : 0.0;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        // ── Profil Kartı ──────────────────────────────────────────────
+        Padding(
+          padding: const EdgeInsets.fromLTRB(14, 24, 14, 0),
+          child: Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: surfaceBg,
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(color: divColor),
+              boxShadow: [
+                BoxShadow(
+                  color: isDark
+                      ? Colors.black.withValues(alpha: 0.20)
+                      : Colors.black.withValues(alpha: 0.04),
+                  blurRadius: 12,
+                ),
+              ],
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Avatar + isim
+                Row(
+                  children: [
+                    Container(
+                      width: 42,
+                      height: 42,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        gradient: const LinearGradient(
+                          colors: [AppTheme.cyan, AppTheme.neonPink],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                              color: AppTheme.cyan.withValues(alpha: 0.30),
+                              blurRadius: 10)
+                        ],
+                      ),
+                      child: Center(
+                        child: Text(
+                          _user.profileEmoji,
+                          style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w900),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            _user.name,
+                            style: GoogleFonts.inter(
+                                color: textColor,
+                                fontSize: 13,
+                                fontWeight: FontWeight.w800),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          if (_user.targetBranch.isNotEmpty)
+                            Text(
+                              _user.targetBranch,
+                              style: GoogleFonts.inter(
+                                  color: AppTheme.cyan,
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.w600),
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 12),
+                Container(height: 1, color: divColor),
+                const SizedBox(height: 12),
+                // İstatistikler
+                Row(
+                  children: [
+                    Expanded(
+                        child: _DesktopStatChip(
+                            icon: Icons.local_fire_department_rounded,
+                            value: '${_progress.currentStreak}',
+                            label: 'Seri',
+                            color: AppTheme.coral,
+                            isDark: isDark)),
+                    const SizedBox(width: 8),
+                    Expanded(
+                        child: _DesktopStatChip(
+                            icon: Icons.check_circle_rounded,
+                            value: '%$accuracy',
+                            label: 'Doğruluk',
+                            color: AppTheme.success,
+                            isDark: isDark)),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                _DesktopStatChip(
+                    icon: Icons.style_rounded,
+                    value: '${_progress.totalFlashcardsStudied}',
+                    label: 'Toplam Çalışılan Kart',
+                    color: AppTheme.neonPurple,
+                    isDark: isDark),
+              ],
+            ),
+          ),
+        ),
+
+        const SizedBox(height: 14),
+
+        // ── Günlük İlerleme ───────────────────────────────────────────
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 14),
+          child: Container(
+            padding: const EdgeInsets.all(14),
+            decoration: BoxDecoration(
+              color: surfaceBg,
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(color: divColor),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text('Günlük Hedef',
+                        style: GoogleFonts.inter(
+                            color: textColor,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700)),
+                    Text(
+                      '${_progress.todayStudied}/${_progress.dailyGoal}',
+                      style: GoogleFonts.inter(
+                          color: AppTheme.cyan,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w800),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(5),
+                  child: LinearProgressIndicator(
+                    value: dailyPct,
+                    minHeight: 7,
+                    backgroundColor:
+                        AppTheme.cyan.withValues(alpha: 0.12),
+                    valueColor:
+                        const AlwaysStoppedAnimation<Color>(AppTheme.cyan),
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Row(
+                  children: [
+                    Text(
+                      _progress.baseScore.toStringAsFixed(0),
+                      style: GoogleFonts.inter(
+                          color: subColor,
+                          fontSize: 11,
+                          fontWeight: FontWeight.w600),
+                    ),
+                    const Spacer(),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 7, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: AppTheme.neonGold.withValues(alpha: 0.12),
+                        borderRadius: BorderRadius.circular(7),
+                        border: Border.all(
+                            color: AppTheme.neonGold.withValues(alpha: 0.30)),
+                      ),
+                      child: Text(
+                        '→ ${_progress.targetScore.toStringAsFixed(0)}',
+                        style: GoogleFonts.inter(
+                            color: AppTheme.neonGold,
+                            fontSize: 10,
+                            fontWeight: FontWeight.w700),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 6),
+                Row(
+                  children: [
+                    Icon(Icons.calendar_today_rounded,
+                        size: 11, color: subColor),
+                    const SizedBox(width: 4),
+                    Text(
+                      'Sınava ${_progress.daysToExam} gün kaldı',
+                      style: GoogleFonts.inter(
+                          color: subColor,
+                          fontSize: 10,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+
+        const SizedBox(height: 14),
+
+        // ── Haftalık Aktivite ─────────────────────────────────────────
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 14),
+          child: Container(
+            padding: const EdgeInsets.all(14),
+            decoration: BoxDecoration(
+              color: surfaceBg,
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(color: divColor),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Haftalık Aktivite',
+                    style: GoogleFonts.inter(
+                        color: textColor,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700)),
+                const SizedBox(height: 12),
+                _buildWeeklyBarChart(isDark),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  // ── Desktop Sağ Panel: Hızlı Erişim + Oturum İstatistikleri ───────────────
+  Widget _buildDesktopRightPanel(bool isDark) {
+    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
+    final subColor  = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+    final surfaceBg = isDark ? AppTheme.surface : Colors.white;
+    final divColor  = isDark
+        ? Colors.white.withValues(alpha: 0.07)
+        : Colors.black.withValues(alpha: 0.05);
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // ── Hızlı Erişim ─────────────────────────────────────────────
+        Padding(
+          padding: const EdgeInsets.fromLTRB(14, 24, 14, 0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'HIZLI ERİŞİM',
+                style: GoogleFonts.inter(
+                    color: subColor,
+                    fontSize: 10,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 1.2),
+              ),
+              const SizedBox(height: 10),
+              _DesktopQuickLink(
+                icon: Icons.local_fire_department_rounded,
+                label: 'Spot Bilgiler',
+                sublabel: 'TUS\'ta en çok çıkan',
+                color: AppTheme.neonPurple,
+                isDark: isDark,
+                onTap: () => Navigator.push(
+                    context, AppRoute.slideUp(const SpotsScreen())),
+              ),
+              const SizedBox(height: 6),
+              _DesktopQuickLink(
+                icon: Icons.assignment_rounded,
+                label: 'Deneme Sınavı',
+                sublabel: 'Performansını test et',
+                color: AppTheme.coral,
+                isDark: isDark,
+                onTap: () => Navigator.push(
+                    context, AppRoute.slideUp(const MockExamSetupScreen())),
+              ),
+              const SizedBox(height: 6),
+              _DesktopQuickLink(
+                icon: Icons.analytics_rounded,
+                label: 'Hata Analizi',
+                sublabel: 'Zayıf noktalarını bul',
+                color: AppTheme.error,
+                isDark: isDark,
+                onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (_) => const MistakeAnalyzerScreen())),
+              ),
+            ],
+          ),
+        ),
+
+        const SizedBox(height: 14),
+
+        // ── Kart & Vaka Özeti ─────────────────────────────────────────
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 14),
+          child: Container(
+            padding: const EdgeInsets.all(14),
+            decoration: BoxDecoration(
+              color: surfaceBg,
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(color: divColor),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Kart & Vaka Özeti',
+                    style: GoogleFonts.inter(
+                        color: textColor,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700)),
+                const SizedBox(height: 12),
+                Row(
+                  children: [
+                    Expanded(
+                        child: _DesktopMiniStat(
+                            value: '${_flashcardSummary.cardCount}',
+                            label: 'Kart',
+                            color: AppTheme.cyan,
+                            isDark: isDark)),
+                    const SizedBox(width: 8),
+                    Expanded(
+                        child: _DesktopMiniStat(
+                            value: '${_caseSummary.cardCount}',
+                            label: 'Vaka',
+                            color: AppTheme.neonPurple,
+                            isDark: isDark)),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Row(
+                  children: [
+                    Expanded(
+                        child: _DesktopMiniStat(
+                            value: '${_flashcardSummary.toReviewCount}',
+                            label: 'Bekleyen',
+                            color: AppTheme.neonGold,
+                            isDark: isDark)),
+                    const SizedBox(width: 8),
+                    Expanded(
+                        child: _DesktopMiniStat(
+                            value: '${_flashcardSummary.learnedCount}',
+                            label: 'Öğrenildi',
+                            color: AppTheme.success,
+                            isDark: isDark)),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+
+        const SizedBox(height: 14),
+
+        // ── Klavye İpuçları (web'e özel) ──────────────────────────────
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 14),
+          child: Container(
+            padding: const EdgeInsets.all(14),
+            decoration: BoxDecoration(
+              color: AppTheme.cyan.withValues(alpha: isDark ? 0.08 : 0.05),
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(
+                  color: AppTheme.cyan.withValues(alpha: 0.18)),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    const Icon(Icons.keyboard_rounded,
+                        color: AppTheme.cyan, size: 14),
+                    const SizedBox(width: 6),
+                    Text('Klavye Kısayolları',
+                        style: GoogleFonts.inter(
+                            color: AppTheme.cyan,
+                            fontSize: 11,
+                            fontWeight: FontWeight.w700)),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                ...[
+                  ('Alt+1', 'Ana Sayfa'),
+                  ('Alt+2', 'Koleksiyonlar'),
+                  ('Alt+3', 'Odak Modu'),
+                  ('Alt+4', 'Deneme'),
+                  ('Alt+5', 'Analitik'),
+                  ('Alt+6', 'Profil'),
+                ].map((e) => Padding(
+                      padding: const EdgeInsets.only(bottom: 4),
+                      child: Row(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 6, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: AppTheme.cyan.withValues(alpha: 0.15),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Text(e.$1,
+                                style: GoogleFonts.inter(
+                                    color: AppTheme.cyan,
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w700)),
+                          ),
+                          const SizedBox(width: 8),
+                          Text(e.$2,
+                              style: GoogleFonts.inter(
+                                  color: subColor,
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w500)),
+                        ],
+                      ),
+                    )),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  // ── Haftalık Bar Grafik ────────────────────────────────────────────────────
+  Widget _buildWeeklyBarChart(bool isDark) {
+    const dayLabels = ['Pt', 'Sl', 'Çr', 'Pr', 'Cm', 'Ct', 'Pz'];
+    final now = DateTime.now();
+    // Son 7 günü Map'ten çıkar
+    final data = List.generate(7, (i) {
+      final d = now.subtract(Duration(days: 6 - i));
+      final key =
+          '${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
+      return _progress.weeklyStats[key] ?? 0;
+    });
+    final maxVal = data
+        .reduce((a, b) => a > b ? a : b)
+        .clamp(1, 9999);
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.end,
+      children: List.generate(7, (i) {
+        final val = data[i];
+        final pct = val / maxVal;
+        final dayOfWeek =
+            now.subtract(Duration(days: 6 - i)).weekday - 1; // 0=Mon
+        final isToday = i == 6;
+        return Column(
+          children: [
+            Container(
+              width: 22,
+              height: 48,
+              alignment: Alignment.bottomCenter,
+              child: AnimatedContainer(
+                duration: Duration(milliseconds: 350 + i * 40),
+                curve: Curves.easeOutCubic,
+                width: 12,
+                height: (48 * pct).clamp(3.0, 48.0),
+                decoration: BoxDecoration(
+                  color: isToday
+                      ? AppTheme.cyan
+                      : (isDark
+                          ? Colors.white.withValues(alpha: 0.18)
+                          : Colors.black.withValues(alpha: 0.10)),
+                  borderRadius: BorderRadius.circular(4),
+                  boxShadow: isToday
+                      ? [
+                          BoxShadow(
+                              color: AppTheme.cyan.withValues(alpha: 0.40),
+                              blurRadius: 8)
+                        ]
+                      : null,
+                ),
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              dayLabels[dayOfWeek % 7],
+              style: GoogleFonts.inter(
+                color: isToday
+                    ? AppTheme.cyan
+                    : (isDark ? AppTheme.textMuted : AppTheme.lightTextSecondary),
+                fontSize: 9,
+                fontWeight: isToday ? FontWeight.w700 : FontWeight.w500,
+              ),
+            ),
+          ],
+        );
+      }),
     );
   }
 
@@ -341,21 +1002,6 @@ class _HomeScreenState extends State<HomeScreen> {
           const FullscreenButton(),
           const SizedBox(width: 4),
 
-          // 🤖 AI BELL (CYAN) - BİREBİR ESKİ YERİ
-          GestureDetector(
-            onTap: _showAiInsightSheet,
-            child: Container(
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: AppTheme.cyan.withValues(alpha: 0.1),
-                shape: BoxShape.circle,
-                border: Border.all(color: AppTheme.cyan.withValues(alpha: 0.2)),
-              ),
-              child: const Icon(Icons.psychology_rounded, color: AppTheme.cyan, size: 20),
-            ),
-          ),
-          const SizedBox(width: 12),
-
           // ── Tema Toggle Butonu ─────────────────────────────────────
           ValueListenableBuilder<AppThemeMode>(
             valueListenable: ThemeService.mode,
@@ -443,69 +1089,74 @@ class _HomeScreenState extends State<HomeScreen> {
               );
             },
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: 8),
 
-          // Info Button — blur yerine solid (perf)
-          GestureDetector(
-            onTap: () => _showInfoSheet(context, isDark),
-            child: Container(
-              width: 44, height: 44,
-              decoration: BoxDecoration(
-                color: isDark ? const Color(0xFF1E2A3A) : const Color(0xFFE8EEF8),
-                borderRadius: BorderRadius.circular(14),
-                border: Border.all(
-                  color: isDark
-                      ? Colors.white.withValues(alpha: 0.10)
-                      : Colors.black.withValues(alpha: 0.07),
-                  width: 1,
-                ),
-              ),
-              child: Icon(Icons.info_outline_rounded,
-                  color: isDark ? Colors.white : AppTheme.lightTextPrimary, size: 20),
-            ),
-          ),
-          const SizedBox(width: 10),
-
-          // 🔔 BİLDİRİM ZİLİ — blur yerine solid (perf)
-          GestureDetector(
-            onTap: _showAppNotifications,
-            child: Stack(
-              clipBehavior: Clip.none,
-              children: [
-                Container(
-                  width: 44, height: 44,
-                  decoration: BoxDecoration(
-                    color: isDark ? const Color(0xFF1E2A3A) : const Color(0xFFE8EEF8),
-                    borderRadius: BorderRadius.circular(14),
-                    border: Border.all(
-                      color: isDark
-                          ? Colors.white.withValues(alpha: 0.10)
-                          : Colors.black.withValues(alpha: 0.07),
-                      width: 1,
-                    ),
-                  ),
-                  child: Icon(
-                    Icons.notifications_active_rounded,
-                    color: isDark ? Colors.white : AppTheme.lightTextPrimary,
-                    size: 20,
-                  ),
-                ),
-                Positioned(
-                  top: 9, right: 9,
-                  child: Container(
-                    width: 8, height: 8,
-                    decoration: const BoxDecoration(
-                      color: Color(0xFFFF3B30),
-                      shape: BoxShape.circle,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
+          // 🧠ℹ️🔔 Premium İkon Üçlüsü
+          _buildIconTrio(isDark),
         ],
       ),
     ).animate().fadeIn(duration: 500.ms, delay: 100.ms).slideY(begin: -0.05, end: 0);
+  }
+
+  // ── Premium İkon Üçlüsü (Mobil sağ üst + Desktop top bar) ───────────────
+  Widget _buildIconTrio(bool isDark) {
+    final bgBase = isDark
+        ? Colors.white.withValues(alpha: 0.06)
+        : Colors.black.withValues(alpha: 0.04);
+    final borderCol = isDark
+        ? Colors.white.withValues(alpha: 0.10)
+        : Colors.black.withValues(alpha: 0.07);
+    final divCol = isDark
+        ? Colors.white.withValues(alpha: 0.08)
+        : Colors.black.withValues(alpha: 0.06);
+
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(18),
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 14, sigmaY: 14),
+        child: Container(
+          decoration: BoxDecoration(
+            color: bgBase,
+            borderRadius: BorderRadius.circular(18),
+            border: Border.all(color: borderCol),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // 🧠 Akıllı Koç
+              _TrioButton(
+                icon: Icons.psychology_rounded,
+                color: AppTheme.cyan,
+                glowColor: AppTheme.cyan,
+                tooltip: 'Akıllı Koç',
+                isDark: isDark,
+                onTap: _showAiInsightSheet,
+              ),
+              // Divider
+              Container(width: 1, height: 22, color: divCol),
+              // ℹ️ Bilgi
+              _TrioButton(
+                icon: Icons.info_outline_rounded,
+                color: isDark ? Colors.white70 : AppTheme.lightTextPrimary,
+                glowColor: AppTheme.neonPurple,
+                tooltip: 'Nasıl Çalışır',
+                isDark: isDark,
+                onTap: () => _showInfoSheet(context, isDark),
+              ),
+              // Divider
+              Container(width: 1, height: 22, color: divCol),
+              // 🔔 Bildirimler
+              _TrioButtonWithBadge(
+                icon: Icons.notifications_rounded,
+                color: isDark ? Colors.white70 : AppTheme.lightTextPrimary,
+                isDark: isDark,
+                onTap: _showAppNotifications,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 
   // ── Info Sheet ────────────────────────────────────────────────────────────
@@ -519,13 +1170,463 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   // ── Günün Akıllı Görevi ────────────────────────────────────────────────────
+  // ── Günün Akıllı Görevi — Kompakt Versiyon ─────────────────────────────────
+  // ── AI Koç Çalışma Rehberi Paneli ────────────────────────────────────────
+  Widget _buildAiCoachPanel(bool isDark) {
+    final targetScore    = _progress.targetScore.toStringAsFixed(0);
+    final daysToExam     = _progress.daysToExam;
+    final recommended    = _progress.recommendedDailyGoal;
+    final todayStudied   = _progress.todayStudied;
+    final dailyGoal      = _progress.dailyGoal;
+    final remaining      = (dailyGoal - todayStudied).clamp(0, 9999);
+    final dueCards       = _flashcardSummary.toReviewCount;
+    final dueCases       = _caseSummary.toReviewCount;
+
+    // Tekrar vakti gelen SM-2 kartları — branş bazında say
+    final Map<String, int> dueBranchMap = {};
+    for (final t in _topics) {
+      for (final fc in t.flashcards) {
+        final d = _sm2Data[fc.id];
+        if (d != null && d.isDue && t.subject.isNotEmpty) {
+          dueBranchMap[t.subject] = (dueBranchMap[t.subject] ?? 0) + 1;
+        }
+      }
+    }
+    final dueBranches = (dueBranchMap.entries.toList()
+          ..sort((a, b) => b.value.compareTo(a.value)))
+        .take(3)
+        .toList();
+
+    // Sınav aciliyeti rengi
+    final examColor = daysToExam <= 30
+        ? AppTheme.error
+        : daysToExam <= 90
+            ? AppTheme.neonGold
+            : AppTheme.success;
+
+    final textColor = isDark ? AppTheme.textPrimary   : AppTheme.lightTextPrimary;
+    final subColor  = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(22),
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+          child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: isDark
+                    ? [const Color(0xFF0E1628), const Color(0xFF12192E)]
+                    : [Colors.white.withValues(alpha: 0.9), const Color(0xFFF0F8FF)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              borderRadius: BorderRadius.circular(22),
+              border: Border.all(
+                color: AppTheme.cyan.withValues(alpha: isDark ? 0.22 : 0.15),
+                width: 1.2,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: AppTheme.cyan.withValues(alpha: isDark ? 0.18 : 0.08),
+                  blurRadius: 28,
+                  spreadRadius: -6,
+                  offset: const Offset(0, 10),
+                ),
+                BoxShadow(
+                  color: AppTheme.neonPurple.withValues(alpha: isDark ? 0.10 : 0.04),
+                  blurRadius: 40,
+                  spreadRadius: -10,
+                  offset: const Offset(10, 20),
+                ),
+              ],
+            ),
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // ── Başlık satırı ─────────────────────────────────────
+                Row(
+                  children: [
+                    Container(
+                      width: 32, height: 32,
+                      decoration: BoxDecoration(
+                        gradient: const LinearGradient(
+                            colors: [AppTheme.cyan, AppTheme.neonPurple]),
+                        borderRadius: BorderRadius.circular(9),
+                        boxShadow: [
+                          BoxShadow(
+                            color: AppTheme.cyan.withValues(alpha: 0.40),
+                            blurRadius: 10,
+                            spreadRadius: -2,
+                          ),
+                        ],
+                      ),
+                      child: const Icon(Icons.auto_awesome_rounded,
+                          color: Colors.white, size: 16),
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Text(
+                        'AI Koç Çalışma Rehberi',
+                        style: GoogleFonts.inter(
+                          color: textColor,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: -0.2,
+                        ),
+                      ),
+                    ),
+                    // Sınav sayacı badge
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 5),
+                      decoration: BoxDecoration(
+                        color: examColor.withValues(alpha: isDark ? 0.15 : 0.10),
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                            color: examColor.withValues(alpha: 0.40)),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(Icons.timer_rounded,
+                              color: examColor, size: 12),
+                          const SizedBox(width: 4),
+                          Text(
+                            '$daysToExam gün',
+                            style: GoogleFonts.inter(
+                              color: examColor,
+                              fontSize: 12,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: 6),
+                    // Hedefi Güncelle butonu
+                    GestureDetector(
+                      onTap: () => showGoalSetupSheet(context, isDark, onSaved: _refreshStats),
+                      child: Container(
+                        width: 30, height: 30,
+                        decoration: BoxDecoration(
+                          color: AppTheme.neonGold.withValues(alpha: isDark ? 0.15 : 0.10),
+                          borderRadius: BorderRadius.circular(9),
+                          border: Border.all(color: AppTheme.neonGold.withValues(alpha: 0.35)),
+                        ),
+                        child: Icon(Icons.tune_rounded, color: AppTheme.neonGold, size: 15),
+                      ),
+                    ),
+                  ],
+                ),
+
+                const SizedBox(height: 12),
+
+                // ── Hedef başlığı ─────────────────────────────────────
+                RichText(
+                  text: TextSpan(
+                    style: GoogleFonts.inter(
+                        fontSize: 13, color: subColor, height: 1.4),
+                    children: [
+                      const TextSpan(text: 'Hedeflediğin '),
+                      TextSpan(
+                        text: '$targetScore puan',
+                        style: GoogleFonts.inter(
+                          color: AppTheme.neonGold,
+                          fontWeight: FontWeight.w800,
+                          fontSize: 13,
+                        ),
+                      ),
+                      const TextSpan(text: ' için bugün yapman gerekenler:'),
+                    ],
+                  ),
+                ),
+
+                const SizedBox(height: 12),
+
+                // ── İki stat chip ─────────────────────────────────────
+                Row(
+                  children: [
+                    Expanded(
+                      child: _CoachChip(
+                        icon: Icons.style_rounded,
+                        label: 'Günlük Hedef',
+                        value: '$remaining kart',
+                        subValue: todayStudied > 0
+                            ? '($todayStudied/$dailyGoal tamamlandı)'
+                            : 'Henüz başlamadın',
+                        color: AppTheme.cyan,
+                        isDark: isDark,
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: _CoachChip(
+                        icon: Icons.bolt_rounded,
+                        label: 'Önerilen Tempo',
+                        value: '$recommended kart/gün',
+                        subValue: 'hedefe ulaşmak için',
+                        color: AppTheme.neonPurple,
+                        isDark: isDark,
+                      ),
+                    ),
+                  ],
+                ),
+
+                // ── SM-2 Sıradaki görevler ────────────────────────────
+                if (dueCards > 0 || dueCases > 0 || dueBranches.isNotEmpty) ...[
+                  const SizedBox(height: 12),
+                  Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: isDark
+                          ? Colors.white.withValues(alpha: 0.04)
+                          : Colors.black.withValues(alpha: 0.03),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: isDark
+                            ? Colors.white.withValues(alpha: 0.07)
+                            : Colors.black.withValues(alpha: 0.05),
+                      ),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            const Icon(Icons.repeat_rounded,
+                                color: AppTheme.neonGold, size: 13),
+                            const SizedBox(width: 5),
+                            Text(
+                              'Sıradaki Tekrar Görevleri',
+                              style: GoogleFonts.inter(
+                                color: AppTheme.neonGold,
+                                fontSize: 11,
+                                fontWeight: FontWeight.w700,
+                                letterSpacing: 0.3,
+                              ),
+                            ),
+                            const Spacer(),
+                            if (dueCards > 0)
+                              _DueBadge(
+                                  label: '$dueCards kart',
+                                  color: AppTheme.cyan),
+                            if (dueCases > 0) ...[
+                              const SizedBox(width: 4),
+                              _DueBadge(
+                                  label: '$dueCases vaka',
+                                  color: AppTheme.neonPurple),
+                            ],
+                          ],
+                        ),
+                        if (dueBranches.isNotEmpty) ...[
+                          const SizedBox(height: 8),
+                          ...dueBranches.map((e) => Padding(
+                                padding:
+                                    const EdgeInsets.only(bottom: 4),
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      width: 3,
+                                      height: 14,
+                                      decoration: BoxDecoration(
+                                        color: AppTheme.cyan
+                                            .withValues(alpha: 0.6),
+                                        borderRadius:
+                                            BorderRadius.circular(2),
+                                      ),
+                                    ),
+                                    const SizedBox(width: 8),
+                                    Text(
+                                      e.key,
+                                      style: GoogleFonts.inter(
+                                        color: textColor,
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                    const Spacer(),
+                                    Text(
+                                      '${e.value} kart',
+                                      style: GoogleFonts.inter(
+                                        color: AppTheme.cyan,
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.w700,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )),
+                        ],
+                      ],
+                    ),
+                  ),
+                ],
+              ],
+            ),
+          ),
+        ),
+      ),
+    )
+        .animate()
+        .fadeIn(duration: 500.ms, delay: 50.ms)
+        .slideY(begin: -0.04, end: 0, curve: Curves.easeOutExpo);
+  }
+
+  // ── Doktor Selamlama ───────────────────────────────────────────────────────
+  Widget _buildGreeting(bool isDark) {
+    final isNew    = _progress.totalFlashcardsStudied == 0;
+    final streak   = _progress.currentStreak;
+    final firstName = _user.name.isNotEmpty
+        ? _user.name.split(' ').first
+        : 'Doktor';
+    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
+    final subColor  = isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                if (isNew) ...[
+                  Text(
+                    'Hoş geldin, Dr. $firstName! 👋',
+                    style: GoogleFonts.outfit(
+                      color: textColor,
+                      fontSize: 22,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: -0.5,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    'Başarılarla dolu bir serüvene hazır mısın?',
+                    style: GoogleFonts.inter(
+                      color: subColor,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                      height: 1.4,
+                    ),
+                  ),
+                ] else ...[
+                  Text(
+                    'İyi çalışmalar, Dr. $firstName! 🩺',
+                    style: GoogleFonts.outfit(
+                      color: textColor,
+                      fontSize: 22,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: -0.5,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    'Bugün hedefine bir adım daha yaklaşalım.',
+                    style: GoogleFonts.inter(
+                      color: subColor,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                      height: 1.4,
+                    ),
+                  ),
+                ],
+              ],
+            ),
+          ),
+          // Streak badge — 2+ günden itibaren göster
+          if (streak >= 2) ...[
+            const SizedBox(width: 12),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [Color(0xFFFF6B00), Color(0xFFFF9500)],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(14),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0xFFFF6B00).withValues(alpha: 0.40),
+                    blurRadius: 12, spreadRadius: -2,
+                  ),
+                ],
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Text('🔥', style: TextStyle(fontSize: 16)),
+                  const SizedBox(width: 4),
+                  Text(
+                    '$streak',
+                    style: GoogleFonts.outfit(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                ],
+              ),
+            )
+            .animate(onPlay: (c) => c.repeat(reverse: true))
+            .scaleXY(begin: 0.96, end: 1.04, duration: 1500.ms, curve: Curves.easeInOut),
+          ],
+        ],
+      ),
+    )
+        .animate()
+        .fadeIn(duration: 400.ms, delay: 80.ms)
+        .slideY(begin: -0.05, end: 0, curve: Curves.easeOutExpo);
+  }
+
+  // ── Sınav Hazırlık Seviyesi Kartı ─────────────────────────────────────────
+  Widget _buildReadinessCard(bool isDark) {
+    final totalSeen =
+        _flashcardSummary.learnedCount + _flashcardSummary.toReviewCount;
+    final masteryRatio = totalSeen > 0
+        ? (_flashcardSummary.learnedCount / totalSeen).clamp(0.0, 1.0)
+        : 0.0;
+    final dailyRatio = _progress.dailyGoal > 0
+        ? (_progress.todayStudied / _progress.dailyGoal).clamp(0.0, 1.0)
+        : 0.0;
+    final streakRatio = (_progress.currentStreak / 30.0).clamp(0.0, 1.0);
+
+    final rd = computeReadiness(
+      masteryRatio: masteryRatio,
+      dailyRatio: dailyRatio,
+      streakRatio: streakRatio,
+      targetScore: _progress.targetScore,
+    );
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: ReadinessCard(
+        readiness: rd.readiness,
+        readinessPct: rd.readinessPct,
+        gaugeColor: rd.gaugeColor,
+        scoreIntensity: _progress.scoreIntensity,
+        targetScore: _progress.targetScore,
+        recommendedDailyGoal: _progress.recommendedDailyGoal,
+        masteryTarget: rd.masteryTarget,
+        currentMastery: rd.currentMastery,
+        daysToExam: _progress.daysToExam,
+        isDark: isDark,
+      ),
+    );
+  }
+
   Widget _buildSmartTaskCard(bool isDark) {
     final dueCards = _flashcardSummary.toReviewCount.clamp(0, 20);
     final dueCases = _caseSummary.toReviewCount.clamp(0, 5);
 
     if (dueCards == 0 && dueCases == 0) return const SizedBox.shrink();
 
-    // En çok hata yapılan branşlar (SM-2 lastQuality=1)
+    // En çok hata yapılan branşlar (SM-2 lastQuality=1) — max 2
     final Map<String, int> failedBySubject = {};
     for (final t in _topics) {
       int fail = 0;
@@ -539,7 +1640,7 @@ class _HomeScreenState extends State<HomeScreen> {
     }
     final topSubjects = (failedBySubject.entries.toList()
           ..sort((a, b) => b.value.compareTo(a.value)))
-        .take(3)
+        .take(2)
         .map((e) => e.key)
         .toList();
 
@@ -549,301 +1650,191 @@ class _HomeScreenState extends State<HomeScreen> {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(24),
+          borderRadius: BorderRadius.circular(20),
           gradient: LinearGradient(
             colors: isDark
                 ? [const Color(0xFF1E0E2C), const Color(0xFF0C1525)]
                 : [const Color(0xFFFFF3F0), const Color(0xFFF3ECFF)],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-            border: Border.all(
-              color: AppTheme.coral.withValues(alpha: 0.45),
-              width: 1.2,
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: AppTheme.coral.withValues(alpha: isDark ? 0.28 : 0.14),
-                blurRadius: 36,
-                spreadRadius: -4,
-                offset: const Offset(0, 10),
-              ),
-              BoxShadow(
-                color: AppTheme.violet.withValues(alpha: isDark ? 0.18 : 0.09),
-                blurRadius: 20,
-                offset: const Offset(0, 4),
-              ),
-            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
           ),
+          border: Border.all(
+            color: AppTheme.coral.withValues(alpha: 0.40),
+            width: 1.2,
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: AppTheme.coral.withValues(alpha: isDark ? 0.22 : 0.10),
+              blurRadius: 24,
+              spreadRadius: -4,
+              offset: const Offset(0, 8),
+            ),
+          ],
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
             children: [
-              // ── Header ────────────────────────────────────────────────────
-              Padding(
-                padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
-                child: Row(
-                  children: [
-                    // Brain icon — coral→violet gradient
-                    Container(
-                      width: 46,
-                      height: 46,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(14),
-                        gradient: const LinearGradient(
-                          colors: [AppTheme.coral, AppTheme.violet],
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                            color: AppTheme.coral.withValues(alpha: 0.55),
-                            blurRadius: 18,
-                            spreadRadius: -2,
-                          ),
-                        ],
+              // ── Satır 1: İkon + Başlık + PREMIUM + Süre ───────────────
+              Row(
+                children: [
+                  Container(
+                    width: 36,
+                    height: 36,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      gradient: const LinearGradient(
+                        colors: [AppTheme.coral, AppTheme.violet],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
                       ),
-                      child: const Icon(Icons.psychology_alt_rounded,
-                          color: Colors.white, size: 24),
+                      boxShadow: [
+                        BoxShadow(
+                          color: AppTheme.coral.withValues(alpha: 0.45),
+                          blurRadius: 10,
+                          spreadRadius: -2,
+                        ),
+                      ],
                     ),
-                    const SizedBox(width: 14),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            children: [
-                              Text(
-                                'Günün Akıllı Görevi',
-                                style: GoogleFonts.inter(
-                                  color: isDark
-                                      ? AppTheme.textPrimary
-                                      : AppTheme.lightTextPrimary,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w800,
-                                ),
-                              ),
-                              const SizedBox(width: 8),
-                              Container(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 7, vertical: 3),
-                                decoration: BoxDecoration(
-                                  gradient: const LinearGradient(
-                                    colors: [AppTheme.coral, AppTheme.violet],
-                                  ),
-                                  borderRadius: BorderRadius.circular(6),
-                                ),
-                                child: Text(
-                                  'PREMIUM',
-                                  style: GoogleFonts.inter(
-                                    color: Colors.white,
-                                    fontSize: 9,
-                                    fontWeight: FontWeight.w800,
-                                    letterSpacing: 0.8,
-                                  ),
-                                ),
-                              ),
-                            ],
+                    child: const Icon(Icons.psychology_alt_rounded,
+                        color: Colors.white, size: 20),
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Text(
+                          'Günün Akıllı Görevi',
+                          style: GoogleFonts.inter(
+                            color: isDark
+                                ? AppTheme.textPrimary
+                                : AppTheme.lightTextPrimary,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w800,
                           ),
-                          const SizedBox(height: 3),
-                          Text(
-                            'TUS Zekası Hazır!  •  ~$estimatedMin dk fokus',
+                        ),
+                        const SizedBox(width: 6),
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 6, vertical: 2),
+                          decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                                colors: [AppTheme.coral, AppTheme.violet]),
+                            borderRadius: BorderRadius.circular(5),
+                          ),
+                          child: Text(
+                            'PREMIUM',
                             style: GoogleFonts.inter(
-                              color: AppTheme.coral,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600,
+                              color: Colors.white,
+                              fontSize: 8,
+                              fontWeight: FontWeight.w800,
+                              letterSpacing: 0.7,
                             ),
                           ),
-                        ],
-                      ),
-                    ),
-                    Icon(Icons.bolt_rounded,
-                        color: AppTheme.neonGold, size: 26),
-                  ],
-                ),
-              ),
-
-              // ── Divider ───────────────────────────────────────────────────
-              Padding(
-                padding: const EdgeInsets.fromLTRB(20, 16, 20, 0),
-                child: Container(
-                  height: 1,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [
-                        AppTheme.coral.withValues(alpha: 0.5),
-                        AppTheme.violet.withValues(alpha: 0.5),
+                        ),
                       ],
                     ),
                   ),
-                ),
+                  Text(
+                    '~$estimatedMin dk',
+                    style: GoogleFonts.inter(
+                      color: AppTheme.coral,
+                      fontSize: 11,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  const SizedBox(width: 4),
+                  const Icon(Icons.bolt_rounded,
+                      color: AppTheme.neonGold, size: 18),
+                ],
               ),
 
-              // ── Sayaçlar + Branşlar ───────────────────────────────────────
-              Padding(
-                padding: const EdgeInsets.fromLTRB(20, 14, 20, 0),
-                child: Row(
-                  children: [
-                    _SmartCounter(
-                      icon: Icons.style_rounded,
-                      label: 'Kart',
-                      count: dueCards,
-                      color: AppTheme.cyan,
-                      isDark: isDark,
-                    ),
-                    const SizedBox(width: 10),
-                    _SmartCounter(
-                      icon: Icons.quiz_rounded,
-                      label: 'Vaka',
-                      count: dueCases,
-                      color: AppTheme.violet,
-                      isDark: isDark,
-                    ),
-                    if (topSubjects.isNotEmpty) ...[
-                      const SizedBox(width: 10),
-                      Expanded(
-                        child: SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            children: topSubjects.map((s) {
-                              final label = s.length > 7
-                                  ? '${s.substring(0, 7)}…'
-                                  : s;
-                              return Padding(
-                                padding: const EdgeInsets.only(right: 6),
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 5),
-                                  decoration: BoxDecoration(
-                                    color: AppTheme.error.withValues(
-                                        alpha: isDark ? 0.15 : 0.08),
-                                    borderRadius: BorderRadius.circular(20),
-                                    border: Border.all(
-                                      color: AppTheme.error
-                                          .withValues(alpha: 0.35),
-                                    ),
-                                  ),
-                                  child: Text(
-                                    label,
-                                    style: GoogleFonts.inter(
-                                      color: AppTheme.error,
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                ),
-                              );
-                            }).toList(),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ],
-                ),
-              ),
+              const SizedBox(height: 10),
 
-              // ── Butonlar ──────────────────────────────────────────────────
-              Padding(
-                padding: const EdgeInsets.all(20),
-                child: Row(
-                  children: [
-                    // Ana: Fokus Seansı
-                    Expanded(
-                      flex: 3,
-                      child: GestureDetector(
-                        onTap: () {
-                          HapticFeedback.mediumImpact();
-                          _startSmartSession();
-                        },
+              // ── Satır 2: Sayaçlar + Hata Branşları + Butonlar ──────────
+              Row(
+                children: [
+                  _SmartCounter(
+                    icon: Icons.style_rounded,
+                    label: 'Kart',
+                    count: dueCards,
+                    color: AppTheme.cyan,
+                    isDark: isDark,
+                  ),
+                  const SizedBox(width: 8),
+                  _SmartCounter(
+                    icon: Icons.quiz_rounded,
+                    label: 'Vaka',
+                    count: dueCases,
+                    color: AppTheme.violet,
+                    isDark: isDark,
+                  ),
+                  if (topSubjects.isNotEmpty) ...[
+                    const SizedBox(width: 8),
+                    ...topSubjects.map((s) {
+                      final lbl = s.length > 6 ? '${s.substring(0, 6)}…' : s;
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 5),
                         child: Container(
-                          height: 52,
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 8, vertical: 4),
                           decoration: BoxDecoration(
+                            color: AppTheme.error
+                                .withValues(alpha: isDark ? 0.13 : 0.08),
                             borderRadius: BorderRadius.circular(16),
-                            gradient: const LinearGradient(
-                              colors: [AppTheme.coral, AppTheme.violet],
-                              begin: Alignment.centerLeft,
-                              end: Alignment.centerRight,
-                            ),
-                            boxShadow: [
-                              BoxShadow(
-                                color: AppTheme.coral.withValues(alpha: 0.4),
-                                blurRadius: 18,
-                                offset: const Offset(0, 5),
-                              ),
-                            ],
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              const Icon(Icons.play_arrow_rounded,
-                                  color: Colors.white, size: 20),
-                              const SizedBox(width: 6),
-                              Text(
-                                'Fokus Seansı',
-                                style: GoogleFonts.inter(
-                                  color: Colors.white,
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w800,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 10),
-                    // İkincil: Hata Analizi
-                    Expanded(
-                      flex: 2,
-                      child: GestureDetector(
-                        onTap: () {
-                          HapticFeedback.lightImpact();
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) =>
-                                  const MistakeAnalyzerScreen(),
-                            ),
-                          );
-                        },
-                        child: Container(
-                          height: 52,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(16),
-                            color: AppTheme.error.withValues(
-                                alpha: isDark ? 0.12 : 0.08),
                             border: Border.all(
-                              color: AppTheme.error
-                                  .withValues(alpha: 0.4),
+                                color: AppTheme.error
+                                    .withValues(alpha: 0.30)),
+                          ),
+                          child: Text(
+                            lbl,
+                            style: GoogleFonts.inter(
+                              color: AppTheme.error,
+                              fontSize: 10,
+                              fontWeight: FontWeight.w700,
                             ),
                           ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(Icons.analytics_rounded,
-                                  color: AppTheme.error, size: 18),
-                              const SizedBox(width: 6),
-                              Text(
-                                'Hata Analizi',
-                                style: GoogleFonts.inter(
-                                  color: AppTheme.error,
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w800,
-                                ),
-                              ),
-                            ],
-                          ),
                         ),
-                      ),
-                    ),
+                      );
+                    }),
                   ],
-                ),
+                  const Spacer(),
+                  // ── Kompakt Butonlar ─────────────────────────────────
+                  _CompactActionButton(
+                    label: 'Fokus',
+                    icon: Icons.play_arrow_rounded,
+                    gradient: const LinearGradient(
+                        colors: [AppTheme.coral, AppTheme.violet]),
+                    onTap: () {
+                      HapticFeedback.mediumImpact();
+                      _startSmartSession();
+                    },
+                  ),
+                  const SizedBox(width: 8),
+                  _CompactActionButton(
+                    label: 'Hatalar',
+                    icon: Icons.analytics_rounded,
+                    outlineColor: AppTheme.error,
+                    isDark: isDark,
+                    onTap: () {
+                      HapticFeedback.lightImpact();
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (_) => const MistakeAnalyzerScreen()),
+                      );
+                    },
+                  ),
+                ],
               ),
             ],
           ),
-        )
-            .animate()
-            .fadeIn(duration: 500.ms, delay: 60.ms)
-            .slideY(begin: 0.08, end: 0, curve: Curves.easeOutExpo),
+        ),
+      )
+          .animate()
+          .fadeIn(duration: 500.ms, delay: 60.ms)
+          .slideY(begin: 0.08, end: 0, curve: Curves.easeOutExpo),
     );
   }
 
@@ -1126,7 +2117,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-          ).animate().fadeIn(duration: 500.ms, delay: 350.ms),
+          )
+          .animate()
+          .fadeIn(duration: 500.ms, delay: 350.ms)
+          .then(delay: 600.ms)
+          .shimmer(duration: 1200.ms, color: Colors.white.withValues(alpha: 0.25)),
         ],
       ),
     );
@@ -1138,13 +2133,18 @@ class _HomeScreenState extends State<HomeScreen> {
 
   void _showAppNotifications() {
     final isDark = ThemeService.isDark;
-    
-    // 🔍 Dinamik Veri Analizi
+
     final streak = _progress.currentStreak;
-    final streakGoal = 10;
-    
-    // En kötü branşı bul
-    Map<String, int> mistakeCounts = {};
+    final todayStudied = _progress.todayStudied;
+    final dailyGoal = _progress.dailyGoal;
+    final remaining = (dailyGoal - todayStudied).clamp(0, dailyGoal);
+    final daysToExam = _progress.daysToExam;
+    final accuracy = _progress.totalFlashcardsStudied > 0
+        ? (_progress.correctAnswers / _progress.totalFlashcardsStudied * 100).round()
+        : 0;
+
+    // En çok hata yapılan branş
+    final Map<String, int> mistakeCounts = {};
     for (final t in _topics) {
       for (final fc in t.flashcards) {
         final d = _sm2Data[fc.id];
@@ -1155,45 +2155,93 @@ class _HomeScreenState extends State<HomeScreen> {
     }
     final sortedMistakes = mistakeCounts.entries.toList()
       ..sort((a, b) => b.value.compareTo(a.value));
-    final topMistakeSubject = sortedMistakes.isEmpty ? "Derslerin" : sortedMistakes.first.key;
-    final topSubjectMistakeCount = mistakeCounts[topMistakeSubject] ?? 0;
+    final topMistakeSubject = sortedMistakes.isEmpty ? 'Dersler' : sortedMistakes.first.key;
+    final topMistakeCount = sortedMistakes.isEmpty ? 0 : sortedMistakes.first.value;
+
+    // Pending cards
+    final pendingCards = _flashcardSummary.toReviewCount;
 
     final List<AppNotificationItem> notifications = [
-      // 1. Seri Hatırlatıcısı
+      // Günlük hedef durumu
+      if (remaining > 0)
+        AppNotificationItem(
+          title: 'GÜNLÜK HEDEF',
+          message: 'Hedefe $remaining kart kaldı! Bugünkü $dailyGoal kartlık hedefinin ${todayStudied > 0 ? "${todayStudied}ını" : "hiçbirini"} tamamladın. Şimdi devam et ⚡',
+          icon: Icons.track_changes_rounded,
+          color: AppTheme.cyan,
+          timeLabel: 'Şimdi',
+        )
+      else
+        AppNotificationItem(
+          title: 'GÜNLÜK HEDEF TAMAMLANDI 🎉',
+          message: 'Harika! Bugünkü $dailyGoal kartlık hedefini tamamladın. Yarın yeni kartlarla devam edeceksin.',
+          icon: Icons.check_circle_rounded,
+          color: AppTheme.success,
+          timeLabel: 'Bugün',
+        ),
+
+      // Seri bilgisi
+      if (streak >= 5)
+        AppNotificationItem(
+          title: 'SERİ REKOR 🔥',
+          message: '$streak günlük kesintisiz çalışma serisi! Bu tempoyla TUS\'a hazır olacaksın. Bugün de serini koru.',
+          icon: Icons.local_fire_department_rounded,
+          color: const Color(0xFFFF6B00),
+          timeLabel: 'Bugün',
+        )
+      else if (streak > 0)
+        AppNotificationItem(
+          title: 'SERİ DEVAM EDİYOR',
+          message: '$streak günlük serin var! Serini bozmamak için bugün en az ${(dailyGoal * 0.5).round()} kart çözmelisin. 💪',
+          icon: Icons.local_fire_department_rounded,
+          color: const Color(0xFFFF6B00),
+          timeLabel: 'Bugün',
+        )
+      else
+        AppNotificationItem(
+          title: 'YENİ SERİ BAŞLAT',
+          message: 'Henüz aktif bir seriniz yok. Bugün ${(dailyGoal * 0.5).round()} kart çözerek yeni bir seri başlat! ⚡',
+          icon: Icons.local_fire_department_rounded,
+          color: const Color(0xFFFF6B00),
+          timeLabel: 'Bugün',
+        ),
+
+      // Bekleyen kartlar
+      if (pendingCards > 0)
+        AppNotificationItem(
+          title: 'TEKRAR VAKTİ (SRS)',
+          message: '$pendingCards kart seni bekliyor! SM-2 algoritması bu kartların şu an tekrarlanması gerektiğini hesapladı. Bekletme.',
+          icon: Icons.history_edu_rounded,
+          color: AppTheme.neonPurple,
+          timeLabel: 'Şimdi',
+        ),
+
+      // Zayıf branş uyarısı
+      if (topMistakeCount > 2)
+        AppNotificationItem(
+          title: 'ZAYIF HALKA TESPİT EDİLDİ',
+          message: '$topMistakeSubject dersinde $topMistakeCount hata saptandı. AI Hata Analizi ile bu konuyu derinlemesine çalışmanı öneririz.',
+          icon: Icons.analytics_rounded,
+          color: AppTheme.coral,
+          timeLabel: 'Analiz',
+        ),
+
+      // Doğruluk oranı
+      if (accuracy > 0)
+        AppNotificationItem(
+          title: 'DOĞRULUK ORANI',
+          message: accuracy >= 75
+              ? 'Harika! %$accuracy doğruluk oranınla üst %25\'tesin. Bu tempo ile sınav günü hazır olacaksın. 🏆'
+              : 'Doğruluk oranın %$accuracy. Hata yaptığın kartlara daha fazla zaman ayır ve AI açıklamalarını oku.',
+          icon: Icons.pie_chart_rounded,
+          color: accuracy >= 75 ? AppTheme.success : AppTheme.neonGold,
+          timeLabel: 'İstatistik',
+        ),
+
+      // Sınav geri sayım
       AppNotificationItem(
-        title: 'SERİ HATIRLATICISI',
-        message: streak > 0 
-          ? 'Kritik eşik! $streak günlük serini bozmamak için bugün en az $streakGoal kart bakmalısın. 🔥'
-          : 'Bugün yeni bir seri başlatmak için harika bir gün! İlk 10 kartını çöz ve seriye başla. ⚡',
-        icon: Icons.local_fire_department_rounded,
-        color: const Color(0xFFFF6B00),
-        timeLabel: 'Şimdi',
-      ),
-      
-      // 2. SRS Uyarısı
-      AppNotificationItem(
-        title: 'TEKRAR UYARISI (SRS)',
-        message: topSubjectMistakeCount > 0
-          ? 'Dün \'Bilemedim\' dediğin $topSubjectMistakeCount $topMistakeSubject kartı seni bekliyor, hafızanı tazelemek istiyor. ⏳'
-          : 'Tüm kartlarını başarıyla hafızana aldın! Yeni kartlarla devam edebilirsin. ✨',
-        icon: Icons.history_edu_rounded,
-        color: AppTheme.cyan,
-        timeLabel: '2s önce',
-      ),
-      
-      // 3. Haftalık Başarı
-      AppNotificationItem(
-        title: 'HAFTALIK BAŞARI RAPORU',
-        message: 'Bu hafta yüksek doğruluk oranıyla bir \'$topMistakeSubject Canavarı\' oldun! Gelişimin harika gidiyor. 🏆',
-        icon: Icons.emoji_events_rounded,
-        color: AppTheme.neonGold,
-        timeLabel: 'Dün',
-      ),
-      
-      // 4. Sınav Sayacı
-      AppNotificationItem(
-        title: 'SINAV SAYACI',
-        message: 'Geri sayım başladı: Hedef puanına ulaşmak için kalan ${_progress.daysToExam} günde her gün +${_progress.recommendedDailyGoal} soru çözmelisin. 📍',
+        title: 'SINAV GERİ SAYIM',
+        message: 'TUS\'a $daysToExam gün kaldı. Hedefe ulaşmak için her gün ${_progress.recommendedDailyGoal} kart çözmen gerekiyor. Planını takip et! 📍',
         icon: Icons.timer_rounded,
         color: AppTheme.neonPink,
         timeLabel: 'Bugün',
@@ -1581,32 +2629,59 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildLoadingState() {
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    return SingleChildScrollView(
-      physics: const NeverScrollableScrollPhysics(),
-      padding: const EdgeInsets.fromLTRB(20, 6, 20, 80),
+    return Center(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
         children: [
-          // Daily Goal skeleton
-          _ShimmerBox(height: 160, borderRadius: 24, isDark: isDark),
-          const SizedBox(height: 16),
-          // Hero Card skeleton
-          _ShimmerBox(height: 220, borderRadius: 30, isDark: isDark),
-          const SizedBox(height: 20),
-          // Quick Actions skeleton
-          Row(children: [
-            Expanded(child: _ShimmerBox(height: 90, borderRadius: 22, isDark: isDark)),
-            const SizedBox(width: 14),
-            Expanded(child: _ShimmerBox(height: 90, borderRadius: 22, isDark: isDark)),
-          ]),
-          const SizedBox(height: 26),
-          // Subject carousel skeleton
-          _ShimmerBox(height: 20, width: 140, borderRadius: 8, isDark: isDark),
-          const SizedBox(height: 16),
-          Row(children: [
-            _ShimmerBox(height: 172, width: 158, borderRadius: 22, isDark: isDark),
-            const SizedBox(width: 14),
-            _ShimmerBox(height: 172, width: 158, borderRadius: 22, isDark: isDark),
+          // Neon glow logo — Hero ile splash'dan bu noktaya akıcı geçiş
+          Hero(
+            tag: 'asistus-logo',
+            child: Container(
+              width: 72, height: 72,
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [AppTheme.cyan, AppTheme.neonPurple],
+                  begin: Alignment.topLeft, end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(color: AppTheme.cyan.withValues(alpha: 0.45), blurRadius: 28, spreadRadius: 2),
+                  BoxShadow(color: AppTheme.neonPurple.withValues(alpha: 0.25), blurRadius: 48),
+                ],
+              ),
+              child: Center(child: Text('A', style: GoogleFonts.outfit(color: Colors.white, fontSize: 36, fontWeight: FontWeight.w900))),
+            ),
+          )
+          .animate(onPlay: (c) => c.repeat(reverse: true))
+          .scaleXY(begin: 0.95, end: 1.05, duration: 1200.ms, curve: Curves.easeInOut),
+          const SizedBox(height: 28),
+          Text(
+            'Sana özel TUS planı hazırlanıyor...',
+            style: GoogleFonts.inter(
+              color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
+              fontSize: 14, fontWeight: FontWeight.w500,
+            ),
+          ).animate(onPlay: (c) => c.repeat()).shimmer(duration: 1800.ms, color: AppTheme.cyan.withValues(alpha: 0.6)),
+          const SizedBox(height: 8),
+          Text(
+            'Kartların ve istatistiklerin yükleniyor',
+            style: GoogleFonts.inter(
+              color: (isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary).withValues(alpha: 0.5),
+              fontSize: 12,
+            ),
+          ).animate().fadeIn(delay: 400.ms),
+          const SizedBox(height: 40),
+          // Animated dots
+          Row(mainAxisSize: MainAxisSize.min, children: [
+            for (int i = 0; i < 3; i++) ...[
+              if (i > 0) const SizedBox(width: 8),
+              Container(width: 8, height: 8, decoration: const BoxDecoration(color: AppTheme.cyan, shape: BoxShape.circle))
+              .animate(onPlay: (c) => c.repeat())
+              .fadeIn(delay: Duration(milliseconds: i * 200))
+              .then(delay: 400.ms)
+              .fadeOut(duration: 400.ms)
+              .then(delay: Duration(milliseconds: (2 - i) * 200)),
+            ],
           ]),
         ],
       ),
@@ -1619,12 +2694,240 @@ class _HomeScreenState extends State<HomeScreen> {
 // ╚══════════════════════════════════════════════════════════════════════════╝
 
 // ── Ambient Blob ───────────────────────────────────────────────────────────
+// ── AI Koç Paneli Yardımcı Widget'ları ───────────────────────────────────
+
+class _CoachChip extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final String value;
+  final String subValue;
+  final Color color;
+  final bool isDark;
+
+  const _CoachChip({
+    required this.icon,
+    required this.label,
+    required this.value,
+    required this.subValue,
+    required this.color,
+    required this.isDark,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: isDark ? 0.10 : 0.07),
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: color.withValues(alpha: 0.22)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(icon, color: color, size: 14),
+              const SizedBox(width: 5),
+              Text(
+                label,
+                style: GoogleFonts.inter(
+                  color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
+                  fontSize: 10,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 4),
+          Text(
+            value,
+            style: GoogleFonts.outfit(
+              color: color,
+              fontSize: 15,
+              fontWeight: FontWeight.w800,
+            ),
+          ),
+          Text(
+            subValue,
+            style: GoogleFonts.inter(
+              color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary,
+              fontSize: 10,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _DueBadge extends StatelessWidget {
+  final String label;
+  final Color color;
+  const _DueBadge({required this.label, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: 0.12),
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: color.withValues(alpha: 0.30)),
+      ),
+      child: Text(
+        label,
+        style: GoogleFonts.inter(
+          color: color,
+          fontSize: 10,
+          fontWeight: FontWeight.w700,
+        ),
+      ),
+    );
+  }
+}
+
+// ── Readiness Paneli Yardımcı Widget'ları ─────────────────────────────────
+
+// ── İkon Üçlüsü Butonları ─────────────────────────────────────────────────
+
+class _TrioButton extends StatefulWidget {
+  final IconData   icon;
+  final Color      color;
+  final Color      glowColor;
+  final String     tooltip;
+  final bool       isDark;
+  final VoidCallback onTap;
+
+  const _TrioButton({
+    required this.icon,
+    required this.color,
+    required this.glowColor,
+    required this.tooltip,
+    required this.isDark,
+    required this.onTap,
+  });
+
+  @override
+  State<_TrioButton> createState() => _TrioButtonState();
+}
+
+class _TrioButtonState extends State<_TrioButton> {
+  bool _hovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return Tooltip(
+      message: widget.tooltip,
+      preferBelow: true,
+      child: MouseRegion(
+        onEnter: (_) => setState(() => _hovered = true),
+        onExit:  (_) => setState(() => _hovered = false),
+        cursor: SystemMouseCursors.click,
+        child: GestureDetector(
+          onTap: widget.onTap,
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 160),
+            width: 40, height: 40,
+            decoration: BoxDecoration(
+              color: _hovered
+                  ? widget.glowColor.withValues(alpha: 0.14)
+                  : Colors.transparent,
+              borderRadius: BorderRadius.circular(12),
+              boxShadow: _hovered
+                  ? [BoxShadow(color: widget.glowColor.withValues(alpha: 0.25), blurRadius: 10)]
+                  : [],
+            ),
+            child: Icon(widget.icon, color: widget.color, size: 19),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _TrioButtonWithBadge extends StatefulWidget {
+  final IconData   icon;
+  final Color      color;
+  final bool       isDark;
+  final VoidCallback onTap;
+
+  const _TrioButtonWithBadge({
+    required this.icon,
+    required this.color,
+    required this.isDark,
+    required this.onTap,
+  });
+
+  @override
+  State<_TrioButtonWithBadge> createState() => _TrioButtonWithBadgeState();
+}
+
+class _TrioButtonWithBadgeState extends State<_TrioButtonWithBadge> {
+  bool _hovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return Tooltip(
+      message: 'Bildirimler',
+      preferBelow: true,
+      child: MouseRegion(
+        onEnter: (_) => setState(() => _hovered = true),
+        onExit:  (_) => setState(() => _hovered = false),
+        cursor: SystemMouseCursors.click,
+        child: GestureDetector(
+          onTap: widget.onTap,
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 160),
+            width: 40, height: 40,
+            decoration: BoxDecoration(
+              color: _hovered
+                  ? const Color(0xFFFF3B30).withValues(alpha: 0.12)
+                  : Colors.transparent,
+              borderRadius: BorderRadius.circular(12),
+              boxShadow: _hovered
+                  ? [BoxShadow(color: const Color(0xFFFF3B30).withValues(alpha: 0.20), blurRadius: 10)]
+                  : [],
+            ),
+            child: Stack(
+              clipBehavior: Clip.none,
+              alignment: Alignment.center,
+              children: [
+                Icon(widget.icon, color: widget.color, size: 19),
+                Positioned(
+                  top: 7, right: 7,
+                  child: Container(
+                    width: 7, height: 7,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFFF3B30),
+                      shape: BoxShape.circle,
+                      boxShadow: [BoxShadow(color: Color(0x66FF3B30), blurRadius: 4)],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ── Ambient Blob ──────────────────────────────────────────────────────────
+
 class _AmbientBlob extends StatelessWidget {
   final Color  color;
   final double size;
   final double opacity;
+  final Duration pulseDuration;
 
-  const _AmbientBlob({required this.color, required this.size, this.opacity = 0.10});
+  const _AmbientBlob({
+    required this.color,
+    required this.size,
+    this.opacity = 0.10,
+    this.pulseDuration = const Duration(milliseconds: 5000),
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -1637,6 +2940,12 @@ class _AmbientBlob extends StatelessWidget {
           color.withValues(alpha: 0.0),
         ]),
       ),
+    )
+    .animate(onPlay: (c) => c.repeat(reverse: true))
+    .scaleXY(
+      begin: 0.88, end: 1.12,
+      duration: pulseDuration,
+      curve: Curves.easeInOut,
     );
   }
 }
@@ -1757,6 +3066,145 @@ class GlowIconBox extends StatelessWidget {
 
 // ── Folder Card ────────────────────────────────────────────────────────────
 // ── Günün Akıllı Görevi — Sayaç Chip'i ────────────────────────────────────────
+// ── Kompakt Aksiyon Butonu (SmartTaskCard için) ───────────────────────────────
+
+class _CompactActionButton extends StatefulWidget {
+  final String label;
+  final IconData icon;
+  final LinearGradient? gradient;
+  final Color? outlineColor;
+  final bool isDark;
+  final VoidCallback onTap;
+
+  const _CompactActionButton({
+    required this.label,
+    required this.icon,
+    this.gradient,
+    this.outlineColor,
+    this.isDark = false,
+    required this.onTap,
+  });
+
+  @override
+  State<_CompactActionButton> createState() => _CompactActionButtonState();
+}
+
+class _CompactActionButtonState extends State<_CompactActionButton> {
+  bool _hovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final fgColor = widget.gradient != null
+        ? Colors.white
+        : (widget.outlineColor ?? AppTheme.cyan);
+
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      onEnter: (_) => setState(() => _hovered = true),
+      onExit:  (_) => setState(() => _hovered = false),
+      child: GestureDetector(
+        onTap: widget.onTap,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 140),
+          height: 34,
+          padding: const EdgeInsets.symmetric(horizontal: 12),
+          decoration: widget.gradient != null
+              ? BoxDecoration(
+                  gradient: widget.gradient,
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppTheme.coral
+                          .withValues(alpha: _hovered ? 0.50 : 0.28),
+                      blurRadius: _hovered ? 14 : 8,
+                      offset: const Offset(0, 3),
+                    ),
+                  ],
+                )
+              : BoxDecoration(
+                  color: fgColor.withValues(
+                      alpha: _hovered
+                          ? (widget.isDark ? 0.18 : 0.12)
+                          : (widget.isDark ? 0.10 : 0.07)),
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(
+                      color: fgColor.withValues(alpha: 0.38)),
+                ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(widget.icon, color: fgColor, size: 15),
+              const SizedBox(width: 5),
+              Text(
+                widget.label,
+                style: GoogleFonts.inter(
+                  color: fgColor,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ── Web Hover Section Wrapper ─────────────────────────────────────────────────
+/// Web geniş ekranda bölümlere hover edildiğinde border + shadow belirginleşir.
+/// Mobilde sadece child döndürür — sıfır ek maliyet.
+
+class _WebHoverSection extends StatefulWidget {
+  final Widget child;
+  final bool isDark;
+
+  const _WebHoverSection({required this.child, required this.isDark});
+
+  @override
+  State<_WebHoverSection> createState() => _WebHoverSectionState();
+}
+
+class _WebHoverSectionState extends State<_WebHoverSection> {
+  bool _hovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    if (!kIsWeb) return widget.child;
+
+    return MouseRegion(
+      onEnter: (_) => setState(() => _hovered = true),
+      onExit:  (_) => setState(() => _hovered = false),
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 180),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(
+            color: _hovered
+                ? AppTheme.cyan.withValues(alpha: 0.22)
+                : Colors.transparent,
+            width: 1.2,
+          ),
+          boxShadow: _hovered
+              ? [
+                  BoxShadow(
+                    color: AppTheme.cyan
+                        .withValues(alpha: widget.isDark ? 0.10 : 0.07),
+                    blurRadius: 24,
+                    spreadRadius: 0,
+                    offset: const Offset(0, 6),
+                  ),
+                ]
+              : [],
+        ),
+        child: widget.child,
+      ),
+    );
+  }
+}
+
+// ── Smart Counter ─────────────────────────────────────────────────────────────
+
 class _SmartCounter extends StatelessWidget {
   final IconData icon;
   final String label;
@@ -1819,13 +3267,8 @@ class _FolderCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final active = onTap != null;
 
-    return GestureDetector(
-      onTap: () {
-        if (active) {
-          HapticFeedback.mediumImpact();
-          onTap!();
-        }
-      },
+    return _PressableCard(
+      onTap: active ? () { HapticFeedback.mediumImpact(); onTap!(); } : null,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 250),
         curve: Curves.easeOutCubic,
@@ -1977,41 +3420,67 @@ class _InfoSheet extends StatelessWidget {
                 children: [
                   _InfoSection(
                     isDark: isDark,
-                    icon: Icons.timer_rounded,
-                    color: AppTheme.neonGold,
-                    title: 'Günlük Limitler',
-                    body:
-                        'Her gün sana özel ücretsiz bir soru ve kart çözme kotası ayrılır. '
-                        'Günlük limitini doldurduktan sonra yeni sorulara erişmek için ertesi günü bekleyebilir '
-                        'veya sınırsız erişim için Premium\'a geçebilirsin.',
+                    icon: Icons.bolt_rounded,
+                    color: AppTheme.coral,
+                    title: 'Günün Akıllı Görevi',
+                    body: 'Her gün, sana özel bir "Akıllı Görev" hazırlanır. '
+                        'Bugünkü tekrar gerektiren kartları, bilmediğin soruları ve süreyi '
+                        'tek bakışta görürsün. Göreve başlamak için dokunman yeterli.',
                   ),
                   _InfoSection(
                     isDark: isDark,
                     icon: Icons.repeat_rounded,
                     color: AppTheme.cyan,
-                    title: 'Akıllı Tekrar Algoritması',
-                    body:
-                        'Sistem sadece rastgele soru getirmez. Aralıklı tekrar (Spaced Repetition) algoritması '
-                        'ile "Bilemediklerini" ve tam unutmak üzereyken "Tekrar Vakti Gelen Bildiklerini" '
-                        'otomatik olarak önüne getirir. Zorlandığın kartlar daha sık, kolay kartlar daha seyrek gelir.',
+                    title: 'SM-2 Akıllı Tekrar Algoritması',
+                    body: 'SuperMemo-2 algoritması, her kart için ayrı aralıklı tekrar programı oluşturur. '
+                        '"Bildim" dediğin kartlar giderek daha seyrek gelir. '
+                        '"Bilemedim" dediğin kartlar ertesi gün tekrar karşına çıkar. '
+                        '3 kez üst üste "Bildim" = Ustalaştın sayılırsın. 🎯',
+                  ),
+                  _InfoSection(
+                    isDark: isDark,
+                    icon: Icons.analytics_rounded,
+                    color: AppTheme.neonPurple,
+                    title: 'AI Hata Analiz Motoru',
+                    body: 'AI asistan, çözdüğün soruları ve hata kalıplarını analiz ederek zayıf noktalarını tespit eder. '
+                        '"Hata Analizi" sekmesinde branş bazında derinlemesine rapor alabilir, '
+                        'eksiklerini kapatmaya yönelik kişiselleştirilmiş çalışma planı görebilirsin.',
                   ),
                   _InfoSection(
                     isDark: isDark,
                     icon: Icons.bar_chart_rounded,
-                    color: AppTheme.neonPurple,
-                    title: 'Ustalık (Gidişat Analizi)',
-                    body:
-                        'İstatistiklerdeki branş hakimiyet barlarının dolması için bir soruyu sadece 1 kez değil, '
-                        'en az 3 kez üst üste "Bildim" olarak yanıtlaman gerekir. '
-                        'Böylece gerçekten öğrendiğin konular yüzdeliğe yansır.',
+                    color: AppTheme.neonGold,
+                    title: 'Branş Hakimiyet Analizi',
+                    body: 'Analitik ekranında her branş için ayrı bir hakimiyet barı görürsün. '
+                        'Bu bar, sadece "Bildim" dediğin soruları değil, '
+                        'üst üste doğru yanıtladığın (gerçekten öğrendiğin) soruları ölçer. '
+                        'Böylece gerçek güçlü ve zayıf branşlarını net görürsün.',
+                  ),
+                  _InfoSection(
+                    isDark: isDark,
+                    icon: Icons.computer_rounded,
+                    color: AppTheme.success,
+                    title: 'Web & Masaüstü Deneyimi',
+                    body: 'AsisTus hem mobil hem web için optimize edilmiştir. '
+                        'Tarayıcıda açtığında sol kenar çubuğu ile 6 ana seksi (Ana Sayfa, Koleksiyonlar, '
+                        'Odak Modu, Deneme, Analitik, Profil) hızla geçiş yapabilirsin. '
+                        'Alt+1–6 klavye kısayolları da desteklenmektedir.',
+                  ),
+                  _InfoSection(
+                    isDark: isDark,
+                    icon: Icons.timer_rounded,
+                    color: AppTheme.neonGold,
+                    title: 'Günlük Limitler & Premium',
+                    body: 'Her gün ücretsiz olarak belirli sayıda kart ve soru çözebilirsin. '
+                        'Günlük limitini doldurduktan sonra ertesi gün bekleyebilir '
+                        'veya sınırsız erişim için Premium\'a geçebilirsin.',
                   ),
                   _InfoSection(
                     isDark: isDark,
                     icon: Icons.psychology_rounded,
                     color: const Color(0xFFFF9F0A),
-                    title: 'Zayıf Konular (Eksik Kapatma)',
-                    body:
-                        'AI Asistan sekmesi tamamen senin kişisel eksiklerini kapatmak için tasarlandı. '
+                    title: 'Kişisel AI Danışman',
+                    body: 'AI Asistan sekmesi tamamen senin kişisel eksiklerini kapatmak için tasarlandı. '
                         'İstatistiklerini yorumlayarak en çok zorlandığın konuları tespit eder ve '
                         '"Bilemediklerini" eritmeye odaklı kişiselleştirilmiş bir çalışma planı sunar.',
                   ),
@@ -2025,6 +3494,203 @@ class _InfoSheet extends StatelessWidget {
     );
   }
 }
+
+// ── Desktop Stat Chip ─────────────────────────────────────────────────────────
+class _DesktopStatChip extends StatelessWidget {
+  final IconData icon;
+  final String value;
+  final String label;
+  final Color color;
+  final bool isDark;
+
+  const _DesktopStatChip({
+    required this.icon,
+    required this.value,
+    required this.label,
+    required this.color,
+    required this.isDark,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final bg = color.withValues(alpha: isDark ? 0.10 : 0.07);
+    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      decoration: BoxDecoration(
+        color: bg,
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: color.withValues(alpha: 0.20)),
+      ),
+      child: Row(
+        children: [
+          Icon(icon, color: color, size: 16),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  value,
+                  style: GoogleFonts.inter(
+                      color: textColor,
+                      fontSize: 13,
+                      fontWeight: FontWeight.w800),
+                ),
+                Text(
+                  label,
+                  style: GoogleFonts.inter(
+                      color: color,
+                      fontSize: 10,
+                      fontWeight: FontWeight.w600),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ── Desktop Quick Link ────────────────────────────────────────────────────────
+class _DesktopQuickLink extends StatefulWidget {
+  final IconData icon;
+  final String label;
+  final String sublabel;
+  final Color color;
+  final bool isDark;
+  final VoidCallback onTap;
+
+  const _DesktopQuickLink({
+    required this.icon,
+    required this.label,
+    required this.sublabel,
+    required this.color,
+    required this.isDark,
+    required this.onTap,
+  });
+
+  @override
+  State<_DesktopQuickLink> createState() => _DesktopQuickLinkState();
+}
+
+class _DesktopQuickLinkState extends State<_DesktopQuickLink> {
+  bool _hovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final textColor = widget.isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
+    final subColor  = widget.isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary;
+    final bg = _hovered
+        ? widget.color.withValues(alpha: widget.isDark ? 0.12 : 0.08)
+        : Colors.transparent;
+
+    return MouseRegion(
+      onEnter: (_) => setState(() => _hovered = true),
+      onExit:  (_) => setState(() => _hovered = false),
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: widget.onTap,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 150),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+          decoration: BoxDecoration(
+            color: bg,
+            borderRadius: BorderRadius.circular(14),
+            border: Border.all(
+              color: _hovered
+                  ? widget.color.withValues(alpha: 0.30)
+                  : Colors.transparent,
+            ),
+          ),
+          child: Row(
+            children: [
+              Container(
+                width: 34,
+                height: 34,
+                decoration: BoxDecoration(
+                  color: widget.color.withValues(alpha: 0.12),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Icon(widget.icon, color: widget.color, size: 17),
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(widget.label,
+                        style: GoogleFonts.inter(
+                            color: textColor,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700)),
+                    Text(widget.sublabel,
+                        style: GoogleFonts.inter(
+                            color: subColor,
+                            fontSize: 10,
+                            fontWeight: FontWeight.w500)),
+                  ],
+                ),
+              ),
+              Icon(Icons.chevron_right_rounded,
+                  color: _hovered ? widget.color : subColor, size: 18),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ── Desktop Mini Stat ─────────────────────────────────────────────────────────
+class _DesktopMiniStat extends StatelessWidget {
+  final String value;
+  final String label;
+  final Color color;
+  final bool isDark;
+
+  const _DesktopMiniStat({
+    required this.value,
+    required this.label,
+    required this.color,
+    required this.isDark,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
+    final bg = color.withValues(alpha: isDark ? 0.08 : 0.06);
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+      decoration: BoxDecoration(
+        color: bg,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: color.withValues(alpha: 0.18)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            value,
+            style: GoogleFonts.inter(
+                color: textColor, fontSize: 18, fontWeight: FontWeight.w800),
+          ),
+          const SizedBox(height: 2),
+          Text(
+            label,
+            style: GoogleFonts.inter(
+                color: color, fontSize: 10, fontWeight: FontWeight.w600),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 
 class _InfoSection extends StatelessWidget {
   final bool isDark;

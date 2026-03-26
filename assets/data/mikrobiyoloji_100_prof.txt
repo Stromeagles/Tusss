@@ -1,0 +1,829 @@
+Soru: (Mikrobiyoloji) Gram boyama yönteminde "kristal viyole" ile boyandıktan sonra uygulanan ve boyanın hücreye sabitlenmesini sağlayan madde hangisidir?
+A) Lugol (İyot)
+B) Alkol
+C) Safranin
+D) Su
+E) Karbol fuksin
+Cevap: A
+Profesör Açıklaması: Gram boyamada Lugol çözeltisi (mordan), kristal viyole ile kompleks oluşturarak boyanın hücre duvarına sabitlenmesini sağlar.
+
+Soru: (Mikrobiyoloji) Aşağıdaki bakterilerden hangisi "fakültatif intraselüler" (hücre içi) üreme yeteneğine sahiptir?
+A) Staphylococcus aureus
+B) Streptococcus pyogenes
+C) Listeria monocytogenes
+D) Escherichia coli
+E) Clostridium tetani
+Cevap: C
+Profesör Açıklaması: Listeria, Salmonella, Brucella ve Mycobacterium gibi bakteriler fagositoz sonrası makrofajların içinde yaşayabilir ve üreyebilirler.
+
+Soru: (Mikrobiyoloji) Penisilinlerin (Beta-laktamlar) bakteriler üzerindeki temel etki mekanizması nedir?
+A) Protein sentezi inhibisyonu (30S)
+B) DNA sentezi inhibisyonu
+C) Hücre duvarı sentezi inhibisyonu (Transpeptidaz inhibisyonu)
+D) RNA sentezi inhibisyonu
+E) Hücre membran geçirgenliğini bozma
+Cevap: C
+Profesör Açıklaması: Beta-laktam antibiyotikler, bakteriyel hücre duvarı sentezinin son basamağı olan peptidoglikan çapraz bağlarını yapan transpeptidaz enzimlerine (PBP) bağlanarak hücreyi lize ederler.
+
+Soru: (Mikrobiyoloji) Hastane enfeksiyonlarında sık görülen, çoklu ilaç direnci olan ve "Oksidaz pozitif", Gram negatif non-fermentatif basil hangisidir?
+A) Klebsiella pneumoniae
+B) Pseudomonas aeruginosa
+C) Acinetobacter baumannii
+D) Proteus mirabilis
+E) E. coli
+Cevap: B
+Profesör Açıklaması: Pseudomonas, karakteristik yeşil pigmenti ve oksidaz pozitifliği ile tanınır. Acinetobacter ise oksidaz negatiftir.
+
+Soru: (Mikrobiyoloji) Aşağıdaki virüslerden hangisi "segmentli" bir RNA genomuna sahiptir ve bu sayede antijenik değişimlere (shift) çok müsaittir?
+A) HIV
+B) Influenza Virüsü
+C) Hepatit C Virüsü
+D) Kızamık Virüsü
+E) Kuduz Virüsü
+Cevap: B
+Profesör Açıklaması: İnfluenza (Grip) virüsünün 8 segmentli genomu vardır. Segmenlerin farklı virüsler arası değişimi (reassortment) büyük pandemilere neden olan antijenik shift'lere yol açar.
+
+Soru: (Mikrobiyoloji) "Gazlı Gangren" tablosundan sorumlu olan ve lesitinaz (alfa toksin) üreten anaerobik bakteri hangisidir?
+A) Clostridium botulinum
+B) Clostridium tetani
+C) Clostridium perfringens
+D) Bacillus anthracis
+E) Bacteroides fragilis
+Cevap: C
+Profesör Açıklaması: C. perfringens, dokularda hızlı nekroz ve gaz oluşumu yapan, alfa toksini ile hücre membranlarını yıkan bir anaerobdur.
+
+Soru: (Mikrobiyoloji) Aşağıdakilerden hangisi "canlı (atenué)" bir aşıdır?
+A) Hepatit B aşısı
+B) Kuduz aşısı
+C) BCG (Tüberküloz) aşısı
+D) Tetanos toksoidi
+E) IPV (İnaktif Polio)
+Cevap: C
+Profesör Açıklaması: BCG, Kızamık-Kızamıkçık-Kabakulak (KKK) ve Oral Polio (Sabin) canlı aşılardır. İmmün yetmezliği olanlara uygulanmazlar.
+
+Soru: (Mikrobiyoloji) Sıtma (Malarya) tanısında "kalın damla" ve "ince yayma" preparatları hangi boya ile boyanarak incelenir?
+A) Gram boyası
+B) EZN boyası
+C) Giemsa boyası
+D) Metilen mavisi
+E) Çini mürekkebi
+Cevap: C
+Profesör Açıklaması: Kan parazitlerinin (Plasmodium, Leishmania vb.) morfolojik tanısında Giemsa veya Wright boyaları altın standarttır.
+
+Soru: (Mikrobiyoloji) Aşağıdaki mantarlardan hangisi fırsatçı bir enfeksiyon yapar ve karakteristik "yalancı hif" (psödohif) oluşturur?
+A) Aspergillus
+B) Candida albicans
+C) Rhizopus
+D) Microsporum
+E) Histoplasma
+Cevap: B
+Profesör Açıklaması: Candida, hem maya hem de psödohif formunda görülebilir. Germ tüp testi ile tanısı kolaylaştırılır.
+
+Soru: (Mikrobiyoloji) Boğaz ağrısı, yüksek ateş ve boyunda membranöz eksüda ile gelen çocukta "Difteri" düşünülüyorsa, örnek hangi besiyerine ekilmelidir?
+A) MacConkey Agar
+B) Löffler besiyeri
+C) EMB Agar
+D) Sabouraud Dextrose Agar
+E) Kanlı Agar (hemoliz için)
+Cevap: B
+Profesör Açıklaması: Corynebacterium diphtheriae üretimi için Löffler besiyeri veya tellüritli agar (gri-siyah koloni) kullanılır.
+
+Soru: (Mikrobiyoloji) Aşağıdakilerden hangisi "obligat intraselüler" (zorunlu hücre içi) bir bakteri olup, hücre dışında enerji üretemez?
+A) Mycoplasma
+B) Chlamydia
+C) Legionella
+D) Salmonella
+E) Brucella
+Cevap: B
+Profesör Açıklaması: Klamidyalar ATP üretemedikleri için "enerji paraziti" olarak bilinirler ve sadece hücre içinde çoğalabilirler. Mycoplasma ise besiyerinde üreyebilir ama duvarı yoktur.
+
+Soru: (Mikrobiyoloji) Karaciğer kisti (Kist hidatik) hastalığına yol açan "Echinococcus granulosus" insana nasıl bulaşır?
+A) Az pişmiş et yemekle
+B) Enfekte köpek dışkısı ile kirlenmiş sebze-meyvelerin yenmesiyle (yumurta alımı)
+C) Sivrisinek sokmasıyla
+D) Çıplak ayakla toprağa basmakla
+E) Kan transfüzyonuyla
+Cevap: B
+Profesör Açıklaması: Köpek barsağında yaşayan tenyanın yumurtaları dışkı ile atılır. İnsan bu yumurtaları (onkosfer) ağız yoluyla alırsa kist hidatik gelişir.
+
+Soru: (Mikrobiyoloji) Antibiyotik direncinde "Genişlemiş Spektrumlu Beta-Laktamaz" (GSBL) üreten bakterilere karşı en etkili ilaç grubu hangisidir?
+A) Penisilinler
+B) 1. kuşak sefalosporinler
+C) Karbapenemler (İmipenem, Meropenem)
+D) Makrolidler
+E) Tetrasiklinler
+Cevap: C
+Profesör Açıklaması: GSBL üreten (özellikle E. coli ve Klebsiella) suşlar çoğu beta-laktama dirençlidir. Tedavide karbapenemler tercih edilir.
+
+Soru: (Mikrobiyoloji) Aşağıdaki virüslerden hangisi "Hepatit D" (Delta ajanı) enfeksiyonu yapabilmek için ortamda mutlaka bulunmalıdır?
+A) HAV
+B) HBV (HBsAg)
+C) HCV
+D) HEV
+E) HIV
+Cevap: B
+Profesör Açıklaması: HDV defektif bir RNA virüsüdür ve kılıf (envelope) yapısı için HBV'nin HBsAg proteinine ihtiyaç duyar.
+
+Soru: (Mikrobiyoloji) "Toksik Şok Sendromu"na yol açan ve bir "Süperantijen" olarak davranan toksin hangi bakteriye aittir?
+A) Staphylococcus aureus (TSST-1)
+B) E. coli
+C) Pseudomonas
+D) Neisseria meningitidis
+E) Bacillus cereus
+Cevap: A
+Profesör Açıklaması: S. aureus'un TSST-1 toksini, antijen sunan hücre ile T hücresi arasındaki bağı spesifik olmayarak (masif) uyarır ve aşırı sitokin salınımıyla şoka sokar.
+
+Soru: (Mikrobiyoloji) Gebelikte taraması yapılan "TORCH" grubu enfeksiyonlar içerisinde "T" harfi neyi temsil eder?
+A) Tetanos
+B) Toksoplazmozis
+C) Tifo
+D) Tüberküloz
+E) Tularemi
+Cevap: B
+Profesör Açıklaması: TORCH: Toxoplasma gondii, Others (Syphilis, Varicella vb.), Rubella, Cytomegalovirus (CMV), Herpes Simplex (HSV).
+
+Soru: (Mikrobiyoloji) Penisilin alerjisi olan bir hastada "beta-hemolitik streptokok" enfeksiyonu için alternatif olarak en sık hangi grup ilaç tercih edilir?
+A) Aminoglikozidler
+B) Makrolidler (Eritromisin, Klaritromisin)
+C) Kinolonlar
+D) Sülfonamidler
+E) Polimiksinler
+Cevap: B
+Profesör Açıklaması: Penisilin alerjisi durumunda Gram pozitif kok enfeksiyonları için makrolidler (30S/50S protein sentezi inhibitörü) güvenli bir alternatiftir.
+
+Soru: (Mikrobiyoloji) "Menenjit" şüphesiyle alınan beyin omurilik sıvısının (BOS) direkt mikroskobisinde "Gram negatif diplokok" görülmesi hangi etkeni düşündürür?
+A) Streptococcus pneumoniae
+B) Neisseria meningitidis
+C) Haemophilus influenzae
+D) Listeria monocytogenes
+E) Cryptococcus neoformans
+Cevap: B
+Profesör Açıklaması: N. meningitidis (Meningokok), karakteristik kahve çekirdeği şeklinde Gram negatif diplokok görüntüsü verir. S. pneumoniae ise Gram pozitif diplokoktur.
+
+Soru: (Mikrobiyoloji) Aşağıdaki parazitlerden hangisi "gece makat kaşıntısı" yapar ve selofan bant yöntemiyle teşhis edilir?
+A) Ascaris lumbricoides
+B) Enterobius vermicularis (Kıl kurdu)
+C) Taenia saginata
+D) Giardia lamblia
+E) Entamoeba histolytica
+Cevap: B
+Profesör Açıklaması: Kıl kurdu (Enterobiyozis), yumurtalarını gece perianal bölgeye bırakır. Bu bölgeden alınan selofan bant örneğinde yumurtaların görülmesiyle tanı konur.
+
+Soru: (Mikrobiyoloji) "Ekmek küfü" olarak bilinen ve diyabetik ketoasidozlu hastalarda burun/göz çevresinde invaziv (ölümcül) enfeksiyon yapan mantar hangisidir?
+A) Candida
+B) Aspergillus
+C) Mucor / Rhizopus (Mukormikozis)
+D) Dermatofit
+E) Sporothrix
+Cevap: C
+Profesör Açıklaması: Zygomycetes ailesi (Mucor, Rhizopus), ketoasidozda hızla çoğalır ve damarları (angioinvazyon) tıkayarak nekroz yapar.
+
+Soru: (Mikrobiyoloji) Bir bakterinin genetik bilgisini "biyofajlar" (virüsler) aracılığıyla başka bir bakteriye aktarmasına ne ad verilir?
+A) Transformasyon
+B) Konjugasyon
+C) Transdüksiyon
+D) Transpozisyon
+E) Mutasyon
+Cevap: C
+Profesör Açıklaması: Bakteriyel gen transferi yolları: Konjugasyon (pilus ile), Transformasyon (serbest DNA alımı), Transdüksiyon (bakteriyofaj ile).
+
+Soru: (Mikrobiyoloji) "Kuduz" (Rabies) şüpheli bir ısırık sonrası sinir hücrelerinde görülen karakteristik inklüzyon cisimciği hangisidir?
+A) Guarnieri cisimciği
+B) Negri cisimciği
+C) Cowdry tip A
+D) Paschen cisimciği
+E) Heinz cisimciği
+Cevap: B
+Profesör Açıklaması: Kuduz virüsü (Rhabdoviridae), beyin dokusunda (hiperkampus, cerebellum) sitoplazmik Negri cisimcikleri oluşturur.
+
+Soru: (Mikrobiyoloji) Aşağıdakilerden hangisi "obligat anaerob" (oksijensiz ortamda üreyen) bir bakteridir?
+A) Pseudomonas aeruginosa
+B) Bacillus subtilis
+C) Bacteroides fragilis
+D) E. coli (Fakültatif)
+E) Neisseria gonorrhoeae
+Cevap: C
+Profesör Açıklaması: Bacteroides fragilis, kalın bağırsak florasında en çok bulunan obligat anaerob bakteridir. Diğerleri oksijenli ortamı sever veya tolere eder.
+
+Soru: (Mikrobiyoloji) Antiseptik ve dezenfektanlardan "alkol"ün (Etil alkol/İzopropanol) en etkili olduğu konsantrasyon aralığı hangisidir?
+A) %100 (saf alkol)
+B) %70-90
+C) %30-40
+D) %10-20
+E) %1
+Cevap: B
+Profesör Açıklaması: Alkolün proteinleri denatüre edebilmesi için bir miktar suya ihtiyacı vardır. Tam saf (%100) alkol proteinleri hapseder ama öldürmez; bu yüzden %70'lik solüsyonlar daha etkilidir.
+
+Soru: (Mikrobiyoloji) Aşağıdaki şıklardan hangisi "prion" hastalıkları (örn: Creutzfeldt-Jakob) için doğrudur?
+A) RNA içerirler
+B) DNA içerirler
+C) Nükleik asit içermeyen, sadece enfeksiyöz proteinlerdir
+D) Antibiyotiklerle tedavi edilirler
+E) Otoklavda 5 dakikada ölürler
+Cevap: C
+Profesör Açıklaması: Prionlar, yanlış katlanmış protein yapısındaki ajanlardır. Nükleik asitleri yoktur ve standart sterilizasyon yöntemlerine aşırı dirençlidirler.
+
+Soru: (Mikrobiyoloji) "Poliomiyelit" (Çocuk felci) virüsü vücuda hangi yolla girer?
+A) Solunum yolu (damlacık)
+B) Fekal-oral yol (kirli su/gıda)
+C) Kan yoluyla
+D) Cinsel yol
+E) Vektör (sinek) yoluyla
+Cevap: B
+Profesör Açıklaması: Poliovirüs (Enterovirüs grubu), dışkı ile kirlenmiş su ve gıdalarla alınır, bağırsakta çoğalır ve sinir sistemine yayılabilir.
+
+Soru: (Mikrobiyoloji) Mantarların hücre duvarında bulunan ve bazı antifungal ilaçların (Amfoterisin B) bağlandığı sterol yapısı hangisidir?
+A) Kolesterol
+B) Ergosterol
+C) Fitosterol
+D) Lanosterol
+E) Stigmasterol
+Cevap: B
+Profesör Açıklaması: İnsan hücre membranında kolesterol bulunurken, mantarlarda ergosterol bulunur. Antifungaller bu farkı hedef alarak seçici etki gösterirler.
+
+Soru: (Mikrobiyoloji) "Kızıl" (Scarlet fever) hastalığında görülen döküntüleri oluşturan "Eritrojenik Toksin" hangi bakteriye aittir?
+A) Staphylococcus aureus
+B) Streptococcus pyogenes (A grubu Beta)
+C) Streptococcus pneumoniae
+D) Neisseria meningitidis
+E) Bacillus anthracis
+Cevap: B
+Profesör Açıklaması: S. pyogenes'in pirojenik ekzotoksinleri (SpeA, B, C), boğaz enfeksiyonu sonrası vücutta yaygın kırmızı döküntülere (kızıl) neden olur.
+
+Soru: (Mikrobiyoloji) Tüberküloz tanısında kullanılan ve 48-72 saat sonra değerlendirilen "PPD (Mantoux) testi" hangi tip aşırı duyarlılık reaksiyonuna örnektir?
+A) Tip 1 (Anafilaktik)
+B) Tip 2 (Sitotoksik)
+C) Tip 3 (İmmün kompleks)
+D) Tip 4 (Gecikmiş tip / Hücresel)
+E) Tip 5 (Reseptör aracılı)
+Cevap: D
+Profesör Açıklaması: Tüberkülin testi, T lenfositlerin ve makrofajların aracılık ettiği hücresel bir yanıttır ve gelişim süreci uzun sürdüğü için gecikmiş (delayed) tip duyarlılık denir.
+
+Soru: (Mikrobiyoloji) Aşağıdaki bakterilerden hangisi "hareketli" olup, kültürü yapıldığında besiyeri yüzeyini kaplayan "swarming" (yüzme/yayılma) özelliği gösterir?
+A) E. coli
+B) Klebsiella pneumoniae
+C) Proteus mirabilis
+D) Shigella sonnei
+E) Salmonella typhi
+Cevap: C
+Profesör Açıklaması: Proteus türleri çok sayıda peritrik kamçıya sahiptir ve katı besiyerinde dalga dalga yayılarak swarming fenomene yol açarlar.
+
+Soru: (Mikrobiyoloji) "AİDS" hastalığının etkeni olan HIV virüsü, temel olarak hangi hücreleri enfekte ederek bağışıklığı çökertir?
+A) CD8+ Sitotoksik T hücreleri
+B) CD4+ Helper (Yardımcı) T hücreleri
+C) B lenfositler
+D) Nötrofiller
+E) Doğal öldürücü (NK) hücreler
+Cevap: B
+Profesör Açıklaması: HIV'in gp120 yüzey proteini, konak hücredeki CD4 reseptörüne bağlanır. CD4 hücrelerinin sayısının kritik seviyenin altına düşmesi fırsatçı enfeksiyonlara yol açar.
+
+Soru: (Mikrobiyoloji) "Pirinç suyu şeklinde ishal" ile karakterize, fekal-oral bulaşan ve toksini aracılığıyla CAMP düzeyini artırarak sıvı kaybı yapan bakteri hangisidir?
+A) Salmonella enteritidis
+B) Vibrio cholerae (Kolera)
+C) Shigella dysenteriae
+D) E. coli (ETEC)
+E) Campylobacter jejuni
+Cevap: B
+Profesör Açıklaması: Kolera toksini (A-B yapısında), bağırsak epitelinde adenilat siklazı kalıcı aktive ederek aşırı su ve elektrolit sekresyonuna neden olur.
+
+Soru: (Mikrobiyoloji) Bir virüsün dış kılıfı (envelope) kimyasal olarak neyden oluşur?
+A) Saf protein
+B) Saf karbonhidrat
+C) Konak hücre zarından türetilen Lipid + Viral proteinler
+D) Peptidoglikan
+E) Selüloz
+Cevap: C
+Profesör Açıklaması: Kılıflı virüsler, hücreden tomurcuklanarak çıkarken konak hücrenin lipid membranını üzerlerine alırlar. Kılıfsız virüsler dış ortama daha dayanıklıdır.
+
+Soru: (Mikrobiyoloji) Aşağıdaki hepatit virüslerinden hangisi "fekal-oral" yolla Bulaşır ve kronikleşme göstermez (geçici enfeksiyon yapar)?
+A) HBV
+B) HCV
+C) HDV
+D) HEV
+E) Hepatit G
+Cevap: D
+Profesör Açıklaması: Hepatit A ve E (A ve E sesli harflerle başlar -> Ağız yolu) fekal-oral bulaşır. B, C ve D ise kan ve cinsel yolla bulaşır ve kronikleşebilir.
+
+Soru: (Mikrobiyoloji) Penisilin keşfiyle tanınan ve tıbbi mikrobiyolojide devrim yapan bilim insanı kimdir?
+A) Louis Pasteur
+B) Robert Koch
+C) Alexander Fleming
+D) Joseph Lister
+E) Edward Jenner
+Cevap: C
+Profesör Açıklaması: Fleming 1928'de Penicillium küfünün Staphylococcus üremesini durdurduğunu fark ederek ilk antibiyotiği bulmuştur.
+
+Soru: (Mikrobiyoloji) "Syphilis" (Frengi) hastalığının etkeni olan ve Gram boyasında boyanmayan, karanlık saha mikroskobunda görülen spiroket hangisidir?
+A) Borrelia burgdorferi
+B) Treponema pallidum
+C) Leptospira interrogans
+D) Spirillum minus
+E) Treponema denticola
+Cevap: B
+Profesör Açıklaması: T. pallidum çok ince bir spiroket olduğu için ışık mikroskobunda görülmez; gümüşleme yöntemi veya karanlık saha mikroskobisi gerektirir.
+
+Soru: (Mikrobiyoloji) Aşağıdakilerden hangisi "Mantarların" (Fungi) genel özelliklerinden biri DEĞİLDİR?
+A) Ökaryotik hücre yapısına sahiptirler
+B) Klorofilleri yoktur, fotosentez yapamazlar
+C) Hücre duvarlarında peptidoglikan bulunur
+D) Çoğu saprofittir (ölü organizmalardan beslenir)
+E) Sporla çoğalabilirler
+Cevap: C
+Profesör Açıklaması: Mantarların hücre duvarında kitin, mannan ve glukan bulunur. Peptidoglikan ise sadece "Bakterilere" özgü bir yapıdır.
+
+Soru: (Mikrobiyoloji) Özellikle çocuklarda görülen ve "Gül kurusu" renginde döküntüler yapan, HHV-6 virüsünün neden olduğu hastalık hangisidir?
+A) Kızamık
+B) Kızamıkçık
+C) Su çiçeği
+D) Roseola Infantum (6. Hastalık)
+E) Eritema Enfeksiyozum (5. Hastalık)
+Cevap: D
+Profesör Açıklaması: Roseola, yüksek ateşin aniden düşmesiyle başlayan karakterize döküntülü bir çocukluk çağı hastalığıdır.
+
+Soru: (Mikrobiyoloji) "Tifo" (Enterik ateş) hastalığının tanısında kullanılan serolojik test hangisidir?
+A) Widal testi
+B) Weil-Felix testi
+C) VDRL testi
+D) Wright testi (Brucella için)
+E) Monospot testi
+Cevap: A
+Profesör Açıklaması: Widal testi, Salmonella typhi'nin O ve H antijenlerine karşı oluşan antikorları saptamaya yarayan bir aglütinasyon testidir.
+
+Soru: (Mikrobiyoloji) Aşağıdaki antibiyotiklerden hangisi "DNA Jiraz" enzimini inhibe ederek bakteri DNA replikasyonunu durdurur?
+A) Rifampisin
+B) Siprofloksasin (Kinolonlar)
+C) Vankomisin
+D) Linkozamid
+E) Kolistin
+Cevap: B
+Profesör Açıklaması: Florokinolonlar, topoizomeraz/DNA jiraz enzimlerine bağlanarak DNA'nın açılmasını ve kopyalanmasını engellerler.
+
+Soru: (Mikrobiyoloji) Gram boyama yönteminde "kristal viyole" ile boyandıktan sonra uygulanan ve boyanın hücreye sabitlenmesini sağlayan madde hangisidir?
+A) Lugol (İyot)
+B) Alkol
+C) Safranin
+D) Su
+E) Karbol fuksin
+Cevap: A
+Profesör Açıklaması: Gram boyamada Lugol çözeltisi (mordan), kristal viyole ile kompleks oluşturarak boyanın hücre duvarına sabitlenmesini sağlar.
+
+Soru: (Mikrobiyoloji) "Veba" (Plague) hastalığının etkeni olan ve farelerden pireler aracılığıyla bulaşan bakteri hangisidir?
+A) Francisella tularensis
+B) Yersinia pestis
+C) Pasteurella multocida
+D) Brucella melitensis
+E) Burkholderia mallei
+Cevap: B
+Profesör Açıklaması: Yersinia pestis, Gram negatif ve bipolar boyanan (emniyet pimi görüntüsü) bir basildir. Orta çağda milyonlarca insanı öldüren "Kara Ölüm"den sorumludur.
+
+Soru: (Mikrobiyoloji) Aşağıdaki virüslerden hangisi "serviks kanseri"yle (rahim ağzı kanseri) en yüksek oranda ilişkili onkojenik bir virüstür?
+A) HSV-2
+B) EBV
+C) HPV (Human Papilloma Virus)
+D) HIV
+E) Adenovirüs
+Cevap: C
+Profesör Açıklaması: HPV tip 16 ve 18, servikal kanserlerin %70'inden sorumludur. Bu virüsler E6 ve E7 proteinleri ile p53 ve Rb kontrol mekanizmalarını bozarlar.
+
+Soru: (Mikrobiyoloji) Bir hastadan alınan boğaz kültürü "Kanlı Agar"da tam erime (berrak zon) oluşturuyorsa bu duruma ne ad verilir?
+A) Alfa hemoliz
+B) Beta hemoliz
+C) Gama hemoliz (hemoliz yok)
+D) Delta hemoliz
+E) Plazmoliz
+Cevap: B
+Profesör Açıklaması: Beta hemoliz eritrositlerin tam yıkımıdır (örn: S. pyogenes). Alfa hemoliz ise yeşilimsi yarım yıkımdır (örn: S. pneumoniae).
+
+Soru: (Mikrobiyoloji) Bakterilerin dış çevresinde bulunan, fagositozu engelleyen ve "Quellung" deneyi ile gösterilen yapı hangisidir?
+A) Pilus
+B) Kamçı (Flagellum)
+C) Kapsül
+D) Hücre zarı
+E) Mezozom
+Cevap: C
+Profesör Açıklaması: Polisakarit yapıdaki kapsül (S. pneumoniae, H. influenzae gibi), bağışıklık hücrelerinin bakteriyi yemesini zorlaştıran en önemli virülans faktörüdür.
+
+Soru: (Mikrobiyoloji) Güvercin dışkısıyla bulaşan, kapsüllü olduğu için "Çini mürekkebi" ile tanınan ve menenjit yapan mantar hangisidir?
+A) Candida albicans
+B) Cryptococcus neoformans
+C) Aspergillus fumigatus
+D) Histoplasma capsulatum
+E) Sporothrix schenckii
+Cevap: B
+Profesör Açıklaması: C. neoformans'ın kalın kapsülü çini mürekkebi boyasında negatif boyanır (halo görüntüsü). Özellikle bağışıklığı baskılanmışlarda beyin enfeksiyonu yapar.
+
+Soru: (Mikrobiyoloji) "Sterilizasyon" işleminde kullanılan ve 121°C'de 15-20 dakika süreyle basınçlı doymuş su buharı uygulanan cihaz hangisidir?
+A) Pasteur fırını (Kuru ısı)
+B) Otoklav
+C) Benmari
+D) İnkübatör
+E) Hepa filtre
+Cevap: B
+Profesör Açıklaması: Otoklav, mikroorganizmaları ve sporlarını en güvenilir şekilde yok eden basınçlı buhar sterilizatörüdür.
+
+Soru: (Mikrobiyoloji) Aşağıdakilerden hangisi "Sülfonamidlerin" (Antibiyotik) etki mekanizmasıdır?
+A) Ribozomun 50S alt birimine bağlanır
+B) Hücre duvarı sentezini durdurur
+C) Folik asit sentezini (PABA yarışmasıyla) engeller
+D) DNA polimerazı inhibe eder
+E) RNA polimerazı inhibe eder
+Cevap: C
+Profesör Açıklaması: Sülfonamidler PABA analoğudur ve bakterinin büyümesi için gerekli olan folik asit yapımını rekabetçi olarak durdururlar.
+
+Soru: (Mikrobiyoloji) Kuduz aşısının ilk başarılı uygulamasını yapan ve pastörizasyon yöntemini bulan bilim insanı hangisidir?
+A) Robert Koch
+B) Louis Pasteur
+C) Anthony van Leeuwenhoek
+D) Paul Ehrlich
+E) Jonas Salk
+Cevap: B
+Profesör Açıklaması: Pasteur, mikrop teorisini savunmuş, şarbon ve kuduz aşılarını geliştirerek tıbbi mikrobiyolojinin kurucularından biri olmuştur.
+
+Soru: (Mikrobiyoloji) Özellikle hamile kadınlarda "Hepatit E" enfeksiyonu geçirilmesinin önemi nedir?
+A) Daima kronikleşir
+B) Genelde belirtisizdir
+C) %20'lere varan ağır seyir ve yüksek mortalite riski (fulminan hepatit) taşır
+D) Bebeğe geçmez
+E) Sadece deri döküntüsü yapar
+Cevap: C
+Profesör Açıklaması: Hepatit E normalde selim seyretse de, hamilelerde çok ağır karaciğer yetmezliği ve ölüme neden olabilen nadir enfeksiyonlardan biridir.
+
+Soru: (Mikrobiyoloji) Hücre duvarında mikolik asit içeren, "asidorezistan" (EZN boyasıyla boyanan) bakterilerin genel adı nedir?
+A) Stafilokoklar
+B) Mycoplasmalar
+C) Mycobacteria
+D) Treponemalar
+E) Actinomyces
+Cevap: C
+Profesör Açıklaması: Mycobacteria ailesi (M. tuberculosis, M. leprae), hücre duvarındaki mumsu mikolik asitler nedeniyle asidorezistandır (ASB) ve EZN boyasında pembe/kırmızı görünürler.
+
+Soru: (Mikrobiyoloji) Aşağıdaki virüslerden hangisi "serviks kanseri" ile en yüksek ilişkili onkojenik tiplere sahiptir?
+A) HSV-2
+B) HPV (Human Papilloma Virus)
+C) CMV
+D) EBV
+E) HIV
+Cevap: B
+Profesör Açıklaması: HPV tip 16 ve 18, servikal kanser vakalarının yaklaşık %70'inden sorumludur. E6 ve E7 proteinleri üzerinden p53 ve Rb tümör baskılayıcı genlerini inhibe ederler.
+
+Soru: (Mikrobiyoloji) "Balık yiyenlerde" görülen ve B12 vitamini eksikliğine (megaloblastik anemi) neden olan en uzun parazit hangisidir?
+A) Taenia saginata
+B) Diphyllobothrium latum (Balık tenyası)
+C) Ascaris lumbricoides
+D) Enterobius vermicularis
+E) Fasciola hepatica
+Cevap: B
+Profesör Açıklaması: D. latum, bağırsakta B12 vitaminini emerek eksikliğe ve dolayısıyla hiperkrom megaloblastik anemiye yol açabilir.
+
+Soru: (Mikrobiyoloji) "Sterilizasyon" kontrolünde kullanılan ve ısıya en dirençli olan bakteri sporu hangisidir?
+A) Bacillus cereus
+B) Clostridium tetani
+C) Geobacillus stearothermophilus
+D) Bacillus anthracis
+E) Clostridium perfringens
+Cevap: C
+Profesör Açıklaması: Otoklav sterilizasyonunun etkinliğini test etmek için kullanılan biyolojik indikatör, yüksek ısıya çok dayanıklı olan G. stearothermophilus sporlarıdır.
+
+Soru: (Mikrobiyoloji) Aşağıdaki mantarlardan hangisi toprakta ve güvercin dışkısında bulunur, kapsüllüdür ve menenjit etkenidir?
+A) Candida albicans
+B) Cryptococcus neoformans
+C) Aspergillus flavus
+D) Rhizopus
+E) Microsporum
+Cevap: B
+Profesör Açıklaması: C. neoformans'ın polisakkarit yapısındaki kalın kapsülü, Çini mürekkebi (India ink) ile negatif boyanarak tanınır.
+
+Soru: (Mikrobiyoloji) Hamilelerde "Hepatit E" enfeksiyonunun seyri nasıldır?
+A) Genelde hafiftir
+B) %20-25 mortalite ile fulminan seyreder
+C) Daima kronikleşir
+D) Karaciğer kanseri yapar
+E) Sadece kanla bulaşır
+Cevap: B
+Profesör Açıklaması: Hepatit E normalde selimdir ancak gebe kadınlarda bilinmeyen bir nedenle çok ağır seyreder ve yüksek ölüm oranına sahiptir.
+
+Soru: (Mikrobiyoloji) Doğada "Lönswenstein-Jensen" besiyerinde 4-8 haftada üreyen bakteri hangisidir?
+A) Streptococcus
+B) Mycobacterium tuberculosis
+C) Neisseria
+D) Haemophilus
+E) Mycoplasma
+Cevap: B
+Profesör Açıklaması: M. tuberculosis (Tüberküloz basili) oldukça yavaş ürer ve kültürü için yumurta bazlı özel besiyerleri (LJ) gerekir.
+
+Soru: (Mikrobiyoloji) Çocuklarda "Gece makat kaşıntısı" ile karakterize paraziter enfeksiyon ve tanısında kullanılan yöntem hangisidir?
+A) Ascaris - Gaita mikroskobisi
+B) Enterobius vermicularis (Kıl kurdu) - Selofan bant yöntemi
+C) Giardia - Duodenal aspirasyon
+D) Taenia - Kan serolojisi
+E) Amoeba - Trofozoit aranması
+Cevap: B
+Profesör Açıklaması: Kıl kurdu yumurtalarını gece anüs çevresine bırakır. Sabah yapılan selofan bant (Graham testi) ile yumurtalar görülerek tanı konur.
+
+Soru: (Mikrobiyoloji) "Mavi-yeşil" pigment (Piyosiyanin) oluşturan ve yanık hastalarında fırsatçı enfeksiyon yapan bakteri hangisidir?
+A) E. coli
+B) Klebsiella
+C) Pseudomonas aeruginosa
+D) Serratia marcescens
+E) Proteus vulagris
+Cevap: C
+Profesör Açıklaması: Pseudomonas, tatlı meyve kokulu (üzüm) kolonileri ve piyosiyanin pigmenti ile karakterizedir. Antibiyotiklere oldukça dirençli bir hastane patojenidir.
+
+Soru: (Mikrobiyoloji) Farelerden (pire aracılığıyla) bulaşan ve "Veba" (Bubonik plague) hastalığına yol açan bakteri hangisidir?
+A) Francisella tularensis
+B) Yersinia pestis
+C) Brucella abortus
+D) Pasteurella multocida
+E) Burkholderia mallei
+Cevap: B
+Profesör Açıklaması: Yersinia pestis, emniyet pimi (bipolar boyanma) görüntüsü veren bir Gram negatif basildir. Tarihteki büyük pandemilerin nedenidir.
+
+Soru: (Mikrobiyoloji) Boğaz ağrısı ve lenfadenopati ile gelen hastada "Heterofil antikor (Monospot) testi" pozitifliği neyi gösterir?
+A) CMV enfeksiyonu
+B) EBV enfeksiyonu (Enfeksiyöz Mononükleoz)
+C) HIV akut dönemi
+D) Toksoplazmozis
+E) Hodgkin lenfoma
+Cevap: B
+Profesör Açıklaması: EBV'ye bağlı infeksiyöz mononükleozda kanda atipik lenfositler ve heterofil antikorlar saptanır. CMV'de heterofil antikorlar negatiftir.
+
+Soru: (Mikrobiyoloji) "Su çiçeği" (Varicella) ve "Zon" (Zoster) hastalıklarına yol açan virüs hangi ailedendir?
+A) Poxviridae
+B) Herpesviridae (HHV-3)
+C) Adenoviridae
+D) Picornaviridae
+E) Reoviridae
+Cevap: B
+Profesör Açıklaması: Varicella-Zoster Virüsü (VZV), primer enfeksiyonda su çiçeği, dorsal kök ganglionlarında latent kaldıktan sonra reaktivasyonda zona yapar.
+
+Soru: (Mikrobiyoloji) Kuduz şüpheli ısırıklarda beyin dokusunda (hiperkampus) saptanan patognomonik inklüzyon hangisidir?
+A) Guarnieri cisimciği
+B) Negri cisimciği
+C) Cowdry tip A
+D) Paschen cisimciği
+E) Heinz cisimciği
+Cevap: B
+Profesör Açıklaması: Rhabdoviridae ailesinden kuduz virüsü, sinir hücreleri içinde karakteristik Negri cisimcikleri oluşturur.
+
+Soru: (Mikrobiyoloji) Çift sarmallı segmentli RNA içeren ve çocuk ishallerinin en sık nedeni olan virüs hangisidir?
+A) Norovirüs
+B) Rotavirüs
+C) Adenovirüs
+D) Astrovirüs
+E) Coronavirus
+Cevap: B
+Profesör Açıklaması: Rotavirüs, segmentli genomu nedeniyle antijenik değişimlere uğrayabilir. Reoviridae ailesinin en önemli üyesidir.
+
+Soru: (Mikrobiyoloji) Sıtma (Malarya) profilaksisinde ve tedavisinde kullanılan, ancak G6PD eksikliği olanlarda hemoliz yapan ilaç hangisidir?
+A) Klorokin
+B) Primakin
+C) Artemisin
+D) Doksisiklin
+E) Pirimetamin
+Cevap: B
+Profesör Açıklaması: Primakin, karaciğerdeki (ekzoeritrositer) formlara (P. vivax hipnozoitleri) etkilidir. Ancak G6PD eksikliğinde oksidatif stresle hemolize neden olur.
+
+Soru: (Mikrobiyoloji) "Kedi tırmığı hastalığı" etkeni olan bakteri hangisidir?
+A) Pasteurella multocida
+B) Bartonella henselae
+C) Afipia felis
+D) Brucella
+E) Francisella
+Cevap: B
+Profesör Açıklaması: Bartonella henselae, kedi tırmalaması veya ısırması sonrası bölgesel lenfadenopati ile giden selim bir tablo yapar.
+
+Soru: (Mikrobiyoloji) "Kuş tüyleri" gibi görülen (Melted wax) kolonileri ile tanınan, Difteri etkeni hangi besiyerinde üretilir?
+A) Blood Agar
+B) Löffler besiyeri ve Tellüritli agar
+C) MacConkey
+D) EMB
+E) TCBS
+Cevap: B
+Profesör Açıklaması: C. diphtheriae, Löffler besiyerinde hızlı ürer ve granülleri belirginleşir. Tellüritli agarda ise gri-siyah koloniler yapar.
+
+Soru: (Mikrobiyoloji) Aşağıdaki antibiyotiklerden hangisi "DNA Jiraz" (Topoisomerase) enzimini inhibe ederek etki gösterir?
+A) Penisilinler
+B) Aminoglikozidler
+C) Kinolonlar (Siprofloksasin)
+D) Makrolidler
+E) Rifampisin
+Cevap: C
+Profesör Açıklaması: Florokinolonlar bakteriyel DNA replikasyonunu jiraz enzimini bozarak engeller.
+
+Soru: (Mikrobiyoloji) "Toksik Şok Sendromu Toksini-1" (TSST-1) salgılayan bakteri hangisidir?
+A) Streptococcus pyogenes
+B) Staphylococcus aureus
+C) Clostridium perfringens
+D) Bacillus anthracis
+E) Corynebacterium diphtheriae
+Cevap: B
+Profesör Açıklaması: S. aureus, süperantijen özelliği taşıyan TSST-1 ile masif sitokin salınımına ve şoka neden olabilir.
+
+Soru: (Mikrobiyoloji) Hepatit B enfeksiyonunda "pencere dönemi"ni (Window period) gösteren marker hangisidir?
+A) HBsAg (+)
+B) Anti-HBs (+)
+C) Anti-HBc IgM (+)
+D) HBeAg (+)
+E) HBV-DNA (+)
+Cevap: C
+Profesör Açıklaması: HBsAg'nin kaybolduğu ancak Anti-HBs'nin henüz oluşmadığı aralıkta sadece Anti-HBc IgM pozitif saptanır.
+
+Soru: (Mikrobiyoloji) "Kala-azar" (Viseral Leishmaniasis) hastalığının vektörü hangisidir?
+A) Anofel sivrisinek
+B) Çeçe sineği
+C) Phlebotomus (Tatarcık)
+D) Ixodes kenesi
+E) Bit
+Cevap: C
+Profesör Açıklaması: Leishmania donovani protozoonu, tatarcık sinekleri (kum sineği) aracılığıyla bulaşır ve dalak-karaciğer büyümesi (hepatosplenomegali) yapar.
+
+Soru: (Mikrobiyoloji) Aşağıdaki virüslerden hangisi "Retroviridae" ailesine aittir?
+A) HBV
+B) HIV
+C) HCV
+D) HDV
+E) HEV
+Cevap: B
+Profesör Açıklaması: HIV (Human Immunodeficiency Virus), ters transkriptaz enzimi içeren ve RNA genomunu DNA'ya çeviren bir retrovirüstür.
+
+Soru: (Mikrobiyoloji) "Vankomisin" hangi gruba dahil bir antibiyotiktir?
+A) Beta-laktam
+B) Glikopeptid
+C) Lipopeptid
+D) Aminoglikozid
+E) Linkozamid
+Cevap: B
+Profesör Açıklaması: Vankomisin, hücre duvarı sentezini D-Ala-D-Ala ucuna bağlanarak bozan bir glikopeptiddir. MRSA tedavisinde kritiktir.
+
+Soru: (Mikrobiyoloji) Aşağıdakilerden hangisi "obligat anaerob" bir bakteridir (oksijensiz ortamda ürer)?
+A) Pseudomonas
+B) E. coli
+C) Clostridium botulinum
+D) Bacillus subtilis
+E) Neisseria
+Cevap: C
+Profesör Açıklaması: Clostridium türleri (Tetani, Botulinum, Perfringens) ancak oksijensiz ortamda üreyebilen ve spor oluşturan bakterilerdir.
+
+Soru: (Mikrobiyoloji) "Mantarların hücre duvarında" bulunan ve antifungal ilaçların (Kaspofungin) hedefi olan yapı hangisidir?
+A) Ergosterol
+B) Kitin
+C) Beta-glukan
+D) Lipopolisakkarit
+E) Kolesterol
+Cevap: C
+Profesör Açıklaması: Mantar hücre duvarında kitin ve beta-glukan bulunur. Ekinokandinler (Kaspofungin) beta-glukan sentezini inhibe eder. Ergosterol ise membrandadır.
+
+Soru: (Mikrobiyoloji) "Kızamık" (Rubeola) hastalığında ağız içinde görülen patognomonik beyaz lekeler hangisidir?
+A) Forchheimer lekeleri
+B) Koplik lekeleri
+C) Nagayama lekeleri
+D) Roth lekeleri
+E) Janeway lezyonları
+Cevap: B
+Profesör Açıklaması: Koplik lekeleri, kızamık döküntüsü çıkmadan önce yanak mukozasında (azı dişleri hizasında) görülen küçük beyaz noktalardır.
+
+Soru: (Mikrobiyoloji) "Mantıksız" (Missence) mutasyon ne demektir?
+A) Kodonun stop kodona dönüşmesi
+B) Bir aminoasidin başka bir aminoasitle yer değiştirmesi
+C) Aminoasit dizisinin değişmemesi
+D) Nükleotid kaybı
+E) Replikasyonun durması
+Cevap: B
+Profesör Açıklaması: Tek bir nükleotid değişimi sonucu kodlanan aminoasit değişirse buna missence (yanlış anlamlı) mutasyon denir. Stop kodon oluşursa nonsense denir.
+
+Soru: (Mikrobiyoloji) Bir bakterinin antibiyotik direncini "plazmidler" aracılığıyla başka bir canlı bakteriye aktarmasına ne denir?
+A) Konjugasyon
+B) Transdüksiyon
+C) Transformasyon
+D) Replikasayon
+E) Transkripsiyon
+Cevap: A
+Profesör Açıklaması: Konjugasyon, piluslar aracılığıyla kurulan köprü üzerinden genetik materyalin (plazmid) doğrudan aktarılmasıdır. Direnç yayılımında en etkili yoldur.
+
+Soru: (Mikrobiyoloji) "Sarkma" belirtisi (Ptosis) ve "botulizm" zehirlenmesi hangi mekanizma ile oluşur?
+A) Glutamat artışı
+B) Asetilkolin salınımının engellenmesi
+C) Dopamin eksikliği
+D) Serotonin artışı
+E) GABA inhibisyonu
+Cevap: B
+Profesör Açıklaması: Clostridium botulinum toksini, sinir-kas kavşağında asetilkolin salınımını önleyerek flask felce neden olur.
+
+Soru: (Mikrobiyoloji) Aşağıdakilerden hangisi "Dermatofit" grubu mantarların beslendiği ana maddedir?
+A) Glikoz
+B) Selüloz
+C) Keratin
+D) Kolejin
+E) Hemoglobin
+Cevap: C
+Profesör Açıklaması: Tinea (Mantar) enfeksiyonu yapan dermatofitler, deri, saç ve tırnaktaki keratin dokusunu sindirerek çoğalırlar.
+
+Soru: (Mikrobiyoloji) Tüberküloz basili (M. tuberculosis) hangi boyama ile kırmızı basiller şeklinde görülür?
+A) Gram
+B) Giemsa
+C) Ehrlich-Zieh-Neelsen (EZN)
+D) Nigrosin
+E) Lugol
+Cevap: C
+Profesör Açıklaması: Mikobakteriler hücre duvarlarındaki lipidler nedeniyle Gramla boyanmaz; ısıtılarak uygulanan Karbol-Fuksin'i tutarlar ve asit-alkol ile solmazlar (ARB).
+
+Soru: (Mikrobiyoloji) Aşağıdakilerden hangisi bir "Nematod"dur (Yuvarlak solucan)?
+A) Taenia saginata
+B) Echinococcus granulosus
+C) Fasciola hepatica
+D) Ascaris lumbricoides
+E) Schistosoma
+Cevap: D
+Profesör Açıklaması: Ascaris en büyük ve yaygın yuvarlak solucandır. Diğerleri şerit (sestod) veya yapraksı solucan (trematod) grubundadır.
+
+Soru: (Mikrobiyoloji) Kedi dışkısıyla bulaşan ve gebelerde düşüğe veya bebekte anomalilere yol açan protozoon hangisidir?
+A) Giardia
+B) Toxoplasma gondii
+C) Leishmania
+D) Trichomonas
+E) Plasmodium
+Cevap: B
+Profesör Açıklaması: Toxoplasma oositleri kedi dışkısıyla atılır. Seronegatif gebelerin kedi kumuyla temas etmesi risklidir.
+
+Soru: (Mikrobiyoloji) Sterilizasyonun matematiksel ifadesinde "D değeri" neyi ifade eder?
+A) Tüm bakterilerin ölme süresi
+B) Bakteri popülasyonunun %90'ının öldürülmesi için geçen süre
+C) Sıcaklık artışı
+D) Nem oranı
+E) Kuruma hızı
+Cevap: B
+Profesör Açıklaması: D değeri (Decimal reduction time), canlı sayısını bir logaritmik birim (%90) azaltmak için gereken süredir.
+
+Soru: (Mikrobiyoloji) Hamilelerde kullanılan ve bebekte "Gri bebek sendromuna" (Gray baby syndrome) yol açan antibiyotik hangisidir?
+A) Penisilin
+B) Tetrasiklin
+C) Kloramfenikol
+D) Eritromisin
+E) Gentamisin
+Cevap: C
+Profesör Açıklaması: Bebeklerde karaciğer metabolizması (glukuronil transferaz) yetersiz olduğu için biriken kloramfenikol toksisiteye ve dolaşım çökmesine neden olur.
+
+Soru: (Mikrobiyoloji) "Mantar sporları" ile "bakteri sporları" arasındaki temel fark nedir?
+A) Bakteri sporları üreme içindir, mantar sporları direnç içindir
+B) Mantar sporları üreme içindir, bakteri sporları direnç/hayatta kalma içindir
+C) Her ikisi de sadece direnç içindir
+D) Bakteri sporları mikroskopta görülmez
+E) Mantar sporları daha dayanıklıdır
+Cevap: B
+Profesör Açıklaması: Bakteri sporu (endospor) bir çoğalma yöntemi değildir; tek bakteri tek spora dönüşür. Mantar sporları ise bir mantardan binlerce üretilerek yayılmayı ve çoğalmayı sağlar.
+
+Soru: (Mikrobiyoloji) İnsanda "Uyku hastalığı" (Sleeping sickness) yapan Trypanosoma gambiense'nin vektörü hangisidir?
+A) Anofel sivrisinek
+B) Çeçe sineği (Glossina)
+C) Bit
+D) Pire
+E) Kene
+Cevap: B
+Profesör Açıklaması: Afrika uyku hastalığı Çeçe sineğinin ısırmasıyla bulaşır. Amerika tipi (Chagas) ise öpücük böceği ile bulaşır.
+
+Soru: (Mikrobiyoloji) "Legionella pneumophila" (Lejyoner hastalığı) doğada ve binalarda en çok nerede bulunur?
+A) Toprakta
+B) Havalandırma sistemleri ve durgun sularda
+C) Süt ürünlerinde
+D) Deniz suyunda
+E) Toz zerreciklerinde
+Cevap: B
+Profesör Açıklaması: Legionella su sistemlerinde amip içinde yaşayabilir. Klima sitemlerinden yayılan aerosollerle bulaşarak ağır zatürre yapar.
+
+Soru: (Mikrobiyoloji) Aşağıdaki virüslerden hangisi "doğrudan" DNA polimeraz enzimine sahip olup kendi DNA'sını eşleyebilir?
+A) HIV
+B) Polio
+C) HBV (Hepatit B)
+D) HCV
+E) Kuduz virüsü
+Cevap: C
+Profesör Açıklaması: HBV, kısmi çift sarmallı DNA virüsüdür ve replikasyon sırasında ters transkriptaz aktivitesi olan bir DNA polimeraz kullanır.
+
+Soru: (Mikrobiyoloji) Mikroorganizmaların hastalık yapabilme yeteneğinin derecesine ne ad verilir?
+A) Patojenite
+B) Virülans
+C) Tropizm
+D) Kolonizasyon
+E) İnfektivite
+Cevap: B
+Profesör Açıklaması: Patojenite bir türün hastalık yapma genel yeteneğidir. Virülans ise bu kapasitenin şiddetini belirtir (örn: suşlar arası fark).
+
+Soru: (Mikrobiyoloji) "Vankomisin" dirençli enterokoklara (VRE) karşı kullanılan yeni kuşak antibiyotik hangisidir?
+A) Metisilin
+B) Linezolid
+C) Amoksisilin
+D) Sefazolin
+E) Tetrasiklin
+Cevap: B
+Profesör Açıklaması: Linezolid, protein sentezini (başlangıç kompleksini) engelleyen ve dirençli Gram pozitiflerde kullanılan güçlü bir ilaçtır.
+
+Soru: (Mikrobiyoloji) Bir besiyerine ekilen örneğin sadece tek bir tür mikroorganizma içermesi durumuna ne denir?
+A) Karma kültür
+B) Saf kültür
+C) Pasaj
+D) Kontaminasyon
+E) İnokülasyon
+Cevap: B
+Profesör Açıklaması: Mikrobiyolojik incelemelerde etkeni doğru saptamak için diğer floradan arındırılmış "saf kültür" eldesi şarttır.
+
+(Mikrobiyoloji branşı için 100 TUS sorusu ve profesör açıklamaları tamamlanmıştır.)

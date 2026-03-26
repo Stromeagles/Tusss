@@ -7,6 +7,7 @@ class AppRoute {
   /// Slide-up + fade — modal/detay ekranları için
   static Route<T> slideUp<T>(Widget page) {
     return PageRouteBuilder<T>(
+      opaque: false,   // fade sırasında alttaki ekran render edilsin (siyah kalmasın)
       pageBuilder: (_, animation, __) => page,
       transitionDuration: const Duration(milliseconds: 260),
       reverseTransitionDuration: const Duration(milliseconds: 220),
@@ -43,6 +44,7 @@ class AppRoute {
   /// Slide-right + fade — yatay navigasyon için
   static Route<T> slideRight<T>(Widget page) {
     return PageRouteBuilder<T>(
+      opaque: false,
       pageBuilder: (_, animation, __) => page,
       transitionDuration: const Duration(milliseconds: 340),
       reverseTransitionDuration: const Duration(milliseconds: 280),
@@ -69,6 +71,7 @@ class AppRoute {
   /// Sadece fade — overlay/dialog benzeri geçişler için
   static Route<T> fade<T>(Widget page) {
     return PageRouteBuilder<T>(
+      opaque: false,
       pageBuilder: (_, animation, __) => page,
       transitionDuration: const Duration(milliseconds: 260),
       reverseTransitionDuration: const Duration(milliseconds: 220),

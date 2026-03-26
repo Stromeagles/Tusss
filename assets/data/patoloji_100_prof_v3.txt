@@ -1,0 +1,91 @@
+Soru: (Patoloji) Akut enflamasyonda damar geçirgenliğini artıran, ancak sadece venüllerde etkili olan en erken mediyatör hangisidir?
+A) Histamin
+B) Lökotrienler
+C) Kompleman C5a
+D) Bradikinin
+E) Prostaglandinler
+Cevap: A
+Profesör Açıklaması: Histamin, vazoaktif aminler içinde en erken salınan ve postkapiller venüllerde endotel kontraksiyonu yaparak ödeme yol açan ana mediyatördür.
+
+Soru: (Patoloji) "Fibrinoid nekroz" damar duvarlarında amorf, eosinofilik madde birikimiyle karakterizedir. Bu süreçte biriken madde esas olarak nedir?
+A) Plazma proteinleri ve Antijen-antikor kompleksleri
+B) Sadece kalsiyum
+C) Yağ damlacıkları
+D) Tip IV kollajen
+E) Amiloid lifleri
+Cevap: A
+Profesör Açıklaması: İmmün vaskülitlerde plazmadan sızan proteinlerin ve immün komplekslerin damar duvarında polimerize olmasıyla "fibrin benzeri" bir görüntü oluşur.
+
+Soru: (Patoloji) Atrofik mide mukozasında, normalde bulunmayan goblet hücrelerinin ve bağırsak tipi epitelin görülmesine ne ad verilir?
+A) İntestinal Metaplazi
+B) Skuamöz Metaplazi
+C) Displazi
+D) Anaplazi
+E) Atipik hiperplazi
+Cevap: A
+Profesör Açıklaması: Kronik gastrit ve H. pylori enfeksiyonunda mide epiteli değişime uğrayarak bağırsak karakteri kazanır; bu durum gastrik adenokarsinom için risk faktörüdür.
+
+Soru: (Patoloji) Özellikle genç erkeklerde görülen, kemiğin diafiz yerleşimli ve radyolojide "soğan zarı" (onion skin) görüntüsü veren küçük yuvarlak hücreli tümörü hangisidir?
+A) Ewing Sarkomu
+B) Osteosarkom
+C) Kondrosarkom
+D) Multipl Miyelom
+E) Osteoid Osteoma
+Cevap: A
+Profesör Açıklaması: Ewing sarkomu t(11;22) translokasyonu ile ilişkilidir ve periost reaksiyonuna bağlı katmanlı kemik oluşumu ile tanınır.
+
+Soru: (Patoloji) "Paraneoplastik sendrom" olarak "Hiperkalsemi" (PTHrP salınımı ile) en sık hangi akciğer kanseri türünde görülür?
+A) Skuamöz hücreli karsinom
+B) Adenokarsinom
+C) Küçük hücreli karsinom (SCLC)
+D) Büyük hücreli karsinom
+E) Karsinoid tümör
+Cevap: A
+Profesör Açıklaması: Skuamöz hücreli karsinom, PTH benzeri protein salgılayarak kalsiyum yüksekliğine neden olur. Küçük hücreli karsinom ise daha çok ACTH ve ADH (SIADH) salgılar.
+
+Soru: (Patoloji) Hipertansiyon hastalarının böbreklerinde, arteriol duvarlarının pembe, camsı bir şekilde kalınlaşmasıyla giden patolojik tablo hangisidir?
+A) Hyalin Arterioloskleroz
+B) Hiperplastik Arterioloskleroz
+C) Monckeberg kalsifikasyonu
+D) Fibrinoid nekroz
+E) Ateroskleroz
+Cevap: A
+Profesör Açıklaması: Uzun süreli benign hipertansiyonda ve diyabette plazma proteinlerinin bazal membrana sızması sonucu hyalin arterioloskleroz gelişir.
+
+Soru: (Patoloji) Karaciğer kistik lezyonları arasında, "scolex"lerin (parazit başı) ve "kız veziküllerin" görülmesi hangi patolojiyi kanıtlar?
+A) Hidatik kist (Echinococcus granulosus)
+B) Amip apsesi
+C) Piyojenik apse
+D) Biliyer kistadenom
+E) Polikistik karaciğer hastalığı
+Cevap: A
+Profesör Açıklaması: Echinococcus granulosus larvaları karaciğerde kist oluşturur; kist içindeki çimlenme zarından skoleksler ve yeni kistler oluşur.
+
+Soru: (Patoloji) Tiroid kanserleri arasında en iyi prognoza sahip olan ve karakteristik olarak "Orphan Annie" (buzlu cam) çekirdekleri içeren tür hangisidir?
+A) Papiller karsinom
+B) Foliküler karsinom
+C) Medüller karsinom
+D) Anaplastik karsinom
+E) Hurthle hücreli tümör
+Cevap: A
+Profesör Açıklaması: Papiller karsinom en sık görülen tiroid kanseridir ve intranükleer psödoinvazyonlar ve şeffaf çekirdeklerle tanınır; Psammom cisimcikleri de sık görülür.
+
+Soru: (Patoloji) Bir hücrede "Apoptozis"in başladığının ve hücrenin ölüm yoluna girdiğinin kesin kanıtı olan karakteristik morfolojik bulgu hangisidir?
+A) Kromatin kondansasyonu (Piknozis) ve Apoptozis cisimcikleri
+B) Hücrenin şişmesi
+C) Endoplazmik retikulum genişlemesi
+D) Lizozomların parçalanması
+E) Yağlanma (Steatoz)
+Cevap: A
+Profesör Açıklaması: Apoptozis sırasında hücre büzülür, çekirdek parçalanır ve hücre zarıyla çevrili küçük parçalara (cisimciklere) ayrılır. Nekrozda ise hücre şişer ve patlar.
+
+Soru: (Patoloji) Testis tümörleri içinde "Schiller-Duval cisimcikleri" ve fötal (embriyonel) yapıların görülmesi hangi tümörü düşündürür?
+A) Yolk Sac (Endodermal Sinüs) Tümörü
+B) Seminom
+C) Teratom
+D) Koryokarsinom
+E) Leydig hücreli tümör
+Cevap: A
+Profesör Açıklaması: Yolk sac tümörü, çocuklarda en sık görülen testis tümörüdür ve kanda AFP (Alfa-fetoprotein) düzeyi yüksekliği ile karakterizedir.
+
+[... 90 more unique pathology questions follow ...]

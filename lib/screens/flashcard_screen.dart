@@ -168,10 +168,19 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
         backgroundColor: isBildim ? AppTheme.success : AppTheme.error,
         behavior: SnackBarBehavior.floating,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        duration: const Duration(seconds: 2),
+        duration: const Duration(milliseconds: 750),
         margin: const EdgeInsets.all(16),
       ),
     );
+  }
+
+  // ── TUS Hybrid Sort yardımcısı ──────────────────────────────────────────
+  // Kartları priority (TUS ağırlık puanı) azalan sırayla sıralar.
+  // SM-2 "ne zaman?" sorusunu cevaplar; priority "hangisi önce?" sorusunu.
+  static List<Flashcard> _byPriority(List<Flashcard> cards) {
+    final sorted = List<Flashcard>.from(cards)
+      ..sort((a, b) => b.priority.compareTo(a.priority));
+    return sorted;
   }
 
   Future<void> _applyMode(List<Flashcard> source, {bool isIncremental = false}) async {
@@ -180,10 +189,12 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
 
     if (_mode == FlashcardMode.learnedOnly) {
       result = source.where((fc) => allMap[fc.id]?.lastQuality == 2).toList();
+
     } else if (_mode == FlashcardMode.dueOnly) {
+      // SM-2 sıralaması: yanlış-due → yeni (priority desc) → doğru-due
       final dueBilemediklerim = <Flashcard>[];
-      final yeniKartlar = <Flashcard>[];
-      final dueBildiklerim = <Flashcard>[];
+      final yeniKartlar       = <Flashcard>[];
+      final dueBildiklerim    = <Flashcard>[];
 
       for (final fc in source) {
         final data = allMap[fc.id];
@@ -195,19 +206,56 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           dueBildiklerim.add(fc);
         }
       }
-      result = [...dueBilemediklerim, ...yeniKartlar, ...dueBildiklerim];
-      // Due mode default to all if nothing specific due in this chunk? 
-      // No, for dueOnly if chunk has nothing due, it should be empty.
-      // But _applyMode(source) at the end fallbacks to source.
+      // Yeni kartlar priority'ye göre önce → SM-2 due kartlar sırasıyla
+      result = [
+        ..._byPriority(dueBilemediklerim),
+        ..._byPriority(yeniKartlar),
+        ..._byPriority(dueBildiklerim),
+      ];
       if (result.isEmpty && !isIncremental) result = source;
+
     } else if (_mode == FlashcardMode.newOnly) {
-      result = source.where((fc) => !allMap.containsKey(fc.id)).toList();
+      // Yeni kartlar: hiç görülmemiş, TUS önceliğine göre sıralı
+      result = _byPriority(
+        source.where((fc) => !allMap.containsKey(fc.id)).toList(),
+      );
+
     } else if (_mode == FlashcardMode.pocketOnly) {
       result = source.where((fc) => allMap[fc.id]?.isBookmarked ?? false).toList();
+
     } else if (_mode == FlashcardMode.failedOnly || _mode == FlashcardMode.criticalOnly) {
-      result = source.where((fc) => allMap[fc.id]?.lastQuality == 1).toList();
+      result = _byPriority(
+        source.where((fc) => allMap[fc.id]?.lastQuality == 1).toList(),
+      );
+
     } else {
-      result = source;
+      // "Tümü" modu — Hybrid sıralama:
+      // a) Yanlış + due kartlar (priority desc)
+      // b) Yeni kartlar (priority desc) — sınavda en önemli konular öne
+      // c) Doğru + due kartlar (priority desc)
+      // d) Geri kalanlar (SM-2 zamanı gelmemiş)
+      final dueFailed  = <Flashcard>[];
+      final newCards   = <Flashcard>[];
+      final dueLearned = <Flashcard>[];
+      final rest       = <Flashcard>[];
+      for (final fc in source) {
+        final data = allMap[fc.id];
+        if (data == null) {
+          newCards.add(fc);
+        } else if (data.lastQuality == 1 && data.isDue) {
+          dueFailed.add(fc);
+        } else if (data.lastQuality == 2 && data.isDue) {
+          dueLearned.add(fc);
+        } else {
+          rest.add(fc);
+        }
+      }
+      result = [
+        ..._byPriority(dueFailed),
+        ..._byPriority(newCards),
+        ..._byPriority(dueLearned),
+        ...rest,
+      ];
     }
 
     if (mounted) {
@@ -328,9 +376,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           const SizedBox(width: 8),
         ],
       ),
-      body: _limitReached
-          ? const PaywallWidget(type: 'flashcard', dailyLimit: PremiumService.dailyFreeFlashcardLimit)
-          : _loading
+      body: _loading
           ? const Center(
               child: CircularProgressIndicator(color: AppTheme.cyan))
           : _loadError
@@ -340,8 +386,10 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                   message: 'Flashcard verileri okunurken hata olustu.',
                   onRetry: _loadCards,
                 )
-              : _isFinished
-                  ? _buildCompletionSummary()
+              : (_isFinished || _limitReached)
+                  ? _limitReached && !_isFinished
+                      ? const PaywallWidget(type: 'flashcard', dailyLimit: PremiumService.dailyFreeFlashcardLimit)
+                      : _buildCompletionSummary()
                   : _cards.isEmpty
                       ? _buildEmptyState()
                       : Column(
@@ -427,6 +475,9 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           }
 
           // ↑ YUKARI: Bildim (quality 2) | ↓ AŞAĞI: Bilemedim (quality 1)
+          // Güvenlik: geçersiz index kontrolü
+          if (prev < 0 || prev >= _cards.length) return true;
+
           final card = _cards[prev];
           final quality = _pendingQuality ?? (effectiveDir == CardSwiperDirection.top ? 2 : 1);
           _pendingQuality = null;
@@ -434,8 +485,18 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           if (!widget.isPreview) {
             try {
               updated = await _srService.recordAnswer(card.id, quality);
-            } catch (_) {
-              return true;
+            } catch (e) {
+              debugPrint('SM-2 kayıt hatası: $e');
+              // Kullanıcıya bilgi ver ama akışı durdurma
+              if (mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: const Text('Cevap kaydedilemedi, tekrar denenecek.'),
+                    duration: const Duration(milliseconds: 750),
+                    backgroundColor: Colors.orange.shade700,
+                  ),
+                );
+              }
             }
           }
 
@@ -779,7 +840,7 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
 
     // Flip
     _flipCtrl = AnimationController(
-        vsync: this, duration: const Duration(milliseconds: 380));
+        vsync: this, duration: const Duration(milliseconds: 200));
     _flipAnim = TweenSequence<double>([
       TweenSequenceItem(
           tween: Tween(begin: 0.0, end: 0.5)
@@ -793,7 +854,7 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
 
     // Giriş animasyonu
     _enterCtrl = AnimationController(
-        vsync: this, duration: const Duration(milliseconds: 340));
+        vsync: this, duration: const Duration(milliseconds: 180));
     _enterFade = Tween<double>(begin: 0.0, end: 1.0).animate(
         CurvedAnimation(parent: _enterCtrl, curve: Curves.easeOut));
     _enterScale = Tween<double>(begin: 0.94, end: 1.0).animate(
@@ -911,7 +972,7 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
               GestureDetector(
                 onTap: _toggleBookmark,
                 child: AnimatedSwitcher(
-                  duration: const Duration(milliseconds: 200),
+                  duration: const Duration(milliseconds: 100),
                   child: Icon(
                     _isBookmarked ? Icons.star_rounded : Icons.star_border_rounded,
                     key: ValueKey(_isBookmarked),
@@ -1013,7 +1074,7 @@ class _FlashCardState extends State<_FlashCard> with TickerProviderStateMixin {
               GestureDetector(
                 onTap: _toggleBookmark,
                 child: AnimatedSwitcher(
-                  duration: const Duration(milliseconds: 200),
+                  duration: const Duration(milliseconds: 100),
                   child: Icon(
                     _isBookmarked ? Icons.star_rounded : Icons.star_border_rounded,
                     key: ValueKey(_isBookmarked),
